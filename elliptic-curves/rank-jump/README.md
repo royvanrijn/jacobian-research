@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: cubic-field bridge and the norm-solubility gap](CUBIC_BRIDGE_AND_NORM_GAP.md)
+- [Latest: independent halving fields and arithmetic blocks](HALVING_FIELDS_AND_BLOCKS.md)
+- [Cubic-field bridge and the norm-solubility gap](CUBIC_BRIDGE_AND_NORM_GAP.md)
 - [Simultaneous CT blocks and normalization-invariant interpretation](CT_VARIATION_AND_BLOCKS.md)
 - [Exact local collision cuts, reciprocity and 4-division separation](LOCAL_COLLISION_AND_RECIPROCITY.md)
 - [Initial findings, paired studies, mechanisms and missing implications](ANALYSIS.md)
@@ -23,6 +24,7 @@ python3 elliptic-curves/rank-jump/reciprocity.py check
 python3 elliptic-curves/rank-jump/four_division.py check
 python3 elliptic-curves/rank-jump/ct_variation.py check
 python3 elliptic-curves/rank-jump/cubic_bridge.py check
+python3 elliptic-curves/rank-jump/halving_fields.py check
 ```
 
 Optional independent Hilbert-symbol check: `sage -python -m unittest discover -s elliptic-curves/rank-jump -p test_local_collision.py`.

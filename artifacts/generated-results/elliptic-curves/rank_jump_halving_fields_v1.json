@@ -1,0 +1,5333 @@
+{
+  "boundary": "No new curve, point, rank or prospective selector. Maximal degree is a consequence of known H1 independence, equally valid for insoluble classes. Arithmetic constructions of several rational points remain possible and unexplained.",
+  "fixed_class_counterexample": {
+    "anchor_rationally_soluble_dimension": 18,
+    "boundary": "This is the finite E[2]-torsor field. The genus-one cover changes with the embedding E[2] into E_u.",
+    "common_class_basis_in_anchor_coordinates": [
+      1,
+      6,
+      10,
+      18,
+      64,
+      128,
+      258,
+      514,
+      1056,
+      2050,
+      4130,
+      8226,
+      16386,
+      32802,
+      65568,
+      131106,
+      262144,
+      524320
+    ],
+    "deformed_necessary_soluble_dimension_cap": 2,
+    "deformed_restricted_CT_rank": 16,
+    "dimension": 18,
+    "finite_torsor_field_degree_over_L_at_both_parameters": "68719476736",
+    "finite_torsor_field_is_the_same_under_labelled_E2_identification": true,
+    "parameters": [
+      0,
+      -1
+    ]
+  },
+  "input_sha256": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+  "local_input_sha256": "440372c18d42243ce447cad470c7bfd6ba5d5c757740e3ce413af6b0d8194f71",
+  "module_certificate": {
+    "H1_dimension": 0,
+    "action_algebra_dimension": 4,
+    "centralizer": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "group_matrices": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "multiplication_table": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      [
+        1,
+        0,
+        3,
+        2,
+        5,
+        4
+      ],
+      [
+        2,
+        4,
+        0,
+        5,
+        1,
+        3
+      ],
+      [
+        3,
+        5,
+        1,
+        4,
+        0,
+        2
+      ],
+      [
+        4,
+        2,
+        5,
+        0,
+        3,
+        1
+      ],
+      [
+        5,
+        3,
+        4,
+        1,
+        2,
+        0
+      ]
+    ],
+    "normalized_maps_tested": 1024,
+    "one_coboundaries": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        3,
+        3,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        1,
+        3,
+        1
+      ],
+      [
+        0,
+        2,
+        0,
+        2,
+        1,
+        1
+      ]
+    ],
+    "one_cocycles": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        1,
+        3,
+        1
+      ],
+      [
+        0,
+        2,
+        0,
+        2,
+        1,
+        1
+      ],
+      [
+        0,
+        2,
+        3,
+        3,
+        2,
+        0
+      ]
+    ],
+    "small_multiplicity_checks": [
+      {
+        "affine_fixed_point_counts": [
+          {
+            "linear_part": [
+              1,
+              2
+            ],
+            "offset_tuples_fixing_a_point_in_every_factor": 1,
+            "rank_of_g_minus_I": 0
+          },
+          {
+            "linear_part": [
+              1,
+              3
+            ],
+            "offset_tuples_fixing_a_point_in_every_factor": 2,
+            "rank_of_g_minus_I": 1
+          },
+          {
+            "linear_part": [
+              2,
+              1
+            ],
+            "offset_tuples_fixing_a_point_in_every_factor": 2,
+            "rank_of_g_minus_I": 1
+          },
+          {
+            "linear_part": [
+              2,
+              3
+            ],
+            "offset_tuples_fixing_a_point_in_every_factor": 4,
+            "rank_of_g_minus_I": 2
+          },
+          {
+            "linear_part": [
+              3,
+              1
+            ],
+            "offset_tuples_fixing_a_point_in_every_factor": 4,
+            "rank_of_g_minus_I": 2
+          },
+          {
+            "linear_part": [
+              3,
+              2
+            ],
+            "offset_tuples_fixing_a_point_in_every_factor": 2,
+            "rank_of_g_minus_I": 1
+          }
+        ],
+        "all_subspace_count": 5,
+        "copies": 1,
+        "joint_fixed_point_fraction": "5/8",
+        "stable_subspaces": [
+          {
+            "basis": [],
+            "coordinate_relation_basis": [
+              1
+            ]
+          },
+          {
+            "basis": [
+              1,
+              2
+            ],
+            "coordinate_relation_basis": []
+          }
+        ]
+      },
+      {
+        "affine_fixed_point_counts": [
+          {
+            "linear_part": [
+              1,
+              2
+            ],
+            "offset_tuples_fixing_a_point_in_every_factor": 1,
+            "rank_of_g_minus_I": 0
+          },
+          {
+            "linear_part": [
+              1,
+              3
+            ],
+            "offset_tuples_fixing_a_point_in_every_factor": 4,
+            "rank_of_g_minus_I": 1
+          },
+          {
+            "linear_part": [
+              2,
+              1
+            ],
+            "offset_tuples_fixing_a_point_in_every_factor": 4,
+            "rank_of_g_minus_I": 1
+          },
+          {
+            "linear_part": [
+              2,
+              3
+            ],
+            "offset_tuples_fixing_a_point_in_every_factor": 16,
+            "rank_of_g_minus_I": 2
+          },
+          {
+            "linear_part": [
+              3,
+              1
+            ],
+            "offset_tuples_fixing_a_point_in_every_factor": 16,
+            "rank_of_g_minus_I": 2
+          },
+          {
+            "linear_part": [
+              3,
+              2
+            ],
+            "offset_tuples_fixing_a_point_in_every_factor": 4,
+            "rank_of_g_minus_I": 1
+          }
+        ],
+        "all_subspace_count": 67,
+        "copies": 2,
+        "joint_fixed_point_fraction": "15/32",
+        "stable_subspaces": [
+          {
+            "basis": [],
+            "coordinate_relation_basis": [
+              1,
+              2
+            ]
+          },
+          {
+            "basis": [
+              1,
+              2
+            ],
+            "coordinate_relation_basis": [
+              2
+            ]
+          },
+          {
+            "basis": [
+              4,
+              8
+            ],
+            "coordinate_relation_basis": [
+              1
+            ]
+          },
+          {
+            "basis": [
+              5,
+              10
+            ],
+            "coordinate_relation_basis": [
+              3
+            ]
+          },
+          {
+            "basis": [
+              1,
+              2,
+              4,
+              8
+            ],
+            "coordinate_relation_basis": []
+          }
+        ]
+      },
+      {
+        "affine_fixed_point_counts": [
+          {
+            "linear_part": [
+              1,
+              2
+            ],
+            "offset_tuples_fixing_a_point_in_every_factor": 1,
+            "rank_of_g_minus_I": 0
+          },
+          {
+            "linear_part": [
+              1,
+              3
+            ],
+            "offset_tuples_fixing_a_point_in_every_factor": 8,
+            "rank_of_g_minus_I": 1
+          },
+          {
+            "linear_part": [
+              2,
+              1
+            ],
+            "offset_tuples_fixing_a_point_in_every_factor": 8,
+            "rank_of_g_minus_I": 1
+          },
+          {
+            "linear_part": [
+              2,
+              3
+            ],
+            "offset_tuples_fixing_a_point_in_every_factor": 64,
+            "rank_of_g_minus_I": 2
+          },
+          {
+            "linear_part": [
+              3,
+              1
+            ],
+            "offset_tuples_fixing_a_point_in_every_factor": 64,
+            "rank_of_g_minus_I": 2
+          },
+          {
+            "linear_part": [
+              3,
+              2
+            ],
+            "offset_tuples_fixing_a_point_in_every_factor": 8,
+            "rank_of_g_minus_I": 1
+          }
+        ],
+        "all_subspace_count": 2825,
+        "copies": 3,
+        "joint_fixed_point_fraction": "51/128",
+        "stable_subspaces": [
+          {
+            "basis": [],
+            "coordinate_relation_basis": [
+              1,
+              2,
+              4
+            ]
+          },
+          {
+            "basis": [
+              1,
+              2
+            ],
+            "coordinate_relation_basis": [
+              2,
+              4
+            ]
+          },
+          {
+            "basis": [
+              4,
+              8
+            ],
+            "coordinate_relation_basis": [
+              1,
+              4
+            ]
+          },
+          {
+            "basis": [
+              5,
+              10
+            ],
+            "coordinate_relation_basis": [
+              3,
+              4
+            ]
+          },
+          {
+            "basis": [
+              16,
+              32
+            ],
+            "coordinate_relation_basis": [
+              1,
+              2
+            ]
+          },
+          {
+            "basis": [
+              17,
+              34
+            ],
+            "coordinate_relation_basis": [
+              2,
+              5
+            ]
+          },
+          {
+            "basis": [
+              20,
+              40
+            ],
+            "coordinate_relation_basis": [
+              1,
+              6
+            ]
+          },
+          {
+            "basis": [
+              21,
+              42
+            ],
+            "coordinate_relation_basis": [
+              3,
+              5
+            ]
+          },
+          {
+            "basis": [
+              1,
+              2,
+              4,
+              8
+            ],
+            "coordinate_relation_basis": [
+              4
+            ]
+          },
+          {
+            "basis": [
+              1,
+              2,
+              16,
+              32
+            ],
+            "coordinate_relation_basis": [
+              2
+            ]
+          },
+          {
+            "basis": [
+              1,
+              2,
+              20,
+              40
+            ],
+            "coordinate_relation_basis": [
+              6
+            ]
+          },
+          {
+            "basis": [
+              4,
+              8,
+              16,
+              32
+            ],
+            "coordinate_relation_basis": [
+              1
+            ]
+          },
+          {
+            "basis": [
+              5,
+              10,
+              16,
+              32
+            ],
+            "coordinate_relation_basis": [
+              3
+            ]
+          },
+          {
+            "basis": [
+              4,
+              8,
+              17,
+              34
+            ],
+            "coordinate_relation_basis": [
+              5
+            ]
+          },
+          {
+            "basis": [
+              5,
+              10,
+              17,
+              34
+            ],
+            "coordinate_relation_basis": [
+              7
+            ]
+          },
+          {
+            "basis": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              32
+            ],
+            "coordinate_relation_basis": []
+          }
+        ]
+      }
+    ]
+  },
+  "paired_quartics": [
+    {
+      "cubic_resolvent_ascending": [
+        "1781229176470205885579659734546779343244312565854391077089793052991689198813823541873405295430952463991187943734057573417770367039106807673011056/7858047974841",
+        "3563926887029023510887578391481450798394587668267435136656465244318974341852277528472482651360724/131751387",
+        "-1071501939681659481795529587540811949206723352/3",
+        "1"
+      ],
+      "frobenius_witnesses": {
+        "1,3": {
+          "linear_roots": [
+            7
+          ],
+          "prime": 29,
+          "reduction": [
+            25,
+            12,
+            13,
+            3,
+            1
+          ]
+        },
+        "4": {
+          "gcd_with_x_p_squared_minus_x": [
+            1
+          ],
+          "linear_roots": [],
+          "prime": 37,
+          "reduction": [
+            1,
+            30,
+            31,
+            9,
+            1
+          ]
+        }
+      },
+      "halving_quartic_ascending": [
+        "-647006070592389210746745795471600738754101467487899957741276876274151920594592715606736809984/178929",
+        "-19253728482234189146458087704033921511894674648973582079657616266617396/59643",
+        "1071501939681659481795529587540811949206723352/3",
+        "-258382942603719687466443163/6627",
+        "1"
+      ],
+      "id": "a1-fibration-05:307/206",
+      "independent_input_index": 0,
+      "point": [
+        "258382942603719687466443163/26508",
+        "-257479102784390909141728672850670672123/830584"
+      ],
+      "quartic_discriminant_from_identity": "1705194892808428881468187994077699880438261590850643403594876024604114972500162833155213125409735760500339775085673477541720744128978516749723819580367372251960808009746355680929227371246335566869109088895917371746663363009564625409154733647640565069961004958094778715836311923579295232/116191483108948578241",
+      "quartic_galois_group": "S4",
+      "resolvent_generator_in_cubic": [
+        "-1071501939681659481795529587540811949206723352/3",
+        "258382942603719687466443163/6627",
+        "4"
+      ],
+      "role": "high_first_generic",
+      "short_model": [
+        "0",
+        "0",
+        "0",
+        "-535750969840829740897764793770405974603361676/3",
+        "24589206923553926770353853410094380931395147018679997419164380037680/27"
+      ],
+      "splitting_field_degree_over_two_division_field": 4
+    },
+    {
+      "cubic_resolvent_ascending": [
+        "-963083268418869925289727678731947226848721054778263191191728416044305642372968848761966357966056141304301580620756430212819708675296427416598045353043828353529770861113631/2752546595746116578205458814353697024",
+        "-1172698717627278963455554966808376436356328242241760836441490496925333383725343448287805558013524029703383260851739/1039254376513638504500928",
+        "-1071501939681659481795529587540811949206723352/3",
+        "1"
+      ],
+      "frobenius_witnesses": {
+        "1,3": {
+          "linear_roots": [
+            5
+          ],
+          "prime": 29,
+          "reduction": [
+            17,
+            8,
+            13,
+            17,
+            1
+          ]
+        },
+        "4": {
+          "gcd_with_x_p_squared_minus_x": [
+            1
+          ],
+          "linear_roots": [],
+          "prime": 11,
+          "reduction": [
+            5,
+            2,
+            5,
+            7,
+            1
+          ]
+        }
+      },
+      "halving_quartic_ascending": [
+        "154303695852524432677366635853781545628012266110180788780218200618037209286281843480945385164218492599/1986433729281",
+        "-43076756374930555462946798011235378513604760244147861569111392327447186351406261/2648578305708",
+        "1071501939681659481795529587540811949206723352/3",
+        "59181808332557030305611894468798893/1177145913648",
+        "1"
+      ],
+      "id": "a1-fibration-05:307/206",
+      "independent_input_index": 32,
+      "point": [
+        "-59181808332557030305611894468798893/4708583654592",
+        "2126629470956628197074325388138025716895042876536969/1966317090380698112"
+      ],
+      "quartic_discriminant_from_identity": "15498990999238492987107950958999891856417636617543325943327738130670571508020886751372478645128429058792417504625749064166914713038162643322123996042449220534976355343603058902967901834726413785310852124724114626838906710678541698109611935238185338484091102807280663093849193959628225523794187037073603162389635433194659654837793259291/7128272716777154302341806228722505675285605829044950128290666938368",
+      "quartic_galois_group": "S4",
+      "resolvent_generator_in_cubic": [
+        "-1071501939681659481795529587540811949206723352/3",
+        "-59181808332557030305611894468798893/1177145913648",
+        "4"
+      ],
+      "role": "high_first_quotient",
+      "short_model": [
+        "0",
+        "0",
+        "0",
+        "-535750969840829740897764793770405974603361676/3",
+        "24589206923553926770353853410094380931395147018679997419164380037680/27"
+      ],
+      "splitting_field_degree_over_two_division_field": 4
+    },
+    {
+      "cubic_resolvent_ascending": [
+        "39213951193386150682182486082471302235660493028493697671003850676644782754753353198669591837644853037065798056169568139731824411751631500014943795508289140320874961427289856/7858047974841",
+        "-2999503231563303225742362623829982161881127199405777992349283119050213153895857493824550913280774048493809850074176/131751387",
+        "-99349549777182412039536743858903890025166402838317752/3",
+        "1"
+      ],
+      "frobenius_witnesses": {
+        "1,3": {
+          "linear_roots": [
+            4
+          ],
+          "prime": 19,
+          "reduction": [
+            17,
+            5,
+            0,
+            7,
+            1
+          ]
+        },
+        "4": {
+          "gcd_with_x_p_squared_minus_x": [
+            1
+          ],
+          "linear_roots": [],
+          "prime": 11,
+          "reduction": [
+            4,
+            7,
+            3,
+            6,
+            1
+          ]
+        }
+      },
+      "halving_quartic_ascending": [
+        "-343484408864384906520618371992603371138131167949912946971623653269625065212483542976129012927072929892615174784/178929",
+        "1066551858222385638013515592200482456868374918581044406223144552154531929044780890896/59643",
+        "99349549777182412039536743858903890025166402838317752/3",
+        "-11282656195894521628250844839212/6627",
+        "1"
+      ],
+      "id": "a1-fibration-05:-3158/1291",
+      "independent_input_index": 0,
+      "point": [
+        "2820664048973630407062711209803/6627",
+        "876978799238101390679279621171335852391113467/103823"
+      ],
+      "quartic_discriminant_from_identity": "-64621599559078013285714045649822461900200556931451544314094781585340557084382479516393628775353362295879112566454615056362124049907398688546258309351068974655431496132332376074255007037501002380770636544660660791923219374155364674196408218068053521798930207018316420908550667843599626293414231997527712346102011861978906769198792445759520768/116191483108948578241",
+      "quartic_galois_group": "S4",
+      "resolvent_generator_in_cubic": [
+        "-99349549777182412039536743858903890025166402838317752/3",
+        "11282656195894521628250844839212/6627",
+        "4"
+      ],
+      "role": "low_first_generic",
+      "short_model": [
+        "0",
+        "0",
+        "0",
+        "-49674774888591206019768371929451945012583201419158876/3",
+        "34791668277891685140328061640421315967071931247454675490459819359792995153617420/27"
+      ],
+      "splitting_field_degree_over_two_division_field": 4
+    },
+    {
+      "cubic_resolvent_ascending": [
+        "85780583148661265648478253564719657952800997763692659670241604254195941225564384493916364899882278925458135593901550208306675000/729",
+        "-5791298620616314155843930849610786995442808124269903780518275408668957247898883720300/27",
+        "-1376953546222274204383642980848099988966650/3",
+        "1"
+      ],
+      "frobenius_witnesses": {
+        "1,3": {
+          "linear_roots": [
+            12
+          ],
+          "prime": 13,
+          "reduction": [
+            8,
+            7,
+            0,
+            2,
+            1
+          ]
+        },
+        "4": {
+          "gcd_with_x_p_squared_minus_x": [
+            1
+          ],
+          "linear_roots": [],
+          "prime": 11,
+          "reduction": [
+            5,
+            2,
+            5,
+            7,
+            1
+          ]
+        }
+      },
+      "halving_quartic_ascending": [
+        "-3646490324351276305445513705792839765168317360894222000788125650211632603108947669375/81",
+        "4706036304634229067411936966185290205630140796389469935752579800/27",
+        "1376953546222274204383642980848099988966650/3",
+        "-6791247472481640494008/3",
+        "1"
+      ],
+      "id": "a1-fibration-04:-1647/91",
+      "independent_input_index": 0,
+      "point": [
+        "1697811868120410123502/3",
+        "9722906728872957211717517955402"
+      ],
+      "quartic_discriminant_from_identity": "-70646738729558591853740939433178816508955832374552179437911780562773787449830277019104540697606274054379044857033900842495695998600664303407417983276913642839788024742881981946312140880784411122456934104391042116370934812972533922026970076135424000000",
+      "quartic_galois_group": "S4",
+      "resolvent_generator_in_cubic": [
+        "-1376953546222274204383642980848099988966650/3",
+        "6791247472481640494008/3",
+        "4"
+      ],
+      "role": "high_first_generic",
+      "short_model": [
+        "0",
+        "0",
+        "0",
+        "-688476773111137102191821490424049994483325/3",
+        "1165101516390718509105968564565796805019364325383105630925333750/27"
+      ],
+      "splitting_field_degree_over_two_division_field": 4
+    },
+    {
+      "cubic_resolvent_ascending": [
+        "-440593575288561206297304921036909164255841673840054681496370027288217426596943694056679311720758223751124062872477712495708158722965559055000/252487497201783507",
+        "9524023220871323802320197859810159803857015121657697688195886050588792094885696134368682149300/133159451283",
+        "-1376953546222274204383642980848099988966650/3",
+        "1"
+      ],
+      "frobenius_witnesses": {
+        "1,3": {
+          "linear_roots": [
+            12
+          ],
+          "prime": 13,
+          "reduction": [
+            8,
+            7,
+            0,
+            2,
+            1
+          ]
+        },
+        "4": {
+          "gcd_with_x_p_squared_minus_x": [
+            1
+          ],
+          "linear_roots": [],
+          "prime": 11,
+          "reduction": [
+            8,
+            0,
+            5,
+            10,
+            1
+          ]
+        }
+      },
+      "halving_quartic_ascending": [
+        "-28355812465796620745607737465044369579130280187270680276503985253655265739141999890318125/5688387",
+        "-24403419593582801740866791779476578808067519270558503213327164604200/632043",
+        "1376953546222274204383642980848099988966650/3",
+        "-281472780422554307049060904/210681",
+        "1"
+      ],
+      "id": "a1-fibration-04:-1647/91",
+      "independent_input_index": 32,
+      "point": [
+        "70368195105638576762265226/210681",
+        "187552350367348673117698196100351813674/96702579"
+      ],
+      "quartic_discriminant_from_identity": "-496942787075868954003037979950800553943283770064991936327970574108614960375212728788289533780226513259143805136902786999178141328642927475810300406111655924589466191224291212283573399076916275925613744169562028998208749577698817201765943141383715705503932716946804523008000000/4442842666916764759667098107",
+      "quartic_galois_group": "S4",
+      "resolvent_generator_in_cubic": [
+        "-1376953546222274204383642980848099988966650/3",
+        "281472780422554307049060904/210681",
+        "4"
+      ],
+      "role": "high_first_quotient",
+      "short_model": [
+        "0",
+        "0",
+        "0",
+        "-688476773111137102191821490424049994483325/3",
+        "1165101516390718509105968564565796805019364325383105630925333750/27"
+      ],
+      "splitting_field_degree_over_two_division_field": 4
+    },
+    {
+      "cubic_resolvent_ascending": [
+        "-18150978451871269235569639098793394246216376508266926241184432177539022438343515145612126571398686652077840011202218277592885797339730447894600982904701092419559432/729",
+        "-5129741484274811271883469309126060507225769691578825729937702733109756791827756952177747135725310189724753068/27",
+        "-489447192630506751838879211722343844590449787147726762/3",
+        "1"
+      ],
+      "frobenius_witnesses": {
+        "1,3": {
+          "linear_roots": [
+            15
+          ],
+          "prime": 17,
+          "reduction": [
+            2,
+            3,
+            8,
+            14,
+            1
+          ]
+        },
+        "4": {
+          "gcd_with_x_p_squared_minus_x": [
+            1
+          ],
+          "linear_roots": [],
+          "prime": 5,
+          "reduction": [
+            4,
+            1,
+            4,
+            2,
+            1
+          ]
+        }
+      },
+      "halving_quartic_ascending": [
+        "1296610276663818032086342939283691287866605986625581872996679135416491773065510844013444082550240179176451249/81",
+        "-4295507889993956582262861993257456630355554812568472189600097035659084607262849288/27",
+        "489447192630506751838879211722343844590449787147726762/3",
+        "2375221651887948492155066216/3",
+        "1"
+      ],
+      "id": "a1-fibration-04:-2177/2397",
+      "independent_input_index": 0,
+      "point": [
+        "-593805412971987123038766554/3",
+        "4495005874711140635101571445277584320598"
+      ],
+      "quartic_discriminant_from_identity": "-2669939478297523952248805692147919042854331956462429987586150306971828756377203115832620075536658996666631069646531695898077527376274027609899692921918703106628210218199943992435865599613486385997075907236061383890990415063440882448879596068305122262186280864623113621881815344550765981940673369086231646519228494274101248",
+      "quartic_galois_group": "S4",
+      "resolvent_generator_in_cubic": [
+        "-489447192630506751838879211722343844590449787147726762/3",
+        "-2375221651887948492155066216/3",
+        "4"
+      ],
+      "role": "low_first_generic",
+      "short_model": [
+        "0",
+        "0",
+        "0",
+        "-244723596315253375919439605861171922295224893573863381/3",
+        "318961191988291227141261747624511286670645812293426319462711728249208139785617550/27"
+      ],
+      "splitting_field_degree_over_two_division_field": 4
+    },
+    {
+      "cubic_resolvent_ascending": [
+        "-629623080631820280935783920339587812478036958335684907576293588899922209987722703126363830137964491048717864369327179649125174338030022523561679342071841/373248",
+        "-546910064747155747483998648623723333475456652773515417468947229928893683775258808272315066618799954239/1728",
+        "-129476809791893687611484370859574682138615020208481/24",
+        "1"
+      ],
+      "frobenius_witnesses": {
+        "1,3": {
+          "linear_roots": [
+            16
+          ],
+          "prime": 17,
+          "reduction": [
+            13,
+            5,
+            2,
+            11,
+            1
+          ]
+        },
+        "4": {
+          "gcd_with_x_p_squared_minus_x": [
+            1
+          ],
+          "linear_roots": [],
+          "prime": 23,
+          "reduction": [
+            7,
+            10,
+            11,
+            21,
+            1
+          ]
+        }
+      },
+      "halving_quartic_ascending": [
+        "406651931444651312571128941747423217155393573864735040029675734527113339212610934063353631225555486401/20736",
+        "-14306755261288082202563620042567080011568352209537459761918751750308468534161/432",
+        "129476809791893687611484370859574682138615020208481/24",
+        "21564607771967086476453839/3",
+        "1"
+      ],
+      "id": "published-R17:-2300/843",
+      "independent_input_index": 0,
+      "point": [
+        "-21564607771967086476453839/12",
+        "871790817217643264444549682480324480"
+      ],
+      "quartic_discriminant_from_identity": "-2355520618854198428209343859265701347038736561075494065694630905239450190960462326472454046600960176905850031616435431052791848397776692199823943481117020231261549655244560822213243652466288439628050548645755568949601485237282087558313714338590755450582920474896381908352620675727360000000000",
+      "quartic_galois_group": "S4",
+      "resolvent_generator_in_cubic": [
+        "-129476809791893687611484370859574682138615020208481/24",
+        "-21564607771967086476453839/3",
+        "4"
+      ],
+      "role": "high_first_generic",
+      "short_model": [
+        "0",
+        "0",
+        "0",
+        "-129476809791893687611484370859574682138615020208481/48",
+        "1482601351276189465313463501930713510264485060214422487764403004257602527121/864"
+      ],
+      "splitting_field_degree_over_two_division_field": 4
+    },
+    {
+      "cubic_resolvent_ascending": [
+        "4245821654721356682741193832017955706781070419732744999056550768021485306220746121294935224875139178708011026632325487490181859903255857500883191068071085818794566743/46360268591642551296",
+        "-159948627377845216428040079789702379232426319249897547788995643740753245388157647418046297411460500896965616381/10839669357312",
+        "-129476809791893687611484370859574682138615020208481/24",
+        "1"
+      ],
+      "frobenius_witnesses": {
+        "1,3": {
+          "linear_roots": [
+            14
+          ],
+          "prime": 17,
+          "reduction": [
+            14,
+            14,
+            2,
+            2,
+            1
+          ]
+        },
+        "4": {
+          "gcd_with_x_p_squared_minus_x": [
+            1
+          ],
+          "linear_roots": [],
+          "prime": 23,
+          "reduction": [
+            13,
+            22,
+            11,
+            0,
+            1
+          ]
+        }
+      },
+      "halving_quartic_ascending": [
+        "-3688929545290635062188225851608805317693356281956606980866217246511811460631939040250501009898401742733389/821166336",
+        "326529083800141729078648868038913796235840400250494338909253804554282118083833641/68430528",
+        "129476809791893687611484370859574682138615020208481/24",
+        "-3259088181183606708511609156339/475212",
+        "1"
+      ],
+      "id": "published-R17:-2300/843",
+      "independent_input_index": 34,
+      "point": [
+        "3259088181183606708511609156339/1900848",
+        "736308886946901991589038681804509437629708575/504358336"
+      ],
+      "quartic_discriminant_from_identity": "-71442726861732804882837145067259454215545068292672833242813174940624544649000017064198986935292172228717870795929143756474521319239531498631005714392821316339049480234039566485753775867428248241999669905261374662000088448958651092303868697853012424249396032858706107378111772717796824055912562473370911712106530761718750/3856887017121283350242637601",
+      "quartic_galois_group": "S4",
+      "resolvent_generator_in_cubic": [
+        "-129476809791893687611484370859574682138615020208481/24",
+        "3259088181183606708511609156339/475212",
+        "4"
+      ],
+      "role": "high_first_quotient",
+      "short_model": [
+        "0",
+        "0",
+        "0",
+        "-129476809791893687611484370859574682138615020208481/48",
+        "1482601351276189465313463501930713510264485060214422487764403004257602527121/864"
+      ],
+      "splitting_field_degree_over_two_division_field": 4
+    },
+    {
+      "cubic_resolvent_ascending": [
+        "-29705035255404747135901591204588310981005086166839257933239574267650907033999512315199800627498110654760382961844025986074339621023747789589215143740625/373248",
+        "-93566010022257464375375674017994983580988442300995178532794667190954241884109760349410474691373228575/1728",
+        "-76847167526754239821774676800074654021745156867825/24",
+        "1"
+      ],
+      "frobenius_witnesses": {
+        "1,3": {
+          "linear_roots": [
+            11
+          ],
+          "prime": 17,
+          "reduction": [
+            3,
+            10,
+            8,
+            4,
+            1
+          ]
+        },
+        "4": {
+          "gcd_with_x_p_squared_minus_x": [
+            1
+          ],
+          "linear_roots": [],
+          "prime": 23,
+          "reduction": [
+            8,
+            2,
+            17,
+            8,
+            1
+          ]
+        }
+      },
+      "halving_quartic_ascending": [
+        "11226061310951569646011548598971007559750070971331851922616987945030417512899609889370979087430030625/20736",
+        "3441714961090937887951687037488944531070603256636410456631581011840679404575/432",
+        "76847167526754239821774676800074654021745156867825/24",
+        "-19573960351324745064159697/3",
+        "1"
+      ],
+      "id": "published-R17:-1561/3133",
+      "independent_input_index": 0,
+      "point": [
+        "19573960351324745064159697/12",
+        "1427735167880692886527096517149914021"
+      ],
+      "quartic_discriminant_from_identity": "235241428676206714939603401759003175200479077012156369289408743287753940852703983079674323930813868412155098572717386643377455640496668266937716257782702814619137007196022365394642318146466122577453505494009908899923502004536872498136508479533132818202045550538851975508441215034261733376000000",
+      "quartic_galois_group": "S4",
+      "resolvent_generator_in_cubic": [
+        "-76847167526754239821774676800074654021745156867825/24",
+        "19573960351324745064159697/3",
+        "4"
+      ],
+      "role": "low_first_generic",
+      "short_model": [
+        "0",
+        "0",
+        "0",
+        "-76847167526754239821774676800074654021745156867825/48",
+        "267723817437488998268225455309924719364489112073217066833567876151420935625/864"
+      ],
+      "splitting_field_degree_over_two_division_field": 4
+    }
+  ],
+  "panel": [
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-782616411412974875829718740725887294879167137136744323393695460144464391358052421088492944465705649745874293728635960748755889168580608",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 17,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "07ca9",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "07ca9:505/794",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "joint_galois_group": "(F2^2)^25 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "65536",
+      "witness_halving_field_degree_over_L": "1125899906842624",
+      "witness_mod2_dimension": 25,
+      "witness_quotient_mod2_dimension": 8
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-1929957261903966814703263613746364226425039094949821981741436171351067100651105459107238318391112692165195077121769127750000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 13,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-04",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-04:-1647/91",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "joint_galois_group": "(F2^2)^25 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "262144",
+      "witness_halving_field_degree_over_L": "1125899906842624",
+      "witness_mod2_dimension": 25,
+      "witness_quotient_mod2_dimension": 9
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "387977084170600884589688592931419126056044733578480852448585981989895167200033261902389199239262395210325213673735229059486997181952",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 29,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-05",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-05:307/206",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "joint_galois_group": "(F2^2)^25 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "262144",
+      "witness_halving_field_degree_over_L": "1125899906842624",
+      "witness_mod2_dimension": 25,
+      "witness_quotient_mod2_dimension": 9
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "2693902856251533260001646502621944656337020163857671001252331986492347396530482082419320164299641825944708859638746173693952000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 7,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "08f72",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "08f72:-704/93",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "joint_galois_group": "(F2^2)^24 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "16384",
+      "witness_halving_field_degree_over_L": "281474976710656",
+      "witness_mod2_dimension": 24,
+      "witness_quotient_mod2_dimension": 7
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "172543910589286863608957146247670792300835195095107748476660283900977407515718391842385145723771415975385518956733955156250000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 7,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-01",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-01:787/103",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "joint_galois_group": "(F2^2)^24 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "65536",
+      "witness_halving_field_degree_over_L": "281474976710656",
+      "witness_mod2_dimension": 24,
+      "witness_quotient_mod2_dimension": 8
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "1394239431284798429467845851462321722053916057243859448121781273072826406125345950728240261631611854673707081611031637086513850368000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 19,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-05",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-05:-109/521",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "joint_galois_group": "(F2^2)^24 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "65536",
+      "witness_halving_field_degree_over_L": "281474976710656",
+      "witness_mod2_dimension": 24,
+      "witness_quotient_mod2_dimension": 8
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "46057187692716083267390354130240418294994593806974347213238434378867668167831816567036772304704989449019539099167921216000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 17,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-05",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-05:-227/647",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "joint_galois_group": "(F2^2)^24 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "65536",
+      "witness_halving_field_degree_over_L": "281474976710656",
+      "witness_mod2_dimension": 24,
+      "witness_quotient_mod2_dimension": 8
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-493646118811467344804171210811717219352562492681588382175281969292072382071217997682470883821843678339685993091788836124800000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 19,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-05",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-05:509/149",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "joint_galois_group": "(F2^2)^24 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "65536",
+      "witness_halving_field_degree_over_L": "281474976710656",
+      "witness_mod2_dimension": 24,
+      "witness_quotient_mod2_dimension": 8
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-995583754744441258868035924323686856720057609281309119997115877190392662219935419554410589513203967970345527043379721126324293977697966976000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 17,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "published-R17:-2300/843",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "joint_galois_group": "(F2^2)^24 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "16384",
+      "witness_halving_field_degree_over_L": "281474976710656",
+      "witness_mod2_dimension": 24,
+      "witness_quotient_mod2_dimension": 7
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "6880960330687211491532521961760388631957421622253638977604578983683951405932448620739480932000563028618678026630206317800396160000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 23,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "published-R17:-695/97",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "joint_galois_group": "(F2^2)^24 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "16384",
+      "witness_halving_field_degree_over_L": "281474976710656",
+      "witness_mod2_dimension": 24,
+      "witness_quotient_mod2_dimension": 7
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "34748720251046276166190856202937826389752468738268876249736738437779474898025486746924311632550826641753413348413252720128000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 23,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "published-R17:33/119",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "joint_galois_group": "(F2^2)^24 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "16384",
+      "witness_halving_field_degree_over_L": "281474976710656",
+      "witness_mod2_dimension": 24,
+      "witness_quotient_mod2_dimension": 7
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "8489747384947359991837858355533514860768605577891862437779929103893250786947468145200097352595389274278458645759662825472",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 59,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "074d9",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "074d9:-839/505",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "joint_galois_group": "(F2^2)^23 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "4096",
+      "witness_halving_field_degree_over_L": "70368744177664",
+      "witness_mod2_dimension": 23,
+      "witness_quotient_mod2_dimension": 6
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "555073219115348430020039005530709417379040389192808310794256352952903737952787951548737125722358366090649856000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 19,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "08234",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "08234:-506/9",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "joint_galois_group": "(F2^2)^23 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "4096",
+      "witness_halving_field_degree_over_L": "70368744177664",
+      "witness_mod2_dimension": 23,
+      "witness_quotient_mod2_dimension": 6
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "44377069542602221522902886707262881629439085619974938715528649585309853030328367224252302993434678483436992564308728912419126032000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 3,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-03",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-03:478/49",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "joint_galois_group": "(F2^2)^23 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "16384",
+      "witness_halving_field_degree_over_L": "70368744177664",
+      "witness_mod2_dimension": 23,
+      "witness_quotient_mod2_dimension": 7
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-25099061854618346507922157289759967956647000593122370343351318928577056025113752286260550096610026979061192104294847431012480000000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 23,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-05",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-05:643/7",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "joint_galois_group": "(F2^2)^23 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "16384",
+      "witness_halving_field_degree_over_L": "70368744177664",
+      "witness_mod2_dimension": 23,
+      "witness_quotient_mod2_dimension": 7
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-160653911701242166239801602297443984872138078467423255475656629747523482589809328942282743510399708313973533019812047238029783409422848",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 19,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "published-R17:-1193/1560",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "joint_galois_group": "(F2^2)^23 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "4096",
+      "witness_halving_field_degree_over_L": "70368744177664",
+      "witness_mod2_dimension": 23,
+      "witness_quotient_mod2_dimension": 6
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "2449713142839449893678938246143935717294257102165195861666207926406454912266312084023194574074165420308536939451210592598047577725769375975316480000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 23,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "published-R17:-1264/1047",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "joint_galois_group": "(F2^2)^23 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "4096",
+      "witness_halving_field_degree_over_L": "70368744177664",
+      "witness_mod2_dimension": 23,
+      "witness_quotient_mod2_dimension": 6
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-142855752859972313281815268244538172054980767302639967206663907295525739251089512331257502115015536282677602388650234975132932274662764349189211213209600000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 3,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "published-R17:-3895/3749",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "joint_galois_group": "(F2^2)^23 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "4096",
+      "witness_halving_field_degree_over_L": "70368744177664",
+      "witness_mod2_dimension": 23,
+      "witness_quotient_mod2_dimension": 6
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-195104254860622279558008629136545814149711479313048109688125799307170373966370537726396660233702761367408051323807492013130577602941876979208376208750000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 23,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "published-R17:1229/894",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "joint_galois_group": "(F2^2)^23 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "4096",
+      "witness_halving_field_degree_over_L": "70368744177664",
+      "witness_mod2_dimension": 23,
+      "witness_quotient_mod2_dimension": 6
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-9520969299735546537264638391078669734544595671535288342229110421996589015310585917215621074515050247748083533494166444082944688",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 23,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "published-R17:129/70",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "joint_galois_group": "(F2^2)^23 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "4096",
+      "witness_halving_field_degree_over_L": "70368744177664",
+      "witness_mod2_dimension": 23,
+      "witness_quotient_mod2_dimension": 6
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-495185562899834517042389318616924258437296067992998012236321725039198175401179238387185647784950834445366033475197045676205233333919542089120000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 29,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "published-R17:2291/2392",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "joint_galois_group": "(F2^2)^23 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "4096",
+      "witness_halving_field_degree_over_L": "70368744177664",
+      "witness_mod2_dimension": 23,
+      "witness_quotient_mod2_dimension": 6
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-13281956731550849570192363398088938196200575702864197026576618935678032292072728277095528124230967168805235835402421248",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 19,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "published-R17:44/35",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "joint_galois_group": "(F2^2)^23 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "4096",
+      "witness_halving_field_degree_over_L": "70368744177664",
+      "witness_mod2_dimension": 23,
+      "witness_quotient_mod2_dimension": 6
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-3764223800533671192209003141425540995932425065152440860841907143318953221392522232992816501870195639007619438734511801016883757/4",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 37,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "074d9",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "074d9:148/225",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "joint_galois_group": "(F2^2)^22 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1024",
+      "witness_halving_field_degree_over_L": "17592186044416",
+      "witness_mod2_dimension": 22,
+      "witness_quotient_mod2_dimension": 5
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-9542126664166067892934217976678695484655770737109520686659895992713857699051435519787165520070579309812863851075841375801344000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 17,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "11952",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "11952:744/5",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "joint_galois_group": "(F2^2)^22 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1024",
+      "witness_halving_field_degree_over_L": "17592186044416",
+      "witness_mod2_dimension": 22,
+      "witness_quotient_mod2_dimension": 5
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-6003990064334172166466082033807163800456897856100121642475568345611403413381854593468409212692741082099942368523213498880000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 7,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-01",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-01:32/253",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "joint_galois_group": "(F2^2)^22 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "4096",
+      "witness_halving_field_degree_over_L": "17592186044416",
+      "witness_mod2_dimension": 22,
+      "witness_quotient_mod2_dimension": 6
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "35183419896038613291093348172993390119102780046254978020256047936193812922130420270568994491651284762536997720486016315598672",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 7,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-01",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-01:699/19",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "joint_galois_group": "(F2^2)^22 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "4096",
+      "witness_halving_field_degree_over_L": "17592186044416",
+      "witness_mod2_dimension": 22,
+      "witness_quotient_mod2_dimension": 6
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-99130824135276952600572211346938533742145064057133240479098494103350022587977239819315192958910480128000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 7,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-04",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-04:-20/23",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "joint_galois_group": "(F2^2)^22 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "4096",
+      "witness_halving_field_degree_over_L": "17592186044416",
+      "witness_mod2_dimension": 22,
+      "witness_quotient_mod2_dimension": 6
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "267062992719541725081349204819161338119762495644860330172732147128387380208210885260931103581467767420720126476165250000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 13,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-04",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-04:-209/118",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "joint_galois_group": "(F2^2)^22 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "4096",
+      "witness_halving_field_degree_over_L": "17592186044416",
+      "witness_mod2_dimension": 22,
+      "witness_quotient_mod2_dimension": 6
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "11935274477391059116257992586821324934447374656129092273452412497634750912046880038700301392909655404330821703570227200000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 7,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-04",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-04:-338/47",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "joint_galois_group": "(F2^2)^22 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "4096",
+      "witness_halving_field_degree_over_L": "17592186044416",
+      "witness_mod2_dimension": 22,
+      "witness_quotient_mod2_dimension": 6
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "98298082018098805381761635965771642946485252864492461865124547493182790421147996745466202864628996036309872308198594064472694823810676600000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 7,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-05",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-05:-279/730",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "joint_galois_group": "(F2^2)^22 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "4096",
+      "witness_halving_field_degree_over_L": "17592186044416",
+      "witness_mod2_dimension": 22,
+      "witness_quotient_mod2_dimension": 6
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "10683553017874460434819922637201141117772388780114088993221866991244850843456199677653274572000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 23,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-05",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-05:3/17",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "joint_galois_group": "(F2^2)^22 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "4096",
+      "witness_halving_field_degree_over_L": "17592186044416",
+      "witness_mod2_dimension": 22,
+      "witness_quotient_mod2_dimension": 6
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-387013018245826544657919967064755537420386495209621698437635799909426755482730945880215700600054046485248197410167680740890625/4",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 17,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "published-R17:-3/148",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "joint_galois_group": "(F2^2)^22 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1024",
+      "witness_halving_field_degree_over_L": "17592186044416",
+      "witness_mod2_dimension": 22,
+      "witness_quotient_mod2_dimension": 5
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-965384470309686976164614837757476159376547416750451347992698456309083243764911924843694074945214546021546833200000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 19,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "published-R17:-70/61",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "joint_galois_group": "(F2^2)^22 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1024",
+      "witness_halving_field_degree_over_L": "17592186044416",
+      "witness_mod2_dimension": 22,
+      "witness_quotient_mod2_dimension": 5
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "36463275061634265478886080143378998924359568942708724415680470423846554648089973645458422100375781929213192616392280971517482711215162906738271206400000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 29,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "published-R17:-7540/2317",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "joint_galois_group": "(F2^2)^22 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1024",
+      "witness_halving_field_degree_over_L": "17592186044416",
+      "witness_mod2_dimension": 22,
+      "witness_quotient_mod2_dimension": 5
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-148618218735614440081387567250047065498991162338232974899564348824012933717168338879024170447686468413964037083111276484026786909114817438527912523904000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 19,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "published-R17:1348/1431",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "joint_galois_group": "(F2^2)^22 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1024",
+      "witness_halving_field_degree_over_L": "17592186044416",
+      "witness_mod2_dimension": 22,
+      "witness_quotient_mod2_dimension": 5
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "1029331181583488534791458741665469723235542487844889890895145664393405842999951803471180822776073600000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 19,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "published-R17:8/39",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "joint_galois_group": "(F2^2)^22 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1024",
+      "witness_halving_field_degree_over_L": "17592186044416",
+      "witness_mod2_dimension": 22,
+      "witness_quotient_mod2_dimension": 5
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-10390911453924670590638582940769472429652040265286993321075614851670494169007672772870809152183166222982744265390032223563343539676160000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 19,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "07ca9",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "07ca9:-2507/3068",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "joint_galois_group": "(F2^2)^26 semidirect S3 (diagonal natural action)",
+      "origin": "prospective_discovery",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "262144",
+      "witness_halving_field_degree_over_L": "4503599627370496",
+      "witness_mod2_dimension": 26,
+      "witness_quotient_mod2_dimension": 9
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-97091723511463343273219226306644861908843345023725894419911561340129381576670123566542327538520107067713205012130514582763520000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 29,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-02",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-02:187/190",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "joint_galois_group": "(F2^2)^21 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1024",
+      "witness_halving_field_degree_over_L": "4398046511104",
+      "witness_mod2_dimension": 21,
+      "witness_quotient_mod2_dimension": 5
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "88924034279304920381757115368758347041942218393558639424513175367968647461194243375221487886414536983683277126000060403830931902560820387612654419019198011545640414502912",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 23,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-03",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-03:-181/936",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "joint_galois_group": "(F2^2)^16 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "4294967296",
+      "witness_mod2_dimension": 16,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "5145896601295199641698925304318870599738992535128400431091646010668636261390588699391444374266237410088038045269164404407520000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 7,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-04",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-04:632/611",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35
+      ],
+      "joint_galois_group": "(F2^2)^20 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "256",
+      "witness_halving_field_degree_over_L": "1099511627776",
+      "witness_mod2_dimension": 20,
+      "witness_quotient_mod2_dimension": 4
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "1227482375967234377741705201435855712168075231062786180896124758534823332396831649232371037391378902675387250000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 3,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-05",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-05:-34/87",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "joint_galois_group": "(F2^2)^24 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "65536",
+      "witness_halving_field_degree_over_L": "281474976710656",
+      "witness_mod2_dimension": 24,
+      "witness_quotient_mod2_dimension": 8
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "14643895612985293285647124397869829566153972433451728802543795228281715635739708624152826205049392729551067656002891759183787690232272",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 7,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-02",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-02:28/323",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35
+      ],
+      "joint_galois_group": "(F2^2)^20 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "256",
+      "witness_halving_field_degree_over_L": "1099511627776",
+      "witness_mod2_dimension": 20,
+      "witness_quotient_mod2_dimension": 4
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "64067127254181632205411031480608487335973678800561010242069918808849309146567720665839846016702733393315108668333264391813732911845279432915688442373632",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 37,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-03",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-03:873/227",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "joint_galois_group": "(F2^2)^16 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "4294967296",
+      "witness_mod2_dimension": 16,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-930405822267932855294899100820614002546230732310549908835635687994698689444873267572387350336000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 17,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-02",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-02:39/10",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "joint_galois_group": "(F2^2)^21 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1024",
+      "witness_halving_field_degree_over_L": "4398046511104",
+      "witness_mod2_dimension": 21,
+      "witness_quotient_mod2_dimension": 5
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-16488281661192626515550338420227870501763615721791915301248984211974882043373963305719504252107249533375567290368",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 23,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-01",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-01:-197/118",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35
+      ],
+      "joint_galois_group": "(F2^2)^20 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "256",
+      "witness_halving_field_degree_over_L": "1099511627776",
+      "witness_mod2_dimension": 20,
+      "witness_quotient_mod2_dimension": 4
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-27469090653324458619344092680421154612865152161259860787453498499871432738550377035140501470259082604892311098306120957717795620563200000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 31,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-02",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-02:-601/466",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "joint_galois_group": "(F2^2)^21 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1024",
+      "witness_halving_field_degree_over_L": "4398046511104",
+      "witness_mod2_dimension": 21,
+      "witness_quotient_mod2_dimension": 5
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-21548199020261446997318279924809126591981818079552930359691087945313028075289864102529088414922723699928300040767243767810427888831180759305038161621569017648",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 17,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-03",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-03:-1013/283",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "joint_galois_group": "(F2^2)^16 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "4294967296",
+      "witness_mod2_dimension": 16,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-11838021167413475623595517433625106812301659743512091741469244733127037388120329317890009436023845408730505536338745062701179511092374528",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 29,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-01",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-01:2407/532",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35
+      ],
+      "joint_galois_group": "(F2^2)^20 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "256",
+      "witness_halving_field_degree_over_L": "1099511627776",
+      "witness_mod2_dimension": 20,
+      "witness_quotient_mod2_dimension": 4
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "13146727032859611743608797944233395890566069794503888630681585711313625087477739053617770829026649673412110615840027640569362551107772333040013511196687593504207250000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 19,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-02",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-02:-3581/4061",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "joint_galois_group": "(F2^2)^16 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "4294967296",
+      "witness_mod2_dimension": 16,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "178401829002913000719889575108195880705439993963449866397350574133279346817384593535925322698847598093518624444987478303918901394318857596776033288161921362712296250265805574754332673/4",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 29,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-03",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-03:-1193/4073",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "joint_galois_group": "(F2^2)^16 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "4294967296",
+      "witness_mod2_dimension": 16,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "45142362515116409890484112017875027928119636123552656668028272331760118006808109206415534790506384486016167696265569082846501250000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 13,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-04",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-04:-1905/52",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "joint_galois_group": "(F2^2)^25 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "262144",
+      "witness_halving_field_degree_over_L": "1125899906842624",
+      "witness_mod2_dimension": 25,
+      "witness_quotient_mod2_dimension": 9
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "13570295719247225015214697322948925944442770736502175461128299670700649808228454206618577653273325650447466945149523391013191923101347315636606250000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 17,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-01",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-01:-3187/3697",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32
+      ],
+      "joint_galois_group": "(F2^2)^17 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "4",
+      "witness_halving_field_degree_over_L": "17179869184",
+      "witness_mod2_dimension": 17,
+      "witness_quotient_mod2_dimension": 1
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-14052165802167817172844851432275355917706086414342685211468616780478291181707640498649474596933426230282284191897762866048184824480248872170678914608128",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 3,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-02",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-02:-1511/3474",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "joint_galois_group": "(F2^2)^16 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "4294967296",
+      "witness_mod2_dimension": 16,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "1157421900261152240160211109090978320323033088453204536737924657892763676007468915663749583519269633288245611298793172706126849033756689187379750604240852436913485807842399312",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 19,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-03",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-03:3769/1361",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "joint_galois_group": "(F2^2)^16 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "4294967296",
+      "witness_mod2_dimension": 16,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-26672355913899639527037028776125707353042149091861491516954475876150249798115502272476468663224374128668668935726437995708553882651154396851177555216962876848",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 19,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-05",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-05:-3158/1291",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "joint_galois_group": "(F2^2)^16 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "4294967296",
+      "witness_mod2_dimension": 16,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-11327230364892844084085359702435100273530867508555712713992469551264130819597998601179537800701825422468715924785780776678168008150454817023053030400000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 7,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-01",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-01:320/2617",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33
+      ],
+      "joint_galois_group": "(F2^2)^18 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "16",
+      "witness_halving_field_degree_over_L": "68719476736",
+      "witness_mod2_dimension": 18,
+      "witness_quotient_mod2_dimension": 2
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "7866882369350439778168882446356605202336794214213973327602663104961859592591968562560888343675943838764698484405133274318321541282460328650770459750167375383/4",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 7,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-02",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-02:-2968/3107",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "joint_galois_group": "(F2^2)^16 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "4294967296",
+      "witness_mod2_dimension": 16,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "1948890110210243489346591876765977472264919049418189145608014012657174614880791071881135774076845795156367202621609394348923934200237500413369929568687012761816320000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 19,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-03",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-03:3343/780",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "joint_galois_group": "(F2^2)^16 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "4294967296",
+      "witness_mod2_dimension": 16,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-1596689297782645112931245890234707882286636136728279810012734053317552384309487408683915353548350612786508764853711358131706827807250668669012670540237053905968",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 17,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-04",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-04:-2177/2397",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "joint_galois_group": "(F2^2)^16 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "4294967296",
+      "witness_mod2_dimension": 16,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-24605533420935672441379511144889906311566996278457994455305998988770782781553028787218374448426288693199013232410166101634176292026510171597674283632963568750000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 7,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-05",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-05:1666/3461",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32
+      ],
+      "joint_galois_group": "(F2^2)^17 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "4",
+      "witness_halving_field_degree_over_L": "17179869184",
+      "witness_mod2_dimension": 17,
+      "witness_quotient_mod2_dimension": 1
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "152623888674693464962072498512050373082891585828382334720293010449111381266005954597421775623195144585038324345861790345393609638247316631552",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 17,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-02",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-02:199/3254",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32
+      ],
+      "joint_galois_group": "(F2^2)^17 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "4",
+      "witness_halving_field_degree_over_L": "17179869184",
+      "witness_mod2_dimension": 17,
+      "witness_quotient_mod2_dimension": 1
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "30319631999570229819526054608159456079470808544892223376797377534608548558862661507632634770882194182643556593423824011321344341629962371709887548821055155660121329643395200000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 17,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-03",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-03:3290/1563",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "joint_galois_group": "(F2^2)^16 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "4294967296",
+      "witness_mod2_dimension": 16,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-48115275168784536258230777811821697787281829825634992063863448906905913439352375450886333866842492743333257869935364009963697463599652998637898305805549568",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 23,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-04",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-04:-3076/1981",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "joint_galois_group": "(F2^2)^16 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "4294967296",
+      "witness_mod2_dimension": 16,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-760998342390050476604089753873369713441421226537249099569715473040430524832257452180069168511216583395692607434288952356636900021055295619247911430593815408750000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 7,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "a1-fibration-05",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "a1-fibration-05:2714/3419",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32
+      ],
+      "joint_galois_group": "(F2^2)^17 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "4",
+      "witness_halving_field_degree_over_L": "17179869184",
+      "witness_mod2_dimension": 17,
+      "witness_quotient_mod2_dimension": 1
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "13821756309640395823554758167761881808526719515638788913452996078537434231585206466825365091757961225754507643073716874421414659950430827576000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 17,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "published-R17:-1561/3133",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "joint_galois_group": "(F2^2)^17 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "17179869184",
+      "witness_mod2_dimension": 17,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "6274368366850831784168863197491230701736348515262898083656791971309749728288771607720020866217380780495752131894826624000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 29,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "ICARM-351",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "joint_galois_group": "(F2^2)^25 semidirect S3 (diagonal natural action)",
+      "origin": "historic_oracle",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "65536",
+      "witness_halving_field_degree_over_L": "1125899906842624",
+      "witness_mod2_dimension": 25,
+      "witness_quotient_mod2_dimension": 8
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-1451599300363828498248778269775024436596195236277990189661601976599949405206896422341296417996487847178335229685283637508930744466357972014492911139125888769408750000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 17,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "ICARM-356",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ],
+      "joint_galois_group": "(F2^2)^29 semidirect S3 (diagonal natural action)",
+      "origin": "historic_oracle",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "16777216",
+      "witness_halving_field_degree_over_L": "288230376151711744",
+      "witness_mod2_dimension": 29,
+      "witness_quotient_mod2_dimension": 12
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "40189451154291512936479618467659328770525433454279632815518628957804058306707181057307359094505472",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 41,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "ICARM-376",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "joint_galois_group": "(F2^2)^22 semidirect S3 (diagonal natural action)",
+      "origin": "historic_oracle",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1024",
+      "witness_halving_field_degree_over_L": "17592186044416",
+      "witness_mod2_dimension": 22,
+      "witness_quotient_mod2_dimension": 5
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-2474337818808138617661359458783210840398592929560617568018812458763559495850693391486319935577173642704186750000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 17,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "ICARM-377",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "joint_galois_group": "(F2^2)^23 semidirect S3 (diagonal natural action)",
+      "origin": "historic_oracle",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "4096",
+      "witness_halving_field_degree_over_L": "70368744177664",
+      "witness_mod2_dimension": 23,
+      "witness_quotient_mod2_dimension": 6
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "466943465630449730045494402827287538225335889781103039003417501977264659664657454305103445879506099436807795056552424874361527402039038362587453060825853102699756230911027532215616000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 3,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "ICARM-385",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ],
+      "joint_galois_group": "(F2^2)^29 semidirect S3 (diagonal natural action)",
+      "origin": "historic_oracle",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "16777216",
+      "witness_halving_field_degree_over_L": "288230376151711744",
+      "witness_mod2_dimension": 29,
+      "witness_quotient_mod2_dimension": 12
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "178362982994772467233115324783992354604204589218685825207602728678506839165019408362662262008091576021094966387802211376980562340467688905233675281056296407083487019452087664640000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 23,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "curve398-p16875",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "ICARM-398",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        47,
+        48
+      ],
+      "joint_galois_group": "(F2^2)^30 semidirect S3 (diagonal natural action)",
+      "origin": "historic_oracle",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "268435456",
+      "witness_halving_field_degree_over_L": "1152921504606846976",
+      "witness_mod2_dimension": 30,
+      "witness_quotient_mod2_dimension": 14
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-958893089126647093274756870975064997579312330528452093618981285390917919672875554537497273794797262190234355180869851329706832457166406948492840426987454464000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 59,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "curve400-p53042",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "ICARM-400",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        35,
+        36,
+        37,
+        40,
+        41,
+        42,
+        43,
+        45,
+        46,
+        47,
+        48
+      ],
+      "joint_galois_group": "(F2^2)^28 semidirect S3 (diagonal natural action)",
+      "origin": "historic_oracle",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "16777216",
+      "witness_halving_field_degree_over_L": "72057594037927936",
+      "witness_mod2_dimension": 28,
+      "witness_quotient_mod2_dimension": 12
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-102446720419343644169912167941791728592383007410116824983722578911863179525644116712638332742069296599363635918649057462025171152481280000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 19,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "curve401-p57487",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "ICARM-401",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        33,
+        36,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        54
+      ],
+      "joint_galois_group": "(F2^2)^27 semidirect S3 (diagonal natural action)",
+      "origin": "historic_oracle",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "4194304",
+      "witness_halving_field_degree_over_L": "18014398509481984",
+      "witness_mod2_dimension": 27,
+      "witness_quotient_mod2_dimension": 11
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "98265097328213934033341509529155677049437501608496936600836559160372956666495419862084314007967758244384432851644703944527984520401920000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 13,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "curve542-p30486",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "ICARM-542",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "joint_galois_group": "(F2^2)^26 semidirect S3 (diagonal natural action)",
+      "origin": "historic_oracle",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "1048576",
+      "witness_halving_field_degree_over_L": "4503599627370496",
+      "witness_mod2_dimension": 26,
+      "witness_quotient_mod2_dimension": 10
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-169424154466421835913437072893311766449257612347862456693753588867393104666166334252139862531287969262127405444309060227255993660115071350444844986849848773068899276800000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 41,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "norm12-orbit-07ca9",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "ICARM-543",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62
+      ],
+      "joint_galois_group": "(F2^2)^29 semidirect S3 (diagonal natural action)",
+      "origin": "historic_oracle",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "16777216",
+      "witness_halving_field_degree_over_L": "288230376151711744",
+      "witness_mod2_dimension": 29,
+      "witness_quotient_mod2_dimension": 12
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "2671961953756786708240095453004892551292166426096591465519585025230868670842079676414773233591549114026846107759616000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 31,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "curve548-p31627",
+      "generic_halving_field_degree_over_L": "4294967296",
+      "generic_mod2_dimension": 16,
+      "id": "ICARM-548",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "joint_galois_group": "(F2^2)^24 semidirect S3 (diagonal natural action)",
+      "origin": "historic_oracle",
+      "rank_input_scope": "point membership and finite Kummer signatures recomputed",
+      "relative_degree_over_generic_halving_field": "65536",
+      "witness_halving_field_degree_over_L": "281474976710656",
+      "witness_mod2_dimension": 24,
+      "witness_quotient_mod2_dimension": 8
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "1960175625250518597708301935884084872646269291363159990919751497879248222100492613142349509500000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 19,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "control-r21-t3_8",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "joint_galois_group": "(F2^2)^21 semidirect S3 (diagonal natural action)",
+      "origin": "historic_oracle",
+      "rank_input_scope": "inherited exact global fingerprints",
+      "relative_degree_over_generic_halving_field": "256",
+      "witness_halving_field_degree_over_L": "4398046511104",
+      "witness_mod2_dimension": 21,
+      "witness_quotient_mod2_dimension": 4
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-103004823753032494949803211766781749827005572844128061029656201541931237122868707679043084456827874324649391994328126144000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 23,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "control-r25",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "joint_galois_group": "(F2^2)^25 semidirect S3 (diagonal natural action)",
+      "origin": "historic_oracle",
+      "rank_input_scope": "inherited exact global fingerprints",
+      "relative_degree_over_generic_halving_field": "65536",
+      "witness_halving_field_degree_over_L": "1125899906842624",
+      "witness_mod2_dimension": 25,
+      "witness_quotient_mod2_dimension": 8
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "4493442544226952285389213391068045591662738588420433877873295292073328247662751362901740197579622889521809179131924045367784048000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 23,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "control-r26",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "joint_galois_group": "(F2^2)^26 semidirect S3 (diagonal natural action)",
+      "origin": "historic_oracle",
+      "rank_input_scope": "inherited exact global fingerprints",
+      "relative_degree_over_generic_halving_field": "262144",
+      "witness_halving_field_degree_over_L": "4503599627370496",
+      "witness_mod2_dimension": 26,
+      "witness_quotient_mod2_dimension": 9
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-18268499529189795673773286941612692895148812471436490498964074647724708105737276494068267389914732442830489362281948928257541183955714554991098262528",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 47,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "control-r27",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "joint_galois_group": "(F2^2)^27 semidirect S3 (diagonal natural action)",
+      "origin": "historic_oracle",
+      "rank_input_scope": "inherited exact global fingerprints",
+      "relative_degree_over_generic_halving_field": "1048576",
+      "witness_halving_field_degree_over_L": "18014398509481984",
+      "witness_mod2_dimension": 27,
+      "witness_quotient_mod2_dimension": 10
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "223860954598820285606484154486439179018348151388799434840776438983422221018318350595273066478579036320738560295201087595898194421913828268595232325341744709984000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 23,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "control-r28",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "joint_galois_group": "(F2^2)^28 semidirect S3 (diagonal natural action)",
+      "origin": "historic_oracle",
+      "rank_input_scope": "inherited exact global fingerprints",
+      "relative_degree_over_generic_halving_field": "4194304",
+      "witness_halving_field_degree_over_L": "72057594037927936",
+      "witness_mod2_dimension": 28,
+      "witness_quotient_mod2_dimension": 11
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-707583228622808176050205720943583742247562623973050541179566291821859279084984078229913999707197716991387660218858494917031994947801333402316367458048",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 17,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "nagao-0001",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "joint_galois_group": "(F2^2)^17 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "inherited exact global fingerprints",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "17179869184",
+      "witness_mod2_dimension": 17,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "267470636270376071288776281713898689827806549362874296109260041638407539730494036414597547051358603491746142338615033462191035257913724944751294402053393308791460224000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 23,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "nagao-0002",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "joint_galois_group": "(F2^2)^17 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "inherited exact global fingerprints",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "17179869184",
+      "witness_mod2_dimension": 17,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "477071231437040050698258691812471685539709094315730832326716038183640636121553445337294465449580556284218041746624085020399647277989472461105660207589836581315968000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 37,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "nagao-0003",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "joint_galois_group": "(F2^2)^17 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "inherited exact global fingerprints",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "17179869184",
+      "witness_mod2_dimension": 17,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "20006514445500579282336894886440725233834417173097778676152289130348988177620446361712185680360783216058022112234148852886368119681482783421405605789568000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 19,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "nagao-0004",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "joint_galois_group": "(F2^2)^17 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "inherited exact global fingerprints",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "17179869184",
+      "witness_mod2_dimension": 17,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-88369271499247836708397485306160166919893988141791600369194839744208854878321163857526277066175915168875040277094153429911898991787477249706695095977270526097981000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 23,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "nagao-0005",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "joint_galois_group": "(F2^2)^17 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "inherited exact global fingerprints",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "17179869184",
+      "witness_mod2_dimension": 17,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-2912306968055936205356270090836456745460668631795917202944592022713435586399891599141444579426164300190889109488091777113400081959448065805225854437/4",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 19,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "nagao-0006",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "joint_galois_group": "(F2^2)^17 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "inherited exact global fingerprints",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "17179869184",
+      "witness_mod2_dimension": 17,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "1596043229406735713050174857659550757543650458905720004615083276890186862228472227166066305825101131491466552917318805364953881421223690703859235001216611840000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 29,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "nagao-0007",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "joint_galois_group": "(F2^2)^17 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "inherited exact global fingerprints",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "17179869184",
+      "witness_mod2_dimension": 17,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-5153928803657472282435826475506250060755987646496504850148277715791211698716610674274901909645061585362001014937714337564994946346571776000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 23,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "nagao-0008",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "joint_galois_group": "(F2^2)^17 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "inherited exact global fingerprints",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "17179869184",
+      "witness_mod2_dimension": 17,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-1896639636984766340870862179062042926001586817133759284427698351576588260648278364587327053710215883402466839602444596381341895758239175435537939877336944423060949122976000000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 23,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "nagao-0009",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "joint_galois_group": "(F2^2)^17 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "inherited exact global fingerprints",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "17179869184",
+      "witness_mod2_dimension": 17,
+      "witness_quotient_mod2_dimension": 0
+    },
+    {
+      "equation_galois_certificate": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-32936179211205826805325744367652773044427177489619011424512645834756531206898876765004441125799791759219697579258724943781143995640767811076960503780477639576531797516288",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 29,
+        "layer": "incidence"
+      },
+      "extension_scope": "Only the specified independent witness subgroup. Whole-curve halving field UNKNOWN.",
+      "family": "published-R17",
+      "generic_halving_field_degree_over_L": "17179869184",
+      "generic_mod2_dimension": 17,
+      "id": "nagao-0010",
+      "independent_input_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "joint_galois_group": "(F2^2)^17 semidirect S3 (diagonal natural action)",
+      "origin": "retrospective_search_control",
+      "rank_input_scope": "inherited exact global fingerprints",
+      "relative_degree_over_generic_halving_field": "1",
+      "witness_halving_field_degree_over_L": "17179869184",
+      "witness_mod2_dimension": 17,
+      "witness_quotient_mod2_dimension": 0
+    }
+  ],
+  "panel_report_sha256": "52547a3505b15475e2598257f0b82a59cb48b2cf6b851cd814e958b4afef9f77",
+  "protocol_sha256": "5658c614977029a3f54d2c8c9701ff75e488c35955d2cc36e43cf6633c8c1d4f",
+  "schema": "rank-jump.halving-fields.v1",
+  "script_sha256": "531abcc97f3877bb00123155d9c352fd5f62efe7129fba3967d776a110b505c8",
+  "summary": {
+    "S4_quartics_with_bounded_Frobenius_witnesses": 9,
+    "halving_quartics": 9,
+    "inherited_signature_rows": 15,
+    "joint_extension_collapse": "RULED_OUT_FOR_ALL_SPECIFIED_INDEPENDENT_SUBGROUPS",
+    "panel_rows": 91,
+    "point_signature_replays": 76,
+    "solubility_prediction_from_finite_torsor_field_alone": "REFUTED_BY_FIXED_CLASS_COUNTEREXAMPLE"
+  }
+}

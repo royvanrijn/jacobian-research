@@ -1,0 +1,13 @@
+{
+  "schema": "rank-jump.halving-field-protocol.v1",
+  "scope": "Exact retrospective field consequences of certified mod-2 independence; no rank or point search.",
+  "hypothesis": "Exceptional directions can share a smaller joint halving extension despite their certified mod-2 independence.",
+  "inputs": ["rank_jump_retrospective_inputs_v1.json", "rank_jump_retrospective_report_v1.json", "rank_jump_local_collision_inputs_v1.json"],
+  "panel": "All 91 main-panel observations. Fields use only the specified independent witness subgroup, not every supplied point or the unknown full Mordell-Weil group.",
+  "finite_module_checks": "Enumerate all 1024 normalized maps S3 to F2^2 for 1-cocycles, all 16 endomorphisms, and all subspaces of (F2^2)^r for r=1,2,3. Count common fixed-point tuples in the three affine groups of orders 24,96,384.",
+  "quartic_selection": "For each of the three pinned high/low pairs: first generic point on each fibre and first selected exceptional point on the high fibre. Nine quartics total.",
+  "quartic_checks": "Exact point membership, halving quartic, resolvent identity, and first good primes at most 1999 exhibiting cycle types (4) and (1,3).",
+  "limits": "No number-field compositum construction, number-field discriminant computation, class group, global polynomial Galois computation, parameter sweep, or new point.",
+  "interpretation": "Consequences of known class incidence, not a point-blind incidence or solubility selector. The same Galois theorem applies to insoluble Selmer classes.",
+  "legacy_boundary": "Do not convert free quotient ranks in the three older MW12 embeddings to field degrees without an ambient mod-2 independence certificate."
+}
