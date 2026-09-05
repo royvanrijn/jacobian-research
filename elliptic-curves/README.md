@@ -1,5 +1,15 @@
 # Elliptic curves over `Q` — ACTIVE
 
+The [new compact R17 curves](notes/NEW_COMPACT_R17_CURVES_2026-09-05.md)
+have certified rank lower bounds 22–24 and no match in the pinned 584-curve
+catalogue. The [machinery audit](notes/ELLIPTIC_BREAKTHROUGH_AUDIT_2026-09-05.md)
+records the selection and checkpoint fixes; the near-record target remains open.
+
+The [completed rank-jump diagnostics](notes/RANK_JUMP_DIAGNOSTICS_2026-09-05.md)
+explain retained MW18 visibility, recover 31/31 masked ordinary-fibre
+directions, compare disjoint-prime selectors, and measure the height cost of
+one explicit MW18-to-MW19 construction. No selector is promoted.
+
 The [fibre-height population experiment](notes/FIBRE_HEIGHT_POPULATION_2026-09-05.md)
 compares Nagao selection with actual arithmetic height and measured chart cost
 on fresh bounded MW16 and MW18 populations.

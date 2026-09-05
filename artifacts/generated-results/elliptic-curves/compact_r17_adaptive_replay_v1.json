@@ -1,0 +1,42 @@
+{
+  "archive": "artifacts/generated-results/elliptic-curves/compact_r17_adaptive_witnesses_v1.zip",
+  "archive_sha256": "46a43169399735eb35690cb373fbefebd6f16098248465b247d7d9e5fdd06b4a",
+  "claim_boundary": "Both pilots stop after no first-round rank increase. Every recorded chart and admission replays; bounded coverage and finite-quotient ambiguity do not prove an exact rank.",
+  "members": {
+    "artifacts/local/elliptic-curves/compact-r17-adaptive-v2/ambiguities-0.log": "38c634cee37dde344441028e361d6fc2fc31b5021e3ef07e9aeca3e2d8b6408e",
+    "artifacts/local/elliptic-curves/compact-r17-adaptive-v2/ambiguities-0.supervisor.json": "4bcb9143956f7f27588a58dc760fde1cbb848b61ee190202560e99e2b88f25c1",
+    "artifacts/local/elliptic-curves/compact-r17-adaptive-v2/ambiguities-1.log": "0bf73e08ca6da7b2109e667432563617b16cedb8b094ed488504400d7850cbcc",
+    "artifacts/local/elliptic-curves/compact-r17-adaptive-v2/ambiguities-1.supervisor.json": "a6fc644e35496bf3b3d2fdcdfebed11b0398d059bc3a5c96a7f8f0463ec8d537",
+    "artifacts/local/elliptic-curves/compact-r17-adaptive-v2/candidate-00/result.json": "2dfaa3e83875eb553225ef887d1417392722d794a9a8ca72f053af4c395b8a1d",
+    "artifacts/local/elliptic-curves/compact-r17-adaptive-v2/candidate-01/result.json": "921688ec1aeb4b578920051fc03596e09ba03beb1efdd25e73071768d622231e",
+    "artifacts/local/elliptic-curves/compact-r17-adaptive-v2/population.json": "712988ee0132ba2a7827d8b1c6de33fec921359c77ae718cf493b13453b04653",
+    "artifacts/local/elliptic-curves/compact-r17-adaptive-v2/protocol.json": "664c9a7c00a35e63a62d20a9c131db19f65725d5dde848c2b202892450626c08",
+    "artifacts/local/elliptic-curves/compact-r17-adaptive-v2/replay-0.log": "defddab3713c6b0e7986c7008c4762f242fc6706825fa2dab3a9c9d5ae4a8ad8",
+    "artifacts/local/elliptic-curves/compact-r17-adaptive-v2/replay-1.log": "fd1b0aa3759eba7c05725f5be8963b91ff88086a65c71bea8386192f9f9b8dfc",
+    "artifacts/local/elliptic-curves/compact-r17-adaptive-v2/supervision.json": "cae50ab328a184aa8a983f3ec7267bd9fb03eafb395326debfaa566a56fab651",
+    "artifacts/local/elliptic-curves/compact-r17-adaptive-v2/worker-00.log": "61453c57e6e652a64d2867061d28a47f066c989cb72fdd6391595ff7a63fffa3",
+    "artifacts/local/elliptic-curves/compact-r17-adaptive-v2/worker-00.supervisor.json": "62bc1c3fa302bd18eb4fdf9b4e9a96d4de002a569107945434fe377efa664b25",
+    "artifacts/local/elliptic-curves/compact-r17-adaptive-v2/worker-01.log": "92289eae686a5e4b33b658e35c70d1e97a3b5f4094a7bdf451ff0bdc7604e45c",
+    "artifacts/local/elliptic-curves/compact-r17-adaptive-v2/worker-01.supervisor.json": "f686039917d627f01a41161ff907187289a1856b104c95184e0190739357e4c0"
+  },
+  "replayer": "elliptic-curves/cas/replay_compact_r17_adaptive.py",
+  "replayer_sha256": "6d45d60b15a24a3159a3a3ba339a5a84cf14fc806486a24da57ab686328f676a",
+  "schema": "elliptic-curves.compact-r17-adaptive-replay.v1",
+  "status": "PASS_EXACT_256_CHART_TRANSCRIPT_REPLAY",
+  "summary": [
+    {
+      "completed_chart_records": 128,
+      "distinct_ambiguous_points_up_to_sign": 1307,
+      "final_rank_lower_bound": 24,
+      "initial_rank_lower_bound": 24,
+      "parameter": "33/119"
+    },
+    {
+      "completed_chart_records": 128,
+      "distinct_ambiguous_points_up_to_sign": 758,
+      "final_rank_lower_bound": 24,
+      "initial_rank_lower_bound": 24,
+      "parameter": "-695/97"
+    }
+  ]
+}

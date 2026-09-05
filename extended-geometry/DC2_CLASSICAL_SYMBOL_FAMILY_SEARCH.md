@@ -41,8 +41,8 @@ The `MR6`, `MR7`, and `MR8` rows are the nonautomorphism moduli branches. The ot
 rows are necessary controls: they distinguish a vanishing obstruction caused
 by exact quantizability from a vanishing obstruction on a potentially
 non-surjective classical symbol. The full higher-degree calculations are kept
-in the [degree-seven marked-root note](DC2_DEGREE_SEVEN_MARKED_ROOT_SEARCH.md)
-and [degree-eight marked-root note](DC2_DEGREE_EIGHT_MARKED_ROOT_SEARCH.md).
+in the [degree-seven marked-root note](../archive/dc2-closed-branches/DC2_DEGREE_SEVEN_MARKED_ROOT_SEARCH.md)
+and [degree-eight marked-root note](../archive/dc2-closed-branches/DC2_DEGREE_EIGHT_MARKED_ROOT_SEARCH.md).
 
 ### 1.1 Marked-root family `MR6`
 

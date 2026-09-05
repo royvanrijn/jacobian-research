@@ -34,6 +34,7 @@ the research.
 - [Research papers](papers/README.md) — longer mathematical write-ups.
 - [Reproduce the calculations](REPRODUCE.md) — instructions for checking the
   computer-assisted work.
+- [Archive](archive/README.md) — closed experiments and historical provenance.
 
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
 <!-- status-consumer: OP-EC-NEXT dfbe946c1dd0030b -->

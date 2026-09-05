@@ -1,0 +1,107 @@
+{
+  "claim_boundary": "Published ranks are retrospective metadata here. The all-prime policy retains the 25/28 examples but still misses the 26/27 examples at the top-64 cut; it is not a validated universal selector.",
+  "controls": [
+    {
+      "good_primes": 556,
+      "parameter": "-2/377",
+      "populations": [
+        {
+          "directory": "compact-r17-fullscore-v1",
+          "height": 4096,
+          "inside_box": true,
+          "position_among_retained_1024": 2,
+          "score_cutoff_top1024": 91324082168209,
+          "selected_in_top64": true
+        },
+        {
+          "directory": "compact-r17-h16384-v1",
+          "height": 16384,
+          "inside_box": true,
+          "position_among_retained_1024": 11,
+          "score_cutoff_top1024": 93932477631784,
+          "selected_in_top64": true
+        }
+      ],
+      "published_rank_lower_bound_metadata": 25,
+      "score_units": 98006954947351
+    },
+    {
+      "good_primes": 555,
+      "parameter": "-308/251",
+      "populations": [
+        {
+          "directory": "compact-r17-fullscore-v1",
+          "height": 4096,
+          "inside_box": true,
+          "position_among_retained_1024": 667,
+          "score_cutoff_top1024": 91324082168209,
+          "selected_in_top64": false
+        },
+        {
+          "directory": "compact-r17-h16384-v1",
+          "height": 16384,
+          "inside_box": true,
+          "position_among_retained_1024": null,
+          "score_cutoff_top1024": 93932477631784,
+          "selected_in_top64": false
+        }
+      ],
+      "published_rank_lower_bound_metadata": 26,
+      "score_units": 91762124592992
+    },
+    {
+      "good_primes": 555,
+      "parameter": "2456/135",
+      "populations": [
+        {
+          "directory": "compact-r17-fullscore-v1",
+          "height": 4096,
+          "inside_box": true,
+          "position_among_retained_1024": null,
+          "score_cutoff_top1024": 91324082168209,
+          "selected_in_top64": false
+        },
+        {
+          "directory": "compact-r17-h16384-v1",
+          "height": 16384,
+          "inside_box": true,
+          "position_among_retained_1024": null,
+          "score_cutoff_top1024": 93932477631784,
+          "selected_in_top64": false
+        }
+      ],
+      "published_rank_lower_bound_metadata": 27,
+      "score_units": 90622018773337
+    },
+    {
+      "good_primes": 556,
+      "parameter": "-9529/5471",
+      "populations": [
+        {
+          "directory": "compact-r17-fullscore-v1",
+          "height": 4096,
+          "inside_box": false,
+          "position_among_retained_1024": null,
+          "score_cutoff_top1024": 91324082168209,
+          "selected_in_top64": false
+        },
+        {
+          "directory": "compact-r17-h16384-v1",
+          "height": 16384,
+          "inside_box": true,
+          "position_among_retained_1024": 3,
+          "score_cutoff_top1024": 93932477631784,
+          "selected_in_top64": true
+        }
+      ],
+      "published_rank_lower_bound_metadata": 28,
+      "score_units": 99475176822468
+    }
+  ],
+  "schema": "elliptic-curves.compact-r17-selection-control-audit.v1",
+  "source_hashes": {
+    "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869",
+    "elliptic-curves/cas/compact_r17_fullscore.sage": "c58c83909ed63ada355bb45eb5a1b6c93479ed0315f3aa337b3e7890b48a9793",
+    "elliptic-curves/cas/compact_r17_large.sage": "cc8399677db4ff0d0355e662b7674cc025a420c487ad38d96452bcd94bf76a4e"
+  }
+}

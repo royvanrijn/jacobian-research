@@ -20,5 +20,12 @@ For exact current status use [`../MATH_STATUS.json`](../MATH_STATUS.json); for r
 - [`elliptic-curves/`](elliptic-curves/) — bounded-search history and old command surfaces.
 - [`high-dimensional-gmc/`](high-dimensional-gmc/) — superseded high-dimensional Gaussian searches.
 - [`hc4-superseded-branches/`](hc4-superseded-branches/) and [`plane-jc-closed-branches/`](plane-jc-closed-branches/) — closed/superseded proof branches.
+- [`dc2-closed-branches/`](dc2-closed-branches/README.md) — terminal degree-seven/eight marked-root experiments, with replay evidence retained.
+
+The [2026-09-05 cleanup manifest](CLEANUP_2026-09-05.tsv) records the source
+revision and before/after hashes for four relocated files: the two closed DC2
+notes, the dated status-hash maintenance report, and the anonymous-curve search
+launcher. Only relative links in the degree-seven note changed; the other
+three files were moved byte for byte.
 
 Generated expressions, exact verification logs, and certificates remain under top-level `artifacts/`; scripts may remain outside the archive when they are still useful regressions.

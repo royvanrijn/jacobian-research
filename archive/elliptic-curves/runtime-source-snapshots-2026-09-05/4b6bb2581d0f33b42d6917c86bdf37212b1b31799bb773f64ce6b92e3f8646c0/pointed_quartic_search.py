@@ -329,11 +329,7 @@ class PointedQuarticSearch:
             raise ValueError("invalid bounded search budget")
         bounds = {"height_bound": height, "denominator_start": first, "denominator_end": last,
                   "timeout_seconds": seconds}
-        # Replay binds the whole immutable MWState, including its retained
-        # observations. Equal curve/basis/centre inputs can still have different
-        # states after an interrupted chart is retried or another chart runs.
-        key = {"sources": sources(), "input": self.input_record(), "bounds": bounds,
-               "mw_state_key": self.state.key}
+        key = {"sources": sources(), "input": self.input_record(), "bounds": bounds}
         path = None
         if checkpoint_dir is not None:
             path = Path(checkpoint_dir)/(sha256(canonical(key).encode()).hexdigest()+".json")

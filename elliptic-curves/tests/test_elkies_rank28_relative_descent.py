@@ -3,9 +3,13 @@ from __future__ import annotations
 from pathlib import Path
 import json
 import inspect
+import io
 import subprocess
 import sys
 import unittest
+from contextlib import redirect_stdout
+from types import SimpleNamespace
+from unittest.mock import Mock, patch
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -69,9 +73,28 @@ class ElkiesRank28RelativeDescentTests(unittest.TestCase):
 
     def test_factored_pari_worker_uses_only_proved_factor_hints(self) -> None:
         worker = supervised.PARI_FACTORED_WORKER
-        self.assertIn("pari.allocatemem(PARI_STACK_BYTES)", worker)
-        self.assertIn("pari.addprimes(factor_hint_primes)", worker)
-        self.assertIn("ellrank(0, known)", worker)
+        from research_runtime import sage_arithmetic
+        context = SimpleNamespace(two_torsion="labelled-cubic", bad_primes=(2, 19),
+                                  record=lambda: {"test_context": True})
+        arithmetic = Mock()
+        arithmetic.prepare.return_value = context
+        arithmetic.full_selmer.return_value = {"full_selmer_dimension": 31}
+        output = io.StringIO()
+        with patch.object(sage_arithmetic, "SageArithmetic", return_value=arithmetic), redirect_stdout(output):
+            exec(worker, {"WORKER_CAS": str(CAS)})
+        arithmetic.prepare.assert_called_once()
+        self.assertEqual(arithmetic.prepare.call_args.kwargs,
+            {"factor_primes": [int(p) for p, _ in bad_places.DISCRIMINANT_FACTORIZATION], "discover": True})
+        arithmetic.field.assert_called_once_with(context.two_torsion, factor_primes=[2, 2, 19], discover=True)
+        arithmetic.full_selmer.assert_called_once_with(context, requirement="unconditional-upper-bound", discover=True)
+        self.assertEqual(supervised.parse_worker(output.getvalue())["total_two_selmer_dimension"], 31)
+        # A failed certification must never emit the completed-worker marker.
+        arithmetic.full_selmer.side_effect = ArithmeticError("uncertified class group")
+        output = io.StringIO()
+        with patch.object(sage_arithmetic, "SageArithmetic", return_value=arithmetic), redirect_stdout(output):
+            with self.assertRaises(ArithmeticError):
+                exec(worker, {"WORKER_CAS": str(CAS)})
+        self.assertIsNone(supervised.parse_worker(output.getvalue()))
         self.assertNotIn("ratpoints", worker.lower())
         self.assertEqual(len(bad_places.DISCRIMINANT_FACTORIZATION), 12)
         self.assertEqual(
@@ -131,7 +154,7 @@ class ElkiesRank28RelativeDescentTests(unittest.TestCase):
 
     def test_factor_supplied_number_field_is_still_certified(self) -> None:
         source = inspect.getsource(bad_places._worker_setup)
-        self.assertIn("pari.nfinit([pari(polynomial), ramified_primes])", source)
+        self.assertIn("prepared_nf(pari(polynomial), ramified_primes)", source)
         self.assertIn("pari.nfcertify(nf)", source)
 
     def test_protocol_rejects_residual_fourteen(self) -> None:

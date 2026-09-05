@@ -2010,7 +2010,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:71f86609ad0782d096ad81deed4dd268173078388791df191bd6dc12e4b31cdf",
+      "artifact_hash": "sha256:08222418ef223f787f83a9ea37bd3cc9ca4744e7d72b8b2d874da04dc7fd262d",
       "software_lock": [
         "elliptic-curves/scripts/specialize_q12o5867_candidate.py",
         "elliptic-curves/ecsearch/q12o5867_specialization.py",
@@ -2020,7 +2020,9 @@
         "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json",
         "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json",
         "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_bad_place_kummer_ledger_v1.json",
-        "elliptic-curves/tests/test_elkies_rank28_relative_descent.py"
+        "elliptic-curves/tests/test_elkies_rank28_relative_descent.py",
+        "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/71f86609ad0782d096ad81deed4dd268173078388791df191bd6dc12e4b31cdf/build_elkies_2026_rank28_bad_place_ledger.py",
+        "artifacts/generated-results/elliptic-curves/checker_source_compatibility_audit_v1.json"
       ],
       "supersedes_notes": [],
       "supersedes": [],
@@ -2049,7 +2051,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:ba863748e8931d11004a13e23521122b619b9d07732f763869b3be5188236c7d",
+      "artifact_hash": "sha256:42387a3d6f892f3e35050f5886dde0d6f5bfa9997ccba51c46f9d4559b2e3b07",
       "software_lock": [
         "elliptic-curves/cas/run_elkies_2026_rank28_s_class_pari.py",
         "elliptic-curves/cas/run_fermigier_rank20_minkowski_specialq.py",
@@ -2058,7 +2060,9 @@
         "elliptic-curves/tests/test_elkies_rank28_s_class_pari.py",
         "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_s_class_pari_v1.json",
         "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_s_class_pari_polredabs_v1.json",
-        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_bnf_free_s_class_pilot_v1.json"
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_bnf_free_s_class_pilot_v1.json",
+        "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/ba863748e8931d11004a13e23521122b619b9d07732f763869b3be5188236c7d/run_elkies_2026_rank28_s_class_pari.py",
+        "artifacts/generated-results/elliptic-curves/checker_source_compatibility_audit_v1.json"
       ],
       "supersedes_notes": [],
       "supersedes": [],
@@ -2088,7 +2092,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:b9e127fe362e0753e6bc32d0fcf0c00b46150f798a9dc90b0b65e6bd22bcc782",
+      "artifact_hash": "sha256:362702e67e03f4efda43c57aa8be02aa17e82c15486732cfb729b7774ec46dd7",
       "software_lock": [
         "elliptic-curves/cas/build_elkies_2026_rank28_local_coverage.py",
         "elliptic-curves/cas/audit_bnf_free_local_kummer_coverage.py",
@@ -2098,7 +2102,9 @@
         "elliptic-curves/tests/test_elkies_rank28_local_coverage.py",
         "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_generic17_local_signature_v1.json",
         "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_generic17_local_coverage_v1.json",
-        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_norm_one_local_pilot12_v1.json"
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_norm_one_local_pilot12_v1.json",
+        "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/b9e127fe362e0753e6bc32d0fcf0c00b46150f798a9dc90b0b65e6bd22bcc782/build_elkies_2026_rank28_local_coverage.py",
+        "artifacts/generated-results/elliptic-curves/checker_source_compatibility_audit_v1.json"
       ],
       "supersedes_notes": [],
       "supersedes": [],
@@ -2171,7 +2177,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:910a50bd6c1e37a69d582d0aa7d719227a038e1daf6db92c24e3c8fdd265e341",
+      "artifact_hash": "sha256:c58237b9a4f62e7615671b4e9caa43f9fffab088f6423c8378b4de4882da6efe",
       "software_lock": [
         "elliptic-curves/cas/elkies_residual_selmer_gate.py",
         "elliptic-curves/cas/production_search_gates.py",
@@ -2213,7 +2219,9 @@
         "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_norm_one_local_pilot12_v1.json",
         "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_public11_selmer_candidates_v1.json",
         "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_public11_two_cover_controls_v1.json",
-        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_public11_global_cover_witness_audit_v1.json"
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_public11_global_cover_witness_audit_v1.json",
+        "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/910a50bd6c1e37a69d582d0aa7d719227a038e1daf6db92c24e3c8fdd265e341/run_elkies_2026_rank28_residual_selmer.py",
+        "artifacts/generated-results/elliptic-curves/checker_source_compatibility_audit_v1.json"
       ],
       "supersedes_notes": [],
       "supersedes": [],
@@ -33402,12 +33410,14 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:d5c9853b7ed8626af06eed07db59636c659990aacd7c8eb97794308c4c47d4ec",
+      "artifact_hash": "sha256:f177873cb054596a655af6a5044d7607860a6dbfcf57092da178c7cf175e5f65",
       "software_lock": [
         "elliptic-curves/cas/fixed_cubic_field_curve_family.py",
         "elliptic-curves/cas/run_fixed_cubic_field_curve_family.sage",
         "elliptic-curves/tests/test_fixed_cubic_field_curve_family.py",
-        "artifacts/generated-results/elliptic-curves/fixed_cubic_field_fermigier_rank20_local_kummer_u2_v1.json"
+        "artifacts/generated-results/elliptic-curves/fixed_cubic_field_fermigier_rank20_local_kummer_u2_v1.json",
+        "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/d5c9853b7ed8626af06eed07db59636c659990aacd7c8eb97794308c4c47d4ec/run_fixed_cubic_field_curve_family.sage",
+        "artifacts/generated-results/elliptic-curves/checker_source_compatibility_audit_v1.json"
       ],
       "supersedes_notes": [],
       "supersedes": [],
@@ -33439,7 +33449,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:95c2ee4dc131b42ec3477c1994e51394bec7683786fc303cb7b5bfe88eca254c",
+      "artifact_hash": "sha256:987db7a53f3d8928bbcd7fca44de0101d8e4b57c5c95b8301f8e9162cc093f16",
       "software_lock": [
         "elliptic-curves/cas/run_fixed_field_point_realization.py",
         "elliptic-curves/tests/test_fixed_field_point_realization.py",
@@ -33447,7 +33457,9 @@
         "artifacts/generated-results/elliptic-curves/fixed_field_u_minus1_translated_point_realization_v1.json",
         "artifacts/generated-results/elliptic-curves/fixed_field_u_minus1_basis_h1000000_v1.json",
         "artifacts/generated-results/elliptic-curves/fixed_field_u_minus1_translated_basis_h1000000_v1.json",
-        "artifacts/generated-results/elliptic-curves/fixed_field_point_realization_positive_controls_v1.json"
+        "artifacts/generated-results/elliptic-curves/fixed_field_point_realization_positive_controls_v1.json",
+        "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/95c2ee4dc131b42ec3477c1994e51394bec7683786fc303cb7b5bfe88eca254c/run_fixed_field_point_realization.py",
+        "artifacts/generated-results/elliptic-curves/checker_source_compatibility_audit_v1.json"
       ],
       "supersedes_notes": [],
       "supersedes": [],
@@ -33479,13 +33491,15 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:89a0e41d6d906fd21ad4f0b5bc889bca4ac8d5af376bb0e04f9e14ceef176c2a",
+      "artifact_hash": "sha256:09e2f7c60b5106d237497b60748f1f5b0140f5dd3295bc4ee9f27a83911cc7a9",
       "software_lock": [
         "elliptic-curves/cas/run_fixed_cubic_cassels_tate.sage",
         "elliptic-curves/cas/verify_fixed_cubic_cassels_tate.sage",
         "elliptic-curves/tests/test_fixed_cubic_cassels_tate.py",
         "artifacts/generated-results/elliptic-curves/fixed_cubic_u_minus1_cassels_tate_v1.json",
-        "artifacts/generated-results/elliptic-curves/fixed_cubic_u_minus1_cassels_tate_evidence_v1.json.gz"
+        "artifacts/generated-results/elliptic-curves/fixed_cubic_u_minus1_cassels_tate_evidence_v1.json.gz",
+        "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/89a0e41d6d906fd21ad4f0b5bc889bca4ac8d5af376bb0e04f9e14ceef176c2a/verify_fixed_cubic_cassels_tate.sage",
+        "artifacts/generated-results/elliptic-curves/checker_source_compatibility_audit_v1.json"
       ],
       "supersedes_notes": [],
       "supersedes": [],
@@ -41667,7 +41681,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:ae33cae59dade9a2e1261e3591a7bc86442b0baef3387a6ae711645bdc02ff43",
+      "artifact_hash": "sha256:6a57a25ec011505a6c2e338fc1be1e7a3900b72d179cd1f3a4cab32e9e8180a2",
       "software_lock": [
         "elkies-k3/scripts/certify_r17_product_19bad_083ad_rank_zero.sage",
         "artifacts/generated-results/elkies-k3-r17-product-19bad-083ad-rank-zero-v1.json",
@@ -41676,7 +41690,9 @@
         "artifacts/generated-results/r17-product-19bad-083ad-controls/analytic-p137.m",
         "artifacts/generated-results/r17-product-19bad-083ad-controls/analytic-p137.xml",
         "artifacts/generated-results/r17-product-19bad-083ad-controls/analytic-p151.m",
-        "artifacts/generated-results/r17-product-19bad-083ad-controls/analytic-p151.xml"
+        "artifacts/generated-results/r17-product-19bad-083ad-controls/analytic-p151.xml",
+        "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/ae33cae59dade9a2e1261e3591a7bc86442b0baef3387a6ae711645bdc02ff43/certify_r17_product_19bad_083ad_rank_zero.sage",
+        "artifacts/generated-results/elliptic-curves/checker_source_compatibility_audit_v1.json"
       ],
       "supersedes_notes": [
         "19bad:083ad is the first unresolved rational product-character constructor target",
@@ -41716,7 +41732,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:ca6086d3242844e4178ef7fb3c403084ebf87e059436033a869be111660e21e2",
+      "artifact_hash": "sha256:80783142c26ec5bac163ef99fb7e72767c4382e333d9602abef21229a76a4566",
       "software_lock": [
         "elkies-k3/scripts/certify_r17_product_regulator_sweep.sage",
         "artifacts/generated-results/elkies-k3-r17-product-regulator-sweep-v1.json",
@@ -41759,7 +41775,9 @@
         "elkies-k3/scripts/certify_r17_product_19bad_083ad_rank_zero.sage",
         "elkies-k3/scripts/audit_r17_product_twist_extra_prime.sage",
         "elkies-k3/scripts/run_r17_product_toric_frobenius_extra_prime.sh",
-        "elkies-k3/scripts/certify_r17_product_toric_frobenius.sage"
+        "elkies-k3/scripts/certify_r17_product_toric_frobenius.sage",
+        "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/ca6086d3242844e4178ef7fb3c403084ebf87e059436033a869be111660e21e2/certify_r17_product_regulator_sweep.sage",
+        "artifacts/generated-results/elliptic-curves/checker_source_compatibility_audit_v1.json"
       ],
       "supersedes_notes": [
         "four arithmetic product-character constructor targets remain unresolved after 19bad:083ad",
@@ -42654,7 +42672,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:7f995381230e643c5bd8e383cff315564acf55c90d65c3639746508322b70069",
+      "artifact_hash": "sha256:61d3e01db94b9134579a9452906b4063f019955e24f492b993b766d3c6120179",
       "software_lock": [
         "elkies-k3/scripts/certify_r17_extreme_anchored_mw18_covers.sage",
         "elkies-k3/scripts/search_r17_extreme_anchored_mw18_nagao.py",
@@ -42671,7 +42689,9 @@
         "artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-nagao-curve534-orbit1a371-h1000-v1.json",
         "artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-nagao-curve536-orbit19188-h1000-v1.json",
         "artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-nagao-historical-rank28-orbit15a68-h1000-v1.json",
-        "artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-nagao-h1000-summary-v1.json"
+        "artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-nagao-h1000-summary-v1.json",
+        "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/7f995381230e643c5bd8e383cff315564acf55c90d65c3639746508322b70069/certify_r17_extreme_anchored_mw18_covers.sage",
+        "artifacts/generated-results/elliptic-curves/checker_source_compatibility_audit_v1.json"
       ],
       "supersedes_notes": [
         "the historical first rank-18 conic should remain the default MW18 Nagao lane",
@@ -43968,6 +43988,40 @@
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "primary"
+    },
+    {
+      "id": "EC-COMPACT-R17-NEW-CURVES-20260905",
+      "kind": "example",
+      "state": "proved",
+      "title": "Fourteen prospective compact R17 curves of certified rank at least 22–24 absent from the pinned ICARM snapshot",
+      "scope": "The published R17 specializations at 33/119, -695/97 and -2300/843 have unconditional rank at least 24; at 44/35, -1264/1047, 2291/2392, -3895/3749, -1193/1560, 1229/894 and 129/70, at least 23; and at -3/148, -70/61, 8/39 and 1348/1431, at least 22. Exact point membership, specialized generic-section transport, full-rank finite mod-2 quotient columns and absence of rational 2-torsion are replayed by a separate Sage-free checker. The fourteen curves have distinct j-invariants and no Q-isomorphism match among the 584 equations in the ICARM snapshot with SHA256 7e80549befa11a07422a3960967f4cd80264d8675cb3e0a99f0c9c5afb340f72. These are lower bounds, not exact ranks; snapshot absence is not universal novelty. None meets the rank-at-least-28 near-record or rank-at-least-32 record target. Numerical scores and heights are discovery scheduling only.",
+      "canonical_source": "elliptic-curves/notes/NEW_COMPACT_R17_CURVES_2026-09-05.md",
+      "dependencies": [
+        "EC-K3-ELKIES-2026-R17",
+        "external: ICARM 584-curve equation snapshot dated 2026-09-05"
+      ],
+      "checker": "elliptic-curves/cas/certify_compact_r17_candidates.py",
+      "proof_type": "exact_modular",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9",
+      "software_lock": [
+        "artifacts/generated-results/elliptic-curves/compact_r17_new_curves_v1.json",
+        "artifacts/generated-results/elliptic-curves/compact_r17_wide_new_curves_v1.json",
+        "elliptic-curves/cas/mod2_reduction_independence.py",
+        "elliptic-curves/cas/elliptic_candidate_record.py",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json",
+        "artifacts/generated-results/elliptic-curves/compact_r17_top64_interim_curves_v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
     }
   ]
 }

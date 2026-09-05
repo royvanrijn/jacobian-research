@@ -45,6 +45,11 @@ Mathematical rank status remains in [MATH_STATUS.json](../../MATH_STATUS.json).
 This experiment changes search selection and tests bounded recovery. It proves
 neither an exact generic rank nor a specialized rank upper bound.
 
+The subsequent [visibility diagnostics](RANK_JUMP_DIAGNOSTICS_2026-09-05.md)
+verify exact recovered/public rational-span relations, locate translated
+missing representatives, and find no omission inside completed coverage.
+They do not rerun larger boxes or change this frozen gate.
+
 ## Exact generic Gram
 
 The [geometry certificate](../../artifacts/generated-results/elliptic-curves/mw18_generic_height_geometry_v1.json)

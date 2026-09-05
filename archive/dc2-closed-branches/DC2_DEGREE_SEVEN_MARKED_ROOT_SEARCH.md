@@ -15,7 +15,7 @@
 > gluing, Weyl relations, or nonsurjectivity could be tested.
 
 This continues the
-[classical-symbol family search](DC2_CLASSICAL_SYMBOL_FAMILY_SEARCH.md)
+[classical-symbol family search](../../extended-geometry/DC2_CLASSICAL_SYMBOL_FAMILY_SEARCH.md)
 without returning to the obstructed quintic or enlarging correction support
 on the degree-six family.
 
@@ -58,7 +58,7 @@ s_2=\frac{3}{28028}\big(
 
 The interpolation uses six exact normalized Hamiltonian homotopies and an
 independent seventh point. Its slow replay is
-[`derive_degree_seven_marked_root_shear.py`](../scripts/derive_degree_seven_marked_root_shear.py).
+[`derive_degree_seven_marked_root_shear.py`](../../scripts/derive_degree_seven_marked_root_shear.py).
 The sparse constructor verifies the canonical relation `{S,T}=1` directly.
 The classical symbol bounds are
 
@@ -96,7 +96,7 @@ T_4&2&31&11&25.
 \]
 
 The exact sparse presentation is
-[`verify_degree_seven_relative_quantization_obstruction.py`](../scripts/verify_degree_seven_relative_quantization_obstruction.py).
+[`verify_degree_seven_relative_quantization_obstruction.py`](../../scripts/verify_degree_seven_relative_quantization_obstruction.py).
 At the rational point `(sigma,tau)=(1,0)` it gives
 
 \[
@@ -124,7 +124,7 @@ dependent. Thus
 \]
 
 The exact rank-only replay is
-[`reconstruct_degree_seven_order_five_zero_scheme.py`](../scripts/reconstruct_degree_seven_order_five_zero_scheme.py)
+[`reconstruct_degree_seven_order_five_zero_scheme.py`](../../scripts/reconstruct_degree_seven_order_five_zero_scheme.py)
 with `--rank-only`. Equation (2.4) at one rational point plus (2.5) proves
 that the order-five section is nonzero on a nonempty characteristic-zero
 open.
@@ -171,7 +171,7 @@ on later primes; the final reconstruction uses complete saturated
 pivot-chart residuals, not a fit to these counts.
 
 The scanner is
-[`search_degree_seven_order_five_fitting_locus.py`](../scripts/search_degree_seven_order_five_fitting_locus.py).
+[`search_degree_seven_order_five_fitting_locus.py`](../../scripts/search_degree_seven_order_five_fitting_locus.py).
 
 ## 4. Genuine nonlinear order-five gate
 
@@ -191,7 +191,7 @@ Groebner basis of a dimension-four nonempty scheme. Hence all sixteen modular
 points pass the nonlinear order-five gate.
 
 The exact modular replay is
-[`screen_degree_seven_order_five_survivors.py`](../scripts/screen_degree_seven_order_five_survivors.py).
+[`screen_degree_seven_order_five_survivors.py`](../../scripts/screen_degree_seven_order_five_survivors.py).
 This modular calculation is a discovery gate. The next section performs the
 independent characteristic-zero reconstruction and exact nonlinear check.
 

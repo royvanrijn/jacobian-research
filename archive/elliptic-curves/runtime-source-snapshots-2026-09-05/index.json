@@ -300,6 +300,13 @@
       "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/3a4611cd7c8869112ecf8d1b627abe0b1f4a92680c35983d9159522b5ba542bd/certify_r17_extreme_anchored_mw18_covers.sage",
       "generation_revision": null,
       "retained_from": "positive-only witness replay before the complete negative census backfill"
+    },
+    {
+      "original_path": "elliptic-curves/cas/pointed_quartic_search.py",
+      "sha256": "4b6bb2581d0f33b42d6917c86bdf37212b1b31799bb773f64ce6b92e3f8646c0",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/4b6bb2581d0f33b42d6917c86bdf37212b1b31799bb773f64ce6b92e3f8646c0/pointed_quartic_search.py",
+      "generation_revision": "300ee96",
+      "reason": "Preserve chart-cache implementation before state-key collision fix."
     }
   ]
 }

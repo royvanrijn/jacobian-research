@@ -1,5 +1,15 @@
 # Active elliptic-curve artifacts
 
+The [compact R17 certificates](compact_r17_new_curves_v1.json) and
+[wider-population certificate](compact_r17_wide_new_curves_v1.json), with the
+[top-64 export](compact_r17_top64_interim_curves_v1.json), prove fourteen
+prospective rank lower bounds 22–24; see the [proof and novelty scope](../../../elliptic-curves/notes/NEW_COMPACT_R17_CURVES_2026-09-05.md).
+
+The [rank-jump diagnostic replay](rank_jump_diagnostics_replay_v1.json)
+joins exact visibility witnesses, 31/31 masked recoveries, bounded selector
+comparisons and an explicit section with height costs; see the
+[experiment note](../../../elliptic-curves/notes/RANK_JUMP_DIAGNOSTICS_2026-09-05.md).
+
 The [MW18 generic height geometry](mw18_generic_height_geometry_v1.json)
 checks the nine quadratic covers and the added section's height 8; see the
 [controlled centre comparison](../../../elliptic-curves/notes/MW18_DEEP_CENTRE_CALIBRATION_2026-09-05.md).

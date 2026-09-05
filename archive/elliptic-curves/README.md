@@ -13,6 +13,12 @@ use [`MATH_STATUS.json`](../../MATH_STATUS.json) and the active
 
 ## Index
 
+The [anonymous-candidate launcher](run_anonymous_candidate_v2.sh) is retained
+byte for byte as historical command provenance. It expects the repository
+root as its working directory and the former import layout; it is not an
+active search entry point. Its source revision and hashes are recorded in the
+[2026-09-05 cleanup manifest](../CLEANUP_2026-09-05.tsv).
+
 The [pointed-quartic migration](../../elliptic-curves/notes/POINTED_QUARTIC_SEARCH.md#regression-controls-and-replay)
 indexes the retained PARI and MW16 search controls at revision
 `d30a742133f0658185c3bd4c99f0b0f815f2f74b`. Their original paths remain where

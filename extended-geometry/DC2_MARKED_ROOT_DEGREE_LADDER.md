@@ -197,7 +197,7 @@ the degree-nine row is modular and the law is not promoted to a theorem.
 At order seven, all four directions of `ker D5` are retained. The 220-node
 cubic interpolation has an independent holdout, and the 152 projected
 equations span six polynomial generators. Their exact ideal is `(1)`. See the
-[degree-eight component note](DC2_DEGREE_EIGHT_MARKED_ROOT_SEARCH.md) for the
+[degree-eight component note](../archive/dc2-closed-branches/DC2_DEGREE_EIGHT_MARKED_ROOT_SEARCH.md) for the
 full reconstruction, valuation, and terminal descent ledgers.
 
 Two arithmetic warnings are exact: `p=17` lowers the degree-eight

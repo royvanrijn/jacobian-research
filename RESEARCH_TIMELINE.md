@@ -201,7 +201,7 @@ horizontal curves are actual effective curves on the equation model.
 - The status index was reconciled with eight committed checker-source hashes.
   This was a provenance-only repair: no Sage result was regenerated and no
   mathematical claim was promoted. See
-  [`STATUS_HASH_REFRESH_2026-08-25.md`](STATUS_HASH_REFRESH_2026-08-25.md).
+  [`STATUS_HASH_REFRESH_2026-08-25.md`](archive/provenance-audits/STATUS_HASH_REFRESH_2026-08-25.md).
 
 ## 2026-08-26: rootless endpoint theorem and reverse-route audit
 

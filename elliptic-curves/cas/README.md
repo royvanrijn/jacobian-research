@@ -8,6 +8,15 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
 
 ## Start here
 
+- [`certify_compact_r17_candidates.py`](certify_compact_r17_candidates.py):
+  Sage-free replay of the [new compact R17 curves](../notes/NEW_COMPACT_R17_CURVES_2026-09-05.md),
+  including exact independence and catalogue comparison. The `compact_r17_*`
+  runners retain bounded selection, initial-search and adaptive protocols.
+
+- [`replay_rank_jump_diagnostics.sage`](replay_rank_jump_diagnostics.sage):
+  portable replay of [MW18 visibility, masked controls, prime-prefix selection
+  and a point-supplied construction](../notes/RANK_JUMP_DIAGNOSTICS_2026-09-05.md).
+
 - [Shared arithmetic and search runtime](../notes/SHARED_RESEARCH_RUNTIME.md):
   cached contexts, subspace-first descent, lazy MWState search, regulator gates,
   common worker supervision and portable proof replay. New searches start with

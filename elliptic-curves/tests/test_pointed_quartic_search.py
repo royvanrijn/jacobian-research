@@ -18,6 +18,28 @@ import pointed_quartic_migration as migration
 
 
 class PointedQuarticSearchTests(unittest.TestCase):
+    def test_same_chart_after_a_known_point_observation_has_distinct_checkpoint(self):
+        # This is the state change seen when a timed-out chart is retried:
+        # an additional known-point observation changes no search coordinates.
+        from research_runtime.finite_reduction import ReductionCache
+        from research_runtime.store import FactStore
+        from research_runtime.search_state import raw_state
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);cache=ReductionCache(FactStore(root/'facts'))
+            state=raw_state((0,0,0,-7,10),[(1,2),(2,2)],cache=cache,prime_bound=31)
+            observed=state.adjoin(state.basis[0],cache=cache)
+            self.assertEqual(state.basis,observed.basis)
+            self.assertNotEqual(state.key,observed.key)
+            first=pq.PointedQuarticSearch(state=state,centre={'coefficients':[1,0]})
+            second=pq.PointedQuarticSearch(state=observed,centre={'coefficients':[1,0]})
+            self.assertEqual(first.input_record(),second.input_record())
+            a=first.search(19,2,checkpoint_dir=root/'charts')
+            b=second.search(19,2,checkpoint_dir=root/'charts')
+            self.assertEqual(a.curve_points,b.curve_points)
+            self.assertEqual(len(list((root/'charts').glob('*.json'))),2)
+            with patch.object(pq,'search_box',side_effect=AssertionError('unexpected re-enumeration')):
+                self.assertEqual(second.search(19,2,checkpoint_dir=root/'charts'),b)
+
     model = (0, 0, 0, -1, 1)
     p = (Q(0), Q(1))
 
