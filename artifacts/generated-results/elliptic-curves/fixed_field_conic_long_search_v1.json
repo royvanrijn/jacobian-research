@@ -1,0 +1,41 @@
+{
+  "arithmetic": {
+    "curve_rank_lower_bound": 1,
+    "deep_exact_candidates": 10616832,
+    "deep_reconstruction_cells": 131072,
+    "exhaustive_exact_candidates": 1860813,
+    "exhaustive_w1_residues": 22973,
+    "genuine_higher_covers": 0,
+    "higher_cover_searches": 0,
+    "point_or_sha": {
+      "1047173": "UNKNOWN",
+      "450876": "UNKNOWN",
+      "596921": "UNKNOWN"
+    },
+    "relative_norm_seconds": 2701.042193,
+    "target_conic_points": 0
+  },
+  "checker_sha256": "b5f3f970d26665667c12e0880bd1c3a648dd045ccc8dee4ab2b4de350ed55c87",
+  "claim_boundary": [
+    "The target conic is known soluble; none of these finite procedures returned coordinates.",
+    "The deep reconstruction transcripts record exact checks performed during discovery; their compact hashes are integrity records, not a new global obstruction.",
+    "The prime-37 enumeration covers only the W=1 local residue chart and stopped before completing that chart.",
+    "The relative norm initialization timeout is an algorithmic resource result, not a norm or solubility decision.",
+    "No target conic point, higher-cover map, cover search, or global obstruction results."
+  ],
+  "declared_budget": {
+    "deep_reconstruction_seconds": 2700,
+    "exhaustive_affine_seconds": 900,
+    "per_worker_rss_bytes": 4294967296,
+    "reconstruction_pari_stack_bytes": 512000000,
+    "relative_norm_pari_stack_bytes": 1000000000,
+    "relative_norm_seconds": 2700
+  },
+  "evidence_sha256": "f026345e81ad2b922487cde75622613b73e54d5317b93dcd268cf915cd41c275",
+  "schema": "elliptic-curves.fixed-field-conic-long-search.v1",
+  "software": {
+    "pari": "(2, 17, 3)",
+    "sage": "10.9"
+  },
+  "status": "NO_TARGET_CONIC_POINT_NO_HIGHER_COVER"
+}

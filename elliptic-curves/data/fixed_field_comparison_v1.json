@@ -1,0 +1,27 @@
+{
+  "schema": "elliptic-curves.fixed-field-comparison-protocol.v1",
+  "stage": "initial comparison",
+  "parameters": [
+    "0",
+    "-2",
+    "1",
+    "2"
+  ],
+  "local_source": "artifacts/generated-results/elliptic-curves/fixed_cubic_field_fermigier_rank20_local_kummer_u2_v1.json",
+  "local_source_sha256": "ddea246ebab21f494b10937eb443829a9fe2e5e37221dd7a4097fa0d6f842b41",
+  "seed": 1,
+  "cover_policy": "minimize-reduce",
+  "entry_seconds": 60,
+  "ct_curve_seconds": 1200,
+  "point_entry_seconds": 20,
+  "point_curve_seconds": 400,
+  "point_cover_cap": 15,
+  "point_height": 100000,
+  "local_witness_node_cap": 10000,
+  "rss_bytes": 2147483648,
+  "pari_stack_bytes": 256000000,
+  "extension_gate": "Freeze an extension only after all four initial matrices replay and the u=0 matrix is zero.",
+  "search_gate": "Only nonzero classes in the certified restricted radical; first 15 by radical-coordinate weight. The u=0 known-point control needs no new point enumeration.",
+  "success_criterion": "A deformation with a materially different obstruction profile and at least one exactly realized nonzero inherited class; a radical alone is insufficient.",
+  "claim_boundary": "Realized dimension is a certified lower bound. No full Selmer group, global rank upper bound, or point-or-Sha decision from a bounded miss."
+}

@@ -1,0 +1,60 @@
+{
+  "arithmetic": {
+    "curve_rank_lower_bound": 1,
+    "exact_target_candidates": 25920,
+    "genuine_higher_covers": 0,
+    "higher_cover_searches": 0,
+    "point_or_sha": {
+      "1047173": "UNKNOWN",
+      "450876": "UNKNOWN",
+      "596921": "UNKNOWN"
+    },
+    "seeded_reconstruction_control_points": 1,
+    "small_field_norm_control_points": 1,
+    "target_conic_points": 0,
+    "target_reconstruction_cells": 320
+  },
+  "checker_sha256": "b5f3f970d26665667c12e0880bd1c3a648dd045ccc8dee4ab2b4de350ed55c87",
+  "claim_boundary": [
+    "The target conic is known soluble; these methods returned no coordinates.",
+    "The reconstruction control is seeded with a known local point and does not calibrate target discovery probability.",
+    "The norm positive control uses a small cubic field, not the target arithmetic.",
+    "Local residues and nonzero reconstruction residuals are not global obstructions.",
+    "No higher-cover construction or cover point search was reached."
+  ],
+  "declared_budget": {
+    "lift_seconds": 480,
+    "new_solver_seconds_ceiling": 900,
+    "norm_seconds": 180,
+    "per_worker_rss_bytes": 2147483648
+  },
+  "evidence_sha256": "10610edc1a54659a8cbacac632c9a952150a3c2efda6be0726e57729f4b7c2b2",
+  "retained_runs": {
+    "lift": {
+      "outcome": "completed",
+      "peak_observed_rss_bytes": 362668032,
+      "wall_seconds": 18.633443229016848
+    },
+    "lift-control": {
+      "outcome": "completed",
+      "peak_observed_rss_bytes": 254427136,
+      "wall_seconds": 0.8530599779915065
+    },
+    "norm": {
+      "outcome": "strict_wall_timeout",
+      "peak_observed_rss_bytes": 404262912,
+      "wall_seconds": 181.04804115899606
+    },
+    "norm-control": {
+      "outcome": "completed",
+      "peak_observed_rss_bytes": 248147968,
+      "wall_seconds": 0.7549000729923137
+    }
+  },
+  "schema": "elliptic-curves.fixed-field-conic-solver-comparison.v1",
+  "software": {
+    "pari": "(2, 17, 3)",
+    "sage": "10.9"
+  },
+  "status": "NO_TARGET_CONIC_POINT_NO_HIGHER_COVER"
+}

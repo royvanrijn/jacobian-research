@@ -1,0 +1,263 @@
+{
+  "bundle": "artifacts/generated-results/elliptic-curves/mw18_deep_centre_comparison_v1.zip",
+  "bundle_sha256": "558b1d26e48dfd10faf88f4c0602c011c02e6b5a7cced5991a6ad7dd22aaf0ab",
+  "cells": [
+    {
+      "anchor_id": "curve-531",
+      "case": "curve-531-08234-12f61-p0d1",
+      "certified_gain": 0,
+      "chart_count": 40,
+      "complete_boxes": 40,
+      "policy": "nearest_first",
+      "result_path": "cells/curve-531-08234-12f61-p0d1--nearest_first.json",
+      "result_sha256": "b9e9d6bbce6a1009e5097fcd136a381f5666c91e5773a7a0973081ec197b8f8a",
+      "status": "COMPLETE"
+    },
+    {
+      "anchor_id": "curve-531",
+      "case": "curve-531-08234-12f61-p0d1",
+      "certified_gain": 6,
+      "chart_count": 40,
+      "complete_boxes": 40,
+      "policy": "deepest",
+      "result_path": "cells/curve-531-08234-12f61-p0d1--deepest.json",
+      "result_sha256": "7855b591b5dc2032c4a46ea8434c29776fd39202d372fa11f0c49cf0b66312f2",
+      "status": "COMPLETE"
+    },
+    {
+      "anchor_id": "curve-531",
+      "case": "curve-531-08234-12f61-p0d1",
+      "certified_gain": 6,
+      "chart_count": 40,
+      "complete_boxes": 40,
+      "policy": "diverse_deep",
+      "result_path": "cells/curve-531-08234-12f61-p0d1--diverse_deep.json",
+      "result_sha256": "97c59891f35a6a577da215f24435610e322248765fdd5abc0511aa1b35d8e13b",
+      "status": "COMPLETE"
+    },
+    {
+      "anchor_id": "curve-534",
+      "case": "curve-534-08234-13d7a-p0d1",
+      "certified_gain": 0,
+      "chart_count": 40,
+      "complete_boxes": 40,
+      "policy": "nearest_first",
+      "result_path": "cells/curve-534-08234-13d7a-p0d1--nearest_first.json",
+      "result_sha256": "7198213193ce6902ef523c675234606a17d224d13a66dddd89b99020842bc3e0",
+      "status": "COMPLETE"
+    },
+    {
+      "anchor_id": "curve-534",
+      "case": "curve-534-08234-13d7a-p0d1",
+      "certified_gain": 2,
+      "chart_count": 40,
+      "complete_boxes": 40,
+      "policy": "deepest",
+      "result_path": "cells/curve-534-08234-13d7a-p0d1--deepest.json",
+      "result_sha256": "fe264ffe46682bb9cd957d84a5ebceaca4ca84671708deae40537dc5c4ce05a8",
+      "status": "COMPLETE"
+    },
+    {
+      "anchor_id": "curve-534",
+      "case": "curve-534-08234-13d7a-p0d1",
+      "certified_gain": 2,
+      "chart_count": 40,
+      "complete_boxes": 40,
+      "policy": "diverse_deep",
+      "result_path": "cells/curve-534-08234-13d7a-p0d1--diverse_deep.json",
+      "result_sha256": "e777a462e97b40ffc15f150c831d11251727f988d39e68cd6db9f8b922e9bd8e",
+      "status": "COMPLETE"
+    },
+    {
+      "anchor_id": "curve-534",
+      "case": "curve-534-08234-1a371-p0d1",
+      "certified_gain": 0,
+      "chart_count": 40,
+      "complete_boxes": 40,
+      "policy": "nearest_first",
+      "result_path": "cells/curve-534-08234-1a371-p0d1--nearest_first.json",
+      "result_sha256": "49207e19091b3569203b2387fa77929c669d341333c16ff10808f82ce37897d9",
+      "status": "COMPLETE"
+    },
+    {
+      "anchor_id": "curve-534",
+      "case": "curve-534-08234-1a371-p0d1",
+      "certified_gain": 3,
+      "chart_count": 40,
+      "complete_boxes": 40,
+      "policy": "deepest",
+      "result_path": "cells/curve-534-08234-1a371-p0d1--deepest.json",
+      "result_sha256": "c81f4522bcb2ea3606eac4a055f557c8be2f203ee17229b685abe1349919d6e9",
+      "status": "COMPLETE"
+    },
+    {
+      "anchor_id": "curve-534",
+      "case": "curve-534-08234-1a371-p0d1",
+      "certified_gain": 3,
+      "chart_count": 40,
+      "complete_boxes": 40,
+      "policy": "diverse_deep",
+      "result_path": "cells/curve-534-08234-1a371-p0d1--diverse_deep.json",
+      "result_sha256": "27524ab46c7cfb41872ff22aa53b41df9c50c7370846e46054c7db1c99b3a2fd",
+      "status": "COMPLETE"
+    },
+    {
+      "anchor_id": "curve-545",
+      "case": "curve-545-07ca9-08c1e-p0d1",
+      "certified_gain": 0,
+      "chart_count": 40,
+      "complete_boxes": 40,
+      "policy": "nearest_first",
+      "result_path": "cells/curve-545-07ca9-08c1e-p0d1--nearest_first.json",
+      "result_sha256": "c14ce2685d0e2c85b8aebf8baa8bc89bbffca394124d001eae7180c6d6d75f97",
+      "status": "COMPLETE"
+    },
+    {
+      "anchor_id": "curve-545",
+      "case": "curve-545-07ca9-08c1e-p0d1",
+      "certified_gain": 4,
+      "chart_count": 40,
+      "complete_boxes": 40,
+      "policy": "deepest",
+      "result_path": "cells/curve-545-07ca9-08c1e-p0d1--deepest.json",
+      "result_sha256": "3494215b7d89e09041a3a57a76c0c630adfdc09b8185019e0a0a0763628eb723",
+      "status": "COMPLETE"
+    },
+    {
+      "anchor_id": "curve-545",
+      "case": "curve-545-07ca9-08c1e-p0d1",
+      "certified_gain": 3,
+      "chart_count": 40,
+      "complete_boxes": 40,
+      "policy": "diverse_deep",
+      "result_path": "cells/curve-545-07ca9-08c1e-p0d1--diverse_deep.json",
+      "result_sha256": "07894b6c227e1df375b1f409f80dc8cd115aac6948db6a097e0fbfd71a7c93df",
+      "status": "COMPLETE"
+    },
+    {
+      "anchor_id": "historical-rank28",
+      "case": "historical-rank28-15a68-p0d1",
+      "certified_gain": 0,
+      "chart_count": 40,
+      "complete_boxes": 40,
+      "policy": "nearest_first",
+      "result_path": "cells/historical-rank28-15a68-p0d1--nearest_first.json",
+      "result_sha256": "e080de6b3353190a01ada183a480e0854f405413f811272563de8d23382114a4",
+      "status": "COMPLETE"
+    },
+    {
+      "anchor_id": "historical-rank28",
+      "case": "historical-rank28-15a68-p0d1",
+      "certified_gain": 7,
+      "chart_count": 40,
+      "complete_boxes": 40,
+      "policy": "deepest",
+      "result_path": "cells/historical-rank28-15a68-p0d1--deepest.json",
+      "result_sha256": "61e9b152a5fb8c3925139e3e9e0c575b73d1a91f74e40d8088e9ffe67a645d7d",
+      "status": "COMPLETE"
+    },
+    {
+      "anchor_id": "historical-rank28",
+      "case": "historical-rank28-15a68-p0d1",
+      "certified_gain": 7,
+      "chart_count": 40,
+      "complete_boxes": 40,
+      "policy": "diverse_deep",
+      "result_path": "cells/historical-rank28-15a68-p0d1--diverse_deep.json",
+      "result_sha256": "0a58af1f5862ff0a166a9ada6f4bd4088b6842525f20fdb0e922a9a36561ed79",
+      "status": "COMPLETE"
+    }
+  ],
+  "chart_count": 600,
+  "claim_boundary": "Bounded anchor recoveries, not exact ranks or evidence of fourteen existing directions beyond MW18.",
+  "complete_parity_censuses": 5,
+  "coordinate_policy": "metric:16",
+  "demonstrated_remaining_directions_per_anchor": 10,
+  "distinct_arithmetic_facts": 62501,
+  "exact_geometry_cover_count": 9,
+  "facts_storage": "pooled-gzip-v1",
+  "frozen_winning_policy": null,
+  "joint_certified_gains": {
+    "curve-531-08234-12f61-p0d1": 6,
+    "curve-534-08234-13d7a-p0d1": 2,
+    "curve-534-08234-1a371-p0d1": 3,
+    "curve-545-07ca9-08c1e-p0d1": 4,
+    "historical-rank28-15a68-p0d1": 7
+  },
+  "limits": {
+    "cell_wall_seconds": 1800,
+    "chart_count": 40,
+    "height": 100000,
+    "prime_bound": 1000,
+    "rss_bytes": 2147483648,
+    "seconds_per_chart": 20
+  },
+  "parity_classes_per_census": 262144,
+  "prospective_trial_authorized_by_gate": false,
+  "protocol_hash": "84c0efcb5a9498e0ba0a2da1b47c49f6d87f8f84f06ec7a0b118465bbcf308d6",
+  "ranking": [
+    {
+      "gains_by_distinct_curve": {
+        "curve-531": [
+          6
+        ],
+        "curve-534": [
+          2,
+          3
+        ],
+        "curve-545": [
+          4
+        ],
+        "historical-rank28": [
+          7
+        ]
+      },
+      "minimum_anchor_gain": 2,
+      "policy": "deepest",
+      "total_gain": 22
+    },
+    {
+      "gains_by_distinct_curve": {
+        "curve-531": [
+          6
+        ],
+        "curve-534": [
+          2,
+          3
+        ],
+        "curve-545": [
+          3
+        ],
+        "historical-rank28": [
+          7
+        ]
+      },
+      "minimum_anchor_gain": 2,
+      "policy": "diverse_deep",
+      "total_gain": 21
+    },
+    {
+      "gains_by_distinct_curve": {
+        "curve-531": [
+          0
+        ],
+        "curve-534": [
+          0,
+          0
+        ],
+        "curve-545": [
+          0
+        ],
+        "historical-rank28": [
+          0
+        ]
+      },
+      "minimum_anchor_gain": 0,
+      "policy": "nearest_first",
+      "total_gain": 0
+    }
+  ],
+  "schema": "elliptic-curves.mw18-centre-comparison.v1",
+  "status": "COMPLETE",
+  "success_gate_passed": false
+}

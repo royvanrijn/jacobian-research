@@ -99,6 +99,23 @@ class SageSubspaceTests(unittest.TestCase):
         result = self.backend._pair(None, (1, 2, 3), [{"quartic": q} for q in control["quartics"]], retained=record)
         self.assertEqual(result["value"], 1)
 
+    def test_reduced_cover_keeps_exact_point_and_squareclass_transport(self):
+        from sage.all import QQ, pari
+        backend = SageSubspaceBackend(self.arithmetic, self.context, self.global_witness,
+                                      cover_policy="minimize-reduce")
+        classes = self.global_witness.classes
+        cover = backend.cover(self.context, classes, 1)
+        self.assertTrue(backend.verify_cover(self.context, classes, 1, cover))
+        q = backend.R(list(map(QQ, cover['quartic'])))
+        denominator = q.denominator()
+        points = pari.hyperellratpoints(q*denominator**2, 100)
+        self.assertTrue(points)
+        for point in points:
+            recovered = backend.point_from_cover(self.context, classes, 1, cover,
+                (QQ(point[0]), 1, QQ(point[1])/denominator))
+            self.assertIsNotNone(recovered)
+            self.assertTrue(self.context.model.contains(recovered))
+
     def test_portable_command_replay_without_discovery(self):
         from run_arithmetic_pipeline import worker
         from research_runtime.supervisor import Limits

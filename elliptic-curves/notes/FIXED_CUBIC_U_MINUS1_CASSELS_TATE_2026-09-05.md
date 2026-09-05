@@ -495,6 +495,125 @@ the original target would still be required afterward. No calibrated point
 search on a genuine higher cover was possible in this run. All three
 point-or-Sha classifications remain **UNKNOWN**.
 
+### Bounded norm-solving and local reconstruction comparison
+
+The [focused follow-up](../../artifacts/generated-results/elliptic-curves/fixed_field_conic_solver_comparison_v1.json)
+also found **no target conic point**. It separates the three deliverables:
+the auxiliary point remains missing, no higher-cover map is constructed,
+and no rational-point search on a higher cover is run. The conic's known
+solubility and all three UNKNOWN target classifications are unchanged.
+
+The experiment uses the exact seed-4 equation `U^2-aV^2=bW^2` and its
+invertible map to the displayed conic for mask `1047173`. A ceiling of
+900 seconds of new solver computation was declared, with 2 GiB RSS per
+worker; the two principal retained runs used about 200 seconds in total.
+They compare two routes with the eight historical Lagrange starts:
+
+| Route | Finite limits | Retained result |
+|---|---|---|
+| Relative norm solving | 180 seconds, PARI stack 256 MB | Stopped in `rnfisnorminit`, before a norm answer; 181.0 seconds including termination grace, peak observed RSS 404 MB |
+| Direct local-to-global reconstruction | 480-second cap; eight inert primes, eight starts each, exponents 4, 8, 16, 32, 64 | All 320 cells completed in 18.6 seconds; 25,920 nonzero exact candidate residuals; peak observed RSS 363 MB |
+
+The first route asks [PARI's relative norm solver](https://pari.math.u-bordeaux.fr/dochtml/html-stable/General_number_fields.html#rnfisnorm)
+for `N(K(sqrt(a))/K)(z)=b`, reusing the prepared labelled maximal order.
+It can require class-group and unit computations; its initialization
+timeout supplies no arithmetic conclusion. A separate small-cubic control
+`Q(t)/(t^3-t-1)`, `a=2`, `b=7` returns a norm witness that passes exact
+substitution. This control checks the adapter, not target-field feasibility.
+
+The second route works directly with projective points. At each inert prime
+`37,41,53,73,83,89,97,101`, deterministic finite-field starts are lifted to
+`(u,v,1)` modulo `p^e`. Reconstruction uses the rank-nine integer lattice
+
+\[
+\Lambda=\{(U,V,W)\in\mathcal O_K^3:
+ U-uW\in p^e\mathcal O_K,\quad V-vW\in p^e\mathcal O_K\}.
+\]
+
+Its index is `p^(6e)`. A Minkowski metric weighted by
+`1,sqrt(|a|),sqrt(|b|)` proposes nine short rows. Every row and both signs
+of every pair of rows are tested, giving 81 exact candidates per cell.
+Unlike the previous method, this does not replace a conic coefficient
+by a smaller norm: it reconstructs all three projective coordinates.
+LLL and local lifts only propose candidates; only a zero field residual
+can certify a point. The eight-prime list, local residues, nine-row bases,
+and raw worker outputs are retained in the compressed evidence. Offline
+replay checks the lattice index, local congruences and all candidate
+residuals without LLL, local search or BNF.
+
+A seeded control over the **same target field**, replacing `b` by `4-a`,
+recovers `(2:1:1)` from its known local residue. This tests exact recovery
+and coordinate handling at the target coefficient scale. It does not
+calibrate the probability of discovering an unknown target point. The
+25,920 tested vectors are finite candidate lists, not complete height boxes
+or complete local residue disks. Increasing local precision alone has not
+removed the global reconstruction difficulty.
+
+The new checker binds the selected conic directly to the retained pencil
+matrices, field polynomial, anchor generator `theta_0=9*t+6`, and reduction
+map. The historical whole-gate checker currently encounters a point-realization
+source hash moved into the runtime source snapshots; this follow-up neither
+changes that historical hash nor relies on bypassing its check.
+
+```sh
+sage -python elliptic-curves/cas/solve_fixed_field_conic.py --verify
+sage -python -m unittest elliptic-curves/tests/test_fixed_field_conic_solver.py
+```
+
+Explicitly bounded discovery, using fresh local output directories if needed:
+
+```sh
+sage -python elliptic-curves/cas/solve_fixed_field_conic.py --run --worker norm --seconds 180
+sage -python elliptic-curves/cas/solve_fixed_field_conic.py --run --worker lift --seconds 480
+sage -python elliptic-curves/cas/solve_fixed_field_conic.py --run --worker norm --control --seconds 15
+sage -python elliptic-curves/cas/solve_fixed_field_conic.py --run --worker lift --control --seconds 15
+```
+
+The first missing deliverable remains an exact target conic point. A further
+cover would still require descent data and an exact map of degree four to
+the target, hence degree sixteen to the elliptic curve. None is inferred
+from the local points, the controls, or the Hasse-principle existence result.
+
+### Longer norm and reconstruction search
+
+The [long-search certificate](../../artifacts/generated-results/elliptic-curves/fixed_field_conic_long_search_v1.json)
+extends the finite construction attempt without changing its conclusion:
+there is still no explicit point on the `r_1+r_2` tangent conic, so the
+remaining descent data, a genuine higher-cover map, and a cover point search
+remain unavailable. The three target classifications remain **UNKNOWN**.
+
+The relative norm route received a 2,700-second cap, 4 GiB RSS cap, and 1 GB
+PARI stack. It stopped at 2,701.0 seconds during `rnfisnorminit`, before any
+norm answer, with 406 MB peak observed RSS. This is a resource result from
+the first stage of the norm method, not a decision that `b` is not a norm.
+
+The independent no-BNF reconstruction route used all eight earlier inert
+primes `37,41,53,73,83,89,97,101`, 4,096 deterministic local residues at
+each, and precisions `p^16,p^32,p^64,p^128`. It completed all 131,072 cells
+in 1,750 seconds, with 10,616,832 candidate vectors. Each candidate received
+an exact substitution in `U^2-aV^2-bW^2`; none had zero residual. The worker
+records only a SHA-256 digest of each full candidate/basis/residual list, so
+the 55-minute evidence stays tractable. The offline verifier checks every
+cell's field binding, prime/residue/precision schedule, and cumulative digest
+chain. These compact records preserve the bounded computation's integrity;
+they do not turn its miss into a global obstruction.
+
+With the direct sweep complete, an additional 900-second pass enumerated the
+`W=1` local residue chart at the smallest inert prime, 37. It checked 22,973
+of that chart's residues at precision `37^128`, or 1,860,813 exact candidate
+vectors. The time cap stopped it before chart completion. It does not cover
+the `U=1` or `V=1` charts, nor the remaining `W=1` residues.
+
+```sh
+sage -python elliptic-curves/cas/solve_fixed_field_conic.py --long-verify
+sage -python -m unittest elliptic-curves/tests/test_fixed_field_conic_solver.py
+```
+
+The long runs had declared caps of 2,700, 2,700, and 900 seconds respectively;
+their total dispatched budget is 6,300 CPU-seconds, and all worker limits and
+outputs are retained. No assertion about conic insolubility, a radical class,
+or the elliptic-curve rank follows from these finite searches.
+
 ## Reproduction
 
 The compact [summary](../../artifacts/generated-results/elliptic-curves/fixed_cubic_u_minus1_cassels_tate_v1.json)

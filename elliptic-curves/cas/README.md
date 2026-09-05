@@ -454,6 +454,11 @@ evidence label and a canonical note.
 
 <!-- status-consumer: EC-K3-ICARM-MW16-POINTED-SIEVE cb83c1afae1d0141 -->
 
+- `run_fixed_field_comparison.py` runs and replays the
+  [frozen six-curve comparison](../notes/FIXED_FIELD_COMPARISON_2026-09-05.md):
+  665 CT entries, the zero control, and five radical-only bounded point searches.
+  All five new deformations leave one unresolved nonzero inherited class.
+
 - `run_fixed_cubic_cassels_tate.sage` computes the restricted `u=-1`
   Cassels--Tate matrix and searches its three nonzero radical classes.
   `verify_fixed_cubic_cassels_tate.sage` independently checks exact cover
@@ -476,7 +481,19 @@ evidence label and a canonical note.
   and eight exact reductions. `--prepare --lattice` replays the bounded local
   solver with Sage class-group calls disabled. No genuine lift is constructed.
 <!-- status-consumer: EC-FIXED-CUBIC-TANGENT-CONIC-GATE 26a49e30ff3128d3 -->
+<!-- status-consumer: EC-FIXED-CUBIC-CONIC-SOLVER-COMPARISON 6a178bc3a4ada43b -->
+<!-- status-consumer: EC-FIXED-CUBIC-CONIC-LONG-SEARCH 825fb4cd6ed84cb1 -->
+
+- `solve_fixed_field_conic.py --verify` replays 320 local-reconstruction cells
+  and 25,920 exact candidate misses, plus separate positive controls. Its
+  relative-norm run timed out; no target conic point or higher cover resulted.
+
+- `solve_fixed_field_conic.py --long-verify` audits the retained 45-minute
+  norm timeout, 131,072-cell deep reconstruction transcript, and partial
+  exhaustive `W=1` prime-37 transcript. No target point or higher cover resulted.
 
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-VS-SHA-COMPARISON f37417a9fda3ee3f -->
 
 <!-- status-consumer: EC-K3-ICARM-MW16-SENSITIVITY f88886c066d6cb45 -->
+
+<!-- status-consumer: EC-FIXED-FIELD-COMPARISON 02c49a8120aeb7bd -->

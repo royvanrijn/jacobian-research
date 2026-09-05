@@ -1,9 +1,10 @@
 # Fixed cubic field, varying elliptic curve
 
-Status: **at `u=-1`, the inherited pairing has rank 16 and radical
-dimension 2; rank at least one is certified outside the inherited span**.
-Only the three nonzero radical classes remain inherited point-solving
-candidates; their realization is open.
+Status: **the [frozen comparative experiment](FIXED_FIELD_COMPARISON_2026-09-05.md)
+is complete**. All five new deformations `u=-3,-2,1,2,3` have a
+one-dimensional restricted radical, with no inherited point realized in the
+bounded searches. The `u=-1` baseline retains its two-dimensional radical;
+its known rank-one point lies outside the inherited span.
 
 This is a mechanism experiment, not a replacement for the MW16/MW17
 production lanes.  It fixes a cubic 2-division field and a certified space of
@@ -370,3 +371,5 @@ The original local-pilot output certifies the family identities, fixed Kummer sp
 intersections, newly bad-prime coverage, and explicit cover inputs.  It does
 not compute the full class group, the full 2-Selmer group of any \(E_u\), a
 rational point on a new curve, a new rank lower bound, or an exact rank.
+
+<!-- status-consumer: EC-FIXED-FIELD-COMPARISON 02c49a8120aeb7bd -->

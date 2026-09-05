@@ -1,5 +1,16 @@
 # Active elliptic-curve artifacts
 
+The [MW18 generic height geometry](mw18_generic_height_geometry_v1.json)
+checks the nine quadratic covers and the added section's height 8; see the
+[controlled centre comparison](../../../elliptic-curves/notes/MW18_DEEP_CENTRE_CALIBRATION_2026-09-05.md).
+Its [600-chart result](mw18_deep_centre_comparison_v1.json) and
+[portable witnesses](mw18_deep_centre_comparison_v1.zip) retain the
+nearest-first/deepest/diverse comparison and the failed prospective gate.
+
+The [fibre-height population experiment](../../../elliptic-curves/notes/FIBRE_HEIGHT_POPULATION_2026-09-05.md)
+retains its frozen populations, matched search transcripts and exact replay
+under `fibre_height_*v1.json[.gz]`.
+
 The shared runtime also retains the [MW18 census witness bundle](runtime_mw18_census_witnesses_v1.zip)
 and [replay summary](runtime_mw18_census_witnesses_v1.json), with
 [positive MW states and finite facts](runtime_mw18_complete_replay_v1.json). The default
@@ -74,6 +85,12 @@ Important distinctions made explicit by the catalogue:
   replays ten mapped points at `u=0`, including parameter-infinity cases.
 <!-- status-consumer: EC-FIXED-CUBIC-U-MINUS1-RANK1 7e488a894d136732 -->
 
+- [`fixed_field_comparison_v1.json`](fixed_field_comparison_v1.json) indexes
+  six portable CT witness bundles, the frozen protocols and five bounded
+  radical searches. Every new deformation has radical dimension one and
+  certified realized dimension zero. See the
+  [comparison proof](../../../elliptic-curves/notes/FIXED_FIELD_COMPARISON_2026-09-05.md).
+
 - `fixed_cubic_u_minus1_cassels_tate_v1.json` and its compressed arithmetic
   evidence certify pairing rank 16 on the eighteen inherited classes.
   Exactly three nonzero radical combinations remain point-solving
@@ -97,6 +114,20 @@ Important distinctions made explicit by the catalogue:
   three exact cubic tangent conics, eight invertible reductions and incomplete
   construction attempts. No genuine lift or new target obstruction is claimed.
 <!-- status-consumer: EC-FIXED-CUBIC-TANGENT-CONIC-GATE 26a49e30ff3128d3 -->
+<!-- status-consumer: EC-FIXED-CUBIC-CONIC-SOLVER-COMPARISON 6a178bc3a4ada43b -->
+<!-- status-consumer: EC-FIXED-CUBIC-CONIC-LONG-SEARCH 825fb4cd6ed84cb1 -->
+
+- [`fixed_field_conic_solver_comparison_v1.json`](fixed_field_conic_solver_comparison_v1.json)
+  and its [evidence](fixed_field_conic_solver_comparison_evidence_v1.json.gz)
+  retain the relative-norm timeout, 320 local reconstruction cells, 25,920 exact
+  candidate misses, and separate positive controls. No target point or higher
+  cover was found.
+
+- [`fixed_field_conic_long_search_v1.json`](fixed_field_conic_long_search_v1.json)
+  and its [evidence](fixed_field_conic_long_search_evidence_v1.json.gz) retain
+  a 45-minute relative-norm initialization timeout, 131,072 deep reconstruction
+  cells, and a partial exhaustive affine prime-37 pass. No target point or higher
+  cover was found.
 
 - `quotient_geometry_table_v1.json` is the complete 30-presentation join of
   five usable R17 controls, sixteen refreshed R17 ladder fibres, and nine
@@ -488,3 +519,5 @@ The pre-cleanup bytes and every provenance-only refresh are recorded under
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-VS-SHA-COMPARISON f37417a9fda3ee3f -->
 
 <!-- status-consumer: EC-K3-ICARM-MW16-SENSITIVITY f88886c066d6cb45 -->
+
+<!-- status-consumer: EC-FIXED-FIELD-COMPARISON 02c49a8120aeb7bd -->

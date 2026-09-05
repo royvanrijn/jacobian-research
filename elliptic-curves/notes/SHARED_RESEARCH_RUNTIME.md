@@ -20,7 +20,7 @@ hypotheses and ambiguous reduction columns remain UNKNOWN.
 | Product-specific regulator code | `SurfaceProofEngine` and `SurfaceProofRepository` accept exact surfaces, good reductions, fibre data and a proof verifier. The toric K3 adapter checks retained Frobenius output, the exact model, boundary factors, Hodge data, reciprocity and Weil roots. It has been checked on a singleton twist as well as the product certificates. |
 | Repeated independence classification | `ReductionCache` retains finite quotient witnesses and per-point signatures. `IncrementalReductions` maintains a binary column basis; a new point evaluates new columns and requests extra primes only on ambiguity. Existing mod-2 helpers share this cache. |
 | Reconstructed subgroup state | Immutable `MWState` holds the exact model/context, independent basis, labelled height Gram, Kummer classes, finite signatures, parity/CVP data and observations. Subspace searches, lazy searches and generic pointed jobs retain state transitions. Compatibility chart adapters accept historical generator lists while distinguishing them from a certified basis. |
-| Exponential parity pools | `VoronoiIterator` lazily expands integer-child streams using exact LDL lower bounds. It emits closest representatives in distinct parity cosets and offers a bounded diversity window. Checkpoints resume after a node-budget stop. It never constructs a list of all 2^r classes. The production MW17 `--single-index` path uses it; the frozen 43/301 census requires `--legacy-census-regression`. |
+| Nearest-first parity enumeration | `VoronoiIterator` lazily expands integer-child streams using exact LDL lower bounds. It emits cosets in increasing nearest-representative distance; its diversity window still samples an initially shallow pool. This is a different policy from selecting maximum-depth classes. Checkpoints resume after a node-budget stop, without a full parity table. The MW18 deep-centre experiment uses a separate finite census with exact maximum-stratum audits. The MW17 `--single-index` path uses the iterator; the frozen 43/301 census requires `--legacy-census-regression`. |
 | MW16-only metric policy | `ChartPolicy` separates the centre Gram from the two-dimensional chart metric and its weight. The retained sweep covers sixteen R17/MW17 controls and five MW18 anchors, with two identities held out of policy ranking. See the measured result below. |
 | Coupled normalization and enumeration | Raw search contexts need no minimal model, factorization or number field. Descent upgrades the context explicitly, including an integral labelled generator when needed. `RepresentationPipeline` times normalization, chart construction and enumeration separately. The concrete benchmark varies raw/minimal normalization, raw/metric coordinates and GMP/PARI enumeration. Fixed-field conic parameterization and quartic normalization are also separate choices. |
 | Per-class local arithmetic | `LocalKummerBasis` prepares one local basis per place and evaluates squareclass matrices. Kernel/quotient operations are binary linear algebra. The fixed-field family and generic subspace backend use simultaneous intersections; individually inadmissible classes may combine to an admissible class. |
@@ -80,6 +80,19 @@ bound. Retained complete-Selmer integrity is labelled separately from an
 independent upper-bound proof replay.
 
 ## Metric transfer result
+
+The [MW18 deep-centre comparison](MW18_DEEP_CENTRE_CALIBRATION_2026-09-05.md)
+separately tests centre selection with the exact generic height Gram, forty
+charts per anchor presentation, and height 100,000. The older trial below used
+initially shallow centres and an identity scoring Gram on MW18. Its null
+MW18 result does not establish backend insensitivity or test the successful
+maximum-depth policy.
+
+All 600 new boxes complete: nearest-first certifies no additional directions,
+deterministic deepest selection certifies 22, and diverse deep selection 21,
+across five anchor presentations on four distinct curves. These improve on the
+shallow baseline but fail the frozen 35/50, minimum-five-per-anchor gate, so the
+balanced 27-candidate roster remains unrun.
 
 The [retained summary](../../artifacts/generated-results/elliptic-curves/runtime_chart_policy_sweep_v1.json)
 and [portable witness bundle](../../artifacts/generated-results/elliptic-curves/runtime_chart_policy_sweep_v1.zip)

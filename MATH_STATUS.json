@@ -33613,6 +33613,76 @@
       "priority": "reference"
     },
     {
+      "id": "EC-FIXED-CUBIC-CONIC-SOLVER-COMPARISON",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Bounded relative-norm and local-reconstruction attempts leave the first cubic conic point unconstructed",
+      "scope": "For the known-soluble tangent conic of radical mask 1047173, the seed-4 normalized equation and its invertible map are bound exactly to the labelled cubic field and singular pencil. A relative norm-equation run reaches its 180-second limit during initialization, with no norm answer. Direct projective reconstruction completes 320 cells over eight inert primes, eight starts and five precisions; all 25920 recorded candidates have nonzero exact field residuals. Offline replay verifies the local congruences, index p^(6e) reconstruction lattices and candidate lists without LLL or BNF. A seeded positive reconstruction control uses the same cubic field with b=4-a; a separate small-cubic norm control verifies the adapter. Neither calibrates target discovery probability. The declared new-solver ceiling is 900 seconds with 2 GiB RSS per worker. No target conic point, higher-cover map, cover search, or global obstruction results. All three point-or-Sha classifications remain UNKNOWN and the curve rank lower bound remains one.",
+      "canonical_source": "elliptic-curves/notes/FIXED_CUBIC_U_MINUS1_CASSELS_TATE_2026-09-05.md",
+      "dependencies": [
+        "EC-FIXED-CUBIC-TANGENT-CONIC-GATE"
+      ],
+      "checker": "elliptic-curves/cas/solve_fixed_field_conic.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b5f3f970d26665667c12e0880bd1c3a648dd045ccc8dee4ab2b4de350ed55c87",
+      "software_lock": [
+        "elliptic-curves/cas/solve_fixed_field_conic.py",
+        "elliptic-curves/tests/test_fixed_field_conic_solver.py",
+        "artifacts/generated-results/elliptic-curves/fixed_field_conic_solver_comparison_v1.json",
+        "artifacts/generated-results/elliptic-curves/fixed_field_conic_solver_comparison_evidence_v1.json.gz"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elliptic-curves/README.md",
+        "elliptic-curves/REPRODUCE.md",
+        "elliptic-curves/cas/README.md",
+        "artifacts/generated-results/elliptic-curves/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "EC-FIXED-CUBIC-CONIC-LONG-SEARCH",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Longer norm and local-reconstruction searches leave the first cubic conic point unconstructed",
+      "scope": "For the known-soluble tangent conic of radical mask 1047173, a 2700-second, 4-GiB PARI relative-norm worker with a 1-GB PARI stack stops during rnfisnorminit without a norm answer. A distinct no-BNF local-to-global reconstruction run completes 131072 cells over eight inert primes, 4096 deterministic residues per prime, and exponents 16,32,64,128; it exact-checks 10616832 proposed projective vectors with no zero residual. A further 900-second no-BNF pass enumerates 22973 residues of the W=1 chart modulo the inert prime 37, checking 1860813 vectors; it stops before completing the chart and finds no point. Compact transcript hashes bind every runtime exact residual-list check to its prime, residue and exponent, while the offline audit checks field/pencil binding, run limits, row order and transcript chain. These bounded misses and the norm initialization timeout are not global obstructions or solubility decisions. No target conic point, higher-cover map, cover search, or global obstruction results. All three point-or-Sha classifications remain UNKNOWN and the curve rank lower bound remains one.",
+      "canonical_source": "elliptic-curves/notes/FIXED_CUBIC_U_MINUS1_CASSELS_TATE_2026-09-05.md",
+      "dependencies": [
+        "EC-FIXED-CUBIC-CONIC-SOLVER-COMPARISON"
+      ],
+      "checker": "elliptic-curves/cas/solve_fixed_field_conic.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b5f3f970d26665667c12e0880bd1c3a648dd045ccc8dee4ab2b4de350ed55c87",
+      "software_lock": [
+        "elliptic-curves/cas/solve_fixed_field_conic.py",
+        "elliptic-curves/tests/test_fixed_field_conic_solver.py",
+        "artifacts/generated-results/elliptic-curves/fixed_field_conic_long_search_v1.json",
+        "artifacts/generated-results/elliptic-curves/fixed_field_conic_long_search_evidence_v1.json.gz"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elliptic-curves/README.md",
+        "elliptic-curves/REPRODUCE.md",
+        "elliptic-curves/cas/README.md",
+        "artifacts/generated-results/elliptic-curves/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "EC-NF-R14",
       "kind": "example",
       "state": "proved",
@@ -43837,6 +43907,67 @@
         "elliptic-curves/cas/README.md",
         "artifacts/generated-results/elliptic-curves/README.md"
       ]
+    },
+    {
+      "id": "EC-FIXED-FIELD-COMPARISON",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Frozen fixed-field comparison: five deformations leave one unresolved inherited class each",
+      "scope": "On the same certified twenty-dimensional Fermigier Kummer span, the initial u=0,-2,1,2 comparison computes restricted Cassels--Tate profiles (dim W, CT rank, radical dimension, certified realized dimension) equal to (20,0,20,20) at the control and (13,12,1,0) at each deformation. After that comparison replayed, the final extension was frozen at u=-3,3, the next two integers; complete local intersections have dimensions 17 and 15 and the profiles are (17,16,1,0) and (15,14,1,0). All 665 independent matrix entries, 772 exact norm-cover maps and 17 symmetry/bilinearity checks replay, including every one of the 190 vanishing control entries. Each new deformation has maximal alternating rank on its odd-dimensional tested space and one nonzero radical class, with anchor masks 370313,702532,154245,513585,602844 at u=-3,-2,1,2,3. Only these five classes receive point searches: reduced quartics, height argument 100000, twenty seconds per cover and parameter infinity checked. All five bounded searches complete without a point. Certified realized dimension zero is only a lower bound on the rational Kummer intersection; all five radical point-or-Sha classifications remain UNKNOWN. None improves the two-dimensional radical at the retained u=-1 baseline; the experiment success criterion is not met. No full Selmer group, class group, whole-curve rank upper bound, or conclusion about classes outside the tested spaces is claimed.",
+      "canonical_source": "elliptic-curves/notes/FIXED_FIELD_COMPARISON_2026-09-05.md",
+      "dependencies": [
+        "EC-FIXED-CUBIC-VARYING-CURVE-LOCAL-KUMMER",
+        "EC-FIXED-CUBIC-U-MINUS1-CASSELS-TATE",
+        "external: Fisher 2022 Theorem 3.1 and Remark 3.3; vanishing of Cassels--Tate on rational Kummer classes"
+      ],
+      "checker": "elliptic-curves/cas/run_fixed_field_comparison.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:2b3a507953e657ef5b74bae362d014682c85084d80080e2362face68368fca14",
+      "software_lock": [
+        "elliptic-curves/cas/run_fixed_field_comparison.py",
+        "elliptic-curves/cas/run_fixed_cubic_field_curve_family.sage",
+        "elliptic-curves/cas/fixed_cubic_field_curve_family.py",
+        "elliptic-curves/tests/test_fixed_field_comparison.py",
+        "elliptic-curves/tests/test_sage_subspace_runtime.py",
+        "elliptic-curves/data/fixed_field_comparison_v1.json",
+        "elliptic-curves/data/fixed_field_comparison_extension_v1.json",
+        "elliptic-curves/data/fixed_field_comparison_extension_freeze_v1.json",
+        "artifacts/generated-results/elliptic-curves/fixed_cubic_field_fermigier_rank20_local_kummer_u2_v1.json",
+        "artifacts/generated-results/elliptic-curves/fixed_cubic_field_local_kummer_u3_v1.json",
+        "elliptic-curves/cas/research_runtime/arithmetic.py",
+        "elliptic-curves/cas/research_runtime/binary.py",
+        "elliptic-curves/cas/research_runtime/fisher.py",
+        "elliptic-curves/cas/research_runtime/local_kummer.py",
+        "elliptic-curves/cas/research_runtime/sage_arithmetic.py",
+        "elliptic-curves/cas/research_runtime/sage_subspace.py",
+        "elliptic-curves/cas/research_runtime/store.py",
+        "elliptic-curves/cas/research_runtime/subspace.py",
+        "elliptic-curves/cas/research_runtime/supervisor.py",
+        "elliptic-curves/cas/research_runtime/witnesses.py",
+        "artifacts/generated-results/elliptic-curves/fixed_field_comparison_v1.json",
+        "artifacts/generated-results/elliptic-curves/fixed_field_comparison_um3_v1.json.gz",
+        "artifacts/generated-results/elliptic-curves/fixed_field_comparison_um2_v1.json.gz",
+        "artifacts/generated-results/elliptic-curves/fixed_field_comparison_u0_v1.json.gz",
+        "artifacts/generated-results/elliptic-curves/fixed_field_comparison_u1_v1.json.gz",
+        "artifacts/generated-results/elliptic-curves/fixed_field_comparison_u2_v1.json.gz",
+        "artifacts/generated-results/elliptic-curves/fixed_field_comparison_u3_v1.json.gz"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elliptic-curves/README.md",
+        "elliptic-curves/REPRODUCE.md",
+        "elliptic-curves/cas/README.md",
+        "artifacts/generated-results/elliptic-curves/README.md",
+        "elliptic-curves/notes/FIXED_CUBIC_FIELD_VARYING_CURVE_EXPERIMENT_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
     }
   ]
 }

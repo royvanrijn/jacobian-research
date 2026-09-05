@@ -1,7 +1,16 @@
 # Elliptic curves over `Q` — ACTIVE
 
+The [fibre-height population experiment](notes/FIBRE_HEIGHT_POPULATION_2026-09-05.md)
+compares Nagao selection with actual arithmetic height and measured chart cost
+on fresh bounded MW16 and MW18 populations.
+
 New arithmetic and search work uses the [shared runtime](notes/SHARED_RESEARCH_RUNTIME.md):
 cached labelled fields, subspace descent, lazy MWState search and retained-witness replay.
+
+The [MW18 deep-centre calibration](notes/MW18_DEEP_CENTRE_CALIBRATION_2026-09-05.md)
+uses the exact generic height geometry: deepest, diverse deep, and nearest-first
+recover 22, 21, and 0 directions across five anchor presentations. The frozen
+prospective gate fails.
 
 This programme is open for theorem-directed breakthroughs in exceptional
 Mordell--Weil rank, low conductor, and the elliptic-K3 constructions behind
@@ -77,29 +86,26 @@ targets, parameters, public points, ranks, or target `j`-invariants.
   arithmetic-selected quartic coordinates for every finalist.
 - ICARM curve 356: certified `rank E(Q) >= 29` with exact conductor/local data.
 - ICARM curves 285/286 and curve 394: certified rank-at-least-21 results; curve 394 is the compact Elkies `t=3/8` specialization with exact conductor replay.
-- The complementary fixed-cubic-field experiment is now live on the pinned
-  Fermigier rank-20 anchor.  For the five genuinely different curves with
-  `u=-2,-1,0,1,2`, exact class-group-free local intersections on the whole
-  20-dimensional known Kummer span have dimensions `13,18,20,13,13`.
-  Every newly bad prime is included and the `u=0` control recovers all twenty
-  classes. At `u=-1`, the explicit point `(A+1,A-B+1)` now certifies rank
-  at least one. Its Kummer class is independent of the whole inherited
-  span, as certified by valuation parity above 19. The inherited space now
-  has a [certified Cassels--Tate matrix of rank 16](notes/FIXED_CUBIC_U_MINUS1_CASSELS_TATE_2026-09-05.md),
-  leaving a two-dimensional radical and just three nonzero point-solving
-  candidates. Their point-or-Sha status remains unknown. The
-  [six-model follow-up](notes/FIXED_CUBIC_U_MINUS1_CASSELS_TATE_2026-09-05.md#six-globally-minimal-radical-models-and-a-bounded-higher-descent-attack)
-  certifies global minimality and exact maps for original and Q-translated
-  quadric intersections; lattice searches and incomplete higher descents
-  have not decided a class.
+- The [fixed-field comparison](notes/FIXED_FIELD_COMPARISON_2026-09-05.md)
+  is complete. At `u=-2,1,2`, the profiles
+  `(local dimension, CT rank, radical dimension, certified realized dimension)`
+  are all `(13,12,1,0)`. The frozen extension gives `(17,16,1,0)` at `u=-3`
+  and `(15,14,1,0)` at `u=3`; the `u=0` control is `(20,0,20,20)`.
+  All five remaining classes received bounded point searches, with no hit.
+  Their point-or-Sha status stays unknown; the success criterion was not met.
+  The [u=-1 baseline](notes/FIXED_CUBIC_U_MINUS1_CASSELS_TATE_2026-09-05.md)
+  retains its rank-16 pairing, two-dimensional radical, and three unresolved
+  inherited classes. Its known rank-one point lies outside the inherited span.
+  Earlier minimal-model, empty-box and tangent-conic evidence remains indexed
+  in that proof note.
+  The bounded relative-norm and local-reconstruction conic-solver comparison
+  also leaves the first auxiliary point unconstructed.
+<!-- status-consumer: EC-FIXED-CUBIC-CONIC-SOLVER-COMPARISON 6a178bc3a4ada43b -->
+  The longer norm/reconstruction follow-up checked 12.48 million further
+  candidate vectors without a point; no higher cover is available.
+<!-- status-consumer: EC-FIXED-CUBIC-CONIC-LONG-SEARCH 825fb4cd6ed84cb1 -->
 <!-- status-consumer: EC-FIXED-CUBIC-RADICAL-MINIMAL-MODELS 90216b8c456edd20 -->
-  The [geometry audit](notes/FIXED_CUBIC_U_MINUS1_CASSELS_TATE_2026-09-05.md#search-geometry-audit-and-revised-method)
-  proves all six nominal search boxes were already empty by elementary
-  inequalities and records a revised method that shares higher-descent work.
 <!-- status-consumer: EC-FIXED-CUBIC-RADICAL-SEARCH-GEOMETRY 678f7beb805a4530 -->
-  The [tangent-conic construction](notes/FIXED_CUBIC_U_MINUS1_CASSELS_TATE_2026-09-05.md#genuine-lift-construction-the-cubic-tangent-conic-gate)
-  now has exact cubic-field equations and eight verified reductions. No
-  auxiliary point or genuine higher cover has yet been constructed.
 <!-- status-consumer: EC-FIXED-CUBIC-TANGENT-CONIC-GATE 26a49e30ff3128d3 -->
 <!-- status-consumer: EC-FIXED-CUBIC-U-MINUS1-CASSELS-TATE df45391a84f0e3c9 -->
 <!-- status-consumer: EC-FIXED-CUBIC-U-MINUS1-RANK1 7e488a894d136732 -->
@@ -288,10 +294,10 @@ The useful gates are now:
    complete unconditional descent for every Selmer or exact-rank claim;
 4. continue curve-302 parent reconstruction independently of the parameter
    experiments;
-5. restrict inherited fixed-field point solving at `u=-1` to the three
-   Cassels--Tate radical classes, using anchor masks `1047173` and `596921`
-   as generators and `450876` as their sum; certify any recovered point
-   independently;
+5. use the completed [fixed-field comparison](notes/FIXED_FIELD_COMPARISON_2026-09-05.md)
+   to select any next bounded experiment before enlarging a point budget;
+   all five tested deformations leave one unresolved inherited class, versus
+   three at `u=-1`; restrict any further point solving to certified radicals;
 6. pursue an unconditional upper bound for curve 302 and low-conductor
    survivors only after exact quotient/descent gates justify them.
 
@@ -315,3 +321,5 @@ Use [`REPRODUCE.md`](REPRODUCE.md) and the exact checker paths recorded in `../M
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-VS-SHA-COMPARISON f37417a9fda3ee3f -->
 
 <!-- status-consumer: EC-K3-ICARM-MW16-SENSITIVITY f88886c066d6cb45 -->
+
+<!-- status-consumer: EC-FIXED-FIELD-COMPARISON 02c49a8120aeb7bd -->

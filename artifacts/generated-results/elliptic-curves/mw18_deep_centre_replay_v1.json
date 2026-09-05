@@ -1,0 +1,9 @@
+{
+  "bundle_sha256": "558b1d26e48dfd10faf88f4c0602c011c02e6b5a7cced5991a6ad7dd22aaf0ab",
+  "chart_count": 600,
+  "empty_arithmetic_cache": true,
+  "floating_cvp_repeated": false,
+  "point_enumeration_repeated": false,
+  "protocol_hash": "84c0efcb5a9498e0ba0a2da1b47c49f6d87f8f84f06ec7a0b118465bbcf308d6",
+  "status": "PASS_GEOMETRY_DEEP_STRATA_CHARTS_AND_INDEPENDENCE"
+}

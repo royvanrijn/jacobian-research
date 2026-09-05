@@ -1,0 +1,692 @@
+{
+  "schema": "elliptic-curves.fixed-field-comparison.v1",
+  "status": "COMPLETE_BOUNDED_COMPARISON_NO_REALIZED_DEFORMATION_CLASS",
+  "profile_columns": [
+    "dim_W_u",
+    "restricted_CT_rank",
+    "restricted_radical_dimension",
+    "certified_realized_dimension"
+  ],
+  "curves": [
+    {
+      "parameter_u": "-3",
+      "role": "extension",
+      "profile": [
+        17,
+        16,
+        1,
+        0
+      ],
+      "radical_anchor_masks": [
+        370313
+      ],
+      "point_search_statuses": [
+        "BOUNDED_SEARCH_COMPLETE"
+      ],
+      "point_count": 0,
+      "evidence": "artifacts/generated-results/elliptic-curves/fixed_field_comparison_um3_v1.json.gz",
+      "evidence_sha256": "dc4af081cb79a486b3427952d468e47b0e7f681a7e95fe1978fb47ac0b4d80ed"
+    },
+    {
+      "parameter_u": "-2",
+      "role": "initial comparison",
+      "profile": [
+        13,
+        12,
+        1,
+        0
+      ],
+      "radical_anchor_masks": [
+        702532
+      ],
+      "point_search_statuses": [
+        "BOUNDED_SEARCH_COMPLETE"
+      ],
+      "point_count": 0,
+      "evidence": "artifacts/generated-results/elliptic-curves/fixed_field_comparison_um2_v1.json.gz",
+      "evidence_sha256": "287c97dc792ad405f334eb485bc2bd468535c25ef192c5aba2fa81969f61171f"
+    },
+    {
+      "parameter_u": "-1",
+      "role": "retained baseline",
+      "profile": [
+        18,
+        16,
+        2,
+        0
+      ],
+      "radical_anchor_masks": [
+        596921,
+        450876
+      ],
+      "evidence": "artifacts/generated-results/elliptic-curves/fixed_cubic_u_minus1_cassels_tate_v1.json",
+      "evidence_sha256": "b417fd195df7ac173f76f6c0d4a08185480ecec7fb3f6f63e6cd006726fd3355"
+    },
+    {
+      "parameter_u": "0",
+      "role": "correctness control",
+      "profile": [
+        20,
+        0,
+        20,
+        20
+      ],
+      "radical_anchor_masks": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048,
+        4096,
+        8192,
+        16384,
+        32768,
+        65536,
+        131072,
+        262144,
+        524288
+      ],
+      "point_search_statuses": [],
+      "point_count": 0,
+      "evidence": "artifacts/generated-results/elliptic-curves/fixed_field_comparison_u0_v1.json.gz",
+      "evidence_sha256": "0f336d54e9d3027723fc6662a0e0cd9b925d55553d919e54108723171dab9e0e"
+    },
+    {
+      "parameter_u": "1",
+      "role": "initial comparison",
+      "profile": [
+        13,
+        12,
+        1,
+        0
+      ],
+      "radical_anchor_masks": [
+        154245
+      ],
+      "point_search_statuses": [
+        "BOUNDED_SEARCH_COMPLETE"
+      ],
+      "point_count": 0,
+      "evidence": "artifacts/generated-results/elliptic-curves/fixed_field_comparison_u1_v1.json.gz",
+      "evidence_sha256": "c47bd41a613ecdbb94914ecb4d337dfb5951c18fd07e3e394abfd33b978f1032"
+    },
+    {
+      "parameter_u": "2",
+      "role": "initial comparison",
+      "profile": [
+        13,
+        12,
+        1,
+        0
+      ],
+      "radical_anchor_masks": [
+        513585
+      ],
+      "point_search_statuses": [
+        "BOUNDED_SEARCH_COMPLETE"
+      ],
+      "point_count": 0,
+      "evidence": "artifacts/generated-results/elliptic-curves/fixed_field_comparison_u2_v1.json.gz",
+      "evidence_sha256": "39926064fee6c70742111ea5d4a07ee0ecc70ffada69d4deafd19093a98182ce"
+    },
+    {
+      "parameter_u": "3",
+      "role": "extension",
+      "profile": [
+        15,
+        14,
+        1,
+        0
+      ],
+      "radical_anchor_masks": [
+        602844
+      ],
+      "point_search_statuses": [
+        "BOUNDED_SEARCH_COMPLETE"
+      ],
+      "point_count": 0,
+      "evidence": "artifacts/generated-results/elliptic-curves/fixed_field_comparison_u3_v1.json.gz",
+      "evidence_sha256": "bef7784264ce413f2258d845f67b7e08f7b78d0fea138f8abfc509c6776672f4"
+    }
+  ],
+  "new_computation_counts": {
+    "matrix_entries": 665,
+    "cover_maps": 772,
+    "cross_checks": 17,
+    "point_searches": 5
+  },
+  "success_criterion_met": false,
+  "software": {
+    "sage": "10.9",
+    "pari": "[2, 17, 3]"
+  },
+  "source_hashes": {
+    "elliptic-curves/cas/run_fixed_field_comparison.py": "2b3a507953e657ef5b74bae362d014682c85084d80080e2362face68368fca14",
+    "elliptic-curves/cas/run_fixed_cubic_field_curve_family.sage": "f177873cb054596a655af6a5044d7607860a6dbfcf57092da178c7cf175e5f65",
+    "elliptic-curves/cas/fixed_cubic_field_curve_family.py": "3fa2163ed729b39a152585ff6e7ac4402bf83109844281ba8f2f87b5c63a6843",
+    "elliptic-curves/tests/test_fixed_field_comparison.py": "9637d3e889d9212349d40702998e9059896bf7747f2a9bb18c7fce2b1abe5d40",
+    "elliptic-curves/tests/test_sage_subspace_runtime.py": "5123714b628a39019dfcea2333e54130479a07d973228eb36747b98956d28d59",
+    "elliptic-curves/data/fixed_field_comparison_v1.json": "02449d4667bb021794e4e6dce63490f67a1a521cecd1413cfe8d5e68ff05bcb1",
+    "elliptic-curves/data/fixed_field_comparison_extension_v1.json": "bae1b0d5c95dfed231fc42c28c4e9216a9dec9adb4a3960196834dc53c222a1f",
+    "elliptic-curves/data/fixed_field_comparison_extension_freeze_v1.json": "b1493754cce62142cb2f860ee5003cfb41cf779a0edef89b650533e9abce85db",
+    "artifacts/generated-results/elliptic-curves/fixed_cubic_field_fermigier_rank20_local_kummer_u2_v1.json": "ddea246ebab21f494b10937eb443829a9fe2e5e37221dd7a4097fa0d6f842b41",
+    "artifacts/generated-results/elliptic-curves/fixed_cubic_field_local_kummer_u3_v1.json": "5dd0df436c33f2793f71c3fc6d3d44c6342e156de05a21ed5f3f1e44f353b7fe",
+    "elliptic-curves/cas/research_runtime/arithmetic.py": "f304317492824cf149c88b5814e68cdd0bffb0542a3d8db7bb4d9f3ec988802b",
+    "elliptic-curves/cas/research_runtime/binary.py": "9956f4b5236d8ad2260018182eebfa18bcd8ced7fdc92ffa6023ad9da7d9dd99",
+    "elliptic-curves/cas/research_runtime/fisher.py": "fb8cf017ade457f4680ba8aa7cda0e57dab2f1fba6ab3fcfb99bb4b1bf256a5c",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/cas/research_runtime/sage_arithmetic.py": "105fc55cc851c0b60d1132e3f0afbac8c872344d7d17c3d2610c1b24390f4dd1",
+    "elliptic-curves/cas/research_runtime/sage_subspace.py": "86fd5f87fa773bb817e3f19e3847e9188a7071b41bc3d8adb81b21c804fb6cf5",
+    "elliptic-curves/cas/research_runtime/store.py": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965",
+    "elliptic-curves/cas/research_runtime/subspace.py": "2ce4a9f7d688a2a4581d844dd3663fb7fae63904d167caecef4af6bc6cfd2534",
+    "elliptic-curves/cas/research_runtime/supervisor.py": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233",
+    "elliptic-curves/cas/research_runtime/witnesses.py": "e6ea79fabb7d16e179d5ea347a2006e19193f910a3c6d56940c73ff8dbce2619"
+  },
+  "point_budget": {
+    "height_argument": 100000,
+    "seconds_per_cover": 20,
+    "cover_cap_per_curve": 15,
+    "actual_covers_per_deformation": 1
+  },
+  "bounded_search_completeness_replayed": false,
+  "full_selmer_computed": false,
+  "full_curve_rank_upper": null,
+  "remaining_nonzero_radical_classes_point_or_sha_status": "UNKNOWN",
+  "claim_boundary": [
+    "The fourth coordinate is the dimension of the explicitly certified realized subspace, a lower bound on the actual rational Kummer intersection.",
+    "All five new deformations have maximal alternating rank on their odd-dimensional tested space. This observation is only for the frozen panel.",
+    "A nonradical class is obstructed by this restricted CT pairing; a radical class is still UNKNOWN.",
+    "Bounded search misses do not prove absence of rational points or Sha membership. No conclusion is drawn about classes outside W_u."
+  ],
+  "local_extension_supervision": {
+    "command": [
+      "/home/royvanrijn/.local/bin/sage",
+      "-python",
+      "elliptic-curves/cas/run_fixed_cubic_field_curve_family.sage",
+      "--parameter-bound",
+      "3",
+      "--output",
+      "artifacts/generated-results/elliptic-curves/fixed_cubic_field_local_kummer_u3_v1.json"
+    ],
+    "failure_reason": null,
+    "limits": {
+      "address_space_bytes": null,
+      "cgroup": null,
+      "pari_stack_bytes": 256000000,
+      "poll_seconds": 0.05,
+      "rss_bytes": 2147483648,
+      "terminate_grace_seconds": 1.0,
+      "wall_seconds": 600
+    },
+    "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-extension-local.log",
+    "log_sha256": "32ccb1a867b9dd1cfcbe317cde15b48bac9b45c05bf7e22945570a230955f086",
+    "outcome": "completed",
+    "peak_observed_rss_bytes": 261996544,
+    "returncode": 0,
+    "rss_limit_bytes": 2147483648,
+    "termination_signal": null,
+    "timeout_seconds": 600,
+    "wall_seconds": 154.45253057702212,
+    "worker_result_sha256": "5dd0df436c33f2793f71c3fc6d3d44c6342e156de05a21ed5f3f1e44f353b7fe"
+  },
+  "curve_supervision": {
+    "0": {
+      "ct": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/cas/run_fixed_field_comparison.py",
+          "--worker",
+          "--protocol",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/data/fixed_field_comparison_v1.json",
+          "--u",
+          "0",
+          "--phase",
+          "ct",
+          "--workdir",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 2147483648,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 1200
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1/u0/ct.log",
+        "log_sha256": "1d8e3ff40e9ab4b184fd836a80eacb5753c8e9980a3dc2652f39d3c72995a1ed",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 257507328,
+        "returncode": 0,
+        "rss_limit_bytes": 2147483648,
+        "termination_signal": null,
+        "timeout_seconds": 1200,
+        "wall_seconds": 16.337606517015956,
+        "worker_result_sha256": "0fbccb9195e7d20bec24e75a2e9e617f218f1e5bfda37e98633958d58b1ebb90"
+      },
+      "points": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/cas/run_fixed_field_comparison.py",
+          "--worker",
+          "--protocol",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/data/fixed_field_comparison_v1.json",
+          "--u",
+          "0",
+          "--phase",
+          "points",
+          "--workdir",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 2147483648,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 400
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1/u0/points.log",
+        "log_sha256": "8b0a3793377795498754f99a3a18b502b4866294fcdfcfb53afe0c3bfd276b76",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 251305984,
+        "returncode": 0,
+        "rss_limit_bytes": 2147483648,
+        "termination_signal": null,
+        "timeout_seconds": 400,
+        "wall_seconds": 2.3578731949673966,
+        "worker_result_sha256": "9fc9f78b38691778d1faa66a5a7e41764376bef74ad4edef7d1ed11377a0dff3"
+      }
+    },
+    "-2": {
+      "ct": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/cas/run_fixed_field_comparison.py",
+          "--worker",
+          "--protocol",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/data/fixed_field_comparison_v1.json",
+          "--u",
+          "-2",
+          "--phase",
+          "ct",
+          "--workdir",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 2147483648,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 1200
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1/um2/ct.log",
+        "log_sha256": "cb976413d3c186c66a1df42f4cb9c78fef381a9878d9179a041b01feccfbbe4d",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 265883648,
+        "returncode": 0,
+        "rss_limit_bytes": 2147483648,
+        "termination_signal": null,
+        "timeout_seconds": 1200,
+        "wall_seconds": 18.02728900196962,
+        "worker_result_sha256": "b6663e5641dd33adbf30bdff999fcac25f808cf652d31ae15574176358f0c810"
+      },
+      "points": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/cas/run_fixed_field_comparison.py",
+          "--worker",
+          "--protocol",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/data/fixed_field_comparison_v1.json",
+          "--u",
+          "-2",
+          "--phase",
+          "points",
+          "--workdir",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 2147483648,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 400
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1/um2/points.log",
+        "log_sha256": "504149471fcf835759e334ff32bc31cc1f8529817303d00ee8253137caded542",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 253054976,
+        "returncode": 0,
+        "rss_limit_bytes": 2147483648,
+        "termination_signal": null,
+        "timeout_seconds": 400,
+        "wall_seconds": 1.89960094896378,
+        "worker_result_sha256": "ac87ba5091be1b758b317d8aad7053100db84f42b1bd5fb1ec5fc382e97ca81a"
+      }
+    },
+    "1": {
+      "ct": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/cas/run_fixed_field_comparison.py",
+          "--worker",
+          "--protocol",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/data/fixed_field_comparison_v1.json",
+          "--u",
+          "1",
+          "--phase",
+          "ct",
+          "--workdir",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 2147483648,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 1200
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1/u1/ct.log",
+        "log_sha256": "6fe38649e8653e5f4ddc6d685439da5f29dc2ca6e3485533707991993f6ad3d1",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 259330048,
+        "returncode": 0,
+        "rss_limit_bytes": 2147483648,
+        "termination_signal": null,
+        "timeout_seconds": 1200,
+        "wall_seconds": 17.92854576098034,
+        "worker_result_sha256": "1616916b343fa847cadd8c1bb232d1df0b3ab0af1847591abf3a5f940c461315"
+      },
+      "points": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/cas/run_fixed_field_comparison.py",
+          "--worker",
+          "--protocol",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/data/fixed_field_comparison_v1.json",
+          "--u",
+          "1",
+          "--phase",
+          "points",
+          "--workdir",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 2147483648,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 400
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1/u1/points.log",
+        "log_sha256": "178045e9dc7f4a6202d20cf36b8f6c1fc7ae8d98f85cf6fc69848ff8159b3055",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 250503168,
+        "returncode": 0,
+        "rss_limit_bytes": 2147483648,
+        "termination_signal": null,
+        "timeout_seconds": 400,
+        "wall_seconds": 2.91448415000923,
+        "worker_result_sha256": "1dd69480166b2b42ba732f7b946bd34346dc82c01c27b4f03820606bcfd08922"
+      }
+    },
+    "2": {
+      "ct": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/cas/run_fixed_field_comparison.py",
+          "--worker",
+          "--protocol",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/data/fixed_field_comparison_v1.json",
+          "--u",
+          "2",
+          "--phase",
+          "ct",
+          "--workdir",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 2147483648,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 1200
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1/u2/ct.log",
+        "log_sha256": "23d47f469cc9f1ce18a381489a3147e307e2a5235e858a1e3b077fdd4ca78f73",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 259923968,
+        "returncode": 0,
+        "rss_limit_bytes": 2147483648,
+        "termination_signal": null,
+        "timeout_seconds": 1200,
+        "wall_seconds": 15.629627857008018,
+        "worker_result_sha256": "361081fdaeb7de30d2699724770ae0e4d3d0f7842ea9124dc228651149862244"
+      },
+      "points": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/cas/run_fixed_field_comparison.py",
+          "--worker",
+          "--protocol",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/data/fixed_field_comparison_v1.json",
+          "--u",
+          "2",
+          "--phase",
+          "points",
+          "--workdir",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 2147483648,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 400
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1/u2/points.log",
+        "log_sha256": "38ad05f9f11e5b26c110950c9e8cc7d2b3f241bee50046996b4255ce3bf12cb6",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 252932096,
+        "returncode": 0,
+        "rss_limit_bytes": 2147483648,
+        "termination_signal": null,
+        "timeout_seconds": 400,
+        "wall_seconds": 1.7404878700035624,
+        "worker_result_sha256": "989a12a9c39119d971a3c0be261e1ebf3ca6cda26af475b99ad774e50001705a"
+      }
+    },
+    "-3": {
+      "ct": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/cas/run_fixed_field_comparison.py",
+          "--worker",
+          "--protocol",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/data/fixed_field_comparison_extension_v1.json",
+          "--u",
+          "-3",
+          "--phase",
+          "ct",
+          "--workdir",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 2147483648,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 1200
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1/um3/ct.log",
+        "log_sha256": "0164a393d234f9bf69497488c79a6fc6ba32d6ada663b92a4bcb6e309d9dbcd8",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 268419072,
+        "returncode": 0,
+        "rss_limit_bytes": 2147483648,
+        "termination_signal": null,
+        "timeout_seconds": 1200,
+        "wall_seconds": 22.56050399504602,
+        "worker_result_sha256": "ff565b98aec961c9968ce32c02e942b3938fdd77f509e383d993d74ed382d3e4"
+      },
+      "points": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/cas/run_fixed_field_comparison.py",
+          "--worker",
+          "--protocol",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/data/fixed_field_comparison_extension_v1.json",
+          "--u",
+          "-3",
+          "--phase",
+          "points",
+          "--workdir",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 2147483648,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 400
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1/um3/points.log",
+        "log_sha256": "aad647601a43fd5d549ac305a58b86ff2b9c120851feafca7a14a0d811faa842",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 260452352,
+        "returncode": 0,
+        "rss_limit_bytes": 2147483648,
+        "termination_signal": null,
+        "timeout_seconds": 400,
+        "wall_seconds": 4.763570513983723,
+        "worker_result_sha256": "14a6af740078b19835f96dbf93968d7eb2138b31e45d69c489217b9e9cd35a20"
+      }
+    },
+    "3": {
+      "ct": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/cas/run_fixed_field_comparison.py",
+          "--worker",
+          "--protocol",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/data/fixed_field_comparison_extension_v1.json",
+          "--u",
+          "3",
+          "--phase",
+          "ct",
+          "--workdir",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 2147483648,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 1200
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1/u3/ct.log",
+        "log_sha256": "4258cb512f0c6061f8407211ce210b08e39a6f3b9aec3ad0197dab44d6f4ad97",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 267329536,
+        "returncode": 0,
+        "rss_limit_bytes": 2147483648,
+        "termination_signal": null,
+        "timeout_seconds": 1200,
+        "wall_seconds": 22.255167685972992,
+        "worker_result_sha256": "d96ff95deed942f74ec686074684416ae0c0003bf25638c5b9b634a6810479e3"
+      },
+      "points": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/cas/run_fixed_field_comparison.py",
+          "--worker",
+          "--protocol",
+          "/home/royvanrijn/src/jacobian-research/elliptic-curves/data/fixed_field_comparison_extension_v1.json",
+          "--u",
+          "3",
+          "--phase",
+          "points",
+          "--workdir",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 2147483648,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 400
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/fixed-field-comparison-v1/u3/points.log",
+        "log_sha256": "1d15bafc5a38863cbf7a11b98f9654d4e6b1e6c21a8c077fabc257ed0228f17a",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 260382720,
+        "returncode": 0,
+        "rss_limit_bytes": 2147483648,
+        "termination_signal": null,
+        "timeout_seconds": 400,
+        "wall_seconds": 5.885550530976616,
+        "worker_result_sha256": "a0d13573e4dd833fe12067843a26f1e6563980ee5d92be58de7de3af3e53d9d1"
+      }
+    }
+  },
+  "validation": {
+    "comparison_replay": "PASS",
+    "local_source_replays": "PASS",
+    "targeted_tests_passed": 18,
+    "global_status_audit": "Ten pre-existing checker-source hash mismatches, independently confirmed in HEAD; historical bindings were not changed. All other registry and consumer constraints pass.",
+    "status_page_generation": "scripts.render_status.render on the unchanged authority data, after isolating the pre-existing hash mismatches for structural validation."
+  }
+}

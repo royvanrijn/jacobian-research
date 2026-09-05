@@ -2,7 +2,13 @@
 
 <!-- status-consumer: EC-K3-R17-EXTREME-ANCHORED-MW18-SPECIALIZATIONS 48b1e4d97ce68fc4 -->
 
-## Stop state
+The 178-fibre independence certificate below remains canonical. The operational
+stop state is historical; the current point-search follow-up is the
+[MW18 deep-centre calibration](../elliptic-curves/notes/MW18_DEEP_CENTRE_CALIBRATION_2026-09-05.md),
+using the exact generic height Gram. The later full cover-census replay is
+recorded in the [shared-runtime ledger](../elliptic-curves/notes/SHARED_RESEARCH_RUNTIME.md).
+
+## Historical stop state (2026-09-04)
 
 The campaign is intentionally stopped.  No census, Selmer, specialization,
 or point-search process remains active.

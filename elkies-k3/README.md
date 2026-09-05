@@ -15,6 +15,8 @@ The shared [pointed-quartic search API](../elliptic-curves/notes/POINTED_QUARTIC
 now serves MW16, MW17, anchored MW18 and zero-gain rescue. Its MW16 regression
 retains all 55 calibrated control directions; sensitivity on other families
 remains a separate calibration question.
+The [MW18 centre comparison](../elliptic-curves/notes/MW18_DEEP_CENTRE_CALIBRATION_2026-09-05.md)
+tests that question with the exact generic height Gram and equal chart exposure.
 
 ## Primary lanes
 

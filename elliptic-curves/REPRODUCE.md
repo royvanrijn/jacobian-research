@@ -607,7 +607,19 @@ the [canonical note](notes/ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-
 explains the invariant lower bound on coefficient size.
 <!-- status-consumer: EC-K3-ICARM-MW16-BLIND-LADDER acfa3bdcebb18137 -->
 
-### Fixed cubic field, varying curve
+### Frozen fixed-field comparison
+
+```sh
+sage -python elliptic-curves/cas/run_fixed_field_comparison.py --check
+sage -python -m unittest elliptic-curves/tests/test_fixed_field_comparison.py elliptic-curves/tests/test_sage_subspace_runtime.py
+```
+
+The [proof note](notes/FIXED_FIELD_COMPARISON_2026-09-05.md) records the local
+source replays, frozen selection, supervised regeneration commands and bounds.
+The full matrix and exact-map replay is separate from bounded point-search
+regeneration. No remaining class is decided by a search miss.
+
+## Fixed cubic field, varying curve
 
 Replay the bounded class-group-free local-intersection experiment on the
 pinned Fermigier rank-20 anchor:
@@ -693,6 +705,30 @@ higher cover, target point, or new obstruction has been constructed. See the
 [construction note](notes/FIXED_CUBIC_U_MINUS1_CASSELS_TATE_2026-09-05.md#genuine-lift-construction-the-cubic-tangent-conic-gate)
 for bounded local replay and retained CAS inputs. All targets remain UNKNOWN.
 <!-- status-consumer: EC-FIXED-CUBIC-TANGENT-CONIC-GATE 26a49e30ff3128d3 -->
+<!-- status-consumer: EC-FIXED-CUBIC-CONIC-SOLVER-COMPARISON 6a178bc3a4ada43b -->
+<!-- status-consumer: EC-FIXED-CUBIC-CONIC-LONG-SEARCH 825fb4cd6ed84cb1 -->
+
+The focused comparison replays the selected input directly, including the
+labelled field and exact conic maps, and verifies every recorded candidate:
+
+```sh
+sage -python elliptic-curves/cas/solve_fixed_field_conic.py --verify
+sage -python -m unittest elliptic-curves/tests/test_fixed_field_conic_solver.py
+```
+
+Its 320 reconstruction cells and relative-norm timeout leave the first
+auxiliary point missing. See the same construction note for bounded discovery.
+
+The longer replay checks the dispatch limits and compact transcript chains of
+the 45-minute norm run, 131,072-cell reconstruction sweep, and partial
+prime-37 affine enumeration:
+
+```sh
+sage -python elliptic-curves/cas/solve_fixed_field_conic.py --long-verify
+```
+
+It records no conic point and no higher cover; see the construction note for
+the exact finite-search boundary.
 
 ### Comparative height lattices: ranks 28--31
 
@@ -1923,3 +1959,5 @@ must be run exactly in its former directory layout.
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-VS-SHA-COMPARISON f37417a9fda3ee3f -->
 
 <!-- status-consumer: EC-K3-ICARM-MW16-SENSITIVITY f88886c066d6cb45 -->
+
+<!-- status-consumer: EC-FIXED-FIELD-COMPARISON 02c49a8120aeb7bd -->

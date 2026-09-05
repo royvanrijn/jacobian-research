@@ -140,10 +140,14 @@ class SageSubspaceBackend:
     PointClassWitness supplies those facts without computing global units.
     Other kinds of squareclass certificates can implement the same two methods.
     """
-    def __init__(self, arithmetic, context, global_witness, *, local_candidate_cap=40000):
+    def __init__(self, arithmetic, context, global_witness, *, local_candidate_cap=40000,
+                 cover_policy="raw"):
         context.require_prepared()
         self.arithmetic, self.context, self.global_witness = arithmetic, context, global_witness
         self.cap = local_candidate_cap
+        if cover_policy not in ("raw", "minimize-reduce"):
+            raise ValueError("unknown subspace cover policy")
+        self.cover_policy = cover_policy
         if type(self.cap) is not int or self.cap <= 0:
             raise ValueError("positive local witness cap required")
         self.R = PolynomialRing(QQ, "x")
@@ -290,6 +294,37 @@ class SageSubspaceBackend:
             scale = (QQ(self.I/ii).nth_root(4) if self.I else QQ(self.J/jj).nth_root(6))
             quartic = raw*scale**2
             require(invariants(quartic) == (self.I, self.J), "cover normalization mismatch")
+            d_scale = 1/scale
+            if self.cover_policy == "minimize-reduce":
+                # Keep the map and invariant normalization independent of the
+                # choice of integral/reduced search coordinates.
+                original = quartic
+                change = matrix.identity(QQ, 2)
+                quartic *= quartic.denominator()**2
+                for name in ("hyperellred", "hyperellminimalmodel", "hyperellred"):
+                    # Completing the square after a long model can introduce
+                    # quarters; PARI hyperellred expects integral coefficients.
+                    quartic *= quartic.denominator()**2
+                    function = pari(f"(q)->{{my(m);my(z={name}(q,&m));[z,m]}}")
+                    z, m = function(quartic)
+                    quartic = self.R(z[0])+self.R(z[1])**2/4
+                    change *= matrix(QQ, m[1])
+                if quartic.degree() < 4:
+                    k = next(k for k in range(5) if quartic(k))
+                    extra = matrix(QQ, [[k, 1], [1, 0]])
+                    s, t = extra*vector([x, 1])
+                    quartic = self.R(sum(quartic[i]*s**i*t**(4-i) for i in range(5)))
+                    change *= extra
+                ii, jj = invariants(quartic)
+                scaling = (QQ(self.I/ii).nth_root(4) if self.I else QQ(self.J/jj).nth_root(6))
+                quartic *= scaling**2
+                require(invariants(quartic) == (self.I, self.J), "reduced invariant mismatch")
+                s, t = change*vector([x, 1])
+                pull = self.R(sum(original[i]*s**i*t**(4-i) for i in range(5)))
+                ratio = QQ(pull[4]/quartic[4])
+                require(ratio.is_square() and pull == ratio*quartic, "invalid reduced cover transport")
+                d_scale *= ratio.sqrt()
+                transform *= change
             phi = -3*self.alpha-self.a2
             cubic_invariant = (4*quartic[4]*phi+3*quartic[3]**2-8*quartic[4]*quartic[2])/3
             class_root = self.arithmetic.square_root(context.two_torsion,
@@ -298,11 +333,12 @@ class SageSubspaceBackend:
             return {"mask": mask, "beta": self.coordinates(beta),
                     "parametrization": [[str(c) for c in row] for row in parametrization.rows()],
                     "parameter_transform": [[str(c) for c in row] for row in transform.rows()],
-                    "d_over_quartic_y": str(1/scale),
+                    "d_over_quartic_y": str(d_scale),
                     "cubic_invariant_over_beta_square_root": list(class_root),
                     "quartic": [str(quartic[i]) for i in range(5)]}
         return self.arithmetic.store.discover("subspace/explicit-cover",
-            {"context": context.key, "classes": classes.key, "mask": mask}, discover, version="quadrics-2")
+            {"context": context.key, "classes": classes.key, "mask": mask}, discover,
+            version="quadrics-2" if self.cover_policy == "raw" else "quadrics-3-minimize-reduce")
 
     def verify_cover(self, context, classes, mask, record):
         beta = self.beta(classes, mask)

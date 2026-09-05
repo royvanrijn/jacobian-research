@@ -1,0 +1,50 @@
+{
+  "first_stage_verified_evidence": {
+    "artifacts/generated-results/elliptic-curves/fixed_field_comparison_u0_v1.json.gz": {
+      "profile": [
+        20,
+        0,
+        20,
+        20
+      ],
+      "sha256": "0f336d54e9d3027723fc6662a0e0cd9b925d55553d919e54108723171dab9e0e"
+    },
+    "artifacts/generated-results/elliptic-curves/fixed_field_comparison_u1_v1.json.gz": {
+      "profile": [
+        13,
+        12,
+        1,
+        0
+      ],
+      "sha256": "c47bd41a613ecdbb94914ecb4d337dfb5951c18fd07e3e394abfd33b978f1032"
+    },
+    "artifacts/generated-results/elliptic-curves/fixed_field_comparison_u2_v1.json.gz": {
+      "profile": [
+        13,
+        12,
+        1,
+        0
+      ],
+      "sha256": "39926064fee6c70742111ea5d4a07ee0ecc70ffada69d4deafd19093a98182ce"
+    },
+    "artifacts/generated-results/elliptic-curves/fixed_field_comparison_um2_v1.json.gz": {
+      "profile": [
+        13,
+        12,
+        1,
+        0
+      ],
+      "sha256": "287c97dc792ad405f334eb485bc2bd468535c25ef192c5aba2fa81969f61171f"
+    }
+  },
+  "local_discovery_rss_bytes": 2147483648,
+  "local_discovery_wall_seconds": 600,
+  "parameter_set_is_final_for_this_experiment": true,
+  "parameters": [
+    "-3",
+    "3"
+  ],
+  "same_pairing_and_point_limits_as": "elliptic-curves/data/fixed_field_comparison_v1.json",
+  "schema": "elliptic-curves.fixed-field-comparison-extension-freeze.v1",
+  "selection_rule": "The next two integers beyond the completed absolute-u<=2 pilot; no rank, point or score input."
+}

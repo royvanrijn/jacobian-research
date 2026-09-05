@@ -1,0 +1,307 @@
+{
+  "claim_boundary": [
+    "Reparameterization changes the sampled fibres; it does not change an existing fibre height.",
+    "No bounded null, uncompleted chart, or finite-reduction ambiguity proves absence or a rank upper bound.",
+    "Overlapping policy arms share outcomes and are not independent observations.",
+    "All-zero arms do not establish equivalence or rule out a useful selection advantage.",
+    "MW18 uses a fixed singleton-centre pilot; MW16 retrospective sensitivity does not transfer to MW18."
+  ],
+  "execution_manifest": "artifacts/generated-results/elliptic-curves/fibre_height_execution_v1.json",
+  "execution_manifest_sha256": "12b0df6ad272bd03e7f8f06ce22d7d5d53fc3710ff398a0f11ff299e73d3c20a",
+  "families": {
+    "mw16": {
+      "arms": {
+        "height_cost": {
+          "candidate_count": 8,
+          "candidate_ids": [
+            "mw16-improved--6d5",
+            "mw16-improved--5d6",
+            "mw16-improved-3d4",
+            "mw16-improved--3d2",
+            "mw16-improved--5d2",
+            "mw16-improved--6d1",
+            "mw16-improved--4d1",
+            "mw16-improved--3d5"
+          ],
+          "certified_new_directions": 0,
+          "charts": 96,
+          "complete_candidates": 8,
+          "complete_charts": 96,
+          "directions_per_worker_hour": 0.0,
+          "finite_points": 0,
+          "metrics": {
+            "j_log2_height": {
+              "maximum": 1730.5370293451774,
+              "median": 1695.7653139031422,
+              "minimum": 1644.5293351335552
+            },
+            "minimal_maximum_coefficient_bits": {
+              "maximum": 956,
+              "median": 936.0,
+              "minimum": 927
+            },
+            "normalized_weierstrass_log2_size": {
+              "maximum": 159.52801875193236,
+              "median": 156.2761058829345,
+              "minimum": 154.7731312497689
+            },
+            "sample_cost_seconds": {
+              "maximum": 0.22004732897039503,
+              "median": 0.21014284747070633,
+              "minimum": 0.18306301604025066
+            }
+          },
+          "unresolved_points": 0,
+          "worker_seconds": 524.04474
+        },
+        "nagao": {
+          "candidate_count": 8,
+          "candidate_ids": [
+            "mw16-improved-3d1",
+            "mw16-improved-0d1",
+            "mw16-improved--6d1",
+            "mw16-identity--2d3",
+            "mw16-identity-1d6",
+            "mw16-improved--3d4",
+            "mw16-improved-2d1",
+            "mw16-identity-1d1"
+          ],
+          "certified_new_directions": 0,
+          "charts": 96,
+          "complete_candidates": 8,
+          "complete_charts": 96,
+          "directions_per_worker_hour": 0.0,
+          "finite_points": 0,
+          "metrics": {
+            "j_log2_height": {
+              "maximum": 10397.435499938776,
+              "median": 1729.604742587352,
+              "minimum": 1644.133044590604
+            },
+            "minimal_maximum_coefficient_bits": {
+              "maximum": 5189,
+              "median": 957.0,
+              "minimum": 924
+            },
+            "normalized_weierstrass_log2_size": {
+              "maximum": 865.056717703051,
+              "median": 159.7355375015718,
+              "minimum": 154.24261653307013
+            },
+            "sample_cost_seconds": {
+              "maximum": 0.2320744179887697,
+              "median": 0.2233720660151448,
+              "minimum": 0.1879319059662521
+            }
+          },
+          "unresolved_points": 0,
+          "worker_seconds": 570.44739
+        }
+      },
+      "conclusion": "NO_CERTIFIED_GAIN; SELECTION_ADVANTAGE_INCONCLUSIVE",
+      "coordinate_populations": {
+        "identity": {
+          "count": 44,
+          "j_log2_height": {
+            "maximum": 10397.435499938776,
+            "median": 10327.259537060116,
+            "minimum": 10160.416781022932
+          },
+          "minimal_maximum_coefficient_bits": {
+            "maximum": 5189,
+            "median": 5158.0,
+            "minimum": 5078
+          },
+          "normalized_weierstrass_log2_size": {
+            "maximum": 865.056717703051,
+            "median": 859.8867927016087,
+            "minimum": 846.4583016662764
+          },
+          "sample_cost_seconds": {
+            "maximum": 0.27227276301709935,
+            "median": 0.22115623546415009,
+            "minimum": 0.18731783999828622
+          }
+        },
+        "improved": {
+          "count": 47,
+          "j_log2_height": {
+            "maximum": 1787.5956793711389,
+            "median": 1731.8694050938423,
+            "minimum": 1644.133044590604
+          },
+          "minimal_maximum_coefficient_bits": {
+            "maximum": 984,
+            "median": 956,
+            "minimum": 914
+          },
+          "normalized_weierstrass_log2_size": {
+            "maximum": 164.1718749417071,
+            "median": 159.52801875193236,
+            "minimum": 152.60915551465777
+          },
+          "sample_cost_seconds": {
+            "maximum": 0.26429625297896564,
+            "median": 0.22218227107077837,
+            "minimum": 0.18306301604025066
+          }
+        }
+      },
+      "duplicate_count": 0,
+      "eligible_classes": 91,
+      "excluded_count": 3,
+      "failure_count": 2,
+      "overlap": [
+        "mw16-improved--6d1"
+      ]
+    },
+    "mw18": {
+      "arms": {
+        "height_cost": {
+          "candidate_count": 8,
+          "candidate_ids": [
+            "mw18-improved-3d1",
+            "mw18-improved--4d1",
+            "mw18-improved-1d2",
+            "mw18-improved--2d1",
+            "mw18-improved--1d1",
+            "mw18-improved--3d1",
+            "mw18-improved--1d3",
+            "mw18-improved-1d5"
+          ],
+          "certified_new_directions": 0,
+          "charts": 144,
+          "complete_candidates": 8,
+          "complete_charts": 144,
+          "directions_per_worker_hour": 0.0,
+          "finite_points": 0,
+          "metrics": {
+            "j_log2_height": {
+              "maximum": 5657.499605161065,
+              "median": 5587.8065472902435,
+              "minimum": 5433.594099238572
+            },
+            "minimal_maximum_coefficient_bits": {
+              "maximum": 2824,
+              "median": 2793.0,
+              "minimum": 2716
+            },
+            "normalized_weierstrass_log2_size": {
+              "maximum": 470.854541055269,
+              "median": 465.6641316317616,
+              "minimum": 452.8439103429966
+            },
+            "sample_cost_seconds": {
+              "maximum": 0.208177536027506,
+              "median": 0.18661372602218762,
+              "minimum": 0.18417631002375856
+            }
+          },
+          "unresolved_points": 0,
+          "worker_seconds": 801.30309
+        },
+        "nagao": {
+          "candidate_count": 8,
+          "candidate_ids": [
+            "mw18-improved-1d4",
+            "mw18-improved-2d3",
+            "mw18-improved--6d5",
+            "mw18-identity--4d3",
+            "mw18-improved--5d4",
+            "mw18-identity-6d5",
+            "mw18-improved-2d1",
+            "mw18-identity-5d2"
+          ],
+          "certified_new_directions": 0,
+          "charts": 144,
+          "complete_candidates": 8,
+          "complete_charts": 144,
+          "directions_per_worker_hour": 0.0,
+          "finite_points": 0,
+          "metrics": {
+            "j_log2_height": {
+              "maximum": 11297.993161732105,
+              "median": 5738.794317269425,
+              "minimum": 5447.6372964364255
+            },
+            "minimal_maximum_coefficient_bits": {
+              "maximum": 5645,
+              "median": 2860.0,
+              "minimum": 2718
+            },
+            "normalized_weierstrass_log2_size": {
+              "maximum": 940.8956707695224,
+              "median": 476.8366191472718,
+              "minimum": 453.2339351198223
+            },
+            "sample_cost_seconds": {
+              "maximum": 0.23275952402036637,
+              "median": 0.2226094354991801,
+              "minimum": 0.18713335500797257
+            }
+          },
+          "unresolved_points": 0,
+          "worker_seconds": 820.94213
+        }
+      },
+      "conclusion": "NO_CERTIFIED_GAIN; SELECTION_ADVANTAGE_INCONCLUSIVE",
+      "coordinate_populations": {
+        "identity": {
+          "count": 46,
+          "j_log2_height": {
+            "maximum": 11317.707353568896,
+            "median": 11287.724754459003,
+            "minimum": 11237.255561869122
+          },
+          "minimal_maximum_coefficient_bits": {
+            "maximum": 5654,
+            "median": 5640.5,
+            "minimum": 5623
+          },
+          "normalized_weierstrass_log2_size": {
+            "maximum": 942.538520089255,
+            "median": 940.2324295330307,
+            "minimum": 937.3048648766143
+          },
+          "sample_cost_seconds": {
+            "maximum": 0.22961456200573593,
+            "median": 0.20918757151230238,
+            "minimum": 0.1845526400138624
+          }
+        },
+        "improved": {
+          "count": 47,
+          "j_log2_height": {
+            "maximum": 5806.110002962666,
+            "median": 5675.147679403746,
+            "minimum": 5388.625861483689
+          },
+          "minimal_maximum_coefficient_bits": {
+            "maximum": 2894,
+            "median": 2837,
+            "minimum": 2690
+          },
+          "normalized_weierstrass_log2_size": {
+            "maximum": 482.4462596217086,
+            "median": 472.994571507048,
+            "minimum": 448.448395748821
+          },
+          "sample_cost_seconds": {
+            "maximum": 0.23275952402036637,
+            "median": 0.21833691198844463,
+            "minimum": 0.18417631002375856
+          }
+        }
+      },
+      "duplicate_count": 0,
+      "eligible_classes": 93,
+      "excluded_count": 1,
+      "failure_count": 2,
+      "overlap": []
+    }
+  },
+  "population_sha256": "f8ca3179cad0fad213965c984a09a336fade5ec52a76c96b8c33195fc343c512",
+  "results_sha256": "3273b012bb8c7afc2b93dc15f265564235b3cf21d1c82e03e4e7f315f071f2a5",
+  "schema": "elliptic-curves.fibre-height-comparison.v1",
+  "status": "COMPLETE"
+}
