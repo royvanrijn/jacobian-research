@@ -1,0 +1,18 @@
+{
+  "schema": "rank-jump.linear-twist-block-protocol.v1",
+  "question": "Does a common explicit linear-twist construction transport several soluble classes at once, with an exact independence bound?",
+  "layers": ["incidence", "solubility"],
+  "inputs": ["rank_jump_local_collision_inputs_v1.json"],
+  "selection": "All twenty already pinned independent anchor points, at the seven already studied u values -3 through 3.",
+  "limits": {"rational_square_tests": 140, "new_parameter_searches": 0, "new_point_searches": 0},
+  "checks": [
+    "Verify the universal point identity on the twist by 1-au.",
+    "Verify the birational quartic and common genus-two correspondence.",
+    "Verify the uniform affine Kummer shift D(u)*(1-u*theta).",
+    "Replay the fixed rational square tests and every resulting explicit point.",
+    "Prove the k-1 independence bound and separate the engineered splitting at u=0 from predictions of other high-gain fibres.",
+    "Use the seven already certified local spaces and CT matrices to bound simultaneous transport of independent inherited anchor classes, independently of point representatives."
+  ],
+  "oracle_boundary": "The twenty public exceptional anchor points are retrospective inputs only. They must not enter Agent 1's prospective selector.",
+  "failure_semantics": "A nonsquare is a miss for this transporter, not a rank bound or insolubility certificate for the fibre."
+}

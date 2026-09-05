@@ -1,0 +1,1487 @@
+{
+  "anchor_A": "-5750886029903523759416717668139307",
+  "anchor_B": "167347710468055045100164888198438918505621536951206",
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_local_collision_inputs_v1.json": "440372c18d42243ce447cad470c7bfd6ba5d5c757740e3ce413af6b0d8194f71",
+    "elliptic-curves/rank-jump/LINEAR_TWIST_BLOCK_PROTOCOL.json": "aa698f6d418f77fdac236ed016cfde85781baec0de572df251a10dee50e30555",
+    "elliptic-curves/rank-jump/cover_experiment.py": "ebb07b12f71ba1f24675673a2309133011a5f33786c5d26d4d6ecb94f964ed1f",
+    "elliptic-curves/rank-jump/cubic_bridge.py": "6999dde8fb028b759e76d9ad1a15b8b52d855717b42b4a777368e4e0c8bff0a8",
+    "elliptic-curves/rank-jump/linear_twist_blocks.py": "c5717faf94236ced19fd25e55b09d9cdbc0eb72b46c3b7c7a30e462ae5c199c7",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "boundary": "The retained anchor points are oracle inputs; this is not an Agent 1 selector, a new curve search, or a whole-curve upper rank.",
+  "retrospective_specializations": [
+    {
+      "D": "-4518388182637486269462426250489564634402240510936324",
+      "bound_scope": "Only the displayed transporter; a zero lower bound is not a rank-zero assertion.",
+      "cap_scope": "Necessary bound on the number of independent inherited anchor Kummer classes simultaneously transported, valid for every choice of representatives. Not an upper rank of E_u or of an unsaturated point subgroup.",
+      "common_kummer_shift": [
+        "-4518388182637486269462426250489564634402240510936324",
+        "-13555164547912458808387278751468693903206721532808972",
+        "0"
+      ],
+      "independent_anchor_class_transport_cap": 2,
+      "inherited_CT_radical_dimension": 1,
+      "inherited_CT_rank": 16,
+      "inherited_local_dimension": 17,
+      "rank_lower_bound_from_transport": 0,
+      "soluble_transports": 0,
+      "tests": [
+        {
+          "basis_index": 0,
+          "one_minus_a_u": "116815817985796162",
+          "rational_square": false
+        },
+        {
+          "basis_index": 1,
+          "one_minus_a_u": "122185195242949162",
+          "rational_square": false
+        },
+        {
+          "basis_index": 2,
+          "one_minus_a_u": "121939335946756162",
+          "rational_square": false
+        },
+        {
+          "basis_index": 3,
+          "one_minus_a_u": "-5344902998506039118/121",
+          "rational_square": false
+        },
+        {
+          "basis_index": 4,
+          "one_minus_a_u": "123161403985696162",
+          "rational_square": false
+        },
+        {
+          "basis_index": 5,
+          "one_minus_a_u": "139134262985416162",
+          "rational_square": false
+        },
+        {
+          "basis_index": 6,
+          "one_minus_a_u": "92033291380829122",
+          "rational_square": false
+        },
+        {
+          "basis_index": 7,
+          "one_minus_a_u": "250837263059284162",
+          "rational_square": false
+        },
+        {
+          "basis_index": 8,
+          "one_minus_a_u": "-258038393271883838",
+          "rational_square": false
+        },
+        {
+          "basis_index": 9,
+          "one_minus_a_u": "-262461288053339198",
+          "rational_square": false
+        },
+        {
+          "basis_index": 10,
+          "one_minus_a_u": "145114050548242162",
+          "rational_square": false
+        },
+        {
+          "basis_index": 11,
+          "one_minus_a_u": "86523165864265762",
+          "rational_square": false
+        },
+        {
+          "basis_index": 12,
+          "one_minus_a_u": "85288866284807362",
+          "rational_square": false
+        },
+        {
+          "basis_index": 13,
+          "one_minus_a_u": "445489516497556162",
+          "rational_square": false
+        },
+        {
+          "basis_index": 14,
+          "one_minus_a_u": "137268401400778762",
+          "rational_square": false
+        },
+        {
+          "basis_index": 15,
+          "one_minus_a_u": "160895730312757162",
+          "rational_square": false
+        },
+        {
+          "basis_index": 16,
+          "one_minus_a_u": "-2400693015646514/3",
+          "rational_square": false
+        },
+        {
+          "basis_index": 17,
+          "one_minus_a_u": "114923928372800122",
+          "rational_square": false
+        },
+        {
+          "basis_index": 18,
+          "one_minus_a_u": "138192693875071642",
+          "rational_square": false
+        },
+        {
+          "basis_index": 19,
+          "one_minus_a_u": "27439699361301749698/529",
+          "rational_square": false
+        }
+      ],
+      "u": -3
+    },
+    {
+      "D": "-1338781683744440383804863225201606385711842968166875",
+      "bound_scope": "Only the displayed transporter; a zero lower bound is not a rank-zero assertion.",
+      "cap_scope": "Necessary bound on the number of independent inherited anchor Kummer classes simultaneously transported, valid for every choice of representatives. Not an upper rank of E_u or of an unsaturated point subgroup.",
+      "common_kummer_shift": [
+        "-1338781683744440383804863225201606385711842968166875",
+        "-2677563367488880767609726450403212771423685936333750",
+        "0"
+      ],
+      "independent_anchor_class_transport_cap": 2,
+      "inherited_CT_radical_dimension": 1,
+      "inherited_CT_rank": 12,
+      "inherited_local_dimension": 13,
+      "rank_lower_bound_from_transport": 0,
+      "soluble_transports": 0,
+      "tests": [
+        {
+          "basis_index": 0,
+          "one_minus_a_u": "77877211990530775",
+          "rational_square": false
+        },
+        {
+          "basis_index": 1,
+          "one_minus_a_u": "81456796828632775",
+          "rational_square": false
+        },
+        {
+          "basis_index": 2,
+          "one_minus_a_u": "81292890631170775",
+          "rational_square": false
+        },
+        {
+          "basis_index": 3,
+          "one_minus_a_u": "-3563268665670692705/121",
+          "rational_square": false
+        },
+        {
+          "basis_index": 4,
+          "one_minus_a_u": "82107602657130775",
+          "rational_square": false
+        },
+        {
+          "basis_index": 5,
+          "one_minus_a_u": "92756175323610775",
+          "rational_square": false
+        },
+        {
+          "basis_index": 6,
+          "one_minus_a_u": "61355527587219415",
+          "rational_square": false
+        },
+        {
+          "basis_index": 7,
+          "one_minus_a_u": "167224842039522775",
+          "rational_square": false
+        },
+        {
+          "basis_index": 8,
+          "one_minus_a_u": "-172025595514589225",
+          "rational_square": false
+        },
+        {
+          "basis_index": 9,
+          "one_minus_a_u": "-174974192035559465",
+          "rational_square": false
+        },
+        {
+          "basis_index": 10,
+          "one_minus_a_u": "96742700365494775",
+          "rational_square": false
+        },
+        {
+          "basis_index": 11,
+          "one_minus_a_u": "57682110576177175",
+          "rational_square": false
+        },
+        {
+          "basis_index": 12,
+          "one_minus_a_u": "56859244189871575",
+          "rational_square": false
+        },
+        {
+          "basis_index": 13,
+          "one_minus_a_u": "296993010998370775",
+          "rational_square": false
+        },
+        {
+          "basis_index": 14,
+          "one_minus_a_u": "91512267600519175",
+          "rational_square": false
+        },
+        {
+          "basis_index": 15,
+          "one_minus_a_u": "107263820208504775",
+          "rational_square": false
+        },
+        {
+          "basis_index": 16,
+          "one_minus_a_u": "-4801386031293025/9",
+          "rational_square": false
+        },
+        {
+          "basis_index": 17,
+          "one_minus_a_u": "76615952248533415",
+          "rational_square": false
+        },
+        {
+          "basis_index": 18,
+          "one_minus_a_u": "92128462583381095",
+          "rational_square": false
+        },
+        {
+          "basis_index": 19,
+          "one_minus_a_u": "18293132907534499975/529",
+          "rational_square": false
+        }
+      ],
+      "u": -2
+    },
+    {
+      "D": "-167347710468055050851050918101962677922339205090512",
+      "bound_scope": "Only the displayed transporter; a zero lower bound is not a rank-zero assertion.",
+      "cap_scope": "Necessary bound on the number of independent inherited anchor Kummer classes simultaneously transported, valid for every choice of representatives. Not an upper rank of E_u or of an unsaturated point subgroup.",
+      "common_kummer_shift": [
+        "-167347710468055050851050918101962677922339205090512",
+        "-167347710468055050851050918101962677922339205090512",
+        "0"
+      ],
+      "independent_anchor_class_transport_cap": 3,
+      "inherited_CT_radical_dimension": 2,
+      "inherited_CT_rank": 16,
+      "inherited_local_dimension": 18,
+      "rank_lower_bound_from_transport": 0,
+      "soluble_transports": 0,
+      "tests": [
+        {
+          "basis_index": 0,
+          "one_minus_a_u": "38938605995265388",
+          "rational_square": false
+        },
+        {
+          "basis_index": 1,
+          "one_minus_a_u": "40728398414316388",
+          "rational_square": false
+        },
+        {
+          "basis_index": 2,
+          "one_minus_a_u": "40646445315585388",
+          "rational_square": false
+        },
+        {
+          "basis_index": 3,
+          "one_minus_a_u": "-1781634332835346292/121",
+          "rational_square": false
+        },
+        {
+          "basis_index": 4,
+          "one_minus_a_u": "41053801328565388",
+          "rational_square": false
+        },
+        {
+          "basis_index": 5,
+          "one_minus_a_u": "46378087661805388",
+          "rational_square": false
+        },
+        {
+          "basis_index": 6,
+          "one_minus_a_u": "30677763793609708",
+          "rational_square": false
+        },
+        {
+          "basis_index": 7,
+          "one_minus_a_u": "83612421019761388",
+          "rational_square": false
+        },
+        {
+          "basis_index": 8,
+          "one_minus_a_u": "-86012797757294612",
+          "rational_square": false
+        },
+        {
+          "basis_index": 9,
+          "one_minus_a_u": "-87487096017779732",
+          "rational_square": false
+        },
+        {
+          "basis_index": 10,
+          "one_minus_a_u": "48371350182747388",
+          "rational_square": false
+        },
+        {
+          "basis_index": 11,
+          "one_minus_a_u": "28841055288088588",
+          "rational_square": false
+        },
+        {
+          "basis_index": 12,
+          "one_minus_a_u": "28429622094935788",
+          "rational_square": false
+        },
+        {
+          "basis_index": 13,
+          "one_minus_a_u": "148496505499185388",
+          "rational_square": false
+        },
+        {
+          "basis_index": 14,
+          "one_minus_a_u": "45756133800259588",
+          "rational_square": false
+        },
+        {
+          "basis_index": 15,
+          "one_minus_a_u": "53631910104252388",
+          "rational_square": false
+        },
+        {
+          "basis_index": 16,
+          "one_minus_a_u": "-2400693015646508/9",
+          "rational_square": false
+        },
+        {
+          "basis_index": 17,
+          "one_minus_a_u": "38307976124266708",
+          "rational_square": false
+        },
+        {
+          "basis_index": 18,
+          "one_minus_a_u": "46064231291690548",
+          "rational_square": false
+        },
+        {
+          "basis_index": 19,
+          "one_minus_a_u": "9146566453767250252/529",
+          "rational_square": false
+        }
+      ],
+      "u": -1
+    },
+    {
+      "D": "1",
+      "bound_scope": "Only the displayed transporter; a zero lower bound is not a rank-zero assertion.",
+      "cap_scope": "Necessary bound on the number of independent inherited anchor Kummer classes simultaneously transported, valid for every choice of representatives. Not an upper rank of E_u or of an unsaturated point subgroup.",
+      "common_kummer_shift": [
+        "1",
+        "0",
+        "0"
+      ],
+      "independent_anchor_class_transport_cap": 20,
+      "inherited_CT_radical_dimension": 20,
+      "inherited_CT_rank": 0,
+      "inherited_local_dimension": 20,
+      "rank_lower_bound_from_transport": 20,
+      "soluble_transports": 20,
+      "tests": [
+        {
+          "basis_index": 0,
+          "kummer_square_correction": [
+            "1",
+            "0",
+            "0"
+          ],
+          "one_minus_a_u": "1",
+          "rational_square": true,
+          "square_root": "1",
+          "transported_point": [
+            "38938605995265387",
+            "1567011534782236870320000"
+          ]
+        },
+        {
+          "basis_index": 1,
+          "kummer_square_correction": [
+            "1",
+            "0",
+            "0"
+          ],
+          "one_minus_a_u": "1",
+          "rational_square": true,
+          "square_root": "1",
+          "transported_point": [
+            "40728398414316387",
+            "826861274756882115849000"
+          ]
+        },
+        {
+          "basis_index": 2,
+          "kummer_square_correction": [
+            "1",
+            "0",
+            "0"
+          ],
+          "one_minus_a_u": "1",
+          "rational_square": true,
+          "square_root": "1",
+          "transported_point": [
+            "40646445315585387",
+            "864864487526694676560000"
+          ]
+        },
+        {
+          "basis_index": 3,
+          "kummer_square_correction": [
+            "1",
+            "0",
+            "0"
+          ],
+          "one_minus_a_u": "1",
+          "rational_square": true,
+          "square_root": "1",
+          "transported_point": [
+            "-1781634332835346413/121",
+            "20995778407111766599909800960/1331"
+          ]
+        },
+        {
+          "basis_index": 4,
+          "kummer_square_correction": [
+            "1",
+            "0",
+            "0"
+          ],
+          "one_minus_a_u": "1",
+          "rational_square": true,
+          "square_root": "1",
+          "transported_point": [
+            "41053801328565387",
+            "-666823981695924796380000"
+          ]
+        },
+        {
+          "basis_index": 5,
+          "kummer_square_correction": [
+            "1",
+            "0",
+            "0"
+          ],
+          "one_minus_a_u": "1",
+          "rational_square": true,
+          "square_root": "1",
+          "transported_point": [
+            "46378087661805387",
+            "623294235218399861340000"
+          ]
+        },
+        {
+          "basis_index": 6,
+          "kummer_square_correction": [
+            "1",
+            "0",
+            "0"
+          ],
+          "one_minus_a_u": "1",
+          "rational_square": true,
+          "square_root": "1",
+          "transported_point": [
+            "30677763793609707",
+            "-4449157623637218111674880"
+          ]
+        },
+        {
+          "basis_index": 7,
+          "kummer_square_correction": [
+            "1",
+            "0",
+            "0"
+          ],
+          "one_minus_a_u": "1",
+          "rational_square": true,
+          "square_root": "1",
+          "transported_point": [
+            "83612421019761387",
+            "16463284338967327473696000"
+          ]
+        },
+        {
+          "basis_index": 8,
+          "kummer_square_correction": [
+            "1",
+            "0",
+            "0"
+          ],
+          "one_minus_a_u": "1",
+          "rational_square": true,
+          "square_root": "1",
+          "transported_point": [
+            "-86012797757294613",
+            "5065324134400499941440000"
+          ]
+        },
+        {
+          "basis_index": 9,
+          "kummer_square_correction": [
+            "1",
+            "0",
+            "0"
+          ],
+          "one_minus_a_u": "1",
+          "rational_square": true,
+          "square_root": "1",
+          "transported_point": [
+            "-87487096017779733",
+            "922224694802954684843520"
+          ]
+        },
+        {
+          "basis_index": 10,
+          "kummer_square_correction": [
+            "1",
+            "0",
+            "0"
+          ],
+          "one_minus_a_u": "1",
+          "rational_square": true,
+          "square_root": "1",
+          "transported_point": [
+            "48371350182747387",
+            "-1532406560023296217638000"
+          ]
+        },
+        {
+          "basis_index": 11,
+          "kummer_square_correction": [
+            "1",
+            "0",
+            "0"
+          ],
+          "one_minus_a_u": "1",
+          "rational_square": true,
+          "square_root": "1",
+          "transported_point": [
+            "28841055288088587",
+            "-5047401798761139174520800"
+          ]
+        },
+        {
+          "basis_index": 12,
+          "kummer_square_correction": [
+            "1",
+            "0",
+            "0"
+          ],
+          "one_minus_a_u": "1",
+          "rational_square": true,
+          "square_root": "1",
+          "transported_point": [
+            "28429622094935787",
+            "5179792341767753905977600"
+          ]
+        },
+        {
+          "basis_index": 13,
+          "kummer_square_correction": [
+            "1",
+            "0",
+            "0"
+          ],
+          "one_minus_a_u": "1",
+          "rational_square": true,
+          "square_root": "1",
+          "transported_point": [
+            "148496505499185387",
+            "-50871300132065894076960000"
+          ]
+        },
+        {
+          "basis_index": 14,
+          "kummer_square_correction": [
+            "1",
+            "0",
+            "0"
+          ],
+          "one_minus_a_u": "1",
+          "rational_square": true,
+          "square_root": "1",
+          "transported_point": [
+            "45756133800259587",
+            "74361513702809325169800"
+          ]
+        },
+        {
+          "basis_index": 15,
+          "kummer_square_correction": [
+            "1",
+            "0",
+            "0"
+          ],
+          "one_minus_a_u": "1",
+          "rational_square": true,
+          "square_root": "1",
+          "transported_point": [
+            "53631910104252387",
+            "-3630779120197775017017000"
+          ]
+        },
+        {
+          "basis_index": 16,
+          "kummer_square_correction": [
+            "1",
+            "0",
+            "0"
+          ],
+          "one_minus_a_u": "1",
+          "rational_square": true,
+          "square_root": "1",
+          "transported_point": [
+            "-2400693015646517/9",
+            "350877132570962237445485000/27"
+          ]
+        },
+        {
+          "basis_index": 17,
+          "kummer_square_correction": [
+            "1",
+            "0",
+            "0"
+          ],
+          "one_minus_a_u": "1",
+          "rational_square": true,
+          "square_root": "1",
+          "transported_point": [
+            "38307976124266707",
+            "-1805519410637408543117880"
+          ]
+        },
+        {
+          "basis_index": 18,
+          "kummer_square_correction": [
+            "1",
+            "0",
+            "0"
+          ],
+          "one_minus_a_u": "1",
+          "rational_square": true,
+          "square_root": "1",
+          "transported_point": [
+            "46064231291690547",
+            "-426469342384612620417240"
+          ]
+        },
+        {
+          "basis_index": 19,
+          "kummer_square_correction": [
+            "1",
+            "0",
+            "0"
+          ],
+          "one_minus_a_u": "1",
+          "rational_square": true,
+          "square_root": "1",
+          "transported_point": [
+            "9146566453767249723/529",
+            "104013404348602679589842820000/12167"
+          ]
+        }
+      ],
+      "u": 0
+    },
+    {
+      "D": "167347710468055039349278858294915159088903868811900",
+      "bound_scope": "Only the displayed transporter; a zero lower bound is not a rank-zero assertion.",
+      "cap_scope": "Necessary bound on the number of independent inherited anchor Kummer classes simultaneously transported, valid for every choice of representatives. Not an upper rank of E_u or of an unsaturated point subgroup.",
+      "common_kummer_shift": [
+        "167347710468055039349278858294915159088903868811900",
+        "-167347710468055039349278858294915159088903868811900",
+        "0"
+      ],
+      "independent_anchor_class_transport_cap": 2,
+      "inherited_CT_radical_dimension": 1,
+      "inherited_CT_rank": 12,
+      "inherited_local_dimension": 13,
+      "rank_lower_bound_from_transport": 0,
+      "soluble_transports": 0,
+      "tests": [
+        {
+          "basis_index": 0,
+          "one_minus_a_u": "-38938605995265386",
+          "rational_square": false
+        },
+        {
+          "basis_index": 1,
+          "one_minus_a_u": "-40728398414316386",
+          "rational_square": false
+        },
+        {
+          "basis_index": 2,
+          "one_minus_a_u": "-40646445315585386",
+          "rational_square": false
+        },
+        {
+          "basis_index": 3,
+          "one_minus_a_u": "1781634332835346534/121",
+          "rational_square": false
+        },
+        {
+          "basis_index": 4,
+          "one_minus_a_u": "-41053801328565386",
+          "rational_square": false
+        },
+        {
+          "basis_index": 5,
+          "one_minus_a_u": "-46378087661805386",
+          "rational_square": false
+        },
+        {
+          "basis_index": 6,
+          "one_minus_a_u": "-30677763793609706",
+          "rational_square": false
+        },
+        {
+          "basis_index": 7,
+          "one_minus_a_u": "-83612421019761386",
+          "rational_square": false
+        },
+        {
+          "basis_index": 8,
+          "one_minus_a_u": "86012797757294614",
+          "rational_square": false
+        },
+        {
+          "basis_index": 9,
+          "one_minus_a_u": "87487096017779734",
+          "rational_square": false
+        },
+        {
+          "basis_index": 10,
+          "one_minus_a_u": "-48371350182747386",
+          "rational_square": false
+        },
+        {
+          "basis_index": 11,
+          "one_minus_a_u": "-28841055288088586",
+          "rational_square": false
+        },
+        {
+          "basis_index": 12,
+          "one_minus_a_u": "-28429622094935786",
+          "rational_square": false
+        },
+        {
+          "basis_index": 13,
+          "one_minus_a_u": "-148496505499185386",
+          "rational_square": false
+        },
+        {
+          "basis_index": 14,
+          "one_minus_a_u": "-45756133800259586",
+          "rational_square": false
+        },
+        {
+          "basis_index": 15,
+          "one_minus_a_u": "-53631910104252386",
+          "rational_square": false
+        },
+        {
+          "basis_index": 16,
+          "one_minus_a_u": "2400693015646526/9",
+          "rational_square": false
+        },
+        {
+          "basis_index": 17,
+          "one_minus_a_u": "-38307976124266706",
+          "rational_square": false
+        },
+        {
+          "basis_index": 18,
+          "one_minus_a_u": "-46064231291690546",
+          "rational_square": false
+        },
+        {
+          "basis_index": 19,
+          "one_minus_a_u": "-9146566453767249194/529",
+          "rational_square": false
+        }
+      ],
+      "u": 1
+    },
+    {
+      "D": "1338781683744440337797774985973416310378101623052421",
+      "bound_scope": "Only the displayed transporter; a zero lower bound is not a rank-zero assertion.",
+      "cap_scope": "Necessary bound on the number of independent inherited anchor Kummer classes simultaneously transported, valid for every choice of representatives. Not an upper rank of E_u or of an unsaturated point subgroup.",
+      "common_kummer_shift": [
+        "1338781683744440337797774985973416310378101623052421",
+        "-2677563367488880675595549971946832620756203246104842",
+        "0"
+      ],
+      "independent_anchor_class_transport_cap": 2,
+      "inherited_CT_radical_dimension": 1,
+      "inherited_CT_rank": 12,
+      "inherited_local_dimension": 13,
+      "rank_lower_bound_from_transport": 0,
+      "soluble_transports": 0,
+      "tests": [
+        {
+          "basis_index": 0,
+          "one_minus_a_u": "-77877211990530773",
+          "rational_square": false
+        },
+        {
+          "basis_index": 1,
+          "one_minus_a_u": "-81456796828632773",
+          "rational_square": false
+        },
+        {
+          "basis_index": 2,
+          "one_minus_a_u": "-81292890631170773",
+          "rational_square": false
+        },
+        {
+          "basis_index": 3,
+          "one_minus_a_u": "3563268665670692947/121",
+          "rational_square": false
+        },
+        {
+          "basis_index": 4,
+          "one_minus_a_u": "-82107602657130773",
+          "rational_square": false
+        },
+        {
+          "basis_index": 5,
+          "one_minus_a_u": "-92756175323610773",
+          "rational_square": false
+        },
+        {
+          "basis_index": 6,
+          "one_minus_a_u": "-61355527587219413",
+          "rational_square": false
+        },
+        {
+          "basis_index": 7,
+          "one_minus_a_u": "-167224842039522773",
+          "rational_square": false
+        },
+        {
+          "basis_index": 8,
+          "one_minus_a_u": "172025595514589227",
+          "rational_square": false
+        },
+        {
+          "basis_index": 9,
+          "one_minus_a_u": "174974192035559467",
+          "rational_square": false
+        },
+        {
+          "basis_index": 10,
+          "one_minus_a_u": "-96742700365494773",
+          "rational_square": false
+        },
+        {
+          "basis_index": 11,
+          "one_minus_a_u": "-57682110576177173",
+          "rational_square": false
+        },
+        {
+          "basis_index": 12,
+          "one_minus_a_u": "-56859244189871573",
+          "rational_square": false
+        },
+        {
+          "basis_index": 13,
+          "one_minus_a_u": "-296993010998370773",
+          "rational_square": false
+        },
+        {
+          "basis_index": 14,
+          "one_minus_a_u": "-91512267600519173",
+          "rational_square": false
+        },
+        {
+          "basis_index": 15,
+          "one_minus_a_u": "-107263820208504773",
+          "rational_square": false
+        },
+        {
+          "basis_index": 16,
+          "one_minus_a_u": "4801386031293043/9",
+          "rational_square": false
+        },
+        {
+          "basis_index": 17,
+          "one_minus_a_u": "-76615952248533413",
+          "rational_square": false
+        },
+        {
+          "basis_index": 18,
+          "one_minus_a_u": "-92128462583381093",
+          "rational_square": false
+        },
+        {
+          "basis_index": 19,
+          "one_minus_a_u": "-18293132907534498917/529",
+          "rational_square": false
+        }
+      ],
+      "u": 2
+    },
+    {
+      "D": "4518388182637486165946477712226136964901322484428800",
+      "bound_scope": "Only the displayed transporter; a zero lower bound is not a rank-zero assertion.",
+      "cap_scope": "Necessary bound on the number of independent inherited anchor Kummer classes simultaneously transported, valid for every choice of representatives. Not an upper rank of E_u or of an unsaturated point subgroup.",
+      "common_kummer_shift": [
+        "4518388182637486165946477712226136964901322484428800",
+        "-13555164547912458497839433136678410894703967453286400",
+        "0"
+      ],
+      "independent_anchor_class_transport_cap": 2,
+      "inherited_CT_radical_dimension": 1,
+      "inherited_CT_rank": 14,
+      "inherited_local_dimension": 15,
+      "rank_lower_bound_from_transport": 0,
+      "soluble_transports": 0,
+      "tests": [
+        {
+          "basis_index": 0,
+          "one_minus_a_u": "-116815817985796160",
+          "rational_square": false
+        },
+        {
+          "basis_index": 1,
+          "one_minus_a_u": "-122185195242949160",
+          "rational_square": false
+        },
+        {
+          "basis_index": 2,
+          "one_minus_a_u": "-121939335946756160",
+          "rational_square": false
+        },
+        {
+          "basis_index": 3,
+          "one_minus_a_u": "5344902998506039360/121",
+          "rational_square": false
+        },
+        {
+          "basis_index": 4,
+          "one_minus_a_u": "-123161403985696160",
+          "rational_square": false
+        },
+        {
+          "basis_index": 5,
+          "one_minus_a_u": "-139134262985416160",
+          "rational_square": false
+        },
+        {
+          "basis_index": 6,
+          "one_minus_a_u": "-92033291380829120",
+          "rational_square": false
+        },
+        {
+          "basis_index": 7,
+          "one_minus_a_u": "-250837263059284160",
+          "rational_square": false
+        },
+        {
+          "basis_index": 8,
+          "one_minus_a_u": "258038393271883840",
+          "rational_square": false
+        },
+        {
+          "basis_index": 9,
+          "one_minus_a_u": "262461288053339200",
+          "rational_square": false
+        },
+        {
+          "basis_index": 10,
+          "one_minus_a_u": "-145114050548242160",
+          "rational_square": false
+        },
+        {
+          "basis_index": 11,
+          "one_minus_a_u": "-86523165864265760",
+          "rational_square": false
+        },
+        {
+          "basis_index": 12,
+          "one_minus_a_u": "-85288866284807360",
+          "rational_square": false
+        },
+        {
+          "basis_index": 13,
+          "one_minus_a_u": "-445489516497556160",
+          "rational_square": false
+        },
+        {
+          "basis_index": 14,
+          "one_minus_a_u": "-137268401400778760",
+          "rational_square": false
+        },
+        {
+          "basis_index": 15,
+          "one_minus_a_u": "-160895730312757160",
+          "rational_square": false
+        },
+        {
+          "basis_index": 16,
+          "one_minus_a_u": "2400693015646520/3",
+          "rational_square": false
+        },
+        {
+          "basis_index": 17,
+          "one_minus_a_u": "-114923928372800120",
+          "rational_square": false
+        },
+        {
+          "basis_index": 18,
+          "one_minus_a_u": "-138192693875071640",
+          "rational_square": false
+        },
+        {
+          "basis_index": 19,
+          "one_minus_a_u": "-27439699361301748640/529",
+          "rational_square": false
+        }
+      ],
+      "u": 3
+    }
+  ],
+  "schema": "rank-jump.linear-twist-blocks.v1",
+  "summary": {
+    "independence_theorem": "k independent anchor Kummer classes with nonzero square 1-a_i*u imply rank E_u(Q) >= k-1, provided the cubic is irreducible and D(u) != 0.",
+    "nonzero_u_transports": 0,
+    "rational_square_tests": 140,
+    "splitting_event": "At u=0 the shared correspondence b^2=f(a), z^2=1-au splits into two copies of E_0.",
+    "transport_counts": [
+      0,
+      0,
+      0,
+      20,
+      0,
+      0,
+      0
+    ],
+    "universal_twist_identities": 20
+  },
+  "twist_identities": [
+    {
+      "a": "38938605995265387",
+      "g_coefficients": [
+        "1",
+        "-38938605995265387"
+      ],
+      "twist_x_coefficients": [
+        "38938605995265387",
+        "0",
+        "-56583774774034264820701858557333045991518414315603"
+      ],
+      "twist_y_squared_coefficients": [
+        "2455525150140581552834899063048028496902400000000",
+        "0",
+        "-28242890564040446306261329405991094411224853125159013990248690114842365273600000000",
+        "821853023745506871657606846905656076297172495192369649947541270197713232288851449021888588800000000",
+        "81210822394417127556409850137956263563700258400119257078588579608651863440075926872752736190323559671984697600000000",
+        "-4726383072892004453441764591093357037730751796695444634361028956130095437282939182753839124356884841717066621689439152039961600000000",
+        "68767610932529325928037256755255094621049953123531658735683969398785042585882464971427980857994434027063875354682831220420577854121476899046400000000"
+      ]
+    },
+    {
+      "a": "40728398414316387",
+      "g_coefficients": [
+        "1",
+        "-40728398414316387"
+      ],
+      "twist_x_coefficients": [
+        "40728398414316387",
+        "0",
+        "-66876666993181894134217359413362388097107151972603"
+      ],
+      "twist_y_squared_coefficients": [
+        "683699567692576097730310000544059056990801000000",
+        "0",
+        "-7863756584988628902339518787478710555522874222999736129340471850448571029814000000",
+        "228831114602703251894431037058959177034157927847665893560653371283096233682461157708655712012000000",
+        "22611783943586473995568419637251882079545273896215472855715677895413132439669992925075326368186443819101149449000000",
+        "-1315981660175938365889903436114486803964278249161869221146782278661212391527117338489077473678347269268437541329439929289255684000000",
+        "19147181556307753339887733251170071092808285981480544671978771641411527282421445541003727704708513562668271736012508129664386299050327816043236000000"
+      ]
+    },
+    {
+      "a": "40646445315585387",
+      "g_coefficients": [
+        "1",
+        "-40646445315585387"
+      ],
+      "twist_x_coefficients": [
+        "40646445315585387",
+        "0",
+        "-66405364062582482033157076859333415377474232555603"
+      ],
+      "twist_y_squared_coefficients": [
+        "747990581784812211774797931756643013433600000000",
+        "0",
+        "-8603217174571371391093572139521547538694699795943153928896330266234389030400000000",
+        "250349022626713603824672645377948117590196759078952611562639638785397017950549680491441843200000000",
+        "24738060730734282460528758170713724532786655216323765050504889895753839434009975870045574046075691569928966400000000",
+        "-1439728696823968436509540071876576958417422405713589269498123189956165770237767156032687511493549658850128551996146946450662400000000",
+        "20947667877247914751117422302952126177166912231087518054451699971228434341094943537235858081929867486231736060543923287798138297498792551449600000000"
+      ]
+    },
+    {
+      "a": "-1781634332835346413/121",
+      "g_coefficients": [
+        "1",
+        "1781634332835346413/121"
+      ],
+      "twist_x_coefficients": [
+        "-1781634332835346413/121",
+        "0",
+        "30495048961733939051326203272808111125382024457851717/121"
+      ],
+      "twist_y_squared_coefficients": [
+        "440822710920540711179032506060127138959960007866816921600/1771561",
+        "0",
+        "-5070242339794274196104836125345422634238015347049630948760697867934914090735986987394662400/1771561",
+        "147541342789747547637346242909292361873426295955099556658312843484344006937162271688269206746294068654899200/1771561",
+        "14579192920074123314289622882832541156386986950539299670313730925331257374004146742047512529158885283243784425114135717478400/1771561",
+        "-848493447082766164851409802206502158552395680271705302452254413232318245636861798845600973144842971806299639287358649266400279221173642854400/1771561",
+        "12345352957623366714409990140597084520466552113213200952558247719929854127097047790895993287747092775707950909749533881370774906530040510180291649061624217600/1771561"
+      ]
+    },
+    {
+      "a": "41053801328565387",
+      "g_coefficients": [
+        "1",
+        "-41053801328565387"
+      ],
+      "twist_x_coefficients": [
+        "41053801328565387",
+        "0",
+        "-68748022066826362525845771698984966252214437415603"
+      ],
+      "twist_y_squared_coefficients": [
+        "444654222564807047881763299776544461104400000000",
+        "0",
+        "-5114311513371122107112477920674389890142126998770816216742626703564541301600000000",
+        "148823732192346876502845915364863553925340247321682714667784531513031259124693470055343812800000000",
+        "14705911317410367391617734890916804990510890235164018744007397314927372286009332226571046375642951111950995600000000",
+        "-855868322383070970802860992944253870892653923697545683429524968299675056181096625208460641255301380649622693041244330929729600000000",
+        "12452655422850113995833925426316778781155781282547399136280006407001424101935649117679928581429493521413082213539366227771335456747913799118400000000"
+      ]
+    },
+    {
+      "a": "46378087661805387",
+      "g_coefficients": [
+        "1",
+        "-46378087661805387"
+      ],
+      "twist_x_coefficients": [
+        "46378087661805387",
+        "0",
+        "-99367385959862536033825827333438720292759102095603"
+      ],
+      "twist_y_squared_coefficients": [
+        "388495703656489974043741249233331226595600000000",
+        "0",
+        "-4468389029671295011183358149821313564253775206016338647371691368488306498400000000",
+        "130027733067179195780676491914311109642832754158736564975106514616420766934142771133388587200000000",
+        "12848598023455406298388400400398449275510925037701735077976629131986193810309201666410039732176247122286304400000000",
+        "-747774673596065301663839385734292164356034024954594438748575847549574567724991739547898443308881388459701320814077613517070400000000",
+        "10879921713071925519284316511126144663286109214349670796451495744106327285614083150806758358888387480890840000181954666817628351819981838081600000000"
+      ]
+    },
+    {
+      "a": "30677763793609707",
+      "g_coefficients": [
+        "1",
+        "-30677763793609707"
+      ],
+      "twist_x_coefficients": [
+        "30677763793609707",
+        "0",
+        "-9076612761295146838218923640891192138378126501843"
+      ],
+      "twist_y_squared_coefficients": [
+        "19795003559969177767549962221066979838958823014400",
+        "0",
+        "-227677618869834528256382296883215020774957768744370262262421026329222670353734041600",
+        "6625297048935681708003393010715366025179353772117973810117418078275977484477329554379488645270732800",
+        "654674018840115148113877096164878541205702790207166815181005565284230302612997654368119902355040090923367308466585600",
+        "-38101328242685254551054422772924721226966596500662278705689914644823854838227350163010351921488635241583464315662237625773840374169600",
+        "554364146155073990082418167353258400281862245529309936073315318027592261254845768370456935641244682462620544002850767157015872859276665247486731878400"
+      ]
+    },
+    {
+      "a": "83612421019761387",
+      "g_coefficients": [
+        "1",
+        "-83612421019761387"
+      ],
+      "twist_x_coefficients": [
+        "83612421019761387",
+        "0",
+        "-313497793500902457285505529581691757136463878587603"
+      ],
+      "twist_y_squared_coefficients": [
+        "271039731225686872739768649987863085571900416000000",
+        "0",
+        "-3117437207709217038552331614583311969903697721340319354569299549091029238503424000000",
+        "90715756932991409905674296513875926782357806438489063151867731023273661839417817902928166203392000000",
+        "8964013043458192973597172494534564707198119287596851889911767245144866592904860620916233911562501334711714243584000000",
+        "-521695979238064030145984088131345500338975132902730376380214282589950762702605152539428402506110146609454152140925141979151929344000000",
+        "7590537113056351799976399763250896478333199074278194515185098059886776745761663759112561828520151559218627745170654225346689799725520355887845376000000"
+      ]
+    },
+    {
+      "a": "-86012797757294613",
+      "g_coefficients": [
+        "1",
+        "86012797757294613"
+      ],
+      "twist_x_coefficients": [
+        "-86012797757294613",
+        "0",
+        "661997507483397774226447316118206811441119461604397"
+      ],
+      "twist_y_squared_coefficients": [
+        "25657508586540173994243637629013443429273600000000",
+        "0",
+        "-295106815384927185372204708046144841493704151685002326850288386579533234790400000000",
+        "8587450636543922559138309902980095919221443035973959539260590294987503431733172933670447923200000000",
+        "848562830963248013402694943429303146178424969698841738140712436743381927526040852407145247756593496563073126400000000",
+        "-49385449898186566773142082783480115625619743692094559246941294206528148931969339452317678517167594911307728169742176186437222400000000",
+        "718545101391533674836070543173536578889148666967819231585366360055465253733333161221912481810453716941932864446845643108208793940663061217689600000000"
+      ]
+    },
+    {
+      "a": "-87487096017779733",
+      "g_coefficients": [
+        "1",
+        "87487096017779733"
+      ],
+      "twist_x_coefficients": [
+        "-87487096017779733",
+        "0",
+        "670476028753532717103650839037424087263993022216237"
+      ],
+      "twist_y_squared_coefficients": [
+        "850498387704402913696099565677916526806885990400",
+        "0",
+        "-9782238592609443197596661900727539130970568550358693550152328894922490507729305600",
+        "284657915878208091477943453267434004148447314427728257443099140926549290236891049681600099568844800",
+        "28128269631710377263616757347107324482974231366130970440346079927521589628660601395174525458334904995025793587609600",
+        "-1637035231725439369137265310966229837809131310178609224680199800516996516833204852682017504196880766854935250442494675580563462553600",
+        "23818425244413168333398991754305690895717572410811270648019804595049558545122476667573535689606642036963771716142528261125684853557374916047693414400"
+      ]
+    },
+    {
+      "a": "48371350182747387",
+      "g_coefficients": [
+        "1",
+        "-48371350182747387"
+      ],
+      "twist_x_coefficients": [
+        "48371350182747387",
+        "0",
+        "-110830411545478163799569787104133147118019969289603"
+      ],
+      "twist_y_squared_coefficients": [
+        "2348269865202432153463860524316237062299044000000",
+        "0",
+        "-27009264724472195889816779566647913872081850941785470076367492741494169845016000000",
+        "785955171005510529954456261420921156329701976803355042243538190006957861733825819385616894128000000",
+        "77663601590966599072317498257549532193649302708946233326454447669580927654755294631294103669947158630643821956000000",
+        "-4519938613066025559567376609959126206566455195405425635283507854451752799794229128291031080320920595445553125435575186174289296000000",
+        "65763899199150433790228348911255639368085873117156815756097169674534619139962251469853562701006058098224346335737606339940293087531922001959184000000"
+      ]
+    },
+    {
+      "a": "28841055288088587",
+      "g_coefficients": [
+        "1",
+        "-28841055288088587"
+      ],
+      "twist_x_coefficients": [
+        "28841055288088587",
+        "0",
+        "1486088524111241308074659840871280464548664161997"
+      ],
+      "twist_y_squared_coefficients": [
+        "25476264918137183280588376259787004839909632640000",
+        "0",
+        "-293022192023672733376959249514277764114534235076717317656831794975421549428360960000",
+        "8526789210655778826198400167003566028645577203240120500057813164427924974841167604767234129927680000",
+        "842568615280323636087776534076856579767432829402469334321941277094839392407503300711688444022711501049828980127360000",
+        "-49036592951492413023064014559271339193740152679226813224661163976826743065192708363703411965073114372614017856699900903188075317760000",
+        "713469326023479446691940099797497513894681332232282628671553755797304601348301532026763585000626616056046559570513210934988876678059419154234391040000"
+      ]
+    },
+    {
+      "a": "28429622094935787",
+      "g_coefficients": [
+        "1",
+        "-28429622094935787"
+      ],
+      "twist_x_coefficients": [
+        "28429622094935787",
+        "0",
+        "3852193926852276955732102239092224372057601271597"
+      ],
+      "twist_y_squared_coefficients": [
+        "26830248703835871885500659255267061461011701760000",
+        "0",
+        "-308595404899453683020669864683790020620742842638613965330602147298175705634160640000",
+        "8979961383750869286028914159195049806005640646165045856527155930445503912563593803896400288645120000",
+        "887348501464344807894821704644382128263642081579778313665744414887274047071644594320475667151217303031482768138240000",
+        "-51642734470885990262492422832803271341454211338760303713350098434441473642422446461730288886337320907600257643324197120990445731840000",
+        "751387988831127707997762999409476491802828860378420901598616079199431739993162321082763395358349342000401213161085982690165902712414133132645007360000"
+      ]
+    },
+    {
+      "a": "148496505499185387",
+      "g_coefficients": [
+        "1",
+        "-148496505499185387"
+      ],
+      "twist_x_coefficients": [
+        "148496505499185387",
+        "0",
+        "-686638768496701988787962604600127127556270997755603"
+      ],
+      "twist_y_squared_coefficients": [
+        "2587889177126727452155910874346818410402841600000000",
+        "0",
+        "-29765311431353245250731141054571787252352979664697434428177491448846754909542400000000",
+        "866154657474433608853410532408913529296595949785042134580942692940634623508583402884685893939200000000",
+        "85588456843148518380453003451434249317893628207603822467964709111565193451484983189245268507209077380653411558400000000",
+        "-4981156719405591978200728989609787844884177035633424292772253275450278565999509672994772156921739738993742308193295695612588134400000000",
+        "72474499419794452628283935929195863324001282448981269389952959955933793493204755322443535493021865520190893630637970706262451340500962520765337600000000"
+      ]
+    },
+    {
+      "a": "45756133800259587",
+      "g_coefficients": [
+        "1",
+        "-45756133800259587"
+      ],
+      "twist_x_coefficients": [
+        "45756133800259587",
+        "0",
+        "-95790600186254244379030021403902917114974341335003"
+      ],
+      "twist_y_squared_coefficients": [
+        "5529634720173099034211567360429671798832040000",
+        "0",
+        "-63600598125425912096105407639220390275136905497216511429464778243525229992560000",
+        "1850743420291264710633149946100692861939117171552635581062983963902056197757850927786538880480000",
+        "182879895626510059533755680309955904087074381813525968728901221569741913348999530296970386518737014882326777960000",
+        "-10643414480688899987938227617935829740893496459677326019399060699840874633291866792749517330246966182870837147582115692463027360000",
+        "154858837024780238690765809293178168122840105122555683817881896189000880836600444081548395439061365575067836611122553229145869564070259812929440000"
+      ]
+    },
+    {
+      "a": "53631910104252387",
+      "g_coefficients": [
+        "1",
+        "-53631910104252387"
+      ],
+      "twist_x_coefficients": [
+        "53631910104252387",
+        "0",
+        "-141083292107531645830129897905024806589345066324603"
+      ],
+      "twist_y_squared_coefficients": [
+        "13182557019664129204525051527436074639578289000000",
+        "0",
+        "-151622766005586144783772355534638549474376903639136994496159786690651569411446000000",
+        "4412141470710758623791556481004840232267065646693733312581438076925236019463763380093219933068000000",
+        "435982623418428133773748079690302773250652337429321569258078954831604881082405014399597699177853253903964153961000000",
+        "-25373722745868489118249119513460273345377698554708366871179221233374622597027765146686483242736214091731010480921859234639903876000000",
+        "369180886692301301558050230602076275405642229361127453158725380910455065796177520308752900403559825370379029146192504375690267946305356050940004000000"
+      ]
+    },
+    {
+      "a": "-2400693015646517/9",
+      "g_coefficients": [
+        "1",
+        "2400693015646517/9"
+      ],
+      "twist_x_coefficients": [
+        "-2400693015646517/9",
+        "0",
+        "168881722904251546899777487204049578552120761989397"
+      ],
+      "twist_y_squared_coefficients": [
+        "123114762161220609036347442886794393498346885225000000/729",
+        "0",
+        "-52445849317619152506785390206939300429321882350403345217019978016007397395558450000000/27",
+        "1526146190555511502437350898989029667523532134096855875114727003267431970971696294834722437580100000000/27",
+        "5585372262354097011765747812536099424661667278211408083919126981150715290753918529350483371094738580568104833225000000",
+        "-325062696550228599697258476495722707803510340269185074151815629168230012156836894953260590934215091796845736702077611622917444100000000",
+        "4729575385722387071508423430278770030534890612345318481548418822815259603295352966111820161583040061343780652881970469860410244060579185081788900000000"
+      ]
+    },
+    {
+      "a": "38307976124266707",
+      "g_coefficients": [
+        "1",
+        "-38307976124266707"
+      ],
+      "twist_x_coefficients": [
+        "38307976124266707",
+        "0",
+        "-52957094258868094659414931510393364075400961200843"
+      ],
+      "twist_y_squared_coefficients": [
+        "3259900342188455093804598166941258287111575694400",
+        "0",
+        "-37494630673538606193105410711883644108983854308838717329300438793957001868919561600",
+        "1091073717238534300142189982864734145610405076776139478263448719950345388314890190866096136734892800",
+        "107813673868422660006079880474257707772801632135110317964631227518483070419970257531904232251810811924443963083905600",
+        "-6274640598061994393925146391651182342220834392662399463123755527581327348593090912433299200286389582474556419300992116366118111289600",
+        "91294344265869398407467446253950841885817059589630261853901006907212897790461371429333022252678761856375839975560144338080358975264382085195620358400"
+      ]
+    },
+    {
+      "a": "46064231291690547",
+      "g_coefficients": [
+        "1",
+        "-46064231291690547"
+      ],
+      "twist_x_coefficients": [
+        "46064231291690547",
+        "0",
+        "-97562433745572872864812422340270236886414394079723"
+      ],
+      "twist_y_squared_coefficients": [
+        "181876099993963946456399084296375939311689217600",
+        "0",
+        "-2091897445257247243240813436041876397344422964448314028886145714553420093272406400",
+        "60873097845697812894715791023972869277749793699615527815122607947779061876496426972929775032851200",
+        "6015131896960387263102707024254106409546174425229584687915298439955269203080363274024369012626885288344887159182400",
+        "-350074247997773840144963675796836525810869954287808749129269966333675970061749807686604291472970036527911547443433103625503002118400",
+        "5093486776787711448746999319772574509364158287221877980376854867799499380462413914523189700492999758678553955958616326013625085229456896670729273600"
+      ]
+    },
+    {
+      "a": "9146566453767249723/529",
+      "g_coefficients": [
+        "1",
+        "-9146566453767249723/529"
+      ],
+      "twist_x_coefficients": [
+        "9146566453767249723/529",
+        "0",
+        "35926077597046827900169784865062420280156632826026013/529"
+      ],
+      "twist_y_squared_coefficients": [
+        "10818788284185918816845579283537175829744112305552400000000/148035889",
+        "0",
+        "-124435236808017428850373307204499469610968461465411300924358211778971325265505576373600000000/148035889",
+        "3620998898794262333057585711672909641407320471523781491974912720563028462058118143001367812403352388800000000/148035889",
+        "357806432493482089864401407103142435495098851083016390774269172549937490036735917126341313673370391699282137046338547600000000/148035889",
+        "-20823951981371966734424201209966601585030485425993199943274113543141683094163322058799840095361386832501930629472283527885439129626561600000000/148035889",
+        "302982937660284182729620059441326346207484363241330932193600761680792323574068989553556725752018389137867690876804234038153125873144638069634204570446400000000/148035889"
+      ]
+    }
+  ]
+}

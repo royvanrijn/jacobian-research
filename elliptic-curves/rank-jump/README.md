@@ -2,7 +2,9 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: branch characters and exact specialization collapse](BRANCH_BLOCKS_AND_SPECIALIZATION.md)
+- [Latest: an explicit soluble block and a genus-two splitting event](LINEAR_TWIST_SOLUBLE_BLOCKS.md)
+- [Shared quadrics and distinct ruling base changes](SHARED_QUADRICS_AND_RULINGS.md)
+- [Branch characters and exact specialization collapse](BRANCH_BLOCKS_AND_SPECIALIZATION.md)
 - [Two-adic and real completion of the local-support test](DYADIC_REAL_QUOTIENT_SUPPORT.md)
 - [Small bad-prime quotient supports and the global kernel](BAD_PRIME_QUOTIENT_SUPPORT.md)
 - [Independent halving fields and arithmetic blocks](HALVING_FIELDS_AND_BLOCKS.md)
@@ -31,6 +33,8 @@ python3 elliptic-curves/rank-jump/halving_fields.py check
 python3 elliptic-curves/rank-jump/bad_prime_support.py check
 python3 elliptic-curves/rank-jump/dyadic_real_support.py check
 python3 elliptic-curves/rank-jump/branch_blocks.py check
+python3 elliptic-curves/rank-jump/quadric_rulings.py check
+python3 elliptic-curves/rank-jump/linear_twist_blocks.py check
 ```
 
 Optional independent Hilbert-symbol check: `sage -python -m unittest discover -s elliptic-curves/rank-jump -p test_local_collision.py`.

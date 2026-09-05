@@ -1,0 +1,18 @@
+{
+  "schema": "rank-jump.quadric-ruling-protocol.v1",
+  "question": "Do the inherited Kummer classes share quadric total spaces and ruling fields, and do their ruling lines give the same quadratic base change?",
+  "layers": ["incidence", "solubility"],
+  "inputs": ["rank_jump_local_collision_inputs_v1.json", "rank_jump_cubic_bridge_v1.json"],
+  "selection": "The twenty retained anchor basis points and the three previously frozen CT chain classes.",
+  "limits": {"quadric_determinants": 23, "explicit_ruling_lines": 40, "new_parameters_searched": 0, "new_curve_searches": 0},
+  "checks": [
+    "Verify the coefficient-quadric determinant identity B*Norm(beta).",
+    "Construct both lines through each anchor point over Q(sqrt(B)) and exact sections over their quadratic parameter maps.",
+    "Identify each finite branch value with the reciprocal x-coordinate of P plus or minus (0,sqrt(B)).",
+    "Check distinct branch values, nonsingularity of those fibres, and non-invariance of the displayed section.",
+    "Keep shared total-space solubility separate from the known CT-obstructed fibres."
+  ],
+  "checkpoint": "One immutable per-anchor checkpoint; compact final report with pinned hashes and exact rational-pair coordinates.",
+  "oracle_boundary": "Anchor points define these retrospective constructions. No resulting branch-value feature is a prospective selector.",
+  "failure_semantics": "Coincidence is a candidate common base change, not automatically independent rational points over Q. Distinctness excludes only these ruling-line constructions."
+}
