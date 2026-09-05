@@ -1,0 +1,2057 @@
+{
+  "boundary": "Local conditions and CT arithmetic inherited from pinned complete-subspace certificates; exact new linear algebra and independently evaluated root-character prediction. No full Selmer or rank bound and no point search.",
+  "embedded_restricted_radicals": {
+    "-1": [
+      450876,
+      596921
+    ],
+    "-2": [
+      702532
+    ],
+    "-3": [
+      370313
+    ],
+    "0": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024,
+      2048,
+      4096,
+      8192,
+      16384,
+      32768,
+      65536,
+      131072,
+      262144,
+      524288
+    ],
+    "1": [
+      154245
+    ],
+    "2": [
+      513585
+    ],
+    "3": [
+      602844
+    ]
+  },
+  "input_sha256": "440372c18d42243ce447cad470c7bfd6ba5d5c757740e3ce413af6b0d8194f71",
+  "joint_local_basis": [],
+  "joint_local_dimension": 0,
+  "joint_necessary_soluble_basis": [],
+  "joint_necessary_soluble_dimension": 0,
+  "local_rows": [
+    {
+      "basis": [
+        7,
+        27,
+        35,
+        64,
+        128,
+        256,
+        522,
+        1025,
+        2059,
+        4107,
+        8200,
+        16387,
+        32779,
+        65539,
+        131074,
+        262146,
+        524296
+      ],
+      "constraint_basis": [
+        121909,
+        394755,
+        571928
+      ],
+      "dimension": 17,
+      "inherited_finite_constraint_rank": 1,
+      "inherited_new_constraint_intersection_dimension": 1,
+      "local_places": [
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 2
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 3
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 5
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 7
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            571928
+          ],
+          "new": false,
+          "prime": 13
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 17
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 31
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 79
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 1049
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            965659
+          ],
+          "new": true,
+          "prime": 6807347
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            514614
+          ],
+          "new": true,
+          "prime": 5070588247
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 71889448247
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 40200713707633
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 491007790268548705232623905732119
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            121909
+          ],
+          "new": true,
+          "prime": 2517352081717261588189318068375793
+        }
+      ],
+      "new_prime_constraint_rank": 3,
+      "real_constraint_rank": 0,
+      "root_character_checks": [
+        {
+          "actual_constraint_basis": [
+            965659
+          ],
+          "eligible": true,
+          "matches": true,
+          "noncolliding_anchor_root_mod_p": 4538231,
+          "predicted_constraint": 965659,
+          "prime": 6807347,
+          "valuation_D": 1
+        },
+        {
+          "actual_constraint_basis": [
+            514614
+          ],
+          "eligible": true,
+          "matches": true,
+          "noncolliding_anchor_root_mod_p": 1690196082,
+          "predicted_constraint": 514614,
+          "prime": 5070588247,
+          "valuation_D": 1
+        },
+        {
+          "actual_constraint_basis": [
+            121909
+          ],
+          "eligible": true,
+          "matches": true,
+          "noncolliding_anchor_root_mod_p": 839117360572420529396439356125264,
+          "predicted_constraint": 121909,
+          "prime": 2517352081717261588189318068375793,
+          "valuation_D": 1
+        }
+      ],
+      "u": -3
+    },
+    {
+      "basis": [
+        111,
+        282,
+        688,
+        1027,
+        2207,
+        4115,
+        8377,
+        16422,
+        32937,
+        65714,
+        131091,
+        262293,
+        524452
+      ],
+      "constraint_basis": [
+        11954,
+        19239,
+        34810,
+        65707,
+        136910,
+        263111,
+        524452
+      ],
+      "dimension": 13,
+      "inherited_finite_constraint_rank": 3,
+      "inherited_new_constraint_intersection_dimension": 0,
+      "local_places": [
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            57967
+          ],
+          "new": false,
+          "prime": 2
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 3
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 5
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 7
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 13
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 17
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            252600
+          ],
+          "new": false,
+          "prime": 31
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            65707
+          ],
+          "new": true,
+          "prime": 61
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            769929
+          ],
+          "new": false,
+          "prime": 79
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            448980
+          ],
+          "new": true,
+          "prime": 463
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            852936
+          ],
+          "new": true,
+          "prime": 1033
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 1049
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 71889448247
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 40200713707633
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            43336
+          ],
+          "new": true,
+          "prime": 88377350996665273
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            685055
+          ],
+          "new": true,
+          "prime": 830763901348107124747241
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 491007790268548705232623905732119
+        }
+      ],
+      "new_prime_constraint_rank": 4,
+      "real_constraint_rank": 0,
+      "root_character_checks": [
+        {
+          "actual_constraint_basis": [
+            65707
+          ],
+          "eligible": true,
+          "matches": true,
+          "noncolliding_anchor_root_mod_p": 30,
+          "predicted_constraint": 65707,
+          "prime": 61,
+          "valuation_D": 1
+        },
+        {
+          "actual_constraint_basis": [
+            448980
+          ],
+          "eligible": true,
+          "matches": true,
+          "noncolliding_anchor_root_mod_p": 231,
+          "predicted_constraint": 448980,
+          "prime": 463,
+          "valuation_D": 1
+        },
+        {
+          "actual_constraint_basis": [
+            852936
+          ],
+          "eligible": true,
+          "matches": true,
+          "noncolliding_anchor_root_mod_p": 516,
+          "predicted_constraint": 852936,
+          "prime": 1033,
+          "valuation_D": 1
+        },
+        {
+          "actual_constraint_basis": [
+            43336
+          ],
+          "eligible": true,
+          "matches": true,
+          "noncolliding_anchor_root_mod_p": 44188675498332636,
+          "predicted_constraint": 43336,
+          "prime": 88377350996665273,
+          "valuation_D": 1
+        },
+        {
+          "actual_constraint_basis": [
+            685055
+          ],
+          "eligible": true,
+          "matches": true,
+          "noncolliding_anchor_root_mod_p": 415381950674053562373620,
+          "predicted_constraint": 685055,
+          "prime": 830763901348107124747241,
+          "valuation_D": 1
+        }
+      ],
+      "u": -2
+    },
+    {
+      "basis": [
+        1,
+        6,
+        10,
+        18,
+        64,
+        128,
+        258,
+        514,
+        1056,
+        2050,
+        4130,
+        8226,
+        16386,
+        32802,
+        65568,
+        131106,
+        262144,
+        524320
+      ],
+      "constraint_basis": [
+        195358,
+        610110
+      ],
+      "dimension": 18,
+      "inherited_finite_constraint_rank": 1,
+      "inherited_new_constraint_intersection_dimension": 0,
+      "local_places": [
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 2
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 3
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 5
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            610110
+          ],
+          "new": false,
+          "prime": 7
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 13
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 17
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            195358
+          ],
+          "new": true,
+          "prime": 19
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 31
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 79
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 1049
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 71889448247
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 40200713707633
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 491007790268548705232623905732119
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            195358
+          ],
+          "new": true,
+          "prime": 550485889697549509378456967440666703691905279903
+        }
+      ],
+      "new_prime_constraint_rank": 1,
+      "real_constraint_rank": 0,
+      "root_character_checks": [
+        {
+          "actual_constraint_basis": [
+            195358
+          ],
+          "eligible": true,
+          "matches": true,
+          "noncolliding_anchor_root_mod_p": 18,
+          "predicted_constraint": 195358,
+          "prime": 19,
+          "valuation_D": 1
+        },
+        {
+          "actual_constraint_basis": [
+            195358
+          ],
+          "eligible": true,
+          "matches": true,
+          "noncolliding_anchor_root_mod_p": 550485889697549509378456967440666703691905279902,
+          "predicted_constraint": 195358,
+          "prime": 550485889697549509378456967440666703691905279903,
+          "valuation_D": 1
+        }
+      ],
+      "u": -1
+    },
+    {
+      "basis": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048,
+        4096,
+        8192,
+        16384,
+        32768,
+        65536,
+        131072,
+        262144,
+        524288
+      ],
+      "constraint_basis": [],
+      "dimension": 20,
+      "inherited_finite_constraint_rank": 0,
+      "inherited_new_constraint_intersection_dimension": 0,
+      "local_places": [
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 2
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 3
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 5
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 7
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 13
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 17
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 31
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 79
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 1049
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 71889448247
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 40200713707633
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 491007790268548705232623905732119
+        }
+      ],
+      "new_prime_constraint_rank": 0,
+      "real_constraint_rank": 0,
+      "root_character_checks": [],
+      "u": 0
+    },
+    {
+      "basis": [
+        163,
+        260,
+        593,
+        1141,
+        2081,
+        4219,
+        8192,
+        16422,
+        32868,
+        65593,
+        131083,
+        262209,
+        524404
+      ],
+      "constraint_basis": [
+        1251,
+        22830,
+        37790,
+        72100,
+        133548,
+        264810,
+        527191
+      ],
+      "dimension": 13,
+      "inherited_finite_constraint_rank": 4,
+      "inherited_new_constraint_intersection_dimension": 1,
+      "local_places": [
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            346848
+          ],
+          "new": false,
+          "prime": 2
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 3
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 5
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            610110
+          ],
+          "new": false,
+          "prime": 7
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 13
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 17
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            171729
+          ],
+          "new": true,
+          "prime": 23
+        },
+        {
+          "codimension": 2,
+          "constraint_basis": [
+            252600,
+            808979
+          ],
+          "new": false,
+          "prime": 31
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 79
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            431291
+          ],
+          "new": true,
+          "prime": 103
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 1049
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 71889448247
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 40200713707633
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 491007790268548705232623905732119
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            512210
+          ],
+          "new": true,
+          "prime": 735074448304715650993556022553346486326391
+        }
+      ],
+      "new_prime_constraint_rank": 3,
+      "real_constraint_rank": 1,
+      "root_character_checks": [
+        {
+          "actual_constraint_basis": [
+            171729
+          ],
+          "eligible": true,
+          "matches": true,
+          "noncolliding_anchor_root_mod_p": 1,
+          "predicted_constraint": 171729,
+          "prime": 23,
+          "valuation_D": 1
+        },
+        {
+          "actual_constraint_basis": [
+            431291
+          ],
+          "eligible": true,
+          "matches": true,
+          "noncolliding_anchor_root_mod_p": 1,
+          "predicted_constraint": 431291,
+          "prime": 103,
+          "valuation_D": 1
+        },
+        {
+          "actual_constraint_basis": [
+            512210
+          ],
+          "eligible": true,
+          "matches": true,
+          "noncolliding_anchor_root_mod_p": 1,
+          "predicted_constraint": 512210,
+          "prime": 735074448304715650993556022553346486326391,
+          "valuation_D": 1
+        }
+      ],
+      "u": 1
+    },
+    {
+      "basis": [
+        252,
+        325,
+        599,
+        1092,
+        2056,
+        4172,
+        8302,
+        16505,
+        32845,
+        65632,
+        131171,
+        262233,
+        524404
+      ],
+      "constraint_basis": [
+        3484,
+        5143,
+        25204,
+        99141,
+        139778,
+        295799,
+        566163
+      ],
+      "dimension": 13,
+      "inherited_finite_constraint_rank": 3,
+      "inherited_new_constraint_intersection_dimension": 0,
+      "local_places": [
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 2
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 3
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 5
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            610110
+          ],
+          "new": false,
+          "prime": 7
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            571928
+          ],
+          "new": false,
+          "prime": 13
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 17
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            252600
+          ],
+          "new": false,
+          "prime": 31
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 79
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            300896
+          ],
+          "new": true,
+          "prime": 233
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            942226
+          ],
+          "new": true,
+          "prime": 647
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 1049
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 71889448247
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 40200713707633
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            475204
+          ],
+          "new": true,
+          "prime": 26558335042564254253
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            898998
+          ],
+          "new": true,
+          "prime": 47769497729370851316266401
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 491007790268548705232623905732119
+        }
+      ],
+      "new_prime_constraint_rank": 3,
+      "real_constraint_rank": 1,
+      "root_character_checks": [
+        {
+          "actual_constraint_basis": [
+            300896
+          ],
+          "eligible": true,
+          "matches": true,
+          "noncolliding_anchor_root_mod_p": 117,
+          "predicted_constraint": 300896,
+          "prime": 233,
+          "valuation_D": 1
+        },
+        {
+          "actual_constraint_basis": [
+            942226
+          ],
+          "eligible": true,
+          "matches": true,
+          "noncolliding_anchor_root_mod_p": 324,
+          "predicted_constraint": 942226,
+          "prime": 647,
+          "valuation_D": 1
+        },
+        {
+          "actual_constraint_basis": [
+            475204
+          ],
+          "eligible": true,
+          "matches": true,
+          "noncolliding_anchor_root_mod_p": 13279167521282127127,
+          "predicted_constraint": 475204,
+          "prime": 26558335042564254253,
+          "valuation_D": 1
+        },
+        {
+          "actual_constraint_basis": [
+            898998
+          ],
+          "eligible": true,
+          "matches": true,
+          "noncolliding_anchor_root_mod_p": 23884748864685425658133201,
+          "predicted_constraint": 898998,
+          "prime": 47769497729370851316266401,
+          "valuation_D": 1
+        }
+      ],
+      "u": 2
+    },
+    {
+      "basis": [
+        6,
+        27,
+        160,
+        323,
+        586,
+        1027,
+        2059,
+        4169,
+        8299,
+        16419,
+        32840,
+        65569,
+        131168,
+        262144,
+        524328
+      ],
+      "constraint_basis": [
+        5353,
+        28438,
+        67310,
+        173993,
+        569073
+      ],
+      "dimension": 15,
+      "inherited_finite_constraint_rank": 3,
+      "inherited_new_constraint_intersection_dimension": 0,
+      "local_places": [
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 2
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 3
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            249425
+          ],
+          "new": false,
+          "prime": 5
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 7
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            571928
+          ],
+          "new": false,
+          "prime": 13
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 17
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            182463
+          ],
+          "new": true,
+          "prime": 23
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            252600
+          ],
+          "new": false,
+          "prime": 31
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 79
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 1049
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 71889448247
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 40200713707633
+        },
+        {
+          "codimension": 0,
+          "constraint_basis": [],
+          "new": false,
+          "prime": 491007790268548705232623905732119
+        },
+        {
+          "codimension": 1,
+          "constraint_basis": [
+            182463
+          ],
+          "new": true,
+          "prime": 39152515169537888943496957771480362731024381
+        }
+      ],
+      "new_prime_constraint_rank": 1,
+      "real_constraint_rank": 1,
+      "root_character_checks": [
+        {
+          "actual_constraint_basis": [
+            182463
+          ],
+          "eligible": true,
+          "matches": true,
+          "noncolliding_anchor_root_mod_p": 8,
+          "predicted_constraint": 182463,
+          "prime": 23,
+          "valuation_D": 1
+        },
+        {
+          "actual_constraint_basis": [
+            182463
+          ],
+          "eligible": true,
+          "matches": true,
+          "noncolliding_anchor_root_mod_p": 13050838389845962981165652590493454243674794,
+          "predicted_constraint": 182463,
+          "prime": 39152515169537888943496957771480362731024381,
+          "valuation_D": 1
+        }
+      ],
+      "u": 3
+    }
+  ],
+  "minimal_tested_deformation_sets_with_zero_common_radical": [
+    [
+      -3,
+      -2
+    ],
+    [
+      -3,
+      -1
+    ],
+    [
+      -3,
+      1
+    ],
+    [
+      -3,
+      2
+    ],
+    [
+      -3,
+      3
+    ],
+    [
+      -2,
+      -1
+    ],
+    [
+      -2,
+      1
+    ],
+    [
+      -2,
+      2
+    ],
+    [
+      -2,
+      3
+    ],
+    [
+      -1,
+      1
+    ],
+    [
+      -1,
+      2
+    ],
+    [
+      -1,
+      3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "pair_comparisons": [
+    {
+      "common_local_basis": [
+        1715,
+        2906,
+        5049,
+        8806,
+        16700,
+        33203,
+        66157,
+        131430,
+        262394,
+        525153
+      ],
+      "common_local_dimension": 10,
+      "common_necessary_soluble_basis": [],
+      "common_necessary_soluble_dimension": 0,
+      "pairings_on_common_space": [
+        {
+          "common_space_self_pairing_rank": 8,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 10,
+          "u": -3,
+          "weaker_self_radical_dimension": 2
+        },
+        {
+          "common_space_self_pairing_rank": 10,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 10,
+          "u": -2,
+          "weaker_self_radical_dimension": 0
+        }
+      ],
+      "u": -3,
+      "v": -2
+    },
+    {
+      "common_local_basis": [
+        7,
+        64,
+        128,
+        283,
+        529,
+        1081,
+        2064,
+        4136,
+        8240,
+        16387,
+        32808,
+        65568,
+        131130,
+        262169,
+        524331
+      ],
+      "common_local_dimension": 15,
+      "common_necessary_soluble_basis": [],
+      "common_necessary_soluble_dimension": 0,
+      "pairings_on_common_space": [
+        {
+          "common_space_self_pairing_rank": 12,
+          "necessary_soluble_dimension_cap": 1,
+          "rectangular_obstruction_rank": 14,
+          "u": -3,
+          "weaker_self_radical_dimension": 3
+        },
+        {
+          "common_space_self_pairing_rank": 14,
+          "necessary_soluble_dimension_cap": 1,
+          "rectangular_obstruction_rank": 14,
+          "u": -1,
+          "weaker_self_radical_dimension": 1
+        }
+      ],
+      "u": -3,
+      "v": -1
+    },
+    {
+      "common_local_basis": [
+        7,
+        27,
+        35,
+        64,
+        128,
+        256,
+        522,
+        1025,
+        2059,
+        4107,
+        8200,
+        16387,
+        32779,
+        65539,
+        131074,
+        262146,
+        524296
+      ],
+      "common_local_dimension": 17,
+      "common_necessary_soluble_basis": [
+        370313
+      ],
+      "common_necessary_soluble_dimension": 1,
+      "pairings_on_common_space": [
+        {
+          "common_space_self_pairing_rank": 16,
+          "necessary_soluble_dimension_cap": 1,
+          "rectangular_obstruction_rank": 16,
+          "u": -3,
+          "weaker_self_radical_dimension": 1
+        },
+        {
+          "common_space_self_pairing_rank": 0,
+          "necessary_soluble_dimension_cap": 17,
+          "rectangular_obstruction_rank": 0,
+          "u": 0,
+          "weaker_self_radical_dimension": 17
+        }
+      ],
+      "u": -3,
+      "v": 0
+    },
+    {
+      "common_local_basis": [
+        163,
+        593,
+        5386,
+        9585,
+        19830,
+        33809,
+        68717,
+        133162,
+        262469,
+        524656
+      ],
+      "common_local_dimension": 10,
+      "common_necessary_soluble_basis": [],
+      "common_necessary_soluble_dimension": 0,
+      "pairings_on_common_space": [
+        {
+          "common_space_self_pairing_rank": 8,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 10,
+          "u": -3,
+          "weaker_self_radical_dimension": 2
+        },
+        {
+          "common_space_self_pairing_rank": 8,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 10,
+          "u": 1,
+          "weaker_self_radical_dimension": 2
+        }
+      ],
+      "u": -3,
+      "v": 1
+    },
+    {
+      "common_local_basis": [
+        1006,
+        1281,
+        2292,
+        4172,
+        8491,
+        16700,
+        33268,
+        65632,
+        131366,
+        262233,
+        524424
+      ],
+      "common_local_dimension": 11,
+      "common_necessary_soluble_basis": [],
+      "common_necessary_soluble_dimension": 0,
+      "pairings_on_common_space": [
+        {
+          "common_space_self_pairing_rank": 10,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 11,
+          "u": -3,
+          "weaker_self_radical_dimension": 1
+        },
+        {
+          "common_space_self_pairing_rank": 10,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 11,
+          "u": 2,
+          "weaker_self_radical_dimension": 1
+        }
+      ],
+      "u": -3,
+      "v": 2
+    },
+    {
+      "common_local_basis": [
+        27,
+        483,
+        586,
+        1189,
+        2059,
+        4335,
+        8299,
+        16515,
+        33000,
+        65575,
+        131174,
+        262310,
+        524424
+      ],
+      "common_local_dimension": 13,
+      "common_necessary_soluble_basis": [],
+      "common_necessary_soluble_dimension": 0,
+      "pairings_on_common_space": [
+        {
+          "common_space_self_pairing_rank": 12,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 13,
+          "u": -3,
+          "weaker_self_radical_dimension": 1
+        },
+        {
+          "common_space_self_pairing_rank": 12,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 13,
+          "u": 3,
+          "weaker_self_radical_dimension": 1
+        }
+      ],
+      "u": -3,
+      "v": 3
+    },
+    {
+      "common_local_basis": [
+        282,
+        1132,
+        2624,
+        4220,
+        8806,
+        16457,
+        32937,
+        65714,
+        131196,
+        262293,
+        524923
+      ],
+      "common_local_dimension": 11,
+      "common_necessary_soluble_basis": [],
+      "common_necessary_soluble_dimension": 0,
+      "pairings_on_common_space": [
+        {
+          "common_space_self_pairing_rank": 10,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 11,
+          "u": -2,
+          "weaker_self_radical_dimension": 1
+        },
+        {
+          "common_space_self_pairing_rank": 10,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 11,
+          "u": -1,
+          "weaker_self_radical_dimension": 1
+        }
+      ],
+      "u": -2,
+      "v": -1
+    },
+    {
+      "common_local_basis": [
+        111,
+        282,
+        688,
+        1027,
+        2207,
+        4115,
+        8377,
+        16422,
+        32937,
+        65714,
+        131091,
+        262293,
+        524452
+      ],
+      "common_local_dimension": 13,
+      "common_necessary_soluble_basis": [
+        702532
+      ],
+      "common_necessary_soluble_dimension": 1,
+      "pairings_on_common_space": [
+        {
+          "common_space_self_pairing_rank": 12,
+          "necessary_soluble_dimension_cap": 1,
+          "rectangular_obstruction_rank": 12,
+          "u": -2,
+          "weaker_self_radical_dimension": 1
+        },
+        {
+          "common_space_self_pairing_rank": 0,
+          "necessary_soluble_dimension_cap": 13,
+          "rectangular_obstruction_rank": 0,
+          "u": 0,
+          "weaker_self_radical_dimension": 13
+        }
+      ],
+      "u": -2,
+      "v": 0
+    },
+    {
+      "common_local_basis": [
+        5386,
+        11600,
+        16422,
+        101976,
+        165049,
+        296016,
+        559250
+      ],
+      "common_local_dimension": 7,
+      "common_necessary_soluble_basis": [],
+      "common_necessary_soluble_dimension": 0,
+      "pairings_on_common_space": [
+        {
+          "common_space_self_pairing_rank": 4,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 7,
+          "u": -2,
+          "weaker_self_radical_dimension": 3
+        },
+        {
+          "common_space_self_pairing_rank": 6,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 7,
+          "u": 1,
+          "weaker_self_radical_dimension": 1
+        }
+      ],
+      "u": -2,
+      "v": 1
+    },
+    {
+      "common_local_basis": [
+        4361,
+        9084,
+        16700,
+        34224,
+        133692,
+        262624,
+        527416
+      ],
+      "common_local_dimension": 7,
+      "common_necessary_soluble_basis": [],
+      "common_necessary_soluble_dimension": 0,
+      "pairings_on_common_space": [
+        {
+          "common_space_self_pairing_rank": 4,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 7,
+          "u": -2,
+          "weaker_self_radical_dimension": 3
+        },
+        {
+          "common_space_self_pairing_rank": 6,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 7,
+          "u": 2,
+          "weaker_self_radical_dimension": 1
+        }
+      ],
+      "u": -2,
+      "v": 2
+    },
+    {
+      "common_local_basis": [
+        1027,
+        4771,
+        8406,
+        17292,
+        33305,
+        66157,
+        133692,
+        262730,
+        527249
+      ],
+      "common_local_dimension": 9,
+      "common_necessary_soluble_basis": [],
+      "common_necessary_soluble_dimension": 0,
+      "pairings_on_common_space": [
+        {
+          "common_space_self_pairing_rank": 8,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 9,
+          "u": -2,
+          "weaker_self_radical_dimension": 1
+        },
+        {
+          "common_space_self_pairing_rank": 8,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 9,
+          "u": 3,
+          "weaker_self_radical_dimension": 1
+        }
+      ],
+      "u": -2,
+      "v": 3
+    },
+    {
+      "common_local_basis": [
+        1,
+        6,
+        10,
+        18,
+        64,
+        128,
+        258,
+        514,
+        1056,
+        2050,
+        4130,
+        8226,
+        16386,
+        32802,
+        65568,
+        131106,
+        262144,
+        524320
+      ],
+      "common_local_dimension": 18,
+      "common_necessary_soluble_basis": [
+        450876,
+        596921
+      ],
+      "common_necessary_soluble_dimension": 2,
+      "pairings_on_common_space": [
+        {
+          "common_space_self_pairing_rank": 16,
+          "necessary_soluble_dimension_cap": 2,
+          "rectangular_obstruction_rank": 16,
+          "u": -1,
+          "weaker_self_radical_dimension": 2
+        },
+        {
+          "common_space_self_pairing_rank": 0,
+          "necessary_soluble_dimension_cap": 18,
+          "rectangular_obstruction_rank": 0,
+          "u": 0,
+          "weaker_self_radical_dimension": 18
+        }
+      ],
+      "u": -1,
+      "v": 0
+    },
+    {
+      "common_local_basis": [
+        260,
+        593,
+        1141,
+        2178,
+        4219,
+        8355,
+        16517,
+        32868,
+        65593,
+        131240,
+        262209,
+        524404
+      ],
+      "common_local_dimension": 12,
+      "common_necessary_soluble_basis": [],
+      "common_necessary_soluble_dimension": 0,
+      "pairings_on_common_space": [
+        {
+          "common_space_self_pairing_rank": 10,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 12,
+          "u": -1,
+          "weaker_self_radical_dimension": 2
+        },
+        {
+          "common_space_self_pairing_rank": 10,
+          "necessary_soluble_dimension_cap": 1,
+          "rectangular_obstruction_rank": 11,
+          "u": 1,
+          "weaker_self_radical_dimension": 2
+        }
+      ],
+      "u": -1,
+      "v": 1
+    },
+    {
+      "common_local_basis": [
+        325,
+        599,
+        1208,
+        2056,
+        4272,
+        8302,
+        16517,
+        32945,
+        65632,
+        131171,
+        262233,
+        524404
+      ],
+      "common_local_dimension": 12,
+      "common_necessary_soluble_basis": [],
+      "common_necessary_soluble_dimension": 0,
+      "pairings_on_common_space": [
+        {
+          "common_space_self_pairing_rank": 12,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 12,
+          "u": -1,
+          "weaker_self_radical_dimension": 0
+        },
+        {
+          "common_space_self_pairing_rank": 10,
+          "necessary_soluble_dimension_cap": 1,
+          "rectangular_obstruction_rank": 11,
+          "u": 2,
+          "weaker_self_radical_dimension": 2
+        }
+      ],
+      "u": -1,
+      "v": 2
+    },
+    {
+      "common_local_basis": [
+        6,
+        323,
+        593,
+        1208,
+        2064,
+        4329,
+        8304,
+        16515,
+        33000,
+        65569,
+        131195,
+        262144,
+        524339
+      ],
+      "common_local_dimension": 13,
+      "common_necessary_soluble_basis": [],
+      "common_necessary_soluble_dimension": 0,
+      "pairings_on_common_space": [
+        {
+          "common_space_self_pairing_rank": 12,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 13,
+          "u": -1,
+          "weaker_self_radical_dimension": 1
+        },
+        {
+          "common_space_self_pairing_rank": 12,
+          "necessary_soluble_dimension_cap": 1,
+          "rectangular_obstruction_rank": 12,
+          "u": 3,
+          "weaker_self_radical_dimension": 1
+        }
+      ],
+      "u": -1,
+      "v": 3
+    },
+    {
+      "common_local_basis": [
+        163,
+        260,
+        593,
+        1141,
+        2081,
+        4219,
+        8192,
+        16422,
+        32868,
+        65593,
+        131083,
+        262209,
+        524404
+      ],
+      "common_local_dimension": 13,
+      "common_necessary_soluble_basis": [
+        154245
+      ],
+      "common_necessary_soluble_dimension": 1,
+      "pairings_on_common_space": [
+        {
+          "common_space_self_pairing_rank": 0,
+          "necessary_soluble_dimension_cap": 13,
+          "rectangular_obstruction_rank": 0,
+          "u": 0,
+          "weaker_self_radical_dimension": 13
+        },
+        {
+          "common_space_self_pairing_rank": 12,
+          "necessary_soluble_dimension_cap": 1,
+          "rectangular_obstruction_rank": 12,
+          "u": 1,
+          "weaker_self_radical_dimension": 1
+        }
+      ],
+      "u": 0,
+      "v": 1
+    },
+    {
+      "common_local_basis": [
+        252,
+        325,
+        599,
+        1092,
+        2056,
+        4172,
+        8302,
+        16505,
+        32845,
+        65632,
+        131171,
+        262233,
+        524404
+      ],
+      "common_local_dimension": 13,
+      "common_necessary_soluble_basis": [
+        513585
+      ],
+      "common_necessary_soluble_dimension": 1,
+      "pairings_on_common_space": [
+        {
+          "common_space_self_pairing_rank": 0,
+          "necessary_soluble_dimension_cap": 13,
+          "rectangular_obstruction_rank": 0,
+          "u": 0,
+          "weaker_self_radical_dimension": 13
+        },
+        {
+          "common_space_self_pairing_rank": 12,
+          "necessary_soluble_dimension_cap": 1,
+          "rectangular_obstruction_rank": 12,
+          "u": 2,
+          "weaker_self_radical_dimension": 1
+        }
+      ],
+      "u": 0,
+      "v": 2
+    },
+    {
+      "common_local_basis": [
+        6,
+        27,
+        160,
+        323,
+        586,
+        1027,
+        2059,
+        4169,
+        8299,
+        16419,
+        32840,
+        65569,
+        131168,
+        262144,
+        524328
+      ],
+      "common_local_dimension": 15,
+      "common_necessary_soluble_basis": [
+        602844
+      ],
+      "common_necessary_soluble_dimension": 1,
+      "pairings_on_common_space": [
+        {
+          "common_space_self_pairing_rank": 0,
+          "necessary_soluble_dimension_cap": 15,
+          "rectangular_obstruction_rank": 0,
+          "u": 0,
+          "weaker_self_radical_dimension": 15
+        },
+        {
+          "common_space_self_pairing_rank": 14,
+          "necessary_soluble_dimension_cap": 1,
+          "rectangular_obstruction_rank": 14,
+          "u": 3,
+          "weaker_self_radical_dimension": 1
+        }
+      ],
+      "u": 0,
+      "v": 3
+    },
+    {
+      "common_local_basis": [
+        4002,
+        5727,
+        9430,
+        16517,
+        34791,
+        66251,
+        132748,
+        263095,
+        524404
+      ],
+      "common_local_dimension": 9,
+      "common_necessary_soluble_basis": [],
+      "common_necessary_soluble_dimension": 0,
+      "pairings_on_common_space": [
+        {
+          "common_space_self_pairing_rank": 8,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 9,
+          "u": 1,
+          "weaker_self_radical_dimension": 1
+        },
+        {
+          "common_space_self_pairing_rank": 8,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 9,
+          "u": 2,
+          "weaker_self_radical_dimension": 1
+        }
+      ],
+      "u": 1,
+      "v": 2
+    },
+    {
+      "common_local_basis": [
+        593,
+        3408,
+        5545,
+        9333,
+        16517,
+        34069,
+        65690,
+        132222,
+        262469,
+        524656
+      ],
+      "common_local_dimension": 10,
+      "common_necessary_soluble_basis": [],
+      "common_necessary_soluble_dimension": 0,
+      "pairings_on_common_space": [
+        {
+          "common_space_self_pairing_rank": 10,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 10,
+          "u": 1,
+          "weaker_self_radical_dimension": 0
+        },
+        {
+          "common_space_self_pairing_rank": 8,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 10,
+          "u": 3,
+          "weaker_self_radical_dimension": 2
+        }
+      ],
+      "u": 1,
+      "v": 3
+    },
+    {
+      "common_local_basis": [
+        325,
+        599,
+        1208,
+        6212,
+        10342,
+        16517,
+        34885,
+        65692,
+        133227,
+        264365,
+        524424
+      ],
+      "common_local_dimension": 11,
+      "common_necessary_soluble_basis": [],
+      "common_necessary_soluble_dimension": 0,
+      "pairings_on_common_space": [
+        {
+          "common_space_self_pairing_rank": 8,
+          "necessary_soluble_dimension_cap": 1,
+          "rectangular_obstruction_rank": 10,
+          "u": 2,
+          "weaker_self_radical_dimension": 3
+        },
+        {
+          "common_space_self_pairing_rank": 10,
+          "necessary_soluble_dimension_cap": 0,
+          "rectangular_obstruction_rank": 11,
+          "u": 3,
+          "weaker_self_radical_dimension": 1
+        }
+      ],
+      "u": 2,
+      "v": 3
+    }
+  ],
+  "protocol_sha256": "9bb5e18a891e19322cc9b73669832a495b530360c2eaf5436595227fa61aae8e",
+  "schema": "rank-jump.local-collision.v1",
+  "script_sha256": "09ab16e69d8113e30a844e7c97dd0e2e48411e662bb3235058e5405ee6182542",
+  "summary": {
+    "eligible_new_prime_events": 19,
+    "matched_events": 19,
+    "pairs_with_strictly_weaker_common_self_test": 15,
+    "primary_endpoint": "PASS_ON_ALL_ELIGIBLE_RETAINED_EVENTS"
+  }
+}

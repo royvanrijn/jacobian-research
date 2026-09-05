@@ -1,0 +1,682 @@
+{
+  "collision_report_sha256": "ca86ff93ef8bd5d53a441aa275a7986bcdc1e11f5e803540df3b7749833c0eb8",
+  "input_sha256": "440372c18d42243ce447cad470c7bfd6ba5d5c757740e3ce413af6b0d8194f71",
+  "omitted_place_argument": "For odd p outside support, s,A,B,f(s) are integral and f(s) is a unit. If x(P) is nonintegral then its valuation is even, so the Hilbert symbol of the unit f(s) with x(P)-s is 1. If x(P)-s is a unit both arguments are units. Otherwise f(s) is congruent to y(P)^2 modulo p and is a nonzero residue square. Thus the symbol is again 1.",
+  "protocol_sha256": "c14e31ebd5c416e3e7bf3c0bcad661ee01cf16ca8c4a28fde361c7f06732c572",
+  "rows": [
+    {
+      "additional_new_relations_beyond_product": 0,
+      "boundary_vector_sum": 571928,
+      "evaluation_s": "-1/3",
+      "f_at_s": "4518388182637486269462426250489564634402240510936324/27",
+      "hilbert_vectors": [
+        {
+          "new": false,
+          "place": 2,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 3,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 5,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 7,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 13,
+          "vector": 571928
+        },
+        {
+          "new": false,
+          "place": 17,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 31,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 79,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 1049,
+          "vector": 0
+        },
+        {
+          "new": true,
+          "place": 6807347,
+          "vector": 965659
+        },
+        {
+          "new": true,
+          "place": 5070588247,
+          "vector": 514614
+        },
+        {
+          "new": false,
+          "place": 71889448247,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 40200713707633,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 491007790268548705232623905732119,
+          "vector": 0
+        },
+        {
+          "new": true,
+          "place": 2517352081717261588189318068375793,
+          "vector": 121909
+        },
+        {
+          "new": false,
+          "place": "infinity",
+          "vector": 0
+        }
+      ],
+      "local_codimension_from_old_plus_new_minus_one_plus_real": 3,
+      "new_prime_count": 3,
+      "new_prime_order": [
+        6807347,
+        5070588247,
+        2517352081717261588189318068375793
+      ],
+      "new_relation_dimension": 0,
+      "new_vector_rank": 3,
+      "new_vector_sum": 571928,
+      "nonzero_boundary_places": [
+        13
+      ],
+      "product_relation_verified": true,
+      "pure_new_product_relation": false,
+      "relation_basis_mod_inherited_conditions": [
+        7
+      ],
+      "root_character_identifications_verified_at": [
+        6807347,
+        5070588247,
+        2517352081717261588189318068375793
+      ],
+      "u": -3
+    },
+    {
+      "additional_new_relations_beyond_product": 0,
+      "boundary_vector_sum": 0,
+      "evaluation_s": "-1/2",
+      "f_at_s": "1338781683744440383804863225201606385711842968166875/8",
+      "hilbert_vectors": [
+        {
+          "new": false,
+          "place": 2,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 3,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 5,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 7,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 13,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 17,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 31,
+          "vector": 0
+        },
+        {
+          "new": true,
+          "place": 61,
+          "vector": 65707
+        },
+        {
+          "new": false,
+          "place": 79,
+          "vector": 0
+        },
+        {
+          "new": true,
+          "place": 463,
+          "vector": 448980
+        },
+        {
+          "new": true,
+          "place": 1033,
+          "vector": 852936
+        },
+        {
+          "new": false,
+          "place": 1049,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 71889448247,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 40200713707633,
+          "vector": 0
+        },
+        {
+          "new": true,
+          "place": 88377350996665273,
+          "vector": 43336
+        },
+        {
+          "new": true,
+          "place": 830763901348107124747241,
+          "vector": 685055
+        },
+        {
+          "new": false,
+          "place": 491007790268548705232623905732119,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": "infinity",
+          "vector": 0
+        }
+      ],
+      "local_codimension_from_old_plus_new_minus_one_plus_real": 7,
+      "new_prime_count": 5,
+      "new_prime_order": [
+        61,
+        463,
+        1033,
+        88377350996665273,
+        830763901348107124747241
+      ],
+      "new_relation_dimension": 1,
+      "new_vector_rank": 4,
+      "new_vector_sum": 0,
+      "nonzero_boundary_places": [],
+      "product_relation_verified": true,
+      "pure_new_product_relation": true,
+      "relation_basis_mod_inherited_conditions": [
+        31
+      ],
+      "root_character_identifications_verified_at": [
+        61,
+        463,
+        1033,
+        88377350996665273,
+        830763901348107124747241
+      ],
+      "u": -2
+    },
+    {
+      "additional_new_relations_beyond_product": 0,
+      "boundary_vector_sum": 0,
+      "evaluation_s": "-1",
+      "f_at_s": "167347710468055050851050918101962677922339205090512",
+      "hilbert_vectors": [
+        {
+          "new": false,
+          "place": 2,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 3,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 5,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 7,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 13,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 17,
+          "vector": 0
+        },
+        {
+          "new": true,
+          "place": 19,
+          "vector": 195358
+        },
+        {
+          "new": false,
+          "place": 31,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 79,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 1049,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 71889448247,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 40200713707633,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 491007790268548705232623905732119,
+          "vector": 0
+        },
+        {
+          "new": true,
+          "place": 550485889697549509378456967440666703691905279903,
+          "vector": 195358
+        },
+        {
+          "new": false,
+          "place": "infinity",
+          "vector": 0
+        }
+      ],
+      "local_codimension_from_old_plus_new_minus_one_plus_real": 2,
+      "new_prime_count": 2,
+      "new_prime_order": [
+        19,
+        550485889697549509378456967440666703691905279903
+      ],
+      "new_relation_dimension": 1,
+      "new_vector_rank": 1,
+      "new_vector_sum": 0,
+      "nonzero_boundary_places": [],
+      "product_relation_verified": true,
+      "pure_new_product_relation": true,
+      "relation_basis_mod_inherited_conditions": [
+        3
+      ],
+      "root_character_identifications_verified_at": [
+        19,
+        550485889697549509378456967440666703691905279903
+      ],
+      "u": -1
+    },
+    {
+      "additional_new_relations_beyond_product": 0,
+      "boundary_vector_sum": 252600,
+      "evaluation_s": "1",
+      "f_at_s": "167347710468055039349278858294915159088903868811900",
+      "hilbert_vectors": [
+        {
+          "new": false,
+          "place": 2,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 3,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 5,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 7,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 13,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 17,
+          "vector": 0
+        },
+        {
+          "new": true,
+          "place": 23,
+          "vector": 171729
+        },
+        {
+          "new": false,
+          "place": 31,
+          "vector": 252600
+        },
+        {
+          "new": false,
+          "place": 79,
+          "vector": 0
+        },
+        {
+          "new": true,
+          "place": 103,
+          "vector": 431291
+        },
+        {
+          "new": false,
+          "place": 1049,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 71889448247,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 40200713707633,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 491007790268548705232623905732119,
+          "vector": 0
+        },
+        {
+          "new": true,
+          "place": 735074448304715650993556022553346486326391,
+          "vector": 512210
+        },
+        {
+          "new": false,
+          "place": "infinity",
+          "vector": 0
+        }
+      ],
+      "local_codimension_from_old_plus_new_minus_one_plus_real": 7,
+      "new_prime_count": 3,
+      "new_prime_order": [
+        23,
+        103,
+        735074448304715650993556022553346486326391
+      ],
+      "new_relation_dimension": 0,
+      "new_vector_rank": 3,
+      "new_vector_sum": 252600,
+      "nonzero_boundary_places": [
+        31
+      ],
+      "product_relation_verified": true,
+      "pure_new_product_relation": false,
+      "relation_basis_mod_inherited_conditions": [
+        7
+      ],
+      "root_character_identifications_verified_at": [
+        23,
+        103,
+        735074448304715650993556022553346486326391
+      ],
+      "u": 1
+    },
+    {
+      "additional_new_relations_beyond_product": 0,
+      "boundary_vector_sum": 0,
+      "evaluation_s": "1/2",
+      "f_at_s": "1338781683744440337797774985973416310378101623052421/8",
+      "hilbert_vectors": [
+        {
+          "new": false,
+          "place": 2,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 3,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 5,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 7,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 13,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 17,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 31,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 79,
+          "vector": 0
+        },
+        {
+          "new": true,
+          "place": 233,
+          "vector": 300896
+        },
+        {
+          "new": true,
+          "place": 647,
+          "vector": 942226
+        },
+        {
+          "new": false,
+          "place": 1049,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 71889448247,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 40200713707633,
+          "vector": 0
+        },
+        {
+          "new": true,
+          "place": 26558335042564254253,
+          "vector": 475204
+        },
+        {
+          "new": true,
+          "place": 47769497729370851316266401,
+          "vector": 898998
+        },
+        {
+          "new": false,
+          "place": 491007790268548705232623905732119,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": "infinity",
+          "vector": 0
+        }
+      ],
+      "local_codimension_from_old_plus_new_minus_one_plus_real": 7,
+      "new_prime_count": 4,
+      "new_prime_order": [
+        233,
+        647,
+        26558335042564254253,
+        47769497729370851316266401
+      ],
+      "new_relation_dimension": 1,
+      "new_vector_rank": 3,
+      "new_vector_sum": 0,
+      "nonzero_boundary_places": [],
+      "product_relation_verified": true,
+      "pure_new_product_relation": true,
+      "relation_basis_mod_inherited_conditions": [
+        15
+      ],
+      "root_character_identifications_verified_at": [
+        233,
+        647,
+        26558335042564254253,
+        47769497729370851316266401
+      ],
+      "u": 2
+    },
+    {
+      "additional_new_relations_beyond_product": 0,
+      "boundary_vector_sum": 0,
+      "evaluation_s": "1/3",
+      "f_at_s": "4518388182637486165946477712226136964901322484428800/27",
+      "hilbert_vectors": [
+        {
+          "new": false,
+          "place": 2,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 3,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 5,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 7,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 13,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 17,
+          "vector": 0
+        },
+        {
+          "new": true,
+          "place": 23,
+          "vector": 182463
+        },
+        {
+          "new": false,
+          "place": 31,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 79,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 1049,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 71889448247,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 40200713707633,
+          "vector": 0
+        },
+        {
+          "new": false,
+          "place": 491007790268548705232623905732119,
+          "vector": 0
+        },
+        {
+          "new": true,
+          "place": 39152515169537888943496957771480362731024381,
+          "vector": 182463
+        },
+        {
+          "new": false,
+          "place": "infinity",
+          "vector": 0
+        }
+      ],
+      "local_codimension_from_old_plus_new_minus_one_plus_real": 5,
+      "new_prime_count": 2,
+      "new_prime_order": [
+        23,
+        39152515169537888943496957771480362731024381
+      ],
+      "new_relation_dimension": 1,
+      "new_vector_rank": 1,
+      "new_vector_sum": 0,
+      "nonzero_boundary_places": [],
+      "product_relation_verified": true,
+      "pure_new_product_relation": true,
+      "relation_basis_mod_inherited_conditions": [
+        3
+      ],
+      "root_character_identifications_verified_at": [
+        23,
+        39152515169537888943496957771480362731024381
+      ],
+      "u": 3
+    }
+  ],
+  "schema": "rank-jump.reciprocity.v1",
+  "scope": "Rational Hilbert reciprocity among local incidence bits only. No Cassels-Tate form, soluble point, Selmer complement or rank bound is inferred.",
+  "script_sha256": "00e8616a192838c9fcb2b74ea341eba7924d81f4351921d95657dbdd011e754f"
+}

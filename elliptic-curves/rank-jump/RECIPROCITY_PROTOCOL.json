@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.reciprocity-followup-protocol.v1",
+  "trigger": "The root-collision audit matched 19/19 eligible events but found dependencies among new-prime character rows.",
+  "hypothesis": "For each fixed nonzero u, the new-prime root characters are rational Hilbert symbols (f(1/u), x(P_i)-1/u)_p. Their product is constrained by Hilbert reciprocity; primes outside the existing finite support and infinity contribute trivially.",
+  "endpoint": "Exactly replay every Hilbert vector, compare it with every eligible predicted root character, and test the product relation on all twenty anchor classes. Record which inherited-place and real terms account for the sum of the new-prime vectors.",
+  "scope": "Six existing deformations and twenty fixed anchor classes. This explains dependence of local incidence conditions, not rational solubility of the surviving covers.",
+  "limits": {"new_parameters": 0, "new_factorizations": 0, "point_searches": 0, "wall_seconds": 30},
+  "interpretation": "A relation may involve inherited places and infinity. Never infer that all new-prime rows sum to zero unless the boundary terms actually vanish. Extra row relations beyond this product remain separately unexplained."
+}

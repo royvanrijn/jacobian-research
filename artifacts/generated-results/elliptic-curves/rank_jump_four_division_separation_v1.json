@@ -1,0 +1,199 @@
+{
+  "anchor_galois": {
+    "claim": "Equation-only E[2] representation test, not a rank predictor.",
+    "cubic_discriminant": "4647169165086201522253423951494063406713720029198475812735152009907780357949497411403055104000000000",
+    "discriminant_rational_square": false,
+    "galois_group": "S3",
+    "irreducibility_prime": 37,
+    "layer": "incidence"
+  },
+  "claim_boundary": "Exact consequences of the written lemma and checked prime hypotheses, not explicit construction of the division fields. The three quadratic field directions are not Mordell-Weil directions; no rank or CT pairing value follows.",
+  "field_formula": "F0*Q(Eu[4]) = F0(sqrt(1-u*theta_1),sqrt(1-u*theta_2),sqrt(1-u*theta_3)), F0=Q(E0[4])",
+  "input_sha256": "440372c18d42243ce447cad470c7bfd6ba5d5c757740e3ce413af6b0d8194f71",
+  "proof": "elliptic-curves/rank-jump/LOCAL_COLLISION_AND_RECIPROCITY.md#the-preserved-cubic-hides-a-full-change-in-four-division-data",
+  "rows": [
+    {
+      "D": "-4518388182637486269462426250489564634402240510936324",
+      "anchor_good_reduction": true,
+      "f_derivative_mod_p": 2680379,
+      "matrix_justification": "Good odd-prime reduction makes Q(E0[4])/Q unramified here. Exactly one 1-u*theta_i has valuation 1; transitivity of the roots supplies three conjugate prime ideals isolating the three factors.",
+      "p_is_prime_by_trial_division": true,
+      "relative_degree_over_anchor_four_division_field": 8,
+      "relative_galois_group": "(Z/2)^3",
+      "root_mod_p": 4538231,
+      "simple_good_collision_prime": 6807347,
+      "u": "-3",
+      "v_p_D": 1,
+      "valuation_witness_matrix_at_three_conjugate_primes": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "D": "-1338781683744440383804863225201606385711842968166875",
+      "anchor_good_reduction": true,
+      "f_derivative_mod_p": 16,
+      "matrix_justification": "Good odd-prime reduction makes Q(E0[4])/Q unramified here. Exactly one 1-u*theta_i has valuation 1; transitivity of the roots supplies three conjugate prime ideals isolating the three factors.",
+      "p_is_prime_by_trial_division": true,
+      "relative_degree_over_anchor_four_division_field": 8,
+      "relative_galois_group": "(Z/2)^3",
+      "root_mod_p": 30,
+      "simple_good_collision_prime": 61,
+      "u": "-2",
+      "v_p_D": 1,
+      "valuation_witness_matrix_at_three_conjugate_primes": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "D": "-167347710468055050851050918101962677922339205090512",
+      "anchor_good_reduction": true,
+      "f_derivative_mod_p": 18,
+      "matrix_justification": "Good odd-prime reduction makes Q(E0[4])/Q unramified here. Exactly one 1-u*theta_i has valuation 1; transitivity of the roots supplies three conjugate prime ideals isolating the three factors.",
+      "p_is_prime_by_trial_division": true,
+      "relative_degree_over_anchor_four_division_field": 8,
+      "relative_galois_group": "(Z/2)^3",
+      "root_mod_p": 18,
+      "simple_good_collision_prime": 19,
+      "u": "-1",
+      "v_p_D": 1,
+      "valuation_witness_matrix_at_three_conjugate_primes": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "D": "167347710468055039349278858294915159088903868811900",
+      "anchor_good_reduction": true,
+      "f_derivative_mod_p": 22,
+      "matrix_justification": "Good odd-prime reduction makes Q(E0[4])/Q unramified here. Exactly one 1-u*theta_i has valuation 1; transitivity of the roots supplies three conjugate prime ideals isolating the three factors.",
+      "p_is_prime_by_trial_division": true,
+      "relative_degree_over_anchor_four_division_field": 8,
+      "relative_galois_group": "(Z/2)^3",
+      "root_mod_p": 1,
+      "simple_good_collision_prime": 23,
+      "u": "1",
+      "v_p_D": 1,
+      "valuation_witness_matrix_at_three_conjugate_primes": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "D": "1338781683744440337797774985973416310378101623052421",
+      "anchor_good_reduction": true,
+      "f_derivative_mod_p": 218,
+      "matrix_justification": "Good odd-prime reduction makes Q(E0[4])/Q unramified here. Exactly one 1-u*theta_i has valuation 1; transitivity of the roots supplies three conjugate prime ideals isolating the three factors.",
+      "p_is_prime_by_trial_division": true,
+      "relative_degree_over_anchor_four_division_field": 8,
+      "relative_galois_group": "(Z/2)^3",
+      "root_mod_p": 117,
+      "simple_good_collision_prime": 233,
+      "u": "2",
+      "v_p_D": 1,
+      "valuation_witness_matrix_at_three_conjugate_primes": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "D": "4518388182637486165946477712226136964901322484428800",
+      "anchor_good_reduction": true,
+      "f_derivative_mod_p": 4,
+      "matrix_justification": "Good odd-prime reduction makes Q(E0[4])/Q unramified here. Exactly one 1-u*theta_i has valuation 1; transitivity of the roots supplies three conjugate prime ideals isolating the three factors.",
+      "p_is_prime_by_trial_division": true,
+      "relative_degree_over_anchor_four_division_field": 8,
+      "relative_galois_group": "(Z/2)^3",
+      "root_mod_p": 8,
+      "simple_good_collision_prime": 23,
+      "u": "3",
+      "v_p_D": 1,
+      "valuation_witness_matrix_at_three_conjugate_primes": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    }
+  ],
+  "schema": "rank-jump.four-division-separation.v1",
+  "script_sha256": "4b9798b575978d99333c4d3df294400b27e3e8b730ad9dd6acac232a7f76fdd1",
+  "source_formula": "https://arxiv.org/pdf/1704.06190, Theorem 1(a)"
+}
