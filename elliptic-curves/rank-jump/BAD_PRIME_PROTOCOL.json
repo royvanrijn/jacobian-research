@@ -1,0 +1,15 @@
+{
+  "schema": "rank-jump.bad-prime-protocol.v1",
+  "scope": "Retrospective local Kummer comparison on the six fibres in the three previously pinned pairs.",
+  "primes": [3, 5, 7, 11, 13],
+  "hypothesis": "The known high-gain quotient directions open local squareclass directions at these small bad primes that the marked generic subgroup does not already span.",
+  "primary_endpoint": "At each prime, dimension of the generic-plus-selected-exceptional local image minus dimension of the generic local image.",
+  "secondary_endpoint": "The same dimension difference in the product of the five local squareclass spaces, with a common generic combination required across primes.",
+  "local_model": "Clear denominators by an elliptic scaling x -> d^2*x, y -> d^3*y. Use an order certified maximal at exactly the five listed primes, and exact prime-ideal valuation and residue-square characters.",
+  "reduction": "Classify all thirty curve-prime cases by local minimal reduction. A denominator or a nonminimal discriminant does not by itself define bad reduction.",
+  "completeness": "For odd p, dim E(Q_p)/2E(Q_p) equals the number of cubic local factors minus one. If the generic image reaches it, all rational point classes are locally covered.",
+  "bounds": "Six sequential curve workers, each with a 30-second wall timeout; thirty local cases. Checkpoint each completed curve separately. No BNF, global discriminant factorization, global unit computation, new rational point, or parameter sweep.",
+  "failure_semantics": "Timeouts and incomplete arithmetic remain UNKNOWN. A zero quotient support on this dictionary excludes neither other primes nor global Selmer directions.",
+  "oracle_policy": "Exceptional points are labelled retrospective diagnostics only. They are not supplied to a prospective selector.",
+  "non_interference": "Import the existing LocalSquareclasses implementation without a cache adapter. Never write its shared arithmetic store or any active search output."
+}
