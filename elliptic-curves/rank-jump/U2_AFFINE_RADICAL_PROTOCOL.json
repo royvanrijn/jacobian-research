@@ -1,0 +1,14 @@
+{
+  "schema": "rank-jump.u2-affine-radical-protocol.v1",
+  "parameter_u": 2,
+  "question": "Which two affine classes survive the enlarged CT test at u=2, and do their exact covers have a rational point in one frozen small box?",
+  "layers": ["solubility obstruction", "bounded rational solubility witness"],
+  "old_basis_indices": [0,1,2,3,4,5,6,7,8,9,10,12],
+  "omitted_basis_index": 11,
+  "existing_old_radical_mask": 513585,
+  "existing_pairing_with_radical": 0,
+  "limits": {"ct_pairs": 12, "seconds_per_pair": 60, "radical_covers": 2, "seconds_per_cover": 60, "point_search_height": 10000, "seconds_per_point_search": 10, "new_parameters": 0},
+  "selection": "All old basis vectors except the highest supported coordinate of the old radical; no arithmetic score selection.",
+  "checkpoint": "One immutable result per pairing, cover, and bounded point test, with an isolated rank-jump arithmetic store.",
+  "failure_semantics": "A missed or timed-out point search is UNKNOWN, never a Sha or rank-zero conclusion. No full Selmer or curve-rank upper bound is claimed."
+}

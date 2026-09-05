@@ -1,0 +1,75 @@
+{
+  "CT_correction_old_basis_mask": 8049,
+  "affine_anchor_masks": [
+    438453,
+    91780
+  ],
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_affine_ct_v1.json": "790f047641bf56fc705936db651e3d7c3d9cb75a789d9816c5313972c4b8db8f",
+    "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+    "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_v1.json": "2d0295be42144e12a4acc6866faaee73536bc47fb4f11a80ab64b01726d5cff3",
+    "artifacts/generated-results/elliptic-curves/rank_jump_local_collision_inputs_v1.json": "440372c18d42243ce447cad470c7bfd6ba5d5c757740e3ce413af6b0d8194f71",
+    "elliptic-curves/rank-jump/U2_AFFINE_RADICAL_PROTOCOL.json": "90656658cbcf7bdaf29423c458e4836bab5804ecc3b1d9fd9978d67f345f8b40",
+    "elliptic-curves/rank-jump/affine_ct.py": "f39ba33059e3b7fedd0748701e8925742e25564522f422bf702f6079c1f54223",
+    "elliptic-curves/rank-jump/u2_affine_radical.py": "538afba5f11f8da2783819d11e158ba697120bc7f51ae0f5884441ae27db97b1"
+  },
+  "embedded_radical_basis": [
+    513585,
+    1140356
+  ],
+  "extended_CT_matrix_packed_rows": [
+    3618,
+    2925,
+    15298,
+    11650,
+    14592,
+    3139,
+    3494,
+    5452,
+    9438,
+    13319,
+    3049,
+    5247,
+    10900,
+    4892
+  ],
+  "extended_CT_rank": 12,
+  "new_CT_column": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1
+  ],
+  "old_basis": [
+    252,
+    325,
+    599,
+    1092,
+    2056,
+    4172,
+    8302,
+    16505,
+    32845,
+    65632,
+    131171,
+    262233,
+    524404
+  ],
+  "old_radical_coordinate_mask": 4012,
+  "old_radical_mask": 513585,
+  "omitted_column_index": 11,
+  "pair_input_sha256": "eda1b149bcc012b682b40671f3ce37a1ef2fecdac2eb1b5cfd9526f393624641",
+  "restricted_radical_dimension": 2,
+  "schema": "rank-jump.u2-affine-radical.v1",
+  "scope": "The two affine masks specify eta times their anchor products; solubility remains UNKNOWN.",
+  "u": 2
+}

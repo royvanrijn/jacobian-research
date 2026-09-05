@@ -1,0 +1,603 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+    "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_v1.json": "2d0295be42144e12a4acc6866faaee73536bc47fb4f11a80ab64b01726d5cff3",
+    "artifacts/generated-results/elliptic-curves/rank_jump_local_collision_inputs_v1.json": "440372c18d42243ce447cad470c7bfd6ba5d5c757740e3ce413af6b0d8194f71",
+    "artifacts/generated-results/elliptic-curves/rank_jump_local_collision_v1.json": "ca86ff93ef8bd5d53a441aa275a7986bcdc1e11f5e803540df3b7749833c0eb8",
+    "elliptic-curves/rank-jump/RAMIFICATION_BLOCK_PROTOCOL.json": "02baa5812c7f60ea4d9956ef82087781e3a46bc9328975de17a3bdce2605801b",
+    "elliptic-curves/rank-jump/ramification_block.py": "77ea3c4ea26a47d784986253cceeed58fc1020db59bc3ef6c2ef9e3b43982407"
+  },
+  "rows": [
+    {
+      "allowed_ramification_basis": [
+        7
+      ],
+      "exact_dimension_status": "UNKNOWN_ZERO_OR_ONE",
+      "full_selmer_new_ramification_dimension_exact": null,
+      "full_selmer_new_ramification_dimension_upper_bound": 1,
+      "local_checks": [
+        {
+          "local_pairing_identity_verified": true,
+          "local_ramification_pattern": [
+            1,
+            1,
+            0
+          ],
+          "point_basis_ramification_bits": [
+            0,
+            1
+          ],
+          "prime": 6807347,
+          "root_character": 965659
+        },
+        {
+          "local_pairing_identity_verified": true,
+          "local_ramification_pattern": [
+            0,
+            1
+          ],
+          "point_basis_ramification_bits": [
+            1
+          ],
+          "prime": 5070588247,
+          "root_character": 514614
+        },
+        {
+          "local_pairing_identity_verified": true,
+          "local_ramification_pattern": [
+            0,
+            1,
+            1
+          ],
+          "point_basis_ramification_bits": [
+            0,
+            1
+          ],
+          "prime": 2517352081717261588189318068375793,
+          "root_character": 121909
+        }
+      ],
+      "new_prime_order": [
+        6807347,
+        5070588247,
+        2517352081717261588189318068375793
+      ],
+      "realization_source": null,
+      "reciprocity_matrix_packed_rows": [
+        5,
+        3,
+        6,
+        6,
+        6,
+        0,
+        0,
+        0,
+        3,
+        5,
+        6,
+        6,
+        0,
+        6,
+        6,
+        6,
+        3,
+        3,
+        0
+      ],
+      "reciprocity_matrix_rank": 2,
+      "test_space_basis": [
+        1,
+        2,
+        4,
+        24,
+        32,
+        64,
+        128,
+        256,
+        520,
+        1024,
+        2056,
+        4104,
+        8200,
+        16384,
+        32776,
+        65536,
+        131072,
+        262144,
+        524296
+      ],
+      "test_space_dimension": 19,
+      "u": -3
+    },
+    {
+      "allowed_ramification_basis": [
+        31
+      ],
+      "exact_dimension_status": "UNKNOWN_ZERO_OR_ONE",
+      "full_selmer_new_ramification_dimension_exact": null,
+      "full_selmer_new_ramification_dimension_upper_bound": 1,
+      "local_checks": [
+        {
+          "local_pairing_identity_verified": true,
+          "local_ramification_pattern": [
+            0,
+            1,
+            1
+          ],
+          "point_basis_ramification_bits": [
+            0,
+            1
+          ],
+          "prime": 61,
+          "root_character": 65707
+        },
+        {
+          "local_pairing_identity_verified": true,
+          "local_ramification_pattern": [
+            0,
+            1
+          ],
+          "point_basis_ramification_bits": [
+            1
+          ],
+          "prime": 463,
+          "root_character": 448980
+        },
+        {
+          "local_pairing_identity_verified": true,
+          "local_ramification_pattern": [
+            0,
+            1
+          ],
+          "point_basis_ramification_bits": [
+            1
+          ],
+          "prime": 1033,
+          "root_character": 852936
+        },
+        {
+          "local_pairing_identity_verified": true,
+          "local_ramification_pattern": [
+            0,
+            1,
+            1
+          ],
+          "point_basis_ramification_bits": [
+            0,
+            1
+          ],
+          "prime": 88377350996665273,
+          "root_character": 43336
+        },
+        {
+          "local_pairing_identity_verified": true,
+          "local_ramification_pattern": [
+            0,
+            1
+          ],
+          "point_basis_ramification_bits": [
+            1
+          ],
+          "prime": 830763901348107124747241,
+          "root_character": 685055
+        }
+      ],
+      "new_prime_order": [
+        61,
+        463,
+        1033,
+        88377350996665273,
+        830763901348107124747241
+      ],
+      "realization_source": null,
+      "reciprocity_matrix_packed_rows": [
+        3,
+        30,
+        12,
+        15,
+        27,
+        30,
+        9,
+        0,
+        6,
+        30,
+        9,
+        15,
+        23,
+        9,
+        30,
+        6,
+        20
+      ],
+      "reciprocity_matrix_rank": 4,
+      "test_space_basis": [
+        6,
+        25,
+        43,
+        66,
+        138,
+        259,
+        520,
+        1027,
+        2058,
+        4106,
+        8193,
+        16395,
+        32776,
+        65546,
+        131082,
+        262144,
+        524291
+      ],
+      "test_space_dimension": 17,
+      "u": -2
+    },
+    {
+      "allowed_ramification_basis": [
+        3
+      ],
+      "exact_dimension_status": "PROVED_ONE",
+      "full_selmer_new_ramification_dimension_exact": 1,
+      "full_selmer_new_ramification_dimension_upper_bound": 1,
+      "local_checks": [
+        {
+          "local_pairing_identity_verified": true,
+          "local_ramification_pattern": [
+            0,
+            1
+          ],
+          "point_basis_ramification_bits": [
+            1
+          ],
+          "prime": 19,
+          "root_character": 195358
+        },
+        {
+          "local_pairing_identity_verified": true,
+          "local_ramification_pattern": [
+            0,
+            1
+          ],
+          "point_basis_ramification_bits": [
+            1
+          ],
+          "prime": 550485889697549509378456967440666703691905279903,
+          "root_character": 195358
+        }
+      ],
+      "new_prime_order": [
+        19,
+        550485889697549509378456967440666703691905279903
+      ],
+      "realization_source": "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_v1.json",
+      "reciprocity_matrix_packed_rows": [
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        3,
+        3,
+        0,
+        3,
+        3,
+        3,
+        0,
+        3
+      ],
+      "reciprocity_matrix_rank": 1,
+      "test_space_basis": [
+        1,
+        6,
+        10,
+        18,
+        34,
+        64,
+        128,
+        258,
+        514,
+        1026,
+        2050,
+        4096,
+        8192,
+        16386,
+        32768,
+        65538,
+        131072,
+        262144,
+        524290
+      ],
+      "test_space_dimension": 19,
+      "u": -1
+    },
+    {
+      "allowed_ramification_basis": [
+        7
+      ],
+      "exact_dimension_status": "UNKNOWN_ZERO_OR_ONE",
+      "full_selmer_new_ramification_dimension_exact": null,
+      "full_selmer_new_ramification_dimension_upper_bound": 1,
+      "local_checks": [
+        {
+          "local_pairing_identity_verified": true,
+          "local_ramification_pattern": [
+            1,
+            1,
+            0
+          ],
+          "point_basis_ramification_bits": [
+            0,
+            1
+          ],
+          "prime": 23,
+          "root_character": 171729
+        },
+        {
+          "local_pairing_identity_verified": true,
+          "local_ramification_pattern": [
+            1,
+            0,
+            1
+          ],
+          "point_basis_ramification_bits": [
+            0,
+            1
+          ],
+          "prime": 103,
+          "root_character": 431291
+        },
+        {
+          "local_pairing_identity_verified": true,
+          "local_ramification_pattern": [
+            0,
+            1
+          ],
+          "point_basis_ramification_bits": [
+            1
+          ],
+          "prime": 735074448304715650993556022553346486326391,
+          "root_character": 512210
+        }
+      ],
+      "new_prime_order": [
+        23,
+        103,
+        735074448304715650993556022553346486326391
+      ],
+      "realization_source": null,
+      "reciprocity_matrix_packed_rows": [
+        3,
+        5,
+        0,
+        0,
+        6,
+        6,
+        0,
+        6,
+        0,
+        0,
+        5,
+        3,
+        0,
+        5,
+        6
+      ],
+      "reciprocity_matrix_rank": 2,
+      "test_space_basis": [
+        30,
+        104,
+        163,
+        260,
+        551,
+        1027,
+        2081,
+        4109,
+        8192,
+        16422,
+        32780,
+        65575,
+        131083,
+        262185,
+        524290
+      ],
+      "test_space_dimension": 15,
+      "u": 1
+    },
+    {
+      "allowed_ramification_basis": [
+        15
+      ],
+      "exact_dimension_status": "PROVED_ONE",
+      "full_selmer_new_ramification_dimension_exact": 1,
+      "full_selmer_new_ramification_dimension_upper_bound": 1,
+      "local_checks": [
+        {
+          "local_pairing_identity_verified": true,
+          "local_ramification_pattern": [
+            0,
+            1,
+            1
+          ],
+          "point_basis_ramification_bits": [
+            0,
+            1
+          ],
+          "prime": 233,
+          "root_character": 300896
+        },
+        {
+          "local_pairing_identity_verified": true,
+          "local_ramification_pattern": [
+            0,
+            1,
+            1
+          ],
+          "point_basis_ramification_bits": [
+            0,
+            1
+          ],
+          "prime": 647,
+          "root_character": 942226
+        },
+        {
+          "local_pairing_identity_verified": true,
+          "local_ramification_pattern": [
+            0,
+            1
+          ],
+          "point_basis_ramification_bits": [
+            1
+          ],
+          "prime": 26558335042564254253,
+          "root_character": 475204
+        },
+        {
+          "local_pairing_identity_verified": true,
+          "local_ramification_pattern": [
+            0,
+            1
+          ],
+          "point_basis_ramification_bits": [
+            1
+          ],
+          "prime": 47769497729370851316266401,
+          "root_character": 898998
+        }
+      ],
+      "new_prime_order": [
+        233,
+        647,
+        26558335042564254253,
+        47769497729370851316266401
+      ],
+      "realization_source": "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_v1.json",
+      "reciprocity_matrix_packed_rows": [
+        6,
+        10,
+        5,
+        9,
+        3,
+        9,
+        3,
+        0,
+        3,
+        3,
+        15,
+        3,
+        5,
+        5,
+        15,
+        9
+      ],
+      "reciprocity_matrix_rank": 3,
+      "test_space_basis": [
+        6,
+        24,
+        65,
+        163,
+        258,
+        520,
+        1027,
+        2056,
+        4107,
+        8233,
+        16416,
+        32778,
+        65569,
+        131106,
+        262144,
+        524331
+      ],
+      "test_space_dimension": 16,
+      "u": 2
+    },
+    {
+      "allowed_ramification_basis": [
+        3
+      ],
+      "exact_dimension_status": "PROVED_ONE",
+      "full_selmer_new_ramification_dimension_exact": 1,
+      "full_selmer_new_ramification_dimension_upper_bound": 1,
+      "local_checks": [
+        {
+          "local_pairing_identity_verified": true,
+          "local_ramification_pattern": [
+            1,
+            0,
+            1
+          ],
+          "point_basis_ramification_bits": [
+            0,
+            1
+          ],
+          "prime": 23,
+          "root_character": 182463
+        },
+        {
+          "local_pairing_identity_verified": true,
+          "local_ramification_pattern": [
+            0,
+            1
+          ],
+          "point_basis_ramification_bits": [
+            1
+          ],
+          "prime": 39152515169537888943496957771480362731024381,
+          "root_character": 182463
+        }
+      ],
+      "new_prime_order": [
+        23,
+        39152515169537888943496957771480362731024381
+      ],
+      "realization_source": "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_v1.json",
+      "reciprocity_matrix_packed_rows": [
+        0,
+        0,
+        3,
+        0,
+        3,
+        3,
+        0,
+        0,
+        3,
+        3,
+        0,
+        3,
+        0,
+        3,
+        0,
+        0
+      ],
+      "reciprocity_matrix_rank": 1,
+      "test_space_basis": [
+        6,
+        27,
+        65,
+        160,
+        258,
+        523,
+        1027,
+        2059,
+        4104,
+        8234,
+        16419,
+        32777,
+        65569,
+        131105,
+        262144,
+        524328
+      ],
+      "test_space_dimension": 16,
+      "u": 3
+    }
+  ],
+  "schema": "rank-jump.ramification-block.v1",
+  "scope": "Full Selmer classes satisfy the ramification constraint by global reciprocity. No full Selmer dimension or curve-rank upper bound is inferred."
+}

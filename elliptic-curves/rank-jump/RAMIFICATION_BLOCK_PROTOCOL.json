@@ -1,0 +1,14 @@
+{
+  "schema": "rank-jump.ramification-block-protocol.v1",
+  "question": "Does reciprocity force the new-prime ramification vector of every Selmer class to be either zero or all ones?",
+  "layer": "incidence",
+  "parameters": [-3,-2,-1,1,2,3],
+  "limits": {"new_local_arithmetic": 0, "new_parameters": 0, "new_point_searches": 0},
+  "checks": [
+    "Use the exact test space of inherited classes locally admissible away from the newly bad primes, including the real place.",
+    "Verify on every retained complete local point-image basis that ramification has one local bit and its pairing with an unramified anchor class is the known root character.",
+    "Compute the kernel of the resulting global reciprocity equations on ramification bits.",
+    "Distinguish a one-dimensional upper bound from exact realization by an already certified new affine Selmer class."
+  ],
+  "failure_semantics": "This constrains the ramification quotient of the full Selmer group, not its total dimension or the Mordell-Weil rank."
+}
