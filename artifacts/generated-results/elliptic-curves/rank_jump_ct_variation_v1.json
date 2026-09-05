@@ -1,0 +1,2443 @@
+{
+  "boundary": "Pinned restricted CT matrices, not full Selmer forms. Linear-algebra components need an additional arithmetic interpretation. No rational point, positive rank predictor, or parameter-selection rule is produced.",
+  "comparisons": [
+    {
+      "common_basis_in_anchor_coordinates": [
+        1715,
+        2906,
+        5049,
+        8806,
+        16700,
+        33203,
+        66157,
+        131430,
+        262394,
+        525153
+      ],
+      "common_dimension": 10,
+      "difference_radical_in_anchor_coordinates": [
+        486722,
+        609753
+      ],
+      "difference_rank": 8,
+      "first_form_packed_rows": [
+        942,
+        1021,
+        963,
+        947,
+        394,
+        523,
+        774,
+        31,
+        95,
+        111
+      ],
+      "first_rank": 8,
+      "minimum_class_feature_dimension_for_bilinear_factorization": 8,
+      "minimum_rank_two_summands_for_difference": 4,
+      "second_form_packed_rows": [
+        50,
+        769,
+        424,
+        164,
+        577,
+        589,
+        816,
+        780,
+        198,
+        242
+      ],
+      "second_rank": 10,
+      "u": -3,
+      "v": -2
+    },
+    {
+      "common_basis_in_anchor_coordinates": [
+        7,
+        64,
+        128,
+        283,
+        529,
+        1081,
+        2064,
+        4136,
+        8240,
+        16387,
+        32808,
+        65568,
+        131130,
+        262169,
+        524331
+      ],
+      "common_dimension": 15,
+      "difference_radical_in_anchor_coordinates": [
+        84793,
+        180935,
+        284417
+      ],
+      "difference_rank": 12,
+      "first_form_packed_rows": [
+        6026,
+        28473,
+        14760,
+        15943,
+        3586,
+        1734,
+        26408,
+        6437,
+        5319,
+        7291,
+        9083,
+        4766,
+        27533,
+        5198,
+        4162
+      ],
+      "first_rank": 12,
+      "minimum_class_feature_dimension_for_bilinear_factorization": 12,
+      "minimum_rank_two_summands_for_difference": 6,
+      "second_form_packed_rows": [
+        31202,
+        26489,
+        16072,
+        19926,
+        7434,
+        32195,
+        19759,
+        24109,
+        14971,
+        4486,
+        14590,
+        22013,
+        4021,
+        17703,
+        10475
+      ],
+      "second_rank": 14,
+      "u": -3,
+      "v": -1
+    },
+    {
+      "common_basis_in_anchor_coordinates": [
+        7,
+        27,
+        35,
+        64,
+        128,
+        256,
+        522,
+        1025,
+        2059,
+        4107,
+        8200,
+        16387,
+        32779,
+        65539,
+        131074,
+        262146,
+        524296
+      ],
+      "common_dimension": 17,
+      "difference_radical_in_anchor_coordinates": [
+        370313
+      ],
+      "difference_rank": 16,
+      "first_form_packed_rows": [
+        75948,
+        52916,
+        128435,
+        113889,
+        87494,
+        62031,
+        98360,
+        73759,
+        86548,
+        102690,
+        92190,
+        46091,
+        52028,
+        3245,
+        38198,
+        23150,
+        2013
+      ],
+      "first_rank": 16,
+      "minimum_class_feature_dimension_for_bilinear_factorization": 16,
+      "minimum_rank_two_summands_for_difference": 8,
+      "second_form_packed_rows": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "second_rank": 0,
+      "u": -3,
+      "v": 0
+    },
+    {
+      "common_basis_in_anchor_coordinates": [
+        163,
+        593,
+        5386,
+        9585,
+        19830,
+        33809,
+        68717,
+        133162,
+        262469,
+        524656
+      ],
+      "common_dimension": 10,
+      "difference_radical_in_anchor_coordinates": [
+        116137,
+        411208
+      ],
+      "difference_rank": 8,
+      "first_form_packed_rows": [
+        470,
+        553,
+        369,
+        146,
+        109,
+        854,
+        437,
+        329,
+        741,
+        290
+      ],
+      "first_rank": 8,
+      "minimum_class_feature_dimension_for_bilinear_factorization": 8,
+      "minimum_rank_two_summands_for_difference": 4,
+      "second_form_packed_rows": [
+        700,
+        488,
+        273,
+        99,
+        101,
+        155,
+        282,
+        35,
+        70,
+        1
+      ],
+      "second_rank": 8,
+      "u": -3,
+      "v": 1
+    },
+    {
+      "common_basis_in_anchor_coordinates": [
+        1006,
+        1281,
+        2292,
+        4172,
+        8491,
+        16700,
+        33268,
+        65632,
+        131366,
+        262233,
+        524424
+      ],
+      "common_dimension": 11,
+      "difference_radical_in_anchor_coordinates": [
+        159530
+      ],
+      "difference_rank": 10,
+      "first_form_packed_rows": [
+        1320,
+        780,
+        42,
+        1367,
+        680,
+        21,
+        1544,
+        1040,
+        11,
+        82,
+        201
+      ],
+      "first_rank": 10,
+      "minimum_class_feature_dimension_for_bilinear_factorization": 10,
+      "minimum_rank_two_summands_for_difference": 5,
+      "second_form_packed_rows": [
+        998,
+        1165,
+        1211,
+        1574,
+        1156,
+        973,
+        1057,
+        55,
+        33,
+        41,
+        94
+      ],
+      "second_rank": 10,
+      "u": -3,
+      "v": 2
+    },
+    {
+      "common_basis_in_anchor_coordinates": [
+        27,
+        483,
+        586,
+        1189,
+        2059,
+        4335,
+        8299,
+        16515,
+        33000,
+        65575,
+        131174,
+        262310,
+        524424
+      ],
+      "common_dimension": 13,
+      "difference_radical_in_anchor_coordinates": [
+        738583
+      ],
+      "difference_rank": 12,
+      "first_form_packed_rows": [
+        6698,
+        3081,
+        4392,
+        1511,
+        992,
+        1693,
+        6168,
+        6712,
+        6172,
+        5297,
+        6698,
+        1475,
+        1989
+      ],
+      "first_rank": 12,
+      "minimum_class_feature_dimension_for_bilinear_factorization": 12,
+      "minimum_rank_two_summands_for_difference": 6,
+      "second_form_packed_rows": [
+        7720,
+        3168,
+        7160,
+        7141,
+        1860,
+        3535,
+        4670,
+        300,
+        2236,
+        2141,
+        2099,
+        5935,
+        2125
+      ],
+      "second_rank": 12,
+      "u": -3,
+      "v": 3
+    },
+    {
+      "common_basis_in_anchor_coordinates": [
+        282,
+        1132,
+        2624,
+        4220,
+        8806,
+        16457,
+        32937,
+        65714,
+        131196,
+        262293,
+        524923
+      ],
+      "common_dimension": 11,
+      "difference_radical_in_anchor_coordinates": [
+        978488
+      ],
+      "difference_rank": 10,
+      "first_form_packed_rows": [
+        1946,
+        553,
+        952,
+        1191,
+        1061,
+        478,
+        288,
+        1069,
+        1125,
+        1031,
+        921
+      ],
+      "first_rank": 10,
+      "minimum_class_feature_dimension_for_bilinear_factorization": 10,
+      "minimum_rank_two_summands_for_difference": 5,
+      "second_form_packed_rows": [
+        2042,
+        1377,
+        544,
+        1825,
+        1697,
+        2015,
+        1699,
+        881,
+        1707,
+        509,
+        379
+      ],
+      "second_rank": 10,
+      "u": -2,
+      "v": -1
+    },
+    {
+      "common_basis_in_anchor_coordinates": [
+        111,
+        282,
+        688,
+        1027,
+        2207,
+        4115,
+        8377,
+        16422,
+        32937,
+        65714,
+        131091,
+        262293,
+        524452
+      ],
+      "common_dimension": 13,
+      "difference_radical_in_anchor_coordinates": [
+        702532
+      ],
+      "difference_rank": 12,
+      "first_form_packed_rows": [
+        3838,
+        2705,
+        865,
+        753,
+        4907,
+        2205,
+        7437,
+        3371,
+        5332,
+        5151,
+        7105,
+        1251,
+        1872
+      ],
+      "first_rank": 12,
+      "minimum_class_feature_dimension_for_bilinear_factorization": 12,
+      "minimum_rank_two_summands_for_difference": 6,
+      "second_form_packed_rows": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "second_rank": 0,
+      "u": -2,
+      "v": 0
+    },
+    {
+      "common_basis_in_anchor_coordinates": [
+        5386,
+        11600,
+        16422,
+        101976,
+        165049,
+        296016,
+        559250
+      ],
+      "common_dimension": 7,
+      "difference_radical_in_anchor_coordinates": [
+        500705
+      ],
+      "difference_rank": 6,
+      "first_form_packed_rows": [
+        84,
+        84,
+        91,
+        68,
+        71,
+        0,
+        31
+      ],
+      "first_rank": 4,
+      "minimum_class_feature_dimension_for_bilinear_factorization": 6,
+      "minimum_rank_two_summands_for_difference": 3,
+      "second_form_packed_rows": [
+        56,
+        124,
+        106,
+        23,
+        107,
+        87,
+        54
+      ],
+      "second_rank": 6,
+      "u": -2,
+      "v": 1
+    },
+    {
+      "common_basis_in_anchor_coordinates": [
+        4361,
+        9084,
+        16700,
+        34224,
+        133692,
+        262624,
+        527416
+      ],
+      "common_dimension": 7,
+      "difference_radical_in_anchor_coordinates": [
+        955229
+      ],
+      "difference_rank": 6,
+      "first_form_packed_rows": [
+        90,
+        109,
+        42,
+        55,
+        105,
+        94,
+        51
+      ],
+      "first_rank": 4,
+      "minimum_class_feature_dimension_for_bilinear_factorization": 6,
+      "minimum_rank_two_summands_for_difference": 3,
+      "second_form_packed_rows": [
+        108,
+        24,
+        89,
+        103,
+        102,
+        25,
+        29
+      ],
+      "second_rank": 6,
+      "u": -2,
+      "v": 2
+    },
+    {
+      "common_basis_in_anchor_coordinates": [
+        1027,
+        4771,
+        8406,
+        17292,
+        33305,
+        66157,
+        133692,
+        262730,
+        527249
+      ],
+      "common_dimension": 9,
+      "difference_radical_in_anchor_coordinates": [
+        1025862
+      ],
+      "difference_rank": 8,
+      "first_form_packed_rows": [
+        458,
+        5,
+        466,
+        161,
+        356,
+        408,
+        277,
+        45,
+        117
+      ],
+      "first_rank": 8,
+      "minimum_class_feature_dimension_for_bilinear_factorization": 8,
+      "minimum_rank_two_summands_for_difference": 4,
+      "second_form_packed_rows": [
+        166,
+        277,
+        75,
+        372,
+        10,
+        9,
+        268,
+        1,
+        74
+      ],
+      "second_rank": 8,
+      "u": -2,
+      "v": 3
+    },
+    {
+      "common_basis_in_anchor_coordinates": [
+        1,
+        6,
+        10,
+        18,
+        64,
+        128,
+        258,
+        514,
+        1056,
+        2050,
+        4130,
+        8226,
+        16386,
+        32802,
+        65568,
+        131106,
+        262144,
+        524320
+      ],
+      "common_dimension": 18,
+      "difference_radical_in_anchor_coordinates": [
+        450876,
+        596921
+      ],
+      "difference_rank": 16,
+      "first_form_packed_rows": [
+        164972,
+        192056,
+        159777,
+        72963,
+        211906,
+        82631,
+        178353,
+        151152,
+        107032,
+        26034,
+        68235,
+        152794,
+        133212,
+        197462,
+        68262,
+        323,
+        25912,
+        14551
+      ],
+      "first_rank": 16,
+      "minimum_class_feature_dimension_for_bilinear_factorization": 16,
+      "minimum_rank_two_summands_for_difference": 8,
+      "second_form_packed_rows": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "second_rank": 0,
+      "u": -1,
+      "v": 0
+    },
+    {
+      "common_basis_in_anchor_coordinates": [
+        260,
+        593,
+        1141,
+        2178,
+        4219,
+        8355,
+        16517,
+        32868,
+        65593,
+        131240,
+        262209,
+        524404
+      ],
+      "common_dimension": 12,
+      "difference_radical_in_anchor_coordinates": [],
+      "difference_rank": 12,
+      "first_form_packed_rows": [
+        3386,
+        2133,
+        202,
+        3077,
+        451,
+        3521,
+        2870,
+        820,
+        2289,
+        2240,
+        41,
+        875
+      ],
+      "first_rank": 10,
+      "minimum_class_feature_dimension_for_bilinear_factorization": 12,
+      "minimum_rank_two_summands_for_difference": 6,
+      "second_form_packed_rows": [
+        2624,
+        1256,
+        944,
+        978,
+        3628,
+        598,
+        1451,
+        590,
+        3148,
+        3261,
+        2898,
+        1809
+      ],
+      "second_rank": 10,
+      "u": -1,
+      "v": 1
+    },
+    {
+      "common_basis_in_anchor_coordinates": [
+        325,
+        599,
+        1208,
+        2056,
+        4272,
+        8302,
+        16517,
+        32945,
+        65632,
+        131171,
+        262233,
+        524404
+      ],
+      "common_dimension": 12,
+      "difference_radical_in_anchor_coordinates": [
+        310723,
+        741639
+      ],
+      "difference_rank": 10,
+      "first_form_packed_rows": [
+        3580,
+        560,
+        4025,
+        2517,
+        847,
+        263,
+        2713,
+        2125,
+        3133,
+        2134,
+        261,
+        973
+      ],
+      "first_rank": 12,
+      "minimum_class_feature_dimension_for_bilinear_factorization": 10,
+      "minimum_rank_two_summands_for_difference": 5,
+      "second_form_packed_rows": [
+        1378,
+        3553,
+        464,
+        3200,
+        484,
+        1747,
+        3511,
+        1406,
+        2775,
+        1312,
+        2795,
+        1354
+      ],
+      "second_rank": 10,
+      "u": -1,
+      "v": 2
+    },
+    {
+      "common_basis_in_anchor_coordinates": [
+        6,
+        323,
+        593,
+        1208,
+        2064,
+        4329,
+        8304,
+        16515,
+        33000,
+        65569,
+        131195,
+        262144,
+        524339
+      ],
+      "common_dimension": 13,
+      "difference_radical_in_anchor_coordinates": [
+        761495
+      ],
+      "difference_rank": 12,
+      "first_form_packed_rows": [
+        2018,
+        6797,
+        5586,
+        8050,
+        6572,
+        2713,
+        1037,
+        6455,
+        7325,
+        2091,
+        4429,
+        5050,
+        3486
+      ],
+      "first_rank": 12,
+      "minimum_class_feature_dimension_for_bilinear_factorization": 12,
+      "minimum_rank_two_summands_for_difference": 6,
+      "second_form_packed_rows": [
+        1306,
+        4413,
+        7634,
+        6819,
+        3911,
+        1162,
+        5140,
+        300,
+        7831,
+        280,
+        2421,
+        5404,
+        2382
+      ],
+      "second_rank": 12,
+      "u": -1,
+      "v": 3
+    },
+    {
+      "common_basis_in_anchor_coordinates": [
+        163,
+        260,
+        593,
+        1141,
+        2081,
+        4219,
+        8192,
+        16422,
+        32868,
+        65593,
+        131083,
+        262209,
+        524404
+      ],
+      "common_dimension": 13,
+      "difference_radical_in_anchor_coordinates": [
+        154245
+      ],
+      "difference_rank": 12,
+      "first_form_packed_rows": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "first_rank": 0,
+      "minimum_class_feature_dimension_for_bilinear_factorization": 12,
+      "minimum_rank_two_summands_for_difference": 6,
+      "second_form_packed_rows": [
+        4976,
+        5248,
+        2512,
+        1888,
+        4101,
+        6281,
+        4877,
+        6182,
+        77,
+        7241,
+        2570,
+        5796,
+        2803
+      ],
+      "second_rank": 12,
+      "u": 0,
+      "v": 1
+    },
+    {
+      "common_basis_in_anchor_coordinates": [
+        252,
+        325,
+        599,
+        1092,
+        2056,
+        4172,
+        8302,
+        16505,
+        32845,
+        65632,
+        131171,
+        262233,
+        524404
+      ],
+      "common_dimension": 13,
+      "difference_radical_in_anchor_coordinates": [
+        513585
+      ],
+      "difference_rank": 12,
+      "first_form_packed_rows": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "first_rank": 0,
+      "minimum_class_feature_dimension_for_bilinear_factorization": 12,
+      "minimum_rank_two_summands_for_difference": 6,
+      "second_form_packed_rows": [
+        3618,
+        2925,
+        7106,
+        3458,
+        6400,
+        3139,
+        3494,
+        5452,
+        1246,
+        5127,
+        3049,
+        5247,
+        2708
+      ],
+      "second_rank": 12,
+      "u": 0,
+      "v": 2
+    },
+    {
+      "common_basis_in_anchor_coordinates": [
+        6,
+        27,
+        160,
+        323,
+        586,
+        1027,
+        2059,
+        4169,
+        8299,
+        16419,
+        32840,
+        65569,
+        131168,
+        262144,
+        524328
+      ],
+      "common_dimension": 15,
+      "difference_radical_in_anchor_coordinates": [
+        602844
+      ],
+      "difference_rank": 14,
+      "first_form_packed_rows": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "first_rank": 0,
+      "minimum_class_feature_dimension_for_bilinear_factorization": 14,
+      "minimum_rank_two_summands_for_difference": 7,
+      "second_form_packed_rows": [
+        4812,
+        7692,
+        9219,
+        5507,
+        28640,
+        1872,
+        9649,
+        26457,
+        18680,
+        8371,
+        22782,
+        21778,
+        27659,
+        21204,
+        15760
+      ],
+      "second_rank": 14,
+      "u": 0,
+      "v": 3
+    },
+    {
+      "common_basis_in_anchor_coordinates": [
+        4002,
+        5727,
+        9430,
+        16517,
+        34791,
+        66251,
+        132748,
+        263095,
+        524404
+      ],
+      "common_dimension": 9,
+      "difference_radical_in_anchor_coordinates": [
+        323489
+      ],
+      "difference_rank": 8,
+      "first_form_packed_rows": [
+        410,
+        457,
+        40,
+        215,
+        201,
+        196,
+        442,
+        379,
+        195
+      ],
+      "first_rank": 8,
+      "minimum_class_feature_dimension_for_bilinear_factorization": 8,
+      "minimum_rank_two_summands_for_difference": 4,
+      "second_form_packed_rows": [
+        104,
+        460,
+        130,
+        387,
+        384,
+        129,
+        259,
+        62,
+        90
+      ],
+      "second_rank": 8,
+      "u": 1,
+      "v": 2
+    },
+    {
+      "common_basis_in_anchor_coordinates": [
+        593,
+        3408,
+        5545,
+        9333,
+        16517,
+        34069,
+        65690,
+        132222,
+        262469,
+        524656
+      ],
+      "common_dimension": 10,
+      "difference_radical_in_anchor_coordinates": [
+        174158,
+        796944
+      ],
+      "difference_rank": 8,
+      "first_form_packed_rows": [
+        314,
+        41,
+        1016,
+        631,
+        589,
+        655,
+        284,
+        548,
+        69,
+        188
+      ],
+      "first_rank": 10,
+      "minimum_class_feature_dimension_for_bilinear_factorization": 8,
+      "minimum_rank_two_summands_for_difference": 4,
+      "second_form_packed_rows": [
+        82,
+        125,
+        18,
+        402,
+        879,
+        82,
+        435,
+        840,
+        728,
+        400
+      ],
+      "second_rank": 8,
+      "u": 1,
+      "v": 3
+    },
+    {
+      "common_basis_in_anchor_coordinates": [
+        325,
+        599,
+        1208,
+        6212,
+        10342,
+        16517,
+        34885,
+        65692,
+        133227,
+        264365,
+        524424
+      ],
+      "common_dimension": 11,
+      "difference_radical_in_anchor_coordinates": [
+        187479
+      ],
+      "difference_rank": 10,
+      "first_form_packed_rows": [
+        1146,
+        1777,
+        232,
+        1013,
+        1323,
+        1759,
+        1071,
+        46,
+        536,
+        1322,
+        627
+      ],
+      "first_rank": 8,
+      "minimum_class_feature_dimension_for_bilinear_factorization": 10,
+      "minimum_rank_two_summands_for_difference": 5,
+      "second_form_packed_rows": [
+        2032,
+        1588,
+        1106,
+        928,
+        935,
+        1179,
+        1157,
+        1657,
+        1049,
+        1179,
+        999
+      ],
+      "second_rank": 10,
+      "u": 2,
+      "v": 3
+    }
+  ],
+  "gauge_audits": [
+    {
+      "global_pairing_value": 0,
+      "masks": [
+        1,
+        2,
+        3
+      ],
+      "negative_places_before": [],
+      "pair_index": 0,
+      "rescalings": [
+        {
+          "flipped_places": [],
+          "global_pairing_value": 0,
+          "negative_places_after": [],
+          "scalar": -1
+        },
+        {
+          "flipped_places": [],
+          "global_pairing_value": 0,
+          "negative_places_after": [],
+          "scalar": 2
+        },
+        {
+          "flipped_places": [],
+          "global_pairing_value": 0,
+          "negative_places_after": [],
+          "scalar": 3
+        },
+        {
+          "flipped_places": [],
+          "global_pairing_value": 0,
+          "negative_places_after": [],
+          "scalar": 5
+        }
+      ],
+      "u": 0
+    },
+    {
+      "global_pairing_value": 0,
+      "masks": [
+        1,
+        4,
+        5
+      ],
+      "negative_places_before": [],
+      "pair_index": 1,
+      "rescalings": [
+        {
+          "flipped_places": [],
+          "global_pairing_value": 0,
+          "negative_places_after": [],
+          "scalar": -1
+        },
+        {
+          "flipped_places": [],
+          "global_pairing_value": 0,
+          "negative_places_after": [],
+          "scalar": 2
+        },
+        {
+          "flipped_places": [],
+          "global_pairing_value": 0,
+          "negative_places_after": [],
+          "scalar": 3
+        },
+        {
+          "flipped_places": [],
+          "global_pairing_value": 0,
+          "negative_places_after": [],
+          "scalar": 5
+        }
+      ],
+      "u": 0
+    },
+    {
+      "global_pairing_value": 0,
+      "masks": [
+        1,
+        8,
+        9
+      ],
+      "negative_places_before": [],
+      "pair_index": 2,
+      "rescalings": [
+        {
+          "flipped_places": [],
+          "global_pairing_value": 0,
+          "negative_places_after": [],
+          "scalar": -1
+        },
+        {
+          "flipped_places": [],
+          "global_pairing_value": 0,
+          "negative_places_after": [],
+          "scalar": 2
+        },
+        {
+          "flipped_places": [],
+          "global_pairing_value": 0,
+          "negative_places_after": [],
+          "scalar": 3
+        },
+        {
+          "flipped_places": [],
+          "global_pairing_value": 0,
+          "negative_places_after": [],
+          "scalar": 5
+        }
+      ],
+      "u": 0
+    },
+    {
+      "global_pairing_value": 0,
+      "masks": [
+        7,
+        27,
+        28
+      ],
+      "negative_places_before": [
+        5,
+        4952681
+      ],
+      "pair_index": 0,
+      "rescalings": [
+        {
+          "flipped_places": [
+            172223,
+            8831070091704983
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            5,
+            172223,
+            4952681,
+            8831070091704983
+          ],
+          "scalar": -1
+        },
+        {
+          "flipped_places": [],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            5,
+            4952681
+          ],
+          "scalar": 2
+        },
+        {
+          "flipped_places": [
+            2,
+            4952681
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            2,
+            5
+          ],
+          "scalar": 3
+        },
+        {
+          "flipped_places": [
+            2,
+            5,
+            172223,
+            8831070091704983
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            2,
+            172223,
+            4952681,
+            8831070091704983
+          ],
+          "scalar": 5
+        }
+      ],
+      "u": -3
+    },
+    {
+      "global_pairing_value": 1,
+      "masks": [
+        7,
+        35,
+        36
+      ],
+      "negative_places_before": [
+        2,
+        2711,
+        30881,
+        785773,
+        32483827
+      ],
+      "pair_index": 1,
+      "rescalings": [
+        {
+          "flipped_places": [
+            2711,
+            32483827,
+            1827140599,
+            "infinity"
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            2,
+            30881,
+            785773,
+            1827140599,
+            "infinity"
+          ],
+          "scalar": -1
+        },
+        {
+          "flipped_places": [
+            785773,
+            32483827
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            2,
+            2711,
+            30881
+          ],
+          "scalar": 2
+        },
+        {
+          "flipped_places": [
+            2,
+            30881,
+            32483827,
+            1827140599
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            2711,
+            785773,
+            1827140599
+          ],
+          "scalar": 3
+        },
+        {
+          "flipped_places": [
+            2,
+            5,
+            785773,
+            32483827
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            5,
+            2711,
+            30881
+          ],
+          "scalar": 5
+        }
+      ],
+      "u": -3
+    },
+    {
+      "global_pairing_value": 1,
+      "masks": [
+        7,
+        64,
+        71
+      ],
+      "negative_places_before": [
+        5,
+        137,
+        14008376187308080901
+      ],
+      "pair_index": 2,
+      "rescalings": [
+        {
+          "flipped_places": [],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            5,
+            137,
+            14008376187308080901
+          ],
+          "scalar": -1
+        },
+        {
+          "flipped_places": [
+            1822013,
+            14008376187308080901
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            5,
+            137,
+            1822013
+          ],
+          "scalar": 2
+        },
+        {
+          "flipped_places": [
+            2,
+            137,
+            1822013,
+            14008376187308080901
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            2,
+            5,
+            1822013
+          ],
+          "scalar": 3
+        },
+        {
+          "flipped_places": [
+            2,
+            5,
+            137,
+            1822013
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            2,
+            1822013,
+            14008376187308080901
+          ],
+          "scalar": 5
+        }
+      ],
+      "u": -3
+    },
+    {
+      "global_pairing_value": 1,
+      "masks": [
+        111,
+        282,
+        373
+      ],
+      "negative_places_before": [
+        7819109
+      ],
+      "pair_index": 0,
+      "rescalings": [
+        {
+          "flipped_places": [
+            4871,
+            301565794147
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            4871,
+            7819109,
+            301565794147
+          ],
+          "scalar": -1
+        },
+        {
+          "flipped_places": [
+            7819109,
+            301565794147
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            301565794147
+          ],
+          "scalar": 2
+        },
+        {
+          "flipped_places": [
+            7819109,
+            301565794147
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            301565794147
+          ],
+          "scalar": 3
+        },
+        {
+          "flipped_places": [
+            5,
+            301565794147
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            5,
+            7819109,
+            301565794147
+          ],
+          "scalar": 5
+        }
+      ],
+      "u": -2
+    },
+    {
+      "global_pairing_value": 1,
+      "masks": [
+        111,
+        688,
+        735
+      ],
+      "negative_places_before": [
+        3,
+        19,
+        464196389
+      ],
+      "pair_index": 1,
+      "rescalings": [
+        {
+          "flipped_places": [
+            2,
+            3,
+            19,
+            "infinity"
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            2,
+            464196389,
+            "infinity"
+          ],
+          "scalar": -1
+        },
+        {
+          "flipped_places": [
+            3,
+            13,
+            19,
+            464196389
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            13
+          ],
+          "scalar": 2
+        },
+        {
+          "flipped_places": [
+            2,
+            19,
+            54497,
+            86753,
+            49004441,
+            464196389
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            2,
+            3,
+            54497,
+            86753,
+            49004441
+          ],
+          "scalar": 3
+        },
+        {
+          "flipped_places": [
+            3,
+            13,
+            54497,
+            86753
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            13,
+            19,
+            54497,
+            86753,
+            464196389
+          ],
+          "scalar": 5
+        }
+      ],
+      "u": -2
+    },
+    {
+      "global_pairing_value": 1,
+      "masks": [
+        111,
+        1027,
+        1132
+      ],
+      "negative_places_before": [
+        36761
+      ],
+      "pair_index": 2,
+      "rescalings": [
+        {
+          "flipped_places": [
+            217329311,
+            64653278125730171
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            36761,
+            217329311,
+            64653278125730171
+          ],
+          "scalar": -1
+        },
+        {
+          "flipped_places": [
+            2,
+            64653278125730171
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            2,
+            36761,
+            64653278125730171
+          ],
+          "scalar": 2
+        },
+        {
+          "flipped_places": [
+            3,
+            36761
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            3
+          ],
+          "scalar": 3
+        },
+        {
+          "flipped_places": [],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            36761
+          ],
+          "scalar": 5
+        }
+      ],
+      "u": -2
+    },
+    {
+      "global_pairing_value": 0,
+      "masks": [
+        163,
+        260,
+        423
+      ],
+      "negative_places_before": [
+        31,
+        2439741254009
+      ],
+      "pair_index": 0,
+      "rescalings": [
+        {
+          "flipped_places": [
+            2,
+            31,
+            6186679,
+            "infinity"
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            2,
+            6186679,
+            2439741254009,
+            "infinity"
+          ],
+          "scalar": -1
+        },
+        {
+          "flipped_places": [
+            2,
+            602453
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            2,
+            31,
+            602453,
+            2439741254009
+          ],
+          "scalar": 2
+        },
+        {
+          "flipped_places": [
+            31,
+            602453,
+            6186679,
+            2439741254009
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            602453,
+            6186679
+          ],
+          "scalar": 3
+        },
+        {
+          "flipped_places": [
+            2,
+            602453
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            2,
+            31,
+            602453,
+            2439741254009
+          ],
+          "scalar": 5
+        }
+      ],
+      "u": 1
+    },
+    {
+      "global_pairing_value": 0,
+      "masks": [
+        163,
+        593,
+        754
+      ],
+      "negative_places_before": [
+        2,
+        19,
+        2066833,
+        3791321
+      ],
+      "pair_index": 1,
+      "rescalings": [
+        {
+          "flipped_places": [
+            2,
+            19,
+            31,
+            "infinity"
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            31,
+            2066833,
+            3791321,
+            "infinity"
+          ],
+          "scalar": -1
+        },
+        {
+          "flipped_places": [
+            2,
+            19
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            2066833,
+            3791321
+          ],
+          "scalar": 2
+        },
+        {
+          "flipped_places": [
+            19,
+            31,
+            3791321,
+            813676155001529
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            2,
+            31,
+            2066833,
+            813676155001529
+          ],
+          "scalar": 3
+        },
+        {
+          "flipped_places": [
+            2,
+            2066833
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            19,
+            3791321
+          ],
+          "scalar": 5
+        }
+      ],
+      "u": 1
+    },
+    {
+      "global_pairing_value": 0,
+      "masks": [
+        163,
+        1141,
+        1238
+      ],
+      "negative_places_before": [
+        2,
+        17,
+        19,
+        194361029627145788748127
+      ],
+      "pair_index": 2,
+      "rescalings": [
+        {
+          "flipped_places": [
+            2,
+            19,
+            23,
+            31,
+            194361029627145788748127,
+            "infinity"
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            17,
+            23,
+            31,
+            "infinity"
+          ],
+          "scalar": -1
+        },
+        {
+          "flipped_places": [
+            2,
+            19
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            17,
+            194361029627145788748127
+          ],
+          "scalar": 2
+        },
+        {
+          "flipped_places": [
+            17,
+            19,
+            31,
+            194361029627145788748127
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            2,
+            31
+          ],
+          "scalar": 3
+        },
+        {
+          "flipped_places": [
+            2,
+            17,
+            23,
+            194361029627145788748127
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            19,
+            23
+          ],
+          "scalar": 5
+        }
+      ],
+      "u": 1
+    },
+    {
+      "global_pairing_value": 1,
+      "masks": [
+        252,
+        325,
+        441
+      ],
+      "negative_places_before": [
+        3469,
+        40231,
+        "infinity"
+      ],
+      "pair_index": 0,
+      "rescalings": [
+        {
+          "flipped_places": [
+            2,
+            40231,
+            1244136119,
+            "infinity"
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            2,
+            3469,
+            1244136119
+          ],
+          "scalar": -1
+        },
+        {
+          "flipped_places": [
+            2,
+            3469
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            2,
+            40231,
+            "infinity"
+          ],
+          "scalar": 2
+        },
+        {
+          "flipped_places": [
+            2,
+            40231
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            2,
+            3469,
+            "infinity"
+          ],
+          "scalar": 3
+        },
+        {
+          "flipped_places": [
+            5,
+            172573214713
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            5,
+            3469,
+            40231,
+            172573214713,
+            "infinity"
+          ],
+          "scalar": 5
+        }
+      ],
+      "u": 2
+    },
+    {
+      "global_pairing_value": 0,
+      "masks": [
+        252,
+        599,
+        683
+      ],
+      "negative_places_before": [
+        2,
+        649306142117203
+      ],
+      "pair_index": 1,
+      "rescalings": [
+        {
+          "flipped_places": [
+            2,
+            1226585284919,
+            649306142117203,
+            "infinity"
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            1226585284919,
+            "infinity"
+          ],
+          "scalar": -1
+        },
+        {
+          "flipped_places": [
+            2,
+            649306142117203
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [],
+          "scalar": 2
+        },
+        {
+          "flipped_places": [
+            2,
+            649306142117203
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [],
+          "scalar": 3
+        },
+        {
+          "flipped_places": [
+            5,
+            649306142117203
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            2,
+            5
+          ],
+          "scalar": 5
+        }
+      ],
+      "u": 2
+    },
+    {
+      "global_pairing_value": 0,
+      "masks": [
+        252,
+        1092,
+        1208
+      ],
+      "negative_places_before": [
+        7,
+        "infinity"
+      ],
+      "pair_index": 2,
+      "rescalings": [
+        {
+          "flipped_places": [
+            2,
+            32371,
+            51760885151,
+            "infinity"
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            2,
+            7,
+            32371,
+            51760885151
+          ],
+          "scalar": -1
+        },
+        {
+          "flipped_places": [
+            32371,
+            31730064997
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            7,
+            32371,
+            31730064997,
+            "infinity"
+          ],
+          "scalar": 2
+        },
+        {
+          "flipped_places": [
+            2,
+            32371
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            2,
+            7,
+            32371,
+            "infinity"
+          ],
+          "scalar": 3
+        },
+        {
+          "flipped_places": [
+            5,
+            31730064997
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            5,
+            7,
+            31730064997,
+            "infinity"
+          ],
+          "scalar": 5
+        }
+      ],
+      "u": 2
+    },
+    {
+      "global_pairing_value": 0,
+      "masks": [
+        6,
+        27,
+        29
+      ],
+      "negative_places_before": [
+        7,
+        11,
+        1389042309445792586678653751,
+        "infinity"
+      ],
+      "pair_index": 0,
+      "rescalings": [
+        {
+          "flipped_places": [
+            7,
+            11,
+            1389042309445792586678653751,
+            "infinity"
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [],
+          "scalar": -1
+        },
+        {
+          "flipped_places": [
+            5,
+            11
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            5,
+            7,
+            1389042309445792586678653751,
+            "infinity"
+          ],
+          "scalar": 2
+        },
+        {
+          "flipped_places": [
+            5,
+            7
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            5,
+            11,
+            1389042309445792586678653751,
+            "infinity"
+          ],
+          "scalar": 3
+        },
+        {
+          "flipped_places": [
+            5,
+            7
+          ],
+          "global_pairing_value": 0,
+          "negative_places_after": [
+            5,
+            11,
+            1389042309445792586678653751,
+            "infinity"
+          ],
+          "scalar": 5
+        }
+      ],
+      "u": 3
+    },
+    {
+      "global_pairing_value": 1,
+      "masks": [
+        6,
+        160,
+        166
+      ],
+      "negative_places_before": [
+        569
+      ],
+      "pair_index": 1,
+      "rescalings": [
+        {
+          "flipped_places": [
+            7,
+            11,
+            282702103226805633276679,
+            "infinity"
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            7,
+            11,
+            569,
+            282702103226805633276679,
+            "infinity"
+          ],
+          "scalar": -1
+        },
+        {
+          "flipped_places": [
+            5,
+            11
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            5,
+            11,
+            569
+          ],
+          "scalar": 2
+        },
+        {
+          "flipped_places": [
+            5,
+            7,
+            569,
+            282702103226805633276679
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            5,
+            7,
+            282702103226805633276679
+          ],
+          "scalar": 3
+        },
+        {
+          "flipped_places": [
+            5,
+            7
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            5,
+            7,
+            569
+          ],
+          "scalar": 5
+        }
+      ],
+      "u": 3
+    },
+    {
+      "global_pairing_value": 1,
+      "masks": [
+        6,
+        323,
+        325
+      ],
+      "negative_places_before": [
+        5
+      ],
+      "pair_index": 2,
+      "rescalings": [
+        {
+          "flipped_places": [
+            7,
+            23,
+            53411,
+            "infinity"
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            5,
+            7,
+            23,
+            53411,
+            "infinity"
+          ],
+          "scalar": -1
+        },
+        {
+          "flipped_places": [
+            5,
+            53411
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            53411
+          ],
+          "scalar": 2
+        },
+        {
+          "flipped_places": [
+            5,
+            7
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            7
+          ],
+          "scalar": 3
+        },
+        {
+          "flipped_places": [
+            5,
+            7,
+            23,
+            217378363050422666233
+          ],
+          "global_pairing_value": 1,
+          "negative_places_after": [
+            7,
+            23,
+            217378363050422666233
+          ],
+          "scalar": 5
+        }
+      ],
+      "u": 3
+    }
+  ],
+  "gauge_input_sha256": "5d6236951d1a5bcc8b986d8b2a0eff52dd264d7837082712fd9d5edebb3a6214",
+  "matrix_input_sha256": "440372c18d42243ce447cad470c7bfd6ba5d5c757740e3ce413af6b0d8194f71",
+  "nondegenerate_difference_pencils": [
+    {
+      "characteristic_polynomial": "t^10*(t+1)^2",
+      "common_basis_in_anchor_coordinates": [
+        260,
+        593,
+        1141,
+        2178,
+        4219,
+        8355,
+        16517,
+        32868,
+        65593,
+        131240,
+        262209,
+        524404
+      ],
+      "difference_matrix_packed_rows": [
+        1914,
+        3261,
+        890,
+        4055,
+        4079,
+        3991,
+        3741,
+        378,
+        1213,
+        1149,
+        2939,
+        1146
+      ],
+      "eigenvalue_one_basis_in_anchor_coordinates": [
+        154245,
+        845062
+      ],
+      "minimal_polynomial": "t^5*(t+1)",
+      "nilpotent_chain_e_in_anchor_coordinates": [
+        593,
+        201198,
+        186130,
+        317529,
+        631775
+      ],
+      "nilpotent_chain_f_in_anchor_coordinates": [
+        491700,
+        992370,
+        111568,
+        244478,
+        206147
+      ],
+      "nilpotent_kernel_dimensions": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "nilpotent_primary_basis_in_anchor_coordinates": [
+        593,
+        2178,
+        5386,
+        8615,
+        16769,
+        32868,
+        66888,
+        131500,
+        263220,
+        525573
+      ],
+      "operator_T_packed_rows": [
+        71,
+        665,
+        2421,
+        2497,
+        1178,
+        157,
+        452,
+        501,
+        3503,
+        1022,
+        3568,
+        164
+      ],
+      "paired_chain_formula": "D(e_i,f_j)=[i+j=4]; A(e_i,f_j)=[i+j=3]; B=A+D; both chains individually isotropic for all three forms.",
+      "primary_dimensions": [
+        10,
+        2
+      ],
+      "scope": "Simultaneous CT obstruction components; these are not certified soluble MW components.",
+      "u": -1,
+      "v": 1
+    }
+  ],
+  "protocol_sha256": "abd7e7d6bbf775a668233c488ba790d33dfbbae9abf3b746abdeaca22974f423",
+  "schema": "rank-jump.ct-variation.v1",
+  "script_sha256": "d4829242ab921ddff9340173fb07e9aad7b745e6c82af3331ef47e1180bde27e",
+  "summary": {
+    "comparison_count": 21,
+    "gauge_entries": 18,
+    "global_pairing_changes_under_rescaling": 0,
+    "nonzero_deformation_difference_rank_range": [
+      6,
+      12
+    ],
+    "rescalings": 72,
+    "rescalings_changing_local_attribution": 57
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "rank-jump.ct-variation-protocol.v1",
+  "scope": "Retrospective exact linear algebra and formula-normalization audit; no new descent or point search.",
+  "matrix_input": "rank_jump_local_collision_inputs_v1.json",
+  "comparisons": "All 21 pairs of the seven retained labelled class spaces.",
+  "pencil_selection": "Examine pairs of nonzero deformations whose pairing difference is nondegenerate on their whole common space. The unique qualifying pair is (-1,1); this is retrospective selection, not a prospective prediction.",
+  "pencil_endpoint": "Certify a simultaneous orthogonal decomposition and the nilpotent chain lengths, without interpreting linear-algebra blocks as soluble Mordell-Weil blocks.",
+  "gauge_sources_commit": "199558c",
+  "gauge_sources": ["u0", "um3", "um2", "u1", "u2", "u3"],
+  "gauge_selection": "First three retained Fisher pairs in each source, independent of their pairing values. The separately formatted u=-1 transcript is excluded from this formula audit only.",
+  "gauge_scalars": [-1, 2, 3, 5],
+  "gauge_endpoint": "Test all 72 rational rescalings of gamma. Recompute exact local symbols and prove complete support for the change; global pairing must remain invariant.",
+  "limits": "Matrices at most 20 by 20; 18 retained pair entries and 72 rescalings; no factorization campaign, number-field construction, parameter sweep, or live-search edit.",
+  "interpretation": "Solubility obstruction. Neither a restricted CT radical nor a simultaneous pencil component proves a rational point. Local formula summands are representative-dependent."
+}
