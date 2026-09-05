@@ -1,0 +1,19 @@
+{
+  "schema": "rank-jump.cubic-bridge-protocol.v1",
+  "input": "rank_jump_local_collision_inputs_v1.json",
+  "scope": "Retrospective theorem-directed algebra, with no new points or parameter search.",
+  "hypothesis": "Shared first norm-conic solubility distinguishes the previously fixed chain classes or the soluble anchor from its obstructed deformations.",
+  "fixed_chain_masks": [317529, 491700, 631775],
+  "chain_labels": ["e3", "f0", "e4"],
+  "parameters": [-3, -2, -1, 0, 1, 2, 3],
+  "checks": [
+    "Construct norm witnesses for all twenty retained anchor basis classes and the three fixed chain masks.",
+    "Transport the norm witnesses across the seven retained models without solving a new conic.",
+    "Verify the translated cubic, the rational 2-isogeny coefficients over the cubic field, and the constant quadratic discriminant class.",
+    "Use restriction-corestriction to distinguish cubic base change from passage to the full splitting field.",
+    "Check whether the simplest transported anchor norm point retains rational x-coordinate."
+  ],
+  "limits": "Only cubic arithmetic, 23 norm witnesses, seven existing parameters, and 140 exact coordinate identities. No field/class-group computation, descent campaign, conic search, or point search.",
+  "failure_semantics": "Universally soluble norm conics refute their use as a discriminator. They do not imply that the associated isogeny quartics or rational 2-covers have points.",
+  "oracle_boundary": "Anchor points are used only for labelled retrospective norm witnesses; no prospective selector receives them."
+}
