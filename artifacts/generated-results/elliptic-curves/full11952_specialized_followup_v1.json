@@ -1,0 +1,39 @@
+{
+  "claim_boundary": "One complete49-box specialized-parity follow-up of the one new full11952 curves with27 certified points. All2048-mask samples and49-map rosters precede points; exact histories, rational geometry and full-cloud proofs modulo2,3,5 pass. Every retained cloud still certifies27, giving no rank gain or new inventory entry. These are lower bounds, not exact ranks, upper bounds, saturation, covering optimality, point absence or a universal sensitivity claim.",
+  "completed_point_boxes": 49,
+  "declared_point_boxes": 49,
+  "rows": [
+    {
+      "completed_boxes": 49,
+      "family": "11952",
+      "id": "new-20260906-186",
+      "initial_rank": 27,
+      "odd_modulus_lower_bounds": {
+        "3": 27,
+        "5": 27
+      },
+      "parameter": "4286/1881",
+      "rank_lower_bound": 27,
+      "retained_points": 101
+    }
+  ],
+  "schema": "elliptic-curves.full11952-specialized-followup-result.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/full11952_specialized_186_mod2_v1.json": "a9d0bb382370143d53d5e8f3da85af97d919e7351cbea67299ddf111224daaa8",
+    "artifacts/generated-results/elliptic-curves/full11952_specialized_186_modl_v1.json": "8af7f4220ddbacff033bcf0e95a219575859c96373263aec374cbb3c2a2cfa17",
+    "artifacts/local/elliptic-curves/full11952-specialized-followup-controller-v1/clouds.log": "dac71d270e9568bae55bb08899ca9149f9144a36bbfff5b4fc2e6e083a22a72b",
+    "artifacts/local/elliptic-curves/full11952-specialized-followup-controller-v1/freeze.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/local/elliptic-curves/full11952-specialized-followup-controller-v1/geometry.log": "5b4222734b7f03bfb66fb9d652c795a8c71038278a78b0427363f7f56521cc04",
+    "artifacts/local/elliptic-curves/full11952-specialized-followup-controller-v1/ledger.json": "e9a0cb1edd9276471c0d4e05479a71f8aa9a6ce8949be40e23105b53dcc28eac",
+    "artifacts/local/elliptic-curves/full11952-specialized-followup-controller-v1/protocol.json": "02178aaef8eec6c7016d98bfa141682ec581b0685bfb346bfd768cacc43bddad",
+    "artifacts/local/elliptic-curves/full11952-specialized-followup-controller-v1/trial.log": "1562a312c5fdfd876277aa2c1388e5895eee7fa191ce9f611f9c95a0871b3356",
+    "artifacts/local/elliptic-curves/full11952-specialized-followup-v1/ledger.json": "1d963e59018f0f182b32e7760076fa6dfaa408e72e5a5a16de2a1fe8f58e4021",
+    "artifacts/local/elliptic-curves/full11952-specialized-followup-v1/new-20260906-186/maps.json": "540e2a514ae758140f54f968cbee1ce4cd5f83f513af7f25a6fda661134b921d",
+    "artifacts/local/elliptic-curves/full11952-specialized-followup-v1/new-20260906-186/result.json": "4de3ce74756d852e8ee4b01a0b62370947deb576bf794642bfd5ddf2c63c519b",
+    "artifacts/local/elliptic-curves/full11952-specialized-followup-v1/protocol.json": "5648834f1dbaf587967bcc65d6455dcf55bb69c253b2a74b4a7bb9ca1d1cf0ff",
+    "artifacts/local/elliptic-curves/full11952-specialized-followup-v1/verification-ledger.json": "02cd621843269e13f09003a0b0eec1bfd543c2b2eb805a3e8261fed8a7bc2617",
+    "elliptic-curves/cas/report_full11952_specialized_followup.py": "ffe250e532171aa0afa3198ecbec9ccaea2487a52861eb5768c7640a3b22d723"
+  },
+  "status": "PASS",
+  "total_retained_point_witnesses": 101
+}

@@ -1,0 +1,27 @@
+{
+  "claim_boundary": "Retrospective exact placement of the independently scored known29 control after prospective selection and all point maps were frozen. It was retained and selected without a public label entering score ordering. The curve is already known and cannot be a new inventory addition. These finite retained-population positions establish neither full-population extended-score optimality nor prospective sensitivity, rank density or universal novelty. The prospective roster, point budgets and execution remain unchanged.",
+  "extended_position_among_retained": 30,
+  "parameter": "89074/31895",
+  "position_in_frozen64": 29,
+  "public_id": 12,
+  "retained_index": 601378,
+  "retained_rows": 1048576,
+  "schema": "elliptic-curves.full11952-known29-retention.v1",
+  "short_position_among_retained": 478285,
+  "short_position_within_slice": 291,
+  "slice_id": "positive-0150",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/full11952_h131072_selection_v1.json": "e0f10bfc3102664011ac90c61b51bd67ebb70612a0806a49e7567c3b43260ed7",
+    "artifacts/generated-results/elliptic-curves/outer_known29_score_audit_v1.json": "ae7c00a73a4c6cb495624d7739c3fdd523dbc1e41156e541bf0d8495f531b8fa",
+    "artifacts/local/elliptic-curves/full11952-64-r17-pari-v1/maps-ledger.json": "421350d0e950a2c1aaebcacf5e259be8e683a0ca4133bb7f49fa315801de8630",
+    "artifacts/local/elliptic-curves/full11952-64-r17-pari-v1/protocol.json": "c428d8ddd91c2728104c1d60c178f5a397f9efb0fcf330819493ecf9de3d45b0",
+    "artifacts/local/elliptic-curves/full11952-h131072-retained-v1/bank.json": "7035b4d3ceb569f48967477e8d19bdaf0ebc4caece132b6bea8af8c86179e693",
+    "artifacts/local/elliptic-curves/full11952-h131072-retained-v1/candidate-metadata.bin": "cfceb7ce09008a0a8451565cc6671d6feb927eddeb4ed6918c2a10382cdf18fa",
+    "artifacts/local/elliptic-curves/full11952-h131072-retained-v1/extended-scores.bin": "33bef43429891a38f41c800f427750fe30b50a1dd764ec5d0328592a8db2b2de",
+    "artifacts/local/elliptic-curves/full11952-h131072-retained-v1/extended/result.json": "31ea3eeb3a257843aff6f23ef8107edbc212ab0d7f309c61ed68b23b4ff26a6f",
+    "artifacts/local/elliptic-curves/full11952-h131072-retained-v1/short/result.json": "0bf12da361a16255b67f5616ef3ee2d560d21bc3f0cba69fba261199160cdeee",
+    "artifacts/local/elliptic-curves/full11952-retained-controller-v1/ledger.json": "a41e69b20bcaf36d6a1dfe023154abcd1d5d72b7b5c743dfefbfba0574e49116",
+    "elliptic-curves/cas/report_full11952_known29_retention.py": "901401a6b1c24985c76b1a43f5b7bf9d2bc3e9d690e79dc3d499129d5958a6d9"
+  },
+  "status": "PASS"
+}

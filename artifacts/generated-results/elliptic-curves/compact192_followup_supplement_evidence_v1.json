@@ -1,0 +1,2360 @@
+{
+  "archive": "artifacts/generated-results/elliptic-curves/compact192_followup_supplement_evidence_v1.zip",
+  "archive_bytes": 6965922,
+  "archive_sha256": "06d7b3ced178ebc1f22a7896d267b6c3a0cf034ca6f904f89473d78a116ca0ac",
+  "claim_boundary": "Standalone replay of all five own26 follow-up point histories, full clouds modulo2,3,5 and exact rational geometry, plus the completed245-box result. Independently replays the six exact resultants, all26 non13 scaling-prime residue exclusions and universal990-pair small-prime minimality theorem. Prior inventory selection and known-control discovery are retained as bound gate context; their full historical campaigns are not rerun. No new point search, full global prime support, rank upper bound, saturation, point absence or universal novelty.",
+  "files": [
+    {
+      "bytes": 4078620,
+      "path": "artifacts/generated-results/elliptic-curves/compact192_r17_results_v1.json",
+      "sha256": "d00421b04aa21ce7d49f394e846b02e98e33ce9f401f107a2481a3036850a259"
+    },
+    {
+      "bytes": 67166,
+      "path": "artifacts/generated-results/elliptic-curves/compact192_specialized_102_mod2_v1.json",
+      "sha256": "cf6b67eecc5a2be0eb08d8e0f5ae836c9dc21a8641e4174311764007b8854dc9"
+    },
+    {
+      "bytes": 71584,
+      "path": "artifacts/generated-results/elliptic-curves/compact192_specialized_102_modl_v1.json",
+      "sha256": "822386e25e83d7dd3aaaa87afe31072c3bde3a2fb1e7249723ccc9006c67e3fc"
+    },
+    {
+      "bytes": 77085,
+      "path": "artifacts/generated-results/elliptic-curves/compact192_specialized_103_mod2_v1.json",
+      "sha256": "3bb7eee0c2b5ad394a7b855989b5a5cf71845701b29177c0f2c57eb559c81350"
+    },
+    {
+      "bytes": 98262,
+      "path": "artifacts/generated-results/elliptic-curves/compact192_specialized_103_modl_v1.json",
+      "sha256": "1a15ffc0bd9a1acf596bf61c8f957ad1ded6bcfc511e63f6ac6ef96751bd35d0"
+    },
+    {
+      "bytes": 252698,
+      "path": "artifacts/generated-results/elliptic-curves/compact192_specialized_104_mod2_v1.json",
+      "sha256": "63946f36f2ea6e7d07592f299fdb0cbbc8ebb12f382091feb6f7dd20f7aea4d0"
+    },
+    {
+      "bytes": 483698,
+      "path": "artifacts/generated-results/elliptic-curves/compact192_specialized_104_modl_v1.json",
+      "sha256": "78f8d23827cbe17c26a3d1f967515769c198d8cabea60ac5c87847e87d80bbde"
+    },
+    {
+      "bytes": 65499,
+      "path": "artifacts/generated-results/elliptic-curves/compact192_specialized_105_mod2_v1.json",
+      "sha256": "5526453d90ec081c10f767670d77f57038eccf9e56e8a6a6c53a9d3b3d987709"
+    },
+    {
+      "bytes": 70990,
+      "path": "artifacts/generated-results/elliptic-curves/compact192_specialized_105_modl_v1.json",
+      "sha256": "ce629e21df2e458d0bf2548849ca971bcc2242865a851557a140cf50828696ae"
+    },
+    {
+      "bytes": 87257,
+      "path": "artifacts/generated-results/elliptic-curves/compact192_specialized_106_mod2_v1.json",
+      "sha256": "aad6ff358bd858ac8705f50e55420423c9817b22b3884404f4c8e4a6eeb43177"
+    },
+    {
+      "bytes": 120606,
+      "path": "artifacts/generated-results/elliptic-curves/compact192_specialized_106_modl_v1.json",
+      "sha256": "d94afe07e8d00ca9ed60f18b14b3363e5cfde397fa9baffa9183c2781c57f98c"
+    },
+    {
+      "bytes": 7073,
+      "path": "artifacts/generated-results/elliptic-curves/compact192_specialized_followup_v1.json",
+      "sha256": "fd14057604d7b4bdad093b11f8dc016c75bdbf29a3b2739d5390359924f6fac1"
+    },
+    {
+      "bytes": 231474,
+      "path": "artifacts/generated-results/elliptic-curves/compact_six_r17_atlas_v1.json",
+      "sha256": "2f28c081c874adfaf738c1119e8f4e6e7ce70ea74277cd8cdb370a02bca34c5d"
+    },
+    {
+      "bytes": 2265,
+      "path": "artifacts/generated-results/elliptic-curves/native28_specialized_parity_adaptive_coverage_v1.json",
+      "sha256": "a1acfd95fc0130d5127cf4cf8f07a347e208ba73d7143b4d62969b209e7d2f16"
+    },
+    {
+      "bytes": 2206340,
+      "path": "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v12.json",
+      "sha256": "8dd240a76ce48d1a26ecaadc2b7970a3bd7371d1447edc35a50a1eff910fd597"
+    },
+    {
+      "bytes": 3873379,
+      "path": "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v13.json",
+      "sha256": "78c092ec7cddf45c2f8eb6e47e0021ca3e5ba18f9f6b3491e15ead0725913349"
+    },
+    {
+      "bytes": 14749,
+      "path": "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v13_memory_replay_v1.json",
+      "sha256": "b2d594005846ab9e8b91aeeeec101599490cf1c7cf605a6c891cdcfa07ada22f"
+    },
+    {
+      "bytes": 286553,
+      "path": "artifacts/generated-results/elliptic-curves/r17_other_small_prime_scalings_v1.json",
+      "sha256": "9eb39603933e543af5a4418999f1b30277e66d29fe6d12402d8190d492fc9fb7"
+    },
+    {
+      "bytes": 12823,
+      "path": "artifacts/generated-results/elliptic-curves/r17_scaling_prime_support_v1.json",
+      "sha256": "e84d7a477870c2a2b965366ddbd893da1c40d09d6d9358fb22bd19262e4f3c4b"
+    },
+    {
+      "bytes": 17429,
+      "path": "artifacts/generated-results/elliptic-curves/r17_small_prime_minimality_v1.json",
+      "sha256": "58af756323603090725f29087132786a6dbc17c2ca8713b0f0ad97d0797f73d3"
+    },
+    {
+      "bytes": 2283,
+      "path": "artifacts/local/elliptic-curves/compact192-evidence-finalization-v1/protocol.json",
+      "sha256": "8e6d41962d8cdd180b8a312b4372da7b7b5f550e4cbd5f90900076f79ece8b0e"
+    },
+    {
+      "bytes": 287,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-controller-v1/clouds.log",
+      "sha256": "6b87fb311feaaf930f45fdd356f548ae6791e275aa87756b803adfbe1f9b0c48"
+    },
+    {
+      "bytes": 942,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-controller-v1/clouds.supervisor.json",
+      "sha256": "312005b43d7c016abbab2136cf80144d4dd7edd96b21177cb7d19f15f6a24dce"
+    },
+    {
+      "bytes": 0,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-controller-v1/freeze.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 948,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-controller-v1/freeze.supervisor.json",
+      "sha256": "da6495c5c57e430db06de624f0235dacc7d5b2e11b29f4d02994516fa87a09cb"
+    },
+    {
+      "bytes": 365,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-controller-v1/geometry.log",
+      "sha256": "6be027a461f644fbb64f397e6bcf22a0f15e5114156f2a67d677eaebae3fc748"
+    },
+    {
+      "bytes": 989,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-controller-v1/geometry.supervisor.json",
+      "sha256": "3a3db390e3d867c570030e8533037566191d0d52621c4c9cefa15bd29fea2cb8"
+    },
+    {
+      "bytes": 177,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-controller-v1/launch.log",
+      "sha256": "d848d6d325300737b164871459d6c2660c135f07be767d9b75154292932342c4"
+    },
+    {
+      "bytes": 960,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-controller-v1/launch.supervisor.json",
+      "sha256": "9be91a824aa31cb843cb36a5055b75556d69b30dca66cb540de4d5548e3d0b1b"
+    },
+    {
+      "bytes": 7383,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-controller-v1/ledger.json",
+      "sha256": "adb3e47612b0afdac117e7993386c7b7d047d378cb1ad9d89bad13c22b7c898c"
+    },
+    {
+      "bytes": 2204,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-controller-v1/protocol.json",
+      "sha256": "e2a64ed11531f4ddb0728e726fd5788868a15300a2a212dbbd327ad8127ccf9b"
+    },
+    {
+      "bytes": 530,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-controller-v1/trial.log",
+      "sha256": "5ff1c9d9765eb142e50257b439cc104e9f5e185cebbdea3e4e8584e78bfad3d0"
+    },
+    {
+      "bytes": 949,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-controller-v1/trial.supervisor.json",
+      "sha256": "f418d24b66263e055e6af11f479f0acbf00cb0e5025d7a2c7786a68209ef6c21"
+    },
+    {
+      "bytes": 21441,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/ledger.json",
+      "sha256": "704a1e664631cb055ae066597b2fd73d50ddb1c92d5904c325309dbd2554f42b"
+    },
+    {
+      "bytes": 1884702,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/maps.json",
+      "sha256": "d55a8feedb85f810827a6db41dbf4c3d309c94e4f1b0b9ff76b546b4c0cdfea4"
+    },
+    {
+      "bytes": 689,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/maps.log",
+      "sha256": "a944180f406cf9d669e71aa2c762d4a532afd0e2f873087d45002ac692e453cc"
+    },
+    {
+      "bytes": 1015,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/maps.supervisor.json",
+      "sha256": "7ba0e136922af5150beb4f5f660d5006e6e37e3ba8ffab362dbd722dc20bf37b"
+    },
+    {
+      "bytes": 1686,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/mod2-build.log",
+      "sha256": "83a567a9cfeafeef5b140f06728df51e759026b533ce3a993f03479f7da20f2c"
+    },
+    {
+      "bytes": 1375,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/mod2-build.supervisor.json",
+      "sha256": "22880275017a17dad0ac752457144c8e9f2f8ad527ab56ee68c9c1c34e798916"
+    },
+    {
+      "bytes": 56,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/mod2-check.log",
+      "sha256": "723d719ec65dcc9136d82f7c39dd8a0d01fc83736c39dcb127d2d602d4467a87"
+    },
+    {
+      "bytes": 1090,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/mod2-check.supervisor.json",
+      "sha256": "790a308899a7379e2b66ebfeeb4cd1a08b055173b15b8c291c8265b3061869ff"
+    },
+    {
+      "bytes": 1754,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/modl-build.log",
+      "sha256": "fffbeb7e8ff0825d997834cf392794e9b4daca7af556d7079db98216c0537dd6"
+    },
+    {
+      "bytes": 1228,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/modl-build.supervisor.json",
+      "sha256": "d5d83b1c94ad3bbd286dfe4e51a774aa6b537fa2d0aa213c6bf68cb9f80974df"
+    },
+    {
+      "bytes": 78,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/modl-check.log",
+      "sha256": "1441c5edafc7055995af8763c63aa5e65644f4bad24ae231c4b83647c5a7b473"
+    },
+    {
+      "bytes": 1082,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/modl-check.supervisor.json",
+      "sha256": "9abb5af229e6665e9a50e2898a5d45c4e73c09673dac046173ea696144e3de97"
+    },
+    {
+      "bytes": 55,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/replay.log",
+      "sha256": "f2a1e94d98665ad66f830fe48f5844856aaa4d1e10ff74776c33658551ec53e0"
+    },
+    {
+      "bytes": 977,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/replay.supervisor.json",
+      "sha256": "23621eecafa08e375f08d73455562174106ab4703535a92d23d732e72814afbe"
+    },
+    {
+      "bytes": 11453199,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/result.json",
+      "sha256": "dee4c6308a829b29cb86b6dec8d420f4b440ade22966b51a6832b20314846207"
+    },
+    {
+      "bytes": 21495,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/seed.json",
+      "sha256": "d5505d078e9eee947f679e8aebc11255ef51d501d09cfe972ea1c70a3fbf5aef"
+    },
+    {
+      "bytes": 38818,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/000.json",
+      "sha256": "d0f4a34b145c4096a9afcb081d3232095912a0b80a917611f3516f691de57540"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/001.json",
+      "sha256": "e9435edbed9b5b5bc0f8e1228d0e110e7d054eb4b3ac23a8ffe926beecc7ebdc"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/002.json",
+      "sha256": "530ec56557570143d9f0aa2550619abfc00b4bb74ee6ca265cd1eb85703b2b5b"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/003.json",
+      "sha256": "518c9ccafca65aa22556ad068e3457326f0fd297dc5a2ce96a83a6f8b5523110"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/004.json",
+      "sha256": "5a36e22ac66a50514dbb1604b013a3c08ebc12bf5f3bed1fbb868eb80f95f38b"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/005.json",
+      "sha256": "cd61a5d235f3fb48cab902b342bc5d7579afa1c77937914a091020a194d41354"
+    },
+    {
+      "bytes": 26285,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/006.json",
+      "sha256": "cea10acb3235c4c279bf1bfb87e82c1b3cbea93d7377007ef5a9914e0e08426a"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/007.json",
+      "sha256": "4187eb9e9ac632125fad72038499b638607afb4adf0dcfb3d539c7aff40edbdc"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/008.json",
+      "sha256": "54ada60247ee8758e7794ccd9540aa64dae803121accb202a3515b591afddee3"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/009.json",
+      "sha256": "ff4d54c09325a38e7622846f1c93e5a083752db913e23f4dd1b4ad9aa9ae7288"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/010.json",
+      "sha256": "d585ad8ec69438294b364f1921db62ee876dc0cf56775aa852badb9ec433eefc"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/011.json",
+      "sha256": "a6671eb98bcf926561063a13af376a301d3d1a2484afe207510ece09cd3af7a5"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/012.json",
+      "sha256": "791d762a2f4a8791e1a47c6016c43ca64a88a05695351a430af3f9b2e69b6d61"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/013.json",
+      "sha256": "87960cdf45b157434946b64e3c5dd8261a193827f6439e8dd04838cf27eef8dd"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/014.json",
+      "sha256": "79559b2be394e26568ce2bb8a2eafb1f5533e138cd68bd8cb145697c32f3f8de"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/015.json",
+      "sha256": "8d4cb19d3522ef3816211995d30272d2dc80297cc94e674cf30366ef91683a09"
+    },
+    {
+      "bytes": 26253,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/016.json",
+      "sha256": "875967d8d77bdb21fe37f75ec01af1c58237078774c2bc3b54442a5d92904c2f"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/017.json",
+      "sha256": "db8d2b3015a253d54bbee918ba1b2327c6aabe00db9286b6c3b6ac8df98eb676"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/018.json",
+      "sha256": "b16de2d918b1a8644436414695b0293b9b7baeba574c0fc2276cc60e66ec7081"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/019.json",
+      "sha256": "53341016e499b70f6deff1f11fb168d40acbbab786a80975756967b9f1bace46"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/020.json",
+      "sha256": "718f5a4a349109f498b3dd7d7353976984108cff686ac253efcd19b1aaf0fd08"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/021.json",
+      "sha256": "be3d8ead5b30afb78e659f9a81fe5236b1ed0b14a419be9e032b5c1351119677"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/022.json",
+      "sha256": "f055d704d286c4f841ae9918c06f811f2e61b21f9edfcdd8708c6b2286eddcce"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/023.json",
+      "sha256": "bf02bf0e0cff9a245abc3de0f2c7ba11a5ab2fabd985399593a9a2f4ca89b0b1"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/024.json",
+      "sha256": "e3ba8def0927fdab5eb7d36cc45b346cec192297d8f50387554cd7c4fe422b72"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/025.json",
+      "sha256": "fef1de83e27c2c7e90ae434df5669e846a436a4cca82b717e16f22a6884c4e09"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/026.json",
+      "sha256": "09b7e0e1b48b02ae25edfd8007fe50c0edd0d53d3cd7d6ed3463b0fe6d9a7df3"
+    },
+    {
+      "bytes": 26528,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/027.json",
+      "sha256": "24e8d1cfb15b1db3f09f2dca0cea2fba165411e98847e551f9b14bef41e29f9d"
+    },
+    {
+      "bytes": 26265,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/028.json",
+      "sha256": "19338fff47e87a9f27c3d44193fdefae32519744e011653f88b6eb9bc14c0854"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/029.json",
+      "sha256": "ba3dabc6fec7ec06a5f19bbfa9461def57c760f4af2bae2418cc0cf06b315826"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/030.json",
+      "sha256": "f12773279888f547a966124b1239a605370e287183f69559fb89b666f571e100"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/031.json",
+      "sha256": "10573800a0acd3ed119de6306462d4b0497a2961f0d5ee5dd7901f3f8a502789"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/032.json",
+      "sha256": "714967c7991bcfbc5fa3294ca22a3620e217369bb4b763271f9b35a26dd49eac"
+    },
+    {
+      "bytes": 26232,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/033.json",
+      "sha256": "b6eb93c025154aaa081e90799bd37133faeb0290e71e6f6ad32f49c49ba7d678"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/034.json",
+      "sha256": "3799c8dc1aba0454a9f6397d03eb030cff87b725c00717d343a47689c9234cc5"
+    },
+    {
+      "bytes": 26248,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/035.json",
+      "sha256": "fb10dcb42f83550a51e6c8c1e0c9c252f0e287afa35ec7cdd862b96ad2f27dcc"
+    },
+    {
+      "bytes": 26550,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/036.json",
+      "sha256": "16f48ff33ed2699e2f67f01220befdb1ecd439d3c05cd65bda60e7a0be48c6ae"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/037.json",
+      "sha256": "a32b3e69b36947f9873a2be6601f7c33092920be88729dfebfa7f98b0d5c5c70"
+    },
+    {
+      "bytes": 26205,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/038.json",
+      "sha256": "61f0abedd216564a4f004ef08fa309fc5546332804a28ca3f97aa8efca14a3c1"
+    },
+    {
+      "bytes": 26208,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/039.json",
+      "sha256": "f423db4b3f6a2772f68ddb177cb9523a5267d6154fc2529f5db92ac358cadf79"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/040.json",
+      "sha256": "9d664de81e50d40a36982df5db872b2cda5f93fa281057aac942d75498f18d32"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/041.json",
+      "sha256": "e5dc80e2a0e1a99af65102df087cbcd44610bba9b313a4e9b1454ca0b3bb6e32"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/042.json",
+      "sha256": "574cbbad09c85fe9263ce74113c0559471b110f13512bf6a7f54113bccaba9d6"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/043.json",
+      "sha256": "969bb7159a7d462afd0664cbd8e5db9e1b8e06de969dfb4d2c30e891de72245f"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/044.json",
+      "sha256": "166e5313d597a5c38bb85b1fc8b3fa2130ccf221ab03fc7dc1105ba188e64458"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/045.json",
+      "sha256": "892112fd595973f9308f44de6997a412ae4aba5cf89b618b01f460c69a370ac8"
+    },
+    {
+      "bytes": 26463,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/046.json",
+      "sha256": "f0262049dfeba6bf0b5de44a585adf374a75dc085bd4d4096411fc93d80f6375"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/047.json",
+      "sha256": "56800cafb06551256a73a3f7ebb8e60ed008923b56df0e1ac833d9d5ced44767"
+    },
+    {
+      "bytes": 25968,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/states/048.json",
+      "sha256": "77e345a6a1a12211b7a0cd4c20577622a1241fe101f3c0a3b9aff49920a01ec2"
+    },
+    {
+      "bytes": 3274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/worker.log",
+      "sha256": "e2f854c62839a2cb4602ced19106bff06ce390a6b3508384ae9b69270e537143"
+    },
+    {
+      "bytes": 977,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/worker.supervisor.json",
+      "sha256": "48b9a82c35e67274f68609045b78ff1b7f9111d9c6f30eb4900f04e1228d0ca0"
+    },
+    {
+      "bytes": 1885875,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/maps.json",
+      "sha256": "f0fc8443a9c5801729887c871d1b779a603935565918f6c38ad05c7ddee84176"
+    },
+    {
+      "bytes": 689,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/maps.log",
+      "sha256": "a944180f406cf9d669e71aa2c762d4a532afd0e2f873087d45002ac692e453cc"
+    },
+    {
+      "bytes": 1014,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/maps.supervisor.json",
+      "sha256": "42c0ef221579b186827661e8f3d53c95e0bac4994abe98032bc7277ae2b22eab"
+    },
+    {
+      "bytes": 1294,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/mod2-build.log",
+      "sha256": "88ea2e80400e6878d025d652657a40f05a1147c7ccecb7ac93b843794d7b72e5"
+    },
+    {
+      "bytes": 1375,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/mod2-build.supervisor.json",
+      "sha256": "5945542d0e7f02f1af4eb58f6e49cac7fbff75992d856e85ea0b4ee4e2cae4ea"
+    },
+    {
+      "bytes": 56,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/mod2-check.log",
+      "sha256": "727c60565ece6b37c1f98ddfc391da30dd5cd91048aa462af4bf66e75fbe2e40"
+    },
+    {
+      "bytes": 1091,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/mod2-check.supervisor.json",
+      "sha256": "728ebc2a41d992d865bbdf94ca8c3267e3f977c3a7839c23de30dc2fe86e10dd"
+    },
+    {
+      "bytes": 1760,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/modl-build.log",
+      "sha256": "13ad923548ab8dd92e06cfa1295ffd2afdca1a10b194c569214517b8d079be1a"
+    },
+    {
+      "bytes": 1228,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/modl-build.supervisor.json",
+      "sha256": "7a2e220a01519c8e6d7b88825094bbe27f5f7c4248d7755a1207679c982003a0"
+    },
+    {
+      "bytes": 78,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/modl-check.log",
+      "sha256": "1441c5edafc7055995af8763c63aa5e65644f4bad24ae231c4b83647c5a7b473"
+    },
+    {
+      "bytes": 1082,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/modl-check.supervisor.json",
+      "sha256": "1570ce1475a296d83b15d4802c98c40ab1a31d680301a430d23be154c8fd92f0"
+    },
+    {
+      "bytes": 55,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/replay.log",
+      "sha256": "f2a1e94d98665ad66f830fe48f5844856aaa4d1e10ff74776c33658551ec53e0"
+    },
+    {
+      "bytes": 977,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/replay.supervisor.json",
+      "sha256": "caca6dd53b83eb637a6a7ce89a4f7d9d79978b55cc0fc9092a0fbcedce766252"
+    },
+    {
+      "bytes": 11562985,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/result.json",
+      "sha256": "085e0c196dd49e790a3e8e45bade32e75f16dd0e46b211f2c4fb043cbb6703f0"
+    },
+    {
+      "bytes": 20142,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/seed.json",
+      "sha256": "4c3e930667a72b3622c26d7578c8dfea6c231bf3733cf88dd8ce0c3684f99b17"
+    },
+    {
+      "bytes": 38853,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/000.json",
+      "sha256": "742652fa6340e5c77af1bc90f693d371d6fdd608935461d256ee7618db80ebe2"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/001.json",
+      "sha256": "09698cc578cec82852afddfacbd949cb489fe354b25f62efe92193cbb15a314f"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/002.json",
+      "sha256": "d149946c3013a340277b3ab6fde3760670c2a4fca4cef3a5fe754d4451d8a781"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/003.json",
+      "sha256": "1d11f3611c0808eaf4083433adde068370fc48fabf5344d6f01b0369a9701804"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/004.json",
+      "sha256": "67e70fd734fa04608dc66070793503437c8f8b56cdf5040720d04912cb2fd35e"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/005.json",
+      "sha256": "34ffdde2368d8dfc54bf67abd1d272e37b3c4ac2c96bae816e3e9d2e05a31825"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/006.json",
+      "sha256": "286bb3a1449f9d6f32048506c0202c6ff85b5ad132454f67395021f0e96073f2"
+    },
+    {
+      "bytes": 26210,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/007.json",
+      "sha256": "2d55eb481c2d1fb260da2151642b428d41e1252b992bbcea19141daad646bf06"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/008.json",
+      "sha256": "d87da4583b5dd0e05255dec3fa7b9ecfb232305e7a02c0ee18c6f559015a9c46"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/009.json",
+      "sha256": "68d94c7c264c088177661d0d54b8b1b35fdc02f1f6bc598ee83dceee4ba96b8e"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/010.json",
+      "sha256": "b6942f27ede170adf92af8046967d81535d0e5a1151ed73f7d98c117f79b7632"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/011.json",
+      "sha256": "15d8acc3fa744b6203ed4e2f1e72c7a507489544cb9d29846bf6ab6c0c018370"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/012.json",
+      "sha256": "214f89d7f9743e5e3a32135477f642f408e006279250879cf4cf4d37ba52aeed"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/013.json",
+      "sha256": "7be3b8c4021b829615c27696f575c5ccd4faca23ca9eca11798dbd8a8ae292ad"
+    },
+    {
+      "bytes": 26156,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/014.json",
+      "sha256": "573216788413bdd5033f9ea90f4354138218684c62232287837a00096a93746d"
+    },
+    {
+      "bytes": 26192,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/015.json",
+      "sha256": "f0ea47727c1d135623a26026c61c4122d8a36d4dddb35dd401c25d86b7bc9b8e"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/016.json",
+      "sha256": "6c5df675bea3c5193d7ab561e7f271c15cd9d78a8649e8e97ab9f649e494f2ec"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/017.json",
+      "sha256": "8b78892933220a4443b43579e29fc5638fc6e4943bf6ce26ecf0a28919f6b535"
+    },
+    {
+      "bytes": 26222,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/018.json",
+      "sha256": "8ee8f9d9eac53a4d00162f7e3397350efcecfd6c25f74492fc63f12b1d4ec368"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/019.json",
+      "sha256": "70c0ed3d5f199847741a8d434d466c5a530df7cbd31406c8996b050504868073"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/020.json",
+      "sha256": "ad528252048a85babab577f84d183fb475736279aa4139d59d495aeab30aef9b"
+    },
+    {
+      "bytes": 26217,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/021.json",
+      "sha256": "1cae2a871e1945f983b46798e25e87fcc47e1f2389cbe18e1ebb1d2cb20f4265"
+    },
+    {
+      "bytes": 26156,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/022.json",
+      "sha256": "457de660224833b522247a7b0387c1488b300f69137db7b298305353c2600877"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/023.json",
+      "sha256": "d92002235aafe6b103c92328a8ff7720415f99c26fc1f88c6c2e929d882bbf84"
+    },
+    {
+      "bytes": 26229,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/024.json",
+      "sha256": "677e880a5bfe9d3735e2b65bc8dab7ac6813c8e5f4510601e3d0d2f7db2d4cc0"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/025.json",
+      "sha256": "379ec8208ec22369f6fb9088dbe539f59d050f2de2e92cb6e7493b5168265e0a"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/026.json",
+      "sha256": "2a7cd306c8d2ec9d19e0df500b53317c3df7937d056a2757475b6f0eee167209"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/027.json",
+      "sha256": "0a5678551d68be897090095ea1abb5eb3ff5449684d128f3d5865651f30330e7"
+    },
+    {
+      "bytes": 26475,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/028.json",
+      "sha256": "8069bc14e00cdf0e254f1b36b4af9972e976a7949c2eb93aebd7537222d5d76f"
+    },
+    {
+      "bytes": 26166,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/029.json",
+      "sha256": "67a02c0ba01ce08bcd8b1bf8d74581c3f23675a56c2211905cb42499c038ead0"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/030.json",
+      "sha256": "748314fa17e6aad7e05a83586cf3c96316ced8ab60f9576dd659c3fda0b7a1d4"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/031.json",
+      "sha256": "c95fafa49e7520be3d1b6b8c96a5fdca244330beac62a4679b7e4fc0e64928f4"
+    },
+    {
+      "bytes": 26158,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/032.json",
+      "sha256": "f2006d68b4c43e4471be75e74d31f06d546a94153c01aa7805f7937dc2a7dd86"
+    },
+    {
+      "bytes": 26216,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/033.json",
+      "sha256": "3fb13e7ac6886d9788ffde7d60f0821a25e2eed22d4d2e4c205bef93de966fc0"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/034.json",
+      "sha256": "bfb17d39d23715b0128cd2afbbe35a2ffcfe3e08c82627e48102b0ea92121c00"
+    },
+    {
+      "bytes": 26235,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/035.json",
+      "sha256": "e01a60b3f6c3cd89f13dd064f4d67787c96788fad3c17770770806a778e6656f"
+    },
+    {
+      "bytes": 26739,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/036.json",
+      "sha256": "83587dff1ec4bccafd594271d222b07fa113a493d19471fc5f92d740e6954649"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/037.json",
+      "sha256": "d9ed1700661e3dbcaa45f043bfa9d181c09cc48a7202cc21f29926d564ade3cb"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/038.json",
+      "sha256": "3a534aedac613bc6d75cbb69bea77bc4fa00b7e074ade876aa36ff5a87bd2cfd"
+    },
+    {
+      "bytes": 26434,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/039.json",
+      "sha256": "96c963dbedb516b003bba0bd5121cdcdbf12278b0e0f5e981dd3a6920ca705d2"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/040.json",
+      "sha256": "573812ba5c3e9222052476e9dde20e3014b7fd91c1c3cb4c6b25af25fa82e7d8"
+    },
+    {
+      "bytes": 26435,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/041.json",
+      "sha256": "ebe4b7f03aca21d5099fd81111937546c636bd6113c5cb171952189a6fb58b01"
+    },
+    {
+      "bytes": 26774,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/042.json",
+      "sha256": "2c90bf5d6cf21a12892869f8074fcca6169c602210a39f8a97e2daa8f79aae72"
+    },
+    {
+      "bytes": 26522,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/043.json",
+      "sha256": "4108f3aa1535e8cd5731bf63598e6f427afe4685629b436b75b15ea44fa2a7ea"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/044.json",
+      "sha256": "723d54cd4554e774eafe2cdbb936e89011c02d470eb9520ad86ac0e6f1b6d3c6"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/045.json",
+      "sha256": "b26cbcc8e884110db799e678b0cb270e67d59088c60423deab2d890cc2c063a9"
+    },
+    {
+      "bytes": 26157,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/046.json",
+      "sha256": "a7ec34a52110d51cb8bd3f649273afd02494d6e5cb3964e84ee8ec6fa3a63771"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/047.json",
+      "sha256": "f049a434dd5baa04aed09779b6af9b1eb593e53f1336d6e7d77bdb6b9012ba4a"
+    },
+    {
+      "bytes": 25921,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/states/048.json",
+      "sha256": "c09b970b261d62950d2a8b8eb63a2daf6220d468a1a6eacce65490e8b994ac62"
+    },
+    {
+      "bytes": 3274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/worker.log",
+      "sha256": "e2f854c62839a2cb4602ced19106bff06ce390a6b3508384ae9b69270e537143"
+    },
+    {
+      "bytes": 977,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/worker.supervisor.json",
+      "sha256": "454058d347e254004fdb9178c5cb797a43fbf957850193cd53172efeaced5cb7"
+    },
+    {
+      "bytes": 1873086,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/maps.json",
+      "sha256": "fd123c70b3717bfb1f86f434ffd2db5bbaca9b637158cdbd24f67b00aa6f0db0"
+    },
+    {
+      "bytes": 689,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/maps.log",
+      "sha256": "a944180f406cf9d669e71aa2c762d4a532afd0e2f873087d45002ac692e453cc"
+    },
+    {
+      "bytes": 1015,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/maps.supervisor.json",
+      "sha256": "632d5f40ffdfb485150e0e0023bf32458e1aef4cfd3874c7d5128be6ab3efcd5"
+    },
+    {
+      "bytes": 1317,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/mod2-build.log",
+      "sha256": "d276667360cca7241a28d91fb53b7c3b45ad4ce8ac6455a5bcc8d5f71e6e7139"
+    },
+    {
+      "bytes": 1375,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/mod2-build.supervisor.json",
+      "sha256": "55e5670143887d44074facb3304aa4b3e3282b92e7e0a265637d5ed87c68669f"
+    },
+    {
+      "bytes": 54,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/mod2-check.log",
+      "sha256": "4297e76e2c6f13d52bd952863dd83915433295604cbcf05dce9c494a737e673b"
+    },
+    {
+      "bytes": 1091,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/mod2-check.supervisor.json",
+      "sha256": "48062f96c481c3a67bf21f7bfc89b27d11e7bf8da1c55cd5384c49ca7f8f5bab"
+    },
+    {
+      "bytes": 1724,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/modl-build.log",
+      "sha256": "89dc1f825a1ef5cd9c589bee2af829e55a73f55959b1374136babc3d683590cc"
+    },
+    {
+      "bytes": 1227,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/modl-build.supervisor.json",
+      "sha256": "4289df80ff3c9a5b65ee632c69fffbf4088ab6a9a3c9ea4a071ce3eb08494fef"
+    },
+    {
+      "bytes": 78,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/modl-check.log",
+      "sha256": "1441c5edafc7055995af8763c63aa5e65644f4bad24ae231c4b83647c5a7b473"
+    },
+    {
+      "bytes": 1082,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/modl-check.supervisor.json",
+      "sha256": "83c2d38a8a57f4c2b04147f636281078b747f7cee408ebd11bf1dabfa580adf8"
+    },
+    {
+      "bytes": 55,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/replay.log",
+      "sha256": "f2a1e94d98665ad66f830fe48f5844856aaa4d1e10ff74776c33658551ec53e0"
+    },
+    {
+      "bytes": 977,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/replay.supervisor.json",
+      "sha256": "e216078b193f278fa699b05a09bfb4fdcfc4d3499648734204dfd06f462a29e7"
+    },
+    {
+      "bytes": 11666378,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/result.json",
+      "sha256": "dd4ff0a4967ba2b815e295bc0752bde2f508bdb09c068100859c83bee9d82ee5"
+    },
+    {
+      "bytes": 19626,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/seed.json",
+      "sha256": "18b96eab32b50ff15a118eb8a742b880017582c98b1499a6bb45bfbae401c225"
+    },
+    {
+      "bytes": 37927,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/000.json",
+      "sha256": "37d137e982f57c42aaf374233bf8b40c786736e7dcc9443506a42d3543e96790"
+    },
+    {
+      "bytes": 26351,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/001.json",
+      "sha256": "7ade2ee601b97df8c1d14d74677c9539d0b8716c20eea7b07bc9e9ded4277960"
+    },
+    {
+      "bytes": 26580,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/002.json",
+      "sha256": "736674c314916656e5a0b34ea73dda2653f6128c40b7887224bbcdccae99a7f1"
+    },
+    {
+      "bytes": 25863,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/003.json",
+      "sha256": "e52a054f64110fd76038c50610de3638d3a3c4c25ce566dc7982023a092c62f3"
+    },
+    {
+      "bytes": 26577,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/004.json",
+      "sha256": "519e553701173870e3b68d765570d6513592a56c09b7e34a72486c04ccba87d4"
+    },
+    {
+      "bytes": 27463,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/005.json",
+      "sha256": "74dd24365ff43170bb93630b4d4f8567e5a646c7ac271dcc8c3ef1787933febd"
+    },
+    {
+      "bytes": 25840,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/006.json",
+      "sha256": "5148dcb31a75bea6fb87b93aa785f9cf08e9f366b7ec988ce9a9186c6340acf5"
+    },
+    {
+      "bytes": 25853,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/007.json",
+      "sha256": "dc33396523b63e02faec8495cb05ea6691af068dfc3371e9672ed21c98723329"
+    },
+    {
+      "bytes": 25872,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/008.json",
+      "sha256": "d7b59d8cb3b22b5e0eb6b84af7bb22d11c9b777497485b1671cae3e8ae344a6d"
+    },
+    {
+      "bytes": 26885,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/009.json",
+      "sha256": "bfdbb669e7777687fb3717eda69fd91dc8ddc46c9df5d28cfb35b8ebc55a7fff"
+    },
+    {
+      "bytes": 25345,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/010.json",
+      "sha256": "ef7b4322be67f60a1ca96e295c9bf374a22ef5f6dbc87fefd1ca8db6ae430d39"
+    },
+    {
+      "bytes": 27600,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/011.json",
+      "sha256": "df8533b1332e02e46b9cb235009d1ef89f045fc173946219af93aef5f7f12baa"
+    },
+    {
+      "bytes": 27831,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/012.json",
+      "sha256": "2ca9b399d606c9cdd856e7b9babf3f712ddd3b4bd272ddc16c9ebba1f11bddfd"
+    },
+    {
+      "bytes": 25636,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/013.json",
+      "sha256": "c8d9f29e133b02ea91ae43e7709173e8ffed39f12fc8fdfdc5b128eefe5836c4"
+    },
+    {
+      "bytes": 27147,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/014.json",
+      "sha256": "e50ba4a28ae5a954ff356cbd8ef9fcf9fb24c6fe6a878c58a6ccdb54464e5cb2"
+    },
+    {
+      "bytes": 26679,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/015.json",
+      "sha256": "504905e8fac25df86c40e4682bf39c042ac4859ef266051a0a19184ba0981241"
+    },
+    {
+      "bytes": 25852,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/016.json",
+      "sha256": "b87c75e44ed34dea3e3a29e6ba6aca4840239c16966a7192d48caa17b8a4afa9"
+    },
+    {
+      "bytes": 25589,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/017.json",
+      "sha256": "329d35f8d6788763479ceb2367a6817e0219fe9109d3c0d1ecb9214c0f76c683"
+    },
+    {
+      "bytes": 27216,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/018.json",
+      "sha256": "ee9505c7f5dbdf900b222e484c6a7809fdf667daa78172ba20278b071504d2f2"
+    },
+    {
+      "bytes": 26998,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/019.json",
+      "sha256": "2952a181190eff8ec01980a3ca605314f5250d516c2f9244f5618baf0779790b"
+    },
+    {
+      "bytes": 26691,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/020.json",
+      "sha256": "9846a698adbc99f68806a003fb2015bc1105c24937cbdb98e120426c85facdac"
+    },
+    {
+      "bytes": 26868,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/021.json",
+      "sha256": "9e9167f2266bd407c39d35ded76838c294072a4c74f101c411dd0a42a871e2aa"
+    },
+    {
+      "bytes": 26927,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/022.json",
+      "sha256": "4734141cb7653c0fa36f887459d2e54db601edaff863171ed888c39de225ec45"
+    },
+    {
+      "bytes": 26396,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/023.json",
+      "sha256": "c00efe4df1ec9ed4789780f55ad4d239273f929a6377cb4304a8b6f696560163"
+    },
+    {
+      "bytes": 25851,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/024.json",
+      "sha256": "226728c60b1bb9096f3c3120154680fb0ccb72a365bf270981d80442094084da"
+    },
+    {
+      "bytes": 27340,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/025.json",
+      "sha256": "f9f499c226e2aa8faba602381eaa11f601247bc8b6d114259e28966aad61bfff"
+    },
+    {
+      "bytes": 25621,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/026.json",
+      "sha256": "ad00e970fbf15ef675100fe3b4a8221c2a8dff6a5c00013cf67e8565ef51d0ab"
+    },
+    {
+      "bytes": 26915,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/027.json",
+      "sha256": "42f9689ce8be0db145f6265b8d289a9051271da828b743c3d751197b6021fbc5"
+    },
+    {
+      "bytes": 26133,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/028.json",
+      "sha256": "180bc74b2e0e22112e026e41727e868a7e56b1b71af505a1a63972f1b719e9ae"
+    },
+    {
+      "bytes": 26677,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/029.json",
+      "sha256": "4d5940a56b2c5955158dd9b8686569a52ec22692de99ee066ddf17c3515529e2"
+    },
+    {
+      "bytes": 25345,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/030.json",
+      "sha256": "076a13e818d8a170903cb11de41221a6256fcb79fa3b6cb08a1a3c1c512ccf63"
+    },
+    {
+      "bytes": 26142,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/031.json",
+      "sha256": "a6f0a85a486a648a2f42d5c26843bb4c1a599cc92d6d4c0de84ef7b6f207550a"
+    },
+    {
+      "bytes": 26417,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/032.json",
+      "sha256": "f8352603f3a63cda0716f069221512063184543e9e39a8033138d513ef2d7329"
+    },
+    {
+      "bytes": 26102,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/033.json",
+      "sha256": "6423c7b0204480716fc385ff8dd04d68061ffa333a4ca7d85ed43ebeab9f0f69"
+    },
+    {
+      "bytes": 25895,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/034.json",
+      "sha256": "edfa2511eb9de55fbf5c46771d94ed25247c5acf4e0f9950821038fbb00b495b"
+    },
+    {
+      "bytes": 25345,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/035.json",
+      "sha256": "0a49d689b6fa62b07bd92bdb1278bd17214282182fe60e6e2aab5496849dcf7c"
+    },
+    {
+      "bytes": 26403,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/036.json",
+      "sha256": "b6330567564f507614e3e1aefb8fa485badb50f3440eda9326cf06478661db29"
+    },
+    {
+      "bytes": 26858,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/037.json",
+      "sha256": "3bea9078c39ecd8677c271d5766a8537f62bc98293e8533c5dc1ba63b5c875e4"
+    },
+    {
+      "bytes": 25841,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/038.json",
+      "sha256": "d69d276df55f00a72549edec15dfadb6768985c59558574bf3f679edbd39c1ad"
+    },
+    {
+      "bytes": 26352,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/039.json",
+      "sha256": "d5bf0ced8e6f9e19fff35efe7c1fbacd29629973f7ed957c31d0924871bc1aba"
+    },
+    {
+      "bytes": 27621,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/040.json",
+      "sha256": "497c0b258d554561d9cf6d3dc6ee79fbdd56c30dcc6f458eafa7274cd93cb45b"
+    },
+    {
+      "bytes": 26346,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/041.json",
+      "sha256": "7572b95020ed4ee6ba41676dc40f8247263a903de3497c4f3cef6ee83384a8f2"
+    },
+    {
+      "bytes": 27199,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/042.json",
+      "sha256": "3afaccb3f4ef65a708fb4bd506116ee1f8c7bf1b8d31553dc15bd413c1d6d5f4"
+    },
+    {
+      "bytes": 25894,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/043.json",
+      "sha256": "230f7cba9615fdd5edd30049122157229903ebd7ccf015237cfd2312df6bccce"
+    },
+    {
+      "bytes": 27197,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/044.json",
+      "sha256": "e8a8459c30d42a4c3738084e876cbb444ee348467dfae61c51ca73f5eb491d43"
+    },
+    {
+      "bytes": 27746,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/045.json",
+      "sha256": "4e1ce25f7d8557b34d08e4a8db61b88fb50cf99c9fd8571cac5112463228d374"
+    },
+    {
+      "bytes": 26411,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/046.json",
+      "sha256": "156acbe3f54bdf7685cd0199021ac3e7175a80de8274634d162bd9cafa025ed8"
+    },
+    {
+      "bytes": 26097,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/047.json",
+      "sha256": "ec57fffe43568a7b89432652affa9cc9f358a4037d8e2b2a134c5224505e6a9f"
+    },
+    {
+      "bytes": 28118,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/states/048.json",
+      "sha256": "6694f9941cdd76fae0ddad80efe92cf38f7fcae060387b8292009ee853246633"
+    },
+    {
+      "bytes": 3274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/worker.log",
+      "sha256": "e2f854c62839a2cb4602ced19106bff06ce390a6b3508384ae9b69270e537143"
+    },
+    {
+      "bytes": 977,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/worker.supervisor.json",
+      "sha256": "42ea690e1a225ab74898c9553247031b665ce446ddb9d16ff8957586d7757745"
+    },
+    {
+      "bytes": 1885554,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/maps.json",
+      "sha256": "f74950f06f97702a0361cf78c1003742f57c55b3f4613d221f5fa55ccb942361"
+    },
+    {
+      "bytes": 689,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/maps.log",
+      "sha256": "a944180f406cf9d669e71aa2c762d4a532afd0e2f873087d45002ac692e453cc"
+    },
+    {
+      "bytes": 1014,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/maps.supervisor.json",
+      "sha256": "39a5aeb7b4f2bf68b8ae3a036e95603844bdc575e7e2076d29243da1f377383d"
+    },
+    {
+      "bytes": 1570,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/mod2-build.log",
+      "sha256": "2609a64a911d5a2b2d7ec83ea49fda932aab617fb1c34dc225aba311c7fd6465"
+    },
+    {
+      "bytes": 1375,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/mod2-build.supervisor.json",
+      "sha256": "36cbff8818592b8ad8c865bc3640c903645c593cbedb454957bf8518c5444e73"
+    },
+    {
+      "bytes": 54,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/mod2-check.log",
+      "sha256": "d8c771e8639f24b138b32ddbba8679e51483996cdbfd80d5f3c4660c583bb166"
+    },
+    {
+      "bytes": 1091,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/mod2-check.supervisor.json",
+      "sha256": "52ada93d84db51486070ab939c82dcd195c718b789a26196011adb82c7d4b30c"
+    },
+    {
+      "bytes": 1688,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/modl-build.log",
+      "sha256": "bba0de43c7154706cd45aafb5a7061c6d73c79b33c407501bb6dd41ff044a18a"
+    },
+    {
+      "bytes": 1227,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/modl-build.supervisor.json",
+      "sha256": "802a8b14d3724d14701b85a55ec198361f9d7e8b49574b5bd6858c8924afc90f"
+    },
+    {
+      "bytes": 78,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/modl-check.log",
+      "sha256": "3d3783b1e0ac0864ab14c515645fc81c5e41b09d3d6ce6bd65824fd7b096986f"
+    },
+    {
+      "bytes": 1082,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/modl-check.supervisor.json",
+      "sha256": "0511950518a406664161336735944ef25a042153fd8de0a612384a63065bffd3"
+    },
+    {
+      "bytes": 55,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/replay.log",
+      "sha256": "f2a1e94d98665ad66f830fe48f5844856aaa4d1e10ff74776c33658551ec53e0"
+    },
+    {
+      "bytes": 977,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/replay.supervisor.json",
+      "sha256": "47a006efdd0f1f123fe7f0b8f18021031874509d6ab655d003b8d4cc8d6dad81"
+    },
+    {
+      "bytes": 11508883,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/result.json",
+      "sha256": "0847753f5aa83a39488305e36fc51b6e8c3d03f05e4ab6694fe600697ff3783e"
+    },
+    {
+      "bytes": 20519,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/seed.json",
+      "sha256": "6e2ec784b8003984bd88e940cc0bd5a828340f34191eec09d5aa80fd22cae269"
+    },
+    {
+      "bytes": 37636,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/000.json",
+      "sha256": "da21ffe8261494f2992d9e0bb2ea1e49a7a11c90b2d7c1ebc10608abd088b93a"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/001.json",
+      "sha256": "d69f592ec3b9b11e9880892582cab8f78f5409bb9623672d8fb678ecacee6a48"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/002.json",
+      "sha256": "3b63814c68af16853be08db21c93ce8173c0274faac6810006382721b3c79e54"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/003.json",
+      "sha256": "a19e792d9bc825e90a30ae4d51dc2f4a687e4796338f11e48b8275878b317c1b"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/004.json",
+      "sha256": "b3eeb3fe17dde5cae762d486906a118a17921767906cfecc9aabd50ca461d4c9"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/005.json",
+      "sha256": "6ab7de044a64619c0801c5b685779217261bf39622703b32e65d2e9b6f2f1733"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/006.json",
+      "sha256": "c6c3e5314a88afb517b17d7bc76e3e5a88a4d44c0bf8c7e63258f9664b7e2576"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/007.json",
+      "sha256": "a196537d27bd75245539ee86e17090481a4981bc6357d5066fb095f791f21a1c"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/008.json",
+      "sha256": "e97ebb6e99475b313b28318deb883ffd51767d03229bfd4a11fe5f0f12ebcfb9"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/009.json",
+      "sha256": "56e9c2e443331d54d7199a71e8bb0719fc7ba7afff79ba604a3669c4a982d414"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/010.json",
+      "sha256": "a345c22243ec6753651ba4ebdccb5fbd20fd1a81304a9c0a0f29bf2aef488f29"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/011.json",
+      "sha256": "599824ef0d99c72b716bac112c7e4da95d761aa624fce46af230790130471e1a"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/012.json",
+      "sha256": "d3bd0487eaa5f9818bc95a57bd94ac3d97ecd2446e3edd1b08796081a16775cd"
+    },
+    {
+      "bytes": 25572,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/013.json",
+      "sha256": "01a1d26584073c5ecff8005a4e88f1c64541fda572bf37430ceb60927c2a4684"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/014.json",
+      "sha256": "2fe45e677c178258c7366c1aca6c54358bf90b47320891fdb0b7dea718063471"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/015.json",
+      "sha256": "beadd8ad1fc0001328e4cc6d85e9d36c71700c69b45f9a25a084db86da51d051"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/016.json",
+      "sha256": "aacd6a65e3683d3e47a3be151ade74049d957cfc2cbfe875216fbe86917855c4"
+    },
+    {
+      "bytes": 25571,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/017.json",
+      "sha256": "0ea10e7dad74f387636899dd35f42e5a6baaf24b1c104e942300c492e9445ff3"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/018.json",
+      "sha256": "d43ecb566c6be735264be9b05927d5fd036eb9bc184a18eb5fb4c70d48c51fc5"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/019.json",
+      "sha256": "c16ffebfd1ceb413ab36cbbdd466af82684d7266510b31a93075631d941d4455"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/020.json",
+      "sha256": "d1f6ba6592fbd11048f1f5652889a21599c9d1ab28ec8cb314319b322d9404e7"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/021.json",
+      "sha256": "e45b884465b301905a897ba1c8d94567d5111390a5d611120f7df6b5274c46d3"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/022.json",
+      "sha256": "afa90daebcdf5eb53c30df6f8284fb2aec2d0e1813a4d5de89edee8fb90ff2d3"
+    },
+    {
+      "bytes": 25556,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/023.json",
+      "sha256": "158b73e05ec20ea9f989fa7b42078559d79ec51d19f064d893c5ded68efcc2b3"
+    },
+    {
+      "bytes": 25564,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/024.json",
+      "sha256": "7bed116b9607897db4886cfd4172c31beaac879dbc286d470c68406ede1da9b3"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/025.json",
+      "sha256": "c2830ac4a99e4a19b64966673f9d2df909ddf1ee224c53d856f81d72e6b5ff8a"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/026.json",
+      "sha256": "1e2ce4299a7e0ce22da8866c292bdf62175f42e283e2b9b17a9686044014d81a"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/027.json",
+      "sha256": "c5b60ab888c6ba2eb335147ea97fd53ecc4dbce7ff1f236e2f089ed2ce6c2881"
+    },
+    {
+      "bytes": 25803,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/028.json",
+      "sha256": "0ffcdd2d698ffd033fa00489949738d34fc5fbfb41031830c087444a87c9d1a3"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/029.json",
+      "sha256": "9be4654f6eeaee8acb7e58976b4ed51d3d735fe9bcaace6ba9727b8e04f3f8f4"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/030.json",
+      "sha256": "3a42cfdbc0efe0cc4ac00297b55f5ff2e7f044cb54553ff063dae8d00bc4dfa0"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/031.json",
+      "sha256": "d9fde0f19c6c341f3e3584b19a8c4ba339ae569485a7f9f52da8e11e762fc567"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/032.json",
+      "sha256": "fd23f0ceb9429665e06071c7e4cc37bc6f7b2c711638a7df15fe9245358adbd7"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/033.json",
+      "sha256": "ce63436df506009b757785d95e9c6bae8bc6539377c83333568b925de85b6a58"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/034.json",
+      "sha256": "63a9e28d0d41968b4a2ff78921d34820c4f401cceae503181fe9b41745dbdabf"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/035.json",
+      "sha256": "75c338e9053b76c3da40071ba78c32abe1a9df3cc43d60f176fa0cd7c79c96a8"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/036.json",
+      "sha256": "dc9a85ac37ee8491bf06e7657908cc9680ee135666e61dc35c58cd291166d5f4"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/037.json",
+      "sha256": "98447f30b0e01d7c1c6752d9b82af5dd2ad57e3009a45058d170abc0ab9b87fc"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/038.json",
+      "sha256": "8b870f29c45fe7829794e549e60be6ed35a72e20dbe98a052f363daecea60a59"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/039.json",
+      "sha256": "75ac6396ff3d9a839e05357a70ee2c247e968b412ca53c9b6440347f2dc447ca"
+    },
+    {
+      "bytes": 25579,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/040.json",
+      "sha256": "51a477b11f0f05fbbeafa47aa4e6c1f69e46af3278fb32e752aa71c7bacb1bac"
+    },
+    {
+      "bytes": 25516,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/041.json",
+      "sha256": "a93a925e350c5823ea1b0d11cb2d1c62411f781ee4302000e509dc9374e543bf"
+    },
+    {
+      "bytes": 25549,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/042.json",
+      "sha256": "267f82f70907fb43c2626e3b2ff4ecffe7aa955cb0d46fc811ae9390bb9e5d4f"
+    },
+    {
+      "bytes": 25570,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/043.json",
+      "sha256": "3ebc0dd0cbb6a54e08fc5ed4468b19bb99eec699b6b979df19348619a50de654"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/044.json",
+      "sha256": "ff938f9271a1a955028ae4c7baaff391294a9aad02f1367934ebad578c31675d"
+    },
+    {
+      "bytes": 25553,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/045.json",
+      "sha256": "c0fbc41b0b92056a11dae8b0c1be8e2a98a2412738701eaf8385128317491db7"
+    },
+    {
+      "bytes": 25551,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/046.json",
+      "sha256": "c6c5e02b10a77b7f8923a226fd78010994c5830bc36f8fd1385d5bec357686e9"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/047.json",
+      "sha256": "73b44cd8814b276fa59f5dfee7730b5e362fd3beea00cc98697e47bfc87df2a6"
+    },
+    {
+      "bytes": 25274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/states/048.json",
+      "sha256": "477240b7612f9d1251519280465a0b3d4c480b8cb450fb08bd1e4bdd6b0b3939"
+    },
+    {
+      "bytes": 3274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/worker.log",
+      "sha256": "e2f854c62839a2cb4602ced19106bff06ce390a6b3508384ae9b69270e537143"
+    },
+    {
+      "bytes": 977,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/worker.supervisor.json",
+      "sha256": "0d267c7862549be297efa661ce0f8a8b5f3a8834c25f56a67725603c009bf4d5"
+    },
+    {
+      "bytes": 1884103,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/maps.json",
+      "sha256": "188384f26e93f1834c4f3b8b60911bec04717e4df8cee36ec5d9d2a5dbb302ce"
+    },
+    {
+      "bytes": 689,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/maps.log",
+      "sha256": "a944180f406cf9d669e71aa2c762d4a532afd0e2f873087d45002ac692e453cc"
+    },
+    {
+      "bytes": 1014,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/maps.supervisor.json",
+      "sha256": "0c93bd8912b9b3b63d19717eb57edce7959f4f46573eaa1beff46e96efffda9f"
+    },
+    {
+      "bytes": 1453,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/mod2-build.log",
+      "sha256": "5be913dc1bce9dc2cfdad0aaef6113f8f445e60c7e718acaf062613f959e1d20"
+    },
+    {
+      "bytes": 1375,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/mod2-build.supervisor.json",
+      "sha256": "9b9343d8453f299556ecfc4c54351cc2d15998f8a35c74b851e9f0032491c836"
+    },
+    {
+      "bytes": 57,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/mod2-check.log",
+      "sha256": "eb109b5ca80440baa6d98b6bc06e265a8c5332577eaf533caaa39ecc284a924c"
+    },
+    {
+      "bytes": 1089,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/mod2-check.supervisor.json",
+      "sha256": "a6b613854abf1632768ece7c8cff6ec6b6f0917dd6999ccadba317ebcc3e65db"
+    },
+    {
+      "bytes": 1689,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/modl-build.log",
+      "sha256": "0589424a418b8943c3143139feca393f4f85ace53da62fafbc572fce323f9bcb"
+    },
+    {
+      "bytes": 1227,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/modl-build.supervisor.json",
+      "sha256": "28a9e70e2d7b2d3bb6318fdb085ff31825beb7ef21cc122df157c6694cab964b"
+    },
+    {
+      "bytes": 78,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/modl-check.log",
+      "sha256": "5f27027258671d5af978778b14f62c7556d2f36056b3921a64f53065acf4929c"
+    },
+    {
+      "bytes": 1083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/modl-check.supervisor.json",
+      "sha256": "8353d41188113aa5b77a70808c2c860790d137e0a1907c7130b887bc227c9fa3"
+    },
+    {
+      "bytes": 55,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/replay.log",
+      "sha256": "f2a1e94d98665ad66f830fe48f5844856aaa4d1e10ff74776c33658551ec53e0"
+    },
+    {
+      "bytes": 976,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/replay.supervisor.json",
+      "sha256": "93d511c297784a114c1b7db377de58b89bd41bde55161d81b1f5f2dd0193c4b9"
+    },
+    {
+      "bytes": 11572025,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/result.json",
+      "sha256": "f8d1b12a02831ab877fa5930682070f30a8b5e9e4f26b1ba47faff8209c1a349"
+    },
+    {
+      "bytes": 21013,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/seed.json",
+      "sha256": "d3d8551292f964c5c02843d11cf34195cb807aab01f61b818281cb6d8c23ef10"
+    },
+    {
+      "bytes": 39885,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/000.json",
+      "sha256": "a4d5fab1705da21f0f4e2032c688b6bdc9f4fe36fec01f2999a3c036665c7808"
+    },
+    {
+      "bytes": 27199,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/001.json",
+      "sha256": "6909dd6ee6258b2e2483b05fe31099d5fa26bc00debcd8b9b1d1ddb6c1e9818b"
+    },
+    {
+      "bytes": 26378,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/002.json",
+      "sha256": "3442e28f2d1744ab6a39abced5b7bf8cac038f21e010bd5c13fbfbf997f65146"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/003.json",
+      "sha256": "6c86a3b56730ee0aad6ca4a02227f20cf98e2f5c199a6bd8b5c9caf7a8459133"
+    },
+    {
+      "bytes": 26353,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/004.json",
+      "sha256": "0fe82188a15f7dfb5f7d81ef20eb96d4cdcf1ab59f0f1e5605c3f02dc2792649"
+    },
+    {
+      "bytes": 26360,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/005.json",
+      "sha256": "70de5c58a6d86fcaf8186c46c22acc4e0bb20ebbf05732f2d6fb8645cd8b085e"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/006.json",
+      "sha256": "fed5482ccf43f14b8da579854af5ee4f3b133ea9f58fe5bf57ee2b7baafebb30"
+    },
+    {
+      "bytes": 26683,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/007.json",
+      "sha256": "397f3a938f406aa1dfaecc67dacaa5f79e361889c4fe6d482fd71d0c931ba9c7"
+    },
+    {
+      "bytes": 26367,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/008.json",
+      "sha256": "53a7d6ee87be03c39861afdb9fd2fe5a06e2d9ba9fe75956dd535c3731527184"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/009.json",
+      "sha256": "ad5ab2f7772f0491710bf8057f7043617abd2267bf450f3f5ea44a5ec3a26f2c"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/010.json",
+      "sha256": "f338764af3c16d08b978134de39e06f56ca2ff04e3900a4c09714cebad4fb4cd"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/011.json",
+      "sha256": "bfd8eb7976b99f8e7cfaafd59393470be4c38f5f1f53bf54499c27288d85885f"
+    },
+    {
+      "bytes": 26399,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/012.json",
+      "sha256": "9e3485d51c140a5f6610334d544c89cc45fb2985f96d79d369197bda37065b24"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/013.json",
+      "sha256": "040a9a4f316f683483a1329d2b02ac74702c50b7eede1a518967814dce24b8ae"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/014.json",
+      "sha256": "563b9073769653745d55f5a81d043d399d6faa8e69438589249f01c18eac7d7a"
+    },
+    {
+      "bytes": 26598,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/015.json",
+      "sha256": "8575c5eb54940367e081d7dbc1f09e3a82320a7ad4ded7ff1d5479523b8e6864"
+    },
+    {
+      "bytes": 26374,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/016.json",
+      "sha256": "758891a1004ff2a5ac7e48ae69cec29d27308ca3b4f6826530ccdc0d09cd5288"
+    },
+    {
+      "bytes": 26615,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/017.json",
+      "sha256": "1ba7c1407d0e2991cdb70aac9e81c90c3e3b081bd3a68463ada5ec9d94335f63"
+    },
+    {
+      "bytes": 26365,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/018.json",
+      "sha256": "a831c9c4453b4f049a17f7d9ee996f561f3e98e4c3a6146d9c3ae0900961e2dc"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/019.json",
+      "sha256": "cfcb751d2451943d9b77ddeba439c61b77bba34d44698591d1122e86c6acc156"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/020.json",
+      "sha256": "205da63eda5aa71dce10bda2771bb5222803d2c43a1b1a6476de43d50fcee1b4"
+    },
+    {
+      "bytes": 26402,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/021.json",
+      "sha256": "959febd7d287418f975a31ae63636b3932961f3370ccba87afd6478665f6f037"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/022.json",
+      "sha256": "f791c59a7266caa57ac4b308fa6b292b4587da91a5ca1a8d5a5cd83053b64f61"
+    },
+    {
+      "bytes": 26318,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/023.json",
+      "sha256": "6169b1bafbbfef203517ca5e1785d6b0f2c9f18c25b26147c5ef3619e1b8585f"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/024.json",
+      "sha256": "fb1c56d86d0e5cb92c6a0a62b3428326dbfc56090faf24cdb83a334789ab21ee"
+    },
+    {
+      "bytes": 26634,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/025.json",
+      "sha256": "7e910767190b5dd155e0f48a5f8c1ea28aa7097daad4d236e644783d90d7573a"
+    },
+    {
+      "bytes": 26701,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/026.json",
+      "sha256": "46e8fb6f09a5c9d7b89535e7a3d84800e981fd9be647a02bf8021c98b353a4d1"
+    },
+    {
+      "bytes": 26335,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/027.json",
+      "sha256": "d2abce16806130ce540068057a5ca129f91679b7dcf72614bee67c1d7826ed7a"
+    },
+    {
+      "bytes": 26389,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/028.json",
+      "sha256": "77753a7ab45bd593337fe7d3c058207ec519b0d0edf4f5955985a1a0e1558dd5"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/029.json",
+      "sha256": "b72571200466d208100330996251c38d67d042d486d481995c7512588d5569dc"
+    },
+    {
+      "bytes": 26619,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/030.json",
+      "sha256": "b29cfbfcb518859e969ab1878ac416f18341195b8a558b935ac99558beb9a42a"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/031.json",
+      "sha256": "af9d10434287b06272955938517559015f00797cc1367bd394952adc1abd3b80"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/032.json",
+      "sha256": "24da345ffc87e9f632e2ef72584ec55a78d321f488a1bd2a381a17ca3ea490a1"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/033.json",
+      "sha256": "197e8408072a54579e37e70d01bcd29760d706a3f6fd57827c8e0eb27c133187"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/034.json",
+      "sha256": "bf9fa7846e232f505f68218b4ed42212e0c825a71f84ce561a87c16934743472"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/035.json",
+      "sha256": "b3249bbf0a7acd2ecebf4e9c2c45fcd2acb9441efdbb3107ffc636aa18c9e23a"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/036.json",
+      "sha256": "bada05e8dad2e38e3dc5539b1e8d2a8e8b6d2f0eb9da982b05c56de654e33706"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/037.json",
+      "sha256": "1b5d0abba880447e2bfbcc6c2c1b649d8d7886f408da0262451e875558f27bb4"
+    },
+    {
+      "bytes": 26589,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/038.json",
+      "sha256": "b9e6fd2180be959f8bb9f7e783c63beb7b3365742e8d2c360c335e152fc0d7fd"
+    },
+    {
+      "bytes": 26872,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/039.json",
+      "sha256": "fb937efa78554dedce29c51f716ccb3d962c6c459df17efb8318a12a4a6278c8"
+    },
+    {
+      "bytes": 26360,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/040.json",
+      "sha256": "a5ddc1e2e6816cd23041c647e6125cd561b04de42664a04dfb079b66dbd37c23"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/041.json",
+      "sha256": "e825c6c3bc4198b95cf6a356a818673e96ef8f01d90c188d29383e1444b74058"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/042.json",
+      "sha256": "560ec2d06c1830d9507f56258da7af29ae8a403202fad927e6fd403307959733"
+    },
+    {
+      "bytes": 26378,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/043.json",
+      "sha256": "32a0368b0eb6d43f8bd1972d10f994fee71f447e8eba890fcba815e9ead4963e"
+    },
+    {
+      "bytes": 26624,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/044.json",
+      "sha256": "a98622705b59d770d494ea9c3c5be0818863c909bf9658d22715d5a43d1d28b9"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/045.json",
+      "sha256": "685470cd886bfa2e830cb44973cde6955920e23832586393de26e9861faf5b36"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/046.json",
+      "sha256": "e0973273e0812bca70871382325a69e1eb0bd4330e1e9b94ce6a8121d842ff5e"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/047.json",
+      "sha256": "5cd4ab0833644280e84a8e00f9ce4baa4b4ffd05f9eb1df1ce6d110fa881ce3e"
+    },
+    {
+      "bytes": 26083,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/states/048.json",
+      "sha256": "62e876b0d4d9da16212e42feb4e5391e526363014f89721402ed188abeed167d"
+    },
+    {
+      "bytes": 3274,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/worker.log",
+      "sha256": "e2f854c62839a2cb4602ced19106bff06ce390a6b3508384ae9b69270e537143"
+    },
+    {
+      "bytes": 977,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/worker.supervisor.json",
+      "sha256": "18bd023ca74e7207e4461dbd1220ed4a3982cbbbec8bd0a93671ea85c0577e4d"
+    },
+    {
+      "bytes": 9282,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/protocol.json",
+      "sha256": "b6230785309203a98f0a0eafa209067eee9777e1de8ca7031428c36712d04893"
+    },
+    {
+      "bytes": 4401,
+      "path": "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/verification-ledger.json",
+      "sha256": "9469e54f4e3502726e0907d45cb8b3983f8dc824e22f0ba14f78c94c6e4797e3"
+    },
+    {
+      "bytes": 933,
+      "path": "artifacts/local/elliptic-curves/native28-specialized-parity-control-v1/cloud-audit.supervisor.json",
+      "sha256": "2021fe3a87b6fe92f4b91919384cbd2e5a5dfd6d828311441b042bfdf92c5838"
+    },
+    {
+      "bytes": 980,
+      "path": "artifacts/local/elliptic-curves/native28-specialized-parity-control-v1/geometry.supervisor.json",
+      "sha256": "600f0d54539bca83fbd3a36266e487fbcda3a0a785d794c02f588eb0451961e8"
+    },
+    {
+      "bytes": 945,
+      "path": "artifacts/local/elliptic-curves/native28-specialized-parity-control-v1/replay.supervisor.json",
+      "sha256": "d59a055b33a9f799e4bf1c88b5eccf4ccf763f05c95d02f4bc7d6c87563383f5"
+    },
+    {
+      "bytes": 1065,
+      "path": "artifacts/local/elliptic-curves/r17-other-small-prime-scalings-v1/build.log",
+      "sha256": "fab2be70b5cde1263c5bc03a3c58c2ca25b28930d01e2f7fa0c293e78b502cae"
+    },
+    {
+      "bytes": 942,
+      "path": "artifacts/local/elliptic-curves/r17-other-small-prime-scalings-v1/build.supervisor.json",
+      "sha256": "55de904640323a9b1777133a59a6b6ef13bd791b910c48c004abff88ad89b27f"
+    },
+    {
+      "bytes": 71,
+      "path": "artifacts/local/elliptic-curves/r17-other-small-prime-scalings-v1/independent.log",
+      "sha256": "be0f30285e558461cd6c86535aa26fbb47730521b977e4a226af3a97f164da43"
+    },
+    {
+      "bytes": 932,
+      "path": "artifacts/local/elliptic-curves/r17-other-small-prime-scalings-v1/independent.supervisor.json",
+      "sha256": "bffaf0fd6a00ab45550d686c39942d0fc43cd0e928dd97b84dfdacec02c3b877"
+    },
+    {
+      "bytes": 4618,
+      "path": "artifacts/local/elliptic-curves/r17-other-small-prime-scalings-v1/protocol.json",
+      "sha256": "a7cd1c315238b940bcfa4240e736dbbdf586be3199614862456578c97c7bb034"
+    },
+    {
+      "bytes": 1065,
+      "path": "artifacts/local/elliptic-curves/r17-other-small-prime-scalings-v1/replay.log",
+      "sha256": "fab2be70b5cde1263c5bc03a3c58c2ca25b28930d01e2f7fa0c293e78b502cae"
+    },
+    {
+      "bytes": 943,
+      "path": "artifacts/local/elliptic-curves/r17-other-small-prime-scalings-v1/replay.supervisor.json",
+      "sha256": "8c5ecff154d82e726f54ef583704eb27044d2dcc86133339dd9a9b5f97a08425"
+    },
+    {
+      "bytes": 3758,
+      "path": "artifacts/local/elliptic-curves/r17-scaling-prime-support-v1/build.log",
+      "sha256": "5dc4343e034b5acddcfb624a84e555d618743c8bf8690d98b5898f6f6896568a"
+    },
+    {
+      "bytes": 929,
+      "path": "artifacts/local/elliptic-curves/r17-scaling-prime-support-v1/build.supervisor.json",
+      "sha256": "28efeabdef0d4d7a183a5fb69735e0d48530309f0732bfda53aace4bfb0091bf"
+    },
+    {
+      "bytes": 69,
+      "path": "artifacts/local/elliptic-curves/r17-scaling-prime-support-v1/independent.log",
+      "sha256": "ed7efb66db17d6285a00b09608ae3b25824583916a1352b5b89636d2a2529d22"
+    },
+    {
+      "bytes": 968,
+      "path": "artifacts/local/elliptic-curves/r17-scaling-prime-support-v1/independent.supervisor.json",
+      "sha256": "63da52e513b892a8da123d4f8e611a7029eb0148699bac10b698c99a61c268a0"
+    },
+    {
+      "bytes": 1227,
+      "path": "artifacts/local/elliptic-curves/r17-scaling-prime-support-v1/protocol.json",
+      "sha256": "728e7e942db9e6a50d3def798daa153411686bfcf6100c1252ccc42e0dc16a98"
+    },
+    {
+      "bytes": 9593,
+      "path": "elliptic-curves/cas/alternate_quartic_covers.py",
+      "sha256": "598f7556333c9d8462f251d97a6d132e0bd672a11861f8c2f142fc4588abe9e5"
+    },
+    {
+      "bytes": 14235,
+      "path": "elliptic-curves/cas/analyze_icarm_7fff_zip_sequence.py",
+      "sha256": "2957bb20d4fbcde1adfedf29fb211d8f3aa584a37a5719694d13e9313a1e7ed5"
+    },
+    {
+      "bytes": 2781,
+      "path": "elliptic-curves/cas/audit_compact192_specialized_followup.py",
+      "sha256": "8c86b062565761fedd98febbd5983689d8268fd8e05e73b67339b05eddd8340e"
+    },
+    {
+      "bytes": 4690,
+      "path": "elliptic-curves/cas/audit_r17_scaling_prime_support.py",
+      "sha256": "1080d048ccb415a6684b1dda312bc7ce8db51a0b4928b555d507d4676782a7bb"
+    },
+    {
+      "bytes": 5134,
+      "path": "elliptic-curves/cas/benchmark_r17_extended_prime_traces.py",
+      "sha256": "0239593edaa2e1dd19a5ac0fe18652cd0ccb7cddeb9046c40fa3da7f9e97d47d"
+    },
+    {
+      "bytes": 6732,
+      "path": "elliptic-curves/cas/benchmark_r17_retention512.py",
+      "sha256": "a653c4bf6e4396aac13e3f5003e5909ed5b2a12ed06142fa5ad55c9e7592a749"
+    },
+    {
+      "bytes": 18239,
+      "path": "elliptic-curves/cas/build_elkies_2026_rank28_bad_place_ledger.py",
+      "sha256": "08222418ef223f787f83a9ea37bd3cc9ca4744e7d72b8b2d874da04dc7fd262d"
+    },
+    {
+      "bytes": 30238,
+      "path": "elliptic-curves/cas/build_elkies_2026_relative_2selmer_suite.py",
+      "sha256": "bf3b22cae0e429196101083f70862bf549189ac8cfa6ded402b95ccc55dbcf26"
+    },
+    {
+      "bytes": 13165,
+      "path": "elliptic-curves/cas/build_q12o5867_bnf_free_signature.py",
+      "sha256": "721f6c6f250fca9afdbc3034390558edaf90e515f146e66ec3eb780c689828b0"
+    },
+    {
+      "bytes": 8974,
+      "path": "elliptic-curves/cas/certify_compact_r17_candidates.py",
+      "sha256": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9"
+    },
+    {
+      "bytes": 6670,
+      "path": "elliptic-curves/cas/classify_r17_other_small_prime_scalings.py",
+      "sha256": "349ad4e399f3c8641e2c74e2d3d203a7db722b9be76e6673badb12e7548211e0"
+    },
+    {
+      "bytes": 16221,
+      "path": "elliptic-curves/cas/compact192_specialized_followup.py",
+      "sha256": "f206415f3ce25ad3bd0c196a6856313a02198828d16289657ae1a83f374c2b52"
+    },
+    {
+      "bytes": 1751,
+      "path": "elliptic-curves/cas/compact_atlas_specialization.py",
+      "sha256": "ea68110968e86cb0502a74a995c26054ff8e4a0da90c49bb2bdf0b753a759b14"
+    },
+    {
+      "bytes": 14246,
+      "path": "elliptic-curves/cas/ek_k3.py",
+      "sha256": "53b96064afee80c102bf149242754ed98afc85b5bf3c422429d1f23c9db68f0f"
+    },
+    {
+      "bytes": 21409,
+      "path": "elliptic-curves/cas/elliptic_candidate_record.py",
+      "sha256": "5b9f6f843d48e705253404a5583ef53966c72c7f229c68ef17c6b848f5e94af3"
+    },
+    {
+      "bytes": 7677,
+      "path": "elliptic-curves/cas/export_new_high_rank_curve_index_v13.py",
+      "sha256": "70b155a920d6e99027d0bc6864d2506b9c988535026fd03942064accb538c0bc"
+    },
+    {
+      "bytes": 7419,
+      "path": "elliptic-curves/cas/extend_retained_r17_prime_scores.py",
+      "sha256": "c7b1262544a9791f842b5a06b2524d9bf57e0983f2a6d867eda216b14eb33767"
+    },
+    {
+      "bytes": 8479,
+      "path": "elliptic-curves/cas/extend_retention512_r17_scores.py",
+      "sha256": "7dcc70f14aa1ddb016efb63e25d7abc5869807319487a440a443a9a863d95b55"
+    },
+    {
+      "bytes": 14700,
+      "path": "elliptic-curves/cas/fermigier_mestre.py",
+      "sha256": "6932c04fa699683ec112f25801adaa74ccb5e16dfa789b28ad56abf720c51090"
+    },
+    {
+      "bytes": 6191,
+      "path": "elliptic-curves/cas/finish_compact192_specialized_followup.py",
+      "sha256": "45f23f3c6c6fb51e50d6443ed226b90c1f9f89c6d00189e56475474d27e4f042"
+    },
+    {
+      "bytes": 12316,
+      "path": "elliptic-curves/cas/fresh_r17_pari_batch.py",
+      "sha256": "18a5b22b1608af3e20003debb39e1c588234767e22d7d3f0f25a1c723fb38a2f"
+    },
+    {
+      "bytes": 15983,
+      "path": "elliptic-curves/cas/half_lattice_pointed_sieve.py",
+      "sha256": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4"
+    },
+    {
+      "bytes": 1493,
+      "path": "elliptic-curves/cas/memory_rank_certificate.py",
+      "sha256": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6"
+    },
+    {
+      "bytes": 8101,
+      "path": "elliptic-curves/cas/mod2_reduction_independence.py",
+      "sha256": "c5963952d1a9089416479671b788b6437dbba26591d796646022f4e9dddd0c70"
+    },
+    {
+      "bytes": 3943,
+      "path": "elliptic-curves/cas/package_compact192_followup_supplement.py",
+      "sha256": "d0c18a0053450e42e8443bdcc148a1442c4399d4860f11c3455b1f8ee4bcdc3d"
+    },
+    {
+      "bytes": 5787,
+      "path": "elliptic-curves/cas/package_recorded_mod2_audit.py",
+      "sha256": "aac478e8abe4221a4cbf38c2d4ae52866bb61c9c3249b7572da45846f1a7e8df"
+    },
+    {
+      "bytes": 6409,
+      "path": "elliptic-curves/cas/pari_bridge.py",
+      "sha256": "d8c40e3c1b0f9eeb78e2f4b01aa2f3d5f793bfb35956c5846b2312da90132e45"
+    },
+    {
+      "bytes": 6536,
+      "path": "elliptic-curves/cas/pari_pointed_backend.py",
+      "sha256": "895c0f3c14eefc2537ef1aca4354719e47ce2a7cd09fcf2e83f2c44cc60733de"
+    },
+    {
+      "bytes": 20080,
+      "path": "elliptic-curves/cas/pointed_quartic_search.py",
+      "sha256": "01c40a10cbe31f4439c4f2dacf7e2e5831f8bd6b83079933c9d506b6a25d1ff9"
+    },
+    {
+      "bytes": 7157,
+      "path": "elliptic-curves/cas/pointed_quartic_sieve.cpp",
+      "sha256": "7a015c85e54e14f16848626b154236132e34c0e42315242959a0be59e2de97a4"
+    },
+    {
+      "bytes": 2912,
+      "path": "elliptic-curves/cas/prepare_compact192_specialized_followup.sage",
+      "sha256": "8f8816455d861e215161815f0639a3ff90c70f7bf4fdf803beaf380d9b6bf1f9"
+    },
+    {
+      "bytes": 4521,
+      "path": "elliptic-curves/cas/prepare_fresh_r17_pari_batch.sage",
+      "sha256": "0647e6e0f8f9364163517e8a725963406b1aa0b0ab5519e4edc85c758b2763b6"
+    },
+    {
+      "bytes": 9767,
+      "path": "elliptic-curves/cas/production_search_gates.py",
+      "sha256": "4770ce8930623f5b5dcb631b8fc9dc1c5a1fd8f7862f557d943f8b8fb375e337"
+    },
+    {
+      "bytes": 4394,
+      "path": "elliptic-curves/cas/prospective_half_lattice_v2.sage",
+      "sha256": "4d06eef3eb078116989b4df7df0afe8333da78d0d2e9ce010f1e0da8fc7a41bb"
+    },
+    {
+      "bytes": 2655,
+      "path": "elliptic-curves/cas/replay_compact192_specialized_geometry.sage",
+      "sha256": "9077701982979c9ee55686f5da7f7ff32eefd66165c65523fc6a11c0bf013ba3"
+    },
+    {
+      "bytes": 5221,
+      "path": "elliptic-curves/cas/replay_retention24_geometry.py",
+      "sha256": "341b3ede2ecd39cbfdf8ad009c0db8bba42afa0a01ab2d6dfd767a2898075f05"
+    },
+    {
+      "bytes": 4889,
+      "path": "elliptic-curves/cas/report_compact192_specialized_followup.py",
+      "sha256": "716ecd5c1fe09cf965c29d5c7a685abbb174f973117c0c4863af4a59f21405aa"
+    },
+    {
+      "bytes": 3601,
+      "path": "elliptic-curves/cas/report_r17_small_prime_minimality.py",
+      "sha256": "24b1d0dcedd0a025260d137244b74793ba5fe83d2fb020330250bbfdc92dd679"
+    },
+    {
+      "bytes": 207,
+      "path": "elliptic-curves/cas/research_runtime/__init__.py",
+      "sha256": "fcf27db31ec58866898e7e014861f8a566dd5f65c276f205e99ff64bd793a45e"
+    },
+    {
+      "bytes": 8430,
+      "path": "elliptic-curves/cas/research_runtime/arithmetic.py",
+      "sha256": "f304317492824cf149c88b5814e68cdd0bffb0542a3d8db7bb4d9f3ec988802b"
+    },
+    {
+      "bytes": 3191,
+      "path": "elliptic-curves/cas/research_runtime/binary.py",
+      "sha256": "9956f4b5236d8ad2260018182eebfa18bcd8ced7fdc92ffa6023ad9da7d9dd99"
+    },
+    {
+      "bytes": 4074,
+      "path": "elliptic-curves/cas/research_runtime/cached_observation_state.py",
+      "sha256": "c1480925932b0cf86c0392cb796e9f83d278e84fc0a769ad031e93a8a68d43a7"
+    },
+    {
+      "bytes": 7407,
+      "path": "elliptic-curves/cas/research_runtime/chart_policy.py",
+      "sha256": "0a9212fdaaa3a6abcd09034c003eed0d48bdb258d3161bcee6685607f87b21ad"
+    },
+    {
+      "bytes": 9303,
+      "path": "elliptic-curves/cas/research_runtime/cvp.py",
+      "sha256": "83d9d87e9f465acffb48c3a5400ded28d10382f7c690492fb8dc998775767c8a"
+    },
+    {
+      "bytes": 3714,
+      "path": "elliptic-curves/cas/research_runtime/deep_centres.py",
+      "sha256": "4dd57a7e5a254eba1f7cffed9dd62838cf7607b54a0ae29c162b4cc3d282799a"
+    },
+    {
+      "bytes": 2626,
+      "path": "elliptic-curves/cas/research_runtime/finite_fields.py",
+      "sha256": "24be713a49328db4eb8409e5023fafff3dfb638e4cb56151444abd631eb055ef"
+    },
+    {
+      "bytes": 9211,
+      "path": "elliptic-curves/cas/research_runtime/finite_reduction.py",
+      "sha256": "467609d4a1003127a9dcfb5ff3cd911d3748f5c5c5ff68a43f09db0de9b69992"
+    },
+    {
+      "bytes": 3463,
+      "path": "elliptic-curves/cas/research_runtime/fisher.py",
+      "sha256": "fb8cf017ade457f4680ba8aa7cda0e57dab2f1fba6ab3fcfb99bb4b1bf256a5c"
+    },
+    {
+      "bytes": 10982,
+      "path": "elliptic-curves/cas/research_runtime/function_field_witness.py",
+      "sha256": "f952ccde7737327d8a30d09917b91f6d273074661eea86ab9bfee620998e9b90"
+    },
+    {
+      "bytes": 4543,
+      "path": "elliptic-curves/cas/research_runtime/local_kummer.py",
+      "sha256": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e"
+    },
+    {
+      "bytes": 3015,
+      "path": "elliptic-curves/cas/research_runtime/memory_store.py",
+      "sha256": "0ce81817fc94949864b2f653e9ece207d666d61fbdabeb56f52e044bb83dd873"
+    },
+    {
+      "bytes": 10208,
+      "path": "elliptic-curves/cas/research_runtime/mw_state.py",
+      "sha256": "e53c24a786afe1096a3bc90eff94396b1b3b6b1fd3ec52c24e51c69622b4596d"
+    },
+    {
+      "bytes": 5613,
+      "path": "elliptic-curves/cas/research_runtime/pari_context.py",
+      "sha256": "20db26886dc17baf4ae7ab7c43d669bc53a07c953a8e99b94435fe7846e8acaa"
+    },
+    {
+      "bytes": 2333,
+      "path": "elliptic-curves/cas/research_runtime/pointed_orbit_compression.py",
+      "sha256": "23f69a9b9aedc040c0a2d97e2b1f722c00a97a1a26702b04a94fba8d1ed3914c"
+    },
+    {
+      "bytes": 3967,
+      "path": "elliptic-curves/cas/research_runtime/pointed_worker.py",
+      "sha256": "7126cac4ed8bbfd7015476670b61fc317649700436b92e072a21d1bac4695ddf"
+    },
+    {
+      "bytes": 1045,
+      "path": "elliptic-curves/cas/research_runtime/preloaded_prime_state.py",
+      "sha256": "584b340f730b12a6f4cd8f6b6e7f248c7bce5acfafb3b4d89ff4b43f737102ed"
+    },
+    {
+      "bytes": 9660,
+      "path": "elliptic-curves/cas/research_runtime/pruning.py",
+      "sha256": "9f5748f7a6fe0d06befab7d596b7469b2180331416ac2d039fd7f636ed91b7c6"
+    },
+    {
+      "bytes": 1863,
+      "path": "elliptic-curves/cas/research_runtime/quotient_only_reduction.py",
+      "sha256": "b47036dd2d5882a8bdccfb9095fb11c543ddc8e209e487d6c7afdf8a8d06986a"
+    },
+    {
+      "bytes": 9450,
+      "path": "elliptic-curves/cas/research_runtime/regulator.py",
+      "sha256": "aa4bdc99095199936417058f46ee2fd0d48acd497676f46c5d0456e7865be970"
+    },
+    {
+      "bytes": 829,
+      "path": "elliptic-curves/cas/research_runtime/rotated_observation_state.py",
+      "sha256": "3568529c9513db8fe56d8622ec7c7eae9dbedef4a160836a8db63aba58f2c9ab"
+    },
+    {
+      "bytes": 25277,
+      "path": "elliptic-curves/cas/research_runtime/sage_arithmetic.py",
+      "sha256": "105fc55cc851c0b60d1132e3f0afbac8c872344d7d17c3d2610c1b24390f4dd1"
+    },
+    {
+      "bytes": 28373,
+      "path": "elliptic-curves/cas/research_runtime/sage_subspace.py",
+      "sha256": "86fd5f87fa773bb817e3f19e3847e9188a7071b41bc3d8adb81b21c804fb6cf5"
+    },
+    {
+      "bytes": 5172,
+      "path": "elliptic-curves/cas/research_runtime/sage_surface.py",
+      "sha256": "43942f606c97580a324f4e22d6c771eb5ca8264953ceca8e29aced7afffd0418"
+    },
+    {
+      "bytes": 3309,
+      "path": "elliptic-curves/cas/research_runtime/search_state.py",
+      "sha256": "598a2177fa1cdd5b45c801c09adcc4ac51bd2a87152b7982ea70e78585f8671c"
+    },
+    {
+      "bytes": 4351,
+      "path": "elliptic-curves/cas/research_runtime/section_gate.py",
+      "sha256": "df5fd619731f2bcc08df2c24806fa479b68879792ca84a5a972ca0cf122ae2ed"
+    },
+    {
+      "bytes": 4039,
+      "path": "elliptic-curves/cas/research_runtime/simon.py",
+      "sha256": "08d7ef9a7443f8268aee0b0799e290494e79a1532828c73345432259887e644e"
+    },
+    {
+      "bytes": 8233,
+      "path": "elliptic-curves/cas/research_runtime/store.py",
+      "sha256": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965"
+    },
+    {
+      "bytes": 9744,
+      "path": "elliptic-curves/cas/research_runtime/subspace.py",
+      "sha256": "2ce4a9f7d688a2a4581d844dd3663fb7fae63904d167caecef4af6bc6cfd2534"
+    },
+    {
+      "bytes": 20249,
+      "path": "elliptic-curves/cas/research_runtime/supervisor.py",
+      "sha256": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233"
+    },
+    {
+      "bytes": 4954,
+      "path": "elliptic-curves/cas/research_runtime/surface_repository.py",
+      "sha256": "3d3d9f28b2605c248c021a4ed8490d815cd16ac233923ece899ff940ec3e16af"
+    },
+    {
+      "bytes": 5670,
+      "path": "elliptic-curves/cas/research_runtime/toric_surface.py",
+      "sha256": "b8e1d5329c32402b693b27e61887c30eb6cf1606043a5f1048ffc6dd7d6606ab"
+    },
+    {
+      "bytes": 2717,
+      "path": "elliptic-curves/cas/research_runtime/witnesses.py",
+      "sha256": "e6ea79fabb7d16e179d5ea347a2006e19193f910a3c6d56940c73ff8dbce2619"
+    },
+    {
+      "bytes": 6838,
+      "path": "elliptic-curves/cas/retain512_compact_r17.py",
+      "sha256": "66437e97f00f40f6c2c20548c85ee51fbb608b1d773077b64468f7394990ec45"
+    },
+    {
+      "bytes": 13917,
+      "path": "elliptic-curves/cas/retention24_r17_pari_batch.py",
+      "sha256": "e011e226bca10d54242b11ac80cd702c01ec49e1df3df74de6ad6477c23cf035"
+    },
+    {
+      "bytes": 51705,
+      "path": "elliptic-curves/cas/run_elkies_2026_relative_2selmer_checkpointed.py",
+      "sha256": "1e674eb42122784c580777b782ffee1c737c1bc9788ba00b47a09777e26b1477"
+    },
+    {
+      "bytes": 27525,
+      "path": "elliptic-curves/cas/run_elkies_2026_relative_2selmer_open.py",
+      "sha256": "158bd9c13fb583d5ffa4f3363063703b7e0014c996ccc8bdcd273fbdcf08e944"
+    },
+    {
+      "bytes": 13126,
+      "path": "elliptic-curves/cas/run_fermigier_rank20_auxiliary_fingerprints.py",
+      "sha256": "b8bab575cc8109a9f64256b77b0e340d87fe741718fb46f0f0ecff80c3857d17"
+    },
+    {
+      "bytes": 15562,
+      "path": "elliptic-curves/cas/run_fermigier_rank20_pari_descent.py",
+      "sha256": "ac7759f2dc16816251c791b60df7e4e6e41473656660c7e253141d576f536f5a"
+    },
+    {
+      "bytes": 14648,
+      "path": "elliptic-curves/cas/search_extra_points.py",
+      "sha256": "8719a8868f60a055ecfc2c68e95b253386a0f5e856c2686749bd8d8e1f83775e"
+    },
+    {
+      "bytes": 10390,
+      "path": "elliptic-curves/cas/search_observability.py",
+      "sha256": "b6189a0cee9805336609f413b2dd8ccb38263c2d594131aabf3b0555a9c04b58"
+    },
+    {
+      "bytes": 6961,
+      "path": "elliptic-curves/cas/select_compact_r17_wide.py",
+      "sha256": "319ec3d6f33106698b48c0f7ef46a54e303d647bb6c674af9fed4932b5394c83"
+    },
+    {
+      "bytes": 4870,
+      "path": "elliptic-curves/cas/verify_compact192_followup_supplement.py",
+      "sha256": "5c7aba89388129b35ce7bf2a63125aefe60b7efc6da2f441362378abe6c430a1"
+    },
+    {
+      "bytes": 14716,
+      "path": "elliptic-curves/cas/verify_icarm_curve394_rank21.py",
+      "sha256": "3868a6e6b5fa6134949d92a4f1aaa526cd42f50335109f02aefab58bb52968b0"
+    },
+    {
+      "bytes": 2646,
+      "path": "elliptic-curves/cas/verify_r17_other_small_prime_scalings.py",
+      "sha256": "ab217d731eb708b6da5e6af50e6e1db67986eabdbbb0277bb0ec41ddc3c1fd8f"
+    },
+    {
+      "bytes": 1918,
+      "path": "elliptic-curves/cas/verify_r17_scaling_prime_support.sage",
+      "sha256": "91c67b1be80f3c3fe1cb8445cf0786fdba79372be737f90d6a4a4045f80104c4"
+    },
+    {
+      "bytes": 25600,
+      "path": "elliptic-curves/ecsearch/q12o5867_specialization.py",
+      "sha256": "a9911a9fd0a295f9e399436006d6d1f7bcd204778b577a4fead5def04df5dfa7"
+    },
+    {
+      "bytes": 3394,
+      "path": "elliptic-curves/notes/COMPACT192_SPECIALIZED_FOLLOWUP_2026-09-06.md",
+      "sha256": "7768b245c01fea830862b60d25d3e6a6c3d1f9c1fa2febaa84f0d99bb37ff90c"
+    },
+    {
+      "bytes": 2380,
+      "path": "elliptic-curves/notes/R17_SCALING_PRIME_SUPPORT_2026-09-06.md",
+      "sha256": "09bd94740a5ffdf4295a4b0c46cb5196efeb330c51a29e698367de1c603099bf"
+    },
+    {
+      "bytes": 2348,
+      "path": "elliptic-curves/notes/R17_SMALL_PRIME_MINIMALITY_2026-09-06.md",
+      "sha256": "fc9cc835bed6029f095a79d6c4b163edc707414f59fd9f1f729272444c17bad6"
+    }
+  ],
+  "required_base_archives": [],
+  "schema": "elliptic-curves.compact192-followup-supplement-evidence.v1"
+}

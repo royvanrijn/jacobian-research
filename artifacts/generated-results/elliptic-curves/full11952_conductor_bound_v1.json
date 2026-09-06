@@ -1,0 +1,155 @@
+{
+  "argument": "The integral equation is globally minimal. The invariant gcd is75 and3 is good. At5 the exact generic Tate calculation gives typeIV and conductor exponent2. Every other bad prime is multiplicative and has conductor exponent1: at2 c4 is odd; at primes above3 the invariant identity forces common c4,c6 divisibility if c4 and Delta vanish. Thus N=25 times the product of the displayed bad primes other than5 times rad(R). Replacing rad(R) by the positive remaining cofactor R gives the stated upper bound. No primality or squarefreeness claim on R is required.",
+  "c4": "617425053023481477243467764985745929583608313192225",
+  "c6": "-15381105923607590097058380533239219461936238054612455210227912667774033023025",
+  "catalogue_comparison": {
+    "catalogue_curves": 33,
+    "missing_conductor_ids": [
+      537,
+      543,
+      545,
+      581
+    ],
+    "rank_lower_bound_threshold": 27,
+    "recorded_conductor_at_most_bound_ids": [
+      363,
+      400,
+      401,
+      402,
+      585
+    ],
+    "recorded_conductor_strictly_above_bound_ids": [
+      11,
+      12,
+      67,
+      273,
+      302,
+      356,
+      364,
+      385,
+      391,
+      395,
+      398,
+      399,
+      403,
+      404,
+      416,
+      423,
+      531,
+      534,
+      535,
+      536,
+      544,
+      579,
+      580,
+      582
+    ],
+    "with_recorded_conductor": 29
+  },
+  "claim_boundary": "This is an unconditional upper bound on the conductor of the certified rank-at-least27 curve, not an exact conductor or rank. Comparisons use the recorded conductors and rank lower bounds in the pinned593-entry catalogue without independently certifying those catalogue conductors. Missing catalogue values, other inventory curves, universal novelty and record status are not resolved.",
+  "conductor_upper_bound": "626331835852237837959942160026415058213286411653252011129135977016421858574282246171665388209084791081551835278559332642950",
+  "discriminant": "-698803764333922225881452682703627988473575385055139144321696385420459618811963213599318605839675657668786479665115883391213066301636816763473920000",
+  "exact_conductor": "UNKNOWN",
+  "inventory_id": "new-20260906-186",
+  "local5": {
+    "conductor_exponent": 2,
+    "discriminant_exponent": 4,
+    "kodaira": "IV",
+    "prime": 5
+  },
+  "minimal_model": [
+    "1",
+    "-1",
+    "1",
+    "-12863021937989197442572245103869706866325173191505",
+    "17802205930101377427150906610708284800466302835899765794079393280105836097"
+  ],
+  "minimality_certificate": {
+    "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+    "gcd_factorization": [
+      [
+        3,
+        1
+      ],
+      [
+        5,
+        2
+      ]
+    ],
+    "invariant_gcd": 75,
+    "local_exclusion_rows": [
+      {
+        "prime": 3,
+        "valuations_c4_c6_discriminant": [
+          1,
+          3,
+          0
+        ]
+      },
+      {
+        "prime": 5,
+        "valuations_c4_c6_discriminant": [
+          2,
+          2,
+          4
+        ]
+      }
+    ]
+  },
+  "remaining_cofactor": "5223425473787303905827422231722262215349338816882268000514116324261832941833750627474175086851990796626337",
+  "sage_version": "10.9",
+  "schema": "elliptic-curves.full11952-conductor-bound.v1",
+  "source_id": "11952-0962587",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/full11952_high_rank_models_v1.json": "6cda8d39bd9ca2de4f72a733201f957081952f37db551a709c7d72302f8a7149",
+    "artifacts/local/elliptic-curves/retention24-current-catalogue-v1/database.json": "4ab1b29bbcb90ba329c280b26924313685a98b30891baefafd98dfa4f25199ed",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9",
+    "elliptic-curves/cas/certify_discarded_rank26_minimal.py": "9a3774353e3516478a1d56f36536f2e58e1baf5a860633c9517642783c632f21",
+    "elliptic-curves/cas/certify_full11952_conductor_bound.sage": "fed540b6dfdc59d818eee0b7de950ab250ceb2bfa3305080f5c648e0074eacd2",
+    "elliptic-curves/cas/mod2_reduction_independence.py": "c5963952d1a9089416479671b788b6437dbba26591d796646022f4e9dddd0c70"
+  },
+  "status": "PASS",
+  "trial_prime_bound": 10000,
+  "trial_prime_factors": [
+    [
+      2,
+      15
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      7,
+      6
+    ],
+    [
+      13,
+      3
+    ],
+    [
+      37,
+      2
+    ],
+    [
+      61,
+      2
+    ],
+    [
+      89,
+      2
+    ],
+    [
+      149,
+      2
+    ],
+    [
+      179,
+      3
+    ],
+    [
+      4919,
+      1
+    ]
+  ]
+}

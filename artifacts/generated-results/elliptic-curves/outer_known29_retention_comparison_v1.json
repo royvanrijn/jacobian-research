@@ -1,0 +1,20 @@
+{
+  "claim_boundary": "Retrospective exact ordering of one known29 control against the same967 saved outer candidates. The control is not in the sampled denominator residue; these positions are hypothetical insertion ranks conditional on the retained candidate population, not full parameter-population quantiles. Short and extended S1 rankings differ substantially on this exact case. No prospective sensitivity, rank density, global discard probability or new selector is proved. The completed48-curve point trial and its score/point inputs remain unchanged.",
+  "control_denominator_shard": 150,
+  "denominator_modulus": 1024,
+  "extended_score_position": 2,
+  "family": "11952",
+  "parameter": "89074/31895",
+  "same_saved_outer_candidates": 967,
+  "schema": "elliptic-curves.outer-known29-retention-comparison.v1",
+  "selected_positive_denominator_shard": 754,
+  "short_score_position": 435,
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/outer_known29_score_audit_v1.json": "ae7c00a73a4c6cb495624d7739c3fdd523dbc1e41156e541bf0d8495f531b8fa",
+    "artifacts/local/elliptic-curves/outer131072-r17-extended-v1/result.json": "f733982f72054bb61f35178269803c906945438bc3b72942924235aa9e43a251",
+    "artifacts/local/elliptic-curves/outer131072-r17-stratified-v2/protocol.json": "cc30b19d8021f9442c44ac341b1a4eb807250507b6822991d0cd85c9b48b12ea",
+    "elliptic-curves/cas/audit_outer_known29_score.py": "e3b169d6a575ea2820cd6fcfba22d8199d19512e1f65a7c5406a899296c9a992",
+    "elliptic-curves/cas/report_outer_known29_retention.py": "00ad5756dd6f59acd5f6a700dc6b0bca611f646fcd9b40f77eab2cd05f612fc4"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,230 @@
+{
+  "Jacobian_model": [
+    "1",
+    "0",
+    "0",
+    "-26221768130397333373486549322545",
+    "51682038990320677938630940036567086255134338025"
+  ],
+  "audits": [
+    {
+      "columns": [
+        [
+          "44308669814907195197089/12904428",
+          "51440030788055967987521233005000/1115157653"
+        ],
+        [
+          "706302047120367151539781369/238548312588",
+          "28063063790550325988044765213442400/2802803519726657"
+        ],
+        [
+          "35424747449333881/12",
+          "0"
+        ]
+      ],
+      "finite_column_rank": 3,
+      "modulus": 2,
+      "no_rational_ell_torsion_prime": null,
+      "processed_good_primes": [
+        29,
+        43,
+        47
+      ],
+      "required_column_rank": 3,
+      "signatures": [
+        {
+          "group_order": 38,
+          "modulus": 2,
+          "multiple_subgroup_order": 19,
+          "prime": 29,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "group_order": 40,
+          "modulus": 2,
+          "multiple_subgroup_order": 20,
+          "prime": 43,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "group_order": 56,
+          "modulus": 2,
+          "multiple_subgroup_order": 14,
+          "prime": 47,
+          "quotient_dimension": 2,
+          "rows": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      ],
+      "status": "PROVED_SATURATED"
+    },
+    {
+      "columns": [
+        [
+          "44308669814907195197089/12904428",
+          "51440030788055967987521233005000/1115157653"
+        ],
+        [
+          "706302047120367151539781369/238548312588",
+          "28063063790550325988044765213442400/2802803519726657"
+        ]
+      ],
+      "finite_column_rank": 2,
+      "modulus": 3,
+      "no_rational_ell_torsion_prime": 29,
+      "processed_good_primes": [
+        29,
+        43,
+        47,
+        53,
+        59,
+        61,
+        67,
+        71
+      ],
+      "required_column_rank": 2,
+      "signatures": [
+        {
+          "group_order": 60,
+          "modulus": 3,
+          "multiple_subgroup_order": 20,
+          "prime": 59,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              2
+            ]
+          ]
+        },
+        {
+          "group_order": 84,
+          "modulus": 3,
+          "multiple_subgroup_order": 28,
+          "prime": 71,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              2,
+              1
+            ]
+          ]
+        }
+      ],
+      "status": "PROVED_SATURATED"
+    },
+    {
+      "columns": [
+        [
+          "44308669814907195197089/12904428",
+          "51440030788055967987521233005000/1115157653"
+        ],
+        [
+          "706302047120367151539781369/238548312588",
+          "28063063790550325988044765213442400/2802803519726657"
+        ]
+      ],
+      "finite_column_rank": 2,
+      "modulus": 5,
+      "no_rational_ell_torsion_prime": 29,
+      "processed_good_primes": [
+        29,
+        43,
+        47,
+        53,
+        59
+      ],
+      "required_column_rank": 2,
+      "signatures": [
+        {
+          "group_order": 40,
+          "modulus": 5,
+          "multiple_subgroup_order": 8,
+          "prime": 43,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "group_order": 60,
+          "modulus": 5,
+          "multiple_subgroup_order": 12,
+          "prime": 59,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              2,
+              2
+            ]
+          ]
+        }
+      ],
+      "status": "PROVED_SATURATED"
+    }
+  ],
+  "claim_boundary": "The twelve fixed carrier images produced no new model within the360-bit gate. Check whether the recorded free rank2 subgroup together with its rational2-torsion is2,3,5-saturated using exact finite quotients through997. Include the torsion column at2; at odd moduli require an exact no-rational-ell-torsion reduction witness. This is a finite group audit with no division-point search, new parameter, descent, height sweep or claim of full saturation. A failed finite injectivity gate remains UNKNOWN.",
+  "free_generators": [
+    [
+      "3692389151242266176810/1075369",
+      "51440028873552193068406220329015/1115157653"
+    ],
+    [
+      "58858503926697260971729610/19879026049",
+      "28058914472028257574586671676991035/2802803519726657"
+    ]
+  ],
+  "lemma": "Let H contain the two free generators and the full rational2-torsion. At2, independence of both free columns and the torsion column forces all coefficients in2Q=aP+bR+cT to be even; the remaining2-torsion lies in H. At an odd ell, multiplication by ell is invertible on the rational2-torsion; independent free columns force divisibility of a,b, and the no-ell-torsion witness then puts Q in H. These arguments prove only the stated prime saturations.",
+  "protocol_sha256": "c7341a6e8c1aecc8969dd0cd36e942afa27ee7541c2a6ea06c57a16d9c7eae21",
+  "rational_2_torsion_point": [
+    "2952062287444490",
+    "-1476031143722245"
+  ],
+  "schema": "elliptic-curves.soluble-pair-generator-saturation-result.v1",
+  "short_model": [
+    "0",
+    "0",
+    "0",
+    "-1258644870259072001927354367482161/48",
+    "44653281687637067626944437580201965415467619276841/864"
+  ],
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_global_carrier_verification_v1.json": "998874651dbb92e2baf82fda93d582b651dc55c7abd0ba0dd1c28e8bd252b5ca",
+    "artifacts/generated-results/elliptic-curves/rank_jump_global_pair_solubility_v1.json": "00c7eb1bddddb16d811c5f7b27533ff934b8f5600b777c7019ec0ee81f28cf5f",
+    "artifacts/generated-results/elliptic-curves/soluble_pair_carrier_height_v1.json": "be730c94d12a7fd89420154e04f6a61e17e93b5c70596d351caf58c3cebcb1cb",
+    "elliptic-curves/cas/audit_compact_r17_ambiguous.py": "2fcef5457ab8efd67fa6dd473949823653901b533c3862d3ba4d83fd4cd2fb01",
+    "elliptic-curves/cas/audit_soluble_pair_generator_saturation.sage": "653360c836d9a8bf80cb7acfba5d8a58c2220356e446334d8747690eb0e56008",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9",
+    "elliptic-curves/cas/elliptic_candidate_record.py": "5b9f6f843d48e705253404a5583ef53966c72c7f229c68ef17c6b848f5e94af3",
+    "elliptic-curves/cas/mod2_reduction_independence.py": "c5963952d1a9089416479671b788b6437dbba26591d796646022f4e9dddd0c70",
+    "elliptic-curves/cas/mod_l_reduction_independence.py": "93cdef9eb9053987d0aa85abff2d6e1d487caa827b43a7c00d0b8a43395063f0"
+  },
+  "status": "PASS_FIXED_AUDIT"
+}

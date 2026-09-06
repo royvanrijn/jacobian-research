@@ -1,0 +1,260 @@
+{
+  "character_sum_checks": 40,
+  "claim_boundary": "Only eight deterministic prime-table cases, spaced across4099through32749, one worker. Compute allp+1 raw homogeneous finite-field fibres in each case with PARI ellcard, retain singular markers, check every prime/residue/Hasse frame and independently verify five complete character sums per prime. Cost extrapolation is descriptive, not a certified runtime bound. No full extended cache, new parameter search, new selector, point search or automatic escalation occurs in this benchmark.",
+  "cost_gate_passed": true,
+  "projected_single_worker_seconds": 1619.1897309834803,
+  "protocol_hash": "8fa63ccd07158822960f7f48def18461fada7c9da60bf228ea564a487555ce6c",
+  "rows": [
+    {
+      "cpu_ms": 36,
+      "direct_checks": [
+        [
+          0,
+          -117
+        ],
+        [
+          1366,
+          -66
+        ],
+        [
+          2732,
+          -32
+        ],
+        [
+          4098,
+          100
+        ],
+        [
+          4099,
+          54
+        ]
+      ],
+      "prime": 4099,
+      "projective_rows": 4100,
+      "raw_sha256": "f819df5b846c052b435059dafa98ff5afb8a5ee03e05a7cb6803304eb95a2789",
+      "table_sha256": "8a1225152f1d7c9ebe5948b1a7cb5e45ae67beddc5652ce77dbeca385f15d212",
+      "wall_seconds": 0.12528261000989005
+    },
+    {
+      "cpu_ms": 66,
+      "direct_checks": [
+        [
+          0,
+          83
+        ],
+        [
+          2596,
+          30
+        ],
+        [
+          5192,
+          -132
+        ],
+        [
+          7788,
+          5
+        ],
+        [
+          7789,
+          -47
+        ]
+      ],
+      "prime": 7789,
+      "projective_rows": 7790,
+      "raw_sha256": "622d735fb339b03e5c473f12c18a32aeb647aff55ff3f4a7adf1a6baa596d924",
+      "table_sha256": "c2062c1e3e00d4cd0b5b58f067da8cc3cd54c8463c140fdde5977ea1f61c48eb",
+      "wall_seconds": 0.12542425002902746
+    },
+    {
+      "cpu_ms": 105,
+      "direct_checks": [
+        [
+          0,
+          -5
+        ],
+        [
+          3906,
+          -101
+        ],
+        [
+          7812,
+          -19
+        ],
+        [
+          11718,
+          -62
+        ],
+        [
+          11719,
+          -14
+        ]
+      ],
+      "prime": 11719,
+      "projective_rows": 11720,
+      "raw_sha256": "ea1e4433ad4f6d847fc9a2d85183f5e0349c352fc6f2b148aaf9923ddefc0354",
+      "table_sha256": "579408f680787c3587aeb3492f8a5b5c98c50cd6567e35fecf79fd08e383ba2b",
+      "wall_seconds": 0.17596360895549878
+    },
+    {
+      "cpu_ms": 156,
+      "direct_checks": [
+        [
+          0,
+          -112
+        ],
+        [
+          5222,
+          -130
+        ],
+        [
+          10444,
+          205
+        ],
+        [
+          15666,
+          197
+        ],
+        [
+          15667,
+          -61
+        ]
+      ],
+      "prime": 15667,
+      "projective_rows": 15668,
+      "raw_sha256": "3847432d91c00a3d88828048c7ca7aa714903d23230c2d9575dc1ba52dd66688",
+      "table_sha256": "f31db60067775b0f3ca537083b05d83afd1aded66098b3b7720b25323600d0a3",
+      "wall_seconds": 0.2272862609825097
+    },
+    {
+      "cpu_ms": 192,
+      "direct_checks": [
+        [
+          0,
+          -174
+        ],
+        [
+          6629,
+          -72
+        ],
+        [
+          13259,
+          159
+        ],
+        [
+          19888,
+          -127
+        ],
+        [
+          19889,
+          99
+        ]
+      ],
+      "prime": 19889,
+      "projective_rows": 19890,
+      "raw_sha256": "51e1fea3fd66d863d9c9807ab37113908f9c84e778aa87376f8db7155b621821",
+      "table_sha256": "b36102470d099222931846d2044c87278894f07d03f9234542a8292c698030c1",
+      "wall_seconds": 0.27779115003068
+    },
+    {
+      "cpu_ms": 243,
+      "direct_checks": [
+        [
+          0,
+          -200
+        ],
+        [
+          8002,
+          257
+        ],
+        [
+          16004,
+          -126
+        ],
+        [
+          24006,
+          -152
+        ],
+        [
+          24007,
+          -180
+        ]
+      ],
+      "prime": 24007,
+      "projective_rows": 24008,
+      "raw_sha256": "9c9b3c0f5c62d09c1327d110ee5a781830c4743a301a86039cd877efe244b3f6",
+      "table_sha256": "cef04c42e03b98091a338d85d9fd3fd677d6e722dc9bf4ee99576a201feb38e0",
+      "wall_seconds": 0.32965792302275077
+    },
+    {
+      "cpu_ms": 284,
+      "direct_checks": [
+        [
+          0,
+          -289
+        ],
+        [
+          9469,
+          -35
+        ],
+        [
+          18939,
+          151
+        ],
+        [
+          28408,
+          68
+        ],
+        [
+          28409,
+          -128
+        ]
+      ],
+      "prime": 28409,
+      "projective_rows": 28410,
+      "raw_sha256": "caf92b10b8812f91d6da309f6f8ef219a91cb8527d7a6d6e0609ed9bdcf35f98",
+      "table_sha256": "79605ad55ce1f58ded6036478562b2c907f4563e4686d8ed6cdbe3457bd15e84",
+      "wall_seconds": 0.3800609110039659
+    },
+    {
+      "cpu_ms": 327,
+      "direct_checks": [
+        [
+          0,
+          -316
+        ],
+        [
+          10916,
+          134
+        ],
+        [
+          21832,
+          184
+        ],
+        [
+          32748,
+          -136
+        ],
+        [
+          32749,
+          78
+        ]
+      ],
+      "prime": 32749,
+      "projective_rows": 32750,
+      "raw_sha256": "aec8bd3a6f12f763dde95c20b53be1cbdcd891fd3a3f2320b1ff4ba4063ed444",
+      "table_sha256": "7b94fac5e528fe37c9e5b150bbc07afa8ba6edb7b8735e38d7bac4fe52a32b92",
+      "wall_seconds": 0.43172907299594954
+    }
+  ],
+  "schema": "elliptic-curves.extended-projective-trace-cache-benchmark-result.v2",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_six_r17_atlas_v1.json": "2f28c081c874adfaf738c1119e8f4e6e7ce70ea74277cd8cdb370a02bca34c5d",
+    "artifacts/generated-results/elliptic-curves/outer_known29_retention_comparison_v1.json": "abf6828788bc2b6e6e1d7caa87d09823448fe8f63be7fcb1f6f08d89c1aa1487",
+    "elliptic-curves/cas/benchmark_extended_projective_trace_cache_v2.py": "d771dfa409d4002bfbe111433501a8433d53ccccf5095ea16998d709f3bac822",
+    "elliptic-curves/cas/benchmark_r17_extended_prime_traces.py": "0239593edaa2e1dd19a5ac0fe18652cd0ccb7cddeb9046c40fa3da7f9e97d47d",
+    "elliptic-curves/cas/compact_atlas_specialization.py": "ea68110968e86cb0502a74a995c26054ff8e4a0da90c49bb2bdf0b753a759b14",
+    "elliptic-curves/cas/mod2_reduction_independence.py": "c5963952d1a9089416479671b788b6437dbba26591d796646022f4e9dddd0c70",
+    "elliptic-curves/cas/research_runtime/supervisor.py": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233"
+  },
+  "status": "PASS"
+}

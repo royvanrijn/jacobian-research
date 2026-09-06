@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.norm-six-carrier-solubility-protocol.v1",
+  "layer": "solubility",
+  "question": "Does a norm-six representative of the sum of the native trace classes force the pair carrier to have a rational point, and how do the three fixed positive/negative pairs compare?",
+  "selection": "Only the previously compared F,G; F,D; and A,D carriers. No new pairs, curve parameters, or point searches. The norm-six construction is motivated by the preceding retrospective translated-bisection intersection.",
+  "method": "For each trace sum w, enumerate vectors of norm at most six in the index-two extension 2M+Z*w. Its nonzero vectors this short must lie in w+2M because M has minimum four. Use an exact Hermite basis, Gram-LLL, PARI qfminim, and direct integral checks. A norm-six vector R yields an integral section S=(R+w)/2 and intersection B_i.(S-B_j)=1. Treat the existence of a rational lift on the smooth simultaneous carrier separately from a smooth elliptic fibre and quotient independence.",
+  "limits": {"pairs":3,"norm_bound":6,"workers":1,"seconds_per_worker":60,"new_parameter_or_point_searches":0},
+  "failure_semantics": "No norm-six representative is no exclusion of global solubility. Neither an intersection point nor a carrier rational point proves an exceptional direction. Avoid regenerating the whole atlas or short-vector population.",
+  "boundary": "An equation-independent sufficient global-solubility condition on generic trace classes, checked retrospectively on fixed carriers. It is not a high-rank selector."
+}

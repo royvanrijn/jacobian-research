@@ -1,0 +1,23 @@
+{
+  "attempted_charts": 49,
+  "claim_boundary": "Run the known28 control first, stopping at provisional29; require exact history, geometry and cloud proofs modulo2,3,5 before the own27 search. If it does not recover29, the own curve remains unsearched under this protocol. Otherwise run its49 charts and stop at provisional28. Maximum98 boxes, unchanged125000 height and10 seconds per chart, one point worker, no new parameter, score change, further sample expansion, automatic retry or inference of exact rank/absence/covering optimality. The separate live late64 cohort is unchanged.",
+  "completed_boxes": 49,
+  "id": "new-20260906-186",
+  "mod2_lower_bound": 27,
+  "odd_modulus_lower_bounds": {
+    "3": 27,
+    "5": 27
+  },
+  "retained_points": 55,
+  "schema": "elliptic-curves.larger-parity-point-coverage.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/larger_parity_new_20260906_186_mod2_v1.json": "cab081b24714084df80fe810f8767373be8e02489420267b0594bc27bf7c17a1",
+    "artifacts/generated-results/elliptic-curves/larger_parity_new_20260906_186_modl_v1.json": "247fcc5b2aac39a9139c8cd8d77eb8eae38d06f2b54c997e108fcdae4fc358b5",
+    "artifacts/local/elliptic-curves/larger-specialized-parity-trial-v1/new-20260906-186/maps.json": "440d08ae105458357009c4e80247968460d69df3ba6ab829563e66d58589da2b",
+    "artifacts/local/elliptic-curves/larger-specialized-parity-trial-v1/new-20260906-186/replay.supervisor.json": "bd0ca7bb706bfd707bb434d7ceab3a1f701700a1e03cf584afd6bfe69d675113",
+    "artifacts/local/elliptic-curves/larger-specialized-parity-trial-v1/new-20260906-186/result.json": "f5f0dc9ab78491fc7a1130a81acf5143988fc01cd6901ddcabad06ec873e7568",
+    "artifacts/local/elliptic-curves/larger-specialized-parity-trial-v1/protocol.json": "ca8671643c259cff566a160cab6779ac30b74f41531db87ca50e416ae2154db1",
+    "elliptic-curves/cas/audit_larger_specialized_parity_trial.py": "71599896266a9f028b114ab9d63c8a31034fadd78a59a09981822c497ffb223f"
+  },
+  "status": "PASS"
+}

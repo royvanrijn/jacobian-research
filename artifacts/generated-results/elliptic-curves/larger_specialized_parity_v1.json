@@ -1,0 +1,39 @@
+{
+  "claim_boundary": "Reuse each original2048 sample exactly and append deterministic distinct masks to65536, with nonzero quotient above the17 generic bits. Keep the original rounded metric and unimodular reduction fixed. Compute numerical CVP representatives, exactly verify every parity and integer rounded norm, and compare the49 largest computed norms to the old49. No rational chart maps, point search, new parameter, covering/optimality theorem, rank claim or automatic further enlargement.",
+  "protocol_sha256": "b53a78364e7240fc2b1903d04ab6b9882acc4249de2885ebd8a0f2aac24507c7",
+  "rows": [
+    {
+      "dimension": 28,
+      "id": "native28",
+      "new_49th_computed_norm": 169756737,
+      "new_maximum_computed_norm": 174743594,
+      "new_top49_masks": 46,
+      "old_49th_computed_norm": 162008843,
+      "old_maximum_computed_norm": 170848538,
+      "retained_old_top49_masks": 3,
+      "sample_sha256": "5b0cec909a664a4379ce48b77536e7c69a2c11e44c9352e21de08dee23d109ea",
+      "sampled_masks": 65536
+    },
+    {
+      "dimension": 27,
+      "id": "new-20260906-186",
+      "new_49th_computed_norm": 132949728,
+      "new_maximum_computed_norm": 138363362,
+      "new_top49_masks": 47,
+      "old_49th_computed_norm": 127838348,
+      "old_maximum_computed_norm": 135148169,
+      "retained_old_top49_masks": 2,
+      "sample_sha256": "215ffb08588fe7b4f684e606697e037e95f0ffda2123efb58625f436ff6ba59f",
+      "sampled_masks": 65536
+    }
+  ],
+  "schema": "elliptic-curves.larger-specialized-parity.v1",
+  "sources": {
+    "artifacts/local/elliptic-curves/full11952-specialized-followup-v1/new-20260906-186/maps.json": "540e2a514ae758140f54f968cbee1ce4cd5f83f513af7f25a6fda661134b921d",
+    "artifacts/local/elliptic-curves/native28-specialized-parity-control-v1/maps.json": "184f12cd029e96c21741a508636adedfdcabdfe51e937df765f02d81d0e4a2b0",
+    "elliptic-curves/cas/audit_larger_specialized_parity.py": "d072e8e17f6d1a9c3e620063fe8ef52908e95a1812446ab5394eec015f07d3b3",
+    "elliptic-curves/cas/prepare_larger_specialized_parity.sage": "1b8573de9a5ae7990dd47130932470c0664ac38db6a4a9b709cf01f1d0cec385",
+    "elliptic-curves/cas/prospective_half_lattice_v2.sage": "4d06eef3eb078116989b4df7df0afe8333da78d0d2e9ce010f1e0da8fc7a41bb"
+  },
+  "status": "PASS_FIXED_GEOMETRY_AUDIT"
+}

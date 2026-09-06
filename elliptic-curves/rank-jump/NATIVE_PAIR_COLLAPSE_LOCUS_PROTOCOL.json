@@ -1,0 +1,11 @@
+{
+  "schema": "rank-jump.native-pair-collapse-locus-protocol.v1",
+  "layer": "solubility",
+  "question": "Can the known dependent positive pair be explained by a finite generic translated-bisection intersection that itself forces simultaneous rational solubility?",
+  "selection": "Only orbit-0911e and orbit-1795d. The translate S is the exact generic word already identified by the retrospective relation certificate, transported to the published basis. This selection is oracle-assisted; it is not a prospective selector.",
+  "hypothesis": "On an explicit affine open, an intersection of B_0911e with S-B_1795d determines the cover root rationally. Its parameter polynomial may force both square conditions but supplies only one quotient line, because P+Q=S.",
+  "method": "Reconstruct the generic published sections and S exactly. Translate the first native lift by S, impose the second residual chord, and take its quadratic norm. Substitute the forced rational root and impose the second residual x-quadratic. Saturate the resulting univariate gcd by explicit denominators, cover branches, and the original discriminant. Verify the rational root, both cover equations, and P+Q=S in the resulting finite quotient algebra. Test only the 32 already frozen parameters.",
+  "limits": {"cover_pairs": 1, "generic_translates": 1, "workers": 1, "seconds_per_worker": 60, "frozen_parameters": 32, "new_parameter_or_point_searches": 0},
+  "failure_semantics": "Timeout or failed exact elimination is UNKNOWN. The affine-open calculation does not classify denominator-zero, branch, singular, or infinite parameters. Factorization does not authorize searches on any additional parameters. Failure to meet this one relation is not a proof of quotient independence.",
+  "boundary": "A retrospective construction of simultaneous soluble but dependent cover points. Distinguish a condition evaluable from generic equations from a selection made without oracle information."
+}

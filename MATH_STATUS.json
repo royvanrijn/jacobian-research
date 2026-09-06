@@ -37811,7 +37811,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Parallel rank-jump experiments and rank-32 certification",
-      "scope": "Rank at least32 remains open. The programme pursues peer construction paths: direct R17/MW17 and deduplicated A1/MW16 specialization, reconstruction of curve302\u2019s still-unknown parent, and the arithmetic-first different-NS foundry. Generic rank alone does not choose a unique critical path. The A1/MW16 parameter experiment excludes known-record targets, parameters, public points, ranks, target j-invariants and jump labels from selection and execution. Relative jump counts refer to the stated specialized certified subgroup; generic saturation does not assert saturation after specialization. Starting from16 exactly independent specialized sections, q further exactly independent directions prove rank at least16+q, without an exact-rank claim. Current inventoryV13 contains185 distinct curves with certified lower bounds22 through27, including six27-point curves and sixteen26-point curves, unmatched up to rational isomorphism among593 pinned catalogue equations. All185 point proofs and the equationCSV replay. For the prior101 curves, all1212 rational j-incidence checks across twelve presentations are accounted for; their21 additional R17 presentations give the same generic subgroup. Incidence of the84 additions has not yet been audited. The latest narrowing results are EC-NEW-MW16-RANK27-20260906 and EC-HIGHER-PARAMETER-NEW-RANK26-20260906: one existing MW16 discovery improves26to27, while a fixed higher-parameter R17 pilot supplies a new26-point curve and a new22-point curve. The former has18 isolated checks; the latter has40 initial/adaptive checks plus three separate second-wave checks, all passing. The higher26 curve completes two301-centre waves and a49-map million-height follow-up after its49 initial charts; the1233-point union still certifies26 modulo2,3,5. The retrospective compact-coordinate audit maps67 public successes and leaves two frame maps unknown; all eight mapped reported>=28 examples lie outside parameter height16384. Descriptive coefficient-size, score and point-count changes do not separate incidence from visibility or provide a calibrated rank predictor. EC-PAIRED-PRODUCT-SCORE-AUDIT-20260906 completes a6144-address paired score comparison and988 point boxes without inventory gain; all50 isolated checks pass. Its known28 control disproves using direct generic-representative visibility alone to diagnose exceptional-direction failure. Six separately masked higher-cohort controls then recover their withheld generic direction by exact group relations after72 completed boxes, even though no original signed representative is directly visible; this is known-subgroup recovery, not a sensitivity theorem. All11 isolated masked/height supplement checks pass. EC-PRODUCT-FIRST-RETENTION-AUDIT-20260906 tests the earlier retention-stage gap on the unchanged population, reaching4338 discarded addresses but adding no high-rank curve after1080 completed boxes. Its10482-model local-scaling audit restores no omitted good prime; the13-scaling cohort contrast remains descriptive. All55 isolated checks pass. EC-LOCAL-FEATURE-NEW-RANK25-20260906 adds a new25-point curve at11952 parameter102/1525 from a fixed13-scaling-conditioned cohort. Both new local-feature cohorts complete2160 initial boxes, and its301-box follow-up has a3260-point union still certifying25. The fixed split-node bonus cohort adds no high-rank curve. All113 isolated checks pass. Specialized parity coverage remains a sampled policy, not an exclusion of additional directions. EC-SPECIALIZED-PARITY-CONTROL-20260906 tests the specialized-parity sampling gap. It recovers known29 from28 at125000 after18 completed charts, with31 unsearched after the target stop, without reading the unrecovered public point or oracle word. A separate trial on all six new27 inventory curves completes294 boxes; each trial cloud remains27 modulo2,3,5. All24 isolated checks pass. Numerical metric/CVP choices are not covering or optimality certificates, and the known control success does not prove prospective sensitivity. EC-SKEW-PARAMETER-AUDIT-20260906 completes40733526 skew-box addresses,2048 extensions and368 point boxes without inventory gain. EC-COMPACT-ENDPOINT-AUDIT-20260906 finds21 omitted nonsingular zero/infinity curves, with specialized section lower bounds11through17 agreeing modulo2,3,5; no endpoint point search is part of that audit. All54 combined isolated checks pass. EC-ENDPOINT-SECTION-SPANS-20260906 now proves exact ranks11through17 for all21 specialized generic-section spans, with19 strict losses and five proper known-subgroup indices3or5. These odd indices preserve the abstract modulo2 quotient while changing the integral lattice geometry. All three isolated supplement checks pass. EC-ENDPOINT-POINT-EXPOSURE-20260906 completes all252 boxes on the21 endpoints. Eight curves gain directions, but the strongest bounds are19; all111529 retained point witnesses have matching bounds modulo2,3,5. All66 isolated replay stages pass, including the six small-prime saturation proofs. No endpoint enters the high-rank inventory. EC-NEW27-SMALL-PRIME-SATURATION-20260906 proves2,3,5-saturation for all six own27-point search subgroups, so the endpoint index3or5 defect does not enlarge them. Full saturation and independent directions beyond27 remain open. A separate compact192 cohort now searches32 previously unsearched H4096 candidates per family from the existing6144 S1 rows. Exact equation exclusions and all192 pre-search map files pass; the fixed limit is8640 initial boxes at125000, with no adaptive wave. All192 point attempts and exact histories pass, with85 lower bounds at least22 and five26-point curves. The terminal catalogue comparison excludes one existing curve, ICARM413, leaving84 additions. EC-COMPACT192-84-NEW-CURVES-20260906 completes all8640 boxes, all192 cloud proofs modulo2,3,5 and the full185-curve inventory replay. The585-stage isolated cohort replay is running. EC-COMPACT192-FIVE-RANK26-20260906 proves globally minimal integral models and26 exactly independent points for all five strongest unmatched candidates; their Sage export executes and both isolated standalone proof stages pass in a689782-byte bundle with no base archives. No new27 or28 result occurs in the initial cohort. EC-COMPACT192-SPECIALIZED-EXPOSURE-20260906 completes the separate245-box own-subgroup follow-up on all five new26-point curves, stable IDs102through106. All five map files precede points, and all742 retained point witnesses still certify26 modulo2,3,5. All2048-mask samples and maps precede follow-up points, height125000 and ten seconds per chart remain fixed, and exact histories plus cloud and rational geometry proofs precede any promotion. No stronger rank lower bound or inventory addition is certified in this follow-up. EC-R17-13-SCALE-CLASSIFICATION-20260906 proves the unique removable13-scale residue cell for every primitive parameter in all six compact R17 families, excludes a second13 scaling and proves the minimal models still bad at13. Its six integral parameter changes preserve the generic group; no transformed point population has been launched. EC-R17-SCALING-PRIME-SUPPORT-20260906 independently verifies six exact coefficient resultants and their trial-prime valuations through997. Other known small primes remain candidate scaling primes, while large residual cofactors leave complete prime support UNKNOWN; no large-factorization or new parameter search has been launched. Other retained exact results, controls, foundry exclusions, low-conductor examples and construction routes remain in the dependency entries and their canonical proofs. A new rank-at-least28/32 curve, unconditional exact rank for curve302, residual descent for curve273, sharper conductor results and universal novelty remain open. Finite misses, heuristic scores, incomplete descents and censored searches prove no rank upper bound, Selmer bound, saturation or point absence. Further compute-heavy work requires an explicit mathematical gate, declared finite limits, checkpoints and exact replay. Retained exact narrowing and route references: EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE, EC-K3-H3-Q4O208-Q4O1584-QQ, EC-K3-H3-Q4O1584-Q4O164-QQ, EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR, EC-K3-H3-Q12O5867-QQ-ROOTLESS, EC-K3-H3-Q12O5867-QQ-R17-BASIS, EC-K3-H3-Q12O5867-ENDPOINT-QQ, EC-K3-ELKIES-2026-R17, EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS, EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL, EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE, EC-K3-ELKIES-2026-R18-COVER, EC-K3-ELKIES-2026-R19-PAIRED, EC-K3-CURVE398-A1-MW16-RECOVERY, ECR31, EC-R21-ICARM, EC-R20-IC245, EC-MD17, EC-MD19, EC-K3-H3-SOURCE, EC-K3-H3-PTS, EC-ICARM-CONSTRUCTION-FINGERPRINTS, EC-K3-H3-Q8-QQ-D13, EC-K3-H3-Q24-QQ-D12, EC-K3-H3-Q24-O42-I8STAR-MARKING, EC-K3-H3-Q24-O42-ZERO-POLE-AUDIT, EC-K3-H3-Q24-O42-SPINOR-ZERO-POLE, EC-K3-H3-Q24-O42-SECTION-CANDIDATES, EC-K3-H3-Q24-O42-QQ-A11, EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET, EC-K3-H3-A11-Q8-QQ-2A5, EC-K3-H3-A11-R17-Q6O1307-PROMOTED-LATTICE-ROUTE, EC-K3-H3-A11-R17-PHYSICAL-Q10-PROMOTED-ROUTE, EC-K3-H3-A11-R17-Q4O230-Q6O1315-PROMOTED-LATTICE-ROUTE, EC-K3-H3-FIRST-Q8-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-D13-R17-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE, EC-K3-H3-Q24-O42-FAST-Q6-AUDIT, EC-K3-H3-D13-MW17-LATTICE-CHAIN, EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES, EC-K3-R17-REFRESH-BLIND-JUMP-LADDER, EC-PROSPECTIVE-MW16-NEXT12-NEW-CURVES-20260905, EC-NEW-RANK22-SMALL-CONDUCTOR-20260905, EC-NEW-COMPACT-RANK26-20260905, EC-NEW-PAIRED-RANK27-CURVES-20260906, EC-LATEST8-CROSS-FAMILY-INCIDENCE-20260906, EC-NEXT24-NEW-RANK27-20260906, EC-DISCARDED-SHARD-NEW-CURVES-20260906, EC-INVENTORY70-CROSS-FAMILY-INCIDENCE-20260906, EC-WIDER-RETENTION-TWO-NEW-RANK27-20260906, EC-MW16-THREE-NEW-RANK26-20260906.",
+      "scope": "Rank at least32 remains open. The programme pursues peer construction paths: direct R17/MW17 and deduplicated A1/MW16 specialization, reconstruction of curve302\u2019s still-unknown parent, and the arithmetic-first different-NS foundry. Generic rank alone does not choose a unique critical path. The A1/MW16 parameter experiment excludes known-record targets, parameters, public points, ranks, target j-invariants and jump labels from selection and execution. Relative jump counts refer to the stated specialized certified subgroup; generic saturation does not assert saturation after specialization. Starting from16 exactly independent specialized sections, q further exactly independent directions prove rank at least16+q, without an exact-rank claim. Current inventoryV14 contains187 distinct curves with certified lower bounds22 through27, including seven27-point curves and sixteen26-point curves, unmatched up to rational isomorphism among593 pinned catalogue equations. All187 point proofs and the equationCSV replay. EC-INVENTORY185-CROSS-FAMILY-INCIDENCE-20260906 now accounts for all2220 rational j-incidence checks across twelve presentations for all185 curves, including1008 new checks for the84 additions. All25 additional R17 presentations give the same generic subgroup. All2220 witnesses, the aggregate and the exact Q(t) unimodular17-section transport pass three isolated checks. The latest narrowing results are EC-NEW-MW16-RANK27-20260906 and EC-HIGHER-PARAMETER-NEW-RANK26-20260906: one existing MW16 discovery improves26to27, while a fixed higher-parameter R17 pilot supplies a new26-point curve and a new22-point curve. The former has18 isolated checks; the latter has40 initial/adaptive checks plus three separate second-wave checks, all passing. The higher26 curve completes two301-centre waves and a49-map million-height follow-up after its49 initial charts; the1233-point union still certifies26 modulo2,3,5. The retrospective compact-coordinate audit maps67 public successes and leaves two frame maps unknown; all eight mapped reported>=28 examples lie outside parameter height16384. Descriptive coefficient-size, score and point-count changes do not separate incidence from visibility or provide a calibrated rank predictor. EC-PAIRED-PRODUCT-SCORE-AUDIT-20260906 completes a6144-address paired score comparison and988 point boxes without inventory gain; all50 isolated checks pass. Its known28 control disproves using direct generic-representative visibility alone to diagnose exceptional-direction failure. Six separately masked higher-cohort controls then recover their withheld generic direction by exact group relations after72 completed boxes, even though no original signed representative is directly visible; this is known-subgroup recovery, not a sensitivity theorem. All11 isolated masked/height supplement checks pass. EC-PRODUCT-FIRST-RETENTION-AUDIT-20260906 tests the earlier retention-stage gap on the unchanged population, reaching4338 discarded addresses but adding no high-rank curve after1080 completed boxes. Its10482-model local-scaling audit restores no omitted good prime; the13-scaling cohort contrast remains descriptive. All55 isolated checks pass. EC-LOCAL-FEATURE-NEW-RANK25-20260906 adds a new25-point curve at11952 parameter102/1525 from a fixed13-scaling-conditioned cohort. Both new local-feature cohorts complete2160 initial boxes, and its301-box follow-up has a3260-point union still certifying25. The fixed split-node bonus cohort adds no high-rank curve. All113 isolated checks pass. Specialized parity coverage remains a sampled policy, not an exclusion of additional directions. EC-SPECIALIZED-PARITY-CONTROL-20260906 tests the specialized-parity sampling gap. It recovers known29 from28 at125000 after18 completed charts, with31 unsearched after the target stop, without reading the unrecovered public point or oracle word. A separate trial on all six new27 inventory curves completes294 boxes; each trial cloud remains27 modulo2,3,5. All24 isolated checks pass. Numerical metric/CVP choices are not covering or optimality certificates, and the known control success does not prove prospective sensitivity. EC-SKEW-PARAMETER-AUDIT-20260906 completes40733526 skew-box addresses,2048 extensions and368 point boxes without inventory gain. EC-COMPACT-ENDPOINT-AUDIT-20260906 finds21 omitted nonsingular zero/infinity curves, with specialized section lower bounds11through17 agreeing modulo2,3,5; no endpoint point search is part of that audit. All54 combined isolated checks pass. EC-ENDPOINT-SECTION-SPANS-20260906 now proves exact ranks11through17 for all21 specialized generic-section spans, with19 strict losses and five proper known-subgroup indices3or5. These odd indices preserve the abstract modulo2 quotient while changing the integral lattice geometry. All three isolated supplement checks pass. EC-ENDPOINT-POINT-EXPOSURE-20260906 completes all252 boxes on the21 endpoints. Eight curves gain directions, but the strongest bounds are19; all111529 retained point witnesses have matching bounds modulo2,3,5. All66 isolated replay stages pass, including the six small-prime saturation proofs. No endpoint enters the high-rank inventory. EC-NEW27-SMALL-PRIME-SATURATION-20260906 proves2,3,5-saturation for all six own27-point search subgroups, so the endpoint index3or5 defect does not enlarge them. Full saturation and independent directions beyond27 remain open. A separate compact192 cohort now searches32 previously unsearched H4096 candidates per family from the existing6144 S1 rows. Exact equation exclusions and all192 pre-search map files pass; the fixed limit is8640 initial boxes at125000, with no adaptive wave. All192 point attempts and exact histories pass, with85 lower bounds at least22 and five26-point curves. The terminal catalogue comparison excludes one existing curve, ICARM413, leaving84 additions. EC-COMPACT192-84-NEW-CURVES-20260906 completes all8640 boxes, all192 cloud proofs modulo2,3,5 and the full185-curve inventory replay. All585 isolated cohort replay stages pass. EC-COMPACT192-FIVE-RANK26-20260906 proves globally minimal integral models and26 exactly independent points for all five strongest unmatched candidates; their Sage export executes and both isolated standalone proof stages pass in a689782-byte bundle with no base archives. No new27 or28 result occurs in the initial cohort. EC-COMPACT192-SPECIALIZED-EXPOSURE-20260906 completes the separate245-box own-subgroup follow-up on all five new26-point curves, stable IDs102through106. All five map files precede points, and all742 retained point witnesses still certify26 modulo2,3,5. All2048-mask samples and maps precede follow-up points, height125000 and ten seconds per chart remain fixed, and exact histories plus cloud and rational geometry proofs precede any promotion. No stronger rank lower bound or inventory addition is certified in this follow-up. EC-R17-13-SCALE-CLASSIFICATION-20260906 proves the unique removable13-scale residue cell for every primitive parameter in all six compact R17 families, excludes a second13 scaling and proves the minimal models still bad at13. Its six integral parameter changes preserve the generic group; no transformed point population has been launched. EC-R17-SCALING-PRIME-SUPPORT-20260906 independently verifies six exact coefficient resultants and their trial-prime valuations through997. EC-R17-SMALL-PRIME-MINIMALITY-20260906 now excludes every one of the26 non13 small-prime candidates by complete independent residue enumeration; together with resultant valuations this proves universal minimality at all990 family/prime pairs for primes5through997 except13. All22 isolated standalone supplement checks pass for the five26 follow-up, exact resultants and universal small-prime theorem. Large residual cofactors leave complete global prime support UNKNOWN. A separate fixed H131072 parameter-envelope trial is motivated by the native11952 known29 control at89074/31895: the stratified scan completes122433806 primitive addresses and retains5798 outer candidates beyond32768 for unchanged extended-prime scoring. Its fixed48 point roster allows eight distinct previously unmeasured equations per family, with all maps before points, at most2160 initial125000-height boxes and no adaptive wave. EC-OUTER131072-POINT-EXPOSURE-20260906 completes all2160 boxes and48 exact histories and cloud proofs modulo2,3,5. The2223 retained point witnesses leave all48 certified bounds at17, with no inventory gain. A retrospective exact known29 diagnostic shifts from short-score position435 to extended-score position2 among the same967 saved outer candidates; it is outside the sampled denominator residue. The complete11952 selection-prime cache and all14740 direct character sums pass, followed by exact cached-score agreement on967 scalar-scored references and the full-size repeated fixture. A separately frozen full11952 scan completes20888422894 primitive short-score addresses across2048 slices, preserving1048576 survivors through unchanged extended S1. All retained short sums and all64 finalist scalar checks pass. EC-FULL11952-KNOWN29-RETENTION-20260906 confirms after selection/maps freeze that the known29 control is478285th by short score and30th by extended score among these survivors, entering the final64 at position29. It is already known and cannot be an inventory addition. All64 map files pass before prospective points; the fixed point cohort allows3136 initial125000-height boxes, ten seconds each, with no adaptive wave or refill. EC-FULL11952-NEW-RANK27-20260906 completes all3136 boxes and194 isolated point-proof stages, adding ID186 with27 independent points at4286/1881 and ID187 with23 at11019/11983. The known control reaches28 and is excluded as ICARM12. The new27 global minimal model and executable point export pass two additional isolated standalone checks. EC-FULL11952-SPECIALIZED-EXPOSURE-20260906 completes its separate49-box own27 follow-up, whose101 witnesses remain27 modulo2,3,5. EC-INVENTORY187-CROSS-FAMILY-INCIDENCE-20260906 adds24 exact checks for the two additions, leaving only their original11952 presentations and bringing complete incidence coverage to2244 pairs on187 curves. The previous25 duplicate presentations supply the same generic subgroup. EC-SOLUBLE-PAIR-CARRIER-HEIGHT-GATE-20260906 integrates the newly soluble positive pair carrier: twelve fixed Jacobian words produce ten19-point images on seven parameters, one old small anchor with supplied bound18 modulo2,3,5, and one height-censored image. No new image meets the360-bit recorded-model gate. Its rank2 generator subgroup plus rational2-torsion is2,3,5-saturated; larger-prime saturation and other small images remain unresolved. EC-FULL11952-MILLION-HEIGHT-EXPOSURE-20260906 completes all49 own27 specialized maps of ID186 at million height with one worker and60 seconds per chart. Its147-chart union, including both earlier49-chart histories, contains720 retained witnesses and still certifies27 modulo2,3,5. All exact histories, rational geometry and cloud proofs pass. The known native29 million-height chart remains a retrospective finite cost/visibility gate; prior null pilots remain explicit. No improved rank bound or absence theorem follows. Neither retained-score positions nor this one control prove a rank-density or sensitivity law. Other retained exact results, controls, foundry exclusions, low-conductor examples and construction routes remain in the dependency entries and their canonical proofs. A new rank-at-least28/32 curve, unconditional exact rank for curve302, residual descent for curve273, sharper conductor results and universal novelty remain open. Finite misses, heuristic scores, incomplete descents and censored searches prove no rank upper bound, Selmer bound, saturation or point absence. Further compute-heavy work requires an explicit mathematical gate, declared finite limits, checkpoints and exact replay. Retained exact narrowing and route references: EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE, EC-K3-H3-Q4O208-Q4O1584-QQ, EC-K3-H3-Q4O1584-Q4O164-QQ, EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR, EC-K3-H3-Q12O5867-QQ-ROOTLESS, EC-K3-H3-Q12O5867-QQ-R17-BASIS, EC-K3-H3-Q12O5867-ENDPOINT-QQ, EC-K3-ELKIES-2026-R17, EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS, EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL, EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE, EC-K3-ELKIES-2026-R18-COVER, EC-K3-ELKIES-2026-R19-PAIRED, EC-K3-CURVE398-A1-MW16-RECOVERY, ECR31, EC-R21-ICARM, EC-R20-IC245, EC-MD17, EC-MD19, EC-K3-H3-SOURCE, EC-K3-H3-PTS, EC-ICARM-CONSTRUCTION-FINGERPRINTS, EC-K3-H3-Q8-QQ-D13, EC-K3-H3-Q24-QQ-D12, EC-K3-H3-Q24-O42-I8STAR-MARKING, EC-K3-H3-Q24-O42-ZERO-POLE-AUDIT, EC-K3-H3-Q24-O42-SPINOR-ZERO-POLE, EC-K3-H3-Q24-O42-SECTION-CANDIDATES, EC-K3-H3-Q24-O42-QQ-A11, EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET, EC-K3-H3-A11-Q8-QQ-2A5, EC-K3-H3-A11-R17-Q6O1307-PROMOTED-LATTICE-ROUTE, EC-K3-H3-A11-R17-PHYSICAL-Q10-PROMOTED-ROUTE, EC-K3-H3-A11-R17-Q4O230-Q6O1315-PROMOTED-LATTICE-ROUTE, EC-K3-H3-FIRST-Q8-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-D13-R17-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE, EC-K3-H3-Q24-O42-FAST-Q6-AUDIT, EC-K3-H3-D13-MW17-LATTICE-CHAIN, EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES, EC-K3-R17-REFRESH-BLIND-JUMP-LADDER, EC-PROSPECTIVE-MW16-NEXT12-NEW-CURVES-20260905, EC-NEW-RANK22-SMALL-CONDUCTOR-20260905, EC-NEW-COMPACT-RANK26-20260905, EC-NEW-PAIRED-RANK27-CURVES-20260906, EC-LATEST8-CROSS-FAMILY-INCIDENCE-20260906, EC-NEXT24-NEW-RANK27-20260906, EC-DISCARDED-SHARD-NEW-CURVES-20260906, EC-INVENTORY70-CROSS-FAMILY-INCIDENCE-20260906, EC-WIDER-RETENTION-TWO-NEW-RANK27-20260906, EC-MW16-THREE-NEW-RANK26-20260906. EC-INVENTORY187-CONDUCTOR-BOUNDS-20260906 completes all187 upper bounds and1656 independent local Tate comparisons. None beats its recorded rank-threshold minimum; ID186 has a123-digit bound below24 of29 recorded rank-at-least27 catalogue conductors, with four values missing. Residual exact conductors and records remain unresolved. EC-SOLUBLE-PAIR-INVARIANT-HEIGHT-GATE-20260906 excludes all seven distinct nonanchor carrier images from360 bits under arbitrary rational scaling to a normalized integral model; the weakest necessary size is610 bits. All eleven available invariant rows pass independent exact replay. Other carrier parameters remain untested. EC-SOLUBLE-PAIR-ANCHOR-EXACT-SPAN-20260906 resolves the anchor ambiguity: an exact integral relation and independent18-point proof give span18 and quotient rank1 for the two supplied lifts over the17 generic sections. No whole-curve rank conclusion follows. A separate second-prime-band trial is active on4096 fresh11952 equations from the existing retained population. Exact exclusions remove853 previous cohort and593 pinned catalogue equations, with98 skips before the4096th eligible equation at old score position4194. Fresh scalar traces4099..65521 must match the earlier cached band and pass8192 direct character sums. The first8 runtime gate passes with514.921 projected serial seconds. After complete score replay,64 finalists are selected through65521, then receive wholly disjoint65537..131071 validation before all64 maps and at most3136 generic17-only point boxes at125000 and ten seconds per chart. Two point and two proof workers have fixed caps, a provisional28 per-curve stop and no adaptive wave. This further4096 truncation is explicit; the retrospective old64 ordering contrast is not a sensitivity or rank-density law. No new rank result is yet claimed by this active trial.",
       "canonical_source": "elliptic-curves/README.md",
       "dependencies": [
         "ECR31",
@@ -37899,7 +37899,19 @@
         "EC-COMPACT192-FIVE-RANK26-20260906",
         "EC-COMPACT192-84-NEW-CURVES-20260906",
         "EC-COMPACT192-SPECIALIZED-EXPOSURE-20260906",
-        "EC-R17-SCALING-PRIME-SUPPORT-20260906"
+        "EC-R17-SCALING-PRIME-SUPPORT-20260906",
+        "EC-R17-SMALL-PRIME-MINIMALITY-20260906",
+        "EC-INVENTORY185-CROSS-FAMILY-INCIDENCE-20260906",
+        "EC-OUTER131072-POINT-EXPOSURE-20260906",
+        "EC-FULL11952-KNOWN29-RETENTION-20260906",
+        "EC-FULL11952-NEW-RANK27-20260906",
+        "EC-FULL11952-SPECIALIZED-EXPOSURE-20260906",
+        "EC-INVENTORY187-CROSS-FAMILY-INCIDENCE-20260906",
+        "EC-SOLUBLE-PAIR-CARRIER-HEIGHT-GATE-20260906",
+        "EC-INVENTORY187-CONDUCTOR-BOUNDS-20260906",
+        "EC-SOLUBLE-PAIR-INVARIANT-HEIGHT-GATE-20260906",
+        "EC-SOLUBLE-PAIR-ANCHOR-EXACT-SPAN-20260906",
+        "EC-FULL11952-MILLION-HEIGHT-EXPOSURE-20260906"
       ],
       "checker": null,
       "proof_type": "not-applicable",
@@ -45900,7 +45912,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Complete13-scaling classification and six integral parameter charts",
-      "scope": "For every primitive integer parameter pair in each of the six displayed compact R17 families,13^4 divides A_h and13^6 divides B_h exactly in one projective residue cell: infinity for103b2 and07ca9, n/d=6 for11952,10 for074d9,2 for08234 and5 for08f72 modulo13. An explicit determinant13 integer basis of each residue lattice yields integral divided binary forms. All84 cell transports have exact coefficient and independent symbolic verification. Complete residue lifting excludes every other original cell and any second13 scaling in the eligible divided chart; every exclusion closes by depth3, with at most13 live residues, and a separate exhaustive checker replays all witnesses. For nonsingular fibres the13-minimal divided model remains bad at13. The version-two aggregate additionally checks all84 original discriminant residues, completing the universal bad13 claim outside the nonminimal cells while retaining the version-one evidence. There is no hidden good13 trace or higher13-scale population to recover. The rational base changes and explicit Weierstrass scalings preserve the generic17 subgroup, adding no rank. Only one of the six Gauss-basis square-box coefficient bounds improves; no population or point search follows. Build, exact replay and independent symbolic/residue checks pass; isolated portable replay is not yet claimed. No global minimality at other primes, conductor, whole-curve rank, full base-automorphism classification or new near-record curve follows.",
+      "scope": "For every primitive integer parameter pair in each of the six displayed compact R17 families,13^4 divides A_h and13^6 divides B_h exactly in one projective residue cell: infinity for103b2 and07ca9, n/d=6 for11952,10 for074d9,2 for08234 and5 for08f72 modulo13. An explicit determinant13 integer basis of each residue lattice yields integral divided binary forms. All84 cell transports have exact coefficient and independent symbolic verification. Complete residue lifting excludes every other original cell and any second13 scaling in the eligible divided chart; every exclusion closes by depth3, with at most13 live residues, and a separate exhaustive checker replays all witnesses. For nonsingular fibres the13-minimal divided model remains bad at13. The version-two aggregate additionally checks all84 original discriminant residues, completing the universal bad13 claim outside the nonminimal cells while retaining the version-one evidence. There is no hidden good13 trace or higher13-scale population to recover. The rational base changes and explicit Weierstrass scalings preserve the generic17 subgroup, adding no rank. Only one of the six Gauss-basis square-box coefficient bounds improves; no population or point search follows. Build, exact replay and independent symbolic/residue checks pass; the universal13 proof and independent symbolic check also pass in the completed585-stage compact192 isolated replay. No global minimality at other primes, conductor, whole-curve rank, full base-automorphism classification or new near-record curve follows.",
       "canonical_source": "elliptic-curves/notes/R17_INTEGRAL_13_PARAMETER_CHARTS_2026-09-06.md",
       "dependencies": [
         "EC-LOCAL-FEATURE-NEW-RANK25-20260906",
@@ -45908,7 +45920,7 @@
       ],
       "checker": "elliptic-curves/cas/report_r17_13_scaling_geometry_v2.py",
       "proof_type": "hybrid",
-      "independent_replay": false,
+      "independent_replay": true,
       "formal_verification": false,
       "external_review": false,
       "artifact_hash": "sha256:7cdd93801571c227d59f65846964e86eab117cd04892fe869b525b0f6a49447e",
@@ -45917,7 +45929,9 @@
         "artifacts/generated-results/elliptic-curves/r17_13_scaling_classification_v1.json",
         "artifacts/generated-results/elliptic-curves/r17_13_scaling_geometry_v1.json",
         "elliptic-curves/notes/R17_INTEGRAL_13_PARAMETER_CHARTS_2026-09-06.md",
-        "artifacts/generated-results/elliptic-curves/r17_13_scaling_geometry_v2.json"
+        "artifacts/generated-results/elliptic-curves/r17_13_scaling_geometry_v2.json",
+        "artifacts/generated-results/elliptic-curves/compact192_evidence_v1.json",
+        "artifacts/generated-results/elliptic-curves/compact192_portable_replay_v1.json"
       ],
       "supersedes": [],
       "closes_problems": [],
@@ -45968,7 +45982,7 @@
       "kind": "example",
       "state": "proved",
       "title": "Compact192 adds84 catalogue-unmatched curves and expands the replayed inventory to185",
-      "scope": "The fixed192-candidate compactH4096 cohort completes all8640 initial point boxes at125000 height and ten seconds per chart. Every pre-search map, exact point history, rational geometry and full retained cloud modulo2,3,5 passes; all three prime bounds agree on each curve. The initial cohort has85 lower bounds at least22 and five26-point curves, with no27 result. Post-terminal rational-isomorphism comparison finds one known24-point curve, ICARM413, and no within-cohort or previous-equation duplicates, leaving84 additions. V13 preserves all101 old IDs and contains185 distinct curves: six27,sixteen26,thirty-seven25,forty-six24,forty-one23,thirty-nine22. Every independent point proof, source binding, catalogue exclusion, stable ID and equationCSV replays exactly. The176578901-byte full supplement contains12765 new files and230 inherited members, with24 pinned base archives; its585-stage isolated replay is running and not yet claimed complete. The five strongest new curves separately have globally minimal models and a completed standalone isolated proof. Prior101-curve incidence coverage is historical; the84 additions have not yet received that twelve-presentation incidence audit. No exact rank, conductor, full saturation, rank28/32 discovery, calibrated rank density, complete parameter coverage, record or universal novelty follows.",
+      "scope": "The fixed192-candidate compactH4096 cohort completes all8640 initial point boxes at125000 height and ten seconds per chart. Every pre-search map, exact point history, rational geometry and full retained cloud modulo2,3,5 passes; all three prime bounds agree on each curve. The initial cohort has85 lower bounds at least22 and five26-point curves, with no27 result. Post-terminal rational-isomorphism comparison finds one known24-point curve, ICARM413, and no within-cohort or previous-equation duplicates, leaving84 additions. V13 preserves all101 old IDs and contains185 distinct curves: six27,sixteen26,thirty-seven25,forty-six24,forty-one23,thirty-nine22. Every independent point proof, source binding, catalogue exclusion, stable ID and equationCSV replays exactly. The176578901-byte full supplement contains12765 new files and230 inherited members, with24 pinned base archives; all585 isolated replay stages pass, including selection, point histories, complete clouds modulo2,3,5, rational geometry, the185-curve inventory and CSV, and the13-adic classification. The five strongest new curves separately have globally minimal models and a completed standalone isolated proof. The original cohort supplement does not include the later incidence audit. The separate EC-INVENTORY185-CROSS-FAMILY-INCIDENCE-20260906 result now closes all2220 twelve-presentation pairs for the full185 inventory with isolated replay. No exact rank, conductor, full saturation, rank28/32 discovery, calibrated rank density, complete parameter coverage, record or universal novelty follows.",
       "canonical_source": "elliptic-curves/notes/COMPACT192_UNSEARCHED_TRIAL_2026-09-06.md",
       "dependencies": [
         "EC-LOCAL-FEATURE-NEW-RANK25-20260906",
@@ -45976,7 +45990,7 @@
       ],
       "checker": "elliptic-curves/cas/replay_inventory_v13_memory.py",
       "proof_type": "hybrid",
-      "independent_replay": false,
+      "independent_replay": true,
       "formal_verification": false,
       "external_review": false,
       "artifact_hash": "sha256:3ab24148348916e044e42c41bfe9efbe193f2055de7129728e5c9f09a1cabb46",
@@ -45987,7 +46001,8 @@
         "artifacts/generated-results/elliptic-curves/compact192_experiment_v1.json",
         "artifacts/generated-results/elliptic-curves/compact192_evidence_v1.json",
         "artifacts/generated-results/elliptic-curves/compact192_evidence_v1.zip",
-        "elliptic-curves/notes/COMPACT192_UNSEARCHED_TRIAL_2026-09-06.md"
+        "elliptic-curves/notes/COMPACT192_UNSEARCHED_TRIAL_2026-09-06.md",
+        "artifacts/generated-results/elliptic-curves/compact192_portable_replay_v1.json"
       ],
       "supersedes": [],
       "closes_problems": [],
@@ -46004,7 +46019,7 @@
       "kind": "example",
       "state": "proved",
       "title": "All five compact192 own26-point follow-ups complete245 boxes without gain",
-      "scope": "All five newly added compact192 rank26 curves, stable IDs102through106, receive one frozen2048-mask own-subgroup sample and49-chart roster. All five map files precede all points. All245 boxes complete at125000 height and ten seconds per chart. Exact histories, rational geometry and742 retained point witnesses pass; every cloud remains26 modulo2,3,5. No stronger rank lower bound or inventory addition is certified. The aggregate builds and replays locally; isolated replay of this supplement is not yet claimed. The finite sample and bounded miss prove neither covering optimality, point absence, saturation, whole-curve rank nor universal sensitivity. No second wave or automatic escalation follows.",
+      "scope": "All five newly added compact192 rank26 curves, stable IDs102through106, receive one frozen2048-mask own-subgroup sample and49-chart roster. All five map files precede all points. All245 boxes complete at125000 height and ten seconds per chart. Exact histories, rational geometry and742 retained point witnesses pass; every cloud remains26 modulo2,3,5. No stronger rank lower bound or inventory addition is certified. The aggregate builds and replays locally; isolated replay of this supplement is not yet claimed. The finite sample and bounded miss prove neither covering optimality, point absence, saturation, whole-curve rank nor universal sensitivity. No second wave or automatic escalation follows. All22 isolated follow-up/small-prime supplement stages pass in a7005716-byte standalone archive. The original packaging omission and failed replay remain preserved; no point-search or certificate input changed.",
       "canonical_source": "elliptic-curves/notes/COMPACT192_SPECIALIZED_FOLLOWUP_2026-09-06.md",
       "dependencies": [
         "EC-COMPACT192-84-NEW-CURVES-20260906",
@@ -46012,13 +46027,15 @@
       ],
       "checker": "elliptic-curves/cas/report_compact192_specialized_followup.py",
       "proof_type": "hybrid",
-      "independent_replay": false,
+      "independent_replay": true,
       "formal_verification": false,
       "external_review": false,
       "artifact_hash": "sha256:716ecd5c1fe09cf965c29d5c7a685abbb174f973117c0c4863af4a59f21405aa",
       "software_lock": [
         "artifacts/generated-results/elliptic-curves/compact192_specialized_followup_v1.json",
-        "elliptic-curves/notes/COMPACT192_SPECIALIZED_FOLLOWUP_2026-09-06.md"
+        "elliptic-curves/notes/COMPACT192_SPECIALIZED_FOLLOWUP_2026-09-06.md",
+        "artifacts/generated-results/elliptic-curves/compact192_followup_supplement_evidence_v2.json",
+        "artifacts/generated-results/elliptic-curves/compact192_followup_supplement_portable_replay_v2.json"
       ],
       "supersedes": [],
       "closes_problems": [],
@@ -46035,24 +46052,431 @@
       "kind": "example",
       "state": "proved",
       "title": "Exact six-family resultants leave global scaling-prime support unresolved",
-      "scope": "The six integer homogeneous degree8/12 Sylvester resultants are computed by exact Bareiss elimination and independently checked with Sage polynomial resultants. Complete trial division through997 retains all small-prime valuations and an unfactored1657through1780-bit cofactor in every family. A removable short-model p scale at a primitive parameter requires p^4 dividing the resultant, by its integer adjugate identities. Known primes with valuation at least4 include13 and other small primes, but actual scaling congruences at the other primes have not been classified. Complete prime support remains UNKNOWN; no unsupported exclusion of large-prime scales follows. Build, exact replay and independent polynomial verification pass; isolated replay is not yet claimed. No factorization escalation, new parameter population, point search, smaller-model claim, rank gain or global minimality theorem results.",
+      "scope": "The six integer homogeneous degree8/12 Sylvester resultants are computed by exact Bareiss elimination and independently checked with Sage polynomial resultants. Complete trial division through997 retains all small-prime valuations and an unfactored1657through1780-bit cofactor in every family. A removable short-model p scale at a primitive parameter requires p^4 dividing the resultant, by its integer adjugate identities. Known primes with valuation at least4 include13 and other small primes, and this support audit alone does not classify their scaling congruences; the subsequent universal small-prime theorem excludes all26 non13 candidate pairs. Complete prime support remains UNKNOWN; no unsupported exclusion of large-prime scales follows. Build, exact replay and independent polynomial verification pass; all22 isolated follow-up/small-prime supplement stages pass. No factorization escalation, new parameter population, point search, smaller-model claim, rank gain or global minimality theorem results.",
       "canonical_source": "elliptic-curves/notes/R17_SCALING_PRIME_SUPPORT_2026-09-06.md",
       "dependencies": [
         "EC-R17-13-SCALE-CLASSIFICATION-20260906"
       ],
       "checker": "elliptic-curves/cas/audit_r17_scaling_prime_support.py",
       "proof_type": "hybrid",
-      "independent_replay": false,
+      "independent_replay": true,
       "formal_verification": false,
       "external_review": false,
       "artifact_hash": "sha256:1080d048ccb415a6684b1dda312bc7ce8db51a0b4928b555d507d4676782a7bb",
       "software_lock": [
         "artifacts/generated-results/elliptic-curves/r17_scaling_prime_support_v1.json",
-        "elliptic-curves/notes/R17_SCALING_PRIME_SUPPORT_2026-09-06.md"
+        "elliptic-curves/notes/R17_SCALING_PRIME_SUPPORT_2026-09-06.md",
+        "artifacts/generated-results/elliptic-curves/compact192_followup_supplement_evidence_v2.json",
+        "artifacts/generated-results/elliptic-curves/compact192_followup_supplement_portable_replay_v2.json"
       ],
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [],
+      "consumers": [
+        "OP-EC-NEXT"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-R17-SMALL-PRIME-MINIMALITY-20260906",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Universal compact R17 minimality at non13 primes5through997",
+      "scope": "For every primitive integer parameter pair in each of the six compact R17 families, every prime5through997 except13 has either coefficient resultant valuation below4 or a complete projective residue exclusion of p^4 dividing A_h together with p^6 dividing B_h. The former accounts for964 family/prime pairs; all26 remaining pairs have empty complete residue trees by depth3, independently verified by exhaustive residue-ring enumeration. All990 pairs are accounted for, with no unknown or censored residue branch. For nonsingular fibres, the displayed integral short model is therefore minimal at every such prime. The separate13 classification is unchanged. Exact aggregate build/replay and independent checks pass; all22 isolated follow-up/small-prime supplement stages pass. Primes2and3, all primes above997, full global prime support, conductors, whole-curve ranks, new points and improved candidate density remain unsettled.",
+      "canonical_source": "elliptic-curves/notes/R17_SMALL_PRIME_MINIMALITY_2026-09-06.md",
+      "dependencies": [
+        "EC-R17-SCALING-PRIME-SUPPORT-20260906"
+      ],
+      "checker": "elliptic-curves/cas/report_r17_small_prime_minimality.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:24b1d0dcedd0a025260d137244b74793ba5fe83d2fb020330250bbfdc92dd679",
+      "software_lock": [
+        "artifacts/generated-results/elliptic-curves/r17_small_prime_minimality_v1.json",
+        "artifacts/generated-results/elliptic-curves/r17_other_small_prime_scalings_v1.json",
+        "artifacts/generated-results/elliptic-curves/r17_scaling_prime_support_v1.json",
+        "elliptic-curves/notes/R17_SMALL_PRIME_MINIMALITY_2026-09-06.md",
+        "artifacts/generated-results/elliptic-curves/compact192_followup_supplement_evidence_v2.json",
+        "artifacts/generated-results/elliptic-curves/compact192_followup_supplement_portable_replay_v2.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "OP-EC-NEXT"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-INVENTORY185-CROSS-FAMILY-INCIDENCE-20260906",
+      "kind": "example",
+      "state": "proved",
+      "title": "All185 inventory curves have complete twelve-presentation incidence",
+      "scope": "All84 additions to inventoryV13 have1008 exact rational j-incidence comparisons against the same twelve recorded family presentations:920 modular or complete residual-factor exclusions and88 complete preimage lists, with no UNKNOWN. Together with the prior101 curves this accounts for every one of2220 pairs on185 distinct curves:2010 exclusions and210 certified preimage lists. Every own-family parameter is recovered. All25 extra presentations, including four new ones on IDs111,152,173,174, are the08234/published-R17 duplicate with compact parameter=-26 times published parameter-50. Exact Q(t) model identities and a determinant-minus-one integral17-section transport prove the same generic subgroup; equal j alone is insufficient. All2220 incidence witnesses across nine cohorts, the complete aggregate and the generic subgroup transport pass three isolated replay stages in a3531394-byte standalone bundle. No new point, rank gain, unlisted-family exclusion, nongeneric-point exclusion, full base-map classification or universal novelty follows.",
+      "canonical_source": "elliptic-curves/notes/INVENTORY185_INCIDENCE_2026-09-06.md",
+      "dependencies": [
+        "EC-COMPACT192-84-NEW-CURVES-20260906",
+        "EC-LOCAL-FEATURE-NEW-RANK25-20260906"
+      ],
+      "checker": "elliptic-curves/cas/certify_inventory185_incidence.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:5b115737a34564f67bdef9227942aff31f236fea53e9e21c7a4a4c615a2ddc52",
+      "software_lock": [
+        "artifacts/generated-results/elliptic-curves/inventory185_incidence_v1.json",
+        "artifacts/generated-results/elliptic-curves/inventory185_added_cross_family_j_incidence_v1.json",
+        "artifacts/generated-results/elliptic-curves/inventory185_added_cross_family_j_incidence_replay_v1.json",
+        "artifacts/generated-results/elliptic-curves/inventory185_incidence_evidence_v1.json",
+        "artifacts/generated-results/elliptic-curves/inventory185_incidence_portable_replay_v1.json",
+        "elliptic-curves/notes/INVENTORY185_INCIDENCE_2026-09-06.md"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "OP-EC-NEXT"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-OUTER131072-POINT-EXPOSURE-20260906",
+      "kind": "example",
+      "state": "proved",
+      "title": "Fixed outer H131072 trial completes2160 boxes without a rank gain",
+      "scope": "A deterministic twelve-slice H131072 scan covers122433806 primitive addresses with the unchanged562-prime score, retaining6144 rows and excluding346 inner-H32768 rows before extending the other5798 through65521. All scanner and trace gates and exact retained-data replays pass. Eight previously unmeasured rational-isomorphism-distinct equations per family are selected by S1 through32749 with validation excluded from ties and all741 previous equations excluded. All48 map sets precede point execution. Every2160 initial box completes at125000 height and ten seconds per chart; all48 exact histories, rational geometries, pinned593-equation comparisons and full-cloud checks modulo2,3,5 pass. The2223 retained point witnesses leave every certified lower bound at17, with no stronger odd-prime bound, catalogue match or high-rank inventory addition. A separate retrospective known29 score diagnostic places the native11952 control435th under short S1 and2nd under extended S1 among the same967 saved outer candidates. The control lies outside the sampled positive denominator residue. This one conditional ranking contrast gives no population density, rank predictor, exact rank, upper bound, point absence or global discard probability. Isolated portable replay of this experiment is not yet claimed.",
+      "canonical_source": "elliptic-curves/notes/OUTER131072_TRIAL_2026-09-06.md",
+      "dependencies": [
+        "EC-COMPACT192-84-NEW-CURVES-20260906",
+        "EC-COMPACT192-SPECIALIZED-EXPOSURE-20260906",
+        "EC-HIGHER-PARAMETER-NEW-RANK26-20260906"
+      ],
+      "checker": "elliptic-curves/cas/report_outer48_experiment.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:dc4516b58bd3967ed2a9a56b44e622add107afccd6ec79fc4b48e167e6d18605",
+      "software_lock": [
+        "artifacts/generated-results/elliptic-curves/outer48_experiment_v1.json",
+        "artifacts/generated-results/elliptic-curves/outer48_r17_results_v1.json",
+        "artifacts/generated-results/elliptic-curves/outer_known29_score_audit_v1.json",
+        "artifacts/generated-results/elliptic-curves/outer_known29_retention_comparison_v1.json",
+        "elliptic-curves/notes/OUTER131072_TRIAL_2026-09-06.md"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "OP-EC-NEXT"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-FULL11952-KNOWN29-RETENTION-20260906",
+      "kind": "example",
+      "state": "proved",
+      "title": "Full11952 retention preserves the known29 control missed by short-prefix ranking",
+      "scope": "After the million-row retained-score pipeline and all64 point maps were frozen, exact binary-bank replay places the independently scalar-scored known11952 control89074/31895 at short-score position478285 and extended-score position30 among1048576 survivors. It is291st in its512-row denominator slice and29th in the frozen64 after exact equation exclusions. All four cached score/count components match the earlier scalar control certificate. This proves one concrete retained-population short/extended ordering contrast and successful retention by the widened policy. It supplies no new curve, rank proof, global extended-score optimality, rank density, prospective sensitivity or universal novelty. The control is already public ICARM12; the prospective roster and point execution remain unchanged. Isolated portable replay is not yet claimed.",
+      "canonical_source": "elliptic-curves/notes/FULL11952_RETENTION_TRIAL_2026-09-06.md",
+      "dependencies": [
+        "EC-OUTER131072-POINT-EXPOSURE-20260906"
+      ],
+      "checker": "elliptic-curves/cas/report_full11952_known29_retention.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:901401a6b1c24985c76b1a43f5b7bf9d2bc3e9d690e79dc3d499129d5958a6d9",
+      "software_lock": [
+        "artifacts/generated-results/elliptic-curves/full11952_known29_retention_v1.json",
+        "artifacts/generated-results/elliptic-curves/full11952_h131072_selection_v1.json",
+        "artifacts/generated-results/elliptic-curves/outer_known29_score_audit_v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "OP-EC-NEXT"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-FULL11952-NEW-RANK27-20260906",
+      "kind": "example",
+      "state": "proved",
+      "title": "Full11952 retention supplies a new minimal27-point curve and a23-point curve",
+      "scope": "The compact11952 parameter4286/1881 gives stable ID186 and27 exactly independent rational points on a proved global minimal integral model. A separate parameter11019/11983 supplies ID187 with lower bound23. Both are rational-isomorphism-unmatched among593 pinned ICARM equations and789 previous cohort equations. All3136 initial boxes,64 exact histories, rational geometry and full-cloud proofs modulo2,3,5 pass. The known29 control is automatically selected, recovered to28, and excluded as ICARM12. All194 isolated point-only replay stages pass in a57564911-byte standalone bundle. Those stages bind score selection as context; they do not rerun the20.89-billion-address scan, million-row scoring or trace-cache construction. The27-point integral model, exact transports, independence and Sage export additionally pass both isolated standalone model stages in477286 bytes. InventoryV14 contains187 distinct curves, including seven lower bounds27; every inventory point proof and equation CSV replays. Exact ranks, conductors, full saturation, record status and universal novelty remain unproved.",
+      "canonical_source": "elliptic-curves/notes/FULL11952_NEW_RANK27_2026-09-06.md",
+      "dependencies": [
+        "EC-FULL11952-KNOWN29-RETENTION-20260906",
+        "EC-COMPACT192-84-NEW-CURVES-20260906"
+      ],
+      "checker": "elliptic-curves/cas/export_full11952_high_rank_models.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f38a9b08d762cf619fc5591830eb37925e938759e3605ba684e68f8c85ef9f24",
+      "software_lock": [
+        "artifacts/generated-results/elliptic-curves/full11952_high_rank_models_v1.json",
+        "artifacts/generated-results/elliptic-curves/full11952_high_rank_models_portable_replay_v1.json",
+        "artifacts/generated-results/elliptic-curves/full11952_64_r17_results_v1.json",
+        "artifacts/generated-results/elliptic-curves/full11952_64_experiment_v1.json",
+        "artifacts/generated-results/elliptic-curves/full11952_64_point_portable_replay_v1.json",
+        "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v14.json",
+        "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v14_memory_replay_v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "OP-EC-NEXT"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-FULL11952-SPECIALIZED-EXPOSURE-20260906",
+      "kind": "example",
+      "state": "proved",
+      "title": "The new full11952 rank27 curve completes49 specialized boxes without gain",
+      "scope": "The separately frozen follow-up on new-20260906-186 at4286/1881 uses only its own27 certified points. All2048 specialized-parity samples and49 selected maps precede new points. All49 boxes complete at125000 height and ten seconds each. Exact histories, rational geometry and full-cloud checks leave all101 retained witnesses at lower bound27 modulo2,3,5. No stronger odd-prime bound, rank gain or inventory addition occurs. The known29 recovery is a finite visibility gate, not a sensitivity theorem. No automatic second wave, rank upper bound, saturation, point absence or universal novelty follows. Isolated replay of this follow-up is not yet claimed.",
+      "canonical_source": "elliptic-curves/notes/FULL11952_NEW_RANK27_2026-09-06.md",
+      "dependencies": [
+        "EC-FULL11952-NEW-RANK27-20260906",
+        "EC-SPECIALIZED-PARITY-CONTROL-20260906"
+      ],
+      "checker": "elliptic-curves/cas/report_full11952_specialized_followup.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ffe250e532171aa0afa3198ecbec9ccaea2487a52861eb5768c7640a3b22d723",
+      "software_lock": [
+        "artifacts/generated-results/elliptic-curves/full11952_specialized_followup_v1.json",
+        "artifacts/generated-results/elliptic-curves/full11952_specialized_186_mod2_v1.json",
+        "artifacts/generated-results/elliptic-curves/full11952_specialized_186_modl_v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "OP-EC-NEXT"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-INVENTORY187-CROSS-FAMILY-INCIDENCE-20260906",
+      "kind": "example",
+      "state": "proved",
+      "title": "All187 inventory curves have complete twelve-presentation incidence",
+      "scope": "The two full11952 inventory additions pass24 exact rational j-incidence checks with22 exclusions and two own11952 preimages. A separate Sage-free replay checks every modular projective exclusion and rational-root factorization. Together with the previous185-curve audit this gives2244 pairs:2032 exclusions and212 certified preimages. The25 additional08234/published-R17 presentations remain the same generic subgroup under the previously proved unimodular17-section transport. Neither new curve supplies an additional recorded presentation. Other families and nongeneric directions are not excluded. The previous2220 pairs have isolated replay; isolated portable replay of the added24 is not yet claimed.",
+      "canonical_source": "elliptic-curves/notes/FULL11952_NEW_RANK27_2026-09-06.md",
+      "dependencies": [
+        "EC-INVENTORY185-CROSS-FAMILY-INCIDENCE-20260906",
+        "EC-FULL11952-NEW-RANK27-20260906"
+      ],
+      "checker": "elliptic-curves/cas/certify_inventory187_incidence.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:26ff1ad8fa3a564581906cb8648fa08ee2ad86ac43ed95588d0a5d3e60b7162e",
+      "software_lock": [
+        "artifacts/generated-results/elliptic-curves/inventory187_incidence_v1.json",
+        "artifacts/generated-results/elliptic-curves/inventory187_added_cross_family_j_incidence_v1.json",
+        "artifacts/generated-results/elliptic-curves/inventory187_added_cross_family_j_incidence_replay_v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "OP-EC-NEXT"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-SOLUBLE-PAIR-CARRIER-HEIGHT-GATE-20260906",
+      "kind": "example",
+      "state": "proved",
+      "title": "Actual soluble carrier produces19-point images but no new small model in twelve words",
+      "scope": "For the newly certified soluble positive pair orbit-1795d/orbit-0911e, twelve fixed combinations of its two recorded Jacobian generators are mapped through the actual genus-one carrier. The pointed quartic, both generic lift identities, rational maps and transports to compact08234 are checked exactly. Ten images certify19 independent points on seven distinct parameters, with recorded homogeneous-model coefficient sizes640through5044 bits. One returns the known774/149 anchor with256 bits and supplied-subgroup lower bound18 modulo2,3,5; one exceeds the declared512-bit parameter cap and is censored. No new image passes the fixed360-bit recorded-model gate. A separate finite quotient audit proves the two Jacobian generators together with rational2-torsion are saturated at2,3,5, explicitly including the torsion column at2. Larger-prime saturation, a full integral basis, other small carrier images, globally minimal coefficient sizes, exact original-fibre ranks and novelty remain open. No original-family point search or automatic expansion occurs.",
+      "canonical_source": "elliptic-curves/notes/SOLUBLE_PAIR_CARRIER_HEIGHT_GATE_2026-09-06.md",
+      "dependencies": [
+        "EC-K3-ELKIES-2026-R19-PAIRED"
+      ],
+      "checker": "elliptic-curves/cas/report_soluble_pair_carrier_gate.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f3a4b0b8d4b0c992a8ade64884c7df2b12d8d81307cf0f7f15bcd5e3f852b414",
+      "software_lock": [
+        "artifacts/generated-results/elliptic-curves/soluble_pair_carrier_gate_v1.json",
+        "artifacts/generated-results/elliptic-curves/soluble_pair_carrier_height_v1.json",
+        "artifacts/generated-results/elliptic-curves/soluble_pair_generator_saturation_v1.json",
+        "artifacts/generated-results/elliptic-curves/soluble_pair_carrier_anchor_modl_v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "OP-EC-NEXT"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-INVENTORY187-CONDUCTOR-BOUNDS-20260906",
+      "kind": "example",
+      "state": "proved",
+      "title": "All187 inventory conductor bounds and independent local Tate replay",
+      "scope": "All187 V14 curves have unconditional conductor upper bounds from exact integral translations and1656 local Tate calculations at2,3 and bad primes through10000. Independent PARI elllocalred agrees with every Sage generic local result and reconstructed bound. No bound beats the pinned catalogue minimum at its rank threshold; this does not exclude smaller actual conductors. The new27 curve ID186 has a123-digit upper bound below24 of29 recorded conductors among catalogue curves with rank lower bound at least27; four such catalogue values are missing. Its invariant gcd75 and typeIV at5 make all other bad primes multiplicative. Exact residual conductors, external catalogue conductor verification, universal records and new ranks remain unresolved. V1 failed on a Sage nonintegral-model branch and is preserved; V2 uses exact integral translations. No isolated portable supplement replay is yet claimed.",
+      "canonical_source": "elliptic-curves/notes/INVENTORY187_CONDUCTOR_BOUNDS_2026-09-06.md",
+      "dependencies": [
+        "EC-FULL11952-NEW-RANK27-20260906"
+      ],
+      "checker": "elliptic-curves/cas/verify_inventory187_conductor_bounds.sage",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:7f46fe9c749664dbfb1edb694a54aba4db06e54fb14c3d74612c255932a34e2d",
+      "software_lock": [
+        "artifacts/generated-results/elliptic-curves/inventory187_conductor_bounds_v2.json",
+        "artifacts/generated-results/elliptic-curves/inventory187_conductor_bounds_pari_replay_v1.json",
+        "artifacts/generated-results/elliptic-curves/full11952_conductor_bound_v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "OP-EC-NEXT"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-SOLUBLE-PAIR-INVARIANT-HEIGHT-GATE-20260906",
+      "kind": "example",
+      "state": "proved",
+      "title": "The seven fixed carrier images fail360 bits after any integral normalization",
+      "scope": "For all ten nonanchor rows of the fixed twelve-word soluble pair carrier sample, representing seven distinct parameters, exact invariant inequalities exclude every normalized integral Weierstrass model with coefficient bit size at most360, including a normalized global minimal model. The weakest necessary coefficient size is610 bits. With G=gcd(|c4|,|c6|), integrality after rational scaling implies |c6_target|^2>=c6^2/G^3, while normalized coefficients bounded by M imply |c6_target|<=1224M+521. Independent Sage arithmetic replays all eleven available invariant rows. The anchor is not excluded and one parameter remains censored before specialization. This closes the hidden scaling gap for the fixed sample only; no other carrier parameter, arbitrary unnormalized coefficient bound, whole-curve rank or new search is settled.",
+      "canonical_source": "elliptic-curves/notes/SOLUBLE_PAIR_CARRIER_HEIGHT_GATE_2026-09-06.md",
+      "dependencies": [
+        "EC-SOLUBLE-PAIR-CARRIER-HEIGHT-GATE-20260906"
+      ],
+      "checker": "elliptic-curves/cas/verify_carrier_invariant_height_gate.sage",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:21a1e9a2cdd92f88d16baeff29d789f2a5021b4bc6a8eff5965fc014ef780bfd",
+      "software_lock": [
+        "artifacts/generated-results/elliptic-curves/soluble_pair_carrier_invariant_height_v1.json",
+        "artifacts/generated-results/elliptic-curves/soluble_pair_carrier_invariant_height_replay_v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "OP-EC-NEXT"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-SOLUBLE-PAIR-ANCHOR-EXACT-SPAN-20260906",
+      "kind": "example",
+      "state": "proved",
+      "title": "The two carrier lifts add exactly one direction at the existing anchor",
+      "scope": "At compact08234 parameter774/149, the17 generic sections and the two supplied carrier points span exactly18 dimensions. A bounded numerical height proposal yields an exact integral relation Q1+Q2=P1-4P2-6P4+4P5+4P7+P8-2P10+2P12+P13-3P15+P17. The Sage-free rational group law checks this identity and independently replays the17-point generic and18-point extended independence proofs. Thus the two supplied directions have quotient rank exactly1 at this anchor; this closes the earlier finite-modulus18 ambiguity. The whole curve rank, other fibres and additional original-curve directions remain unchanged.",
+      "canonical_source": "elliptic-curves/notes/SOLUBLE_PAIR_CARRIER_HEIGHT_GATE_2026-09-06.md",
+      "dependencies": [
+        "EC-SOLUBLE-PAIR-CARRIER-HEIGHT-GATE-20260906"
+      ],
+      "checker": "elliptic-curves/cas/certify_carrier_anchor_relation.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:81bed604a35cf000cd8dbb642a6085a906ee9088dd6e90a4d4e8ba03db556f13",
+      "software_lock": [
+        "artifacts/generated-results/elliptic-curves/soluble_pair_carrier_anchor_relation_v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "OP-EC-NEXT"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-FULL11952-MILLION-HEIGHT-EXPOSURE-20260906",
+      "kind": "example",
+      "state": "proved",
+      "title": "All49 larger boxes on the new27 curve complete without a rank gain",
+      "scope": "The fixed own-subgroup49-chart million-height pilot on ID186 at11952 parameter4286/1881 completes all49 boxes with60 seconds per chart and one worker. It reuses the previously frozen27-point specialized maps, with no new centre or parameter. Exact histories, rational geometry and the147-chart union with both prior49-chart histories pass; all720 retained point witnesses still certify27 modulo2,3,5. The point/history stage takes1768.060 seconds, with8.473-second union proof and0.585-second final check. The known native29 cost/visibility control is retrospective, and prior null height pilots remain explicit. This is a bounded exposure result, not an upper bound, point absence, saturation or sensitivity theorem. Isolated portable supplement replay is not yet claimed.",
+      "canonical_source": "elliptic-curves/notes/FULL11952_NEW_RANK27_2026-09-06.md",
+      "dependencies": [
+        "EC-FULL11952-NEW-RANK27-20260906",
+        "EC-FULL11952-SPECIALIZED-EXPOSURE-20260906"
+      ],
+      "checker": "elliptic-curves/cas/audit_full11952_million_height.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:5b879d1ca3d37f5cacc6e300261476b9e0cc4d74eec4e4a92790f7baab56e89e",
+      "software_lock": [
+        "artifacts/generated-results/elliptic-curves/full11952_million_new_20260906_186_coverage_v1.json",
+        "artifacts/generated-results/elliptic-curves/full11952_million_new_20260906_186_all_retained_mod2_v1.json",
+        "artifacts/generated-results/elliptic-curves/full11952_million_new_20260906_186_all_retained_modl_v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
       "consumers": [
         "OP-EC-NEXT"
       ],

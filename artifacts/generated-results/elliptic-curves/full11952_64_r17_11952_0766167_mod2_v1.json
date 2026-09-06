@@ -1,0 +1,2124 @@
+{
+  "claim_boundary": "Exact finite quotient lower bounds on the retained point cloud only. No new point search, public oracle point, exact rank or rank upper bound.",
+  "curve": [
+    "0",
+    "0",
+    "0",
+    "-1504420301180212454524605623206828694762705019980905825224302236/3",
+    "119303029151882210124677079809875086830230260524235169603522287628738656893295968377058794609040/27"
+  ],
+  "family": "11952",
+  "independent_column_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "independent_points": [
+    [
+      "95509854424386982522802798266936/3",
+      "143951594814517950884973683225056881160937590452"
+    ],
+    [
+      "323948327989912572635721030890230579337344781380124823219092938/5847921692005654480640042187075",
+      "1042150232746874065250287673026018605148033172573869538524713320356995759010174517105121675444/2721575837838383370146977054195579667925761375"
+    ],
+    [
+      "242726213911882372068850500773937073674059153847270017619341086/13489286535520156278845394363867",
+      "333204246363984659762662603645901560768360709143822665591155436672510392700371194052955506028/9534580455700263491402466938334899413829465413"
+    ],
+    [
+      "661052124359338400751638458665441650089094347/32142496687500",
+      "-1857115034813644119112535173786262577103897363670558459390376091293/35070142427453125000"
+    ],
+    [
+      "347428010538213731125305958110586535611398005668/60007754747835075",
+      "116960839791477073926905345517688215582553166220781809553879418687923296/2828975485941638278537375"
+    ],
+    [
+      "-699713319746237510006257639055679577295318888/29915348828907",
+      "-1823066381320538182409345686521456223627350844849755502397738527596/31489025810485766797"
+    ],
+    [
+      "1676249937594690223191520904906980/3",
+      "-13197227887851545094776081315870612918942498282640"
+    ],
+    [
+      "46195708925175178629082155864389572969624346490682/140575646149218075",
+      "-60288852448746768476352047366104757886856479693455323815708134618166363228/10143392958327773743838875"
+    ],
+    [
+      "1151756086233963526842758732301651195456479083/14607409555632",
+      "7247948227022184530924593404753923858524039631156001436650747208653/10744295071457412928"
+    ],
+    [
+      "-23994618790511225718721858166144456046905410874633/2630522457732265563",
+      "-74504859361706872638092393559540368154704367954831926068658935461304562151/821071804445113142384680069"
+    ],
+    [
+      "2603096272411148080127675373461759937036220585527454/82544081034454475043",
+      "20394000807217589821122202170382186237093158902362133242951700842002740653524/144326813508693792084854203921"
+    ],
+    [
+      "2695361557688673788729829514067591464284155806/155532398647107",
+      "-11400760696936979451295903922698665086233038743171853760847215047468/373292636019194039903"
+    ],
+    [
+      "-3483776475130027086072259202111405/192",
+      "44470224557447002695456592950803400243212665448055/512"
+    ],
+    [
+      "131556275380422979202297085907252042/5043",
+      "-6570878435459990766276760779528980556498850561718796/68921"
+    ],
+    [
+      "3399216228565392098828238977003648274208997587/1585493673608172",
+      "703565415181923377092646578161008574518167414403281090376677383630039/12149681357686500659368"
+    ],
+    [
+      "242070500299508213187253862960355755914662470251672/17109682928400602307",
+      "169977533055400032566902182884501826667282828089486964394963381706393671556/13620123953901986928709472353"
+    ],
+    [
+      "34464629622475424274817715554014859/71148",
+      "236011629657839705175239051580230325656120429479749891/3652264"
+    ],
+    [
+      "-87087922036015816100084548935493542190380776732/5174803056492723",
+      "-6444312440140963732843760469530406035107688210717358924453037590231648/71640541017487119247289"
+    ]
+  ],
+  "input_path": "artifacts/local/elliptic-curves/full11952-64-r17-pari-v1/11952-0766167/result.json",
+  "input_sha256": "10a5078b3b1e3823ecf1045e10402a2e78dfb132442d1683b50af295c0ec0cd2",
+  "input_status": "COMPLETE_DECLARED_POINT_ATTEMPT",
+  "original_rank_lower_bound": 18,
+  "parameter": "91849/31193",
+  "points": [
+    [
+      "95509854424386982522802798266936/3",
+      "143951594814517950884973683225056881160937590452"
+    ],
+    [
+      "323948327989912572635721030890230579337344781380124823219092938/5847921692005654480640042187075",
+      "1042150232746874065250287673026018605148033172573869538524713320356995759010174517105121675444/2721575837838383370146977054195579667925761375"
+    ],
+    [
+      "242726213911882372068850500773937073674059153847270017619341086/13489286535520156278845394363867",
+      "333204246363984659762662603645901560768360709143822665591155436672510392700371194052955506028/9534580455700263491402466938334899413829465413"
+    ],
+    [
+      "661052124359338400751638458665441650089094347/32142496687500",
+      "-1857115034813644119112535173786262577103897363670558459390376091293/35070142427453125000"
+    ],
+    [
+      "347428010538213731125305958110586535611398005668/60007754747835075",
+      "116960839791477073926905345517688215582553166220781809553879418687923296/2828975485941638278537375"
+    ],
+    [
+      "-699713319746237510006257639055679577295318888/29915348828907",
+      "-1823066381320538182409345686521456223627350844849755502397738527596/31489025810485766797"
+    ],
+    [
+      "1676249937594690223191520904906980/3",
+      "-13197227887851545094776081315870612918942498282640"
+    ],
+    [
+      "46195708925175178629082155864389572969624346490682/140575646149218075",
+      "-60288852448746768476352047366104757886856479693455323815708134618166363228/10143392958327773743838875"
+    ],
+    [
+      "1151756086233963526842758732301651195456479083/14607409555632",
+      "7247948227022184530924593404753923858524039631156001436650747208653/10744295071457412928"
+    ],
+    [
+      "-23994618790511225718721858166144456046905410874633/2630522457732265563",
+      "-74504859361706872638092393559540368154704367954831926068658935461304562151/821071804445113142384680069"
+    ],
+    [
+      "2603096272411148080127675373461759937036220585527454/82544081034454475043",
+      "20394000807217589821122202170382186237093158902362133242951700842002740653524/144326813508693792084854203921"
+    ],
+    [
+      "2695361557688673788729829514067591464284155806/155532398647107",
+      "-11400760696936979451295903922698665086233038743171853760847215047468/373292636019194039903"
+    ],
+    [
+      "-3483776475130027086072259202111405/192",
+      "44470224557447002695456592950803400243212665448055/512"
+    ],
+    [
+      "131556275380422979202297085907252042/5043",
+      "-6570878435459990766276760779528980556498850561718796/68921"
+    ],
+    [
+      "3399216228565392098828238977003648274208997587/1585493673608172",
+      "703565415181923377092646578161008574518167414403281090376677383630039/12149681357686500659368"
+    ],
+    [
+      "242070500299508213187253862960355755914662470251672/17109682928400602307",
+      "169977533055400032566902182884501826667282828089486964394963381706393671556/13620123953901986928709472353"
+    ],
+    [
+      "34464629622475424274817715554014859/71148",
+      "236011629657839705175239051580230325656120429479749891/3652264"
+    ],
+    [
+      "-87087922036015816100084548935493542190380776732/5174803056492723",
+      "-6444312440140963732843760469530406035107688210717358924453037590231648/71640541017487119247289"
+    ],
+    [
+      "39313642680079258447358353919704/3",
+      "9873260865869256499897428989565836446742683044"
+    ],
+    [
+      "318553114653222865525137159097437175282157672126659/19785871485045644268",
+      "-385565868128440458289661250513944884629631346182404672371398725805297696449/16937561835665447637766027096"
+    ],
+    [
+      "-36641532754273187603360509842353/3",
+      "93389037752930035429948039241676403184754099309"
+    ],
+    [
+      "-24096204198947511234374577437849379297452/1168173867",
+      "594499378270004220731396974145138055414927232770776004341112/7683858305837"
+    ],
+    [
+      "-147678196662131706038409082528243607894/13906227",
+      "-922623853795285230888653541844586466277827620316779517612/9980035577"
+    ],
+    [
+      "15073802165150507335757907495658/3",
+      "45008677821653788111497560275393989357301024212"
+    ],
+    [
+      "2140584646782590931018572720860483611632881009459/226948127291723568",
+      "478024692253682011838612804676327962392481288051137131262966119684557049/20806930812811013740546496"
+    ]
+  ],
+  "prime_bound": 997,
+  "prime_progress": [
+    {
+      "available_quotient_dimension": 1,
+      "finite_rank": 1,
+      "prime": 5
+    },
+    {
+      "available_quotient_dimension": 2,
+      "finite_rank": 2,
+      "prime": 11
+    },
+    {
+      "available_quotient_dimension": 2,
+      "finite_rank": 2,
+      "prime": 17
+    },
+    {
+      "available_quotient_dimension": 3,
+      "finite_rank": 3,
+      "prime": 31
+    },
+    {
+      "available_quotient_dimension": 4,
+      "finite_rank": 4,
+      "prime": 37
+    },
+    {
+      "available_quotient_dimension": 5,
+      "finite_rank": 5,
+      "prime": 41
+    },
+    {
+      "available_quotient_dimension": 7,
+      "finite_rank": 7,
+      "prime": 43
+    },
+    {
+      "available_quotient_dimension": 8,
+      "finite_rank": 8,
+      "prime": 47
+    },
+    {
+      "available_quotient_dimension": 9,
+      "finite_rank": 9,
+      "prime": 53
+    },
+    {
+      "available_quotient_dimension": 11,
+      "finite_rank": 11,
+      "prime": 59
+    },
+    {
+      "available_quotient_dimension": 11,
+      "finite_rank": 11,
+      "prime": 61
+    },
+    {
+      "available_quotient_dimension": 11,
+      "finite_rank": 11,
+      "prime": 67
+    },
+    {
+      "available_quotient_dimension": 13,
+      "finite_rank": 13,
+      "prime": 71
+    },
+    {
+      "available_quotient_dimension": 14,
+      "finite_rank": 14,
+      "prime": 73
+    },
+    {
+      "available_quotient_dimension": 15,
+      "finite_rank": 15,
+      "prime": 79
+    },
+    {
+      "available_quotient_dimension": 16,
+      "finite_rank": 16,
+      "prime": 83
+    },
+    {
+      "available_quotient_dimension": 16,
+      "finite_rank": 16,
+      "prime": 89
+    },
+    {
+      "available_quotient_dimension": 17,
+      "finite_rank": 17,
+      "prime": 97
+    },
+    {
+      "available_quotient_dimension": 18,
+      "finite_rank": 18,
+      "prime": 101
+    },
+    {
+      "available_quotient_dimension": 18,
+      "finite_rank": 18,
+      "prime": 103
+    },
+    {
+      "available_quotient_dimension": 18,
+      "finite_rank": 18,
+      "prime": 107
+    },
+    {
+      "available_quotient_dimension": 20,
+      "finite_rank": 18,
+      "prime": 109
+    },
+    {
+      "available_quotient_dimension": 21,
+      "finite_rank": 18,
+      "prime": 113
+    },
+    {
+      "available_quotient_dimension": 21,
+      "finite_rank": 18,
+      "prime": 131
+    },
+    {
+      "available_quotient_dimension": 22,
+      "finite_rank": 18,
+      "prime": 137
+    },
+    {
+      "available_quotient_dimension": 24,
+      "finite_rank": 18,
+      "prime": 139
+    },
+    {
+      "available_quotient_dimension": 25,
+      "finite_rank": 18,
+      "prime": 149
+    },
+    {
+      "available_quotient_dimension": 25,
+      "finite_rank": 18,
+      "prime": 151
+    },
+    {
+      "available_quotient_dimension": 26,
+      "finite_rank": 18,
+      "prime": 157
+    },
+    {
+      "available_quotient_dimension": 27,
+      "finite_rank": 18,
+      "prime": 163
+    },
+    {
+      "available_quotient_dimension": 27,
+      "finite_rank": 18,
+      "prime": 167
+    },
+    {
+      "available_quotient_dimension": 29,
+      "finite_rank": 18,
+      "prime": 173
+    },
+    {
+      "available_quotient_dimension": 29,
+      "finite_rank": 18,
+      "prime": 179
+    },
+    {
+      "available_quotient_dimension": 29,
+      "finite_rank": 18,
+      "prime": 181
+    },
+    {
+      "available_quotient_dimension": 31,
+      "finite_rank": 18,
+      "prime": 191
+    },
+    {
+      "available_quotient_dimension": 31,
+      "finite_rank": 18,
+      "prime": 193
+    },
+    {
+      "available_quotient_dimension": 32,
+      "finite_rank": 18,
+      "prime": 197
+    },
+    {
+      "available_quotient_dimension": 32,
+      "finite_rank": 18,
+      "prime": 199
+    },
+    {
+      "available_quotient_dimension": 33,
+      "finite_rank": 18,
+      "prime": 211
+    },
+    {
+      "available_quotient_dimension": 34,
+      "finite_rank": 18,
+      "prime": 223
+    },
+    {
+      "available_quotient_dimension": 35,
+      "finite_rank": 18,
+      "prime": 227
+    },
+    {
+      "available_quotient_dimension": 36,
+      "finite_rank": 18,
+      "prime": 229
+    },
+    {
+      "available_quotient_dimension": 36,
+      "finite_rank": 18,
+      "prime": 233
+    },
+    {
+      "available_quotient_dimension": 37,
+      "finite_rank": 18,
+      "prime": 239
+    },
+    {
+      "available_quotient_dimension": 39,
+      "finite_rank": 18,
+      "prime": 241
+    },
+    {
+      "available_quotient_dimension": 40,
+      "finite_rank": 18,
+      "prime": 251
+    },
+    {
+      "available_quotient_dimension": 40,
+      "finite_rank": 18,
+      "prime": 257
+    },
+    {
+      "available_quotient_dimension": 42,
+      "finite_rank": 18,
+      "prime": 263
+    },
+    {
+      "available_quotient_dimension": 43,
+      "finite_rank": 18,
+      "prime": 269
+    },
+    {
+      "available_quotient_dimension": 43,
+      "finite_rank": 18,
+      "prime": 271
+    },
+    {
+      "available_quotient_dimension": 44,
+      "finite_rank": 18,
+      "prime": 277
+    },
+    {
+      "available_quotient_dimension": 45,
+      "finite_rank": 18,
+      "prime": 281
+    },
+    {
+      "available_quotient_dimension": 45,
+      "finite_rank": 18,
+      "prime": 283
+    },
+    {
+      "available_quotient_dimension": 46,
+      "finite_rank": 18,
+      "prime": 293
+    },
+    {
+      "available_quotient_dimension": 47,
+      "finite_rank": 18,
+      "prime": 307
+    },
+    {
+      "available_quotient_dimension": 49,
+      "finite_rank": 18,
+      "prime": 311
+    },
+    {
+      "available_quotient_dimension": 50,
+      "finite_rank": 18,
+      "prime": 313
+    },
+    {
+      "available_quotient_dimension": 52,
+      "finite_rank": 18,
+      "prime": 317
+    },
+    {
+      "available_quotient_dimension": 52,
+      "finite_rank": 18,
+      "prime": 331
+    },
+    {
+      "available_quotient_dimension": 52,
+      "finite_rank": 18,
+      "prime": 337
+    },
+    {
+      "available_quotient_dimension": 53,
+      "finite_rank": 18,
+      "prime": 347
+    },
+    {
+      "available_quotient_dimension": 54,
+      "finite_rank": 18,
+      "prime": 349
+    },
+    {
+      "available_quotient_dimension": 55,
+      "finite_rank": 18,
+      "prime": 353
+    },
+    {
+      "available_quotient_dimension": 55,
+      "finite_rank": 18,
+      "prime": 359
+    },
+    {
+      "available_quotient_dimension": 57,
+      "finite_rank": 18,
+      "prime": 367
+    },
+    {
+      "available_quotient_dimension": 58,
+      "finite_rank": 18,
+      "prime": 373
+    },
+    {
+      "available_quotient_dimension": 59,
+      "finite_rank": 18,
+      "prime": 379
+    },
+    {
+      "available_quotient_dimension": 60,
+      "finite_rank": 18,
+      "prime": 383
+    },
+    {
+      "available_quotient_dimension": 60,
+      "finite_rank": 18,
+      "prime": 389
+    },
+    {
+      "available_quotient_dimension": 61,
+      "finite_rank": 18,
+      "prime": 397
+    },
+    {
+      "available_quotient_dimension": 63,
+      "finite_rank": 18,
+      "prime": 401
+    },
+    {
+      "available_quotient_dimension": 63,
+      "finite_rank": 18,
+      "prime": 409
+    },
+    {
+      "available_quotient_dimension": 63,
+      "finite_rank": 18,
+      "prime": 419
+    },
+    {
+      "available_quotient_dimension": 63,
+      "finite_rank": 18,
+      "prime": 421
+    },
+    {
+      "available_quotient_dimension": 64,
+      "finite_rank": 18,
+      "prime": 431
+    },
+    {
+      "available_quotient_dimension": 65,
+      "finite_rank": 18,
+      "prime": 433
+    },
+    {
+      "available_quotient_dimension": 67,
+      "finite_rank": 18,
+      "prime": 439
+    },
+    {
+      "available_quotient_dimension": 68,
+      "finite_rank": 18,
+      "prime": 443
+    },
+    {
+      "available_quotient_dimension": 68,
+      "finite_rank": 18,
+      "prime": 449
+    },
+    {
+      "available_quotient_dimension": 68,
+      "finite_rank": 18,
+      "prime": 457
+    },
+    {
+      "available_quotient_dimension": 69,
+      "finite_rank": 18,
+      "prime": 461
+    },
+    {
+      "available_quotient_dimension": 69,
+      "finite_rank": 18,
+      "prime": 463
+    },
+    {
+      "available_quotient_dimension": 70,
+      "finite_rank": 18,
+      "prime": 467
+    },
+    {
+      "available_quotient_dimension": 72,
+      "finite_rank": 18,
+      "prime": 479
+    },
+    {
+      "available_quotient_dimension": 73,
+      "finite_rank": 18,
+      "prime": 487
+    },
+    {
+      "available_quotient_dimension": 74,
+      "finite_rank": 18,
+      "prime": 491
+    },
+    {
+      "available_quotient_dimension": 74,
+      "finite_rank": 18,
+      "prime": 499
+    },
+    {
+      "available_quotient_dimension": 75,
+      "finite_rank": 18,
+      "prime": 503
+    },
+    {
+      "available_quotient_dimension": 76,
+      "finite_rank": 18,
+      "prime": 509
+    },
+    {
+      "available_quotient_dimension": 76,
+      "finite_rank": 18,
+      "prime": 521
+    },
+    {
+      "available_quotient_dimension": 77,
+      "finite_rank": 18,
+      "prime": 523
+    },
+    {
+      "available_quotient_dimension": 78,
+      "finite_rank": 18,
+      "prime": 541
+    },
+    {
+      "available_quotient_dimension": 80,
+      "finite_rank": 18,
+      "prime": 547
+    },
+    {
+      "available_quotient_dimension": 81,
+      "finite_rank": 18,
+      "prime": 557
+    },
+    {
+      "available_quotient_dimension": 82,
+      "finite_rank": 18,
+      "prime": 563
+    },
+    {
+      "available_quotient_dimension": 82,
+      "finite_rank": 18,
+      "prime": 569
+    },
+    {
+      "available_quotient_dimension": 83,
+      "finite_rank": 18,
+      "prime": 571
+    },
+    {
+      "available_quotient_dimension": 85,
+      "finite_rank": 18,
+      "prime": 577
+    },
+    {
+      "available_quotient_dimension": 86,
+      "finite_rank": 18,
+      "prime": 587
+    },
+    {
+      "available_quotient_dimension": 87,
+      "finite_rank": 18,
+      "prime": 593
+    },
+    {
+      "available_quotient_dimension": 87,
+      "finite_rank": 18,
+      "prime": 599
+    },
+    {
+      "available_quotient_dimension": 88,
+      "finite_rank": 18,
+      "prime": 601
+    },
+    {
+      "available_quotient_dimension": 89,
+      "finite_rank": 18,
+      "prime": 607
+    },
+    {
+      "available_quotient_dimension": 91,
+      "finite_rank": 18,
+      "prime": 613
+    },
+    {
+      "available_quotient_dimension": 92,
+      "finite_rank": 18,
+      "prime": 617
+    },
+    {
+      "available_quotient_dimension": 93,
+      "finite_rank": 18,
+      "prime": 619
+    },
+    {
+      "available_quotient_dimension": 94,
+      "finite_rank": 18,
+      "prime": 631
+    },
+    {
+      "available_quotient_dimension": 94,
+      "finite_rank": 18,
+      "prime": 641
+    },
+    {
+      "available_quotient_dimension": 95,
+      "finite_rank": 18,
+      "prime": 643
+    },
+    {
+      "available_quotient_dimension": 95,
+      "finite_rank": 18,
+      "prime": 647
+    },
+    {
+      "available_quotient_dimension": 96,
+      "finite_rank": 18,
+      "prime": 653
+    },
+    {
+      "available_quotient_dimension": 96,
+      "finite_rank": 18,
+      "prime": 659
+    },
+    {
+      "available_quotient_dimension": 97,
+      "finite_rank": 18,
+      "prime": 661
+    },
+    {
+      "available_quotient_dimension": 97,
+      "finite_rank": 18,
+      "prime": 673
+    },
+    {
+      "available_quotient_dimension": 97,
+      "finite_rank": 18,
+      "prime": 677
+    },
+    {
+      "available_quotient_dimension": 98,
+      "finite_rank": 18,
+      "prime": 683
+    },
+    {
+      "available_quotient_dimension": 99,
+      "finite_rank": 18,
+      "prime": 691
+    },
+    {
+      "available_quotient_dimension": 99,
+      "finite_rank": 18,
+      "prime": 701
+    },
+    {
+      "available_quotient_dimension": 100,
+      "finite_rank": 18,
+      "prime": 709
+    },
+    {
+      "available_quotient_dimension": 100,
+      "finite_rank": 18,
+      "prime": 719
+    },
+    {
+      "available_quotient_dimension": 101,
+      "finite_rank": 18,
+      "prime": 727
+    },
+    {
+      "available_quotient_dimension": 101,
+      "finite_rank": 18,
+      "prime": 733
+    },
+    {
+      "available_quotient_dimension": 102,
+      "finite_rank": 18,
+      "prime": 739
+    },
+    {
+      "available_quotient_dimension": 103,
+      "finite_rank": 18,
+      "prime": 743
+    },
+    {
+      "available_quotient_dimension": 103,
+      "finite_rank": 18,
+      "prime": 751
+    },
+    {
+      "available_quotient_dimension": 104,
+      "finite_rank": 18,
+      "prime": 757
+    },
+    {
+      "available_quotient_dimension": 104,
+      "finite_rank": 18,
+      "prime": 761
+    },
+    {
+      "available_quotient_dimension": 105,
+      "finite_rank": 18,
+      "prime": 769
+    },
+    {
+      "available_quotient_dimension": 107,
+      "finite_rank": 18,
+      "prime": 773
+    },
+    {
+      "available_quotient_dimension": 108,
+      "finite_rank": 18,
+      "prime": 787
+    },
+    {
+      "available_quotient_dimension": 108,
+      "finite_rank": 18,
+      "prime": 797
+    },
+    {
+      "available_quotient_dimension": 108,
+      "finite_rank": 18,
+      "prime": 809
+    },
+    {
+      "available_quotient_dimension": 109,
+      "finite_rank": 18,
+      "prime": 811
+    },
+    {
+      "available_quotient_dimension": 111,
+      "finite_rank": 18,
+      "prime": 821
+    },
+    {
+      "available_quotient_dimension": 112,
+      "finite_rank": 18,
+      "prime": 823
+    },
+    {
+      "available_quotient_dimension": 112,
+      "finite_rank": 18,
+      "prime": 827
+    },
+    {
+      "available_quotient_dimension": 113,
+      "finite_rank": 18,
+      "prime": 829
+    },
+    {
+      "available_quotient_dimension": 113,
+      "finite_rank": 18,
+      "prime": 839
+    },
+    {
+      "available_quotient_dimension": 114,
+      "finite_rank": 18,
+      "prime": 853
+    },
+    {
+      "available_quotient_dimension": 114,
+      "finite_rank": 18,
+      "prime": 857
+    },
+    {
+      "available_quotient_dimension": 115,
+      "finite_rank": 18,
+      "prime": 859
+    },
+    {
+      "available_quotient_dimension": 117,
+      "finite_rank": 18,
+      "prime": 863
+    },
+    {
+      "available_quotient_dimension": 118,
+      "finite_rank": 18,
+      "prime": 877
+    },
+    {
+      "available_quotient_dimension": 120,
+      "finite_rank": 18,
+      "prime": 881
+    },
+    {
+      "available_quotient_dimension": 121,
+      "finite_rank": 18,
+      "prime": 883
+    },
+    {
+      "available_quotient_dimension": 121,
+      "finite_rank": 18,
+      "prime": 887
+    },
+    {
+      "available_quotient_dimension": 123,
+      "finite_rank": 18,
+      "prime": 907
+    },
+    {
+      "available_quotient_dimension": 123,
+      "finite_rank": 18,
+      "prime": 911
+    },
+    {
+      "available_quotient_dimension": 123,
+      "finite_rank": 18,
+      "prime": 919
+    },
+    {
+      "available_quotient_dimension": 124,
+      "finite_rank": 18,
+      "prime": 929
+    },
+    {
+      "available_quotient_dimension": 124,
+      "finite_rank": 18,
+      "prime": 937
+    },
+    {
+      "available_quotient_dimension": 124,
+      "finite_rank": 18,
+      "prime": 941
+    },
+    {
+      "available_quotient_dimension": 125,
+      "finite_rank": 18,
+      "prime": 947
+    },
+    {
+      "available_quotient_dimension": 127,
+      "finite_rank": 18,
+      "prime": 953
+    },
+    {
+      "available_quotient_dimension": 129,
+      "finite_rank": 18,
+      "prime": 967
+    },
+    {
+      "available_quotient_dimension": 129,
+      "finite_rank": 18,
+      "prime": 971
+    },
+    {
+      "available_quotient_dimension": 129,
+      "finite_rank": 18,
+      "prime": 977
+    },
+    {
+      "available_quotient_dimension": 130,
+      "finite_rank": 18,
+      "prime": 983
+    },
+    {
+      "available_quotient_dimension": 130,
+      "finite_rank": 18,
+      "prime": 991
+    },
+    {
+      "available_quotient_dimension": 131,
+      "finite_rank": 18,
+      "prime": 997
+    }
+  ],
+  "rank_certificate": {
+    "argument": "Every integral relation is divisible by 2; E(Q)[2]=0 permits infinite descent. Hence all listed points are independent.",
+    "no_rational_2_torsion_prime": 17,
+    "rank_lower_bound": 18,
+    "signatures": [
+      {
+        "doubled_subgroup_order": 5,
+        "group_order": 10,
+        "prime": 5,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 9,
+        "group_order": 18,
+        "prime": 11,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 21,
+        "group_order": 42,
+        "prime": 31,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 25,
+        "group_order": 50,
+        "prime": 37,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 27,
+        "group_order": 54,
+        "prime": 41,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 14,
+        "group_order": 56,
+        "prime": 43,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 30,
+        "group_order": 60,
+        "prime": 47,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 31,
+        "group_order": 62,
+        "prime": 53,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 18,
+        "group_order": 72,
+        "prime": 59,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 21,
+        "group_order": 84,
+        "prime": 71,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 45,
+        "group_order": 90,
+        "prime": 73,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 48,
+        "group_order": 96,
+        "prime": 79,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 48,
+        "group_order": 96,
+        "prime": 83,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 57,
+        "group_order": 114,
+        "prime": 97,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 60,
+        "group_order": 120,
+        "prime": 101,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  "rank_lower_bound": 18,
+  "schema": "elliptic-curves.recorded-point-mod2-rank.v3",
+  "signatures": [
+    {
+      "doubled_subgroup_order": 5,
+      "group_order": 10,
+      "prime": 5,
+      "quotient_dimension": 1,
+      "rows": [
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "doubled_subgroup_order": 9,
+      "group_order": 18,
+      "prime": 11,
+      "quotient_dimension": 1,
+      "rows": [
+        [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "doubled_subgroup_order": 21,
+      "group_order": 42,
+      "prime": 31,
+      "quotient_dimension": 1,
+      "rows": [
+        [
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "doubled_subgroup_order": 25,
+      "group_order": 50,
+      "prime": 37,
+      "quotient_dimension": 1,
+      "rows": [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "doubled_subgroup_order": 27,
+      "group_order": 54,
+      "prime": 41,
+      "quotient_dimension": 1,
+      "rows": [
+        [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "doubled_subgroup_order": 14,
+      "group_order": 56,
+      "prime": 43,
+      "quotient_dimension": 2,
+      "rows": [
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "doubled_subgroup_order": 30,
+      "group_order": 60,
+      "prime": 47,
+      "quotient_dimension": 1,
+      "rows": [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "doubled_subgroup_order": 31,
+      "group_order": 62,
+      "prime": 53,
+      "quotient_dimension": 1,
+      "rows": [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "doubled_subgroup_order": 18,
+      "group_order": 72,
+      "prime": 59,
+      "quotient_dimension": 2,
+      "rows": [
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "doubled_subgroup_order": 21,
+      "group_order": 84,
+      "prime": 71,
+      "quotient_dimension": 2,
+      "rows": [
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "doubled_subgroup_order": 45,
+      "group_order": 90,
+      "prime": 73,
+      "quotient_dimension": 1,
+      "rows": [
+        [
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "doubled_subgroup_order": 48,
+      "group_order": 96,
+      "prime": 79,
+      "quotient_dimension": 1,
+      "rows": [
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "doubled_subgroup_order": 48,
+      "group_order": 96,
+      "prime": 83,
+      "quotient_dimension": 1,
+      "rows": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "doubled_subgroup_order": 57,
+      "group_order": 114,
+      "prime": 97,
+      "quotient_dimension": 1,
+      "rows": [
+        [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "doubled_subgroup_order": 60,
+      "group_order": 120,
+      "prime": 101,
+      "quotient_dimension": 1,
+      "rows": [
+        [
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    }
+  ],
+  "sources": {
+    "elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py": "5f63d2a929a1b10c3413189b3d7e7ac6be0216dfd80a0da1cc8bc52d934af93f",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9",
+    "elliptic-curves/cas/elliptic_candidate_record.py": "5b9f6f843d48e705253404a5583ef53966c72c7f229c68ef17c6b848f5e94af3",
+    "elliptic-curves/cas/memory_rank_certificate.py": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6",
+    "elliptic-curves/cas/mod2_reduction_independence.py": "c5963952d1a9089416479671b788b6437dbba26591d796646022f4e9dddd0c70",
+    "elliptic-curves/cas/research_runtime/arithmetic.py": "f304317492824cf149c88b5814e68cdd0bffb0542a3d8db7bb4d9f3ec988802b",
+    "elliptic-curves/cas/research_runtime/finite_reduction.py": "467609d4a1003127a9dcfb5ff3cd911d3748f5c5c5ff68a43f09db0de9b69992",
+    "elliptic-curves/cas/research_runtime/memory_store.py": "0ce81817fc94949864b2f653e9ece207d666d61fbdabeb56f52e044bb83dd873",
+    "elliptic-curves/cas/research_runtime/store.py": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965"
+  },
+  "status": "COMPLETE_DECLARED_FINITE_AUDIT"
+}

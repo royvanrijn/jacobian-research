@@ -56,3 +56,7 @@ The numerical representatives are not certified optimal or a complete coset
 cover. A bounded miss proves no point absence, rank upper bound or saturation.
 Any successful lower bound still needs separate inventory and portable-evidence
 promotion; catalogue-unmatched does not mean universally novel.
+
+## Portable replay completion
+
+All22 stages pass in the [standalone supplement replay](../../artifacts/generated-results/elliptic-curves/compact192_followup_supplement_portable_replay_v2.json), covering five exact histories, ten point-cloud proofs, rational geometry, the follow-up summary and five small-prime proof checks. The [7005716-byte archive](../../artifacts/generated-results/elliptic-curves/compact192_followup_supplement_evidence_v2.zip) needs no base archive. Its frozen notes precede this completion update. Version one omitted a command-invoked cloud checker; that failed package and replay are preserved. Version two includes the checker and all recorded cloud-proof sources, with unchanged arithmetic inputs.

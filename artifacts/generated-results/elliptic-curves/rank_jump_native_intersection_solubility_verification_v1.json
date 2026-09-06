@@ -1,0 +1,37 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_pair_collapse_locus_inputs_v1.json": "0b9dc66df1b0b49bd17a6e05b1f5ee89d5d6bc196ad6516ef5e467557b2882ff",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_pair_collapse_locus_v1.json": "2bfb4ebde9aa214f72bc38c8f6d7b93d3e2ef68cca851c47686efab1fff68d32",
+    "artifacts/generated-results/elliptic-curves/rank_jump_norm_six_carrier_solubility_inputs_v1.json": "ceb6dc0787d4cc1e1fb4ed5bc73686ac83cd3d50df3be71fdb91a66f4440b39e",
+    "artifacts/generated-results/elliptic-curves/rank_jump_norm_six_carrier_solubility_v1.json": "de1c343dbb53d517ae2c8001d702aab873e8b600a6e86f603547771a26603b1f",
+    "artifacts/generated-results/elliptic-curves/rank_jump_paired_character_moments_v1.json": "74f57db580962ae869329dd9a27a5b4abe3278b4c48da45a086c468752e1204e",
+    "artifacts/generated-results/elliptic-curves/rank_jump_paired_character_moments_verification_v1.json": "fab5df1d9353a2166699a2ef93bacf4fc8739daa638eeb312d8086b9a7237d12",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_native_intersection_solubility.py": "4a1cbcb0223943a6eedf071e723f3b5e6311774c273bebefb89f46eb7ac4d98a"
+  },
+  "boundary": "Independent rational group arithmetic and exact LDL enumeration; no PARI short-vector enumeration or numerical heights in this verifier.",
+  "coset_checks": [
+    {
+      "exact_enumeration_nodes": 164,
+      "has_norm_six": true,
+      "id": "FG",
+      "signed_vectors": 2
+    },
+    {
+      "exact_enumeration_nodes": 204,
+      "has_norm_six": false,
+      "id": "FD",
+      "signed_vectors": 0
+    },
+    {
+      "exact_enumeration_nodes": 208,
+      "has_norm_six": false,
+      "id": "AD",
+      "signed_vectors": 0
+    }
+  ],
+  "rational_group_relation_verified": true,
+  "schema": "rank-jump.native-intersection-solubility-verification.v1",
+  "status": "PASS",
+  "unique_open_intersection_parameter": "-4112/1937"
+}

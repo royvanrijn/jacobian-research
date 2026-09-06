@@ -1,0 +1,161 @@
+{
+  "claim_boundary": "Twelve fixed actual-carrier words produce ten certified19-point images on seven distinct parameters, one already known small anchor with supplied-subgroup lower bound18 modulo2,3,5, and one declared height-censored image. No new image meets the360-bit recorded-model gate. The recorded rank2 carrier generators plus rational2-torsion are2,3,5-saturated. Larger-prime saturation, full integral basis, other small carrier images, exact original-fibre ranks and novelty remain open. No original-family point search or automatic expansion occurs.",
+  "distinct_rank19_parameters": 7,
+  "generator_subgroup_saturated_at": [
+    2,
+    3,
+    5
+  ],
+  "new_images_passing_height_gate": 0,
+  "parameter_height_censored": 1,
+  "rank19_images": 10,
+  "rows": [
+    {
+      "model_coefficient_bits": 1680,
+      "parameter": "-2481504819204850946220476636774555771300/88971147339890118128800143484028857389",
+      "passes_height_gate": false,
+      "rank_lower_bound": 19,
+      "word": [
+        -1,
+        0
+      ]
+    },
+    {
+      "model_coefficient_bits": 640,
+      "parameter": "34985659178172/240960010855",
+      "passes_height_gate": false,
+      "rank_lower_bound": 19,
+      "word": [
+        1,
+        0
+      ]
+    },
+    {
+      "model_coefficient_bits": 2398,
+      "parameter": "4287658969192065988260570996342199947743879879523295306398/31271156307301431793323465350870327211650884065591447337",
+      "passes_height_gate": false,
+      "rank_lower_bound": 19,
+      "word": [
+        0,
+        -1
+      ]
+    },
+    {
+      "model_coefficient_bits": 640,
+      "parameter": "34985659178172/240960010855",
+      "passes_height_gate": false,
+      "rank_lower_bound": 19,
+      "word": [
+        0,
+        1
+      ]
+    },
+    {
+      "model_coefficient_bits": 3058,
+      "parameter": "-190211263300053017266165302029549285988815715689483126918515435365554893700/223023674299990549145599314350781983772987073618540855420708099041144279",
+      "passes_height_gate": false,
+      "rank_lower_bound": 19,
+      "word": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "model_coefficient_bits": 3054,
+      "parameter": "-161137595150049723863665950274409919340465990742186180465342075711292823826/138263936578693235395279475392758935664126921405249026299622540637632061",
+      "passes_height_gate": false,
+      "rank_lower_bound": 19,
+      "word": [
+        -1,
+        1
+      ]
+    },
+    {
+      "model_coefficient_bits": 3768,
+      "parameter": "7183854176532905204048564165144614975517186913740626707868385927027342866912089019455261084/1894210409918939632218797809830911246537084182261100256124645675413997203092096256875606045",
+      "passes_height_gate": false,
+      "rank_lower_bound": 19,
+      "word": [
+        1,
+        -1
+      ]
+    },
+    {
+      "model_coefficient_bits": 256,
+      "parameter": "774/149",
+      "passes_height_gate": true,
+      "rank_lower_bound": 18,
+      "word": [
+        1,
+        1
+      ]
+    },
+    {
+      "model_coefficient_bits": 5044,
+      "parameter": "8434742036726840120376620555908426187651936015413637330229324866038803199514387561773119114782144351291250111672440790592118/126934993465445103032312633664774725005646191714691943103562396218686753125725474013542185429061443874053022353637963067417",
+      "passes_height_gate": false,
+      "rank_lower_bound": 19,
+      "word": [
+        -2,
+        0
+      ]
+    },
+    {
+      "model_coefficient_bits": 3054,
+      "parameter": "-161137595150049723863665950274409919340465990742186180465342075711292823826/138263936578693235395279475392758935664126921405249026299622540637632061",
+      "passes_height_gate": false,
+      "rank_lower_bound": 19,
+      "word": [
+        2,
+        0
+      ]
+    },
+    {
+      "model_coefficient_bits": 3768,
+      "parameter": "7183854176532905204048564165144614975517186913740626707868385927027342866912089019455261084/1894210409918939632218797809830911246537084182261100256124645675413997203092096256875606045",
+      "passes_height_gate": false,
+      "rank_lower_bound": 19,
+      "word": [
+        0,
+        2
+      ]
+    }
+  ],
+  "schema": "elliptic-curves.soluble-pair-carrier-gate.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_six_r17_atlas_v1.json": "2f28c081c874adfaf738c1119e8f4e6e7ce70ea74277cd8cdb370a02bca34c5d",
+    "artifacts/generated-results/elliptic-curves/rank_jump_global_carrier_verification_v1.json": "998874651dbb92e2baf82fda93d582b651dc55c7abd0ba0dd1c28e8bd252b5ca",
+    "artifacts/generated-results/elliptic-curves/rank_jump_global_pair_solubility_v1.json": "00c7eb1bddddb16d811c5f7b27533ff934b8f5600b777c7019ec0ee81f28cf5f",
+    "artifacts/generated-results/elliptic-curves/rank_jump_local_solubility_block_inputs_v1.json": "492f75ac97be9e952a943fde4f2b3834eb6ea809fcb7110ff7373e03609b2640",
+    "artifacts/generated-results/elliptic-curves/rank_jump_solubility_first_inputs_v1.json": "46c6f8a5e3331121f77f0c914b118ed69e7dd965f48979921d00067452e23ed5",
+    "artifacts/generated-results/elliptic-curves/soluble_pair_carrier_anchor_modl_v1.json": "7b1eb00b825bf4e28bfdb3a25073cab689bb78fb2737bf8b099646533c0acef2",
+    "artifacts/generated-results/elliptic-curves/soluble_pair_carrier_height_v1.json": "be730c94d12a7fd89420154e04f6a61e17e93b5c70596d351caf58c3cebcb1cb",
+    "artifacts/generated-results/elliptic-curves/soluble_pair_generator_saturation_v1.json": "6f538d2bc514f27b2ae3bb714a5570e40f19f3978dec220093648dcf68adb9d5",
+    "artifacts/local/elliptic-curves/soluble-pair-carrier-height-v1/anchor-modl/build.log": "447107a26ccbee8ddf1d5688d5bc07e179bc585641b87a251300dc5856355732",
+    "artifacts/local/elliptic-curves/soluble-pair-carrier-height-v1/anchor-modl/build.supervisor.json": "d93953b4b6fd13e373632c52302d99908b2d75a9c7eb248c6010d255fe15ed50",
+    "artifacts/local/elliptic-curves/soluble-pair-carrier-height-v1/anchor-modl/check.log": "4d8cfdc74ee569024534b7d65cae76c4d47c5201d61e4637c9b0d86255ffbb4b",
+    "artifacts/local/elliptic-curves/soluble-pair-carrier-height-v1/anchor-modl/check.supervisor.json": "e4bd5f4cd82355c573ea9bdd9d92f188af9b244da95da226fb023696a7bccbb3",
+    "artifacts/local/elliptic-curves/soluble-pair-carrier-height-v1/build.log": "3b7280d891a7510a498f9d311249fc0527e13d8214a47a7d6d4718f6edd89685",
+    "artifacts/local/elliptic-curves/soluble-pair-carrier-height-v1/build.supervisor.json": "a2c7d5822aa740eaedb39f58e35bfa37cb7c9114296ef54b2e0a5c7afb34b8aa",
+    "artifacts/local/elliptic-curves/soluble-pair-carrier-height-v1/check.log": "3b7280d891a7510a498f9d311249fc0527e13d8214a47a7d6d4718f6edd89685",
+    "artifacts/local/elliptic-curves/soluble-pair-carrier-height-v1/check.supervisor.json": "c79bbc55fcab200c4af0590ed2a1800889dc2553d196086c243a9ec8ac3aa370",
+    "artifacts/local/elliptic-curves/soluble-pair-generator-saturation-v1/build.log": "116b94fa991f86dad2dd28672b38bce7a73c1fa5e9639f8fec162c63da1afd63",
+    "artifacts/local/elliptic-curves/soluble-pair-generator-saturation-v1/build.supervisor.json": "59accd9485c6c562cb31c264a2d028e39d22d25a3909d80d277858c327060de0",
+    "artifacts/local/elliptic-curves/soluble-pair-generator-saturation-v1/check.log": "116b94fa991f86dad2dd28672b38bce7a73c1fa5e9639f8fec162c63da1afd63",
+    "artifacts/local/elliptic-curves/soluble-pair-generator-saturation-v1/check.supervisor.json": "512e50a640c270adc8054cb0043157f9477e662e7baeb4d5b15f94c1833c8d28",
+    "elkies-k3/scripts/prepare_r17_norm12_11952_alternate_v4_rank_one_bases.sage": "3cbd1a75b1dfcd061131c5dfe91e955cfb4a482da0c8febbcdf9e7d578e91ff3",
+    "elliptic-curves/cas/audit_compact_r17_ambiguous.py": "2fcef5457ab8efd67fa6dd473949823653901b533c3862d3ba4d83fd4cd2fb01",
+    "elliptic-curves/cas/audit_retained_cloud_modl.py": "9922a557d96f692f01d8a7c834826212928b515eaf66b13507c50cd9a59d3206",
+    "elliptic-curves/cas/audit_soluble_pair_carrier_height.sage": "8cd31cb504856ba4340fc29fc282c464208f1de7f1973f81f10e6163fb84445b",
+    "elliptic-curves/cas/audit_soluble_pair_generator_saturation.sage": "653360c836d9a8bf80cb7acfba5d8a58c2220356e446334d8747690eb0e56008",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9",
+    "elliptic-curves/cas/compact_atlas_specialization.py": "ea68110968e86cb0502a74a995c26054ff8e4a0da90c49bb2bdf0b753a759b14",
+    "elliptic-curves/cas/elliptic_candidate_record.py": "5b9f6f843d48e705253404a5583ef53966c72c7f229c68ef17c6b848f5e94af3",
+    "elliptic-curves/cas/memory_rank_certificate.py": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6",
+    "elliptic-curves/cas/mod2_reduction_independence.py": "c5963952d1a9089416479671b788b6437dbba26591d796646022f4e9dddd0c70",
+    "elliptic-curves/cas/mod_l_reduction_independence.py": "93cdef9eb9053987d0aa85abff2d6e1d487caa827b43a7c00d0b8a43395063f0",
+    "elliptic-curves/cas/report_soluble_pair_carrier_gate.py": "f3a4b0b8d4b0c992a8ade64884c7df2b12d8d81307cf0f7f15bcd5e3f852b414",
+    "elliptic-curves/cas/research_runtime/search_state.py": "598a2177fa1cdd5b45c801c09adcc4ac51bd2a87152b7982ea70e78585f8671c"
+  },
+  "status": "PASS"
+}

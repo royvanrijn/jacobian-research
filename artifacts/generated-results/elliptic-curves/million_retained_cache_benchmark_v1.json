@@ -1,0 +1,35 @@
+{
+  "claim_boundary": "One full-size1048576-row repeated performance fixture and one cached invocation per score band, with exact comparison of every output row to its existing scalar-score certificate. These are duplicates for software cost testing, not new rational candidates, a parameter population, a rank experiment or a throughput guarantee on unseen inputs. No parameter scan or point search follows automatically.",
+  "cost_gate_passed": true,
+  "input_sha256": "77b766a23bcacf2d7cc3dace4d8871aee165eaf8387f30d7a06512344ea68e0a",
+  "protocol_sha256": "e10922e0ccd28bcd99b25d9f24624b77c129feffbcda453738981fa91bdd1196",
+  "rows": [
+    {
+      "band": "extended",
+      "cost_gate_passed": true,
+      "primes": 2948,
+      "raw_sha256": "ded36b3e96d359039e4d8eb9137de5e0a1f60c98f25eb70066f768c6df79e80a",
+      "rows": 1048576,
+      "wall_seconds": 11.408391237957403
+    },
+    {
+      "band": "short",
+      "cost_gate_passed": true,
+      "primes": 562,
+      "raw_sha256": "4633ab776900db5da81cefb34ef6919393c1dbc19c60066c3b8414dbbf336f7f",
+      "rows": 1048576,
+      "wall_seconds": 2.2298786499886774
+    }
+  ],
+  "schema": "elliptic-curves.million-retained-cache-benchmark-result.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/retained_extended_cache_benchmark_v1.json": "f4ac6b17907cc5166b763a33732934b360b67cb29c511ae7aff8e291e2d9197c",
+    "artifacts/generated-results/elliptic-curves/retained_short_cache_benchmark_v1.json": "b9a4eda78bbb6bcef004dc2ecd49d7a4bd1c23b1bf9bd1af1fd52658b296a1e2",
+    "artifacts/local/elliptic-curves/retained-extended-cache-benchmark-v1/protocol.json": "2593fec7fcefbfa7f571c27a04aa9ff9b7561b18af1e5d10b689dd6cef2d4267",
+    "artifacts/local/elliptic-curves/retained-extended-cache-benchmark-v1/scorer": "542336820fc33ad2612e6ec81efad3e39ee4689aa7233139054c0a5158654048",
+    "artifacts/local/elliptic-curves/retained-short-cache-benchmark-v1/protocol.json": "8d822e049f1c7b6086cd4529f91a7a69afb757253716547e3776ef0b39492a50",
+    "artifacts/local/elliptic-curves/retained-short-cache-benchmark-v1/scorer": "9c2da61fc2decf414f67937e2e43c376146fde2730e7b633d2fc184377c204fb",
+    "elliptic-curves/cas/benchmark_million_retained_cache.py": "51582d3175140ab8b10758bcaab601cb0bf27bf47a9caf18653018b86e7e05b5"
+  },
+  "status": "PASS"
+}

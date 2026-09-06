@@ -1,0 +1,125 @@
+{
+  "archive_sha256": "e8214cbe1452cbd81e46f6a713922fac3ab7852f19b6c1dd5d4238a2b2b537e5",
+  "claim_boundary": "Standalone independent replay of all2220 rational j-incidence comparisons for185 equations across twelve family presentations, the nine-cohort aggregate and exact Q(t) model/unimodular17-section transport for all25 duplicated presentations. No point discovery or rank-proof replay; historical rank metadata only must not exceed current lower bounds. No unlisted family, nongeneric point, higher rank or universal novelty is excluded.",
+  "curves_checked": 185,
+  "incidence_pairs_checked": 2220,
+  "ledger": {
+    "rows": [
+      {
+        "name": "all2220-incidences",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/inventory185-incidence-portable-v1/workspace/elliptic-curves/cas/replay_inventory185_all_incidence.py",
+            "--output",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/inventory185-incidence-portable-v1/workspace/artifacts/local/elliptic-curves/all185_incidence_replay_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/inventory185-incidence-portable-v1/verification/all2220-incidences.log",
+          "log_sha256": "025c0b3acf580c897cf8533308fb5290687d963d86876a99a856325fc6b44f7f",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 32305152,
+          "pid": 1115430,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52114360",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 2.849681410996709,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "aggregate",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/inventory185-incidence-portable-v1/workspace/elliptic-curves/cas/certify_inventory185_incidence.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/inventory185-incidence-portable-v1/workspace/artifacts/generated-results/elliptic-curves/inventory185_incidence_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/inventory185-incidence-portable-v1/verification/aggregate.log",
+          "log_sha256": "7dc83bfcedfc156748d32b1d77267a882ee79a25b0cf57e1ed9b8a684ac2ea76",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21069824,
+          "pid": 1115483,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52114648",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.12665907898917794,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "generic-transport",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/inventory185-incidence-portable-v1/workspace/elliptic-curves/cas/audit_compact_published_r17_transport_v3.sage",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/inventory185-incidence-portable-v1/workspace/artifacts/generated-results/elliptic-curves/compact_published_r17_generic_transport_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/inventory185-incidence-portable-v1/verification/generic-transport.log",
+          "log_sha256": "07c8f37e4f243f9fac49f9721464c77ad68c3a51af020bc8bfaf13e8a4505981",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 230481920,
+          "pid": 1115486,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52114663",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.6954324929974973,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      }
+    ],
+    "status": "PASS"
+  },
+  "logical_stages": 3,
+  "schema": "elliptic-curves.inventory185-incidence-portable-replay.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/inventory185_incidence_evidence_v1.json": "98638222b0010a5126fc2be6ab9304ea8e89166a4d14a9b6f12fff126a16b40e",
+    "artifacts/local/elliptic-curves/inventory185-incidence-portable-v1/verification/ledger.json": "3b173c12de03bd5d7b5f66f9330c76ef85a6ea7c7df3734137905d522273b5c6",
+    "artifacts/local/elliptic-curves/inventory185-incidence-portable-v1/verification/protocol.json": "fb7603f93e08950d4226b3f64178eb3bbd300cba2e3f41f987f5c8e22bdfb699",
+    "elliptic-curves/cas/verify_inventory185_incidence.py": "96925ab75981efac144f7f0154d0cf922ca043980150ac4c3a4b89b77e683a8b"
+  },
+  "status": "PASS"
+}

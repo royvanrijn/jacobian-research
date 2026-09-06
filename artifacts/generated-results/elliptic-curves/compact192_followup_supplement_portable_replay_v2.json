@@ -1,0 +1,783 @@
+{
+  "archive_sha256": "9fc8ee751c356fa83af12b6c870f122d939b3548386259d2146d09f3f04abe19",
+  "claim_boundary": "Standalone replay of all five own26 follow-up point histories, full clouds modulo2,3,5 and exact rational geometry, plus the completed245-box result. Independently replays the six exact resultants, all26 non13 scaling-prime residue exclusions and universal990-pair small-prime minimality theorem. Prior inventory selection and known-control discovery are retained as bound gate context; their full historical campaigns are not rerun. No new point search, full global prime support, rank upper bound, saturation, point absence or universal novelty.",
+  "ledger": {
+    "rows": [
+      {
+        "name": "new-20260906-102-history",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/elliptic-curves/cas/compact192_specialized_followup.py",
+            "replay",
+            "--index",
+            "0"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 600
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/new-20260906-102-history.log",
+          "log_sha256": "f2a1e94d98665ad66f830fe48f5844856aaa4d1e10ff74776c33658551ec53e0",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 232116224,
+          "pid": 997528,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52073475",
+          "termination_signal": null,
+          "timeout_seconds": 600,
+          "wall_seconds": 4.695791637990624,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "new-20260906-102-mod2_certificate",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/artifacts/generated-results/elliptic-curves/compact192_specialized_102_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 300
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/new-20260906-102-mod2_certificate.log",
+          "log_sha256": "723d719ec65dcc9136d82f7c39dd8a0d01fc83736c39dcb127d2d602d4467a87",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25776128,
+          "pid": 997748,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52073947",
+          "termination_signal": null,
+          "timeout_seconds": 300,
+          "wall_seconds": 0.2813983999658376,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "new-20260906-102-modl_certificate",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/artifacts/generated-results/elliptic-curves/compact192_specialized_102_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 300
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/new-20260906-102-modl_certificate.log",
+          "log_sha256": "1441c5edafc7055995af8763c63aa5e65644f4bad24ae231c4b83647c5a7b473",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22061056,
+          "pid": 997752,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52073978",
+          "termination_signal": null,
+          "timeout_seconds": 300,
+          "wall_seconds": 0.17804598802467808,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "new-20260906-103-history",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/elliptic-curves/cas/compact192_specialized_followup.py",
+            "replay",
+            "--index",
+            "1"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 600
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/new-20260906-103-history.log",
+          "log_sha256": "f2a1e94d98665ad66f830fe48f5844856aaa4d1e10ff74776c33658551ec53e0",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 145506304,
+          "pid": 997756,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52073998",
+          "termination_signal": null,
+          "timeout_seconds": 600,
+          "wall_seconds": 4.390577065991238,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "new-20260906-103-mod2_certificate",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/artifacts/generated-results/elliptic-curves/compact192_specialized_103_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 300
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/new-20260906-103-mod2_certificate.log",
+          "log_sha256": "727c60565ece6b37c1f98ddfc391da30dd5cd91048aa462af4bf66e75fbe2e40",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24158208,
+          "pid": 997885,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52074440",
+          "termination_signal": null,
+          "timeout_seconds": 300,
+          "wall_seconds": 0.22943593899253756,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "new-20260906-103-modl_certificate",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/artifacts/generated-results/elliptic-curves/compact192_specialized_103_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 300
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/new-20260906-103-modl_certificate.log",
+          "log_sha256": "1441c5edafc7055995af8763c63aa5e65644f4bad24ae231c4b83647c5a7b473",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21549056,
+          "pid": 997887,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52074465",
+          "termination_signal": null,
+          "timeout_seconds": 300,
+          "wall_seconds": 0.1771359849954024,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "new-20260906-104-history",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/elliptic-curves/cas/compact192_specialized_followup.py",
+            "replay",
+            "--index",
+            "2"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 600
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/new-20260906-104-history.log",
+          "log_sha256": "f2a1e94d98665ad66f830fe48f5844856aaa4d1e10ff74776c33658551ec53e0",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 146894848,
+          "pid": 997893,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52074485",
+          "termination_signal": null,
+          "timeout_seconds": 600,
+          "wall_seconds": 8.602407686994411,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "new-20260906-104-mod2_certificate",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/artifacts/generated-results/elliptic-curves/compact192_specialized_104_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 300
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/new-20260906-104-mod2_certificate.log",
+          "log_sha256": "4297e76e2c6f13d52bd952863dd83915433295604cbcf05dce9c494a737e673b",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24559616,
+          "pid": 998194,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52075348",
+          "termination_signal": null,
+          "timeout_seconds": 300,
+          "wall_seconds": 0.2809685989632271,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "new-20260906-104-modl_certificate",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/artifacts/generated-results/elliptic-curves/compact192_specialized_104_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 300
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/new-20260906-104-modl_certificate.log",
+          "log_sha256": "1441c5edafc7055995af8763c63aa5e65644f4bad24ae231c4b83647c5a7b473",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22106112,
+          "pid": 998198,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52075378",
+          "termination_signal": null,
+          "timeout_seconds": 300,
+          "wall_seconds": 0.28101840801537037,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "new-20260906-105-history",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/elliptic-curves/cas/compact192_specialized_followup.py",
+            "replay",
+            "--index",
+            "3"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 600
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/new-20260906-105-history.log",
+          "log_sha256": "f2a1e94d98665ad66f830fe48f5844856aaa4d1e10ff74776c33658551ec53e0",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 143933440,
+          "pid": 998201,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52075408",
+          "termination_signal": null,
+          "timeout_seconds": 600,
+          "wall_seconds": 4.0804896199842915,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "new-20260906-105-mod2_certificate",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/artifacts/generated-results/elliptic-curves/compact192_specialized_105_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 300
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/new-20260906-105-mod2_certificate.log",
+          "log_sha256": "d8c771e8639f24b138b32ddbba8679e51483996cdbfd80d5f3c4660c583bb166",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25767936,
+          "pid": 998325,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52075819",
+          "termination_signal": null,
+          "timeout_seconds": 300,
+          "wall_seconds": 0.28057246800744906,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "new-20260906-105-modl_certificate",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/artifacts/generated-results/elliptic-curves/compact192_specialized_105_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 300
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/new-20260906-105-modl_certificate.log",
+          "log_sha256": "3d3783b1e0ac0864ab14c515645fc81c5e41b09d3d6ce6bd65824fd7b096986f",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21815296,
+          "pid": 998329,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52075850",
+          "termination_signal": null,
+          "timeout_seconds": 300,
+          "wall_seconds": 0.17786918196361512,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "new-20260906-106-history",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/elliptic-curves/cas/compact192_specialized_followup.py",
+            "replay",
+            "--index",
+            "4"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 600
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/new-20260906-106-history.log",
+          "log_sha256": "f2a1e94d98665ad66f830fe48f5844856aaa4d1e10ff74776c33658551ec53e0",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 145825792,
+          "pid": 998335,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52075870",
+          "termination_signal": null,
+          "timeout_seconds": 600,
+          "wall_seconds": 4.600051346991677,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "new-20260906-106-mod2_certificate",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/artifacts/generated-results/elliptic-curves/compact192_specialized_106_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 300
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/new-20260906-106-mod2_certificate.log",
+          "log_sha256": "eb109b5ca80440baa6d98b6bc06e265a8c5332577eaf533caaa39ecc284a924c",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 26030080,
+          "pid": 998460,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52076332",
+          "termination_signal": null,
+          "timeout_seconds": 300,
+          "wall_seconds": 0.2806218590121716,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "new-20260906-106-modl_certificate",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/artifacts/generated-results/elliptic-curves/compact192_specialized_106_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 300
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/new-20260906-106-modl_certificate.log",
+          "log_sha256": "5f27027258671d5af978778b14f62c7556d2f36056b3921a64f53065acf4929c",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21569536,
+          "pid": 998464,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52076362",
+          "termination_signal": null,
+          "timeout_seconds": 300,
+          "wall_seconds": 0.17860444000689313,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "geometry",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/elliptic-curves/cas/replay_compact192_specialized_geometry.sage"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 1200
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/geometry.log",
+          "log_sha256": "6be027a461f644fbb64f397e6bcf22a0f15e5114156f2a67d677eaebae3fc748",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 275329024,
+          "pid": 998468,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52076384",
+          "termination_signal": null,
+          "timeout_seconds": 1200,
+          "wall_seconds": 2.2939115430344827,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "followup-summary",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/elliptic-curves/cas/report_compact192_specialized_followup.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 300
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/followup-summary.log",
+          "log_sha256": "18ab9d93c4c6e716b719d56ec3ce0937e790af2726a9f2171deb88af1475136c",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 89186304,
+          "pid": 998958,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52076616",
+          "termination_signal": null,
+          "timeout_seconds": 300,
+          "wall_seconds": 0.43988263903884217,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "resultants",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/elliptic-curves/cas/audit_r17_scaling_prime_support.py",
+            "check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/resultants.log",
+          "log_sha256": "5dc4343e034b5acddcfb624a84e555d618743c8bf8690d98b5898f6f6896568a",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 20525056,
+          "pid": 998963,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52076663",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.12712324899621308,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "independent-resultants",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/elliptic-curves/cas/verify_r17_scaling_prime_support.sage"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/independent-resultants.log",
+          "log_sha256": "ed7efb66db17d6285a00b09608ae3b25824583916a1352b5b89636d2a2529d22",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 225931264,
+          "pid": 998969,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52076678",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.6957782409735955,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "residue-trees",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/elliptic-curves/cas/classify_r17_other_small_prime_scalings.py",
+            "check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 300
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/residue-trees.log",
+          "log_sha256": "fab2be70b5cde1263c5bc03a3c58c2ca25b28930d01e2f7fa0c293e78b502cae",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 20623360,
+          "pid": 999043,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52076749",
+          "termination_signal": null,
+          "timeout_seconds": 300,
+          "wall_seconds": 0.12744528899202123,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "independent-residues",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/elliptic-curves/cas/verify_r17_other_small_prime_scalings.py"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 300
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/independent-residues.log",
+          "log_sha256": "be0f30285e558461cd6c86535aa26fbb47730521b977e4a226af3a97f164da43",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22396928,
+          "pid": 999045,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52076766",
+          "termination_signal": null,
+          "timeout_seconds": 300,
+          "wall_seconds": 0.39671016100328416,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "universal-small-prime",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/workspace/elliptic-curves/cas/report_r17_small_prime_minimality.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 300
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/universal-small-prime.log",
+          "log_sha256": "a16544c4e2a62b709553faf88d2047be30d59d2df340b93e405b853ae836d6fa",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23056384,
+          "pid": 999052,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "52076808",
+          "termination_signal": null,
+          "timeout_seconds": 300,
+          "wall_seconds": 0.43657129898201674,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      }
+    ],
+    "status": "PASS"
+  },
+  "logical_stages": 22,
+  "schema": "elliptic-curves.compact192-followup-supplement-portable-replay.v2",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact192_followup_supplement_evidence_v2.json": "baa065d02e895eb534d33400f7ff709c5c835cb3a3090a0ab5eb75469c0f31a6",
+    "artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/ledger.json": "78188b4df5fc1e1df193c3c89fef8776c4f6af507b008829e7afb5531baaa7cb",
+    "artifacts/local/elliptic-curves/compact192-followup-supplement-portable-v2/verification/protocol.json": "c4050304c79448e59a29f580db28918ddab96e7988a36d8cf3884b24e7409c1d",
+    "elliptic-curves/cas/verify_compact192_followup_supplement_v2.py": "d8430bed1f0d692f88d78e427013b349c16ba6afeebfb38c46cadfbfc4f429e3"
+  },
+  "status": "PASS"
+}

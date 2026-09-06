@@ -1,0 +1,13 @@
+{
+  "claim_boundary": "Independent Sage invariants and exact rational inequalities replay the factor-free normalized integral-model height bound. No global minimal-model algorithm, factorization or point search is used.",
+  "exact_invariant_rows": 11,
+  "excluded_distinct_parameters": 7,
+  "excluded_rows": 10,
+  "schema": "elliptic-curves.soluble-pair-invariant-height-replay.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/soluble_pair_carrier_height_v1.json": "be730c94d12a7fd89420154e04f6a61e17e93b5c70596d351caf58c3cebcb1cb",
+    "artifacts/generated-results/elliptic-curves/soluble_pair_carrier_invariant_height_v1.json": "8b9417bc3cac413a2f597893273cf9ab3e026bea498cedb17ee2037a153ec6ae",
+    "elliptic-curves/cas/verify_carrier_invariant_height_gate.sage": "21a1e9a2cdd92f88d16baeff29d789f2a5021b4bc6a8eff5965fc014ef780bfd"
+  },
+  "status": "PASS"
+}

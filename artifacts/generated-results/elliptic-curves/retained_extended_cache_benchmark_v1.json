@@ -1,0 +1,25 @@
+{
+  "binary_sha256": "542336820fc33ad2612e6ec81efad3e39ee4689aa7233139054c0a5158654048",
+  "cache_bytes": 476930184,
+  "cache_sha256": "256792d65c3d566cbc382bd001351dd0f075f28847c845dd9959966b202216f9",
+  "candidate_sha256": "9bbf6fe5efff298dafdaeef175ccc15da355bc3c845d70827f1fbb9bb2aeffc7",
+  "candidates_checked": 967,
+  "claim_boundary": "Encode the complete11952 selection-prime cache as a fixed little-endian integer table, independently replay its bytes against every source table and invoke the compiled retained-list scorer once on all967 previously scored outer candidates. Require every quantized sum and good-prime count to match its existing scalar-GP certificate. This benchmarks cached score lookup only; it performs no parameter enumeration, ranking change, point search, future survivor selection or automatic wider campaign.",
+  "lookup_count": 2850716,
+  "protocol_sha256": "2593fec7fcefbfa7f571c27a04aa9ff9b7561b18af1e5d10b689dd6cef2d4267",
+  "raw_sha256": "37b5c44e57d6cb8c84f0abadc7f81170c2b2f6739a59eead7320b3f3546eeede",
+  "schema": "elliptic-curves.retained-extended-cache-benchmark-result.v1",
+  "selection_primes": 2948,
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/extended_projective_trace_cache_11952_v1.json": "456b281c0413ace1c6c09853ced93d3d44bd647fbbeddf82ea4159b2a0f9e134",
+    "artifacts/local/elliptic-curves/extended-projective-trace-cache-11952-v1/check.supervisor.json": "3449e16e322dd2fd177df781eb9b8dd7f4851c3cbcd4e2e358cdf1de0a0d1024",
+    "artifacts/local/elliptic-curves/extended-projective-trace-cache-11952-v1/protocol.json": "627063a23aee7bcad32a4892f4b91bbd2d61d9ecadb9ca5f50ea128f5d3a0dbc",
+    "artifacts/local/elliptic-curves/outer131072-r17-extended-v1/result.json": "f733982f72054bb61f35178269803c906945438bc3b72942924235aa9e43a251",
+    "elliptic-curves/cas/benchmark_retained_extended_cache.py": "bd6912fef8677e950023151e31fe8641b385b6c63d2311d48657d6d674c7d327",
+    "elliptic-curves/cas/extend_retained_r17_prime_scores.py": "c7b1262544a9791f842b5a06b2524d9bf57e0983f2a6d867eda216b14eb33767",
+    "elliptic-curves/cas/newfamily/score_retained_projective_cache.cpp": "38678f034654f29e40f6622df9281e736f162887bd2f3989127b076937336548",
+    "elliptic-curves/tests/test_retained_projective_cache_scorer.py": "e1552fda1dd996840d2f6edbed8d18ac2718db0f48d741420aa5c06a178f8453"
+  },
+  "status": "PASS",
+  "wall_seconds": 0.48292016302002594
+}

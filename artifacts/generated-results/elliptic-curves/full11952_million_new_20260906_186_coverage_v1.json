@@ -1,0 +1,37 @@
+{
+  "attempted_charts": 49,
+  "certificates": {
+    "artifacts/generated-results/elliptic-curves/full11952_million_new_20260906_186_all_retained_mod2_v1.json": "bcddfc2b7dce9af7267e5f208709fae7062022a224222cbe149e650e74ff6f8d",
+    "artifacts/generated-results/elliptic-curves/full11952_million_new_20260906_186_all_retained_modl_v1.json": "e85a4d73849635ab28587423de13e900d859b79121d69eb0e7f918d3ab93f639",
+    "artifacts/local/elliptic-curves/full11952-million-height-v1/new-20260906-186/all-retained-point-cloud-only.json": "dc8fbb33f14a2dc02187d6bcb9a01f851f7baa0ac624df6df84b7ff926c56bc3",
+    "artifacts/local/elliptic-curves/full11952-million-height-v1/new-20260906-186/cloud-verification-ledger.json": "db88aefac86e97733e1675cc160fd76d43825a7b91d3f426c5582a6dddbe9bcb"
+  },
+  "claim_boundary": "Exact rational geometry and point-union provenance replayed. Separate finite-quotient checks certify lower bounds only. Recorded box coverage trusts pinned PARI execution. No exact rank, saturation, upper bound or absence of further points.",
+  "completed_boxes": 49,
+  "family": "11952",
+  "height": 1000000,
+  "id": "new-20260906-186",
+  "kind": "million",
+  "mod2_lower_bound": 27,
+  "odd_modulus_lower_bounds": {
+    "3": 27,
+    "5": 27
+  },
+  "parameter": "4286/1881",
+  "retained_point_count": 720,
+  "schema": "elliptic-curves.full11952-million-height-coverage.v1",
+  "seconds_per_chart": 60,
+  "sources": {
+    "artifacts/local/elliptic-curves/full11952-64-r17-pari-v1/11952-0962587/result.json": "0542bd492a73e3c7b3c11efdf7a95ea1cbc0e8894a77ab35961d54a9a6f8ce43",
+    "artifacts/local/elliptic-curves/full11952-million-height-v1/ledger.json": "2e6c53b7e1eb3e7266b8f9fccd9b95e0dab403471370cfd0639374c70defac2b",
+    "artifacts/local/elliptic-curves/full11952-million-height-v1/new-20260906-186/replay.supervisor.json": "b97dcb1978a51e1aad9b74b461551008ee8a6f39d09a8225f87942670a61b5d1",
+    "artifacts/local/elliptic-curves/full11952-million-height-v1/new-20260906-186/result.json": "b32505a8ba91979f787e04f47904ce2b658200bbfb42d15c14356f11a7639146",
+    "artifacts/local/elliptic-curves/full11952-million-height-v1/protocol.json": "83abf82ea898cb1b5f15573246cf107fadf16eb72e99d2bf490285d46ac5bbdc",
+    "artifacts/local/elliptic-curves/full11952-specialized-followup-v1/new-20260906-186/maps.json": "540e2a514ae758140f54f968cbee1ce4cd5f83f513af7f25a6fda661134b921d",
+    "artifacts/local/elliptic-curves/full11952-specialized-followup-v1/new-20260906-186/result.json": "4de3ce74756d852e8ee4b01a0b62370947deb576bf794642bfd5ddf2c63c519b",
+    "elliptic-curves/cas/audit_full11952_million_height.py": "5b879d1ca3d37f5cacc6e300261476b9e0cc4d74eec4e4a92790f7baab56e89e",
+    "elliptic-curves/cas/replay_retention24_geometry.py": "341b3ede2ecd39cbfdf8ad009c0db8bba42afa0a01ab2d6dfd767a2898075f05"
+  },
+  "status": "PASS",
+  "union_chart_inputs": 147
+}
