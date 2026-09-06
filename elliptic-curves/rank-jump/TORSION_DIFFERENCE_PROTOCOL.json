@@ -1,0 +1,15 @@
+{
+  "schema": "rank-jump.torsion-difference-protocol.v1",
+  "question": "Does the six-branch-point model identify the Jacobian 2-torsion as the difference of the elliptic 4-torsion extensions, with the transporter as its non-scalar component?",
+  "layers": ["higher-descent structure", "solubility obstruction"],
+  "parameters": [-3, -2, -1, 1, 2, 3],
+  "limits": {"signed_root_permutations": 48, "Jacobian_torsion_vectors": 16, "Baer_pair_representatives_per_action": 64, "new_parameters": 0, "new_CT_pairs": 0, "new_points": 0, "class_groups": 0, "maximum_wall_seconds": 30},
+  "checks": [
+    "Compare all signed permutations on even six-point subsets modulo complements with the predicted extension matrices.",
+    "Compare the same matrices with the quotient of pairs of mod-four vectors having equal parity.",
+    "Verify the scalar/norm-square decomposition for all eight sign vectors and its S3 equivariance.",
+    "Compute the exact commuting algebra and its idempotents.",
+    "Apply the already certified simple-collision witnesses to the six existing fibres."
+  ],
+  "failure_semantics": "An abstract torsion-module calculation does not produce a CT value or a rational point. The decorated local conditions in the Baer-sum pairing must be retained; no identification with an ordinary genus-two Selmer computation is assumed."
+}

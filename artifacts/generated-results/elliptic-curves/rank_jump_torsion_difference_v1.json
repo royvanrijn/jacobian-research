@@ -1,0 +1,1119 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_four_division_separation_v1.json": "060807c9b579cbe0f29ef7c1143bc5e0914b8e0bfb667ab461463ea1da6e7031",
+    "artifacts/generated-results/elliptic-curves/rank_jump_local_collision_inputs_v1.json": "440372c18d42243ce447cad470c7bfd6ba5d5c757740e3ce413af6b0d8194f71",
+    "elliptic-curves/rank-jump/TORSION_DIFFERENCE_PROTOCOL.json": "cfed37b836c1a4b00c903a5dbbb530b611528b0b6ce428d2ed3f965f528ad798",
+    "elliptic-curves/rank-jump/cubic_bridge.py": "6999dde8fb028b759e76d9ad1a15b8b52d855717b42b4a777368e4e0c8bff0a8",
+    "elliptic-curves/rank-jump/local_collision.py": "09ab16e69d8113e30a844e7c97dd0e2e48411e662bb3235058e5405ee6182542",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/torsion_difference.py": "0b6b4db6f8ade5af47927f82e9a4bf7a91e759a599c18f6b3dd73854d9289ad9"
+  },
+  "cases": [
+    {
+      "D": "-4518388182637486269462426250489564634402240510936324",
+      "J2_galois_image": "(C2)^3 semidirect S3",
+      "J2_module_indecomposable": true,
+      "J2_splitting_field_degree_over_Q": 48,
+      "eta_coordinates": [
+        "-4518388182637486269462426250489564634402240510936324",
+        "-13555164547912458808387278751468693903206721532808972",
+        "0"
+      ],
+      "gamma_coordinates": [
+        "1",
+        "3",
+        "0"
+      ],
+      "new_CT_value_computed": false,
+      "simple_collision_prime": 6807347,
+      "u": -3
+    },
+    {
+      "D": "-1338781683744440383804863225201606385711842968166875",
+      "J2_galois_image": "(C2)^3 semidirect S3",
+      "J2_module_indecomposable": true,
+      "J2_splitting_field_degree_over_Q": 48,
+      "eta_coordinates": [
+        "-1338781683744440383804863225201606385711842968166875",
+        "-2677563367488880767609726450403212771423685936333750",
+        "0"
+      ],
+      "gamma_coordinates": [
+        "1",
+        "2",
+        "0"
+      ],
+      "new_CT_value_computed": false,
+      "simple_collision_prime": 61,
+      "u": -2
+    },
+    {
+      "D": "-167347710468055050851050918101962677922339205090512",
+      "J2_galois_image": "(C2)^3 semidirect S3",
+      "J2_module_indecomposable": true,
+      "J2_splitting_field_degree_over_Q": 48,
+      "eta_coordinates": [
+        "-167347710468055050851050918101962677922339205090512",
+        "-167347710468055050851050918101962677922339205090512",
+        "0"
+      ],
+      "gamma_coordinates": [
+        "1",
+        "1",
+        "0"
+      ],
+      "new_CT_value_computed": false,
+      "simple_collision_prime": 19,
+      "u": -1
+    },
+    {
+      "D": "167347710468055039349278858294915159088903868811900",
+      "J2_galois_image": "(C2)^3 semidirect S3",
+      "J2_module_indecomposable": true,
+      "J2_splitting_field_degree_over_Q": 48,
+      "eta_coordinates": [
+        "167347710468055039349278858294915159088903868811900",
+        "-167347710468055039349278858294915159088903868811900",
+        "0"
+      ],
+      "gamma_coordinates": [
+        "1",
+        "-1",
+        "0"
+      ],
+      "new_CT_value_computed": false,
+      "simple_collision_prime": 23,
+      "u": 1
+    },
+    {
+      "D": "1338781683744440337797774985973416310378101623052421",
+      "J2_galois_image": "(C2)^3 semidirect S3",
+      "J2_module_indecomposable": true,
+      "J2_splitting_field_degree_over_Q": 48,
+      "eta_coordinates": [
+        "1338781683744440337797774985973416310378101623052421",
+        "-2677563367488880675595549971946832620756203246104842",
+        "0"
+      ],
+      "gamma_coordinates": [
+        "1",
+        "-2",
+        "0"
+      ],
+      "new_CT_value_computed": false,
+      "simple_collision_prime": 233,
+      "u": 2
+    },
+    {
+      "D": "4518388182637486165946477712226136964901322484428800",
+      "J2_galois_image": "(C2)^3 semidirect S3",
+      "J2_module_indecomposable": true,
+      "J2_splitting_field_degree_over_Q": 48,
+      "eta_coordinates": [
+        "4518388182637486165946477712226136964901322484428800",
+        "-13555164547912458497839433136678410894703967453286400",
+        "0"
+      ],
+      "gamma_coordinates": [
+        "1",
+        "-3",
+        "0"
+      ],
+      "new_CT_value_computed": false,
+      "simple_collision_prime": 23,
+      "u": 3
+    }
+  ],
+  "finite_model": {
+    "Baer_action_checks": 3072,
+    "actions": [
+      {
+        "J2_matrix_columns": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "eta_sign_mask": 0,
+        "extension_cocycle_matrix_columns": [
+          0,
+          0
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          0,
+          1,
+          2
+        ],
+        "target_sign_mask": 0
+      },
+      {
+        "J2_matrix_columns": [
+          1,
+          2,
+          4,
+          9
+        ],
+        "eta_sign_mask": 6,
+        "extension_cocycle_matrix_columns": [
+          0,
+          1
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          0,
+          1,
+          2
+        ],
+        "target_sign_mask": 1
+      },
+      {
+        "J2_matrix_columns": [
+          1,
+          2,
+          6,
+          8
+        ],
+        "eta_sign_mask": 5,
+        "extension_cocycle_matrix_columns": [
+          2,
+          0
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          0,
+          1,
+          2
+        ],
+        "target_sign_mask": 2
+      },
+      {
+        "J2_matrix_columns": [
+          1,
+          2,
+          6,
+          9
+        ],
+        "eta_sign_mask": 3,
+        "extension_cocycle_matrix_columns": [
+          2,
+          1
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          0,
+          1,
+          2
+        ],
+        "target_sign_mask": 3
+      },
+      {
+        "J2_matrix_columns": [
+          1,
+          2,
+          7,
+          11
+        ],
+        "eta_sign_mask": 3,
+        "extension_cocycle_matrix_columns": [
+          3,
+          3
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          0,
+          1,
+          2
+        ],
+        "target_sign_mask": 4
+      },
+      {
+        "J2_matrix_columns": [
+          1,
+          2,
+          7,
+          10
+        ],
+        "eta_sign_mask": 5,
+        "extension_cocycle_matrix_columns": [
+          3,
+          2
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          0,
+          1,
+          2
+        ],
+        "target_sign_mask": 5
+      },
+      {
+        "J2_matrix_columns": [
+          1,
+          2,
+          5,
+          11
+        ],
+        "eta_sign_mask": 6,
+        "extension_cocycle_matrix_columns": [
+          1,
+          3
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          0,
+          1,
+          2
+        ],
+        "target_sign_mask": 6
+      },
+      {
+        "J2_matrix_columns": [
+          1,
+          2,
+          5,
+          10
+        ],
+        "eta_sign_mask": 0,
+        "extension_cocycle_matrix_columns": [
+          1,
+          2
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          0,
+          1,
+          2
+        ],
+        "target_sign_mask": 7
+      },
+      {
+        "J2_matrix_columns": [
+          1,
+          3,
+          4,
+          12
+        ],
+        "eta_sign_mask": 0,
+        "extension_cocycle_matrix_columns": [
+          0,
+          0
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          0,
+          2,
+          1
+        ],
+        "target_sign_mask": 0
+      },
+      {
+        "J2_matrix_columns": [
+          1,
+          3,
+          4,
+          13
+        ],
+        "eta_sign_mask": 6,
+        "extension_cocycle_matrix_columns": [
+          0,
+          1
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          0,
+          2,
+          1
+        ],
+        "target_sign_mask": 1
+      },
+      {
+        "J2_matrix_columns": [
+          1,
+          3,
+          6,
+          14
+        ],
+        "eta_sign_mask": 5,
+        "extension_cocycle_matrix_columns": [
+          2,
+          0
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          0,
+          2,
+          1
+        ],
+        "target_sign_mask": 2
+      },
+      {
+        "J2_matrix_columns": [
+          1,
+          3,
+          6,
+          15
+        ],
+        "eta_sign_mask": 3,
+        "extension_cocycle_matrix_columns": [
+          2,
+          1
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          0,
+          2,
+          1
+        ],
+        "target_sign_mask": 3
+      },
+      {
+        "J2_matrix_columns": [
+          1,
+          3,
+          7,
+          12
+        ],
+        "eta_sign_mask": 3,
+        "extension_cocycle_matrix_columns": [
+          3,
+          3
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          0,
+          2,
+          1
+        ],
+        "target_sign_mask": 4
+      },
+      {
+        "J2_matrix_columns": [
+          1,
+          3,
+          7,
+          13
+        ],
+        "eta_sign_mask": 5,
+        "extension_cocycle_matrix_columns": [
+          3,
+          2
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          0,
+          2,
+          1
+        ],
+        "target_sign_mask": 5
+      },
+      {
+        "J2_matrix_columns": [
+          1,
+          3,
+          5,
+          14
+        ],
+        "eta_sign_mask": 6,
+        "extension_cocycle_matrix_columns": [
+          1,
+          3
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          0,
+          2,
+          1
+        ],
+        "target_sign_mask": 6
+      },
+      {
+        "J2_matrix_columns": [
+          1,
+          3,
+          5,
+          15
+        ],
+        "eta_sign_mask": 0,
+        "extension_cocycle_matrix_columns": [
+          1,
+          2
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          0,
+          2,
+          1
+        ],
+        "target_sign_mask": 7
+      },
+      {
+        "J2_matrix_columns": [
+          2,
+          1,
+          8,
+          4
+        ],
+        "eta_sign_mask": 0,
+        "extension_cocycle_matrix_columns": [
+          0,
+          0
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          1,
+          0,
+          2
+        ],
+        "target_sign_mask": 0
+      },
+      {
+        "J2_matrix_columns": [
+          2,
+          1,
+          9,
+          4
+        ],
+        "eta_sign_mask": 6,
+        "extension_cocycle_matrix_columns": [
+          0,
+          1
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          1,
+          0,
+          2
+        ],
+        "target_sign_mask": 1
+      },
+      {
+        "J2_matrix_columns": [
+          2,
+          1,
+          8,
+          6
+        ],
+        "eta_sign_mask": 5,
+        "extension_cocycle_matrix_columns": [
+          2,
+          0
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          1,
+          0,
+          2
+        ],
+        "target_sign_mask": 2
+      },
+      {
+        "J2_matrix_columns": [
+          2,
+          1,
+          9,
+          6
+        ],
+        "eta_sign_mask": 3,
+        "extension_cocycle_matrix_columns": [
+          2,
+          1
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          1,
+          0,
+          2
+        ],
+        "target_sign_mask": 3
+      },
+      {
+        "J2_matrix_columns": [
+          2,
+          1,
+          11,
+          7
+        ],
+        "eta_sign_mask": 3,
+        "extension_cocycle_matrix_columns": [
+          3,
+          3
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          1,
+          0,
+          2
+        ],
+        "target_sign_mask": 4
+      },
+      {
+        "J2_matrix_columns": [
+          2,
+          1,
+          10,
+          7
+        ],
+        "eta_sign_mask": 5,
+        "extension_cocycle_matrix_columns": [
+          3,
+          2
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          1,
+          0,
+          2
+        ],
+        "target_sign_mask": 5
+      },
+      {
+        "J2_matrix_columns": [
+          2,
+          1,
+          11,
+          5
+        ],
+        "eta_sign_mask": 6,
+        "extension_cocycle_matrix_columns": [
+          1,
+          3
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          1,
+          0,
+          2
+        ],
+        "target_sign_mask": 6
+      },
+      {
+        "J2_matrix_columns": [
+          2,
+          1,
+          10,
+          5
+        ],
+        "eta_sign_mask": 0,
+        "extension_cocycle_matrix_columns": [
+          1,
+          2
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          1,
+          0,
+          2
+        ],
+        "target_sign_mask": 7
+      },
+      {
+        "J2_matrix_columns": [
+          2,
+          3,
+          8,
+          12
+        ],
+        "eta_sign_mask": 0,
+        "extension_cocycle_matrix_columns": [
+          0,
+          0
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          1,
+          2,
+          0
+        ],
+        "target_sign_mask": 0
+      },
+      {
+        "J2_matrix_columns": [
+          2,
+          3,
+          9,
+          13
+        ],
+        "eta_sign_mask": 6,
+        "extension_cocycle_matrix_columns": [
+          0,
+          1
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          1,
+          2,
+          0
+        ],
+        "target_sign_mask": 1
+      },
+      {
+        "J2_matrix_columns": [
+          2,
+          3,
+          8,
+          14
+        ],
+        "eta_sign_mask": 5,
+        "extension_cocycle_matrix_columns": [
+          2,
+          0
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          1,
+          2,
+          0
+        ],
+        "target_sign_mask": 2
+      },
+      {
+        "J2_matrix_columns": [
+          2,
+          3,
+          9,
+          15
+        ],
+        "eta_sign_mask": 3,
+        "extension_cocycle_matrix_columns": [
+          2,
+          1
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          1,
+          2,
+          0
+        ],
+        "target_sign_mask": 3
+      },
+      {
+        "J2_matrix_columns": [
+          2,
+          3,
+          11,
+          12
+        ],
+        "eta_sign_mask": 3,
+        "extension_cocycle_matrix_columns": [
+          3,
+          3
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          1,
+          2,
+          0
+        ],
+        "target_sign_mask": 4
+      },
+      {
+        "J2_matrix_columns": [
+          2,
+          3,
+          10,
+          13
+        ],
+        "eta_sign_mask": 5,
+        "extension_cocycle_matrix_columns": [
+          3,
+          2
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          1,
+          2,
+          0
+        ],
+        "target_sign_mask": 5
+      },
+      {
+        "J2_matrix_columns": [
+          2,
+          3,
+          11,
+          14
+        ],
+        "eta_sign_mask": 6,
+        "extension_cocycle_matrix_columns": [
+          1,
+          3
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          1,
+          2,
+          0
+        ],
+        "target_sign_mask": 6
+      },
+      {
+        "J2_matrix_columns": [
+          2,
+          3,
+          10,
+          15
+        ],
+        "eta_sign_mask": 0,
+        "extension_cocycle_matrix_columns": [
+          1,
+          2
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          1,
+          2,
+          0
+        ],
+        "target_sign_mask": 7
+      },
+      {
+        "J2_matrix_columns": [
+          3,
+          1,
+          12,
+          4
+        ],
+        "eta_sign_mask": 0,
+        "extension_cocycle_matrix_columns": [
+          0,
+          0
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          2,
+          0,
+          1
+        ],
+        "target_sign_mask": 0
+      },
+      {
+        "J2_matrix_columns": [
+          3,
+          1,
+          13,
+          4
+        ],
+        "eta_sign_mask": 6,
+        "extension_cocycle_matrix_columns": [
+          0,
+          1
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          2,
+          0,
+          1
+        ],
+        "target_sign_mask": 1
+      },
+      {
+        "J2_matrix_columns": [
+          3,
+          1,
+          14,
+          6
+        ],
+        "eta_sign_mask": 5,
+        "extension_cocycle_matrix_columns": [
+          2,
+          0
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          2,
+          0,
+          1
+        ],
+        "target_sign_mask": 2
+      },
+      {
+        "J2_matrix_columns": [
+          3,
+          1,
+          15,
+          6
+        ],
+        "eta_sign_mask": 3,
+        "extension_cocycle_matrix_columns": [
+          2,
+          1
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          2,
+          0,
+          1
+        ],
+        "target_sign_mask": 3
+      },
+      {
+        "J2_matrix_columns": [
+          3,
+          1,
+          12,
+          7
+        ],
+        "eta_sign_mask": 3,
+        "extension_cocycle_matrix_columns": [
+          3,
+          3
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          2,
+          0,
+          1
+        ],
+        "target_sign_mask": 4
+      },
+      {
+        "J2_matrix_columns": [
+          3,
+          1,
+          13,
+          7
+        ],
+        "eta_sign_mask": 5,
+        "extension_cocycle_matrix_columns": [
+          3,
+          2
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          2,
+          0,
+          1
+        ],
+        "target_sign_mask": 5
+      },
+      {
+        "J2_matrix_columns": [
+          3,
+          1,
+          14,
+          5
+        ],
+        "eta_sign_mask": 6,
+        "extension_cocycle_matrix_columns": [
+          1,
+          3
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          2,
+          0,
+          1
+        ],
+        "target_sign_mask": 6
+      },
+      {
+        "J2_matrix_columns": [
+          3,
+          1,
+          15,
+          5
+        ],
+        "eta_sign_mask": 0,
+        "extension_cocycle_matrix_columns": [
+          1,
+          2
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          2,
+          0,
+          1
+        ],
+        "target_sign_mask": 7
+      },
+      {
+        "J2_matrix_columns": [
+          3,
+          2,
+          12,
+          8
+        ],
+        "eta_sign_mask": 0,
+        "extension_cocycle_matrix_columns": [
+          0,
+          0
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          2,
+          1,
+          0
+        ],
+        "target_sign_mask": 0
+      },
+      {
+        "J2_matrix_columns": [
+          3,
+          2,
+          13,
+          9
+        ],
+        "eta_sign_mask": 6,
+        "extension_cocycle_matrix_columns": [
+          0,
+          1
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          2,
+          1,
+          0
+        ],
+        "target_sign_mask": 1
+      },
+      {
+        "J2_matrix_columns": [
+          3,
+          2,
+          14,
+          8
+        ],
+        "eta_sign_mask": 5,
+        "extension_cocycle_matrix_columns": [
+          2,
+          0
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          2,
+          1,
+          0
+        ],
+        "target_sign_mask": 2
+      },
+      {
+        "J2_matrix_columns": [
+          3,
+          2,
+          15,
+          9
+        ],
+        "eta_sign_mask": 3,
+        "extension_cocycle_matrix_columns": [
+          2,
+          1
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          2,
+          1,
+          0
+        ],
+        "target_sign_mask": 3
+      },
+      {
+        "J2_matrix_columns": [
+          3,
+          2,
+          12,
+          11
+        ],
+        "eta_sign_mask": 3,
+        "extension_cocycle_matrix_columns": [
+          3,
+          3
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          2,
+          1,
+          0
+        ],
+        "target_sign_mask": 4
+      },
+      {
+        "J2_matrix_columns": [
+          3,
+          2,
+          13,
+          10
+        ],
+        "eta_sign_mask": 5,
+        "extension_cocycle_matrix_columns": [
+          3,
+          2
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          2,
+          1,
+          0
+        ],
+        "target_sign_mask": 5
+      },
+      {
+        "J2_matrix_columns": [
+          3,
+          2,
+          14,
+          11
+        ],
+        "eta_sign_mask": 6,
+        "extension_cocycle_matrix_columns": [
+          1,
+          3
+        ],
+        "norm_sign": 0,
+        "permutation": [
+          2,
+          1,
+          0
+        ],
+        "target_sign_mask": 6
+      },
+      {
+        "J2_matrix_columns": [
+          3,
+          2,
+          15,
+          10
+        ],
+        "eta_sign_mask": 0,
+        "extension_cocycle_matrix_columns": [
+          1,
+          2
+        ],
+        "norm_sign": 1,
+        "permutation": [
+          2,
+          1,
+          0
+        ],
+        "target_sign_mask": 7
+      }
+    ],
+    "commuting_algebra": "F2[epsilon]/(epsilon^2)",
+    "commuting_algebra_basis_packed": [
+      8448,
+      33825
+    ],
+    "commuting_idempotents_packed": [
+      0,
+      33825
+    ],
+    "module_status": "INDECOMPOSABLE_NONSPLIT_SELF_EXTENSION_OF_V",
+    "root_action_checks": 768,
+    "transvection_N_columns": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        3
+      ]
+    ]
+  },
+  "schema": "rank-jump.torsion-difference.v1",
+  "scope": "Exact underlying torsion-extension model. CT comparison requires the decorated local Baer-sum structure; the module alone is not a solubility or rank predictor."
+}
