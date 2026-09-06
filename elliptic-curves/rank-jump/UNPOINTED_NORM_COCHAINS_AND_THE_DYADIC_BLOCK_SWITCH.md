@@ -1,5 +1,11 @@
 # A cochain without elliptic points, and its exact dyadic block switch
 
+Follow-up: [the two cross-cochains now complete the full three-dimensional
+Selmer pairing](FULL_GOVERNING_BLOCK_SEPARATES_SELMER_INCIDENCE_AND_CT.md).
+Twists 41 and 113 have zero full CT at unchanged Selmer incidence; twist 97
+has CT rank two and rank at most one. Rationality of the zero-pairing
+classes remains UNKNOWN.
+
 A cubic norm equation constructs the governing cochain for two strict
 Selmer classes without requiring rational points on their elliptic covers.
 The frozen small class-group control gives an explicit example:

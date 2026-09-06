@@ -1,0 +1,192 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_unpointed_governing_norm_v1.json": "a0046d2a9c51b5121bfdb2e66d8e1b588ce2c0c2128e673cd4cfa2ab61b1d8f8",
+    "elliptic-curves/rank-jump/FULL_SMALL_GOVERNING_BLOCK_PROTOCOL.json": "c711f4509241e9dc64409422cb2d8aeee7039e715b0c416aa3db25f54c73f537",
+    "elliptic-curves/rank-jump/NORM_LIFTS_CAN_BE_ENTIRELY_SHA.md": "afff7f23f2b3566a5c944c196667d49c1237a79f02b92bc8b7db9577fbfa7fa7",
+    "elliptic-curves/rank-jump/full_small_governing_block.py": "6cdaf190959a346d655d6d1d4abc35f43c505cc359c882c7a999fbd6fe6dc86a",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "boundary": "Two norm cochains for the fixed full Selmer basis; no new elliptic points or descents.",
+  "rows": [
+    {
+      "X_ascending": [
+        "-119/25",
+        "-163/50",
+        "13/25"
+      ],
+      "Y_ascending": [
+        "-929/250",
+        "-402/125",
+        "83/250"
+      ],
+      "alpha_ascending": [
+        1,
+        -10,
+        1
+      ],
+      "beta_ascending": [
+        -1,
+        -1,
+        0
+      ],
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_unpointed_governing_norm_v1.json": "a0046d2a9c51b5121bfdb2e66d8e1b588ce2c0c2128e673cd4cfa2ab61b1d8f8",
+        "elliptic-curves/rank-jump/FULL_SMALL_GOVERNING_BLOCK_PROTOCOL.json": "c711f4509241e9dc64409422cb2d8aeee7039e715b0c416aa3db25f54c73f537",
+        "elliptic-curves/rank-jump/NORM_LIFTS_CAN_BE_ENTIRELY_SHA.md": "afff7f23f2b3566a5c944c196667d49c1237a79f02b92bc8b7db9577fbfa7fa7",
+        "elliptic-curves/rank-jump/full_small_governing_block.py": "6cdaf190959a346d655d6d1d4abc35f43c505cc359c882c7a999fbd6fe6dc86a",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "class_indices": [
+        0,
+        2
+      ],
+      "discriminant_factorization": [
+        [
+          "2",
+          32
+        ],
+        [
+          "5",
+          8
+        ],
+        [
+          "29",
+          2
+        ],
+        [
+          "163",
+          4
+        ]
+      ],
+      "galois_order": 96,
+      "old_root_in_reduced_algebra": [
+        "0",
+        "147989/29000",
+        "0",
+        "-838/725",
+        "0",
+        "1293/5800",
+        "0",
+        "-53/3625"
+      ],
+      "pari_polgalois": "[96, 1, 32, \"[2^3]A(4)\"]",
+      "rational_octic_ascending": [
+        "76981637162011201/1600000000",
+        "0",
+        "-5005022452311/2000000",
+        "0",
+        "950731843/20000",
+        "0",
+        "-18439/50",
+        "0",
+        "1"
+      ],
+      "reduced_octic_ascending": [
+        "841",
+        "0",
+        "-216",
+        "0",
+        "90",
+        "0",
+        "-16",
+        "0",
+        "1"
+      ],
+      "reduced_octic_discriminant": "996015987073063321600000000",
+      "schema": "rank-jump.full-small-governing-pair.v1",
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      }
+    },
+    {
+      "X_ascending": [
+        "1",
+        "0",
+        "0"
+      ],
+      "Y_ascending": [
+        "2/5",
+        "1/5",
+        "0"
+      ],
+      "alpha_ascending": [
+        12,
+        -13,
+        1
+      ],
+      "beta_ascending": [
+        -1,
+        -1,
+        0
+      ],
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_unpointed_governing_norm_v1.json": "a0046d2a9c51b5121bfdb2e66d8e1b588ce2c0c2128e673cd4cfa2ab61b1d8f8",
+        "elliptic-curves/rank-jump/FULL_SMALL_GOVERNING_BLOCK_PROTOCOL.json": "c711f4509241e9dc64409422cb2d8aeee7039e715b0c416aa3db25f54c73f537",
+        "elliptic-curves/rank-jump/NORM_LIFTS_CAN_BE_ENTIRELY_SHA.md": "afff7f23f2b3566a5c944c196667d49c1237a79f02b92bc8b7db9577fbfa7fa7",
+        "elliptic-curves/rank-jump/full_small_governing_block.py": "6cdaf190959a346d655d6d1d4abc35f43c505cc359c882c7a999fbd6fe6dc86a",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "class_indices": [
+        1,
+        2
+      ],
+      "discriminant_factorization": [
+        [
+          "2",
+          32
+        ],
+        [
+          "5",
+          12
+        ],
+        [
+          "163",
+          4
+        ]
+      ],
+      "galois_order": 96,
+      "old_root_in_reduced_algebra": [
+        "0",
+        "-8/5",
+        "0",
+        "18/125",
+        "0",
+        "0",
+        "0",
+        "1/125"
+      ],
+      "pari_polgalois": "[96, 1, 32, \"[2^3]A(4)\"]",
+      "rational_octic_ascending": [
+        "625",
+        "0",
+        "0",
+        "0",
+        "18",
+        "0",
+        "-8",
+        "0",
+        "1"
+      ],
+      "reduced_octic_ascending": [
+        "625",
+        "0",
+        "-200",
+        "0",
+        "18",
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      "reduced_octic_discriminant": "740202130702336000000000000",
+      "schema": "rank-jump.full-small-governing-pair.v1",
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      }
+    }
+  ],
+  "schema": "rank-jump.full-small-governing-block-inputs.v1",
+  "status": "PASS"
+}

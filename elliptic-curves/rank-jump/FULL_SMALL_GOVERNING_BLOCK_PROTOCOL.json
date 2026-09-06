@@ -1,0 +1,15 @@
+{
+  "schema": "rank-jump.full-small-governing-block-protocol.v1",
+  "question": "Do two additional point-free norm cochains complete the governing data for the retained full three-dimensional Selmer space, and do the three obstruction bits vary independently?",
+  "layer": "solubility obstruction, with explicit Selmer-preservation hypotheses",
+  "cubic_ascending": [-1, -14, -11, 1],
+  "classes_ascending": [[1, -10, 1], [12, -13, 1], [-1, -1, 0]],
+  "class_roles": ["retained class-selected strict alpha", "retained class-selected strict beta", "retained non-strict Selmer generator eta=-1-theta"],
+  "norm_pairs": [[0, 2], [1, 2]],
+  "reused_pair": "artifacts/generated-results/elliptic-curves/rank_jump_unpointed_governing_norm_v1.json",
+  "selection": "Use the complete E0 Selmer basis already proved in NORM_LIFTS_CAN_BE_ENTIRELY_SHA.md. No new classes or elliptic points are selected.",
+  "limits": {"seconds_per_worker": 60, "norm_equations": 2, "prime_bound": 199, "pari_stack_bytes": 256000000, "new_point_searches": 0, "new_elliptic_descents": 0},
+  "seed": 20260906,
+  "endpoints": ["Two exact cubic norm witnesses and reduced octic maps", "Independent complete three-class Galois/cochain group", "Joint Frobenius bits at the frozen odd primes <=199", "Full CT conclusions only when all local-square and unramified hypotheses hold"],
+  "failure_semantics": "A timed-out norm computation remains UNKNOWN. Zero restricted CT is not full-radical membership; zero full CT is not rational solubility. Do not enlarge the prime range to find a desired matrix."
+}

@@ -1,0 +1,1596 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_full_small_governing_block_inputs_v1.json": "f4492ad760e52712efb5d33577eda3bdf547e727b77aa53203c3eb91f6b456dc",
+    "artifacts/generated-results/elliptic-curves/rank_jump_small_quotient_block_v1.json": "a277015dabaa62a3ed5efb06b51fa898044ea7dea49960842917ad8e9132ded5",
+    "artifacts/generated-results/elliptic-curves/rank_jump_strict_cochain_dyadic_switch_v1.json": "59c41028152fe6131cecada9bf0d28814403b9ab64b9b1eb01e728964f1c8213",
+    "artifacts/generated-results/elliptic-curves/rank_jump_unpointed_governing_norm_v1.json": "a0046d2a9c51b5121bfdb2e66d8e1b588ce2c0c2128e673cd4cfa2ab61b1d8f8",
+    "artifacts/generated-results/elliptic-curves/rank_jump_unpointed_governing_norm_verification_v1.json": "6ac77270ec6352c832e53a89efe3b9d424d6bead204e64eccfffbc891412653d",
+    "elliptic-curves/rank-jump/FULL_SMALL_GOVERNING_BLOCK_PROTOCOL.json": "c711f4509241e9dc64409422cb2d8aeee7039e715b0c416aa3db25f54c73f537",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_explicit_governing_octic.py": "7d2567d37c720b56b21fd3f26e6fddd139fff646079d556f0d809260c04f3524",
+    "elliptic-curves/rank-jump/verify_full_small_governing_block.py": "ec6bbd2b4927a651c6a4f0decb1480344d1d27d63556edbc9c97426b9945fc89",
+    "elliptic-curves/rank-jump/verify_unpointed_governing_norm.py": "69828517faa1ebdc92218dc338cfe156fbc8a16020bf6b28d8f59a60bc4c847a"
+  },
+  "boundary": "Full Selmer/CT conclusions use the stated twist comparison theorem. No elliptic point search or twist descent is performed; zero full CT is not rational rank three.",
+  "class_certificate": {
+    "combined_dimension_over_cubic_field": 4,
+    "eta_ascending": [
+      "-1",
+      "-1",
+      "0"
+    ],
+    "eta_conjugate_product": 1,
+    "independence_reason": "The retained strict pair is independent and totally positive; the two unit conjugates have independent real signs.",
+    "real_sign_rows": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ]
+    ],
+    "strict_orbit_dimension": 2,
+    "tau_eta_ascending": [
+      "1",
+      "12",
+      "-1"
+    ],
+    "unit_orbit_dimension": 2
+  },
+  "excluded_prime_reductions": [
+    {
+      "prime": 5,
+      "reason": "non-squarefree polynomial reduction; field ramification may be smaller"
+    },
+    {
+      "prime": 29,
+      "reason": "non-squarefree polynomial reduction; field ramification may be smaller"
+    },
+    {
+      "prime": 163,
+      "reason": "non-squarefree polynomial reduction; field ramification may be smaller"
+    }
+  ],
+  "joint_group": {
+    "abelianization": "C3",
+    "action_composition_checks": 147456,
+    "central_commutator_subgroup_order": 8,
+    "commutator_subgroup_order": 128,
+    "conditional_density_per_full_CT_matrix": "1/8",
+    "faithful_joint_action_degree": 24,
+    "governing_compositum_degree": 384,
+    "inert_governing_vector_counts": {
+      "000": 32,
+      "001": 32,
+      "010": 32,
+      "011": 32,
+      "100": 32,
+      "101": 32,
+      "110": 32,
+      "111": 32
+    },
+    "joint_class_field_degree": 48
+  },
+  "joint_prime_table": [
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": null
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 2,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 1,
+            "psi": 0
+          }
+        }
+      ],
+      "prime": 3,
+      "psi_vector": [
+        0,
+        1,
+        0
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 1,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 4,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 5,
+            "psi": 1
+          }
+        }
+      ],
+      "prime": 7,
+      "psi_vector": [
+        0,
+        0,
+        1
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 6,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 1,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 2,
+            "psi": 1
+          }
+        }
+      ],
+      "prime": 11,
+      "psi_vector": [
+        1,
+        0,
+        1
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 12,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 1,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 9,
+            "psi": 0
+          }
+        }
+      ],
+      "prime": 19,
+      "psi_vector": [
+        1,
+        0,
+        0
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "MW_rank_exact": "UNKNOWN",
+      "MW_rank_upper_bound": 3,
+      "full_CT_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "full_CT_radical_dimension": 3,
+      "full_CT_rank": 0,
+      "full_Selmer_dimension": 3,
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 14,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 1,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 37,
+            "psi": 0
+          }
+        }
+      ],
+      "prime": 41,
+      "psi_vector": [
+        1,
+        0,
+        0
+      ],
+      "rational_solubility_of_radical": "UNKNOWN",
+      "twist_locally_square_at_2_163_infinity": true
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 38,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 23,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 33,
+            "psi": 1
+          }
+        }
+      ],
+      "prime": 43,
+      "psi_vector": [
+        0,
+        0,
+        1
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 42,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 39,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 38,
+            "psi": 1
+          }
+        }
+      ],
+      "prime": 47,
+      "psi_vector": [
+        0,
+        1,
+        1
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 6,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 66,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 53,
+            "psi": 1
+          }
+        }
+      ],
+      "prime": 67,
+      "psi_vector": [
+        0,
+        1,
+        1
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 53,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 47,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 54,
+            "psi": 0
+          }
+        }
+      ],
+      "prime": 71,
+      "psi_vector": [
+        1,
+        1,
+        0
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 51,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 4,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 4,
+            "psi": 0
+          }
+        }
+      ],
+      "prime": 73,
+      "psi_vector": [
+        1,
+        0,
+        0
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 1,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 69,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 58,
+            "psi": 1
+          }
+        }
+      ],
+      "prime": 79,
+      "psi_vector": [
+        0,
+        1,
+        1
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 49,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 25,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 49,
+            "psi": 0
+          }
+        }
+      ],
+      "prime": 83,
+      "psi_vector": [
+        0,
+        0,
+        0
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 81,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 50,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 45,
+            "psi": 0
+          }
+        }
+      ],
+      "prime": 89,
+      "psi_vector": [
+        0,
+        0,
+        0
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "MW_rank_exact": "UNKNOWN",
+      "MW_rank_upper_bound": 1,
+      "full_CT_matrix": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "full_CT_radical_dimension": 1,
+      "full_CT_rank": 2,
+      "full_Selmer_dimension": 3,
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 79,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 33,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 7,
+            "psi": 1
+          }
+        }
+      ],
+      "prime": 97,
+      "psi_vector": [
+        0,
+        0,
+        1
+      ],
+      "rational_solubility_of_radical": "UNKNOWN",
+      "twist_locally_square_at_2_163_infinity": true
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 13,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 5,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 71,
+            "psi": 0
+          }
+        }
+      ],
+      "prime": 101,
+      "psi_vector": [
+        0,
+        0,
+        0
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 47,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 35,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 21,
+            "psi": 1
+          }
+        }
+      ],
+      "prime": 103,
+      "psi_vector": [
+        1,
+        1,
+        1
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 32,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 80,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 93,
+            "psi": 1
+          }
+        }
+      ],
+      "prime": 107,
+      "psi_vector": [
+        1,
+        1,
+        1
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 25,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 88,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 33,
+            "psi": 1
+          }
+        }
+      ],
+      "prime": 109,
+      "psi_vector": [
+        0,
+        0,
+        1
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "MW_rank_exact": "UNKNOWN",
+      "MW_rank_upper_bound": 3,
+      "full_CT_matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "full_CT_radical_dimension": 3,
+      "full_CT_rank": 0,
+      "full_Selmer_dimension": 3,
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 101,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 82,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 57,
+            "psi": 0
+          }
+        }
+      ],
+      "prime": 113,
+      "psi_vector": [
+        1,
+        0,
+        0
+      ],
+      "rational_solubility_of_radical": "UNKNOWN",
+      "twist_locally_square_at_2_163_infinity": true
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 63,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 27,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 91,
+            "psi": 0
+          }
+        }
+      ],
+      "prime": 131,
+      "psi_vector": [
+        0,
+        0,
+        0
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 6,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 91,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 96,
+            "psi": 1
+          }
+        }
+      ],
+      "prime": 137,
+      "psi_vector": [
+        1,
+        1,
+        1
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 24,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 130,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 72,
+            "psi": 1
+          }
+        }
+      ],
+      "prime": 139,
+      "psi_vector": [
+        0,
+        1,
+        1
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 32,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 116,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 131,
+            "psi": 1
+          }
+        }
+      ],
+      "prime": 149,
+      "psi_vector": [
+        1,
+        0,
+        1
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 122,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 133,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 134,
+            "psi": 1
+          }
+        }
+      ],
+      "prime": 151,
+      "psi_vector": [
+        1,
+        1,
+        1
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 22,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 76,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 57,
+            "psi": 0
+          }
+        }
+      ],
+      "prime": 167,
+      "psi_vector": [
+        0,
+        0,
+        0
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 110,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 63,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 97,
+            "psi": 1
+          }
+        }
+      ],
+      "prime": 173,
+      "psi_vector": [
+        1,
+        1,
+        1
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 111,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 149,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 128,
+            "psi": 1
+          }
+        }
+      ],
+      "prime": 179,
+      "psi_vector": [
+        1,
+        0,
+        1
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 58,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 38,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 49,
+            "psi": 0
+          }
+        }
+      ],
+      "prime": 181,
+      "psi_vector": [
+        1,
+        0,
+        0
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    },
+    {
+      "pair_replays": [
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 32,
+            "psi": 1
+          }
+        },
+        {
+          "factor_degrees": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 116,
+            "psi": 0
+          }
+        },
+        {
+          "factor_degrees": [
+            2,
+            6
+          ],
+          "independent_radical": {
+            "norm_mod_prime": 102,
+            "psi": 1
+          }
+        }
+      ],
+      "prime": 197,
+      "psi_vector": [
+        1,
+        0,
+        1
+      ],
+      "twist_locally_square_at_2_163_infinity": false
+    }
+  ],
+  "order_certificates": [
+    {
+      "class_indices": [
+        0,
+        2
+      ],
+      "degree8_reduction_verified": true,
+      "finite_ramification_support_contained_in": [
+        2,
+        163
+      ],
+      "integral_multiplication_products": 64,
+      "norm_identity": true,
+      "order_discriminant": "185050532675584",
+      "overorder_basis": [
+        [
+          "1"
+        ],
+        [
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "-1/2",
+          "0",
+          "0",
+          "0",
+          "1/2"
+        ],
+        [
+          "1/4",
+          "-1/4",
+          "-1/2",
+          "-1/2",
+          "-1/4",
+          "1/4"
+        ],
+        [
+          "39/100",
+          "0",
+          "1/20",
+          "0",
+          "3/20",
+          "0",
+          "1/100"
+        ],
+        [
+          "0",
+          "1089/2900",
+          "0",
+          "221/580",
+          "0",
+          "-67/580",
+          "0",
+          "1/2900"
+        ]
+      ]
+    },
+    {
+      "class_indices": [
+        1,
+        2
+      ],
+      "degree8_reduction_verified": true,
+      "finite_ramification_support_contained_in": [
+        2,
+        163
+      ],
+      "integral_multiplication_products": 64,
+      "norm_identity": true,
+      "order_discriminant": "185050532675584",
+      "overorder_basis": [
+        [
+          "1"
+        ],
+        [
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "-1/2",
+          "0",
+          "0",
+          "0",
+          "1/2"
+        ],
+        [
+          "1/4",
+          "3/20",
+          "-1/2",
+          "-1/2",
+          "-1/4",
+          "1/20"
+        ],
+        [
+          "-1/4",
+          "0",
+          "-7/100",
+          "0",
+          "-1/4",
+          "0",
+          "1/100"
+        ],
+        [
+          "1/4",
+          "1/10",
+          "-1/2",
+          "143/500",
+          "-1/4",
+          "0",
+          "0",
+          "1/500"
+        ]
+      ]
+    }
+  ],
+  "original_full_CT_matrix": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "schema": "rank-jump.full-small-governing-block.v1",
+  "status": "PASS",
+  "summary": {
+    "eligible_prime_twists": [
+      41,
+      97,
+      113
+    ],
+    "eligible_rank_at_most_one": [
+      97
+    ],
+    "eligible_zero_full_CT": [
+      41,
+      113
+    ],
+    "independent_radical_replays": 86,
+    "joint_inert_primes": 29
+  }
+}
