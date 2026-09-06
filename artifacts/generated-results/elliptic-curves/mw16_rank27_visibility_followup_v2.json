@@ -1,0 +1,23 @@
+{
+  "attempted_charts": 12,
+  "backend_failures": 0,
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/mw16_rank27_visibility_followup_mod2_v2.json": "5727b2afe050455d6cb85e4c3c8472845dd13737eec715028129a27d78fd8d1f",
+    "artifacts/generated-results/elliptic-curves/mw16_rank27_visibility_followup_modl_v2.json": "0f342b55074b54c3cd6786a9b0b9cc50b5fe20df9f8e1b6bfbd8b5ab412fca61",
+    "artifacts/local/elliptic-curves/mw16-rank27-visibility-followup-v2/protocol.json": "b2638a027f133c05bc3b004d7ee5894b71986b0026d44adec17bb00f8c595cc4",
+    "artifacts/local/elliptic-curves/mw16-rank27-visibility-followup-v2/result.json": "29b09226830b150256270180c31065a5dffb54bcb0bb555cc2f99ab82634c687"
+  },
+  "claim_boundary": "This fixed trial cloud includes the own27 seed and all retained output, not every historical point. No upper rank bound or unrecorded-point claim. Completed coverage trusts the pinned PARI execution; censored boxes remain unknown.",
+  "completed_boxes": 0,
+  "height": 1000000,
+  "mod2_lower_bound": 27,
+  "odd_prime_lower_bounds": {
+    "3": 27,
+    "5": 27
+  },
+  "retained_points_up_to_sign": 27,
+  "schema": "elliptic-curves.mw16-rank27-visibility-followup.v2",
+  "seconds_per_chart": 15,
+  "status": "PASS",
+  "timeouts": 12
+}

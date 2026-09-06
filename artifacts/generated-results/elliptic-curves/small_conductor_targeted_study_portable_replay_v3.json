@@ -1,0 +1,106 @@
+{
+  "schema": "elliptic-curves.small-conductor-study-isolated.v3",
+  "stages": [
+    {
+      "stage": "replay",
+      "supervision": {
+        "command": [
+          "/usr/bin/python3",
+          "elliptic-curves/cas/study_small_conductor_target.py",
+          "replay"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 1610612736,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 300
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/small-conductor-targeted-isolated-v3/replay.log",
+        "log_sha256": "72160498a6f801e75e45bdd62329073d63677dc0ba7cf5d483b4fdfaa8d96059",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 213041152,
+        "pid": 507146,
+        "returncode": 0,
+        "rss_limit_bytes": 1610612736,
+        "start_token": "54716688",
+        "termination_signal": null,
+        "timeout_seconds": 300,
+        "wall_seconds": 27.689805423957296,
+        "worker_result": null,
+        "worker_result_sha256": null
+      }
+    },
+    {
+      "stage": "check",
+      "supervision": {
+        "command": [
+          "/usr/bin/python3",
+          "elliptic-curves/cas/study_small_conductor_target.py",
+          "check"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 1610612736,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 300
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/small-conductor-targeted-isolated-v3/check.log",
+        "log_sha256": "89aff8a8070826b44574455606568c91f452e38c9082cb82b3aa42b1b555c4e4",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 77774848,
+        "pid": 508748,
+        "returncode": 0,
+        "rss_limit_bytes": 1610612736,
+        "start_token": "54719458",
+        "termination_signal": null,
+        "timeout_seconds": 300,
+        "wall_seconds": 7.050646956078708,
+        "worker_result": null,
+        "worker_result_sha256": null
+      }
+    },
+    {
+      "stage": "odd-cloud",
+      "supervision": {
+        "command": [
+          "/usr/bin/python3",
+          "elliptic-curves/cas/audit_small_conductor_targeted_cloud.py",
+          "--check"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 1610612736,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 300
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/small-conductor-targeted-isolated-v3/odd-cloud.log",
+        "log_sha256": "df90b77bebb285f6eb8095c845b7fd6fdb84e01e70ea63be865ceef44c361934",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 32010240,
+        "pid": 508926,
+        "returncode": 0,
+        "rss_limit_bytes": 1610612736,
+        "start_token": "54720166",
+        "termination_signal": null,
+        "timeout_seconds": 300,
+        "wall_seconds": 0.800158262019977,
+        "worker_result": null,
+        "worker_result_sha256": null
+      }
+    }
+  ],
+  "status": "PASS",
+  "zip_sha256": "add77f204d30e2fa5c36cb4ae82410d480f80bed1602a0236b20b09b3846b22f"
+}

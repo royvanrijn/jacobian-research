@@ -54,7 +54,7 @@ static int power(int a,int n,int p) {
 }
 int main(int argc,char** argv) {
  try {
-  if(argc!=11)throw std::runtime_error("usage: joint_scan SHORT_CACHE EXT_CACHE SIGN NUM DEN KEEP SHARD SHARDS INNER");
+  if(argc!=11)throw std::runtime_error("usage: joint_scan SHORT_CACHE EXT_CACHE SIGN NUM DEN KEEP SHARD SHARDS INNER PRIME_COUNT");
   int sign=integer(argv[3],-1,1);if(!sign)throw std::runtime_error("nonzero sign required");
   const int cap=16777216;
   int N=integer(argv[4],1,cap),M=integer(argv[5],1,cap),K=integer(argv[6],1,1048576),shards=integer(argv[8],1,cap),shard=integer(argv[7],0,shards-1),inner=integer(argv[9],0,std::max(N,M)-1);

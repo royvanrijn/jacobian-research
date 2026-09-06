@@ -1,0 +1,36 @@
+{
+  "schema": "elliptic-curves.small-conductor-norm-batch-isolated.v1",
+  "status": "PASS",
+  "supervision": {
+    "command": [
+      "/home/royvanrijn/.local/bin/sage",
+      "-python",
+      "elliptic-curves/cas/audit_small_conductor_norm_batch.sage",
+      "--check"
+    ],
+    "failure_reason": null,
+    "limits": {
+      "address_space_bytes": null,
+      "cgroup": null,
+      "pari_stack_bytes": 256000000,
+      "poll_seconds": 0.05,
+      "rss_bytes": 1610612736,
+      "terminate_grace_seconds": 1.0,
+      "wall_seconds": 180
+    },
+    "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/small-conductor-norm-batch-isolated-v1/replay.log",
+    "log_sha256": "4338a6050c024b0cf1e2feba13f4dc36645855d9af1a1961d2c449d7c7d658c7",
+    "outcome": "completed",
+    "peak_observed_rss_bytes": 427184128,
+    "pid": 1309866,
+    "returncode": 0,
+    "rss_limit_bytes": 1610612736,
+    "start_token": "55004142",
+    "termination_signal": null,
+    "timeout_seconds": 180,
+    "wall_seconds": 9.365123981027864,
+    "worker_result": null,
+    "worker_result_sha256": null
+  },
+  "zip_sha256": "43236ce0ad4441b228e22a167590db9ec1e72f5123def255312683978a0f8045"
+}

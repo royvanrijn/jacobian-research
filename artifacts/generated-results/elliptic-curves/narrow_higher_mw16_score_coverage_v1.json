@@ -1,0 +1,353 @@
+{
+  "argument": "The scanner retains the best4096 of each signed slice, ordered by decreasing combined units, decreasing good count, denominator, absolute numerator. Every omitted address is no better than its slice boundary in the first three fields. If the last admitted scalar candidate in a band/family is strictly better than every slice boundary in those fields, no omitted address can precede that candidate, regardless of the signed-numerator tie convention. Thus truncation cannot remove any address before this selected prefix, including any earlier within-roster duplicate that the frozen scalar selection skips.",
+  "claim_boundary": "Independent exact homogeneous models, primitive higher-band membership, within-roster Q-isomorphism distinctness, saved score provenance and finite strict-prefix coverage through prime32749. This preserves the existing selector. It does not prove the globally best65521 scores, a rank predictor, coverage outside the declared slices, catalogue absence, rational-point independence or a new rank.",
+  "distinct_Q_isomorphism_classes": 10240,
+  "distinct_j_invariants": 10240,
+  "groups": [
+    {
+      "band": 2,
+      "family": "a1-fibration-01",
+      "last_selected_primary_key": [
+        -130441516978995,
+        -3505,
+        49721
+      ],
+      "parameter_height_maximum": 65524,
+      "parameter_height_minimum": 16441,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -127595206178456,
+            -3500,
+            60985
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "b2-a1-fibration-01-neg"
+        },
+        {
+          "last_retained_key": [
+            -126380092682375,
+            -3504,
+            64500
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "b2-a1-fibration-01-pos"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 2,
+      "family": "a1-fibration-02",
+      "last_selected_primary_key": [
+        -130039900525485,
+        -3505,
+        50641
+      ],
+      "parameter_height_maximum": 65515,
+      "parameter_height_minimum": 16387,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -125977439671005,
+            -3507,
+            17654
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "b2-a1-fibration-02-neg"
+        },
+        {
+          "last_retained_key": [
+            -127209521429238,
+            -3503,
+            31441
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "b2-a1-fibration-02-pos"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 2,
+      "family": "a1-fibration-03",
+      "last_selected_primary_key": [
+        -129791337819072,
+        -3505,
+        48347
+      ],
+      "parameter_height_maximum": 65499,
+      "parameter_height_minimum": 16400,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -126920595253174,
+            -3503,
+            40155
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "b2-a1-fibration-03-neg"
+        },
+        {
+          "last_retained_key": [
+            -125773163610333,
+            -3506,
+            57556
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "b2-a1-fibration-03-pos"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 2,
+      "family": "a1-fibration-04",
+      "last_selected_primary_key": [
+        -129947811768287,
+        -3504,
+        7701
+      ],
+      "parameter_height_maximum": 65491,
+      "parameter_height_minimum": 16699,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -125964547677918,
+            -3499,
+            34034
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "b2-a1-fibration-04-neg"
+        },
+        {
+          "last_retained_key": [
+            -127182779422037,
+            -3503,
+            40725
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "b2-a1-fibration-04-pos"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 2,
+      "family": "a1-fibration-05",
+      "last_selected_primary_key": [
+        -129841781705003,
+        -3503,
+        26041
+      ],
+      "parameter_height_maximum": 65499,
+      "parameter_height_minimum": 16696,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -127047241471804,
+            -3505,
+            25273
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "b2-a1-fibration-05-neg"
+        },
+        {
+          "last_retained_key": [
+            -125856335172064,
+            -3505,
+            37726
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "b2-a1-fibration-05-pos"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 3,
+      "family": "a1-fibration-01",
+      "last_selected_primary_key": [
+        -130406481945862,
+        -3500,
+        77135
+      ],
+      "parameter_height_maximum": 262111,
+      "parameter_height_minimum": 65553,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -127649902330381,
+            -3503,
+            89423
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "b3-a1-fibration-01-neg"
+        },
+        {
+          "last_retained_key": [
+            -126378888215386,
+            -3503,
+            36138
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "b3-a1-fibration-01-pos"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 3,
+      "family": "a1-fibration-02",
+      "last_selected_primary_key": [
+        -129956120244792,
+        -3506,
+        10829
+      ],
+      "parameter_height_maximum": 261853,
+      "parameter_height_minimum": 66451,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -125976652176030,
+            -3505,
+            83378
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "b3-a1-fibration-02-neg"
+        },
+        {
+          "last_retained_key": [
+            -127210050994264,
+            -3506,
+            100941
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "b3-a1-fibration-02-pos"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 3,
+      "family": "a1-fibration-03",
+      "last_selected_primary_key": [
+        -129775215814392,
+        -3506,
+        212873
+      ],
+      "parameter_height_maximum": 262123,
+      "parameter_height_minimum": 66981,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -126981421479996,
+            -3503,
+            36745
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "b3-a1-fibration-03-neg"
+        },
+        {
+          "last_retained_key": [
+            -125707541685114,
+            -3502,
+            3798
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "b3-a1-fibration-03-pos"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 3,
+      "family": "a1-fibration-04",
+      "last_selected_primary_key": [
+        -129928491848235,
+        -3506,
+        57025
+      ],
+      "parameter_height_maximum": 262096,
+      "parameter_height_minimum": 65885,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -125962708674228,
+            -3506,
+            233390
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "b3-a1-fibration-04-neg"
+        },
+        {
+          "last_retained_key": [
+            -127152257955888,
+            -3501,
+            188097
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "b3-a1-fibration-04-pos"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 3,
+      "family": "a1-fibration-05",
+      "last_selected_primary_key": [
+        -129808220971047,
+        -3506,
+        255013
+      ],
+      "parameter_height_maximum": 261978,
+      "parameter_height_minimum": 66065,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -126981157497889,
+            -3503,
+            177189
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "b3-a1-fibration-05-neg"
+        },
+        {
+          "last_retained_key": [
+            -125887053866180,
+            -3506,
+            26468
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "b3-a1-fibration-05-pos"
+        }
+      ],
+      "strict_retention_coverage": true
+    }
+  ],
+  "models_checked": 10240,
+  "schema": "elliptic-curves.higher-mw16-model-and-retention-audit.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_five_mw16_atlas_v1.json": "88a8c61c2722394bb812da601e24ea2c19e54361eef4b0fe9c7924e78c828801",
+    "artifacts/local/elliptic-curves/joint-mw16-higher-annuli-v1/controller/ledger.json": "3dad58178d7b74cf4646e63f1e6dfdebba1ed6f9da959b34ea72a18e47096571",
+    "artifacts/local/elliptic-curves/joint-mw16-higher-annuli-v1/protocol.json": "177455f7db04f2d9a3c4d19ecc1f7fb795eac01314f4ce57ec5aabc9cc16ecab",
+    "artifacts/local/elliptic-curves/joint-mw16-higher-annuli-v1/replay.json": "554d53f3812fcc21cf2b8bced6d672aeba0a7b59fc6bed51d63721973b0629a8",
+    "artifacts/local/elliptic-curves/joint-mw16-higher-annuli-v1/result.json": "9025bf022546a637efe036933c4718975fb1ffc37c169241ece3143436984814",
+    "artifacts/local/elliptic-curves/joint-mw16-higher-scores-v1/protocol.json": "3a5675d9e27c5922e5ea7790df958929c88d619a1862662fa46df5dd76aa30e6",
+    "elliptic-curves/cas/audit_higher_mw16_score_coverage.py": "6e739bdb9ac9c25fefbc199afbb22b0b98b0251a30b753c174ce750dc9f94dd3",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9"
+  },
+  "status": "PASS",
+  "strict_retention_coverage": true,
+  "variant": "narrow"
+}

@@ -1,0 +1,1246 @@
+{
+  "attempted_charts": 3136,
+  "claim_boundary": "Eight fresh signed denominator slices in131072<H<=524288 on11952, disjoint from the previous complete square. All32768 retained cached scores precede4096 exact equation exclusions/scalar scores and64 distinct finalists; wholly disjoint validation never changes selection. Up to3136 generic17-only point charts with all maps before points. The977 prior-equation and593 catalogue exclusions are independently rechecked after terminal exact point proofs. Matching finite bounds do not prove exact rank, saturation or absence. No universal novelty, rank density, calibrated sensitivity or isolated portability claim.",
+  "completed_point_boxes": 3136,
+  "maximum_declared_boxes": 3136,
+  "retained_point_witnesses": 1144,
+  "rows": [
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 9858275401641,
+      "icarm_matches": [],
+      "id": "11952-0012356",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-139001/178062",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 17855781519645,
+      "icarm_matches": [],
+      "id": "11952-0020547",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "496652/286173",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 16594178778691,
+      "icarm_matches": [],
+      "id": "11952-0020750",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "427784/450013",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 11592951911998,
+      "icarm_matches": [],
+      "id": "11952-0029609",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "205468/78775",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 11115536819661,
+      "icarm_matches": [],
+      "id": "11952-0008195",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-417726/405193",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 16262687545369,
+      "icarm_matches": [],
+      "id": "11952-0023305",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "274301/56797",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 16516800635086,
+      "icarm_matches": [],
+      "id": "11952-0000528",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-439876/364309",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 13439522895169,
+      "icarm_matches": [],
+      "id": "11952-0028959",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "419121/46007",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 15134600038981,
+      "icarm_matches": [],
+      "id": "11952-0029698",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "261020/193463",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 15010974800472,
+      "icarm_matches": [],
+      "id": "11952-0005559",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-171663/22172",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 23,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 5244971424273,
+      "icarm_matches": [],
+      "id": "11952-0008641",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-32332/306889",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 11707867426706,
+      "icarm_matches": [],
+      "id": "11952-0028807",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "260573/308151",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 12632087287543,
+      "icarm_matches": [],
+      "id": "11952-0016413",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "151533/361322",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 17183145615787,
+      "icarm_matches": [],
+      "id": "11952-0012319",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-64521/243598",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 10548745804757,
+      "icarm_matches": [],
+      "id": "11952-0025870",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "124393/352582",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 7421475571004,
+      "icarm_matches": [],
+      "id": "11952-0016397",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "368779/508778",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 14309820790327,
+      "icarm_matches": [],
+      "id": "11952-0029043",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "390120/127927",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 42,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 9479012980428,
+      "icarm_matches": [],
+      "id": "11952-0016402",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "198823/508778",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 13198461649506,
+      "icarm_matches": [],
+      "id": "11952-0025297",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "394283/254278",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 12477287039762,
+      "icarm_matches": [],
+      "id": "11952-0025167",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "179951/57670",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 21,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 14062781420101,
+      "icarm_matches": [],
+      "id": "11952-0028788",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "22345/340919",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 9639513838614,
+      "icarm_matches": [],
+      "id": "11952-0004546",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-511711/497308",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 8833340155497,
+      "icarm_matches": [],
+      "id": "11952-0014174",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-312299/243598",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 8892726437975,
+      "icarm_matches": [],
+      "id": "11952-0000336",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-125206/397077",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 11669792661837,
+      "icarm_matches": [],
+      "id": "11952-0005603",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-129881/431772",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 9887216720732,
+      "icarm_matches": [],
+      "id": "11952-0008677",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-165258/126665",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 12010092168601,
+      "icarm_matches": [],
+      "id": "11952-0008375",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-40549/224969",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 9531719953102,
+      "icarm_matches": [],
+      "id": "11952-0011475",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-484841/290505",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 12524734077133,
+      "icarm_matches": [],
+      "id": "11952-0008287",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-367628/61129",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 12116896079047,
+      "icarm_matches": [],
+      "id": "11952-0029001",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "80240/521143",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 13686436467226,
+      "icarm_matches": [],
+      "id": "11952-0017806",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "466679/344938",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 14297883900534,
+      "icarm_matches": [],
+      "id": "11952-0004353",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-124649/366236",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 13109036811399,
+      "icarm_matches": [],
+      "id": "11952-0024583",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "88467/418118",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 17249240876625,
+      "icarm_matches": [],
+      "id": "11952-0020620",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "522271/138717",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 9404995878107,
+      "icarm_matches": [],
+      "id": "11952-0020721",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "284239/7645",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 8633710250611,
+      "icarm_matches": [],
+      "id": "11952-0021406",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "263725/237021",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 10642553690311,
+      "icarm_matches": [],
+      "id": "11952-0012418",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-393857/259982",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 15105956204186,
+      "icarm_matches": [],
+      "id": "11952-0009951",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-58112/306889",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 12741991348068,
+      "icarm_matches": [],
+      "id": "11952-0031424",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "331851/78775",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 8769452710462,
+      "icarm_matches": [],
+      "id": "11952-0021628",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "39770/187869",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 11984433470738,
+      "icarm_matches": [],
+      "id": "11952-0003573",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-387017/3861",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 14562847258891,
+      "icarm_matches": [],
+      "id": "11952-0000387",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-371981/184085",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 14631222053108,
+      "icarm_matches": [],
+      "id": "11952-0000125",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-131683/20245",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 13351676547845,
+      "icarm_matches": [],
+      "id": "11952-0030849",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "500609/324535",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 9935201848400,
+      "icarm_matches": [],
+      "id": "11952-0020842",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "141163/286173",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 13394707338401,
+      "icarm_matches": [],
+      "id": "11952-0012202",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-320052/110281",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 22,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 8963052392727,
+      "icarm_matches": [],
+      "id": "11952-0023587",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "122671/138717",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 11072252307778,
+      "icarm_matches": [],
+      "id": "11952-0024961",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "292265/106822",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 9568049738376,
+      "icarm_matches": [],
+      "id": "11952-0002636",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-455674/118549",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 13225527824286,
+      "icarm_matches": [],
+      "id": "11952-0005382",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-372957/448156",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 8443514737927,
+      "icarm_matches": [],
+      "id": "11952-0014811",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-279583/63374",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 11798724020037,
+      "icarm_matches": [],
+      "id": "11952-0023344",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "154806/7645",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 6780448973369,
+      "icarm_matches": [],
+      "id": "11952-0019047",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "276299/246634",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 10292061350383,
+      "icarm_matches": [],
+      "id": "11952-0017941",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "161013/50026",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 16057852747289,
+      "icarm_matches": [],
+      "id": "11952-0015546",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-465445/14222",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 11235447649166,
+      "icarm_matches": [],
+      "id": "11952-0017417",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "270661/213866",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 12543948202457,
+      "icarm_matches": [],
+      "id": "11952-0000113",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-98778/184085",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 17558212419229,
+      "icarm_matches": [],
+      "id": "11952-0005163",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-421775/431772",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 9362536650243,
+      "icarm_matches": [],
+      "id": "11952-0006422",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-158689/431772",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 10660398220615,
+      "icarm_matches": [],
+      "id": "11952-0032685",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "505173/439223",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 10774658134201,
+      "icarm_matches": [],
+      "id": "11952-0030017",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "340348/127927",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 15966745281164,
+      "icarm_matches": [],
+      "id": "11952-0001186",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-245579/397077",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 12094838574144,
+      "icarm_matches": [],
+      "id": "11952-0019849",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "488953/874",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 7102053100203,
+      "icarm_matches": [],
+      "id": "11952-0009139",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-119822/356041",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    }
+  ],
+  "schema": "elliptic-curves.annulus64-experiment.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0000113_mod2_v1.json": "b0339096d147118027ca9cf4463f67f2a3f6e08946171c2a1cd2e7a78cacef73",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0000113_modl_v1.json": "8b08ae620f08a20285c2d5d36f671b777352bbd3a1326ad453099f07851a05d2",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0000125_mod2_v1.json": "b831273b11b11fc5f4e07e28089198d2e7c877666f3a5ff580b7d1fb975b5c45",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0000125_modl_v1.json": "cdfa88d465721556cab596aad6128bcc14b2d4cd7250386e22b0a691da50735f",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0000336_mod2_v1.json": "82d049a1e470347071d1a9c35aeedadc1c56283bbe9af303ea677ccdd9425bc2",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0000336_modl_v1.json": "6bc674bf4613953359b4ebced5b27dc3dec4cd4320f77bd432431cd05aeecaba",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0000387_mod2_v1.json": "1f88db7ffcf10df782b359ba24b7ba6fa2c532e61cc50c39b24fe7825fd5650a",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0000387_modl_v1.json": "533c5d94e40ea99c2dba6e3c834fc66b7af717243795b0b005cbf7c3c310e3a3",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0000528_mod2_v1.json": "ce38fab1489196434852501506b8c6c9d1c193f0410f4e85660f700a468751a3",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0000528_modl_v1.json": "3cb57e62da2e99f11ed1953e7b4b0e110e6eca12b7f46f33e421b0af2d205dda",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0001186_mod2_v1.json": "504dbef0fe3ca812d6c531d518a0df6c86b50871cc165bd312a151fd6df2dca3",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0001186_modl_v1.json": "c4409445cda0728143c65cec8b97dbab9906384c822b5b70d258c208c903f524",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0002636_mod2_v1.json": "d7a936bcf7e81fb367f652ac7e2d9d289b0188d69cbf5e9dc0ab3fa297c4716c",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0002636_modl_v1.json": "8d7e3a9763e3a39866869464ffb06d40b5d0833c31743d09c32e2041aafba559",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0003573_mod2_v1.json": "9ba7fa61e50260c11ddccf629ec687956730a062ba639650c3c16ce08d96cb26",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0003573_modl_v1.json": "c0944b4d8c45a3a986b0bda96cab4831112474c35d809d1e05d626bfe79f8175",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0004353_mod2_v1.json": "a17c9e571edc1080d00b37ae3c2b83c240b98df9d78303a5fe8184b667fb9189",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0004353_modl_v1.json": "293cf06dfe5d6fe82722cdb179e8ee545eca32d7d92a3ae686df1096ab579f22",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0004546_mod2_v1.json": "66ece4f7b43fe42b691e4109f99e40146d416c02a278c72983af0da79c4a0bbc",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0004546_modl_v1.json": "d59177a1b9faa4f2acfc8bf85f03137efddbd29dfb41a303dcc32aafcb749d16",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0005163_mod2_v1.json": "d259a19d342dccd157aeb4e6b7e1b92219e2d68d72d2d863daa660255142a7af",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0005163_modl_v1.json": "4702a14e9f2eea740253c5199730ff2a40039047e2e17d52319c3f44e845a196",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0005382_mod2_v1.json": "855f0a8ae9e15e1b98f9265282b1ae1a95dfff15bb24523f5e0853cd0243370c",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0005382_modl_v1.json": "961d078e8cdab089e3b3da6d22df72ff4c1895bd0aaa1ea6e96c83f25c71f73e",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0005559_mod2_v1.json": "0f17c9fb096f1e14e5471afe831f94968b5538cc3fd7d4eb70bee62636a4c870",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0005559_modl_v1.json": "7636aeb278b07a447d517a1b0ff127770e9a2444d0724203f779a577a89af255",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0005603_mod2_v1.json": "0313524afcb1d3c39cf019eba7de4174d1c98397eafcc27351a8f06089b16026",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0005603_modl_v1.json": "9da7e5bcd503fd2d817af8a653d3308e5561c05d17be2fd51367944bc505e850",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0006422_mod2_v1.json": "b099f365f682e0e967013ee9af02dea0183e8690af87d82aa42048b74ad1af3e",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0006422_modl_v1.json": "a6fff2bdba30daf1c7f186f505adc4bf04107cfb9321d61a0d3c2804e699e5ae",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0008195_mod2_v1.json": "b300c88387d3f498ee56d264cca88a2af82f932d2ba6467069de0d05a5a26aa2",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0008195_modl_v1.json": "8d6a69fad77a7888a53305b8fd2ecffe96aa7977f15133522fb0e56d9e92537a",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0008287_mod2_v1.json": "304cd815c13f708ac288345c2bbdb209ce94bd8298ea15f9c146f40bfe06e5a9",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0008287_modl_v1.json": "9a7c40a1ae0bf1b09bb60c437d15c67277d50e672517161c89dee65d6112f155",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0008375_mod2_v1.json": "ea2ed4f3e53657f718d04e7e5b2d5481e0a800e14618f0fa5472ed1334a063e8",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0008375_modl_v1.json": "776d857c407bc009d7b867d0908ddb2ad7cd0fa5647f5aee7adaa4dc079d2b32",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0008641_mod2_v1.json": "0e5e81cb02ec173739cff3540f4e9a968221489e48a994cee2dbc36764c96bdd",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0008641_modl_v1.json": "8339d5ad831c0f3b10ffedfea15d1a7db8f05d878fb08c0e02d65791ff35a497",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0008677_mod2_v1.json": "31a1fa80c512e85d8fa7c5e49e518b059a594b7ade139f09a2c2a43e8edbc6c4",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0008677_modl_v1.json": "7519b54daf9b6aaddac996f9e23eec322381b10b38cb7777c7af483004848b48",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0009139_mod2_v1.json": "0bdb85c730fac3e7201789ef7777932912a372cfb0d216ea89ae6219659e9a7a",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0009139_modl_v1.json": "7020c606a6d9361e2d6b7efdc50b499d1ae3df38af4334fae119d901393bc5c9",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0009951_mod2_v1.json": "2bdb03c3bfa3c6e1c0e3054683823e28ee1339d40cc28236d3ba139b1070bbb8",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0009951_modl_v1.json": "9e65fd44bc2749e4e91c7424f3c1431c5e3a07febf9b6638998f62c25298fcf3",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0011475_mod2_v1.json": "e74e307ba1fc72013b3eb25c2d253a048bc8c78a60957dbf128820ffee652bce",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0011475_modl_v1.json": "9cc3279570953b1eea2e660084a36183e4dad5ccb217297d949d26b2236f30c0",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0012202_mod2_v1.json": "94546f31f20ae0c8aa2ec37fd8cb133006abfe0dc31736b407b78f1ce28900f1",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0012202_modl_v1.json": "241b2ff03f52f11d69fb35668fd4c0c28f7f24afc267c6d36af25a790dadc300",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0012319_mod2_v1.json": "539c4606fb84dc5ac9f186ca98185f503a196a5b93a02a528d633c0ced2a750e",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0012319_modl_v1.json": "61a01dab6fa82b4696bb61a2df758f15dad812d75005aea5f7ad4e4d553cdeb2",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0012356_mod2_v1.json": "92b5c99b8eaff29e62dfb1edaa10ddac5b98dce4089042acd959c0592904dd73",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0012356_modl_v1.json": "c9f73ca9a104b0363e6ca1ad567d05a11ac1850dc74a013e66c18f07c78e0137",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0012418_mod2_v1.json": "f762d2d7ec53edc0bdafd541d2d471bf8ff6719486d7ffc16698615fc64b7bae",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0012418_modl_v1.json": "fd5541a5b4431706ce19d1c524ed8b3b47b5df5780db47b9ec6e35f5fb872740",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0014174_mod2_v1.json": "a8e59358bae8edc6a8562dd97d611420b70d626bf1e805015b35467248a8bc61",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0014174_modl_v1.json": "b64f8901976d4638b07cc873e61e2f45cb4d911f20b4b56085ad1c51e422efc5",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0014811_mod2_v1.json": "ceedf6c4348211bfe069a2b8ccd2980face22bde21747acf0204f9ba5bec5cb7",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0014811_modl_v1.json": "5c903e9b8ba631bbc3c7b14384d5846f1b54d067876f5f911f3a10abc89e0177",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0015546_mod2_v1.json": "a177a5d42c768711c8d584dc929ed891add7f57c59b7369b32aac1ad9a21cf8d",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0015546_modl_v1.json": "49b6c0bebbbf77adb67da51b0c103fd244c5f295fafe7e312ac982f0e0771a04",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0016397_mod2_v1.json": "1c9fe229aa9fcd8c91f1e64a9dc40b05bb86bd2882b54e333877f5e729a7409f",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0016397_modl_v1.json": "9112d500e9413fe0f1b2313d607f7d2c2329b7c352db18060267deb1a42208a0",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0016402_mod2_v1.json": "ece7c989d2844a94b9e1516100b5426a4fa7e457ce347898ff7a1bc106aa47fe",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0016402_modl_v1.json": "383126684e8e4c42b4178df0b7922950d1d21b6a68d6e4050cbe8bfc7227e4ed",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0016413_mod2_v1.json": "d81e4dbb63072ec22c5fbc3119830220b1d4576e35ae14b72c36973e116741dc",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0016413_modl_v1.json": "d2bc98e4f1cce68a54ba88fa06fdd41f9176cb363995bf3f4e0a40265dc70938",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0017417_mod2_v1.json": "83eac8b96d5e27f5b3c9af22b460c630e70969640eca3507235da7aed1197aed",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0017417_modl_v1.json": "4e738fa5c4bdcabe562092392a127d8ceb82498fd6f714a4770a484f0b2f8349",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0017806_mod2_v1.json": "74effcb8c9641d732bf126e22062aa67f2bccc8fec89ec983e39288e33694617",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0017806_modl_v1.json": "dc4fdd1625a8873d55ce62c45c0a81451cb39e09db18465a917eeb0c81a6225c",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0017941_mod2_v1.json": "ad5cc77a8e7f8ca41e464e42e278c0f2418a5c5c06ff7053eb28a43c02d9bed0",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0017941_modl_v1.json": "9309c732820cbe3623fdc315b150cf59cb00a1c0f4c0ee8c65e6fc50e88c0c5c",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0019047_mod2_v1.json": "4205ce9b739c6e91a5b392f6fab81abc31bcaf0ae15050e2c9e8a67d26ebbe76",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0019047_modl_v1.json": "5afdacc2634dd31cef15c3a5aac178847e69c62809bf629f8a79b2cd9b5c887e",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0019849_mod2_v1.json": "0baadda7f5912c51013335c15320e9e7806bc231bdebc96b84d50af0576c0af4",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0019849_modl_v1.json": "e0f836e4d5531be0dfbffd93b746e9aadc95edc77f7644865b411d5297a58843",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0020547_mod2_v1.json": "51ae5a2d3798572eb4fa80c20b2b7da92e4874c64cab94d77dc6148ee8fa5e71",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0020547_modl_v1.json": "e3a6442af55ec3815a7957ac896627ce76776e3de0aae436152fd6c04998f031",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0020620_mod2_v1.json": "ca48e1687eb487438989338c1dbd0ad087510665a882d5ff63be3500f5fad426",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0020620_modl_v1.json": "c9762c0ac915b46542ba0130545e591403056eaed4a86dbce68b2969ed78341d",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0020721_mod2_v1.json": "044294adeeda801db7c0318956e37d5224fa516d089e1a803a745fcd45dcba6b",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0020721_modl_v1.json": "041012925c3839291fa60ad6632cf97fdf08f04cbd3a7d5028cbf03a78220c41",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0020750_mod2_v1.json": "561eb10d43094e726bbbf6c6d909adda98408eb1ab378d02dd33e10cc4b63518",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0020750_modl_v1.json": "28ad690de24d52d1bb5d7e5e16aa05451748c0fc4258d623a30f2d7e88487864",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0020842_mod2_v1.json": "a8d178c85cccf395e3ca00a8557b55870a1894c46dd956c1dd91c5efaa9ff14f",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0020842_modl_v1.json": "e53222ee9e68e5fff404bdc24f47aa803cd56b1992db15a3c31da610eba285c0",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0021406_mod2_v1.json": "7cf1e474a0cd542ac6151bbf4e217be0a5da57674adc342f2e52a2c545548a3e",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0021406_modl_v1.json": "7b615c18b85dd5e9c67f3311289e2cfb845193d74e3211012823f378cc0ec30e",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0021628_mod2_v1.json": "03dbe711371a049e579881ec0233269ac84da2341c1d85761eb9c781341f855c",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0021628_modl_v1.json": "bd57acea4f8cb486be0e376b217ec5589cf4cbb3f2adf4b69dcebad7f3dfaf6a",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0023305_mod2_v1.json": "5c08b11ddf1f7efc15bde3242fc6e019fa9d0e57c800a871a8e030b7460c31e7",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0023305_modl_v1.json": "e69c9731c80491bedad17bc76a38ba6584b15c2dcc3a8ef36febdb5e5da99f69",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0023344_mod2_v1.json": "d738e5bc8453006a3281be9e4ba0e385cc4940e2d76ccb87d848dcf57d29f160",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0023344_modl_v1.json": "385a94d722b61f981bbfc511bf1b221ce6c3d5bad6b1a4e56e92670ab1b550d4",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0023587_mod2_v1.json": "565b991154e94a5ad5b86ac738ffa31a397e56c8add5639327222fd8beaf36ff",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0023587_modl_v1.json": "567725cc519affc79ead0691e2884c40eba130f8cca7b0f15b93e15a41c24183",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0024583_mod2_v1.json": "199a12ef48e723a007e59e95edff6115ffb9fe9110291b9139ac6607f587de86",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0024583_modl_v1.json": "8ace145d0172d4c543e894a071e5f7e7aa2dd4d5da33535310e377f314644a8c",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0024961_mod2_v1.json": "b48227a2d113f06b8c04d36c40e0f8753150bfc6a11faad025d13efb7b2d1bad",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0024961_modl_v1.json": "f97f83740c768b6e59ce8ad737547f8c2c91a45cb6ba8189ae78a36ecef2da37",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0025167_mod2_v1.json": "322ee5588627f9c788afeceb20d5de6dadba2a852cf08a56ddf84f14e935e11d",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0025167_modl_v1.json": "4808c1cee1566dca7ffb1bd9885c48a05fdabc010961ed49fdc83a5c104c9c90",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0025297_mod2_v1.json": "6bedc63311a0e8aee60fab68161b2c7f02e479a6cb3b5fb0ef3710e768e3d60e",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0025297_modl_v1.json": "8ce8d949af79f6d0e68ffaa9dd1bd9a0f441b2abda08d86f1138bee1c53ec6f1",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0025870_mod2_v1.json": "0f03fcbf447be3ffa1f929d0f22233be6abd2b9eec5e963e59b40ee127d8aa0f",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0025870_modl_v1.json": "01d0d34cd0d55d361096e85146a6e7d2050d5c3f363a20ac21c643a690d93378",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0028788_mod2_v1.json": "d9513aceba235f5360e16864b52ad91b5f5e1a352ef04c2850cff2bd0f436cbc",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0028788_modl_v1.json": "d65079aef335b6d26caecc9bb567c4429a2343b058e824b1a625c32ee359d68b",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0028807_mod2_v1.json": "e356878bbac1045398ceeacb75039a330cda7d3e29f5eb3806ec7219e1b8a8c3",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0028807_modl_v1.json": "5b32f34d15fda4747eb5d795963c92d9373e93a5f5ddc472a8b22dda1fbf80c4",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0028959_mod2_v1.json": "57802583d3c04a4f57d6668cbd39e988252e48be0d1dbe4ae3ac5df2a107234a",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0028959_modl_v1.json": "b95ff9715a875150560f80623501eb76865737ef50e6d7ebcc134dceff45794e",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0029001_mod2_v1.json": "a3466bafc4500b19a71363f75ec369ccc0ee152536ee90ace89e6d03ad733c2a",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0029001_modl_v1.json": "d3e0b1e4e1fa52731acf2c54ed743967cf90c6f8b8aaea729b7e0ee9ffa2f7f0",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0029043_mod2_v1.json": "bbb65e8f0147149da096c8e59b93c0e3f315ec0991f367742ba005178e82e970",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0029043_modl_v1.json": "1e3502ed58d64755d83c9a9d11608fe0175f14ed30e1763fa23e8f9f8ec5af3a",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0029609_mod2_v1.json": "eba81975799a5c7bc9735ff07082b5dec1fafc6f72a3cec748d67ef178164369",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0029609_modl_v1.json": "b43c350a80e0f9b0f13dd8a4b7dcae73aebded9d55c1bbf5e88c2917cc13fc9d",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0029698_mod2_v1.json": "98a41fdb9b4d03d9f0bf35815956493ec1019410c087ed7b799c8c12b73ec301",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0029698_modl_v1.json": "99a0a0feb62a0227870706ae5b7623b4ffe48280dd93cbab80c3c9054ddf39dc",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0030017_mod2_v1.json": "e8c738d880a2258185c01d06c3f79bd343d6dc32b2480701ceba634e2fa00247",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0030017_modl_v1.json": "44c217767241f08e6fed82d5655b603934a730aa03fbf64df923f38aaef61392",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0030849_mod2_v1.json": "d8cf392c78011f9842ce45622bebe12331ca67bd497673194c4ff6254c69d5bb",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0030849_modl_v1.json": "4ea4eae25f4df544e08da5bd80d02b1fdaf4010717cde946f3663bb3d881bffd",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0031424_mod2_v1.json": "a7ca2ff9906811535f6bafb820a58329d676505d82497d60cf3843e48a43ac16",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0031424_modl_v1.json": "f117631b4206712b473104f2fc9586bc48b673471b877d9d7d9bbef7c7f7e2a0",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0032685_mod2_v1.json": "77d5dd6e14946b239a1315c10d196e5ff83a8e18785e40cbe9bd84a36ed15c3a",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_11952_0032685_modl_v1.json": "5d87ad944614701102fcbcb334948cd9eeef9189d56a985d7bdd00dd29e9767e",
+    "artifacts/generated-results/elliptic-curves/annulus64_r17_results_v1.json": "3303f52860b2887ce12141e405fb817f8bc050078b78b551f48787ea0cc75848",
+    "artifacts/generated-results/elliptic-curves/new_annulus_11952_selection_v2.json": "09a62ebe9bb37055f887a136b920682885f415ce0068f1d216e742b5fc64f53b",
+    "artifacts/local/elliptic-curves/11952-new-annulus-scores-v2/fresh-validation.json": "2ca2d04df538b9d2a33ee477a79e1457e3654fa9e422bb4afbc60fb8535343d5",
+    "artifacts/local/elliptic-curves/annulus64-controller-v2/freeze.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/local/elliptic-curves/annulus64-controller-v2/geometry.log": "9197cc5bd75efe279eecae6931f81cb78e329a5df44fa8d862e1d37d5060ed18",
+    "artifacts/local/elliptic-curves/annulus64-controller-v2/ledger.json": "3b688137e2f499bad272883a6cf8073c2b7b529cf167c8744f6091b41b59eee9",
+    "artifacts/local/elliptic-curves/annulus64-controller-v2/maps.log": "f0bd3512a73c06adbc89e0ab3056e985cfea4a694371bc48210cd2bc4a9822fb",
+    "artifacts/local/elliptic-curves/annulus64-controller-v2/odd.log": "238ef332e769d79fe6c10026865d54f1082e5f51a45f5c861e5e3bef6276c097",
+    "artifacts/local/elliptic-curves/annulus64-controller-v2/points.log": "3f950540422a931c36d05ebdd850230aab16588aa10f54ee7f61f1a4755c5c20",
+    "artifacts/local/elliptic-curves/annulus64-controller-v2/protocol.json": "1e92378f2a027852e095970d9b2c4f1c9b25642c0c002c1eb5d2f2581d6b8daa",
+    "artifacts/local/elliptic-curves/annulus64-controller-v2/verify.log": "9c26e3dbb929e00ca8b8a939d7178adcde146ac8688330aee8bceeca35b06fe4",
+    "artifacts/local/elliptic-curves/annulus64-r17-pari-v2/ledger.json": "c64b166ae00c11d7f6009ef65b31a34e3ae5d8079b411ecb6dc889df29676158",
+    "artifacts/local/elliptic-curves/annulus64-r17-pari-v2/odd-cloud-audit/ledger.json": "274991832d5610eb7977c8b82636197983b9150051b11e31617cd16c30e7e185",
+    "artifacts/local/elliptic-curves/annulus64-r17-pari-v2/protocol.json": "b9a5aa85aeed29a11a0aa71e5f1d4c351327b774d813724b8fa4e566c1aa33a5",
+    "artifacts/local/elliptic-curves/annulus64-r17-pari-v2/verification-ledger.json": "74445b8fe9520b62d7f7991a49d7669e58e035dff328855f2bf1ac08f6791811",
+    "elliptic-curves/cas/report_annulus64_experiment.py": "e5daf87cd6f9e2e8bbf0acff4b25933c74db07bd8780eae14c99ebc435a298bc"
+  },
+  "status": "PASS",
+  "stronger_odd_prime_bounds": []
+}

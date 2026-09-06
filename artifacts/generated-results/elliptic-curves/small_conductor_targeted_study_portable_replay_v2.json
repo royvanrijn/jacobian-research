@@ -1,0 +1,40 @@
+{
+  "schema": "elliptic-curves.small-conductor-study-isolated.v2",
+  "stages": [
+    {
+      "stage": "replay",
+      "supervision": {
+        "command": [
+          "/usr/bin/python3",
+          "elliptic-curves/cas/study_small_conductor_target.py",
+          "replay"
+        ],
+        "failure_reason": "backend_failure",
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 1610612736,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 300
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/small-conductor-targeted-isolated-v2/replay.log",
+        "log_sha256": "46067a8666abd0f8146e2cbecc20e08adac4d4ecd5f3ca0fe63bad1e7ab30f12",
+        "outcome": "backend_failure",
+        "peak_observed_rss_bytes": 22118400,
+        "pid": 504938,
+        "returncode": 1,
+        "rss_limit_bytes": 1610612736,
+        "start_token": "54709549",
+        "termination_signal": null,
+        "timeout_seconds": 300,
+        "wall_seconds": 0.12810610700398684,
+        "worker_result": null,
+        "worker_result_sha256": null
+      }
+    }
+  ],
+  "status": "FAILED_OR_CENSORED",
+  "zip_sha256": "a52e4bdc676d4c5cbcec78b56b5d35943dd0f22b3b53db12230f0f3e39e60192"
+}

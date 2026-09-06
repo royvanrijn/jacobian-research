@@ -1,0 +1,172 @@
+{
+  "candidates_checked": 40960,
+  "claim_boundary": "Encode all562 short and2948 extended prime tables for each of the five MW16 families in the existing little-endian R17XS001 format. Replay every byte against the frozen exact tables. Require every short/extended sum and good count on all40960 previously scored target-free candidates to agree with their saved canonical/scalar values using the independent compiled retained-list reader. No public-record input, new parameter scan, point exposure, selector or rank claim. The explicit reader bound262144 prepares later higher-parameter inputs.",
+  "comparisons": [
+    {
+      "candidates_checked": 8192,
+      "family": "a1-fibration-01",
+      "label": "short",
+      "raw_sha256": "3d3295ebcdb4c22a3f8bf871d837d8a9f4d5ce0473c708333c7e8c17fba11962",
+      "wall_seconds": 0.07775419089011848
+    },
+    {
+      "candidates_checked": 8192,
+      "family": "a1-fibration-01",
+      "label": "extended",
+      "raw_sha256": "ea8527ab5aadd1b6a352d85e527a50a56f9010753ff37377a379f032dd0d8b5e",
+      "wall_seconds": 0.592184414039366
+    },
+    {
+      "candidates_checked": 8192,
+      "family": "a1-fibration-02",
+      "label": "short",
+      "raw_sha256": "5f58aaf7846b70ef1626d50d799816cc0cdad70f725ca58817bbbb13ece36ef7",
+      "wall_seconds": 0.07441247999668121
+    },
+    {
+      "candidates_checked": 8192,
+      "family": "a1-fibration-02",
+      "label": "extended",
+      "raw_sha256": "669ce9f4fc41beeb8432f1009c2f74fb030a879431b3978792f93168ad1a1e69",
+      "wall_seconds": 0.5920444478979334
+    },
+    {
+      "candidates_checked": 8192,
+      "family": "a1-fibration-03",
+      "label": "short",
+      "raw_sha256": "4abe34633203160cb626944812f0ba992e432d9f33a1765cb50854ea25fb099a",
+      "wall_seconds": 0.07518294104374945
+    },
+    {
+      "candidates_checked": 8192,
+      "family": "a1-fibration-03",
+      "label": "extended",
+      "raw_sha256": "1e38967b44469fb749e74c008f4c20a29751c80365350daa6e65859e2995d130",
+      "wall_seconds": 0.5927777460310608
+    },
+    {
+      "candidates_checked": 8192,
+      "family": "a1-fibration-04",
+      "label": "short",
+      "raw_sha256": "2d80dfb702cef13bbcaf2845316aa2055d059253a2c86b100ef6c481890a85a5",
+      "wall_seconds": 0.07504583091940731
+    },
+    {
+      "candidates_checked": 8192,
+      "family": "a1-fibration-04",
+      "label": "extended",
+      "raw_sha256": "0b19e3574680b102ca2c75ae49d4eccece51d7a73908c3d9e91d8b5f85faf86a",
+      "wall_seconds": 0.5929987989366055
+    },
+    {
+      "candidates_checked": 8192,
+      "family": "a1-fibration-05",
+      "label": "short",
+      "raw_sha256": "22d57f8111b330c1b93dc678b719e5c5c6a8c9ded7102fe3a9bd44fc46e21851",
+      "wall_seconds": 0.07476320606656373
+    },
+    {
+      "candidates_checked": 8192,
+      "family": "a1-fibration-05",
+      "label": "extended",
+      "raw_sha256": "aeb43e733ecaa4bf451eaa35478e6243ac21858c2bd38f3ededba70ece64a967",
+      "wall_seconds": 0.5878554960945621
+    }
+  ],
+  "component_sums_checked": 81920,
+  "encoding": {
+    "protocol_sha256": "25c353a4d0101cb7c384e40539e012f43a7f0a8eb10dcbe541b66f6fdd317840",
+    "rows": [
+      {
+        "bytes": 476930184,
+        "family": "a1-fibration-01",
+        "label": "extended",
+        "primes": 2948,
+        "sha256": "b194fb48b9814c872ff3a424125b2e1e917d12360431d36f55a88d2e4f413108"
+      },
+      {
+        "bytes": 9640348,
+        "family": "a1-fibration-01",
+        "label": "short",
+        "primes": 562,
+        "sha256": "1cf05251a853396278ffd3bf7820e6d994ad701094faa9c129cd2e12d2156087"
+      },
+      {
+        "bytes": 476930184,
+        "family": "a1-fibration-02",
+        "label": "extended",
+        "primes": 2948,
+        "sha256": "2f3950351f6b823fb04234882678bc62c8b931e08529e1b6c01cdeb6f5951b51"
+      },
+      {
+        "bytes": 9640348,
+        "family": "a1-fibration-02",
+        "label": "short",
+        "primes": 562,
+        "sha256": "3141a956ec7375bb9b57f51eeaaba15f0da692132cd032ae223bdc39e3375aa9"
+      },
+      {
+        "bytes": 476930184,
+        "family": "a1-fibration-03",
+        "label": "extended",
+        "primes": 2948,
+        "sha256": "cd8bf06a2d48115733aa1546bbaa1ae4a6356087ea0495603e10bf9ed0b56d85"
+      },
+      {
+        "bytes": 9640348,
+        "family": "a1-fibration-03",
+        "label": "short",
+        "primes": 562,
+        "sha256": "4d37243776cebee39131a3fa5731ba943d6ee26e384b9bfa30a0d55123578a8c"
+      },
+      {
+        "bytes": 476930184,
+        "family": "a1-fibration-04",
+        "label": "extended",
+        "primes": 2948,
+        "sha256": "5bb9c184f0f093010a90d8d6dae17bba5a3b3cb7115aeb0bdeb6ff06944f4a5b"
+      },
+      {
+        "bytes": 9640348,
+        "family": "a1-fibration-04",
+        "label": "short",
+        "primes": 562,
+        "sha256": "2e3f148de9ac846d05aa17153e1f0a812de6762c696875f9c189e82995831ba3"
+      },
+      {
+        "bytes": 476930184,
+        "family": "a1-fibration-05",
+        "label": "extended",
+        "primes": 2948,
+        "sha256": "97ed2ce35cb52bdad7997cda996d3bef99c454cec4959eb654dc164843619ebf"
+      },
+      {
+        "bytes": 9640348,
+        "family": "a1-fibration-05",
+        "label": "short",
+        "primes": 562,
+        "sha256": "07b8bfdcd28d6a138ae02248f7db40a203c1e53a0b274fc12f23ac3c269a13dc"
+      }
+    ],
+    "status": "PASS"
+  },
+  "protocol_sha256": "25c353a4d0101cb7c384e40539e012f43a7f0a8eb10dcbe541b66f6fdd317840",
+  "schema": "elliptic-curves.mw16-joint-binary-caches-result.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/annulus_11952_cache_reader_v3.json": "8270a62672a72fe83330ef55506c5ef567b4dddcd210e381a691cb7089cb7e87",
+    "artifacts/generated-results/elliptic-curves/compact_five_mw16_atlas_v1.json": "88a8c61c2722394bb812da601e24ea2c19e54361eef4b0fe9c7924e78c828801",
+    "artifacts/generated-results/elliptic-curves/mw16_extended_projective_caches_v1.json": "6b8c30de5dfeb81bb2f04515cec270a34f5df819bb330aa8dd8a5561f1baa658",
+    "artifacts/local/elliptic-curves/11952-annulus-cache-v3/scorer": "532c738b4e13eb5538c02b59b1d4b8217626c0b58f64c6eabde1eda79131dc07",
+    "artifacts/local/elliptic-curves/mw16-extended-projective-caches-v1/protocol.json": "9c329d642eb62c64f02aef349eca92d4517c09d6e4ccb760499201be312414a2",
+    "artifacts/local/elliptic-curves/mw16-extended-projective-caches-v1/replay.json": "fedb07eda188217005be7021895f55f6322fdbf082a90e3651e336dcabdfab6d",
+    "artifacts/local/elliptic-curves/mw16-fresh-retention-scores-v1/controller/ledger.json": "dcb76e067d399fccf61736b9cf3be4820ff5078bb9752f5d825c40b5803e6c9f",
+    "artifacts/local/elliptic-curves/mw16-fresh-retention-scores-v1/protocol.json": "65ea8babb9aa6408e99c1dc54e84bab8247613c2cc1095dfe7844c77b40a7100",
+    "artifacts/local/elliptic-curves/mw16-fresh-retention-scores-v1/result.json": "5eb9e5e6de85bcb2b438029d8de76eccf0863c4521b6411cd688c4e12ec49005",
+    "elliptic-curves/cas/build_mw16_extended_projective_caches.py": "295109f5d1d640391908669fbd45b679f89fb97ed1e600c7240be60beb336fb2",
+    "elliptic-curves/cas/encode_mw16_joint_caches.py": "01c3bd6b1947f9d10fcd48a5072eca1380c7f38f1b49993dfb568870c554063d",
+    "elliptic-curves/cas/newfamily/score_retained_projective_cache_v3.cpp": "3c42700577d84e87d2526e19188518298e64fdd66aae41d56126c2975b3110d6",
+    "elliptic-curves/cas/research_runtime/store.py": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965",
+    "elliptic-curves/cas/research_runtime/supervisor.py": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233"
+  },
+  "status": "PASS"
+}

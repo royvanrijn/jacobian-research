@@ -1,0 +1,12695 @@
+{
+  "chunks": [
+    {
+      "pairs": 5098,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0000.json",
+      "sha256": "f267d197c270a490258d0f3e88a62af128925292ffefa7aa94dcc3bfb4522202"
+    },
+    {
+      "pairs": 4949,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0001.json",
+      "sha256": "903be499ae4864a6daffe448c5b3387b3f6feb801d0c01163fc287717ac5697d"
+    },
+    {
+      "pairs": 4874,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0002.json",
+      "sha256": "09f3d3db2a9362e5efa1e0049158f92bcff35fee4d1b8b063a7f031aa2a2bb10"
+    },
+    {
+      "pairs": 5123,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0003.json",
+      "sha256": "bb800d14e245d2d1dca1593321e77dc79baa8f14f7fbd42993e8bd685c331346"
+    },
+    {
+      "pairs": 4984,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0004.json",
+      "sha256": "6aa9a2b514941e72e15c858f4fed604661b85640cd229d3921f681cc39fb5941"
+    },
+    {
+      "pairs": 4950,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0005.json",
+      "sha256": "87a103f4f538eed8c48e8af1c5b4aabf610d37fb5e2f57d9bada19779840967d"
+    },
+    {
+      "pairs": 5032,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0006.json",
+      "sha256": "282dd2d03447df63b3ae4a64ed851c1bc9d1cd859f112fecb331237708feff49"
+    },
+    {
+      "pairs": 4883,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0007.json",
+      "sha256": "8ba3dd6ab9a364cc96000097ca836fef53e3167520a8d340daa32c12f0dd0370"
+    },
+    {
+      "pairs": 4970,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0008.json",
+      "sha256": "9b939303566b61b5067f9ff82cc1a45159a6e5aa0500cba8570342d540072a64"
+    },
+    {
+      "pairs": 5097,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0009.json",
+      "sha256": "ad0ce9d7de18546885643f53072fce9c920edf64a32883e531d0e4cfe8717b24"
+    },
+    {
+      "pairs": 5009,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0010.json",
+      "sha256": "1fe53b6f58a2c8f500b093dcd7bf399f1ca57399d4f1aaf94687e49ba15a619c"
+    },
+    {
+      "pairs": 4854,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0011.json",
+      "sha256": "8e7a2b23fc8e49349215516d14c30932c49c280e775b5ae6a1288834dd461439"
+    },
+    {
+      "pairs": 5068,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0012.json",
+      "sha256": "21d21b8e05e857aadf601a24cd7f6c1da6acd32786f3de31f679d4d1f48d7593"
+    },
+    {
+      "pairs": 4997,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0013.json",
+      "sha256": "e4c46ad99f119e6630b75313b08e5bdde104565ec8f34572e17df3feec97b642"
+    },
+    {
+      "pairs": 4849,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0014.json",
+      "sha256": "428d123b42054c339d2d44ef1704a570cc9befc9213e371cffdb7c3f78850d02"
+    },
+    {
+      "pairs": 5145,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0015.json",
+      "sha256": "f31ab593bcd798cc7bc736dabe7f09578037447c3cd31c348c64529ecac41bfa"
+    },
+    {
+      "pairs": 4965,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0016.json",
+      "sha256": "ff2a1e07818ff148c1edfd7218c22f93e0ad92d55fe6827062fb6789b966567c"
+    },
+    {
+      "pairs": 4932,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0017.json",
+      "sha256": "ff5cbacb7c211dc34fea2a2aaa82ba06e32e51dda623beaa37d9cf8f77207fe1"
+    },
+    {
+      "pairs": 5026,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0018.json",
+      "sha256": "ac746a1448b9ff8969dbcf0637408d2af7ba52323e4b6e2899cee346b615d237"
+    },
+    {
+      "pairs": 5008,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0019.json",
+      "sha256": "dd565ebb024037e7d755d803302aec75596c44e69bca403a19ccc5b9babe2199"
+    },
+    {
+      "pairs": 4952,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0020.json",
+      "sha256": "e2e865e6025612b6e4551bafa66b89a02ced9b5f2a1f7be7b62d54eb5841aed1"
+    },
+    {
+      "pairs": 5006,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0021.json",
+      "sha256": "92968b3334615b4da647e9f9513efda9c4cfd664698758594d5d7d04d09477f7"
+    },
+    {
+      "pairs": 4967,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0022.json",
+      "sha256": "c852af0de2e98d0303ee99555817a105217a61eac708b83bbd551f8175256b68"
+    },
+    {
+      "pairs": 4916,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0023.json",
+      "sha256": "1720cd189844462f134701c56ac6c9f49d53511eb876017c92d9c7fc7e57ba58"
+    },
+    {
+      "pairs": 5047,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0024.json",
+      "sha256": "4c8324fa66ddd90f14281ac19d874f67ae277f8bd673ab3068b4234b4a75d0a0"
+    },
+    {
+      "pairs": 5066,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0025.json",
+      "sha256": "ded6da7befb926dba16d9b59dd8f1c35f9f7065b3d29360cde0a114efc6d8259"
+    },
+    {
+      "pairs": 4879,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0026.json",
+      "sha256": "f08ec39fb11239d2e8dcfeaed32c66518230b1e3d2c18dbb2b71b0e57bbf310b"
+    },
+    {
+      "pairs": 4997,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0027.json",
+      "sha256": "dafc2b9a1389cb25fcd2ebede99eaabebc76aa3f37c87bdf34e9a0fa5da3bb4c"
+    },
+    {
+      "pairs": 4981,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0028.json",
+      "sha256": "70f7c44aab32ab03f3bd1aad06157d250a0b4b3826421360fc6711a0e69e433b"
+    },
+    {
+      "pairs": 4909,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0029.json",
+      "sha256": "6a7ca7744273cb5ef13742d5c8058af4b39a3a54207ed46c7ad3c0d766b1f491"
+    },
+    {
+      "pairs": 5122,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0030.json",
+      "sha256": "65731251f6c8d6e080147632977581a37da6187792a41686079d9c9652971812"
+    },
+    {
+      "pairs": 5048,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0031.json",
+      "sha256": "cbf178e194b9aaca830e96a6dfd58b9d98274c5803b11a9606c8d2ae982f9b9f"
+    },
+    {
+      "pairs": 4793,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0032.json",
+      "sha256": "53d33922e9255cc1aa65458b522bbb238158cc7824158fc26ad37cda2dd45ff7"
+    },
+    {
+      "pairs": 5122,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0033.json",
+      "sha256": "d5fff2afde78609dcf852f7b7303e982353c7b495dfd2d4456f2f8f4a3bb5c65"
+    },
+    {
+      "pairs": 4994,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0034.json",
+      "sha256": "674a50bb1611cca8cdb21090d070b0cc2c2d2b7390a410dfc0766c68095700e1"
+    },
+    {
+      "pairs": 4896,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0035.json",
+      "sha256": "db17de909de63bee9c4bd4eb709aceef66ebd75b8834fb3b53b616f506924c59"
+    },
+    {
+      "pairs": 5048,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0036.json",
+      "sha256": "c6516a1677e3bd2eba4294a3a44d6743c182551e674b4fe37d82c8cae71d0cb1"
+    },
+    {
+      "pairs": 4913,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0037.json",
+      "sha256": "70de654cb9cb05f84bc50d2d262da5fb7a89cce566f39528ff31d867cd894f07"
+    },
+    {
+      "pairs": 5018,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0038.json",
+      "sha256": "435a431f7de59142c94df02181634ba7ad4de77636fd4cdf1d86b1ad953bdd1a"
+    },
+    {
+      "pairs": 5010,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0039.json",
+      "sha256": "472a3bf35d8878c83b643a111b76a0d28c9274e75c3e595dc3071d435ce2d8d3"
+    },
+    {
+      "pairs": 5001,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0040.json",
+      "sha256": "84a2881e252698b05a998dd922fa78a63901cc9e1e5f896436f21c25fd8cc658"
+    },
+    {
+      "pairs": 4933,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0041.json",
+      "sha256": "5fe90e9354fd883a8dee998de1cbf6202c9026233f127aeafff5558236c31d98"
+    },
+    {
+      "pairs": 4978,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0042.json",
+      "sha256": "7c78d0ecc4385b816e37b9ae19307684d4c35085ca732b831692f5c33ef44db7"
+    },
+    {
+      "pairs": 5014,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0043.json",
+      "sha256": "0e46e6807923920ce025a2ddf94ce623cd34dd81ba39b15e9d49a42d758edae3"
+    },
+    {
+      "pairs": 4943,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0044.json",
+      "sha256": "9f851b38abc3fb7c44e51d08b2af0624694a2afcabaaef21643dd97fbe709c39"
+    },
+    {
+      "pairs": 5043,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0045.json",
+      "sha256": "4b5b9690d9e591356bc7b01079acd70a370a5cf3d446b500faa5ada2d2e632c7"
+    },
+    {
+      "pairs": 5014,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0046.json",
+      "sha256": "c3b8b0f393f0239ce8e9620dc1a595c8d8bf6e379e077672bbab243ab21e3a1b"
+    },
+    {
+      "pairs": 4846,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0047.json",
+      "sha256": "c25f095743d402e08d246d4c683dbe58ae840342436514b9727b83bbf118a52a"
+    },
+    {
+      "pairs": 5160,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0048.json",
+      "sha256": "e807d25b647fd3bcb73b08c18758f4d32cc333921245a63ccc8a2dd66fc200c7"
+    },
+    {
+      "pairs": 4919,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0049.json",
+      "sha256": "f1a44f9ca5af89fb0a5841c84b814df73770143b09258287bfd5c604e1e8cfb5"
+    },
+    {
+      "pairs": 4925,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0050.json",
+      "sha256": "9b5ce67c24b9507b5ad9bdc1efa9dfe52185c8475a00b03cab96f4f37a0afa34"
+    },
+    {
+      "pairs": 5106,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0051.json",
+      "sha256": "8530218f59a465d3db217de8461167efc582bee313731ea1d762c13f307c0201"
+    },
+    {
+      "pairs": 4913,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0052.json",
+      "sha256": "93b019a84122bad7242bfa8d3fd67248eb9f853f7295059f56ab1b5ea9f573b8"
+    },
+    {
+      "pairs": 4922,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0053.json",
+      "sha256": "48c7c2eaebdc534d183d07303d19094fa2f620f6a1275012c077036a1084401b"
+    },
+    {
+      "pairs": 5085,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0054.json",
+      "sha256": "0567ea258c1e628ee6296503d64368709babb12d025fc70ace54a4b0aadade0f"
+    },
+    {
+      "pairs": 5044,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0055.json",
+      "sha256": "02265c5d861bb3e724378e63687b7b17e6252548c520e1e3b959da6cc81806fb"
+    },
+    {
+      "pairs": 4849,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0056.json",
+      "sha256": "c74e2f4399e13606252dd5d257f04679ef603343d4ed577e08066bd7e96daa6b"
+    },
+    {
+      "pairs": 5001,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0057.json",
+      "sha256": "f0eba0d78f6008cd0dddbad447f51b2154d3ffb22e51de4606d3e2e04003ae58"
+    },
+    {
+      "pairs": 5015,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0058.json",
+      "sha256": "a229b8e4a39a39efa30ea4d1c114bc447c6d1e52e7c2105f12b7115e4b28385d"
+    },
+    {
+      "pairs": 4936,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0059.json",
+      "sha256": "737615ba7cc75a3e779a38c51fde319f461d7b11ad27ffc87e92c1b275565779"
+    },
+    {
+      "pairs": 5095,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0060.json",
+      "sha256": "4acb06b7df592e052e5aa399976554fbe202d793060b615618f39b9bb841cac4"
+    },
+    {
+      "pairs": 4984,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0061.json",
+      "sha256": "2c2f9dc1129ca203f4a004380b760aeaee560ae5acebaa34149e31ffbbbd3adc"
+    },
+    {
+      "pairs": 4838,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0062.json",
+      "sha256": "3300d0b08393b81031258356dafae1f7c93a167126b416d8850bf77a9152fe43"
+    },
+    {
+      "pairs": 5090,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0063.json",
+      "sha256": "a4228572cb4a30138d7b25636cdcbfeba2e59d8aa53c194887105435a47caa64"
+    },
+    {
+      "pairs": 256,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0064.json",
+      "sha256": "fca60fffef61517ef47e976950cd80ff81531e4d0c9a4ecb67d6cc286daa31f8"
+    }
+  ],
+  "claim_boundary": "Finite relation experiment. No unconditional generation, new rational point, full descent, or exact rank claim. The measured quotient gives a class-2-rank upper bound only under GRH.",
+  "old_box_smooth_values": 18,
+  "primitive_pairs": 319407,
+  "protocol": {
+    "box": 512,
+    "claim_boundary": "Finite relation experiment. No unconditional generation, new rational point, full descent, or exact rank claim. The measured quotient gives a class-2-rank upper bound only under GRH.",
+    "factor_base": "All prime ideals above every rational prime<=400000, with canonical rational-prime relations; generation is justified only under the stated Bach GRH hypothesis.",
+    "gate": "Prior fixed pilot produced18 exact noncanonical relation rows. Test sustained yield on only this field and measure the full factor-base matrix gap.",
+    "m_per_chunk": 16,
+    "method": "Product/remainder tree computes primorial modulo each norm; exact gcd removes all supported prime powers. Replay uses scalar gcd with the primorial on every value.",
+    "population": "Every coprime(m,n) with -512<=m<=512 and1<=n<=512, in lexicographic order. The old64-box is included to measure incremental rank exactly.",
+    "rss_bytes": 1610612736,
+    "schema": "elliptic-curves.small-conductor-norm-batch-protocol.v1",
+    "smooth_bound": 400000,
+    "sources": {
+      "artifacts/generated-results/elliptic-curves/small_conductor_norm_relations_v1.json": "a5c3e6f473ff2865fab76caabb3f411277da9a20e32fd99e56bdea03e0793ca5",
+      "artifacts/generated-results/elliptic-curves/small_conductor_reduced_norm_form_v1.json": "8dab54430620b0e3e3c55ce3c6cf93c1346cdd7e79b1879091fe3c4dec0e63f2",
+      "elliptic-curves/cas/extend_small_conductor_norm_batch.py": "f9b0707bb11d32f807dff2749172a8332dda97afffb51aaed7acbaaa7d88a228",
+      "elliptic-curves/cas/pilot_small_conductor_norm_smoothness.py": "29f5a150222997405aac4688d5c83c6923f2f226485dbc6f93d3c761d44a2ea2"
+    },
+    "stage_seconds": {
+      "audit": 180,
+      "audit-check": 180,
+      "check": 300,
+      "worker": 180
+    },
+    "workers": 1
+  },
+  "schema": "elliptic-curves.small-conductor-norm-batch.v1",
+  "smooth_records": [
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          929,
+          1
+        ],
+        [
+          1453,
+          1
+        ],
+        [
+          3167,
+          1
+        ],
+        [
+          6599,
+          1
+        ],
+        [
+          208147,
+          1
+        ],
+        [
+          275593,
+          1
+        ]
+      ],
+      "m": -511,
+      "n": 260,
+      "remainder": "1",
+      "value": "420745234991030870928589660"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          673,
+          1
+        ],
+        [
+          2161,
+          1
+        ],
+        [
+          205463,
+          1
+        ],
+        [
+          207743,
+          1
+        ],
+        [
+          309313,
+          1
+        ]
+      ],
+      "m": -503,
+      "n": 36,
+      "remainder": "1",
+      "value": "-691242654076285827794436"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          2333,
+          1
+        ],
+        [
+          5147,
+          1
+        ],
+        [
+          19919,
+          1
+        ],
+        [
+          40169,
+          1
+        ],
+        [
+          47797,
+          1
+        ],
+        [
+          47917,
+          1
+        ]
+      ],
+      "m": -503,
+      "n": 286,
+      "remainder": "1",
+      "value": "572125184382508771321218314"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          127,
+          1
+        ],
+        [
+          331,
+          1
+        ],
+        [
+          2633,
+          1
+        ],
+        [
+          2711,
+          1
+        ],
+        [
+          6299,
+          1
+        ],
+        [
+          81701,
+          1
+        ],
+        [
+          291743,
+          1
+        ]
+      ],
+      "m": -502,
+      "n": 391,
+      "remainder": "1",
+      "value": "1531758974545364929191157478"
+    },
+    {
+      "factorization": [
+        [
+          7,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          1933,
+          1
+        ],
+        [
+          7027,
+          1
+        ],
+        [
+          7621,
+          1
+        ],
+        [
+          9803,
+          1
+        ],
+        [
+          108967,
+          1
+        ]
+      ],
+      "m": -493,
+      "n": 1,
+      "remainder": "1",
+      "value": "51860966828154400605059"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          1009,
+          1
+        ],
+        [
+          20341,
+          1
+        ],
+        [
+          26371,
+          1
+        ],
+        [
+          225569,
+          1
+        ],
+        [
+          255851,
+          1
+        ]
+      ],
+      "m": -493,
+      "n": 252,
+      "remainder": "1",
+      "value": "383454181054028427052885956"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          43,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          293,
+          1
+        ],
+        [
+          1657,
+          1
+        ],
+        [
+          20759,
+          1
+        ],
+        [
+          30763,
+          1
+        ],
+        [
+          35851,
+          1
+        ]
+      ],
+      "m": -492,
+      "n": 235,
+      "remainder": "1",
+      "value": "306465585987746792298708390"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          139,
+          1
+        ],
+        [
+          227,
+          1
+        ],
+        [
+          263,
+          1
+        ],
+        [
+          277,
+          1
+        ],
+        [
+          145417,
+          1
+        ],
+        [
+          391337,
+          1
+        ]
+      ],
+      "m": -488,
+      "n": 31,
+      "remainder": "1",
+      "value": "-648557953435871066179546"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          113,
+          1
+        ],
+        [
+          173,
+          1
+        ],
+        [
+          283,
+          1
+        ],
+        [
+          2719,
+          1
+        ],
+        [
+          6067,
+          1
+        ],
+        [
+          21661,
+          1
+        ],
+        [
+          80621,
+          1
+        ]
+      ],
+      "m": -487,
+      "n": 252,
+      "remainder": "1",
+      "value": "384413093012743988992828452"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          571,
+          1
+        ],
+        [
+          683,
+          1
+        ],
+        [
+          75029,
+          1
+        ],
+        [
+          81649,
+          1
+        ],
+        [
+          174311,
+          1
+        ]
+      ],
+      "m": -486,
+      "n": 49,
+      "remainder": "1",
+      "value": "2498692912261607344098"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          607,
+          1
+        ],
+        [
+          9173,
+          1
+        ],
+        [
+          15859,
+          1
+        ],
+        [
+          47093,
+          1
+        ],
+        [
+          377687,
+          1
+        ]
+      ],
+      "m": -486,
+      "n": 221,
+      "remainder": "1",
+      "value": "251995724428118655777964314"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          3
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          53,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          1493,
+          1
+        ],
+        [
+          4157,
+          1
+        ],
+        [
+          4397,
+          1
+        ],
+        [
+          4409,
+          1
+        ],
+        [
+          8069,
+          1
+        ]
+      ],
+      "m": -485,
+      "n": 56,
+      "remainder": "1",
+      "value": "752897186471314724601352"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          577,
+          1
+        ],
+        [
+          719,
+          1
+        ],
+        [
+          2143,
+          1
+        ],
+        [
+          3253,
+          1
+        ],
+        [
+          11971,
+          1
+        ],
+        [
+          15559,
+          1
+        ],
+        [
+          21031,
+          1
+        ]
+      ],
+      "m": -484,
+      "n": 207,
+      "remainder": "1",
+      "value": "203917960075539462380980974"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          83,
+          1
+        ],
+        [
+          151,
+          1
+        ],
+        [
+          233,
+          1
+        ],
+        [
+          331,
+          1
+        ],
+        [
+          1429,
+          1
+        ],
+        [
+          2473,
+          1
+        ],
+        [
+          5903,
+          1
+        ],
+        [
+          6133,
+          1
+        ]
+      ],
+      "m": -473,
+      "n": 195,
+      "remainder": "1",
+      "value": "168800488418839187295426405"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          41,
+          2
+        ],
+        [
+          821,
+          1
+        ],
+        [
+          6863,
+          1
+        ],
+        [
+          14489,
+          1
+        ],
+        [
+          69697,
+          1
+        ],
+        [
+          306541,
+          1
+        ]
+      ],
+      "m": -473,
+      "n": 340,
+      "remainder": "1",
+      "value": "996884523541565516063589260"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          1187,
+          1
+        ],
+        [
+          1283,
+          1
+        ],
+        [
+          2333,
+          1
+        ],
+        [
+          81701,
+          1
+        ],
+        [
+          108497,
+          1
+        ],
+        [
+          233993,
+          1
+        ]
+      ],
+      "m": -470,
+      "n": 97,
+      "remainder": "1",
+      "value": "14739069862192966406558306"
+    },
+    {
+      "factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          557,
+          1
+        ],
+        [
+          2521,
+          1
+        ],
+        [
+          3163,
+          1
+        ],
+        [
+          8867,
+          1
+        ],
+        [
+          54421,
+          1
+        ],
+        [
+          368059,
+          1
+        ]
+      ],
+      "m": -467,
+      "n": 215,
+      "remainder": "1",
+      "value": "232707251540200347073473685"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          109,
+          1
+        ],
+        [
+          673,
+          1
+        ],
+        [
+          1429,
+          1
+        ],
+        [
+          29387,
+          1
+        ],
+        [
+          40009,
+          1
+        ],
+        [
+          356287,
+          1
+        ]
+      ],
+      "m": -464,
+      "n": 7,
+      "remainder": "1",
+      "value": "-87824707597010983208026"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          683,
+          1
+        ],
+        [
+          1489,
+          1
+        ],
+        [
+          4663,
+          1
+        ],
+        [
+          35089,
+          1
+        ],
+        [
+          47221,
+          1
+        ],
+        [
+          380179,
+          1
+        ]
+      ],
+      "m": -451,
+      "n": 342,
+      "remainder": "1",
+      "value": "1021647833330782265329400802"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          257,
+          1
+        ],
+        [
+          1601,
+          1
+        ],
+        [
+          8101,
+          1
+        ],
+        [
+          39749,
+          1
+        ],
+        [
+          115879,
+          1
+        ],
+        [
+          181301,
+          1
+        ]
+      ],
+      "m": -450,
+      "n": 301,
+      "remainder": "1",
+      "value": "684745741460255381150365362"
+    },
+    {
+      "factorization": [
+        [
+          563,
+          1
+        ],
+        [
+          599,
+          1
+        ],
+        [
+          1499,
+          1
+        ],
+        [
+          2447,
+          1
+        ],
+        [
+          6211,
+          1
+        ],
+        [
+          70009,
+          1
+        ],
+        [
+          297403,
+          1
+        ]
+      ],
+      "m": -449,
+      "n": 191,
+      "remainder": "1",
+      "value": "159967430170777176264539617"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          139,
+          2
+        ],
+        [
+          149,
+          1
+        ],
+        [
+          239,
+          1
+        ],
+        [
+          6277,
+          1
+        ],
+        [
+          28219,
+          1
+        ],
+        [
+          270763,
+          1
+        ]
+      ],
+      "m": -449,
+      "n": 476,
+      "remainder": "1",
+      "value": "2852011672781757194122097092"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          61,
+          1
+        ],
+        [
+          461,
+          1
+        ],
+        [
+          3257,
+          1
+        ],
+        [
+          20359,
+          1
+        ],
+        [
+          39749,
+          1
+        ],
+        [
+          60661,
+          1
+        ]
+      ],
+      "m": -447,
+      "n": 34,
+      "remainder": "1",
+      "value": "-458607239032659243067194"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          53,
+          1
+        ],
+        [
+          2377,
+          1
+        ],
+        [
+          6113,
+          1
+        ],
+        [
+          53923,
+          1
+        ],
+        [
+          67757,
+          1
+        ],
+        [
+          307511,
+          1
+        ]
+      ],
+      "m": -447,
+      "n": 320,
+      "remainder": "1",
+      "value": "830652833450425680782220480"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          127,
+          1
+        ],
+        [
+          571,
+          1
+        ],
+        [
+          653,
+          1
+        ],
+        [
+          2971,
+          1
+        ],
+        [
+          6037,
+          1
+        ],
+        [
+          95737,
+          1
+        ]
+      ],
+      "m": -441,
+      "n": 125,
+      "remainder": "1",
+      "value": "38755511290710769575123375"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          461,
+          1
+        ],
+        [
+          859,
+          1
+        ],
+        [
+          863,
+          1
+        ],
+        [
+          3407,
+          1
+        ],
+        [
+          14503,
+          1
+        ],
+        [
+          84589,
+          1
+        ],
+        [
+          381559,
+          1
+        ]
+      ],
+      "m": -437,
+      "n": 436,
+      "remainder": "1",
+      "value": "2180070054773707269385700108"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          283,
+          1
+        ],
+        [
+          571,
+          1
+        ],
+        [
+          20681,
+          1
+        ],
+        [
+          52529,
+          1
+        ],
+        [
+          207169,
+          1
+        ],
+        [
+          264007,
+          1
+        ]
+      ],
+      "m": -434,
+      "n": 353,
+      "remainder": "1",
+      "value": "1132962226932444358392271258"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          7673,
+          1
+        ],
+        [
+          9697,
+          1
+        ],
+        [
+          63773,
+          1
+        ],
+        [
+          156139,
+          1
+        ],
+        [
+          292711,
+          1
+        ]
+      ],
+      "m": -429,
+      "n": 170,
+      "remainder": "1",
+      "value": "110601254850669976844130270"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          113,
+          1
+        ],
+        [
+          313,
+          1
+        ],
+        [
+          61211,
+          1
+        ],
+        [
+          143881,
+          1
+        ],
+        [
+          178793,
+          1
+        ],
+        [
+          202751,
+          1
+        ]
+      ],
+      "m": -425,
+      "n": 218,
+      "remainder": "1",
+      "value": "248423056276865556149271934"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          1013,
+          1
+        ],
+        [
+          5827,
+          1
+        ],
+        [
+          34183,
+          1
+        ],
+        [
+          86131,
+          1
+        ],
+        [
+          219001,
+          1
+        ]
+      ],
+      "m": -418,
+      "n": 5,
+      "remainder": "1",
+      "value": "-38060126365401161787230"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          863,
+          1
+        ],
+        [
+          5843,
+          1
+        ],
+        [
+          32687,
+          1
+        ],
+        [
+          33247,
+          1
+        ],
+        [
+          49787,
+          1
+        ],
+        [
+          159911,
+          1
+        ]
+      ],
+      "m": -418,
+      "n": 457,
+      "remainder": "1",
+      "value": "2530442651056260018215917706"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          7717,
+          1
+        ],
+        [
+          20551,
+          1
+        ],
+        [
+          27941,
+          1
+        ],
+        [
+          35839,
+          1
+        ],
+        [
+          52727,
+          1
+        ]
+      ],
+      "m": -411,
+      "n": 260,
+      "remainder": "1",
+      "value": "437604476001518469511137660"
+    },
+    {
+      "factorization": [
+        [
+          11,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          683,
+          1
+        ],
+        [
+          14897,
+          1
+        ],
+        [
+          62423,
+          1
+        ],
+        [
+          71419,
+          1
+        ],
+        [
+          355669,
+          1
+        ]
+      ],
+      "m": -409,
+      "n": 89,
+      "remainder": "1",
+      "value": "11890262013101117471091211"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          4
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          151,
+          1
+        ],
+        [
+          1427,
+          1
+        ],
+        [
+          1753,
+          1
+        ],
+        [
+          2879,
+          1
+        ],
+        [
+          289759,
+          1
+        ],
+        [
+          313739,
+          1
+        ]
+      ],
+      "m": -407,
+      "n": 80,
+      "remainder": "1",
+      "value": "7908970041844765780895920"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          127,
+          1
+        ],
+        [
+          277,
+          1
+        ],
+        [
+          35677,
+          1
+        ],
+        [
+          52553,
+          1
+        ],
+        [
+          92567,
+          1
+        ],
+        [
+          98929,
+          1
+        ]
+      ],
+      "m": -403,
+      "n": 321,
+      "remainder": "1",
+      "value": "849851874704523554400524799"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          461,
+          1
+        ],
+        [
+          503,
+          1
+        ],
+        [
+          821,
+          1
+        ],
+        [
+          3023,
+          1
+        ],
+        [
+          3331,
+          1
+        ],
+        [
+          20627,
+          1
+        ]
+      ],
+      "m": -401,
+      "n": 14,
+      "remainder": "1",
+      "value": "-217244890634523209919542"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          719,
+          1
+        ],
+        [
+          1009,
+          1
+        ],
+        [
+          10163,
+          1
+        ],
+        [
+          368369,
+          1
+        ],
+        [
+          391247,
+          1
+        ]
+      ],
+      "m": -401,
+      "n": 290,
+      "remainder": "1",
+      "value": "619090318502088165128136790"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          5
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          659,
+          1
+        ],
+        [
+          773,
+          1
+        ],
+        [
+          1499,
+          1
+        ],
+        [
+          3527,
+          1
+        ],
+        [
+          15497,
+          1
+        ],
+        [
+          31181,
+          1
+        ]
+      ],
+      "m": -397,
+      "n": 32,
+      "remainder": "1",
+      "value": "-291512842124105272502048"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          113,
+          1
+        ],
+        [
+          1423,
+          1
+        ],
+        [
+          2179,
+          1
+        ],
+        [
+          7727,
+          1
+        ],
+        [
+          94603,
+          1
+        ],
+        [
+          265141,
+          1
+        ]
+      ],
+      "m": -396,
+      "n": 155,
+      "remainder": "1",
+      "value": "83529214267954780699703430"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          53,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          61,
+          1
+        ],
+        [
+          281,
+          1
+        ],
+        [
+          3449,
+          1
+        ],
+        [
+          112019,
+          1
+        ],
+        [
+          346711,
+          1
+        ]
+      ],
+      "m": -388,
+      "n": 13,
+      "remainder": "1",
+      "value": "-186676603500603386343862"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          193,
+          1
+        ],
+        [
+          7541,
+          1
+        ],
+        [
+          14897,
+          1
+        ],
+        [
+          16703,
+          1
+        ],
+        [
+          28097,
+          1
+        ],
+        [
+          72251,
+          1
+        ]
+      ],
+      "m": -387,
+      "n": 364,
+      "remainder": "1",
+      "value": "1261538898135622421144202516"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          1427,
+          1
+        ],
+        [
+          2711,
+          1
+        ],
+        [
+          7717,
+          1
+        ],
+        [
+          21577,
+          1
+        ],
+        [
+          105953,
+          1
+        ]
+      ],
+      "m": -383,
+      "n": 2,
+      "remainder": "1",
+      "value": "9145576964765768988646"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          523,
+          1
+        ],
+        [
+          1327,
+          1
+        ],
+        [
+          15299,
+          1
+        ],
+        [
+          122839,
+          1
+        ],
+        [
+          219491,
+          1
+        ]
+      ],
+      "m": -383,
+      "n": 6,
+      "remainder": "1",
+      "value": "-53247790311582382601406"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          89,
+          1
+        ],
+        [
+          331,
+          1
+        ],
+        [
+          577,
+          1
+        ],
+        [
+          1039,
+          1
+        ],
+        [
+          43933,
+          1
+        ],
+        [
+          294337,
+          1
+        ]
+      ],
+      "m": -381,
+      "n": 64,
+      "remainder": "1",
+      "value": "3376268947865223766792128"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          53,
+          1
+        ],
+        [
+          13913,
+          1
+        ],
+        [
+          23021,
+          1
+        ],
+        [
+          315313,
+          1
+        ],
+        [
+          318077,
+          1
+        ]
+      ],
+      "m": -379,
+      "n": 3,
+      "remainder": "1",
+      "value": "-5107592463799167138207"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          307,
+          1
+        ],
+        [
+          1619,
+          1
+        ],
+        [
+          7109,
+          1
+        ],
+        [
+          41521,
+          1
+        ],
+        [
+          162989,
+          1
+        ]
+      ],
+      "m": -372,
+      "n": 145,
+      "remainder": "1",
+      "value": "68298312538755353441182530"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          191,
+          1
+        ],
+        [
+          271,
+          1
+        ],
+        [
+          3011,
+          1
+        ],
+        [
+          3701,
+          1
+        ],
+        [
+          115259,
+          1
+        ],
+        [
+          365773,
+          1
+        ]
+      ],
+      "m": -371,
+      "n": 114,
+      "remainder": "1",
+      "value": "30494149618741082820100038"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          113,
+          1
+        ],
+        [
+          569,
+          1
+        ],
+        [
+          20759,
+          1
+        ],
+        [
+          81563,
+          1
+        ],
+        [
+          125207,
+          1
+        ]
+      ],
+      "m": -368,
+      "n": 7,
+      "remainder": "1",
+      "value": "-67581132056414772973594"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          13921,
+          1
+        ],
+        [
+          36433,
+          1
+        ],
+        [
+          41941,
+          1
+        ],
+        [
+          54443,
+          1
+        ],
+        [
+          106823,
+          1
+        ]
+      ],
+      "m": -366,
+      "n": 47,
+      "remainder": "1",
+      "value": "742270528761535517852742"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          271,
+          1
+        ],
+        [
+          313,
+          1
+        ],
+        [
+          4229,
+          1
+        ],
+        [
+          10253,
+          1
+        ],
+        [
+          27541,
+          1
+        ],
+        [
+          293413,
+          1
+        ]
+      ],
+      "m": -360,
+      "n": 31,
+      "remainder": "1",
+      "value": "-178325141949736669742298"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          139,
+          1
+        ],
+        [
+          193,
+          1
+        ],
+        [
+          197,
+          1
+        ],
+        [
+          233,
+          1
+        ],
+        [
+          2711,
+          1
+        ],
+        [
+          33721,
+          1
+        ],
+        [
+          114077,
+          1
+        ]
+      ],
+      "m": -359,
+      "n": 15,
+      "remainder": "1",
+      "value": "-192625407220970763203235"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          43,
+          1
+        ],
+        [
+          101,
+          1
+        ],
+        [
+          557,
+          1
+        ],
+        [
+          809,
+          1
+        ],
+        [
+          3697,
+          1
+        ],
+        [
+          9391,
+          1
+        ],
+        [
+          32779,
+          1
+        ],
+        [
+          61511,
+          1
+        ]
+      ],
+      "m": -359,
+      "n": 482,
+      "remainder": "1",
+      "value": "3013880342331989687144918374"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          197,
+          1
+        ],
+        [
+          3931,
+          1
+        ],
+        [
+          6659,
+          1
+        ],
+        [
+          34367,
+          1
+        ],
+        [
+          74717,
+          1
+        ],
+        [
+          132229,
+          1
+        ]
+      ],
+      "m": -357,
+      "n": 241,
+      "remainder": "1",
+      "value": "351934712389503761328183603"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          43,
+          1
+        ],
+        [
+          79,
+          1
+        ],
+        [
+          461,
+          1
+        ],
+        [
+          116719,
+          1
+        ],
+        [
+          121061,
+          1
+        ],
+        [
+          134171,
+          1
+        ]
+      ],
+      "m": -348,
+      "n": 11,
+      "remainder": "1",
+      "value": "-124695343052439116962746"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          113,
+          1
+        ],
+        [
+          4517,
+          1
+        ],
+        [
+          25523,
+          1
+        ],
+        [
+          25819,
+          1
+        ],
+        [
+          29837,
+          1
+        ],
+        [
+          302977,
+          1
+        ]
+      ],
+      "m": -346,
+      "n": 475,
+      "remainder": "1",
+      "value": "2888604560871564769005579350"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          127,
+          1
+        ],
+        [
+          433,
+          1
+        ],
+        [
+          787,
+          1
+        ],
+        [
+          3923,
+          1
+        ],
+        [
+          56663,
+          1
+        ],
+        [
+          157207,
+          1
+        ]
+      ],
+      "m": -342,
+      "n": 505,
+      "remainder": "1",
+      "value": "3486707994716710096654503570"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          9547,
+          1
+        ],
+        [
+          10139,
+          1
+        ],
+        [
+          36913,
+          1
+        ],
+        [
+          175757,
+          1
+        ],
+        [
+          181019,
+          1
+        ]
+      ],
+      "m": -336,
+      "n": 169,
+      "remainder": "1",
+      "value": "115269958207282422429232698"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          101,
+          1
+        ],
+        [
+          431,
+          1
+        ],
+        [
+          2309,
+          1
+        ],
+        [
+          21317,
+          1
+        ],
+        [
+          50993,
+          1
+        ],
+        [
+          75913,
+          1
+        ]
+      ],
+      "m": -322,
+      "n": 95,
+      "remainder": "1",
+      "value": "17334912974988018737750830"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          331,
+          1
+        ],
+        [
+          4813,
+          1
+        ],
+        [
+          219871,
+          1
+        ],
+        [
+          246271,
+          1
+        ],
+        [
+          386489,
+          1
+        ]
+      ],
+      "m": -319,
+      "n": 52,
+      "remainder": "1",
+      "value": "1733666520429775594886444"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          83,
+          1
+        ],
+        [
+          2273,
+          1
+        ],
+        [
+          39313,
+          1
+        ],
+        [
+          53593,
+          1
+        ],
+        [
+          68713,
+          1
+        ],
+        [
+          386747,
+          1
+        ]
+      ],
+      "m": -309,
+      "n": 113,
+      "remainder": "1",
+      "value": "31689026768484048045900723"
+    },
+    {
+      "factorization": [
+        [
+          29,
+          1
+        ],
+        [
+          53,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          79,
+          1
+        ],
+        [
+          83,
+          1
+        ],
+        [
+          18743,
+          1
+        ],
+        [
+          22349,
+          1
+        ],
+        [
+          226337,
+          1
+        ]
+      ],
+      "m": -307,
+      "n": 29,
+      "remainder": "1",
+      "value": "-56374644822641707393829"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          1049,
+          1
+        ],
+        [
+          1279,
+          1
+        ],
+        [
+          2861,
+          1
+        ],
+        [
+          3023,
+          1
+        ],
+        [
+          3673,
+          1
+        ],
+        [
+          15527,
+          1
+        ],
+        [
+          65381,
+          1
+        ]
+      ],
+      "m": -306,
+      "n": 365,
+      "remainder": "1",
+      "value": "1298025823324500752653447890"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          2111,
+          1
+        ],
+        [
+          3911,
+          1
+        ],
+        [
+          4339,
+          1
+        ],
+        [
+          19457,
+          1
+        ],
+        [
+          92119,
+          1
+        ],
+        [
+          174901,
+          1
+        ]
+      ],
+      "m": -306,
+      "n": 467,
+      "remainder": "1",
+      "value": "2762601178790380868604153942"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          571,
+          1
+        ],
+        [
+          1453,
+          1
+        ],
+        [
+          14411,
+          1
+        ],
+        [
+          307891,
+          1
+        ],
+        [
+          358931,
+          1
+        ]
+      ],
+      "m": -300,
+      "n": 19,
+      "remainder": "1",
+      "value": "-150629021589883327891242"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          2153,
+          1
+        ],
+        [
+          12413,
+          1
+        ],
+        [
+          17491,
+          1
+        ],
+        [
+          19727,
+          1
+        ],
+        [
+          43793,
+          1
+        ]
+      ],
+      "m": -299,
+      "n": 34,
+      "remainder": "1",
+      "value": "151033319937676821324086"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          127,
+          1
+        ],
+        [
+          137,
+          1
+        ],
+        [
+          1259,
+          1
+        ],
+        [
+          5209,
+          1
+        ],
+        [
+          41579,
+          1
+        ],
+        [
+          77369,
+          1
+        ]
+      ],
+      "m": -296,
+      "n": 57,
+      "remainder": "1",
+      "value": "2803658113659572040206922"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          101,
+          1
+        ],
+        [
+          6427,
+          1
+        ],
+        [
+          56131,
+          1
+        ],
+        [
+          131059,
+          1
+        ],
+        [
+          142421,
+          1
+        ],
+        [
+          303187,
+          1
+        ]
+      ],
+      "m": -294,
+      "n": 359,
+      "remainder": "1",
+      "value": "1237186464666995687125487046"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          227,
+          1
+        ],
+        [
+          229,
+          1
+        ],
+        [
+          809,
+          1
+        ],
+        [
+          1531,
+          1
+        ],
+        [
+          2909,
+          1
+        ],
+        [
+          4943,
+          1
+        ],
+        [
+          19157,
+          1
+        ],
+        [
+          63737,
+          1
+        ]
+      ],
+      "m": -291,
+      "n": 499,
+      "remainder": "1",
+      "value": "3391249600219690711673968593"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          977,
+          1
+        ],
+        [
+          1063,
+          1
+        ],
+        [
+          1699,
+          1
+        ],
+        [
+          3593,
+          1
+        ],
+        [
+          58207,
+          1
+        ],
+        [
+          78049,
+          1
+        ]
+      ],
+      "m": -288,
+      "n": 143,
+      "remainder": "1",
+      "value": "69642969411975853847115318"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          144829,
+          1
+        ],
+        [
+          145307,
+          1
+        ],
+        [
+          225581,
+          1
+        ],
+        [
+          241259,
+          1
+        ],
+        [
+          317773,
+          1
+        ]
+      ],
+      "m": -287,
+      "n": 302,
+      "remainder": "1",
+      "value": "727905664595040888285272602"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          10753,
+          1
+        ],
+        [
+          10853,
+          1
+        ],
+        [
+          18413,
+          1
+        ],
+        [
+          304331,
+          1
+        ]
+      ],
+      "m": -286,
+      "n": 51,
+      "remainder": "1",
+      "value": "1845759962229276323648334"
+    },
+    {
+      "factorization": [
+        [
+          41,
+          1
+        ],
+        [
+          53,
+          1
+        ],
+        [
+          137,
+          1
+        ],
+        [
+          42187,
+          1
+        ],
+        [
+          190093,
+          1
+        ],
+        [
+          243613,
+          1
+        ],
+        [
+          245519,
+          1
+        ]
+      ],
+      "m": -283,
+      "n": 179,
+      "remainder": "1",
+      "value": "142794219709198084548671377"
+    },
+    {
+      "factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          601,
+          1
+        ],
+        [
+          83399,
+          1
+        ],
+        [
+          165463,
+          1
+        ],
+        [
+          238481,
+          1
+        ],
+        [
+          255947,
+          1
+        ]
+      ],
+      "m": -277,
+      "n": 145,
+      "remainder": "1",
+      "value": "73402024659787430873273555"
+    },
+    {
+      "factorization": [
+        [
+          41,
+          2
+        ],
+        [
+          83,
+          1
+        ],
+        [
+          1151,
+          1
+        ],
+        [
+          10487,
+          1
+        ],
+        [
+          16987,
+          1
+        ],
+        [
+          67577,
+          1
+        ],
+        [
+          246361,
+          1
+        ]
+      ],
+      "m": -277,
+      "n": 263,
+      "remainder": "1",
+      "value": "476277373935068014369269289"
+    },
+    {
+      "factorization": [
+        [
+          7,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          197,
+          1
+        ],
+        [
+          563,
+          1
+        ],
+        [
+          7873,
+          1
+        ],
+        [
+          12451,
+          1
+        ],
+        [
+          51193,
+          1
+        ],
+        [
+          112163,
+          1
+        ]
+      ],
+      "m": -271,
+      "n": 109,
+      "remainder": "1",
+      "value": "29278724001177591802145963"
+    },
+    {
+      "factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          43,
+          1
+        ],
+        [
+          2777,
+          1
+        ],
+        [
+          12251,
+          1
+        ],
+        [
+          56039,
+          1
+        ],
+        [
+          95629,
+          1
+        ],
+        [
+          162577,
+          1
+        ]
+      ],
+      "m": -271,
+      "n": 455,
+      "remainder": "1",
+      "value": "2568206981176822389842003605"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          53,
+          1
+        ],
+        [
+          89,
+          1
+        ],
+        [
+          227,
+          1
+        ],
+        [
+          347,
+          1
+        ],
+        [
+          863,
+          1
+        ],
+        [
+          17467,
+          1
+        ],
+        [
+          29251,
+          1
+        ],
+        [
+          38783,
+          1
+        ]
+      ],
+      "m": -270,
+      "n": 353,
+      "remainder": "1",
+      "value": "1181803811957430364768875954"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          3
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          229,
+          1
+        ],
+        [
+          257,
+          1
+        ],
+        [
+          2609,
+          1
+        ],
+        [
+          3109,
+          1
+        ],
+        [
+          82913,
+          1
+        ],
+        [
+          152939,
+          1
+        ]
+      ],
+      "m": -269,
+      "n": 56,
+      "remainder": "1",
+      "value": "2857237102151903361985672"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          137,
+          1
+        ],
+        [
+          239,
+          1
+        ],
+        [
+          263,
+          1
+        ],
+        [
+          1493,
+          1
+        ],
+        [
+          3253,
+          1
+        ],
+        [
+          39343,
+          1
+        ],
+        [
+          52457,
+          1
+        ]
+      ],
+      "m": -269,
+      "n": 68,
+      "remainder": "1",
+      "value": "5869456968430692373669948"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          421,
+          1
+        ],
+        [
+          6301,
+          1
+        ],
+        [
+          20063,
+          1
+        ],
+        [
+          37987,
+          1
+        ],
+        [
+          110939,
+          1
+        ],
+        [
+          114617,
+          1
+        ]
+      ],
+      "m": -269,
+      "n": 147,
+      "remainder": "1",
+      "value": "77121769209785198168645589"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          113,
+          1
+        ],
+        [
+          139,
+          1
+        ],
+        [
+          1283,
+          1
+        ],
+        [
+          1453,
+          1
+        ],
+        [
+          62597,
+          1
+        ],
+        [
+          111103,
+          1
+        ]
+      ],
+      "m": -261,
+      "n": 2,
+      "remainder": "1",
+      "value": "-1221844872319781311578"
+    },
+    {
+      "factorization": [
+        [
+          53,
+          1
+        ],
+        [
+          307,
+          1
+        ],
+        [
+          313,
+          1
+        ],
+        [
+          719,
+          1
+        ],
+        [
+          6359,
+          1
+        ],
+        [
+          39443,
+          1
+        ],
+        [
+          80147,
+          1
+        ]
+      ],
+      "m": -259,
+      "n": 11,
+      "remainder": "1",
+      "value": "-73609439091946269251543"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          113,
+          1
+        ],
+        [
+          35729,
+          1
+        ],
+        [
+          37579,
+          1
+        ],
+        [
+          39521,
+          1
+        ],
+        [
+          42403,
+          1
+        ]
+      ],
+      "m": -254,
+      "n": 73,
+      "remainder": "1",
+      "value": "7770532907525224179739298"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          617,
+          1
+        ],
+        [
+          1063,
+          1
+        ],
+        [
+          24733,
+          1
+        ],
+        [
+          76039,
+          1
+        ],
+        [
+          152183,
+          1
+        ],
+        [
+          258317,
+          1
+        ]
+      ],
+      "m": -249,
+      "n": 179,
+      "remainder": "1",
+      "value": "145469520388929727304109141"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          101,
+          1
+        ],
+        [
+          199,
+          1
+        ],
+        [
+          229,
+          1
+        ],
+        [
+          367,
+          1
+        ],
+        [
+          4157,
+          1
+        ],
+        [
+          192971,
+          1
+        ],
+        [
+          225133,
+          1
+        ]
+      ],
+      "m": -245,
+      "n": 114,
+      "remainder": "1",
+      "value": "34776997058490249230785398"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          4
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          1327,
+          1
+        ],
+        [
+          6271,
+          1
+        ],
+        [
+          9787,
+          1
+        ],
+        [
+          75629,
+          1
+        ],
+        [
+          373859,
+          1
+        ]
+      ],
+      "m": -241,
+      "n": 80,
+      "remainder": "1",
+      "value": "10869148155300526832885680"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          113,
+          1
+        ],
+        [
+          263,
+          1
+        ],
+        [
+          1291,
+          1
+        ],
+        [
+          11593,
+          1
+        ],
+        [
+          13033,
+          1
+        ],
+        [
+          64303,
+          1
+        ],
+        [
+          73943,
+          1
+        ]
+      ],
+      "m": -233,
+      "n": 186,
+      "remainder": "1",
+      "value": "165378945136330616364860574"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          4
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          347,
+          1
+        ],
+        [
+          3251,
+          1
+        ],
+        [
+          10267,
+          1
+        ],
+        [
+          13627,
+          1
+        ],
+        [
+          44917,
+          1
+        ],
+        [
+          278123,
+          1
+        ]
+      ],
+      "m": -233,
+      "n": 272,
+      "remainder": "1",
+      "value": "536298785732901526259981296"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          673,
+          1
+        ],
+        [
+          19867,
+          1
+        ],
+        [
+          91909,
+          1
+        ],
+        [
+          184999,
+          1
+        ],
+        [
+          269891,
+          1
+        ]
+      ],
+      "m": -221,
+      "n": 57,
+      "remainder": "1",
+      "value": "3497341456056007690717947"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          1999,
+          1
+        ],
+        [
+          40973,
+          1
+        ],
+        [
+          63211,
+          1
+        ],
+        [
+          71503,
+          1
+        ],
+        [
+          143443,
+          1
+        ]
+      ],
+      "m": -219,
+      "n": 485,
+      "remainder": "1",
+      "value": "3148653825233611887376736835"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          113,
+          1
+        ],
+        [
+          557,
+          1
+        ],
+        [
+          1321,
+          1
+        ],
+        [
+          61493,
+          1
+        ],
+        [
+          108643,
+          1
+        ],
+        [
+          308501,
+          1
+        ]
+      ],
+      "m": -216,
+      "n": 41,
+      "remainder": "1",
+      "value": "1028186064318939464162634"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          43,
+          1
+        ],
+        [
+          2609,
+          1
+        ],
+        [
+          12413,
+          1
+        ],
+        [
+          77863,
+          1
+        ],
+        [
+          303367,
+          1
+        ],
+        [
+          326657,
+          1
+        ]
+      ],
+      "m": -214,
+      "n": 481,
+      "remainder": "1",
+      "value": "3073100490826361937171804002"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          113,
+          1
+        ],
+        [
+          389,
+          1
+        ],
+        [
+          1019,
+          1
+        ],
+        [
+          2459,
+          2
+        ],
+        [
+          11897,
+          1
+        ],
+        [
+          279619,
+          1
+        ]
+      ],
+      "m": -213,
+      "n": 155,
+      "remainder": "1",
+      "value": "94604702678943051736510845"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          617,
+          1
+        ],
+        [
+          619,
+          1
+        ],
+        [
+          691,
+          1
+        ],
+        [
+          6151,
+          1
+        ],
+        [
+          28817,
+          1
+        ],
+        [
+          47417,
+          1
+        ]
+      ],
+      "m": -211,
+      "n": 24,
+      "remainder": "1",
+      "value": "53234560025274684526248"
+    },
+    {
+      "factorization": [
+        [
+          2011,
+          1
+        ],
+        [
+          3943,
+          1
+        ],
+        [
+          11789,
+          1
+        ],
+        [
+          15187,
+          1
+        ],
+        [
+          331889,
+          1
+        ],
+        [
+          386839,
+          1
+        ]
+      ],
+      "m": -203,
+      "n": 191,
+      "remainder": "1",
+      "value": "182268205925994234237897469"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          113,
+          1
+        ],
+        [
+          3541,
+          1
+        ],
+        [
+          23671,
+          1
+        ],
+        [
+          34607,
+          1
+        ],
+        [
+          150649,
+          1
+        ],
+        [
+          246919,
+          1
+        ]
+      ],
+      "m": -202,
+      "n": 357,
+      "remainder": "1",
+      "value": "1243672017984180747246514962"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          173,
+          1
+        ],
+        [
+          269,
+          1
+        ],
+        [
+          4219,
+          1
+        ],
+        [
+          9743,
+          1
+        ],
+        [
+          10399,
+          1
+        ],
+        [
+          16273,
+          1
+        ],
+        [
+          57901,
+          1
+        ]
+      ],
+      "m": -201,
+      "n": 131,
+      "remainder": "1",
+      "value": "56229876915260145476683749"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          53,
+          1
+        ],
+        [
+          83,
+          1
+        ],
+        [
+          4177,
+          1
+        ],
+        [
+          5657,
+          1
+        ],
+        [
+          9887,
+          1
+        ],
+        [
+          29611,
+          1
+        ],
+        [
+          92233,
+          1
+        ]
+      ],
+      "m": -184,
+      "n": 175,
+      "remainder": "1",
+      "value": "140339060119589953235104550"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          83,
+          1
+        ],
+        [
+          1283,
+          1
+        ],
+        [
+          9473,
+          1
+        ],
+        [
+          40423,
+          1
+        ],
+        [
+          91801,
+          1
+        ],
+        [
+          136373,
+          1
+        ]
+      ],
+      "m": -184,
+      "n": 507,
+      "remainder": "1",
+      "value": "3623536406765501632391577774"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          79,
+          1
+        ],
+        [
+          5851,
+          1
+        ],
+        [
+          23981,
+          1
+        ],
+        [
+          38039,
+          1
+        ],
+        [
+          140897,
+          1
+        ],
+        [
+          253633,
+          1
+        ]
+      ],
+      "m": -182,
+      "n": 107,
+      "remainder": "1",
+      "value": "30136379086763133171502222"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          6
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          991,
+          1
+        ],
+        [
+          1499,
+          1
+        ],
+        [
+          6299,
+          1
+        ],
+        [
+          7829,
+          1
+        ],
+        [
+          82301,
+          1
+        ],
+        [
+          157543,
+          1
+        ]
+      ],
+      "m": -179,
+      "n": 448,
+      "remainder": "1",
+      "value": "2492420087872014739991248448"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          127,
+          1
+        ],
+        [
+          281,
+          1
+        ],
+        [
+          27103,
+          1
+        ],
+        [
+          96779,
+          1
+        ],
+        [
+          348671,
+          1
+        ]
+      ],
+      "m": -176,
+      "n": 3,
+      "remainder": "1",
+      "value": "-6070679539010188512114"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          167,
+          1
+        ],
+        [
+          293,
+          1
+        ],
+        [
+          1063,
+          1
+        ],
+        [
+          7489,
+          1
+        ],
+        [
+          34261,
+          1
+        ],
+        [
+          92821,
+          1
+        ]
+      ],
+      "m": -175,
+      "n": 2,
+      "remainder": "1",
+      "value": "-2477521660321367752154"
+    },
+    {
+      "factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          229,
+          1
+        ],
+        [
+          577,
+          1
+        ],
+        [
+          2557,
+          1
+        ],
+        [
+          9619,
+          1
+        ],
+        [
+          10949,
+          1
+        ],
+        [
+          198833,
+          1
+        ]
+      ],
+      "m": -169,
+      "n": 145,
+      "remainder": "1",
+      "value": "78993907417960808581395395"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          1723,
+          1
+        ],
+        [
+          1753,
+          1
+        ],
+        [
+          12853,
+          1
+        ],
+        [
+          18313,
+          1
+        ],
+        [
+          65581,
+          1
+        ],
+        [
+          297719,
+          1
+        ]
+      ],
+      "m": -169,
+      "n": 194,
+      "remainder": "1",
+      "value": "194331775411478169918459286"
+    },
+    {
+      "factorization": [
+        [
+          29,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          461,
+          1
+        ],
+        [
+          2609,
+          1
+        ],
+        [
+          2917,
+          1
+        ],
+        [
+          3163,
+          1
+        ],
+        [
+          72109,
+          1
+        ],
+        [
+          320699,
+          1
+        ]
+      ],
+      "m": -167,
+      "n": 253,
+      "remainder": "1",
+      "value": "439084102840935214557541979"
+    },
+    {
+      "factorization": [
+        [
+          5,
+          2
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          293,
+          1
+        ],
+        [
+          383,
+          1
+        ],
+        [
+          1427,
+          1
+        ],
+        [
+          1489,
+          1
+        ],
+        [
+          32987,
+          1
+        ],
+        [
+          183709,
+          1
+        ]
+      ],
+      "m": -163,
+      "n": 325,
+      "remainder": "1",
+      "value": "943455925619489408865140675"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          4
+        ],
+        [
+          127,
+          1
+        ],
+        [
+          389,
+          1
+        ],
+        [
+          3079,
+          1
+        ],
+        [
+          3163,
+          1
+        ],
+        [
+          5113,
+          1
+        ],
+        [
+          85009,
+          1
+        ]
+      ],
+      "m": -155,
+      "n": 16,
+      "remainder": "1",
+      "value": "3345976495796482693232"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          6833,
+          1
+        ],
+        [
+          7027,
+          1
+        ],
+        [
+          32621,
+          1
+        ],
+        [
+          43411,
+          1
+        ],
+        [
+          288527,
+          1
+        ]
+      ],
+      "m": -155,
+      "n": 34,
+      "remainder": "1",
+      "value": "667027611577382179759478"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          137,
+          1
+        ],
+        [
+          251,
+          1
+        ],
+        [
+          7547,
+          1
+        ],
+        [
+          82007,
+          1
+        ],
+        [
+          163243,
+          1
+        ],
+        [
+          344621,
+          1
+        ]
+      ],
+      "m": -155,
+      "n": 84,
+      "remainder": "1",
+      "value": "14367364671311247186266028"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          127,
+          1
+        ],
+        [
+          163,
+          1
+        ],
+        [
+          3023,
+          1
+        ],
+        [
+          83563,
+          1
+        ],
+        [
+          102593,
+          1
+        ],
+        [
+          133541,
+          1
+        ]
+      ],
+      "m": -152,
+      "n": 43,
+      "remainder": "1",
+      "value": "1576153570603816421721614"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          109,
+          1
+        ],
+        [
+          1579,
+          1
+        ],
+        [
+          1907,
+          1
+        ],
+        [
+          4943,
+          1
+        ],
+        [
+          4969,
+          1
+        ],
+        [
+          242101,
+          1
+        ]
+      ],
+      "m": -151,
+      "n": 174,
+      "remainder": "1",
+      "value": "140253856416434174569976058"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          653,
+          1
+        ],
+        [
+          6053,
+          1
+        ],
+        [
+          8069,
+          1
+        ],
+        [
+          13513,
+          1
+        ],
+        [
+          41759,
+          1
+        ],
+        [
+          313553,
+          1
+        ]
+      ],
+      "m": -151,
+      "n": 450,
+      "remainder": "1",
+      "value": "2539387115150989363745386950"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          101,
+          1
+        ],
+        [
+          601,
+          1
+        ],
+        [
+          1033,
+          1
+        ],
+        [
+          2393,
+          1
+        ],
+        [
+          20717,
+          1
+        ],
+        [
+          93493,
+          1
+        ]
+      ],
+      "m": -145,
+      "n": 18,
+      "remainder": "1",
+      "value": "36619749799996961479014"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          3217,
+          1
+        ],
+        [
+          5413,
+          1
+        ],
+        [
+          6199,
+          1
+        ],
+        [
+          48541,
+          1
+        ],
+        [
+          186959,
+          1
+        ]
+      ],
+      "m": -139,
+      "n": 130,
+      "remainder": "1",
+      "value": "57436201974152316100844630"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          2011,
+          1
+        ],
+        [
+          10979,
+          1
+        ],
+        [
+          19157,
+          1
+        ],
+        [
+          64123,
+          1
+        ],
+        [
+          264631,
+          1
+        ]
+      ],
+      "m": -135,
+      "n": 34,
+      "remainder": "1",
+      "value": "732077530370623572411558"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          1291,
+          1
+        ],
+        [
+          1879,
+          1
+        ],
+        [
+          5431,
+          1
+        ],
+        [
+          8111,
+          1
+        ],
+        [
+          53959,
+          1
+        ],
+        [
+          396523,
+          1
+        ]
+      ],
+      "m": -134,
+      "n": 405,
+      "remainder": "1",
+      "value": "1851929804628537693272112330"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          83,
+          1
+        ],
+        [
+          9059,
+          1
+        ],
+        [
+          15619,
+          1
+        ],
+        [
+          129893,
+          1
+        ],
+        [
+          132233,
+          1
+        ]
+      ],
+      "m": -131,
+      "n": 24,
+      "remainder": "1",
+      "value": "198487094149867827874728"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          149,
+          1
+        ],
+        [
+          46093,
+          1
+        ],
+        [
+          92377,
+          1
+        ],
+        [
+          326467,
+          1
+        ]
+      ],
+      "m": -129,
+      "n": 8,
+      "remainder": "1",
+      "value": "-11935147433931248370312"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          683,
+          1
+        ],
+        [
+          1627,
+          1
+        ],
+        [
+          9323,
+          1
+        ],
+        [
+          68477,
+          1
+        ],
+        [
+          108203,
+          1
+        ]
+      ],
+      "m": -129,
+      "n": 11,
+      "remainder": "1",
+      "value": "-8520615094379676986163"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          199,
+          1
+        ],
+        [
+          367,
+          1
+        ],
+        [
+          563,
+          1
+        ],
+        [
+          1499,
+          1
+        ],
+        [
+          2609,
+          1
+        ],
+        [
+          4297,
+          1
+        ],
+        [
+          4513,
+          1
+        ],
+        [
+          196561,
+          1
+        ]
+      ],
+      "m": -118,
+      "n": 353,
+      "remainder": "1",
+      "value": "1225917609014361203823170338"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          149,
+          1
+        ],
+        [
+          307,
+          1
+        ],
+        [
+          3169,
+          1
+        ],
+        [
+          3499,
+          1
+        ],
+        [
+          24121,
+          1
+        ],
+        [
+          25321,
+          1
+        ],
+        [
+          198733,
+          1
+        ]
+      ],
+      "m": -109,
+      "n": 314,
+      "remainder": "1",
+      "value": "861916136870132641551515086"
+    },
+    {
+      "factorization": [
+        [
+          19,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          271,
+          1
+        ],
+        [
+          1327,
+          1
+        ],
+        [
+          9689,
+          1
+        ],
+        [
+          148691,
+          1
+        ],
+        [
+          235273,
+          1
+        ]
+      ],
+      "m": -107,
+      "n": 19,
+      "remainder": "1",
+      "value": "94954029612066823093361"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          7243,
+          1
+        ],
+        [
+          15461,
+          1
+        ],
+        [
+          48767,
+          1
+        ],
+        [
+          200867,
+          1
+        ]
+      ],
+      "m": -90,
+      "n": 23,
+      "remainder": "1",
+      "value": "228564730590943027002414"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          601,
+          1
+        ],
+        [
+          9187,
+          1
+        ],
+        [
+          15527,
+          1
+        ],
+        [
+          25471,
+          1
+        ],
+        [
+          134177,
+          1
+        ]
+      ],
+      "m": -87,
+      "n": 256,
+      "remainder": "1",
+      "value": "467366447852866245668959488"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          197,
+          1
+        ],
+        [
+          617,
+          1
+        ],
+        [
+          1279,
+          1
+        ],
+        [
+          1427,
+          1
+        ],
+        [
+          3329,
+          1
+        ],
+        [
+          32377,
+          1
+        ],
+        [
+          99571,
+          1
+        ]
+      ],
+      "m": -83,
+      "n": 471,
+      "remainder": "1",
+      "value": "2949853740812208339291977109"
+    },
+    {
+      "factorization": [
+        [
+          29,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          929,
+          1
+        ],
+        [
+          2333,
+          1
+        ],
+        [
+          3347,
+          1
+        ],
+        [
+          4817,
+          1
+        ],
+        [
+          6991,
+          1
+        ]
+      ],
+      "m": -77,
+      "n": 1,
+      "remainder": "1",
+      "value": "-290458418393577093757"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          383,
+          1
+        ],
+        [
+          1231,
+          1
+        ],
+        [
+          61507,
+          1
+        ],
+        [
+          79847,
+          1
+        ],
+        [
+          311279,
+          1
+        ]
+      ],
+      "m": -76,
+      "n": 27,
+      "remainder": "1",
+      "value": "428130573751252554836742"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          293,
+          1
+        ],
+        [
+          1723,
+          1
+        ],
+        [
+          1907,
+          1
+        ],
+        [
+          11161,
+          1
+        ],
+        [
+          41131,
+          1
+        ],
+        [
+          42193,
+          1
+        ],
+        [
+          48779,
+          1
+        ]
+      ],
+      "m": -74,
+      "n": 401,
+      "remainder": "1",
+      "value": "1819195032558547890563264842"
+    },
+    {
+      "factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          42181,
+          1
+        ],
+        [
+          74887,
+          1
+        ],
+        [
+          111323,
+          1
+        ],
+        [
+          159407,
+          1
+        ]
+      ],
+      "m": -71,
+      "n": 5,
+      "remainder": "1",
+      "value": "-1961930590564332330845"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          19,
+          2
+        ],
+        [
+          1063,
+          1
+        ],
+        [
+          6199,
+          1
+        ],
+        [
+          18301,
+          1
+        ],
+        [
+          20023,
+          1
+        ],
+        [
+          77521,
+          1
+        ]
+      ],
+      "m": -68,
+      "n": 19,
+      "remainder": "1",
+      "value": "135149808040571084939462"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          149,
+          1
+        ],
+        [
+          2909,
+          1
+        ],
+        [
+          12809,
+          1
+        ],
+        [
+          37811,
+          1
+        ],
+        [
+          52103,
+          1
+        ]
+      ],
+      "m": -67,
+      "n": 3,
+      "remainder": "1",
+      "value": "-1345337413962155411871"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          139,
+          1
+        ],
+        [
+          1621,
+          1
+        ],
+        [
+          12611,
+          1
+        ],
+        [
+          44071,
+          1
+        ],
+        [
+          89899,
+          1
+        ]
+      ],
+      "m": -44,
+      "n": 3,
+      "remainder": "1",
+      "value": "-472829317723955159562"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          48479,
+          1
+        ],
+        [
+          53861,
+          1
+        ],
+        [
+          58427,
+          1
+        ],
+        [
+          313241,
+          1
+        ]
+      ],
+      "m": -44,
+      "n": 5,
+      "remainder": "1",
+      "value": "477881539975548580330"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          263,
+          1
+        ],
+        [
+          4201,
+          1
+        ],
+        [
+          9277,
+          1
+        ],
+        [
+          17393,
+          1
+        ],
+        [
+          271357,
+          1
+        ]
+      ],
+      "m": -42,
+      "n": 19,
+      "remainder": "1",
+      "value": "159931629456999030506406"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          853,
+          1
+        ],
+        [
+          1361,
+          1
+        ],
+        [
+          7247,
+          1
+        ],
+        [
+          8627,
+          1
+        ],
+        [
+          103333,
+          1
+        ]
+      ],
+      "m": -39,
+      "n": 14,
+      "remainder": "1",
+      "value": "59895412430932030897626"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          113,
+          1
+        ],
+        [
+          2111,
+          1
+        ],
+        [
+          5573,
+          1
+        ],
+        [
+          26489,
+          1
+        ],
+        [
+          327277,
+          1
+        ]
+      ],
+      "m": -39,
+      "n": 25,
+      "remainder": "1",
+      "value": "389829386094181721858775"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          31,
+          2
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          53,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          201167,
+          1
+        ],
+        [
+          361001,
+          1
+        ]
+      ],
+      "m": -38,
+      "n": 1,
+      "remainder": "1",
+      "value": "-125264585477121059326"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          1913,
+          1
+        ],
+        [
+          6659,
+          1
+        ],
+        [
+          16183,
+          1
+        ],
+        [
+          94099,
+          1
+        ],
+        [
+          127717,
+          1
+        ]
+      ],
+      "m": -38,
+      "n": 7,
+      "remainder": "1",
+      "value": "4955035057572338289926"
+    },
+    {
+      "factorization": [
+        [
+          13,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          1447,
+          1
+        ],
+        [
+          3617,
+          1
+        ],
+        [
+          5737,
+          1
+        ],
+        [
+          14821,
+          1
+        ],
+        [
+          285007,
+          1
+        ]
+      ],
+      "m": -29,
+      "n": 13,
+      "remainder": "1",
+      "value": "51114011923773239694383"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          127,
+          1
+        ],
+        [
+          283,
+          1
+        ],
+        [
+          313,
+          1
+        ],
+        [
+          23297,
+          1
+        ],
+        [
+          68111,
+          1
+        ],
+        [
+          94057,
+          1
+        ],
+        [
+          391693,
+          1
+        ]
+      ],
+      "m": -29,
+      "n": 452,
+      "remainder": "1",
+      "value": "2630562801365505979834499644"
+    },
+    {
+      "factorization": [
+        [
+          113,
+          1
+        ],
+        [
+          33487,
+          1
+        ],
+        [
+          82763,
+          1
+        ],
+        [
+          253769,
+          1
+        ],
+        [
+          395597,
+          1
+        ]
+      ],
+      "m": -23,
+      "n": 11,
+      "remainder": "1",
+      "value": "31439994980238402976729"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          809,
+          1
+        ],
+        [
+          18097,
+          1
+        ],
+        [
+          23593,
+          1
+        ],
+        [
+          252169,
+          1
+        ]
+      ],
+      "m": -19,
+      "n": 2,
+      "remainder": "1",
+      "value": "11671717576524259894"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          48823,
+          1
+        ],
+        [
+          99241,
+          1
+        ],
+        [
+          104849,
+          1
+        ],
+        [
+          161137,
+          1
+        ]
+      ],
+      "m": -18,
+      "n": 5,
+      "remainder": "1",
+      "value": "2455819337833300360770"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          53,
+          1
+        ],
+        [
+          14563,
+          1
+        ],
+        [
+          15187,
+          1
+        ],
+        [
+          39719,
+          1
+        ],
+        [
+          42043,
+          1
+        ],
+        [
+          122011,
+          1
+        ]
+      ],
+      "m": -18,
+      "n": 391,
+      "remainder": "1",
+      "value": "1705249433789325605113873374"
+    },
+    {
+      "factorization": [
+        [
+          7,
+          1
+        ],
+        [
+          353,
+          1
+        ],
+        [
+          383,
+          1
+        ],
+        [
+          431,
+          1
+        ],
+        [
+          1069,
+          1
+        ],
+        [
+          1667,
+          1
+        ],
+        [
+          36973,
+          1
+        ]
+      ],
+      "m": -17,
+      "n": 1,
+      "remainder": "1",
+      "value": "-26874895569932238157"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          6133,
+          1
+        ],
+        [
+          44351,
+          1
+        ],
+        [
+          88523,
+          1
+        ],
+        [
+          393187,
+          1
+        ]
+      ],
+      "m": -16,
+      "n": 3,
+      "remainder": "1",
+      "value": "397631650029792657486"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          59,
+          2
+        ],
+        [
+          2089,
+          1
+        ],
+        [
+          6421,
+          1
+        ],
+        [
+          25457,
+          1
+        ],
+        [
+          223757,
+          1
+        ]
+      ],
+      "m": -6,
+      "n": 25,
+      "remainder": "1",
+      "value": "438846794643864144385650"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          71,
+          1
+        ],
+        [
+          563,
+          1
+        ],
+        [
+          601,
+          1
+        ],
+        [
+          643,
+          1
+        ],
+        [
+          1861,
+          1
+        ],
+        [
+          75377,
+          1
+        ],
+        [
+          224443,
+          1
+        ]
+      ],
+      "m": -3,
+      "n": 71,
+      "remainder": "1",
+      "value": "10213221950485048779151749"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          1019,
+          1
+        ],
+        [
+          6469,
+          1
+        ],
+        [
+          46639,
+          1
+        ],
+        [
+          64747,
+          1
+        ],
+        [
+          198479,
+          1
+        ]
+      ],
+      "m": -1,
+      "n": 39,
+      "remainder": "1",
+      "value": "1694931187753733802820233"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          113,
+          1
+        ],
+        [
+          197,
+          1
+        ],
+        [
+          11863,
+          1
+        ],
+        [
+          36073,
+          1
+        ],
+        [
+          61613,
+          1
+        ],
+        [
+          83003,
+          1
+        ]
+      ],
+      "m": -1,
+      "n": 84,
+      "remainder": "1",
+      "value": "16953792006438223556575308"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          4729,
+          1
+        ],
+        [
+          32377,
+          1
+        ],
+        [
+          72077,
+          1
+        ],
+        [
+          240883,
+          1
+        ],
+        [
+          336199,
+          1
+        ]
+      ],
+      "m": 5,
+      "n": 406,
+      "remainder": "1",
+      "value": "1917939518028741905117852162"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          1291,
+          1
+        ],
+        [
+          2447,
+          1
+        ],
+        [
+          7877,
+          1
+        ],
+        [
+          50053,
+          1
+        ],
+        [
+          71233,
+          1
+        ],
+        [
+          321187,
+          1
+        ]
+      ],
+      "m": 9,
+      "n": 310,
+      "remainder": "1",
+      "value": "854892719663065891380813810"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          433,
+          1
+        ],
+        [
+          8291,
+          1
+        ],
+        [
+          73433,
+          1
+        ],
+        [
+          117017,
+          1
+        ],
+        [
+          147031,
+          1
+        ]
+      ],
+      "m": 22,
+      "n": 95,
+      "remainder": "1",
+      "value": "24991685798817519383267230"
+    },
+    {
+      "factorization": [
+        [
+          13,
+          2
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          617,
+          1
+        ],
+        [
+          21613,
+          1
+        ],
+        [
+          22973,
+          1
+        ],
+        [
+          125093,
+          1
+        ],
+        [
+          323053,
+          1
+        ]
+      ],
+      "m": 31,
+      "n": 169,
+      "remainder": "1",
+      "value": "140180054270870232308485211"
+    },
+    {
+      "factorization": [
+        [
+          17,
+          1
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          139,
+          1
+        ],
+        [
+          229,
+          1
+        ],
+        [
+          389,
+          1
+        ],
+        [
+          599,
+          1
+        ],
+        [
+          20543,
+          1
+        ],
+        [
+          82529,
+          1
+        ],
+        [
+          239333,
+          1
+        ]
+      ],
+      "m": 31,
+      "n": 323,
+      "remainder": "1",
+      "value": "972080569432454855806772293"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          139,
+          1
+        ],
+        [
+          4651,
+          1
+        ],
+        [
+          11243,
+          1
+        ],
+        [
+          12689,
+          1
+        ],
+        [
+          96749,
+          1
+        ]
+      ],
+      "m": 35,
+      "n": 18,
+      "remainder": "1",
+      "value": "190972833726968002808694"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          617,
+          1
+        ],
+        [
+          6803,
+          1
+        ],
+        [
+          11579,
+          1
+        ],
+        [
+          20521,
+          1
+        ],
+        [
+          20873,
+          1
+        ],
+        [
+          41183,
+          1
+        ]
+      ],
+      "m": 35,
+      "n": 158,
+      "remainder": "1",
+      "value": "114884876216111091854120554"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          61,
+          1
+        ],
+        [
+          347,
+          1
+        ],
+        [
+          139901,
+          1
+        ],
+        [
+          179957,
+          1
+        ],
+        [
+          344017,
+          1
+        ],
+        [
+          351077,
+          1
+        ]
+      ],
+      "m": 40,
+      "n": 237,
+      "remainder": "1",
+      "value": "386173444982353356857345826"
+    },
+    {
+      "factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          43,
+          1
+        ],
+        [
+          4733,
+          1
+        ],
+        [
+          9497,
+          1
+        ],
+        [
+          50593,
+          1
+        ],
+        [
+          300557,
+          1
+        ]
+      ],
+      "m": 49,
+      "n": 5,
+      "remainder": "1",
+      "value": "5437263823216964925955"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          2143,
+          1
+        ],
+        [
+          16879,
+          1
+        ],
+        [
+          55817,
+          1
+        ],
+        [
+          133499,
+          1
+        ],
+        [
+          314707,
+          1
+        ]
+      ],
+      "m": 52,
+      "n": 75,
+      "remainder": "1",
+      "value": "12723630530335132029008550"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          673,
+          1
+        ],
+        [
+          809,
+          1
+        ],
+        [
+          2617,
+          1
+        ],
+        [
+          6733,
+          1
+        ],
+        [
+          35419,
+          1
+        ],
+        [
+          88657,
+          1
+        ]
+      ],
+      "m": 53,
+      "n": 225,
+      "remainder": "1",
+      "value": "332126744010859270414835775"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          229,
+          1
+        ],
+        [
+          353,
+          1
+        ],
+        [
+          683,
+          1
+        ],
+        [
+          887,
+          1
+        ],
+        [
+          9221,
+          1
+        ],
+        [
+          25903,
+          1
+        ],
+        [
+          269573,
+          1
+        ]
+      ],
+      "m": 56,
+      "n": 59,
+      "remainder": "1",
+      "value": "6306508512504362991876046"
+    },
+    {
+      "factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          263,
+          1
+        ],
+        [
+          277,
+          1
+        ],
+        [
+          653,
+          1
+        ],
+        [
+          6133,
+          1
+        ],
+        [
+          8677,
+          1
+        ],
+        [
+          11927,
+          1
+        ],
+        [
+          86533,
+          1
+        ]
+      ],
+      "m": 59,
+      "n": 235,
+      "remainder": "1",
+      "value": "378854319248839981445289485"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          607,
+          1
+        ],
+        [
+          1601,
+          1
+        ],
+        [
+          3167,
+          1
+        ],
+        [
+          10711,
+          1
+        ],
+        [
+          44159,
+          1
+        ],
+        [
+          273773,
+          1
+        ]
+      ],
+      "m": 73,
+      "n": 33,
+      "remainder": "1",
+      "value": "1195609082240409425350239"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          7873,
+          1
+        ],
+        [
+          11839,
+          1
+        ],
+        [
+          35107,
+          1
+        ],
+        [
+          39541,
+          1
+        ],
+        [
+          141179,
+          1
+        ]
+      ],
+      "m": 73,
+      "n": 174,
+      "remainder": "1",
+      "value": "155744267132428959199101306"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          113,
+          1
+        ],
+        [
+          601,
+          1
+        ],
+        [
+          7253,
+          1
+        ],
+        [
+          15643,
+          1
+        ],
+        [
+          68071,
+          1
+        ],
+        [
+          119131,
+          1
+        ]
+      ],
+      "m": 75,
+      "n": 28,
+      "remainder": "1",
+      "value": "749823076819966051524324"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          191,
+          1
+        ],
+        [
+          757,
+          1
+        ],
+        [
+          1787,
+          1
+        ],
+        [
+          126443,
+          1
+        ],
+        [
+          184013,
+          1
+        ],
+        [
+          247529,
+          1
+        ]
+      ],
+      "m": 77,
+      "n": 225,
+      "remainder": "1",
+      "value": "334815613161291204680735775"
+    },
+    {
+      "factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          32159,
+          1
+        ],
+        [
+          132361,
+          1
+        ],
+        [
+          137077,
+          1
+        ],
+        [
+          270799,
+          1
+        ]
+      ],
+      "m": 83,
+      "n": 5,
+      "remainder": "1",
+      "value": "5530218198703230398695"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5023,
+          1
+        ],
+        [
+          6833,
+          1
+        ],
+        [
+          14143,
+          1
+        ],
+        [
+          59617,
+          1
+        ],
+        [
+          256337,
+          1
+        ]
+      ],
+      "m": 87,
+      "n": 25,
+      "remainder": "1",
+      "value": "556363741401960657350475"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          163,
+          1
+        ],
+        [
+          9323,
+          1
+        ],
+        [
+          28123,
+          1
+        ],
+        [
+          38783,
+          1
+        ],
+        [
+          106187,
+          1
+        ],
+        [
+          394969,
+          1
+        ]
+      ],
+      "m": 92,
+      "n": 167,
+      "remainder": "1",
+      "value": "139030694776633290828867646"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          691,
+          1
+        ],
+        [
+          2789,
+          1
+        ],
+        [
+          7927,
+          1
+        ],
+        [
+          13001,
+          1
+        ],
+        [
+          15149,
+          1
+        ],
+        [
+          187127,
+          1
+        ]
+      ],
+      "m": 97,
+      "n": 454,
+      "remainder": "1",
+      "value": "2723945805752381156945203202"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          12611,
+          1
+        ],
+        [
+          131321,
+          1
+        ],
+        [
+          155891,
+          1
+        ],
+        [
+          206033,
+          1
+        ]
+      ],
+      "m": 101,
+      "n": 20,
+      "remainder": "1",
+      "value": "305318716809799658211820"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          173,
+          1
+        ],
+        [
+          257,
+          1
+        ],
+        [
+          617,
+          1
+        ],
+        [
+          2557,
+          1
+        ],
+        [
+          12647,
+          1
+        ],
+        [
+          160861,
+          1
+        ],
+        [
+          173293,
+          1
+        ]
+      ],
+      "m": 101,
+      "n": 471,
+      "remainder": "1",
+      "value": "3041722097688782718173205717"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          113,
+          1
+        ],
+        [
+          509,
+          1
+        ],
+        [
+          6691,
+          1
+        ],
+        [
+          66749,
+          1
+        ],
+        [
+          101531,
+          1
+        ],
+        [
+          302227,
+          1
+        ]
+      ],
+      "m": 103,
+      "n": 162,
+      "remainder": "1",
+      "value": "127696489376844099141188982"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          277,
+          1
+        ],
+        [
+          743,
+          1
+        ],
+        [
+          967,
+          1
+        ],
+        [
+          5657,
+          1
+        ],
+        [
+          35969,
+          1
+        ],
+        [
+          49871,
+          1
+        ],
+        [
+          146381,
+          1
+        ]
+      ],
+      "m": 104,
+      "n": 393,
+      "remainder": "1",
+      "value": "1773755014570681365990857226"
+    },
+    {
+      "factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          563,
+          1
+        ],
+        [
+          1753,
+          1
+        ],
+        [
+          9391,
+          1
+        ],
+        [
+          22063,
+          1
+        ],
+        [
+          27449,
+          1
+        ]
+      ],
+      "m": 107,
+      "n": 95,
+      "remainder": "1",
+      "value": "26647242301149791055947905"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          2
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          61,
+          1
+        ],
+        [
+          1627,
+          1
+        ],
+        [
+          92143,
+          1
+        ],
+        [
+          232901,
+          1
+        ],
+        [
+          303367,
+          1
+        ]
+      ],
+      "m": 107,
+      "n": 117,
+      "remainder": "1",
+      "value": "49062535071459649589823831"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          569,
+          1
+        ],
+        [
+          601,
+          1
+        ],
+        [
+          3209,
+          1
+        ],
+        [
+          42463,
+          1
+        ],
+        [
+          214439,
+          1
+        ]
+      ],
+      "m": 110,
+      "n": 1,
+      "remainder": "1",
+      "value": "-1338984966133863028198"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          659,
+          1
+        ],
+        [
+          2111,
+          1
+        ],
+        [
+          12113,
+          1
+        ],
+        [
+          37879,
+          1
+        ],
+        [
+          49463,
+          1
+        ],
+        [
+          53401,
+          1
+        ]
+      ],
+      "m": 111,
+      "n": 416,
+      "remainder": "1",
+      "value": "2104109314169472232658067552"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          18341,
+          1
+        ],
+        [
+          20707,
+          1
+        ],
+        [
+          22877,
+          1
+        ],
+        [
+          128153,
+          1
+        ],
+        [
+          385967,
+          1
+        ]
+      ],
+      "m": 112,
+      "n": 169,
+      "remainder": "1",
+      "value": "145256280215544730849227962"
+    },
+    {
+      "factorization": [
+        [
+          59,
+          1
+        ],
+        [
+          461,
+          1
+        ],
+        [
+          5651,
+          1
+        ],
+        [
+          35803,
+          1
+        ],
+        [
+          54679,
+          1
+        ],
+        [
+          193841,
+          1
+        ]
+      ],
+      "m": 113,
+      "n": 11,
+      "remainder": "1",
+      "value": "58326224857085321899033"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          4
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          89,
+          1
+        ],
+        [
+          197,
+          1
+        ],
+        [
+          2609,
+          1
+        ],
+        [
+          3677,
+          1
+        ],
+        [
+          8867,
+          1
+        ],
+        [
+          26683,
+          1
+        ],
+        [
+          32503,
+          1
+        ]
+      ],
+      "m": 119,
+      "n": 208,
+      "remainder": "1",
+      "value": "269043243010683342252090416"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          709,
+          1
+        ],
+        [
+          1429,
+          1
+        ],
+        [
+          6329,
+          1
+        ],
+        [
+          11411,
+          1
+        ],
+        [
+          30497,
+          1
+        ],
+        [
+          288979,
+          1
+        ]
+      ],
+      "m": 129,
+      "n": 370,
+      "remainder": "1",
+      "value": "1489610238062662452890577270"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          61,
+          1
+        ],
+        [
+          2273,
+          1
+        ],
+        [
+          4019,
+          1
+        ],
+        [
+          10151,
+          1
+        ],
+        [
+          207469,
+          1
+        ]
+      ],
+      "m": 131,
+      "n": 3,
+      "remainder": "1",
+      "value": "-1454054298904784926587"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          173,
+          1
+        ],
+        [
+          1657,
+          1
+        ],
+        [
+          55843,
+          1
+        ],
+        [
+          93307,
+          1
+        ],
+        [
+          101399,
+          1
+        ],
+        [
+          149371,
+          1
+        ]
+      ],
+      "m": 131,
+      "n": 318,
+      "remainder": "1",
+      "value": "950168940902111221818087498"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          4
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          79,
+          1
+        ],
+        [
+          4793,
+          1
+        ],
+        [
+          22859,
+          1
+        ],
+        [
+          321833,
+          1
+        ],
+        [
+          352817,
+          1
+        ]
+      ],
+      "m": 133,
+      "n": 16,
+      "remainder": "1",
+      "value": "172975459181637403042928"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          617,
+          1
+        ],
+        [
+          3041,
+          1
+        ],
+        [
+          9901,
+          1
+        ],
+        [
+          117809,
+          1
+        ],
+        [
+          153281,
+          1
+        ]
+      ],
+      "m": 136,
+      "n": 5,
+      "remainder": "1",
+      "value": "3354651727317552174130"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          281,
+          1
+        ],
+        [
+          617,
+          1
+        ],
+        [
+          2273,
+          1
+        ],
+        [
+          5741,
+          1
+        ],
+        [
+          9221,
+          1
+        ],
+        [
+          12269,
+          1
+        ],
+        [
+          162563,
+          1
+        ]
+      ],
+      "m": 137,
+      "n": 309,
+      "remainder": "1",
+      "value": "873789164829221162056348947"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          461,
+          1
+        ],
+        [
+          24509,
+          1
+        ],
+        [
+          58679,
+          1
+        ],
+        [
+          125777,
+          1
+        ],
+        [
+          343601,
+          1
+        ]
+      ],
+      "m": 143,
+      "n": 216,
+      "remainder": "1",
+      "value": "303259701653340005073481128"
+    },
+    {
+      "factorization": [
+        [
+          5,
+          2
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          197,
+          1
+        ],
+        [
+          461,
+          1
+        ],
+        [
+          557,
+          1
+        ],
+        [
+          40433,
+          1
+        ],
+        [
+          104417,
+          1
+        ],
+        [
+          357659,
+          1
+        ]
+      ],
+      "m": 149,
+      "n": 325,
+      "remainder": "1",
+      "value": "1017808092357690402417503075"
+    },
+    {
+      "factorization": [
+        [
+          2143,
+          1
+        ],
+        [
+          7547,
+          1
+        ],
+        [
+          12323,
+          1
+        ],
+        [
+          23909,
+          1
+        ],
+        [
+          318503,
+          1
+        ],
+        [
+          342521,
+          1
+        ]
+      ],
+      "m": 151,
+      "n": 259,
+      "remainder": "1",
+      "value": "519846485443327927046636261"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          61,
+          1
+        ],
+        [
+          577,
+          1
+        ],
+        [
+          3167,
+          1
+        ],
+        [
+          44953,
+          1
+        ],
+        [
+          51517,
+          1
+        ],
+        [
+          76001,
+          1
+        ]
+      ],
+      "m": 161,
+      "n": 135,
+      "remainder": "1",
+      "value": "76809339330758313574064085"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          61,
+          1
+        ],
+        [
+          173,
+          1
+        ],
+        [
+          1009,
+          1
+        ],
+        [
+          8627,
+          1
+        ],
+        [
+          22721,
+          1
+        ],
+        [
+          49481,
+          1
+        ],
+        [
+          290531,
+          1
+        ]
+      ],
+      "m": 161,
+      "n": 501,
+      "remainder": "1",
+      "value": "3690544127538718618787227827"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          4157,
+          1
+        ],
+        [
+          7247,
+          1
+        ],
+        [
+          146581,
+          1
+        ],
+        [
+          209623,
+          1
+        ],
+        [
+          330983,
+          1
+        ]
+      ],
+      "m": 168,
+      "n": 247,
+      "remainder": "1",
+      "value": "454055342225535100533976662"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          151,
+          1
+        ],
+        [
+          193,
+          1
+        ],
+        [
+          2659,
+          1
+        ],
+        [
+          23929,
+          1
+        ],
+        [
+          39631,
+          1
+        ],
+        [
+          178559,
+          1
+        ]
+      ],
+      "m": 169,
+      "n": 51,
+      "remainder": "1",
+      "value": "4684488050004323456384769"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          1439,
+          1
+        ],
+        [
+          1723,
+          1
+        ],
+        [
+          3019,
+          1
+        ],
+        [
+          6073,
+          1
+        ],
+        [
+          27109,
+          1
+        ],
+        [
+          58889,
+          1
+        ]
+      ],
+      "m": 171,
+      "n": 28,
+      "remainder": "1",
+      "value": "870846054877683039824868"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          1429,
+          1
+        ],
+        [
+          45197,
+          1
+        ],
+        [
+          194863,
+          1
+        ],
+        [
+          207509,
+          1
+        ]
+      ],
+      "m": 172,
+      "n": 17,
+      "remainder": "1",
+      "value": "214794395365105028516866"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          557,
+          1
+        ],
+        [
+          1279,
+          1
+        ],
+        [
+          50957,
+          1
+        ],
+        [
+          56171,
+          1
+        ],
+        [
+          189061,
+          1
+        ]
+      ],
+      "m": 173,
+      "n": 174,
+      "remainder": "1",
+      "value": "162266479670184878677940106"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          109,
+          1
+        ],
+        [
+          683,
+          1
+        ],
+        [
+          168433,
+          1
+        ],
+        [
+          311293,
+          1
+        ],
+        [
+          373909,
+          1
+        ],
+        [
+          390743,
+          1
+        ]
+      ],
+      "m": 178,
+      "n": 337,
+      "remainder": "1",
+      "value": "1140593419139849271554276882"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          31,
+          2
+        ],
+        [
+          113,
+          1
+        ],
+        [
+          313,
+          1
+        ],
+        [
+          563,
+          1
+        ],
+        [
+          601,
+          1
+        ],
+        [
+          1481,
+          1
+        ],
+        [
+          2617,
+          1
+        ],
+        [
+          23447,
+          1
+        ]
+      ],
+      "m": 181,
+      "n": 324,
+      "remainder": "1",
+      "value": "1015877555077499737451066556"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          4091,
+          1
+        ],
+        [
+          12539,
+          1
+        ],
+        [
+          125507,
+          1
+        ],
+        [
+          164627,
+          1
+        ],
+        [
+          278353,
+          1
+        ]
+      ],
+      "m": 183,
+      "n": 169,
+      "remainder": "1",
+      "value": "149577152192578038787264731"
+    },
+    {
+      "factorization": [
+        [
+          11,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          197,
+          1
+        ],
+        [
+          293,
+          1
+        ],
+        [
+          3517,
+          1
+        ],
+        [
+          6521,
+          1
+        ],
+        [
+          21821,
+          1
+        ],
+        [
+          23981,
+          1
+        ]
+      ],
+      "m": 185,
+      "n": 23,
+      "remainder": "1",
+      "value": "510540079045943871289189"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          109,
+          1
+        ],
+        [
+          719,
+          1
+        ],
+        [
+          863,
+          1
+        ],
+        [
+          3347,
+          1
+        ],
+        [
+          3433,
+          1
+        ],
+        [
+          5939,
+          1
+        ],
+        [
+          9767,
+          1
+        ]
+      ],
+      "m": 191,
+      "n": 34,
+      "remainder": "1",
+      "value": "1532671669685308057529366"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          1811,
+          1
+        ],
+        [
+          3793,
+          1
+        ],
+        [
+          5387,
+          1
+        ],
+        [
+          152443,
+          1
+        ],
+        [
+          370571,
+          1
+        ]
+      ],
+      "m": 192,
+      "n": 23,
+      "remainder": "1",
+      "value": "514235781046719332651238"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          4
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          53,
+          1
+        ],
+        [
+          3301,
+          1
+        ],
+        [
+          6299,
+          1
+        ],
+        [
+          23929,
+          1
+        ],
+        [
+          64921,
+          1
+        ],
+        [
+          125813,
+          1
+        ]
+      ],
+      "m": 193,
+      "n": 80,
+      "remainder": "1",
+      "value": "17231308502933811324863920"
+    },
+    {
+      "factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          199,
+          1
+        ],
+        [
+          347,
+          1
+        ],
+        [
+          509,
+          1
+        ],
+        [
+          977,
+          1
+        ],
+        [
+          8237,
+          1
+        ],
+        [
+          78877,
+          1
+        ],
+        [
+          170827,
+          1
+        ]
+      ],
+      "m": 193,
+      "n": 335,
+      "remainder": "1",
+      "value": "1124327614834086616191124765"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          263,
+          1
+        ],
+        [
+          8627,
+          1
+        ],
+        [
+          15809,
+          1
+        ],
+        [
+          55051,
+          1
+        ],
+        [
+          76507,
+          1
+        ],
+        [
+          120811,
+          1
+        ]
+      ],
+      "m": 193,
+      "n": 372,
+      "remainder": "1",
+      "value": "1533105692635784554580037612"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          331,
+          1
+        ],
+        [
+          10037,
+          1
+        ],
+        [
+          12457,
+          1
+        ],
+        [
+          16661,
+          1
+        ],
+        [
+          99149,
+          1
+        ]
+      ],
+      "m": 199,
+      "n": 2,
+      "remainder": "1",
+      "value": "-8067087961517082142058"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          197,
+          1
+        ],
+        [
+          257,
+          1
+        ],
+        [
+          2141,
+          1
+        ],
+        [
+          7013,
+          1
+        ],
+        [
+          119633,
+          1
+        ],
+        [
+          172933,
+          1
+        ]
+      ],
+      "m": 202,
+      "n": 171,
+      "remainder": "1",
+      "value": "155981405300512147643084814"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          89,
+          1
+        ],
+        [
+          347,
+          1
+        ],
+        [
+          853,
+          1
+        ],
+        [
+          2617,
+          1
+        ],
+        [
+          3217,
+          1
+        ],
+        [
+          21787,
+          1
+        ],
+        [
+          350459,
+          1
+        ]
+      ],
+      "m": 207,
+      "n": 385,
+      "remainder": "1",
+      "value": "1701860696889750796845099315"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          14153,
+          1
+        ],
+        [
+          54877,
+          1
+        ],
+        [
+          128747,
+          1
+        ],
+        [
+          131249,
+          1
+        ],
+        [
+          267541,
+          1
+        ]
+      ],
+      "m": 215,
+      "n": 342,
+      "remainder": "1",
+      "value": "1200849112601520274924982946"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          101,
+          1
+        ],
+        [
+          173,
+          1
+        ],
+        [
+          197,
+          1
+        ],
+        [
+          347,
+          1
+        ],
+        [
+          1559,
+          1
+        ],
+        [
+          7673,
+          1
+        ],
+        [
+          40939,
+          1
+        ]
+      ],
+      "m": 219,
+      "n": 319,
+      "remainder": "1",
+      "value": "978560482268215999409781153"
+    },
+    {
+      "factorization": [
+        [
+          263,
+          1
+        ],
+        [
+          2027,
+          1
+        ],
+        [
+          3257,
+          1
+        ],
+        [
+          86083,
+          1
+        ],
+        [
+          292477,
+          1
+        ],
+        [
+          363401,
+          1
+        ]
+      ],
+      "m": 233,
+      "n": 77,
+      "remainder": "1",
+      "value": "15886290029222304902929387"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          137,
+          1
+        ],
+        [
+          313,
+          1
+        ],
+        [
+          5237,
+          1
+        ],
+        [
+          7283,
+          1
+        ],
+        [
+          89101,
+          1
+        ],
+        [
+          99689,
+          1
+        ]
+      ],
+      "m": 249,
+      "n": 208,
+      "remainder": "1",
+      "value": "281017839047544183439738416"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          3
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          1429,
+          1
+        ],
+        [
+          8707,
+          1
+        ],
+        [
+          64591,
+          1
+        ],
+        [
+          69163,
+          1
+        ],
+        [
+          111487,
+          1
+        ]
+      ],
+      "m": 259,
+      "n": 104,
+      "remainder": "1",
+      "value": "38023858456088044842948568"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          601,
+          1
+        ],
+        [
+          26161,
+          1
+        ],
+        [
+          32789,
+          1
+        ],
+        [
+          64333,
+          1
+        ],
+        [
+          332461,
+          1
+        ]
+      ],
+      "m": 261,
+      "n": 208,
+      "remainder": "1",
+      "value": "282097957597442586044737968"
+    },
+    {
+      "factorization": [
+        [
+          43,
+          1
+        ],
+        [
+          53,
+          1
+        ],
+        [
+          2917,
+          1
+        ],
+        [
+          3793,
+          1
+        ],
+        [
+          100999,
+          1
+        ],
+        [
+          134593,
+          1
+        ],
+        [
+          216173,
+          1
+        ]
+      ],
+      "m": 269,
+      "n": 131,
+      "remainder": "1",
+      "value": "74097677175286147085237089"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          4421,
+          1
+        ],
+        [
+          84143,
+          1
+        ],
+        [
+          154439,
+          1
+        ],
+        [
+          217519,
+          1
+        ]
+      ],
+      "m": 271,
+      "n": 10,
+      "remainder": "1",
+      "value": "27117673018106712748910"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          557,
+          1
+        ],
+        [
+          2333,
+          1
+        ],
+        [
+          9833,
+          1
+        ],
+        [
+          26683,
+          1
+        ],
+        [
+          50527,
+          1
+        ],
+        [
+          92789,
+          1
+        ]
+      ],
+      "m": 273,
+      "n": 188,
+      "remainder": "1",
+      "value": "211001026430299841128163364"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          239,
+          1
+        ],
+        [
+          14431,
+          1
+        ],
+        [
+          26501,
+          1
+        ],
+        [
+          49921,
+          1
+        ],
+        [
+          305761,
+          1
+        ]
+      ],
+      "m": 275,
+      "n": 14,
+      "remainder": "1",
+      "value": "114402577326527833797178"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          83,
+          1
+        ],
+        [
+          8231,
+          1
+        ],
+        [
+          26633,
+          1
+        ],
+        [
+          28109,
+          1
+        ],
+        [
+          214723,
+          1
+        ],
+        [
+          340201,
+          1
+        ]
+      ],
+      "m": 279,
+      "n": 151,
+      "remainder": "1",
+      "value": "112080893773520014281112089"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          557,
+          1
+        ],
+        [
+          563,
+          1
+        ],
+        [
+          1193,
+          1
+        ],
+        [
+          5059,
+          1
+        ],
+        [
+          13619,
+          1
+        ],
+        [
+          18047,
+          1
+        ],
+        [
+          166043,
+          1
+        ]
+      ],
+      "m": 283,
+      "n": 246,
+      "remainder": "1",
+      "value": "463437073621465873978267698"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          109,
+          1
+        ],
+        [
+          173,
+          1
+        ],
+        [
+          233,
+          1
+        ],
+        [
+          571,
+          1
+        ],
+        [
+          74453,
+          1
+        ],
+        [
+          102293,
+          1
+        ],
+        [
+          182177,
+          1
+        ]
+      ],
+      "m": 283,
+      "n": 338,
+      "remainder": "1",
+      "value": "1176529968827200213604692054"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          127,
+          1
+        ],
+        [
+          193,
+          1
+        ],
+        [
+          197,
+          1
+        ],
+        [
+          227,
+          1
+        ],
+        [
+          1019,
+          1
+        ],
+        [
+          12253,
+          1
+        ],
+        [
+          13331,
+          1
+        ]
+      ],
+      "m": 285,
+      "n": 94,
+      "remainder": "1",
+      "value": "28911362220151931298969498"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          659,
+          1
+        ],
+        [
+          673,
+          1
+        ],
+        [
+          1283,
+          1
+        ],
+        [
+          2011,
+          1
+        ],
+        [
+          3821,
+          1
+        ],
+        [
+          96377,
+          1
+        ],
+        [
+          351733,
+          1
+        ]
+      ],
+      "m": 286,
+      "n": 211,
+      "remainder": "1",
+      "value": "296437238541231708875757302"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          137,
+          1
+        ],
+        [
+          313,
+          1
+        ],
+        [
+          45061,
+          1
+        ],
+        [
+          50857,
+          1
+        ],
+        [
+          162611,
+          1
+        ],
+        [
+          209021,
+          1
+        ]
+      ],
+      "m": 288,
+      "n": 163,
+      "remainder": "1",
+      "value": "140283179416736067006403374"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          3
+        ],
+        [
+          109,
+          1
+        ],
+        [
+          431,
+          1
+        ],
+        [
+          907,
+          1
+        ],
+        [
+          1723,
+          1
+        ],
+        [
+          51341,
+          1
+        ],
+        [
+          201823,
+          1
+        ]
+      ],
+      "m": 295,
+      "n": 8,
+      "remainder": "1",
+      "value": "-6085850792403826441736"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          3
+        ],
+        [
+          163,
+          1
+        ],
+        [
+          1063,
+          1
+        ],
+        [
+          7487,
+          1
+        ],
+        [
+          8429,
+          1
+        ],
+        [
+          49429,
+          1
+        ],
+        [
+          59621,
+          1
+        ]
+      ],
+      "m": 295,
+      "n": 27,
+      "remainder": "1",
+      "value": "870060796254896991193341"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          653,
+          1
+        ],
+        [
+          3313,
+          1
+        ],
+        [
+          5059,
+          1
+        ],
+        [
+          19501,
+          1
+        ],
+        [
+          274213,
+          1
+        ]
+      ],
+      "m": 296,
+      "n": 39,
+      "remainder": "1",
+      "value": "2460523894547645102822646"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          647,
+          1
+        ],
+        [
+          9677,
+          1
+        ],
+        [
+          11117,
+          1
+        ],
+        [
+          55609,
+          1
+        ],
+        [
+          127819,
+          1
+        ],
+        [
+          374029,
+          1
+        ]
+      ],
+      "m": 300,
+      "n": 331,
+      "remainder": "1",
+      "value": "1110272683334534263705332342"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          149,
+          1
+        ],
+        [
+          173,
+          1
+        ],
+        [
+          601,
+          1
+        ],
+        [
+          863,
+          1
+        ],
+        [
+          2111,
+          1
+        ],
+        [
+          25867,
+          1
+        ],
+        [
+          127487,
+          1
+        ]
+      ],
+      "m": 302,
+      "n": 91,
+      "remainder": "1",
+      "value": "26618517880178227319392934"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          293,
+          1
+        ],
+        [
+          593,
+          1
+        ],
+        [
+          10939,
+          1
+        ],
+        [
+          19381,
+          1
+        ],
+        [
+          49043,
+          1
+        ]
+      ],
+      "m": 302,
+      "n": 169,
+      "remainder": "1",
+      "value": "156546056437889483406624362"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          571,
+          1
+        ],
+        [
+          643,
+          1
+        ],
+        [
+          1033,
+          1
+        ],
+        [
+          1151,
+          1
+        ],
+        [
+          2143,
+          1
+        ],
+        [
+          6949,
+          1
+        ],
+        [
+          15277,
+          1
+        ]
+      ],
+      "m": 305,
+      "n": 69,
+      "remainder": "1",
+      "value": "12215476121816043149889603"
+    },
+    {
+      "factorization": [
+        [
+          37,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          857,
+          1
+        ],
+        [
+          2377,
+          1
+        ],
+        [
+          10037,
+          1
+        ],
+        [
+          13399,
+          1
+        ],
+        [
+          44683,
+          1
+        ],
+        [
+          154723,
+          1
+        ]
+      ],
+      "m": 305,
+      "n": 457,
+      "remainder": "1",
+      "value": "2873221430649562298531810471"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          743,
+          1
+        ],
+        [
+          859,
+          1
+        ],
+        [
+          1451,
+          1
+        ],
+        [
+          38737,
+          1
+        ],
+        [
+          87623,
+          1
+        ]
+      ],
+      "m": 320,
+      "n": 9,
+      "remainder": "1",
+      "value": "-3790886656963978058022"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          173,
+          1
+        ],
+        [
+          227,
+          1
+        ],
+        [
+          7753,
+          1
+        ],
+        [
+          22727,
+          1
+        ],
+        [
+          42821,
+          1
+        ],
+        [
+          172199,
+          1
+        ]
+      ],
+      "m": 323,
+      "n": 273,
+      "remainder": "1",
+      "value": "634784884182302738595192339"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          601,
+          1
+        ],
+        [
+          1151,
+          1
+        ],
+        [
+          4397,
+          1
+        ],
+        [
+          6841,
+          1
+        ],
+        [
+          51329,
+          1
+        ],
+        [
+          109297,
+          1
+        ]
+      ],
+      "m": 324,
+      "n": 145,
+      "remainder": "1",
+      "value": "101558469921712368093524370"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          18143,
+          1
+        ],
+        [
+          34897,
+          1
+        ],
+        [
+          52069,
+          1
+        ],
+        [
+          176353,
+          1
+        ],
+        [
+          279119,
+          1
+        ]
+      ],
+      "m": 327,
+      "n": 400,
+      "remainder": "1",
+      "value": "1947286843224871532507871600"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          4
+        ],
+        [
+          2011,
+          1
+        ],
+        [
+          2719,
+          1
+        ],
+        [
+          5641,
+          1
+        ],
+        [
+          8059,
+          1
+        ],
+        [
+          8161,
+          1
+        ],
+        [
+          118369,
+          1
+        ]
+      ],
+      "m": 329,
+      "n": 81,
+      "remainder": "1",
+      "value": "19450237515426405414015759"
+    },
+    {
+      "factorization": [
+        [
+          5,
+          2
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          37699,
+          1
+        ],
+        [
+          116719,
+          1
+        ],
+        [
+          204917,
+          1
+        ],
+        [
+          258403,
+          1
+        ]
+      ],
+      "m": 329,
+      "n": 325,
+      "remainder": "1",
+      "value": "1058689304496298342269191075"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          6
+        ],
+        [
+          89,
+          1
+        ],
+        [
+          163,
+          1
+        ],
+        [
+          173,
+          1
+        ],
+        [
+          2557,
+          1
+        ],
+        [
+          13297,
+          1
+        ],
+        [
+          33119,
+          1
+        ],
+        [
+          55579,
+          1
+        ]
+      ],
+      "m": 331,
+      "n": 64,
+      "remainder": "1",
+      "value": "10052545063002326000839616"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          43,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          109,
+          1
+        ],
+        [
+          5737,
+          1
+        ],
+        [
+          10979,
+          1
+        ],
+        [
+          35801,
+          1
+        ],
+        [
+          114089,
+          1
+        ]
+      ],
+      "m": 331,
+      "n": 326,
+      "remainder": "1",
+      "value": "1068713483899176949774802722"
+    },
+    {
+      "factorization": [
+        [
+          7,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          2381,
+          1
+        ],
+        [
+          61483,
+          1
+        ],
+        [
+          72643,
+          1
+        ],
+        [
+          88729,
+          1
+        ],
+        [
+          291649,
+          1
+        ]
+      ],
+      "m": 337,
+      "n": 247,
+      "remainder": "1",
+      "value": "475805314845885435148456901"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          6
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          43,
+          1
+        ],
+        [
+          233,
+          1
+        ],
+        [
+          2089,
+          1
+        ],
+        [
+          7523,
+          1
+        ],
+        [
+          8627,
+          1
+        ],
+        [
+          30089,
+          1
+        ],
+        [
+          77549,
+          1
+        ]
+      ],
+      "m": 341,
+      "n": 320,
+      "remainder": "1",
+      "value": "1014256059509877464857558720"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          113,
+          1
+        ],
+        [
+          10513,
+          1
+        ],
+        [
+          15329,
+          1
+        ],
+        [
+          70663,
+          1
+        ],
+        [
+          254519,
+          1
+        ]
+      ],
+      "m": 343,
+      "n": 3,
+      "remainder": "1",
+      "value": "-40284346540086496360731"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          61,
+          1
+        ],
+        [
+          277,
+          1
+        ],
+        [
+          433,
+          1
+        ],
+        [
+          6299,
+          1
+        ],
+        [
+          30367,
+          1
+        ],
+        [
+          46279,
+          1
+        ],
+        [
+          54409,
+          1
+        ]
+      ],
+      "m": 343,
+      "n": 338,
+      "remainder": "1",
+      "value": "1191084048892212007760716294"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          139,
+          1
+        ],
+        [
+          331,
+          1
+        ],
+        [
+          719,
+          1
+        ],
+        [
+          2003,
+          1
+        ],
+        [
+          2251,
+          1
+        ],
+        [
+          7873,
+          1
+        ],
+        [
+          9901,
+          1
+        ]
+      ],
+      "m": 344,
+      "n": 65,
+      "remainder": "1",
+      "value": "10580077110833349351868090"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          3
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          163,
+          1
+        ],
+        [
+          197,
+          2
+        ],
+        [
+          1637,
+          1
+        ],
+        [
+          5233,
+          1
+        ],
+        [
+          25621,
+          1
+        ]
+      ],
+      "m": 347,
+      "n": 8,
+      "remainder": "1",
+      "value": "-26512943928333306602312"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          2
+        ],
+        [
+          53,
+          1
+        ],
+        [
+          11257,
+          1
+        ],
+        [
+          52369,
+          1
+        ],
+        [
+          225569,
+          1
+        ],
+        [
+          242257,
+          1
+        ]
+      ],
+      "m": 347,
+      "n": 9,
+      "remainder": "1",
+      "value": "-15366362534827788606453"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          193,
+          1
+        ],
+        [
+          719,
+          1
+        ],
+        [
+          1613,
+          1
+        ],
+        [
+          1999,
+          1
+        ],
+        [
+          34123,
+          1
+        ],
+        [
+          98143,
+          1
+        ],
+        [
+          109453,
+          1
+        ]
+      ],
+      "m": 352,
+      "n": 217,
+      "remainder": "1",
+      "value": "328017913351450681863022586"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          433,
+          1
+        ],
+        [
+          503,
+          1
+        ],
+        [
+          1483,
+          1
+        ],
+        [
+          2273,
+          1
+        ],
+        [
+          4201,
+          1
+        ],
+        [
+          258437,
+          1
+        ]
+      ],
+      "m": 356,
+      "n": 39,
+      "remainder": "1",
+      "value": "2549073159642537797731566"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          283,
+          1
+        ],
+        [
+          541,
+          1
+        ],
+        [
+          2087,
+          1
+        ],
+        [
+          7687,
+          1
+        ],
+        [
+          216173,
+          1
+        ],
+        [
+          338287,
+          1
+        ]
+      ],
+      "m": 357,
+      "n": 125,
+      "remainder": "1",
+      "value": "67356739566385938413158875"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          61,
+          1
+        ],
+        [
+          113,
+          1
+        ],
+        [
+          5387,
+          1
+        ],
+        [
+          7417,
+          1
+        ],
+        [
+          11243,
+          1
+        ],
+        [
+          13093,
+          1
+        ],
+        [
+          47659,
+          1
+        ]
+      ],
+      "m": 358,
+      "n": 99,
+      "remainder": "1",
+      "value": "34779420565515022862506086"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          127,
+          1
+        ],
+        [
+          10883,
+          1
+        ],
+        [
+          21031,
+          1
+        ],
+        [
+          141371,
+          1
+        ],
+        [
+          393013,
+          1
+        ]
+      ],
+      "m": 359,
+      "n": 48,
+      "remainder": "1",
+      "value": "4573753645741665190735056"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          2273,
+          1
+        ],
+        [
+          9901,
+          1
+        ],
+        [
+          54121,
+          1
+        ],
+        [
+          100927,
+          1
+        ],
+        [
+          399481,
+          1
+        ]
+      ],
+      "m": 359,
+      "n": 442,
+      "remainder": "1",
+      "value": "2626367170218490717883715422"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          41,
+          2
+        ],
+        [
+          113,
+          1
+        ],
+        [
+          173,
+          1
+        ],
+        [
+          1871,
+          1
+        ],
+        [
+          37699,
+          1
+        ],
+        [
+          51349,
+          1
+        ],
+        [
+          323717,
+          1
+        ]
+      ],
+      "m": 363,
+      "n": 244,
+      "remainder": "1",
+      "value": "462354002097894444418709196"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          67,
+          1
+        ],
+        [
+          1789,
+          1
+        ],
+        [
+          5387,
+          1
+        ],
+        [
+          21661,
+          1
+        ],
+        [
+          123007,
+          1
+        ],
+        [
+          132949,
+          1
+        ]
+      ],
+      "m": 365,
+      "n": 78,
+      "remainder": "1",
+      "value": "17841038302592292469543914"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          71,
+          1
+        ],
+        [
+          263,
+          1
+        ],
+        [
+          389,
+          1
+        ],
+        [
+          5479,
+          1
+        ],
+        [
+          18133,
+          1
+        ],
+        [
+          20899,
+          1
+        ],
+        [
+          51871,
+          1
+        ]
+      ],
+      "m": 378,
+      "n": 355,
+      "remainder": "1",
+      "value": "1384707528806880929405567070"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          257,
+          1
+        ],
+        [
+          431,
+          1
+        ],
+        [
+          1619,
+          1
+        ],
+        [
+          2963,
+          1
+        ],
+        [
+          126199,
+          1
+        ],
+        [
+          130303,
+          1
+        ]
+      ],
+      "m": 384,
+      "n": 7,
+      "remainder": "1",
+      "value": "-52426452590110655889018"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          619,
+          1
+        ],
+        [
+          853,
+          1
+        ],
+        [
+          1283,
+          1
+        ],
+        [
+          65617,
+          1
+        ],
+        [
+          113963,
+          1
+        ],
+        [
+          271603,
+          1
+        ]
+      ],
+      "m": 384,
+      "n": 59,
+      "remainder": "1",
+      "value": "8255291126331024027725118"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          199,
+          1
+        ],
+        [
+          1907,
+          1
+        ],
+        [
+          14639,
+          1
+        ],
+        [
+          23339,
+          1
+        ],
+        [
+          188303,
+          1
+        ],
+        [
+          306871,
+          1
+        ]
+      ],
+      "m": 386,
+      "n": 73,
+      "remainder": "1",
+      "value": "14984439673617270435305378"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          127,
+          1
+        ],
+        [
+          139,
+          1
+        ],
+        [
+          251,
+          1
+        ],
+        [
+          347,
+          1
+        ],
+        [
+          1237,
+          1
+        ],
+        [
+          3457,
+          1
+        ],
+        [
+          350737,
+          1
+        ]
+      ],
+      "m": 389,
+      "n": 58,
+      "remainder": "1",
+      "value": "7891369606370975309515166"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          5
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          139,
+          1
+        ],
+        [
+          673,
+          1
+        ],
+        [
+          9839,
+          1
+        ],
+        [
+          42821,
+          1
+        ],
+        [
+          68737,
+          1
+        ],
+        [
+          264743,
+          1
+        ]
+      ],
+      "m": 391,
+      "n": 352,
+      "remainder": "1",
+      "value": "1354112289543685140618525344"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          4327,
+          1
+        ],
+        [
+          5743,
+          1
+        ],
+        [
+          29581,
+          1
+        ],
+        [
+          130927,
+          1
+        ],
+        [
+          373669,
+          1
+        ]
+      ],
+      "m": 392,
+      "n": 37,
+      "remainder": "1",
+      "value": "2229700539734849723484146"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          163,
+          1
+        ],
+        [
+          857,
+          1
+        ],
+        [
+          1361,
+          1
+        ],
+        [
+          1667,
+          1
+        ],
+        [
+          4993,
+          1
+        ],
+        [
+          7477,
+          1
+        ],
+        [
+          131617,
+          1
+        ]
+      ],
+      "m": 393,
+      "n": 173,
+      "remainder": "1",
+      "value": "172856638994659097289827019"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          683,
+          1
+        ],
+        [
+          4271,
+          1
+        ],
+        [
+          276919,
+          1
+        ],
+        [
+          328127,
+          1
+        ],
+        [
+          359897,
+          1
+        ]
+      ],
+      "m": 409,
+      "n": 126,
+      "remainder": "1",
+      "value": "70401122857765630392013674"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          109,
+          1
+        ],
+        [
+          173,
+          1
+        ],
+        [
+          1613,
+          1
+        ],
+        [
+          7127,
+          1
+        ],
+        [
+          166597,
+          1
+        ],
+        [
+          247651,
+          1
+        ]
+      ],
+      "m": 413,
+      "n": 360,
+      "remainder": "1",
+      "value": "1452111726085836687229204440"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          227,
+          1
+        ],
+        [
+          313,
+          1
+        ],
+        [
+          1129,
+          1
+        ],
+        [
+          46237,
+          1
+        ],
+        [
+          169943,
+          1
+        ],
+        [
+          220019,
+          1
+        ]
+      ],
+      "m": 427,
+      "n": 58,
+      "remainder": "1",
+      "value": "8043503316287179918570478"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          193,
+          1
+        ],
+        [
+          1483,
+          1
+        ],
+        [
+          9323,
+          1
+        ],
+        [
+          63347,
+          1
+        ],
+        [
+          376823,
+          1
+        ],
+        [
+          381181,
+          1
+        ]
+      ],
+      "m": 431,
+      "n": 218,
+      "remainder": "1",
+      "value": "339920126803430120284423198"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          61,
+          1
+        ],
+        [
+          127,
+          1
+        ],
+        [
+          263,
+          1
+        ],
+        [
+          1297,
+          1
+        ],
+        [
+          3691,
+          1
+        ],
+        [
+          55691,
+          1
+        ],
+        [
+          63697,
+          1
+        ]
+      ],
+      "m": 433,
+      "n": 2,
+      "remainder": "1",
+      "value": "-69200194651221191157338"
+    },
+    {
+      "factorization": [
+        [
+          109,
+          1
+        ],
+        [
+          557,
+          1
+        ],
+        [
+          2069,
+          1
+        ],
+        [
+          19249,
+          1
+        ],
+        [
+          28201,
+          1
+        ],
+        [
+          33521,
+          1
+        ],
+        [
+          39419,
+          1
+        ]
+      ],
+      "m": 433,
+      "n": 137,
+      "remainder": "1",
+      "value": "90102622909863686331366247"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          1097,
+          1
+        ],
+        [
+          26393,
+          1
+        ],
+        [
+          118799,
+          1
+        ],
+        [
+          195077,
+          1
+        ],
+        [
+          233437,
+          1
+        ]
+      ],
+      "m": 439,
+      "n": 110,
+      "remainder": "1",
+      "value": "48556304422525896296208010"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          191,
+          1
+        ],
+        [
+          9839,
+          1
+        ],
+        [
+          14033,
+          1
+        ],
+        [
+          17497,
+          1
+        ],
+        [
+          101599,
+          1
+        ],
+        [
+          177743,
+          1
+        ]
+      ],
+      "m": 448,
+      "n": 111,
+      "remainder": "1",
+      "value": "49995582722439059016530358"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          809,
+          1
+        ],
+        [
+          2347,
+          1
+        ],
+        [
+          10597,
+          1
+        ],
+        [
+          13681,
+          1
+        ],
+        [
+          25183,
+          1
+        ],
+        [
+          335057,
+          1
+        ]
+      ],
+      "m": 454,
+      "n": 231,
+      "remainder": "1",
+      "value": "404145546876354763052926734"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          367,
+          1
+        ],
+        [
+          431,
+          1
+        ],
+        [
+          2909,
+          1
+        ],
+        [
+          5557,
+          1
+        ],
+        [
+          7193,
+          1
+        ],
+        [
+          93329,
+          1
+        ]
+      ],
+      "m": 456,
+      "n": 23,
+      "remainder": "1",
+      "value": "504662989057611577455318"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          5419,
+          1
+        ],
+        [
+          5431,
+          1
+        ],
+        [
+          6991,
+          1
+        ],
+        [
+          12107,
+          1
+        ],
+        [
+          15383,
+          1
+        ],
+        [
+          24329,
+          1
+        ]
+      ],
+      "m": 456,
+      "n": 425,
+      "remainder": "1",
+      "value": "2377279674599104107122455050"
+    },
+    {
+      "factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          809,
+          1
+        ],
+        [
+          1399,
+          1
+        ],
+        [
+          1483,
+          1
+        ],
+        [
+          9067,
+          1
+        ],
+        [
+          15277,
+          1
+        ],
+        [
+          36973,
+          1
+        ],
+        [
+          91781,
+          1
+        ]
+      ],
+      "m": 461,
+      "n": 505,
+      "remainder": "1",
+      "value": "3944723450180756359032707255"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          8
+        ],
+        [
+          61,
+          1
+        ],
+        [
+          2029,
+          1
+        ],
+        [
+          41081,
+          1
+        ],
+        [
+          42491,
+          1
+        ],
+        [
+          81637,
+          1
+        ],
+        [
+          120671,
+          1
+        ]
+      ],
+      "m": 463,
+      "n": 256,
+      "remainder": "1",
+      "value": "544853512182579234938079488"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          61,
+          1
+        ],
+        [
+          79,
+          1
+        ],
+        [
+          113,
+          1
+        ],
+        [
+          683,
+          1
+        ],
+        [
+          59359,
+          1
+        ],
+        [
+          143107,
+          1
+        ],
+        [
+          220537,
+          1
+        ]
+      ],
+      "m": 463,
+      "n": 500,
+      "remainder": "1",
+      "value": "3832195697456040307972595500"
+    },
+    {
+      "factorization": [
+        [
+          41,
+          1
+        ],
+        [
+          113,
+          1
+        ],
+        [
+          10039,
+          1
+        ],
+        [
+          11839,
+          1
+        ],
+        [
+          56393,
+          1
+        ],
+        [
+          107053,
+          1
+        ],
+        [
+          277741,
+          1
+        ]
+      ],
+      "m": 469,
+      "n": 307,
+      "remainder": "1",
+      "value": "923276562180938852629138577"
+    },
+    {
+      "factorization": [
+        [
+          13,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          79,
+          1
+        ],
+        [
+          173,
+          1
+        ],
+        [
+          197,
+          1
+        ],
+        [
+          421,
+          1
+        ],
+        [
+          1453,
+          1
+        ],
+        [
+          207169,
+          1
+        ],
+        [
+          225067,
+          1
+        ]
+      ],
+      "m": 475,
+      "n": 91,
+      "remainder": "1",
+      "value": "28951100220472831790996477"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          59,
+          1
+        ],
+        [
+          389,
+          1
+        ],
+        [
+          3011,
+          1
+        ],
+        [
+          21961,
+          1
+        ],
+        [
+          53887,
+          1
+        ],
+        [
+          202981,
+          1
+        ]
+      ],
+      "m": 476,
+      "n": 3,
+      "remainder": "1",
+      "value": "-99599033655891906258522"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          113,
+          1
+        ],
+        [
+          151,
+          1
+        ],
+        [
+          347,
+          1
+        ],
+        [
+          1033,
+          1
+        ],
+        [
+          7603,
+          1
+        ],
+        [
+          7829,
+          1
+        ],
+        [
+          66883,
+          1
+        ]
+      ],
+      "m": 478,
+      "n": 247,
+      "remainder": "1",
+      "value": "493177234752222188482877342"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          3
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          137,
+          1
+        ],
+        [
+          173,
+          1
+        ],
+        [
+          971,
+          1
+        ],
+        [
+          1237,
+          1
+        ],
+        [
+          4423,
+          1
+        ],
+        [
+          30763,
+          1
+        ],
+        [
+          152819,
+          1
+        ]
+      ],
+      "m": 479,
+      "n": 459,
+      "remainder": "1",
+      "value": "2988711184650593634828435213"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          127,
+          1
+        ],
+        [
+          313,
+          1
+        ],
+        [
+          1187,
+          1
+        ],
+        [
+          3323,
+          1
+        ],
+        [
+          4073,
+          1
+        ],
+        [
+          6791,
+          1
+        ],
+        [
+          33961,
+          1
+        ]
+      ],
+      "m": 484,
+      "n": 87,
+      "remainder": "1",
+      "value": "25627543382435523662140302"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          3
+        ],
+        [
+          127,
+          1
+        ],
+        [
+          2377,
+          1
+        ],
+        [
+          28051,
+          1
+        ],
+        [
+          249419,
+          1
+        ],
+        [
+          259937,
+          1
+        ],
+        [
+          380287,
+          1
+        ]
+      ],
+      "m": 485,
+      "n": 376,
+      "remainder": "1",
+      "value": "1670245665167707944188420552"
+    },
+    {
+      "factorization": [
+        [
+          3,
+          5
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          61,
+          1
+        ],
+        [
+          251,
+          1
+        ],
+        [
+          2017,
+          1
+        ],
+        [
+          3023,
+          1
+        ],
+        [
+          5737,
+          1
+        ],
+        [
+          11549,
+          1
+        ]
+      ],
+      "m": 487,
+      "n": 81,
+      "remainder": "1",
+      "value": "21014610380676698078098179"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          503,
+          1
+        ],
+        [
+          1483,
+          1
+        ],
+        [
+          10369,
+          1
+        ],
+        [
+          67829,
+          1
+        ],
+        [
+          148781,
+          1
+        ],
+        [
+          181777,
+          1
+        ]
+      ],
+      "m": 488,
+      "n": 353,
+      "remainder": "1",
+      "value": "1390509324939462684911277274"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          4561,
+          1
+        ],
+        [
+          51031,
+          1
+        ],
+        [
+          56383,
+          1
+        ],
+        [
+          338851,
+          1
+        ],
+        [
+          366433,
+          1
+        ]
+      ],
+      "m": 489,
+      "n": 140,
+      "remainder": "1",
+      "value": "97768045039826514683441940"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          127,
+          1
+        ],
+        [
+          139,
+          1
+        ],
+        [
+          1277,
+          1
+        ],
+        [
+          20323,
+          1
+        ],
+        [
+          202577,
+          1
+        ],
+        [
+          357437,
+          1
+        ]
+      ],
+      "m": 493,
+      "n": 190,
+      "remainder": "1",
+      "value": "233207333010218501428975610"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          19,
+          2
+        ],
+        [
+          14563,
+          1
+        ],
+        [
+          22481,
+          1
+        ],
+        [
+          57149,
+          1
+        ],
+        [
+          119891,
+          1
+        ],
+        [
+          176413,
+          1
+        ]
+      ],
+      "m": 493,
+      "n": 494,
+      "remainder": "1",
+      "value": "3714264509204272050240365386"
+    },
+    {
+      "factorization": [
+        [
+          1607,
+          1
+        ],
+        [
+          3079,
+          1
+        ],
+        [
+          43609,
+          1
+        ],
+        [
+          65011,
+          1
+        ],
+        [
+          67651,
+          1
+        ],
+        [
+          170441,
+          1
+        ]
+      ],
+      "m": 499,
+      "n": 167,
+      "remainder": "1",
+      "value": "161747223427542147245702377"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          2273,
+          1
+        ],
+        [
+          9221,
+          1
+        ],
+        [
+          14747,
+          1
+        ],
+        [
+          25117,
+          1
+        ],
+        [
+          390083,
+          1
+        ]
+      ],
+      "m": 502,
+      "n": 87,
+      "remainder": "1",
+      "value": "25819703804118478971153486"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          601,
+          1
+        ],
+        [
+          3853,
+          1
+        ],
+        [
+          36083,
+          1
+        ],
+        [
+          228983,
+          1
+        ],
+        [
+          301897,
+          1
+        ]
+      ],
+      "m": 509,
+      "n": 28,
+      "remainder": "1",
+      "value": "947287934374515743537636"
+    },
+    {
+      "factorization": [
+        [
+          2,
+          3
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          1607,
+          1
+        ],
+        [
+          40351,
+          1
+        ],
+        [
+          213067,
+          1
+        ],
+        [
+          250147,
+          1
+        ],
+        [
+          392647,
+          1
+        ]
+      ],
+      "m": 511,
+      "n": 200,
+      "remainder": "1",
+      "value": "271402565070060864125654200"
+    }
+  ],
+  "smooth_values": 296,
+  "status": "PASS",
+  "wall_seconds": 18.117255656048656
+}

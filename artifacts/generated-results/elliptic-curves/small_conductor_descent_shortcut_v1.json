@@ -1,0 +1,80 @@
+{
+  "additional_mod2_relation_rank": 18,
+  "claim_boundary": "Known-theorem specialization, exact integral norm coordinates, and a fixed finite relation-yield experiment on MW16 family05 at3/17. No full descent, class upper bound, new point, exact rank, or general runtime guarantee.",
+  "class_rank_upper_bound": null,
+  "class_two_rank_lower_bound": 15,
+  "curve_rank_upper_bound": null,
+  "exact_principal_relations": 18,
+  "factor_base_generation_certified": false,
+  "maximum_coefficient_bits": {
+    "original_monic": 165,
+    "reduced_binary": 65
+  },
+  "profile_replay_scope": "Retained program/log hashes and bounded outcomes are checked; slow profiling is not rerun. The old gp_error flag is ignored because normal PARI debug lines contain ***.",
+  "profile_stages": [
+    {
+      "limit_seconds": 30,
+      "outcome": "completed",
+      "stage": "field",
+      "wall_seconds": 0.08099875901825726
+    },
+    {
+      "limit_seconds": 30,
+      "outcome": "strict_wall_timeout",
+      "stage": "cold_rankinit",
+      "wall_seconds": 31.048280058894306
+    },
+    {
+      "limit_seconds": 30,
+      "outcome": "strict_wall_timeout",
+      "stage": "hinted_rankinit",
+      "wall_seconds": 31.047724180971272
+    },
+    {
+      "limit_seconds": 60,
+      "outcome": "strict_wall_timeout",
+      "stage": "prepared_bnf",
+      "wall_seconds": 61.04690916999243
+    }
+  ],
+  "schema": "elliptic-curves.small-conductor-descent-shortcut.v1",
+  "smoothness_arms": [
+    {
+      "arm": "original_monic",
+      "primitive_pairs": 5039,
+      "records_sha256": "a88eac4e7b9fe7a38bff04497ec75554beef80d310a4aace60253886cc840642",
+      "smooth_values": 0,
+      "wall_seconds": 4.503845885046758
+    },
+    {
+      "arm": "reduced_binary",
+      "primitive_pairs": 5039,
+      "records_sha256": "d23d74b45b34f2ce751ce5a189bba0df1ba235d74931b86d503694be8e0eb307",
+      "smooth_values": 18,
+      "wall_seconds": 2.378141024033539
+    }
+  ],
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/small_conductor_class_rank_target_v1.json": "b257de1af979869b5e18f4ce5ed43c7b7e97531aca3b8ed06c2d56ed119144a4",
+    "artifacts/generated-results/elliptic-curves/small_conductor_norm_relations_v1.json": "a5c3e6f473ff2865fab76caabb3f411277da9a20e32fd99e56bdea03e0793ca5",
+    "artifacts/generated-results/elliptic-curves/small_conductor_norm_smoothness_pilot_v1.json": "df3136edede45e01e95f59c672200df6bb70aabae01c887fb6d088ea99279ba8",
+    "artifacts/generated-results/elliptic-curves/small_conductor_reduced_norm_form_v1.json": "8dab54430620b0e3e3c55ce3c6cf93c1346cdd7e79b1879091fe3c4dec0e63f2",
+    "artifacts/generated-results/elliptic-curves/small_conductor_selmer_rank_target_v1.json": "2c43db66b84221b3b80acb0584d23dcf13cff9db3e84665dfe0c82069ff61055",
+    "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/cold_rankinit.gp": "c925911920ff75bda6ad0bd2c7c1bcd9f941bd17ad571ad4f7073d3d2863efc8",
+    "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/cold_rankinit.json": "0d081122704583c5489e9b3a04eeb24afc46987f548e41235a6107ba5f89459f",
+    "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/cold_rankinit.log": "d681fcbfe8ef8d61ecb37fadb424cee35b39c4fbc8b61be203bf411604b61075",
+    "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/field.gp": "16b2639fbcf4d983c343db8306b95845b7dfe74e8eeb3919716eaa3c74173bf9",
+    "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/field.json": "cd599c3b0527cba666ef008ea1cb7637c426d2a954ff00dfcd7a03ba63bf57d1",
+    "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/field.log": "feecf5b605d312856a67a0bea2fc4e987766312cfe760c5d0f501f532aceb882",
+    "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/hinted_rankinit.gp": "404218e6c3473337163286a0455a134f5eb1d0b546d0d071cf96650a3318651a",
+    "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/hinted_rankinit.json": "c80cd491f1a70321e3994ae6af10dbcd0370c45d494b8a76bd4db5d047d83d78",
+    "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/hinted_rankinit.log": "d4083affbe6c3b6c1a0a088bcfa65365fb8551239b90a59259fdd5e0bb74bf07",
+    "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/prepared_bnf.gp": "25035972c88f617f5ecbe79f9706b43fc50413655b662c55b6e09f6b551ca718",
+    "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/prepared_bnf.json": "3ad9376b2b809fbf3ba97c0fb52839fa38210bb782516b410a6fa165cac0e39a",
+    "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/prepared_bnf.log": "4782f84bf5b3075cc5272bf2b7fb597d7f3f1c1a50c4f4b958828f800a7d10e6",
+    "elliptic-curves/cas/audit_small_conductor_norm_relations.sage": "3317922a8ea02fb751ccc8f601a5fba384638d4afcb045a5f32d39661284be06",
+    "elliptic-curves/cas/check_small_conductor_descent_shortcut.sage": "61a1eeb666524ae5907a362c3914d04490e48d40e2c56c9da803f956427adf17"
+  },
+  "status": "PASS",
+  "sufficient_class_two_rank_upper_bound_for_exact_rank22": 16
+}

@@ -1,8 +1,18 @@
 # Elliptic curves over `Q` — ACTIVE
 
-The [new 11952 outer-annulus trial](notes/NEW11952_OUTER_ANNULUS_2026-09-06.md) moves beyond the completely scanned height-131072 square, through height524288. All76.7 million addresses and32768 retained short scores replay. A hardcoded reader limit is repaired and independently checked. All4096 scalar scores and64-finalist validation now pass; the fixed point batch is running.
+The [corrected higher MW16 campaign](notes/CORRECTED_MW16_HIGHER_POPULATION_2026-09-06.md) is frozen at 320 slices and 3.06 billion addresses, excluding the earlier campaigns and reusing one fixed benchmark. All 320 preflight checks pass and the main scan is active. Restored good-prime terms at 5 and 13 now enter before retention; the later 10,240-scalar and sixty-fibre budgets stay fixed.
 
-The [fresh outer-MW16 retention trial](notes/MW16_FRESH_OUTER_RETENTION_2026-09-06.md) scans untouched parameter slices beyond4096 and retains eight times as many candidates before longer-prime scoring. All95.6 million addresses and40960 short scores replay; extended scoring is active.
+The [broader displayed-score trial](notes/BROAD_MW16_HIGHER_POPULATION_2026-09-06.md) adds three new curves with certified bounds 24, 24 and 22 from 3.06 billion initial addresses. All 2,580 boxes and 182 isolated proof stages pass, with the same selector and finalist budget as the smaller trial. Selection scores improve in all ten groups, but withheld-prime means improve in only three. The [preserved smaller trial](notes/MW16_JOINT_HIGHER_ANNULI_2026-09-06.md) completes all 182 isolated point-proof stages with bounds 16–19 and no high-rank addition.
+
+The [local-reduction audit](notes/MW16_OMITTED_GOOD_PRIMES_2026-09-06.md) identifies omitted good-prime terms at 5 and 13 on 904 of the 10,240 preserved higher-band scalar candidates. The diagnostic changes five finalists; both running trials retain their frozen scores and budgets.
+
+The [MW16 rank-27 case study](notes/MW16_RANK27_VISIBILITY_AND_TRANSLATION_CLASSES_2026-09-06.md) proves a 17.36-billion-fold search-coordinate height reduction for the discovered point and 344 distinct rational-translation classes of centre involutions. All [four isolated replay stages](../artifacts/generated-results/elliptic-curves/mw16_rank27_case_study_portable_replay_v1.json) pass. A twelve-chart million-height probe times out throughout; the certified bound remains 27.
+
+The [full-score 11952 outer trial](notes/JOINT11952_FRESH_ANNULUS_2026-09-06.md) completes all 3,136 point boxes and local proofs on 64 new high-height fibres. Two have certified bound 18 and the rest 17; all 194 isolated stages pass. Scoring before retention corrects a measured selection loss, but this cohort supplies no high-rank inventory addition.
+
+The [first 11952 outer-annulus trial](notes/NEW11952_OUTER_ANNULUS_2026-09-06.md) completes all 3,136 boxes and 194 isolated checks. Its 64 fibres retain certified lower bound 17. Four separately masked controls all recover a withheld generic direction; exceptional-point sensitivity remains uncalibrated.
+
+The [fresh outer-MW16 trial](notes/MW16_FRESH_OUTER_RETENTION_2026-09-06.md) adds four certified curves with lower bounds 26, 24, 24 and 23 beyond height 4096. All 2,580 boxes and 182 isolated proof stages pass. That cohort produced inventory V17 with 195 distinct curves.
 
 The [completed three-band MW16 trial](notes/MW16_OUTER_PARAMETER_BANDS_2026-09-06.md) adds two curves with certified rank at least23. All2580 boxes and182 corrected isolated checks pass. InventoryV16 contains191 distinct curves, including eight with lower bound27. The [twelve carrier constructions](notes/NATIVE_RANK3_CARRIER_IMAGES_2026-09-06.md) now each have19 independent points. Their [missing third auxiliary direction and full-span cube](notes/NATIVE_CARRIER_THIRD_DIRECTION_2026-09-06.md) are also checked; all74 nonanchor cube images exceed the400-bit model gate.
 
@@ -22,7 +32,7 @@ The [192-curve compact trial](notes/COMPACT192_UNSEARCHED_TRIAL_2026-09-06.md) t
 
 The [skew parameter experiment](notes/SKEW_PARAMETER_BOXES_2026-09-06.md) completes 368 point boxes without inventory gain. The [endpoint audit](notes/COMPACT_ENDPOINT_AUDIT_2026-09-06.md) identifies 21 omitted nonsingular curves; the subsequent [exact span proof](notes/ENDPOINT_SECTION_SPANS_2026-09-06.md) establishes their generic-section span ranks and five proper known-subgroup indices. The 54 audit and three section-span isolated replay stages pass. The [endpoint point trial](notes/ENDPOINT_POINT_TRIAL_2026-09-06.md) completes all 252 boxes, with strongest bounds 19 and no inventory gain; [all 66 isolated replay stages pass](../artifacts/generated-results/elliptic-curves/endpoint_point_trial_portable_replay_v1.json). The six rank-27 search subgroups already have [proved saturation at 2, 3 and 5](notes/NEW27_SMALL_PRIME_SATURATION_2026-09-06.md).
 
-The exactly replayed inventory contains **191 distinct curves**, including
+The exactly replayed inventory V18 contains **198 distinct curves**, including
 **eight with rank at least27**, unmatched in the pinned593-equation catalogue.
 The [earlier rank25 discovery](notes/LOCAL_FEATURE_RANK25_2026-09-06.md),
 [higher-parameter rank26 curve](notes/HIGHER_PARAMETER_RANK26_2026-09-06.md)
@@ -42,12 +52,24 @@ The [specialized parity trial](notes/SPECIALIZED_PARITY_CONTROL_2026-09-06.md)
 recovers the known29th direction at125000, but all294 charts on our six
 rank27 curves complete without gain. All24 isolated checks pass.
 
-The [complete JSON](../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v16.json)
-and [equation CSV](../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v16.csv)
+The [complete JSON](../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v18.json)
+and [equation CSV](../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v18.csv)
 contain the equations and point certificates. The
 [small-conductor curve](notes/NEW_SMALL_CONDUCTOR_CURVE_2026-09-05.md) retains
 rank at least 22 and an exact 76-digit conductor, third among the relevant
 recorded conductors in that snapshot; four relevant entries lack conductors.
+Its targeted study confirms the comparison in a fresh snapshot of 614 curves
+and proves its 22-point subgroup saturated at 2, 3 and 5. Twelve million-height
+attempts complete four boxes and time out on eight, without a certified
+rank increase; exact rank remains unknown. The
+[descent study](notes/SMALL_CONDUCTOR_DESCENT_SHORTCUT_2026-09-06.md) gives an
+exact class-group stopping target and an interval-certified generating cutoff
+of 37,638 under GRH. A 35-second batch targeting 512 prime ideals adds 331
+independent relations on this smaller base, reducing the remaining quotient
+from 3,210 to 2,879. Scalar replay and exact ideal auditing pass; the
+rank-22 criterion requires dimension at most 16 and would inherit GRH. The
+[active continuation toward 16](notes/SMALL_CONDUCTOR_CLASS_TARGET_2026-09-06.md)
+records each subsequent audited matrix reduction and its frozen wave protocol.
 
 The [extended-prime experiment](notes/EXTENDED_PRIME_RANK27_DISCOVERIES_2026-09-06.md)
 compares two fixed selectors on 23 distinct curves. All 1,037 initial boxes
@@ -114,6 +136,15 @@ The [rational-solubility theorem package](../elkies-k3/RATIONAL_SOLUBILITY_AND_R
 connects residual Selmer classes to the point-search charts. An exact
 eleven-fibre replay supplies 110 independent soluble 2-cover classes and
 their forced-zero Cassels--Tate rows; unknown complements remain unclassified.
+The [rank-jump mechanism theorems](rank-jump/RANK_JUMP_MECHANISM_THEOREMS.md)
+extend these foundations using the September 5–6 findings: exact contribution
+after specialization, relation-based capacity bounds, native carrier geometry,
+collision squareclass tests, and concrete gates for the next searches.
+The [J7–J10 extension](rank-jump/INDEPENDENT_BLOCKS_AND_RANK_OBSTRUCTIONS.md)
+adds certificates for independent block contributions and a radical-partner
+rule that can increase the proved Cassels–Tate rank without computing all
+new pairing entries. [Current search gates](rank-jump/SEARCH_THEOREM_GATES_V2.json)
+incorporate the completed low-degree triple panel and coverage exclusions.
 The [soluble-versus-Sha comparison](notes/EXCEPTIONAL_SOLUBLE_VS_SHA_PANEL_2026-09-05.md)
 adds 62 marked quartic presentations on 356/385/398/400/543 and a certified
 rank-16 Sha obstruction control. Pairing rank detects Sha; the surviving
@@ -396,7 +427,7 @@ Use [`REPRODUCE.md`](REPRODUCE.md) and the exact checker paths recorded in `../M
 <!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 8a4c932153e2bb2d -->
 <!-- status-consumer: EC-K3-R17-NORM12-ICARM-573-REFRESH a93ce35de34fde21 -->
 <!-- status-consumer: EC-CF-NEARMISS-DESCENT-INPUTS 25c9f212e5162216 -->
-<!-- status-consumer: OP-EC-NEXT 999a3c28e6a6197b -->
+<!-- status-consumer: OP-EC-NEXT 83f2fabcbcbdeebc -->
 
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-SELMER-PANEL 539bd8ec36b36c44 -->
 

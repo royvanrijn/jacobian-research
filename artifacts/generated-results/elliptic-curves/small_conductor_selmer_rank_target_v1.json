@@ -1,0 +1,73 @@
+{
+  "argument": "An upper bound g<=16 gives Sel_2 dimension<=23. Its proved even parity improves this to22, matching the certified22 points. Conversely rank>=23 requires even Sel_2 dimension>=24, forcing g>=17.",
+  "brumer_kramer_offset": 7,
+  "claim_boundary": "An exact theorem-directed target, not a completed class-group bound or descent. No GRH, BSD or finiteness of Sha is assumed for this implication. If a future class-group bound depends on GRH, the resulting rank statement inherits that assumption.",
+  "current_class_two_rank_upper_bound": null,
+  "current_rank_upper_bound": null,
+  "global_root_number": 1,
+  "gp_binary": "/usr/bin/gp",
+  "gp_binary_sha256": "c9673623cad2eaa7cfe402e7b7d833f1f703689a09837026b6386aaafba6deec",
+  "local_root_numbers": {
+    "0": -1,
+    "13": -1,
+    "17": -1,
+    "19": 1,
+    "2": -1,
+    "2465779087453622652131442949": 1,
+    "29": -1,
+    "3": -1,
+    "5": -1,
+    "519784438179112504122441050306814600881": 1,
+    "71": -1
+  },
+  "necessary_class_two_rank_lower_bound_for_rank_at_least23": 17,
+  "rational_two_torsion_dimension": 0,
+  "references": [
+    "https://annals.math.princeton.edu/2010/172-1/p11",
+    "https://arxiv.org/html/1606.07178#A1"
+  ],
+  "root_number_program": "E=ellinit([1,0,0,-182451976602578656424609725499140,710003150253794219215652666162794189038512805392]);print([ellrootno(E,0),ellrootno(E,2),ellrootno(E,3),ellrootno(E,5),ellrootno(E,13),ellrootno(E,17),ellrootno(E,19),ellrootno(E,29),ellrootno(E,71),ellrootno(E,2465779087453622652131442949),ellrootno(E,519784438179112504122441050306814600881)]);quit\n",
+  "root_number_stdout": "[-1, -1, -1, -1, -1, -1, 1, -1, -1, 1, 1]\n",
+  "schema": "elliptic-curves.small-conductor-selmer-parity-target.v1",
+  "selmer_dimension_parity": 0,
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/small_conductor_class_rank_target_v1.json": "b257de1af979869b5e18f4ce5ed43c7b7e97531aca3b8ed06c2d56ed119144a4",
+    "elliptic-curves/cas/certify_small_conductor_selmer_rank_target.py": "f0c8be060e18efcc56a9e27b1234bc3161c9575e2a368977e904f2f2d7eab0ca"
+  },
+  "status": "PASS",
+  "sufficient_class_two_rank_upper_bound_for_exact_rank22": 16,
+  "theorem": "For elliptic curves overQ, the parity of dim_F2 Sel_2(E/Q)-dim_F2 E(Q)[2] equals the root number. This follows from the proved2-parity theorem for the2-infinity Selmer corank and the alternating Cassels--Tate pairing on the finite quotient. It does not assert algebraic rank parity.",
+  "unconditional_class_two_rank_lower_bound": 15,
+  "upper_bound_implications": [
+    {
+      "class_two_rank_upper_bound": 15,
+      "parity_refined_selmer_and_rank_upper_bound": 22,
+      "raw_selmer_upper_bound": 22
+    },
+    {
+      "class_two_rank_upper_bound": 16,
+      "parity_refined_selmer_and_rank_upper_bound": 22,
+      "raw_selmer_upper_bound": 23
+    },
+    {
+      "class_two_rank_upper_bound": 17,
+      "parity_refined_selmer_and_rank_upper_bound": 24,
+      "raw_selmer_upper_bound": 24
+    },
+    {
+      "class_two_rank_upper_bound": 18,
+      "parity_refined_selmer_and_rank_upper_bound": 24,
+      "raw_selmer_upper_bound": 25
+    },
+    {
+      "class_two_rank_upper_bound": 19,
+      "parity_refined_selmer_and_rank_upper_bound": 26,
+      "raw_selmer_upper_bound": 26
+    },
+    {
+      "class_two_rank_upper_bound": 20,
+      "parity_refined_selmer_and_rank_upper_bound": 26,
+      "raw_selmer_upper_bound": 27
+    }
+  ]
+}

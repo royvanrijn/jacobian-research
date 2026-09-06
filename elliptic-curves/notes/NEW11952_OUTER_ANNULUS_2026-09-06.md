@@ -1,9 +1,8 @@
 # New 11952 fibres beyond the complete height-131072 square
 
-**Active finite experiment. The new parameter scan and all 32,768 retained
-short scores pass. All 4,096 scalar traces, 64-finalist exclusions/ordering and disjoint
-validation now pass. All 64 maps are complete and the fixed point batch is
-running; no new rank result is claimed.**
+**Completed bounded experiment. All 64 new fibres have exactly certified
+17-point subgroups; the 3,136 completed point boxes found no stronger bound.
+All 194 isolated point-proof stages pass. This is not an upper bound on rank.**
 
 The two completed 11952 cohorts each supplied a new curve with 27 certified
 independent points. Their parameters lie inside the square whose 20.89 billion
@@ -45,7 +44,7 @@ and ten fixed new boundary parameters against fresh scalar PARI traces and
 controller completes all ten stages, using the same frozen parameter bank.
 No parameter scan is repeated.
 
-## Fixed remaining exposure
+## Fixed exposure and completed proofs
 
 The v2 score protocol applies the previously certified projective cache
 through 32749 to all 32,768 survivors. It then freezes 4,096 distinct equations
@@ -89,6 +88,27 @@ an exact rational group relation with a nonzero withheld coefficient;
 unresolved relations remain UNKNOWN. This does not calibrate exceptional
 rank-jump sensitivity, supply new ranks or alter the original 64-fibre batch.
 
-The source prefix is `annulus11952_masked`; its controller is
-`../cas/finish_annulus11952_masked_controls.py`. All operations have finite
-stage limits and retained checkpoints under `annulus11952-masked-controls-v1`.
+The first diagnostic stopped before point search because its guard compared
+serialized coordinates with parsed rational coordinates. The preserved v1
+failure is a representation mismatch, not a failed independence proof. The
+separate v2 sources parse the coordinates exactly and retain the original
+four fibres and budgets.
+
+All 48 boxes complete, and all four fibres recover their withheld direction.
+The independent Python checker verifies the generic independence certificates,
+raw witness provenance and exact group relations after clearing denominators.
+Its certificate is `annulus11952_masked_recovery_replay_v1.json`; the source is
+`../cas/verify_annulus11952_masked_recovery.py`. The corrected controller is
+`../cas/finish_annulus11952_masked_controls_v2.py`, with checkpoints under
+`annulus11952-masked-controls-v2`. Known-direction recovery is not evidence
+that every exceptional direction would have been visible.
+
+The original 64-fibre proof is recorded in `annulus64_r17_results_v1.json`
+and `annulus64_experiment_v1.json`. All 64 are unmatched against the frozen
+977 prior equations and 593 catalogue equations. Their generic transports,
+rational chart geometry and full point clouds modulo 2, 3 and 5 replay.
+`annulus64_point_portable_replay_v1.json` records 194 successful isolated
+checks; the point-only archive does not rerun the parameter or score searches.
+
+The subsequent [full-score fresh-slice trial](JOINT11952_FRESH_ANNULUS_2026-09-06.md)
+addresses a measured loss from truncating short scores before longer scoring.

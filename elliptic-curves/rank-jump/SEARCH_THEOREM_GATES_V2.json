@@ -1,0 +1,90 @@
+{
+  "schema": "rank-jump.search-theorem-gates.v2",
+  "canonical_source": "elliptic-curves/rank-jump/INDEPENDENT_BLOCKS_AND_RANK_OBSTRUCTIONS.md",
+  "foundational_gates": "elliptic-curves/rank-jump/SEARCH_THEOREM_GATES.json",
+  "supersedes": "Only the next-task priorities in v1; J1-J6 and their immutable certificates remain valid.",
+  "scope": "Exact contribution and exclusion rules; no automatic authorization for large searches or descents.",
+  "completed_prior_task": {
+    "id": "short_triple_dictionary",
+    "result": "All 2853 triples tested at the 165 frozen addresses; 11 degree-six/eight incidences, all at 3/8 (+4 retained).",
+    "canonical_source": "elliptic-curves/rank-jump/LOW_DEGREE_TRIPLE_RELATIONS_CONCENTRATE_ON_THE_PLUS4_CONTROL.md",
+    "next_action": "Retain as a negative regression; do not automatically increase the degree."
+  },
+  "gates": [
+    {
+      "id": "J7",
+      "required_inputs": [
+        "verified rational points",
+        "named generic subgroup with certified rank r",
+        "prime ell and genuine finite homomorphism",
+        "certified ell-torsion dimension t or upper bound",
+        "exact rational relation rows"
+      ],
+      "output": "max(0, combined_signature_rank-r-t) <= quotient_rank <= point_count-rank_Q(relations). Equality certifies this subgroup quotient.",
+      "failure": "An observed signature increment can measure saturation or torsion; a zero increment does not exclude new rational rank."
+    },
+    {
+      "id": "J8",
+      "required_inputs": [
+        "two point blocks on the same specialized fibre",
+        "same generic rational span",
+        "exact coordinate or signature certificates"
+      ],
+      "output": "union_rank = first_rank+second_rank-intersection_rank; certify successive increments.",
+      "failure": "Disjoint labels or generic characters do not certify specialized complementarity. Recompute the signature defect budget after enlarging the subgroup."
+    },
+    {
+      "id": "J9",
+      "required_inputs": [
+        "genuine certified Selmer classes",
+        "complete alternating CT matrix on an independent old subspace V",
+        "verified cross-pairings of its restricted radical with candidate partners"
+      ],
+      "output": "old_pairing_rank+2*radical_partner_rank is a certified full-pairing rank lower bound.",
+      "failure": "Zero partner columns do not prove solubility or exclude obstructions among new classes. Known rational point classes give zero columns automatically.",
+      "unneeded_for_this_lower_bound": "Pairings among the new partner classes."
+    },
+    {
+      "id": "J10",
+      "required_inputs": [
+        "unconditional certified upper envelope U for full Selmer dimension",
+        "rational two-torsion dimension t",
+        "certified even CT rank lower bound c",
+        "target R"
+      ],
+      "output": "rank E <= U-t-c. Exclude R only when U-t-c < R; stop once the smallest sufficient even c is reached.",
+      "failure": "Absent U, partial Selmer dimensions and expressions with unbounded unknown excess must return UNKNOWN. Contradiction with an independent point lower bound invalidates the certificate inputs."
+    }
+  ],
+  "next_tasks": [
+    {
+      "priority": 1,
+      "id": "reach_missing_quotient_directions",
+      "action": "Choose a construction with a reason to reach directions outside the deficient marked native span; certify its increment using J7-J8.",
+      "evidence_required": "Exact point relations and a new independent quotient lower bound. Distinct labels alone do not pass."
+    },
+    {
+      "priority": 2,
+      "id": "new_feasible_selmer_upper",
+      "action": "Identify a mathematically new feasible source of an unconditional upper envelope before attempting a same-family negative control.",
+      "evidence_required": "A genuine upper bound, not a partial class list. Record why this avoids the documented failed descent bottleneck."
+    },
+    {
+      "priority": 3,
+      "id": "radical_partner_exclusion",
+      "action": "On certified Selmer classes, compute radical-partner columns and accumulate the J9 bound until the J10 threshold is met.",
+      "evidence_required": "Labelled pairing certificates and exact matrix replay. Retain UNKNOWN if the upper envelope or partners are unavailable."
+    },
+    {
+      "priority": 4,
+      "id": "controlled_rational_sha_switch",
+      "action": "Establish a global rational/Sha switch on a specified independent block before claiming transfer to R17/MW16.",
+      "evidence_required": "Global point witnesses or nonzero obstruction, exact class identification, and explicit subgroup/base-change accounting."
+    }
+  ],
+  "execution_requirements": [
+    "Heavy work still needs explicit mathematical scope, node/time limits and checkpoints.",
+    "Retrospective exceptional coordinates stay out of prospective selection.",
+    "A numerical threshold illustrated by abstract matrices is not an arithmetic negative control."
+  ]
+}

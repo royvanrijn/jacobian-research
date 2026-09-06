@@ -1,0 +1,51 @@
+{
+  "archive_sha256": "1e6f35720f1549e5dbf493e34b0c8c29fcaa5b23545723d7dbcb921594d385bf",
+  "manifest_sha256": "7cab5c8db161ef16f73be6ef512a96e65ba61d9c29e00092e6f33fbf246c15ff",
+  "point_search_performed": false,
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "schema": "elliptic-curves.mw16-rank27-case-study-portable-replay.v1",
+  "stages": [
+    {
+      "command": [
+        "elliptic-curves/cas/study_mw16_rank27_visibility.py",
+        "check"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"adaptive\": {\"chart_count\": 301, \"minimum\": {\"chart_number\": 86, \"coordinate\": [\"-73571\", \"79466\"], \"minimum_affine_height\": 79466, \"sign\": 1}, \"signed_point_evaluations\": 602, \"visible_signed_representatives\": 1}, \"initial\": {\"chart_count\": 43, \"minimum\": {\"chart_number\": 22, \"coordinate\": [\"1379753695791601\", \"1085900877990488\"], \"minimum_affine_height\": 1379753695791601, \"sign\": 1}, \"signed_point_evaluations\": 86, \"visible_signed_representatives\": 0}}\n"
+    },
+    {
+      "command": [
+        "elliptic-curves/cas/certify_mw16_rank27_translation_classes.py",
+        "--check"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "EXACTLY 344 RATIONAL-TRANSLATION CLASSES; 1024 LIFTS PER GENERIC PARITY\n"
+    },
+    {
+      "command": [
+        "elliptic-curves/cas/followup_mw16_rank27_visibility_v2.py",
+        "check"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "REPLAYED TWELVE MW16 VISIBILITY FOLLOWUP CHARTS\nREPLAYED RECORDED-POINT RANK a1-fibration-01 -1867/270 rank >= 27\nREPLAYED CLOUD MODL a1-fibration-01 3 rank >= 27\nREPLAYED CLOUD MODL a1-fibration-01 5 rank >= 27\n{\"attempted_charts\": 12, \"backend_failures\": 0, \"bindings\": {\"artifacts/generated-results/elliptic-curves/mw16_rank27_visibility_followup_mod2_v2.json\": \"5727b2afe050455d6cb85e4c3c8472845dd13737eec715028129a27d78fd8d1f\", \"artifacts/generated-results/elliptic-curves/mw16_rank27_visibility_followup_modl_v2.json\": \"0f342b55074b54c3cd6786a9b0b9cc50b5fe20df9f8e1b6bfbd8b5ab412fca61\", \"artifacts/local/elliptic-curves/mw16-rank27-visibility-followup-v2/protocol.json\": \"b2638a027f133c05bc3b004d7ee5894b71986b0026d44adec17bb00f8c595cc4\", \"artifacts/local/elliptic-curves/mw16-rank27-visibility-followup-v2/result.json\": \"29b09226830b150256270180c31065a5dffb54bcb0bb555cc2f99ab82634c687\"}, \"claim_boundary\": \"This fixed trial cloud includes the own27 seed and all retained output, not every historical point. No upper rank bound or unrecorded-point claim. Completed coverage trusts the pinned PARI execution; censored boxes remain unknown.\", \"completed_boxes\": 0, \"height\": 1000000, \"mod2_lower_bound\": 27, \"odd_prime_lower_bounds\": {\"3\": 27, \"5\": 27}, \"retained_points_up_to_sign\": 27, \"schema\": \"elliptic-curves.mw16-rank27-visibility-followup.v2\", \"seconds_per_chart\": 15, \"status\": \"PASS\", \"timeouts\": 12}\n"
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "elliptic-curves/tests",
+        "-p",
+        "test_mw16_rank27_visibility_study.py"
+      ],
+      "returncode": 0,
+      "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.016s\n\nOK\n",
+      "stdout": ""
+    }
+  ],
+  "status": "PASS"
+}

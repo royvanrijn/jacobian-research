@@ -1,0 +1,15 @@
+{
+  "claim_boundary": "Independent whole residue-ring necessary congruences exclude a second p-scale everywhere in all ten admitted first-scale balls. Every good/bad next-digit cell replays. This closes local scaling at the declared5/13 pairs; it is not a global minimal-model, point, score-optimality, conductor or rank certificate.",
+  "first_scale_balls": 10,
+  "no_second_scale_in_any_ball": true,
+  "schema": "elliptic-curves.mw16-postscale-reduction-replay.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/mw16_postscale_reduction_v1.json": "9635b06d3bbe74ecc3f67a933d296b9d045a57ba560d9ead32206dd7aafe014d",
+    "artifacts/local/elliptic-curves/mw16-postscale-reduction-v1/ledger.json": "de01db12986591583079ca619071d2e3d6da02b133eb3632cb2efa66772a93ce",
+    "artifacts/local/elliptic-curves/mw16-postscale-reduction-v1/protocol.json": "512b4cc803e252fd458f34b6c580bfaf0876c9f13e306de62d867ec5cd7acdc2",
+    "elliptic-curves/cas/audit_mw16_postscale_reduction.py": "e444d40ad654631fc7b0a6ee09cac2d4781f5ac61281fe808fa9a601125def65",
+    "elliptic-curves/cas/verify_mw16_postscale_reduction.py": "99ed00f562eb15362d86830b1dca8cc1f6e5b21c210b16a8369a93bcc8e5f148"
+  },
+  "status": "PASS",
+  "whole_ring_residues_tested": 5023
+}

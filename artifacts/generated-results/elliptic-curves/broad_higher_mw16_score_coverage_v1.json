@@ -1,0 +1,3373 @@
+{
+  "argument": "The scanner retains the best4096 of each signed slice, ordered by decreasing combined units, decreasing good count, denominator, absolute numerator. Every omitted address is no better than its slice boundary in the first three fields. If the last admitted scalar candidate in a band/family is strictly better than every slice boundary in those fields, no omitted address can precede that candidate, regardless of the signed-numerator tie convention. Thus truncation cannot remove any address before this selected prefix, including any earlier within-roster duplicate that the frozen scalar selection skips.",
+  "claim_boundary": "Independent exact homogeneous models, primitive higher-band membership, within-roster Q-isomorphism distinctness, saved score provenance and finite strict-prefix coverage through prime32749. This preserves the existing selector. It does not prove the globally best65521 scores, a rank predictor, coverage outside the declared slices, catalogue absence, rational-point independence or a new rank.",
+  "distinct_Q_isomorphism_classes": 10240,
+  "distinct_j_invariants": 10240,
+  "groups": [
+    {
+      "band": 2,
+      "family": "a1-fibration-01",
+      "last_selected_primary_key": [
+        -134368320826808,
+        -3506,
+        7627
+      ],
+      "parameter_height_maximum": 65519,
+      "parameter_height_minimum": 16685,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -127656181138113,
+            -3504,
+            46195
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-neg-00"
+        },
+        {
+          "last_retained_key": [
+            -127664585134242,
+            -3506,
+            1769
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-neg-01"
+        },
+        {
+          "last_retained_key": [
+            -127662344768048,
+            -3499,
+            60429
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-neg-02"
+        },
+        {
+          "last_retained_key": [
+            -127604516347190,
+            -3503,
+            24021
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-neg-03"
+        },
+        {
+          "last_retained_key": [
+            -127644988336547,
+            -3503,
+            48851
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-neg-04"
+        },
+        {
+          "last_retained_key": [
+            -127610816735142,
+            -3505,
+            56439
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-neg-05"
+        },
+        {
+          "last_retained_key": [
+            -127637459602608,
+            -3506,
+            12783
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-neg-06"
+        },
+        {
+          "last_retained_key": [
+            -127611550075988,
+            -3502,
+            64301
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-neg-07"
+        },
+        {
+          "last_retained_key": [
+            -127590890429569,
+            -3503,
+            30073
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-neg-08"
+        },
+        {
+          "last_retained_key": [
+            -127653583032120,
+            -3504,
+            12379
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-neg-09"
+        },
+        {
+          "last_retained_key": [
+            -127627542798360,
+            -3501,
+            47331
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-neg-10"
+        },
+        {
+          "last_retained_key": [
+            -127648315957450,
+            -3502,
+            33751
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-neg-11"
+        },
+        {
+          "last_retained_key": [
+            -127624456048629,
+            -3503,
+            10727
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-neg-12"
+        },
+        {
+          "last_retained_key": [
+            -127604644397801,
+            -3504,
+            52427
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-neg-13"
+        },
+        {
+          "last_retained_key": [
+            -127641983681739,
+            -3502,
+            12739
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-neg-14"
+        },
+        {
+          "last_retained_key": [
+            -127668790932135,
+            -3506,
+            40351
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-neg-15"
+        },
+        {
+          "last_retained_key": [
+            -126441083253422,
+            -3503,
+            33814
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-pos-00"
+        },
+        {
+          "last_retained_key": [
+            -126482635158477,
+            -3503,
+            33794
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-pos-01"
+        },
+        {
+          "last_retained_key": [
+            -126443782016718,
+            -3502,
+            27376
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-pos-02"
+        },
+        {
+          "last_retained_key": [
+            -126428247782552,
+            -3503,
+            65124
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-pos-03"
+        },
+        {
+          "last_retained_key": [
+            -126463965134727,
+            -3503,
+            52624
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-pos-04"
+        },
+        {
+          "last_retained_key": [
+            -126409180184518,
+            -3503,
+            29590
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-pos-05"
+        },
+        {
+          "last_retained_key": [
+            -126445984696416,
+            -3501,
+            28024
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-pos-06"
+        },
+        {
+          "last_retained_key": [
+            -126444878034335,
+            -3505,
+            50884
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-pos-07"
+        },
+        {
+          "last_retained_key": [
+            -126437660953074,
+            -3505,
+            42160
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-pos-08"
+        },
+        {
+          "last_retained_key": [
+            -126394206081326,
+            -3503,
+            40246
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-pos-09"
+        },
+        {
+          "last_retained_key": [
+            -126377428535675,
+            -3502,
+            29024
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-pos-10"
+        },
+        {
+          "last_retained_key": [
+            -126470538846807,
+            -3503,
+            22508
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-pos-11"
+        },
+        {
+          "last_retained_key": [
+            -126448876025535,
+            -3503,
+            36052
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-pos-12"
+        },
+        {
+          "last_retained_key": [
+            -126438444050659,
+            -3506,
+            5354
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-pos-13"
+        },
+        {
+          "last_retained_key": [
+            -126445130857904,
+            -3502,
+            25570
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-pos-14"
+        },
+        {
+          "last_retained_key": [
+            -126446612989250,
+            -3503,
+            54680
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-01-pos-15"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 2,
+      "family": "a1-fibration-02",
+      "last_selected_primary_key": [
+        -133917988627025,
+        -3500,
+        34991
+      ],
+      "parameter_height_maximum": 65509,
+      "parameter_height_minimum": 16584,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -125980749031196,
+            -3504,
+            26146
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-neg-00"
+        },
+        {
+          "last_retained_key": [
+            -125990310832931,
+            -3502,
+            49538
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-neg-01"
+        },
+        {
+          "last_retained_key": [
+            -126027900640612,
+            -3501,
+            63252
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-neg-02"
+        },
+        {
+          "last_retained_key": [
+            -126015135115928,
+            -3501,
+            37490
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-neg-03"
+        },
+        {
+          "last_retained_key": [
+            -126039056625509,
+            -3505,
+            23182
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-neg-04"
+        },
+        {
+          "last_retained_key": [
+            -126033075538100,
+            -3506,
+            39056
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-neg-05"
+        },
+        {
+          "last_retained_key": [
+            -126030782219907,
+            -3500,
+            35980
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-neg-06"
+        },
+        {
+          "last_retained_key": [
+            -126017050278601,
+            -3501,
+            49302
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-neg-07"
+        },
+        {
+          "last_retained_key": [
+            -126032285052567,
+            -3507,
+            60446
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-neg-08"
+        },
+        {
+          "last_retained_key": [
+            -125985246705425,
+            -3504,
+            63204
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-neg-09"
+        },
+        {
+          "last_retained_key": [
+            -126026994004397,
+            -3502,
+            56608
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-neg-10"
+        },
+        {
+          "last_retained_key": [
+            -125963173647206,
+            -3499,
+            63404
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-neg-11"
+        },
+        {
+          "last_retained_key": [
+            -126047651748173,
+            -3502,
+            38948
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-neg-12"
+        },
+        {
+          "last_retained_key": [
+            -126066316077410,
+            -3499,
+            37606
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-neg-13"
+        },
+        {
+          "last_retained_key": [
+            -126035909327815,
+            -3506,
+            40474
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-neg-14"
+        },
+        {
+          "last_retained_key": [
+            -126037152300607,
+            -3504,
+            58710
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-neg-15"
+        },
+        {
+          "last_retained_key": [
+            -127143332966412,
+            -3505,
+            33767
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-pos-00"
+        },
+        {
+          "last_retained_key": [
+            -127197208809361,
+            -3503,
+            40675
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-pos-01"
+        },
+        {
+          "last_retained_key": [
+            -127204171768667,
+            -3506,
+            29743
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-pos-02"
+        },
+        {
+          "last_retained_key": [
+            -127194811229860,
+            -3504,
+            48327
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-pos-03"
+        },
+        {
+          "last_retained_key": [
+            -127182466245822,
+            -3506,
+            17687
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-pos-04"
+        },
+        {
+          "last_retained_key": [
+            -127200545445442,
+            -3503,
+            39019
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-pos-05"
+        },
+        {
+          "last_retained_key": [
+            -127208044854250,
+            -3504,
+            23999
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-pos-06"
+        },
+        {
+          "last_retained_key": [
+            -127189895700380,
+            -3506,
+            40137
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-pos-07"
+        },
+        {
+          "last_retained_key": [
+            -127149867092715,
+            -3504,
+            22213
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-pos-08"
+        },
+        {
+          "last_retained_key": [
+            -127211069301440,
+            -3504,
+            27751
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-pos-09"
+        },
+        {
+          "last_retained_key": [
+            -127214712096466,
+            -3506,
+            43279
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-pos-10"
+        },
+        {
+          "last_retained_key": [
+            -127184001075144,
+            -3503,
+            16165
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-pos-11"
+        },
+        {
+          "last_retained_key": [
+            -127206168933595,
+            -3506,
+            46511
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-pos-12"
+        },
+        {
+          "last_retained_key": [
+            -127169257036150,
+            -3500,
+            45683
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-pos-13"
+        },
+        {
+          "last_retained_key": [
+            -127200319515170,
+            -3502,
+            47553
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-pos-14"
+        },
+        {
+          "last_retained_key": [
+            -127142097302417,
+            -3502,
+            23481
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-02-pos-15"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 2,
+      "family": "a1-fibration-03",
+      "last_selected_primary_key": [
+        -133585957971762,
+        -3504,
+        16019
+      ],
+      "parameter_height_maximum": 65533,
+      "parameter_height_minimum": 16491,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -126922815519249,
+            -3505,
+            46103
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-neg-00"
+        },
+        {
+          "last_retained_key": [
+            -126925444165090,
+            -3500,
+            32255
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-neg-01"
+        },
+        {
+          "last_retained_key": [
+            -126961547886766,
+            -3502,
+            46465
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-neg-02"
+        },
+        {
+          "last_retained_key": [
+            -126943038164977,
+            -3506,
+            47701
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-neg-03"
+        },
+        {
+          "last_retained_key": [
+            -126929415408417,
+            -3506,
+            59315
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-neg-04"
+        },
+        {
+          "last_retained_key": [
+            -126944762230038,
+            -3503,
+            43773
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-neg-05"
+        },
+        {
+          "last_retained_key": [
+            -126977841904545,
+            -3506,
+            37781
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-neg-06"
+        },
+        {
+          "last_retained_key": [
+            -126927223725259,
+            -3504,
+            51347
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-neg-07"
+        },
+        {
+          "last_retained_key": [
+            -126961296615785,
+            -3502,
+            22423
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-neg-08"
+        },
+        {
+          "last_retained_key": [
+            -126926753805023,
+            -3502,
+            53821
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-neg-09"
+        },
+        {
+          "last_retained_key": [
+            -126884207218680,
+            -3502,
+            29433
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-neg-10"
+        },
+        {
+          "last_retained_key": [
+            -126961840242054,
+            -3502,
+            64541
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-neg-11"
+        },
+        {
+          "last_retained_key": [
+            -126903671063070,
+            -3505,
+            54851
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-neg-12"
+        },
+        {
+          "last_retained_key": [
+            -126932107696175,
+            -3500,
+            58769
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-neg-13"
+        },
+        {
+          "last_retained_key": [
+            -126922580236079,
+            -3501,
+            48625
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-neg-14"
+        },
+        {
+          "last_retained_key": [
+            -126911621351848,
+            -3500,
+            50731
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-neg-15"
+        },
+        {
+          "last_retained_key": [
+            -125730773904171,
+            -3501,
+            36372
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-pos-00"
+        },
+        {
+          "last_retained_key": [
+            -125754867502305,
+            -3504,
+            43826
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-pos-01"
+        },
+        {
+          "last_retained_key": [
+            -125750619470295,
+            -3504,
+            33752
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-pos-02"
+        },
+        {
+          "last_retained_key": [
+            -125770345570703,
+            -3503,
+            15446
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-pos-03"
+        },
+        {
+          "last_retained_key": [
+            -125785072791990,
+            -3503,
+            38812
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-pos-04"
+        },
+        {
+          "last_retained_key": [
+            -125779850171733,
+            -3502,
+            22822
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-pos-05"
+        },
+        {
+          "last_retained_key": [
+            -125741881790945,
+            -3505,
+            57502
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-pos-06"
+        },
+        {
+          "last_retained_key": [
+            -125752456423843,
+            -3503,
+            15282
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-pos-07"
+        },
+        {
+          "last_retained_key": [
+            -125711873434653,
+            -3501,
+            63834
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-pos-08"
+        },
+        {
+          "last_retained_key": [
+            -125776478124434,
+            -3503,
+            52270
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-pos-09"
+        },
+        {
+          "last_retained_key": [
+            -125719830721135,
+            -3503,
+            52298
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-pos-10"
+        },
+        {
+          "last_retained_key": [
+            -125722423467456,
+            -3504,
+            54848
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-pos-11"
+        },
+        {
+          "last_retained_key": [
+            -125696173088763,
+            -3504,
+            57284
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-pos-12"
+        },
+        {
+          "last_retained_key": [
+            -125731969750375,
+            -3504,
+            40254
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-pos-13"
+        },
+        {
+          "last_retained_key": [
+            -125755330937257,
+            -3505,
+            36304
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-pos-14"
+        },
+        {
+          "last_retained_key": [
+            -125765370629442,
+            -3501,
+            23098
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-03-pos-15"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 2,
+      "family": "a1-fibration-04",
+      "last_selected_primary_key": [
+        -133847708937920,
+        -3501,
+        24563
+      ],
+      "parameter_height_maximum": 65513,
+      "parameter_height_minimum": 16495,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -125949081468132,
+            -3505,
+            51334
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-neg-00"
+        },
+        {
+          "last_retained_key": [
+            -125992359720756,
+            -3505,
+            64788
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-neg-01"
+        },
+        {
+          "last_retained_key": [
+            -125985105532507,
+            -3501,
+            58914
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-neg-02"
+        },
+        {
+          "last_retained_key": [
+            -126004469682498,
+            -3502,
+            55178
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-neg-03"
+        },
+        {
+          "last_retained_key": [
+            -125985636521083,
+            -3501,
+            20910
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-neg-04"
+        },
+        {
+          "last_retained_key": [
+            -125961589523746,
+            -3503,
+            17218
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-neg-05"
+        },
+        {
+          "last_retained_key": [
+            -125965147018185,
+            -3508,
+            57868
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-neg-06"
+        },
+        {
+          "last_retained_key": [
+            -125947930584530,
+            -3503,
+            18866
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-neg-07"
+        },
+        {
+          "last_retained_key": [
+            -125927154671866,
+            -3504,
+            38522
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-neg-08"
+        },
+        {
+          "last_retained_key": [
+            -125989664607918,
+            -3506,
+            34262
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-neg-09"
+        },
+        {
+          "last_retained_key": [
+            -125967714096326,
+            -3505,
+            52418
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-neg-10"
+        },
+        {
+          "last_retained_key": [
+            -125948765244079,
+            -3503,
+            51208
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-neg-11"
+        },
+        {
+          "last_retained_key": [
+            -126064085351583,
+            -3501,
+            48246
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-neg-12"
+        },
+        {
+          "last_retained_key": [
+            -125979686938504,
+            -3505,
+            7502
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-neg-13"
+        },
+        {
+          "last_retained_key": [
+            -125991672306536,
+            -3499,
+            13394
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-neg-14"
+        },
+        {
+          "last_retained_key": [
+            -126005903815540,
+            -3504,
+            8522
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-neg-15"
+        },
+        {
+          "last_retained_key": [
+            -127189900959155,
+            -3502,
+            21251
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-pos-00"
+        },
+        {
+          "last_retained_key": [
+            -127217211458224,
+            -3501,
+            44219
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-pos-01"
+        },
+        {
+          "last_retained_key": [
+            -127206610434639,
+            -3502,
+            18701
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-pos-02"
+        },
+        {
+          "last_retained_key": [
+            -127158943090322,
+            -3505,
+            43129
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-pos-03"
+        },
+        {
+          "last_retained_key": [
+            -127246811331713,
+            -3502,
+            23007
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-pos-04"
+        },
+        {
+          "last_retained_key": [
+            -127168566993378,
+            -3505,
+            32543
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-pos-05"
+        },
+        {
+          "last_retained_key": [
+            -127154628739783,
+            -3505,
+            46529
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-pos-06"
+        },
+        {
+          "last_retained_key": [
+            -127177282241188,
+            -3504,
+            64499
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-pos-07"
+        },
+        {
+          "last_retained_key": [
+            -127150146973849,
+            -3504,
+            42007
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-pos-08"
+        },
+        {
+          "last_retained_key": [
+            -127248209324186,
+            -3505,
+            51163
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-pos-09"
+        },
+        {
+          "last_retained_key": [
+            -127175446678287,
+            -3507,
+            41001
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-pos-10"
+        },
+        {
+          "last_retained_key": [
+            -127152103645281,
+            -3502,
+            48361
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-pos-11"
+        },
+        {
+          "last_retained_key": [
+            -127149686479603,
+            -3503,
+            41839
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-pos-12"
+        },
+        {
+          "last_retained_key": [
+            -127243556160738,
+            -3503,
+            17571
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-pos-13"
+        },
+        {
+          "last_retained_key": [
+            -127183662611319,
+            -3503,
+            36845
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-pos-14"
+        },
+        {
+          "last_retained_key": [
+            -127197427252785,
+            -3504,
+            64457
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-04-pos-15"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 2,
+      "family": "a1-fibration-05",
+      "last_selected_primary_key": [
+        -133730012095106,
+        -3503,
+        64522
+      ],
+      "parameter_height_maximum": 65501,
+      "parameter_height_minimum": 16429,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -127017814585582,
+            -3503,
+            57991
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-neg-00"
+        },
+        {
+          "last_retained_key": [
+            -127073274232233,
+            -3502,
+            50455
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-neg-01"
+        },
+        {
+          "last_retained_key": [
+            -126994592676593,
+            -3503,
+            42003
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-neg-02"
+        },
+        {
+          "last_retained_key": [
+            -126999212867676,
+            -3503,
+            6817
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-neg-03"
+        },
+        {
+          "last_retained_key": [
+            -127070220682815,
+            -3507,
+            38707
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-neg-04"
+        },
+        {
+          "last_retained_key": [
+            -127038120764299,
+            -3504,
+            27341
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-neg-05"
+        },
+        {
+          "last_retained_key": [
+            -127017413012714,
+            -3502,
+            21493
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-neg-06"
+        },
+        {
+          "last_retained_key": [
+            -127083908087028,
+            -3507,
+            8821
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-neg-07"
+        },
+        {
+          "last_retained_key": [
+            -127004576334847,
+            -3506,
+            41903
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-neg-08"
+        },
+        {
+          "last_retained_key": [
+            -127039465902787,
+            -3501,
+            13697
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-neg-09"
+        },
+        {
+          "last_retained_key": [
+            -127021034288756,
+            -3503,
+            6365
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-neg-10"
+        },
+        {
+          "last_retained_key": [
+            -127049356526160,
+            -3504,
+            55017
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-neg-11"
+        },
+        {
+          "last_retained_key": [
+            -127015252765442,
+            -3505,
+            58013
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-neg-12"
+        },
+        {
+          "last_retained_key": [
+            -127010550103368,
+            -3501,
+            36397
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-neg-13"
+        },
+        {
+          "last_retained_key": [
+            -127065402951882,
+            -3505,
+            7333
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-neg-14"
+        },
+        {
+          "last_retained_key": [
+            -127057721785923,
+            -3505,
+            23465
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-neg-15"
+        },
+        {
+          "last_retained_key": [
+            -125820600773403,
+            -3504,
+            53656
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-pos-00"
+        },
+        {
+          "last_retained_key": [
+            -125851750653005,
+            -3503,
+            26634
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-pos-01"
+        },
+        {
+          "last_retained_key": [
+            -125871392439793,
+            -3504,
+            47780
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-pos-02"
+        },
+        {
+          "last_retained_key": [
+            -125833657639355,
+            -3502,
+            16976
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-pos-03"
+        },
+        {
+          "last_retained_key": [
+            -125825712187345,
+            -3503,
+            37064
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-pos-04"
+        },
+        {
+          "last_retained_key": [
+            -125871163258881,
+            -3503,
+            63034
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-pos-05"
+        },
+        {
+          "last_retained_key": [
+            -125873982206188,
+            -3501,
+            13398
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-pos-06"
+        },
+        {
+          "last_retained_key": [
+            -125812391934728,
+            -3502,
+            48768
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-pos-07"
+        },
+        {
+          "last_retained_key": [
+            -125862886192271,
+            -3502,
+            17812
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-pos-08"
+        },
+        {
+          "last_retained_key": [
+            -125819349751944,
+            -3501,
+            13682
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-pos-09"
+        },
+        {
+          "last_retained_key": [
+            -125840950107584,
+            -3501,
+            25132
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-pos-10"
+        },
+        {
+          "last_retained_key": [
+            -125855428941275,
+            -3505,
+            56458
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-pos-11"
+        },
+        {
+          "last_retained_key": [
+            -125844016137640,
+            -3499,
+            25876
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-pos-12"
+        },
+        {
+          "last_retained_key": [
+            -125879048144100,
+            -3502,
+            23014
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-pos-13"
+        },
+        {
+          "last_retained_key": [
+            -125868884001184,
+            -3502,
+            5844
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-pos-14"
+        },
+        {
+          "last_retained_key": [
+            -125778403461908,
+            -3504,
+            9544
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b2-a1-fibration-05-pos-15"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 3,
+      "family": "a1-fibration-01",
+      "last_selected_primary_key": [
+        -134317480390214,
+        -3508,
+        113122
+      ],
+      "parameter_height_maximum": 261861,
+      "parameter_height_minimum": 65737,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -127638759863742,
+            -3507,
+            175845
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-neg-00"
+        },
+        {
+          "last_retained_key": [
+            -127636594286242,
+            -3506,
+            91171
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-neg-01"
+        },
+        {
+          "last_retained_key": [
+            -127653336320123,
+            -3504,
+            106713
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-neg-02"
+        },
+        {
+          "last_retained_key": [
+            -127659560841414,
+            -3506,
+            109385
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-neg-03"
+        },
+        {
+          "last_retained_key": [
+            -127637721750946,
+            -3502,
+            36083
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-neg-04"
+        },
+        {
+          "last_retained_key": [
+            -127597857228114,
+            -3503,
+            129305
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-neg-05"
+        },
+        {
+          "last_retained_key": [
+            -127622024540656,
+            -3504,
+            256629
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-neg-06"
+        },
+        {
+          "last_retained_key": [
+            -127652594115502,
+            -3506,
+            139465
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-neg-07"
+        },
+        {
+          "last_retained_key": [
+            -127648772185936,
+            -3503,
+            236859
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-neg-08"
+        },
+        {
+          "last_retained_key": [
+            -127687985254833,
+            -3505,
+            145025
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-neg-09"
+        },
+        {
+          "last_retained_key": [
+            -127657394866665,
+            -3504,
+            104233
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-neg-10"
+        },
+        {
+          "last_retained_key": [
+            -127620086060237,
+            -3502,
+            193673
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-neg-11"
+        },
+        {
+          "last_retained_key": [
+            -127590062726334,
+            -3502,
+            196971
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-neg-12"
+        },
+        {
+          "last_retained_key": [
+            -127606884754713,
+            -3504,
+            79185
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-neg-13"
+        },
+        {
+          "last_retained_key": [
+            -127663669656693,
+            -3505,
+            23087
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-neg-14"
+        },
+        {
+          "last_retained_key": [
+            -127644172182144,
+            -3502,
+            4363
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-neg-15"
+        },
+        {
+          "last_retained_key": [
+            -126428296534615,
+            -3506,
+            73382
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-pos-00"
+        },
+        {
+          "last_retained_key": [
+            -126375223282970,
+            -3502,
+            224634
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-pos-01"
+        },
+        {
+          "last_retained_key": [
+            -126406430710621,
+            -3507,
+            110468
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-pos-02"
+        },
+        {
+          "last_retained_key": [
+            -126469339739301,
+            -3505,
+            118432
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-pos-03"
+        },
+        {
+          "last_retained_key": [
+            -126490849353229,
+            -3502,
+            84908
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-pos-04"
+        },
+        {
+          "last_retained_key": [
+            -126429415983061,
+            -3503,
+            203234
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-pos-05"
+        },
+        {
+          "last_retained_key": [
+            -126429166758990,
+            -3502,
+            45952
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-pos-06"
+        },
+        {
+          "last_retained_key": [
+            -126449269599645,
+            -3501,
+            128290
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-pos-07"
+        },
+        {
+          "last_retained_key": [
+            -126409840749607,
+            -3503,
+            166654
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-pos-08"
+        },
+        {
+          "last_retained_key": [
+            -126442625310007,
+            -3504,
+            128332
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-pos-09"
+        },
+        {
+          "last_retained_key": [
+            -126432292925306,
+            -3503,
+            62504
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-pos-10"
+        },
+        {
+          "last_retained_key": [
+            -126398665375669,
+            -3506,
+            179968
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-pos-11"
+        },
+        {
+          "last_retained_key": [
+            -126413749608412,
+            -3503,
+            86982
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-pos-12"
+        },
+        {
+          "last_retained_key": [
+            -126434012974327,
+            -3503,
+            35234
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-pos-13"
+        },
+        {
+          "last_retained_key": [
+            -126468071905349,
+            -3503,
+            94
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-pos-14"
+        },
+        {
+          "last_retained_key": [
+            -126416066928259,
+            -3504,
+            162570
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-01-pos-15"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 3,
+      "family": "a1-fibration-02",
+      "last_selected_primary_key": [
+        -133980959315516,
+        -3503,
+        191025
+      ],
+      "parameter_height_maximum": 261582,
+      "parameter_height_minimum": 66686,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -126038131357848,
+            -3501,
+            111358
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-neg-00"
+        },
+        {
+          "last_retained_key": [
+            -125998426264634,
+            -3501,
+            229554
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-neg-01"
+        },
+        {
+          "last_retained_key": [
+            -126013893154129,
+            -3503,
+            34342
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-neg-02"
+        },
+        {
+          "last_retained_key": [
+            -126046616365749,
+            -3502,
+            258234
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-neg-03"
+        },
+        {
+          "last_retained_key": [
+            -125966945027374,
+            -3501,
+            184602
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-neg-04"
+        },
+        {
+          "last_retained_key": [
+            -126015792641228,
+            -3503,
+            115136
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-neg-05"
+        },
+        {
+          "last_retained_key": [
+            -125997573314819,
+            -3502,
+            87166
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-neg-06"
+        },
+        {
+          "last_retained_key": [
+            -126021465907404,
+            -3502,
+            240116
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-neg-07"
+        },
+        {
+          "last_retained_key": [
+            -126043905428580,
+            -3503,
+            161662
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-neg-08"
+        },
+        {
+          "last_retained_key": [
+            -126027810974114,
+            -3503,
+            189102
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-neg-09"
+        },
+        {
+          "last_retained_key": [
+            -125928936074091,
+            -3504,
+            216556
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-neg-10"
+        },
+        {
+          "last_retained_key": [
+            -125947249722647,
+            -3505,
+            2350
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-neg-11"
+        },
+        {
+          "last_retained_key": [
+            -126009675922862,
+            -3506,
+            138788
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-neg-12"
+        },
+        {
+          "last_retained_key": [
+            -126022961970759,
+            -3502,
+            144504
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-neg-13"
+        },
+        {
+          "last_retained_key": [
+            -126004901577095,
+            -3503,
+            70072
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-neg-14"
+        },
+        {
+          "last_retained_key": [
+            -126001100364945,
+            -3503,
+            2262
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-neg-15"
+        },
+        {
+          "last_retained_key": [
+            -127210080494323,
+            -3502,
+            196279
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-pos-00"
+        },
+        {
+          "last_retained_key": [
+            -127255383269088,
+            -3506,
+            100999
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-pos-01"
+        },
+        {
+          "last_retained_key": [
+            -127240216401330,
+            -3502,
+            202621
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-pos-02"
+        },
+        {
+          "last_retained_key": [
+            -127225970321759,
+            -3498,
+            128275
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-pos-03"
+        },
+        {
+          "last_retained_key": [
+            -127293156733212,
+            -3503,
+            121175
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-pos-04"
+        },
+        {
+          "last_retained_key": [
+            -127255158134676,
+            -3504,
+            230485
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-pos-05"
+        },
+        {
+          "last_retained_key": [
+            -127189463506711,
+            -3506,
+            260421
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-pos-06"
+        },
+        {
+          "last_retained_key": [
+            -127233627413550,
+            -3504,
+            252543
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-pos-07"
+        },
+        {
+          "last_retained_key": [
+            -127200927991553,
+            -3505,
+            25739
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-pos-08"
+        },
+        {
+          "last_retained_key": [
+            -127200422409659,
+            -3508,
+            109451
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-pos-09"
+        },
+        {
+          "last_retained_key": [
+            -127205947340764,
+            -3503,
+            153625
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-pos-10"
+        },
+        {
+          "last_retained_key": [
+            -127173053700678,
+            -3503,
+            252465
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-pos-11"
+        },
+        {
+          "last_retained_key": [
+            -127248685013845,
+            -3503,
+            162621
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-pos-12"
+        },
+        {
+          "last_retained_key": [
+            -127176321071308,
+            -3502,
+            190153
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-pos-13"
+        },
+        {
+          "last_retained_key": [
+            -127206536422218,
+            -3504,
+            68697
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-pos-14"
+        },
+        {
+          "last_retained_key": [
+            -127232238653046,
+            -3505,
+            259735
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-02-pos-15"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 3,
+      "family": "a1-fibration-03",
+      "last_selected_primary_key": [
+        -133563331510140,
+        -3505,
+        117495
+      ],
+      "parameter_height_maximum": 261945,
+      "parameter_height_minimum": 65686,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -126911709667298,
+            -3500,
+            85917
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-neg-00"
+        },
+        {
+          "last_retained_key": [
+            -127002049962751,
+            -3503,
+            49415
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-neg-01"
+        },
+        {
+          "last_retained_key": [
+            -126906399430447,
+            -3506,
+            117643
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-neg-02"
+        },
+        {
+          "last_retained_key": [
+            -126920581288516,
+            -3504,
+            198127
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-neg-03"
+        },
+        {
+          "last_retained_key": [
+            -126885264325465,
+            -3503,
+            130391
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-neg-04"
+        },
+        {
+          "last_retained_key": [
+            -126894878425012,
+            -3502,
+            111865
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-neg-05"
+        },
+        {
+          "last_retained_key": [
+            -126897620764625,
+            -3506,
+            36123
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-neg-06"
+        },
+        {
+          "last_retained_key": [
+            -126927737723641,
+            -3501,
+            147257
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-neg-07"
+        },
+        {
+          "last_retained_key": [
+            -126912682733647,
+            -3499,
+            95695
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-neg-08"
+        },
+        {
+          "last_retained_key": [
+            -126948375859971,
+            -3503,
+            15441
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-neg-09"
+        },
+        {
+          "last_retained_key": [
+            -126975999396023,
+            -3508,
+            121553
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-neg-10"
+        },
+        {
+          "last_retained_key": [
+            -126920201849198,
+            -3505,
+            63467
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-neg-11"
+        },
+        {
+          "last_retained_key": [
+            -126977876947083,
+            -3504,
+            69645
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-neg-12"
+        },
+        {
+          "last_retained_key": [
+            -126945919730838,
+            -3506,
+            252663
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-neg-13"
+        },
+        {
+          "last_retained_key": [
+            -126929455721909,
+            -3505,
+            68021
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-neg-14"
+        },
+        {
+          "last_retained_key": [
+            -126938358279280,
+            -3505,
+            122209
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-neg-15"
+        },
+        {
+          "last_retained_key": [
+            -125726796702799,
+            -3502,
+            79386
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-pos-00"
+        },
+        {
+          "last_retained_key": [
+            -125822311577824,
+            -3504,
+            255958
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-pos-01"
+        },
+        {
+          "last_retained_key": [
+            -125849746309056,
+            -3505,
+            159778
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-pos-02"
+        },
+        {
+          "last_retained_key": [
+            -125858820423922,
+            -3503,
+            109014
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-pos-03"
+        },
+        {
+          "last_retained_key": [
+            -125626599399493,
+            -3500,
+            258186
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-pos-04"
+        },
+        {
+          "last_retained_key": [
+            -125827915047719,
+            -3502,
+            49670
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-pos-05"
+        },
+        {
+          "last_retained_key": [
+            -125750689001006,
+            -3502,
+            187010
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-pos-06"
+        },
+        {
+          "last_retained_key": [
+            -125696755792006,
+            -3504,
+            125814
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-pos-07"
+        },
+        {
+          "last_retained_key": [
+            -125778937789547,
+            -3503,
+            140450
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-pos-08"
+        },
+        {
+          "last_retained_key": [
+            -125711654341745,
+            -3505,
+            129186
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-pos-09"
+        },
+        {
+          "last_retained_key": [
+            -125818827201286,
+            -3503,
+            168884
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-pos-10"
+        },
+        {
+          "last_retained_key": [
+            -125726443750998,
+            -3503,
+            244514
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-pos-11"
+        },
+        {
+          "last_retained_key": [
+            -125713968969808,
+            -3503,
+            212976
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-pos-12"
+        },
+        {
+          "last_retained_key": [
+            -125761117836655,
+            -3502,
+            115446
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-pos-13"
+        },
+        {
+          "last_retained_key": [
+            -125667698440588,
+            -3506,
+            24064
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-pos-14"
+        },
+        {
+          "last_retained_key": [
+            -125679963384100,
+            -3502,
+            50202
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-03-pos-15"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 3,
+      "family": "a1-fibration-04",
+      "last_selected_primary_key": [
+        -133853372408052,
+        -3504,
+        64754
+      ],
+      "parameter_height_maximum": 262095,
+      "parameter_height_minimum": 65867,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -125948131001820,
+            -3503,
+            123260
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-neg-00"
+        },
+        {
+          "last_retained_key": [
+            -125965180019512,
+            -3501,
+            194540
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-neg-01"
+        },
+        {
+          "last_retained_key": [
+            -125912579620063,
+            -3504,
+            232360
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-neg-02"
+        },
+        {
+          "last_retained_key": [
+            -126026702343805,
+            -3503,
+            73108
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-neg-03"
+        },
+        {
+          "last_retained_key": [
+            -125932349021166,
+            -3505,
+            149546
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-neg-04"
+        },
+        {
+          "last_retained_key": [
+            -125983270833841,
+            -3505,
+            51790
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-neg-05"
+        },
+        {
+          "last_retained_key": [
+            -125968680600455,
+            -3507,
+            558
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-neg-06"
+        },
+        {
+          "last_retained_key": [
+            -125991278695721,
+            -3506,
+            174572
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-neg-07"
+        },
+        {
+          "last_retained_key": [
+            -125926947495066,
+            -3503,
+            175346
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-neg-08"
+        },
+        {
+          "last_retained_key": [
+            -126029433005817,
+            -3504,
+            154666
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-neg-09"
+        },
+        {
+          "last_retained_key": [
+            -126000075368040,
+            -3506,
+            78900
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-neg-10"
+        },
+        {
+          "last_retained_key": [
+            -125942259669909,
+            -3506,
+            87684
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-neg-11"
+        },
+        {
+          "last_retained_key": [
+            -125975156672802,
+            -3505,
+            103552
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-neg-12"
+        },
+        {
+          "last_retained_key": [
+            -125962075139120,
+            -3505,
+            27726
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-neg-13"
+        },
+        {
+          "last_retained_key": [
+            -125893068815008,
+            -3500,
+            122228
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-neg-14"
+        },
+        {
+          "last_retained_key": [
+            -125907210349375,
+            -3500,
+            67718
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-neg-15"
+        },
+        {
+          "last_retained_key": [
+            -127180980312986,
+            -3501,
+            200529
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-pos-00"
+        },
+        {
+          "last_retained_key": [
+            -127142180706944,
+            -3504,
+            32683
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-pos-01"
+        },
+        {
+          "last_retained_key": [
+            -127127529210255,
+            -3504,
+            196939
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-pos-02"
+        },
+        {
+          "last_retained_key": [
+            -127234215719131,
+            -3504,
+            216323
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-pos-03"
+        },
+        {
+          "last_retained_key": [
+            -127222718402815,
+            -3506,
+            45551
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-pos-04"
+        },
+        {
+          "last_retained_key": [
+            -127140434405505,
+            -3502,
+            209639
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-pos-05"
+        },
+        {
+          "last_retained_key": [
+            -127183837284073,
+            -3506,
+            251499
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-pos-06"
+        },
+        {
+          "last_retained_key": [
+            -127184840476470,
+            -3500,
+            173339
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-pos-07"
+        },
+        {
+          "last_retained_key": [
+            -127218448489622,
+            -3505,
+            108679
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-pos-08"
+        },
+        {
+          "last_retained_key": [
+            -127186032126679,
+            -3507,
+            94837
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-pos-09"
+        },
+        {
+          "last_retained_key": [
+            -127112144675072,
+            -3503,
+            117193
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-pos-10"
+        },
+        {
+          "last_retained_key": [
+            -127208548749401,
+            -3504,
+            228055
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-pos-11"
+        },
+        {
+          "last_retained_key": [
+            -127180918669222,
+            -3501,
+            247579
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-pos-12"
+        },
+        {
+          "last_retained_key": [
+            -127190886680990,
+            -3503,
+            93123
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-pos-13"
+        },
+        {
+          "last_retained_key": [
+            -127172894797466,
+            -3506,
+            69583
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-pos-14"
+        },
+        {
+          "last_retained_key": [
+            -127116087768581,
+            -3504,
+            38849
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-04-pos-15"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 3,
+      "family": "a1-fibration-05",
+      "last_selected_primary_key": [
+        -133665198000599,
+        -3502,
+        175937
+      ],
+      "parameter_height_maximum": 262140,
+      "parameter_height_minimum": 65622,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -127026059874312,
+            -3500,
+            260325
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-neg-00"
+        },
+        {
+          "last_retained_key": [
+            -127026714103633,
+            -3506,
+            107145
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-neg-01"
+        },
+        {
+          "last_retained_key": [
+            -127016252706830,
+            -3503,
+            183263
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-neg-02"
+        },
+        {
+          "last_retained_key": [
+            -127091729802119,
+            -3506,
+            65159
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-neg-03"
+        },
+        {
+          "last_retained_key": [
+            -127060664654901,
+            -3504,
+            200513
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-neg-04"
+        },
+        {
+          "last_retained_key": [
+            -126966169855417,
+            -3505,
+            126039
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-neg-05"
+        },
+        {
+          "last_retained_key": [
+            -127034386987050,
+            -3504,
+            107337
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-neg-06"
+        },
+        {
+          "last_retained_key": [
+            -127014902788607,
+            -3503,
+            72593
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-neg-07"
+        },
+        {
+          "last_retained_key": [
+            -127005607305126,
+            -3507,
+            113271
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-neg-08"
+        },
+        {
+          "last_retained_key": [
+            -127026719561367,
+            -3502,
+            130723
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-neg-09"
+        },
+        {
+          "last_retained_key": [
+            -127030990942321,
+            -3502,
+            215039
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-neg-10"
+        },
+        {
+          "last_retained_key": [
+            -127061111993493,
+            -3505,
+            97413
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-neg-11"
+        },
+        {
+          "last_retained_key": [
+            -127072938519561,
+            -3501,
+            226141
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-neg-12"
+        },
+        {
+          "last_retained_key": [
+            -127001487932647,
+            -3506,
+            134891
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-neg-13"
+        },
+        {
+          "last_retained_key": [
+            -127046247777900,
+            -3501,
+            6405
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-neg-14"
+        },
+        {
+          "last_retained_key": [
+            -127021580128590,
+            -3507,
+            114479
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-neg-15"
+        },
+        {
+          "last_retained_key": [
+            -125876753345386,
+            -3503,
+            131158
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-pos-00"
+        },
+        {
+          "last_retained_key": [
+            -125861987352765,
+            -3506,
+            136580
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-pos-01"
+        },
+        {
+          "last_retained_key": [
+            -125913185432106,
+            -3504,
+            73630
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-pos-02"
+        },
+        {
+          "last_retained_key": [
+            -125828921328079,
+            -3505,
+            208312
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-pos-03"
+        },
+        {
+          "last_retained_key": [
+            -125831123876199,
+            -3503,
+            116904
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-pos-04"
+        },
+        {
+          "last_retained_key": [
+            -125823363320310,
+            -3500,
+            134290
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-pos-05"
+        },
+        {
+          "last_retained_key": [
+            -125896568777997,
+            -3506,
+            212962
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-pos-06"
+        },
+        {
+          "last_retained_key": [
+            -125832015125707,
+            -3507,
+            190104
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-pos-07"
+        },
+        {
+          "last_retained_key": [
+            -125779056024355,
+            -3502,
+            188818
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-pos-08"
+        },
+        {
+          "last_retained_key": [
+            -125819478723205,
+            -3504,
+            197268
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-pos-09"
+        },
+        {
+          "last_retained_key": [
+            -125844787553767,
+            -3505,
+            56130
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-pos-10"
+        },
+        {
+          "last_retained_key": [
+            -125832180207593,
+            -3505,
+            121288
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-pos-11"
+        },
+        {
+          "last_retained_key": [
+            -125835651297069,
+            -3504,
+            188908
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-pos-12"
+        },
+        {
+          "last_retained_key": [
+            -125841684030864,
+            -3501,
+            123732
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-pos-13"
+        },
+        {
+          "last_retained_key": [
+            -125819377599489,
+            -3505,
+            29024
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-pos-14"
+        },
+        {
+          "last_retained_key": [
+            -125772249426887,
+            -3503,
+            133472
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "broad-b3-a1-fibration-05-pos-15"
+        }
+      ],
+      "strict_retention_coverage": true
+    }
+  ],
+  "models_checked": 10240,
+  "schema": "elliptic-curves.higher-mw16-model-and-retention-audit.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_five_mw16_atlas_v1.json": "88a8c61c2722394bb812da601e24ea2c19e54361eef4b0fe9c7924e78c828801",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-neg-00/retained.json": "123afb7c021ef5c0283ba2c9d0cfb5d3d40b4529997d06157fc0d4c8a5938224",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-neg-01/retained.json": "28362c322269805c1188ddd1c494445bf4f6e683fdbe3d9e71d2b8be1b725f42",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-neg-02/retained.json": "801d70c6a262b216bcac6e856a8dd1f88aaef1f7647fb583fba1aa5ded36d7e5",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-neg-03/retained.json": "e9359c0ff9517c730c8c9bde54d3cd6b337f090745b2d694a562f8948534b90d",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-neg-04/retained.json": "a68d076d1ef270f4b26378ba95ad97d5a41417d11243bc8355a3be21abd895b2",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-neg-05/retained.json": "f0cd25820ca5186105bd244d3df642e4efd87461ee2c11317c517cd0fdbdff59",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-neg-06/retained.json": "1a660a5c89ce544d4bd8779f93b5ce543593dacf69b0f2f6e8aadf1a3fb4fbe3",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-neg-07/retained.json": "aae0e08f28603e90023d8a058298f5005abf3c465d8e203342555fcc1430f16b",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-neg-08/retained.json": "26f60692f031dd1a27307fb2667657462cb4a57cb937d7f13eb16f273f51f5a7",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-neg-09/retained.json": "5e47cffd519dd131f9012393cb73707dbe26284ba4d59f3d2004fad85d5fb740",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-neg-10/retained.json": "c1d4d8495abdd3984001bb4486e14ad87ff3a3577c6adea44ffe38cb0f17d01f",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-neg-11/retained.json": "30fc08b001a2dd12c88302802b2fc5f61ce14137ced36e2f654573549a444840",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-neg-12/retained.json": "e399ac37cb08e496d4d941c3e09e55d7fc77147d4688f998b1fbcdc9ebe810b6",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-neg-13/retained.json": "432f45bd3bd12f6bcbe6a0139a0dbb1e2a67f6fcc505c48a07ec9618e5351652",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-neg-14/retained.json": "3878b9da67309c6a90760e551e78a8e9950f461af15dddec1a3908692fd504df",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-neg-15/retained.json": "71978f07c71ede9d954de9e463eb99e174b864b3bdc03d904d1cfef56acce5eb",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-pos-00/retained.json": "27dce7f89219359d40e5bb096917258ccb2d512a04223c7ac72694427af5a0c3",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-pos-01/retained.json": "efee4c89369a7a0780ac429043b3de16c398ffe514124d63a6ab1f7204609a67",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-pos-02/retained.json": "f330dc2d88770de7843bb7683bb73b9c0eb159b9f6be99aeb8ed1227eec8a03c",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-pos-03/retained.json": "0d4430cd8d51e461b412a388a95fe319667b0e76e01566d0b9473aac78b3494e",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-pos-04/retained.json": "2a11582549697e0c87bcb0c9998246221d678c9d1f07f5ed0a99738038156da7",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-pos-05/retained.json": "b0a6055a3dd8c0769c527c7946fd98b210c9fea60bba4af4a684896597b3b398",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-pos-06/retained.json": "3c6e15a4da850e58cef309a88eda5c56edb95ec772091a8584defaa539379df6",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-pos-07/retained.json": "0b746a23bfe6fcb5a2ed8a4b56823c12147e4ede73b3c15002d0fdae97a79e9e",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-pos-08/retained.json": "4f04ba5edbf2c4569b65795491ce6a72019ffbc3e1ec4966ccb1292d16cb94ae",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-pos-09/retained.json": "0b7091b870a9f5929aacc4c0b46978e2ee92c8cbb448cad930ccff2fe95f685b",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-pos-10/retained.json": "762258bd9362256cf42359095dd990b4c79ad3e6aabbed976233f993d93ae04f",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-pos-11/retained.json": "4886fcd74a03a1afe56055017affdcc285c2f67b08655cad5d09914341b59325",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-pos-12/retained.json": "f6544792ab81bf6e5778344525b20f552d0aca40a8f80be7510bdf4496061b92",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-pos-13/retained.json": "92fe776ab9cba6b8fc5f10c0901a23a10baa99ccaff9f000f74df9464da4acba",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-pos-14/retained.json": "fac9fc59fa8050ea1d43a7186030ba106eb09f067764bf1c23fe0c92153e0600",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-01-pos-15/retained.json": "ee875ca879cc4a20f42c1a1f90c69750c673e472b8aed0938395e44f197f775a",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-neg-00/retained.json": "6c15aa804091377933512fb89fdc53a029c9721765479046c2f2f4fa4753e870",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-neg-01/retained.json": "35caa3c73bf6f679a6bd8702d4c7cf47f8f23d5197e68667cfe6895fb9cf3c3f",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-neg-02/retained.json": "58df9ba6fdf5ba3c1d40c40e6251f59a5b46942080bab5d64075991efe7896b0",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-neg-03/retained.json": "a7ffb7beaea4215292459cdf4455fe6bb2ab252b3ac9cc4a82b1b942769c5c0e",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-neg-04/retained.json": "4bc9c4b2fa5fdc6f454cd45897a6eab2c00cf70fb567190fcbff1635a664d3a2",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-neg-05/retained.json": "1a68b3cb88d3e5c5c418c22c4f7124433d145773ed47b898966a0d0a2e6ee524",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-neg-06/retained.json": "94a2f00aedbb2f9c971b336499e630186fdcd04272d1f29745d5163b831ed3b5",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-neg-07/retained.json": "8f1e440699e0b0be95876bfbb42d04b34d123d80dbe010d1ac2f57926bf86f65",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-neg-08/retained.json": "e9e042f483911e58ed5985a0dee5fda1f08caefca58f13be24dc6d3e9a03fcbb",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-neg-09/retained.json": "eccb5f431048333c39614af3a73c263b1f7ce66a56540dbe1ac66580ab74cb73",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-neg-10/retained.json": "95621be1f47f80a33079c0ab8606948fcf07aefd64952446dfefe1abc16ed5ee",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-neg-11/retained.json": "57c99f157285ccb67f3118db458af0969d9d240f5c2e3238592fb962a2f57516",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-neg-12/retained.json": "1aa11b77233d631ce08b24302cd083fa729d8c9c7faed44410476db91eaac053",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-neg-13/retained.json": "532e6cd4778ec225b2c03ca8210b5ee901806f4a79deed2bc111a52512a65f89",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-neg-14/retained.json": "c7f450bb513c13f0234cf622bec203bdea47578603fcd4814762f075fcf3e901",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-neg-15/retained.json": "17dd9098a5c8528e90614d6b42ab1899750d9588ab87ee98cca3c6f07b3fcb71",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-pos-00/retained.json": "0d613c30dc8ee79061f919198cebc0f975660747aad3cef631530741bb4ffa24",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-pos-01/retained.json": "87a444cfbf20c6b3e1ef3432ca44afb0eb62b816143b4e2c559fb433fd354b80",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-pos-02/retained.json": "e4e0a133e8b600918192a9d5027bef3fa937cd3ad49ae2e837202c4673a18550",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-pos-03/retained.json": "3fac5cd7ea50ab8b6cb0afcebea8f6a60068e9a1f8beb693bca61b9895157ea4",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-pos-04/retained.json": "9eafe399434dbec50fc056774d2b5e2c3e047ed9d55d9b2b9601c1a5d6d4d676",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-pos-05/retained.json": "c8779d49223a2989722465e03614de5a54ca11b73f21272488d66e672cabb8b6",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-pos-06/retained.json": "6bff1e0415431b58dd16c60511334d724d24241078182c63534ca15c3efefaaf",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-pos-07/retained.json": "caed0c31febc11c6f99739da30a8cf2c83ad08f1089cb6b4d9d6d1503961509c",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-pos-08/retained.json": "9cf0281d665447e641a4332f5bb71585e7649d518056550ee9a73f3a246283fc",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-pos-09/retained.json": "efb1c75bbb6909e5fdebcada4a8b5dfa34a6d565e59e17f2153046b22f4d686e",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-pos-10/retained.json": "a4f9d8af94f8858848e8d8d70c1fd240b0426a3d91cd7523ef8bb39d842b7567",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-pos-11/retained.json": "7d3f516b53399ad66b75ff04975444e79e7d1c3819d23711fbcb7fb17e653299",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-pos-12/retained.json": "592a8b22221c6f4d7618f33d78836353c6ff6736fd4c96915c60cfc23d1697b7",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-pos-13/retained.json": "aa2d8ac36ffc3b9e45581b0d30d4291e56d007f379c09068784603d206ad3dc1",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-pos-14/retained.json": "5d41d0b059a33289d4b3e38e70dcd201d36a29a948aee5d9d8d955695dc82a10",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-02-pos-15/retained.json": "eb3f4447a88f8783df4b62892eb0f4f37beee5ad82a832fa280b5bf0cbf8063e",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-neg-00/retained.json": "3f79e18bdbe9c68b92a78d72cddcd40d8ffa97b5e35ffdeb6f040b2aa431e35f",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-neg-01/retained.json": "74862837a990a8fd18dd3c3e0fd5325024caa26c01386ac443c6a330a868ed6f",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-neg-02/retained.json": "72bcd5f95cd4863126f760792422236ec1a2b57849ace21436ce80a495539983",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-neg-03/retained.json": "6daeb55a37ed1a2083a4b15237afcf4506168f6e69d0f2be11d685a132bba006",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-neg-04/retained.json": "ada26f04f1dffa3c5fc61d88468b290a23841d3a847f0c32a25bf1440e43ded4",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-neg-05/retained.json": "959bef3b9f075bb167d2df23ec5c46ddd1718df42ebaee3bbc81fadc7ecc5fb2",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-neg-06/retained.json": "9b2feccc33851bffacc7db0f2e4e5c94b23b29d6848abf83f71e6792c2dc2f7e",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-neg-07/retained.json": "8f09a4a5483f9b0755634d31255df1a02cc36543a0425e8635a4a0a22a1538a8",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-neg-08/retained.json": "d50a9d98d72b3e65abbec9853adea8d42543a995257629bf5a14fb58f7e83f6f",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-neg-09/retained.json": "7e1d54b23bf749935233649c716046a7a7a3e76df74603b1e61d74c168cd8b87",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-neg-10/retained.json": "ce142495ffa37067a25b43d4ed2f2474364ebafcb40ab1bc101fa431127d622f",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-neg-11/retained.json": "bf72d1f3186414002c589a086c113b8864b10b9aa383127bc0bf4dfb4f1392a8",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-neg-12/retained.json": "3bfa255c78a7efca36c2aa57174f54b9a9f9d9db6f0e84f398f53fb620ce56b4",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-neg-13/retained.json": "d029cccad64d428eba53d189289f198702f7c5958d3e8798bd2c2412a88a1a8d",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-neg-14/retained.json": "9dbb21eda5d7b6c3a88c8b44fe3ad1e3898616e7fb464d91a836cb581af5212d",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-neg-15/retained.json": "e0899753cb81ad777552f10a89346e739acd80cd93eb9551a025123046d41408",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-pos-00/retained.json": "2debd537522afc915cfb47ea0e5a4aa8c1f412916accec8ee0f1f90e815717ef",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-pos-01/retained.json": "23f5a42add8988d7503dca4d739363f9ea0717c4d65b3b9b4f2618cdafca47dd",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-pos-02/retained.json": "dcc284d72cb4d4ea94796a6c1c3e3738c3c0a32f6e6da787fc230c3ca52022d5",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-pos-03/retained.json": "378f449443bd31cefe67a287a992d7e9e983c59ad79c4323f8f3ef241a60a9f0",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-pos-04/retained.json": "8d05c75637245022de28c027e6036abd950fada6f4fd184e6669fcb5b8c042b8",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-pos-05/retained.json": "87cff79a1169d72d4d3b22f3917fcb2840bfbbebf5469d7423901e86bafdb5c0",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-pos-06/retained.json": "da419e542de6271c369586d0c6f4cfae55602ea25b71bf076416563c0eac95f5",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-pos-07/retained.json": "599c87b0f5c8e2f4f6219d51b99f4ffa8fe6f3ceca0ffbfbd5c636c485616482",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-pos-08/retained.json": "d5ce4309034daeea99d7d30a06dca1a15bba28c135f485618e646285de1c57be",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-pos-09/retained.json": "0ec7d74dd1eee9f2222c05eade2bf496af85d2f2661ebc3bddb440c614a277d0",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-pos-10/retained.json": "c0803f36eb8b494d86fffa2b7605e944e033ef97826d63de86397aecd3637587",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-pos-11/retained.json": "75ef19cef30a6bd8c8f0a793dcbce506419b605acd461ab61d8705af3aec58cf",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-pos-12/retained.json": "d0a0d3fa17744bd10103629641ee1c72ebd1cf0da6627faeef0cff997c69381d",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-pos-13/retained.json": "fbe7d7753bad4f112bfc4f03b04a52c64551491b00d9ef617b74e0a8a26077f4",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-pos-14/retained.json": "563d7200484c644edcd9265d100a9c1cd782315c3cd00cdcb460c694fe5e2825",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-03-pos-15/retained.json": "16a95e34bc18bfc59c6cfb7df616543461fbd5fe60a295fcc6c57a280ded4a65",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-neg-00/retained.json": "69244b9bb33dabba58f10678a4fc32cde37cd2558259b28b4eff9d270b3a9616",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-neg-01/retained.json": "f15ef727d4933ac57b3ca9ed4604d6c8236f1f3d0fd090c2557178967ff6f5ee",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-neg-02/retained.json": "f948a439707a75205a4f384a1143ed263b7ef5412d68e70ed669381310f7e605",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-neg-03/retained.json": "511072408584024190261340dbf3f1910b7614439c784e65971637065687de01",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-neg-04/retained.json": "628bbe7d07f566639a2c7346660bb9f713546362784c53a4768ac5aaef24c143",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-neg-05/retained.json": "ccfbfd48d1ad0792cebbfc329f2ddf55c6986f9a875668f5e0275a7092cb479e",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-neg-06/retained.json": "5bec6446b4d85a73f8fa6d4d7463d1234a4adde9cef50d17d1febc1bd27ec910",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-neg-07/retained.json": "cf35a94e8a1e7f33eead4f8d3f39a450340e91b6385c7bcf5787bd51f6043af5",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-neg-08/retained.json": "78633996edac994d3730274df36feae66d0112dc1e7b09a5bd7a6711c14845b3",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-neg-09/retained.json": "d7593e344bca7a1f51b1a3f2da06421eec7fe7f40746f44e3bebd861d7c2999b",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-neg-10/retained.json": "ec4dac651313efea3f00e3b1001d41dae6f789f781df7c4ec52d7968617ccd81",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-neg-11/retained.json": "6d44d20b4d569ac170736f1e0943e915e70bed40d66e5c7878b5b8535b6010fb",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-neg-12/retained.json": "724ba17046c630c4374f98764f9c4063ba81e9c3eab36292cfc5dff3994efc0e",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-neg-13/retained.json": "f485975bf49571559bcef1313914897130e89daa22321888b4254be29a4ff6b3",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-neg-14/retained.json": "b490ace8275323cb6aa8d833daded16e9f71dbc28d2538d57f75388ed2f0061b",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-neg-15/retained.json": "156204ea87bd363f600df4bfdba19f9c0e0f73ba35ca0907d26b63b38644cff9",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-pos-00/retained.json": "ef7a130162e50e6582c386d58215fa7a514ea2f2bb53da6e13429af5c78592c5",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-pos-01/retained.json": "1bb8a9019066192810bfb6235ecaf114f6029598424db469f46bb98530648404",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-pos-02/retained.json": "9ad43d3ed113ed9346dc5a62f52d6797343304d7a0ae55a3e88114d0a668ce6f",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-pos-03/retained.json": "f97f947606eb0083681533592ba25d9cda6d587edb2be9487b187e6dfed088b8",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-pos-04/retained.json": "985248596ed227c877a3ea9c5adde23ec74ef982e5528412f8826cd9ba125052",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-pos-05/retained.json": "104bf1e629feea75c8a2f3fe23e2d1e30bce2c48628813fe9373c5cf9a3027f6",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-pos-06/retained.json": "158b0dca77e468b48efd646e9db5742836465c56ca7b7e2dc13b877955dd059d",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-pos-07/retained.json": "8868145da40ddc7c8225ea4e68400b37a401c648786639cc9da919bf280868eb",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-pos-08/retained.json": "8efc9e5b8b7c4f4e2b39382851a79e4f10979830e0297b6c377a13f3195f8eaf",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-pos-09/retained.json": "94898b2dccdad378182d7e630a53f7bca425fc578fa655f9f20fc45e9836da1b",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-pos-10/retained.json": "c79fb62c2c9eb58a232c9cfd295ef0cfa1956616f4e0e68fdeed3fc299d783e3",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-pos-11/retained.json": "5a8501953ee5fe4226dd47398e611443c3dacdbb9991f4fa422122f27dffdaf0",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-pos-12/retained.json": "5613b70accfba7607080f552c1dcf89f61701b33ce68e95872dfe0a9de89834e",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-pos-13/retained.json": "f73f7b22ba2769a149fadb83f0c8504735d8feb3b6ca442b09300731b9b227e0",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-pos-14/retained.json": "00d0f9899d1193a9c48b28a6ed7738f9acd629fa794ec4207163717d13a02eac",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-04-pos-15/retained.json": "b80e4f20487083be8a215731029fb61b531c8044e62e0c2623360f2d2ce4fe0f",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-neg-00/retained.json": "e01e67d2964a4aefaef30ed6ad2b46d7210c09059945cc1baeb7aae0e130354f",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-neg-01/retained.json": "703de8e8facbdef7d0f6102b32cfe88812913efbfe4849b99e163c0dbdfd0e3c",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-neg-02/retained.json": "55e757ffe6ea8a94c6f12d9582821da400f43d3e0b815bb1e540f0204e69b7f9",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-neg-03/retained.json": "1b81797d2fda14bb1f08c6e1e26114dc559a434e806f5f88638adb118fbe17fb",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-neg-04/retained.json": "d8e24d1efa394702cb80f2137422a5f4ac354671df6fd1a3d5b70cc0b7bd036a",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-neg-05/retained.json": "c7058c8dcdeab0a10788b7024a6a3204b753b14e6373aacdbb13269eff640b8a",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-neg-06/retained.json": "1283db522e054789a3861346dbe5e618db70476936ba2944b7f348338510509e",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-neg-07/retained.json": "94454cf5ee30023108f8229eb2d6661b8a8ecbdcd916b9f1201e5631b6db7de0",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-neg-08/retained.json": "c77cc9f19f3753f4441a73516cb7e27044627810b6f7f2cc5c5c14fe67fda80c",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-neg-09/retained.json": "e86cc1d04c21cc7257b849df9e0180eea7f20ed46fe77e2366bd7ac7afe8d1d0",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-neg-10/retained.json": "3cfe2e82ef93701f1b2af23fd9efabe0d75aa1683f94dc12ad2bb095c2066f81",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-neg-11/retained.json": "7e2f1550bfb7b015448085c6b4f3c35fb67869449d2c4c242eb23ef467b7e014",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-neg-12/retained.json": "5045fa5956c8d67d7a293eb7b2db2a5ae3aefcc7cfd0286a6008e0c78994b7dd",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-neg-13/retained.json": "c721b45fd13c7964b5f37a641d9482bb8ab714b95d1723f3651db3c49ee2f11a",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-neg-14/retained.json": "245e6ca8d03168b459d184ade9c7631074cbf9a1d1f7348f9b8f46fde2ba65c1",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-neg-15/retained.json": "a774a9291816bccf984b06b1ad215b3924a2f2133be5b2791cb000a5aed8df4a",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-pos-00/retained.json": "2175549075cbd50c72f4e160be4da504106874601657416602a1aac338f0c1b0",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-pos-01/retained.json": "c0e9c8c8bd75b3550870acb178d94a43ad100a44aff5b1252de9addd2b8d9865",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-pos-02/retained.json": "9c395b7862adc56711be5dafda55c85ac490202af37f09712ae3777df3417f04",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-pos-03/retained.json": "234469b42fb1e26169962871b43010196482fb4e6e715cd5110ef6600c6180d2",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-pos-04/retained.json": "f9d1e6cb3fc90d689ad3bbbd2838ac007b42b3c6795fe817fc5143de677e1a3f",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-pos-05/retained.json": "34f32b6d5714a2044c53b3f5c6c61c2a07830830b4f91f125605abb0a0ca8c2b",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-pos-06/retained.json": "fdbd22fcdbb2246a267371740399696e08359d83656a9413730b1646aa134a4f",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-pos-07/retained.json": "f390ab06158981eb5ca71bfa90cd4126526be843ce3312054b71521463b15d99",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-pos-08/retained.json": "32cbea6ea0720e5c7ac14eb77578364689cf2324fbe21a2c98fb81a5645c07c2",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-pos-09/retained.json": "b4210d9478312115b6fcba121f965d606da0a2c8369920c790d03e23863ec23f",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-pos-10/retained.json": "074bd68af5b2f322eb99fb0d00192f2a72224c38da7b20c6bebb75e5cc693de5",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-pos-11/retained.json": "bf9c811504f69aac64c9dd53aee6b1c5987f333495d8b87c8932057ea1f17138",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-pos-12/retained.json": "e4d0d378470a39eaa1b7f7daece5e9913e7d6d7ba5ff039340e4c4d133fe565e",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-pos-13/retained.json": "20f802b49d444162b7d4568bac137ddbbb5af5a840fdb97e64c38f755c056b72",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-pos-14/retained.json": "975f5af392b5fd67599f0371bb1efae1683382f5d6e25bb0e95900677e920cd3",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b2-a1-fibration-05-pos-15/retained.json": "4c8b49a85ac92ef0c52a3042564ee81f3d09f5d2d0d37052b8178226b9ace10a",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-neg-00/retained.json": "fcf2443c1af5fe175c33eeb749e4cf893b7b9220cca48cae4b809ce9a6c78021",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-neg-01/retained.json": "40c52a49c212abdcbcbb5baffbbc799f028f9f2a7a3603cff2f3a6a4e828d032",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-neg-02/retained.json": "bc18f9b66ddb3c14f61b1bb3b4dd8877c9f72da7dcd94afc70b1a0d000e986a8",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-neg-03/retained.json": "cc6ea0d0693521230de78adc7357c36182b7ce28d42455d1019110242e052b6c",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-neg-04/retained.json": "d89fe48cb99d18d15b0846800fd6a067799258e991bcfe32f452e02a55f83316",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-neg-05/retained.json": "5fb723dc5d7a11c6c37ed33db0aab19606e9b7c6f1815451250b08063c3c6883",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-neg-06/retained.json": "952dad4089b4ad92f4b5a9aa007a5983dde92ae35939365b9cf80e6a8ff551b2",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-neg-07/retained.json": "e2cd01da9369fe8689376ad029f53a60f5699810020a06caa053d841b45c8fd5",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-neg-08/retained.json": "2a2ead5429f4d1783a6909fa4ff903fd78063203c5674d07d7de414a34077699",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-neg-09/retained.json": "56c0e617c790709d9ee6500efe398a69d308b8f4f762993e50ecb872ce45fa16",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-neg-10/retained.json": "6dba51b81221ef98847dc2f325364c315832fc43f9054eccff265b66c7e4e54b",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-neg-11/retained.json": "def82cfa798dfe447ebd828ba826bed020d4b4d04a5f9629a2025d58e3c6cef2",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-neg-12/retained.json": "02407674f42063ffc8052911e48bf6f204bd9d03c32d757fde001fa07859a1a1",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-neg-13/retained.json": "f7a00650c145aaf3bdaf5e932282081c64e76a46ae014b8b59b59d564fc6c4aa",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-neg-14/retained.json": "e4835a89d8425ac2f5d80b95614066dbadda69e3405fcc0dfc30fde1ab954690",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-neg-15/retained.json": "9c3fa57710fe9439ab1ca797c35489f8b4a5d2def269cd2a4a3cbc93d0f7079f",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-pos-00/retained.json": "dc0f107d8eabed679074ab0517b85cba1798a0a8afdf97370e2fe19bf5817ec3",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-pos-01/retained.json": "a9d00ecce1e8a59cfb09da1c9f54b9df52d6dd3a537c95d428b8295f75625467",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-pos-02/retained.json": "5ed4d03e4a7334dd886c18837b360b52187fb5fb874ff9448323f01a196d39c6",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-pos-03/retained.json": "b30b306342012e780223190d6e59c1b7956d6fca053feba234321daced706027",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-pos-04/retained.json": "6db606671432da424856545c4dc3e4a3014f6ab219a0493e659cae47aacb279a",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-pos-05/retained.json": "14361749af044accf4dce937d93d8706033d59a5cf191fe7091ef8e2535c5cc2",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-pos-06/retained.json": "8abe8485c6e9da63e53494d35e3ab9520b5bfdd411c7ec1bafd3f32a1ab5181b",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-pos-07/retained.json": "73ae00ebd59f684070dbfee0978a1a235d271496b1935ce7cb2c6da77f7ef362",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-pos-08/retained.json": "035db4ec3f851cbdd7c3ab5d02c49a67dcb1256069950e7da049ec6bd2ee073c",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-pos-09/retained.json": "174aea2c02f0f4a4fbaca0f5c84545f701eb6f7f1b5cf23e2631a21ba22bebfa",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-pos-10/retained.json": "c41b2ac690ff21b8c581bde6c4a6843a05254029efc7bd099cf7b54f72b1c301",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-pos-11/retained.json": "cfaf4de69a1b913f66eef606ad266bb617fe8a59868da3bbe3e1f6445acc2c7a",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-pos-12/retained.json": "5f50bf537b9da677f5f16bc1950b5af67ba6a669bac38c6e64532b3ec47ea5f5",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-pos-13/retained.json": "40c14c05eb124c186331c0b5af97a31cc2d9d21be86c7d2f1904dd3c143b3072",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-pos-14/retained.json": "05aae4af713b45878b1597c2f11af832f2db705e4c6230e24a8d8bc521bb6002",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-01-pos-15/retained.json": "cc020c9dc1a30b3b71ffdf6e76ada8868cfb20f5e4428f56928ad77505761c44",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-neg-00/retained.json": "9d143dedcd57b9d8fab0450b65a299c6aac903765ca0e5b45d6581db6d2cc69d",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-neg-01/retained.json": "40c4519e07b26a100371ef809953f4de625b03ca0e90cde084a4dbf9c14f7059",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-neg-02/retained.json": "038abf7f4280c49d1d620ad2e532d1ccb1ea4f2cd4e0f53625f4fcf1b2497dd3",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-neg-03/retained.json": "dbfdbee09f910be65bcc6443801ffecb13f3984fcb758dae89c0f1b8968246c8",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-neg-04/retained.json": "61ac895f7d3c1343f75a5ad7bc37b3b5c2d6b46384982f1d1b27bf3d5d4dd507",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-neg-05/retained.json": "e0511f8d904c166bb2165ddf61f4e09935ec85c21ab9ed20e8d03cc9cc3f0f6e",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-neg-06/retained.json": "1b82676c29002deb0da4edeb30a90bf8d908e0da664c37e4aa05dd05ea8c6efc",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-neg-07/retained.json": "7d5e5906d99108081d0d02c1290e43add8f4d85df4d74ed647c04d08f0e99744",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-neg-08/retained.json": "c941ebc8c21bff881b40f5f411d17dad21af48fcd94c97a986cf303460f6c136",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-neg-09/retained.json": "f4dba7e6b8b3b8a6a380d95eaa0a0c13eaa42481b10a5df4d87672e0b89e369b",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-neg-10/retained.json": "1cacba1b405984417643943e34782104c9085580ded3efa7ed3f020bf909a9c8",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-neg-11/retained.json": "374a0f679066781995f0b6efa9b23c87dc29e1f7474b05058db27f15db09d93d",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-neg-12/retained.json": "6fef110527b02178a67acd6166c1faece65ec4d1d8a34fd47bd62406a53a2fe5",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-neg-13/retained.json": "8d911fead61db84b4f9b701edd0c517163418ba4e736c0cc994f8bd7da4976f5",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-neg-14/retained.json": "57952df36a22ddf690a19832bafd47229a33e1ba518fa70d21f24cd4147e92ac",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-neg-15/retained.json": "83bc91752a6cc34cafdcb115676c3e96d5fe90b4f47320eab9ed3861568c5b2d",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-pos-00/retained.json": "c6c9d8ade53f0fc45a79bf7319542dc12fb1469da93b3e15c47ee9a37dbe7cbc",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-pos-01/retained.json": "01aefe351c68b9d571cfd0e8323184683b08a0de9a1d4f381bf383256dcd1e36",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-pos-02/retained.json": "59d1249ac990d5b3b522e1381e09979b036c98e8da8c4efa1ce124b8024d3494",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-pos-03/retained.json": "176a91c37803f56b29c3c3c3bd37ec796d931cb6583f1ad77958c598cca3a5ae",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-pos-04/retained.json": "a5dd1f9bb481ed97d050c5ea218a1ce047b5f456ecf989f8063f9d331b39e004",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-pos-05/retained.json": "e3bf81f17b6cbb78260b616f88630b1aec3ea0be73c0155cc638a31e4e08589d",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-pos-06/retained.json": "95036a1ce87376effac49ea3b333be56da59814ba99ee3ec3a1d149cf1168e76",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-pos-07/retained.json": "924c37ea9ffcd42f704bef2fbdf41cc9845368b88ef88c53eb952595996b8c6a",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-pos-08/retained.json": "5075c53d87e6a4d665af13701e2cbe3b2809afd8c30a1e570c48453151a4ef0f",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-pos-09/retained.json": "fddeba85e27c721ca3d1b1acaefe5b782d5a8f4edbd7351b505e6f5a0e820e61",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-pos-10/retained.json": "06f5d6fda17d7a0307a34087a90f427b51ef3946d2efcae8ebfe6a2838b6f692",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-pos-11/retained.json": "3d22b5ff85f58158b9138d7e6482f846c6c38a9836b7563ad60b87d8d95d9ce7",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-pos-12/retained.json": "841ddb703cfa5808d7a142f4ee1fb4367abf10c7a5c3c129e1d94b134f962d34",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-pos-13/retained.json": "2d710f2a0c36fdf39855dca43c10e14f1b18a2489a49b147c8078ab6ac413b9a",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-pos-14/retained.json": "7cc7959672d26ad5f024dd30ad9717e3b3142fc370d266518ffdeeabc5b33f8e",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-02-pos-15/retained.json": "1869f8e815d5342c64eeac46810a429316ff1d6f137765869a22e23345b3abe4",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-neg-00/retained.json": "324208fdb1939aa0c47585c42a79f2a67ad6dff6f31a4e99fbdc26979a8c29c2",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-neg-01/retained.json": "8aa715ee373bb8cd0eb708cfd2dbff4387dbf218833bc24fb1c9c1c5f19f6af7",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-neg-02/retained.json": "cfec7f299c41f594db681a16bec436a524d8b0bc19d57ba3bdcfee20723edf42",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-neg-03/retained.json": "9d26e49ff17dcb80fd6d00ee2f7eb3e2613747a2cf815b50f68c146cbaf81ba2",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-neg-04/retained.json": "06c2d1ba5634210a9fc079857c61134bbbd5ab9b6913fe04b42bf935610fcbf5",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-neg-05/retained.json": "e79f3a97eca38e5ffd7edfea9a8a000a5d7b16c1c40e2cbf2254fd9f4c2a7078",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-neg-06/retained.json": "c37b05263cb779dbad000edde90a7f65721f68029dd23356a1b040c83ca2ce35",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-neg-07/retained.json": "7892c708969d1bdb41e11618c4495c7d82b75497716ca2c3d27759a87a6bdb79",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-neg-08/retained.json": "9513008f7cd82e2cc71fa27bdca2111eb5125cd87b5668c9cce0e0f3cae095fc",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-neg-09/retained.json": "7b5675128a199f21bd79ac17f43ee222aaab2c28479b9243c010c7852e0c3a75",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-neg-10/retained.json": "d55ab42c9da99713129d491e40a37337956b7032c48e7e674a8c86444417d377",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-neg-11/retained.json": "0fb79299fce4773a148ee3f1cd3836dcac38afca9f9dd0464300b2f45f7f9dff",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-neg-12/retained.json": "2028f632e0f643efa674e77d3b07ecc68d1bad89e9e9e622feee63421c91979d",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-neg-13/retained.json": "d1f3f35f69cc3440be5281eb5d9effe4989c172432db8b8c1d64eca2a3bd8879",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-neg-14/retained.json": "076a5124372698ddeee86112481b336ec9e67df95ff21437c16ebcf7ca6f258f",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-neg-15/retained.json": "782152cdb7e7cc0e139d834eecc755b993de1e866a03f3d27e2a3070b08090d3",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-pos-00/retained.json": "b3586afd14c28631c46a99b99963884290f1b881f81591fdb7f3028834e25502",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-pos-01/retained.json": "e6089a67c44948ea204f4fb0aa62316e0def660afb0791c0a7b2120a4bf33e04",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-pos-02/retained.json": "6023dc53cc7fcf0e1f474378c9e851906cbdfc68cdfabccbcb38883965b7f904",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-pos-03/retained.json": "e056daed45204533e1d57392527ea2f5938cb44b385c4d4bf87b5509c207ee72",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-pos-04/retained.json": "3ae2785dc441b3f246f91210326ba4d136423e5a464e53859e0f2d3aabf31008",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-pos-05/retained.json": "3bb4d3098ef976b8e22f9f2d3f041bf97e4a76db894cf63a820f34ab5e887331",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-pos-06/retained.json": "ec79b13eb1cfc6d89b798989b7ae69a71dddb935bc8946ea64ca162171f9b7cf",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-pos-07/retained.json": "32823c0339cee0a242160af8af64f3dde13a4716cb23ea121e2f2ca4d2072f8c",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-pos-08/retained.json": "502ed4f75c026e4e816fb13b58dccaf848c3eeacf0148d4aff065e402b554cb4",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-pos-09/retained.json": "62450010359dc769f41e676fd007a1ab345be708408e38d2b2f873937feb9e64",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-pos-10/retained.json": "eec044f5e99e5465e8a35601329b29717e0de1f88b046f6a750f1faa00c1c077",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-pos-11/retained.json": "c970add4305d0728bd8db5360d86a5d2aeab87f7c524378c61d8f871dbd6e248",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-pos-12/retained.json": "b929a6aa2d6fc1b46e4a8dff718724d9146aa0193bd09e7a576a78a67661c3dd",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-pos-13/retained.json": "ac92ad3fc4fc881104eba4dec6ffee309a679c2afbf8e137a7cedf84464a4b0d",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-pos-14/retained.json": "70a96e3ba7be2826f314ccbb16e5834197cfee78361a90073ff7e69b7d5a7d13",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-03-pos-15/retained.json": "6a6bf53c554f01ef676d5a5839ee362cd6030e2ac7cc93f212ac305960a3183f",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-neg-00/retained.json": "f9a2e87b35217dadaa9756fafbb7ab6443ec3d2de02d6dd167dadfd8da548ed8",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-neg-01/retained.json": "1610c0ab0b9efdaeb9d005707d5a0a6d173651ca063f51a6fcb615f323e80d2d",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-neg-02/retained.json": "ce727a526da68e32c231b89b2edefed054573e045560787934ad117c209f8974",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-neg-03/retained.json": "453d4038b563a0de300b0839c94f11ee14e77e66b52761ddbf87ab5967348709",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-neg-04/retained.json": "8117fb313ec8a5bedfa4e7d4861982bca92b904bd21752c0260069f51ada1384",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-neg-05/retained.json": "5be4878ca450a4a6e749954309c5a9c0155f446d104adc57922f6fedb5a77d91",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-neg-06/retained.json": "d6d01335e568fd1c16118487295d81abeceea9222274bf655c059998e5f51de7",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-neg-07/retained.json": "5d541d7f1b3649f391f93e7e5e3ee6a255723f9389ccfb111335429b4b27f5b6",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-neg-08/retained.json": "0f3e2efcbe844425b32bdc4d6451abe00df82f2115740238956b170693110f93",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-neg-09/retained.json": "6ec4a53527587b052ad701dfd3f42df572561802d656d1f176aecce98aaee489",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-neg-10/retained.json": "4114ef28a064a6c52fac7f0f7607e08cf95bc6dcdbdcc4565635c0718e61fc28",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-neg-11/retained.json": "3dda3e54c6065365ad7d2c28c912fca5252817b215e80867e8953d1680c139b8",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-neg-12/retained.json": "26d20fc07c98c822809f5d0fbf67c41ad275f3d5682a9c9cd2f7e9fdc1a7d2aa",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-neg-13/retained.json": "d5dfeac6302813f9d78339a60a24f632f64703d02690329e60cfb9780dec0f6c",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-neg-14/retained.json": "0ad67e0e0cf8bda6e4140677fd04fbeeec6db99ff1df903af223c5f7873a2b56",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-neg-15/retained.json": "e5f9fc3313a4a2f82d2fd5c9a1c06ae3a85041a946b9ba1d70f33bfc1cd76334",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-pos-00/retained.json": "d57f2df41b855bff44e3d654796f66e1b3e67dffd7fc8f1d387ec0e6a2278e92",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-pos-01/retained.json": "1dfe0abee2a08635e0846cce8fd307ceaa2e328e287908ac79617cf5c83d5e5e",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-pos-02/retained.json": "21f11f237a744acdfc6d745e3220140bf147f755ef0e5d7b5f71c936978e9d81",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-pos-03/retained.json": "2cdbce48c33227fb3b87990ed8e948e35266ec877d54da85efeb0b00cea6b918",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-pos-04/retained.json": "a21c0d71050fbfb76666b14fc6abff32d65cc8a46668203eaa3d64b1db9f97e7",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-pos-05/retained.json": "4094cbb3c7ac84fa9296f9e059506bc566fa18ce7913daff91a4dcdada9a8a61",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-pos-06/retained.json": "c6fe129d4863ac86aeb6d224a3edca5f3c783c321f6867a353a40c1be023f143",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-pos-07/retained.json": "f66102da3a8b1605d98c3dc1f4a72a6a2399822e45fda9bfb85c500173385a8e",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-pos-08/retained.json": "866345b43e26a0a27402b5a62086279f99dcd4b9205c54d2c1872c54c14db103",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-pos-09/retained.json": "96a2dd83cc1984b278e07bcec051b885c062547b692d6bc46a5d68215aa29238",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-pos-10/retained.json": "c9308165b90127eb2f5c646f1b7fba59ace0254f9091537e4736106dc3e538f4",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-pos-11/retained.json": "5262bba0eed4a83b19d9f75a1c5002093ddbcc6335fb5b931bb96688c48f8f8e",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-pos-12/retained.json": "b3d6526d8e4d9989c23d351664ea952c4d3a218e36a196abc30d274231794cdd",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-pos-13/retained.json": "0423c307fd9ae5934d99713564eaf56eb680e0398628035b4ea65ef1abd2187e",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-pos-14/retained.json": "b2c216bed68d55eaf16d714e3c7e426f0d8c444db9f8adb88afd1eee69912e5d",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-04-pos-15/retained.json": "4b718706a07bd7af79e29b2f61856efcae5c85507e452afeb1bac1a62b1549c6",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-neg-00/retained.json": "47454c8df4fb4ab67d822de82c5a9185f6b3a85128107b923a3de29a34996e74",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-neg-01/retained.json": "bf66c29f2e702cf18250e818d8444505504c94d41afdf21a3e87e6bd79ddf303",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-neg-02/retained.json": "a7d46a65fff653d094871a28471a65e741c62ebd01ee5805b88d5a15f064f44a",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-neg-03/retained.json": "baad8b28ae91ddd26656e65f729a9eee823334ee4a6e8de400e0fcccc9bf4280",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-neg-04/retained.json": "c84a532769e7086ab255b1004cde0dc47727a06c9b1a59cd7abcebf6541b6fbc",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-neg-05/retained.json": "e3c94cf745356063976d6996be17cd6739de701100a52f907b7a7b890f3ede16",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-neg-06/retained.json": "40c0d8a47538fa1f96274919fbcc3ec40f9d5773d3edbfccf84562573c608878",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-neg-07/retained.json": "7a628dc9c3843b71df6b5a0d8baae4ac613811c8f1bc06300393b0601c25f0b2",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-neg-08/retained.json": "26c59df744cb4b126efdb16c6bd53a349f921c433efc0781dc7cdc83c8a0798a",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-neg-09/retained.json": "1037cfc5ebadc725ed9d316aad4245afa88d65556d13d8e6f614022461dbfc17",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-neg-10/retained.json": "056c2860f9ddcfc23df705108ff1758e87aa32bd3425324123e3bcac4358039d",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-neg-11/retained.json": "2fc836b8d4cbbcc9e14d1a9609e6f40d104d9780f367aec064c0efe511e711a5",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-neg-12/retained.json": "eb3862b3299fb987edb17a0833477d1899f4285f6b781d79e3dc242357620649",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-neg-13/retained.json": "235f119401a6a878ddd2a5facfabdbfe5188e4cb2f78353da0fa7cfe35acac73",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-neg-14/retained.json": "72c477a8a06c3eb269b6ad8a99e9c86d18119eb148b3c206df2ae1fdc15bfd63",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-neg-15/retained.json": "14bd1b2692ec4c6aa634b825e9cc06ad4a441af3747f219db80641eb21b1ad5c",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-pos-00/retained.json": "3547dd1c65739c46b124df5a9bbcdd5b589bdbe2cc3b5a99bea1092c54d36baf",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-pos-01/retained.json": "c2afce698397e72738bf54e8533a02554ff3c6f9437f5d44840dd0beb11e2239",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-pos-02/retained.json": "4124aba95573f62b2da20e309ad024dfbf38d5b73c498338f658c5f1b0848207",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-pos-03/retained.json": "f1c3ef8e91d68739723e7e9f8d8fe32beac5b70086efac4f7f25e2c162626199",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-pos-04/retained.json": "21f4d9299934a9b4ee2bb5d4e6a54cb5dbf5c3bdc7a26eb458dcf3416b6fc51d",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-pos-05/retained.json": "ff26f6c8562277b464f57774fea79d5f814f7b12c7361a2fec09ad9e5058840d",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-pos-06/retained.json": "d13055af659f5c1829ed30d83feaf92807600cb11f92e3c5c59900eb8f38f509",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-pos-07/retained.json": "6680f366c2989fce786cbf14a02bdc5bb7d9ef8ecbff97ad6d5836cdb4e29565",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-pos-08/retained.json": "5a5a59b0075c7d6b54c7030da6027e90f7da9203ef324213805ea46fc4ebfc9d",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-pos-09/retained.json": "08b58d240e0c1e5325fa9927e315a51e60c8d0435204c4f68f20ca4ae5e68d42",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-pos-10/retained.json": "f7a3f681c255780d1793b3431aca22a9167976865c0488f233ed7bace983dec7",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-pos-11/retained.json": "8d41d5aaeefe015f3efa36f7b152d54d2a61b4b67c512dd3e394675a7d175917",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-pos-12/retained.json": "41150f70edabbc0d7f1bbf48ca0664090b08d68bf6c72106632b950c0b89f55c",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-pos-13/retained.json": "5e312e030380ea399e75f090e1d44579733417f8449d9b2c5309df8ff16a137f",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-pos-14/retained.json": "b2d1a786a52ae662c5b478b98d6ae1a5b23a1ac307605476a8f7fd9d1873912d",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/broad-b3-a1-fibration-05-pos-15/retained.json": "e8888e7f82255d2966febbdc68500c5bb43b0e2246fd44ffb54886d6079142e5",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/controller/ledger.json": "757075c46ba288669f9e8cadbf4d60061c34edcdc29c7bed294c3cb15cc18f93",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/protocol.json": "e32773ca146450a5635fb66b5c61e8caf6a2f4bc8e062ca61373626bd6477d9d",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/replay.json": "30056dc8dde02c8ac8bfac0cf828a17a685dea2e71f1a8f33dbbeaa970c8e693",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/result.json": "d9390ae7700b6cd238ded2fb7d97edf3c1a4f211ca0580642d6ca0e6a1c42367",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-scores-v1/protocol.json": "9579db1820a6dd568cfff280166cf00bd13a73b9d39ce271abd8b9ae6c522627",
+    "elliptic-curves/cas/audit_higher_mw16_score_coverage.py": "6e739bdb9ac9c25fefbc199afbb22b0b98b0251a30b753c174ce750dc9f94dd3",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9"
+  },
+  "status": "PASS",
+  "strict_retention_coverage": true,
+  "variant": "broad"
+}

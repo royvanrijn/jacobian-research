@@ -1,0 +1,37 @@
+{
+  "adaptive_classes_tested": 301,
+  "available_classes_in_initial_subgroup_mod2": 67108864,
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/mw16_rank27_visibility_input_v1.json": "d6a4c3d0c15b2b4bab8e8f89a325088d422b2a54aa908f585f1a1c2a353f058c",
+    "artifacts/generated-results/elliptic-curves/mw16_rank27_visibility_v1.json": "0b3db6014fcdf046eeb00014aad63467ce20b105ca5fe4e9c0368492dc6e25ac",
+    "elliptic-curves/cas/certify_mw16_rank27_translation_classes.py": "824397f04564ce3f01e3fb4bc5bbef15f7a1fe4246d76d65105a53a615b9bdae",
+    "elliptic-curves/cas/study_mw16_rank27_visibility.py": "16cbcb2589d6231cc3719672295afa099ae901f24ddb358fd815d14f89760fa2"
+  },
+  "certified_distinct_translation_classes": 344,
+  "certified_mod2_column_rank": 27,
+  "claim_boundary": "Translation equivalence of pointed involutions, not abstract isomorphism of genus-one curves or insolubility of a 2-cover. All pointed curves already have known endpoints. The successful generic mask was not originally searched, and horizontal maps also differ: this is not a controlled causal ablation of quotient bits alone. No new rank, upper bound, saturation at all primes, or global quotient-coset visibility follows.",
+  "corollary": "Every adaptive centre here is rational-translation inequivalent to every original generic centre. Each fixed generic parity has 1024 distinct lifts in the rank26 subgroup. Only 344 of 67108864 classes in that subgroup were tested by these two rosters.",
+  "generic_classes_tested": 43,
+  "generic_subgroup_rank": 16,
+  "initial_subgroup_rank": 26,
+  "lemma": "For i_C(R)=C-R and tau_T(R)=R+T, tau_T i_C tau_-T = i_(C+2T). Hence i_C and i_D are conjugate by a Q-rational translation iff D-C is in 2E(Q). Independent finite quotient columns inject H/2H into E(Q)/2E(Q), so distinct coefficient parities in this certified H give distinct rational-translation classes. For C in H and P outside H tensor Q, the two points P and C-P give opposite nonzero classes modulo H tensor Q and have the same pointed-map coordinate.",
+  "lifts_per_generic_parity": 1024,
+  "model": [
+    "0",
+    "0",
+    "0",
+    "-4229226248998434731759210602087842304406760748297441/48",
+    "275191172429167580141925910212827645257429648870004209547284968477929860207825/864"
+  ],
+  "schema": "elliptic-curves.mw16-rank27-translation-classes.v1",
+  "status": "PASS",
+  "winning_generic_mask": 585,
+  "winning_generic_mask_was_in_original_roster": false,
+  "winning_parity": 44040777,
+  "winning_quotient_support_one_based": [
+    6,
+    8,
+    10
+  ],
+  "winning_quotient_word": 672
+}

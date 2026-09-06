@@ -1,0 +1,1443 @@
+{
+  "files": [
+    {
+      "bytes": 2860,
+      "path": "artifacts/generated-results/elliptic-curves/small_conductor_class_rank_target_v1.json",
+      "sha256": "b257de1af979869b5e18f4ce5ed43c7b7e97531aca3b8ed06c2d56ed119144a4"
+    },
+    {
+      "bytes": 5025,
+      "path": "artifacts/generated-results/elliptic-curves/small_conductor_descent_shortcut_v1.json",
+      "sha256": "a699d1b54815149d83385639eab542c489b29ffa96749f1568735cea942f74a3"
+    },
+    {
+      "bytes": 10653235,
+      "path": "artifacts/generated-results/elliptic-curves/small_conductor_norm_batch_relations_v1.json",
+      "sha256": "a1fcd9cfa3c06355f771ac8e9c2b4dfa6309f40a3db7a5def33e495df4c2f40e"
+    },
+    {
+      "bytes": 179912,
+      "path": "artifacts/generated-results/elliptic-curves/small_conductor_norm_batch_v1.json",
+      "sha256": "b3ed673a0d608f46d00bba72cbbd7662f864889868744fa4f581dd32b77636ca"
+    },
+    {
+      "bytes": 71134,
+      "path": "artifacts/generated-results/elliptic-curves/small_conductor_norm_relations_v1.json",
+      "sha256": "a5c3e6f473ff2865fab76caabb3f411277da9a20e32fd99e56bdea03e0793ca5"
+    },
+    {
+      "bytes": 2160,
+      "path": "artifacts/generated-results/elliptic-curves/small_conductor_norm_smoothness_pilot_v1.json",
+      "sha256": "df3136edede45e01e95f59c672200df6bb70aabae01c887fb6d088ea99279ba8"
+    },
+    {
+      "bytes": 212183,
+      "path": "artifacts/generated-results/elliptic-curves/small_conductor_rank22_proof_v1.json",
+      "sha256": "36552cd46a2a0f4bdf46667674a95c5211ddde083e4045817129dcdb5c3001e2"
+    },
+    {
+      "bytes": 3953,
+      "path": "artifacts/generated-results/elliptic-curves/small_conductor_reduced_norm_form_v1.json",
+      "sha256": "8dab54430620b0e3e3c55ce3c6cf93c1346cdd7e79b1879091fe3c4dec0e63f2"
+    },
+    {
+      "bytes": 3419,
+      "path": "artifacts/generated-results/elliptic-curves/small_conductor_selmer_rank_target_v1.json",
+      "sha256": "2c43db66b84221b3b80acb0584d23dcf13cff9db3e84665dfe0c82069ff61055"
+    },
+    {
+      "bytes": 534759,
+      "path": "artifacts/generated-results/elliptic-curves/small_conductor_special_prime_relations_v1.json",
+      "sha256": "d9349f6e6ccb4fbc857d2f841664b4a9ea9e408272c2738603822336775eae45"
+    },
+    {
+      "bytes": 395798,
+      "path": "artifacts/generated-results/elliptic-curves/small_conductor_special_primes_v1.json",
+      "sha256": "8015f298b0fecbfdd77711d717b6d55244f11935ea77bdc1fca4221ec8909df7"
+    },
+    {
+      "bytes": 1655178,
+      "path": "artifacts/local/elliptic-curves/next12-current-catalogue-v1/database.json",
+      "sha256": "1ec915b1d108f906791f5361f8150d328ce96e5f41d95d9e78d9a354e175e53a"
+    },
+    {
+      "bytes": 185,
+      "path": "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/basis_export.gp",
+      "sha256": "3eb0198ffd64d17ae2e186d39fcc1699527e00f9d64aaafbb358b4810a6c4995"
+    },
+    {
+      "bytes": 202,
+      "path": "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/basis_export.json",
+      "sha256": "f440d4328a666436d0d46e7fcbd61ec6735180f33577f411bb43bb18d07dc6ef"
+    },
+    {
+      "bytes": 146,
+      "path": "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/basis_export.stdout",
+      "sha256": "3d86e8d13004e969b98ab426c2f0cb71df2591cf75b68b717ed3231b7a4a18fc"
+    },
+    {
+      "bytes": 625,
+      "path": "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/cold_rankinit.gp",
+      "sha256": "c925911920ff75bda6ad0bd2c7c1bcd9f941bd17ad571ad4f7073d3d2863efc8"
+    },
+    {
+      "bytes": 1508,
+      "path": "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/cold_rankinit.json",
+      "sha256": "0d081122704583c5489e9b3a04eeb24afc46987f548e41235a6107ba5f89459f"
+    },
+    {
+      "bytes": 906194,
+      "path": "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/cold_rankinit.log",
+      "sha256": "d681fcbfe8ef8d61ecb37fadb424cee35b39c4fbc8b61be203bf411604b61075"
+    },
+    {
+      "bytes": 1070,
+      "path": "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/cold_rankinit.supervisor.json",
+      "sha256": "5d54794cd118ac763a3199b929ac23ca3fe6c82e46dd0c54c39a914dba0db791"
+    },
+    {
+      "bytes": 1094,
+      "path": "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/field.gp",
+      "sha256": "16b2639fbcf4d983c343db8306b95845b7dfe74e8eeb3919716eaa3c74173bf9"
+    },
+    {
+      "bytes": 1457,
+      "path": "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/field.json",
+      "sha256": "cd599c3b0527cba666ef008ea1cb7637c426d2a954ff00dfcd7a03ba63bf57d1"
+    },
+    {
+      "bytes": 901,
+      "path": "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/field.log",
+      "sha256": "feecf5b605d312856a67a0bea2fc4e987766312cfe760c5d0f501f532aceb882"
+    },
+    {
+      "bytes": 1027,
+      "path": "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/field.supervisor.json",
+      "sha256": "a472e408f370f00ef5bb06531cb13118d97dd0f791a7f3a973b9787347be7b50"
+    },
+    {
+      "bytes": 643,
+      "path": "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/hinted_rankinit.gp",
+      "sha256": "404218e6c3473337163286a0455a134f5eb1d0b546d0d071cf96650a3318651a"
+    },
+    {
+      "bytes": 1514,
+      "path": "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/hinted_rankinit.json",
+      "sha256": "c80cd491f1a70321e3994ae6af10dbcd0370c45d494b8a76bd4db5d047d83d78"
+    },
+    {
+      "bytes": 1141934,
+      "path": "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/hinted_rankinit.log",
+      "sha256": "d4083affbe6c3b6c1a0a088bcfa65365fb8551239b90a59259fdd5e0bb74bf07"
+    },
+    {
+      "bytes": 1074,
+      "path": "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/hinted_rankinit.supervisor.json",
+      "sha256": "7c89e29e25855eae33344d3cb61551e8c4f062f65a706aa4c5022ba5e46e34fd"
+    },
+    {
+      "bytes": 5905,
+      "path": "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/nf.bin",
+      "sha256": "ccb580cf11a269c92430a213256948d98eea7ba0fb1ae854e0b078d2e7a1b28d"
+    },
+    {
+      "bytes": 937,
+      "path": "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/prepared_bnf.gp",
+      "sha256": "25035972c88f617f5ecbe79f9706b43fc50413655b662c55b6e09f6b551ca718"
+    },
+    {
+      "bytes": 1504,
+      "path": "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/prepared_bnf.json",
+      "sha256": "3ad9376b2b809fbf3ba97c0fb52839fa38210bb782516b410a6fa165cac0e39a"
+    },
+    {
+      "bytes": 2269608,
+      "path": "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/prepared_bnf.log",
+      "sha256": "4782f84bf5b3075cc5272bf2b7fb597d7f3f1c1a50c4f4b958828f800a7d10e6"
+    },
+    {
+      "bytes": 1067,
+      "path": "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/prepared_bnf.supervisor.json",
+      "sha256": "29e1aeeb19217b57233d648e535456fa3384f9e8472b6971f42c159494be6fe7"
+    },
+    {
+      "bytes": 2369,
+      "path": "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/protocol.json",
+      "sha256": "b410c29f4c232f95ca2da5df401b7e1d873fbab1c5ec3bf28551043780a91af9"
+    },
+    {
+      "bytes": 216,
+      "path": "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/reduced.gp",
+      "sha256": "73eeb3f3d7bb603129535af1d1c3a64ae56d4294524397df25051d66f885d110"
+    },
+    {
+      "bytes": 1504,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/audit.log",
+      "sha256": "4338a6050c024b0cf1e2feba13f4dc36645855d9af1a1961d2c449d7c7d658c7"
+    },
+    {
+      "bytes": 951,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/audit.supervisor.json",
+      "sha256": "1304f24b09bc31cabb0196c5e5f45da0968c2e9566e4d433e4e0f4ced0b75802"
+    },
+    {
+      "bytes": 116,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/audit_progress.json",
+      "sha256": "f90ff78757d4d5bfead6bddbe71a5f3a9e263caef84001e4b45f77173b179ac8"
+    },
+    {
+      "bytes": 782,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/audit_protocol.json",
+      "sha256": "9d1ac2468bc7cff645a7952859f4c7b1b4caa901e7fbef06b543c004275d8f0b"
+    },
+    {
+      "bytes": 326,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/check.log",
+      "sha256": "6fd1f43fb78ac66e488f0bb774fe67e36a97bc87a3aa75003d767cf789ae3a2d"
+    },
+    {
+      "bytes": 932,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/check.supervisor.json",
+      "sha256": "1879d4eee35d0f30993b6150f6c1fbfb1ea4d0aadef5239ba67b3b187983743c"
+    },
+    {
+      "bytes": 689532,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0000.json",
+      "sha256": "f267d197c270a490258d0f3e88a62af128925292ffefa7aa94dcc3bfb4522202"
+    },
+    {
+      "bytes": 672317,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0001.json",
+      "sha256": "903be499ae4864a6daffe448c5b3387b3f6feb801d0c01163fc287717ac5697d"
+    },
+    {
+      "bytes": 659485,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0002.json",
+      "sha256": "09f3d3db2a9362e5efa1e0049158f92bcff35fee4d1b8b063a7f031aa2a2bb10"
+    },
+    {
+      "bytes": 693204,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0003.json",
+      "sha256": "bb800d14e245d2d1dca1593321e77dc79baa8f14f7fbd42993e8bd685c331346"
+    },
+    {
+      "bytes": 674538,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0004.json",
+      "sha256": "6aa9a2b514941e72e15c858f4fed604661b85640cd229d3921f681cc39fb5941"
+    },
+    {
+      "bytes": 668975,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0005.json",
+      "sha256": "87a103f4f538eed8c48e8af1c5b4aabf610d37fb5e2f57d9bada19779840967d"
+    },
+    {
+      "bytes": 681800,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0006.json",
+      "sha256": "282dd2d03447df63b3ae4a64ed851c1bc9d1cd859f112fecb331237708feff49"
+    },
+    {
+      "bytes": 660952,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0007.json",
+      "sha256": "8ba3dd6ab9a364cc96000097ca836fef53e3167520a8d340daa32c12f0dd0370"
+    },
+    {
+      "bytes": 672835,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0008.json",
+      "sha256": "9b939303566b61b5067f9ff82cc1a45159a6e5aa0500cba8570342d540072a64"
+    },
+    {
+      "bytes": 690072,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0009.json",
+      "sha256": "ad0ce9d7de18546885643f53072fce9c920edf64a32883e531d0e4cfe8717b24"
+    },
+    {
+      "bytes": 677136,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0010.json",
+      "sha256": "1fe53b6f58a2c8f500b093dcd7bf399f1ca57399d4f1aaf94687e49ba15a619c"
+    },
+    {
+      "bytes": 655167,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0011.json",
+      "sha256": "8e7a2b23fc8e49349215516d14c30932c49c280e775b5ae6a1288834dd461439"
+    },
+    {
+      "bytes": 685954,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0012.json",
+      "sha256": "21d21b8e05e857aadf601a24cd7f6c1da6acd32786f3de31f679d4d1f48d7593"
+    },
+    {
+      "bytes": 676470,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0013.json",
+      "sha256": "e4c46ad99f119e6630b75313b08e5bdde104565ec8f34572e17df3feec97b642"
+    },
+    {
+      "bytes": 656731,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0014.json",
+      "sha256": "428d123b42054c339d2d44ef1704a570cc9befc9213e371cffdb7c3f78850d02"
+    },
+    {
+      "bytes": 697472,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0015.json",
+      "sha256": "f31ab593bcd798cc7bc736dabe7f09578037447c3cd31c348c64529ecac41bfa"
+    },
+    {
+      "bytes": 671221,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0016.json",
+      "sha256": "ff2a1e07818ff148c1edfd7218c22f93e0ad92d55fe6827062fb6789b966567c"
+    },
+    {
+      "bytes": 666313,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0017.json",
+      "sha256": "ff5cbacb7c211dc34fea2a2aaa82ba06e32e51dda623beaa37d9cf8f77207fe1"
+    },
+    {
+      "bytes": 680496,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0018.json",
+      "sha256": "ac746a1448b9ff8969dbcf0637408d2af7ba52323e4b6e2899cee346b615d237"
+    },
+    {
+      "bytes": 676977,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0019.json",
+      "sha256": "dd565ebb024037e7d755d803302aec75596c44e69bca403a19ccc5b9babe2199"
+    },
+    {
+      "bytes": 670075,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0020.json",
+      "sha256": "e2e865e6025612b6e4551bafa66b89a02ced9b5f2a1f7be7b62d54eb5841aed1"
+    },
+    {
+      "bytes": 678097,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0021.json",
+      "sha256": "92968b3334615b4da647e9f9513efda9c4cfd664698758594d5d7d04d09477f7"
+    },
+    {
+      "bytes": 673282,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0022.json",
+      "sha256": "c852af0de2e98d0303ee99555817a105217a61eac708b83bbd551f8175256b68"
+    },
+    {
+      "bytes": 665425,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0023.json",
+      "sha256": "1720cd189844462f134701c56ac6c9f49d53511eb876017c92d9c7fc7e57ba58"
+    },
+    {
+      "bytes": 681839,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0024.json",
+      "sha256": "4c8324fa66ddd90f14281ac19d874f67ae277f8bd673ab3068b4234b4a75d0a0"
+    },
+    {
+      "bytes": 683516,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0025.json",
+      "sha256": "ded6da7befb926dba16d9b59dd8f1c35f9f7065b3d29360cde0a114efc6d8259"
+    },
+    {
+      "bytes": 655375,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0026.json",
+      "sha256": "f08ec39fb11239d2e8dcfeaed32c66518230b1e3d2c18dbb2b71b0e57bbf310b"
+    },
+    {
+      "bytes": 671900,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0027.json",
+      "sha256": "dafc2b9a1389cb25fcd2ebede99eaabebc76aa3f37c87bdf34e9a0fa5da3bb4c"
+    },
+    {
+      "bytes": 667441,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0028.json",
+      "sha256": "70f7c44aab32ab03f3bd1aad06157d250a0b4b3826421360fc6711a0e69e433b"
+    },
+    {
+      "bytes": 660590,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0029.json",
+      "sha256": "6a7ca7744273cb5ef13742d5c8058af4b39a3a54207ed46c7ad3c0d766b1f491"
+    },
+    {
+      "bytes": 688472,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0030.json",
+      "sha256": "65731251f6c8d6e080147632977581a37da6187792a41686079d9c9652971812"
+    },
+    {
+      "bytes": 675645,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0031.json",
+      "sha256": "cbf178e194b9aaca830e96a6dfd58b9d98274c5803b11a9606c8d2ae982f9b9f"
+    },
+    {
+      "bytes": 635406,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0032.json",
+      "sha256": "53d33922e9255cc1aa65458b522bbb238158cc7824158fc26ad37cda2dd45ff7"
+    },
+    {
+      "bytes": 682484,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0033.json",
+      "sha256": "d5fff2afde78609dcf852f7b7303e982353c7b495dfd2d4456f2f8f4a3bb5c65"
+    },
+    {
+      "bytes": 665983,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0034.json",
+      "sha256": "674a50bb1611cca8cdb21090d070b0cc2c2d2b7390a410dfc0766c68095700e1"
+    },
+    {
+      "bytes": 653465,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0035.json",
+      "sha256": "db17de909de63bee9c4bd4eb709aceef66ebd75b8834fb3b53b616f506924c59"
+    },
+    {
+      "bytes": 673088,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0036.json",
+      "sha256": "c6516a1677e3bd2eba4294a3a44d6743c182551e674b4fe37d82c8cae71d0cb1"
+    },
+    {
+      "bytes": 655055,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0037.json",
+      "sha256": "70de654cb9cb05f84bc50d2d262da5fb7a89cce566f39528ff31d867cd894f07"
+    },
+    {
+      "bytes": 675871,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0038.json",
+      "sha256": "435a431f7de59142c94df02181634ba7ad4de77636fd4cdf1d86b1ad953bdd1a"
+    },
+    {
+      "bytes": 672850,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0039.json",
+      "sha256": "472a3bf35d8878c83b643a111b76a0d28c9274e75c3e595dc3071d435ce2d8d3"
+    },
+    {
+      "bytes": 673453,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0040.json",
+      "sha256": "84a2881e252698b05a998dd922fa78a63901cc9e1e5f896436f21c25fd8cc658"
+    },
+    {
+      "bytes": 661933,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0041.json",
+      "sha256": "5fe90e9354fd883a8dee998de1cbf6202c9026233f127aeafff5558236c31d98"
+    },
+    {
+      "bytes": 670575,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0042.json",
+      "sha256": "7c78d0ecc4385b816e37b9ae19307684d4c35085ca732b831692f5c33ef44db7"
+    },
+    {
+      "bytes": 674121,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0043.json",
+      "sha256": "0e46e6807923920ce025a2ddf94ce623cd34dd81ba39b15e9d49a42d758edae3"
+    },
+    {
+      "bytes": 666050,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0044.json",
+      "sha256": "9f851b38abc3fb7c44e51d08b2af0624694a2afcabaaef21643dd97fbe709c39"
+    },
+    {
+      "bytes": 677492,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0045.json",
+      "sha256": "4b5b9690d9e591356bc7b01079acd70a370a5cf3d446b500faa5ada2d2e632c7"
+    },
+    {
+      "bytes": 672794,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0046.json",
+      "sha256": "c3b8b0f393f0239ce8e9620dc1a595c8d8bf6e379e077672bbab243ab21e3a1b"
+    },
+    {
+      "bytes": 651019,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0047.json",
+      "sha256": "c25f095743d402e08d246d4c683dbe58ae840342436514b9727b83bbf118a52a"
+    },
+    {
+      "bytes": 693959,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0048.json",
+      "sha256": "e807d25b647fd3bcb73b08c18758f4d32cc333921245a63ccc8a2dd66fc200c7"
+    },
+    {
+      "bytes": 662805,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0049.json",
+      "sha256": "f1a44f9ca5af89fb0a5841c84b814df73770143b09258287bfd5c604e1e8cfb5"
+    },
+    {
+      "bytes": 663523,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0050.json",
+      "sha256": "9b5ce67c24b9507b5ad9bdc1efa9dfe52185c8475a00b03cab96f4f37a0afa34"
+    },
+    {
+      "bytes": 686228,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0051.json",
+      "sha256": "8530218f59a465d3db217de8461167efc582bee313731ea1d762c13f307c0201"
+    },
+    {
+      "bytes": 662824,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0052.json",
+      "sha256": "93b019a84122bad7242bfa8d3fd67248eb9f853f7295059f56ab1b5ea9f573b8"
+    },
+    {
+      "bytes": 662832,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0053.json",
+      "sha256": "48c7c2eaebdc534d183d07303d19094fa2f620f6a1275012c077036a1084401b"
+    },
+    {
+      "bytes": 686140,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0054.json",
+      "sha256": "0567ea258c1e628ee6296503d64368709babb12d025fc70ace54a4b0aadade0f"
+    },
+    {
+      "bytes": 676966,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0055.json",
+      "sha256": "02265c5d861bb3e724378e63687b7b17e6252548c520e1e3b959da6cc81806fb"
+    },
+    {
+      "bytes": 653782,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0056.json",
+      "sha256": "c74e2f4399e13606252dd5d257f04679ef603343d4ed577e08066bd7e96daa6b"
+    },
+    {
+      "bytes": 671884,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0057.json",
+      "sha256": "f0eba0d78f6008cd0dddbad447f51b2154d3ffb22e51de4606d3e2e04003ae58"
+    },
+    {
+      "bytes": 673703,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0058.json",
+      "sha256": "a229b8e4a39a39efa30ea4d1c114bc447c6d1e52e7c2105f12b7115e4b28385d"
+    },
+    {
+      "bytes": 663418,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0059.json",
+      "sha256": "737615ba7cc75a3e779a38c51fde319f461d7b11ad27ffc87e92c1b275565779"
+    },
+    {
+      "bytes": 686989,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0060.json",
+      "sha256": "4acb06b7df592e052e5aa399976554fbe202d793060b615618f39b9bb841cac4"
+    },
+    {
+      "bytes": 671308,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0061.json",
+      "sha256": "2c2f9dc1129ca203f4a004380b760aeaee560ae5acebaa34149e31ffbbbd3adc"
+    },
+    {
+      "bytes": 652357,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0062.json",
+      "sha256": "3300d0b08393b81031258356dafae1f7c93a167126b416d8850bf77a9152fe43"
+    },
+    {
+      "bytes": 684698,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0063.json",
+      "sha256": "a4228572cb4a30138d7b25636cdcbfeba2e59d8aa53c194887105435a47caa64"
+    },
+    {
+      "bytes": 34446,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/chunk_0064.json",
+      "sha256": "fca60fffef61517ef47e976950cd80ff81531e4d0c9a4ecb67d6cc286daa31f8"
+    },
+    {
+      "bytes": 106,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/progress.json",
+      "sha256": "d14a179a5bbed092e1a7ce879c2e00d447410425a099c55202772cf9173c1b6a"
+    },
+    {
+      "bytes": 1771,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/protocol.json",
+      "sha256": "41681950abfb005c2d2264bb038cf8a6026eb2c3e8dbadb9be22e33797c658ca"
+    },
+    {
+      "bytes": 147,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/scalar_replay.json",
+      "sha256": "fc7040a6b1c1e0f4f22b473ca878069c9bece989b3a6117ded5b6b907aa86e70"
+    },
+    {
+      "bytes": 327,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/worker.log",
+      "sha256": "1552172cf2edecbfa631620d69900c526e14dc5fb9f89e4cd3a44730aafe6f03"
+    },
+    {
+      "bytes": 934,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-batch-v1/worker.supervisor.json",
+      "sha256": "7a833a9ec23dc45fac37f39da41d7da697f47f69cb7606c9ca4adf8892c60af4"
+    },
+    {
+      "bytes": 415,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-pilot-v1/check.log",
+      "sha256": "1ab64f826807872e773e7d68b4b27535757e9ff38ec2a501e1a719c3f8d2eb26"
+    },
+    {
+      "bytes": 935,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-pilot-v1/check.supervisor.json",
+      "sha256": "184b9b99c63e2e5355e18bc3e17ef69979bfe3d018b2bc5fddd972283e638956"
+    },
+    {
+      "bytes": 2378,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-pilot-v1/ledger.json",
+      "sha256": "6c1da704195a448cd478c17092b6f53e24460a236d5845c1462fdc03c31d7a70"
+    },
+    {
+      "bytes": 937436,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-pilot-v1/original_monic.checkpoint.json",
+      "sha256": "df950ed14ac1dcb61bd387cf4647d7797f1042e091dcf941b2040849527d99a9"
+    },
+    {
+      "bytes": 937611,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-pilot-v1/original_monic.json",
+      "sha256": "a88eac4e7b9fe7a38bff04497ec75554beef80d310a4aace60253886cc840642"
+    },
+    {
+      "bytes": 1294,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-pilot-v1/protocol.json",
+      "sha256": "4d2ad159ef7c0209a46f63c45ff88ce1743a7d53da4cc5c591419b568b4d0c84"
+    },
+    {
+      "bytes": 647285,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-pilot-v1/reduced_binary.checkpoint.json",
+      "sha256": "141d99bf29c8664afe5bf65571cc8b8a4345f963fbd863104dfa22eb93bbe362"
+    },
+    {
+      "bytes": 647446,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-pilot-v1/reduced_binary.json",
+      "sha256": "d23d74b45b34f2ce751ce5a189bba0df1ba235d74931b86d503694be8e0eb307"
+    },
+    {
+      "bytes": 415,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-pilot-v1/worker.log",
+      "sha256": "1ab64f826807872e773e7d68b4b27535757e9ff38ec2a501e1a719c3f8d2eb26"
+    },
+    {
+      "bytes": 937,
+      "path": "artifacts/local/elliptic-curves/small-conductor-norm-pilot-v1/worker.supervisor.json",
+      "sha256": "df1234a47bf0b0653d9507d986bbb9a576bd1cfe751eabeb3e2bfb65d7a8d3bb"
+    },
+    {
+      "bytes": 1143,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/audit.log",
+      "sha256": "b5c398a5a36f0742d397341381491cb367b182586ed99f693ff8451bb295ffca"
+    },
+    {
+      "bytes": 972,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/audit.supervisor.json",
+      "sha256": "6bc570158950e03d2acaca4e81db1a9a2df74884e3b81b02d8cf78f341cb68ef"
+    },
+    {
+      "bytes": 332,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/check.log",
+      "sha256": "a8c9de6e1f6e97314fa54f764045a9d45d48fb84bc11907d841eb85740840cc4"
+    },
+    {
+      "bytes": 972,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/check.supervisor.json",
+      "sha256": "8fb40d80532156286e7722c6b79c3722c79d6d6884d05dd81f0afaf25aa43d69"
+    },
+    {
+      "bytes": 104,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/progress.json",
+      "sha256": "abe88d6d1f5257dc3ce15d01a2338d75c89c2dbd4810f1ccbff62069700d8abb"
+    },
+    {
+      "bytes": 23303,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/protocol.json",
+      "sha256": "2a320393fb3c52f29524c5ea30dbb28b43337e562dba359357ce73dd7ac11dd3"
+    },
+    {
+      "bytes": 148,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/scalar_replay.json",
+      "sha256": "977c048bca68545d04dfa24592ad16ebd52273ea487a991bd711d2d4f062e1d0"
+    },
+    {
+      "bytes": 832237,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_00.json",
+      "sha256": "d0cbeb9efc99343caf26b7601b5c637ed1e838bde3a84a720c0dd608611ce12d"
+    },
+    {
+      "bytes": 850443,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_01.json",
+      "sha256": "f9067ba7c1dfa66c9ff56851d345897c26e23502a24f496e0e10adf2137d39b6"
+    },
+    {
+      "bytes": 848356,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_02.json",
+      "sha256": "a680cb8bc942b6dfc8f437e5d39bdffd0d089c92246ad0e9e6b58105f5bd7ac2"
+    },
+    {
+      "bytes": 853224,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_03.json",
+      "sha256": "6efc971ef73143a67ca54cb3c31500cdc34d1caba043ed5a2c2e6b01a1c5592e"
+    },
+    {
+      "bytes": 852518,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_04.json",
+      "sha256": "1f25d550c5377dd937bb0be6ca7bc7e91aa4c481b316c77406f2143fcd82272d"
+    },
+    {
+      "bytes": 857023,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_05.json",
+      "sha256": "2e21cd467b803062d982d027210294a58220434dc16e04b5e8381558cc29357a"
+    },
+    {
+      "bytes": 861461,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_06.json",
+      "sha256": "7b4e9512c8498f981805c0e0db383593c0c52091b25bec4da8f021156f6c7298"
+    },
+    {
+      "bytes": 862240,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_07.json",
+      "sha256": "67059669c60fe9ea46e085d405b4c42806c671ada0ee2131485d76614ace2d18"
+    },
+    {
+      "bytes": 860276,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_08.json",
+      "sha256": "fe78566d4de4872eb1ca065d2b4c8f3f4240aac16189d5cf9e5a84a7ad2721a9"
+    },
+    {
+      "bytes": 857728,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_09.json",
+      "sha256": "19a1ef3be7292a5ce29a6c149880563d9eb6e84f42bcad66166b69551a909404"
+    },
+    {
+      "bytes": 859707,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_10.json",
+      "sha256": "603fa2a5c6729c53c15f45a939b1ce4215b6bcd55ac2e2c4770ae308f5843bbe"
+    },
+    {
+      "bytes": 855303,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_11.json",
+      "sha256": "caec77959c7f53e0be99cf70f1a377a97b0b14d0767b72be677686d4d771c740"
+    },
+    {
+      "bytes": 862980,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_12.json",
+      "sha256": "0e9cbf01eb4085cf3b90c64ddbd373d1dfe393317a1ba1bbd7dfb49b48c8ca9a"
+    },
+    {
+      "bytes": 856990,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_13.json",
+      "sha256": "5612a6bed374a59af23643c8c29cc212de4a34042b2ace513ec0960dc025d912"
+    },
+    {
+      "bytes": 860320,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_14.json",
+      "sha256": "d596ce46ac7ad41b7bd1e7584775c05daf160d41350e71728b74f0d0326e6f8e"
+    },
+    {
+      "bytes": 862744,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_15.json",
+      "sha256": "8b2d4471d8a44e11c37c6f4a8db89dc87589380900617cc3ddbae80b070e7d3a"
+    },
+    {
+      "bytes": 860124,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_16.json",
+      "sha256": "cfe17c31bfce013d1e5f765d2d2d16052279094c03231f77f1913cd0840549b3"
+    },
+    {
+      "bytes": 857086,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_17.json",
+      "sha256": "0eb6bd5e8c255ab2fc50dcf8ebc53208935a34df1c41bf7779b20c3aeaac81fe"
+    },
+    {
+      "bytes": 862731,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_18.json",
+      "sha256": "c0f35154e5f60230835b6e53496a9cce49b747cb517288590a32f42d584b60e6"
+    },
+    {
+      "bytes": 860669,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_19.json",
+      "sha256": "c356912d1ea7506e3dd61275f05eafbc4f222e9dc05d4a5b03de55f787f9721f"
+    },
+    {
+      "bytes": 881838,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_20.json",
+      "sha256": "2e50365244754808d664b4570a39444db2f5ae5ed9903e45a6a0fe3bcef41bc7"
+    },
+    {
+      "bytes": 866217,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_21.json",
+      "sha256": "fc3fc0bc8da8916fde48d95572a7ad2f3511e59056d6e3c44242e90b0d190d26"
+    },
+    {
+      "bytes": 862683,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_22.json",
+      "sha256": "1664468a9170ad944b7a998a7a9eb6604ebc993001c3b47fabfc4e7f8436b0ac"
+    },
+    {
+      "bytes": 865480,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_23.json",
+      "sha256": "237e8879a824a221f273766b0e2fdb43d3512c8816f3e3cf53d38b1beb7960d7"
+    },
+    {
+      "bytes": 866093,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_24.json",
+      "sha256": "5f35b23318ecc49fd48aa0825c52264f5feb16a2b400ee158d42441dba4ad74b"
+    },
+    {
+      "bytes": 866380,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_25.json",
+      "sha256": "3cbbc7fe4d065a8d0ec06bfbcf9597a1d2b72ac3d0190251ccbf7d20360b131a"
+    },
+    {
+      "bytes": 867283,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_26.json",
+      "sha256": "81a04799b8edf60b855ed9fd55ccc7196c3ebef8c769afc1540f93459d714838"
+    },
+    {
+      "bytes": 863489,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_27.json",
+      "sha256": "b52109216e69c7ed5d2975fe0cd084f78c6f3b1948292e2962418c5bda91c082"
+    },
+    {
+      "bytes": 878276,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_28.json",
+      "sha256": "78357d5e25e1b1555dfb218140c6268f8365dbdd8014f5ebcd436ad46118f4c7"
+    },
+    {
+      "bytes": 874465,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_29.json",
+      "sha256": "e35aae6ffaac02a8dc452b27d121f954b58b065dbed68c9287d2a0d777547f3e"
+    },
+    {
+      "bytes": 861973,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_30.json",
+      "sha256": "422fb8e7b0cad9b1550c89ba9c1b268d66c84ca84a6afd9e0cb877eea1511c25"
+    },
+    {
+      "bytes": 862204,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_31.json",
+      "sha256": "90e921b1198ccc426e8b0f7052e6537d6f9d777d75ae0d0c6db3ec4f598d9c5e"
+    },
+    {
+      "bytes": 888033,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_32.json",
+      "sha256": "cd254ce5f25944d68d8d34911e8d5e523ee4d9037193c7c4380ef4ff001fd92b"
+    },
+    {
+      "bytes": 868243,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_33.json",
+      "sha256": "526ea6d3588b7d55f65a8aa5f4a2c8e7ea1a5623575685bcbb5ac74c0015dce4"
+    },
+    {
+      "bytes": 885975,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_34.json",
+      "sha256": "440db30c8e635005f8cd973015fb932fb74056eede0a71b0c6ccbb9b8d1769e5"
+    },
+    {
+      "bytes": 871870,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_35.json",
+      "sha256": "2909e633d7b90aef7502dcb27f55a8575d2475cd78e1f2fa50ab0e09bb66c1f5"
+    },
+    {
+      "bytes": 864286,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_36.json",
+      "sha256": "2209e84a6a658c0cbf4cb9067a0a6d56b25a75b8d187b106470077b8a33ef882"
+    },
+    {
+      "bytes": 881729,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_37.json",
+      "sha256": "88590ef3f8a82b5eb92e5359e4f5fd97a32d78e9a3c1dff435e4a3d1ed39dd7b"
+    },
+    {
+      "bytes": 861293,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_38.json",
+      "sha256": "6412ea9ef0cdcbd3b25089c23ea9f779e0c8a4b4cc7b730776fe43d97d0db7d0"
+    },
+    {
+      "bytes": 864952,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_39.json",
+      "sha256": "a1388238a1dba204815617002f91c04576b07285a73d366cc9fa02351d72e836"
+    },
+    {
+      "bytes": 867197,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_40.json",
+      "sha256": "694b3211058f1e900abda5303f7e07ea9ffa847aa5057596fade40dfb4291f68"
+    },
+    {
+      "bytes": 869633,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_41.json",
+      "sha256": "c47d94094e1ef587f4ee05bd20cb4bd3077ac55829dd537f596fea6fb7e2e3b6"
+    },
+    {
+      "bytes": 870549,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_42.json",
+      "sha256": "4ab0bf1901f2b3358db85efd1bba44f6fa06a14433d0a1baf9cf0c829c8db5db"
+    },
+    {
+      "bytes": 868797,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_43.json",
+      "sha256": "a7d632fce926b545ede0408545b977f58a10a1b91f04778dfcea7428ba75521b"
+    },
+    {
+      "bytes": 871200,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_44.json",
+      "sha256": "ee733fa0045a488a517bec46d0d5c36c11c83f98d71de15518dbab88b425ab12"
+    },
+    {
+      "bytes": 867547,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_45.json",
+      "sha256": "1139fbf26087791896f594eff3ee6d1ec3e1a8367ece4eecb038d5217312b256"
+    },
+    {
+      "bytes": 875901,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_46.json",
+      "sha256": "33daae4f08cdffea0268a264f81d6ae3f9223355da17ecd0dd7a3e071f38e289"
+    },
+    {
+      "bytes": 874480,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_47.json",
+      "sha256": "611cf0cafea05dae39ce88732576c2e3dbd2a3aa1a488d30922eb6b921f20cd1"
+    },
+    {
+      "bytes": 866733,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_48.json",
+      "sha256": "104c4b9c21ef2dad65df1333d856e9daaba411468802f350bc0021d13438dd3e"
+    },
+    {
+      "bytes": 863514,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_49.json",
+      "sha256": "1a68f2ba980ff571c83f69974c5938e02d3bb0bc21791bdfde52b3342b184837"
+    },
+    {
+      "bytes": 866371,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_50.json",
+      "sha256": "1271273b3e7d78800e321c4dd63b18ae9a39c550c1e0cd7f9e0769b825e9bc6e"
+    },
+    {
+      "bytes": 893479,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_51.json",
+      "sha256": "785f51287d794658e7c7b33bdd048b67f0ace17ebb7a80d5802fa9ec64a8849c"
+    },
+    {
+      "bytes": 873611,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_52.json",
+      "sha256": "03783b9f091a85c860fb8b3fb5dd7bf901153c7b162671fda14899a5298df4e7"
+    },
+    {
+      "bytes": 862756,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_53.json",
+      "sha256": "d8d63b32d1945a65f107c3f29a44e46b83f11656be70bc87ef3dd9c3c7e6d29b"
+    },
+    {
+      "bytes": 870554,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_54.json",
+      "sha256": "1a955a840367bafa61c23e4089ec2637bb12b621f17a7153e326076c732fd708"
+    },
+    {
+      "bytes": 877700,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_55.json",
+      "sha256": "0da01b9162d39b8f196b57e5f3836c4be1ee3cea84b1eb582726500a23ad33bd"
+    },
+    {
+      "bytes": 868957,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_56.json",
+      "sha256": "649ac4bf025594ec0cc6e99951ca570366e2583c4401d660c4614ad2595971cd"
+    },
+    {
+      "bytes": 867266,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_57.json",
+      "sha256": "040737d1eb67f05d1d1274216b75146d2a0e0bea0361041f7e2d10c439249b76"
+    },
+    {
+      "bytes": 869141,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_58.json",
+      "sha256": "072633c141be4285e9300f723c3a1becb59d9fb2f10fa75aa44d6d5addaa1d6d"
+    },
+    {
+      "bytes": 871682,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_59.json",
+      "sha256": "920b12ae48af3adcd77c26ae337aef1c2bbbcf9bf9eaa201919daffe4ef68634"
+    },
+    {
+      "bytes": 872315,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_60.json",
+      "sha256": "61dc099dc4ee216dd0509a398c2988d3d48de422fec45dc1a068aa0770e6c4f6"
+    },
+    {
+      "bytes": 866997,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_61.json",
+      "sha256": "78a5c1aafd775cba4281ef74cb7c4849f060b3a704857e6aea1abb9f31b45450"
+    },
+    {
+      "bytes": 868345,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_62.json",
+      "sha256": "a99891f036bcf8f81fe182718564f5ab883f7071934edeb6f59ee804b1b2f6e4"
+    },
+    {
+      "bytes": 864495,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/target_63.json",
+      "sha256": "55e68529d7853a284255e7d433c035520a3d89797b234f516a6fe96071fc6b89"
+    },
+    {
+      "bytes": 333,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/worker.log",
+      "sha256": "1bd70a25661255820fb35afa0ed504fc1e6001dc2d8ad99a67ede7cdeb56442a"
+    },
+    {
+      "bytes": 973,
+      "path": "artifacts/local/elliptic-curves/small-conductor-special-primes-v1/worker.supervisor.json",
+      "sha256": "e56fc5405615dda6161dcf56a9258f348df73400595e2a07bba9f6145d11fd98"
+    },
+    {
+      "bytes": 9593,
+      "path": "elliptic-curves/cas/alternate_quartic_covers.py",
+      "sha256": "598f7556333c9d8462f251d97a6d132e0bd672a11861f8c2f142fc4588abe9e5"
+    },
+    {
+      "bytes": 14235,
+      "path": "elliptic-curves/cas/analyze_icarm_7fff_zip_sequence.py",
+      "sha256": "2957bb20d4fbcde1adfedf29fb211d8f3aa584a37a5719694d13e9313a1e7ed5"
+    },
+    {
+      "bytes": 22933,
+      "path": "elliptic-curves/cas/audit_bnf_free_s_class_quotient.py",
+      "sha256": "2be1ba039e7b7097993f976519d226e6ff612031df8f2bf3e4d81e6f20fe89a3"
+    },
+    {
+      "bytes": 8113,
+      "path": "elliptic-curves/cas/audit_small_conductor_norm_batch.sage",
+      "sha256": "67ae060aa1c23d0a3f1c46244e95dd6f7758a05fef0efca0c0b2877a3ab62fc5"
+    },
+    {
+      "bytes": 6225,
+      "path": "elliptic-curves/cas/audit_small_conductor_norm_relations.sage",
+      "sha256": "3317922a8ea02fb751ccc8f601a5fba384638d4afcb045a5f32d39661284be06"
+    },
+    {
+      "bytes": 18239,
+      "path": "elliptic-curves/cas/build_elkies_2026_rank28_bad_place_ledger.py",
+      "sha256": "08222418ef223f787f83a9ea37bd3cc9ca4744e7d72b8b2d874da04dc7fd262d"
+    },
+    {
+      "bytes": 30238,
+      "path": "elliptic-curves/cas/build_elkies_2026_relative_2selmer_suite.py",
+      "sha256": "bf3b22cae0e429196101083f70862bf549189ac8cfa6ded402b95ccc55dbcf26"
+    },
+    {
+      "bytes": 13165,
+      "path": "elliptic-curves/cas/build_q12o5867_bnf_free_signature.py",
+      "sha256": "721f6c6f250fca9afdbc3034390558edaf90e515f146e66ec3eb780c689828b0"
+    },
+    {
+      "bytes": 8974,
+      "path": "elliptic-curves/cas/certify_compact_r17_candidates.py",
+      "sha256": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9"
+    },
+    {
+      "bytes": 5684,
+      "path": "elliptic-curves/cas/certify_small_conductor_class_rank_target.py",
+      "sha256": "d9a8f1ad1085d08bf5e3b046b86e4ea29dad01c8865b527e67c2ddc7914ee807"
+    },
+    {
+      "bytes": 10015,
+      "path": "elliptic-curves/cas/certify_small_conductor_curve.py",
+      "sha256": "4a5ce2aea11233d4e4de21ac883d7e86b41b7e21fac6742c45f047df60ea138a"
+    },
+    {
+      "bytes": 4016,
+      "path": "elliptic-curves/cas/certify_small_conductor_selmer_rank_target.py",
+      "sha256": "f0c8be060e18efcc56a9e27b1234bc3161c9575e2a368977e904f2f2d7eab0ca"
+    },
+    {
+      "bytes": 3984,
+      "path": "elliptic-curves/cas/check_small_conductor_descent_shortcut.sage",
+      "sha256": "61a1eeb666524ae5907a362c3914d04490e48d40e2c56c9da803f956427adf17"
+    },
+    {
+      "bytes": 14246,
+      "path": "elliptic-curves/cas/ek_k3.py",
+      "sha256": "53b96064afee80c102bf149242754ed98afc85b5bf3c422429d1f23c9db68f0f"
+    },
+    {
+      "bytes": 21409,
+      "path": "elliptic-curves/cas/elliptic_candidate_record.py",
+      "sha256": "5b9f6f843d48e705253404a5583ef53966c72c7f229c68ef17c6b848f5e94af3"
+    },
+    {
+      "bytes": 7681,
+      "path": "elliptic-curves/cas/extend_small_conductor_norm_batch.py",
+      "sha256": "f9b0707bb11d32f807dff2749172a8332dda97afffb51aaed7acbaaa7d88a228"
+    },
+    {
+      "bytes": 14700,
+      "path": "elliptic-curves/cas/fermigier_mestre.py",
+      "sha256": "6932c04fa699683ec112f25801adaa74ccb5e16dfa789b28ad56abf720c51090"
+    },
+    {
+      "bytes": 10538,
+      "path": "elliptic-curves/cas/finite_quotient_escape.py",
+      "sha256": "3d3418f10074232dfe131c453c7097621a984a2e81251cacc509555e24f023a2"
+    },
+    {
+      "bytes": 15983,
+      "path": "elliptic-curves/cas/half_lattice_pointed_sieve.py",
+      "sha256": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4"
+    },
+    {
+      "bytes": 8101,
+      "path": "elliptic-curves/cas/mod2_reduction_independence.py",
+      "sha256": "c5963952d1a9089416479671b788b6437dbba26591d796646022f4e9dddd0c70"
+    },
+    {
+      "bytes": 5563,
+      "path": "elliptic-curves/cas/package_small_conductor_descent_shortcut.py",
+      "sha256": "0a4b2331d5af10e1e35dc5a7ca3cce8dff924ee13c34d0c0b6af97703fcc434f"
+    },
+    {
+      "bytes": 4172,
+      "path": "elliptic-curves/cas/package_small_conductor_norm_batch.py",
+      "sha256": "a5777625305d70623b89295747bd95b59afe12fc7a99d615d255d943cbf65080"
+    },
+    {
+      "bytes": 4439,
+      "path": "elliptic-curves/cas/package_small_conductor_special_primes.py",
+      "sha256": "26febebfb65ae8bd6fbaae333989ab2d92336ea6ab118268888b9ce0e08850d2"
+    },
+    {
+      "bytes": 6409,
+      "path": "elliptic-curves/cas/pari_bridge.py",
+      "sha256": "d8c40e3c1b0f9eeb78e2f4b01aa2f3d5f793bfb35956c5846b2312da90132e45"
+    },
+    {
+      "bytes": 6910,
+      "path": "elliptic-curves/cas/pilot_small_conductor_norm_smoothness.py",
+      "sha256": "29f5a150222997405aac4688d5c83c6923f2f226485dbc6f93d3c761d44a2ea2"
+    },
+    {
+      "bytes": 8311,
+      "path": "elliptic-curves/cas/prepare_small_conductor_norm_form.py",
+      "sha256": "968f6c88cabad6d3b0800ca51d0d7fad3b3048338746d3db60272342d5135f84"
+    },
+    {
+      "bytes": 9767,
+      "path": "elliptic-curves/cas/production_search_gates.py",
+      "sha256": "4770ce8930623f5b5dcb631b8fc9dc1c5a1fd8f7862f557d943f8b8fb375e337"
+    },
+    {
+      "bytes": 6301,
+      "path": "elliptic-curves/cas/profile_small_conductor_descent.py",
+      "sha256": "3c48b4de4c7eed0afef37eddebbdb902072769d0e994e170d4673a1be01f0be3"
+    },
+    {
+      "bytes": 207,
+      "path": "elliptic-curves/cas/research_runtime/__init__.py",
+      "sha256": "fcf27db31ec58866898e7e014861f8a566dd5f65c276f205e99ff64bd793a45e"
+    },
+    {
+      "bytes": 8430,
+      "path": "elliptic-curves/cas/research_runtime/arithmetic.py",
+      "sha256": "f304317492824cf149c88b5814e68cdd0bffb0542a3d8db7bb4d9f3ec988802b"
+    },
+    {
+      "bytes": 3191,
+      "path": "elliptic-curves/cas/research_runtime/binary.py",
+      "sha256": "9956f4b5236d8ad2260018182eebfa18bcd8ced7fdc92ffa6023ad9da7d9dd99"
+    },
+    {
+      "bytes": 4074,
+      "path": "elliptic-curves/cas/research_runtime/cached_observation_state.py",
+      "sha256": "c1480925932b0cf86c0392cb796e9f83d278e84fc0a769ad031e93a8a68d43a7"
+    },
+    {
+      "bytes": 7407,
+      "path": "elliptic-curves/cas/research_runtime/chart_policy.py",
+      "sha256": "0a9212fdaaa3a6abcd09034c003eed0d48bdb258d3161bcee6685607f87b21ad"
+    },
+    {
+      "bytes": 9303,
+      "path": "elliptic-curves/cas/research_runtime/cvp.py",
+      "sha256": "83d9d87e9f465acffb48c3a5400ded28d10382f7c690492fb8dc998775767c8a"
+    },
+    {
+      "bytes": 3714,
+      "path": "elliptic-curves/cas/research_runtime/deep_centres.py",
+      "sha256": "4dd57a7e5a254eba1f7cffed9dd62838cf7607b54a0ae29c162b4cc3d282799a"
+    },
+    {
+      "bytes": 2626,
+      "path": "elliptic-curves/cas/research_runtime/finite_fields.py",
+      "sha256": "24be713a49328db4eb8409e5023fafff3dfb638e4cb56151444abd631eb055ef"
+    },
+    {
+      "bytes": 9211,
+      "path": "elliptic-curves/cas/research_runtime/finite_reduction.py",
+      "sha256": "467609d4a1003127a9dcfb5ff3cd911d3748f5c5c5ff68a43f09db0de9b69992"
+    },
+    {
+      "bytes": 3463,
+      "path": "elliptic-curves/cas/research_runtime/fisher.py",
+      "sha256": "fb8cf017ade457f4680ba8aa7cda0e57dab2f1fba6ab3fcfb99bb4b1bf256a5c"
+    },
+    {
+      "bytes": 10982,
+      "path": "elliptic-curves/cas/research_runtime/function_field_witness.py",
+      "sha256": "f952ccde7737327d8a30d09917b91f6d273074661eea86ab9bfee620998e9b90"
+    },
+    {
+      "bytes": 4543,
+      "path": "elliptic-curves/cas/research_runtime/local_kummer.py",
+      "sha256": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e"
+    },
+    {
+      "bytes": 3015,
+      "path": "elliptic-curves/cas/research_runtime/memory_store.py",
+      "sha256": "0ce81817fc94949864b2f653e9ece207d666d61fbdabeb56f52e044bb83dd873"
+    },
+    {
+      "bytes": 10208,
+      "path": "elliptic-curves/cas/research_runtime/mw_state.py",
+      "sha256": "e53c24a786afe1096a3bc90eff94396b1b3b6b1fd3ec52c24e51c69622b4596d"
+    },
+    {
+      "bytes": 5613,
+      "path": "elliptic-curves/cas/research_runtime/pari_context.py",
+      "sha256": "20db26886dc17baf4ae7ab7c43d669bc53a07c953a8e99b94435fe7846e8acaa"
+    },
+    {
+      "bytes": 2333,
+      "path": "elliptic-curves/cas/research_runtime/pointed_orbit_compression.py",
+      "sha256": "23f69a9b9aedc040c0a2d97e2b1f722c00a97a1a26702b04a94fba8d1ed3914c"
+    },
+    {
+      "bytes": 3967,
+      "path": "elliptic-curves/cas/research_runtime/pointed_worker.py",
+      "sha256": "7126cac4ed8bbfd7015476670b61fc317649700436b92e072a21d1bac4695ddf"
+    },
+    {
+      "bytes": 1045,
+      "path": "elliptic-curves/cas/research_runtime/preloaded_prime_state.py",
+      "sha256": "584b340f730b12a6f4cd8f6b6e7f248c7bce5acfafb3b4d89ff4b43f737102ed"
+    },
+    {
+      "bytes": 9660,
+      "path": "elliptic-curves/cas/research_runtime/pruning.py",
+      "sha256": "9f5748f7a6fe0d06befab7d596b7469b2180331416ac2d039fd7f636ed91b7c6"
+    },
+    {
+      "bytes": 1863,
+      "path": "elliptic-curves/cas/research_runtime/quotient_only_reduction.py",
+      "sha256": "b47036dd2d5882a8bdccfb9095fb11c543ddc8e209e487d6c7afdf8a8d06986a"
+    },
+    {
+      "bytes": 9450,
+      "path": "elliptic-curves/cas/research_runtime/regulator.py",
+      "sha256": "aa4bdc99095199936417058f46ee2fd0d48acd497676f46c5d0456e7865be970"
+    },
+    {
+      "bytes": 829,
+      "path": "elliptic-curves/cas/research_runtime/rotated_observation_state.py",
+      "sha256": "3568529c9513db8fe56d8622ec7c7eae9dbedef4a160836a8db63aba58f2c9ab"
+    },
+    {
+      "bytes": 25277,
+      "path": "elliptic-curves/cas/research_runtime/sage_arithmetic.py",
+      "sha256": "105fc55cc851c0b60d1132e3f0afbac8c872344d7d17c3d2610c1b24390f4dd1"
+    },
+    {
+      "bytes": 28373,
+      "path": "elliptic-curves/cas/research_runtime/sage_subspace.py",
+      "sha256": "86fd5f87fa773bb817e3f19e3847e9188a7071b41bc3d8adb81b21c804fb6cf5"
+    },
+    {
+      "bytes": 5172,
+      "path": "elliptic-curves/cas/research_runtime/sage_surface.py",
+      "sha256": "43942f606c97580a324f4e22d6c771eb5ca8264953ceca8e29aced7afffd0418"
+    },
+    {
+      "bytes": 3309,
+      "path": "elliptic-curves/cas/research_runtime/search_state.py",
+      "sha256": "598a2177fa1cdd5b45c801c09adcc4ac51bd2a87152b7982ea70e78585f8671c"
+    },
+    {
+      "bytes": 4351,
+      "path": "elliptic-curves/cas/research_runtime/section_gate.py",
+      "sha256": "df5fd619731f2bcc08df2c24806fa479b68879792ca84a5a972ca0cf122ae2ed"
+    },
+    {
+      "bytes": 4039,
+      "path": "elliptic-curves/cas/research_runtime/simon.py",
+      "sha256": "08d7ef9a7443f8268aee0b0799e290494e79a1532828c73345432259887e644e"
+    },
+    {
+      "bytes": 8233,
+      "path": "elliptic-curves/cas/research_runtime/store.py",
+      "sha256": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965"
+    },
+    {
+      "bytes": 9744,
+      "path": "elliptic-curves/cas/research_runtime/subspace.py",
+      "sha256": "2ce4a9f7d688a2a4581d844dd3663fb7fae63904d167caecef4af6bc6cfd2534"
+    },
+    {
+      "bytes": 20249,
+      "path": "elliptic-curves/cas/research_runtime/supervisor.py",
+      "sha256": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233"
+    },
+    {
+      "bytes": 4954,
+      "path": "elliptic-curves/cas/research_runtime/surface_repository.py",
+      "sha256": "3d3d9f28b2605c248c021a4ed8490d815cd16ac233923ece899ff940ec3e16af"
+    },
+    {
+      "bytes": 5670,
+      "path": "elliptic-curves/cas/research_runtime/toric_surface.py",
+      "sha256": "b8e1d5329c32402b693b27e61887c30eb6cf1606043a5f1048ffc6dd7d6606ab"
+    },
+    {
+      "bytes": 2717,
+      "path": "elliptic-curves/cas/research_runtime/witnesses.py",
+      "sha256": "e6ea79fabb7d16e179d5ea347a2006e19193f910a3c6d56940c73ff8dbce2619"
+    },
+    {
+      "bytes": 51705,
+      "path": "elliptic-curves/cas/run_elkies_2026_relative_2selmer_checkpointed.py",
+      "sha256": "1e674eb42122784c580777b782ffee1c737c1bc9788ba00b47a09777e26b1477"
+    },
+    {
+      "bytes": 27525,
+      "path": "elliptic-curves/cas/run_elkies_2026_relative_2selmer_open.py",
+      "sha256": "158bd9c13fb583d5ffa4f3363063703b7e0014c996ccc8bdcd273fbdcf08e944"
+    },
+    {
+      "bytes": 13126,
+      "path": "elliptic-curves/cas/run_fermigier_rank20_auxiliary_fingerprints.py",
+      "sha256": "b8bab575cc8109a9f64256b77b0e340d87fe741718fb46f0f0ecff80c3857d17"
+    },
+    {
+      "bytes": 15562,
+      "path": "elliptic-curves/cas/run_fermigier_rank20_pari_descent.py",
+      "sha256": "ac7759f2dc16816251c791b60df7e4e6e41473656660c7e253141d576f536f5a"
+    },
+    {
+      "bytes": 14648,
+      "path": "elliptic-curves/cas/search_extra_points.py",
+      "sha256": "8719a8868f60a055ecfc2c68e95b253386a0f5e856c2686749bd8d8e1f83775e"
+    },
+    {
+      "bytes": 14110,
+      "path": "elliptic-curves/cas/target_small_conductor_prime_ideals.sage",
+      "sha256": "738a1cc356e0a4c5e22d310180f1ded268c5f46997cf001bca1f11574c7474ef"
+    },
+    {
+      "bytes": 14716,
+      "path": "elliptic-curves/cas/verify_icarm_curve394_rank21.py",
+      "sha256": "3868a6e6b5fa6134949d92a4f1aaa526cd42f50335109f02aefab58bb52968b0"
+    },
+    {
+      "bytes": 5045,
+      "path": "elliptic-curves/ecsearch/__init__.py",
+      "sha256": "f9f8f9bf2157929ab443da28124b19285eda439a224e9e177702f9fbd4c044df"
+    },
+    {
+      "bytes": 10386,
+      "path": "elliptic-curves/ecsearch/calibration.py",
+      "sha256": "17c5fb8af0d015dbc651aa834f547c91d029255acfb3dea9f8a16194f9b9cf81"
+    },
+    {
+      "bytes": 19105,
+      "path": "elliptic-curves/ecsearch/conductor_engineering.py",
+      "sha256": "24f0da76e99728ccb36b662c97f79993de6727cd5ad58fb7a45fd1e4af12b48f"
+    },
+    {
+      "bytes": 15535,
+      "path": "elliptic-curves/ecsearch/crt_lattice.py",
+      "sha256": "090d883af4e94c9a36fd52e9cf5c24a9a2ba664a240750b9197755628c5aafe5"
+    },
+    {
+      "bytes": 21782,
+      "path": "elliptic-curves/ecsearch/family_discovery.py",
+      "sha256": "d4766c7f1da8d3e14d09ab8173b1ddce181d6623cf09c0b767952ed319f2c34a"
+    },
+    {
+      "bytes": 12472,
+      "path": "elliptic-curves/ecsearch/fermigier.py",
+      "sha256": "960678a1991f424694b99fcc8eff6100fdc93200c64588328d55ae95186529c8"
+    },
+    {
+      "bytes": 13209,
+      "path": "elliptic-curves/ecsearch/fermigier_baseline_evaluation.py",
+      "sha256": "f650d3a165febfea81c922551ca464cd00af06dc2cd4d5854e8eef42acea7519"
+    },
+    {
+      "bytes": 33357,
+      "path": "elliptic-curves/ecsearch/fermigier_labelled_corpus.py",
+      "sha256": "4d4bc4d3c1243fdb1bf5ace867e76c3e2be3bb2a89ad728b56d0e29629e6f9bf"
+    },
+    {
+      "bytes": 7194,
+      "path": "elliptic-curves/ecsearch/fermigier_near_miss.py",
+      "sha256": "73465729895003addbf392bf0287c8bc8c6cdd9023951030c61ed47cab080699"
+    },
+    {
+      "bytes": 5023,
+      "path": "elliptic-curves/ecsearch/fermigier_offset_search.py",
+      "sha256": "fe888e02fb112102968640b603eb8e7366c9ca45f6be190c8c3ac48f342c4bd5"
+    },
+    {
+      "bytes": 9745,
+      "path": "elliptic-curves/ecsearch/fermigier_rank.py",
+      "sha256": "ace008520f243d32b22d6ed96adfd4d084f764bd50c21254faf1fba323686b40"
+    },
+    {
+      "bytes": 10259,
+      "path": "elliptic-curves/ecsearch/fermigier_seed.py",
+      "sha256": "e786eeeba59cdeacc4bd99a9f3bc2403d4202c8b166bf47318092fd43090b30e"
+    },
+    {
+      "bytes": 15069,
+      "path": "elliptic-curves/ecsearch/kihara.py",
+      "sha256": "8afd5fe957daad8884d5e8598ed53ddb0794da89989a6599dccb0008925963d7"
+    },
+    {
+      "bytes": 3766,
+      "path": "elliptic-curves/ecsearch/local_data.py",
+      "sha256": "937212608a705075434b8391228c8db7ccc37b666d96be54b82d4ec834d6380f"
+    },
+    {
+      "bytes": 10146,
+      "path": "elliptic-curves/ecsearch/q12o5867_point_search.py",
+      "sha256": "d46b234bd517b5fc0ea975cef56d7ed5525b85ded68e849ae9faf89dfcfb6e98"
+    },
+    {
+      "bytes": 8727,
+      "path": "elliptic-curves/ecsearch/q12o5867_rank_jump_registry.py",
+      "sha256": "3728830964df8bdaaca17e283fb93d4cc29b003d139b8e5f3c9d86aad5224463"
+    },
+    {
+      "bytes": 25600,
+      "path": "elliptic-curves/ecsearch/q12o5867_specialization.py",
+      "sha256": "a9911a9fd0a295f9e399436006d6d1f7bcd204778b577a4fead5def04df5dfa7"
+    },
+    {
+      "bytes": 7510,
+      "path": "elliptic-curves/ecsearch/r17_bisection_ranker.py",
+      "sha256": "2b361db5c314bb577c48b6a468b86ef91715c56985c864e45723546f66e06c36"
+    },
+    {
+      "bytes": 17032,
+      "path": "elliptic-curves/ecsearch/r17_training_data.py",
+      "sha256": "1372e8e7e2129deab5ce01c518e8c1aa8b499d75669dc3508ca1d5c700fff0fc"
+    },
+    {
+      "bytes": 21282,
+      "path": "elliptic-curves/ecsearch/rank_certification.py",
+      "sha256": "c14366e8c05326a1b3910e5014862a8aea72784bcf9acdee1388ebc7735a2041"
+    },
+    {
+      "bytes": 36481,
+      "path": "elliptic-curves/ecsearch/rank_jump_benchmark.py",
+      "sha256": "ba844f29128a03801bcc291d2cb9ffd705f45cce0e6b4e0cb70a88dd105a23dd"
+    },
+    {
+      "bytes": 4839,
+      "path": "elliptic-curves/ecsearch/record_rank29.py",
+      "sha256": "46deab20d3605842d7fda59e703f17d724a4ab7b9deb8cffd6aed788d5964ee3"
+    },
+    {
+      "bytes": 30605,
+      "path": "elliptic-curves/notes/BNF_FREE_RESIDUAL_2SELMER.md",
+      "sha256": "d247fb61e7ee501f8474c9c656a916c6f120945fe2db39001e358cbf5598d839"
+    },
+    {
+      "bytes": 12883,
+      "path": "elliptic-curves/notes/R17_MW29_RELATIVE_SCLASS_RETRY_2026-09-04.md",
+      "sha256": "cfbb9d8c599e98de96b4120f8763e385bb8ea5eaaad91e96539acf278e7e748d"
+    },
+    {
+      "bytes": 18044,
+      "path": "elliptic-curves/notes/SMALL_CONDUCTOR_DESCENT_SHORTCUT_2026-09-06.md",
+      "sha256": "f768c4e81d0239e26f99526a1cbddb431582d131264d4743bff533d3021696e4"
+    }
+  ],
+  "requirements": "Sage with PARI2.17.3. All scalar smoothness replay records are included. Isolated replay rebuilds the original factor base, deterministic target selection, lattice maps and all new principal-ideal relations; it does not repeat the already completed scalar smoothness run.",
+  "schema": "elliptic-curves.small-conductor-special-primes-evidence.v1",
+  "zip_bytes": 26739318,
+  "zip_sha256": "6462a9322be7d360e77b957405f7a2427b09b24acc44e12247d6ac3a2c171665"
+}

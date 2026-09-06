@@ -3,6 +3,15 @@
 This note records the mathematical core of the pilot.  It deliberately
 separates exact implications from search heuristics.
 
+The September 5–6 rank-jump findings are developed in the
+[rank-jump mechanism theorems](rank-jump/RANK_JUMP_MECHANISM_THEOREMS.md):
+six proved statements covering specialization loss, quotient relations,
+marked carriers, finite squareclass obstructions, collision test compression,
+and short trace cosets, with exact replays and gates for future searches.
+The [independent-block and rank-obstruction extension](rank-jump/INDEPENDENT_BLOCKS_AND_RANK_OBSTRUCTIONS.md)
+adds J7–J10: saturation-aware finite-signature lower bounds, exact block
+overlap, radical-partner amplification, and stopping thresholds for rank exclusion.
+
 ## 1. Why prime powers can be conductor-friendly
 
 For a minimal elliptic curve over `Q`, a prime of multiplicative reduction has

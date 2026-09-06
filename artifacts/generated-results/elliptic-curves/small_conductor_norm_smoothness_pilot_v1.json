@@ -1,0 +1,37 @@
+{
+  "arms": [
+    {
+      "arm": "original_monic",
+      "primitive_pairs": 5039,
+      "records_sha256": "a88eac4e7b9fe7a38bff04497ec75554beef80d310a4aace60253886cc840642",
+      "smooth_values": 0,
+      "wall_seconds": 4.503845885046758
+    },
+    {
+      "arm": "reduced_binary",
+      "primitive_pairs": 5039,
+      "records_sha256": "d23d74b45b34f2ce751ce5a189bba0df1ba235d74931b86d503694be8e0eb307",
+      "smooth_values": 18,
+      "wall_seconds": 2.378141024033539
+    }
+  ],
+  "claim_boundary": "Finite norm-smoothness yield on different explicitly mapped principal-element sets. No class relation independence, generating factor base, class-rank upper bound, calibrated runtime for full descent or improved rank follows.",
+  "protocol": {
+    "box": 64,
+    "claim_boundary": "Finite norm-smoothness yield on different explicitly mapped principal-element sets. No class relation independence, generating factor base, class-rank upper bound, calibrated runtime for full descent or improved rank follows.",
+    "gate": "Only this fixed curve; exact maximal-order norm preparation reduces maximum coefficient size165to65bits. Test whether this change produces complete smooth values before any class-relation campaign.",
+    "method": "Repeated gcd with the exact primorial through400000 removes all and only supported prime factors. Unresolved remainders are retained without generic factorization.",
+    "rss_bytes": 1610612736,
+    "schema": "elliptic-curves.small-conductor-norm-pilot.v1",
+    "seconds": 120,
+    "selection": "Every coprime(m,n) with -64<=m<=64 and1<=n<=64, in lexicographic order, on each of the original monic and new maximal-order reduced binary norm polynomials.",
+    "smooth_bound": 400000,
+    "sources": {
+      "artifacts/generated-results/elliptic-curves/small_conductor_reduced_norm_form_v1.json": "8dab54430620b0e3e3c55ce3c6cf93c1346cdd7e79b1879091fe3c4dec0e63f2",
+      "elliptic-curves/cas/pilot_small_conductor_norm_smoothness.py": "29f5a150222997405aac4688d5c83c6923f2f226485dbc6f93d3c761d44a2ea2"
+    },
+    "workers": 1
+  },
+  "schema": "elliptic-curves.small-conductor-norm-smoothness.v1",
+  "status": "PASS"
+}

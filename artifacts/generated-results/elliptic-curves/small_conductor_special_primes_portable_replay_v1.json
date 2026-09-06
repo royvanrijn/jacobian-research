@@ -1,0 +1,36 @@
+{
+  "schema": "elliptic-curves.small-conductor-special-primes-isolated.v1",
+  "status": "PASS",
+  "supervision": {
+    "command": [
+      "/home/royvanrijn/.local/bin/sage",
+      "-python",
+      "elliptic-curves/cas/target_small_conductor_prime_ideals.sage",
+      "audit-check"
+    ],
+    "failure_reason": null,
+    "limits": {
+      "address_space_bytes": null,
+      "cgroup": null,
+      "pari_stack_bytes": 256000000,
+      "poll_seconds": 0.05,
+      "rss_bytes": 1610612736,
+      "terminate_grace_seconds": 1.0,
+      "wall_seconds": 180
+    },
+    "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/small-conductor-special-primes-isolated-v1/replay.log",
+    "log_sha256": "b5c398a5a36f0742d397341381491cb367b182586ed99f693ff8451bb295ffca",
+    "outcome": "completed",
+    "peak_observed_rss_bytes": 449085440,
+    "pid": 1569195,
+    "returncode": 0,
+    "rss_limit_bytes": 1610612736,
+    "start_token": "55071073",
+    "termination_signal": null,
+    "timeout_seconds": 180,
+    "wall_seconds": 11.261318509001285,
+    "worker_result": null,
+    "worker_result_sha256": null
+  },
+  "zip_sha256": "6462a9322be7d360e77b957405f7a2427b09b24acc44e12247d6ac3a2c171665"
+}

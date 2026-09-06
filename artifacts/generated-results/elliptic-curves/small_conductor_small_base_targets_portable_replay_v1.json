@@ -1,0 +1,36 @@
+{
+  "schema": "elliptic-curves.small-conductor-small-base-targets-isolated.v1",
+  "status": "PASS",
+  "supervision": {
+    "command": [
+      "/home/royvanrijn/.local/bin/sage",
+      "-python",
+      "elliptic-curves/cas/target_small_conductor_small_base.sage",
+      "audit-check"
+    ],
+    "failure_reason": null,
+    "limits": {
+      "address_space_bytes": null,
+      "cgroup": null,
+      "pari_stack_bytes": 256000000,
+      "poll_seconds": 0.05,
+      "rss_bytes": 1610612736,
+      "terminate_grace_seconds": 1.0,
+      "wall_seconds": 180
+    },
+    "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/small-conductor-small-base-targets-isolated-v1/replay.log",
+    "log_sha256": "ab979597e9f36b7f803004de20726e67265bc391904c9528ad0e05402c696032",
+    "outcome": "completed",
+    "peak_observed_rss_bytes": 451403776,
+    "pid": 2105125,
+    "returncode": 0,
+    "rss_limit_bytes": 1610612736,
+    "start_token": "55259889",
+    "termination_signal": null,
+    "timeout_seconds": 180,
+    "wall_seconds": 11.319719505961984,
+    "worker_result": null,
+    "worker_result_sha256": null
+  },
+  "zip_sha256": "c79b4019fe545065fd343f94ba995a66e780b2dd99bd9c99fbf31a561bf2d082"
+}

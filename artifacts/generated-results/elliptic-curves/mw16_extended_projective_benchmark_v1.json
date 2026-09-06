@@ -1,0 +1,478 @@
+{
+  "claim_boundary": "Exactly three predetermined prime tables per family, all five families equally represented; compute every projective residue, including infinity. One worker,20 seconds per case and300 seconds total; preserve failure without retry. Verify complete framing, singularity markers and Hasse bounds, plus five independent character sums per table. No catalogue, known record equation/parameter/point/rank/j-invariant or jump label is read. No full cache, new parameter sweep or point search is authorized by this benchmark. Runtime extrapolations are descriptive, not mathematical bounds.",
+  "cost_gate_passed": true,
+  "direct_character_sums": 75,
+  "projected_serial_seconds": {
+    "a1-fibration-01": 1658.467601519223,
+    "a1-fibration-02": 1636.0685399959868,
+    "a1-fibration-03": 1627.2443462051228,
+    "a1-fibration-04": 1613.2692269312934,
+    "a1-fibration-05": 1619.2471016098655
+  },
+  "protocol_sha256": "80806a318042cd41fddeb1838d00c486094565c0966f82a29c2110b0c6674773",
+  "rows": [
+    {
+      "direct_checks": [
+        [
+          0,
+          -15
+        ],
+        [
+          1366,
+          -68
+        ],
+        [
+          2732,
+          66
+        ],
+        [
+          4098,
+          106
+        ],
+        [
+          4099,
+          40
+        ]
+      ],
+      "family": "a1-fibration-01",
+      "prime": 4099,
+      "projective_rows": 4100,
+      "raw_sha256": "b8a669d64a729e6d13a38e1f18deb335727f328cd3d7ec04dbb82593bb806041",
+      "table_sha256": "941561b4bcd40c2da1cae780c22f3868b94b2e9677e15c330a5339c34b9472f3",
+      "wall_seconds": 0.1283216819865629
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          -79
+        ],
+        [
+          5916,
+          -107
+        ],
+        [
+          11832,
+          -72
+        ],
+        [
+          17748,
+          -23
+        ],
+        [
+          17749,
+          -145
+        ]
+      ],
+      "family": "a1-fibration-01",
+      "prime": 17749,
+      "projective_rows": 17750,
+      "raw_sha256": "f5448998e0eeee5ed6ad176bb3187b04111d3080203af2650745d3fbb1bbf465",
+      "table_sha256": "aa8b5e12f64e0f7bb9a3af6020f853bb7ebf1086f6b0f86998a8a88cf2273342",
+      "wall_seconds": 0.2807114339666441
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          -193
+        ],
+        [
+          10916,
+          16
+        ],
+        [
+          21832,
+          65
+        ],
+        [
+          32748,
+          -161
+        ],
+        [
+          32749,
+          -234
+        ]
+      ],
+      "family": "a1-fibration-01",
+      "prime": 32749,
+      "projective_rows": 32750,
+      "raw_sha256": "f6b52bfd401757f5860757b1b394380b285e83574f13c3eed1146812216e8dee",
+      "table_sha256": "2dbc2a13c347cbf069dcaf6ef1d835e325a4913abf4a7b36ddcf14bd0425bb5c",
+      "wall_seconds": 0.4331563540035859
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          44
+        ],
+        [
+          1366,
+          71
+        ],
+        [
+          2732,
+          -93
+        ],
+        [
+          4098,
+          -78
+        ],
+        [
+          4099,
+          84
+        ]
+      ],
+      "family": "a1-fibration-02",
+      "prime": 4099,
+      "projective_rows": 4100,
+      "raw_sha256": "b53a0dbce4e606b99306c2f0c5c823f56fdb75f0fabc3625bee192fdc16cbf49",
+      "table_sha256": "94303f8cf60847142c5f2c2b7740e13298e59a01d7750d0818bbe9fe63543eae",
+      "wall_seconds": 0.12658858497161418
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          -106
+        ],
+        [
+          5916,
+          -152
+        ],
+        [
+          11832,
+          -70
+        ],
+        [
+          17748,
+          -164
+        ],
+        [
+          17749,
+          -194
+        ]
+      ],
+      "family": "a1-fibration-02",
+      "prime": 17749,
+      "projective_rows": 17750,
+      "raw_sha256": "bbc1e33ba23fb49f76b15310295aacfb5ee0369e8f79e7357190b3b6af8c4da3",
+      "table_sha256": "958deb0fe74e78c1d54ddd20e48651aa66d721eaac1c87be09122ad22a3961bb",
+      "wall_seconds": 0.2818601749604568
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          -179
+        ],
+        [
+          10916,
+          298
+        ],
+        [
+          21832,
+          106
+        ],
+        [
+          32748,
+          -125
+        ],
+        [
+          32749,
+          69
+        ]
+      ],
+      "family": "a1-fibration-02",
+      "prime": 32749,
+      "projective_rows": 32750,
+      "raw_sha256": "78836e12aa53b5b3c1086dc4efc5cc088c8f35ac38e2ba2953bd79d9219e2f5e",
+      "table_sha256": "b8bb11b305a61b656ce6ce2fab2a8fbdb6ffbb437543027bbc9a1f17aaf865e2",
+      "wall_seconds": 0.43305087997578084
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          25
+        ],
+        [
+          1366,
+          68
+        ],
+        [
+          2732,
+          -68
+        ],
+        [
+          4098,
+          -20
+        ],
+        [
+          4099,
+          null
+        ]
+      ],
+      "family": "a1-fibration-03",
+      "prime": 4099,
+      "projective_rows": 4100,
+      "raw_sha256": "cc80e0eec5ca5e239824e276861908b508f59b82f54eb7f4729a8d25d91c9da6",
+      "table_sha256": "ac7197bae315e04a111cbb27ce15c48a7cfeb5763605b5c915f66bffc0e8782f",
+      "wall_seconds": 0.12590582494158298
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          -28
+        ],
+        [
+          5916,
+          -22
+        ],
+        [
+          11832,
+          -130
+        ],
+        [
+          17748,
+          -102
+        ],
+        [
+          17749,
+          null
+        ]
+      ],
+      "family": "a1-fibration-03",
+      "prime": 17749,
+      "projective_rows": 17750,
+      "raw_sha256": "99d1d633579e31b2dee407818b6f0f3f3fcac4e2f76c8710f0d15be27d0d81ba",
+      "table_sha256": "49b5e768f2c37763d9d72fba5d87ce499fbb6f83ada420602d68acf61a83019c",
+      "wall_seconds": 0.27997721801511943
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          -245
+        ],
+        [
+          10916,
+          -224
+        ],
+        [
+          21832,
+          -46
+        ],
+        [
+          32748,
+          64
+        ],
+        [
+          32749,
+          null
+        ]
+      ],
+      "family": "a1-fibration-03",
+      "prime": 32749,
+      "projective_rows": 32750,
+      "raw_sha256": "8e38b6a0cb21f10d501512087314d9655b74202e57e04a54706ed01a0c3151e9",
+      "table_sha256": "2689a7eaaf38cdb9934e64efe482a7ead9e08ceb3d40dde9a74203e5aec649b4",
+      "wall_seconds": 0.433526050997898
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          -104
+        ],
+        [
+          1366,
+          -74
+        ],
+        [
+          2732,
+          12
+        ],
+        [
+          4098,
+          -116
+        ],
+        [
+          4099,
+          84
+        ]
+      ],
+      "family": "a1-fibration-04",
+      "prime": 4099,
+      "projective_rows": 4100,
+      "raw_sha256": "cdea45c256fc31f7d01af090fe63435df892735f1f88e01ab13724ba68a87891",
+      "table_sha256": "e3df68b080841a31ec22f76060c1d58c6d4a5fab2b3e70ab8efabc521d0d0fcf",
+      "wall_seconds": 0.12482451903633773
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          -158
+        ],
+        [
+          5916,
+          -70
+        ],
+        [
+          11832,
+          106
+        ],
+        [
+          17748,
+          110
+        ],
+        [
+          17749,
+          86
+        ]
+      ],
+      "family": "a1-fibration-04",
+      "prime": 17749,
+      "projective_rows": 17750,
+      "raw_sha256": "d27e7d360ab122fb1af956570da9f6bb1e5e49452562e4f5b02f0f0778b28283",
+      "table_sha256": "71af561491400655a6228ce480a7ceadc73d20762b104b7bf1ae404daa7cf0b5",
+      "wall_seconds": 0.2794321479741484
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          -63
+        ],
+        [
+          10916,
+          -168
+        ],
+        [
+          21832,
+          -114
+        ],
+        [
+          32748,
+          66
+        ],
+        [
+          32749,
+          160
+        ]
+      ],
+      "family": "a1-fibration-04",
+      "prime": 32749,
+      "projective_rows": 32750,
+      "raw_sha256": "05bcd445f83eb78e2e14f3efcc5ab1e902510c3af96b88e60d6c8dddb062b39d",
+      "table_sha256": "36a02aba3fa19c108040da8532bb89ee0b5e39311a5cb9ee97745d523fd9ec99",
+      "wall_seconds": 0.43315037502907217
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          14
+        ],
+        [
+          1366,
+          38
+        ],
+        [
+          2732,
+          -92
+        ],
+        [
+          4098,
+          null
+        ],
+        [
+          4099,
+          124
+        ]
+      ],
+      "family": "a1-fibration-05",
+      "prime": 4099,
+      "projective_rows": 4100,
+      "raw_sha256": "578f47b73e9aa770577a9a3772f711f4aa5db3ab5b9f656e5694f6272342e702",
+      "table_sha256": "506c95c51fa021427c760a64f1e219eaf921f233b0ea258df23530c9fa32c126",
+      "wall_seconds": 0.12528704898431897
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          114
+        ],
+        [
+          5916,
+          -8
+        ],
+        [
+          11832,
+          70
+        ],
+        [
+          17748,
+          null
+        ],
+        [
+          17749,
+          -74
+        ]
+      ],
+      "family": "a1-fibration-05",
+      "prime": 17749,
+      "projective_rows": 17750,
+      "raw_sha256": "42149606819ba37d8065f1883a374baee51f0ac9515c4f8eadb9608302fdad43",
+      "table_sha256": "54057a6d18647ad177e444de3a551951af1ab6b5441fd74376a1a26275cd9838",
+      "wall_seconds": 0.2799473280319944
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          32
+        ],
+        [
+          10916,
+          -150
+        ],
+        [
+          21832,
+          88
+        ],
+        [
+          32748,
+          null
+        ],
+        [
+          32749,
+          157
+        ]
+      ],
+      "family": "a1-fibration-05",
+      "prime": 32749,
+      "projective_rows": 32750,
+      "raw_sha256": "8babe4654a49ebd29bdc32565766a819c0ccddd25a7fbf3aa7c2be296d66de60",
+      "table_sha256": "5521c0a5a260e77c7bf6c70f1c1fbbf2eb7dee5cd71bc1b12785c4fda5409f3a",
+      "wall_seconds": 0.43154778401367366
+    }
+  ],
+  "schema": "elliptic-curves.mw16-extended-projective-benchmark-result.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_five_mw16_atlas_v1.json": "88a8c61c2722394bb812da601e24ea2c19e54361eef4b0fe9c7924e78c828801",
+    "elliptic-curves/cas/benchmark_extended_projective_trace_cache_v2.py": "d771dfa409d4002bfbe111433501a8433d53ccccf5095ea16998d709f3bac822",
+    "elliptic-curves/cas/benchmark_mw16_extended_projective_tables.py": "3cb596d2bd56d0736eedfbe6de8df7ccee0e4709fbcecb0210f06d0a737cb1b4",
+    "elliptic-curves/cas/benchmark_r17_extended_prime_traces.py": "0239593edaa2e1dd19a5ac0fe18652cd0ccb7cddeb9046c40fa3da7f9e97d47d",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9",
+    "elliptic-curves/cas/compact_mw16_specialization.py": "f6aeab97b980bc6e9a5db71675d4f47fbf3ac15cac5f35f2ea310a77e2a8a7c0",
+    "elliptic-curves/cas/mod2_reduction_independence.py": "c5963952d1a9089416479671b788b6437dbba26591d796646022f4e9dddd0c70",
+    "elliptic-curves/cas/research_runtime/store.py": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965",
+    "elliptic-curves/cas/research_runtime/supervisor.py": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233"
+  },
+  "status": "PASS"
+}

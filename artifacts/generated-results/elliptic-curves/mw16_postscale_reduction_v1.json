@@ -1,0 +1,1772 @@
+{
+  "claim_boundary": "Exactly ten already certified p-adic first-scale balls, at primes5 or13. Test all next residues for good displayed reduction and run one bounded six-level coefficient tree on each divided polynomial to decide whether a second scale is possible anywhere in that ball. No recursive third-scale analysis, parameter search, point search or live score alteration. Any second-scale ball or resource cap remains unresolved for the one-scale minimality claim.",
+  "protocol_sha256": "512b4cc803e252fd458f34b6c580bfaf0876c9f13e306de62d867ec5cd7acdc2",
+  "rows": [
+    {
+      "cells": [
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 0,
+          "parameter_modulus": 125,
+          "parameter_residue": 12,
+          "reduced_A": 3,
+          "reduced_B": 0
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 1,
+          "parameter_modulus": 125,
+          "parameter_residue": 37,
+          "reduced_A": 3,
+          "reduced_B": 0
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 2,
+          "parameter_modulus": 125,
+          "parameter_residue": 62,
+          "reduced_A": 1,
+          "reduced_B": 4
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 3,
+          "parameter_modulus": 125,
+          "parameter_residue": 87,
+          "reduced_A": 2,
+          "reduced_B": 2
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 4,
+          "parameter_modulus": 125,
+          "parameter_residue": 112,
+          "reduced_A": 1,
+          "reduced_B": 4
+        }
+      ],
+      "chart": "affine",
+      "family": "a1-fibration-01",
+      "first_modulus": 25,
+      "first_residue": 12,
+      "no_second_scale": true,
+      "prime": 5,
+      "second_scale_tree": {
+        "levels": [
+          {
+            "admitted_residues": [],
+            "depth": 1,
+            "excluded_residues": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "modulus": 5,
+            "unresolved_residues": []
+          }
+        ],
+        "scale_balls": [],
+        "status": "COMPLETE_RESIDUE_CLASSIFICATION"
+      }
+    },
+    {
+      "cells": [
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 0,
+          "parameter_modulus": 169,
+          "parameter_residue": 6,
+          "reduced_A": 0,
+          "reduced_B": 9
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 1,
+          "parameter_modulus": 169,
+          "parameter_residue": 19,
+          "reduced_A": 0,
+          "reduced_B": 4
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 2,
+          "parameter_modulus": 169,
+          "parameter_residue": 32,
+          "reduced_A": 0,
+          "reduced_B": 9
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 3,
+          "parameter_modulus": 169,
+          "parameter_residue": 45,
+          "reduced_A": 0,
+          "reduced_B": 9
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 4,
+          "parameter_modulus": 169,
+          "parameter_residue": 58,
+          "reduced_A": 0,
+          "reduced_B": 4
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 5,
+          "parameter_modulus": 169,
+          "parameter_residue": 71,
+          "reduced_A": 0,
+          "reduced_B": 9
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 6,
+          "parameter_modulus": 169,
+          "parameter_residue": 84,
+          "reduced_A": 0,
+          "reduced_B": 2
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 7,
+          "parameter_modulus": 169,
+          "parameter_residue": 97,
+          "reduced_A": 0,
+          "reduced_B": 2
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 8,
+          "parameter_modulus": 169,
+          "parameter_residue": 110,
+          "reduced_A": 0,
+          "reduced_B": 4
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 9,
+          "parameter_modulus": 169,
+          "parameter_residue": 123,
+          "reduced_A": 0,
+          "reduced_B": 5
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 10,
+          "parameter_modulus": 169,
+          "parameter_residue": 136,
+          "reduced_A": 0,
+          "reduced_B": 4
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 11,
+          "parameter_modulus": 169,
+          "parameter_residue": 149,
+          "reduced_A": 0,
+          "reduced_B": 2
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 12,
+          "parameter_modulus": 169,
+          "parameter_residue": 162,
+          "reduced_A": 0,
+          "reduced_B": 2
+        }
+      ],
+      "chart": "affine",
+      "family": "a1-fibration-01",
+      "first_modulus": 13,
+      "first_residue": 6,
+      "no_second_scale": true,
+      "prime": 13,
+      "second_scale_tree": {
+        "levels": [
+          {
+            "admitted_residues": [],
+            "depth": 1,
+            "excluded_residues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "modulus": 13,
+            "unresolved_residues": []
+          }
+        ],
+        "scale_balls": [],
+        "status": "COMPLETE_RESIDUE_CLASSIFICATION"
+      }
+    },
+    {
+      "cells": [
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 0,
+          "parameter_modulus": 169,
+          "parameter_residue": 10,
+          "reduced_A": 9,
+          "reduced_B": 0
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 1,
+          "parameter_modulus": 169,
+          "parameter_residue": 23,
+          "reduced_A": 8,
+          "reduced_B": 5
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 2,
+          "parameter_modulus": 169,
+          "parameter_residue": 36,
+          "reduced_A": 4,
+          "reduced_B": 12
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 3,
+          "parameter_modulus": 169,
+          "parameter_residue": 49,
+          "reduced_A": 10,
+          "reduced_B": 12
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 4,
+          "parameter_modulus": 169,
+          "parameter_residue": 62,
+          "reduced_A": 0,
+          "reduced_B": 11
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 5,
+          "parameter_modulus": 169,
+          "parameter_residue": 75,
+          "reduced_A": 0,
+          "reduced_B": 4
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 6,
+          "parameter_modulus": 169,
+          "parameter_residue": 88,
+          "reduced_A": 10,
+          "reduced_B": 1
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 7,
+          "parameter_modulus": 169,
+          "parameter_residue": 101,
+          "reduced_A": 4,
+          "reduced_B": 1
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 8,
+          "parameter_modulus": 169,
+          "parameter_residue": 114,
+          "reduced_A": 8,
+          "reduced_B": 5
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 9,
+          "parameter_modulus": 169,
+          "parameter_residue": 127,
+          "reduced_A": 9,
+          "reduced_B": 3
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 10,
+          "parameter_modulus": 169,
+          "parameter_residue": 140,
+          "reduced_A": 7,
+          "reduced_B": 0
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 11,
+          "parameter_modulus": 169,
+          "parameter_residue": 153,
+          "reduced_A": 2,
+          "reduced_B": 3
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 12,
+          "parameter_modulus": 169,
+          "parameter_residue": 166,
+          "reduced_A": 7,
+          "reduced_B": 8
+        }
+      ],
+      "chart": "affine",
+      "family": "a1-fibration-01",
+      "first_modulus": 13,
+      "first_residue": 10,
+      "no_second_scale": true,
+      "prime": 13,
+      "second_scale_tree": {
+        "levels": [
+          {
+            "admitted_residues": [],
+            "depth": 1,
+            "excluded_residues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "modulus": 13,
+            "unresolved_residues": []
+          }
+        ],
+        "scale_balls": [],
+        "status": "COMPLETE_RESIDUE_CLASSIFICATION"
+      }
+    },
+    {
+      "cells": [
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 0,
+          "parameter_modulus": 169,
+          "parameter_residue": 11,
+          "reduced_A": 11,
+          "reduced_B": 5
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 1,
+          "parameter_modulus": 169,
+          "parameter_residue": 24,
+          "reduced_A": 4,
+          "reduced_B": 1
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 2,
+          "parameter_modulus": 169,
+          "parameter_residue": 37,
+          "reduced_A": 1,
+          "reduced_B": 0
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 3,
+          "parameter_modulus": 169,
+          "parameter_residue": 50,
+          "reduced_A": 2,
+          "reduced_B": 4
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 4,
+          "parameter_modulus": 169,
+          "parameter_residue": 63,
+          "reduced_A": 7,
+          "reduced_B": 8
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 5,
+          "parameter_modulus": 169,
+          "parameter_residue": 76,
+          "reduced_A": 3,
+          "reduced_B": 0
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 6,
+          "parameter_modulus": 169,
+          "parameter_residue": 89,
+          "reduced_A": 3,
+          "reduced_B": 0
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 7,
+          "parameter_modulus": 169,
+          "parameter_residue": 102,
+          "reduced_A": 7,
+          "reduced_B": 8
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 8,
+          "parameter_modulus": 169,
+          "parameter_residue": 115,
+          "reduced_A": 2,
+          "reduced_B": 4
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 9,
+          "parameter_modulus": 169,
+          "parameter_residue": 128,
+          "reduced_A": 1,
+          "reduced_B": 0
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 10,
+          "parameter_modulus": 169,
+          "parameter_residue": 141,
+          "reduced_A": 4,
+          "reduced_B": 1
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 11,
+          "parameter_modulus": 169,
+          "parameter_residue": 154,
+          "reduced_A": 11,
+          "reduced_B": 5
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 12,
+          "parameter_modulus": 169,
+          "parameter_residue": 167,
+          "reduced_A": 9,
+          "reduced_B": 3
+        }
+      ],
+      "chart": "affine",
+      "family": "a1-fibration-01",
+      "first_modulus": 13,
+      "first_residue": 11,
+      "no_second_scale": true,
+      "prime": 13,
+      "second_scale_tree": {
+        "levels": [
+          {
+            "admitted_residues": [],
+            "depth": 1,
+            "excluded_residues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "modulus": 13,
+            "unresolved_residues": []
+          }
+        ],
+        "scale_balls": [],
+        "status": "COMPLETE_RESIDUE_CLASSIFICATION"
+      }
+    },
+    {
+      "cells": [
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 0,
+          "parameter_modulus": 169,
+          "parameter_residue": 1,
+          "reduced_A": 1,
+          "reduced_B": 10
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 1,
+          "parameter_modulus": 169,
+          "parameter_residue": 14,
+          "reduced_A": 4,
+          "reduced_B": 11
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 2,
+          "parameter_modulus": 169,
+          "parameter_residue": 27,
+          "reduced_A": 12,
+          "reduced_B": 11
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 3,
+          "parameter_modulus": 169,
+          "parameter_residue": 40,
+          "reduced_A": 12,
+          "reduced_B": 2
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 4,
+          "parameter_modulus": 169,
+          "parameter_residue": 53,
+          "reduced_A": 4,
+          "reduced_B": 2
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 5,
+          "parameter_modulus": 169,
+          "parameter_residue": 66,
+          "reduced_A": 1,
+          "reduced_B": 3
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 6,
+          "parameter_modulus": 169,
+          "parameter_residue": 79,
+          "reduced_A": 3,
+          "reduced_B": 10
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 7,
+          "parameter_modulus": 169,
+          "parameter_residue": 92,
+          "reduced_A": 10,
+          "reduced_B": 2
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 8,
+          "parameter_modulus": 169,
+          "parameter_residue": 105,
+          "reduced_A": 9,
+          "reduced_B": 10
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 9,
+          "parameter_modulus": 169,
+          "parameter_residue": 118,
+          "reduced_A": 0,
+          "reduced_B": 0
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 10,
+          "parameter_modulus": 169,
+          "parameter_residue": 131,
+          "reduced_A": 9,
+          "reduced_B": 3
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 11,
+          "parameter_modulus": 169,
+          "parameter_residue": 144,
+          "reduced_A": 10,
+          "reduced_B": 11
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 12,
+          "parameter_modulus": 169,
+          "parameter_residue": 157,
+          "reduced_A": 3,
+          "reduced_B": 3
+        }
+      ],
+      "chart": "affine",
+      "family": "a1-fibration-02",
+      "first_modulus": 13,
+      "first_residue": 1,
+      "no_second_scale": true,
+      "prime": 13,
+      "second_scale_tree": {
+        "levels": [
+          {
+            "admitted_residues": [],
+            "depth": 1,
+            "excluded_residues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              10,
+              11,
+              12
+            ],
+            "modulus": 13,
+            "unresolved_residues": [
+              9
+            ]
+          },
+          {
+            "admitted_residues": [],
+            "depth": 2,
+            "excluded_residues": [],
+            "modulus": 169,
+            "unresolved_residues": [
+              9,
+              22,
+              35,
+              48,
+              61,
+              74,
+              87,
+              100,
+              113,
+              126,
+              139,
+              152,
+              165
+            ]
+          },
+          {
+            "admitted_residues": [],
+            "depth": 3,
+            "excluded_residues": [
+              9,
+              22,
+              35,
+              48,
+              61,
+              74,
+              87,
+              100,
+              113,
+              126,
+              139,
+              152,
+              165,
+              178,
+              191,
+              204,
+              217,
+              230,
+              243,
+              256,
+              269,
+              282,
+              295,
+              308,
+              321,
+              334,
+              347,
+              360,
+              373,
+              386,
+              399,
+              412,
+              425,
+              438,
+              451,
+              464,
+              477,
+              490,
+              503,
+              516,
+              529,
+              542,
+              555,
+              568,
+              581,
+              594,
+              607,
+              620,
+              633,
+              646,
+              659,
+              672,
+              685,
+              698,
+              711,
+              724,
+              737,
+              750,
+              763,
+              776,
+              789,
+              802,
+              815,
+              828,
+              841,
+              854,
+              867,
+              880,
+              893,
+              906,
+              919,
+              932,
+              945,
+              958,
+              971,
+              984,
+              997,
+              1010,
+              1023,
+              1036,
+              1049,
+              1062,
+              1075,
+              1088,
+              1101,
+              1114,
+              1127,
+              1140,
+              1153,
+              1166,
+              1179,
+              1192,
+              1205,
+              1218,
+              1231,
+              1244,
+              1257,
+              1270,
+              1283,
+              1296,
+              1309,
+              1322,
+              1335,
+              1348,
+              1361,
+              1374,
+              1387,
+              1400,
+              1413,
+              1426,
+              1439,
+              1452,
+              1465,
+              1478,
+              1491,
+              1504,
+              1517,
+              1530,
+              1543,
+              1556,
+              1569,
+              1582,
+              1595,
+              1608,
+              1621,
+              1634,
+              1647,
+              1660,
+              1673,
+              1686,
+              1699,
+              1712,
+              1725,
+              1738,
+              1751,
+              1764,
+              1777,
+              1790,
+              1803,
+              1816,
+              1829,
+              1842,
+              1855,
+              1868,
+              1881,
+              1894,
+              1907,
+              1920,
+              1933,
+              1946,
+              1959,
+              1972,
+              1985,
+              1998,
+              2011,
+              2024,
+              2037,
+              2050,
+              2063,
+              2076,
+              2089,
+              2102,
+              2115,
+              2128,
+              2141,
+              2154,
+              2167,
+              2180,
+              2193
+            ],
+            "modulus": 2197,
+            "unresolved_residues": []
+          }
+        ],
+        "scale_balls": [],
+        "status": "COMPLETE_RESIDUE_CLASSIFICATION"
+      }
+    },
+    {
+      "cells": [
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 0,
+          "parameter_modulus": 169,
+          "parameter_residue": 0,
+          "reduced_A": 1,
+          "reduced_B": 3
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 1,
+          "parameter_modulus": 169,
+          "parameter_residue": 13,
+          "reduced_A": 12,
+          "reduced_B": 11
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 2,
+          "parameter_modulus": 169,
+          "parameter_residue": 26,
+          "reduced_A": 3,
+          "reduced_B": 3
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 3,
+          "parameter_modulus": 169,
+          "parameter_residue": 39,
+          "reduced_A": 0,
+          "reduced_B": 0
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 4,
+          "parameter_modulus": 169,
+          "parameter_residue": 52,
+          "reduced_A": 3,
+          "reduced_B": 10
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 5,
+          "parameter_modulus": 169,
+          "parameter_residue": 65,
+          "reduced_A": 12,
+          "reduced_B": 2
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 6,
+          "parameter_modulus": 169,
+          "parameter_residue": 78,
+          "reduced_A": 1,
+          "reduced_B": 10
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 7,
+          "parameter_modulus": 169,
+          "parameter_residue": 91,
+          "reduced_A": 9,
+          "reduced_B": 3
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 8,
+          "parameter_modulus": 169,
+          "parameter_residue": 104,
+          "reduced_A": 10,
+          "reduced_B": 2
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 9,
+          "parameter_modulus": 169,
+          "parameter_residue": 117,
+          "reduced_A": 4,
+          "reduced_B": 2
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 10,
+          "parameter_modulus": 169,
+          "parameter_residue": 130,
+          "reduced_A": 4,
+          "reduced_B": 11
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 11,
+          "parameter_modulus": 169,
+          "parameter_residue": 143,
+          "reduced_A": 10,
+          "reduced_B": 11
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 12,
+          "parameter_modulus": 169,
+          "parameter_residue": 156,
+          "reduced_A": 9,
+          "reduced_B": 10
+        }
+      ],
+      "chart": "affine",
+      "family": "a1-fibration-03",
+      "first_modulus": 13,
+      "first_residue": 0,
+      "no_second_scale": true,
+      "prime": 13,
+      "second_scale_tree": {
+        "levels": [
+          {
+            "admitted_residues": [],
+            "depth": 1,
+            "excluded_residues": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "modulus": 13,
+            "unresolved_residues": [
+              3
+            ]
+          },
+          {
+            "admitted_residues": [],
+            "depth": 2,
+            "excluded_residues": [
+              3,
+              16,
+              29,
+              42,
+              55,
+              68,
+              81,
+              94,
+              107,
+              120,
+              133,
+              146,
+              159
+            ],
+            "modulus": 169,
+            "unresolved_residues": []
+          }
+        ],
+        "scale_balls": [],
+        "status": "COMPLETE_RESIDUE_CLASSIFICATION"
+      }
+    },
+    {
+      "cells": [
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 0,
+          "parameter_modulus": 169,
+          "parameter_residue": 5,
+          "reduced_A": 6,
+          "reduced_B": 4
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 1,
+          "parameter_modulus": 169,
+          "parameter_residue": 18,
+          "reduced_A": 9,
+          "reduced_B": 0
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 2,
+          "parameter_modulus": 169,
+          "parameter_residue": 31,
+          "reduced_A": 7,
+          "reduced_B": 5
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 3,
+          "parameter_modulus": 169,
+          "parameter_residue": 44,
+          "reduced_A": 0,
+          "reduced_B": 4
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 4,
+          "parameter_modulus": 169,
+          "parameter_residue": 57,
+          "reduced_A": 1,
+          "reduced_B": 10
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 5,
+          "parameter_modulus": 169,
+          "parameter_residue": 70,
+          "reduced_A": 10,
+          "reduced_B": 12
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 6,
+          "parameter_modulus": 169,
+          "parameter_residue": 83,
+          "reduced_A": 1,
+          "reduced_B": 1
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 7,
+          "parameter_modulus": 169,
+          "parameter_residue": 96,
+          "reduced_A": 0,
+          "reduced_B": 9
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 8,
+          "parameter_modulus": 169,
+          "parameter_residue": 109,
+          "reduced_A": 7,
+          "reduced_B": 5
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 9,
+          "parameter_modulus": 169,
+          "parameter_residue": 122,
+          "reduced_A": 9,
+          "reduced_B": 12
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 10,
+          "parameter_modulus": 169,
+          "parameter_residue": 135,
+          "reduced_A": 6,
+          "reduced_B": 3
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 11,
+          "parameter_modulus": 169,
+          "parameter_residue": 148,
+          "reduced_A": 11,
+          "reduced_B": 5
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 12,
+          "parameter_modulus": 169,
+          "parameter_residue": 161,
+          "reduced_A": 11,
+          "reduced_B": 8
+        }
+      ],
+      "chart": "affine",
+      "family": "a1-fibration-04",
+      "first_modulus": 13,
+      "first_residue": 5,
+      "no_second_scale": true,
+      "prime": 13,
+      "second_scale_tree": {
+        "levels": [
+          {
+            "admitted_residues": [],
+            "depth": 1,
+            "excluded_residues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "modulus": 13,
+            "unresolved_residues": []
+          }
+        ],
+        "scale_balls": [],
+        "status": "COMPLETE_RESIDUE_CLASSIFICATION"
+      }
+    },
+    {
+      "cells": [
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 0,
+          "parameter_modulus": 169,
+          "parameter_residue": 12,
+          "reduced_A": 7,
+          "reduced_B": 8
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 1,
+          "parameter_modulus": 169,
+          "parameter_residue": 25,
+          "reduced_A": 11,
+          "reduced_B": 5
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 2,
+          "parameter_modulus": 169,
+          "parameter_residue": 38,
+          "reduced_A": 1,
+          "reduced_B": 0
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 3,
+          "parameter_modulus": 169,
+          "parameter_residue": 51,
+          "reduced_A": 3,
+          "reduced_B": 0
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 4,
+          "parameter_modulus": 169,
+          "parameter_residue": 64,
+          "reduced_A": 4,
+          "reduced_B": 1
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 5,
+          "parameter_modulus": 169,
+          "parameter_residue": 77,
+          "reduced_A": 4,
+          "reduced_B": 1
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 6,
+          "parameter_modulus": 169,
+          "parameter_residue": 90,
+          "reduced_A": 3,
+          "reduced_B": 0
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 7,
+          "parameter_modulus": 169,
+          "parameter_residue": 103,
+          "reduced_A": 1,
+          "reduced_B": 0
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 8,
+          "parameter_modulus": 169,
+          "parameter_residue": 116,
+          "reduced_A": 11,
+          "reduced_B": 5
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 9,
+          "parameter_modulus": 169,
+          "parameter_residue": 129,
+          "reduced_A": 7,
+          "reduced_B": 8
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 10,
+          "parameter_modulus": 169,
+          "parameter_residue": 142,
+          "reduced_A": 2,
+          "reduced_B": 4
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 11,
+          "parameter_modulus": 169,
+          "parameter_residue": 155,
+          "reduced_A": 9,
+          "reduced_B": 3
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 12,
+          "parameter_modulus": 169,
+          "parameter_residue": 168,
+          "reduced_A": 2,
+          "reduced_B": 4
+        }
+      ],
+      "chart": "affine",
+      "family": "a1-fibration-04",
+      "first_modulus": 13,
+      "first_residue": 12,
+      "no_second_scale": true,
+      "prime": 13,
+      "second_scale_tree": {
+        "levels": [
+          {
+            "admitted_residues": [],
+            "depth": 1,
+            "excluded_residues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "modulus": 13,
+            "unresolved_residues": []
+          }
+        ],
+        "scale_balls": [],
+        "status": "COMPLETE_RESIDUE_CLASSIFICATION"
+      }
+    },
+    {
+      "cells": [
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 0,
+          "parameter_modulus": 169,
+          "parameter_residue": 0,
+          "reduced_A": 0,
+          "reduced_B": 4
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 1,
+          "parameter_modulus": 169,
+          "parameter_residue": 13,
+          "reduced_A": 0,
+          "reduced_B": 4
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 2,
+          "parameter_modulus": 169,
+          "parameter_residue": 26,
+          "reduced_A": 0,
+          "reduced_B": 2
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 3,
+          "parameter_modulus": 169,
+          "parameter_residue": 39,
+          "reduced_A": 0,
+          "reduced_B": 4
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 4,
+          "parameter_modulus": 169,
+          "parameter_residue": 52,
+          "reduced_A": 0,
+          "reduced_B": 9
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 5,
+          "parameter_modulus": 169,
+          "parameter_residue": 65,
+          "reduced_A": 0,
+          "reduced_B": 9
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 6,
+          "parameter_modulus": 169,
+          "parameter_residue": 78,
+          "reduced_A": 0,
+          "reduced_B": 2
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 7,
+          "parameter_modulus": 169,
+          "parameter_residue": 91,
+          "reduced_A": 0,
+          "reduced_B": 5
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 8,
+          "parameter_modulus": 169,
+          "parameter_residue": 104,
+          "reduced_A": 0,
+          "reduced_B": 2
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 9,
+          "parameter_modulus": 169,
+          "parameter_residue": 117,
+          "reduced_A": 0,
+          "reduced_B": 9
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 10,
+          "parameter_modulus": 169,
+          "parameter_residue": 130,
+          "reduced_A": 0,
+          "reduced_B": 9
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 11,
+          "parameter_modulus": 169,
+          "parameter_residue": 143,
+          "reduced_A": 0,
+          "reduced_B": 4
+        },
+        {
+          "good_reduction_after_one_scale": true,
+          "next_digit": 12,
+          "parameter_modulus": 169,
+          "parameter_residue": 156,
+          "reduced_A": 0,
+          "reduced_B": 2
+        }
+      ],
+      "chart": "infinity",
+      "family": "a1-fibration-04",
+      "first_modulus": 13,
+      "first_residue": 0,
+      "no_second_scale": true,
+      "prime": 13,
+      "second_scale_tree": {
+        "levels": [
+          {
+            "admitted_residues": [],
+            "depth": 1,
+            "excluded_residues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "modulus": 13,
+            "unresolved_residues": []
+          }
+        ],
+        "scale_balls": [],
+        "status": "COMPLETE_RESIDUE_CLASSIFICATION"
+      }
+    },
+    {
+      "cells": [
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 0,
+          "parameter_modulus": 169,
+          "parameter_residue": 2,
+          "reduced_A": 1,
+          "reduced_B": 3
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 1,
+          "parameter_modulus": 169,
+          "parameter_residue": 15,
+          "reduced_A": 10,
+          "reduced_B": 11
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 2,
+          "parameter_modulus": 169,
+          "parameter_residue": 28,
+          "reduced_A": 4,
+          "reduced_B": 2
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 3,
+          "parameter_modulus": 169,
+          "parameter_residue": 41,
+          "reduced_A": 9,
+          "reduced_B": 3
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 4,
+          "parameter_modulus": 169,
+          "parameter_residue": 54,
+          "reduced_A": 12,
+          "reduced_B": 2
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 5,
+          "parameter_modulus": 169,
+          "parameter_residue": 67,
+          "reduced_A": 0,
+          "reduced_B": 0
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 6,
+          "parameter_modulus": 169,
+          "parameter_residue": 80,
+          "reduced_A": 12,
+          "reduced_B": 11
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 7,
+          "parameter_modulus": 169,
+          "parameter_residue": 93,
+          "reduced_A": 9,
+          "reduced_B": 10
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 8,
+          "parameter_modulus": 169,
+          "parameter_residue": 106,
+          "reduced_A": 4,
+          "reduced_B": 11
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 9,
+          "parameter_modulus": 169,
+          "parameter_residue": 119,
+          "reduced_A": 10,
+          "reduced_B": 2
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 10,
+          "parameter_modulus": 169,
+          "parameter_residue": 132,
+          "reduced_A": 1,
+          "reduced_B": 10
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 11,
+          "parameter_modulus": 169,
+          "parameter_residue": 145,
+          "reduced_A": 3,
+          "reduced_B": 10
+        },
+        {
+          "good_reduction_after_one_scale": false,
+          "next_digit": 12,
+          "parameter_modulus": 169,
+          "parameter_residue": 158,
+          "reduced_A": 3,
+          "reduced_B": 3
+        }
+      ],
+      "chart": "affine",
+      "family": "a1-fibration-05",
+      "first_modulus": 13,
+      "first_residue": 2,
+      "no_second_scale": true,
+      "prime": 13,
+      "second_scale_tree": {
+        "levels": [
+          {
+            "admitted_residues": [],
+            "depth": 1,
+            "excluded_residues": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "modulus": 13,
+            "unresolved_residues": [
+              5
+            ]
+          },
+          {
+            "admitted_residues": [],
+            "depth": 2,
+            "excluded_residues": [],
+            "modulus": 169,
+            "unresolved_residues": [
+              5,
+              18,
+              31,
+              44,
+              57,
+              70,
+              83,
+              96,
+              109,
+              122,
+              135,
+              148,
+              161
+            ]
+          },
+          {
+            "admitted_residues": [],
+            "depth": 3,
+            "excluded_residues": [
+              5,
+              18,
+              31,
+              44,
+              57,
+              70,
+              83,
+              96,
+              109,
+              122,
+              135,
+              148,
+              161,
+              174,
+              187,
+              200,
+              213,
+              226,
+              239,
+              252,
+              265,
+              278,
+              291,
+              304,
+              317,
+              330,
+              343,
+              356,
+              369,
+              382,
+              395,
+              408,
+              421,
+              434,
+              447,
+              460,
+              473,
+              486,
+              499,
+              512,
+              525,
+              538,
+              551,
+              564,
+              577,
+              590,
+              603,
+              616,
+              629,
+              642,
+              655,
+              668,
+              681,
+              694,
+              707,
+              720,
+              733,
+              746,
+              759,
+              772,
+              785,
+              798,
+              811,
+              824,
+              837,
+              850,
+              863,
+              876,
+              889,
+              902,
+              915,
+              928,
+              941,
+              954,
+              967,
+              980,
+              993,
+              1006,
+              1019,
+              1032,
+              1045,
+              1058,
+              1071,
+              1084,
+              1097,
+              1110,
+              1123,
+              1136,
+              1149,
+              1162,
+              1175,
+              1188,
+              1201,
+              1214,
+              1227,
+              1240,
+              1253,
+              1266,
+              1279,
+              1292,
+              1305,
+              1318,
+              1331,
+              1344,
+              1357,
+              1370,
+              1383,
+              1396,
+              1409,
+              1422,
+              1435,
+              1448,
+              1461,
+              1474,
+              1487,
+              1500,
+              1513,
+              1526,
+              1539,
+              1552,
+              1565,
+              1578,
+              1591,
+              1604,
+              1617,
+              1630,
+              1643,
+              1656,
+              1669,
+              1682,
+              1695,
+              1708,
+              1721,
+              1734,
+              1747,
+              1760,
+              1773,
+              1786,
+              1799,
+              1812,
+              1825,
+              1838,
+              1851,
+              1864,
+              1877,
+              1890,
+              1903,
+              1916,
+              1929,
+              1942,
+              1955,
+              1968,
+              1981,
+              1994,
+              2007,
+              2020,
+              2033,
+              2046,
+              2059,
+              2072,
+              2085,
+              2098,
+              2111,
+              2124,
+              2137,
+              2150,
+              2163,
+              2176,
+              2189
+            ],
+            "modulus": 2197,
+            "unresolved_residues": []
+          }
+        ],
+        "scale_balls": [],
+        "status": "COMPLETE_RESIDUE_CLASSIFICATION"
+      }
+    }
+  ],
+  "schema": "elliptic-curves.mw16-postscale-reduction.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/mw16_score_prime_scalings_v1.json": "77786513b2869d87ee5ad460067fbee14a9b3db2be7daced7da104a764adb748",
+    "artifacts/local/elliptic-curves/mw16-score-prime-scalings-v1/ledger.json": "daea09ed49e4dc5b9a7679a6cfd5c3a87fd186dbfb34164bc790ae0b4adde2f4",
+    "elliptic-curves/cas/audit_mw16_postscale_reduction.py": "e444d40ad654631fc7b0a6ee09cac2d4781f5ac61281fe808fa9a601125def65",
+    "elliptic-curves/cas/classify_r17_other_small_prime_scalings.py": "349ad4e399f3c8641e2c74e2d3d203a7db722b9be76e6673badb12e7548211e0"
+  },
+  "status": "PASS_SINGLE_SCALE_CLASSIFICATION"
+}

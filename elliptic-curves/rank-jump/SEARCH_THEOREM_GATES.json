@@ -1,0 +1,117 @@
+{
+  "schema": "rank-jump.search-theorem-gates.v1",
+  "canonical_source": "elliptic-curves/rank-jump/RANK_JUMP_MECHANISM_THEOREMS.md",
+  "scope": "Construction and certification gates, not a rank predictor or authorization for a compute-heavy campaign.",
+  "gates": [
+    {
+      "id": "J1",
+      "required_inputs": [
+        "named generic subgroup and base change",
+        "generic mechanism dimension or certified upper bound",
+        "smooth specialization",
+        "exact specialized independence and relation evidence"
+      ],
+      "pass": "Report q = k - kernel_dimension modulo the specialized generic rational span.",
+      "fail": "Capacity below the requested contribution excludes only this mechanism for that contribution.",
+      "unknown": "An absent independence certificate leaves the rank contribution UNKNOWN."
+    },
+    {
+      "id": "J2",
+      "required_inputs": [
+        "exact point identities modulo the named generic rational span",
+        "rational relation matrix"
+      ],
+      "pass": "Use n - rank_Q(R) as an upper bound, attained only with an independent lower certificate.",
+      "fail": "Never substitute edge count or F2 signed-graph rank.",
+      "unknown": "Unverified candidate relations cannot prune a block."
+    },
+    {
+      "id": "J3",
+      "required_inputs": [
+        "squarefree quadratic radicands",
+        "pairwise disjoint geometric branch divisors",
+        "nonzero independent marked singleton characters"
+      ],
+      "pass": "Retain the full degree-2^m carrier or the product curve with its degree-2^(m-1) native lift.",
+      "fail": "A smaller quotient without its affine lift is insufficient for this marked block.",
+      "unknown": "Other unmarked sections and non-native constructions remain UNKNOWN."
+    },
+    {
+      "id": "J4",
+      "required_inputs": [
+        "integral even-degree homogeneous forms retaining nonsquare constants",
+        "nonzero pair resultants",
+        "one primitive nonbranch rational product point",
+        "real signs and all collision valuation parities, or exact factorization-free representatives"
+      ],
+      "pass": "Exact native square roots at the supplied parameter.",
+      "fail": "A nonzero native squareclass excludes this lift at this parameter only.",
+      "unknown": "Local product points, missing primes, branch values, or absent rational product points do not invoke the criterion."
+    },
+    {
+      "id": "J5",
+      "required_inputs": [
+        "complete collision clusters at all support primes",
+        "separate positivity proof"
+      ],
+      "pass": "A vertex cover supplies sufficient individual square tests.",
+      "fail": "An uncovered edge invalidates sufficiency from the cluster bounds alone.",
+      "unknown": "A smaller global squareclass image requires an additional global proof."
+    },
+    {
+      "id": "J6",
+      "required_inputs": [
+        "certified lattice minimum",
+        "complete bounded short-coset enumeration",
+        "proper native intersection class identity",
+        "exact smooth nonbranch rational intersection point"
+      ],
+      "pass": "Norm six gives a rational pair event with at most one quotient direction.",
+      "fail": "The degree of the whole triple intersection does not bound its individual component degrees.",
+      "unknown": "A rational global pair event need not lie at a supplied parameter."
+    }
+  ],
+  "next_tasks": [
+    {
+      "id": "short_triple_dictionary",
+      "priority": 1,
+      "population": "Existing 2853 co-split triples at 165 frozen published-R17 addresses only.",
+      "rule": "Residual trace norms four and six; total proper intersection degrees six and eight.",
+      "before_execution": [
+        "freeze input hashes and all worker/node/time bounds",
+        "checkpoint each coset",
+        "exclude rank labels and exceptional coordinates from rule execution"
+      ],
+      "success": "Exact rational incidences and a rational relation-rank bound, followed by independent quotient certification.",
+      "failure": "Bounded misses or timeouts do not exclude larger degrees or other dictionaries."
+    },
+    {
+      "id": "native_affine_image",
+      "priority": 2,
+      "target": "Product curves with their original native affine squareclass target.",
+      "success": "Certified point on the embedded curve in the zero class, or a complete labelled obstruction.",
+      "failure": "Jacobian rank, Selmer membership or an arbitrary Jacobian point is insufficient."
+    },
+    {
+      "id": "construct_pair_parameters",
+      "priority": 3,
+      "target": "Generic norm-six intersections selected from generic lattice data.",
+      "success": "Rational parameter from exact intersection, smooth fibre, verified lifts and independent quotient lower bound.",
+      "failure": "A soluble pair alone contributes at most one line; its full rank remains UNKNOWN."
+    },
+    {
+      "id": "quotient_then_visibility",
+      "priority": 4,
+      "target": "Candidate blocks with exact subgroup accounting.",
+      "success": "Verified contribution q and frozen search policy with separately masked exposure controls.",
+      "failure": "No masked recovery is a visibility outcome, not an existence theorem or new rank result."
+    }
+  ],
+  "non_claims": [
+    "No new specialized rank result.",
+    "No new parameter search.",
+    "No general theorem that these features predict the largest jumps.",
+    "No local-to-global principle for the product curves.",
+    "No retrospective rank labels in a prospective selector."
+  ]
+}

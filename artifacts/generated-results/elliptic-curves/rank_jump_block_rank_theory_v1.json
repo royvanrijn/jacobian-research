@@ -1,0 +1,8883 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/fixed_cubic_u_minus1_cassels_tate_v1.json": "b417fd195df7ac173f76f6c0d4a08185480ecec7fb3f6f63e6cd006726fd3355",
+    "artifacts/generated-results/elliptic-curves/fixed_field_comparison_u0_v1.json.gz": "0f336d54e9d3027723fc6662a0e0cd9b925d55553d919e54108723171dab9e0e",
+    "artifacts/generated-results/elliptic-curves/fixed_field_comparison_u1_v1.json.gz": "c47bd41a613ecdbb94914ecb4d337dfb5951c18fd07e3e394abfd33b978f1032",
+    "artifacts/generated-results/elliptic-curves/fixed_field_comparison_u2_v1.json.gz": "39926064fee6c70742111ea5d4a07ee0ecc70ffada69d4deafd19093a98182ce",
+    "artifacts/generated-results/elliptic-curves/fixed_field_comparison_u3_v1.json.gz": "bef7784264ce413f2258d845f67b7e08f7b78d0fea138f8abfc509c6776672f4",
+    "artifacts/generated-results/elliptic-curves/fixed_field_comparison_um2_v1.json.gz": "287c97dc792ad405f334eb485bc2bd468535c25ef192c5aba2fa81969f61171f",
+    "artifacts/generated-results/elliptic-curves/fixed_field_comparison_um3_v1.json.gz": "dc4af081cb79a486b3427952d468e47b0e7f681a7e95fe1978fb47ac0b4d80ed",
+    "artifacts/generated-results/elliptic-curves/rank_jump_block_inputs_v1.json": "c1e344d738caa5de1f919a4b6647e88bf3427783192e215ab1a96833e54d6cf0",
+    "artifacts/generated-results/elliptic-curves/rank_jump_degree_one_relation_panel_v1.json": "b04e6af7250b94920c55d2c967eb5ddf3c6202c357e0bf42b0746308a526aac8",
+    "artifacts/generated-results/elliptic-curves/rank_jump_low_degree_triple_panel_v1.json": "3b4de16c6df6f06d01532d157f2258e6fd6db80875c8c3f5188903ea3abfe913",
+    "artifacts/generated-results/elliptic-curves/rank_jump_low_degree_triple_panel_verification_v1.json": "69ff1a40e58afcfd338112f8fb8ccaeba24fc76aa65cb9d3ac3a3acd9d4f015a",
+    "artifacts/generated-results/elliptic-curves/rank_jump_paired_quartet_relations_inputs_v1.json": "4f84dc712cb088ccad50b59e6a4a60f643afbd80f3d9a9714283e44c684d17cc",
+    "artifacts/generated-results/elliptic-curves/rank_jump_paired_quartet_relations_v1.json": "52410ec43618d39d963ae9be59b6a162b62ef1677140036307f58477e19802e2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_paired_quartet_relations_verification_v1.json": "c393c56047d7cde8a410a00560bda773ae71a87750cdc30d9d191d2f5ae7fc99",
+    "elliptic-curves/rank-jump/INDEPENDENT_BLOCKS_AND_RANK_OBSTRUCTIONS.md": "869502391cbe747cc78b8774afacbb3ea68e02a8d0c39f042d88d6d4a4f31be4",
+    "elliptic-curves/rank-jump/SEARCH_THEOREM_GATES_V2.json": "ece2fd52f447e90dba6b20a6885b3813d21971f8853ef10f282cb47135e5f17b",
+    "elliptic-curves/rank-jump/block_rank_theory.py": "be0520bca2929f707841765ae771d729e370561474f96f4d7df5c66021e062c9",
+    "elliptic-curves/rank-jump/mechanism_theory.py": "db874b8df4ec54b6f2234fb3675847ec7a68fd04cf7b4725fa28e006a6312b76",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/test_block_rank_theory.py": "622f38e6dfafaf3b67a87a0214fa2ed768552ced8cd70e9c4ff29ee633f0ba21",
+    "elliptic-curves/rank-jump/verify_block_rank_theory.py": "96c53e36c8c9bf0013d88690fd7385d1de8743b5403c8457c73e0183a99f3aa8",
+    "elliptic-curves/rank-jump/verify_paired_quartet_relations.py": "b0de9e0c0990390a5e0af8f752b356ccf7aa99ef1f8503b11d14f6faf06bc648"
+  },
+  "combined_relation_control": {
+    "combined_rank": 13,
+    "native_labels": 25,
+    "native_quotient_upper_bound": 12,
+    "new_constraints_beyond_pairs": 6,
+    "pair_rank": 7,
+    "parameter": "3/8",
+    "relation_span_intersection_dimension": 5,
+    "triple_rank": 11
+  },
+  "quartet_independence_and_overlap": [
+    {
+      "finite_signature_width": 25,
+      "id": "08234-003",
+      "no_rational_two_torsion_prime": 19,
+      "pair_partitions": [
+        {
+          "first_indices": [
+            0,
+            1
+          ],
+          "first_rank": 2,
+          "intersection_rank": 1,
+          "second_increment_after_first": 1,
+          "second_indices": [
+            2,
+            3
+          ],
+          "second_rank": 2,
+          "union_rank": 3
+        },
+        {
+          "first_indices": [
+            0,
+            2
+          ],
+          "first_rank": 2,
+          "intersection_rank": 1,
+          "second_increment_after_first": 1,
+          "second_indices": [
+            1,
+            3
+          ],
+          "second_rank": 2,
+          "union_rank": 3
+        },
+        {
+          "first_indices": [
+            0,
+            3
+          ],
+          "first_rank": 2,
+          "intersection_rank": 1,
+          "second_increment_after_first": 1,
+          "second_indices": [
+            1,
+            2
+          ],
+          "second_rank": 2,
+          "union_rank": 3
+        }
+      ],
+      "point_count_in_direct_certificate": 21,
+      "sandwich": {
+        "combined_signature_rank": 20,
+        "exact_quotient_rank": 3,
+        "generic_signature_rank": 17,
+        "observed_signature_increment": 3,
+        "quotient_lower_bound": 3,
+        "quotient_upper_bound": 3,
+        "unresolved_generic_signature_defect_budget": 0
+      }
+    },
+    {
+      "finite_signature_width": 29,
+      "id": "08234-009",
+      "no_rational_two_torsion_prime": 19,
+      "pair_partitions": [
+        {
+          "first_indices": [
+            0,
+            1
+          ],
+          "first_rank": 2,
+          "intersection_rank": 1,
+          "second_increment_after_first": 1,
+          "second_indices": [
+            2,
+            3
+          ],
+          "second_rank": 2,
+          "union_rank": 3
+        },
+        {
+          "first_indices": [
+            0,
+            2
+          ],
+          "first_rank": 1,
+          "intersection_rank": 0,
+          "second_increment_after_first": 2,
+          "second_indices": [
+            1,
+            3
+          ],
+          "second_rank": 2,
+          "union_rank": 3
+        },
+        {
+          "first_indices": [
+            0,
+            3
+          ],
+          "first_rank": 2,
+          "intersection_rank": 1,
+          "second_increment_after_first": 1,
+          "second_indices": [
+            1,
+            2
+          ],
+          "second_rank": 2,
+          "union_rank": 3
+        }
+      ],
+      "point_count_in_direct_certificate": 21,
+      "sandwich": {
+        "combined_signature_rank": 20,
+        "exact_quotient_rank": 3,
+        "generic_signature_rank": 17,
+        "observed_signature_increment": 3,
+        "quotient_lower_bound": 3,
+        "quotient_upper_bound": 3,
+        "unresolved_generic_signature_defect_budget": 0
+      }
+    }
+  ],
+  "radical_partner_replays": [
+    {
+      "prefixes": [
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 0,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 2,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 1,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 4,
+          "new_independent_selmer_classes_mod_old_at_least": 2,
+          "old_dimension": 2,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0
+            ]
+          ],
+          "radical_partner_rank": 2
+        },
+        {
+          "certified_pairing_rank_lower_bound": 4,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 3,
+          "old_pairing_rank": 2,
+          "old_radical_basis": [
+            [
+              1,
+              1,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 4,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 4,
+          "old_pairing_rank": 4,
+          "old_radical_basis": [],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 6,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 5,
+          "old_pairing_rank": 4,
+          "old_radical_basis": [
+            [
+              0,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 6,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 6,
+          "old_pairing_rank": 6,
+          "old_radical_basis": [],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 8,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 7,
+          "old_pairing_rank": 6,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 10,
+          "new_independent_selmer_classes_mod_old_at_least": 2,
+          "old_dimension": 8,
+          "old_pairing_rank": 6,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "radical_partner_rank": 2
+        },
+        {
+          "certified_pairing_rank_lower_bound": 10,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 9,
+          "old_pairing_rank": 8,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 12,
+          "new_independent_selmer_classes_mod_old_at_least": 2,
+          "old_dimension": 10,
+          "old_pairing_rank": 8,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1
+            ]
+          ],
+          "radical_partner_rank": 2
+        },
+        {
+          "certified_pairing_rank_lower_bound": 12,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 11,
+          "old_pairing_rank": 10,
+          "old_radical_basis": [
+            [
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              1,
+              0,
+              1,
+              1,
+              1
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 12,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 12,
+          "old_pairing_rank": 12,
+          "old_radical_basis": [],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 14,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 13,
+          "old_pairing_rank": 12,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              1,
+              0,
+              1
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 16,
+          "new_independent_selmer_classes_mod_old_at_least": 2,
+          "old_dimension": 14,
+          "old_pairing_rank": 12,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "radical_partner_rank": 2
+        },
+        {
+          "certified_pairing_rank_lower_bound": 16,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 15,
+          "old_pairing_rank": 14,
+          "old_radical_basis": [
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              1
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 16,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 16,
+          "old_pairing_rank": 14,
+          "old_radical_basis": [
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 1,
+          "radical_partner_matrix": [
+            [
+              1
+            ],
+            [
+              1
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 16,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 17,
+          "old_pairing_rank": 16,
+          "old_radical_basis": [
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 1,
+          "radical_partner_matrix": [
+            []
+          ],
+          "radical_partner_rank": 0
+        }
+      ],
+      "retained_pairing_rank": 16,
+      "retained_selmer_subspace_dimension": 17,
+      "target_gate_without_absolute_selmer_upper": {
+        "rank_upper_bound": null,
+        "status": "UNKNOWN_NO_SELMER_UPPER_ENVELOPE"
+      },
+      "u": -3
+    },
+    {
+      "prefixes": [
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 0,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 2,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 1,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 2,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 2,
+          "old_pairing_rank": 2,
+          "old_radical_basis": [],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 4,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 3,
+          "old_pairing_rank": 2,
+          "old_radical_basis": [
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 6,
+          "new_independent_selmer_classes_mod_old_at_least": 2,
+          "old_dimension": 4,
+          "old_pairing_rank": 2,
+          "old_radical_basis": [
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "radical_partner_rank": 2
+        },
+        {
+          "certified_pairing_rank_lower_bound": 6,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 5,
+          "old_pairing_rank": 4,
+          "old_radical_basis": [
+            [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 6,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 6,
+          "old_pairing_rank": 6,
+          "old_radical_basis": [],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 8,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 7,
+          "old_pairing_rank": 6,
+          "old_radical_basis": [
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 10,
+          "new_independent_selmer_classes_mod_old_at_least": 2,
+          "old_dimension": 8,
+          "old_pairing_rank": 6,
+          "old_radical_basis": [
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "radical_partner_rank": 2
+        },
+        {
+          "certified_pairing_rank_lower_bound": 12,
+          "new_independent_selmer_classes_mod_old_at_least": 3,
+          "old_dimension": 9,
+          "old_pairing_rank": 6,
+          "old_radical_basis": [
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 3
+        },
+        {
+          "certified_pairing_rank_lower_bound": 12,
+          "new_independent_selmer_classes_mod_old_at_least": 2,
+          "old_dimension": 10,
+          "old_pairing_rank": 8,
+          "old_radical_basis": [
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "radical_partner_rank": 2
+        },
+        {
+          "certified_pairing_rank_lower_bound": 12,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 11,
+          "old_pairing_rank": 10,
+          "old_radical_basis": [
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              0
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 12,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 12,
+          "old_pairing_rank": 12,
+          "old_radical_basis": [],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 12,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 13,
+          "old_pairing_rank": 12,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 1,
+          "radical_partner_matrix": [
+            []
+          ],
+          "radical_partner_rank": 0
+        }
+      ],
+      "retained_pairing_rank": 12,
+      "retained_selmer_subspace_dimension": 13,
+      "target_gate_without_absolute_selmer_upper": {
+        "rank_upper_bound": null,
+        "status": "UNKNOWN_NO_SELMER_UPPER_ENVELOPE"
+      },
+      "u": -2
+    },
+    {
+      "prefixes": [
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 0,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 1,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 1,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 2,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 2,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 3,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 3,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 4,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 4,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 5,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 5,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 6,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 6,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 7,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 7,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 8,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 8,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 9,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 9,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 10,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 10,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 11,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 11,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 12,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 12,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 13,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 13,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 14,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 14,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 15,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 15,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 16,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 16,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 17,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 17,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 18,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 18,
+          "radical_partner_matrix": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 19,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 19,
+          "radical_partner_matrix": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 20,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 20,
+          "radical_partner_matrix": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "radical_partner_rank": 0
+        }
+      ],
+      "retained_pairing_rank": 0,
+      "retained_selmer_subspace_dimension": 20,
+      "target_gate_without_absolute_selmer_upper": {
+        "rank_upper_bound": null,
+        "status": "UNKNOWN_NO_SELMER_UPPER_ENVELOPE"
+      },
+      "u": 0
+    },
+    {
+      "prefixes": [
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 0,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 2,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 1,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 4,
+          "new_independent_selmer_classes_mod_old_at_least": 2,
+          "old_dimension": 2,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ]
+          ],
+          "radical_partner_rank": 2
+        },
+        {
+          "certified_pairing_rank_lower_bound": 6,
+          "new_independent_selmer_classes_mod_old_at_least": 3,
+          "old_dimension": 3,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "radical_partner_rank": 3
+        },
+        {
+          "certified_pairing_rank_lower_bound": 8,
+          "new_independent_selmer_classes_mod_old_at_least": 4,
+          "old_dimension": 4,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 4
+        },
+        {
+          "certified_pairing_rank_lower_bound": 8,
+          "new_independent_selmer_classes_mod_old_at_least": 3,
+          "old_dimension": 5,
+          "old_pairing_rank": 2,
+          "old_radical_basis": [
+            [
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 3
+        },
+        {
+          "certified_pairing_rank_lower_bound": 8,
+          "new_independent_selmer_classes_mod_old_at_least": 2,
+          "old_dimension": 6,
+          "old_pairing_rank": 4,
+          "old_radical_basis": [
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1
+            ]
+          ],
+          "radical_partner_rank": 2
+        },
+        {
+          "certified_pairing_rank_lower_bound": 8,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 7,
+          "old_pairing_rank": 6,
+          "old_radical_basis": [
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 8,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 8,
+          "old_pairing_rank": 8,
+          "old_radical_basis": [],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 10,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 9,
+          "old_pairing_rank": 8,
+          "old_radical_basis": [
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              0,
+              1,
+              1
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 10,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 10,
+          "old_pairing_rank": 10,
+          "old_radical_basis": [],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 10,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 11,
+          "old_pairing_rank": 10,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 1,
+          "radical_partner_matrix": [
+            [
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 12,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 12,
+          "old_pairing_rank": 10,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 1,
+          "radical_partner_matrix": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 12,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 13,
+          "old_pairing_rank": 12,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 1,
+          "radical_partner_matrix": [
+            []
+          ],
+          "radical_partner_rank": 0
+        }
+      ],
+      "retained_pairing_rank": 12,
+      "retained_selmer_subspace_dimension": 13,
+      "target_gate_without_absolute_selmer_upper": {
+        "rank_upper_bound": null,
+        "status": "UNKNOWN_NO_SELMER_UPPER_ENVELOPE"
+      },
+      "u": 1
+    },
+    {
+      "prefixes": [
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 0,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 2,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 1,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 2,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 2,
+          "old_pairing_rank": 2,
+          "old_radical_basis": [],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 4,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 3,
+          "old_pairing_rank": 2,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 6,
+          "new_independent_selmer_classes_mod_old_at_least": 2,
+          "old_dimension": 4,
+          "old_pairing_rank": 2,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 2
+        },
+        {
+          "certified_pairing_rank_lower_bound": 8,
+          "new_independent_selmer_classes_mod_old_at_least": 3,
+          "old_dimension": 5,
+          "old_pairing_rank": 2,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1
+            ]
+          ],
+          "radical_partner_rank": 3
+        },
+        {
+          "certified_pairing_rank_lower_bound": 8,
+          "new_independent_selmer_classes_mod_old_at_least": 2,
+          "old_dimension": 6,
+          "old_pairing_rank": 4,
+          "old_radical_basis": [
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1
+            ]
+          ],
+          "radical_partner_rank": 2
+        },
+        {
+          "certified_pairing_rank_lower_bound": 8,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 7,
+          "old_pairing_rank": 6,
+          "old_radical_basis": [
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              1,
+              0,
+              0,
+              1,
+              1
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 10,
+          "new_independent_selmer_classes_mod_old_at_least": 2,
+          "old_dimension": 8,
+          "old_pairing_rank": 6,
+          "old_radical_basis": [
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "radical_partner_rank": 2
+        },
+        {
+          "certified_pairing_rank_lower_bound": 10,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 9,
+          "old_pairing_rank": 8,
+          "old_radical_basis": [
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 10,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 10,
+          "old_pairing_rank": 10,
+          "old_radical_basis": [],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 12,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 11,
+          "old_pairing_rank": 10,
+          "old_radical_basis": [
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              1
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 12,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 12,
+          "old_pairing_rank": 10,
+          "old_radical_basis": [
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 1,
+          "radical_partner_matrix": [
+            [
+              1
+            ],
+            [
+              1
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 12,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 13,
+          "old_pairing_rank": 12,
+          "old_radical_basis": [
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 1,
+          "radical_partner_matrix": [
+            []
+          ],
+          "radical_partner_rank": 0
+        }
+      ],
+      "retained_pairing_rank": 12,
+      "retained_selmer_subspace_dimension": 13,
+      "target_gate_without_absolute_selmer_upper": {
+        "rank_upper_bound": null,
+        "status": "UNKNOWN_NO_SELMER_UPPER_ENVELOPE"
+      },
+      "u": 2
+    },
+    {
+      "prefixes": [
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 0,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 2,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 1,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 4,
+          "new_independent_selmer_classes_mod_old_at_least": 2,
+          "old_dimension": 2,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 2
+        },
+        {
+          "certified_pairing_rank_lower_bound": 4,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 3,
+          "old_pairing_rank": 2,
+          "old_radical_basis": [
+            [
+              1,
+              1,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 6,
+          "new_independent_selmer_classes_mod_old_at_least": 2,
+          "old_dimension": 4,
+          "old_pairing_rank": 2,
+          "old_radical_basis": [
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0
+            ]
+          ],
+          "radical_partner_rank": 2
+        },
+        {
+          "certified_pairing_rank_lower_bound": 8,
+          "new_independent_selmer_classes_mod_old_at_least": 3,
+          "old_dimension": 5,
+          "old_pairing_rank": 2,
+          "old_radical_basis": [
+            [
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          ],
+          "radical_partner_rank": 3
+        },
+        {
+          "certified_pairing_rank_lower_bound": 8,
+          "new_independent_selmer_classes_mod_old_at_least": 2,
+          "old_dimension": 6,
+          "old_pairing_rank": 4,
+          "old_radical_basis": [
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0
+            ]
+          ],
+          "radical_partner_rank": 2
+        },
+        {
+          "certified_pairing_rank_lower_bound": 8,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 7,
+          "old_pairing_rank": 6,
+          "old_radical_basis": [
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 8,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 8,
+          "old_pairing_rank": 8,
+          "old_radical_basis": [],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 10,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 9,
+          "old_pairing_rank": 8,
+          "old_radical_basis": [
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              0
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 12,
+          "new_independent_selmer_classes_mod_old_at_least": 2,
+          "old_dimension": 10,
+          "old_pairing_rank": 8,
+          "old_radical_basis": [
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          ],
+          "radical_partner_rank": 2
+        },
+        {
+          "certified_pairing_rank_lower_bound": 12,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 11,
+          "old_pairing_rank": 10,
+          "old_radical_basis": [
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              1,
+              1,
+              0
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 14,
+          "new_independent_selmer_classes_mod_old_at_least": 2,
+          "old_dimension": 12,
+          "old_pairing_rank": 10,
+          "old_radical_basis": [
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 2
+        },
+        {
+          "certified_pairing_rank_lower_bound": 14,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 13,
+          "old_pairing_rank": 12,
+          "old_radical_basis": [
+            [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              0
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 14,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 14,
+          "old_pairing_rank": 14,
+          "old_radical_basis": [],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 14,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 15,
+          "old_pairing_rank": 14,
+          "old_radical_basis": [
+            [
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 1,
+          "radical_partner_matrix": [
+            []
+          ],
+          "radical_partner_rank": 0
+        }
+      ],
+      "retained_pairing_rank": 14,
+      "retained_selmer_subspace_dimension": 15,
+      "target_gate_without_absolute_selmer_upper": {
+        "rank_upper_bound": null,
+        "status": "UNKNOWN_NO_SELMER_UPPER_ENVELOPE"
+      },
+      "u": 3
+    },
+    {
+      "prefixes": [
+        {
+          "certified_pairing_rank_lower_bound": 0,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 0,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 2,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 1,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 4,
+          "new_independent_selmer_classes_mod_old_at_least": 2,
+          "old_dimension": 2,
+          "old_pairing_rank": 0,
+          "old_radical_basis": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1
+            ]
+          ],
+          "radical_partner_rank": 2
+        },
+        {
+          "certified_pairing_rank_lower_bound": 4,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 3,
+          "old_pairing_rank": 2,
+          "old_radical_basis": [
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 4,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 4,
+          "old_pairing_rank": 4,
+          "old_radical_basis": [],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 6,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 5,
+          "old_pairing_rank": 4,
+          "old_radical_basis": [
+            [
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 6,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 6,
+          "old_pairing_rank": 6,
+          "old_radical_basis": [],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 8,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 7,
+          "old_pairing_rank": 6,
+          "old_radical_basis": [
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 10,
+          "new_independent_selmer_classes_mod_old_at_least": 2,
+          "old_dimension": 8,
+          "old_pairing_rank": 6,
+          "old_radical_basis": [
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "radical_partner_rank": 2
+        },
+        {
+          "certified_pairing_rank_lower_bound": 10,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 9,
+          "old_pairing_rank": 8,
+          "old_radical_basis": [
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 12,
+          "new_independent_selmer_classes_mod_old_at_least": 2,
+          "old_dimension": 10,
+          "old_pairing_rank": 8,
+          "old_radical_basis": [
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "radical_partner_rank": 2
+        },
+        {
+          "certified_pairing_rank_lower_bound": 14,
+          "new_independent_selmer_classes_mod_old_at_least": 3,
+          "old_dimension": 11,
+          "old_pairing_rank": 8,
+          "old_radical_basis": [
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0
+            ]
+          ],
+          "radical_partner_rank": 3
+        },
+        {
+          "certified_pairing_rank_lower_bound": 16,
+          "new_independent_selmer_classes_mod_old_at_least": 4,
+          "old_dimension": 12,
+          "old_pairing_rank": 8,
+          "old_radical_basis": [
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "radical_partner_rank": 4
+        },
+        {
+          "certified_pairing_rank_lower_bound": 16,
+          "new_independent_selmer_classes_mod_old_at_least": 3,
+          "old_dimension": 13,
+          "old_pairing_rank": 10,
+          "old_radical_basis": [
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              0,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              1
+            ]
+          ],
+          "radical_partner_rank": 3
+        },
+        {
+          "certified_pairing_rank_lower_bound": 16,
+          "new_independent_selmer_classes_mod_old_at_least": 2,
+          "old_dimension": 14,
+          "old_pairing_rank": 12,
+          "old_radical_basis": [
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              0
+            ]
+          ],
+          "radical_partner_rank": 2
+        },
+        {
+          "certified_pairing_rank_lower_bound": 16,
+          "new_independent_selmer_classes_mod_old_at_least": 1,
+          "old_dimension": 15,
+          "old_pairing_rank": 14,
+          "old_radical_basis": [
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [
+            [
+              1,
+              1,
+              0
+            ]
+          ],
+          "radical_partner_rank": 1
+        },
+        {
+          "certified_pairing_rank_lower_bound": 16,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 16,
+          "old_pairing_rank": 16,
+          "old_radical_basis": [],
+          "old_subspace_soluble_dimension_upper_bound": 0,
+          "radical_partner_matrix": [],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 16,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 17,
+          "old_pairing_rank": 16,
+          "old_radical_basis": [
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 1,
+          "radical_partner_matrix": [
+            [
+              0
+            ]
+          ],
+          "radical_partner_rank": 0
+        },
+        {
+          "certified_pairing_rank_lower_bound": 16,
+          "new_independent_selmer_classes_mod_old_at_least": 0,
+          "old_dimension": 18,
+          "old_pairing_rank": 16,
+          "old_radical_basis": [
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1
+            ]
+          ],
+          "old_subspace_soluble_dimension_upper_bound": 2,
+          "radical_partner_matrix": [
+            [],
+            []
+          ],
+          "radical_partner_rank": 0
+        }
+      ],
+      "retained_pairing_rank": 16,
+      "retained_selmer_subspace_dimension": 18,
+      "target_gate_without_absolute_selmer_upper": {
+        "rank_upper_bound": null,
+        "status": "UNKNOWN_NO_SELMER_UPPER_ENVELOPE"
+      },
+      "u": -1
+    }
+  ],
+  "schema": "rank-jump.block-rank-theory.v1",
+  "scope": "Exact finite applications of written J7-J10. Seven retained arithmetic matrices, not seven fresh CT computations. Absolute Selmer bounds remain UNKNOWN; no new curve rank or class construction.",
+  "separate_arithmetic_replay": [
+    "sage -python elliptic-curves/cas/verify_fixed_cubic_cassels_tate.sage --check",
+    "sage -python elliptic-curves/rank-jump/verify_low_degree_triple_panel.py check"
+  ],
+  "status": "PASS"
+}

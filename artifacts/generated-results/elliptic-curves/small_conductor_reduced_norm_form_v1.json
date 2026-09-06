@@ -1,0 +1,152 @@
+{
+  "box10_polynomial_value_upper_bound_bits": {
+    "original_monic": 175,
+    "reduced_binary": 75
+  },
+  "claim_boundary": "Exact norm-sieve coordinate preparation on one field. The smaller varying polynomial is accompanied by the exact fixed norm square factor a^2. No smoothness rate, nontrivial class relation, certified factor-base generation, class-rank upper bound, Selmer bound, new point or end-to-end speedup has been proved.",
+  "defining_order_index": "582653777472000",
+  "field_discriminant": "128900477062442043600727490102612931938219670661531295245188752203875468",
+  "initial_binary_cubic_descending": [
+    "-582653777472000",
+    "-69418898236910689",
+    "2253317262489553494",
+    "28630981474137424362"
+  ],
+  "integral_norm_generator": {
+    "fixed_a": "-582653777472000",
+    "formula": "u=M00*m+M01*n; v=M10*m+M11*n; beta=a*u+v*w; Norm(beta)=a^2*F_reduced(m,n).",
+    "w_power_basis": [
+      "-23139632745636896",
+      "1",
+      "0"
+    ]
+  },
+  "maximal_order_basis_ascending": [
+    [
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "-60817325534192885233832067399329/18207930546000",
+      "7713210915212299/194217925824000",
+      "1/582653777472000"
+    ]
+  ],
+  "maximality_scope": "Maximality was checked separately by PARI nfcertify in field.log using complete proved discriminant support. This checker independently verifies the ring multiplication, index and discriminant identities; those identities alone do not establish maximality.",
+  "maximum_coefficient_bits": {
+    "original_monic": 165,
+    "reduced_binary": 65
+  },
+  "multiplication_table": [
+    [
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    [
+      [
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "1312903814832404514217716087168000",
+        "-69418898236910689",
+        "582653777472000"
+      ],
+      [
+        "16681949508637021377363979572864000",
+        "0",
+        "0"
+      ]
+    ],
+    [
+      [
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "16681949508637021377363979572864000",
+        "0",
+        "0"
+      ],
+      [
+        "1987531189376021047552525962286805418",
+        "28630981474137424362",
+        "-2253317262489553494"
+      ]
+    ]
+  ],
+  "normal_basis_ascending": [
+    [
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "-23139632745636896",
+      "1",
+      "0"
+    ],
+    [
+      "-74493406938697098923599943307329/18207930546000",
+      "7713210915212299/194217925824000",
+      "1/582653777472000"
+    ]
+  ],
+  "original_monic_cubic_descending": [
+    "1",
+    "1",
+    "-2919231625641258502793755607986240",
+    "45440201616242830029801770634418828098464819545088"
+  ],
+  "reduced_binary_cubic_descending": [
+    "-582653777472000",
+    "-69418898236910689",
+    "2253317262489553494",
+    "28630981474137424362"
+  ],
+  "reduced_hessian": [
+    "8757694876923775508381266823958721",
+    "-6285256162503292861247769410121366",
+    "11040032253561478464302467366348024290"
+  ],
+  "reduction_steps": [],
+  "schema": "elliptic-curves.small-conductor-reduced-norm-form.v1",
+  "sl2_matrix": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/small_conductor_class_rank_target_v1.json": "b257de1af979869b5e18f4ce5ed43c7b7e97531aca3b8ed06c2d56ed119144a4",
+    "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/basis_export.json": "f440d4328a666436d0d46e7fcbd61ec6735180f33577f411bb43bb18d07dc6ef",
+    "artifacts/local/elliptic-curves/small-conductor-descent-profile-v1/field.log": "feecf5b605d312856a67a0bea2fc4e987766312cfe760c5d0f501f532aceb882",
+    "elliptic-curves/cas/prepare_small_conductor_norm_form.py": "968f6c88cabad6d3b0800ca51d0d7fad3b3048338746d3db60272342d5135f84"
+  },
+  "status": "PASS"
+}

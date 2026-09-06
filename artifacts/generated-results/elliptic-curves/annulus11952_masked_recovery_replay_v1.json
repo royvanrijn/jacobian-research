@@ -1,0 +1,162 @@
+{
+  "claim_boundary": "Four fixed new-annulus indices recover a previously withheld known generic direction. Independent finite-quotient generic17 proofs and rational group equalities with nonzero withheld coefficients certify this endpoint. All original candidate searches remain unchanged. This does not measure incidence or sensitivity for exceptional directions, add a new curve rank or prove rank upper bounds.",
+  "completed_boxes": 48,
+  "rows": [
+    {
+      "coefficients": [
+        "-1",
+        "1",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "-1",
+        "-1",
+        "1",
+        "0",
+        "0",
+        "-1",
+        "0",
+        "0",
+        "-1",
+        "1"
+      ],
+      "completed_boxes": 12,
+      "id": "11952-0012356",
+      "known_generic_rank": 17,
+      "parameter": "-139001/178062",
+      "point": [
+        "-60766616110640869153849097238203703399399255/19300433476",
+        "-4382543181373065740185869110917006115823858533771935081574285564661/2681332021086776"
+      ],
+      "retained_generic_rank": 16,
+      "status": "RECOVERED_KNOWN_DIRECTION",
+      "withheld_coefficient": "-1"
+    },
+    {
+      "coefficients": [
+        "-1",
+        "1",
+        "0",
+        "-1",
+        "1",
+        "0",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "-1",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "completed_boxes": 12,
+      "id": "11952-0029043",
+      "known_generic_rank": 17,
+      "parameter": "390120/127927",
+      "point": [
+        "70228623684449220653557376641849/12",
+        "3053535732285429816403123381033301121921881760"
+      ],
+      "retained_generic_rank": 16,
+      "status": "RECOVERED_KNOWN_DIRECTION",
+      "withheld_coefficient": "-1"
+    },
+    {
+      "coefficients": [
+        "-1",
+        "1",
+        "0",
+        "-1",
+        "1",
+        "0",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "-1",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "completed_boxes": 12,
+      "id": "11952-0024583",
+      "known_generic_rank": 17,
+      "parameter": "88467/418118",
+      "point": [
+        "1063423726814005934170520540787646174/3",
+        "11358516183155606041801005775098707855838926646335550"
+      ],
+      "retained_generic_rank": 16,
+      "status": "RECOVERED_KNOWN_DIRECTION",
+      "withheld_coefficient": "-1"
+    },
+    {
+      "coefficients": [
+        "1",
+        "-1",
+        "1",
+        "-1",
+        "-1",
+        "-1",
+        "0",
+        "1",
+        "1",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "-1",
+        "1",
+        "-1"
+      ],
+      "completed_boxes": 12,
+      "id": "11952-0002636",
+      "known_generic_rank": 17,
+      "parameter": "-455674/118549",
+      "point": [
+        "3689060404086322709407820124624310933277451969606481/468137186125297932",
+        "3686423803046816429725377265956838125701635779095629563581985778246669526025/7705269645957593279464159"
+      ],
+      "retained_generic_rank": 16,
+      "status": "RECOVERED_KNOWN_DIRECTION",
+      "withheld_coefficient": "1"
+    }
+  ],
+  "schema": "elliptic-curves.annulus11952-masked-recovery-replay.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/annulus11952_masked_relations_v2.json": "885c92a3958c707db5398dc5b2a334ca29bfdfc4e7cfe76b21fd050cb17e2b6e",
+    "artifacts/local/elliptic-curves/annulus11952-masked-controls-v2/11952-0002636/blind.json": "b072e0b41fb2711878182f42ce49ab2f709643db8c89b358a98071608926b95c",
+    "artifacts/local/elliptic-curves/annulus11952-masked-controls-v2/11952-0002636/maps.json": "a9cdb431844c83c3446fd72ddb13ce553e68979aade45b414ecb140bb8e933da",
+    "artifacts/local/elliptic-curves/annulus11952-masked-controls-v2/11952-0002636/oracle.json": "9edd7ea7159e1a508202c8da8929a73ac09338aa63fd52ca8719b2a4e44d92e9",
+    "artifacts/local/elliptic-curves/annulus11952-masked-controls-v2/11952-0002636/result.json": "5f5e0db63da4c99dac3cd5c891691e9e31318b11b37033cc5ed378473ae5dcc0",
+    "artifacts/local/elliptic-curves/annulus11952-masked-controls-v2/11952-0012356/blind.json": "6e12968ffd357b49d4ae6fc41b28894f2689f3a9a05b1dc1c5ad81cc6a509019",
+    "artifacts/local/elliptic-curves/annulus11952-masked-controls-v2/11952-0012356/maps.json": "5ef16fe19b4ad20d7055ec149c3de8cc54e0a1dfd630670e11ad020dec164369",
+    "artifacts/local/elliptic-curves/annulus11952-masked-controls-v2/11952-0012356/oracle.json": "5078167b095ec78831f63b0e923fcdc1f3396954242c861cf4a476ba851ef582",
+    "artifacts/local/elliptic-curves/annulus11952-masked-controls-v2/11952-0012356/result.json": "d97f6534d2b1441dcb459a0356dcc614bb000b42e8737b06f9040ac8f7dba3ff",
+    "artifacts/local/elliptic-curves/annulus11952-masked-controls-v2/11952-0024583/blind.json": "b0e808016dfc917bcefeb7ba5f1c4c7653aabff9b84672b72fe2f8850192d7da",
+    "artifacts/local/elliptic-curves/annulus11952-masked-controls-v2/11952-0024583/maps.json": "690747f125538bcc98080453fdcb6cc6ce5d609c82d29ff9ca7953f3ff4f92e9",
+    "artifacts/local/elliptic-curves/annulus11952-masked-controls-v2/11952-0024583/oracle.json": "afb12045e256da24e67250771203dd4cf2115069efb6fe4a9295bd342879a3af",
+    "artifacts/local/elliptic-curves/annulus11952-masked-controls-v2/11952-0024583/result.json": "82878f3642ba84145c35d639356f407d4f3f306984a2e666070f47a58fcab304",
+    "artifacts/local/elliptic-curves/annulus11952-masked-controls-v2/11952-0029043/blind.json": "5ca0a44f481999fa4c9b3451cc5656944e24bcd15978661b6b2842ca74d128f7",
+    "artifacts/local/elliptic-curves/annulus11952-masked-controls-v2/11952-0029043/maps.json": "c273bbeda47701d232d7264d42b6a2a0163f121b0abf33930566df1197c7b919",
+    "artifacts/local/elliptic-curves/annulus11952-masked-controls-v2/11952-0029043/oracle.json": "bfbe006a9e400b01eb40265e4c78772b4edbca68a27ca6b4234d42a9391d7617",
+    "artifacts/local/elliptic-curves/annulus11952-masked-controls-v2/11952-0029043/result.json": "7bd1c8ed443dbe9e20a4079e873e5faab1d866e0f563aa2e8468e897b51a2d97",
+    "artifacts/local/elliptic-curves/annulus11952-masked-controls-v2/controller/ledger.json": "7309198aa5e3cc311d6607d18602da9eb0294541860eebd84b8321046526fc0e",
+    "artifacts/local/elliptic-curves/annulus11952-masked-controls-v2/prepared.json": "ce6ee42290f036d16b38983ff82edcc9529b4ae151fee17236d24a2418b9fa22",
+    "artifacts/local/elliptic-curves/annulus11952-masked-controls-v2/protocol.json": "a831b3bbe1152bd0dd8786458f1feaa1c70ca2851ba04d749b91688798dcc8fb",
+    "elliptic-curves/cas/alternate_quartic_covers.py": "598f7556333c9d8462f251d97a6d132e0bd672a11861f8c2f142fc4588abe9e5",
+    "elliptic-curves/cas/half_lattice_pointed_sieve.py": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4",
+    "elliptic-curves/cas/memory_rank_certificate.py": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6",
+    "elliptic-curves/cas/verify_annulus11952_masked_recovery.py": "e043d2bbf57f88e7ff65a36c9a037907c790999955d059ef9315bd36b5cbe65d"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,1246 @@
+{
+  "attempted_charts": 3136,
+  "claim_boundary": "Eight untouched signed denominator slices in131072<H<=524288 on11952, disjoint from the previous complete square and earlier outer slices. Every primitive address receives all3510 selection primes before retention. All32768 retained combined scores precede4096 exact equation exclusions/scalar scores and64 distinct finalists; wholly disjoint validation never changes selection. Up to3136 generic17-only point charts with all maps before points. The1101 prior-equation and593 catalogue exclusions are independently rechecked after terminal exact point proofs. Matching finite bounds do not prove exact rank, saturation or absence. No universal novelty, rank density, calibrated sensitivity or isolated portability claim.",
+  "completed_point_boxes": 3136,
+  "maximum_declared_boxes": 3136,
+  "retained_point_witnesses": 1131,
+  "rows": [
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 11877629854590,
+      "icarm_matches": [],
+      "id": "11952-0024576",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "65749/158308",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 14743194105734,
+      "icarm_matches": [],
+      "id": "11952-0008222",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-340468/306213",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 8155819994873,
+      "icarm_matches": [],
+      "id": "11952-0028733",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "161103/457475",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 13749538448890,
+      "icarm_matches": [],
+      "id": "11952-0008194",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-338384/338981",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 14793314297665,
+      "icarm_matches": [],
+      "id": "11952-0000021",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-240696/460993",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 12488429018246,
+      "icarm_matches": [],
+      "id": "11952-0012288",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-293229/292934",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 22,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 12308127880084,
+      "icarm_matches": [],
+      "id": "11952-0020811",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "423616/350683",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 8041868691202,
+      "icarm_matches": [],
+      "id": "11952-0000007",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-219599/428225",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 11024513698813,
+      "icarm_matches": [],
+      "id": "11952-0024595",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "207973/207460",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 7571930582717,
+      "icarm_matches": [],
+      "id": "11952-0016399",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "202699/213342",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 15321110333227,
+      "icarm_matches": [],
+      "id": "11952-0000002",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-298567/166081",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 11267297547562,
+      "icarm_matches": [],
+      "id": "11952-0020523",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "336316/252379",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 11187543655954,
+      "icarm_matches": [],
+      "id": "11952-0029069",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "405127/457475",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 14580662087797,
+      "icarm_matches": [],
+      "id": "11952-0000032",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-21759/460993",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 11072184225129,
+      "icarm_matches": [],
+      "id": "11952-0008207",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-178025/76837",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 12882092823055,
+      "icarm_matches": [],
+      "id": "11952-0016384",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "296171/49502",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 13777138010503,
+      "icarm_matches": [],
+      "id": "11952-0000123",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-263320/493761",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 14247610552672,
+      "icarm_matches": [],
+      "id": "11952-0012298",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-48049/489542",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 11775594234745,
+      "icarm_matches": [],
+      "id": "11952-0020483",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "397580/514523",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 13305258324298,
+      "icarm_matches": [],
+      "id": "11952-0008254",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-225411/125989",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 10049529093284,
+      "icarm_matches": [],
+      "id": "11952-0020532",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "180858/301531",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 24,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 11931438157447,
+      "icarm_matches": [],
+      "id": "11952-0024759",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "488387/191076",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 11009911034123,
+      "icarm_matches": [],
+      "id": "11952-0028724",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "414940/260867",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 8249637630420,
+      "icarm_matches": [],
+      "id": "11952-0024724",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "79103/158308",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 12476646498888,
+      "icarm_matches": [],
+      "id": "11952-0028723",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "498859/457475",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 8961735094232,
+      "icarm_matches": [],
+      "id": "11952-0000114",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-264253/166081",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 12505692166376,
+      "icarm_matches": [],
+      "id": "11952-0029320",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "212794/260867",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 15134610131880,
+      "icarm_matches": [],
+      "id": "11952-0024632",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "409137/109156",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 21,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 9066551543579,
+      "icarm_matches": [],
+      "id": "11952-0012291",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-132993/374854",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 11378497728127,
+      "icarm_matches": [],
+      "id": "11952-0000050",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-44455/297153",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 14565173971907,
+      "icarm_matches": [],
+      "id": "11952-0008211",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-445600/338981",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 8586091337464,
+      "icarm_matches": [],
+      "id": "11952-0020513",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "415742/514523",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 28,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 9741982220736,
+      "icarm_matches": [],
+      "id": "11952-0028720",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "115164/506627",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 12517840542219,
+      "icarm_matches": [],
+      "id": "11952-0024614",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "363317/371300",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 11375220659563,
+      "icarm_matches": [],
+      "id": "11952-0000015",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-335117/248001",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 10135648180084,
+      "icarm_matches": [],
+      "id": "11952-0008239",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-395797/404517",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 12538775882586,
+      "icarm_matches": [],
+      "id": "11952-0000560",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-67387/264385",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 12837617201353,
+      "icarm_matches": [],
+      "id": "11952-0000434",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-407045/444609",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 10794014588120,
+      "icarm_matches": [],
+      "id": "11952-0008886",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-399577/240677",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 14474375007066,
+      "icarm_matches": [],
+      "id": "11952-0028730",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "425867/457475",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 13345248216612,
+      "icarm_matches": [],
+      "id": "11952-0020526",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "162600/448987",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 20,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 11427732334015,
+      "icarm_matches": [],
+      "id": "11952-0024766",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "124455/272996",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 12575289109167,
+      "icarm_matches": [],
+      "id": "11952-0024580",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "204727/387684",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 10441438719932,
+      "icarm_matches": [],
+      "id": "11952-0004097",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-62145/185834",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 12244272155182,
+      "icarm_matches": [],
+      "id": "11952-0008279",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-90487/338981",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 12171770020138,
+      "icarm_matches": [],
+      "id": "11952-0016402",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "12853/393566",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 13836210783315,
+      "icarm_matches": [],
+      "id": "11952-0020480",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "384399/23003",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 13562606990704,
+      "icarm_matches": [],
+      "id": "11952-0000001",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-226431/18625",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 7583318834520,
+      "icarm_matches": [],
+      "id": "11952-0008213",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-95670/371749",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 15097834504122,
+      "icarm_matches": [],
+      "id": "11952-0028944",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "15934/457475",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 9111484874714,
+      "icarm_matches": [],
+      "id": "11952-0000076",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-158656/313537",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 8542733606006,
+      "icarm_matches": [],
+      "id": "11952-0029262",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "272072/342787",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 11735287660805,
+      "icarm_matches": [],
+      "id": "11952-0012302",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-309775/129094",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 18149272991042,
+      "icarm_matches": [],
+      "id": "11952-0000051",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-394203/379073",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 10696649425777,
+      "icarm_matches": [],
+      "id": "11952-0021079",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "367208/448987",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 20,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 16723928762796,
+      "icarm_matches": [],
+      "id": "11952-0000088",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-322519/428225",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 10423613302329,
+      "icarm_matches": [],
+      "id": "11952-0000446",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-380308/116929",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 16543300769194,
+      "icarm_matches": [],
+      "id": "11952-0024594",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "249649/10852",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 13687721293204,
+      "icarm_matches": [],
+      "id": "11952-0016411",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "423989/393566",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 9251029285656,
+      "icarm_matches": [],
+      "id": "11952-0000183",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-99996/264385",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 8073821716783,
+      "icarm_matches": [],
+      "id": "11952-0008217",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-466813/470053",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 16101848263898,
+      "icarm_matches": [],
+      "id": "11952-0000156",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-287363/346305",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 11406182070362,
+      "icarm_matches": [],
+      "id": "11952-0008202",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-216198/470053",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "family": "11952",
+      "fresh_validation_units": 18154751335074,
+      "icarm_matches": [],
+      "id": "11952-0008193",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-166904/338981",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    }
+  ],
+  "schema": "elliptic-curves.joint64-experiment.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/joint11952_fresh_selection_v1.json": "063fc278d0ebd8ae13ce34d95f338ed64872f1c90fbb05236562c20c2e5dde5d",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000001_mod2_v1.json": "9d085d5bf3a6f337cbaa9c66ef7c687a468226d20299f58818180023c09b3c69",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000001_modl_v1.json": "8b06a04227eac42a228d9161de198e792a16903e36c9ce4a2c177f4fec62ca5c",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000002_mod2_v1.json": "f789e2dda1951a42958cbc7eaeaee206957becc2ff92f3ced8a5b3ac8d5b7c35",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000002_modl_v1.json": "591f1343b39c97b833f163a90386bfa647fca83dde72cc4d7b1eb983fd217c13",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000007_mod2_v1.json": "a7b901f7b36719f8dbda9e4095091e6037b9c97b350d617dacddaa072ac9b0ec",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000007_modl_v1.json": "eea090c31895d015943266d0b4d0169dc4fd87959fe87b27b339394c34720272",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000015_mod2_v1.json": "b640d821afb0d52bf7d21f4878ba6487ce9e6b8fb5eeb1a37d5759631124e622",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000015_modl_v1.json": "f4a4ac78a402cf5a6478a358e2097b77615066e32196b2c6ebff2d6bda3b0d37",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000021_mod2_v1.json": "6412308f4c54261382657169c96db7b593aa8bd4a45bd7c54ef07b32860fe428",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000021_modl_v1.json": "6002deea90c9c4ca0ba5d9238cb93d1d1fbd93621bdb47d880494449a22d2003",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000032_mod2_v1.json": "454fe0ddde0995d2321398fb4bd97cae452da5cb6e6490a4a98f9b82754aa9ad",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000032_modl_v1.json": "1ec6478d9e71608e195af2af332f3a2c6f570f990ddf1aab64c5dfc9ce15aa7f",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000050_mod2_v1.json": "4ad02523b438396247c30362b734f057f38234f7173af173b8dc900c315910d7",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000050_modl_v1.json": "f1739e9beb50b93054452663fce29f4052342bd662fb93f31acbd7fb1c8dbefa",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000051_mod2_v1.json": "1d105fdc4d468978f2049a64b728eabcbe84e4eff9c6ff0f439253d553ff88ca",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000051_modl_v1.json": "0365133ce4506adc168fe7d7ccef9ee1fa8f9c5e88dcaf0c8426f4b65a27a861",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000076_mod2_v1.json": "e3f847b4994530e13e7ede78dd2c510b0e335090bff5dd078ce376e03cd5efc2",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000076_modl_v1.json": "e50314869ba3a85dca3462445dfb98001d66e3566e1902f344d166449b9f2d59",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000088_mod2_v1.json": "b23d7b455237f3ca5990c90d09b802d1cdcffc7a59e772e9fbe83016494d0499",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000088_modl_v1.json": "d503c2c66eadc47babb417c616e8e6770a12a23690ecf1266df24a9846ee9efd",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000114_mod2_v1.json": "0c163432038480fea13f24b22bdc913faa268e689e4747c6997e6d61c99c2554",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000114_modl_v1.json": "13d6b47a6aabb98a3b0707bd4ab5cbad27631a0461937c508e3a4ad3a4484b9f",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000123_mod2_v1.json": "cfdcfa2801b231c1fa1583058eac4f50e7e2c57b86c397006487c8026bef5ad0",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000123_modl_v1.json": "6270feb9f66f0e132078b5cbd7c836a3e40b609597f3fa6236cc46136e96cdce",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000156_mod2_v1.json": "ef840808e6fd6b81435adc134c7fa7aeb1adc084cea360ad9dba1a7b238720f4",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000156_modl_v1.json": "31b940c7d57c77392b01a584c348ea9ad501c2886d6dfaef7901ed11289a6c3a",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000183_mod2_v1.json": "81514be715dc827d51f061b90b9b57a97fa4838ad3fad2a7a237ffd9afee98e0",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000183_modl_v1.json": "7ef8aa89bf13ef0df83839bd7b260720ba176f20945f3a2883372177f33d6ffc",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000434_mod2_v1.json": "ef05f11a154a4ebacfe929736d498cf94683f530ef3d0cdf122fc94f43189e80",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000434_modl_v1.json": "1ed0ead801b93f11e4096c4871b1de7bf8bc4de8e743102eedf2539be2c5baf0",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000446_mod2_v1.json": "e404cccef035955cd9e2f34c91b9d1f755e4a454f0257ef160c3194b45b5e847",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000446_modl_v1.json": "dc94659e8e39d49a5fcf3d18e2306b3398d82f0fa2fdc98a44ea770048276ced",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000560_mod2_v1.json": "27e30b8fff2eedf66a25d5218cf9e4943b111c7e3d22595d3d5c35021e1731a0",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0000560_modl_v1.json": "8c6735a9afd56bf4b481c45cde5ab74e6c94b16644c2e0c2ed245d54bfbc33e4",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0004097_mod2_v1.json": "4cdcbcb3478e33acab4c7ada84019b274c9114861d71e2f6d7ade6b1caaf8905",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0004097_modl_v1.json": "6f4f2444128a88542e74be1898bb864db39ecfa748a1f086a45fcaa2fd0fe9cc",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008193_mod2_v1.json": "746189ffb77502c26b40b1d255104a46f56cdc4c8b77c3962aa346ac6ca0eaf1",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008193_modl_v1.json": "cf0f90a1508dc8f97d297d17bb63bd940d1a1f37efba5b1dbdee598705ecd9cb",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008194_mod2_v1.json": "08e43467d49e544489b66a6ef71caba7310270dfdaca42ad29ab85aebe7d356e",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008194_modl_v1.json": "cec8a31cc725df256670a768258f584ae902f8c5b3522775b37db19dae267c90",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008202_mod2_v1.json": "23f36220cc47553670b8d2ce9bff08ffdfd8b4b456b79473df90845a3e997f8d",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008202_modl_v1.json": "b9f9d9db17dcb9322cf9b56725035b22e0a8208bd094caee974041aa4122dd29",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008207_mod2_v1.json": "807af8abfdf9f6c9cbdf67294816ced47cdf88fee79059443e7fe12744a2c1a5",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008207_modl_v1.json": "3d2b0cb200c7ee8ddf2c8acd45f91d03b8bfc731596db083a0889c26957afeea",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008211_mod2_v1.json": "06d8cbc2d1b5052910d76a000841f65dc5376bbf0db7328eb9ef8997b6e5bfda",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008211_modl_v1.json": "be18126996bad11f313ee18872a401927c74e2fa927571bbdc17618ca569a51e",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008213_mod2_v1.json": "8f5f98ce59dd7b6935d35c491d63d23aec2bba58ebbd804a517487a349c15dce",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008213_modl_v1.json": "dff103597e93c5ba50e458f09cb95160b6e95292f9aa6ada2a9fead08c1a6da7",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008217_mod2_v1.json": "b21e45b02c858c2f4a63e61df91988f229b92a0788ce31acbe247a69ecfa37aa",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008217_modl_v1.json": "c911a7736694466fdc38efed38a3e808aa5b5063a2b95b75cd2e836c95069cdf",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008222_mod2_v1.json": "5394a4f2a117d891b385379e1bd0ac4dca72b6cff4c1d207a7edb5cdb85b0341",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008222_modl_v1.json": "ad3d5bc7f007e2ac53df06f8fd972cce3e9d66f0096a701a2de2e6dd5202b684",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008239_mod2_v1.json": "c8068476ca82ce05d5ea2cfae2f609b56769d5739208f5e7b8d4f4aaa01a3e9c",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008239_modl_v1.json": "479d03ab0da1bb6d5533b93fc34d092a47d23e3bb45ca7d59cce0cdbd2a1503c",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008254_mod2_v1.json": "91d36c05c3c3e29f1d809f4a60572a8305cdb67b8e785eb1aab5698d9c8e9356",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008254_modl_v1.json": "f959fa4ade3e52a662661fe3dd9d705895e0a4c40edb9d0d72639664b764df85",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008279_mod2_v1.json": "480287e487102443cad0e1081dffa795b5405b5d44e298836ba2119528466c4a",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008279_modl_v1.json": "c38663206bc2e8eb137027725910252c76bf1f7fb8de4a413511b086b9f16e6c",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008886_mod2_v1.json": "fdcb471e80442d9089b8fe240509e5159cf970f001f7758e09e45ddffd284044",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0008886_modl_v1.json": "2e8503e0e4f7056e67fd2220f17f571461b7db477bdf01f46201964ecc5151c4",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0012288_mod2_v1.json": "ef1b4d459cdc395734412eb10183ef0be0e3d5d97158566586b0b154d3ae4977",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0012288_modl_v1.json": "da01d8b0c5d2df104f42dba85c2e173ade5458a1aef01e30b009bca6486a1b20",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0012291_mod2_v1.json": "6efd361dc2024dbe71a3bb6c235d64441924306bfa6f36756ba251449c0c9a78",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0012291_modl_v1.json": "5c44e6a7059e8fee7f27b241d73690b2a702c66b85be1d35ad0363b2692dfde6",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0012298_mod2_v1.json": "8e4b92a4aa006cf5e668fa9f55bdee518ee87702635c0deaf654321a95da620a",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0012298_modl_v1.json": "b2dd487bfa23bc159279abca393bab83a245ced0337ac434ced0727224482ead",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0012302_mod2_v1.json": "ecc1a8133f9c6a8cee4989fa727bdb1c76a5de3fd13b712ca30d229e890b6b7b",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0012302_modl_v1.json": "eb70e153579f1d89acaf496cf8024a5c09a0e2306bcf2405b9530af077978cd2",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0016384_mod2_v1.json": "1e1cc221953191bc9c8467995fa3d1f576007f934d217050deda09ee3cf1c03d",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0016384_modl_v1.json": "e160ee713bdeeb1a91c8af8d5ebc3d23be8cb0f75022b38810b8b6e03e9086ba",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0016399_mod2_v1.json": "d9ce4f74a561c6c38931196536b652388f9faa3aaaf37b23f8ba516be63a7507",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0016399_modl_v1.json": "869f386a81766092beaaa4278f7df7e0422b2318915449d2095e5b5549ae68e1",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0016402_mod2_v1.json": "65d80a9f8e0464445639b332583577871b1c597a900208306815f977bfd51bd9",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0016402_modl_v1.json": "59a572c2d69413086d1d73108180675c84da225804cba40fa5375f6a27536bbf",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0016411_mod2_v1.json": "8a774eaba70690c04ac2710b5dbf3c3e3280b955c8184842e86338a0e4ac415d",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0016411_modl_v1.json": "44d59573b0c0754e7dbf86479a594f8c0bc34a90a40c6fb00fb43b8a67cffc1c",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0020480_mod2_v1.json": "2b690aa07d4f71b79bfdd2ea7d1e2b90af06a953590e8d1a71ecc51ba6091fd1",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0020480_modl_v1.json": "4edcc5585cc4f1ef7d953aa390310e7872500cba735a41ec853a7f2780666eb9",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0020483_mod2_v1.json": "a5d1c5823e090e445a6f2438cf55fcdce44552a59532a974ea201b72d882105c",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0020483_modl_v1.json": "7b39b8d73efd5ad8a3dc1c369072c0b4ccaf4d20f55c3cb56296c27e722813ed",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0020513_mod2_v1.json": "5ba0f50330587cb763df7b81a9ac431ecdefe3fb999c8f5d835eb7ee8ef905d5",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0020513_modl_v1.json": "fa1b12df0d946becf1829f764187dca46f3498a6b15ba41efe1d36eeec683e5c",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0020523_mod2_v1.json": "afb509becd450f4b19886c730f50af1561c9441d42c7b3f90bb6bf7bfa05e488",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0020523_modl_v1.json": "0f982cca72b97d09625fe3db1158327e584a091af05c90af511f0961340d9b29",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0020526_mod2_v1.json": "70a936ab86488eb19617c415f9ca584c8c2cdd417f052f1c04595e6818d242b6",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0020526_modl_v1.json": "b5859f5999e2739873be554bc16bf6e15c2f8ae8fc80d98c2618b382b9fc983a",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0020532_mod2_v1.json": "6cd3289ba076ca58a21dcaa512280c94fbc22383f5a223c4adedcf4a181748d3",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0020532_modl_v1.json": "a3c3d9be6be67221d8515b4c934bd49c8b55d6d5536682f9821eeb648e269483",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0020811_mod2_v1.json": "631b69372e10f86579849e47f21fb83fc1df34ac53cdbfb53e57373f0ef66382",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0020811_modl_v1.json": "250140aee43f3b48e6be97bdef2ed17d8ca4ab245122e285db8172eeff9681cf",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0021079_mod2_v1.json": "016654b63bb9ac8e763d1b2c1926f63c24fbf045a620656749e5587de9e9b10f",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0021079_modl_v1.json": "34614ae2251acbad85702b236619c10779d0df4597a3b844a1f2451c74381f6b",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0024576_mod2_v1.json": "19d99a13c99266ad15bd557689a1179280abcdabd388e8ccbbc062654c5dccae",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0024576_modl_v1.json": "25599051e2d74e24dfa3b32f537114b7763b08b815c2926167091c734f054d79",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0024580_mod2_v1.json": "d3b9f992ea6b508fcc20449454405523a062c4f148c0e47eb23ba38ff5b79b65",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0024580_modl_v1.json": "824672e9b6cb31352ac01f45cb3fe5bb8aa7a40770d2d30fd49ff586e0ecc562",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0024594_mod2_v1.json": "3ed4f29b199e681bcc6acfe8b0b9bb7dc2ca2efc1a805ed9c8effe87dcbd44ee",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0024594_modl_v1.json": "c98a9e7d123ad83d01ed229d3afa4e6dab6e5e988a535481d170d05fc3028e93",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0024595_mod2_v1.json": "018c590eab44f1dac9f5253217190210088890575bcb9a893ee8646b19c48264",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0024595_modl_v1.json": "ebaab34a69b156e70cae10ffd08aafc35bd1183daeca0a553780f2d879c490c5",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0024614_mod2_v1.json": "7a12aba85e19c4ac98f59cce92e52b9d23245992017e027bf46f023816a41f3c",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0024614_modl_v1.json": "88421c0d49772ed4932cdf2756f3e659c0de77d0ded78f70b284b49a241c4ab8",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0024632_mod2_v1.json": "5a52ce04cbcd2eac7e6b1449581c735e374c49070310a853a0237aa1b048dfbb",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0024632_modl_v1.json": "e87d6bbe0db03ff8aa908fc5202e85162ac401a5878b306fb38f42ebad0704f7",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0024724_mod2_v1.json": "b87a649c129b4e80b4db59e14093a1a6a5c84a227b7f7eb452e6938bab0047d2",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0024724_modl_v1.json": "3c218fb701694f9c6046bf5bf7a20ae91102817063851c2be2540b61f26f510e",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0024759_mod2_v1.json": "f8a6b503c23d703ea5b5523ae49a49b393caf3609b60a8a933a1f1cf3736ddee",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0024759_modl_v1.json": "4222cd38c5564024b461364256fa22e076dbfe183f3a2b974346437cf5f98524",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0024766_mod2_v1.json": "1f693823412bb5f8e27971e95a8e3f368a4236c1cade10fd713cec48dbd46105",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0024766_modl_v1.json": "c5b2381ce7cffb935122808aef10e373c5edea48fe82427949d6d29b0f76ddb8",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0028720_mod2_v1.json": "030413d9d074498f7078ced5f8f08694cb890a508b6851ec8ea492d588d2d8cc",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0028720_modl_v1.json": "34f0dae0eee1f02cda96f0852e662250d1604a287a61a255e9cb2b1064acb583",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0028723_mod2_v1.json": "b35365754276edb813b03b325c79058f5f1175535cbec5bae9782eedbf41bac0",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0028723_modl_v1.json": "15315f6555e10a3fba019bd15924488be784aec6f36848e9caba4ed2ff21a1e7",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0028724_mod2_v1.json": "4278096c83d704e70aa5f50935e92a3a1e89347011fd194e69995330e34b34bf",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0028724_modl_v1.json": "24d0e5ea89828ac6f3679c95df1c4ee94b9a3fcfffb2b6752c437da116f42106",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0028730_mod2_v1.json": "5fadd4a83a0eb99f5bab13a62605c959794a5aff929fdb29f3f32d380cde2db4",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0028730_modl_v1.json": "9c4f80230f035d878d33575fc3b38e7dec5b8d42a33708866caaac72946566f8",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0028733_mod2_v1.json": "6c7403895b94e8c9c63c6b737a21b7949128286c995d49488e01cf3cca5eb821",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0028733_modl_v1.json": "f22877ae150f2594353298f44bcc5e455b6b0b41ba7089fafb16eca4f4dadda7",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0028944_mod2_v1.json": "d8b75afbf22fc70174e1c392f0d02eb62ea8db83e28f2e24a0e8dd057270d1d7",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0028944_modl_v1.json": "2d942d6fc66708dde3ec902d84b6f1a1c7bb3e1431867bf074c8452be1874ad4",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0029069_mod2_v1.json": "ef67d5f7a77fc96c9587269441e4f0e8707bb4c1735c2b6dec01e6a80021d8cd",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0029069_modl_v1.json": "5d486ba141d68d889815538f7c549997855be14145151b144bc590d7e1c2d40e",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0029262_mod2_v1.json": "96fc9f1fa9bad1fabe1474fc1b13a4e9f14e9ae9f6c46916f9aabfa41c2ae69a",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0029262_modl_v1.json": "ff163cd0fccce9c130b89ca83bce3ac4ae3b56273d25c50da8f9341a723681d5",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0029320_mod2_v1.json": "f890050bd403aa0c18e1e6fc1f489436c38d8984fb2982346992170d2af139f7",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_11952_0029320_modl_v1.json": "57d4f77f1eb10103938ef3da2170bd61006c99d2eaf0ba29e27e2cd9ed2f108a",
+    "artifacts/generated-results/elliptic-curves/joint64_r17_results_v1.json": "51d08022c528b85a800e2a62bfc86ca0b6b7594b819197201b5d4b16b8d39d41",
+    "artifacts/local/elliptic-curves/joint11952-fresh-scores-v1/fresh-validation.json": "91d6617fb2ba11ed04e22a97766f97d62076e3d57029468f42fed6805a2f59f4",
+    "artifacts/local/elliptic-curves/joint64-controller-v1/freeze.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/local/elliptic-curves/joint64-controller-v1/geometry.log": "1e971ce18c3a10f8012c7741886faae22069a4940aabf9838f99c731253460ec",
+    "artifacts/local/elliptic-curves/joint64-controller-v1/ledger.json": "470e0ad432ac72879e8b0497337d28bce283e54ed48191da3b4e1ce86af24f75",
+    "artifacts/local/elliptic-curves/joint64-controller-v1/maps.log": "c5d510c9a3da693747b0417369bddc3d1d9971189ffb244d0fdff0a81d60b317",
+    "artifacts/local/elliptic-curves/joint64-controller-v1/odd.log": "5ed47d488002d31914f8658bb9b5bcc7ec7864653e3723f913f6f799609053a1",
+    "artifacts/local/elliptic-curves/joint64-controller-v1/points.log": "93032ef1fa040217043bdc39212148a1174f4fd5d5bb30e603726535c0e49431",
+    "artifacts/local/elliptic-curves/joint64-controller-v1/protocol.json": "cb8818fcfebc01a0d9c0f03af1447368fa3f08084332f70017ad3784feed7a24",
+    "artifacts/local/elliptic-curves/joint64-controller-v1/verify.log": "0424cc09de32fbd9953e9a3915133dcfd39f6846cef294b2da435d9d7da20fce",
+    "artifacts/local/elliptic-curves/joint64-r17-pari-v1/ledger.json": "ac623aa47fec1559cba6ff3ff66f0b38d5edba9ea74ab6f4391d8bea38d3b9b1",
+    "artifacts/local/elliptic-curves/joint64-r17-pari-v1/odd-cloud-audit/ledger.json": "ae5dface161d737e9d442f7455a329bae51e7a9c0ca9317e1786dfbaea271470",
+    "artifacts/local/elliptic-curves/joint64-r17-pari-v1/protocol.json": "76c24c02e07404a1842d317314ed74d31c8eebd68fdf3d5b7192339370306381",
+    "artifacts/local/elliptic-curves/joint64-r17-pari-v1/verification-ledger.json": "a8296d6919223c7240c66cf18ed19d578dcfc1e39e8319cbf8e462222a65d8ed",
+    "elliptic-curves/cas/report_joint64_experiment.py": "03ae6bba761968a67921afb594729facb396d47e02cdc73a2cae87d15e743a6f"
+  },
+  "status": "PASS",
+  "stronger_odd_prime_bounds": []
+}

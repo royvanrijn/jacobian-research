@@ -1,0 +1,1408 @@
+{
+  "claim_boundary": "Descriptive comparison of two disjoint finite parameter populations. The broad trial changes slice coverage while holding later selection rules and budgets fixed. These are not nested populations or replicated randomized experiments. Score improvement is not a new rank, proof of optimal selection, or calibrated prediction of discovery yield. Wholly disjoint prime scores were recorded only after finalists were frozen and cannot change selection or point budgets. No point outcome, record label or catalogue is read.",
+  "groups": [
+    {
+      "band": 2,
+      "broad": {
+        "disjoint_validation_score_units": {
+          "count": 6,
+          "maximum": 12653167224224,
+          "mean": "63519878079985/6",
+          "median": "10131419974507",
+          "minimum": 8732313615363
+        },
+        "final_selection_score_units": {
+          "count": 6,
+          "maximum": 158987006471051,
+          "mean": "948246947520335/6",
+          "median": "315785478795019/2",
+          "minimum": 157033102172221
+        },
+        "finalist_parameter_heights": {
+          "count": 6,
+          "maximum": 61720,
+          "mean": "272533/6",
+          "median": "42889",
+          "minimum": 37075
+        },
+        "finalists": [
+          {
+            "id": "broad-b2-a1-fibration-01-0002",
+            "parameter": "-50315/12077"
+          },
+          {
+            "id": "broad-b2-a1-fibration-01-0003",
+            "parameter": "-14282/37075"
+          },
+          {
+            "id": "broad-b2-a1-fibration-01-0000",
+            "parameter": "-45394/37097"
+          },
+          {
+            "id": "broad-b2-a1-fibration-01-0011",
+            "parameter": "-40384/36555"
+          },
+          {
+            "id": "broad-b2-a1-fibration-01-0228",
+            "parameter": "-14478/37645"
+          },
+          {
+            "id": "broad-b2-a1-fibration-01-0021",
+            "parameter": "-61720/15319"
+          }
+        ],
+        "initial_selected_score_units": {
+          "count": 1024,
+          "maximum": 142756722197958,
+          "mean": "138918284222342845/1024",
+          "median": "270600649729289/2",
+          "minimum": 134368320826808
+        }
+      },
+      "broad_minus_narrow": {
+        "disjoint_validation_score_units": {
+          "maximum": "-1391683851601",
+          "mean": "-3408818336200/3",
+          "median": "-3982177878441/2",
+          "minimum": "918260469418"
+        },
+        "final_selection_score_units": {
+          "maximum": "3187299627471",
+          "mean": "14012930036792/3",
+          "median": "5463700456895",
+          "minimum": "4967660957687"
+        },
+        "initial_selected_score_units": {
+          "maximum": "2817587768297",
+          "mean": "3843791261985169/1024",
+          "median": "7595334041075/2",
+          "minimum": "3926803847813"
+        }
+      },
+      "family": "a1-fibration-01",
+      "narrow": {
+        "disjoint_validation_score_units": {
+          "count": 6,
+          "maximum": 14044851075825,
+          "mean": "23445838250795/2",
+          "median": "24245017827455/2",
+          "minimum": 7814053145945
+        },
+        "final_selection_score_units": {
+          "count": 6,
+          "maximum": 155799706843580,
+          "mean": "920221087446751/6",
+          "median": "304858077881229/2",
+          "minimum": 152065441214534
+        },
+        "finalist_parameter_heights": {
+          "count": 6,
+          "maximum": 63545,
+          "mean": "314251/6",
+          "median": "51828",
+          "minimum": 41373
+        },
+        "finalists": [
+          {
+            "id": "higher-b2-a1-fibration-01-0050",
+            "parameter": "61363/42740"
+          },
+          {
+            "id": "higher-b2-a1-fibration-01-0037",
+            "parameter": "-44314/33337"
+          },
+          {
+            "id": "higher-b2-a1-fibration-01-0008",
+            "parameter": "11425/48372"
+          },
+          {
+            "id": "higher-b2-a1-fibration-01-0098",
+            "parameter": "-49093/63545"
+          },
+          {
+            "id": "higher-b2-a1-fibration-01-0001",
+            "parameter": "41373/500"
+          },
+          {
+            "id": "higher-b2-a1-fibration-01-0024",
+            "parameter": "49519/55284"
+          }
+        ],
+        "initial_selected_score_units": {
+          "count": 1024,
+          "maximum": 139939134429661,
+          "mean": "33768623240089419/256",
+          "median": "131502657844107",
+          "minimum": 130441516978995
+        }
+      }
+    },
+    {
+      "band": 2,
+      "broad": {
+        "disjoint_validation_score_units": {
+          "count": 6,
+          "maximum": 16044829840416,
+          "mean": "13081987776776",
+          "median": "13092928035430",
+          "minimum": 10302525948639
+        },
+        "final_selection_score_units": {
+          "count": 6,
+          "maximum": 161688168873748,
+          "mean": "314344338165743/2",
+          "median": "156403334873213",
+          "minimum": 155755358888849
+        },
+        "finalist_parameter_heights": {
+          "count": 6,
+          "maximum": 62405,
+          "mean": "68195/2",
+          "median": "61523/2",
+          "minimum": 16916
+        },
+        "finalists": [
+          {
+            "id": "broad-b2-a1-fibration-02-0000",
+            "parameter": "-22059/7204"
+          },
+          {
+            "id": "broad-b2-a1-fibration-02-0164",
+            "parameter": "53642/62405"
+          },
+          {
+            "id": "broad-b2-a1-fibration-02-0013",
+            "parameter": "-6833/16916"
+          },
+          {
+            "id": "broad-b2-a1-fibration-02-0441",
+            "parameter": "4617/45079"
+          },
+          {
+            "id": "broad-b2-a1-fibration-02-0007",
+            "parameter": "39464/18377"
+          },
+          {
+            "id": "broad-b2-a1-fibration-02-0004",
+            "parameter": "18662/14009"
+          }
+        ],
+        "initial_selected_score_units": {
+          "count": 1024,
+          "maximum": 147098860937237,
+          "mean": "138400031009402623/1024",
+          "median": "269567737496915/2",
+          "minimum": 133917988627025
+        }
+      },
+      "broad_minus_narrow": {
+        "disjoint_validation_score_units": {
+          "maximum": "3029381542879",
+          "mean": "16429795107965/6",
+          "median": "2990871623684",
+          "minimum": "2623512506383"
+        },
+        "final_selection_score_units": {
+          "maximum": "6596981737199",
+          "mean": "10510213974533/3",
+          "median": "4975870453117/2",
+          "minimum": "3929730391394"
+        },
+        "initial_selected_score_units": {
+          "maximum": "6805420249046",
+          "mean": "3791875691789503/1024",
+          "median": "7450227059247/2",
+          "minimum": "3878088101540"
+        }
+      },
+      "family": "a1-fibration-02",
+      "narrow": {
+        "disjoint_validation_score_units": {
+          "count": 6,
+          "maximum": 13015448297537,
+          "mean": "62062131552691/6",
+          "median": "10102056411746",
+          "minimum": 7679013442256
+        },
+        "final_selection_score_units": {
+          "count": 6,
+          "maximum": 155091187136549,
+          "mean": "922012586548163/6",
+          "median": "307830799293309/2",
+          "minimum": 151825628497455
+        },
+        "finalist_parameter_heights": {
+          "count": 6,
+          "maximum": 59939,
+          "mean": "139372/3",
+          "median": "97985/2",
+          "minimum": 22181
+        },
+        "finalists": [
+          {
+            "id": "higher-b2-a1-fibration-02-0002",
+            "parameter": "42878/3793"
+          },
+          {
+            "id": "higher-b2-a1-fibration-02-0004",
+            "parameter": "-49899/29686"
+          },
+          {
+            "id": "higher-b2-a1-fibration-02-0045",
+            "parameter": "22181/12241"
+          },
+          {
+            "id": "higher-b2-a1-fibration-02-0001",
+            "parameter": "19811/55761"
+          },
+          {
+            "id": "higher-b2-a1-fibration-02-0013",
+            "parameter": "-59939/4342"
+          },
+          {
+            "id": "higher-b2-a1-fibration-02-0007",
+            "parameter": "48086/9681"
+          }
+        ],
+        "initial_selected_score_units": {
+          "count": 1024,
+          "maximum": 140293440688191,
+          "mean": "2103252426837705/16",
+          "median": "131058755218834",
+          "minimum": 130039900525485
+        }
+      }
+    },
+    {
+      "band": 2,
+      "broad": {
+        "disjoint_validation_score_units": {
+          "count": 6,
+          "maximum": 18123308890454,
+          "mean": "25969050620833/2",
+          "median": "12568993806229",
+          "minimum": 9701027818084
+        },
+        "final_selection_score_units": {
+          "count": 6,
+          "maximum": 158081221224302,
+          "mean": "937462775181385/6",
+          "median": "155852172236930",
+          "minimum": 155289566165663
+        },
+        "finalist_parameter_heights": {
+          "count": 6,
+          "maximum": 53032,
+          "mean": "111067/3",
+          "median": "79705/2",
+          "minimum": 21151
+        },
+        "finalists": [
+          {
+            "id": "broad-b2-a1-fibration-03-0002",
+            "parameter": "-18477/40597"
+          },
+          {
+            "id": "broad-b2-a1-fibration-03-0011",
+            "parameter": "35623/39108"
+          },
+          {
+            "id": "broad-b2-a1-fibration-03-0113",
+            "parameter": "43841/1626"
+          },
+          {
+            "id": "broad-b2-a1-fibration-03-0017",
+            "parameter": "21151/86"
+          },
+          {
+            "id": "broad-b2-a1-fibration-03-0004",
+            "parameter": "-53032/52119"
+          },
+          {
+            "id": "broad-b2-a1-fibration-03-0246",
+            "parameter": "24405/86"
+          }
+        ],
+        "initial_selected_score_units": {
+          "count": 1024,
+          "maximum": 141807643948136,
+          "mean": "138074855963697849/1024",
+          "median": "134494718019224",
+          "minimum": 133585957971762
+        }
+      },
+      "broad_minus_narrow": {
+        "disjoint_validation_score_units": {
+          "maximum": "3630679248191",
+          "mean": "2476864114139",
+          "median": "2673874996888",
+          "minimum": "1067036293384"
+        },
+        "final_selection_score_units": {
+          "maximum": "2455818957055",
+          "mean": "9623246738498/3",
+          "median": "3107838358205",
+          "minimum": "3956927732447"
+        },
+        "initial_selected_score_units": {
+          "maximum": "3857320298749",
+          "mean": "3671397723989777/1024",
+          "median": "7265713375705/2",
+          "minimum": "3794620152690"
+        }
+      },
+      "family": "a1-fibration-03",
+      "narrow": {
+        "disjoint_validation_score_units": {
+          "count": 6,
+          "maximum": 14492629642263,
+          "mean": "21015322392555/2",
+          "median": "9895118809341",
+          "minimum": 8633991524700
+        },
+        "final_selection_score_units": {
+          "count": 6,
+          "maximum": 155625402267247,
+          "mean": "306072093901463/2",
+          "median": "152744333878725",
+          "minimum": 151332638433216
+        },
+        "finalist_parameter_heights": {
+          "count": 6,
+          "maximum": 57819,
+          "mean": "47599",
+          "median": "46964",
+          "minimum": 35035
+        },
+        "finalists": [
+          {
+            "id": "higher-b2-a1-fibration-03-0000",
+            "parameter": "56353/14804"
+          },
+          {
+            "id": "higher-b2-a1-fibration-03-0040",
+            "parameter": "-43277/19931"
+          },
+          {
+            "id": "higher-b2-a1-fibration-03-0002",
+            "parameter": "-27454/57819"
+          },
+          {
+            "id": "higher-b2-a1-fibration-03-0047",
+            "parameter": "-31697/35035"
+          },
+          {
+            "id": "higher-b2-a1-fibration-03-0053",
+            "parameter": "-1056/50651"
+          },
+          {
+            "id": "higher-b2-a1-fibration-03-0082",
+            "parameter": "-10391/42459"
+          }
+        ],
+        "initial_selected_score_units": {
+          "count": 1024,
+          "maximum": 137950323649387,
+          "mean": "16800432279963509/128",
+          "median": "261723722662743/2",
+          "minimum": 129791337819072
+        }
+      }
+    },
+    {
+      "band": 2,
+      "broad": {
+        "disjoint_validation_score_units": {
+          "count": 6,
+          "maximum": 13973347917805,
+          "mean": "60509284210025/6",
+          "median": "19633993225673/2",
+          "minimum": 7360918738734
+        },
+        "final_selection_score_units": {
+          "count": 6,
+          "maximum": 156673642171168,
+          "mean": "936032542352609/6",
+          "median": "155799878887571",
+          "minimum": 155523941164595
+        },
+        "finalist_parameter_heights": {
+          "count": 6,
+          "maximum": 64394,
+          "mean": "281545/6",
+          "median": "51943",
+          "minimum": 21527
+        },
+        "finalists": [
+          {
+            "id": "broad-b2-a1-fibration-04-0018",
+            "parameter": "3785/21527"
+          },
+          {
+            "id": "broad-b2-a1-fibration-04-0001",
+            "parameter": "-83/64394"
+          },
+          {
+            "id": "broad-b2-a1-fibration-04-0007",
+            "parameter": "-58271/30274"
+          },
+          {
+            "id": "broad-b2-a1-fibration-04-0003",
+            "parameter": "39786/48065"
+          },
+          {
+            "id": "broad-b2-a1-fibration-04-0317",
+            "parameter": "37726/55821"
+          },
+          {
+            "id": "broad-b2-a1-fibration-04-0504",
+            "parameter": "5184/33467"
+          }
+        ],
+        "initial_selected_score_units": {
+          "count": 1024,
+          "maximum": 142889965198354,
+          "mean": "138339802571347613/1024",
+          "median": "269465993514911/2",
+          "minimum": 133847708937920
+        }
+      },
+      "broad_minus_narrow": {
+        "disjoint_validation_score_units": {
+          "maximum": "14709864923",
+          "mean": "-995363107149",
+          "median": "-1106808130163/2",
+          "minimum": "-2045878033833"
+        },
+        "final_selection_score_units": {
+          "maximum": "3046608285402",
+          "mean": "10327883387347/3",
+          "median": "6024792496489/2",
+          "minimum": "4334355482381"
+        },
+        "initial_selected_score_units": {
+          "maximum": "5128953823774",
+          "mean": "486885583766799/128",
+          "median": "7555045037961/2",
+          "minimum": "3899897169633"
+        }
+      },
+      "family": "a1-fibration-04",
+      "narrow": {
+        "disjoint_validation_score_units": {
+          "count": 6,
+          "maximum": 13958638052882,
+          "mean": "66481462852919/6",
+          "median": "10370400677918",
+          "minimum": 9406796772567
+        },
+        "final_selection_score_units": {
+          "count": 6,
+          "maximum": 153627033885766,
+          "mean": "305125591859305/2",
+          "median": "305574965278653/2",
+          "minimum": 151189585682214
+        },
+        "finalist_parameter_heights": {
+          "count": 6,
+          "maximum": 59925,
+          "mean": "296633/6",
+          "median": "57493",
+          "minimum": 27153
+        },
+        "finalists": [
+          {
+            "id": "higher-b2-a1-fibration-04-0262",
+            "parameter": "4408/59925"
+          },
+          {
+            "id": "higher-b2-a1-fibration-04-0270",
+            "parameter": "8411/57621"
+          },
+          {
+            "id": "higher-b2-a1-fibration-04-0230",
+            "parameter": "-35575/25074"
+          },
+          {
+            "id": "higher-b2-a1-fibration-04-0030",
+            "parameter": "-27153/4850"
+          },
+          {
+            "id": "higher-b2-a1-fibration-04-0036",
+            "parameter": "58994/13333"
+          },
+          {
+            "id": "higher-b2-a1-fibration-04-0009",
+            "parameter": "52438/57365"
+          }
+        ],
+        "initial_selected_score_units": {
+          "count": 1024,
+          "maximum": 137761011374580,
+          "mean": "134444717901213221/1024",
+          "median": "130955474238475",
+          "minimum": 129947811768287
+        }
+      }
+    },
+    {
+      "band": 2,
+      "broad": {
+        "disjoint_validation_score_units": {
+          "count": 6,
+          "maximum": 15635418156743,
+          "mean": "12515460812008",
+          "median": "11713520969634",
+          "minimum": 10935163290460
+        },
+        "final_selection_score_units": {
+          "count": 6,
+          "maximum": 157445492855123,
+          "mean": "931128889511183/6",
+          "median": "154773650020774",
+          "minimum": 154306987995968
+        },
+        "finalist_parameter_heights": {
+          "count": 6,
+          "maximum": 61641,
+          "mean": "34219",
+          "median": "34466",
+          "minimum": 17001
+        },
+        "finalists": [
+          {
+            "id": "broad-b2-a1-fibration-05-0052",
+            "parameter": "-5273/17129"
+          },
+          {
+            "id": "broad-b2-a1-fibration-05-0030",
+            "parameter": "-37260/16691"
+          },
+          {
+            "id": "broad-b2-a1-fibration-05-0019",
+            "parameter": "-31672/8693"
+          },
+          {
+            "id": "broad-b2-a1-fibration-05-0029",
+            "parameter": "61641/45142"
+          },
+          {
+            "id": "broad-b2-a1-fibration-05-0001",
+            "parameter": "-17001/7343"
+          },
+          {
+            "id": "broad-b2-a1-fibration-05-0237",
+            "parameter": "-40611/28979"
+          }
+        ],
+        "initial_selected_score_units": {
+          "count": 1024,
+          "maximum": 140867814139887,
+          "mean": "138182516034447241/1024",
+          "median": "134555585849680",
+          "minimum": 133730012095106
+        }
+      },
+      "broad_minus_narrow": {
+        "disjoint_validation_score_units": {
+          "maximum": "162866407749",
+          "mean": "-2605432916417/2",
+          "median": "-4873284955175/2",
+          "minimum": "-214653270919"
+        },
+        "final_selection_score_units": {
+          "maximum": "1181591716478",
+          "mean": "5265688621789/3",
+          "median": "3606862063015/2",
+          "minimum": "2678396585151"
+        },
+        "initial_selected_score_units": {
+          "maximum": "2389231064522",
+          "mean": "3795506820343407/1024",
+          "median": "7441902387875/2",
+          "minimum": "3888230390103"
+        }
+      },
+      "family": "a1-fibration-05",
+      "narrow": {
+        "disjoint_validation_score_units": {
+          "count": 6,
+          "maximum": 15472551748994,
+          "mean": "27636354540433/2",
+          "median": "28300326894443/2",
+          "minimum": 11149816561379
+        },
+        "final_selection_score_units": {
+          "count": 6,
+          "maximum": 156263901138645,
+          "mean": "306865837422535/2",
+          "median": "305940437978533/2",
+          "minimum": 151628591410817
+        },
+        "finalist_parameter_heights": {
+          "count": 6,
+          "maximum": 60345,
+          "mean": "244511/6",
+          "median": "43008",
+          "minimum": 18014
+        },
+        "finalists": [
+          {
+            "id": "higher-b2-a1-fibration-05-0060",
+            "parameter": "-29017/40889"
+          },
+          {
+            "id": "higher-b2-a1-fibration-05-0013",
+            "parameter": "47243/20830"
+          },
+          {
+            "id": "higher-b2-a1-fibration-05-0010",
+            "parameter": "6601/18014"
+          },
+          {
+            "id": "higher-b2-a1-fibration-05-0007",
+            "parameter": "-32893/11961"
+          },
+          {
+            "id": "higher-b2-a1-fibration-05-0004",
+            "parameter": "-7022/60345"
+          },
+          {
+            "id": "higher-b2-a1-fibration-05-0056",
+            "parameter": "-45127/14009"
+          }
+        ],
+        "initial_selected_score_units": {
+          "count": 1024,
+          "maximum": 138478583075365,
+          "mean": "67193504607051917/512",
+          "median": "261669269311485/2",
+          "minimum": 129841781705003
+        }
+      }
+    },
+    {
+      "band": 3,
+      "broad": {
+        "disjoint_validation_score_units": {
+          "count": 6,
+          "maximum": 13488118483534,
+          "mean": "62404302532637/6",
+          "median": "21389655350925/2",
+          "minimum": 6625150190684
+        },
+        "final_selection_score_units": {
+          "count": 6,
+          "maximum": 156566234288247,
+          "mean": "311266062049221/2",
+          "median": "310951504426991/2",
+          "minimum": 155254565050690
+        },
+        "finalist_parameter_heights": {
+          "count": 6,
+          "maximum": 245961,
+          "mean": "397999/2",
+          "median": "216045",
+          "minimum": 100812
+        },
+        "finalists": [
+          {
+            "id": "broad-b3-a1-fibration-01-0002",
+            "parameter": "-149875/245961"
+          },
+          {
+            "id": "broad-b3-a1-fibration-01-0139",
+            "parameter": "-100812/96815"
+          },
+          {
+            "id": "broad-b3-a1-fibration-01-0018",
+            "parameter": "-173269/157481"
+          },
+          {
+            "id": "broad-b3-a1-fibration-01-0009",
+            "parameter": "-201553/142651"
+          },
+          {
+            "id": "broad-b3-a1-fibration-01-0170",
+            "parameter": "-3348/241865"
+          },
+          {
+            "id": "broad-b3-a1-fibration-01-0152",
+            "parameter": "-57076/230537"
+          }
+        ],
+        "initial_selected_score_units": {
+          "count": 1024,
+          "maximum": 140897120291793,
+          "mean": "69417817556551043/512",
+          "median": "135237162264069",
+          "minimum": 134317480390214
+        }
+      },
+      "broad_minus_narrow": {
+        "disjoint_validation_score_units": {
+          "maximum": "-4508408846630",
+          "mean": "-5862630242531/6",
+          "median": "-1365323164392",
+          "minimum": "1883573053536"
+        },
+        "final_selection_score_units": {
+          "maximum": "2238675991542",
+          "mean": "8114899590514/3",
+          "median": "5435377461893/2",
+          "minimum": "3224987821058"
+        },
+        "initial_selected_score_units": {
+          "maximum": "-461243514706",
+          "mean": "3870383570518965/1024",
+          "median": "3838372037863",
+          "minimum": "3910998444352"
+        }
+      },
+      "family": "a1-fibration-01",
+      "narrow": {
+        "disjoint_validation_score_units": {
+          "count": 6,
+          "maximum": 17996527330164,
+          "mean": "34133466387584/3",
+          "median": "24120301679709/2",
+          "minimum": 4741577137148
+        },
+        "final_selection_score_units": {
+          "count": 6,
+          "maximum": 154327558296705,
+          "mean": "917568386966635/6",
+          "median": "152758063482549",
+          "minimum": 152029577229632
+        },
+        "finalist_parameter_heights": {
+          "count": 6,
+          "maximum": 214506,
+          "mean": "466094/3",
+          "median": "295875/2",
+          "minimum": 128310
+        },
+        "finalists": [
+          {
+            "id": "higher-b3-a1-fibration-01-0003",
+            "parameter": "76729/159018"
+          },
+          {
+            "id": "higher-b3-a1-fibration-01-0021",
+            "parameter": "-128310/60751"
+          },
+          {
+            "id": "higher-b3-a1-fibration-01-0604",
+            "parameter": "-149108/93519"
+          },
+          {
+            "id": "higher-b3-a1-fibration-01-0005",
+            "parameter": "-214506/150863"
+          },
+          {
+            "id": "higher-b3-a1-fibration-01-0174",
+            "parameter": "-83718/134479"
+          },
+          {
+            "id": "higher-b3-a1-fibration-01-0000",
+            "parameter": "-59285/146767"
+          }
+        ],
+        "initial_selected_score_units": {
+          "count": 1024,
+          "maximum": 141358363806499,
+          "mean": "134965251542583121/1024",
+          "median": "131398790226206",
+          "minimum": 130406481945862
+        }
+      }
+    },
+    {
+      "band": 3,
+      "broad": {
+        "disjoint_validation_score_units": {
+          "count": 6,
+          "maximum": 14196140813160,
+          "mean": "11074187234735",
+          "median": "23101839656673/2",
+          "minimum": 6649718710395
+        },
+        "final_selection_score_units": {
+          "count": 6,
+          "maximum": 157170140547216,
+          "mean": "311357433379395/2",
+          "median": "155416858788618",
+          "minimum": 155015967376453
+        },
+        "finalist_parameter_heights": {
+          "count": 6,
+          "maximum": 246557,
+          "mean": "202620",
+          "median": "423175/2",
+          "minimum": 122348
+        },
+        "finalists": [
+          {
+            "id": "broad-b3-a1-fibration-02-0242",
+            "parameter": "-39107/204978"
+          },
+          {
+            "id": "broad-b3-a1-fibration-02-0458",
+            "parameter": "148959/218197"
+          },
+          {
+            "id": "broad-b3-a1-fibration-02-0089",
+            "parameter": "55990/199769"
+          },
+          {
+            "id": "broad-b3-a1-fibration-02-0046",
+            "parameter": "-57483/122348"
+          },
+          {
+            "id": "broad-b3-a1-fibration-02-0040",
+            "parameter": "246557/187197"
+          },
+          {
+            "id": "broad-b3-a1-fibration-02-0029",
+            "parameter": "110355/223871"
+          }
+        ],
+        "initial_selected_score_units": {
+          "count": 1024,
+          "maximum": 141987356378442,
+          "mean": "138477639717070475/1024",
+          "median": "269661726071129/2",
+          "minimum": 133980959315516
+        }
+      },
+      "broad_minus_narrow": {
+        "disjoint_validation_score_units": {
+          "maximum": "853297284111",
+          "mean": "11669205042161/6",
+          "median": "2543660972232",
+          "minimum": "1235084920139"
+        },
+        "final_selection_score_units": {
+          "maximum": "3012448756751",
+          "mean": "13015898918527/6",
+          "median": "2021318703284",
+          "minimum": "2109868554268"
+        },
+        "initial_selected_score_units": {
+          "maximum": "3754431059239",
+          "mean": "3981596388114345/1024",
+          "median": "7715013882925/2",
+          "minimum": "4024839070724"
+        }
+      },
+      "family": "a1-fibration-02",
+      "narrow": {
+        "disjoint_validation_score_units": {
+          "count": 6,
+          "maximum": 13342843529049,
+          "mean": "54775918366249/6",
+          "median": "18014517712209/2",
+          "minimum": 5414633790256
+        },
+        "final_selection_score_units": {
+          "count": 6,
+          "maximum": 154157691790465,
+          "mean": "460528200609829/3",
+          "median": "153395540085334",
+          "minimum": 152906098822185
+        },
+        "finalist_parameter_heights": {
+          "count": 6,
+          "maximum": 248456,
+          "mean": "546241/3",
+          "median": "344063/2",
+          "minimum": 125517
+        },
+        "finalists": [
+          {
+            "id": "higher-b3-a1-fibration-02-0193",
+            "parameter": "248456/150093"
+          },
+          {
+            "id": "higher-b3-a1-fibration-02-0007",
+            "parameter": "-42763/161202"
+          },
+          {
+            "id": "higher-b3-a1-fibration-02-0931",
+            "parameter": "179328/182861"
+          },
+          {
+            "id": "higher-b3-a1-fibration-02-0168",
+            "parameter": "31747/125517"
+          },
+          {
+            "id": "higher-b3-a1-fibration-02-0050",
+            "parameter": "-144027/21938"
+          },
+          {
+            "id": "higher-b3-a1-fibration-02-0023",
+            "parameter": "230419/199245"
+          }
+        ],
+        "initial_selected_score_units": {
+          "count": 1024,
+          "maximum": 138232925319203,
+          "mean": "67248021664478065/512",
+          "median": "130973356094102",
+          "minimum": 129956120244792
+        }
+      }
+    },
+    {
+      "band": 3,
+      "broad": {
+        "disjoint_validation_score_units": {
+          "count": 6,
+          "maximum": 12532123474616,
+          "mean": "10534969304757",
+          "median": "20871189700247/2",
+          "minimum": 7708058405991
+        },
+        "final_selection_score_units": {
+          "count": 6,
+          "maximum": 157174586703088,
+          "mean": "468461231328596/3",
+          "median": "156038007528063",
+          "minimum": 155728720818828
+        },
+        "finalist_parameter_heights": {
+          "count": 6,
+          "maximum": 227644,
+          "mean": "493466/3",
+          "median": "190174",
+          "minimum": 67023
+        },
+        "finalists": [
+          {
+            "id": "broad-b3-a1-fibration-03-0056",
+            "parameter": "-227644/154507"
+          },
+          {
+            "id": "broad-b3-a1-fibration-03-0011",
+            "parameter": "-108444/60299"
+          },
+          {
+            "id": "broad-b3-a1-fibration-03-0830",
+            "parameter": "201665/175616"
+          },
+          {
+            "id": "broad-b3-a1-fibration-03-0181",
+            "parameter": "178683/93046"
+          },
+          {
+            "id": "broad-b3-a1-fibration-03-0019",
+            "parameter": "-131201/203473"
+          },
+          {
+            "id": "broad-b3-a1-fibration-03-0001",
+            "parameter": "-13352/67023"
+          }
+        ],
+        "initial_selected_score_units": {
+          "count": 1024,
+          "maximum": 143113116149702,
+          "mean": "4313933137234863/32",
+          "median": "134418685933839",
+          "minimum": 133563331510140
+        }
+      },
+      "broad_minus_narrow": {
+        "disjoint_validation_score_units": {
+          "maximum": "-6156826960225",
+          "mean": "-6287344937840/3",
+          "median": "-2300504840309/2",
+          "minimum": "-1921495516282"
+        },
+        "final_selection_score_units": {
+          "maximum": "5234456923100",
+          "mean": "10837229521119/2",
+          "median": "11071392866869/2",
+          "minimum": "5443037804420"
+        },
+        "initial_selected_score_units": {
+          "maximum": "4939577089561",
+          "mean": "3711337854146377/1024",
+          "median": "3614582835975",
+          "minimum": "3788115695748"
+        }
+      },
+      "family": "a1-fibration-03",
+      "narrow": {
+        "disjoint_validation_score_units": {
+          "count": 6,
+          "maximum": 18688950434841,
+          "mean": "37892252852111/3",
+          "median": "11585847270278",
+          "minimum": 9629553922273
+        },
+        "final_selection_score_units": {
+          "count": 6,
+          "maximum": 151940129779988,
+          "mean": "904410774093835/6",
+          "median": "301004622189257/2",
+          "minimum": 150285683014408
+        },
+        "finalist_parameter_heights": {
+          "count": 6,
+          "maximum": 257929,
+          "mean": "983029/6",
+          "median": "315849/2",
+          "minimum": 109575
+        },
+        "finalists": [
+          {
+            "id": "higher-b3-a1-fibration-03-0000",
+            "parameter": "-200772/257929"
+          },
+          {
+            "id": "higher-b3-a1-fibration-03-0609",
+            "parameter": "-176704/49033"
+          },
+          {
+            "id": "higher-b3-a1-fibration-03-0125",
+            "parameter": "-186481/77705"
+          },
+          {
+            "id": "higher-b3-a1-fibration-03-0057",
+            "parameter": "113195/28374"
+          },
+          {
+            "id": "higher-b3-a1-fibration-03-0002",
+            "parameter": "-109575/24457"
+          },
+          {
+            "id": "higher-b3-a1-fibration-03-0246",
+            "parameter": "-9308/139145"
+          }
+        ],
+        "initial_selected_score_units": {
+          "count": 1024,
+          "maximum": 138173539060141,
+          "mean": "134334522537369239/1024",
+          "median": "130804103097864",
+          "minimum": 129775215814392
+        }
+      }
+    },
+    {
+      "band": 3,
+      "broad": {
+        "disjoint_validation_score_units": {
+          "count": 6,
+          "maximum": 13434529957770,
+          "mean": "68709217219573/6",
+          "median": "11302304325680",
+          "minimum": 9869665869000
+        },
+        "final_selection_score_units": {
+          "count": 6,
+          "maximum": 158101451756876,
+          "mean": "932519740786273/6",
+          "median": "154938822091878",
+          "minimum": 154374096785886
+        },
+        "finalist_parameter_heights": {
+          "count": 6,
+          "maximum": 241005,
+          "mean": "601117/3",
+          "median": "197721",
+          "minimum": 172661
+        },
+        "finalists": [
+          {
+            "id": "broad-b3-a1-fibration-04-0019",
+            "parameter": "-194243/23020"
+          },
+          {
+            "id": "broad-b3-a1-fibration-04-0095",
+            "parameter": "53826/172661"
+          },
+          {
+            "id": "broad-b3-a1-fibration-04-0002",
+            "parameter": "241005/50971"
+          },
+          {
+            "id": "broad-b3-a1-fibration-04-0004",
+            "parameter": "162746/209639"
+          },
+          {
+            "id": "broad-b3-a1-fibration-04-0534",
+            "parameter": "37533/201199"
+          },
+          {
+            "id": "broad-b3-a1-fibration-04-0029",
+            "parameter": "183487/87323"
+          }
+        ],
+        "initial_selected_score_units": {
+          "count": 1024,
+          "maximum": 141894726615172,
+          "mean": "4323377621482259/32",
+          "median": "134762344413386",
+          "minimum": 133853372408052
+        }
+      },
+      "broad_minus_narrow": {
+        "disjoint_validation_score_units": {
+          "maximum": "-4343620803892",
+          "mean": "-5999435404826/3",
+          "median": "-2029025394952",
+          "minimum": "748165291290"
+        },
+        "final_selection_score_units": {
+          "maximum": "5983867519133",
+          "mean": "11656300162187/3",
+          "median": "6584288874121/2",
+          "minimum": "3683161952248"
+        },
+        "initial_selected_score_units": {
+          "maximum": "2858592686567",
+          "mean": "3876501937988069/1024",
+          "median": "3850005872447",
+          "minimum": "3924880559817"
+        }
+      },
+      "family": "a1-fibration-04",
+      "narrow": {
+        "disjoint_validation_score_units": {
+          "count": 6,
+          "maximum": 17778150761662,
+          "mean": "80708088029225/6",
+          "median": "13331329720632",
+          "minimum": 9121500577710
+        },
+        "final_selection_score_units": {
+          "count": 6,
+          "maximum": 152117584237743,
+          "mean": "303069046820633/2",
+          "median": "303293355309635/2",
+          "minimum": 150690934833638
+        },
+        "finalist_parameter_heights": {
+          "count": 6,
+          "maximum": 253633,
+          "mean": "1101101/6",
+          "median": "196523",
+          "minimum": 85697
+        },
+        "finalists": [
+          {
+            "id": "higher-b3-a1-fibration-04-0075",
+            "parameter": "9484/85697"
+          },
+          {
+            "id": "higher-b3-a1-fibration-04-0398",
+            "parameter": "196757/110273"
+          },
+          {
+            "id": "higher-b3-a1-fibration-04-0085",
+            "parameter": "7206/196289"
+          },
+          {
+            "id": "higher-b3-a1-fibration-04-0138",
+            "parameter": "192779/253633"
+          },
+          {
+            "id": "higher-b3-a1-fibration-04-0139",
+            "parameter": "164244/93889"
+          },
+          {
+            "id": "higher-b3-a1-fibration-04-0018",
+            "parameter": "134279/204481"
+          }
+        ],
+        "initial_selected_score_units": {
+          "count": 1024,
+          "maximum": 139036133928605,
+          "mean": "134471581949444219/1024",
+          "median": "130912338540939",
+          "minimum": 129928491848235
+        }
+      }
+    },
+    {
+      "band": 3,
+      "broad": {
+        "disjoint_validation_score_units": {
+          "count": 6,
+          "maximum": 13303869734286,
+          "mean": "29795608106156/3",
+          "median": "10233306726381",
+          "minimum": 4151148945790
+        },
+        "final_selection_score_units": {
+          "count": 6,
+          "maximum": 158487958801683,
+          "mean": "310426052438861/2",
+          "median": "154622345087139",
+          "minimum": 154323279649612
+        },
+        "finalist_parameter_heights": {
+          "count": 6,
+          "maximum": 261935,
+          "mean": "1352003/6",
+          "median": "457497/2",
+          "minimum": 175237
+        },
+        "finalists": [
+          {
+            "id": "broad-b3-a1-fibration-05-0005",
+            "parameter": "-55341/261935"
+          },
+          {
+            "id": "broad-b3-a1-fibration-05-0124",
+            "parameter": "-207865/212801"
+          },
+          {
+            "id": "broad-b3-a1-fibration-05-0203",
+            "parameter": "67001/221844"
+          },
+          {
+            "id": "broad-b3-a1-fibration-05-0035",
+            "parameter": "-13874/175237"
+          },
+          {
+            "id": "broad-b3-a1-fibration-05-0753",
+            "parameter": "-244533/123721"
+          },
+          {
+            "id": "broad-b3-a1-fibration-05-0611",
+            "parameter": "-235653/41801"
+          }
+        ],
+        "initial_selected_score_units": {
+          "count": 1024,
+          "maximum": 143584587338980,
+          "mean": "138157081401623435/1024",
+          "median": "268983062162361/2",
+          "minimum": 133665198000599
+        }
+      },
+      "broad_minus_narrow": {
+        "disjoint_validation_score_units": {
+          "maximum": "-3120210105429",
+          "mean": "-2341639541522/3",
+          "median": "2410824904373/2",
+          "minimum": "-3023897729751"
+        },
+        "final_selection_score_units": {
+          "maximum": "4243273201980",
+          "mean": "9727046300096/3",
+          "median": "6056395785781/2",
+          "minimum": "3065324180972"
+        },
+        "initial_selected_score_units": {
+          "maximum": "5980288597914",
+          "mean": "3821678969335613/1024",
+          "median": "3706171780105",
+          "minimum": "3856977029552"
+        }
+      },
+      "family": "a1-fibration-05",
+      "narrow": {
+        "disjoint_validation_score_units": {
+          "count": 6,
+          "maximum": 16424079839715,
+          "mean": "32137247647678/3",
+          "median": "18055788548389/2",
+          "minimum": 7175046675541
+        },
+        "final_selection_score_units": {
+          "count": 6,
+          "maximum": 154244685599703,
+          "mean": "911824064716391/6",
+          "median": "303188294388497/2",
+          "minimum": 151257955468640
+        },
+        "finalist_parameter_heights": {
+          "count": 6,
+          "maximum": 223159,
+          "mean": "182115",
+          "median": "198981",
+          "minimum": 92004
+        },
+        "finalists": [
+          {
+            "id": "higher-b3-a1-fibration-05-0050",
+            "parameter": "-159968/21541"
+          },
+          {
+            "id": "higher-b3-a1-fibration-05-0076",
+            "parameter": "-223159/193573"
+          },
+          {
+            "id": "higher-b3-a1-fibration-05-0017",
+            "parameter": "-113619/193573"
+          },
+          {
+            "id": "higher-b3-a1-fibration-05-0114",
+            "parameter": "7807/92004"
+          },
+          {
+            "id": "higher-b3-a1-fibration-05-0005",
+            "parameter": "219597/10084"
+          },
+          {
+            "id": "higher-b3-a1-fibration-05-0282",
+            "parameter": "-204389/74789"
+          }
+        ],
+        "initial_selected_score_units": {
+          "count": 1024,
+          "maximum": 137604298741066,
+          "mean": "67167701216143911/512",
+          "median": "261570718602151/2",
+          "minimum": 129808220971047
+        }
+      }
+    }
+  ],
+  "identical_function_asts": [
+    "trace",
+    "selected_rows",
+    "fresh_program"
+  ],
+  "identical_protocol_fields": [
+    "ordering",
+    "fresh_validation_primes",
+    "selected_curves",
+    "seconds_per_curve",
+    "score_wall_seconds",
+    "validation_wall_seconds",
+    "maximum_workers",
+    "checkpoint_block",
+    "cost_gate_rows",
+    "cost_gate_maximum_projected_serial_seconds"
+  ],
+  "primitive_addresses": {
+    "broad": 3058897488,
+    "narrow": 191215782
+  },
+  "schema": "elliptic-curves.higher-mw16-population-comparison.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/broad_mw16_higher_selection_v1.json": "bddc27814638415751fa16d8dd23da63d02ce2fc356197853b218d1d5fbbaad3",
+    "artifacts/generated-results/elliptic-curves/joint_mw16_higher_selection_v1.json": "787534d3eb6b7e9f1b95f7a521bf9359702e95d6a6d75533290e9bf68e9315e0",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/protocol.json": "e32773ca146450a5635fb66b5c61e8caf6a2f4bc8e062ca61373626bd6477d9d",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-annuli-v1/replay.json": "30056dc8dde02c8ac8bfac0cf828a17a685dea2e71f1a8f33dbbeaa970c8e693",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-scores-v1/controller/ledger.json": "60d641ff1c91a3a7dc8c2454dd4a9955c48b3ee22764abee963f100875510fe7",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-scores-v1/fresh-validation.json": "57944cfc997d87660ed92b6e42072558d44a0e040875c69da93b0d51b68ce1e3",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-scores-v1/protocol.json": "9579db1820a6dd568cfff280166cf00bd13a73b9d39ce271abd8b9ae6c522627",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-scores-v1/result.json": "cb06676b05c0e45cde54238c8847c48fdae7310d55db2b476dcc776d153453f0",
+    "artifacts/local/elliptic-curves/joint-mw16-higher-annuli-v1/protocol.json": "177455f7db04f2d9a3c4d19ecc1f7fb795eac01314f4ce57ec5aabc9cc16ecab",
+    "artifacts/local/elliptic-curves/joint-mw16-higher-annuli-v1/replay.json": "554d53f3812fcc21cf2b8bced6d672aeba0a7b59fc6bed51d63721973b0629a8",
+    "artifacts/local/elliptic-curves/joint-mw16-higher-scores-v1/controller/ledger.json": "58ce82640581bf47650e87338860100fa548cb44abc2f2b1c80935da36daa9cb",
+    "artifacts/local/elliptic-curves/joint-mw16-higher-scores-v1/fresh-validation.json": "e662423234f58f59631b02cbcd32a27e25ee138e527c23c562d8f2cbeb768aa1",
+    "artifacts/local/elliptic-curves/joint-mw16-higher-scores-v1/protocol.json": "3a5675d9e27c5922e5ea7790df958929c88d619a1862662fa46df5dd76aa30e6",
+    "artifacts/local/elliptic-curves/joint-mw16-higher-scores-v1/result.json": "9e728e510e71ab8eefbb28eefe4e037abb6c7ad4593334bd9158844e850f8a97",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9",
+    "elliptic-curves/cas/compare_higher_mw16_populations.py": "e7ed115c4fcb57e3ab502d27f193e3ec8e9169760706a7ee598d90cc61df8ee2",
+    "elliptic-curves/cas/score_broad_mw16_higher.py": "7673d9bd4a234020644233f22ac0d4085372698615f5781283d827a4d83f94a3",
+    "elliptic-curves/cas/score_joint_mw16_higher.py": "f536d7a95cfc04c68750499c8288c715b6402a497a31396d46a7724616e94b35"
+  },
+  "status": "PASS_DESCRIPTIVE_FIXED_COHORT_COMPARISON"
+}

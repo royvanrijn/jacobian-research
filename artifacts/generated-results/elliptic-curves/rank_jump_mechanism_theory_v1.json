@@ -1,0 +1,1989 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_collision_defect_v2.json": "73bd5476cc164037f3c940230b3f9b1696e0ab4a505bcc8d05981808d3a8a665",
+    "artifacts/generated-results/elliptic-curves/rank_jump_collision_defect_verification_v1.json": "6919fd098d621ca4db49b355d526914898a73b18b4ccbd7b938292808d49de81",
+    "artifacts/generated-results/elliptic-curves/rank_jump_collision_prime_lift_v1.json": "fdd9434a349845a7ea04d03b2cbd45adbd96e25cfee4259f02c436a905ad7642",
+    "artifacts/generated-results/elliptic-curves/rank_jump_degree_one_relation_panel_v1.json": "b04e6af7250b94920c55d2c967eb5ddf3c6202c357e0bf42b0746308a526aac8",
+    "artifacts/generated-results/elliptic-curves/rank_jump_degree_one_relation_panel_verification_v1.json": "5a540b9a602669784cd13b3cc584f20f83744382b48d34f66def76f2994c69a5",
+    "artifacts/generated-results/elliptic-curves/rank_jump_paired_quartet_relations_v1.json": "52410ec43618d39d963ae9be59b6a162b62ef1677140036307f58477e19802e2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_paired_quartet_relations_verification_v1.json": "c393c56047d7cde8a410a00560bda773ae71a87750cdc30d9d191d2f5ae7fc99",
+    "artifacts/generated-results/elliptic-curves/rank_jump_soluble_quartet_compression_inputs_v1.json": "fe70c730c1f19bf3eae03f3e78b52c23ed7de041f64c1e635600561487aed976",
+    "elliptic-curves/rank-jump/RANK_JUMP_MECHANISM_THEOREMS.md": "78c3d19207f938ffbe573e5e7d81682da1760db5e298601fba76e9af7c071bb2",
+    "elliptic-curves/rank-jump/SEARCH_THEOREM_GATES.json": "51d8396f5efdec4ac0fbce8925688568a29963384569f11688d264c1ccc0420e",
+    "elliptic-curves/rank-jump/mechanism_theory.py": "db874b8df4ec54b6f2234fb3675847ec7a68fd04cf7b4725fa28e006a6312b76",
+    "elliptic-curves/rank-jump/test_mechanism_theory.py": "ae78c9eadc8b07a9fc18620ab10f9eee9d0c46738d0094e458e37d6873e59271",
+    "elliptic-curves/rank-jump/verify_collision_defect.py": "9270bccd78599b9e9915f544c05241b0eabc32e403ea55e222da1a588d50d31c",
+    "elliptic-curves/rank-jump/verify_mechanism_theory.py": "dd5bf05bef2a795155e3e187118f234a81d0d49b23172f086563f8034443558e",
+    "elliptic-curves/rank-jump/verify_paired_quartet_relations.py": "b0de9e0c0990390a5e0af8f752b356ccf7aa99ef1f8503b11d14f6faf06bc648"
+  },
+  "boundary": "No full specialized rank, global product-curve image, new search, prospective enrichment claim, formal proof-assistant verification, or external review.",
+  "collision_test_compression": [
+    {
+      "collision_prime_count": 18,
+      "id": "08234-003",
+      "minimum_tests_from_collision_bounds_given_positivity": {
+        "index_masks": [
+          7,
+          11,
+          13,
+          14
+        ],
+        "minimum_tests": 3,
+        "pair_masks": [
+          3,
+          5,
+          6,
+          9,
+          10,
+          12
+        ]
+      },
+      "positivity_on_rational_product_points": true,
+      "retained_lift": {
+        "homogeneous_roots": [
+          848451138,
+          575289,
+          1018829,
+          3924473
+        ],
+        "outside_square_roots": [
+          141408523,
+          21307,
+          145547,
+          560639
+        ],
+        "signed_supported_representatives": [
+          36,
+          729,
+          49,
+          49
+        ],
+        "status": "NATIVE_LIFT"
+      },
+      "retained_parameter": "-288/65",
+      "valuation_tuple_upper_bound": 262144
+    },
+    {
+      "collision_prime_count": 23,
+      "id": "08234-009",
+      "minimum_tests_from_collision_bounds_given_positivity": {
+        "index_masks": [
+          7,
+          11,
+          13,
+          14
+        ],
+        "minimum_tests": 3,
+        "pair_masks": [
+          3,
+          5,
+          6,
+          9,
+          10,
+          12
+        ]
+      },
+      "positivity_on_rational_product_points": true,
+      "retained_lift": {
+        "homogeneous_roots": [
+          181066742,
+          48560375165,
+          4307419,
+          132551172
+        ],
+        "outside_square_roots": [
+          2208131,
+          1566463715,
+          3389,
+          3681977
+        ],
+        "signed_supported_representatives": [
+          6724,
+          961,
+          1615441,
+          1296
+        ],
+        "status": "NATIVE_LIFT"
+      },
+      "retained_parameter": "-4112/1937",
+      "valuation_tuple_upper_bound": 18874368
+    },
+    {
+      "collision_prime_count": 25,
+      "id": "obstructed_ABCD",
+      "minimum_tests_from_collision_bounds_given_positivity": {
+        "index_masks": [
+          7,
+          11,
+          13,
+          14
+        ],
+        "minimum_tests": 3,
+        "pair_masks": [
+          3,
+          5,
+          6,
+          9,
+          10,
+          12
+        ]
+      },
+      "positivity_on_rational_product_points": false,
+      "retained_lift": "No supplied rational product point; UNKNOWN by this gate.",
+      "valuation_tuple_upper_bound": 301989888
+    }
+  ],
+  "inherited_not_recomputed_here": [
+    "generic native maps, lattice minimum and panel point identities: run verify_degree_one_relation_panel.py check",
+    "real sign surjectivity: run verify_collision_prime_lift.py check",
+    "generic geometry: written J3 and existing carrier certificates"
+  ],
+  "quartet_specialization_accounting": [
+    {
+      "generic_marked_increment": 4,
+      "id": "08234-003",
+      "relative_kernel_dimension": 1,
+      "specialized_quotient_dimension": 3,
+      "witness_directions_outside_marked_mechanism": 4
+    },
+    {
+      "generic_marked_increment": 4,
+      "id": "08234-009",
+      "relative_kernel_dimension": 1,
+      "specialized_quotient_dimension": 3,
+      "witness_directions_outside_marked_mechanism": 5
+    }
+  ],
+  "replayed": [
+    "quartet rational point identities and finite Kummer independence",
+    "all ordinary collision parity witnesses and necessary masks",
+    "signed graph and rational row rank on all 165 panel addresses",
+    "pair resultants and retained homogeneous native roots",
+    "minimum fixed square tests from all collision clusters"
+  ],
+  "schema": "rank-jump.mechanism-theory.v1",
+  "signed_relation_panel": [
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-102202/53157",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-10358/5863",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-10481/8914",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-10485/8323",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-10565/5352",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-1121/9525",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-113593/59592",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-11412/11111",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "-1193/1560",
+      "quotient_upper_bound": 1,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-12009/6278",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-124285/64402",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-1264/1047",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-1291/11334",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            1
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "-1318/2675",
+      "quotient_upper_bound": 2,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-14057/6370",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-14287/5405",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-14466/15721",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-14809/1336",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-14817/4960",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-15109/7728",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-1513/3735",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-15266/10685",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "-15472/8615",
+      "quotient_upper_bound": 1,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-1561/3133",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-15937/10028",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-1599/3584",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-16246/13195",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-168541/87360",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-174459/92092",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-182255/93054",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-1853/270",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-190909/99008",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-1929/3242",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-198633/101894",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            1
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            2
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            3
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            4
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            5
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "-2/377",
+      "quotient_upper_bound": 6,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-202703/106054",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-2221/1361",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            1
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            2
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "-2300/843",
+      "quotient_upper_bound": 3,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            1
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "-2416/9",
+      "quotient_upper_bound": 2,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-278/2615",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-28367/15470",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            1
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            2
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            3
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "-288/65",
+      "quotient_upper_bound": 4,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "-3/148",
+      "quotient_upper_bound": 1,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            1
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            2
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "-308/251",
+      "quotient_upper_bound": 3,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-3086/3229",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "-3106/4753",
+      "quotient_upper_bound": 1,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            1
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            2
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "-3115/2756",
+      "quotient_upper_bound": 3,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-3162/2135",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-3359/9754",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-3381/3083",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-33841/18655",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-339/7",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-3459/2327",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-3712/10017",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-373/12028",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-3871/1618",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-3895/3749",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-3958/1267",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-4021/2640",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "-4035/1852",
+      "quotient_upper_bound": 1,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0,
+            2
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            1
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            3
+          ]
+        }
+      ],
+      "edge_count": 1,
+      "parameter": "-4112/1937",
+      "quotient_upper_bound": 3,
+      "relation_rank": 1
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-4113/7910",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-41346/21827",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-41757/22880",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-4253/2347",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "-430/7371",
+      "quotient_upper_bound": 1,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-45321/23621",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-4659/2815",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-511/2711",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-5195/5602",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "-5284/455",
+      "quotient_upper_bound": 1,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-5353/4106",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-55104/28535",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-560/1609",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "-5643/6760",
+      "quotient_upper_bound": 1,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-585/1223",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            1
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "-5877/1690",
+      "quotient_upper_bound": 2,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-601/1570",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-636/3209",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-639/2575",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-63985/35256",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-649/10913",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "-6726/2305",
+      "quotient_upper_bound": 1,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "-695/97",
+      "quotient_upper_bound": 1,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0,
+            3,
+            9
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            1
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            2
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            4,
+            6,
+            7,
+            12
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            5
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            8
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            10
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            11
+          ]
+        }
+      ],
+      "edge_count": 6,
+      "parameter": "-70/61",
+      "quotient_upper_bound": 8,
+      "relation_rank": 5
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "-70665/36751",
+      "quotient_upper_bound": 1,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-70688/36829",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-73681/39130",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-7540/2317",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-75641/41314",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-7634/2859",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "-7726/2611",
+      "quotient_upper_bound": 1,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-79649/42198",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-8382/14489",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-8387/1750",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-841/8544",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-848/9373",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-8921/2715",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "-894/749",
+      "quotient_upper_bound": 1,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-903/470",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-94057/48789",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-94199/50700",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "-9529/5471",
+      "quotient_upper_bound": 1,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "-9795/13063",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "10126/11795",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "10126/15275",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "1101/2566",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "11744/9849",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "11992/8347",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "1207/1194",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "1217/151",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0,
+            1
+          ]
+        }
+      ],
+      "edge_count": 1,
+      "parameter": "1229/894",
+      "quotient_upper_bound": 1,
+      "relation_rank": 1
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "12344/8655",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "1263/710",
+      "quotient_upper_bound": 1,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "129/70",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "1348/1431",
+      "quotient_upper_bound": 1,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "13591/9675",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "13833/10535",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "13969/15813",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "1452/7817",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "14771/6673",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "14981/15381",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "1501/732",
+      "quotient_upper_bound": 1,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "1576/2331",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "15850/13287",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "1641/15448",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "1966/3615",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "2051/2045",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "2108/1939",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "2139/3865",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "2263/1084",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "2291/2392",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            1
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "2456/135",
+      "quotient_upper_bound": 2,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "2762/3203",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "2798/7213",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            1,
+            10
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            2
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            3
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            4
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            5
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            6
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            7
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            8
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            9
+          ]
+        }
+      ],
+      "edge_count": 1,
+      "parameter": "28/117",
+      "quotient_upper_bound": 10,
+      "relation_rank": 1
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            1,
+            8
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            2
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            3
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            4
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            5,
+            12,
+            17,
+            22
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            6,
+            7,
+            14,
+            15
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            9
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            10
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            11
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            13
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            16
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            18
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            19
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            20
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            21
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            23
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            24
+          ]
+        }
+      ],
+      "edge_count": 7,
+      "parameter": "3/8",
+      "quotient_upper_bound": 18,
+      "relation_rank": 7
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "3056/609",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "3243/1708",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            1
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            2
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            3
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            4
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            5
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            6
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "33/119",
+      "quotient_upper_bound": 7,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "3419/3564",
+      "quotient_upper_bound": 1,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "4120/14827",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "4197/4819",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "4250/9093",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "4251/1375",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "4298/8873",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            1
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            2
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "44/35",
+      "quotient_upper_bound": 3,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "444/2623",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "461/4420",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "5653/7526",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "5735/11074",
+      "quotient_upper_bound": 1,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "611/4020",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "6695/1353",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "7127/1266",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "754/3427",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0,
+            1,
+            5
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            2
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            3
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            4
+          ]
+        },
+        {
+          "balanced": true,
+          "vertices": [
+            6
+          ]
+        }
+      ],
+      "edge_count": 2,
+      "parameter": "8/39",
+      "quotient_upper_bound": 5,
+      "relation_rank": 2
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "825/2224",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "85/2016",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "8524/2211",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "856/1327",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [
+        {
+          "balanced": true,
+          "vertices": [
+            0
+          ]
+        }
+      ],
+      "edge_count": 0,
+      "parameter": "8637/3040",
+      "quotient_upper_bound": 1,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "9181/3402",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "9446/3605",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "9629/2857",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    },
+    {
+      "components": [],
+      "edge_count": 0,
+      "parameter": "9783/7559",
+      "quotient_upper_bound": 0,
+      "relation_rank": 0
+    }
+  ],
+  "status": "PASS"
+}

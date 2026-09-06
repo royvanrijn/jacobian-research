@@ -2,6 +2,11 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
+- [J7–J10: adding independent blocks, radical partners, and certified rank exclusions](INDEPENDENT_BLOCKS_AND_RANK_OBSTRUCTIONS.md)
+- [Current theorem gates and search priorities](SEARCH_THEOREM_GATES_V2.json)
+- [J1–J6: specialization loss, relation capacity, marked carriers, collision squareclasses, and short trace cosets](RANK_JUMP_MECHANISM_THEOREMS.md)
+- [Frozen first gate snapshot, retained for certificate replay; its triple task is now complete](SEARCH_THEOREM_GATES.json)
+
 - [Research direction: coverage exclusions, rational/Sha switches, and certified negative controls](RESEARCH_PIVOT_AFTER_THE_CARRIER_PANEL.md)
 - [Latest: all 11 degree-six/eight triple incidences occur on the +4 control, with none on the tested +5...+11 fibres](LOW_DEGREE_TRIPLE_RELATIONS_CONCENTRATE_ON_THE_PLUS4_CONTROL.md)
 - [Uniform triple-relation comparison across 165 frozen addresses](../../artifacts/generated-results/elliptic-curves/rank_jump_low_degree_triple_discrimination_v1.csv)

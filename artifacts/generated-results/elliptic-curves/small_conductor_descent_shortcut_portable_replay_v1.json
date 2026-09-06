@@ -1,0 +1,36 @@
+{
+  "schema": "elliptic-curves.small-conductor-descent-isolated.v1",
+  "status": "PASS",
+  "supervision": {
+    "command": [
+      "/home/royvanrijn/.local/bin/sage",
+      "-python",
+      "elliptic-curves/cas/check_small_conductor_descent_shortcut.sage",
+      "--check"
+    ],
+    "failure_reason": null,
+    "limits": {
+      "address_space_bytes": null,
+      "cgroup": null,
+      "pari_stack_bytes": 256000000,
+      "poll_seconds": 0.05,
+      "rss_bytes": 1610612736,
+      "terminate_grace_seconds": 1.0,
+      "wall_seconds": 60
+    },
+    "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/small-conductor-descent-isolated-v1/replay.log",
+    "log_sha256": "e3ee00d6d59e9af634671f0bc0f4639934ca366f0f9eb553e713d41439dd2cf3",
+    "outcome": "completed",
+    "peak_observed_rss_bytes": 240062464,
+    "pid": 1171259,
+    "returncode": 0,
+    "rss_limit_bytes": 1610612736,
+    "start_token": "54938292",
+    "termination_signal": null,
+    "timeout_seconds": 60,
+    "wall_seconds": 14.826217776047997,
+    "worker_result": null,
+    "worker_result_sha256": null
+  },
+  "zip_sha256": "8d0ac2527b782f835430454fd2774bc69c31ceaa16faf3d2d137fe3a23d2885b"
+}

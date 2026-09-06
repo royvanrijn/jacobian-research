@@ -1,0 +1,54 @@
+{
+  "claim_boundary": "Independent Sage polynomial-resultant and complete prime-valuation replay for the six new intervals1009through131071. Earlier residue-tree exclusions through997 and the exceptional13 classification are preserved inputs, not rerun here. No new parameter or point search, exact conductor or new rank.",
+  "rows": [
+    {
+      "additional_trial_factors": [],
+      "family": "103b2",
+      "independent_polynomial_resultant": true,
+      "prime_pairs_checked": 12083
+    },
+    {
+      "additional_trial_factors": [],
+      "family": "11952",
+      "independent_polynomial_resultant": true,
+      "prime_pairs_checked": 12083
+    },
+    {
+      "additional_trial_factors": [
+        [
+          1213,
+          1
+        ]
+      ],
+      "family": "074d9",
+      "independent_polynomial_resultant": true,
+      "prime_pairs_checked": 12083
+    },
+    {
+      "additional_trial_factors": [],
+      "family": "07ca9",
+      "independent_polynomial_resultant": true,
+      "prime_pairs_checked": 12083
+    },
+    {
+      "additional_trial_factors": [],
+      "family": "08234",
+      "independent_polynomial_resultant": true,
+      "prime_pairs_checked": 12083
+    },
+    {
+      "additional_trial_factors": [],
+      "family": "08f72",
+      "independent_polynomial_resultant": true,
+      "prime_pairs_checked": 12083
+    }
+  ],
+  "schema": "elliptic-curves.r17-score-prime-range-sage-replay.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_six_r17_atlas_v1.json": "2f28c081c874adfaf738c1119e8f4e6e7ce70ea74277cd8cdb370a02bca34c5d",
+    "artifacts/generated-results/elliptic-curves/r17_extended_score_prime_minimality_v1.json": "b96961a0a31de4e4c864ec4309777d70484e1f4f84bb11371ba8abec5486088b",
+    "artifacts/generated-results/elliptic-curves/r17_scaling_prime_support_v1.json": "e84d7a477870c2a2b965366ddbd893da1c40d09d6d9358fb22bd19262e4f3c4b",
+    "elliptic-curves/cas/verify_r17_extended_score_prime_minimality.sage": "c85ddfa50f9b23c55dcab5b8972d19d155fc6eb51d5c3313e08cc0cd4e941d35"
+  },
+  "status": "PASS"
+}

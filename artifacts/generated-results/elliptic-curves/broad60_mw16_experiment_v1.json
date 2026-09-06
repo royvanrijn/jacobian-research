@@ -1,0 +1,1230 @@
+{
+  "attempted_charts": 2580,
+  "claim_boundary": "320 untouched signed denominator slices in16384<H<=65536 and65536<H<=262144, disjoint from the earlier outer cohort, five MW16 families with equal retention and point budgets. All10240 retained extended scores precede60 distinct finalists; wholly disjoint validation never changes selection. Up to2580 generic16-only point charts with all maps before points. Catalogue and1225 prior-equation comparison follows terminal exact point proofs. Matching finite bounds do not prove exact rank, saturation or absence. No universal novelty, rank density, calibrated sensitivity or isolated portability claim.",
+  "completed_point_boxes": 2580,
+  "maximum_declared_boxes": 2580,
+  "retained_point_witnesses": 7529,
+  "rows": [
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-01",
+      "fresh_validation_units": 9406456123573,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-01-0002",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-50315/12077",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 128,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-01",
+      "fresh_validation_units": 12653167224224,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-01-0003",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-14282/37075",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 143,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-01",
+      "fresh_validation_units": 8732313615363,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-01-0000",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-45394/37097",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 146,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-01",
+      "fresh_validation_units": 10106964923213,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-01-0011",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-40384/36555",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 158,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-01",
+      "fresh_validation_units": 12465101167811,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-01-0228",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-14478/37645",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 137,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-01",
+      "fresh_validation_units": 10155875025801,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-01-0021",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-61720/15319",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 174,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-02",
+      "fresh_validation_units": 16044829840416,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-02-0000",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "-22059/7204",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 371,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-02",
+      "fresh_validation_units": 12311704260118,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-02-0164",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "53642/62405",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 180,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-02",
+      "fresh_validation_units": 13874151810742,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-02-0013",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-6833/16916",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 192,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-02",
+      "fresh_validation_units": 10302525948639,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-02-0441",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "4617/45079",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 152,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-02",
+      "fresh_validation_units": 14584873291182,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-02-0007",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "39464/18377",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 183,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-02",
+      "fresh_validation_units": 11373841509559,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-02-0004",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "18662/14009",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 218,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-03",
+      "fresh_validation_units": 11285386903736,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-03-0002",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-18477/40597",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 59,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-03",
+      "fresh_validation_units": 9701027818084,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-03-0011",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "35623/39108",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 44,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-03",
+      "fresh_validation_units": 13656282932378,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-03-0113",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "43841/1626",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 143,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-03",
+      "fresh_validation_units": 11481704680080,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-03-0017",
+      "odd_modulus_lower_bounds": {
+        "3": 21,
+        "5": 21
+      },
+      "parameter": "21151/86",
+      "previous_matches": [],
+      "rank_lower_bound": 21,
+      "retained_points": 457,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-03",
+      "fresh_validation_units": 18123308890454,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-03-0004",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-53032/52119",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 42,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-03",
+      "fresh_validation_units": 13659440637767,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-03-0246",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "24405/86",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 364,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-04",
+      "fresh_validation_units": 9580774135571,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-04-0018",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "3785/21527",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 174,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-04",
+      "fresh_validation_units": 10053219090102,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-04-0001",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-83/64394",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 128,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-04",
+      "fresh_validation_units": 9162634540530,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-04-0007",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-58271/30274",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 110,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-04",
+      "fresh_validation_units": 13973347917805,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-04-0003",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "39786/48065",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 126,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-04",
+      "fresh_validation_units": 7360918738734,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-04-0317",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "37726/55821",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 99,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-04",
+      "fresh_validation_units": 10378389787283,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-04-0504",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "5184/33467",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 156,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-05",
+      "fresh_validation_units": 11488091742551,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-05-0052",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "-5273/17129",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 178,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-05",
+      "fresh_validation_units": 15635418156743,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-05-0030",
+      "odd_modulus_lower_bounds": {
+        "3": 22,
+        "5": 22
+      },
+      "parameter": "-37260/16691",
+      "previous_matches": [],
+      "rank_lower_bound": 22,
+      "retained_points": 199,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-05",
+      "fresh_validation_units": 11361096074676,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-05-0019",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-31672/8693",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 164,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-05",
+      "fresh_validation_units": 13734045410901,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-05-0029",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "61641/45142",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 138,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-05",
+      "fresh_validation_units": 11938950196717,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-05-0001",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "-17001/7343",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 165,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 2,
+      "completed_boxes": 43,
+      "family": "a1-fibration-05",
+      "fresh_validation_units": 10935163290460,
+      "icarm_matches": [],
+      "id": "broad-b2-a1-fibration-05-0237",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-40611/28979",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 155,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-01",
+      "fresh_validation_units": 6625150190684,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-01-0002",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-149875/245961",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 65,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-01",
+      "fresh_validation_units": 11862080302016,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-01-0139",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-100812/96815",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 88,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-01",
+      "fresh_validation_units": 13488118483534,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-01-0018",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-173269/157481",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 38,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-01",
+      "fresh_validation_units": 9527575048909,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-01-0009",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-201553/142651",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 110,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-01",
+      "fresh_validation_units": 12724800867812,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-01-0170",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-3348/241865",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 73,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-01",
+      "fresh_validation_units": 8176577639682,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-01-0152",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-57076/230537",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 79,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-02",
+      "fresh_validation_units": 6649718710395,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-02-0242",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-39107/204978",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 118,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-02",
+      "fresh_validation_units": 13620586674250,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-02-0458",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "148959/218197",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 109,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-02",
+      "fresh_validation_units": 13529032852069,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-02-0089",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "55990/199769",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 78,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-02",
+      "fresh_validation_units": 8876837553932,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-02-0046",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-57483/122348",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 134,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-02",
+      "fresh_validation_units": 9572806804604,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-02-0040",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "246557/187197",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 78,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-02",
+      "fresh_validation_units": 14196140813160,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-02-0029",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "110355/223871",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 134,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-03",
+      "fresh_validation_units": 7708058405991,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-03-0056",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-227644/154507",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 27,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-03",
+      "fresh_validation_units": 10112717191276,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-03-0011",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-108444/60299",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 56,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-03",
+      "fresh_validation_units": 12532123474616,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-03-0830",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "201665/175616",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 22,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-03",
+      "fresh_validation_units": 10471582415108,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-03-0181",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "178683/93046",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 53,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-03",
+      "fresh_validation_units": 11985727056412,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-03-0019",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-131201/203473",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 30,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-03",
+      "fresh_validation_units": 10399607285139,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-03-0001",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-13352/67023",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 53,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-04",
+      "fresh_validation_units": 10596957134153,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-04-0019",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "-194243/23020",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 155,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-04",
+      "fresh_validation_units": 10315620616684,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-04-0095",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "53826/172661",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 71,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-04",
+      "fresh_validation_units": 12484792124759,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-04-0002",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "241005/50971",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 92,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-04",
+      "fresh_validation_units": 13434529957770,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-04-0004",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "162746/209639",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 79,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-04",
+      "fresh_validation_units": 9869665869000,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-04-0534",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "37533/201199",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 107,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-04",
+      "fresh_validation_units": 12007651517207,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-04-0029",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "183487/87323",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 84,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-05",
+      "fresh_validation_units": 8625133005828,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-05-0005",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-55341/261935",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 91,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-05",
+      "fresh_validation_units": 10031994816291,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-05-0124",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-207865/212801",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 60,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-05",
+      "fresh_validation_units": 4151148945790,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-05-0203",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "67001/221844",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 77,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-05",
+      "fresh_validation_units": 10434618636471,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-05-0035",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-13874/175237",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 86,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-05",
+      "fresh_validation_units": 13044451073646,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-05-0753",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-244533/123721",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 100,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 43,
+      "band": 3,
+      "completed_boxes": 43,
+      "family": "a1-fibration-05",
+      "fresh_validation_units": 13303869734286,
+      "icarm_matches": [],
+      "id": "broad-b3-a1-fibration-05-0611",
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "parameter": "-235653/41801",
+      "previous_matches": [],
+      "rank_lower_bound": 16,
+      "retained_points": 99,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    }
+  ],
+  "schema": "elliptic-curves.broad60-mw16-experiment.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_01_0000_mod2_v1.json": "8b92581f4d450ebd8196fd2a32a9009874cbe8fc60303965318d063520c79c48",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_01_0000_modl_v1.json": "12490325ebc97c8ffa04b4bc8a445e937a682ef19d997f740a713f637ae4e5cb",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_01_0002_mod2_v1.json": "05caea25f439f3cb249d877f84b7d322ecc98174bc6b978e73186780b1806c9c",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_01_0002_modl_v1.json": "8670962f0f8ef5924d095c13f440f380cb569b964ec7c26ba780cc43acbffe12",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_01_0003_mod2_v1.json": "748fc9e4d0a8ef0074a58aff3eb1b24b66596c63d682a61952320c87682bcd62",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_01_0003_modl_v1.json": "f721e8cdd9be15088b8898fdfbaefbac6b4dcfe1dce21093584579c1d7f48f8f",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_01_0011_mod2_v1.json": "4830442ab06a49b22b5a78062ff890a9200adebd81d11f31c2e0ce257cd6c742",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_01_0011_modl_v1.json": "07f7e94ce5d95fb56251f72479fc18b934eeab8a548baf67315869f1330af3cf",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_01_0021_mod2_v1.json": "1d94b73dd3ef72a620f9bd289c49e1bef2f29919a953f0460cc2668f9ee35be9",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_01_0021_modl_v1.json": "dd261e058e7a27ac9a6d88de26cd47818057e830dfac0183e60b789fc3404a2f",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_01_0228_mod2_v1.json": "89bb56543292693912a88bb545b604f0f0ff4c1f88764c920c718760a00b5957",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_01_0228_modl_v1.json": "9d6ec5cae1fe23bfc834867796cc2a4a4266d49a23c19c07b09e814bf0eed5c2",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_02_0000_mod2_v1.json": "910fc1ef27f85d03c38958fe3ce7d08d7c863c643dc25265cc28f4667e5984cb",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_02_0000_modl_v1.json": "7b229c25b94cfac880f7981133cdfa2d670550b7b5ca33691af8ca5e7898c498",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_02_0004_mod2_v1.json": "3913cc78a44c83d63967747c936b1ce6aad1e2ed0d576d66da9d0a6fc8b9f775",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_02_0004_modl_v1.json": "6721139a6ebf254b65d76347de8fb7321925aee8d5ce4a86a9f41e13c33fbf5a",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_02_0007_mod2_v1.json": "0c8b9ee3d00306198ed54e58a2dd9a61a3834baae1b996afefc3a4e0d4d02266",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_02_0007_modl_v1.json": "08b46cb8a459a466de6544a03a78f297a8eb48a521cce028cd5b596033d598f2",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_02_0013_mod2_v1.json": "bcd4c131a5330ae28b54444f2bbf2f99b2a847b5ba0f31dc8e3eb60e731352ed",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_02_0013_modl_v1.json": "9e00320753ca9ecf7214a81ff7435343760f66bb547f4128cc1ffc05ef4d998b",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_02_0164_mod2_v1.json": "bb2d5f1eb82aaa8a5073070f58bed4b5dba71e4b08ffd42cc76aac40df397b2b",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_02_0164_modl_v1.json": "4d85bb00497e48cfc45dabb399a8cf99b7cf3e6aeed762dce455724dc2a1b9f4",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_02_0441_mod2_v1.json": "73e50fdea7ef0e6991eaf1b8e3e5d269cb65e2668ab2c53ff6ff0e8ff91eabb3",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_02_0441_modl_v1.json": "20ade0ab278a526a52a9fa139f4c436736f0d70376bebf9be101b2c44111cc47",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_03_0002_mod2_v1.json": "d695fc78710eb5a8c95cec7e62137d3c316718a1166717a6f098d9c42b9eae97",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_03_0002_modl_v1.json": "82a50fe460d172bee286c477b380d3540d0dbd7833759f64e8e58b3fc1f6ddac",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_03_0004_mod2_v1.json": "de322ffc1ef26e96db782b0f6af9c12259ab7a03405b40467ae4db09112a9b9f",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_03_0004_modl_v1.json": "81e241a7217bd7b972f213fc79939046ed591f882d6d68916f2798f10975f864",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_03_0011_mod2_v1.json": "d35e1aded6c6104df0462b1005d73f540c950899baa4fc82bc92a9bd49fbc535",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_03_0011_modl_v1.json": "c8d450f15206f9e1f6ba623c56090cd9db1f3518159615d60d23e3d58cdc9f8f",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_03_0017_mod2_v1.json": "1973e011389a782be0a8a9e5941cda2b7d96ea283bd371cbef1abd3fe570bc81",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_03_0017_modl_v1.json": "5c20fd349e33b28b77fa0d5912660f4648cda3dfc96221821f8d46de0a7a1b8e",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_03_0113_mod2_v1.json": "32d446e7054126b43d9fdda536b0170e3af2f830a4877471cfadece40a453ca4",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_03_0113_modl_v1.json": "9edf61f2ba4147f324709d8e8d6f0964d027326ee41f87093d9f99ca1a94a89c",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_03_0246_mod2_v1.json": "72701a29cf2eb328eb56c36f470e046ac0f38c7f9df8e10fc25e5d02e9030a23",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_03_0246_modl_v1.json": "c344b9ab052edaf0b4334f09b40153ec2c6d4f814a2c1ab12d2ceee4eb15d265",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_04_0001_mod2_v1.json": "faa635ec08e5f0176756a19340bd8afb799066a6fde1f4d002d33d757a6b55c6",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_04_0001_modl_v1.json": "0d46744db9b1df26961949678e16a7d6b9616a10b9d2d0317e819cc096031bf9",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_04_0003_mod2_v1.json": "ba8fe034710cdbd2e70e9b7cd500beee25c1a54d0dc1fdcb0dc89f1db940d86c",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_04_0003_modl_v1.json": "adeb455fe8b32a8881ddf2fbd69be06ea37d88658072eb09a1c8092b9110eb42",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_04_0007_mod2_v1.json": "6bff7a6d5dc7796b8d76147550bed9cc4247a52fda95344efd33c4439a4eef6f",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_04_0007_modl_v1.json": "a935016b46185da6112badb3272593ad1cf651c0a29dcf81fe02caf7679b72c1",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_04_0018_mod2_v1.json": "000f04376f90bd2c869819bb77ec75a475abbdb63d1a0be2b0281a957a538101",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_04_0018_modl_v1.json": "268bf7d84013d9a503ae4b5408142f35e423d6a91c94f040117309ea603f6233",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_04_0317_mod2_v1.json": "fb49343b9e1b7d68aedae3ab53ec9607110f147e943cb9f3360eec7fab92a4d4",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_04_0317_modl_v1.json": "6a878052c3c0e00981e81bedb653cba9bb5775389f2b32dd65db6f462ef8ab49",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_04_0504_mod2_v1.json": "f1a0594f1783082dc828d6f6f664a472939841cefdaeabaf18200537fab60afb",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_04_0504_modl_v1.json": "68df55c6b4148eee0e4880ffc02fb63bc09fffa1fc694d23a1dc07232c48d182",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_05_0001_mod2_v1.json": "e872d03875838864775f79176ee33d216a686b57220d5ceb98b27422fc5a62a1",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_05_0001_modl_v1.json": "3be6e56316ff08611a1c5fb3e0cb2cf24d6a805694c0c4aa85d0d755fedba273",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_05_0019_mod2_v1.json": "0152cb55ad7869f0428e3e6514619e1a9a6544672255deb4e670a7f2d543f924",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_05_0019_modl_v1.json": "782c24b76db1757366a51808aa4d4f3b908ca7e3700ce83e4eba9e8bb2dca47d",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_05_0029_mod2_v1.json": "a854b7f60949dffd17d4ad776ebc09539a2a29c0602ff6dd5d615ac726d8474b",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_05_0029_modl_v1.json": "cf258165d8a0430b5a3c361ff66f4f3319ee574196aadb73d709ce57f21e3d4d",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_05_0030_mod2_v1.json": "9c06e0a5ba1bb37f93b41b9a7b618b7ad4f7bc361f65d60cfbaf49f373a78ef2",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_05_0030_modl_v1.json": "c09914e705ccf9520dc10010eb7be9679d5a418f829cd9009d5cd41a9287b7f4",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_05_0052_mod2_v1.json": "7c4d98b1ec5e8805322b904ff958390785c10dde07b2c4fe9719cbf35d861a0c",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_05_0052_modl_v1.json": "0f6e8643f29ace3d7976b77405619e44632542a528a5ea2f8bce4ebc1f35db63",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_05_0237_mod2_v1.json": "124fd8cf30e3e2bda38fd0f1498398cbb69adca6c9ce6c6c2dee88c659e3ba3b",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b2_a1_fibration_05_0237_modl_v1.json": "745f0db8f251b1f9f53a6fcd613c9bea8f8d2837b0aa7ca6129369b3e182ab29",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_01_0002_mod2_v1.json": "c8f4a6b0884ac77eda26d028f788f64b7c28dc0f1858eae0dc45e91f9f4f0517",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_01_0002_modl_v1.json": "d4281992adfd20eb075db5da517279ee7dc387318996792225493c37093a3d53",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_01_0009_mod2_v1.json": "401ebb7f56393213408165b4602c6a87f87780e849251dd017ac94c071a4124c",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_01_0009_modl_v1.json": "7cc5b47953e8ae07eef71467caae18f57cf1eae9516ab0657d7e735ecea67759",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_01_0018_mod2_v1.json": "a1012f6e34d1fab8194987f86549ed69ba9daab26bf7445162699a9e0de29425",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_01_0018_modl_v1.json": "de600bec9c20817e3a2b7ea1e94326e3b0b272b6882ce5931ab6a2b5cc33a0ee",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_01_0139_mod2_v1.json": "1620e501672436754afa3a4cb12efd31289ad9f21b954480777ae9774896f006",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_01_0139_modl_v1.json": "5663fb7b78f3d17d0be3b724b9ce446bf5fceb45c62c713ecf1dc7671a8ce2a1",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_01_0152_mod2_v1.json": "1046d247372d6a356c8dd1325b5d082f7bc0ee5097e40df6a421f034fb90b38e",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_01_0152_modl_v1.json": "8fc07245efccd04310b8ba632a9b51bfd154d589969060a8b01d052be7cb89ef",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_01_0170_mod2_v1.json": "76705207f3a8156bd5e1d75c42ef71a6585030aafeef7dcb886a80a68fd5d32b",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_01_0170_modl_v1.json": "b81b1c41089c381fbfece6008f4f18b3168b8d5853978052d14854506fda1827",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_02_0029_mod2_v1.json": "3a9e5a06bcd22f4677f8c0b0fc46bb7527932b80100b1f2e514f56c5a865a3cb",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_02_0029_modl_v1.json": "b78f92917aa181a5899c5082861d8d911b8485ea8ea611b763af4d65475ea5a6",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_02_0040_mod2_v1.json": "864643cec0a6a1ee4ad44d088a2a5eb8a3d3c92c8ff15626e8e8bba0c41d06d1",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_02_0040_modl_v1.json": "d5ecd97edbd6dbfadd154a66cd3e04c6f8e3da30d3d48e152b7deb25b91a4060",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_02_0046_mod2_v1.json": "fd58c610b29677b185d73e3a553be2a5cd1469847b19ad4d4ff429761f12b60e",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_02_0046_modl_v1.json": "8c036640cf2682b49ff13ef06d11f89ecfbf01aea92b02eae224534c09902e5b",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_02_0089_mod2_v1.json": "1b0ecaa6228bcbb05deb84840e6d0dd7b88e9b774b9f2bc10fcaafb2186abdd6",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_02_0089_modl_v1.json": "82f5e2e089414eaf415c8dcf028a0209f2fb35738d941a026f34cbf412bd5b2e",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_02_0242_mod2_v1.json": "20f910a8f3b6c2a97375aefe7a3fcd08b95ac67dc29fb0dcee724d1260046951",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_02_0242_modl_v1.json": "c11b47f05eb5b1bfd8be9a1ac1796319fab3aac6db5d14bec82b0bb0fa5c644b",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_02_0458_mod2_v1.json": "967c8fe4aa87707285ce1cc1142c35161ccaaff59770615f4bf13a1e5ac2a5ab",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_02_0458_modl_v1.json": "47da2dede46fd44ec688b52ea27d0a2156112322ede8851762ca001946081a7c",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_03_0001_mod2_v1.json": "6804474f67ff858323c099da8f69259037baefe09beea41b42d592046251c240",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_03_0001_modl_v1.json": "604bcb315a41fc122511f673997129212ded68167b0c4e32b19f86b1280a83a6",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_03_0011_mod2_v1.json": "6114404dddaaed52e776dbca600f98741ddeaedab40f0a8a58c030be14a2c5e3",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_03_0011_modl_v1.json": "fee3c98422be9bb43b693f6b2d696531aa28848c3adffdca41855173034c7c2f",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_03_0019_mod2_v1.json": "380a27e0a015aa38b7f9340d340517645af4d5aaa5c3fe3de11edd4a9efe8c24",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_03_0019_modl_v1.json": "c2f625b4816335613c2bbabfc28772c0607ed42855da53f448e2ec93ccb34992",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_03_0056_mod2_v1.json": "a675962033f9fa449c8b1830253877eb7e76c076c451d2a4959179fb74aa821c",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_03_0056_modl_v1.json": "6481445c4fdc727da6020ef08d6417a45e92441dc6a442ed0676b950be986612",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_03_0181_mod2_v1.json": "5efa6d154050c92b5311b6782dca304d62a32096d192cc8029ffa7e348da1b4a",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_03_0181_modl_v1.json": "21d7503c7c5c87890c526fa9812eff8f1984f3ba48f257680000070cf5e41793",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_03_0830_mod2_v1.json": "a1ad5658043a8c02cac33ce7106d531d004d402d758e85a0c640c239f418a427",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_03_0830_modl_v1.json": "6721ce64a1e6da498d19142a7df8ae93e0cfcb4b7a4fee9854b18f48a29f3e9a",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_04_0002_mod2_v1.json": "ea0187c29d5b1beaf0c9b3ce3b09db6c784eef40124d51e4b586797ce73627ed",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_04_0002_modl_v1.json": "20edbd682c45fc648f86b70828a70e6b570a73241a2e92a81ffee5f343a57c23",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_04_0004_mod2_v1.json": "1fbfb02dc602678951a5eec1acc6691b1a81081d20edaeaf85c076c7f8c7bc1e",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_04_0004_modl_v1.json": "94557a19c9bde772a805c054014650b89b87e6be50bc17801265c626d85badc3",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_04_0019_mod2_v1.json": "672b8fec31548a98f70155ff909dfcfb3547dda03969016e81760021902b711a",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_04_0019_modl_v1.json": "e5977a06dc6148782d6997b90220c6bbf3511fc96e4d8cf5bf0b49bca7c06146",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_04_0029_mod2_v1.json": "ab529f65ca4de1f44311cef24e6aaa3f912203bb9f3854162bdc2e1b0f2dfa99",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_04_0029_modl_v1.json": "7e233d1e29bd27c6cee9ca1fad5a26fda61588ea340481af442929766c815c29",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_04_0095_mod2_v1.json": "56e0499b3578c13cd4185d1806d842bb812d547055274dbeaeaae7d86c1f82f7",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_04_0095_modl_v1.json": "c56b8fb08e0dce2a60deed0b508e7ba7311d688f948cfb0c67bb70f621469117",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_04_0534_mod2_v1.json": "649cd9dfb14614e0c3326792f62349469bb27cf6f8755184961244adabecbf67",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_04_0534_modl_v1.json": "e1706e3a5b6f441eecd9c6d5ebae59e4e2b1fba372c025d65a6967f820760362",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_05_0005_mod2_v1.json": "5942137eb8d945e3289cabd929906f6788ef864f17cba990f6d873c12bad5737",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_05_0005_modl_v1.json": "8d30c4518b44117b4a0cb1c662f0a7cead263cc88cdcc6deffe98eb180196b9a",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_05_0035_mod2_v1.json": "d851326939aacc0041ae8dc7cc803d4f1a02dbefba1b6c02fd23160560c7a509",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_05_0035_modl_v1.json": "39febc34231e2a1465c6fa2c9c40b518eb0632e0e870e0bf2447010eed85cd06",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_05_0124_mod2_v1.json": "aa69038b06191a3e2aa8d6810c299507a83cd7cdbc3025adf487a04295fbe23e",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_05_0124_modl_v1.json": "5aae87550a18163383bfb71e7e191a4e01ca1e0ad6a7d47990f8bfa303e932a9",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_05_0203_mod2_v1.json": "ca1ff76b94f996aeee1c0c67ba9a8381e17a2c570fded424d7cf9c9bdfa65960",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_05_0203_modl_v1.json": "af00c109007acc03186ac9af64b6541cf03519fc4cfbbcc2d28d0cda0bb0dd23",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_05_0611_mod2_v1.json": "aa1e08d595bb0c6443a528ccb7ab0cf372f834bbbdb8bc1b919d615274718ecf",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_05_0611_modl_v1.json": "48fab2bfd0deb5d48469952c86c74c972db1672b7043ee7d20b12de50bf756ea",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_05_0753_mod2_v1.json": "5a465f7b7d498caa2092489725dfae3110d76a3c269d7469912e403b1d17d7cf",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_broad_b3_a1_fibration_05_0753_modl_v1.json": "4f75470a0803b72ad8ad065d96ace3c1cc1825ade2091a7967199ff0625e85dd",
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_results_v1.json": "c309f8cea2dac1f4e7ea0ed5da76189a7ec1b54935fce87a8cbb04fa655c9075",
+    "artifacts/generated-results/elliptic-curves/broad_mw16_higher_selection_v1.json": "bddc27814638415751fa16d8dd23da63d02ce2fc356197853b218d1d5fbbaad3",
+    "artifacts/local/elliptic-curves/broad-mw16-higher-scores-v1/fresh-validation.json": "57944cfc997d87660ed92b6e42072558d44a0e040875c69da93b0d51b68ce1e3",
+    "artifacts/local/elliptic-curves/broad60-mw16-controller-v1/freeze.log": "b776ba09a4dd8db97b9cf37e0f4ab545837aaedc4cdde182123362f98f05ba67",
+    "artifacts/local/elliptic-curves/broad60-mw16-controller-v1/geometry.log": "408a5376a243b8b3729b13171275c5f6bcccb43f08c3cf7c41a5f650ffe496ad",
+    "artifacts/local/elliptic-curves/broad60-mw16-controller-v1/ledger.json": "5e8c2188a8c0e6fcd7364e07eba6e4ee048aa222a615233ffdb59e36790add0f",
+    "artifacts/local/elliptic-curves/broad60-mw16-controller-v1/maps.log": "3c1b10d341cd8b197e292d16f9a706380f4126219eeea58385223a31320100ec",
+    "artifacts/local/elliptic-curves/broad60-mw16-controller-v1/odd.log": "2b080a30eeba1be61a8ad1e9f79360e335ea3580aa1af5b5756515208dadce09",
+    "artifacts/local/elliptic-curves/broad60-mw16-controller-v1/points.log": "14ee8cafa60898c7741771d5e97191d55e0838cbe766286c4d8290cd49d578ff",
+    "artifacts/local/elliptic-curves/broad60-mw16-controller-v1/protocol.json": "987dd8b394543de1dc306acc293e1d4df78f01ed4c6b19e8c5c963eec04021d4",
+    "artifacts/local/elliptic-curves/broad60-mw16-controller-v1/verify.log": "f906d0dac329a734fa1ff83882d4fd2f8492daeccb3e0964c0cadd287428e82d",
+    "artifacts/local/elliptic-curves/broad60-mw16-pari-v1/ledger.json": "ce9f1a5654b92adcb65343f441e7c7130e2c3b1d527c937b44a9b3a2b42227b5",
+    "artifacts/local/elliptic-curves/broad60-mw16-pari-v1/odd-cloud-audit/ledger.json": "b406a5e0a621a592e578df625ca8c5a358226b9e72b8fce14b7ae729a8d53e50",
+    "artifacts/local/elliptic-curves/broad60-mw16-pari-v1/protocol.json": "f8152dc22f64e6c0b008f3bcb664c3a6795ed2e0647e5c810d1a7606335a51d3",
+    "artifacts/local/elliptic-curves/broad60-mw16-pari-v1/verification-ledger.json": "46a5cf07c0f52aa2efe854852fcc13ab5909aa5a0827c052faa143b38559749a",
+    "elliptic-curves/cas/report_broad60_mw16_experiment.py": "d756d149828a8a9ec5c3f2195d7c103b7690e8e35c7f25b7c25a62e4b6d72440"
+  },
+  "status": "PASS",
+  "stronger_odd_prime_bounds": []
+}
