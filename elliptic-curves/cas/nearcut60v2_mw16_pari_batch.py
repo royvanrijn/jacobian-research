@@ -39,7 +39,14 @@ def expected_roster():
     d=cert.read(extension.OUT)
     if d['status']!='PASS_FROZEN60_RETAINED_SELECTION' or len(d['selected'])!=60:
         raise ArithmeticError('complete frozen retained60 roster required')
-    return d['selected']
+    keys=('id','family','band','sign','parameter','numerator','denominator','model','arm','block','retained_index','retained_rank','late_rank','original_scalar_id','j_invariant','j_height','parameter_height','combined_late_units','combined_late_good')
+    rows=[{k:r[k] for k in keys} for r in d['selected']]
+    digest(rows)  # Reject any inexact metadata before expensive map work.
+    return rows
+
+def protocol_checkpoint(path,value):
+    digest(value)
+    checkpoint(path,value)
 
 def freeze():
     if (D/'protocol.json').exists():raise FileExistsError('preserve retained point protocol')
@@ -48,7 +55,7 @@ def freeze():
     if gate['status']!='PASS_FROZEN60_RETAINED_SELECTION':raise ArithmeticError('retained selection replay required')
     rows=expected_roster();roster=masks()
     if sum(len(roster[r['family']]) for r in rows)!=2580:raise ArithmeticError('fixed2580 maps differ')
-    checkpoint(D/'protocol.json',{'schema':'elliptic-curves.nearcut60v2-mw16-pari.v1',
+    protocol_checkpoint(D/'protocol.json',{'schema':'elliptic-curves.nearcut60v2-mw16-pari.v1',
         'sources':sources(),'selection_sha256':cert.hashed(extension.OUT),
         'selection_protocol_sha256':cert.hashed(extension.D/'protocol.json'),
         'selection_ledger_sha256':cert.hashed(extension.D/'controller/ledger.json'),
@@ -56,10 +63,10 @@ def freeze():
         'admission_prime_bound':997,'stop_rank':None,'map_wall_seconds':120,
         'baseline_wall_seconds':120,'worker_wall_seconds':600,'rss_bytes':1610612736,
         'maximum_workers':2,'gp_sha256':cert.hashed(Path('/usr/bin/gp')),
-        'scope':'Existing corrected late scores only; six highest unsearched near-finalists per family/band, from ranks7..32. All60 maps and exactly independent generic16 baselines before points. Exactly43 generic parity charts per curve; identical fixed exposure, no rank stop, adaptive wave, retry or refill. Retain terminal partial prefixes and independent exposure checkpoints. Certify rank gains separately from completion and measured computation. No validation-prime selection or new parameter sweep.'})
+        'scope':'Existing corrected late scores only; six highest unsearched near-finalists per family/band, from ranks7..32. All60 maps and exactly independent generic16 baselines before points. Exactly43 generic parity charts per curve; identical fixed exposure, no rank stop, adaptive wave, retry or refill. Retain terminal partial prefixes and independent exposure checkpoints. Certify rank gains separately from completion and measured computation. No validation-prime selection or new parameter sweep. V2 corrects only exact protocol serialization; the prior60 failed map preparations and their costs are retained separately and charged in discovery accounting.'})
 
 def protocol():
-    p=cert.read(D/'protocol.json')
+    p=cert.read(D/'protocol.json');digest(p)
     bindings=[('selection_sha256',extension.OUT),('selection_protocol_sha256',extension.D/'protocol.json'),('selection_ledger_sha256',extension.D/'controller/ledger.json')]
     if p['sources']!=sources() or any(p[k]!=cert.hashed(v) for k,v in bindings) or p['rows']!=expected_roster() or p['generic_masks']!=masks():raise ArithmeticError('frozen retained inputs differ')
     return p

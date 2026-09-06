@@ -22,10 +22,10 @@ def main():
     hashes={str(q.relative_to(ROOT)):cert.hashed(q) for q in sorted(paths)}
     checkpoint(D/'protocol.json',{'sources':hashes,'script_sha256':cert.hashed(Path(__file__).resolve()),
         'wall_seconds':120,'rss_bytes':1073741824,
-        'scope':'Read only frozen prospective point inputs and source dependency closure. Copy them to a separate root and validate relocated imports and all60 protocol bindings under isolated Python (-I). No point result, rank outcome, search, allocation change or proof-execution claim.'})
+        'scope':'Read only frozen prospective point inputs and source dependency closure. Copy them to a separate root and validate relocated imports, exact protocol serialization and all60 protocol bindings under isolated Python (-I). No point result, rank outcome, search, allocation change or proof-execution claim.'})
     for q in sorted(paths):
         target=workspace/q.relative_to(ROOT);target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(q,target)
-    code='import sys;sys.path.insert(0,'+repr(str(workspace/'elliptic-curves/cas'))+');import nearcut60v2_mw16_pari_batch as b;import verify_nearcut60v2_mw16_points; p=b.protocol();assert len(p["rows"])==60;assert p["stop_rank"] is None;print("RELOCATED FROZEN60 INPUTS AND PROOF IMPORTS PASS")'
+    code='import sys;sys.path.insert(0,'+repr(str(workspace/'elliptic-curves/cas'))+');import nearcut60v2_mw16_pari_batch as b;import verify_nearcut60v2_mw16_points; p=b.protocol();from research_runtime.store import digest;digest(p);assert len(p["rows"])==60;assert p["stop_rank"] is None;print("RELOCATED FROZEN60 INPUTS AND PROOF IMPORTS PASS")'
     s=run([sys.executable,'-I','-c',code],limits=Limits(120,1073741824),cwd=workspace,
         log_path=D/'preflight.log',checkpoint_path=D/'preflight.supervisor.json')
     if s['outcome']!='completed' or s['returncode']!=0:raise ArithmeticError('relocation preflight failed')

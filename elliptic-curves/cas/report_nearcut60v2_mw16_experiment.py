@@ -37,7 +37,7 @@ def summarize(rows):
 
 def expected():
     p=batch.protocol(); paths={Path(__file__).resolve(),D/'protocol.json',batch.extension.OUT}
-    control=batch.extension.D/'point-controller/protocol.json';fixed=cert.read(control);paths.add(control)
+    control=batch.extension.D/'point-controller-v2/protocol.json';fixed=cert.read(control);paths.add(control)
     for name,h in fixed['sources'].items():
         source=ROOT/name;paths.add(source)
         if cert.hashed(source)!=h:raise ArithmeticError('frozen comparison source changed')
@@ -50,6 +50,10 @@ def expected():
         if s['wall_seconds']<0:raise ArithmeticError('negative execution time')
         return s['wall_seconds']
     maps=read(D/'map-ledger.json')
+    legacy_path=ROOT/'artifacts/local/elliptic-curves/nearcut60-mw16-pari-v1/map-ledger.json'
+    legacy=read(legacy_path);journal=read(batch.extension.D/'metadata-protocol-failure-v1.json')
+    if legacy['status']!='FAILED_OR_CENSORED' or len(legacy['rows'])!=60 or journal['point_attempts']!=0:raise ArithmeticError('prior metadata failure binding differs')
+    prior_maps={r['id']:r for r in legacy['rows']}
     if maps['status']=='RUNNING':raise ArithmeticError('map stage not terminal')
     baselines=read(D/'baseline-ledger.json') if (D/'baseline-ledger.json').exists() else {'rows':[]}
     ledger=read(D/'ledger.json') if (D/'ledger.json').exists() else {'rows':[]}
@@ -64,7 +68,7 @@ def expected():
     for selected in p['rows']:
         row={k:selected[k] for k in ('id','arm','block','family','band','sign','parameter','retained_rank','late_rank','j_height','parameter_height')}
         folder,cloud,odd=proof.paths(row);mapped=bymap[row['id']]
-        map_seconds=supervision(mapped['supervision']);baseline_seconds=0
+        current_map_seconds=supervision(mapped['supervision']);prior_map_seconds=supervision(prior_maps[row['id']]['supervision']);map_seconds=current_map_seconds+prior_map_seconds;baseline_seconds=0
         if row['id'] in bybase:baseline_seconds=supervision(bybase[row['id']]['supervision'])
         searched=bysearch.get(row['id']);verified=byproof.get(row['id'])
         seconds=supervision(searched['point_supervision']) if searched else 0
@@ -105,7 +109,7 @@ def expected():
             in_flight_at_termination=attempted-len(charts) if charts is not None else None,
             unattempted_boxes=43-attempted if attempted is not None else None,
             worker_status=searched['status'] if searched else 'NOT_RUN_PRESEARCH_GATE',
-            map_seconds=map_seconds,point_worker_seconds=seconds,discovery_worker_seconds=map_seconds+seconds,
+            map_seconds=map_seconds,current_map_seconds=current_map_seconds,failed_prior_map_seconds=prior_map_seconds,point_worker_seconds=seconds,discovery_worker_seconds=map_seconds+seconds,
             verification_seconds=verify_seconds,known_search_cpu_ms=cpu,
             charts_without_cpu_time=attempted-sum(r['search_cpu_ms'] is not None for r in charts) if charts is not None else None,
             exposure_verified=exposure_ok,search_model_coefficient_sizes=coefficients)
@@ -121,7 +125,7 @@ def expected():
         'shared_sunk_costs':{'retained_population_addresses':3059269468,'retained_candidates':1310720,'charged_to_arms':False,
                              'scope':'Previously completed trace-table construction and corrected population selection. Prospective matching/report orchestration costs are shared, not assigned to an arm.'},
         'validation':'Not computed for this comparison;65537..131071 remain separate and never affect allocation or the policy criterion.',
-        'claim_boundary':'Certified lower-bound gains over the independent generic16 subgroup in this fixed retained near-finalist sample. Unresolved gains and exposure remain null, never zero. Worker wall time includes search, startup, admission and interruption cleanup; map time is charged to discovery and baseline/terminal proofs to verification. GP CPU time is partial when a chart lacks its timing marker. Completed boxes trust pinned PARI execution. No absence, exact-rank, universal novelty, sampling-density or causal optimality theorem; no larger sweep authorized.'}
+        'claim_boundary':'Certified lower-bound gains over the independent generic16 subgroup in this fixed retained near-finalist sample. Unresolved gains and exposure remain null, never zero. Worker wall time includes search, startup, admission and interruption cleanup; map time, including the preserved77.58670966129284 worker-seconds of V1 serialization failures, is charged to discovery and baseline/terminal proofs to verification. GP CPU time is partial when a chart lacks its timing marker. Completed boxes trust pinned PARI execution. No absence, exact-rank, universal novelty, sampling-density or causal optimality theorem; no larger sweep authorized.'}
 
 
 if __name__=='__main__':

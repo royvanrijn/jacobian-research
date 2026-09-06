@@ -35,7 +35,7 @@ def launch():
                 ledger['status']='NOT_RUN_MATCHING_INCOMPLETE';checkpoint(D/'ledger.json',ledger);return
             if state not in ('WAITING_FOR_TERMINAL_COMPARISON','RUNNING') or time.monotonic()>deadline:raise ArithmeticError('accounting failed or fixed wait elapsed')
             time.sleep(5)
-        if cert.read(batch.extension.D/'point-controller/ledger.json')['status']!='COMPLETE_FIXED_RETAINED_TRIAL_AND_ACCOUNTING':
+        if cert.read(batch.extension.D/'point-controller-v2/ledger.json')['status']!='COMPLETE_FIXED_RETAINED_TRIAL_AND_ACCOUNTING':
             ledger['status']='NOT_RUN_PRESEARCH_GATE_FAILURE';checkpoint(D/'ledger.json',ledger);return
         if any(cert.hashed(ROOT/n)!=h for n,h in p['sources'].items()):raise ArithmeticError('portable sources changed during wait')
         ledger['status']='RUNNING';checkpoint(D/'ledger.json',ledger)

@@ -1,0 +1,97 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_manifest_v1.json": "dd07b100bd8cedd038dfe41f30bfb172ba030934cbc39cb7a16d1a5928412fbf",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_supplement_v1.json": "db79021f3a6ba6d4a2bb4cba175b961aadbe30eaac819f7667d3b01395a25a1f",
+    "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f"
+  },
+  "boundary": "Rank-derived necessities only. No exceptional class representative or full additional CT supplied.",
+  "rows": [
+    {
+      "generic_rank": 17,
+      "id": "new-20260906-40",
+      "observed_quotient_rank": 10,
+      "reason": "Factor coverage incomplete",
+      "retained_rank_lower_bound": 27,
+      "status": "UNKNOWN",
+      "token": "case-00",
+      "unresolved_cofactor": "25030356096734228476690707778115070384560946348742859633129630708823269637448302306333003457091675514936231569"
+    },
+    {
+      "generic_rank": 17,
+      "id": "new-20260906-72",
+      "observed_quotient_rank": 10,
+      "reason": "Factor coverage incomplete",
+      "retained_rank_lower_bound": 27,
+      "status": "UNKNOWN",
+      "token": "case-08",
+      "unresolved_cofactor": "270644862348926595807890502386063662801126642943972710391967487756014753293844658509114704718641576312747478743687131"
+    },
+    {
+      "generic_rank": 17,
+      "id": "new-20260906-186",
+      "observed_quotient_rank": 10,
+      "reason": "Factor coverage incomplete",
+      "retained_rank_lower_bound": 27,
+      "status": "UNKNOWN",
+      "token": "case-10",
+      "unresolved_cofactor": "5223425473787303905827422231722262215349338816882268000514116324261832941833750627474175086851990796626337"
+    },
+    {
+      "generic_rank": 16,
+      "id": "new-20260906-90",
+      "observed_quotient_rank": 11,
+      "reason": "Factor coverage incomplete",
+      "retained_rank_lower_bound": 27,
+      "status": "UNKNOWN",
+      "token": "case-11",
+      "unresolved_cofactor": "160216007765732759131861941729425236209307839816280138386590013897195158480596709890499681834226482165048352316768151"
+    },
+    {
+      "generic_rank": 16,
+      "id": "a1-fibration-01:-3187/3697",
+      "observed_quotient_rank": 1,
+      "reason": "Factor coverage incomplete",
+      "retained_rank_lower_bound": 17,
+      "status": "UNKNOWN",
+      "token": "case-12",
+      "unresolved_cofactor": "1144773077704900957083175276701163470777894740988913338961600185339301417816717153324949543355439584320104346751086020801553209811"
+    },
+    {
+      "additional_Selmer_dimension_formula": "(c_S - 1) + e, 0 <= e <= 1",
+      "additional_boundary_capacity_upper_bound": 1,
+      "additional_quotient_CT": "UNKNOWN",
+      "boundary_upper_bound": 17,
+      "generic_rank": 17,
+      "generic_strict_dimension": 1,
+      "id": "ICARM-356",
+      "inherited_CT_switch_rank": 0,
+      "local_product_dimension": 18,
+      "necessary_additional_strict_rational_dimension": 11,
+      "observed_quotient_rank": 12,
+      "rank_label_dependent_S_class_dimension_lower_bound": 12,
+      "rank_upper_bound_formula": "c_S + 17",
+      "retained_rank_lower_bound": 29,
+      "status": "PASS",
+      "token": "case-13"
+    },
+    {
+      "additional_Selmer_dimension_formula": "(c_S - 0) + e, 0 <= e <= 8",
+      "additional_boundary_capacity_upper_bound": 8,
+      "additional_quotient_CT": "UNKNOWN",
+      "boundary_upper_bound": 25,
+      "generic_rank": 17,
+      "generic_strict_dimension": 0,
+      "id": "ICARM-385",
+      "inherited_CT_switch_rank": 0,
+      "local_product_dimension": 26,
+      "necessary_additional_strict_rational_dimension": 4,
+      "observed_quotient_rank": 12,
+      "rank_label_dependent_S_class_dimension_lower_bound": 4,
+      "rank_upper_bound_formula": "c_S + 25",
+      "retained_rank_lower_bound": 29,
+      "status": "PASS",
+      "token": "case-14"
+    }
+  ],
+  "schema": "rank-jump.fresh-retained-factor-comparison.v1"
+}

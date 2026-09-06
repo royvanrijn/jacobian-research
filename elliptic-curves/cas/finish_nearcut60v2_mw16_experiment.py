@@ -16,7 +16,7 @@ def sources():
            'prepare_nearcut60v2_mw16_pari_batch.sage','verify_nearcut60v2_mw16_points.py',
            'report_nearcut60v2_mw16_experiment.py','replay_corrected60_mw16_geometry.py',
            'audit_recorded_point_mod2_rank_v3.py','audit_retained_cloud_modl.py']
-    paths=[*(CAS/n for n in names),batch.extension.D/'controller/protocol.json',batch.extension.D/'protocol.json']
+    paths=[batch.extension.D/'metadata-protocol-failure-v1.json',ROOT/'artifacts/local/elliptic-curves/nearcut60-mw16-pari-v1/map-ledger.json',*(CAS/n for n in names),batch.extension.D/'controller/protocol.json',batch.extension.D/'protocol.json']
     return {**batch.sources(),**{str(p.relative_to(ROOT)):cert.hashed(p) for p in paths}}
 
 
@@ -33,7 +33,7 @@ def prepare():
             ['verify','verify_nearcut60v2_mw16_points.py',['all'],43000],
             ['report','report_nearcut60v2_mw16_experiment.py',[],180],
             ['report-check','report_nearcut60v2_mw16_experiment.py',['--check'],180]],
-        'scope':'The preceding corrected and matched trials are complete. Require frozen near-finalist selection and replay before this separate same-size retained-pool trial. All60 maps and independent16 baseline certificates precede all point attempts. Exactly43 generic charts per curve with identical125000 height,10sec/chart,600sec/curve,two workers. No rank stop/retry/refill. Exact histories, exposure geometry, full retained clouds mod2/3/5, provenance and censor-aware measured-yield reporting. Per-curve proof failures remain unresolved and do not discard allocated rows. No validation-driven adaptation or new parameter scan.'})
+        'scope':'The preceding corrected and matched trials are complete. Preserve the abortedV1 metadata-only failure and exactly the same60 roster. V2 strips unrelated float timing metadata from the exact point protocol, validates its digest before maps, and charges all V1 map cost in accounting. No prior point attempt occurred. Require frozen near-finalist selection and replay before this separate same-size retained-pool trial. All60 maps and independent16 baseline certificates precede all point attempts. Exactly43 generic charts per curve with identical125000 height,10sec/chart,600sec/curve,two workers. No rank stop/retry/refill. Exact histories, exposure geometry, full retained clouds mod2/3/5, provenance and censor-aware measured-yield reporting. Per-curve proof failures remain unresolved and do not discard allocated rows. No validation-driven adaptation or new parameter scan.'})
 
 
 def launch():

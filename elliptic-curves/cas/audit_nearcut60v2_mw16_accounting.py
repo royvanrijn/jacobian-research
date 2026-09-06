@@ -69,12 +69,16 @@ def audit():
         if d.get('status')=='RUNNING':raise ArithmeticError('active computation cannot be an outcome')
     indices={name:{r['id']:r for r in d['rows']} for name,d in ledgers.items()}
     same([r['id'] for r in report['rows']],[r['id'] for r in selected])
+    legacy=read(LOCAL/'nearcut60-mw16-pari-v1/map-ledger.json')
+    journal=read(LOCAL/'retained-nearcutoff-mw16-v1/metadata-protocol-failure-v1.json')
+    if legacy['status']!='FAILED_OR_CENSORED' or len(legacy['rows'])!=60 or journal['point_attempts']!=0:raise ArithmeticError('prior preparation failure differs')
+    prior_maps={r['id']:r for r in legacy['rows']}
     independent=[]
     for choice,reported in zip(selected,report['rows']):
         ident=choice['id'];folder=D/ident
         for key in ('id','arm','block','family','band','sign','parameter','retained_rank','late_rank','j_height','parameter_height'):
             same(reported[key],choice[key])
-        m=indices['map'][ident];map_time=elapsed(m['supervision']);base=indices['baseline'].get(ident)
+        m=indices['map'][ident];current_map_time=elapsed(m['supervision']);prior_map_time=elapsed(prior_maps[ident]['supervision']);map_time=current_map_time+prior_map_time;base=indices['baseline'].get(ident)
         base_time=elapsed(base['supervision']) if base else 0
         point=indices['point'].get(ident);point_time=elapsed(point['point_supervision']) if point else 0
         worker_status=point['status'] if point else 'NOT_RUN_PRESEARCH_GATE'
@@ -113,7 +117,7 @@ def audit():
                 lower=max([cloud['rank_lower_bound']]+[a['finite_column_rank'] for a in odd['audits']]);gain=lower-16
                 if gain<0:raise ArithmeticError('lost certified baseline')
                 same(verify['certified_gain'],gain)
-        fields={'map_seconds':map_time,'point_worker_seconds':point_time,'discovery_worker_seconds':map_time+point_time,
+        fields={'map_seconds':map_time,'current_map_seconds':current_map_time,'failed_prior_map_seconds':prior_map_time,'point_worker_seconds':point_time,'discovery_worker_seconds':map_time+point_time,
             'verification_seconds':verify_time,'worker_status':worker_status,'certified_gain':gain,'rank_lower_bound':lower,
             'allocated_boxes':43,'attempted_boxes':attempts,'returned_charts':returned,'completed_boxes':completed,
             'chart_timeouts':timeouts,'backend_failures':failures,'in_flight_at_termination':inflight,

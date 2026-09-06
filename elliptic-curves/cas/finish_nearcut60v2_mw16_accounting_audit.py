@@ -7,7 +7,7 @@ import certify_compact_r17_candidates as cert
 from research_runtime.store import checkpoint
 from research_runtime.supervisor import run,Limits
 ROOT=audit.ROOT;D=audit.LOCAL/'retained-nearcutoff-mw16-v1/accounting-controller-v2'
-UPSTREAM=audit.LOCAL/'retained-nearcutoff-mw16-v1/point-controller'
+UPSTREAM=audit.LOCAL/'retained-nearcutoff-mw16-v1/point-controller-v2'
 
 
 def prepare():
