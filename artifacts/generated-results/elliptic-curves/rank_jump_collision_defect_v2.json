@@ -1,0 +1,6618 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_collision_prime_lift_v1.json": "fdd9434a349845a7ea04d03b2cbd45adbd96e25cfee4259f02c436a905ad7642",
+    "artifacts/generated-results/elliptic-curves/rank_jump_soluble_quartet_compression_inputs_v1.json": "fe70c730c1f19bf3eae03f3e78b52c23ed7de041f64c1e635600561487aed976",
+    "elliptic-curves/rank-jump/COLLISION_DEFECT_PROTOCOL.json": "2c460e4c0146c97cb80739f4d5175b4fae100b5d72807ae28266b1e631cf9cc3",
+    "elliptic-curves/rank-jump/collision_defect_v2.py": "1f92fa388bde65909af5a602fc2ffa470fe28d3bb9be0916fb6af3e7c268dbdd",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "boundary": "A missing bounded local witness is UNKNOWN, not an obstruction. Nonordinary collisions retain only a necessary valuation-support bound. Local points do not prove rational product points or global independence of defects.",
+  "layer": "solubility",
+  "rows": [
+    {
+      "execution": {
+        "returncode": 0,
+        "status": "COMPLETE"
+      },
+      "log": "/home/royvanrijn/src/jacobian-research/elliptic-curves/rank-jump/collision_defect_v2.py:92: DeprecationWarning: Use sage.version.version instead.\nSee https://github.com/sagemath/sage/issues/39015 for details.\n  'separate_prime_defect_witnesses': len(masks), 'sage_version': version()}\n08234-003 pruned [] pair masks [3, 5, 6, 9, 10, 12] span 3 prime witnesses 13\n",
+      "result": {
+        "certified_pair_masks": [
+          3,
+          5,
+          6,
+          9,
+          10,
+          12
+        ],
+        "id": "08234-003",
+        "native_mask_span_dimension": 3,
+        "pruned_primes": [],
+        "retained_support": [
+          "2",
+          "3",
+          "7",
+          "19",
+          "31",
+          "163",
+          "937",
+          "2953",
+          "1358479",
+          "4706591",
+          "421439617",
+          "26242737137789",
+          "299769308948044811",
+          "35119604647600658367407161",
+          "3669174323089536114140417378426240519",
+          "112005266235422427051412889632144702369",
+          "478200435683291638992601805227666588508879041",
+          "603875197164937622665445992018073615893162819"
+        ],
+        "rows": [
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 6,
+                "root": "1"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              6
+            ],
+            "ordinary_simple_pair_collision": false,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "1"
+                ],
+                "gcd": [
+                  1,
+                  0,
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "2",
+            "prunable": false
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 3,
+                "root": "0"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              3
+            ],
+            "ordinary_simple_pair_collision": false,
+            "pairs": [
+              {
+                "finite_roots": [
+                  "0"
+                ],
+                "gcd": [
+                  0,
+                  0,
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "3",
+            "prunable": false
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 12,
+                "root": "3"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              12
+            ],
+            "ordinary_simple_pair_collision": false,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "3"
+                ],
+                "gcd": [
+                  2,
+                  1,
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "7",
+            "prunable": false
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 3,
+                "root": "15"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              3
+            ],
+            "ordinary_simple_pair_collision": false,
+            "pairs": [
+              {
+                "finite_roots": [
+                  "15"
+                ],
+                "gcd": [
+                  16,
+                  8,
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "19",
+            "prunable": false
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 9,
+                "root": "10"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              9
+            ],
+            "ordinary_simple_pair_collision": false,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "10"
+                ],
+                "gcd": [
+                  7,
+                  11,
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "31",
+            "prunable": false
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 5,
+                "root": "109"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              5
+            ],
+            "odd_pair_residue_count": "81",
+            "odd_pair_witness": {
+              "mask": 5,
+              "product_unit": "87",
+              "residue_mod_p_squared": "109",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "109"
+                ],
+                "gcd": [
+                  54,
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "163",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "100",
+              "residue_mod_p": "2",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 10,
+                "root": "589"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              10
+            ],
+            "odd_pair_residue_count": "467",
+            "odd_pair_witness": {
+              "mask": 10,
+              "product_unit": "624",
+              "residue_mod_p_squared": "589",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "589"
+                ],
+                "gcd": [
+                  348,
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "937",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "200",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 5,
+                "root": "1766"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              5
+            ],
+            "odd_pair_residue_count": "1475",
+            "odd_pair_witness": {
+              "mask": 5,
+              "product_unit": "1619",
+              "residue_mod_p_squared": "7672",
+              "s": 2,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "1766"
+                ],
+                "gcd": [
+                  1187,
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "2953",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "1100",
+              "residue_mod_p": "1",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 12,
+                "root": "815356"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              12
+            ],
+            "odd_pair_residue_count": "679238",
+            "odd_pair_witness": {
+              "mask": 12,
+              "product_unit": "260064",
+              "residue_mod_p_squared": "815356",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "815356"
+                ],
+                "gcd": [
+                  543123,
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "1358479",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "350966",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 3,
+                "root": "192987"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              3
+            ],
+            "odd_pair_residue_count": "2353295",
+            "odd_pair_witness": {
+              "mask": 3,
+              "product_unit": "2627835",
+              "residue_mod_p_squared": "4899578",
+              "s": 1,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [
+                  "192987"
+                ],
+                "gcd": [
+                  4513604,
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "4706591",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "320380",
+              "residue_mod_p": "1",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 10,
+                "root": "100567794"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              10
+            ],
+            "odd_pair_residue_count": "210719807",
+            "odd_pair_witness": {
+              "mask": 10,
+              "product_unit": "76137170",
+              "residue_mod_p_squared": "522007411",
+              "s": 1,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "100567794"
+                ],
+                "gcd": [
+                  320871823,
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "421439617",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "226294186",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 12,
+                "root": "17114724401429"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              12
+            ],
+            "odd_pair_residue_count": "13121368568894",
+            "odd_pair_witness": {
+              "mask": 12,
+              "product_unit": "20996440418448",
+              "residue_mod_p_squared": "43357461539218",
+              "s": 1,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "17114724401429"
+                ],
+                "gcd": [
+                  9128012736360,
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "26242737137789",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "9070082147552",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 12,
+                "root": "138793816460843476"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              12
+            ],
+            "odd_pair_residue_count": "149884654474022405",
+            "odd_pair_witness": {
+              "mask": 12,
+              "product_unit": "102343452832097378",
+              "residue_mod_p_squared": "438563125408888287",
+              "s": 1,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "138793816460843476"
+                ],
+                "gcd": [
+                  160975492487201335,
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "299769308948044811",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "50656247971005192",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 10,
+                "root": "4145681836102316528685406"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              10
+            ],
+            "odd_pair_residue_count": "17559802323800329183703579",
+            "odd_pair_witness": {
+              "mask": 10,
+              "product_unit": "13309711149003492967028747",
+              "residue_mod_p_squared": "144624100426504949998314050",
+              "s": 4,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "4145681836102316528685406"
+                ],
+                "gcd": [
+                  30973922811498341838721755,
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "35119604647600658367407161",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "12001748130020895438810715",
+              "residue_mod_p": "1",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 3,
+                "root": "1543934670940362481508201031394615376"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              3
+            ],
+            "odd_pair_residue_count": "1834587161544768057070208689213120259",
+            "odd_pair_witness": {
+              "mask": 3,
+              "product_unit": "2829517354227610122144163608417342985",
+              "residue_mod_p_squared": "5213108994029898595648618409820855895",
+              "s": 1,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [
+                  "1543934670940362481508201031394615376"
+                ],
+                "gcd": [
+                  2125239652149173632632216347031625143,
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "3669174323089536114140417378426240519",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "50579691087576664961624500858710787",
+              "residue_mod_p": "1",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 6,
+                "root": "108713708774793453803759763756755382651"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              6
+            ],
+            "odd_pair_residue_count": "56002633117711213525706444816072351183",
+            "odd_pair_witness": {
+              "mask": 6,
+              "product_unit": "8844654002790503190256622411453525192",
+              "residue_mod_p_squared": "444729507481060734957998432653189489758",
+              "s": 3,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "108713708774793453803759763756755382651"
+                ],
+                "gcd": [
+                  3291557460628973247653125875389319718,
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "112005266235422427051412889632144702369",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "90943767507504241533153008179039188959",
+              "residue_mod_p": "1",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 9,
+                "root": "50636645359934744700303285359283546962103269"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              9
+            ],
+            "odd_pair_residue_count": "239100217841645819496300902613833294254439519",
+            "odd_pair_witness": {
+              "mask": 9,
+              "product_unit": "269828350225542252739713856191829835981261920",
+              "residue_mod_p_squared": "528837081043226383692905090586950135470982310",
+              "s": 1,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "50636645359934744700303285359283546962103269"
+                ],
+                "gcd": [
+                  427563790323356894292298519868383041546775772,
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "478200435683291638992601805227666588508879041",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "238448794387193292946558464590692807446009768",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 5,
+                "root": "379799165557940091782310365941254887327764260"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              5
+            ],
+            "odd_pair_residue_count": "301937598582468811332722996009036807946581408",
+            "odd_pair_witness": {
+              "mask": 5,
+              "product_unit": "259875088215160702027061765840192087484111996",
+              "residue_mod_p_squared": "1587549559887815337113202349977402119114089898",
+              "s": 2,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "379799165557940091782310365941254887327764260"
+                ],
+                "gcd": [
+                  224076031606997530883135626076818728565398559,
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "603875197164937622665445992018073615893162819",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "573794350754099408658460970366023548944127119",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          }
+        ],
+        "sage_version": "SageMath version 10.9, Release Date: 2026-05-04",
+        "separate_prime_defect_witnesses": 13
+      }
+    },
+    {
+      "execution": {
+        "returncode": 0,
+        "status": "COMPLETE"
+      },
+      "log": "/home/royvanrijn/src/jacobian-research/elliptic-curves/rank-jump/collision_defect_v2.py:92: DeprecationWarning: Use sage.version.version instead.\nSee https://github.com/sagemath/sage/issues/39015 for details.\n  'separate_prime_defect_witnesses': len(masks), 'sage_version': version()}\n08234-009 pruned [] pair masks [3, 5, 6, 9, 10, 12] span 3 prime witnesses 17\n",
+      "result": {
+        "certified_pair_masks": [
+          3,
+          5,
+          6,
+          9,
+          10,
+          12
+        ],
+        "id": "08234-009",
+        "native_mask_span_dimension": 3,
+        "pruned_primes": [],
+        "retained_support": [
+          "2",
+          "3",
+          "7",
+          "17",
+          "31",
+          "41",
+          "53",
+          "109",
+          "233",
+          "239",
+          "367",
+          "461",
+          "127637",
+          "1686569",
+          "68854883",
+          "35483014871334461",
+          "72549435805970309",
+          "684784686759034661",
+          "16000070259350081396339",
+          "320728924505069277110983",
+          "12969920394162455974117378452307",
+          "21884113743918232539266565711046849",
+          "57060838173657024046572229827343313"
+        ],
+        "rows": [
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 9,
+                "root": "0"
+              },
+              {
+                "chart": "finite",
+                "mask": 6,
+                "root": "1"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              6,
+              9
+            ],
+            "ordinary_simple_pair_collision": false,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "1"
+                ],
+                "gcd": [
+                  1,
+                  0,
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "0"
+                ],
+                "gcd": [
+                  0,
+                  0,
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "2",
+            "prunable": false
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "infinity",
+                "mask": 3,
+                "root": "0"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              3
+            ],
+            "ordinary_simple_pair_collision": false,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": true
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "3",
+            "prunable": false
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 6,
+                "root": "0"
+              },
+              {
+                "chart": "finite",
+                "mask": 3,
+                "root": "3"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              3,
+              6
+            ],
+            "ordinary_simple_pair_collision": false,
+            "pairs": [
+              {
+                "finite_roots": [
+                  "3"
+                ],
+                "gcd": [
+                  4,
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "0"
+                ],
+                "gcd": [
+                  0,
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "7",
+            "prunable": false
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "infinity",
+                "mask": 10,
+                "root": "0"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              10
+            ],
+            "ordinary_simple_pair_collision": false,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": true
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "17",
+            "prunable": false
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 6,
+                "root": "9"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              6
+            ],
+            "ordinary_simple_pair_collision": false,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "9"
+                ],
+                "gcd": [
+                  22,
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "31",
+            "prunable": false
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 5,
+                "root": "7"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              5
+            ],
+            "ordinary_simple_pair_collision": false,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "7"
+                ],
+                "gcd": [
+                  34,
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "41",
+            "prunable": false
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 9,
+                "root": "31"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              9
+            ],
+            "odd_pair_residue_count": "26",
+            "odd_pair_witness": {
+              "mask": 9,
+              "product_unit": "38",
+              "residue_mod_p_squared": "31",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "31"
+                ],
+                "gcd": [
+                  22,
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "53",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "10",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 9,
+                "root": "105"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              9
+            ],
+            "odd_pair_residue_count": "54",
+            "odd_pair_witness": {
+              "mask": 9,
+              "product_unit": "60",
+              "residue_mod_p_squared": "323",
+              "s": 2,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "105"
+                ],
+                "gcd": [
+                  4,
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "109",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "82",
+              "residue_mod_p": "1",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 10,
+                "root": "172"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              10
+            ],
+            "odd_pair_residue_count": "115",
+            "odd_pair_witness": {
+              "mask": 10,
+              "product_unit": "162",
+              "residue_mod_p_squared": "172",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "172"
+                ],
+                "gcd": [
+                  61,
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "233",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "120",
+              "residue_mod_p": "1",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 10,
+                "root": "68"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              10
+            ],
+            "odd_pair_residue_count": "118",
+            "odd_pair_witness": {
+              "mask": 10,
+              "product_unit": "45",
+              "residue_mod_p_squared": "2219",
+              "s": 9,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "68"
+                ],
+                "gcd": [
+                  171,
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "239",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "60",
+              "residue_mod_p": "1",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 5,
+                "root": "310"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              5
+            ],
+            "odd_pair_residue_count": "182",
+            "odd_pair_witness": {
+              "mask": 5,
+              "product_unit": "225",
+              "residue_mod_p_squared": "310",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "310"
+                ],
+                "gcd": [
+                  57,
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "367",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "225",
+              "residue_mod_p": "2",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 10,
+                "root": "432"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              10
+            ],
+            "odd_pair_residue_count": "229",
+            "odd_pair_witness": {
+              "mask": 10,
+              "product_unit": "80",
+              "residue_mod_p_squared": "432",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "432"
+                ],
+                "gcd": [
+                  29,
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "461",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "203",
+              "residue_mod_p": "1",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 5,
+                "root": "40243"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              5
+            ],
+            "odd_pair_residue_count": "63818",
+            "odd_pair_witness": {
+              "mask": 5,
+              "product_unit": "5453",
+              "residue_mod_p_squared": "678428",
+              "s": 5,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "40243"
+                ],
+                "gcd": [
+                  87394,
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "127637",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "19581",
+              "residue_mod_p": "3",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 3,
+                "root": "932635"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              3
+            ],
+            "odd_pair_residue_count": "843283",
+            "odd_pair_witness": {
+              "mask": 3,
+              "product_unit": "706703",
+              "residue_mod_p_squared": "932635",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [
+                  "932635"
+                ],
+                "gcd": [
+                  753934,
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "1686569",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "75707",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 3,
+                "root": "5429358"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              3
+            ],
+            "odd_pair_residue_count": "34427440",
+            "odd_pair_witness": {
+              "mask": 3,
+              "product_unit": "37906006",
+              "residue_mod_p_squared": "74284241",
+              "s": 1,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [
+                  "5429358"
+                ],
+                "gcd": [
+                  63425525,
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "68854883",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "63557069",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 12,
+                "root": "22707391960196133"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              12
+            ],
+            "odd_pair_residue_count": "17741507435667229",
+            "odd_pair_witness": {
+              "mask": 12,
+              "product_unit": "26346915376057398",
+              "residue_mod_p_squared": "22707391960196133",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "22707391960196133"
+                ],
+                "gcd": [
+                  12775622911138328,
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "35483014871334461",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "32666541687722025",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 10,
+                "root": "70217199346324040"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              10
+            ],
+            "odd_pair_residue_count": "36274717902985153",
+            "odd_pair_witness": {
+              "mask": 10,
+              "product_unit": "17376187639680792",
+              "residue_mod_p_squared": "360414942570205276",
+              "s": 4,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "70217199346324040"
+                ],
+                "gcd": [
+                  2332236459646269,
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "72549435805970309",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "69513684614271043",
+              "residue_mod_p": "2",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 12,
+                "root": "314098780735539136"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              12
+            ],
+            "odd_pair_residue_count": "342392343379517330",
+            "odd_pair_witness": {
+              "mask": 12,
+              "product_unit": "295476240416187687",
+              "residue_mod_p_squared": "314098780735539136",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "314098780735539136"
+                ],
+                "gcd": [
+                  370685906023495525,
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "684784686759034661",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "594293222172407698",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 5,
+                "root": "13054676428201925277928"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              5
+            ],
+            "odd_pair_residue_count": "8000035129675040698168",
+            "odd_pair_witness": {
+              "mask": 5,
+              "product_unit": "15608846961870400794233",
+              "residue_mod_p_squared": "61054887206252169466945",
+              "s": 3,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "13054676428201925277928"
+                ],
+                "gcd": [
+                  2945393831148156118411,
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "16000070259350081396339",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "5670007212820510228834",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 10,
+                "root": "194501245781414332314723"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              10
+            ],
+            "odd_pair_residue_count": "160364462252534638555490",
+            "odd_pair_witness": {
+              "mask": 10,
+              "product_unit": "126082565987012685837269",
+              "residue_mod_p_squared": "1156688019296622163647672",
+              "s": 3,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "194501245781414332314723"
+                ],
+                "gcd": [
+                  126227678723654944796260,
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "320728924505069277110983",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "35005076313020160686184",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 3,
+                "root": "5559743705602217423486985774208"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              3
+            ],
+            "odd_pair_residue_count": "6484960197081227987058689226152",
+            "odd_pair_witness": {
+              "mask": 3,
+              "product_unit": "3365362679716358519586914525531",
+              "residue_mod_p_squared": "57439425282252041319956499583436",
+              "s": 4,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [
+                  "5559743705602217423486985774208"
+                ],
+                "gcd": [
+                  7410176688560238550630392678099,
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "12969920394162455974117378452307",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "12461894686571046574683149051579",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 6,
+                "root": "13332393115679810275042941558748651"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              6
+            ],
+            "odd_pair_residue_count": "10942056871959116269633282855523423",
+            "odd_pair_witness": {
+              "mask": 6,
+              "product_unit": "9044772587690147861443827876767434",
+              "residue_mod_p_squared": "13332393115679810275042941558748651",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "13332393115679810275042941558748651"
+                ],
+                "gcd": [
+                  8551720628238422264223624152298198,
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "21884113743918232539266565711046849",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "20090966063656125772381155479018134",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 9,
+                "root": "50513231694522351369866507327987865"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              9
+            ],
+            "odd_pair_residue_count": "28530419086828512023286114913671655",
+            "odd_pair_witness": {
+              "mask": 9,
+              "product_unit": "46638405732041435866738799619849048",
+              "residue_mod_p_squared": "107574069868179375416438737155331178",
+              "s": 1,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "50513231694522351369866507327987865"
+                ],
+                "gcd": [
+                  6547606479134672676705722499355448,
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "57060838173657024046572229827343313",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "3770405430196300067798456177207230",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          }
+        ],
+        "sage_version": "SageMath version 10.9, Release Date: 2026-05-04",
+        "separate_prime_defect_witnesses": 17
+      }
+    },
+    {
+      "execution": {
+        "returncode": 0,
+        "status": "COMPLETE"
+      },
+      "log": "/home/royvanrijn/src/jacobian-research/elliptic-curves/rank-jump/collision_defect_v2.py:92: DeprecationWarning: Use sage.version.version instead.\nSee https://github.com/sagemath/sage/issues/39015 for details.\n  'separate_prime_defect_witnesses': len(masks), 'sage_version': version()}\nobstructed_ABCD pruned [] pair masks [3, 5, 6, 9, 10, 12] span 3 prime witnesses 18\n",
+      "result": {
+        "certified_pair_masks": [
+          3,
+          5,
+          6,
+          9,
+          10,
+          12
+        ],
+        "id": "obstructed_ABCD",
+        "native_mask_span_dimension": 3,
+        "pruned_primes": [],
+        "retained_support": [
+          "2",
+          "3",
+          "7",
+          "13",
+          "17",
+          "23",
+          "59",
+          "139",
+          "251",
+          "1553",
+          "15139",
+          "18401",
+          "267901",
+          "12592927",
+          "319801093789",
+          "3633126377567",
+          "23193384428113",
+          "610888485789979",
+          "3230555449071259",
+          "11613166291978687",
+          "19942274001039517",
+          "3714412228601271752389",
+          "464519175831673459463789",
+          "21304214201640433315206337",
+          "1299718057497406099042128403370056695143"
+        ],
+        "rows": [
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 5,
+                "root": "0"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              5
+            ],
+            "ordinary_simple_pair_collision": false,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "0"
+                ],
+                "gcd": [
+                  0,
+                  0,
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "2",
+            "prunable": false
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 9,
+                "root": "0"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              9
+            ],
+            "ordinary_simple_pair_collision": false,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "0"
+                ],
+                "gcd": [
+                  0,
+                  0,
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "3",
+            "prunable": false
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 12,
+                "root": "3"
+              },
+              {
+                "chart": "finite",
+                "mask": 10,
+                "root": "6"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              10,
+              12
+            ],
+            "ordinary_simple_pair_collision": false,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "6"
+                ],
+                "gcd": [
+                  1,
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "3"
+                ],
+                "gcd": [
+                  4,
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "7",
+            "prunable": false
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "infinity",
+                "mask": 7,
+                "root": "0"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              3,
+              5,
+              6
+            ],
+            "ordinary_simple_pair_collision": false,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": true
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": true
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": true
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "13",
+            "prunable": false
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 6,
+                "root": "13"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              6
+            ],
+            "ordinary_simple_pair_collision": false,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "13"
+                ],
+                "gcd": [
+                  4,
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "17",
+            "prunable": false
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 14,
+                "root": "12"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              6,
+              10,
+              12
+            ],
+            "ordinary_simple_pair_collision": false,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "12"
+                ],
+                "gcd": [
+                  11,
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "12"
+                ],
+                "gcd": [
+                  11,
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "12"
+                ],
+                "gcd": [
+                  11,
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "23",
+            "prunable": false
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 6,
+                "root": "23"
+              },
+              {
+                "chart": "finite",
+                "mask": 12,
+                "root": "48"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              6,
+              12
+            ],
+            "ordinary_simple_pair_collision": false,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "23"
+                ],
+                "gcd": [
+                  36,
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "48"
+                ],
+                "gcd": [
+                  11,
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "59",
+            "prunable": false
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 6,
+                "root": "59"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              6
+            ],
+            "odd_pair_residue_count": "69",
+            "odd_pair_witness": {
+              "mask": 6,
+              "product_unit": "37",
+              "residue_mod_p_squared": "59",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "59"
+                ],
+                "gcd": [
+                  80,
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "139",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "120",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 9,
+                "root": "168"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              9
+            ],
+            "odd_pair_residue_count": "124",
+            "odd_pair_witness": {
+              "mask": 9,
+              "product_unit": "88",
+              "residue_mod_p_squared": "419",
+              "s": 1,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "168"
+                ],
+                "gcd": [
+                  83,
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "251",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "124",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 3,
+                "root": "39"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              3
+            ],
+            "odd_pair_residue_count": "775",
+            "odd_pair_witness": {
+              "mask": 3,
+              "product_unit": "303",
+              "residue_mod_p_squared": "39",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [
+                  "39"
+                ],
+                "gcd": [
+                  1514,
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "1553",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "730",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 5,
+                "root": "1672"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              5
+            ],
+            "odd_pair_residue_count": "7569",
+            "odd_pair_witness": {
+              "mask": 5,
+              "product_unit": "5212",
+              "residue_mod_p_squared": "1672",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "1672"
+                ],
+                "gcd": [
+                  13467,
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "15139",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "10143",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 9,
+                "root": "3912"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              9
+            ],
+            "odd_pair_residue_count": "9199",
+            "odd_pair_witness": {
+              "mask": 9,
+              "product_unit": "1512",
+              "residue_mod_p_squared": "22313",
+              "s": 1,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "3912"
+                ],
+                "gcd": [
+                  14489,
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "18401",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "1532",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 5,
+                "root": "256846"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              5
+            ],
+            "odd_pair_residue_count": "133949",
+            "odd_pair_witness": {
+              "mask": 5,
+              "product_unit": "120025",
+              "residue_mod_p_squared": "256846",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "256846"
+                ],
+                "gcd": [
+                  11055,
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "267901",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "241834",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 5,
+                "root": "9727689"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              5
+            ],
+            "odd_pair_residue_count": "6296462",
+            "odd_pair_witness": {
+              "mask": 5,
+              "product_unit": "3004498",
+              "residue_mod_p_squared": "9727689",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "9727689"
+                ],
+                "gcd": [
+                  2865238,
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "12592927",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "2689000",
+              "residue_mod_p": "3",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 3,
+                "root": "313989589321"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              3
+            ],
+            "odd_pair_residue_count": "159900546894",
+            "odd_pair_witness": {
+              "mask": 3,
+              "product_unit": "10188233057",
+              "residue_mod_p_squared": "313989589321",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [
+                  "313989589321"
+                ],
+                "gcd": [
+                  5811504468,
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "319801093789",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "82218452709",
+              "residue_mod_p": "2",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 12,
+                "root": "456077018591"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              12
+            ],
+            "odd_pair_residue_count": "1816563188782",
+            "odd_pair_witness": {
+              "mask": 12,
+              "product_unit": "2685815457086",
+              "residue_mod_p_squared": "456077018591",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "456077018591"
+                ],
+                "gcd": [
+                  3177049358976,
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "3633126377567",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "1969709748099",
+              "residue_mod_p": "1",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 3,
+                "root": "22203713743367"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              3
+            ],
+            "odd_pair_residue_count": "11596692214055",
+            "odd_pair_witness": {
+              "mask": 3,
+              "product_unit": "22047346538938",
+              "residue_mod_p_squared": "68590482599593",
+              "s": 2,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [
+                  "22203713743367"
+                ],
+                "gcd": [
+                  989670684746,
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "23193384428113",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "18366784819821",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 6,
+                "root": "388830964444146"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              6
+            ],
+            "odd_pair_residue_count": "305444242894989",
+            "odd_pair_witness": {
+              "mask": 6,
+              "product_unit": "131731176604804",
+              "residue_mod_p_squared": "388830964444146",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "388830964444146"
+                ],
+                "gcd": [
+                  222057521345833,
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "610888485789979",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "583559220709413",
+              "residue_mod_p": "1",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 3,
+                "root": "2583927496462687"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              3
+            ],
+            "odd_pair_residue_count": "1615277724535629",
+            "odd_pair_witness": {
+              "mask": 3,
+              "product_unit": "1933535307182704",
+              "residue_mod_p_squared": "9045038394605205",
+              "s": 2,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [
+                  "2583927496462687"
+                ],
+                "gcd": [
+                  646627952608572,
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "3230555449071259",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "961214902282845",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 9,
+                "root": "319222608818498"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              9
+            ],
+            "odd_pair_residue_count": "5806583145989343",
+            "odd_pair_witness": {
+              "mask": 9,
+              "product_unit": "7124954016285333",
+              "residue_mod_p_squared": "319222608818498",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "319222608818498"
+                ],
+                "gcd": [
+                  11293943683160189,
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "11613166291978687",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "1278168565477771",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 9,
+                "root": "7850119270483860"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              9
+            ],
+            "odd_pair_residue_count": "9971137000519758",
+            "odd_pair_witness": {
+              "mask": 9,
+              "product_unit": "10889713795994134",
+              "residue_mod_p_squared": "7850119270483860",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "7850119270483860"
+                ],
+                "gcd": [
+                  12092154730555657,
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "19942274001039517",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "2993704241925339",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 12,
+                "root": "1714512281700964349462"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              12
+            ],
+            "odd_pair_residue_count": "1857206114300635876194",
+            "odd_pair_witness": {
+              "mask": 12,
+              "product_unit": "778696728421350485322",
+              "residue_mod_p_squared": "5428924510302236101851",
+              "s": 1,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "1714512281700964349462"
+                ],
+                "gcd": [
+                  1999899946900307402927,
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "3714412228601271752389",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "1229298790170985990828",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 6,
+                "root": "159226230598508573009724"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              6
+            ],
+            "odd_pair_residue_count": "232259587915836729731894",
+            "odd_pair_witness": {
+              "mask": 6,
+              "product_unit": "51189094724343769381008",
+              "residue_mod_p_squared": "159226230598508573009724",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "159226230598508573009724"
+                ],
+                "gcd": [
+                  305292945233164886454065,
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "464519175831673459463789",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "183404044942197477568444",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 5,
+                "root": "663399724538557113251819"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              5
+            ],
+            "odd_pair_residue_count": "10652107100820216657603167",
+            "odd_pair_witness": {
+              "mask": 5,
+              "product_unit": "7032454677828850396921864",
+              "residue_mod_p_squared": "663399724538557113251819",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "663399724538557113251819"
+                ],
+                "gcd": [
+                  20640814477101876201954518,
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "21304214201640433315206337",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "8085247760005983101818590",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          },
+          {
+            "collision_clusters": [
+              {
+                "chart": "finite",
+                "mask": 10,
+                "root": "333975711241017974540597291302697073036"
+              }
+            ],
+            "necessary_parity_masks": [
+              0,
+              10
+            ],
+            "odd_pair_residue_count": "649859028748703049521064201685028347570",
+            "odd_pair_witness": {
+              "mask": 10,
+              "product_unit": "682962127539790913485217110212925894905",
+              "residue_mod_p_squared": "333975711241017974540597291302697073036",
+              "s": 0,
+              "status": "CERTIFIED"
+            },
+            "ordinary_simple_pair_collision": true,
+            "pairs": [
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  1
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  1,
+                  2
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  0,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [
+                  "333975711241017974540597291302697073036"
+                ],
+                "gcd": [
+                  965742346256388124501531112067359622107,
+                  1
+                ],
+                "indices": [
+                  1,
+                  3
+                ],
+                "infinity": false
+              },
+              {
+                "finite_roots": [],
+                "gcd": [
+                  1
+                ],
+                "indices": [
+                  2,
+                  3
+                ],
+                "infinity": false
+              }
+            ],
+            "prime": "1299718057497406099042128403370056695143",
+            "prunable": false,
+            "zero_parity_witness": {
+              "mask": 0,
+              "product_unit": "664680867099003548485176132052771343234",
+              "residue_mod_p": "0",
+              "status": "CERTIFIED"
+            }
+          }
+        ],
+        "sage_version": "SageMath version 10.9, Release Date: 2026-05-04",
+        "separate_prime_defect_witnesses": 18
+      }
+    }
+  ],
+  "schema": "rank-jump.collision-defect.v2"
+}
