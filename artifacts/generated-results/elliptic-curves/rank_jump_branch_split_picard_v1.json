@@ -1,0 +1,133 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_local_collision_inputs_v1.json": "440372c18d42243ce447cad470c7bfd6ba5d5c757740e3ce413af6b0d8194f71",
+    "elliptic-curves/rank-jump/BRANCH_SPLIT_PICARD_PROTOCOL.json": "64845b30274463afa8076793426396f2393166fafaec96572fdd7c0f58c9c2ac",
+    "elliptic-curves/rank-jump/branch_split_picard.py": "e5cd0da11af6ccdfa2174a7c8d4834f5f4b91246c0cdc7a5cba82e74d5ca4149"
+  },
+  "boundary": "Function-field statements only. No specialized curve rank or rational solubility follows from full branch splitting alone.",
+  "full_branch_cover_geometric_MW_rank": 1,
+  "generic_geometric_Picard_rank": 19,
+  "input_sha256": "431c490dc857cfbd04e83f67ee5b2caf74cd18d60bdb65f85aea59321bfe11d7",
+  "product_branch_twist_geometric_MW_rank": 0,
+  "reductions": [
+    {
+      "NS_discriminant_squareclass": -19,
+      "algebraic_eigenvalue": 23,
+      "geometric_picard_rank": 20,
+      "p": 23,
+      "quadratic_factor_ascending": [
+        529,
+        30,
+        1
+      ],
+      "root": 1,
+      "status": "RHO_20_REDUCTION",
+      "t1": -7,
+      "t2": 371
+    },
+    {
+      "algebraic_eigenvalue": 23,
+      "p": 23,
+      "quadratic_factor_ascending": [
+        529,
+        46,
+        1
+      ],
+      "root": 8,
+      "status": "UNKNOWN",
+      "t1": -23,
+      "t2": 1587
+    },
+    {
+      "NS_discriminant_squareclass": -19,
+      "algebraic_eigenvalue": -23,
+      "geometric_picard_rank": 20,
+      "p": 23,
+      "quadratic_factor_ascending": [
+        529,
+        -30,
+        1
+      ],
+      "root": 14,
+      "status": "RHO_20_REDUCTION",
+      "t1": 7,
+      "t2": 371
+    },
+    {
+      "NS_discriminant_squareclass": -23,
+      "algebraic_eigenvalue": -59,
+      "geometric_picard_rank": 20,
+      "p": 59,
+      "quadratic_factor_ascending": [
+        3481,
+        26,
+        1
+      ],
+      "root": 32,
+      "status": "RHO_20_REDUCTION",
+      "t1": -85,
+      "t2": -2805
+    },
+    {
+      "algebraic_eigenvalue": -59,
+      "p": 59,
+      "quadratic_factor_ascending": [
+        3481,
+        -118,
+        1
+      ],
+      "root": 37,
+      "status": "UNKNOWN",
+      "t1": 59,
+      "t2": 10443
+    },
+    {
+      "NS_discriminant_squareclass": -23,
+      "algebraic_eigenvalue": 59,
+      "geometric_picard_rank": 20,
+      "p": 59,
+      "quadratic_factor_ascending": [
+        3481,
+        -26,
+        1
+      ],
+      "root": 49,
+      "status": "RHO_20_REDUCTION",
+      "t1": 85,
+      "t2": -2805
+    }
+  ],
+  "schema": "rank-jump.branch-split-picard.v1",
+  "two_place_witness": [
+    {
+      "NS_discriminant_squareclass": -19,
+      "algebraic_eigenvalue": 23,
+      "geometric_picard_rank": 20,
+      "p": 23,
+      "quadratic_factor_ascending": [
+        529,
+        30,
+        1
+      ],
+      "root": 1,
+      "status": "RHO_20_REDUCTION",
+      "t1": -7,
+      "t2": 371
+    },
+    {
+      "NS_discriminant_squareclass": -23,
+      "algebraic_eigenvalue": -59,
+      "geometric_picard_rank": 20,
+      "p": 59,
+      "quadratic_factor_ascending": [
+        3481,
+        26,
+        1
+      ],
+      "root": 32,
+      "status": "RHO_20_REDUCTION",
+      "t1": -85,
+      "t2": -2805
+    }
+  ]
+}

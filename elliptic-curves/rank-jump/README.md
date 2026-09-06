@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: a square norm reduces the torsion field but adds no generic directions](NORM_SQUARE_EVENT_AND_EXTREMAL_K3.md)
+- [Latest: full branch splitting adds no generic rank; a three-character Picard gate](FULL_BRANCH_SPLITTING_AND_THREE_CHARACTER_GATE.md)
+- [A square norm reduces the torsion field but adds no generic directions](NORM_SQUARE_EVENT_AND_EXTREMAL_K3.md)
 - [Independent scalar cup products and simultaneous twist obstructions](INDEPENDENT_SCALAR_CUP_AND_TWIST_BLOCKS.md)
 - [A cup-product ideal class controls strict Jacobian lifting](CUP_IDEAL_AND_STRICT_LIFTING_OBSTRUCTION.md)
 - [The same class factor can be rational or Sha](SAME_CLASS_FACTOR_DIFFERENT_SOLUBILITY.md)
@@ -73,6 +74,7 @@ python3 elliptic-curves/rank-jump/strict_Sha_Artin.py check
 python3 elliptic-curves/rank-jump/strict_cup_obstruction.py check
 python3 elliptic-curves/rank-jump/scalar_cup.py check
 python3 elliptic-curves/rank-jump/norm_square_rank.py check
+python3 elliptic-curves/rank-jump/branch_split_picard.py check
 ```
 
 Optional independent Hilbert-symbol check: `sage -python -m unittest discover -s elliptic-curves/rank-jump -p test_local_collision.py`.

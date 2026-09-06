@@ -1,0 +1,84 @@
+{
+  "counting_software": {
+    "numpy": "1.26.4",
+    "python": "3.12.3"
+  },
+  "failed_verifier_preflight": {
+    "reason": "Raw Sage root order differed from numeric order; the assertion occurred before point-count comparisons. The corrected verifier sorts the roots.",
+    "source": "#!/usr/bin/env python3\n\"\"\"Independent fibre point counts for the branch-character Picard certificate.\"\"\"\nimport argparse\nfrom pathlib import Path\nimport hashlib\nimport struct\nimport retrospective as r\nimport branch_split_picard as experiment\n\n\ndef verify(prime):\n    from sage.all import GF,PolynomialRing,EllipticCurve,ZZ,QQ,pari\n    from sage.version import version\n    data=r.read(experiment.INPUT);assert data[\"bindings\"]==experiment.bindings()\n    raw=next(row for row in data[\"primes\"] if row[\"p\"]==prime)\n    assert raw[\"status\"]==\"COUNTED\"\n    anchor=r.read(experiment.lc.INPUT)[\"anchor\"]\n    A,B=map(int,anchor[\"short_model_ainvariants\"][3:]);p=prime\n    retained={row[\"degree\"]:row for row in raw[\"fields\"]}\n    decoded={degree:experiment.decode(row) for degree,row in retained.items()}\n    Fp=GF(p);R=PolynomialRing(Fp,\"x\");n=retained[2][\"quadratic_nonresidue\"]\n    Fq=GF(p*p,name=\"w\",modulus=R([-n,0,1]));w=Fq.gen()\n    roots=retained[1][\"roots\"];assert roots==retained[2][\"roots\"]\n    assert R([B,A,0,1]).roots(multiplicities=False)==list(map(Fp,roots))\n    independent={1:[],2:[None]*(p*p)};curves=0;singular=0\n\n    def trace(F,u):\n        nonlocal curves,singular\n        rs=[F(t)+u*F(t*t) for t in roots]\n        if len(set(rs))<3:\n            double=next(x for x in rs if rs.count(x)==2)\n            single=next(x for x in rs if rs.count(x)==1)\n            singular+=1\n            return -1 if (double-single).is_square() else 1\n        E=EllipticCurve(F,[0,2*F(A)*u,0,F(A)+3*F(B)*u+F(A*A)*u*u,\n                              F(B)+F(A*B)*u*u-F(B*B)*u**3])\n        curves+=1\n        return int(E.cardinality(algorithm=\"pari\")-F.cardinality()-1)\n\n    for a in range(p):\n        v=trace(Fp,Fp(a));independent[1].append(v)\n        # Independent count in degree two, including the rational base parameters.\n        independent[2][a]=trace(Fq,Fq(a))\n    for b in range(1,(p-1)//2+1):\n        for a in range(p):\n            value=trace(Fq,Fq(a)+Fq(b)*w)\n            independent[2][a+p*b]=value\n            independent[2][a+p*(p-b)]=value\n    assert independent==decoded\n    records=[]\n    for degree,F in ((1,Fp),(2,Fq)):\n        traces=independent[degree];values=[0,0,0]\n        for index,v in enumerate(traces):\n            u=F(index) if degree==1 else F(index%p)+F(index//p)*w\n            gammas=[1-u*F(t) for t in roots]\n            for k in range(3):\n                other=[i for i in range(3) if i!=k]\n                d=gammas[other[0]]*gammas[other[1]]\n                chi=0 if d==0 else (1 if d.is_square() else -1)\n                values[k]+=chi*v\n        assert values==retained[degree][\"residual_H2_traces\"]\n        records.append({\"degree\":degree,\"base_parameters\":len(traces),\n                        \"trace_sha256\":hashlib.sha256(struct.pack(\"<\"+\"h\"*len(traces),*traces)).hexdigest(),\n                        \"residual_H2_traces\":values})\n    report=r.read(experiment.OUTPUT)\n    for row in [x for x in report[\"reductions\"] if x[\"p\"]==p and x[\"status\"]==\"RHO_20_REDUCTION\"]:\n        t=-row[\"quadratic_factor_ascending\"][1]\n        sf=int(ZZ(t*t-4*p*p).squarefree_part())\n        assert sf==row[\"NS_discriminant_squareclass\"]\n        # Over F_(p^2), the residual quadratic is X^2-(t^2-2p^2)X+p^4.\n        normalized=QQ(4)-QQ(t*t)/(p*p)\n        assert normalized>0 and not t%p==0\n        assert int(ZZ((-normalized/(p*p)).numerator()*(-normalized/(p*p)).denominator()).squarefree_part())==sf\n    out={\"prime\":p,\"status\":\"PASS\",\"software\":{\"sage\":version,\"pari\":str(pari.version())},\n         \"smooth_fibre_cardinality_calls\":curves,\"singular_fibre_checks\":singular,\"fields\":records,\n         \"input_sha256\":r.digest(experiment.INPUT.read_bytes()),\n         \"analysis_sha256\":r.digest(experiment.OUTPUT.read_bytes()),\n         \"verifier_sha256\":r.digest(Path(__file__).read_bytes())}\n    print(out)\n    return out\n\n\nif __name__==\"__main__\":\n    p=argparse.ArgumentParser();p.add_argument(\"--prime\",type=int,required=True)\n    p.add_argument(\"--destination\",type=Path)\n    args=p.parse_args();result=verify(args.prime)\n    if args.destination:r.write_new(args.destination,result)\n",
+    "source_sha256": "67052b243bd9624145e453fd7e501851e38dc23dab8ebf2905476acb41f0e19c"
+  },
+  "schema": "rank-jump.branch-split-picard-verification.v1",
+  "verification": [
+    {
+      "analysis_sha256": "cbeeb2e41c3b8085039e0004810f92d7b23f30f7ad7ab65c719bb5c98576df50",
+      "fields": [
+        {
+          "base_parameters": 23,
+          "degree": 1,
+          "residual_H2_traces": [
+            -7,
+            -23,
+            7
+          ],
+          "trace_sha256": "7f9dde9a467e7fd384148d534eefbf249a51a9d878024e4cad4323e4001198b3"
+        },
+        {
+          "base_parameters": 529,
+          "degree": 2,
+          "residual_H2_traces": [
+            371,
+            1587,
+            371
+          ],
+          "trace_sha256": "4e18d551ee733b16b1bee730cce72a73928960d5313a6f696cb8aa127892c021"
+        }
+      ],
+      "input_sha256": "431c490dc857cfbd04e83f67ee5b2caf74cd18d60bdb65f85aea59321bfe11d7",
+      "prime": 23,
+      "singular_fibre_checks": 6,
+      "smooth_fibre_cardinality_calls": 293,
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "status": "PASS",
+      "verifier_sha256": "8def96e9d9013511789fe7c2f9c0d0899eb732dc423c8fb753acc336645f6e99"
+    },
+    {
+      "analysis_sha256": "cbeeb2e41c3b8085039e0004810f92d7b23f30f7ad7ab65c719bb5c98576df50",
+      "fields": [
+        {
+          "base_parameters": 59,
+          "degree": 1,
+          "residual_H2_traces": [
+            -85,
+            59,
+            85
+          ],
+          "trace_sha256": "0e92f42de272bf87d0a5ac8c1bcc93fb35f4fb919479928b6b30e1829fe4a511"
+        },
+        {
+          "base_parameters": 3481,
+          "degree": 2,
+          "residual_H2_traces": [
+            -2805,
+            10443,
+            -2805
+          ],
+          "trace_sha256": "fbaae41e78f4a90fdfaafae1652b5d0fb157118b3f14f72cd75663be550b7217"
+        }
+      ],
+      "input_sha256": "431c490dc857cfbd04e83f67ee5b2caf74cd18d60bdb65f85aea59321bfe11d7",
+      "prime": 59,
+      "singular_fibre_checks": 6,
+      "smooth_fibre_cardinality_calls": 1823,
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "status": "PASS",
+      "verifier_sha256": "8def96e9d9013511789fe7c2f9c0d0899eb732dc423c8fb753acc336645f6e99"
+    }
+  ]
+}

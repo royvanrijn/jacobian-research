@@ -1,0 +1,35 @@
+{
+  "schema": "rank-jump.branch-split-picard-protocol.v1",
+  "question": "Do any product-of-two-branch character spaces contribute generic rank after all sqrt(1-u*theta_i) are adjoined?",
+  "input": "rank_jump_local_collision_inputs_v1.json anchor A,B only",
+  "selection": "The first two primes >3, at most 59, not dividing B*disc(f), where the retained cubic splits completely. All three roots are used at each prime.",
+  "primes": [
+    23,
+    59
+  ],
+  "unblinding": "The splitting roots and the fibre configurations were inspected before freezing. No point counts or Frobenius discriminants at these primes were inspected.",
+  "limits": {
+    "primes": 2,
+    "extension_degrees": [
+      1,
+      2
+    ],
+    "seconds_per_prime": 30,
+    "new_parameter_searches": 0,
+    "new_rational_point_searches": 0,
+    "class_groups": 0,
+    "global_descents": 0
+  },
+  "geometry": {
+    "characters": "d_k=D/(1-u*theta_k), k=0,1,2",
+    "fibres": [
+      "I2*",
+      "I2*",
+      "I2",
+      "I0*"
+    ],
+    "trivial_rank": 19
+  },
+  "endpoint": "Two noncyclotomic reduction certificates with unequal Neron-Severi discriminant squareclasses prove geometric Picard rank 19, hence generic MW rank zero, by specialization and Artin-Tate.",
+  "failure": "Timeouts, ambiguous Frobenius recovery, cyclotomic remainders, or matching discriminant squareclasses are UNKNOWN for the rank-19 endpoint. No endpoint is inferred from a point-search miss."
+}
