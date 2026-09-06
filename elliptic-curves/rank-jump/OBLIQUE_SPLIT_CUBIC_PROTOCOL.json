@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.oblique-split-cubic-protocol.v1",
+  "question": "Can an unequal-ordinate common-cover construction give two independent rational directions on a curve that fails the horizontal norm gate?",
+  "family": "y^2=(x+1)*(x-2)*(x-1/2)+t*x^2; t=n^2",
+  "fixed_anchor_n": 5,
+  "limits": {"seconds": 30, "largest_fingerprint_prime": 199, "new_points_or_parameter_searches": 0},
+  "checks": ["factorization and three explicit common-cover sections", "the line relation among the three sections", "parent and base-changed Kodaira configurations", "geometric and arithmetic generic ranks", "exact independence of the retained three-point subgroup at n=5", "odd inert valuation of -A at 17 excludes horizontal pairs on that same anchor"],
+  "boundary": "One small mechanism control. No production curve rank or prospective candidate selection is claimed. If the fixed independence anchor fails, generic arithmetic independence remains UNKNOWN here."
+}

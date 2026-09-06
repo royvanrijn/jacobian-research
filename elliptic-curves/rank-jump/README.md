@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: an equation-only norm obstruction excludes horizontal blocks on A1/MW16-05](HORIZONTAL_BLOCK_OBSTRUCTION_ON_A1.md)
+- [Latest: an oblique shared-cover block survives the horizontal obstruction](OBLIQUE_BLOCKS_BEYOND_THE_HORIZONTAL_OBSTRUCTION.md)
+- [An equation-only norm obstruction excludes horizontal blocks on A1/MW16-05](HORIZONTAL_BLOCK_OBSTRUCTION_ON_A1.md)
 - [One square condition creates two rational directions, with explicit collapse controls](ONE_SQUARE_CONDITION_TWO_RATIONAL_DIRECTIONS.md)
 - [Generic classes already force the production twist contractions](GENERIC_SUBGROUP_FORCES_TWIST_CONTRACTION.md)
 - [Production twists separate exact incidence contraction from persistent Sha blocks](PRODUCTION_TWIST_INCIDENCE_AND_SOLUBILITY.md)

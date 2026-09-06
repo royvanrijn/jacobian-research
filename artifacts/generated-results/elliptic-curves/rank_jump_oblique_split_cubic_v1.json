@@ -1,0 +1,212 @@
+{
+  "anchor": {
+    "finite_fingerprints": [
+      {
+        "prime": 5,
+        "roots": [
+          1,
+          2,
+          3
+        ],
+        "signatures": [
+          6,
+          5,
+          5
+        ]
+      },
+      {
+        "prime": 29,
+        "roots": [
+          13,
+          16,
+          22
+        ],
+        "signatures": [
+          0,
+          5,
+          6
+        ]
+      },
+      {
+        "prime": 41,
+        "roots": [
+          5,
+          11,
+          13
+        ],
+        "signatures": [
+          6,
+          6,
+          3
+        ]
+      },
+      {
+        "prime": 67,
+        "roots": [
+          19,
+          35,
+          53
+        ],
+        "signatures": [
+          3,
+          3,
+          0
+        ]
+      },
+      {
+        "prime": 157,
+        "roots": [
+          101,
+          137,
+          139
+        ],
+        "signatures": [
+          6,
+          0,
+          6
+        ]
+      },
+      {
+        "prime": 173,
+        "roots": [
+          3,
+          111,
+          138
+        ],
+        "signatures": [
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "prime": 181,
+        "roots": [
+          109,
+          160,
+          180
+        ],
+        "signatures": [
+          3,
+          3,
+          0
+        ]
+      }
+    ],
+    "horizontal_obstruction_prime": 17,
+    "independent_points": [
+      [
+        "0",
+        "8",
+        "1"
+      ],
+      [
+        "-4",
+        "-40",
+        "1"
+      ],
+      [
+        "8",
+        "80",
+        "1"
+      ]
+    ],
+    "integral_ainvariants": [
+      "0",
+      "94",
+      "0",
+      "-24",
+      "64"
+    ],
+    "joint_fingerprints": [
+      1822476,
+      1773402,
+      246250
+    ],
+    "minus_short_A": "2227/12",
+    "n": 5,
+    "original_ainvariants": [
+      "0",
+      "47/2",
+      "0",
+      "-3/2",
+      "1"
+    ],
+    "real_signatures": [
+      0,
+      0,
+      0
+    ],
+    "retained_subgroup_rank": 3,
+    "valuation_minus_A": 1,
+    "whole_curve_rank": "UNKNOWN here"
+  },
+  "base_arithmetic_generic_rank": 3,
+  "base_c4_coefficients": [
+    "108",
+    "0",
+    "-48",
+    "0",
+    "16"
+  ],
+  "base_discriminant_coefficients": [
+    "729",
+    "0",
+    "-972",
+    "0",
+    "324",
+    "0",
+    "-64"
+  ],
+  "base_fibres": [
+    "I1",
+    "I1",
+    "I1",
+    "I1",
+    "I1",
+    "I1",
+    "I6"
+  ],
+  "base_geometric_generic_rank": 3,
+  "bindings": {
+    "elliptic-curves/rank-jump/OBLIQUE_SPLIT_CUBIC_PROTOCOL.json": "b9ee0d3132d60a50d28be997acbbc9453d5bfd0160b65ffa1e7f36b12f554087",
+    "elliptic-curves/rank-jump/oblique_split_cubic.py": "5f0bb1991655601d792f28e8e2f74cb8f687e088f9b6c9134bba9376175f0ae9"
+  },
+  "boundary": "Exact generic ranks and a fixed independent subgroup, not a production rank result or a guarantee for every specialization.",
+  "deck_action_on_R_P_Q": [
+    1,
+    -1,
+    -1
+  ],
+  "line_relation": "(-1,-n)+(2,2*n)+(1/2,n/2)=O",
+  "new_generic_rational_directions": 2,
+  "parent_arithmetic_generic_rank": 1,
+  "parent_c4_coefficients": [
+    "108",
+    "-48",
+    "16"
+  ],
+  "parent_discriminant_coefficients": [
+    "729",
+    "-972",
+    "324",
+    "-64"
+  ],
+  "parent_fibres": [
+    "I1",
+    "I1",
+    "I1",
+    "I3*"
+  ],
+  "parent_geometric_generic_rank": 1,
+  "residual_cubic_coefficients": [
+    "1",
+    "-3/2",
+    "-3/2",
+    "1"
+  ],
+  "schema": "rank-jump.oblique-split-cubic.v1",
+  "software": {
+    "sage": "10.9"
+  }
+}
