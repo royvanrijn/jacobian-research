@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: the residual genus-two solubility factor is absolutely simple](GENUS_TWO_SOLUBILITY_FACTOR_HAS_NO_ELLIPTIC_QUOTIENT.md)
+- [Latest: canonical doubling erases the native solubility class; retain its affine target](CANONICAL_DOUBLING_ERASES_THE_NATIVE_SOLUBILITY_CLASS.md)
+- [The residual genus-two solubility factor is absolutely simple](GENUS_TWO_SOLUBILITY_FACTOR_HAS_NO_ELLIPTIC_QUOTIENT.md)
 - [A genus-two isogeny condition organizes the genus-five simultaneous lift](GENUS_TWO_DESCENT_ORGANIZES_THE_NATIVE_TRIPLE_LIFT.md)
 - [Native equations detect a local relation obstruction without characteristic-zero elimination](DIRECT_NATIVE_RELATION_TEST_GIVES_A_LOCAL_OBSTRUCTION.md)
 - [Matched translates separate a rational component from S12 and local obstructions](MATCHED_TRANSLATES_SEPARATE_RATIONAL_SPLITTING_FROM_LATTICE_CAPACITY.md)
@@ -71,6 +72,7 @@ Retrospective analyses with pinned inputs, independent of the active curve searc
 Replay from the repository root, using Python 3.12 and its standard library:
 
 ```sh
+sage -python elliptic-curves/rank-jump/unpointed_native_descent.py check
 sage -python elliptic-curves/rank-jump/genus_two_absolute_simplicity.py check
 python3 elliptic-curves/rank-jump/genus_two_rank_probe.py check
 sage -python elliptic-curves/rank-jump/verify_native_genus_five_lift.py check

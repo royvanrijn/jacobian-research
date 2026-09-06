@@ -1,0 +1,10 @@
+{
+  "schema":"rank-jump.unpointed-native-descent-protocol.v1",
+  "layer":"solubility",
+  "question":"Does replacing the known-origin Abel-Jacobi embedding by the canonical degree-two divisor map retain the native simultaneous-lift class?",
+  "selection":"Only the fixed h,f,g native triple and the existing primes 131,137. Select one auxiliary twist using the first irreducible native quadratic modulo 131, before inspecting the retained rational lift. The known lift is used only as a retrospective positive certificate.",
+  "method":"Verify the generic doubled-divisor Mumford identity and resultant square identities; compare native classes and doubled-divisor classes on all finite unramified H points over the two finite fields. Prove a local obstruction for the matched twist by irreducibility of its odd-valuation coordinate. Both covers have the identical product quotient H and the identical Richelot isogeny data.",
+  "limits":{"native_triples":1,"auxiliary_twists":1,"finite_field_primes":[131,137],"workers":1,"new_original_rational_parameters":0,"online_requests":0},
+  "failure_semantics":"Finite-field disagreement is not a rational nonlifting-point certificate. The local obstruction concerns the chosen auxiliary twist, not a new original-fibre rank exclusion. The rank and rational-point set of J(H) remain unknown.",
+  "boundary":"Preserve the point-independent affine cover class; do not replace it by a vacuous isogeny condition on a doubled Abel map."
+}
