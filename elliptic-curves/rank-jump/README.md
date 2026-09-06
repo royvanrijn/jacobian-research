@@ -2,6 +2,7 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
+- [Research direction: coverage exclusions, rational/Sha switches, and certified negative controls](RESEARCH_PIVOT_AFTER_THE_CARRIER_PANEL.md)
 - [Latest: all 11 degree-six/eight triple incidences occur on the +4 control, with none on the tested +5...+11 fibres](LOW_DEGREE_TRIPLE_RELATIONS_CONCENTRATE_ON_THE_PLUS4_CONTROL.md)
 - [Uniform triple-relation comparison across 165 frozen addresses](../../artifacts/generated-results/elliptic-curves/rank_jump_low_degree_triple_discrimination_v1.csv)
 - [A uniform rational-relation census finds 18 pair events on moderate gains and a degree-six barrier for all tested triples](DEGREE_ONE_RELATIONS_DO_NOT_EXPLAIN_THE_LARGEST_JUMPS.md)
