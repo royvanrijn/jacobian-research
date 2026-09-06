@@ -1,0 +1,510 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+    "artifacts/generated-results/elliptic-curves/rank_jump_matched103b2_class_boundary_v1.json": "e5c56597dea9cbebb15bd8cf389c4adcbc334a2ca48b14723e03156de4005d95",
+    "elliptic-curves/cas/prepare_small_conductor_norm_form.py": "968f6c88cabad6d3b0800ca51d0d7fad3b3048338746d3db60272342d5135f84",
+    "elliptic-curves/rank-jump/MATCHED103B2_NORM_RELATION_PROTOCOL.json": "6066e6274f6b2c4e702365cb218926a5e0f08590604f56061ecc990ad14cd57d",
+    "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+    "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+    "elliptic-curves/rank-jump/matched103b2_norm_relations.py": "d98d6754768ad0e072dd84ba2a4443b6714c47b5572df5b3ca7a64c39d62f576",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "rows": [
+    {
+      "form": {
+        "SL2_matrix": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "binary_coefficients_descending": [
+          "-24022707749808768000",
+          "-96512011038895717121872009",
+          "8054357367311050620513939680136",
+          "3595436276279670501174534306497760735"
+        ],
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+          "artifacts/generated-results/elliptic-curves/rank_jump_matched103b2_class_boundary_v1.json": "e5c56597dea9cbebb15bd8cf389c4adcbc334a2ca48b14723e03156de4005d95",
+          "elliptic-curves/cas/prepare_small_conductor_norm_form.py": "968f6c88cabad6d3b0800ca51d0d7fad3b3048338746d3db60272342d5135f84",
+          "elliptic-curves/rank-jump/MATCHED103B2_NORM_RELATION_PROTOCOL.json": "6066e6274f6b2c4e702365cb218926a5e0f08590604f56061ecc990ad14cd57d",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/matched103b2_norm_relations.py": "d98d6754768ad0e072dd84ba2a4443b6714c47b5572df5b3ca7a64c39d62f576",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "coefficient_bits": {
+          "binary": 122,
+          "monic": 256
+        },
+        "cubic_ascending": [
+          "459798035878455093232228830426767673713384291610531875475248934630879256705557172859695005696",
+          "-114876416156497841392085873824025260407305754404554357401649152",
+          "0",
+          "1"
+        ],
+        "field_discriminant": "14590302306182795653540689285522140640458760308968582781406375102424908251282509249852942194910335295630558857209436",
+        "fixed_a": "-24022707749808768000",
+        "initial_binary_coefficients": [
+          -24022707749808768000,
+          -96512011038895717121872009,
+          8054357367311050620513939680136,
+          3595436276279670501174534306497760735
+        ],
+        "maximal_order_basis": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "-1/3",
+            "1/186624",
+            "0"
+          ],
+          [
+            "-9895030694214226323552866859539205819046957275040081/108102184874139456000",
+            "96512011038895717121872009/13449641433300934557696000",
+            "1/836675294282784536965152768000"
+          ]
+        ],
+        "monic_coefficients_descending": [
+          "1",
+          "-1",
+          "-3298343564738075441184288953179735273015652425013360",
+          "-70739930837673454889634211147636057652461218193906795086144061970706503443008"
+        ],
+        "reduction_history": [],
+        "status": "PASS",
+        "w_ascending": [
+          "-96512011038895717121872009/3",
+          "1/186624",
+          "0"
+        ]
+      },
+      "ideal": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+          "artifacts/generated-results/elliptic-curves/rank_jump_matched103b2_class_boundary_v1.json": "e5c56597dea9cbebb15bd8cf389c4adcbc334a2ca48b14723e03156de4005d95",
+          "elliptic-curves/cas/prepare_small_conductor_norm_form.py": "968f6c88cabad6d3b0800ca51d0d7fad3b3048338746d3db60272342d5135f84",
+          "elliptic-curves/rank-jump/MATCHED103B2_NORM_RELATION_PROTOCOL.json": "6066e6274f6b2c4e702365cb218926a5e0f08590604f56061ecc990ad14cd57d",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/matched103b2_norm_relations.py": "d98d6754768ad0e072dd84ba2a4443b6714c47b5572df5b3ca7a64c39d62f576",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "independent_strict_classes": 0,
+        "scope": "Empty frozen input span, not absence of field classes.",
+        "status": "NO_SMOOTH_RELATIONS",
+        "verified_principal_relations": 0
+      },
+      "norm": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+          "artifacts/generated-results/elliptic-curves/rank_jump_matched103b2_class_boundary_v1.json": "e5c56597dea9cbebb15bd8cf389c4adcbc334a2ca48b14723e03156de4005d95",
+          "elliptic-curves/cas/prepare_small_conductor_norm_form.py": "968f6c88cabad6d3b0800ca51d0d7fad3b3048338746d3db60272342d5135f84",
+          "elliptic-curves/rank-jump/MATCHED103B2_NORM_RELATION_PROTOCOL.json": "6066e6274f6b2c4e702365cb218926a5e0f08590604f56061ecc990ad14cd57d",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/matched103b2_norm_relations.py": "d98d6754768ad0e072dd84ba2a4443b6714c47b5572df5b3ca7a64c39d62f576",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "rows": [
+          {
+            "arm": "reduced_monic",
+            "count": 5039,
+            "digest": "88cadfa8a00ed26c87435d8dcc2fdc5a8abe74c96c7325756b07174b8a471f81",
+            "smallest_remainders": [
+              [
+                174,
+                61,
+                46,
+                "12564802514407398629937067155126089475115691054628457"
+              ],
+              [
+                179,
+                51,
+                64,
+                "422665494993381091675924543283821568630392484561517757"
+              ],
+              [
+                179,
+                58,
+                41,
+                "655787366536280661257734182291993684356489153452037711"
+              ],
+              [
+                184,
+                26,
+                41,
+                "12527221112566950344228363559929096212484136762278485637"
+              ],
+              [
+                186,
+                -39,
+                1,
+                "61378589229674628742042307061710199419016822124287289223"
+              ],
+              [
+                186,
+                7,
+                13,
+                "50739535576574594934885710915112625812630464768896149043"
+              ],
+              [
+                191,
+                -38,
+                45,
+                "2830518972690541127674586551155282801011206581739003056299"
+              ],
+              [
+                191,
+                61,
+                29,
+                "1574947420125432999245481243939357997827894007783376430877"
+              ],
+              [
+                192,
+                -35,
+                1,
+                "3641154755755430339411610863899876626880148900398710775549"
+              ],
+              [
+                193,
+                -10,
+                49,
+                "7068050777794893361350574223946955660004860108269692139841"
+              ]
+            ],
+            "smooth_count": 0,
+            "smooth_values": []
+          },
+          {
+            "arm": "maximal_order_binary",
+            "count": 5039,
+            "digest": "ca565acbb846b17f0f3e65e796a1692c4e92f66ba1a46a6e36564c5f47b489a6",
+            "smallest_remainders": [
+              [
+                20,
+                57,
+                8,
+                "735311"
+              ],
+              [
+                43,
+                -21,
+                20,
+                "6285518663449"
+              ],
+              [
+                45,
+                56,
+                27,
+                "25171927930811"
+              ],
+              [
+                52,
+                41,
+                18,
+                "2472245654784817"
+              ],
+              [
+                60,
+                -7,
+                40,
+                "1120993276676352251"
+              ],
+              [
+                60,
+                48,
+                17,
+                "976873975301611147"
+              ],
+              [
+                62,
+                -47,
+                30,
+                "2385746963930223371"
+              ],
+              [
+                62,
+                15,
+                11,
+                "2636090732356611433"
+              ],
+              [
+                63,
+                -27,
+                8,
+                "7886112206556948877"
+              ],
+              [
+                63,
+                -25,
+                12,
+                "7918207127629293311"
+              ]
+            ],
+            "smooth_count": 0,
+            "smooth_values": []
+          }
+        ],
+        "status": "PASS"
+      },
+      "token": "case-02"
+    },
+    {
+      "form": {
+        "SL2_matrix": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "binary_coefficients_descending": [
+          "-85060933750",
+          "-57074484855409228168813638",
+          "337293724462189451592866040525476979136",
+          "25146503440334596142580170172577423723477925627193765"
+        ],
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+          "artifacts/generated-results/elliptic-curves/rank_jump_matched103b2_class_boundary_v1.json": "e5c56597dea9cbebb15bd8cf389c4adcbc334a2ca48b14723e03156de4005d95",
+          "elliptic-curves/cas/prepare_small_conductor_norm_form.py": "968f6c88cabad6d3b0800ca51d0d7fad3b3048338746d3db60272342d5135f84",
+          "elliptic-curves/rank-jump/MATCHED103B2_NORM_RELATION_PROTOCOL.json": "6066e6274f6b2c4e702365cb218926a5e0f08590604f56061ecc990ad14cd57d",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/matched103b2_norm_relations.py": "d98d6754768ad0e072dd84ba2a4443b6714c47b5572df5b3ca7a64c39d62f576",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "coefficient_bits": {
+          "binary": 175,
+          "monic": 253
+        },
+        "cubic_ascending": [
+          "381664885616257214546541849896510216371250870015961858542589838711805024662644",
+          "-10030705136887933496511669087385028342787853978545132",
+          "0",
+          "1"
+        ],
+        "field_discriminant": "19702258628924164697238264975577282927528103525354910377996393723498391487354590572271823006682570241623655768666614147351153582644",
+        "fixed_a": "-85060933750",
+        "initial_binary_coefficients": [
+          -85060933750,
+          -57074484855409228168813638,
+          337293724462189451592866040525476979136,
+          25146503440334596142580170172577423723477925627193765
+        ],
+        "maximal_order_basis": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1/3",
+            "0"
+          ],
+          [
+            "-371507597662516055426358114347593642325490250101741/42530466875",
+            "3170804714189401564934091/42530466875",
+            "1/765548403750"
+          ]
+        ],
+        "monic_coefficients_descending": [
+          "1",
+          "0",
+          "-1114522792987548166279074343042780926976428219838348",
+          "-14135736504305822760983031477648526532268550741331920686762586618955741654172"
+        ],
+        "reduction_history": [],
+        "status": "PASS",
+        "w_ascending": [
+          "-19024828285136409389604546",
+          "1/3",
+          "0"
+        ]
+      },
+      "ideal": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+          "artifacts/generated-results/elliptic-curves/rank_jump_matched103b2_class_boundary_v1.json": "e5c56597dea9cbebb15bd8cf389c4adcbc334a2ca48b14723e03156de4005d95",
+          "elliptic-curves/cas/prepare_small_conductor_norm_form.py": "968f6c88cabad6d3b0800ca51d0d7fad3b3048338746d3db60272342d5135f84",
+          "elliptic-curves/rank-jump/MATCHED103B2_NORM_RELATION_PROTOCOL.json": "6066e6274f6b2c4e702365cb218926a5e0f08590604f56061ecc990ad14cd57d",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/matched103b2_norm_relations.py": "d98d6754768ad0e072dd84ba2a4443b6714c47b5572df5b3ca7a64c39d62f576",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "independent_strict_classes": 0,
+        "scope": "Empty frozen input span, not absence of field classes.",
+        "status": "NO_SMOOTH_RELATIONS",
+        "verified_principal_relations": 0
+      },
+      "norm": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+          "artifacts/generated-results/elliptic-curves/rank_jump_matched103b2_class_boundary_v1.json": "e5c56597dea9cbebb15bd8cf389c4adcbc334a2ca48b14723e03156de4005d95",
+          "elliptic-curves/cas/prepare_small_conductor_norm_form.py": "968f6c88cabad6d3b0800ca51d0d7fad3b3048338746d3db60272342d5135f84",
+          "elliptic-curves/rank-jump/MATCHED103B2_NORM_RELATION_PROTOCOL.json": "6066e6274f6b2c4e702365cb218926a5e0f08590604f56061ecc990ad14cd57d",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/matched103b2_norm_relations.py": "d98d6754768ad0e072dd84ba2a4443b6714c47b5572df5b3ca7a64c39d62f576",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "rows": [
+          {
+            "arm": "reduced_monic",
+            "count": 5039,
+            "digest": "8979bc1cfed432c64b6568b1446070b849a1317da788b512c7ff4228af642468",
+            "smallest_remainders": [
+              [
+                182,
+                -13,
+                38,
+                "3149059397648733877976300317377005999972043702754069373"
+              ],
+              [
+                182,
+                37,
+                28,
+                "4727647992528776499051590855113671627911041008278268179"
+              ],
+              [
+                183,
+                -55,
+                28,
+                "8089275174575541928890723036950205267006983858633137099"
+              ],
+              [
+                186,
+                9,
+                1,
+                "89765271049352245634082389723320677230375574732886424519"
+              ],
+              [
+                188,
+                -16,
+                5,
+                "230755106489408138728632030757315771403577271017157278871"
+              ],
+              [
+                188,
+                19,
+                5,
+                "367693089874856602607439542242589090686525793511567124697"
+              ],
+              [
+                188,
+                50,
+                23,
+                "330417866458546684620994374893850478358511317467756982833"
+              ],
+              [
+                190,
+                27,
+                59,
+                "1016331489552581004200437717261025638669433553540053222887"
+              ],
+              [
+                191,
+                19,
+                27,
+                "1795692116889001574670893073634294702894633029697706431529"
+              ],
+              [
+                191,
+                53,
+                7,
+                "2077411106407729828857746299512270505115979753019239778243"
+              ]
+            ],
+            "smooth_count": 0,
+            "smooth_values": []
+          },
+          {
+            "arm": "maximal_order_binary",
+            "count": 5039,
+            "digest": "1eb6fc1deb201d44dd7b4d05600834ff24e472b3d22a4a13e98decb3b667d042",
+            "smallest_remainders": [
+              [
+                91,
+                -41,
+                57,
+                "2067114388081286182061582011"
+              ],
+              [
+                100,
+                7,
+                9,
+                "1213865159933331998850308609713"
+              ],
+              [
+                100,
+                49,
+                53,
+                "882122832268456998447100860763"
+              ],
+              [
+                101,
+                17,
+                1,
+                "1747401351800714103388551559313"
+              ],
+              [
+                105,
+                -36,
+                53,
+                "34423642677320105604073357219291"
+              ],
+              [
+                105,
+                54,
+                17,
+                "31747761299239965184671945777391"
+              ],
+              [
+                107,
+                -17,
+                2,
+                "123432568945810001967504911417239"
+              ],
+              [
+                107,
+                -11,
+                43,
+                "109834066100143901855549988105023"
+              ],
+              [
+                111,
+                49,
+                6,
+                "2254034907602731918188532190769949"
+              ],
+              [
+                112,
+                -51,
+                1,
+                "4081857739137922986975191684013013"
+              ]
+            ],
+            "smooth_count": 0,
+            "smooth_values": []
+          }
+        ],
+        "status": "PASS"
+      },
+      "token": "case-03"
+    }
+  ],
+  "schema": "rank-jump.matched103b2-norm-relations.v1"
+}

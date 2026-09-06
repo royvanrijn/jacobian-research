@@ -1,5 +1,9 @@
 # The fresh103b2 jump requires at least nine strict rational directions
 
+Follow-up: [an independent norm-relation pilot](MATCHED103B2_INDEPENDENT_NORM_RELATION_GATE.md)
+produces one verified localized ideal relation but no additional strict class.
+It separates the remaining relation, generation and solubility gates.
+
 The fixed103b2 comparison now isolates where the additional classes must
 occur. On the fresh rank-at-least27 fibre at **3726/881**, at most **one**
 additional Selmer direction can come from the local boundary beyond the

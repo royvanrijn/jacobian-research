@@ -1,0 +1,377 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_matched103b2_class_boundary_v1.json": "e5c56597dea9cbebb15bd8cf389c4adcbc334a2ca48b14723e03156de4005d95",
+    "artifacts/generated-results/elliptic-curves/rank_jump_matched103b2_norm_relations_v1.json": "c37b746d5f9e91dbb8296b9e406a0c00bbda97c2c08583d4dcda9fd3987bb28e",
+    "elliptic-curves/rank-jump/MATCHED103B2_RETAINED_NORM_AUDIT_PROTOCOL.json": "0ed4923620eb7e5228cb283986ac34b33c9208d2b011068b37c01c1c6f7b8759",
+    "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+    "elliptic-curves/rank-jump/matched103b2_norm_relations.py": "d98d6754768ad0e072dd84ba2a4443b6714c47b5572df5b3ca7a64c39d62f576",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_matched103b2_norm_relations.py": "bef0e763ca2fefd7eb15e261fc6663efaa15b606cd03c8dbfd03c6ad40352045"
+  },
+  "rows": [
+    {
+      "Bach_GRH_generating_cutoff": 843814,
+      "Bach_interval": "[843813.734610872713835504983 +/- 4.29e-22]",
+      "audited_ideal_factors_within_GRH_cutoff": true,
+      "boundary": "No strict incidence claim from norm smoothness. Prime-ideal generation at the displayed cutoff is conditional on GRH; the finite ideal identities are unconditional.",
+      "coefficient_bits": {
+        "binary": 122,
+        "monic": 256
+      },
+      "independent_additional_strict_classes": 0,
+      "localized_relation_rank": 1,
+      "norm_digest_replays": [
+        {
+          "arm": "reduced_monic",
+          "replayed_values": 5039,
+          "smooth_values": 0
+        },
+        {
+          "arm": "maximal_order_binary",
+          "replayed_values": 5039,
+          "smooth_values": 0
+        }
+      ],
+      "retained_principal_relations": [
+        {
+          "beta_ascending": [
+            "-772100196194190954274304072/3",
+            "1/23328",
+            "0"
+          ],
+          "full_norm": "1062361696648156571986752218273698293637067153718441224336802732994068480000000",
+          "is_strict_class_candidate": false,
+          "localized_odd_prime_ideal_support": [
+            {
+              "exponent": 1,
+              "norm": "491",
+              "prime": 491,
+              "prime_index": 0,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 1,
+              "norm": "569",
+              "prime": 569,
+              "prime_index": 0,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 1,
+              "norm": "22307",
+              "prime": 22307,
+              "prime_index": 1,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 1,
+              "norm": "30557",
+              "prime": 30557,
+              "prime_index": 0,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 1,
+              "norm": "37831",
+              "prime": 37831,
+              "prime_index": 0,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 1,
+              "norm": "276587",
+              "prime": 276587,
+              "prime_index": 2,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 1,
+              "norm": "735311",
+              "prime": 735311,
+              "prime_index": 0,
+              "residue_degree": 1
+            }
+          ],
+          "m": 57,
+          "n": 8,
+          "norm_factors": [
+            [
+              2,
+              23
+            ],
+            [
+              3,
+              9
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              7,
+              5
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              17,
+              4
+            ],
+            [
+              41,
+              2
+            ],
+            [
+              43,
+              2
+            ],
+            [
+              59,
+              2
+            ],
+            [
+              491,
+              1
+            ],
+            [
+              569,
+              1
+            ],
+            [
+              1223,
+              2
+            ],
+            [
+              22307,
+              1
+            ],
+            [
+              30557,
+              1
+            ],
+            [
+              37831,
+              1
+            ],
+            [
+              276587,
+              1
+            ],
+            [
+              735311,
+              1
+            ]
+          ],
+          "polynomial_value": "1840892753242322607553731410011937150520",
+          "principal_ideal_factors": [
+            {
+              "exponent": 20,
+              "norm": "2",
+              "prime": 2,
+              "prime_index": 0,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 3,
+              "norm": "2",
+              "prime": 2,
+              "prime_index": 1,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 9,
+              "norm": "3",
+              "prime": 3,
+              "prime_index": 0,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 3,
+              "norm": "5",
+              "prime": 5,
+              "prime_index": 1,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 4,
+              "norm": "5",
+              "prime": 5,
+              "prime_index": 2,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 2,
+              "norm": "7",
+              "prime": 7,
+              "prime_index": 0,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 3,
+              "norm": "7",
+              "prime": 7,
+              "prime_index": 1,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 2,
+              "norm": "121",
+              "prime": 11,
+              "prime_index": 1,
+              "residue_degree": 2
+            },
+            {
+              "exponent": 1,
+              "norm": "13",
+              "prime": 13,
+              "prime_index": 0,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 1,
+              "norm": "13",
+              "prime": 13,
+              "prime_index": 2,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 2,
+              "norm": "17",
+              "prime": 17,
+              "prime_index": 1,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 2,
+              "norm": "17",
+              "prime": 17,
+              "prime_index": 2,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 1,
+              "norm": "41",
+              "prime": 41,
+              "prime_index": 0,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 1,
+              "norm": "41",
+              "prime": 41,
+              "prime_index": 1,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 2,
+              "norm": "43",
+              "prime": 43,
+              "prime_index": 1,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 1,
+              "norm": "3481",
+              "prime": 59,
+              "prime_index": 1,
+              "residue_degree": 2
+            },
+            {
+              "exponent": 1,
+              "norm": "491",
+              "prime": 491,
+              "prime_index": 0,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 1,
+              "norm": "569",
+              "prime": 569,
+              "prime_index": 0,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 2,
+              "norm": "1223",
+              "prime": 1223,
+              "prime_index": 0,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 1,
+              "norm": "22307",
+              "prime": 22307,
+              "prime_index": 1,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 1,
+              "norm": "30557",
+              "prime": 30557,
+              "prime_index": 0,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 1,
+              "norm": "37831",
+              "prime": 37831,
+              "prime_index": 0,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 1,
+              "norm": "276587",
+              "prime": 276587,
+              "prime_index": 2,
+              "residue_degree": 1
+            },
+            {
+              "exponent": 1,
+              "norm": "735311",
+              "prime": 735311,
+              "prime_index": 0,
+              "residue_degree": 1
+            }
+          ],
+          "principal_relation_verified": true,
+          "residual": "735311"
+        }
+      ],
+      "token": "case-02"
+    },
+    {
+      "Bach_GRH_generating_cutoff": 1080103,
+      "Bach_interval": "[1080102.316414835388805271878 +/- 2.73e-22]",
+      "audited_ideal_factors_within_GRH_cutoff": true,
+      "boundary": "No strict incidence claim from norm smoothness. Prime-ideal generation at the displayed cutoff is conditional on GRH; the finite ideal identities are unconditional.",
+      "coefficient_bits": {
+        "binary": 175,
+        "monic": 253
+      },
+      "independent_additional_strict_classes": 0,
+      "localized_relation_rank": 0,
+      "norm_digest_replays": [
+        {
+          "arm": "reduced_monic",
+          "replayed_values": 5039,
+          "smooth_values": 0
+        },
+        {
+          "arm": "maximal_order_binary",
+          "replayed_values": 5039,
+          "smooth_values": 0
+        }
+      ],
+      "retained_principal_relations": [],
+      "token": "case-03"
+    }
+  ],
+  "schema": "rank-jump.matched103b2-retained-norm-audit.v1",
+  "status": "PASS"
+}

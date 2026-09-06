@@ -1,0 +1,13 @@
+{
+  "schema": "rank-jump.matched103b2-norm-relation-protocol.v1",
+  "cases": ["case-02", "case-03"],
+  "purpose": "Test an independent source of strict classes: exact reduced maximal-order binary norm elements, principal-ideal parity dependencies and strict local filtering on two fixed fibres.",
+  "arithmetic_input_policy": "Equation-derived cubic, certified maximal order and bad-prime support only. Generic sections may be used to verify that the inherited strict kernel is zero, never exceptional points or their classes. High/low labels are not input to the norm enumeration.",
+  "box": 64,
+  "smooth_bound": 400000,
+  "arms": ["reduced_monic", "maximal_order_binary"],
+  "selection": "Every coprime pair -64<=m<=64, 1<=n<=64 in lexicographic order in both arms. Retain every smooth value and a digest of all exact values and remainders. Only binary-arm elements enter the new principal-relation stage, at most32 in frozen order.",
+  "limits": {"form_seconds": 15, "norm_seconds": 45, "ideal_seconds": 45, "maximum_relations": 32, "pari_stack_bytes": 268435456, "workers": 1, "point_searches": 0, "new_parameters": 0},
+  "gates": "A smooth polynomial value is not a class relation until the full principal ideal, including the fixed norm square factor, is verified. A dependency is not a nontrivial Selmer class until strict local conditions and nonsquareness are certified. No factor-base generation or class-group upper bound is inferred.",
+  "failure": "Checkpoint stages and preserve resource-limited results as UNKNOWN. No larger box, smoothness cutoff or memory retry is authorized by this protocol."
+}

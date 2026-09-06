@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.matched103b2-retained-norm-audit-protocol.v1",
+  "source": "rank_jump_matched103b2_norm_relations_v1.json",
+  "selection": "Only entries already saved among the ten smallest binary-arm remainders of each fixed fibre, with remainder bit length at most32. No new norm elements or parameter values.",
+  "limits": {"worker_seconds": 45, "maximum_remainder_bits": 32, "workers": 1, "pari_stack_bytes": 268435456},
+  "purpose": "Replay the complete fixed-box digests; factor retained small residuals; certify any resulting principal ideals including the fixed norm square factor. Determine whether localization leaves a nonzero relation. Compute the conservative Bach generating cutoff under GRH solely to distinguish generation from smoothness.",
+  "boundary": "A principal relation is not a nontrivial class. No exhaustive generating ideal set, class-rank bound, additional Selmer class, new elliptic point, or rank predictor follows. GRH is not assumed for the norm or ideal identities."
+}
