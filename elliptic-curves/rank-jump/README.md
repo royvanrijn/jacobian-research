@@ -2,7 +2,9 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: a 326-address comparison finds full defect span and no consistent ordering of jump size by native cover count](SOLUBLE_COVER_STRUCTURE_DOES_NOT_TRACK_JUMP_SIZE.md)
+- [Latest: a uniform rational-relation census finds 18 pair events on moderate gains and a degree-six barrier for all tested triples](DEGREE_ONE_RELATIONS_DO_NOT_EXPLAIN_THE_LARGEST_JUMPS.md)
+- [Uniform relation counts across the 165 published-R17 addresses](../../artifacts/generated-results/elliptic-curves/rank_jump_degree_one_relation_discrimination_v1.csv)
+- [A 326-address comparison finds full defect span and no consistent ordering of jump size by native cover count](SOLUBLE_COVER_STRUCTURE_DOES_NOT_TRACK_JUMP_SIZE.md)
 - [Joined multi-fibre metrics, including explicit coverage gaps](../../artifacts/generated-results/elliptic-curves/rank_jump_fibre_discrimination_metrics_v1.csv)
 - [The collision defects are pairwise but span every native character in both soluble and obstructed systems](COLLISION_DEFECTS_SPAN_ALL_NATIVE_CHARACTERS.md)
 - [Fixed collision primes give the exact remaining lift condition on rational product points](COLLISION_PRIMES_CONTROL_THE_REMAINING_LIFT.md)
@@ -79,6 +81,9 @@ Retrospective analyses with pinned inputs, independent of the active curve searc
 Replay from the repository root, using Python 3.12 and its standard library:
 
 ```sh
+sage -python elliptic-curves/rank-jump/verify_degree_one_relation_panel.py check
+sage -python elliptic-curves/rank-jump/triple_degree_barrier.py check
+python3 elliptic-curves/rank-jump/report_degree_one_relation_panel.py check
 sage -python elliptic-curves/rank-jump/verify_fibre_discrimination.py check
 python3 elliptic-curves/rank-jump/report_fibre_discrimination.py check
 python3 elliptic-curves/rank-jump/verify_collision_defect.py check

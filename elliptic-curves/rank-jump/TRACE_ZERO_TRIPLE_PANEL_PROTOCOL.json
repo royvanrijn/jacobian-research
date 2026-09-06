@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.trace-zero-triple-panel-protocol.v1",
+  "layer": "solubility",
+  "question": "Do any co-split triples in the fixed panel have an even sum of native trace vectors, permitting the zero residual trace R=0 and a degree-two relation intersection?",
+  "rule": "For every triple of distinct native covers, test wi+wj+wk in2M. This criterion is independent of branch signs. If it holds, S=(wi+wj+wk)/2 is a rational generic section. On the certified disjoint-branch geometry the translated pair-image intersection has degree h(2S-w)+2=2. Check all eight branch sums at the existing parameter, without computing any new intersection parameter.",
+  "selection": "All co-split triples at all165 fixed published-R17 addresses. Use no gain labels, exceptional coordinates, or ranked subset of triples.",
+  "limits": {"maximum_triples": 5000, "workers": 1, "seconds": 60, "new_original_parameters": 0, "new_point_searches": 0},
+  "failure_semantics": "Trace parity alone is an incidence condition for a low-degree relation scheme, not proof that its quadratic algebra splits. If no triple qualifies, report that fact; do not invent a global-solubility obstruction for other triples. Geometric degree-two claims require the same image-class hypotheses as the prior triple-intersection proof."
+}

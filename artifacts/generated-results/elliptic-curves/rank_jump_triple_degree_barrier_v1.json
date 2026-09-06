@@ -1,0 +1,98 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_degree_one_relation_panel_inputs_v1.json": "cfce66efccad015d07ac41deb0b86b84537419a5d6cc229c8916934c8f7b965d",
+    "artifacts/generated-results/elliptic-curves/rank_jump_degree_one_relation_panel_verification_v1.json": "5a540b9a602669784cd13b3cc584f20f83744382b48d34f66def76f2994c69a5",
+    "artifacts/generated-results/elliptic-curves/rank_jump_trace_zero_triple_panel_v1.json": "e29454688dacf146f12c81f4a8b994df3571411604297a1b57112877503e0983",
+    "elliptic-curves/rank-jump/fibre_discrimination.py": "f39739a73659bc15132f9169e0525f1723c10931ea6c065732a72bd2b9e4ee82",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/triple_degree_barrier.py": "6180294f9fa2f947c1ebebff4b29fec32e06aff8294332a76c56719083c28d97"
+  },
+  "boundary": "Total proper intersection length is at least6 for all integer generic translates of the tested triples. This does not exclude degree-one rational components of a higher-degree intersection algebra. No claim about triples outside the frozen panel.",
+  "class_identity": "B_tau=(2,2,tau), D_z=(h(z)/2+2,4,2z), B_tau.D_z=h(z-tau)+2; h(tau)=10.",
+  "generic_hypotheses": {
+    "all_native_branch_divisors_disjoint_from_singular_fibres": true,
+    "co_split_pair_branch_gcds_checked": 519,
+    "generic_lattice_minimum": 4,
+    "minimum_proof": "Independent LDL verification inherited from the bound verifier input.",
+    "native_quadratic_maps": 118,
+    "native_trace_height": 10,
+    "rootless_nodal_fibres": 24
+  },
+  "rows": [
+    {
+      "all_signed_trace_sums_nonzero_mod_2M": true,
+      "block_key": "published-R17:-2/377",
+      "total_intersection_degree_lower_bound": 6,
+      "triple_count": 20
+    },
+    {
+      "all_signed_trace_sums_nonzero_mod_2M": true,
+      "block_key": "published-R17:-2300/843",
+      "total_intersection_degree_lower_bound": 6,
+      "triple_count": 1
+    },
+    {
+      "all_signed_trace_sums_nonzero_mod_2M": true,
+      "block_key": "published-R17:-288/65",
+      "total_intersection_degree_lower_bound": 6,
+      "triple_count": 4
+    },
+    {
+      "all_signed_trace_sums_nonzero_mod_2M": true,
+      "block_key": "published-R17:-308/251",
+      "total_intersection_degree_lower_bound": 6,
+      "triple_count": 1
+    },
+    {
+      "all_signed_trace_sums_nonzero_mod_2M": true,
+      "block_key": "published-R17:-3115/2756",
+      "total_intersection_degree_lower_bound": 6,
+      "triple_count": 1
+    },
+    {
+      "all_signed_trace_sums_nonzero_mod_2M": true,
+      "block_key": "published-R17:-4112/1937",
+      "total_intersection_degree_lower_bound": 6,
+      "triple_count": 4
+    },
+    {
+      "all_signed_trace_sums_nonzero_mod_2M": true,
+      "block_key": "published-R17:-70/61",
+      "total_intersection_degree_lower_bound": 6,
+      "triple_count": 286
+    },
+    {
+      "all_signed_trace_sums_nonzero_mod_2M": true,
+      "block_key": "published-R17:28/117",
+      "total_intersection_degree_lower_bound": 6,
+      "triple_count": 165
+    },
+    {
+      "all_signed_trace_sums_nonzero_mod_2M": true,
+      "block_key": "published-R17:3/8",
+      "total_intersection_degree_lower_bound": 6,
+      "triple_count": 2300
+    },
+    {
+      "all_signed_trace_sums_nonzero_mod_2M": true,
+      "block_key": "published-R17:33/119",
+      "total_intersection_degree_lower_bound": 6,
+      "triple_count": 35
+    },
+    {
+      "all_signed_trace_sums_nonzero_mod_2M": true,
+      "block_key": "published-R17:44/35",
+      "total_intersection_degree_lower_bound": 6,
+      "triple_count": 1
+    },
+    {
+      "all_signed_trace_sums_nonzero_mod_2M": true,
+      "block_key": "published-R17:8/39",
+      "total_intersection_degree_lower_bound": 6,
+      "triple_count": 35
+    }
+  ],
+  "schema": "rank-jump.triple-degree-barrier.v1",
+  "status": "PASS",
+  "triple_count": 2853
+}

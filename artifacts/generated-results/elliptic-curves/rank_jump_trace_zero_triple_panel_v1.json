@@ -1,0 +1,839 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_degree_one_relation_panel_inputs_v1.json": "cfce66efccad015d07ac41deb0b86b84537419a5d6cc229c8916934c8f7b965d",
+    "elliptic-curves/rank-jump/TRACE_ZERO_TRIPLE_PANEL_PROTOCOL.json": "3824aae2660398159156a0a5d588aa0d5b52fad26e73ca9a9c4f566f6712a479",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/trace_zero_triple_panel.py": "054a3bdd623cd2026f35c24c0b73ff0201449e75844b533afe6bfef8b28b34f8"
+  },
+  "boundary": "This stage checks only integral trace parity, before any relation or point evaluation. A qualifying triple still needs a rational-solubility test.",
+  "rows": [
+    {
+      "block_key": "published-R17:-102202/53157",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-10358/5863",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-10481/8914",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-10485/8323",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-10565/5352",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-1121/9525",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-113593/59592",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-11412/11111",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-1193/1560",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-12009/6278",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-124285/64402",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-1264/1047",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-1291/11334",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-1318/2675",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-14057/6370",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-14287/5405",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-14466/15721",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-14809/1336",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-14817/4960",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-15109/7728",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-1513/3735",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-15266/10685",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-15472/8615",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-1561/3133",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-15937/10028",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-1599/3584",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-16246/13195",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-168541/87360",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-174459/92092",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-182255/93054",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-1853/270",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-190909/99008",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-1929/3242",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-198633/101894",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-2/377",
+      "co_split_triples": 20,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-202703/106054",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-2221/1361",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-2300/843",
+      "co_split_triples": 1,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-2416/9",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-278/2615",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-28367/15470",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-288/65",
+      "co_split_triples": 4,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-3/148",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-308/251",
+      "co_split_triples": 1,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-3086/3229",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-3106/4753",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-3115/2756",
+      "co_split_triples": 1,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-3162/2135",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-3359/9754",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-3381/3083",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-33841/18655",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-339/7",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-3459/2327",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-3712/10017",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-373/12028",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-3871/1618",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-3895/3749",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-3958/1267",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-4021/2640",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-4035/1852",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-4112/1937",
+      "co_split_triples": 4,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-4113/7910",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-41346/21827",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-41757/22880",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-4253/2347",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-430/7371",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-45321/23621",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-4659/2815",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-511/2711",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-5195/5602",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-5284/455",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-5353/4106",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-55104/28535",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-560/1609",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-5643/6760",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-585/1223",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-5877/1690",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-601/1570",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-636/3209",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-639/2575",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-63985/35256",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-649/10913",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-6726/2305",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-695/97",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-70/61",
+      "co_split_triples": 286,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-70665/36751",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-70688/36829",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-73681/39130",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-7540/2317",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-75641/41314",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-7634/2859",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-7726/2611",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-79649/42198",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-8382/14489",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-8387/1750",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-841/8544",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-848/9373",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-8921/2715",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-894/749",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-903/470",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-94057/48789",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-94199/50700",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-9529/5471",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:-9795/13063",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:10126/11795",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:10126/15275",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:1101/2566",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:11744/9849",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:11992/8347",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:1207/1194",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:1217/151",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:1229/894",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:12344/8655",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:1263/710",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:129/70",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:1348/1431",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:13591/9675",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:13833/10535",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:13969/15813",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:1452/7817",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:14771/6673",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:14981/15381",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:1501/732",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:1576/2331",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:15850/13287",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:1641/15448",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:1966/3615",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:2051/2045",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:2108/1939",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:2139/3865",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:2263/1084",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:2291/2392",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:2456/135",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:2762/3203",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:2798/7213",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:28/117",
+      "co_split_triples": 165,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:3/8",
+      "co_split_triples": 2300,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:3056/609",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:3243/1708",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:33/119",
+      "co_split_triples": 35,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:3419/3564",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:4120/14827",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:4197/4819",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:4250/9093",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:4251/1375",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:4298/8873",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:44/35",
+      "co_split_triples": 1,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:444/2623",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:461/4420",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:5653/7526",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:5735/11074",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:611/4020",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:6695/1353",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:7127/1266",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:754/3427",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:8/39",
+      "co_split_triples": 35,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:825/2224",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:85/2016",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:8524/2211",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:856/1327",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:8637/3040",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:9181/3402",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:9446/3605",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:9629/2857",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    },
+    {
+      "block_key": "published-R17:9783/7559",
+      "co_split_triples": 0,
+      "trace_even_triples": []
+    }
+  ],
+  "schema": "rank-jump.trace-zero-triple-panel.v1",
+  "trace_even_count": 0,
+  "triple_tests": 2853
+}

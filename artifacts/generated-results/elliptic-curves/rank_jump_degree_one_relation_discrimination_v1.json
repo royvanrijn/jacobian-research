@@ -1,0 +1,4462 @@
+{
+  "addresses_with_degree_one_incidence": 6,
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_degree_one_relation_panel_inputs_v1.json": "cfce66efccad015d07ac41deb0b86b84537419a5d6cc229c8916934c8f7b965d",
+    "artifacts/generated-results/elliptic-curves/rank_jump_degree_one_relation_panel_v1.json": "b04e6af7250b94920c55d2c967eb5ddf3c6202c357e0bf42b0746308a526aac8",
+    "artifacts/generated-results/elliptic-curves/rank_jump_degree_one_relation_panel_verification_v1.json": "5a540b9a602669784cd13b3cc584f20f83744382b48d34f66def76f2994c69a5",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fibre_discrimination_v1.json": "71931b238a946c24ba9e14c4c7dcfee479aea75b68526b1ba6f369bae3e9c032",
+    "artifacts/generated-results/elliptic-curves/rank_jump_trace_zero_triple_panel_v1.json": "e29454688dacf146f12c81f4a8b994df3571411604297a1b57112877503e0983",
+    "elliptic-curves/rank-jump/report_degree_one_relation_panel.py": "f2e431d074be6255d2eba8a55724a2600f35c69b85cf38d678caccdcdae14bd5",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "boundary": "A uniform degree-one dictionary on the complete published-R17 atlas, evaluated at frozen nonbranch fibres. Counts are not all low-degree rational components. Pair relations bound only the constructed native subgroup. The triple lower bound concerns total intersection degree; linear factors of higher-degree schemes remain possible.",
+  "degree_one_incidence_count": 18,
+  "eligible_pair_count": 131,
+  "relation_incidence_counts_by_best_retained_gain": {
+    "0": 0,
+    "1": 0,
+    "10": 0,
+    "11": 0,
+    "2": 0,
+    "3": 0,
+    "4": 7,
+    "5": 8,
+    "6": 2,
+    "7": 0,
+    "8": 1,
+    "9": 0
+  },
+  "rows": [
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-102202/53157",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-032"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-102202/53157",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 2,
+      "block_key": "published-R17:-10358/5863",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:41"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-10358/5863",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-10481/8914",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:59"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-10481/8914",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-10485/8323",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:18"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-10485/8323",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 1,
+      "block_key": "published-R17:-10565/5352",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-023"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-10565/5352",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-1121/9525",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:1"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-1121/9525",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-113593/59592",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-005"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-113593/59592",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-11412/11111",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:61"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-11412/11111",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 6,
+      "block_key": "published-R17:-1193/1560",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 1,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 1,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:published-R17:-1193/1560",
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:35"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-1193/1560",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 1,
+      "block_key": "published-R17:-12009/6278",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-031"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-12009/6278",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-124285/64402",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-025"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-124285/64402",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 6,
+      "block_key": "published-R17:-1264/1047",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:published-R17:-1264/1047",
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:5"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-1264/1047",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-1291/11334",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:53"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-1291/11334",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 3,
+      "block_key": "published-R17:-1318/2675",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 2,
+      "eligible_degree_one_pairs": 1,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 2,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:25"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-1318/2675",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 2,
+      "block_key": "published-R17:-14057/6370",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-014"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-14057/6370",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-14287/5405",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:47"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-14287/5405",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-14466/15721",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:29"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-14466/15721",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-14809/1336",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:30"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-14809/1336",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-14817/4960",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:20"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-14817/4960",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 1,
+      "block_key": "published-R17:-15109/7728",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-030"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-15109/7728",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-1513/3735",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:40"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-1513/3735",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-15266/10685",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:62"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-15266/10685",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 2,
+      "block_key": "published-R17:-15472/8615",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 1,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 1,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:48"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-15472/8615",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-1561/3133",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:published-R17:-1561/3133",
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:58"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-1561/3133",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 1,
+      "block_key": "published-R17:-15937/10028",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:33"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-15937/10028",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-1599/3584",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:60"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-1599/3584",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-16246/13195",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:43"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-16246/13195",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-168541/87360",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-024"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-168541/87360",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-174459/92092",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-006"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-174459/92092",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-182255/93054",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-004"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-182255/93054",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-1853/270",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:55"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-1853/270",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-190909/99008",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-008"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-190909/99008",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-1929/3242",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:31"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-1929/3242",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-198633/101894",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-016"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-198633/101894",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 8,
+      "block_key": "published-R17:-2/377",
+      "canonical_signed_relations": [],
+      "co_split_triples": 20,
+      "compatible_cover_count": 6,
+      "eligible_degree_one_pairs": 6,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 6,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:control-r25"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-2/377",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": 6,
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-202703/106054",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-011"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-202703/106054",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-2221/1361",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:46"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-2221/1361",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 7,
+      "block_key": "published-R17:-2300/843",
+      "canonical_signed_relations": [],
+      "co_split_triples": 1,
+      "compatible_cover_count": 3,
+      "eligible_degree_one_pairs": 2,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 3,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:published-R17:-2300/843",
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:33"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-2300/843",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": 6,
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 4,
+      "block_key": "published-R17:-2416/9",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 2,
+      "eligible_degree_one_pairs": 1,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 2,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:52"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-2416/9",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-278/2615",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:36"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-278/2615",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 3,
+      "block_key": "published-R17:-28367/15470",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-001"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-28367/15470",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 7,
+      "block_key": "published-R17:-288/65",
+      "canonical_signed_relations": [],
+      "co_split_triples": 4,
+      "compatible_cover_count": 4,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 4,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-003"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-288/65",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": 6,
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 5,
+      "block_key": "published-R17:-3/148",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 1,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 1,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:published-R17:-3/148"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-3/148",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 9,
+      "block_key": "published-R17:-308/251",
+      "canonical_signed_relations": [],
+      "co_split_triples": 1,
+      "compatible_cover_count": 3,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 3,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:control-r26"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-308/251",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": 6,
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-3086/3229",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:29"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-3086/3229",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-3106/4753",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 1,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 1,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:22"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-3106/4753",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 5,
+      "block_key": "published-R17:-3115/2756",
+      "canonical_signed_relations": [],
+      "co_split_triples": 1,
+      "compatible_cover_count": 3,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 3,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-020"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-3115/2756",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": 6,
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-3162/2135",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:43"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-3162/2135",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-3359/9754",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:51"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-3359/9754",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-3381/3083",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:45"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-3381/3083",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-33841/18655",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-017"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-33841/18655",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 3,
+      "block_key": "published-R17:-339/7",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:44"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-339/7",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-3459/2327",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:27"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-3459/2327",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-3712/10017",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:49"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-3712/10017",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-373/12028",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:15"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-373/12028",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-3871/1618",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:24"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-3871/1618",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 6,
+      "block_key": "published-R17:-3895/3749",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:published-R17:-3895/3749",
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:15"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-3895/3749",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-3958/1267",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:53"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-3958/1267",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-4021/2640",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:51"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-4021/2640",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 2,
+      "block_key": "published-R17:-4035/1852",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 1,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 1,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:28"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-4035/1852",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 8,
+      "block_key": "published-R17:-4112/1937",
+      "canonical_signed_relations": [
+        {
+          "branch_sum_translate_word": [
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1,
+            0
+          ],
+          "canonical_signed_relation_generic_word": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            -1,
+            1,
+            0
+          ],
+          "generic_word": [
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1,
+            0
+          ],
+          "indices": [
+            0,
+            2
+          ],
+          "labels": [
+            "orbit-0911e",
+            "orbit-1795d"
+          ],
+          "signs": [
+            -1,
+            -1
+          ]
+        }
+      ],
+      "co_split_triples": 4,
+      "compatible_cover_count": 4,
+      "eligible_degree_one_pairs": 2,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 3,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-009"
+      ],
+      "pair_relation_rank": 1,
+      "parameter": "-4112/1937",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 1,
+      "triple_total_intersection_degree_lower_bound": 6,
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-4113/7910",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:39"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-4113/7910",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-41346/21827",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-012"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-41346/21827",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 1,
+      "block_key": "published-R17:-41757/22880",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-007"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-41757/22880",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 2,
+      "block_key": "published-R17:-4253/2347",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:26"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-4253/2347",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 2,
+      "block_key": "published-R17:-430/7371",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 1,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 1,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:37"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-430/7371",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 3,
+      "block_key": "published-R17:-45321/23621",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-019"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-45321/23621",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-4659/2815",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:60"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-4659/2815",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 1,
+      "block_key": "published-R17:-511/2711",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:57"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-511/2711",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-5195/5602",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:24"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-5195/5602",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 2,
+      "block_key": "published-R17:-5284/455",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 1,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 1,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:12"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-5284/455",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-5353/4106",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:27"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-5353/4106",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-55104/28535",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-028"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-55104/28535",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 2,
+      "block_key": "published-R17:-560/1609",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:20"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-560/1609",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-5643/6760",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 1,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 1,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:nagao-0001"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-5643/6760",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 2,
+      "block_key": "published-R17:-585/1223",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:21"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-585/1223",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 5,
+      "block_key": "published-R17:-5877/1690",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 2,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 2,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-027"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-5877/1690",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 1,
+      "block_key": "published-R17:-601/1570",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:34"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-601/1570",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 1,
+      "block_key": "published-R17:-636/3209",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:2"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-636/3209",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 1,
+      "block_key": "published-R17:-639/2575",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:47"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-639/2575",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 1,
+      "block_key": "published-R17:-63985/35256",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-021"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-63985/35256",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-649/10913",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:35"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-649/10913",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 1,
+      "block_key": "published-R17:-6726/2305",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 1,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 1,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:32"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-6726/2305",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 7,
+      "block_key": "published-R17:-695/97",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 1,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 1,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:published-R17:-695/97"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-695/97",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 5,
+      "block_key": "published-R17:-70/61",
+      "canonical_signed_relations": [
+        {
+          "branch_sum_translate_word": [
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "canonical_signed_relation_generic_word": [
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1,
+            0,
+            0,
+            -1,
+            -1,
+            -1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "generic_word": [
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "indices": [
+            0,
+            3
+          ],
+          "labels": [
+            "orbit-00c69",
+            "orbit-0826a"
+          ],
+          "signs": [
+            1,
+            -1
+          ]
+        },
+        {
+          "branch_sum_translate_word": [
+            -2,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "canonical_signed_relation_generic_word": [
+            -2,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "generic_word": [
+            -2,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "indices": [
+            0,
+            9
+          ],
+          "labels": [
+            "orbit-00c69",
+            "orbit-13f69"
+          ],
+          "signs": [
+            1,
+            1
+          ]
+        },
+        {
+          "branch_sum_translate_word": [
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "canonical_signed_relation_generic_word": [
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "generic_word": [
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "indices": [
+            3,
+            9
+          ],
+          "labels": [
+            "orbit-0826a",
+            "orbit-13f69"
+          ],
+          "signs": [
+            1,
+            1
+          ]
+        },
+        {
+          "branch_sum_translate_word": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            -1,
+            -1,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1
+          ],
+          "canonical_signed_relation_generic_word": [
+            -1,
+            1,
+            0,
+            -1,
+            1,
+            -2,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            -1
+          ],
+          "generic_word": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            -1,
+            -1,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1
+          ],
+          "indices": [
+            4,
+            6
+          ],
+          "labels": [
+            "orbit-09954",
+            "orbit-0cbe9"
+          ],
+          "signs": [
+            -1,
+            1
+          ]
+        },
+        {
+          "branch_sum_translate_word": [
+            -2,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            -2,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -1
+          ],
+          "canonical_signed_relation_generic_word": [
+            -2,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            -2,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -1
+          ],
+          "generic_word": [
+            -2,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            -2,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -1
+          ],
+          "indices": [
+            6,
+            7
+          ],
+          "labels": [
+            "orbit-0cbe9",
+            "orbit-0feac"
+          ],
+          "signs": [
+            1,
+            1
+          ]
+        },
+        {
+          "branch_sum_translate_word": [
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            -1
+          ],
+          "canonical_signed_relation_generic_word": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            0,
+            1,
+            1,
+            -1,
+            -1,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "generic_word": [
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            -1
+          ],
+          "indices": [
+            6,
+            12
+          ],
+          "labels": [
+            "orbit-0cbe9",
+            "orbit-1f117"
+          ],
+          "signs": [
+            -1,
+            1
+          ]
+        }
+      ],
+      "co_split_triples": 286,
+      "compatible_cover_count": 13,
+      "eligible_degree_one_pairs": 25,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 8,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:published-R17:-70/61"
+      ],
+      "pair_relation_rank": 5,
+      "parameter": "-70/61",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 6,
+      "triple_total_intersection_degree_lower_bound": 6,
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 2,
+      "block_key": "published-R17:-70665/36751",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 1,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 1,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-002"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-70665/36751",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-70688/36829",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-022"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-70688/36829",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-73681/39130",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-013"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-73681/39130",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 5,
+      "block_key": "published-R17:-7540/2317",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:published-R17:-7540/2317",
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:63"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-7540/2317",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-75641/41314",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-029"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-75641/41314",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-7634/2859",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:nagao-0004"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-7634/2859",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 1,
+      "block_key": "published-R17:-7726/2611",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 1,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 1,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:40"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-7726/2611",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-79649/42198",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-018"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-79649/42198",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-8382/14489",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:50"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-8382/14489",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-8387/1750",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:55"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-8387/1750",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-841/8544",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:nagao-0005"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-841/8544",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-848/9373",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:6"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-848/9373",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-8921/2715",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:14"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-8921/2715",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 3,
+      "block_key": "published-R17:-894/749",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 1,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 1,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:63"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-894/749",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 6,
+      "block_key": "published-R17:-903/470",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-026"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-903/470",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-94057/48789",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-010"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-94057/48789",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:-94199/50700",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_completed_cohort_panel_v1.json:08234-015"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-94199/50700",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 11,
+      "block_key": "published-R17:-9529/5471",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 1,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 1,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:control-r28"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-9529/5471",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 1,
+      "block_key": "published-R17:-9795/13063",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:28"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "-9795/13063",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:10126/11795",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:58"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "10126/11795",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:10126/15275",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:4"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "10126/15275",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 1,
+      "block_key": "published-R17:1101/2566",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:18"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "1101/2566",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:11744/9849",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:3"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "11744/9849",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:11992/8347",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:16"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "11992/8347",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 2,
+      "block_key": "published-R17:1207/1194",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:38"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "1207/1194",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:1217/151",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:nagao-0008"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "1217/151",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 6,
+      "block_key": "published-R17:1229/894",
+      "canonical_signed_relations": [
+        {
+          "branch_sum_translate_word": [
+            -1,
+            -1,
+            0,
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "canonical_signed_relation_generic_word": [
+            1,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            -1
+          ],
+          "generic_word": [
+            -1,
+            -1,
+            0,
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "indices": [
+            0,
+            1
+          ],
+          "labels": [
+            "orbit-002d9",
+            "orbit-1ebfa"
+          ],
+          "signs": [
+            -1,
+            -1
+          ]
+        }
+      ],
+      "co_split_triples": 0,
+      "compatible_cover_count": 2,
+      "eligible_degree_one_pairs": 1,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 1,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:published-R17:1229/894",
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:41"
+      ],
+      "pair_relation_rank": 1,
+      "parameter": "1229/894",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 1,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:12344/8655",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:36"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "12344/8655",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 2,
+      "block_key": "published-R17:1263/710",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 1,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 1,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:39"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "1263/710",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 6,
+      "block_key": "published-R17:129/70",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:published-R17:129/70",
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:42"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "129/70",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 5,
+      "block_key": "published-R17:1348/1431",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 1,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 1,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:published-R17:1348/1431",
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:48"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "1348/1431",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:13591/9675",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:17"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "13591/9675",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:13833/10535",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:9"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "13833/10535",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:13969/15813",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:5"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "13969/15813",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:1452/7817",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:nagao-0002"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "1452/7817",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:14771/6673",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:46"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "14771/6673",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:14981/15381",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:44"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "14981/15381",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 3,
+      "block_key": "published-R17:1501/732",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 1,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 1,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:11"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "1501/732",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:1576/2331",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:23"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "1576/2331",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:15850/13287",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:8"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "15850/13287",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:1641/15448",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:56"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "1641/15448",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:1966/3615",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:49"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "1966/3615",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 1,
+      "block_key": "published-R17:2051/2045",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:19"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "2051/2045",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:2108/1939",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:62"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "2108/1939",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 1,
+      "block_key": "published-R17:2139/3865",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:50"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "2139/3865",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:2263/1084",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:26"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "2263/1084",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 6,
+      "block_key": "published-R17:2291/2392",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:published-R17:2291/2392",
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:7"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "2291/2392",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 10,
+      "block_key": "published-R17:2456/135",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 2,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 2,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:control-r27"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "2456/135",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 2,
+      "block_key": "published-R17:2762/3203",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:56"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "2762/3203",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:2798/7213",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:21"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "2798/7213",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 6,
+      "block_key": "published-R17:28/117",
+      "canonical_signed_relations": [
+        {
+          "branch_sum_translate_word": [
+            -1,
+            -1,
+            0,
+            0,
+            -2,
+            1,
+            -1,
+            1,
+            1,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "canonical_signed_relation_generic_word": [
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            -1,
+            -1,
+            -1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "generic_word": [
+            -1,
+            -1,
+            0,
+            0,
+            -2,
+            1,
+            -1,
+            1,
+            1,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "indices": [
+            1,
+            10
+          ],
+          "labels": [
+            "orbit-094ea",
+            "orbit-1fd92"
+          ],
+          "signs": [
+            -1,
+            1
+          ]
+        }
+      ],
+      "co_split_triples": 165,
+      "compatible_cover_count": 11,
+      "eligible_degree_one_pairs": 13,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 10,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:08234:-506/9"
+      ],
+      "pair_relation_rank": 1,
+      "parameter": "28/117",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 1,
+      "triple_total_intersection_degree_lower_bound": 6,
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 4,
+      "block_key": "published-R17:3/8",
+      "canonical_signed_relations": [
+        {
+          "branch_sum_translate_word": [
+            -2,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -2,
+            0,
+            0,
+            -1,
+            -2,
+            -1,
+            -2,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "canonical_signed_relation_generic_word": [
+            0,
+            0,
+            0,
+            1,
+            -1,
+            2,
+            -1,
+            0,
+            1,
+            -1,
+            -2,
+            0,
+            -1,
+            0,
+            1,
+            1,
+            -1
+          ],
+          "generic_word": [
+            -2,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -2,
+            0,
+            0,
+            -1,
+            -2,
+            -1,
+            -2,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "indices": [
+            1,
+            8
+          ],
+          "labels": [
+            "orbit-01926",
+            "orbit-05980"
+          ],
+          "signs": [
+            -1,
+            1
+          ]
+        },
+        {
+          "branch_sum_translate_word": [
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            -1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "canonical_signed_relation_generic_word": [
+            0,
+            -1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "generic_word": [
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            -1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "indices": [
+            5,
+            17
+          ],
+          "labels": [
+            "orbit-04d17",
+            "orbit-0eba4"
+          ],
+          "signs": [
+            -1,
+            1
+          ]
+        },
+        {
+          "branch_sum_translate_word": [
+            0,
+            0,
+            -1,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "canonical_signed_relation_generic_word": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            1,
+            0,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            -1,
+            -1,
+            1
+          ],
+          "generic_word": [
+            0,
+            0,
+            -1,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "indices": [
+            6,
+            7
+          ],
+          "labels": [
+            "orbit-05443",
+            "orbit-055ad"
+          ],
+          "signs": [
+            1,
+            -1
+          ]
+        },
+        {
+          "branch_sum_translate_word": [
+            -1,
+            0,
+            0,
+            0,
+            -2,
+            2,
+            -2,
+            0,
+            1,
+            0,
+            -3,
+            -1,
+            -1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "canonical_signed_relation_generic_word": [
+            -1,
+            0,
+            1,
+            1,
+            -1,
+            2,
+            -2,
+            0,
+            1,
+            -1,
+            -2,
+            -1,
+            -2,
+            0,
+            1,
+            1,
+            -2
+          ],
+          "generic_word": [
+            -1,
+            0,
+            0,
+            0,
+            -2,
+            2,
+            -2,
+            0,
+            1,
+            0,
+            -3,
+            -1,
+            -1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "indices": [
+            6,
+            14
+          ],
+          "labels": [
+            "orbit-05443",
+            "orbit-090a3"
+          ],
+          "signs": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "branch_sum_translate_word": [
+            0,
+            0,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "canonical_signed_relation_generic_word": [
+            0,
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "generic_word": [
+            0,
+            0,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "indices": [
+            7,
+            15
+          ],
+          "labels": [
+            "orbit-055ad",
+            "orbit-0976c"
+          ],
+          "signs": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "branch_sum_translate_word": [
+            -1,
+            -1,
+            1,
+            -1,
+            -1,
+            1,
+            -1,
+            0,
+            1,
+            0,
+            -1,
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "canonical_signed_relation_generic_word": [
+            0,
+            -1,
+            1,
+            0,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            -1
+          ],
+          "generic_word": [
+            -1,
+            -1,
+            1,
+            -1,
+            -1,
+            1,
+            -1,
+            0,
+            1,
+            0,
+            -1,
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "indices": [
+            12,
+            22
+          ],
+          "labels": [
+            "orbit-0888a",
+            "orbit-18fd5"
+          ],
+          "signs": [
+            1,
+            -1
+          ]
+        },
+        {
+          "branch_sum_translate_word": [
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "canonical_signed_relation_generic_word": [
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "generic_word": [
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "indices": [
+            17,
+            22
+          ],
+          "labels": [
+            "orbit-0eba4",
+            "orbit-18fd5"
+          ],
+          "signs": [
+            1,
+            1
+          ]
+        }
+      ],
+      "co_split_triples": 2300,
+      "compatible_cover_count": 25,
+      "eligible_degree_one_pairs": 69,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 18,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:control-r21-t3_8"
+      ],
+      "pair_relation_rank": 7,
+      "parameter": "3/8",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 7,
+      "triple_total_intersection_degree_lower_bound": 6,
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 1,
+      "block_key": "published-R17:3056/609",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:32"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "3056/609",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 1,
+      "block_key": "published-R17:3243/1708",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:22"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "3243/1708",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 7,
+      "block_key": "published-R17:33/119",
+      "canonical_signed_relations": [],
+      "co_split_triples": 35,
+      "compatible_cover_count": 7,
+      "eligible_degree_one_pairs": 6,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 7,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:published-R17:33/119"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "33/119",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": 6,
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 2,
+      "block_key": "published-R17:3419/3564",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 1,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 1,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:54"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "3419/3564",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:4120/14827",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:31"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "4120/14827",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:4197/4819",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:38"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "4197/4819",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:4250/9093",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:7"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "4250/9093",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:4251/1375",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:42"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "4251/1375",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:4298/8873",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:nagao-0003"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "4298/8873",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 6,
+      "block_key": "published-R17:44/35",
+      "canonical_signed_relations": [],
+      "co_split_triples": 1,
+      "compatible_cover_count": 3,
+      "eligible_degree_one_pairs": 1,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 3,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:published-R17:44/35"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "44/35",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": 6,
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:444/2623",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:6"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "444/2623",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:461/4420",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:nagao-0006"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "461/4420",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:5653/7526",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:11"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "5653/7526",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 2,
+      "block_key": "published-R17:5735/11074",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 1,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 1,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:52"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "5735/11074",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:611/4020",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:61"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "611/4020",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:6695/1353",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:nagao-0007"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "6695/1353",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 2,
+      "block_key": "published-R17:7127/1266",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:45"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "7127/1266",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:754/3427",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:59"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "754/3427",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 5,
+      "block_key": "published-R17:8/39",
+      "canonical_signed_relations": [
+        {
+          "branch_sum_translate_word": [
+            -2,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1,
+            0,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "canonical_signed_relation_generic_word": [
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            2,
+            -2,
+            0,
+            1,
+            0,
+            -1,
+            -1,
+            -1,
+            0,
+            0,
+            1,
+            -1
+          ],
+          "generic_word": [
+            -2,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1,
+            0,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "indices": [
+            0,
+            1
+          ],
+          "labels": [
+            "orbit-090cb",
+            "orbit-0b946"
+          ],
+          "signs": [
+            1,
+            -1
+          ]
+        },
+        {
+          "branch_sum_translate_word": [
+            -2,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1,
+            0,
+            1,
+            0,
+            -2,
+            -1,
+            -2,
+            0,
+            1,
+            0,
+            -1
+          ],
+          "canonical_signed_relation_generic_word": [
+            -2,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1,
+            0,
+            1,
+            0,
+            -2,
+            -1,
+            -2,
+            0,
+            1,
+            0,
+            -1
+          ],
+          "generic_word": [
+            -2,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1,
+            0,
+            1,
+            0,
+            -2,
+            -1,
+            -2,
+            0,
+            1,
+            0,
+            -1
+          ],
+          "indices": [
+            1,
+            5
+          ],
+          "labels": [
+            "orbit-0b946",
+            "orbit-15df0"
+          ],
+          "signs": [
+            1,
+            1
+          ]
+        }
+      ],
+      "co_split_triples": 35,
+      "compatible_cover_count": 7,
+      "eligible_degree_one_pairs": 4,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 5,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:published-R17:8/39"
+      ],
+      "pair_relation_rank": 2,
+      "parameter": "8/39",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 2,
+      "triple_total_intersection_degree_lower_bound": 6,
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 2,
+      "block_key": "published-R17:825/2224",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:10"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "825/2224",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:85/2016",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:16"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "85/2016",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:8524/2211",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:19"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "8524/2211",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:856/1327",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-top64-v1:30"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "856/1327",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 2,
+      "block_key": "published-R17:8637/3040",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 1,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 1,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:57"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "8637/3040",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:9181/3402",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:23"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "9181/3402",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:9446/3605",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:nagao-0010"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "9446/3605",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:9629/2857",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "compact_r17_initial_measurements_v1.json:compact-r17-h16384-v1:13"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "9629/2857",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    },
+    {
+      "best_retained_quotient_rank": 0,
+      "block_key": "published-R17:9783/7559",
+      "canonical_signed_relations": [],
+      "co_split_triples": 0,
+      "compatible_cover_count": 0,
+      "eligible_degree_one_pairs": 0,
+      "full_curve_rank": "UNKNOWN",
+      "generic_subgroup_rank": 17,
+      "native_quotient_upper_bound": 0,
+      "observation_ids": [
+        "rank_jump_retrospective_report_v1.json:nagao-0009"
+      ],
+      "pair_relation_rank": 0,
+      "parameter": "9783/7559",
+      "rational_degree_one_components_at_parameter_mod_conjugation": 0,
+      "triple_total_intersection_degree_lower_bound": "NOT_APPLICABLE",
+      "zero_residual_triples": 0
+    }
+  ],
+  "schema": "rank-jump.degree-one-relation-discrimination.v1",
+  "status": "PASS"
+}
