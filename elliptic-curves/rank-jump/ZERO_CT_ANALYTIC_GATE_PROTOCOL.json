@@ -1,0 +1,13 @@
+{
+  "schema": "rank-jump.zero-ct-analytic-gate-protocol.v1",
+  "question": "Do the two zero-full-CT twists have a rigorously nonzero first L derivative, which would force rank one and higher Sha rather than rank three?",
+  "twists": [1, 41, 97, 113],
+  "roles": ["known rank-one calibration", "frozen zero-full-CT case", "frozen CT-rank-two control", "frozen zero-full-CT case"],
+  "base_model": [0, -11, 0, -14, -1],
+  "limits": {"seconds_per_worker": 60, "precision_bits": 96, "terms_per_sqrt_conductor": 4, "maximum_terms": 300000, "new_point_searches": 0, "new_descents": 0},
+  "series": "L'(1)=2 sum a_n/n * Gamma(0,2*pi*n/sqrt(N)) for root number -1",
+  "tail_bound": "4*exp(-c*(K+1))/(c*(K+1)*(1-exp(-c))), using |a_n|<=2n and E1(x)<=exp(-x)/x",
+  "rounding": "Arb real balls at the frozen precision; record outward rational endpoints including the analytic tail.",
+  "failure_semantics": "An interval containing zero is inconclusive, not analytic rank three. A timeout remains UNKNOWN. No precision, cutoff, point-search or parameter expansion to obtain a desired outcome.",
+  "selection": "The two zero-CT cases and the nonzero-CT case were fixed by the completed governing table. Their ranks have not been inspected. The d=1 analytic calibration was inspected before this freeze."
+}

@@ -1,0 +1,422 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_full_small_governing_block_v1.json": "53aff6be1a8c0d5e58cd393d3d6851c2da317a3a3fe8799716ef909299cb0199",
+    "elliptic-curves/rank-jump/ZERO_CT_ANALYTIC_GATE_PROTOCOL.json": "2e3a0ec821c987f6cd01ae0a47621b00d291e39f0c93fe0ac74d4846d27f75c8",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/zero_ct_analytic_gate.py": "ec925a10a8f4ccab8eb6e9c20ddca76de893f91beadf474898786ddfe1f1856f"
+  },
+  "boundary": "Rank-one conclusions only where a rigorous derivative interval excludes zero. No point search, new twist population, or numerical higher-rank claim.",
+  "rows": [
+    {
+      "L_derivative_interval": {
+        "display": "[9.098275109 +/- 4.01e-10]",
+        "lower": "45052476183464775600062529783/4951760157141521099596496896",
+        "upper": "45052476185443593597426008311/4951760157141521099596496896"
+      },
+      "Sha_finite": true,
+      "algebraic_rank": 1,
+      "analytic_rank": 1,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_full_small_governing_block_v1.json": "53aff6be1a8c0d5e58cd393d3d6851c2da317a3a3fe8799716ef909299cb0199",
+        "elliptic-curves/rank-jump/ZERO_CT_ANALYTIC_GATE_PROTOCOL.json": "2e3a0ec821c987f6cd01ae0a47621b00d291e39f0c93fe0ac74d4846d27f75c8",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+        "elliptic-curves/rank-jump/zero_ct_analytic_gate.py": "ec925a10a8f4ccab8eb6e9c20ddca76de893f91beadf474898786ddfe1f1856f"
+      },
+      "boundary": "No rational point is constructed. Containing zero is inconclusive. The coefficient and local arithmetic use exact CAS computations; the sum and tail include directed interval error.",
+      "coefficient_sha256": "79ad1ef78f6fc582f124577aca209b5d5e755020bcc642fbaffdf342411d782d",
+      "conductor": "425104",
+      "first_coefficients": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        -2,
+        0,
+        3,
+        0,
+        -2,
+        0,
+        5,
+        0,
+        -2,
+        0,
+        -2,
+        0,
+        -6,
+        0,
+        1,
+        0,
+        3,
+        0,
+        8,
+        0
+      ],
+      "local_data": [
+        {
+          "conductor_exponent": 4,
+          "kodaira": "II",
+          "local_root_number": -1,
+          "prime": 2,
+          "tamagawa_number": 1
+        },
+        {
+          "conductor_exponent": 2,
+          "kodaira": "II",
+          "local_root_number": -1,
+          "prime": 163,
+          "tamagawa_number": 1
+        }
+      ],
+      "minimal_model": [
+        0,
+        1,
+        0,
+        -54,
+        -169
+      ],
+      "model": [
+        0,
+        -11,
+        0,
+        -14,
+        -1
+      ],
+      "nonzero_derivative_certified": true,
+      "partial_sum": {
+        "display": "[9.098275109201050647910 +/- 3.20e-22]",
+        "lower": "45052476184454184598743762543/4951760157141521099596496896",
+        "upper": "45052476184454184598744775551/4951760157141521099596496896"
+      },
+      "rank_theorem": "Modularity and Gross-Zagier/Kolyvagin when root number -1 and the derivative interval excludes zero.",
+      "role": "known rank-one calibration",
+      "root_number": -1,
+      "schema": "rank-jump.zero-ct-analytic-case.v1",
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "tail_bound": {
+        "display": "[1.99809555641485620878614256e-10 +/- 7.00e-37]",
+        "lower": "33995834263552839992661639365/170141183460469231731687303715884105728",
+        "upper": "33995834263552839992661639539/170141183460469231731687303715884105728"
+      },
+      "terms": 2608,
+      "twist": 1
+    },
+    {
+      "L_derivative_interval": {
+        "display": "[+/- 8.24e-9]",
+        "lower": "-43779261445736947806237260135/5316911983139663491615228241121378304",
+        "upper": "21889310663300534657825817421/2658455991569831745807614120560689152"
+      },
+      "Sha_finite": "UNKNOWN",
+      "algebraic_rank": "UNKNOWN",
+      "analytic_rank": "UNKNOWN",
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_full_small_governing_block_v1.json": "53aff6be1a8c0d5e58cd393d3d6851c2da317a3a3fe8799716ef909299cb0199",
+        "elliptic-curves/rank-jump/ZERO_CT_ANALYTIC_GATE_PROTOCOL.json": "2e3a0ec821c987f6cd01ae0a47621b00d291e39f0c93fe0ac74d4846d27f75c8",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+        "elliptic-curves/rank-jump/zero_ct_analytic_gate.py": "ec925a10a8f4ccab8eb6e9c20ddca76de893f91beadf474898786ddfe1f1856f"
+      },
+      "boundary": "No rational point is constructed. Containing zero is inconclusive. The coefficient and local arithmetic use exact CAS computations; the sum and tail include directed interval error.",
+      "coefficient_sha256": "04bb704459d8f78acc8dedc95b99a8278613fe2c2d56e1dea18d01416381974f",
+      "conductor": "714599824",
+      "first_coefficients": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        -2,
+        0,
+        -3,
+        0,
+        -2,
+        0,
+        -5,
+        0,
+        2,
+        0,
+        2,
+        0,
+        6,
+        0,
+        -1,
+        0,
+        3,
+        0,
+        8,
+        0
+      ],
+      "local_data": [
+        {
+          "conductor_exponent": 4,
+          "kodaira": "II",
+          "local_root_number": -1,
+          "prime": 2,
+          "tamagawa_number": 1
+        },
+        {
+          "conductor_exponent": 2,
+          "kodaira": "I0*",
+          "local_root_number": 1,
+          "prime": 41,
+          "tamagawa_number": 1
+        },
+        {
+          "conductor_exponent": 2,
+          "kodaira": "II",
+          "local_root_number": -1,
+          "prime": 163,
+          "tamagawa_number": 1
+        }
+      ],
+      "minimal_model": [
+        0,
+        -1,
+        0,
+        -91334,
+        -10371521
+      ],
+      "model": [
+        0,
+        -451,
+        0,
+        -23534,
+        -68921
+      ],
+      "nonzero_derivative_certified": false,
+      "partial_sum": {
+        "display": "[-6.0196514e-14 +/- 9.00e-22]",
+        "lower": "-41950848144375087812146161473/696898287454081973172991196020261297061888",
+        "upper": "-41950847233490430226932229953/696898287454081973172991196020261297061888"
+      },
+      "rank_theorem": "Modularity and Gross-Zagier/Kolyvagin when root number -1 and the derivative interval excludes zero.",
+      "role": "frozen zero-full-CT case",
+      "root_number": -1,
+      "schema": "rank-jump.zero-ct-analytic-case.v1",
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "tail_bound": {
+        "display": "[8.233903700235757606069488e-9 +/- 6.19e-34]",
+        "lower": "10944735312950378820298181127/1329227995784915872903807060280344576",
+        "upper": "21889470625900757640596364661/2658455991569831745807614120560689152"
+      },
+      "terms": 106928,
+      "twist": 41
+    },
+    {
+      "L_derivative_interval": {
+        "display": "[17.8747978 +/- 6.31e-8]",
+        "lower": "22127927812744822579662845787/1237940039285380274899124224",
+        "upper": "22127927860979022476027524955/1237940039285380274899124224"
+      },
+      "Sha_finite": true,
+      "algebraic_rank": 1,
+      "analytic_rank": 1,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_full_small_governing_block_v1.json": "53aff6be1a8c0d5e58cd393d3d6851c2da317a3a3fe8799716ef909299cb0199",
+        "elliptic-curves/rank-jump/ZERO_CT_ANALYTIC_GATE_PROTOCOL.json": "2e3a0ec821c987f6cd01ae0a47621b00d291e39f0c93fe0ac74d4846d27f75c8",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+        "elliptic-curves/rank-jump/zero_ct_analytic_gate.py": "ec925a10a8f4ccab8eb6e9c20ddca76de893f91beadf474898786ddfe1f1856f"
+      },
+      "boundary": "No rational point is constructed. Containing zero is inconclusive. The coefficient and local arithmetic use exact CAS computations; the sum and tail include directed interval error.",
+      "coefficient_sha256": "7518fe760e29cd7695f42a8b18dbf078e5092548df568fd8c1769bbc76b6e48a",
+      "conductor": "3999803536",
+      "first_coefficients": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        2,
+        0,
+        -3,
+        0,
+        -2,
+        0,
+        5,
+        0,
+        2,
+        0,
+        2,
+        0,
+        6,
+        0,
+        -1,
+        0,
+        -3,
+        0,
+        -8,
+        0
+      ],
+      "local_data": [
+        {
+          "conductor_exponent": 4,
+          "kodaira": "II",
+          "local_root_number": -1,
+          "prime": 2,
+          "tamagawa_number": 1
+        },
+        {
+          "conductor_exponent": 2,
+          "kodaira": "I0*",
+          "local_root_number": 1,
+          "prime": 97,
+          "tamagawa_number": 1
+        },
+        {
+          "conductor_exponent": 2,
+          "kodaira": "II",
+          "local_root_number": -1,
+          "prime": 163,
+          "tamagawa_number": 1
+        }
+      ],
+      "minimal_model": [
+        0,
+        1,
+        0,
+        -511222,
+        -137916425
+      ],
+      "model": [
+        0,
+        -1067,
+        0,
+        -131726,
+        -912673
+      ],
+      "nonzero_derivative_certified": true,
+      "partial_sum": {
+        "display": "[17.87479775646937277092 +/- 1.49e-21]",
+        "lower": "44255855673723845055687777085/2475880078570760549798248448",
+        "upper": "44255855673723845055692964399/2475880078570760549798248448"
+      },
+      "rank_theorem": "Modularity and Gross-Zagier/Kolyvagin when root number -1 and the derivative interval excludes zero.",
+      "role": "frozen CT-rank-two control",
+      "root_number": -1,
+      "schema": "rank-jump.zero-ct-analytic-case.v1",
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "tail_bound": {
+        "display": "[1.948163814433819909480960e-8 +/- 6.40e-33]",
+        "lower": "25895538825205631994363892515/1329227995784915872903807060280344576",
+        "upper": "25895538825205631994363899179/1329227995784915872903807060280344576"
+      },
+      "terms": 252976,
+      "twist": 97
+    },
+    {
+      "L_derivative_interval": {
+        "display": "[+/- 2.27e-8]",
+        "lower": "-1885449864326963184766234445/83076749736557242056487941267521536",
+        "upper": "60334392469933187533362566753/2658455991569831745807614120560689152"
+      },
+      "Sha_finite": "UNKNOWN",
+      "algebraic_rank": "UNKNOWN",
+      "analytic_rank": "UNKNOWN",
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_full_small_governing_block_v1.json": "53aff6be1a8c0d5e58cd393d3d6851c2da317a3a3fe8799716ef909299cb0199",
+        "elliptic-curves/rank-jump/ZERO_CT_ANALYTIC_GATE_PROTOCOL.json": "2e3a0ec821c987f6cd01ae0a47621b00d291e39f0c93fe0ac74d4846d27f75c8",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+        "elliptic-curves/rank-jump/zero_ct_analytic_gate.py": "ec925a10a8f4ccab8eb6e9c20ddca76de893f91beadf474898786ddfe1f1856f"
+      },
+      "boundary": "No rational point is constructed. Containing zero is inconclusive. The coefficient and local arithmetic use exact CAS computations; the sum and tail include directed interval error.",
+      "coefficient_sha256": "7d48cc55b9e2e7dc72fd409550c8cf37c0243142e21ea236c9ec151c1fa077f0",
+      "conductor": "5428152976",
+      "first_coefficients": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        2,
+        0,
+        3,
+        0,
+        -2,
+        0,
+        5,
+        0,
+        -2,
+        0,
+        -2,
+        0,
+        6,
+        0,
+        -1,
+        0,
+        -3,
+        0,
+        -8,
+        0
+      ],
+      "local_data": [
+        {
+          "conductor_exponent": 4,
+          "kodaira": "II",
+          "local_root_number": -1,
+          "prime": 2,
+          "tamagawa_number": 1
+        },
+        {
+          "conductor_exponent": 2,
+          "kodaira": "I0*",
+          "local_root_number": 1,
+          "prime": 113,
+          "tamagawa_number": 1
+        },
+        {
+          "conductor_exponent": 2,
+          "kodaira": "II",
+          "local_root_number": -1,
+          "prime": 163,
+          "tamagawa_number": 1
+        }
+      ],
+      "minimal_model": [
+        0,
+        -1,
+        0,
+        -693782,
+        -217539305
+      ],
+      "model": [
+        0,
+        -1243,
+        0,
+        -178766,
+        -1442897
+      ],
+      "nonzero_derivative_certified": false,
+      "partial_sum": {
+        "display": "[-5.9970e-16 +/- 5.34e-21]",
+        "lower": "-6686843685886797894385227609/11150372599265311570767859136324180752990208",
+        "upper": "-6686818913708237556754765657/11150372599265311570767859136324180752990208"
+      },
+      "rank_theorem": "Modularity and Gross-Zagier/Kolyvagin when root number -1 and the derivative interval excludes zero.",
+      "role": "frozen zero-full-CT case",
+      "root_number": -1,
+      "schema": "rank-jump.zero-ct-analytic-case.v1",
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "tail_bound": {
+        "display": "[2.269527656195029571685958e-8 +/- 4.24e-33]",
+        "lower": "7541799244556391919698718347/332306998946228968225951765070086144",
+        "upper": "30167196978225567678794882425/1329227995784915872903807060280344576"
+      },
+      "terms": 294704,
+      "twist": 113
+    }
+  ],
+  "schema": "rank-jump.zero-ct-analytic-gate.v1",
+  "status": "PASS"
+}

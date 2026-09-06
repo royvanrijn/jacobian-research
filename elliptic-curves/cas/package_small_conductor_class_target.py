@@ -18,19 +18,27 @@ REPORT = ART/(PREFIX+'_portable_replay_v1.json')
 def package():
     if ZIP.exists() or MANIFEST.exists():
         raise FileExistsError('preserve evidence')
-    audits = sorted(ART.glob('small_conductor_class_target_wave_*_v1.json'))
+    box_audits = sorted(ART.glob('small_conductor_class_target_wave_*_v1.json'))
+    strip_audits = sorted(ART.glob('small_conductor_class_target_strip_wave_*_v1.json'))
+    audits = box_audits+strip_audits
     if not audits or any(cert.read(p)['status']!='PASS' for p in audits):
         raise ArithmeticError('audited waves required')
     last = cert.read(audits[-1])['wave']
+    last_box = cert.read(box_audits[-1])['wave']
+    last_strip = cert.read(strip_audits[-1])['wave'] if strip_audits else 0
+    checker = 'elliptic-curves/cas/pursue_small_conductor_class_target'+('_strips' if strip_audits else '')+'.sage'
     base = ART/'small_conductor_small_base_targets_evidence_v1.zip'
     baseline = cert.read(base.with_suffix('.json'))
     if cert.hashed(base)!=baseline['zip_sha256']:
         raise ArithmeticError('baseline archive differs')
     files = {Path(__file__).resolve(),ROOT/'elliptic-curves/cas/pursue_small_conductor_class_target.sage',
-             ROOT/'elliptic-curves/cas/record_small_conductor_class_target.py',
+             ROOT/'elliptic-curves/cas/record_small_conductor_class_target.py',ROOT/checker,
              ROOT/'elliptic-curves/notes/SMALL_CONDUCTOR_CLASS_TARGET_2026-09-06.md',*audits}
-    for wave in range(1,last+1):
+    for wave in range(1,last_box+1):
         files.update(p for p in (D/('wave_%03d'%wave)).rglob('*') if p.is_file())
+    for wave in range(1,last_strip+1):
+        directory = D.with_name('small-conductor-class-target-strips-v1')/('wave_%03d'%wave)
+        files.update(p for p in directory.rglob('*') if p.is_file())
     overrides = {str(p.relative_to(ROOT)):p for p in files}
     entries = []
     with zipfile.ZipFile(ZIP,'x',zipfile.ZIP_DEFLATED,compresslevel=9) as archive:
@@ -43,7 +51,7 @@ def package():
             archive.write(path,name)
             entries.append({'path':name,'bytes':path.stat().st_size,'sha256':cert.hashed(path)})
     checkpoint(MANIFEST,{'schema':'elliptic-curves.small-conductor-class-target-evidence.v1',
-        'zip_sha256':cert.hashed(ZIP),'zip_bytes':ZIP.stat().st_size,'last_wave':last,
+        'zip_sha256':cert.hashed(ZIP),'zip_bytes':ZIP.stat().st_size,'last_wave':last,'last_box_wave':last_box,'last_strip_wave':last_strip,'checker':checker,
         'files':sorted(entries,key=lambda r:r['path']),
         'requirements':'Sage with PARI2.17.3, MPFI and Arb. Checks the complete inherited proof chain and every new principal-ideal witness, selection and exact matrix transition. Rejected-candidate enumeration is not part of the rank certificate.'})
     print('PACKAGED',len(entries),'FILES',ZIP.stat().st_size,'BYTES',flush=True)
@@ -64,7 +72,7 @@ def replay():
     for row in manifest['files']:
         if cert.hashed(destination/row['path'])!=row['sha256']:
             raise ArithmeticError('extracted file differs')
-    command = ['/home/royvanrijn/.local/bin/sage','-python','elliptic-curves/cas/pursue_small_conductor_class_target.sage','check','--wave',str(manifest['last_wave'])]
+    command = ['/home/royvanrijn/.local/bin/sage','-python',manifest['checker'],'check','--wave',str(manifest['last_wave'])]
     outcome = run(command,limits=Limits(600,1610612736),cwd=destination,
                   log_path=destination/'replay.log',checkpoint_path=destination/'replay.supervisor.json')
     passed = outcome['outcome']=='completed' and outcome['returncode']==0

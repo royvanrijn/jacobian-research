@@ -1,5 +1,7 @@
 # Elliptic curves over `Q` — ACTIVE
 
+The [remaining-five R17 preparation](notes/R17_FULL_SCORE_RANGE_PREPARATION_2026-09-06.md) closes the prime-scaling audit through 131071. All five cache cost gates pass, and the missing extended tables are being built for broader early selection on fresh high-height fibres.
+
 The [corrected higher MW16 campaign](notes/CORRECTED_MW16_HIGHER_POPULATION_2026-09-06.md) is frozen at 320 slices and 3.06 billion addresses, excluding the earlier campaigns and reusing one fixed benchmark. All 320 preflight checks pass and the main scan is active. Restored good-prime terms at 5 and 13 now enter before retention; the later 10,240-scalar and sixty-fibre budgets stay fixed.
 
 The [broader displayed-score trial](notes/BROAD_MW16_HIGHER_POPULATION_2026-09-06.md) adds three new curves with certified bounds 24, 24 and 22 from 3.06 billion initial addresses. All 2,580 boxes and 182 isolated proof stages pass, with the same selector and finalist budget as the smaller trial. Selection scores improve in all ten groups, but withheld-prime means improve in only three. The [preserved smaller trial](notes/MW16_JOINT_HIGHER_ANNULI_2026-09-06.md) completes all 182 isolated point-proof stages with bounds 16–19 and no high-rank addition.
@@ -427,7 +429,7 @@ Use [`REPRODUCE.md`](REPRODUCE.md) and the exact checker paths recorded in `../M
 <!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 8a4c932153e2bb2d -->
 <!-- status-consumer: EC-K3-R17-NORM12-ICARM-573-REFRESH a93ce35de34fde21 -->
 <!-- status-consumer: EC-CF-NEARMISS-DESCENT-INPUTS 25c9f212e5162216 -->
-<!-- status-consumer: OP-EC-NEXT 83f2fabcbcbdeebc -->
+<!-- status-consumer: OP-EC-NEXT 1aa89ab182362c71 -->
 
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-SELMER-PANEL 539bd8ec36b36c44 -->
 

@@ -2,8 +2,9 @@
 
 **All six R17 models are now proved minimal at every prime from 5 through
 131071 except the separately classified prime 13. The five fibrations other
-than `11952` are undergoing a fixed fifteen-table extended-cache cost gate.
-No new parameter or point campaign is launched by this preparation.**
+than `11952` pass all fifteen extended-cache cost cases and their replay.
+The fixed 14,740-table build is active. No new parameter or point campaign
+has started from these tables.**
 
 The user requests broader initial populations while retaining the working
 selection stages. The [completed broader MW16 trial](BROAD_MW16_HIGHER_POPULATION_2026-09-06.md)
@@ -68,6 +69,29 @@ Replay makes no new GP calls. Each family must project below 1800 serial
 seconds by the same worst measured cost per projective residue. Projection
 is a scheduling estimate, not a mathematical runtime bound.
 
-A full cache or new parameter/point campaign needs its own finite protocol
-after this gate. No compact-height revisit, adaptive point exposure or
-record-conditioned candidate selection is part of this preparation.
+The primes are 4099, 17749 and 32749. All fifteen tables and 75 independent
+character sums pass, followed by read-only replay. Per-family projected
+serial times range from 1641.91 to 1686.38 seconds, all below the fixed
+1800-second threshold. The complete
+[benchmark certificate](../../artifacts/generated-results/elliptic-curves/r17_remaining_extended_projective_benchmark_v1.json)
+retains individual timings and exact table hashes.
+
+The separately frozen [full-cache builder](../cas/build_r17_remaining_extended_projective_caches.py)
+now covers all 2,948 primes from 4099 through 32749 on each of the five
+families: 14,740 complete projective tables. It reuses exactly the fifteen
+benchmark transcripts and makes at most 14,725 new GP calls, with five
+workers, twenty seconds per call, eighty-table checkpoints and a 7,200-second
+build cap. Every table gets the same full frame and five independent character
+sum checks. A separate 3,600-second read-only replay follows. The
+[controller](../cas/finish_r17_remaining_projective_caches.py) stops on failure
+or censoring without a retry. These tables contain 264,948,100 projective
+residues and require 73,700 independent character sums per full pass.
+
+The user explicitly requests filling this five-fibration gap. After the cache
+and binary-score checks pass, the next finite protocol will select fresh
+high-height parameter slices, apply all selection primes before retention,
+and retain bounded scalar and generic17-only point stages. It must exclude
+the earlier square and skew-rectangle scan slices explicitly; parameter
+freshness and rational-isomorphism novelty remain separate checks. No
+compact-height revisit, adaptive point exposure or record-conditioned
+candidate selection is part of this preparation.
