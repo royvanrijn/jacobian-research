@@ -1,0 +1,24 @@
+{
+  "analysis": {
+    "errors": [],
+    "status": "UNKNOWN",
+    "transcript": "",
+    "warnings": []
+  },
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_genus_two_rank_probe_inputs_v1.json": "413ae744807283a66bff92cbe18b508188715d4885298ba80296ab55bb746f06",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_genus_two_lift_gate_v1.json": "d884373a02dbc66d3aab6943602abc721ed562cc5c8b6add34bde5681af12cdc",
+    "elliptic-curves/cas/run_fixed_field_radical_covers.py": "45483d91c616555141309442622c925c5b05a15a13ba77e2be8d94c7186dca52",
+    "elliptic-curves/rank-jump/GENUS_TWO_RANK_AND_SIMPLICITY_PROTOCOL.json": "67ed536cfb41c76bf0b8344386e2143b90257136a8783352b0d1ef58bc4bbae7",
+    "elliptic-curves/rank-jump/genus_two_rank_probe.py": "5c076c22788895d8720f289a7e749cb882ad9809ad6bc7ab7630ea7063449772",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "execution": {
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  "raw_xml": "<?xml version=\"1.0\"?>\n<calculator><offline>The Magma calculator is temporarily disabled due to electrical work in the building.</offline></calculator>\n",
+  "schema": "rank-jump.genus-two-rank-probe.v1",
+  "transport_error": null,
+  "worker_log": "probe.m 1.22 seconds\n"
+}

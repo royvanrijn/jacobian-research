@@ -1,0 +1,10 @@
+{
+  "schema":"rank-jump.genus-two-rank-and-simplicity-protocol.v1",
+  "layer":"solubility",
+  "selection":"The single fixed H:y^2=hfg from rank_jump_native_genus_two_lift_gate_v1.json. No new original rational parameter or point search.",
+  "rank_test":"One fresh public Magma calculator request for TwoSelmerGroup(J(H)), with default unconditional class-group bounds, one thread, and no RankBounds or RationalPoints call. Record full XML, warnings, version and exact program. Only a completed warning-free result provides a rank upper bound dim Sel2 minus dim J[2]. An upper bound at most one opens the ordinary Chabauty gate; a larger bound leaves it UNKNOWN, not disproved.",
+  "geometry_test":"At the already used good prime 131, count H over F131 and F131^2, derive its Frobenius polynomial, test irreducibility and exclude root-of-unity ratios between distinct roots by the exact eigenvalue-ratio resultant. Check all cyclotomic orders n with phi(n)<=12, using n<=288. If these gates pass the reduction and characteristic-zero Jacobian are absolutely simple.",
+  "limits":{"models":1,"online_requests":1,"workers":1,"request_timeout_seconds":80,"external_worker_wall_seconds":120,"finite_field_primes":[131],"maximum_extension_degree":2,"new_original_rational_parameters":0},
+  "failure_semantics":"Timeout, transport failure, warnings or missing completion marker leave descent UNKNOWN. Do not retry an uncertain remote job. A failed simplicity gate gives UNKNOWN, not a decomposition. Full J(C3) rank is distinct from J(H) rank.",
+  "boundary":"Test whether a genus-two rank bound or elliptic decomposition can close the global curve-point gap. No selector or original-fibre rank claim."
+}
