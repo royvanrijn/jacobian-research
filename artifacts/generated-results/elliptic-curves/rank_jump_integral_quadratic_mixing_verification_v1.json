@@ -1,0 +1,13 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_integral_quadratic_mixing_v1.json": "e8efce52a02a9f3445474b4f9de15395c428e20d8b9c49cc9b0d36811608b4ed",
+    "elliptic-curves/rank-jump/verify_integral_quadratic_mixing.py": "991d68c0be91bd4be8cd24799d6e482d29e1bf7ad724a1c5933326009eac8063"
+  },
+  "boundary": "The verifier checks trace witnesses, nondivisibility and accounting. The written lattice proof and retained exact rank/Selmer certificates supply the remaining mathematical dependencies.",
+  "closed_control_real_sign_separation": true,
+  "exact_Qi_group_law_witnesses": true,
+  "independent_reduction_nondivisibility": true,
+  "rank_upper_bound_source": "Two retained PARI effort-zero unconditional 2-descent upper bounds; not independently recomputed by this CAS-free verifier.",
+  "schema": "rank-jump.integral-quadratic-mixing-verification.v1",
+  "status": "PASS"
+}

@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: production scalar-twist blocks share an elliptic norm defect; S3 excludes the cyclic genus-two shortcut](SCALAR_TWIST_BLOCKS_ARE_ELLIPTIC_NORM_DEFECTS.md)
+- [Latest: integral Galois mixing equals common rational Kummer dimension, not rank gain](INTEGRAL_GALOIS_MIXING_IS_NOT_RANK_GAIN.md)
+- [Production scalar-twist blocks share an elliptic norm defect; S3 excludes the cyclic genus-two shortcut](SCALAR_TWIST_BLOCKS_ARE_ELLIPTIC_NORM_DEFECTS.md)
 - [S24 singular-fibre action excludes rational grouping and proper rational j-map composition](SINGULAR_FIBRES_HAVE_FULL_SYMMETRIC_GALOIS_ACTION.md)
 - [Parameter covers have capacity for large blocks; the discriminant cover misses the controls](PARAMETER_COVERS_HAVE_ROOM_BUT_NO_BLOCK_CERTIFICATE.md)
 - [One auxiliary point is bounded by elliptic multiplicity; the genus-five controls have only two independent maps](ONE_AUXILIARY_POINT_HAS_A_MULTIPLICITY_BOUND.md)
