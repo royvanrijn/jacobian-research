@@ -1,0 +1,11 @@
+{
+  "schema": "rank-jump.generic-local-contraction-protocol.v1",
+  "question": "Do generic rational classes alone surject onto the complete local-condition quotient for the -1 twist?",
+  "cases": [0, 4, 5],
+  "classification": "incidence: exact relative Selmer contraction if generic surjectivity holds; no absolute rank or rational-solubility prediction",
+  "mask": "Export only cubic equations, complete discriminant factors, marked generic points, finite places, and exact local twist x witnesses. Omit exceptional points, jump labels, derivative classes, strict character bases, and CT matrices from detector input.",
+  "limits": {"seconds_per_case": 30, "new_local_or_global_point_candidates": 0, "parameter_sweeps": 0},
+  "pass_gate": "The generic image modulo the twist local product has dimension equal to the entire original local product modulo its intersection with the twist product. Incomplete original or twist local bases give UNKNOWN.",
+  "failure_semantics": "A failed gate means generic saturation is not certified, not that the Selmer contraction fails or that the fibre has small rank.",
+  "interpretation": "The controls were chosen retrospectively. Input masking tests exceptional-point dependence, not prospective selection performance."
+}

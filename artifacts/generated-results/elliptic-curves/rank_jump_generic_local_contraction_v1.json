@@ -1,0 +1,1594 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_generic_local_contraction_inputs_v1.json": "a0d370e133fd261ada2e495d29c1fefd1e34a88fff799df31179ce4e1fcc3cb7",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/rank-jump/GENERIC_LOCAL_CONTRACTION_PROTOCOL.json": "5a529cdf8b5309d3447727c34bf3dc21d1711ed61ba694bffc2411a4c5a94104",
+    "elliptic-curves/rank-jump/generic_local_contraction.py": "75dd23f271e08b44920f808b62498ce2773a75529511d6741c2213f926efacd8"
+  },
+  "rows": [
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_generic_local_contraction_inputs_v1.json": "a0d370e133fd261ada2e495d29c1fefd1e34a88fff799df31179ce4e1fcc3cb7",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/GENERIC_LOCAL_CONTRACTION_PROTOCOL.json": "5a529cdf8b5309d3447727c34bf3dc21d1711ed61ba694bffc2411a4c5a94104",
+        "elliptic-curves/rank-jump/generic_local_contraction.py": "75dd23f271e08b44920f808b62498ce2773a75529511d6741c2213f926efacd8"
+      },
+      "boundary": "Proves an exact relative Selmer contraction only when the gate passes. No exceptional points, derivative class, global class group or CT values were read.",
+      "case_index": 0,
+      "generic_point_count": 16,
+      "generic_quotient_dimension": 8,
+      "generic_surjectivity_certified": true,
+      "joint_generic_dimension": 15,
+      "joint_generic_signatures": [
+        612490937771229188,
+        577023956746242996,
+        36029051495778304,
+        36063995362280372,
+        613055262126770176,
+        577023716215491108,
+        613087697720297472,
+        577027825427252144,
+        577061649379738000,
+        39562030090240,
+        35425004011520,
+        36592001461783476,
+        577059141206411664,
+        577026705527163424,
+        612493913111675284,
+        576464889443254272
+      ],
+      "local": [
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            4,
+            4,
+            0,
+            4,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            4,
+            0
+          ],
+          "original_basis": [
+            4
+          ],
+          "place": 3,
+          "twist_basis": [
+            14
+          ],
+          "twist_witnesses": [
+            {
+              "signature": 14,
+              "valuation": 32,
+              "x": "821340"
+            }
+          ],
+          "width": 4
+        },
+        {
+          "dimension": 2,
+          "generic_signatures": [
+            0,
+            59,
+            0,
+            59,
+            0,
+            34,
+            0,
+            59,
+            25,
+            0,
+            0,
+            59,
+            25,
+            34,
+            25,
+            0
+          ],
+          "original_basis": [
+            59,
+            25
+          ],
+          "place": 7,
+          "twist_basis": [
+            34,
+            19
+          ],
+          "twist_witnesses": [
+            {
+              "signature": 34,
+              "valuation": 0,
+              "x": "2"
+            },
+            {
+              "signature": 19,
+              "valuation": 2,
+              "x": "10"
+            }
+          ],
+          "width": 6
+        },
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            0,
+            2,
+            2,
+            0,
+            2,
+            2,
+            2,
+            0,
+            0,
+            2,
+            0,
+            2,
+            2,
+            2,
+            0,
+            0
+          ],
+          "original_basis": [
+            2
+          ],
+          "place": 13,
+          "twist_basis": [
+            2
+          ],
+          "twist_witnesses": [],
+          "width": 4
+        },
+        {
+          "dimension": 2,
+          "generic_signatures": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            31,
+            110,
+            31,
+            0,
+            31,
+            0,
+            0,
+            113,
+            113,
+            0
+          ],
+          "original_basis": [
+            31,
+            110
+          ],
+          "place": 2,
+          "twist_basis": [
+            8,
+            106
+          ],
+          "twist_witnesses": [
+            {
+              "signature": 8,
+              "valuation": 0,
+              "x": "-3"
+            },
+            {
+              "signature": 106,
+              "valuation": 4,
+              "x": "-8"
+            }
+          ],
+          "width": 7
+        },
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            0,
+            6,
+            0,
+            6,
+            6,
+            0,
+            6,
+            0,
+            6,
+            6,
+            6,
+            6,
+            0,
+            6,
+            0,
+            6
+          ],
+          "original_basis": [
+            6
+          ],
+          "place": "infinity",
+          "twist_basis": [
+            3
+          ],
+          "twist_witnesses": [],
+          "width": 3
+        },
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            6,
+            0,
+            0,
+            0,
+            6,
+            0,
+            6,
+            0,
+            0,
+            0,
+            6,
+            0,
+            6,
+            0,
+            6,
+            0
+          ],
+          "original_basis": [
+            6
+          ],
+          "place": 17,
+          "twist_basis": [
+            6
+          ],
+          "twist_witnesses": [],
+          "width": 4
+        },
+        {
+          "dimension": 0,
+          "generic_signatures": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_basis": [],
+          "place": 19,
+          "twist_basis": [],
+          "twist_witnesses": [],
+          "width": 2
+        },
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            13,
+            13,
+            13,
+            13,
+            13,
+            13,
+            13,
+            0,
+            13,
+            13,
+            0,
+            13,
+            13,
+            13,
+            0,
+            13
+          ],
+          "original_basis": [
+            13
+          ],
+          "place": 23,
+          "twist_basis": [
+            5
+          ],
+          "twist_witnesses": [
+            {
+              "signature": 5,
+              "valuation": 2,
+              "x": "-46"
+            }
+          ],
+          "width": 4
+        },
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            0,
+            14,
+            14,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            0
+          ],
+          "original_basis": [
+            14
+          ],
+          "place": 31,
+          "twist_basis": [
+            4
+          ],
+          "twist_witnesses": [
+            {
+              "signature": 4,
+              "valuation": 2,
+              "x": "74"
+            }
+          ],
+          "width": 4
+        },
+        {
+          "dimension": 2,
+          "generic_signatures": [
+            5,
+            0,
+            0,
+            0,
+            10,
+            0,
+            0,
+            15,
+            10,
+            15,
+            0,
+            0,
+            0,
+            10,
+            15,
+            15
+          ],
+          "original_basis": [
+            5,
+            10
+          ],
+          "place": 79,
+          "twist_basis": [
+            10,
+            39
+          ],
+          "twist_witnesses": [
+            {
+              "signature": 10,
+              "valuation": 0,
+              "x": "0"
+            },
+            {
+              "signature": 39,
+              "valuation": 2,
+              "x": "-61"
+            }
+          ],
+          "width": 6
+        },
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            2,
+            0,
+            2,
+            2,
+            2,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "original_basis": [
+            2
+          ],
+          "place": 3677,
+          "twist_basis": [
+            2
+          ],
+          "twist_witnesses": [],
+          "width": 4
+        },
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            0,
+            2,
+            0,
+            0,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            2,
+            2,
+            2,
+            0,
+            0
+          ],
+          "original_basis": [
+            2
+          ],
+          "place": 19022417,
+          "twist_basis": [
+            2
+          ],
+          "twist_witnesses": [],
+          "width": 4
+        },
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            8,
+            0,
+            8,
+            8,
+            8,
+            0,
+            8,
+            0,
+            0,
+            0,
+            0,
+            8,
+            0,
+            0,
+            8,
+            0
+          ],
+          "original_basis": [
+            8
+          ],
+          "place": 9070489718245292721859,
+          "twist_basis": [
+            8
+          ],
+          "twist_witnesses": [
+            {
+              "signature": 8,
+              "valuation": 0,
+              "x": "1"
+            }
+          ],
+          "width": 4
+        },
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            8,
+            8,
+            0,
+            0,
+            8,
+            8,
+            8,
+            8,
+            8,
+            0,
+            0,
+            0,
+            8,
+            8,
+            8,
+            8
+          ],
+          "original_basis": [
+            8
+          ],
+          "place": 4994158462757908971835954831983527984976327938273965297923895199,
+          "twist_basis": [
+            8
+          ],
+          "twist_witnesses": [
+            {
+              "signature": 8,
+              "valuation": 0,
+              "x": "0"
+            }
+          ],
+          "width": 4
+        }
+      ],
+      "local_change_dimension": 8,
+      "local_product_dimension": 16,
+      "original_basis_generic_correction_masks": [
+        46,
+        54,
+        54,
+        0,
+        80,
+        151,
+        30,
+        0,
+        14,
+        10,
+        33,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_product_basis": [
+        4,
+        944,
+        400,
+        2048,
+        507904,
+        1802240,
+        12582912,
+        100663296,
+        13958643712,
+        240518168576,
+        1374389534720,
+        2748779069440,
+        35184372088832,
+        562949953421312,
+        36028797018963968,
+        576460752303423488
+      ],
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "status": "PASS",
+      "twist_product_basis": [
+        14,
+        544,
+        304,
+        2048,
+        131072,
+        1736704,
+        6291456,
+        100663296,
+        5368709120,
+        68719476736,
+        2748779069440,
+        10720238370816,
+        35184372088832,
+        562949953421312,
+        36028797018963968,
+        576460752303423488
+      ]
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_generic_local_contraction_inputs_v1.json": "a0d370e133fd261ada2e495d29c1fefd1e34a88fff799df31179ce4e1fcc3cb7",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/GENERIC_LOCAL_CONTRACTION_PROTOCOL.json": "5a529cdf8b5309d3447727c34bf3dc21d1711ed61ba694bffc2411a4c5a94104",
+        "elliptic-curves/rank-jump/generic_local_contraction.py": "75dd23f271e08b44920f808b62498ce2773a75529511d6741c2213f926efacd8"
+      },
+      "boundary": "Proves an exact relative Selmer contraction only when the gate passes. No exceptional points, derivative class, global class group or CT values were read.",
+      "case_index": 4,
+      "generic_point_count": 17,
+      "generic_quotient_dimension": 6,
+      "generic_surjectivity_certified": true,
+      "joint_generic_dimension": 15,
+      "joint_generic_signatures": [
+        563664528666704,
+        712485148040200,
+        36288968957893792,
+        562975725329568,
+        577174129728351232,
+        613202926210908248,
+        713196501474544,
+        577283874197924952,
+        823147664306256,
+        36592434704084992,
+        612489549859319888,
+        613163165014294768,
+        613052500350136568,
+        36851919985635488,
+        1075900576,
+        149559353340072,
+        1610674176
+      ],
+      "local": [
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            0,
+            8,
+            0,
+            0,
+            0,
+            8,
+            0,
+            8,
+            0,
+            0,
+            0,
+            0,
+            8,
+            0,
+            0,
+            8,
+            0
+          ],
+          "original_basis": [
+            8
+          ],
+          "place": 3,
+          "twist_basis": [
+            8
+          ],
+          "twist_witnesses": [
+            {
+              "signature": 8,
+              "valuation": 18,
+              "x": "-243"
+            }
+          ],
+          "width": 4
+        },
+        {
+          "dimension": 2,
+          "generic_signatures": [
+            5,
+            0,
+            10,
+            10,
+            0,
+            5,
+            15,
+            5,
+            5,
+            0,
+            5,
+            15,
+            15,
+            10,
+            10,
+            10,
+            0
+          ],
+          "original_basis": [
+            5,
+            10
+          ],
+          "place": 5,
+          "twist_basis": [
+            5,
+            10
+          ],
+          "twist_witnesses": [],
+          "width": 6
+        },
+        {
+          "dimension": 2,
+          "generic_signatures": [
+            60,
+            7,
+            7,
+            7,
+            59,
+            0,
+            7,
+            59,
+            60,
+            60,
+            60,
+            0,
+            60,
+            60,
+            60,
+            60,
+            60
+          ],
+          "original_basis": [
+            60,
+            7
+          ],
+          "place": 7,
+          "twist_basis": [
+            13,
+            20
+          ],
+          "twist_witnesses": [
+            {
+              "signature": 13,
+              "valuation": 4,
+              "x": "21"
+            },
+            {
+              "signature": 20,
+              "valuation": 4,
+              "x": "-21"
+            }
+          ],
+          "width": 6
+        },
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            0,
+            8,
+            0,
+            0,
+            0,
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            8,
+            8,
+            0,
+            0,
+            0
+          ],
+          "original_basis": [
+            8
+          ],
+          "place": 11,
+          "twist_basis": [
+            8
+          ],
+          "twist_witnesses": [
+            {
+              "signature": 8,
+              "valuation": 0,
+              "x": "2"
+            }
+          ],
+          "width": 4
+        },
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            0,
+            2,
+            0,
+            2,
+            0,
+            0,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            0
+          ],
+          "original_basis": [
+            2
+          ],
+          "place": 13,
+          "twist_basis": [
+            2
+          ],
+          "twist_witnesses": [],
+          "width": 4
+        },
+        {
+          "dimension": 2,
+          "generic_signatures": [
+            96,
+            96,
+            0,
+            0,
+            32,
+            0,
+            0,
+            0,
+            0,
+            32,
+            32,
+            96,
+            64,
+            64,
+            64,
+            0,
+            96
+          ],
+          "original_basis": [
+            96,
+            32
+          ],
+          "place": 2,
+          "twist_basis": [
+            32,
+            54
+          ],
+          "twist_witnesses": [
+            {
+              "signature": 32,
+              "valuation": 26,
+              "x": "1792"
+            },
+            {
+              "signature": 54,
+              "valuation": 46,
+              "x": "359680"
+            }
+          ],
+          "width": 7
+        },
+        {
+          "dimension": 0,
+          "generic_signatures": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_basis": [],
+          "place": "infinity",
+          "twist_basis": [],
+          "twist_witnesses": [],
+          "width": 1
+        },
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            6,
+            0,
+            0,
+            6,
+            0,
+            0,
+            6,
+            0,
+            6,
+            0,
+            0,
+            6,
+            0,
+            0,
+            0,
+            6,
+            0
+          ],
+          "original_basis": [
+            6
+          ],
+          "place": 71,
+          "twist_basis": [
+            12
+          ],
+          "twist_witnesses": [
+            {
+              "signature": 12,
+              "valuation": 2,
+              "x": "80"
+            }
+          ],
+          "width": 4
+        },
+        {
+          "dimension": 2,
+          "generic_signatures": [
+            10,
+            0,
+            10,
+            0,
+            13,
+            13,
+            10,
+            10,
+            10,
+            10,
+            0,
+            10,
+            0,
+            10,
+            0,
+            0,
+            0
+          ],
+          "original_basis": [
+            10,
+            7
+          ],
+          "place": 107,
+          "twist_basis": [
+            10,
+            47
+          ],
+          "twist_witnesses": [
+            {
+              "signature": 10,
+              "valuation": 0,
+              "x": "4"
+            },
+            {
+              "signature": 47,
+              "valuation": 2,
+              "x": "-42"
+            }
+          ],
+          "width": 6
+        },
+        {
+          "dimension": 2,
+          "generic_signatures": [
+            0,
+            34,
+            59,
+            0,
+            34,
+            34,
+            34,
+            59,
+            59,
+            0,
+            0,
+            25,
+            0,
+            59,
+            0,
+            34,
+            0
+          ],
+          "original_basis": [
+            34,
+            25
+          ],
+          "place": 283,
+          "twist_basis": [
+            34,
+            49
+          ],
+          "twist_witnesses": [
+            {
+              "signature": 34,
+              "valuation": 0,
+              "x": "-1"
+            },
+            {
+              "signature": 49,
+              "valuation": 2,
+              "x": "-366"
+            }
+          ],
+          "width": 6
+        },
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            2,
+            2,
+            0,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0
+          ],
+          "original_basis": [
+            2
+          ],
+          "place": 22013,
+          "twist_basis": [
+            2
+          ],
+          "twist_witnesses": [],
+          "width": 4
+        },
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            0,
+            0,
+            8,
+            0,
+            0,
+            8,
+            0,
+            0,
+            0,
+            8,
+            8,
+            8,
+            8,
+            8,
+            0,
+            0,
+            0
+          ],
+          "original_basis": [
+            8
+          ],
+          "place": 16644390691,
+          "twist_basis": [
+            8
+          ],
+          "twist_witnesses": [
+            {
+              "signature": 8,
+              "valuation": 0,
+              "x": "2"
+            }
+          ],
+          "width": 4
+        },
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            0,
+            0,
+            0,
+            0,
+            8,
+            8,
+            0,
+            8,
+            0,
+            0,
+            8,
+            8,
+            8,
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_basis": [
+            8
+          ],
+          "place": 49545498746840639425367772677949130481018258902148022792478518127145162432632657263874589,
+          "twist_basis": [
+            8
+          ],
+          "twist_witnesses": [],
+          "width": 4
+        }
+      ],
+      "local_change_dimension": 6,
+      "local_product_dimension": 17,
+      "original_basis_generic_correction_masks": [
+        0,
+        0,
+        0,
+        11,
+        59,
+        0,
+        0,
+        57,
+        0,
+        51,
+        0,
+        32,
+        0,
+        63,
+        0,
+        0,
+        0
+      ],
+      "original_product_basis": [
+        8,
+        80,
+        160,
+        61440,
+        7168,
+        524288,
+        2097152,
+        1610612736,
+        536870912,
+        25769803776,
+        687194767360,
+        481036337152,
+        149533581377536,
+        109951162777600,
+        562949953421312,
+        36028797018963968,
+        576460752303423488
+      ],
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "status": "PASS",
+      "twist_product_basis": [
+        8,
+        80,
+        160,
+        13312,
+        20480,
+        524288,
+        2097152,
+        536870912,
+        905969664,
+        51539607552,
+        687194767360,
+        3229815406592,
+        149533581377536,
+        215504279044096,
+        562949953421312,
+        36028797018963968,
+        576460752303423488
+      ]
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_generic_local_contraction_inputs_v1.json": "a0d370e133fd261ada2e495d29c1fefd1e34a88fff799df31179ce4e1fcc3cb7",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/GENERIC_LOCAL_CONTRACTION_PROTOCOL.json": "5a529cdf8b5309d3447727c34bf3dc21d1711ed61ba694bffc2411a4c5a94104",
+        "elliptic-curves/rank-jump/generic_local_contraction.py": "75dd23f271e08b44920f808b62498ce2773a75529511d6741c2213f926efacd8"
+      },
+      "boundary": "Proves an exact relative Selmer contraction only when the gate passes. No exceptional points, derivative class, global class group or CT values were read.",
+      "case_index": 5,
+      "generic_point_count": 17,
+      "generic_quotient_dimension": 3,
+      "generic_surjectivity_certified": true,
+      "joint_generic_dimension": 11,
+      "joint_generic_signatures": [
+        137441050624,
+        2336664584196,
+        146031055632,
+        137643430672,
+        137438954096,
+        2336663606036,
+        139788878452,
+        137441051412,
+        10740564756,
+        10739585024,
+        2207817662820,
+        139586503012,
+        2338610745348,
+        2199025353492,
+        139589582852,
+        137642446852,
+        2338610811236
+      ],
+      "local": [
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            0,
+            4,
+            0,
+            0,
+            0,
+            4,
+            4,
+            4,
+            4,
+            0,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "original_basis": [
+            4
+          ],
+          "place": 3,
+          "twist_basis": [
+            10
+          ],
+          "twist_witnesses": [
+            {
+              "signature": 10,
+              "valuation": 30,
+              "x": "-19926"
+            }
+          ],
+          "width": 4
+        },
+        {
+          "dimension": 2,
+          "generic_signatures": [
+            0,
+            0,
+            49,
+            49,
+            39,
+            49,
+            39,
+            49,
+            49,
+            0,
+            22,
+            22,
+            0,
+            49,
+            0,
+            0,
+            22
+          ],
+          "original_basis": [
+            49,
+            22
+          ],
+          "place": 5,
+          "twist_basis": [
+            49,
+            22
+          ],
+          "twist_witnesses": [],
+          "width": 6
+        },
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            0,
+            0,
+            4,
+            4,
+            0,
+            4,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            4,
+            0,
+            0,
+            4,
+            4
+          ],
+          "original_basis": [
+            4
+          ],
+          "place": 7,
+          "twist_basis": [
+            10
+          ],
+          "twist_witnesses": [
+            {
+              "signature": 10,
+              "valuation": 4,
+              "x": "22"
+            }
+          ],
+          "width": 4
+        },
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            0,
+            0,
+            4,
+            0,
+            0,
+            4,
+            4,
+            0,
+            0,
+            4,
+            0,
+            4,
+            0,
+            0,
+            0,
+            4,
+            4
+          ],
+          "original_basis": [
+            4
+          ],
+          "place": 13,
+          "twist_basis": [
+            4
+          ],
+          "twist_witnesses": [],
+          "width": 4
+        },
+        {
+          "dimension": 2,
+          "generic_signatures": [
+            8,
+            4,
+            8,
+            12,
+            0,
+            0,
+            4,
+            8,
+            12,
+            8,
+            12,
+            0,
+            4,
+            8,
+            12,
+            8,
+            4
+          ],
+          "original_basis": [
+            8,
+            4
+          ],
+          "place": 2,
+          "twist_basis": [
+            8,
+            4
+          ],
+          "twist_witnesses": [
+            {
+              "signature": 8,
+              "valuation": 26,
+              "x": "-256"
+            },
+            {
+              "signature": 4,
+              "valuation": 26,
+              "x": "-1536"
+            }
+          ],
+          "width": 7
+        },
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            0,
+            6,
+            0,
+            6,
+            0,
+            6,
+            6,
+            0,
+            0,
+            0,
+            6,
+            0,
+            0,
+            0,
+            0,
+            6,
+            0
+          ],
+          "original_basis": [
+            6
+          ],
+          "place": "infinity",
+          "twist_basis": [
+            3
+          ],
+          "twist_witnesses": [],
+          "width": 3
+        },
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            0,
+            8,
+            8,
+            0,
+            8,
+            8,
+            0,
+            8,
+            0,
+            8
+          ],
+          "original_basis": [
+            8
+          ],
+          "place": 6158521,
+          "twist_basis": [
+            8
+          ],
+          "twist_witnesses": [],
+          "width": 4
+        },
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "original_basis": [
+            2
+          ],
+          "place": 2482309513,
+          "twist_basis": [
+            2
+          ],
+          "twist_witnesses": [],
+          "width": 4
+        },
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            2,
+            2,
+            0,
+            2,
+            2,
+            2
+          ],
+          "original_basis": [
+            2
+          ],
+          "place": 1992691645648087,
+          "twist_basis": [
+            2
+          ],
+          "twist_witnesses": [
+            {
+              "signature": 2,
+              "valuation": 0,
+              "x": "-2"
+            }
+          ],
+          "width": 4
+        },
+        {
+          "dimension": 1,
+          "generic_signatures": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            2,
+            2,
+            0,
+            0,
+            2
+          ],
+          "original_basis": [
+            2
+          ],
+          "place": 1556252852391726354629684794059726062227237322704667229175658762505259467379346906344914138097,
+          "twist_basis": [
+            2
+          ],
+          "twist_witnesses": [],
+          "width": 4
+        }
+      ],
+      "local_change_dimension": 3,
+      "local_product_dimension": 12,
+      "original_basis_generic_correction_masks": [
+        14,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        12,
+        0,
+        0,
+        0,
+        0
+      ],
+      "original_product_basis": [
+        4,
+        784,
+        352,
+        4096,
+        65536,
+        2097152,
+        1048576,
+        201326592,
+        2147483648,
+        8589934592,
+        137438953472,
+        2199023255552
+      ],
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "status": "PASS",
+      "twist_product_basis": [
+        10,
+        784,
+        352,
+        10240,
+        65536,
+        2097152,
+        1048576,
+        100663296,
+        2147483648,
+        8589934592,
+        137438953472,
+        2199023255552
+      ]
+    }
+  ],
+  "schema": "rank-jump.generic-local-contraction.v1"
+}

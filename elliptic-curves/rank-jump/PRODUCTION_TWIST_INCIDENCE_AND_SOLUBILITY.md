@@ -1,5 +1,9 @@
 # Production controls: exact incidence contraction and persistent Sha blocks
 
+Follow-up: [generic classes alone force all three relative contractions](GENERIC_SUBGROUP_FORCES_TWIST_CONTRACTION.md).
+The exceptional-point dependency below concerns the individual full boundary
+dimensions; the relative R17-high comparison no longer needs it.
+
 The three production fibres with a certified complete relaxed boundary now
 have **exact full-Selmer dimension comparisons with their scalar −1 twists**.
 Their strict incidence space stays fixed, while part of the boundary disappears
@@ -89,7 +93,7 @@ gives the twist's CT form on the retained strict rational space W∩U:
 \[
  M_{-1}=A+A^{\mathsf T},\qquad
  A_{ij}=\chi_{\beta_i}([\mathfrak J_{\beta_j}]),
- \quad (\beta_j)=\mathfrak J_{\beta_j}^{,2}\text{ outside }S.
+ \quad (\beta_j)=\mathfrak J_{\beta_j}^{2}\text{ outside }S.
 \]
 
 Its ranks are 8,6,6. These are unchanged previously certified values;

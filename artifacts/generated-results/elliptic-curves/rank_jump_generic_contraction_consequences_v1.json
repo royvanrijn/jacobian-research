@@ -1,0 +1,48 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_generic_local_contraction_v1.json": "a358dc00af38e615c41e83f85ad45223385191b344368959b9a144aa08ca5ff2",
+    "elliptic-curves/rank-jump/generic_contraction_consequences.py": "f8d1a0f06d99c0f16a76a5e29fb98c48cbca8c1d5a677ba59e5caa3fe738acc5"
+  },
+  "rows": [
+    {
+      "boundary": "The original/twist Selmer dimension difference is exact. Neither individual dimension, rational rank, Sha dimension nor prospective performance is inferred.",
+      "case_index": 0,
+      "exact_Selmer_dimension_drop": 8,
+      "full_Selmer_identity": "Sel2(original) = Sel2(minus twist) + generic Kummer subgroup",
+      "generic_common_Selmer_dimension": 8,
+      "generic_local_image_dimension": 15,
+      "generic_rank_from_retained_family_certificate": 16,
+      "local_product_dimension": 16,
+      "quotient_identity": "Sel2(original)/G = Sel2(minus twist)/(G intersect Sel2(minus twist))",
+      "toy_model_only": "Uniform g-dimensional subspaces of an ell-dimensional binary space; no claim that arithmetic generic images follow this distribution.",
+      "toy_uniform_subspace_surjectivity_fraction": "256/257"
+    },
+    {
+      "boundary": "The original/twist Selmer dimension difference is exact. Neither individual dimension, rational rank, Sha dimension nor prospective performance is inferred.",
+      "case_index": 4,
+      "exact_Selmer_dimension_drop": 6,
+      "full_Selmer_identity": "Sel2(original) = Sel2(minus twist) + generic Kummer subgroup",
+      "generic_common_Selmer_dimension": 11,
+      "generic_local_image_dimension": 15,
+      "generic_rank_from_retained_family_certificate": 17,
+      "local_product_dimension": 17,
+      "quotient_identity": "Sel2(original)/G = Sel2(minus twist)/(G intersect Sel2(minus twist))",
+      "toy_model_only": "Uniform g-dimensional subspaces of an ell-dimensional binary space; no claim that arithmetic generic images follow this distribution.",
+      "toy_uniform_subspace_surjectivity_fraction": "2859118592/2863245995"
+    },
+    {
+      "boundary": "The original/twist Selmer dimension difference is exact. Neither individual dimension, rational rank, Sha dimension nor prospective performance is inferred.",
+      "case_index": 5,
+      "exact_Selmer_dimension_drop": 3,
+      "full_Selmer_identity": "Sel2(original) = Sel2(minus twist) + generic Kummer subgroup",
+      "generic_common_Selmer_dimension": 14,
+      "generic_local_image_dimension": 11,
+      "generic_rank_from_retained_family_certificate": 17,
+      "local_product_dimension": 12,
+      "quotient_identity": "Sel2(original)/G = Sel2(minus twist)/(G intersect Sel2(minus twist))",
+      "toy_model_only": "Uniform g-dimensional subspaces of an ell-dimensional binary space; no claim that arithmetic generic images follow this distribution.",
+      "toy_uniform_subspace_surjectivity_fraction": "584/585"
+    }
+  ],
+  "schema": "rank-jump.generic-contraction-consequences.v1"
+}
