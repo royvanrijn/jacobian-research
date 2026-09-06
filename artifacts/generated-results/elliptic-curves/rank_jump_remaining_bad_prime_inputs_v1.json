@@ -1,0 +1,6226 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+    "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+    "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/rank-jump/REMAINING_BAD_PRIMES_PROTOCOL.json": "d3009d79d5514afff4f9a334b535725ebfda47b1811c7d1897726d1e1fea04fd",
+    "elliptic-curves/rank-jump/bad_prime_support.py": "fe26c2799f39b9fa47b9901bbfae2f7e8fc5195cb52e130b31a3d80e7883a1af",
+    "elliptic-curves/rank-jump/dyadic_real_support.py": "92202922178595eb27d41a77db299767bf708ec07549ed391493a3e8084b844d",
+    "elliptic-curves/rank-jump/remaining_bad_primes.py": "5f3ed88d09c084d4749f751e441f6238bad55d8c6494a7206ab23aabaf5ad9d9"
+  },
+  "cases": [
+    {
+      "factor": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+          "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+          "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/REMAINING_BAD_PRIMES_PROTOCOL.json": "d3009d79d5514afff4f9a334b535725ebfda47b1811c7d1897726d1e1fea04fd",
+          "elliptic-curves/rank-jump/bad_prime_support.py": "fe26c2799f39b9fa47b9901bbfae2f7e8fc5195cb52e130b31a3d80e7883a1af",
+          "elliptic-curves/rank-jump/dyadic_real_support.py": "92202922178595eb27d41a77db299767bf708ec07549ed391493a3e8084b844d",
+          "elliptic-curves/rank-jump/remaining_bad_primes.py": "5f3ed88d09c084d4749f751e441f6238bad55d8c6494a7206ab23aabaf5ad9d9"
+        },
+        "case_index": 0,
+        "factorization_complete": true,
+        "factors": [
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            50
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            79,
+            2
+          ],
+          [
+            3677,
+            1
+          ],
+          [
+            19022417,
+            1
+          ],
+          [
+            9070489718245292721859,
+            1
+          ],
+          [
+            4994158462757908971835954831983527984976327938273965297923895199,
+            1
+          ]
+        ],
+        "id": "a1-fibration-05:307/206",
+        "model_discriminant": "931732463234871527519646574154638264348149080821884960195957870807209970449178559578502759096507949636388979895639950040986207146758542423827537027072",
+        "remaining_cofactor": "861705274828729287581965804400975436686159594234696606361750260022055744936830128075801412397",
+        "trial_factors": [
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            50
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            79,
+            2
+          ],
+          [
+            3677,
+            1
+          ]
+        ]
+      },
+      "local": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+          "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+          "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/REMAINING_BAD_PRIMES_PROTOCOL.json": "d3009d79d5514afff4f9a334b535725ebfda47b1811c7d1897726d1e1fea04fd",
+          "elliptic-curves/rank-jump/bad_prime_support.py": "fe26c2799f39b9fa47b9901bbfae2f7e8fc5195cb52e130b31a3d80e7883a1af",
+          "elliptic-curves/rank-jump/dyadic_real_support.py": "92202922178595eb27d41a77db299767bf708ec07549ed391493a3e8084b844d",
+          "elliptic-curves/rank-jump/remaining_bad_primes.py": "5f3ed88d09c084d4749f751e441f6238bad55d8c6494a7206ab23aabaf5ad9d9"
+        },
+        "case_index": 0,
+        "factorization_complete": true,
+        "id": "a1-fibration-05:307/206",
+        "local": [
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 17,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 2
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 2,
+              "kodaira_code": 4,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 4,
+              "tamagawa_number": 3
+            },
+            "point_kummer_dimension": 0,
+            "point_signature_rows": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "prime": 19,
+            "prime_decomposition": [
+              {
+                "ramification_index": 3,
+                "residue_degree": 1
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 2,
+              "kodaira_code": 3,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 3,
+              "tamagawa_number": 2
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 23,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 2,
+                "residue_degree": 1
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ]
+            ],
+            "prime": 31,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 2
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "point_kummer_dimension": 2,
+            "point_signature_rows": [
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 79,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 3677,
+            "prime_decomposition": [
+              {
+                "ramification_index": 2,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 19022417,
+            "prime_decomposition": [
+              {
+                "ramification_index": 2,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "prime": 9070489718245292721859,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 2,
+                "residue_degree": 1
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "prime": 4994158462757908971835954831983527984976327938273965297923895199,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 2,
+                "residue_degree": 1
+              }
+            ]
+          }
+        ],
+        "local_order_basis": [
+          "1",
+          "1/1458*z + 1/3",
+          "1/100061663605731497124*z^2 + 26256698999857691941/471140038259982*z - 612987379680583227571813265183530863390574/969423947037"
+        ],
+        "software": {
+          "pari": "(2, 17, 3)",
+          "sage": "10.9"
+        }
+      }
+    },
+    {
+      "factor": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+          "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+          "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/REMAINING_BAD_PRIMES_PROTOCOL.json": "d3009d79d5514afff4f9a334b535725ebfda47b1811c7d1897726d1e1fea04fd",
+          "elliptic-curves/rank-jump/bad_prime_support.py": "fe26c2799f39b9fa47b9901bbfae2f7e8fc5195cb52e130b31a3d80e7883a1af",
+          "elliptic-curves/rank-jump/dyadic_real_support.py": "92202922178595eb27d41a77db299767bf708ec07549ed391493a3e8084b844d",
+          "elliptic-curves/rank-jump/remaining_bad_primes.py": "5f3ed88d09c084d4749f751e441f6238bad55d8c6494a7206ab23aabaf5ad9d9"
+        },
+        "case_index": 1,
+        "factorization_complete": false,
+        "factors": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            45
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            13,
+            6
+          ],
+          [
+            71,
+            2
+          ],
+          [
+            1867,
+            2
+          ]
+        ],
+        "id": "a1-fibration-05:-3158/1291",
+        "model_discriminant": "-64054040534536385325912641398143008643723494030644591936427033640504206093428784886396123863913824705722416669334939919468232681292802029640842399529076648374679187095796009728",
+        "reason": "20-second timeout",
+        "remaining_cofactor": "20379267755386449148158013796725772683719713704447481019147204669075916392023398111744875945822830310431440298900161315357807075276249",
+        "trial_factors": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            45
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            13,
+            6
+          ],
+          [
+            71,
+            2
+          ],
+          [
+            1867,
+            2
+          ]
+        ]
+      },
+      "local": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+          "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+          "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/REMAINING_BAD_PRIMES_PROTOCOL.json": "d3009d79d5514afff4f9a334b535725ebfda47b1811c7d1897726d1e1fea04fd",
+          "elliptic-curves/rank-jump/bad_prime_support.py": "fe26c2799f39b9fa47b9901bbfae2f7e8fc5195cb52e130b31a3d80e7883a1af",
+          "elliptic-curves/rank-jump/dyadic_real_support.py": "92202922178595eb27d41a77db299767bf708ec07549ed391493a3e8084b844d",
+          "elliptic-curves/rank-jump/remaining_bad_primes.py": "5f3ed88d09c084d4749f751e441f6238bad55d8c6494a7206ab23aabaf5ad9d9"
+        },
+        "case_index": 1,
+        "factorization_complete": false,
+        "id": "a1-fibration-05:-3158/1291",
+        "local": [
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "point_kummer_dimension": 2,
+            "point_signature_rows": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 71,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ]
+            ],
+            "prime": 1867,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 2
+              }
+            ]
+          }
+        ],
+        "local_order_basis": [
+          "1",
+          "1/729*z - 1/3",
+          "1/175509583168172526*z^2 + 94998649334193122732966825/361130829564141*z - 49674774888591206019768371929451945012583201419158876/1486135101087"
+        ],
+        "software": {
+          "pari": "(2, 17, 3)",
+          "sage": "10.9"
+        }
+      }
+    },
+    {
+      "factor": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+          "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+          "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/REMAINING_BAD_PRIMES_PROTOCOL.json": "d3009d79d5514afff4f9a334b535725ebfda47b1811c7d1897726d1e1fea04fd",
+          "elliptic-curves/rank-jump/bad_prime_support.py": "fe26c2799f39b9fa47b9901bbfae2f7e8fc5195cb52e130b31a3d80e7883a1af",
+          "elliptic-curves/rank-jump/dyadic_real_support.py": "92202922178595eb27d41a77db299767bf708ec07549ed391493a3e8084b844d",
+          "elliptic-curves/rank-jump/remaining_bad_primes.py": "5f3ed88d09c084d4749f751e441f6238bad55d8c6494a7206ab23aabaf5ad9d9"
+        },
+        "case_index": 2,
+        "factorization_complete": false,
+        "factors": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            45
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            47,
+            2
+          ],
+          [
+            83,
+            2
+          ],
+          [
+            89,
+            2
+          ],
+          [
+            139,
+            2
+          ],
+          [
+            373,
+            2
+          ],
+          [
+            3541,
+            1
+          ]
+        ],
+        "id": "a1-fibration-04:-1647/91",
+        "model_discriminant": "-4634819701828334631328702652705291044100436640180887316083043107174727448025731960585683364641265153185294697430324999721556194506987324000000",
+        "reason": "20-second timeout",
+        "remaining_cofactor": "40007556397548647984806272263510886884461429117093102993376690898125522863900751",
+        "trial_factors": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            45
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            47,
+            2
+          ],
+          [
+            83,
+            2
+          ],
+          [
+            89,
+            2
+          ],
+          [
+            139,
+            2
+          ],
+          [
+            373,
+            2
+          ],
+          [
+            3541,
+            1
+          ]
+        ]
+      },
+      "local": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+          "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+          "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/REMAINING_BAD_PRIMES_PROTOCOL.json": "d3009d79d5514afff4f9a334b535725ebfda47b1811c7d1897726d1e1fea04fd",
+          "elliptic-curves/rank-jump/bad_prime_support.py": "fe26c2799f39b9fa47b9901bbfae2f7e8fc5195cb52e130b31a3d80e7883a1af",
+          "elliptic-curves/rank-jump/dyadic_real_support.py": "92202922178595eb27d41a77db299767bf708ec07549ed391493a3e8084b844d",
+          "elliptic-curves/rank-jump/remaining_bad_primes.py": "5f3ed88d09c084d4749f751e441f6238bad55d8c6494a7206ab23aabaf5ad9d9"
+        },
+        "case_index": 2,
+        "factorization_complete": false,
+        "id": "a1-fibration-04:-1647/91",
+        "local": [
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ]
+            ],
+            "prime": 23,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 2
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ]
+            ],
+            "prime": 31,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 2
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 47,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 2
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "point_kummer_dimension": 2,
+            "point_signature_rows": [
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ]
+            ],
+            "prime": 83,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ]
+            ],
+            "prime": 89,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 2
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 139,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 2
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "point_kummer_dimension": 2,
+            "point_signature_rows": [
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 373,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 3541,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 2,
+                "residue_degree": 1
+              }
+            ]
+          }
+        ],
+        "local_order_basis": [
+          "1",
+          "1/3645*z + 1/3",
+          "1/2707168415090206971689100*z^2 + 32946092418399944569/445624430467523781348*z - 27539070924445484087672859616961999779333/916922696435234118"
+        ],
+        "software": {
+          "pari": "(2, 17, 3)",
+          "sage": "10.9"
+        }
+      }
+    },
+    {
+      "factor": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+          "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+          "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/REMAINING_BAD_PRIMES_PROTOCOL.json": "d3009d79d5514afff4f9a334b535725ebfda47b1811c7d1897726d1e1fea04fd",
+          "elliptic-curves/rank-jump/bad_prime_support.py": "fe26c2799f39b9fa47b9901bbfae2f7e8fc5195cb52e130b31a3d80e7883a1af",
+          "elliptic-curves/rank-jump/dyadic_real_support.py": "92202922178595eb27d41a77db299767bf708ec07549ed391493a3e8084b844d",
+          "elliptic-curves/rank-jump/remaining_bad_primes.py": "5f3ed88d09c084d4749f751e441f6238bad55d8c6494a7206ab23aabaf5ad9d9"
+        },
+        "case_index": 3,
+        "factorization_complete": false,
+        "factors": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            43
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            29,
+            2
+          ],
+          [
+            283,
+            2
+          ],
+          [
+            4483,
+            2
+          ]
+        ],
+        "id": "a1-fibration-04:-2177/2397",
+        "model_discriminant": "-3834471965332923928184031673368868908128101456815098478669849320009561229734278906478080923222820270727707663718769576231692563193124312893331177863538184124873462774113802466048",
+        "reason": "20-second timeout",
+        "remaining_cofactor": "70223374440146900998971759609035379582966977988705996224240228304052256079726173610300760658228417309688637383430376191078787580007",
+        "trial_factors": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            43
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            29,
+            2
+          ],
+          [
+            283,
+            2
+          ],
+          [
+            4483,
+            2
+          ]
+        ]
+      },
+      "local": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+          "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+          "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/REMAINING_BAD_PRIMES_PROTOCOL.json": "d3009d79d5514afff4f9a334b535725ebfda47b1811c7d1897726d1e1fea04fd",
+          "elliptic-curves/rank-jump/bad_prime_support.py": "fe26c2799f39b9fa47b9901bbfae2f7e8fc5195cb52e130b31a3d80e7883a1af",
+          "elliptic-curves/rank-jump/dyadic_real_support.py": "92202922178595eb27d41a77db299767bf708ec07549ed391493a3e8084b844d",
+          "elliptic-curves/rank-jump/remaining_bad_primes.py": "5f3ed88d09c084d4749f751e441f6238bad55d8c6494a7206ab23aabaf5ad9d9"
+        },
+        "case_index": 3,
+        "factorization_complete": false,
+        "id": "a1-fibration-04:-2177/2397",
+        "local": [
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "point_kummer_dimension": 2,
+            "point_signature_rows": [
+              [
+                1,
+                0,
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                0
+              ]
+            ],
+            "prime": 29,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 283,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 2
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 4483,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 2
+              }
+            ]
+          }
+        ],
+        "local_order_basis": [
+          "1",
+          "1/729*z - 1/3",
+          "1/1345152170545226316*z^2 + 34591723449789678647357641/425815818469524*z - 18824892024250259686110738912397840176555468989398159/876164235534"
+        ],
+        "software": {
+          "pari": "(2, 17, 3)",
+          "sage": "10.9"
+        }
+      }
+    },
+    {
+      "factor": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+          "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+          "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/REMAINING_BAD_PRIMES_PROTOCOL.json": "d3009d79d5514afff4f9a334b535725ebfda47b1811c7d1897726d1e1fea04fd",
+          "elliptic-curves/rank-jump/bad_prime_support.py": "fe26c2799f39b9fa47b9901bbfae2f7e8fc5195cb52e130b31a3d80e7883a1af",
+          "elliptic-curves/rank-jump/dyadic_real_support.py": "92202922178595eb27d41a77db299767bf708ec07549ed391493a3e8084b844d",
+          "elliptic-curves/rank-jump/remaining_bad_primes.py": "5f3ed88d09c084d4749f751e441f6238bad55d8c6494a7206ab23aabaf5ad9d9"
+        },
+        "case_index": 4,
+        "factorization_complete": true,
+        "factors": [
+          [
+            2,
+            77
+          ],
+          [
+            3,
+            49
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            11,
+            3
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            71,
+            2
+          ],
+          [
+            107,
+            2
+          ],
+          [
+            283,
+            2
+          ],
+          [
+            22013,
+            1
+          ],
+          [
+            16644390691,
+            1
+          ],
+          [
+            49545498746840639425367772677949130481018258902148022792478518127145162432632657263874589,
+            1
+          ]
+        ],
+        "id": "published-R17:-2300/843",
+        "model_discriminant": "-2756529812763897631099501258106997508863540300911855194337938010515240494452019259728481785773912517260053063262862478440654039508367364717444444868317709618521778853706203136000000",
+        "remaining_cofactor": "18153122548998660363824393812152293652124249995371424695962201391059581398034658254976820834963781640987",
+        "trial_factors": [
+          [
+            2,
+            77
+          ],
+          [
+            3,
+            49
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            11,
+            3
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            71,
+            2
+          ],
+          [
+            107,
+            2
+          ],
+          [
+            283,
+            2
+          ]
+        ]
+      },
+      "local": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+          "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+          "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/REMAINING_BAD_PRIMES_PROTOCOL.json": "d3009d79d5514afff4f9a334b535725ebfda47b1811c7d1897726d1e1fea04fd",
+          "elliptic-curves/rank-jump/bad_prime_support.py": "fe26c2799f39b9fa47b9901bbfae2f7e8fc5195cb52e130b31a3d80e7883a1af",
+          "elliptic-curves/rank-jump/dyadic_real_support.py": "92202922178595eb27d41a77db299767bf708ec07549ed391493a3e8084b844d",
+          "elliptic-curves/rank-jump/remaining_bad_primes.py": "5f3ed88d09c084d4749f751e441f6238bad55d8c6494a7206ab23aabaf5ad9d9"
+        },
+        "case_index": 4,
+        "factorization_complete": true,
+        "id": "published-R17:-2300/843",
+        "local": [
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ]
+            ],
+            "prime": 71,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 2
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "point_kummer_dimension": 2,
+            "point_signature_rows": [
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 107,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "point_kummer_dimension": 2,
+            "point_signature_rows": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0
+              ]
+            ],
+            "prime": 283,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ]
+            ],
+            "prime": 22013,
+            "prime_decomposition": [
+              {
+                "ramification_index": 2,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "prime": 16644390691,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 2,
+                "residue_degree": 1
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "prime": 49545498746840639425367772677949130481018258902148022792478518127145162432632657263874589,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 2,
+                "residue_degree": 1
+              }
+            ]
+          }
+        ],
+        "local_order_basis": [
+          "1",
+          "1/1306368*z - 1/3",
+          "1/1272935834815688623295299584000*z^2 + 1622127449318056687789063/2923224929305575358464000*z - 2642383873303952808397640221623973104869694289969/3356510105849472000"
+        ],
+        "software": {
+          "pari": "(2, 17, 3)",
+          "sage": "10.9"
+        }
+      }
+    },
+    {
+      "factor": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+          "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+          "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/REMAINING_BAD_PRIMES_PROTOCOL.json": "d3009d79d5514afff4f9a334b535725ebfda47b1811c7d1897726d1e1fea04fd",
+          "elliptic-curves/rank-jump/bad_prime_support.py": "fe26c2799f39b9fa47b9901bbfae2f7e8fc5195cb52e130b31a3d80e7883a1af",
+          "elliptic-curves/rank-jump/dyadic_real_support.py": "92202922178595eb27d41a77db299767bf708ec07549ed391493a3e8084b844d",
+          "elliptic-curves/rank-jump/remaining_bad_primes.py": "5f3ed88d09c084d4749f751e441f6238bad55d8c6494a7206ab23aabaf5ad9d9"
+        },
+        "case_index": 5,
+        "factorization_complete": true,
+        "factors": [
+          [
+            2,
+            73
+          ],
+          [
+            3,
+            48
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            6158521,
+            1
+          ],
+          [
+            2482309513,
+            1
+          ],
+          [
+            1992691645648087,
+            1
+          ],
+          [
+            1556252852391726354629684794059726062227237322704667229175658762505259467379346906344914138097,
+            1
+          ]
+        ],
+        "id": "published-R17:-1561/3133",
+        "model_discriminant": "38269089015078657247313604768895453799273505218164304214077199692581723567548152711330338055464193904175975232558874615495017330586853745467086609014978748504912894491136884736000000",
+        "remaining_cofactor": "47408107484192342903370128296980081313737451729056156559605542377050182789999672260716097237567341538121946986352943582719847",
+        "trial_factors": [
+          [
+            2,
+            73
+          ],
+          [
+            3,
+            48
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            13,
+            4
+          ]
+        ]
+      },
+      "local": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+          "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+          "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/REMAINING_BAD_PRIMES_PROTOCOL.json": "d3009d79d5514afff4f9a334b535725ebfda47b1811c7d1897726d1e1fea04fd",
+          "elliptic-curves/rank-jump/bad_prime_support.py": "fe26c2799f39b9fa47b9901bbfae2f7e8fc5195cb52e130b31a3d80e7883a1af",
+          "elliptic-curves/rank-jump/dyadic_real_support.py": "92202922178595eb27d41a77db299767bf708ec07549ed391493a3e8084b844d",
+          "elliptic-curves/rank-jump/remaining_bad_primes.py": "5f3ed88d09c084d4749f751e441f6238bad55d8c6494a7206ab23aabaf5ad9d9"
+        },
+        "case_index": 5,
+        "factorization_complete": true,
+        "id": "published-R17:-1561/3133",
+        "local": [
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "prime": 6158521,
+            "prime_decomposition": [
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 2,
+                "residue_degree": 1
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 2482309513,
+            "prime_decomposition": [
+              {
+                "ramification_index": 2,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ]
+            ],
+            "prime": 1992691645648087,
+            "prime_decomposition": [
+              {
+                "ramification_index": 2,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              }
+            ]
+          },
+          {
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "point_kummer_dimension": 1,
+            "point_signature_rows": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ]
+            ],
+            "prime": 1556252852391726354629684794059726062227237322704667229175658762505259467379346906344914138097,
+            "prime_decomposition": [
+              {
+                "ramification_index": 2,
+                "residue_degree": 1
+              },
+              {
+                "ramification_index": 1,
+                "residue_degree": 1
+              }
+            ]
+          }
+        ],
+        "local_order_basis": [
+          "1",
+          "1/933120*z + 1/3",
+          "1/2691257603747689267200*z^2 + 696769512927799719041861/8652448571719680*z - 3073886701070169592870987072002986160869806274713/13908900096"
+        ],
+        "software": {
+          "pari": "(2, 17, 3)",
+          "sage": "10.9"
+        }
+      }
+    }
+  ],
+  "schema": "rank-jump.remaining-bad-prime-inputs.v1"
+}

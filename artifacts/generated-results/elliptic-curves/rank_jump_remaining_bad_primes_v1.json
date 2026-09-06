@@ -1,0 +1,4324 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+    "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+    "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/rank-jump/REMAINING_BAD_PRIMES_PROTOCOL.json": "d3009d79d5514afff4f9a334b535725ebfda47b1811c7d1897726d1e1fea04fd",
+    "elliptic-curves/rank-jump/bad_prime_support.py": "fe26c2799f39b9fa47b9901bbfae2f7e8fc5195cb52e130b31a3d80e7883a1af",
+    "elliptic-curves/rank-jump/dyadic_real_support.py": "92202922178595eb27d41a77db299767bf708ec07549ed391493a3e8084b844d",
+    "elliptic-curves/rank-jump/remaining_bad_primes.py": "5f3ed88d09c084d4749f751e441f6238bad55d8c6494a7206ab23aabaf5ad9d9"
+  },
+  "boundary": "Only the finite bad-place dictionary plus 2 and infinity. No full Selmer, global divisibility, exact full rank or selector claim.",
+  "input_sha256": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+  "rows": [
+    {
+      "bad_places_and_two_real": {
+        "boundary": "Local image in this fixed prime dictionary only; quotient coordinates refer to the specified independent point basis.",
+        "full_product_point_image_dimension": 16,
+        "generic_dimension": 16,
+        "generic_image_is_full_product_point_image": false,
+        "generic_right_inverse_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "id": "a1-fibration-05:307/206",
+        "joint_exceptional_kernel_in_quotient_coordinates": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "joint_exceptional_residual_signatures": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "joint_generic_image_dimension": 15,
+        "joint_quotient_support_dimension": 0,
+        "joint_witness_image_dimension": 15,
+        "local": [
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 18,
+              "minimal_change": [
+                "27",
+                "243",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 14,
+              "tamagawa_number": 14
+            },
+            "prime": 3,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 7,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 9,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 5,
+              "tamagawa_number": 5
+            },
+            "prime": 13,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 7,
+              "kodaira_code": -6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 13,
+              "tamagawa_number": 4
+            },
+            "prime": 2,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "cubic_discriminant_sign": 1
+            },
+            "prime": "infinity",
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 17,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 0,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 0,
+            "local_reduction": {
+              "conductor_exponent": 2,
+              "kodaira_code": 4,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 4,
+              "tamagawa_number": 3
+            },
+            "prime": 19,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 0
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 2,
+              "kodaira_code": 3,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 3,
+              "tamagawa_number": 2
+            },
+            "prime": 23,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 31,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 79,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 3677,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 19022417,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 9070489718245292721859,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 4994158462757908971835954831983527984976327938273965297923895199,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          }
+        ],
+        "simultaneous_generic_corrections": [
+          {
+            "generic_correction_mask": 28252,
+            "quotient_index": 0
+          },
+          {
+            "generic_correction_mask": 3707,
+            "quotient_index": 1
+          },
+          {
+            "generic_correction_mask": 27337,
+            "quotient_index": 2
+          },
+          {
+            "generic_correction_mask": 2132,
+            "quotient_index": 3
+          },
+          {
+            "generic_correction_mask": 22527,
+            "quotient_index": 4
+          },
+          {
+            "generic_correction_mask": 15291,
+            "quotient_index": 5
+          },
+          {
+            "generic_correction_mask": 24849,
+            "quotient_index": 6
+          },
+          {
+            "generic_correction_mask": 30396,
+            "quotient_index": 7
+          },
+          {
+            "generic_correction_mask": 18959,
+            "quotient_index": 8
+          }
+        ],
+        "witness_quotient_dimension": 9
+      },
+      "extended_dictionary": {
+        "boundary": "Local image in this fixed prime dictionary only; quotient coordinates refer to the specified independent point basis.",
+        "full_product_point_image_dimension": 18,
+        "generic_dimension": 16,
+        "generic_image_is_full_product_point_image": false,
+        "generic_right_inverse_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "id": "a1-fibration-05:307/206",
+        "joint_exceptional_kernel_in_quotient_coordinates": [
+          3,
+          4,
+          8,
+          17,
+          33,
+          65,
+          128,
+          257
+        ],
+        "joint_exceptional_residual_signatures": [
+          4,
+          4,
+          0,
+          0,
+          4,
+          4,
+          4,
+          0,
+          4
+        ],
+        "joint_generic_image_dimension": 16,
+        "joint_quotient_support_dimension": 1,
+        "joint_witness_image_dimension": 17,
+        "local": [
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 18,
+              "minimal_change": [
+                "27",
+                "243",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 14,
+              "tamagawa_number": 14
+            },
+            "prime": 3,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 0,
+              "kodaira_code": 1,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 0,
+              "tamagawa_number": 1
+            },
+            "prime": 5,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 7,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 0,
+              "kodaira_code": 1,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 0,
+              "tamagawa_number": 1
+            },
+            "prime": 11,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 9,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 5,
+              "tamagawa_number": 5
+            },
+            "prime": 13,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 7,
+              "kodaira_code": -6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 13,
+              "tamagawa_number": 4
+            },
+            "prime": 2,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "cubic_discriminant_sign": 1
+            },
+            "prime": "infinity",
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 17,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 0,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 0,
+            "local_reduction": {
+              "conductor_exponent": 2,
+              "kodaira_code": 4,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 4,
+              "tamagawa_number": 3
+            },
+            "prime": 19,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 0
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 2,
+              "kodaira_code": 3,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 3,
+              "tamagawa_number": 2
+            },
+            "prime": 23,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 31,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 79,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 3677,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 19022417,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 9070489718245292721859,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 4994158462757908971835954831983527984976327938273965297923895199,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          }
+        ],
+        "simultaneous_generic_corrections": [
+          {
+            "generic_correction_mask": null,
+            "quotient_index": 0
+          },
+          {
+            "generic_correction_mask": null,
+            "quotient_index": 1
+          },
+          {
+            "generic_correction_mask": 27337,
+            "quotient_index": 2
+          },
+          {
+            "generic_correction_mask": 34328,
+            "quotient_index": 3
+          },
+          {
+            "generic_correction_mask": null,
+            "quotient_index": 4
+          },
+          {
+            "generic_correction_mask": null,
+            "quotient_index": 5
+          },
+          {
+            "generic_correction_mask": null,
+            "quotient_index": 6
+          },
+          {
+            "generic_correction_mask": 63728,
+            "quotient_index": 7
+          },
+          {
+            "generic_correction_mask": null,
+            "quotient_index": 8
+          }
+        ],
+        "witness_quotient_dimension": 9
+      },
+      "factorization_complete": true,
+      "id": "a1-fibration-05:307/206",
+      "tested_all_bad_places": true
+    },
+    {
+      "bad_places_and_two_real": {
+        "boundary": "Local image in this fixed prime dictionary only; quotient coordinates refer to the specified independent point basis.",
+        "full_product_point_image_dimension": 8,
+        "generic_dimension": 16,
+        "generic_image_is_full_product_point_image": true,
+        "generic_right_inverse_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          14
+        ],
+        "id": "a1-fibration-05:-3158/1291",
+        "joint_exceptional_kernel_in_quotient_coordinates": [],
+        "joint_exceptional_residual_signatures": [],
+        "joint_generic_image_dimension": 8,
+        "joint_quotient_support_dimension": 0,
+        "joint_witness_image_dimension": 8,
+        "local": [
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 13,
+              "minimal_change": [
+                "27",
+                "243",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 9,
+              "tamagawa_number": 9
+            },
+            "prime": 3,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 7,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 10,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 6,
+              "tamagawa_number": 6
+            },
+            "prime": 13,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 3,
+              "kodaira_code": -5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 8,
+              "tamagawa_number": 4
+            },
+            "prime": 2,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 0,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 0,
+            "local_reduction": {
+              "cubic_discriminant_sign": -1
+            },
+            "prime": "infinity",
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 0
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 71,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 1867,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          }
+        ],
+        "simultaneous_generic_corrections": [],
+        "witness_quotient_dimension": 0
+      },
+      "extended_dictionary": {
+        "boundary": "Local image in this fixed prime dictionary only; quotient coordinates refer to the specified independent point basis.",
+        "full_product_point_image_dimension": 10,
+        "generic_dimension": 16,
+        "generic_image_is_full_product_point_image": true,
+        "generic_right_inverse_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          14,
+          15
+        ],
+        "id": "a1-fibration-05:-3158/1291",
+        "joint_exceptional_kernel_in_quotient_coordinates": [],
+        "joint_exceptional_residual_signatures": [],
+        "joint_generic_image_dimension": 10,
+        "joint_quotient_support_dimension": 0,
+        "joint_witness_image_dimension": 10,
+        "local": [
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 13,
+              "minimal_change": [
+                "27",
+                "243",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 9,
+              "tamagawa_number": 9
+            },
+            "prime": 3,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 0,
+              "kodaira_code": 1,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 0,
+              "tamagawa_number": 1
+            },
+            "prime": 5,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 7,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 0,
+              "kodaira_code": 1,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 0,
+              "tamagawa_number": 1
+            },
+            "prime": 11,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 10,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 6,
+              "tamagawa_number": 6
+            },
+            "prime": 13,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 3,
+              "kodaira_code": -5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 8,
+              "tamagawa_number": 4
+            },
+            "prime": 2,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 0,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 0,
+            "local_reduction": {
+              "cubic_discriminant_sign": -1
+            },
+            "prime": "infinity",
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 0
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 71,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 1867,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          }
+        ],
+        "simultaneous_generic_corrections": [],
+        "witness_quotient_dimension": 0
+      },
+      "factorization_complete": false,
+      "id": "a1-fibration-05:-3158/1291",
+      "tested_all_bad_places": false
+    },
+    {
+      "bad_places_and_two_real": {
+        "boundary": "Local image in this fixed prime dictionary only; quotient coordinates refer to the specified independent point basis.",
+        "full_product_point_image_dimension": 17,
+        "generic_dimension": 16,
+        "generic_image_is_full_product_point_image": false,
+        "generic_right_inverse_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "id": "a1-fibration-04:-1647/91",
+        "joint_exceptional_kernel_in_quotient_coordinates": [
+          1,
+          10,
+          20,
+          32,
+          66,
+          128,
+          258
+        ],
+        "joint_exceptional_residual_signatures": [
+          0,
+          8,
+          1392640,
+          8,
+          1392640,
+          0,
+          8,
+          0,
+          8
+        ],
+        "joint_generic_image_dimension": 15,
+        "joint_quotient_support_dimension": 2,
+        "joint_witness_image_dimension": 17,
+        "local": [
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 13,
+              "minimal_change": [
+                "27",
+                "243",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 9,
+              "tamagawa_number": 9
+            },
+            "prime": 3,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 2,
+              "kodaira_code": -1,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 6,
+              "tamagawa_number": 4
+            },
+            "prime": 5,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 9,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 5,
+              "tamagawa_number": 5
+            },
+            "prime": 7,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 3,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 3,
+            "local_reduction": {
+              "conductor_exponent": 3,
+              "kodaira_code": -5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 8,
+              "tamagawa_number": 4
+            },
+            "prime": 2,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 3
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 0,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 0,
+            "local_reduction": {
+              "cubic_discriminant_sign": -1
+            },
+            "prime": "infinity",
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 0
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 23,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 31,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 47,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 83,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 89,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 139,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 373,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 3541,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          }
+        ],
+        "simultaneous_generic_corrections": [
+          {
+            "generic_correction_mask": 8023,
+            "quotient_index": 0
+          },
+          {
+            "generic_correction_mask": null,
+            "quotient_index": 1
+          },
+          {
+            "generic_correction_mask": null,
+            "quotient_index": 2
+          },
+          {
+            "generic_correction_mask": null,
+            "quotient_index": 3
+          },
+          {
+            "generic_correction_mask": null,
+            "quotient_index": 4
+          },
+          {
+            "generic_correction_mask": 13676,
+            "quotient_index": 5
+          },
+          {
+            "generic_correction_mask": null,
+            "quotient_index": 6
+          },
+          {
+            "generic_correction_mask": 29026,
+            "quotient_index": 7
+          },
+          {
+            "generic_correction_mask": null,
+            "quotient_index": 8
+          }
+        ],
+        "witness_quotient_dimension": 9
+      },
+      "extended_dictionary": {
+        "boundary": "Local image in this fixed prime dictionary only; quotient coordinates refer to the specified independent point basis.",
+        "full_product_point_image_dimension": 18,
+        "generic_dimension": 16,
+        "generic_image_is_full_product_point_image": false,
+        "generic_right_inverse_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "id": "a1-fibration-04:-1647/91",
+        "joint_exceptional_kernel_in_quotient_coordinates": [
+          1,
+          10,
+          20,
+          32,
+          66,
+          128,
+          258
+        ],
+        "joint_exceptional_residual_signatures": [
+          0,
+          8,
+          89128960,
+          8,
+          89128960,
+          0,
+          8,
+          0,
+          8
+        ],
+        "joint_generic_image_dimension": 16,
+        "joint_quotient_support_dimension": 2,
+        "joint_witness_image_dimension": 18,
+        "local": [
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 13,
+              "minimal_change": [
+                "27",
+                "243",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 9,
+              "tamagawa_number": 9
+            },
+            "prime": 3,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 2,
+              "kodaira_code": -1,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 6,
+              "tamagawa_number": 4
+            },
+            "prime": 5,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 9,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 5,
+              "tamagawa_number": 5
+            },
+            "prime": 7,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 0,
+              "kodaira_code": 1,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 0,
+              "tamagawa_number": 1
+            },
+            "prime": 11,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 0,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 0,
+            "local_reduction": {
+              "conductor_exponent": 0,
+              "kodaira_code": 1,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 0,
+              "tamagawa_number": 1
+            },
+            "prime": 13,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 0
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 3,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 3,
+            "local_reduction": {
+              "conductor_exponent": 3,
+              "kodaira_code": -5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 8,
+              "tamagawa_number": 4
+            },
+            "prime": 2,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 3
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 0,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 0,
+            "local_reduction": {
+              "cubic_discriminant_sign": -1
+            },
+            "prime": "infinity",
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 0
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 23,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 31,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 47,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 83,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 89,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 139,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 373,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 3541,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          }
+        ],
+        "simultaneous_generic_corrections": [
+          {
+            "generic_correction_mask": 49644,
+            "quotient_index": 0
+          },
+          {
+            "generic_correction_mask": null,
+            "quotient_index": 1
+          },
+          {
+            "generic_correction_mask": null,
+            "quotient_index": 2
+          },
+          {
+            "generic_correction_mask": null,
+            "quotient_index": 3
+          },
+          {
+            "generic_correction_mask": null,
+            "quotient_index": 4
+          },
+          {
+            "generic_correction_mask": 13676,
+            "quotient_index": 5
+          },
+          {
+            "generic_correction_mask": null,
+            "quotient_index": 6
+          },
+          {
+            "generic_correction_mask": 29026,
+            "quotient_index": 7
+          },
+          {
+            "generic_correction_mask": null,
+            "quotient_index": 8
+          }
+        ],
+        "witness_quotient_dimension": 9
+      },
+      "factorization_complete": false,
+      "id": "a1-fibration-04:-1647/91",
+      "tested_all_bad_places": false
+    },
+    {
+      "bad_places_and_two_real": {
+        "boundary": "Local image in this fixed prime dictionary only; quotient coordinates refer to the specified independent point basis.",
+        "full_product_point_image_dimension": 8,
+        "generic_dimension": 16,
+        "generic_image_is_full_product_point_image": true,
+        "generic_right_inverse_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10
+        ],
+        "id": "a1-fibration-04:-2177/2397",
+        "joint_exceptional_kernel_in_quotient_coordinates": [],
+        "joint_exceptional_residual_signatures": [],
+        "joint_generic_image_dimension": 8,
+        "joint_quotient_support_dimension": 0,
+        "joint_witness_image_dimension": 8,
+        "local": [
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 11,
+              "minimal_change": [
+                "27",
+                "243",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 7,
+              "tamagawa_number": 7
+            },
+            "prime": 3,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 9,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 5,
+              "tamagawa_number": 5
+            },
+            "prime": 7,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 0,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 0,
+            "local_reduction": {
+              "conductor_exponent": 2,
+              "kodaira_code": 4,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 4,
+              "tamagawa_number": 3
+            },
+            "prime": 13,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 0
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 3,
+              "kodaira_code": -5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 8,
+              "tamagawa_number": 4
+            },
+            "prime": 2,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 0,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 0,
+            "local_reduction": {
+              "cubic_discriminant_sign": -1
+            },
+            "prime": "infinity",
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 0
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 29,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 283,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 4483,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          }
+        ],
+        "simultaneous_generic_corrections": [],
+        "witness_quotient_dimension": 0
+      },
+      "extended_dictionary": {
+        "boundary": "Local image in this fixed prime dictionary only; quotient coordinates refer to the specified independent point basis.",
+        "full_product_point_image_dimension": 10,
+        "generic_dimension": 16,
+        "generic_image_is_full_product_point_image": true,
+        "generic_right_inverse_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          10,
+          11
+        ],
+        "id": "a1-fibration-04:-2177/2397",
+        "joint_exceptional_kernel_in_quotient_coordinates": [],
+        "joint_exceptional_residual_signatures": [],
+        "joint_generic_image_dimension": 10,
+        "joint_quotient_support_dimension": 0,
+        "joint_witness_image_dimension": 10,
+        "local": [
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 11,
+              "minimal_change": [
+                "27",
+                "243",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 7,
+              "tamagawa_number": 7
+            },
+            "prime": 3,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 0,
+              "kodaira_code": 1,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 0,
+              "tamagawa_number": 1
+            },
+            "prime": 5,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 9,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 5,
+              "tamagawa_number": 5
+            },
+            "prime": 7,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 0,
+              "kodaira_code": 1,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 0,
+              "tamagawa_number": 1
+            },
+            "prime": 11,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 0,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 0,
+            "local_reduction": {
+              "conductor_exponent": 2,
+              "kodaira_code": 4,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 4,
+              "tamagawa_number": 3
+            },
+            "prime": 13,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 0
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 3,
+              "kodaira_code": -5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 8,
+              "tamagawa_number": 4
+            },
+            "prime": 2,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 0,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 0,
+            "local_reduction": {
+              "cubic_discriminant_sign": -1
+            },
+            "prime": "infinity",
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 0
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 29,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 283,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 4483,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          }
+        ],
+        "simultaneous_generic_corrections": [],
+        "witness_quotient_dimension": 0
+      },
+      "factorization_complete": false,
+      "id": "a1-fibration-04:-2177/2397",
+      "tested_all_bad_places": false
+    },
+    {
+      "bad_places_and_two_real": {
+        "boundary": "Local image in this fixed prime dictionary only; quotient coordinates refer to the specified independent point basis.",
+        "full_product_point_image_dimension": 17,
+        "generic_dimension": 17,
+        "generic_image_is_full_product_point_image": false,
+        "generic_right_inverse_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          15
+        ],
+        "id": "published-R17:-2300/843",
+        "joint_exceptional_kernel_in_quotient_coordinates": [
+          1,
+          4,
+          8,
+          16,
+          34,
+          64
+        ],
+        "joint_exceptional_residual_signatures": [
+          0,
+          112,
+          0,
+          0,
+          0,
+          112,
+          0
+        ],
+        "joint_generic_image_dimension": 15,
+        "joint_quotient_support_dimension": 1,
+        "joint_witness_image_dimension": 16,
+        "local": [
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 17,
+              "minimal_change": [
+                "27",
+                "243",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 13,
+              "tamagawa_number": 13
+            },
+            "prime": 3,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 10,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 6,
+              "tamagawa_number": 6
+            },
+            "prime": 5,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 2,
+              "kodaira_code": -1,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 6,
+              "tamagawa_number": 4
+            },
+            "prime": 7,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 7,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 3,
+              "tamagawa_number": 3
+            },
+            "prime": 11,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 9,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 5,
+              "tamagawa_number": 5
+            },
+            "prime": 13,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 21,
+              "minimal_change": [
+                "32",
+                "-256",
+                "16",
+                "16384"
+              ],
+              "minimal_discriminant_valuation": 17,
+              "tamagawa_number": 17
+            },
+            "prime": 2,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 0,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 0,
+            "local_reduction": {
+              "cubic_discriminant_sign": -1
+            },
+            "prime": "infinity",
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 0
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 71,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 107,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 283,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 22013,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 16644390691,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 49545498746840639425367772677949130481018258902148022792478518127145162432632657263874589,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          }
+        ],
+        "simultaneous_generic_corrections": [
+          {
+            "generic_correction_mask": 40084,
+            "quotient_index": 0
+          },
+          {
+            "generic_correction_mask": null,
+            "quotient_index": 1
+          },
+          {
+            "generic_correction_mask": 40459,
+            "quotient_index": 2
+          },
+          {
+            "generic_correction_mask": 10747,
+            "quotient_index": 3
+          },
+          {
+            "generic_correction_mask": 10151,
+            "quotient_index": 4
+          },
+          {
+            "generic_correction_mask": null,
+            "quotient_index": 5
+          },
+          {
+            "generic_correction_mask": 2057,
+            "quotient_index": 6
+          }
+        ],
+        "witness_quotient_dimension": 7
+      },
+      "extended_dictionary": {
+        "boundary": "Local image in this fixed prime dictionary only; quotient coordinates refer to the specified independent point basis.",
+        "full_product_point_image_dimension": 17,
+        "generic_dimension": 17,
+        "generic_image_is_full_product_point_image": false,
+        "generic_right_inverse_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          15
+        ],
+        "id": "published-R17:-2300/843",
+        "joint_exceptional_kernel_in_quotient_coordinates": [
+          1,
+          4,
+          8,
+          16,
+          34,
+          64
+        ],
+        "joint_exceptional_residual_signatures": [
+          0,
+          112,
+          0,
+          0,
+          0,
+          112,
+          0
+        ],
+        "joint_generic_image_dimension": 15,
+        "joint_quotient_support_dimension": 1,
+        "joint_witness_image_dimension": 16,
+        "local": [
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 17,
+              "minimal_change": [
+                "27",
+                "243",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 13,
+              "tamagawa_number": 13
+            },
+            "prime": 3,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 10,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 6,
+              "tamagawa_number": 6
+            },
+            "prime": 5,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 2,
+              "kodaira_code": -1,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 6,
+              "tamagawa_number": 4
+            },
+            "prime": 7,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 7,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 3,
+              "tamagawa_number": 3
+            },
+            "prime": 11,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 9,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 5,
+              "tamagawa_number": 5
+            },
+            "prime": 13,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 21,
+              "minimal_change": [
+                "32",
+                "-256",
+                "16",
+                "16384"
+              ],
+              "minimal_discriminant_valuation": 17,
+              "tamagawa_number": 17
+            },
+            "prime": 2,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 0,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 0,
+            "local_reduction": {
+              "cubic_discriminant_sign": -1
+            },
+            "prime": "infinity",
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 0
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 71,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 107,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 6,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 2,
+              "tamagawa_number": 2
+            },
+            "prime": 283,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 22013,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 16644390691,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 49545498746840639425367772677949130481018258902148022792478518127145162432632657263874589,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          }
+        ],
+        "simultaneous_generic_corrections": [
+          {
+            "generic_correction_mask": 40084,
+            "quotient_index": 0
+          },
+          {
+            "generic_correction_mask": null,
+            "quotient_index": 1
+          },
+          {
+            "generic_correction_mask": 40459,
+            "quotient_index": 2
+          },
+          {
+            "generic_correction_mask": 10747,
+            "quotient_index": 3
+          },
+          {
+            "generic_correction_mask": 10151,
+            "quotient_index": 4
+          },
+          {
+            "generic_correction_mask": null,
+            "quotient_index": 5
+          },
+          {
+            "generic_correction_mask": 2057,
+            "quotient_index": 6
+          }
+        ],
+        "witness_quotient_dimension": 7
+      },
+      "factorization_complete": true,
+      "id": "published-R17:-2300/843",
+      "tested_all_bad_places": true
+    },
+    {
+      "bad_places_and_two_real": {
+        "boundary": "Local image in this fixed prime dictionary only; quotient coordinates refer to the specified independent point basis.",
+        "full_product_point_image_dimension": 12,
+        "generic_dimension": 17,
+        "generic_image_is_full_product_point_image": false,
+        "generic_right_inverse_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11
+        ],
+        "id": "published-R17:-1561/3133",
+        "joint_exceptional_kernel_in_quotient_coordinates": [],
+        "joint_exceptional_residual_signatures": [],
+        "joint_generic_image_dimension": 11,
+        "joint_quotient_support_dimension": 0,
+        "joint_witness_image_dimension": 11,
+        "local": [
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 16,
+              "minimal_change": [
+                "27",
+                "243",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 12,
+              "tamagawa_number": 12
+            },
+            "prime": 3,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 2,
+              "kodaira_code": -1,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 6,
+              "tamagawa_number": 4
+            },
+            "prime": 5,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 8,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 4,
+              "tamagawa_number": 4
+            },
+            "prime": 7,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 8,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 4,
+              "tamagawa_number": 4
+            },
+            "prime": 13,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 17,
+              "minimal_change": [
+                "32",
+                "-256",
+                "16",
+                "16384"
+              ],
+              "minimal_discriminant_valuation": 13,
+              "tamagawa_number": 13
+            },
+            "prime": 2,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "cubic_discriminant_sign": 1
+            },
+            "prime": "infinity",
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 6158521,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 2482309513,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 1992691645648087,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 1556252852391726354629684794059726062227237322704667229175658762505259467379346906344914138097,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          }
+        ],
+        "simultaneous_generic_corrections": [],
+        "witness_quotient_dimension": 0
+      },
+      "extended_dictionary": {
+        "boundary": "Local image in this fixed prime dictionary only; quotient coordinates refer to the specified independent point basis.",
+        "full_product_point_image_dimension": 13,
+        "generic_dimension": 17,
+        "generic_image_is_full_product_point_image": false,
+        "generic_right_inverse_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          16
+        ],
+        "id": "published-R17:-1561/3133",
+        "joint_exceptional_kernel_in_quotient_coordinates": [],
+        "joint_exceptional_residual_signatures": [],
+        "joint_generic_image_dimension": 12,
+        "joint_quotient_support_dimension": 0,
+        "joint_witness_image_dimension": 12,
+        "local": [
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 16,
+              "minimal_change": [
+                "27",
+                "243",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 12,
+              "tamagawa_number": 12
+            },
+            "prime": 3,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 2,
+              "kodaira_code": -1,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 6,
+              "tamagawa_number": 4
+            },
+            "prime": 5,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 8,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 4,
+              "tamagawa_number": 4
+            },
+            "prime": 7,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 0,
+              "kodaira_code": 1,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 0,
+              "tamagawa_number": 1
+            },
+            "prime": 11,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 8,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 4,
+              "tamagawa_number": 4
+            },
+            "prime": 13,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 2,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 2,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 17,
+              "minimal_change": [
+                "32",
+                "-256",
+                "16",
+                "16384"
+              ],
+              "minimal_discriminant_valuation": 13,
+              "tamagawa_number": 13
+            },
+            "prime": 2,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 2
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "cubic_discriminant_sign": 1
+            },
+            "prime": "infinity",
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 6158521,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 2482309513,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 1992691645648087,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          },
+          {
+            "exceptional_residual_signatures": [],
+            "generic_image_dimension": 1,
+            "generic_image_is_full_point_image": true,
+            "local_point_dimension": 1,
+            "local_reduction": {
+              "conductor_exponent": 1,
+              "kodaira_code": 5,
+              "minimal_change": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ],
+              "minimal_discriminant_valuation": 1,
+              "tamagawa_number": 1
+            },
+            "prime": 1556252852391726354629684794059726062227237322704667229175658762505259467379346906344914138097,
+            "quotient_support_dimension": 0,
+            "witness_image_dimension": 1
+          }
+        ],
+        "simultaneous_generic_corrections": [],
+        "witness_quotient_dimension": 0
+      },
+      "factorization_complete": true,
+      "id": "published-R17:-1561/3133",
+      "tested_all_bad_places": true
+    }
+  ],
+  "schema": "rank-jump.remaining-bad-primes.v1"
+}

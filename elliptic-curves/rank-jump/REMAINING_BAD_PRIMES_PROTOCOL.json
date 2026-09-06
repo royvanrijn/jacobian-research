@@ -1,0 +1,22 @@
+{
+  "schema": "rank-jump.remaining-bad-primes-protocol.v1",
+  "layer": "incidence",
+  "question": "Do the remaining bad primes expose exceptional quotient directions, separately or jointly, in the three frozen high/low pairs?",
+  "cases": "The six rows, in order, in rank_jump_bad_prime_inputs_v1.json; no new candidate selection.",
+  "limits": {
+    "curves": 6,
+    "factor_seconds_per_curve": 20,
+    "local_seconds_per_curve": 40,
+    "trial_prime_bound": 10000,
+    "new_parameters": 0,
+    "point_searches": 0,
+    "class_groups": 0
+  },
+  "method": "Factor the discriminant of each retained integral short model, retaining trial factors before a bounded completion attempt. Compute local Kummer signatures only at certified odd support primes above 13. Combine with the retained 2,3,5,7,11,13,infinity signatures. Local minimal reduction distinguishes genuine bad places from nonminimal-model factors.",
+  "endpoints": {
+    "positive": "A nonzero quotient image identifies local or joint support of known exceptional classes; it does not prove unseen incidence or solubility.",
+    "negative": "A complete all-bad-place generic image excludes an additional-support explanation at those places. It is not a full Selmer group or a global-divisibility test.",
+    "failure": "Timeouts leave factorization or local coverage UNKNOWN. Preserve partial prime factors and omit any completeness claim. Never increase limits to complete a case."
+  },
+  "reproducibility": "One factor checkpoint and one local checkpoint per curve; isolated rank-jump paths; exact factor products and local signatures replayable."
+}

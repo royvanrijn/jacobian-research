@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: explicit projection fibres and the residual solubility obstruction](EXPLICIT_PROJECTION_FIBRES.md)
+- [Latest: bad-place support and unramified class-field blocks](BAD_PLACE_CLASS_FIELD_BLOCKS.md)
+- [Explicit projection fibres and the residual solubility obstruction](EXPLICIT_PROJECTION_FIBRES.md)
 - [Ordinary Jacobian local conditions and the CT comparison](JACOBIAN_LOCAL_CONDITIONS_AND_CT.md)
 - [The transporter in the torsion-difference and CT extension](TORSION_DIFFERENCE_AND_CT.md)
 - [One Jacobian for the Sha block and a soluble splitting event](JACOBIAN_GLUING_AND_SHA_BLOCKS.md)
@@ -50,6 +51,8 @@ python3 elliptic-curves/rank-jump/selmer_comparison.py check
 python3 elliptic-curves/rank-jump/jacobian_sha_blocks.py check
 python3 elliptic-curves/rank-jump/torsion_difference.py check
 python3 elliptic-curves/rank-jump/jacobian_local_conditions.py check
+python3 elliptic-curves/rank-jump/remaining_bad_primes.py check
+python3 elliptic-curves/rank-jump/strict_class_blocks.py check
 ```
 
 Optional independent Hilbert-symbol check: `sage -python -m unittest discover -s elliptic-curves/rank-jump -p test_local_collision.py`.
