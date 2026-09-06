@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.shared-value-completion-protocol.v1",
+  "reason": "The fixed S3 anchor c=3,n=5 has the exact relation R+P_-1+2P_2=0, found by the bounded seven-subset halving test. It lies on n=c+2. Preserve this failed independence control and use one replacement anchor for the generic-independence proof.",
+  "replacement_anchor": {"c": 3, "n": 7},
+  "limits": {"seconds": 30, "largest_fingerprint_prime": 199, "largest_torsion_bound_prime": 43, "additional_anchor_count": 1},
+  "additional_symbolic_check": "Verify R+P_-1+2P_2=0 over Q(c) after n=c+2, without a parameter sweep.",
+  "execution": "Read-only runtime adapter of the frozen first producer with an explicitly recorded effective anchor. No original source, protocol or checkpoint is overwritten.",
+  "boundary": "If the replacement anchor also fails the independent-point gate, the S3 generic arithmetic rank remains UNKNOWN in this experiment. No further anchors are authorized by this protocol."
+}

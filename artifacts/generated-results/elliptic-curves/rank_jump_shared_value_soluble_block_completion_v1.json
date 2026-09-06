@@ -1,0 +1,738 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_shared_value_halving_v1.json": "b1c9e2d5063d7b7466fe53e72e1745969e2b9b1b3098bd514c3b73a75fbaf2d8",
+    "elliptic-curves/rank-jump/SHARED_VALUE_COMPLETION_PROTOCOL.json": "e48a467fc3f3152096b95109c92b6554c770284180e24b5ee5d919a357f3c9e8",
+    "elliptic-curves/rank-jump/SHARED_VALUE_SOLUBLE_BLOCK_PROTOCOL.json": "3ca569b5b9305617610034b559bb3bf4e39e183f5de5cd65c1bf0d34eccf1f4b",
+    "elliptic-curves/rank-jump/shared_value_halving.py": "fd94f64928cac5f965a91cc337a9df018a6f207d94b36596d7fae06434aa528b",
+    "elliptic-curves/rank-jump/shared_value_soluble_block.py": "b28935bc4270d3a22e2624ad972d16cec44b101ff75bbf97c858a505bd3fdf48",
+    "elliptic-curves/rank-jump/shared_value_soluble_block_completion.py": "12002d3124a59bbbcf0b101ddcb4652e7d5796bead65bb2fe13038d7e90d81ef"
+  },
+  "collapsed_S3_anchor": {
+    "c": 3,
+    "lower_bound": "two independent Kummer fingerprints in the retained exact halving certificate",
+    "m": 7,
+    "n": 5,
+    "relation": "R+P_-1+2P_2=0",
+    "retained_subgroup_rank": 2
+  },
+  "initial_failure_preserved": {
+    "path": "artifacts/local/rank-jump-shared-value-soluble-block-v1/c-3.log",
+    "reason": "The original three-point fingerprint rank is two because of an actual dependence.",
+    "sha256": "b6467d3e9eccb84cca99721aa63075a92b222f36d005e77b084aebdf9043f044"
+  },
+  "rows": [
+    {
+      "anchor": {
+        "cubic_discriminant": "26569",
+        "finite_fingerprints": [
+          {
+            "point_signatures": [
+              3,
+              5,
+              5
+            ],
+            "prime": 5,
+            "roots": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "point_signatures": [
+              5,
+              0,
+              3
+            ],
+            "prime": 13,
+            "roots": [
+              8,
+              9,
+              11
+            ]
+          },
+          {
+            "point_signatures": [
+              5,
+              0,
+              6
+            ],
+            "prime": 17,
+            "roots": [
+              3,
+              8,
+              12
+            ]
+          },
+          {
+            "point_signatures": [
+              3,
+              0,
+              5
+            ],
+            "prime": 23,
+            "roots": [
+              6,
+              9,
+              20
+            ]
+          },
+          {
+            "point_signatures": [
+              6,
+              3,
+              6
+            ],
+            "prime": 31,
+            "roots": [
+              13,
+              18,
+              20
+            ]
+          },
+          {
+            "point_signatures": [
+              0,
+              5,
+              3
+            ],
+            "prime": 37,
+            "roots": [
+              4,
+              10,
+              12
+            ]
+          },
+          {
+            "point_signatures": [
+              0,
+              6,
+              5
+            ],
+            "prime": 53,
+            "roots": [
+              10,
+              38,
+              47
+            ]
+          },
+          {
+            "point_signatures": [
+              0,
+              5,
+              3
+            ],
+            "prime": 59,
+            "roots": [
+              18,
+              37,
+              52
+            ]
+          },
+          {
+            "point_signatures": [
+              5,
+              6,
+              6
+            ],
+            "prime": 61,
+            "roots": [
+              24,
+              34,
+              53
+            ]
+          },
+          {
+            "point_signatures": [
+              5,
+              3,
+              3
+            ],
+            "prime": 127,
+            "roots": [
+              71,
+              78,
+              94
+            ]
+          },
+          {
+            "point_signatures": [
+              3,
+              5,
+              3
+            ],
+            "prime": 157,
+            "roots": [
+              7,
+              26,
+              113
+            ]
+          },
+          {
+            "point_signatures": [
+              5,
+              6,
+              6
+            ],
+            "prime": 191,
+            "roots": [
+              30,
+              71,
+              79
+            ]
+          },
+          {
+            "point_signatures": [
+              5,
+              6,
+              6
+            ],
+            "prime": 193,
+            "roots": [
+              11,
+              36,
+              135
+            ]
+          },
+          {
+            "point_signatures": [
+              3,
+              5,
+              5
+            ],
+            "prime": 199,
+            "roots": [
+              65,
+              151,
+              171
+            ]
+          }
+        ],
+        "independent_point_rank": 3,
+        "joint_fingerprint_masks": [
+          16318325799774,
+          25748158382126,
+          25730942459112
+        ],
+        "m": "11",
+        "n": 5,
+        "rational_points": [
+          [
+            "0",
+            "1",
+            "1"
+          ],
+          [
+            "-1",
+            "5",
+            "1"
+          ],
+          [
+            "2",
+            "5",
+            "1"
+          ]
+        ],
+        "rational_two_torsion": false
+      },
+      "base_arithmetic_generic_rank": 3,
+      "base_c4_coefficients": [
+        "108",
+        "0",
+        "0",
+        "0",
+        "4"
+      ],
+      "base_discriminant_coefficients": [
+        "729",
+        "0",
+        "0",
+        "0",
+        "54",
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      "base_finite_fibres": {
+        "count": 4,
+        "root_lattice_rank": 0,
+        "type": "II"
+      },
+      "base_geometric_generic_rank": 5,
+      "base_infinity": {
+        "c4_order": 0,
+        "discriminant_order": 4,
+        "root_lattice_rank": 3,
+        "type": "I4"
+      },
+      "bindings": {
+        "elliptic-curves/rank-jump/SHARED_VALUE_SOLUBLE_BLOCK_PROTOCOL.json": "3ca569b5b9305617610034b559bb3bf4e39e183f5de5cd65c1bf0d34eccf1f4b",
+        "elliptic-curves/rank-jump/shared_value_soluble_block.py": "b28935bc4270d3a22e2624ad972d16cec44b101ff75bbf97c858a505bd3fdf48"
+      },
+      "c": 1,
+      "claim_boundary": "Exact generic ranks for two fixed small families. No assertion that every specialization retains the block, no rank result for a production curve.",
+      "collapse_control": {
+        "good_prime_counts": [
+          [
+            11,
+            15
+          ],
+          [
+            13,
+            16
+          ]
+        ],
+        "m": -1,
+        "n": 1,
+        "relations": [
+          "P_2 = 2 R",
+          "P_-1 = -3 R"
+        ],
+        "retained_specialized_subgroup_rank": 1,
+        "whole_curve_rank": "UNKNOWN here; only the retained subgroup is certified"
+      },
+      "constant_character_radicands": [
+        "-1",
+        "-2"
+      ],
+      "constant_galois_diagonals": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ]
+      ],
+      "new_arithmetic_generic_rank": 2,
+      "nonrational_nontorsion_witnesses": [
+        {
+          "bound_multiple_coordinates": [
+            "-773945977899365025200929150983465281/36150531788583465860055051249025600",
+            "459551430930922714171809694728714843492062148715812479/6873406598298114755245028065162333281953225235904000*a",
+            "1"
+          ],
+          "bound_multiple_is_nonzero": true,
+          "point_x": "1",
+          "point_y_multiplier": "1",
+          "quadratic_radicand": "-1",
+          "role": "inherited",
+          "split_good_prime_counts": [
+            [
+              5,
+              8
+            ],
+            [
+              13,
+              16
+            ]
+          ],
+          "torsion_order_divides": 8
+        },
+        {
+          "bound_multiple_coordinates": [
+            "1/2",
+            "5/4*a",
+            "1"
+          ],
+          "bound_multiple_is_nonzero": true,
+          "point_x": "1/2",
+          "point_y_multiplier": "5/4",
+          "quadratic_radicand": "-2",
+          "role": "new",
+          "split_good_prime_counts": [
+            [
+              3,
+              5
+            ],
+            [
+              11,
+              17
+            ]
+          ],
+          "torsion_order_divides": 1
+        }
+      ],
+      "parent_arithmetic_generic_rank": 1,
+      "parent_c4_coefficients": [
+        "144",
+        "48",
+        "16"
+      ],
+      "parent_discriminant_coefficients": [
+        "1296",
+        "864",
+        "432",
+        "96",
+        "16"
+      ],
+      "parent_finite_fibres": {
+        "c4_order": 1,
+        "count": 2,
+        "discriminant_order": 2,
+        "root_lattice_rank": 0,
+        "type": "II"
+      },
+      "parent_geometric_generic_rank": 2,
+      "parent_infinity": {
+        "c4_order": 2,
+        "discriminant_order": 8,
+        "root_lattice_rank": 6,
+        "type": "I2*"
+      },
+      "software": {
+        "sage": "10.9"
+      }
+    },
+    {
+      "anchor": {
+        "cubic_discriminant": "-99511",
+        "finite_fingerprints": [
+          {
+            "point_signatures": [
+              3,
+              5,
+              6
+            ],
+            "prime": 7,
+            "roots": [
+              1,
+              2,
+              6
+            ]
+          },
+          {
+            "point_signatures": [
+              0,
+              5,
+              3
+            ],
+            "prime": 59,
+            "roots": [
+              24,
+              31,
+              44
+            ]
+          },
+          {
+            "point_signatures": [
+              0,
+              6,
+              3
+            ],
+            "prime": 61,
+            "roots": [
+              12,
+              42,
+              49
+            ]
+          },
+          {
+            "point_signatures": [
+              3,
+              0,
+              6
+            ],
+            "prime": 73,
+            "roots": [
+              26,
+              31,
+              70
+            ]
+          },
+          {
+            "point_signatures": [
+              5,
+              6,
+              6
+            ],
+            "prime": 137,
+            "roots": [
+              24,
+              115,
+              116
+            ]
+          },
+          {
+            "point_signatures": [
+              5,
+              3,
+              5
+            ],
+            "prime": 181,
+            "roots": [
+              53,
+              139,
+              151
+            ]
+          },
+          {
+            "point_signatures": [
+              5,
+              5,
+              3
+            ],
+            "prime": 197,
+            "roots": [
+              20,
+              60,
+              98
+            ]
+          },
+          {
+            "point_signatures": [
+              5,
+              0,
+              6
+            ],
+            "prime": 199,
+            "roots": [
+              14,
+              74,
+              92
+            ]
+          }
+        ],
+        "independent_point_rank": 3,
+        "joint_fingerprint_masks": [
+          23964678,
+          2868058,
+          27122108
+        ],
+        "m": "19",
+        "n": 7,
+        "rational_points": [
+          [
+            "0",
+            "3",
+            "1"
+          ],
+          [
+            "-1",
+            "7",
+            "1"
+          ],
+          [
+            "2",
+            "7",
+            "1"
+          ]
+        ],
+        "rational_two_torsion": false
+      },
+      "base_arithmetic_generic_rank": 3,
+      "base_c4_coefficients": [
+        "364",
+        "0",
+        "-64",
+        "0",
+        "4"
+      ],
+      "base_discriminant_coefficients": [
+        "27225",
+        "0",
+        "-16928",
+        "0",
+        "1974",
+        "0",
+        "-96",
+        "0",
+        "1"
+      ],
+      "base_finite_fibres": {
+        "count": 8,
+        "root_lattice_rank": 0,
+        "type": "I1"
+      },
+      "base_geometric_generic_rank": 5,
+      "base_infinity": {
+        "c4_order": 0,
+        "discriminant_order": 4,
+        "root_lattice_rank": 3,
+        "type": "I4"
+      },
+      "c": 3,
+      "claim_boundary": "Exact generic ranks for two fixed small families. No assertion that every specialization retains the block, no rank result for a production curve.",
+      "collapse_control": null,
+      "constant_character_radicands": [
+        "7",
+        "14"
+      ],
+      "constant_galois_diagonals": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ]
+      ],
+      "effective_protocol": {
+        "boundary": "A constructive small mechanism control, not a new high-rank search or a claim that production S3 fibres satisfy this condition. Generic independence need not survive every specialization.",
+        "checks": [
+          "symbolic point identities and common value",
+          "complete finite and infinite singular fibre data",
+          "geometric generic rank by Shioda-Tate",
+          "five-section independence and constant-field Galois actions",
+          "exact rational arithmetic generic rank",
+          "fixed-specialization rank of the retained three-point image",
+          "explicit collapse relations at c=n=1"
+        ],
+        "classification": "incidence and simultaneous solubility via explicit sections on a common degree-two rational base; no visibility feature",
+        "family": "E_(m,c): y^2=x^3+m*x^2-(m+3)*x+c^2; d=2*m+2+c^2; base change d=n^2",
+        "fixed_c_values": [
+          1,
+          3
+        ],
+        "limits": {
+          "largest_fingerprint_prime": 199,
+          "largest_torsion_bound_prime": 43,
+          "new_parameter_or_point_searches": 0,
+          "seconds_per_worker": 30
+        },
+        "question": "Does one common value-square condition force a two-dimensional rational block in the small control family, and does the construction survive in an S3 control?",
+        "schema": "rank-jump.shared-value-soluble-block-protocol.v1",
+        "specializations": {
+          "collapse_control_c": 1,
+          "collapse_control_n": 1,
+          "independence_anchor_n": 7
+        }
+      },
+      "frozen_producer_bindings": {
+        "elliptic-curves/rank-jump/SHARED_VALUE_SOLUBLE_BLOCK_PROTOCOL.json": "3ca569b5b9305617610034b559bb3bf4e39e183f5de5cd65c1bf0d34eccf1f4b",
+        "elliptic-curves/rank-jump/shared_value_soluble_block.py": "b28935bc4270d3a22e2624ad972d16cec44b101ff75bbf97c858a505bd3fdf48"
+      },
+      "new_arithmetic_generic_rank": 2,
+      "nonrational_nontorsion_witnesses": [
+        {
+          "bound_multiple_coordinates": [
+            "1",
+            "a",
+            "1"
+          ],
+          "bound_multiple_is_nonzero": true,
+          "point_x": "1",
+          "point_y_multiplier": "1",
+          "quadratic_radicand": "7",
+          "role": "inherited",
+          "split_good_prime_counts": [
+            [
+              3,
+              6
+            ],
+            [
+              19,
+              19
+            ]
+          ],
+          "torsion_order_divides": 1
+        },
+        {
+          "bound_multiple_coordinates": [
+            "9/2",
+            "21/4*a",
+            "1"
+          ],
+          "bound_multiple_is_nonzero": true,
+          "point_x": "9/2",
+          "point_y_multiplier": "21/4",
+          "quadratic_radicand": "14",
+          "role": "new",
+          "split_good_prime_counts": [
+            [
+              5,
+              9
+            ],
+            [
+              11,
+              14
+            ]
+          ],
+          "torsion_order_divides": 1
+        }
+      ],
+      "parent_arithmetic_generic_rank": 1,
+      "parent_c4_coefficients": [
+        "144",
+        "48",
+        "16"
+      ],
+      "parent_discriminant_coefficients": [
+        "-33264",
+        "-6048",
+        "-1872",
+        "-416",
+        "16"
+      ],
+      "parent_finite_fibres": {
+        "c4_order": 0,
+        "count": 4,
+        "discriminant_order": 1,
+        "root_lattice_rank": 0,
+        "type": "I1"
+      },
+      "parent_geometric_generic_rank": 2,
+      "parent_infinity": {
+        "c4_order": 2,
+        "discriminant_order": 8,
+        "root_lattice_rank": 6,
+        "type": "I2*"
+      },
+      "software": {
+        "sage": "10.9"
+      }
+    }
+  ],
+  "schema": "rank-jump.shared-value-soluble-block-completion.v1",
+  "software": {
+    "sage": "10.9"
+  },
+  "symbolic_collapse_locus": {
+    "equation": "n=c+2",
+    "parameter_m": "2*c+1",
+    "relation": "R+P_-1+2P_2=0"
+  }
+}

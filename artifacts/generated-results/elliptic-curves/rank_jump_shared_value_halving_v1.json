@@ -1,0 +1,182 @@
+{
+  "all_points": [
+    [
+      "0",
+      "3",
+      "1"
+    ],
+    [
+      "-1",
+      "5",
+      "1"
+    ],
+    [
+      "2",
+      "5",
+      "1"
+    ],
+    [
+      "2",
+      "-5",
+      "1"
+    ]
+  ],
+  "bindings": {
+    "elliptic-curves/rank-jump/SHARED_VALUE_HALVING_PROTOCOL.json": "7eba828305217482b887014c9c4e3cad01d9db6d68bad8ddb533f48116d86dcd",
+    "elliptic-curves/rank-jump/shared_value_halving.py": "fd94f64928cac5f965a91cc337a9df018a6f207d94b36596d7fae06434aa528b"
+  },
+  "boundary": "Every added point doubles into the original subgroup, so rational ranks agree. No full saturation or full curve rank is claimed.",
+  "enlarged_fingerprint_rank": 2,
+  "finite_fingerprints": [
+    {
+      "prime": 79,
+      "roots": [
+        22,
+        57,
+        72
+      ],
+      "signatures": [
+        5,
+        5,
+        3,
+        3
+      ]
+    },
+    {
+      "prime": 109,
+      "roots": [
+        27,
+        80,
+        104
+      ],
+      "signatures": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "prime": 139,
+      "roots": [
+        6,
+        60,
+        66
+      ],
+      "signatures": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "prime": 191,
+      "roots": [
+        45,
+        149,
+        181
+      ],
+      "signatures": [
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "prime": 197,
+      "roots": [
+        68,
+        134,
+        185
+      ],
+      "signatures": [
+        5,
+        5,
+        5,
+        5
+      ]
+    }
+  ],
+  "joint_fingerprints": [
+    44682,
+    44682,
+    44678,
+    44678
+  ],
+  "original_fingerprint_rank": 2,
+  "original_subgroup_rank": "UNKNOWN",
+  "schema": "rank-jump.shared-value-halving.v1",
+  "subset_divisions": [
+    {
+      "halves": [],
+      "mask": 1,
+      "sum": [
+        "0",
+        "3",
+        "1"
+      ]
+    },
+    {
+      "halves": [],
+      "mask": 2,
+      "sum": [
+        "-1",
+        "5",
+        "1"
+      ]
+    },
+    {
+      "halves": [
+        [
+          "2",
+          "-5",
+          "1"
+        ]
+      ],
+      "mask": 3,
+      "sum": [
+        "-2",
+        "-7",
+        "1"
+      ]
+    },
+    {
+      "halves": [],
+      "mask": 4,
+      "sum": [
+        "2",
+        "5",
+        "1"
+      ]
+    },
+    {
+      "halves": [],
+      "mask": 5,
+      "sum": [
+        "-8",
+        "5",
+        "1"
+      ]
+    },
+    {
+      "halves": [],
+      "mask": 6,
+      "sum": [
+        "-8",
+        "-5",
+        "1"
+      ]
+    },
+    {
+      "halves": [],
+      "mask": 7,
+      "sum": [
+        "2",
+        "-5",
+        "1"
+      ]
+    }
+  ]
+}

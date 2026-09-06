@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.shared-value-halving-protocol.v1",
+  "reason": "At c=3,n=5, the three prescribed point fingerprints fail the first independence gate. Test whether an even index explains the failure without changing the anchor or searching for points.",
+  "curve_ainvariants": [0, 7, 0, -10, 9],
+  "points": [[0, 3], [-1, 5], [2, 5]],
+  "limits": {"seconds": 30, "nonzero_subset_masks": 7, "halving_depth": 1, "largest_fingerprint_prime": 199},
+  "gate": "Solve exact duplication equations over Q for the seven nonzero subset sums. Verify every returned half, its doubled combination, and whether these halves together with the original points have three independent Kummer fingerprints. Only a finite-index relation can transfer that independence back to the original subgroup.",
+  "boundary": "Exact division of one prescribed subgroup, not candidate generation, a parameter sweep or a high-rank point search. Failure remains UNKNOWN."
+}

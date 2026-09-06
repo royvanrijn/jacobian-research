@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: generic classes already force the production twist contractions](GENERIC_SUBGROUP_FORCES_TWIST_CONTRACTION.md)
+- [Latest: one square condition creates two rational directions, with explicit collapse controls](ONE_SQUARE_CONDITION_TWO_RATIONAL_DIRECTIONS.md)
+- [Generic classes already force the production twist contractions](GENERIC_SUBGROUP_FORCES_TWIST_CONTRACTION.md)
 - [Production twists separate exact incidence contraction from persistent Sha blocks](PRODUCTION_TWIST_INCIDENCE_AND_SOLUBILITY.md)
 - [The whole block lifts through Jacobian Selmer and still remains Sha](JACOBIAN_SELMER_LIFTS_CAN_BE_SHA.md)
 - [The complete norm-lifting block is Sha on one quotient and rational on its twist](NORM_LIFTS_CAN_BE_ENTIRELY_SHA.md)

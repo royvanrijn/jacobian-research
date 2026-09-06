@@ -1,0 +1,11 @@
+{
+  "schema": "rank-jump.shared-value-soluble-block-protocol.v1",
+  "question": "Does one common value-square condition force a two-dimensional rational block in the small control family, and does the construction survive in an S3 control?",
+  "family": "E_(m,c): y^2=x^3+m*x^2-(m+3)*x+c^2; d=2*m+2+c^2; base change d=n^2",
+  "fixed_c_values": [1, 3],
+  "specializations": {"independence_anchor_n": 5, "collapse_control_c": 1, "collapse_control_n": 1},
+  "limits": {"seconds_per_worker": 30, "largest_fingerprint_prime": 199, "largest_torsion_bound_prime": 43, "new_parameter_or_point_searches": 0},
+  "checks": ["symbolic point identities and common value", "complete finite and infinite singular fibre data", "geometric generic rank by Shioda-Tate", "five-section independence and constant-field Galois actions", "exact rational arithmetic generic rank", "fixed-specialization rank of the retained three-point image", "explicit collapse relations at c=n=1"],
+  "classification": "incidence and simultaneous solubility via explicit sections on a common degree-two rational base; no visibility feature",
+  "boundary": "A constructive small mechanism control, not a new high-rank search or a claim that production S3 fibres satisfy this condition. Generic independence need not survive every specialization."
+}
