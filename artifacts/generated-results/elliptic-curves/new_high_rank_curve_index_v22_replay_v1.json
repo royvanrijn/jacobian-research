@@ -1,0 +1,20 @@
+{
+  "changed_basis_independently_replayed_ids": [
+    "new-20260906-188"
+  ],
+  "claim_boundary": "Every unchanged basis is identical to its hash-bound fully replayed V21 source. The changed public28 basis is rechecked by exact finite quotients and its separate Sage group-enumeration certificate. Current catalogue comparisons and every CSV entry are checked. No new search or claim that a published curve is a new discovery.",
+  "csv_checked": true,
+  "current_catalogue_count": 620,
+  "curves_checked": 201,
+  "schema": "elliptic-curves.inventory-v22-provenance-replay.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/inventory188_public28_sage_replay_v1.json": "44d4463b199ed489fc1a20b4c03635bf1a2c355b9d73619c3668928b97b7e972",
+    "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v21_memory_replay_v1.json": "af3357c9c64ef9ce7014bb77043db714caa60dd55625794617e3cdea0f4d19f8",
+    "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v22.csv": "29ea7feb749aee7b17264c565145737c782f62451d4f76a74875cd0efe79fcee",
+    "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v22.json": "5f64cf83268829549a4095dc04a9e69c73513be711c1745b61dc9d8b1a2167b0",
+    "elliptic-curves/cas/export_publication_aware_inventory_v22.py": "d82ee7ede69c59f0edc3f8f617bc3a1297da1bffa2fd26e48d6733d412314ae0"
+  },
+  "status": "PASS",
+  "unchanged_point_bases_bound_to_full_v21_replay": 200,
+  "unmatched_curves": 199
+}

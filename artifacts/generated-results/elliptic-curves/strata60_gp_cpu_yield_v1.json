@@ -1,0 +1,26 @@
+{
+  "arms": {
+    "lower": {
+      "certified_gain": 0,
+      "gp_cpu_ms": 453708
+    },
+    "moderate": {
+      "certified_gain": 1,
+      "gp_cpu_ms": 443004
+    },
+    "top": {
+      "certified_gain": 10,
+      "gp_cpu_ms": 449847
+    }
+  },
+  "claim_boundary": "Post-terminal secondary cost sensitivity, not a new policy criterion. All GP timing markers were independently audited. GP CPU measures point enumeration only; it excludes Python admission, map preparation and verification, so it is not total computation. No new search, rank claim, validation-prime input or change to the frozen matched comparison.",
+  "schema": "elliptic-curves.strata60-gp-cpu-yield.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/retained_mw16_score_strata_accounting_replay_v1.json": "bf435cf7940dc1dd97b680e67ed34d1e28fa0bcf42277bb0bab33bd36833a6bd",
+    "artifacts/generated-results/elliptic-curves/retained_mw16_score_strata_experiment_v1.json": "358c3d5d02aca3d5a21c8e4b5b0984c9eb644589c1bc1492d0bb2ff19827f043",
+    "elliptic-curves/cas/audit_strata60_gp_cpu_yield.py": "e79df27b145f9ea42e349c544d9c171bfc81eb5a694b08d9bda8c27f410fbb58"
+  },
+  "status": "PASS",
+  "top_to_pooled_yield_ratio": "4488530/1649439",
+  "total_gp_cpu_ms": 1346559
+}

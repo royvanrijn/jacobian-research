@@ -1,0 +1,7389 @@
+{
+  "claim_boundary": "Exact coordinates for both public representatives independently certified to extend the old27 subgroup by the retained mod2 signatures, both signs, on equal49 generic17 and own27 maps. This is a retrospective two-witness, one-curve diagnostic. The other26 public points are not classified as lying in the old rational span. No point search, prospective sensitivity, upper bound, untested-translate exclusion or general chart-policy theorem.",
+  "minima": {
+    "generic17:26": {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 13,
+      "coordinate": [
+        "13349368513299",
+        "21632242813382"
+      ],
+      "height": 21632242813382,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    "generic17:27": {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 11,
+      "coordinate": [
+        "173970974235857",
+        "100077829088151"
+      ],
+      "height": 173970974235857,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    "own27:26": {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 3,
+      "coordinate": [
+        "45536085699455016089",
+        "104137837718785499398"
+      ],
+      "height": 104137837718785499398,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    "own27:27": {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 44,
+      "coordinate": [
+        "-2186776913276331",
+        "98210967650579"
+      ],
+      "height": 2186776913276331,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    }
+  },
+  "observations": [
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 0,
+      "coordinate": [
+        "11721132451945843747797745",
+        "8273524428893165302118077"
+      ],
+      "height": 11721132451945843747797745,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 0,
+      "coordinate": [
+        "-285795674760276366194727214740070845062934695",
+        "383286663958689384897186451975352817472130313"
+      ],
+      "height": 383286663958689384897186451975352817472130313,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 1,
+      "coordinate": [
+        "48601340822338018505289346570072714404889",
+        "7596913069333723350640351110227848564939"
+      ],
+      "height": 48601340822338018505289346570072714404889,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 1,
+      "coordinate": [
+        "-2538566563477192569880547041",
+        "444052592040892135760218879"
+      ],
+      "height": 2538566563477192569880547041,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 2,
+      "coordinate": [
+        "-236255859843184510671095856613388",
+        "98277147751089180129126118149225"
+      ],
+      "height": 236255859843184510671095856613388,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 2,
+      "coordinate": [
+        "296964965201247938159888936803623372",
+        "359021991546399338415876713688502517"
+      ],
+      "height": 359021991546399338415876713688502517,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 3,
+      "coordinate": [
+        "94079876603455453954368506282",
+        "54442839625862341276343896511"
+      ],
+      "height": 94079876603455453954368506282,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 3,
+      "coordinate": [
+        "-2073662547975723799883256190020149078226",
+        "3118466593254607437473942616714253777837"
+      ],
+      "height": 3118466593254607437473942616714253777837,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 4,
+      "coordinate": [
+        "-58013448563426075361119099433604836933",
+        "193594170264106757471135638102890063958"
+      ],
+      "height": 193594170264106757471135638102890063958,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 4,
+      "coordinate": [
+        "-852495377305210067362419436451",
+        "89717523773218181196758059226"
+      ],
+      "height": 852495377305210067362419436451,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 5,
+      "coordinate": [
+        "-145537047307072580059892172899067917",
+        "8472587282022815574700460157824253"
+      ],
+      "height": 145537047307072580059892172899067917,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 5,
+      "coordinate": [
+        "-2338455273915144444069353471251661",
+        "110458800857809824338538541413949"
+      ],
+      "height": 2338455273915144444069353471251661,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 6,
+      "coordinate": [
+        "3636399208774051734278030787306334",
+        "1276511598983958894370438480975179"
+      ],
+      "height": 3636399208774051734278030787306334,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 6,
+      "coordinate": [
+        "-12787194286151660687755950731467354",
+        "471823785288194703028066422823271"
+      ],
+      "height": 12787194286151660687755950731467354,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 7,
+      "coordinate": [
+        "482482158734582005733744311934192481965443981",
+        "724030623611863922336932572875642180093898563"
+      ],
+      "height": 724030623611863922336932572875642180093898563,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 7,
+      "coordinate": [
+        "-133718658052400748186858109",
+        "3965695121085186558904493"
+      ],
+      "height": 133718658052400748186858109,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 8,
+      "coordinate": [
+        "2223557853085383553754800778721467",
+        "10063339972378303228385487744344"
+      ],
+      "height": 2223557853085383553754800778721467,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 8,
+      "coordinate": [
+        "200123658771809884286601260653788919",
+        "215004704465091122740633251839028"
+      ],
+      "height": 200123658771809884286601260653788919,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 9,
+      "coordinate": [
+        "1775312188034224597909938672257760108297475",
+        "196119010076740903382897603525298994953679"
+      ],
+      "height": 1775312188034224597909938672257760108297475,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 9,
+      "coordinate": [
+        "26085656208844854885052455",
+        "22040142804375749456512787"
+      ],
+      "height": 26085656208844854885052455,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 10,
+      "coordinate": [
+        "15103245857997482882483962",
+        "21068527165377157286431"
+      ],
+      "height": 15103245857997482882483962,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 10,
+      "coordinate": [
+        "-1351767261698944957343369980597795059987726",
+        "302840127743369352485910049609016091244387"
+      ],
+      "height": 1351767261698944957343369980597795059987726,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 11,
+      "coordinate": [
+        "380253738762362264429",
+        "382489115183690614221"
+      ],
+      "height": 382489115183690614221,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 11,
+      "coordinate": [
+        "-1825859366942839799941751277927204417078204674111",
+        "45333676926530955186126774540872424030548164761"
+      ],
+      "height": 1825859366942839799941751277927204417078204674111,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 12,
+      "coordinate": [
+        "-413350723892413769467696300833635403800265",
+        "11522208188887780478753866570720678354726"
+      ],
+      "height": 413350723892413769467696300833635403800265,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 12,
+      "coordinate": [
+        "596525611145786304866655",
+        "3933322412818653506363266"
+      ],
+      "height": 3933322412818653506363266,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 13,
+      "coordinate": [
+        "-16979767214058312021182162366481673938524301849354989",
+        "2711345390491568971451772072817781160705482181561374"
+      ],
+      "height": 16979767214058312021182162366481673938524301849354989,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 13,
+      "coordinate": [
+        "13349368513299",
+        "21632242813382"
+      ],
+      "height": 21632242813382,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 14,
+      "coordinate": [
+        "-208485148652021848348778405283365763",
+        "264831774003987838311629089874034032"
+      ],
+      "height": 264831774003987838311629089874034032,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 14,
+      "coordinate": [
+        "3687470021614390336865201319324433",
+        "975173088461922327755398185280368"
+      ],
+      "height": 3687470021614390336865201319324433,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 15,
+      "coordinate": [
+        "27804435662310758621854836243367454528014682591014218",
+        "4216636686051985631061519344116595970781124786509271"
+      ],
+      "height": 27804435662310758621854836243367454528014682591014218,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 15,
+      "coordinate": [
+        "685166491953694",
+        "140661764266493"
+      ],
+      "height": 685166491953694,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 16,
+      "coordinate": [
+        "282508034523033537426152617",
+        "211395451122401460888799756"
+      ],
+      "height": 282508034523033537426152617,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 16,
+      "coordinate": [
+        "100366012465944307905567466807407095111363",
+        "6614395195311790850255997460348035887620"
+      ],
+      "height": 100366012465944307905567466807407095111363,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 17,
+      "coordinate": [
+        "-317319106833237840295473384085319427724128257",
+        "962768581695532325458161331010840193765450805"
+      ],
+      "height": 962768581695532325458161331010840193765450805,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 17,
+      "coordinate": [
+        "-2010052283743921618725601",
+        "288933926784248368278165"
+      ],
+      "height": 2010052283743921618725601,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 18,
+      "coordinate": [
+        "4761808845301961501273430",
+        "1505262494839020344661727"
+      ],
+      "height": 4761808845301961501273430,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 18,
+      "coordinate": [
+        "-941819584904069284186022317331824742636090",
+        "554800144161974058929543838298228171183099"
+      ],
+      "height": 941819584904069284186022317331824742636090,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 19,
+      "coordinate": [
+        "137593673767179121177419821340631350",
+        "140896909180794142501083285165486467"
+      ],
+      "height": 140896909180794142501083285165486467,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 19,
+      "coordinate": [
+        "-743431912925957455654304256030",
+        "671836344453018091021193111527"
+      ],
+      "height": 743431912925957455654304256030,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 20,
+      "coordinate": [
+        "19105042091912643855383003077",
+        "1163047658867046359589539622"
+      ],
+      "height": 19105042091912643855383003077,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 20,
+      "coordinate": [
+        "-6067312091906434302329502749045624092083",
+        "813525284215318532864794646301286013462"
+      ],
+      "height": 6067312091906434302329502749045624092083,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 21,
+      "coordinate": [
+        "624524990727064865157232601926",
+        "693473745687682730842108205291"
+      ],
+      "height": 693473745687682730842108205291,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 21,
+      "coordinate": [
+        "6456352694131105002555457038425539886",
+        "50362725778983311223009064306218700231"
+      ],
+      "height": 50362725778983311223009064306218700231,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 22,
+      "coordinate": [
+        "19490948186531470673792672052",
+        "3372147938260676608729200569"
+      ],
+      "height": 19490948186531470673792672052,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 22,
+      "coordinate": [
+        "-11317658474980207165210503939494048932",
+        "8038175283510800626670565118670943991"
+      ],
+      "height": 11317658474980207165210503939494048932,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 23,
+      "coordinate": [
+        "76405597837554977648761",
+        "36350902286961769545407"
+      ],
+      "height": 76405597837554977648761,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 23,
+      "coordinate": [
+        "-112028089745353841558095916274765905396297087",
+        "156225709768998860355595809759882816658425591"
+      ],
+      "height": 156225709768998860355595809759882816658425591,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 24,
+      "coordinate": [
+        "3614138635225900014497638217050983844381",
+        "714859776332497947357036796730225144628"
+      ],
+      "height": 3614138635225900014497638217050983844381,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 24,
+      "coordinate": [
+        "-2578416358979716601121923857",
+        "3354043566063859470574488956"
+      ],
+      "height": 3354043566063859470574488956,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 25,
+      "coordinate": [
+        "444079628568362806391502040651540288270",
+        "466884001330252279774212876792320537397"
+      ],
+      "height": 466884001330252279774212876792320537397,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 25,
+      "coordinate": [
+        "31382500191052214942923610",
+        "805468501327060109799697463"
+      ],
+      "height": 805468501327060109799697463,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 26,
+      "coordinate": [
+        "-983532676396046158779",
+        "45942191650506206237372"
+      ],
+      "height": 45942191650506206237372,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 26,
+      "coordinate": [
+        "-2296801951591152441879202724255988394125613",
+        "600666657269465716558462397962680600891236"
+      ],
+      "height": 2296801951591152441879202724255988394125613,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 27,
+      "coordinate": [
+        "-1257851601928076371186591895",
+        "428277513882105075608178543"
+      ],
+      "height": 1257851601928076371186591895,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 27,
+      "coordinate": [
+        "-3326917904426440562846429431497430613445",
+        "520657681313441232166900162233214140749"
+      ],
+      "height": 3326917904426440562846429431497430613445,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 28,
+      "coordinate": [
+        "22849474945332905236760",
+        "3363318546154695771547"
+      ],
+      "height": 22849474945332905236760,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 28,
+      "coordinate": [
+        "-204291017033067207008144103092850281716139944",
+        "54881146726553607712775932974085758467444995"
+      ],
+      "height": 204291017033067207008144103092850281716139944,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 29,
+      "coordinate": [
+        "-378419991081685303718356075099",
+        "5683618891836333658254211584621"
+      ],
+      "height": 5683618891836333658254211584621,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 29,
+      "coordinate": [
+        "11229301982851258861060640746306976069",
+        "6495940938552669486456957670916116749"
+      ],
+      "height": 11229301982851258861060640746306976069,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 30,
+      "coordinate": [
+        "-14962076336716348769869347480221173172577546",
+        "1051546663068700127874492713718265526675629"
+      ],
+      "height": 14962076336716348769869347480221173172577546,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 30,
+      "coordinate": [
+        "59719101542801608365574",
+        "36470822780968942747549"
+      ],
+      "height": 59719101542801608365574,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 31,
+      "coordinate": [
+        "217738019062999967419114567978021",
+        "8434155141170423590138188011055"
+      ],
+      "height": 217738019062999967419114567978021,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 31,
+      "coordinate": [
+        "-1511455471084960243000542347543533679",
+        "6025296015718684803245298219073395"
+      ],
+      "height": 1511455471084960243000542347543533679,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 32,
+      "coordinate": [
+        "-74961603812798050267150483583027293247165708",
+        "7275727541999484240678273913275520545509957"
+      ],
+      "height": 74961603812798050267150483583027293247165708,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 32,
+      "coordinate": [
+        "-82750993850334313388564",
+        "7601111118121000725299"
+      ],
+      "height": 82750993850334313388564,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 33,
+      "coordinate": [
+        "144767533007858605979901712659195866464319573321",
+        "7191598036653360662889096241364550041874247065"
+      ],
+      "height": 144767533007858605979901712659195866464319573321,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 33,
+      "coordinate": [
+        "145222611294577520301",
+        "56338535672778647965"
+      ],
+      "height": 145222611294577520301,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 34,
+      "coordinate": [
+        "-229018649579514063925724814373",
+        "429871147005628127785490434457"
+      ],
+      "height": 429871147005628127785490434457,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 34,
+      "coordinate": [
+        "-44916369559107615746570067457201603373",
+        "74878305214726779256766707042731566057"
+      ],
+      "height": 74878305214726779256766707042731566057,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 35,
+      "coordinate": [
+        "851247275179577069883253643607023643",
+        "145650962412563923727278079246520110"
+      ],
+      "height": 851247275179577069883253643607023643,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 35,
+      "coordinate": [
+        "-467893004561523468036157762479",
+        "176091869693862664147552136330"
+      ],
+      "height": 467893004561523468036157762479,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 36,
+      "coordinate": [
+        "4697307316332421168562726",
+        "8115845324023027277891081"
+      ],
+      "height": 8115845324023027277891081,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 36,
+      "coordinate": [
+        "1234276307056776241849769638639087635536678",
+        "165710048168992739993491086512316258212217"
+      ],
+      "height": 1234276307056776241849769638639087635536678,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 37,
+      "coordinate": [
+        "-28742306061211875203720311453520",
+        "3156757511231204002921414401791"
+      ],
+      "height": 28742306061211875203720311453520,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 37,
+      "coordinate": [
+        "583058930698827133168108082876383480",
+        "132507697764323469853718055468473741"
+      ],
+      "height": 583058930698827133168108082876383480,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 38,
+      "coordinate": [
+        "-8568156422892976630903938381",
+        "13078654134519812920307270077"
+      ],
+      "height": 13078654134519812920307270077,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 38,
+      "coordinate": [
+        "9775185727975645186386662883641011233",
+        "793640818376804271693365031755586703"
+      ],
+      "height": 9775185727975645186386662883641011233,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 39,
+      "coordinate": [
+        "23473086386803495589583383327065487449541",
+        "499291332911907526486936977574294314886"
+      ],
+      "height": 23473086386803495589583383327065487449541,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 39,
+      "coordinate": [
+        "59866595607335334142420977",
+        "139452513016670817869601902"
+      ],
+      "height": 139452513016670817869601902,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 40,
+      "coordinate": [
+        "570324094969034273714117646079764968506591057",
+        "288631438666841333825076758941279703562555546"
+      ],
+      "height": 570324094969034273714117646079764968506591057,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 40,
+      "coordinate": [
+        "-274842844158858377897",
+        "1082423614072580929014"
+      ],
+      "height": 1082423614072580929014,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 41,
+      "coordinate": [
+        "31441632982945373363147663752729969827",
+        "40740919414345736747679831999131356237"
+      ],
+      "height": 40740919414345736747679831999131356237,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 41,
+      "coordinate": [
+        "-13953280928990379000135659",
+        "26529798231709170000763131"
+      ],
+      "height": 26529798231709170000763131,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 42,
+      "coordinate": [
+        "37285557614219934136202085924291746737",
+        "162132623623146390175445390702336512497"
+      ],
+      "height": 162132623623146390175445390702336512497,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 42,
+      "coordinate": [
+        "793343495761897413196605007",
+        "491206946161301474731967247"
+      ],
+      "height": 793343495761897413196605007,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 43,
+      "coordinate": [
+        "523288418704709",
+        "198204918541676"
+      ],
+      "height": 523288418704709,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 43,
+      "coordinate": [
+        "-1979084881640353282759757046169852442233358900237",
+        "52503211997031162837535839109339640359434194862"
+      ],
+      "height": 1979084881640353282759757046169852442233358900237,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 44,
+      "coordinate": [
+        "-17007774026461863817250032720641965",
+        "1312589415927485425617208059131862"
+      ],
+      "height": 17007774026461863817250032720641965,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 44,
+      "coordinate": [
+        "-30526648762553250592704604384765",
+        "23565726465205876687717247054662"
+      ],
+      "height": 30526648762553250592704604384765,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 45,
+      "coordinate": [
+        "-1881544086118783657081668459",
+        "130128866413588487554105028"
+      ],
+      "height": 1881544086118783657081668459,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 45,
+      "coordinate": [
+        "-3876938989721139768185341345404867163",
+        "6290913879084166578224787608713328196"
+      ],
+      "height": 6290913879084166578224787608713328196,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 46,
+      "coordinate": [
+        "-1676362028905638477707384103713220711750711031",
+        "1751710580749132363777419777097840937861320030"
+      ],
+      "height": 1751710580749132363777419777097840937861320030,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 46,
+      "coordinate": [
+        "90940121304354913",
+        "23228474826928912"
+      ],
+      "height": 90940121304354913,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 47,
+      "coordinate": [
+        "685903219520249991101910556622",
+        "392606054066270626071967169999"
+      ],
+      "height": 685903219520249991101910556622,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 47,
+      "coordinate": [
+        "388874572265122160875941045988182",
+        "259706201305103756788292561150059"
+      ],
+      "height": 388874572265122160875941045988182,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 48,
+      "coordinate": [
+        "-9711759317159620852767420",
+        "517195777317650349766889"
+      ],
+      "height": 9711759317159620852767420,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 48,
+      "coordinate": [
+        "660120514092449379287910505533011305700",
+        "20675048104685706654778560910730894801"
+      ],
+      "height": 660120514092449379287910505533011305700,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 0,
+      "coordinate": [
+        "4671965703499138058",
+        "4583322760341781593"
+      ],
+      "height": 4671965703499138058,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 0,
+      "coordinate": [
+        "-9932356768398611360163443315717622542468697953751810940159",
+        "5111032836528386802728985989328648878568674371571870527647"
+      ],
+      "height": 9932356768398611360163443315717622542468697953751810940159,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 1,
+      "coordinate": [
+        "69732365835207372337178397751649799833",
+        "439128192763286165603560635449350786"
+      ],
+      "height": 69732365835207372337178397751649799833,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 1,
+      "coordinate": [
+        "-586320445709174728732223209447484",
+        "91592976562226093398143522012335"
+      ],
+      "height": 586320445709174728732223209447484,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 2,
+      "coordinate": [
+        "-22869915797555288732929229401527659474912",
+        "940737419864108550330988866552392708721"
+      ],
+      "height": 22869915797555288732929229401527659474912,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 2,
+      "coordinate": [
+        "9536308124333679562555311776570",
+        "46637947765208652948576695764599"
+      ],
+      "height": 46637947765208652948576695764599,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 3,
+      "coordinate": [
+        "1015581073729915845721915599515814445465250",
+        "381274711202937318164180364741810139409061"
+      ],
+      "height": 1015581073729915845721915599515814445465250,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 3,
+      "coordinate": [
+        "72062251717994876662055725474",
+        "3661297561675758109584270471"
+      ],
+      "height": 72062251717994876662055725474,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 4,
+      "coordinate": [
+        "-64309639825304563350325175287431854144917223205",
+        "210102797628425873842910729762427667362399903766"
+      ],
+      "height": 210102797628425873842910729762427667362399903766,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 4,
+      "coordinate": [
+        "7835886076101774976571877",
+        "6690983053681830520362730"
+      ],
+      "height": 7835886076101774976571877,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 5,
+      "coordinate": [
+        "-1061464954144938440065346889235328076504887",
+        "254851745982229195016516422696561254733639"
+      ],
+      "height": 1061464954144938440065346889235328076504887,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 5,
+      "coordinate": [
+        "-637809491915055483811984184941",
+        "217171192721472727411918567997"
+      ],
+      "height": 637809491915055483811984184941,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 6,
+      "coordinate": [
+        "-3887412664753894077280857225331708932679846",
+        "18918899511530113940884463738741219281026533"
+      ],
+      "height": 18918899511530113940884463738741219281026533,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 6,
+      "coordinate": [
+        "6873527036375451125683952850910",
+        "95128264855632634804985811013"
+      ],
+      "height": 6873527036375451125683952850910,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 7,
+      "coordinate": [
+        "154208826441732088468829726128792763131",
+        "113133203454479475831434111578611393461"
+      ],
+      "height": 154208826441732088468829726128792763131,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 7,
+      "coordinate": [
+        "-1929706614464923390029246154659749",
+        "666188513363018575668653881676885"
+      ],
+      "height": 1929706614464923390029246154659749,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 8,
+      "coordinate": [
+        "-5470999414618742537454745817185772773121665",
+        "137385781907081966296080321693233544563"
+      ],
+      "height": 5470999414618742537454745817185772773121665,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 8,
+      "coordinate": [
+        "7370331527394893916594718181575871",
+        "32962805930678584549905651783986"
+      ],
+      "height": 7370331527394893916594718181575871,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 9,
+      "coordinate": [
+        "3340057383015656768988130347004865000483213",
+        "45730772825851934102097482396477326700009"
+      ],
+      "height": 3340057383015656768988130347004865000483213,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 9,
+      "coordinate": [
+        "-1410824447121464008177346569337",
+        "642205802680940036653052202607"
+      ],
+      "height": 1410824447121464008177346569337,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 10,
+      "coordinate": [
+        "368960289676421315676688087176130",
+        "62522271935034378553821941507847"
+      ],
+      "height": 368960289676421315676688087176130,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 10,
+      "coordinate": [
+        "-56889835584505137186829117562379800926",
+        "6652107656959782657774139966908975651"
+      ],
+      "height": 56889835584505137186829117562379800926,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 11,
+      "coordinate": [
+        "173970974235857",
+        "100077829088151"
+      ],
+      "height": 173970974235857,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 11,
+      "coordinate": [
+        "-4236302442157795686108647338879675515144371593979727215",
+        "3898929239140034937933510422593293974235248056825665477"
+      ],
+      "height": 4236302442157795686108647338879675515144371593979727215,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 12,
+      "coordinate": [
+        "-930608309482668880788827034753073338",
+        "234123949107101596307638932325990567"
+      ],
+      "height": 930608309482668880788827034753073338,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 12,
+      "coordinate": [
+        "816307778105086869086213996904651",
+        "1078277484185882649732964877484220"
+      ],
+      "height": 1078277484185882649732964877484220,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 13,
+      "coordinate": [
+        "5225380287837180762099770898774624689545657691",
+        "318795654273971104984745005741173027557158660"
+      ],
+      "height": 5225380287837180762099770898774624689545657691,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 13,
+      "coordinate": [
+        "-58599213461486133972455",
+        "239267094997418110631774"
+      ],
+      "height": 239267094997418110631774,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 14,
+      "coordinate": [
+        "-68201916689485263601702638021",
+        "61532032771806590256153339056"
+      ],
+      "height": 68201916689485263601702638021,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 14,
+      "coordinate": [
+        "15355750939505307743202100260218171444755461",
+        "15679515928945346370566066720843569851840800"
+      ],
+      "height": 15679515928945346370566066720843569851840800,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 15,
+      "coordinate": [
+        "1211575094473644021873710171845210760703069198",
+        "46975040246840712219611919420517624452361105"
+      ],
+      "height": 1211575094473644021873710171845210760703069198,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 15,
+      "coordinate": [
+        "5054672210597171740344270",
+        "89877844165281430833803"
+      ],
+      "height": 5054672210597171740344270,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 16,
+      "coordinate": [
+        "214444402018234677189529229649446668044891775799",
+        "76173936289393242944010065983284733567253772244"
+      ],
+      "height": 214444402018234677189529229649446668044891775799,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 16,
+      "coordinate": [
+        "-23387522749138795970513",
+        "32226716525020650009428"
+      ],
+      "height": 32226716525020650009428,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 17,
+      "coordinate": [
+        "146656674376154673158779329683",
+        "1647421705220379405466077773841"
+      ],
+      "height": 1647421705220379405466077773841,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 17,
+      "coordinate": [
+        "-27258863802010318869300514516216968081674911",
+        "12660706194195201897231354662407492213016811"
+      ],
+      "height": 27258863802010318869300514516216968081674911,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 18,
+      "coordinate": [
+        "11650958643437742498094",
+        "868769537476232987813"
+      ],
+      "height": 11650958643437742498094,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 18,
+      "coordinate": [
+        "-3301460213148453724717554021641217725192704724",
+        "108145198430862758143557078954101693191909108529"
+      ],
+      "height": 108145198430862758143557078954101693191909108529,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 19,
+      "coordinate": [
+        "971847188252888308085714332877760586258029",
+        "67614907558987134715597167056326139295115"
+      ],
+      "height": 971847188252888308085714332877760586258029,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 19,
+      "coordinate": [
+        "-76981680238057783117463575644",
+        "71846503177736008536580143361"
+      ],
+      "height": 76981680238057783117463575644,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 20,
+      "coordinate": [
+        "1730626474623254166487197",
+        "22645833283328976657590"
+      ],
+      "height": 1730626474623254166487197,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 20,
+      "coordinate": [
+        "430621673586059812639427460837374362064528300468679",
+        "930790191827746233358449789714593956973121849579938"
+      ],
+      "height": 930790191827746233358449789714593956973121849579938,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 21,
+      "coordinate": [
+        "-799167517066395808862785694",
+        "374746501893329414936127419"
+      ],
+      "height": 799167517066395808862785694,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 21,
+      "coordinate": [
+        "-753946500015108973437181010818392160148810686",
+        "2964855988157995073345695642193151693841674013"
+      ],
+      "height": 2964855988157995073345695642193151693841674013,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 22,
+      "coordinate": [
+        "2446035262712121549129366204067442375294800960",
+        "1059123890577996539892233029205001013496214809"
+      ],
+      "height": 2446035262712121549129366204067442375294800960,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 22,
+      "coordinate": [
+        "-908857204825193758042684",
+        "291156831116405453209303"
+      ],
+      "height": 908857204825193758042684,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 23,
+      "coordinate": [
+        "903582548289056718731321593947",
+        "1045460839332859885062810456365"
+      ],
+      "height": 1045460839332859885062810456365,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 23,
+      "coordinate": [
+        "-12894660613289828199855026968412186242161",
+        "8605456830727207378646726698730961027641"
+      ],
+      "height": 12894660613289828199855026968412186242161,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 24,
+      "coordinate": [
+        "10713669329766227930010430821042087316359135",
+        "1845036520394864635915935125667300929870876"
+      ],
+      "height": 10713669329766227930010430821042087316359135,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 24,
+      "coordinate": [
+        "-2753639850897663243350226010959",
+        "168713579985080068758221316676"
+      ],
+      "height": 2753639850897663243350226010959,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 25,
+      "coordinate": [
+        "-93216857261827348565606532426883957247994982",
+        "38455916375877365338917581271147687137024411"
+      ],
+      "height": 93216857261827348565606532426883957247994982,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 25,
+      "coordinate": [
+        "-8859562972179655136892411962",
+        "9064134867395896722672013009"
+      ],
+      "height": 9064134867395896722672013009,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 26,
+      "coordinate": [
+        "-128873529401495793088891",
+        "825842349813663796767100"
+      ],
+      "height": 825842349813663796767100,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 26,
+      "coordinate": [
+        "114076021208003450744535708594000808486298587",
+        "41199121357032198225458930835874327584400196"
+      ],
+      "height": 114076021208003450744535708594000808486298587,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 27,
+      "coordinate": [
+        "960935311718832303465133752287922491800761",
+        "302084973884661548919761307517684896629471"
+      ],
+      "height": 960935311718832303465133752287922491800761,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 27,
+      "coordinate": [
+        "11826068892330767356444446019911",
+        "1583650131291045698729625804257"
+      ],
+      "height": 11826068892330767356444446019911,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 28,
+      "coordinate": [
+        "-5242986085485365432967804218247202088",
+        "6238952909576596985229643754961841667"
+      ],
+      "height": 6238952909576596985229643754961841667,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 28,
+      "coordinate": [
+        "-17326195875446299132233268157768024",
+        "159215887439148186822558279776477"
+      ],
+      "height": 17326195875446299132233268157768024,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 29,
+      "coordinate": [
+        "-1193472602992599476370186535179392591138641",
+        "257689997197191131732830379112234747686151"
+      ],
+      "height": 1193472602992599476370186535179392591138641,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 29,
+      "coordinate": [
+        "273596773281339232702145024705",
+        "332629172824356174294193255017"
+      ],
+      "height": 332629172824356174294193255017,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 30,
+      "coordinate": [
+        "-659057789125964690794762298310931254",
+        "38742841242218491880761399691933729"
+      ],
+      "height": 659057789125964690794762298310931254,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 30,
+      "coordinate": [
+        "-106087691905684274088827572051077750",
+        "3121033534810175396619974853971161231"
+      ],
+      "height": 3121033534810175396619974853971161231,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 31,
+      "coordinate": [
+        "52778435105905552432408534791558894341249425",
+        "366915320679912147832991632195532070123891"
+      ],
+      "height": 52778435105905552432408534791558894341249425,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 31,
+      "coordinate": [
+        "-841274109226507472289997991",
+        "4409646888030209833795659"
+      ],
+      "height": 841274109226507472289997991,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 32,
+      "coordinate": [
+        "-204140471541859880341675280749724202190422712371460",
+        "257417392655064355798833522344829318146349360503959"
+      ],
+      "height": 257417392655064355798833522344829318146349360503959,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 32,
+      "coordinate": [
+        "-71590569278742261210524",
+        "92380360260473293893857"
+      ],
+      "height": 92380360260473293893857,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 33,
+      "coordinate": [
+        "-54041551605626340533698439118145",
+        "7211925747847236391232239038431"
+      ],
+      "height": 54041551605626340533698439118145,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 33,
+      "coordinate": [
+        "2389195727591744002303775396044436567",
+        "1520449006513659280695089927326202687"
+      ],
+      "height": 2389195727591744002303775396044436567,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 34,
+      "coordinate": [
+        "11754998970958577443738318308852352908999212645579",
+        "18483803200449410673871294281776298688697647610501"
+      ],
+      "height": 18483803200449410673871294281776298688697647610501,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 34,
+      "coordinate": [
+        "47654377095212688436997",
+        "64058210890005491760581"
+      ],
+      "height": 64058210890005491760581,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 35,
+      "coordinate": [
+        "-7806577566845055369403316125646000396103",
+        "9887329073669502281370441917411906227802"
+      ],
+      "height": 9887329073669502281370441917411906227802,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 35,
+      "coordinate": [
+        "8109699392836777428244908652425",
+        "356423608470880025590715754554"
+      ],
+      "height": 8109699392836777428244908652425,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 36,
+      "coordinate": [
+        "48597101346342752885642",
+        "41406640908780695521719"
+      ],
+      "height": 48597101346342752885642,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 36,
+      "coordinate": [
+        "-6386451455260282246415064013464531790365447574",
+        "6759683324404885669431655604585047839156988059"
+      ],
+      "height": 6759683324404885669431655604585047839156988059,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 37,
+      "coordinate": [
+        "-62304212930367690261374428611014710894128734",
+        "7268710975845132486219990422479683960347525"
+      ],
+      "height": 62304212930367690261374428611014710894128734,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 37,
+      "coordinate": [
+        "-183777261693437512963484",
+        "18596301535145492304187127"
+      ],
+      "height": 18596301535145492304187127,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 38,
+      "coordinate": [
+        "2718642060835641750428137949824666606403061",
+        "1620832852165393077873687021813744411423595"
+      ],
+      "height": 2718642060835641750428137949824666606403061,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 38,
+      "coordinate": [
+        "-142916472193101178969701237519",
+        "9018301464589097152637989223"
+      ],
+      "height": 142916472193101178969701237519,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 39,
+      "coordinate": [
+        "12559891910542888294698984480989268729014987110209",
+        "2595391210199044357362575533540632292855285382030"
+      ],
+      "height": 12559891910542888294698984480989268729014987110209,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 39,
+      "coordinate": [
+        "-6586779014297561355",
+        "21842293861510550854"
+      ],
+      "height": 21842293861510550854,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 40,
+      "coordinate": [
+        "27520432051009961727331513790099",
+        "5224304163676618132191239269806"
+      ],
+      "height": 27520432051009961727331513790099,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 40,
+      "coordinate": [
+        "55290188433680517702849621419760810017",
+        "245421935239723168513657514308476069114"
+      ],
+      "height": 245421935239723168513657514308476069114,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 41,
+      "coordinate": [
+        "-44353301122895548505293509203782010750473113",
+        "6119926722739161502203699891187425154560425"
+      ],
+      "height": 44353301122895548505293509203782010750473113,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 41,
+      "coordinate": [
+        "-21170479228110761404427493",
+        "14953740579151941490083221"
+      ],
+      "height": 21170479228110761404427493,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 42,
+      "coordinate": [
+        "-2264189560939907024629499144990738699623",
+        "68055301437757035511741645874946956313"
+      ],
+      "height": 2264189560939907024629499144990738699623,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 42,
+      "coordinate": [
+        "62894089430371601450502321643",
+        "75029997170383825397662639659"
+      ],
+      "height": 75029997170383825397662639659,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 43,
+      "coordinate": [
+        "-17413850037152548343",
+        "9919389572988188439"
+      ],
+      "height": 17413850037152548343,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 43,
+      "coordinate": [
+        "122047139883989718291068186826518033312773846864",
+        "6589489670144783030139052209068322634361654955"
+      ],
+      "height": 122047139883989718291068186826518033312773846864,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 44,
+      "coordinate": [
+        "-64183619604633939773567057713514621929",
+        "22444008069868353524901911729947975990"
+      ],
+      "height": 64183619604633939773567057713514621929,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 44,
+      "coordinate": [
+        "61262917678854594390960725467",
+        "21862376784514056146231413298"
+      ],
+      "height": 61262917678854594390960725467,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 45,
+      "coordinate": [
+        "574934171485626523996158080576485",
+        "103542778202792542157714902765284"
+      ],
+      "height": 574934171485626523996158080576485,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 45,
+      "coordinate": [
+        "-2885873355965099640659741214841361",
+        "1723533804777042310674598270980060"
+      ],
+      "height": 2885873355965099640659741214841361,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 46,
+      "coordinate": [
+        "-154369912393694556624637271154821091045641438582",
+        "96244218442230655149405942714221832459439383089"
+      ],
+      "height": 154369912393694556624637271154821091045641438582,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 46,
+      "coordinate": [
+        "3936754634663866289951",
+        "2829103912278222549487"
+      ],
+      "height": 3936754634663866289951,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 47,
+      "coordinate": [
+        "18153869451539250123698837749378893964414410",
+        "1418703836904654237514473575480848850907113"
+      ],
+      "height": 18153869451539250123698837749378893964414410,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 47,
+      "coordinate": [
+        "172021500304406802106206",
+        "12417225954391344329669"
+      ],
+      "height": 172021500304406802106206,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 48,
+      "coordinate": [
+        "-172587520244971600986143223889634588",
+        "62031137031477618140866572680903857"
+      ],
+      "height": 172587520244971600986143223889634588,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "generic17",
+      "at_infinity": false,
+      "chart": 48,
+      "coordinate": [
+        "-228853335193236226431482996085628",
+        "1240313016684232484691677442089"
+      ],
+      "height": 228853335193236226431482996085628,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 0,
+      "coordinate": [
+        "163052832919957538109611403",
+        "662883684350660166417433651"
+      ],
+      "height": 662883684350660166417433651,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 0,
+      "coordinate": [
+        "1641051325607767965131295775707344663859373058189",
+        "316664256412184103580256397662853448399764971813"
+      ],
+      "height": 1641051325607767965131295775707344663859373058189,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 1,
+      "coordinate": [
+        "9074200909009829923587800115954884082973400",
+        "7035235975885099673501163167383477900341837"
+      ],
+      "height": 9074200909009829923587800115954884082973400,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 1,
+      "coordinate": [
+        "6955679248578035723520833968",
+        "5640341715557492639398090481"
+      ],
+      "height": 6955679248578035723520833968,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 2,
+      "coordinate": [
+        "-16043414374656116871918311484702842988",
+        "12654521588803377167809958043351769697"
+      ],
+      "height": 16043414374656116871918311484702842988,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 2,
+      "coordinate": [
+        "1292367635561009436712644696941623764",
+        "953499055651536885527658496406054329"
+      ],
+      "height": 1292367635561009436712644696941623764,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 3,
+      "coordinate": [
+        "-74167296757867141636926587139945777037043255484042587",
+        "22735688680714485727325042236254063970185931576220966"
+      ],
+      "height": 74167296757867141636926587139945777037043255484042587,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 3,
+      "coordinate": [
+        "45536085699455016089",
+        "104137837718785499398"
+      ],
+      "height": 104137837718785499398,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 4,
+      "coordinate": [
+        "-3508570517283652572020067843473",
+        "240778966894404772528414011348"
+      ],
+      "height": 3508570517283652572020067843473,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 4,
+      "coordinate": [
+        "55739938917143377732829098823529952677251",
+        "109011374326772159804005767951021423151872"
+      ],
+      "height": 109011374326772159804005767951021423151872,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 5,
+      "coordinate": [
+        "-1464998937327558245076144616360151435836414",
+        "1128654986037276033625621493428191910252171"
+      ],
+      "height": 1464998937327558245076144616360151435836414,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 5,
+      "coordinate": [
+        "-1141661878072589381612121170738",
+        "288792240204190255110627624557"
+      ],
+      "height": 1141661878072589381612121170738,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 6,
+      "coordinate": [
+        "-228111215505146717156847252543308655545437",
+        "17482759970412244296394052726631788914716"
+      ],
+      "height": 228111215505146717156847252543308655545437,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 6,
+      "coordinate": [
+        "9145636098492241047901812560151",
+        "895036658580456898689006148012"
+      ],
+      "height": 9145636098492241047901812560151,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 7,
+      "coordinate": [
+        "-4467999221196610855652489499150009519",
+        "310819846594467977101480827182717533"
+      ],
+      "height": 4467999221196610855652489499150009519,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 7,
+      "coordinate": [
+        "-1422183757229991786228778044003884012577",
+        "44450007607766548808495018242610469139"
+      ],
+      "height": 1422183757229991786228778044003884012577,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 8,
+      "coordinate": [
+        "155144949379217734797223460312543577723",
+        "101947739043331320692047922812144359278"
+      ],
+      "height": 155144949379217734797223460312543577723,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 8,
+      "coordinate": [
+        "10093109653212160791929604953245149",
+        "59445070406866719880342369300354"
+      ],
+      "height": 10093109653212160791929604953245149,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 9,
+      "coordinate": [
+        "-111199980916353023034015508402",
+        "23463706322088674521528716493"
+      ],
+      "height": 111199980916353023034015508402,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 9,
+      "coordinate": [
+        "-8721819529370899377127702368059538545146752",
+        "233623892035093412789411681482781486185543"
+      ],
+      "height": 8721819529370899377127702368059538545146752,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 10,
+      "coordinate": [
+        "-298537848993348201834455756767662590663",
+        "2334624291871831679025471739598696769"
+      ],
+      "height": 298537848993348201834455756767662590663,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 10,
+      "coordinate": [
+        "552385814293642183221460702510907",
+        "61907878457332026475946328239059"
+      ],
+      "height": 552385814293642183221460702510907,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 11,
+      "coordinate": [
+        "-81172633401063959495370524878525228079",
+        "89667930654020274073497080486863113027"
+      ],
+      "height": 89667930654020274073497080486863113027,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 11,
+      "coordinate": [
+        "14192085362128127813803806458606069",
+        "20190518145495447072081507955211503"
+      ],
+      "height": 20190518145495447072081507955211503,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 12,
+      "coordinate": [
+        "-12246772178605854023918928150285159875290506248",
+        "8313506834117429988874744620760821908950818681"
+      ],
+      "height": 12246772178605854023918928150285159875290506248,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 12,
+      "coordinate": [
+        "54212080552062472657289096",
+        "35877739149019145774209163"
+      ],
+      "height": 54212080552062472657289096,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 13,
+      "coordinate": [
+        "2300557381686093085692800574823",
+        "175848954633680989703377347719"
+      ],
+      "height": 2300557381686093085692800574823,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 13,
+      "coordinate": [
+        "268034080810059293711114328035501161827",
+        "69432226574928880365816008608294269271"
+      ],
+      "height": 268034080810059293711114328035501161827,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 14,
+      "coordinate": [
+        "4411456171096716495177832082962046545573989",
+        "606887335877236563264171193406063846620559"
+      ],
+      "height": 4411456171096716495177832082962046545573989,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 14,
+      "coordinate": [
+        "2796257820604940722637365118597",
+        "52380510720490880546635748207"
+      ],
+      "height": 2796257820604940722637365118597,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 15,
+      "coordinate": [
+        "22602286039494974707392741771812126596",
+        "18728380523977787280545323398665449841"
+      ],
+      "height": 22602286039494974707392741771812126596,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 15,
+      "coordinate": [
+        "-11553451364761417052502194775102052",
+        "7154549896632822095069862470488071"
+      ],
+      "height": 11553451364761417052502194775102052,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 16,
+      "coordinate": [
+        "-5118361519075508739540355807005734",
+        "619881287418084139625507927232715"
+      ],
+      "height": 5118361519075508739540355807005734,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 16,
+      "coordinate": [
+        "106081784982079827267502032811841740274",
+        "4866227247815647516422431343726093663"
+      ],
+      "height": 106081784982079827267502032811841740274,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 17,
+      "coordinate": [
+        "-1755408207595723995807231160953925169",
+        "22438885043949731987539932371060021"
+      ],
+      "height": 1755408207595723995807231160953925169,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 17,
+      "coordinate": [
+        "-972998676954323296110673756766365",
+        "611850058853142228116020450968077"
+      ],
+      "height": 972998676954323296110673756766365,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 18,
+      "coordinate": [
+        "-71732064985022622798418009073711521365681851475",
+        "49337394084044457782411602209729219941063424508"
+      ],
+      "height": 71732064985022622798418009073711521365681851475,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 18,
+      "coordinate": [
+        "10482485066474590276521975",
+        "1525235913533164023112528"
+      ],
+      "height": 10482485066474590276521975,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 19,
+      "coordinate": [
+        "-34801702495960787058056685",
+        "6950500930461913801481438"
+      ],
+      "height": 34801702495960787058056685,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 19,
+      "coordinate": [
+        "-67045929588517736425823302500435174120630123",
+        "4434424096577450169799062646726997535705194"
+      ],
+      "height": 67045929588517736425823302500435174120630123,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 20,
+      "coordinate": [
+        "235112219821829625268718752214609",
+        "24880663391182252867217581799169"
+      ],
+      "height": 235112219821829625268718752214609,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 20,
+      "coordinate": [
+        "-3690255001076049780840078718877537119",
+        "1495679502252265466138891656885549583"
+      ],
+      "height": 3690255001076049780840078718877537119,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 21,
+      "coordinate": [
+        "-262067717909563869869954678655216348604351063023",
+        "67946389498082640252940949568127502621524028141"
+      ],
+      "height": 262067717909563869869954678655216348604351063023,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 21,
+      "coordinate": [
+        "-11531282504896121727443",
+        "21446520596859457094091"
+      ],
+      "height": 21446520596859457094091,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 22,
+      "coordinate": [
+        "-5029777185562946715954016031664768230167",
+        "19085202199512840043516159020276641353929"
+      ],
+      "height": 19085202199512840043516159020276641353929,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 22,
+      "coordinate": [
+        "6385343239953215787992085890439",
+        "2316012526380400179340851132007"
+      ],
+      "height": 6385343239953215787992085890439,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 23,
+      "coordinate": [
+        "-209533147721071648188776447443678388029",
+        "417075728116815959054715073255844164"
+      ],
+      "height": 209533147721071648188776447443678388029,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 23,
+      "coordinate": [
+        "-28290457941929227901039734080711863",
+        "13062296534665497775082362474589228"
+      ],
+      "height": 28290457941929227901039734080711863,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 24,
+      "coordinate": [
+        "298572162854154198967732570277",
+        "10096885335277356816130010136"
+      ],
+      "height": 298572162854154198967732570277,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 24,
+      "coordinate": [
+        "-407624603583943509380259447623766048662058279",
+        "13139148539596631849641774478953814545051928"
+      ],
+      "height": 407624603583943509380259447623766048662058279,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 25,
+      "coordinate": [
+        "424130434606053828719413981401063617508707746479",
+        "163099620729884892600326030379417945013972359574"
+      ],
+      "height": 424130434606053828719413981401063617508707746479,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 25,
+      "coordinate": [
+        "-68481803812877945715",
+        "7691660973134822173634"
+      ],
+      "height": 7691660973134822173634,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 26,
+      "coordinate": [
+        "1968111222610539966339804492780451",
+        "1347534857139547238599855944185119"
+      ],
+      "height": 1968111222610539966339804492780451,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 26,
+      "coordinate": [
+        "44943326568202728631887206211386069381",
+        "4260217966774207531109238637555303289"
+      ],
+      "height": 44943326568202728631887206211386069381,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 27,
+      "coordinate": [
+        "-1289682526066490971670789173716303832869",
+        "311952300837776926901661264348739922428"
+      ],
+      "height": 1289682526066490971670789173716303832869,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 27,
+      "coordinate": [
+        "-43083764597268214792946617765877",
+        "4085595204733796271688913121524"
+      ],
+      "height": 43083764597268214792946617765877,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 28,
+      "coordinate": [
+        "-1246056934838647512722951",
+        "299048521107450513374601"
+      ],
+      "height": 1246056934838647512722951,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 28,
+      "coordinate": [
+        "56295042870186207452809498804346017590443121",
+        "777326631686544882336509937052887531865962109"
+      ],
+      "height": 777326631686544882336509937052887531865962109,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 29,
+      "coordinate": [
+        "-561149923296583473377983651",
+        "297902056263767926948666945"
+      ],
+      "height": 561149923296583473377983651,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 29,
+      "coordinate": [
+        "6735544016344780556119210613417956435400218141",
+        "2850671874631892019643053383735029325327661705"
+      ],
+      "height": 6735544016344780556119210613417956435400218141,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 30,
+      "coordinate": [
+        "-216788290280321707297764571530284156507",
+        "551244272122570830010222341412527262"
+      ],
+      "height": 216788290280321707297764571530284156507,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 30,
+      "coordinate": [
+        "-379206860954985802040244217008823277",
+        "9681595448555949375640633030898482"
+      ],
+      "height": 379206860954985802040244217008823277,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 31,
+      "coordinate": [
+        "-1133328069116208722796194220756359427",
+        "36715532576348236208572877069188204"
+      ],
+      "height": 1133328069116208722796194220756359427,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 31,
+      "coordinate": [
+        "27306805915340987473230711371117567",
+        "8741224584747422928261636500082216"
+      ],
+      "height": 27306805915340987473230711371117567,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 32,
+      "coordinate": [
+        "-5295294588080725527990329831376560812772304",
+        "1799869942822464848661869737913802408143789"
+      ],
+      "height": 5295294588080725527990329831376560812772304,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 32,
+      "coordinate": [
+        "-4067307025067292192630588112",
+        "4748217221262331290985006877"
+      ],
+      "height": 4748217221262331290985006877,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 33,
+      "coordinate": [
+        "-1553952678706676991381055",
+        "235490743363299695698487"
+      ],
+      "height": 1553952678706676991381055,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 33,
+      "coordinate": [
+        "-324496782841262285724465512485475813081751930375",
+        "690601838758896739559743114464923461963593721423"
+      ],
+      "height": 690601838758896739559743114464923461963593721423,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 34,
+      "coordinate": [
+        "1823576325587214487542331952094",
+        "1212051074194371473641713000827"
+      ],
+      "height": 1823576325587214487542331952094,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 34,
+      "coordinate": [
+        "-276573362359477008612654758320638261913002",
+        "21906321614615330926360637453220813380839"
+      ],
+      "height": 276573362359477008612654758320638261913002,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 35,
+      "coordinate": [
+        "-2018235405649225749611721004561",
+        "649601751808973671034749549770"
+      ],
+      "height": 2018235405649225749611721004561,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 35,
+      "coordinate": [
+        "6487993571553145069381222138809296737575",
+        "1613936327452214238660568521842813327002"
+      ],
+      "height": 6487993571553145069381222138809296737575,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 36,
+      "coordinate": [
+        "51827735543675168628229807724352154",
+        "26507310417670572514865767937045339"
+      ],
+      "height": 51827735543675168628229807724352154,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 36,
+      "coordinate": [
+        "-971894439345989545864306428323530",
+        "1583478171576746263168795674072659"
+      ],
+      "height": 1583478171576746263168795674072659,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 37,
+      "coordinate": [
+        "39598183522512471587614907804740",
+        "7452155705607291461345389857049"
+      ],
+      "height": 39598183522512471587614907804740,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 37,
+      "coordinate": [
+        "-26643771680248523872741836421263698007580",
+        "8029104345150261580480672190901281064497"
+      ],
+      "height": 26643771680248523872741836421263698007580,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 38,
+      "coordinate": [
+        "633808788680886859065176059250028508518177",
+        "18437085450693259435069209407957749139324"
+      ],
+      "height": 633808788680886859065176059250028508518177,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 38,
+      "coordinate": [
+        "935848046418815089950752714651",
+        "137208436790364474474691175092"
+      ],
+      "height": 935848046418815089950752714651,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 39,
+      "coordinate": [
+        "-23355120688088536714248911965726654786727021011",
+        "6659770160692039262668761232597379484221038467"
+      ],
+      "height": 23355120688088536714248911965726654786727021011,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 39,
+      "coordinate": [
+        "348630774014726276587379",
+        "666118946232340821676827"
+      ],
+      "height": 666118946232340821676827,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 40,
+      "coordinate": [
+        "31891189006459434861753133783800",
+        "44884778398067265007738910221187"
+      ],
+      "height": 44884778398067265007738910221187,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 40,
+      "coordinate": [
+        "-193123271700096643881201861085190727750",
+        "219743055112840786774195613951829367229"
+      ],
+      "height": 219743055112840786774195613951829367229,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 41,
+      "coordinate": [
+        "2752072144220671266130584012207571",
+        "2675340150415150734857909367959973"
+      ],
+      "height": 2752072144220671266130584012207571,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 41,
+      "coordinate": [
+        "283820430967500310973429979068640631",
+        "1713580848672229744041077794310232289"
+      ],
+      "height": 1713580848672229744041077794310232289,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 42,
+      "coordinate": [
+        "-66011900976493858831956337",
+        "14867598349516395982359116"
+      ],
+      "height": 66011900976493858831956337,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 42,
+      "coordinate": [
+        "423644733534953317902818124160410885308923919",
+        "25134325729797408820695742208633868344301260"
+      ],
+      "height": 423644733534953317902818124160410885308923919,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 43,
+      "coordinate": [
+        "635974192454661040989218704467",
+        "2092318845239091058823703509356"
+      ],
+      "height": 2092318845239091058823703509356,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 43,
+      "coordinate": [
+        "114655397624662889221229472867457068929709",
+        "28213524740406141359411303345065189728212"
+      ],
+      "height": 114655397624662889221229472867457068929709,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 44,
+      "coordinate": [
+        "-539292239671140114195437467274084012075",
+        "152083658809987786746954877315400248659"
+      ],
+      "height": 539292239671140114195437467274084012075,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 44,
+      "coordinate": [
+        "-192529732763093454832050487541175",
+        "31712833344024764655279733973503"
+      ],
+      "height": 192529732763093454832050487541175,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 45,
+      "coordinate": [
+        "406593894037233551632892149106",
+        "168430238504192533983569824841"
+      ],
+      "height": 406593894037233551632892149106,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 45,
+      "coordinate": [
+        "-21634014564303674230483359755015544041282",
+        "20599904090592512274837770154164286311473"
+      ],
+      "height": 21634014564303674230483359755015544041282,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 46,
+      "coordinate": [
+        "-181019601930113457276839194164865581",
+        "1087947177053764328655978303999774349"
+      ],
+      "height": 1087947177053764328655978303999774349,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 46,
+      "coordinate": [
+        "20336474644740576744953953922125675",
+        "11333442409080762205537102293247477"
+      ],
+      "height": 20336474644740576744953953922125675,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 47,
+      "coordinate": [
+        "-5181075019783742523228180719202792769751",
+        "2897014017859628548409410938675507708423"
+      ],
+      "height": 5181075019783742523228180719202792769751,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 47,
+      "coordinate": [
+        "47042027545337888005047957265",
+        "96576192803000885780200031177"
+      ],
+      "height": 96576192803000885780200031177,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 48,
+      "coordinate": [
+        "-208665663026815857855064549104834120340",
+        "12912756779278838345577825469101128339"
+      ],
+      "height": 208665663026815857855064549104834120340,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 48,
+      "coordinate": [
+        "-5155446227788113775081127380760",
+        "7974106533253284122724656182497"
+      ],
+      "height": 7974106533253284122724656182497,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 26,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 0,
+      "coordinate": [
+        "4454687427598516808436769089248992805238072812283",
+        "7646362729426776367622110239835223410773851633443"
+      ],
+      "height": 7646362729426776367622110239835223410773851633443,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 0,
+      "coordinate": [
+        "-252755520889780916203056351",
+        "163296952636772658208945177"
+      ],
+      "height": 252755520889780916203056351,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 1,
+      "coordinate": [
+        "84599522442554527168165273349620",
+        "16588202111967430083481631684867"
+      ],
+      "height": 84599522442554527168165273349620,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 1,
+      "coordinate": [
+        "3544626882600927252690575919996248693332531226",
+        "634643973191070094900567146866224252133608429"
+      ],
+      "height": 3544626882600927252690575919996248693332531226,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 2,
+      "coordinate": [
+        "-78634769041737622390357096913125103340",
+        "232420986253482821989786238654318907911"
+      ],
+      "height": 232420986253482821989786238654318907911,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 2,
+      "coordinate": [
+        "1112270529996503003688478564832183989164",
+        "447945767443866928457254581617699601427"
+      ],
+      "height": 1112270529996503003688478564832183989164,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 3,
+      "coordinate": [
+        "5398818648018951249811476939837714897353",
+        "1572754146512130352177920834275651811802"
+      ],
+      "height": 5398818648018951249811476939837714897353,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 3,
+      "coordinate": [
+        "132843434591041143072002178182661751",
+        "3049948657770392243469010822382166380"
+      ],
+      "height": 3049948657770392243469010822382166380,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 4,
+      "coordinate": [
+        "360233315853823146142390469098743469",
+        "19076772724251633422286555944849337"
+      ],
+      "height": 360233315853823146142390469098743469,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 4,
+      "coordinate": [
+        "-59855338893323374526809054423528424191477",
+        "24972970670244221863883769133710652243710"
+      ],
+      "height": 59855338893323374526809054423528424191477,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 5,
+      "coordinate": [
+        "-121772044965385907947432392947882",
+        "150603125203750785562421266238585"
+      ],
+      "height": 150603125203750785562421266238585,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 5,
+      "coordinate": [
+        "448324678262815658815258433833448822892578",
+        "485525754199944568299830437505765726881531"
+      ],
+      "height": 485525754199944568299830437505765726881531,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 6,
+      "coordinate": [
+        "-269996771029696028232045021023043",
+        "11276529537836500222342161371620"
+      ],
+      "height": 269996771029696028232045021023043,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 6,
+      "coordinate": [
+        "12089865782159972499250352902337266267072767",
+        "3666221988415071618111278369357967859093196"
+      ],
+      "height": 12089865782159972499250352902337266267072767,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 7,
+      "coordinate": [
+        "5276921068177087019771764917675",
+        "407789487712284782553508774127"
+      ],
+      "height": 5276921068177087019771764917675,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 7,
+      "coordinate": [
+        "66907173141321736032179639583124757669433953309691",
+        "1659769994008630631137086037426698842949770235775"
+      ],
+      "height": 66907173141321736032179639583124757669433953309691,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 8,
+      "coordinate": [
+        "-24465979542363704069198278236236039013",
+        "2754627629990151710779031688064619246"
+      ],
+      "height": 24465979542363704069198278236236039013,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 8,
+      "coordinate": [
+        "389177406672021540107536983347887965039",
+        "416820543589166551252957118198593906070"
+      ],
+      "height": 416820543589166551252957118198593906070,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 9,
+      "coordinate": [
+        "-12127425821695675097923850965792750159594044305",
+        "3341592782520840492797692125383452276150106002"
+      ],
+      "height": 12127425821695675097923850965792750159594044305,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 9,
+      "coordinate": [
+        "3559274491320021894790336799267",
+        "597161025630093270664347575771"
+      ],
+      "height": 3559274491320021894790336799267,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 10,
+      "coordinate": [
+        "-145395893407961941329018100155366583",
+        "9327277420821986046507161359341265"
+      ],
+      "height": 145395893407961941329018100155366583,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 10,
+      "coordinate": [
+        "1255320188376649032652450828602074805719689",
+        "116086199176874740639642038521431668060689"
+      ],
+      "height": 1255320188376649032652450828602074805719689,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 11,
+      "coordinate": [
+        "-2976426921132521333105405293453591",
+        "11138335425384859834201934640396171"
+      ],
+      "height": 11138335425384859834201934640396171,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 11,
+      "coordinate": [
+        "2102016813826045480170773840982711332467373",
+        "404846089319320027922732369105237112846999"
+      ],
+      "height": 2102016813826045480170773840982711332467373,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 12,
+      "coordinate": [
+        "-18416649053871861583170874760",
+        "25247077401454736884349111031"
+      ],
+      "height": 25247077401454736884349111031,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 12,
+      "coordinate": [
+        "5370962419586950904914611681739551555868312612096",
+        "1218744142965507680354531069943385782785359021041"
+      ],
+      "height": 5370962419586950904914611681739551555868312612096,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 13,
+      "coordinate": [
+        "68944961768510898106302217",
+        "185510153375981563123651628"
+      ],
+      "height": 185510153375981563123651628,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 13,
+      "coordinate": [
+        "157440698009188688656969621699507084635802596533",
+        "135652477915521151486410910564671897101148987031"
+      ],
+      "height": 157440698009188688656969621699507084635802596533,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 14,
+      "coordinate": [
+        "361351152669194916586833",
+        "15189343537272253829555"
+      ],
+      "height": 361351152669194916586833,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 14,
+      "coordinate": [
+        "-64614232818555073561348018855757984851271560686741",
+        "3532720166874660159772451867085374514030625670561"
+      ],
+      "height": 64614232818555073561348018855757984851271560686741,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 15,
+      "coordinate": [
+        "-272707579004843667366805293167200377333643588",
+        "20498100083425247105732706286900361373358663"
+      ],
+      "height": 272707579004843667366805293167200377333643588,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 15,
+      "coordinate": [
+        "-258528498074498169182168273763916",
+        "69468575743299978346166578720297"
+      ],
+      "height": 258528498074498169182168273763916,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 16,
+      "coordinate": [
+        "-14048566342559542913832996577087966913698477905710",
+        "2315112237883046033529073772900686561555376278159"
+      ],
+      "height": 14048566342559542913832996577087966913698477905710,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 16,
+      "coordinate": [
+        "161075673276704359342822",
+        "8671564624425246030547093"
+      ],
+      "height": 8671564624425246030547093,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 17,
+      "coordinate": [
+        "-33734137130170557359447394438895",
+        "28179276405057072450140234058673"
+      ],
+      "height": 33734137130170557359447394438895,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 17,
+      "coordinate": [
+        "41572612142811140889867995233160867254019",
+        "7311788015674554676018010904949200270898"
+      ],
+      "height": 41572612142811140889867995233160867254019,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 18,
+      "coordinate": [
+        "-293281736398692921683905753948910493483",
+        "183565704771590558404715391270075055898"
+      ],
+      "height": 293281736398692921683905753948910493483,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 18,
+      "coordinate": [
+        "203530403206339785254775899381363739",
+        "185237874699053752067162154295706515"
+      ],
+      "height": 203530403206339785254775899381363739,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 19,
+      "coordinate": [
+        "703046486873201795221981996633633695773526566108037639",
+        "68078067285648387654948722251168395547699371027786290"
+      ],
+      "height": 703046486873201795221981996633633695773526566108037639,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 19,
+      "coordinate": [
+        "-51377581360522197262941",
+        "928845224730325788644"
+      ],
+      "height": 51377581360522197262941,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 20,
+      "coordinate": [
+        "57495862557674724158727374027762281",
+        "17062692125609496323809760677093350"
+      ],
+      "height": 57495862557674724158727374027762281,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 20,
+      "coordinate": [
+        "-27031008031946993932142150483654938346",
+        "5508729720786714553996350505302721203"
+      ],
+      "height": 27031008031946993932142150483654938346,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 21,
+      "coordinate": [
+        "-513180321961963239630600579299",
+        "1152314363889690400490614596636"
+      ],
+      "height": 1152314363889690400490614596636,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 21,
+      "coordinate": [
+        "-4441231141377292777146455872080511577530634",
+        "51845919064427584240737235659584443782789"
+      ],
+      "height": 4441231141377292777146455872080511577530634,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 22,
+      "coordinate": [
+        "6740073988158291310175944373955077",
+        "9949222912835108979713150779507269"
+      ],
+      "height": 9949222912835108979713150779507269,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 22,
+      "coordinate": [
+        "-177758297272070005023902599009032701727631",
+        "39095791571118732591740339671670060419713"
+      ],
+      "height": 177758297272070005023902599009032701727631,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 23,
+      "coordinate": [
+        "-420955389603841300136472290057221412672539763",
+        "5528397900602054363793717551409472875325196"
+      ],
+      "height": 420955389603841300136472290057221412672539763,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 23,
+      "coordinate": [
+        "209409044332752226800389888102415661",
+        "14492599971062176585380267238291076"
+      ],
+      "height": 209409044332752226800389888102415661,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 24,
+      "coordinate": [
+        "-2054229683486008157043947607",
+        "425067630897701870980217512"
+      ],
+      "height": 2054229683486008157043947607,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 24,
+      "coordinate": [
+        "-3307628483273552895141916305142550233914054591",
+        "14688895965617197634095757300614487957353936"
+      ],
+      "height": 3307628483273552895141916305142550233914054591,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 25,
+      "coordinate": [
+        "-355856591650428337301037632803206420682104333",
+        "26842969373644885436947253941564273431856574"
+      ],
+      "height": 355856591650428337301037632803206420682104333,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 25,
+      "coordinate": [
+        "3359747333553869569478698763277",
+        "67351838805935129021827462946498"
+      ],
+      "height": 67351838805935129021827462946498,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 26,
+      "coordinate": [
+        "-166559314399998207893473018891512003889",
+        "35506890643941897997820409997434241367"
+      ],
+      "height": 166559314399998207893473018891512003889,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 26,
+      "coordinate": [
+        "33867716373172291509827701307325833",
+        "12564001858324055941778675857274453"
+      ],
+      "height": 33867716373172291509827701307325833,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 27,
+      "coordinate": [
+        "-23077585668938945564762160551",
+        "18973644131020828735472885930"
+      ],
+      "height": 23077585668938945564762160551,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 27,
+      "coordinate": [
+        "-2105773604924218893448657596583923127272187",
+        "5185304587176968501400389892163382515846816"
+      ],
+      "height": 5185304587176968501400389892163382515846816,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 28,
+      "coordinate": [
+        "-3396759831121382965",
+        "2479436365666333109"
+      ],
+      "height": 3396759831121382965,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 28,
+      "coordinate": [
+        "1959511479779838408155274390847235114246502502881418",
+        "1465963918231678271915940666206576326219937782526803"
+      ],
+      "height": 1959511479779838408155274390847235114246502502881418,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 29,
+      "coordinate": [
+        "-555688508434095645501271561955869",
+        "117135919108043019252880493847747"
+      ],
+      "height": 555688508434095645501271561955869,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 29,
+      "coordinate": [
+        "34814740774144176642959678790733112980033",
+        "31534462328738412621698782366066181340483"
+      ],
+      "height": 34814740774144176642959678790733112980033,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 30,
+      "coordinate": [
+        "-577914509978289301224353",
+        "3840178963674828081850"
+      ],
+      "height": 577914509978289301224353,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 30,
+      "coordinate": [
+        "1599454560602221136180907307444667007995024260468708163",
+        "12818664159835453970920063167890092099082345055845618"
+      ],
+      "height": 1599454560602221136180907307444667007995024260468708163,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 31,
+      "coordinate": [
+        "-3817420302800405028671440465561157",
+        "307670951438360102676165876767538"
+      ],
+      "height": 3817420302800405028671440465561157,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 31,
+      "coordinate": [
+        "-32327579866695546163525796751924194575",
+        "19723722164165841143727580300636866063"
+      ],
+      "height": 32327579866695546163525796751924194575,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 32,
+      "coordinate": [
+        "-97313931315267881420583988622638722462925145537509871248",
+        "176063673319868269424309223147502940826023680645108964201"
+      ],
+      "height": 176063673319868269424309223147502940826023680645108964201,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 32,
+      "coordinate": [
+        "-43836006089981379376",
+        "9623735562475519475"
+      ],
+      "height": 43836006089981379376,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 33,
+      "coordinate": [
+        "-462807849831182215045126180923267888090297114727",
+        "361311437569130527323300215198226920205172540823"
+      ],
+      "height": 462807849831182215045126180923267888090297114727,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 33,
+      "coordinate": [
+        "-37881946240475253095712979",
+        "1929584136965145478881095"
+      ],
+      "height": 37881946240475253095712979,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 34,
+      "coordinate": [
+        "-1653170812354612740150",
+        "4595392084492025624297"
+      ],
+      "height": 4595392084492025624297,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 34,
+      "coordinate": [
+        "15923243707397635169633520819617753198574576274884801342",
+        "3390718346676723632680262301003728843125881880614546283"
+      ],
+      "height": 15923243707397635169633520819617753198574576274884801342,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 35,
+      "coordinate": [
+        "-116560431701103718621428925582887",
+        "12463269309991338393357309930774566"
+      ],
+      "height": 12463269309991338393357309930774566,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 35,
+      "coordinate": [
+        "21620166909776751720782985948870281220833715",
+        "5401112338979919770265856511952335516049698"
+      ],
+      "height": 21620166909776751720782985948870281220833715,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 36,
+      "coordinate": [
+        "171243856049978760712672248271199",
+        "33528151352750028103788007993186"
+      ],
+      "height": 171243856049978760712672248271199,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 36,
+      "coordinate": [
+        "474050795778604312047781253045512016",
+        "13563874870057006731212876578478814481"
+      ],
+      "height": 13563874870057006731212876578478814481,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 37,
+      "coordinate": [
+        "-267086691606027161685607494792495322004",
+        "68474781343653848892620476429764295879"
+      ],
+      "height": 267086691606027161685607494792495322004,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 37,
+      "coordinate": [
+        "382178890039759698857125845111731276",
+        "184989691082256855207908508611856035"
+      ],
+      "height": 382178890039759698857125845111731276,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 38,
+      "coordinate": [
+        "-20740304660727679747505485322107921917",
+        "6116399984053163993408004974528322148"
+      ],
+      "height": 20740304660727679747505485322107921917,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 38,
+      "coordinate": [
+        "505584011353079422824463437204270945",
+        "124136413313215172556482960554218532"
+      ],
+      "height": 505584011353079422824463437204270945,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 39,
+      "coordinate": [
+        "135390488227096514788807824865811260604885",
+        "30646902911088025653489803984027819524074"
+      ],
+      "height": 135390488227096514788807824865811260604885,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 39,
+      "coordinate": [
+        "-105653944708992113865846314879057906",
+        "679535862738674284375549158691309023"
+      ],
+      "height": 679535862738674284375549158691309023,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 40,
+      "coordinate": [
+        "6073450946702130012485613505693202911593",
+        "1937700443481025172382875977709978054174"
+      ],
+      "height": 6073450946702130012485613505693202911593,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 40,
+      "coordinate": [
+        "-29019524472511956338194332021903",
+        "30498362583718673612773135107755"
+      ],
+      "height": 30498362583718673612773135107755,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 41,
+      "coordinate": [
+        "-124519793369941820217490941670230239152413265915",
+        "27081001607418726352642035078344521560905055587"
+      ],
+      "height": 124519793369941820217490941670230239152413265915,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 41,
+      "coordinate": [
+        "-2599747568596140710626595819",
+        "1373236729530740564156519827267"
+      ],
+      "height": 1373236729530740564156519827267,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 42,
+      "coordinate": [
+        "-404323843231497327232792652984757990120044371",
+        "55213547130449848648961411951882258966919236"
+      ],
+      "height": 404323843231497327232792652984757990120044371,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 42,
+      "coordinate": [
+        "57235145633229999894840267166135",
+        "9536090417172583471010521288492"
+      ],
+      "height": 57235145633229999894840267166135,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 43,
+      "coordinate": [
+        "-48232721727620620629732390011055",
+        "23781722002291272374417534292356"
+      ],
+      "height": 48232721727620620629732390011055,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 43,
+      "coordinate": [
+        "1064371437062109954942598080582125897469595251",
+        "611164447397594675170744581847432695172720700"
+      ],
+      "height": 1064371437062109954942598080582125897469595251,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 44,
+      "coordinate": [
+        "96313959981529108696677640369866886687572407746489735374775677",
+        "1937159390713745441322360417573525399607765058981546401841483"
+      ],
+      "height": 96313959981529108696677640369866886687572407746489735374775677,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 44,
+      "coordinate": [
+        "-2186776913276331",
+        "98210967650579"
+      ],
+      "height": 2186776913276331,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 45,
+      "coordinate": [
+        "5577223982959336282147857736",
+        "808177700195109280935302875"
+      ],
+      "height": 5577223982959336282147857736,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 45,
+      "coordinate": [
+        "624991681117825540343512017043772857711917467",
+        "4854135142472107944476468007010300270631339948"
+      ],
+      "height": 4854135142472107944476468007010300270631339948,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 46,
+      "coordinate": [
+        "26193366361545780732273",
+        "83043098857686882917423"
+      ],
+      "height": 83043098857686882917423,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 46,
+      "coordinate": [
+        "-503272530448057311065291079044299864133035722162179793",
+        "160423811826922311865207289895127690483018552440990385"
+      ],
+      "height": 503272530448057311065291079044299864133035722162179793,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 47,
+      "coordinate": [
+        "26984556564867873762974626473848697469806805253",
+        "6974115981083461168967491556661913252451490660"
+      ],
+      "height": 26984556564867873762974626473848697469806805253,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 47,
+      "coordinate": [
+        "1456084763958108308094515332",
+        "7453676805073808753292785349"
+      ],
+      "height": 7453676805073808753292785349,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 48,
+      "coordinate": [
+        "-4085774114808259874334283993320064643",
+        "494817536460852516466121891616527850"
+      ],
+      "height": 4085774114808259874334283993320064643,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": -1
+    },
+    {
+      "arm": "own27",
+      "at_infinity": false,
+      "chart": 48,
+      "coordinate": [
+        "126218057693151523372442393888880145295966",
+        "4498629644690786274132298856921629863021"
+      ],
+      "height": 126218057693151523372442393888880145295966,
+      "inside_height125000_or_infinity": false,
+      "public_point_index": 27,
+      "sign": 1
+    }
+  ],
+  "schema": "elliptic-curves.inventory188-two-witness-chart-comparison.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_results_v1.json": "cc3a3a465e1555249ad0ced589ad1457c25c95f6d58db0dadfb99e7349490283",
+    "artifacts/generated-results/elliptic-curves/inventory188_own27_geometry_visibility_v1.json": "5320b3df522b12259f223ff233971a8dd2494471db4eb6cc704f492783b79f40",
+    "artifacts/generated-results/elliptic-curves/inventory188_public28_reproduction_v1.json": "8ddc99180ab3f5455e60653afef6eeb30621000ad9daa228b0a941e37c4c92f2",
+    "artifacts/local/elliptic-curves/full11952-late64-r17-pari-v1/11952-0959582/result.json": "6f473a7207a8ea8bf0a4afa28b136ce753d395bcd6d166ccc3c1316ad79d2f85",
+    "artifacts/local/elliptic-curves/inventory188-own27-geometry-control-v1/maps.json": "61649d34e5e653b1adadce0e90795121019669534055406c95b2e1d54e53880f",
+    "elliptic-curves/cas/audit_inventory188_two_witness_charts.py": "5a71e64c435ff125140253c91109e75ee72a8bf65e5254553fc75d327f5fcf67",
+    "elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py": "5f63d2a929a1b10c3413189b3d7e7ac6be0216dfd80a0da1cc8bc52d934af93f",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9",
+    "elliptic-curves/cas/memory_rank_certificate.py": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6",
+    "elliptic-curves/cas/search_observability.py": "b6189a0cee9805336609f413b2dd8ccb38263c2d594131aabf3b0555a9c04b58"
+  },
+  "status": "PASS",
+  "visible_observations_by_arm": {
+    "generic17": 0,
+    "own27": 0
+  },
+  "witness_rank_certificates": {
+    "26": {
+      "argument": "Every integral relation is divisible by 2; E(Q)[2]=0 permits infinite descent. Hence all listed points are independent.",
+      "no_rational_2_torsion_prime": 23,
+      "rank_lower_bound": 28,
+      "signatures": [
+        {
+          "doubled_subgroup_order": 19,
+          "group_order": 38,
+          "prime": 29,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 21,
+          "group_order": 42,
+          "prime": 31,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 27,
+          "group_order": 54,
+          "prime": 43,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 33,
+          "group_order": 66,
+          "prime": 53,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 36,
+          "group_order": 72,
+          "prime": 61,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 41,
+          "group_order": 82,
+          "prime": 67,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 40,
+          "group_order": 80,
+          "prime": 71,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 51,
+          "group_order": 102,
+          "prime": 83,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 54,
+          "group_order": 108,
+          "prime": 101,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 65,
+          "group_order": 130,
+          "prime": 109,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 65,
+          "group_order": 130,
+          "prime": 113,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 36,
+          "group_order": 144,
+          "prime": 127,
+          "quotient_dimension": 2,
+          "rows": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 77,
+          "group_order": 154,
+          "prime": 131,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 92,
+          "group_order": 184,
+          "prime": 163,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 95,
+          "group_order": 190,
+          "prime": 167,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 102,
+          "group_order": 204,
+          "prime": 179,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 52,
+          "group_order": 208,
+          "prime": 181,
+          "quotient_dimension": 2,
+          "rows": [
+            [
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 107,
+          "group_order": 214,
+          "prime": 191,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 109,
+          "group_order": 218,
+          "prime": 197,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 59,
+          "group_order": 236,
+          "prime": 211,
+          "quotient_dimension": 2,
+          "rows": [
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 124,
+          "group_order": 248,
+          "prime": 223,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 110,
+          "group_order": 220,
+          "prime": 227,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 63,
+          "group_order": 252,
+          "prime": 229,
+          "quotient_dimension": 2,
+          "rows": [
+            [
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 138,
+          "group_order": 276,
+          "prime": 257,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 70,
+          "group_order": 280,
+          "prime": 263,
+          "quotient_dimension": 2,
+          "rows": [
+            [
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    "27": {
+      "argument": "Every integral relation is divisible by 2; E(Q)[2]=0 permits infinite descent. Hence all listed points are independent.",
+      "no_rational_2_torsion_prime": 23,
+      "rank_lower_bound": 28,
+      "signatures": [
+        {
+          "doubled_subgroup_order": 19,
+          "group_order": 38,
+          "prime": 29,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 21,
+          "group_order": 42,
+          "prime": 31,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 27,
+          "group_order": 54,
+          "prime": 43,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 33,
+          "group_order": 66,
+          "prime": 53,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 36,
+          "group_order": 72,
+          "prime": 61,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 41,
+          "group_order": 82,
+          "prime": 67,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 40,
+          "group_order": 80,
+          "prime": 71,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 51,
+          "group_order": 102,
+          "prime": 83,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 54,
+          "group_order": 108,
+          "prime": 101,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 65,
+          "group_order": 130,
+          "prime": 109,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 65,
+          "group_order": 130,
+          "prime": 113,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 36,
+          "group_order": 144,
+          "prime": 127,
+          "quotient_dimension": 2,
+          "rows": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 77,
+          "group_order": 154,
+          "prime": 131,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 92,
+          "group_order": 184,
+          "prime": 163,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 95,
+          "group_order": 190,
+          "prime": 167,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 102,
+          "group_order": 204,
+          "prime": 179,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 52,
+          "group_order": 208,
+          "prime": 181,
+          "quotient_dimension": 2,
+          "rows": [
+            [
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 107,
+          "group_order": 214,
+          "prime": 191,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 109,
+          "group_order": 218,
+          "prime": 197,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 59,
+          "group_order": 236,
+          "prime": 211,
+          "quotient_dimension": 2,
+          "rows": [
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 124,
+          "group_order": 248,
+          "prime": 223,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 110,
+          "group_order": 220,
+          "prime": 227,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 63,
+          "group_order": 252,
+          "prime": 229,
+          "quotient_dimension": 2,
+          "rows": [
+            [
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 138,
+          "group_order": 276,
+          "prime": 257,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 70,
+          "group_order": 280,
+          "prime": 263,
+          "quotient_dimension": 2,
+          "rows": [
+            [
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

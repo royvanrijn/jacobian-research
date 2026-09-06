@@ -1,0 +1,313 @@
+{
+  "catalogue_count": 620,
+  "claim_boundary": "Separate Sage Q-isomorphism comparison against the fresh620-equation snapshot after the fixed60 trial and its independent accounting completed. No selection, score, point, validation or budget changes. Prior593-equation proofs are preserved. No universal novelty or rank recertification.",
+  "comparisons": [
+    {
+      "id": "nearcut-b2-a1-fibration-01-0007",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 17
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-01-0007",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-02-0007",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-02-0007",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-03-0007",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-03-0007",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-04-0007",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-04-0007",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-05-0007",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-05-0007",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-01-0008",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 17
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-01-0009",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-02-0008",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-02-0008",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-03-0008",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-03-0008",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-04-0008",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-04-0008",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 17
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-05-0008",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 17
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-05-0008",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-01-0009",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 18
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-01-0010",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-02-0010",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-02-0009",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-03-0009",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-03-0009",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-04-0009",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-04-0009",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-05-0009",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-05-0009",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-01-0010",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-01-0011",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-02-0011",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-02-0010",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-03-0010",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-03-0010",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-04-0010",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-04-0010",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-05-0010",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 17
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-05-0010",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-01-0011",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 23
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-01-0012",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-02-0012",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-02-0011",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-03-0011",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-03-0011",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-04-0011",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-04-0011",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-05-0011",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-05-0011",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 17
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-01-0012",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 17
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-01-0013",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-02-0013",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-02-0012",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-03-0012",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-03-0012",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-04-0012",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-04-0012",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b2-a1-fibration-05-0012",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    },
+    {
+      "id": "nearcut-b3-a1-fibration-05-0012",
+      "q_isomorphism_matches": [],
+      "rank_lower_bound": 16
+    }
+  ],
+  "schema": "elliptic-curves.nearcut60-current-catalogue.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/inventory200_current_catalogue_comparison_v1.json": "cdd4cdc94366483af31f4ed5d35460aee11d67344d5f34a1dd8eeddf92a68887",
+    "artifacts/generated-results/elliptic-curves/nearcut60v2_mw16_novelty_v1.json": "cb072f0c471e576cf20d45187cb4e5d71b5d450d48047079092cf80d4c1ef78a",
+    "elliptic-curves/cas/verify_nearcut60_current_catalogue.sage": "1a7641fde75216bf7211b63240053e33656376794c92b3b507eaefaa0039b370"
+  },
+  "status": "PASS"
+}

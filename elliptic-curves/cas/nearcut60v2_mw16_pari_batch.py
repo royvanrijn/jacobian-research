@@ -35,14 +35,18 @@ def masks():
         result[d['family']]=[r['mask'] for r in d['selected']]
     return result
 
+EXACT_ROW_FIELDS=('id','family','band','sign','parameter','numerator','denominator','model','arm','block','retained_index','retained_rank','late_rank','original_scalar_id','j_invariant','j_height','parameter_height','combined_late_units','combined_late_good')
+
+def project_rows(rows):
+    projected=[{k:r[k] for k in EXACT_ROW_FIELDS} for r in rows]
+    digest(projected)
+    return projected
+
 def expected_roster():
     d=cert.read(extension.OUT)
     if d['status']!='PASS_FROZEN60_RETAINED_SELECTION' or len(d['selected'])!=60:
         raise ArithmeticError('complete frozen retained60 roster required')
-    keys=('id','family','band','sign','parameter','numerator','denominator','model','arm','block','retained_index','retained_rank','late_rank','original_scalar_id','j_invariant','j_height','parameter_height','combined_late_units','combined_late_good')
-    rows=[{k:r[k] for k in keys} for r in d['selected']]
-    digest(rows)  # Reject any inexact metadata before expensive map work.
-    return rows
+    return project_rows(d['selected'])
 
 def protocol_checkpoint(path,value):
     digest(value)

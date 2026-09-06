@@ -1,7 +1,12 @@
 # ICARM curve 302: construction and H3/R17 provenance investigation
 
-Status: **a constructed K3 explains nine directions; twelve-plus-direction
-recovery and original construction provenance remain open**. The
+Current project: [primary curve-302 construction recovery](CURVE302_CONSTRUCTION_RECOVERY.md).
+The endpoint is an explicit surface, full generic MW basis, and exact 302
+specialization, without a prescribed generic rank. The source pencil now has
+a complete MW8 basis; the constructed K3 has a full arithmetic MW9 basis
+and exact `t=1` specialization to 302. Frobenius at 47 bounds every elliptic
+fibration over `Q` on this K3 by MW rank nine. Original provenance remains
+open. The
 [inverse-fibration run](ICARM_CURVE302_INVERSE_FIBRATIONS_2026-09-06.md) gives
 the explicit family, its rank-nine specialization lattice, and the complete
 127,842-class extension of the fixed-NS exclusions.
@@ -101,7 +106,11 @@ over `QQ`; the nonzero leading coefficient also excludes the point at
 infinity.  Thus there is no rational specialization parameter to which an
 isomorphism or section transport could be attached.
 
-## Best next calculations
+## Earlier reconstruction leads
+
+The current ordered proof gates are in
+[the construction-recovery note](CURVE302_CONSTRUCTION_RECOVERY.md#next-mathematical-gates).
+The following point-cloud leads remain bounded exploratory options.
 
 The public BSD+GRH calculation predicts exact rank 31, so a blind 32nd-point
 search on curve 302 remains low leverage.  The first-class rank-32 construction

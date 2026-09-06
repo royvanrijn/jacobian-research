@@ -1,12 +1,19 @@
 # Elliptic curves over `Q` — ACTIVE
 
-The [curve-302 inverse-fibration run](notes/ICARM_CURVE302_INVERSE_FIBRATIONS_2026-09-06.md)
-constructs an explicit K3 with nine independent sections specializing into the
-known 31-point group. Two complete fixed-NS tables exclude 127,842 further
-classes; 6,417 point-directed line covers give no larger displayed overlap.
-The original parent and a twelve-plus-direction family remain unknown.
+[Curve 302 is the main construction-recovery project](notes/CURVE302_CONSTRUCTION_RECOVERY.md):
+recover an explicit surface over `Q(t)`, a full generic MW basis, and an exact
+specialization to 302, without prescribing generic rank 17. The constructed
+K3 now has a **full generic arithmetic MW9 basis**, determinant 512, and
+`t=1` mapping to 302. Frobenius at 47 closes the rank upper bound. Every
+elliptic fibration over `Q` on this K3 has MW rank at most nine; recovering
+a higher-rank parent requires a different surface. Original provenance
+remains unknown.
 
 The [low-height sublattice searches](notes/LOW_HEIGHT_MW_SUBLATTICES_2026-09-06.md) enumerate combinations and common-cover representatives in the full displayed groups of curves245 and302 across ranks8–20. All184 finalists pass arithmetic replay, but both new methods fail the masked Fermigier recovery calibration. The existing rank17 curve302 core is rediscovered exactly; no new generic subgroup or rank is certified.
+
+The [current catalogue refresh](notes/CURRENT_CATALOGUE_AND_PUBLIC28_2026-09-07.md) compares all200 inventory curves with620 equations and finds two matches: IDs12 and188. The other198 remain unmatched. Published28-point data for curve188 independently prove rank at least28 on our earlier27-point curve; this is a public-data reproduction and a missed-direction control, not a new rank28 discovery.
+
+The [fixed retained near-finalist follow-up](notes/RETAINED_MW16_NEAR_FINALISTS_2026-09-07.md) gives identical point exposure to60 previously unsearched curves already ranked7–13 by saved extended scores. All2580 boxes, exact proofs, independent accounting and240 standalone stages pass:16 added directions across nine curves, including new23-point ID201 at family01 -27546/407. Failed preparation cost is charged. InventoryV22 contains201 distinct researched curves with explicit publication status;199 remain unmatched in620 catalogue equations. No new parameter scan runs.
 
 The [completed retained-score comparison](notes/RETAINED_MW16_SCORE_STRATA_2026-09-06.md) favours the extreme-score arm:10 certified added directions versus1 moderate and0 lower, with860 completed boxes and nearly equal computation per arm. Top-only yield is2.72 times the equal three-arm portfolio rate. All240 standalone stages and independent accounting pass. It adds a new rank-at-least25 curve at family02 -32999/14074; inventoryV20 now has200 distinct curves with every point certificate and CSV entry replayed. The new curve was already ninth in the earlier extended-score list, below its six-finalist cutoff. No larger sweep follows; the queued R17 scan remains cancelled.
 
@@ -42,8 +49,10 @@ The [192-curve compact trial](notes/COMPACT192_UNSEARCHED_TRIAL_2026-09-06.md) t
 
 The [skew parameter experiment](notes/SKEW_PARAMETER_BOXES_2026-09-06.md) completes 368 point boxes without inventory gain. The [endpoint audit](notes/COMPACT_ENDPOINT_AUDIT_2026-09-06.md) identifies 21 omitted nonsingular curves; the subsequent [exact span proof](notes/ENDPOINT_SECTION_SPANS_2026-09-06.md) establishes their generic-section span ranks and five proper known-subgroup indices. The 54 audit and three section-span isolated replay stages pass. The [endpoint point trial](notes/ENDPOINT_POINT_TRIAL_2026-09-06.md) completes all 252 boxes, with strongest bounds 19 and no inventory gain; [all 66 isolated replay stages pass](../artifacts/generated-results/elliptic-curves/endpoint_point_trial_portable_replay_v1.json). The six rank-27 search subgroups already have [proved saturation at 2, 3 and 5](notes/NEW27_SMALL_PRIME_SATURATION_2026-09-06.md).
 
-The exactly replayed inventory V18 contains **198 distinct curves**, including
-**eight with rank at least27**, unmatched in the pinned593-equation catalogue.
+The publication-aware inventory V22 contains **201 distinct researched curves**.
+**199 are unmatched** in the pinned620-equation catalogue, including seven
+with locally certified rank at least27. ID188 now has28 by independently
+reproduced public points; it and ID12 are marked as catalogue matches.
 The [earlier rank25 discovery](notes/LOCAL_FEATURE_RANK25_2026-09-06.md),
 [higher-parameter rank26 curve](notes/HIGHER_PARAMETER_RANK26_2026-09-06.md)
 and [first new MW16 rank27 proof](notes/NEW_MW16_RANK27_2026-09-06.md) link
@@ -62,8 +71,8 @@ The [specialized parity trial](notes/SPECIALIZED_PARITY_CONTROL_2026-09-06.md)
 recovers the known29th direction at125000, but all294 charts on our six
 rank27 curves complete without gain. All24 isolated checks pass.
 
-The [complete JSON](../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v18.json)
-and [equation CSV](../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v18.csv)
+The [complete JSON](../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v22.json)
+and [equation CSV](../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v22.csv)
 contain the equations and point certificates. The
 [small-conductor curve](notes/NEW_SMALL_CONDUCTOR_CURVE_2026-09-05.md) retains
 rank at least 22 and an exact 76-digit conductor, third among the relevant
@@ -445,7 +454,7 @@ Use [`REPRODUCE.md`](REPRODUCE.md) and the exact checker paths recorded in `../M
 <!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 8a4c932153e2bb2d -->
 <!-- status-consumer: EC-K3-R17-NORM12-ICARM-573-REFRESH a93ce35de34fde21 -->
 <!-- status-consumer: EC-CF-NEARMISS-DESCENT-INPUTS 25c9f212e5162216 -->
-<!-- status-consumer: OP-EC-NEXT bbe0c6369611b464 -->
+<!-- status-consumer: OP-EC-NEXT b0871cb95a6b27cf -->
 
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-SELMER-PANEL 539bd8ec36b36c44 -->
 

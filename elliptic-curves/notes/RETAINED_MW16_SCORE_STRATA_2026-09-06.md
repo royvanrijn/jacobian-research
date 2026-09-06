@@ -32,6 +32,15 @@ Keep priority on the strongest retained initial-score candidates rather than
 spreading this point budget equally across these score levels. This finding
 does not authorize another larger parameter sweep.
 
+A subsequent [read-only CPU-cost sensitivity check](../../artifacts/generated-results/elliptic-curves/strata60_gp_cpu_yield_v1.json)
+uses the already independently audited GP timing markers:449,847 milliseconds
+for top,443,004 for moderate and453,708 for lower. Its exact top-to-portfolio
+yield ratio is4488530/1649439, approximately2.72125. This agrees with the
+discovery-worker-time conclusion. GP CPU measures enumeration only and
+excludes Python admission, map preparation and verification; it is a secondary
+cost measure, not a replacement criterion or total-computation estimate.
+`audit_strata60_gp_cpu_yield.py --check` replays the calculation.
+
 Only three curves gained certified directions. One top-arm curve supplies
 nine of its ten directions, so this remains a small, uneven finite sample.
 The overlapping policy estimates are not independent samples. The result

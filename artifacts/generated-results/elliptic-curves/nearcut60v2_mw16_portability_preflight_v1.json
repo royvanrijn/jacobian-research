@@ -1,0 +1,43 @@
+{
+  "allocated_curves": 60,
+  "claim_boundary": "Isolated Python imports and frozen prospective60 protocol bindings succeed in a separate workspace with no point outcomes copied. No point proof, matching rerun, score or search was executed.",
+  "files_relocated": 116,
+  "schema": "elliptic-curves.nearcut60v2-portability-preflight.v1",
+  "sources": {
+    "artifacts/local/elliptic-curves/retained-nearcutoff-mw16-v1/portability-preflight-v2/preflight.supervisor.json": "0ef0848782d6b85b0d7d43b7d0b0b47cbb9853f36698cd561af291ab6e551269",
+    "artifacts/local/elliptic-curves/retained-nearcutoff-mw16-v1/portability-preflight-v2/protocol.json": "918202c8d2200161b922644e7b951f2ca1ed3091c1bc31cc1bf7227c41ecd4a8",
+    "elliptic-curves/cas/preflight_nearcut60v2_point_portability.py": "6101197d473c1f55a4372a1a64ef63d745a55458222b354b8164ad62dfbe5959"
+  },
+  "status": "PASS",
+  "supervision": {
+    "command": [
+      "/usr/bin/python3",
+      "-I",
+      "-c",
+      "import sys;sys.path.insert(0,'/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retained-nearcutoff-mw16-v1/portability-preflight-v2/workspace/elliptic-curves/cas');import nearcut60v2_mw16_pari_batch as b;import verify_nearcut60v2_mw16_points; p=b.protocol();from research_runtime.store import digest;digest(p);assert len(p[\"rows\"])==60;assert p[\"stop_rank\"] is None;print(\"RELOCATED FROZEN60 INPUTS AND PROOF IMPORTS PASS\")"
+    ],
+    "failure_reason": null,
+    "limits": {
+      "address_space_bytes": null,
+      "cgroup": null,
+      "pari_stack_bytes": 256000000,
+      "poll_seconds": 0.05,
+      "rss_bytes": 1073741824,
+      "terminate_grace_seconds": 1.0,
+      "wall_seconds": 120
+    },
+    "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retained-nearcutoff-mw16-v1/portability-preflight-v2/preflight.log",
+    "log_sha256": "a30e3765073437f21f5d9c273aa6ec7a0c0cbc78049bf865b433bc12dc303ed1",
+    "outcome": "completed",
+    "peak_observed_rss_bytes": 138539008,
+    "pid": 458754,
+    "returncode": 0,
+    "rss_limit_bytes": 1073741824,
+    "start_token": "56165025",
+    "termination_signal": null,
+    "timeout_seconds": 120,
+    "wall_seconds": 2.022634742083028,
+    "worker_result": null,
+    "worker_result_sha256": null
+  }
+}

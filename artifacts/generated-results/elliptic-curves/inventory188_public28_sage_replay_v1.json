@@ -1,0 +1,165 @@
+{
+  "claim_boundary": "Independent Sage point membership and exact source transport, complete finite group enumeration, quotient-by-doubles matrices and irreducible2-division cubic. This proves the public28 and union lower bounds, not an upper rank, new discovery or prospective point-search recovery.",
+  "exported_basis_rank": 28,
+  "groups": [
+    {
+      "double_subgroup_order": 19,
+      "order": 38,
+      "prime": 29,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 21,
+      "order": 42,
+      "prime": 31,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 27,
+      "order": 54,
+      "prime": 43,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 33,
+      "order": 66,
+      "prime": 53,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 36,
+      "order": 72,
+      "prime": 61,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 41,
+      "order": 82,
+      "prime": 67,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 40,
+      "order": 80,
+      "prime": 71,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 51,
+      "order": 102,
+      "prime": 83,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 54,
+      "order": 108,
+      "prime": 101,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 65,
+      "order": 130,
+      "prime": 109,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 65,
+      "order": 130,
+      "prime": 113,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 36,
+      "order": 144,
+      "prime": 127,
+      "quotient_dimension": 2
+    },
+    {
+      "double_subgroup_order": 77,
+      "order": 154,
+      "prime": 131,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 92,
+      "order": 184,
+      "prime": 163,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 95,
+      "order": 190,
+      "prime": 167,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 102,
+      "order": 204,
+      "prime": 179,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 52,
+      "order": 208,
+      "prime": 181,
+      "quotient_dimension": 2
+    },
+    {
+      "double_subgroup_order": 107,
+      "order": 214,
+      "prime": 191,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 109,
+      "order": 218,
+      "prime": 197,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 59,
+      "order": 236,
+      "prime": 211,
+      "quotient_dimension": 2
+    },
+    {
+      "double_subgroup_order": 124,
+      "order": 248,
+      "prime": 223,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 110,
+      "order": 220,
+      "prime": 227,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 63,
+      "order": 252,
+      "prime": 229,
+      "quotient_dimension": 2
+    },
+    {
+      "double_subgroup_order": 138,
+      "order": 276,
+      "prime": 257,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 70,
+      "order": 280,
+      "prime": 263,
+      "quotient_dimension": 2
+    }
+  ],
+  "no_two_torsion_prime": 23,
+  "public_basis_rank": 28,
+  "schema": "elliptic-curves.inventory188-public28-sage.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/inventory188_public28_reproduction_v1.json": "8ddc99180ab3f5455e60653afef6eeb30621000ad9daa228b0a941e37c4c92f2",
+    "elliptic-curves/cas/verify_inventory188_public28.sage": "cb7eb297fb0d79e898ae7874e63a9296d44aa43d47865cb3572116d5530ed342"
+  },
+  "status": "PASS",
+  "union_finite_rank": 28
+}

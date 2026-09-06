@@ -1,0 +1,235 @@
+{
+  "all_outside_height125000": true,
+  "claim_boundary": "Independent Sage group additions and rational inverse-Mobius coordinates for exactly the55 frozen translations, both signs and49 original charts. No point search, untested-translate exclusion, upper rank or prospective recovery.",
+  "coordinates_checked": 5390,
+  "minima": [
+    {
+      "minimum_height": 21632242813382,
+      "word_index": 0
+    },
+    {
+      "minimum_height": 88819370137581329,
+      "word_index": 1
+    },
+    {
+      "minimum_height": 53978264394137158365285227753810200019925856505294362,
+      "word_index": 2
+    },
+    {
+      "minimum_height": 2929523331434022172679492674773721327120,
+      "word_index": 3
+    },
+    {
+      "minimum_height": 77689279948705831461780279458336389897186859,
+      "word_index": 4
+    },
+    {
+      "minimum_height": 5540091369899327849785529027946675600838993,
+      "word_index": 5
+    },
+    {
+      "minimum_height": 709982593998424838422185082504680330133658323990792674742,
+      "word_index": 6
+    },
+    {
+      "minimum_height": 11896547481984369994901790707,
+      "word_index": 7
+    },
+    {
+      "minimum_height": 391827417713567216713121338447064694141,
+      "word_index": 8
+    },
+    {
+      "minimum_height": 84531051100006483418056243815863460479,
+      "word_index": 9
+    },
+    {
+      "minimum_height": 37729138379193636777945036696737735174526,
+      "word_index": 10
+    },
+    {
+      "minimum_height": 37681328929967314919143916183,
+      "word_index": 11
+    },
+    {
+      "minimum_height": 334941511980021721843579979777606701568411627063191,
+      "word_index": 12
+    },
+    {
+      "minimum_height": 77059210857612419764986574060059775157236,
+      "word_index": 13
+    },
+    {
+      "minimum_height": 269331763522624358879618,
+      "word_index": 14
+    },
+    {
+      "minimum_height": 858992661452251976760017028490515579827694986889,
+      "word_index": 15
+    },
+    {
+      "minimum_height": 1277582414001873673923436847,
+      "word_index": 16
+    },
+    {
+      "minimum_height": 2082314578741816158167168805944264,
+      "word_index": 17
+    },
+    {
+      "minimum_height": 5335085702603363657667052185259742028534207,
+      "word_index": 18
+    },
+    {
+      "minimum_height": 7785762010612846142755029262213665,
+      "word_index": 19
+    },
+    {
+      "minimum_height": 78480547283154917794461227180691339183128939178,
+      "word_index": 20
+    },
+    {
+      "minimum_height": 11374680306053554433108952250591650180489,
+      "word_index": 21
+    },
+    {
+      "minimum_height": 1173992048977822802887700917,
+      "word_index": 22
+    },
+    {
+      "minimum_height": 76943766083057481461663960654426528660067,
+      "word_index": 23
+    },
+    {
+      "minimum_height": 483259977315830593475207712664897596297,
+      "word_index": 24
+    },
+    {
+      "minimum_height": 1323008763832997251481706522,
+      "word_index": 25
+    },
+    {
+      "minimum_height": 151557062923882523386402125,
+      "word_index": 26
+    },
+    {
+      "minimum_height": 2242061711432085031564861586,
+      "word_index": 27
+    },
+    {
+      "minimum_height": 119252870323354501217953438,
+      "word_index": 28
+    },
+    {
+      "minimum_height": 55006348137040565844454324602893047658528497579537,
+      "word_index": 29
+    },
+    {
+      "minimum_height": 29735637544179897205,
+      "word_index": 30
+    },
+    {
+      "minimum_height": 89971995830581141546140316064447776309779127807029476,
+      "word_index": 31
+    },
+    {
+      "minimum_height": 860349260470539319781702789439347,
+      "word_index": 32
+    },
+    {
+      "minimum_height": 2554118082264963922667696351299633,
+      "word_index": 33
+    },
+    {
+      "minimum_height": 78492623091714890019052747899,
+      "word_index": 34
+    },
+    {
+      "minimum_height": 3458754091480010529879475454243,
+      "word_index": 35
+    },
+    {
+      "minimum_height": 1412289950119461104900353199947598,
+      "word_index": 36
+    },
+    {
+      "minimum_height": 26493947883400132780003850873,
+      "word_index": 37
+    },
+    {
+      "minimum_height": 2560708009997340566963531251386630,
+      "word_index": 38
+    },
+    {
+      "minimum_height": 347193938056644035066104313,
+      "word_index": 39
+    },
+    {
+      "minimum_height": 9736252412820328847747121221473219557555137,
+      "word_index": 40
+    },
+    {
+      "minimum_height": 578061247227722961499128126166937929,
+      "word_index": 41
+    },
+    {
+      "minimum_height": 9396930653920782746793898519,
+      "word_index": 42
+    },
+    {
+      "minimum_height": 125488742378188947166137672139249748,
+      "word_index": 43
+    },
+    {
+      "minimum_height": 2417954812465003898324597246267,
+      "word_index": 44
+    },
+    {
+      "minimum_height": 30546827262228996156250429298436853,
+      "word_index": 45
+    },
+    {
+      "minimum_height": 2406973935155721982254150114,
+      "word_index": 46
+    },
+    {
+      "minimum_height": 56822098516747796510884319861,
+      "word_index": 47
+    },
+    {
+      "minimum_height": 255249850537413871238823907098,
+      "word_index": 48
+    },
+    {
+      "minimum_height": 1978890044914537294687681475987,
+      "word_index": 49
+    },
+    {
+      "minimum_height": 89381234025733290195911955092078288677,
+      "word_index": 50
+    },
+    {
+      "minimum_height": 8125397742499683339646438963356371852120936,
+      "word_index": 51
+    },
+    {
+      "minimum_height": 596356974321908486214946,
+      "word_index": 52
+    },
+    {
+      "minimum_height": 7174633034502031440425934756856589638691,
+      "word_index": 53
+    },
+    {
+      "minimum_height": 263369342559407395158053142211,
+      "word_index": 54
+    }
+  ],
+  "schema": "elliptic-curves.inventory188-translates-sage.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/inventory188_public28_translates_v1.json": "5e7ccb2760d629651dfc98e77dc1fa4471c10f36af86dce39ed7312a6e999ff2",
+    "artifacts/local/elliptic-curves/full11952-late64-r17-pari-v1/11952-0959582/result.json": "6f473a7207a8ea8bf0a4afa28b136ce753d395bcd6d166ccc3c1316ad79d2f85",
+    "elliptic-curves/cas/verify_inventory188_public28_translates_v2.sage": "94833a66b366eb614509e0c5ebcb77e92a10e4e36e5155cedc9cf57de618df44"
+  },
+  "status": "PASS",
+  "translations_checked": 55
+}

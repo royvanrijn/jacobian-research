@@ -1,0 +1,1109 @@
+{
+  "best_observation": {
+    "at_infinity": false,
+    "chart": 3,
+    "coordinate": [
+      "45536085699455016089",
+      "104137837718785499398"
+    ],
+    "inside_height125000_or_infinity": false,
+    "projective_height": 104137837718785499398,
+    "sign": 1
+  },
+  "claim_boundary": "Fixed own27 geometry was constructed from the old local subgroup without public-point inputs. Exact parity/norm transports, quartic identities and all49 maps are checked before the independently certified public witness is opened for98 coordinate observations. Numerical canonical heights and CVP guide selection only. No point enumeration, prospective recovery, rank increase, absence of cheaper translates or optimality theorem.",
+  "exact_maps_checked": 49,
+  "observations": [
+    {
+      "at_infinity": false,
+      "chart": 0,
+      "coordinate": [
+        "163052832919957538109611403",
+        "662883684350660166417433651"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 662883684350660166417433651,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 0,
+      "coordinate": [
+        "1641051325607767965131295775707344663859373058189",
+        "316664256412184103580256397662853448399764971813"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 1641051325607767965131295775707344663859373058189,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 1,
+      "coordinate": [
+        "9074200909009829923587800115954884082973400",
+        "7035235975885099673501163167383477900341837"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 9074200909009829923587800115954884082973400,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 1,
+      "coordinate": [
+        "6955679248578035723520833968",
+        "5640341715557492639398090481"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 6955679248578035723520833968,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 2,
+      "coordinate": [
+        "-16043414374656116871918311484702842988",
+        "12654521588803377167809958043351769697"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 16043414374656116871918311484702842988,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 2,
+      "coordinate": [
+        "1292367635561009436712644696941623764",
+        "953499055651536885527658496406054329"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 1292367635561009436712644696941623764,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 3,
+      "coordinate": [
+        "-74167296757867141636926587139945777037043255484042587",
+        "22735688680714485727325042236254063970185931576220966"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 74167296757867141636926587139945777037043255484042587,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 3,
+      "coordinate": [
+        "45536085699455016089",
+        "104137837718785499398"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 104137837718785499398,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 4,
+      "coordinate": [
+        "-3508570517283652572020067843473",
+        "240778966894404772528414011348"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 3508570517283652572020067843473,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 4,
+      "coordinate": [
+        "55739938917143377732829098823529952677251",
+        "109011374326772159804005767951021423151872"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 109011374326772159804005767951021423151872,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 5,
+      "coordinate": [
+        "-1464998937327558245076144616360151435836414",
+        "1128654986037276033625621493428191910252171"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 1464998937327558245076144616360151435836414,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 5,
+      "coordinate": [
+        "-1141661878072589381612121170738",
+        "288792240204190255110627624557"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 1141661878072589381612121170738,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 6,
+      "coordinate": [
+        "-228111215505146717156847252543308655545437",
+        "17482759970412244296394052726631788914716"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 228111215505146717156847252543308655545437,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 6,
+      "coordinate": [
+        "9145636098492241047901812560151",
+        "895036658580456898689006148012"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 9145636098492241047901812560151,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 7,
+      "coordinate": [
+        "-4467999221196610855652489499150009519",
+        "310819846594467977101480827182717533"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 4467999221196610855652489499150009519,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 7,
+      "coordinate": [
+        "-1422183757229991786228778044003884012577",
+        "44450007607766548808495018242610469139"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 1422183757229991786228778044003884012577,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 8,
+      "coordinate": [
+        "155144949379217734797223460312543577723",
+        "101947739043331320692047922812144359278"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 155144949379217734797223460312543577723,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 8,
+      "coordinate": [
+        "10093109653212160791929604953245149",
+        "59445070406866719880342369300354"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 10093109653212160791929604953245149,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 9,
+      "coordinate": [
+        "-111199980916353023034015508402",
+        "23463706322088674521528716493"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 111199980916353023034015508402,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 9,
+      "coordinate": [
+        "-8721819529370899377127702368059538545146752",
+        "233623892035093412789411681482781486185543"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 8721819529370899377127702368059538545146752,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 10,
+      "coordinate": [
+        "-298537848993348201834455756767662590663",
+        "2334624291871831679025471739598696769"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 298537848993348201834455756767662590663,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 10,
+      "coordinate": [
+        "552385814293642183221460702510907",
+        "61907878457332026475946328239059"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 552385814293642183221460702510907,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 11,
+      "coordinate": [
+        "-81172633401063959495370524878525228079",
+        "89667930654020274073497080486863113027"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 89667930654020274073497080486863113027,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 11,
+      "coordinate": [
+        "14192085362128127813803806458606069",
+        "20190518145495447072081507955211503"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 20190518145495447072081507955211503,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 12,
+      "coordinate": [
+        "-12246772178605854023918928150285159875290506248",
+        "8313506834117429988874744620760821908950818681"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 12246772178605854023918928150285159875290506248,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 12,
+      "coordinate": [
+        "54212080552062472657289096",
+        "35877739149019145774209163"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 54212080552062472657289096,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 13,
+      "coordinate": [
+        "2300557381686093085692800574823",
+        "175848954633680989703377347719"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 2300557381686093085692800574823,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 13,
+      "coordinate": [
+        "268034080810059293711114328035501161827",
+        "69432226574928880365816008608294269271"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 268034080810059293711114328035501161827,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 14,
+      "coordinate": [
+        "4411456171096716495177832082962046545573989",
+        "606887335877236563264171193406063846620559"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 4411456171096716495177832082962046545573989,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 14,
+      "coordinate": [
+        "2796257820604940722637365118597",
+        "52380510720490880546635748207"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 2796257820604940722637365118597,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 15,
+      "coordinate": [
+        "22602286039494974707392741771812126596",
+        "18728380523977787280545323398665449841"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 22602286039494974707392741771812126596,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 15,
+      "coordinate": [
+        "-11553451364761417052502194775102052",
+        "7154549896632822095069862470488071"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 11553451364761417052502194775102052,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 16,
+      "coordinate": [
+        "-5118361519075508739540355807005734",
+        "619881287418084139625507927232715"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 5118361519075508739540355807005734,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 16,
+      "coordinate": [
+        "106081784982079827267502032811841740274",
+        "4866227247815647516422431343726093663"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 106081784982079827267502032811841740274,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 17,
+      "coordinate": [
+        "-1755408207595723995807231160953925169",
+        "22438885043949731987539932371060021"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 1755408207595723995807231160953925169,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 17,
+      "coordinate": [
+        "-972998676954323296110673756766365",
+        "611850058853142228116020450968077"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 972998676954323296110673756766365,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 18,
+      "coordinate": [
+        "-71732064985022622798418009073711521365681851475",
+        "49337394084044457782411602209729219941063424508"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 71732064985022622798418009073711521365681851475,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 18,
+      "coordinate": [
+        "10482485066474590276521975",
+        "1525235913533164023112528"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 10482485066474590276521975,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 19,
+      "coordinate": [
+        "-34801702495960787058056685",
+        "6950500930461913801481438"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 34801702495960787058056685,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 19,
+      "coordinate": [
+        "-67045929588517736425823302500435174120630123",
+        "4434424096577450169799062646726997535705194"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 67045929588517736425823302500435174120630123,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 20,
+      "coordinate": [
+        "235112219821829625268718752214609",
+        "24880663391182252867217581799169"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 235112219821829625268718752214609,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 20,
+      "coordinate": [
+        "-3690255001076049780840078718877537119",
+        "1495679502252265466138891656885549583"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 3690255001076049780840078718877537119,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 21,
+      "coordinate": [
+        "-262067717909563869869954678655216348604351063023",
+        "67946389498082640252940949568127502621524028141"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 262067717909563869869954678655216348604351063023,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 21,
+      "coordinate": [
+        "-11531282504896121727443",
+        "21446520596859457094091"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 21446520596859457094091,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 22,
+      "coordinate": [
+        "-5029777185562946715954016031664768230167",
+        "19085202199512840043516159020276641353929"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 19085202199512840043516159020276641353929,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 22,
+      "coordinate": [
+        "6385343239953215787992085890439",
+        "2316012526380400179340851132007"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 6385343239953215787992085890439,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 23,
+      "coordinate": [
+        "-209533147721071648188776447443678388029",
+        "417075728116815959054715073255844164"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 209533147721071648188776447443678388029,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 23,
+      "coordinate": [
+        "-28290457941929227901039734080711863",
+        "13062296534665497775082362474589228"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 28290457941929227901039734080711863,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 24,
+      "coordinate": [
+        "298572162854154198967732570277",
+        "10096885335277356816130010136"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 298572162854154198967732570277,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 24,
+      "coordinate": [
+        "-407624603583943509380259447623766048662058279",
+        "13139148539596631849641774478953814545051928"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 407624603583943509380259447623766048662058279,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 25,
+      "coordinate": [
+        "424130434606053828719413981401063617508707746479",
+        "163099620729884892600326030379417945013972359574"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 424130434606053828719413981401063617508707746479,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 25,
+      "coordinate": [
+        "-68481803812877945715",
+        "7691660973134822173634"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 7691660973134822173634,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 26,
+      "coordinate": [
+        "1968111222610539966339804492780451",
+        "1347534857139547238599855944185119"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 1968111222610539966339804492780451,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 26,
+      "coordinate": [
+        "44943326568202728631887206211386069381",
+        "4260217966774207531109238637555303289"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 44943326568202728631887206211386069381,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 27,
+      "coordinate": [
+        "-1289682526066490971670789173716303832869",
+        "311952300837776926901661264348739922428"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 1289682526066490971670789173716303832869,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 27,
+      "coordinate": [
+        "-43083764597268214792946617765877",
+        "4085595204733796271688913121524"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 43083764597268214792946617765877,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 28,
+      "coordinate": [
+        "-1246056934838647512722951",
+        "299048521107450513374601"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 1246056934838647512722951,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 28,
+      "coordinate": [
+        "56295042870186207452809498804346017590443121",
+        "777326631686544882336509937052887531865962109"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 777326631686544882336509937052887531865962109,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 29,
+      "coordinate": [
+        "-561149923296583473377983651",
+        "297902056263767926948666945"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 561149923296583473377983651,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 29,
+      "coordinate": [
+        "6735544016344780556119210613417956435400218141",
+        "2850671874631892019643053383735029325327661705"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 6735544016344780556119210613417956435400218141,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 30,
+      "coordinate": [
+        "-216788290280321707297764571530284156507",
+        "551244272122570830010222341412527262"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 216788290280321707297764571530284156507,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 30,
+      "coordinate": [
+        "-379206860954985802040244217008823277",
+        "9681595448555949375640633030898482"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 379206860954985802040244217008823277,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 31,
+      "coordinate": [
+        "-1133328069116208722796194220756359427",
+        "36715532576348236208572877069188204"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 1133328069116208722796194220756359427,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 31,
+      "coordinate": [
+        "27306805915340987473230711371117567",
+        "8741224584747422928261636500082216"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 27306805915340987473230711371117567,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 32,
+      "coordinate": [
+        "-5295294588080725527990329831376560812772304",
+        "1799869942822464848661869737913802408143789"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 5295294588080725527990329831376560812772304,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 32,
+      "coordinate": [
+        "-4067307025067292192630588112",
+        "4748217221262331290985006877"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 4748217221262331290985006877,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 33,
+      "coordinate": [
+        "-1553952678706676991381055",
+        "235490743363299695698487"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 1553952678706676991381055,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 33,
+      "coordinate": [
+        "-324496782841262285724465512485475813081751930375",
+        "690601838758896739559743114464923461963593721423"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 690601838758896739559743114464923461963593721423,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 34,
+      "coordinate": [
+        "1823576325587214487542331952094",
+        "1212051074194371473641713000827"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 1823576325587214487542331952094,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 34,
+      "coordinate": [
+        "-276573362359477008612654758320638261913002",
+        "21906321614615330926360637453220813380839"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 276573362359477008612654758320638261913002,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 35,
+      "coordinate": [
+        "-2018235405649225749611721004561",
+        "649601751808973671034749549770"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 2018235405649225749611721004561,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 35,
+      "coordinate": [
+        "6487993571553145069381222138809296737575",
+        "1613936327452214238660568521842813327002"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 6487993571553145069381222138809296737575,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 36,
+      "coordinate": [
+        "51827735543675168628229807724352154",
+        "26507310417670572514865767937045339"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 51827735543675168628229807724352154,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 36,
+      "coordinate": [
+        "-971894439345989545864306428323530",
+        "1583478171576746263168795674072659"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 1583478171576746263168795674072659,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 37,
+      "coordinate": [
+        "39598183522512471587614907804740",
+        "7452155705607291461345389857049"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 39598183522512471587614907804740,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 37,
+      "coordinate": [
+        "-26643771680248523872741836421263698007580",
+        "8029104345150261580480672190901281064497"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 26643771680248523872741836421263698007580,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 38,
+      "coordinate": [
+        "633808788680886859065176059250028508518177",
+        "18437085450693259435069209407957749139324"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 633808788680886859065176059250028508518177,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 38,
+      "coordinate": [
+        "935848046418815089950752714651",
+        "137208436790364474474691175092"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 935848046418815089950752714651,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 39,
+      "coordinate": [
+        "-23355120688088536714248911965726654786727021011",
+        "6659770160692039262668761232597379484221038467"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 23355120688088536714248911965726654786727021011,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 39,
+      "coordinate": [
+        "348630774014726276587379",
+        "666118946232340821676827"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 666118946232340821676827,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 40,
+      "coordinate": [
+        "31891189006459434861753133783800",
+        "44884778398067265007738910221187"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 44884778398067265007738910221187,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 40,
+      "coordinate": [
+        "-193123271700096643881201861085190727750",
+        "219743055112840786774195613951829367229"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 219743055112840786774195613951829367229,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 41,
+      "coordinate": [
+        "2752072144220671266130584012207571",
+        "2675340150415150734857909367959973"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 2752072144220671266130584012207571,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 41,
+      "coordinate": [
+        "283820430967500310973429979068640631",
+        "1713580848672229744041077794310232289"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 1713580848672229744041077794310232289,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 42,
+      "coordinate": [
+        "-66011900976493858831956337",
+        "14867598349516395982359116"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 66011900976493858831956337,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 42,
+      "coordinate": [
+        "423644733534953317902818124160410885308923919",
+        "25134325729797408820695742208633868344301260"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 423644733534953317902818124160410885308923919,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 43,
+      "coordinate": [
+        "635974192454661040989218704467",
+        "2092318845239091058823703509356"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 2092318845239091058823703509356,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 43,
+      "coordinate": [
+        "114655397624662889221229472867457068929709",
+        "28213524740406141359411303345065189728212"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 114655397624662889221229472867457068929709,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 44,
+      "coordinate": [
+        "-539292239671140114195437467274084012075",
+        "152083658809987786746954877315400248659"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 539292239671140114195437467274084012075,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 44,
+      "coordinate": [
+        "-192529732763093454832050487541175",
+        "31712833344024764655279733973503"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 192529732763093454832050487541175,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 45,
+      "coordinate": [
+        "406593894037233551632892149106",
+        "168430238504192533983569824841"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 406593894037233551632892149106,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 45,
+      "coordinate": [
+        "-21634014564303674230483359755015544041282",
+        "20599904090592512274837770154164286311473"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 21634014564303674230483359755015544041282,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 46,
+      "coordinate": [
+        "-181019601930113457276839194164865581",
+        "1087947177053764328655978303999774349"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 1087947177053764328655978303999774349,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 46,
+      "coordinate": [
+        "20336474644740576744953953922125675",
+        "11333442409080762205537102293247477"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 20336474644740576744953953922125675,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 47,
+      "coordinate": [
+        "-5181075019783742523228180719202792769751",
+        "2897014017859628548409410938675507708423"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 5181075019783742523228180719202792769751,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 47,
+      "coordinate": [
+        "47042027545337888005047957265",
+        "96576192803000885780200031177"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 96576192803000885780200031177,
+      "sign": 1
+    },
+    {
+      "at_infinity": false,
+      "chart": 48,
+      "coordinate": [
+        "-208665663026815857855064549104834120340",
+        "12912756779278838345577825469101128339"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 208665663026815857855064549104834120340,
+      "sign": -1
+    },
+    {
+      "at_infinity": false,
+      "chart": 48,
+      "coordinate": [
+        "-5155446227788113775081127380760",
+        "7974106533253284122724656182497"
+      ],
+      "inside_height125000_or_infinity": false,
+      "projective_height": 7974106533253284122724656182497,
+      "sign": 1
+    }
+  ],
+  "public_point_index": 26,
+  "sample_masks_checked": 2048,
+  "schema": "elliptic-curves.inventory188-own27-geometry-visibility.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/inventory188_public28_reproduction_v1.json": "8ddc99180ab3f5455e60653afef6eeb30621000ad9daa228b0a941e37c4c92f2",
+    "artifacts/generated-results/elliptic-curves/inventory188_public28_sage_replay_v1.json": "44d4463b199ed489fc1a20b4c03635bf1a2c355b9d73619c3668928b97b7e972",
+    "artifacts/local/elliptic-curves/inventory188-own27-geometry-control-v1/geometry.supervisor.json": "a4bb6d372924a45dbecff85af5150f698f0764d4b6afdc8c6dbb4789b50d6bef",
+    "artifacts/local/elliptic-curves/inventory188-own27-geometry-control-v1/maps.json": "61649d34e5e653b1adadce0e90795121019669534055406c95b2e1d54e53880f",
+    "artifacts/local/elliptic-curves/inventory188-own27-geometry-control-v1/protocol.json": "bdfb0f40cc68fbc2e75ef4bfbf6f385b3a572896f4b7b6acf3f9473057b30050",
+    "artifacts/local/elliptic-curves/inventory188-own27-geometry-control-v1/seed.json": "65df2addc1e7ca20687a7d6221a91a4a53db5aae87e094a24ff945f6010fbc24",
+    "elliptic-curves/cas/audit_inventory188_own27_geometry.sage": "66373965eb4a2fde9bd042b1776f6e5ca42dea35762f4816d834bb76fa753519"
+  },
+  "status": "PASS_EXACT_GEOMETRY_AND_COORDINATES",
+  "visible_observations": 0
+}

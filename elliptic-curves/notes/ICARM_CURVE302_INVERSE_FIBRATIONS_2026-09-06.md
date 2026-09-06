@@ -1,12 +1,23 @@
 # Curve 302: inverse fibrations and a constructed nine-direction K3
 
+The [construction-recovery extension](CURVE302_CONSTRUCTION_RECOVERY.md) now
+enlarges the nine-section group by index three, proves saturation, and closes
+the arithmetic generic rank at nine using Frobenius at 47. It supplies a
+full MW8 source basis and a full arithmetic MW9 K3 basis, of determinant
+512, with all coordinates and the exact 302 specialization. Hidden
+provenance remains unknown. The original certificate and proof below are
+retained as the historical dependency, with their original nine generators,
+determinant 4608, and pre-extension rank boundary.
+
+## Original construction certificate
+
 An explicit K3 family through curve 302 now carries a **certified rank-nine
 section sublattice**, with an injective specialization into the public
 31-point group. This is a construction from selected known points, not
 recovery of the discoverers' parent. No family explaining twelve or more
-directions was found in the finite searches below. The full generic MW
-group of the new surface, its exact overlap, and the original parent remain
-`UNKNOWN`.
+directions was found in the finite searches below. At this stage the full
+generic MW group, its exact overlap, and the original parent were unknown;
+the subsequent arithmetic MW9 completion is linked above.
 
 The authority is `EC-K3-CURVE302-INVERSE-NINE-DIRECTIONS` in
 [`../../MATH_STATUS.json`](../../MATH_STATUS.json).
