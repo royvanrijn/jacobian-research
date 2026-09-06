@@ -1,0 +1,35 @@
+{
+  "schema": "rank-jump.strict-deformation-solubility-protocol.v1",
+  "question": "Can a retained anchor-rational cubic Kummer class stay strictly split at every bad place of a fixed-cubic deformation and nevertheless acquire a certified CT obstruction?",
+  "layers": {
+    "strict_kernel": "incidence",
+    "cross_pairing": "solubility obstruction; a zero row is not a rational witness"
+  },
+  "parameters": [
+    -3,
+    -2,
+    -1,
+    1,
+    2,
+    3
+  ],
+  "primary_endpoint": "Intersect the zero-localization kernels on the twenty anchor classes over the union of all six retained bad-place sets, and pair this common strict space against each full available inherited Selmer space.",
+  "secondary_endpoints": [
+    "For each of the same six anchor/deformation pairs, compute the zero-localization kernel over that pair's complete bad-place set and its CT cross-pairing against the full inherited Selmer space.",
+    "For all fifteen pairs of nonzero deformations, compute the strict space at the union of their retained bad places and compare the CT cross-kernels."
+  ],
+  "positive": "A nonzero cross-pairing gives an explicit anchor-rational strict class whose same cubic squareclass becomes Sha on a deformation, ruling out strict class-field incidence alone as a solubility explanation.",
+  "negative": "A zero common strict space is a negative endpoint for that comparison. A zero CT row remains UNKNOWN for rational solubility. Do not add parameters or weaken strictness.",
+  "limits": {
+    "ambient_binary_dimension": 20,
+    "parameters": 6,
+    "new_parameters": 0,
+    "point_searches": 0,
+    "class_groups": 0,
+    "new_CT_computations": 0,
+    "linear_algebra_seconds": 30,
+    "optional_local_replay_seconds_per_curve": 30
+  },
+  "inputs": "Only pinned rank_jump_affine_selmer_inputs_v1.json and rank_jump_local_collision_inputs_v1.json, with their retained CT matrices and support certificates.",
+  "oracle_boundary": "All twenty classes were supplied by the exceptional anchor. This is a retrospective counterexample test, not a prospective selector."
+}

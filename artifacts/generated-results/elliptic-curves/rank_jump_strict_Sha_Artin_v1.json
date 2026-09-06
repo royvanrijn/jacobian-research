@@ -1,0 +1,71 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+    "artifacts/generated-results/elliptic-curves/rank_jump_local_collision_inputs_v1.json": "440372c18d42243ce447cad470c7bfd6ba5d5c757740e3ce413af6b0d8194f71",
+    "artifacts/generated-results/elliptic-curves/rank_jump_strict_deformation_solubility_v1.json": "2ece45b37f68e55c719f55e56a6770bfc695c8426d3a9e9774e964625a6ad810",
+    "elliptic-curves/rank-jump/STRICT_SHA_ARTIN_PROTOCOL.json": "dd3bd83acb7441c58994b44dbd4b2163379e522f0562ae49b1053490393de35f",
+    "elliptic-curves/rank-jump/strict_Sha_Artin.py": "32eac055d23aaf96281151f86c25fa787d37ca1b2a5f0b34eba0a9bd3a9e9705"
+  },
+  "input_sha256": "851fbae783a58ca76a382166e180b432d44f90afed6187c7e1548ff5dd3ebe98",
+  "result": {
+    "Artin_matrix_rows": [
+      [
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        1
+      ]
+    ],
+    "Artin_rank": 3,
+    "boundary": "Selected strict characters are rational on E0 but inject into Sha(E_-1)[2]. Their elementary S-class direct factor and Artin data are identical on both curves. No full class-group or rank upper bound.",
+    "complete_Artin_columns": 5,
+    "dual_half_ideal_words": [
+      5,
+      16,
+      4
+    ],
+    "elementary_S_class_direct_factor_dimension": 3,
+    "selected_character_indices": [
+      0,
+      1,
+      2
+    ],
+    "selected_half_ideal_indices": [
+      0,
+      2,
+      4
+    ],
+    "strict_Sha_dimension": 5,
+    "u": -1
+  },
+  "schema": "rank-jump.strict-Sha-Artin.v1"
+}

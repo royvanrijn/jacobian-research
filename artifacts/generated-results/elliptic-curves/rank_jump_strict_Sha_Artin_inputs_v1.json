@@ -1,0 +1,2802 @@
+{
+  "S_finite": [
+    2,
+    3,
+    5,
+    7,
+    13,
+    17,
+    19,
+    31,
+    79,
+    1049,
+    71889448247,
+    40200713707633,
+    491007790268548705232623905732119,
+    550485889697549509378456967440666703691905279903
+  ],
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+    "artifacts/generated-results/elliptic-curves/rank_jump_local_collision_inputs_v1.json": "440372c18d42243ce447cad470c7bfd6ba5d5c757740e3ce413af6b0d8194f71",
+    "artifacts/generated-results/elliptic-curves/rank_jump_strict_deformation_solubility_v1.json": "2ece45b37f68e55c719f55e56a6770bfc695c8426d3a9e9774e964625a6ad810",
+    "elliptic-curves/rank-jump/STRICT_SHA_ARTIN_PROTOCOL.json": "dd3bd83acb7441c58994b44dbd4b2163379e522f0562ae49b1053490393de35f",
+    "elliptic-curves/rank-jump/strict_Sha_Artin.py": "32eac055d23aaf96281151f86c25fa787d37ca1b2a5f0b34eba0a9bd3a9e9705"
+  },
+  "cubic_ascending": [
+    "167347710468055045100164888198438918505621536951206",
+    "-5750886029903523759416717668139307",
+    "0",
+    "1"
+  ],
+  "ideals": [
+    {
+      "complete": true,
+      "coprime_ideal_hnf": [
+        [
+          "89939487721382412498981199451",
+          "74230375298110340056117980567",
+          "32918176902263090565957897386"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "corrections": [
+        {
+          "beta_valuation": 82,
+          "exponent": -41,
+          "gcd_product_valuation": 82,
+          "prime": 2,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 2,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 12,
+          "exponent": -6,
+          "gcd_product_valuation": 12,
+          "prime": 3,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 18,
+          "exponent": -9,
+          "gcd_product_valuation": 18,
+          "prime": 3,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 5,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 30,
+          "exponent": -15,
+          "gcd_product_valuation": 30,
+          "prime": 5,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 7,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 12,
+          "exponent": -6,
+          "gcd_product_valuation": 12,
+          "prime": 7,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 4,
+          "exponent": -1,
+          "gcd_product_valuation": 3,
+          "prime": 13,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 4,
+          "exponent": -1,
+          "gcd_product_valuation": 3,
+          "prime": 13,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 13,
+          "prime_index": 2
+        },
+        {
+          "beta_valuation": 8,
+          "exponent": -4,
+          "gcd_product_valuation": 8,
+          "prime": 17,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 19,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 19,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 6,
+          "exponent": -2,
+          "gcd_product_valuation": 5,
+          "prime": 31,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 31,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 4,
+          "exponent": -2,
+          "gcd_product_valuation": 4,
+          "prime": 31,
+          "prime_index": 2
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 79,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 2,
+          "exponent": -1,
+          "gcd_product_valuation": 2,
+          "prime": 79,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 1049,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 1049,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 71889448247,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 71889448247,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 40200713707633,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 40200713707633,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 491007790268548705232623905732119,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 491007790268548705232623905732119,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 550485889697549509378456967440666703691905279903,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 550485889697549509378456967440666703691905279903,
+          "prime_index": 1
+        }
+      ],
+      "cyclic": true,
+      "evaluations": [
+        {
+          "bit": 1,
+          "jacobi_symbol": -1,
+          "residue": "70814042724294772132611055089"
+        },
+        {
+          "bit": 0,
+          "jacobi_symbol": 1,
+          "residue": "46160602419023318793129788520"
+        },
+        {
+          "bit": 1,
+          "jacobi_symbol": -1,
+          "residue": "26764974451834366968031695900"
+        },
+        {
+          "bit": 1,
+          "jacobi_symbol": -1,
+          "residue": "31619807918643021760319321542"
+        },
+        {
+          "bit": 1,
+          "jacobi_symbol": -1,
+          "residue": "26495186763791552089608406545"
+        }
+      ],
+      "half_ideal_hnf": [
+        [
+          "5649454099641619233301400916874380541392722446229105050757127760746769371399201186231410419050132236697600000000",
+          "429707875836314060504395651207705105407876928659237059760820349544450737275053903889554176649788627927040000000",
+          "4387122847608670071256821451437337030529769768974156768730024043790407909668565091045886972133769102221227330363"
+        ],
+        [
+          "0",
+          "41376674333767813447680000000",
+          "37904879024319961743747852393"
+        ],
+        [
+          "0",
+          "0",
+          "12393"
+        ]
+      ],
+      "half_ideal_norm": "2896933428953954064284814256775257831438216716233826928199562011967540797957949981440579832808734564498239565152578890053896372224000000000000000",
+      "norm": "89939487721382412498981199451",
+      "point_mask": 17108,
+      "principal_multiplier_coordinates": [
+        "75626883787170113654437267303407116223106476323860807374756378198327/89939487721382412498981199451",
+        "-641842080986701502953430562806588449093092231415242/89939487721382412498981199451",
+        "-20032723197911386742246511586134417/89939487721382412498981199451"
+      ],
+      "reduced_ideal_hnf": [
+        [
+          "539636926328294474993887196706",
+          "222691125894331020168353941701",
+          "107148552200373430622075877953"
+        ],
+        [
+          "0",
+          "3",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "removed_S_prime_ideals": [
+        {
+          "exponent": 1,
+          "prime": 2,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 2,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 3,
+          "prime_index": 0
+        },
+        {
+          "exponent": 1,
+          "prime": 3,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 5,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 5,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 7,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 7,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 13,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 13,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 13,
+          "prime_index": 2
+        },
+        {
+          "exponent": 0,
+          "prime": 17,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 19,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 19,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 31,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 31,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 31,
+          "prime_index": 2
+        },
+        {
+          "exponent": 0,
+          "prime": 79,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 79,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 1049,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 1049,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 71889448247,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 71889448247,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 40200713707633,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 40200713707633,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 491007790268548705232623905732119,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 491007790268548705232623905732119,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 550485889697549509378456967440666703691905279903,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 550485889697549509378456967440666703691905279903,
+          "prime_index": 1
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "coprime_ideal_hnf": [
+        [
+          "21970649251269402718447753",
+          "19066010093927568099671342",
+          "13156152429826514247067318"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "corrections": [
+        {
+          "beta_valuation": 82,
+          "exponent": -41,
+          "gcd_product_valuation": 82,
+          "prime": 2,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 2,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 12,
+          "exponent": -6,
+          "gcd_product_valuation": 12,
+          "prime": 3,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 16,
+          "exponent": -8,
+          "gcd_product_valuation": 16,
+          "prime": 3,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 5,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 32,
+          "exponent": -16,
+          "gcd_product_valuation": 32,
+          "prime": 5,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 7,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 12,
+          "exponent": -6,
+          "gcd_product_valuation": 12,
+          "prime": 7,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 4,
+          "exponent": -1,
+          "gcd_product_valuation": 3,
+          "prime": 13,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 2,
+          "exponent": -1,
+          "gcd_product_valuation": 2,
+          "prime": 13,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 13,
+          "prime_index": 2
+        },
+        {
+          "beta_valuation": 10,
+          "exponent": -5,
+          "gcd_product_valuation": 10,
+          "prime": 17,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 19,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 19,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 2,
+          "exponent": -1,
+          "gcd_product_valuation": 2,
+          "prime": 31,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 31,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 2,
+          "exponent": -1,
+          "gcd_product_valuation": 2,
+          "prime": 31,
+          "prime_index": 2
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 79,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 4,
+          "exponent": -2,
+          "gcd_product_valuation": 4,
+          "prime": 79,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 1049,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 1049,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 71889448247,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 71889448247,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 40200713707633,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 40200713707633,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 491007790268548705232623905732119,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 491007790268548705232623905732119,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 550485889697549509378456967440666703691905279903,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 550485889697549509378456967440666703691905279903,
+          "prime_index": 1
+        }
+      ],
+      "cyclic": true,
+      "evaluations": [
+        {
+          "bit": 1,
+          "jacobi_symbol": -1,
+          "residue": "15496355730502367253661038"
+        },
+        {
+          "bit": 0,
+          "jacobi_symbol": 1,
+          "residue": "2455693452483248029865324"
+        },
+        {
+          "bit": 1,
+          "jacobi_symbol": -1,
+          "residue": "8940385144241490434399110"
+        },
+        {
+          "bit": 1,
+          "jacobi_symbol": -1,
+          "residue": "18468019818049654729132470"
+        },
+        {
+          "bit": 1,
+          "jacobi_symbol": -1,
+          "residue": "18880363651875938156700318"
+        }
+      ],
+      "half_ideal_hnf": [
+        [
+          "35114939976012846714327970511537405561774404351589597601250306323919341429744215760724771697659263912345600000000",
+          "25368797887807180604622165887627570264914893345667939003985484083333339256381018467124668027897632013107200000000",
+          "22964036960871701496996551854026474347784259383108337874559100641445532013644964602104983485519386230955947330363"
+        ],
+        [
+          "0",
+          "229813373160670692556800000000",
+          "154847886632661250867587852393"
+        ],
+        [
+          "0",
+          "0",
+          "12393"
+        ]
+      ],
+      "half_ideal_norm": "100010057592723160733534225597812790788162669992735332227702635123546851046825384849321883190701036404814334770557337003919608381440000000000000000",
+      "norm": "21970649251269402718447753",
+      "point_mask": 34628,
+      "principal_multiplier_coordinates": [
+        "-3359551140365308065036125099465221261430472077050650694981715305790451/180510854248429412734766738648",
+        "18595707114321055768810615391964618896556835595675673/90255427124214706367383369324",
+        "872322300556568466832244003805477621/180510854248429412734766738648"
+      ],
+      "reduced_ideal_hnf": [
+        [
+          "180510854248429412734766738648",
+          "144871556523713099690825706871",
+          "175756379513333778859110643565"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "removed_S_prime_ideals": [
+        {
+          "exponent": 0,
+          "prime": 2,
+          "prime_index": 0
+        },
+        {
+          "exponent": 3,
+          "prime": 2,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 3,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 3,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 5,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 5,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 7,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 7,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 13,
+          "prime_index": 0
+        },
+        {
+          "exponent": 1,
+          "prime": 13,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 13,
+          "prime_index": 2
+        },
+        {
+          "exponent": 0,
+          "prime": 17,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 19,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 19,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 31,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 31,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 31,
+          "prime_index": 2
+        },
+        {
+          "exponent": 1,
+          "prime": 79,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 79,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 1049,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 1049,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 71889448247,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 71889448247,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 40200713707633,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 40200713707633,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 491007790268548705232623905732119,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 491007790268548705232623905732119,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 550485889697549509378456967440666703691905279903,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 550485889697549509378456967440666703691905279903,
+          "prime_index": 1
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "coprime_ideal_hnf": [
+        [
+          "4959663009329598836475405631",
+          "3005950437467642753051555787",
+          "4775944740963466516490477848"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "corrections": [
+        {
+          "beta_valuation": 50,
+          "exponent": -25,
+          "gcd_product_valuation": 50,
+          "prime": 2,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 2,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 8,
+          "exponent": -4,
+          "gcd_product_valuation": 8,
+          "prime": 3,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 12,
+          "exponent": -6,
+          "gcd_product_valuation": 12,
+          "prime": 3,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 5,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 38,
+          "exponent": -19,
+          "gcd_product_valuation": 38,
+          "prime": 5,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 7,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 12,
+          "exponent": -6,
+          "gcd_product_valuation": 12,
+          "prime": 7,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 13,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 13,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 13,
+          "prime_index": 2
+        },
+        {
+          "beta_valuation": 8,
+          "exponent": -4,
+          "gcd_product_valuation": 8,
+          "prime": 17,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 19,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 19,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 2,
+          "exponent": -1,
+          "gcd_product_valuation": 2,
+          "prime": 31,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 31,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 2,
+          "exponent": -1,
+          "gcd_product_valuation": 2,
+          "prime": 31,
+          "prime_index": 2
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 79,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 2,
+          "exponent": -1,
+          "gcd_product_valuation": 2,
+          "prime": 79,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 1049,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 1049,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 71889448247,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 71889448247,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 40200713707633,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 40200713707633,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 491007790268548705232623905732119,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 491007790268548705232623905732119,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 550485889697549509378456967440666703691905279903,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 550485889697549509378456967440666703691905279903,
+          "prime_index": 1
+        }
+      ],
+      "cyclic": true,
+      "evaluations": [
+        {
+          "bit": 0,
+          "jacobi_symbol": 1,
+          "residue": "4202311950838987821972598003"
+        },
+        {
+          "bit": 0,
+          "jacobi_symbol": 1,
+          "residue": "3549778342628248025989157178"
+        },
+        {
+          "bit": 1,
+          "jacobi_symbol": -1,
+          "residue": "4518962485200232047103478147"
+        },
+        {
+          "bit": 0,
+          "jacobi_symbol": 1,
+          "residue": "1232189388492965499378165764"
+        },
+        {
+          "bit": 0,
+          "jacobi_symbol": 1,
+          "residue": "2880232015796754728795795916"
+        }
+      ],
+      "half_ideal_hnf": [
+        [
+          "6230511241984362770138427394461468345321766444153056666529511630993947891892650911501840000000000",
+          "3243335078091199248962395479029242739733533197692601816873219143705328042565262983713512000000000",
+          "4869066006548372923305886789600379888425438399801493567647119566292225584247585248137054483036707"
+        ],
+        [
+          "0",
+          "28565607324744000000000",
+          "4067924592260309761377"
+        ],
+        [
+          "0",
+          "0",
+          "1377"
+        ]
+      ],
+      "half_ideal_norm": "245076170835168337680349740576272009870160593433868927520121640878534281156358593837704887867389369377920000000000000000000",
+      "norm": "4959663009329598836475405631",
+      "point_mask": 65575,
+      "principal_multiplier_coordinates": [
+        "1943714617708708185752484955444383042337237142986580124230837/257902476485139139496721092812",
+        "-127226136873942530185500473383832103311838553/386853714727708709245081639218",
+        "10667323152734814503632175357/2321122288366252255470489835308"
+      ],
+      "reduced_ideal_hnf": [
+        [
+          "892739341679327790565573013580",
+          "82360558586741224136658045883",
+          "475943930627275355981654012793"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "removed_S_prime_ideals": [
+        {
+          "exponent": 0,
+          "prime": 2,
+          "prime_index": 0
+        },
+        {
+          "exponent": 2,
+          "prime": 2,
+          "prime_index": 1
+        },
+        {
+          "exponent": 2,
+          "prime": 3,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 3,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 5,
+          "prime_index": 0
+        },
+        {
+          "exponent": 1,
+          "prime": 5,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 7,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 7,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 13,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 13,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 13,
+          "prime_index": 2
+        },
+        {
+          "exponent": 0,
+          "prime": 17,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 19,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 19,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 31,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 31,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 31,
+          "prime_index": 2
+        },
+        {
+          "exponent": 0,
+          "prime": 79,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 79,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 1049,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 1049,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 71889448247,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 71889448247,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 40200713707633,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 40200713707633,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 491007790268548705232623905732119,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 491007790268548705232623905732119,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 550485889697549509378456967440666703691905279903,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 550485889697549509378456967440666703691905279903,
+          "prime_index": 1
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "coprime_ideal_hnf": [
+        [
+          "8377151557802606480742776759",
+          "3327524963633531428083638654",
+          "3807416372989862900535433739"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "corrections": [
+        {
+          "beta_valuation": 112,
+          "exponent": -56,
+          "gcd_product_valuation": 112,
+          "prime": 2,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 2,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 18,
+          "exponent": -9,
+          "gcd_product_valuation": 18,
+          "prime": 3,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 20,
+          "exponent": -10,
+          "gcd_product_valuation": 20,
+          "prime": 3,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 5,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 30,
+          "exponent": -15,
+          "gcd_product_valuation": 30,
+          "prime": 5,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 7,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 14,
+          "exponent": -7,
+          "gcd_product_valuation": 14,
+          "prime": 7,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 6,
+          "exponent": -2,
+          "gcd_product_valuation": 5,
+          "prime": 13,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 6,
+          "exponent": -2,
+          "gcd_product_valuation": 5,
+          "prime": 13,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 13,
+          "prime_index": 2
+        },
+        {
+          "beta_valuation": 14,
+          "exponent": -7,
+          "gcd_product_valuation": 14,
+          "prime": 17,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 2,
+          "exponent": 0,
+          "gcd_product_valuation": 1,
+          "prime": 19,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 19,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 4,
+          "exponent": -2,
+          "gcd_product_valuation": 4,
+          "prime": 31,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 31,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 4,
+          "exponent": -2,
+          "gcd_product_valuation": 4,
+          "prime": 31,
+          "prime_index": 2
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 79,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 6,
+          "exponent": -3,
+          "gcd_product_valuation": 6,
+          "prime": 79,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 1049,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 1049,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 71889448247,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 71889448247,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 40200713707633,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 40200713707633,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 491007790268548705232623905732119,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 491007790268548705232623905732119,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 550485889697549509378456967440666703691905279903,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 550485889697549509378456967440666703691905279903,
+          "prime_index": 1
+        }
+      ],
+      "cyclic": true,
+      "evaluations": [
+        {
+          "bit": 1,
+          "jacobi_symbol": -1,
+          "residue": "5660681621992396901881305350"
+        },
+        {
+          "bit": 0,
+          "jacobi_symbol": 1,
+          "residue": "986585617918434633378609800"
+        },
+        {
+          "bit": 1,
+          "jacobi_symbol": -1,
+          "residue": "7084022827810628112751902079"
+        },
+        {
+          "bit": 1,
+          "jacobi_symbol": -1,
+          "residue": "4791439531070177712624257003"
+        },
+        {
+          "bit": 1,
+          "jacobi_symbol": -1,
+          "residue": "2852798346328299189456304450"
+        }
+      ],
+      "half_ideal_hnf": [
+        [
+          "49434941238058935237377976437159649597286449791628816969396684421380951991989446416430479592568333254506266307910690222772251776945439172503430758400000000",
+          "3433420261542463743164786036856761609569330477329709948327672363958658679728722102136728529204644832127233553788068788785922212166455826946394685440000000",
+          "12341629181982310268476934907294394070417403283250447925212532437834576637133217245475811015029361578938337962962357950805955618929173805025286834224636617"
+        ],
+        [
+          "0",
+          "306804197781403005700319194644480000000",
+          "40864910557177525265232932222824248387"
+        ],
+        [
+          "0",
+          "0",
+          "5688387"
+        ]
+      ],
+      "half_ideal_norm": "86274898086918021947979332614011688354895459404086458236760522598750631052388940719883044027325364197138783537971555225696504691469267194436743477819761624701243418299534200305126211584000000000000000",
+      "norm": "8377151557802606480742776759",
+      "point_mask": 404296,
+      "principal_multiplier_coordinates": [
+        "392572653159138186126042539015561983758343450114445749193424304187723509215779042350659/67017212462420851845942214072",
+        "-2467790183954033364235642355822597795587883749956120422239131629230857/33508606231210425922971107036",
+        "-110954827729381119398299709184367747036255046198769189/67017212462420851845942214072"
+      ],
+      "reduced_ideal_hnf": [
+        [
+          "2077533586335046407224208636232",
+          "397053648180356036022994146327",
+          "2064586699592431057163258516453"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "removed_S_prime_ideals": [
+        {
+          "exponent": 0,
+          "prime": 2,
+          "prime_index": 0
+        },
+        {
+          "exponent": 3,
+          "prime": 2,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 3,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 3,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 5,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 5,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 7,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 7,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 13,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 13,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 13,
+          "prime_index": 2
+        },
+        {
+          "exponent": 0,
+          "prime": 17,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 19,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 19,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 31,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 31,
+          "prime_index": 1
+        },
+        {
+          "exponent": 1,
+          "prime": 31,
+          "prime_index": 2
+        },
+        {
+          "exponent": 0,
+          "prime": 79,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 79,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 1049,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 1049,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 71889448247,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 71889448247,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 40200713707633,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 40200713707633,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 491007790268548705232623905732119,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 491007790268548705232623905732119,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 550485889697549509378456967440666703691905279903,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 550485889697549509378456967440666703691905279903,
+          "prime_index": 1
+        }
+      ]
+    },
+    {
+      "complete": true,
+      "coprime_ideal_hnf": [
+        [
+          "14736503518859642535949432039",
+          "10022471279044878139461539733",
+          "9324545875158091722082893012"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "corrections": [
+        {
+          "beta_valuation": 114,
+          "exponent": -57,
+          "gcd_product_valuation": 114,
+          "prime": 2,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 2,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 18,
+          "exponent": -9,
+          "gcd_product_valuation": 18,
+          "prime": 3,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 22,
+          "exponent": -11,
+          "gcd_product_valuation": 22,
+          "prime": 3,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 5,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 38,
+          "exponent": -19,
+          "gcd_product_valuation": 38,
+          "prime": 5,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 7,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 16,
+          "exponent": -8,
+          "gcd_product_valuation": 16,
+          "prime": 7,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 6,
+          "exponent": -2,
+          "gcd_product_valuation": 5,
+          "prime": 13,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 4,
+          "exponent": -2,
+          "gcd_product_valuation": 4,
+          "prime": 13,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 13,
+          "prime_index": 2
+        },
+        {
+          "beta_valuation": 12,
+          "exponent": -6,
+          "gcd_product_valuation": 12,
+          "prime": 17,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 2,
+          "exponent": 0,
+          "gcd_product_valuation": 1,
+          "prime": 19,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 19,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 4,
+          "exponent": -2,
+          "gcd_product_valuation": 4,
+          "prime": 31,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 31,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 4,
+          "exponent": -2,
+          "gcd_product_valuation": 4,
+          "prime": 31,
+          "prime_index": 2
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 79,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 6,
+          "exponent": -3,
+          "gcd_product_valuation": 6,
+          "prime": 79,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 1049,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 1049,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 71889448247,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 71889448247,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 40200713707633,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 40200713707633,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 491007790268548705232623905732119,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 491007790268548705232623905732119,
+          "prime_index": 1
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 550485889697549509378456967440666703691905279903,
+          "prime_index": 0
+        },
+        {
+          "beta_valuation": 0,
+          "exponent": 0,
+          "gcd_product_valuation": 0,
+          "prime": 550485889697549509378456967440666703691905279903,
+          "prime_index": 1
+        }
+      ],
+      "cyclic": true,
+      "evaluations": [
+        {
+          "bit": 0,
+          "jacobi_symbol": 1,
+          "residue": "7110315514907430861747516377"
+        },
+        {
+          "bit": 1,
+          "jacobi_symbol": -1,
+          "residue": "2233563673166384582854428259"
+        },
+        {
+          "bit": 0,
+          "jacobi_symbol": 1,
+          "residue": "987858899129006834320451597"
+        },
+        {
+          "bit": 0,
+          "jacobi_symbol": 1,
+          "residue": "2690927117181145740808309301"
+        },
+        {
+          "bit": 1,
+          "jacobi_symbol": -1,
+          "residue": "13425558311653769719168470171"
+        }
+      ],
+      "half_ideal_hnf": [
+        [
+          "14001542131244802109976554921186267244094496893168939837929315351111273965692915948028592323315433299950335003502379842161491546823910495286654402560000000000",
+          "11417223456930653687302185357043853032468458593979110032002038953814781159134266698728564853583635022910181919442172201014128265490614407281004511232000000000",
+          "6631968603955605013439058860952904867556255058285741072806336395950431756138396233687551002848083489602588464302010005527038495913096306090563112421424636617"
+        ],
+        [
+          "0",
+          "12390169525787429076359044399104000000000",
+          "8418979542280105757850872478283624248387"
+        ],
+        [
+          "0",
+          "0",
+          "5688387"
+        ]
+      ],
+      "half_ideal_norm": "986829799148355599498774091356409302510372186999719421318576438480471890636082212207435766874361725062542896734190181972948884276157106188017514049529529475587520468356183683014464634880000000000000000000",
+      "norm": "14736503518859642535949432039",
+      "point_mask": 528076,
+      "principal_multiplier_coordinates": [
+        "80822536903716768195331700464194495958800178479099081914751362261343535294990553468547951/456831609084648918614432393209",
+        "-993913212419510868863697325191318973775624762879561654832607171304216346/456831609084648918614432393209",
+        "-21230851949051106131869376416367009900682671330477300121/456831609084648918614432393209"
+      ],
+      "reduced_ideal_hnf": [
+        [
+          "913663218169297837228864786418",
+          "216333520543079873642753588279",
+          "451419651440947367800565854182"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "removed_S_prime_ideals": [
+        {
+          "exponent": 1,
+          "prime": 2,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 2,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 3,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 3,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 5,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 5,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 7,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 7,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 13,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 13,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 13,
+          "prime_index": 2
+        },
+        {
+          "exponent": 0,
+          "prime": 17,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 19,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 19,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 31,
+          "prime_index": 0
+        },
+        {
+          "exponent": 1,
+          "prime": 31,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 31,
+          "prime_index": 2
+        },
+        {
+          "exponent": 0,
+          "prime": 79,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 79,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 1049,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 1049,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 71889448247,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 71889448247,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 40200713707633,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 40200713707633,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 491007790268548705232623905732119,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 491007790268548705232623905732119,
+          "prime_index": 1
+        },
+        {
+          "exponent": 0,
+          "prime": 550485889697549509378456967440666703691905279903,
+          "prime_index": 0
+        },
+        {
+          "exponent": 0,
+          "prime": 550485889697549509378456967440666703691905279903,
+          "prime_index": 1
+        }
+      ]
+    }
+  ],
+  "maximal_order_basis": [
+    "1",
+    "1/57741946778880000*z^2 + 906417230578537/1132195034880000*z - 12529163463842099756618063306273/188699172480000",
+    "-1/57741946778880000*z^2 - 780617782258537/1132195034880000*z + 12529163463842099630818614986273/188699172480000"
+  ],
+  "point_masks": [
+    17108,
+    34628,
+    65575,
+    404296,
+    528076
+  ],
+  "points": [
+    {
+      "a": "38938605995265387",
+      "b": "1567011534782236870320000",
+      "d": "1",
+      "gamma_coordinates": [
+        "38938605995265387",
+        "-1",
+        "0"
+      ],
+      "gcd_ideal_hnf": [
+        [
+          "522337178260745623440000",
+          "349878941987729777280000",
+          "522337139322139628174619"
+        ],
+        [
+          "0",
+          "142143120000",
+          "9"
+        ],
+        [
+          "0",
+          "0",
+          "9"
+        ]
+      ]
+    },
+    {
+      "a": "40728398414316387",
+      "b": "826861274756882115849000",
+      "d": "1",
+      "gamma_coordinates": [
+        "40728398414316387",
+        "-1",
+        "0"
+      ],
+      "gcd_ideal_hnf": [
+        [
+          "275620424918960705283000",
+          "272052844704821986533000",
+          "275620384190562290966619"
+        ],
+        [
+          "0",
+          "157437000",
+          "9"
+        ],
+        [
+          "0",
+          "0",
+          "9"
+        ]
+      ]
+    },
+    {
+      "a": "40646445315585387",
+      "b": "864864487526694676560000",
+      "d": "1",
+      "gamma_coordinates": [
+        "40646445315585387",
+        "-1",
+        "0"
+      ],
+      "gcd_ideal_hnf": [
+        [
+          "288288162508898225520000",
+          "242131504731985254960000",
+          "288288121862452909934619"
+        ],
+        [
+          "0",
+          "740880000",
+          "9"
+        ],
+        [
+          "0",
+          "0",
+          "9"
+        ]
+      ]
+    },
+    {
+      "a": "-1781634332835346413",
+      "b": "20995778407111766599909800960",
+      "d": "11",
+      "gamma_coordinates": [
+        "-1781634332835346413",
+        "-121",
+        "0"
+      ],
+      "gcd_ideal_hnf": [
+        [
+          "6998592802370588866636600320",
+          "4970654665602330640856094720",
+          "6478036312952789978480451099"
+        ],
+        [
+          "0",
+          "25663087457280",
+          "9"
+        ],
+        [
+          "0",
+          "0",
+          "9"
+        ]
+      ]
+    },
+    {
+      "a": "41053801328565387",
+      "b": "-666823981695924796380000",
+      "d": "1",
+      "gamma_coordinates": [
+        "41053801328565387",
+        "-1",
+        "0"
+      ],
+      "gcd_ideal_hnf": [
+        [
+          "222274660565308265460000",
+          "149713973546232661020000",
+          "222274619511506936894619"
+        ],
+        [
+          "0",
+          "1268942220000",
+          "9"
+        ],
+        [
+          "0",
+          "0",
+          "9"
+        ]
+      ]
+    },
+    {
+      "a": "46378087661805387",
+      "b": "623294235218399861340000",
+      "d": "1",
+      "gamma_coordinates": [
+        "46378087661805387",
+        "-1",
+        "0"
+      ],
+      "gcd_ideal_hnf": [
+        [
+          "207764745072799953780000",
+          "60672449776685320980000",
+          "207764698694712291974619"
+        ],
+        [
+          "0",
+          "97610940000",
+          "9"
+        ],
+        [
+          "0",
+          "0",
+          "9"
+        ]
+      ]
+    },
+    {
+      "a": "30677763793609707",
+      "b": "-4449157623637218111674880",
+      "d": "1",
+      "gamma_coordinates": [
+        "30677763793609707",
+        "-1",
+        "0"
+      ],
+      "gcd_ideal_hnf": [
+        [
+          "1483052541212406037224960",
+          "1037847139908987200808960",
+          "1483052510534642243615259"
+        ],
+        [
+          "0",
+          "57576960",
+          "9"
+        ],
+        [
+          "0",
+          "0",
+          "9"
+        ]
+      ]
+    },
+    {
+      "a": "83612421019761387",
+      "b": "16463284338967327473696000",
+      "d": "1",
+      "gamma_coordinates": [
+        "83612421019761387",
+        "-1",
+        "0"
+      ],
+      "gcd_ideal_hnf": [
+        [
+          "5487761446322442491232000",
+          "5318473490898147992160000",
+          "5487761362710021471470619"
+        ],
+        [
+          "0",
+          "103680864000",
+          "9"
+        ],
+        [
+          "0",
+          "0",
+          "9"
+        ]
+      ]
+    },
+    {
+      "a": "-86012797757294613",
+      "b": "5065324134400499941440000",
+      "d": "1",
+      "gamma_coordinates": [
+        "-86012797757294613",
+        "-1",
+        "0"
+      ],
+      "gcd_ideal_hnf": [
+        [
+          "1688441378133499980480000",
+          "1404140138680709969280000",
+          "86012797757294619"
+        ],
+        [
+          "0",
+          "27074880000",
+          "9"
+        ],
+        [
+          "0",
+          "0",
+          "9"
+        ]
+      ]
+    },
+    {
+      "a": "-87487096017779733",
+      "b": "922224694802954684843520",
+      "d": "1",
+      "gamma_coordinates": [
+        "-87487096017779733",
+        "-1",
+        "0"
+      ],
+      "gcd_ideal_hnf": [
+        [
+          "307408231600984894947840",
+          "165322837409956779571200",
+          "87487096017779739"
+        ],
+        [
+          "0",
+          "261868239360",
+          "9"
+        ],
+        [
+          "0",
+          "0",
+          "9"
+        ]
+      ]
+    },
+    {
+      "a": "48371350182747387",
+      "b": "-1532406560023296217638000",
+      "d": "1",
+      "gamma_coordinates": [
+        "48371350182747387",
+        "-1",
+        "0"
+      ],
+      "gcd_ideal_hnf": [
+        [
+          "510802186674432072546000",
+          "48597816691563544062000",
+          "510802138303081889798619"
+        ],
+        [
+          "0",
+          "8291682000",
+          "9"
+        ],
+        [
+          "0",
+          "0",
+          "9"
+        ]
+      ]
+    },
+    {
+      "a": "28841055288088587",
+      "b": "-5047401798761139174520800",
+      "d": "1",
+      "gamma_coordinates": [
+        "28841055288088587",
+        "-1",
+        "0"
+      ],
+      "gcd_ideal_hnf": [
+        [
+          "5047401798761139174520800",
+          "811047011513534821771200",
+          "5047401769920083886432219"
+        ],
+        [
+          "0",
+          "27277941600",
+          "9"
+        ],
+        [
+          "0",
+          "0",
+          "9"
+        ]
+      ]
+    },
+    {
+      "a": "28429622094935787",
+      "b": "5179792341767753905977600",
+      "d": "1",
+      "gamma_coordinates": [
+        "28429622094935787",
+        "-1",
+        "0"
+      ],
+      "gcd_ideal_hnf": [
+        [
+          "1726597447255917968659200",
+          "1511518652810019558432000",
+          "1726597418826295873723419"
+        ],
+        [
+          "0",
+          "1527564729600",
+          "9"
+        ],
+        [
+          "0",
+          "0",
+          "9"
+        ]
+      ]
+    },
+    {
+      "a": "148496505499185387",
+      "b": "-50871300132065894076960000",
+      "d": "1",
+      "gamma_coordinates": [
+        "148496505499185387",
+        "-1",
+        "0"
+      ],
+      "gcd_ideal_hnf": [
+        [
+          "16957100044021964692320000",
+          "16707096229682525808960000",
+          "16957099895525459193134619"
+        ],
+        [
+          "0",
+          "1231907040000",
+          "9"
+        ],
+        [
+          "0",
+          "0",
+          "9"
+        ]
+      ]
+    },
+    {
+      "a": "45756133800259587",
+      "b": "74361513702809325169800",
+      "d": "1",
+      "gamma_coordinates": [
+        "45756133800259587",
+        "-1",
+        "0"
+      ],
+      "gcd_ideal_hnf": [
+        [
+          "24787171234269775056600",
+          "7031178427019066346600",
+          "24787125478135974797019"
+        ],
+        [
+          "0",
+          "19920600",
+          "9"
+        ],
+        [
+          "0",
+          "0",
+          "9"
+        ]
+      ]
+    },
+    {
+      "a": "53631910104252387",
+      "b": "-3630779120197775017017000",
+      "d": "1",
+      "gamma_coordinates": [
+        "53631910104252387",
+        "-1",
+        "0"
+      ],
+      "gcd_ideal_hnf": [
+        [
+          "1210259706732591672339000",
+          "724332313141860839598000",
+          "1210259653100681568086619"
+        ],
+        [
+          "0",
+          "716045967000",
+          "9"
+        ],
+        [
+          "0",
+          "0",
+          "9"
+        ]
+      ]
+    },
+    {
+      "a": "-2400693015646517",
+      "b": "350877132570962237445485000",
+      "d": "3",
+      "gamma_coordinates": [
+        "-2400693015646517",
+        "-9",
+        "0"
+      ],
+      "gcd_ideal_hnf": [
+        [
+          "350877132570962237445485000",
+          "163741025687810253442445000",
+          "216590822574697685991233291"
+        ],
+        [
+          "0",
+          "1457155000",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ]
+    },
+    {
+      "a": "38307976124266707",
+      "b": "-1805519410637408543117880",
+      "d": "1",
+      "gamma_coordinates": [
+        "38307976124266707",
+        "-1",
+        "0"
+      ],
+      "gcd_ideal_hnf": [
+        [
+          "601839803545802847705960",
+          "46151340596463753430920",
+          "601839765237826723439259"
+        ],
+        [
+          "0",
+          "129601080",
+          "9"
+        ],
+        [
+          "0",
+          "0",
+          "9"
+        ]
+      ]
+    },
+    {
+      "a": "46064231291690547",
+      "b": "-426469342384612620417240",
+      "d": "1",
+      "gamma_coordinates": [
+        "46064231291690547",
+        "-1",
+        "0"
+      ],
+      "gcd_ideal_hnf": [
+        [
+          "142156447461537540139080",
+          "25954786872294457181760",
+          "142156401397306248448539"
+        ],
+        [
+          "0",
+          "299880",
+          "9"
+        ],
+        [
+          "0",
+          "0",
+          "9"
+        ]
+      ]
+    },
+    {
+      "a": "9146566453767249723",
+      "b": "104013404348602679589842820000",
+      "d": "23",
+      "gamma_coordinates": [
+        "9146566453767249723",
+        "-529",
+        "0"
+      ],
+      "gcd_ideal_hnf": [
+        [
+          "34671134782867559863280940000",
+          "15316260005737739911508100000",
+          "24446754771267397471739174619"
+        ],
+        [
+          "0",
+          "65995020000",
+          "9"
+        ],
+        [
+          "0",
+          "0",
+          "9"
+        ]
+      ]
+    }
+  ],
+  "software": {
+    "pari": "(2, 17, 3)",
+    "sage": "10.9"
+  },
+  "u": -1
+}

@@ -1,0 +1,33 @@
+{
+  "schema": "rank-jump.strict-Sha-Artin-protocol.v1",
+  "layers": {
+    "Artin_factor": "incidence",
+    "CT_injection": "solubility obstruction"
+  },
+  "question": "Does the largest retained strict block that is rational on E0 and entirely Sha on E_-1 contain an elementary S-class direct factor?",
+  "selection": "Retrospective: u=-1 is the largest strict anchor block (dimension five) in the completed six-case zero-localization test. Freeze all five basis masks, with no ideal or character selection by Artin values.",
+  "u": -1,
+  "point_masks": [
+    17108,
+    34628,
+    65575,
+    404296,
+    528076
+  ],
+  "construction": "Construct exact half ideals for the five existing strict products using gcd ideals and corrections at the certified support. Reduce each ideal once, remove S support, and evaluate the five unramified characters through the cyclic quotient Jacobi method. A nonunit gcd may be handled only if it is itself a certified prime at most 1000, using its local Frobenius bit and the cofactor Jacobi symbol.",
+  "limits": {
+    "curves": 1,
+    "strict_classes": 5,
+    "Artin_entries": 25,
+    "ideal_reductions": 5,
+    "worker_seconds": 30,
+    "new_parameters": 0,
+    "new_CT_computations": 0,
+    "point_searches": 0,
+    "coordinate_or_norm_factorizations": 0,
+    "class_groups": 0
+  },
+  "positive": "An invertible submatrix certifies an elementary S-class direct factor whose selected dual characters are rational on the anchor but CT-obstructed on E_-1. This would refute elementary-factor incidence as a sufficient solubility explanation.",
+  "failure": "A timeout, noncyclic quotient, composite or out-of-bound gcd, failed support/ideal identity or nonunit cofactor leaves the affected result UNKNOWN. No alternate reductions or budget expansion.",
+  "boundary": "Same K, same S, same squareclasses, same ideal classes and same Artin evaluations on both curves. The curves' labelled 4-torsion extension and covering maps differ. No rank selector or new point claim."
+}
