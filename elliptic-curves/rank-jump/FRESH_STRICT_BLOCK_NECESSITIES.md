@@ -208,7 +208,10 @@ The priorities are now:
 
 1. **Incidence:** independently compute or bound c_S−k, rather than count
    the inherited block again. Formula (3) supplies a precise necessary
-   threshold once a class bound is available.
+   threshold once a class bound is available. A [twelve-class norm-projection
+   test](FRESH_NORM_PROJECTION_RAMIFICATION_GATE.md) adds no strict class on
+   any completed row; its two independent global survivors have exact
+   factor-free ramification obstructions.
 2. **Solubility:** construct independent additional classes and evaluate
    their CT obstruction; then identify the missing higher-descent or rational
    carrier criterion. Zero CT alone is not a rationality theorem.

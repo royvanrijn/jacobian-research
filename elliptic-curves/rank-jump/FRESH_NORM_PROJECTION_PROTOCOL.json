@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.fresh-norm-projection-protocol.v1",
+  "population": "The eleven frozen-panel rows with complete factor/local data in the coordinate-boundary and retained-factor supplements. No new fibres.",
+  "candidate_classes": "For the PARI maximal-order basis b0=1,b1,b2, take coefficient triples in {-1,0,1}^3 whose first nonzero entry is +1, excluding (1,0,0). In lexicographic order these give twelve nonzero alpha. Define beta=Norm(alpha)*alpha; Norm(beta)=Norm(alpha)^4. No exceptional points or classes. Generic sections are included only as the known subgroup.",
+  "gates": "Compute the coefficient kernel of squareness at all S places and infinity and even valuations at every prime above a rational prime<=1999 outside S dividing some candidate norm. Remove the generic strict kernel in coefficient space. For a basis of the remaining combinations, compare finite good-prime characters with the generic subgroup and test exact field squareness of the product when useful. These finite gates do not prove unramifiedness at untested primes. Any surviving independent class remains only a candidate pending complete support certification.",
+  "limits": {"worker_seconds_per_case": 45, "probe_prime_bound": 1999, "pari_stack_bytes": 268435456, "workers": 1, "point_searches": 0, "new_parameters": 0, "class_group_calls": 0, "general_integer_factorization_calls": 0},
+  "failure": "UNKNOWN on timeout or failure. A coefficient dependency is not an independent class; a locally square candidate is not a full Selmer class until unramified support is certified, and a Selmer class is not a rational point. No adaptive enlargement."
+}

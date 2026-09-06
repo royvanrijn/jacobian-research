@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.fresh-norm-isolation-protocol.v1",
+  "input": "Only the completed twelve-class norm-projection pilot. Do not generate new candidates or parameters.",
+  "test": "For each retained coefficient-quotient basis vector, isolate each selected alpha's rational norm by stripping all prime support shared with the polynomial discriminant, coefficient denominators/contents, and the other selected norms. If the positive remainder is not a square, prove that the projected product is ramified at a good prime. This is an existential odd-valuation certificate, not a prime factorization. Certify exclusion of the whole coefficient quotient only if its dimension is at most one or all its nonzero vectors are checked; this pilot has at most one.",
+  "verification": "Replay maximal-order basis combinations and norms, all finite local signatures, outside-S valuation probes, real signs, kernel dimensions and finite independence characters. Check gcd removal and nonsquareness with exact integers. Do not infer a whole-space exclusion from separately ramified basis vectors in dimension greater than one.",
+  "limits": {"verification_seconds": 60, "workers": 1, "new_candidates": 0, "point_searches": 0, "integer_factorization_calls": 0, "class_group_calls": 0},
+  "failure": "UNKNOWN if the required nonzero quotient combinations or isolated nonsquare certificates are missing. No enlargement."
+}

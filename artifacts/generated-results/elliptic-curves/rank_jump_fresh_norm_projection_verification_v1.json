@@ -1,0 +1,221 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_norm_projection_v1.json": "c74e187b68070d29fc87c1e3dd56f3725ab17c7de5f4eda2bd21b52d6b64a6f8",
+    "elliptic-curves/rank-jump/FRESH_NORM_ISOLATION_PROTOCOL.json": "b214df408582f4bef6a31988ff3de07694346dc6a279496a8438893665b5e1c3",
+    "elliptic-curves/rank-jump/fresh_norm_projection.py": "a4dd61fbd50c349f07e1d5ab859e4800f09512a7405914e0add04a793731a260",
+    "elliptic-curves/rank-jump/verify_fresh_norm_projection.py": "65f9c3e6c2477bb697787a6bc40900a0d1e71c9d1bdc4fbb5fec393a3d22f3b9",
+    "elliptic-curves/rank-jump/verify_unpointed_governing_norm.py": "69828517faa1ebdc92218dc338cfe156fbc8a16020bf6b28d8f59a60bc4c847a"
+  },
+  "boundary": "Zero additional strict image for this fixed twelve-class dictionary on all eleven fibres. Two independent global classes fail outside-S ramification by factor-free certificates. No full Selmer dimension or rank bound.",
+  "independent_finite_field_character_evaluations": 4224,
+  "norm_projection_identities": 132,
+  "replayed_finite_local_signatures": 4216,
+  "rows": [
+    {
+      "additional_strict_dimension_of_generated_span": 0,
+      "coefficient_quotient_dimension_after_finite_gates": 1,
+      "generic_dimension": 17,
+      "generic_strict_dimension": 9,
+      "global_squareclass_increment": 1,
+      "norm_projection_candidates": 12,
+      "outside_S_exclusions": [
+        {
+          "coefficient_denominators_and_contents": [
+            {
+              "candidate_index": 0,
+              "denominator": 66011624671027396608,
+              "integer_content": 1
+            },
+            {
+              "candidate_index": 1,
+              "denominator": 66011624671027396608,
+              "integer_content": 1
+            },
+            {
+              "candidate_index": 8,
+              "denominator": 66011624671027396608,
+              "integer_content": 1
+            },
+            {
+              "candidate_index": 10,
+              "denominator": 186624,
+              "integer_content": 1
+            },
+            {
+              "candidate_index": 11,
+              "denominator": 66011624671027396608,
+              "integer_content": 1
+            }
+          ],
+          "coefficient_mask": 436701185,
+          "excluded_support_integer": "3573447072469182572396504165313949630110244416900787049715444188465963409587898688665918124811533988505532475491253643663238268685436827990047749466590131592330832752663333864618063595375388115472225896554625220279213752538413821246533274366522159047752528569733726603461833324139762736768776883140806241399576738103092502977667332626041326654901528577928111422295074059981684295073985088679714621102667985370336009474826968051287193208198913966021721626651057427449734823476701328497932266322311359855430967959467641545398090329087789547208640801257685604165553025713072538993098613226886661655213188331202924830376699429746326930100659471215441833895960787086117101997255004753780356288385356371280004287006519590912",
+          "floor_square_root": "26310659970529880814405726972994108942987150268327168599777730",
+          "gcd_removal_steps": [
+            "6"
+          ],
+          "isolated_candidate_index": 0,
+          "isolated_coprime_remainder": "692250828084843428765192293691686022897730416882945171442209647613286271462339567995254149746987263746376911323531367724383",
+          "norm_alpha_absolute": "4153504968509060572591153762150116137386382501297671028653257885679717628774037407971524898481923582478261467941188206346298",
+          "selected_candidate_indices": [
+            0,
+            1,
+            8,
+            10,
+            11
+          ],
+          "status": "PROVED_RAMIFIED_OUTSIDE_S",
+          "witness": "Some odd prime dividing the isolated remainder to odd order is a good unramified cubic prime. Only this alpha has nonunit norm there; its polynomial has degree<3 and is nonzero modulo that prime, so one cubic component is a unit. Norm projection gives odd valuation on that component. Generic point classes cannot cancel it."
+        }
+      ],
+      "status": "PASS",
+      "token": "case-01",
+      "total_strict_dimension_of_generated_span": 9
+    },
+    {
+      "additional_strict_dimension_of_generated_span": 0,
+      "coefficient_quotient_dimension_after_finite_gates": 1,
+      "generic_dimension": 17,
+      "generic_strict_dimension": 0,
+      "global_squareclass_increment": 1,
+      "norm_projection_candidates": 12,
+      "outside_S_exclusions": [
+        {
+          "coefficient_denominators_and_contents": [
+            {
+              "candidate_index": 10,
+              "denominator": 186624,
+              "integer_content": 1
+            }
+          ],
+          "coefficient_mask": 134289332,
+          "excluded_support_integer": "132773271791752111775427330737001386431869948617859849032292693708372856025919546695529212422122016103564229517535685941049354060565641639974307476277048862666682717297822606136780521472000000",
+          "floor_square_root": "9498921181875415875373742299639711697",
+          "gcd_removal_steps": [
+            "784"
+          ],
+          "isolated_candidate_index": 10,
+          "isolated_coprime_remainder": "90229503619481447563308946997422987743031453288514985033009355849947612827",
+          "norm_alpha_absolute": "70739930837673454889634214445979622390536659378195748265879334986358928456368",
+          "selected_candidate_indices": [
+            10
+          ],
+          "status": "PROVED_RAMIFIED_OUTSIDE_S",
+          "witness": "Some odd prime dividing the isolated remainder to odd order is a good unramified cubic prime. Only this alpha has nonunit norm there; its polynomial has degree<3 and is nonzero modulo that prime, so one cubic component is a unit. Norm projection gives odd valuation on that component. Generic point classes cannot cancel it."
+        }
+      ],
+      "status": "PASS",
+      "token": "case-02",
+      "total_strict_dimension_of_generated_span": 0
+    },
+    {
+      "additional_strict_dimension_of_generated_span": 0,
+      "coefficient_quotient_dimension_after_finite_gates": 0,
+      "generic_dimension": 17,
+      "generic_strict_dimension": 0,
+      "global_squareclass_increment": 0,
+      "norm_projection_candidates": 12,
+      "outside_S_exclusions": [],
+      "status": "PASS",
+      "token": "case-03",
+      "total_strict_dimension_of_generated_span": 0
+    },
+    {
+      "additional_strict_dimension_of_generated_span": 0,
+      "coefficient_quotient_dimension_after_finite_gates": 0,
+      "generic_dimension": 17,
+      "generic_strict_dimension": 0,
+      "global_squareclass_increment": 0,
+      "norm_projection_candidates": 12,
+      "outside_S_exclusions": [],
+      "status": "PASS",
+      "token": "case-04",
+      "total_strict_dimension_of_generated_span": 0
+    },
+    {
+      "additional_strict_dimension_of_generated_span": 0,
+      "coefficient_quotient_dimension_after_finite_gates": 0,
+      "generic_dimension": 17,
+      "generic_strict_dimension": 10,
+      "global_squareclass_increment": 0,
+      "norm_projection_candidates": 12,
+      "outside_S_exclusions": [],
+      "status": "PASS",
+      "token": "case-05",
+      "total_strict_dimension_of_generated_span": 10
+    },
+    {
+      "additional_strict_dimension_of_generated_span": 0,
+      "coefficient_quotient_dimension_after_finite_gates": 0,
+      "generic_dimension": 17,
+      "generic_strict_dimension": 0,
+      "global_squareclass_increment": 0,
+      "norm_projection_candidates": 12,
+      "outside_S_exclusions": [],
+      "status": "PASS",
+      "token": "case-06",
+      "total_strict_dimension_of_generated_span": 0
+    },
+    {
+      "additional_strict_dimension_of_generated_span": 0,
+      "coefficient_quotient_dimension_after_finite_gates": 0,
+      "generic_dimension": 17,
+      "generic_strict_dimension": 5,
+      "global_squareclass_increment": 0,
+      "norm_projection_candidates": 12,
+      "outside_S_exclusions": [],
+      "status": "PASS",
+      "token": "case-07",
+      "total_strict_dimension_of_generated_span": 5
+    },
+    {
+      "additional_strict_dimension_of_generated_span": 0,
+      "coefficient_quotient_dimension_after_finite_gates": 0,
+      "generic_dimension": 17,
+      "generic_strict_dimension": 0,
+      "global_squareclass_increment": 0,
+      "norm_projection_candidates": 12,
+      "outside_S_exclusions": [],
+      "status": "PASS",
+      "token": "case-09",
+      "total_strict_dimension_of_generated_span": 0
+    },
+    {
+      "additional_strict_dimension_of_generated_span": 0,
+      "coefficient_quotient_dimension_after_finite_gates": 0,
+      "generic_dimension": 17,
+      "generic_strict_dimension": 1,
+      "global_squareclass_increment": 0,
+      "norm_projection_candidates": 12,
+      "outside_S_exclusions": [],
+      "status": "PASS",
+      "token": "case-13",
+      "total_strict_dimension_of_generated_span": 1
+    },
+    {
+      "additional_strict_dimension_of_generated_span": 0,
+      "coefficient_quotient_dimension_after_finite_gates": 0,
+      "generic_dimension": 17,
+      "generic_strict_dimension": 0,
+      "global_squareclass_increment": 0,
+      "norm_projection_candidates": 12,
+      "outside_S_exclusions": [],
+      "status": "PASS",
+      "token": "case-14",
+      "total_strict_dimension_of_generated_span": 0
+    },
+    {
+      "additional_strict_dimension_of_generated_span": 0,
+      "coefficient_quotient_dimension_after_finite_gates": 0,
+      "generic_dimension": 16,
+      "generic_strict_dimension": 0,
+      "global_squareclass_increment": 0,
+      "norm_projection_candidates": 12,
+      "outside_S_exclusions": [],
+      "status": "PASS",
+      "token": "case-15",
+      "total_strict_dimension_of_generated_span": 0
+    }
+  ],
+  "schema": "rank-jump.fresh-norm-projection-verification.v1",
+  "status": "PASS"
+}
