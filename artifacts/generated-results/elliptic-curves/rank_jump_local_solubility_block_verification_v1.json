@@ -1,0 +1,153 @@
+{
+  "boundary": "Complete replay at the declared places and depths only. The displayed Q23 obstruction alone proves no rational simultaneous lift of those four covers.",
+  "four_way_obstruction": {
+    "indices": [
+      1,
+      2,
+      3,
+      8
+    ],
+    "prime": 23,
+    "square_supports_on_P1": [
+      [
+        0,
+        1,
+        7,
+        8,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21,
+        "infinity"
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        9,
+        12,
+        13,
+        14,
+        17,
+        21,
+        22
+      ],
+      [
+        1,
+        2,
+        5,
+        7,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        20,
+        21,
+        "infinity"
+      ],
+      [
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15,
+        17,
+        18
+      ]
+    ],
+    "triple_unit_witnesses": [
+      {
+        "omitted_index": 1,
+        "parameter_mod_23": 13,
+        "unit_roots": [
+          {
+            "index": 2,
+            "root_mod_23": 4
+          },
+          {
+            "index": 3,
+            "root_mod_23": 2
+          },
+          {
+            "index": 8,
+            "root_mod_23": 1
+          }
+        ]
+      },
+      {
+        "omitted_index": 2,
+        "parameter_mod_23": 18,
+        "unit_roots": [
+          {
+            "index": 1,
+            "root_mod_23": 8
+          },
+          {
+            "index": 3,
+            "root_mod_23": 1
+          },
+          {
+            "index": 8,
+            "root_mod_23": 9
+          }
+        ]
+      },
+      {
+        "omitted_index": 3,
+        "parameter_mod_23": 17,
+        "unit_roots": [
+          {
+            "index": 1,
+            "root_mod_23": 6
+          },
+          {
+            "index": 2,
+            "root_mod_23": 6
+          },
+          {
+            "index": 8,
+            "root_mod_23": 3
+          }
+        ]
+      },
+      {
+        "omitted_index": 8,
+        "parameter_mod_23": 1,
+        "unit_roots": [
+          {
+            "index": 1,
+            "root_mod_23": 1
+          },
+          {
+            "index": 2,
+            "root_mod_23": 9
+          },
+          {
+            "index": 3,
+            "root_mod_23": 5
+          }
+        ]
+      }
+    ]
+  },
+  "individual_exact_local_witness_checks": 652,
+  "projective_residue_classes_checked": 8580,
+  "result_sha256": "dac41b826b9c19c3f83c481f5c750d623a4a872819499d61863006d435f38642",
+  "schema": "rank-jump.local-solubility-block-verification.v1",
+  "script_sha256": "9034838f47f91f039f505bb47e4e51d212df3b9a8c1f9f87cabd245f6822709a",
+  "status": "PASS"
+}

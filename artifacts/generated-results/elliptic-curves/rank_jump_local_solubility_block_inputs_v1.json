@@ -1,0 +1,165 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_solubility_first_geometry_v1.json.gz": "3ada2afa96b4f63944b0fdeebc2a28910870ba0391eee29a8721588426cda450",
+    "artifacts/generated-results/elliptic-curves/rank_jump_solubility_first_inputs_v1.json": "46c6f8a5e3331121f77f0c914b118ed69e7dd965f48979921d00067452e23ed5",
+    "artifacts/generated-results/elliptic-curves/rank_jump_solubility_first_v1.json": "a25cfcabd8597ed5b5f5700336541751dc512af9977bf1d5118280f6008691de",
+    "elliptic-curves/rank-jump/LOCAL_SOLUBILITY_BLOCK_PROTOCOL.json": "01dca540eb5474bc6b42a50873e576970a7243797fd6af03590c7dd123541c5a"
+  },
+  "boundary": "Successful-cover labels are retrospective. No ranks or exceptional point coordinates enter local arithmetic.",
+  "covers": [
+    {
+      "form": [
+        3255283501715844,
+        1254304425186516,
+        125950947365881
+      ],
+      "label": "orbit-01333",
+      "removed_rational_square_root": "1144646464/5625"
+    },
+    {
+      "form": [
+        4865126421024,
+        2514185838528,
+        320914613929
+      ],
+      "label": "orbit-030cb",
+      "removed_rational_square_root": "5550254892/841"
+    },
+    {
+      "form": [
+        32749355881225,
+        8983755404520,
+        183939299856
+      ],
+      "label": "orbit-03da0",
+      "removed_rational_square_root": "76208266368/2809"
+    },
+    {
+      "form": [
+        -163392175124,
+        42862125644,
+        167098581169
+      ],
+      "label": "orbit-07086",
+      "removed_rational_square_root": "277540043971840/34821801"
+    },
+    {
+      "form": [
+        47184481444,
+        25665872604,
+        3559010841
+      ],
+      "label": "orbit-0911e",
+      "removed_rational_square_root": "605783192544/361"
+    },
+    {
+      "form": [
+        531230427916489,
+        -49864417795362,
+        -1905389166951
+      ],
+      "label": "orbit-0a037",
+      "removed_rational_square_root": "2110652519040/987377"
+    },
+    {
+      "form": [
+        16496921457,
+        11037654810,
+        1654807609
+      ],
+      "label": "orbit-0b2d0",
+      "removed_rational_square_root": "135329096331/64"
+    },
+    {
+      "form": [
+        37196401577521,
+        -2636295539020,
+        371354235460
+      ],
+      "label": "orbit-0b954",
+      "removed_rational_square_root": "15580218255147/5398898"
+    },
+    {
+      "form": [
+        -144492039,
+        -201200094,
+        18383017
+      ],
+      "label": "orbit-11278",
+      "removed_rational_square_root": "212693385060"
+    },
+    {
+      "form": [
+        459069811561,
+        92081791006,
+        -2589226631
+      ],
+      "label": "orbit-13109",
+      "removed_rational_square_root": "1138786204/9"
+    },
+    {
+      "form": [
+        409689,
+        -1439214,
+        328441
+      ],
+      "label": "orbit-1795d",
+      "removed_rational_square_root": "6009969202029/16"
+    },
+    {
+      "form": [
+        181288768144,
+        124961177432,
+        19675777849
+      ],
+      "label": "orbit-18f5d",
+      "removed_rational_square_root": "341482752"
+    },
+    {
+      "form": [
+        4897771825,
+        2856794060,
+        580965316
+      ],
+      "label": "orbit-19e45",
+      "removed_rational_square_root": "7439501734587/84050"
+    },
+    {
+      "form": [
+        4282244289,
+        5122341726,
+        1257268321
+      ],
+      "label": "orbit-1e1a2",
+      "removed_rational_square_root": "7090869110356/25"
+    }
+  ],
+  "observed_groups": [
+    {
+      "mask": 256,
+      "published_parameter": "-70665/36751",
+      "source_id": "08234-002"
+    },
+    {
+      "mask": 4673,
+      "published_parameter": "-288/65",
+      "source_id": "08234-003"
+    },
+    {
+      "mask": 3120,
+      "published_parameter": "-4112/1937",
+      "source_id": "08234-009"
+    },
+    {
+      "mask": 140,
+      "published_parameter": "-3115/2756",
+      "source_id": "08234-020"
+    },
+    {
+      "mask": 8194,
+      "published_parameter": "-5877/1690",
+      "source_id": "08234-027"
+    }
+  ],
+  "schema": "rank-jump.local-solubility-block-inputs.v1"
+}
