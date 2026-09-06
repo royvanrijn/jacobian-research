@@ -6,3 +6,4 @@ artifacts/generated-results/elliptic-curves/product_first_evidence_v1.zip filter
 artifacts/generated-results/elliptic-curves/retention24_discovery_evidence_v1.zip filter=lfs diff=lfs merge=lfs -text
 artifacts/generated-results/elliptic-curves/compact192_evidence_v1.zip filter=lfs diff=lfs merge=lfs -text
 artifacts/generated-results/elliptic-curves/million_height_mw16_evidence_v1.zip filter=lfs diff=lfs merge=lfs -text
+artifacts/generated-results/elliptic-curves/small_conductor_small_base_targets_evidence_v1.zip filter=lfs diff=lfs merge=lfs -text

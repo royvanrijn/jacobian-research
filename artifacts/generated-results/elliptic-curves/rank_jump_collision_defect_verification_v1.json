@@ -1,0 +1,515 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_collision_defect_v1.json": "94183c1dfb431c041106b970aa87724c28539e3728904d91cca020ee9f0c4619",
+    "artifacts/generated-results/elliptic-curves/rank_jump_collision_defect_v2.json": "73bd5476cc164037f3c940230b3f9b1696e0ab4a505bcc8d05981808d3a8a665",
+    "artifacts/generated-results/elliptic-curves/rank_jump_collision_prime_lift_v1.json": "fdd9434a349845a7ea04d03b2cbd45adbd96e25cfee4259f02c436a905ad7642",
+    "artifacts/generated-results/elliptic-curves/rank_jump_soluble_quartet_compression_inputs_v1.json": "fe70c730c1f19bf3eae03f3e78b52c23ed7de041f64c1e635600561487aed976",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_collision_defect.py": "9270bccd78599b9e9915f544c05241b0eabc32e403ea55e222da1a588d50d31c"
+  },
+  "boundary": "Exact local valuation images at ordinary primes. Separate local choices give no global rational-point existence or original Mordell-Weil rank.",
+  "rows": [
+    {
+      "exact_ordinary_local_images": [
+        {
+          "exact_local_parity_image": [
+            0,
+            5
+          ],
+          "prime": "163"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            10
+          ],
+          "prime": "937"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            5
+          ],
+          "prime": "2953"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            12
+          ],
+          "prime": "1358479"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            3
+          ],
+          "prime": "4706591"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            10
+          ],
+          "prime": "421439617"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            12
+          ],
+          "prime": "26242737137789"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            12
+          ],
+          "prime": "299769308948044811"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            10
+          ],
+          "prime": "35119604647600658367407161"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            3
+          ],
+          "prime": "3669174323089536114140417378426240519"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            6
+          ],
+          "prime": "112005266235422427051412889632144702369"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            9
+          ],
+          "prime": "478200435683291638992601805227666588508879041"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            5
+          ],
+          "prime": "603875197164937622665445992018073615893162819"
+        }
+      ],
+      "id": "08234-003",
+      "independent_place_coordinates": 13,
+      "native_parity_span_dimension": 3,
+      "other_prime_upper_bounds_only": [
+        {
+          "necessary_parity_masks": [
+            0,
+            6
+          ],
+          "prime": "2"
+        },
+        {
+          "necessary_parity_masks": [
+            0,
+            3
+          ],
+          "prime": "3"
+        },
+        {
+          "necessary_parity_masks": [
+            0,
+            12
+          ],
+          "prime": "7"
+        },
+        {
+          "necessary_parity_masks": [
+            0,
+            3
+          ],
+          "prime": "19"
+        },
+        {
+          "necessary_parity_masks": [
+            0,
+            9
+          ],
+          "prime": "31"
+        }
+      ],
+      "pruned_primes": []
+    },
+    {
+      "exact_ordinary_local_images": [
+        {
+          "exact_local_parity_image": [
+            0,
+            9
+          ],
+          "prime": "53"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            9
+          ],
+          "prime": "109"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            10
+          ],
+          "prime": "233"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            10
+          ],
+          "prime": "239"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            5
+          ],
+          "prime": "367"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            10
+          ],
+          "prime": "461"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            5
+          ],
+          "prime": "127637"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            3
+          ],
+          "prime": "1686569"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            3
+          ],
+          "prime": "68854883"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            12
+          ],
+          "prime": "35483014871334461"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            10
+          ],
+          "prime": "72549435805970309"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            12
+          ],
+          "prime": "684784686759034661"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            5
+          ],
+          "prime": "16000070259350081396339"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            10
+          ],
+          "prime": "320728924505069277110983"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            3
+          ],
+          "prime": "12969920394162455974117378452307"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            6
+          ],
+          "prime": "21884113743918232539266565711046849"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            9
+          ],
+          "prime": "57060838173657024046572229827343313"
+        }
+      ],
+      "id": "08234-009",
+      "independent_place_coordinates": 17,
+      "native_parity_span_dimension": 3,
+      "other_prime_upper_bounds_only": [
+        {
+          "necessary_parity_masks": [
+            0,
+            6,
+            9
+          ],
+          "prime": "2"
+        },
+        {
+          "necessary_parity_masks": [
+            0,
+            3
+          ],
+          "prime": "3"
+        },
+        {
+          "necessary_parity_masks": [
+            0,
+            3,
+            6
+          ],
+          "prime": "7"
+        },
+        {
+          "necessary_parity_masks": [
+            0,
+            10
+          ],
+          "prime": "17"
+        },
+        {
+          "necessary_parity_masks": [
+            0,
+            6
+          ],
+          "prime": "31"
+        },
+        {
+          "necessary_parity_masks": [
+            0,
+            5
+          ],
+          "prime": "41"
+        }
+      ],
+      "pruned_primes": []
+    },
+    {
+      "exact_ordinary_local_images": [
+        {
+          "exact_local_parity_image": [
+            0,
+            6
+          ],
+          "prime": "139"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            9
+          ],
+          "prime": "251"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            3
+          ],
+          "prime": "1553"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            5
+          ],
+          "prime": "15139"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            9
+          ],
+          "prime": "18401"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            5
+          ],
+          "prime": "267901"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            5
+          ],
+          "prime": "12592927"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            3
+          ],
+          "prime": "319801093789"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            12
+          ],
+          "prime": "3633126377567"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            3
+          ],
+          "prime": "23193384428113"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            6
+          ],
+          "prime": "610888485789979"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            3
+          ],
+          "prime": "3230555449071259"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            9
+          ],
+          "prime": "11613166291978687"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            9
+          ],
+          "prime": "19942274001039517"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            12
+          ],
+          "prime": "3714412228601271752389"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            6
+          ],
+          "prime": "464519175831673459463789"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            5
+          ],
+          "prime": "21304214201640433315206337"
+        },
+        {
+          "exact_local_parity_image": [
+            0,
+            10
+          ],
+          "prime": "1299718057497406099042128403370056695143"
+        }
+      ],
+      "id": "obstructed_ABCD",
+      "independent_place_coordinates": 18,
+      "native_parity_span_dimension": 3,
+      "other_prime_upper_bounds_only": [
+        {
+          "necessary_parity_masks": [
+            0,
+            5
+          ],
+          "prime": "2"
+        },
+        {
+          "necessary_parity_masks": [
+            0,
+            9
+          ],
+          "prime": "3"
+        },
+        {
+          "necessary_parity_masks": [
+            0,
+            10,
+            12
+          ],
+          "prime": "7"
+        },
+        {
+          "necessary_parity_masks": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "prime": "13"
+        },
+        {
+          "necessary_parity_masks": [
+            0,
+            6
+          ],
+          "prime": "17"
+        },
+        {
+          "necessary_parity_masks": [
+            0,
+            6,
+            10,
+            12
+          ],
+          "prime": "23"
+        },
+        {
+          "necessary_parity_masks": [
+            0,
+            6,
+            12
+          ],
+          "prime": "59"
+        }
+      ],
+      "pruned_primes": []
+    }
+  ],
+  "schema": "rank-jump.collision-defect-verification.v1",
+  "status": "PASS"
+}
