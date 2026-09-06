@@ -1,0 +1,26 @@
+{
+  "augmentation_dimension": 10,
+  "base_Galois_group": "S11",
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_fourth_lift_shared_field_v1.json": "53c561553427fd425caf88dc7ca4ace1bb6e4aaef454112081564da6891e55c7",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_fourth_lift_shared_field.py": "ee649fa6bbed912021bafcd9f774e3f4676cbb3cc30ccb22848f4396a7754b24"
+  },
+  "boundary": "The note supplies the Galois-module argument from these exact gates. Conjugate squareclass rank is not original-curve Mordell-Weil rank.",
+  "degree22_field_has_quadratic_subfield": false,
+  "degree_one_local_place": {
+    "constant_norm_candidate_residue": 8,
+    "fourth_square_root_residue": 19,
+    "fourth_value_residue": 7,
+    "normalized_value_residue": 23,
+    "parameter_residue": 4,
+    "prime": 59
+  },
+  "nonconstant_binary_vectors_checked": 2046,
+  "norm_positive_and_parameter_discriminant_negative": true,
+  "normal_closure_group": "C2 wr S11",
+  "normal_closure_group_order": 81749606400,
+  "normal_closure_sign_kernel_rank": 11,
+  "schema": "rank-jump.fourth-lift-shared-field-verification.v1",
+  "status": "PASS"
+}

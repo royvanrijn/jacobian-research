@@ -1,0 +1,10 @@
+{
+  "schema":"rank-jump.fourth-lift-shared-field-protocol.v1",
+  "layer":"solubility",
+  "question":"Is the fourth-root degree-22 field the compositum of the degree-eleven relation field and one constant quadratic field, or do its conjugates require a larger Kummer extension?",
+  "selection":"Only the degree-eleven component of the already verified positive relation and q_13109. No rational parameters, original points, cover labels or translates are searched.",
+  "method":"Let K=Q[t]/F, N=Norm_K/Q(q), and D=disc(F). A constant quadratic compositum is equivalent to q/N being square in K. Seek an exact nonsquare reduction at a simple linear root of F modulo a good prime at most 199. Compare the rational squareclasses of N and D. Combine these certificates with the verified S11 action and its binary permutation-module subspaces to determine the sign-kernel rank in the normal closure, when the gates suffice.",
+  "limits":{"residue_fields":1,"maximum_prime":199,"workers":1,"number_field_class_groups":0,"online_requests":0,"new_original_rational_parameters":0},
+  "failure_semantics":"No modular witness leaves the constant-field question UNKNOWN. A norm squareclass alone does not determine the sign kernel. Only the stated Galois-module proof gates permit a full group claim.",
+  "boundary":"Characterize the residual fourth-root solubility obstruction, not the number of independent Mordell-Weil directions or a prospective rank score."
+}
