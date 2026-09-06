@@ -1,5 +1,9 @@
 # Fresh rank-27 fibres: a masked governing/CT comparison
 
+Panel follow-up: [strict-block necessities and local boundary capacities](FRESH_STRICT_BLOCK_NECESSITIES.md)
+now cover all nine fully factored rows, including curve 398, with finite-place
+derivative witnesses for the complex cubic fields. Additional CT remains unknown.
+
 Follow-up: [the fixed103b2 high fibre must contain at least nine strict rational
 directions outside its generic subgroup](MATCHED103B2_JUMP_REQUIRES_NINE_STRICT_DIRECTIONS.md).
 The new bound uses an equation-defined reciprocity constraint; it does not

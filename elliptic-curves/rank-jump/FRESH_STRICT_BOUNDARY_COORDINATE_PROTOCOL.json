@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.fresh-strict-boundary-coordinate-protocol.v1",
+  "population": "Same sixteen masked fibres as FRESH_STRICT_BOUNDARY_PROTOCOL.json. No rematching or new factors.",
+  "method": "Verify beta's norm and unramified support and recompute local point dimensions. If f has three real roots, use its complete real point image to witness the nonzero derivative functional. Otherwise, at each bad place where the retained generic local span equals the full point dimension, test whether beta is outside that span using local squareclass coordinates. The point image is its own annihilator for the norm-square local Hilbert pairing, so nonmembership certifies a nonzero functional. If no witness is certified, use no dimension reduction. No direct nfhilbert calls.",
+  "inputs": "Equations, generic sections and previously verified masked local signatures only. Labels joined separately after arithmetic. Exceptional points and their classes excluded.",
+  "limits": {"worker_seconds_per_case": 30, "pari_stack_bytes": 268435456, "workers": 1, "new_parameters": 0, "point_searches": 0, "factorization_retries": 0, "class_group_calls": 0},
+  "failure": "UNKNOWN on resource failure, incomplete coverage or missing hypotheses. No budget escalation. The prior direct-Hilbert pilot remains preserved with its own outcomes."
+}

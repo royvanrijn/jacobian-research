@@ -1,0 +1,3636 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+    "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_PROTOCOL.json": "f0ac472877e0554ded06e26c4764b756065ec207b0bbc09c9349c4bb6a5153c1",
+    "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+    "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+    "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "rows": [
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_PROTOCOL.json": "f0ac472877e0554ded06e26c4764b756065ec207b0bbc09c9349c4bb6a5153c1",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "reason": "Existing discriminant factorization incomplete; no retry",
+      "status": "UNKNOWN",
+      "token": "case-00"
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_PROTOCOL.json": "f0ac472877e0554ded06e26c4764b756065ec207b0bbc09c9349c4bb6a5153c1",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "reason": "bounded worker timeout",
+      "status": "UNKNOWN",
+      "token": "case-01"
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_PROTOCOL.json": "f0ac472877e0554ded06e26c4764b756065ec207b0bbc09c9349c4bb6a5153c1",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "reason": "bounded worker timeout",
+      "status": "UNKNOWN",
+      "token": "case-02"
+    },
+    {
+      "S_finite": [
+        2,
+        3,
+        5,
+        13,
+        19,
+        43,
+        149,
+        4297,
+        3478907,
+        4955611,
+        298809242544719,
+        5796185682939961,
+        38389665399337604755954086815648556260176517531824390908960172592828166471668421691
+      ],
+      "Selmer_boundary_dimension_interval": [
+        17,
+        19
+      ],
+      "additional_boundary_capacity_upper_bound": 2,
+      "additional_quotient_CT": "UNKNOWN",
+      "additional_strict_dimension": "UNKNOWN",
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_PROTOCOL.json": "f0ac472877e0554ded06e26c4764b756065ec207b0bbc09c9349c4bb6a5153c1",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "boundary": "One equation-defined constraint at most; zero means no witness in this test, not absence of other constraints. No additional class or rationality certificate.",
+      "derivative_coefficients": [
+        "1042402153104788484804216607797500921772893490764445092155915604351739425236554312226321699423235255324205331876157712034674532323494959940732700256722610029936655078882111050428003648263188357028783575000000",
+        "0",
+        "-311763372229341974470814631876985052073463787727697233553087541863912515148131780370648881647285729084120802836193031177641478172106917997671448034143750000"
+      ],
+      "derivative_norm": "116631360793123523747932013343603509683446906880797088644814351850119634637887982765026127742651974416830028033489458463178415734373930740239337301310967591235447519871208963107630260356943346361282223086185511340440025523318007372698770030091441444178849896109023296723450425092084042567174828394763538258691452808488090605318598130645797803844259083274758044725501325149484281375268239696009176828036147206664610144321293553273823007520723248420614821734603876847417565435340428294814120370108101620784296710164064609163498761514354136143481788937265147981305165288142467130899962230298696412658691406250000000000000000",
+      "generic_dimension": 17,
+      "generic_local_dimension": 17,
+      "generic_reciprocity_checks": 17,
+      "generic_strict_dimension": 0,
+      "local": [
+        {
+          "functional_on_generic_local_images": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "hilbert_symbols": [
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ]
+          ],
+          "place": 2,
+          "point_dimension": 1
+        },
+        {
+          "functional_on_generic_local_images": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "hilbert_symbols": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "place": 3,
+          "point_dimension": 2
+        },
+        {
+          "functional_on_generic_local_images": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "hilbert_symbols": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "place": 5,
+          "point_dimension": 2
+        },
+        {
+          "functional_on_generic_local_images": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "hilbert_symbols": [
+            [
+              1,
+              -1,
+              1
+            ],
+            [
+              1,
+              -1,
+              1
+            ],
+            [
+              1,
+              -1,
+              1
+            ],
+            [
+              1,
+              1,
+              -1
+            ],
+            [
+              1,
+              1,
+              -1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              -1,
+              1
+            ],
+            [
+              1,
+              -1,
+              1
+            ],
+            [
+              1,
+              1,
+              -1
+            ],
+            [
+              1,
+              1,
+              -1
+            ],
+            [
+              1,
+              -1,
+              -1
+            ],
+            [
+              1,
+              -1,
+              -1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              -1
+            ],
+            [
+              1,
+              -1,
+              -1
+            ]
+          ],
+          "place": 13,
+          "point_dimension": 2
+        },
+        {
+          "functional_on_generic_local_images": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "hilbert_symbols": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              -1,
+              -1,
+              1
+            ],
+            [
+              -1,
+              -1,
+              1
+            ],
+            [
+              -1,
+              -1,
+              1
+            ],
+            [
+              -1,
+              -1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              -1,
+              -1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              -1,
+              -1,
+              1
+            ],
+            [
+              -1,
+              -1,
+              1
+            ],
+            [
+              -1,
+              -1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              -1,
+              -1,
+              1
+            ]
+          ],
+          "place": 19,
+          "point_dimension": 2
+        },
+        {
+          "functional_on_generic_local_images": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "hilbert_symbols": [
+            [
+              -1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              -1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              -1,
+              1,
+              1
+            ],
+            [
+              -1,
+              1,
+              1
+            ],
+            [
+              -1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              -1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              -1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              -1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "place": 43,
+          "point_dimension": 2
+        },
+        {
+          "functional_on_generic_local_images": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "hilbert_symbols": [
+            [
+              -1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              -1
+            ],
+            [
+              1,
+              1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              -1
+            ],
+            [
+              1,
+              1,
+              -1
+            ],
+            [
+              1,
+              1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              -1
+            ],
+            [
+              1,
+              1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              1
+            ],
+            [
+              -1,
+              1,
+              1
+            ],
+            [
+              -1,
+              1,
+              1
+            ],
+            [
+              -1,
+              1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              -1
+            ]
+          ],
+          "place": 149,
+          "point_dimension": 2
+        },
+        {
+          "functional_on_generic_local_images": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "hilbert_symbols": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "place": 4297,
+          "point_dimension": 1
+        },
+        {
+          "functional_on_generic_local_images": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "hilbert_symbols": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "place": 3478907,
+          "point_dimension": 1
+        },
+        {
+          "functional_on_generic_local_images": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "hilbert_symbols": [
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "place": 4955611,
+          "point_dimension": 1
+        },
+        {
+          "functional_on_generic_local_images": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "hilbert_symbols": [
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ]
+          ],
+          "place": 298809242544719,
+          "point_dimension": 1
+        },
+        {
+          "functional_on_generic_local_images": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "hilbert_symbols": [
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "place": 5796185682939961,
+          "point_dimension": 1
+        },
+        {
+          "functional_on_generic_local_images": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "hilbert_symbols": [
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ]
+          ],
+          "place": 38389665399337604755954086815648556260176517531824390908960172592828166471668421691,
+          "point_dimension": 1
+        },
+        {
+          "complete_point_basis": [
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "derivative_signs": [
+            1,
+            0,
+            1
+          ],
+          "functional_on_generic_local_images": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "generic_signs": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "place": "infinity",
+          "point_dimension": 1
+        }
+      ],
+      "local_point_product_dimension": 20,
+      "omitted_good_prime_valuations": [],
+      "polynomial_discriminant": "103921124076447324823604877292328350691154595909232411184362513954637505049377260123549627215761909694706934278731010392547159390702305999223816011381250000",
+      "reciprocity_constraint_rank_lower_bound": 1,
+      "status": "PASS",
+      "token": "case-03"
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_PROTOCOL.json": "f0ac472877e0554ded06e26c4764b756065ec207b0bbc09c9349c4bb6a5153c1",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "reason": "bounded worker timeout",
+      "status": "UNKNOWN",
+      "token": "case-04"
+    },
+    {
+      "S_finite": [
+        2,
+        13,
+        17,
+        29,
+        191296177,
+        26412210008369203,
+        3536363458029489949221275615151091215008653652856616413241728517046806970396071365144595348096004967550204243700629
+      ],
+      "Selmer_boundary_dimension_interval": [
+        7,
+        7
+      ],
+      "additional_boundary_capacity_upper_bound": 0,
+      "additional_quotient_CT": "UNKNOWN",
+      "additional_strict_dimension": "UNKNOWN",
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_PROTOCOL.json": "f0ac472877e0554ded06e26c4764b756065ec207b0bbc09c9349c4bb6a5153c1",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "boundary": "One equation-defined constraint at most; zero means no witness in this test, not absence of other constraints. No additional class or rationality certificate.",
+      "derivative_coefficients": [
+        "-148864429761462344989269948060048624594938825424350440761405317411065849030083596377244605290916335489818902746809972131059226338833594816337690196711614812730317995885465324635812969376851749532291",
+        "0",
+        "37429898219094333956286254001920388025200108855887389055840416656794330396918385889580413573515428050276244434078021272189066875720688849391705858269"
+      ],
+      "derivative_norm": "24232017043280364189077852797769636545706662022406111716567080099308495534585857699873109555272603844764701043836565041566171702993015475537946720925885855977474621667757105893747204031286891078166890852210068132070069224610691417696166826265857995079669960449932310251045631470920350551635058460234397653835941790759101528260587588485009403132160760973261954857267386602730960095931284640904896778280579489708122898614889399072060919081659489713544312721524513268222260072904517977586608308105719628084204411554846698927521765216798391145536858329606673509648380584529712030062038393383879041",
+      "generic_dimension": 17,
+      "generic_local_dimension": 7,
+      "generic_reciprocity_checks": 17,
+      "generic_strict_dimension": 10,
+      "local": [
+        {
+          "functional_on_generic_local_images": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "hilbert_symbols": [
+            [
+              -1
+            ],
+            [
+              1
+            ],
+            [
+              -1
+            ],
+            [
+              1
+            ],
+            [
+              -1
+            ],
+            [
+              -1
+            ],
+            [
+              -1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              -1
+            ],
+            [
+              -1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              -1
+            ],
+            [
+              1
+            ]
+          ],
+          "place": 2,
+          "point_dimension": 1
+        },
+        {
+          "functional_on_generic_local_images": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "hilbert_symbols": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              -1,
+              1,
+              1
+            ],
+            [
+              -1,
+              1,
+              1
+            ],
+            [
+              -1,
+              1,
+              -1
+            ],
+            [
+              1,
+              1,
+              -1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              -1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              -1
+            ],
+            [
+              1,
+              1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              1
+            ]
+          ],
+          "place": 13,
+          "point_dimension": 2
+        },
+        {
+          "functional_on_generic_local_images": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "hilbert_symbols": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "place": 17,
+          "point_dimension": 1
+        },
+        {
+          "functional_on_generic_local_images": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "hilbert_symbols": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "place": 29,
+          "point_dimension": 1
+        },
+        {
+          "functional_on_generic_local_images": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "hilbert_symbols": [
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "place": 191296177,
+          "point_dimension": 1
+        },
+        {
+          "functional_on_generic_local_images": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "hilbert_symbols": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "place": 26412210008369203,
+          "point_dimension": 1
+        },
+        {
+          "functional_on_generic_local_images": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "hilbert_symbols": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "place": 3536363458029489949221275615151091215008653652856616413241728517046806970396071365144595348096004967550204243700629,
+          "point_dimension": 1
+        },
+        {
+          "complete_point_basis": [],
+          "derivative_signs": [
+            0
+          ],
+          "functional_on_generic_local_images": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "generic_signs": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "place": "infinity",
+          "point_dimension": 0
+        }
+      ],
+      "local_point_product_dimension": 8,
+      "omitted_good_prime_valuations": [],
+      "polynomial_discriminant": "-12476632739698111318762084667306796008400036285295796351946805552264776798972795296526804524505142683425414811359340424063022291906896283130568619423",
+      "reciprocity_constraint_rank_lower_bound": 1,
+      "status": "PASS",
+      "token": "case-05"
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_PROTOCOL.json": "f0ac472877e0554ded06e26c4764b756065ec207b0bbc09c9349c4bb6a5153c1",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "reason": "bounded worker timeout",
+      "status": "UNKNOWN",
+      "token": "case-06"
+    },
+    {
+      "S_finite": [
+        2,
+        3,
+        5,
+        7,
+        13,
+        17,
+        179,
+        8089,
+        62305634387,
+        252255154771,
+        69431746362168076474800083356577848380092656289923653202287850916929457025993070891646848979058042910072537020841609041180365927
+      ],
+      "Selmer_boundary_dimension_interval": [
+        12,
+        12
+      ],
+      "additional_boundary_capacity_upper_bound": 0,
+      "additional_quotient_CT": "UNKNOWN",
+      "additional_strict_dimension": "UNKNOWN",
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_PROTOCOL.json": "f0ac472877e0554ded06e26c4764b756065ec207b0bbc09c9349c4bb6a5153c1",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "boundary": "One equation-defined constraint at most; zero means no witness in this test, not absence of other constraints. No additional class or rationality certificate.",
+      "derivative_coefficients": [
+        "268947980063951405165552637080535703262207713274553062726809387557502900473143088301670529221938691881335838182576699231911112901313078510344620561085350539333307414019369820012871296704859944183577243201632670747495192204210435396643662210916430565601557353800000",
+        "0",
+        "-851531035348090377321015294477057454380984046561380662274861958893143956305163712898041456049852389383674841740662779273000918967675799240036132829815820168452634208579413807536684861662180248950000"
+      ],
+      "derivative_norm": "6491079161485447356637020975791307823112299565573756411470411545423227524431497792459346711051056233483430430648825482820649793081895296977091815023479734358537709243361806971190406182195560735760308771397112932739897836375554474918149348889335960761438553973729737971536826425687310727035074748152927038179417940422797583718227099700740091970828258146329511454445455251097305279844716570393372349393920687183594858960270198257517029114550037757448145095243227447921632075738604919431047989866011560006724555720876564451614935603258723284404854246652294227355370398047257170158834277333818286388280931407378930911340608146492199698067110786949439100572859889414891458370463490472539741772072711606685924160464785606702382935388931175817838867499392733662465233958799890006250000000000000000",
+      "generic_dimension": 17,
+      "generic_local_dimension": 12,
+      "generic_reciprocity_checks": 17,
+      "generic_strict_dimension": 5,
+      "local": [
+        {
+          "functional_on_generic_local_images": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "hilbert_symbols": [
+            [
+              1
+            ],
+            [
+              -1
+            ],
+            [
+              -1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              -1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              -1
+            ],
+            [
+              -1
+            ],
+            [
+              1
+            ],
+            [
+              -1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ]
+          ],
+          "place": 2,
+          "point_dimension": 1
+        },
+        {
+          "functional_on_generic_local_images": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "hilbert_symbols": [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              -1,
+              1
+            ],
+            [
+              1,
+              -1,
+              1
+            ],
+            [
+              1,
+              -1,
+              1
+            ],
+            [
+              1,
+              -1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              -1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              -1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              -1,
+              1
+            ],
+            [
+              1,
+              -1,
+              1
+            ]
+          ],
+          "place": 3,
+          "point_dimension": 2
+        },
+        {
+          "functional_on_generic_local_images": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "hilbert_symbols": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "place": 5,
+          "point_dimension": 1
+        },
+        {
+          "functional_on_generic_local_images": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "hilbert_symbols": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "place": 7,
+          "point_dimension": 1
+        },
+        {
+          "functional_on_generic_local_images": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "hilbert_symbols": [
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "place": 13,
+          "point_dimension": 1
+        },
+        {
+          "functional_on_generic_local_images": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "hilbert_symbols": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "place": 17,
+          "point_dimension": 1
+        },
+        {
+          "functional_on_generic_local_images": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "hilbert_symbols": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "place": 179,
+          "point_dimension": 1
+        },
+        {
+          "functional_on_generic_local_images": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "hilbert_symbols": [
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ]
+          ],
+          "place": 8089,
+          "point_dimension": 1
+        },
+        {
+          "functional_on_generic_local_images": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "hilbert_symbols": [
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              1
+            ]
+          ],
+          "place": 62305634387,
+          "point_dimension": 1
+        },
+        {
+          "functional_on_generic_local_images": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "hilbert_symbols": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "place": 252255154771,
+          "point_dimension": 1
+        },
+        {
+          "functional_on_generic_local_images": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "hilbert_symbols": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "place": 69431746362168076474800083356577848380092656289923653202287850916929457025993070891646848979058042910072537020841609041180365927,
+          "point_dimension": 1
+        },
+        {
+          "complete_point_basis": [
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "derivative_signs": [
+            1,
+            0,
+            1
+          ],
+          "functional_on_generic_local_images": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "generic_signs": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "place": "infinity",
+          "point_dimension": 1
+        }
+      ],
+      "local_point_product_dimension": 13,
+      "omitted_good_prime_valuations": [],
+      "polynomial_discriminant": "283843678449363459107005098159019151460328015520460220758287319631047985435054570966013818683284129794558280580220926424333639655891933080012044276605273389484211402859804602512228287220726749650000",
+      "reciprocity_constraint_rank_lower_bound": 1,
+      "status": "PASS",
+      "token": "case-07"
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_PROTOCOL.json": "f0ac472877e0554ded06e26c4764b756065ec207b0bbc09c9349c4bb6a5153c1",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "reason": "Existing discriminant factorization incomplete; no retry",
+      "status": "UNKNOWN",
+      "token": "case-08"
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_PROTOCOL.json": "f0ac472877e0554ded06e26c4764b756065ec207b0bbc09c9349c4bb6a5153c1",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "reason": "bounded worker timeout",
+      "status": "UNKNOWN",
+      "token": "case-09"
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_PROTOCOL.json": "f0ac472877e0554ded06e26c4764b756065ec207b0bbc09c9349c4bb6a5153c1",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "reason": "Existing discriminant factorization incomplete; no retry",
+      "status": "UNKNOWN",
+      "token": "case-10"
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_PROTOCOL.json": "f0ac472877e0554ded06e26c4764b756065ec207b0bbc09c9349c4bb6a5153c1",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "reason": "Existing discriminant factorization incomplete; no retry",
+      "status": "UNKNOWN",
+      "token": "case-11"
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_PROTOCOL.json": "f0ac472877e0554ded06e26c4764b756065ec207b0bbc09c9349c4bb6a5153c1",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "reason": "Existing discriminant factorization incomplete; no retry",
+      "status": "UNKNOWN",
+      "token": "case-12"
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_PROTOCOL.json": "f0ac472877e0554ded06e26c4764b756065ec207b0bbc09c9349c4bb6a5153c1",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "reason": "Existing discriminant factorization incomplete; no retry",
+      "status": "UNKNOWN",
+      "token": "case-13"
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_PROTOCOL.json": "f0ac472877e0554ded06e26c4764b756065ec207b0bbc09c9349c4bb6a5153c1",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "reason": "Existing discriminant factorization incomplete; no retry",
+      "status": "UNKNOWN",
+      "token": "case-14"
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_PROTOCOL.json": "f0ac472877e0554ded06e26c4764b756065ec207b0bbc09c9349c4bb6a5153c1",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "reason": "bounded worker timeout",
+      "status": "UNKNOWN",
+      "token": "case-15"
+    }
+  ],
+  "schema": "rank-jump.fresh-strict-boundary.v1"
+}

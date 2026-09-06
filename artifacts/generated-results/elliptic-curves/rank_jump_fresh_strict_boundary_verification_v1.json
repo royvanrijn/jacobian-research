@@ -1,0 +1,161 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_manifest_v1.json": "dd07b100bd8cedd038dfe41f30bfb172ba030934cbc39cb7a16d1a5928412fbf",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_strict_boundary_coordinate_comparison_v1.json": "0154b0198c75cefdbde5ff6429fca907938c9574fbcbe03afbff5a18c3ca3ab9",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_strict_boundary_coordinates_v1.json": "0e81a8232d56e9e7f57551cbea6f9e2a3ba6f80bcc3ff51bfe0402eede100952",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_strict_boundary_v1.json": "60664e0621b6236cc3205c6e3123016598f67580866124156c9770241b976aee",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+    "elliptic-curves/rank-jump/verify_fresh_strict_boundary.py": "66dd0bdb3ac74f6ae132cf4df3bc939bc7bcc82ab291550477f1c08df2a23c64",
+    "elliptic-curves/rank-jump/verify_unpointed_governing_norm.py": "69828517faa1ebdc92218dc338cfe156fbc8a16020bf6b28d8f59a60bc4c847a"
+  },
+  "rows": [
+    {
+      "reason": "Existing discriminant factorization incomplete; no retry",
+      "status": "UNKNOWN",
+      "token": "case-00"
+    },
+    {
+      "additional_boundary_capacity": 0,
+      "agrees_with_completed_direct_Hilbert_method": null,
+      "boundary_upper_bound": 8,
+      "coordinate_place_replays": 3,
+      "generic_dimension": 17,
+      "generic_strict_dimension": 9,
+      "local_point_product_dimension": 9,
+      "rank_label_dependent_additional_strict_minimum": 0,
+      "status": "PASS",
+      "token": "case-01"
+    },
+    {
+      "additional_boundary_capacity": 1,
+      "agrees_with_completed_direct_Hilbert_method": null,
+      "boundary_upper_bound": 18,
+      "coordinate_place_replays": 0,
+      "generic_dimension": 17,
+      "generic_strict_dimension": 0,
+      "local_point_product_dimension": 19,
+      "rank_label_dependent_additional_strict_minimum": 9,
+      "status": "PASS",
+      "token": "case-02"
+    },
+    {
+      "additional_boundary_capacity": 2,
+      "agrees_with_completed_direct_Hilbert_method": true,
+      "boundary_upper_bound": 19,
+      "coordinate_place_replays": 0,
+      "generic_dimension": 17,
+      "generic_strict_dimension": 0,
+      "local_point_product_dimension": 20,
+      "rank_label_dependent_additional_strict_minimum": 0,
+      "status": "PASS",
+      "token": "case-03"
+    },
+    {
+      "additional_boundary_capacity": 5,
+      "agrees_with_completed_direct_Hilbert_method": null,
+      "boundary_upper_bound": 22,
+      "coordinate_place_replays": 0,
+      "generic_dimension": 17,
+      "generic_strict_dimension": 0,
+      "local_point_product_dimension": 23,
+      "rank_label_dependent_additional_strict_minimum": 5,
+      "status": "PASS",
+      "token": "case-04"
+    },
+    {
+      "additional_boundary_capacity": 0,
+      "agrees_with_completed_direct_Hilbert_method": true,
+      "boundary_upper_bound": 7,
+      "coordinate_place_replays": 1,
+      "generic_dimension": 17,
+      "generic_strict_dimension": 10,
+      "local_point_product_dimension": 8,
+      "rank_label_dependent_additional_strict_minimum": 0,
+      "status": "PASS",
+      "token": "case-05"
+    },
+    {
+      "additional_boundary_capacity": 4,
+      "agrees_with_completed_direct_Hilbert_method": null,
+      "boundary_upper_bound": 21,
+      "coordinate_place_replays": 2,
+      "generic_dimension": 17,
+      "generic_strict_dimension": 0,
+      "local_point_product_dimension": 22,
+      "rank_label_dependent_additional_strict_minimum": 6,
+      "status": "PASS",
+      "token": "case-06"
+    },
+    {
+      "additional_boundary_capacity": 0,
+      "agrees_with_completed_direct_Hilbert_method": true,
+      "boundary_upper_bound": 12,
+      "coordinate_place_replays": 0,
+      "generic_dimension": 17,
+      "generic_strict_dimension": 5,
+      "local_point_product_dimension": 13,
+      "rank_label_dependent_additional_strict_minimum": 0,
+      "status": "PASS",
+      "token": "case-07"
+    },
+    {
+      "reason": "Existing discriminant factorization incomplete; no retry",
+      "status": "UNKNOWN",
+      "token": "case-08"
+    },
+    {
+      "additional_boundary_capacity": 2,
+      "agrees_with_completed_direct_Hilbert_method": null,
+      "boundary_upper_bound": 19,
+      "coordinate_place_replays": 0,
+      "generic_dimension": 17,
+      "generic_strict_dimension": 0,
+      "local_point_product_dimension": 20,
+      "rank_label_dependent_additional_strict_minimum": 8,
+      "status": "PASS",
+      "token": "case-09"
+    },
+    {
+      "reason": "Existing discriminant factorization incomplete; no retry",
+      "status": "UNKNOWN",
+      "token": "case-10"
+    },
+    {
+      "reason": "Existing discriminant factorization incomplete; no retry",
+      "status": "UNKNOWN",
+      "token": "case-11"
+    },
+    {
+      "reason": "Existing discriminant factorization incomplete; no retry",
+      "status": "UNKNOWN",
+      "token": "case-12"
+    },
+    {
+      "reason": "Existing discriminant factorization incomplete; no retry",
+      "status": "UNKNOWN",
+      "token": "case-13"
+    },
+    {
+      "reason": "Existing discriminant factorization incomplete; no retry",
+      "status": "UNKNOWN",
+      "token": "case-14"
+    },
+    {
+      "additional_boundary_capacity": 9,
+      "agrees_with_completed_direct_Hilbert_method": null,
+      "boundary_upper_bound": 25,
+      "coordinate_place_replays": 0,
+      "generic_dimension": 16,
+      "generic_strict_dimension": 0,
+      "local_point_product_dimension": 26,
+      "rank_label_dependent_additional_strict_minimum": 5,
+      "status": "PASS",
+      "token": "case-15"
+    }
+  ],
+  "schema": "rank-jump.fresh-strict-boundary-verification.v1",
+  "scope": "Rational norm identities; independent PARI bad-prime coverage versus Sage capture; prime splitting dimensions; Sage matrix accounting. Coordinate witnesses reuse LocalSquareclasses, with direct Hilbert comparison where completed. Missing rows and additional CT remain UNKNOWN.",
+  "status": "PASS"
+}

@@ -1,0 +1,1439 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_COORDINATE_PROTOCOL.json": "885ead358110bb053795ab72dce34077e19d79fea9a3a8c0e940ed928f570050",
+    "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+    "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+    "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+    "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "rows": [
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_COORDINATE_PROTOCOL.json": "885ead358110bb053795ab72dce34077e19d79fea9a3a8c0e940ed928f570050",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "reason": "Existing discriminant factorization incomplete; no retry",
+      "status": "UNKNOWN",
+      "token": "case-00"
+    },
+    {
+      "S_finite": [
+        2,
+        3,
+        13,
+        79,
+        89,
+        395803454548322601521521876969307823326241237986148940577061389742754763329283185413505648843364340920437863042671239709673641323264993
+      ],
+      "Selmer_boundary_dimension_interval": [
+        8,
+        8
+      ],
+      "additional_boundary_capacity_upper_bound": 0,
+      "additional_quotient_CT": "UNKNOWN",
+      "additional_strict_dimension": "UNKNOWN",
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_COORDINATE_PROTOCOL.json": "885ead358110bb053795ab72dce34077e19d79fea9a3a8c0e940ed928f570050",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "boundary": "A witnessed equation-defined constraint, or a conservative unreduced boundary. No new class representative or point supplied.",
+      "complete_real_point_basis": [],
+      "derivative_coefficients": [
+        "-13678830192157324355848955923752516441061587031228508660622573654438777850251205322721653222276118083834028773518067662642250762881246533879934473997465537217694295947683910322832187892782483831065883048916737340910242396912418824441677285924274176",
+        "0",
+        "720836313735781513895755923528577683844197205281932109701453911104029686887500503334896879737845382548842213867763580149501457820863416880879993668568013256428246038831655522261190836224"
+      ],
+      "derivative_norm": "3333201813335179822505478628597081279392198865802559003053162559699669007054449801754176113906532196839284774685084754178349341266383387994763171897826783572004600276675593275737689020568655111006257635554666115127268604766892009251441902721366774282448293819324952702525981618061537468555149671317371689119668684841150061071656225024374089710748479208254962504578788532781012632175838493036868192717414867287237097909919619535875971028698676174783710456493360325824894254042324177990308080761839558504772713041397025123927722483274518578985524548583014244840898476470787787338996679972840230310890829183605557821207795856644408537002569607528637920361988106103440444670082744723210934828636171207882872282208247704239524116722338978957623296",
+      "generic_dimension": 17,
+      "generic_local_dimension": 8,
+      "generic_strict_dimension": 9,
+      "local": [
+        {
+          "derivative_signature": 12,
+          "generic_local_rank": 2,
+          "outside_full_point_image": false,
+          "place": 2,
+          "point_dimension": 2,
+          "tested_derivative": true
+        },
+        {
+          "derivative_signature": 0,
+          "generic_local_rank": 1,
+          "outside_full_point_image": false,
+          "place": 3,
+          "point_dimension": 1,
+          "tested_derivative": true
+        },
+        {
+          "derivative_signature": 15,
+          "generic_local_rank": 2,
+          "outside_full_point_image": true,
+          "place": 13,
+          "point_dimension": 2,
+          "tested_derivative": true
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 79,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 89,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 395803454548322601521521876969307823326241237986148940577061389742754763329283185413505648843364340920437863042671239709673641323264993,
+          "point_dimension": 1,
+          "tested_derivative": false
+        }
+      ],
+      "local_point_product_dimension": 9,
+      "omitted_good_prime_valuations": [],
+      "polynomial_discriminant": "-240278771245260504631918641176192561281399068427310703233817970368009895629166834444965626579281794182947404622587860049833819273621138960293331222856004418809415346277218507420396945408",
+      "real_derivative_signs": [
+        0
+      ],
+      "reciprocity_constraint_rank_lower_bound": 1,
+      "status": "PASS",
+      "token": "case-01",
+      "witness": {
+        "place": 13,
+        "type": "outside full generic local point span"
+      }
+    },
+    {
+      "S_finite": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        13,
+        17,
+        41,
+        43,
+        59,
+        20615041675346507,
+        1371609143868959976154145640664687027995574838295626697379856471001437756163360865284294725678053
+      ],
+      "Selmer_boundary_dimension_interval": [
+        17,
+        18
+      ],
+      "additional_boundary_capacity_upper_bound": 1,
+      "additional_quotient_CT": "UNKNOWN",
+      "additional_strict_dimension": "UNKNOWN",
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_COORDINATE_PROTOCOL.json": "885ead358110bb053795ab72dce34077e19d79fea9a3a8c0e940ed928f570050",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "boundary": "A witnessed equation-defined constraint, or a conservative unreduced boundary. No new class representative or point supplied.",
+      "complete_real_point_basis": [
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "derivative_coefficients": [
+        "40864298334643752655517028931172686207155633731972452469216149465472853459070799688905176096867744546116959556044266057142681920944518713281687703966474874699855169813941609838919624601066760327614539271151978705198083130041765805838332592128000000",
+        "0",
+        "-1067172001927019931322557635167513715533934129194475381239492458432780800105449031439117255193238941161620929121139451043670862755317978716357281027175354155950060420667941471649792000000"
+      ],
+      "derivative_norm": "16012261417507031340277596562973104458960990487926383838760104015316080434519193786198999675841398457704815135075315537353647506019325453306288508836273201925215637682331427880554741144101741906232298911414275210360486933712238010204602664722778723357368331688056389493045404202386379922733081483662718849306866612137171498465050280414164277531565151444281132977009055864726159536995830484867549318162157677859835364789913910633531415890654807124821533090013768078126446374576879602714258918269309699451494274041944622471182551633121162474826431346158671446017395244601048149858209998707976503834799794489136983786326060922300103713983414612913013357122704391111901479765649703487024949318206789251739059730905265340416000000000000000000000000",
+      "generic_dimension": 17,
+      "generic_local_dimension": 17,
+      "generic_strict_dimension": 0,
+      "local": [
+        {
+          "generic_local_rank": 2,
+          "place": 2,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 3,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 5,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 7,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 11,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 13,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 17,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 41,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 43,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 59,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 20615041675346507,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 1371609143868959976154145640664687027995574838295626697379856471001437756163360865284294725678053,
+          "point_dimension": 1,
+          "tested_derivative": false
+        }
+      ],
+      "local_point_product_dimension": 19,
+      "omitted_good_prime_valuations": [],
+      "polynomial_discriminant": "355724000642339977107519211722504571844644709731491793746497486144260266701816343813039085064412980387206976373713150347890287585105992905452427009058451385316686806889313823883264000000",
+      "real_derivative_signs": [
+        1,
+        0,
+        1
+      ],
+      "reciprocity_constraint_rank_lower_bound": 1,
+      "status": "PASS",
+      "token": "case-02",
+      "witness": {
+        "place": "infinity",
+        "type": "real Hilbert dot product"
+      }
+    },
+    {
+      "S_finite": [
+        2,
+        3,
+        5,
+        13,
+        19,
+        43,
+        149,
+        4297,
+        3478907,
+        4955611,
+        298809242544719,
+        5796185682939961,
+        38389665399337604755954086815648556260176517531824390908960172592828166471668421691
+      ],
+      "Selmer_boundary_dimension_interval": [
+        17,
+        19
+      ],
+      "additional_boundary_capacity_upper_bound": 2,
+      "additional_quotient_CT": "UNKNOWN",
+      "additional_strict_dimension": "UNKNOWN",
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_COORDINATE_PROTOCOL.json": "885ead358110bb053795ab72dce34077e19d79fea9a3a8c0e940ed928f570050",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "boundary": "A witnessed equation-defined constraint, or a conservative unreduced boundary. No new class representative or point supplied.",
+      "complete_real_point_basis": [
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "derivative_coefficients": [
+        "1042402153104788484804216607797500921772893490764445092155915604351739425236554312226321699423235255324205331876157712034674532323494959940732700256722610029936655078882111050428003648263188357028783575000000",
+        "0",
+        "-311763372229341974470814631876985052073463787727697233553087541863912515148131780370648881647285729084120802836193031177641478172106917997671448034143750000"
+      ],
+      "derivative_norm": "116631360793123523747932013343603509683446906880797088644814351850119634637887982765026127742651974416830028033489458463178415734373930740239337301310967591235447519871208963107630260356943346361282223086185511340440025523318007372698770030091441444178849896109023296723450425092084042567174828394763538258691452808488090605318598130645797803844259083274758044725501325149484281375268239696009176828036147206664610144321293553273823007520723248420614821734603876847417565435340428294814120370108101620784296710164064609163498761514354136143481788937265147981305165288142467130899962230298696412658691406250000000000000000",
+      "generic_dimension": 17,
+      "generic_local_dimension": 17,
+      "generic_strict_dimension": 0,
+      "local": [
+        {
+          "generic_local_rank": 1,
+          "place": 2,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 3,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 5,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 13,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 19,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 43,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 149,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 4297,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 3478907,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 4955611,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 298809242544719,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 5796185682939961,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 38389665399337604755954086815648556260176517531824390908960172592828166471668421691,
+          "point_dimension": 1,
+          "tested_derivative": false
+        }
+      ],
+      "local_point_product_dimension": 20,
+      "omitted_good_prime_valuations": [],
+      "polynomial_discriminant": "103921124076447324823604877292328350691154595909232411184362513954637505049377260123549627215761909694706934278731010392547159390702305999223816011381250000",
+      "real_derivative_signs": [
+        1,
+        0,
+        1
+      ],
+      "reciprocity_constraint_rank_lower_bound": 1,
+      "status": "PASS",
+      "token": "case-03",
+      "witness": {
+        "place": "infinity",
+        "type": "real Hilbert dot product"
+      }
+    },
+    {
+      "S_finite": [
+        2,
+        3,
+        5,
+        13,
+        17,
+        19,
+        29,
+        67,
+        229,
+        11483,
+        1015067,
+        1185749,
+        11359109,
+        28592101,
+        2613768493918386139,
+        8789417427421464766489779706511,
+        66712930379907104512639308779323
+      ],
+      "Selmer_boundary_dimension_interval": [
+        17,
+        22
+      ],
+      "additional_boundary_capacity_upper_bound": 5,
+      "additional_quotient_CT": "UNKNOWN",
+      "additional_strict_dimension": "UNKNOWN",
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_COORDINATE_PROTOCOL.json": "885ead358110bb053795ab72dce34077e19d79fea9a3a8c0e940ed928f570050",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "boundary": "A witnessed equation-defined constraint, or a conservative unreduced boundary. No new class representative or point supplied.",
+      "complete_real_point_basis": [
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "derivative_coefficients": [
+        "42360275909706408459865862963349356702727348637913217692413866345392784879826406678904299222716454706959878949859683992230296474371293877845808424113961379333314274271251002313793856577441149915029110531941088573277618799275923210240000000",
+        "0",
+        "-148648240792125478224495209359829628181011978290687230089998875846146099796371097677642491389784118997226339092294765780241087529564159004848431887229857750398879087628124160000000"
+      ],
+      "derivative_norm": "6027733965160643930342526315802899520420986630060441135483689628479468702387051859965854653847905792063084559481576194022473369328329944971181716650341728784676044557506078267095215598261491328962415310257662584411472021405433647007626588130435230794742757330329366740934667482945567021293324917736250121361323822848346825160310936125227134523333030777574715122553278893605065010801074808611848623072927868158297841752476787603351120538978798987861563132360668308688586234708369035057186172239603339562988803370398794052513167970718650563757305719501526026149575296425583635440021861557759327278782046154035756326050957563571379849595914938674289273898559188116392365160294363058206146560000000000000000000000000000",
+      "generic_dimension": 17,
+      "generic_local_dimension": 17,
+      "generic_strict_dimension": 0,
+      "local": [
+        {
+          "generic_local_rank": 2,
+          "place": 2,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 3,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 5,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 13,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 17,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 19,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 29,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 67,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 229,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 11483,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 1015067,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 1185749,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 11359109,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 28592101,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 2613768493918386139,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 8789417427421464766489779706511,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 66712930379907104512639308779323,
+          "point_dimension": 1,
+          "tested_derivative": false
+        }
+      ],
+      "local_point_product_dimension": 23,
+      "omitted_good_prime_valuations": [],
+      "polynomial_discriminant": "49549413597375159408165069786609876060337326096895743363332958615382033265457032559214163796594706332408779697431588593413695843188053001616143962409952583466293029209374720000000",
+      "real_derivative_signs": [
+        1,
+        0,
+        1
+      ],
+      "reciprocity_constraint_rank_lower_bound": 1,
+      "status": "PASS",
+      "token": "case-04",
+      "witness": {
+        "place": "infinity",
+        "type": "real Hilbert dot product"
+      }
+    },
+    {
+      "S_finite": [
+        2,
+        13,
+        17,
+        29,
+        191296177,
+        26412210008369203,
+        3536363458029489949221275615151091215008653652856616413241728517046806970396071365144595348096004967550204243700629
+      ],
+      "Selmer_boundary_dimension_interval": [
+        7,
+        7
+      ],
+      "additional_boundary_capacity_upper_bound": 0,
+      "additional_quotient_CT": "UNKNOWN",
+      "additional_strict_dimension": "UNKNOWN",
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_COORDINATE_PROTOCOL.json": "885ead358110bb053795ab72dce34077e19d79fea9a3a8c0e940ed928f570050",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "boundary": "A witnessed equation-defined constraint, or a conservative unreduced boundary. No new class representative or point supplied.",
+      "complete_real_point_basis": [],
+      "derivative_coefficients": [
+        "-148864429761462344989269948060048624594938825424350440761405317411065849030083596377244605290916335489818902746809972131059226338833594816337690196711614812730317995885465324635812969376851749532291",
+        "0",
+        "37429898219094333956286254001920388025200108855887389055840416656794330396918385889580413573515428050276244434078021272189066875720688849391705858269"
+      ],
+      "derivative_norm": "24232017043280364189077852797769636545706662022406111716567080099308495534585857699873109555272603844764701043836565041566171702993015475537946720925885855977474621667757105893747204031286891078166890852210068132070069224610691417696166826265857995079669960449932310251045631470920350551635058460234397653835941790759101528260587588485009403132160760973261954857267386602730960095931284640904896778280579489708122898614889399072060919081659489713544312721524513268222260072904517977586608308105719628084204411554846698927521765216798391145536858329606673509648380584529712030062038393383879041",
+      "generic_dimension": 17,
+      "generic_local_dimension": 7,
+      "generic_strict_dimension": 10,
+      "local": [
+        {
+          "derivative_signature": 6,
+          "generic_local_rank": 1,
+          "outside_full_point_image": true,
+          "place": 2,
+          "point_dimension": 1,
+          "tested_derivative": true
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 13,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 17,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 29,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 191296177,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 26412210008369203,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 3536363458029489949221275615151091215008653652856616413241728517046806970396071365144595348096004967550204243700629,
+          "point_dimension": 1,
+          "tested_derivative": false
+        }
+      ],
+      "local_point_product_dimension": 8,
+      "omitted_good_prime_valuations": [],
+      "polynomial_discriminant": "-12476632739698111318762084667306796008400036285295796351946805552264776798972795296526804524505142683425414811359340424063022291906896283130568619423",
+      "real_derivative_signs": [
+        0
+      ],
+      "reciprocity_constraint_rank_lower_bound": 1,
+      "status": "PASS",
+      "token": "case-05",
+      "witness": {
+        "place": 2,
+        "type": "outside full generic local point span"
+      }
+    },
+    {
+      "S_finite": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        13,
+        17,
+        19,
+        37,
+        41,
+        107,
+        139,
+        241,
+        2309,
+        146750759902520012671,
+        174361184822160214729,
+        1087614221970164994197309267684770841847552381021820065017808837975906824362877
+      ],
+      "Selmer_boundary_dimension_interval": [
+        17,
+        21
+      ],
+      "additional_boundary_capacity_upper_bound": 4,
+      "additional_quotient_CT": "UNKNOWN",
+      "additional_strict_dimension": "UNKNOWN",
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_COORDINATE_PROTOCOL.json": "885ead358110bb053795ab72dce34077e19d79fea9a3a8c0e940ed928f570050",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "boundary": "A witnessed equation-defined constraint, or a conservative unreduced boundary. No new class representative or point supplied.",
+      "complete_real_point_basis": [],
+      "derivative_coefficients": [
+        "-6677748913045542423073714268714047893847419749179976181435079319250477352084199661812312954285292512219656439071877035899445319436751460243226431252682105046138989568813581466541273790449909485733413215266548738791640628042431515214415178227698111403060137344431125218962964480000000",
+        "0",
+        "260095786080746412129011693724183737172003296585469524732862256746157844599878380015597880161654378434843430479556577704483830286707100260967099172404871812702903463188783631474190598243569965294534808043520000000"
+      ],
+      "derivative_norm": "56499973665481780784638226730145797621936424491158192862770114691497038310444749605946735040296785694230338857948927116620219541597366549375154811767777216684734323651275261699395366133298239647102408626214871956797016114111170205708737109777596896013754264054779756944706813524327339979584720988181014598622752405261883438998531984211634225940828103852969322841158313632164907176491765503686290753083468489409102846745034038203427867887490960693544948276047903594845456913639927148096425627085374705677897383388709721291076414162884201237902499257505398873598372753314945590122430805422583228134384218773538278264491632866504659167358132928028548333037772033038990410698103685067717159672408705989796600794106028767394897856001964766360119137631734095744856519281390259960238760073240616880960833497297284474456097423360000000000000000000000000000",
+      "generic_dimension": 17,
+      "generic_local_dimension": 17,
+      "generic_strict_dimension": 0,
+      "local": [
+        {
+          "derivative_signature": 12,
+          "generic_local_rank": 2,
+          "outside_full_point_image": false,
+          "place": 2,
+          "point_dimension": 2,
+          "tested_derivative": true
+        },
+        {
+          "derivative_signature": 34,
+          "generic_local_rank": 2,
+          "outside_full_point_image": true,
+          "place": 3,
+          "point_dimension": 2,
+          "tested_derivative": true
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 5,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 7,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 11,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 13,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 17,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 19,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 37,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 41,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 107,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 139,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 241,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 2309,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 146750759902520012671,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 174361184822160214729,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 1087614221970164994197309267684770841847552381021820065017808837975906824362877,
+          "point_dimension": 1,
+          "tested_derivative": false
+        }
+      ],
+      "local_point_product_dimension": 22,
+      "omitted_good_prime_valuations": [],
+      "polynomial_discriminant": "-86698595360248804043003897908061245724001098861823174910954085582052614866626126671865960053884792811614476826518859234827943428902366753655699724134957270900967821062927877158063532747856655098178269347840000000",
+      "real_derivative_signs": [
+        0
+      ],
+      "reciprocity_constraint_rank_lower_bound": 1,
+      "status": "PASS",
+      "token": "case-06",
+      "witness": {
+        "place": 3,
+        "type": "outside full generic local point span"
+      }
+    },
+    {
+      "S_finite": [
+        2,
+        3,
+        5,
+        7,
+        13,
+        17,
+        179,
+        8089,
+        62305634387,
+        252255154771,
+        69431746362168076474800083356577848380092656289923653202287850916929457025993070891646848979058042910072537020841609041180365927
+      ],
+      "Selmer_boundary_dimension_interval": [
+        12,
+        12
+      ],
+      "additional_boundary_capacity_upper_bound": 0,
+      "additional_quotient_CT": "UNKNOWN",
+      "additional_strict_dimension": "UNKNOWN",
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_COORDINATE_PROTOCOL.json": "885ead358110bb053795ab72dce34077e19d79fea9a3a8c0e940ed928f570050",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "boundary": "A witnessed equation-defined constraint, or a conservative unreduced boundary. No new class representative or point supplied.",
+      "complete_real_point_basis": [
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "derivative_coefficients": [
+        "268947980063951405165552637080535703262207713274553062726809387557502900473143088301670529221938691881335838182576699231911112901313078510344620561085350539333307414019369820012871296704859944183577243201632670747495192204210435396643662210916430565601557353800000",
+        "0",
+        "-851531035348090377321015294477057454380984046561380662274861958893143956305163712898041456049852389383674841740662779273000918967675799240036132829815820168452634208579413807536684861662180248950000"
+      ],
+      "derivative_norm": "6491079161485447356637020975791307823112299565573756411470411545423227524431497792459346711051056233483430430648825482820649793081895296977091815023479734358537709243361806971190406182195560735760308771397112932739897836375554474918149348889335960761438553973729737971536826425687310727035074748152927038179417940422797583718227099700740091970828258146329511454445455251097305279844716570393372349393920687183594858960270198257517029114550037757448145095243227447921632075738604919431047989866011560006724555720876564451614935603258723284404854246652294227355370398047257170158834277333818286388280931407378930911340608146492199698067110786949439100572859889414891458370463490472539741772072711606685924160464785606702382935388931175817838867499392733662465233958799890006250000000000000000",
+      "generic_dimension": 17,
+      "generic_local_dimension": 12,
+      "generic_strict_dimension": 5,
+      "local": [
+        {
+          "generic_local_rank": 1,
+          "place": 2,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 3,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 5,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 7,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 13,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 17,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 179,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 8089,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 62305634387,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 252255154771,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 69431746362168076474800083356577848380092656289923653202287850916929457025993070891646848979058042910072537020841609041180365927,
+          "point_dimension": 1,
+          "tested_derivative": false
+        }
+      ],
+      "local_point_product_dimension": 13,
+      "omitted_good_prime_valuations": [],
+      "polynomial_discriminant": "283843678449363459107005098159019151460328015520460220758287319631047985435054570966013818683284129794558280580220926424333639655891933080012044276605273389484211402859804602512228287220726749650000",
+      "real_derivative_signs": [
+        1,
+        0,
+        1
+      ],
+      "reciprocity_constraint_rank_lower_bound": 1,
+      "status": "PASS",
+      "token": "case-07",
+      "witness": {
+        "place": "infinity",
+        "type": "real Hilbert dot product"
+      }
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_COORDINATE_PROTOCOL.json": "885ead358110bb053795ab72dce34077e19d79fea9a3a8c0e940ed928f570050",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "reason": "Existing discriminant factorization incomplete; no retry",
+      "status": "UNKNOWN",
+      "token": "case-08"
+    },
+    {
+      "S_finite": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        13,
+        19,
+        47,
+        509,
+        1880603,
+        7106189011,
+        259807211574607,
+        553567795022107,
+        1129105272486743,
+        1872767131490633970393149,
+        140106331191119962071569896497953
+      ],
+      "Selmer_boundary_dimension_interval": [
+        17,
+        19
+      ],
+      "additional_boundary_capacity_upper_bound": 2,
+      "additional_quotient_CT": "UNKNOWN",
+      "additional_strict_dimension": "UNKNOWN",
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_COORDINATE_PROTOCOL.json": "885ead358110bb053795ab72dce34077e19d79fea9a3a8c0e940ed928f570050",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "boundary": "A witnessed equation-defined constraint, or a conservative unreduced boundary. No new class representative or point supplied.",
+      "complete_real_point_basis": [
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "derivative_coefficients": [
+        "234219967844472035098233610485319235326919794266868562360633585299753260956597531191430396699232162785802631893461289321967214430454920492039065645314187882146387851457836336194507409900141715535086056832334057173426936422074366126714781696000000",
+        "0",
+        "-38377250280571100837007732378112598806768169398499279003453824225812667147442074930109191456415962052044847655704401711711952633069822643278226649239903668653297575901958718357504000000"
+      ],
+      "derivative_norm": "26779989281775386297277746992439489614076384264656606936853546538370728281982495835089504861959807226710231992717205383009523121584692937530495729504381649508717511848473617162770099885779245910137291585581794247270059032815240948263464745677634762734208396943904797874011087196290639267939210595052489122520895905788149222706697845978332177359390024852399265184093948301778168137150005145683573447480849340374593846280877733015713153294329345446110861918195545835645958858458167467110308052735014279936918337125699982067208544172526435978479248332986906750181364393113714353083474945169095835452406898688238659811605252653460832231961718481233905986565424305289679126764343003173157497363248237479800148565426176000000000000000000000000",
+      "generic_dimension": 17,
+      "generic_local_dimension": 17,
+      "generic_strict_dimension": 0,
+      "local": [
+        {
+          "generic_local_rank": 2,
+          "place": 2,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 3,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 5,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 7,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 11,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 13,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 19,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 47,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 509,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 1880603,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 7106189011,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 259807211574607,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 553567795022107,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 1129105272486743,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 1872767131490633970393149,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 140106331191119962071569896497953,
+          "point_dimension": 1,
+          "tested_derivative": false
+        }
+      ],
+      "local_point_product_dimension": 20,
+      "omitted_good_prime_valuations": [],
+      "polynomial_discriminant": "12792416760190366945669244126037532935589389799499759667817941408604222382480691643369730485471987350681615885234800570570650877689940881092742216413301222884432525300652906119168000000",
+      "real_derivative_signs": [
+        1,
+        0,
+        1
+      ],
+      "reciprocity_constraint_rank_lower_bound": 1,
+      "status": "PASS",
+      "token": "case-09",
+      "witness": {
+        "place": "infinity",
+        "type": "real Hilbert dot product"
+      }
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_COORDINATE_PROTOCOL.json": "885ead358110bb053795ab72dce34077e19d79fea9a3a8c0e940ed928f570050",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "reason": "Existing discriminant factorization incomplete; no retry",
+      "status": "UNKNOWN",
+      "token": "case-10"
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_COORDINATE_PROTOCOL.json": "885ead358110bb053795ab72dce34077e19d79fea9a3a8c0e940ed928f570050",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "reason": "Existing discriminant factorization incomplete; no retry",
+      "status": "UNKNOWN",
+      "token": "case-11"
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_COORDINATE_PROTOCOL.json": "885ead358110bb053795ab72dce34077e19d79fea9a3a8c0e940ed928f570050",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "reason": "Existing discriminant factorization incomplete; no retry",
+      "status": "UNKNOWN",
+      "token": "case-12"
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_COORDINATE_PROTOCOL.json": "885ead358110bb053795ab72dce34077e19d79fea9a3a8c0e940ed928f570050",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "reason": "Existing discriminant factorization incomplete; no retry",
+      "status": "UNKNOWN",
+      "token": "case-13"
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_COORDINATE_PROTOCOL.json": "885ead358110bb053795ab72dce34077e19d79fea9a3a8c0e940ed928f570050",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "reason": "Existing discriminant factorization incomplete; no retry",
+      "status": "UNKNOWN",
+      "token": "case-14"
+    },
+    {
+      "S_finite": [
+        2,
+        3,
+        5,
+        7,
+        19,
+        29,
+        31,
+        37,
+        41,
+        59,
+        73,
+        79,
+        101,
+        151,
+        197,
+        20084070565614383,
+        277131689105980733414153,
+        91586120381369539248864736998169886452607476058975046580346704317125237
+      ],
+      "Selmer_boundary_dimension_interval": [
+        16,
+        25
+      ],
+      "additional_boundary_capacity_upper_bound": 9,
+      "additional_quotient_CT": "UNKNOWN",
+      "additional_strict_dimension": "UNKNOWN",
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+        "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/FRESH_STRICT_BOUNDARY_COORDINATE_PROTOCOL.json": "885ead358110bb053795ab72dce34077e19d79fea9a3a8c0e940ed928f570050",
+        "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+        "elliptic-curves/rank-jump/fresh_strict_boundary.py": "ed01c107f93990df62c9464cc3c255add159b752ec21b7677f39a1e5e1dabdf4",
+        "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+        "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+        "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+      },
+      "boundary": "A witnessed equation-defined constraint, or a conservative unreduced boundary. No new class representative or point supplied.",
+      "complete_real_point_basis": [
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "derivative_coefficients": [
+        "2980233070411196977094004923240781393254677053052874038824190879082906135703386623684349908476291787298686291112075294334755451805424662058658933654901150399575189513201768895431712553281311529629420006464906197756225232490953065790177280000000",
+        "0",
+        "-535088948984317401699345974351977063812613767656057475622808186035520517495058225087986786024274728063284899163406634130941687021403066715701025843168889221250461058356262993920000000"
+      ],
+      "derivative_norm": "1012089473819044408728790398500865690505300165528617341038606278932829933065292087610519629781830843015496670603967399011675837334485843149607427442853792066663921738798967475694656843164112034477542457367375852779050822282852284314066735243916488363505437665681110352371833274544893841173636771005913604508076475434943039728753261245375549762467891468170023013940478644357940142791768528747598836326411746943407404412840360527590215277195681423975250931717436534819838551707465872687908025593472467294477940943145404058619711220044937856478690130375236631743384422317924576414513130635073614523599136582626317671694532736743933612854275907658165561445588676420430234529400842871707190182495926783836160000000000000000000000000000",
+      "generic_dimension": 16,
+      "generic_local_dimension": 16,
+      "generic_strict_dimension": 0,
+      "local": [
+        {
+          "generic_local_rank": 2,
+          "place": 2,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 3,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 5,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 7,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 19,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 29,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 31,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 37,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 41,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 59,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 73,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 79,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 2,
+          "place": 101,
+          "point_dimension": 2,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 151,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 197,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 20084070565614383,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 277131689105980733414153,
+          "point_dimension": 1,
+          "tested_derivative": false
+        },
+        {
+          "generic_local_rank": 1,
+          "place": 91586120381369539248864736998169886452607476058975046580346704317125237,
+          "point_dimension": 1,
+          "tested_derivative": false
+        }
+      ],
+      "local_point_product_dimension": 26,
+      "omitted_good_prime_valuations": [],
+      "polynomial_discriminant": "178362982994772467233115324783992354604204589218685825207602728678506839165019408362662262008091576021094966387802211376980562340467688905233675281056296407083487019452087664640000000",
+      "real_derivative_signs": [
+        1,
+        0,
+        1
+      ],
+      "reciprocity_constraint_rank_lower_bound": 1,
+      "status": "PASS",
+      "token": "case-15",
+      "witness": {
+        "place": "infinity",
+        "type": "real Hilbert dot product"
+      }
+    }
+  ],
+  "schema": "rank-jump.fresh-strict-boundary.v1"
+}

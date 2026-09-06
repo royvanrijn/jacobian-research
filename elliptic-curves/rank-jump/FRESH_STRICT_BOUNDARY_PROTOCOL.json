@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.fresh-strict-boundary-protocol.v1",
+  "population": "The existing masked sixteen-fibre fresh governing panel, unchanged. Compute complete boundary bounds only on rows with certified complete discriminant factorization and retained complete local data. Keep every other row UNKNOWN; no factorization retry or replacement.",
+  "arithmetic_inputs": "Equations, marked generic sections, and existing masked local certificates. Rank labels are joined only by a separate reporting mode after arithmetic. No exceptional coordinates, classes, or point-derived CT matrices.",
+  "test": "For beta=-disc(f)*f'(theta), verify its square norm and even valuations at omitted good polynomial-discriminant primes. Evaluate finite Hilbert pairings against every marked generic local class, and the complete real point image. A nonzero pairing proves one independent reciprocity constraint. Absence of a witness supplies no dimension reduction. Bound the additional local boundary relative to the generic subgroup, then report necessary additional strict dimensions from retained rank labels.",
+  "limits": {"worker_seconds_per_case": 45, "pari_stack_bytes": 268435456, "workers": 1, "new_parameters": 0, "point_searches": 0, "factorization_retries": 0, "class_group_calls": 0},
+  "failure": "Checkpoint each row under a new rank-jump path. Any missing coverage, timeout or error remains UNKNOWN. No budget escalation. These are necessary bounds, not measured additional class dimensions, rationality tests or rank predictors."
+}
