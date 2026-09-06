@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.matched103b2-root-circuit-protocol.v1",
+  "cases": ["case-02", "case-03"],
+  "purpose": "Try independently generated principal relations near the real norm roots, and distinguish ordinary integer relation dependencies from ideal two-torsion before claiming a strict Selmer class.",
+  "selection": "On each frozen maximal-order binary cubic, all three ordered real roots alpha, denominators1..512, and m=floor(n*alpha)+shift with shifts -1,0,1. Keep primitive distinct(m,n) pairs in that order. Accept a value only if its remaining cofactor after stripping primes<=400000 has at most32 bits. Audit the first32 accepted values, plus the one previously certified box relation on the high fibre. No exceptional point or class input.",
+  "limits": {"denominators": 512, "smooth_bound": 400000, "residual_bits": 32, "accepted_relations_per_case": 32, "maximum_candidate_classes": 16, "character_prime_bound": 1999, "norm_seconds": 45, "audit_seconds": 75, "pari_stack_bytes": 268435456, "workers": 1, "point_searches": 0, "new_parameters": 0},
+  "certificate": "Exact root floors, norm/smoothness digest, full principal-ideal factorization including the fixed norm square factor, integer and mod-two valuation-matrix ranks, strict local kernel, and finite characters for any dependency products. A kernel is not a class-independence certificate; a strict class is not a rational-point certificate.",
+  "failure": "Checkpoint both stages on both fields. Resource-limit failures stay UNKNOWN. No adaptive enlargement or parameter sweep."
+}

@@ -1,0 +1,30 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_matched103b2_root_circuits_v1.json": "91bdf53c8acf1c466b0d832465f1ec58d4f9363c8db29f37e0606429df0f3272",
+    "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+    "elliptic-curves/rank-jump/verify_matched103b2_root_circuits.py": "44acc05f0f9a7d79691ed94e76c4902fa879b17156049b24078b5ba60a894086",
+    "elliptic-curves/rank-jump/verify_unpointed_governing_norm.py": "69828517faa1ebdc92218dc338cfe156fbc8a16020bf6b28d8f59a60bc4c847a"
+  },
+  "rows": [
+    {
+      "additional_strict_image_dimension": 0,
+      "norm_values": 2807,
+      "outside_S_parity_rank": 2,
+      "principal_ideals": 2,
+      "root_floors": 1536,
+      "token": "case-02",
+      "valuation_rank_F2": 2,
+      "valuation_rank_Q": 2
+    },
+    {
+      "additional_strict_image_dimension": 0,
+      "norm_values": 2802,
+      "principal_ideals": 0,
+      "root_floors": 1536,
+      "token": "case-03"
+    }
+  ],
+  "schema": "rank-jump.matched103b2-root-circuit-verification.v1",
+  "scope": "Independent rational interval and norm replay; full retained ideal identities and outside-S parity. Local signatures are unnecessary to the zero-image certificate and are not independently replayed here.",
+  "status": "PASS"
+}

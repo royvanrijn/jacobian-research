@@ -1,5 +1,10 @@
 # An independent principal relation, but no additional strict class yet
 
+Follow-up: the [bounded near-root circuit test](MATCHED103B2_RELATION_CIRCUIT_CAPACITY.md)
+adds one independent principal relation but still has zero strict image.
+It derives a capacity bound separating unit dependencies from possible
+non-unit contributions.
+
 The fixed103b2 pair now has a bounded test of a genuinely independent
 class-arithmetic source. Exact binary cubic norm coordinates greatly reduce
 coefficient size. The frozen box produces no fully400000-smooth norms,
