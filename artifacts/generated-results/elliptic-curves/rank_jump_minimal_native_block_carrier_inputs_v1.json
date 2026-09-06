@@ -1,0 +1,33 @@
+{
+  "anchor": {
+    "t": "-288/65",
+    "u": "44253/5",
+    "v": "3924473/65"
+  },
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_triple_intersection_v1.json": "9457865c87fc7aee8a860798b605353e7215c2fc30217b712367a77de81d7c86",
+    "artifacts/generated-results/elliptic-curves/rank_jump_soluble_quartet_compression_inputs_v1.json": "fe70c730c1f19bf3eae03f3e78b52c23ed7de041f64c1e635600561487aed976",
+    "elliptic-curves/rank-jump/MINIMAL_NATIVE_BLOCK_CARRIER_PROTOCOL.json": "cb032cd11fb2fdf8e19c0ecf71dd5bdd56292ab1705b9024f47b0f72567b2624"
+  },
+  "covers": [
+    {
+      "form": [
+        16496921457,
+        11037654810,
+        1654807609
+      ],
+      "label": "orbit-0b2d0",
+      "removed_rational_square_root": "135329096331/64"
+    },
+    {
+      "form": [
+        4897771825,
+        2856794060,
+        580965316
+      ],
+      "label": "orbit-19e45",
+      "removed_rational_square_root": "7439501734587/84050"
+    }
+  ],
+  "schema": "rank-jump.minimal-native-block-carrier-inputs.v1"
+}

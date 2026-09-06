@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.minimal-native-block-carrier-protocol.v1",
+  "layer": "solubility",
+  "question": "Characterize the smallest function-field carrier of the two specified independent native points in the successful +7 triple, and its exact specialization solubility condition.",
+  "selection": "Only 0b2d0 and 19e45, the independent pair in the frozen triple relation. Use the retained parameter solely as a rational origin on the auxiliary carrier. This is a retrospective characterization, not an absolute minimality claim over other constructions.",
+  "method": "Use the smooth complete intersection u^2=f(t),v^2=g(t), its free simultaneous-sign involution and genus-one quotient w^2=f(t)g(t). Reconstruct a quartic and its Jacobian from the retained rational conic point. Optionally run PARI ellrank at effort zero with a 64 MiB initial stack, once, to bound this auxiliary Jacobian's rank. A rational product-root point lifts exactly when f(t) is a rational square. The degree-12 triple intersection supplies a stronger sufficient condition whose rational factor must be verified independently.",
+  "limits": {"auxiliary_carriers":1,"workers":1,"seconds_per_worker":60,"pari_stack_bytes":67108864,"ellrank_effort":0,"new_original_parameters_or_point_searches":0},
+  "failure_semantics": "Auxiliary rank failure or timeout leaves rank UNKNOWN; the explicit rational origin already proves carrier solubility. Neither a product square nor carrier Jacobian rank proves independent original-curve points at a prescribed parameter. Minimality refers only to making the specified marked lift maps rational.",
+  "boundary": "An explicit genus-one carrier, a degree-two isogeny lifting obstruction, and a separately certified two-direction specialization. No visibility score or new prospective selector."
+}

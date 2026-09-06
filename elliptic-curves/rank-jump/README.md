@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: a norm-six trace class forces a rational simultaneous lift, with one quotient direction](NORM_SIX_INTERSECTION_FORCES_NATIVE_PAIR_SOLUBILITY.md)
+- [Latest: the minimal marked genus-one carrier and a rational component producing two directions](MINIMAL_CARRIER_AND_RATIONAL_SPLITTING_OF_A_TWO_DIRECTION_BLOCK.md)
+- [A norm-six trace class forces a rational simultaneous lift, with one quotient direction](NORM_SIX_INTERSECTION_FORCES_NATIVE_PAIR_SOLUBILITY.md)
 - [Both soluble quartets have exact quotient rank 3; the +8 pair collapses to one line](PAIRED_SOLUBILITY_AND_SPECIALIZATION_COLLAPSE.md)
 - [A native twist has generic rank at most 7, insufficient for the full observed +8](NATIVE_SINGLE_COVER_CANNOT_EXPLAIN_THE_WHOLE_PLUS8.md)
 - [Successful quartets require genus-17 lifts; no repeated field in the finite atlas](SOLUBLE_QUARTETS_REQUIRE_HIGHER_GENUS_LIFTS.md)
@@ -66,6 +67,8 @@ Retrospective analyses with pinned inputs, independent of the active curve searc
 Replay from the repository root, using Python 3.12 and its standard library:
 
 ```sh
+sage -python elliptic-curves/rank-jump/native_triple_intersection.py check
+sage -python elliptic-curves/rank-jump/verify_native_triple_carrier.py check
 sage -python elliptic-curves/rank-jump/native_pair_collapse_locus.py check
 sage -python elliptic-curves/rank-jump/norm_six_carrier_solubility.py check
 sage -python elliptic-curves/rank-jump/verify_native_intersection_solubility.py check

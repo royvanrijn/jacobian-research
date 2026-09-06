@@ -1,0 +1,43 @@
+{
+  "all_twelve_geometric_lifts_and_relation_verified": true,
+  "auxiliary_Jacobian_exact_rank": 3,
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_minimal_native_block_carrier_inputs_v1.json": "fa80230e4e58ba0f138f52a5dce1f49b273018fa24e07cd923fd231d4c7be97e",
+    "artifacts/generated-results/elliptic-curves/rank_jump_minimal_native_block_carrier_v1.json": "8a9c56f7178da2c6212412151822811aaea913c7f92adc9547f316fb1eaa54f1",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_triple_intersection_inputs_v1.json": "061bfa592f87db5c186e54bc73035505af07e52a74cb2a5f3dc7804fa1a8d017",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_triple_intersection_v1.json": "9457865c87fc7aee8a860798b605353e7215c2fc30217b712367a77de81d7c86",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_native_intersection_solubility.py": "4a1cbcb0223943a6eedf071e723f3b5e6311774c273bebefb89f46eb7ac4d98a",
+    "elliptic-curves/rank-jump/verify_native_triple_carrier.py": "bf2cc0d54e9c0a15b96b4074fd6c4a3272c3521c0412f1f975ea749abecfd81a",
+    "elliptic-curves/rank-jump/verify_paired_quartet_relations.py": "b0de9e0c0990390a5e0af8f752b356ccf7aa99ef1f8503b11d14f6faf06bc648"
+  },
+  "boundary": "Independent exact group arithmetic and modular irreducibility; auxiliary rank uses a replay of the same PARI 2-descent, not a second descent implementation. Minimality is for the specified native maps.",
+  "degree_eleven_irreducible_mod_prime": 73,
+  "factor_degrees": [
+    1,
+    11
+  ],
+  "full_triple_carrier_degree": 8,
+  "full_triple_carrier_genus": 5,
+  "intersection_degree": 12,
+  "isogeny_degree": 2,
+  "isogeny_kernel_polynomial": [
+    "-160237993473315628",
+    "1"
+  ],
+  "marked_pair_carrier_degree": 4,
+  "marked_pair_carrier_genus": 1,
+  "pair_image_square": 16,
+  "pair_image_zero_intersection": 6,
+  "product_quotient_Jacobian_model": [
+    "1",
+    "0",
+    "0",
+    "558656849732250286942051331567381434",
+    "211950546081315636391184180069703331342610342885004900"
+  ],
+  "schema": "rank-jump.native-triple-carrier-verification.v1",
+  "specialized_pair_quotient_rank": 2,
+  "status": "PASS",
+  "unique_rational_intersection_parameter": "-288/65"
+}

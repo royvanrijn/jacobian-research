@@ -1,5 +1,11 @@
 # A norm-six trace class forces simultaneous rational solubility
 
+**Triple follow-up:** the [minimal marked carrier calculation](MINIMAL_CARRIER_AND_RATIONAL_SPLITTING_OF_A_TWO_DIRECTION_BLOCK.md)
+finds genus one for the +7 two-direction basis, but the three-cover relation
+has intersection degree twelve. Its rational component recovers the known
+parameter; the remaining degree-eleven component is irreducible. The
+degree-one hypothesis for that triple is therefore excluded.
+
 There is now a generic geometric explanation for one of the simultaneous
 square events on the +8 fibre. The native trace classes of `0911e` and
 `1795d` admit a norm-six difference after translation. Their corresponding

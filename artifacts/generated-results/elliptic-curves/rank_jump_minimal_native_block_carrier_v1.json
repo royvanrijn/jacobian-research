@@ -1,0 +1,102 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_minimal_native_block_carrier_inputs_v1.json": "fa80230e4e58ba0f138f52a5dce1f49b273018fa24e07cd923fd231d4c7be97e",
+    "elliptic-curves/rank-jump/MINIMAL_NATIVE_BLOCK_CARRIER_PROTOCOL.json": "cb032cd11fb2fdf8e19c0ecf71dd5bdd56292ab1705b9024f47b0f72567b2624",
+    "elliptic-curves/rank-jump/minimal_native_block_carrier.py": "705152e73ff55636c7c79f916e049962919b527a0e689bba63c4dcaec8da1887",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "boundary": "An explicit genus-one carrier, a degree-two isogeny lifting obstruction, and a separately certified two-direction specialization. No visibility score or new prospective selector.",
+  "descent": {
+    "CT_Sha2_mod_2Sha4_dimension": 0,
+    "boundary": "Auxiliary Jacobian only; original specialized rank and point independence are separate.",
+    "full_2_Selmer_dimension": 4,
+    "points": [
+      [
+        "-319684377057680072",
+        "276500000438162160828242986"
+      ],
+      [
+        "395796450013330236",
+        "48053080903719662543637930"
+      ]
+    ],
+    "rank_lower_bound": 3,
+    "rank_upper_bound": 3,
+    "rational_2_torsion_dimension": 1,
+    "raw_ellrank": "[3, 3, 0, [[-319684377057680072, 276500000438162160828242986], [395796450013330236, 48053080903719662543637930]]]"
+  },
+  "execution": {
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  "geometry": {
+    "Jacobian_invariants_I_J": [
+      "57741503247286325704801212183079938760574542806250000",
+      "-21195060380330305873816709962851325637310792014486692741580302316031031250000000"
+    ],
+    "Jacobian_model": [
+      "0",
+      "0",
+      "0",
+      "-1559020587676730794029632728943158346535512655768750000",
+      "572266630268918258593051168996985792207391384391140704022668162532837843750000000"
+    ],
+    "anchor": {
+      "t": "-288/65",
+      "u": "44253/5",
+      "v": "3924473/65"
+    },
+    "carrier_fibre_degree": 4,
+    "carrier_genus": 1,
+    "conic_parameter_denominator": [
+      "-1654807609",
+      "0",
+      "1"
+    ],
+    "conic_parameter_numerator": [
+      "18527920866/5",
+      "-88506/5",
+      "-288/65"
+    ],
+    "conic_root_numerator": [
+      "-73230201121077/5",
+      "-18132432318/5",
+      "-44253/5"
+    ],
+    "forms": [
+      [
+        16496921457,
+        11037654810,
+        1654807609
+      ],
+      [
+        4897771825,
+        2856794060,
+        580965316
+      ]
+    ],
+    "minimal_Jacobian_model": [
+      "1",
+      "0",
+      "0",
+      "-235950017004391353572674922721546566",
+      "33693852184918766381840507850394292045967182353721700"
+    ],
+    "product_quotient_fibre_degree": 2,
+    "product_quotient_genus": 1,
+    "quartic_coefficients": [
+      "69108649002707446942820744404332025",
+      "133283343009091380346991950200",
+      "-63774194048686768999248650",
+      "724047372625454677800",
+      "65071288184655025"
+    ],
+    "quartic_square_scale": "4225",
+    "software": {
+      "pari": "(2, 17, 3)",
+      "sage": "10.9"
+    }
+  },
+  "log": "Carrier geometry complete\nAuxiliary rank 3 3\n",
+  "schema": "rank-jump.minimal-native-block-carrier.v1"
+}

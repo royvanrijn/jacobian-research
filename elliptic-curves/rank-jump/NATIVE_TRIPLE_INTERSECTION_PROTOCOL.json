@@ -1,0 +1,11 @@
+{
+  "schema": "rank-jump.native-triple-intersection-protocol.v1",
+  "layer": "solubility",
+  "question": "Does the known +7 three-cover relation arise from a degree-one intersection, or from rational splitting inside a higher-degree finite intersection scheme?",
+  "selection": "Only the retained relation P_01333-P_0b2d0+P_19e45=S on 08234-003. Its exact generic word comes from the existing relation certificate; cover labels and this word are oracle-selected retrospective data. No other parameters or covers are selected.",
+  "geometry_gate": "The pair carrier for 0b2d0 and 19e45 has genus one and maps birationally to its degree-four sum/difference image in the K3. Generic heights predict intersection degree h(2S+tau_0b2d0-tau_19e45-tau_01333)+2=12, already excluding a degree-one construction. Verify these lattice quantities exactly before eliminating equations.",
+  "method": "Form Q=S+P_0b2d0-P_19e45 over the biquadratic function field. Impose the residual chord and residual x-quadratic of 01333. Eliminate the second root linearly, then the first root via its square equation; retain exact rational root maps and the saturated univariate intersection polynomial. Factor only this fixed polynomial and evaluate only the existing 32 cohort parameters. Independently verify group relations and square equations on each retained factor.",
+  "limits": {"triples":1,"generic_translates":1,"workers":1,"seconds_per_worker":60,"frozen_parameters":32,"new_parameter_or_point_searches":0},
+  "failure_semantics": "Timeout is UNKNOWN, not absence. An affine-open polynomial need not exhaust the proper intersection unless its degree agrees with the independent intersection number and the inverse maps are verified. A rational factor explains this fixed relation's solubility, but oracle selection of S prevents treating it as prospective validation. A nonsquare residual factor is not Sha without a separate global class argument.",
+  "boundary": "Separate the degree-one hypothesis, global rational splitting of a finite scheme, and independently certified quotient dimension two. Full fibre rank remains UNKNOWN."
+}
