@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.carrier-ct-local-witness-protocol.v1",
+  "layer": "solubility",
+  "question": "Replay one nonzero labelled Cassels pairing as an explicit product of local Hilbert symbols.",
+  "selection": "Only pairing entry (3,1) in the already captured five-dimensional Selmer basis. The fixed A,D carrier has coordinates e3, and this entry is nonzero.",
+  "method": "Observe the three quartics, cubic square root, auxiliary quadratic and exact local coordinates used by PARI's Fisher-formula calculation. Add only observational statements to the same pinned source in another isolated executable. Independently verify the cubic square identity, auxiliary quadratic up to rational scalar, local square values and Hilbert symbols.",
+  "limits": {"pairings":1,"compile_seconds":30,"descent_seconds":30,"pari_stack_bytes":67108864,"new_original_parameters_or_point_searches":0},
+  "boundary": "The Selmer-basis identification and complete place support inherit the pinned PARI descent. The local arithmetic and the product are replayed independently; this is not a fresh implementation of the full Selmer or Cassels-pairing algorithms."
+}

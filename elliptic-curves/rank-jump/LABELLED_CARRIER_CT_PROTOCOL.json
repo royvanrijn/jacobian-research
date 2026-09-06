@@ -1,0 +1,11 @@
+{
+  "schema": "rank-jump.labelled-carrier-ct-protocol.v1",
+  "layer": "solubility",
+  "question": "Identify the fixed A,D carrier's Sha class using the labelled Cassels pairing, without recovering its missing rational generator.",
+  "target": "Only complementary_AD: known exact Jacobian rank2, Selmer dimension5, rational2torsion dimension1, CT rank2. Prior rational-basis and scalar-isogeny gates were incomplete.",
+  "method": "Build a separate instrumented copy of the exact PARI 2.17.3 ellrank source. Namespace its exported functions and add observations of the internal curve, Selmer basis and Cassels matrix; do not change arithmetic or the installed runtime. Use the same effort-zero call. Recompute finite split-root characters to identify the retained carrier beta in the labelled full Selmer basis, requiring character rank5. Evaluate its Cassels pairing row. A nonzero row proves Sha; a zero row lies in the rational Kummer subgroup because the already certified Sha[2] dimension equals CT rank2.",
+  "upstream": {"url":"https://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.17.3.tar.gz","archive_sha256":"8d9c4fcd584c468d27e0f23c36836587284452094c4b1c404c20c4b810462dcb","ellrank_c_sha256":"5fb221765979671ffe06cc92d23b4bdc873de6f2032cf9cb812a1cb46633d6cd"},
+  "limits": {"carriers":1,"compile_seconds":30,"descent_seconds":30,"pari_stack_bytes":67108864,"finite_character_prime_bound":503,"new_original_curve_parameters_or_point_searches":0},
+  "reproducibility": "Pin source, observational patch, compiler command and linked runtime. Retain original and instrumented source under the separate local checkpoint directory. Compact proof inputs and output are immutable. The portable verifier need not download or build PARI.",
+  "failure_semantics": "Build failure, wrong rank/dimension, noninjective character map, or ambiguous coordinates leaves the carrier class UNKNOWN. Do not change the prior protocols or reinterpret their failed completeness gates."
+}

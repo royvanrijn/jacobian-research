@@ -1,5 +1,11 @@
 # Global carrier solubility does not select a prescribed specialization
 
+**Follow-up:** the [labelled Cassels–Tate certificate](NATIVE_PAIR_CARRIER_HAS_A_SHA_OBSTRUCTION.md)
+now proves the A,D carrier globally insoluble. Its UNKNOWN classification
+below records the earlier incomplete computations, whose immutable outputs
+are retained. The two positive carrier results and the prescribed-parameter
+distinction remain valid.
+
 The smallest cross-group pair from the completed bisection experiment has
 an **everywhere locally and globally soluble genus-one carrier**, despite
 having no simultaneous split in the 32-fibre sample. Its Jacobian has exact
@@ -115,7 +121,7 @@ field. This is a base-change
 statement with the original marked rank-17 subgroup retained. It is not an
 exact fibre rank, nor does it supply a lift over any particular t.
 
-## Why the third carrier is still unresolved
+## Historical incomplete attempts on the third carrier
 
 The A,D Jacobian's initial exact-rank certificate reports rank two and
 Sha[2] dimension two, but returns only **one** free generator. A separate,

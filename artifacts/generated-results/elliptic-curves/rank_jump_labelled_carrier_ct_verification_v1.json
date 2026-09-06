@@ -1,0 +1,66 @@
+{
+  "Hilbert_product": -1,
+  "Selmer_norm_square_roots": [
+    "110845716159346034142043419655898704099354553348835022609279106642494038140494309037486795643745359359547714473490967291956280934742196512052095062315144817728501865676800",
+    "23511844533143762194031576218620166794720954514647495312542054507401636259895431343439483112820663429933269528018004181911573395169313768035143957307188911662064379213033187989658193920",
+    "3177565549487714348313950875286531039679739687057373933500542443175369501587737822193438939657628451063888577243943617625251727630421462183010878551121555008562099827353282366683837459660800",
+    "86996810770468823090167355517805699861589549937841164360751751576204451876033531773870999100706824714002057705268663102048153600",
+    "49513740138221074315583134321430348352053396533933263114302511303709541017414294963662786490764223973968588564232908800",
+    "253948630806727985572067349097000253624919279235638614275328195274447444507854945415705600"
+  ],
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_carrier_ct_local_witness_v1.json": "b9a0390f85867dcc30d04735f2a875cc7a8e19d5b54ebd50e88261eaf1133d65",
+    "artifacts/generated-results/elliptic-curves/rank_jump_carrier_ct_primality_v1.json": "e29b788909939c94db85ec5139ac7bf376844d84c0cf1c283685ffff098ce349",
+    "artifacts/generated-results/elliptic-curves/rank_jump_labelled_carrier_ct_inputs_v2.json": "8b998abebe7e6dc1c86799c5123187d2ed4844bd51aabcd70f3af4c81c8b4608",
+    "artifacts/generated-results/elliptic-curves/rank_jump_labelled_carrier_ct_v2.json": "0aa6ef81adb9dd3056f3ac9e9c2c34b8970cb1aba96e2655ad381029a8474950",
+    "elliptic-curves/rank-jump/carrier_ct_local_witness.py": "e4bded13e308d2b8db546c5e2a2d707a80473ab11bf07a43e79538614031e9a3",
+    "elliptic-curves/rank-jump/cover_experiment.py": "ebb07b12f71ba1f24675673a2309133011a5f33786c5d26d4d6ecb94f964ed1f",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_labelled_carrier_ct.py": "eb07f5f43c579575cbf7002b362ff137c4b42df50b1c7a8c39aec140ec2254d7"
+  },
+  "carrier_coordinates": [
+    0,
+    0,
+    1,
+    0,
+    0
+  ],
+  "carrier_global_solubility": "NO",
+  "dependency_boundary": "The full Selmer basis and completeness of Fisher place support inherit the pinned PARI computation. Class coordinates, model transport, norms, cubic formula, local evaluations, Hilbert product and primality are replayed arithmetically without that runtime.",
+  "local_formula_quartic_coordinates": [
+    [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0
+    ]
+  ],
+  "negative_symbol_primes": [
+    2
+  ],
+  "nonzero_pairing_row": [
+    1,
+    1,
+    0,
+    0,
+    0
+  ],
+  "primality_certificates_checked": 39,
+  "schema": "rank-jump.labelled-carrier-ct-verification.v1",
+  "status": "PASS"
+}
