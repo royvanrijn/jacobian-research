@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.original-secant-classes-protocol.v1",
+  "question": "Do secants of the original marked generic basis produce shared quadratic classes or rational points preferentially on the retained high-gain fibres?",
+  "cases": [0, 1, 2, 3, 4, 5],
+  "selection": "Every unordered pair of marked generic basis points, with relative sign +1 and -1. No exceptional points, labels, scores or ranks in the computation input.",
+  "construction": "On the original short model F, take the secant L=s*x+h and its x-axis intercept x0=-h/s. Test C=F(x0) for being a rational square; group nonzero C by exact equality in Q*/Q*2.",
+  "limits": {"secants_total": 1504, "seconds_per_case": 30, "fingerprint_primes": [3, 5, 7, 11, 13, 17, 19, 23, 29, 31], "new_parameters": 0},
+  "gate": "A shared nonsquare class is only a candidate common quadratic twist, not proven independent directions. A square C supplies a rational point, not a new quotient direction until independence modulo the original generic subgroup is certified. Degenerate secants are separately recorded.",
+  "boundary": "Retrospective generic-only solubility and class-sharing diagnostic on fixed curves. Does not modify the parent family or any live search, and establishes no absence result outside this finite secant dictionary."
+}
