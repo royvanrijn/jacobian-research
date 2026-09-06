@@ -1,0 +1,4694 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+    "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_v1.json": "2d0295be42144e12a4acc6866faaee73536bc47fb4f11a80ab64b01726d5cff3",
+    "elliptic-curves/rank-jump/SELMER_COMPARISON_PROTOCOL.json": "0239da488a3990209d8d1bb62f385923b387084266dad7a575486117e91cd34f",
+    "elliptic-curves/rank-jump/local_collision.py": "09ab16e69d8113e30a844e7c97dd0e2e48411e662bb3235058e5405ee6182542",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/selmer_comparison.py": "df689a0916eb8b6c9a18d5cd8c9e31245320c92c884691c9e6321c8af8571a4d"
+  },
+  "cases": [
+    {
+      "boundary_completeness_status": "PROVED_BY_RECIPROCITY_AND_LOCAL_DUALITY",
+      "complete_global_boundary_dimension": 4,
+      "full_selmer_dimension_minus_anchor_dimension": -3,
+      "full_selmer_new_ramification_dimension_exact": 0,
+      "global_class_boundary_rows": [
+        92233795135338446848,
+        1482141674242048,
+        92235127743431311360,
+        74766811136000,
+        92235202510242447360,
+        92235127743431311360,
+        0,
+        0,
+        0,
+        1407374904000512,
+        92233795135338446848,
+        92235202510242447360,
+        92235202510242447360,
+        74766811136000,
+        92235127743431311360,
+        92235202510242447360,
+        92235127743431311360,
+        1482141674242048,
+        1482141674242048,
+        74766811136000,
+        202915884655784230912
+      ],
+      "known_selmer_intersection_dimension": 17,
+      "local": [
+        {
+          "L0_basis": [
+            4,
+            8
+          ],
+          "Lu_basis": [
+            4,
+            8
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 7,
+          "boundary_offset": 0,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            4,
+            8
+          ],
+          "local_half_dimension": 0,
+          "place": 2,
+          "sum_basis": [
+            4,
+            8
+          ]
+        },
+        {
+          "L0_basis": [
+            14
+          ],
+          "Lu_basis": [
+            14
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 7,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            14
+          ],
+          "local_half_dimension": 0,
+          "place": 3,
+          "sum_basis": [
+            14
+          ]
+        },
+        {
+          "L0_basis": [
+            8
+          ],
+          "Lu_basis": [
+            8
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 11,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            8
+          ],
+          "local_half_dimension": 0,
+          "place": 5,
+          "sum_basis": [
+            8
+          ]
+        },
+        {
+          "L0_basis": [
+            4
+          ],
+          "Lu_basis": [
+            4
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 15,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            4
+          ],
+          "local_half_dimension": 0,
+          "place": 7,
+          "sum_basis": [
+            4
+          ]
+        },
+        {
+          "L0_basis": [
+            10,
+            39
+          ],
+          "Lu_basis": [
+            5,
+            10
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 6,
+          "boundary_offset": 19,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            39,
+            39,
+            0,
+            0,
+            0,
+            0,
+            39,
+            0,
+            39,
+            39,
+            39,
+            0,
+            39,
+            0,
+            0,
+            0,
+            39,
+            5
+          ],
+          "intersection_basis": [
+            10
+          ],
+          "local_half_dimension": 1,
+          "place": 13,
+          "sum_basis": [
+            5,
+            10,
+            34
+          ]
+        },
+        {
+          "L0_basis": [],
+          "Lu_basis": [],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 2,
+          "boundary_offset": 25,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 0,
+          "place": 17,
+          "sum_basis": []
+        },
+        {
+          "L0_basis": [
+            27,
+            34
+          ],
+          "Lu_basis": [
+            27,
+            34
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 6,
+          "boundary_offset": 27,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            27,
+            34
+          ],
+          "local_half_dimension": 0,
+          "place": 31,
+          "sum_basis": [
+            27,
+            34
+          ]
+        },
+        {
+          "L0_basis": [
+            6
+          ],
+          "Lu_basis": [
+            6
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 33,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            6
+          ],
+          "local_half_dimension": 0,
+          "place": 79,
+          "sum_basis": [
+            6
+          ]
+        },
+        {
+          "L0_basis": [
+            2
+          ],
+          "Lu_basis": [
+            2
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 37,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            2
+          ],
+          "local_half_dimension": 0,
+          "place": 1049,
+          "sum_basis": [
+            2
+          ]
+        },
+        {
+          "L0_basis": [
+            10,
+            34
+          ],
+          "Lu_basis": [
+            5,
+            10
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 6,
+          "boundary_offset": 41,
+          "class_boundary_rows": [
+            34,
+            34,
+            0,
+            34,
+            34,
+            0,
+            0,
+            0,
+            0,
+            0,
+            34,
+            34,
+            34,
+            34,
+            0,
+            34,
+            0,
+            34,
+            34,
+            34,
+            5
+          ],
+          "intersection_basis": [
+            10
+          ],
+          "local_half_dimension": 1,
+          "place": 6807347,
+          "sum_basis": [
+            5,
+            10,
+            34
+          ]
+        },
+        {
+          "L0_basis": [
+            10
+          ],
+          "Lu_basis": [
+            6
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 47,
+          "class_boundary_rows": [
+            0,
+            10,
+            10,
+            0,
+            10,
+            10,
+            0,
+            0,
+            0,
+            10,
+            0,
+            10,
+            10,
+            0,
+            10,
+            10,
+            10,
+            10,
+            10,
+            0,
+            12
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 1,
+          "place": 5070588247,
+          "sum_basis": [
+            6,
+            10
+          ]
+        },
+        {
+          "L0_basis": [
+            8
+          ],
+          "Lu_basis": [
+            8
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 51,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            8
+          ],
+          "local_half_dimension": 0,
+          "place": 71889448247,
+          "sum_basis": [
+            8
+          ]
+        },
+        {
+          "L0_basis": [
+            2
+          ],
+          "Lu_basis": [
+            2
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 55,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            2
+          ],
+          "local_half_dimension": 0,
+          "place": 40200713707633,
+          "sum_basis": [
+            2
+          ]
+        },
+        {
+          "L0_basis": [
+            2
+          ],
+          "Lu_basis": [
+            2
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 59,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            2
+          ],
+          "local_half_dimension": 0,
+          "place": 491007790268548705232623905732119,
+          "sum_basis": [
+            2
+          ]
+        },
+        {
+          "L0_basis": [
+            10,
+            34
+          ],
+          "Lu_basis": [
+            22,
+            40
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 6,
+          "boundary_offset": 63,
+          "class_boundary_rows": [
+            10,
+            0,
+            10,
+            0,
+            10,
+            10,
+            0,
+            0,
+            0,
+            0,
+            10,
+            10,
+            10,
+            0,
+            10,
+            10,
+            10,
+            0,
+            0,
+            0,
+            22
+          ],
+          "intersection_basis": [
+            40
+          ],
+          "local_half_dimension": 1,
+          "place": 2517352081717261588189318068375793,
+          "sum_basis": [
+            10,
+            22,
+            34
+          ]
+        },
+        {
+          "L0_basis": [
+            6
+          ],
+          "Lu_basis": [
+            6
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 3,
+          "boundary_offset": 69,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            6
+          ],
+          "local_half_dimension": 0,
+          "place": "infinity",
+          "sum_basis": [
+            6
+          ]
+        }
+      ],
+      "local_boundary_dimension": 8,
+      "new_global_space_kernel": [
+        7,
+        27,
+        35,
+        64,
+        128,
+        256,
+        522,
+        1025,
+        2059,
+        4107,
+        8200,
+        16387,
+        32779,
+        65539,
+        131074,
+        262146,
+        524296
+      ],
+      "new_selmer_boundary_dimension": 0,
+      "old_global_space_kernel": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048,
+        4096,
+        8192,
+        16384,
+        32768,
+        65536,
+        131072,
+        262144,
+        524288
+      ],
+      "old_selmer_boundary_dimension": 3,
+      "strict_kernel_anchor_masks": [
+        7,
+        27,
+        35,
+        64,
+        128,
+        256,
+        522,
+        1025,
+        2059,
+        4107,
+        8200,
+        16387,
+        32779,
+        65539,
+        131074,
+        262146,
+        524296
+      ],
+      "u": -3,
+      "unknown_excess_dimension": "dim Sel_2(E0/Q) - 20",
+      "unramified_selmer_equals_full_common_selmer": true
+    },
+    {
+      "boundary_completeness_status": "PROVED_BY_RECIPROCITY_AND_LOCAL_DUALITY",
+      "complete_global_boundary_dimension": 8,
+      "full_selmer_dimension_minus_anchor_dimension": -7,
+      "full_selmer_new_ramification_dimension_exact": 0,
+      "global_class_boundary_rows": [
+        5902958106971490746372,
+        5902958103672955863044,
+        5902958191547986739204,
+        5995193234718545936388,
+        5902958191551610617856,
+        5902958103676579741700,
+        5995193319291418050564,
+        5902959602310928400384,
+        5995193322589952933888,
+        5902959514264098832388,
+        3298534883328,
+        92233811631636742144,
+        5902958194850145501184,
+        5995191827254139158532,
+        5902958191551610617860,
+        92233811631636742148,
+        1410762941661184,
+        5902958194850145501184,
+        1495335813775360,
+        5902959514260474953728,
+        7341805935911176765444
+      ],
+      "known_selmer_intersection_dimension": 13,
+      "local": [
+        {
+          "L0_basis": [
+            4,
+            8
+          ],
+          "Lu_basis": [
+            8,
+            34
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 7,
+          "boundary_offset": 0,
+          "class_boundary_rows": [
+            4,
+            4,
+            4,
+            4,
+            0,
+            4,
+            4,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            4,
+            4,
+            4,
+            0,
+            0,
+            0,
+            0,
+            4
+          ],
+          "intersection_basis": [
+            8
+          ],
+          "local_half_dimension": 1,
+          "place": 2,
+          "sum_basis": [
+            4,
+            8,
+            34
+          ]
+        },
+        {
+          "L0_basis": [
+            14
+          ],
+          "Lu_basis": [
+            14
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 7,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            14
+          ],
+          "local_half_dimension": 0,
+          "place": 3,
+          "sum_basis": [
+            14
+          ]
+        },
+        {
+          "L0_basis": [
+            8
+          ],
+          "Lu_basis": [
+            8
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 11,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            8
+          ],
+          "local_half_dimension": 0,
+          "place": 5,
+          "sum_basis": [
+            8
+          ]
+        },
+        {
+          "L0_basis": [
+            4
+          ],
+          "Lu_basis": [
+            4
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 15,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            4
+          ],
+          "local_half_dimension": 0,
+          "place": 7,
+          "sum_basis": [
+            4
+          ]
+        },
+        {
+          "L0_basis": [
+            10,
+            39
+          ],
+          "Lu_basis": [
+            10,
+            39
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 6,
+          "boundary_offset": 19,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            10,
+            39
+          ],
+          "local_half_dimension": 0,
+          "place": 13,
+          "sum_basis": [
+            10,
+            39
+          ]
+        },
+        {
+          "L0_basis": [],
+          "Lu_basis": [],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 2,
+          "boundary_offset": 25,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 0,
+          "place": 17,
+          "sum_basis": []
+        },
+        {
+          "L0_basis": [
+            27,
+            34
+          ],
+          "Lu_basis": [
+            17,
+            34
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 6,
+          "boundary_offset": 27,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            27,
+            27,
+            27,
+            0,
+            27,
+            0,
+            27,
+            0,
+            27,
+            27,
+            0,
+            27,
+            27,
+            27,
+            27,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            34
+          ],
+          "local_half_dimension": 1,
+          "place": 31,
+          "sum_basis": [
+            10,
+            17,
+            34
+          ]
+        },
+        {
+          "L0_basis": [
+            10,
+            34
+          ],
+          "Lu_basis": [
+            30,
+            40
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 6,
+          "boundary_offset": 33,
+          "class_boundary_rows": [
+            10,
+            10,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            0,
+            0,
+            0,
+            20
+          ],
+          "intersection_basis": [
+            40
+          ],
+          "local_half_dimension": 1,
+          "place": 61,
+          "sum_basis": [
+            10,
+            20,
+            34
+          ]
+        },
+        {
+          "L0_basis": [
+            6
+          ],
+          "Lu_basis": [
+            12
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 39,
+          "class_boundary_rows": [
+            6,
+            0,
+            0,
+            6,
+            0,
+            0,
+            0,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            0,
+            6,
+            6,
+            6,
+            0,
+            6,
+            0
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 1,
+          "place": 79,
+          "sum_basis": [
+            6,
+            10
+          ]
+        },
+        {
+          "L0_basis": [
+            10
+          ],
+          "Lu_basis": [
+            12
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 43,
+          "class_boundary_rows": [
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10,
+            10,
+            10,
+            0,
+            0,
+            10,
+            10,
+            0,
+            10,
+            10,
+            0,
+            10,
+            10,
+            0,
+            12
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 1,
+          "place": 463,
+          "sum_basis": [
+            6,
+            10
+          ]
+        },
+        {
+          "L0_basis": [
+            10
+          ],
+          "Lu_basis": [
+            12
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 47,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            10,
+            0,
+            0,
+            10,
+            10,
+            10,
+            10,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            0,
+            10,
+            10,
+            12
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 1,
+          "place": 1033,
+          "sum_basis": [
+            6,
+            10
+          ]
+        },
+        {
+          "L0_basis": [
+            2
+          ],
+          "Lu_basis": [
+            2
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 51,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            2
+          ],
+          "local_half_dimension": 0,
+          "place": 1049,
+          "sum_basis": [
+            2
+          ]
+        },
+        {
+          "L0_basis": [
+            8
+          ],
+          "Lu_basis": [
+            8
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 55,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            8
+          ],
+          "local_half_dimension": 0,
+          "place": 71889448247,
+          "sum_basis": [
+            8
+          ]
+        },
+        {
+          "L0_basis": [
+            2
+          ],
+          "Lu_basis": [
+            2
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 59,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            2
+          ],
+          "local_half_dimension": 0,
+          "place": 40200713707633,
+          "sum_basis": [
+            2
+          ]
+        },
+        {
+          "L0_basis": [
+            10,
+            34
+          ],
+          "Lu_basis": [
+            28,
+            40
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 6,
+          "boundary_offset": 63,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            10,
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            10,
+            0,
+            0,
+            0,
+            0,
+            28
+          ],
+          "intersection_basis": [
+            40
+          ],
+          "local_half_dimension": 1,
+          "place": 88377350996665273,
+          "sum_basis": [
+            10,
+            22,
+            34
+          ]
+        },
+        {
+          "L0_basis": [
+            10
+          ],
+          "Lu_basis": [
+            12
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 69,
+          "class_boundary_rows": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            0,
+            0,
+            10,
+            10,
+            10,
+            0,
+            0,
+            10,
+            0,
+            10,
+            12
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 1,
+          "place": 830763901348107124747241,
+          "sum_basis": [
+            6,
+            10
+          ]
+        },
+        {
+          "L0_basis": [
+            2
+          ],
+          "Lu_basis": [
+            2
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 73,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            2
+          ],
+          "local_half_dimension": 0,
+          "place": 491007790268548705232623905732119,
+          "sum_basis": [
+            2
+          ]
+        },
+        {
+          "L0_basis": [
+            6
+          ],
+          "Lu_basis": [
+            6
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 3,
+          "boundary_offset": 77,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            6
+          ],
+          "local_half_dimension": 0,
+          "place": "infinity",
+          "sum_basis": [
+            6
+          ]
+        }
+      ],
+      "local_boundary_dimension": 16,
+      "new_global_space_kernel": [
+        111,
+        282,
+        688,
+        1027,
+        2207,
+        4115,
+        8377,
+        16422,
+        32937,
+        65714,
+        131091,
+        262293,
+        524452
+      ],
+      "new_selmer_boundary_dimension": 0,
+      "old_global_space_kernel": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048,
+        4096,
+        8192,
+        16384,
+        32768,
+        65536,
+        131072,
+        262144,
+        524288
+      ],
+      "old_selmer_boundary_dimension": 7,
+      "strict_kernel_anchor_masks": [
+        111,
+        282,
+        688,
+        1027,
+        2207,
+        4115,
+        8377,
+        16422,
+        32937,
+        65714,
+        131091,
+        262293,
+        524452
+      ],
+      "u": -2,
+      "unknown_excess_dimension": "dim Sel_2(E0/Q) - 20",
+      "unramified_selmer_equals_full_common_selmer": true
+    },
+    {
+      "boundary_completeness_status": "PROVED_BY_RECIPROCITY_AND_LOCAL_DUALITY",
+      "complete_global_boundary_dimension": 3,
+      "full_selmer_dimension_minus_anchor_dimension": -1,
+      "full_selmer_new_ramification_dimension_exact": 1,
+      "global_class_boundary_rows": [
+        0,
+        1441151882100867072,
+        1441151882100867072,
+        1441151882100867072,
+        1441151882100867072,
+        131072,
+        0,
+        0,
+        1441151882100867072,
+        1441151882100867072,
+        131072,
+        1441151882100867072,
+        1441151882100736000,
+        1441151882100736000,
+        1441151882100867072,
+        1441151882100736000,
+        131072,
+        1441151882100736000,
+        0,
+        131072,
+        864691130334183424
+      ],
+      "known_selmer_intersection_dimension": 19,
+      "local": [
+        {
+          "L0_basis": [
+            4,
+            8
+          ],
+          "Lu_basis": [
+            4,
+            8
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 7,
+          "boundary_offset": 0,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            4,
+            8
+          ],
+          "local_half_dimension": 0,
+          "place": 2,
+          "sum_basis": [
+            4,
+            8
+          ]
+        },
+        {
+          "L0_basis": [
+            14
+          ],
+          "Lu_basis": [
+            14
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 7,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            14
+          ],
+          "local_half_dimension": 0,
+          "place": 3,
+          "sum_basis": [
+            14
+          ]
+        },
+        {
+          "L0_basis": [
+            8
+          ],
+          "Lu_basis": [
+            8
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 11,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            8
+          ],
+          "local_half_dimension": 0,
+          "place": 5,
+          "sum_basis": [
+            8
+          ]
+        },
+        {
+          "L0_basis": [
+            4
+          ],
+          "Lu_basis": [
+            14
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 15,
+          "class_boundary_rows": [
+            0,
+            4,
+            4,
+            4,
+            4,
+            4,
+            0,
+            0,
+            4,
+            4,
+            4,
+            4,
+            0,
+            0,
+            4,
+            0,
+            4,
+            0,
+            0,
+            4,
+            0
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 1,
+          "place": 7,
+          "sum_basis": [
+            4,
+            10
+          ]
+        },
+        {
+          "L0_basis": [
+            10,
+            39
+          ],
+          "Lu_basis": [
+            10,
+            39
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 6,
+          "boundary_offset": 19,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            10,
+            39
+          ],
+          "local_half_dimension": 0,
+          "place": 13,
+          "sum_basis": [
+            10,
+            39
+          ]
+        },
+        {
+          "L0_basis": [],
+          "Lu_basis": [],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 2,
+          "boundary_offset": 25,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 0,
+          "place": 17,
+          "sum_basis": []
+        },
+        {
+          "L0_basis": [
+            10
+          ],
+          "Lu_basis": [
+            14
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 27,
+          "class_boundary_rows": [
+            0,
+            10,
+            10,
+            10,
+            10,
+            0,
+            0,
+            0,
+            10,
+            10,
+            0,
+            10,
+            10,
+            10,
+            10,
+            10,
+            0,
+            10,
+            0,
+            0,
+            14
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 1,
+          "place": 19,
+          "sum_basis": [
+            4,
+            10
+          ]
+        },
+        {
+          "L0_basis": [
+            27,
+            34
+          ],
+          "Lu_basis": [
+            27,
+            34
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 6,
+          "boundary_offset": 31,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            27,
+            34
+          ],
+          "local_half_dimension": 0,
+          "place": 31,
+          "sum_basis": [
+            27,
+            34
+          ]
+        },
+        {
+          "L0_basis": [
+            6
+          ],
+          "Lu_basis": [
+            6
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 37,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            6
+          ],
+          "local_half_dimension": 0,
+          "place": 79,
+          "sum_basis": [
+            6
+          ]
+        },
+        {
+          "L0_basis": [
+            2
+          ],
+          "Lu_basis": [
+            2
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 41,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            2
+          ],
+          "local_half_dimension": 0,
+          "place": 1049,
+          "sum_basis": [
+            2
+          ]
+        },
+        {
+          "L0_basis": [
+            8
+          ],
+          "Lu_basis": [
+            8
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 45,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            8
+          ],
+          "local_half_dimension": 0,
+          "place": 71889448247,
+          "sum_basis": [
+            8
+          ]
+        },
+        {
+          "L0_basis": [
+            2
+          ],
+          "Lu_basis": [
+            2
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 49,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            2
+          ],
+          "local_half_dimension": 0,
+          "place": 40200713707633,
+          "sum_basis": [
+            2
+          ]
+        },
+        {
+          "L0_basis": [
+            2
+          ],
+          "Lu_basis": [
+            2
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 53,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            2
+          ],
+          "local_half_dimension": 0,
+          "place": 491007790268548705232623905732119,
+          "sum_basis": [
+            2
+          ]
+        },
+        {
+          "L0_basis": [
+            10
+          ],
+          "Lu_basis": [
+            6
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 57,
+          "class_boundary_rows": [
+            0,
+            10,
+            10,
+            10,
+            10,
+            0,
+            0,
+            0,
+            10,
+            10,
+            0,
+            10,
+            10,
+            10,
+            10,
+            10,
+            0,
+            10,
+            0,
+            0,
+            6
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 1,
+          "place": 550485889697549509378456967440666703691905279903,
+          "sum_basis": [
+            6,
+            10
+          ]
+        },
+        {
+          "L0_basis": [
+            6
+          ],
+          "Lu_basis": [
+            6
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 3,
+          "boundary_offset": 61,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            6
+          ],
+          "local_half_dimension": 0,
+          "place": "infinity",
+          "sum_basis": [
+            6
+          ]
+        }
+      ],
+      "local_boundary_dimension": 6,
+      "new_global_space_kernel": [
+        1,
+        6,
+        10,
+        18,
+        64,
+        128,
+        258,
+        514,
+        1056,
+        2050,
+        4130,
+        8226,
+        16386,
+        32802,
+        65568,
+        131106,
+        262144,
+        524320,
+        1048576
+      ],
+      "new_selmer_boundary_dimension": 1,
+      "old_global_space_kernel": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048,
+        4096,
+        8192,
+        16384,
+        32768,
+        65536,
+        131072,
+        262144,
+        524288
+      ],
+      "old_selmer_boundary_dimension": 2,
+      "strict_kernel_anchor_masks": [
+        1,
+        6,
+        10,
+        18,
+        64,
+        128,
+        258,
+        514,
+        1056,
+        2050,
+        4130,
+        8226,
+        16386,
+        32802,
+        65568,
+        131106,
+        262144,
+        524320
+      ],
+      "u": -1,
+      "unknown_excess_dimension": "dim Sel_2(E0/Q) - 20",
+      "unramified_selmer_equals_full_common_selmer": true
+    },
+    {
+      "boundary_completeness_status": "PROVED_BY_RECIPROCITY_AND_LOCAL_DUALITY",
+      "complete_global_boundary_dimension": 8,
+      "full_selmer_dimension_minus_anchor_dimension": -7,
+      "full_selmer_new_ramification_dimension_exact": 0,
+      "global_class_boundary_rows": [
+        3541774950409785311232,
+        3910709831879413071872,
+        3541774862152234041344,
+        3541774950345092497408,
+        3910709832081544970240,
+        88192858587140,
+        3910709743630988345348,
+        368934969671612891140,
+        3541774862152234041344,
+        3541774862388725678084,
+        87965493755904,
+        3541774862646423715844,
+        3910709832081544839168,
+        0,
+        368934881963817435140,
+        368934969671612891136,
+        3910709743858353307652,
+        3910709831823846801408,
+        368934969727179030532,
+        3541774862444291817472,
+        3763135940721324851200
+      ],
+      "known_selmer_intersection_dimension": 13,
+      "local": [
+        {
+          "L0_basis": [
+            4,
+            8
+          ],
+          "Lu_basis": [
+            12,
+            119
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 7,
+          "boundary_offset": 0,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            4,
+            4,
+            0,
+            4,
+            0,
+            4,
+            0,
+            0,
+            4,
+            0,
+            4,
+            0,
+            4,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            12
+          ],
+          "local_half_dimension": 1,
+          "place": 2,
+          "sum_basis": [
+            4,
+            8,
+            115
+          ]
+        },
+        {
+          "L0_basis": [
+            14
+          ],
+          "Lu_basis": [
+            14
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 7,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            14
+          ],
+          "local_half_dimension": 0,
+          "place": 3,
+          "sum_basis": [
+            14
+          ]
+        },
+        {
+          "L0_basis": [
+            8
+          ],
+          "Lu_basis": [
+            8
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 11,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            8
+          ],
+          "local_half_dimension": 0,
+          "place": 5,
+          "sum_basis": [
+            8
+          ]
+        },
+        {
+          "L0_basis": [
+            4
+          ],
+          "Lu_basis": [
+            14
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 15,
+          "class_boundary_rows": [
+            0,
+            4,
+            4,
+            4,
+            4,
+            4,
+            0,
+            0,
+            4,
+            4,
+            4,
+            4,
+            0,
+            0,
+            4,
+            0,
+            4,
+            0,
+            0,
+            4,
+            0
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 1,
+          "place": 7,
+          "sum_basis": [
+            4,
+            10
+          ]
+        },
+        {
+          "L0_basis": [
+            10,
+            39
+          ],
+          "Lu_basis": [
+            10,
+            39
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 6,
+          "boundary_offset": 19,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            10,
+            39
+          ],
+          "local_half_dimension": 0,
+          "place": 13,
+          "sum_basis": [
+            10,
+            39
+          ]
+        },
+        {
+          "L0_basis": [],
+          "Lu_basis": [],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 2,
+          "boundary_offset": 25,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 0,
+          "place": 17,
+          "sum_basis": []
+        },
+        {
+          "L0_basis": [
+            10,
+            34
+          ],
+          "Lu_basis": [
+            7,
+            10
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 6,
+          "boundary_offset": 27,
+          "class_boundary_rows": [
+            34,
+            0,
+            0,
+            0,
+            34,
+            0,
+            34,
+            34,
+            0,
+            34,
+            34,
+            34,
+            34,
+            0,
+            0,
+            34,
+            0,
+            34,
+            0,
+            0,
+            37
+          ],
+          "intersection_basis": [
+            10
+          ],
+          "local_half_dimension": 1,
+          "place": 23,
+          "sum_basis": [
+            7,
+            10,
+            34
+          ]
+        },
+        {
+          "L0_basis": [
+            27,
+            34
+          ],
+          "Lu_basis": [
+            28,
+            47
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 6,
+          "boundary_offset": 33,
+          "class_boundary_rows": [
+            34,
+            34,
+            0,
+            27,
+            57,
+            27,
+            0,
+            27,
+            0,
+            27,
+            0,
+            57,
+            57,
+            0,
+            57,
+            27,
+            27,
+            27,
+            34,
+            34,
+            17
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 2,
+          "place": 31,
+          "sum_basis": [
+            7,
+            10,
+            17,
+            34
+          ]
+        },
+        {
+          "L0_basis": [
+            6
+          ],
+          "Lu_basis": [
+            6
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 39,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            6
+          ],
+          "local_half_dimension": 0,
+          "place": 79,
+          "sum_basis": [
+            6
+          ]
+        },
+        {
+          "L0_basis": [
+            10,
+            34
+          ],
+          "Lu_basis": [
+            27,
+            34
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 6,
+          "boundary_offset": 43,
+          "class_boundary_rows": [
+            10,
+            10,
+            0,
+            10,
+            10,
+            10,
+            0,
+            10,
+            0,
+            0,
+            10,
+            0,
+            10,
+            0,
+            0,
+            10,
+            0,
+            10,
+            10,
+            0,
+            17
+          ],
+          "intersection_basis": [
+            34
+          ],
+          "local_half_dimension": 1,
+          "place": 103,
+          "sum_basis": [
+            10,
+            17,
+            34
+          ]
+        },
+        {
+          "L0_basis": [
+            2
+          ],
+          "Lu_basis": [
+            2
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 49,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            2
+          ],
+          "local_half_dimension": 0,
+          "place": 1049,
+          "sum_basis": [
+            2
+          ]
+        },
+        {
+          "L0_basis": [
+            8
+          ],
+          "Lu_basis": [
+            8
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 53,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            8
+          ],
+          "local_half_dimension": 0,
+          "place": 71889448247,
+          "sum_basis": [
+            8
+          ]
+        },
+        {
+          "L0_basis": [
+            2
+          ],
+          "Lu_basis": [
+            2
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 57,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            2
+          ],
+          "local_half_dimension": 0,
+          "place": 40200713707633,
+          "sum_basis": [
+            2
+          ]
+        },
+        {
+          "L0_basis": [
+            2
+          ],
+          "Lu_basis": [
+            2
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 61,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            2
+          ],
+          "local_half_dimension": 0,
+          "place": 491007790268548705232623905732119,
+          "sum_basis": [
+            2
+          ]
+        },
+        {
+          "L0_basis": [
+            10
+          ],
+          "Lu_basis": [
+            12
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 65,
+          "class_boundary_rows": [
+            0,
+            10,
+            0,
+            0,
+            10,
+            0,
+            10,
+            10,
+            0,
+            0,
+            0,
+            0,
+            10,
+            0,
+            10,
+            10,
+            10,
+            10,
+            10,
+            0,
+            6
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 1,
+          "place": 735074448304715650993556022553346486326391,
+          "sum_basis": [
+            6,
+            10
+          ]
+        },
+        {
+          "L0_basis": [
+            6
+          ],
+          "Lu_basis": [
+            5
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 3,
+          "boundary_offset": 69,
+          "class_boundary_rows": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            0,
+            6,
+            0,
+            6,
+            6,
+            0,
+            6,
+            6,
+            0,
+            0,
+            0,
+            6,
+            6,
+            0,
+            6,
+            6
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 1,
+          "place": "infinity",
+          "sum_basis": [
+            3,
+            5
+          ]
+        }
+      ],
+      "local_boundary_dimension": 16,
+      "new_global_space_kernel": [
+        163,
+        260,
+        593,
+        1141,
+        2081,
+        4219,
+        8192,
+        16422,
+        32868,
+        65593,
+        131083,
+        262209,
+        524404
+      ],
+      "new_selmer_boundary_dimension": 0,
+      "old_global_space_kernel": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048,
+        4096,
+        8192,
+        16384,
+        32768,
+        65536,
+        131072,
+        262144,
+        524288
+      ],
+      "old_selmer_boundary_dimension": 7,
+      "strict_kernel_anchor_masks": [
+        163,
+        260,
+        593,
+        1141,
+        2081,
+        4219,
+        8192,
+        16422,
+        32868,
+        65593,
+        131083,
+        262209,
+        524404
+      ],
+      "u": 1,
+      "unknown_excess_dimension": "dim Sel_2(E0/Q) - 20",
+      "unramified_selmer_equals_full_common_selmer": true
+    },
+    {
+      "boundary_completeness_status": "PROVED_BY_RECIPROCITY_AND_LOCAL_DUALITY",
+      "complete_global_boundary_dimension": 8,
+      "full_selmer_dimension_minus_anchor_dimension": -6,
+      "full_selmer_new_ramification_dimension_exact": 1,
+      "global_class_boundary_rows": [
+        56668397794435742564352,
+        57037332763870863949824,
+        57060391106002070667264,
+        56668397794439387021312,
+        57037332763874508275712,
+        368934882852204576768,
+        56691456225902269038592,
+        368934969438745133056,
+        57037332677284323262464,
+        57037332677287967588352,
+        368934882848580698112,
+        56668397794439387021312,
+        57037332677287967457280,
+        368934969435141701632,
+        23058518056691171328,
+        368934882852224892928,
+        57060391106005694545920,
+        56691456312492433604608,
+        391993400901647728640,
+        57037332763870884397056,
+        56843642041806622949376
+      ],
+      "known_selmer_intersection_dimension": 14,
+      "local": [
+        {
+          "L0_basis": [
+            4,
+            8
+          ],
+          "Lu_basis": [
+            4,
+            8
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 7,
+          "boundary_offset": 0,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            4,
+            8
+          ],
+          "local_half_dimension": 0,
+          "place": 2,
+          "sum_basis": [
+            4,
+            8
+          ]
+        },
+        {
+          "L0_basis": [
+            14
+          ],
+          "Lu_basis": [
+            14
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 7,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            14
+          ],
+          "local_half_dimension": 0,
+          "place": 3,
+          "sum_basis": [
+            14
+          ]
+        },
+        {
+          "L0_basis": [
+            8
+          ],
+          "Lu_basis": [
+            8
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 11,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            8
+          ],
+          "local_half_dimension": 0,
+          "place": 5,
+          "sum_basis": [
+            8
+          ]
+        },
+        {
+          "L0_basis": [
+            4
+          ],
+          "Lu_basis": [
+            10
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 15,
+          "class_boundary_rows": [
+            0,
+            4,
+            4,
+            4,
+            4,
+            4,
+            0,
+            0,
+            4,
+            4,
+            4,
+            4,
+            0,
+            0,
+            4,
+            0,
+            4,
+            0,
+            0,
+            4,
+            4
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 1,
+          "place": 7,
+          "sum_basis": [
+            4,
+            10
+          ]
+        },
+        {
+          "L0_basis": [
+            10,
+            39
+          ],
+          "Lu_basis": [
+            5,
+            10
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 6,
+          "boundary_offset": 19,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            39,
+            39,
+            0,
+            0,
+            0,
+            0,
+            39,
+            0,
+            39,
+            39,
+            39,
+            0,
+            39,
+            0,
+            0,
+            0,
+            39,
+            0
+          ],
+          "intersection_basis": [
+            10
+          ],
+          "local_half_dimension": 1,
+          "place": 13,
+          "sum_basis": [
+            5,
+            10,
+            34
+          ]
+        },
+        {
+          "L0_basis": [],
+          "Lu_basis": [],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 2,
+          "boundary_offset": 25,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 0,
+          "place": 17,
+          "sum_basis": []
+        },
+        {
+          "L0_basis": [
+            27,
+            34
+          ],
+          "Lu_basis": [
+            17,
+            34
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 6,
+          "boundary_offset": 27,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            27,
+            27,
+            27,
+            0,
+            27,
+            0,
+            27,
+            0,
+            27,
+            27,
+            0,
+            27,
+            27,
+            27,
+            27,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            34
+          ],
+          "local_half_dimension": 1,
+          "place": 31,
+          "sum_basis": [
+            10,
+            17,
+            34
+          ]
+        },
+        {
+          "L0_basis": [
+            6
+          ],
+          "Lu_basis": [
+            6
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 33,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            6
+          ],
+          "local_half_dimension": 0,
+          "place": 79,
+          "sum_basis": [
+            6
+          ]
+        },
+        {
+          "L0_basis": [
+            10,
+            34
+          ],
+          "Lu_basis": [
+            20,
+            40
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 6,
+          "boundary_offset": 37,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            10,
+            0,
+            10,
+            10,
+            10,
+            0,
+            10,
+            0,
+            0,
+            10,
+            0,
+            0,
+            10,
+            0,
+            20
+          ],
+          "intersection_basis": [
+            40
+          ],
+          "local_half_dimension": 1,
+          "place": 233,
+          "sum_basis": [
+            10,
+            20,
+            34
+          ]
+        },
+        {
+          "L0_basis": [
+            10,
+            34
+          ],
+          "Lu_basis": [
+            30,
+            40
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 6,
+          "boundary_offset": 43,
+          "class_boundary_rows": [
+            0,
+            10,
+            0,
+            0,
+            10,
+            0,
+            0,
+            10,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            10,
+            0,
+            0,
+            10,
+            10,
+            10,
+            20
+          ],
+          "intersection_basis": [
+            40
+          ],
+          "local_half_dimension": 1,
+          "place": 647,
+          "sum_basis": [
+            10,
+            20,
+            34
+          ]
+        },
+        {
+          "L0_basis": [
+            2
+          ],
+          "Lu_basis": [
+            2
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 49,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            2
+          ],
+          "local_half_dimension": 0,
+          "place": 1049,
+          "sum_basis": [
+            2
+          ]
+        },
+        {
+          "L0_basis": [
+            8
+          ],
+          "Lu_basis": [
+            8
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 53,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            8
+          ],
+          "local_half_dimension": 0,
+          "place": 71889448247,
+          "sum_basis": [
+            8
+          ]
+        },
+        {
+          "L0_basis": [
+            2
+          ],
+          "Lu_basis": [
+            2
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 57,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            2
+          ],
+          "local_half_dimension": 0,
+          "place": 40200713707633,
+          "sum_basis": [
+            2
+          ]
+        },
+        {
+          "L0_basis": [
+            10
+          ],
+          "Lu_basis": [
+            6
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 61,
+          "class_boundary_rows": [
+            0,
+            0,
+            10,
+            0,
+            0,
+            0,
+            10,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            0,
+            10,
+            10,
+            10,
+            0,
+            12
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 1,
+          "place": 26558335042564254253,
+          "sum_basis": [
+            6,
+            10
+          ]
+        },
+        {
+          "L0_basis": [
+            10
+          ],
+          "Lu_basis": [
+            4
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 65,
+          "class_boundary_rows": [
+            0,
+            10,
+            10,
+            0,
+            10,
+            10,
+            0,
+            10,
+            10,
+            10,
+            10,
+            0,
+            10,
+            10,
+            0,
+            10,
+            10,
+            0,
+            10,
+            10,
+            4
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 1,
+          "place": 47769497729370851316266401,
+          "sum_basis": [
+            4,
+            10
+          ]
+        },
+        {
+          "L0_basis": [
+            2
+          ],
+          "Lu_basis": [
+            2
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 69,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            2
+          ],
+          "local_half_dimension": 0,
+          "place": 491007790268548705232623905732119,
+          "sum_basis": [
+            2
+          ]
+        },
+        {
+          "L0_basis": [
+            6
+          ],
+          "Lu_basis": [
+            5
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 3,
+          "boundary_offset": 73,
+          "class_boundary_rows": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            0,
+            6,
+            0,
+            6,
+            6,
+            0,
+            6,
+            6,
+            0,
+            0,
+            0,
+            6,
+            6,
+            0,
+            6,
+            6
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 1,
+          "place": "infinity",
+          "sum_basis": [
+            3,
+            5
+          ]
+        }
+      ],
+      "local_boundary_dimension": 16,
+      "new_global_space_kernel": [
+        252,
+        325,
+        599,
+        1092,
+        2056,
+        4172,
+        8302,
+        16505,
+        32845,
+        65632,
+        131171,
+        262233,
+        524404,
+        1048604
+      ],
+      "new_selmer_boundary_dimension": 1,
+      "old_global_space_kernel": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048,
+        4096,
+        8192,
+        16384,
+        32768,
+        65536,
+        131072,
+        262144,
+        524288
+      ],
+      "old_selmer_boundary_dimension": 7,
+      "strict_kernel_anchor_masks": [
+        252,
+        325,
+        599,
+        1092,
+        2056,
+        4172,
+        8302,
+        16505,
+        32845,
+        65632,
+        131171,
+        262233,
+        524404
+      ],
+      "u": 2,
+      "unknown_excess_dimension": "dim Sel_2(E0/Q) - 20",
+      "unramified_selmer_equals_full_common_selmer": true
+    },
+    {
+      "boundary_completeness_status": "PROVED_BY_RECIPROCITY_AND_LOCAL_DUALITY",
+      "complete_global_boundary_dimension": 6,
+      "full_selmer_dimension_minus_anchor_dimension": -4,
+      "full_selmer_new_ramification_dimension_exact": 1,
+      "global_class_boundary_rows": [
+        61104839745505083392,
+        61104839745505067008,
+        61104839745505067008,
+        61104839977453748224,
+        61104839977453764608,
+        5764607756304646144,
+        55340232221128671232,
+        5764607756304646144,
+        55340232221128654848,
+        55340232453077352448,
+        16384,
+        61104839977453764608,
+        55340232453077336064,
+        20447232,
+        5764607756304662528,
+        5764607756325109760,
+        55340232453056905216,
+        61104839977433317376,
+        0,
+        55340232221149102080,
+        62257761251319889920
+      ],
+      "known_selmer_intersection_dimension": 16,
+      "local": [
+        {
+          "L0_basis": [
+            4,
+            8
+          ],
+          "Lu_basis": [
+            4,
+            8
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 7,
+          "boundary_offset": 0,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            4,
+            8
+          ],
+          "local_half_dimension": 0,
+          "place": 2,
+          "sum_basis": [
+            4,
+            8
+          ]
+        },
+        {
+          "L0_basis": [
+            14
+          ],
+          "Lu_basis": [
+            14
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 7,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            14
+          ],
+          "local_half_dimension": 0,
+          "place": 3,
+          "sum_basis": [
+            14
+          ]
+        },
+        {
+          "L0_basis": [
+            8
+          ],
+          "Lu_basis": [
+            15
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 11,
+          "class_boundary_rows": [
+            8,
+            0,
+            0,
+            0,
+            8,
+            0,
+            8,
+            0,
+            0,
+            8,
+            8,
+            8,
+            0,
+            0,
+            8,
+            8,
+            8,
+            8,
+            0,
+            0,
+            8
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 1,
+          "place": 5,
+          "sum_basis": [
+            7,
+            8
+          ]
+        },
+        {
+          "L0_basis": [
+            4
+          ],
+          "Lu_basis": [
+            4
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 15,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            4
+          ],
+          "local_half_dimension": 0,
+          "place": 7,
+          "sum_basis": [
+            4
+          ]
+        },
+        {
+          "L0_basis": [
+            10,
+            39
+          ],
+          "Lu_basis": [
+            5,
+            10
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 6,
+          "boundary_offset": 19,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            39,
+            39,
+            0,
+            0,
+            0,
+            0,
+            39,
+            0,
+            39,
+            39,
+            39,
+            0,
+            39,
+            0,
+            0,
+            0,
+            39,
+            0
+          ],
+          "intersection_basis": [
+            10
+          ],
+          "local_half_dimension": 1,
+          "place": 13,
+          "sum_basis": [
+            5,
+            10,
+            34
+          ]
+        },
+        {
+          "L0_basis": [],
+          "Lu_basis": [],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 2,
+          "boundary_offset": 25,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 0,
+          "place": 17,
+          "sum_basis": []
+        },
+        {
+          "L0_basis": [
+            10,
+            34
+          ],
+          "Lu_basis": [
+            25,
+            34
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 6,
+          "boundary_offset": 27,
+          "class_boundary_rows": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            0,
+            10,
+            0,
+            0,
+            0,
+            10,
+            0,
+            0,
+            10,
+            10,
+            0,
+            10,
+            0,
+            0,
+            19
+          ],
+          "intersection_basis": [
+            34
+          ],
+          "local_half_dimension": 1,
+          "place": 23,
+          "sum_basis": [
+            10,
+            19,
+            34
+          ]
+        },
+        {
+          "L0_basis": [
+            27,
+            34
+          ],
+          "Lu_basis": [
+            17,
+            34
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 6,
+          "boundary_offset": 33,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            27,
+            27,
+            27,
+            0,
+            27,
+            0,
+            27,
+            0,
+            27,
+            27,
+            0,
+            27,
+            27,
+            27,
+            27,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            34
+          ],
+          "local_half_dimension": 1,
+          "place": 31,
+          "sum_basis": [
+            10,
+            17,
+            34
+          ]
+        },
+        {
+          "L0_basis": [
+            6
+          ],
+          "Lu_basis": [
+            6
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 39,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            6
+          ],
+          "local_half_dimension": 0,
+          "place": 79,
+          "sum_basis": [
+            6
+          ]
+        },
+        {
+          "L0_basis": [
+            2
+          ],
+          "Lu_basis": [
+            2
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 43,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            2
+          ],
+          "local_half_dimension": 0,
+          "place": 1049,
+          "sum_basis": [
+            2
+          ]
+        },
+        {
+          "L0_basis": [
+            8
+          ],
+          "Lu_basis": [
+            8
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 47,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            8
+          ],
+          "local_half_dimension": 0,
+          "place": 71889448247,
+          "sum_basis": [
+            8
+          ]
+        },
+        {
+          "L0_basis": [
+            2
+          ],
+          "Lu_basis": [
+            2
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 51,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            2
+          ],
+          "local_half_dimension": 0,
+          "place": 40200713707633,
+          "sum_basis": [
+            2
+          ]
+        },
+        {
+          "L0_basis": [
+            2
+          ],
+          "Lu_basis": [
+            2
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 55,
+          "class_boundary_rows": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_basis": [
+            2
+          ],
+          "local_half_dimension": 0,
+          "place": 491007790268548705232623905732119,
+          "sum_basis": [
+            2
+          ]
+        },
+        {
+          "L0_basis": [
+            10
+          ],
+          "Lu_basis": [
+            6
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 4,
+          "boundary_offset": 59,
+          "class_boundary_rows": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            0,
+            10,
+            0,
+            0,
+            0,
+            10,
+            0,
+            0,
+            10,
+            10,
+            0,
+            10,
+            0,
+            0,
+            12
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 1,
+          "place": 39152515169537888943496957771480362731024381,
+          "sum_basis": [
+            6,
+            10
+          ]
+        },
+        {
+          "L0_basis": [
+            6
+          ],
+          "Lu_basis": [
+            5
+          ],
+          "all_21_classes_in_local_sum": true,
+          "ambient_signature_width": 3,
+          "boundary_offset": 63,
+          "class_boundary_rows": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            0,
+            6,
+            0,
+            6,
+            6,
+            0,
+            6,
+            6,
+            0,
+            0,
+            0,
+            6,
+            6,
+            0,
+            6,
+            6
+          ],
+          "intersection_basis": [],
+          "local_half_dimension": 1,
+          "place": "infinity",
+          "sum_basis": [
+            3,
+            5
+          ]
+        }
+      ],
+      "local_boundary_dimension": 12,
+      "new_global_space_kernel": [
+        6,
+        27,
+        160,
+        323,
+        586,
+        1027,
+        2059,
+        4169,
+        8299,
+        16419,
+        32840,
+        65569,
+        131168,
+        262144,
+        524328,
+        1048577
+      ],
+      "new_selmer_boundary_dimension": 1,
+      "old_global_space_kernel": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048,
+        4096,
+        8192,
+        16384,
+        32768,
+        65536,
+        131072,
+        262144,
+        524288
+      ],
+      "old_selmer_boundary_dimension": 5,
+      "strict_kernel_anchor_masks": [
+        6,
+        27,
+        160,
+        323,
+        586,
+        1027,
+        2059,
+        4169,
+        8299,
+        16419,
+        32840,
+        65569,
+        131168,
+        262144,
+        524328
+      ],
+      "u": 3,
+      "unknown_excess_dimension": "dim Sel_2(E0/Q) - 20",
+      "unramified_selmer_equals_full_common_selmer": true
+    }
+  ],
+  "schema": "rank-jump.selmer-comparison.v1",
+  "scope": "Exact relative dimensions of full Selmer groups. Their absolute excess above the retained subspaces is the same unknown anchor excess. No absolute Selmer dimension or unconditional numerical curve-rank upper bound is claimed."
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "rank-jump.selmer-comparison-protocol.v1",
+  "question": "Do the inherited classes and the transporter exhaust the global image in the strict/relaxed local-condition quotient, without determining the anchor Selmer group?",
+  "layer": "incidence",
+  "parameters": [-3, -2, -1, 1, 2, 3],
+  "prior_diagnostic": "Existing local signatures show that anchor classes span each anchor local point image and eta belongs locally to the sum of the two point images. This is a retrospective theorem verification, not a blind prediction.",
+  "limits": {"new_parameters": 0, "class_groups": 0, "point_searches": 0, "new_local_arithmetic": 0, "maximum_wall_seconds": 30},
+  "checks": [
+    "Certify the anchor local point image by containment of global anchor points and equality with the independently known local dimension.",
+    "Form each local intersection C=L0 intersect Lu and sum D=L0+Lu, including the real place.",
+    "Verify eta lies in every D, and form the direct-sum boundary of all 21 global classes modulo C.",
+    "Require the global boundary rank to equal half the local quotient dimension; reciprocity and local duality then prove completeness of this boundary.",
+    "Compute intersections with both local point structures and derive only relative full Selmer dimensions and exact new-prime ramification dimensions."
+  ],
+  "failure_semantics": "If the boundary does not reach half dimension, full boundary completeness remains UNKNOWN. The anchor Selmer dimension and all absolute curve-rank upper bounds remain UNKNOWN."
+}

@@ -1,5 +1,10 @@
 # A full-Selmer ramification block and its remaining solubility gap
 
+Follow-up: [the relative full-Selmer theorem](RELATIVE_FULL_SELMER_THEOREM.md)
+now resolves the three unknown ramification dimensions below as zero and
+identifies one common unknown Selmer quotient. This note retains the earlier
+bound and the two still-unresolved cover tests.
+
 The six fixed-cubic controls have a common exact incidence constraint:
 **every 2-Selmer class ramifies at all newly bad primes together, or at none.**
 This applies to the full Selmer group, including classes outside the inherited

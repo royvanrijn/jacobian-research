@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: full-Selmer ramification block and two unresolved affine covers](FULL_SELMER_RAMIFICATION_BLOCK.md)
+- [Latest: exact relative full-Selmer dimensions and a common unknown quotient](RELATIVE_FULL_SELMER_THEOREM.md)
+- [Full-Selmer ramification block and two unresolved affine covers](FULL_SELMER_RAMIFICATION_BLOCK.md)
 - [New affine Selmer classes and their CT obstructions](AFFINE_SELMER_AND_CT.md)
 - [An explicit soluble block and a genus-two splitting event](LINEAR_TWIST_SOLUBLE_BLOCKS.md)
 - [Shared quadrics and distinct ruling base changes](SHARED_QUADRICS_AND_RULINGS.md)
@@ -41,6 +42,7 @@ python3 elliptic-curves/rank-jump/affine_selmer.py check
 python3 elliptic-curves/rank-jump/affine_selmer_analysis.py check
 python3 elliptic-curves/rank-jump/ramification_block.py check
 python3 elliptic-curves/rank-jump/u2_affine_radical.py check
+python3 elliptic-curves/rank-jump/selmer_comparison.py check
 ```
 
 Optional independent Hilbert-symbol check: `sage -python -m unittest discover -s elliptic-curves/rank-jump -p test_local_collision.py`.
