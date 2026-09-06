@@ -1,0 +1,1108 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_parameter_cover_capacity_inputs_v1.json": "2f3f4c6e8052e0f9aa0e8189781ddf033b50d30993c9c6353ed1deaaeb1262c9",
+    "elliptic-curves/rank-jump/PARAMETER_COVER_CAPACITY_PROTOCOL.json": "bc4b56052e1cfa85465ea8d63001c4d2cc844a4c17549200ac956e8e12832d20",
+    "elliptic-curves/rank-jump/parameter_cover_capacity.py": "0dbc20cf29020ac8ed30a638d37aee8f3d6eb4f24266433f2c2eb3c02fa1e458"
+  },
+  "boundary": "Geometric generic rank upper bounds for specified quadratic twists. No new section, original-fibre rank bound, rationality or specialization-independence certificate.",
+  "capacity_table": [
+    {
+      "base_curve_genus": 0,
+      "branch_points": 2,
+      "family": "R17",
+      "multiplicative_branch_points": 0,
+      "original_generic_rank": 17,
+      "pullback_geometric_rank_upper_bound": 37,
+      "root_rank": 0,
+      "twist_chi": 3,
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "base_curve_genus": 0,
+      "branch_points": 2,
+      "family": "R17",
+      "multiplicative_branch_points": 1,
+      "original_generic_rank": 17,
+      "pullback_geometric_rank_upper_bound": 36,
+      "root_rank": 0,
+      "twist_chi": 3,
+      "twist_geometric_MW_rank_upper_bound": 19,
+      "twist_h11": 30,
+      "twist_root_rank": 9
+    },
+    {
+      "base_curve_genus": 0,
+      "branch_points": 2,
+      "family": "R17",
+      "multiplicative_branch_points": 2,
+      "original_generic_rank": 17,
+      "pullback_geometric_rank_upper_bound": 35,
+      "root_rank": 0,
+      "twist_chi": 3,
+      "twist_geometric_MW_rank_upper_bound": 18,
+      "twist_h11": 30,
+      "twist_root_rank": 10
+    },
+    {
+      "base_curve_genus": 1,
+      "branch_points": 4,
+      "family": "R17",
+      "multiplicative_branch_points": 0,
+      "original_generic_rank": 17,
+      "pullback_geometric_rank_upper_bound": 39,
+      "root_rank": 0,
+      "twist_chi": 4,
+      "twist_geometric_MW_rank_upper_bound": 22,
+      "twist_h11": 40,
+      "twist_root_rank": 16
+    },
+    {
+      "base_curve_genus": 1,
+      "branch_points": 4,
+      "family": "R17",
+      "multiplicative_branch_points": 1,
+      "original_generic_rank": 17,
+      "pullback_geometric_rank_upper_bound": 38,
+      "root_rank": 0,
+      "twist_chi": 4,
+      "twist_geometric_MW_rank_upper_bound": 21,
+      "twist_h11": 40,
+      "twist_root_rank": 17
+    },
+    {
+      "base_curve_genus": 1,
+      "branch_points": 4,
+      "family": "R17",
+      "multiplicative_branch_points": 2,
+      "original_generic_rank": 17,
+      "pullback_geometric_rank_upper_bound": 37,
+      "root_rank": 0,
+      "twist_chi": 4,
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 40,
+      "twist_root_rank": 18
+    },
+    {
+      "base_curve_genus": 1,
+      "branch_points": 4,
+      "family": "R17",
+      "multiplicative_branch_points": 3,
+      "original_generic_rank": 17,
+      "pullback_geometric_rank_upper_bound": 36,
+      "root_rank": 0,
+      "twist_chi": 4,
+      "twist_geometric_MW_rank_upper_bound": 19,
+      "twist_h11": 40,
+      "twist_root_rank": 19
+    },
+    {
+      "base_curve_genus": 1,
+      "branch_points": 4,
+      "family": "R17",
+      "multiplicative_branch_points": 4,
+      "original_generic_rank": 17,
+      "pullback_geometric_rank_upper_bound": 35,
+      "root_rank": 0,
+      "twist_chi": 4,
+      "twist_geometric_MW_rank_upper_bound": 18,
+      "twist_h11": 40,
+      "twist_root_rank": 20
+    },
+    {
+      "base_curve_genus": 0,
+      "branch_points": 2,
+      "family": "A1_MW16",
+      "multiplicative_branch_points": 0,
+      "original_generic_rank": 16,
+      "pullback_geometric_rank_upper_bound": 35,
+      "root_rank": 1,
+      "twist_chi": 3,
+      "twist_geometric_MW_rank_upper_bound": 19,
+      "twist_h11": 30,
+      "twist_root_rank": 9
+    },
+    {
+      "base_curve_genus": 0,
+      "branch_points": 2,
+      "family": "A1_MW16",
+      "multiplicative_branch_points": 1,
+      "original_generic_rank": 16,
+      "pullback_geometric_rank_upper_bound": 34,
+      "root_rank": 1,
+      "twist_chi": 3,
+      "twist_geometric_MW_rank_upper_bound": 18,
+      "twist_h11": 30,
+      "twist_root_rank": 10
+    },
+    {
+      "base_curve_genus": 0,
+      "branch_points": 2,
+      "family": "A1_MW16",
+      "multiplicative_branch_points": 2,
+      "original_generic_rank": 16,
+      "pullback_geometric_rank_upper_bound": 33,
+      "root_rank": 1,
+      "twist_chi": 3,
+      "twist_geometric_MW_rank_upper_bound": 17,
+      "twist_h11": 30,
+      "twist_root_rank": 11
+    },
+    {
+      "base_curve_genus": 1,
+      "branch_points": 4,
+      "family": "A1_MW16",
+      "multiplicative_branch_points": 0,
+      "original_generic_rank": 16,
+      "pullback_geometric_rank_upper_bound": 37,
+      "root_rank": 1,
+      "twist_chi": 4,
+      "twist_geometric_MW_rank_upper_bound": 21,
+      "twist_h11": 40,
+      "twist_root_rank": 17
+    },
+    {
+      "base_curve_genus": 1,
+      "branch_points": 4,
+      "family": "A1_MW16",
+      "multiplicative_branch_points": 1,
+      "original_generic_rank": 16,
+      "pullback_geometric_rank_upper_bound": 36,
+      "root_rank": 1,
+      "twist_chi": 4,
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 40,
+      "twist_root_rank": 18
+    },
+    {
+      "base_curve_genus": 1,
+      "branch_points": 4,
+      "family": "A1_MW16",
+      "multiplicative_branch_points": 2,
+      "original_generic_rank": 16,
+      "pullback_geometric_rank_upper_bound": 35,
+      "root_rank": 1,
+      "twist_chi": 4,
+      "twist_geometric_MW_rank_upper_bound": 19,
+      "twist_h11": 40,
+      "twist_root_rank": 19
+    },
+    {
+      "base_curve_genus": 1,
+      "branch_points": 4,
+      "family": "A1_MW16",
+      "multiplicative_branch_points": 3,
+      "original_generic_rank": 16,
+      "pullback_geometric_rank_upper_bound": 34,
+      "root_rank": 1,
+      "twist_chi": 4,
+      "twist_geometric_MW_rank_upper_bound": 18,
+      "twist_h11": 40,
+      "twist_root_rank": 20
+    },
+    {
+      "base_curve_genus": 1,
+      "branch_points": 4,
+      "family": "A1_MW16",
+      "multiplicative_branch_points": 4,
+      "original_generic_rank": 16,
+      "pullback_geometric_rank_upper_bound": 33,
+      "root_rank": 1,
+      "twist_chi": 4,
+      "twist_geometric_MW_rank_upper_bound": 17,
+      "twist_h11": 40,
+      "twist_root_rank": 21
+    }
+  ],
+  "discriminant_coefficients_ascending": [
+    "-1261233580254633092344691780356520898196982189592284671041202637607693406502387712000000",
+    "-5657958706479807579749340576936909679654410024326911435305372066024743810597765775360000",
+    "43729763031110182960548463845919453768623780644116270730228557592663090639656160722944000",
+    "381510032211198345489036624897578684353260160581547474869195290330790652415717941719859200",
+    "1161791397717352471316941077476355041907094681851108060540916028042256110888962461282140160",
+    "1733285388245094407220705309968955140985234629569264918522084484038982508536885598069325824",
+    "983306227608333324133754458169358849257471721639928515764316411302908774687339101294133248",
+    "-905859163123692760426302494078556524366440190462986571024882170638999865644155552242335744",
+    "-2286235450117310204017042667176109799716847644484632795828540765762604514077006750602539008",
+    "-2174814586268849203000035618648158454504982659905758292406286588089445747279954299932491776",
+    "-1215051642801474376279439710542777498782398031671314092806815341397285850077669371335114752",
+    "-410563504626700541054642218918318742465349077319266710618320555518841445166234576390406144",
+    "-66359902273815362092005879043948352662930264661380424472439302323497790261721413274820608",
+    "7300749259551945088449298307771787236098683249106805181435801484096975001072900602281984",
+    "6651386820227753780044192518292266199231312370446743125319163205200988603350653526867968",
+    "1583728357637982861293013051234525974709382240514595819051814607674571203060243435831296",
+    "163644002666672551706191555571372935075725918575630464043270079802584439329458162307072",
+    "-3446604111113114329983143087319612569221468279376825625525453651346230831307265703936",
+    "-3026603036200311638106872612614915898782437522709915050074794784363772902525258268672",
+    "-349674734992503445210220888667872968827088263224707648364038756572036823084238045184",
+    "-16529866428260806465571217466085285911499602535711618346280749169917339117539033088",
+    "-87218342260480900637483809737241804042812930038169032614215422689905608119812096",
+    "21867818737209187414572734492938103834171208068880560624282432479384866241118208",
+    "940752561895074491850832408238129952957821721237269228054112412288488440856576",
+    "14920694101384863142661727126364806967916832508799919036083860262662252265472"
+  ],
+  "discriminant_factorization_monic": [
+    {
+      "coefficients_ascending": [
+        "-135012688012167626378800854256086752755814235791924189078125/1597232304287803791037085167620937701524889983304",
+        "-39770968484092135805719286494391770859299865645613044836823670625/104880662028754348134659160446661253232930375863673856",
+        "280335666484415034108659627288410121537584343036416167133176726047125/95651163770223965498809154327355062948432502787670556672",
+        "161417690713434323710095956630979253987500510688267285183338311827780325/6312976808834781722921404185605434154596545183986256740352",
+        "7633581192172163070021369078210979922047222944722457740097565283884750145/98036816325434257344191217941166742165499289916021869379584",
+        "26400839924091965250026860087082712009424698917882708084749315995359828849/227267165118052142025170550681795629565475626623505242652672",
+        "1977016932324643858294602798369661573436290059309766324258988949312967241711/29999265795582882747322512689997023102642782714302692030152704",
+        "-6898876238613618307331584966702259434987333441211054087112497404898935697/113633582559026071012585275340897814782737813311752621326336",
+        "-12257764859699123050646669184443020265362053187731329480166598318849523598041/79998042121554353992860033839992061607047420571473845413740544",
+        "-88336184598424856435207419795970206249306502917292802655782317471721866461/606045773648139045400454801818121678841268337662680647073792",
+        "-814319962598743887390010476396965094059994217082487871285111012994569396013/9999755265194294249107504229999007700880927571434230676717568",
+        "-2633082071000470143928541598648913112098417151612115925829450933789891183/95691437944443007168492863444966580869673948052002207432704",
+        "-533687865444897980896627046148379432436407173016013502091835703052678272799/119997063182331530989290050759988092410571130857210768120610816",
+        "68432394371997165396060077806921228157126484744185506644651741115443169/139856716995724395092412646573412695117215770229849380093952",
+        "21431334511133731757271846165753853329609366712472099998625445511467499/48075746467280260813016847259610613946542921016510724407296",
+        "449843092251075991683096413234116256439754300750028908782325951842017/4238082333203769548254928684042808942945932431207556972544",
+        "5191629845890713201615242640340545293381852412901552332763655194318051/473361195985528721851242803786935275781345683854874824933376",
+        "-95580435298915670597699976558982620604057299945510536486246247877/413777269218119512107729723589978387920756716656359112704",
+        "-213060849051199760289212791496715539328638345676637918783853697139/1050357683399841838427313913728406677029613203819988516864",
+        "-28689643818213678218588438500154537997588061824493541178001751/1224193104195619858306892673343131325209339398391595008",
+        "-13416234545325711885684631950753460347123151614816833839/12110172366607508886385057309899605543777099145216",
+        "-73512220627772430174674759076517521654223054213294051/12575948226861643843553713360280359603153141420032",
+        "17100612813531058105733215496307580467161457234413/11667968159200243107210766444254719604814824192",
+        "12260999749464134427686586541789271801/194464128027870353875386798376986672",
+        "1"
+      ],
+      "degree": 24
+    }
+  ],
+  "original_surface": {
+    "Picard_rank": 19,
+    "chi": 2,
+    "finite_fibres": "24 I1",
+    "geometric_MW_rank": 17,
+    "infinity": "smooth",
+    "rank_source": "retained published R17 lattice/K3 proof; not recomputed here"
+  },
+  "retained_covers": [
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-00ca6",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-00edf",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-01926",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-01e36",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-02d31",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-045c2",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-04d17",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-051a1",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-05443",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-055ad",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-05980",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-06f04",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-06faa",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-07843",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-0888a",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-08e3a",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-090a3",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-0976c",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-0be21",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-0cff7",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-0d4ca",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-0da89",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-0eba4",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-0fb68",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-101f2",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-10aaa",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-126e6",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-12c1b",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-15a68",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-18fd5",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-195a4",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-196a3",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-1cb25",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-1d5bb",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-1ea09",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-1ea54",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 0,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 2,
+      "branch_separable": true,
+      "kind": "retained_quadratic",
+      "label": "orbit-1f786",
+      "twist_chi": 3,
+      "twist_fibres": {
+        "I0*": 2,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 20,
+      "twist_h11": 30,
+      "twist_root_rank": 8
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 1,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 4,
+      "branch_separable": true,
+      "kind": "oracle_quartic",
+      "label": "Q1",
+      "twist_chi": 4,
+      "twist_fibres": {
+        "I0*": 4,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 22,
+      "twist_h11": 40,
+      "twist_root_rank": 16
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 1,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 4,
+      "branch_separable": true,
+      "kind": "oracle_quartic",
+      "label": "Q2",
+      "twist_chi": 4,
+      "twist_fibres": {
+        "I0*": 4,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 22,
+      "twist_h11": 40,
+      "twist_root_rank": 16
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 1,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 4,
+      "branch_separable": true,
+      "kind": "oracle_quartic",
+      "label": "Q3",
+      "twist_chi": 4,
+      "twist_fibres": {
+        "I0*": 4,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 22,
+      "twist_h11": 40,
+      "twist_root_rank": 16
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 1,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 4,
+      "branch_separable": true,
+      "kind": "oracle_quartic",
+      "label": "Q4",
+      "twist_chi": 4,
+      "twist_fibres": {
+        "I0*": 4,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 22,
+      "twist_h11": 40,
+      "twist_root_rank": 16
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 1,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 4,
+      "branch_separable": true,
+      "kind": "oracle_quartic",
+      "label": "Q5",
+      "twist_chi": 4,
+      "twist_fibres": {
+        "I0*": 4,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 22,
+      "twist_h11": 40,
+      "twist_root_rank": 16
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 1,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 4,
+      "branch_separable": true,
+      "kind": "oracle_quartic",
+      "label": "Q6",
+      "twist_chi": 4,
+      "twist_fibres": {
+        "I0*": 4,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 22,
+      "twist_h11": 40,
+      "twist_root_rank": 16
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 1,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 4,
+      "branch_separable": true,
+      "kind": "oracle_quartic",
+      "label": "Q7",
+      "twist_chi": 4,
+      "twist_fibres": {
+        "I0*": 4,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 22,
+      "twist_h11": 40,
+      "twist_root_rank": 16
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 1,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 4,
+      "branch_separable": true,
+      "kind": "oracle_quartic",
+      "label": "Q8",
+      "twist_chi": 4,
+      "twist_fibres": {
+        "I0*": 4,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 22,
+      "twist_h11": 40,
+      "twist_root_rank": 16
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 1,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 4,
+      "branch_separable": true,
+      "kind": "oracle_quartic",
+      "label": "Q9",
+      "twist_chi": 4,
+      "twist_fibres": {
+        "I0*": 4,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 22,
+      "twist_h11": 40,
+      "twist_root_rank": 16
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 1,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 4,
+      "branch_separable": true,
+      "kind": "oracle_quartic",
+      "label": "Q10",
+      "twist_chi": 4,
+      "twist_fibres": {
+        "I0*": 4,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 22,
+      "twist_h11": 40,
+      "twist_root_rank": 16
+    },
+    {
+      "bad_branch_points": 0,
+      "base_curve_genus": 1,
+      "branch_avoids_singular_fibres": true,
+      "branch_points": 4,
+      "branch_separable": true,
+      "kind": "oracle_quartic",
+      "label": "Q11",
+      "twist_chi": 4,
+      "twist_fibres": {
+        "I0*": 4,
+        "I1": 24
+      },
+      "twist_geometric_MW_rank_upper_bound": 22,
+      "twist_h11": 40,
+      "twist_root_rank": 16
+    }
+  ],
+  "schema": "rank-jump.parameter-cover-capacity.v1",
+  "smallest_singular_closed_point_degree": 24,
+  "software": {
+    "sage": "10.9"
+  }
+}

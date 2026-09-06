@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.parameter-cover-verification-protocol.v1",
+  "question": "Independently certify the degree-24 singular orbit and test the canonical discriminant quadratic cover on retained R17 fibres.",
+  "limits": {"maximum_modular_prime": 97, "seconds": 30, "new_parameters": 0},
+  "irreducibility": "Intersect all possible proper rational factor degrees allowed by squarefree finite-field factorization patterns; stop when the set is empty. If it stays nonempty, independent irreducibility remains UNKNOWN.",
+  "retrospective_parameters": "Exactly the five fibres in the frozen branch-block input and the two published-R17 entries in the frozen six-pair control source.",
+  "gate": "Compute the exact rational value of the original surface discriminant at each retained parameter. A nonsquare excludes a rational lift to v^2=Delta(u); it is not a bound on the fibre rank.",
+  "boundary": "The discriminant cover is a coefficient-defined Galois-sign construction. Parameter tests are retrospective and never candidate generation."
+}

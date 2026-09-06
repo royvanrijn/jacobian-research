@@ -1,0 +1,7 @@
+{
+  "schema": "rank-jump.surface-discriminant-irreducibility-protocol.v1",
+  "reason": "All primes through 97 in the initial independent verifier had bad displayed polynomial reduction. Preserve that UNKNOWN record; the rational factorization itself returned one degree-24 factor.",
+  "limits": {"smallest_prime": 101, "largest_prime": 503, "seconds": 30, "new_parameters_or_point_searches": 0},
+  "method": "Remove integer content without factoring it, then intersect possible proper factor degrees from exact squarefree modular factorizations. Stop as soon as no proper degree remains.",
+  "boundary": "An independent finite polynomial certificate, not a specialization or class-group campaign. Failure to close the finite dictionary remains UNKNOWN."
+}

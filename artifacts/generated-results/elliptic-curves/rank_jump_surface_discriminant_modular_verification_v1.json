@@ -1,0 +1,58 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_surface_discriminant_irreducibility_v1.json": "c48d297709465bfa72faf0682752f2d0ae5ac5297e3b793394a2c9fb875581e3",
+    "elliptic-curves/rank-jump/verify_surface_discriminant_modular.py": "6bb85cee6012de2b98f7662107423c194eb92a7d9ad68dea4be4942996e72ff4"
+  },
+  "method": "Exact finite-polynomial multiplication and Rabin irreducibility; Gauss lemma excludes every proper rational factor degree.",
+  "rows": [
+    {
+      "factor_degrees": [
+        2,
+        2,
+        6,
+        14
+      ],
+      "irreducible_factors_verified": true,
+      "prime": 167,
+      "product_verified": true,
+      "remaining_proper_factor_degrees": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        14,
+        16,
+        18,
+        20,
+        22
+      ]
+    },
+    {
+      "factor_degrees": [
+        1,
+        6,
+        17
+      ],
+      "irreducible_factors_verified": true,
+      "prime": 181,
+      "product_verified": true,
+      "remaining_proper_factor_degrees": [
+        6,
+        18
+      ]
+    },
+    {
+      "factor_degrees": [
+        8,
+        16
+      ],
+      "irreducible_factors_verified": true,
+      "prime": 191,
+      "product_verified": true,
+      "remaining_proper_factor_degrees": []
+    }
+  ],
+  "schema": "rank-jump.surface-discriminant-modular-verification.v1",
+  "status": "PASS_IRREDUCIBLE_OVER_Q"
+}

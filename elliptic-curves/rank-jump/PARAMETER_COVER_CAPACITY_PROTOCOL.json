@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.parameter-cover-capacity-protocol.v1",
+  "question": "What is the geometric rank capacity of one quadratic parameter cover on the original semistable K3 families, and can low-degree rational branch divisors meet singular R17 fibres?",
+  "source": "Published R17 model coefficients; all distinct retained quadratic branch polynomials in rank_jump_branch_block_inputs_v1.json; the eleven frozen rank-28 quartic branch polynomials.",
+  "limits": {"seconds": 30, "surface_discriminant_degree": 24, "maximum_branch_polynomial_degree": 4, "new_parameters_or_point_searches": 0},
+  "checks": "Recompute the R17 discriminant, squarefreeness, minimal finite/infinite fibre conditions, and its exact rational polynomial factorization. Check each retained branch polynomial is separable and coprime to it. Compute quadratic-twist Euler characteristic, reducible-root rank and Hodge/Shioda-Tate upper bound.",
+  "formula": "For a semistable elliptic K3 with root rank R and a nontrivial quadratic cover branched at b geometric points, r of them multiplicative: chi_twist=2+b/2, root_rank_twist=R+4*b+r, rank_twist<=18-R+b-r.",
+  "boundary": "An upper bound on generic twist rank, not an incidence lower bound or a specialized curve-rank upper bound. Existing cover sections provide only their retained lower bounds. Oracle-selected quartics remain retrospective."
+}
