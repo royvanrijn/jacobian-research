@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.fresh-symbolic-discriminant-protocol.v1",
+  "families": ["074d9", "11952", "a1-fibration-01"],
+  "cases": ["case-00", "case-08", "case-10", "case-11", "case-12"],
+  "input": "Project only A(t), B(t) from the existing compact R17/MW16 atlases and the five frozen parameters/equations and retained unresolved cofactors. No sections or exceptional coordinates enter this worker.",
+  "test": "Factor -16*(4*A(t)^3+27*B(t)^2) over Q[t]. Verify its polynomial product; certify irreducibility of each positive-degree factor using good modular factor degrees through prime1999. Specialize factors at the five existing parameters, verify exact rational scaling to the frozen curve equations, and test gcd splits of the retained composite cofactors. No general integer factorization call.",
+  "limits": {"worker_seconds_per_family": 30, "modular_prime_bound": 1999, "pari_stack_bytes": 268435456, "workers": 1, "new_parameters": 0, "point_searches": 0, "integer_factorization_calls": 0},
+  "failure": "Timeout or incomplete modular proof remains UNKNOWN. No new parameter or factorization budget. This tests an equation factor-recovery mechanism, not a rank predictor or a rational-solubility criterion."
+}

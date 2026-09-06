@@ -1,0 +1,179 @@
+{
+  "MW16_linear_degeneration": {
+    "A_at_parameter": "-30231095865050589148834238187",
+    "B_at_parameter": "2023154033947480047644528210084884128411366",
+    "c4_at_parameter": "1451092601522428279144043432976",
+    "discriminant_order": 2,
+    "double_cubic_root": "100384420878027",
+    "interpretation": "Order-two discriminant with c4 a unit: multiplicative I2 fibre in characteristic zero. This singular parameter is absent from both retained smooth fibres.",
+    "linear_homogeneous_values": [
+      {
+        "n_plus_2d": -1327,
+        "token": "case-11"
+      },
+      {
+        "n_plus_2d": 4207,
+        "token": "case-12"
+      }
+    ],
+    "parameter": "-2",
+    "residual_degree22_factor_value": "-33210068242842145348567765179895204799326993456320305731438125/180212180385446955288667258404757307917418258288186912"
+  },
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_symbolic_discriminant_inputs_v1.json": "0922eee9050dcc4e6f4fb61f1b84bd3863a9bfdea2092dbf409431d245573bfc",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_symbolic_discriminant_v1.json": "95b78315d298544a997ee2884c29fe6bf8fbb9af362ff63fef2dd94a36339cfc",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_fresh_symbolic_discriminant.py": "ef4d9f4e89cbdac899c559cdd276bfccdc2723766cd1ac3416e9ce2b24abf42b",
+    "elliptic-curves/rank-jump/verify_surface_discriminant_modular.py": "6bb85cee6012de2b98f7662107423c194eb92a7d9ad68dea4be4942996e72ff4"
+  },
+  "boundary": "Exact discriminant divisor and failed cofactor-splitting route. This does not test auxiliary-cover solubility or exclude rank jumps on smooth fibres.",
+  "irreducible_finite_factors_verified": 19,
+  "rows": [
+    {
+      "factor_degrees_and_multiplicities": [
+        [
+          24,
+          1
+        ]
+      ],
+      "family": "074d9",
+      "modular_certificates": [
+        [
+          {
+            "degrees": [
+              8,
+              16
+            ],
+            "prime": 131
+          },
+          {
+            "degrees": [
+              4,
+              6,
+              14
+            ],
+            "prime": 137
+          }
+        ]
+      ],
+      "specializations": [
+        {
+          "proper_cofactor_splits": 0,
+          "token": "case-00",
+          "unit_gcds": [
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "factor_degrees_and_multiplicities": [
+        [
+          24,
+          1
+        ]
+      ],
+      "family": "11952",
+      "modular_certificates": [
+        [
+          {
+            "degrees": [
+              2,
+              3,
+              19
+            ],
+            "prime": 131
+          },
+          {
+            "degrees": [
+              3,
+              4,
+              6,
+              11
+            ],
+            "prime": 137
+          },
+          {
+            "degrees": [
+              2,
+              22
+            ],
+            "prime": 151
+          }
+        ]
+      ],
+      "specializations": [
+        {
+          "proper_cofactor_splits": 0,
+          "token": "case-08",
+          "unit_gcds": [
+            1,
+            1
+          ]
+        },
+        {
+          "proper_cofactor_splits": 0,
+          "token": "case-10",
+          "unit_gcds": [
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "factor_degrees_and_multiplicities": [
+        [
+          1,
+          2
+        ],
+        [
+          22,
+          1
+        ]
+      ],
+      "family": "a1-fibration-01",
+      "modular_certificates": [
+        [],
+        [
+          {
+            "degrees": [
+              4,
+              5,
+              13
+            ],
+            "prime": 131
+          },
+          {
+            "degrees": [
+              8,
+              14
+            ],
+            "prime": 137
+          }
+        ]
+      ],
+      "specializations": [
+        {
+          "proper_cofactor_splits": 0,
+          "token": "case-11",
+          "unit_gcds": [
+            1,
+            1
+          ]
+        },
+        {
+          "proper_cofactor_splits": 0,
+          "token": "case-12",
+          "unit_gcds": [
+            1,
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "schema": "rank-jump.fresh-symbolic-discriminant-verification.v1",
+  "status": "PASS"
+}

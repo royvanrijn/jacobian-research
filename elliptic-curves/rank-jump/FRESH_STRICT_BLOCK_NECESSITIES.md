@@ -214,7 +214,9 @@ The priorities are now:
    carrier criterion. Zero CT alone is not a rationality theorem.
 3. **Coverage:** the retained-factor audit closes both historic +12 rows.
    Five fresh/control rows retain verified composite cofactors; the +11
-   comparison is still unfinished. No missing value is a negative result.
+   comparison is still unfinished. A [symbolic discriminant audit](FRESH_SYMBOLIC_DISCRIMINANT_GATE.md)
+   proves the relevant degree-24/22 factors irreducible over Q and obtains
+   no further cofactor split. No missing value is a negative result.
 4. **Weak explanations:** generic governing degree, inherited strict size,
    and local-boundary capacity alone fail to distinguish the observed pairs.
    The latter even orders the 103b2 pair in the opposite direction.
