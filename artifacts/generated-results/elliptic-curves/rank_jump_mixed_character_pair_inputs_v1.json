@@ -1,0 +1,61 @@
+{
+  "cases": [
+    {
+      "family": "a1-fibration-04",
+      "generic_point_indices": [
+        0,
+        1
+      ],
+      "generic_points": [
+        [
+          "1697811868120410123502/3",
+          "9722906728872957211717517955402"
+        ],
+        [
+          "347018471973169531433803/3072",
+          "141584664831362682164195630560567299/32768"
+        ]
+      ],
+      "id": "a1-fibration-04:-1647/91",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-688476773111137102191821490424049994483325/3",
+        "1165101516390718509105968564565796805019364325383105630925333750/27"
+      ],
+      "parameter": "-1647/91",
+      "role": "high"
+    },
+    {
+      "family": "a1-fibration-04",
+      "generic_point_indices": [
+        0,
+        1
+      ],
+      "generic_points": [
+        [
+          "-593805412971987123038766554/3",
+          "4495005874711140635101571445277584320598"
+        ],
+        [
+          "2289554109515628183455047791139/3072",
+          "626036360207478016496360911329743233638816111/32768"
+        ]
+      ],
+      "id": "a1-fibration-04:-2177/2397",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-244723596315253375919439605861171922295224893573863381/3",
+        "318961191988291227141261747624511286670645812293426319462711728249208139785617550/27"
+      ],
+      "parameter": "-2177/2397",
+      "role": "low"
+    }
+  ],
+  "schema": "rank-jump.mixed-character-pair-inputs.v1",
+  "selection": "Second original matched pair, first two generic points in their retained order; no exceptional coordinates. Pair selected because both rows have two good primes <=19 for this geometry. No counts inspected.",
+  "source_sha256": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3"
+}

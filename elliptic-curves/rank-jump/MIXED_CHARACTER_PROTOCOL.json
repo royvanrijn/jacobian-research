@@ -1,0 +1,37 @@
+{
+  "schema": "rank-jump.mixed-character-protocol.v1",
+  "question": "Does the product of two generic-point linear twist characters contribute new geometric rank, on the matched MW16-04 high/zero-gain pair?",
+  "input": "rank_jump_mixed_character_pair_inputs_v1.json",
+  "selection": "First two generic-point indices, fixed matched pair. First two primes >3 and <=19 preserving B*disc(f)*a*b*(a-b)*f(a)*f(b) and all denominators. Pair 1 selected after coefficient-only eligibility preflight; pair 0 lacked a second eligible high-fibre prime. No point counts inspected.",
+  "primes": {
+    "high": [
+      13,
+      17
+    ],
+    "low": [
+      17,
+      19
+    ]
+  },
+  "limits": {
+    "curves": 2,
+    "primes_per_curve": 2,
+    "extension_degrees": [
+      1,
+      2,
+      3
+    ],
+    "seconds_per_prime": 40,
+    "point_searches": 0,
+    "prospective_parameters": 0,
+    "global_descents": 0
+  },
+  "geometry": {
+    "twist": "(1-a*u)*(1-b*u)",
+    "fibres": "3 I2 + 3 I0*",
+    "trivial_rank": 17,
+    "residual_H2_dimension": 5
+  },
+  "endpoint": "Two good reductions of geometric Picard rank 18 with different NS discriminant squareclasses prove characteristic-zero Picard rank 17 and zero mixed-character rank. Other outcomes remain UNKNOWN for that endpoint.",
+  "boundary": "Retrospective anchor-family construction. No rank upper bound for the selected production curves, and no exceptional points supplied to the construction."
+}

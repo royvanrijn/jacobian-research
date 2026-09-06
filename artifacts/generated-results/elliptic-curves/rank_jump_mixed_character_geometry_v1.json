@@ -1,0 +1,96 @@
+{
+  "analysis_sha256": "ab0a45f20ba92023ab4f34aa968410761d4320c4a80295be3f7fcaaf56ead559",
+  "base_genus": 0,
+  "bounds": [
+    {
+      "anchor_galois": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-1929957261903966814703263613746364226425039094949821981741436171351067100651105459107238318391112692165195077121769127750000",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 13,
+        "layer": "incidence"
+      },
+      "full_pair_base_arithmetic_rank_interval": [
+        2,
+        3
+      ],
+      "full_pair_base_geometric_rank_interval": [
+        3,
+        4
+      ],
+      "geometric_Picard_rank_interval": [
+        17,
+        18
+      ],
+      "id": "a1-fibration-04:-1647/91",
+      "mixed_geometric_rank_interval": [
+        0,
+        1
+      ],
+      "production_curve_rank": "UNKNOWN"
+    },
+    {
+      "anchor_galois": {
+        "claim": "Equation-only E[2] representation test, not a rank predictor.",
+        "cubic_discriminant": "-1596689297782645112931245890234707882286636136728279810012734053317552384309487408683915353548350612786508764853711358131706827807250668669012670540237053905968",
+        "discriminant_rational_square": false,
+        "galois_group": "S3",
+        "irreducibility_prime": 17,
+        "layer": "incidence"
+      },
+      "full_pair_base_arithmetic_rank_interval": [
+        2,
+        3
+      ],
+      "full_pair_base_geometric_rank_interval": [
+        3,
+        4
+      ],
+      "geometric_Picard_rank_interval": [
+        17,
+        18
+      ],
+      "id": "a1-fibration-04:-2177/2397",
+      "mixed_geometric_rank_interval": [
+        0,
+        1
+      ],
+      "production_curve_rank": "UNKNOWN"
+    }
+  ],
+  "counts_sha256": "575559f4a7873f18213eb539e33d2739fe500ed86bbd0ebd1cf44a6ffda0dbbf",
+  "fibre_configuration": [
+    "I2",
+    "I2",
+    "I2",
+    "I0*",
+    "I0*",
+    "I0*"
+  ],
+  "frobenius_checks": [
+    {
+      "case": 0,
+      "p": 13,
+      "reduction_Picard_rank": 18
+    },
+    {
+      "case": 0,
+      "p": 17,
+      "reduction_Picard_rank": 18
+    },
+    {
+      "case": 1,
+      "p": 17,
+      "reduction_Picard_rank": 20
+    },
+    {
+      "case": 1,
+      "p": 19,
+      "reduction_Picard_rank": 18
+    }
+  ],
+  "schema": "rank-jump.mixed-character-geometry.v1",
+  "twist_trivial_rank": 17,
+  "verifier_sha256": "d783abc5c5dbc89254d61244d6ac26fe31663e9ef3ee70a4d8ed41896dcfcf17"
+}
