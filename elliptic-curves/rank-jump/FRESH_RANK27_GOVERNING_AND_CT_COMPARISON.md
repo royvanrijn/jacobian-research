@@ -1,5 +1,10 @@
 # Fresh rank-27 fibres: a masked governing/CT comparison
 
+Follow-up: [the fixed103b2 high fibre must contain at least nine strict rational
+directions outside its generic subgroup](MATCHED103B2_JUMP_REQUIRES_NINE_STRICT_DIRECTIONS.md).
+The new bound uses an equation-defined reciprocity constraint; it does not
+fill the missing independent class basis below.
+
 The 16-fibre panel gives two negative controls, but **does not yet compute
 CT on the additional Selmer quotient**. Exceptional points and classes
 obtained from them were excluded from the arithmetic inputs.

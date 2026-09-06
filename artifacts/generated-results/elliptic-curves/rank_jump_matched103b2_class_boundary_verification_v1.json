@@ -1,0 +1,84 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_manifest_v1.json": "dd07b100bd8cedd038dfe41f30bfb172ba030934cbc39cb7a16d1a5928412fbf",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+    "artifacts/generated-results/elliptic-curves/rank_jump_matched103b2_class_boundary_v1.json": "e5c56597dea9cbebb15bd8cf389c4adcbc334a2ca48b14723e03156de4005d95",
+    "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_matched103b2_class_boundary.py": "8a75152bf782fff3755a51b92aa2d383f44a8020cabfe66aee2746d183e0b90d",
+    "elliptic-curves/rank-jump/verify_unpointed_governing_norm.py": "69828517faa1ebdc92218dc338cfe156fbc8a16020bf6b28d8f59a60bc4c847a"
+  },
+  "boundary": "No additional representatives or CT entries computed. The low rank remains censored; the high strict-block lower bound uses its existing rank certificate only after arithmetic.",
+  "rows": [
+    {
+      "Selmer_local_image_interval": [
+        17,
+        18
+      ],
+      "abstract_boundary_completions": [
+        {
+          "Selmer_local_intersection_dimension": 17,
+          "boundary_dimension": 19,
+          "e": 0
+        },
+        {
+          "Selmer_local_intersection_dimension": 18,
+          "boundary_dimension": 19,
+          "e": 1
+        }
+      ],
+      "bound_for_arbitrary_rank_R": "c_S >= R - 18",
+      "class_group_dimension": "UNKNOWN",
+      "family": "103b2",
+      "generic_rank": 17,
+      "id": "new-20260906-71",
+      "label_dependency": "Rank-derived necessities only; not independent class-group measurements or explicit class representatives.",
+      "parameter": "3726/881",
+      "quotient_boundary_capacity": 1,
+      "retained_rank_lower_bound": 27,
+      "retrospective_S_class_two_rank_lower_bound": 9,
+      "retrospective_rational_strict_dimension_lower_bound": 9,
+      "retrospective_unramified_extension_degree_over_K_lower_bound": 512,
+      "token": "case-02"
+    },
+    {
+      "Selmer_local_image_interval": [
+        17,
+        19
+      ],
+      "abstract_boundary_completions": [
+        {
+          "Selmer_local_intersection_dimension": 17,
+          "boundary_dimension": 20,
+          "e": 0
+        },
+        {
+          "Selmer_local_intersection_dimension": 18,
+          "boundary_dimension": 20,
+          "e": 1
+        },
+        {
+          "Selmer_local_intersection_dimension": 19,
+          "boundary_dimension": 20,
+          "e": 2
+        }
+      ],
+      "bound_for_arbitrary_rank_R": "c_S >= R - 19",
+      "class_group_dimension": "UNKNOWN",
+      "family": "103b2",
+      "generic_rank": 17,
+      "id": "103b2:-1049/2296",
+      "label_dependency": "Rank-derived necessities only; not independent class-group measurements or explicit class representatives.",
+      "parameter": "-1049/2296",
+      "quotient_boundary_capacity": 2,
+      "retained_rank_lower_bound": 17,
+      "retrospective_S_class_two_rank_lower_bound": 0,
+      "retrospective_rational_strict_dimension_lower_bound": 0,
+      "retrospective_unramified_extension_degree_over_K_lower_bound": 1,
+      "token": "case-03"
+    }
+  ],
+  "schema": "rank-jump.matched103b2-class-boundary-verification.v1",
+  "status": "PASS"
+}

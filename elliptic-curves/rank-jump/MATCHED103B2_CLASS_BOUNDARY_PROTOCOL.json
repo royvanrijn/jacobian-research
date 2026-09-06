@@ -1,0 +1,11 @@
+{
+  "schema": "rank-jump.matched103b2-class-boundary-protocol.v1",
+  "cases": ["case-02", "case-03"],
+  "inputs": "Only the masked equations, generic sections, and the independently rechecked complete discriminant factors from the fresh panel. No exceptional coordinates or their class representatives.",
+  "question": "How much additional Selmer incidence can the local boundary carry, and does a reduced cubic presentation avoid the independent class-group resource failure?",
+  "boundary_calculation": "Compute beta=-disc(f) f'(theta), its real and finite local classes, generic local dimensions and independent reciprocity constraints. Bound Sel2(E)/G by the unknown strict S-class dimension plus the remaining boundary capacity.",
+  "reduced_class_gate": "One polredbest(nf,1) and one bnfinit on the exactly transported maximal-order basis, with the same256MiB stack cap. No altered factor-base tuning and no iteration. Certify any returned class group before using it.",
+  "limits": {"boundary_seconds_per_case": 30, "reduction_seconds_per_case": 15, "class_seconds_per_case": 20, "pari_stack_bytes": 268435456, "workers": 1, "point_searches": 0, "new_parameters": 0},
+  "labels": "The high/low rank labels may be joined only after the point-masked boundary computation, to derive retrospective necessities. Such a deduction is not an independently measured class-group rank or a prospective selector.",
+  "failure": "Checkpoint independently. A failed reduced class attempt closes this bounded representation test, not the class group or its Selmer quotient. No memory increase or automatic retry."
+}
