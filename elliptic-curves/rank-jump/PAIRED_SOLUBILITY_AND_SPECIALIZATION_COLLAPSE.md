@@ -1,5 +1,10 @@
 # Four soluble covers give exactly three directions on both high fibres
 
+**Solubility follow-up:** a [norm-six trace congruence](NORM_SIX_INTERSECTION_FORCES_NATIVE_PAIR_SOLUBILITY.md)
+now explains the +8 pair by a degree-one intersection of translated rational
+bisections. Generic equations recover its parameter exactly and force both
+square conditions, together with the same one-direction limit.
+
 Both successful four-cover systems give **exactly three** directions modulo
 the marked generic rank-17 subgroup. All eight constructed points belong
 integrally to the retained independent witness groups. On the +8 fibre,
