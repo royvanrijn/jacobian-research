@@ -1,0 +1,2177 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+    "artifacts/generated-results/elliptic-curves/rank_jump_derivative_local_duality_inputs_v1.json": "9c9c7db3e6881290438c0a5e86c9b307f0ee1089b1934c4ab10a99077dd6d14e",
+    "artifacts/generated-results/elliptic-curves/rank_jump_derivative_local_duality_v1.json": "34fc3b9b1ae3158e78fa047459dd70f899dc6fc0b010182545b68809bfd100be",
+    "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+    "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_primes_v1.json": "0ab1c0319c321254433781e06c1e91411cfcf7bb18ad162bbf829a3dc7fa82ad",
+    "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+    "artifacts/generated-results/elliptic-curves/rank_jump_scalar_cup_v1.json": "09c128a005c222fcd3a81d99c52b1582c7f2110b76c7362af368b1ef64089780",
+    "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/rank-jump/PRODUCTION_MINUS_TWIST_PROTOCOL.json": "86b8bf362c0f329f9c5077b197f70bd4eb99042adede87528c1ab2924d63c6e5",
+    "elliptic-curves/rank-jump/production_minus_twist.py": "d80d894779332a244f4de6d816c2b7b78c2686b6c7af52b47e29558981f90349"
+  },
+  "cases": [
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+        "artifacts/generated-results/elliptic-curves/rank_jump_derivative_local_duality_inputs_v1.json": "9c9c7db3e6881290438c0a5e86c9b307f0ee1089b1934c4ab10a99077dd6d14e",
+        "artifacts/generated-results/elliptic-curves/rank_jump_derivative_local_duality_v1.json": "34fc3b9b1ae3158e78fa047459dd70f899dc6fc0b010182545b68809bfd100be",
+        "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_primes_v1.json": "0ab1c0319c321254433781e06c1e91411cfcf7bb18ad162bbf829a3dc7fa82ad",
+        "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+        "artifacts/generated-results/elliptic-curves/rank_jump_scalar_cup_v1.json": "09c128a005c222fcd3a81d99c52b1582c7f2110b76c7362af368b1ef64089780",
+        "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/PRODUCTION_MINUS_TWIST_PROTOCOL.json": "86b8bf362c0f329f9c5077b197f70bd4eb99042adede87528c1ab2924d63c6e5",
+        "elliptic-curves/rank-jump/production_minus_twist.py": "d80d894779332a244f4de6d816c2b7b78c2686b6c7af52b47e29558981f90349"
+      },
+      "case_index": 0,
+      "complete": false,
+      "generic_dimension": 16,
+      "id": "a1-fibration-05:307/206",
+      "integral_cubic_ascending": [
+        "352828243349831404712617799673077133207162344822366545727829706873326815760",
+        "-94906677054393466110816339922046107183061710818372",
+        "0",
+        "1"
+      ],
+      "joint_global_signatures": [
+        612490937771229188,
+        577023956746242996,
+        36029051495778304,
+        36063995362280372,
+        613055262126770176,
+        577023716215491108,
+        613087697720297472,
+        577027825427252144,
+        577061649379738000,
+        39562030090240,
+        35425004011520,
+        36592001461783476,
+        577059141206411664,
+        577026705527163424,
+        612493913111675284,
+        576464889443254272,
+        13971227572,
+        613052499288392084,
+        612524733809573888,
+        600883117671348,
+        577026451048499204,
+        4363800020996,
+        613087683761652256,
+        567087095103492,
+        612491164231942692,
+        528462474249066420
+      ],
+      "known_strict_dimension": 10,
+      "local": [
+        {
+          "complete": false,
+          "global_signatures": [
+            4,
+            4,
+            0,
+            4,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            4,
+            0,
+            4,
+            4,
+            0,
+            4,
+            4,
+            4,
+            0,
+            4,
+            4,
+            4
+          ],
+          "intersection_dimension": null,
+          "method": "exact local-square x witnesses spanning the dimension bound",
+          "original_basis": [
+            4
+          ],
+          "place": 3,
+          "point_dimension": 1,
+          "trials": 421,
+          "twist_basis": [],
+          "width": 4,
+          "witnesses": []
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            59,
+            0,
+            59,
+            0,
+            34,
+            0,
+            59,
+            25,
+            0,
+            0,
+            59,
+            25,
+            34,
+            25,
+            0,
+            59,
+            25,
+            0,
+            59,
+            0,
+            0,
+            34,
+            0,
+            34,
+            59
+          ],
+          "intersection_dimension": 1,
+          "method": "exact local-square x witnesses spanning the dimension bound",
+          "original_basis": [
+            59,
+            25
+          ],
+          "place": 7,
+          "point_dimension": 2,
+          "trials": 20,
+          "twist_basis": [
+            34,
+            19
+          ],
+          "width": 6,
+          "witnesses": [
+            {
+              "cubic_value": "-352828243349831404712617989486431241994094566455046389820044072996748452496",
+              "minimal_x": "2",
+              "short_x": "2",
+              "signature": 34,
+              "square_witness": {
+                "modulus": 7,
+                "square": true,
+                "unit_residue": 1,
+                "valuation": 0
+              }
+            },
+            {
+              "cubic_value": "-352828243349831404712618748739847677141823452985765766188901537490434998480",
+              "minimal_x": "10",
+              "short_x": "10",
+              "signature": 19,
+              "square_witness": {
+                "modulus": 7,
+                "square": true,
+                "unit_residue": 1,
+                "valuation": 2
+              }
+            }
+          ]
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            2,
+            2,
+            0,
+            2,
+            2,
+            2,
+            0,
+            0,
+            2,
+            0,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            0,
+            0,
+            0,
+            5
+          ],
+          "intersection_dimension": 1,
+          "method": "-1 is a square in Q_p; labelled local conditions coincide",
+          "original_basis": [
+            2
+          ],
+          "place": 13,
+          "point_dimension": 1,
+          "trials": 0,
+          "twist_basis": [
+            2
+          ],
+          "width": 4,
+          "witnesses": []
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            31,
+            110,
+            31,
+            0,
+            31,
+            0,
+            0,
+            113,
+            113,
+            0,
+            0,
+            0,
+            113,
+            31,
+            0,
+            0,
+            31,
+            113,
+            113,
+            117
+          ],
+          "intersection_dimension": 0,
+          "method": "exact local-square x witnesses spanning the dimension bound",
+          "original_basis": [
+            31,
+            110
+          ],
+          "place": 2,
+          "point_dimension": 2,
+          "trials": 17,
+          "twist_basis": [
+            8,
+            106
+          ],
+          "width": 7,
+          "witnesses": [
+            {
+              "cubic_value": "-352828243349831404712617514953045970026764012373346779589508157688194360671",
+              "minimal_x": "-3",
+              "short_x": "-3",
+              "signature": 8,
+              "square_witness": {
+                "modulus": 8,
+                "square": true,
+                "unit_residue": 1,
+                "valuation": 0
+              }
+            },
+            {
+              "cubic_value": "-352828243349831404712617040419660698059433458291647169358972242379640269296",
+              "minimal_x": "-8",
+              "short_x": "-8",
+              "signature": 106,
+              "square_witness": {
+                "modulus": 8,
+                "square": true,
+                "unit_residue": 1,
+                "valuation": 4
+              }
+            }
+          ]
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            6,
+            0,
+            6,
+            6,
+            0,
+            6,
+            0,
+            6,
+            6,
+            6,
+            6,
+            0,
+            6,
+            0,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            0,
+            5
+          ],
+          "intersection_dimension": 0,
+          "method": "ordered real roots: twist bounded component has signs (-,-,+)",
+          "original_basis": [
+            6
+          ],
+          "place": "infinity",
+          "point_dimension": 1,
+          "trials": 0,
+          "twist_basis": [
+            3
+          ],
+          "width": 3,
+          "witnesses": []
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            6,
+            0,
+            0,
+            0,
+            6,
+            0,
+            6,
+            0,
+            0,
+            0,
+            6,
+            0,
+            6,
+            0,
+            6,
+            0,
+            0,
+            0,
+            6,
+            0,
+            0,
+            6,
+            6,
+            0,
+            0,
+            6
+          ],
+          "intersection_dimension": 1,
+          "method": "-1 is a square in Q_p; labelled local conditions coincide",
+          "original_basis": [
+            6
+          ],
+          "place": 17,
+          "point_dimension": 1,
+          "trials": 0,
+          "twist_basis": [
+            6
+          ],
+          "width": 4,
+          "witnesses": []
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_dimension": 0,
+          "method": "exact local-square x witnesses spanning the dimension bound",
+          "original_basis": [],
+          "place": 19,
+          "point_dimension": 0,
+          "trials": 0,
+          "twist_basis": [],
+          "width": 2,
+          "witnesses": []
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            13,
+            13,
+            13,
+            13,
+            13,
+            13,
+            13,
+            0,
+            13,
+            13,
+            0,
+            13,
+            13,
+            13,
+            0,
+            13,
+            13,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            13,
+            0,
+            8
+          ],
+          "intersection_dimension": 0,
+          "method": "exact local-square x witnesses spanning the dimension bound",
+          "original_basis": [
+            13
+          ],
+          "place": 23,
+          "point_dimension": 1,
+          "trials": 93,
+          "twist_basis": [
+            5
+          ],
+          "width": 4,
+          "witnesses": [
+            {
+              "cubic_value": "-352828243349831404712613433965932631107721247270730131606899286034629267984",
+              "minimal_x": "-46",
+              "short_x": "-46",
+              "signature": 5,
+              "square_witness": {
+                "modulus": 23,
+                "square": true,
+                "unit_residue": 8,
+                "valuation": 2
+              }
+            }
+          ]
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            14,
+            14,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            14,
+            0,
+            0,
+            14,
+            4
+          ],
+          "intersection_dimension": 0,
+          "method": "exact local-square x witnesses spanning the dimension bound",
+          "original_basis": [
+            14
+          ],
+          "place": 31,
+          "point_dimension": 1,
+          "trials": 148,
+          "twist_basis": [
+            4
+          ],
+          "width": 4,
+          "witnesses": [
+            {
+              "cubic_value": "-352828243349831404712624822767179158323654545231520777139761253439926970064",
+              "minimal_x": "74",
+              "short_x": "74",
+              "signature": 4,
+              "square_witness": {
+                "modulus": 31,
+                "square": true,
+                "unit_residue": 2,
+                "valuation": 2
+              }
+            }
+          ]
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            5,
+            0,
+            0,
+            0,
+            10,
+            0,
+            0,
+            15,
+            10,
+            15,
+            0,
+            0,
+            0,
+            10,
+            15,
+            15,
+            0,
+            0,
+            0,
+            10,
+            10,
+            15,
+            0,
+            15,
+            5,
+            39
+          ],
+          "intersection_dimension": 1,
+          "method": "exact local-square x witnesses spanning the dimension bound",
+          "original_basis": [
+            5,
+            10
+          ],
+          "place": 79,
+          "point_dimension": 2,
+          "trials": 123,
+          "twist_basis": [
+            10,
+            39
+          ],
+          "width": 6,
+          "witnesses": [
+            {
+              "cubic_value": "-352828243349831404712617799673077133207162344822366545727829706873326815760",
+              "minimal_x": "0",
+              "short_x": "0",
+              "signature": 10,
+              "square_witness": {
+                "modulus": 79,
+                "square": true,
+                "unit_residue": 51,
+                "valuation": 0
+              }
+            },
+            {
+              "cubic_value": "-352828243349831404712612010365776815205729585025631300915291540108967122049",
+              "minimal_x": "-61",
+              "short_x": "-61",
+              "signature": 39,
+              "square_witness": {
+                "modulus": 79,
+                "square": true,
+                "unit_residue": 38,
+                "valuation": 2
+              }
+            }
+          ]
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            2,
+            0,
+            2,
+            2,
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            0,
+            0,
+            2,
+            0,
+            0,
+            7
+          ],
+          "intersection_dimension": 1,
+          "method": "-1 is a square in Q_p; labelled local conditions coincide",
+          "original_basis": [
+            2
+          ],
+          "place": 3677,
+          "point_dimension": 1,
+          "trials": 0,
+          "twist_basis": [
+            2
+          ],
+          "width": 4,
+          "witnesses": []
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            2,
+            0,
+            0,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            2,
+            0,
+            2,
+            2,
+            0,
+            2,
+            2,
+            0,
+            5
+          ],
+          "intersection_dimension": 1,
+          "method": "-1 is a square in Q_p; labelled local conditions coincide",
+          "original_basis": [
+            2
+          ],
+          "place": 19022417,
+          "point_dimension": 1,
+          "trials": 0,
+          "twist_basis": [
+            2
+          ],
+          "width": 4,
+          "witnesses": []
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            8,
+            0,
+            8,
+            8,
+            8,
+            0,
+            8,
+            0,
+            0,
+            0,
+            0,
+            8,
+            0,
+            0,
+            8,
+            0,
+            0,
+            8,
+            8,
+            0,
+            0,
+            0,
+            8,
+            0,
+            8,
+            5
+          ],
+          "intersection_dimension": 1,
+          "method": "exact local-square x witnesses spanning the dimension bound",
+          "original_basis": [
+            8
+          ],
+          "place": 9070489718245292721859,
+          "point_dimension": 1,
+          "trials": 2,
+          "twist_basis": [
+            8
+          ],
+          "width": 4,
+          "witnesses": [
+            {
+              "cubic_value": "-352828243349831404712617894579754187600628455638706467773936889935037634131",
+              "minimal_x": "1",
+              "short_x": "1",
+              "signature": 8,
+              "square_witness": {
+                "modulus": 9070489718245292721859,
+                "square": true,
+                "unit_residue": 125771828824753586904,
+                "valuation": 0
+              }
+            }
+          ]
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            8,
+            8,
+            0,
+            0,
+            8,
+            8,
+            8,
+            8,
+            8,
+            0,
+            0,
+            0,
+            8,
+            8,
+            8,
+            8,
+            0,
+            8,
+            8,
+            0,
+            8,
+            0,
+            8,
+            0,
+            8,
+            7
+          ],
+          "intersection_dimension": 1,
+          "method": "exact local-square x witnesses spanning the dimension bound",
+          "original_basis": [
+            8
+          ],
+          "place": 4994158462757908971835954831983527984976327938273965297923895199,
+          "point_dimension": 1,
+          "trials": 1,
+          "twist_basis": [
+            8
+          ],
+          "width": 4,
+          "witnesses": [
+            {
+              "cubic_value": "-352828243349831404712617799673077133207162344822366545727829706873326815760",
+              "minimal_x": "0",
+              "short_x": "0",
+              "signature": 8,
+              "square_witness": {
+                "modulus": 4994158462757908971835954831983527984976327938273965297923895199,
+                "square": true,
+                "unit_residue": 1952995405875323270691323155370726812916454613267904129953721566,
+                "valuation": 0
+              }
+            }
+          ]
+        }
+      ],
+      "original_product_basis": [
+        4,
+        944,
+        400,
+        2048,
+        507904,
+        1802240,
+        12582912,
+        100663296,
+        13958643712,
+        240518168576,
+        1374389534720,
+        2748779069440,
+        35184372088832,
+        562949953421312,
+        36028797018963968,
+        576460752303423488
+      ],
+      "relaxed_boundary_dimension": 16,
+      "schema": "rank-jump.production-minus-twist-case.v1",
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "twist_product_basis": [
+        544,
+        304,
+        2048,
+        131072,
+        1736704,
+        6291456,
+        100663296,
+        5368709120,
+        68719476736,
+        2748779069440,
+        10720238370816,
+        35184372088832,
+        562949953421312,
+        36028797018963968,
+        576460752303423488
+      ],
+      "witness_dimension": 25
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+        "artifacts/generated-results/elliptic-curves/rank_jump_derivative_local_duality_inputs_v1.json": "9c9c7db3e6881290438c0a5e86c9b307f0ee1089b1934c4ab10a99077dd6d14e",
+        "artifacts/generated-results/elliptic-curves/rank_jump_derivative_local_duality_v1.json": "34fc3b9b1ae3158e78fa047459dd70f899dc6fc0b010182545b68809bfd100be",
+        "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_primes_v1.json": "0ab1c0319c321254433781e06c1e91411cfcf7bb18ad162bbf829a3dc7fa82ad",
+        "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+        "artifacts/generated-results/elliptic-curves/rank_jump_scalar_cup_v1.json": "09c128a005c222fcd3a81d99c52b1582c7f2110b76c7362af368b1ef64089780",
+        "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/PRODUCTION_MINUS_TWIST_PROTOCOL.json": "86b8bf362c0f329f9c5077b197f70bd4eb99042adede87528c1ab2924d63c6e5",
+        "elliptic-curves/rank-jump/production_minus_twist.py": "d80d894779332a244f4de6d816c2b7b78c2686b6c7af52b47e29558981f90349"
+      },
+      "case_index": 4,
+      "complete": false,
+      "generic_dimension": 17,
+      "id": "published-R17:-2300/843",
+      "integral_cubic_ascending": [
+        "713827218925723547304411672228281833517446887134720684710147456285397920302209030846152704",
+        "-1503161773208672080973766449211708290944810023968557217021952",
+        "0",
+        "1"
+      ],
+      "joint_global_signatures": [
+        563664528666704,
+        712485148040200,
+        36288968957893792,
+        562975725329568,
+        577174129728351232,
+        613202926210908248,
+        713196501474544,
+        577283874197924952,
+        823147664306256,
+        36592434704084992,
+        612489549859319888,
+        613163165014294768,
+        613052500350136568,
+        36851919985635488,
+        1075900576,
+        149559353340072,
+        1610674176,
+        576571185039469576,
+        577134161301662728,
+        576571391200522248,
+        36178356372302856,
+        613053393705376856,
+        612639770099056808,
+        613162476211072000,
+        1141494264345495805
+      ],
+      "known_strict_dimension": 8,
+      "local": [
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            8,
+            0,
+            0,
+            0,
+            8,
+            0,
+            8,
+            0,
+            0,
+            0,
+            0,
+            8,
+            0,
+            0,
+            8,
+            0,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            0,
+            13
+          ],
+          "intersection_dimension": 1,
+          "method": "exact local-square x witnesses spanning the dimension bound",
+          "original_basis": [
+            8
+          ],
+          "place": 3,
+          "point_dimension": 1,
+          "trials": 1,
+          "twist_basis": [
+            8
+          ],
+          "width": 4,
+          "witnesses": [
+            {
+              "cubic_value": "-713827218925723547304411671863013522627739571458095437551702341585809084477849627124167275",
+              "minimal_x": "0",
+              "short_x": "-243",
+              "signature": 8,
+              "square_witness": {
+                "modulus": 3,
+                "square": true,
+                "unit_residue": 1,
+                "valuation": 18
+              }
+            }
+          ]
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            5,
+            0,
+            10,
+            10,
+            0,
+            5,
+            15,
+            5,
+            5,
+            0,
+            5,
+            15,
+            15,
+            10,
+            10,
+            10,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            10,
+            0,
+            15
+          ],
+          "intersection_dimension": 2,
+          "method": "-1 is a square in Q_p; labelled local conditions coincide",
+          "original_basis": [
+            5,
+            10
+          ],
+          "place": 5,
+          "point_dimension": 2,
+          "trials": 0,
+          "twist_basis": [
+            5,
+            10
+          ],
+          "width": 6,
+          "witnesses": []
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            60,
+            7,
+            7,
+            7,
+            59,
+            0,
+            7,
+            59,
+            60,
+            60,
+            60,
+            0,
+            60,
+            60,
+            60,
+            60,
+            60,
+            59,
+            59,
+            60,
+            59,
+            7,
+            0,
+            59,
+            34
+          ],
+          "intersection_dimension": 0,
+          "method": "exact local-square x witnesses spanning the dimension bound",
+          "original_basis": [
+            60,
+            7
+          ],
+          "place": 7,
+          "point_dimension": 2,
+          "trials": 43,
+          "twist_basis": [
+            13,
+            20
+          ],
+          "width": 6,
+          "witnesses": [
+            {
+              "cubic_value": "-713827218925723547304411672259848230754829000835169780143593330395238930805548732403604435",
+              "minimal_x": "21",
+              "short_x": "21",
+              "signature": 13,
+              "square_witness": {
+                "modulus": 7,
+                "square": true,
+                "unit_residue": 2,
+                "valuation": 4
+              }
+            },
+            {
+              "cubic_value": "-713827218925723547304411672196715436280064773434271589276701582175556909798869329288700973",
+              "minimal_x": "-21",
+              "short_x": "-21",
+              "signature": 20,
+              "square_witness": {
+                "modulus": 7,
+                "square": true,
+                "unit_residue": 4,
+                "valuation": 4
+              }
+            }
+          ]
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            8,
+            0,
+            0,
+            0,
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            8,
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            0,
+            8,
+            8,
+            8,
+            5
+          ],
+          "intersection_dimension": 1,
+          "method": "exact local-square x witnesses spanning the dimension bound",
+          "original_basis": [
+            8
+          ],
+          "place": 11,
+          "point_dimension": 1,
+          "trials": 4,
+          "twist_basis": [
+            8
+          ],
+          "width": 4,
+          "witnesses": [
+            {
+              "cubic_value": "-713827218925723547304411672231288157063864231296668217608570872867287540350146145280196600",
+              "minimal_x": "2",
+              "short_x": "2",
+              "signature": 8,
+              "square_witness": {
+                "modulus": 11,
+                "square": true,
+                "unit_residue": 4,
+                "valuation": 0
+              }
+            }
+          ]
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            2,
+            0,
+            2,
+            0,
+            0,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            0,
+            0,
+            2,
+            2,
+            2,
+            2,
+            0,
+            2,
+            7
+          ],
+          "intersection_dimension": 1,
+          "method": "-1 is a square in Q_p; labelled local conditions coincide",
+          "original_basis": [
+            2
+          ],
+          "place": 13,
+          "point_dimension": 1,
+          "trials": 0,
+          "twist_basis": [
+            2
+          ],
+          "width": 4,
+          "witnesses": []
+        },
+        {
+          "complete": false,
+          "global_signatures": [
+            96,
+            96,
+            0,
+            0,
+            32,
+            0,
+            0,
+            0,
+            0,
+            32,
+            32,
+            96,
+            64,
+            64,
+            64,
+            0,
+            96,
+            32,
+            64,
+            32,
+            0,
+            64,
+            0,
+            0,
+            75
+          ],
+          "intersection_dimension": null,
+          "method": "exact local-square x witnesses spanning the dimension bound",
+          "original_basis": [
+            96,
+            32
+          ],
+          "place": 2,
+          "point_dimension": 2,
+          "trials": 385,
+          "twist_basis": [
+            32
+          ],
+          "width": 7,
+          "witnesses": [
+            {
+              "cubic_value": "-713827218925723547304411674921947731107387256239710161697528713658497483253863557994905600",
+              "minimal_x": "7",
+              "short_x": "1792",
+              "signature": 32,
+              "square_witness": {
+                "modulus": 8,
+                "square": true,
+                "unit_residue": 1,
+                "valuation": 26
+              }
+            }
+          ]
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "intersection_dimension": 0,
+          "method": "ordered real roots: twist bounded component has signs (-,-,+)",
+          "original_basis": [],
+          "place": "infinity",
+          "point_dimension": 0,
+          "trials": 0,
+          "twist_basis": [],
+          "width": 1,
+          "witnesses": []
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            6,
+            0,
+            0,
+            6,
+            0,
+            0,
+            6,
+            0,
+            6,
+            0,
+            0,
+            6,
+            0,
+            0,
+            0,
+            6,
+            0,
+            0,
+            6,
+            0,
+            6,
+            0,
+            0,
+            6,
+            12
+          ],
+          "intersection_dimension": 0,
+          "method": "exact local-square x witnesses spanning the dimension bound",
+          "original_basis": [
+            6
+          ],
+          "place": 71,
+          "point_dimension": 1,
+          "trials": 160,
+          "twist_basis": [
+            12
+          ],
+          "width": 4,
+          "witnesses": [
+            {
+              "cubic_value": "-713827218925723547304411672348534775374140653612622000647084119560982722219693608207396864",
+              "minimal_x": "80",
+              "short_x": "80",
+              "signature": 12,
+              "square_witness": {
+                "modulus": 71,
+                "square": true,
+                "unit_residue": 64,
+                "valuation": 2
+              }
+            }
+          ]
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            10,
+            0,
+            10,
+            0,
+            13,
+            13,
+            10,
+            10,
+            10,
+            10,
+            0,
+            10,
+            0,
+            10,
+            0,
+            0,
+            0,
+            7,
+            7,
+            10,
+            0,
+            13,
+            10,
+            0,
+            47
+          ],
+          "intersection_dimension": 1,
+          "method": "exact local-square x witnesses spanning the dimension bound",
+          "original_basis": [
+            10,
+            7
+          ],
+          "place": 107,
+          "point_dimension": 2,
+          "trials": 85,
+          "twist_basis": [
+            10,
+            47
+          ],
+          "width": 6,
+          "witnesses": [
+            {
+              "cubic_value": "-713827218925723547304411672234294480610281575458615750506994289449177160398083259714240448",
+              "minimal_x": "4",
+              "short_x": "4",
+              "signature": 10,
+              "square_witness": {
+                "modulus": 107,
+                "square": true,
+                "unit_residue": 101,
+                "valuation": 0
+              }
+            },
+            {
+              "cubic_value": "-713827218925723547304411672165149039042682659733822493843255708065715899295529627731304808",
+              "minimal_x": "-42",
+              "short_x": "-42",
+              "signature": 47,
+              "square_witness": {
+                "modulus": 107,
+                "square": true,
+                "unit_residue": 13,
+                "valuation": 2
+              }
+            }
+          ]
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            34,
+            59,
+            0,
+            34,
+            34,
+            34,
+            59,
+            59,
+            0,
+            0,
+            25,
+            0,
+            59,
+            0,
+            34,
+            0,
+            25,
+            25,
+            25,
+            34,
+            0,
+            34,
+            25,
+            25
+          ],
+          "intersection_dimension": 1,
+          "method": "exact local-square x witnesses spanning the dimension bound",
+          "original_basis": [
+            34,
+            25
+          ],
+          "place": 283,
+          "point_dimension": 2,
+          "trials": 258,
+          "twist_basis": [
+            34,
+            49
+          ],
+          "width": 6,
+          "witnesses": [
+            {
+              "cubic_value": "-713827218925723547304411672226778671744238215053746918260935747994453110278240473629130753",
+              "minimal_x": "-1",
+              "short_x": "-1",
+              "signature": 34,
+              "square_witness": {
+                "modulus": 283,
+                "square": true,
+                "unit_residue": 36,
+                "valuation": 0
+              }
+            },
+            {
+              "cubic_value": "-713827218925723547304411671678124624523072905498322164298662221799597451529717089465146168",
+              "minimal_x": "-366",
+              "short_x": "-366",
+              "signature": 49,
+              "square_witness": {
+                "modulus": 283,
+                "square": true,
+                "unit_residue": 195,
+                "valuation": 2
+              }
+            }
+          ]
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            2,
+            2,
+            0,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            2,
+            0,
+            2,
+            7
+          ],
+          "intersection_dimension": 1,
+          "method": "-1 is a square in Q_p; labelled local conditions coincide",
+          "original_basis": [
+            2
+          ],
+          "place": 22013,
+          "point_dimension": 1,
+          "trials": 0,
+          "twist_basis": [
+            2
+          ],
+          "width": 4,
+          "witnesses": []
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            0,
+            8,
+            0,
+            0,
+            8,
+            0,
+            0,
+            0,
+            8,
+            8,
+            8,
+            8,
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            8,
+            8,
+            8,
+            13
+          ],
+          "intersection_dimension": 1,
+          "method": "exact local-square x witnesses spanning the dimension bound",
+          "original_basis": [
+            8
+          ],
+          "place": 16644390691,
+          "point_dimension": 1,
+          "trials": 4,
+          "twist_basis": [
+            8
+          ],
+          "width": 4,
+          "witnesses": [
+            {
+              "cubic_value": "-713827218925723547304411672231288157063864231296668217608570872867287540350146145280196600",
+              "minimal_x": "2",
+              "short_x": "2",
+              "signature": 8,
+              "square_witness": {
+                "modulus": 16644390691,
+                "square": true,
+                "unit_residue": 14107543477,
+                "valuation": 0
+              }
+            }
+          ]
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            0,
+            0,
+            0,
+            8,
+            8,
+            0,
+            8,
+            0,
+            0,
+            8,
+            8,
+            8,
+            0,
+            0,
+            0,
+            0,
+            8,
+            8,
+            8,
+            0,
+            8,
+            8,
+            8,
+            15
+          ],
+          "intersection_dimension": 1,
+          "method": "-1 is a square in Q_p; labelled local conditions coincide",
+          "original_basis": [
+            8
+          ],
+          "place": 49545498746840639425367772677949130481018258902148022792478518127145162432632657263874589,
+          "point_dimension": 1,
+          "trials": 0,
+          "twist_basis": [
+            8
+          ],
+          "width": 4,
+          "witnesses": []
+        }
+      ],
+      "original_product_basis": [
+        8,
+        80,
+        160,
+        61440,
+        7168,
+        524288,
+        2097152,
+        1610612736,
+        536870912,
+        25769803776,
+        687194767360,
+        481036337152,
+        149533581377536,
+        109951162777600,
+        562949953421312,
+        36028797018963968,
+        576460752303423488
+      ],
+      "relaxed_boundary_dimension": 17,
+      "schema": "rank-jump.production-minus-twist-case.v1",
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "twist_product_basis": [
+        8,
+        80,
+        160,
+        13312,
+        20480,
+        524288,
+        2097152,
+        536870912,
+        51539607552,
+        687194767360,
+        3229815406592,
+        149533581377536,
+        215504279044096,
+        562949953421312,
+        36028797018963968,
+        576460752303423488
+      ],
+      "witness_dimension": 24
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+        "artifacts/generated-results/elliptic-curves/rank_jump_derivative_local_duality_inputs_v1.json": "9c9c7db3e6881290438c0a5e86c9b307f0ee1089b1934c4ab10a99077dd6d14e",
+        "artifacts/generated-results/elliptic-curves/rank_jump_derivative_local_duality_v1.json": "34fc3b9b1ae3158e78fa047459dd70f899dc6fc0b010182545b68809bfd100be",
+        "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_primes_v1.json": "0ab1c0319c321254433781e06c1e91411cfcf7bb18ad162bbf829a3dc7fa82ad",
+        "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+        "artifacts/generated-results/elliptic-curves/rank_jump_scalar_cup_v1.json": "09c128a005c222fcd3a81d99c52b1582c7f2110b76c7362af368b1ef64089780",
+        "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/PRODUCTION_MINUS_TWIST_PROTOCOL.json": "86b8bf362c0f329f9c5077b197f70bd4eb99042adede87528c1ab2924d63c6e5",
+        "elliptic-curves/rank-jump/production_minus_twist.py": "d80d894779332a244f4de6d816c2b7b78c2686b6c7af52b47e29558981f90349"
+      },
+      "case_index": 5,
+      "complete": true,
+      "generic_dimension": 17,
+      "id": "published-R17:-1561/3133",
+      "integral_cubic_ascending": [
+        "128900832227812971002793243049766432229492164282639873998685258759480249197899892654080000",
+        "-892157636500647662171450158029394721897846492604962915942400",
+        "0",
+        "1"
+      ],
+      "joint_global_signatures": [
+        137441050624,
+        2336664584196,
+        146031055632,
+        137643430672,
+        137438954096,
+        2336663606036,
+        139788878452,
+        137441051412,
+        10740564756,
+        10739585024,
+        2207817662820,
+        139586503012,
+        2338610745348,
+        2199025353492,
+        139589582852,
+        137642446852,
+        2338610811236,
+        5874884968992
+      ],
+      "known_strict_dimension": 6,
+      "local": [
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            4,
+            0,
+            0,
+            0,
+            4,
+            4,
+            4,
+            4,
+            0,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            0
+          ],
+          "intersection_dimension": 0,
+          "method": "exact local-square x witnesses spanning the dimension bound",
+          "original_basis": [
+            4
+          ],
+          "place": 3,
+          "point_dimension": 1,
+          "trials": 55,
+          "twist_basis": [
+            10
+          ],
+          "width": 4,
+          "witnesses": [
+            {
+              "cubic_value": "-128900832227812971002793225272633367317586847854324025104966030222991037551416741113972376",
+              "minimal_x": "-27",
+              "short_x": "-19926",
+              "signature": 10,
+              "square_witness": {
+                "modulus": 3,
+                "square": true,
+                "unit_residue": 1,
+                "valuation": 30
+              }
+            }
+          ]
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            0,
+            49,
+            49,
+            39,
+            49,
+            39,
+            49,
+            49,
+            0,
+            22,
+            22,
+            0,
+            49,
+            0,
+            0,
+            22,
+            34
+          ],
+          "intersection_dimension": 2,
+          "method": "-1 is a square in Q_p; labelled local conditions coincide",
+          "original_basis": [
+            49,
+            22
+          ],
+          "place": 5,
+          "point_dimension": 2,
+          "trials": 0,
+          "twist_basis": [
+            49,
+            22
+          ],
+          "width": 6,
+          "witnesses": []
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            0,
+            4,
+            4,
+            0,
+            4,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            4,
+            0,
+            0,
+            4,
+            4,
+            0
+          ],
+          "intersection_dimension": 0,
+          "method": "exact local-square x witnesses spanning the dimension bound",
+          "original_basis": [
+            4
+          ],
+          "place": 7,
+          "point_dimension": 1,
+          "trials": 44,
+          "twist_basis": [
+            10
+          ],
+          "width": 4,
+          "witnesses": [
+            {
+              "cubic_value": "-128900832227812971002793243069393900232506412850411777475331942641232872035209076804802152",
+              "minimal_x": "22",
+              "short_x": "22",
+              "signature": 10,
+              "square_witness": {
+                "modulus": 7,
+                "square": true,
+                "unit_residue": 2,
+                "valuation": 4
+              }
+            }
+          ]
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            0,
+            4,
+            0,
+            0,
+            4,
+            4,
+            0,
+            0,
+            4,
+            0,
+            4,
+            0,
+            0,
+            0,
+            4,
+            4,
+            10
+          ],
+          "intersection_dimension": 1,
+          "method": "-1 is a square in Q_p; labelled local conditions coincide",
+          "original_basis": [
+            4
+          ],
+          "place": 13,
+          "point_dimension": 1,
+          "trials": 0,
+          "twist_basis": [
+            4
+          ],
+          "width": 4,
+          "witnesses": []
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            8,
+            4,
+            8,
+            12,
+            0,
+            0,
+            4,
+            8,
+            12,
+            8,
+            12,
+            0,
+            4,
+            8,
+            12,
+            8,
+            4,
+            27
+          ],
+          "intersection_dimension": 2,
+          "method": "exact local-square x witnesses spanning the dimension bound",
+          "original_basis": [
+            8,
+            4
+          ],
+          "place": 2,
+          "point_dimension": 2,
+          "trials": 13,
+          "twist_basis": [
+            8,
+            4
+          ],
+          "width": 7,
+          "witnesses": [
+            {
+              "cubic_value": "-128900832227812971002793242821374077285326362766748633543160209953631547091029386189602816",
+              "minimal_x": "-1",
+              "short_x": "-256",
+              "signature": 8,
+              "square_witness": {
+                "modulus": 8,
+                "square": true,
+                "unit_residue": 1,
+                "valuation": 26
+              }
+            },
+            {
+              "cubic_value": "-128900832227812971002793241679412302564497355187292431265534965924388036556676857390432256",
+              "minimal_x": "-6",
+              "short_x": "-1536",
+              "signature": 4,
+              "square_witness": {
+                "modulus": 8,
+                "square": true,
+                "unit_residue": 1,
+                "valuation": 26
+              }
+            }
+          ]
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            6,
+            0,
+            6,
+            0,
+            6,
+            6,
+            0,
+            0,
+            0,
+            6,
+            0,
+            0,
+            0,
+            0,
+            6,
+            0,
+            5
+          ],
+          "intersection_dimension": 0,
+          "method": "ordered real roots: twist bounded component has signs (-,-,+)",
+          "original_basis": [
+            6
+          ],
+          "place": "infinity",
+          "point_dimension": 1,
+          "trials": 0,
+          "twist_basis": [
+            3
+          ],
+          "width": 3,
+          "witnesses": []
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            0,
+            8,
+            8,
+            0,
+            8,
+            8,
+            0,
+            8,
+            0,
+            8,
+            13
+          ],
+          "intersection_dimension": 1,
+          "method": "-1 is a square in Q_p; labelled local conditions coincide",
+          "original_basis": [
+            8
+          ],
+          "place": 6158521,
+          "point_dimension": 1,
+          "trials": 0,
+          "twist_basis": [
+            8
+          ],
+          "width": 4,
+          "witnesses": []
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            7
+          ],
+          "intersection_dimension": 1,
+          "method": "-1 is a square in Q_p; labelled local conditions coincide",
+          "original_basis": [
+            2
+          ],
+          "place": 2482309513,
+          "point_dimension": 1,
+          "trials": 0,
+          "twist_basis": [
+            2
+          ],
+          "width": 4,
+          "witnesses": []
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            2,
+            2,
+            0,
+            2,
+            2,
+            2,
+            5
+          ],
+          "intersection_dimension": 1,
+          "method": "exact local-square x witnesses spanning the dimension bound",
+          "original_basis": [
+            2
+          ],
+          "place": 1992691645648087,
+          "point_dimension": 1,
+          "trials": 5,
+          "twist_basis": [
+            2
+          ],
+          "width": 4,
+          "witnesses": [
+            {
+              "cubic_value": "-128900832227812971002793243047982116956490868958296973682626469315684556212689966822195208",
+              "minimal_x": "-2",
+              "short_x": "-2",
+              "signature": 2,
+              "square_witness": {
+                "modulus": 1992691645648087,
+                "square": true,
+                "unit_residue": 677223866144739,
+                "valuation": 0
+              }
+            }
+          ]
+        },
+        {
+          "complete": true,
+          "global_signatures": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            2,
+            2,
+            0,
+            0,
+            2,
+            5
+          ],
+          "intersection_dimension": 1,
+          "method": "-1 is a square in Q_p; labelled local conditions coincide",
+          "original_basis": [
+            2
+          ],
+          "place": 1556252852391726354629684794059726062227237322704667229175658762505259467379346906344914138097,
+          "point_dimension": 1,
+          "trials": 0,
+          "twist_basis": [
+            2
+          ],
+          "width": 4,
+          "witnesses": []
+        }
+      ],
+      "original_product_basis": [
+        4,
+        784,
+        352,
+        4096,
+        65536,
+        2097152,
+        1048576,
+        201326592,
+        2147483648,
+        8589934592,
+        137438953472,
+        2199023255552
+      ],
+      "relaxed_boundary_dimension": 12,
+      "schema": "rank-jump.production-minus-twist-case.v1",
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "twist_product_basis": [
+        10,
+        784,
+        352,
+        10240,
+        65536,
+        2097152,
+        1048576,
+        100663296,
+        2147483648,
+        8589934592,
+        137438953472,
+        2199023255552
+      ],
+      "witness_dimension": 17
+    }
+  ],
+  "schema": "rank-jump.production-minus-twist-inputs.v1"
+}

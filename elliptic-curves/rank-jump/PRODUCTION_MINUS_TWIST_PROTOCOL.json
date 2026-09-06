@@ -1,0 +1,12 @@
+{
+  "schema": "rank-jump.production-minus-twist-protocol.v1",
+  "question": "Does the certified complete relaxed boundary determine the full Selmer dimension change under the scalar -1 twist of three retained production controls?",
+  "cases": [0, 4, 5],
+  "classification": "incidence, followed by previously certified CT solubility bounds; no visibility endpoint",
+  "limits": {"seconds_per_case": 60, "small_integer_radius": 128, "root_depth": 24, "root_offsets": [-2, -1, 0, 1, 2], "max_candidates_per_place": 2048},
+  "local_plan": "Use the exact dimension of the local point image. Reuse it where -1 is a local square. Else generate bounded rational x coordinates in the local minimal chart, certify the cubic value is a nonzero local square, and retain independent Kummer signatures until that dimension is reached. Include small integers, dyadic denominator four coordinates and root-neighbour coordinates. Missing local dimensions remain UNKNOWN.",
+  "global_plan": "Use the already certified relaxed boundary spanned by the retained rational subgroup and the derivative class. Intersect it with the complete twist local product. The kernel is the unchanged full strict class space U; retain its unknown excess epsilon explicitly.",
+  "retrospective_only": true,
+  "excluded": ["global point search", "parameter sweep", "class group computation", "new factorization campaign", "active search mutation", "numerical whole-rank claims with unknown epsilon"],
+  "replay": "Exclusive checkpoints and immutable certificates; exact local-square witnesses and independent matrix verification. No incomplete local span is treated as complete."
+}

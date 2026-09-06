@@ -1,0 +1,49 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+    "artifacts/generated-results/elliptic-curves/rank_jump_derivative_local_duality_inputs_v1.json": "9c9c7db3e6881290438c0a5e86c9b307f0ee1089b1934c4ab10a99077dd6d14e",
+    "artifacts/generated-results/elliptic-curves/rank_jump_derivative_local_duality_v1.json": "34fc3b9b1ae3158e78fa047459dd70f899dc6fc0b010182545b68809bfd100be",
+    "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+    "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_primes_v1.json": "0ab1c0319c321254433781e06c1e91411cfcf7bb18ad162bbf829a3dc7fa82ad",
+    "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+    "artifacts/generated-results/elliptic-curves/rank_jump_scalar_cup_v1.json": "09c128a005c222fcd3a81d99c52b1582c7f2110b76c7362af368b1ef64089780",
+    "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/rank-jump/PRODUCTION_MINUS_TWIST_PROTOCOL.json": "86b8bf362c0f329f9c5077b197f70bd4eb99042adede87528c1ab2924d63c6e5",
+    "elliptic-curves/rank-jump/production_minus_twist.py": "d80d894779332a244f4de6d816c2b7b78c2686b6c7af52b47e29558981f90349"
+  },
+  "input_sha256": "374705dfa8dad34c5e9a1d0e40ad4a9a383476c3aec9c93e6d1f6817c3849115",
+  "rows": [
+    {
+      "case_index": 0,
+      "status": "UNKNOWN"
+    },
+    {
+      "case_index": 4,
+      "status": "UNKNOWN"
+    },
+    {
+      "case_index": 5,
+      "changed_local_places": [
+        3,
+        7,
+        "infinity"
+      ],
+      "common_boundary_dimension": 8,
+      "epsilon_definition": "dim Cl(O_K,S)/2 - 6 >= 0, unchanged under this twist",
+      "full_Selmer_dimension_change": -3,
+      "full_common_Selmer_dimension": "14 + epsilon",
+      "full_original_Selmer_dimension": "17 + epsilon",
+      "full_twist_Selmer_dimension": "14 + epsilon",
+      "generic_dimension": 17,
+      "id": "published-R17:-1561/3133",
+      "known_rank_lower_bound": 17,
+      "known_strict_dimension": 6,
+      "original_boundary_dimension": 11,
+      "status": "PASS",
+      "twist_boundary_dimension": 8
+    }
+  ],
+  "schema": "rank-jump.production-minus-twist.v1"
+}

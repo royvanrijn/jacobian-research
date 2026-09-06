@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.production-minus-twist-completion-protocol.v1",
+  "reason": "The sealed first pass misses one local basis direction at case 0 prime 3 and case 4 prime 2; case 5 is complete. Refine only those two local residue trees.",
+  "targets": [[0, 3], [4, 2]],
+  "limits": {"seconds_per_target": 30, "max_depth": 48, "max_root_nodes": 4096, "max_candidate_evaluations": 16384},
+  "method": "In the local minimal x chart, clear denominators of the completed-square cubic and strip common p content. Lift its roots modulo p^d breadth first. Test the rational centres and all p children by the exact local square criterion; retain a direction only with an independent Kummer signature. Stop at the known full local dimension. Incomplete trees stay UNKNOWN.",
+  "classification": "incidence: complete local Selmer conditions; no global point search or rank predictor",
+  "replay": "Keep the first pass unchanged. Store exclusive per-target checkpoints, merge only certified full local bases, and retain unknown strict epsilon."
+}

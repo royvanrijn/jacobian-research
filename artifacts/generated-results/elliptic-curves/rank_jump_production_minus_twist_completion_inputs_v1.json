@@ -1,0 +1,211 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_inputs_v1.json": "374705dfa8dad34c5e9a1d0e40ad4a9a383476c3aec9c93e6d1f6817c3849115",
+    "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_v1.json": "8437c8f7b3ba17a9e19d66a45ca9b34c765caa41457699943583daa4095871f1",
+    "artifacts/generated-results/elliptic-curves/rank_jump_scalar_cup_v1.json": "09c128a005c222fcd3a81d99c52b1582c7f2110b76c7362af368b1ef64089780",
+    "elliptic-curves/rank-jump/PRODUCTION_MINUS_TWIST_COMPLETION_PROTOCOL.json": "3eacf47610f0cea0e353ab2e041128c9460655b3507c847fcf57e21ffeedf05c",
+    "elliptic-curves/rank-jump/production_minus_twist_completion.py": "83b07ca6391abefe09f38af8bd98b8e9990ffb778cbacde3c20c9e284839ced5"
+  },
+  "rows": [
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_inputs_v1.json": "374705dfa8dad34c5e9a1d0e40ad4a9a383476c3aec9c93e6d1f6817c3849115",
+        "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_v1.json": "8437c8f7b3ba17a9e19d66a45ca9b34c765caa41457699943583daa4095871f1",
+        "artifacts/generated-results/elliptic-curves/rank_jump_scalar_cup_v1.json": "09c128a005c222fcd3a81d99c52b1582c7f2110b76c7362af368b1ef64089780",
+        "elliptic-curves/rank-jump/PRODUCTION_MINUS_TWIST_COMPLETION_PROTOCOL.json": "3eacf47610f0cea0e353ab2e041128c9460655b3507c847fcf57e21ffeedf05c",
+        "elliptic-curves/rank-jump/production_minus_twist_completion.py": "83b07ca6391abefe09f38af8bd98b8e9990ffb778cbacde3c20c9e284839ced5"
+      },
+      "case_index": 0,
+      "complete": true,
+      "minimal_shift": "-243",
+      "minimal_u": "27",
+      "new_witnesses": [
+        {
+          "cubic_value": "-352828243349831404790568449804932662662620237453939895401011536969306370240",
+          "depth": 7,
+          "minimal_x": "1127",
+          "short_x": "821340",
+          "signature": 14,
+          "square_witness": {
+            "modulus": 3,
+            "square": true,
+            "unit_residue": 1,
+            "valuation": 32
+          }
+        }
+      ],
+      "place": 3,
+      "point_dimension": 1,
+      "root_polynomial_ascending": [
+        "-910711367539034324827860968784624386747127915714766155601502590839",
+        "-178583656613609913632588264590135324867787225",
+        "-1",
+        "1"
+      ],
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "trace": [
+        {
+          "basis_dimension": 0,
+          "depth": 1,
+          "root_nodes": 2,
+          "total_trials": 3
+        },
+        {
+          "basis_dimension": 0,
+          "depth": 2,
+          "root_nodes": 4,
+          "total_trials": 7
+        },
+        {
+          "basis_dimension": 0,
+          "depth": 3,
+          "root_nodes": 4,
+          "total_trials": 15
+        },
+        {
+          "basis_dimension": 0,
+          "depth": 4,
+          "root_nodes": 10,
+          "total_trials": 23
+        },
+        {
+          "basis_dimension": 0,
+          "depth": 5,
+          "root_nodes": 10,
+          "total_trials": 43
+        },
+        {
+          "basis_dimension": 0,
+          "depth": 6,
+          "root_nodes": 28,
+          "total_trials": 63
+        },
+        {
+          "basis_dimension": 1,
+          "depth": 7,
+          "root_nodes": 15,
+          "total_trials": 110
+        }
+      ],
+      "twist_basis": [
+        14
+      ]
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_inputs_v1.json": "374705dfa8dad34c5e9a1d0e40ad4a9a383476c3aec9c93e6d1f6817c3849115",
+        "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_v1.json": "8437c8f7b3ba17a9e19d66a45ca9b34c765caa41457699943583daa4095871f1",
+        "artifacts/generated-results/elliptic-curves/rank_jump_scalar_cup_v1.json": "09c128a005c222fcd3a81d99c52b1582c7f2110b76c7362af368b1ef64089780",
+        "elliptic-curves/rank-jump/PRODUCTION_MINUS_TWIST_COMPLETION_PROTOCOL.json": "3eacf47610f0cea0e353ab2e041128c9460655b3507c847fcf57e21ffeedf05c",
+        "elliptic-curves/rank-jump/production_minus_twist_completion.py": "83b07ca6391abefe09f38af8bd98b8e9990ffb778cbacde3c20c9e284839ced5"
+      },
+      "case_index": 4,
+      "complete": true,
+      "minimal_shift": "0",
+      "minimal_u": "16",
+      "new_witnesses": [
+        {
+          "cubic_value": "-713827218925723547304412212885508421212620971779037137177385543314667341266337154742616064",
+          "depth": 11,
+          "minimal_x": "1405",
+          "short_x": "359680",
+          "signature": 54,
+          "square_witness": {
+            "modulus": 8,
+            "square": true,
+            "unit_residue": 1,
+            "valuation": 46
+          }
+        }
+      ],
+      "place": 2,
+      "point_dimension": 2,
+      "root_polynomial_ascending": [
+        "-42547417815072747904325227274196257204857283063812296671280113237225885409248413494",
+        "-22936428424204591079311621844661076216809234984871783707",
+        "0",
+        "1"
+      ],
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "trace": [
+        {
+          "basis_dimension": 1,
+          "depth": 1,
+          "root_nodes": 2,
+          "total_trials": 2
+        },
+        {
+          "basis_dimension": 1,
+          "depth": 2,
+          "root_nodes": 3,
+          "total_trials": 4
+        },
+        {
+          "basis_dimension": 1,
+          "depth": 3,
+          "root_nodes": 3,
+          "total_trials": 7
+        },
+        {
+          "basis_dimension": 1,
+          "depth": 4,
+          "root_nodes": 5,
+          "total_trials": 10
+        },
+        {
+          "basis_dimension": 1,
+          "depth": 5,
+          "root_nodes": 5,
+          "total_trials": 15
+        },
+        {
+          "basis_dimension": 1,
+          "depth": 6,
+          "root_nodes": 9,
+          "total_trials": 20
+        },
+        {
+          "basis_dimension": 1,
+          "depth": 7,
+          "root_nodes": 9,
+          "total_trials": 29
+        },
+        {
+          "basis_dimension": 1,
+          "depth": 8,
+          "root_nodes": 17,
+          "total_trials": 38
+        },
+        {
+          "basis_dimension": 1,
+          "depth": 9,
+          "root_nodes": 17,
+          "total_trials": 55
+        },
+        {
+          "basis_dimension": 1,
+          "depth": 10,
+          "root_nodes": 33,
+          "total_trials": 72
+        },
+        {
+          "basis_dimension": 2,
+          "depth": 11,
+          "root_nodes": 23,
+          "total_trials": 100
+        }
+      ],
+      "twist_basis": [
+        32,
+        54
+      ]
+    }
+  ],
+  "schema": "rank-jump.production-minus-twist-completion-inputs.v1"
+}

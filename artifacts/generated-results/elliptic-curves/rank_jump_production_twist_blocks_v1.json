@@ -1,0 +1,217 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_completion_v1.json": "047150991455720102b190ae5e85472c3b5e97dbe79d79a1a088b847aa0f4561",
+    "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_verification_v1.json": "4fd6548ade33af97cc28bcb0ad4a1687bade5d686331a0fdba15fcde36e1bdf0",
+    "artifacts/generated-results/elliptic-curves/rank_jump_scalar_cup_v1.json": "09c128a005c222fcd3a81d99c52b1582c7f2110b76c7362af368b1ef64089780",
+    "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+    "elliptic-curves/rank-jump/production_twist_blocks.py": "9e704cfe0a01ac8f3fe42faa12b23a9a160cf05c053533783a6cf9256c346ddf"
+  },
+  "rows": [
+    {
+      "after_first_pair_CT_rank": 6,
+      "after_first_pair_dimension": 8,
+      "after_first_pair_exceptional_quotient_dimension": 8,
+      "boundary": "Basis decomposition is not a canonical partition of original rational points or a proof that radical covers are rational. All oracle coordinates are retrospective.",
+      "case_index": 0,
+      "classification": "solubility: CT form on the transported retained strict space of the -1 twist",
+      "full_retained_CT_rank": 8,
+      "generic_cross_CT_rank": 1,
+      "generic_rank": 16,
+      "generic_restricted_CT_rank": 0,
+      "generic_strict_dimension": 1,
+      "hyperbolic_pairs": [
+        [
+          {
+            "exceptional_quotient_mask": 0,
+            "strict_basis_mask": 1,
+            "witness_basis_mask": 36428
+          },
+          {
+            "exceptional_quotient_mask": 1,
+            "strict_basis_mask": 2,
+            "witness_basis_mask": 93788
+          }
+        ],
+        [
+          {
+            "exceptional_quotient_mask": 3,
+            "strict_basis_mask": 6,
+            "witness_basis_mask": 221223
+          },
+          {
+            "exceptional_quotient_mask": 5,
+            "strict_basis_mask": 11,
+            "witness_basis_mask": 363225
+          }
+        ],
+        [
+          {
+            "exceptional_quotient_mask": 15,
+            "strict_basis_mask": 30,
+            "witness_basis_mask": 983738
+          },
+          {
+            "exceptional_quotient_mask": 66,
+            "strict_basis_mask": 132,
+            "witness_basis_mask": 4353898
+          }
+        ],
+        [
+          {
+            "exceptional_quotient_mask": 18,
+            "strict_basis_mask": 37,
+            "witness_basis_mask": 1234888
+          },
+          {
+            "exceptional_quotient_mask": 47,
+            "strict_basis_mask": 94,
+            "witness_basis_mask": 3094785
+          }
+        ]
+      ],
+      "id": "a1-fibration-05:307/206",
+      "known_independent_rank": 25,
+      "observed_quotient_rank": 9,
+      "radical_basis": [
+        {
+          "exceptional_quotient_mask": 196,
+          "strict_basis_mask": 392,
+          "witness_basis_mask": 12877156
+        },
+        {
+          "exceptional_quotient_mask": 269,
+          "strict_basis_mask": 539,
+          "witness_basis_mask": 17680514
+        }
+      ],
+      "retained_strict_dimension": 10,
+      "strict_quotient_dimension": 9
+    },
+    {
+      "after_first_pair_CT_rank": 4,
+      "after_first_pair_dimension": 6,
+      "after_first_pair_exceptional_quotient_dimension": 6,
+      "boundary": "Basis decomposition is not a canonical partition of original rational points or a proof that radical covers are rational. All oracle coordinates are retrospective.",
+      "case_index": 4,
+      "classification": "solubility: CT form on the transported retained strict space of the -1 twist",
+      "full_retained_CT_rank": 6,
+      "generic_cross_CT_rank": 2,
+      "generic_rank": 17,
+      "generic_restricted_CT_rank": 2,
+      "generic_strict_dimension": 2,
+      "hyperbolic_pairs": [
+        [
+          {
+            "exceptional_quotient_mask": 0,
+            "strict_basis_mask": 1,
+            "witness_basis_mask": 26044
+          },
+          {
+            "exceptional_quotient_mask": 0,
+            "strict_basis_mask": 2,
+            "witness_basis_mask": 70723
+          }
+        ],
+        [
+          {
+            "exceptional_quotient_mask": 1,
+            "strict_basis_mask": 7,
+            "witness_basis_mask": 257387
+          },
+          {
+            "exceptional_quotient_mask": 4,
+            "strict_basis_mask": 8,
+            "witness_basis_mask": 564747
+          }
+        ],
+        [
+          {
+            "exceptional_quotient_mask": 21,
+            "strict_basis_mask": 45,
+            "witness_basis_mask": 2769028
+          },
+          {
+            "exceptional_quotient_mask": 68,
+            "strict_basis_mask": 139,
+            "witness_basis_mask": 9037821
+          }
+        ]
+      ],
+      "id": "published-R17:-2300/843",
+      "known_independent_rank": 24,
+      "observed_quotient_rank": 7,
+      "radical_basis": [
+        {
+          "exceptional_quotient_mask": 8,
+          "strict_basis_mask": 18,
+          "witness_basis_mask": 1129912
+        },
+        {
+          "exceptional_quotient_mask": 39,
+          "strict_basis_mask": 76,
+          "witness_basis_mask": 5148468
+        }
+      ],
+      "retained_strict_dimension": 8,
+      "strict_quotient_dimension": 6
+    },
+    {
+      "after_first_pair_CT_rank": 4,
+      "after_first_pair_dimension": 4,
+      "after_first_pair_exceptional_quotient_dimension": 0,
+      "boundary": "Basis decomposition is not a canonical partition of original rational points or a proof that radical covers are rational. All oracle coordinates are retrospective.",
+      "case_index": 5,
+      "classification": "solubility: CT form on the transported retained strict space of the -1 twist",
+      "full_retained_CT_rank": 6,
+      "generic_cross_CT_rank": 6,
+      "generic_rank": 17,
+      "generic_restricted_CT_rank": 6,
+      "generic_strict_dimension": 6,
+      "hyperbolic_pairs": [
+        [
+          {
+            "exceptional_quotient_mask": 0,
+            "strict_basis_mask": 1,
+            "witness_basis_mask": 1385
+          },
+          {
+            "exceptional_quotient_mask": 0,
+            "strict_basis_mask": 2,
+            "witness_basis_mask": 4337
+          }
+        ],
+        [
+          {
+            "exceptional_quotient_mask": 0,
+            "strict_basis_mask": 5,
+            "witness_basis_mask": 11562
+          },
+          {
+            "exceptional_quotient_mask": 0,
+            "strict_basis_mask": 17,
+            "witness_basis_mask": 36392
+          }
+        ],
+        [
+          {
+            "exceptional_quotient_mask": 0,
+            "strict_basis_mask": 14,
+            "witness_basis_mask": 30920
+          },
+          {
+            "exceptional_quotient_mask": 0,
+            "strict_basis_mask": 34,
+            "witness_basis_mask": 72325
+          }
+        ]
+      ],
+      "id": "published-R17:-1561/3133",
+      "known_independent_rank": 17,
+      "observed_quotient_rank": 0,
+      "radical_basis": [],
+      "retained_strict_dimension": 6,
+      "strict_quotient_dimension": 0
+    }
+  ],
+  "schema": "rank-jump.production-twist-blocks.v1"
+}

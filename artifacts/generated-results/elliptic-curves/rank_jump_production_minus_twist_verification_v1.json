@@ -1,0 +1,322 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_completion_inputs_v1.json": "8eace263efb73a6d89cc1c6aa7d0a17c8511e8207b545d0138ab964d1ce68284",
+    "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_completion_v1.json": "047150991455720102b190ae5e85472c3b5e97dbe79d79a1a088b847aa0f4561",
+    "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_inputs_v1.json": "374705dfa8dad34c5e9a1d0e40ad4a9a383476c3aec9c93e6d1f6817c3849115",
+    "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_v1.json": "8437c8f7b3ba17a9e19d66a45ca9b34c765caa41457699943583daa4095871f1",
+    "artifacts/generated-results/elliptic-curves/rank_jump_scalar_cup_v1.json": "09c128a005c222fcd3a81d99c52b1582c7f2110b76c7362af368b1ef64089780",
+    "elliptic-curves/rank-jump/verify_production_minus_twist.py": "0a7ca4bd72410fbe6fe7e4be7583d54ace46ebc29d0d5c502b77bb661c941339"
+  },
+  "rows": [
+    {
+      "Selmer_dimension_drop": 8,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_completion_inputs_v1.json": "8eace263efb73a6d89cc1c6aa7d0a17c8511e8207b545d0138ab964d1ce68284",
+        "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_completion_v1.json": "047150991455720102b190ae5e85472c3b5e97dbe79d79a1a088b847aa0f4561",
+        "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_inputs_v1.json": "374705dfa8dad34c5e9a1d0e40ad4a9a383476c3aec9c93e6d1f6817c3849115",
+        "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_v1.json": "8437c8f7b3ba17a9e19d66a45ca9b34c765caa41457699943583daa4095871f1",
+        "artifacts/generated-results/elliptic-curves/rank_jump_scalar_cup_v1.json": "09c128a005c222fcd3a81d99c52b1582c7f2110b76c7362af368b1ef64089780",
+        "elliptic-curves/rank-jump/verify_production_minus_twist.py": "0a7ca4bd72410fbe6fe7e4be7583d54ace46ebc29d0d5c502b77bb661c941339"
+      },
+      "boundary": "epsilon is the same unknown strict excess for each original/twist pair; separate across cases. No numerical twist rank or original exact rank is claimed.",
+      "boundary_certificate_needs_exceptional_points": false,
+      "case_index": 0,
+      "full_relaxed_boundary_dimension": 16,
+      "full_twist_Selmer_dimension": "17 + epsilon",
+      "full_twist_Selmer_is_subspace_of_original": true,
+      "full_twist_rank_upper_bound": "9 + epsilon",
+      "generic_and_derivative_boundary_dimension": 16,
+      "id": "a1-fibration-05:307/206",
+      "local": [
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 1,
+          "place": 3,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 3,
+          "local_square_witnesses": 2,
+          "place": 7,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 0,
+          "place": 13,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 3,
+          "local_square_witnesses": 2,
+          "place": 2,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 0,
+          "local_square_witnesses": 0,
+          "place": "infinity",
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 0,
+          "place": 17,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 0,
+          "local_square_witnesses": 0,
+          "place": 19,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 1,
+          "place": 23,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 1,
+          "place": 31,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 3,
+          "local_square_witnesses": 2,
+          "place": 79,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 0,
+          "place": 3677,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 0,
+          "place": 19022417,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 1,
+          "place": 9070489718245292721859,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 1,
+          "place": 4994158462757908971835954831983527984976327938273965297923895199,
+          "status": "PASS"
+        }
+      ],
+      "rank_drop_lower_bound": "16 - dim Sha(original)[2]",
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "status": "PASS",
+      "twist_Sha_2_dimension_lower_bound": 8
+    },
+    {
+      "Selmer_dimension_drop": 6,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_completion_inputs_v1.json": "8eace263efb73a6d89cc1c6aa7d0a17c8511e8207b545d0138ab964d1ce68284",
+        "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_completion_v1.json": "047150991455720102b190ae5e85472c3b5e97dbe79d79a1a088b847aa0f4561",
+        "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_inputs_v1.json": "374705dfa8dad34c5e9a1d0e40ad4a9a383476c3aec9c93e6d1f6817c3849115",
+        "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_v1.json": "8437c8f7b3ba17a9e19d66a45ca9b34c765caa41457699943583daa4095871f1",
+        "artifacts/generated-results/elliptic-curves/rank_jump_scalar_cup_v1.json": "09c128a005c222fcd3a81d99c52b1582c7f2110b76c7362af368b1ef64089780",
+        "elliptic-curves/rank-jump/verify_production_minus_twist.py": "0a7ca4bd72410fbe6fe7e4be7583d54ace46ebc29d0d5c502b77bb661c941339"
+      },
+      "boundary": "epsilon is the same unknown strict excess for each original/twist pair; separate across cases. No numerical twist rank or original exact rank is claimed.",
+      "boundary_certificate_needs_exceptional_points": true,
+      "case_index": 4,
+      "full_relaxed_boundary_dimension": 17,
+      "full_twist_Selmer_dimension": "18 + epsilon",
+      "full_twist_Selmer_is_subspace_of_original": true,
+      "full_twist_rank_upper_bound": "12 + epsilon",
+      "generic_and_derivative_boundary_dimension": 16,
+      "id": "published-R17:-2300/843",
+      "local": [
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 1,
+          "place": 3,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 3,
+          "local_square_witnesses": 0,
+          "place": 5,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 3,
+          "local_square_witnesses": 2,
+          "place": 7,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 1,
+          "place": 11,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 0,
+          "place": 13,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 3,
+          "local_square_witnesses": 2,
+          "place": 2,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 0,
+          "local_square_witnesses": 0,
+          "place": "infinity",
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 1,
+          "place": 71,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 3,
+          "local_square_witnesses": 2,
+          "place": 107,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 3,
+          "local_square_witnesses": 2,
+          "place": 283,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 0,
+          "place": 22013,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 1,
+          "place": 16644390691,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 0,
+          "place": 49545498746840639425367772677949130481018258902148022792478518127145162432632657263874589,
+          "status": "PASS"
+        }
+      ],
+      "rank_drop_lower_bound": "12 - dim Sha(original)[2]",
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "status": "PASS",
+      "twist_Sha_2_dimension_lower_bound": 6
+    },
+    {
+      "Selmer_dimension_drop": 3,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_completion_inputs_v1.json": "8eace263efb73a6d89cc1c6aa7d0a17c8511e8207b545d0138ab964d1ce68284",
+        "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_completion_v1.json": "047150991455720102b190ae5e85472c3b5e97dbe79d79a1a088b847aa0f4561",
+        "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_inputs_v1.json": "374705dfa8dad34c5e9a1d0e40ad4a9a383476c3aec9c93e6d1f6817c3849115",
+        "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_v1.json": "8437c8f7b3ba17a9e19d66a45ca9b34c765caa41457699943583daa4095871f1",
+        "artifacts/generated-results/elliptic-curves/rank_jump_scalar_cup_v1.json": "09c128a005c222fcd3a81d99c52b1582c7f2110b76c7362af368b1ef64089780",
+        "elliptic-curves/rank-jump/verify_production_minus_twist.py": "0a7ca4bd72410fbe6fe7e4be7583d54ace46ebc29d0d5c502b77bb661c941339"
+      },
+      "boundary": "epsilon is the same unknown strict excess for each original/twist pair; separate across cases. No numerical twist rank or original exact rank is claimed.",
+      "boundary_certificate_needs_exceptional_points": false,
+      "case_index": 5,
+      "full_relaxed_boundary_dimension": 12,
+      "full_twist_Selmer_dimension": "14 + epsilon",
+      "full_twist_Selmer_is_subspace_of_original": true,
+      "full_twist_rank_upper_bound": "8 + epsilon",
+      "generic_and_derivative_boundary_dimension": 12,
+      "id": "published-R17:-1561/3133",
+      "local": [
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 1,
+          "place": 3,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 3,
+          "local_square_witnesses": 0,
+          "place": 5,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 1,
+          "place": 7,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 0,
+          "place": 13,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 3,
+          "local_square_witnesses": 2,
+          "place": 2,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 0,
+          "local_square_witnesses": 0,
+          "place": "infinity",
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 0,
+          "place": 6158521,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 0,
+          "place": 2482309513,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 1,
+          "place": 1992691645648087,
+          "status": "PASS"
+        },
+        {
+          "independent_nonzero_subsets": 1,
+          "local_square_witnesses": 0,
+          "place": 1556252852391726354629684794059726062227237322704667229175658762505259467379346906344914138097,
+          "status": "PASS"
+        }
+      ],
+      "rank_drop_lower_bound": "9 - dim Sha(original)[2]",
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "status": "PASS",
+      "twist_Sha_2_dimension_lower_bound": 6
+    }
+  ],
+  "schema": "rank-jump.production-minus-twist-verification.v1"
+}
