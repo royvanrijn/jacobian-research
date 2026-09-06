@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.retained-norm-batch-capacity-protocol.v1",
+  "population": "All 296 retained smooth principal elements from the fixed coprime 512-box for MW16-05 at 3/17. No resieving, new norm values, new points or adaptive source waves.",
+  "provenance": "Audit the original fixed-box source and equation-only norm-form construction. Export only the defining cubic, equation bad-prime support, affine map to the masked reference, principal elements and complete prime-ideal blocks at their norm primes. Do not import class anchors, exceptional classes or point-derived principal relations.",
+  "test": "For alpha_j form pi_j=Norm(alpha_j)*alpha_j. Prove all retained principal ideal products and calculate valuations of pi_j at every prime outside S in its support. Measure the kernel of that parity map. Full row rank excludes every nonempty product from strict Selmer even after generic correction.",
+  "exploratory_status": "The saved parity matrix was inspected before this protocol and had rank296. This is a certification of that retrospective observation, not a preregistered prediction.",
+  "limits": {"worker_seconds": 60, "verification_seconds": 60, "pari_stack_bytes": 268435456, "workers": 1, "new_norms": 0, "new_parameters": 0, "point_searches": 0, "class_group_calls": 0, "general_factorization_calls": 0},
+  "failure": "UNKNOWN on incomplete support, failed ideal identity or timeout. Preserve checkpoints; no automatic escalation."
+}

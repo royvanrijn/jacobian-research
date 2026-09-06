@@ -1,5 +1,11 @@
 # A complete +6 reference for the missing additional strict block
 
+Follow-up: [the retained norm-relation capacity test](RETAINED_NORM_RELATIONS_DO_NOT_YET_SUPPLY_THE_BLOCK.md)
+excludes every nonempty product in the296-element fixed-box norm-projection
+dictionary by complete ramification parity. A separate early-wave survivor
+is proved to belong to the generic subgroup by an explicit square-root
+identity. Neither supplies an additional strict direction.
+
 The supplemental fibre **a1-fibration-05 at t=3/17** now has an exact
 local-boundary calculation using only its equation and sixteen generic
 sections. Its generic strict dimension is **6**, its inherited minus-one

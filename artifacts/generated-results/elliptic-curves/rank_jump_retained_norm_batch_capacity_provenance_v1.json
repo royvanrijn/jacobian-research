@@ -1,0 +1,19 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_bounded_gain_reference_v1.json": "5093cc8eb720cf623596b3ada8abbf318ee5270e0da7ba01bbf2dc776d1491ba",
+    "artifacts/generated-results/elliptic-curves/rank_jump_retained_norm_batch_capacity_inputs_v1.json": "1d339793fae18f32807bcd7944a7627c40edaa0eadc9a07c73fed4550b7c1952",
+    "artifacts/generated-results/elliptic-curves/small_conductor_norm_batch_relations_v1.json": "a1fcd9cfa3c06355f771ac8e9c2b4dfa6309f40a3db7a5def33e495df4c2f40e",
+    "artifacts/generated-results/elliptic-curves/small_conductor_norm_batch_v1.json": "b3ed673a0d608f46d00bba72cbbd7662f864889868744fa4f581dd32b77636ca",
+    "artifacts/generated-results/elliptic-curves/small_conductor_reduced_norm_form_v1.json": "8dab54430620b0e3e3c55ce3c6cf93c1346cdd7e79b1879091fe3c4dec0e63f2",
+    "elliptic-curves/cas/audit_small_conductor_norm_batch.sage": "67ae060aa1c23d0a3f1c46244e95dd6f7758a05fef0efca0c0b2877a3ab62fc5",
+    "elliptic-curves/cas/extend_small_conductor_norm_batch.py": "f9b0707bb11d32f807dff2749172a8332dda97afffb51aaed7acbaaa7d88a228",
+    "elliptic-curves/cas/prepare_small_conductor_norm_form.py": "968f6c88cabad6d3b0800ca51d0d7fad3b3048338746d3db60272342d5135f84",
+    "elliptic-curves/rank-jump/RETAINED_NORM_BATCH_CAPACITY_PROTOCOL.json": "2f493eafe5a4346a1f2a8c8dca733d6ae412cabfa075495969987dbd94f90c86"
+  },
+  "original_primitive_pair_count": 319407,
+  "retained_relation_count": 296,
+  "schema": "rank-jump.retained-norm-batch-capacity-provenance.v1",
+  "selection": "Retrospective fixed-box relation batch; later targeted/protected/point-derived waves excluded.",
+  "source_fixed_box": 512,
+  "whitelist": "Equation and norm-map data, all principal relation rows, complete prime ideal blocks at their norm primes. No class bound, outcome label, exceptional point, anchor or character."
+}

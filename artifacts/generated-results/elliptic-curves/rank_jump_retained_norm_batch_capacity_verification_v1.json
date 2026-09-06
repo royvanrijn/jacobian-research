@@ -1,0 +1,18 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_retained_norm_batch_capacity_inputs_v1.json": "1d339793fae18f32807bcd7944a7627c40edaa0eadc9a07c73fed4550b7c1952",
+    "artifacts/generated-results/elliptic-curves/rank_jump_retained_norm_batch_capacity_provenance_v1.json": "e434824f2774cfe2fb0c79fc37744898bd6fe299a34332223a381bfef9f41025",
+    "artifacts/generated-results/elliptic-curves/rank_jump_retained_norm_batch_capacity_v1.json": "02c2a4fa83d77c5a30bb71ffbdde92f653e9668d8e631efd0084aa5e669d0f92",
+    "elliptic-curves/rank-jump/verify_retained_norm_batch_capacity.py": "403fc7eb5bbbe8b6259f4efaec645561a9545f8185d9142d3563fbed3944a1bc",
+    "elliptic-curves/rank-jump/verify_unpointed_governing_norm.py": "69828517faa1ebdc92218dc338cfe156fbc8a16020bf6b28d8f59a60bc4c847a"
+  },
+  "boundary": "Verifies the whole 296-element dictionary exclusion. Does not assert completeness of the dictionary or replay its original exhaustive smoothness sieve.",
+  "coefficient_kernel_dimension": 0,
+  "complete_rational_prime_blocks": 1211,
+  "independent_ideal_valuation_checks": 18564,
+  "outside_parity_rank": 296,
+  "rational_norm_checks": 296,
+  "schema": "rank-jump.retained-norm-batch-capacity-verification.v1",
+  "status": "PASS",
+  "used_odd_valuation_coordinates": 1830
+}
