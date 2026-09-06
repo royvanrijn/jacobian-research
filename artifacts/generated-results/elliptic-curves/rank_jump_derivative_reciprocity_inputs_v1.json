@@ -1,0 +1,822 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+    "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+    "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_primes_v1.json": "0ab1c0319c321254433781e06c1e91411cfcf7bb18ad162bbf829a3dc7fa82ad",
+    "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+    "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/rank-jump/DERIVATIVE_RECIPROCITY_PROTOCOL.json": "c7d3b2e79b4cf838403801371d41c2c24895677f6e5f2a0d21a5ca42d225703d",
+    "elliptic-curves/rank-jump/derivative_reciprocity.py": "7b866ab051d4f34780e509806ccc060ed6ccccec3657258010bf35295d693ba3"
+  },
+  "cases": [
+    {
+      "beta_real_sign_bits": [
+        1,
+        0,
+        1
+      ],
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+        "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_primes_v1.json": "0ab1c0319c321254433781e06c1e91411cfcf7bb18ad162bbf829a3dc7fa82ad",
+        "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+        "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/DERIVATIVE_RECIPROCITY_PROTOCOL.json": "c7d3b2e79b4cf838403801371d41c2c24895677f6e5f2a0d21a5ca42d225703d",
+        "elliptic-curves/rank-jump/derivative_reciprocity.py": "7b866ab051d4f34780e509806ccc060ed6ccccec3657258010bf35295d693ba3"
+      },
+      "case_index": 0,
+      "cubic_discriminant": "58233278952179470469977910884664891521759317551367810012247366925450623153073659973656422443531746852274311243477496877561637946672408901489221064192",
+      "derivative_beta_coordinates": [
+        "5526726999332905335132320273512475784155664799791474033696628397917502500149506005291214853746126989958855967375359532035746285124737030014680451688844779225686875300336970808661672652544109064935424",
+        "0",
+        "-174699836856538411409933732653994674565277952654103430036742100776351869459220979920969267330595240556822933730432490632684913840017226704467663192576"
+      ],
+      "functional_mask": 63352,
+      "generic_image_dimension": 15,
+      "id": "a1-fibration-05:307/206",
+      "known_image_dimension": 15,
+      "known_image_equals_reciprocity_hyperplane": true,
+      "known_point_local_coordinates": [
+        50561,
+        41803,
+        17160,
+        20803,
+        59848,
+        41229,
+        61912,
+        44066,
+        47446,
+        8008,
+        4816,
+        25419,
+        45966,
+        43900,
+        52919,
+        36160,
+        323,
+        57415,
+        53488,
+        14419,
+        43081,
+        3785,
+        61652,
+        11633,
+        50741
+      ],
+      "local": [
+        {
+          "basis_generic_indices": [
+            0
+          ],
+          "beta_local_signature": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "dimension": 1,
+          "functional_bits": [
+            0
+          ],
+          "hilbert_symbols_by_basis": [
+            [
+              1,
+              1
+            ]
+          ],
+          "place": 3,
+          "point_coordinates": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "basis_generic_indices": [
+            1,
+            5
+          ],
+          "beta_local_signature": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "dimension": 2,
+          "functional_bits": [
+            0,
+            0
+          ],
+          "hilbert_symbols_by_basis": [
+            [
+              -1,
+              1,
+              -1
+            ],
+            [
+              -1,
+              1,
+              -1
+            ]
+          ],
+          "place": 7,
+          "point_coordinates": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            2,
+            0,
+            1,
+            3,
+            0,
+            0,
+            1,
+            3,
+            2,
+            3,
+            0,
+            1,
+            3,
+            0,
+            1,
+            0,
+            0,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "basis_generic_indices": [
+            1
+          ],
+          "beta_local_signature": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "dimension": 1,
+          "functional_bits": [
+            1
+          ],
+          "hilbert_symbols_by_basis": [
+            [
+              -1,
+              1
+            ]
+          ],
+          "place": 13,
+          "point_coordinates": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "basis_generic_indices": [
+            6,
+            7
+          ],
+          "beta_local_signature": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "dimension": 2,
+          "functional_bits": [
+            1,
+            1
+          ],
+          "hilbert_symbols_by_basis": [
+            [
+              1,
+              -1
+            ],
+            [
+              -1,
+              1
+            ]
+          ],
+          "place": 2,
+          "point_coordinates": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            0,
+            1,
+            0,
+            0,
+            3,
+            3,
+            0,
+            0,
+            0,
+            3,
+            1,
+            0,
+            0,
+            1,
+            3,
+            3
+          ]
+        },
+        {
+          "basis_generic_indices": [
+            1
+          ],
+          "beta_local_signature": [
+            1,
+            0,
+            1
+          ],
+          "dimension": 1,
+          "functional_bits": [
+            1
+          ],
+          "hilbert_symbols_by_basis": [
+            [
+              1,
+              1,
+              -1
+            ]
+          ],
+          "place": "infinity",
+          "point_coordinates": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "basis_generic_indices": [
+            0
+          ],
+          "beta_local_signature": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "dimension": 1,
+          "functional_bits": [
+            0
+          ],
+          "hilbert_symbols_by_basis": [
+            [
+              1,
+              1
+            ]
+          ],
+          "place": 17,
+          "point_coordinates": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "basis_generic_indices": [],
+          "beta_local_signature": [
+            0,
+            0
+          ],
+          "dimension": 0,
+          "functional_bits": [],
+          "hilbert_symbols_by_basis": [],
+          "place": 19,
+          "point_coordinates": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "basis_generic_indices": [
+            0
+          ],
+          "beta_local_signature": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "dimension": 1,
+          "functional_bits": [
+            1
+          ],
+          "hilbert_symbols_by_basis": [
+            [
+              1,
+              -1
+            ]
+          ],
+          "place": 23,
+          "point_coordinates": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "basis_generic_indices": [
+            1
+          ],
+          "beta_local_signature": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "dimension": 1,
+          "functional_bits": [
+            1
+          ],
+          "hilbert_symbols_by_basis": [
+            [
+              1,
+              -1
+            ]
+          ],
+          "place": 31,
+          "point_coordinates": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "basis_generic_indices": [
+            0,
+            4
+          ],
+          "beta_local_signature": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "dimension": 2,
+          "functional_bits": [
+            1,
+            0
+          ],
+          "hilbert_symbols_by_basis": [
+            [
+              1,
+              -1,
+              1
+            ],
+            [
+              -1,
+              -1,
+              1
+            ]
+          ],
+          "place": 79,
+          "point_coordinates": [
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            3,
+            2,
+            3,
+            0,
+            0,
+            0,
+            2,
+            3,
+            3,
+            0,
+            0,
+            0,
+            2,
+            2,
+            3,
+            0,
+            3,
+            1
+          ]
+        },
+        {
+          "basis_generic_indices": [
+            3
+          ],
+          "beta_local_signature": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "dimension": 1,
+          "functional_bits": [
+            1
+          ],
+          "hilbert_symbols_by_basis": [
+            [
+              -1,
+              1
+            ]
+          ],
+          "place": 3677,
+          "point_coordinates": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "basis_generic_indices": [
+            1
+          ],
+          "beta_local_signature": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "dimension": 1,
+          "functional_bits": [
+            1
+          ],
+          "hilbert_symbols_by_basis": [
+            [
+              -1,
+              1
+            ]
+          ],
+          "place": 19022417,
+          "point_coordinates": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "basis_generic_indices": [
+            0
+          ],
+          "beta_local_signature": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "dimension": 1,
+          "functional_bits": [
+            1
+          ],
+          "hilbert_symbols_by_basis": [
+            [
+              1,
+              -1
+            ]
+          ],
+          "place": 9070489718245292721859,
+          "point_coordinates": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "basis_generic_indices": [
+            0
+          ],
+          "beta_local_signature": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "dimension": 1,
+          "functional_bits": [
+            1
+          ],
+          "hilbert_symbols_by_basis": [
+            [
+              1,
+              -1
+            ]
+          ],
+          "place": 4994158462757908971835954831983527984976327938273965297923895199,
+          "point_coordinates": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ]
+        }
+      ],
+      "local_order_basis": [
+        "1",
+        "1/1458*z + 1/3",
+        "1/100061663605731497124*z^2 + 26256698999857691941/471140038259982*z - 612987379680583227571813265183530863390574/969423947037"
+      ],
+      "local_product_dimension": 16,
+      "norm_beta": "11499659434330447341071902679708354400000783787029087696777410129109138696486122823778760719581853692051610305460619576491791211693016126880320785002420688543782977244516368369022941345671681542687579861079216145670913427301994023309582031327083400244311815156535370183214494019667897629695056017263511065592460965281198039227385656230960558576687301427260788238109346793464458350965865895657280262910123431964248348581113715373736533843928532774100944898293426624266651220698276104706547600658699000588749553737260317728055897299605379651943388866230991920145785785765407331776337597147954282496",
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      }
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+        "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_primes_v1.json": "0ab1c0319c321254433781e06c1e91411cfcf7bb18ad162bbf829a3dc7fa82ad",
+        "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+        "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/DERIVATIVE_RECIPROCITY_PROTOCOL.json": "c7d3b2e79b4cf838403801371d41c2c24895677f6e5f2a0d21a5ca42d225703d",
+        "elliptic-curves/rank-jump/derivative_reciprocity.py": "7b866ab051d4f34780e509806ccc060ed6ccccec3657258010bf35295d693ba3"
+      },
+      "case_index": 4,
+      "reason": "worker failure",
+      "status": "UNKNOWN"
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+        "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_primes_v1.json": "0ab1c0319c321254433781e06c1e91411cfcf7bb18ad162bbf829a3dc7fa82ad",
+        "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+        "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/DERIVATIVE_RECIPROCITY_PROTOCOL.json": "c7d3b2e79b4cf838403801371d41c2c24895677f6e5f2a0d21a5ca42d225703d",
+        "elliptic-curves/rank-jump/derivative_reciprocity.py": "7b866ab051d4f34780e509806ccc060ed6ccccec3657258010bf35295d693ba3"
+      },
+      "case_index": 5,
+      "reason": "40-second timeout",
+      "status": "UNKNOWN"
+    }
+  ],
+  "schema": "rank-jump.derivative-reciprocity-inputs.v1"
+}

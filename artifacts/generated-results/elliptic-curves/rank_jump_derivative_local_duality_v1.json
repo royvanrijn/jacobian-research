@@ -1,0 +1,86 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+    "artifacts/generated-results/elliptic-curves/rank_jump_derivative_reciprocity_inputs_v1.json": "4bd83dfdc7a1d65bb91ed868943c16bbce42e534bdc646b899d1b03ce527d1eb",
+    "artifacts/generated-results/elliptic-curves/rank_jump_derivative_reciprocity_v1.json": "570168d48529758affeb47103809c492517346e9d9d4599b4dc92287d3368994",
+    "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+    "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_primes_v1.json": "0ab1c0319c321254433781e06c1e91411cfcf7bb18ad162bbf829a3dc7fa82ad",
+    "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+    "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/rank-jump/DERIVATIVE_LOCAL_DUALITY_PROTOCOL.json": "5a389945d68376cfb64c8b52984e0b75968eae05e88de56a78da838db2ff5858",
+    "elliptic-curves/rank-jump/derivative_local_duality.py": "ff658a4a39b0d4316cd2699210a27c5c31412a36e13eb2f122bdc4a843202d16"
+  },
+  "input_sha256": "9c9c7db3e6881290438c0a5e86c9b307f0ee1089b1934c4ab10a99077dd6d14e",
+  "rows": [
+    {
+      "boundary": "No upper bound on epsilon and no new rational point or global solubility claim.",
+      "boundary_bit": 0,
+      "case_index": 0,
+      "epsilon_definition": "dim_F2 Cl(O_K,S)/2 - 10 >= 0",
+      "full_Selmer_dimension_formula": "25 + epsilon",
+      "full_Selmer_local_image_dimension": 15,
+      "full_relative_Selmer_dimension_formula": "9 + epsilon",
+      "id": "a1-fibration-05:307/206",
+      "local_product_dimension": 16,
+      "outside_places": [
+        13,
+        2,
+        "infinity",
+        23,
+        31,
+        79,
+        3677,
+        19022417,
+        9070489718245292721859,
+        4994158462757908971835954831983527984976327938273965297923895199
+      ]
+    },
+    {
+      "boundary": "No upper bound on epsilon and no new rational point or global solubility claim.",
+      "boundary_bit": 0,
+      "case_index": 4,
+      "epsilon_definition": "dim_F2 Cl(O_K,S)/2 - 8 >= 0",
+      "full_Selmer_dimension_formula": "24 + epsilon",
+      "full_Selmer_local_image_dimension": 16,
+      "full_relative_Selmer_dimension_formula": "7 + epsilon",
+      "id": "published-R17:-2300/843",
+      "local_product_dimension": 17,
+      "outside_places": [
+        3,
+        7,
+        11,
+        13,
+        2,
+        71,
+        107,
+        22013,
+        16644390691,
+        49545498746840639425367772677949130481018258902148022792478518127145162432632657263874589
+      ]
+    },
+    {
+      "boundary": "No upper bound on epsilon and no new rational point or global solubility claim.",
+      "boundary_bit": 0,
+      "case_index": 5,
+      "epsilon_definition": "dim_F2 Cl(O_K,S)/2 - 6 >= 0",
+      "full_Selmer_dimension_formula": "17 + epsilon",
+      "full_Selmer_local_image_dimension": 11,
+      "full_relative_Selmer_dimension_formula": "0 + epsilon",
+      "id": "published-R17:-1561/3133",
+      "local_product_dimension": 12,
+      "outside_places": [
+        5,
+        13,
+        2,
+        "infinity",
+        6158521,
+        2482309513,
+        1992691645648087,
+        1556252852391726354629684794059726062227237322704667229175658762505259467379346906344914138097
+      ]
+    }
+  ],
+  "schema": "rank-jump.derivative-local-duality.v1"
+}

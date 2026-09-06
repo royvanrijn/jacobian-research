@@ -1,5 +1,10 @@
 # Strict Selmer incidence and explicit Artin-dual ideal blocks
 
+Follow-up: the [canonical derivative certificate](DERIVATIVE_RECIPROCITY_AND_COMPLETE_BOUNDARY.md)
+resolves the boundary bit below as \(b=0\) on all three curves. The strict
+Selmer identification and Artin certificates here remain in use; the
+uncomputed \(S\)-class-group excess is still unresolved.
+
 The unramified character blocks now have an exact **point-blind ambient
 description**:
 \[

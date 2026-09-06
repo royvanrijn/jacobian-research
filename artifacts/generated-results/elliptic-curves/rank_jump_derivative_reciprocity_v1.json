@@ -1,0 +1,63 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+    "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+    "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_primes_v1.json": "0ab1c0319c321254433781e06c1e91411cfcf7bb18ad162bbf829a3dc7fa82ad",
+    "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+    "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/rank-jump/DERIVATIVE_RECIPROCITY_PROTOCOL.json": "c7d3b2e79b4cf838403801371d41c2c24895677f6e5f2a0d21a5ca42d225703d",
+    "elliptic-curves/rank-jump/derivative_reciprocity.py": "7b866ab051d4f34780e509806ccc060ed6ccccec3657258010bf35295d693ba3"
+  },
+  "input_sha256": "4bd83dfdc7a1d65bb91ed868943c16bbce42e534bdc646b899d1b03ce527d1eb",
+  "rows": [
+    {
+      "boundary": "Full S-class-group dimension and rational solubility of any unseen strict classes remain UNKNOWN.",
+      "case_index": 0,
+      "epsilon_definition": "dim_F2 Cl(O_K,S)/2 - 10 >= 0",
+      "full_Selmer_dimension_formula": "25 + epsilon",
+      "full_Selmer_local_image_dimension": 15,
+      "full_Selmer_local_image_equals_known_point_image": true,
+      "full_relative_Selmer_dimension_formula": "9 + epsilon",
+      "generic_strict_dimension": 1,
+      "id": "a1-fibration-05:307/206",
+      "known_strict_dimension": 10,
+      "local_product_dimension": 16,
+      "resolved_boundary_bit": 0
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+        "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_primes_v1.json": "0ab1c0319c321254433781e06c1e91411cfcf7bb18ad162bbf829a3dc7fa82ad",
+        "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+        "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/DERIVATIVE_RECIPROCITY_PROTOCOL.json": "c7d3b2e79b4cf838403801371d41c2c24895677f6e5f2a0d21a5ca42d225703d",
+        "elliptic-curves/rank-jump/derivative_reciprocity.py": "7b866ab051d4f34780e509806ccc060ed6ccccec3657258010bf35295d693ba3"
+      },
+      "case_index": 4,
+      "reason": "worker failure",
+      "status": "UNKNOWN"
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+        "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_primes_v1.json": "0ab1c0319c321254433781e06c1e91411cfcf7bb18ad162bbf829a3dc7fa82ad",
+        "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+        "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/DERIVATIVE_RECIPROCITY_PROTOCOL.json": "c7d3b2e79b4cf838403801371d41c2c24895677f6e5f2a0d21a5ca42d225703d",
+        "elliptic-curves/rank-jump/derivative_reciprocity.py": "7b866ab051d4f34780e509806ccc060ed6ccccec3657258010bf35295d693ba3"
+      },
+      "case_index": 5,
+      "reason": "40-second timeout",
+      "status": "UNKNOWN"
+    }
+  ],
+  "schema": "rank-jump.derivative-reciprocity.v1"
+}

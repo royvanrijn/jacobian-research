@@ -1,0 +1,23 @@
+{
+  "schema": "rank-jump.derivative-reciprocity-protocol.v1",
+  "layer": "incidence",
+  "question": "Does the canonical norm-square class -disc(f)*f'(theta) supply the missing nonzero reciprocity functional on the full bad-place local point product?",
+  "cases": [
+    0,
+    4,
+    5
+  ],
+  "class_construction": "Use only the retained monic integral cubic f, its discriminant delta, and beta=-delta*f'(theta). Verify Norm(beta)=delta^4 and that all support primes are in the retained complete set S.",
+  "evaluation": "Use the certified local generic point images only as bases for the full local point spaces. Compute the product of Hilbert symbols over K above each place. Check annihilation of every retained rational witness and nonzero restriction at infinity.",
+  "limits": {
+    "curves": 3,
+    "seconds_per_curve": 40,
+    "new_parameters": 0,
+    "point_searches": 0,
+    "class_groups": 0,
+    "new_factorizations": 0
+  },
+  "positive": "If the functional is nonzero and the known witness image has codimension one, global reciprocity proves that image is the entire localization of the full Selmer group.",
+  "negative": "A zero functional, unsupported prime, norm failure or timeout leaves the boundary dimension unresolved. No budget increase or class search.",
+  "replay": "One immutable checkpoint per curve, all local basis indices, exact Hilbert symbols, local coordinates and the resulting binary hyperplane. PARI nfhilbert always receives an explicit prime ideal."
+}

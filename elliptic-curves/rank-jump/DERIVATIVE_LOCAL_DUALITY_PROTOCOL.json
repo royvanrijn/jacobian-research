@@ -1,0 +1,25 @@
+{
+  "schema": "rank-jump.derivative-local-duality-protocol.v1",
+  "layer": "incidence",
+  "question": "Can exact local nonmembership certify the derivative reciprocity functional, including the negative-discriminant high fibre, without Hilbert-symbol searches?",
+  "cases": [
+    0,
+    4,
+    5
+  ],
+  "inputs": "Retain the original derivative-reciprocity attempts, including the positive-discriminant gate failure and timeout. Use the same canonical class -disc(f) f'(theta).",
+  "method": "At every retained complete place, compare its squareclass to the full local point image already spanned by generic points. Local Tate duality and self-orthogonality identify any nonmembership as a nonzero reciprocity functional. Independently check all local membership comparisons with at most 2^3 generic basis combinations.",
+  "limits": {
+    "seconds_per_curve": 30,
+    "curves": 3,
+    "max_point_image_dimension": 3,
+    "hilbert_symbol_calls": 0,
+    "new_factorizations": 0,
+    "class_groups": 0,
+    "point_searches": 0,
+    "new_parameters": 0
+  },
+  "positive": "One certified outside place closes the last local-image dimension when the known witness image has codimension one.",
+  "negative": "If the class lies in every local image, it is a Selmer class and this reciprocal functional is zero on the local product. The boundary bit remains UNKNOWN.",
+  "replay": "Retain full signatures, local point-basis indices, membership words or separating linear characters, norm identity and support bindings."
+}

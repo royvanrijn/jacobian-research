@@ -1,0 +1,888 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+    "artifacts/generated-results/elliptic-curves/rank_jump_derivative_reciprocity_inputs_v1.json": "4bd83dfdc7a1d65bb91ed868943c16bbce42e534bdc646b899d1b03ce527d1eb",
+    "artifacts/generated-results/elliptic-curves/rank_jump_derivative_reciprocity_v1.json": "570168d48529758affeb47103809c492517346e9d9d4599b4dc92287d3368994",
+    "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+    "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_primes_v1.json": "0ab1c0319c321254433781e06c1e91411cfcf7bb18ad162bbf829a3dc7fa82ad",
+    "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+    "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/rank-jump/DERIVATIVE_LOCAL_DUALITY_PROTOCOL.json": "5a389945d68376cfb64c8b52984e0b75968eae05e88de56a78da838db2ff5858",
+    "elliptic-curves/rank-jump/derivative_local_duality.py": "ff658a4a39b0d4316cd2699210a27c5c31412a36e13eb2f122bdc4a843202d16"
+  },
+  "cases": [
+    {
+      "beta_coordinates": [
+        "5526726999332905335132320273512475784155664799791474033696628397917502500149506005291214853746126989958855967375359532035746285124737030014680451688844779225686875300336970808661672652544109064935424",
+        "0",
+        "-174699836856538411409933732653994674565277952654103430036742100776351869459220979920969267330595240556822933730432490632684913840017226704467663192576"
+      ],
+      "beta_real_sign_bits": [
+        1,
+        0,
+        1
+      ],
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+        "artifacts/generated-results/elliptic-curves/rank_jump_derivative_reciprocity_inputs_v1.json": "4bd83dfdc7a1d65bb91ed868943c16bbce42e534bdc646b899d1b03ce527d1eb",
+        "artifacts/generated-results/elliptic-curves/rank_jump_derivative_reciprocity_v1.json": "570168d48529758affeb47103809c492517346e9d9d4599b4dc92287d3368994",
+        "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_primes_v1.json": "0ab1c0319c321254433781e06c1e91411cfcf7bb18ad162bbf829a3dc7fa82ad",
+        "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+        "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/DERIVATIVE_LOCAL_DUALITY_PROTOCOL.json": "5a389945d68376cfb64c8b52984e0b75968eae05e88de56a78da838db2ff5858",
+        "elliptic-curves/rank-jump/derivative_local_duality.py": "ff658a4a39b0d4316cd2699210a27c5c31412a36e13eb2f122bdc4a843202d16"
+      },
+      "case_index": 0,
+      "delta": "58233278952179470469977910884664891521759317551367810012247366925450623153073659973656422443531746852274311243477496877561637946672408901489221064192",
+      "id": "a1-fibration-05:307/206",
+      "local": [
+        {
+          "basis_generic_indices": [
+            0
+          ],
+          "basis_signatures": [
+            4
+          ],
+          "derivative_signature": 4,
+          "is_in_point_image": true,
+          "local_square_comparison_results": [
+            false,
+            true
+          ],
+          "membership_word": 1,
+          "place": 3,
+          "point_dimension": 1,
+          "separating_character": null,
+          "width": 4
+        },
+        {
+          "basis_generic_indices": [
+            1,
+            5
+          ],
+          "basis_signatures": [
+            59,
+            34
+          ],
+          "derivative_signature": 59,
+          "is_in_point_image": true,
+          "local_square_comparison_results": [
+            false,
+            true,
+            false,
+            false
+          ],
+          "membership_word": 1,
+          "place": 7,
+          "point_dimension": 2,
+          "separating_character": null,
+          "width": 6
+        },
+        {
+          "basis_generic_indices": [
+            1
+          ],
+          "basis_signatures": [
+            2
+          ],
+          "derivative_signature": 5,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 13,
+          "point_dimension": 1,
+          "separating_character": 1,
+          "width": 4
+        },
+        {
+          "basis_generic_indices": [
+            6,
+            7
+          ],
+          "basis_signatures": [
+            31,
+            110
+          ],
+          "derivative_signature": 117,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 2,
+          "point_dimension": 2,
+          "separating_character": 6,
+          "width": 7
+        },
+        {
+          "basis_generic_indices": [
+            1
+          ],
+          "basis_signatures": [
+            6
+          ],
+          "derivative_signature": 5,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": "infinity",
+          "point_dimension": 1,
+          "separating_character": 1,
+          "width": 3
+        },
+        {
+          "basis_generic_indices": [
+            0
+          ],
+          "basis_signatures": [
+            6
+          ],
+          "derivative_signature": 6,
+          "is_in_point_image": true,
+          "local_square_comparison_results": [
+            false,
+            true
+          ],
+          "membership_word": 1,
+          "place": 17,
+          "point_dimension": 1,
+          "separating_character": null,
+          "width": 4
+        },
+        {
+          "basis_generic_indices": [],
+          "basis_signatures": [],
+          "derivative_signature": 0,
+          "is_in_point_image": true,
+          "local_square_comparison_results": [
+            true
+          ],
+          "membership_word": 0,
+          "place": 19,
+          "point_dimension": 0,
+          "separating_character": null,
+          "width": 2
+        },
+        {
+          "basis_generic_indices": [
+            0
+          ],
+          "basis_signatures": [
+            13
+          ],
+          "derivative_signature": 8,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 23,
+          "point_dimension": 1,
+          "separating_character": 9,
+          "width": 4
+        },
+        {
+          "basis_generic_indices": [
+            1
+          ],
+          "basis_signatures": [
+            14
+          ],
+          "derivative_signature": 4,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 31,
+          "point_dimension": 1,
+          "separating_character": 6,
+          "width": 4
+        },
+        {
+          "basis_generic_indices": [
+            0,
+            4
+          ],
+          "basis_signatures": [
+            5,
+            10
+          ],
+          "derivative_signature": 39,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 79,
+          "point_dimension": 2,
+          "separating_character": 10,
+          "width": 6
+        },
+        {
+          "basis_generic_indices": [
+            3
+          ],
+          "basis_signatures": [
+            2
+          ],
+          "derivative_signature": 7,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 3677,
+          "point_dimension": 1,
+          "separating_character": 1,
+          "width": 4
+        },
+        {
+          "basis_generic_indices": [
+            1
+          ],
+          "basis_signatures": [
+            2
+          ],
+          "derivative_signature": 5,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 19022417,
+          "point_dimension": 1,
+          "separating_character": 1,
+          "width": 4
+        },
+        {
+          "basis_generic_indices": [
+            0
+          ],
+          "basis_signatures": [
+            8
+          ],
+          "derivative_signature": 5,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 9070489718245292721859,
+          "point_dimension": 1,
+          "separating_character": 1,
+          "width": 4
+        },
+        {
+          "basis_generic_indices": [
+            0
+          ],
+          "basis_signatures": [
+            8
+          ],
+          "derivative_signature": 7,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 4994158462757908971835954831983527984976327938273965297923895199,
+          "point_dimension": 1,
+          "separating_character": 1,
+          "width": 4
+        }
+      ],
+      "norm_beta": "11499659434330447341071902679708354400000783787029087696777410129109138696486122823778760719581853692051610305460619576491791211693016126880320785002420688543782977244516368369022941345671681542687579861079216145670913427301994023309582031327083400244311815156535370183214494019667897629695056017263511065592460965281198039227385656230960558576687301427260788238109346793464458350965865895657280262910123431964248348581113715373736533843928532774100944898293426624266651220698276104706547600658699000588749553737260317728055897299605379651943388866230991920145785785765407331776337597147954282496",
+      "outside_places": [
+        13,
+        2,
+        "infinity",
+        23,
+        31,
+        79,
+        3677,
+        19022417,
+        9070489718245292721859,
+        4994158462757908971835954831983527984976327938273965297923895199
+      ],
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      }
+    },
+    {
+      "beta_coordinates": [
+        "-258969390078546825365605972878860393803477608247843842334835145887224491876267300534895093555853235813982384512775570467516715711269238680884435690321638333333952989875661698857648679111210711619977521922822812634234528902336942702592000000",
+        "0",
+        "516849339893230805831156485895062032911913806420972848938363376971607592709753611199090334832608596986259949361786714707622632407818880884520833412809570553472833535069913088000000"
+      ],
+      "beta_real_sign_bits": [
+        0
+      ],
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+        "artifacts/generated-results/elliptic-curves/rank_jump_derivative_reciprocity_inputs_v1.json": "4bd83dfdc7a1d65bb91ed868943c16bbce42e534bdc646b899d1b03ce527d1eb",
+        "artifacts/generated-results/elliptic-curves/rank_jump_derivative_reciprocity_v1.json": "570168d48529758affeb47103809c492517346e9d9d4599b4dc92287d3368994",
+        "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_primes_v1.json": "0ab1c0319c321254433781e06c1e91411cfcf7bb18ad162bbf829a3dc7fa82ad",
+        "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+        "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/DERIVATIVE_LOCAL_DUALITY_PROTOCOL.json": "5a389945d68376cfb64c8b52984e0b75968eae05e88de56a78da838db2ff5858",
+        "elliptic-curves/rank-jump/derivative_local_duality.py": "ff658a4a39b0d4316cd2699210a27c5c31412a36e13eb2f122bdc4a843202d16"
+      },
+      "case_index": 4,
+      "delta": "-172283113297743601943718828631687344303971268806990949646121125657202530903251203733030111610869532328753316453928904902540877469272960294840277804269856851157611178356637696000000",
+      "id": "published-R17:-2300/843",
+      "local": [
+        {
+          "basis_generic_indices": [
+            1
+          ],
+          "basis_signatures": [
+            8
+          ],
+          "derivative_signature": 13,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 3,
+          "point_dimension": 1,
+          "separating_character": 1,
+          "width": 4
+        },
+        {
+          "basis_generic_indices": [
+            0,
+            2
+          ],
+          "basis_signatures": [
+            5,
+            10
+          ],
+          "derivative_signature": 15,
+          "is_in_point_image": true,
+          "local_square_comparison_results": [
+            false,
+            false,
+            false,
+            true
+          ],
+          "membership_word": 3,
+          "place": 5,
+          "point_dimension": 2,
+          "separating_character": null,
+          "width": 6
+        },
+        {
+          "basis_generic_indices": [
+            0,
+            1
+          ],
+          "basis_signatures": [
+            60,
+            7
+          ],
+          "derivative_signature": 34,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 7,
+          "point_dimension": 2,
+          "separating_character": 3,
+          "width": 6
+        },
+        {
+          "basis_generic_indices": [
+            1
+          ],
+          "basis_signatures": [
+            8
+          ],
+          "derivative_signature": 5,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 11,
+          "point_dimension": 1,
+          "separating_character": 1,
+          "width": 4
+        },
+        {
+          "basis_generic_indices": [
+            1
+          ],
+          "basis_signatures": [
+            2
+          ],
+          "derivative_signature": 7,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 13,
+          "point_dimension": 1,
+          "separating_character": 1,
+          "width": 4
+        },
+        {
+          "basis_generic_indices": [
+            0,
+            4
+          ],
+          "basis_signatures": [
+            96,
+            32
+          ],
+          "derivative_signature": 75,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 2,
+          "point_dimension": 2,
+          "separating_character": 1,
+          "width": 7
+        },
+        {
+          "basis_generic_indices": [],
+          "basis_signatures": [],
+          "derivative_signature": 0,
+          "is_in_point_image": true,
+          "local_square_comparison_results": [
+            true
+          ],
+          "membership_word": 0,
+          "place": "infinity",
+          "point_dimension": 0,
+          "separating_character": null,
+          "width": 1
+        },
+        {
+          "basis_generic_indices": [
+            0
+          ],
+          "basis_signatures": [
+            6
+          ],
+          "derivative_signature": 12,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 71,
+          "point_dimension": 1,
+          "separating_character": 6,
+          "width": 4
+        },
+        {
+          "basis_generic_indices": [
+            0,
+            4
+          ],
+          "basis_signatures": [
+            10,
+            13
+          ],
+          "derivative_signature": 47,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 107,
+          "point_dimension": 2,
+          "separating_character": 11,
+          "width": 6
+        },
+        {
+          "basis_generic_indices": [
+            1,
+            2
+          ],
+          "basis_signatures": [
+            34,
+            59
+          ],
+          "derivative_signature": 25,
+          "is_in_point_image": true,
+          "local_square_comparison_results": [
+            false,
+            false,
+            false,
+            true
+          ],
+          "membership_word": 3,
+          "place": 283,
+          "point_dimension": 2,
+          "separating_character": null,
+          "width": 6
+        },
+        {
+          "basis_generic_indices": [
+            0
+          ],
+          "basis_signatures": [
+            2
+          ],
+          "derivative_signature": 7,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 22013,
+          "point_dimension": 1,
+          "separating_character": 1,
+          "width": 4
+        },
+        {
+          "basis_generic_indices": [
+            2
+          ],
+          "basis_signatures": [
+            8
+          ],
+          "derivative_signature": 13,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 16644390691,
+          "point_dimension": 1,
+          "separating_character": 1,
+          "width": 4
+        },
+        {
+          "basis_generic_indices": [
+            4
+          ],
+          "basis_signatures": [
+            8
+          ],
+          "derivative_signature": 15,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 49545498746840639425367772677949130481018258902148022792478518127145162432632657263874589,
+          "point_dimension": 1,
+          "separating_character": 1,
+          "width": 4
+        }
+      ],
+      "norm_beta": "880989728296365385318168790015553093487354721307165047661710979062527224336700265636514089173006387644252478839952779451792839976865426041708552395112845724702998504288014288789443924916936099225856866519308787643212433248573350187861719054093920114434300391779257350105661504704415469055780638440178117801822884460181640151559523884164857616332525031012901137867531193151845548827624395831828948499866332597580534673606998340050151608270069230024827820147997980488346449251918586543087135174670522100802072142040362225606702083466627083270383734283637065570326493841919255861444065727142553045296605211060997131090663024911833194054832776846999096638519630500351104454894795687703120556589056000000000000000000000000",
+      "outside_places": [
+        3,
+        7,
+        11,
+        13,
+        2,
+        71,
+        107,
+        22013,
+        16644390691,
+        49545498746840639425367772677949130481018258902148022792478518127145162432632657263874589
+      ],
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      }
+    },
+    {
+      "beta_coordinates": [
+        "2133878750420342072040489177343700987338035005206125327429997170587022413932125966043079594418576079207930439248553611694124352325321783439573990284079193641208555012773582821642888629798605216094995235397326548218841833397310350950400000000",
+        "0",
+        "-7175454190327248233871300894167897587363782228405807040139474942359073168915278633374438385399536357032995356104788990405315749485035077275078739190308515344671167717088165888000000"
+      ],
+      "beta_real_sign_bits": [
+        1,
+        0,
+        1
+      ],
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+        "artifacts/generated-results/elliptic-curves/rank_jump_derivative_reciprocity_inputs_v1.json": "4bd83dfdc7a1d65bb91ed868943c16bbce42e534bdc646b899d1b03ce527d1eb",
+        "artifacts/generated-results/elliptic-curves/rank_jump_derivative_reciprocity_v1.json": "570168d48529758affeb47103809c492517346e9d9d4599b4dc92287d3368994",
+        "artifacts/generated-results/elliptic-curves/rank_jump_dyadic_real_inputs_v1.json": "1ca4a8fbfa6a4598067229516467a8c38027d82f762a8ccc810377e64761e06b",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_primes_v1.json": "0ab1c0319c321254433781e06c1e91411cfcf7bb18ad162bbf829a3dc7fa82ad",
+        "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+        "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/DERIVATIVE_LOCAL_DUALITY_PROTOCOL.json": "5a389945d68376cfb64c8b52984e0b75968eae05e88de56a78da838db2ff5858",
+        "elliptic-curves/rank-jump/derivative_local_duality.py": "ff658a4a39b0d4316cd2699210a27c5c31412a36e13eb2f122bdc4a843202d16"
+      },
+      "case_index": 5,
+      "delta": "2391818063442416077957100298055965862454594076135269013379824980786357722971759544458146128466512119010998452034929663468438583161678359091692913063436171781557055905696055296000000",
+      "id": "published-R17:-1561/3133",
+      "local": [
+        {
+          "basis_generic_indices": [
+            1
+          ],
+          "basis_signatures": [
+            4
+          ],
+          "derivative_signature": 0,
+          "is_in_point_image": true,
+          "local_square_comparison_results": [
+            true,
+            false
+          ],
+          "membership_word": 0,
+          "place": 3,
+          "point_dimension": 1,
+          "separating_character": null,
+          "width": 4
+        },
+        {
+          "basis_generic_indices": [
+            2,
+            4
+          ],
+          "basis_signatures": [
+            49,
+            39
+          ],
+          "derivative_signature": 34,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 5,
+          "point_dimension": 2,
+          "separating_character": 6,
+          "width": 6
+        },
+        {
+          "basis_generic_indices": [
+            2
+          ],
+          "basis_signatures": [
+            4
+          ],
+          "derivative_signature": 0,
+          "is_in_point_image": true,
+          "local_square_comparison_results": [
+            true,
+            false
+          ],
+          "membership_word": 0,
+          "place": 7,
+          "point_dimension": 1,
+          "separating_character": null,
+          "width": 4
+        },
+        {
+          "basis_generic_indices": [
+            2
+          ],
+          "basis_signatures": [
+            4
+          ],
+          "derivative_signature": 10,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 13,
+          "point_dimension": 1,
+          "separating_character": 2,
+          "width": 4
+        },
+        {
+          "basis_generic_indices": [
+            0,
+            1
+          ],
+          "basis_signatures": [
+            8,
+            4
+          ],
+          "derivative_signature": 27,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 2,
+          "point_dimension": 2,
+          "separating_character": 1,
+          "width": 7
+        },
+        {
+          "basis_generic_indices": [
+            1
+          ],
+          "basis_signatures": [
+            6
+          ],
+          "derivative_signature": 5,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": "infinity",
+          "point_dimension": 1,
+          "separating_character": 1,
+          "width": 3
+        },
+        {
+          "basis_generic_indices": [
+            6
+          ],
+          "basis_signatures": [
+            8
+          ],
+          "derivative_signature": 13,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 6158521,
+          "point_dimension": 1,
+          "separating_character": 1,
+          "width": 4
+        },
+        {
+          "basis_generic_indices": [
+            2
+          ],
+          "basis_signatures": [
+            2
+          ],
+          "derivative_signature": 7,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 2482309513,
+          "point_dimension": 1,
+          "separating_character": 1,
+          "width": 4
+        },
+        {
+          "basis_generic_indices": [
+            0
+          ],
+          "basis_signatures": [
+            2
+          ],
+          "derivative_signature": 5,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 1992691645648087,
+          "point_dimension": 1,
+          "separating_character": 1,
+          "width": 4
+        },
+        {
+          "basis_generic_indices": [
+            1
+          ],
+          "basis_signatures": [
+            2
+          ],
+          "derivative_signature": 5,
+          "is_in_point_image": false,
+          "local_square_comparison_results": [
+            false,
+            false
+          ],
+          "membership_word": null,
+          "place": 1556252852391726354629684794059726062227237322704667229175658762505259467379346906344914138097,
+          "point_dimension": 1,
+          "separating_character": 1,
+          "width": 4
+        }
+      ],
+      "norm_beta": "32727479969969988757234144088962266150398042128231067908732960597151844346674561640312503243799689641479702111250435023904919339066673219699451555006635859444883148047720981634656932252638034906978005697770537580077442508223132850788855520054586276255518814825217789144609366968256042604416782952802042292888416104602044855559877287117807036718332162694294546005656818767732824514650027490786517824636504391850826942818855468798190841625867856221310015491266467823503990367468204595416549478321381531824816307197089563511859178948813114088689005637175274604921935853980229988304190987122358707273272424523449419324014895478433989742894561892315507366020241137648252855004271947880204048215054483456000000000000000000000000",
+      "outside_places": [
+        5,
+        13,
+        2,
+        "infinity",
+        6158521,
+        2482309513,
+        1992691645648087,
+        1556252852391726354629684794059726062227237322704667229175658762505259467379346906344914138097
+      ],
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      }
+    }
+  ],
+  "schema": "rank-jump.derivative-local-duality-inputs.v1"
+}
