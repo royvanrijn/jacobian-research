@@ -1,0 +1,464 @@
+{
+  "boundary": "Retrospective CT matrices and witness masks, not prospective features.",
+  "rows": [
+    {
+      "CT_matrix": [
+        [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "case_index": 0,
+      "cubic_ascending": [
+        "352828243349831404712617799673077133207162344822366545727829706873326815760",
+        "-94906677054393466110816339922046107183061710818372",
+        "0",
+        "1"
+      ],
+      "generic_rank": 16,
+      "generic_strict_dimension": 1,
+      "hyperbolic_pairs": [
+        [
+          {
+            "exceptional_quotient_mask": 0,
+            "strict_basis_mask": 1,
+            "witness_basis_mask": 36428
+          },
+          {
+            "exceptional_quotient_mask": 1,
+            "strict_basis_mask": 2,
+            "witness_basis_mask": 93788
+          }
+        ],
+        [
+          {
+            "exceptional_quotient_mask": 3,
+            "strict_basis_mask": 6,
+            "witness_basis_mask": 221223
+          },
+          {
+            "exceptional_quotient_mask": 5,
+            "strict_basis_mask": 11,
+            "witness_basis_mask": 363225
+          }
+        ],
+        [
+          {
+            "exceptional_quotient_mask": 15,
+            "strict_basis_mask": 30,
+            "witness_basis_mask": 983738
+          },
+          {
+            "exceptional_quotient_mask": 66,
+            "strict_basis_mask": 132,
+            "witness_basis_mask": 4353898
+          }
+        ],
+        [
+          {
+            "exceptional_quotient_mask": 18,
+            "strict_basis_mask": 37,
+            "witness_basis_mask": 1234888
+          },
+          {
+            "exceptional_quotient_mask": 47,
+            "strict_basis_mask": 94,
+            "witness_basis_mask": 3094785
+          }
+        ]
+      ],
+      "id": "a1-fibration-05:307/206",
+      "known_independent_rank": 25,
+      "observed_quotient_rank": 9,
+      "radical_basis": [
+        {
+          "exceptional_quotient_mask": 196,
+          "strict_basis_mask": 392,
+          "witness_basis_mask": 12877156
+        },
+        {
+          "exceptional_quotient_mask": 269,
+          "strict_basis_mask": 539,
+          "witness_basis_mask": 17680514
+        }
+      ]
+    },
+    {
+      "CT_matrix": [
+        [
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "case_index": 4,
+      "cubic_ascending": [
+        "713827218925723547304411672228281833517446887134720684710147456285397920302209030846152704",
+        "-1503161773208672080973766449211708290944810023968557217021952",
+        "0",
+        "1"
+      ],
+      "generic_rank": 17,
+      "generic_strict_dimension": 2,
+      "hyperbolic_pairs": [
+        [
+          {
+            "exceptional_quotient_mask": 0,
+            "strict_basis_mask": 1,
+            "witness_basis_mask": 26044
+          },
+          {
+            "exceptional_quotient_mask": 0,
+            "strict_basis_mask": 2,
+            "witness_basis_mask": 70723
+          }
+        ],
+        [
+          {
+            "exceptional_quotient_mask": 1,
+            "strict_basis_mask": 7,
+            "witness_basis_mask": 257387
+          },
+          {
+            "exceptional_quotient_mask": 4,
+            "strict_basis_mask": 8,
+            "witness_basis_mask": 564747
+          }
+        ],
+        [
+          {
+            "exceptional_quotient_mask": 21,
+            "strict_basis_mask": 45,
+            "witness_basis_mask": 2769028
+          },
+          {
+            "exceptional_quotient_mask": 68,
+            "strict_basis_mask": 139,
+            "witness_basis_mask": 9037821
+          }
+        ]
+      ],
+      "id": "published-R17:-2300/843",
+      "known_independent_rank": 24,
+      "observed_quotient_rank": 7,
+      "radical_basis": [
+        {
+          "exceptional_quotient_mask": 8,
+          "strict_basis_mask": 18,
+          "witness_basis_mask": 1129912
+        },
+        {
+          "exceptional_quotient_mask": 39,
+          "strict_basis_mask": 76,
+          "witness_basis_mask": 5148468
+        }
+      ]
+    },
+    {
+      "CT_matrix": [
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      ],
+      "case_index": 5,
+      "cubic_ascending": [
+        "128900832227812971002793243049766432229492164282639873998685258759480249197899892654080000",
+        "-892157636500647662171450158029394721897846492604962915942400",
+        "0",
+        "1"
+      ],
+      "generic_rank": 17,
+      "generic_strict_dimension": 6,
+      "hyperbolic_pairs": [
+        [
+          {
+            "exceptional_quotient_mask": 0,
+            "strict_basis_mask": 1,
+            "witness_basis_mask": 1385
+          },
+          {
+            "exceptional_quotient_mask": 0,
+            "strict_basis_mask": 2,
+            "witness_basis_mask": 4337
+          }
+        ],
+        [
+          {
+            "exceptional_quotient_mask": 0,
+            "strict_basis_mask": 5,
+            "witness_basis_mask": 11562
+          },
+          {
+            "exceptional_quotient_mask": 0,
+            "strict_basis_mask": 17,
+            "witness_basis_mask": 36392
+          }
+        ],
+        [
+          {
+            "exceptional_quotient_mask": 0,
+            "strict_basis_mask": 14,
+            "witness_basis_mask": 30920
+          },
+          {
+            "exceptional_quotient_mask": 0,
+            "strict_basis_mask": 34,
+            "witness_basis_mask": 72325
+          }
+        ]
+      ],
+      "id": "published-R17:-1561/3133",
+      "known_independent_rank": 17,
+      "observed_quotient_rank": 0,
+      "radical_basis": []
+    }
+  ],
+  "schema": "rank-jump.quadratic-norm-block-inputs.v1",
+  "small_control_cubic_ascending": [
+    -1,
+    -14,
+    -11,
+    1
+  ],
+  "source_hashes": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_production_minus_twist_inputs_v1.json": "374705dfa8dad34c5e9a1d0e40ad4a9a383476c3aec9c93e6d1f6817c3849115",
+    "artifacts/generated-results/elliptic-curves/rank_jump_production_twist_blocks_v1.json": "9555339bc6d7c263a3fb7576532fe88313436adb9de16d48db88a239d9c47912",
+    "artifacts/generated-results/elliptic-curves/rank_jump_scalar_cup_v1.json": "09c128a005c222fcd3a81d99c52b1582c7f2110b76c7362af368b1ef64089780"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.quadratic-norm-block-protocol.v1",
+  "question": "Do the three production scalar-twist obstruction blocks share one elliptic norm obstruction, and can their scalar gluing produce the genus-two object present in the cyclic small control?",
+  "inputs": "Frozen integral cubics and CT matrices for production cases 0,4,5; frozen generic-adapted symplectic masks; the small cyclic cubic control.",
+  "limits": {"seconds_per_command": 10, "maximum_modular_prime": 503, "GL2_matrices": 6, "production_cases": 3, "new_point_or_parameter_searches": 0},
+  "checks": "Certify each production cubic is irreducible with nonsquare discriminant. Enumerate the Galois-equivariant invertible maps on E[2] for S3 and C3. Verify all retained symplectic block masks. Independently check the twist isomorphism, Weil restriction equations, and integer isogeny/polarization matrices.",
+  "hypothesis_test": "A nonstandard rational 2-torsion identification would leave a smooth genus-two scalar gluing open. A singleton centralizer excludes that route. Nondegenerate CT blocks give lower bounds for the local-global elliptic norm defect, not new ranks.",
+  "boundary": "The geometric gate uses equations only. CT block sizes use retrospective rational witnesses and cannot enter prospective selection as point-independent features. No new CT pairing, global norm equation, class group, descent, or search is computed."
+}

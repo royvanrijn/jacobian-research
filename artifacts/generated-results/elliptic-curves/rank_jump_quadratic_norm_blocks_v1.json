@@ -1,0 +1,152 @@
+{
+  "GL2_centralizers": {
+    "C3": [
+      [
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        0
+      ]
+    ],
+    "S3": [
+      [
+        1,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_quadratic_norm_block_inputs_v1.json": "3ab23351b7218141ed892067e16fee2d261f3f3281250487304d6999bd21d073",
+    "elliptic-curves/rank-jump/QUADRATIC_NORM_BLOCK_PROTOCOL.json": "5b4cdee16af3948c5c5421a7f259e55c32d842aacb176156508a69518ab8e103",
+    "elliptic-curves/rank-jump/production_twist_blocks.py": "9e704cfe0a01ac8f3fe42faa12b23a9a160cf05c053533783a6cf9256c346ddf",
+    "elliptic-curves/rank-jump/quadratic_norm_blocks.py": "377621c549bd7c4b414d3ea0dbd4bccdd2903e4c8fdc79c71e0207df90c79414"
+  },
+  "boundary": "Inherited CT evidence proves lower bounds for one simultaneous solubility obstruction. The norm index is finite and does not add free rank. Original ranks, twist ranks, and full norm defects remain UNKNOWN.",
+  "geometric_object": "Res_(Q(i)/Q)(E over Q(i)), with its geometrically product principal polarization",
+  "norm_defect_identity": "E(Q)_locally_norm / N E(Q(i)) = ker(Sha(E^(-1)/Q) -> Sha(E^(-1)/Q(i)))",
+  "rows": [
+    {
+      "CT_rank": 8,
+      "case_index": 0,
+      "cubic_certificate": {
+        "discriminant": "58233278952179470469977910884664891521759317551367810012247366925450623153073659973656422443531746852274311243477496877561637946672408901489221064192",
+        "discriminant_square": false,
+        "group": "S3",
+        "irreducible_reduction_prime": 29
+      },
+      "field": "Q(i)",
+      "full_norm_defect_dimension": "UNKNOWN",
+      "generic_rank": 16,
+      "generic_strict_dimension": 1,
+      "id": "a1-fibration-05:307/206",
+      "independent_twist_Sha_classes_killed_by_Qi_at_least": 8,
+      "known_independent_rank": 25,
+      "local_global_elliptic_norm_defect_dimension_at_least": 8,
+      "local_global_elliptic_norm_defect_order_at_least": 256,
+      "nondegenerate_block_masks": [
+        1,
+        2,
+        6,
+        11,
+        30,
+        132,
+        37,
+        94
+      ],
+      "nonzero_selected_Sha_classes_period_and_index": 2,
+      "observed_quotient_rank": 9,
+      "rational_2_torsion_gluings_to_any_quadratic_twist": 1,
+      "retained_norm_kernel_dimension_at_most": 2,
+      "retained_strict_dimension": 10,
+      "smooth_genus_two_Jacobian_from_this_2_gluing": false
+    },
+    {
+      "CT_rank": 6,
+      "case_index": 4,
+      "cubic_certificate": {
+        "discriminant": "-172283113297743601943718828631687344303971268806990949646121125657202530903251203733030111610869532328753316453928904902540877469272960294840277804269856851157611178356637696000000",
+        "discriminant_square": false,
+        "group": "S3",
+        "irreducible_reduction_prime": 17
+      },
+      "field": "Q(i)",
+      "full_norm_defect_dimension": "UNKNOWN",
+      "generic_rank": 17,
+      "generic_strict_dimension": 2,
+      "id": "published-R17:-2300/843",
+      "independent_twist_Sha_classes_killed_by_Qi_at_least": 6,
+      "known_independent_rank": 24,
+      "local_global_elliptic_norm_defect_dimension_at_least": 6,
+      "local_global_elliptic_norm_defect_order_at_least": 64,
+      "nondegenerate_block_masks": [
+        1,
+        2,
+        7,
+        8,
+        45,
+        139
+      ],
+      "nonzero_selected_Sha_classes_period_and_index": 2,
+      "observed_quotient_rank": 7,
+      "rational_2_torsion_gluings_to_any_quadratic_twist": 1,
+      "retained_norm_kernel_dimension_at_most": 2,
+      "retained_strict_dimension": 8,
+      "smooth_genus_two_Jacobian_from_this_2_gluing": false
+    },
+    {
+      "CT_rank": 6,
+      "case_index": 5,
+      "cubic_certificate": {
+        "discriminant": "2391818063442416077957100298055965862454594076135269013379824980786357722971759544458146128466512119010998452034929663468438583161678359091692913063436171781557055905696055296000000",
+        "discriminant_square": false,
+        "group": "S3",
+        "irreducible_reduction_prime": 17
+      },
+      "field": "Q(i)",
+      "full_norm_defect_dimension": "UNKNOWN",
+      "generic_rank": 17,
+      "generic_strict_dimension": 6,
+      "id": "published-R17:-1561/3133",
+      "independent_twist_Sha_classes_killed_by_Qi_at_least": 6,
+      "known_independent_rank": 17,
+      "local_global_elliptic_norm_defect_dimension_at_least": 6,
+      "local_global_elliptic_norm_defect_order_at_least": 64,
+      "nondegenerate_block_masks": [
+        1,
+        2,
+        5,
+        17,
+        14,
+        34
+      ],
+      "nonzero_selected_Sha_classes_period_and_index": 2,
+      "observed_quotient_rank": 0,
+      "rational_2_torsion_gluings_to_any_quadratic_twist": 1,
+      "retained_norm_kernel_dimension_at_most": 0,
+      "retained_strict_dimension": 6,
+      "smooth_genus_two_Jacobian_from_this_2_gluing": false
+    }
+  ],
+  "schema": "rank-jump.quadratic-norm-blocks.v1",
+  "small_control": {
+    "discriminant": "26569",
+    "discriminant_square": true,
+    "group": "C3",
+    "irreducible_reduction_prime": 3
+  },
+  "status": "PASS"
+}

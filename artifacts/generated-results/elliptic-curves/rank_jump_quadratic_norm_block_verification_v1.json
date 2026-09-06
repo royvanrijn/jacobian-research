@@ -1,0 +1,38 @@
+{
+  "Weil_restriction_equations": true,
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_quadratic_norm_blocks_v1.json": "4aaf7aa741608e6f1a40c5353d7882ac8aff5b04cf16e1ddd66f9dc9df18a986",
+    "elliptic-curves/rank-jump/verify_quadratic_norm_blocks.py": "1cf8844e594c5ccef6667419b0c6038066eeaee085865d0de325641824c8c014"
+  },
+  "boundary": "No norm preimages, new CT entries or full Sha groups computed. The norm-defect identity follows from the written cohomology argument.",
+  "centralizer_sizes": {
+    "C3": 3,
+    "S3": 1
+  },
+  "descent_equivariance": true,
+  "isogeny_degree": 4,
+  "polarization_pullback_multiplier": 2,
+  "rows": [
+    {
+      "S3_verified": true,
+      "all_block_masks_verified": true,
+      "case_index": 0,
+      "independent_CT_rank": 8
+    },
+    {
+      "S3_verified": true,
+      "all_block_masks_verified": true,
+      "case_index": 4,
+      "independent_CT_rank": 6
+    },
+    {
+      "S3_verified": true,
+      "all_block_masks_verified": true,
+      "case_index": 5,
+      "independent_CT_rank": 6
+    }
+  ],
+  "schema": "rank-jump.quadratic-norm-block-verification.v1",
+  "status": "PASS",
+  "twist_isomorphism_identity": true
+}
