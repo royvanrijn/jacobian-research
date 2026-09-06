@@ -1,0 +1,13 @@
+{
+  "schema": "rank-jump.bounded-gain-reference-protocol.v1",
+  "selection": "One supplemental reference: a1-fibration-05 at 3/17, selected because a completed conditional upper bound now exists. Do not replace or rematch any frozen fresh-panel row.",
+  "arithmetic_input": "Equation and exactly sixteen marked generic sections projected from the retained retrospective input, plus equation discriminant factor hints. Neither rank labels nor exceptional points, class characters, anchors or point-derived principal relations enter arithmetic workers.",
+  "label_join": "Only after arithmetic: read the completed class/rank certificate as an explicitly GRH-conditional outcome label. Its proof uses exceptional points and is not a point-independent feature. Source checks here are provenance checks, not a replay of the class-group proof.",
+  "endpoints": {
+    "incidence": "Inherited generic strict dimension; local boundary capacity; inherited first-pair governing octic degree.",
+    "solubility": "Minus-one CT switch on inherited rational strict classes; compare with conditional exact rank and Selmer dimension afterward. Additional quotient CT remains unknown to this masked computation.",
+    "visibility": "None. No elliptic point search or recovery."
+  },
+  "limits": {"factor_seconds": 15, "local_seconds": 60, "boundary_seconds": 30, "octic_seconds": 30, "verification_seconds": 60, "workers": 1, "pari_stack_bytes": 268435456, "generic_independence_prime_bound": 1999, "prime_bound": 199, "new_parameters": 0, "point_searches": 0, "class_group_computations": 0},
+  "failure": "Checkpoint stages, record timeout or incomplete factorization as UNKNOWN, and do not increase limits automatically."
+}

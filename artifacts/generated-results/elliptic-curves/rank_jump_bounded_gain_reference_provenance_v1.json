@@ -1,0 +1,17 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_bounded_gain_reference_inputs_v1.json": "cecc1a51b2334a439059cfe58eec5f00c951fdd4693cf287c1df4898ca4989c8",
+    "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+    "artifacts/generated-results/elliptic-curves/small_conductor_rank22_proof_v1.json": "36552cd46a2a0f4bdf46667674a95c5211ddde083e4045817129dcdb5c3001e2",
+    "elliptic-curves/rank-jump/BOUNDED_GAIN_REFERENCE_PROTOCOL.json": "db85c8053a7e79b6e52b8231f51831c8a69b7b8249d2e09eb663501428de9d56"
+  },
+  "boundary": "Retrospective selection and source whitelist only. Not read by arithmetic workers.",
+  "family": "a1-fibration-05",
+  "id": "a1-fibration-05:3/17",
+  "parameter": "3/17",
+  "projection": {
+    "factor_hints": "small_conductor_rank22_proof_v1.json:discriminant_factorization.primes",
+    "generic": "rows[id=a1-fibration-05:3/17]:model,generic_points"
+  },
+  "schema": "rank-jump.bounded-gain-reference-provenance.v1"
+}

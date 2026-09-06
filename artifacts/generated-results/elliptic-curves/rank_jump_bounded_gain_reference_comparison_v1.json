@@ -1,0 +1,43 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_bounded_gain_reference_completion_v1.json": "9e29a2573c7b302af2e1199323aa4600c7402ddd77c0b27d7b2dfaedc6a3d23b",
+    "artifacts/generated-results/elliptic-curves/rank_jump_bounded_gain_reference_inputs_v1.json": "cecc1a51b2334a439059cfe58eec5f00c951fdd4693cf287c1df4898ca4989c8",
+    "artifacts/generated-results/elliptic-curves/rank_jump_bounded_gain_reference_provenance_v1.json": "12af21ef41ed782e0b54dc142d6411db4c04a8b5b1f97a6b7a2ca40be70c55e4",
+    "artifacts/generated-results/elliptic-curves/small_conductor_class_completion_v1.json": "437e6815e644d22b1b69cd0b96efd8441892c40e1399ed109c48dcaf2fd056cd",
+    "elliptic-curves/notes/SMALL_CONDUCTOR_CLASS_COMPLETION_PROOF_2026-09-06.md": "4bccd42eb5c7dc809135937f6ddbcc5f6e00af9b50cd16b485edcfc1e5f41f36",
+    "elliptic-curves/rank-jump/BOUNDED_GAIN_REFERENCE_PROTOCOL.json": "db85c8053a7e79b6e52b8231f51831c8a69b7b8249d2e09eb663501428de9d56",
+    "elliptic-curves/rank-jump/bounded_gain_reference.py": "1cf18114f6e30b42afda99a7280d6bac82f4e4dd6a7ea245a83cd54948db8470"
+  },
+  "boundary": "The complete rank/Selmer label uses point-derived proof data and GRH. This joins an external theorem; it does not independently compute the additional Selmer basis or its CT matrix. Sha[2]=0 is conditional; no assertion about other primes.",
+  "result": {
+    "additional_boundary_capacity_upper_bound": 0,
+    "additional_quotient_CT_computed_point_blind": "UNKNOWN",
+    "additional_strict_rational_dimension_conditional_interval": [
+      6,
+      6
+    ],
+    "additional_strict_rational_dimension_unconditional_lower_bound": 6,
+    "assumption": "GRH for nontrivial quadratic characters of the ordinary ideal class group of this field, in fact only those trivial on the anchor span.",
+    "boundary_upper_bound": 10,
+    "class_group_label_used_as_arithmetic_input": false,
+    "exact_conditional_identity": "(c_S - 6) + e = 6, 0 <= e <= 0",
+    "generic_dimension": 16,
+    "generic_strict_dimension": 6,
+    "id": "a1-fibration-05:3/17",
+    "inherited_governing_field_degree": 192,
+    "inherited_minus_twist_CT_rank": 6,
+    "label_Sha2_dimension_conditional": 0,
+    "label_rank_exact_conditional": 22,
+    "label_rank_lower_bound_unconditional": 22,
+    "label_selmer_dimension_exact_conditional": 22,
+    "local_product_dimension": 11,
+    "localized_class_dimension_conditional_interval": [
+      12,
+      12
+    ],
+    "original_full_CT_zero_conditional_inference": true,
+    "quotient_rank_exact_conditional": 6,
+    "same_family_matched_panel_replacement": false
+  },
+  "schema": "rank-jump.bounded-gain-reference-comparison.v1"
+}

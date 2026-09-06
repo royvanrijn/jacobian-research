@@ -1,0 +1,27 @@
+{
+  "CT_switch_rank": 6,
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_bounded_gain_reference_comparison_v1.json": "6bb18ce6f2c5ae70e5eeb5d401d7eb925844af3810eb30bc2c1d549c6dc24be8",
+    "artifacts/generated-results/elliptic-curves/rank_jump_bounded_gain_reference_completion_v1.json": "9e29a2573c7b302af2e1199323aa4600c7402ddd77c0b27d7b2dfaedc6a3d23b",
+    "artifacts/generated-results/elliptic-curves/rank_jump_bounded_gain_reference_inputs_v1.json": "cecc1a51b2334a439059cfe58eec5f00c951fdd4693cf287c1df4898ca4989c8",
+    "artifacts/generated-results/elliptic-curves/rank_jump_bounded_gain_reference_v1.json": "5093cc8eb720cf623596b3ada8abbf318ee5270e0da7ba01bbf2dc776d1491ba",
+    "artifacts/generated-results/elliptic-curves/small_conductor_class_completion_v1.json": "437e6815e644d22b1b69cd0b96efd8441892c40e1399ed109c48dcaf2fd056cd",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_bounded_gain_reference.py": "611a4f312c289fbc8b8f7064d30d56a89817f9d819464d4203c6d714d8c261e0",
+    "elliptic-curves/rank-jump/verify_explicit_governing_octic.py": "7d2567d37c720b56b21fd3f26e6fddd139fff646079d556f0d809260c04f3524"
+  },
+  "boundary_dimension_exact": 10,
+  "conditional_label_full_proof_replayed": false,
+  "conditional_localized_class_dimension": 12,
+  "direct_Jacobi_checks": 32,
+  "generic_mod2_independence": 16,
+  "generic_strict_dimension": 6,
+  "half_ideal_checks": 6,
+  "local_character_checks": 160,
+  "local_power_checks": 114,
+  "nonunit_Artin_repairs": 4,
+  "octic_prime_replays": 9,
+  "schema": "rank-jump.bounded-gain-reference-verification.v1",
+  "status": "PASS"
+}

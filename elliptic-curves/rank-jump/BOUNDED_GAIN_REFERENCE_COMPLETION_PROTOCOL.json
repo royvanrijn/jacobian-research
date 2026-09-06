@@ -1,0 +1,7 @@
+{
+  "schema": "rank-jump.bounded-gain-reference-completion-protocol.v1",
+  "selection": "Four nonunit Artin entries already encountered in the six-dimensional generic strict block of the one frozen reference. Gcd support is 41 or 269. No new class or parameter selection.",
+  "limits": {"worker_seconds": 30, "nonunit_gcd_maximum_bits": 16, "pari_stack_bytes": 268435456, "point_searches": 0},
+  "method": "Reuse the frozen fresh-panel repair: factor only each bounded nonunit gcd, evaluate local powers and independently replay generic point characters, then evaluate the coprime residue with Jacobi. Retain the original partial artifact unchanged.",
+  "failure": "Timeout or failed identity is UNKNOWN; no budget escalation."
+}

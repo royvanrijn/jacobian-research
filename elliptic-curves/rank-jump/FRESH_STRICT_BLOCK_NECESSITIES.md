@@ -1,5 +1,12 @@
 # How much of a recorded jump must be strict?
 
+A [supplemental conditionally exact +6 reference](CONDITIONALLY_EXACT_SOLUBLE_BLOCK_REFERENCE.md)
+at MW16-05, t=3/17 now has a masked boundary certificate with a=0 and k=6.
+Joining its completed rank/Selmer theorem afterward gives c_S=12 and six
+additional soluble strict directions under the stated GRH assumption. It
+does not replace a matched control or supply point-independent exceptional
+class representatives.
+
 The frozen sixteen-fibre panel now has complete equation-defined local
 boundary bounds on eleven rows, including a [retained-factor supplement](HISTORIC_RETAINED_FACTOR_BOUNDARY.md)
 for the two historic +12 controls. Four fresh +10 fibres
