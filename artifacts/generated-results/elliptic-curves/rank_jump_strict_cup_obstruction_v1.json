@@ -1,0 +1,2526 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+    "artifacts/generated-results/elliptic-curves/rank_jump_local_collision_inputs_v1.json": "440372c18d42243ce447cad470c7bfd6ba5d5c757740e3ce413af6b0d8194f71",
+    "artifacts/generated-results/elliptic-curves/rank_jump_strict_Sha_Artin_v1.json": "d5185fd617f4a87541b1eae89f34bb888eb2b915db5297bac08f731f5bb7d03a",
+    "artifacts/generated-results/elliptic-curves/rank_jump_strict_deformation_solubility_v1.json": "2ece45b37f68e55c719f55e56a6770bfc695c8426d3a9e9774e964625a6ad810",
+    "artifacts/generated-results/elliptic-curves/rank_jump_torsion_difference_v1.json": "694062bd6ad732c12e5f307601f0825cbb41e455c600e2b20a670a1794c0832e",
+    "elliptic-curves/rank-jump/STRICT_CUP_OBSTRUCTION_PROTOCOL.json": "1dfde632f803bcb08e8da47fe258a0a654e45b4775f83d3983610e228fe06f85",
+    "elliptic-curves/rank-jump/strict_cup_obstruction.py": "79fa8ba63c2c49e9b8b290c5cafebb9bf6704519b092ba159a0530ef859396e8"
+  },
+  "boundary": "Cup-image ranks are lower bounds using retained strict characters. Vanishing against those characters does not prove the cup ideal class zero. Explicit norm witnesses and independent recovery of the nine target CT bits remain uncomputed.",
+  "cases": [
+    {
+      "cup_kernel_in_retained_space_dimension_upper_bound": 2,
+      "detected_cup_image_dimension_lower_bound": 0,
+      "full_CT_cross_rank": 2,
+      "gamma_coordinates": [
+        "1",
+        "3",
+        "0"
+      ],
+      "norm_gamma": "-4518388182637486269462426250489564634402240510936324",
+      "norm_support": [
+        [
+          2,
+          2
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          6807347,
+          1
+        ],
+        [
+          5070588247,
+          1
+        ],
+        [
+          2517352081717261588189318068375793,
+          1
+        ]
+      ],
+      "retained_character_annihilator_anchor_masks": [
+        269499,
+        720047
+      ],
+      "retained_character_annihilator_masks": [
+        1,
+        2
+      ],
+      "strict_CT_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "strict_anchor_basis": [
+        269499,
+        720047
+      ],
+      "u": -3
+    },
+    {
+      "cup_kernel_in_retained_space_dimension_upper_bound": 1,
+      "detected_cup_image_dimension_lower_bound": 0,
+      "full_CT_cross_rank": 1,
+      "gamma_coordinates": [
+        "1",
+        "2",
+        "0"
+      ],
+      "norm_gamma": "-1338781683744440383804863225201606385711842968166875",
+      "norm_support": [
+        [
+          5,
+          4
+        ],
+        [
+          61,
+          1
+        ],
+        [
+          463,
+          1
+        ],
+        [
+          1033,
+          1
+        ],
+        [
+          88377350996665273,
+          1
+        ],
+        [
+          830763901348107124747241,
+          1
+        ]
+      ],
+      "retained_character_annihilator_anchor_masks": [
+        974868
+      ],
+      "retained_character_annihilator_masks": [
+        1
+      ],
+      "strict_CT_matrix": [
+        [
+          0
+        ]
+      ],
+      "strict_anchor_basis": [
+        974868
+      ],
+      "u": -2
+    },
+    {
+      "cup_kernel_in_retained_space_dimension_upper_bound": 1,
+      "detected_cup_image_dimension_lower_bound": 4,
+      "full_CT_cross_rank": 5,
+      "gamma_coordinates": [
+        "1",
+        "1",
+        "0"
+      ],
+      "norm_gamma": "-167347710468055050851050918101962677922339205090512",
+      "norm_support": [
+        [
+          2,
+          4
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          550485889697549509378456967440666703691905279903,
+          1
+        ]
+      ],
+      "retained_character_annihilator_anchor_masks": [
+        17108
+      ],
+      "retained_character_annihilator_masks": [
+        1
+      ],
+      "strict_CT_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      ],
+      "strict_anchor_basis": [
+        17108,
+        34628,
+        65575,
+        404296,
+        528076
+      ],
+      "u": -1
+    },
+    {
+      "cup_kernel_in_retained_space_dimension_upper_bound": 1,
+      "detected_cup_image_dimension_lower_bound": 2,
+      "full_CT_cross_rank": 3,
+      "gamma_coordinates": [
+        "1",
+        "-1",
+        "0"
+      ],
+      "norm_gamma": "167347710468055039349278858294915159088903868811900",
+      "norm_support": [
+        [
+          2,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          31,
+          2
+        ],
+        [
+          103,
+          1
+        ],
+        [
+          735074448304715650993556022553346486326391,
+          1
+        ]
+      ],
+      "retained_character_annihilator_anchor_masks": [
+        609343
+      ],
+      "retained_character_annihilator_masks": [
+        4
+      ],
+      "strict_CT_matrix": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "strict_anchor_basis": [
+        50576,
+        161063,
+        609343
+      ],
+      "u": 1
+    },
+    {
+      "cup_kernel_in_retained_space_dimension_upper_bound": 0,
+      "detected_cup_image_dimension_lower_bound": 2,
+      "full_CT_cross_rank": 2,
+      "gamma_coordinates": [
+        "1",
+        "-2",
+        "0"
+      ],
+      "norm_gamma": "1338781683744440337797774985973416310378101623052421",
+      "norm_support": [
+        [
+          7,
+          1
+        ],
+        [
+          233,
+          1
+        ],
+        [
+          647,
+          1
+        ],
+        [
+          26558335042564254253,
+          1
+        ],
+        [
+          47769497729370851316266401,
+          1
+        ]
+      ],
+      "retained_character_annihilator_anchor_masks": [],
+      "retained_character_annihilator_masks": [],
+      "strict_CT_matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "strict_anchor_basis": [
+        420252,
+        735512
+      ],
+      "u": 2
+    },
+    {
+      "cup_kernel_in_retained_space_dimension_upper_bound": 2,
+      "detected_cup_image_dimension_lower_bound": 2,
+      "full_CT_cross_rank": 4,
+      "gamma_coordinates": [
+        "1",
+        "-3",
+        "0"
+      ],
+      "norm_gamma": "4518388182637486165946477712226136964901322484428800",
+      "norm_support": [
+        [
+          2,
+          12
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          39152515169537888943496957771480362731024381,
+          1
+        ]
+      ],
+      "retained_character_annihilator_anchor_masks": [
+        34628,
+        593643
+      ],
+      "retained_character_annihilator_masks": [
+        2,
+        8
+      ],
+      "strict_CT_matrix": [
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "strict_anchor_basis": [
+        17108,
+        34628,
+        145395,
+        593643
+      ],
+      "u": 3
+    }
+  ],
+  "finite_action_checks": [
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 0,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 1,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 2,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 3,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 1,
+      "input_V": 0,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 1,
+      "input_V": 1,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 1,
+      "input_V": 2,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 1,
+      "input_V": 3,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 2,
+      "input_V": 0,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 2,
+      "input_V": 1,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 2,
+      "input_V": 2,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 2,
+      "input_V": 3,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 3,
+      "input_V": 0,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 3,
+      "input_V": 1,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 3,
+      "input_V": 2,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 3,
+      "input_V": 3,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 4,
+      "input_V": 0,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 4,
+      "input_V": 1,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 4,
+      "input_V": 2,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 4,
+      "input_V": 3,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 5,
+      "input_V": 0,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 5,
+      "input_V": 1,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 5,
+      "input_V": 2,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 5,
+      "input_V": 3,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 6,
+      "input_V": 0,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 6,
+      "input_V": 1,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 6,
+      "input_V": 2,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 6,
+      "input_V": 3,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 7,
+      "input_V": 0,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 7,
+      "input_V": 1,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 7,
+      "input_V": 2,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 7,
+      "input_V": 3,
+      "permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 0,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 1,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 2,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 3,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 1,
+      "input_V": 0,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 1,
+      "input_V": 1,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 1,
+      "input_V": 2,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 1,
+      "input_V": 3,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 2,
+      "input_V": 0,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 2,
+      "input_V": 1,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 2,
+      "input_V": 2,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 2,
+      "input_V": 3,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 3,
+      "input_V": 0,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 3,
+      "input_V": 1,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 3,
+      "input_V": 2,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 3,
+      "input_V": 3,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 4,
+      "input_V": 0,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 4,
+      "input_V": 1,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 4,
+      "input_V": 2,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 4,
+      "input_V": 3,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 5,
+      "input_V": 0,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 5,
+      "input_V": 1,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 5,
+      "input_V": 2,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 5,
+      "input_V": 3,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 6,
+      "input_V": 0,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 6,
+      "input_V": 1,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 6,
+      "input_V": 2,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 6,
+      "input_V": 3,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 7,
+      "input_V": 0,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 7,
+      "input_V": 1,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 7,
+      "input_V": 2,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 7,
+      "input_V": 3,
+      "permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 0,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 1,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 2,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 3,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 1,
+      "input_V": 0,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 1,
+      "input_V": 1,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 1,
+      "input_V": 2,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 1,
+      "input_V": 3,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 2,
+      "input_V": 0,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 2,
+      "input_V": 1,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 2,
+      "input_V": 2,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 2,
+      "input_V": 3,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 3,
+      "input_V": 0,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 3,
+      "input_V": 1,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 3,
+      "input_V": 2,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 3,
+      "input_V": 3,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 4,
+      "input_V": 0,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 4,
+      "input_V": 1,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 4,
+      "input_V": 2,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 4,
+      "input_V": 3,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 5,
+      "input_V": 0,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 5,
+      "input_V": 1,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 5,
+      "input_V": 2,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 5,
+      "input_V": 3,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 6,
+      "input_V": 0,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 6,
+      "input_V": 1,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 6,
+      "input_V": 2,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 6,
+      "input_V": 3,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 7,
+      "input_V": 0,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 7,
+      "input_V": 1,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 7,
+      "input_V": 2,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 7,
+      "input_V": 3,
+      "permutation": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 0,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 1,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 2,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 3,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 1,
+      "input_V": 0,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 1,
+      "input_V": 1,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 1,
+      "input_V": 2,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 1,
+      "input_V": 3,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 2,
+      "input_V": 0,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 2,
+      "input_V": 1,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 2,
+      "input_V": 2,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 2,
+      "input_V": 3,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 3,
+      "input_V": 0,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 3,
+      "input_V": 1,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 3,
+      "input_V": 2,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 3,
+      "input_V": 3,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 4,
+      "input_V": 0,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 4,
+      "input_V": 1,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 4,
+      "input_V": 2,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 4,
+      "input_V": 3,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 5,
+      "input_V": 0,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 5,
+      "input_V": 1,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 5,
+      "input_V": 2,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 5,
+      "input_V": 3,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 6,
+      "input_V": 0,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 6,
+      "input_V": 1,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 6,
+      "input_V": 2,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 6,
+      "input_V": 3,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 7,
+      "input_V": 0,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 7,
+      "input_V": 1,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 7,
+      "input_V": 2,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 7,
+      "input_V": 3,
+      "permutation": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 0,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 1,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 2,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 3,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 1,
+      "input_V": 0,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 1,
+      "input_V": 1,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 1,
+      "input_V": 2,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 1,
+      "input_V": 3,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 2,
+      "input_V": 0,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 2,
+      "input_V": 1,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 2,
+      "input_V": 2,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 2,
+      "input_V": 3,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 3,
+      "input_V": 0,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 3,
+      "input_V": 1,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 3,
+      "input_V": 2,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 3,
+      "input_V": 3,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 4,
+      "input_V": 0,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 4,
+      "input_V": 1,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 4,
+      "input_V": 2,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 4,
+      "input_V": 3,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 5,
+      "input_V": 0,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 5,
+      "input_V": 1,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 5,
+      "input_V": 2,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 5,
+      "input_V": 3,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 6,
+      "input_V": 0,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 6,
+      "input_V": 1,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 6,
+      "input_V": 2,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 6,
+      "input_V": 3,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 7,
+      "input_V": 0,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 7,
+      "input_V": 1,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 7,
+      "input_V": 2,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 7,
+      "input_V": 3,
+      "permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 0,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 1,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 2,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 0,
+      "input_V": 3,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 1,
+      "input_V": 0,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 1,
+      "input_V": 1,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 1,
+      "input_V": 2,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 1,
+      "input_V": 3,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 2,
+      "input_V": 0,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 2,
+      "input_V": 1,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 2,
+      "input_V": 2,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 2,
+      "input_V": 3,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 3,
+      "input_V": 0,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 3,
+      "input_V": 1,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 3,
+      "input_V": 2,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 3,
+      "input_V": 3,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 4,
+      "input_V": 0,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 4,
+      "input_V": 1,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 4,
+      "input_V": 2,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 4,
+      "input_V": 3,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 5,
+      "input_V": 0,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 5,
+      "input_V": 1,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 5,
+      "input_V": 2,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 5,
+      "input_V": 3,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 6,
+      "input_V": 0,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 6,
+      "input_V": 1,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 6,
+      "input_V": 2,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 6,
+      "input_V": 3,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 0,
+      "cup_product_projection": 0,
+      "gamma_sign_mask": 7,
+      "input_V": 0,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 3,
+      "cup_product_projection": 3,
+      "gamma_sign_mask": 7,
+      "input_V": 1,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 5,
+      "cup_product_projection": 5,
+      "gamma_sign_mask": 7,
+      "input_V": 2,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "Jacobian_connecting_action": 6,
+      "cup_product_projection": 6,
+      "gamma_sign_mask": 7,
+      "input_V": 3,
+      "permutation": [
+        2,
+        1,
+        0
+      ]
+    }
+  ],
+  "schema": "rank-jump.strict-cup-obstruction.v1",
+  "u_minus_one_elementary_factor_projection": {
+    "coordinate_source": "Inferred through the proved cup/CT identity and retained CT values. No independent norm-witness evaluation.",
+    "cup_image_in_complement_dimension_lower_bound": 2,
+    "factor_dual_half_ideal_words": [
+      5,
+      16,
+      4
+    ],
+    "left_unresolved_strict_class_anchor_mask": 17108,
+    "projected_cup_half_ideal_words": [
+      0,
+      4,
+      16,
+      0,
+      16
+    ],
+    "projected_image_dimension": 2,
+    "selected_character_indices": [
+      0,
+      1,
+      2
+    ]
+  }
+}

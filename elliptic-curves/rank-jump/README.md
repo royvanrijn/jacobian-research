@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: the same class factor can be rational or Sha](SAME_CLASS_FACTOR_DIFFERENT_SOLUBILITY.md)
+- [Latest: a cup-product ideal class controls strict Jacobian lifting](CUP_IDEAL_AND_STRICT_LIFTING_OBSTRUCTION.md)
+- [The same class factor can be rational or Sha](SAME_CLASS_FACTOR_DIFFERENT_SOLUBILITY.md)
 - [Soluble half ideals split off elementary S-class factors](SOLUBLE_ELEMENTARY_S_CLASS_BLOCKS.md)
 - [Strict soluble blocks force ordinary ideal-class 2-torsion](STRICT_HALF_IDEALS_AND_UNIT_KERNEL.md)
 - [A canonical derivative class closes the full Selmer boundary](DERIVATIVE_RECIPROCITY_AND_COMPLETE_BOUNDARY.md)
@@ -67,6 +68,7 @@ python3 elliptic-curves/rank-jump/half_ideal_artin_completion.py check
 python3 elliptic-curves/rank-jump/half_ideal_class_blocks.py check
 python3 elliptic-curves/rank-jump/strict_deformation_solubility.py check
 python3 elliptic-curves/rank-jump/strict_Sha_Artin.py check
+python3 elliptic-curves/rank-jump/strict_cup_obstruction.py check
 ```
 
 Optional independent Hilbert-symbol check: `sage -python -m unittest discover -s elliptic-curves/rank-jump -p test_local_collision.py`.

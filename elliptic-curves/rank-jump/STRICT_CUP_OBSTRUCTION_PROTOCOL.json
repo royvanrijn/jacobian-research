@@ -1,0 +1,33 @@
+{
+  "schema": "rank-jump.strict-cup-obstruction-protocol.v1",
+  "question": "Identify the strict part of the Jacobian lifting obstruction as a cup-product ideal class, and separate it from the ordinary half-ideal map.",
+  "parameters": [
+    -3,
+    -2,
+    -1,
+    1,
+    2,
+    3
+  ],
+  "layers": {
+    "arithmetic_cup": "obstruction to an S-unramified cohomology lift; necessary for solubility",
+    "CT_evaluation": "solubility obstruction, not a point certificate"
+  },
+  "unblinding": "The u=-1 strict self-pairing rank four and the target three-by-three CT matrix were already inspected. This is theorem-directed retrospective verification, not a prospective prediction.",
+  "checks": [
+    "Verify all 192 signed-permutation cup-action identities in the six-branch-point model.",
+    "Certify gamma_u=1-u*theta is an S-unit from its norm and the retained complete support.",
+    "Restrict the pinned CT matrices to each retained strict space; report lower bounds on the cup-obstruction image and upper bounds on its kernel in that space.",
+    "For u=-1, express the detected cup-obstruction projection onto the already certified elementary S-class factor, clearly marking that its coordinates are inferred through CT and not independently evaluated from norm witnesses."
+  ],
+  "limits": {
+    "new_parameters": 0,
+    "point_searches": 0,
+    "class_groups": 0,
+    "norm_equation_searches": 0,
+    "new_CT_calculations": 0,
+    "finite_action_checks": 192,
+    "seconds": 30
+  },
+  "boundary": "No explicit cubic-field norm witness, complete H1(J[2]) representative or independent derivation of the nine target CT bits is claimed. Those remain the next arithmetic gap."
+}
