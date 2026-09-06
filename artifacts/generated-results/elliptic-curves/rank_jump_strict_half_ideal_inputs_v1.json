@@ -1,0 +1,52 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+    "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+    "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+    "elliptic-curves/rank-jump/STRICT_HALF_IDEAL_PROTOCOL.json": "55060284e7758468ccd703e5677b64980f9e1ef09ec812c5e0a501ff924135cd",
+    "elliptic-curves/rank-jump/strict_half_ideals.py": "893d044166a5239353080bdb8b6ce87c968aa6932a1ace4c809699f61610838b"
+  },
+  "cases": [
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+        "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+        "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+        "elliptic-curves/rank-jump/STRICT_HALF_IDEAL_PROTOCOL.json": "55060284e7758468ccd703e5677b64980f9e1ef09ec812c5e0a501ff924135cd",
+        "elliptic-curves/rank-jump/strict_half_ideals.py": "893d044166a5239353080bdb8b6ce87c968aa6932a1ace4c809699f61610838b"
+      },
+      "case_index": 0,
+      "reason": "worker failure",
+      "status": "UNKNOWN"
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+        "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+        "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+        "elliptic-curves/rank-jump/STRICT_HALF_IDEAL_PROTOCOL.json": "55060284e7758468ccd703e5677b64980f9e1ef09ec812c5e0a501ff924135cd",
+        "elliptic-curves/rank-jump/strict_half_ideals.py": "893d044166a5239353080bdb8b6ce87c968aa6932a1ace4c809699f61610838b"
+      },
+      "case_index": 4,
+      "reason": "worker failure",
+      "status": "UNKNOWN"
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+        "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+        "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+        "elliptic-curves/rank-jump/STRICT_HALF_IDEAL_PROTOCOL.json": "55060284e7758468ccd703e5677b64980f9e1ef09ec812c5e0a501ff924135cd",
+        "elliptic-curves/rank-jump/strict_half_ideals.py": "893d044166a5239353080bdb8b6ce87c968aa6932a1ace4c809699f61610838b"
+      },
+      "case_index": 5,
+      "reason": "worker failure",
+      "status": "UNKNOWN"
+    }
+  ],
+  "schema": "rank-jump.strict-half-ideal-inputs.v1"
+}

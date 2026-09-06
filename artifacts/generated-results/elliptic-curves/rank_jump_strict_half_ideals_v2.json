@@ -1,0 +1,50 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+    "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+    "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+    "elliptic-curves/rank-jump/STRICT_HALF_IDEAL_PROTOCOL.json": "a8c8130a6499a26c68bfe45b3914ee1d5112a9375ce28c56e2fcf6998e3cb5cf",
+    "elliptic-curves/rank-jump/strict_half_ideals.py": "c569da182ff2328f693fc395076a1edc9fa3b5324cf66f7842d73a5bb3665d5e"
+  },
+  "input_sha256": "4a06d81ba1fbc24c0dc1d9af89e0387b980ab7bde036d5275849e3d26a926ba7",
+  "rows": [
+    {
+      "boundary": "Only the displayed ordinary ideal-class 2-torsion span, modulo its generic strict image. No specified independent subset, full class rank, localized S-class upper bound or new rational class.",
+      "case_index": 0,
+      "field_discriminant": "2736029392086859202195065281571744287420308463084781742297885558086772177351297095629703485248405136728",
+      "generic_ordinary_half_ideal_span_dimension_lower_bound": 0,
+      "generic_strict_dimension": 1,
+      "id": "a1-fibration-05:307/206",
+      "known_strict_dimension": 10,
+      "ordinary_half_ideal_span_dimension_lower_bound": 8,
+      "relative_ordinary_half_ideal_span_dimension_lower_bound": 7,
+      "totally_positive_unit_squareclass_dimension_upper_bound": 2
+    },
+    {
+      "boundary": "Only the displayed ordinary ideal-class 2-torsion span, modulo its generic strict image. No specified independent subset, full class rank, localized S-class upper bound or new rational class.",
+      "case_index": 4,
+      "field_discriminant": "-62301516588163402368645319563306671814090425984114729556542275174116483358054947131080449105595698591867384",
+      "generic_ordinary_half_ideal_span_dimension_lower_bound": 1,
+      "generic_strict_dimension": 2,
+      "id": "published-R17:-2300/843",
+      "known_strict_dimension": 8,
+      "ordinary_half_ideal_span_dimension_lower_bound": 7,
+      "relative_ordinary_half_ideal_span_dimension_lower_bound": 5,
+      "totally_positive_unit_squareclass_dimension_upper_bound": 1
+    },
+    {
+      "boundary": "Only the displayed ordinary ideal-class 2-torsion span, modulo its generic strict image. No specified independent subset, full class rank, localized S-class upper bound or new rational class.",
+      "case_index": 5,
+      "field_discriminant": "379264859873538743226961026375840650509899613832449252476844339016401462319997378085728777900538732304975575890823548661758776",
+      "generic_ordinary_half_ideal_span_dimension_lower_bound": 4,
+      "generic_strict_dimension": 6,
+      "id": "published-R17:-1561/3133",
+      "known_strict_dimension": 6,
+      "ordinary_half_ideal_span_dimension_lower_bound": 4,
+      "relative_ordinary_half_ideal_span_dimension_lower_bound": 0,
+      "totally_positive_unit_squareclass_dimension_upper_bound": 2
+    }
+  ],
+  "schema": "rank-jump.strict-half-ideals.v2"
+}

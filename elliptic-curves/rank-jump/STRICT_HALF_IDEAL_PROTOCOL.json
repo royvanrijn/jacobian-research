@@ -1,0 +1,26 @@
+{
+  "schema": "rank-jump.strict-half-ideal-protocol.v2",
+  "prior_attempt": "The v1 input and failed-attempt source/log artifact preserve an unsupported metadata accessor failure after the ideal identities. Revision 2 changes nf_get_disc to nf.disc, with the same cases, mathematical calculation and per-case limit.",
+  "layer": "incidence",
+  "question": "Do the retained strict character blocks force actual ordinary ideal-class 2-torsion beyond their generic strict contribution?",
+  "cases": [
+    0,
+    4,
+    5
+  ],
+  "construction": "For every retained point on the integral short model, write x=a/d^2,y=b/d^3, gamma=a-d^2*theta, and I=(b,gamma). Combine I over each already retained strict character mask, correcting valuations only at the completely factored bad places. Verify J^2=(product gamma) as exact HNF ideals.",
+  "limits": {
+    "curves": 3,
+    "seconds_per_curve": 40,
+    "strict_classes": 24,
+    "new_parameters": 0,
+    "point_searches": 0,
+    "point_coordinate_factorizations": 0,
+    "class_groups": 0,
+    "ideal_enumerations": 0
+  },
+  "generic_boundary": "Generic strict masks are recorded first and may be constructed without exceptional points. Relative masks use the existing oracle points retrospectively; they are not prospective class generators.",
+  "positive": "Exact ideal-square certificates and the ordinary totally positive unit-rank bound give lower bounds on the ordinary 2-torsion span and its quotient by the generic strict ideal span.",
+  "failure": "A missing support prime, odd strict valuation, failed ideal identity or timeout leaves that case UNKNOWN. No enlargement of the pool or budget.",
+  "claim_boundary": "Ordinary half-ideal classes may disappear after localizing at S. These are not upper bounds for the S-class group, and do not establish rational solubility of unknown classes."
+}
