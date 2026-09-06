@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.fibre-collision-panel-protocol.v1",
+  "layer": "solubility",
+  "selection": "Every distinct compatible block with at least two covers in the frozen 326-address discrimination census. No selection by rank or by success of arithmetic computations.",
+  "method": "Certify potential pair-mask span from all common projective roots at primes through97; retain actual odd-pair product-point witnesses when available. Separately factor every pair resultant in each block with one bounded worker and a checkpoint per completed pair. Exact support size requires all pair factorizations to complete.",
+  "limits": {"workers": 1, "factor_seconds_per_block": 5, "local_prime_bound": 97, "local_witness_residues": 16, "new_point_searches": 0},
+  "failure_semantics": "Timeout preserves completed factors and leaves full support UNKNOWN. Potential collision masks are not asserted locally soluble; actual witnesses give only a lower bound on realizable span unless they attain the parity upper bound. Prime97 is a fixed diagnostic cutoff, not a full-support claim."
+}

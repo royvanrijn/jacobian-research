@@ -2,7 +2,9 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: collision defects are pairwise but span every native character in both soluble and obstructed systems](COLLISION_DEFECTS_SPAN_ALL_NATIVE_CHARACTERS.md)
+- [Latest: a 326-address comparison finds full defect span and no consistent ordering of jump size by native cover count](SOLUBLE_COVER_STRUCTURE_DOES_NOT_TRACK_JUMP_SIZE.md)
+- [Joined multi-fibre metrics, including explicit coverage gaps](../../artifacts/generated-results/elliptic-curves/rank_jump_fibre_discrimination_metrics_v1.csv)
+- [The collision defects are pairwise but span every native character in both soluble and obstructed systems](COLLISION_DEFECTS_SPAN_ALL_NATIVE_CHARACTERS.md)
 - [Fixed collision primes give the exact remaining lift condition on rational product points](COLLISION_PRIMES_CONTROL_THE_REMAINING_LIFT.md)
 - [The residual fourth lift has no constant quadratic carrier and full signed Galois group](FOURTH_LIFT_HAS_FULL_SIGN_GALOIS_GROUP.md)
 - [The fourth direction splits on the rational component of the triple relation](FOURTH_DIRECTION_SPLITS_ONLY_ON_THE_RATIONAL_COMPONENT.md)
@@ -77,6 +79,8 @@ Retrospective analyses with pinned inputs, independent of the active curve searc
 Replay from the repository root, using Python 3.12 and its standard library:
 
 ```sh
+sage -python elliptic-curves/rank-jump/verify_fibre_discrimination.py check
+python3 elliptic-curves/rank-jump/report_fibre_discrimination.py check
 python3 elliptic-curves/rank-jump/verify_collision_defect.py check
 sage -python elliptic-curves/rank-jump/verify_collision_prime_lift.py check
 sage -python elliptic-curves/rank-jump/fourth_lift_shared_field.py check
