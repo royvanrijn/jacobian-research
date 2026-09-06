@@ -1,0 +1,24 @@
+{
+  "additional_strict_capacity": 0,
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_bounded_gain_reference_inputs_v1.json": "cecc1a51b2334a439059cfe58eec5f00c951fdd4693cf287c1df4898ca4989c8",
+    "artifacts/generated-results/elliptic-curves/rank_jump_bounded_gain_reference_v1.json": "5093cc8eb720cf623596b3ada8abbf318ee5270e0da7ba01bbf2dc776d1491ba",
+    "artifacts/generated-results/elliptic-curves/rank_jump_early_relation_pool_inputs_v1.json": "04aa9df34ad4c2b9a4d1794f54c7d44fa2d8349583e7c64102f6b58045d3d6c2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_early_relation_pool_provenance_v1.json": "89ae04283627ad3caa19d4e5c9c3c072b9020c0f4b3b110f7b2ff50c2460706c",
+    "artifacts/generated-results/elliptic-curves/rank_jump_early_relation_pool_v1.json": "b45f9943353de9015c309037977fb5f12a8e8579a41b3b3942f48b77445332b4",
+    "artifacts/generated-results/elliptic-curves/rank_jump_retained_norm_inherited_hit_v1.json": "434c49fcdf2dd7e50e3a8e594e3a3ae99716330d4d29a56d288ccc6c96543575",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_early_relation_pool.py": "85de0f74b006e2b8e70e80c0411d5fb1020eba47c68d5d5dfa0c196b4c7551d0",
+    "elliptic-curves/rank-jump/verify_unpointed_governing_norm.py": "69828517faa1ebdc92218dc338cfe156fbc8a16020bf6b28d8f59a60bc4c847a"
+  },
+  "complete_prime_blocks": 4569,
+  "independent_ideal_valuation_checks": 143479,
+  "kernel_dimension": 1,
+  "original_adaptive_search_replayed": false,
+  "outside_parity_rank": 4133,
+  "phase_rank_replays": 12,
+  "rational_norm_checks": 4134,
+  "schema": "rank-jump.early-relation-pool-verification.v1",
+  "status": "PASS",
+  "verified_generic_square_identities": 1
+}

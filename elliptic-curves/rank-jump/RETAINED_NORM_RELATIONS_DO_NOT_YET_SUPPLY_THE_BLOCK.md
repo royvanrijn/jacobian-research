@@ -1,5 +1,11 @@
 # Principal norm relations are not yet additional strict classes
 
+Follow-up: [the complete eligible early pool](EARLY_RELATION_POOL_EXHAUSTION.md)
+now has a verified4134-element parity-kernel certificate. Its sole surviving
+class is inherited, so the entire pre-protected pool adds no strict direction.
+This replaces the exploratory early-wave counts below with exact arithmetic
+coverage of the supplied dictionary.
+
 The fixed 512-box relation batch for MW16-05 at t=3/17 supplies **296
 principal elements**, but their norm projections have an injective
 outside-S valuation-parity map of rank **296**. No nonempty product of
