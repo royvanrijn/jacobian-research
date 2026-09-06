@@ -1,0 +1,720 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_local_collision_inputs_v1.json": "440372c18d42243ce447cad470c7bfd6ba5d5c757740e3ce413af6b0d8194f71",
+    "elliptic-curves/rank-jump/JACOBIAN_SHA_BLOCK_PROTOCOL.json": "3ff3fc3e4be0dd48732e2567246833bfb8b391aa534f0b2bbdeeb99c0644c832",
+    "elliptic-curves/rank-jump/cover_experiment.py": "ebb07b12f71ba1f24675673a2309133011a5f33786c5d26d4d6ecb94f964ed1f",
+    "elliptic-curves/rank-jump/cubic_bridge.py": "6999dde8fb028b759e76d9ad1a15b8b52d855717b42b4a777368e4e0c8bff0a8",
+    "elliptic-curves/rank-jump/jacobian_sha_blocks.py": "0fb1eb18c815d73641551699141eedc11e72984691d81dd9acd2d7a467ed4b13",
+    "elliptic-curves/rank-jump/local_collision.py": "09ab16e69d8113e30a844e7c97dd0e2e48411e662bb3235058e5405ee6182542",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "rows": [
+    {
+      "Sha_block_killed_in_common_surface": true,
+      "common_abelian_surface": "Jac(Y^2 = retained_sextic(z))",
+      "geometry": {
+        "anchor_x_numerator": [
+          "-1/3",
+          "0",
+          "1/3"
+        ],
+        "anchor_y_scale": "1/9",
+        "both_quotient_equations_verified": true,
+        "branch_image_in_cubic_basis": [
+          "0",
+          "1",
+          "-3"
+        ],
+        "labelled_two_torsion_identification_verified": true,
+        "sextic_coefficients_low_to_high": [
+          "13555164547912458808387278751468693903206721532808972",
+          "0",
+          "-155273922807395141504251377039761280",
+          "0",
+          "-9",
+          "0",
+          "3"
+        ],
+        "sextic_discriminant": "-195978342689936329102985916233015696146132204002335422305658440867963727317620293548082913153733497286324689390416488100291323901467962173108460150908497896707399979971439161100359297623868234811521624667947671715388516577344277135189310684790784000000000000000000",
+        "specialized_x_denominator": "z^2",
+        "specialized_x_numerator": [
+          "4518388182637486269462426250489564634402240510936324/3",
+          "0",
+          "-51757974269131713834750459013253762/3"
+        ],
+        "specialized_y_denominator": "z^3",
+        "specialized_y_multiplier": "-4518388182637486269462426250489564634402240510936324/9"
+      },
+      "independent_Sha_block_dimension_lower_bound": 16,
+      "independent_Sha_pair_anchor_masks": [
+        [
+          7,
+          35
+        ],
+        [
+          28,
+          99
+        ],
+        [
+          248,
+          292
+        ],
+        [
+          750,
+          8340
+        ],
+        [
+          1739,
+          2566
+        ],
+        [
+          5521,
+          20199
+        ],
+        [
+          65263,
+          152587
+        ],
+        [
+          78706,
+          666279
+        ]
+      ],
+      "inherited_radical_anchor_masks": [
+        370313
+      ],
+      "inherited_selmer_dimension": 17,
+      "isogeny_test": {
+        "checked_good_primes": [
+          {
+            "anchor_point_count": 18,
+            "prime": 11,
+            "target_point_count": 14
+          }
+        ],
+        "extension_splitting_status": "PROVED_NONSPLIT",
+        "status": "PROVED_NOT_Q_ISOGENOUS"
+      },
+      "layer": "solubility obstruction",
+      "projection_index_in_locally_admissible_anchor_space_lower_bound": 65536,
+      "projection_liftable_subspace_dimension_upper_bound": 1,
+      "symplectic_pair_coordinate_masks": [
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          30,
+          37
+        ],
+        [
+          93,
+          1043
+        ],
+        [
+          216,
+          321
+        ],
+        [
+          690,
+          2525
+        ],
+        [
+          8157,
+          19072
+        ],
+        [
+          9838,
+          83285
+        ]
+      ],
+      "u": -3
+    },
+    {
+      "Sha_block_killed_in_common_surface": true,
+      "common_abelian_surface": "Jac(Y^2 = retained_sextic(z))",
+      "geometry": {
+        "anchor_x_numerator": [
+          "-1/2",
+          "0",
+          "1/2"
+        ],
+        "anchor_y_scale": "1/4",
+        "both_quotient_equations_verified": true,
+        "branch_image_in_cubic_basis": [
+          "0",
+          "1",
+          "-2"
+        ],
+        "labelled_two_torsion_identification_verified": true,
+        "sextic_coefficients_low_to_high": [
+          "2677563367488880767609726450403212771423685936333750",
+          "0",
+          "-46007088239228190075333741345114450",
+          "0",
+          "-6",
+          "0",
+          "2"
+        ],
+        "sextic_discriminant": "-7761159420737558922490615972641367038662742384184242387436493206554216903191358239811475353163166439247747848993534255690766764410231915943291699465913210296239579149782038573786367476500414526438464729412090851334067242748558376980971520000000000000000000000",
+        "specialized_x_denominator": "z^2",
+        "specialized_x_numerator": [
+          "1338781683744440383804863225201606385711842968166875/2",
+          "0",
+          "-23003544119614095037666870672557227/2"
+        ],
+        "specialized_y_denominator": "z^3",
+        "specialized_y_multiplier": "-1338781683744440383804863225201606385711842968166875/4"
+      },
+      "independent_Sha_block_dimension_lower_bound": 12,
+      "independent_Sha_pair_anchor_masks": [
+        [
+          111,
+          282
+        ],
+        [
+          938,
+          2538
+        ],
+        [
+          1305,
+          6371
+        ],
+        [
+          13849,
+          133050
+        ],
+        [
+          32416,
+          66157
+        ],
+        [
+          61776,
+          355364
+        ]
+      ],
+      "inherited_radical_anchor_masks": [
+        702532
+      ],
+      "inherited_selmer_dimension": 13,
+      "isogeny_test": {
+        "checked_good_primes": [
+          {
+            "anchor_point_count": 18,
+            "prime": 11,
+            "target_point_count": 12
+          }
+        ],
+        "extension_splitting_status": "PROVED_NONSPLIT",
+        "status": "PROVED_NOT_Q_ISOGENOUS"
+      },
+      "layer": "solubility obstruction",
+      "projection_index_in_locally_admissible_anchor_space_lower_bound": 4096,
+      "projection_liftable_subspace_dimension_upper_bound": 1,
+      "symplectic_pair_coordinate_masks": [
+        [
+          1,
+          2
+        ],
+        [
+          6,
+          19
+        ],
+        [
+          10,
+          49
+        ],
+        [
+          108,
+          1038
+        ],
+        [
+          252,
+          517
+        ],
+        [
+          483,
+          2776
+        ]
+      ],
+      "u": -2
+    },
+    {
+      "Sha_block_killed_in_common_surface": true,
+      "common_abelian_surface": "Jac(Y^2 = retained_sextic(z))",
+      "geometry": {
+        "anchor_x_numerator": [
+          "-1",
+          "0",
+          "1"
+        ],
+        "anchor_y_scale": "1",
+        "both_quotient_equations_verified": true,
+        "branch_image_in_cubic_basis": [
+          "0",
+          "1",
+          "-1"
+        ],
+        "labelled_two_torsion_identification_verified": true,
+        "sextic_coefficients_low_to_high": [
+          "167347710468055050851050918101962677922339205090512",
+          "0",
+          "-5750886029903523759416717668139304",
+          "0",
+          "-3",
+          "0",
+          "1"
+        ],
+        "sextic_discriminant": "-231300575159119339461514931536343799980376530863576805277800731928597078448710435063236210576962718755192837934368057224974528196625407721293238054606449032629118685019399874328892786869094238365290113783875764193007805425305872498688000000000000000000",
+        "specialized_x_denominator": "z^2",
+        "specialized_x_numerator": [
+          "167347710468055050851050918101962677922339205090512",
+          "0",
+          "-5750886029903523759416717668139306"
+        ],
+        "specialized_y_denominator": "z^3",
+        "specialized_y_multiplier": "-167347710468055050851050918101962677922339205090512"
+      },
+      "independent_Sha_block_dimension_lower_bound": 16,
+      "independent_Sha_pair_anchor_masks": [
+        [
+          1,
+          10
+        ],
+        [
+          6,
+          24
+        ],
+        [
+          88,
+          149
+        ],
+        [
+          413,
+          1150
+        ],
+        [
+          850,
+          17709
+        ],
+        [
+          2322,
+          82425
+        ],
+        [
+          5253,
+          196762
+        ],
+        [
+          12191,
+          39308
+        ]
+      ],
+      "inherited_radical_anchor_masks": [
+        450876,
+        596921
+      ],
+      "inherited_selmer_dimension": 18,
+      "isogeny_test": {
+        "checked_good_primes": [
+          {
+            "anchor_point_count": 18,
+            "prime": 11,
+            "target_point_count": 8
+          }
+        ],
+        "extension_splitting_status": "PROVED_NONSPLIT",
+        "status": "PROVED_NOT_Q_ISOGENOUS"
+      },
+      "layer": "solubility obstruction",
+      "projection_index_in_locally_admissible_anchor_space_lower_bound": 65536,
+      "projection_liftable_subspace_dimension_upper_bound": 2,
+      "symplectic_pair_coordinate_masks": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          12
+        ],
+        [
+          28,
+          43
+        ],
+        [
+          111,
+          286
+        ],
+        [
+          216,
+          4423
+        ],
+        [
+          584,
+          20605
+        ],
+        [
+          1315,
+          49196
+        ],
+        [
+          3055,
+          9830
+        ]
+      ],
+      "u": -1
+    },
+    {
+      "Sha_block_killed_in_common_surface": true,
+      "common_abelian_surface": "Jac(Y^2 = retained_sextic(z))",
+      "geometry": {
+        "anchor_x_numerator": [
+          "1",
+          "0",
+          "-1"
+        ],
+        "anchor_y_scale": "1",
+        "both_quotient_equations_verified": true,
+        "branch_image_in_cubic_basis": [
+          "0",
+          "1",
+          "1"
+        ],
+        "labelled_two_torsion_identification_verified": true,
+        "sextic_coefficients_low_to_high": [
+          "167347710468055039349278858294915159088903868811900",
+          "0",
+          "5750886029903523759416717668139304",
+          "0",
+          "3",
+          "0",
+          "-1"
+        ],
+        "sextic_discriminant": "231300575159119323564276269939623995407269377081499469732142047389722735946948899419758133056346635583572663807352214269720469198524615938908212198795129522635953333849737834792588188480934407594200961058525671632085249430803552665600000000000000000000",
+        "specialized_x_denominator": "z^2",
+        "specialized_x_numerator": [
+          "167347710468055039349278858294915159088903868811900",
+          "0",
+          "5750886029903523759416717668139306"
+        ],
+        "specialized_y_denominator": "z^3",
+        "specialized_y_multiplier": "167347710468055039349278858294915159088903868811900"
+      },
+      "independent_Sha_block_dimension_lower_bound": 12,
+      "independent_Sha_pair_anchor_masks": [
+        [
+          163,
+          2081
+        ],
+        [
+          260,
+          16422
+        ],
+        [
+          1014,
+          6494
+        ],
+        [
+          1923,
+          10273
+        ],
+        [
+          42983,
+          71365
+        ],
+        [
+          361198,
+          654080
+        ]
+      ],
+      "inherited_radical_anchor_masks": [
+        154245
+      ],
+      "inherited_selmer_dimension": 13,
+      "isogeny_test": {
+        "checked_good_primes": [
+          {
+            "anchor_point_count": 18,
+            "prime": 11,
+            "target_point_count": 10
+          }
+        ],
+        "extension_splitting_status": "PROVED_NONSPLIT",
+        "status": "PROVED_NOT_Q_ISOGENOUS"
+      },
+      "layer": "solubility obstruction",
+      "projection_index_in_locally_admissible_anchor_space_lower_bound": 4096,
+      "projection_liftable_subspace_dimension_upper_bound": 1,
+      "symplectic_pair_coordinate_masks": [
+        [
+          1,
+          16
+        ],
+        [
+          2,
+          128
+        ],
+        [
+          7,
+          50
+        ],
+        [
+          15,
+          80
+        ],
+        [
+          335,
+          557
+        ],
+        [
+          2821,
+          5110
+        ]
+      ],
+      "u": 1
+    },
+    {
+      "Sha_block_killed_in_common_surface": true,
+      "common_abelian_surface": "Jac(Y^2 = retained_sextic(z))",
+      "geometry": {
+        "anchor_x_numerator": [
+          "1/2",
+          "0",
+          "-1/2"
+        ],
+        "anchor_y_scale": "1/4",
+        "both_quotient_equations_verified": true,
+        "branch_image_in_cubic_basis": [
+          "0",
+          "1",
+          "2"
+        ],
+        "labelled_two_torsion_identification_verified": true,
+        "sextic_coefficients_low_to_high": [
+          "2677563367488880675595549971946832620756203246104842",
+          "0",
+          "46007088239228190075333741345114450",
+          "0",
+          "6",
+          "0",
+          "-2"
+        ],
+        "sextic_discriminant": "7761159420737558655779209143482293985861935874037079217197931105973351663200413994263413506665345225876264143144900157199514886425506682761328969363232826029060521882465159585566145650175797872461353295994178843761381560093035114253219004416000000000000000000",
+        "specialized_x_denominator": "z^2",
+        "specialized_x_numerator": [
+          "1338781683744440337797774985973416310378101623052421/2",
+          "0",
+          "23003544119614095037666870672557227/2"
+        ],
+        "specialized_y_denominator": "z^3",
+        "specialized_y_multiplier": "1338781683744440337797774985973416310378101623052421/4"
+      },
+      "independent_Sha_block_dimension_lower_bound": 12,
+      "independent_Sha_pair_anchor_masks": [
+        [
+          252,
+          325
+        ],
+        [
+          683,
+          4597
+        ],
+        [
+          1555,
+          12647
+        ],
+        [
+          2056,
+          37871
+        ],
+        [
+          22431,
+          81573
+        ],
+        [
+          163363,
+          584862
+        ]
+      ],
+      "inherited_radical_anchor_masks": [
+        513585
+      ],
+      "inherited_selmer_dimension": 13,
+      "isogeny_test": {
+        "checked_good_primes": [
+          {
+            "anchor_point_count": 18,
+            "prime": 11,
+            "target_point_count": 18
+          },
+          {
+            "anchor_point_count": 26,
+            "prime": 19,
+            "target_point_count": 26
+          },
+          {
+            "anchor_point_count": 32,
+            "prime": 23,
+            "target_point_count": 24
+          }
+        ],
+        "extension_splitting_status": "PROVED_NONSPLIT",
+        "status": "PROVED_NOT_Q_ISOGENOUS"
+      },
+      "layer": "solubility obstruction",
+      "projection_index_in_locally_admissible_anchor_space_lower_bound": 4096,
+      "projection_liftable_subspace_dimension_upper_bound": 1,
+      "symplectic_pair_coordinate_masks": [
+        [
+          1,
+          2
+        ],
+        [
+          5,
+          35
+        ],
+        [
+          12,
+          98
+        ],
+        [
+          16,
+          295
+        ],
+        [
+          175,
+          637
+        ],
+        [
+          1276,
+          4569
+        ]
+      ],
+      "u": 2
+    },
+    {
+      "Sha_block_killed_in_common_surface": true,
+      "common_abelian_surface": "Jac(Y^2 = retained_sextic(z))",
+      "geometry": {
+        "anchor_x_numerator": [
+          "1/3",
+          "0",
+          "-1/3"
+        ],
+        "anchor_y_scale": "1/9",
+        "both_quotient_equations_verified": true,
+        "branch_image_in_cubic_basis": [
+          "0",
+          "1",
+          "3"
+        ],
+        "labelled_two_torsion_identification_verified": true,
+        "sextic_coefficients_low_to_high": [
+          "13555164547912458497839433136678410894703967453286400",
+          "0",
+          "155273922807395141504251377039761280",
+          "0",
+          "9",
+          "0",
+          "-3"
+        ],
+        "sextic_discriminant": "195978342689936324613136169710421306390516646481717440366086227619654087676831757381156183594167685847612091329585875273133231592877208566312175775548065578044271817163441185849654935141236896813711728643240081219641181237765596165306340658380800000000000000000000",
+        "specialized_x_denominator": "z^2",
+        "specialized_x_numerator": [
+          "4518388182637486165946477712226136964901322484428800/3",
+          "0",
+          "51757974269131713834750459013253762/3"
+        ],
+        "specialized_y_denominator": "z^3",
+        "specialized_y_multiplier": "4518388182637486165946477712226136964901322484428800/9"
+      },
+      "independent_Sha_block_dimension_lower_bound": 14,
+      "independent_Sha_pair_anchor_masks": [
+        [
+          6,
+          160
+        ],
+        [
+          29,
+          2219
+        ],
+        [
+          483,
+          6239
+        ],
+        [
+          599,
+          1533
+        ],
+        [
+          15828,
+          137928
+        ],
+        [
+          18122,
+          46290
+        ],
+        [
+          129318,
+          429117
+        ]
+      ],
+      "inherited_radical_anchor_masks": [
+        602844
+      ],
+      "inherited_selmer_dimension": 15,
+      "isogeny_test": {
+        "checked_good_primes": [
+          {
+            "anchor_point_count": 18,
+            "prime": 11,
+            "target_point_count": 14
+          }
+        ],
+        "extension_splitting_status": "PROVED_NONSPLIT",
+        "status": "PROVED_NOT_Q_ISOGENOUS"
+      },
+      "layer": "solubility obstruction",
+      "projection_index_in_locally_admissible_anchor_space_lower_bound": 16384,
+      "projection_liftable_subspace_dimension_upper_bound": 1,
+      "symplectic_pair_coordinate_masks": [
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          68
+        ],
+        [
+          12,
+          195
+        ],
+        [
+          19,
+          47
+        ],
+        [
+          495,
+          4308
+        ],
+        [
+          564,
+          1446
+        ],
+        [
+          4041,
+          13411
+        ]
+      ],
+      "u": 3
+    }
+  ],
+  "schema": "rank-jump.jacobian-sha-block.v1",
+  "scope": "A certified independent Sha[2] subspace killed in one explicit genus-two Jacobian per fibre. No full Sha dimension, numerical whole-curve rank upper bound, or new rational point is claimed."
+}

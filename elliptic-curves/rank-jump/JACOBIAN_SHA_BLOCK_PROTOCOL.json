@@ -1,0 +1,18 @@
+{
+  "schema": "rank-jump.jacobian-sha-block-protocol.v1",
+  "question": "Does one explicitly identified genus-two Jacobian kill the whole inherited Sha block, and how large a rational lifting obstruction does the existing CT matrix certify?",
+  "layer": "solubility obstruction",
+  "parameters": [-3, -2, -1, 1, 2, 3],
+  "isogeny_witness_primes": [11, 19, 23, 29, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 83, 89, 97],
+  "selection": "All six existing fixed-cubic controls, with their pinned inherited spaces and complete restricted CT matrices.",
+  "limits": {"new_parameters": 0, "new_points": 0, "new_CT_pairs": 0, "class_groups": 0, "maximum_wall_seconds": 30},
+  "checks": [
+    "Verify the sextic genus-two equation, discriminant, and both degree-two elliptic quotient maps.",
+    "Verify the branch labels match the fixed theta to theta+u*theta^2 identification.",
+    "Extract a full nondegenerate symplectic subspace of each retained CT matrix and retain all anchor masks.",
+    "Apply the exact gluing sequence to prove that these independent Sha classes are killed in one Jacobian.",
+    "Keep the resulting rational projection-index obstruction separate from point-search visibility and from a positive rank predictor.",
+    "Use only the listed good primes to seek a different Frobenius trace, proving the gluing extension cannot split as an abelian-variety extension."
+  ],
+  "failure_semantics": "Failure to identify the labelled gluing leaves the common-Jacobian conclusion UNKNOWN. A shared Jacobian alone proves no rational point on any cover. If no listed prime distinguishes Frobenius traces, isogeny and extension splitting remain UNKNOWN."
+}
