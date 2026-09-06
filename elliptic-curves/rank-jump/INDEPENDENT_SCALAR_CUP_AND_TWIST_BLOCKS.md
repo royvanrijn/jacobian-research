@@ -1,5 +1,10 @@
 # Independent scalar cup products and simultaneous twist obstructions
 
+Follow-up: [the nonscalar norm-lifting control](NONSCALAR_CUP_BLOCK_AND_SELF_GLUING.md)
+independently computes the opposite maps for `1+theta` and `-(1+theta)`,
+constructs two unramified norm lifts, and identifies the zero case's
+elliptic self-gluing. It does not close the production nine-bit target.
+
 The half-ideal Artin matrix contains an independently computable part of
 the higher solubility obstruction. For strict classes, its failure to be
 symmetric is exactly the scalar \(-1\) cup product:

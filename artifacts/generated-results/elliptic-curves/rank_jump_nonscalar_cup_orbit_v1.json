@@ -1,0 +1,202 @@
+{
+  "automorphism_theta": [
+    "-2",
+    "-12",
+    "1"
+  ],
+  "boundary": "Exact on this eight-class unit subgroup in the cyclic cubic control; no S3 production-family criterion.",
+  "control_sha256": "d5e9ddb4345a809c58231b2767ce4f3e81639f853705ab6abdfd6c5a55a7b5b0",
+  "explicit_lifts_sha256": "12d416d94efb29461468208afd838218eb563ffe00cb46bd2d82612b31078464",
+  "multiplier_class_dimension": 3,
+  "norm_one_class_dimension": 2,
+  "producer_sha256": "b3b684cab3c9695baae01819c0f395e341ed13c3fc409f3cef8d6929d8cd1e51",
+  "records": [
+    {
+      "cup_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "derivation": "Galois equivariance and cup bilinearity from the two independently verified matrices",
+      "gamma": [
+        "1",
+        "0",
+        "0"
+      ],
+      "mask": 0,
+      "norm": "1",
+      "unramified_norm_image_dimension_on_U": 2
+    },
+    {
+      "cup_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "derivation": "Galois equivariance and cup bilinearity from the two independently verified matrices",
+      "gamma": [
+        "-1",
+        "-1",
+        "0"
+      ],
+      "mask": 1,
+      "norm": "1",
+      "unramified_norm_image_dimension_on_U": 2
+    },
+    {
+      "cup_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "derivation": "Galois equivariance and cup bilinearity from the two independently verified matrices",
+      "gamma": [
+        "1",
+        "12",
+        "-1"
+      ],
+      "mask": 2,
+      "norm": "1",
+      "unramified_norm_image_dimension_on_U": 2
+    },
+    {
+      "cup_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "derivation": "Galois equivariance and cup bilinearity from the two independently verified matrices",
+      "gamma": [
+        "0",
+        "1",
+        "0"
+      ],
+      "mask": 3,
+      "norm": "1",
+      "unramified_norm_image_dimension_on_U": 2
+    },
+    {
+      "cup_matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "derivation": "Galois equivariance and cup bilinearity from the two independently verified matrices",
+      "gamma": [
+        "-1",
+        "0",
+        "0"
+      ],
+      "mask": 4,
+      "norm": "-1",
+      "unramified_norm_image_dimension_on_U": 0
+    },
+    {
+      "cup_matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "derivation": "Galois equivariance and cup bilinearity from the two independently verified matrices",
+      "gamma": [
+        "1",
+        "1",
+        "0"
+      ],
+      "mask": 5,
+      "norm": "-1",
+      "unramified_norm_image_dimension_on_U": 0
+    },
+    {
+      "cup_matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "derivation": "Galois equivariance and cup bilinearity from the two independently verified matrices",
+      "gamma": [
+        "-1",
+        "-12",
+        "1"
+      ],
+      "mask": 6,
+      "norm": "-1",
+      "unramified_norm_image_dimension_on_U": 0
+    },
+    {
+      "cup_matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "derivation": "Galois equivariance and cup bilinearity from the two independently verified matrices",
+      "gamma": [
+        "0",
+        "-1",
+        "0"
+      ],
+      "mask": 7,
+      "norm": "-1",
+      "unramified_norm_image_dimension_on_U": 0
+    }
+  ],
+  "schema": "rank-jump.nonscalar-cup-orbit.v1",
+  "status": "PASS",
+  "unit_conjugates": [
+    [
+      "-1",
+      "-1",
+      "0"
+    ],
+    [
+      "1",
+      "12",
+      "-1"
+    ],
+    [
+      "-14",
+      "-11",
+      "1"
+    ]
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema":"rank-jump.nonscalar-cup-control-protocol.v1",
+  "question":"Can independent norm and parity-ideal calculations recover nonscalar restricted cup products, with a nonzero bilinearity control?",
+  "input":"rank_jump_scalar_cup_control_v1.json",
+  "field_polynomial_ascending":[-1,-14,-11,1],
+  "S_finite":[2,163],
+  "multipliers_ascending":[[1,1,0],[-1,-1,0]],
+  "classes":"The two previously certified strict generators, in retained order; no new class selection.",
+  "limits":{"fields":1,"multipliers":2,"norm_equations":4,"seconds_per_multiplier":30,"independent_valuation_precision":64,"point_searches":0,"parameter_searches":0},
+  "prediction":"The two independently computed cup matrices sum over F2 to the retained nonzero scalar -1 matrix. No value for an individual matrix is assumed.",
+  "scope":"An arithmetic control of restricted ramification obstructions; a successful norm is not an elliptic rational point and a zero cup map is not a solubility certificate.",
+  "failure":"A timeout or unresolved parity is UNKNOWN. Preserve partial witnesses and do not increase the bounds in this experiment."
+}

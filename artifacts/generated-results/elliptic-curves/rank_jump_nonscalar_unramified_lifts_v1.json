@@ -1,0 +1,182 @@
+{
+  "analysis_sha256": "d5e9ddb4345a809c58231b2767ce4f3e81639f853705ab6abdfd6c5a55a7b5b0",
+  "arithmetic_source_sha256": "21ede981248c766c8250b1a854f7534b52ae5f69038a4acedd2933c981b6f868",
+  "elliptic_rational_solubility": "UNKNOWN",
+  "gamma": [
+    "-1",
+    "-1",
+    "0"
+  ],
+  "independent_parities_sha256": "f0f03fb6af821dcccf525eaaeb82df58444d11b4b68dc6e03bb9c5aa55f5f8d4",
+  "lifts": [
+    {
+      "corrected_valuation_checks": [
+        {
+          "corrected_valuations": [
+            0
+          ],
+          "eta_valuation": 0,
+          "p": 5,
+          "theta_mod_p": 1
+        },
+        {
+          "corrected_valuations": [
+            0
+          ],
+          "eta_valuation": 1,
+          "p": 5,
+          "theta_mod_p": 2
+        },
+        {
+          "corrected_valuations": [
+            0,
+            2
+          ],
+          "eta_valuation": 0,
+          "p": 5,
+          "theta_mod_p": 3
+        },
+        {
+          "corrected_valuations": [
+            -2,
+            0
+          ],
+          "eta_valuation": 1,
+          "p": 13,
+          "theta_mod_p": 2
+        },
+        {
+          "corrected_valuations": [
+            0
+          ],
+          "eta_valuation": 0,
+          "p": 13,
+          "theta_mod_p": 4
+        },
+        {
+          "corrected_valuations": [
+            0
+          ],
+          "eta_valuation": 0,
+          "p": 13,
+          "theta_mod_p": 5
+        }
+      ],
+      "eta": [
+        "-2",
+        "1",
+        "0"
+      ],
+      "eta_norm": "65",
+      "norm_a": [
+        "-23001/169",
+        "-301957/169",
+        "24991/169"
+      ],
+      "norm_b": [
+        "80478/169",
+        "1053116/169",
+        "-87162/169"
+      ],
+      "norm_target": [
+        "58/169",
+        "-147/169",
+        "12/169"
+      ],
+      "original_beta": [
+        "1",
+        "-10",
+        "1"
+      ],
+      "unramified_outside_S": true
+    },
+    {
+      "corrected_valuation_checks": [
+        {
+          "corrected_valuations": [
+            0
+          ],
+          "eta_valuation": 1,
+          "p": 5,
+          "theta_mod_p": 1
+        },
+        {
+          "corrected_valuations": [
+            0
+          ],
+          "eta_valuation": 1,
+          "p": 5,
+          "theta_mod_p": 2
+        },
+        {
+          "corrected_valuations": [
+            -2,
+            0
+          ],
+          "eta_valuation": 1,
+          "p": 5,
+          "theta_mod_p": 3
+        }
+      ],
+      "eta": [
+        "5",
+        "0",
+        "0"
+      ],
+      "eta_norm": "125",
+      "norm_a": [
+        "12/25",
+        "-13/25",
+        "1/25"
+      ],
+      "norm_b": [
+        "-12/25",
+        "13/25",
+        "-1/25"
+      ],
+      "norm_target": [
+        "12/25",
+        "-13/25",
+        "1/25"
+      ],
+      "original_beta": [
+        "12",
+        "-13",
+        "1"
+      ],
+      "unramified_outside_S": true
+    }
+  ],
+  "multiplier_signs": [
+    [
+      -1,
+      1,
+      1
+    ],
+    [
+      1,
+      -1,
+      -1
+    ]
+  ],
+  "neither_multiplier_is_a_scalar_squareclass": true,
+  "norm_image_dimension": 2,
+  "positive_multiplier_norm_image_dimension_on_retained_U": 0,
+  "producer_sha256": "d8a422b614ceccc4b6e77d8b4c3649256a6ffd2ccc4b6ccdde5163900a1d727d",
+  "root_intervals": [
+    [
+      -2,
+      -1
+    ],
+    [
+      -1,
+      0
+    ],
+    [
+      12,
+      13
+    ]
+  ],
+  "schema": "rank-jump.nonscalar-unramified-lifts.v1",
+  "status": "PASS"
+}

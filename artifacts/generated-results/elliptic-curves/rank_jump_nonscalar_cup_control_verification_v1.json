@@ -1,0 +1,385 @@
+{
+  "Hensel_source_sha256": "8c2acb70a8496586d025e39c4e2da3cb6be51fa83a8d208b1dd92eadcfae1940",
+  "analysis_sha256": "d5e9ddb4345a809c58231b2767ce4f3e81639f853705ab6abdfd6c5a55a7b5b0",
+  "boundary": "Complete parity support verified by integrality and norm, not a bounded list of guessed primes.",
+  "matrix_sum": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "precision": 64,
+  "records": [
+    {
+      "gamma_norm": "-1",
+      "index": 0,
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "witnesses": [
+        {
+          "cup_row": [
+            0,
+            1
+          ],
+          "places": [
+            {
+              "character_bits": [
+                1,
+                1
+              ],
+              "extension": "inert",
+              "p": 5,
+              "parity": 0,
+              "theta_mod_p": 1,
+              "valuations": [
+                0
+              ]
+            },
+            {
+              "character_bits": [
+                1,
+                0
+              ],
+              "extension": "inert",
+              "p": 5,
+              "parity": 1,
+              "theta_mod_p": 2,
+              "valuations": [
+                1
+              ]
+            },
+            {
+              "character_bits": [
+                0,
+                1
+              ],
+              "extension": "split",
+              "p": 5,
+              "parity": 0,
+              "theta_mod_p": 3,
+              "valuations": [
+                0,
+                2
+              ]
+            },
+            {
+              "character_bits": [
+                1,
+                0
+              ],
+              "extension": "split",
+              "p": 37,
+              "parity": 0,
+              "theta_mod_p": 25,
+              "valuations": [
+                0,
+                0
+              ]
+            },
+            {
+              "character_bits": [
+                0,
+                1
+              ],
+              "extension": "split",
+              "p": 37,
+              "parity": 0,
+              "theta_mod_p": 27,
+              "valuations": [
+                0,
+                0
+              ]
+            },
+            {
+              "character_bits": [
+                1,
+                1
+              ],
+              "extension": "split",
+              "p": 37,
+              "parity": 1,
+              "theta_mod_p": 33,
+              "valuations": [
+                -1,
+                1
+              ]
+            }
+          ],
+          "support_primes": [
+            5,
+            37
+          ]
+        },
+        {
+          "cup_row": [
+            1,
+            0
+          ],
+          "places": [
+            {
+              "character_bits": [
+                1,
+                1
+              ],
+              "extension": "inert",
+              "p": 5,
+              "parity": 1,
+              "theta_mod_p": 1,
+              "valuations": [
+                1
+              ]
+            },
+            {
+              "character_bits": [
+                1,
+                0
+              ],
+              "extension": "inert",
+              "p": 5,
+              "parity": 1,
+              "theta_mod_p": 2,
+              "valuations": [
+                1
+              ]
+            },
+            {
+              "character_bits": [
+                0,
+                1
+              ],
+              "extension": "split",
+              "p": 5,
+              "parity": 0,
+              "theta_mod_p": 3,
+              "valuations": [
+                0,
+                0
+              ]
+            },
+            {
+              "character_bits": [
+                1,
+                0
+              ],
+              "extension": "split",
+              "p": 37,
+              "parity": 0,
+              "theta_mod_p": 25,
+              "valuations": [
+                0,
+                0
+              ]
+            },
+            {
+              "character_bits": [
+                0,
+                1
+              ],
+              "extension": "split",
+              "p": 37,
+              "parity": 0,
+              "theta_mod_p": 27,
+              "valuations": [
+                0,
+                0
+              ]
+            },
+            {
+              "character_bits": [
+                1,
+                1
+              ],
+              "extension": "split",
+              "p": 37,
+              "parity": 1,
+              "theta_mod_p": 33,
+              "valuations": [
+                -1,
+                1
+              ]
+            }
+          ],
+          "support_primes": [
+            5,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "gamma_norm": "1",
+      "index": 1,
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "witnesses": [
+        {
+          "cup_row": [
+            0,
+            0
+          ],
+          "places": [
+            {
+              "character_bits": [
+                1,
+                1
+              ],
+              "extension": "inert",
+              "p": 5,
+              "parity": 0,
+              "theta_mod_p": 1,
+              "valuations": [
+                0
+              ]
+            },
+            {
+              "character_bits": [
+                1,
+                0
+              ],
+              "extension": "inert",
+              "p": 5,
+              "parity": 1,
+              "theta_mod_p": 2,
+              "valuations": [
+                1
+              ]
+            },
+            {
+              "character_bits": [
+                0,
+                1
+              ],
+              "extension": "split",
+              "p": 5,
+              "parity": 0,
+              "theta_mod_p": 3,
+              "valuations": [
+                0,
+                2
+              ]
+            },
+            {
+              "character_bits": [
+                1,
+                0
+              ],
+              "extension": "split",
+              "p": 13,
+              "parity": 1,
+              "theta_mod_p": 2,
+              "valuations": [
+                -1,
+                1
+              ]
+            },
+            {
+              "character_bits": [
+                0,
+                1
+              ],
+              "extension": "inert",
+              "p": 13,
+              "parity": 0,
+              "theta_mod_p": 4,
+              "valuations": [
+                0
+              ]
+            },
+            {
+              "character_bits": [
+                1,
+                1
+              ],
+              "extension": "inert",
+              "p": 13,
+              "parity": 0,
+              "theta_mod_p": 5,
+              "valuations": [
+                0
+              ]
+            }
+          ],
+          "support_primes": [
+            5,
+            13
+          ]
+        },
+        {
+          "cup_row": [
+            0,
+            0
+          ],
+          "places": [
+            {
+              "character_bits": [
+                1,
+                1
+              ],
+              "extension": "inert",
+              "p": 5,
+              "parity": 1,
+              "theta_mod_p": 1,
+              "valuations": [
+                1
+              ]
+            },
+            {
+              "character_bits": [
+                1,
+                0
+              ],
+              "extension": "inert",
+              "p": 5,
+              "parity": 1,
+              "theta_mod_p": 2,
+              "valuations": [
+                1
+              ]
+            },
+            {
+              "character_bits": [
+                0,
+                1
+              ],
+              "extension": "split",
+              "p": 5,
+              "parity": 1,
+              "theta_mod_p": 3,
+              "valuations": [
+                -1,
+                1
+              ]
+            }
+          ],
+          "support_primes": [
+            5
+          ]
+        }
+      ]
+    }
+  ],
+  "schema": "rank-jump.nonscalar-cup-control-verification.v1",
+  "source_control_sha256": "cba061a6ecfd64447a06f7c41dc89b4fb2800188067328ea58a535d7675b50b3",
+  "status": "PASS",
+  "verifier_sha256": "21ede981248c766c8250b1a854f7534b52ae5f69038a4acedd2933c981b6f868"
+}

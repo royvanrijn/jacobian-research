@@ -1,0 +1,467 @@
+{
+  "bilinearity_status": "PASS",
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_scalar_cup_control_v1.json": "cba061a6ecfd64447a06f7c41dc89b4fb2800188067328ea58a535d7675b50b3",
+    "elliptic-curves/rank-jump/NONSCALAR_CUP_CONTROL_PROTOCOL.json": "dab4c4f651b2d2472824cab85369a547e35b8b644de5d8f7b3af8faa43c0d76d",
+    "elliptic-curves/rank-jump/nonscalar_cup_control.py": "07980d4e98ca43b3497ac1f0a69eb485e1a3e0c4195d0b477585e74bca579c04"
+  },
+  "expected_sum": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "observed_sum": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "records": [
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_scalar_cup_control_v1.json": "cba061a6ecfd64447a06f7c41dc89b4fb2800188067328ea58a535d7675b50b3",
+        "elliptic-curves/rank-jump/NONSCALAR_CUP_CONTROL_PROTOCOL.json": "dab4c4f651b2d2472824cab85369a547e35b8b644de5d8f7b3af8faa43c0d76d",
+        "elliptic-curves/rank-jump/nonscalar_cup_control.py": "07980d4e98ca43b3497ac1f0a69eb485e1a3e0c4195d0b477585e74bca579c04"
+      },
+      "gamma": [
+        "1",
+        "1",
+        "0"
+      ],
+      "index": 0,
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "status": "COUNTED",
+      "witnesses": [
+        {
+          "a": [
+            "11/37",
+            "-561/37",
+            "-636/37"
+          ],
+          "b": [
+            "-34/37",
+            "-338/37",
+            "-160/37"
+          ],
+          "beta": [
+            "1",
+            "-10",
+            "1"
+          ],
+          "cup_row": [
+            0,
+            1
+          ],
+          "parity_records": [
+            {
+              "character_bits": [
+                1,
+                1
+              ],
+              "p": 5,
+              "parity": 0,
+              "prime_hnf": "[5, 3, 2; 0, 1, 0; 0, 0, 1]",
+              "residue_degree": 1,
+              "valuations_above": [
+                0
+              ]
+            },
+            {
+              "character_bits": [
+                0,
+                1
+              ],
+              "p": 5,
+              "parity": 0,
+              "prime_hnf": "[5, 1, 3; 0, 1, 0; 0, 0, 1]",
+              "residue_degree": 1,
+              "valuations_above": [
+                0,
+                2
+              ]
+            },
+            {
+              "character_bits": [
+                1,
+                0
+              ],
+              "p": 5,
+              "parity": 1,
+              "prime_hnf": "[5, 2, 1; 0, 1, 0; 0, 0, 1]",
+              "residue_degree": 1,
+              "valuations_above": [
+                1
+              ]
+            },
+            {
+              "character_bits": [
+                1,
+                1
+              ],
+              "p": 37,
+              "parity": 1,
+              "prime_hnf": "[37, 8, 16; 0, 1, 0; 0, 0, 1]",
+              "residue_degree": 1,
+              "valuations_above": [
+                -1,
+                1
+              ]
+            },
+            {
+              "character_bits": [
+                0,
+                1
+              ],
+              "p": 37,
+              "parity": 0,
+              "prime_hnf": "[37, 14, 8; 0, 1, 0; 0, 0, 1]",
+              "residue_degree": 1,
+              "valuations_above": [
+                0,
+                0
+              ]
+            },
+            {
+              "character_bits": [
+                1,
+                0
+              ],
+              "p": 37,
+              "parity": 0,
+              "prime_hnf": "[37, 16, 14; 0, 1, 0; 0, 0, 1]",
+              "residue_degree": 1,
+              "valuations_above": [
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "a": [
+            "397/37",
+            "362/37",
+            "-34/37"
+          ],
+          "b": [
+            "-337/37",
+            "278/37",
+            "-21/37"
+          ],
+          "beta": [
+            "12",
+            "-13",
+            "1"
+          ],
+          "cup_row": [
+            1,
+            0
+          ],
+          "parity_records": [
+            {
+              "character_bits": [
+                1,
+                1
+              ],
+              "p": 5,
+              "parity": 1,
+              "prime_hnf": "[5, 3, 2; 0, 1, 0; 0, 0, 1]",
+              "residue_degree": 1,
+              "valuations_above": [
+                1
+              ]
+            },
+            {
+              "character_bits": [
+                0,
+                1
+              ],
+              "p": 5,
+              "parity": 0,
+              "prime_hnf": "[5, 1, 3; 0, 1, 0; 0, 0, 1]",
+              "residue_degree": 1,
+              "valuations_above": [
+                0,
+                0
+              ]
+            },
+            {
+              "character_bits": [
+                1,
+                0
+              ],
+              "p": 5,
+              "parity": 1,
+              "prime_hnf": "[5, 2, 1; 0, 1, 0; 0, 0, 1]",
+              "residue_degree": 1,
+              "valuations_above": [
+                1
+              ]
+            },
+            {
+              "character_bits": [
+                1,
+                1
+              ],
+              "p": 37,
+              "parity": 1,
+              "prime_hnf": "[37, 8, 16; 0, 1, 0; 0, 0, 1]",
+              "residue_degree": 1,
+              "valuations_above": [
+                1,
+                -1
+              ]
+            },
+            {
+              "character_bits": [
+                0,
+                1
+              ],
+              "p": 37,
+              "parity": 0,
+              "prime_hnf": "[37, 14, 8; 0, 1, 0; 0, 0, 1]",
+              "residue_degree": 1,
+              "valuations_above": [
+                0,
+                0
+              ]
+            },
+            {
+              "character_bits": [
+                1,
+                0
+              ],
+              "p": 37,
+              "parity": 0,
+              "prime_hnf": "[37, 16, 14; 0, 1, 0; 0, 0, 1]",
+              "residue_degree": 1,
+              "valuations_above": [
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_scalar_cup_control_v1.json": "cba061a6ecfd64447a06f7c41dc89b4fb2800188067328ea58a535d7675b50b3",
+        "elliptic-curves/rank-jump/NONSCALAR_CUP_CONTROL_PROTOCOL.json": "dab4c4f651b2d2472824cab85369a547e35b8b644de5d8f7b3af8faa43c0d76d",
+        "elliptic-curves/rank-jump/nonscalar_cup_control.py": "07980d4e98ca43b3497ac1f0a69eb485e1a3e0c4195d0b477585e74bca579c04"
+      },
+      "gamma": [
+        "-1",
+        "-1",
+        "0"
+      ],
+      "index": 1,
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "status": "COUNTED",
+      "witnesses": [
+        {
+          "a": [
+            "5461/13",
+            "71599/13",
+            "-5926/13"
+          ],
+          "b": [
+            "-19086/13",
+            "-249694/13",
+            "20666/13"
+          ],
+          "beta": [
+            "1",
+            "-10",
+            "1"
+          ],
+          "cup_row": [
+            0,
+            0
+          ],
+          "parity_records": [
+            {
+              "character_bits": [
+                1,
+                1
+              ],
+              "p": 5,
+              "parity": 0,
+              "prime_hnf": "[5, 3, 2; 0, 1, 0; 0, 0, 1]",
+              "residue_degree": 1,
+              "valuations_above": [
+                0
+              ]
+            },
+            {
+              "character_bits": [
+                0,
+                1
+              ],
+              "p": 5,
+              "parity": 0,
+              "prime_hnf": "[5, 1, 3; 0, 1, 0; 0, 0, 1]",
+              "residue_degree": 1,
+              "valuations_above": [
+                0,
+                2
+              ]
+            },
+            {
+              "character_bits": [
+                1,
+                0
+              ],
+              "p": 5,
+              "parity": 1,
+              "prime_hnf": "[5, 2, 1; 0, 1, 0; 0, 0, 1]",
+              "residue_degree": 1,
+              "valuations_above": [
+                1
+              ]
+            },
+            {
+              "character_bits": [
+                1,
+                1
+              ],
+              "p": 13,
+              "parity": 0,
+              "prime_hnf": "[13, 12, 2; 0, 1, 0; 0, 0, 1]",
+              "residue_degree": 1,
+              "valuations_above": [
+                0
+              ]
+            },
+            {
+              "character_bits": [
+                1,
+                0
+              ],
+              "p": 13,
+              "parity": 1,
+              "prime_hnf": "[13, 2, 0; 0, 1, 0; 0, 0, 1]",
+              "residue_degree": 1,
+              "valuations_above": [
+                -1,
+                1
+              ]
+            },
+            {
+              "character_bits": [
+                0,
+                1
+              ],
+              "p": 13,
+              "parity": 0,
+              "prime_hnf": "[13, 0, 12; 0, 1, 0; 0, 0, 1]",
+              "residue_degree": 1,
+              "valuations_above": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "a": [
+            "12/5",
+            "-13/5",
+            "1/5"
+          ],
+          "b": [
+            "-12/5",
+            "13/5",
+            "-1/5"
+          ],
+          "beta": [
+            "12",
+            "-13",
+            "1"
+          ],
+          "cup_row": [
+            0,
+            0
+          ],
+          "parity_records": [
+            {
+              "character_bits": [
+                1,
+                1
+              ],
+              "p": 5,
+              "parity": 1,
+              "prime_hnf": "[5, 3, 2; 0, 1, 0; 0, 0, 1]",
+              "residue_degree": 1,
+              "valuations_above": [
+                1
+              ]
+            },
+            {
+              "character_bits": [
+                0,
+                1
+              ],
+              "p": 5,
+              "parity": 1,
+              "prime_hnf": "[5, 1, 3; 0, 1, 0; 0, 0, 1]",
+              "residue_degree": 1,
+              "valuations_above": [
+                -1,
+                1
+              ]
+            },
+            {
+              "character_bits": [
+                1,
+                0
+              ],
+              "p": 5,
+              "parity": 1,
+              "prime_hnf": "[5, 2, 1; 0, 1, 0; 0, 0, 1]",
+              "residue_degree": 1,
+              "valuations_above": [
+                1
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "schema": "rank-jump.nonscalar-cup-control.v1"
+}
