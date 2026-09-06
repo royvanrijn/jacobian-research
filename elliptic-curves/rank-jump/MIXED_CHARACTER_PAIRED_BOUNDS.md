@@ -1,5 +1,9 @@
 # Mixed-character bounds on a matched high/zero-gain pair
 
+Follow-up: [additive Kummer compatibility](ADDITIVE_COMPONENT_KUMMER_COMPATIBILITY.md)
+proves mixed **arithmetic** rank zero and exact pair-base arithmetic rank two
+on both anchors. The geometric rank intervals and finite-field evidence below remain valid.
+
 **Result:** the same two generic-point constructions leave **at most one**
 additional mixed-character direction on both retained MW16-04 fibres.
 The frozen two-prime experiment does **not** decide whether that direction

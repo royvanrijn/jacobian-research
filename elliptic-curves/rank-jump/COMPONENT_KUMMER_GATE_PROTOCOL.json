@@ -1,0 +1,26 @@
+{
+  "schema": "rank-jump.component-kummer-gate-protocol.v1",
+  "question": "Do additive-fibre component conditions force all mixed arithmetic ranks to vanish when the promoted anchor Kummer classes are distinct?",
+  "input": "rank_jump_triple_character_inputs_v1.json",
+  "limits": {
+    "production_anchors": 2,
+    "generic_point_indices": [
+      0,
+      1,
+      2
+    ],
+    "odd_character_primes_max": 97,
+    "derived_generic_combinations_per_anchor": 2,
+    "point_searches": 0,
+    "new_specialized_curves": 0,
+    "new_finite_field_surface_counts": 0
+  },
+  "checks": [
+    "S3 component-module invariants and the canonical kappa residue pattern",
+    "Exact odd-prime certificates distinguishing the three generic Kummer classes",
+    "Explicit chord square roots for P0+2P1 and P0+2P2, forming a same-class control",
+    "Universal identities D=gamma*kappa, norm(kappa)=D^2, additive-branch evaluations, and residue-algebra determinants"
+  ],
+  "boundary": "A necessary rational-section gate, not a sufficient solubility criterion or a production-fibre rank bound. Equal-class controls retain UNKNOWN section existence.",
+  "generic_rank_claim": "Each nonempty product of rational linear characters has arithmetic rank at most one. Distinct required additive-fibre classes force rank zero. The full base change for pairwise distinct point classes has only its singleton arithmetic ranks, plus the original rank."
+}

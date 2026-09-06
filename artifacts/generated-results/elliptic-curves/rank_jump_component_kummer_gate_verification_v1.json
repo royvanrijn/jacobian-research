@@ -1,0 +1,27 @@
+{
+  "analysis_sha256": "b5592354a49d562fe1be61d5260d5823847b34de8f0dbcbe0793b43c8f9f6f93",
+  "cases": [
+    {
+      "id": "a1-fibration-04:-1647/91",
+      "prime_root_characters": 7,
+      "same_class_square_roots_checked": 2
+    },
+    {
+      "id": "a1-fibration-04:-2177/2397",
+      "prime_root_characters": 20,
+      "same_class_square_roots_checked": 2
+    }
+  ],
+  "input_sha256": "85cbe371c836c13725956ea685b0fa073831e7fbb162bb995f35ebef455f3aac",
+  "schema": "rank-jump.component-kummer-gate-verification.v1",
+  "status": "PASS",
+  "universal_identities": [
+    "gamma*kappa=D",
+    "Norm(kappa)=D^2",
+    "a^2*kappa(1/a)*(a-theta)=f(a)",
+    "theta^2*kappa_leading=-B*theta",
+    "residue algebra determinants D and B",
+    "singleton Kummer class=(a-theta)*kappa"
+  ],
+  "verifier_sha256": "ba1ddd049643281d310dfcbc7a1b20d175283ca727c93528570d5d258253a9c9"
+}

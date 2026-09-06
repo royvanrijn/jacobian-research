@@ -1,5 +1,9 @@
 # A genus-one three-point construction has only two unresolved mixed directions
 
+Follow-up: [additive Kummer compatibility](ADDITIVE_COMPONENT_KUMMER_COMPATIBILITY.md)
+closes all four mixed **arithmetic** ranks at zero, giving exact arithmetic
+rank three. The geometric intervals and positive-rank base proofs below remain valid.
+
 The frozen three-generic-point test gives the same bounds on the retained
 MW16-04 high/zero-gain pair:
 \[
