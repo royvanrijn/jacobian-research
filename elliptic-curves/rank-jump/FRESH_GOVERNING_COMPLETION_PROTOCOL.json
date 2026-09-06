@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.fresh-governing-completion-protocol.v1",
+  "purpose": "Resolve the finite-coordinate omissions in the frozen governing panel without retrying a large factorization or class-group calculation.",
+  "limits": {"worker_seconds": 45, "workers": 1, "trial_prime_bound": 1999, "nonunit_gcd_maximum_bits": 32, "pari_stack_bytes": 268435456, "new_points": 0},
+  "partial_local_rule": "For factor-incomplete rows, use only 2, infinity and bad primes among divisors up to1999. A zero tested generic kernel proves the full generic strict kernel is zero. A nonzero tested kernel is only an upper bound. No claim of maximal order outside the tested primes.",
+  "Artin_rule": "For complete-local rows with nonunit residues, factor only the frozen residue gcd if at most32 bits. Separate that support from the ideal norm; compute the residual Jacobi symbol and exact local Frobenius values above those small primes. Check each value independently by the already supplied generic rational section characters. No whole ideal-norm factorization.",
+  "boundary": "This computes the same inherited generic block. Independent additional classes, full quotient CT and rational solubility remain distinct missing data. The first pass's genuine factorization/class-group caps are preserved."
+}

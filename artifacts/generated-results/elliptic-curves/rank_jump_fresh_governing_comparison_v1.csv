@@ -1,0 +1,17 @@
+token,id,family,parameter,retained_rank_lower_bound,generic_rank,observed_quotient_rank,inherited_strict_dimension,inherited_strict_dimension_upper_bound,inherited_CT_switch_rank,inherited_restricted_CT_radical_dimension,fixed_generic_pair_governing_field_degree,additional_quotient_CT
+case-00,new-20260906-40,074d9,2818/1535,27,17,10,,5,,,192,UNKNOWN
+case-01,074d9:2824/885,074d9,2824/885,17,17,0,9,9,8,1,192,UNKNOWN
+case-02,new-20260906-71,103b2,3726/881,27,17,10,0,0,0,0,192,UNKNOWN
+case-03,103b2:-1049/2296,103b2,-1049/2296,17,17,0,0,0,0,0,192,UNKNOWN
+case-04,new-20260906-41,11952,-2448/11,27,17,10,0,0,0,0,192,UNKNOWN
+case-05,11952:-1171/1683,11952,-1171/1683,17,17,0,10,10,10,0,192,UNKNOWN
+case-06,new-20260906-188,11952,110314/102227,27,17,10,0,0,0,0,192,UNKNOWN
+case-07,11952:130349/28916,11952,130349/28916,17,17,0,5,5,4,1,192,UNKNOWN
+case-08,new-20260906-72,11952,2012/211,27,17,10,,5,,,192,UNKNOWN
+case-09,new-20260906-48,11952,2828/2015,27,17,10,0,0,0,0,192,UNKNOWN
+case-10,new-20260906-186,11952,4286/1881,27,17,10,,5,,,192,UNKNOWN
+case-11,new-20260906-90,a1-fibration-01,-1867/270,27,16,11,,6,,,192,UNKNOWN
+case-12,a1-fibration-01:-3187/3697,a1-fibration-01,-3187/3697,17,16,1,,7,,,192,UNKNOWN
+case-13,ICARM-356,published-R17,,29,17,12,,2,,,192,UNKNOWN
+case-14,ICARM-385,published-R17,,29,17,12,0,0,0,0,192,UNKNOWN
+case-15,ICARM-398,curve398-p16875,,30,16,14,0,0,0,0,192,UNKNOWN

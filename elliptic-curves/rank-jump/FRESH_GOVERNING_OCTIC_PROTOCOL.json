@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.fresh-governing-octic-protocol.v1",
+  "selection": "Exactly the same16 masked panel cases; the first two marked generic sections in their frozen order on each case.",
+  "purpose": "Compute one explicit governing octic and Frobenius switch fingerprint per fibre as a negative control for field-degree/structure discrimination. This pair lies in the generic subgroup and has zero dimension in the exceptional quotient.",
+  "limits": {"worker_seconds": 30, "workers": 1, "prime_bound": 199, "point_searches": 0, "norm_searches": 0, "class_groups": 0},
+  "prediction": "For an independent pair and S3 cubic, the joint class field has degree96 and the governing splitting field has degree192. These universal degrees cannot discriminate jump sizes. Inert-prime octic factor types are (1,1,3,3) and (2,6).",
+  "boundary": "These cochain Frobenius bits are not full CT matrices or necessary/sufficient rationality conditions in the original family parameter. No strict local compatibility of this first pair with other twists is assumed. The previous strict-block matrices are the certified -1 CT-switch data."
+}

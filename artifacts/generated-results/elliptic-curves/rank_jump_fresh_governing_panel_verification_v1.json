@@ -1,0 +1,165 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_completion_v1.json": "7723a550f87b15cd4e5b1fcbb3e187327b8b209b9d702dee5748a20dd0d8c38e",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_octics_v1.json": "ac239168b99362ea0d8be8eadc0c5114a774ebb5ec1dcc6c6251b0dba0e39677",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+    "elliptic-curves/rank-jump/explicit_governing_octic.py": "be776ead5a10bbda190d4baadc1009201fd2a7c85e74be7331776aa471f8f7d0",
+    "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_explicit_governing_octic.py": "7d2567d37c720b56b21fd3f26e6fddd139fff646079d556f0d809260c04f3524",
+    "elliptic-curves/rank-jump/verify_fresh_governing_panel.py": "4083566bbbfa042c85cc471edbc91f9598b6694dee487c934de66bcb67020698"
+  },
+  "boundary": "Certifies the inherited baseline and explicitly partial kernels. Does not fill additional Selmer or full CT data.",
+  "ideal_square_certificates": 24,
+  "independent_Jacobi_checks": 206,
+  "independent_local_power_checks": 895,
+  "independent_octic_modular_replays": 205,
+  "rows": [
+    {
+      "CT_switch_rank": null,
+      "full_kernel_certified": false,
+      "generic_independence_rank": 17,
+      "octic_and_all_inert_primes_verified": true,
+      "token": "case-00",
+      "verified_tested_kernel_dimension": 5
+    },
+    {
+      "CT_switch_rank": 8,
+      "full_kernel_certified": true,
+      "generic_independence_rank": 17,
+      "octic_and_all_inert_primes_verified": true,
+      "token": "case-01",
+      "verified_tested_kernel_dimension": 9
+    },
+    {
+      "CT_switch_rank": 0,
+      "full_kernel_certified": true,
+      "generic_independence_rank": 17,
+      "octic_and_all_inert_primes_verified": true,
+      "token": "case-02",
+      "verified_tested_kernel_dimension": 0
+    },
+    {
+      "CT_switch_rank": 0,
+      "full_kernel_certified": true,
+      "generic_independence_rank": 17,
+      "octic_and_all_inert_primes_verified": true,
+      "token": "case-03",
+      "verified_tested_kernel_dimension": 0
+    },
+    {
+      "CT_switch_rank": 0,
+      "full_kernel_certified": true,
+      "generic_independence_rank": 17,
+      "octic_and_all_inert_primes_verified": true,
+      "token": "case-04",
+      "verified_tested_kernel_dimension": 0
+    },
+    {
+      "CT_switch_rank": 10,
+      "full_kernel_certified": true,
+      "generic_independence_rank": 17,
+      "octic_and_all_inert_primes_verified": true,
+      "token": "case-05",
+      "verified_tested_kernel_dimension": 10
+    },
+    {
+      "CT_switch_rank": 0,
+      "full_kernel_certified": true,
+      "generic_independence_rank": 17,
+      "octic_and_all_inert_primes_verified": true,
+      "token": "case-06",
+      "verified_tested_kernel_dimension": 0
+    },
+    {
+      "CT_switch_rank": 4,
+      "full_kernel_certified": true,
+      "generic_independence_rank": 17,
+      "octic_and_all_inert_primes_verified": true,
+      "token": "case-07",
+      "verified_tested_kernel_dimension": 5
+    },
+    {
+      "CT_switch_rank": null,
+      "full_kernel_certified": false,
+      "generic_independence_rank": 17,
+      "octic_and_all_inert_primes_verified": true,
+      "token": "case-08",
+      "verified_tested_kernel_dimension": 5
+    },
+    {
+      "CT_switch_rank": 0,
+      "full_kernel_certified": true,
+      "generic_independence_rank": 17,
+      "octic_and_all_inert_primes_verified": true,
+      "token": "case-09",
+      "verified_tested_kernel_dimension": 0
+    },
+    {
+      "CT_switch_rank": null,
+      "full_kernel_certified": false,
+      "generic_independence_rank": 17,
+      "octic_and_all_inert_primes_verified": true,
+      "token": "case-10",
+      "verified_tested_kernel_dimension": 5
+    },
+    {
+      "CT_switch_rank": null,
+      "full_kernel_certified": false,
+      "generic_independence_rank": 16,
+      "octic_and_all_inert_primes_verified": true,
+      "token": "case-11",
+      "verified_tested_kernel_dimension": 6
+    },
+    {
+      "CT_switch_rank": null,
+      "full_kernel_certified": false,
+      "generic_independence_rank": 16,
+      "octic_and_all_inert_primes_verified": true,
+      "token": "case-12",
+      "verified_tested_kernel_dimension": 7
+    },
+    {
+      "CT_switch_rank": null,
+      "full_kernel_certified": false,
+      "generic_independence_rank": 17,
+      "octic_and_all_inert_primes_verified": true,
+      "token": "case-13",
+      "verified_tested_kernel_dimension": 2
+    },
+    {
+      "CT_switch_rank": 0,
+      "full_kernel_certified": true,
+      "generic_independence_rank": 17,
+      "octic_and_all_inert_primes_verified": true,
+      "token": "case-14",
+      "verified_tested_kernel_dimension": 0
+    },
+    {
+      "CT_switch_rank": 0,
+      "full_kernel_certified": true,
+      "generic_independence_rank": 16,
+      "octic_and_all_inert_primes_verified": true,
+      "token": "case-15",
+      "verified_tested_kernel_dimension": 0
+    }
+  ],
+  "schema": "rank-jump.fresh-governing-panel-verification.v1",
+  "status": "PASS",
+  "universal_group_certificate": {
+    "base_order": 96,
+    "cocycle": "beta(x,y)=f_x dot g_x(e_y+f_y)",
+    "correction": "r(x)=e_x dot f_x + [f_x!=0]",
+    "cup_identity_checks": 9216,
+    "extension_order": 192,
+    "faithful_transitive_degree": 8,
+    "gamma": "kappa+r",
+    "inert_cycle_type_counts": {
+      "(0, (1, 1, 3, 3))": 32,
+      "(1, (2, 6))": 32
+    },
+    "psi": "((g-1)^-1 e) dot f + gamma",
+    "root_action_composition_checks": 36864
+  }
+}

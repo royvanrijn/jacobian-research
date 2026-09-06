@@ -1,0 +1,14 @@
+{
+  "schema": "rank-jump.fresh-governing-panel-protocol.v1",
+  "inventory": "new_high_rank_curve_index_v18.json",
+  "selection": "All eight rank-at-least-27 rows in the frozen inventory; match each to a completed observed-zero same-family fibre by short-coefficient bit difference, parameter-height bit difference, then parameter. Use full11952_64 controls for parameters above height4096, compact192 otherwise. For MW16 use the lowest observed gain in the retained same-family panel. Deduplicate controls. Add ICARM356,385,398.",
+  "arithmetic_inputs": "Whitelisted equations and marked generic sections only. Rank labels and matching metadata are in a separate manifest. Historic generic sections require the retained exact lineage/parent certificate. No exceptional coordinates, exceptional-derived classes, old CT matrices, or jump labels enter workers.",
+  "endpoints": {
+    "incidence": "Generic finite Kummer independence, strict local kernel, its unramified characters and half ideals; independently certified cubic class group if bounded equation-only worker succeeds.",
+    "solubility": "Minus-one twist CT switch A+A^T on the inherited strict block. Full quotient CT and full CT remain UNKNOWN unless an independent class basis closes them.",
+    "visibility": "None measured. Exposure and coefficient size are matching covariates only."
+  },
+  "limits": {"factor_seconds_per_case": 30, "local_and_artin_seconds_per_case": 60, "independent_class_seconds_per_case": 20, "workers": 1, "pari_stack_bytes": 268435456, "generic_independence_prime_bound": 1999, "new_parameters": 0, "point_searches": 0},
+  "falsification": "Test whether inherited strict dimension, Artin rank or CT-switch rank separate fresh high gains from matched observed lows. No threshold tuning or predictive claim from this selected panel. An inherited block does not measure the additional Selmer quotient.",
+  "failure": "Checkpoint each stage. Timeout, uncertified class group, incomplete prime factorization, noncyclic residue ring or unresolved nonunit Artin entry is UNKNOWN, not zero. No automatic budget escalation."
+}
