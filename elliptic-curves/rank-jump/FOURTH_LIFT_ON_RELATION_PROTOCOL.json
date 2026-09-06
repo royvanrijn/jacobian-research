@@ -1,0 +1,10 @@
+{
+  "schema":"rank-jump.fourth-lift-on-relation-protocol.v1",
+  "layer":"solubility",
+  "question":"Does the soluble three-cover relation force the fourth native lift, or is the extra quotient direction an additional arithmetic square condition?",
+  "selection":"The three frozen matched degree-twelve relation schemes for 01333,0b2d0,19e45 and the already retained fourth cover 13109. The positive relation is the conjugate of the previously certified successful relation. No new original parameter, point, cover label or translate is selected.",
+  "method":"For every irreducible parameter factor F, compute the exact rational norm of q_13109 in Q[t]/F. A nonsquare norm proves the fourth root is absent. If the norm is square, attempt a bounded exact square test via factorization of z^2-q in the residue number field. Retain witnesses, failures and complete component accounting; a square norm alone never proves a square in the field.",
+  "limits":{"relation_schemes":3,"fourth_covers":1,"workers":1,"seconds_per_square_test":60,"new_original_rational_parameters":0,"prospective_searches":0,"online_requests":0},
+  "failure_semantics":"A non-square norm certifies absence of a residue-field lift. A square norm with an unfinished square test leaves the field lift UNKNOWN. Nonsquare algebraic components are not a new obstruction to the already retained rational component. No full quartet rational-point enumeration is claimed.",
+  "boundary":"Distinguish an automatically soluble three-direction block from a two-direction construction plus an additional fourth-cover lift, on the fixed finite relation schemes."
+}

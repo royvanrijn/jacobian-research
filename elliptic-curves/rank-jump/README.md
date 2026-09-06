@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: both full retained quartets have a genus-three descent target](FULL_QUARTETS_HAVE_A_GENUS_THREE_DESCENT_TARGET.md)
+- [Latest: the fourth direction splits on the rational component of the triple relation](FOURTH_DIRECTION_SPLITS_ONLY_ON_THE_RATIONAL_COMPONENT.md)
+- [Both full retained quartets have a genus-three descent target](FULL_QUARTETS_HAVE_A_GENUS_THREE_DESCENT_TARGET.md)
 - [Canonical doubling erases the native solubility class; retain its affine target](CANONICAL_DOUBLING_ERASES_THE_NATIVE_SOLUBILITY_CLASS.md)
 - [The residual genus-two solubility factor is absolutely simple](GENUS_TWO_SOLUBILITY_FACTOR_HAS_NO_ELLIPTIC_QUOTIENT.md)
 - [A genus-two isogeny condition organizes the genus-five simultaneous lift](GENUS_TWO_DESCENT_ORGANIZES_THE_NATIVE_TRIPLE_LIFT.md)
@@ -73,6 +74,8 @@ Retrospective analyses with pinned inputs, independent of the active curve searc
 Replay from the repository root, using Python 3.12 and its standard library:
 
 ```sh
+sage -python elliptic-curves/rank-jump/fourth_lift_on_relation.py check
+sage -python elliptic-curves/rank-jump/verify_fourth_lift_on_relation.py check
 sage -python elliptic-curves/rank-jump/quartet_unramified_descent.py check
 sage -python elliptic-curves/rank-jump/unpointed_native_descent.py check
 sage -python elliptic-curves/rank-jump/genus_two_absolute_simplicity.py check
