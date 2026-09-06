@@ -1,0 +1,39 @@
+{
+  "schema": "rank-jump.scalar-cup-protocol.v1",
+  "question": "Can the scalar -1 cup obstruction be recovered independently as the symmetrization of the half-ideal Artin matrix, and therefore certify simultaneous losses of rational classes under the -1 quadratic twist?",
+  "hypothesis": "For strict beta,psi, chi_psi((-1) cup beta)=chi_psi(J_beta)+chi_beta(J_psi).",
+  "unblinding": "The five-character u=-1 Artin matrix and its symmetrization were inspected before freezing. Production matrices are retained retrospective rational-point diagnostics, not prospective selector inputs.",
+  "production_cases": [
+    0,
+    4,
+    5
+  ],
+  "small_control": {
+    "polynomial_ascending": [
+      -1,
+      -14,
+      -11,
+      1
+    ],
+    "S_finite": [
+      2,
+      163
+    ],
+    "expected_class_group": [
+      2,
+      2
+    ],
+    "maximum_squareclasses": 32,
+    "maximum_norm_witnesses": 2
+  },
+  "limits": {
+    "worker_seconds": 30,
+    "new_curve_searches": 0,
+    "new_parameters": 0,
+    "large_class_groups": 0,
+    "small_control_class_groups": 1,
+    "small_control_sextic_norm_setup": 1
+  },
+  "failure": "A failed or timed-out control remains UNKNOWN with its transcript; disagreement refutes the proposed identity and blocks its use for twist claims.",
+  "boundary": "The scalar -1 is not the pencil parameter u=-1. Original nine gamma=1+theta target bits remain uncomputed. No whole-curve rank upper bound or rational point on a twist is asserted."
+}
