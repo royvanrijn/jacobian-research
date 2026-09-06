@@ -1,0 +1,34 @@
+{
+  "anchor": {
+    "t": "-288/65",
+    "u": "848451138/65",
+    "v": "44253/5"
+  },
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_genus_five_lift_inputs_v1.json": "214464f668ff6da5f25517f254cd0a6cf10ad195d820a00778558f771d1bd36b",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_genus_five_lift_v1.json": "2f21d498e5916eb2372ddbfa24d689834adcd935200cbbb06ecededbaf6c7c49",
+    "elliptic-curves/rank-jump/NATIVE_PAIR_FACTOR_DESCENT_PROTOCOL.json": "239137afffe9ea4abc3d2f943b09e6d0a9878a5d2d8ae42ff5f8efd4f920c8b2",
+    "elliptic-curves/rank-jump/minimal_native_block_carrier.py": "705152e73ff55636c7c79f916e049962919b527a0e689bba63c4dcaec8da1887"
+  },
+  "covers": [
+    {
+      "form": [
+        3255283501715844,
+        1254304425186516,
+        125950947365881
+      ],
+      "label": "orbit-01333",
+      "removed_rational_square_root": "1144646464/5625"
+    },
+    {
+      "form": [
+        16496921457,
+        11037654810,
+        1654807609
+      ],
+      "label": "orbit-0b2d0",
+      "removed_rational_square_root": "135329096331/64"
+    }
+  ],
+  "schema": "rank-jump.native-pair-factor-descent-inputs.v1"
+}

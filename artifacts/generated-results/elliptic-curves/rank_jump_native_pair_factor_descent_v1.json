@@ -1,0 +1,202 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_genus_five_lift_inputs_v1.json": "214464f668ff6da5f25517f254cd0a6cf10ad195d820a00778558f771d1bd36b",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_genus_five_lift_v1.json": "2f21d498e5916eb2372ddbfa24d689834adcd935200cbbb06ecededbaf6c7c49",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_pair_factor_descent_0_inputs_v1.json": "5b31e146a8a5221bc8c23002d16007bce103ab60f7dda13dfeb65b8f47fc7d90",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_pair_factor_descent_1_inputs_v1.json": "882a7acdad98b0e680409438f26d85ead15d72f03aab69a8668fd76e1b12e6fe",
+    "elliptic-curves/rank-jump/NATIVE_PAIR_FACTOR_DESCENT_PROTOCOL.json": "239137afffe9ea4abc3d2f943b09e6d0a9878a5d2d8ae42ff5f8efd4f920c8b2",
+    "elliptic-curves/rank-jump/minimal_native_block_carrier.py": "705152e73ff55636c7c79f916e049962919b527a0e689bba63c4dcaec8da1887",
+    "elliptic-curves/rank-jump/native_pair_factor_descent.py": "5a72ed785ae1b8e5f46127ff7931ce354ed11a0fa3420f4af53b3cba64ada6e2",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "boundary": "This bounds auxiliary Jacobian ranks and the viability of rational-point methods. It is neither a rank predictor for original fibres nor a proof of global lifting from factor points.",
+  "pairs": [
+    {
+      "descent": {
+        "CT_Sha2_mod_2Sha4_dimension": 0,
+        "boundary": "Auxiliary Jacobian only; original specialized rank and point independence are separate.",
+        "full_2_Selmer_dimension": 4,
+        "points": [
+          [
+            "-8631804825233406454022",
+            "904704249111667466618596583086636"
+          ],
+          [
+            "39130843643151792127380989344/199809",
+            "7729163330079936081729406752779196441589520/89314623"
+          ]
+        ],
+        "rank_lower_bound": 3,
+        "rank_upper_bound": 3,
+        "rational_2_torsion_dimension": 1,
+        "raw_ellrank": "[3, 3, 0, [[-8631804825233406454022, 904704249111667466618596583086636], [39130843643151792127380989344/199809, 7729163330079936081729406752779196441589520/89314623]]]"
+      },
+      "execution": {
+        "returncode": 0,
+        "status": "COMPLETE"
+      },
+      "geometry": {
+        "Jacobian_invariants_I_J": [
+          "2826706835108086185015548471675494905317159429306250000",
+          "-9005577767237319754183358252459309301263421338728264690906658155615066781250000000"
+        ],
+        "Jacobian_model": [
+          "0",
+          "0",
+          "0",
+          "-76321084547918326995419808735238362443563304591268750000",
+          "243150599715407633362950672816401351134112376145663146654479770201606803093750000000"
+        ],
+        "anchor": {
+          "t": "-288/65",
+          "u": "848451138/65",
+          "v": "44253/5"
+        },
+        "carrier_fibre_degree": 4,
+        "carrier_genus": 1,
+        "conic_parameter_denominator": [
+          "-125950947365881",
+          "0",
+          "1"
+        ],
+        "conic_parameter_numerator": [
+          "45255914795749812/65",
+          "-1696902276/65",
+          "-288/65"
+        ],
+        "conic_root_numerator": [
+          "-106863224624759836822578/65",
+          "8982041954376084/65",
+          "-848451138/65"
+        ],
+        "forms": [
+          [
+            3255283501715844,
+            1254304425186516,
+            125950947365881
+          ],
+          [
+            16496921457,
+            11037654810,
+            1654807609
+          ]
+        ],
+        "minimal_Jacobian_model": [
+          "1",
+          "0",
+          "0",
+          "-116325384160826591975948496776769337667372816",
+          "457530750761434728150341281803990220263472681461485880963295699200"
+        ],
+        "product_quotient_fibre_degree": 2,
+        "product_quotient_genus": 1,
+        "quartic_coefficients": [
+          "59974307897589018911670019922770020675225",
+          "-14914783015167564146634460224996600",
+          "379341821975757950336581350",
+          "59171087826596453400",
+          "48958200225"
+        ],
+        "quartic_square_scale": "25",
+        "software": {
+          "pari": "(2, 17, 3)",
+          "sage": "10.9"
+        }
+      },
+      "index": 0,
+      "log": "Carrier geometry complete\nAuxiliary rank 3 3\n"
+    },
+    {
+      "descent": {
+        "CT_Sha2_mod_2Sha4_dimension": 2,
+        "boundary": "Auxiliary Jacobian only; original specialized rank and point independence are separate.",
+        "full_2_Selmer_dimension": 5,
+        "points": [
+          [
+            "15808709171559497940576673469365584/314316088321",
+            "470231294931185649200107355395046905189975673654712/176217857440197119"
+          ]
+        ],
+        "rank_lower_bound": 2,
+        "rank_upper_bound": 2,
+        "rational_2_torsion_dimension": 1,
+        "raw_ellrank": "[2, 2, 2, [[15808709171559497940576673469365584/314316088321, 470231294931185649200107355395046905189975673654712/176217857440197119]]]"
+      },
+      "execution": {
+        "returncode": 0,
+        "status": "COMPLETE"
+      },
+      "geometry": {
+        "Jacobian_invariants_I_J": [
+          "2411427083194672522177756520027677132066530511792885857006250000",
+          "-236205090461176002136477458153351543064880038717759901243901730956502246843801225411531250000000"
+        ],
+        "Jacobian_model": [
+          "0",
+          "0",
+          "0",
+          "-65108531246256158098799426040747282565796323818407918139168750000",
+          "6377537442451752057684891370140491662751761045379517333585346735825560664782633086111343750000000"
+        ],
+        "anchor": {
+          "t": "-288/65",
+          "u": "848451138/65",
+          "v": "3924473/65"
+        },
+        "carrier_fibre_degree": 4,
+        "carrier_genus": 1,
+        "conic_parameter_denominator": [
+          "-125950947365881",
+          "0",
+          "1"
+        ],
+        "conic_parameter_numerator": [
+          "45255914795749812/65",
+          "-1696902276/65",
+          "-288/65"
+        ],
+        "conic_root_numerator": [
+          "-106863224624759836822578/65",
+          "8982041954376084/65",
+          "-848451138/65"
+        ],
+        "forms": [
+          [
+            3255283501715844,
+            1254304425186516,
+            125950947365881
+          ],
+          [
+            4897771825,
+            2856794060,
+            580965316
+          ]
+        ],
+        "minimal_Jacobian_model": [
+          "1",
+          "0",
+          "0",
+          "-9853852589322273512763601147686730034965915800",
+          "375495953326470372093183505425865558675902425007023673195951143725632"
+        ],
+        "product_quotient_fibre_degree": 2,
+        "product_quotient_genus": 1,
+        "quartic_coefficients": [
+          "1942209618325575385197491161017239175239535025",
+          "-209319582795585968113721791922230472400",
+          "-14975988043095166351549791394850",
+          "1067843844172193574267600",
+          "65071288184655025"
+        ],
+        "quartic_square_scale": "4225",
+        "software": {
+          "pari": "(2, 17, 3)",
+          "sage": "10.9"
+        }
+      },
+      "index": 1,
+      "log": "Carrier geometry complete\nAuxiliary rank 2 2\n"
+    }
+  ],
+  "schema": "rank-jump.native-pair-factor-descent.v1"
+}

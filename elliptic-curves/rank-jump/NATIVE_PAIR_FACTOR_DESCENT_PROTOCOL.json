@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.native-pair-factor-descent-protocol.v1",
+  "layer": "solubility",
+  "question": "Can descent on the two known-point pair carriers sharpen the unresolved ranks of their two-isogenous product-character factors?",
+  "selection": "Only pairs (01333,0b2d0) and (01333,19e45) from the frozen genus-five triple. Use its retained rational lift to parameterize the first conic. This is explicitly retrospective and does not select any new original parameter.",
+  "method": "Reuse minimal_native_block_carrier.py unchanged. Compute each pair carrier's quartic Jacobian and one PARI effort-zero descent. Independently verify the degree-two isogeny to the previously computed product-character Jacobian.",
+  "limits": {"pairs":2,"workers":1,"seconds_per_worker":60,"pari_stack_bytes":67108864,"ellrank_effort":0,"new_original_parameters_or_point_searches":0},
+  "failure_semantics": "Timeout or unresolved descent leaves bounds only. Isogenous auxiliary curves share rank, not necessarily 2-Selmer or Sha dimensions.",
+  "boundary": "This bounds auxiliary Jacobian ranks and the viability of rational-point methods. It is neither a rank predictor for original fibres nor a proof of global lifting from factor points."
+}

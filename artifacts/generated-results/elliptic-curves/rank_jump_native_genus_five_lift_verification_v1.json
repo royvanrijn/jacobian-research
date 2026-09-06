@@ -1,0 +1,132 @@
+{
+  "Jacobian_rank_lower_bound": 8,
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_minimal_native_block_carrier_v1.json": "8a9c56f7178da2c6212412151822811aaea913c7f92adc9547f316fb1eaa54f1",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_genus_five_lift_inputs_v1.json": "214464f668ff6da5f25517f254cd0a6cf10ad195d820a00778558f771d1bd36b",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_genus_five_lift_v1.json": "2f21d498e5916eb2372ddbfa24d689834adcd935200cbbb06ecededbaf6c7c49",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_pair_factor_descent_v1.json": "4b774fd6823ab26259ea5caf15ca1c057d079a2301722d55e506dc3fb6acd6b3",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_native_genus_five_lift.py": "48c03bf86e1dd72c99ebf6f3098af461fa184b41f9838b38dfd32bf3e25353f6"
+  },
+  "boundary": "Isogenies and branch algebra checked exactly. Rank replays use the same PARI descent implementation. No genus-two descent, complete rational-point enumeration, or original-fibre rank prediction.",
+  "elliptic_factors": [
+    {
+      "exact_rank": 3,
+      "isogeny_kernel_polynomial": [
+        "-5022047761936170077728",
+        "1"
+      ],
+      "labels": [
+        "orbit-01333",
+        "orbit-0b2d0"
+      ],
+      "pair_Jacobian_model": [
+        "1",
+        "0",
+        "0",
+        "-116325384160826591975948496776769337667372816",
+        "457530750761434728150341281803990220263472681461485880963295699200"
+      ],
+      "pair_Sha2_dimension": 0,
+      "product_2Sha4_dimension": 0,
+      "product_Jacobian_model": [
+        "1",
+        "0",
+        "0",
+        "86987080795784945792562264760933766819667184",
+        "1886993624214142502276448132340086710951048366720516220900296275200"
+      ],
+      "product_Sha2_dimension": 14
+    },
+    {
+      "exact_rank": 2,
+      "isogeny_kernel_polynomial": [
+        "-59703424494360427443504",
+        "1"
+      ],
+      "labels": [
+        "orbit-01333",
+        "orbit-19e45"
+      ],
+      "pair_Jacobian_model": [
+        "1",
+        "0",
+        "0",
+        "-9853852589322273512763601147686730034965915800",
+        "375495953326470372093183505425865558675902425007023673195951143725632"
+      ],
+      "pair_Sha2_dimension": 2,
+      "product_2Sha4_dimension": 2,
+      "product_Jacobian_model": [
+        "1",
+        "0",
+        "0",
+        "-14052073088017855869251888730554058197881915800",
+        "24588556550103339262187458201375020522729669643527931153261830925632"
+      ],
+      "product_Sha2_dimension": 16
+    },
+    {
+      "exact_rank": 3,
+      "isogeny_kernel_polynomial": [
+        "-160237993473315628",
+        "1"
+      ],
+      "labels": [
+        "orbit-0b2d0",
+        "orbit-19e45"
+      ],
+      "pair_Jacobian_model": [
+        "1",
+        "0",
+        "0",
+        "-235950017004391353572674922721546566",
+        "33693852184918766381840507850394292045967182353721700"
+      ],
+      "pair_Sha2_dimension": 0,
+      "product_2Sha4_dimension": 0,
+      "product_Jacobian_model": [
+        "1",
+        "0",
+        "0",
+        "558656849732250286942051331567381434",
+        "211950546081315636391184180069703331342610342885004900"
+      ],
+      "product_Sha2_dimension": 10
+    }
+  ],
+  "finite_field_character_checks": [
+    {
+      "character_quotient_points": [
+        126,
+        112,
+        132,
+        142
+      ],
+      "prime": 131,
+      "triple_points": 116
+    },
+    {
+      "character_quotient_points": [
+        132,
+        132,
+        146,
+        124
+      ],
+      "prime": 137,
+      "triple_points": 120
+    }
+  ],
+  "genus_two_Jacobian_rank": "UNKNOWN",
+  "h_discriminant": "-66744572900055925080862656000",
+  "independent_resultant_equals_primitive_polynomial": true,
+  "nonsquare_branch_norms_f_g_fg": [
+    "504971684534047500192085744858651829533786276689/15863641142362926012482906161",
+    "459550618691643265071890334823787591557032758401/15863641142362926012482906161",
+    "232060050049382835414609322934410799610551876577057997293973835268294606563760973728673075214289/251655110293669720210383386785266494282597118224331757921"
+  ],
+  "ordinary_rank_below_genus_Chabauty_gate": "FAIL: rank at least 8, genus 5",
+  "ramification_algebra_field_degree": 8,
+  "schema": "rank-jump.native-genus-five-lift-verification.v1",
+  "status": "PASS"
+}

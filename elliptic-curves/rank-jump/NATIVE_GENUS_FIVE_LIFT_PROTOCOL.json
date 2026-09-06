@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.native-genus-five-lift-protocol.v1",
+  "layer": "solubility",
+  "question": "What arithmetic object governs the global lift from the successful genus-one pair carrier to the genus-five three-cover carrier, and can ordinary rank-less-than-genus Chabauty apply to it?",
+  "selection": "Only the fixed 01333,0b2d0,19e45 triple and its already retained rational lift. No new cover labels, original rational parameters, or original-curve point searches.",
+  "method": "Verify the ramified double-cover geometry and character decomposition of the genus-five Jacobian into three elliptic product-character quotients and the genus-two triple-product quotient. Compute the three auxiliary elliptic Jacobians and bounded PARI effort-zero 2-descents. Form the eight-point ramification algebra over the two roots of 01333 and its exact primitive-element characteristic polynomial. Retain explicit equations and proof boundaries; do not treat rational points on the Jacobian factors as rational lifts on the original carrier.",
+  "limits": {"native_triples":1,"auxiliary_elliptic_descents":3,"workers":1,"seconds_per_worker":60,"pari_stack_bytes":67108864,"ellrank_effort":0,"new_original_parameters_or_point_searches":0},
+  "failure_semantics": "Timeout leaves the corresponding auxiliary rank UNKNOWN. Auxiliary ranks are not original-fibre ranks. Isogeny decomposition does not identify rational points on the carrier with arbitrary tuples of factor points. A ramified genus-five cover is not an elliptic isogeny or a torsor under its base elliptic curve.",
+  "boundary": "Characterize the full native lifting obstruction and the viability of global rational-point methods, separately from incidence and point visibility."
+}

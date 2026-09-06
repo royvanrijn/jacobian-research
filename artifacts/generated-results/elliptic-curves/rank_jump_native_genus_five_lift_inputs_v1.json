@@ -1,0 +1,45 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_minimal_native_block_carrier_inputs_v1.json": "fa80230e4e58ba0f138f52a5dce1f49b273018fa24e07cd923fd231d4c7be97e",
+    "artifacts/generated-results/elliptic-curves/rank_jump_soluble_quartet_compression_inputs_v1.json": "fe70c730c1f19bf3eae03f3e78b52c23ed7de041f64c1e635600561487aed976",
+    "elliptic-curves/rank-jump/NATIVE_GENUS_FIVE_LIFT_PROTOCOL.json": "7a5cd84179a4d91eb03540b5b0d320a0fbc654406dc05a1ecfdff69e6c7df095"
+  },
+  "covers": [
+    {
+      "form": [
+        3255283501715844,
+        1254304425186516,
+        125950947365881
+      ],
+      "label": "orbit-01333",
+      "removed_rational_square_root": "1144646464/5625"
+    },
+    {
+      "form": [
+        16496921457,
+        11037654810,
+        1654807609
+      ],
+      "label": "orbit-0b2d0",
+      "removed_rational_square_root": "135329096331/64"
+    },
+    {
+      "form": [
+        4897771825,
+        2856794060,
+        580965316
+      ],
+      "label": "orbit-19e45",
+      "removed_rational_square_root": "7439501734587/84050"
+    }
+  ],
+  "retained_lift": {
+    "roots": [
+      "848451138/65",
+      "44253/5",
+      "3924473/65"
+    ],
+    "t": "-288/65"
+  },
+  "schema": "rank-jump.native-genus-five-lift-inputs.v1"
+}

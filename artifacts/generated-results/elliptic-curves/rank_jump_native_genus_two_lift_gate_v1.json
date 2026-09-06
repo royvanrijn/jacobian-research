@@ -1,0 +1,97 @@
+{
+  "Richelot_brackets": [
+    [
+      "6931607515849582830",
+      "-2958538208274737974",
+      "-1685050066756567420"
+    ],
+    [
+      "3156377697666484512374940",
+      "2548655613806523847127758",
+      "368891448452461139412196"
+    ],
+    [
+      "-15238534015158041752335828",
+      "-6618130043923726616896758",
+      "-685429426783944671462634"
+    ]
+  ],
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_genus_five_lift_inputs_v1.json": "214464f668ff6da5f25517f254cd0a6cf10ad195d820a00778558f771d1bd36b",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_genus_five_lift_verification_v1.json": "c0f611807dd3f2de7cfb0c9f537b57d8965c92e1291617891d4b5b4a6309985e",
+    "elliptic-curves/rank-jump/native_genus_two_lift_gate.py": "4f60dd1226e9c67b96f01a719799f15cf78f8722c3874c86429fe9cb863a70f9",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "boundary": "Algebraic quotient and lift checks only. The note proves the Abel-Jacobi/isogeny pullback interpretation. No complete genus-two rational-point computation, genus-two rank bound, or prospective parameter selection.",
+  "etale_cover_degree": 4,
+  "finite_field_lift_checks": [
+    {
+      "branch_base_points": 2,
+      "genus_five_points": 116,
+      "genus_two_points": 142,
+      "liftable_branch_points": 1,
+      "liftable_genus_two_points": 29,
+      "prime": 131
+    },
+    {
+      "branch_base_points": 4,
+      "genus_five_points": 120,
+      "genus_two_points": 124,
+      "liftable_branch_points": 2,
+      "liftable_genus_two_points": 30,
+      "prime": 137
+    }
+  ],
+  "layer": "solubility",
+  "native_deck_subgroups_acting_freely": [
+    [
+      0
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      0,
+      3,
+      5,
+      6
+    ],
+    [
+      0,
+      7
+    ]
+  ],
+  "quadratic_coefficient_determinant": "2756819365126924444728271453799958",
+  "quotient_genus": 2,
+  "rational_isotropic_2_torsion_dimension": 2,
+  "retained_genus_two_point": {
+    "t": "-288/65",
+    "y": "147350257714085825322/21125"
+  },
+  "schema": "rank-jump.native-genus-two-lift-gate.v1",
+  "sextic_coefficients": [
+    "263020907813565542944560873749252100",
+    "430741835555755015879813088048374380",
+    "297326776829566810476581164530993573",
+    "110746927016991251741201905323330762",
+    "23301929780975757119837598050280733",
+    "2608956386319179328727792302409604",
+    "121087455503573514034242659660164"
+  ],
+  "status": "PASS",
+  "unique_maximal_free_native_subgroup": [
+    0,
+    3,
+    5,
+    6
+  ]
+}
