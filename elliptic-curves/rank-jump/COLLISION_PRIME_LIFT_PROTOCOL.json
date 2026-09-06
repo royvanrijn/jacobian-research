@@ -1,0 +1,10 @@
+{
+  "schema":"rank-jump.collision-prime-lift-protocol.v1",
+  "layer":"solubility",
+  "question":"For rational points on each fixed genus-three product curve, which fixed primes and real sign conditions can obstruct the four native square roots?",
+  "selection":"The two retained positive quartets and existing obstructed quartet only, from the frozen quartet input. No original rational parameter or point search.",
+  "method":"Factor the six pairwise binary-quadratic resultants in each system, with exact prime verification. Prove that each native value at a rational product point has even valuation outside their support. Determine the exact real branch ordering and sign cells without selecting rational parameters. Check the resulting parity criterion on the two retained positive lifts.",
+  "limits":{"quartets":3,"resultants_per_quartet":6,"workers":1,"seconds_per_quartet":60,"online_requests":0,"new_original_rational_parameters":0},
+  "failure_semantics":"An unfinished factorization leaves the explicit prime list UNKNOWN; the resultant-support theorem still holds. Real sign cells are algebraic diagnostics, not curve candidates. A finite class criterion on an existing rational product point does not prove existence of that point.",
+  "boundary":"Make the native global squareclass target finite and equation-defined, while preserving the unresolved rational-point problem on the product curve."
+}

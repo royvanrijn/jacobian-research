@@ -1,0 +1,931 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_soluble_quartet_compression_inputs_v1.json": "fe70c730c1f19bf3eae03f3e78b52c23ed7de041f64c1e635600561487aed976",
+    "elliptic-curves/rank-jump/COLLISION_PRIME_LIFT_PROTOCOL.json": "2cb625b99886aeca5e7726531bb4f8a6c0b85cb10ee0ec7f0fbab4c4c1f3153d",
+    "elliptic-curves/rank-jump/collision_prime_lift.py": "a711f641c3082319384689675ae0a6dc73c178e6115c0b27f08f781b164e4f31",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "boundary": "Make the native global squareclass target finite and equation-defined, while preserving the unresolved rational-point problem on the product curve.",
+  "layer": "solubility",
+  "rows": [
+    {
+      "execution": {
+        "returncode": 0,
+        "status": "COMPLETE"
+      },
+      "index": 0,
+      "log": "08234-003 collision primes 18 real map onto True\n",
+      "result": {
+        "collision_primes": [
+          "2",
+          "3",
+          "7",
+          "19",
+          "31",
+          "163",
+          "937",
+          "2953",
+          "1358479",
+          "4706591",
+          "421439617",
+          "26242737137789",
+          "299769308948044811",
+          "35119604647600658367407161",
+          "3669174323089536114140417378426240519",
+          "112005266235422427051412889632144702369",
+          "478200435683291638992601805227666588508879041",
+          "603875197164937622665445992018073615893162819"
+        ],
+        "id": "08234-003",
+        "pair_resultants": [
+          {
+            "indices": [
+              0,
+              1
+            ],
+            "prime_factorization": [
+              [
+                "3",
+                4
+              ],
+              [
+                "19",
+                2
+              ],
+              [
+                "4706591",
+                1
+              ],
+              [
+                "3669174323089536114140417378426240519",
+                1
+              ]
+            ],
+            "resultant": "504971684534047500192085744858651829533786276689"
+          },
+          {
+            "indices": [
+              0,
+              2
+            ],
+            "prime_factorization": [
+              [
+                "163",
+                1
+              ],
+              [
+                "2953",
+                1
+              ],
+              [
+                "603875197164937622665445992018073615893162819",
+                1
+              ]
+            ],
+            "resultant": "290668683528173910356163108351987536200399098134641"
+          },
+          {
+            "indices": [
+              1,
+              2
+            ],
+            "prime_factorization": [
+              [
+                "2",
+                4
+              ],
+              [
+                "112005266235422427051412889632144702369",
+                1
+              ]
+            ],
+            "resultant": "1792084259766758832822606234114315237904"
+          },
+          {
+            "indices": [
+              0,
+              3
+            ],
+            "prime_factorization": [
+              [
+                "31",
+                2
+              ],
+              [
+                "478200435683291638992601805227666588508879041",
+                1
+              ]
+            ],
+            "resultant": "459550618691643265071890334823787591557032758401"
+          },
+          {
+            "indices": [
+              1,
+              3
+            ],
+            "prime_factorization": [
+              [
+                "937",
+                1
+              ],
+              [
+                "421439617",
+                1
+              ],
+              [
+                "35119604647600658367407161",
+                1
+              ]
+            ],
+            "resultant": "13868342789768038221135520304358804769"
+          },
+          {
+            "indices": [
+              2,
+              3
+            ],
+            "prime_factorization": [
+              [
+                "7",
+                4
+              ],
+              [
+                "1358479",
+                1
+              ],
+              [
+                "26242737137789",
+                1
+              ],
+              [
+                "299769308948044811",
+                1
+              ]
+            ],
+            "resultant": "25659098055855062737601598523158560899441"
+          }
+        ],
+        "real_branch_order": [
+          {
+            "cover_index": 2,
+            "other_native_values_positive": true,
+            "root_approximation": "-4.432905016937891?",
+            "root_index": 0
+          },
+          {
+            "cover_index": 1,
+            "other_native_values_positive": true,
+            "root_approximation": "-4.408951746009031?",
+            "root_index": 0
+          },
+          {
+            "cover_index": 1,
+            "other_native_values_positive": true,
+            "root_approximation": "-2.261101467409569?",
+            "root_index": 1
+          },
+          {
+            "cover_index": 2,
+            "other_native_values_positive": true,
+            "root_approximation": "39.99633924997626?",
+            "root_index": 1
+          }
+        ],
+        "real_lift_map_surjective": true,
+        "real_native_lifts_at_infinity": false,
+        "real_open_cells": [
+          {
+            "all_native_positive": false,
+            "product_positive": false,
+            "signs": [
+              1,
+              1,
+              -1,
+              1
+            ]
+          },
+          {
+            "all_native_positive": true,
+            "product_positive": true,
+            "signs": [
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "all_native_positive": false,
+            "product_positive": false,
+            "signs": [
+              1,
+              -1,
+              1,
+              1
+            ]
+          },
+          {
+            "all_native_positive": true,
+            "product_positive": true,
+            "signs": [
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "all_native_positive": false,
+            "product_positive": false,
+            "signs": [
+              1,
+              1,
+              -1,
+              1
+            ]
+          }
+        ],
+        "real_product_points_at_infinity": false,
+        "retained_parity_check": {
+          "all_collision_valuations_even": true,
+          "all_values_positive": true,
+          "parameter": "-288/65"
+        }
+      }
+    },
+    {
+      "execution": {
+        "returncode": 0,
+        "status": "COMPLETE"
+      },
+      "index": 1,
+      "log": "08234-009 collision primes 23 real map onto True\n",
+      "result": {
+        "collision_primes": [
+          "2",
+          "3",
+          "7",
+          "17",
+          "31",
+          "41",
+          "53",
+          "109",
+          "233",
+          "239",
+          "367",
+          "461",
+          "127637",
+          "1686569",
+          "68854883",
+          "35483014871334461",
+          "72549435805970309",
+          "684784686759034661",
+          "16000070259350081396339",
+          "320728924505069277110983",
+          "12969920394162455974117378452307",
+          "21884113743918232539266565711046849",
+          "57060838173657024046572229827343313"
+        ],
+        "id": "08234-009",
+        "pair_resultants": [
+          {
+            "indices": [
+              0,
+              1
+            ],
+            "prime_factorization": [
+              [
+                "3",
+                4
+              ],
+              [
+                "7",
+                2
+              ],
+              [
+                "1686569",
+                1
+              ],
+              [
+                "68854883",
+                1
+              ],
+              [
+                "12969920394162455974117378452307",
+                1
+              ]
+            ],
+            "resultant": "5978018677379700097846009033639193263811056346241"
+          },
+          {
+            "indices": [
+              0,
+              2
+            ],
+            "prime_factorization": [
+              [
+                "41",
+                2
+              ],
+              [
+                "367",
+                1
+              ],
+              [
+                "127637",
+                1
+              ],
+              [
+                "16000070259350081396339",
+                1
+              ]
+            ],
+            "resultant": "1259888916395733566634088951802161"
+          },
+          {
+            "indices": [
+              1,
+              2
+            ],
+            "prime_factorization": [
+              [
+                "2",
+                4
+              ],
+              [
+                "7",
+                2
+              ],
+              [
+                "31",
+                2
+              ],
+              [
+                "21884113743918232539266565711046849",
+                1
+              ]
+            ],
+            "resultant": "16488016513397850432664373004279761160976"
+          },
+          {
+            "indices": [
+              0,
+              3
+            ],
+            "prime_factorization": [
+              [
+                "2",
+                4
+              ],
+              [
+                "53",
+                1
+              ],
+              [
+                "109",
+                1
+              ],
+              [
+                "57060838173657024046572229827343313",
+                1
+              ]
+            ],
+            "resultant": "5274247394067466046672764347400997107216"
+          },
+          {
+            "indices": [
+              1,
+              3
+            ],
+            "prime_factorization": [
+              [
+                "17",
+                2
+              ],
+              [
+                "233",
+                1
+              ],
+              [
+                "239",
+                1
+              ],
+              [
+                "461",
+                1
+              ],
+              [
+                "72549435805970309",
+                1
+              ],
+              [
+                "320728924505069277110983",
+                1
+              ]
+            ],
+            "resultant": "172633373558359598087760516868786050571925298491281"
+          },
+          {
+            "indices": [
+              2,
+              3
+            ],
+            "prime_factorization": [
+              [
+                "35483014871334461",
+                1
+              ],
+              [
+                "684784686759034661",
+                1
+              ]
+            ],
+            "resultant": "24298225223932937440985557222752721"
+          }
+        ],
+        "real_branch_order": [
+          {
+            "cover_index": 1,
+            "other_native_values_positive": true,
+            "root_approximation": "-34.29887012374377?",
+            "root_index": 0
+          },
+          {
+            "cover_index": 3,
+            "other_native_values_positive": true,
+            "root_approximation": "-4.108270646775444?",
+            "root_index": 0
+          },
+          {
+            "cover_index": 3,
+            "other_native_values_positive": true,
+            "root_approximation": "-2.242745226193006?",
+            "root_index": 1
+          },
+          {
+            "cover_index": 2,
+            "other_native_values_positive": true,
+            "root_approximation": "0.3060350650908822?",
+            "root_index": 0
+          },
+          {
+            "cover_index": 2,
+            "other_native_values_positive": true,
+            "root_approximation": "4.075920902647616?",
+            "root_index": 1
+          },
+          {
+            "cover_index": 1,
+            "other_native_values_positive": true,
+            "root_approximation": "8.12866895945620?",
+            "root_index": 1
+          }
+        ],
+        "real_lift_map_surjective": true,
+        "real_native_lifts_at_infinity": false,
+        "real_open_cells": [
+          {
+            "all_native_positive": false,
+            "product_positive": false,
+            "signs": [
+              1,
+              -1,
+              1,
+              1
+            ]
+          },
+          {
+            "all_native_positive": true,
+            "product_positive": true,
+            "signs": [
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "all_native_positive": false,
+            "product_positive": false,
+            "signs": [
+              1,
+              1,
+              1,
+              -1
+            ]
+          },
+          {
+            "all_native_positive": true,
+            "product_positive": true,
+            "signs": [
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "all_native_positive": false,
+            "product_positive": false,
+            "signs": [
+              1,
+              1,
+              -1,
+              1
+            ]
+          },
+          {
+            "all_native_positive": true,
+            "product_positive": true,
+            "signs": [
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "all_native_positive": false,
+            "product_positive": false,
+            "signs": [
+              1,
+              -1,
+              1,
+              1
+            ]
+          }
+        ],
+        "real_product_points_at_infinity": false,
+        "retained_parity_check": {
+          "all_collision_valuations_even": true,
+          "all_values_positive": true,
+          "parameter": "-4112/1937"
+        }
+      }
+    },
+    {
+      "execution": {
+        "returncode": 0,
+        "status": "COMPLETE"
+      },
+      "index": 2,
+      "log": "obstructed_ABCD collision primes 25 real map onto False\n",
+      "result": {
+        "collision_primes": [
+          "2",
+          "3",
+          "7",
+          "13",
+          "17",
+          "23",
+          "59",
+          "139",
+          "251",
+          "1553",
+          "15139",
+          "18401",
+          "267901",
+          "12592927",
+          "319801093789",
+          "3633126377567",
+          "23193384428113",
+          "610888485789979",
+          "3230555449071259",
+          "11613166291978687",
+          "19942274001039517",
+          "3714412228601271752389",
+          "464519175831673459463789",
+          "21304214201640433315206337",
+          "1299718057497406099042128403370056695143"
+        ],
+        "id": "obstructed_ABCD",
+        "pair_resultants": [
+          {
+            "indices": [
+              0,
+              1
+            ],
+            "prime_factorization": [
+              [
+                "13",
+                4
+              ],
+              [
+                "1553",
+                1
+              ],
+              [
+                "319801093789",
+                1
+              ],
+              [
+                "23193384428113",
+                1
+              ],
+              [
+                "3230555449071259",
+                1
+              ]
+            ],
+            "resultant": "-1062835705301388567283474695945497421374715720479"
+          },
+          {
+            "indices": [
+              0,
+              2
+            ],
+            "prime_factorization": [
+              [
+                "2",
+                4
+              ],
+              [
+                "13",
+                4
+              ],
+              [
+                "15139",
+                1
+              ],
+              [
+                "267901",
+                1
+              ],
+              [
+                "12592927",
+                1
+              ],
+              [
+                "21304214201640433315206337",
+                1
+              ]
+            ],
+            "resultant": "497229768521608471906774805521727290166205352336"
+          },
+          {
+            "indices": [
+              1,
+              2
+            ],
+            "prime_factorization": [
+              [
+                "13",
+                4
+              ],
+              [
+                "17",
+                1
+              ],
+              [
+                "23",
+                1
+              ],
+              [
+                "59",
+                1
+              ],
+              [
+                "139",
+                1
+              ],
+              [
+                "610888485789979",
+                1
+              ],
+              [
+                "464519175831673459463789",
+                1
+              ]
+            ],
+            "resultant": "25988580854166544417273603366863599070319788102481"
+          },
+          {
+            "indices": [
+              0,
+              3
+            ],
+            "prime_factorization": [
+              [
+                "3",
+                4
+              ],
+              [
+                "251",
+                1
+              ],
+              [
+                "18401",
+                1
+              ],
+              [
+                "11613166291978687",
+                1
+              ],
+              [
+                "19942274001039517",
+                1
+              ]
+            ],
+            "resultant": "86641405654444664116768963990155319614849"
+          },
+          {
+            "indices": [
+              1,
+              3
+            ],
+            "prime_factorization": [
+              [
+                "7",
+                2
+              ],
+              [
+                "23",
+                1
+              ],
+              [
+                "1299718057497406099042128403370056695143",
+                1
+              ]
+            ],
+            "resultant": "1464782250799576673620478710598053895426161"
+          },
+          {
+            "indices": [
+              2,
+              3
+            ],
+            "prime_factorization": [
+              [
+                "7",
+                2
+              ],
+              [
+                "23",
+                1
+              ],
+              [
+                "59",
+                1
+              ],
+              [
+                "3633126377567",
+                1
+              ],
+              [
+                "3714412228601271752389",
+                1
+              ]
+            ],
+            "resultant": "-897318316981784724930595483390890136559"
+          }
+        ],
+        "real_branch_order": [
+          {
+            "cover_index": 1,
+            "other_native_values_positive": true,
+            "root_approximation": "-44.87314322239208?",
+            "root_index": 0
+          },
+          {
+            "cover_index": 0,
+            "other_native_values_positive": false,
+            "root_approximation": "-4.346657716685146?",
+            "root_index": 0
+          },
+          {
+            "cover_index": 1,
+            "other_native_values_positive": false,
+            "root_approximation": "-3.967726627352300?",
+            "root_index": 1
+          },
+          {
+            "cover_index": 0,
+            "other_native_values_positive": true,
+            "root_approximation": "-3.487780882874067?",
+            "root_index": 1
+          },
+          {
+            "cover_index": 2,
+            "other_native_values_positive": true,
+            "root_approximation": "-1.125383957759660?",
+            "root_index": 0
+          },
+          {
+            "cover_index": 3,
+            "other_native_values_positive": false,
+            "root_approximation": "-0.6763546745056647?",
+            "root_index": 0
+          },
+          {
+            "cover_index": 2,
+            "other_native_values_positive": false,
+            "root_approximation": "0.8688759410898466?",
+            "root_index": 1
+          },
+          {
+            "cover_index": 3,
+            "other_native_values_positive": true,
+            "root_approximation": "11.62124440615309?",
+            "root_index": 1
+          }
+        ],
+        "real_lift_map_surjective": false,
+        "real_native_lifts_at_infinity": true,
+        "real_open_cells": [
+          {
+            "all_native_positive": true,
+            "product_positive": true,
+            "signs": [
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "all_native_positive": false,
+            "product_positive": false,
+            "signs": [
+              1,
+              -1,
+              1,
+              1
+            ]
+          },
+          {
+            "all_native_positive": false,
+            "product_positive": true,
+            "signs": [
+              -1,
+              -1,
+              1,
+              1
+            ]
+          },
+          {
+            "all_native_positive": false,
+            "product_positive": false,
+            "signs": [
+              -1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "all_native_positive": true,
+            "product_positive": true,
+            "signs": [
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "all_native_positive": false,
+            "product_positive": false,
+            "signs": [
+              1,
+              1,
+              -1,
+              1
+            ]
+          },
+          {
+            "all_native_positive": false,
+            "product_positive": true,
+            "signs": [
+              1,
+              1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "all_native_positive": false,
+            "product_positive": false,
+            "signs": [
+              1,
+              1,
+              1,
+              -1
+            ]
+          },
+          {
+            "all_native_positive": true,
+            "product_positive": true,
+            "signs": [
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "real_product_points_at_infinity": true
+      }
+    }
+  ],
+  "schema": "rank-jump.collision-prime-lift.v1"
+}

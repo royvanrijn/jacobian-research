@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: the residual fourth lift has no constant quadratic carrier and full signed Galois group](FOURTH_LIFT_HAS_FULL_SIGN_GALOIS_GROUP.md)
+- [Latest: fixed collision primes give the exact remaining lift condition on rational product points](COLLISION_PRIMES_CONTROL_THE_REMAINING_LIFT.md)
+- [The residual fourth lift has no constant quadratic carrier and full signed Galois group](FOURTH_LIFT_HAS_FULL_SIGN_GALOIS_GROUP.md)
 - [The fourth direction splits on the rational component of the triple relation](FOURTH_DIRECTION_SPLITS_ONLY_ON_THE_RATIONAL_COMPONENT.md)
 - [Both full retained quartets have a genus-three descent target](FULL_QUARTETS_HAVE_A_GENUS_THREE_DESCENT_TARGET.md)
 - [Canonical doubling erases the native solubility class; retain its affine target](CANONICAL_DOUBLING_ERASES_THE_NATIVE_SOLUBILITY_CLASS.md)
@@ -75,6 +76,7 @@ Retrospective analyses with pinned inputs, independent of the active curve searc
 Replay from the repository root, using Python 3.12 and its standard library:
 
 ```sh
+sage -python elliptic-curves/rank-jump/verify_collision_prime_lift.py check
 sage -python elliptic-curves/rank-jump/fourth_lift_shared_field.py check
 sage -python elliptic-curves/rank-jump/verify_fourth_lift_shared_field.py check
 sage -python elliptic-curves/rank-jump/fourth_lift_on_relation.py check
