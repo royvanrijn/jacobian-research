@@ -1,0 +1,24 @@
+{
+  "schema": "rank-jump.strict-artin-protocol.v1",
+  "layer": "incidence",
+  "question": "Can a fixed small-prime ideal dictionary give exact dual ideal witnesses for the strict unramified character blocks, and separate the generic contribution?",
+  "cases": [
+    0,
+    4,
+    5
+  ],
+  "selection": "The three cases with complete bad-place coverage in rank_jump_strict_class_blocks_v1.json. Candidate ideals use only the integral cubic and its discriminant: all degree-one ideals over odd rational primes at most 97 not dividing the integral-model discriminant, sorted by prime then root.",
+  "limits": {
+    "rational_prime_bound": 97,
+    "curves": 3,
+    "parameter_searches": 0,
+    "point_searches": 0,
+    "class_group_calculations": 0,
+    "factorizations": 0,
+    "seconds_per_arithmetic_replay": 40
+  },
+  "diagnostic": "After freezing the ideal pool, evaluate the existing strict characters by Frobenius and compute a dual basis. Character construction and independence still use retrospective exceptional points; the resulting ranks are not point-blind measurements.",
+  "positive": "A full-row-rank Artin matrix yields explicit independent classes in Cl(O_K,S)/2 and exact ideal words dual to the generic and relative character basis.",
+  "negative": "A deficient matrix means this fixed prime dictionary does not separate all retained characters. It does not reduce their proven global independence or exclude smaller/other ideal generators.",
+  "replay": "Retain ideal prime/root labels, complete evaluation matrix, generic/relative character masks, and dual ideal words. Independently check local square tests by PARI; no global class group."
+}

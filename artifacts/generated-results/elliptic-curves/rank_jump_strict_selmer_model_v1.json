@@ -1,0 +1,85 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_primes_v1.json": "0ab1c0319c321254433781e06c1e91411cfcf7bb18ad162bbf829a3dc7fa82ad",
+    "artifacts/generated-results/elliptic-curves/rank_jump_strict_artin_v1.json": "487e266a812724ff356b823e2497ae0fc33ab9eedab48546205aea2fc45b14c7",
+    "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+    "elliptic-curves/rank-jump/strict_selmer_model.py": "00e26eed01806b577901cfce3702daed0760c70992c117eb04e3b58dae8e56a1"
+  },
+  "rows": [
+    {
+      "b_definition": "dim localization(Sel_2) - 15, an integer in [0,1]",
+      "case_index": 0,
+      "characters_unseparated_by_ideal_pool": [
+        74
+      ],
+      "claim_boundary": "epsilon and b are not computed. Formula concerns the full 2-Selmer group, not the full rational rank or the rational solubility of its unknown classes.",
+      "full_Selmer_dimension_formula": "25 + epsilon + b",
+      "full_relative_Selmer_dimension_formula": "9 + epsilon + b",
+      "generic_rank": 16,
+      "generic_strict_dimension": 1,
+      "id": "a1-fibration-05:307/206",
+      "ideal_pool_rank": 9,
+      "known_quotient_rank": 9,
+      "known_strict_dimension": 10,
+      "local_product_dimension": 16,
+      "unknown_S_class_excess_definition": "epsilon = dim_F2 Cl(O_K,S)/2 - known_strict_dimension >= 0",
+      "unknown_local_image_dimension_bound": [
+        0,
+        1
+      ],
+      "unseparated_character_point_masks": [
+        2441006
+      ],
+      "witness_local_image_dimension": 15,
+      "witness_rank": 25
+    },
+    {
+      "b_definition": "dim localization(Sel_2) - 16, an integer in [0,1]",
+      "case_index": 4,
+      "characters_unseparated_by_ideal_pool": [],
+      "claim_boundary": "epsilon and b are not computed. Formula concerns the full 2-Selmer group, not the full rational rank or the rational solubility of its unknown classes.",
+      "full_Selmer_dimension_formula": "24 + epsilon + b",
+      "full_relative_Selmer_dimension_formula": "7 + epsilon + b",
+      "generic_rank": 17,
+      "generic_strict_dimension": 2,
+      "id": "published-R17:-2300/843",
+      "ideal_pool_rank": 8,
+      "known_quotient_rank": 7,
+      "known_strict_dimension": 8,
+      "local_product_dimension": 17,
+      "unknown_S_class_excess_definition": "epsilon = dim_F2 Cl(O_K,S)/2 - known_strict_dimension >= 0",
+      "unknown_local_image_dimension_bound": [
+        0,
+        1
+      ],
+      "unseparated_character_point_masks": [],
+      "witness_local_image_dimension": 16,
+      "witness_rank": 24
+    },
+    {
+      "b_definition": "dim localization(Sel_2) - 11, an integer in [0,1]",
+      "case_index": 5,
+      "characters_unseparated_by_ideal_pool": [],
+      "claim_boundary": "epsilon and b are not computed. Formula concerns the full 2-Selmer group, not the full rational rank or the rational solubility of its unknown classes.",
+      "full_Selmer_dimension_formula": "17 + epsilon + b",
+      "full_relative_Selmer_dimension_formula": "0 + epsilon + b",
+      "generic_rank": 17,
+      "generic_strict_dimension": 6,
+      "id": "published-R17:-1561/3133",
+      "ideal_pool_rank": 6,
+      "known_quotient_rank": 0,
+      "known_strict_dimension": 6,
+      "local_product_dimension": 12,
+      "unknown_S_class_excess_definition": "epsilon = dim_F2 Cl(O_K,S)/2 - known_strict_dimension >= 0",
+      "unknown_local_image_dimension_bound": [
+        0,
+        1
+      ],
+      "unseparated_character_point_masks": [],
+      "witness_local_image_dimension": 11,
+      "witness_rank": 17
+    }
+  ],
+  "schema": "rank-jump.strict-selmer-model.v1",
+  "theorem": "For Q and an irreducible two-division cubic, with S containing 2, infinity and all bad places, Sel_2^S(E) is canonically Hom(Cl(O_K,S),F2). See STRICT_SELMER_AND_ARTIN_BLOCKS.md for proof and exact sequences."
+}

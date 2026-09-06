@@ -1,0 +1,960 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json": "a6e7a03d2b81b086d772ab2d0f4f47ab0f51bae40219bbec86ec09b329dc07dd",
+    "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_inputs_v1.json": "b6306d46e5a6430af5d71c79b7103c0fd6d468f0e006e0bc28c808d0df96fff3",
+    "artifacts/generated-results/elliptic-curves/rank_jump_strict_class_blocks_v1.json": "85e0bca6f61ece953d656225a7331f9eab9dc7dfa30e419c5fb50b4520d112bd",
+    "elliptic-curves/rank-jump/STRICT_ARTIN_PROTOCOL.json": "7dd2b17aadc1896e590fbe0dc63ee67f5f824d69516ebd65e622b894e4076a9f",
+    "elliptic-curves/rank-jump/strict_artin.py": "b089779f2b45af87c87d62aa5d4af90f676735abbee9521f11995da3054ca82b"
+  },
+  "rows": [
+    {
+      "artin_columns": [
+        917,
+        742,
+        99,
+        472,
+        726,
+        949,
+        457,
+        845,
+        744,
+        421,
+        36
+      ],
+      "artin_matrix_rows": [
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "artin_rank": 9,
+      "boundary": "Exact Artin evaluations of retained unramified characters. Ideal pool is point-blind; characters and the certified rank lower bound are retrospective.",
+      "case_index": 0,
+      "character_masks": [
+        36428,
+        93788,
+        134779,
+        289481,
+        526420,
+        1071103,
+        2112443,
+        4219153,
+        8419004,
+        16796175
+      ],
+      "dual_ideal_words": [],
+      "full_dual_basis": false,
+      "generic_character_count": 1,
+      "id": "a1-fibration-05:307/206",
+      "ideal_dictionary": [
+        {
+          "ideal_norm": 5,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 5,
+          "theta_residue": 0
+        },
+        {
+          "ideal_norm": 11,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 11,
+          "theta_residue": 1
+        },
+        {
+          "ideal_norm": 37,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 37,
+          "theta_residue": 10
+        },
+        {
+          "ideal_norm": 43,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 43,
+          "theta_residue": 42
+        },
+        {
+          "ideal_norm": 47,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 47,
+          "theta_residue": 40
+        },
+        {
+          "ideal_norm": 53,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 53,
+          "theta_residue": 36
+        },
+        {
+          "ideal_norm": 71,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 71,
+          "theta_residue": 65
+        },
+        {
+          "ideal_norm": 83,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 83,
+          "theta_residue": 36
+        },
+        {
+          "ideal_norm": 83,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 83,
+          "theta_residue": 59
+        },
+        {
+          "ideal_norm": 83,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 83,
+          "theta_residue": 71
+        },
+        {
+          "ideal_norm": 97,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 97,
+          "theta_residue": 52
+        }
+      ],
+      "integral_cubic_ascending": [
+        "352828243349831404712617799673077133207162344822366545727829706873326815760",
+        "-94906677054393466110816339922046107183061710818372",
+        "0",
+        "1"
+      ],
+      "ordinary_and_S_class_two_rank_lower_bound": 9,
+      "point_evaluation_columns": [
+        8654904,
+        8992726,
+        23871743,
+        482723,
+        20292714,
+        5757390,
+        30476559,
+        27349532,
+        26812086,
+        3689642,
+        15961996
+      ],
+      "relative_dual_ideal_count": null,
+      "selected_ideal_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        10
+      ],
+      "tested_places": [
+        3,
+        7,
+        13,
+        2,
+        "infinity",
+        17,
+        19,
+        23,
+        31,
+        79,
+        3677,
+        19022417,
+        9070489718245292721859,
+        4994158462757908971835954831983527984976327938273965297923895199
+      ]
+    },
+    {
+      "artin_columns": [
+        236,
+        133,
+        65,
+        248,
+        83,
+        92,
+        15,
+        193,
+        146,
+        178,
+        52,
+        212,
+        224,
+        215,
+        120,
+        3
+      ],
+      "artin_matrix_rows": [
+        [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "artin_rank": 8,
+      "boundary": "Exact Artin evaluations of retained unramified characters. Ideal pool is point-blind; characters and the certified rank lower bound are retrospective.",
+      "case_index": 4,
+      "character_masks": [
+        26044,
+        70723,
+        171156,
+        564747,
+        1059323,
+        2107303,
+        4492715,
+        8390665
+      ],
+      "dual_ideal_words": [
+        698,
+        545,
+        572,
+        663,
+        565,
+        656,
+        702,
+        132
+      ],
+      "full_dual_basis": true,
+      "generic_character_count": 2,
+      "id": "published-R17:-2300/843",
+      "ideal_dictionary": [
+        {
+          "ideal_norm": 23,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 23,
+          "theta_residue": 16
+        },
+        {
+          "ideal_norm": 29,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 29,
+          "theta_residue": 18
+        },
+        {
+          "ideal_norm": 31,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 31,
+          "theta_residue": 22
+        },
+        {
+          "ideal_norm": 41,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 41,
+          "theta_residue": 16
+        },
+        {
+          "ideal_norm": 43,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 43,
+          "theta_residue": 4
+        },
+        {
+          "ideal_norm": 43,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 43,
+          "theta_residue": 40
+        },
+        {
+          "ideal_norm": 43,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 43,
+          "theta_residue": 42
+        },
+        {
+          "ideal_norm": 47,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 47,
+          "theta_residue": 35
+        },
+        {
+          "ideal_norm": 53,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 53,
+          "theta_residue": 7
+        },
+        {
+          "ideal_norm": 59,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 59,
+          "theta_residue": 50
+        },
+        {
+          "ideal_norm": 67,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 67,
+          "theta_residue": 34
+        },
+        {
+          "ideal_norm": 67,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 67,
+          "theta_residue": 46
+        },
+        {
+          "ideal_norm": 67,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 67,
+          "theta_residue": 54
+        },
+        {
+          "ideal_norm": 73,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 73,
+          "theta_residue": 9
+        },
+        {
+          "ideal_norm": 83,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 83,
+          "theta_residue": 57
+        },
+        {
+          "ideal_norm": 97,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 97,
+          "theta_residue": 9
+        }
+      ],
+      "integral_cubic_ascending": [
+        "713827218925723547304411672228281833517446887134720684710147456285397920302209030846152704",
+        "-1503161773208672080973766449211708290944810023968557217021952",
+        "0",
+        "1"
+      ],
+      "ordinary_and_S_class_two_rank_lower_bound": 8,
+      "point_evaluation_columns": [
+        489303,
+        12633049,
+        13285460,
+        10564166,
+        16774494,
+        16301883,
+        477797,
+        9079176,
+        14047354,
+        2659948,
+        15205607,
+        16726695,
+        1523264,
+        724431,
+        10985571,
+        13727972
+      ],
+      "relative_dual_ideal_count": 6,
+      "selected_ideal_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9
+      ],
+      "tested_places": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        2,
+        "infinity",
+        71,
+        107,
+        283,
+        22013,
+        16644390691,
+        49545498746840639425367772677949130481018258902148022792478518127145162432632657263874589
+      ]
+    },
+    {
+      "artin_columns": [
+        32,
+        57,
+        56,
+        20,
+        44,
+        13,
+        46,
+        24,
+        13,
+        29,
+        54,
+        43,
+        62,
+        44,
+        56,
+        53,
+        13,
+        2
+      ],
+      "artin_matrix_rows": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "artin_rank": 6,
+      "boundary": "Exact Artin evaluations of retained unramified characters. Ideal pool is point-blind; characters and the certified rank lower bound are retrospective.",
+      "case_index": 5,
+      "character_masks": [
+        1385,
+        4337,
+        10307,
+        16506,
+        35649,
+        68212
+      ],
+      "dual_ideal_words": [
+        6,
+        76,
+        515,
+        526,
+        523,
+        1
+      ],
+      "full_dual_basis": true,
+      "generic_character_count": 6,
+      "id": "published-R17:-1561/3133",
+      "ideal_dictionary": [
+        {
+          "ideal_norm": 11,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 11,
+          "theta_residue": 1
+        },
+        {
+          "ideal_norm": 23,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 23,
+          "theta_residue": 20
+        },
+        {
+          "ideal_norm": 29,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 29,
+          "theta_residue": 0
+        },
+        {
+          "ideal_norm": 29,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 29,
+          "theta_residue": 7
+        },
+        {
+          "ideal_norm": 29,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 29,
+          "theta_residue": 22
+        },
+        {
+          "ideal_norm": 37,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 37,
+          "theta_residue": 0
+        },
+        {
+          "ideal_norm": 41,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 41,
+          "theta_residue": 9
+        },
+        {
+          "ideal_norm": 43,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 43,
+          "theta_residue": 15
+        },
+        {
+          "ideal_norm": 47,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 47,
+          "theta_residue": 45
+        },
+        {
+          "ideal_norm": 71,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 71,
+          "theta_residue": 38
+        },
+        {
+          "ideal_norm": 71,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 71,
+          "theta_residue": 44
+        },
+        {
+          "ideal_norm": 71,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 71,
+          "theta_residue": 60
+        },
+        {
+          "ideal_norm": 73,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 73,
+          "theta_residue": 31
+        },
+        {
+          "ideal_norm": 83,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 83,
+          "theta_residue": 1
+        },
+        {
+          "ideal_norm": 89,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 89,
+          "theta_residue": 44
+        },
+        {
+          "ideal_norm": 89,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 89,
+          "theta_residue": 66
+        },
+        {
+          "ideal_norm": 89,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 89,
+          "theta_residue": 68
+        },
+        {
+          "ideal_norm": 97,
+          "label": "(p, theta-a) in the maximal order",
+          "prime": 97,
+          "theta_residue": 32
+        }
+      ],
+      "integral_cubic_ascending": [
+        "128900832227812971002793243049766432229492164282639873998685258759480249197899892654080000",
+        "-892157636500647662171450158029394721897846492604962915942400",
+        "0",
+        "1"
+      ],
+      "ordinary_and_S_class_two_rank_lower_bound": 6,
+      "point_evaluation_columns": [
+        75582,
+        90241,
+        109889,
+        26089,
+        116904,
+        10144,
+        121929,
+        98297,
+        5744,
+        9788,
+        128833,
+        119165,
+        108764,
+        70305,
+        4445,
+        84326,
+        88123,
+        52968
+      ],
+      "relative_dual_ideal_count": 0,
+      "selected_ideal_indices": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        9
+      ],
+      "tested_places": [
+        3,
+        5,
+        7,
+        13,
+        2,
+        "infinity",
+        6158521,
+        2482309513,
+        1992691645648087,
+        1556252852391726354629684794059726062227237322704667229175658762505259467379346906344914138097
+      ]
+    }
+  ],
+  "schema": "rank-jump.strict-artin.v1"
+}
