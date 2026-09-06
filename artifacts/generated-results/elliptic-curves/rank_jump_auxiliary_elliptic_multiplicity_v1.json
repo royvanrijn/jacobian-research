@@ -1,0 +1,148 @@
+{
+  "rows": [
+    {
+      "alignment": "identity",
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_residual_alignment_v1.json": "ce17579eab4987b74646a236775136a1a7c942e18014e6512b781e7c99641c2a",
+        "elliptic-curves/rank-jump/AUXILIARY_ELLIPTIC_MULTIPLICITY_PROTOCOL.json": "fa3a321d21d62b085069f83c3ff8ea51a11339e29ef8df16d6bf3e1bd8b566d3",
+        "elliptic-curves/rank-jump/auxiliary_elliptic_multiplicity.py": "5073dcfce00f4ce5cd1b0486b73042198941b79b3a5f67ebe7bb086e4b78f707"
+      },
+      "boundary": "No geometric isogeny exclusion or rational point/rank claim. A nonzero remainder is used only as a necessary-condition obstruction to a Q-isogeny factor.",
+      "product_polynomial_ascending": [
+        "3321167903568",
+        "1238062443336",
+        "57151737916",
+        "-33492915620",
+        "-5692004127",
+        "-260421840",
+        "9954104",
+        "1203008",
+        "28048"
+      ],
+      "records": [
+        {
+          "prime": 3,
+          "status": "SKIP_BAD_DISPLAYED_REDUCTION"
+        },
+        {
+          "prime": 7,
+          "status": "SKIP_BAD_DISPLAYED_REDUCTION"
+        },
+        {
+          "Jacobian_Frobenius_coefficients_ascending": [
+            "1331",
+            "484",
+            "132",
+            "36",
+            "12",
+            "4",
+            "1"
+          ],
+          "counts": [
+            {
+              "affine_branch_points": 2,
+              "extension_degree": 1,
+              "field_size": 11,
+              "nonzero_square_values": 6,
+              "points": 16,
+              "points_at_infinity": 2
+            },
+            {
+              "affine_branch_points": 2,
+              "extension_degree": 2,
+              "field_size": 121,
+              "nonzero_square_values": 63,
+              "points": 130,
+              "points_at_infinity": 2
+            },
+            {
+              "affine_branch_points": 8,
+              "extension_degree": 3,
+              "field_size": 1331,
+              "nonzero_square_values": 675,
+              "points": 1360,
+              "points_at_infinity": 2
+            }
+          ],
+          "elliptic_checks": [
+            {
+              "Frobenius_coefficients_ascending": [
+                "11",
+                "5",
+                "1"
+              ],
+              "factor_excluded": true,
+              "name": "rational",
+              "point_count": 17,
+              "remainder_coefficients_ascending": [
+                "1540",
+                "392"
+              ],
+              "trace": -5
+            },
+            {
+              "Frobenius_coefficients_ascending": [
+                "11",
+                "-5",
+                "1"
+              ],
+              "factor_excluded": true,
+              "name": "Sha",
+              "point_count": 7,
+              "remainder_coefficients_ascending": [
+                "-3740",
+                "952"
+              ],
+              "trace": 5
+            }
+          ],
+          "prime": 11,
+          "status": "PASS"
+        }
+      ],
+      "software": {
+        "sage": "10.9"
+      },
+      "status": "BOTH_Q_HOM_SPACES_ZERO"
+    },
+    {
+      "alignment": "swap_second",
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_residual_alignment_v1.json": "ce17579eab4987b74646a236775136a1a7c942e18014e6512b781e7c99641c2a",
+        "elliptic-curves/rank-jump/AUXILIARY_ELLIPTIC_MULTIPLICITY_PROTOCOL.json": "fa3a321d21d62b085069f83c3ff8ea51a11339e29ef8df16d6bf3e1bd8b566d3",
+        "elliptic-curves/rank-jump/auxiliary_elliptic_multiplicity.py": "5073dcfce00f4ce5cd1b0486b73042198941b79b3a5f67ebe7bb086e4b78f707"
+      },
+      "boundary": "No geometric isogeny exclusion or rational point/rank claim. A nonzero remainder is used only as a necessary-condition obstruction to a Q-isogeny factor.",
+      "product_polynomial_ascending": [
+        "645819648",
+        "-4950046592",
+        "-123442428096",
+        "83619090560",
+        "3357917592448",
+        "1118295399080",
+        "137372396916",
+        "7345865836",
+        "144238593"
+      ],
+      "records": [
+        {
+          "prime": 3,
+          "status": "SKIP_BAD_DISPLAYED_REDUCTION"
+        },
+        {
+          "prime": 7,
+          "status": "SKIP_BAD_DISPLAYED_REDUCTION"
+        },
+        {
+          "prime": 11,
+          "status": "SKIP_BAD_DISPLAYED_REDUCTION"
+        }
+      ],
+      "software": {
+        "sage": "10.9"
+      },
+      "status": "UNKNOWN"
+    }
+  ],
+  "schema": "rank-jump.auxiliary-elliptic-multiplicity.v1"
+}

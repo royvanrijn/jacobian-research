@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.auxiliary-elliptic-multiplicity-protocol.v1",
+  "question": "Do the genus-three factors in the two retained genus-five auxiliary curves contain further rational elliptic quotients isogenous to either control curve?",
+  "source": "The identity and swap_second quartics in rank_jump_residual_alignment_v1.json; the exact E_rat and E_Sha models retained in the small-control proof.",
+  "primes": [3, 7, 11],
+  "limits": {"seconds_per_alignment": 30, "extension_degrees": [1, 2, 3], "largest_field": 1331, "new_parameters_or_point_searches": 0},
+  "gate": "At the first listed prime where both quartics, their product and both elliptic models have good reduction, count the genus-three quotient over F_p,F_p^2,F_p^3. Compute its Frobenius polynomial and test divisibility by each elliptic Frobenius polynomial. Stop the alignment when both factors are excluded. Non-exclusion is UNKNOWN, not existence of an isogeny.",
+  "consequence": "One good reduction excluding an elliptic Frobenius factor proves no nonzero Q-homomorphism from that genus-three Jacobian to the elliptic curve. Together with the retained V4 decomposition, determine the multiplicity of E_rat or E_Sha in each signed genus-five Jacobian, if all required exclusions pass.",
+  "boundary": "Arithmetic Hom over Q only; not geometric Hom after field extension, a Jacobian rank, or a rational-point certificate. The original-family one-auxiliary-point rank bound is a separate theorem modulo specialized generic sections."
+}

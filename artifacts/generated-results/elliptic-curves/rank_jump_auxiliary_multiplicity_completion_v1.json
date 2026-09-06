@@ -1,0 +1,105 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_auxiliary_elliptic_multiplicity_v1.json": "2c5618e0f0ee3bd27b46b396107f5e50883bf850117425712ffdbdaf71466cdb",
+    "elliptic-curves/rank-jump/AUXILIARY_MULTIPLICITY_COMPLETION_PROTOCOL.json": "1340eaff1a3cde97322de3d28e9425b63825df95ed5fe89c354a081b10637c74",
+    "elliptic-curves/rank-jump/auxiliary_multiplicity_completion.py": "433aeb863e8315abbab91a5c7de7e37eee37090d471f55e89b2e16a1a2f04f33"
+  },
+  "row": {
+    "alignment": "swap_second",
+    "bindings": {
+      "artifacts/generated-results/elliptic-curves/rank_jump_residual_alignment_v1.json": "ce17579eab4987b74646a236775136a1a7c942e18014e6512b781e7c99641c2a",
+      "elliptic-curves/rank-jump/AUXILIARY_MULTIPLICITY_COMPLETION_PROTOCOL.json": "1340eaff1a3cde97322de3d28e9425b63825df95ed5fe89c354a081b10637c74",
+      "elliptic-curves/rank-jump/auxiliary_elliptic_multiplicity.py": "5073dcfce00f4ce5cd1b0486b73042198941b79b3a5f67ebe7bb086e4b78f707"
+    },
+    "boundary": "No geometric isogeny exclusion or rational point/rank claim. A nonzero remainder is used only as a necessary-condition obstruction to a Q-isogeny factor.",
+    "product_polynomial_ascending": [
+      "645819648",
+      "-4950046592",
+      "-123442428096",
+      "83619090560",
+      "3357917592448",
+      "1118295399080",
+      "137372396916",
+      "7345865836",
+      "144238593"
+    ],
+    "records": [
+      {
+        "Jacobian_Frobenius_coefficients_ascending": [
+          "2197",
+          "-1014",
+          "351",
+          "-100",
+          "27",
+          "-6",
+          "1"
+        ],
+        "counts": [
+          {
+            "affine_branch_points": 0,
+            "extension_degree": 1,
+            "field_size": 13,
+            "nonzero_square_values": 4,
+            "points": 8,
+            "points_at_infinity": 0
+          },
+          {
+            "affine_branch_points": 8,
+            "extension_degree": 2,
+            "field_size": 169,
+            "nonzero_square_values": 89,
+            "points": 188,
+            "points_at_infinity": 2
+          },
+          {
+            "affine_branch_points": 0,
+            "extension_degree": 3,
+            "field_size": 2197,
+            "nonzero_square_values": 1084,
+            "points": 2168,
+            "points_at_infinity": 0
+          }
+        ],
+        "elliptic_checks": [
+          {
+            "Frobenius_coefficients_ascending": [
+              "13",
+              "2",
+              "1"
+            ],
+            "factor_excluded": true,
+            "name": "rational",
+            "point_count": 16,
+            "remainder_coefficients_ascending": [
+              "1248",
+              "-432"
+            ],
+            "trace": -2
+          },
+          {
+            "Frobenius_coefficients_ascending": [
+              "13",
+              "2",
+              "1"
+            ],
+            "factor_excluded": true,
+            "name": "Sha",
+            "point_count": 16,
+            "remainder_coefficients_ascending": [
+              "1248",
+              "-432"
+            ],
+            "trace": -2
+          }
+        ],
+        "prime": 13,
+        "status": "PASS"
+      }
+    ],
+    "software": {
+      "sage": "10.9"
+    },
+    "status": "BOTH_Q_HOM_SPACES_ZERO"
+  },
+  "schema": "rank-jump.auxiliary-multiplicity-completion.v1"
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.auxiliary-multiplicity-completion-protocol.v1",
+  "reason": "The swapped product has bad displayed reduction at all three original frozen primes. Preserve that UNKNOWN record.",
+  "case_index": 1,
+  "primes": [13, 17, 19],
+  "limits": {"seconds": 30, "largest_field": 6859, "new_parameters_or_point_searches": 0},
+  "gate": "Reuse the existing read-only point-count and Frobenius-factor test at the first eligible prime. Stop when both rational elliptic factors are excluded. Failure remains UNKNOWN.",
+  "boundary": "A one-case bounded completion of the same arithmetic-Hom question, not a geometric isogeny or rank computation."
+}

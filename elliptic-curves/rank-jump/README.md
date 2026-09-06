@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: synchronizing residual covers can add an arbitrary local obstruction](SYNCHRONIZING_COVERS_CAN_ADD_AN_OBSTRUCTION.md)
+- [Latest: one auxiliary point is bounded by elliptic multiplicity; the genus-five controls have only two independent maps](ONE_AUXILIARY_POINT_HAS_A_MULTIPLICITY_BOUND.md)
+- [Synchronizing residual covers can add an arbitrary local obstruction](SYNCHRONIZING_COVERS_CAN_ADD_AN_OBSTRUCTION.md)
 - [Common 2-cover geometry survives a rational/Sha switch](TWO_COVER_GEOMETRY_IS_AUTOMATIC.md)
 - [1,504 original generic secants give distinct nonsquare classes on all high/low controls](ORIGINAL_SECANTS_HAVE_NO_SHARED_SOLUBLE_BLOCK.md)
 - [Fitted secant pencils pass all high/low controls but explain no original quotient](SECANT_PENCILS_DO_NOT_EXPLAIN_THE_ORIGINAL_JUMP.md)

@@ -1,0 +1,82 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_auxiliary_elliptic_multiplicity_v1.json": "2c5618e0f0ee3bd27b46b396107f5e50883bf850117425712ffdbdaf71466cdb",
+    "artifacts/generated-results/elliptic-curves/rank_jump_auxiliary_multiplicity_completion_v1.json": "58791f3adb08fbf32e4a3a15c40eea53f137c87d7c501610fc835a86b39af3e5",
+    "elliptic-curves/rank-jump/verify_auxiliary_multiplicity.py": "6e041a4f3a218332a639f507ae8e7290b0badfcffbb595345fa5de2fc05c0a67"
+  },
+  "boundary": "Independent finite-field arithmetic. Multiplicity uses the retained V4 Jacobian decomposition and End_Q(E)=Z; it is not a Mordell-Weil rank or a geometric-Hom claim.",
+  "control_curves_not_Q_isogenous": true,
+  "rows": [
+    {
+      "Frobenius_coefficients_ascending": [
+        1331,
+        484,
+        132,
+        36,
+        12,
+        4,
+        1
+      ],
+      "alignment": "identity",
+      "both_rational_elliptic_factors_excluded": true,
+      "independent_field_moduli_ascending": [
+        null,
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          4,
+          1
+        ]
+      ],
+      "independent_point_counts": [
+        16,
+        130,
+        1360
+      ],
+      "prime": 11,
+      "signed_genus_five_rational_elliptic_multiplicity": 2,
+      "status": "PASS"
+    },
+    {
+      "Frobenius_coefficients_ascending": [
+        2197,
+        -1014,
+        351,
+        -100,
+        27,
+        -6,
+        1
+      ],
+      "alignment": "swap_second",
+      "both_rational_elliptic_factors_excluded": true,
+      "independent_field_moduli_ascending": [
+        null,
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          1,
+          0,
+          4,
+          1
+        ]
+      ],
+      "independent_point_counts": [
+        8,
+        188,
+        2168
+      ],
+      "prime": 13,
+      "signed_genus_five_rational_elliptic_multiplicity": 2,
+      "status": "PASS"
+    }
+  ],
+  "schema": "rank-jump.auxiliary-multiplicity-verification.v1"
+}
