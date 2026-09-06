@@ -1,0 +1,27 @@
+{
+  "schema": "rank-jump.norm-square-rank-protocol.v1",
+  "question": "Does the point-independent condition D(u) square force a soluble block, or only reduce the torsion field?",
+  "hypotheses": [
+    "The D-twist has geometric generic rank zero, so the norm double cover adds no generic Mordell-Weil direction.",
+    "The coefficient-defined control u=-A/B has D=1 but does not split all branch square roots."
+  ],
+  "scope": "Theorem-directed symbolic calculation, one coefficient-defined structural control, and finite signed-permutation algebra. No new high-rank search.",
+  "unblinding": "The D-twist fibre calculation and D(-A/B)=1 were derived before freezing. The anchor signs A<0,B>0 and positive cubic discriminant are already known.",
+  "limits": {
+    "new_parameter_sweeps": 0,
+    "point_searches": 0,
+    "rank_computations_on_new_fibres": 0,
+    "Selmer_computations": 0,
+    "class_groups": 0,
+    "structural_controls": 1,
+    "signed_permutations": 24,
+    "torsion_vectors_per_action": 16,
+    "seconds": 30
+  },
+  "control": {
+    "parameter_rule": "u=-A/B",
+    "source": "rank_jump_local_collision_inputs_v1.json anchor coefficients only",
+    "curve_rank": "UNKNOWN"
+  },
+  "boundary": "Zero generic rank on the D-twist is not a rank upper bound on any specialization. Norm square is not being excluded as a statistical correlate; its proposed automatic generic-block implication is excluded."
+}

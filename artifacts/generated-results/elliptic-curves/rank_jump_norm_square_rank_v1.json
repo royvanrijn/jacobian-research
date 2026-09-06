@@ -1,0 +1,423 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_local_collision_inputs_v1.json": "440372c18d42243ce447cad470c7bfd6ba5d5c757740e3ce413af6b0d8194f71",
+    "artifacts/generated-results/elliptic-curves/rank_jump_torsion_difference_v1.json": "694062bd6ad732c12e5f307601f0825cbb41e455c600e2b20a670a1794c0832e",
+    "elliptic-curves/rank-jump/NORM_SQUARE_RANK_PROTOCOL.json": "03f71c2721537f803a46000dc020406c916b960484209c24e811255f81158a70",
+    "elliptic-curves/rank-jump/norm_square_rank.py": "3b3c18fd6e12f1d26c1ba40cafb6159a996fa93db131ea29b49486c101b15ea3",
+    "elliptic-curves/rank-jump/torsion_difference.py": "0b6b4db6f8ade5af47927f82e9a4bf7a91e759a599c18f6b3dd73854d9289ad9"
+  },
+  "boundary": "Zero generic rank on the D-twist is not a rank upper bound on any specialization. Norm square is not being excluded as a statistical correlate; its proposed automatic generic-block implication is excluded.",
+  "control": {
+    "A": "-5750886029903523759416717668139307",
+    "B": "167347710468055045100164888198438918505621536951206",
+    "D": 1,
+    "Jacobian_two_torsion_field_degree_over_Q": 24,
+    "auxiliary_curve_ainvariants": [
+      "0",
+      "-5750886029903523759416717668139307",
+      "0",
+      "0",
+      "28005256198899980121994154568546944689898371360535222271143195884431526585697813499115774449624854436"
+    ],
+    "auxiliary_double": [
+      "5750886029903523759416717668139307",
+      "-167347710468055045100164888198438918505621536951206"
+    ],
+    "auxiliary_point": [
+      "0",
+      "167347710468055045100164888198438918505621536951206"
+    ],
+    "cubic_discriminant": "4647169165086201522253423951494063406713720029198475812735152009907780357949497411403055104000000000",
+    "gamma_coordinates": [
+      "1",
+      "-737009615520123511395196420369/21446585988473028976055989772964105921520125202",
+      "0"
+    ],
+    "gamma_identity": "gamma=-theta^3/B",
+    "gamma_is_square_in_totally_real_splitting_field": false,
+    "gamma_sign_counts": {
+      "negative": 2,
+      "positive": 1
+    },
+    "relative_Kummer_degree_over_splitting_field": 4,
+    "root_sign_counts": {
+      "negative": 1,
+      "positive": 2
+    },
+    "specialized_Mordell_Weil_rank": "UNKNOWN",
+    "u": "737009615520123511395196420369/21446585988473028976055989772964105921520125202"
+  },
+  "even_sign_module": {
+    "abstract_group": "S4",
+    "actions": [
+      {
+        "matrix_columns": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "permutation": [
+          0,
+          1,
+          2
+        ],
+        "sign_mask": 0
+      },
+      {
+        "matrix_columns": [
+          1,
+          2,
+          6,
+          9
+        ],
+        "permutation": [
+          0,
+          1,
+          2
+        ],
+        "sign_mask": 3
+      },
+      {
+        "matrix_columns": [
+          1,
+          2,
+          7,
+          10
+        ],
+        "permutation": [
+          0,
+          1,
+          2
+        ],
+        "sign_mask": 5
+      },
+      {
+        "matrix_columns": [
+          1,
+          2,
+          5,
+          11
+        ],
+        "permutation": [
+          0,
+          1,
+          2
+        ],
+        "sign_mask": 6
+      },
+      {
+        "matrix_columns": [
+          1,
+          3,
+          4,
+          12
+        ],
+        "permutation": [
+          0,
+          2,
+          1
+        ],
+        "sign_mask": 0
+      },
+      {
+        "matrix_columns": [
+          1,
+          3,
+          6,
+          15
+        ],
+        "permutation": [
+          0,
+          2,
+          1
+        ],
+        "sign_mask": 3
+      },
+      {
+        "matrix_columns": [
+          1,
+          3,
+          7,
+          13
+        ],
+        "permutation": [
+          0,
+          2,
+          1
+        ],
+        "sign_mask": 5
+      },
+      {
+        "matrix_columns": [
+          1,
+          3,
+          5,
+          14
+        ],
+        "permutation": [
+          0,
+          2,
+          1
+        ],
+        "sign_mask": 6
+      },
+      {
+        "matrix_columns": [
+          2,
+          1,
+          8,
+          4
+        ],
+        "permutation": [
+          1,
+          0,
+          2
+        ],
+        "sign_mask": 0
+      },
+      {
+        "matrix_columns": [
+          2,
+          1,
+          9,
+          6
+        ],
+        "permutation": [
+          1,
+          0,
+          2
+        ],
+        "sign_mask": 3
+      },
+      {
+        "matrix_columns": [
+          2,
+          1,
+          10,
+          7
+        ],
+        "permutation": [
+          1,
+          0,
+          2
+        ],
+        "sign_mask": 5
+      },
+      {
+        "matrix_columns": [
+          2,
+          1,
+          11,
+          5
+        ],
+        "permutation": [
+          1,
+          0,
+          2
+        ],
+        "sign_mask": 6
+      },
+      {
+        "matrix_columns": [
+          2,
+          3,
+          8,
+          12
+        ],
+        "permutation": [
+          1,
+          2,
+          0
+        ],
+        "sign_mask": 0
+      },
+      {
+        "matrix_columns": [
+          2,
+          3,
+          9,
+          15
+        ],
+        "permutation": [
+          1,
+          2,
+          0
+        ],
+        "sign_mask": 3
+      },
+      {
+        "matrix_columns": [
+          2,
+          3,
+          10,
+          13
+        ],
+        "permutation": [
+          1,
+          2,
+          0
+        ],
+        "sign_mask": 5
+      },
+      {
+        "matrix_columns": [
+          2,
+          3,
+          11,
+          14
+        ],
+        "permutation": [
+          1,
+          2,
+          0
+        ],
+        "sign_mask": 6
+      },
+      {
+        "matrix_columns": [
+          3,
+          1,
+          12,
+          4
+        ],
+        "permutation": [
+          2,
+          0,
+          1
+        ],
+        "sign_mask": 0
+      },
+      {
+        "matrix_columns": [
+          3,
+          1,
+          15,
+          6
+        ],
+        "permutation": [
+          2,
+          0,
+          1
+        ],
+        "sign_mask": 3
+      },
+      {
+        "matrix_columns": [
+          3,
+          1,
+          13,
+          7
+        ],
+        "permutation": [
+          2,
+          0,
+          1
+        ],
+        "sign_mask": 5
+      },
+      {
+        "matrix_columns": [
+          3,
+          1,
+          14,
+          5
+        ],
+        "permutation": [
+          2,
+          0,
+          1
+        ],
+        "sign_mask": 6
+      },
+      {
+        "matrix_columns": [
+          3,
+          2,
+          12,
+          8
+        ],
+        "permutation": [
+          2,
+          1,
+          0
+        ],
+        "sign_mask": 0
+      },
+      {
+        "matrix_columns": [
+          3,
+          2,
+          15,
+          9
+        ],
+        "permutation": [
+          2,
+          1,
+          0
+        ],
+        "sign_mask": 3
+      },
+      {
+        "matrix_columns": [
+          3,
+          2,
+          13,
+          10
+        ],
+        "permutation": [
+          2,
+          1,
+          0
+        ],
+        "sign_mask": 5
+      },
+      {
+        "matrix_columns": [
+          3,
+          2,
+          14,
+          11
+        ],
+        "permutation": [
+          2,
+          1,
+          0
+        ],
+        "sign_mask": 6
+      }
+    ],
+    "commutant_basis_packed": [
+      8448,
+      33825
+    ],
+    "commutant_dimension": 2,
+    "group_order": 24,
+    "idempotents_packed": [
+      0,
+      33825
+    ],
+    "module": "INDECOMPOSABLE_NONSPLIT",
+    "root_action_checks": 384
+  },
+  "schema": "rank-jump.norm-square-rank.v1",
+  "surface": {
+    "Euler_number": 24,
+    "finite_fibres": [
+      "I2*",
+      "I2*",
+      "I2*"
+    ],
+    "geometric_Neron_Severi_rank": 20,
+    "geometric_generic_Mordell_Weil_rank": 0,
+    "holomorphic_Euler_characteristic": 2,
+    "infinity": "I0",
+    "new_generic_rank_from_norm_base_change": 0,
+    "norm_base_arithmetic_generic_rank_for_retained_anchor": 0,
+    "norm_base_geometric_generic_rank": 1,
+    "trivial_lattice_rank": 20,
+    "twist": "D(u)=1+A*u^2+B*u^3",
+    "twisted_c4": "16*D(u)^2*(A^2*u^2-9*B*u-3*A)",
+    "twisted_discriminant": "16*(-4*A^3-27*B^2)*D(u)^8"
+  }
+}
