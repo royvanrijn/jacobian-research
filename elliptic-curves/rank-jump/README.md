@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: additive Kummer compatibility closes all mixed arithmetic ranks](ADDITIVE_COMPONENT_KUMMER_COMPATIBILITY.md)
+- [Latest: equal Kummer classes need not create a geometric direction](EQUAL_CLASS_COMPATIBILITY_IS_NOT_SUFFICIENT.md)
+- [Additive Kummer compatibility closes the distinct-class mixed arithmetic ranks](ADDITIVE_COMPONENT_KUMMER_COMPATIBILITY.md)
 - [Genus-one three-point bases have two vanishing geometric characters](TRIPLE_CHARACTER_GENUS_ONE_BOUNDS.md)
 - [Matched high/zero-gain fibres have at most one mixed-character direction](MIXED_CHARACTER_PAIRED_BOUNDS.md)
 - [Full branch splitting adds no generic rank; a three-character Picard gate](FULL_BRANCH_SPLITTING_AND_THREE_CHARACTER_GATE.md)

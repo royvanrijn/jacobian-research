@@ -1,0 +1,260 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_component_kummer_gate_v1.json": "b5592354a49d562fe1be61d5260d5823847b34de8f0dbcbe0793b43c8f9f6f93",
+    "artifacts/generated-results/elliptic-curves/rank_jump_equal_class_inputs_v1.json": "27c5a22bc93dfcc5ee811b2b3262d73abcf321c86c8647341483b9532e1da346",
+    "artifacts/generated-results/elliptic-curves/rank_jump_triple_character_counts_v1.json": "9ec5c2f149130a6a7c3fc4076611c56f544ee6b1ea25c6de7fde6b223b41355b",
+    "elliptic-curves/rank-jump/EQUAL_CLASS_PICARD_PROTOCOL.json": "c266eab5374ef6552e5828b3c1fad4aa68f941b694b25d1ea34f7300ba2de10a",
+    "elliptic-curves/rank-jump/equal_class_picard.py": "0c48cf6296cb881bcf64c221e4c51f25df3900861880980137dd6e0bc1667c71",
+    "elliptic-curves/rank-jump/triple_character.py": "e7dff417dc7d9b38508262cc24247b59dc46cbfb3bfdf4b84de20d02241f5587"
+  },
+  "boundary": "Ranks of the new function-field construction only; no rank upper bound on a production curve.",
+  "bounds": [
+    {
+      "arithmetic_mixed_rank_interval": [
+        0,
+        1
+      ],
+      "full_base_arithmetic_rank_interval": [
+        3,
+        4
+      ],
+      "geometric_mixed_rank_interval": [
+        0,
+        1
+      ],
+      "id": "a1-fibration-04:-1647/91",
+      "production_curve_rank": "UNKNOWN",
+      "role": "high",
+      "zero_rank_witness_primes": null
+    },
+    {
+      "arithmetic_mixed_rank_interval": [
+        0,
+        0
+      ],
+      "full_base_arithmetic_rank_interval": [
+        3,
+        3
+      ],
+      "geometric_mixed_rank_interval": [
+        0,
+        0
+      ],
+      "id": "a1-fibration-04:-2177/2397",
+      "production_curve_rank": "UNKNOWN",
+      "role": "low",
+      "zero_rank_witness_primes": [
+        17,
+        31
+      ]
+    }
+  ],
+  "counts_sha256": "28c2755947fb371a1bd431bdd44cceacb2528462d47172a602e91143198cef26",
+  "reductions": [
+    {
+      "NS_discriminant_squareclass": -1,
+      "case": 0,
+      "cyclotomic_orders": [
+        1
+      ],
+      "fields": [
+        {
+          "degree": 1,
+          "finite_sum": 6,
+          "infinity_sum": 5,
+          "residual_H2_trace": 11
+        },
+        {
+          "degree": 2,
+          "finite_sum": 718,
+          "infinity_sum": 1,
+          "residual_H2_trace": 719
+        },
+        {
+          "degree": 3,
+          "finite_sum": -393,
+          "infinity_sum": -70,
+          "residual_H2_trace": -463
+        }
+      ],
+      "noncyclotomic_factor_ascending": [
+        "28561",
+        "338",
+        "-273",
+        "2",
+        "1"
+      ],
+      "normalized_transcendental_degree6": "11943936/4826809",
+      "p": 13,
+      "polynomial_ascending": [
+        "-371293",
+        "24167",
+        "3887",
+        "-299",
+        "-11",
+        "1"
+      ],
+      "reduction_geometric_Picard_rank": 18,
+      "status": "RHO_18_REDUCTION",
+      "traces": [
+        11,
+        719,
+        -463
+      ]
+    },
+    {
+      "NS_discriminant_squareclass": -1,
+      "case": 0,
+      "cyclotomic_orders": [
+        1
+      ],
+      "fields": [
+        {
+          "degree": 1,
+          "finite_sum": 24,
+          "infinity_sum": 3,
+          "residual_H2_trace": 27
+        },
+        {
+          "degree": 2,
+          "finite_sum": 534,
+          "infinity_sum": 25,
+          "residual_H2_trace": 559
+        },
+        {
+          "degree": 3,
+          "finite_sum": 17259,
+          "infinity_sum": -126,
+          "residual_H2_trace": 17133
+        }
+      ],
+      "noncyclotomic_factor_ascending": [
+        "83521",
+        "-2890",
+        "-85",
+        "-10",
+        "1"
+      ],
+      "normalized_transcendental_degree6": "65028096/24137569",
+      "p": 17,
+      "polynomial_ascending": [
+        "-1419857",
+        "132651",
+        "-1445",
+        "85",
+        "-27",
+        "1"
+      ],
+      "reduction_geometric_Picard_rank": 18,
+      "status": "RHO_18_REDUCTION",
+      "traces": [
+        27,
+        559,
+        17133
+      ]
+    },
+    {
+      "NS_discriminant_squareclass": -1,
+      "case": 1,
+      "cyclotomic_orders": [
+        1
+      ],
+      "fields": [
+        {
+          "degree": 1,
+          "finite_sum": 2,
+          "infinity_sum": -3,
+          "residual_H2_trace": -1
+        },
+        {
+          "degree": 2,
+          "finite_sum": 214,
+          "infinity_sum": 25,
+          "residual_H2_trace": 239
+        },
+        {
+          "degree": 3,
+          "finite_sum": -6553,
+          "infinity_sum": 126,
+          "residual_H2_trace": -6427
+        }
+      ],
+      "noncyclotomic_factor_ascending": [
+        "83521",
+        "5202",
+        "187",
+        "18",
+        "1"
+      ],
+      "normalized_transcendental_degree6": "60466176/24137569",
+      "p": 17,
+      "polynomial_ascending": [
+        "-1419857",
+        "-4913",
+        "2023",
+        "-119",
+        "1",
+        "1"
+      ],
+      "reduction_geometric_Picard_rank": 18,
+      "status": "RHO_18_REDUCTION",
+      "traces": [
+        -1,
+        239,
+        -6427
+      ]
+    },
+    {
+      "NS_discriminant_squareclass": -113,
+      "case": 1,
+      "cyclotomic_orders": [
+        1
+      ],
+      "fields": [
+        {
+          "degree": 1,
+          "finite_sum": -4,
+          "infinity_sum": 7,
+          "residual_H2_trace": 3
+        },
+        {
+          "degree": 2,
+          "finite_sum": 2042,
+          "infinity_sum": 13,
+          "residual_H2_trace": 2055
+        },
+        {
+          "degree": 3,
+          "finite_sum": -85597,
+          "infinity_sum": -308,
+          "residual_H2_trace": -85905
+        }
+      ],
+      "noncyclotomic_factor_ascending": [
+        "923521",
+        "26908",
+        "-155",
+        "28",
+        "1"
+      ],
+      "normalized_transcendental_degree6": "29622272/887503681",
+      "p": 31,
+      "polynomial_ascending": [
+        "-28629151",
+        "89373",
+        "31713",
+        "-1023",
+        "-3",
+        "1"
+      ],
+      "reduction_geometric_Picard_rank": 18,
+      "status": "RHO_18_REDUCTION",
+      "traces": [
+        3,
+        2055,
+        -85905
+      ]
+    }
+  ],
+  "schema": "rank-jump.equal-class-picard.v1"
+}

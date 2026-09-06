@@ -1,0 +1,37 @@
+{
+  "schema": "rank-jump.equal-class-Picard-protocol.v1",
+  "question": "Does the equal-class triple R0=P0,R1=P0+2P1,R2=P0+2P2 have a nonzero geometric mixed direction, despite passing the additive compatibility gate?",
+  "mask": 7,
+  "selection": "The two retained compatible triples, no exceptional points. First two eligible primes from the existing arrays; where fewer than two are eligible, add the first good prime >19 and <=31. Eligibility inspected, weighted traces not inspected before freezing.",
+  "primes": {
+    "high": [
+      13,
+      17
+    ],
+    "low": [
+      17,
+      31
+    ]
+  },
+  "limits": {
+    "curves": 2,
+    "new_untwisted_prime_counts": 1,
+    "new_prime": 31,
+    "extension_degrees": [
+      1,
+      2,
+      3
+    ],
+    "seconds_per_new_prime": 40,
+    "seconds_per_independent_prime_replay": 60,
+    "rational_point_searches": 0,
+    "parameter_searches": 0
+  },
+  "geometry": {
+    "twist": "product(1-x(Ri)*u)",
+    "fibres": "3 I2 + 3 I0*; infinity smooth",
+    "trivial_rank": 17
+  },
+  "endpoint": "Two rank-18 reductions with unequal NS discriminant squareclasses prove geometric rank zero. Otherwise retain exact rank UNKNOWN and existing arithmetic rank interval 0..1.",
+  "boundary": "Component compatibility is necessary only. A geometric rank or rational section of this new pencil is not an exceptional quotient direction on its production anchor."
+}

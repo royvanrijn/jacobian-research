@@ -1,5 +1,10 @@
 # Additive-component compatibility closes the arithmetic mixed ranks
 
+Follow-up: the [equal-class Picard test](EQUAL_CLASS_COMPATIBILITY_IS_NOT_SUFFICIENT.md)
+proves geometric mixed rank zero for the compatible low-control triple.
+Compatibility is therefore not sufficient even for geometric incidence;
+the compatible high-control triple remains at rank `0–1`.
+
 **The paired constructions now have exact arithmetic generic ranks: two
 for the two-point base and three for the three-point genus-one base.**
 Every non-singleton arithmetic character space is zero on both anchors.
