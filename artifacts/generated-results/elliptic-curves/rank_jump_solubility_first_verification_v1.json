@@ -1,0 +1,9 @@
+{
+  "boundary": "Independent rational-fraction square evaluation and generic lift identities. Finite Kummer rank is replayed separately by the producer check.",
+  "generic_lift_maps_verified": 14,
+  "rational_square_evaluations": 1251808,
+  "result_sha256": "a25cfcabd8597ed5b5f5700336541751dc512af9977bf1d5118280f6008691de",
+  "schema": "rank-jump.solubility-first-verification.v1",
+  "script_sha256": "766b79216108bb01344b5876c1507d6c2992ca2332abf030d2be17f3c081f224",
+  "status": "PASS"
+}

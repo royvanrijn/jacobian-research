@@ -1,0 +1,799 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_completed_cohort_inputs_v1.json": "8ea790ba9d023a3e7c06bb71c83ffaf9fb4b28371bf42ae7dd7e1d90e8e4c57e",
+    "artifacts/generated-results/elliptic-curves/rank_jump_solubility_first_geometry_v1.json.gz": "3ada2afa96b4f63944b0fdeebc2a28910870ba0391eee29a8721588426cda450",
+    "artifacts/generated-results/elliptic-curves/rank_jump_solubility_first_inputs_v1.json": "46c6f8a5e3331121f77f0c914b118ed69e7dd965f48979921d00067452e23ed5",
+    "elliptic-curves/rank-jump/SOLUBILITY_FIRST_PROTOCOL.json": "34b34aa2701757359b806acd39073675bdf8b817aabd5ec46371c1002d565780",
+    "elliptic-curves/rank-jump/cover_experiment.py": "ebb07b12f71ba1f24675673a2309133011a5f33786c5d26d4d6ecb94f964ed1f",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/solubility_first.py": "b2d8e72c6d95b49479e7ec4c5cfea1d37eae3627ebfa8f4467d4d7562d586d3f"
+  },
+  "boundary": "A fixed generic construction on completed retrospective fibres. No full Selmer/rank assertion and no negative solubility conclusion outside this dictionary.",
+  "certified_blocks": [
+    "08234-003",
+    "08234-009",
+    "08234-020",
+    "08234-027"
+  ],
+  "layer": "solubility",
+  "rows": [
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "-1383/595",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 3,
+      "published_parameter": "-28367/15470",
+      "rank_lower_bound_with_retained_points": 20,
+      "short_model_scaling_u": "9204650/3",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-001",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "-20/2827",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [
+        {
+          "Kummer_fingerprint": 2864448,
+          "label": "orbit-11278",
+          "point": [
+            "386216314124134584625889380609/12",
+            "850747893430242372372159979087369264592880"
+          ],
+          "square_root": "10592534922474028680/2827"
+        }
+      ],
+      "nonzero_square_hits": [
+        {
+          "label": "orbit-11278",
+          "square_root": "10592534922474028680/2827"
+        }
+      ],
+      "observed_quotient_rank": 2,
+      "published_parameter": "-70665/36751",
+      "rank_lower_bound_with_retained_points": 19,
+      "short_model_scaling_u": "103895077/6",
+      "soluble_quotient_rank_lower_bound": 1,
+      "soluble_quotient_rank_upper_bound": 1,
+      "source_id": "08234-002",
+      "split_cover_count": 1
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": true,
+      "compact_parameter": "326/5",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [
+        {
+          "Kummer_fingerprint": 23262996,
+          "label": "orbit-01333",
+          "point": [
+            "7538315948467937499577/7500",
+            "13149608909024015874207998780544/15625"
+          ],
+          "square_root": "24901963974063488/9375"
+        },
+        {
+          "Kummer_fingerprint": 11888570,
+          "label": "orbit-0b2d0",
+          "point": [
+            "-31825794662431977527/12",
+            "1857581700211576630353896064"
+          ],
+          "square_root": "5988718499935743/320"
+        },
+        {
+          "Kummer_fingerprint": 7425431,
+          "label": "orbit-13109",
+          "point": [
+            "350791974207456948721/12",
+            "157503781291837815207943461801"
+          ],
+          "square_root": "1160228409435116/585"
+        },
+        {
+          "Kummer_fingerprint": 19277561,
+          "label": "orbit-19e45",
+          "point": [
+            "-117029650163502414029/48",
+            "160647889385998711438107584127/64"
+          ],
+          "square_root": "2245855668526142127/420250"
+        }
+      ],
+      "nonzero_square_hits": [
+        {
+          "label": "orbit-01333",
+          "square_root": "24901963974063488/9375"
+        },
+        {
+          "label": "orbit-0b2d0",
+          "square_root": "5988718499935743/320"
+        },
+        {
+          "label": "orbit-13109",
+          "square_root": "1160228409435116/585"
+        },
+        {
+          "label": "orbit-19e45",
+          "square_root": "2245855668526142127/420250"
+        }
+      ],
+      "observed_quotient_rank": 7,
+      "published_parameter": "-288/65",
+      "rank_lower_bound_with_retained_points": 24,
+      "short_model_scaling_u": "325/6",
+      "soluble_quotient_rank_lower_bound": 3,
+      "soluble_quotient_rank_upper_bound": 4,
+      "source_id": "08234-003",
+      "split_cover_count": 4
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "3305/3579",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 0,
+      "published_parameter": "-182255/93054",
+      "rank_lower_bound_with_retained_points": 17,
+      "short_model_scaling_u": "111013422",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-004",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "-1007/2292",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 0,
+      "published_parameter": "-113593/59592",
+      "rank_lower_bound_with_retained_points": 17,
+      "short_model_scaling_u": "22764144",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-005",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "-2641/3542",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 0,
+      "published_parameter": "-174459/92092",
+      "rank_lower_bound_with_retained_points": 17,
+      "short_model_scaling_u": "163094932/3",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-006",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "-2243/880",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 1,
+      "published_parameter": "-41757/22880",
+      "rank_lower_bound_with_retained_points": 18,
+      "short_model_scaling_u": "10067200/3",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-007",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "509/3808",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 0,
+      "published_parameter": "-190909/99008",
+      "rank_lower_bound_with_retained_points": 17,
+      "short_model_scaling_u": "188511232/3",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-008",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": true,
+      "compact_parameter": "774/149",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [
+        {
+          "Kummer_fingerprint": 61910704,
+          "label": "orbit-0911e",
+          "point": [
+            "1564384808319508184020555249/2028",
+            "-1318892500335862230083953649075469076200/2197"
+          ],
+          "square_root": "109687189032300771648/699257"
+        },
+        {
+          "Kummer_fingerprint": 150444894,
+          "label": "orbit-0a037",
+          "point": [
+            "2110761876666989506422721/12",
+            "-44123149564704975704040920300698125"
+          ],
+          "square_root": "7884159859041131203200/147119173"
+        },
+        {
+          "Kummer_fingerprint": 414571136,
+          "label": "orbit-1795d",
+          "point": [
+            "2366707340646148436838121/12",
+            "-27724829847839429603757420632576100"
+          ],
+          "square_root": "1991342733094965627/2384"
+        },
+        {
+          "Kummer_fingerprint": 102226388,
+          "label": "orbit-18f5d",
+          "point": [
+            "2359089778116389748037321/12",
+            "-28217864226361229138110298183877600"
+          ],
+          "square_root": "3481841461183488/149"
+        }
+      ],
+      "nonzero_square_hits": [
+        {
+          "label": "orbit-0911e",
+          "square_root": "109687189032300771648/699257"
+        },
+        {
+          "label": "orbit-0a037",
+          "square_root": "7884159859041131203200/147119173"
+        },
+        {
+          "label": "orbit-1795d",
+          "square_root": "1991342733094965627/2384"
+        },
+        {
+          "label": "orbit-18f5d",
+          "square_root": "3481841461183488/149"
+        }
+      ],
+      "observed_quotient_rank": 8,
+      "published_parameter": "-4112/1937",
+      "rank_lower_bound_with_retained_points": 25,
+      "short_model_scaling_u": "288613/6",
+      "soluble_quotient_rank_lower_bound": 3,
+      "soluble_quotient_rank_upper_bound": 4,
+      "source_id": "08234-009",
+      "split_cover_count": 4
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "464/3753",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 0,
+      "published_parameter": "-94057/48789",
+      "rank_lower_bound_with_retained_points": 17,
+      "short_model_scaling_u": "61035039/2",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-010",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "-1247/4079",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 0,
+      "published_parameter": "-202703/106054",
+      "rank_lower_bound_with_retained_points": 17,
+      "short_model_scaling_u": "432594266/3",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-011",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "-1258/1679",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 0,
+      "published_parameter": "-41346/21827",
+      "rank_lower_bound_with_retained_points": 17,
+      "short_model_scaling_u": "36647533/6",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-012",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "-1569/1505",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 0,
+      "published_parameter": "-73681/39130",
+      "rank_lower_bound_with_retained_points": 17,
+      "short_model_scaling_u": "58890650/3",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-013",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "1807/245",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 2,
+      "published_parameter": "-14057/6370",
+      "rank_lower_bound_with_retained_points": 19,
+      "short_model_scaling_u": "1560650/9",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-014",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "-3301/1950",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 0,
+      "published_parameter": "-94199/50700",
+      "rank_lower_bound_with_retained_points": 17,
+      "short_model_scaling_u": "16477500",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-015",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "2683/3919",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 0,
+      "published_parameter": "-198633/101894",
+      "rank_lower_bound_with_retained_points": 17,
+      "short_model_scaling_u": "399322586/3",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-016",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "-4068/1435",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 0,
+      "published_parameter": "-33841/18655",
+      "rank_lower_bound_with_retained_points": 17,
+      "short_model_scaling_u": "26769925/6",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-017",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "-1501/1623",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 0,
+      "published_parameter": "-79649/42198",
+      "rank_lower_bound_with_retained_points": 17,
+      "short_model_scaling_u": "22829118",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-018",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "-208/1817",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 3,
+      "published_parameter": "-45321/23621",
+      "rank_lower_bound_with_retained_points": 20,
+      "short_model_scaling_u": "42919357/6",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-019",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": true,
+      "compact_parameter": "-2185/106",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [
+        {
+          "Kummer_fingerprint": 17773678,
+          "label": "orbit-03da0",
+          "point": [
+            "-205645354795902278126208873/11236",
+            "-896758685603162502731118703127404052350/148877"
+          ],
+          "square_root": "19298972992123019520/148877"
+        },
+        {
+          "Kummer_fingerprint": 11843274,
+          "label": "orbit-07086",
+          "point": [
+            "3179143573177214408289999383/315844",
+            "-55856397815391379745190186305752781256275/22188041"
+          ],
+          "square_root": "593743011924210150080/1845555453"
+        },
+        {
+          "Kummer_fingerprint": 24606195,
+          "label": "orbit-0b954",
+          "point": [
+            "-508824263449171381538836143/15376",
+            "9630719242408526195466236755944390923425/1906624"
+          ],
+          "square_root": "10529612260623281279727/572283188"
+        }
+      ],
+      "nonzero_square_hits": [
+        {
+          "label": "orbit-03da0",
+          "square_root": "19298972992123019520/148877"
+        },
+        {
+          "label": "orbit-07086",
+          "square_root": "593743011924210150080/1845555453"
+        },
+        {
+          "label": "orbit-0b954",
+          "square_root": "10529612260623281279727/572283188"
+        }
+      ],
+      "observed_quotient_rank": 5,
+      "published_parameter": "-3115/2756",
+      "rank_lower_bound_with_retained_points": 22,
+      "short_model_scaling_u": "146068/9",
+      "soluble_quotient_rank_lower_bound": 3,
+      "soluble_quotient_rank_upper_bound": 3,
+      "source_id": "08234-020",
+      "split_cover_count": 3
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "-3815/1356",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 1,
+      "published_parameter": "-63985/35256",
+      "rank_lower_bound_with_retained_points": 18,
+      "short_model_scaling_u": "7967856",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-021",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "-274/2833",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 0,
+      "published_parameter": "-70688/36829",
+      "rank_lower_bound_with_retained_points": 17,
+      "short_model_scaling_u": "104336557/6",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-022",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "3545/2676",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 1,
+      "published_parameter": "-10565/5352",
+      "rank_lower_bound_with_retained_points": 18,
+      "short_model_scaling_u": "2386992",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-023",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "541/3360",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 0,
+      "published_parameter": "-168541/87360",
+      "rank_lower_bound_with_retained_points": 17,
+      "short_model_scaling_u": "48921600",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-024",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "435/2477",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 0,
+      "published_parameter": "-124285/64402",
+      "rank_lower_bound_with_retained_points": 17,
+      "short_model_scaling_u": "159523754/3",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-025",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "-11/235",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 6,
+      "published_parameter": "-903/470",
+      "rank_lower_bound_with_retained_points": 23,
+      "short_model_scaling_u": "110450/3",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-026",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": true,
+      "compact_parameter": "2627/65",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [
+        {
+          "Kummer_fingerprint": 251352416,
+          "label": "orbit-030cb",
+          "point": [
+            "111975568209711232385958400042/910803",
+            "1040240007599282561277062890553296146728436/167284151"
+          ],
+          "square_root": "1484997807215034/4205"
+        },
+        {
+          "Kummer_fingerprint": 158840838,
+          "label": "orbit-1e1a2",
+          "point": [
+            "9154473585658155869265382/75",
+            "-808686840504886834072070430587022678/125"
+          ],
+          "square_root": "245115117691047870294/21125"
+        }
+      ],
+      "nonzero_square_hits": [
+        {
+          "label": "orbit-030cb",
+          "square_root": "1484997807215034/4205"
+        },
+        {
+          "label": "orbit-1e1a2",
+          "square_root": "245115117691047870294/21125"
+        }
+      ],
+      "observed_quotient_rank": 5,
+      "published_parameter": "-5877/1690",
+      "rank_lower_bound_with_retained_points": 22,
+      "short_model_scaling_u": "109850/3",
+      "soluble_quotient_rank_lower_bound": 2,
+      "soluble_quotient_rank_upper_bound": 2,
+      "source_id": "08234-027",
+      "split_cover_count": 2
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "458/2195",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 0,
+      "published_parameter": "-55104/28535",
+      "rank_lower_bound_with_retained_points": 17,
+      "short_model_scaling_u": "62634325/6",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-028",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "-3809/1589",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 0,
+      "published_parameter": "-75641/41314",
+      "rank_lower_bound_with_retained_points": 17,
+      "short_model_scaling_u": "65647946/3",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-029",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "3217/3864",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 1,
+      "published_parameter": "-15109/7728",
+      "rank_lower_bound_with_retained_points": 18,
+      "short_model_scaling_u": "4976832",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-030",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "-833/3139",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 1,
+      "published_parameter": "-12009/6278",
+      "rank_lower_bound_with_retained_points": 18,
+      "short_model_scaling_u": "19706642/3",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-031",
+      "split_cover_count": 0
+    },
+    {
+      "branch_degeneracies": [],
+      "certified_multi_direction_block": false,
+      "compact_parameter": "-46/4089",
+      "finite_characters_may_miss_independence": true,
+      "full_quotient_rank": "UNKNOWN",
+      "generic_rank": 17,
+      "lifted_points": [],
+      "nonzero_square_hits": [],
+      "observed_quotient_rank": 0,
+      "published_parameter": "-102202/53157",
+      "rank_lower_bound_with_retained_points": 17,
+      "short_model_scaling_u": "72452991/2",
+      "soluble_quotient_rank_lower_bound": 0,
+      "soluble_quotient_rank_upper_bound": 0,
+      "source_id": "08234-032",
+      "split_cover_count": 0
+    }
+  ],
+  "schema": "rank-jump.solubility-first.v1",
+  "split_count_distribution": {
+    "0": 27,
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 2
+  },
+  "square_tests": 1251808,
+  "status": "PASS"
+}

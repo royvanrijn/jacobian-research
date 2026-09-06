@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: integral Galois mixing equals common rational Kummer dimension, not rank gain](INTEGRAL_GALOIS_MIXING_IS_NOT_RANK_GAIN.md)
+- [Latest: pre-point square conditions construct four soluble quotient subblocks on completed fibres](SOLUBILITY_FIRST_ON_COMPLETED_FIBRES.md)
+- [Integral Galois mixing equals common rational Kummer dimension, not rank gain](INTEGRAL_GALOIS_MIXING_IS_NOT_RANK_GAIN.md)
 - [Production scalar-twist blocks share an elliptic norm defect; S3 excludes the cyclic genus-two shortcut](SCALAR_TWIST_BLOCKS_ARE_ELLIPTIC_NORM_DEFECTS.md)
 - [S24 singular-fibre action excludes rational grouping and proper rational j-map composition](SINGULAR_FIBRES_HAVE_FULL_SYMMETRIC_GALOIS_ACTION.md)
 - [Parameter covers have capacity for large blocks; the discriminant cover misses the controls](PARAMETER_COVERS_HAVE_ROOM_BUT_NO_BLOCK_CERTIFICATE.md)
@@ -58,6 +59,9 @@ Retrospective analyses with pinned inputs, independent of the active curve searc
 Replay from the repository root, using Python 3.12 and its standard library:
 
 ```sh
+python3 elliptic-curves/rank-jump/completed_cohort_panel.py check
+python3 elliptic-curves/rank-jump/solubility_first.py check
+python3 elliptic-curves/rank-jump/verify_solubility_first.py check
 python3 -m unittest discover -s elliptic-curves/rank-jump -p 'test_*.py'
 python3 elliptic-curves/rank-jump/retrospective.py check
 python3 elliptic-curves/rank-jump/blocks.py check

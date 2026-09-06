@@ -1,0 +1,12 @@
+{
+  "schema": "rank-jump.solubility-first-protocol.v1",
+  "layer": "solubility",
+  "question": "Do the complete generic finite-chart bisection square conditions produce several independent quotient directions together on the completed 08234 controls?",
+  "dictionary": "All 39119 finite-chart records of the existing full 39120-record published-R17 bisection atlas; exclude the sole inverted-chart record explicitly, without looking at hits or ranks. No historical-hit filtering or complexity cutoff.",
+  "parameters": "All 32 initial compact192 observations in frame 08234, transported by t=-(s+50)/26. These are retrospective controls, not a new parameter population.",
+  "limits": {"parameters": 32, "covers": 39119, "exact_square_tests": 1251808, "new_parameter_or_point_searches": 0, "seconds_per_worker": 60},
+  "freeze": "Capture all quadratic equations in a deterministic gzip JSON and parameter-only inputs; capture explicit maps for square hits using equations and parameters alone. Replay square conditions without reading any exceptional points. A subsequent diagnostic may use generic prefixes and retained witness bases.",
+  "endpoint": "Report exact split-cover counts, then a certified lower bound on the rank of their images modulo the marked rank17 subgroup. A block requires at least two independent quotient images; counting soluble covers alone does not certify a block.",
+  "interpretation": "This is a sufficient rational-solubility construction of explicit bisection points, not a complete Selmer solver or an unbiased rank predictor. Zero output only excludes this finite dictionary at that parameter. Quotient fingerprint dependence alone never proves rational dependence.",
+  "checkpoint": "Immutable geometry and selected lift maps before quotient analysis; final immutable result and exact replay. Abort on unmatched curve scaling or membership failure; do not repair inputs silently."
+}
