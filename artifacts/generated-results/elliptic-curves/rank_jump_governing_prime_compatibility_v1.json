@@ -1,0 +1,56 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_governing_cochain_gate_v1.json": "57706fc7f908328ca0febdeafcda1430e25ca082c2aa96537503d9c8314dea4e",
+    "elliptic-curves/rank-jump/fibre_discrimination.py": "f39739a73659bc15132f9169e0525f1723c10931ea6c065732a72bd2b9e4ee82",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_governing_prime_compatibility.py": "77c9677b90858f200705c639347f29e9d9720b73c8816ee045a7ac89d0930cd5"
+  },
+  "boundary": "Finite n=2 algebra independently replayed. General-n abelianization and Chebotarev application are proved in the accompanying note. No actual governing polynomial, selected twist prime, or positive Mordell-Weil implication.",
+  "rows": [
+    {
+      "block_dimension": 10,
+      "conditional_prime_density_of_zero_restricted_CT": {
+        "denominator": 35184372088832,
+        "numerator": 1
+      },
+      "density_type": "Theorem-derived second-descent distribution for a fixed block in congruence-conditioned inert prime twists; not a rational-rank distribution or an empirical count.",
+      "governing_extension_degree_formula_value": 221360928884514619392,
+      "id": "a1-fibration-05:307/206",
+      "pairing_slots": 45
+    },
+    {
+      "block_dimension": 8,
+      "conditional_prime_density_of_zero_restricted_CT": {
+        "denominator": 268435456,
+        "numerator": 1
+      },
+      "density_type": "Theorem-derived second-descent distribution for a fixed block in congruence-conditioned inert prime twists; not a rational-rank distribution or an empirical count.",
+      "governing_extension_degree_formula_value": 105553116266496,
+      "id": "published-R17:-2300/843",
+      "pairing_slots": 28
+    },
+    {
+      "block_dimension": 6,
+      "conditional_prime_density_of_zero_restricted_CT": {
+        "denominator": 32768,
+        "numerator": 1
+      },
+      "density_type": "Theorem-derived second-descent distribution for a fixed block in congruence-conditioned inert prime twists; not a rational-rank distribution or an empirical count.",
+      "governing_extension_degree_formula_value": 805306368,
+      "id": "published-R17:-1561/3133",
+      "pairing_slots": 15
+    }
+  ],
+  "schema": "rank-jump.governing-prime-compatibility.v1",
+  "status": "PASS",
+  "two_class_group": {
+    "abelianization_order": 2,
+    "all_fixed_point_free_lifts_in_commutator_subgroup": true,
+    "commutator_subgroup_order": 96,
+    "governing_values": {
+      "0": 32,
+      "1": 32
+    },
+    "order": 192
+  }
+}

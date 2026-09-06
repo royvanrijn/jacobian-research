@@ -1,0 +1,465 @@
+{
+  "S3_hypotheses": {
+    "H1_dimension": 0,
+    "endomorphism_centralizer": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1
+      ]
+    ],
+    "fixed_point_free_element_indices": [
+      1,
+      5
+    ],
+    "matrices": [
+      [
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        0
+      ]
+    ],
+    "one_coboundaries": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        3,
+        0,
+        2,
+        0,
+        2
+      ],
+      [
+        3,
+        1,
+        0,
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        2,
+        1,
+        1
+      ]
+    ],
+    "one_cocycles": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        2,
+        1,
+        1
+      ],
+      [
+        3,
+        1,
+        0,
+        0,
+        1,
+        3
+      ],
+      [
+        3,
+        3,
+        0,
+        2,
+        0,
+        2
+      ]
+    ],
+    "simple_module": true
+  },
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_quadratic_norm_block_inputs_v1.json": "3ab23351b7218141ed892067e16fee2d261f3f3281250487304d6999bd21d073",
+    "artifacts/generated-results/elliptic-curves/rank_jump_quadratic_norm_block_verification_v1.json": "9277dea763ba6f3f509ea27735b34bf1b29ff2ccf8c378ebf3f3a5982b8ca06e",
+    "artifacts/generated-results/elliptic-curves/rank_jump_quadratic_norm_blocks_v1.json": "4aaf7aa741608e6f1a40c5353d7882ac8aff5b04cf16e1ddd66f9dc9df18a986",
+    "elliptic-curves/rank-jump/fibre_discrimination.py": "f39739a73659bc15132f9169e0525f1723c10931ea6c065732a72bd2b9e4ee82",
+    "elliptic-curves/rank-jump/governing_cochain_gate.py": "e49ebb68f40f9ef8731fec8a86ab88a9f29fa3f2e88c416cbaf9fdf2a71e1913",
+    "elliptic-curves/rank-jump/quadratic_norm_blocks.py": "377621c549bd7c4b414d3ea0dbd4bccdd2903e4c8fdc79c71e0207df90c79414",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "boundary": "Finite group verification plus a written application of an external theorem. This is neither an explicit arithmetic governing extension nor an executed twist experiment. CT vanishing means second-descent lifting, not rational points. Existing original-family generic sections need not remain rational after twisting.",
+  "external_theorem": {
+    "paper_local_sha256": "ec4d757f37167d4c42a43580ddd3c208e6386eb6e16d15cc45fa02d7128835e1",
+    "scope": "Section2 resets A to an arbitrary principally polarized abelian variety; the Section1 Kummer-surface dimension restriction is not used by Section5.2.",
+    "sections": [
+      "2 setup",
+      "Lemma2.8",
+      "Proposition3.3",
+      "Section5.2 Theorem5.8"
+    ],
+    "url": "https://arxiv.org/pdf/2309.02374v2"
+  },
+  "rows": [
+    {
+      "cubic_certificate": {
+        "discriminant": "58233278952179470469977910884664891521759317551367810012247366925450623153073659973656422443531746852274311243477496877561637946672408901489221064192",
+        "discriminant_square": false,
+        "group": "S3",
+        "irreducible_reduction_prime": 29
+      },
+      "existential_twist_conclusion": "Morgan Theorem5.8 permits this form on the retained block while preserving all local Kummer images and the full Selmer group. No twist character or governing number field is computed.",
+      "explicit_twist": "UNKNOWN",
+      "id": "a1-fibration-05:307/206",
+      "original_full_rank": "UNKNOWN",
+      "proposed_CT_rank": 10,
+      "proposed_non_degenerate_CT_form": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "strict_rational_block_dimension": 10
+    },
+    {
+      "cubic_certificate": {
+        "discriminant": "-172283113297743601943718828631687344303971268806990949646121125657202530903251203733030111610869532328753316453928904902540877469272960294840277804269856851157611178356637696000000",
+        "discriminant_square": false,
+        "group": "S3",
+        "irreducible_reduction_prime": 17
+      },
+      "existential_twist_conclusion": "Morgan Theorem5.8 permits this form on the retained block while preserving all local Kummer images and the full Selmer group. No twist character or governing number field is computed.",
+      "explicit_twist": "UNKNOWN",
+      "id": "published-R17:-2300/843",
+      "original_full_rank": "UNKNOWN",
+      "proposed_CT_rank": 8,
+      "proposed_non_degenerate_CT_form": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "strict_rational_block_dimension": 8
+    },
+    {
+      "cubic_certificate": {
+        "discriminant": "2391818063442416077957100298055965862454594076135269013379824980786357722971759544458146128466512119010998452034929663468438583161678359091692913063436171781557055905696055296000000",
+        "discriminant_square": false,
+        "group": "S3",
+        "irreducible_reduction_prime": 17
+      },
+      "existential_twist_conclusion": "Morgan Theorem5.8 permits this form on the retained block while preserving all local Kummer images and the full Selmer group. No twist character or governing number field is computed.",
+      "explicit_twist": "UNKNOWN",
+      "id": "published-R17:-1561/3133",
+      "original_full_rank": "UNKNOWN",
+      "proposed_CT_rank": 6,
+      "proposed_non_degenerate_CT_form": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "strict_rational_block_dimension": 6
+    }
+  ],
+  "schema": "rank-jump.governing-cochain-gate.v1",
+  "status": "PASS",
+  "two_class_model": {
+    "central_extension_order": 192,
+    "central_toggle_changes_value": true,
+    "conjugacy_checks": 12288,
+    "fixed_point_free_lifts": 64,
+    "governing_value_counts": {
+      "0": 32,
+      "1": 32
+    },
+    "omega": "<a,g*b_next>",
+    "psi": "<(g-1)^(-1)*a,b>+z",
+    "semidirect_order": 96,
+    "two_cocycle_checks": 884736
+  }
+}
