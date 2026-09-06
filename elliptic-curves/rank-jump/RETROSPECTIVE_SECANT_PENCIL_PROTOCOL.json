@@ -1,0 +1,11 @@
+{
+  "schema": "rank-jump.retrospective-secant-pencil-protocol.v1",
+  "question": "Does fitting the oblique split-cubic construction to two generic points distinguish high-gain from low-gain production controls?",
+  "cases": [0, 1, 2, 3, 4, 5],
+  "selection": "Exactly the first two marked generic points on each retained curve; no exceptional point enters the construction.",
+  "limits": {"seconds_per_case": 30, "pencils_per_case": 1, "new_point_or_parameter_searches": 0},
+  "construction": "Complete to a short model F. Let L=s*x+b be the selected secant. Set E_t: y^2=F+(t-1)*L^2 and t=n^2. Check the residual cubic splits and the anchor t=n=1 is the original curve.",
+  "gate": "Certify generic ranks only if s is nonzero, F(-b/s) is nonzero, the parent discriminant has degree three and is squarefree and coprime to c4, and its pullback has six simple finite zeros. Use the two selected independent points for the anti-invariant lower bound and the fixed point above L=0 for the invariant direction.",
+  "classification": "retrospective incidence and solubility construction; diagnostic of changing the parent family, not a selector",
+  "boundary": "This explicitly changes the family. Original generic ranks 16/17 and original observed quotients must remain separately reported. No ranking, candidate population or active search file is changed."
+}

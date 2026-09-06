@@ -1,0 +1,88 @@
+{
+  "D7_nonidentity_simple_component_corrections": [
+    "1",
+    "7/4",
+    "7/4"
+  ],
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_secant_pencil_inputs_v1.json": "7387b79c55e15a56c7a181fe3f9c6a0500dd93783f7addece1112e862cedda72",
+    "artifacts/generated-results/elliptic-curves/rank_jump_retrospective_secant_pencils_v1.json": "063d3495d10f2626655e3ad7854fcbff1be790e933e1838e409cf3df50d63d32",
+    "elliptic-curves/rank-jump/verify_retrospective_secant_pencils.py": "0ac59facc4322fabdef5722375809d89728ab3534e56c69b29b48bf542d33aac"
+  },
+  "fixed_section_height_lower_bound": "1/4",
+  "rows": [
+    {
+      "apparent_known_jump_over_fitted_base": 23,
+      "case_index": 0,
+      "exact_polynomial_invariants_verified": true,
+      "fixed_section_is_rational": false,
+      "generic_pair_source_verified": true,
+      "independent_pair_fingerprint_rank": 2,
+      "original_generic_rank": 16,
+      "original_observed_quotient_rank": 9,
+      "original_quotient_contribution": 0,
+      "status": "PASS"
+    },
+    {
+      "apparent_known_jump_over_fitted_base": 14,
+      "case_index": 1,
+      "exact_polynomial_invariants_verified": true,
+      "fixed_section_is_rational": false,
+      "generic_pair_source_verified": true,
+      "independent_pair_fingerprint_rank": 2,
+      "original_generic_rank": 16,
+      "original_observed_quotient_rank": 0,
+      "original_quotient_contribution": 0,
+      "status": "PASS"
+    },
+    {
+      "apparent_known_jump_over_fitted_base": 23,
+      "case_index": 2,
+      "exact_polynomial_invariants_verified": true,
+      "fixed_section_is_rational": false,
+      "generic_pair_source_verified": true,
+      "independent_pair_fingerprint_rank": 2,
+      "original_generic_rank": 16,
+      "original_observed_quotient_rank": 9,
+      "original_quotient_contribution": 0,
+      "status": "PASS"
+    },
+    {
+      "apparent_known_jump_over_fitted_base": 14,
+      "case_index": 3,
+      "exact_polynomial_invariants_verified": true,
+      "fixed_section_is_rational": false,
+      "generic_pair_source_verified": true,
+      "independent_pair_fingerprint_rank": 2,
+      "original_generic_rank": 16,
+      "original_observed_quotient_rank": 0,
+      "original_quotient_contribution": 0,
+      "status": "PASS"
+    },
+    {
+      "apparent_known_jump_over_fitted_base": 22,
+      "case_index": 4,
+      "exact_polynomial_invariants_verified": true,
+      "fixed_section_is_rational": false,
+      "generic_pair_source_verified": true,
+      "independent_pair_fingerprint_rank": 2,
+      "original_generic_rank": 17,
+      "original_observed_quotient_rank": 7,
+      "original_quotient_contribution": 0,
+      "status": "PASS"
+    },
+    {
+      "apparent_known_jump_over_fitted_base": 15,
+      "case_index": 5,
+      "exact_polynomial_invariants_verified": true,
+      "fixed_section_is_rational": false,
+      "generic_pair_source_verified": true,
+      "independent_pair_fingerprint_rank": 2,
+      "original_generic_rank": 17,
+      "original_observed_quotient_rank": 0,
+      "original_quotient_contribution": 0,
+      "status": "PASS"
+    }
+  ],
+  "schema": "rank-jump.retrospective-secant-verification.v1"
+}

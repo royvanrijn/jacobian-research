@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: an oblique shared-cover block survives the horizontal obstruction](OBLIQUE_BLOCKS_BEYOND_THE_HORIZONTAL_OBSTRUCTION.md)
+- [Latest: fitted secant pencils pass all high/low controls but explain no original quotient](SECANT_PENCILS_DO_NOT_EXPLAIN_THE_ORIGINAL_JUMP.md)
+- [An oblique shared-cover block survives the horizontal obstruction](OBLIQUE_BLOCKS_BEYOND_THE_HORIZONTAL_OBSTRUCTION.md)
 - [An equation-only norm obstruction excludes horizontal blocks on A1/MW16-05](HORIZONTAL_BLOCK_OBSTRUCTION_ON_A1.md)
 - [One square condition creates two rational directions, with explicit collapse controls](ONE_SQUARE_CONDITION_TWO_RATIONAL_DIRECTIONS.md)
 - [Generic classes already force the production twist contractions](GENERIC_SUBGROUP_FORCES_TWIST_CONTRACTION.md)
