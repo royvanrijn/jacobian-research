@@ -1,0 +1,9 @@
+{
+  "schema":"rank-jump.small-jacobian-selmer-protocol.v1",
+  "question":"Do the small nonscalar norm-lifting classes survive the ordinary Jacobian Selmer conditions, and are the resulting classes rational?",
+  "curves":"C_s: Z^2=f(s X^2-1), s=+1,-1, using only the retained cubic control and quotient certificates.",
+  "unblinding":"The absence of square roots modulo 8 for the three nontrivial norm-one unit classes was inspected before freezing. This is a confirmatory finite local and Selmer-object calculation, not a new prospective experiment.",
+  "operations":"Check the exact second-quotient torsion label, all 512 residues modulo 8, rational/real Jacobian 2-torsion invariants, local C/D dimensions, full common and summed Selmer dimensions, CT radicals, and rational-image dimensions.",
+  "limits":{"new_curves":0,"point_searches":0,"descents":0,"class_groups":0,"norm_equations":0,"dyadic_residues":512,"Jacobian_2_torsion_classes":16},
+  "endpoint":"Exact Jacobian 2-Selmer and Sha[2] dimensions from the established isogeny Selmer sequence and retained exact elliptic ranks. No higher 2-primary Sha claim and no production-rank inference."
+}

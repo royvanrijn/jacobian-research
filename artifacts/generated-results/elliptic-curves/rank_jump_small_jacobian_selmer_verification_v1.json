@@ -1,0 +1,48 @@
+{
+  "alternating_plane_automorphisms_checked": 6,
+  "analysis_sha256": "17d5fc282dfb41152885d0a53bd93a4f04b4a225ca03943f7b7f03a9547cd9cc",
+  "boundary": "The isogeny Selmer and Kummer diagram proves the Sha exact sequence; finite checks certify its inputs here.",
+  "dyadic_residues_checked": 64,
+  "independent_dyadic_modulus": 4,
+  "rows": [
+    {
+      "Jacobian_Sha_2_dimension": 0,
+      "left_Sha_quotient_dimension": 0,
+      "rational_2_torsion_dimension": 0,
+      "real_2_torsion_dimension": 3,
+      "right_Sha_quotient_dimension": 0,
+      "sextic_ascending": [
+        "1",
+        "0",
+        "11",
+        "0",
+        "-14",
+        "0",
+        "1"
+      ],
+      "sextic_discriminant": "-45178352704",
+      "sign": 1
+    },
+    {
+      "Jacobian_Sha_2_dimension": 4,
+      "left_Sha_quotient_dimension": 2,
+      "rational_2_torsion_dimension": 0,
+      "real_2_torsion_dimension": 2,
+      "right_Sha_quotient_dimension": 2,
+      "sextic_ascending": [
+        "1",
+        "0",
+        "-11",
+        "0",
+        "-14",
+        "0",
+        "-1"
+      ],
+      "sextic_discriminant": "45178352704",
+      "sign": -1
+    }
+  ],
+  "schema": "rank-jump.small-jacobian-selmer-verification.v1",
+  "status": "PASS",
+  "verifier_sha256": "4d99263548be1e342650795073d33c70c728ca645b1b4a58a80cd6b1590f33e6"
+}

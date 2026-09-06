@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: the complete norm-lifting block is Sha on one quotient and rational on its twist](NORM_LIFTS_CAN_BE_ENTIRELY_SHA.md)
+- [Latest: the whole block lifts through Jacobian Selmer and still remains Sha](JACOBIAN_SELMER_LIFTS_CAN_BE_SHA.md)
+- [The complete norm-lifting block is Sha on one quotient and rational on its twist](NORM_LIFTS_CAN_BE_ENTIRELY_SHA.md)
 - [An explicit nonscalar norm-lifting block and its self-gluing explanation](NONSCALAR_CUP_BLOCK_AND_SELF_GLUING.md)
 - [The remaining high-control section must meet zero; an exact height constraint](EQUAL_CLASS_HIGH_HEIGHT_CONSTRAINT.md)
 - [Equal Kummer classes need not create a geometric direction](EQUAL_CLASS_COMPATIBILITY_IS_NOT_SUFFICIENT.md)

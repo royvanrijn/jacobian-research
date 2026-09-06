@@ -1,5 +1,10 @@
 # A complete unramified norm-lifting block can consist entirely of Sha
 
+Follow-up: [the labelled Jacobian Selmer calculation](JACOBIAN_SELMER_LIFTS_CAN_BE_SHA.md)
+closes the intermediate local-condition question. Both strict classes
+admit Selmer lifts in the self-gluing Jacobian, yet every such lift is
+non-rational; that Jacobian has four-dimensional Sha[2].
+
 The two strict classes with explicit unramified norm lifts are **both
 non-rational on the original small curve**. They generate its entire
 `Sha[2]`. On its `-1` twist, the same two classes have explicit independent

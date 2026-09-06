@@ -1,0 +1,213 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_nonscalar_cup_orbit_v1.json": "bc60d03f22d43ade2c2d052266e0f1dcb0f94290df4e48f07502b411ffef0b2c",
+    "artifacts/generated-results/elliptic-curves/rank_jump_small_quotient_block_v1.json": "a277015dabaa62a3ed5efb06b51fa898044ea7dea49960842917ad8e9132ded5",
+    "artifacts/generated-results/elliptic-curves/rank_jump_small_quotient_block_verification_v1.json": "166b1fffa2d8ff575d33f225ea636ad590cf3935748440e453f56d0052b6573f",
+    "elliptic-curves/rank-jump/JACOBIAN_LOCAL_CONDITIONS_AND_CT.md": "df8a0d693a72221c31c431712ca5092ef737a06dc9c86a9298b435807bded16a",
+    "elliptic-curves/rank-jump/RELATIVE_FULL_SELMER_THEOREM.md": "3f31524e4618883ed4272413b2b031228b3b4a8e0859b1efad301aa044d00274",
+    "elliptic-curves/rank-jump/SMALL_JACOBIAN_SELMER_PROTOCOL.json": "928e3070dcfc37e74c4f58280d9188120589a02d6fb7db4fcae01e0567245bba",
+    "elliptic-curves/rank-jump/small_jacobian_selmer.py": "9f826cf83778e8cb490ba2ee84753ec2296312946f3eae6bee9fa584fdabaf24"
+  },
+  "boundary": "Exact for the two fixed genus-two controls. Jacobian Selmer lifts need not be rational; higher Sha and production ranks not inferred.",
+  "dyadic_residue_count": 512,
+  "dyadic_unit_checks": [
+    {
+      "has_square_root_mod8": false,
+      "residue_mod8": [
+        7,
+        7,
+        0
+      ],
+      "unit": [
+        "-1",
+        "-1",
+        "0"
+      ]
+    },
+    {
+      "has_square_root_mod8": false,
+      "residue_mod8": [
+        1,
+        4,
+        7
+      ],
+      "unit": [
+        "1",
+        "12",
+        "-1"
+      ]
+    },
+    {
+      "has_square_root_mod8": false,
+      "residue_mod8": [
+        0,
+        1,
+        0
+      ],
+      "unit": [
+        "0",
+        "1",
+        "0"
+      ]
+    }
+  ],
+  "positive_sign_extra_divisor": {
+    "common_Kummer_class": "[-1-theta]",
+    "divisor": "infinity_plus - (0,1)",
+    "identity": "2j=Phi(-P,R), P=(-1,1), R=(0,1)",
+    "projection_to_E0": [
+      "-1",
+      "-1"
+    ],
+    "projection_to_Eplus": [
+      "0",
+      "1"
+    ]
+  },
+  "rows": [
+    {
+      "Jacobian_2_Selmer_dimension": 4,
+      "Jacobian_Sha_2_dimension": 0,
+      "Jacobian_exact_rank": 4,
+      "common_Selmer_basis": {
+        "0": 1,
+        "1": 2,
+        "2": 4
+      },
+      "difference_CT_matrix": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "difference_radical_dimension": 1,
+      "global_Jacobian_2_torsion_classes": [
+        0
+      ],
+      "index_of_product_rational_image": 2,
+      "local_conditions": [
+        {
+          "Jacobian_local_dimension": 2,
+          "common_dimension": 1,
+          "connecting_rank": 0,
+          "elliptic_local_dimension": 1,
+          "place": "2",
+          "sum_dimension": 1
+        },
+        {
+          "Jacobian_local_dimension": 0,
+          "common_dimension": 0,
+          "connecting_rank": 0,
+          "elliptic_local_dimension": 0,
+          "place": "163",
+          "sum_dimension": 0
+        },
+        {
+          "Jacobian_local_dimension": 1,
+          "common_dimension": 1,
+          "connecting_rank": 1,
+          "elliptic_local_dimension": 1,
+          "place": "infinity",
+          "sum_dimension": 1
+        }
+      ],
+      "pullback_of_standard_second_Selmer_basis": [
+        1,
+        2,
+        4
+      ],
+      "rational_image_dimension_in_common_Selmer": 1,
+      "real_2_torsion_dimension": 3,
+      "second_quotient": "minus-one twist",
+      "sign": 1,
+      "strict_image_dimension_from_Jacobian_Selmer": 0,
+      "strict_image_dimension_from_rational_Jacobian_points": 0,
+      "sum_Selmer_basis": {
+        "0": 1,
+        "1": 2,
+        "2": 4
+      }
+    },
+    {
+      "Jacobian_2_Selmer_dimension": 6,
+      "Jacobian_Sha_2_dimension": 4,
+      "Jacobian_exact_rank": 2,
+      "common_Selmer_basis": {
+        "0": 1,
+        "1": 2
+      },
+      "difference_CT_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "difference_radical_dimension": 2,
+      "global_Jacobian_2_torsion_classes": [
+        0
+      ],
+      "index_of_product_rational_image": 1,
+      "local_conditions": [
+        {
+          "Jacobian_local_dimension": 2,
+          "common_dimension": 0,
+          "connecting_rank": 0,
+          "elliptic_local_dimension": 1,
+          "place": "2",
+          "sum_dimension": 2
+        },
+        {
+          "Jacobian_local_dimension": 0,
+          "common_dimension": 0,
+          "connecting_rank": 0,
+          "elliptic_local_dimension": 0,
+          "place": "163",
+          "sum_dimension": 0
+        },
+        {
+          "Jacobian_local_dimension": 0,
+          "common_dimension": 0,
+          "connecting_rank": 2,
+          "elliptic_local_dimension": 1,
+          "place": "infinity",
+          "sum_dimension": 2
+        }
+      ],
+      "pullback_of_standard_second_Selmer_basis": [
+        1,
+        2,
+        8
+      ],
+      "rational_image_dimension_in_common_Selmer": 0,
+      "real_2_torsion_dimension": 2,
+      "second_quotient": "original curve",
+      "sign": -1,
+      "strict_image_dimension_from_Jacobian_Selmer": 2,
+      "strict_image_dimension_from_rational_Jacobian_points": 0,
+      "sum_Selmer_basis": {
+        "0": 1,
+        "1": 2,
+        "2": 4,
+        "3": 8
+      }
+    }
+  ],
+  "schema": "rank-jump.small-jacobian-selmer.v1",
+  "status": "PASS",
+  "torsion_pullback": "tau(theta)=-1/(theta+1)"
+}
