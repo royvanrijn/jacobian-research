@@ -1,0 +1,872 @@
+{
+  "attempted_point_boxes": 252,
+  "catalogue_snapshot_curves": 593,
+  "claim_boundary": "All21 previously omitted nonsingular endpoints were chosen by exact equations before point searching. Each uses only its own independently certified11to17-point subset to define numerical specialized geometry. All256-mask samples and12-chart rosters were frozen before any point attempt. Trial clouds contain the certified seed plus every returned finite point; they are not an assertion that every generic section or possible rational point was returned. Endpoint equation nonisomorphism is certified separately by the prior exact audit. Finite subgroup lower bounds do not prove exact rank, rank upper bounds, saturation, absence of points, generic-section dependence, sampled-CVP optimality, universal sensitivity or universal novelty. High-rank inventory promotion requires a separate certificate and inventory replay.",
+  "completed_point_boxes": 252,
+  "declared_point_boxes": 252,
+  "previous_address_equations": 528,
+  "rank_lower_bound_counts": {
+    "11": 1,
+    "12": 2,
+    "13": 3,
+    "14": 4,
+    "15": 5,
+    "16": 3,
+    "17": 1,
+    "19": 2
+  },
+  "rows": [
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-16246677039184758350955502512",
+        "828162026581855631636612660697717360854400"
+      ],
+      "endpoint": "zero",
+      "family": "103b2",
+      "id": "103b2-zero",
+      "initial_rank": 16,
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "point_certificates": {
+        "mod2_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_103b2_zero_mod2_v1.json",
+        "mod2_sha256": "5ea2c368bcb81c24eb473ef66177e9c8d076418db759053267c0415bb5bee0a8",
+        "modl_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_103b2_zero_modl_v1.json",
+        "modl_sha256": "288b58aec8d332743bca903b68840c9faf91942e0c9be3c867642527f8fe034c"
+      },
+      "rank_lower_bound": 17,
+      "retained_points": 3783,
+      "status": "COMPLETE_DECLARED_ADAPTIVE_ATTEMPT"
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-31471366818613265994745152",
+        "68978928923913532026300584935841282304"
+      ],
+      "endpoint": "infinity",
+      "family": "103b2",
+      "id": "103b2-infinity",
+      "initial_rank": 11,
+      "odd_modulus_lower_bounds": {
+        "3": 11,
+        "5": 11
+      },
+      "point_certificates": {
+        "mod2_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_103b2_infinity_mod2_v1.json",
+        "mod2_sha256": "fb2a032d8ecfdec12f614fe3870fb213604c995577a6b46b34db89439616b248",
+        "modl_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_103b2_infinity_modl_v1.json",
+        "modl_sha256": "974e448f9020f8b223a7ce1dd213769516d9c82f9ecd85ea34c5cc0dab987f2e"
+      },
+      "rank_lower_bound": 11,
+      "retained_points": 10990,
+      "status": "COMPLETE_DECLARED_ADAPTIVE_ATTEMPT"
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-36768539737115057604112704432",
+        "2691042271028889347560204553539389896451456"
+      ],
+      "endpoint": "zero",
+      "family": "11952",
+      "id": "11952-zero",
+      "initial_rank": 14,
+      "odd_modulus_lower_bounds": {
+        "3": 14,
+        "5": 14
+      },
+      "point_certificates": {
+        "mod2_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_11952_zero_mod2_v1.json",
+        "mod2_sha256": "bc3b7fbbdc6ecf4fda6fd21452d59d32a5ee7aa3667c60c25c3657313815b0f1",
+        "modl_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_11952_zero_modl_v1.json",
+        "modl_sha256": "b949fb1fd604d332c801477233227f11bb46b4dd45389b39a8e0aacdae71a743"
+      },
+      "rank_lower_bound": 14,
+      "retained_points": 3566,
+      "status": "COMPLETE_DECLARED_ADAPTIVE_ATTEMPT"
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-22145333422053921037357572",
+        "39891428797587931120119573433635152964"
+      ],
+      "endpoint": "infinity",
+      "family": "11952",
+      "id": "11952-infinity",
+      "initial_rank": 15,
+      "odd_modulus_lower_bounds": {
+        "3": 15,
+        "5": 15
+      },
+      "point_certificates": {
+        "mod2_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_11952_infinity_mod2_v1.json",
+        "mod2_sha256": "6aaf2e69e889e1c882e135757a648b6c16af0d34cd5f3cf13d07491b68241b65",
+        "modl_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_11952_infinity_modl_v1.json",
+        "modl_sha256": "f1d3fef05fe72317e3240869e32eae3a118e6ea5dfbcd2220e9f44f8f67930ef"
+      },
+      "rank_lower_bound": 15,
+      "retained_points": 4014,
+      "status": "COMPLETE_DECLARED_ADAPTIVE_ATTEMPT"
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-510759823251471708018655152",
+        "4448118676838140148540538463143575762304"
+      ],
+      "endpoint": "zero",
+      "family": "074d9",
+      "id": "074d9-zero",
+      "initial_rank": 15,
+      "odd_modulus_lower_bounds": {
+        "3": 15,
+        "5": 15
+      },
+      "point_certificates": {
+        "mod2_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_074d9_zero_mod2_v1.json",
+        "mod2_sha256": "0b4a2f2e3df62b11535d3f0454801766a5d24e20eef10b12b77b6a1a6e37b186",
+        "modl_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_074d9_zero_modl_v1.json",
+        "modl_sha256": "c1e4fcda4bdb19b2988c256e7be7cee6c319be82ad45967be06a7c9ebc850d43"
+      },
+      "rank_lower_bound": 15,
+      "retained_points": 9907,
+      "status": "COMPLETE_DECLARED_ADAPTIVE_ATTEMPT"
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-493941262627808391522412107",
+        "4222486844829586828194557373920594198790"
+      ],
+      "endpoint": "infinity",
+      "family": "074d9",
+      "id": "074d9-infinity",
+      "initial_rank": 15,
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "point_certificates": {
+        "mod2_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_074d9_infinity_mod2_v1.json",
+        "mod2_sha256": "85e978b50d8fb171b9dd35bf8f3a085926a26304387c93e97425812b9f34da2b",
+        "modl_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_074d9_infinity_modl_v1.json",
+        "modl_sha256": "d4d21a8c2d6df36b942c6a0d5e1449b7ab59250afafadea44e5868099290fde2"
+      },
+      "rank_lower_bound": 16,
+      "retained_points": 4508,
+      "status": "COMPLETE_DECLARED_ADAPTIVE_ATTEMPT"
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-2503289656177911539075863872",
+        "53973772036148194186964670994617458254080"
+      ],
+      "endpoint": "zero",
+      "family": "07ca9",
+      "id": "07ca9-zero",
+      "initial_rank": 14,
+      "odd_modulus_lower_bounds": {
+        "3": 14,
+        "5": 14
+      },
+      "point_certificates": {
+        "mod2_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_07ca9_zero_mod2_v1.json",
+        "mod2_sha256": "aa7784fc983eda367e618c53f83fd8bbe81daa3e9876532cac5a042207da84d6",
+        "modl_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_07ca9_zero_modl_v1.json",
+        "modl_sha256": "c0738aa08eb56fa510284d12b6985b637102e75436d021df09ad6adbcf2aa31e"
+      },
+      "rank_lower_bound": 14,
+      "retained_points": 3227,
+      "status": "COMPLETE_DECLARED_ADAPTIVE_ATTEMPT"
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-925676819510490460130722992",
+        "10425590982426162912736342066059172823424"
+      ],
+      "endpoint": "infinity",
+      "family": "07ca9",
+      "id": "07ca9-infinity",
+      "initial_rank": 13,
+      "odd_modulus_lower_bounds": {
+        "3": 13,
+        "5": 13
+      },
+      "point_certificates": {
+        "mod2_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_07ca9_infinity_mod2_v1.json",
+        "mod2_sha256": "ce0e123a78441b5f67ed1920268e904bf494eb529bd7a8ca6c710d5e6d5a624d",
+        "modl_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_07ca9_infinity_modl_v1.json",
+        "modl_sha256": "4932633f0c18546483d9848dffe8ececea08a04f14ab65682b3144f68f8780ea"
+      },
+      "rank_lower_bound": 13,
+      "retained_points": 11102,
+      "status": "COMPLETE_DECLARED_ADAPTIVE_ATTEMPT"
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-14694892687316671897253041859892912",
+        "692533692485607425133292280644957255277577804749184"
+      ],
+      "endpoint": "zero",
+      "family": "08234",
+      "id": "08234-zero",
+      "initial_rank": 17,
+      "odd_modulus_lower_bounds": {
+        "3": 19,
+        "5": 19
+      },
+      "point_certificates": {
+        "mod2_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_08234_zero_mod2_v1.json",
+        "mod2_sha256": "b97f3d7c86dddc40dc61b430253874bb25975dbf9b54199872ebd8a9d30b5a72",
+        "modl_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_08234_zero_modl_v1.json",
+        "modl_sha256": "90823b6d93a4f449c4aff8d41a2912fd074a4267f14ba707b05062ffd22c52c1"
+      },
+      "rank_lower_bound": 19,
+      "retained_points": 2085,
+      "status": "COMPLETE_DECLARED_ADAPTIVE_ATTEMPT"
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-18169301943802843947",
+        "22949489525163571246509642150"
+      ],
+      "endpoint": "infinity",
+      "family": "08234",
+      "id": "08234-infinity",
+      "initial_rank": 12,
+      "odd_modulus_lower_bounds": {
+        "3": 12,
+        "5": 12
+      },
+      "point_certificates": {
+        "mod2_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_08234_infinity_mod2_v1.json",
+        "mod2_sha256": "30051cfe414c97e27e0b25c10c387014cc4b78f8f7695472679796fed4015f1b",
+        "modl_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_08234_infinity_modl_v1.json",
+        "modl_sha256": "3feb50124b3f11dc4cef8bd6a40547e42db297b823d8576202fcab7cf97c14f4"
+      },
+      "rank_lower_bound": 12,
+      "retained_points": 12120,
+      "status": "COMPLETE_DECLARED_ADAPTIVE_ATTEMPT"
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-57307435407705071543098034907",
+        "5666326935792718012997599225963519699199094"
+      ],
+      "endpoint": "zero",
+      "family": "08f72",
+      "id": "08f72-zero",
+      "initial_rank": 15,
+      "odd_modulus_lower_bounds": {
+        "3": 15,
+        "5": 15
+      },
+      "point_certificates": {
+        "mod2_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_08f72_zero_mod2_v1.json",
+        "mod2_sha256": "f09bc112d36531ca137aa5faab8a7caf51ddac49340da79881cbe08d824d6baa",
+        "modl_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_08f72_zero_modl_v1.json",
+        "modl_sha256": "1505edb239010b0f4dd667d67e96890b50acaf10ec18edbe23c05801233bafee"
+      },
+      "rank_lower_bound": 15,
+      "retained_points": 3598,
+      "status": "COMPLETE_DECLARED_ADAPTIVE_ATTEMPT"
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-1104677292279885059792475",
+        "447183576830461907646559377605820150"
+      ],
+      "endpoint": "infinity",
+      "family": "08f72",
+      "id": "08f72-infinity",
+      "initial_rank": 13,
+      "odd_modulus_lower_bounds": {
+        "3": 13,
+        "5": 13
+      },
+      "point_certificates": {
+        "mod2_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_08f72_infinity_mod2_v1.json",
+        "mod2_sha256": "9ae7caecda31bef1c301f4cd5e16c51a59090d6b1e536b349198f511170b7c51",
+        "modl_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_08f72_infinity_modl_v1.json",
+        "modl_sha256": "b647e1eda27abe0f10142ed2a299a69b657dded488808137a32eb9d1eab1c42a"
+      },
+      "rank_lower_bound": 13,
+      "retained_points": 7368,
+      "status": "COMPLETE_DECLARED_ADAPTIVE_ATTEMPT"
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-1069269137420864766492219867",
+        "13323772032528278917859651614229674750326"
+      ],
+      "endpoint": "zero",
+      "family": "a1-fibration-01",
+      "id": "a1-fibration-01-zero",
+      "initial_rank": 15,
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "point_certificates": {
+        "mod2_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_01_zero_mod2_v1.json",
+        "mod2_sha256": "35c4b4477d613e0ad6b7a8b9423fc133143a8a7c52bae7affb2fc0925a452561",
+        "modl_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_01_zero_modl_v1.json",
+        "modl_sha256": "4f9885731d938e425750a45585356dd5431b84bb5729a101fe2cf814f19bdde4"
+      },
+      "rank_lower_bound": 16,
+      "retained_points": 3585,
+      "status": "COMPLETE_DECLARED_ADAPTIVE_ATTEMPT"
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-619174665916659324134586027",
+        "5906818994753506007930926663699161413670"
+      ],
+      "endpoint": "infinity",
+      "family": "a1-fibration-01",
+      "id": "a1-fibration-01-infinity",
+      "initial_rank": 14,
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "point_certificates": {
+        "mod2_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_01_infinity_mod2_v1.json",
+        "mod2_sha256": "cc141c5653af10025a1836fdc75348eb7684038a881dfecb39fc6f4752d23ac5",
+        "modl_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_01_infinity_modl_v1.json",
+        "modl_sha256": "1fae6b4164b43b0557c917a81cb25155c7384893d2af07b79b13f9c3ecd01611"
+      },
+      "rank_lower_bound": 16,
+      "retained_points": 6499,
+      "status": "COMPLETE_DECLARED_ADAPTIVE_ATTEMPT"
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-2761427757186150299018018352",
+        "57675811899720315933829517283055619508096"
+      ],
+      "endpoint": "zero",
+      "family": "a1-fibration-02",
+      "id": "a1-fibration-02-zero",
+      "initial_rank": 13,
+      "odd_modulus_lower_bounds": {
+        "3": 13,
+        "5": 13
+      },
+      "point_certificates": {
+        "mod2_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_02_zero_mod2_v1.json",
+        "mod2_sha256": "2bacc7ca629030640e4ab60ccf90d35b95f6aa83126a69bd3c2470591c0818ea",
+        "modl_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_02_zero_modl_v1.json",
+        "modl_sha256": "969d9efbe0f9699186571ab3abab3e097342772ce7e1cbdc67c0a4dff1e2c25f"
+      },
+      "rank_lower_bound": 13,
+      "retained_points": 2415,
+      "status": "COMPLETE_DECLARED_ADAPTIVE_ATTEMPT"
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-44609387755961041273537200",
+        "115195426910786903984996848305048201600"
+      ],
+      "endpoint": "infinity",
+      "family": "a1-fibration-02",
+      "id": "a1-fibration-02-infinity",
+      "initial_rank": 15,
+      "odd_modulus_lower_bounds": {
+        "3": 15,
+        "5": 15
+      },
+      "point_certificates": {
+        "mod2_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_02_infinity_mod2_v1.json",
+        "mod2_sha256": "f1ab81fd56e46e8eb61df7f744374354e6c3b6a898ac8c2cb1d5c7fbc2139f19",
+        "modl_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_02_infinity_modl_v1.json",
+        "modl_sha256": "11bd8b5e457eb1e7257e8eaaa7218be368b29e3df3d88c64a82960eb108a236b"
+      },
+      "rank_lower_bound": 15,
+      "retained_points": 6794,
+      "status": "COMPLETE_DECLARED_ADAPTIVE_ATTEMPT"
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-2573421533297844052097046674557360107",
+        "1577205834210190551368307929185097986846043963333726694"
+      ],
+      "endpoint": "zero",
+      "family": "a1-fibration-03",
+      "id": "a1-fibration-03-zero",
+      "initial_rank": 16,
+      "odd_modulus_lower_bounds": {
+        "3": 19,
+        "5": 19
+      },
+      "point_certificates": {
+        "mod2_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_03_zero_mod2_v1.json",
+        "mod2_sha256": "693ed23b45918a033667e36249dc130c391ecf0e4a1a86b0979cfecd2c76b654",
+        "modl_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_03_zero_modl_v1.json",
+        "modl_sha256": "3a87107f20649b22460f1301874ef072f321f57219b5007465a89c327aab47eb"
+      },
+      "rank_lower_bound": 19,
+      "retained_points": 1919,
+      "status": "COMPLETE_DECLARED_ADAPTIVE_ATTEMPT"
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-213661341625219213635850994352",
+        "38693416077016254934259539133384964995819904"
+      ],
+      "endpoint": "zero",
+      "family": "a1-fibration-04",
+      "id": "a1-fibration-04-zero",
+      "initial_rank": 14,
+      "odd_modulus_lower_bounds": {
+        "3": 15,
+        "5": 15
+      },
+      "point_certificates": {
+        "mod2_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_04_zero_mod2_v1.json",
+        "mod2_sha256": "d8c8e4684ad751a67d540453921b6aaf008a88d9b499a02c9799ee559fe672d1",
+        "modl_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_04_zero_modl_v1.json",
+        "modl_sha256": "1ce82d7ffda598a4fe4b0b3f027ba11db22e12019dc9436ba506ab88cbbd6054"
+      },
+      "rank_lower_bound": 15,
+      "retained_points": 4287,
+      "status": "COMPLETE_DECLARED_ADAPTIVE_ATTEMPT"
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-1375113923772993783764892",
+        "630890437850574190514112021301653876"
+      ],
+      "endpoint": "infinity",
+      "family": "a1-fibration-04",
+      "id": "a1-fibration-04-infinity",
+      "initial_rank": 12,
+      "odd_modulus_lower_bounds": {
+        "3": 12,
+        "5": 12
+      },
+      "point_certificates": {
+        "mod2_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_04_infinity_mod2_v1.json",
+        "mod2_sha256": "4d364dd01ed7443e1ab71731de3c0aaf8993d9b52d74e501e77be5eb65896e10",
+        "modl_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_04_infinity_modl_v1.json",
+        "modl_sha256": "30fed1638dbb1edaa0c06372603b838dd028ae3649c14ddf6d8973c2fcfd5fa5"
+      },
+      "rank_lower_bound": 12,
+      "retained_points": 5275,
+      "status": "COMPLETE_DECLARED_ADAPTIVE_ATTEMPT"
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-1630210236679598493378551652",
+        "26417255451099454816960325568901505048196"
+      ],
+      "endpoint": "zero",
+      "family": "a1-fibration-05",
+      "id": "a1-fibration-05-zero",
+      "initial_rank": 13,
+      "odd_modulus_lower_bounds": {
+        "3": 14,
+        "5": 14
+      },
+      "point_certificates": {
+        "mod2_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_05_zero_mod2_v1.json",
+        "mod2_sha256": "cdb19b2ef7451767353e154c7ce6eb1eff238493d3134f3769ffcbe66fed082b",
+        "modl_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_05_zero_modl_v1.json",
+        "modl_sha256": "bf9512233122bd314db0687b932fca9fb79c15f54bf67d1babad71caf9c7518d"
+      },
+      "rank_lower_bound": 14,
+      "retained_points": 1673,
+      "status": "COMPLETE_DECLARED_ADAPTIVE_ATTEMPT"
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-304279831071239129220423312",
+        "2142250548414279083556248056240617431616"
+      ],
+      "endpoint": "infinity",
+      "family": "a1-fibration-05",
+      "id": "a1-fibration-05-infinity",
+      "initial_rank": 14,
+      "odd_modulus_lower_bounds": {
+        "3": 14,
+        "5": 14
+      },
+      "point_certificates": {
+        "mod2_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_05_infinity_mod2_v1.json",
+        "mod2_sha256": "452bdc8f61a51e9587acd9d4efc0307961f809ad0f1860d65dd08fe625f4e3bf",
+        "modl_certificate": "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_05_infinity_modl_v1.json",
+        "modl_sha256": "c5bf1650322cab1a29993458b89bbd2b6807366a6e55522636228cdc7e663f33"
+      },
+      "rank_lower_bound": 14,
+      "retained_points": 2814,
+      "status": "COMPLETE_DECLARED_ADAPTIVE_ATTEMPT"
+    }
+  ],
+  "schema": "elliptic-curves.endpoint-specialized-trial.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_atlas_endpoints_v2.json": "e606bd71b14143643cdf28c5e8c5862d14681571616791c13521ed2ee18f4f6e",
+    "artifacts/generated-results/elliptic-curves/compact_endpoint_summary_v1.json": "dcc0b168e974dfb9a8b4b52c97da144034a2f0b13ce5087fa14e21dc7ff15259",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_074d9_infinity_mod2_v1.json": "85e978b50d8fb171b9dd35bf8f3a085926a26304387c93e97425812b9f34da2b",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_074d9_infinity_modl_v1.json": "d4d21a8c2d6df36b942c6a0d5e1449b7ab59250afafadea44e5868099290fde2",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_074d9_zero_mod2_v1.json": "0b4a2f2e3df62b11535d3f0454801766a5d24e20eef10b12b77b6a1a6e37b186",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_074d9_zero_modl_v1.json": "c1e4fcda4bdb19b2988c256e7be7cee6c319be82ad45967be06a7c9ebc850d43",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_07ca9_infinity_mod2_v1.json": "ce0e123a78441b5f67ed1920268e904bf494eb529bd7a8ca6c710d5e6d5a624d",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_07ca9_infinity_modl_v1.json": "4932633f0c18546483d9848dffe8ececea08a04f14ab65682b3144f68f8780ea",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_07ca9_zero_mod2_v1.json": "aa7784fc983eda367e618c53f83fd8bbe81daa3e9876532cac5a042207da84d6",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_07ca9_zero_modl_v1.json": "c0738aa08eb56fa510284d12b6985b637102e75436d021df09ad6adbcf2aa31e",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_08234_infinity_mod2_v1.json": "30051cfe414c97e27e0b25c10c387014cc4b78f8f7695472679796fed4015f1b",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_08234_infinity_modl_v1.json": "3feb50124b3f11dc4cef8bd6a40547e42db297b823d8576202fcab7cf97c14f4",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_08234_zero_mod2_v1.json": "b97f3d7c86dddc40dc61b430253874bb25975dbf9b54199872ebd8a9d30b5a72",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_08234_zero_modl_v1.json": "90823b6d93a4f449c4aff8d41a2912fd074a4267f14ba707b05062ffd22c52c1",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_08f72_infinity_mod2_v1.json": "9ae7caecda31bef1c301f4cd5e16c51a59090d6b1e536b349198f511170b7c51",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_08f72_infinity_modl_v1.json": "b647e1eda27abe0f10142ed2a299a69b657dded488808137a32eb9d1eab1c42a",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_08f72_zero_mod2_v1.json": "f09bc112d36531ca137aa5faab8a7caf51ddac49340da79881cbe08d824d6baa",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_08f72_zero_modl_v1.json": "1505edb239010b0f4dd667d67e96890b50acaf10ec18edbe23c05801233bafee",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_103b2_infinity_mod2_v1.json": "fb2a032d8ecfdec12f614fe3870fb213604c995577a6b46b34db89439616b248",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_103b2_infinity_modl_v1.json": "974e448f9020f8b223a7ce1dd213769516d9c82f9ecd85ea34c5cc0dab987f2e",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_103b2_zero_mod2_v1.json": "5ea2c368bcb81c24eb473ef66177e9c8d076418db759053267c0415bb5bee0a8",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_103b2_zero_modl_v1.json": "288b58aec8d332743bca903b68840c9faf91942e0c9be3c867642527f8fe034c",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_11952_infinity_mod2_v1.json": "6aaf2e69e889e1c882e135757a648b6c16af0d34cd5f3cf13d07491b68241b65",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_11952_infinity_modl_v1.json": "f1d3fef05fe72317e3240869e32eae3a118e6ea5dfbcd2220e9f44f8f67930ef",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_11952_zero_mod2_v1.json": "bc3b7fbbdc6ecf4fda6fd21452d59d32a5ee7aa3667c60c25c3657313815b0f1",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_11952_zero_modl_v1.json": "b949fb1fd604d332c801477233227f11bb46b4dd45389b39a8e0aacdae71a743",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_01_infinity_mod2_v1.json": "cc141c5653af10025a1836fdc75348eb7684038a881dfecb39fc6f4752d23ac5",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_01_infinity_modl_v1.json": "1fae6b4164b43b0557c917a81cb25155c7384893d2af07b79b13f9c3ecd01611",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_01_zero_mod2_v1.json": "35c4b4477d613e0ad6b7a8b9423fc133143a8a7c52bae7affb2fc0925a452561",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_01_zero_modl_v1.json": "4f9885731d938e425750a45585356dd5431b84bb5729a101fe2cf814f19bdde4",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_02_infinity_mod2_v1.json": "f1ab81fd56e46e8eb61df7f744374354e6c3b6a898ac8c2cb1d5c7fbc2139f19",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_02_infinity_modl_v1.json": "11bd8b5e457eb1e7257e8eaaa7218be368b29e3df3d88c64a82960eb108a236b",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_02_zero_mod2_v1.json": "2bacc7ca629030640e4ab60ccf90d35b95f6aa83126a69bd3c2470591c0818ea",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_02_zero_modl_v1.json": "969d9efbe0f9699186571ab3abab3e097342772ce7e1cbdc67c0a4dff1e2c25f",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_03_zero_mod2_v1.json": "693ed23b45918a033667e36249dc130c391ecf0e4a1a86b0979cfecd2c76b654",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_03_zero_modl_v1.json": "3a87107f20649b22460f1301874ef072f321f57219b5007465a89c327aab47eb",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_04_infinity_mod2_v1.json": "4d364dd01ed7443e1ab71731de3c0aaf8993d9b52d74e501e77be5eb65896e10",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_04_infinity_modl_v1.json": "30fed1638dbb1edaa0c06372603b838dd028ae3649c14ddf6d8973c2fcfd5fa5",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_04_zero_mod2_v1.json": "d8c8e4684ad751a67d540453921b6aaf008a88d9b499a02c9799ee559fe672d1",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_04_zero_modl_v1.json": "1ce82d7ffda598a4fe4b0b3f027ba11db22e12019dc9436ba506ab88cbbd6054",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_05_infinity_mod2_v1.json": "452bdc8f61a51e9587acd9d4efc0307961f809ad0f1860d65dd08fe625f4e3bf",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_05_infinity_modl_v1.json": "c5bf1650322cab1a29993458b89bbd2b6807366a6e55522636228cdc7e663f33",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_05_zero_mod2_v1.json": "cdb19b2ef7451767353e154c7ce6eb1eff238493d3134f3769ffcbe66fed082b",
+    "artifacts/generated-results/elliptic-curves/endpoint_specialized_a1_fibration_05_zero_modl_v1.json": "bf9512233122bd314db0687b932fca9fb79c15f54bf67d1babad71caf9c7518d",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/074d9-infinity/maps.json": "9dbe9097e9962905cca6aad6a37ffb28c6e0e687f8cec6210e764ceaf0709b29",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/074d9-infinity/maps.supervisor.json": "fed08ee6a80ac0c8f1a56c6619c32eec14203c5f5e3b04957c4c541092720bdb",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/074d9-infinity/mod2-build.supervisor.json": "fa88e3773e85627ea5722e4674d99070f6603d6b7cc8cef9caf3d0bac11b35df",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/074d9-infinity/mod2-check.supervisor.json": "87bafe7acb92d347cca7c72ecc33ac367edcdef298b2eb6775207053cdacd1d6",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/074d9-infinity/modl-build.supervisor.json": "9f9fb583d98c064cff47dfcf9230f812d71c301759e54944694c712526ded11c",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/074d9-infinity/modl-check.supervisor.json": "972f6c7a8ec7260478ba463104859b9dcbb13fdd0d1edca98548fd44f3b65c09",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/074d9-infinity/result.json": "213b16d86c5055b6431ffb357b63d9b3eea674a4a82cd753dcb6a2d7a8f86c02",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/074d9-infinity/worker.supervisor.json": "ed2ab38286ad98f3cbb1236e26f8526d0683661bf9c630ef1a513c5ad86e06bc",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/074d9-zero/maps.json": "7f0b4d882849616873b263bda1a52d60e030d40c1f001ec47ef0a116f0dfffab",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/074d9-zero/maps.supervisor.json": "7f3fe651cdacf9939841cdfceee5eb72f93c2ffd21fa9c02f0d930896504cb19",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/074d9-zero/mod2-build.supervisor.json": "a16f9db842d4cf6d780b8e24d71a23075ea0e0408f98f13304da388e93da8901",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/074d9-zero/mod2-check.supervisor.json": "d95781c27b94be5772da845bef617686d3dd90566832f9df6c26e72466afff48",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/074d9-zero/modl-build.supervisor.json": "4d97775aa2ac131d87b863c56d237dca9d0144098c36837c853ad6b98018bf28",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/074d9-zero/modl-check.supervisor.json": "15855447023ee77c93e0d0c158da0c9d824261026a3369ae7ff62bf661774ef6",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/074d9-zero/result.json": "ed0a9f4256f627815a65fcc320731ed40d102dc2d3a259ec0d983902c850a017",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/074d9-zero/worker.supervisor.json": "f632364537733ef9ea7f3466df2d0b936bcfc5d6735eda92e541a56cd7320cac",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/07ca9-infinity/maps.json": "54aa7be21bb7a7cb160c83d7652e9e4075677f4278f722430ab0abea654a1b10",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/07ca9-infinity/maps.supervisor.json": "0badba748266434fe23593da6039d76b2d1d15e7431d27e5f4ff1a1671465005",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/07ca9-infinity/mod2-build.supervisor.json": "455907f00efa6e7014ab299ab04765ca47e576c9ace445d985025b9818c6cd24",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/07ca9-infinity/mod2-check.supervisor.json": "920065d191a5fd759a9f53e7ae587269f82d76d53df8181c04110e98d48d51b9",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/07ca9-infinity/modl-build.supervisor.json": "45be9cdc88db39d212d0bcf80f8dfc853d066b3b778eb3d5213432cc9c9aa3cd",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/07ca9-infinity/modl-check.supervisor.json": "8bb1794d25bedc27f11a5929ca8c6aa648008526046bb1f25f0321f6a6784a00",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/07ca9-infinity/result.json": "dbbc67cbaf89cb567dad25f74e5753c1d39f51aa8ccd6c99109bdf8d38ab066f",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/07ca9-infinity/worker.supervisor.json": "19773d75efb448fe35877b80a2aa6ce24b6731400bb90731a3d4a17aa3a2bb7c",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/07ca9-zero/maps.json": "a2d0916e0faf3d4d7f70dd2e203602abd2d8924c207503e7aeee8182d4ae80ed",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/07ca9-zero/maps.supervisor.json": "f5f5a6c8f33e06d3cf9d5f6933b290a6e1d4089771a45aa88ae502d9c5fc719b",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/07ca9-zero/mod2-build.supervisor.json": "e059328fd0e92283159c27c88063bd974256fd5edd5159f4ef46ad8b166313e4",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/07ca9-zero/mod2-check.supervisor.json": "d1805e727ae9e495aa86d1252486fa668e35481166ec8a8b3a9b3b066712a2c8",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/07ca9-zero/modl-build.supervisor.json": "66cad808dc6e954554e76b80901c010484ad9c3418c720d10f7eedcd0cf8055d",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/07ca9-zero/modl-check.supervisor.json": "03b958c6a3c508c7bfab279d17e757b31bb9864cd2787ae473979d4324256b70",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/07ca9-zero/result.json": "a4473ff06c1612ddb004a66bdb4cb71b145ce65770e37ce8278038b420df6b8f",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/07ca9-zero/worker.supervisor.json": "9ad1fb12e5f708928ab3fe625205a92d6794a18b1014a94e69b91b7278c1be04",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08234-infinity/maps.json": "731f72448a27e44b1a6ed6da4a76ad05ef3f07ab071ae3a5b0fb51d6b8d90f10",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08234-infinity/maps.supervisor.json": "30ad581f03c8bf9d7e766c561067cafb50823d99eb708fb3fce57ab44e1b88ef",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08234-infinity/mod2-build.supervisor.json": "00c7c516d9b1c41cee2f7e3a594fae76901904a245245c9020197462a6cefd1a",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08234-infinity/mod2-check.supervisor.json": "7ff39b154ba930de66f8433dc1837a220198d1d42010da1094773f6341049a5d",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08234-infinity/modl-build.supervisor.json": "9b7c7fde42f59c2c82f980d1e36ba918b5baa38ba20cc9748b4c41dc5c899692",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08234-infinity/modl-check.supervisor.json": "377b063ae3b1a448c172bd77a5d1fd72e723b4aca43f9761989ffbe32841f9ac",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08234-infinity/result.json": "91e1f8f52d9fdac3d81e966ee519e4e1422c466f5e759caa4a3a0973f2fc4a5f",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08234-infinity/worker.supervisor.json": "2d1d084c140dd330e2af246975176ce2aa649b7b912a764fa40080ee10fca415",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08234-zero/maps.json": "bd9e66617a5c83971ed089c824f6da925c40a84ca833aa96faf0b7b6fedce00b",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08234-zero/maps.supervisor.json": "fa1c981988a69b85f877fe6ad01deda65fba1f768bfafbd0bae78f835b7ef503",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08234-zero/mod2-build.supervisor.json": "cb8fb89a3229b67eb3e002107fb9552bb787ec6354142cc3995ee9e36f00af9b",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08234-zero/mod2-check.supervisor.json": "1bfcdfbe8f5e2fe4aea224bb0e58732ba646296941fc7925a9a2efea26f5d3f3",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08234-zero/modl-build.supervisor.json": "1e6bc2e6c056ed99525a8d1f9fd62969f5143a680430ed7648eac084bed807a3",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08234-zero/modl-check.supervisor.json": "741df8266a10df5b1e854a5fdbf0212174f7d7ddaa36c2b7adc752f1b9c2fc37",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08234-zero/result.json": "cc2dbeb4e3227c75e0a69c148cf3d9f8817018d2b5bbf89cb76d619a5287b79e",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08234-zero/worker.supervisor.json": "cc540482f83f69b4c15fbe3b22dbfe1c58ab352fcdde2d096287bb543e80c3b5",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08f72-infinity/maps.json": "b0cd8159127f46c61e0ca1a2122c09390dd55bea9048d94e662276ab5bd3305a",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08f72-infinity/maps.supervisor.json": "aff15b8e15bddedc22ea33e12414476956014d1bf6fbbd022fae15d9706140ea",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08f72-infinity/mod2-build.supervisor.json": "e85521f48af8cd4746206f1123ee1fe27f54435d2ba91650f10a665ece0301ad",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08f72-infinity/mod2-check.supervisor.json": "09714f78471e4cc9f3813bf7507eb271047f8b082ffd981fbfbc1579e332e0c1",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08f72-infinity/modl-build.supervisor.json": "9e43079e407fb1c2477c2956e8c759446a49511026ba98939563c5a77df7224e",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08f72-infinity/modl-check.supervisor.json": "fb44669eb566fc1eea2c5ba27c3c6d8dae90492330cb609ec063c31850ee868b",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08f72-infinity/result.json": "cdfda8e3e229a92adae791ae273336923a39c602932bc44d98ad77bd3ccc695a",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08f72-infinity/worker.supervisor.json": "520717a82dc22d2bd2d60954f73b3a631e06d30228e9101b842b498827706f27",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08f72-zero/maps.json": "e21f01dab9e8f5eb7688b40c50ddcc9156b898ad670e6d0fc0997111b0fbb045",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08f72-zero/maps.supervisor.json": "9afdcbb7f816fdc583e9c51e0b8824aa40cde1d904095ccf295b41cbaa426af0",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08f72-zero/mod2-build.supervisor.json": "916e567dd9c4afb137ef9cd75fd9f4a8db4f404615ea5d90ed9a83cc72bc3a5f",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08f72-zero/mod2-check.supervisor.json": "dfa78defb6a046433b7fa8a6bdb032b42f7fe8e8094093999b6f2548c2c19f2e",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08f72-zero/modl-build.supervisor.json": "4cc6576845e9a25c0a8137b5ecb9f071edceb3287841da72a5252e138d4d021c",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08f72-zero/modl-check.supervisor.json": "b29c65345097c0b5692bdde4668336ca501ea72fbda148ccab59766f6ebf58fa",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08f72-zero/result.json": "6a461538428a83b11f92472cff89eabe0ad50c2509b58adcc553ea3411e34ebe",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/08f72-zero/worker.supervisor.json": "f36030831af773898f0d6d7d1512223a25aa0b18abbf79adc612fe2f9a94f2cb",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/103b2-infinity/maps.json": "121c79749c2b443ffe69fe59f8f36d088f4bd9ba3d17d12d186a37c930c8afce",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/103b2-infinity/maps.supervisor.json": "2ea55d235a7c9e27e6aa6c0faca6f6ad1a364a7772150b38524ddd21e37d4be3",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/103b2-infinity/mod2-build.supervisor.json": "793aa1ba06f0b58be74a75530d4d355356c1d90caa24329bb822b3507e1cb973",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/103b2-infinity/mod2-check.supervisor.json": "772dceab4b3124377ad093cae44ce3efde7906426f34ba6e54177aacfc160a9e",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/103b2-infinity/modl-build.supervisor.json": "2b998fa7667e7e78bbd8413a8f0de5cc50a4d2578d6e4b0ecca414e90ce14c03",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/103b2-infinity/modl-check.supervisor.json": "49430932807a8b15c9d140a6597083d363a74c7afa326c65ccb7f576637376af",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/103b2-infinity/result.json": "f95447da9c0edd845eb47a6ec6d3245adca3033193aa8db527f1aa879a4fc6d2",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/103b2-infinity/worker.supervisor.json": "c5ef75e19b188a25a91ebc21ecd682ce58d3a5fe5080798e23977441797f533e",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/103b2-zero/maps.json": "bb90e76232c9d6d37cce625d09412008867506f3848c03cb5703e7ca8a6132a4",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/103b2-zero/maps.supervisor.json": "b479a151290c2d34a8c6fbee2aa5587c6cac5c3cd86cfd6acaabf3806183685a",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/103b2-zero/mod2-build.supervisor.json": "cf66ac7d39b714fefa4ccffaf69a5491d00ee3a1487abf66e7b883d0c1d94428",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/103b2-zero/mod2-check.supervisor.json": "d6d3b00fe28e5d6112a99c8b022ee3e8b5e6870b93cbe597f222474eda2e8ee4",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/103b2-zero/modl-build.supervisor.json": "369c306e3b8d01aac68f6c238d9ebc19366f034b989d158a08406b42067ff710",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/103b2-zero/modl-check.supervisor.json": "3b4dea870edc66970af08bc1eec2b1e76ea83d48b3c56fedb440a0c1558db972",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/103b2-zero/replay.supervisor.json": "88d931d8333a6feae495d87dbcb24fcb9765124f4ec70b166407059581fde54f",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/103b2-zero/result.json": "ce5476d95bee21644d077a7a7f39eaac118e2ef28b2aff815a1f1858823b21ce",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/103b2-zero/worker.supervisor.json": "abb0b96a80c809d3bc70cecf2182bf63688cd5c91c5a240e2d50d323b064b99d",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/11952-infinity/maps.json": "20273301c40810cb0458dc891a05091abc218885ea620b81e667a20cd6f86ebf",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/11952-infinity/maps.supervisor.json": "6e7560f6c56914fd54907691279e65f2952e6f0d79d2f7ef9fa52b13a36cc724",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/11952-infinity/mod2-build.supervisor.json": "2934f6f7ab2a9d6a5357d85d790852d025937f5411caa70068b79371d4163901",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/11952-infinity/mod2-check.supervisor.json": "e5bfd98f3b636af292e219707df8e749614547d50d85dbc9f8c66b0480f70b5c",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/11952-infinity/modl-build.supervisor.json": "dcee2e7934a1dbe89265e1cf8d432289805a1415b97c832614bb2abe77651966",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/11952-infinity/modl-check.supervisor.json": "a7d9f085f0bddfc1a482846f4a67585fea3e68ab66e3ff76888367dc7f089344",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/11952-infinity/result.json": "4c047b71258b524952ee0bdc3c3dff77b84d239219d946ac6971a1d97b0ab28b",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/11952-infinity/worker.supervisor.json": "7ef2f9acf03d2f3ba6134a2460186c8f61233c7e2f97da542de394a4fad193a6",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/11952-zero/maps.json": "8550ca73643f24f22e8bc7739527ee9e6c8ade309c877e0ea0d551cd0efdb89f",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/11952-zero/maps.supervisor.json": "f24f7eb69f446a926f87c8adf739465dba61bdbd3c683999c2c48e69cbc5a495",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/11952-zero/mod2-build.supervisor.json": "1c0bf010912a34770da2f0b14133af46c6b8c335ac82e7544677c73c1be67fa0",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/11952-zero/mod2-check.supervisor.json": "1d68652c01b1a063608fb8dc82eea700d49c8228947e67c0f8fb4a9107f7bfe9",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/11952-zero/modl-build.supervisor.json": "50418a6404df25089383e5eb27f2fd6bb321deab4023edfe2c8ffb307fe84d6c",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/11952-zero/modl-check.supervisor.json": "e8556ed9ec1f184983d5ccf5891a2a4c96fb997911269870cd1db1b89366d3c9",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/11952-zero/result.json": "53665ad9824a71a62f66db9e5a8b709aacdab36e65bd70316818df3fb03b03ac",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/11952-zero/worker.supervisor.json": "d5bf09007d30f33081534aeec780f1984b99dfc10a3ac152c81bb7f49af9dac7",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-01-infinity/maps.json": "acba3377960438d2f014579315f2473cef85e9d126cd4e73eb928f526282ffc9",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-01-infinity/maps.supervisor.json": "36592475bc9c95bbf6d84f6d903965b540fe4606ca3c3d7f4b789d88a62a67a6",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-01-infinity/mod2-build.supervisor.json": "ad71b7b0023d471a1bc4aa8544cd42be599c5fc858fcd4ef93c1d055d93816c8",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-01-infinity/mod2-check.supervisor.json": "2ecca7a366418658c0a33757e8c1b522e5513f716a149786cd89a467d9c72d94",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-01-infinity/modl-build.supervisor.json": "2778f75651be56b783f98e3b486412fee10700b40896ed52513f31aaf1dd5ff5",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-01-infinity/modl-check.supervisor.json": "2617216c76dfda19f7f8c5f03be6bf6e64f9f7ff039782791711d149400cc9e5",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-01-infinity/result.json": "ecab1ad329e814435bfb53c8b2cc0b72999818bd8e67012fb9a54e45e4ff88e3",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-01-infinity/worker.supervisor.json": "4d2e136d9eacf205ee7f516828e0348b888248c2c8d5f83406627de21176a74d",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-01-zero/maps.json": "d224d878c472a7a6bd973973dfe2a333d9a489d35f05ce933107889ca0fe89b1",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-01-zero/maps.supervisor.json": "78cc2b946d1db881e5106bd7556c5f1091f04bf3326b399944d461ec1306e244",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-01-zero/mod2-build.supervisor.json": "7e6c65cc78815aade6da6567186563b7696c7b64bf1d7440bdbc8e53e13f068d",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-01-zero/mod2-check.supervisor.json": "e188f76ecd1125865cb5ca3848dd2a7dc1ef673f06900f93555e4c41c47ae466",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-01-zero/modl-build.supervisor.json": "e0e5ca9beac5861fd620526f2943b1441a6b3fd522df19ba6be6bd2d529612bc",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-01-zero/modl-check.supervisor.json": "5f909b6699e0281591261e98e2357ea2f5036dae6b6591b662a152188be9f082",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-01-zero/result.json": "348a9a225cfb489a78559051ac9a46dd8eea3a9eff7c192ea07606e0563adfb7",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-01-zero/worker.supervisor.json": "a29a8831909fa6f3eea3c89efd4c455f3ad0be06cd2863e9bccddab5afa27e96",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-02-infinity/maps.json": "7c79ab3ea26abadf1e0660d1db7d4f9cad607e60f1f8787017042e40cb54a065",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-02-infinity/maps.supervisor.json": "c0417316dd6a4815cd0a4c1a8f1fd9b1ddedac86fc70b72775aa0345d20021af",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-02-infinity/mod2-build.supervisor.json": "b74c0efb404a1cd3759a293720e864a52225cf0e7b50dba25e1a24b8353b9a5d",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-02-infinity/mod2-check.supervisor.json": "58f97f1af35f1952398db29d7f5a5d2c627bcfbece02e5e978f2efa6463c2bca",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-02-infinity/modl-build.supervisor.json": "cff0c658f2eb381377615c89471aafbf95d1c74bcbfcfe74f0475607362574bc",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-02-infinity/modl-check.supervisor.json": "71d3b33d19f56b9ad8ebfda7b50fcb2896b3edfb88b8f7ca8f5d8d1afcca8a83",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-02-infinity/result.json": "80bd134f04b58616aa4f299bcc2ec8eeaa5c98510b7a4b5ae62f240e22772084",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-02-infinity/worker.supervisor.json": "67cc6a657aeba3dae8951dbdcc549f50d0ee38c8479cb0097a6bb2f133bf7e30",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-02-zero/maps.json": "2c7fe59444b4442ba2e330910d0726afa17cd2742d03ddc73faa6ce6c136b05b",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-02-zero/maps.supervisor.json": "d6f6332fb0912f1f30698bbb9740bc3a51847904f380ce2e388b0586ed53d3a4",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-02-zero/mod2-build.supervisor.json": "4f9fb889646f198453dfa67a2c116982a1ca2d5536aaa71776c07589c6c4d692",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-02-zero/mod2-check.supervisor.json": "eadc119f286a9a0a965c9d0d81901ef023f4b72fbd96fa31537605d93095e9bf",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-02-zero/modl-build.supervisor.json": "9701ea6861b314c00442e361336711eb5027f9b7c946c00a5bb9e9d020c8163d",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-02-zero/modl-check.supervisor.json": "7806af1606e7e7a8e1832bc0ef94c47631078d42338d3f2d501516b5f84571db",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-02-zero/result.json": "cd8904585226b87c7ca0c7ed9dc2439063920987b77150cf0a2a45df096cff82",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-02-zero/worker.supervisor.json": "6df8a1c09e3d21dbee87f9651d9683353f21429f7ba4741ad4890a8fc7fda82d",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-03-zero/maps.json": "195e0bdb88eaf3ece5d65f59adb34c54b68df292d3806efc9ea67472e3f11d6c",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-03-zero/maps.supervisor.json": "60aff1ce2eee3af216127b978aa5515b04acf17ea6ffaed96a31b17993221078",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-03-zero/mod2-build.supervisor.json": "b1664fc37753e9428d91213292e263f1cc7fe2e84c451964e389f78786d74204",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-03-zero/mod2-check.supervisor.json": "85766738c91c4dc36fb080d8001682a1b6514daaecffe97b79f0fea680e82057",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-03-zero/modl-build.supervisor.json": "75025e5237fcc6c84630d333be7ca18d7f15d5e25bd34b4e271fdedfcf0ee886",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-03-zero/modl-check.supervisor.json": "f028bfda9a4609211146f2d749369481395b991539cb470f3cfd3340b0a8a128",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-03-zero/result.json": "1af79f4c1ec20d898d97b63b22cad43b9f5e41f65b8cf63f31f02f9f6b3913e0",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-03-zero/worker.supervisor.json": "102707943cb297fd65331071d698e6693caecc49443324a3c9f8d01f51b89f82",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-04-infinity/maps.json": "1996111c0d688c664e05570e7a1d3840e85243ac948c818d3a286f3aa94a1a05",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-04-infinity/maps.supervisor.json": "89579d0be8850c3b7903a2c8abfe2a7d2ef489a032ff621f44ce7b8135ed147b",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-04-infinity/mod2-build.supervisor.json": "d59d1bf3ebe6c1afaac20ef1ecaae77a4af999f01569850881339a2a44a86d44",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-04-infinity/mod2-check.supervisor.json": "b93ec60fe452276f6c0f8428d42e4807aefdf5737dc7d29a5cfdf4e42c13cee3",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-04-infinity/modl-build.supervisor.json": "571ec67e3f8141d4397c2b4da60112eea0faa76472ff813789d6ee8d583d2c7d",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-04-infinity/modl-check.supervisor.json": "b42298acee899e191e1ee1c7b527b864a8a97a9f1c8285e9e4eed81ab699778c",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-04-infinity/result.json": "50974b9d335274d6de8a14967d60a3f7094fd5e5578d56818f8ae0a8edb54596",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-04-infinity/worker.supervisor.json": "d4c6e2d4342721848cc9d0c8b5c0fa13dade59f97e0ed4ef6dbd33de2af70df4",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-04-zero/maps.json": "f46985a427dbb36d1ab2a070723e680912c76e1fa6bee9cbc20348a7d65fe2af",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-04-zero/maps.supervisor.json": "87f6d6fde975b1dc949931dcd8d190ec59abe26fbd9748b4065b0ef09599a61c",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-04-zero/mod2-build.supervisor.json": "b9e4cd8d190021a5d02f6cff203b4663e9852aa7fbabc186ba4df445aad0d32b",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-04-zero/mod2-check.supervisor.json": "b38aa143db43004d7283c4af063b4e9f27ca5ef3004cb7d839e182bbda7bc5d0",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-04-zero/modl-build.supervisor.json": "203c681005e8b94bd38906810d6b62c0b427af5b09ff455787077bb816ff6872",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-04-zero/modl-check.supervisor.json": "91c9c90bff603a8e030aff9daa339a67c8708f6f8387a3b474129715c13e55c6",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-04-zero/result.json": "e8d4d7996939c0396621dbf3d4bb6c58c5d69da2f77a263f1f9001f2c7a18946",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-04-zero/worker.supervisor.json": "b911c3bd8b4452c19ca0c23d42ac36128d37d402579a38a2aa242ab259ac40ef",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-05-infinity/maps.json": "a58aed52d63e836d5f84084e801f34b6c893759ed93e6014a9bfc88de0ebb72a",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-05-infinity/maps.supervisor.json": "236431c5ad9f56b5df75c244b44e6ff468540c0ec488182094d44b7b4b50f2ce",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-05-infinity/mod2-build.supervisor.json": "e50de56bb31434848f1e481ee274d281e30b784cd4bcb33101ea392557c516b8",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-05-infinity/mod2-check.supervisor.json": "c31e3c2b82af8219790997ed76713ae7916b8d28c0af01b45f8cbf939f0c04a2",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-05-infinity/modl-build.supervisor.json": "eb65a8bcfd21681b3593f6ecbc08a77585ac5a5f066a38609f98d0022147a29e",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-05-infinity/modl-check.supervisor.json": "697feceea586453d50eeb262e786d96b54dabc4ff461fc9c7d60b913cf388b30",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-05-infinity/result.json": "4222ac1f19cef00964b981d89af00be65872fd021454459e95d8a4e7d08fc547",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-05-infinity/worker.supervisor.json": "f4715e8154a356653e75b33fba3465db7341394d127ad7a91c8343b40b350b7a",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-05-zero/maps.json": "6c3d1feaf42d48d6aae86392fcd1100cce28fb1be8103077dce65a56d033a549",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-05-zero/maps.supervisor.json": "f32f13f51e8dba8431384954b7a6c1aaa74bfb1367b870bfc43ecbe13b4c4dd7",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-05-zero/mod2-build.supervisor.json": "06f8df54432811a3603aeda6fba291d676e6f25350c78429bb502e3a0205cbf7",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-05-zero/mod2-check.supervisor.json": "602a9b2c1133c2fd8c05b6fa132fee63a255b672b875e77bb521491aaa272d76",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-05-zero/modl-build.supervisor.json": "94e53b278ca1174af5cab29eb5d1ec81ce7dee2fb47138560deefe42ec5a27bf",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-05-zero/modl-check.supervisor.json": "3a822e450d62ea5d2ddb868265bafc8d0dbbc063171f67ea9e9880442cf0d5c3",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-05-zero/result.json": "a850fc79c7cd270888a4c6f2ca4d96817ec50a871925226f6d983ab0cbe9d1ac",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/a1-fibration-05-zero/worker.supervisor.json": "7bfabe3e5b888f96e60e6f90a9a33fc76177f2d3d8c8432d7c9f991e8b52e9bc",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/cloud-verification-v2/00.json": "327b49b452ecab45f22f2b292e64467b0dcbee4cb20fdcd2a6fb66d85462b40f",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/cloud-verification-v2/01.json": "7bef7eaca87260351c50d4b2868b761064d291571dcd808c66b8678f4c10b474",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/cloud-verification-v2/02.json": "99aba58ea7f4add2d70ef384aa1b451d43aee88af2b661b40a568f0d2404f96f",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/cloud-verification-v2/03.json": "77e13397078160b56535969c091b57f73b72f8d1d0f2250d470a28cfcc877199",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/cloud-verification-v2/04.json": "8dda7962131107bb11d591ed2ea29c460ab051f24e3406d53cc0875082d90ee3",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/cloud-verification-v2/05.json": "7c265b3e3f14eab82911507780aceaebb61a855a24bf4c4c31d77127f0f274e5",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/cloud-verification-v2/06.json": "0e1af630edc34925b47006a8b1b845677bccaecc03a768e1d5186bb4adbcff20",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/cloud-verification-v2/07.json": "18c1f8deec96df724e9993cc9e8de6e8c76bd22cce32c2f7817625b7add8ee3d",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/cloud-verification-v2/08.json": "9035b72c7747b0cdf64df4924000d94aba1562f4b0038c3e427fc6727ab86cd7",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/cloud-verification-v2/09.json": "a65eff6e69ebdd7dc9d978ccc2b07436815004a9ed4567ebc01f847913a67347",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/cloud-verification-v2/10.json": "f8388a9d487677d9b1d04b1e4b5b788f44406c0714b1b7d74d5cbbb04179030f",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/cloud-verification-v2/11.json": "740c37a8c0075a7d4634cf23f48833ddf5faa2d712ef7087bdcf77d060ab72db",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/cloud-verification-v2/12.json": "7b75bcbb637069fc34b1b2161498aae732e12642912f12443c2dd0d22e81274b",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/cloud-verification-v2/13.json": "f4717f3f9a8725e9a07cf945aab06bd60f89f8acb7de8aadac2cc1bd788a357e",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/cloud-verification-v2/14.json": "9db8871be81b6ab0ada48ef64df4449206d40283085889b5bcd15033b6c0a562",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/cloud-verification-v2/15.json": "e851a6323633860ff867dc1117ac1b70a79c0c1d4c6ce121facc261b896e20ee",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/cloud-verification-v2/16.json": "e7be96a692d852586f0a4ba8375cb827c9c920189ff43dcbe9aa266fc2ac4e49",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/cloud-verification-v2/17.json": "5979948f7858bc3e4a71805e18371b7f04e397814fa0afa8f8b323ed6d94c2d8",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/cloud-verification-v2/18.json": "4d6bac9eb50bf4005d088878fbedc806037f7d976f366a55ee37446779cc6e78",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/cloud-verification-v2/19.json": "a4fb2f94c4351b38440cd2cbc8fd3f99b6afaae80c76a68721c757728daf9dbc",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/cloud-verification-v2/20.json": "09d92ed3eb211671db33ef7eb4cd46e2f57710fa1a67b57e232781427a5c25f5",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/completion-v1/074d9-infinity/replay.supervisor.json": "24adc6973d7ac25c7db2c78b8add3a9d68821789d951df0f8fa56651eb9a3daf",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/completion-v1/074d9-zero/replay.supervisor.json": "72a32b9305070b157c986ffaede43ab583f2573c139f9bbd9d1078cd1103ff6b",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/completion-v1/07ca9-infinity/replay.supervisor.json": "a173085f48a518d6f8156d91651231f03a9ef14df78437ea0d2ac61b8c50327b",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/completion-v1/07ca9-zero/replay.supervisor.json": "50442e3ef2b5a2d789ce0c5f53d5ea6ab0eff795f0dc95b1f62b48ab6237153d",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/completion-v1/08234-infinity/replay.supervisor.json": "5a9dbe43ffe8455f00bb773a6637f8c61b9c5ac239baec732a584edcec89cb15",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/completion-v1/08234-zero/replay.supervisor.json": "43739b67fed76e0a1e7d190e567dc99024b50815e1340d34fd90d4e229d76d68",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/completion-v1/08f72-infinity/replay.supervisor.json": "5e2ab4afcc760512fe3ae0dff414b72c1f3f367b91446752aa99d1f53476a1a5",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/completion-v1/08f72-zero/replay.supervisor.json": "26573e59691db8c13622efdfea851eb522adf300c755b22edfc6afeb0a8e546c",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/completion-v1/103b2-infinity/replay.supervisor.json": "08128fad3d5c0fa8f20a9fd624ae6ab83fe8865150d4683ff4ac33f313be672d",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/completion-v1/11952-infinity/replay.supervisor.json": "8e9413430aff2d9b690257d74f292fe8ba6c1ddd4b8c4c2fc57831840e2eed7a",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/completion-v1/11952-zero/replay.supervisor.json": "d5927820dc3c85d07f11b034ef4296fc0b3a28dc942e7fb73ef06440b0d47ab9",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/completion-v1/a1-fibration-01-infinity/replay.supervisor.json": "249c44aa44e1abdd7386701bdc69c0ae46a1b1ac3a97a588c00effeb006d2ca0",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/completion-v1/a1-fibration-01-zero/replay.supervisor.json": "f12f5c2333d2bc33c24fb02557523c70c2595210be1a5781cb6d2f7cf2846d2b",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/completion-v1/a1-fibration-02-infinity/replay.supervisor.json": "e3faca708cc4a86c7e2442785971b485f97f098e01355e6ac08ab139a625f13f",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/completion-v1/a1-fibration-02-zero/replay.supervisor.json": "9a69b36183056f20b64161d5022ab2bbf14bf5c557eebb1c114a2f6af0262502",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/completion-v1/a1-fibration-03-zero/replay.supervisor.json": "511e0a3426ae1b5d7e3cb6e2d30725afdd0a96d54f3124d48e34674917f00502",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/completion-v1/a1-fibration-04-infinity/replay.supervisor.json": "1dc3727be62098196cc5fa84b0632447909aed8019c43e547f3b9758b69c43f5",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/completion-v1/a1-fibration-04-zero/replay.supervisor.json": "4fb390dd1c01f0cc90b8dad37b426edb37f25af5d14704826a24b12cdcad3267",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/completion-v1/a1-fibration-05-infinity/replay.supervisor.json": "14e30c855c1e2ef9ff58db85c769cbcfff1322da12e4708b91f487d6b219fff1",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/completion-v1/a1-fibration-05-zero/replay.supervisor.json": "2d7384a606bdf920374e4c8149210fb26bd8276fd9513e69726e70f90b15b379",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/completion-v1/ledger.json": "53ed3726004395d2dde5b85dedd8df92af9c3b51cc0da050f13c3e75a46a05fb",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/completion-v1/protocol.json": "327c9284a5621b836446e34653fb3bd8996d55ffb77dc8296ea7cefc6a98514f",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/geometry.supervisor.json": "7cebc06fe057e3dfc3a24ae03acbb0abe313ad9301ba8a9876f968e5d8b0f281",
+    "artifacts/local/elliptic-curves/endpoint-specialized-parity-v1/protocol.json": "a60fb5c4e61bd4366a7a8a71c8007623db2e086514109b07595af2aa114efb90",
+    "elliptic-curves/cas/complete_endpoint_specialized_trial.py": "9a1955d61edaff46507af61966e3f49444dc00396099a0f5daec101bf2d62870",
+    "elliptic-curves/cas/report_endpoint_specialized_trial.py": "aa3b9e85251c236a71a129ee9776d0c1043c85ea47412bf71d2d47819e481b1f"
+  },
+  "status": "PASS"
+}

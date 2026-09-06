@@ -1,0 +1,76 @@
+{
+  "claim_boundary": "Pinned PARI includes |numerator|=H and denominator=H in these independently enumerated nonsingular quartic boxes. This resolves the wording of its short help on these boundary regressions; production finite completeness still trusts the pinned implementation.",
+  "gp_binary_sha256": "c9673623cad2eaa7cfe402e7b7d833f1f703689a09837026b6386aaafba6deec",
+  "rows": [
+    {
+      "coefficients": [
+        -56,
+        0,
+        0,
+        0,
+        1
+      ],
+      "height": 2,
+      "program": "R=hyperellratpoints((-56)*x^0+(0)*x^1+(0)*x^2+(0)*x^3+(1)*x^4,2);for(i=1,#R,print(\"X|\",R[i][1]));quit\n",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "x_coordinates": []
+    },
+    {
+      "coefficients": [
+        -56,
+        0,
+        0,
+        0,
+        1
+      ],
+      "height": 3,
+      "program": "R=hyperellratpoints((-56)*x^0+(0)*x^1+(0)*x^2+(0)*x^3+(1)*x^4,3);for(i=1,#R,print(\"X|\",R[i][1]));quit\n",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "X|-3\nX|-3\nX|3\nX|3\n",
+      "x_coordinates": [
+        "-3",
+        "3"
+      ]
+    },
+    {
+      "coefficients": [
+        -1,
+        3,
+        0,
+        0,
+        81
+      ],
+      "height": 2,
+      "program": "R=hyperellratpoints((-1)*x^0+(3)*x^1+(0)*x^2+(0)*x^3+(81)*x^4,2);for(i=1,#R,print(\"X|\",R[i][1]));quit\n",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "",
+      "x_coordinates": []
+    },
+    {
+      "coefficients": [
+        -1,
+        3,
+        0,
+        0,
+        81
+      ],
+      "height": 3,
+      "program": "R=hyperellratpoints((-1)*x^0+(3)*x^1+(0)*x^2+(0)*x^3+(81)*x^4,3);for(i=1,#R,print(\"X|\",R[i][1]));quit\n",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "X|1/3\nX|1/3\n",
+      "x_coordinates": [
+        "1/3"
+      ]
+    }
+  ],
+  "schema": "elliptic-curves.pari-inclusive-height-boundaries.v1",
+  "sources": {
+    "elliptic-curves/cas/check_pari_height_boundaries.py": "e71a93e8576b8fdc34f161f11cd1d979710ec6e0cac23350410489a80be1c54b"
+  },
+  "status": "PASS"
+}

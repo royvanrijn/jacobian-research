@@ -1,0 +1,3692 @@
+{
+  "attempted_point_boxes": 8640,
+  "catalogue_snapshot_curves": 593,
+  "catalogue_unmatched_candidates_at_least22": 84,
+  "claim_boundary": "A fixed deeper point-exposure cohort in the already scored compactH4096 population, selected by unchanged S1 with validation excluded from all ties. Previous and within-roster equation exclusions do not assert random sampling. Exact point lower bounds and pinned rational-isomorphism comparisons require separate inventory promotion. These results do not establish whole-curve rank, upper bounds, saturation, score optimality, rank density, point absence or universal novelty.",
+  "completed_point_boxes": 8640,
+  "declared_point_boxes": 8640,
+  "previous_address_equations": 549,
+  "rank_lower_bound_counts": {
+    "17": 36,
+    "18": 30,
+    "19": 13,
+    "20": 18,
+    "21": 10,
+    "22": 21,
+    "23": 21,
+    "24": 23,
+    "25": 15,
+    "26": 5
+  },
+  "rows": [
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-001",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "-670/1129",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 745
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-002",
+      "odd_modulus_lower_bounds": {
+        "3": 25,
+        "5": 25
+      },
+      "parameter": "-2336/731",
+      "previous_matches": [],
+      "rank_lower_bound": 25,
+      "retained_points": 553
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-003",
+      "odd_modulus_lower_bounds": {
+        "3": 23,
+        "5": 23
+      },
+      "parameter": "-807/115",
+      "previous_matches": [],
+      "rank_lower_bound": 23,
+      "retained_points": 466
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-004",
+      "odd_modulus_lower_bounds": {
+        "3": 21,
+        "5": 21
+      },
+      "parameter": "1133/1165",
+      "previous_matches": [],
+      "rank_lower_bound": 21,
+      "retained_points": 502
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-005",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "-1773/136",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 675
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-006",
+      "odd_modulus_lower_bounds": {
+        "3": 22,
+        "5": 22
+      },
+      "parameter": "1224/931",
+      "previous_matches": [],
+      "rank_lower_bound": 22,
+      "retained_points": 592
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-007",
+      "odd_modulus_lower_bounds": {
+        "3": 22,
+        "5": 22
+      },
+      "parameter": "-297/335",
+      "previous_matches": [],
+      "rank_lower_bound": 22,
+      "retained_points": 609
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-008",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "1019/3300",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 323
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-009",
+      "odd_modulus_lower_bounds": {
+        "3": 19,
+        "5": 19
+      },
+      "parameter": "-578/3795",
+      "previous_matches": [],
+      "rank_lower_bound": 19,
+      "retained_points": 338
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-010",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "1811/3542",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 324
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-011",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "-2021/2823",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 442
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-012",
+      "odd_modulus_lower_bounds": {
+        "3": 23,
+        "5": 23
+      },
+      "parameter": "-661/900",
+      "previous_matches": [],
+      "rank_lower_bound": 23,
+      "retained_points": 417
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-013",
+      "odd_modulus_lower_bounds": {
+        "3": 22,
+        "5": 22
+      },
+      "parameter": "-2789/1357",
+      "previous_matches": [],
+      "rank_lower_bound": 22,
+      "retained_points": 340
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-014",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "32/3951",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 335
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-015",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "-1173/3370",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 289
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-016",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "-1028/2399",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 319
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-017",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "905/3564",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 321
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-018",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "2824/885",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 341
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-019",
+      "odd_modulus_lower_bounds": {
+        "3": 21,
+        "5": 21
+      },
+      "parameter": "-1223/3329",
+      "previous_matches": [],
+      "rank_lower_bound": 21,
+      "retained_points": 322
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-020",
+      "odd_modulus_lower_bounds": {
+        "3": 21,
+        "5": 21
+      },
+      "parameter": "-661/194",
+      "previous_matches": [],
+      "rank_lower_bound": 21,
+      "retained_points": 520
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-021",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "26/57",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 1140
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-022",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "-2324/2523",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 354
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-023",
+      "odd_modulus_lower_bounds": {
+        "3": 19,
+        "5": 19
+      },
+      "parameter": "-3292/1837",
+      "previous_matches": [],
+      "rank_lower_bound": 19,
+      "retained_points": 341
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-024",
+      "odd_modulus_lower_bounds": {
+        "3": 21,
+        "5": 21
+      },
+      "parameter": "173/429",
+      "previous_matches": [],
+      "rank_lower_bound": 21,
+      "retained_points": 491
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-025",
+      "odd_modulus_lower_bounds": {
+        "3": 20,
+        "5": 20
+      },
+      "parameter": "121/695",
+      "previous_matches": [],
+      "rank_lower_bound": 20,
+      "retained_points": 450
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-026",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "4075/4018",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 277
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-027",
+      "odd_modulus_lower_bounds": {
+        "3": 23,
+        "5": 23
+      },
+      "parameter": "-676/921",
+      "previous_matches": [],
+      "rank_lower_bound": 23,
+      "retained_points": 420
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-028",
+      "odd_modulus_lower_bounds": {
+        "3": 22,
+        "5": 22
+      },
+      "parameter": "1381/558",
+      "previous_matches": [],
+      "rank_lower_bound": 22,
+      "retained_points": 522
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-029",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "3013/980",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 356
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-030",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "-1449/1094",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 570
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-031",
+      "odd_modulus_lower_bounds": {
+        "3": 23,
+        "5": 23
+      },
+      "parameter": "38/353",
+      "previous_matches": [],
+      "rank_lower_bound": 23,
+      "retained_points": 659
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "074d9",
+      "id": "074d9-032",
+      "odd_modulus_lower_bounds": {
+        "3": 21,
+        "5": 21
+      },
+      "parameter": "-935/2279",
+      "previous_matches": [],
+      "rank_lower_bound": 21,
+      "retained_points": 495
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-001",
+      "odd_modulus_lower_bounds": {
+        "3": 26,
+        "5": 26
+      },
+      "parameter": "760/211",
+      "previous_matches": [],
+      "rank_lower_bound": 26,
+      "retained_points": 685
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-002",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "561/26",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 1955
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-003",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "422/879",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 435
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-004",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "117/238",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 1663
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-005",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "869/2730",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 541
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-006",
+      "odd_modulus_lower_bounds": {
+        "3": 26,
+        "5": 26
+      },
+      "parameter": "-575/1207",
+      "previous_matches": [],
+      "rank_lower_bound": 26,
+      "retained_points": 267
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-007",
+      "odd_modulus_lower_bounds": {
+        "3": 25,
+        "5": 25
+      },
+      "parameter": "-1193/99",
+      "previous_matches": [],
+      "rank_lower_bound": 25,
+      "retained_points": 308
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-008",
+      "odd_modulus_lower_bounds": {
+        "3": 23,
+        "5": 23
+      },
+      "parameter": "965/1196",
+      "previous_matches": [],
+      "rank_lower_bound": 23,
+      "retained_points": 565
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-009",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "-3693/1163",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 70
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-010",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "3160/287",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 166
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-011",
+      "odd_modulus_lower_bounds": {
+        "3": 26,
+        "5": 26
+      },
+      "parameter": "3307/1128",
+      "previous_matches": [],
+      "rank_lower_bound": 26,
+      "retained_points": 306
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-012",
+      "odd_modulus_lower_bounds": {
+        "3": 19,
+        "5": 19
+      },
+      "parameter": "-1620/3023",
+      "previous_matches": [],
+      "rank_lower_bound": 19,
+      "retained_points": 206
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-013",
+      "odd_modulus_lower_bounds": {
+        "3": 25,
+        "5": 25
+      },
+      "parameter": "2393/1860",
+      "previous_matches": [],
+      "rank_lower_bound": 25,
+      "retained_points": 288
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-014",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "3775/2497",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 41
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-015",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "-1742/4013",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 65
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-016",
+      "odd_modulus_lower_bounds": {
+        "3": 20,
+        "5": 20
+      },
+      "parameter": "3065/48",
+      "previous_matches": [],
+      "rank_lower_bound": 20,
+      "retained_points": 143
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-017",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "3435/3841",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 63
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-018",
+      "odd_modulus_lower_bounds": {
+        "3": 23,
+        "5": 23
+      },
+      "parameter": "-2402/1309",
+      "previous_matches": [],
+      "rank_lower_bound": 23,
+      "retained_points": 149
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-019",
+      "odd_modulus_lower_bounds": {
+        "3": 23,
+        "5": 23
+      },
+      "parameter": "1053/2968",
+      "previous_matches": [],
+      "rank_lower_bound": 23,
+      "retained_points": 252
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-020",
+      "odd_modulus_lower_bounds": {
+        "3": 22,
+        "5": 22
+      },
+      "parameter": "3076/2339",
+      "previous_matches": [],
+      "rank_lower_bound": 22,
+      "retained_points": 195
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-021",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "2935/1939",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 77
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-022",
+      "odd_modulus_lower_bounds": {
+        "3": 23,
+        "5": 23
+      },
+      "parameter": "197/116",
+      "previous_matches": [],
+      "rank_lower_bound": 23,
+      "retained_points": 1459
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-023",
+      "odd_modulus_lower_bounds": {
+        "3": 25,
+        "5": 25
+      },
+      "parameter": "3/377",
+      "previous_matches": [],
+      "rank_lower_bound": 25,
+      "retained_points": 867
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-024",
+      "odd_modulus_lower_bounds": {
+        "3": 22,
+        "5": 22
+      },
+      "parameter": "1443/986",
+      "previous_matches": [],
+      "rank_lower_bound": 22,
+      "retained_points": 369
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-025",
+      "odd_modulus_lower_bounds": {
+        "3": 22,
+        "5": 22
+      },
+      "parameter": "167/887",
+      "previous_matches": [],
+      "rank_lower_bound": 22,
+      "retained_points": 360
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-026",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "-1982/1505",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 121
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-027",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "-455/2801",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 96
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-028",
+      "odd_modulus_lower_bounds": {
+        "3": 19,
+        "5": 19
+      },
+      "parameter": "-1539/1700",
+      "previous_matches": [],
+      "rank_lower_bound": 19,
+      "retained_points": 138
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-029",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "956/2219",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 128
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-030",
+      "odd_modulus_lower_bounds": {
+        "3": 20,
+        "5": 20
+      },
+      "parameter": "3172/245",
+      "previous_matches": [],
+      "rank_lower_bound": 20,
+      "retained_points": 146
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-031",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "79/964",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 293
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "07ca9",
+      "id": "07ca9-032",
+      "odd_modulus_lower_bounds": {
+        "3": 22,
+        "5": 22
+      },
+      "parameter": "1572/785",
+      "previous_matches": [],
+      "rank_lower_bound": 22,
+      "retained_points": 245
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-001",
+      "odd_modulus_lower_bounds": {
+        "3": 20,
+        "5": 20
+      },
+      "parameter": "-1383/595",
+      "previous_matches": [],
+      "rank_lower_bound": 20,
+      "retained_points": 55
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-002",
+      "odd_modulus_lower_bounds": {
+        "3": 19,
+        "5": 19
+      },
+      "parameter": "-20/2827",
+      "previous_matches": [],
+      "rank_lower_bound": 19,
+      "retained_points": 62
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [
+        413
+      ],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-003",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "326/5",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 2230
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-004",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "3305/3579",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 23
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-005",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-1007/2292",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 36
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-006",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-2641/3542",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 20
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-007",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "-2243/880",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 58
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-008",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "509/3808",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 21
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-009",
+      "odd_modulus_lower_bounds": {
+        "3": 25,
+        "5": 25
+      },
+      "parameter": "774/149",
+      "previous_matches": [],
+      "rank_lower_bound": 25,
+      "retained_points": 535
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-010",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "464/3753",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 65
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-011",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-1247/4079",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 40
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-012",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-1258/1679",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 67
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-013",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-1569/1505",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 25
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-014",
+      "odd_modulus_lower_bounds": {
+        "3": 19,
+        "5": 19
+      },
+      "parameter": "1807/245",
+      "previous_matches": [],
+      "rank_lower_bound": 19,
+      "retained_points": 161
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-015",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-3301/1950",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 23
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-016",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "2683/3919",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 20
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-017",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-4068/1435",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 39
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-018",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-1501/1623",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 37
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-019",
+      "odd_modulus_lower_bounds": {
+        "3": 20,
+        "5": 20
+      },
+      "parameter": "-208/1817",
+      "previous_matches": [],
+      "rank_lower_bound": 20,
+      "retained_points": 69
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-020",
+      "odd_modulus_lower_bounds": {
+        "3": 22,
+        "5": 22
+      },
+      "parameter": "-2185/106",
+      "previous_matches": [],
+      "rank_lower_bound": 22,
+      "retained_points": 307
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-021",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "-3815/1356",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 74
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-022",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-274/2833",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 49
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-023",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "3545/2676",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 65
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-024",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "541/3360",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 23
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-025",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "435/2477",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-026",
+      "odd_modulus_lower_bounds": {
+        "3": 23,
+        "5": 23
+      },
+      "parameter": "-11/235",
+      "previous_matches": [],
+      "rank_lower_bound": 23,
+      "retained_points": 266
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-027",
+      "odd_modulus_lower_bounds": {
+        "3": 22,
+        "5": 22
+      },
+      "parameter": "2627/65",
+      "previous_matches": [],
+      "rank_lower_bound": 22,
+      "retained_points": 300
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-028",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "458/2195",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 59
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-029",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-3809/1589",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 49
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-030",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "3217/3864",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 45
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-031",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "-833/3139",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 104
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "08234",
+      "id": "08234-032",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-46/4089",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 71
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-001",
+      "odd_modulus_lower_bounds": {
+        "3": 25,
+        "5": 25
+      },
+      "parameter": "-3292/1853",
+      "previous_matches": [],
+      "rank_lower_bound": 25,
+      "retained_points": 206
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-002",
+      "odd_modulus_lower_bounds": {
+        "3": 23,
+        "5": 23
+      },
+      "parameter": "2007/112",
+      "previous_matches": [],
+      "rank_lower_bound": 23,
+      "retained_points": 734
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-003",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "-2751/886",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 323
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-004",
+      "odd_modulus_lower_bounds": {
+        "3": 25,
+        "5": 25
+      },
+      "parameter": "-2129/1207",
+      "previous_matches": [],
+      "rank_lower_bound": 25,
+      "retained_points": 368
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-005",
+      "odd_modulus_lower_bounds": {
+        "3": 23,
+        "5": 23
+      },
+      "parameter": "-2799/491",
+      "previous_matches": [],
+      "rank_lower_bound": 23,
+      "retained_points": 337
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-006",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "107/603",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 384
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-007",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "3802/3713",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 37
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-008",
+      "odd_modulus_lower_bounds": {
+        "3": 19,
+        "5": 19
+      },
+      "parameter": "-2335/1986",
+      "previous_matches": [],
+      "rank_lower_bound": 19,
+      "retained_points": 127
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-009",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "1055/1833",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 226
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-010",
+      "odd_modulus_lower_bounds": {
+        "3": 25,
+        "5": 25
+      },
+      "parameter": "4071/52",
+      "previous_matches": [],
+      "rank_lower_bound": 25,
+      "retained_points": 406
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-011",
+      "odd_modulus_lower_bounds": {
+        "3": 25,
+        "5": 25
+      },
+      "parameter": "-3791/529",
+      "previous_matches": [],
+      "rank_lower_bound": 25,
+      "retained_points": 569
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-012",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "2401/2866",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 77
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-013",
+      "odd_modulus_lower_bounds": {
+        "3": 23,
+        "5": 23
+      },
+      "parameter": "146/59",
+      "previous_matches": [],
+      "rank_lower_bound": 23,
+      "retained_points": 1286
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-014",
+      "odd_modulus_lower_bounds": {
+        "3": 19,
+        "5": 19
+      },
+      "parameter": "-1205/3663",
+      "previous_matches": [],
+      "rank_lower_bound": 19,
+      "retained_points": 120
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-015",
+      "odd_modulus_lower_bounds": {
+        "3": 23,
+        "5": 23
+      },
+      "parameter": "-2884/621",
+      "previous_matches": [],
+      "rank_lower_bound": 23,
+      "retained_points": 197
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-016",
+      "odd_modulus_lower_bounds": {
+        "3": 22,
+        "5": 22
+      },
+      "parameter": "-2449/1927",
+      "previous_matches": [],
+      "rank_lower_bound": 22,
+      "retained_points": 85
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-017",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-692/3645",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 51
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-018",
+      "odd_modulus_lower_bounds": {
+        "3": 21,
+        "5": 21
+      },
+      "parameter": "-3941/146",
+      "previous_matches": [],
+      "rank_lower_bound": 21,
+      "retained_points": 220
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-019",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "-2336/3251",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 84
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-020",
+      "odd_modulus_lower_bounds": {
+        "3": 22,
+        "5": 22
+      },
+      "parameter": "-1737/1790",
+      "previous_matches": [],
+      "rank_lower_bound": 22,
+      "retained_points": 167
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-021",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "-1264/2397",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 77
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-022",
+      "odd_modulus_lower_bounds": {
+        "3": 19,
+        "5": 19
+      },
+      "parameter": "-2939/3121",
+      "previous_matches": [],
+      "rank_lower_bound": 19,
+      "retained_points": 136
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-023",
+      "odd_modulus_lower_bounds": {
+        "3": 19,
+        "5": 19
+      },
+      "parameter": "1427/1684",
+      "previous_matches": [],
+      "rank_lower_bound": 19,
+      "retained_points": 203
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-024",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "3293/2326",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 87
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-025",
+      "odd_modulus_lower_bounds": {
+        "3": 20,
+        "5": 20
+      },
+      "parameter": "2462/289",
+      "previous_matches": [],
+      "rank_lower_bound": 20,
+      "retained_points": 222
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-026",
+      "odd_modulus_lower_bounds": {
+        "3": 23,
+        "5": 23
+      },
+      "parameter": "1308/277",
+      "previous_matches": [],
+      "rank_lower_bound": 23,
+      "retained_points": 322
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-027",
+      "odd_modulus_lower_bounds": {
+        "3": 21,
+        "5": 21
+      },
+      "parameter": "-2267/1326",
+      "previous_matches": [],
+      "rank_lower_bound": 21,
+      "retained_points": 160
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-028",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-2434/3359",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 87
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-029",
+      "odd_modulus_lower_bounds": {
+        "3": 21,
+        "5": 21
+      },
+      "parameter": "281/3078",
+      "previous_matches": [],
+      "rank_lower_bound": 21,
+      "retained_points": 96
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-030",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "-543/229",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 773
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-031",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "-517/543",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 446
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "08f72",
+      "id": "08f72-032",
+      "odd_modulus_lower_bounds": {
+        "3": 19,
+        "5": 19
+      },
+      "parameter": "-2198/1425",
+      "previous_matches": [],
+      "rank_lower_bound": 19,
+      "retained_points": 79
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-001",
+      "odd_modulus_lower_bounds": {
+        "3": 23,
+        "5": 23
+      },
+      "parameter": "-1616/419",
+      "previous_matches": [],
+      "rank_lower_bound": 23,
+      "retained_points": 466
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-002",
+      "odd_modulus_lower_bounds": {
+        "3": 20,
+        "5": 20
+      },
+      "parameter": "3325/593",
+      "previous_matches": [],
+      "rank_lower_bound": 20,
+      "retained_points": 169
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-003",
+      "odd_modulus_lower_bounds": {
+        "3": 25,
+        "5": 25
+      },
+      "parameter": "-2254/1257",
+      "previous_matches": [],
+      "rank_lower_bound": 25,
+      "retained_points": 363
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-004",
+      "odd_modulus_lower_bounds": {
+        "3": 22,
+        "5": 22
+      },
+      "parameter": "-3939/2032",
+      "previous_matches": [],
+      "rank_lower_bound": 22,
+      "retained_points": 98
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-005",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-1049/2296",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 115
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-006",
+      "odd_modulus_lower_bounds": {
+        "3": 21,
+        "5": 21
+      },
+      "parameter": "1502/931",
+      "previous_matches": [],
+      "rank_lower_bound": 21,
+      "retained_points": 203
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-007",
+      "odd_modulus_lower_bounds": {
+        "3": 19,
+        "5": 19
+      },
+      "parameter": "-4021/1422",
+      "previous_matches": [],
+      "rank_lower_bound": 19,
+      "retained_points": 148
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-008",
+      "odd_modulus_lower_bounds": {
+        "3": 25,
+        "5": 25
+      },
+      "parameter": "2566/3809",
+      "previous_matches": [],
+      "rank_lower_bound": 25,
+      "retained_points": 353
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-009",
+      "odd_modulus_lower_bounds": {
+        "3": 20,
+        "5": 20
+      },
+      "parameter": "420/2119",
+      "previous_matches": [],
+      "rank_lower_bound": 20,
+      "retained_points": 369
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-010",
+      "odd_modulus_lower_bounds": {
+        "3": 22,
+        "5": 22
+      },
+      "parameter": "3466/307",
+      "previous_matches": [],
+      "rank_lower_bound": 22,
+      "retained_points": 231
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-011",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "-3017/954",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 92
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-012",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "1139/1293",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 230
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-013",
+      "odd_modulus_lower_bounds": {
+        "3": 23,
+        "5": 23
+      },
+      "parameter": "41/38",
+      "previous_matches": [],
+      "rank_lower_bound": 23,
+      "retained_points": 2033
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-014",
+      "odd_modulus_lower_bounds": {
+        "3": 25,
+        "5": 25
+      },
+      "parameter": "-1588/3431",
+      "previous_matches": [],
+      "rank_lower_bound": 25,
+      "retained_points": 205
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-015",
+      "odd_modulus_lower_bounds": {
+        "3": 21,
+        "5": 21
+      },
+      "parameter": "2018/167",
+      "previous_matches": [],
+      "rank_lower_bound": 21,
+      "retained_points": 282
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-016",
+      "odd_modulus_lower_bounds": {
+        "3": 23,
+        "5": 23
+      },
+      "parameter": "-1788/7",
+      "previous_matches": [],
+      "rank_lower_bound": 23,
+      "retained_points": 391
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-017",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "-778/259",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 604
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-018",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "3010/3753",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 65
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-019",
+      "odd_modulus_lower_bounds": {
+        "3": 23,
+        "5": 23
+      },
+      "parameter": "48/7",
+      "previous_matches": [],
+      "rank_lower_bound": 23,
+      "retained_points": 3250
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-020",
+      "odd_modulus_lower_bounds": {
+        "3": 20,
+        "5": 20
+      },
+      "parameter": "2124/2429",
+      "previous_matches": [],
+      "rank_lower_bound": 20,
+      "retained_points": 166
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-021",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-1105/3308",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 84
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-022",
+      "odd_modulus_lower_bounds": {
+        "3": 20,
+        "5": 20
+      },
+      "parameter": "1413/448",
+      "previous_matches": [],
+      "rank_lower_bound": 20,
+      "retained_points": 164
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-023",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "513/2044",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 58
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-024",
+      "odd_modulus_lower_bounds": {
+        "3": 22,
+        "5": 22
+      },
+      "parameter": "1986/1147",
+      "previous_matches": [],
+      "rank_lower_bound": 22,
+      "retained_points": 313
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-025",
+      "odd_modulus_lower_bounds": {
+        "3": 22,
+        "5": 22
+      },
+      "parameter": "3371/300",
+      "previous_matches": [],
+      "rank_lower_bound": 22,
+      "retained_points": 160
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-026",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "1130/789",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 473
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-027",
+      "odd_modulus_lower_bounds": {
+        "3": 23,
+        "5": 23
+      },
+      "parameter": "2390/1319",
+      "previous_matches": [],
+      "rank_lower_bound": 23,
+      "retained_points": 255
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-028",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "1505/2721",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 35
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-029",
+      "odd_modulus_lower_bounds": {
+        "3": 26,
+        "5": 26
+      },
+      "parameter": "726/761",
+      "previous_matches": [],
+      "rank_lower_bound": 26,
+      "retained_points": 464
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-030",
+      "odd_modulus_lower_bounds": {
+        "3": 25,
+        "5": 25
+      },
+      "parameter": "-2101/756",
+      "previous_matches": [],
+      "rank_lower_bound": 25,
+      "retained_points": 145
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-031",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-4047/3037",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 58
+    },
+    {
+      "attempted_charts": 43,
+      "catalogue_matches": [],
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "family": "103b2",
+      "id": "103b2-032",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "1055/1671",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 99
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-001",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-3891/1396",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 85
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-002",
+      "odd_modulus_lower_bounds": {
+        "3": 22,
+        "5": 22
+      },
+      "parameter": "402/517",
+      "previous_matches": [],
+      "rank_lower_bound": 22,
+      "retained_points": 425
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-003",
+      "odd_modulus_lower_bounds": {
+        "3": 25,
+        "5": 25
+      },
+      "parameter": "3148/2791",
+      "previous_matches": [],
+      "rank_lower_bound": 25,
+      "retained_points": 484
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-004",
+      "odd_modulus_lower_bounds": {
+        "3": 20,
+        "5": 20
+      },
+      "parameter": "2872/2073",
+      "previous_matches": [],
+      "rank_lower_bound": 20,
+      "retained_points": 274
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-005",
+      "odd_modulus_lower_bounds": {
+        "3": 20,
+        "5": 20
+      },
+      "parameter": "-3482/2395",
+      "previous_matches": [],
+      "rank_lower_bound": 20,
+      "retained_points": 224
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-006",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "-3814/2675",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 344
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-007",
+      "odd_modulus_lower_bounds": {
+        "3": 25,
+        "5": 25
+      },
+      "parameter": "914/2111",
+      "previous_matches": [],
+      "rank_lower_bound": 25,
+      "retained_points": 685
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-008",
+      "odd_modulus_lower_bounds": {
+        "3": 23,
+        "5": 23
+      },
+      "parameter": "3058/1387",
+      "previous_matches": [],
+      "rank_lower_bound": 23,
+      "retained_points": 258
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-009",
+      "odd_modulus_lower_bounds": {
+        "3": 20,
+        "5": 20
+      },
+      "parameter": "3950/4007",
+      "previous_matches": [],
+      "rank_lower_bound": 20,
+      "retained_points": 122
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-010",
+      "odd_modulus_lower_bounds": {
+        "3": 26,
+        "5": 26
+      },
+      "parameter": "-1826/2583",
+      "previous_matches": [],
+      "rank_lower_bound": 26,
+      "retained_points": 363
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-011",
+      "odd_modulus_lower_bounds": {
+        "3": 22,
+        "5": 22
+      },
+      "parameter": "1972/1459",
+      "previous_matches": [],
+      "rank_lower_bound": 22,
+      "retained_points": 212
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-012",
+      "odd_modulus_lower_bounds": {
+        "3": 19,
+        "5": 19
+      },
+      "parameter": "3063/824",
+      "previous_matches": [],
+      "rank_lower_bound": 19,
+      "retained_points": 159
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-013",
+      "odd_modulus_lower_bounds": {
+        "3": 20,
+        "5": 20
+      },
+      "parameter": "2015/3019",
+      "previous_matches": [],
+      "rank_lower_bound": 20,
+      "retained_points": 138
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-014",
+      "odd_modulus_lower_bounds": {
+        "3": 22,
+        "5": 22
+      },
+      "parameter": "420/2827",
+      "previous_matches": [],
+      "rank_lower_bound": 22,
+      "retained_points": 169
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-015",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "54/2153",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 99
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-016",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "775/803",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 710
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-017",
+      "odd_modulus_lower_bounds": {
+        "3": 20,
+        "5": 20
+      },
+      "parameter": "-1046/2299",
+      "previous_matches": [],
+      "rank_lower_bound": 20,
+      "retained_points": 120
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-018",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "2324/1991",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 303
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-019",
+      "odd_modulus_lower_bounds": {
+        "3": 22,
+        "5": 22
+      },
+      "parameter": "-8/27",
+      "previous_matches": [],
+      "rank_lower_bound": 22,
+      "retained_points": 5166
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-020",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "-4055/2356",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 47
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-021",
+      "odd_modulus_lower_bounds": {
+        "3": 23,
+        "5": 23
+      },
+      "parameter": "1490/943",
+      "previous_matches": [],
+      "rank_lower_bound": 23,
+      "retained_points": 267
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-022",
+      "odd_modulus_lower_bounds": {
+        "3": 20,
+        "5": 20
+      },
+      "parameter": "-1055/1376",
+      "previous_matches": [],
+      "rank_lower_bound": 20,
+      "retained_points": 81
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-023",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-1171/1683",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 91
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-024",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "2741/2074",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 85
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-025",
+      "odd_modulus_lower_bounds": {
+        "3": 22,
+        "5": 22
+      },
+      "parameter": "1737/530",
+      "previous_matches": [],
+      "rank_lower_bound": 22,
+      "retained_points": 433
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-026",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "939/4016",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 33
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-027",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "-815/1919",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 105
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-028",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "-1919/3168",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 110
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-029",
+      "odd_modulus_lower_bounds": {
+        "3": 20,
+        "5": 20
+      },
+      "parameter": "3170/1609",
+      "previous_matches": [],
+      "rank_lower_bound": 20,
+      "retained_points": 202
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-030",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "1551/1252",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 189
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-031",
+      "odd_modulus_lower_bounds": {
+        "3": 20,
+        "5": 20
+      },
+      "parameter": "-1667/631",
+      "previous_matches": [],
+      "rank_lower_bound": 20,
+      "retained_points": 129
+    },
+    {
+      "attempted_charts": 49,
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "family": "11952",
+      "id": "11952-032",
+      "odd_modulus_lower_bounds": {
+        "3": 24,
+        "5": 24
+      },
+      "parameter": "1292/601",
+      "previous_matches": [],
+      "rank_lower_bound": 24,
+      "retained_points": 1237
+    }
+  ],
+  "saved_compact_score_rows": 6144,
+  "schema": "elliptic-curves.compact192-experiment.v1",
+  "selection_skips": 83,
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_001_mod2_v1.json": "8c3d3bb4616874e08895a9fce801512a7bc1bc7180c194b06382480e4b9c9f0b",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_001_modl_v1.json": "17fabbc555bc92274c25b74de826cfdc8fe8926da6f1cdda4f3f109fe97c787c",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_002_mod2_v1.json": "5a4ee93c66557ddbeea79615ef03a0c253c080bcfd2c8d7fe40624e104bd41ba",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_002_modl_v1.json": "a38dd7678a7750db188f1be28818fff4409f2a73fac9b376fae78d3a428ffc83",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_003_mod2_v1.json": "cd9fd8a01ebe6c2731766fb3d4d459bcdccfb608af85f4ad5e56299c6baf0e0c",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_003_modl_v1.json": "d1c3267c1f2c396c2b4dd533466fc13ef7882b4f9834aa98e159803c80f580c2",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_004_mod2_v1.json": "ecd572acef05b720254ead11cf9369b48ba9f47da4a17af869190ba12bfd7729",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_004_modl_v1.json": "f2c5ee430a8db5d6ce682414136cda120c51ef7dcb7983862715cab14a959382",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_005_mod2_v1.json": "bbd06b6106300cc29ae9cbe19b2e3697280f237f436a786da2ff9c70c225738d",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_005_modl_v1.json": "b6563c44eebcecc36ff3bf53fdcb345b02cf3f275c6a51a2e8e62e58f33ac02d",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_006_mod2_v1.json": "5b7fcbe3c36f63bb57b6d9457698b6e69d954bc2d1d7c3f7f6acc33927e0bd9a",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_006_modl_v1.json": "73c46a881d817b6972d14ca9e381ece717bbf01ae8bca03014ff7730fda89f89",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_007_mod2_v1.json": "4f12ceb48366317e30d33f02c1f2e07414042c6826953a99bda1081b8c1a7b4b",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_007_modl_v1.json": "b80d33bafc75ecd52e8cfd7410c92e11ac27aa586ca42a5b08072e168743929e",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_008_mod2_v1.json": "e18763b94def657e54da76680e261fd8a8f5102bc7382c1cd9170c16ab5cbeeb",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_008_modl_v1.json": "4938d1bce7eda3cd38ac758f73907e348c495e1f3e18a88ed05f5fec5d4cbd14",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_009_mod2_v1.json": "66b06910409a20102c0189d7d2c483092be5f0268ee6f4bb58a4d12a8e98bcb3",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_009_modl_v1.json": "279ad63a51c4f5ceec6709e64d9145bbe25c1a04e292d2f6b202c036a4251b49",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_010_mod2_v1.json": "d602192b9c63c42babbe86fc5ed3c6a48a40fb53b553f552c22b96f11b62d694",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_010_modl_v1.json": "b0d8abbb387f1c04b4cdf39c981404d20274b0695bb5acdb01b7ff6558e41079",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_011_mod2_v1.json": "8fa535ff2d46792510e6cf3487b5d190611d9b6e7fd012054921c021ca497799",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_011_modl_v1.json": "bf29b9224f9500a330cfc05797d95e1ab84449ad0049d19c65300b0d9a76f748",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_012_mod2_v1.json": "fb29725f97767926a158b727de5c51b7645aa9333bc04c5e5c54aff22c804689",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_012_modl_v1.json": "9da05b1aef55ad7e65a579771195144f52bf952b491f382df3bdad7812cf8abc",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_013_mod2_v1.json": "ef8cc34f47e178c22a59b75e71931a5e1b662b305123d664d986b1b7405df7be",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_013_modl_v1.json": "33101b1f199f015ede749f111c00245d50ddf500f2cd3a93f0c5efbae7b0b0e1",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_014_mod2_v1.json": "66d64bea44890a2dda46aa407e205f2fe9671e6cbdef3f2c3f5cbbc2da847b39",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_014_modl_v1.json": "e716ebaa3d1b125a7204fc6f79002526c75eb3fd334f5dfb760f6b5e97c0c72c",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_015_mod2_v1.json": "6845ff142af67abb781d500f4774eadc5cb18463ebde0de024097135904a2617",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_015_modl_v1.json": "6b7687103c8bbfabf1d53ba70e5838852e14df2be47a10cfc43b65d246e0d31c",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_016_mod2_v1.json": "820086ae9eec8d23e51b722e751bd093df46217ed5e4f6609830649bae8f9076",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_016_modl_v1.json": "d981a0706b82a0e64292aeed78d50aa407bf6f405d0e6c8e38eaf9d50f6ca53f",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_017_mod2_v1.json": "7b8763820eda789e78c5bfc8f3b49b8fe0b2439d935bec78fe64c6f38e704a6d",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_017_modl_v1.json": "76a5884762fc9be76a382208623b9ebde9f6de75a70e6f7ba12c686b4a049744",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_018_mod2_v1.json": "c554799f8a7c3d7d6e1bb194c6c41f6b37b7cb31ee029855aed9ae7f10901ddb",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_018_modl_v1.json": "319e916d8e7dfd4c984108958c17c86e5d00cb630d05436426e2465d4439fdb4",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_019_mod2_v1.json": "1327081b53824ee815c425019585e130903fc963a3a126ab6e8ed8b47c29087d",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_019_modl_v1.json": "fe974bafe488860ae3b9e5944c9b2f07af31b472c2ab6f21eb190310bf56cdbc",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_020_mod2_v1.json": "23a28974c278909d80831fc8d29921f6146b5e1d5b0552c31b713d33502e955e",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_020_modl_v1.json": "866d63142489685940842e36a83631da0425f60fb363578d8edbd27161c77dde",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_021_mod2_v1.json": "1b79066ec96575568e85471a8822547d80c4874d1eb8b05ea830c9876eea7854",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_021_modl_v1.json": "e410323a60a6e4687324cdb012e9129d16207d59f2eb54bf59e6aec8bfff947b",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_022_mod2_v1.json": "c5c221e21805599fffc0d5bd8fdf4f1d7d53f805446da44cfe3cd6b076d67a8a",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_022_modl_v1.json": "554a29721286a4f6f0dc702b5fe7be9bfbd755516d0af75bd7178de1ebddac12",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_023_mod2_v1.json": "9a7413ef36e5891d786a2b9be981a02d6fb2cb80524c54d89ee78f714fb1842c",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_023_modl_v1.json": "616b38dde81b3e2bbf4814e097d5b6d13d1b8939ad30e0beae248c5c78797be2",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_024_mod2_v1.json": "e3a7c3a5808a1a36148270486ac5a39b0d548a5d62e6c3e9cf8c034e326220eb",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_024_modl_v1.json": "f65109b62819e71d0bb6219efd774744e77ef2400e7614d0de5e2628c65e2051",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_025_mod2_v1.json": "6f313e083c8b048d0d7aa2b3ca639f07d04f035806a1f43ed6e53f0fd1644200",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_025_modl_v1.json": "42fe62d059071c3b8e6ba2106fe4247bb716c451e6f92b767625b1da9c376fb9",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_026_mod2_v1.json": "26b410ee1202d6ee541e448a7536d916cdc27bab4d17041c3491685fed0f3135",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_026_modl_v1.json": "d7c4452d9f6cf98eda64e7d817b1ace639a7ca78059737d0085b300843129baa",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_027_mod2_v1.json": "bfea6a7f0f42bd23dad84db2e28f21aebc221893c48e3bb56d7f2545220ce1fb",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_027_modl_v1.json": "461029cac3f35d4ad1f90817d547b062989693556ff0acaebcbcd57af2f018af",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_028_mod2_v1.json": "5eb10ca89581f991b5215e837d5acdf893619ec164caa45ea989e1c8e8f7c903",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_028_modl_v1.json": "6e9fe7c3de873f795de3951016743af70cb0257fad95ffde123d1220e24cc727",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_029_mod2_v1.json": "07159c7c4bbd63469e8c376ef00c8265c8268e99aca418af653df9cb7bcf4d24",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_029_modl_v1.json": "db26778d18c781c909f79675a42e8ee0772e295307cd28ff2c9628f89fe3ee99",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_030_mod2_v1.json": "5942e6a85a09ab911c646e8950570643bdbff5e52df42d84bf67059c1b928af8",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_030_modl_v1.json": "63ea23588ea86a423a50acc4d4b81b25e4a7fbf828a049e0573a336684399919",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_031_mod2_v1.json": "c68a1a4c384a7fa89a281f3f451dc214f8d948b4e61e5e2184ab69d9ceb5e15a",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_031_modl_v1.json": "b9adb84f7211c796e1c5ad6242767f65887b985836a6d52b6856a7647dc6e316",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_032_mod2_v1.json": "a078dd51d531a77515e3bfbfaada1972faa226e21d38026115d95ed529e61d19",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_074d9_032_modl_v1.json": "3d2814a04d0abf84d9c5b6321e5a4c23b5b2019c48b089314f3b10b22b3baae1",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_001_mod2_v1.json": "a56da798abe302d1062bafe45205375cb7e6ad9d01d68dab8c9da53dc35077cd",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_001_modl_v1.json": "ffca96c890aae7f3f92e40d3a32d747572bbf207d36499df0a4356a7d246a5ce",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_002_mod2_v1.json": "ad17c579c716991189fc4f796995b0a720c5b35f2954e845ce11f275cbc2235f",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_002_modl_v1.json": "34c7d75383f0de9888928560cd12472218797c805a08e354b9bd477bb07224e7",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_003_mod2_v1.json": "aa3248fcf7c4a0561daff9e2300a74012a2f30ab3f3d5519e88c085153fad79b",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_003_modl_v1.json": "bac3bfaa6dfcb268b7c88d5e780e52948c65d376e59dfe352a05fa869e81daf2",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_004_mod2_v1.json": "dc4fa9e397a1404acff3fe8d23b9faf089faa60831fde1dace7dd2977bbc85f7",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_004_modl_v1.json": "5dee2834b76bc388e90f1ec4734ceab6214f0a677b0cbadbb40ab5dcd237e438",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_005_mod2_v1.json": "93c0a64674bbf1856ab5cfabc6bcecfc53ff31e0ea3dbd1cf6af1c9c3868235f",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_005_modl_v1.json": "456963e54e21b1950a5568136eb7e8a84a078ad57529e12f0b17d0b0e4ddfe81",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_006_mod2_v1.json": "7ca3aba6059ce64e30b29e572a82c62754ff763eb410c1d097e995ae8ca61655",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_006_modl_v1.json": "f8c48eba3218dbfc2c7f7ec212ffd15ab855aa7edf4c22accfe38178981448b7",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_007_mod2_v1.json": "6fcaa3907a41ef15672898f00da9d700517ae554aa9684d653080be3107a4d67",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_007_modl_v1.json": "f4dbc316710d37e96f9a7cd9ab5e1d7cd2ee876b4e0c2a69fa243e670720fd9f",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_008_mod2_v1.json": "6b1b33873c39755d5d5769136ee47e0ef3c78630538e7929e11214e487054725",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_008_modl_v1.json": "53f995f18e9c33198094843a7a910ddfc8477efb590d4ef947e7ae49e0e7e8b2",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_009_mod2_v1.json": "6f78cce3b450e72d8b8b61c54aba1743569a23cfe6374ffe43fd98f53e7f6691",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_009_modl_v1.json": "c968b14f1e3c27d123c78b7d54d2fb4572c081820c11d6f8548fd24208eb9e74",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_010_mod2_v1.json": "540640559a392ee3133062f29a08203ba8c109daf1f7dad27573fe6ed79fc186",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_010_modl_v1.json": "5c6c6a93032a36e1239420afc4e14ca1d77b1159a302729f6bcfd485d7efa4ab",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_011_mod2_v1.json": "56af718f4a30ae63c0ed62442de3c5c1e4ddc0e33b4b8c7ad1c19efecf9c169a",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_011_modl_v1.json": "ed6fef0641cce95eeeefcd9dd750cb3e77804c0ccd40de362f20750d11d790c7",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_012_mod2_v1.json": "541b97193aafc18fad17b5f29254d97c4818221b5c5d050d8fce4afd155b4f2b",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_012_modl_v1.json": "94096dfb25684e17b9d3514d6e9a157d1e4cb38aaa93df51cca5cdc3b8f46635",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_013_mod2_v1.json": "ef006b085bb46a9c086ae44a3652fdc44b5a3e173a76c1cb633e4ce53ecf3607",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_013_modl_v1.json": "c99614662a5e6033ca874320eed45e6e81d1deb3b852d51decc41246aa302ad2",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_014_mod2_v1.json": "8436a86f66619991a6c2ce305e77e467d28f709c5a9aab342f90af051c86c3ce",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_014_modl_v1.json": "6ae2d6c6943db7906379f2caa83f6269ebcc931b69b40a90fb532bbad49da67a",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_015_mod2_v1.json": "1e9632ed74e5e1c9dbdf5cf45016936aa4e46ba500141e7466963014c669fe07",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_015_modl_v1.json": "0301ba7da3d6f2bcb356d2f7af1d33c66de314f16dbee17170a67c97ee28727b",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_016_mod2_v1.json": "241a821885c703931807ad81b84ac649a46272be8017ce439ef7c6519a1225c4",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_016_modl_v1.json": "a1de89d3b4456fe5ed02cbd3818bf9c91f26799b4f07fd37282dca58e885d293",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_017_mod2_v1.json": "02e70833bcb33d761e233c77e49806adb887358f0744bf328b1c03e1d9e63a8a",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_017_modl_v1.json": "bfe264ba045d6fc4a5e07cb4ff12b47ede04769c646b0e664a21092fb01c97c9",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_018_mod2_v1.json": "a283bf78ddcd91d976affcdd4dda7ec3ee9a4a910debb6cb201622d38ad35537",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_018_modl_v1.json": "59d214fb0e6c7dbfb8372765b1408f8d9e1994f857116eb4c7721d8c5f9ab090",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_019_mod2_v1.json": "1d08a8615caf2d0837632e5224b2735dacb2fd8f7be0269b427a0ca5d7e79d09",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_019_modl_v1.json": "84d0eadc6e453b67eaa145fbd564e3f7454531792985b548e617c8cdf12c5d4c",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_020_mod2_v1.json": "61373e0a82860eee6b192f16e49caf8c5a5dba90cf17a2d5a2321574119a5b5d",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_020_modl_v1.json": "a3df3c93cfb94270e5f61d9380134e90ee22f26b1c9b1937fdf95a323898e97d",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_021_mod2_v1.json": "f1f334be481be23718489a51e503cb2cb0547dffec249bf9048baf3e831f9fe2",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_021_modl_v1.json": "8b316614fe7ce9bca032da331c9ba8c6784a90ac38765ace9b7e581a52d98797",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_022_mod2_v1.json": "16b7d245b9f3957ab265811d633394f159fbaee50eb33d219ddca37568202777",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_022_modl_v1.json": "c96c28373330172e039aa8fdc60dafd4e32671b1c2d74b7050cc2626ad118c39",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_023_mod2_v1.json": "fa28c58e2d63f5619c078d00ae768fd7fde501353a111ee6e8b40e465a12a5eb",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_023_modl_v1.json": "9412298178c78557d084ed68fd5cb7f358b969821b825c15ef0443e9b4fc5d5f",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_024_mod2_v1.json": "ce0705e1eaea96f6db6585a780c8e9b39b67ae54d41faa3d3100bc80fb793cfa",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_024_modl_v1.json": "cc2155549446403d9a6407e5be86161ecafc602552ae5a65d5c40c23149ff948",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_025_mod2_v1.json": "15daa570742b10bcc7b0deae2764d88aa2f1524008d98dc05a4c29bfbf06f30a",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_025_modl_v1.json": "64999c831b0e701df87035161e43e9de35bbcfde749c32cb731bcb04b7304259",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_026_mod2_v1.json": "3b4547a47a40d1d95b9e69b6848f2013c71b6071921d1d735706b9c6563d98f9",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_026_modl_v1.json": "c2e3231287ef3c7af31bfa6e87aa6c579240fa68e10fb7d174e3dc810b67d03a",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_027_mod2_v1.json": "46d1b88258e88c34d5203d30accd3aa63c1bca0c749951ee9697da5b715ca508",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_027_modl_v1.json": "eab8378d9ccde3dc47e52f3fb601ce316537405378af81b7217ec94ad3fc82f6",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_028_mod2_v1.json": "5d4c9731a3b64b1bca8e5414afb84509f541b3be2d981ff561fbe1a2ceb83a93",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_028_modl_v1.json": "277131a936885fda36980a21a1a21b77320fa02d2b2f5991f9c03dc58e3b00a4",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_029_mod2_v1.json": "860365fbd93d93b78e3dae5675b9fdd23864cf5216c811b9921ad8ae72b9dad7",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_029_modl_v1.json": "beaa9e5dfa754149c2d3b1d7b12b417b350428d9e3745a2f35e2681c597ab9e6",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_030_mod2_v1.json": "131cdd31e40020172ed5da9c7912b9799930e477ef22903374f00f8e14a2845f",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_030_modl_v1.json": "f4ea48d7b90094d60fd2bebf196be938451212d4bc96583025aa4ce98ae3b04e",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_031_mod2_v1.json": "f1865ecb682d49d36d833af979af36dee980b6371053b2afac45e25f5200532d",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_031_modl_v1.json": "de335dbfbe4024a3f813637df6f29807c8847a624a75695b98ea1a3eb913851b",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_032_mod2_v1.json": "26255cd13aaed40a27c37cfa2d4680c3d87457715da5337873357a909f0afa01",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_07ca9_032_modl_v1.json": "3d37e5a2f8a78560aef04009d02facd29d1d464d5ed6da7c8afa0379b429c9fe",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_001_mod2_v1.json": "af477b83238f424c2a0272bfd9241037c15b689639bcf6a629be6a860561f7e9",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_001_modl_v1.json": "bb8aed9f1f7eb38419d8405ccbcc192ce6e9f81b422ea60bfabf4fad73081d40",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_002_mod2_v1.json": "c7cbbcba4fcd19fcee3ccc35d00c41b06af6fe9d7d4e4c8dd6c0a011e26346f5",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_002_modl_v1.json": "8e60083f56cbbf9a13a07471eb1983472527ac87d38c5a28fde21774ffcd0c03",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_003_mod2_v1.json": "ce001b7d72afa8be238da80b8d2429dfb3e0a01c21457910459021d0adbfbe58",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_003_modl_v1.json": "421a577d14d1a9ddb902cb03bd6f98163140d7a87ee4520e01c7a973924044d6",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_004_mod2_v1.json": "5852fa51a0d4108085482fc631c7007b76644434438d729aef786c326c3d31db",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_004_modl_v1.json": "396be2662fea58d36778a8e841a94b654b252fbd50baf0844dab15bac431a658",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_005_mod2_v1.json": "3c43dedafdd6844bc53c0a2e29436499c3cc438a9aea8e62331a39c467d85ca3",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_005_modl_v1.json": "e077766d8ec614de940ca9016a65b8b3d7605e964582edcc9b4dabd90a9170b0",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_006_mod2_v1.json": "4380f3a621b4c4cd2313dec73b6f028a5456a0859a6775d9ed3640295d83240e",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_006_modl_v1.json": "23ebe87d0c1a6c2e06b3f7d535deb1145943de4fb5b40c2d8edce08b3f3cd291",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_007_mod2_v1.json": "e0c26d233281699c4081ca436b2353cdea03da349bf41329a368cd4c693e9bcc",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_007_modl_v1.json": "dd641941f10e47965691f2951d3f7200d3b257b88e27fb0875a66a3d0ea00356",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_008_mod2_v1.json": "7910697f358427cec4be28f3ba588c73a91eaa24af824fd64d3bf93e5e868ccb",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_008_modl_v1.json": "8fd55b2d308764c6afbf489e9f136139839c16e4c4593797f26e45e1e39d0ca3",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_009_mod2_v1.json": "98b08c36b8fa1099a52db676e4b339bf857833707643b2b8a88bf09932b28480",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_009_modl_v1.json": "2ff3e043f29ebb1fb16e8130662ea3a882fb8aaa063cfe38f5451dd370a10175",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_010_mod2_v1.json": "02eae5c5f129ecd6ff0988bd57fd8a176b5d80a4a4fe8c5718486d99a5114e25",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_010_modl_v1.json": "74e6aa502aa0e58e673b1cb0691541aa1aefa5571b8e22f8285396ab2e6db122",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_011_mod2_v1.json": "0963a7f67bae8c3b4806722cc8e24a552d61ff80ac24cc04b552e88f67968dac",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_011_modl_v1.json": "7784d0d681e4efe8cc343a198676fd6ed6f0a07e1037fa769341ea657029fc8a",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_012_mod2_v1.json": "eea985a3f4baaa0c848b07809d2b771da0e3f83fb62df4fd5b513c733e609e00",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_012_modl_v1.json": "6266143424f0284dad86b9678d8a72d598be0b34fa74ee317064ea48bf3c538a",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_013_mod2_v1.json": "d8d9730d0194766c10cfb86842aa9e050c23928118fed26a52858c8ea79f394a",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_013_modl_v1.json": "5bb0578a9f5804cd3a6e22b0fc746f4f9f9fac4c5b4db9de8e9c3a2b569991ba",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_014_mod2_v1.json": "bb8874be19a84cec39b20805f71cfd1fb01dcd17c06ce6c227a67221c6185ae0",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_014_modl_v1.json": "20fb3bd7f4218a71f931fd1842ca6f1988d82ad2c679d72cf13a44212651b2e2",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_015_mod2_v1.json": "81a65d596810cfcb7372715b97b8a23e8f08d8710988955a6eba9ebb47e9002b",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_015_modl_v1.json": "eb422df1cd6ee14a3201a5f4ba0310d21ffeb0389b618c924db90a2d5ef55762",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_016_mod2_v1.json": "a2e3b4bc918d063a041fc796086708be52234b31cf03ff5c94fa6f2acf1a8a3b",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_016_modl_v1.json": "e0d2abb04d2310123ca3b29d3204526ef6483dce0d2b4977f3ddc2afc57889bf",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_017_mod2_v1.json": "79b8130fb3d8952254e5620718efe3de22ad66da685c9c8094ffd58fff77c0f1",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_017_modl_v1.json": "0286c566015fbe71333f79b86f7087af18f4c3d11dd70a6e08627d188788bcad",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_018_mod2_v1.json": "6ce5a244e89c232a25f24c0e6ce6b0c0b5cb2d799eb177d764a7eb8ec478a6ec",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_018_modl_v1.json": "7f9e72faeb5d8efae50a058bfee1b8885ad7856fa1ea7615906c0b97ada473d3",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_019_mod2_v1.json": "f27dd1cde61de1d6f94f3c3172de7f5d641f02b7bd60ec8f6457511a995c2400",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_019_modl_v1.json": "2944bc1f11b0ed598311d6e75c246124e6f9dd9ffdd06de324da12f852c798ea",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_020_mod2_v1.json": "d5b13983528f69b4a32dd239033547c7418104ffe171f751ad09daab6f3cf1a1",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_020_modl_v1.json": "996b9f7d093bd59a5584bd433a519ad3b8a69f693ff83cf55ae0f23f7826352e",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_021_mod2_v1.json": "506a320a57e68b63dd608508b03420b567042b2ae10064f7a376f2d01427c308",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_021_modl_v1.json": "390e45e696dbf2988bfb413d47e555ca37d97f72cc4d5d86877f935739463021",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_022_mod2_v1.json": "8de7975eb5cf7530a2c56d3d6c2670664b6555af4db5d716ae3c8fb0fe490b24",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_022_modl_v1.json": "e80867205122305cb51089d28a0b6c211c98ad4d2489c2cc69806ce701abe1f6",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_023_mod2_v1.json": "2bc33880cf82511aed851643cbe75abce71c5d3469b069ab39d099ff8cd80e2f",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_023_modl_v1.json": "dbcf3b9c3af90abd951da7cc12982637c2a0293bb4b4defef4964c2a77dd21f3",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_024_mod2_v1.json": "0b7298bd6cd79bef233186e72cd3987dcd79849287463761351b81f979f6c2fa",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_024_modl_v1.json": "5a8ca0cdabb534c290ed25ee19d3c62f7bbd06036b0f483fbb92cd5047e2fc30",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_025_mod2_v1.json": "f0b96692db38cc0c545414bc497db2b1d302291b06ee9f09de8f8409848696e1",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_025_modl_v1.json": "b69aa051b721aebf42bbd618a27c7026aeeb9e11a82fca7d47ae6618b40d1f97",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_026_mod2_v1.json": "a84f3f1f1606eccb963d53490256a96b1b9cb9a9efc8f9e1f4ce34a351b4d6de",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_026_modl_v1.json": "553982bae774a95ac2ede384b6d39f244b17dc41a0b03db86b830783ff8d096f",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_027_mod2_v1.json": "95268cece772cfd2b059d0d3d8017764a2dc920384c1c69c42197a8525b967e7",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_027_modl_v1.json": "be80d7a966da1bc96a37d7721349e0ed9cfc40d19fc064f32e15b43621cf892d",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_028_mod2_v1.json": "63bf5a24dd2a18ab829f17a1775cf2908eb67f565b229010a41e51d4aec20a85",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_028_modl_v1.json": "2944ae546bce3b780586b62c60cd408065077888a2a7aa2eaac9f7e358ef5616",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_029_mod2_v1.json": "581e5989bbd05f12b13fcbf1bcc86d8705677ced905c0b67f23b9aedfbdb6209",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_029_modl_v1.json": "c0621039138c6bfe0b7a73517bafe89eb1dafd24c430ccc7bec4f813c170eef2",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_030_mod2_v1.json": "ac635fd4446f48c558d963ba82ab7d6c0ea413c92b57d3a3020f96482ca2e503",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_030_modl_v1.json": "d92291dddf98cd87c0f0d707ebf0d1bccd07b4193cd44f3888d0d05373ebc6d1",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_031_mod2_v1.json": "b9bce7fb540324cbc2bf08a579cd3c8e72b40e102512224fd24827d7aa2e3775",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_031_modl_v1.json": "d490e325f69eebfbf0c40e4321d0b7db987ec40ff6466e740a5f401ad965ec87",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_032_mod2_v1.json": "c82ff0f65c3d5972d814e26eb88e042196a592eadaa62919df749ba65db3eadd",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08234_032_modl_v1.json": "03082841702cf62d644e235737d1da7e19ce6afe477a27061181672e10f99889",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_001_mod2_v1.json": "67cc4f8f3823423a36a70fd82d9c6cea6d965a3348678c54f41ca79b5e811364",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_001_modl_v1.json": "fd213bf846f5b690de4906c4c22ed6ed4f0f5c1097b012d642d5824bcb5766f0",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_002_mod2_v1.json": "ce6bbd774b01bc9ef4abe508c77e0f3a3cc558f96ea76c3696281ad454d9d68e",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_002_modl_v1.json": "16b105af6546f313a79739ff7c4c17d5b7cc30792e7c8ddf43a39cd51c644c33",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_003_mod2_v1.json": "73de822017c9cb928736e599d15f5ae4cdd84f5a8679d17bac7914425f24c1df",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_003_modl_v1.json": "b309632578dd98400346b6af96a3666078b2ca205dfc604500db96db00b49f42",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_004_mod2_v1.json": "04007e146ab030a1fff85a0403f28b65e03136be5e9b174a5a3afddaf62d1cfe",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_004_modl_v1.json": "8ff22e51967a0f004b59e77dae8fb0267211a54060534ac3a0b979dae174af40",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_005_mod2_v1.json": "b2bbd88fd2486bf528eb9a11d0f77ce5717355424a985ed759f973e106fae319",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_005_modl_v1.json": "62be9e6661e717a845961858eec8198d04a6d11b9e41abed7f00f78d610cf3b4",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_006_mod2_v1.json": "11ccd233a6ab6814e78293f2dbc78fda3f275a95bde2d3d4de043bb137d10f95",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_006_modl_v1.json": "5ca81cd0371b714654763c883380fdfa38253db81471561a3be7d19057dabdeb",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_007_mod2_v1.json": "caa22468fe4910a2d77854690544f1e7813abdb81abe01c17a2e32ec4402547e",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_007_modl_v1.json": "ffd5c38477246f2fe3678ff707b0d9be83b6b9e10c37d10b0ad89d043d90f346",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_008_mod2_v1.json": "dd1cba3ca00f757df858fabc5a25ceee17f656863fb9bb4af02bfecc9a9d9104",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_008_modl_v1.json": "b37e34c2fed825a9aca381030ab3da4bb84a9eefee602e7c77edface1baa6aa7",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_009_mod2_v1.json": "7bce3928d5b7d2dd186dff971ffb18388e2cb27189857cd5127115ad7c0e5d83",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_009_modl_v1.json": "53e1076e4f03ca1059a454a3e454fd5c344233cfe10c68b8b9b5fa5381756865",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_010_mod2_v1.json": "226ff055a80ce1ab8468d2ce9d554dc33da88b0db064d7bcbf1d4d13ca37e003",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_010_modl_v1.json": "624765a4b9573c6067c894df1ecb3d30bd96e8ee7a5ee56b36f8bf45eaf37230",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_011_mod2_v1.json": "b43a345e669d8067955ccde2e67dae1cf882e07c031d28e933e5850440995401",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_011_modl_v1.json": "a87cd5c5714b4132a676c03007bcd9c66b05d1a20626d41c6fd6a41d96cd02d3",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_012_mod2_v1.json": "de08fade9510f28b621440d701a5023b69d822924dfdf6e971bf284bcd721645",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_012_modl_v1.json": "986b214ad94c6d398944d66b8f5dbec86598fac66c83a67439d474ff57b7949d",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_013_mod2_v1.json": "bd16ac3f26d9a7c614911910aec4c8aa3ee42f3e24b61905c9c6fdb303d2edb1",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_013_modl_v1.json": "3e82c0a5453145769b46dc7688f3821ad1eaedbd0f33b1cc45d9c821c354ad43",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_014_mod2_v1.json": "de8a1def19a1b62a049e48550deaaf65b52fe302a9e81f01a7b4be82fac549f4",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_014_modl_v1.json": "8b4e8d22c848405e1347127fc1ca6c71453fed232fd90ec8fed5b21f552865da",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_015_mod2_v1.json": "00e7f09e66e31fcc0ed83f0c5a8cb350ddd57224b9fd46e324fe3108bed187f9",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_015_modl_v1.json": "11f5b50c0db6fc43c069e6606ff497084f51494da74484068ba08b1f14b1c4f3",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_016_mod2_v1.json": "a35eb9e468c82627d9a6ce0994c3c08b21d60307ab4c3f5238353d7454b2cf8f",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_016_modl_v1.json": "477e62d31a710f268b4007f1ef735ab133d56a181d16bc2d4573f35c8e66f407",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_017_mod2_v1.json": "fb20c5b85ece1022a6e67a022e9742b54d47de9934d1af67f336862402eb0433",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_017_modl_v1.json": "1c11e55537023db6f0d61416f37f64ab3b63c6f3e9f26a67c8d289418cd3e4a9",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_018_mod2_v1.json": "9ea02eb6cf2fd14cab4ec5221122721b48020c9dfa5307839cb8e7068119de1e",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_018_modl_v1.json": "6ee28f562f923ba9e9c7e167b30fc14589870f5bd0addb4ac9615e6d3095aa00",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_019_mod2_v1.json": "0d478ed2e10f44284a796f44d13b5d1cecc979913e583977321336797ec13f31",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_019_modl_v1.json": "1e630588d18ffecf72c36bbbacb68c815da188588d847594ab7d28da70e007dd",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_020_mod2_v1.json": "6532d6c78119407d808f5ec22a794ff6e86dce1be9ba80ad98e05860aa91a13b",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_020_modl_v1.json": "8b3f352cc48d47325ea8d024522eb4f6ee26fdd698a5028bbdfd64de82016bf3",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_021_mod2_v1.json": "3eac1e17dad11956684eb379e4f7b0770b8d0e8feaa7d914a2ee712e96c2c8e6",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_021_modl_v1.json": "b5534a8f342b962aa5ecaba9acdb3415e30ab94c7500841143554684f1d92378",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_022_mod2_v1.json": "c7aefd7e425ef58490a426d4bfd86d11684ee349d5033b6bbfe6ea7c0a34df88",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_022_modl_v1.json": "bd846852fc238c35dbec1dedf4da73457d7beca59148cc203cb89482864019fd",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_023_mod2_v1.json": "b9fcfe03beffa6155b12a5909f69ac92c9818f3f8878d7f32f225a3da4c840b0",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_023_modl_v1.json": "94ff11dcc90e1d583717c157f6d0d6f0155889b3413e465a66b8e3b0a5a654fe",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_024_mod2_v1.json": "06bead3f2767921baea03b82b09c4f9224cd105c86802880e74aa707f11543e2",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_024_modl_v1.json": "b45e9407f5673e764f0df445699c092b0088e8b57c0592a6eef47e1123abd8b8",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_025_mod2_v1.json": "9265adae3aaa2e641033bb46e30f5e77ec004731c6223a7aa89a4cf05941edb4",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_025_modl_v1.json": "bfb2c24841cc75ad9ffe11df15857564cb839981e594baa89cc5c773f1827ed2",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_026_mod2_v1.json": "0fcf2fe1568eedabff9a0124d8f3aeea71c2b8f0536e4dec5798ac7968ceca78",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_026_modl_v1.json": "b83c6922bf26c67f0745c75a4ec0d23a738e5d827b9cc571c5261e35f23693d3",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_027_mod2_v1.json": "8badaf49e7216115c16bfabda9be7a0ac3ddf2cd28023b43df2c64a7576e13b8",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_027_modl_v1.json": "e5042454530f7db8a656dfa9bb7262c8dc9b7cd05407be61eb3e9a59f1d39e9b",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_028_mod2_v1.json": "9acbe338764fb2fe94bcdb2cf3ef584db3f5dfddcecfefea42cc9d6efdd8c470",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_028_modl_v1.json": "853b57bea07012719624442f7bd45f4b4364991522afce5a21d9f3f55a5f58c4",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_029_mod2_v1.json": "f7e5f8b75bc208a1f09e3ddf1b71820c2133575266946af32d473804c7199502",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_029_modl_v1.json": "1a7e4ddcb5f51a22120e21c0c5721f0b77577f2799ad212747fb646e0573436a",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_030_mod2_v1.json": "a2c468502ab7aa00eaa332156c41d1dff63c553e55def3e5d514407597120efd",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_030_modl_v1.json": "7bbe94b4b9726fbaf29353cf26c6908ab67ed2b845f136a397b63740ca52ff4f",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_031_mod2_v1.json": "c07b94a10f858847972e527815920bbff66f344ec04eef7a0da2c4c007a98e8a",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_031_modl_v1.json": "a0d136de1e44bcd1ba8e8d8dbe4bfd30981a505faaf5f0487a04299c2660bdb3",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_032_mod2_v1.json": "95363abe845bd5ea8f44bbe4d1dc92bfa9afc92527027e78036cf2ad972cee38",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_08f72_032_modl_v1.json": "d27853f3b07304b531bf264173a0963ec31691bcc172d4a4f4ff506e538f60a7",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_001_mod2_v1.json": "96a91cb2f253501ee2453ec1aa6ba544834071de753c0069cda24df577b50dd3",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_001_modl_v1.json": "01689a253638b6d0091e54c63440ef80a22c0b7f4afba0940a129c08704ab79c",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_002_mod2_v1.json": "9b7f7a2047520c132785f5768b8723cf35ff0d6df65b50da4b788a4199d16b13",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_002_modl_v1.json": "8f86ee8c92ef77f85344c28c68be9eb65fb60a679c2a62a35a60f0270a0e7bec",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_003_mod2_v1.json": "bb999cca8f043dbecece70710e4574a151ec4cb329e47042bc39aefd30ebdf4d",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_003_modl_v1.json": "e2d3c73a053a6fac3d61f5dce919f087a4a3c7f9735dad57258f702187c9c842",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_004_mod2_v1.json": "c1f478f180472c43e80bb175179d1c8538e668b4a4b3d5f0ad571c0b51b93a87",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_004_modl_v1.json": "d3676cb3d050e81faeb73348e9480f610008113d4fcd9ea4c43fbe1cf829d0ff",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_005_mod2_v1.json": "58ca07e7021645d66a6f1b4183c162c83df8d3a3593d1fd1ad127f741a9cda6e",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_005_modl_v1.json": "bec7a6b8480e6579970a0c55b039d65e8b643ac80eac1d2cb879f7fb5a51b88b",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_006_mod2_v1.json": "dd66d93d82815eb396643ce4293b292892ea3a725135f4c3b1d3cfd91b50de87",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_006_modl_v1.json": "00a5e46bc020c1f757a26a45ecc516a7433abe3be5e7e4d31b6c76882238a6e2",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_007_mod2_v1.json": "59f67a55606750594116d4701e273f490e48705bf3b12dd6fc45ebdba14e151f",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_007_modl_v1.json": "17622676bb3adefc168422a384b8f868f4086e9feb8fcbc3cceaaa87b129424d",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_008_mod2_v1.json": "f96eb7dd60d0e9a93b86f3f6deac80f6d778601457f3d1a672a1ae5c2a700d59",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_008_modl_v1.json": "23837cc97d3fd68dd27cd2cc44ddbc9f4b28ae51b653e58a78dea44387eb0f38",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_009_mod2_v1.json": "447a055510054ac76f6798a06cd5275ff631b0f780f9fb8e1d67dac4b7c73729",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_009_modl_v1.json": "790fbdd2eecb74617e09c9b993440413f0e295397adb54d635c1d35c9f086f92",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_010_mod2_v1.json": "5f205f1f286df01f0e7e3d2545f32cc06d8faa57eeaef09a69b001a4c9a565d1",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_010_modl_v1.json": "4b9a202aaba734b191dcafa4f0d81efd1b6acb4b58975feb2cd1ecfeddfd9b12",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_011_mod2_v1.json": "902d691134dc9470215ddfcf014bff926430de6f37b8f40f75722dae26a6e163",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_011_modl_v1.json": "17522cbf6fd403892d334093422438d82fbefda4126c7c370ff6f8f3943e4f35",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_012_mod2_v1.json": "fdd16814df1e854866ecc9b77efc5972d0c6ff76745831549c3c659e9ba90963",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_012_modl_v1.json": "e11b20502011b3ca134f4e933c07be2a5c93c9121f83344af7f67509adbf6c2b",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_013_mod2_v1.json": "2756b80e6c8e1bfe48fb5ea8a90284032bd8b7e969a03f772c9719b70abc8188",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_013_modl_v1.json": "73f4b1039c39b0efdbb11abfaad6e1214a9bd382daa3e5354410323be016a4ed",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_014_mod2_v1.json": "a8720b50aea3a97931d375ffc88d5ce8fc3bd261e493603712eb93c5cd86a169",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_014_modl_v1.json": "651c3278305f21dbee8a6c502b5e45ac64221b760f6923642c48a14de30d9d22",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_015_mod2_v1.json": "51c8ed7749825bcfa67b7a968b36c92a4e44a3b656b60ddc7343a92dbb60aa11",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_015_modl_v1.json": "09ea09a23b4e284f470aab9339bb91d4fbd66369d0e5e48c07888cfeaac69254",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_016_mod2_v1.json": "6e3f4f90039f61f81b2e3e1164fe3dbfdc3ae02027339dc061a7d9396fa3709c",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_016_modl_v1.json": "0765fc80de5fc5b4b452684ef248e49090599937962625a80e27ecfb90135763",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_017_mod2_v1.json": "8452e63d5dda7aa29997112f6be413b4144c9402d34607409bdc70b102247db8",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_017_modl_v1.json": "037c1de7298b3871b21d735a295c44e93f273c160abbf39314c2d71f7b96dfcd",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_018_mod2_v1.json": "b9a1ca02756d780677a98aefc2e7ccb7cb367e99cf8a8be9d75bb7921edd1ea9",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_018_modl_v1.json": "25315f7d18482516e0ab6d6721070815ae72f2670e87bed40a083a9afce756ce",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_019_mod2_v1.json": "f20b3320a0b1c87c4f213f6b352f7fcfd9e494666a226c07e2b06cb3c0729af3",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_019_modl_v1.json": "f376e101708b1bb78d68d9a116118cf68a89f3492aff086698b9a1d85422aa1e",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_020_mod2_v1.json": "9286679d3ecd91a42a8d26fc9a6380c31c0622bb535e5a2a5ff3c15bee9abaf0",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_020_modl_v1.json": "4f749b3a2a5d89510b522ae74edd9b2979adfa215c218b27c8d7a52aeec08cd2",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_021_mod2_v1.json": "f684d0ddfd6da438b0266e9f868945972d5b2907934f4d8e306f7a197196973f",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_021_modl_v1.json": "82f0ec83b6a4748f2f8bd07577b318b24d1e12253283c906daa9a3794afe059c",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_022_mod2_v1.json": "7ba3d55252121eb9404c738e18e1d7e74db7fdaadc45d72d6025f3ce2b317dc9",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_022_modl_v1.json": "a8dbef3a593815a27b0da582539d240300e56bb612d2a152f1e53050037aa31a",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_023_mod2_v1.json": "000e54be4a4400886b99a19567e989b8063169ce79702128203a2704c7df6337",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_023_modl_v1.json": "9e437c9210d90f8fc8ff68960071631ccaebe4915f27595bc0395c95772a60ee",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_024_mod2_v1.json": "3f9e1d12d55d8e3cccf582fc88260511741092d513e8736187dadf9e0bcc25a7",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_024_modl_v1.json": "1dc0837f95a6a0441082513bee5a4a531e04e92b198172f1206e54234e5152ee",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_025_mod2_v1.json": "e91f465b4766f07984ebef0d0bffaad758955c29d212ef8f1093c969a73dc274",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_025_modl_v1.json": "0f1e7b2a65aaf8258cc5f8fd40b213de79de92478e77f8e0c62f269a9c618ece",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_026_mod2_v1.json": "026d7120fba7633ecc3a8ad866266065877305efccd80dc78c8fec013914b791",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_026_modl_v1.json": "d4d04eacfea5fe45896ceba8a2c7101f7a4dab330faac7006fb0fda22c762b7c",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_027_mod2_v1.json": "276ee4855bccebbc40ebfa03da7a645aeea9d91fd5d25ab42247a81e7c76571c",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_027_modl_v1.json": "c28a0cda79016e1758c4d65c120f435f348c744bb71a1fb561a3a7e056d33e59",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_028_mod2_v1.json": "0fbd12cb1b1ac089029bb859893dfc89ee40de734511098e80af1a1efe9f8f1c",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_028_modl_v1.json": "b52a83d4b1912dbc9653bd4575af76e4d7e201f5d910077c93b2d7f9d665e2d1",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_029_mod2_v1.json": "608678c17a3754926abacb0a0a2312025c0914f70be7606aa6f6811428caa9bc",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_029_modl_v1.json": "e88120d72ba74b9a15d88502f946ebbe419bbca3bd7cf6855da91ff3946d5fbe",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_030_mod2_v1.json": "ef87eab8fc72c26ab9e9e1eb0ef36aec2e065a03ff5d650516b7a3ad49931cbc",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_030_modl_v1.json": "2518ccf7e4a916153175a6642640a0db6c3a29fbef1fe06ac3058ba403146c39",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_031_mod2_v1.json": "3ca60b0d9ab7fd07fe40f990af174481b10d06125f3ba38351a04cbcd29b1adc",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_031_modl_v1.json": "437f4914e08cab22ce20c43e4912e607862b449ce95c46789894ba190b99616b",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_032_mod2_v1.json": "ac0aa03fd59d8d69ec32216652674045fed46dd2479e1cab5863a9418fe7cbac",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_103b2_032_modl_v1.json": "9e58f4df52e39d42713430e7df335e2b2e127fcc6c82554e83e9aeacb0ff3689",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_001_mod2_v1.json": "97ac2987cd5b5d22bd0aad80e8512c720af3110f9fef1b726dc9ce9df24d703a",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_001_modl_v1.json": "2275b69bce0ae12c38561a127534d8ef30c1b1965d621816bc901158ad6fa596",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_002_mod2_v1.json": "26c8a74e0add4f8718c04625adf754569b29fd103ba04f6b0cc074d9af1b6b20",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_002_modl_v1.json": "150cc9126b2f3e9ba59a41c23b9a9f75714b2fcb6abf7324e9f6ef136307f639",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_003_mod2_v1.json": "210f224cbd7a9d9f6d6be655ca859627c2081c1dba1e87d32c9078f003e5260b",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_003_modl_v1.json": "512207d70d8b13c63a185f9df81bbdad28d45feccfd3227fa5d32895900762ee",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_004_mod2_v1.json": "f04afca732c48ccbaaaf6a3971cdf1e177b6b5fcd3c221ac7b908cf05bab3804",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_004_modl_v1.json": "aab6ef4f09f8ffe75524348cf805391d7c02609620aae29f194e3c091810779d",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_005_mod2_v1.json": "735300156ebf9c285dd4aae936e5cb5b6c83826d908ddc27e0dfd673224c402e",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_005_modl_v1.json": "66d09edbfa67bd97471193307e0a9720f670754e490341eedd6f284d78933007",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_006_mod2_v1.json": "59943758bdd8c60038ac416633141456639884db355d7b2b89f061e039a5f1e4",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_006_modl_v1.json": "31cf217cc79c11218d6c7693fe83e264419704e11dece1d1dc2fddcccf050b39",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_007_mod2_v1.json": "7af3df0b9fe774c142c246aafa755b1a776fda4bb9c3360456d4db1c63f9befe",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_007_modl_v1.json": "c4288ee657123b374e5d672d9f5228ef7642ceac80b8042e48626e9ee0783470",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_008_mod2_v1.json": "9540a033ac3415fa35b026ae963d253741bc2911ea08bc1e21341cd146445e6b",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_008_modl_v1.json": "9fa17d3538a7eb2c3df14e92e0d9d9ed34040a993b9bbd20bd2bcfc1eb42a10a",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_009_mod2_v1.json": "ff55d2d9ee346537214014b15fd85af56611533bc7e7a5342bb40694a3277f4d",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_009_modl_v1.json": "4ad00e7d08cb8209122b12bacffb4d1b1c27ab2d0ef47ac5903d588bb72e01d4",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_010_mod2_v1.json": "3174005c3b67dfd221455be50523c857b0244fd9ac58a45439ac84573e8457cf",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_010_modl_v1.json": "abd1e7668a9d3df16f03d905f38a25fb325656ad73e87d1d17bcf3cad354d235",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_011_mod2_v1.json": "731e21c07bde13b89de4920eb5e4bdf5d422c9ecb603796a21a487ed52f2eaf6",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_011_modl_v1.json": "3cb3db687cb57d53f66efba619a7e4285094ea2197df6ca1c92256ec6760c587",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_012_mod2_v1.json": "8fc8183b80a1a6a6c1fec2a0b68860aab45b9c2110c4217d42b2bb56dbe49859",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_012_modl_v1.json": "0580eb1f39f95a9fce3cb605c98befd73bebe936387fe4b9a5957a8415437505",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_013_mod2_v1.json": "fa584e53bef4fc307f5acd4ac602478a5588089057d563d594a8c06ac72356dd",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_013_modl_v1.json": "cc6e4e816d8b4f309dc479bc7bff41d62c48efad66c13ff1e922de4c4792131d",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_014_mod2_v1.json": "69479ed1ee4470839acf1fa20e26e9af1d35626a122ec9492f61ba679a2a14ed",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_014_modl_v1.json": "a0105d3c6f19ea947c8411a405bc26c9a22274c49d4435a8c19932a1a8c3d881",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_015_mod2_v1.json": "58773d4f71da84d31392d79ab23b4186bfb7c870999f716d33e78e9a123aa58d",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_015_modl_v1.json": "9474730dda9ecda5b36707ae6c8e8b0b9391a32d326fb29effa26662043d19b4",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_016_mod2_v1.json": "aba133e8301273743a73642d0c9b167bb9930a609bd8223b79f1f831733e6862",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_016_modl_v1.json": "07686c9d3ec3b580cbd6b2b3f896ff57d71a61e9170565999914cefe08e41a9c",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_017_mod2_v1.json": "a5476d9f6f7ef5c555680c44d34623f4427601783105cf76af0223e13e3f3aa8",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_017_modl_v1.json": "05dc4c47601308e0c94d5135a5b49abad5b3b455dc01711862acd4970103fa45",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_018_mod2_v1.json": "7a803cfe75a6b121ac1a719b150ce0290cc8a05b96d54864fd3451dc1afe9424",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_018_modl_v1.json": "61fb05bc168252c246ef1c79d3e7295c24df33ed8a34ec38a05c5c98988ab800",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_019_mod2_v1.json": "43aae1d424af5fb4270f1ad818627b28fd956f568bcda8396dc16bcc1a4672ff",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_019_modl_v1.json": "117a4952a7392066b078df6bc85455bf1e077a07118eaded83e3e67a6a1bf811",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_020_mod2_v1.json": "9af2e04aa83aa608a6247367434aa01d5cccf9e4c592a425d2a383124252c5ec",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_020_modl_v1.json": "19f99f195fb0cf763f9db4cecdffc6becfbe9d8ca65e8a8b6762d905d82f037a",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_021_mod2_v1.json": "013a104cea262263009ce08ba49adf9bc39b5d5d3748edc6e36874c11c32e749",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_021_modl_v1.json": "f23326a9bc7946a00832495e956e52263983e4482c908fdc6fe2f27f66056dab",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_022_mod2_v1.json": "9970c51b880e791f3109d9b65aa9c4db5966e6ac5f7f88a91b13abec02ae7551",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_022_modl_v1.json": "4992cd591528f79604d0338d4187a464e00663889199efda272d52f62b52e5ba",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_023_mod2_v1.json": "fa3528cbc569f026766a8fd7048b66ccdb06dcc652f96bdf1b9761da1a3db68d",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_023_modl_v1.json": "47f85c4c42c95575b253024bd5c9c517cbd64be41bc8b45f12d01f62f883292f",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_024_mod2_v1.json": "346c1270e7f098b049c85eb816dbcdb9a189faf0285b3ad7b8bb3e9510036db6",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_024_modl_v1.json": "6185a011176593228f17e714e1a0af07a09cb806ea35ef893eb0ca62678be193",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_025_mod2_v1.json": "fa736572255f3337122da4361783808076c71f77be2b8fad1ea670f126380d6b",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_025_modl_v1.json": "87863cc8ac5c751579789dd51770e05935ae48d128d741fe67fb9952926c9792",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_026_mod2_v1.json": "5fc9a2486bf982f70d9a8107858113f504fce179291ee0f1a4cf2dd9e43fa3d3",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_026_modl_v1.json": "9937259d6927bd686a9494332ffa5e184ba8cacd16b7636b1af54b938cf7d4cc",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_027_mod2_v1.json": "111a797522ad5f40d4013adbd3efbf322d1760ce53a8382d16ff68d7d14d4682",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_027_modl_v1.json": "618fd272170c190929d2a7d15fc1afe8c12374aa9752182d4246f2ed1ba53e1d",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_028_mod2_v1.json": "3b9cf94dcc966e8baf527f7ef0de80e3c4f1824607c74e55144905f10e10ac83",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_028_modl_v1.json": "32e3ab174d758d953935a9483e185959741900f63b8a03fbf3e104c2f679da3f",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_029_mod2_v1.json": "892fa1a0597f5d71a8ddf7b1c982f73230a575c7d598e83a0c75dd270ac7fa30",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_029_modl_v1.json": "822c3557b1538097c35903be6e413f95f3defb6ba20ff442ff1f4cdef7455437",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_030_mod2_v1.json": "a8a767bb7d16fa69c225d8bc4e056e25292d2d773ecaf20288c2907a24b6570b",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_030_modl_v1.json": "7720c3311ed276a22e1f83eef667221724f2b393913764c25929d80d879ce801",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_031_mod2_v1.json": "b0d6bcd4c858cf8ea1f8321c5af3a8390e050436c2dbe3c641b63ce5b00a928c",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_031_modl_v1.json": "17e47079a475b6c6ef3fab208158b9663379ef8f842dd00e7e26613332221443",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_032_mod2_v1.json": "80268b8525d96bd1544da812334ee3d572df5a8d30fa1208e08fb7aef8dfa87c",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_11952_032_modl_v1.json": "27a058c54fd512d64ab28d612072901299081e8a438780bb1553d4072efd7a03",
+    "artifacts/generated-results/elliptic-curves/compact192_r17_results_v1.json": "d00421b04aa21ce7d49f394e846b02e98e33ce9f401f107a2481a3036850a259",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-001/result.json": "ea8e362f389a6ee6ccd9cc684d75cf9d00d826d2d10ce46a09034e6db38cf49c",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-002/result.json": "c02d002feaee8e9c2990f665bf848b9cab513ffaf20103118c9079df87d0605d",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-003/result.json": "31a79e9b706fdf25842cfda28bd46de8841701e3a564f11019611c77879690ec",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-004/result.json": "256b32597e2148bbadca432f9bcf269f7b3f799fdf67c73122671e389672b662",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-005/result.json": "fcb272dc9385f8767d423491cc4d9ff8f80b630efdd43576431ca70fb9db655f",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-006/result.json": "6e96356bc6ebc2d23f1817ca6979f4d0b9ae5e948216eed7b9fbf8fd7ab33a56",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-007/result.json": "b7b701158b367020b6adbb60a384f3c954d81c4d5d2a9a2dbec00b64f120d96f",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-008/result.json": "eabfecbb9a05719a521181fb147846502ec677ec42226c6afe3522a9b433008e",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-009/result.json": "f443b99129ec670eb18e868bc516c82f17c0026bad658ce20c94b9b10b8192d7",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-010/result.json": "5a3f0051669fab46115da8e9ba1cde12480933b756360e0934aa4ad3cf4329dd",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-011/result.json": "ec4bcfaf581fe73c6b504174006c3c673464575e519c0941a79b4b2d07532a63",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-012/result.json": "bb853b7c23f30861bb516cf2f9daeba2a1015a963e40abf565eac39a51e89064",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-013/result.json": "1612770ba2723dfc804e4786bc42d278a060dce0173ea27f3d0d31fc5cadb39f",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-014/result.json": "6269287dd81752d2f72975de31110cc4dbba512c32bfd0c635b140da3d3f6fff",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-015/result.json": "9e8884e530d9f4c9eea36e37df31dd2d444143597cb733f9b77ad359f6994424",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-016/result.json": "29876dd5a9b0e851a3be147b9dc7684494ba0d74cd52848d4033c650ec2179ee",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-017/result.json": "2d14b8ef9b051ee0a85e53565c78264c323916a30d3eed1446738e91df5d0a25",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-018/result.json": "ce020d25b782cd05015369cf01c6d8c32b40d470b11f789ef58fc31b535e3304",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-019/result.json": "dee7c5ff0ae1dd74b22ab4630eae5c8d53f1d98d2a567dcd94eb4f81977904c9",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-020/result.json": "db723f02f865e04b433432b5ec6e33f8370968ed7eb21ce5fd4c219b34f6765c",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-021/result.json": "9fcccf8e3f75145a3b10b38bb70cf8e0b3ad6658779c5dc169981354b6591220",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-022/result.json": "c947a7e427e8e2c1313cde5c2b27050961413b2132a2323c4c7af852c99b7af2",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-023/result.json": "7ad96caad01ab425078ffbc0d1e0a9a55c17cc0828bba90a251bb7f197e5462e",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-024/result.json": "4f03396ceca8c0deb4572b18a18ca31e2e3d7f83815b717348b5d3cc9cf5c09a",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-025/result.json": "cddc65d8d2d5aa06a95ab00003704d111617847695fc2e7f237971c593be5029",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-026/result.json": "6719e2873355fddb9e82ac9d0f04ae9f68a606248c9b896cda51b25ffec94f2d",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-027/result.json": "b5f82fc7cc6fa1bfe1fb21019997bd9ee881dd8b3fce9ae02f8f06eccbdba326",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-028/result.json": "7c952ceb3d4f594279a2e43e1d5d6d42f25fe0542d1c6621fa272febe0b44344",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-029/result.json": "6b6dcc17fbeb1779c0d0db6ca935ebfe7e8d58379caeed7d18706c45c41a4eae",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-030/result.json": "67aa287f58749534fdfeda3593b5dec531d904a96c8307440dd480c1bf246267",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-031/result.json": "a04aa58511cd1d02e6dd5aae88bcd7c1c288acbec62415eade89c425a45d4276",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/074d9-032/result.json": "2db4fc90618375c1a97f32c11bad23fbb061e1c2dc29ba572397e11dbd458839",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-001/result.json": "e4ad787f80c2eaac095041d1d5dbbb3eb2fdc34793b1eb8b3724c14de15bef9a",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-002/result.json": "78b92dd0b19443186662394df8243278b419afed274ad310296e8923e8fd6cd1",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-003/result.json": "329049efa6a2df8415b849c6872b09e7e083293f10449eef3d4d2bd114675cc4",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-004/result.json": "8e517016cc7151e712f5bdb60e16d1f18f0ee52fa442d7f91b6a66b5c942bb6f",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-005/result.json": "5c91b902034ea4c0bb88dd0f90dd252956669e9a3700fa02d31f4f54e3f8d899",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-006/result.json": "e7eb878dc4c0071316547043e749b24b09a9f190fcd58b42ecab7ccf44a9788e",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-007/result.json": "e94881ac6eb3ee4b4c05302d4a31fc534ebced14ab5802b5e9a818dea6789415",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-008/result.json": "c0607a5d9dc060e5a89d283ff371d8de219763b94444c40388e3a135831f0a2b",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-009/result.json": "ad64b959e0fb14854e60d2c320d87df03614eb0138470551b11d74f9d80bc239",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-010/result.json": "0e27383dab364b9dda3fc15b036e4602fcfc45eefda75dbd6d0957650dc92d9d",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-011/result.json": "011bc07d5990769ca88255c5741c20edbf0980782eada6691e283b1d80a8a13b",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-012/result.json": "8765c25e02602c321e4efbfce878ef86a048a36d0216674fa2db2dd4dd7a5c08",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-013/result.json": "eff1e70e99260570cba42849b27c0886058461057d2ee8aaf7057c6ed7d87391",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-014/result.json": "7c05fa60306ef84c6321de99ee954efaffdc5a006a473114f8726b181a1feb34",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-015/result.json": "6eeb839ec01bffabe83243e096be89968f2bc23a94d04378e5b3a9c7ebcebfb9",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-016/result.json": "b3d1c4b71775396df6194a30f56ee143c93f951f565b072af1cf555371403c00",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-017/result.json": "bd4c7276bba13e78229a2756cb0435793272f9d57ff56be3de07c81af9d23268",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-018/result.json": "72976b862a37308c0efbb400c16149b7c3f33d7714db57c8c893a6e198e183e4",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-019/result.json": "dc052c0d8f2623fbe0a0d68e9b030ce8642af84b4dad8a21094b969dd81f2ba8",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-020/result.json": "a12372cc304eff65ca2993b1cc34b920f3eb9a3916c42b9afd19be0f18c64492",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-021/result.json": "be3ace47971c347d70ea98feb68fb991e6fd4a5ff83a65e32c60501b596e4653",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-022/result.json": "769ea9a8b693dc13debea5684ddc2765b66160eb2f4fbec6ca3a4d53fb4a4a0a",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-023/result.json": "94f0e138d9fd7c6cfc0701d26ee865ea945752b51c6199df1e5b1b91e58ac348",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-024/result.json": "babae37699b6691c18e846c83f6511cdf2133f08ae69569f694f16d771d929d2",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-025/result.json": "6f54aca46ee76cc87e90462d1fb61f2e08e8ec11bc2ce1a8ae663e2f2cc05c77",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-026/result.json": "52c136e6bde0775147ed5c9dc798c81c9f78570b807460ba859cb7c341d0c816",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-027/result.json": "5e4730bd9fc85f91a64059daf1f5347818be0a348f07e0a4386c252dc6779e55",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-028/result.json": "3cf5e027db60ad9cfb436d72a58522f42b923b6189124ecf58b0de2dbb6574e0",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-029/result.json": "02a1d142c450160db5619aa873c27d86d6fe89332448d6724b7717c3670c8f0a",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-030/result.json": "3cc034836324c293daf817043f88212377b641e86113ebca962519c3176bc04f",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-031/result.json": "33e1ace7d0f3ab29ce657b5ec506bb2bc59fc461ac6da2e51918c3f950489073",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/07ca9-032/result.json": "acdf250bcde4e33ba19fe4aa35df23ef47a4e72dc94abc9c4af3de316e74a354",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-001/result.json": "f150e406cd8414646e7d3a7da318b3aa3d3dcf590c0f3d7210f0ec630a1e84c0",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-002/result.json": "09bab225b6b70dab93adae699837bcba0d3d37f94d58a4d54daf2ed8b366dc33",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-003/result.json": "8f117478633498b3dcc6b2a9f43c95237753f1d7b50784376a59b6edc72f2f23",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-004/result.json": "5c80c011db3347d86ba53135c0c4c6c0a570dc105e288cc6f63e702589c0b29a",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-005/result.json": "de56ba738a7243cdb669ba67409e6538f47e6d4f5521e923e29b34c285c75ebb",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-006/result.json": "bad8d477c8854b32c878fa83fdf187b0adf83cd92cedabdaecef757b3ad3f415",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-007/result.json": "726caecb7a6b644b713822bc06d44f53c516817e4e28401783598888fd0be075",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-008/result.json": "2cef31b3f215434036ccd2e4f30bc5223a180241288035745bd2bb5e01d77d6b",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-009/result.json": "ca16bcd7f7e093a3f7cd42160d675185542a5cda8dee020d3632f9fb5230df7b",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-010/result.json": "45c9cbd0d2d6bad211d18200733726d156d4ac5dffdeef78385f48fc6b7fe2d2",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-011/result.json": "7aaed6598181ed17340b1b17bf0532eac1026e76c2f712c828093b3c661c1d7f",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-012/result.json": "6532e7ed751baedb6eff232853166dff81703f694ca969da345e52ea66aa1f3f",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-013/result.json": "12253aca1525978d3db136ac2b813a4a7c8598ad487e34949cfe4559b4ea1153",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-014/result.json": "62d994337b9322affd1bf5c0f67db0d5672b0009726f2ab1da8210958ad44382",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-015/result.json": "a4da3b14a3ffc1c078ab373e612907544a3cf574d77d59cb5bf1a1322a10d4d4",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-016/result.json": "7625bf42bd8579bf6c293c9b15f0bd025ca122bb656894dca67b263467952341",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-017/result.json": "3ffbabcff8895e9d3127978375b41aabdc41872032cbc0545186b99c225b3c2c",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-018/result.json": "54731993a0e3018834f8aeeb2a0e7ea4cadf8e5ea003fb2b23e3443d94a08306",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-019/result.json": "ab9378d8ef51a5121ebd1b3a579dec26962fd4bce5f4f0454427b822b706ed3a",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-020/result.json": "482a950aa176b64ab837c7982fa199e66c90b7bfb7ca416e8c210cc67360526d",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-021/result.json": "6a7dd6ad1d9ce7fc184e2c7caec7c67c0410923155204fcf3ab74f6139bbb562",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-022/result.json": "cdb893869d8a93210dfc6d29065558b16f0507c704221cfb5ff87b1ca648d125",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-023/result.json": "d4559a7b2e1e03abb41ba2d600848a4171e114bf1ad57f2d837632aa422ba3ca",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-024/result.json": "c8f5cc9cb11818d60c00c168c05f7b51d954816e4320daea0664a0e82af7c21b",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-025/result.json": "235bd940812ccb49bb5e7bd84deb63d8fa2b057b7774afcd33b3ef68bbc202cd",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-026/result.json": "d9454cfb4e8ec49d8b0e9f9ee00d18e8af369a8446c5f2d34a0f2e224a7dd778",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-027/result.json": "525f7c5064828bab525e7001973a19d845c3e94b12e7f210b812631187692cac",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-028/result.json": "32898e49b0562f18aa2add0e2f2bd1e76349966f17921acb89380d551458c772",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-029/result.json": "baff00a288ca46e9d1f89625f5af239076153c3b27f103a467f905c2c2ea2f89",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-030/result.json": "f043bea71b1f7309100db9fdd7a712556193d7f85e56d0702affe2446c9e5464",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-031/result.json": "432e3ed75aad4a28b1503d315421ef5a5b8e888d86e8d460c580af99305ca777",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08234-032/result.json": "67a3faf64a96f849e26af88284eb56b1a0b5f994f1c1bb7e61fa453609e0562c",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-001/result.json": "1f53103966be0333af3aa8992b18580c718714a64d98e0c491de3a3350e030c4",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-002/result.json": "358a8a093898f3b30203b6b5dc6349365564c91d6b09f03cf8ca0ae8ee26c012",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-003/result.json": "64d17226676d1d6a237c0e63295cac14b36dbf62dc8b2cfb43749e01b7f359e1",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-004/result.json": "faf7e77f4b6745d87da836fd6b7588482565eb3474d83a89f65e37b936237801",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-005/result.json": "1a6d04fedf1e46a2d4b57d20e6ee003d5431790797ee642a1525efa1c8bc6b46",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-006/result.json": "34c40c064249f0c4992c2ed5fb83ff5dbd054f7b97cb08f1348c65a1451ff4ca",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-007/result.json": "8a2020cee66c98eb74bfed298f9e943efe98e840329da2d5f13442599a6829b3",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-008/result.json": "e4045a97a5feee9c29b9da419cc9bf7e8c6fef549476cebffbfc40f84ce4775d",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-009/result.json": "6ced30ed374bc2344450e32839f213eca6bf76d3b66667f4abf92f49be1ec505",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-010/result.json": "6827b32e00fbc47eb8fd5a5f987d792f26e7e32db096b17b6808e21032125f90",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-011/result.json": "dccc3b4a0ec44437dbe68dd08d7515dea4e2c29828e913f75621323a2e6748b2",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-012/result.json": "68ce948388e4a6fb10a0874ed768ded17c84f2f939a23d2ff6afd3179748a8ca",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-013/result.json": "cfb6a3757e93894856a66cc4dd25a53cc377f7a5a41f780797854b62dc0edac7",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-014/result.json": "e07e811b2ee396bee0983cee35f842bde30a7a3c3daea089aab189e7396064c6",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-015/result.json": "15d71e14615a7f2122620dd5d5acb2d4074c16577d18206219545e4331e0fa2a",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-016/result.json": "4497b547e887f0756d4a28f6dbfb5ae7fe0ae6ec4b066a68bd6352146b294bfb",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-017/result.json": "e29f43941c35bf199840067d16b57b357169c2d22f854b7455ff965c54b7df0f",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-018/result.json": "fb0693c2bdbf32142d42a737cad152524bd3946a8dcc36fe6e2cc2c1a366b5b9",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-019/result.json": "b4811f3fa4f3bbc2376338e377244b7cb4a711f2dff69a99993a298d66666d12",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-020/result.json": "d9fe278c9ec3704b2a5b2f96df35bf9a2f47898c8d48bc0b79bb2cc2dd8fd9b5",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-021/result.json": "b7bbd57c30570f12f7125cec4e607875d0a91e3814f5c7ed1600c314d3fb6961",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-022/result.json": "fdccd6147000b70584df01c68e3e91faf3ce9b81d18cecb36ff0a00559b96482",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-023/result.json": "a2146ef3e7a74fe6e683a86a4d737ad40f9a0b9de99b1cca406efe68e62e7ca4",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-024/result.json": "1b5732502519ce0314f457e621d4c6ffef356677267a3e9371b2de8a1db08691",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-025/result.json": "1319794f330a938c8b4c4af44e8e770301484c027f6fea5179d36f91265f040c",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-026/result.json": "6ffe245d1e4d9d5e4629b52b747fbd0ad07629b8452a99a5a460aef27a63f6ea",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-027/result.json": "6b34d5738ff653b6e98d06f34929aa34176d375406d1b8d32f8a6c61a26d32f8",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-028/result.json": "aee0dd33acf3f43568c7da8a3c2ee787671941708dc4a5b491fb5582a5d3320d",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-029/result.json": "6443cb20e26c068bc8ce1e9d8fb72721dca3f8c50dd7b761da11842f4105508b",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-030/result.json": "264e77e8c25949f14e00823996e7b92f742913053ce62c7ddac5d030cbcbd3d5",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-031/result.json": "16249ec274e3129549d71f797774287bd3725a226343c6f6fae7ed9b4740b7a6",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/08f72-032/result.json": "b3b964021872dcafd41eee81534ea89ec1526c01364981aa6c53fbd0634449c7",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-001/result.json": "7ee5310d3e3d716a43595645a02e9518685114aad21d67f65abe98833aa1a22b",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-002/result.json": "2089e4af9970c4b51cad9b3d7dbefa4a6b9c1201f1b7e95e592b99099cce2a05",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-003/result.json": "127cdca3a3cd2f410a7c63e64af5ddfb40cb80e960d030a790dd2afa03fcdd2b",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-004/result.json": "2f07a7a8b2e5e899b4a9e449827e28cf426f8fc55e75aae83c24636ea67b1908",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-005/result.json": "bc0ce13ed253c5b250cea4263c399c6abe6ae8177c58261c8af607210e4cb801",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-006/result.json": "e97b0dea4defaee8dfda1b03ed08ffb75252b717fc745ec7d3378bc142ea5f82",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-007/result.json": "4b20dca357883b851b12cc4f65ba175dd393bff6c404f04af49fa168aa1cd565",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-008/result.json": "13aaffd534f72e5bffb7300d602ade157f37a9f8d4b46631ce87679a8567fa8c",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-009/result.json": "9f5d7f01dae5f7904e1941155d096adbe8f18e49f76bbb4d38f5153ea87eae65",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-010/result.json": "bbbde794e68f31801d46ed49e2a65ed1c8f9aef37acb613ef6b4614b21a3a5a6",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-011/result.json": "b2c6745fc11dff254b908c27fa660c79cdb00384dc3e6e81f07181d63b99f16c",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-012/result.json": "7739791657796ae38536ef282d412cf24841d7bc7d49aead2eeb5ef0e1295227",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-013/result.json": "e9631c2f75d2370fbe3f1a2779160e54b63a7f0f9708095d73a2da5aae35cc0b",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-014/result.json": "7486916ba2c00bf5a675c7050274a5d1e85f306f5fe9d98bc7f00a8caa655fb7",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-015/result.json": "092655fdd7bfeee6bb9d4451984ec59fcb233f7c51300f5f3c8d5c8dcf7c82ac",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-016/result.json": "3e8535ca8f8a172077ff28d1f8a957c6acec7d0bf45ff1168afb56d35320a4a6",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-017/result.json": "0140ec08065c0e0cade2415599e9b6b52dd942833413370fb022badfad738e3f",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-018/result.json": "6b6d84f0bb5aee04c86688a8f2d766cc006955ed3a6a23edb77fa8e673e6d9a7",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-019/result.json": "314ae0cfdb633d1a2ed087f5be279a0578d20c81172014ca479bfb06d1979f40",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-020/result.json": "6d2ea42ba2721189021e2694a6552afe42e80905d3614af238a06a6fbd3529d0",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-021/result.json": "88bcd2fe8d8ca16c49f4eb10dcf811e62212b8e6403de73ca75e25228a822e5b",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-022/result.json": "b35a70766eecb4bc8895f3a4797790788c3e342053c70bb4e0d61738ab7ab6b5",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-023/result.json": "dbacd4eb3e62d9ee9dbf5933e734007770852cd2df9d13cf4888ad708a00fda0",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-024/result.json": "9cae081de22eba3aa3f54bc35041dc47f43728877f2c23877c592b741b9ac82c",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-025/result.json": "388dfc6e6536863ad02019ea237a7054558e828c82eee5629b8bf04852c95bf3",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-026/result.json": "477415cb434d8623d69c4b78d5b3e7bdf79d04db5a1aef5162721358048d441b",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-027/result.json": "1850e9223b1d9c46585dd2ae88e11435ec5c074affc8a050cbbb4a05fa1f7093",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-028/result.json": "4e8fa24a0e5c4de6b3e04efe173808d26fba264adfe3356af2c520850c6f4cd5",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-029/result.json": "c2a742a248b84b1a96401c635721180299072af7cd8aa41dc4d71be54455bf37",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-030/result.json": "60bb52355f435a5264163d5d2241bddbe8a03ca0c9be9d7bb609ccbcc4b82570",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-031/result.json": "5848b9d606de6958a84a26546ae0b317e462926a6bd67991a95ca0ddadc2361e",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/103b2-032/result.json": "6095de5ae3eb1efe7b3af6f474160d2ca6d92426b9d87bdb19629e9be3436997",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-001/result.json": "7db1a3798e8dc851444b0438288b9e73eda6d70d282ec6040b372f7872062940",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-002/result.json": "f5ec135de54cf2dac55eacced0a6c34a3284365e636fce7881accfefb7e9bb55",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-003/result.json": "417fa26e3825b74d5b74fae5c4d4ce098ee7b25d9ce370c70817d22db2483778",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-004/result.json": "96ce55b81a2f7c6d5f05d6eb0dbb385234c053b4a46b60eebdca4fbd328737f2",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-005/result.json": "1569953bbeb6becf73b359015082b48297a3e0fd5b894f0540bcc3d5ecebc8e0",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-006/result.json": "ea9a1f459f3af6d9b6b00b459f4f946bd8051353f698d731eaabcd31f79a8f06",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-007/result.json": "3868dbcf3e32b5b43b1e424e1655e91f67d5bf854df343c69cf6799c1419c988",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-008/result.json": "7781484e142d487470fdaa19e9add31360ca6ca1a2308c15392d2462bcb9ce83",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-009/result.json": "98edf8df2a7e3f1f57f22e3c5b2a32ae72c2f958f6bc56f7449f5550c27d6fa7",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-010/result.json": "a5660c2f44010ca14e5b15e03c7d9f59dbda28db02529ad4e6aff486938ba9be",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-011/result.json": "39e36b6c7d796cd9444ca1cade099c18bed7e32610b43246523bd74215adf11b",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-012/result.json": "d1b845027e7a148bb2f0de880870f947cf4a077c1f7c8150f4f458ba03f3db4a",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-013/result.json": "fe87c79a2681213ceb254476304b3f710f3e6877b2f93933d8245b9a52cbf4b7",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-014/result.json": "523a024be1f01dbece43fc8d8e15310ae91beffd2b6f6ac96f64666a399afca6",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-015/result.json": "76e355f778ec1d2723e387b249f7b06a591afa0d9992661a4853f15d93266b6a",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-016/result.json": "1f3c081e92a9e78ae60f70080e4dfeb27b49c04d2a065003e685ef1798c97af5",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-017/result.json": "a35a28dbc12ae9a0e80657bf4914a89b993782309bcff2f791d91d13cea21bb7",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-018/result.json": "cc3cfc5f0c2315aed6138a0c17c7c21fde906a55d8a0c7f3a9136a44b25a70ea",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-019/result.json": "2f10baefef0f653c5d8b022b3e7f29a093e8e5944309f3c31853aaf70be1b262",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-020/result.json": "9f121be0930fae3ecf4403ffc28d2dea3d454f6ca59491269c117b3081fb9e7e",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-021/result.json": "642b4e4682d9711d38a470cc97bb33c1fb7a029483e026b7303b6942d58bb37c",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-022/result.json": "0815935414d1361a52aa34e1b02b264859374d73b51c11b5f327294caaa07b8e",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-023/result.json": "859720548dcae1ba4cf79e4287866e4b335775eec073276df292fc9322fe24c0",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-024/result.json": "521a611021ae5df5ba99d36e9bdf789246b8c75077bd47bc41bcb9b393abd02e",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-025/result.json": "42d140a63d78e275f59bbe78ae0d92a744e82680b2b9f8b20cbc46563d9a22ea",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-026/result.json": "ae866b2a1ef807bb80395c51a06685a527a57ae5f8c64911b7a26c51a22dbd5a",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-027/result.json": "09dfe21ddbaf6fa23df4b10ca6e21fd7e45ca412c26a93b991db2d44088f392c",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-028/result.json": "a969571bd74a276b1820f88e88403ec3af7f74163d738d36e659f2eab150a6ed",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-029/result.json": "a90f705c8da3833d0cb403b1d35cbb4d3690e3a1a3807889075ef1cecb05b005",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-030/result.json": "b622b94100cb0f0ef60aa056e7f1e58241ff6f2bf92b6b3504bb7554081d9390",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-031/result.json": "a1595a276702d8cce01f91e1488c33d6870c6a6a57758dae55d37c7e1f971fd8",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/11952-032/result.json": "81c3ed40d5364797b34c886394608bbcb436a8e517a653d64f362b72cff04a24",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/ledger.json": "b70b4081f9f6ff1b9c4e743ec2ef8067be1a629918de52de043a483083f23aea",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/maps-ledger.json": "0665f08905d779512c8ec409f44edcbb4eb11869ff2a2d5eb0cfff46736f1be6",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/odd-cloud-audit/ledger.json": "3f37ecc2fd153ff251ec098c1379c3846754e2474498b12e300af8c6496d0857",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/post-batch/certify.supervisor.json": "800506067978186e01f9ae7ea8bc285d0ccfa5fee9a6f99ceaa0fd5b2e6f248f",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/post-batch/geometry.supervisor.json": "fd74934f42ea835582b54af5145a181923c52d590e967ca8f247291983e3b70e",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/post-batch/proof-replay.supervisor.json": "8180ddc014f4e9dfa69e717a42840b651aca9cad935e70089e12c9fa03a8e463",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/protocol.json": "2a11916d0a1e0d9889362aacd6e76686f175137f0ce23de0e7b6e155985db455",
+    "artifacts/local/elliptic-curves/compact192-r17-pari-v1/verification-ledger.json": "08479e8871d44a6d95d6387cb2f08570c5f9f83498e61a4c1f7797e2c0a1fb47",
+    "artifacts/local/elliptic-curves/compact192-unsearched-selection-v1/protocol.json": "6af78ee5427bae370aaaa70643a80d409f15026eddd4439944751e49713aaad3",
+    "artifacts/local/elliptic-curves/compact192-unsearched-selection-v1/result.json": "910f54e0e6d6780845633d16738ab350f4352218285ed0028d21e2257f94000b",
+    "elliptic-curves/cas/report_compact192_experiment.py": "38df81f3693e83893b2d7cc17f14e6d7f5028848d1f4f567aaa6aeb5afcfd4b6"
+  },
+  "status": "PASS",
+  "within_batch_isomorphic_pairs": []
+}

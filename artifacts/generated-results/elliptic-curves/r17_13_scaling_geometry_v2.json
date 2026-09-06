@@ -1,0 +1,621 @@
+{
+  "claim_boundary": "For each displayed compact R17 binary pair and every primitive integer parameter pair,13^4|A_h and13^6|B_h hold exactly in the single stated projective residue cell. One and only one13 scaling is removable there; no primitive pair admits13^8|A_h and13^12|B_h. For nonsingular fibres these are exact13-adic minimality statements, and the reduced model remains bad at13. The determinant13 parameter changes and explicit x/13^2,y/13^3 homogeneous scaling preserve the Q(t) family and its generic17-point subgroup. This proves neither a new family, improved search population, global model minimality, conductor, whole-curve rank nor a new near-record curve. Additionally, all84 original projective discriminant residues are checked directly. Outside the unique nonminimal cell, v1 proves the original model is13-minimal; inside it, v1 proves the once-divided model is13-minimal and bad. Thus every nonsingular fibre at a primitive rational parameter has bad reduction at13. This is a proof completion, not a new parameter or point search.",
+  "original_projective_discriminant_cells_checked": 84,
+  "retained_v1_certificate": "artifacts/generated-results/elliptic-curves/r17_13_scaling_geometry_v1.json",
+  "rows": [
+    {
+      "every_nonsingular_primitive_fibre_has_bad_reduction_at13": true,
+      "family": "103b2",
+      "maximum_removable_13_exponent": 1,
+      "original_model_residues": [
+        {
+          "A_mod13": 12,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 0
+        },
+        {
+          "A_mod13": 0,
+          "B_mod13": 0,
+          "discriminant_mod13": 0,
+          "residue": 1
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 2
+        },
+        {
+          "A_mod13": 9,
+          "B_mod13": 3,
+          "discriminant_mod13": 0,
+          "residue": 3
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 4
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 5
+        },
+        {
+          "A_mod13": 1,
+          "B_mod13": 3,
+          "discriminant_mod13": 0,
+          "residue": 6
+        },
+        {
+          "A_mod13": 3,
+          "B_mod13": 3,
+          "discriminant_mod13": 0,
+          "residue": 7
+        },
+        {
+          "A_mod13": 3,
+          "B_mod13": 10,
+          "discriminant_mod13": 0,
+          "residue": 8
+        },
+        {
+          "A_mod13": 1,
+          "B_mod13": 10,
+          "discriminant_mod13": 0,
+          "residue": 9
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 10
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 11
+        },
+        {
+          "A_mod13": 9,
+          "B_mod13": 10,
+          "discriminant_mod13": 0,
+          "residue": 12
+        },
+        {
+          "A_mod13": 0,
+          "B_mod13": 0,
+          "discriminant_mod13": 0,
+          "residue": "infinity"
+        }
+      ],
+      "parameter_matrix": [
+        1,
+        0,
+        0,
+        13
+      ],
+      "scaled_models_still_bad_at13": true,
+      "signed_permutation_self_presentations": [],
+      "square_box_weighted_bound_ratio": "1677669306143095654194779116674690417418606394914657848025426146002092900677597940135136431849/10186451141733908885165331910989588771359327601500132288545534819915530940269702169",
+      "unique_nonminimal_residue_mod13": "infinity"
+    },
+    {
+      "every_nonsingular_primitive_fibre_has_bad_reduction_at13": true,
+      "family": "11952",
+      "maximum_removable_13_exponent": 1,
+      "original_model_residues": [
+        {
+          "A_mod13": 9,
+          "B_mod13": 10,
+          "discriminant_mod13": 0,
+          "residue": 0
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 1
+        },
+        {
+          "A_mod13": 3,
+          "B_mod13": 3,
+          "discriminant_mod13": 0,
+          "residue": 2
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 3
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 4
+        },
+        {
+          "A_mod13": 0,
+          "B_mod13": 0,
+          "discriminant_mod13": 0,
+          "residue": 5
+        },
+        {
+          "A_mod13": 0,
+          "B_mod13": 0,
+          "discriminant_mod13": 0,
+          "residue": 6
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 7
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 8
+        },
+        {
+          "A_mod13": 1,
+          "B_mod13": 3,
+          "discriminant_mod13": 0,
+          "residue": 9
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 10
+        },
+        {
+          "A_mod13": 1,
+          "B_mod13": 10,
+          "discriminant_mod13": 0,
+          "residue": 11
+        },
+        {
+          "A_mod13": 1,
+          "B_mod13": 3,
+          "discriminant_mod13": 0,
+          "residue": 12
+        },
+        {
+          "A_mod13": 9,
+          "B_mod13": 10,
+          "discriminant_mod13": 0,
+          "residue": "infinity"
+        }
+      ],
+      "parameter_matrix": [
+        1,
+        5,
+        -2,
+        3
+      ],
+      "scaled_models_still_bad_at13": true,
+      "signed_permutation_self_presentations": [],
+      "square_box_weighted_bound_ratio": "153085357547248774139263818341239288885950255520935072489362498581118135064472375/19055474016517117515782302497440347258637022842970037674252820008958198221809527",
+      "unique_nonminimal_residue_mod13": 6
+    },
+    {
+      "every_nonsingular_primitive_fibre_has_bad_reduction_at13": true,
+      "family": "074d9",
+      "maximum_removable_13_exponent": 1,
+      "original_model_residues": [
+        {
+          "A_mod13": 9,
+          "B_mod13": 10,
+          "discriminant_mod13": 0,
+          "residue": 0
+        },
+        {
+          "A_mod13": 3,
+          "B_mod13": 3,
+          "discriminant_mod13": 0,
+          "residue": 1
+        },
+        {
+          "A_mod13": 9,
+          "B_mod13": 10,
+          "discriminant_mod13": 0,
+          "residue": 2
+        },
+        {
+          "A_mod13": 1,
+          "B_mod13": 3,
+          "discriminant_mod13": 0,
+          "residue": 3
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 4
+        },
+        {
+          "A_mod13": 3,
+          "B_mod13": 10,
+          "discriminant_mod13": 0,
+          "residue": 5
+        },
+        {
+          "A_mod13": 0,
+          "B_mod13": 0,
+          "discriminant_mod13": 0,
+          "residue": 6
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 7
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 8
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 9
+        },
+        {
+          "A_mod13": 0,
+          "B_mod13": 0,
+          "discriminant_mod13": 0,
+          "residue": 10
+        },
+        {
+          "A_mod13": 3,
+          "B_mod13": 3,
+          "discriminant_mod13": 0,
+          "residue": 11
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 12
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": "infinity"
+        }
+      ],
+      "parameter_matrix": [
+        3,
+        1,
+        -1,
+        4
+      ],
+      "scaled_models_still_bad_at13": true,
+      "signed_permutation_self_presentations": [],
+      "square_box_weighted_bound_ratio": "10365223198607841252664869200784151045698761860155178337506638901295459401094734096/10822343511957739850662873818070241128745899276951976378734072884540935800681359121",
+      "unique_nonminimal_residue_mod13": 10
+    },
+    {
+      "every_nonsingular_primitive_fibre_has_bad_reduction_at13": true,
+      "family": "07ca9",
+      "maximum_removable_13_exponent": 1,
+      "original_model_residues": [
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 0
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 1
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 2
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 3
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 4
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 5
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 6
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 7
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 8
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 9
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 10
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 11
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 12
+        },
+        {
+          "A_mod13": 0,
+          "B_mod13": 0,
+          "discriminant_mod13": 0,
+          "residue": "infinity"
+        }
+      ],
+      "parameter_matrix": [
+        1,
+        0,
+        0,
+        13
+      ],
+      "scaled_models_still_bad_at13": true,
+      "signed_permutation_self_presentations": [],
+      "square_box_weighted_bound_ratio": "9951228849747554728806057456509347412125632017339383833270673198303931899224235630694815489/3509993894024600175562411734564251712065921066419587054379882828809157202674637809",
+      "unique_nonminimal_residue_mod13": "infinity"
+    },
+    {
+      "every_nonsingular_primitive_fibre_has_bad_reduction_at13": true,
+      "family": "08234",
+      "maximum_removable_13_exponent": 1,
+      "original_model_residues": [
+        {
+          "A_mod13": 3,
+          "B_mod13": 3,
+          "discriminant_mod13": 0,
+          "residue": 0
+        },
+        {
+          "A_mod13": 3,
+          "B_mod13": 10,
+          "discriminant_mod13": 0,
+          "residue": 1
+        },
+        {
+          "A_mod13": 0,
+          "B_mod13": 0,
+          "discriminant_mod13": 0,
+          "residue": 2
+        },
+        {
+          "A_mod13": 0,
+          "B_mod13": 0,
+          "discriminant_mod13": 0,
+          "residue": 3
+        },
+        {
+          "A_mod13": 9,
+          "B_mod13": 3,
+          "discriminant_mod13": 0,
+          "residue": 4
+        },
+        {
+          "A_mod13": 3,
+          "B_mod13": 10,
+          "discriminant_mod13": 0,
+          "residue": 5
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 6
+        },
+        {
+          "A_mod13": 1,
+          "B_mod13": 10,
+          "discriminant_mod13": 0,
+          "residue": 7
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 8
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 9
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 10
+        },
+        {
+          "A_mod13": 9,
+          "B_mod13": 3,
+          "discriminant_mod13": 0,
+          "residue": 11
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 12
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": "infinity"
+        }
+      ],
+      "parameter_matrix": [
+        2,
+        -3,
+        1,
+        5
+      ],
+      "scaled_models_still_bad_at13": true,
+      "signed_permutation_self_presentations": [],
+      "square_box_weighted_bound_ratio": "33566741057415564438713809591984364049988254315098956490068006314809933048208307640149860829043600354761/168828611084108504413279354633107769620059831708717063740604257248436917441217275836923839125152849",
+      "unique_nonminimal_residue_mod13": 2
+    },
+    {
+      "every_nonsingular_primitive_fibre_has_bad_reduction_at13": true,
+      "family": "08f72",
+      "maximum_removable_13_exponent": 1,
+      "original_model_residues": [
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 0
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 1
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 2
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 3
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 4
+        },
+        {
+          "A_mod13": 0,
+          "B_mod13": 0,
+          "discriminant_mod13": 0,
+          "residue": 5
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 6
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 7
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 8
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 9
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 10
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 11
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 12
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": "infinity"
+        }
+      ],
+      "parameter_matrix": [
+        3,
+        2,
+        -2,
+        3
+      ],
+      "scaled_models_still_bad_at13": true,
+      "signed_permutation_self_presentations": [],
+      "square_box_weighted_bound_ratio": "10760344271454391844603532542125134128668898114775987996918959790865517976679782523609/694077223439800456031075200188782952676697834864874505458524434703311667496222375136",
+      "unique_nonminimal_residue_mod13": 5
+    }
+  ],
+  "schema": "elliptic-curves.r17-13-scaling-geometry.v2",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_six_r17_atlas_v1.json": "2f28c081c874adfaf738c1119e8f4e6e7ce70ea74277cd8cdb370a02bca34c5d",
+    "artifacts/generated-results/elliptic-curves/r17_13_scaling_geometry_v1.json": "a63dbc5ed8b01bf0f827caad98d743f55538ba0ee3692687ca751e0fd972363f",
+    "elliptic-curves/cas/report_r17_13_scaling_geometry.py": "5ebc3707771efd4dc7d234849a4ed25239d1332717180a9d4dbf73b6f0edf2fc",
+    "elliptic-curves/cas/report_r17_13_scaling_geometry_v2.py": "7cdd93801571c227d59f65846964e86eab117cd04892fe869b525b0f6a49447e"
+  },
+  "status": "PASS"
+}

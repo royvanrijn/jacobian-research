@@ -1,0 +1,127 @@
+{
+  "best_per_direction": [
+    {
+      "chart_index": 20,
+      "oracle_index": 0,
+      "point": [
+        "-301831214442223277896574988892157/324",
+        "6504378135793602077397465992020664855329778386000/729"
+      ],
+      "published_index": 2,
+      "sign": 1,
+      "visibility": {
+        "at_parameter_infinity": false,
+        "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+        "coordinate": [
+          "113933",
+          "373"
+        ],
+        "in_completed_box": false,
+        "in_requested_box": false,
+        "minimum_affine_height": 113933,
+        "recorded_curve_point": false,
+        "recorded_square_hit": false,
+        "square_root_absolute": "11308403993260239999197200",
+        "status": "OUTSIDE_BOX"
+      },
+      "word": [
+        -1,
+        0,
+        -1,
+        1,
+        2,
+        0,
+        -1,
+        -1,
+        1,
+        1,
+        0,
+        -1,
+        -2,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "chart_index": 12,
+      "oracle_index": 1,
+      "point": [
+        "47972651813776260209801029463360536699/14362032",
+        "-15950026290393634894504359507526754411411517335642119875/10474708672"
+      ],
+      "published_index": 27,
+      "sign": 1,
+      "visibility": {
+        "at_parameter_infinity": false,
+        "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+        "coordinate": [
+          "156623",
+          "918522"
+        ],
+        "in_completed_box": false,
+        "in_requested_box": false,
+        "minimum_affine_height": 918522,
+        "recorded_curve_point": false,
+        "recorded_square_hit": false,
+        "square_root_absolute": "1714565987673230501437058475",
+        "status": "OUTSIDE_BOX"
+      },
+      "word": [
+        -1,
+        2,
+        2,
+        1,
+        1,
+        -2,
+        -6,
+        -1,
+        2,
+        -2,
+        3,
+        -1,
+        -1,
+        0,
+        2,
+        -2,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        1,
+        0
+      ]
+    }
+  ],
+  "claim_boundary": "Exact rational group words and chart-square/visibility identities. Numerical CVP optimality is not asserted. No prospective oracle leakage, new curve or upper bound.",
+  "exact_group_words_checked": 196,
+  "schema": "elliptic-curves.native11952-translated-visibility-replay.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/native11952_translated_visibility_v1.json": "ed932eef917eeee6d1d0a908b5093b523b1b9e369cb6e6a9fe46b8ad348c37ca",
+    "artifacts/local/elliptic-curves/native11952-pari49-control-v1/candidate-00/result.json": "1a780424d4adf4ab2e9e7ff3d7781438ac1f136ef4c45acca32f9980dd8b3069",
+    "elliptic-curves/cas/memory_rank_certificate.py": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6",
+    "elliptic-curves/cas/replay_native11952_translated_visibility.py": "c7dbe4609a335e397bd34f665f74974aeb4f66966e45100665f38b04b2e3da0c",
+    "elliptic-curves/cas/search_nagao_u42_skew_height.py": "84c7bd9d4e34395fdf626d8c73623921d4084bd279f78784c88acd90e70fdf6f",
+    "elliptic-curves/cas/search_observability.py": "b6189a0cee9805336609f413b2dd8ccb38263c2d594131aabf3b0555a9c04b58"
+  },
+  "status": "PASS",
+  "status_counts": {
+    "OUTSIDE_BOX": 196
+  }
+}

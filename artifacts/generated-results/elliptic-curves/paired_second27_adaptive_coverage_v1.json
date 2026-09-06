@@ -1,0 +1,29 @@
+{
+  "adaptive_attempted_charts": 301,
+  "adaptive_completed_boxes": 301,
+  "adaptive_declared_charts": 301,
+  "claim_boundary": "Recorded completed box coverage trusts the pinned PARI executions. All301 adaptive histories replay. Full retained-cloud finite quotient certificates are lower bounds only; no exact rank, saturation or point-absence conclusion.",
+  "cloud_verification_ledger_sha256": "2f77ea00ba0b2e55fdbfee2f917040cbd9f698ada5de46254cc3d6345c56a12a",
+  "height": 100000,
+  "initial_charts": 49,
+  "mod2_lower_bound": 27,
+  "odd_modulus_lower_bounds": {
+    "3": 27,
+    "5": 27
+  },
+  "point_certificates": {
+    "artifacts/generated-results/elliptic-curves/paired_second27_all_retained_mod2_v1.json": "1951e66451def59800b51b4293d1671f44f427bb366a95b1379eb9004212b3b2",
+    "artifacts/generated-results/elliptic-curves/paired_second27_all_retained_modl_v1.json": "3f4a5699c3bea717c584bace601fc35162ec4ab902230162f78172a687797390"
+  },
+  "retained_point_count": 1791,
+  "schema": "elliptic-curves.paired-second27-adaptive-coverage.v1",
+  "sources": {
+    "artifacts/local/elliptic-curves/fresh-r17-paired-pari-v1/11952-010/result.json": "f7de11776938ca8075b8857ead05723f816b160b92517b16ce7ed57620655b37",
+    "artifacts/local/elliptic-curves/paired-second27-adaptive-v1/maps.json": "6b1bc67e8018bc07b1a06aa38cf1177c01062c8edc2fe74a76c18b1164b1771a",
+    "artifacts/local/elliptic-curves/paired-second27-adaptive-v1/protocol.json": "cdb22eee9045f168fcc9d272c1aae4f7dea053a99ca01e2e39f07bd963ffa8dc",
+    "artifacts/local/elliptic-curves/paired-second27-adaptive-v1/replay.supervisor.json": "26f9f274d5b57683affee42a160dcae9a1489f0484a08a502ff64ba4e55d2ab7",
+    "artifacts/local/elliptic-curves/paired-second27-adaptive-v1/result.json": "4c8d6fdd5b28089167de3ab8c14528265f67d8af8e8365c89e2e81786b913bc5",
+    "artifacts/local/elliptic-curves/paired-second27-adaptive-v1/worker.supervisor.json": "6acb90d1ae1fad4ca0824b0775ab7b94e86e17f10c1a06658082ba6c194023e1",
+    "elliptic-curves/cas/audit_paired_second27_followup.py": "d9f21fbdcebaebe5c791a86ab325c2ec260206c88e06c88f34a15a1baf982920"
+  }
+}

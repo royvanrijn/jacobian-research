@@ -1,0 +1,1462 @@
+{
+  "claim_boundary": "All32 declared isolated stages pass from fresh extraction of the eight pinned bases and next24 supplement. Exact geometry, centres and raw-point/cloud provenance for1381 charts, all24 standalone cloud proofs, three globally minimal rank26/27 models,62-curve inventory andCSV, retrospective29-published-point visibility, and adaptive mod2/3/5 proofs. No point search or admission/archive history is repeated here; the separately passed local histories are retained. No exact rank, universal novelty or rank28/32 claim.",
+  "ledger": {
+    "rows": [
+      {
+        "name": "geometry-and-provenance",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/replay_next24_point_geometry.py"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/geometry-and-provenance.log",
+          "log_sha256": "767b0fe5ef0bc7aee2436c6ca077e0d35656ebd5324e02455bf47f951d97335a",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 183365632,
+          "pid": 1387634,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48600427",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 7.655924178019632,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "minimal-models",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/certify_next24_high_rank_minimal_v4.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/minimal-models.log",
+          "log_sha256": "412347756d6b829e46bfa55662b7523bb46a651ce7bfc7396482697bb3288e5d",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 76099584,
+          "pid": 1389023,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48601195",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 4.918493896024302,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "batch-certificates",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/certify_next24_r17_results.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/batch-certificates.log",
+          "log_sha256": "946101474b255aaf10fb74dc28fd9477882f33e3fca57359982eff3c4c613220",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 27795456,
+          "pid": 1389112,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48601689",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 3.4877886780304834,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "inventory62",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/replay_inventory_v5_memory.py",
+            "--output",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/inventory62-result.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/inventory62.log",
+          "log_sha256": "0691403be4d940ae93189eee65b0a6a1c03c76b6630372d2e51eb03586093d11",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 35282944,
+          "pid": 1389166,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48602040",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 8.691632768022828,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "published-visibility",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_native11952_published_visibility_v2.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/published-visibility.log",
+          "log_sha256": "069690eed1cdb47f284fec530e31ea579edee38ba50ff7b191e8f570891b9e68",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 107159552,
+          "pid": 1389168,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48602912",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 2.7760594389983453,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-074d9-110",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_074d9_110_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-074d9-110.log",
+          "log_sha256": "1c5818dda5a67962120ceebb83ea510ffd91d94b483f11df4e56e1823ffbd68c",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24707072,
+          "pid": 1389223,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603192",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.27807618299266323,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-074d9-103",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_074d9_103_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-074d9-103.log",
+          "log_sha256": "1f6f093fc19df063ea57d83977cf4b41ab324a20cd2a9262a5b08bec0c49c3a0",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24715264,
+          "pid": 1389225,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603222",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.22691146202851087,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-074d9-024",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_074d9_024_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-074d9-024.log",
+          "log_sha256": "7b2227673c96384c1f86d145c6dc96954d15edabb9daec184880cca5515e1232",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23068672,
+          "pid": 1389227,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603247",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.22753752302378416,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-074d9-015",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_074d9_015_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-074d9-015.log",
+          "log_sha256": "bfea6dd1bf0a053d798324bc0be5a4758163fc4205a7d5d8bc91c1862ad3beb7",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 26030080,
+          "pid": 1389229,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603272",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2779520520125516,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-07ca9-013",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_07ca9_013_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-07ca9-013.log",
+          "log_sha256": "e27ae911d033cc1bfd9679aae6124acff0ba41ea65ae945deb201be4a5f87ee9",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24670208,
+          "pid": 1389231,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603302",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2784641039907001,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-07ca9-066",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_07ca9_066_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-07ca9-066.log",
+          "log_sha256": "7fb511bba55b990d9f1c975a36d37e5ca259baeb85ba9f252fefca95c111a0e3",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24731648,
+          "pid": 1389233,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603333",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.22708273300668225,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-07ca9-008",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_07ca9_008_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-07ca9-008.log",
+          "log_sha256": "4d7ee5aacc4a8da8c2d14c3bcc06cc5f5cadef26971a693c4e5a75dccece61da",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23650304,
+          "pid": 1389235,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603358",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2267721220268868,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-07ca9-065",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_07ca9_065_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-07ca9-065.log",
+          "log_sha256": "13c496421a49d4671c82c0481bdfa5170efb85c281af9ea2a52b4bf15ddb9e2b",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24432640,
+          "pid": 1389237,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603383",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2269024940324016,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08234-096",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_08234_096_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-08234-096.log",
+          "log_sha256": "a478f53c6e7c3d9b7be9d19923fd157d50e5b26b0b54868cdaa78a36c4a25e11",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24829952,
+          "pid": 1389239,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603408",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.22647171700373292,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08234-123",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_08234_123_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-08234-123.log",
+          "log_sha256": "b54685dbea160c61a9952f4bbcf5a2ae459b1a185f8e4db90e7095378ce537cc",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 26210304,
+          "pid": 1389241,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603433",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2786008940311149,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08234-107",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_08234_107_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-08234-107.log",
+          "log_sha256": "3ed0f6a73eaa38cd814388b1938fff2c2447d37600e62bcff4054e90ada5b4d0",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24469504,
+          "pid": 1389243,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603466",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.23315983300562948,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08234-013",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_08234_013_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-08234-013.log",
+          "log_sha256": "86fcd131296ff11a1d6fd5416f577add8cd2ff49c3c7e3a086d6286bd3645520",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22081536,
+          "pid": 1389245,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603499",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.21263541001826525,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08f72-015",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_08f72_015_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-08f72-015.log",
+          "log_sha256": "30c21d2ef1151b83781116794e09ab0e6ffbca8230af479cc2a05acd0e96393a",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25047040,
+          "pid": 1389247,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603526",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.31161801202688366,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08f72-039",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_08f72_039_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-08f72-039.log",
+          "log_sha256": "fda1c2e7d81e380ca6c00ae655ef81654e83f8b173c679df0421077bd84a3244",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23396352,
+          "pid": 1389249,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603569",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.23122221196535975,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08f72-053",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_08f72_053_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-08f72-053.log",
+          "log_sha256": "1f347260e05bf857454a20b610fbfd2e8da2de3443a7d38568371abf2a08aa17",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25231360,
+          "pid": 1389251,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603680",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.533789346984122,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08f72-008",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_08f72_008_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-08f72-008.log",
+          "log_sha256": "38812e7f67ed6ee102c9a582a7fe696b2ed3ba6057768f10899dd54a2da48c81",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25448448,
+          "pid": 1389253,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603774",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.32231269602198154,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-103b2-067",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_103b2_067_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-103b2-067.log",
+          "log_sha256": "aedef24a690ce4d5095ebb533a17b66c6cd462c877a73b8c13a6be8d06dd376f",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24543232,
+          "pid": 1389255,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603807",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.22665377700468525,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-103b2-025",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_103b2_025_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-103b2-025.log",
+          "log_sha256": "828fe81cc4de76d798174f115d88267db432fdef34d632c37bfdc15a89240597",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 26320896,
+          "pid": 1389257,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603832",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2781490990309976,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-103b2-021",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_103b2_021_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-103b2-021.log",
+          "log_sha256": "9bc3f4a28a2bc602f3d5b4990517c3280213d755d02b2cb7e9d88dd5fb498254",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25800704,
+          "pid": 1389259,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603863",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.27830460300901905,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-103b2-055",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_103b2_055_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-103b2-055.log",
+          "log_sha256": "6c14bf6aa326f907d04f833533809138e12eb2c04fffe299dd2fd53ded76d8bb",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24969216,
+          "pid": 1389261,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603893",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.22690816200338304,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-11952-030",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_11952_030_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-11952-030.log",
+          "log_sha256": "a1409d42ed434e634a1661f48122603e457dc67d9b665b00e251b641db93dce0",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 26292224,
+          "pid": 1389263,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603918",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2770421649911441,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-11952-017",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_11952_017_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-11952-017.log",
+          "log_sha256": "4d192a1e5b5b16e95d97166241a4db23a1d8662adac90fdbb14db63de9a4c79b",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24432640,
+          "pid": 1389265,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603947",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.22660195198841393,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-11952-094",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_11952_094_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-11952-094.log",
+          "log_sha256": "407cc1fcd1342773f0afe52c4abbc50809c6ff092ac08701f87fa5c785aa231e",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23121920,
+          "pid": 1389267,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603972",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.17647624399978667,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-11952-041",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_11952_041_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/cloud-11952-041.log",
+          "log_sha256": "43ec1da8c3ed12ccd488f8b414c18760dad0dc5a7f4815def4eae88117e62b6a",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25759744,
+          "pid": 1389269,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48603992",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.27853756200056523,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "adaptive-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_rank27_all_retained_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/adaptive-mod2.log",
+          "log_sha256": "43ec1da8c3ed12ccd488f8b414c18760dad0dc5a7f4815def4eae88117e62b6a",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25964544,
+          "pid": 1389271,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48604022",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.32808507297886536,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "adaptive-mod3-mod5",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_rank27_all_retained_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/adaptive-mod3-mod5.log",
+          "log_sha256": "54921805d2d33b982ad8cf8525900bf4fdbaab2f23d59740656538cbdf4c8b00",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22986752,
+          "pid": 1389273,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48604057",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.4819860910065472,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "local-minimality-regression",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/tests",
+            "-p",
+            "test_next24_local_minimality.py"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 60
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/local-minimality-regression.log",
+          "log_sha256": "a6707d4eff38012da33ddc34bc6dc076a3b17151cfc9aef223c8790cbe64c3da",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21528576,
+          "pid": 1389275,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48604108",
+          "termination_signal": null,
+          "timeout_seconds": 60,
+          "wall_seconds": 0.12573248200351372,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      }
+    ],
+    "status": "PASS"
+  },
+  "logs": {
+    "adaptive-mod2": "REPLAYED RECORDED-POINT RANK 11952 2828/2015 rank >= 27\n",
+    "adaptive-mod3-mod5": "REPLAYED CLOUD MODL 11952 3 rank >= 27\nREPLAYED CLOUD MODL 11952 5 rank >= 27\n",
+    "batch-certificates": "REPLAYED NEXT24 R17 CERTIFICATES 24\n",
+    "cloud-074d9-015": "REPLAYED RECORDED-POINT RANK 074d9 922/2063 rank >= 25\n",
+    "cloud-074d9-024": "REPLAYED RECORDED-POINT RANK 074d9 -2632/543 rank >= 21\n",
+    "cloud-074d9-103": "REPLAYED RECORDED-POINT RANK 074d9 1220/2339 rank >= 21\n",
+    "cloud-074d9-110": "REPLAYED RECORDED-POINT RANK 074d9 -1477/1933 rank >= 24\n",
+    "cloud-07ca9-008": "REPLAYED RECORDED-POINT RANK 07ca9 3097/3327 rank >= 21\n",
+    "cloud-07ca9-013": "REPLAYED RECORDED-POINT RANK 07ca9 505/794 rank >= 25\n",
+    "cloud-07ca9-065": "REPLAYED RECORDED-POINT RANK 07ca9 267/1004 rank >= 22\n",
+    "cloud-07ca9-066": "REPLAYED RECORDED-POINT RANK 07ca9 3221/1002 rank >= 22\n",
+    "cloud-08234-013": "REPLAYED RECORDED-POINT RANK 08234 -3673/2050 rank >= 17\n",
+    "cloud-08234-096": "REPLAYED RECORDED-POINT RANK 08234 -506/9 rank >= 23\n",
+    "cloud-08234-107": "REPLAYED RECORDED-POINT RANK 08234 -2387/360 rank >= 23\n",
+    "cloud-08234-123": "REPLAYED RECORDED-POINT RANK 08234 1504/3 rank >= 24\n",
+    "cloud-08f72-008": "REPLAYED RECORDED-POINT RANK 08f72 -704/93 rank >= 24\n",
+    "cloud-08f72-015": "REPLAYED RECORDED-POINT RANK 08f72 2454/25 rank >= 25\n",
+    "cloud-08f72-039": "REPLAYED RECORDED-POINT RANK 08f72 -2175/2614 rank >= 17\n",
+    "cloud-08f72-053": "REPLAYED RECORDED-POINT RANK 08f72 -164/2855 rank >= 25\n",
+    "cloud-103b2-021": "REPLAYED RECORDED-POINT RANK 103b2 2773/962 rank >= 26\n",
+    "cloud-103b2-025": "REPLAYED RECORDED-POINT RANK 103b2 -538/249 rank >= 25\n",
+    "cloud-103b2-055": "REPLAYED RECORDED-POINT RANK 103b2 934/1207 rank >= 24\n",
+    "cloud-103b2-067": "REPLAYED RECORDED-POINT RANK 103b2 522/329 rank >= 23\n",
+    "cloud-11952-017": "REPLAYED RECORDED-POINT RANK 11952 -1451/86 rank >= 23\n",
+    "cloud-11952-030": "REPLAYED RECORDED-POINT RANK 11952 -1173/127 rank >= 26\n",
+    "cloud-11952-041": "REPLAYED RECORDED-POINT RANK 11952 2828/2015 rank >= 27\n",
+    "cloud-11952-094": "REPLAYED RECORDED-POINT RANK 11952 -94/1277 rank >= 20\n",
+    "geometry-and-provenance": "REPLAYED NEXT24 GEOMETRY, EXACT CENTRES, RAW POINTS AND CLOUD PROVENANCE 1381 charts\nAdmission/archive histories passed separate retained local replays; this check does not repeat them.\n",
+    "inventory62": "MEMORY REPLAY V5 new-20260906-40 rank >= 27\nMEMORY REPLAY V5 new-20260906-41 rank >= 27\nMEMORY REPLAY V5 new-20260906-48 rank >= 27\nMEMORY REPLAY V5 new-20260906-42 rank >= 26\nMEMORY REPLAY V5 new-20260905-37 rank >= 26\nMEMORY REPLAY V5 new-20260906-49 rank >= 26\nMEMORY REPLAY V5 new-20260906-50 rank >= 26\nMEMORY REPLAY V5 new-20260905-38 rank >= 25\nMEMORY REPLAY V5 new-20260906-51 rank >= 25\nMEMORY REPLAY V5 new-20260905-39 rank >= 25\nMEMORY REPLAY V5 new-20260905-01 rank >= 25\nMEMORY REPLAY V5 new-20260906-52 rank >= 25\nMEMORY REPLAY V5 new-20260906-43 rank >= 25\nMEMORY REPLAY V5 new-20260906-53 rank >= 25\nMEMORY REPLAY V5 new-20260906-54 rank >= 25\nMEMORY REPLAY V5 new-20260906-44 rank >= 25\nMEMORY REPLAY V5 new-20260905-02 rank >= 25\nMEMORY REPLAY V5 new-20260905-03 rank >= 25\nMEMORY REPLAY V5 new-20260906-55 rank >= 24\nMEMORY REPLAY V5 new-20260906-56 rank >= 24\nMEMORY REPLAY V5 new-20260905-04 rank >= 24\nMEMORY REPLAY V5 new-20260906-45 rank >= 24\nMEMORY REPLAY V5 new-20260906-46 rank >= 24\nMEMORY REPLAY V5 new-20260906-57 rank >= 24\nMEMORY REPLAY V5 new-20260905-05 rank >= 24\nMEMORY REPLAY V5 new-20260905-33 rank >= 24\nMEMORY REPLAY V5 new-20260905-06 rank >= 24\nMEMORY REPLAY V5 new-20260905-07 rank >= 24\nMEMORY REPLAY V5 new-20260905-08 rank >= 24\nMEMORY REPLAY V5 new-20260905-09 rank >= 24\nMEMORY REPLAY V5 new-20260905-10 rank >= 24\nMEMORY REPLAY V5 new-20260905-11 rank >= 23\nMEMORY REPLAY V5 new-20260906-58 rank >= 23\nMEMORY REPLAY V5 new-20260905-12 rank >= 23\nMEMORY REPLAY V5 new-20260906-59 rank >= 23\nMEMORY REPLAY V5 new-20260906-60 rank >= 23\nMEMORY REPLAY V5 new-20260905-13 rank >= 23\nMEMORY REPLAY V5 new-20260905-34 rank >= 23\nMEMORY REPLAY V5 new-20260905-14 rank >= 23\nMEMORY REPLAY V5 new-20260905-15 rank >= 23\nMEMORY REPLAY V5 new-20260905-16 rank >= 23\nMEMORY REPLAY V5 new-20260905-17 rank >= 23\nMEMORY REPLAY V5 new-20260905-18 rank >= 23\nMEMORY REPLAY V5 new-20260905-19 rank >= 23\nMEMORY REPLAY V5 new-20260905-20 rank >= 23\nMEMORY REPLAY V5 new-20260905-21 rank >= 22\nMEMORY REPLAY V5 new-20260906-61 rank >= 22\nMEMORY REPLAY V5 new-20260906-62 rank >= 22\nMEMORY REPLAY V5 new-20260906-47 rank >= 22\nMEMORY REPLAY V5 new-20260905-22 rank >= 22\nMEMORY REPLAY V5 new-20260905-23 rank >= 22\nMEMORY REPLAY V5 new-20260905-24 rank >= 22\nMEMORY REPLAY V5 new-20260905-25 rank >= 22\nMEMORY REPLAY V5 new-20260905-26 rank >= 22\nMEMORY REPLAY V5 new-20260905-27 rank >= 22\nMEMORY REPLAY V5 new-20260905-35 rank >= 22\nMEMORY REPLAY V5 new-20260905-36 rank >= 22\nMEMORY REPLAY V5 new-20260905-28 rank >= 22\nMEMORY REPLAY V5 new-20260905-29 rank >= 22\nMEMORY REPLAY V5 new-20260905-30 rank >= 22\nMEMORY REPLAY V5 new-20260905-31 rank >= 22\nMEMORY REPLAY V5 new-20260905-32 rank >= 22\nEXACT MEMORY INVENTORY PASS 62 AND CSV\n",
+    "local-minimality-regression": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n",
+    "minimal-models": "REPLAYED THREE MINIMAL RANK26/27 PROOFS\n",
+    "published-visibility": "PUBLIC VISIBILITY 0 494272755\nPUBLIC VISIBILITY 1 3179688916752\nPUBLIC VISIBILITY 2 5542696471185\nPUBLIC VISIBILITY 3 24174936903\nPUBLIC VISIBILITY 4 490332370\nPUBLIC VISIBILITY 5 4793990341950\nPUBLIC VISIBILITY 6 30721459019\nPUBLIC VISIBILITY 7 6344775198230520\nPUBLIC VISIBILITY 8 13890297394\nPUBLIC VISIBILITY 9 22108202608595\nPUBLIC VISIBILITY 10 320725638197\nPUBLIC VISIBILITY 11 12393553\nPUBLIC VISIBILITY 12 1169500459\nPUBLIC VISIBILITY 13 65607143\nPUBLIC VISIBILITY 14 4146667473\nPUBLIC VISIBILITY 15 1472464\nPUBLIC VISIBILITY 16 3160640913\nPUBLIC VISIBILITY 17 21531186206524704\nPUBLIC VISIBILITY 18 343270665194767\nPUBLIC VISIBILITY 19 13487833\nPUBLIC VISIBILITY 20 28458471096\nPUBLIC VISIBILITY 21 1084440389280691\nPUBLIC VISIBILITY 22 803988756159\nPUBLIC VISIBILITY 23 24502573534794233\nPUBLIC VISIBILITY 24 3071407\nPUBLIC VISIBILITY 25 11178819534683\nPUBLIC VISIBILITY 26 21927831978205055\nPUBLIC VISIBILITY 27 3136879335750\nPUBLIC VISIBILITY 28 1145047291268\nPUBLIC VISIBILITY PASS [(100000, 0, 27), (1000000, 0, 27)]\n"
+  },
+  "manifest_sha256": "9e145fdcaf4fcbc3690c13f5476b50f01e08a486c106f905428ab1b1be124c64",
+  "protocol": {
+    "jobs": [
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/replay_next24_point_geometry.py"
+        ],
+        "name": "geometry-and-provenance",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/certify_next24_high_rank_minimal_v4.py",
+          "--check"
+        ],
+        "name": "minimal-models",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/certify_next24_r17_results.py",
+          "--check"
+        ],
+        "name": "batch-certificates",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/replay_inventory_v5_memory.py",
+          "--output",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/verification/inventory62-result.json"
+        ],
+        "name": "inventory62",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_native11952_published_visibility_v2.py",
+          "--check"
+        ],
+        "name": "published-visibility",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_074d9_110_mod2_v1.json"
+        ],
+        "name": "cloud-074d9-110",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_074d9_103_mod2_v1.json"
+        ],
+        "name": "cloud-074d9-103",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_074d9_024_mod2_v1.json"
+        ],
+        "name": "cloud-074d9-024",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_074d9_015_mod2_v1.json"
+        ],
+        "name": "cloud-074d9-015",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_07ca9_013_mod2_v1.json"
+        ],
+        "name": "cloud-07ca9-013",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_07ca9_066_mod2_v1.json"
+        ],
+        "name": "cloud-07ca9-066",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_07ca9_008_mod2_v1.json"
+        ],
+        "name": "cloud-07ca9-008",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_07ca9_065_mod2_v1.json"
+        ],
+        "name": "cloud-07ca9-065",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_08234_096_mod2_v1.json"
+        ],
+        "name": "cloud-08234-096",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_08234_123_mod2_v1.json"
+        ],
+        "name": "cloud-08234-123",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_08234_107_mod2_v1.json"
+        ],
+        "name": "cloud-08234-107",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_08234_013_mod2_v1.json"
+        ],
+        "name": "cloud-08234-013",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_08f72_015_mod2_v1.json"
+        ],
+        "name": "cloud-08f72-015",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_08f72_039_mod2_v1.json"
+        ],
+        "name": "cloud-08f72-039",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_08f72_053_mod2_v1.json"
+        ],
+        "name": "cloud-08f72-053",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_08f72_008_mod2_v1.json"
+        ],
+        "name": "cloud-08f72-008",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_103b2_067_mod2_v1.json"
+        ],
+        "name": "cloud-103b2-067",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_103b2_025_mod2_v1.json"
+        ],
+        "name": "cloud-103b2-025",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_103b2_021_mod2_v1.json"
+        ],
+        "name": "cloud-103b2-021",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_103b2_055_mod2_v1.json"
+        ],
+        "name": "cloud-103b2-055",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_11952_030_mod2_v1.json"
+        ],
+        "name": "cloud-11952-030",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_11952_017_mod2_v1.json"
+        ],
+        "name": "cloud-11952-017",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_11952_094_mod2_v1.json"
+        ],
+        "name": "cloud-11952-094",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_r17_extended_11952_041_mod2_v1.json"
+        ],
+        "name": "cloud-11952-041",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_rank27_all_retained_mod2_v1.json"
+        ],
+        "name": "adaptive-mod2",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/artifacts/generated-results/elliptic-curves/next24_rank27_all_retained_modl_v1.json"
+        ],
+        "name": "adaptive-mod3-mod5",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/next24-portable-v1/workspace/elliptic-curves/tests",
+          "-p",
+          "test_next24_local_minimality.py"
+        ],
+        "name": "local-minimality-regression",
+        "wall_seconds": 60
+      }
+    ],
+    "manifest_sha256": "9e145fdcaf4fcbc3690c13f5476b50f01e08a486c106f905428ab1b1be124c64",
+    "rss_bytes": 1610612736,
+    "scope": "Isolated exact centres, maps, raw points and complete-cloud provenance for1080 initial and301 adaptive charts; all24 standalone cloud certificates, three minimal model proofs,62-curve inventory andCSV, adaptive modulo2/3/5 proofs and separate retrospective visibility. All admission/archive histories passed local checks and are retained; this isolated run does not repeat them or run a point search.",
+    "verifier_sha256": "93ea2978471608a7d4f4500871cc40dd79f5c6e9b309a93722fd8dbb63812fc0"
+  },
+  "schema": "elliptic-curves.next24-portable-replay.v1",
+  "stages_attempted": 32,
+  "status": "PASS",
+  "verifier_path": "elliptic-curves/cas/verify_next24_discovery_bundle.py",
+  "verifier_sha256": "93ea2978471608a7d4f4500871cc40dd79f5c6e9b309a93722fd8dbb63812fc0"
+}

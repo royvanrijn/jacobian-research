@@ -1,0 +1,1603 @@
+{
+  "claim_boundary": "Thirty-four isolated stages pass. The original inventory check times out at180seconds after26 reported curves. No mathematical failure is inferred and no full isolated inventory pass is claimed by this artifact. Preserve this result alongside a separately versioned replacement.",
+  "ledger": {
+    "rows": [
+      {
+        "name": "trace-extension",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/extend_retained_r17_prime_scores.py",
+            "replay"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/trace-extension.log",
+          "log_sha256": "b6900ddb77023374a059555128e4f2a62a14f1951904472a86cc9bc6c2dcf8f0",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 32989184,
+          "pid": 806301,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48348220",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 3.5924048839951865,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "geometry-and-provenance",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/replay_paired_point_geometry.py"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 300
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/geometry-and-provenance.log",
+          "log_sha256": "3628eb1bb1e4db5531bacee98779a79a9bf1c23cb828ce40244456b7d0874dae",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 186597376,
+          "pid": 806303,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48348582",
+          "termination_signal": null,
+          "timeout_seconds": 300,
+          "wall_seconds": 8.867494538018946,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "minimal-models",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/certify_paired_high_rank_minimal_v2.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/minimal-models.log",
+          "log_sha256": "922b7feaece3f1627e6da1c0d7bc32456ade18a43d41f10704fc0a24580e43f4",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 76050432,
+          "pid": 808003,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48349471",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 6.244767928030342,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "first-rank27",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/certify_paired_rank27.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/first-rank27.log",
+          "log_sha256": "b61e82ebdd36c0bf4140f3e2ca20f00d88104b2d858e4c6d9ce50fe8f213525b",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23699456,
+          "pid": 808005,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48350097",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 11.547180758032482,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "batch-certificates",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/certify_fresh_r17_paired_results.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/batch-certificates.log",
+          "log_sha256": "1df4b60babb9a0dd33d6adf2e749f60995d865697cca33883319157462ef9a1b",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 49684480,
+          "pid": 808007,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48351254",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 139.5947287150193,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "inventory47",
+        "status": "FAILED_OR_CENSORED",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/export_new_high_rank_curve_index_v4.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v4.json"
+          ],
+          "failure_reason": "strict_wall_timeout",
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/inventory47.log",
+          "log_sha256": "3953d8a37bff8144a371c9bf8dede74f7ac44587859071995bfe95e86f631114",
+          "outcome": "strict_wall_timeout",
+          "peak_observed_rss_bytes": 67457024,
+          "pid": 823847,
+          "returncode": -15,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48365216",
+          "termination_signal": 15,
+          "timeout_seconds": 180,
+          "wall_seconds": 181.01197818596847,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-074d9-004",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_074d9_004_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-074d9-004.log",
+          "log_sha256": "d7b4a35c212eb587ddae4d1c3520eddcb2f14800f052a1ac9f4e4710d4edaaef",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 26415104,
+          "pid": 901729,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48383320",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.531423069012817,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-074d9-005",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_074d9_005_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-074d9-005.log",
+          "log_sha256": "7d8b93c3ea2442c3792f7edc6e66a5360b9cfce42d6e72a932363d5a4f2ff2d7",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22970368,
+          "pid": 901731,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48383375",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2774806279921904,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-074d9-007",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_074d9_007_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-074d9-007.log",
+          "log_sha256": "646973038c8d6efc5bb2fb9a03376f826f9b8d622b20490fc7eea527b5ccc0ef",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24457216,
+          "pid": 901733,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48383405",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2783087159623392,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-074d9-017",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_074d9_017_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-074d9-017.log",
+          "log_sha256": "3487f207e6315603183a304036d55dcbf91b537ff465e655a908340a07174bf3",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24133632,
+          "pid": 901735,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48383435",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.27835704101016745,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-07ca9-004",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_07ca9_004_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-07ca9-004.log",
+          "log_sha256": "75099d0fcc76c69f8aab8b87696a08518e6ee732ef8c44265217e13feda6748f",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22892544,
+          "pid": 901737,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48383465",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.27662842301651835,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-07ca9-005",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_07ca9_005_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-07ca9-005.log",
+          "log_sha256": "8e23996a125699527fb292c40c017898a54db40914258f568551d2ec6660c5ea",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23388160,
+          "pid": 901739,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48383495",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.37857883202377707,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-07ca9-025",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_07ca9_025_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-07ca9-025.log",
+          "log_sha256": "17a08b9297b8cf90a514845d1d6a6dff98616cf824ff0f041b247cc649f495f3",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24825856,
+          "pid": 901741,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48383535",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.5303782729897648,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08234-004",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_08234_004_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08234-004.log",
+          "log_sha256": "d2267bd216033bc13fa8872daf344b7b7497ae6d019b8e5b30e757dfebd3b7a3",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22859776,
+          "pid": 901743,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48383591",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2779850999941118,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08234-005",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_08234_005_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08234-005.log",
+          "log_sha256": "5e637a19dda6113c79316ba7ea60cc8fca7c361b2e085fc6dc3ab9189fc2d635",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22827008,
+          "pid": 901745,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48383621",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.32862377201672643,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08234-015",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_08234_015_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08234-015.log",
+          "log_sha256": "9954cc99f2b56a2691432d0150b21eadd72fd1234b769ba9b87d34532b86c84e",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25616384,
+          "pid": 901747,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48383656",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.4805070790462196,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08234-037",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_08234_037_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08234-037.log",
+          "log_sha256": "5443b0a47e983ee9ff96da67e8e56599ab2e79b7270c8a06f6c24ba44508083e",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24195072,
+          "pid": 901749,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48383706",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.42895274702459574,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08f72-004",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_08f72_004_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08f72-004.log",
+          "log_sha256": "42085cec3d4989c5f3163dcf87eca84d386ff0a99f6fc2a9f06ce6388c980ebd",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22872064,
+          "pid": 901751,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48383751",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.27793409605510533,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08f72-005",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_08f72_005_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08f72-005.log",
+          "log_sha256": "f9da5fb590def9eb2ccc7a814f4cfbc89719df718b27dd233bb06992a701866d",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22597632,
+          "pid": 901753,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48383781",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.27913932903902605,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08f72-009",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_08f72_009_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08f72-009.log",
+          "log_sha256": "977fde3b9a21a0119ef10c9291f7c1bed9f9ce6c007d6b5bb1d6abf626165f96",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 26128384,
+          "pid": 901755,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48383812",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.531535490998067,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08f72-070",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_08f72_070_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08f72-070.log",
+          "log_sha256": "51478048fa18e39f3a7ae2bc723614d1117ca143502873e530caa4a71f565e72",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25268224,
+          "pid": 901757,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48383867",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.3295735860010609,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-103b2-004",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_103b2_004_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-103b2-004.log",
+          "log_sha256": "1c2b8001d0d5487cdef77d588d7e2e7ff8441d1d1ebd01d5d667f0294d7e81af",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23130112,
+          "pid": 901759,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48383903",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.32754107302753255,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-103b2-005",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_103b2_005_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-103b2-005.log",
+          "log_sha256": "fc019dfa27aaeff4e55ba0c79ca47ff13bce7d398e529d1eebeb5bf1a4cd4510",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22597632,
+          "pid": 901761,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48383938",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.27672341896686703,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-103b2-026",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_103b2_026_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-103b2-026.log",
+          "log_sha256": "ec66ee389e83e99466b2ec88e880442d3ab8c3632989cc683b259cea187f6211",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24150016,
+          "pid": 901763,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48383968",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2792506589903496,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-103b2-062",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_103b2_062_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-103b2-062.log",
+          "log_sha256": "5a99c0371083b023cc68b204ce451250ed95c8da5ccf54b691e19c5924a70572",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23912448,
+          "pid": 901765,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48383998",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.22695677902083844,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-11952-004",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_11952_004_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-11952-004.log",
+          "log_sha256": "cff0f0c9764eccd8273dbc50fcc89c0807126b68b4a0ff1ff2def036d959e82c",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22614016,
+          "pid": 901771,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48384023",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2776358360424638,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-11952-005",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_11952_005_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-11952-005.log",
+          "log_sha256": "b4d3dd85a1691c0488da7428b0ae4a70184c0d87cefa502fe771211fb4d02d0e",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22880256,
+          "pid": 901773,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48384053",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2775354799814522,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-11952-010",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_11952_010_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-11952-010.log",
+          "log_sha256": "b6f991a66141cc80f43fe4985bbca4fdb892aa7645e8b560a7a1c5e35ded50f7",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24436736,
+          "pid": 901776,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48384083",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.3307612570351921,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-11952-048",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_11952_048_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-11952-048.log",
+          "log_sha256": "7e87f615a4234a558e856fcd7a85789e905878e9702fd7bead7622394c1bcc75",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24444928,
+          "pid": 901778,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48384119",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.27938936999998987,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "paired_rank27-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/paired_rank27_all_retained_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/paired_rank27-mod2.log",
+          "log_sha256": "646973038c8d6efc5bb2fb9a03376f826f9b8d622b20490fc7eea527b5ccc0ef",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25681920,
+          "pid": 901780,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48384149",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.3291448439704254,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "paired_rank27-mod3-mod5",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/paired_rank27_all_retained_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/paired_rank27-mod3-mod5.log",
+          "log_sha256": "bbea74fc2763a8d94be04f5bb0ab64240403540fe984022dd576cdc822e35be2",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24633344,
+          "pid": 901782,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48384185",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.7879147709463723,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "paired_second27-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/paired_second27_all_retained_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/paired_second27-mod2.log",
+          "log_sha256": "b6f991a66141cc80f43fe4985bbca4fdb892aa7645e8b560a7a1c5e35ded50f7",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25661440,
+          "pid": 901784,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48384266",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.3297104059602134,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "paired_second27-mod3-mod5",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/paired_second27_all_retained_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/paired_second27-mod3-mod5.log",
+          "log_sha256": "54921805d2d33b982ad8cf8525900bf4fdbaab2f23d59740656538cbdf4c8b00",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24932352,
+          "pid": 901786,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48384301",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.7889157769968733,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "test-memory_rank_certificate",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/tests",
+            "-p",
+            "test_memory_rank_certificate.py"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 60
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/test-memory_rank_certificate.log",
+          "log_sha256": "35e072967e6a0f63e78e425baf66a453e309765e3f23959f3d500b657546f10f",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21987328,
+          "pid": 901788,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48384383",
+          "termination_signal": null,
+          "timeout_seconds": 60,
+          "wall_seconds": 0.17646403599064797,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "test-r17_prime_extension",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/tests",
+            "-p",
+            "test_r17_prime_extension.py"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 60
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/test-r17_prime_extension.log",
+          "log_sha256": "fb184ea57734512b1f088f9181209901b9cd46df3eb7eaa2500ea9e48dde20b5",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21803008,
+          "pid": 901790,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48384403",
+          "termination_signal": null,
+          "timeout_seconds": 60,
+          "wall_seconds": 0.12554965203162283,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      }
+    ],
+    "status": "COMPLETE_DECLARED_REPLAY_ATTEMPTS"
+  },
+  "logs": {
+    "batch-certificates": "REPLAYED PAIRED R17 CERTIFICATES 23\n",
+    "cloud-074d9-004": "REPLAYED RECORDED-POINT RANK 074d9 17/55 rank >= 22\n",
+    "cloud-074d9-005": "REPLAYED RECORDED-POINT RANK 074d9 1649/2323 rank >= 18\n",
+    "cloud-074d9-007": "REPLAYED RECORDED-POINT RANK 074d9 2818/1535 rank >= 27\n",
+    "cloud-074d9-017": "REPLAYED RECORDED-POINT RANK 074d9 808/2259 rank >= 26\n",
+    "cloud-07ca9-004": "REPLAYED RECORDED-POINT RANK 07ca9 2027/2347 rank >= 17\n",
+    "cloud-07ca9-005": "REPLAYED RECORDED-POINT RANK 07ca9 633/4064 rank >= 22\n",
+    "cloud-07ca9-025": "REPLAYED RECORDED-POINT RANK 07ca9 -428/491 rank >= 26\n",
+    "cloud-08234-004": "REPLAYED RECORDED-POINT RANK 08234 1931/3733 rank >= 17\n",
+    "cloud-08234-005": "REPLAYED RECORDED-POINT RANK 08234 -2957/3626 rank >= 17\n",
+    "cloud-08234-015": "REPLAYED RECORDED-POINT RANK 08234 -1909/53 rank >= 25\n",
+    "cloud-08234-037": "REPLAYED RECORDED-POINT RANK 08234 -1807/60 rank >= 23\n",
+    "cloud-08f72-004": "REPLAYED RECORDED-POINT RANK 08f72 -4072/2691 rank >= 17\n",
+    "cloud-08f72-005": "REPLAYED RECORDED-POINT RANK 08f72 992/3991 rank >= 17\n",
+    "cloud-08f72-009": "REPLAYED RECORDED-POINT RANK 08f72 9/17 rank >= 23\n",
+    "cloud-08f72-070": "REPLAYED RECORDED-POINT RANK 08f72 1361/72 rank >= 25\n",
+    "cloud-103b2-004": "REPLAYED RECORDED-POINT RANK 103b2 85/1261 rank >= 21\n",
+    "cloud-103b2-005": "REPLAYED RECORDED-POINT RANK 103b2 -2875/1133 rank >= 17\n",
+    "cloud-103b2-026": "REPLAYED RECORDED-POINT RANK 103b2 503/138 rank >= 24\n",
+    "cloud-103b2-062": "REPLAYED RECORDED-POINT RANK 103b2 791/627 rank >= 24\n",
+    "cloud-11952-004": "REPLAYED RECORDED-POINT RANK 11952 -757/1276 rank >= 17\n",
+    "cloud-11952-005": "REPLAYED RECORDED-POINT RANK 11952 1926/3347 rank >= 17\n",
+    "cloud-11952-010": "REPLAYED RECORDED-POINT RANK 11952 -2448/11 rank >= 27\n",
+    "cloud-11952-048": "REPLAYED RECORDED-POINT RANK 11952 -328/1123 rank >= 25\n",
+    "first-rank27": "PASS:27 independent points; global minimality; no Q-isomorphism match in 586 catalogue and 299 earlier equations\n",
+    "geometry-and-provenance": "REPLAYED PAIRED GEOMETRY, EXACT CENTRES, RAW POINTS AND CLOUD PROVENANCE 1639 charts\nAdmission/archive histories passed separate retained local replays; this check does not repeat them.\n",
+    "inventory47": "REPLAYED V4 INVENTORY new-20260906-40 rank >= 27\nREPLAYED V4 INVENTORY new-20260906-41 rank >= 27\nREPLAYED V4 INVENTORY new-20260906-42 rank >= 26\nREPLAYED V4 INVENTORY new-20260905-37 rank >= 26\nREPLAYED V4 INVENTORY new-20260905-38 rank >= 25\nREPLAYED V4 INVENTORY new-20260905-39 rank >= 25\nREPLAYED V4 INVENTORY new-20260905-01 rank >= 25\nREPLAYED V4 INVENTORY new-20260906-43 rank >= 25\nREPLAYED V4 INVENTORY new-20260906-44 rank >= 25\nREPLAYED V4 INVENTORY new-20260905-02 rank >= 25\nREPLAYED V4 INVENTORY new-20260905-03 rank >= 25\nREPLAYED V4 INVENTORY new-20260905-04 rank >= 24\nREPLAYED V4 INVENTORY new-20260906-45 rank >= 24\nREPLAYED V4 INVENTORY new-20260906-46 rank >= 24\nREPLAYED V4 INVENTORY new-20260905-05 rank >= 24\nREPLAYED V4 INVENTORY new-20260905-33 rank >= 24\nREPLAYED V4 INVENTORY new-20260905-06 rank >= 24\nREPLAYED V4 INVENTORY new-20260905-07 rank >= 24\nREPLAYED V4 INVENTORY new-20260905-08 rank >= 24\nREPLAYED V4 INVENTORY new-20260905-09 rank >= 24\nREPLAYED V4 INVENTORY new-20260905-10 rank >= 24\nREPLAYED V4 INVENTORY new-20260905-11 rank >= 23\nREPLAYED V4 INVENTORY new-20260905-12 rank >= 23\nREPLAYED V4 INVENTORY new-20260905-13 rank >= 23\nREPLAYED V4 INVENTORY new-20260905-34 rank >= 23\nREPLAYED V4 INVENTORY new-20260905-14 rank >= 23\n",
+    "minimal-models": "REPLAYED FOUR MINIMAL RANK26/27 PROOFS\n",
+    "paired_rank27-mod2": "REPLAYED RECORDED-POINT RANK 074d9 2818/1535 rank >= 27\n",
+    "paired_rank27-mod3-mod5": "REPLAYED CLOUD MODL 074d9 3 rank >= 27\nREPLAYED CLOUD MODL 074d9 5 rank >= 27\n",
+    "paired_second27-mod2": "REPLAYED RECORDED-POINT RANK 11952 -2448/11 rank >= 27\n",
+    "paired_second27-mod3-mod5": "REPLAYED CLOUD MODL 11952 3 rank >= 27\nREPLAYED CLOUD MODL 11952 5 rank >= 27\n",
+    "test-memory_rank_certificate": ".\n----------------------------------------------------------------------\nRan 1 test in 0.087s\n\nOK\n",
+    "test-r17_prime_extension": ".\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+    "trace-extension": "REPLAYED768 EXTENDED TRACE ROSTERS AND FIXED SCORE SELECTION {'074d9': {'extended_top_two': [7, 17], 'original_next_two': [4, 5]}, '07ca9': {'extended_top_two': [5, 25], 'original_next_two': [4, 5]}, '08234': {'extended_top_two': [37, 15], 'original_next_two': [4, 5]}, '08f72': {'extended_top_two': [70, 9], 'original_next_two': [4, 5]}, '103b2': {'extended_top_two': [26, 62], 'original_next_two': [4, 5]}, '11952': {'extended_top_two': [10, 48], 'original_next_two': [4, 5]}}\n"
+  },
+  "manifest_sha256": "6218d541ec5f3588f6df81a131ae96524168c68cddb9376efc31c430f71fa2ec",
+  "protocol": {
+    "jobs": [
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/extend_retained_r17_prime_scores.py",
+          "replay"
+        ],
+        "name": "trace-extension",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/replay_paired_point_geometry.py"
+        ],
+        "name": "geometry-and-provenance",
+        "wall_seconds": 300
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/certify_paired_high_rank_minimal_v2.py",
+          "--check"
+        ],
+        "name": "minimal-models",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/certify_paired_rank27.py",
+          "--check"
+        ],
+        "name": "first-rank27",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/certify_fresh_r17_paired_results.py",
+          "--check"
+        ],
+        "name": "batch-certificates",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/export_new_high_rank_curve_index_v4.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v4.json"
+        ],
+        "name": "inventory47",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_074d9_004_mod2_v1.json"
+        ],
+        "name": "cloud-074d9-004",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_074d9_005_mod2_v1.json"
+        ],
+        "name": "cloud-074d9-005",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_074d9_007_mod2_v1.json"
+        ],
+        "name": "cloud-074d9-007",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_074d9_017_mod2_v1.json"
+        ],
+        "name": "cloud-074d9-017",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_07ca9_004_mod2_v1.json"
+        ],
+        "name": "cloud-07ca9-004",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_07ca9_005_mod2_v1.json"
+        ],
+        "name": "cloud-07ca9-005",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_07ca9_025_mod2_v1.json"
+        ],
+        "name": "cloud-07ca9-025",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_08234_004_mod2_v1.json"
+        ],
+        "name": "cloud-08234-004",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_08234_005_mod2_v1.json"
+        ],
+        "name": "cloud-08234-005",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_08234_015_mod2_v1.json"
+        ],
+        "name": "cloud-08234-015",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_08234_037_mod2_v1.json"
+        ],
+        "name": "cloud-08234-037",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_08f72_004_mod2_v1.json"
+        ],
+        "name": "cloud-08f72-004",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_08f72_005_mod2_v1.json"
+        ],
+        "name": "cloud-08f72-005",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_08f72_009_mod2_v1.json"
+        ],
+        "name": "cloud-08f72-009",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_08f72_070_mod2_v1.json"
+        ],
+        "name": "cloud-08f72-070",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_103b2_004_mod2_v1.json"
+        ],
+        "name": "cloud-103b2-004",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_103b2_005_mod2_v1.json"
+        ],
+        "name": "cloud-103b2-005",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_103b2_026_mod2_v1.json"
+        ],
+        "name": "cloud-103b2-026",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_103b2_062_mod2_v1.json"
+        ],
+        "name": "cloud-103b2-062",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_11952_004_mod2_v1.json"
+        ],
+        "name": "cloud-11952-004",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_11952_005_mod2_v1.json"
+        ],
+        "name": "cloud-11952-005",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_11952_010_mod2_v1.json"
+        ],
+        "name": "cloud-11952-010",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/fresh_r17_paired_11952_048_mod2_v1.json"
+        ],
+        "name": "cloud-11952-048",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/paired_rank27_all_retained_mod2_v1.json"
+        ],
+        "name": "paired_rank27-mod2",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/paired_rank27_all_retained_modl_v1.json"
+        ],
+        "name": "paired_rank27-mod3-mod5",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/paired_second27_all_retained_mod2_v1.json"
+        ],
+        "name": "paired_second27-mod2",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/paired_second27_all_retained_modl_v1.json"
+        ],
+        "name": "paired_second27-mod3-mod5",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/tests",
+          "-p",
+          "test_memory_rank_certificate.py"
+        ],
+        "name": "test-memory_rank_certificate",
+        "wall_seconds": 60
+      },
+      {
+        "args": [
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-v1/workspace/elliptic-curves/tests",
+          "-p",
+          "test_r17_prime_extension.py"
+        ],
+        "name": "test-r17_prime_extension",
+        "wall_seconds": 60
+      }
+    ],
+    "manifest_sha256": "6218d541ec5f3588f6df81a131ae96524168c68cddb9376efc31c430f71fa2ec",
+    "rss_bytes": 1610612736,
+    "scope": "Isolated pure-Python proofs:768 frozen trace rosters/scores,1639 exact rational centres/geometries/raw point lists with complete-cloud provenance, all standalone rank certificates and47-curve inventory, both adaptive clouds modulo2/3/5, targeted tests. Initial1037 and adaptive602 admission/archive histories passed separate retained local replays; this isolated run does not repeat those histories or invoke either point-search engine.",
+    "verifier_sha256": "efa9defb1c5d5176f7d33b5d499de666d680d13e0560a7b38c5753c58664dced"
+  },
+  "schema": "elliptic-curves.paired-rank27-portable-replay.v1",
+  "stages_attempted": 35,
+  "status": "34_PASS_ONE_INVENTORY_WALL_TIMEOUT",
+  "verifier_path": "elliptic-curves/cas/verify_paired_rank27_discovery_bundle.py",
+  "verifier_sha256": "efa9defb1c5d5176f7d33b5d499de666d680d13e0560a7b38c5753c58664dced"
+}

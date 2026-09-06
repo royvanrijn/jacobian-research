@@ -1,0 +1,85 @@
+{
+  "arms": [
+    {
+      "arm": "pari",
+      "completed_denominator": null,
+      "input_sha256": "d75730408cbfbd8f4b9450977b5ce1c523988c08f8983cd39244b18477dbc239",
+      "points_returned": 6,
+      "rank_lower_bound": 29,
+      "status": "bounded_search_complete",
+      "wall_seconds": 38.0129090740229
+    },
+    {
+      "arm": "gmp",
+      "completed_denominator": 117838,
+      "input_sha256": "bdd42aa46c9c5d4733abcf3a410add7a80b558362c93b779c4f5019e152215c3",
+      "points_returned": 2,
+      "rank_lower_bound": 28,
+      "status": "bounded_search_timeout",
+      "wall_seconds": 60.09231522801565
+    }
+  ],
+  "claim_boundary": "The chart choice and budget are informed by a published-point diagnostic, so recovery is retrospective calibration, not blind validation or a new curve. Workers consume only the existing28-point seed and old generic map, never an oracle point or word. No additional charts, retries, point absence, exact rank or automatic prospective escalation.",
+  "protocol": {
+    "arms": [
+      "pari",
+      "gmp"
+    ],
+    "boundaries": "The chart choice and budget are informed by a published-point diagnostic, so recovery is retrospective calibration, not blind validation or a new curve. Workers consume only the existing28-point seed and old generic map, never an oracle point or word. No additional charts, retries, point absence, exact rank or automatic prospective escalation.",
+    "chart_index": 12,
+    "gate": "The exact retrospective audit exhibits a representative of the last known29th direction at height918522 in original generic chart12. Existing10-second million-height PARI calls were censored. Measure two unchanged engines on this same chart and full million-height box, with a fixed60seconds each; retain every partial transcript.",
+    "gp_sha256": "c9673623cad2eaa7cfe402e7b7d833f1f703689a09837026b6386aaafba6deec",
+    "height": 1000000,
+    "oracle_gate_sha256": "efaafedf4e571d703ba0029c9a1b82212bda4e7e9389c1986afe16a5e1498080",
+    "outer_seconds_per_arm": 90,
+    "rss_bytes": 1610612736,
+    "schema": "elliptic-curves.native29-million-chart-benchmark.protocol.v1",
+    "seconds_per_chart": 60,
+    "sources": {
+      "artifacts/local/elliptic-curves/native11952-height125-control-v1/125000/result.json": "8f3b7be7f1e851d1cf05c7be6aa1e905d7237f62d29b8ba051fb69041ab7bde6",
+      "artifacts/local/elliptic-curves/native11952-pari-maps-v1/maps.json": "ee49e53581f97ab5d4a0ff871026987131016b8b13b7ef51d7f86c6e8077682a",
+      "elliptic-curves/cas/alternate_quartic_covers.py": "598f7556333c9d8462f251d97a6d132e0bd672a11861f8c2f142fc4588abe9e5",
+      "elliptic-curves/cas/benchmark_native29_million_chart.py": "439486fbb2ac79ce5c2be22cf85a4e43b96a7a143734c78dbb378101dd1710ad",
+      "elliptic-curves/cas/half_lattice_pointed_sieve.py": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4",
+      "elliptic-curves/cas/memory_rank_certificate.py": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6",
+      "elliptic-curves/cas/pari_pointed_backend.py": "895c0f3c14eefc2537ef1aca4354719e47ce2a7cd09fcf2e83f2c44cc60733de",
+      "elliptic-curves/cas/pointed_quartic_search.py": "01c40a10cbe31f4439c4f2dacf7e2e5831f8bd6b83079933c9d506b6a25d1ff9",
+      "elliptic-curves/cas/pointed_quartic_sieve.cpp": "7a015c85e54e14f16848626b154236132e34c0e42315242959a0be59e2de97a4",
+      "elliptic-curves/cas/research_runtime/arithmetic.py": "f304317492824cf149c88b5814e68cdd0bffb0542a3d8db7bb4d9f3ec988802b",
+      "elliptic-curves/cas/research_runtime/binary.py": "9956f4b5236d8ad2260018182eebfa18bcd8ced7fdc92ffa6023ad9da7d9dd99",
+      "elliptic-curves/cas/research_runtime/cached_observation_state.py": "c1480925932b0cf86c0392cb796e9f83d278e84fc0a769ad031e93a8a68d43a7",
+      "elliptic-curves/cas/research_runtime/finite_reduction.py": "467609d4a1003127a9dcfb5ff3cd911d3748f5c5c5ff68a43f09db0de9b69992",
+      "elliptic-curves/cas/research_runtime/mw_state.py": "e53c24a786afe1096a3bc90eff94396b1b3b6b1fd3ec52c24e51c69622b4596d",
+      "elliptic-curves/cas/research_runtime/pointed_worker.py": "7126cac4ed8bbfd7015476670b61fc317649700436b92e072a21d1bac4695ddf",
+      "elliptic-curves/cas/research_runtime/quotient_only_reduction.py": "b47036dd2d5882a8bdccfb9095fb11c543ddc8e209e487d6c7afdf8a8d06986a",
+      "elliptic-curves/cas/research_runtime/search_state.py": "598a2177fa1cdd5b45c801c09adcc4ac51bd2a87152b7982ea70e78585f8671c",
+      "elliptic-curves/cas/research_runtime/store.py": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965",
+      "elliptic-curves/cas/research_runtime/supervisor.py": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233",
+      "elliptic-curves/cas/search_observability.py": "b6189a0cee9805336609f413b2dd8ccb38263c2d594131aabf3b0555a9c04b58"
+    }
+  },
+  "schema": "elliptic-curves.native29-million-chart-benchmark.v1",
+  "sources": {
+    "artifacts/local/elliptic-curves/native11952-height125-control-v1/125000/result.json": "8f3b7be7f1e851d1cf05c7be6aa1e905d7237f62d29b8ba051fb69041ab7bde6",
+    "artifacts/local/elliptic-curves/native11952-pari-maps-v1/maps.json": "ee49e53581f97ab5d4a0ff871026987131016b8b13b7ef51d7f86c6e8077682a",
+    "elliptic-curves/cas/alternate_quartic_covers.py": "598f7556333c9d8462f251d97a6d132e0bd672a11861f8c2f142fc4588abe9e5",
+    "elliptic-curves/cas/benchmark_native29_million_chart.py": "439486fbb2ac79ce5c2be22cf85a4e43b96a7a143734c78dbb378101dd1710ad",
+    "elliptic-curves/cas/half_lattice_pointed_sieve.py": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4",
+    "elliptic-curves/cas/memory_rank_certificate.py": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6",
+    "elliptic-curves/cas/pari_pointed_backend.py": "895c0f3c14eefc2537ef1aca4354719e47ce2a7cd09fcf2e83f2c44cc60733de",
+    "elliptic-curves/cas/pointed_quartic_search.py": "01c40a10cbe31f4439c4f2dacf7e2e5831f8bd6b83079933c9d506b6a25d1ff9",
+    "elliptic-curves/cas/pointed_quartic_sieve.cpp": "7a015c85e54e14f16848626b154236132e34c0e42315242959a0be59e2de97a4",
+    "elliptic-curves/cas/research_runtime/arithmetic.py": "f304317492824cf149c88b5814e68cdd0bffb0542a3d8db7bb4d9f3ec988802b",
+    "elliptic-curves/cas/research_runtime/binary.py": "9956f4b5236d8ad2260018182eebfa18bcd8ced7fdc92ffa6023ad9da7d9dd99",
+    "elliptic-curves/cas/research_runtime/cached_observation_state.py": "c1480925932b0cf86c0392cb796e9f83d278e84fc0a769ad031e93a8a68d43a7",
+    "elliptic-curves/cas/research_runtime/finite_reduction.py": "467609d4a1003127a9dcfb5ff3cd911d3748f5c5c5ff68a43f09db0de9b69992",
+    "elliptic-curves/cas/research_runtime/mw_state.py": "e53c24a786afe1096a3bc90eff94396b1b3b6b1fd3ec52c24e51c69622b4596d",
+    "elliptic-curves/cas/research_runtime/pointed_worker.py": "7126cac4ed8bbfd7015476670b61fc317649700436b92e072a21d1bac4695ddf",
+    "elliptic-curves/cas/research_runtime/quotient_only_reduction.py": "b47036dd2d5882a8bdccfb9095fb11c543ddc8e209e487d6c7afdf8a8d06986a",
+    "elliptic-curves/cas/research_runtime/search_state.py": "598a2177fa1cdd5b45c801c09adcc4ac51bd2a87152b7982ea70e78585f8671c",
+    "elliptic-curves/cas/research_runtime/store.py": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965",
+    "elliptic-curves/cas/research_runtime/supervisor.py": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233",
+    "elliptic-curves/cas/search_observability.py": "b6189a0cee9805336609f413b2dd8ccb38263c2d594131aabf3b0555a9c04b58"
+  },
+  "status": "PASS"
+}

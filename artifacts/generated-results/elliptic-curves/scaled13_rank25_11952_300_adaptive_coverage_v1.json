@@ -1,0 +1,29 @@
+{
+  "adaptive_attempted_charts": 301,
+  "adaptive_completed_boxes": 301,
+  "adaptive_declared_charts": 301,
+  "claim_boundary": "Recorded completed box coverage trusts the pinned PARI executions. Every attempted adaptive history replays; a target stop can leave part of the301-chart roster unsearched. Full retained-cloud finite quotient certificates are lower bounds only; no exact rank, saturation or point-absence conclusion.",
+  "cloud_verification_ledger_sha256": "bea927a4d207448c1f7c5912c90a041a9dd9106470ff31dcba1015cc63c48ebd",
+  "height": 125000,
+  "initial_charts": 49,
+  "mod2_lower_bound": 25,
+  "odd_modulus_lower_bounds": {
+    "3": 25,
+    "5": 25
+  },
+  "point_certificates": {
+    "artifacts/generated-results/elliptic-curves/scaled13_rank25_11952_300_all_retained_mod2_v1.json": "37ceda53917f7e513e20a132f1b72cb9689175b38880f386e543ba546d6bdf80",
+    "artifacts/generated-results/elliptic-curves/scaled13_rank25_11952_300_all_retained_modl_v1.json": "0d47df146fc7f194153b6f7a278b61262e26069454a4faec556bd780ae53d4a4"
+  },
+  "retained_point_count": 3260,
+  "schema": "elliptic-curves.scaled13-rank25-adaptive-coverage.v1",
+  "sources": {
+    "artifacts/local/elliptic-curves/scaled13-rank25-11952-300-adaptive-v1/maps.json": "75929ecaec090d7933e5c58d4b10627bb65fd682d59ac775d0d64f2ce5d5bd77",
+    "artifacts/local/elliptic-curves/scaled13-rank25-11952-300-adaptive-v1/protocol.json": "9c33692a700a698ece0d6b24aa045e0262940c04dafd767f3e4b25168c1bd47b",
+    "artifacts/local/elliptic-curves/scaled13-rank25-11952-300-adaptive-v1/replay.supervisor.json": "c5b88f9f9ddb7301e8d34adb3691f840f273f5ecaf36ec8409a17088a2f62c31",
+    "artifacts/local/elliptic-curves/scaled13-rank25-11952-300-adaptive-v1/result.json": "a553ed8a4f69ed3b0cda9cbde4c8a8fd1df9dc8ce9832c11883365f023f982cc",
+    "artifacts/local/elliptic-curves/scaled13-rank25-11952-300-adaptive-v1/worker.supervisor.json": "8c97d1e13f4a75cacf20e17eaddeb54dfa3364f7741f0178166e39cd2c64b1c0",
+    "artifacts/local/elliptic-curves/scaled13_24-r17-pari-v1/11952-300/result.json": "ecbc0a31a18f1f72874e158b494f34770d0fbd978073801a620c1e9e5b177749",
+    "elliptic-curves/cas/audit_scaled13_rank25_followup.py": "d754bc6fc774df92095b371f98601ffe9e7ee02aec48d078344c4238e9980496"
+  }
+}

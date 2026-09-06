@@ -1,0 +1,726 @@
+{
+  "archive": {
+    "path": "artifacts/generated-results/elliptic-curves/new_mw16_rank27_evidence_v1.zip",
+    "sha256": "0b1c2597dcbc2134a3c96c45c7746b29174bd866401722ef1bb602050ffc49ab"
+  },
+  "base_archives": [
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/compact_r17_wide_evidence_v1.zip",
+      "archive_sha256": "d54b2a494a8bd3841700379aa28ef32366730bbc1bb208d5e03285786ff8a01a",
+      "manifest": "artifacts/generated-results/elliptic-curves/compact_r17_wide_evidence_v1.json",
+      "manifest_sha256": "c1f1f5262df6b9ec0218d38fd553e1d3fd467b6f5362ce8462279f34a77b238d"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/new_rank26_followup_evidence_v1.zip",
+      "archive_sha256": "202f421f4fbadb5d5ba0c5911883214c2ee9269ca79844e4bf1795fae0b77594",
+      "manifest": "artifacts/generated-results/elliptic-curves/new_rank26_followup_evidence_v1.json",
+      "manifest_sha256": "247675cc39e6816eab66d273b4375b140af2a73a1c41e7418e47c72edf2de030"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/exact_parity_coordinate_evidence_v1.zip",
+      "archive_sha256": "f6caba4eef5b22e0eedf242b47cba7c99a16e4e2cba9aae0102d1e92ce4f4a46",
+      "manifest": "artifacts/generated-results/elliptic-curves/exact_parity_coordinate_evidence_v1.json",
+      "manifest_sha256": "e936d77fa42c0358cddb5b6407e9b99b4922647b63907f80cb8b3a7486cc549c"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/small_conductor_followup_evidence_v1.zip",
+      "archive_sha256": "b355fd65496388e4e3b9a4c2bbce1b9af7f5573ee9a9efd64ceed1668028935f",
+      "manifest": "artifacts/generated-results/elliptic-curves/small_conductor_followup_evidence_v1.json",
+      "manifest_sha256": "43f27e5cf5d32122d6d19778bba34cb2d64f1b6e975bd70ed23f220ceba127a3"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/fast_point_pipeline_evidence_v1.zip",
+      "archive_sha256": "2108d6d5c21b04757c87dc7ef5369f7894e57569d0c7c61b74c998bf5bffc69d",
+      "manifest": "artifacts/generated-results/elliptic-curves/fast_point_pipeline_evidence_v1.json",
+      "manifest_sha256": "a2a3382767547e1be9fc6f9a3f7f33a1d316ff05cfbd03793e34bcfca2a9e431"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/paired_rank27_discovery_evidence_v1.zip",
+      "archive_sha256": "cf884ab414618e8df2ded9e6f037ca46eb28fa449286ce5e9e22b152446033f3",
+      "manifest": "artifacts/generated-results/elliptic-curves/paired_rank27_discovery_evidence_v1.json",
+      "manifest_sha256": "6218d541ec5f3588f6df81a131ae96524168c68cddb9376efc31c430f71fa2ec"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/latest8_cross_family_evidence_v1.zip",
+      "archive_sha256": "221a5a2a719308fc61684b32699669959fb95952a04852ff2d143ffa6cea0ee7",
+      "manifest": "artifacts/generated-results/elliptic-curves/latest8_cross_family_evidence_v1.json",
+      "manifest_sha256": "8636987a23d8308e1ba6e5810da609f96af003fc08f70e0ea06b7b34ba222989"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/paired_rank27_inventory_replay_evidence_v2.zip",
+      "archive_sha256": "53ca4e9dbb8d24c53f9979b875adc7e6b7d78e440961f3050470dafcd89dc0d9",
+      "manifest": "artifacts/generated-results/elliptic-curves/paired_rank27_inventory_replay_evidence_v2.json",
+      "manifest_sha256": "b9d1ce027e5c6eaa76da1f78fb1391cd3aee858adfd5fb514a7ca9f002c7485d"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/next24_discovery_evidence_v1.zip",
+      "archive_sha256": "57f6c328f25d3c3426746a6fe5e2c9e08ddf9e8eaa046b1c0aef9c32d0e72097",
+      "manifest": "artifacts/generated-results/elliptic-curves/next24_discovery_evidence_v1.json",
+      "manifest_sha256": "9e145fdcaf4fcbc3690c13f5476b50f01e08a486c106f905428ab1b1be124c64"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/height_and_discarded_evidence_v1.zip",
+      "archive_sha256": "9da2377f22a55fb681350dd8d56a6456705d3ca6a3b2a4f3d141ad29e254b3da",
+      "manifest": "artifacts/generated-results/elliptic-curves/height_and_discarded_evidence_v1.json",
+      "manifest_sha256": "569c48d08b635c46b56cf0b756afe8669c180e391b621187c247b551f66a1c15"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/retention24_discovery_evidence_v1.zip",
+      "archive_sha256": "107c391bf0ceec289c5fcd93b0b9715f8dd8475298b3a21435c25e90a0ce47f9",
+      "manifest": "artifacts/generated-results/elliptic-curves/retention24_discovery_evidence_v1.json",
+      "manifest_sha256": "e0ac29b3f0ec27beaa85f8ba41f5ef93db27f6529db6bf2605ec1a2c69cad81a"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/retention_rank27_followup_evidence_v1.zip",
+      "archive_sha256": "db1017de2287a672034f216f57875fd36a6412ed2cd41ef6d3c81fa372d16831",
+      "manifest": "artifacts/generated-results/elliptic-curves/retention_rank27_followup_evidence_v1.json",
+      "manifest_sha256": "566ebc83aa3e98857951d746261eee34d39ad74c6083018fe99b0978848de475"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/million_height_mw16_evidence_v1.zip",
+      "archive_sha256": "81774dffffa1124e42ec7e7777b782c6f1fa7075ed994a736a44edeca794a126",
+      "manifest": "artifacts/generated-results/elliptic-curves/million_height_mw16_evidence_v1.json",
+      "manifest_sha256": "42471ce91d0c58b68b5108e5fac4e74e9d4979f80cddbef20df71c61256bd7e4"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/million_height_mw16_population_supplement_v1.zip",
+      "archive_sha256": "3d7382ca2c150fb043e3b0ab348e23412b3373fcaf15d685bf9215f4290e346e",
+      "manifest": "artifacts/generated-results/elliptic-curves/million_height_mw16_population_supplement_v1.json",
+      "manifest_sha256": "564e872a5c18637573abab758ad56b285f960e5fee0b018a6d2e21ad6849a536"
+    }
+  ],
+  "claim_boundary": "Isolated exact geometry and point-cloud provenance for1204 boxes; three follow-up rank proofs and one minimal27 equation;98 IDs and CSV,1176 incidence binding,67 exact public coordinate comparisons with two explicit unknowns; unchanged Nagao outputs and strict full small-population scores. No new point search, scanner invocation or prime trace. Completed admission histories remain available in the archive.",
+  "ledger": {
+    "rows": [
+      {
+        "name": "geometry903",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/elliptic-curves/cas/replay_new_mw16_rank26_followup_geometry.py"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/verification/geometry903.log",
+          "log_sha256": "0e2455abda17c24f31ef4a5751cce8043b92d1759ae2240cf97ba05b4bf13404",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 291377152,
+          "pid": 10723,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49755615",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 5.949100884026848,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "geometry301",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/elliptic-curves/cas/replay_new_mw16_rank27_direction_geometry.py"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/verification/geometry301.log",
+          "log_sha256": "d1ba10e16b5ecaf133a23182772cbd8d8634223be13c90c9007c90dae9332bf9",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 164061184,
+          "pid": 11798,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49756212",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 1.7591072549694218,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "followup-three",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/elliptic-curves/cas/certify_new_mw16_followup_results.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/verification/followup-three.log",
+          "log_sha256": "996d2c64ee133db92df6263516676e56f181a7340289bfcf1e8b0d7bc1601fb9",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 113631232,
+          "pid": 12220,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49756391",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.9487601660075597,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "minimal27",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/elliptic-curves/cas/certify_new_mw16_rank27_minimal.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/verification/minimal27.log",
+          "log_sha256": "e4438e0c7d9c7126252574e077e683fc0582caf316e04b3e35507039db2d0b6e",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25034752,
+          "pid": 12263,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49756488",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.27900275599677116,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "inventory98",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/elliptic-curves/cas/replay_inventory_v9_memory.py",
+            "--output",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/verification/inventory-replay.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/verification/inventory98.log",
+          "log_sha256": "277189f2d2b8642425cdef03b7db75637882ac1bf2957ecac60abe0ab3c78268",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 38133760,
+          "pid": 12286,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49756519",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 14.041706301970407,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "sage-export",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/elliptic-curves/cas/export_new_mw16_rank27_sage.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 30
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/verification/sage-export.log",
+          "log_sha256": "68f766f415429f2e116b9f04e7c4695d2059f876b4733e9603210c014370c3ce",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 20811776,
+          "pid": 12546,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49757925",
+          "termination_signal": null,
+          "timeout_seconds": 30,
+          "wall_seconds": 0.1255838240031153,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "incidence1176",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/elliptic-curves/cas/certify_inventory98_incidence_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/inventory98_cross_family_incidence_v2.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/verification/incidence1176.log",
+          "log_sha256": "29ce2e7d4c90985966bedb2b749cfe76f3aa381f6a96810bb6fdee357a957dd6",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 20779008,
+          "pid": 12550,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49757940",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.12579798902152106,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "public-height",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/elliptic-curves/cas/audit_public_compact_parameter_heights.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 60
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/verification/public-height.log",
+          "log_sha256": "26f46fee246b9516599acee99857d350eb77430ea155ee89aa458fbc41dadc4d",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21856256,
+          "pid": 12554,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49757955",
+          "termination_signal": null,
+          "timeout_seconds": 60,
+          "wall_seconds": 0.12761610199231654,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "periodic-benchmark",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/elliptic-curves/cas/benchmark_periodic_nagao_scanner.py",
+            "replay"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/verification/periodic-benchmark.log",
+          "log_sha256": "f2dd5791709fbd1a2d1f35c01411a9622432975b78464968c2c28f5c0323f5f5",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24121344,
+          "pid": 12557,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49757970",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.5856038799975067,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "periodic-strict",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/elliptic-curves/cas/replay_periodic_nagao_scanner_portable.py"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/verification/periodic-strict.log",
+          "log_sha256": "c114a0a8bfde0275df7a7f0d866274a9181567b911c4c581bfb2b730b670c52a",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 43257856,
+          "pid": 12562,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49758031",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 2.8812640060205013,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "mw16_new26_a1_fibration_01_015-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/mw16_new26_a1_fibration_01_015_all_retained_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/verification/mw16_new26_a1_fibration_01_015-mod2.log",
+          "log_sha256": "45c08629ffab5085e92ad3fc2d7c92bda7c579872bc19416061ecc2f3931e215",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25825280,
+          "pid": 12639,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49758321",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.28071952500613406,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "mw16_new26_a1_fibration_01_015-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/mw16_new26_a1_fibration_01_015_all_retained_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/verification/mw16_new26_a1_fibration_01_015-modl.log",
+          "log_sha256": "dd72a1c543bd00c7489542e9e3df678a7de86fedf6543b28283813c0f4a6c590",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23388160,
+          "pid": 12644,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49758352",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.5366802850039676,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "mw16_new26_a1_fibration_01_052-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/mw16_new26_a1_fibration_01_052_all_retained_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/verification/mw16_new26_a1_fibration_01_052-mod2.log",
+          "log_sha256": "53754a4f0ce82b81b1f5f74dd88857b06a8184121f338ea88abe9cf08c7d2473",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25858048,
+          "pid": 12650,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49758453",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.2828251720056869,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "mw16_new26_a1_fibration_01_052-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/mw16_new26_a1_fibration_01_052_all_retained_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/verification/mw16_new26_a1_fibration_01_052-modl.log",
+          "log_sha256": "9f818d6862d49d6ac58603836dfb87857ee9768ce0246fed4b6e23f3acba2cd4",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23408640,
+          "pid": 12656,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49758483",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.5870602270006202,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "mw16_new26_a1_fibration_02_014-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/mw16_new26_a1_fibration_02_014_all_retained_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/verification/mw16_new26_a1_fibration_02_014-mod2.log",
+          "log_sha256": "67d641d7fa34a0e957e740d9e1604882d194572ddd7f4eef8764599c037482ce",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 28884992,
+          "pid": 12662,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49758545",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.3844624899793416,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "mw16_new26_a1_fibration_02_014-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/mw16_new26_a1_fibration_02_014_all_retained_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/verification/mw16_new26_a1_fibration_02_014-modl.log",
+          "log_sha256": "8911d122ccd918daef700cafb11e86f17a2c484828522a8c4928164ef0552dda",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 28061696,
+          "pid": 12666,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49758585",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 1.4556360759888776,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "mw16_new27_direction_a1_fibration_01_052-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/mw16_new27_direction_a1_fibration_01_052_all_retained_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/verification/mw16_new27_direction_a1_fibration_01_052-mod2.log",
+          "log_sha256": "53754a4f0ce82b81b1f5f74dd88857b06a8184121f338ea88abe9cf08c7d2473",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25853952,
+          "pid": 12678,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49758733",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.32965338398935273,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "mw16_new27_direction_a1_fibration_01_052-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/workspace/artifacts/generated-results/elliptic-curves/mw16_new27_direction_a1_fibration_01_052_all_retained_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/verification/mw16_new27_direction_a1_fibration_01_052-modl.log",
+          "log_sha256": "9f818d6862d49d6ac58603836dfb87857ee9768ce0246fed4b6e23f3acba2cd4",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24272896,
+          "pid": 12682,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49758769",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.7388845689711161,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      }
+    ],
+    "status": "PASS"
+  },
+  "logical_stages": 18,
+  "schema": "elliptic-curves.new-mw16-rank27-portable-replay.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/new_mw16_rank27_evidence_v1.json": "c5a09f44225cd33a651061c872bdb5bae69a696acd55c27be300e7c9fe3882f6",
+    "artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/verification/ledger.json": "6bea96814b9417914bc974925d7830c9831d9ed15805781d360093c9f805ec4b",
+    "artifacts/local/elliptic-curves/new-mw16-rank27-portable-v1/verification/protocol.json": "12ad9f6eb1021587ce47e5b363ce40b425c3e2326a774380426d81d8d7e8ef25",
+    "elliptic-curves/cas/report_new_mw16_rank27_portable.py": "693d93cd5fb9300f0048b489c03806caa29ab89cf6b8b1acdc12ae9da83164c9"
+  },
+  "status": "PASS"
+}

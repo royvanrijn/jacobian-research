@@ -19,7 +19,7 @@ the research.
 ## Other active research programmes
 
 - [Elliptic K3 / high-rank programme](elkies-k3/README.md)
-- [Elliptic-curve programme](elliptic-curves/README.md)
+- [Elliptic-curve programme](elliptic-curves/README.md) — [185 certified high-rank curves, including six with rank at least 27](elliptic-curves/notes/COMPACT192_UNSEARCHED_TRIAL_2026-09-06.md).
 
 ## Further reading
 
@@ -37,7 +37,7 @@ the research.
 - [Archive](archive/README.md) — closed experiments and historical provenance.
 
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
-<!-- status-consumer: OP-EC-NEXT 80385bab71bd299c -->
+<!-- status-consumer: OP-EC-NEXT 243bf3af7687254b -->
 <!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->
 <!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->

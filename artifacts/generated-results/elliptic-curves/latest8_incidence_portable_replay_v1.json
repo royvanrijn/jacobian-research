@@ -1,0 +1,61 @@
+{
+  "exact_replay": {
+    "claim_boundary": "Exact j-incidence only in the recorded twelve presentations, including infinity; no rational isomorphism or section independence claim.",
+    "pairs_checked": 96,
+    "schema": "elliptic-curves.compact-cross-family-j-incidence-replay.v1",
+    "sources": {
+      "artifacts/generated-results/elliptic-curves/latest8_cross_family_j_incidence_v1.json": "b2ab583f297a00df01af727d08d2720238b5482c472114c9d043e72994007e79",
+      "elliptic-curves/cas/fixed_cubic_geometry.py": "77db6402383e3e64e4577162a98cd69ee4ecd5050ffba69f02a6048e16238a7a",
+      "elliptic-curves/cas/replay_latest8_cross_family_incidence.py": "2e88403555af9933ed59716cadd8c9bfbb9fde6aa47cfc9a0c0f59768675de61"
+    },
+    "status": "PASS",
+    "status_counts": {
+      "NO_RATIONAL_J_PREIMAGE": 88,
+      "RATIONAL_J_PREIMAGES_CERTIFIED": 8
+    }
+  },
+  "log": "REPLAYED LATEST8 CROSS-FAMILY J INCIDENCE {'NO_RATIONAL_J_PREIMAGE': 88, 'RATIONAL_J_PREIMAGES_CERTIFIED': 8}\n",
+  "manifest_sha256": "8636987a23d8308e1ba6e5810da609f96af003fc08f70e0ea06b7b34ba222989",
+  "protocol": {
+    "manifest_sha256": "8636987a23d8308e1ba6e5810da609f96af003fc08f70e0ea06b7b34ba222989",
+    "rss_bytes": 1073741824,
+    "scope": "One exact Sage-free96-pair j-incidence replay from isolated extracted sources and inputs.",
+    "verifier_sha256": "51c6a9a0c922660de800bf8d721a5d4fbfaa6dba1b3632ac0f8beaa0c95dcae7",
+    "wall_seconds": 180
+  },
+  "schema": "elliptic-curves.latest8-incidence-portable-replay.v1",
+  "status": "PASS",
+  "supervision": {
+    "command": [
+      "/usr/bin/python3",
+      "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/latest8-incidence-portable-v1/workspace/elliptic-curves/cas/replay_latest8_cross_family_incidence.py",
+      "--input",
+      "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/latest8-incidence-portable-v1/workspace/artifacts/generated-results/elliptic-curves/latest8_cross_family_j_incidence_v1.json",
+      "--output",
+      "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/latest8-incidence-portable-v1/workspace/latest8-replayed.json"
+    ],
+    "failure_reason": null,
+    "limits": {
+      "address_space_bytes": null,
+      "cgroup": null,
+      "pari_stack_bytes": 256000000,
+      "poll_seconds": 0.05,
+      "rss_bytes": 1073741824,
+      "terminate_grace_seconds": 1.0,
+      "wall_seconds": 180
+    },
+    "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/latest8-incidence-portable-v1/replay.log",
+    "log_sha256": "739d7aa1f5faac8f828ab47b64be1ec4985be179979c56238796a9ca572989b9",
+    "outcome": "completed",
+    "peak_observed_rss_bytes": 25640960,
+    "pid": 901825,
+    "returncode": 0,
+    "rss_limit_bytes": 1073741824,
+    "start_token": "48390172",
+    "termination_signal": null,
+    "timeout_seconds": 180,
+    "wall_seconds": 0.3797425400116481,
+    "worker_result": null,
+    "worker_result_sha256": null
+  }
+}

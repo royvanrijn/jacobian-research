@@ -1,0 +1,19 @@
+{
+  "claim_boundary": "Every integral parity class has a norm<=12 representative; each queried minimum is exact by exhaustive rational LDL enumeration and evenness. When a queried class has minimum12, the maximum over the discrete quotient Z^17/2Z^17 is exactly12. This is not the continuous real covering radius or a specialized rank statement.",
+  "classes_with_exact_minimum12": 49,
+  "exact_maximum_parity_coset_minimum": 12,
+  "family": "11952",
+  "omitted_classes_with_exact_minimum12": 6,
+  "parity_upper_bounds_checked": 131072,
+  "queried_minima_checked": 49,
+  "schema": "elliptic-curves.r17-exact-parity-radius-replay.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_six_r17_atlas_v1.json": "2f28c081c874adfaf738c1119e8f4e6e7ce70ea74277cd8cdb370a02bca34c5d",
+    "artifacts/local/elliptic-curves/compact-six-r17-h4096-v1/11952/generic-census.json": "de6b96f473d7da85e9487acd6e51db9bd3dad160cf1d052cd556e7bcc720318f",
+    "artifacts/local/elliptic-curves/r17-norm12-exact-minima-v1/11952/result.json": "1a3dace7a203366c7ad6991494ef76d0c2862d702607054bfc2ef27ff2925129",
+    "artifacts/local/elliptic-curves/r17-norm12-exact-minima-v1/protocol.json": "afd9a0fd00c3f7e5df24b4daa9262323ec178d5352893d587e8750b15a9729ae",
+    "elliptic-curves/cas/exact_parity_ellipsoid.py": "43922cba3d16bd2fa993d61b88863b2ed69f7b38dcec2b90ba2a05f0ce026290",
+    "elliptic-curves/cas/replay_r17_norm12_minima.py": "b8f7800cd77fee32a861d4cd18f356e3461ac183e26915b312da0190edb1d8ef"
+  },
+  "status": "PASS"
+}

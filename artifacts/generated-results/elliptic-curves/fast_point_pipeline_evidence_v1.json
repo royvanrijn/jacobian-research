@@ -1,0 +1,3142 @@
+{
+  "archive": "artifacts/generated-results/elliptic-curves/fast_point_pipeline_evidence_v1.zip",
+  "archive_bytes": 19985118,
+  "archive_sha256": "2108d6d5c21b04757c87dc7ef5369f7894e57569d0c7c61b74c998bf5bffc69d",
+  "claim_boundary": "Extract the four pinned bases in order, then this supplement. Retains failed comparator, timed-out and intentionally stopped experiments, exact continuations, archived states, full point-cloud proofs, backend boundary checks and admission tests. No new rank28/32 or rank23 small-conductor result is implied.",
+  "files": [
+    {
+      "bytes": 36767,
+      "path": "artifacts/generated-results/elliptic-curves/new_rank26_engine_comparison_v1.json",
+      "sha256": "333de541820269595d8992424e09574a9e2decaed9e2e0ac83612ce4281492cb"
+    },
+    {
+      "bytes": 43077,
+      "path": "artifacts/generated-results/elliptic-curves/new_rank26_engine_comparison_v2.json",
+      "sha256": "6c30d1cfa0d2e8f3f3107f5c1d26bbc863e40a40b1c8e4ce78103dec753a9c7c"
+    },
+    {
+      "bytes": 1434141,
+      "path": "artifacts/generated-results/elliptic-curves/new_rank26_fast301_recorded_mod2_v1.json",
+      "sha256": "414e49d0106d9b383e2010e421b7814bb0f6e03f604ce50fca70cdb0b483403e"
+    },
+    {
+      "bytes": 2059,
+      "path": "artifacts/generated-results/elliptic-curves/pari_height_boundary_regression_v1.json",
+      "sha256": "b0e8be06c354009a629b440bcbeafb05ce06254d1be648d5642346e5c9eb5bd3"
+    },
+    {
+      "bytes": 1760144,
+      "path": "artifacts/generated-results/elliptic-curves/rank26_all_current_retained_mod2_v1.json",
+      "sha256": "04e1614fd43398d809695aead950ca6a1478c3e8bff6607e1f03f9b1874f36be"
+    },
+    {
+      "bytes": 3790780,
+      "path": "artifacts/generated-results/elliptic-curves/rank26_all_retained_modl_v1.json",
+      "sha256": "4c4487bfab332f34f6a711a384001c5d834180891c887c869f00b17cdb4d5da8"
+    },
+    {
+      "bytes": 40692,
+      "path": "artifacts/generated-results/elliptic-curves/rank26_fast301_completion_v1.json",
+      "sha256": "3539d3a56ab7363eb663e72daaa6c7fa7470d2a0bd77511e38f24c09a36a988a"
+    },
+    {
+      "bytes": 10429910,
+      "path": "artifacts/generated-results/elliptic-curves/small_conductor_all_current_retained_mod2_v1.json",
+      "sha256": "870675cef980574efc924f2f80587e4828ddcc8c2969de212978e07c5ed4ad8c"
+    },
+    {
+      "bytes": 21341690,
+      "path": "artifacts/generated-results/elliptic-curves/small_conductor_all_retained_modl_v1.json",
+      "sha256": "5b657cc3b22214c7024fa53a591a18581679de6398ae4c7b94695e7af8e2b93a"
+    },
+    {
+      "bytes": 40734,
+      "path": "artifacts/generated-results/elliptic-curves/small_conductor_fast301_completion_v1.json",
+      "sha256": "e7bbad0d8ab4c5d1c2b294e10e50bb8466897e4ab037dd5449cabd298531ff11"
+    },
+    {
+      "bytes": 2533225,
+      "path": "artifacts/generated-results/elliptic-curves/small_conductor_fast301_recorded_mod2_v1.json",
+      "sha256": "56ed82e5914cd76c750311b7ec3f6984a849476729f70df6863cc66a5f4178bf"
+    },
+    {
+      "bytes": 16640,
+      "path": "artifacts/generated-results/elliptic-curves/strict_backend_calibration_replay_v1.json",
+      "sha256": "eedf08f2a58a1c026f38ad82350e78ff3be03f582cc982cdbe10f8e6435497ff"
+    },
+    {
+      "bytes": 712925,
+      "path": "artifacts/local/elliptic-curves/new-rank26-adaptive-pari-maps-v1/maps.json",
+      "sha256": "22d03ff0c7ed215e1c57854a8301edeff855917e84997d47aedceefc89bf98fb"
+    },
+    {
+      "bytes": 9223,
+      "path": "artifacts/local/elliptic-curves/new-rank26-adaptive-pari-maps-v1/maps.log",
+      "sha256": "806d586843163a3348f84ad1dd1cfe316dad8dea3d20f5104d88ec4491057edb"
+    },
+    {
+      "bytes": 1004,
+      "path": "artifacts/local/elliptic-curves/new-rank26-adaptive-pari-maps-v1/protocol.json",
+      "sha256": "4fa3824388fd011a20f1b4b68bfc15e7ef8e25fcd4fdaa642e147ae9e95f0b66"
+    },
+    {
+      "bytes": 970,
+      "path": "artifacts/local/elliptic-curves/new-rank26-adaptive-pari-maps-v1/supervisor.json",
+      "sha256": "9afda68317af87f400a575d186c6285de5edcf97f871f580ba2f9311f1b44a20"
+    },
+    {
+      "bytes": 970,
+      "path": "artifacts/local/elliptic-curves/new-rank26-adaptive-pari-maps-v1/terminal.json",
+      "sha256": "9afda68317af87f400a575d186c6285de5edcf97f871f580ba2f9311f1b44a20"
+    },
+    {
+      "bytes": 611,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-00.json",
+      "sha256": "3f83e3034a9c2fcf7f17bcefd2fb2136f46a4c7e90011278137d3780ccd722c3"
+    },
+    {
+      "bytes": 480,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-01.json",
+      "sha256": "f5854609eed72b03f1265b01b5ab9c7ca330811b3d0fe4b1b87fb7213fa413b1"
+    },
+    {
+      "bytes": 669,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-02.json",
+      "sha256": "0250bfac8b3d15ec2a09ee49f5bedef7ea80221201f26e467c26dd3c0b6964a8"
+    },
+    {
+      "bytes": 687,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-03.json",
+      "sha256": "012ee6221c495f41c890084a39cfbaea04f960bcda9439b4e4e8187fa2856dab"
+    },
+    {
+      "bytes": 595,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-04.json",
+      "sha256": "6c5c93404f9882277b5ade30cd8d3e50c34063e57fb58cde28f7b870a88178af"
+    },
+    {
+      "bytes": 525,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-05.json",
+      "sha256": "26a8af17e329669c66cc925bd385c37fee16d2b470304dab2099e70e699f6478"
+    },
+    {
+      "bytes": 612,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-06.json",
+      "sha256": "fba588fb6b66286b81fb9d57f1e7cb1b582deb59766dfd4770c5bbc14f94cd1b"
+    },
+    {
+      "bytes": 490,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-07.json",
+      "sha256": "df0264e2a4c47d0cb6eda41d9f565509e6658938af304d96a09c25560e2e954b"
+    },
+    {
+      "bytes": 562,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-08.json",
+      "sha256": "ec48c7f8ebdffa2ef55728f436068f188526fcc44ac055f4d89f4d2e5b93626c"
+    },
+    {
+      "bytes": 522,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-09.json",
+      "sha256": "47d80f28c4776506a5dbcf2a8e2ff78b12e702c22b57532e172499069be5723c"
+    },
+    {
+      "bytes": 591,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-10.json",
+      "sha256": "5b1baa5510cd233852bb659c17eca40db118182af63409e28346bf53e4f8b5b7"
+    },
+    {
+      "bytes": 500,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-11.json",
+      "sha256": "19c89d79110ae2723ad685a193242c0bcbabc25472e973bc7f5af849fc8f87ce"
+    },
+    {
+      "bytes": 523,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-12.json",
+      "sha256": "252b314fda6eef6141269d9eb28209675b37604557b7898833a82a9f3ca8d30f"
+    },
+    {
+      "bytes": 470,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-13.json",
+      "sha256": "45bcc14b93befaae4b041c1fd4b5bf6748f52db4f4066490d176ca7304eb32a0"
+    },
+    {
+      "bytes": 617,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-14.json",
+      "sha256": "ff789254659f9ed6cef1e651dc93ecd10e137340cf722ac5bd7851636bfb457b"
+    },
+    {
+      "bytes": 611,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-15.json",
+      "sha256": "83d658b5bf263cc6b59ef8ed104d40d355ea0976d6e90dee7b93b16673a18c3a"
+    },
+    {
+      "bytes": 528,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-16.json",
+      "sha256": "abe06556a9fb26da372dde528c40588ec7cd8efd25626952f2d7232801c7a128"
+    },
+    {
+      "bytes": 573,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-17.json",
+      "sha256": "917168d16f78713222e11b10ce864c405ef8a86ea36ace4c5f9e1a8d6e03deb8"
+    },
+    {
+      "bytes": 612,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-18.json",
+      "sha256": "1100c903d5a68a65d488e5deee0ed5bbee65b50fabf36761ca80f34a1410a197"
+    },
+    {
+      "bytes": 649,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-19.json",
+      "sha256": "444d528bad334100616946c47a414819f3ed0d68d76a94e1e0e6e6c60b6433e3"
+    },
+    {
+      "bytes": 529,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-20.json",
+      "sha256": "ebe97e662c5aab6ebb1c47f90350d5ad9584068534a607637419c04bc2751643"
+    },
+    {
+      "bytes": 594,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-21.json",
+      "sha256": "0cda90a46f5012387f2f09eebc72d4ca6333eecc55cc829166710f70d136f7f2"
+    },
+    {
+      "bytes": 613,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-22.json",
+      "sha256": "a78c3bdf829888013a4059d4a132515ba15c6e287e5b6e64ae7b8db343cd00ac"
+    },
+    {
+      "bytes": 433,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-23.json",
+      "sha256": "72f4e302d98a6cb0885fd87a8d7c3d02d3ef9bb02db2b034be2c254c1fa38cbf"
+    },
+    {
+      "bytes": 679,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-24.json",
+      "sha256": "89b4cda8f27bc85c33ec6d7e03ea303db372c801acc750e1f1b14df047fb7c2c"
+    },
+    {
+      "bytes": 754,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-25.json",
+      "sha256": "945c083d8550e400235c68c767689d0a8644571a391e6dfed1971b4129d82053"
+    },
+    {
+      "bytes": 503,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-26.json",
+      "sha256": "0565e06a3ea8f8684361aa0faf727ce4e72f066e64e71e3eae86ac7bfff5f749"
+    },
+    {
+      "bytes": 752,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-27.json",
+      "sha256": "4c06b821ce9de0965010b62f4fb5c809482afc06c346c5d88f0df9aa8284e336"
+    },
+    {
+      "bytes": 501,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-28.json",
+      "sha256": "9d3f71502001972403756a609df6894b87d46a3b1f694713164129a74b114dff"
+    },
+    {
+      "bytes": 516,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-29.json",
+      "sha256": "4ecec271845bcc79d66ba2d40ff01a1f6a08422849c458fd75aab56abf3311b9"
+    },
+    {
+      "bytes": 436,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-30.json",
+      "sha256": "72d579d42d1a7ea9619d64c1f35c9c4de87316753000bb4f9426d10bca42f37b"
+    },
+    {
+      "bytes": 645,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-31.json",
+      "sha256": "1e35760a5658af9cc1a42da94f8d036dc247c408ada0e944fc6df8fb32d819c2"
+    },
+    {
+      "bytes": 709,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-32.json",
+      "sha256": "40fe9472ca82aad704459fbb7d40cce3f5cc3e8fc0b4c1ecbcb7673871ad7891"
+    },
+    {
+      "bytes": 702,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-33.json",
+      "sha256": "fbc3a13f21e1f16356781b08fc4d4d1779107349e24d2d98bf313a627ec35e15"
+    },
+    {
+      "bytes": 666,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-34.json",
+      "sha256": "5da05a7dfd0d73ab9ef0d99fe8a69416ce266f521d2857efede00056b92edbfd"
+    },
+    {
+      "bytes": 686,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-35.json",
+      "sha256": "c750a67d126d739c1f78a5151192572daf9695ddc5c0d6046eba2c3fd951752b"
+    },
+    {
+      "bytes": 419,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/chart-36.json",
+      "sha256": "9cf2cef3cb1475e84e0eb6296a5c35dc5e38cd83ef5037eb12a4bbffac81bb79"
+    },
+    {
+      "bytes": 686,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/protocol.json",
+      "sha256": "f722651391e96ad4ec2d40e3831e3655fb12e0e0d7fdc1860c5297e0108e6f08"
+    },
+    {
+      "bytes": 941,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/supervisor.json",
+      "sha256": "5c64749875c4d2e271db3067457e634bb47a9669b8297f418aad0307a93a6f1a"
+    },
+    {
+      "bytes": 941,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/terminal.json",
+      "sha256": "5c64749875c4d2e271db3067457e634bb47a9669b8297f418aad0307a93a6f1a"
+    },
+    {
+      "bytes": 2261,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v1/worker.log",
+      "sha256": "7cc5c6b35cf47a1b9454ca6d7a2346dca4d88debae59d8fd2bf046af9d145983"
+    },
+    {
+      "bytes": 611,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-00.json",
+      "sha256": "3f83e3034a9c2fcf7f17bcefd2fb2136f46a4c7e90011278137d3780ccd722c3"
+    },
+    {
+      "bytes": 480,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-01.json",
+      "sha256": "1242a0ef0a68d8eb5722c54f8b55746a8a0ee4b125b51030abc2fcada604019c"
+    },
+    {
+      "bytes": 669,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-02.json",
+      "sha256": "c7d2e53b412222c155da65240b3022603f8b4dadca775d17133c3298499e4dbb"
+    },
+    {
+      "bytes": 687,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-03.json",
+      "sha256": "012ee6221c495f41c890084a39cfbaea04f960bcda9439b4e4e8187fa2856dab"
+    },
+    {
+      "bytes": 595,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-04.json",
+      "sha256": "1daf61444c6443e32004511237e9b426eabbf987bd2b8c6575cf67658c08550e"
+    },
+    {
+      "bytes": 525,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-05.json",
+      "sha256": "cdb60ae85b4dc00bf5a1c25d3d5f779cb90d40e94ef64c93bf4a98a9a64ff483"
+    },
+    {
+      "bytes": 612,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-06.json",
+      "sha256": "fba588fb6b66286b81fb9d57f1e7cb1b582deb59766dfd4770c5bbc14f94cd1b"
+    },
+    {
+      "bytes": 490,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-07.json",
+      "sha256": "8f1ae24c26c740ed38ef1cdf8731c0aa5beba3e59710c03f19f5b6c11cf86cc8"
+    },
+    {
+      "bytes": 562,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-08.json",
+      "sha256": "c961b802c1098498c4be32074088340dd038988517804f40a00028bb465bdcf3"
+    },
+    {
+      "bytes": 522,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-09.json",
+      "sha256": "d0cb139f41a6f0514df7a7456acb115eb95f887e78e708debe5c732242d3c782"
+    },
+    {
+      "bytes": 591,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-10.json",
+      "sha256": "5b1baa5510cd233852bb659c17eca40db118182af63409e28346bf53e4f8b5b7"
+    },
+    {
+      "bytes": 500,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-11.json",
+      "sha256": "2f2575c3cb4def239b415261699c079afb1390429a0f2058dcb586df91552bb8"
+    },
+    {
+      "bytes": 523,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-12.json",
+      "sha256": "939ff04ae652982a438a3f1727b092829ab4dd1948dc9bb9518fb81bdd340ea4"
+    },
+    {
+      "bytes": 470,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-13.json",
+      "sha256": "370acb1db3b89998cfcca86ac5da49f2d498ff33c9f99f0357a21118e9316225"
+    },
+    {
+      "bytes": 617,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-14.json",
+      "sha256": "8527bde1d30da2327aec5cf22f2d5fedb0cbc98f78e7fe2e139388e2eceec101"
+    },
+    {
+      "bytes": 611,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-15.json",
+      "sha256": "3989407ffc3144dc659d84bcb83ebe7b3f0bf9dc04cb4fd0a730077163f6d255"
+    },
+    {
+      "bytes": 528,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-16.json",
+      "sha256": "abe06556a9fb26da372dde528c40588ec7cd8efd25626952f2d7232801c7a128"
+    },
+    {
+      "bytes": 573,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-17.json",
+      "sha256": "de948801130254403029977cc1982a006cb9886e75a2c7ad1ddc830d438d78b0"
+    },
+    {
+      "bytes": 612,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-18.json",
+      "sha256": "725615c1487f353d09c1e631950169216fab9bdeadc2ad5407327e7e44a2a1a4"
+    },
+    {
+      "bytes": 649,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-19.json",
+      "sha256": "444d528bad334100616946c47a414819f3ed0d68d76a94e1e0e6e6c60b6433e3"
+    },
+    {
+      "bytes": 529,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-20.json",
+      "sha256": "0fa290285034f9278663cfd2be90b8ad084664fc5303bcba394a63afb8b502f3"
+    },
+    {
+      "bytes": 594,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-21.json",
+      "sha256": "73beca8f2224caa4d8508785fd7de207a20f12dd3fd6a25689d28bb4515af8ac"
+    },
+    {
+      "bytes": 613,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-22.json",
+      "sha256": "03767ce5281d2fcf9575145693c49706cae05a8733739f35a268c6924deda7df"
+    },
+    {
+      "bytes": 433,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-23.json",
+      "sha256": "3dcaab544d985de60f9db8811218a712aaa4b32494af32a9914f69a5acb9ce48"
+    },
+    {
+      "bytes": 679,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-24.json",
+      "sha256": "46a6cd4c6730f32060a5dc220b90a7eed6e90e64d97c116ddeb21e640161851a"
+    },
+    {
+      "bytes": 754,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-25.json",
+      "sha256": "a057e531c252e9d603b7e027febf3194f81b745fcddde7a4ac412b98f7c9ee7f"
+    },
+    {
+      "bytes": 503,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-26.json",
+      "sha256": "8c9f050b5d5df548e4e06d3d3ae609113c93a4d7e0ac3ade7dc6fe037e381a27"
+    },
+    {
+      "bytes": 752,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-27.json",
+      "sha256": "1e8b1524d281be3ed2ff035784a02147695683bc468788e48ed50f0857dfd49b"
+    },
+    {
+      "bytes": 501,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-28.json",
+      "sha256": "30d53c21064be33c7e68facdc0243b3351b08acb896f433cd91b64001753cff2"
+    },
+    {
+      "bytes": 516,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-29.json",
+      "sha256": "4ecec271845bcc79d66ba2d40ff01a1f6a08422849c458fd75aab56abf3311b9"
+    },
+    {
+      "bytes": 436,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-30.json",
+      "sha256": "0fdd32af6ce4ad65ff93f393826c8a57d50e5ca81d829265f0db218b70559548"
+    },
+    {
+      "bytes": 645,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-31.json",
+      "sha256": "1e0679fd9114ae03588874702ba8741fb77b8931c498cde8f587ffbaada8ae14"
+    },
+    {
+      "bytes": 709,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-32.json",
+      "sha256": "85086d2cea52b45236335f3127da9f2f57092b448c1a6447d3f9d61b4fc28dbb"
+    },
+    {
+      "bytes": 702,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-33.json",
+      "sha256": "adfde69ad4e08a247c3f4a877e21944e8693fe023bb07204ac8e20a27fcf3c8d"
+    },
+    {
+      "bytes": 666,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-34.json",
+      "sha256": "334ab288e89b8c2dcb6cb5476fe289732361b2924612b9ebb71d13f05c54899f"
+    },
+    {
+      "bytes": 686,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-35.json",
+      "sha256": "c750a67d126d739c1f78a5151192572daf9695ddc5c0d6046eba2c3fd951752b"
+    },
+    {
+      "bytes": 419,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-36.json",
+      "sha256": "559b06416a58be9f3d891672d7c823e8c7390fafb3b94b46ecce138e100f5a27"
+    },
+    {
+      "bytes": 656,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-37.json",
+      "sha256": "6ce0e8870103c8f5bda146c18b39aee186163754b9a55a5d960adad8328b7dac"
+    },
+    {
+      "bytes": 453,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-38.json",
+      "sha256": "7116ef72c8561724f960cbceda7e5c8ce47b4cd8887f569a73eb1024431c5345"
+    },
+    {
+      "bytes": 553,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-39.json",
+      "sha256": "b7d01eaac88686b25a20f672aa41a078c6f5241bed2dc4702fe1f0ae7a5090a0"
+    },
+    {
+      "bytes": 518,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-40.json",
+      "sha256": "2fa9d776cb6f83e87ac427d06961a97422326e08c9e18c49b15151abccc8cd67"
+    },
+    {
+      "bytes": 445,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-41.json",
+      "sha256": "a7a78b152aa853227f7585369ff2eca575243dc30578876077015055627e80a4"
+    },
+    {
+      "bytes": 746,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/chart-42.json",
+      "sha256": "df02ff4346e36df75aa646872c81c4d03368341514f909eda69e84c9cc0a6bb9"
+    },
+    {
+      "bytes": 950,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/protocol.json",
+      "sha256": "1db416c7c8836afb91e7c83da823a0a9385a53fbbfea431205345b658a17bcd6"
+    },
+    {
+      "bytes": 925,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/supervisor.json",
+      "sha256": "bcc10fcf7c8c54a2ab68891b3684bbc7665b7b5f5ddb5fbdf9c7f075b43832d4"
+    },
+    {
+      "bytes": 925,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/terminal.json",
+      "sha256": "bcc10fcf7c8c54a2ab68891b3684bbc7665b7b5f5ddb5fbdf9c7f075b43832d4"
+    },
+    {
+      "bytes": 1539,
+      "path": "artifacts/local/elliptic-curves/new-rank26-engine-comparison-v2/worker.log",
+      "sha256": "93ab5dbe7ab96af424715fac138351a6f4bf490282814bf8de096391af16cf7d"
+    },
+    {
+      "bytes": 15991470,
+      "path": "artifacts/local/elliptic-curves/new-rank26-fast301-v1/candidate-00/result.json",
+      "sha256": "f342eb7de7f9a22651df53c76ad8b330380eafbb4d4632a9553024ad44f71433"
+    },
+    {
+      "bytes": 11904466,
+      "path": "artifacts/local/elliptic-curves/new-rank26-fast301-v1/prefix-replay-v1/candidate-00/result.json",
+      "sha256": "29fff3f45c25add29a4a3ab0a8f5e2bdec33484e4e90e8c04a672ce2eab151a4"
+    },
+    {
+      "bytes": 31,
+      "path": "artifacts/local/elliptic-curves/new-rank26-fast301-v1/prefix-replay-v1/check.log",
+      "sha256": "ac9a633c938e0a399f794d89b9c9f6b2205f8e0e1da08a8ad71f89bbadfaf78b"
+    },
+    {
+      "bytes": 3560,
+      "path": "artifacts/local/elliptic-curves/new-rank26-fast301-v1/prefix-replay-v1/protocol.json",
+      "sha256": "1f7826d551905446289c40e5d86732e7011f7813498704bd32a6873c6c9a5dbb"
+    },
+    {
+      "bytes": 1061,
+      "path": "artifacts/local/elliptic-curves/new-rank26-fast301-v1/prefix-replay-v1/result.json",
+      "sha256": "09027dbadc8bcafb17e46914fa5b591f2c6632708706d9b3d6ad37bbca126258"
+    },
+    {
+      "bytes": 213,
+      "path": "artifacts/local/elliptic-curves/new-rank26-fast301-v1/prefix-replay-v1/snapshot.json",
+      "sha256": "aba1bbe4c210bf6cbc0c2a84e74a4c1879a83cc003fd3ea7d007779523991b19"
+    },
+    {
+      "bytes": 1061,
+      "path": "artifacts/local/elliptic-curves/new-rank26-fast301-v1/prefix-replay-v1/supervisor.json",
+      "sha256": "09027dbadc8bcafb17e46914fa5b591f2c6632708706d9b3d6ad37bbca126258"
+    },
+    {
+      "bytes": 3560,
+      "path": "artifacts/local/elliptic-curves/new-rank26-fast301-v1/protocol.json",
+      "sha256": "1f7826d551905446289c40e5d86732e7011f7813498704bd32a6873c6c9a5dbb"
+    },
+    {
+      "bytes": 942,
+      "path": "artifacts/local/elliptic-curves/new-rank26-fast301-v1/supervisor.json",
+      "sha256": "9856f6b74514c6b3c550697a0939abd7a94453c00313fbdb4229d21a44f96ee6"
+    },
+    {
+      "bytes": 1108,
+      "path": "artifacts/local/elliptic-curves/new-rank26-fast301-v1/terminal.json",
+      "sha256": "99d691adac58360c10fd253f8486585c8b16815b436c0215dbffd01f9093b12b"
+    },
+    {
+      "bytes": 32,
+      "path": "artifacts/local/elliptic-curves/new-rank26-fast301-v1/verification/charts.log",
+      "sha256": "8a56309273dab8460b25eaf3f5bc1856998da121a89d4483ec4fb3e744799fc1"
+    },
+    {
+      "bytes": 1043,
+      "path": "artifacts/local/elliptic-curves/new-rank26-fast301-v1/verification/charts.supervisor.json",
+      "sha256": "3171b751e2ca8a6c5951231ebb218bd5013a79dbe301027d24c5162fc9e4b277"
+    },
+    {
+      "bytes": 1455,
+      "path": "artifacts/local/elliptic-curves/new-rank26-fast301-v1/verification/cloud-build.log",
+      "sha256": "10b4c3b88b64c21416a747583283e9f9e03fd6af587870bb1f44e1555e52aba1"
+    },
+    {
+      "bytes": 1311,
+      "path": "artifacts/local/elliptic-curves/new-rank26-fast301-v1/verification/cloud-build.supervisor.json",
+      "sha256": "076766af8e6121bb2758f8ada617fd2968049fe73973b4c4e5307a84f330dac7"
+    },
+    {
+      "bytes": 57,
+      "path": "artifacts/local/elliptic-curves/new-rank26-fast301-v1/verification/cloud-check.log",
+      "sha256": "79151b34e4b0642cb5f1a5d22d8af8fad0d95ee7d26671e466cb120aece652c6"
+    },
+    {
+      "bytes": 1077,
+      "path": "artifacts/local/elliptic-curves/new-rank26-fast301-v1/verification/cloud-check.supervisor.json",
+      "sha256": "092982de6f995f82ff20cf4b30a2ffc7de0fc7d075af605ca9f0f15b591eeb95"
+    },
+    {
+      "bytes": 860,
+      "path": "artifacts/local/elliptic-curves/new-rank26-fast301-v1/verification/protocol.json",
+      "sha256": "57bf0ce7da328f29c3b91b555158a0c23cb722477e184a282e6a4f4d67d7675f"
+    },
+    {
+      "bytes": 4316,
+      "path": "artifacts/local/elliptic-curves/new-rank26-fast301-v1/verification/result.json",
+      "sha256": "b287f27ebbf1066da0bbdbb91b9170f0f685b7f50e01f63b6f37ee21f9d4fc30"
+    },
+    {
+      "bytes": 14142,
+      "path": "artifacts/local/elliptic-curves/new-rank26-fast301-v1/worker.log",
+      "sha256": "0fc7c7070fe4df361ae2be982fb3d5d25c1c3f671082ae10737e0219d85800d4"
+    },
+    {
+      "bytes": 1022862,
+      "path": "artifacts/local/elliptic-curves/preloaded-prime-state-benchmark-v1/existing.json",
+      "sha256": "1d70bd221ab193fb8144719c3f309056e3270cd0e950193d628b1cd3926fd519"
+    },
+    {
+      "bytes": 420,
+      "path": "artifacts/local/elliptic-curves/preloaded-prime-state-benchmark-v1/input-boundary.json",
+      "sha256": "041ab9d0937ace88e60050336806e6e245cdd2e3376c4026bddb7d21e8daba51"
+    },
+    {
+      "bytes": 12649836,
+      "path": "artifacts/local/elliptic-curves/preloaded-prime-state-benchmark-v1/input.json",
+      "sha256": "9c041b6aeb7862f34d43794b4c28323579bd2fa3a69a0b98946eebca23e6c140"
+    },
+    {
+      "bytes": 1032255,
+      "path": "artifacts/local/elliptic-curves/preloaded-prime-state-benchmark-v1/preloaded.json",
+      "sha256": "60fa797d7ece61f93d3cb55bf94545dbc5f24771a79309a17c9db361027a425b"
+    },
+    {
+      "bytes": 566,
+      "path": "artifacts/local/elliptic-curves/preloaded-prime-state-benchmark-v1/protocol.json",
+      "sha256": "2f5d4cfee2f3460576f5d2cdbc59f0c85c399579b7a8bdb84c124990f9abe66d"
+    },
+    {
+      "bytes": 73579,
+      "path": "artifacts/local/elliptic-curves/preloaded-prime-state-benchmark-v1/result.json",
+      "sha256": "41b6d9fe6249f043efac544e30af5aad67e65a78724db4e6df49b2399891d43b"
+    },
+    {
+      "bytes": 923,
+      "path": "artifacts/local/elliptic-curves/preloaded-prime-state-benchmark-v1/supervisor.json",
+      "sha256": "1dc9a70e294dae2e32ebd2fa151024a9f4f4b7c5344d0226a9200bf6f94a3654"
+    },
+    {
+      "bytes": 923,
+      "path": "artifacts/local/elliptic-curves/preloaded-prime-state-benchmark-v1/terminal.json",
+      "sha256": "1dc9a70e294dae2e32ebd2fa151024a9f4f4b7c5344d0226a9200bf6f94a3654"
+    },
+    {
+      "bytes": 144,
+      "path": "artifacts/local/elliptic-curves/preloaded-prime-state-benchmark-v1/worker.log",
+      "sha256": "25fc7c5f0242c9af1860cb49d93b070048f66fae0350f0487d6006b183e0fa1f"
+    },
+    {
+      "bytes": 1196,
+      "path": "artifacts/local/elliptic-curves/rank26-complete-cloud-modl-v1/build-result.json",
+      "sha256": "a97654676d5e8a16b5e927e999a9d74692b314803f35ef0b335901336dab5c92"
+    },
+    {
+      "bytes": 1755,
+      "path": "artifacts/local/elliptic-curves/rank26-complete-cloud-modl-v1/build.log",
+      "sha256": "93346d0dc21b62b1899ad7e0b15837056f4e82bb22cf9be12060ad018d7114d4"
+    },
+    {
+      "bytes": 1196,
+      "path": "artifacts/local/elliptic-curves/rank26-complete-cloud-modl-v1/build.supervisor.json",
+      "sha256": "a97654676d5e8a16b5e927e999a9d74692b314803f35ef0b335901336dab5c92"
+    },
+    {
+      "bytes": 1049,
+      "path": "artifacts/local/elliptic-curves/rank26-complete-cloud-modl-v1/check-result.json",
+      "sha256": "655b434d1e3a3591ff3aa84d0b66afe5778548d5b86f87087b72ca732914bcf3"
+    },
+    {
+      "bytes": 78,
+      "path": "artifacts/local/elliptic-curves/rank26-complete-cloud-modl-v1/check.log",
+      "sha256": "1441c5edafc7055995af8763c63aa5e65644f4bad24ae231c4b83647c5a7b473"
+    },
+    {
+      "bytes": 1049,
+      "path": "artifacts/local/elliptic-curves/rank26-complete-cloud-modl-v1/check.supervisor.json",
+      "sha256": "655b434d1e3a3591ff3aa84d0b66afe5778548d5b86f87087b72ca732914bcf3"
+    },
+    {
+      "bytes": 553,
+      "path": "artifacts/local/elliptic-curves/rank26-complete-cloud-modl-v1/protocol.json",
+      "sha256": "5a532b803f8d4f388966e9a0f829c35764d0036be0f7820b25a5dd6d2e9fc72f"
+    },
+    {
+      "bytes": 14152924,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/all-retained-point-cloud-only.json",
+      "sha256": "a1a9b8d07d6c3a39c9beaa8e85a650e0e49aa4155b2966b23ea0f2e9b4522ab6"
+    },
+    {
+      "bytes": 11618280,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/candidate-00/result.json",
+      "sha256": "cab7e4fcebfc203d5fd9246c3b1d37b93433857f2f70436d62eb97f2f3df4924"
+    },
+    {
+      "bytes": 4285,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/protocol.json",
+      "sha256": "5e9f36cee358c7c4a227ee0875ebc550f7d066507d6e260d6dfe6f74b91476e0"
+    },
+    {
+      "bytes": 528667,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/states/285.json",
+      "sha256": "dbbbdbd10f0c2284f82d51adae926093da47f4c5571bd9699549663a92453cdc"
+    },
+    {
+      "bytes": 26710,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/states/286.json",
+      "sha256": "848accba8ed87da6fda85729c4663558ef1681bb5b80a89e263a6bcef9e200d2"
+    },
+    {
+      "bytes": 25991,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/states/287.json",
+      "sha256": "716d975887ca45904175d0e340447e029950552465846ae474173855bb521388"
+    },
+    {
+      "bytes": 25764,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/states/288.json",
+      "sha256": "cd68eed8c3f17802dc614e5d1c015fb7ce14f3a14892d17db66245cab0927839"
+    },
+    {
+      "bytes": 25501,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/states/289.json",
+      "sha256": "32bc3ed1c1eec2241cf53f794e57bd36dfc3693bb97354a76d35c50ae2d52aaf"
+    },
+    {
+      "bytes": 25271,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/states/290.json",
+      "sha256": "43129822d954984e5dbe7e2c675de1f4da731e7fd59e92437593926cf8800305"
+    },
+    {
+      "bytes": 25271,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/states/291.json",
+      "sha256": "c8cf3508b7de1fc269a82bcf2695b74d401bb81a5e1bc5a5e843cc49e3538e1f"
+    },
+    {
+      "bytes": 25271,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/states/292.json",
+      "sha256": "263b76ebeb7bdd02213a327085c75f7b7138434f7818759b0f11475ab3cf8f1f"
+    },
+    {
+      "bytes": 25271,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/states/293.json",
+      "sha256": "539811d2cc42140e03e61c83c3853e75513901b5a0dc40e6a97aaf60a586c07d"
+    },
+    {
+      "bytes": 25519,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/states/294.json",
+      "sha256": "4494c55e9f51ac845839aa945d2744aac7760c63acb6fad21342a2dac6b51af9"
+    },
+    {
+      "bytes": 25271,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/states/295.json",
+      "sha256": "e677bff5754ed4f4fafdc6751350bf9b0f90dbb3d5ecf3fa56590da1afb14814"
+    },
+    {
+      "bytes": 25510,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/states/296.json",
+      "sha256": "ba7b84e2939e383e24f254d14051e06f94e60741e211da70ed0efc39939fe47c"
+    },
+    {
+      "bytes": 25501,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/states/297.json",
+      "sha256": "a7dea04a64769e425caf44423542eb48ebdbfcc19b30dd41d57805b18ef4e06f"
+    },
+    {
+      "bytes": 25271,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/states/298.json",
+      "sha256": "0a7aa0677fa9b92eb35d27df271029321771f4722e56e5849f9a76159c873099"
+    },
+    {
+      "bytes": 25271,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/states/299.json",
+      "sha256": "8d393de2853d233b3723ebc36697fd24ecfd09f690215f0185c5602f0520ada1"
+    },
+    {
+      "bytes": 25271,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/states/300.json",
+      "sha256": "a5c3f2bcd0516a46df68e03e9dac2fc3527f54f46942629c1bcc3014a02906ea"
+    },
+    {
+      "bytes": 956,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/supervisor.json",
+      "sha256": "b0ce792a51f1fc03db70002ed2875412dac31d2604c2127e4ee042f7dbb67886"
+    },
+    {
+      "bytes": 1126,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/terminal.json",
+      "sha256": "9301c27172629120192c2d52696253ae7288f587189f922bb82b41e305d47936"
+    },
+    {
+      "bytes": 972,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/verification/charts-result.json",
+      "sha256": "768a75f4c14f0c1d3cbd0de00879ede57e8c138e755d2a5deafb9e91611f1849"
+    },
+    {
+      "bytes": 53,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/verification/charts.log",
+      "sha256": "54a85b7d07ccb2d71a3e56364229595d2fa03301455911ccc23ee8a6f62149ad"
+    },
+    {
+      "bytes": 972,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/verification/charts.supervisor.json",
+      "sha256": "768a75f4c14f0c1d3cbd0de00879ede57e8c138e755d2a5deafb9e91611f1849"
+    },
+    {
+      "bytes": 962,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/verification/completion-result.json",
+      "sha256": "19d328caa93859e578b8b6c46d05c4f1140324dd966cc4c24d45b1b8f32026be"
+    },
+    {
+      "bytes": 1589,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/verification/completion.log",
+      "sha256": "a08c6967da1b93f2c7a54f9a5a7c8df75f58b0009c4506aefa0da56509270804"
+    },
+    {
+      "bytes": 962,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/verification/completion.supervisor.json",
+      "sha256": "19d328caa93859e578b8b6c46d05c4f1140324dd966cc4c24d45b1b8f32026be"
+    },
+    {
+      "bytes": 1056,
+      "path": "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/worker.log",
+      "sha256": "460679456a411dde3cada58ebfb6dc2b9334b16e183e1274a3b8ceff4ff98e97"
+    },
+    {
+      "bytes": 575810,
+      "path": "artifacts/local/elliptic-curves/small-conductor-adaptive-pari-maps-v1/maps.json",
+      "sha256": "45cfd7f885b5bb3af37c1f509bbe97d3d1f9c062e5403bce0be58927cda1d9f7"
+    },
+    {
+      "bytes": 11330,
+      "path": "artifacts/local/elliptic-curves/small-conductor-adaptive-pari-maps-v1/maps.log",
+      "sha256": "cd818c8b6ead928df37b7c1493583e115b40d03f1bf9cfc90c64c38a4a17fa1f"
+    },
+    {
+      "bytes": 966,
+      "path": "artifacts/local/elliptic-curves/small-conductor-adaptive-pari-maps-v1/protocol.json",
+      "sha256": "304f9f236b85abc7d09e5debb78c342732ba78f2df79ef8deb1cf74b9a53a5ed"
+    },
+    {
+      "bytes": 972,
+      "path": "artifacts/local/elliptic-curves/small-conductor-adaptive-pari-maps-v1/supervisor.json",
+      "sha256": "0d33dd1163037ae208db9c19c187e2297efe02217d5683ea8a3d11e1b6147c4c"
+    },
+    {
+      "bytes": 972,
+      "path": "artifacts/local/elliptic-curves/small-conductor-adaptive-pari-maps-v1/terminal.json",
+      "sha256": "0d33dd1163037ae208db9c19c187e2297efe02217d5683ea8a3d11e1b6147c4c"
+    },
+    {
+      "bytes": 1223,
+      "path": "artifacts/local/elliptic-curves/small-conductor-complete-cloud-modl-v1/build-result.json",
+      "sha256": "4ac919a225eb05b4a7c279b19d5c22be03f93b872fe348a6688c4cebad34d285"
+    },
+    {
+      "bytes": 1950,
+      "path": "artifacts/local/elliptic-curves/small-conductor-complete-cloud-modl-v1/build.log",
+      "sha256": "fa510a2edd1a9d673edd07dede4fcd8cc430ca69453958b6dd4fff1450f236e2"
+    },
+    {
+      "bytes": 1223,
+      "path": "artifacts/local/elliptic-curves/small-conductor-complete-cloud-modl-v1/build.supervisor.json",
+      "sha256": "4ac919a225eb05b4a7c279b19d5c22be03f93b872fe348a6688c4cebad34d285"
+    },
+    {
+      "bytes": 1066,
+      "path": "artifacts/local/elliptic-curves/small-conductor-complete-cloud-modl-v1/check-result.json",
+      "sha256": "011cc5d98efdfe672928c40029705081af50b092826eed27200982abf6eab61e"
+    },
+    {
+      "bytes": 98,
+      "path": "artifacts/local/elliptic-curves/small-conductor-complete-cloud-modl-v1/check.log",
+      "sha256": "df90b77bebb285f6eb8095c845b7fd6fdb84e01e70ea63be865ceef44c361934"
+    },
+    {
+      "bytes": 1066,
+      "path": "artifacts/local/elliptic-curves/small-conductor-complete-cloud-modl-v1/check.supervisor.json",
+      "sha256": "011cc5d98efdfe672928c40029705081af50b092826eed27200982abf6eab61e"
+    },
+    {
+      "bytes": 548,
+      "path": "artifacts/local/elliptic-curves/small-conductor-complete-cloud-modl-v1/protocol.json",
+      "sha256": "3b32a037353bf24677b75ab5b4c61f106d2638e6a11f390d44c38dd40f81fc7f"
+    },
+    {
+      "bytes": 15409169,
+      "path": "artifacts/local/elliptic-curves/small-conductor-fast301-v1/candidate-00/result.json",
+      "sha256": "3c17206ff8df5ced932bfdccd05eb340b261dfcf9526ac68b9474df5e0d6494c"
+    },
+    {
+      "bytes": 850,
+      "path": "artifacts/local/elliptic-curves/small-conductor-fast301-v1/early-stop-decision.json",
+      "sha256": "2a37e867bcc8217831b9e39c7280e80dc6875f5abccb560286578eee56380cd9"
+    },
+    {
+      "bytes": 3662,
+      "path": "artifacts/local/elliptic-curves/small-conductor-fast301-v1/protocol.json",
+      "sha256": "ff5beebceba8954ab6a72bd284c0f75e9a98916ebb47ffe0951a024d2ebd0e67"
+    },
+    {
+      "bytes": 944,
+      "path": "artifacts/local/elliptic-curves/small-conductor-fast301-v1/supervisor.json",
+      "sha256": "4bd60b40bd5ea736c14e5c87dc54d9be42051e90b186b96408b901fd9cfb382f"
+    },
+    {
+      "bytes": 1110,
+      "path": "artifacts/local/elliptic-curves/small-conductor-fast301-v1/terminal.json",
+      "sha256": "b26e14507d89faceab5c847b416d68d8dcf602d9b765a36522a08aa63742e2e9"
+    },
+    {
+      "bytes": 47,
+      "path": "artifacts/local/elliptic-curves/small-conductor-fast301-v1/verification/charts.log",
+      "sha256": "bef736329ce5cc980082ad6e5fb50b8b5e8c8d6e7cf3de90b35a82dc916ad73c"
+    },
+    {
+      "bytes": 1056,
+      "path": "artifacts/local/elliptic-curves/small-conductor-fast301-v1/verification/charts.supervisor.json",
+      "sha256": "06c2c04c69ddfcdcdbce64798f55c39d328dfd061db04b114487a84ecd1bcb98"
+    },
+    {
+      "bytes": 1322,
+      "path": "artifacts/local/elliptic-curves/small-conductor-fast301-v1/verification/cloud-build.log",
+      "sha256": "fde43480a3c7d247d05cc8421470686a0f2583730ca77dbecd59ad98486ffa96"
+    },
+    {
+      "bytes": 1326,
+      "path": "artifacts/local/elliptic-curves/small-conductor-fast301-v1/verification/cloud-build.supervisor.json",
+      "sha256": "d7c752718fa99c8b102b1c8374e215fac660e069a5bf2ac6ca90db561a577f8c"
+    },
+    {
+      "bytes": 61,
+      "path": "artifacts/local/elliptic-curves/small-conductor-fast301-v1/verification/cloud-check.log",
+      "sha256": "92ebe2f37103b39f3a5a649cf414eeb41670eb14c872974dafd3deb6b183bcfb"
+    },
+    {
+      "bytes": 1084,
+      "path": "artifacts/local/elliptic-curves/small-conductor-fast301-v1/verification/cloud-check.supervisor.json",
+      "sha256": "9dfdf36a215ed66335124681bf18d9e8da7f29a3af62df63ed24e21b41c09fd3"
+    },
+    {
+      "bytes": 870,
+      "path": "artifacts/local/elliptic-curves/small-conductor-fast301-v1/verification/protocol.json",
+      "sha256": "fb7a2029fbae04917f553fc9fe0fe9862f31594e6b275ad4c9bf87d5b6e5e98d"
+    },
+    {
+      "bytes": 4351,
+      "path": "artifacts/local/elliptic-curves/small-conductor-fast301-v1/verification/result.json",
+      "sha256": "4befc413c4defb2258de5d6d9bca569db6b516c6c11e5ee45d714598fe8887ca"
+    },
+    {
+      "bytes": 2292,
+      "path": "artifacts/local/elliptic-curves/small-conductor-fast301-v1/worker.log",
+      "sha256": "36a7aab7e79f8e1005f6f87b6d8f851848884dffa7b2f6dc43efad0ab8c70a81"
+    },
+    {
+      "bytes": 19926238,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/all-retained-point-cloud-only.json",
+      "sha256": "a67089fd096d90403dedae406119fc9d26a8042c36608048c152a933c9675175"
+    },
+    {
+      "bytes": 26084759,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/candidate-00/result.json",
+      "sha256": "bf2a63e6d2dd51e5e01de12c2f662aed569211778c43c9ef4eb73f3ea917b13f"
+    },
+    {
+      "bytes": 4303,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/protocol.json",
+      "sha256": "f3908e22a5068f9cac008660cb94e8354bf198bd1ab0802fda5b60c07a6c090e"
+    },
+    {
+      "bytes": 1481691,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/039.json",
+      "sha256": "d92f36d996b17593b1a1c186a09b1d527e1cb0f7d38ced8c669d102df8a6a34e"
+    },
+    {
+      "bytes": 44485,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/040.json",
+      "sha256": "ca20a5cfabca062baec2b6f259596292720608b59a6ad82b42303bd4bce16fc3"
+    },
+    {
+      "bytes": 34897,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/041.json",
+      "sha256": "a9b13ef6902ba6b5167c209e83fc11c686a2b9fa359acff6ea6617b81f2e9f65"
+    },
+    {
+      "bytes": 34231,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/042.json",
+      "sha256": "50fdfdd4ea2f5b382f1a2da618d442d071fc787ac0631b5dabf156fee898c67d"
+    },
+    {
+      "bytes": 34031,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/043.json",
+      "sha256": "1e44b2c22c76706d0ccd57630a72e6e4c6e74c2660423766691d0bc7fbb086bc"
+    },
+    {
+      "bytes": 38501,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/044.json",
+      "sha256": "1857a16b20eab6ff6c66b60cb02441b6778e82eec95505736940f97e41ec8304"
+    },
+    {
+      "bytes": 42323,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/045.json",
+      "sha256": "4e3d3a9ea4ccfbc24aa1c6464a1b82365d706111d613eb2d73d648320c79fe7a"
+    },
+    {
+      "bytes": 40552,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/046.json",
+      "sha256": "049cc3a3be23253a857052cfd364ea996515ef9444f23e5e3877cdca318b694d"
+    },
+    {
+      "bytes": 44626,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/047.json",
+      "sha256": "5becd1da17df6792916519871950e45807cd90f41b629b4bb31652ccca73d857"
+    },
+    {
+      "bytes": 39587,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/048.json",
+      "sha256": "72d290d8753c19da139586a400ac5719450659b2ac84cc8871d45359e08f9059"
+    },
+    {
+      "bytes": 40365,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/049.json",
+      "sha256": "912260385bf43c644b9202f9fb76ef161f23592f38fba5ba340632a587000f73"
+    },
+    {
+      "bytes": 40150,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/050.json",
+      "sha256": "3f581d0eff3c08939ecf4f6b431e5f82e5b68184e1045a6a8fa0c6fd09fa54a7"
+    },
+    {
+      "bytes": 39909,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/051.json",
+      "sha256": "aa71021313661655a6282a6885e95a9ece91cf0a7c636d7355b10d829a0aced0"
+    },
+    {
+      "bytes": 41815,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/052.json",
+      "sha256": "f4ca3a67de8333b715de3e45de20d8b9e28f5e07c530ac32c0c2b7d9aeb11da2"
+    },
+    {
+      "bytes": 46125,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/053.json",
+      "sha256": "26ffdc399bc77c2fc880e8eae9c56f31c61c2919421d5fe75c6a481fa3ce2c9e"
+    },
+    {
+      "bytes": 40084,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/054.json",
+      "sha256": "b9569fbe510d4f3a60fc641c9447d539d990c37df5d346c9f41f0ae23ff5a037"
+    },
+    {
+      "bytes": 37589,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/055.json",
+      "sha256": "2030bdd444a6e47914c1d81bba80acdaa8f7b5786b4ccc208039f74f0a36392a"
+    },
+    {
+      "bytes": 32167,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/056.json",
+      "sha256": "c04785be9eb183e8e0f6488ce07df7617166dd5a7fe02ab35004d33c5d76f9ee"
+    },
+    {
+      "bytes": 26328,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/057.json",
+      "sha256": "77ea0ca2794728af1131198816c57426cf30c80d57cefea9ed6407ea31f1b5a1"
+    },
+    {
+      "bytes": 33284,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/058.json",
+      "sha256": "db81d616192f344985f5c3850286ba5a9363c0ead13cadc5ac74172ff0d6f7a1"
+    },
+    {
+      "bytes": 40972,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/059.json",
+      "sha256": "a9f46af773d2f911bbd43824d6b62a337d361d2db6f47699e6d8dd5d3cfba708"
+    },
+    {
+      "bytes": 31110,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/060.json",
+      "sha256": "daff72263e28d3e7e336ebc6f38feb108f0e7c23a868911f7cb91227f57bd6c6"
+    },
+    {
+      "bytes": 37901,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/061.json",
+      "sha256": "cdb6b0be6407adb610729c66211a61b16505a201dd1930178c14df8ee76f10ca"
+    },
+    {
+      "bytes": 41061,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/062.json",
+      "sha256": "5589a0b3de28f709bb951d3766b029a40a3214f3704359e2bb246c4d98c8ae06"
+    },
+    {
+      "bytes": 46001,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/063.json",
+      "sha256": "fc27f0ac425d6ee9ab72dbe09da514124489cfe2d90a1dd352e12222766e9486"
+    },
+    {
+      "bytes": 39845,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/064.json",
+      "sha256": "0c612e06ba795a661c5bcd1c56638245843bf52a94b839388535bb37ae33c935"
+    },
+    {
+      "bytes": 36908,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/065.json",
+      "sha256": "6728aba7ee1b6db8c52673762fd521012aeca68d26abe174531fb5e39f78a510"
+    },
+    {
+      "bytes": 33623,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/066.json",
+      "sha256": "bd5ee463bf388f7646b483617ffd245f1c9b6f18e9e2bea18ad7be34aa6104dc"
+    },
+    {
+      "bytes": 38628,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/067.json",
+      "sha256": "a8dbc41ea3292f669d8867a1a9ab8fac5949e11f56d7f9a33fe5dfd4ed67b668"
+    },
+    {
+      "bytes": 33096,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/068.json",
+      "sha256": "4f60dbc98839343a2175ddabb5e8d860ed63ea01f54c5f3ad8eeb12184f945be"
+    },
+    {
+      "bytes": 37027,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/069.json",
+      "sha256": "6bd0ad1a5a6980683c6660ad1c74d6356c8d71b51e80d6aa308bc07ca9337a18"
+    },
+    {
+      "bytes": 33312,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/070.json",
+      "sha256": "888df5f0f0023b65546e289cba36cf45f05f7ebfa5d5f198741fbbc9ef4eef5a"
+    },
+    {
+      "bytes": 36826,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/071.json",
+      "sha256": "15f73523ddd8dd6c92904cad9f4b95f9b055dc9cfdfe0731913e39ecdbb88426"
+    },
+    {
+      "bytes": 47629,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/072.json",
+      "sha256": "1a34270c293d652fe2b34555953bc40a0f09dc39929db20301b71ef6041bf1e6"
+    },
+    {
+      "bytes": 30211,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/073.json",
+      "sha256": "1c075431535b2b11924022d6b5e3ea90ee22362a2b4abaecf4e2d85de5e69095"
+    },
+    {
+      "bytes": 42788,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/074.json",
+      "sha256": "df4ed4e6eb6aa540adc7b3ef014f184d6d6bacff57c84e1a475dfe7afa36875f"
+    },
+    {
+      "bytes": 42217,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/075.json",
+      "sha256": "d1eac4f55c2929b2f11565e403ef97a68ab59cde7a768db5c05e584c23ae9ff3"
+    },
+    {
+      "bytes": 37900,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/076.json",
+      "sha256": "a2b01957ff46e18b2d76630efc483cbde826677c4a7e9e5cf79a072d8e9c0791"
+    },
+    {
+      "bytes": 45043,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/077.json",
+      "sha256": "29158bb21dafbec2f21a7de0c28106af80848a69d3cd2936b0a510e2fb07ab09"
+    },
+    {
+      "bytes": 40155,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/078.json",
+      "sha256": "e05631e0398857529f2c23ed8c5023b2f0209bdfeb9f6fdbb7a7a6e502f4a91f"
+    },
+    {
+      "bytes": 39276,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/079.json",
+      "sha256": "7d9f9f030c66bddbbf6544d88e57033c28ac366f224df4cc2824fdb3cd7f9ee5"
+    },
+    {
+      "bytes": 36332,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/080.json",
+      "sha256": "c27128bfc6c903ff8d8ba8e2ecd5b705bc1a301880a593f158560f713b5c3d4e"
+    },
+    {
+      "bytes": 35465,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/081.json",
+      "sha256": "e03295971f254444e011e474e135d8ac9190575a986dac9096571638a2342dd6"
+    },
+    {
+      "bytes": 35417,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/082.json",
+      "sha256": "911dc14077ac26dfc47ee83fbf3b91c8efb8c3461f47354d12bef6c5197b6f01"
+    },
+    {
+      "bytes": 42131,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/083.json",
+      "sha256": "2bb5e4845e7818f18d6841b2925604e66674871d968c0e84bcf543c15c8f9272"
+    },
+    {
+      "bytes": 42300,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/084.json",
+      "sha256": "455b4cb8ed061db2f82b91602fb9f6fc5076c012aaa8a2fa0e696daf1f72ca05"
+    },
+    {
+      "bytes": 37531,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/085.json",
+      "sha256": "67af8838b818f43311273cb956a7261d73a27ecf217a2a34b80a4297f71927ab"
+    },
+    {
+      "bytes": 41747,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/086.json",
+      "sha256": "19b8b08ea16d6e25098a6e8df0fc1418b0b5a1ee5b5526e9435878b3669fd1ec"
+    },
+    {
+      "bytes": 37143,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/087.json",
+      "sha256": "65021cb614c9d97f8ecfe7d9900e5ccf91331b8f44a5a6e36ca43a2ff76dbdea"
+    },
+    {
+      "bytes": 33806,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/088.json",
+      "sha256": "0718f2ed17174ce22039cff2f39c9f76339a159fd50ef8f6bf37e17d97249a38"
+    },
+    {
+      "bytes": 38265,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/089.json",
+      "sha256": "ce97eef2e5baefd9a026f7ad1477541daf5afa8eec112f7b66a3d552a9f4a6b7"
+    },
+    {
+      "bytes": 31314,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/090.json",
+      "sha256": "a0b7bb62f234e9b414707daefdb47e776035ebb53160c5a40265b541e34bbcec"
+    },
+    {
+      "bytes": 33991,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/091.json",
+      "sha256": "2a23a6884aa72c297d6a92cf7e07777910343bd473e0a27939eb262bbcb4d892"
+    },
+    {
+      "bytes": 27194,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/092.json",
+      "sha256": "2cab18980f67d3b4614817e136ba07c09eb564d548797b5015c694b29e461836"
+    },
+    {
+      "bytes": 35083,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/093.json",
+      "sha256": "f1253f0837d449885408858ed9aa1e34bc34a75c73e4d45bef3909440c35c55f"
+    },
+    {
+      "bytes": 36314,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/094.json",
+      "sha256": "495f04e82c716b0e5de608eb7651ad6e01073de6fbefce8a214df07e9103859a"
+    },
+    {
+      "bytes": 33563,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/095.json",
+      "sha256": "5d3d5a4349883a1071b13ba90cb3fb020fe697361931d74b74aeba6045be21b1"
+    },
+    {
+      "bytes": 30992,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/096.json",
+      "sha256": "8f2b51e663b2c276959be783563a837b2a7dd9c1ee9da83f1de07c1ff3b73b57"
+    },
+    {
+      "bytes": 34060,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/097.json",
+      "sha256": "971c9fc55829a3182d302731b6b17cfca23a951cea2ee121f16f4100feccb97d"
+    },
+    {
+      "bytes": 30725,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/098.json",
+      "sha256": "6e86417e40f67afe977e74db87f7680c96ab6039c09112f69e64b0250d3a7f8f"
+    },
+    {
+      "bytes": 33480,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/099.json",
+      "sha256": "398332a8646e4dbdebf033c9085ac9c44d3eeda28d6ac1187ea8ed5a3640e065"
+    },
+    {
+      "bytes": 31878,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/100.json",
+      "sha256": "f8938a34fa9ea00f542e5540b87590cf8f11c1d28b8f162aa91f2022a0a8006c"
+    },
+    {
+      "bytes": 27497,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/101.json",
+      "sha256": "e0ad22db06cde42be4656c21861ffdd9c5a20c25f924434ab3bc4d27148bde42"
+    },
+    {
+      "bytes": 44312,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/102.json",
+      "sha256": "199cf3e396c2dceff2aa963171af43e0002d632ce04cfe4da8fce311a7ac8003"
+    },
+    {
+      "bytes": 35549,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/103.json",
+      "sha256": "2fe59c81f1a262f5e7127c0b1b62ba3b00705b1d160a23128b28b1b9e3823d26"
+    },
+    {
+      "bytes": 44871,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/104.json",
+      "sha256": "1ae78eea4c714ec37bbb24b2c17a3f78c939c14c1f277135ff4dd199620fd761"
+    },
+    {
+      "bytes": 32963,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/105.json",
+      "sha256": "37d6ab2d4bb86d6f1bab0774e6d494e31844f853062f5d951903a0403694345f"
+    },
+    {
+      "bytes": 39365,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/106.json",
+      "sha256": "f2c9459cb417c5051d090a1cd4664db614b01ef386c68f1ecf376203fd0db3fb"
+    },
+    {
+      "bytes": 28484,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/107.json",
+      "sha256": "c9dadbbaf8b92ef48178ebd0fe804b3fad2e0e09f092d4e05d2e3450e3f1065c"
+    },
+    {
+      "bytes": 29628,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/108.json",
+      "sha256": "626acdbd3c67c5af5ac8e956031062f43892cb59109c85197c7d02fa9e730ad7"
+    },
+    {
+      "bytes": 33076,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/109.json",
+      "sha256": "b96abfdb15e020c094eda45674df206e50a4498129124699a7619714ceadebbb"
+    },
+    {
+      "bytes": 31030,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/110.json",
+      "sha256": "93b18d43c3abdfd573d7a561ba44f05a85491f8256c43f1d0ab5867bc154b657"
+    },
+    {
+      "bytes": 33330,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/111.json",
+      "sha256": "7e6af2355132d08ce3471e9cc9ef1986816a595c483c35543cae09476b3bb756"
+    },
+    {
+      "bytes": 44654,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/112.json",
+      "sha256": "a94753f295f524b7e11ca28b31d49e6b43363335fc03767ec28863d622af2dcf"
+    },
+    {
+      "bytes": 32235,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/113.json",
+      "sha256": "f99fe403da35bde585d9d2f1c7eb7c271b7f128957d4f51475de4fc9ed1595e2"
+    },
+    {
+      "bytes": 35674,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/114.json",
+      "sha256": "dc05ee6c8777a576fce2ef0888f475432c54e29487345f7f2c8745fdf7fa29cf"
+    },
+    {
+      "bytes": 43298,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/115.json",
+      "sha256": "8c6051088d353b14445c569b5f7d8e052ea8b8cdaab107ec7b08723294ffd0ba"
+    },
+    {
+      "bytes": 29736,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/116.json",
+      "sha256": "7df2ba3aa0c81d9f082051cec46c934cf25db85e27e512d4bfa4aea60b35d541"
+    },
+    {
+      "bytes": 38632,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/117.json",
+      "sha256": "7b0af69b8a32693dd74b469458caae75eec4dc0655877c27501e73870b77fb86"
+    },
+    {
+      "bytes": 26242,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/118.json",
+      "sha256": "01c745e826fb9164dcbc6c30ed39e655d56266d6c4dccfb886097f463e70bc2d"
+    },
+    {
+      "bytes": 29891,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/119.json",
+      "sha256": "304dfee6d93935b0b47eb38cbd82f94ceaf16cf25a6e79ab4c4382b6950690bb"
+    },
+    {
+      "bytes": 30530,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/120.json",
+      "sha256": "95d323f9f0187eea58fe39853f453a4aa612c8c62acb54b8610c04e99ee5d0d3"
+    },
+    {
+      "bytes": 38354,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/121.json",
+      "sha256": "2ca56f1f1efa8fa92a73a89f9fc3ed565ae51bb0f9a3a53937b4a6c4329b729a"
+    },
+    {
+      "bytes": 37555,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/122.json",
+      "sha256": "f0960527a2f7960d9640d56eba652116481779347f23148759dbe1a9ba7aa30d"
+    },
+    {
+      "bytes": 35132,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/123.json",
+      "sha256": "4c86725a419224295132574f35c368d8aa92e46cbd4deb59eb075db379187e46"
+    },
+    {
+      "bytes": 39363,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/124.json",
+      "sha256": "2de0b9f77394345bde556a46e9c78e09412454105b711cdb4b05df9e2efd9a17"
+    },
+    {
+      "bytes": 42561,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/125.json",
+      "sha256": "ae53d15151878efa021913873ed72da2d182c1dbed5990e78a6df0e2c0dc82b4"
+    },
+    {
+      "bytes": 47895,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/126.json",
+      "sha256": "724f7a085b2d84d3e930f0c498c9fad1238595f5853e15ca4aa6e13b13c90789"
+    },
+    {
+      "bytes": 32668,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/127.json",
+      "sha256": "f5e8bb9df79d5366159833cfa3c8cc2970ee3427457d66ea14012d33119d166c"
+    },
+    {
+      "bytes": 39104,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/128.json",
+      "sha256": "5e44f7cac28890cc36a6fe9835778c36978a738fa0716dde0f1936821e645e79"
+    },
+    {
+      "bytes": 33041,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/129.json",
+      "sha256": "6d5220811b10fd552f1dd67a283005192da204298e6338e038f2c23b2e389f08"
+    },
+    {
+      "bytes": 48242,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/130.json",
+      "sha256": "3f58965f51fe7146b86b1027105ccbe872c05bedf7eae9719de0206ace55bac4"
+    },
+    {
+      "bytes": 49652,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/131.json",
+      "sha256": "223d0a633d0fd857a725a8f9615a97aa5247317eab588a9e7b3f4446c65a5013"
+    },
+    {
+      "bytes": 33849,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/132.json",
+      "sha256": "b26745f3289db2c094a188ea9153045381edaa197746ab83920c4e45a0042334"
+    },
+    {
+      "bytes": 34304,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/133.json",
+      "sha256": "10db5dd5037d66c86d3bf6fc46579064773cd672e7160ac8c24be5ab11ca7fd3"
+    },
+    {
+      "bytes": 41791,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/134.json",
+      "sha256": "caaab508332b012ecb998bdd9f15e2905bc762e1d76b01504c42e5cd6a25f8a9"
+    },
+    {
+      "bytes": 45000,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/135.json",
+      "sha256": "92dc659f11bda2a4c47ad0d53aff7a25d1e3f28d5f9245cd830276a2ddce4bbc"
+    },
+    {
+      "bytes": 44173,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/136.json",
+      "sha256": "365b9b948343c2e4e528a0e354b95b3bcc83fe51ef7e61bc0c7f279c39dc447f"
+    },
+    {
+      "bytes": 31965,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/137.json",
+      "sha256": "2e40b4b54b0aadcc727daf8821476b04c85eae06cd156889d7af9b21aa761814"
+    },
+    {
+      "bytes": 30609,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/138.json",
+      "sha256": "e0c6306e31d2970c6ea8821076ba5f05a593b2fcb9c517b66aae3fc8ae1ee6a3"
+    },
+    {
+      "bytes": 37328,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/139.json",
+      "sha256": "7845e335f423f98931b3328df33c6a92bab1f62e62d5b0c9c51c3bd80b35a118"
+    },
+    {
+      "bytes": 37874,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/140.json",
+      "sha256": "3a843092b2444a7767c5ff9688e9e879f7533bbaf0f8a909fee63fe5c7b41518"
+    },
+    {
+      "bytes": 32327,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/141.json",
+      "sha256": "55460e80f1c5e2298da4e6c49a76e7f849b4593eb7531c83aa351bcd279fb728"
+    },
+    {
+      "bytes": 34926,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/142.json",
+      "sha256": "ef3db7bb5205bef619253f3f6b2e9955904d910c8e2b10458945c92bd68a4fbf"
+    },
+    {
+      "bytes": 37425,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/143.json",
+      "sha256": "b978a79903a03a7f1c426fc8c0daa198aae14802e5743cc1c697f4b85dbecc38"
+    },
+    {
+      "bytes": 31088,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/144.json",
+      "sha256": "70cb6524128be9c9af33f3028e4dae22c75df217abbbfe3652c0e35eb65f33ad"
+    },
+    {
+      "bytes": 37007,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/145.json",
+      "sha256": "35c15959013a49365fa3b3db729a67dc323311f2911f254a1e7492819a9c48c2"
+    },
+    {
+      "bytes": 33790,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/146.json",
+      "sha256": "4d681a9a87366981fd2ac34bdc2575d537522e4f9af483798de5624e27b4b3b5"
+    },
+    {
+      "bytes": 25741,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/147.json",
+      "sha256": "a6610d0c2cdad8678fc7895568e16cf08ae155c73c13dede17cb294e5abb975b"
+    },
+    {
+      "bytes": 41014,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/148.json",
+      "sha256": "3d16a31da9f1f54931263b8524c4836f2c67dc71f65060e443aac5fbe24552b6"
+    },
+    {
+      "bytes": 42206,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/149.json",
+      "sha256": "1fa0197451b6c2c88100572394678b7391b029b579906f8ab79acccb167e02d5"
+    },
+    {
+      "bytes": 30082,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/150.json",
+      "sha256": "f9192c185fd20bb44a2e011410c150e99510e6a00982e90162d33e555dcff02a"
+    },
+    {
+      "bytes": 37577,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/151.json",
+      "sha256": "fc4debbfbc0db7a0da5fc745ed466c805844913d057e0c56bd00333e4cef4f67"
+    },
+    {
+      "bytes": 27633,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/152.json",
+      "sha256": "c48967421d1a5f80e42c62d0abc3afdd224f6b0a86e5626393571001b7f3b4cc"
+    },
+    {
+      "bytes": 36208,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/153.json",
+      "sha256": "ba1eb1ab3ead4e60100b918a8b2209ed8a6b90bcd5efcad6767d820443ccf76e"
+    },
+    {
+      "bytes": 36084,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/154.json",
+      "sha256": "ac49372aaf4d7d8844748b8aebb5c2f919f1efde1a746154706718fcca33d38c"
+    },
+    {
+      "bytes": 29449,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/155.json",
+      "sha256": "f9951ec439fe472a84e7bc7f7124a6b2b6e10ad8963605a72db30b47f771baa6"
+    },
+    {
+      "bytes": 44276,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/156.json",
+      "sha256": "b165e2fcee3ce5c1851b13b8d402c5d178e2e68aba393ce88be900b0fba6db55"
+    },
+    {
+      "bytes": 36364,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/157.json",
+      "sha256": "a90e1aae87d48e2442655cf5563f1e284eb44437d1ed96e904b87a3ad8cca7d5"
+    },
+    {
+      "bytes": 39844,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/158.json",
+      "sha256": "defe1b3b6c61bef146311102937d7a17c1a369bdfc70d7de120d807195fc6bad"
+    },
+    {
+      "bytes": 28963,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/159.json",
+      "sha256": "8e08cbf7e4b7784dd6d147de0dbd75950a89287bef92b194f8d66e74765e60fe"
+    },
+    {
+      "bytes": 26574,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/160.json",
+      "sha256": "da94d39083e6ef430dc1fdc0dd29dbf8cbbdd7ff14fd31188ba3d96168d9313c"
+    },
+    {
+      "bytes": 39184,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/161.json",
+      "sha256": "e5593a6186207669c134d61fcad39956744713eea757bd6d2ebf2b073b1eaecc"
+    },
+    {
+      "bytes": 32515,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/162.json",
+      "sha256": "5be73cfa013b742a94c86076fd2b271be30f99166855aa98f8fee414c23dfc77"
+    },
+    {
+      "bytes": 41887,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/163.json",
+      "sha256": "d323711f1f83f0b775056483aa4ee818f5299775e1fd3b30f6fd3c96dde48cc9"
+    },
+    {
+      "bytes": 39664,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/164.json",
+      "sha256": "958a6b74ede12efb228b45cec2c0c2c93de0de09d4fb4624b05608fd92e9e708"
+    },
+    {
+      "bytes": 34477,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/165.json",
+      "sha256": "47826ef96e67c41aff8c716b910d027fac990531e201fdde606abae3e300cb37"
+    },
+    {
+      "bytes": 38860,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/166.json",
+      "sha256": "6bc7baeacdcfff567d8c14f2fbd608116f38c813a27a8a6c3372a3cccf35ba7f"
+    },
+    {
+      "bytes": 29517,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/167.json",
+      "sha256": "3db7c7b7b31c80d73f6a26bb411782a155a0e88dda92c554691f3a0291136c1c"
+    },
+    {
+      "bytes": 36353,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/168.json",
+      "sha256": "b1bf1f905b389fc5679ff46c03592b03e148bc69839957c423aa13ed3be1a3eb"
+    },
+    {
+      "bytes": 27548,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/169.json",
+      "sha256": "9759206ff94a176e44f1953fd8ec780c5de1b826990525eeb96dc3fab990500a"
+    },
+    {
+      "bytes": 30085,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/170.json",
+      "sha256": "b7486ea705e108fa76d64ac455142c646bec2df0e0858aad9050f526fcbda074"
+    },
+    {
+      "bytes": 30068,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/171.json",
+      "sha256": "03e5d148841a7bc6d14aba64783892cf45e35878359844c75899e290f68b6a2d"
+    },
+    {
+      "bytes": 33743,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/172.json",
+      "sha256": "f2568b2aa499dd9d744a8d68c1d38839b1bc94c3a7ecbe84879bc8da3b61bc88"
+    },
+    {
+      "bytes": 38645,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/173.json",
+      "sha256": "ae93f65e6ece5d9229c51e32432b5cccadb033d4f657dfa5c8e51c08971488e0"
+    },
+    {
+      "bytes": 34845,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/174.json",
+      "sha256": "49eade9d9a5c73f2cc43b6db1eb0f3903d131ab2834e49556ac8c8e74c1ba59c"
+    },
+    {
+      "bytes": 34761,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/175.json",
+      "sha256": "e9429d2bbb5340c6691f13d96e22660d3c05623877bc5293c28592269bf19b57"
+    },
+    {
+      "bytes": 40978,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/176.json",
+      "sha256": "92c74ca90b3984fb0058887f8bd6c3766138dc680e61ae74de0a5184ac5af1d3"
+    },
+    {
+      "bytes": 24037,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/177.json",
+      "sha256": "9396a2e04a3d4d3dd526b81add6c21239b1b768b726903c8dd85f7e3f0f564d4"
+    },
+    {
+      "bytes": 32262,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/178.json",
+      "sha256": "78d33683030193b8b7027472c5290dcc28943a3c86b9a779121345172aa8c692"
+    },
+    {
+      "bytes": 26659,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/179.json",
+      "sha256": "2272e2faed8a4ed6d24112ca53d64e365136de031b0b7fe0913c2f86d78b0849"
+    },
+    {
+      "bytes": 37834,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/180.json",
+      "sha256": "2b987b011e314e636373c75a6187e6fccb025ddaf1841390d7715a1a2729dc8f"
+    },
+    {
+      "bytes": 28833,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/181.json",
+      "sha256": "0ad2cc1f0327db9cdd7b7bd35761c4d24dfa3b2d9d5418c84a6ad2a2d2bbaaaa"
+    },
+    {
+      "bytes": 28718,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/182.json",
+      "sha256": "84c124e669d2e0cf58a4a335bdf3685951dba4b5ed9ed64bf4b1cbf21fec1014"
+    },
+    {
+      "bytes": 41430,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/183.json",
+      "sha256": "348f4d017620bcc080df59d0554e2a63ac9e9b3926633cafcb05f0ea02aea02c"
+    },
+    {
+      "bytes": 39219,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/184.json",
+      "sha256": "dd49625106c3cc27410b60359cab967f64006c7b699dcc514ff64b6f429887a9"
+    },
+    {
+      "bytes": 32231,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/185.json",
+      "sha256": "76949206805b24fb163a4cf84c2285a5c650d3e37fa31bb0adae589f2d571c01"
+    },
+    {
+      "bytes": 28745,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/186.json",
+      "sha256": "856f7c15488f6fb9c6ca9872d12a1df4995fd8e7dbc7127cfca1d135adae8d7f"
+    },
+    {
+      "bytes": 43252,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/187.json",
+      "sha256": "a958adfeeae8582461b43bac35e45f6054ece2825d49fb3a74af6986c76652e5"
+    },
+    {
+      "bytes": 34698,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/188.json",
+      "sha256": "634fc4790808dc30e1ed34240e310f13b802a139bba5015983d9f4efb10bf0ea"
+    },
+    {
+      "bytes": 25077,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/189.json",
+      "sha256": "369b6b1ebfea447ce94006c8f721473ef763698d8d1cde508444d72d251fda8b"
+    },
+    {
+      "bytes": 32038,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/190.json",
+      "sha256": "4d0d69e79fd443f85cecc4ddca63e42765f5fdc7ead5a35c0f16d5e14c80293d"
+    },
+    {
+      "bytes": 33617,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/191.json",
+      "sha256": "a6239457ef12785c328bd2d8c5f54e8762c9316bc675bef43a33edbaddbbe046"
+    },
+    {
+      "bytes": 35238,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/192.json",
+      "sha256": "9aa2c612189f34b23ff3d4e4968cd41f55b933c713efddfc895543b381a7b9c0"
+    },
+    {
+      "bytes": 36862,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/193.json",
+      "sha256": "bd843f8dc2247fc7cab1d7e21bfc92af785584ba0692a895acd626cc5783439d"
+    },
+    {
+      "bytes": 28688,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/194.json",
+      "sha256": "c261dfced1dfa4a7ce3ff4b1b2a1f559be8c5af2258dd61c242da72e09e6fe8c"
+    },
+    {
+      "bytes": 35614,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/195.json",
+      "sha256": "d4d515dbd65672d58fa49b5e1ca5bf2e643ee047882c539caed9c9617bb67b40"
+    },
+    {
+      "bytes": 23095,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/196.json",
+      "sha256": "23161c0243a107c67dad4ca93763bb3a742171f409b4bbe9ccfb534d8e5681c5"
+    },
+    {
+      "bytes": 35049,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/197.json",
+      "sha256": "35b720897615c70d70636729e3af9bcffa9783dc93fb73c9a24cf07217076a01"
+    },
+    {
+      "bytes": 26620,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/198.json",
+      "sha256": "361eb353ebab594629ddf38193a286d8f8662700164c0cb5d9de15a2be633c5a"
+    },
+    {
+      "bytes": 27845,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/199.json",
+      "sha256": "e9d97b0fcd74d00fbfbe9894c041e3e20bcebaa5fb53692d532c0f0466c7b2dc"
+    },
+    {
+      "bytes": 31113,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/200.json",
+      "sha256": "c5df988a2180e3f9b8408f8d4e5e2d9b78d8e73e7ff7de409920883e1cfa0c89"
+    },
+    {
+      "bytes": 39260,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/201.json",
+      "sha256": "21eaf0b6e36aab74aa9706247e954478053087890d0f69ccea5f3e207a3a3635"
+    },
+    {
+      "bytes": 32671,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/202.json",
+      "sha256": "4078fdd64c00b479665fe7e80ad5ff21386d60d60d8261027b2a523ad4e000eb"
+    },
+    {
+      "bytes": 26430,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/203.json",
+      "sha256": "cb5ce53127685fbe921c818b536af45a4a6818284af19b387916df1267fd6fc9"
+    },
+    {
+      "bytes": 27117,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/204.json",
+      "sha256": "6f87d12e8bca51291706049c936346d55bcfe6c9535b1a176ba70279ecd3562e"
+    },
+    {
+      "bytes": 38250,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/205.json",
+      "sha256": "93e4938f73db0d9b9d3f902aed4d5e7a520d3ddeaeac687514d09bb14d297986"
+    },
+    {
+      "bytes": 38625,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/206.json",
+      "sha256": "4df57e3695d717707d4c1c4af58004ad90015cb390051e0995849eaf106bd71b"
+    },
+    {
+      "bytes": 31645,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/207.json",
+      "sha256": "e0d8619fab31dfdefc376f4f96ef66f913e134e181e1d1ac37fc16f2bb63f9ea"
+    },
+    {
+      "bytes": 31379,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/208.json",
+      "sha256": "924469714d19dd710bdd79d9452e2de07dca240b4f680fc3df94756f351e2e39"
+    },
+    {
+      "bytes": 33225,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/209.json",
+      "sha256": "b6b3079e3bc3023dd3bf850a69d9c634d1e378a60dd26553eb49cb5504d16e51"
+    },
+    {
+      "bytes": 31306,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/210.json",
+      "sha256": "ec5f4f40b00dadab2dbd61d85034df026a2e2a40446b7b4c689d22b4e60fd899"
+    },
+    {
+      "bytes": 35344,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/211.json",
+      "sha256": "fadee672fca3ed689b24ef12bf7154ca0197888e7b96ba7f79ed4951e2a78eb6"
+    },
+    {
+      "bytes": 27450,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/212.json",
+      "sha256": "6c4ac08219689ef1b982d7529b8ece8f46aae17fddb0f1d57a72aaf1609dff8f"
+    },
+    {
+      "bytes": 30110,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/213.json",
+      "sha256": "a58552bc01b4f110cf753dc3018a347958be83dc280b9426d366e6b9e85d3077"
+    },
+    {
+      "bytes": 26031,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/214.json",
+      "sha256": "724aa28caac6a044bf39a4f779ab4737119f44a6f18112dd6b562586f58a6922"
+    },
+    {
+      "bytes": 25482,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/215.json",
+      "sha256": "931fd4c96fe37a383413b808856181ba16c8ba33a394a148d1d3f188d5eae919"
+    },
+    {
+      "bytes": 25128,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/216.json",
+      "sha256": "636c3b1516690a61a15a125187e8381b9d4852665a8d9f2e8dd5d7ca5ae2ee6e"
+    },
+    {
+      "bytes": 32121,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/217.json",
+      "sha256": "f37826fa803f85e901a8f83997a3c6fbeb318091eefab619931a39b21a67438f"
+    },
+    {
+      "bytes": 30363,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/218.json",
+      "sha256": "f2fb8708427edc233e1952cce275fb8a51a3bb8ef54007ddbdbc00479785b496"
+    },
+    {
+      "bytes": 24158,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/219.json",
+      "sha256": "f03361f7d76ff615d66f3e6a98af7fcb8ad223e6dc325f65d7dbfddb02cfddff"
+    },
+    {
+      "bytes": 35004,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/220.json",
+      "sha256": "d9ec2c28832d743f861c2b6a87dcfbd42a7fd2a5c8e9ec168d7d768c850be771"
+    },
+    {
+      "bytes": 24134,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/221.json",
+      "sha256": "d9995cde9de0576b5440a1c5566318be6b3a6fd5f3e03f36960a26377a86fb1b"
+    },
+    {
+      "bytes": 30995,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/222.json",
+      "sha256": "e7024952003c5db21441ad542be199caa0ccb666925c5b3ae9e3dad541995179"
+    },
+    {
+      "bytes": 25343,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/223.json",
+      "sha256": "e7a01f85391975ae3002fcc8fa7c5c321a8eaac4c9a0a8633e1760800098e353"
+    },
+    {
+      "bytes": 28406,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/224.json",
+      "sha256": "4e85fe1bfa7bd89c37c4ecddffca77a90aa4a876427c22cc8d475d05f2e5568c"
+    },
+    {
+      "bytes": 26010,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/225.json",
+      "sha256": "93fede81b1f5c74f92db6384a54a71040cf2687fed8a140c266cd16f4fd50a43"
+    },
+    {
+      "bytes": 32815,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/226.json",
+      "sha256": "a490aa5f031d4fa743dbdea215f8a305dac34a97c5a5fad7c11c1e3c0e9b2b54"
+    },
+    {
+      "bytes": 29823,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/227.json",
+      "sha256": "a177dc27f34567543af0af00877d94162570102c8c7a882cfd6734c9e87ac28f"
+    },
+    {
+      "bytes": 33541,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/228.json",
+      "sha256": "f159f5abf0d36b7f8a1819ff356442cb71916284e50d3d35cd54d17b55edb9b3"
+    },
+    {
+      "bytes": 23912,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/229.json",
+      "sha256": "1526b57c3a0dabc3b266076a084ae75eba7de61ce27810b465a80c7c3f003c0b"
+    },
+    {
+      "bytes": 30084,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/230.json",
+      "sha256": "0d6f3b20992a14582dba3513889b8cf923f15291d8711c4a979cc9d7125a568c"
+    },
+    {
+      "bytes": 30575,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/231.json",
+      "sha256": "7036b5e31ef394de5fa056bf554bf71611f903f292b13e714b6e57f463812839"
+    },
+    {
+      "bytes": 26823,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/232.json",
+      "sha256": "507120f665ff3fb6b527ea53a2eecca0c4e2584c45d7e12f4f80dec815f091a0"
+    },
+    {
+      "bytes": 24691,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/233.json",
+      "sha256": "8fb436008e31040aab9f54dac50c76f8ff4a5a49c6c14bb165bd7fe8a209d9fd"
+    },
+    {
+      "bytes": 28322,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/234.json",
+      "sha256": "49ac2beda7277e17a4ea2da845aa7f380a4878341d1b4bcc66a78cf180a3747b"
+    },
+    {
+      "bytes": 29504,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/235.json",
+      "sha256": "03ce8c49eba1612f7bf2ce07d91384e28c12cd7b140d39272dfb9dac04ae45e9"
+    },
+    {
+      "bytes": 26181,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/236.json",
+      "sha256": "91053d1d6ed76684f5f0be4606eaa9edc48d87cd723d4ef32a424aee8fcb55b6"
+    },
+    {
+      "bytes": 30084,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/237.json",
+      "sha256": "03c694d3162c5f7f06229f8de583a2281ce4e51a3df5c37c4712220eada87446"
+    },
+    {
+      "bytes": 34099,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/238.json",
+      "sha256": "581ed2757aea36a136da9eb35934a9c1844e1de41cf9396841f82ccbb590b21c"
+    },
+    {
+      "bytes": 22849,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/239.json",
+      "sha256": "0744993088dc713b7976dcc5feb4cb4bfae87caaa11f68642d3d6da49b41ac73"
+    },
+    {
+      "bytes": 26778,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/240.json",
+      "sha256": "bb05674c2c9140fef75bfac281bba41b069f8ba52f0e79fc9a4f58765db593cf"
+    },
+    {
+      "bytes": 32447,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/241.json",
+      "sha256": "b4388dc23f63e52c078641036a7c3e50d68e9aab5446240a64d23c17aa4077f7"
+    },
+    {
+      "bytes": 28588,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/242.json",
+      "sha256": "fc5a7fa5b813defbc2eca98719e51dd61ad0419338a8858c17b073b179888e84"
+    },
+    {
+      "bytes": 22817,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/243.json",
+      "sha256": "ccc6e070d153969d25912a1e7eeb4af5b660f096c561df48107ade3de6f8d428"
+    },
+    {
+      "bytes": 26464,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/244.json",
+      "sha256": "76d508c29155bc3e93e0b4c4fbea8bdfdeb8b0efcf21ad7349a9dd3dbc689f60"
+    },
+    {
+      "bytes": 24391,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/245.json",
+      "sha256": "ed5319f6a41aab31ac1b610785f77d8f8454ac8287f4a950289b6c2e36b9e314"
+    },
+    {
+      "bytes": 36791,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/246.json",
+      "sha256": "41367a2676001f8a4999fedc65f071cfc98be2ab5b6bb97b200d7de205b40ec0"
+    },
+    {
+      "bytes": 25981,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/247.json",
+      "sha256": "6a50dd81bb08602416e14f074fc9910815b4ad1ac20333a1df8720991b634ca3"
+    },
+    {
+      "bytes": 34517,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/248.json",
+      "sha256": "2e9baf2b7246f7f920febedf2950affe29c35e7c1b9ecde3c77de9edc2a0252f"
+    },
+    {
+      "bytes": 25721,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/249.json",
+      "sha256": "baeb88d9f1df51ba53a99b6022cb93c62619e9a72016786d0da7bf4c92d215f5"
+    },
+    {
+      "bytes": 27860,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/250.json",
+      "sha256": "1d69fbdef140be0475ddb4295e1ea94119a8b315500c6101c881407be9dfef39"
+    },
+    {
+      "bytes": 24137,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/251.json",
+      "sha256": "e2df8e35a53e4fbe9a16fd5d76a04ddac456b78bd37be9ecff09521bbc534e6d"
+    },
+    {
+      "bytes": 25527,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/252.json",
+      "sha256": "adb4f8fefe4447affb5bc4fb9949e767a7b4aca12583bb1f2e3d37fb2d7285d0"
+    },
+    {
+      "bytes": 22827,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/253.json",
+      "sha256": "c7d61b5d351b3c61daa80475e82880338246d11aaaae7857e7777f79a64da746"
+    },
+    {
+      "bytes": 25462,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/254.json",
+      "sha256": "623d35eccd258c8b8a7eba11d7ae807276b8355e46b38e97508180543598bab2"
+    },
+    {
+      "bytes": 27202,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/255.json",
+      "sha256": "6e5294a9e75ff16f61871852e4c99392d207a47ad4bdd67a91d2966126c39de4"
+    },
+    {
+      "bytes": 27274,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/256.json",
+      "sha256": "009fb73b3312a5d6145a57c6d4c3949585e495870090d385b1ab151eb370833a"
+    },
+    {
+      "bytes": 21972,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/257.json",
+      "sha256": "85a449af37aa44215bf25a2db61d616ba514adc21292a0117a4022d9f2459a1d"
+    },
+    {
+      "bytes": 35577,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/258.json",
+      "sha256": "cf8489bf95ff60be4941dfeebd972dae1e8a884c42bd65d0018f0452b37efa62"
+    },
+    {
+      "bytes": 34473,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/259.json",
+      "sha256": "c5a45bae78fc9fa91740bf221c70f13e74b46e9cc5713e8bc1fce226dbda762b"
+    },
+    {
+      "bytes": 22436,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/260.json",
+      "sha256": "a4bf93ae2697f619f44116e946d1e2deeb97d888ce43bb8bebadd83a9d46475f"
+    },
+    {
+      "bytes": 29518,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/261.json",
+      "sha256": "0a970568f382c319533e571fcf6f912fd6b00c196c2f10ae1105a42ec0ed0264"
+    },
+    {
+      "bytes": 23298,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/262.json",
+      "sha256": "c2aff796369ff814854a645786420aa57232a49cb5d6a663f49c05612b4e6f40"
+    },
+    {
+      "bytes": 26202,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/263.json",
+      "sha256": "046e3360a2de1fb9853e39cacbe959b621fd413e867b6a03d6a10fef23cebb0c"
+    },
+    {
+      "bytes": 24140,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/264.json",
+      "sha256": "93e83e437cae00f3f9be718aeab84224d355cf386f8cedb8badea95231bbe328"
+    },
+    {
+      "bytes": 24370,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/265.json",
+      "sha256": "2178f45ad3140a0b727d0b9a2cb1d7a651fe255224f773e13b8a3a1f9a6f1fc4"
+    },
+    {
+      "bytes": 23924,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/266.json",
+      "sha256": "bcb2b3cf8937a416dc55b235b30f57173ae2eb7e73dabf819848c6987aa324a5"
+    },
+    {
+      "bytes": 28605,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/267.json",
+      "sha256": "98ea72a07d9e03fbeef5681962b653e64f2383e05a496acf1da8ae3f719a953b"
+    },
+    {
+      "bytes": 30177,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/268.json",
+      "sha256": "c0f50b5fa870f57b0708b08dc0fb9dcbff120c658c54251cb042ed927bbcc789"
+    },
+    {
+      "bytes": 30390,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/269.json",
+      "sha256": "2c52c78215b167b7ef74371c4f302fc100eecf81b270df79364f9c050e38e188"
+    },
+    {
+      "bytes": 24583,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/270.json",
+      "sha256": "c95fdbebe53f4822ceb3f4ef094d85d72440327f09379c37955a87efde828648"
+    },
+    {
+      "bytes": 21992,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/271.json",
+      "sha256": "405651dd2b80bded2a703e6ecd95747b744e4882cfb156b5f315036cc1c138a2"
+    },
+    {
+      "bytes": 25454,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/272.json",
+      "sha256": "f47d8d11417c5cb1168a0f7a0f5f65592979cec0e85e940146f3337d7f9997e7"
+    },
+    {
+      "bytes": 24567,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/273.json",
+      "sha256": "30bcf25c532f222688eec58ca058fed3f82678e672ffa08435c74c9dbe617ffc"
+    },
+    {
+      "bytes": 25220,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/274.json",
+      "sha256": "8a5d6f6076c3e0d7438e3f738e43c43b38c098e4576edc7a9bfcde3f750d0603"
+    },
+    {
+      "bytes": 22605,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/275.json",
+      "sha256": "9de94e3cf222ac06ae730f47f74315cb35cc693b66993f23853a8b1611eb7a18"
+    },
+    {
+      "bytes": 29662,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/276.json",
+      "sha256": "2722aee353cd35d5be7662fe668721318c5d8eff24f4f4ed0aede1e7d1d26818"
+    },
+    {
+      "bytes": 25222,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/277.json",
+      "sha256": "d418ee1e0309c3fa54200bee60db47cb7e8c78978395b99f03b46c90602dbc61"
+    },
+    {
+      "bytes": 23055,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/278.json",
+      "sha256": "cb300fabfd026e088677689e7f626eec9773ed30a2bb95bdffbb7a041e02b779"
+    },
+    {
+      "bytes": 24900,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/279.json",
+      "sha256": "ce85be16ff94d0d645324a9b5cfe4febe202070f55037adb2c0ed7ef3296ec44"
+    },
+    {
+      "bytes": 22868,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/280.json",
+      "sha256": "99e9ed510bc14985c0192c71ac153a480d4bbad90020af2444a36c7cb483a533"
+    },
+    {
+      "bytes": 26917,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/281.json",
+      "sha256": "adfa46605a972c03744bdebb7656f836e4ee95f187eb7e3c649c96d49ac7a976"
+    },
+    {
+      "bytes": 23076,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/282.json",
+      "sha256": "cdbbbc5a8edb629a0e5aae8c43c57182c0e534114107d02198bf3a432757ecde"
+    },
+    {
+      "bytes": 21949,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/283.json",
+      "sha256": "e0f6c5cb88a5df75a6663a885f8e8aaf8e241c0409d4cf8314ac8b7d4a02e773"
+    },
+    {
+      "bytes": 23460,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/284.json",
+      "sha256": "dba3ed88f5da80ef194e6e43daf6e5271e28ed4e44429bbed8188181dc4c9e79"
+    },
+    {
+      "bytes": 21292,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/285.json",
+      "sha256": "9adb03e81cdda7bc1940aa602d91f6a1a127e9c17c6bb06059236e1b3d9ea0b4"
+    },
+    {
+      "bytes": 24097,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/286.json",
+      "sha256": "1d337e26435c003237ea547b50773ec41ff807caad512ff84d54c1749c97ca5f"
+    },
+    {
+      "bytes": 23236,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/287.json",
+      "sha256": "ae428bef4e933376e21d0f8de715689af918b2689efe559ea0b86f0f2e5aed0a"
+    },
+    {
+      "bytes": 30346,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/288.json",
+      "sha256": "e006c7e3541e2de317a8d6eea0f328db847a9a78beca92c9f92e5a5287f5102d"
+    },
+    {
+      "bytes": 22363,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/289.json",
+      "sha256": "d2f6dc5304987d4a140e1b10524b697ce1f0a5f74776a50c1439d96ec427f212"
+    },
+    {
+      "bytes": 21738,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/290.json",
+      "sha256": "5b4522e0e3c9eec7b9c1d202c4bb3f19b1c1fe03595214b09bbf2c1411c7109c"
+    },
+    {
+      "bytes": 21729,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/291.json",
+      "sha256": "19c2a5ff7f37c9dc3216476ba5a0e205f57a70fe1fd88bc5dcba54e12a87f2ef"
+    },
+    {
+      "bytes": 21523,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/292.json",
+      "sha256": "c1ae1e1ec55df9d13a928dadd942abd4f4dfa469ab589b437e087bc968a26e2a"
+    },
+    {
+      "bytes": 23056,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/293.json",
+      "sha256": "b87b1ab859537401f592bbf7d27ade47f6ffcd05e1212cc480b587de72d3f0e9"
+    },
+    {
+      "bytes": 22563,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/294.json",
+      "sha256": "18f91f147f48ecfa18ef9ede1124160bab964eca07b1b821b13f165ca7f53e94"
+    },
+    {
+      "bytes": 22560,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/295.json",
+      "sha256": "a2fc80c85634a00a61bdc7b02f8731c7c679af7689479baa174bba6723f1d199"
+    },
+    {
+      "bytes": 25819,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/296.json",
+      "sha256": "124f819a407bbff4f2f8b445ea749b546a895b1f803dd2afffacb810b1d9014e"
+    },
+    {
+      "bytes": 20876,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/297.json",
+      "sha256": "0f51456f2fde69fedac0df852f45da4ef205ba0ea3988372e14ccae26e5a239f"
+    },
+    {
+      "bytes": 21116,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/298.json",
+      "sha256": "e672a26717df02e1f5c0ab65a0c5096578aea60713e66ae43f00c48aee73aec3"
+    },
+    {
+      "bytes": 20878,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/299.json",
+      "sha256": "7198a8bf7b9e168daaf8b7e30fd79456c6ebe938c987ed3adfc81057ba813de9"
+    },
+    {
+      "bytes": 20456,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/states/300.json",
+      "sha256": "87047bf2a57c84ecbf10b86a9912ff77e1ad60045bae154c29a90f0ae5462531"
+    },
+    {
+      "bytes": 973,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/supervisor.json",
+      "sha256": "b14e795a95126029e5fc2e26cc7c742db25ea853dc146de659d7394f4c3cdb02"
+    },
+    {
+      "bytes": 1143,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/terminal.json",
+      "sha256": "88265c843451af4c9ac0081f36a1b241b116f1dcb7f77d167540156be75c8e85"
+    },
+    {
+      "bytes": 989,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/verification/charts-result.json",
+      "sha256": "f4147398b85fe1d6bc7b577f0f5463fb0ff597a62b101d873ccae996e6de0bdf"
+    },
+    {
+      "bytes": 63,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/verification/charts.log",
+      "sha256": "073490915cfeec12990882b8ce5454d774a16d1841d33a777b3aadb08f59da9a"
+    },
+    {
+      "bytes": 989,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/verification/charts.supervisor.json",
+      "sha256": "f4147398b85fe1d6bc7b577f0f5463fb0ff597a62b101d873ccae996e6de0bdf"
+    },
+    {
+      "bytes": 980,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/verification/completion-result.json",
+      "sha256": "fff9a808601c35a881ea70e231030545247f68231dd06d7e412274f92b8a8acd"
+    },
+    {
+      "bytes": 1470,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/verification/completion.log",
+      "sha256": "20f5aea957894eb0c69037d9a80b6772ae110509d3a86c42ec629cd31299f6a7"
+    },
+    {
+      "bytes": 980,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/verification/completion.supervisor.json",
+      "sha256": "fff9a808601c35a881ea70e231030545247f68231dd06d7e412274f92b8a8acd"
+    },
+    {
+      "bytes": 220,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/verification/protocol.json",
+      "sha256": "4f778cbea9f6962eaa833ae7d1d93b28aabb058c4ce0dd0880fd0bd77aee3017"
+    },
+    {
+      "bytes": 19590,
+      "path": "artifacts/local/elliptic-curves/small-conductor-primebank-continuation-v1/worker.log",
+      "sha256": "22db8d8e91b585969353d280efd4a122b6f758837c80b553a6edaaa66b027a67"
+    },
+    {
+      "bytes": 4337,
+      "path": "elliptic-curves/cas/audit_fixed_pari_completion.py",
+      "sha256": "4b30173f769a8b602265eec711773f8ba1ae675a51d92e8e5858466288cb9810"
+    },
+    {
+      "bytes": 4512,
+      "path": "elliptic-curves/cas/audit_retained_cloud_modl.py",
+      "sha256": "9922a557d96f692f01d8a7c834826212928b515eaf66b13507c50cd9a59d3206"
+    },
+    {
+      "bytes": 3287,
+      "path": "elliptic-curves/cas/benchmark_preloaded_prime_state.py",
+      "sha256": "ad9e02326f9e4afd16e5f18796781c1604d2a898c16b32dfaf6c0f0acd147c87"
+    },
+    {
+      "bytes": 2839,
+      "path": "elliptic-curves/cas/check_pari_height_boundaries.py",
+      "sha256": "e71a93e8576b8fdc34f161f11cd1d979710ec6e0cac23350410489a80be1c54b"
+    },
+    {
+      "bytes": 5555,
+      "path": "elliptic-curves/cas/compare_new_rank26_search_engines.py",
+      "sha256": "39d3b1b381bd06a6f4ec80b769e118dc7c6a7b5cd0df4c7b5ff59573987c0a5e"
+    },
+    {
+      "bytes": 5581,
+      "path": "elliptic-curves/cas/compare_new_rank26_search_engines_v2.py",
+      "sha256": "a6f1f53a4b0c5098ed33d1ccdf441efb626a5a04ee048c32f88baec250600993"
+    },
+    {
+      "bytes": 10458,
+      "path": "elliptic-curves/cas/continue_fixed_pari_search.py",
+      "sha256": "1ca07246cbfb4579da52e68ce958c72c65e494742ead62afa77980e546ad015f"
+    },
+    {
+      "bytes": 6237,
+      "path": "elliptic-curves/cas/package_fast_point_pipeline.py",
+      "sha256": "4e2dabaf3f21c7d541ac280afe0018dbc76ccf396f0dae3bc541e232f4ba5c43"
+    },
+    {
+      "bytes": 6536,
+      "path": "elliptic-curves/cas/pari_pointed_backend.py",
+      "sha256": "895c0f3c14eefc2537ef1aca4354719e47ce2a7cd09fcf2e83f2c44cc60733de"
+    },
+    {
+      "bytes": 3313,
+      "path": "elliptic-curves/cas/prepare_new_rank26_adaptive_pari_maps.sage",
+      "sha256": "a723421f98407caf4111004645cba53115f54a16aa4839ab1e817eacdc7e47c8"
+    },
+    {
+      "bytes": 3340,
+      "path": "elliptic-curves/cas/prepare_small_conductor_pari_maps.sage",
+      "sha256": "359d04cf6893600c780584692a6096e706932f0f1075585a74c779bd39ed1855"
+    },
+    {
+      "bytes": 2235,
+      "path": "elliptic-curves/cas/replay_all_fast_backend_geometry.py",
+      "sha256": "e27950002a2cc684a62685bf6384d6b4a210b266a05237268aac716004717685"
+    },
+    {
+      "bytes": 4044,
+      "path": "elliptic-curves/cas/replay_backend_calibrations_strict.py",
+      "sha256": "3d00efc39dc6daf2d104ace8ab92d4223c86d060dd3abc0755fdf9926d94c76f"
+    },
+    {
+      "bytes": 3899,
+      "path": "elliptic-curves/cas/replay_new_rank26_fast301.py",
+      "sha256": "4c2685c2a08460040b81fe86078169b547e4f1a2425d230fdf9d407f801bf4d2"
+    },
+    {
+      "bytes": 3671,
+      "path": "elliptic-curves/cas/replay_small_conductor_fast301.py",
+      "sha256": "1ea9172768268ea9f6ecfec6fc8cf5e74d715b3bc6c6ce765e48ab46bdd1ebf6"
+    },
+    {
+      "bytes": 1045,
+      "path": "elliptic-curves/cas/research_runtime/preloaded_prime_state.py",
+      "sha256": "584b340f730b12a6f4cd8f6b6e7f248c7bce5acfafb3b4d89ff4b43f737102ed"
+    },
+    {
+      "bytes": 829,
+      "path": "elliptic-curves/cas/research_runtime/rotated_observation_state.py",
+      "sha256": "3568529c9513db8fe56d8622ec7c7eae9dbedef4a160836a8db63aba58f2c9ab"
+    },
+    {
+      "bytes": 5393,
+      "path": "elliptic-curves/cas/search_new_rank26_fast301.py",
+      "sha256": "78203882ef26213c8fa6af0ccdee034655dfdaf3da0052531cc3b53558b3046d"
+    },
+    {
+      "bytes": 5530,
+      "path": "elliptic-curves/cas/search_small_conductor_fast301.py",
+      "sha256": "9565d8ada26cfa9f1985dfeecad7d7c408ae1ec294508f461db0d8a8418a491a"
+    },
+    {
+      "bytes": 3662,
+      "path": "elliptic-curves/cas/verify_fast_point_pipeline_bundle.py",
+      "sha256": "6ecb998d854315b3f4a1736671468845326c4e41b4d34545721fcb8919d7b7fa"
+    },
+    {
+      "bytes": 2803,
+      "path": "elliptic-curves/cas/verify_new_rank26_fast301.py",
+      "sha256": "e1afb3e3c158b0cceafc61bc7f4098af7c55cc647161fb8ee35aa9a8f49fe6ac"
+    },
+    {
+      "bytes": 2828,
+      "path": "elliptic-curves/cas/verify_small_conductor_fast301.py",
+      "sha256": "f999a8e904ac2fd9c51020efaebcac7d9f010bbfb67d3042d4d37db5ce064ee9"
+    },
+    {
+      "bytes": 9073,
+      "path": "elliptic-curves/notes/FAST_POINT_PIPELINE_AUDIT_2026-09-06.md",
+      "sha256": "3f7e14e6f40c97c617f5dd35732cae190848e41db73ce17e2dc928741d2ad171"
+    },
+    {
+      "bytes": 1226,
+      "path": "elliptic-curves/tests/test_pari_pointed_backend.py",
+      "sha256": "c4fa966363e3356efc32705258997d55e09c5dbe76dd597813c11cc9a2386db9"
+    },
+    {
+      "bytes": 1441,
+      "path": "elliptic-curves/tests/test_preloaded_prime_state.py",
+      "sha256": "958d611d516c66eacb5f6c40e333154303e394b1cec0dc4e67d0c787433fdb61"
+    },
+    {
+      "bytes": 632,
+      "path": "elliptic-curves/tests/test_retained_cloud_modl.py",
+      "sha256": "e82dbbe1398e9a8dcbb6194946449cd6a3b32125aa5e84a83e3ea7be03698a22"
+    },
+    {
+      "bytes": 1420,
+      "path": "elliptic-curves/tests/test_rotated_observation_state.py",
+      "sha256": "5f3ed2b2f78b01f5ae2e4de4658b6451dff5b6009d5339a565b2df3eaae5b38c"
+    },
+    {
+      "bytes": 490,
+      "path": "elliptic-curves/tests/test_strict_calibration_roster.py",
+      "sha256": "78e890dfdd44998dc002c5872a295d82f5007544d6c224e395267a7a9e80aabe"
+    }
+  ],
+  "inherited_exact_members": [
+    {
+      "bytes": 20864,
+      "path": "artifacts/generated-results/elliptic-curves/native11952_engine_comparison_v1.json",
+      "sha256": "21d0f07e6ac3f7c5f1112712005fe0fdc64df4a207a6c74fd49a2869e27d2aa3"
+    },
+    {
+      "bytes": 15826333,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/result.json",
+      "sha256": "316e48773bed55bf4c52cd9bea4c4a9c2db9bb6823020dbed52c870b63a16d97"
+    },
+    {
+      "bytes": 1705552,
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h4096-v1/07ca9/candidate-00/result.json",
+      "sha256": "76c31f6ffbaa735e694f9b304819691dd74cdc62c4097cfbcb5f4b70c79bc139"
+    },
+    {
+      "bytes": 428,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-00.json",
+      "sha256": "1500a4a184a864fe455693458650cab1f21ccd8c94a04d2d4af48dce32327434"
+    },
+    {
+      "bytes": 425,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-01.json",
+      "sha256": "9b160aa2fc287eab703ef7ddf05af32d6152060206c1002658fa960d2b26fa33"
+    },
+    {
+      "bytes": 422,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-02.json",
+      "sha256": "5cad034feeb664f69b671df5825de34cb42af6b3f7b3f9c1cfdaa0ee860dbd32"
+    },
+    {
+      "bytes": 426,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-03.json",
+      "sha256": "61c9a63e8ba536dbd31b04cc76c45caa2ebe181b6f86ff9017001a00bfe70fec"
+    },
+    {
+      "bytes": 428,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-04.json",
+      "sha256": "c90ec7195dff3b428b04d95f4b1061402b2dccc58dbb2394d03cc304b5d4fa08"
+    },
+    {
+      "bytes": 456,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-05.json",
+      "sha256": "25731584e2826665cdfda304f622de29382d855a215229a46f3bc9c85f3696e7"
+    },
+    {
+      "bytes": 453,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-06.json",
+      "sha256": "e48d9a9ce80d3cdb94cb4f4a4d90a4b8dc1f45e6683bea17b03b942caccf41e1"
+    },
+    {
+      "bytes": 452,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-07.json",
+      "sha256": "92705b7bb61b13ceedc14d94e13cdff113f910f7117af4d6262065aac4e4d406"
+    },
+    {
+      "bytes": 425,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-08.json",
+      "sha256": "7508bf9b550353605ff413a4c902ab6d6e6e179bf2ee7c60dae5f757c4af8bb1"
+    },
+    {
+      "bytes": 427,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-09.json",
+      "sha256": "61dc68905f823a43d7b7e653ef519eda786efe1befadd50c954b43ea5dee769e"
+    },
+    {
+      "bytes": 457,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-10.json",
+      "sha256": "5fb8c8e31d23d8650b01af883e99feceec7a5ea662f46a375d7730be2c1590be"
+    },
+    {
+      "bytes": 420,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-11.json",
+      "sha256": "506ec1f6acd333a70c26766380256e564daec3b5a9cc013e2a614128fe0433b9"
+    },
+    {
+      "bytes": 452,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-12.json",
+      "sha256": "e9a5d5fe75431999d4bd3e5b21563fc352d89820eee001df02a1763571a1c1e9"
+    },
+    {
+      "bytes": 422,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-13.json",
+      "sha256": "12d64b1e2521b038c6298d2b5768bd640637239c4467c26d006ad1a5f75ee205"
+    },
+    {
+      "bytes": 420,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-14.json",
+      "sha256": "6f985e7462d5520e5741c8d591c7a8c877422198dfb9194ab0e2706bec18f876"
+    },
+    {
+      "bytes": 421,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-15.json",
+      "sha256": "2c520cd6215d650c3bb7d018ab6b0e7e394f162139801db057ca741d681d9b72"
+    },
+    {
+      "bytes": 421,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-16.json",
+      "sha256": "ed74de692a47ba413404fd2e249399f029c3701f404fc3507aaf156d0643e5b9"
+    },
+    {
+      "bytes": 429,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-17.json",
+      "sha256": "b16076a1413f4604b43a716bfde8707f198b4faefea0c2f8d2cab07ec068704c"
+    },
+    {
+      "bytes": 453,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-18.json",
+      "sha256": "34bd0c54c59533954a4ccf94f5cb8fd5061806547b4771a79121a487de7de259"
+    },
+    {
+      "bytes": 422,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-19.json",
+      "sha256": "ee4c5a23bad4e6fdf7d0ec7f671bf885d7ccc348ad442167641c76d101dfaf06"
+    },
+    {
+      "bytes": 427,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-20.json",
+      "sha256": "56c68b20d512d44d372a00a5296b06579ea69ee6c432f5062f559d18dc979c3e"
+    },
+    {
+      "bytes": 419,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-21.json",
+      "sha256": "b7ac6996684a6d32553f53dca4af05327550efdcf4d543462c79dfcecc65c052"
+    },
+    {
+      "bytes": 459,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-22.json",
+      "sha256": "2f9ded76d4a06d294240dec528a17cffdb32d0f7043f2f0758cea4b9a758c0f0"
+    },
+    {
+      "bytes": 422,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-23.json",
+      "sha256": "5d07718c6442b7753f9ccc96754be53099631ad000ac062d131b11381f924e49"
+    },
+    {
+      "bytes": 453,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-24.json",
+      "sha256": "5ae116876117f72aefdfe19d655be4fa312a12a04c2428039af0a1827d503ec6"
+    },
+    {
+      "bytes": 452,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-25.json",
+      "sha256": "a4adf3553ca1d802cf8f82caeedb371df1923fcc24da735f7ea5da3ad17b0ca2"
+    },
+    {
+      "bytes": 426,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-26.json",
+      "sha256": "6b50da67387f49409064436473c5c171e8bddc60fcaa5dd41fa2a60789206466"
+    },
+    {
+      "bytes": 455,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-27.json",
+      "sha256": "1f3d17ee0977821312ffd6ca37d4bd74fea6708453ba600fdd7a9b0d5aeeee0b"
+    },
+    {
+      "bytes": 449,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-28.json",
+      "sha256": "d91087fc1cc369eee4d018a0c406acaecdb49c69a567b31d80c44dbeeff7ec8f"
+    },
+    {
+      "bytes": 417,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-29.json",
+      "sha256": "6944c64bd5fea1f3ee26919c20bceeacf1843bec001117a9d2d383a768cf4f34"
+    },
+    {
+      "bytes": 422,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-30.json",
+      "sha256": "d65b11b5d1f46bf378862ff807c9ddf2e248cfdc064437bfdc5e5ac4cce2e206"
+    },
+    {
+      "bytes": 450,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-31.json",
+      "sha256": "4948cf57599415f51f7ba0391d8e08e66ef6f93e3070e3a3f9fe6f766497e403"
+    },
+    {
+      "bytes": 485,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-32.json",
+      "sha256": "3e22050c14813475072387d85820a67bc7beaaa623493128e442746c3a13b5cd"
+    },
+    {
+      "bytes": 418,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-33.json",
+      "sha256": "3b25dab93caf8dfca3900adbf89950aca7e297481fe0ec98e65b7b6fc0e9c7fe"
+    },
+    {
+      "bytes": 415,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-34.json",
+      "sha256": "c10140a4c8f4b1644f8d5750c3c2bddc1a9063b6a81777655e03dd10cd6ae31a"
+    },
+    {
+      "bytes": 421,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-35.json",
+      "sha256": "46c3c445b55b28c0af9c54cd3cae7a23853384f8087e99533c366243aa33b72b"
+    },
+    {
+      "bytes": 415,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-36.json",
+      "sha256": "a23d564d5327dfe385b2624037fc5f0f2e0932edbb70eb49e82d6af8ea735e92"
+    },
+    {
+      "bytes": 419,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-37.json",
+      "sha256": "59da10e610d32953befb5adf5b7c33252d367343b60eb607d3bbca43b2b9ffa9"
+    },
+    {
+      "bytes": 448,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-38.json",
+      "sha256": "d9ef4fc71ef4fd2f707283d9c875b6c3f3a6376423621a804bfa25012c1fd5ba"
+    },
+    {
+      "bytes": 478,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-39.json",
+      "sha256": "af000c1d2df7fdc85cff1ed738249c9e98cd02bb7617f358fd1e4f035aa45bc2"
+    },
+    {
+      "bytes": 418,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-40.json",
+      "sha256": "dab8ce1533ed0afef7a198d2ee77e3342d342d53a40aba9b74952f67faa8c764"
+    },
+    {
+      "bytes": 477,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-41.json",
+      "sha256": "006099bac37ddf5646cc6a6c12da10acae2c0c1da2307cf70e99aac1f68bf637"
+    },
+    {
+      "bytes": 504,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-42.json",
+      "sha256": "0a1dc3d5050b74ac4845b6a50873110b6a75e872026c71645d9d44e492206228"
+    },
+    {
+      "bytes": 427,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-43.json",
+      "sha256": "5f44cff6d928ac5f1157cd8fafcac727ca9e44d7de3437c90649cd8b6f79fb00"
+    },
+    {
+      "bytes": 430,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-44.json",
+      "sha256": "264539456a3b0ade913f678cab1b766e8b207deede0d5a87dcc0b7aabe11ea62"
+    },
+    {
+      "bytes": 452,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-45.json",
+      "sha256": "0079ddf81f90223bb0e92f6c6e6fdc313ff640a6e7e6339b959629992ba757ec"
+    },
+    {
+      "bytes": 421,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-46.json",
+      "sha256": "3c5ab909b030f95d258758fb64f7defd25039af01886b1c52b4419c36b6bf2ad"
+    },
+    {
+      "bytes": 421,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-47.json",
+      "sha256": "00cc66a97a563d408666211b2d87e8eadcd7e509176d618236b48d4741aeee85"
+    },
+    {
+      "bytes": 422,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/chart-48.json",
+      "sha256": "97bccc1126562fe114535622f8795e94027d0fecb507f021d5dac55140b10610"
+    },
+    {
+      "bytes": 806,
+      "path": "artifacts/local/elliptic-curves/native11952-engine-comparison-v1/protocol.json",
+      "sha256": "9d8e67752587b0b27a5906cb483977d2e29d0fefe8c8c53e8ad66762931ff27a"
+    },
+    {
+      "bytes": 137705,
+      "path": "artifacts/local/elliptic-curves/native11952-pari-maps-v1/maps.json",
+      "sha256": "ee49e53581f97ab5d4a0ff871026987131016b8b13b7ef51d7f86c6e8077682a"
+    },
+    {
+      "bytes": 11471236,
+      "path": "artifacts/local/elliptic-curves/native11952-pari49-control-v1/candidate-00/result.json",
+      "sha256": "1a780424d4adf4ab2e9e7ff3d7781438ac1f136ef4c45acca32f9980dd8b3069"
+    },
+    {
+      "bytes": 16178009,
+      "path": "artifacts/local/elliptic-curves/new-rank26-fixed-tails-v1/candidate-00/result.json",
+      "sha256": "466abe493616bf96bbc7bf9308dbbc96b51534fd8a0e2c27f966b6d31191e947"
+    },
+    {
+      "bytes": 9430947,
+      "path": "artifacts/local/elliptic-curves/new-rank26-fixed-tails-v1/combined-point-cloud-only.json",
+      "sha256": "7f8cb5e853e2482cb0847fd9d5921c7d96bca5f0622df19ac7076faa4607fd2d"
+    },
+    {
+      "bytes": 101057,
+      "path": "artifacts/local/elliptic-curves/new-rank26-pari-maps-v1/maps.json",
+      "sha256": "6f921825d028fd4ac57ec70b31a323506c7c9d0ac533c838402ddef41debbdcc"
+    },
+    {
+      "bytes": 11840689,
+      "path": "artifacts/local/elliptic-curves/new-rank26-pari43-v1/candidate-00/result.json",
+      "sha256": "c30b8bdb39a3d041a5098acad585998508925f8e4b501296b061e6f61bfa6aa1"
+    },
+    {
+      "bytes": 2782459,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-f5-next12-v1/a1-fibration-05/candidate-00/result.json",
+      "sha256": "5c1ecc6a7ae5aac42545f452994c724c4abc16e9842060ec28308c03eef24a6a"
+    },
+    {
+      "bytes": 7795701,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-small-conductor-followup-v2/candidate-00/result.json",
+      "sha256": "527a19e7b0ab31436acaae1dcf587ae3d43df4c5ccd306380bfea79ad2182a52"
+    },
+    {
+      "bytes": 9593,
+      "path": "elliptic-curves/cas/alternate_quartic_covers.py",
+      "sha256": "598f7556333c9d8462f251d97a6d132e0bd672a11861f8c2f142fc4588abe9e5"
+    },
+    {
+      "bytes": 14235,
+      "path": "elliptic-curves/cas/analyze_icarm_7fff_zip_sequence.py",
+      "sha256": "2957bb20d4fbcde1adfedf29fb211d8f3aa584a37a5719694d13e9313a1e7ed5"
+    },
+    {
+      "bytes": 6443,
+      "path": "elliptic-curves/cas/audit_compact_r17_ambiguous.py",
+      "sha256": "2fcef5457ab8efd67fa6dd473949823653901b533c3862d3ba4d83fd4cd2fb01"
+    },
+    {
+      "bytes": 5841,
+      "path": "elliptic-curves/cas/audit_prospective_mw16_ambiguities.py",
+      "sha256": "5361dc615d2f8b05c2e74388ac7e25c89888f089b42a6eaa3fecd41e1479722c"
+    },
+    {
+      "bytes": 6798,
+      "path": "elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+      "sha256": "e96c49b6cd412a1f00f4e579aa39fb1f9b9b65036eada8381d7060c60d1325c5"
+    },
+    {
+      "bytes": 18239,
+      "path": "elliptic-curves/cas/build_elkies_2026_rank28_bad_place_ledger.py",
+      "sha256": "08222418ef223f787f83a9ea37bd3cc9ca4744e7d72b8b2d874da04dc7fd262d"
+    },
+    {
+      "bytes": 30238,
+      "path": "elliptic-curves/cas/build_elkies_2026_relative_2selmer_suite.py",
+      "sha256": "bf3b22cae0e429196101083f70862bf549189ac8cfa6ded402b95ccc55dbcf26"
+    },
+    {
+      "bytes": 13165,
+      "path": "elliptic-curves/cas/build_q12o5867_bnf_free_signature.py",
+      "sha256": "721f6c6f250fca9afdbc3034390558edaf90e515f146e66ec3eb780c689828b0"
+    },
+    {
+      "bytes": 8974,
+      "path": "elliptic-curves/cas/certify_compact_r17_candidates.py",
+      "sha256": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9"
+    },
+    {
+      "bytes": 1751,
+      "path": "elliptic-curves/cas/compact_atlas_specialization.py",
+      "sha256": "ea68110968e86cb0502a74a995c26054ff8e4a0da90c49bb2bdf0b753a759b14"
+    },
+    {
+      "bytes": 1925,
+      "path": "elliptic-curves/cas/compact_mw16_specialization.py",
+      "sha256": "f6aeab97b980bc6e9a5db71675d4f47fbf3ac15cac5f35f2ea310a77e2a8a7c0"
+    },
+    {
+      "bytes": 5572,
+      "path": "elliptic-curves/cas/compare_native11952_search_engines.py",
+      "sha256": "059903f3faef2f701ad94173d7a6ed9d947162b9b8f61a82c9249d353f5f35b4"
+    },
+    {
+      "bytes": 14246,
+      "path": "elliptic-curves/cas/ek_k3.py",
+      "sha256": "53b96064afee80c102bf149242754ed98afc85b5bf3c422429d1f23c9db68f0f"
+    },
+    {
+      "bytes": 21409,
+      "path": "elliptic-curves/cas/elliptic_candidate_record.py",
+      "sha256": "5b9f6f843d48e705253404a5583ef53966c72c7f229c68ef17c6b848f5e94af3"
+    },
+    {
+      "bytes": 14700,
+      "path": "elliptic-curves/cas/fermigier_mestre.py",
+      "sha256": "6932c04fa699683ec112f25801adaa74ccb5e16dfa789b28ad56abf720c51090"
+    },
+    {
+      "bytes": 15983,
+      "path": "elliptic-curves/cas/half_lattice_pointed_sieve.py",
+      "sha256": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4"
+    },
+    {
+      "bytes": 8101,
+      "path": "elliptic-curves/cas/mod2_reduction_independence.py",
+      "sha256": "c5963952d1a9089416479671b788b6437dbba26591d796646022f4e9dddd0c70"
+    },
+    {
+      "bytes": 10228,
+      "path": "elliptic-curves/cas/mod_l_reduction_independence.py",
+      "sha256": "93cdef9eb9053987d0aa85abff2d6e1d487caa827b43a7c00d0b8a43395063f0"
+    },
+    {
+      "bytes": 5787,
+      "path": "elliptic-curves/cas/package_recorded_mod2_audit.py",
+      "sha256": "aac478e8abe4221a4cbf38c2d4ae52866bb61c9c3249b7572da45846f1a7e8df"
+    },
+    {
+      "bytes": 6409,
+      "path": "elliptic-curves/cas/pari_bridge.py",
+      "sha256": "d8c40e3c1b0f9eeb78e2f4b01aa2f3d5f793bfb35956c5846b2312da90132e45"
+    },
+    {
+      "bytes": 20080,
+      "path": "elliptic-curves/cas/pointed_quartic_search.py",
+      "sha256": "01c40a10cbe31f4439c4f2dacf7e2e5831f8bd6b83079933c9d506b6a25d1ff9"
+    },
+    {
+      "bytes": 7157,
+      "path": "elliptic-curves/cas/pointed_quartic_sieve.cpp",
+      "sha256": "7a015c85e54e14f16848626b154236132e34c0e42315242959a0be59e2de97a4"
+    },
+    {
+      "bytes": 9767,
+      "path": "elliptic-curves/cas/production_search_gates.py",
+      "sha256": "4770ce8930623f5b5dcb631b8fc9dc1c5a1fd8f7862f557d943f8b8fb375e337"
+    },
+    {
+      "bytes": 207,
+      "path": "elliptic-curves/cas/research_runtime/__init__.py",
+      "sha256": "fcf27db31ec58866898e7e014861f8a566dd5f65c276f205e99ff64bd793a45e"
+    },
+    {
+      "bytes": 8430,
+      "path": "elliptic-curves/cas/research_runtime/arithmetic.py",
+      "sha256": "f304317492824cf149c88b5814e68cdd0bffb0542a3d8db7bb4d9f3ec988802b"
+    },
+    {
+      "bytes": 3191,
+      "path": "elliptic-curves/cas/research_runtime/binary.py",
+      "sha256": "9956f4b5236d8ad2260018182eebfa18bcd8ced7fdc92ffa6023ad9da7d9dd99"
+    },
+    {
+      "bytes": 4074,
+      "path": "elliptic-curves/cas/research_runtime/cached_observation_state.py",
+      "sha256": "c1480925932b0cf86c0392cb796e9f83d278e84fc0a769ad031e93a8a68d43a7"
+    },
+    {
+      "bytes": 7407,
+      "path": "elliptic-curves/cas/research_runtime/chart_policy.py",
+      "sha256": "0a9212fdaaa3a6abcd09034c003eed0d48bdb258d3161bcee6685607f87b21ad"
+    },
+    {
+      "bytes": 9303,
+      "path": "elliptic-curves/cas/research_runtime/cvp.py",
+      "sha256": "83d9d87e9f465acffb48c3a5400ded28d10382f7c690492fb8dc998775767c8a"
+    },
+    {
+      "bytes": 3714,
+      "path": "elliptic-curves/cas/research_runtime/deep_centres.py",
+      "sha256": "4dd57a7e5a254eba1f7cffed9dd62838cf7607b54a0ae29c162b4cc3d282799a"
+    },
+    {
+      "bytes": 2626,
+      "path": "elliptic-curves/cas/research_runtime/finite_fields.py",
+      "sha256": "24be713a49328db4eb8409e5023fafff3dfb638e4cb56151444abd631eb055ef"
+    },
+    {
+      "bytes": 9211,
+      "path": "elliptic-curves/cas/research_runtime/finite_reduction.py",
+      "sha256": "467609d4a1003127a9dcfb5ff3cd911d3748f5c5c5ff68a43f09db0de9b69992"
+    },
+    {
+      "bytes": 3463,
+      "path": "elliptic-curves/cas/research_runtime/fisher.py",
+      "sha256": "fb8cf017ade457f4680ba8aa7cda0e57dab2f1fba6ab3fcfb99bb4b1bf256a5c"
+    },
+    {
+      "bytes": 10982,
+      "path": "elliptic-curves/cas/research_runtime/function_field_witness.py",
+      "sha256": "f952ccde7737327d8a30d09917b91f6d273074661eea86ab9bfee620998e9b90"
+    },
+    {
+      "bytes": 4543,
+      "path": "elliptic-curves/cas/research_runtime/local_kummer.py",
+      "sha256": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e"
+    },
+    {
+      "bytes": 3015,
+      "path": "elliptic-curves/cas/research_runtime/memory_store.py",
+      "sha256": "0ce81817fc94949864b2f653e9ece207d666d61fbdabeb56f52e044bb83dd873"
+    },
+    {
+      "bytes": 10208,
+      "path": "elliptic-curves/cas/research_runtime/mw_state.py",
+      "sha256": "e53c24a786afe1096a3bc90eff94396b1b3b6b1fd3ec52c24e51c69622b4596d"
+    },
+    {
+      "bytes": 5613,
+      "path": "elliptic-curves/cas/research_runtime/pari_context.py",
+      "sha256": "20db26886dc17baf4ae7ab7c43d669bc53a07c953a8e99b94435fe7846e8acaa"
+    },
+    {
+      "bytes": 2333,
+      "path": "elliptic-curves/cas/research_runtime/pointed_orbit_compression.py",
+      "sha256": "23f69a9b9aedc040c0a2d97e2b1f722c00a97a1a26702b04a94fba8d1ed3914c"
+    },
+    {
+      "bytes": 3967,
+      "path": "elliptic-curves/cas/research_runtime/pointed_worker.py",
+      "sha256": "7126cac4ed8bbfd7015476670b61fc317649700436b92e072a21d1bac4695ddf"
+    },
+    {
+      "bytes": 9660,
+      "path": "elliptic-curves/cas/research_runtime/pruning.py",
+      "sha256": "9f5748f7a6fe0d06befab7d596b7469b2180331416ac2d039fd7f636ed91b7c6"
+    },
+    {
+      "bytes": 1863,
+      "path": "elliptic-curves/cas/research_runtime/quotient_only_reduction.py",
+      "sha256": "b47036dd2d5882a8bdccfb9095fb11c543ddc8e209e487d6c7afdf8a8d06986a"
+    },
+    {
+      "bytes": 9450,
+      "path": "elliptic-curves/cas/research_runtime/regulator.py",
+      "sha256": "aa4bdc99095199936417058f46ee2fd0d48acd497676f46c5d0456e7865be970"
+    },
+    {
+      "bytes": 25277,
+      "path": "elliptic-curves/cas/research_runtime/sage_arithmetic.py",
+      "sha256": "105fc55cc851c0b60d1132e3f0afbac8c872344d7d17c3d2610c1b24390f4dd1"
+    },
+    {
+      "bytes": 28373,
+      "path": "elliptic-curves/cas/research_runtime/sage_subspace.py",
+      "sha256": "86fd5f87fa773bb817e3f19e3847e9188a7071b41bc3d8adb81b21c804fb6cf5"
+    },
+    {
+      "bytes": 5172,
+      "path": "elliptic-curves/cas/research_runtime/sage_surface.py",
+      "sha256": "43942f606c97580a324f4e22d6c771eb5ca8264953ceca8e29aced7afffd0418"
+    },
+    {
+      "bytes": 3309,
+      "path": "elliptic-curves/cas/research_runtime/search_state.py",
+      "sha256": "598a2177fa1cdd5b45c801c09adcc4ac51bd2a87152b7982ea70e78585f8671c"
+    },
+    {
+      "bytes": 4351,
+      "path": "elliptic-curves/cas/research_runtime/section_gate.py",
+      "sha256": "df5fd619731f2bcc08df2c24806fa479b68879792ca84a5a972ca0cf122ae2ed"
+    },
+    {
+      "bytes": 4039,
+      "path": "elliptic-curves/cas/research_runtime/simon.py",
+      "sha256": "08d7ef9a7443f8268aee0b0799e290494e79a1532828c73345432259887e644e"
+    },
+    {
+      "bytes": 8233,
+      "path": "elliptic-curves/cas/research_runtime/store.py",
+      "sha256": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965"
+    },
+    {
+      "bytes": 9744,
+      "path": "elliptic-curves/cas/research_runtime/subspace.py",
+      "sha256": "2ce4a9f7d688a2a4581d844dd3663fb7fae63904d167caecef4af6bc6cfd2534"
+    },
+    {
+      "bytes": 20249,
+      "path": "elliptic-curves/cas/research_runtime/supervisor.py",
+      "sha256": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233"
+    },
+    {
+      "bytes": 4954,
+      "path": "elliptic-curves/cas/research_runtime/surface_repository.py",
+      "sha256": "3d3d9f28b2605c248c021a4ed8490d815cd16ac233923ece899ff940ec3e16af"
+    },
+    {
+      "bytes": 5670,
+      "path": "elliptic-curves/cas/research_runtime/toric_surface.py",
+      "sha256": "b8e1d5329c32402b693b27e61887c30eb6cf1606043a5f1048ffc6dd7d6606ab"
+    },
+    {
+      "bytes": 2717,
+      "path": "elliptic-curves/cas/research_runtime/witnesses.py",
+      "sha256": "e6ea79fabb7d16e179d5ea347a2006e19193f910a3c6d56940c73ff8dbce2619"
+    },
+    {
+      "bytes": 51705,
+      "path": "elliptic-curves/cas/run_elkies_2026_relative_2selmer_checkpointed.py",
+      "sha256": "1e674eb42122784c580777b782ffee1c737c1bc9788ba00b47a09777e26b1477"
+    },
+    {
+      "bytes": 27525,
+      "path": "elliptic-curves/cas/run_elkies_2026_relative_2selmer_open.py",
+      "sha256": "158bd9c13fb583d5ffa4f3363063703b7e0014c996ccc8bdcd273fbdcf08e944"
+    },
+    {
+      "bytes": 13126,
+      "path": "elliptic-curves/cas/run_fermigier_rank20_auxiliary_fingerprints.py",
+      "sha256": "b8bab575cc8109a9f64256b77b0e340d87fe741718fb46f0f0ecff80c3857d17"
+    },
+    {
+      "bytes": 15562,
+      "path": "elliptic-curves/cas/run_fermigier_rank20_pari_descent.py",
+      "sha256": "ac7759f2dc16816251c791b60df7e4e6e41473656660c7e253141d576f536f5a"
+    },
+    {
+      "bytes": 14648,
+      "path": "elliptic-curves/cas/search_extra_points.py",
+      "sha256": "8719a8868f60a055ecfc2c68e95b253386a0f5e856c2686749bd8d8e1f83775e"
+    },
+    {
+      "bytes": 10390,
+      "path": "elliptic-curves/cas/search_observability.py",
+      "sha256": "b6189a0cee9805336609f413b2dd8ccb38263c2d594131aabf3b0555a9c04b58"
+    },
+    {
+      "bytes": 14716,
+      "path": "elliptic-curves/cas/verify_icarm_curve394_rank21.py",
+      "sha256": "3868a6e6b5fa6134949d92a4f1aaa526cd42f50335109f02aefab58bb52968b0"
+    },
+    {
+      "bytes": 25600,
+      "path": "elliptic-curves/ecsearch/q12o5867_specialization.py",
+      "sha256": "a9911a9fd0a295f9e399436006d6d1f7bcd204778b577a4fead5def04df5dfa7"
+    }
+  ],
+  "required_base_archives": [
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/compact_r17_wide_evidence_v1.zip",
+      "archive_sha256": "d54b2a494a8bd3841700379aa28ef32366730bbc1bb208d5e03285786ff8a01a",
+      "manifest": "artifacts/generated-results/elliptic-curves/compact_r17_wide_evidence_v1.json",
+      "manifest_sha256": "c1f1f5262df6b9ec0218d38fd553e1d3fd467b6f5362ce8462279f34a77b238d"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/new_rank26_followup_evidence_v1.zip",
+      "archive_sha256": "202f421f4fbadb5d5ba0c5911883214c2ee9269ca79844e4bf1795fae0b77594",
+      "manifest": "artifacts/generated-results/elliptic-curves/new_rank26_followup_evidence_v1.json",
+      "manifest_sha256": "247675cc39e6816eab66d273b4375b140af2a73a1c41e7418e47c72edf2de030"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/exact_parity_coordinate_evidence_v1.zip",
+      "archive_sha256": "f6caba4eef5b22e0eedf242b47cba7c99a16e4e2cba9aae0102d1e92ce4f4a46",
+      "manifest": "artifacts/generated-results/elliptic-curves/exact_parity_coordinate_evidence_v1.json",
+      "manifest_sha256": "e936d77fa42c0358cddb5b6407e9b99b4922647b63907f80cb8b3a7486cc549c"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/small_conductor_followup_evidence_v1.zip",
+      "archive_sha256": "b355fd65496388e4e3b9a4c2bbce1b9af7f5573ee9a9efd64ceed1668028935f",
+      "manifest": "artifacts/generated-results/elliptic-curves/small_conductor_followup_evidence_v1.json",
+      "manifest_sha256": "43f27e5cf5d32122d6d19778bba34cb2d64f1b6e975bd70ed23f220ceba127a3"
+    }
+  ],
+  "schema": "elliptic-curves.fast-point-pipeline-evidence.v1"
+}

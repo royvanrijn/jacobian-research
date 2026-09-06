@@ -1,0 +1,87 @@
+{
+  "archive_sha256": "9324c379c307218d540c5ea990be4a3badc949a4bfc0152643b60ac8dcb4fcf0",
+  "claim_boundary": "Standalone exact five-curve proof supplement requiring no base archive. Replays global minimality, exact transports and26-point independence for each curve, mutual rational nonisomorphism and absence from the embedded593-equation catalogue and549 prior equations, plus exact Sage-export agreement and execution. The full192 search history, score selection, trace tables, chronology and other curve proofs are not replayed by this small bundle. No new point search, exact rank, conductor, full saturation, record or universal novelty claim.",
+  "curves_checked": 5,
+  "independent_point_witnesses": 130,
+  "ledger": {
+    "rows": [
+      {
+        "name": "models",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-five-rank26-portable-v1/workspace/elliptic-curves/cas/export_compact192_rank26_models.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-five-rank26-portable-v1/verification/models.log",
+          "log_sha256": "f5ca220accda8129c264138edc571b2fd2acdfdef601645f14c13767efc73029",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 31424512,
+          "pid": 554153,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "51687886",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 1.0063169780187309,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "sage-export",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-five-rank26-portable-v1/workspace/artifacts/generated-results/elliptic-curves/new_compact192_rank26_curves.sage"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/compact192-five-rank26-portable-v1/verification/sage-export.log",
+          "log_sha256": "26d666900abd4beb6c2986a4f880807062f1d4e10f3ca2759fd53506e421072a",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 227213312,
+          "pid": 554191,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "51687990",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.5936537209781818,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      }
+    ],
+    "status": "PASS"
+  },
+  "logical_stages": 2,
+  "schema": "elliptic-curves.compact192-five-rank26-portable-replay.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact192_five_rank26_evidence_v1.json": "a189e54ae79bca52ce0481af8f26f5913fa16f79080c4e614bfaa8a5ac408cdc",
+    "artifacts/local/elliptic-curves/compact192-five-rank26-portable-v1/verification/ledger.json": "9850e966cad3c54cf96d803d6d670470caac67da446f6a98661fd4cf1a71a5e8",
+    "artifacts/local/elliptic-curves/compact192-five-rank26-portable-v1/verification/protocol.json": "af8ccb9c68d13eaa6e26b8619df89adde8b9c2a8f8a26d1906892d035b09788a",
+    "elliptic-curves/cas/verify_compact192_five_rank26.py": "a65f7786bfdc43e210a233796c3a2622d6ca366a1fb16e2ca85a17e9a3565023"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,29 @@
+{
+  "adaptive_attempted_charts": 301,
+  "adaptive_completed_boxes": 301,
+  "adaptive_declared_charts": 301,
+  "claim_boundary": "Recorded completed box coverage trusts the pinned PARI executions. Every attempted adaptive history replays; a target stop can leave part of the301-chart roster unsearched. Full retained-cloud finite quotient certificates are lower bounds only; no exact rank, saturation or point-absence conclusion.",
+  "cloud_verification_ledger_sha256": "9cb20c33f3233c75d6bb69138d1da5c64c891721f35b12767145ff61919cd844",
+  "height": 125000,
+  "initial_charts": 49,
+  "mod2_lower_bound": 27,
+  "odd_modulus_lower_bounds": {
+    "3": 27,
+    "5": 27
+  },
+  "point_certificates": {
+    "artifacts/generated-results/elliptic-curves/retention_rank27_11952_113_all_retained_mod2_v1.json": "4eed5030364aeec99e443e2255183af3ebb21e11721bc4ee5feff38b5d7b0e52",
+    "artifacts/generated-results/elliptic-curves/retention_rank27_11952_113_all_retained_modl_v1.json": "783b75f0bd50c1a58dca719d2abcf4db5dbedf706e62b503d5ea036285232c30"
+  },
+  "retained_point_count": 1928,
+  "schema": "elliptic-curves.retention-rank27-adaptive-coverage.v1",
+  "sources": {
+    "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/maps.json": "846bbf651c450d3d4b18174e53a8f315a2ff7d3694a6666d366718c7c8d5c76e",
+    "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/protocol.json": "6427d4bc219bcf90f101cdb469e7c69b704bd0e15386f985a69a5c955057cb44",
+    "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/replay.supervisor.json": "7bda787b083b5020cd91696b652a90d99a6651183f28ee54d8504556e78853ea",
+    "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/result.json": "a19747d44d8c827bbb53581ea14b85a3feee0baf3e56c9a920c3ed105d8eef4a",
+    "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/worker.supervisor.json": "8c82c4ea7536df1f5dac2b55b4b540b04caffeeb539c3649d21a8d1f7c0352b1",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/11952-113/result.json": "eccd538a34b6156627a2bc75d9686cd7f2199caef1e4ad30ff8abf56a01df5d2",
+    "elliptic-curves/cas/audit_retention_rank27_followup.py": "30969907d13fc4a49bc6c2674791b83b5b06bb9625543f336819137594fa481a"
+  }
+}

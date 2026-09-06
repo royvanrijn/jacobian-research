@@ -1,23 +1,57 @@
 # Elliptic curves over `Q` — ACTIVE
 
-The [new small-conductor curve](notes/NEW_SMALL_CONDUCTOR_CURVE_2026-09-05.md)
-has 22 independently certified points and an exact 76-digit conductor. It
-would be third among rank-at-least-22 entries with recorded conductors in
-the pinned 586-curve ICARM catalogue; four such entries lack conductors.
-The completed searches now give thirty-six distinct curves with certified
-lower bounds 22–25, including three at least 25, and no match in that snapshot.
-The [consolidated JSON](../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v2.json)
-contains all equations, points and rank certificates; an
-[equation CSV](../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v2.csv) is also available.
-The [machinery audit](notes/ELLIPTIC_BREAKTHROUGH_AUDIT_2026-09-05.md)
-records the selection and checkpoint fixes; new rank-at-least-28/32 targets
-and exact ranks remain open. Catalogue absence does not prove universal novelty.
-The [retained-point audit](notes/RECORDED_POINT_ADMISSION_AUDIT_2026-09-05.md)
-checks 202 transcripts and recovers a missed rank-26 certificate on a known
-control at prime 257; the new curves’ lower bounds remain unchanged.
-The [cross-family incidence proof](notes/COMPACT_CROSS_FAMILY_INCIDENCE_2026-09-05.md)
-checks all 384 pairs of the first 32 curves and twelve family presentations; it
-finds no additional generic directions beyond the original families.
+[Five compact192 curves](notes/COMPACT192_FIVE_RANK26_CURVES_2026-09-06.md) now have proved minimal models and rank at least26, with an executable five-curve Sage export and a standalone proof bundle passing both isolated checks. All are unmatched in the pinned catalogue; the [V13 inventory](../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v13.json) now contains185 curves, and all185 point proofs and the equationCSV replay.
+
+The [single own-subgroup follow-up](notes/COMPACT192_SPECIALIZED_FOLLOWUP_2026-09-06.md) completes all245 boxes on the five newly added26-point curves. Their742 retained point witnesses still certify26 modulo2,3,5; the trial certifies no stronger rank lower bound.
+
+The [192-curve compact trial](notes/COMPACT192_UNSEARCHED_TRIAL_2026-09-06.md) tests the strongest remaining unsearched candidates in the productive H4096 population. All8640 initial point boxes and local exact proofs pass, adding84 curves to the inventory; the585-stage isolated replay is running. The [complete factor-of-13 classification](notes/R17_INTEGRAL_13_PARAMETER_CHARTS_2026-09-06.md) closes the deeper-scaling and hidden-good-trace questions at13. The [six resultant audits](notes/R17_SCALING_PRIME_SUPPORT_2026-09-06.md) leave other possible scaling primes unresolved, with no new factorization or parameter search.
+
+The [skew parameter experiment](notes/SKEW_PARAMETER_BOXES_2026-09-06.md) completes 368 point boxes without inventory gain. The [endpoint audit](notes/COMPACT_ENDPOINT_AUDIT_2026-09-06.md) identifies 21 omitted nonsingular curves; the subsequent [exact span proof](notes/ENDPOINT_SECTION_SPANS_2026-09-06.md) establishes their generic-section span ranks and five proper known-subgroup indices. The 54 audit and three section-span isolated replay stages pass. The [endpoint point trial](notes/ENDPOINT_POINT_TRIAL_2026-09-06.md) completes all 252 boxes, with strongest bounds 19 and no inventory gain; [all 66 isolated replay stages pass](../artifacts/generated-results/elliptic-curves/endpoint_point_trial_portable_replay_v1.json). The six rank-27 search subgroups already have [proved saturation at 2, 3 and 5](notes/NEW27_SMALL_PRIME_SATURATION_2026-09-06.md).
+
+The exactly replayed inventory contains **185 distinct curves**, including
+**six with rank at least27**, unmatched in the pinned593-equation catalogue.
+The [earlier rank25 discovery](notes/LOCAL_FEATURE_RANK25_2026-09-06.md),
+[higher-parameter rank26 curve](notes/HIGHER_PARAMETER_RANK26_2026-09-06.md)
+and [first new MW16 rank27 proof](notes/NEW_MW16_RANK27_2026-09-06.md) link
+the equations and certificates. Catalogue absence does not establish
+universal novelty. New rank-at-least28/32 curves and exact ranks remain open.
+
+The [paired score audit](notes/PAIRED_PRODUCT_SCORE_2026-09-06.md) and
+[product-first retention experiment](notes/PRODUCT_FIRST_RETENTION_2026-09-06.md)
+complete their fixed cohorts without a high-rank addition. The
+[six masked controls](notes/HIGHER_R17_MASKED_CONTROLS_2026-09-06.md) recover
+known directions through other representatives; they do not calibrate all
+exceptional directions. The [million-height follow-up](notes/HIGHER26_MILLION_HEIGHT_2026-09-06.md)
+completes49 larger boxes, with its1233-point union still certifying26.
+
+The [specialized parity trial](notes/SPECIALIZED_PARITY_CONTROL_2026-09-06.md)
+recovers the known29th direction at125000, but all294 charts on our six
+rank27 curves complete without gain. All24 isolated checks pass.
+
+The [complete JSON](../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v12.json)
+and [equation CSV](../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v12.csv)
+contain the equations and point certificates. The
+[small-conductor curve](notes/NEW_SMALL_CONDUCTOR_CURVE_2026-09-05.md) retains
+rank at least 22 and an exact 76-digit conductor, third among the relevant
+recorded conductors in that snapshot; four relevant entries lack conductors.
+
+The [extended-prime experiment](notes/EXTENDED_PRIME_RANK27_DISCOVERIES_2026-09-06.md)
+compares two fixed selectors on 23 distinct curves. All 1,037 initial boxes
+and both 301-box rank-27 follow-ups complete and replay. The
+[fast pipeline audit](notes/FAST_POINT_PIPELINE_AUDIT_2026-09-06.md) records the
+calibrated PARI backend and admission improvements. The
+[exact parity audit](notes/EXACT_PARITY_AND_COORDINATE_AUDIT_2026-09-06.md)
+certifies all 270 maximum classes in the six displayed lattices.
+
+Earlier [machinery corrections](notes/ELLIPTIC_BREAKTHROUGH_AUDIT_2026-09-05.md)
+and [retained-point checks](notes/RECORDED_POINT_ADMISSION_AUDIT_2026-09-05.md)
+remain available. The [current cross-family audit](notes/LOCAL_FEATURE_RANK25_2026-09-06.md)
+covers all101 curves against twelve presentations:1,212 exact incidence checks.
+The additional presentations are proved duplicates and supply no new generic
+directions. The [two new27 follow-ups](notes/RETENTION_RANK27_FOLLOWUPS_2026-09-06.md)
+complete602 further boxes; both full point clouds still certify27 modulo2,3,5.
+The [seventy-curve proof](notes/INVENTORY70_CROSS_FAMILY_INCIDENCE_2026-09-06.md)
+retains its separate six-stage isolated replay.
 
 The [compact six-family atlas](notes/COMPACT_SIX_R17_ATLAS_2026-09-05.md)
 reduces the compiled R17 equations to 141–169 coefficient bits and exactly
@@ -50,10 +84,11 @@ Mordell--Weil rank, low conductor, and the elliptic-K3 constructions behind
 them. `../MATH_STATUS.json` is the sole status authority; this page is the
 active navigation map.
 
-All active half-lattice searches now use the rank-agnostic
-[`PointedQuarticSearch`](notes/POINTED_QUARTIC_SEARCH.md): MW16, MW17, MW18,
-curve-specific and zero-gain routes share one GMP sieve. The migration
-replays all 1,034 calibrated control boxes and all 55 quotient directions.
+Recent frozen point experiments use the shared
+[`PointedQuarticSearch`](notes/POINTED_QUARTIC_SEARCH.md) chart validation
+with the [calibrated PARI backend](notes/FAST_POINT_PIPELINE_AUDIT_2026-09-06.md).
+The earlier GMP migration retains its replay of 1,034 control boxes and
+55 quotient directions.
 
 The [2026-09-04 external audit](notes/EXTERNAL_AUDIT_2026-09-04.md) records
 mathematical corrections, bounded certificate replays, and remaining proof
@@ -345,7 +380,7 @@ Use [`REPRODUCE.md`](REPRODUCE.md) and the exact checker paths recorded in `../M
 <!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 8a4c932153e2bb2d -->
 <!-- status-consumer: EC-K3-R17-NORM12-ICARM-573-REFRESH a93ce35de34fde21 -->
 <!-- status-consumer: EC-CF-NEARMISS-DESCENT-INPUTS 25c9f212e5162216 -->
-<!-- status-consumer: OP-EC-NEXT 80385bab71bd299c -->
+<!-- status-consumer: OP-EC-NEXT 243bf3af7687254b -->
 
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-SELMER-PANEL 539bd8ec36b36c44 -->
 

@@ -1,0 +1,258 @@
+{
+  "additional_csv_check": "PASS",
+  "claim_boundary": "The original35-stage run had34 passes and an inventory timeout. A separately versioned isolated replay now verifies all47 inventory proofs and CSV with the tested explicit memory finite cache. All original outcomes remain retained; no failed attempt is relabelled and no new point search is claimed.",
+  "log": "MEMORY REPLAY V4 new-20260906-40 rank >= 27\nMEMORY REPLAY V4 new-20260906-41 rank >= 27\nMEMORY REPLAY V4 new-20260906-42 rank >= 26\nMEMORY REPLAY V4 new-20260905-37 rank >= 26\nMEMORY REPLAY V4 new-20260905-38 rank >= 25\nMEMORY REPLAY V4 new-20260905-39 rank >= 25\nMEMORY REPLAY V4 new-20260905-01 rank >= 25\nMEMORY REPLAY V4 new-20260906-43 rank >= 25\nMEMORY REPLAY V4 new-20260906-44 rank >= 25\nMEMORY REPLAY V4 new-20260905-02 rank >= 25\nMEMORY REPLAY V4 new-20260905-03 rank >= 25\nMEMORY REPLAY V4 new-20260905-04 rank >= 24\nMEMORY REPLAY V4 new-20260906-45 rank >= 24\nMEMORY REPLAY V4 new-20260906-46 rank >= 24\nMEMORY REPLAY V4 new-20260905-05 rank >= 24\nMEMORY REPLAY V4 new-20260905-33 rank >= 24\nMEMORY REPLAY V4 new-20260905-06 rank >= 24\nMEMORY REPLAY V4 new-20260905-07 rank >= 24\nMEMORY REPLAY V4 new-20260905-08 rank >= 24\nMEMORY REPLAY V4 new-20260905-09 rank >= 24\nMEMORY REPLAY V4 new-20260905-10 rank >= 24\nMEMORY REPLAY V4 new-20260905-11 rank >= 23\nMEMORY REPLAY V4 new-20260905-12 rank >= 23\nMEMORY REPLAY V4 new-20260905-13 rank >= 23\nMEMORY REPLAY V4 new-20260905-34 rank >= 23\nMEMORY REPLAY V4 new-20260905-14 rank >= 23\nMEMORY REPLAY V4 new-20260905-15 rank >= 23\nMEMORY REPLAY V4 new-20260905-16 rank >= 23\nMEMORY REPLAY V4 new-20260905-17 rank >= 23\nMEMORY REPLAY V4 new-20260905-18 rank >= 23\nMEMORY REPLAY V4 new-20260905-19 rank >= 23\nMEMORY REPLAY V4 new-20260905-20 rank >= 23\nMEMORY REPLAY V4 new-20260905-21 rank >= 22\nMEMORY REPLAY V4 new-20260906-47 rank >= 22\nMEMORY REPLAY V4 new-20260905-22 rank >= 22\nMEMORY REPLAY V4 new-20260905-23 rank >= 22\nMEMORY REPLAY V4 new-20260905-24 rank >= 22\nMEMORY REPLAY V4 new-20260905-25 rank >= 22\nMEMORY REPLAY V4 new-20260905-26 rank >= 22\nMEMORY REPLAY V4 new-20260905-27 rank >= 22\nMEMORY REPLAY V4 new-20260905-35 rank >= 22\nMEMORY REPLAY V4 new-20260905-36 rank >= 22\nMEMORY REPLAY V4 new-20260905-28 rank >= 22\nMEMORY REPLAY V4 new-20260905-29 rank >= 22\nMEMORY REPLAY V4 new-20260905-30 rank >= 22\nMEMORY REPLAY V4 new-20260905-31 rank >= 22\nMEMORY REPLAY V4 new-20260905-32 rank >= 22\nEXACT MEMORY INVENTORY PASS 47 AND CSV\n",
+  "original_passed_topics": 34,
+  "protocol": {
+    "delta_manifest_sha256": "b9d1ce027e5c6eaa76da1f78fb1391cd3aee858adfd5fb514a7ca9f002c7485d",
+    "prior_replay_sha256": "e7687695245184c6ef5c3215ce71eda5e8837c5830dbdf62baba3af648c29896",
+    "rss_bytes": 1073741824,
+    "scope": "One new isolated47-curve inventory/CSV replay using explicit MemoryFactStore. Carry the prior34 passed isolated topics by their immutable transcripts; do not claim those topics were repeated.",
+    "verifier_sha256": "0d79d88e0234ab1e8332385b09bc2f6a46cbbb59a90515ed55ea6409ef3cf4e8",
+    "wall_seconds": 180
+  },
+  "replacement_inventory_topic": "PASS",
+  "replacement_replay": {
+    "claim_boundary": "Same original V4 extraction, source bindings, independent finite point certificates, catalogue exclusion and distinctness checks, with explicit MemoryFactStore for ephemeral exact finite computations. The original frozen exporter and its timed-out isolated attempt remain unchanged.",
+    "csv_checked": true,
+    "curves_checked": 47,
+    "rank_lower_bounds": [
+      {
+        "id": "new-20260906-40",
+        "rank_lower_bound": 27
+      },
+      {
+        "id": "new-20260906-41",
+        "rank_lower_bound": 27
+      },
+      {
+        "id": "new-20260906-42",
+        "rank_lower_bound": 26
+      },
+      {
+        "id": "new-20260905-37",
+        "rank_lower_bound": 26
+      },
+      {
+        "id": "new-20260905-38",
+        "rank_lower_bound": 25
+      },
+      {
+        "id": "new-20260905-39",
+        "rank_lower_bound": 25
+      },
+      {
+        "id": "new-20260905-01",
+        "rank_lower_bound": 25
+      },
+      {
+        "id": "new-20260906-43",
+        "rank_lower_bound": 25
+      },
+      {
+        "id": "new-20260906-44",
+        "rank_lower_bound": 25
+      },
+      {
+        "id": "new-20260905-02",
+        "rank_lower_bound": 25
+      },
+      {
+        "id": "new-20260905-03",
+        "rank_lower_bound": 25
+      },
+      {
+        "id": "new-20260905-04",
+        "rank_lower_bound": 24
+      },
+      {
+        "id": "new-20260906-45",
+        "rank_lower_bound": 24
+      },
+      {
+        "id": "new-20260906-46",
+        "rank_lower_bound": 24
+      },
+      {
+        "id": "new-20260905-05",
+        "rank_lower_bound": 24
+      },
+      {
+        "id": "new-20260905-33",
+        "rank_lower_bound": 24
+      },
+      {
+        "id": "new-20260905-06",
+        "rank_lower_bound": 24
+      },
+      {
+        "id": "new-20260905-07",
+        "rank_lower_bound": 24
+      },
+      {
+        "id": "new-20260905-08",
+        "rank_lower_bound": 24
+      },
+      {
+        "id": "new-20260905-09",
+        "rank_lower_bound": 24
+      },
+      {
+        "id": "new-20260905-10",
+        "rank_lower_bound": 24
+      },
+      {
+        "id": "new-20260905-11",
+        "rank_lower_bound": 23
+      },
+      {
+        "id": "new-20260905-12",
+        "rank_lower_bound": 23
+      },
+      {
+        "id": "new-20260905-13",
+        "rank_lower_bound": 23
+      },
+      {
+        "id": "new-20260905-34",
+        "rank_lower_bound": 23
+      },
+      {
+        "id": "new-20260905-14",
+        "rank_lower_bound": 23
+      },
+      {
+        "id": "new-20260905-15",
+        "rank_lower_bound": 23
+      },
+      {
+        "id": "new-20260905-16",
+        "rank_lower_bound": 23
+      },
+      {
+        "id": "new-20260905-17",
+        "rank_lower_bound": 23
+      },
+      {
+        "id": "new-20260905-18",
+        "rank_lower_bound": 23
+      },
+      {
+        "id": "new-20260905-19",
+        "rank_lower_bound": 23
+      },
+      {
+        "id": "new-20260905-20",
+        "rank_lower_bound": 23
+      },
+      {
+        "id": "new-20260905-21",
+        "rank_lower_bound": 22
+      },
+      {
+        "id": "new-20260906-47",
+        "rank_lower_bound": 22
+      },
+      {
+        "id": "new-20260905-22",
+        "rank_lower_bound": 22
+      },
+      {
+        "id": "new-20260905-23",
+        "rank_lower_bound": 22
+      },
+      {
+        "id": "new-20260905-24",
+        "rank_lower_bound": 22
+      },
+      {
+        "id": "new-20260905-25",
+        "rank_lower_bound": 22
+      },
+      {
+        "id": "new-20260905-26",
+        "rank_lower_bound": 22
+      },
+      {
+        "id": "new-20260905-27",
+        "rank_lower_bound": 22
+      },
+      {
+        "id": "new-20260905-35",
+        "rank_lower_bound": 22
+      },
+      {
+        "id": "new-20260905-36",
+        "rank_lower_bound": 22
+      },
+      {
+        "id": "new-20260905-28",
+        "rank_lower_bound": 22
+      },
+      {
+        "id": "new-20260905-29",
+        "rank_lower_bound": 22
+      },
+      {
+        "id": "new-20260905-30",
+        "rank_lower_bound": 22
+      },
+      {
+        "id": "new-20260905-31",
+        "rank_lower_bound": 22
+      },
+      {
+        "id": "new-20260905-32",
+        "rank_lower_bound": 22
+      }
+    ],
+    "schema": "elliptic-curves.inventory-v4-memory-replay.v1",
+    "sources": {
+      "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v4.csv": "3976fb8a3c026f8af568215b56c09141d89cdca0a9fc58fbf8b802badebb4c62",
+      "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v4.json": "f1bf454c27af239b835e1fdf7673912fd05ebcddab2044988db06e77f79beb33",
+      "elliptic-curves/cas/export_new_high_rank_curve_index_v4.py": "fce84c9fa61f6025b5004d33acbeee070960673a74bc7b81a704c960d1b2493a",
+      "elliptic-curves/cas/memory_rank_certificate.py": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6",
+      "elliptic-curves/cas/replay_inventory_v4_memory.py": "d240f60a6072c7ee9e8f397a9e05dcf8e4ec1eedae47da13a5d85430baac9771"
+    },
+    "status": "PASS"
+  },
+  "schema": "elliptic-curves.paired-rank27-portable-completion.v2",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/paired_rank27_inventory_replay_evidence_v2.json": "b9d1ce027e5c6eaa76da1f78fb1391cd3aee858adfd5fb514a7ca9f002c7485d",
+    "artifacts/generated-results/elliptic-curves/paired_rank27_portable_replay_v1.json": "e7687695245184c6ef5c3215ce71eda5e8837c5830dbdf62baba3af648c29896",
+    "elliptic-curves/cas/complete_paired_rank27_inventory_replay.py": "0d79d88e0234ab1e8332385b09bc2f6a46cbbb59a90515ed55ea6409ef3cf4e8"
+  },
+  "status": "PASS",
+  "supervision": {
+    "command": [
+      "/usr/bin/python3",
+      "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-completion-v2/workspace/elliptic-curves/cas/replay_inventory_v4_memory.py",
+      "--output",
+      "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-completion-v2/workspace/inventory47-memory-replayed.json"
+    ],
+    "failure_reason": null,
+    "limits": {
+      "address_space_bytes": null,
+      "cgroup": null,
+      "pari_stack_bytes": 256000000,
+      "poll_seconds": 0.05,
+      "rss_bytes": 1073741824,
+      "terminate_grace_seconds": 1.0,
+      "wall_seconds": 180
+    },
+    "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/paired-rank27-portable-completion-v2/replay.log",
+    "log_sha256": "db3c01c094c536a459cc06478f10371ba8b809b4c50498cf57f8312c89427e97",
+    "outcome": "completed",
+    "peak_observed_rss_bytes": 34336768,
+    "pid": 995896,
+    "returncode": 0,
+    "rss_limit_bytes": 1073741824,
+    "start_token": "48423828",
+    "termination_signal": null,
+    "timeout_seconds": 180,
+    "wall_seconds": 6.641515694966074,
+    "worker_result": null,
+    "worker_result_sha256": null
+  },
+  "total_original_topics_covered": 35
+}

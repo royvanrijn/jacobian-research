@@ -1,0 +1,107 @@
+{
+  "claim_boundary": "One complete245-box specialized-parity follow-up of all five new compact192 curves with26 certified points. All2048-mask samples and49-map rosters precede points; exact histories, rational geometry and full-cloud proofs modulo2,3,5 pass. Every retained cloud still certifies26, giving no rank gain or new inventory entry. These are lower bounds, not exact ranks, upper bounds, saturation, covering optimality, point absence or a universal sensitivity claim.",
+  "completed_point_boxes": 245,
+  "declared_point_boxes": 245,
+  "rows": [
+    {
+      "completed_boxes": 49,
+      "family": "07ca9",
+      "id": "new-20260906-102",
+      "initial_rank": 26,
+      "odd_modulus_lower_bounds": {
+        "3": 26,
+        "5": 26
+      },
+      "parameter": "-575/1207",
+      "rank_lower_bound": 26,
+      "retained_points": 52
+    },
+    {
+      "completed_boxes": 49,
+      "family": "07ca9",
+      "id": "new-20260906-103",
+      "initial_rank": 26,
+      "odd_modulus_lower_bounds": {
+        "3": 26,
+        "5": 26
+      },
+      "parameter": "3307/1128",
+      "rank_lower_bound": 26,
+      "retained_points": 78
+    },
+    {
+      "completed_boxes": 49,
+      "family": "07ca9",
+      "id": "new-20260906-104",
+      "initial_rank": 26,
+      "odd_modulus_lower_bounds": {
+        "3": 26,
+        "5": 26
+      },
+      "parameter": "760/211",
+      "rank_lower_bound": 26,
+      "retained_points": 460
+    },
+    {
+      "completed_boxes": 49,
+      "family": "103b2",
+      "id": "new-20260906-105",
+      "initial_rank": 26,
+      "odd_modulus_lower_bounds": {
+        "3": 26,
+        "5": 26
+      },
+      "parameter": "726/761",
+      "rank_lower_bound": 26,
+      "retained_points": 52
+    },
+    {
+      "completed_boxes": 49,
+      "family": "11952",
+      "id": "new-20260906-106",
+      "initial_rank": 26,
+      "odd_modulus_lower_bounds": {
+        "3": 26,
+        "5": 26
+      },
+      "parameter": "-1826/2583",
+      "rank_lower_bound": 26,
+      "retained_points": 100
+    }
+  ],
+  "schema": "elliptic-curves.compact192-specialized-followup-result.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact192_specialized_102_mod2_v1.json": "cf6b67eecc5a2be0eb08d8e0f5ae836c9dc21a8641e4174311764007b8854dc9",
+    "artifacts/generated-results/elliptic-curves/compact192_specialized_102_modl_v1.json": "822386e25e83d7dd3aaaa87afe31072c3bde3a2fb1e7249723ccc9006c67e3fc",
+    "artifacts/generated-results/elliptic-curves/compact192_specialized_103_mod2_v1.json": "3bb7eee0c2b5ad394a7b855989b5a5cf71845701b29177c0f2c57eb559c81350",
+    "artifacts/generated-results/elliptic-curves/compact192_specialized_103_modl_v1.json": "1a15ffc0bd9a1acf596bf61c8f957ad1ded6bcfc511e63f6ac6ef96751bd35d0",
+    "artifacts/generated-results/elliptic-curves/compact192_specialized_104_mod2_v1.json": "63946f36f2ea6e7d07592f299fdb0cbbc8ebb12f382091feb6f7dd20f7aea4d0",
+    "artifacts/generated-results/elliptic-curves/compact192_specialized_104_modl_v1.json": "78f8d23827cbe17c26a3d1f967515769c198d8cabea60ac5c87847e87d80bbde",
+    "artifacts/generated-results/elliptic-curves/compact192_specialized_105_mod2_v1.json": "5526453d90ec081c10f767670d77f57038eccf9e56e8a6a6c53a9d3b3d987709",
+    "artifacts/generated-results/elliptic-curves/compact192_specialized_105_modl_v1.json": "ce629e21df2e458d0bf2548849ca971bcc2242865a851557a140cf50828696ae",
+    "artifacts/generated-results/elliptic-curves/compact192_specialized_106_mod2_v1.json": "aad6ff358bd858ac8705f50e55420423c9817b22b3884404f4c8e4a6eeb43177",
+    "artifacts/generated-results/elliptic-curves/compact192_specialized_106_modl_v1.json": "d94afe07e8d00ca9ed60f18b14b3363e5cfde397fa9baffa9183c2781c57f98c",
+    "artifacts/local/elliptic-curves/compact192-specialized-followup-controller-v1/clouds.log": "6b87fb311feaaf930f45fdd356f548ae6791e275aa87756b803adfbe1f9b0c48",
+    "artifacts/local/elliptic-curves/compact192-specialized-followup-controller-v1/freeze.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/local/elliptic-curves/compact192-specialized-followup-controller-v1/geometry.log": "6be027a461f644fbb64f397e6bcf22a0f15e5114156f2a67d677eaebae3fc748",
+    "artifacts/local/elliptic-curves/compact192-specialized-followup-controller-v1/ledger.json": "adb3e47612b0afdac117e7993386c7b7d047d378cb1ad9d89bad13c22b7c898c",
+    "artifacts/local/elliptic-curves/compact192-specialized-followup-controller-v1/protocol.json": "e2a64ed11531f4ddb0728e726fd5788868a15300a2a212dbbd327ad8127ccf9b",
+    "artifacts/local/elliptic-curves/compact192-specialized-followup-controller-v1/trial.log": "5ff1c9d9765eb142e50257b439cc104e9f5e185cebbdea3e4e8584e78bfad3d0",
+    "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/ledger.json": "704a1e664631cb055ae066597b2fd73d50ddb1c92d5904c325309dbd2554f42b",
+    "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/maps.json": "d55a8feedb85f810827a6db41dbf4c3d309c94e4f1b0b9ff76b546b4c0cdfea4",
+    "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-102/result.json": "dee4c6308a829b29cb86b6dec8d420f4b440ade22966b51a6832b20314846207",
+    "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/maps.json": "f0fc8443a9c5801729887c871d1b779a603935565918f6c38ad05c7ddee84176",
+    "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-103/result.json": "085e0c196dd49e790a3e8e45bade32e75f16dd0e46b211f2c4fb043cbb6703f0",
+    "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/maps.json": "fd123c70b3717bfb1f86f434ffd2db5bbaca9b637158cdbd24f67b00aa6f0db0",
+    "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-104/result.json": "dd4ff0a4967ba2b815e295bc0752bde2f508bdb09c068100859c83bee9d82ee5",
+    "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/maps.json": "f74950f06f97702a0361cf78c1003742f57c55b3f4613d221f5fa55ccb942361",
+    "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-105/result.json": "0847753f5aa83a39488305e36fc51b6e8c3d03f05e4ab6694fe600697ff3783e",
+    "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/maps.json": "188384f26e93f1834c4f3b8b60911bec04717e4df8cee36ec5d9d2a5dbb302ce",
+    "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/new-20260906-106/result.json": "f8d1b12a02831ab877fa5930682070f30a8b5e9e4f26b1ba47faff8209c1a349",
+    "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/protocol.json": "b6230785309203a98f0a0eafa209067eee9777e1de8ca7031428c36712d04893",
+    "artifacts/local/elliptic-curves/compact192-specialized-followup-v1/verification-ledger.json": "9469e54f4e3502726e0907d45cb8b3983f8dc824e22f0ba14f78c94c6e4797e3",
+    "elliptic-curves/cas/report_compact192_specialized_followup.py": "716ecd5c1fe09cf965c29d5c7a685abbb174f973117c0c4863af4a59f21405aa"
+  },
+  "status": "PASS",
+  "total_retained_point_witnesses": 742
+}

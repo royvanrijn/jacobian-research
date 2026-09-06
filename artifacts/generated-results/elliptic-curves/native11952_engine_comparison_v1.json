@@ -1,0 +1,961 @@
+{
+  "claim_boundary": "Known-control finite boxes only. Exact affine square-coordinate equality where PASS; infinity remains separately checked by the shared engine. A speed comparison does not establish universal completeness, future speedups, rank bounds or new curves.",
+  "protocol_hash": "229e8bc657236e933f4a898c9c5eac34f36ab8e44a8c9a4333dcba7ae5a0ae37",
+  "rows": [
+    {
+      "affine_square_coordinates": [
+        [
+          "14247",
+          "1391",
+          "140891063675691481996001"
+        ]
+      ],
+      "chart": 0,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 500,
+      "pari_wall_seconds": 0.5181663270341232,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "100",
+          "609",
+          "1729258588304461182721"
+        ]
+      ],
+      "chart": 1,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 346,
+      "pari_wall_seconds": 0.3577002439997159,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "789",
+          "119",
+          "984486325714629215167"
+        ]
+      ],
+      "chart": 2,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 260,
+      "pari_wall_seconds": 0.27363863796927035,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "177",
+          "100",
+          "85195732371870345137"
+        ]
+      ],
+      "chart": 3,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 303,
+      "pari_wall_seconds": 0.31838686001719907,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-2599",
+          "620",
+          "14883283035638111189339"
+        ]
+      ],
+      "chart": 4,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 288,
+      "pari_wall_seconds": 0.30352987302467227,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-7555",
+          "2282",
+          "41975173748405840717984"
+        ],
+        [
+          "4325",
+          "1351",
+          "49451867935113868588691"
+        ]
+      ],
+      "chart": 5,
+      "gmp_hit_count": 2,
+      "gmp_only": [],
+      "pari_hit_count": 2,
+      "pari_only": [],
+      "pari_search_ms": 447,
+      "pari_wall_seconds": 0.4611975909792818,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-1865",
+          "5066",
+          "88097431406981002528473"
+        ],
+        [
+          "2259",
+          "844",
+          "10144730058087853725193"
+        ]
+      ],
+      "chart": 6,
+      "gmp_hit_count": 2,
+      "gmp_only": [],
+      "pari_hit_count": 2,
+      "pari_only": [],
+      "pari_search_ms": 472,
+      "pari_wall_seconds": 0.4840714680030942,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "179",
+          "108",
+          "125645245482406214531"
+        ],
+        [
+          "71354",
+          "15509",
+          "6481266531610802004543672"
+        ]
+      ],
+      "chart": 7,
+      "gmp_hit_count": 2,
+      "gmp_only": [],
+      "pari_hit_count": 2,
+      "pari_only": [],
+      "pari_search_ms": 323,
+      "pari_wall_seconds": 0.3395997380139306,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-257",
+          "329",
+          "146732654567871333553"
+        ]
+      ],
+      "chart": 8,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 332,
+      "pari_wall_seconds": 0.34816451801452786,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-1858",
+          "105",
+          "1126117536949747416017"
+        ]
+      ],
+      "chart": 9,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 443,
+      "pari_wall_seconds": 0.454456209030468,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-11539",
+          "6102",
+          "455500566719545031271202"
+        ],
+        [
+          "601",
+          "1017",
+          "3719806133832652899067"
+        ]
+      ],
+      "chart": 10,
+      "gmp_hit_count": 2,
+      "gmp_only": [],
+      "pari_hit_count": 2,
+      "pari_only": [],
+      "pari_search_ms": 456,
+      "pari_wall_seconds": 0.46982157096499577,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "245",
+          "78",
+          "127694402579176867711"
+        ]
+      ],
+      "chart": 11,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 393,
+      "pari_wall_seconds": 0.4053388889878988,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-1017",
+          "406",
+          "135967560765594450313"
+        ],
+        [
+          "-574",
+          "253",
+          "217565997621881368614"
+        ]
+      ],
+      "chart": 12,
+      "gmp_hit_count": 2,
+      "gmp_only": [],
+      "pari_hit_count": 2,
+      "pari_only": [],
+      "pari_search_ms": 444,
+      "pari_wall_seconds": 0.45574205805314705,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "375",
+          "44",
+          "5623944138022096637"
+        ]
+      ],
+      "chart": 13,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 365,
+      "pari_wall_seconds": 0.3770640489528887,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "26",
+          "75",
+          "7686387289826138381"
+        ]
+      ],
+      "chart": 14,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 262,
+      "pari_wall_seconds": 0.2757071999949403,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "3",
+          "164",
+          "87295921164749765869"
+        ]
+      ],
+      "chart": 15,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 419,
+      "pari_wall_seconds": 0.43546898203203455,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-15",
+          "64",
+          "11974940483696303852"
+        ]
+      ],
+      "chart": 16,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 160,
+      "pari_wall_seconds": 0.1747407880029641,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-1635",
+          "133",
+          "687985525926848988299"
+        ]
+      ],
+      "chart": 17,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 418,
+      "pari_wall_seconds": 0.4351338529959321,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-28987",
+          "1268",
+          "12998406199598479540100"
+        ],
+        [
+          "-225",
+          "59",
+          "3526490275829210281"
+        ]
+      ],
+      "chart": 18,
+      "gmp_hit_count": 2,
+      "gmp_only": [],
+      "pari_hit_count": 2,
+      "pari_only": [],
+      "pari_search_ms": 447,
+      "pari_wall_seconds": 0.46549317496828735,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-802",
+          "45",
+          "250898558479409618003"
+        ]
+      ],
+      "chart": 19,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 412,
+      "pari_wall_seconds": 0.4273165169870481,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "146",
+          "175",
+          "143921610588566139029"
+        ]
+      ],
+      "chart": 20,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 384,
+      "pari_wall_seconds": 0.3943940220051445,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "41",
+          "76",
+          "17886436352517028937"
+        ]
+      ],
+      "chart": 21,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 326,
+      "pari_wall_seconds": 0.34154351602774113,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-505",
+          "153",
+          "204221821613098424581"
+        ],
+        [
+          "-24764",
+          "13435",
+          "885199803587361669241472"
+        ]
+      ],
+      "chart": 22,
+      "gmp_hit_count": 2,
+      "gmp_only": [],
+      "pari_hit_count": 2,
+      "pari_only": [],
+      "pari_search_ms": 393,
+      "pari_wall_seconds": 0.4083588150097057,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "85",
+          "81",
+          "35417508635045495813"
+        ]
+      ],
+      "chart": 23,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 323,
+      "pari_wall_seconds": 0.33891888899961486,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-96625",
+          "84816",
+          "6852363789534284481045300"
+        ],
+        [
+          "66",
+          "29",
+          "4756706920193704325"
+        ]
+      ],
+      "chart": 24,
+      "gmp_hit_count": 2,
+      "gmp_only": [],
+      "pari_hit_count": 2,
+      "pari_only": [],
+      "pari_search_ms": 262,
+      "pari_wall_seconds": 0.2778432019986212,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "23",
+          "147",
+          "21029911866997414957"
+        ],
+        [
+          "12844",
+          "12431",
+          "729767958322807925692248"
+        ]
+      ],
+      "chart": 25,
+      "gmp_hit_count": 2,
+      "gmp_only": [],
+      "pari_hit_count": 2,
+      "pari_only": [],
+      "pari_search_ms": 301,
+      "pari_wall_seconds": 0.3151357340393588,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-284",
+          "173",
+          "146226213399301079683"
+        ]
+      ],
+      "chart": 26,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 468,
+      "pari_wall_seconds": 0.4854865539819002,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-44909",
+          "48251",
+          "13745847565919451400967010"
+        ],
+        [
+          "-11",
+          "52",
+          "15220388086697184793"
+        ]
+      ],
+      "chart": 27,
+      "gmp_hit_count": 2,
+      "gmp_only": [],
+      "pari_hit_count": 2,
+      "pari_only": [],
+      "pari_search_ms": 370,
+      "pari_wall_seconds": 0.3865811220020987,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-121",
+          "27",
+          "2510377572173756444"
+        ],
+        [
+          "-553",
+          "235",
+          "92812803519304173756"
+        ]
+      ],
+      "chart": 28,
+      "gmp_hit_count": 2,
+      "gmp_only": [],
+      "pari_hit_count": 2,
+      "pari_only": [],
+      "pari_search_ms": 305,
+      "pari_wall_seconds": 0.31615415401756763,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "7",
+          "13",
+          "432283416286055611"
+        ]
+      ],
+      "chart": 29,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 263,
+      "pari_wall_seconds": 0.2788049020455219,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-293",
+          "2",
+          "1978499416699298461"
+        ]
+      ],
+      "chart": 30,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 307,
+      "pari_wall_seconds": 0.32325845200102776,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-76057",
+          "21738",
+          "5996688058754201524897328"
+        ],
+        [
+          "7",
+          "17",
+          "135420825880751987"
+        ]
+      ],
+      "chart": 31,
+      "gmp_hit_count": 2,
+      "gmp_only": [],
+      "pari_hit_count": 2,
+      "pari_only": [],
+      "pari_search_ms": 317,
+      "pari_wall_seconds": 0.3284388199681416,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-33",
+          "19",
+          "1256038140355521349"
+        ],
+        [
+          "-41804",
+          "59393",
+          "6514029047719784023314570"
+        ],
+        [
+          "10519",
+          "18718",
+          "1303834400623668968486016"
+        ]
+      ],
+      "chart": 32,
+      "gmp_hit_count": 3,
+      "gmp_only": [],
+      "pari_hit_count": 3,
+      "pari_only": [],
+      "pari_search_ms": 406,
+      "pari_wall_seconds": 0.41861236095428467,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-7",
+          "16",
+          "180480686818748977"
+        ]
+      ],
+      "chart": 33,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 221,
+      "pari_wall_seconds": 0.2332670540199615,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "68",
+          "3",
+          "1773236380755793861"
+        ]
+      ],
+      "chart": 34,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 342,
+      "pari_wall_seconds": 0.3623560970299877,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-52",
+          "7",
+          "761324910745357459"
+        ]
+      ],
+      "chart": 35,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 365,
+      "pari_wall_seconds": 0.37798733497038484,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "17",
+          "1",
+          "260940867627482335"
+        ]
+      ],
+      "chart": 36,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 175,
+      "pari_wall_seconds": 0.18930382700636983,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "19",
+          "3",
+          "292965979405032451"
+        ]
+      ],
+      "chart": 37,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 294,
+      "pari_wall_seconds": 0.309124763996806,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-4",
+          "7",
+          "58198063845249157"
+        ],
+        [
+          "65423",
+          "37788",
+          "13341762668766181832185500"
+        ]
+      ],
+      "chart": 38,
+      "gmp_hit_count": 2,
+      "gmp_only": [],
+      "pari_hit_count": 2,
+      "pari_only": [],
+      "pari_search_ms": 335,
+      "pari_wall_seconds": 0.350825403991621,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-13",
+          "8",
+          "657522205307178199"
+        ],
+        [
+          "-1875",
+          "7439",
+          "4457385129747489736368"
+        ],
+        [
+          "49949",
+          "24502",
+          "6869094354845936116235787"
+        ]
+      ],
+      "chart": 39,
+      "gmp_hit_count": 3,
+      "gmp_only": [],
+      "pari_hit_count": 3,
+      "pari_only": [],
+      "pari_search_ms": 394,
+      "pari_wall_seconds": 0.40641787397908047,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "3",
+          "2",
+          "15353606943771737"
+        ]
+      ],
+      "chart": 40,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 441,
+      "pari_wall_seconds": 0.4538256049854681,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-23078",
+          "2829",
+          "905143331588560688840832"
+        ],
+        [
+          "-7",
+          "2",
+          "92523782044084797"
+        ],
+        [
+          "-3205",
+          "3069",
+          "17000299218049821417810"
+        ]
+      ],
+      "chart": 41,
+      "gmp_hit_count": 3,
+      "gmp_only": [],
+      "pari_hit_count": 3,
+      "pari_only": [],
+      "pari_search_ms": 398,
+      "pari_wall_seconds": 0.41443917201831937,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-34537",
+          "10524",
+          "2667746022730076048229840"
+        ],
+        [
+          "-66005",
+          "39772",
+          "19686175030631347411674336"
+        ],
+        [
+          "57227",
+          "33444",
+          "9120766840731804972338856"
+        ],
+        [
+          "3",
+          "1",
+          "16079764106129851"
+        ]
+      ],
+      "chart": 42,
+      "gmp_hit_count": 4,
+      "gmp_only": [],
+      "pari_hit_count": 4,
+      "pari_only": [],
+      "pari_search_ms": 318,
+      "pari_wall_seconds": 0.32903380499919876,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-2001",
+          "146",
+          "5254784164912886532767"
+        ]
+      ],
+      "chart": 43,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 414,
+      "pari_wall_seconds": 0.42526162101421505,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-1031",
+          "585",
+          "1260351286286020144771"
+        ]
+      ],
+      "chart": 44,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 448,
+      "pari_wall_seconds": 0.46705115103395656,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-75122",
+          "28437",
+          "5743939855467863131375176"
+        ],
+        [
+          "27",
+          "118",
+          "65220471055537661119"
+        ]
+      ],
+      "chart": 45,
+      "gmp_hit_count": 2,
+      "gmp_only": [],
+      "pari_hit_count": 2,
+      "pari_only": [],
+      "pari_search_ms": 330,
+      "pari_wall_seconds": 0.34378073998959735,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "209",
+          "3",
+          "13867783417648219391"
+        ]
+      ],
+      "chart": 46,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 320,
+      "pari_wall_seconds": 0.3382026909966953,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "43",
+          "10",
+          "463412586180970739"
+        ]
+      ],
+      "chart": 47,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 332,
+      "pari_wall_seconds": 0.3473714899737388,
+      "status": "PASS"
+    },
+    {
+      "affine_square_coordinates": [
+        [
+          "-25",
+          "2",
+          "291513563025283923"
+        ]
+      ],
+      "chart": 48,
+      "gmp_hit_count": 1,
+      "gmp_only": [],
+      "pari_hit_count": 1,
+      "pari_only": [],
+      "pari_search_ms": 272,
+      "pari_wall_seconds": 0.2878990460303612,
+      "status": "PASS"
+    }
+  ],
+  "schema": "elliptic-curves.native11952-fixed-box-engine-comparison.v1",
+  "sources": {
+    "artifacts/local/elliptic-curves/native11952-pari-maps-v1/maps.json": "ee49e53581f97ab5d4a0ff871026987131016b8b13b7ef51d7f86c6e8077682a",
+    "artifacts/local/elliptic-curves/native11952-pari49-control-v1/candidate-00/result.json": "1a780424d4adf4ab2e9e7ff3d7781438ac1f136ef4c45acca32f9980dd8b3069",
+    "elliptic-curves/cas/compare_native11952_search_engines.py": "059903f3faef2f701ad94173d7a6ed9d947162b9b8f61a82c9249d353f5f35b4"
+  },
+  "status": "COMPLETE_DECLARED_COMPARISON"
+}

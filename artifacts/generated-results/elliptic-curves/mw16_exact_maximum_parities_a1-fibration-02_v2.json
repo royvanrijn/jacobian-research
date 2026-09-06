@@ -1,0 +1,19 @@
+{
+  "claim_boundary": "Every parity class has a checked norm<=23/2 witness. Every candidate maximum class is checked by exhaustive rational LDL enumeration of scaled integral norm<=22. A surviving norm23 witness proves discrete maximum23/2 on Z^16/2Z^16. No continuous covering radius, saturation or specialized rank.",
+  "classes_with_exact_minimum23_over2": 4,
+  "exact_maximum_parity_coset_minimum": "23/2",
+  "family": "a1-fibration-02",
+  "omitted_classes_with_exact_minimum23_over2": 0,
+  "parity_upper_bounds_checked": 65536,
+  "queried_minima_checked": 4,
+  "schema": "elliptic-curves.mw16-exact-parity-radius-replay.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_five_mw16_atlas_v1.json": "88a8c61c2722394bb812da601e24ea2c19e54361eef4b0fe9c7924e78c828801",
+    "artifacts/local/elliptic-curves/mw16-exact-maximum-parities-v2/a1-fibration-02/result.json": "192eb0508c89d3349d8140b8378e858a632c60ad5e01ecfe043b181d06f2d252",
+    "artifacts/local/elliptic-curves/mw16-exact-maximum-parities-v2/protocol.json": "2aae26495c9ed94d716aeb12f0eda4b7489e726187beadad68324eeb5113b238",
+    "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/generic-census.json": "5904f7d4a00e9daebd2e8c0f2b0222f74d6933c151b7f5e80334c417ddd2bb26",
+    "elliptic-curves/cas/exact_parity_ellipsoid.py": "43922cba3d16bd2fa993d61b88863b2ed69f7b38dcec2b90ba2a05f0ce026290",
+    "elliptic-curves/cas/replay_mw16_exact_maximum_parities.py": "31e9ad634578ebc46184c2df341439081219634a5b501c20cb1372d586921368"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,49 @@
+{
+  "cases": [
+    {
+      "name": "old4096",
+      "speedup": 1.8340610869282281,
+      "summary": [
+        4096,
+        4096,
+        512,
+        10200039,
+        10200039,
+        512
+      ],
+      "wall_seconds": {
+        "v1": 11.55182499095099,
+        "v2": 6.298495220951736
+      }
+    },
+    {
+      "name": "higher32768-one-shard",
+      "speedup": 4.720617214922459,
+      "summary": [
+        32768,
+        32768,
+        512,
+        13604030,
+        13604030,
+        512
+      ],
+      "wall_seconds": {
+        "v1": 14.096774612960871,
+        "v2": 2.9862142959609628
+      }
+    }
+  ],
+  "claim_boundary": "Two finite fixed parameter populations and two unchanged score policies; no new finalist promoted, no full32768 scan, no point search or automatic campaign. Exact output agreement and returned-score replay do not replace trust in the pinned enumeration workers.",
+  "protocol_sha256": "3c160bad7f88e3e65b4f7a5fd2957e00ad60761a2605d370e2c0bf1cbe31b836",
+  "result_sha256": "74af95bccf908d7ac06c34c63f6edb2d93dade208a8a881662c655dd0600c784",
+  "schema": "elliptic-curves.periodic-nagao-scanner-benchmark-result.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_six_r17_atlas_v1.json": "2f28c081c874adfaf738c1119e8f4e6e7ce70ea74277cd8cdb370a02bca34c5d",
+    "artifacts/local/elliptic-curves/compact-r17-wide-v1/scanner": "245b894770e8d381c39b72294bd6e3b6a32a3f35b670f13b21a439e126895773",
+    "elliptic-curves/cas/benchmark_periodic_nagao_scanner.py": "916fc24de885e014fa945dcf21a1ffa6954a9187f9f2f469e69a66fbec9b93fe",
+    "elliptic-curves/cas/newfamily/scan_rational_nagao_tables.cpp": "1aaf8ba3ed7a08102837c106b737b9bc729bd2cf252d3863940c9aa8240c381f",
+    "elliptic-curves/cas/newfamily/scan_rational_nagao_tables_v2.cpp": "f72a59097d4725b174efdeb4e3adbd21d90d1b2867b8dea3471d628e7796d6f9",
+    "elliptic-curves/cas/select_compact_r17_wide.py": "319ec3d6f33106698b48c0f7ef46a54e303d647bb6c674af9fed4932b5394c83"
+  },
+  "status": "PASS"
+}

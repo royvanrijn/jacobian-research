@@ -1,0 +1,29 @@
+{
+  "adaptive_attempted_charts": 301,
+  "adaptive_completed_boxes": 301,
+  "adaptive_declared_charts": 301,
+  "claim_boundary": "Recorded completed box coverage trusts the pinned PARI executions. Every attempted adaptive history replays; a target stop can leave part of the301-chart roster unsearched. Full retained-cloud finite quotient certificates are lower bounds only; no exact rank, saturation or point-absence conclusion.",
+  "cloud_verification_ledger_sha256": "cefc8f9276434997db3cbb59266a65581ef32943a1cfa13d9f15bcb4b30c318a",
+  "height": 100000,
+  "initial_charts": 43,
+  "mod2_lower_bound": 26,
+  "odd_modulus_lower_bounds": {
+    "3": 26,
+    "5": 26
+  },
+  "point_certificates": {
+    "artifacts/generated-results/elliptic-curves/mw16_new26_a1_fibration_02_014_all_retained_mod2_v1.json": "8b9b0d2bd6389eb6b39e4e97f51e72a09d4a4365b5aa2b5944e2457021e25c03",
+    "artifacts/generated-results/elliptic-curves/mw16_new26_a1_fibration_02_014_all_retained_modl_v1.json": "5d8496b01c7604a64835e9fe4cc1c259200f5ffbde097320976e72c3d7d471e7"
+  },
+  "retained_point_count": 3808,
+  "schema": "elliptic-curves.mw16-new26-adaptive-coverage.v1",
+  "sources": {
+    "artifacts/local/elliptic-curves/extended20-mw16-pari-v1/a1-fibration-02-014/result.json": "0cb00797f3a7e7630319ecee9636b4a5c933f5666f8a8b8934795c6b293b7356",
+    "artifacts/local/elliptic-curves/mw16-new26-a1-fibration-02-014-adaptive-v1/maps.json": "43067fcef91f68862b3667f3bd9242a687ce88fb992db1dd2c0d4a4e6d709b62",
+    "artifacts/local/elliptic-curves/mw16-new26-a1-fibration-02-014-adaptive-v1/protocol.json": "d08469105ce0341bc650313beec39ca8af42f4a1d132ca66a00c96a8291ace47",
+    "artifacts/local/elliptic-curves/mw16-new26-a1-fibration-02-014-adaptive-v1/replay.supervisor.json": "7c6fa9d902c239a9a4a826b328f3b396a51565ee3fa7a07b9548b8d32004fae9",
+    "artifacts/local/elliptic-curves/mw16-new26-a1-fibration-02-014-adaptive-v1/result.json": "788ffc75164d071a2967dc1b69be0c21947585d71942251a2d35d364a147bab3",
+    "artifacts/local/elliptic-curves/mw16-new26-a1-fibration-02-014-adaptive-v1/worker.supervisor.json": "ca90a18e273cfe7bdb75ce33bfbc044f3303810ed847fda3c9c6586a053f30df",
+    "elliptic-curves/cas/audit_new_mw16_rank26_followup.py": "362c177d476b562394883d0c0077178744a41daac3617a2d32911817b2c96aa1"
+  }
+}

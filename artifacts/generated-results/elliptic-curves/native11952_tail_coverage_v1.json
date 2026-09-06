@@ -1,0 +1,361 @@
+{
+  "charts_replayed": 49,
+  "claim_boundary": "Exact retained maps, point admissions and contiguous interval union. Completeness relies on the pinned sieve executions, not a second sieve enumeration. Even an exhausted finite box supplies no upper rank bound.",
+  "complete_combined_boxes": 49,
+  "coverage": [
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 1
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 2
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 3
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 4
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 5
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 6
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 7
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 8
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 9
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 10
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 11
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 12
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 13
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 14
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 15
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 16
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 17
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 18
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 19
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 20
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 21
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 22
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 23
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 24
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 25
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 26
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 27
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 28
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 29
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 30
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 31
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 32
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 33
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 34
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 35
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 36
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 37
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 38
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 39
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 40
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 41
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 42
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 43
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 44
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 45
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 46
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 47
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 48
+    }
+  ],
+  "input_path": "artifacts/local/elliptic-curves/native11952-metric49-tails-v1/candidate-00/result.json",
+  "input_sha256": "2ae1cfca71db1e75a02f7dcb293ed3191f1cb9582e4a33d8a5311061ec1599ed",
+  "parent_input_sha256": "dfcdbf66db4dc02aa0df0abb84f2f7fe5dc66fd2cc1fddc67f3aa8691c0fdd18",
+  "planned_tails": 49,
+  "rank_lower_bound": 25,
+  "schema": "elliptic-curves.new-native11952-combined-box-coverage.v1",
+  "sources": {
+    "elliptic-curves/cas/replay_native11952_tails.py": "0c49fdc452c4f77f633fb4f3f13eaa6548bf2f0f325ca8c4e3c15e3fce45830f",
+    "elliptic-curves/cas/search_native11952_tails.py": "22870623e3e504df567511191970ced8fd41ce8afb3073883967dc1dca2e2c2e"
+  },
+  "status": "PASS"
+}

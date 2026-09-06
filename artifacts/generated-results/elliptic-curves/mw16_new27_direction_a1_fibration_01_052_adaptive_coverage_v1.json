@@ -1,0 +1,30 @@
+{
+  "adaptive_attempted_charts": 301,
+  "adaptive_completed_boxes": 301,
+  "adaptive_declared_charts": 301,
+  "claim_boundary": "Recorded completed box coverage trusts the pinned PARI executions. Every attempted adaptive history replays; a target stop can leave part of the301-chart roster unsearched. Full retained-cloud finite quotient certificates are lower bounds only; no exact rank, saturation or point-absence conclusion.",
+  "cloud_verification_ledger_sha256": "5b93a2a544215c7696a0e769fa997475507e01ebe81acba8764e4c940fb7105d",
+  "height": 100000,
+  "initial_charts": 344,
+  "mod2_lower_bound": 27,
+  "odd_modulus_lower_bounds": {
+    "3": 27,
+    "5": 27
+  },
+  "point_certificates": {
+    "artifacts/generated-results/elliptic-curves/mw16_new27_direction_a1_fibration_01_052_all_retained_mod2_v1.json": "7f3aa4f067d7f36ac1312e0e7c4efdec16235cdf7530c58cab305eeb328d441d",
+    "artifacts/generated-results/elliptic-curves/mw16_new27_direction_a1_fibration_01_052_all_retained_modl_v1.json": "f23f97e6415d38b388fec9ac25464479bb935aac74f29a256004cbc4a20a1ca9"
+  },
+  "retained_point_count": 1595,
+  "schema": "elliptic-curves.mw16-new27-direction-coverage.v1",
+  "sources": {
+    "artifacts/local/elliptic-curves/mw16-new26-a1-fibration-01-052-adaptive-v1/all-retained-point-cloud-only.json": "c3b6ef998accc3836b546188d8178330bd597f6c338f574d00277ab0f35ccc4f",
+    "artifacts/local/elliptic-curves/mw16-new26-a1-fibration-01-052-adaptive-v1/result.json": "e8d6eb61c2ac157cff1a607d5883840f01cf9b810f11989f5281a7adf7b1b72a",
+    "artifacts/local/elliptic-curves/mw16-new27-a1-fibration-01-052-newdirection-v1/maps.json": "a0b2799e8402e85dd526693e58ea7b5e3fa629a6a39ef13d37d8dc1803948d35",
+    "artifacts/local/elliptic-curves/mw16-new27-a1-fibration-01-052-newdirection-v1/protocol.json": "0a71f2716eefd2ce43ca418bc2a933eb9456bef7e33af7de836a01c8555db597",
+    "artifacts/local/elliptic-curves/mw16-new27-a1-fibration-01-052-newdirection-v1/replay.supervisor.json": "48c088a6cb3d4cccc9fa3b8bc644f165bb3fc22d18aad74a6bd91b0212d8af4d",
+    "artifacts/local/elliptic-curves/mw16-new27-a1-fibration-01-052-newdirection-v1/result.json": "bbe54a67da319d8f092ffcc1a9bea4a1f4541a88954587b679acf129246364e4",
+    "artifacts/local/elliptic-curves/mw16-new27-a1-fibration-01-052-newdirection-v1/worker.supervisor.json": "d78e68fa37ae7bf6f3a66256ad54f956b0c1e4f44cc2c9ace8900f8ad7afe4cd",
+    "elliptic-curves/cas/audit_new_mw16_rank27_direction.py": "3f333429335c1943bd9461c458b00fed13573641232de4284026d10d1de9fbc2"
+  }
+}

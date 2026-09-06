@@ -1,0 +1,2407 @@
+{
+  "claim_boundary": "Retrospective exact coordinate inversion and Q-isomorphism checks on69 saved successful public R17 fibres. Reported ranks are pinned catalogue metadata, not newly replayed point proofs. Missing frame maps remain unknown. These public successes are a selected sample without a historical failed-trial denominator; height coverage is not a success probability, density theorem or fair family-quality comparison. No public parameter or point enters a prospective candidate list, no new scan, and no claim that larger height guarantees new near-record curves.",
+  "reported_rank_coverage": {
+    "24": {
+      "inside_box_counts": {
+        "1024": 5,
+        "131072": 20,
+        "16384": 10,
+        "32768": 13,
+        "4096": 8,
+        "524288": 21,
+        "65536": 16
+      },
+      "matched_public_curves": 21,
+      "minimum_height": 152
+    },
+    "25": {
+      "inside_box_counts": {
+        "1024": 2,
+        "131072": 17,
+        "16384": 7,
+        "32768": 10,
+        "4096": 5,
+        "524288": 18,
+        "65536": 13
+      },
+      "matched_public_curves": 18,
+      "minimum_height": 491
+    },
+    "26": {
+      "inside_box_counts": {
+        "1024": 1,
+        "131072": 13,
+        "16384": 3,
+        "32768": 6,
+        "4096": 2,
+        "524288": 14,
+        "65536": 9
+      },
+      "matched_public_curves": 14,
+      "minimum_height": 491
+    },
+    "27": {
+      "inside_box_counts": {
+        "1024": 0,
+        "131072": 10,
+        "16384": 1,
+        "32768": 4,
+        "4096": 1,
+        "524288": 11,
+        "65536": 6
+      },
+      "matched_public_curves": 11,
+      "minimum_height": 1103
+    },
+    "28": {
+      "inside_box_counts": {
+        "1024": 0,
+        "131072": 7,
+        "16384": 0,
+        "32768": 3,
+        "4096": 0,
+        "524288": 8,
+        "65536": 5
+      },
+      "matched_public_curves": 8,
+      "minimum_height": 21170
+    },
+    "29": {
+      "inside_box_counts": {
+        "1024": 0,
+        "131072": 2,
+        "16384": 0,
+        "32768": 1,
+        "4096": 0,
+        "524288": 3,
+        "65536": 1
+      },
+      "matched_public_curves": 3,
+      "minimum_height": 21170
+    }
+  },
+  "rows": [
+    {
+      "compact_parameter": "-25796/5471",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-11884949593715574220391887419653214126145224433571224910904430512",
+        "496975693303757952502704212220359870554360902202465070132152311576717804156920481996025215513984"
+      ],
+      "current_reported_rank_lower_bound": 28,
+      "family": "08234",
+      "height": 25796,
+      "id": 11,
+      "inside_boxes": {
+        "1024": false,
+        "131072": true,
+        "16384": false,
+        "32768": true,
+        "4096": false,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "89117310572254255983994722000/24270473687594386091043190316353",
+      "public_curve": [
+        "1",
+        "-1",
+        "1",
+        "-20067762415575526585033208209338542750930230312178956502",
+        "34481611795030556467032985690390720374855944359319180361266008296291939448732243429"
+      ],
+      "snapshot_reported_rank_lower_bound": 28,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "89074/31895",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-560000215698458803121460946884888001680950380638398718549434415792",
+        "164999678705371514678526173191892182890581143327714684680688885368083853061215711174799033415485824"
+      ],
+      "current_reported_rank_lower_bound": 29,
+      "family": "11952",
+      "height": 89074,
+      "id": 12,
+      "inside_boxes": {
+        "1024": false,
+        "131072": true,
+        "16384": false,
+        "32768": false,
+        "4096": false,
+        "524288": true,
+        "65536": false
+      },
+      "native_family": "norm12-orbit-11952",
+      "native_parameter": "-517322777134156443281121957597/93938104767880054864772987570",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-27006183241630922218434652145297453784768054621836357954737385",
+        "55258058551342376475736699591118191821521067032535079608372404779149413277716173425636721497"
+      ],
+      "snapshot_reported_rank_lower_bound": 29,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-1446/29",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-25351483283445356343106795545573831699943987632",
+        "1564558413860670214179884046141954226562462700268426646941497711209856"
+      ],
+      "current_reported_rank_lower_bound": 25,
+      "family": "08234",
+      "height": 1446,
+      "id": 65,
+      "inside_boxes": {
+        "1024": false,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-66548432944210788697583478000/675319666218423388848915879973",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-1222583105876029916237789137035775062690200",
+        "523967447200209449943328506898413682821590945806099349816040000"
+      ],
+      "snapshot_reported_rank_lower_bound": 25,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-4542/251",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-160833773247069779859411085522078721478678161079548592",
+        "24120114601569337164081337051443571889462999323777531137519365711274275720251776"
+      ],
+      "current_reported_rank_lower_bound": 26,
+      "family": "08234",
+      "height": 4542,
+      "id": 66,
+      "inside_boxes": {
+        "1024": false,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": false,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-150572530690755814862306778000/7216651302669840081951218727763",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-271568164801421919805097494520335727505515190",
+        "1673523352045742769296938739782713519216640490554763586630258973092"
+      ],
+      "snapshot_reported_rank_lower_bound": 26,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-70606/135",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-32970729900819935849785706735065090539396149599892374007472",
+        "2334608521470022944202754299610527554667522406471125031857506346153964916970677147580800"
+      ],
+      "current_reported_rank_lower_bound": 27,
+      "family": "08234",
+      "height": 70606,
+      "id": 67,
+      "inside_boxes": {
+        "1024": false,
+        "131072": true,
+        "16384": false,
+        "32768": false,
+        "4096": false,
+        "524288": true,
+        "65536": false
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "177037742360733777935708282000/373546811505433901324413641533",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-55671146865244401916117773020296610079754015500970",
+        "161981895322788558220906653027519611838007321625214218991719656790551905956"
+      ],
+      "snapshot_reported_rank_lower_bound": 27,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "887/389",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-752309995705645521995350438404692452062971571626475",
+        "7537643911551925757259637659968807138904642341551548097681162016305536843750"
+      ],
+      "current_reported_rank_lower_bound": 25,
+      "family": "074d9",
+      "height": 887,
+      "id": 351,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-074d9",
+      "native_parameter": "-1328795128332249413091778368/9355667371956741789361767413",
+      "public_curve": [
+        "1",
+        "-1",
+        "1",
+        "-250918915934128421340307896120883808444030",
+        "45913507617476434834864347970127139550348536547695769941315597"
+      ],
+      "snapshot_reported_rank_lower_bound": 25,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "21170/17691",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-902866683650823638551269496600583493978261743721891427964215152",
+        "10571748984373332344014830389343058101059987978830345940729679812103740146678378532996803442304"
+      ],
+      "current_reported_rank_lower_bound": 29,
+      "family": "074d9",
+      "height": 21170,
+      "id": 356,
+      "inside_boxes": {
+        "1024": false,
+        "131072": true,
+        "16384": false,
+        "32768": true,
+        "4096": false,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-074d9",
+      "native_parameter": "-970521251165766412987689802944/5201452365084059419448702694373",
+      "public_curve": [
+        "0",
+        "1",
+        "0",
+        "-24391876744717707263532695900840552395172973498186560300",
+        "46943906433780620456844832699051340439698711588743845207309557656274241785479710000"
+      ],
+      "snapshot_reported_rank_lower_bound": 29,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "1103/375",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-1612946879884007387392357237654400750349907147671600",
+        "29051752090188928784116468963871896969640900476754411814747774364916296982400"
+      ],
+      "current_reported_rank_lower_bound": 27,
+      "family": "08f72",
+      "height": 1103,
+      "id": 363,
+      "inside_boxes": {
+        "1024": false,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08f72",
+      "native_parameter": "-1158455904970405917875280423497790960/7008997530131828358330671985973631951",
+      "public_curve": [
+        "1",
+        "0",
+        "1",
+        "-77784861105517331567918462464043246062399071551",
+        "9729372994024391552036598189578155261901018816064506695929640000090598"
+      ],
+      "snapshot_reported_rank_lower_bound": 27,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "22011/826",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-13725621038506092176147653409735270590720302252249436695147",
+        "625309186400176457967054133499989406357917016929610033425126658736534269817742231571814"
+      ],
+      "current_reported_rank_lower_bound": 28,
+      "family": "08f72",
+      "height": 22011,
+      "id": 364,
+      "inside_boxes": {
+        "1024": false,
+        "131072": true,
+        "16384": false,
+        "32768": true,
+        "4096": false,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08f72",
+      "native_parameter": "-4889478984105233975746550959971939120/31980538646115718907687342513498498947",
+      "public_curve": [
+        "1",
+        "1",
+        "1",
+        "-130750086100690559519772647173975676256671070075535710",
+        "18384836769279670096464557320539537966102850938229644233522192756030698426661787"
+      ],
+      "snapshot_reported_rank_lower_bound": 28,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "17/55",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-53523401312834393138606756670599243625867",
+        "4758179756700707793642768951843512648225143583814258516744390"
+      ],
+      "current_reported_rank_lower_bound": 22,
+      "family": "074d9",
+      "height": 55,
+      "id": 376,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-074d9",
+      "native_parameter": "-2885452538662711051989717312/13394519325797029034300898515",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-1445990013167463346228809073545620",
+        "21128721995181552195912389455017474056877615305616"
+      ],
+      "snapshot_reported_rank_lower_bound": 22,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-174/71",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-2020375433699528679934517217104374209433157232",
+        "35020366640065318882685467197479550469748619017576935867170381154944"
+      ],
+      "current_reported_rank_lower_bound": 23,
+      "family": "074d9",
+      "height": 174,
+      "id": 377,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-074d9",
+      "native_parameter": "-24894098859432097011003667776/89496335058901143374489629459",
+      "public_curve": [
+        "0",
+        "1",
+        "0",
+        "-54582530786918941306870296700466269980",
+        "155508120487725564589054990982409349995405123741445623600"
+      ],
+      "snapshot_reported_rank_lower_bound": 23,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-205/141",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-144241390841753528006816671691830591296194793072",
+        "21135033553254465805871286630510106970914116579586686703351121176654464"
+      ],
+      "current_reported_rank_lower_bound": 24,
+      "family": "08f72",
+      "height": 205,
+      "id": 378,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08f72",
+      "native_parameter": "-566882880896877014074302259297950480/3961009332576056965142591776688723713",
+      "public_curve": [
+        "0",
+        "1",
+        "0",
+        "-3896830274733436253799445060729628270620",
+        "93850226586476646888800893430393312604104981963137354427600"
+      ],
+      "snapshot_reported_rank_lower_bound": 24,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-28841/439099",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-994891683111180785518415052767841255785240824752284630318031117905659707",
+        "381344005445488138712060902284203440686025449856470241085579249127550371269004576211579671434508484222201494"
+      ],
+      "current_reported_rank_lower_bound": 29,
+      "family": "074d9",
+      "height": 439099,
+      "id": 385,
+      "inside_boxes": {
+        "1024": false,
+        "131072": false,
+        "16384": false,
+        "32768": false,
+        "4096": false,
+        "524288": true,
+        "65536": false
+      },
+      "native_family": "norm12-orbit-074d9",
+      "native_parameter": "-4569968803191492789881348058432/20219201289082406615406548938643",
+      "public_curve": [
+        "1",
+        "-1",
+        "1",
+        "-331827496674406562041164370816053963496434513510649284995530467",
+        "2322853282053688692296179831887155386042997843373920023045057766047634710076537198987220653859"
+      ],
+      "snapshot_reported_rank_lower_bound": 29,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "93/152",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-22711783894766312705525658858173110015799472",
+        "45671084982867199471046938270794500437181669726833689572148990336"
+      ],
+      "current_reported_rank_lower_bound": 24,
+      "family": "07ca9",
+      "height": 152,
+      "id": 389,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-07ca9",
+      "native_parameter": "-2894205664468994496955959240/13458275699231869785327455027",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-1095282788134949493900735863144922358015",
+        "15295153953560099274066571309175569823788527272931004403225"
+      ],
+      "snapshot_reported_rank_lower_bound": 24,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-428/491",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-5761100963014554527961307470999710771569995744000",
+        "5837616323282547136659708801248913702346400929445202186438080076995174400"
+      ],
+      "current_reported_rank_lower_bound": 26,
+      "family": "07ca9",
+      "height": 491,
+      "id": 390,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-07ca9",
+      "native_parameter": "-15016892529059225953186513980120/107318212874126569523668597319401",
+      "public_curve": [
+        "0",
+        "0",
+        "0",
+        "-3430010766159976165957759077669961926755875",
+        "2681763916740340149774032713047940546291901244757804845784121650"
+      ],
+      "snapshot_reported_rank_lower_bound": 26,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-51027/15730",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-150049018124426496807891816413695866982544231720267575202934259632",
+        "22799448969343617026536850190144219527538878544662705776168402370875677108915176315066367742326144"
+      ],
+      "current_reported_rank_lower_bound": 28,
+      "family": "07ca9",
+      "height": 51027,
+      "id": 391,
+      "inside_boxes": {
+        "1024": false,
+        "131072": true,
+        "16384": false,
+        "32768": false,
+        "4096": false,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-07ca9",
+      "native_parameter": "-45893899045288706850898992590520/317459242949710578550437826245181",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-253358083066972965014377893305253723955166094643129094555",
+        "1581891748619190376056299653607794133364757942527274090543772455710877264718525507025"
+      ],
+      "snapshot_reported_rank_lower_bound": 28,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "current_reported_rank_lower_bound": 26,
+      "id": 393,
+      "native_family": "norm12-orbit-0e80b",
+      "native_parameter": "468216440440228603200/743386878825686635399",
+      "public_curve": [
+        "1",
+        "-1",
+        "1",
+        "-1741982199429864469286704668873479663123369747",
+        "33616270057492031684630745788339880287409192129638100252550440305971"
+      ],
+      "snapshot_reported_rank_lower_bound": 26,
+      "status": "NO_PINNED_COMPACT_COORDINATE_MAP"
+    },
+    {
+      "compact_parameter": "-239/4",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-13133056233281097185428164692267316529467",
+        "576104390258074765120559319943360178904126346918880184013974"
+      ],
+      "current_reported_rank_lower_bound": 21,
+      "family": "08234",
+      "height": 239,
+      "id": 394,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-403191303057949987902258000/3083697957482654407130078033",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-354803089674674467206754048738095",
+        "2558194545892203175112161719607326368645810580537"
+      ],
+      "snapshot_reported_rank_lower_bound": 21,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-41428/3621",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-930668746842928808610190096557236399797843096248412127559894192",
+        "10748018761128899822703186662873171836534642804738771283629967019484751567848701549321975153024"
+      ],
+      "current_reported_rank_lower_bound": 28,
+      "family": "11952",
+      "height": 41428,
+      "id": 395,
+      "inside_boxes": {
+        "1024": false,
+        "131072": true,
+        "16384": false,
+        "32768": false,
+        "4096": false,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-11952",
+      "native_parameter": "-205030389514850913908989849692/84586289990466564607930545463",
+      "public_curve": [
+        "1",
+        "-1",
+        "1",
+        "-1571436138788579721131230519678999674817868532078561707",
+        "745728645244690014891125566886054009886463789156281759801829847987045667940220539"
+      ],
+      "snapshot_reported_rank_lower_bound": 28,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-1909/53",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-143183773005726677417868523535833259299600776375",
+        "4969071879554438880479758424573781254703141186512479612943960049634650"
+      ],
+      "current_reported_rank_lower_bound": 25,
+      "family": "08234",
+      "height": 1909,
+      "id": 396,
+      "inside_boxes": {
+        "1024": false,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-16495471350955959013922382000/272083989605379565880507240369",
+      "public_curve": [
+        "0",
+        "1",
+        "0",
+        "-61892122170276517714464524289071240329708",
+        "1412172132176588711941495717130133429244688284956311756421488"
+      ],
+      "snapshot_reported_rank_lower_bound": 25,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-63/2",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-537008327143925669827797589655817267",
+        "190405697468259312192654452789840439822791261995866126"
+      ],
+      "current_reported_rank_lower_bound": 22,
+      "family": "08234",
+      "height": 63,
+      "id": 397,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-1315074624325880386403022000/26445671958688287471332197877",
+      "public_curve": [
+        "1",
+        "0",
+        "1",
+        "-414358277117226597089349992018378",
+        "4081054901154391944908039080891277227782032172248"
+      ],
+      "snapshot_reported_rank_lower_bound": 22,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "current_reported_rank_lower_bound": 27,
+      "id": 404,
+      "native_family": "norm12-orbit-0e80b",
+      "native_parameter": "1702629224691278400/36284252925887798539",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-19287996132928291523665979159101108205455355568716415",
+        "983351868730932985116649853601474646887931496490259148783013795470646286030617"
+      ],
+      "snapshot_reported_rank_lower_bound": 27,
+      "status": "NO_PINNED_COMPACT_COORDINATE_MAP"
+    },
+    {
+      "compact_parameter": "226/9",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-182180316134125274863397032668195107781552",
+        "33012494492697403631934535048269109476129511057492771780101504"
+      ],
+      "current_reported_rank_lower_bound": 21,
+      "family": "08234",
+      "height": 226,
+      "id": 412,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "5116147941324926097204662000/108553076024617021984667171963",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-307611847416435887033706352943575",
+        "2290502402472665291747329823139073039386938155625"
+      ],
+      "snapshot_reported_rank_lower_bound": 21,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "326/5",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-127076073394718434410384983195803687284912",
+        "17475276101260555675053658497326012601388237775989177756963200"
+      ],
+      "current_reported_rank_lower_bound": 24,
+      "family": "08234",
+      "height": 326,
+      "id": 413,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "2745932205572884766876886000/30771973800710309768814369259",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-6128282860470603511303288155661829055",
+        "5852434608243230932760773539506370894306070621155215001"
+      ],
+      "snapshot_reported_rank_lower_bound": 24,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-10834/329",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-247504977046088425787570166117511785808544776263026352",
+        "38543680291037411089022013654702067409196068952004475039262553364482231060715904"
+      ],
+      "current_reported_rank_lower_bound": 25,
+      "family": "08234",
+      "height": 10834,
+      "id": 414,
+      "inside_boxes": {
+        "1024": false,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": false,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-457762841522720189192203614000/8619686979413978720886739575889",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-417912674922888853976693575239883106296909250",
+        "2674272079811740358679570958520093732597884037078754632469690562500"
+      ],
+      "snapshot_reported_rank_lower_bound": 25,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "76250/7809",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-165972800162332793500830440874617268588210793504645064063098168752",
+        "25459254140930918006673494115312964039101370075960064645639762354130399938880145446586872124063104"
+      ],
+      "current_reported_rank_lower_bound": 27,
+      "family": "08234",
+      "height": 76250,
+      "id": 416,
+      "inside_boxes": {
+        "1024": false,
+        "131072": true,
+        "16384": false,
+        "32768": false,
+        "4096": false,
+        "524288": true,
+        "65536": false
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "329675622631793200611493834000/12473684893072118820044685712901",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-280245422569286389673485906779759546676443623212141473025",
+        "1766436728610859597051807326576217018574447760859287591309968524822782669465597775625"
+      ],
+      "snapshot_reported_rank_lower_bound": 27,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "40457/124",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-272020695746811491282500277970855933343481443766454321627",
+        "1986250003471109390968442383540382827649162373345561888928892215897639008991534262646"
+      ],
+      "current_reported_rank_lower_bound": 26,
+      "family": "08234",
+      "height": 40457,
+      "id": 417,
+      "inside_boxes": {
+        "1024": false,
+        "131072": true,
+        "16384": false,
+        "32768": false,
+        "4096": false,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "78710579614331550717557586000/389676215625730197039450595619",
+      "public_curve": [
+        "1",
+        "-1",
+        "1",
+        "-90727410878564661344565489473501960846232523437",
+        "12098701628080370470556151946562046635806600287349459526333680614637461"
+      ],
+      "snapshot_reported_rank_lower_bound": 26,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "49290/1843",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-482719647795810093320407098982154156780654814089424714321072",
+        "146271418698241055825831501267689098828349485273724406725580538660527753364556702653358464"
+      ],
+      "current_reported_rank_lower_bound": 21,
+      "family": "08234",
+      "height": 49290,
+      "id": 418,
+      "inside_boxes": {
+        "1024": false,
+        "131072": true,
+        "16384": false,
+        "32768": false,
+        "4096": false,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "471947015220775925908478394000/9600802148680421327667456558941",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-815073141784200754215404771679519674339839601501320",
+        "10148734322864283657618226218200352363193275261694417405081164533181261838400"
+      ],
+      "snapshot_reported_rank_lower_bound": 21,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-336",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-14452896612876519497420586630344379828912",
+        "674105636682866619286474990981206256230044827513176969677184"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 336,
+      "id": 419,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "17561518495504281149374446000/25936802910207488324168436679",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-24403746364851709763421313327110",
+        "46771399861468337270143023679331346542490944100"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "522",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-107753630446371343665536121184109088750000",
+        "14383175493711234576765391937696316769180165450745835074006400"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 522,
+      "id": 420,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "5643327723868646466105066000/24332615403188437069182433813",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-181942231909583197148101236805013",
+        "997946339099553525501068395789161466011460824417"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "97/3",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-21224793389057834528310468255657253287",
+        "37884544130792482430289924062146797816281686501094203434"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 97,
+      "id": 421,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "2090720669960560496037074000/37426781906573937241270207201",
+      "public_curve": [
+        "0",
+        "1",
+        "0",
+        "-9174555732805735926833867064540",
+        "10766496995514664777353668694668185576606491888"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "8",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-12704183955200488843808475333385392",
+        "544424219658615233197988331586213827812981310677376"
+      ],
+      "current_reported_rank_lower_bound": 19,
+      "family": "08234",
+      "height": 8,
+      "id": 422,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "792427946812204441634322000/33240771325917788765001409913",
+      "public_curve": [
+        "1",
+        "-1",
+        "1",
+        "-7563743114616965332438173567",
+        "250105033771561875331934803308050741991591"
+      ],
+      "snapshot_reported_rank_lower_bound": 18,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "109524/893",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-5759680588207449980626506600800302350051802962177524905375152",
+        "5212681731388931212901949927257463274578607467923610865200443200584964297256062820728077696"
+      ],
+      "current_reported_rank_lower_bound": 28,
+      "family": "08234",
+      "height": 109524,
+      "id": 423,
+      "inside_boxes": {
+        "1024": false,
+        "131072": true,
+        "16384": false,
+        "32768": false,
+        "4096": false,
+        "524288": true,
+        "65536": false
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "6170071402911327039657000906000/47296218242575125682231168628149",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-277762374045498166503978906288594827838146361987727860020",
+        "1745716564920954436762537886066484987032789883722113978504519639885660024203054176400"
+      ],
+      "snapshot_reported_rank_lower_bound": 28,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "392",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-15648639727862079965079850795171491380400",
+        "869648964338164280680838068996885228103058254925745939440000"
+      ],
+      "current_reported_rank_lower_bound": 21,
+      "family": "08234",
+      "height": 392,
+      "id": 427,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "851222168320107999403438800/3971978353812537876442058849",
+      "public_curve": [
+        "1",
+        "-1",
+        "1",
+        "-26422761132426221314307634025955",
+        "60338761815319965289688140627358385040885056547"
+      ],
+      "snapshot_reported_rank_lower_bound": 21,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-319/3",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-57644562172033381826682832374862786023975",
+        "5374769116805284331793712293512907956417283225635673469607850"
+      ],
+      "current_reported_rank_lower_bound": 21,
+      "family": "08234",
+      "height": 319,
+      "id": 428,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-1061553873760534801152982000/2714451171580656582150425901",
+      "public_curve": [
+        "0",
+        "1",
+        "0",
+        "-24917238940622813301347573754793308",
+        "1527468176676160166289505293787711918102662665461488"
+      ],
+      "snapshot_reported_rank_lower_bound": 21,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-100",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-5959915651935773519442444379375073712",
+        "5651460222308308199195288067271930823892882356991667584"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 100,
+      "id": 429,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-709979652021088918565922000/2094537923012537130203547167",
+      "public_curve": [
+        "1",
+        "-1",
+        "1",
+        "-3548379898700520547221772345212",
+        "2596244984555180683994653333342076110656596799"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "820/7",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-62691269825885471336696858427362779023206832",
+        "187436162773368779745065508586881293275512253076603335821233679744"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 820,
+      "id": 430,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "46309830168179021183099262000/364114662991888799541421970543",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-105854341112379836965356844298984005",
+        "13004863393089789470296160259493256256960691084729025"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-7/3",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-97478275642190115388469171740619894727",
+        "372555675242179442877082847835208032638537422504528238346"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 7,
+      "id": 431,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "241098160269751870586578000/31463150394406273658640687777",
+      "public_curve": [
+        "0",
+        "1",
+        "0",
+        "-42135622063493348388166878576380",
+        "105877466660516913227884540253347402151079039600"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-982/3",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-79610489076323724159018393757456717976421552",
+        "275365243968488570689875735403938364425962492311691450460658778496"
+      ],
+      "current_reported_rank_lower_bound": 21,
+      "family": "08234",
+      "height": 982,
+      "id": 432,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "17099112868081578993011822000/24445895032165572428511056823",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-134422478444183165897105480803299200",
+        "19105637503606867472088832718752567503960757778399232"
+      ],
+      "snapshot_reported_rank_lower_bound": 21,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-107/5",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-3158426095079578632937541123782894030527",
+        "70811710487769067976922650278706854165715099444269147925250"
+      ],
+      "current_reported_rank_lower_bound": 22,
+      "family": "08234",
+      "height": 107,
+      "id": 433,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-3880971100300964367055974000/140915765313570293440972260469",
+      "public_curve": [
+        "0",
+        "0",
+        "0",
+        "-1365250332763869332711550077906847",
+        "20124145234049359349449557795949681874466874385250"
+      ],
+      "snapshot_reported_rank_lower_bound": 21,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-706/11",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-70920053487332887186434378816158507009257392",
+        "228744588773704399947434729257137875883164739486247120663177098624"
+      ],
+      "current_reported_rank_lower_bound": 21,
+      "family": "08234",
+      "height": 706,
+      "id": 434,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-33646761989714848698013626000/229058385912178612435943246851",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-119748659652394027153495287863671115",
+        "15870961531086086871587619570217861268496637395066225"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-1190/3",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-290913361550208489500017232515918098771767472",
+        "1933217955843498334540611393978993252240683945405902756884958433664"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 1190,
+      "id": 435,
+      "inside_boxes": {
+        "1024": false,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "20798357887463196243912814000/36373158056500899593770095671",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-491207823564768633438000932167842220",
+        "134132256298970127093936962644107344568006870419584400"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-1064",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-50732708941986985599375880997190656199141552",
+        "134116546042470815407814998062982263716057814736557294515337818496"
+      ],
+      "current_reported_rank_lower_bound": 21,
+      "family": "08234",
+      "height": 1064,
+      "id": 436,
+      "inside_boxes": {
+        "1024": false,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "56403591199011262283834862000/151173064665728423559388344583",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-85662285878324393186410215408681700",
+        "9305394083127186081227398401022012428368804281129232"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-529/2",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-757397427944994478409912318737595305090467",
+        "253924874838862176351751195884069577777503603377306956933010526"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 529,
+      "id": 437,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "1963810295609569765626114000/1948116130908811740713578981",
+      "public_curve": [
+        "1",
+        "0",
+        "1",
+        "-20461874431447421784527688374633158",
+        "1127554729426977874077743817330162797017594385944556"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-289/5",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-61639275482789157243937638906723611085447",
+        "5862005846820186930748906715715405250896450075780383072085450"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 289,
+      "id": 438,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-13591489276177709650671078000/109606699874690059632167283493",
+      "public_curve": [
+        "0",
+        "1",
+        "0",
+        "-26643979890902407817591906993402300",
+        "1665937119886856944539473116224248568755065751453424"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-560/19",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-49324405757980677039156522496985946634510512",
+        "192033396090149818367164232981952544182173646550201903560979353984"
+      ],
+      "current_reported_rank_lower_bound": 21,
+      "family": "08234",
+      "height": 560,
+      "id": 439,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-22932269786525492762431146000/509090838750225203722558966331",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-83284362986612591237124770419410460",
+        "13323832744501378591680462595599415504584388273763600"
+      ],
+      "snapshot_reported_rank_lower_bound": 21,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "330",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-5225465271374197025021273312996383549872",
+        "167453305425960668254528582145323694223598338008164022676864"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 330,
+      "id": 440,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "17972575488747984558799506000/88633733256244356272887138409",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-251999675509943915172708010850520040",
+        "56079773175596610092961984688743586678074315954876992"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-8690/91",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-20926632634405518117934097478082597985850985472586672",
+        "1175501472278908955678801425274310100336600725781163773696692587480947245819264"
+      ],
+      "current_reported_rank_lower_bound": 23,
+      "family": "08234",
+      "height": 8690,
+      "id": 441,
+      "inside_boxes": {
+        "1024": false,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": false,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-430381695193975039113952794000/1404752068112507557772681746259",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-1009193317631438952446667509552594424471980395090",
+        "393673064651019213659149270108184935843722977273821305373879015181970692"
+      ],
+      "snapshot_reported_rank_lower_bound": 23,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-16224466/65911",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-658491175760355065539345215488334453621241545925233665467954412748342720929712",
+        "205502135131598358617635416592621141890246704577318111389788915850982955002252569259144641318216552885564721810355584"
+      ],
+      "current_reported_rank_lower_bound": 19,
+      "family": "08234",
+      "height": 16224466,
+      "id": 442,
+      "inside_boxes": {
+        "1024": false,
+        "131072": false,
+        "16384": false,
+        "32768": false,
+        "4096": false,
+        "524288": false,
+        "65536": false
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "841551664536210085969310822946000/690835445324376098487926182639729",
+      "public_curve": [
+        "1",
+        "-1",
+        "1",
+        "-13726712801000904290088341272158565293041168623859938751245316012367",
+        "19558755605299435356266450889897244452377885866483722103879303166884961624067395928673936320669626391"
+      ],
+      "snapshot_reported_rank_lower_bound": 19,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-16500483/1605734",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-609385888550714509266303429389328297495210228728794714198363010774318131735665321987",
+        "176865350980386642686729050233728230109115238802852445651523108071931035955205136456205013166815843913251754992623423040883966"
+      ],
+      "current_reported_rank_lower_bound": 19,
+      "family": "08234",
+      "height": 16500483,
+      "id": 443,
+      "inside_boxes": {
+        "1024": false,
+        "131072": false,
+        "16384": false,
+        "32768": false,
+        "4096": false,
+        "524288": false,
+        "65536": false
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-146665734108130810782400220106000/24163723437049785268884362302003751",
+      "public_curve": [
+        "1",
+        "0",
+        "1",
+        "-470205160918761195421530423911518748067291843154934193054292446585122015228136823",
+        "3790838284044638260603760507410155823669268918149579764831861050275267231873985142865201191329587809161081790942820131278"
+      ],
+      "snapshot_reported_rank_lower_bound": 19,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-822/5",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-53818519309733157572713316631739306488253872",
+        "151825152183839973151997790077875291373127261690009781415993712000"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 822,
+      "id": 445,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-6004205051810556038138922000/2559409339301747435605488907",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-90872683182171123779863585495688745",
+        "10534068423995936974583664932054639017801516408581081"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-347/2",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-49696453011709363921826358764587458084147",
+        "4256170561622016070553688824264602052719032307360694738348814"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 347,
+      "id": 446,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-1270201854475516531082178000/288245686154062102772490803",
+      "public_curve": [
+        "1",
+        "-1",
+        "0",
+        "-1342601048927478697366454308878729",
+        "18899547549448287969118946591445127688679527385785"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-562/5",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-4870354107491488280553497578158823409276592",
+        "4171394387945001370506992361364410484685754321804076369712880000"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 562,
+      "id": 447,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-28157266539992827576093734000/62643101716369708918959818029",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-8223603166187780927160926046820690",
+        "289423414197390060483587925043989774858424061454596"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-465/8",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-2757399811789739520293781328678768609664907",
+        "1753620231721709519771733128921218953208004958201816238303889094"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 465,
+      "id": 448,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-1367819033131946630498907000/10932715464755720040173152477",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-74494006217084732231494701201553460",
+        "7786959773639428479142830515805837724808339207958672"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-272/7",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-27234529118210910638064403929050263123632",
+        "1219897705215036001219441770417114807281053762071099885558144"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 272,
+      "id": 449,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-11953278887081450518591362000/176260270358607396688592108687",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-45985559764874647626604299762930",
+        "84640033039127748879277321178403309377568768900"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-309/8",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-74417587643345995430523021039795775874475",
+        "5250350289952322849317983444051257104249242185520542284717350"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 309,
+      "id": 450,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-169522540456281340918191000/2521997365510575084557540963",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-2010468055035388719404423460545238",
+        "23314207811821692898503348621971264563108905459492"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-90/7",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-74216418852039784703715480365403760113072",
+        "7434058938283305295060596376297837837497187769898442100014464"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 90,
+      "id": 451,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-2242760711204705234976258000/207569335797487630497397085663",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-125314579511982544183702370268945",
+        "515796522496291694328940607345967092483061434025"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-612/19",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-32573371579842842388263355638634246482823600",
+        "76339813075768094831041350651373863030559420268635691479399689600"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 612,
+      "id": 452,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-104925320616578390614722000/2041409761150913095300468111",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-55000206503542170766038007004896613",
+        "5296677150314724213014972255851724752418661641474817"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-112/9",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-561279902755205847523902653668663440961200",
+        "154811528052160305107561585712989906094416168532511757354121600"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 112,
+      "id": 453,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-179025043034040387101890000/17834254722014423068224246767",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-947722297710433437416491166575338",
+        "10741271823987029219560000495736411788978103849892"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "40/7",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-77722830475441692760666174266722129714352",
+        "8331476629018537027635659181392875674630867399639755455979904"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 40,
+      "id": 454,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "4693323700135827110463102000/229932953968116368932257783503",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-131235162921679918505097922631000",
+        "578061958908714844618861371898647409879281000000"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "383/3",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-118259707635233901832670986531685931181647",
+        "15327737231421561752153268004585955872691888931183935496771186"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 383,
+      "id": 455,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "7177182571610284216025938000/53826768565035012093501385617",
+      "public_curve": [
+        "0",
+        "1",
+        "0",
+        "-51118531933701314117226670804090500",
+        "4356025409211819471328533670264706621678809638000000"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "678",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-714188450097991245288261883882907846004912",
+        "208173872469727632773730183563694781443351460213667924403474816"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 678,
+      "id": 456,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "36539939912951871145052562000/148499418820696671467745006473",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-1205908701884023972043061821726860",
+        "14443705704500032075948025770184419656032855664272"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-47/9",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-635670384490125798837922725440515265411775",
+        "193915966566283931634394124551057294537427756262943740492701250"
+      ],
+      "current_reported_rank_lower_bound": 21,
+      "family": "08234",
+      "height": 47,
+      "id": 457,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "10435554135462138215884400/3715941732207076203210587339",
+      "public_curve": [
+        "0",
+        "1",
+        "0",
+        "-274772680388272620238822915925029108",
+        "55109431017839872572667629268320431851587994748732288"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "590/9",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-14486003387198654970649636373064528181444272",
+        "21271325436862433315170099077481566553877842744412024248515656064"
+      ],
+      "current_reported_rank_lower_bound": 21,
+      "family": "08234",
+      "height": 590,
+      "id": 458,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "11589826725242756286281398000/129425786317203844523870489947",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-24459647223008819321132521677571770",
+        "1475866115712309323058485904595825308688025746908900"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "20/23",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-1142007285530715439772511094156900288899103152",
+        "15007629635263760806396459940871635304944607493956015947231665106304"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 23,
+      "id": 459,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "9475705519297261352573598000/736325176034700579261823547647",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-1928281706386442181413475191954491925",
+        "1041272774542851005444015987964798785676127762575830625"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "834",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-3453516050249271187977285995062013419799472",
+        "1930220666805072503321034473945147410879491272712641346503009664"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 834,
+      "id": 462,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "44863241206560509959579794000/175335760625451157589577843881",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-5831269123044942826740026401456095",
+        "133924295711655587194437025768409363893193455880025"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "107/8",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-173328409505133671569506294030427510550187",
+        "26722331872548703337437387831975310020584873784626424078852134"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 107,
+      "id": 463,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "539604179986699764496917000/17082710461678623109759844383",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-4682646150937436689802827639391590",
+        "118660653877767113794215602966189789176568569086692"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "-684/35",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-20966278421665194950471290297091136339294390192",
+        "1159954792244404204344468008523436125935466781670008192432247917680000"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 684,
+      "id": 464,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "-23698755496436484396672138000/997592166280306423304236172203",
+      "public_curve": [
+        "1",
+        "0",
+        "0",
+        "-35401605264465213409496277503084042915",
+        "80481020268953308189156706852613645754737587637675825921"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    },
+    {
+      "compact_parameter": "794/7",
+      "compact_specialization": [
+        "0",
+        "0",
+        "0",
+        "-51871575735641340668711320101350903683508400",
+        "141255508551614645617526756982679131271733972352938662836215280000"
+      ],
+      "current_reported_rank_lower_bound": 20,
+      "family": "08234",
+      "height": 794,
+      "id": 465,
+      "inside_boxes": {
+        "1024": true,
+        "131072": true,
+        "16384": true,
+        "32768": true,
+        "4096": true,
+        "524288": true,
+        "65536": true
+      },
+      "native_family": "norm12-orbit-08234",
+      "native_parameter": "1796904531436436588560455600/14385677574310522074177993239",
+      "public_curve": [
+        "1",
+        "-1",
+        "1",
+        "-1081299566142772205522196792975080",
+        "13444054816725382360652400584113824513310769285547"
+      ],
+      "snapshot_reported_rank_lower_bound": 20,
+      "status": "PASS_EXACT_COMPACT_Q_ISOMORPHISM"
+    }
+  ],
+  "schema": "elliptic-curves.public-compact-parameter-heights.v1",
+  "sources": {
+    "artifacts/generated-results/elkies-k3-r17-norm12-icarm-calibration-dataset-v1.json": "38f24f0c5e85ab78033576eb85914de31f1e494a64f1945b75ad6c08edb13e19",
+    "artifacts/generated-results/elliptic-curves/compact_six_r17_atlas_v1.json": "2f28c081c874adfaf738c1119e8f4e6e7ce70ea74277cd8cdb370a02bca34c5d",
+    "artifacts/local/elliptic-curves/retention24-current-catalogue-v1/database.json": "4ab1b29bbcb90ba329c280b26924313685a98b30891baefafd98dfa4f25199ed",
+    "elliptic-curves/cas/audit_public_compact_parameter_heights.py": "b6cacd5affacc9fcccfc97acaf17c44ef745c770299838b01fd3050b65656023",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9",
+    "elliptic-curves/cas/compact_atlas_specialization.py": "ea68110968e86cb0502a74a995c26054ff8e4a0da90c49bb2bdf0b753a759b14"
+  },
+  "status": "PASS",
+  "status_counts": {
+    "NO_PINNED_COMPACT_COORDINATE_MAP": 2,
+    "PASS_EXACT_COMPACT_Q_ISOMORPHISM": 67
+  }
+}

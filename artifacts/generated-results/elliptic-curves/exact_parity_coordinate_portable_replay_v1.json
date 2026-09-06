@@ -1,0 +1,1401 @@
+{
+  "claim_boundary": "All31 exact checks completed from isolated extraction of the pinned base archives and supplement. This attests reproducibility of the listed finite certificates, not a new rank28/32 result or a second sieve enumeration.",
+  "ledger": {
+    "rows": [
+      {
+        "name": "geometry",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/export_r17_exact_maximum_parity_classes.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/r17_exact_maximum_parity_classes_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/geometry.log",
+          "log_sha256": "3ba6a9f0971d2a84b951694e6e078e00459c9713dd121a2b4190ef12e3f58005",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 137764864,
+          "pid": 3285754,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47629542",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 15.56607374700252,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "rank26-tails",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_new_rank26_tails_v2.py",
+            "--input",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/new-rank26-fixed-tails-v1/candidate-00/result.json",
+            "--output",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/replayed-tail-coverage.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 300
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/rank26-tails.log",
+          "log_sha256": "619f6392956816989226efa95aaf50f76f141cc2e5b550cf5e855d1c2064691f",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 270475264,
+          "pid": 3285757,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47631101",
+          "termination_signal": null,
+          "timeout_seconds": 300,
+          "wall_seconds": 30.278844742046203,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "native-metric",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_native11952_metric49.py",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/native11952-metric49-control-v1/candidate-00/result.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 300
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/native-metric.log",
+          "log_sha256": "978ddce75948e65a09ffb213ed53374bc14650e4960d637ea725626a726e583a",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 87474176,
+          "pid": 3286371,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47634131",
+          "termination_signal": null,
+          "timeout_seconds": 300,
+          "wall_seconds": 7.186384952045046,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "native-tails",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_native11952_tails.py",
+            "--input",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/native11952-metric49-tails-v1/candidate-00/result.json",
+            "--output",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/replayed-native-coverage.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 300
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/native-tails.log",
+          "log_sha256": "95674c6cc7018bcb329f6a7b83f112c5a5f0945ba2f3fced381bece91ad530d2",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 127045632,
+          "pid": 3286493,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47634852",
+          "termination_signal": null,
+          "timeout_seconds": 300,
+          "wall_seconds": 6.474302317015827,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "native-pari",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_native11952_pari49_v2.py",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/native11952-pari49-control-v1/candidate-00/result.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 300
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/native-pari.log",
+          "log_sha256": "4e1d49ec15b2bb43213e35442ed6287e3dce207cd0edb841a020949d0a3fb20a",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 126758912,
+          "pid": 3286642,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47635502",
+          "termination_signal": null,
+          "timeout_seconds": 300,
+          "wall_seconds": 4.910227518994361,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "new26-pari",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_new_rank26_pari43.py",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/new-rank26-pari43-v1/candidate-00/result.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 300
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/new26-pari.log",
+          "log_sha256": "bbdcbabfe474b03cbe2b6cd3504e910c4109fcd0dda9658d489efb8b80c9b757",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 102707200,
+          "pid": 3286791,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47635995",
+          "termination_signal": null,
+          "timeout_seconds": 300,
+          "wall_seconds": 68.53999764000764,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "visibility",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_native11952_visibility.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/visibility.log",
+          "log_sha256": "e27dfa6bcabcd5c3b71f4ac943a6c44fedbeca2c6d14dfdde4a36f03ba4e6239",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 76247040,
+          "pid": 3287000,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47642852",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 1.0925515140406787,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "engine-hit-sets",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/compare_native11952_search_engines.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/engine-hit-sets.log",
+          "log_sha256": "54d2e5acf64c82aa3f90569066d99fb75b0f69197b08ca0181722fbb73215e13",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21565440,
+          "pid": 3287002,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47642964",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.1259884939645417,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "omitted-11952-0",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_r17_omitted_classes.py",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/r17-omitted-generic-classes-v1/11952/candidate-00/result.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/omitted-11952-0.log",
+          "log_sha256": "ba0ef8cb99d5bf18c1301039d33d46ed62355d6adce802e25c9d7daef41635c2",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 90320896,
+          "pid": 3287004,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47642979",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 11.555699233023915,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "omitted-11952-1",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_r17_omitted_classes.py",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/r17-omitted-generic-classes-v1/11952/candidate-01/result.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/omitted-11952-1.log",
+          "log_sha256": "35491ce7d0c21e8799879d8bf7032bc31da8edcf66db539d9bb4e7306959eb8f",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 89600000,
+          "pid": 3287196,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47644137",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 8.610555343038868,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "omitted-11952-2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_r17_omitted_classes.py",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/r17-omitted-generic-classes-v1/11952/candidate-02/result.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/omitted-11952-2.log",
+          "log_sha256": "0ea867cc7ee0bdd3f866ced1bbd835132caa91f9686a227d0782817070ffffe2",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 89047040,
+          "pid": 3287333,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47645000",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 9.171227017010096,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "omitted-11952-3",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_r17_omitted_classes.py",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/r17-omitted-generic-classes-v1/11952/candidate-03/result.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/omitted-11952-3.log",
+          "log_sha256": "3865b7cd0ad8fa46573d2967ea6d501b17ed7d1a67787ceb8648be82d79268c4",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 89624576,
+          "pid": 3295181,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47645920",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 8.612393759016413,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "omitted-08f72-0",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_r17_omitted_classes.py",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/r17-omitted-generic-classes-v1/08f72/candidate-00/result.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/omitted-08f72-0.log",
+          "log_sha256": "ec09a9f075eac7ed79b8a07aad34d7842b3e32bb6a0777fcd31dd613608a613c",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 88514560,
+          "pid": 3310394,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47646784",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 10.039163021021523,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "omitted-08f72-1",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_r17_omitted_classes.py",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/r17-omitted-generic-classes-v1/08f72/candidate-01/result.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/omitted-08f72-1.log",
+          "log_sha256": "d1a273e5bd8912501cc28d6f3bc05190c33b700ece801edace3dbdeaacade4f7",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 86552576,
+          "pid": 3328631,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47647791",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 7.193398621981032,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "omitted-08f72-2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_r17_omitted_classes.py",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/r17-omitted-generic-classes-v1/08f72/candidate-02/result.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/omitted-08f72-2.log",
+          "log_sha256": "3d0b4572d05df1c38591f0277699580f4509f582e42ebf14839aeff17e4093bb",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 93863936,
+          "pid": 3344976,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47648512",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 14.561639870982617,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "omitted-08f72-3",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_r17_omitted_classes.py",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/r17-omitted-generic-classes-v1/08f72/candidate-03/result.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/omitted-08f72-3.log",
+          "log_sha256": "b3d61dba00b6f405d7be137d7e8c90485c04c47835777faa0d47d2951a707966",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 29503488,
+          "pid": 3357445,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47649971",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 5.409822903980967,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "new_rank26_all_retained_mod2_v1",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/new_rank26_all_retained_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/new_rank26_all_retained_mod2_v1.log",
+          "log_sha256": "79151b34e4b0642cb5f1a5d22d8af8fad0d95ee7d26671e466cb120aece652c6",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 26398720,
+          "pid": 3360419,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47650514",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.3790157919866033,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "new_rank26_pari43_recorded_mod2_v1",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/new_rank26_pari43_recorded_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/new_rank26_pari43_recorded_mod2_v1.log",
+          "log_sha256": "79151b34e4b0642cb5f1a5d22d8af8fad0d95ee7d26671e466cb120aece652c6",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24666112,
+          "pid": 3360682,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47650554",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.27769545995397493,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "native11952_metric49_recorded_mod2_v1",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/native11952_metric49_recorded_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/native11952_metric49_recorded_mod2_v1.log",
+          "log_sha256": "9d7d05f21ef2a48d54592d81fae8483bbe4201034b545d077905d777ad1bd9ef",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23928832,
+          "pid": 3360936,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47650584",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.2770856750430539,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "native11952_all_retained_mod2_v1",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/native11952_all_retained_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/native11952_all_retained_mod2_v1.log",
+          "log_sha256": "9d7d05f21ef2a48d54592d81fae8483bbe4201034b545d077905d777ad1bd9ef",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24190976,
+          "pid": 3361192,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47650614",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.2774010300054215,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "native11952_pari49_recorded_mod2_v1",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/native11952_pari49_recorded_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/native11952_pari49_recorded_mod2_v1.log",
+          "log_sha256": "9337e7dca81eff71a6cac57ec93da8c17507c7e3b72b14f43f292a5cb69fd818",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24129536,
+          "pid": 3361431,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47650644",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 1.9029777210089378,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "native11952_old43_control_mod2_v1",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/native11952_old43_control_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/native11952_old43_control_mod2_v1.log",
+          "log_sha256": "9337e7dca81eff71a6cac57ec93da8c17507c7e3b72b14f43f292a5cb69fd818",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24182784,
+          "pid": 3362508,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47650837",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 2.413343930034898,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "native11952_union_control_mod2_v1",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/native11952_union_control_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/native11952_union_control_mod2_v1.log",
+          "log_sha256": "9337e7dca81eff71a6cac57ec93da8c17507c7e3b72b14f43f292a5cb69fd818",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24453120,
+          "pid": 3363751,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47651080",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.3285105380346067,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "r17_omitted_classes_recorded_mod2_08f72_00_v1",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/r17_omitted_classes_recorded_mod2_08f72_00_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/r17_omitted_classes_recorded_mod2_08f72_00_v1.log",
+          "log_sha256": "c7aa50ae275990bf8368f929ecf5093bb32adfa642b1e4e5b6309fbe40457847",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22343680,
+          "pid": 3363933,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47651115",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.2271064689848572,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "r17_omitted_classes_recorded_mod2_08f72_01_v1",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/r17_omitted_classes_recorded_mod2_08f72_01_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/r17_omitted_classes_recorded_mod2_08f72_01_v1.log",
+          "log_sha256": "5ac270b37bef9bf6b221956a79665f9c7c380afde208c8c878798edb3b1c2cf5",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22274048,
+          "pid": 3364064,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47651140",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.17565304803429171,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "r17_omitted_classes_recorded_mod2_08f72_02_v1",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/r17_omitted_classes_recorded_mod2_08f72_02_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/r17_omitted_classes_recorded_mod2_08f72_02_v1.log",
+          "log_sha256": "508da4e969739c212aebe82d62e80c6cd408a802d19b585c53aec162ff29eef8",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23408640,
+          "pid": 3364249,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47651160",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.22661948803579435,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "r17_omitted_classes_recorded_mod2_08f72_03_v1",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/r17_omitted_classes_recorded_mod2_08f72_03_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/r17_omitted_classes_recorded_mod2_08f72_03_v1.log",
+          "log_sha256": "f256d2b85b9293511da5ca81959c495fa0bbee8714b12b55395d7eb35d01b115",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22097920,
+          "pid": 3364349,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47651186",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.1757586969761178,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "r17_omitted_classes_recorded_mod2_11952_00_v1",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/r17_omitted_classes_recorded_mod2_11952_00_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/r17_omitted_classes_recorded_mod2_11952_00_v1.log",
+          "log_sha256": "7d4f4327e202208766262b3887d2970aa072a4bfa8e577990a6dfd521a7e7eee",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23642112,
+          "pid": 3364457,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47651205",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.2271857230225578,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "r17_omitted_classes_recorded_mod2_11952_01_v1",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/r17_omitted_classes_recorded_mod2_11952_01_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/r17_omitted_classes_recorded_mod2_11952_01_v1.log",
+          "log_sha256": "86b6c37f995d5907a287c80cb005a02069375c4047da34805fc736c5441f4acc",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22347776,
+          "pid": 3364550,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47651230",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.17610619799233973,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "r17_omitted_classes_recorded_mod2_11952_02_v1",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/r17_omitted_classes_recorded_mod2_11952_02_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/r17_omitted_classes_recorded_mod2_11952_02_v1.log",
+          "log_sha256": "9450976df8541f7142443af3baeadd93e8aa25a1044f0d969194c36a22daaf85",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22347776,
+          "pid": 3364662,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47651250",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.175969575997442,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "r17_omitted_classes_recorded_mod2_11952_03_v1",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/r17_omitted_classes_recorded_mod2_11952_03_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/verification/r17_omitted_classes_recorded_mod2_11952_03_v1.log",
+          "log_sha256": "9b8ed6460e7a35c6691584c36b36bfcae6e7e5fdced4f86046c78e40844cafc3",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22351872,
+          "pid": 3364766,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "47651270",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.17608110699802637,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      }
+    ],
+    "status": "COMPLETE_DECLARED_REPLAY_ATTEMPTS"
+  },
+  "logs": {
+    "engine-hit-sets": "REPLAYED IDENTICAL AFFINE HIT SETS 49\n",
+    "geometry": "REPLAYED EXACT DISCRETE PARITY RADIUS 103b2 norm12 classes 43\nREPLAYED EXACT DISCRETE PARITY RADIUS 11952 norm12 classes 49\nREPLAYED EXACT DISCRETE PARITY RADIUS 074d9 norm12 classes 43\nREPLAYED EXACT DISCRETE PARITY RADIUS 07ca9 norm12 classes 43\nREPLAYED EXACT DISCRETE PARITY RADIUS 08234 norm12 classes 43\nREPLAYED EXACT DISCRETE PARITY RADIUS 08f72 norm12 classes 49\nREPLAYED ALL SIX EXACT PARITY GEOMETRIES 270 maximum classes\n",
+    "native-metric": "REPLAYED NATIVE11952 METRIC49 CONTROL native11952-control generic-only-fixture charts 49 rank >= 25\n",
+    "native-pari": "REPLAYED NATIVE11952 PARI49 MAPS AND POINTS 49 rank >= 27\n",
+    "native-tails": "REPLAYED FIXED NATIVE11952 CONTROL TAILS native11952-control generic-only-fixture charts 49 rank >= 25\n",
+    "native11952_all_retained_mod2_v1": "REPLAYED RECORDED-POINT RANK native11952-control generic-only-fixture rank >= 25\n",
+    "native11952_metric49_recorded_mod2_v1": "REPLAYED RECORDED-POINT RANK native11952-control generic-only-fixture rank >= 25\n",
+    "native11952_old43_control_mod2_v1": "REPLAYED RECORDED-POINT RANK native11952-control generic-only-fixture rank >= 27\n",
+    "native11952_pari49_recorded_mod2_v1": "REPLAYED RECORDED-POINT RANK native11952-control generic-only-fixture rank >= 27\n",
+    "native11952_union_control_mod2_v1": "REPLAYED RECORDED-POINT RANK native11952-control generic-only-fixture rank >= 27\n",
+    "new26-pari": "REPLAYED NEW RANK26 PARI43 MAPS AND POINTS 43 rank >= 26\n",
+    "new_rank26_all_retained_mod2_v1": "REPLAYED RECORDED-POINT RANK 07ca9 -2507/3068 rank >= 26\n",
+    "new_rank26_pari43_recorded_mod2_v1": "REPLAYED RECORDED-POINT RANK 07ca9 -2507/3068 rank >= 26\n",
+    "omitted-08f72-0": "REPLAYED OMITTED R17 CLASSES 08f72 1895/1768 charts 6 rank >= 19\n",
+    "omitted-08f72-1": "REPLAYED OMITTED R17 CLASSES 08f72 1433/3893 charts 6 rank >= 17\n",
+    "omitted-08f72-2": "REPLAYED OMITTED R17 CLASSES 08f72 -127/373 charts 6 rank >= 20\n",
+    "omitted-08f72-3": "REPLAYED OMITTED R17 CLASSES 08f72 4095/3356 charts 6 rank >= 17\n",
+    "omitted-11952-0": "REPLAYED OMITTED R17 CLASSES 11952 200/3623 charts 6 rank >= 20\n",
+    "omitted-11952-1": "REPLAYED OMITTED R17 CLASSES 11952 -1027/591 charts 6 rank >= 17\n",
+    "omitted-11952-2": "REPLAYED OMITTED R17 CLASSES 11952 -3578/699 charts 6 rank >= 18\n",
+    "omitted-11952-3": "REPLAYED OMITTED R17 CLASSES 11952 2929/648 charts 6 rank >= 17\n",
+    "r17_omitted_classes_recorded_mod2_08f72_00_v1": "REPLAYED RECORDED-POINT RANK 08f72 1895/1768 rank >= 19\n",
+    "r17_omitted_classes_recorded_mod2_08f72_01_v1": "REPLAYED RECORDED-POINT RANK 08f72 1433/3893 rank >= 17\n",
+    "r17_omitted_classes_recorded_mod2_08f72_02_v1": "REPLAYED RECORDED-POINT RANK 08f72 -127/373 rank >= 20\n",
+    "r17_omitted_classes_recorded_mod2_08f72_03_v1": "REPLAYED RECORDED-POINT RANK 08f72 4095/3356 rank >= 17\n",
+    "r17_omitted_classes_recorded_mod2_11952_00_v1": "REPLAYED RECORDED-POINT RANK 11952 200/3623 rank >= 20\n",
+    "r17_omitted_classes_recorded_mod2_11952_01_v1": "REPLAYED RECORDED-POINT RANK 11952 -1027/591 rank >= 17\n",
+    "r17_omitted_classes_recorded_mod2_11952_02_v1": "REPLAYED RECORDED-POINT RANK 11952 -3578/699 rank >= 18\n",
+    "r17_omitted_classes_recorded_mod2_11952_03_v1": "REPLAYED RECORDED-POINT RANK 11952 2929/648 rank >= 17\n",
+    "rank26-tails": "REPLAYED FIXED NEW RANK26 TAILS 07ca9 -2507/3068 charts 301 rank >= 26\n",
+    "visibility": "NATIVE11952 VISIBILITY 20 of 28 {'OUTSIDE_BOX': 2724, 'VISIBLE_AND_RECORDED': 20}\n"
+  },
+  "manifest_sha256": "e936d77fa42c0358cddb5b6407e9b99b4922647b63907f80cb8b3a7486cc549c",
+  "protocol": {
+    "jobs": [
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/export_r17_exact_maximum_parity_classes.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/r17_exact_maximum_parity_classes_v1.json"
+        ],
+        "name": "geometry",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_new_rank26_tails_v2.py",
+          "--input",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/new-rank26-fixed-tails-v1/candidate-00/result.json",
+          "--output",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/replayed-tail-coverage.json"
+        ],
+        "name": "rank26-tails",
+        "wall_seconds": 300
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_native11952_metric49.py",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/native11952-metric49-control-v1/candidate-00/result.json"
+        ],
+        "name": "native-metric",
+        "wall_seconds": 300
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_native11952_tails.py",
+          "--input",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/native11952-metric49-tails-v1/candidate-00/result.json",
+          "--output",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/replayed-native-coverage.json"
+        ],
+        "name": "native-tails",
+        "wall_seconds": 300
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_native11952_pari49_v2.py",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/native11952-pari49-control-v1/candidate-00/result.json"
+        ],
+        "name": "native-pari",
+        "wall_seconds": 300
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_new_rank26_pari43.py",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/new-rank26-pari43-v1/candidate-00/result.json"
+        ],
+        "name": "new26-pari",
+        "wall_seconds": 300
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_native11952_visibility.py",
+          "--check"
+        ],
+        "name": "visibility",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/compare_native11952_search_engines.py",
+          "--check"
+        ],
+        "name": "engine-hit-sets",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_r17_omitted_classes.py",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/r17-omitted-generic-classes-v1/11952/candidate-00/result.json"
+        ],
+        "name": "omitted-11952-0",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_r17_omitted_classes.py",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/r17-omitted-generic-classes-v1/11952/candidate-01/result.json"
+        ],
+        "name": "omitted-11952-1",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_r17_omitted_classes.py",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/r17-omitted-generic-classes-v1/11952/candidate-02/result.json"
+        ],
+        "name": "omitted-11952-2",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_r17_omitted_classes.py",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/r17-omitted-generic-classes-v1/11952/candidate-03/result.json"
+        ],
+        "name": "omitted-11952-3",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_r17_omitted_classes.py",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/r17-omitted-generic-classes-v1/08f72/candidate-00/result.json"
+        ],
+        "name": "omitted-08f72-0",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_r17_omitted_classes.py",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/r17-omitted-generic-classes-v1/08f72/candidate-01/result.json"
+        ],
+        "name": "omitted-08f72-1",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_r17_omitted_classes.py",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/r17-omitted-generic-classes-v1/08f72/candidate-02/result.json"
+        ],
+        "name": "omitted-08f72-2",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/replay_r17_omitted_classes.py",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/local/elliptic-curves/r17-omitted-generic-classes-v1/08f72/candidate-03/result.json"
+        ],
+        "name": "omitted-08f72-3",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/new_rank26_all_retained_mod2_v1.json"
+        ],
+        "name": "new_rank26_all_retained_mod2_v1",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/new_rank26_pari43_recorded_mod2_v1.json"
+        ],
+        "name": "new_rank26_pari43_recorded_mod2_v1",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/native11952_metric49_recorded_mod2_v1.json"
+        ],
+        "name": "native11952_metric49_recorded_mod2_v1",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/native11952_all_retained_mod2_v1.json"
+        ],
+        "name": "native11952_all_retained_mod2_v1",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/native11952_pari49_recorded_mod2_v1.json"
+        ],
+        "name": "native11952_pari49_recorded_mod2_v1",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/native11952_old43_control_mod2_v1.json"
+        ],
+        "name": "native11952_old43_control_mod2_v1",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/native11952_union_control_mod2_v1.json"
+        ],
+        "name": "native11952_union_control_mod2_v1",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/r17_omitted_classes_recorded_mod2_08f72_00_v1.json"
+        ],
+        "name": "r17_omitted_classes_recorded_mod2_08f72_00_v1",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/r17_omitted_classes_recorded_mod2_08f72_01_v1.json"
+        ],
+        "name": "r17_omitted_classes_recorded_mod2_08f72_01_v1",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/r17_omitted_classes_recorded_mod2_08f72_02_v1.json"
+        ],
+        "name": "r17_omitted_classes_recorded_mod2_08f72_02_v1",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/r17_omitted_classes_recorded_mod2_08f72_03_v1.json"
+        ],
+        "name": "r17_omitted_classes_recorded_mod2_08f72_03_v1",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/r17_omitted_classes_recorded_mod2_11952_00_v1.json"
+        ],
+        "name": "r17_omitted_classes_recorded_mod2_11952_00_v1",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/r17_omitted_classes_recorded_mod2_11952_01_v1.json"
+        ],
+        "name": "r17_omitted_classes_recorded_mod2_11952_01_v1",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/r17_omitted_classes_recorded_mod2_11952_02_v1.json"
+        ],
+        "name": "r17_omitted_classes_recorded_mod2_11952_02_v1",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/exact-parity-coordinate-portable-v1/workspace/artifacts/generated-results/elliptic-curves/r17_omitted_classes_recorded_mod2_11952_03_v1.json"
+        ],
+        "name": "r17_omitted_classes_recorded_mod2_11952_03_v1",
+        "wall_seconds": 180
+      }
+    ],
+    "manifest_sha256": "e936d77fa42c0358cddb5b6407e9b99b4922647b63907f80cb8b3a7486cc549c",
+    "rss_bytes": 1610612736,
+    "scope": "Exact replays only in an isolated extraction; no point search, CVP search, parameter sweep or external catalogue call.",
+    "source_sha256": "2d799760f493c86bea951292f9eb6976b09b4f80d5db0322a3c42afa395bfb8b"
+  },
+  "schema": "elliptic-curves.exact-parity-coordinate-portable-replay.v1",
+  "stages": 31,
+  "status": "PASS",
+  "verifier_path": "elliptic-curves/cas/verify_exact_parity_coordinate_bundle.py",
+  "verifier_sha256": "2d799760f493c86bea951292f9eb6976b09b4f80d5db0322a3c42afa395bfb8b"
+}

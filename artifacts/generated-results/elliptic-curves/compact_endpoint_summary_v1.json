@@ -1,0 +1,278 @@
+{
+  "catalogue_or_previous_matches": 0,
+  "catalogue_snapshot_curves": 593,
+  "claim_boundary": "Exact omitted endpoint equations and transported section values, with independent finite point lower bounds11..17 and matching modulo3/5 bounds. Lower finite ranks do not prove rational dependence or exact specialization rank. One singular displayed endpoint is not an elliptic curve in this fibre chart. The21 unmatched nonsingular curves have not received an endpoint point-search campaign. No high-rank inventory addition, rank upper bound, saturation, conductor or universal novelty.",
+  "endpoint_count": 22,
+  "nonsingular_distinct_curves": 21,
+  "previous_address_equations": 528,
+  "rational_point_searches_run": 0,
+  "rows": [
+    {
+      "endpoint": "zero",
+      "family": "103b2",
+      "finite_generic_sections": 17,
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "rank_lower_bound": 16
+    },
+    {
+      "endpoint": "infinity",
+      "family": "103b2",
+      "finite_generic_sections": 17,
+      "odd_modulus_lower_bounds": {
+        "3": 11,
+        "5": 11
+      },
+      "rank_lower_bound": 11
+    },
+    {
+      "endpoint": "zero",
+      "family": "11952",
+      "finite_generic_sections": 17,
+      "odd_modulus_lower_bounds": {
+        "3": 14,
+        "5": 14
+      },
+      "rank_lower_bound": 14
+    },
+    {
+      "endpoint": "infinity",
+      "family": "11952",
+      "finite_generic_sections": 17,
+      "odd_modulus_lower_bounds": {
+        "3": 15,
+        "5": 15
+      },
+      "rank_lower_bound": 15
+    },
+    {
+      "endpoint": "zero",
+      "family": "074d9",
+      "finite_generic_sections": 17,
+      "odd_modulus_lower_bounds": {
+        "3": 15,
+        "5": 15
+      },
+      "rank_lower_bound": 15
+    },
+    {
+      "endpoint": "infinity",
+      "family": "074d9",
+      "finite_generic_sections": 17,
+      "odd_modulus_lower_bounds": {
+        "3": 15,
+        "5": 15
+      },
+      "rank_lower_bound": 15
+    },
+    {
+      "endpoint": "zero",
+      "family": "07ca9",
+      "finite_generic_sections": 17,
+      "odd_modulus_lower_bounds": {
+        "3": 14,
+        "5": 14
+      },
+      "rank_lower_bound": 14
+    },
+    {
+      "endpoint": "infinity",
+      "family": "07ca9",
+      "finite_generic_sections": 17,
+      "odd_modulus_lower_bounds": {
+        "3": 13,
+        "5": 13
+      },
+      "rank_lower_bound": 13
+    },
+    {
+      "endpoint": "zero",
+      "family": "08234",
+      "finite_generic_sections": 17,
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "rank_lower_bound": 17
+    },
+    {
+      "endpoint": "infinity",
+      "family": "08234",
+      "finite_generic_sections": 17,
+      "odd_modulus_lower_bounds": {
+        "3": 12,
+        "5": 12
+      },
+      "rank_lower_bound": 12
+    },
+    {
+      "endpoint": "zero",
+      "family": "08f72",
+      "finite_generic_sections": 17,
+      "odd_modulus_lower_bounds": {
+        "3": 15,
+        "5": 15
+      },
+      "rank_lower_bound": 15
+    },
+    {
+      "endpoint": "infinity",
+      "family": "08f72",
+      "finite_generic_sections": 17,
+      "odd_modulus_lower_bounds": {
+        "3": 13,
+        "5": 13
+      },
+      "rank_lower_bound": 13
+    },
+    {
+      "endpoint": "zero",
+      "family": "a1-fibration-01",
+      "finite_generic_sections": 16,
+      "odd_modulus_lower_bounds": {
+        "3": 15,
+        "5": 15
+      },
+      "rank_lower_bound": 15
+    },
+    {
+      "endpoint": "infinity",
+      "family": "a1-fibration-01",
+      "finite_generic_sections": 16,
+      "odd_modulus_lower_bounds": {
+        "3": 14,
+        "5": 14
+      },
+      "rank_lower_bound": 14
+    },
+    {
+      "endpoint": "zero",
+      "family": "a1-fibration-02",
+      "finite_generic_sections": 16,
+      "odd_modulus_lower_bounds": {
+        "3": 13,
+        "5": 13
+      },
+      "rank_lower_bound": 13
+    },
+    {
+      "endpoint": "infinity",
+      "family": "a1-fibration-02",
+      "finite_generic_sections": 16,
+      "odd_modulus_lower_bounds": {
+        "3": 15,
+        "5": 15
+      },
+      "rank_lower_bound": 15
+    },
+    {
+      "endpoint": "zero",
+      "family": "a1-fibration-03",
+      "finite_generic_sections": 16,
+      "odd_modulus_lower_bounds": {
+        "3": 16,
+        "5": 16
+      },
+      "rank_lower_bound": 16
+    },
+    {
+      "endpoint": "zero",
+      "family": "a1-fibration-04",
+      "finite_generic_sections": 16,
+      "odd_modulus_lower_bounds": {
+        "3": 14,
+        "5": 14
+      },
+      "rank_lower_bound": 14
+    },
+    {
+      "endpoint": "infinity",
+      "family": "a1-fibration-04",
+      "finite_generic_sections": 16,
+      "odd_modulus_lower_bounds": {
+        "3": 12,
+        "5": 12
+      },
+      "rank_lower_bound": 12
+    },
+    {
+      "endpoint": "zero",
+      "family": "a1-fibration-05",
+      "finite_generic_sections": 16,
+      "odd_modulus_lower_bounds": {
+        "3": 13,
+        "5": 13
+      },
+      "rank_lower_bound": 13
+    },
+    {
+      "endpoint": "infinity",
+      "family": "a1-fibration-05",
+      "finite_generic_sections": 16,
+      "odd_modulus_lower_bounds": {
+        "3": 14,
+        "5": 14
+      },
+      "rank_lower_bound": 14
+    }
+  ],
+  "schema": "elliptic-curves.compact-endpoint-summary.v1",
+  "singular_endpoints": [
+    [
+      "a1-fibration-03",
+      "infinity"
+    ]
+  ],
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_atlas_endpoints_v2.json": "e606bd71b14143643cdf28c5e8c5862d14681571616791c13521ed2ee18f4f6e",
+    "artifacts/generated-results/elliptic-curves/endpoint_sections_074d9_infinity_modl_v1.json": "1149a8f18230486d6e7e2aa502bbc1c67327b41a65e6f1928db1b86cc332f71d",
+    "artifacts/generated-results/elliptic-curves/endpoint_sections_074d9_zero_modl_v1.json": "2179dfd0364d5cad114ef8b681ab0fb6b7f2573d043f182c6d559f291fead5e6",
+    "artifacts/generated-results/elliptic-curves/endpoint_sections_07ca9_infinity_modl_v1.json": "82066dbfecb88e8faceed894f67c6d88a57d6ed517dd7807c66da18025269c18",
+    "artifacts/generated-results/elliptic-curves/endpoint_sections_07ca9_zero_modl_v1.json": "c5c82b91e061cd466642f24fdbf93283fb78e7551722d07110c202a2405d1000",
+    "artifacts/generated-results/elliptic-curves/endpoint_sections_08234_infinity_modl_v1.json": "829130a5e4ab64fba28e37dbfd2f594a11c1d36eba17f5bdfdc8ee9366808de4",
+    "artifacts/generated-results/elliptic-curves/endpoint_sections_08234_zero_modl_v1.json": "3b9f0513458b625b920be93dfc170532ce3e5d4ff0ae33eb33db6ff521c22f65",
+    "artifacts/generated-results/elliptic-curves/endpoint_sections_08f72_infinity_modl_v1.json": "5795775812790088382344985ba022c26df6bdd725f377c215d00acae2b3a1c2",
+    "artifacts/generated-results/elliptic-curves/endpoint_sections_08f72_zero_modl_v1.json": "e0154fc0ab1f7c1bfbd942afea27ab2ccb6ae30e781c325b9d9f09024ed4e060",
+    "artifacts/generated-results/elliptic-curves/endpoint_sections_103b2_infinity_modl_v1.json": "a433a2c6658e4d9414cb30cc2d6dd00123614a3b00ddd6788f267e8b815b3b03",
+    "artifacts/generated-results/elliptic-curves/endpoint_sections_103b2_zero_modl_v1.json": "acbfceb3b9d4e0963c19179c606be92694ad87417b317d047363603210741ff8",
+    "artifacts/generated-results/elliptic-curves/endpoint_sections_11952_infinity_modl_v1.json": "95b6b1f6a07a944604412e6a227751e7835d9ea08b6477e15d44410a5a1ca6d1",
+    "artifacts/generated-results/elliptic-curves/endpoint_sections_11952_zero_modl_v1.json": "9cd3bc60a7b3c442caa8ff35303777b61f6c8f9d7f5d78fca5662020907d5dc3",
+    "artifacts/generated-results/elliptic-curves/endpoint_sections_a1_fibration_01_infinity_modl_v1.json": "b34ff60d80796391dc415bed9876627f2bf475cc847155b5327b2610d9c4c747",
+    "artifacts/generated-results/elliptic-curves/endpoint_sections_a1_fibration_01_zero_modl_v1.json": "e108c907f8be30d1adaa31142bc41ecf4971639cf3b6ef7c3826b1a0bbc1cf42",
+    "artifacts/generated-results/elliptic-curves/endpoint_sections_a1_fibration_02_infinity_modl_v1.json": "f4ef58e597b47e6de8c682ac9015c88c09b8d89c74072ce693d4521f6150e5fa",
+    "artifacts/generated-results/elliptic-curves/endpoint_sections_a1_fibration_02_zero_modl_v1.json": "153798b475e14082cda540756c5c3e88e34e41db25c1a357eb99feb1e84ea5de",
+    "artifacts/generated-results/elliptic-curves/endpoint_sections_a1_fibration_03_zero_modl_v1.json": "399c15985d7c6caf0dfbfdda2c0f0e96756fb2c0938ca39122bc02e1c91c18b7",
+    "artifacts/generated-results/elliptic-curves/endpoint_sections_a1_fibration_04_infinity_modl_v1.json": "14a2a53cb596b880fcd91d23a5eb6d0de569800743e1ae2fd71da03e5d88ba07",
+    "artifacts/generated-results/elliptic-curves/endpoint_sections_a1_fibration_04_zero_modl_v1.json": "7c41c39f334bafefaad30d94b6385e7120c468c556dda5d6335d99e6979ae2fa",
+    "artifacts/generated-results/elliptic-curves/endpoint_sections_a1_fibration_05_infinity_modl_v1.json": "8e71cf32bdd83a1d2a4a5e029ad810805172856a5d28a9ea39ee9db804c7da6a",
+    "artifacts/generated-results/elliptic-curves/endpoint_sections_a1_fibration_05_zero_modl_v1.json": "62f3994cc2b99ed3c70717619ec1cf007338868e9ac4beab5181ce7695129af1",
+    "artifacts/local/elliptic-curves/compact-atlas-endpoints-v1/run.supervisor.json": "fe145fb70b8f74471edfcc9c53224b57abaf7d4dc8cd2ff10f63de65d8d626db",
+    "artifacts/local/elliptic-curves/compact-atlas-endpoints-v2/check.supervisor.json": "719123e79a8fd33127f24702a5410c922857654a87ed707759c5c37683304b7e",
+    "artifacts/local/elliptic-curves/compact-endpoint-odd-primes-v1/074d9-infinity/generic-points.json": "bceefa6a3c57729def77924b7dc76e7137452fd23263ed655513ca70d2b3fa5f",
+    "artifacts/local/elliptic-curves/compact-endpoint-odd-primes-v1/074d9-zero/generic-points.json": "b0fa2be046e7819989b53a7a45db5e89531b2143ad227f28fe04e395a1c1272b",
+    "artifacts/local/elliptic-curves/compact-endpoint-odd-primes-v1/07ca9-infinity/generic-points.json": "d539f33a298acc41030a7fb2c16fd0230031129c1edd1564ec287a89e0588d37",
+    "artifacts/local/elliptic-curves/compact-endpoint-odd-primes-v1/07ca9-zero/generic-points.json": "2b4c0eff1182fb7fee19e13ae607e74f54eb6cd3398187091f2596d6c1f2d43c",
+    "artifacts/local/elliptic-curves/compact-endpoint-odd-primes-v1/08234-infinity/generic-points.json": "ba44870381c7cf6aa24f424495d4ff8d105f77d99a10b1b660830a1fe940b31f",
+    "artifacts/local/elliptic-curves/compact-endpoint-odd-primes-v1/08234-zero/generic-points.json": "8aa8aff2d23a01e12384dc6ddf108c7a11c709d79ad8768a69206669796a7659",
+    "artifacts/local/elliptic-curves/compact-endpoint-odd-primes-v1/08f72-infinity/generic-points.json": "293c951609ad11b46a7f4809efae2553edee483bab1c90c7d44e7a1893873f35",
+    "artifacts/local/elliptic-curves/compact-endpoint-odd-primes-v1/08f72-zero/generic-points.json": "3a9548e338c509818bf4e389b7459089c5b1b88e7cda960e83f86cf3951d3127",
+    "artifacts/local/elliptic-curves/compact-endpoint-odd-primes-v1/103b2-infinity/generic-points.json": "ba2219a8aadca154b90e75443087af5ccc5476521d9bd02d7e2327c340419ae0",
+    "artifacts/local/elliptic-curves/compact-endpoint-odd-primes-v1/103b2-zero/generic-points.json": "99b1ad0d1050c5ad0e12e4ab1728c35112850c8c2e5bbd0c74abafba518dd4a6",
+    "artifacts/local/elliptic-curves/compact-endpoint-odd-primes-v1/11952-infinity/generic-points.json": "ed2373c363014d56a4cc2432e80a60423ec79872de7a625a75fbb4bd3cb00b6d",
+    "artifacts/local/elliptic-curves/compact-endpoint-odd-primes-v1/11952-zero/generic-points.json": "4b084c7373131e9d04f094c48f8b131c4a479a4f4a86782283da8e6647dbd818",
+    "artifacts/local/elliptic-curves/compact-endpoint-odd-primes-v1/a1-fibration-01-infinity/generic-points.json": "4a94023ad28f0fbaec7b8b1a8c89a4b151495bc7dc0054ea2ce0f4fb0fc6e695",
+    "artifacts/local/elliptic-curves/compact-endpoint-odd-primes-v1/a1-fibration-01-zero/generic-points.json": "b9e0c2189ab6c8686d233f4069a02cc67095b08c7a7430ea10126ed54614e0da",
+    "artifacts/local/elliptic-curves/compact-endpoint-odd-primes-v1/a1-fibration-02-infinity/generic-points.json": "d0bcdc4dd1d45ed882d06bac072fb2ceb2cdbb11613813be17b83a737d2f7174",
+    "artifacts/local/elliptic-curves/compact-endpoint-odd-primes-v1/a1-fibration-02-zero/generic-points.json": "c9f732d7ec54f0206de61e7d81b12f46a34c0896af0e8937b3f3e94702924a79",
+    "artifacts/local/elliptic-curves/compact-endpoint-odd-primes-v1/a1-fibration-03-zero/generic-points.json": "0c366a8d2bea2c4f83fd15df12e9087e98e9443e7aabe61d8908541119c6beb3",
+    "artifacts/local/elliptic-curves/compact-endpoint-odd-primes-v1/a1-fibration-04-infinity/generic-points.json": "9ba74be0a56dae2cc7bce648351f672ffce6a399b1f70b7c73cab8dd02736cd9",
+    "artifacts/local/elliptic-curves/compact-endpoint-odd-primes-v1/a1-fibration-04-zero/generic-points.json": "d1d172ee8b4240e0d8faf10bc2ef2198e4a479454921e031c99e1dc14272c6fa",
+    "artifacts/local/elliptic-curves/compact-endpoint-odd-primes-v1/a1-fibration-05-infinity/generic-points.json": "56d9a6cbe622b334c802fa869b1e56e142d6debbca5ecc1b3a44c5a353bc8132",
+    "artifacts/local/elliptic-curves/compact-endpoint-odd-primes-v1/a1-fibration-05-zero/generic-points.json": "be9e8b2e4144a904118e1f4686dccaa1e45f88d34142f3dd0f30de1149a01990",
+    "artifacts/local/elliptic-curves/compact-endpoint-odd-primes-v1/ledger.json": "885351fd21c9b429720a3ff26a898fe1c188a1444134b703be279b95b04eadcf",
+    "elliptic-curves/cas/report_compact_endpoint_audit.py": "e3652233c6961296ed47d7ba934ffefb3f4a35ea6ceb6f8266cc6576a00135ca"
+  },
+  "status": "PASS"
+}

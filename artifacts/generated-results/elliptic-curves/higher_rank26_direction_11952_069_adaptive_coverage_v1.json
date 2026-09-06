@@ -1,0 +1,30 @@
+{
+  "adaptive_attempted_charts": 301,
+  "adaptive_completed_boxes": 301,
+  "adaptive_declared_charts": 301,
+  "claim_boundary": "Recorded completed box coverage trusts the pinned PARI executions. Every attempted adaptive history replays; a target stop can leave part of the301-chart roster unsearched. Full retained-cloud finite quotient certificates are lower bounds only; no exact rank, saturation or point-absence conclusion.",
+  "cloud_verification_ledger_sha256": "f3ea3a8f95b5cda41208cb86506532540038bb6e5b425198657dce10d702bcac",
+  "height": 125000,
+  "initial_charts": 350,
+  "mod2_lower_bound": 26,
+  "odd_modulus_lower_bounds": {
+    "3": 26,
+    "5": 26
+  },
+  "point_certificates": {
+    "artifacts/generated-results/elliptic-curves/higher_rank26_direction_11952_069_all_retained_mod2_v1.json": "3004a9a6ddcc1239dc7050b9f2c9e0f668eb876dbaa03cc376baac3328ec1a29",
+    "artifacts/generated-results/elliptic-curves/higher_rank26_direction_11952_069_all_retained_modl_v1.json": "015f31be0a201268cde569719ffd26b32c97ef6d1157127c3d757c8b3d95f614"
+  },
+  "retained_point_count": 965,
+  "schema": "elliptic-curves.higher-rank26-direction-coverage.v1",
+  "sources": {
+    "artifacts/local/elliptic-curves/higher-rank25-11952-069-adaptive-v1/all-retained-point-cloud-only.json": "ffca0c00599b0c3adadbc8546bf0f6c725e289d0d7f099d8688124de25a49f68",
+    "artifacts/local/elliptic-curves/higher-rank25-11952-069-adaptive-v1/result.json": "118701ace64496c9eeb947f0a31a326eba7725d0f8ac638f4e88d19ad1f2273c",
+    "artifacts/local/elliptic-curves/higher-rank26-11952-069-newdirection-v2/maps.json": "102850e48e794a962e0716ec12b581342746fa77e8b9bb538e22c88e27e2308c",
+    "artifacts/local/elliptic-curves/higher-rank26-11952-069-newdirection-v2/protocol.json": "ff81c9c7853e523eb94e8b393adecee8e8dde5502966836c0fd63127c2afe542",
+    "artifacts/local/elliptic-curves/higher-rank26-11952-069-newdirection-v2/replay.supervisor.json": "032a6e0ebe97d825e8537f7fb214507bf4462b39ea8372043c5bed9b83ece078",
+    "artifacts/local/elliptic-curves/higher-rank26-11952-069-newdirection-v2/result.json": "a0112fb88bc5d5600b391171b9f65cd31d8ff4d6dcc86937a6ca05270be604eb",
+    "artifacts/local/elliptic-curves/higher-rank26-11952-069-newdirection-v2/worker.supervisor.json": "65e7bbfe4e1a2b926d82b0f91f7f3f03faa5901bdecd3bbfb4555cb39ec59956",
+    "elliptic-curves/cas/audit_higher_rank26_direction.py": "c34a6490c5a5acddc20849c70530aae5bb9fca9e0ca551ac4e7b398f5c920d88"
+  }
+}

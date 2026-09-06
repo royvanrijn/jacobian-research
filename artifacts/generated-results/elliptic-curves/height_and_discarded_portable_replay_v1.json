@@ -1,0 +1,1272 @@
+{
+  "claim_boundary": "All28 isolated stages pass after fresh extraction of nine pinned bases and this supplement. Exact geometry and raw-point provenance for828 charts,196 oracle group words,768 trace rosters,12 new candidate proofs, known-control proofs, one new minimal rank26 curve,70-curve inventory andCSV, and three prospective follow-up clouds modulo2/3/5. No point search or admission/archive history is repeated; separately passed local histories remain retained. No new rank28/32 curve, exact rank or universal novelty.",
+  "ledger": {
+    "rows": [
+      {
+        "name": "geometry828",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/replay_height_and_discarded_geometry.py"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/geometry828.log",
+          "log_sha256": "d5f06494b96168b3ed6fd6337a1096f1d89bd16af2b74e87cc4c9b4de02dd46e",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 184659968,
+          "pid": 1964088,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48815981",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 5.007573671988212,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "oracle-translations196",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/replay_native11952_translated_visibility_v2.py",
+            "--output",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/oracle-replay.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/oracle-translations196.log",
+          "log_sha256": "dda31d7869b57ff8305f718208b389a8dd0e4b5cf2aef37098cb585ec58cedbd",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 58265600,
+          "pid": 1964927,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48816484",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 1.397640751034487,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "height-control",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/certify_native29_height_control_v2.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/height-control.log",
+          "log_sha256": "e6bc8454dbf2c175afcd2d4139fb3d96e30acfc3e0ce0a4fe5f28986eb2a14e6",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 80351232,
+          "pid": 1965017,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48816626",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.5340148889808916,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "saved-trace-rosters768",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/extend_r17_discarded_shard_scores.py",
+            "replay"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/saved-trace-rosters768.log",
+          "log_sha256": "cd746e07fecd2f8a62f9994637b6e3c9c5880b856136055ba809ce78d11915b6",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 28082176,
+          "pid": 1965019,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48816682",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 3.593738928961102,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "batch-certificates12",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/certify_discarded12_r17_results.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/batch-certificates12.log",
+          "log_sha256": "257ec247a6f431539df7b7c98b0f14987d703562614e79220ac758d01d9ba95a",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 26980352,
+          "pid": 1965021,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48817044",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 1.6554084650124423,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "new-minimal-rank26",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/certify_discarded_rank26_minimal.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/new-minimal-rank26.log",
+          "log_sha256": "9e598b40ecce5fa12c9a74259ab8454d516d9548d1c4f27f49b1c3f0461119f0",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 75530240,
+          "pid": 1965023,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48817212",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 1.6555964940343983,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "inventory70",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/replay_inventory_v6_memory.py",
+            "--output",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/inventory70-result.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/inventory70.log",
+          "log_sha256": "7f37203a5e40e4937c1faf9249b133aaf0885166486e34961eb9eefc3e69846c",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 36466688,
+          "pid": 1965025,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48817379",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 9.708006886998191,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-074d9-027",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_074d9_027_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/cloud-074d9-027.log",
+          "log_sha256": "2613673d8ab6737271ed91c537d95a2555541a99d6146bfc5b83d0ffb9abbbd6",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24698880,
+          "pid": 1965027,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48818352",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.22647195600438863,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-074d9-070",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_074d9_070_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/cloud-074d9-070.log",
+          "log_sha256": "d7cdd82aaf2e2bb948a12dfbd90e925ff2c8dbd4c4421c77bb89344d46fd3da1",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24436736,
+          "pid": 1965029,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48818377",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.22756950900657102,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-07ca9-034",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_07ca9_034_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/cloud-07ca9-034.log",
+          "log_sha256": "7bce38a4308a411f461e15ff8cc5877d4a4cdb5344765cd90eabe81eab2b64a7",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 26116096,
+          "pid": 1965031,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48818403",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.27846502303145826,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-07ca9-041",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_07ca9_041_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/cloud-07ca9-041.log",
+          "log_sha256": "f422c52c550a5ce884352abaad934d0aa663d94aea876addd2d361b991551294",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24494080,
+          "pid": 1965033,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48818433",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2268090359866619,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08234-112",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_08234_112_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/cloud-08234-112.log",
+          "log_sha256": "12473e547f49837ac8a7477d70d16bb7e4341ef5e03036000f326f24a377145f",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22863872,
+          "pid": 1965035,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48818458",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.17715756502002478,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08234-091",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_08234_091_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/cloud-08234-091.log",
+          "log_sha256": "79e32ab32adcebc84ed2b1ad924fccc7738a87860e54f6a28cbf8c69758fe2e9",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23437312,
+          "pid": 1965037,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48818478",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.17666106397518888,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08f72-091",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_08f72_091_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/cloud-08f72-091.log",
+          "log_sha256": "81e1a24ffe2463eeb823bb2c37613f2823412f22d5ea50a09adec8c465f1b8aa",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23142400,
+          "pid": 1965039,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48818498",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.176225544011686,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08f72-043",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_08f72_043_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/cloud-08f72-043.log",
+          "log_sha256": "070a1b80527a383e749f11fff421b5b992e00f2ecc2707f99457ae3a7079d880",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 26423296,
+          "pid": 1965041,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48818518",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.27856696798698977,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-103b2-032",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_103b2_032_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/cloud-103b2-032.log",
+          "log_sha256": "e823f330b34dc0156d9caef1b44cc636e9da71fb6165bbbad0de9d22c382a062",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24162304,
+          "pid": 1965043,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48818548",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2273972780094482,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-103b2-008",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_103b2_008_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/cloud-103b2-008.log",
+          "log_sha256": "811eea9ad1ca4a763c2d734a4a9f5b6a0a0fbbe432e3e8d6e72593707fbe73d3",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24657920,
+          "pid": 1965045,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48818573",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2282034510280937,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-11952-074",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_11952_074_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/cloud-11952-074.log",
+          "log_sha256": "7366a04e28307048ffcc47ff6e00b178b16c285522a10e227c639a86e226eba5",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24989696,
+          "pid": 1965047,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48818599",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2782481519971043,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-11952-092",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_11952_092_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/cloud-11952-092.log",
+          "log_sha256": "d5a66092308f26d443d3bb1665e5084f1695b46af89174d2700031750c13e14f",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24432640,
+          "pid": 1965049,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48818629",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.22699830197962,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "control-cloud-100000",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/native11952_height100000_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/control-cloud-100000.log",
+          "log_sha256": "2993b35a9350c764e4c64fc05d842ba6f3019af53d3bfaa89226d73c1c48017b",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25710592,
+          "pid": 1965051,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48818655",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2784193829866126,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "control-cloud-125000",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/native11952_height125000_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/control-cloud-125000.log",
+          "log_sha256": "fda18012ffbc5f3a96bde355f67e88ca5dc031af3bfa4d419a0cc545bc505aee",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25505792,
+          "pid": 1965053,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48818685",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2777565509895794,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "control-cloud-1000000",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/native11952_height1000000_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/control-cloud-1000000.log",
+          "log_sha256": "b16b4f7fcb716bc9f1459f4a644f4917b8e25e74f7e0902d4de9be9dd36c40ec",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22888448,
+          "pid": 1965055,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48818715",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.1775507439742796,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "followup-paired_074d9-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/new27_height125_paired_074d9_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/followup-paired_074d9-mod2.log",
+          "log_sha256": "646973038c8d6efc5bb2fb9a03376f826f9b8d622b20490fc7eea527b5ccc0ef",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25964544,
+          "pid": 1965057,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48818735",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.3289140239940025,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "followup-paired_074d9-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/new27_height125_paired_074d9_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/followup-paired_074d9-modl.log",
+          "log_sha256": "bbea74fc2763a8d94be04f5bb0ab64240403540fe984022dd576cdc822e35be2",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24690688,
+          "pid": 1965059,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48818770",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.7869537459919229,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "followup-paired_11952-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/new27_height125_paired_11952_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/followup-paired_11952-mod2.log",
+          "log_sha256": "b6f991a66141cc80f43fe4985bbca4fdb892aa7645e8b560a7a1c5e35ded50f7",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 27123712,
+          "pid": 1965061,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48818851",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.32949890004238114,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "followup-paired_11952-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/new27_height125_paired_11952_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/followup-paired_11952-modl.log",
+          "log_sha256": "54921805d2d33b982ad8cf8525900bf4fdbaab2f23d59740656538cbdf4c8b00",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24793088,
+          "pid": 1965064,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48818886",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.7894821669906378,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "followup-next24_11952-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/new27_height125_next24_11952_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/followup-next24_11952-mod2.log",
+          "log_sha256": "43ec1da8c3ed12ccd488f8b414c18760dad0dc5a7f4815def4eae88117e62b6a",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25964544,
+          "pid": 1965066,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48818967",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.32971760601503775,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "followup-next24_11952-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/new27_height125_next24_11952_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/followup-next24_11952-modl.log",
+          "log_sha256": "54921805d2d33b982ad8cf8525900bf4fdbaab2f23d59740656538cbdf4c8b00",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22978560,
+          "pid": 1965068,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48819003",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.4822671359870583,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      }
+    ],
+    "status": "PASS"
+  },
+  "logs": {
+    "batch-certificates12": "REPLAYED DISCARDED12 R17 CERTIFICATES 12\n",
+    "cloud-074d9-027": "REPLAYED RECORDED-POINT RANK 074d9 2588/1603 rank >= 26\n",
+    "cloud-074d9-070": "REPLAYED RECORDED-POINT RANK 074d9 -649/921 rank >= 24\n",
+    "cloud-07ca9-034": "REPLAYED RECORDED-POINT RANK 07ca9 2059/3120 rank >= 25\n",
+    "cloud-07ca9-041": "REPLAYED RECORDED-POINT RANK 07ca9 -489/40 rank >= 25\n",
+    "cloud-08234-091": "REPLAYED RECORDED-POINT RANK 08234 937/2802 rank >= 17\n",
+    "cloud-08234-112": "REPLAYED RECORDED-POINT RANK 08234 -2923/2870 rank >= 17\n",
+    "cloud-08f72-043": "REPLAYED RECORDED-POINT RANK 08f72 -307/72 rank >= 23\n",
+    "cloud-08f72-091": "REPLAYED RECORDED-POINT RANK 08f72 -1371/1358 rank >= 19\n",
+    "cloud-103b2-008": "REPLAYED RECORDED-POINT RANK 103b2 -481/278 rank >= 23\n",
+    "cloud-103b2-032": "REPLAYED RECORDED-POINT RANK 103b2 -2445/83 rank >= 23\n",
+    "cloud-11952-074": "REPLAYED RECORDED-POINT RANK 11952 -695/311 rank >= 25\n",
+    "cloud-11952-092": "REPLAYED RECORDED-POINT RANK 11952 3444/347 rank >= 21\n",
+    "control-cloud-100000": "REPLAYED RECORDED-POINT RANK 11952-control fixed-native-rank29-control rank >= 27\n",
+    "control-cloud-1000000": "REPLAYED RECORDED-POINT RANK 11952-control fixed-native-rank29-control rank >= 17\n",
+    "control-cloud-125000": "REPLAYED RECORDED-POINT RANK 11952-control fixed-native-rank29-control rank >= 28\n",
+    "followup-next24_11952-mod2": "REPLAYED RECORDED-POINT RANK 11952 2828/2015 rank >= 27\n",
+    "followup-next24_11952-modl": "REPLAYED CLOUD MODL 11952 3 rank >= 27\nREPLAYED CLOUD MODL 11952 5 rank >= 27\n",
+    "followup-paired_074d9-mod2": "REPLAYED RECORDED-POINT RANK 074d9 2818/1535 rank >= 27\n",
+    "followup-paired_074d9-modl": "REPLAYED CLOUD MODL 074d9 3 rank >= 27\nREPLAYED CLOUD MODL 074d9 5 rank >= 27\n",
+    "followup-paired_11952-mod2": "REPLAYED RECORDED-POINT RANK 11952 -2448/11 rank >= 27\n",
+    "followup-paired_11952-modl": "REPLAYED CLOUD MODL 11952 3 rank >= 27\nREPLAYED CLOUD MODL 11952 5 rank >= 27\n",
+    "geometry828": "REPLAYED HEIGHT AND DISCARDED GEOMETRY, EXACT CENTRES, RAW POINTS AND CLOUD PROVENANCE 828 charts\nAdmission/archive histories passed separate retained local replays; this check does not repeat them.\n",
+    "height-control": "REPLAYED NATIVE29 HEIGHT CONTROL [(100000, 27, {'bounded_search_complete': 49}), (125000, 28, {'bounded_search_complete': 49}), (1000000, 17, {'bounded_search_timeout': 49})]\n",
+    "inventory70": "MEMORY REPLAY V6 new-20260906-40 rank >= 27\nMEMORY REPLAY V6 new-20260906-41 rank >= 27\nMEMORY REPLAY V6 new-20260906-48 rank >= 27\nMEMORY REPLAY V6 new-20260906-63 rank >= 26\nMEMORY REPLAY V6 new-20260906-42 rank >= 26\nMEMORY REPLAY V6 new-20260905-37 rank >= 26\nMEMORY REPLAY V6 new-20260906-49 rank >= 26\nMEMORY REPLAY V6 new-20260906-50 rank >= 26\nMEMORY REPLAY V6 new-20260905-38 rank >= 25\nMEMORY REPLAY V6 new-20260906-51 rank >= 25\nMEMORY REPLAY V6 new-20260906-64 rank >= 25\nMEMORY REPLAY V6 new-20260905-39 rank >= 25\nMEMORY REPLAY V6 new-20260906-65 rank >= 25\nMEMORY REPLAY V6 new-20260905-01 rank >= 25\nMEMORY REPLAY V6 new-20260906-52 rank >= 25\nMEMORY REPLAY V6 new-20260906-43 rank >= 25\nMEMORY REPLAY V6 new-20260906-53 rank >= 25\nMEMORY REPLAY V6 new-20260906-54 rank >= 25\nMEMORY REPLAY V6 new-20260906-44 rank >= 25\nMEMORY REPLAY V6 new-20260906-66 rank >= 25\nMEMORY REPLAY V6 new-20260905-02 rank >= 25\nMEMORY REPLAY V6 new-20260905-03 rank >= 25\nMEMORY REPLAY V6 new-20260906-55 rank >= 24\nMEMORY REPLAY V6 new-20260906-67 rank >= 24\nMEMORY REPLAY V6 new-20260906-56 rank >= 24\nMEMORY REPLAY V6 new-20260905-04 rank >= 24\nMEMORY REPLAY V6 new-20260906-45 rank >= 24\nMEMORY REPLAY V6 new-20260906-46 rank >= 24\nMEMORY REPLAY V6 new-20260906-57 rank >= 24\nMEMORY REPLAY V6 new-20260905-05 rank >= 24\nMEMORY REPLAY V6 new-20260905-33 rank >= 24\nMEMORY REPLAY V6 new-20260905-06 rank >= 24\nMEMORY REPLAY V6 new-20260905-07 rank >= 24\nMEMORY REPLAY V6 new-20260905-08 rank >= 24\nMEMORY REPLAY V6 new-20260905-09 rank >= 24\nMEMORY REPLAY V6 new-20260905-10 rank >= 24\nMEMORY REPLAY V6 new-20260905-11 rank >= 23\nMEMORY REPLAY V6 new-20260906-58 rank >= 23\nMEMORY REPLAY V6 new-20260905-12 rank >= 23\nMEMORY REPLAY V6 new-20260906-68 rank >= 23\nMEMORY REPLAY V6 new-20260906-69 rank >= 23\nMEMORY REPLAY V6 new-20260906-70 rank >= 23\nMEMORY REPLAY V6 new-20260906-59 rank >= 23\nMEMORY REPLAY V6 new-20260906-60 rank >= 23\nMEMORY REPLAY V6 new-20260905-13 rank >= 23\nMEMORY REPLAY V6 new-20260905-34 rank >= 23\nMEMORY REPLAY V6 new-20260905-14 rank >= 23\nMEMORY REPLAY V6 new-20260905-15 rank >= 23\nMEMORY REPLAY V6 new-20260905-16 rank >= 23\nMEMORY REPLAY V6 new-20260905-17 rank >= 23\nMEMORY REPLAY V6 new-20260905-18 rank >= 23\nMEMORY REPLAY V6 new-20260905-19 rank >= 23\nMEMORY REPLAY V6 new-20260905-20 rank >= 23\nMEMORY REPLAY V6 new-20260905-21 rank >= 22\nMEMORY REPLAY V6 new-20260906-61 rank >= 22\nMEMORY REPLAY V6 new-20260906-62 rank >= 22\nMEMORY REPLAY V6 new-20260906-47 rank >= 22\nMEMORY REPLAY V6 new-20260905-22 rank >= 22\nMEMORY REPLAY V6 new-20260905-23 rank >= 22\nMEMORY REPLAY V6 new-20260905-24 rank >= 22\nMEMORY REPLAY V6 new-20260905-25 rank >= 22\nMEMORY REPLAY V6 new-20260905-26 rank >= 22\nMEMORY REPLAY V6 new-20260905-27 rank >= 22\nMEMORY REPLAY V6 new-20260905-35 rank >= 22\nMEMORY REPLAY V6 new-20260905-36 rank >= 22\nMEMORY REPLAY V6 new-20260905-28 rank >= 22\nMEMORY REPLAY V6 new-20260905-29 rank >= 22\nMEMORY REPLAY V6 new-20260905-30 rank >= 22\nMEMORY REPLAY V6 new-20260905-31 rank >= 22\nMEMORY REPLAY V6 new-20260905-32 rank >= 22\nEXACT MEMORY INVENTORY PASS 70 AND CSV\n",
+    "new-minimal-rank26": "REPLAYED ONE MINIMAL RANK26 PROOF\n",
+    "oracle-translations196": "REPLAYED196 NATIVE29 TRANSLATIONS [(2, 113933), (27, 918522)]\n",
+    "saved-trace-rosters768": "REPLAYED768 DISCARDED TRACE ROSTERS AND FIXED SCORE SELECTION {'074d9': {'extended_top_two': [27, 70]}, '07ca9': {'extended_top_two': [34, 41]}, '08234': {'extended_top_two': [112, 91]}, '08f72': {'extended_top_two': [91, 43]}, '103b2': {'extended_top_two': [32, 8]}, '11952': {'extended_top_two': [74, 92]}}\n"
+  },
+  "manifest_sha256": "569c48d08b635c46b56cf0b756afe8669c180e391b621187c247b551f66a1c15",
+  "protocol": {
+    "jobs": [
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/replay_height_and_discarded_geometry.py"
+        ],
+        "name": "geometry828",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/replay_native11952_translated_visibility_v2.py",
+          "--output",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/oracle-replay.json"
+        ],
+        "name": "oracle-translations196",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/certify_native29_height_control_v2.py",
+          "--check"
+        ],
+        "name": "height-control",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/extend_r17_discarded_shard_scores.py",
+          "replay"
+        ],
+        "name": "saved-trace-rosters768",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/certify_discarded12_r17_results.py",
+          "--check"
+        ],
+        "name": "batch-certificates12",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/certify_discarded_rank26_minimal.py",
+          "--check"
+        ],
+        "name": "new-minimal-rank26",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/replay_inventory_v6_memory.py",
+          "--output",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/verification/inventory70-result.json"
+        ],
+        "name": "inventory70",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_074d9_027_mod2_v1.json"
+        ],
+        "name": "cloud-074d9-027",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_074d9_070_mod2_v1.json"
+        ],
+        "name": "cloud-074d9-070",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_07ca9_034_mod2_v1.json"
+        ],
+        "name": "cloud-07ca9-034",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_07ca9_041_mod2_v1.json"
+        ],
+        "name": "cloud-07ca9-041",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_08234_112_mod2_v1.json"
+        ],
+        "name": "cloud-08234-112",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_08234_091_mod2_v1.json"
+        ],
+        "name": "cloud-08234-091",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_08f72_091_mod2_v1.json"
+        ],
+        "name": "cloud-08f72-091",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_08f72_043_mod2_v1.json"
+        ],
+        "name": "cloud-08f72-043",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_103b2_032_mod2_v1.json"
+        ],
+        "name": "cloud-103b2-032",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_103b2_008_mod2_v1.json"
+        ],
+        "name": "cloud-103b2-008",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_11952_074_mod2_v1.json"
+        ],
+        "name": "cloud-11952-074",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/discarded12_r17_11952_092_mod2_v1.json"
+        ],
+        "name": "cloud-11952-092",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/native11952_height100000_mod2_v1.json"
+        ],
+        "name": "control-cloud-100000",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/native11952_height125000_mod2_v1.json"
+        ],
+        "name": "control-cloud-125000",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/native11952_height1000000_mod2_v1.json"
+        ],
+        "name": "control-cloud-1000000",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/new27_height125_paired_074d9_mod2_v1.json"
+        ],
+        "name": "followup-paired_074d9-mod2",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/new27_height125_paired_074d9_modl_v1.json"
+        ],
+        "name": "followup-paired_074d9-modl",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/new27_height125_paired_11952_mod2_v1.json"
+        ],
+        "name": "followup-paired_11952-mod2",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/new27_height125_paired_11952_modl_v1.json"
+        ],
+        "name": "followup-paired_11952-modl",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/new27_height125_next24_11952_mod2_v1.json"
+        ],
+        "name": "followup-next24_11952-mod2",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/height-and-discarded-portable-v1/workspace/artifacts/generated-results/elliptic-curves/new27_height125_next24_11952_modl_v1.json"
+        ],
+        "name": "followup-next24_11952-modl",
+        "wall_seconds": 180
+      }
+    ],
+    "manifest_sha256": "569c48d08b635c46b56cf0b756afe8669c180e391b621187c247b551f66a1c15",
+    "rss_bytes": 1610612736,
+    "scope": "Isolated exact geometry and raw-point/cloud provenance for828 charts,196 oracle group words, three known-control point proofs,768 saved trace rosters and fixed12 selection, all twelve new-curve proofs, one minimal rank26 model,70-curve inventory andCSV, and three prospective follow-up clouds modulo2,3,5. No point search. All admission/archive histories passed local replay and are retained but not repeated here.",
+    "verifier_sha256": "f51e5239e5da334d906b8362c7339ac111bde871a2a601b775067a691622b8b0"
+  },
+  "schema": "elliptic-curves.height-and-discarded-portable-replay.v1",
+  "stages_attempted": 28,
+  "status": "PASS",
+  "verifier_path": "elliptic-curves/cas/verify_height_and_discarded_bundle.py",
+  "verifier_sha256": "f51e5239e5da334d906b8362c7339ac111bde871a2a601b775067a691622b8b0"
+}

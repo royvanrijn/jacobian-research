@@ -1,0 +1,128 @@
+{
+  "claim_boundary": "Combines the five separately exact-replayed rational j-incidence cohorts and the exact Q(t) unimodular17-section transport. Every additional recorded presentation is the same generic subgroup. The separate incidence/transport replays remain required; this summary does not replay ranks or exclude other families, nongeneric points or higher ranks.",
+  "pairs_checked": 1068,
+  "same_generic_subgroup_duplicates": [
+    {
+      "compact_parameter": "17650/843",
+      "id": "new-20260905-08",
+      "published_parameter": "-2300/843"
+    },
+    {
+      "compact_parameter": "13220/97",
+      "id": "new-20260905-09",
+      "published_parameter": "-695/97"
+    },
+    {
+      "compact_parameter": "-6808/119",
+      "id": "new-20260905-10",
+      "published_parameter": "33/119"
+    },
+    {
+      "compact_parameter": "-506/9",
+      "id": "new-20260905-12",
+      "published_parameter": "28/117"
+    },
+    {
+      "compact_parameter": "-1807/60",
+      "id": "new-20260905-14",
+      "published_parameter": "-1193/1560"
+    },
+    {
+      "compact_parameter": "-19486/1047",
+      "id": "new-20260905-15",
+      "published_parameter": "-1264/1047"
+    },
+    {
+      "compact_parameter": "-86180/3749",
+      "id": "new-20260905-16",
+      "published_parameter": "-3895/3749"
+    },
+    {
+      "compact_parameter": "-38327/447",
+      "id": "new-20260905-17",
+      "published_parameter": "1229/894"
+    },
+    {
+      "compact_parameter": "-3427/35",
+      "id": "new-20260905-18",
+      "published_parameter": "129/70"
+    },
+    {
+      "compact_parameter": "-6891/92",
+      "id": "new-20260905-19",
+      "published_parameter": "2291/2392"
+    },
+    {
+      "compact_parameter": "-2894/35",
+      "id": "new-20260905-20",
+      "published_parameter": "44/35"
+    },
+    {
+      "compact_parameter": "-3661/74",
+      "id": "new-20260905-28",
+      "published_parameter": "-3/148"
+    },
+    {
+      "compact_parameter": "-1230/61",
+      "id": "new-20260905-29",
+      "published_parameter": "-70/61"
+    },
+    {
+      "compact_parameter": "80190/2317",
+      "id": "new-20260905-30",
+      "published_parameter": "-7540/2317"
+    },
+    {
+      "compact_parameter": "-106598/1431",
+      "id": "new-20260905-31",
+      "published_parameter": "1348/1431"
+    },
+    {
+      "compact_parameter": "-166/3",
+      "id": "new-20260905-32",
+      "published_parameter": "8/39"
+    },
+    {
+      "compact_parameter": "1504/3",
+      "id": "new-20260906-56",
+      "published_parameter": "-827/39"
+    },
+    {
+      "compact_parameter": "-2387/360",
+      "id": "new-20260906-58",
+      "published_parameter": "-1201/720"
+    },
+    {
+      "compact_parameter": "-2741/118",
+      "id": "new-20260906-79",
+      "published_parameter": "-243/236"
+    },
+    {
+      "compact_parameter": "-2980/811",
+      "id": "new-20260906-80",
+      "published_parameter": "-1445/811"
+    },
+    {
+      "compact_parameter": "4051/121",
+      "id": "new-20260906-81",
+      "published_parameter": "-777/242"
+    }
+  ],
+  "schema": "elliptic-curves.inventory89-incidence.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_cross_family_j_incidence_v1.json": "9a91158d3663fe4d1a11ee611a129a0e841b1c98ec99f9c4f5c6d4828cc265aa",
+    "artifacts/generated-results/elliptic-curves/compact_published_r17_generic_transport_v1.json": "06daf2f40c58fc55e08e2aa64dbd17aafd1f1404db6b48b74e2d367ca9471449",
+    "artifacts/generated-results/elliptic-curves/latest23_cross_family_j_incidence_v1.json": "e951a5093b48e6b27842e4b89844df1bed70eea852aa8c1f2cb260b70a7b4486",
+    "artifacts/generated-results/elliptic-curves/latest7_cross_family_j_incidence_v1.json": "4cc2edee94ae9d0f44ec83e3703dc7e610182229ce30f1df336906ced2fce3fe",
+    "artifacts/generated-results/elliptic-curves/latest8_cross_family_j_incidence_v1.json": "b2ab583f297a00df01af727d08d2720238b5482c472114c9d043e72994007e79",
+    "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v7.json": "8b82bc1c0fd3f00d970bd8553b105b27288511a2baed8317aca5ae1b60470e50",
+    "artifacts/generated-results/elliptic-curves/retention_cross_family_j_incidence_v1.json": "26b262580472112dcc1b82e3933a557d2065ec4c8a2e70a352ced0b4b3ea8e85",
+    "elliptic-curves/cas/certify_inventory89_incidence.py": "a90d6a6d83c5670345c7581fa1d7f273044f70ce79f724d377b442ca190c04bd"
+  },
+  "status": "PASS",
+  "status_counts": {
+    "NO_RATIONAL_J_PREIMAGE": 958,
+    "RATIONAL_J_PREIMAGES_CERTIFIED": 110
+  },
+  "targets_checked": 89
+}

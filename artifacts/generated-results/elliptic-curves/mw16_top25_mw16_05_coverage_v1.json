@@ -1,0 +1,36 @@
+{
+  "attempted_charts": 43,
+  "certificates": {
+    "artifacts/generated-results/elliptic-curves/mw16_top25_mw16_05_all_retained_mod2_v1.json": "27f31cbe6b56ed6459fa3f2766d2552454ea5c754926b671e0e5183443d09a3e",
+    "artifacts/generated-results/elliptic-curves/mw16_top25_mw16_05_all_retained_modl_v1.json": "26c0a6dc5eb62820b0dc39894a3686bd9f0228b871e5088f97f02f9e84712a8b",
+    "artifacts/local/elliptic-curves/mw16-top25-pari-followup-v1/mw16-05/all-retained-point-cloud-only.json": "ebea167fa7b1fd8dd1b26099b6b477de0f5b49ec9572d54299dcd2449062e387",
+    "artifacts/local/elliptic-curves/mw16-top25-pari-followup-v1/mw16-05/cloud-verification-ledger.json": "b674a91937879c912002f3f12ad74ea7f2d64a5c63fb29c2dd95ce6ecf6d25f0"
+  },
+  "claim_boundary": "Exact rational geometry and point-union provenance replayed. Separate finite-quotient checks certify lower bounds only. Recorded box coverage trusts pinned PARI execution. No exact rank, saturation, upper bound or absence of further points.",
+  "completed_boxes": 43,
+  "family": "a1-fibration-05",
+  "height": 100000,
+  "id": "mw16-05",
+  "kind": "mw16",
+  "mod2_lower_bound": 25,
+  "odd_modulus_lower_bounds": {
+    "3": 25,
+    "5": 25
+  },
+  "parameter": "307/206",
+  "retained_point_count": 650,
+  "schema": "elliptic-curves.fixed-coordinate-height-followup-coverage.v1",
+  "seconds_per_chart": 10,
+  "sources": {
+    "artifacts/local/elliptic-curves/mw16-top25-pari-followup-v1/ledger.json": "469e3020fa79940ef4fdc75e8af2d951e411c9310263957ae0e7cde0612f53fd",
+    "artifacts/local/elliptic-curves/mw16-top25-pari-followup-v1/mw16-05/maps.json": "7bc9fef2185bca291ea40a3bb5cf305dab4307e8ea62cbf08be02d44047b1054",
+    "artifacts/local/elliptic-curves/mw16-top25-pari-followup-v1/mw16-05/replay.supervisor.json": "0ef68a7fe2f1a96de2055ac5c78acbc7336a1d770eae4261cd5142f949f90532",
+    "artifacts/local/elliptic-curves/mw16-top25-pari-followup-v1/mw16-05/result.json": "68aa60f0639393b06700459c3ec0ecd04db7a5b1c9b8872e58786b65efd18cc2",
+    "artifacts/local/elliptic-curves/mw16-top25-pari-followup-v1/protocol.json": "d4f44f10321168b75270c840ce38284aa6e885dd1422bce9ae951de055a64afa",
+    "artifacts/local/elliptic-curves/prospective-mw16-h1024-v1/a1-fibration-05/candidate-03/result.json": "d4f10d10d721026e7a9d8e3b72cbdaa14db93f1459997a21a61c0f791561358d",
+    "elliptic-curves/cas/audit_mw16_and_million_followups.py": "c27a1f2ead196a234f146fd50d5297e15be97208512218e5627ff3408a18311f",
+    "elliptic-curves/cas/replay_retention24_geometry.py": "341b3ede2ecd39cbfdf8ad009c0db8bba42afa0a01ab2d6dfd767a2898075f05"
+  },
+  "status": "PASS",
+  "union_chart_inputs": 86
+}

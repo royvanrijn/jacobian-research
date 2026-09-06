@@ -1,0 +1,252 @@
+{
+  "additional_prime_count": 5978,
+  "candidate_count": 768,
+  "claim_boundary": "Descriptive finite diagnostics after selection and paired point roster were frozen. Disjoint validation primes are not actual ranks. The24 previous lower bounds came from a different point policy and a truncated score pool; four per family is not a general rank-classifier validation. No policy promotion, p-value or selection completeness claim.",
+  "families_with_higher_extended_arm_validation": 6,
+  "rows": [
+    {
+      "arms": {
+        "extended_top_two": {
+          "indices": [
+            7,
+            17
+          ],
+          "mean_validation_percentile": 0.853658536585366,
+          "mean_validation_score": 16.04415592106,
+          "parameters": [
+            "2818/1535",
+            "808/2259"
+          ]
+        },
+        "original_next_two": {
+          "indices": [
+            4,
+            5
+          ],
+          "mean_validation_percentile": 0.3699186991869919,
+          "mean_validation_score": 12.530182754968,
+          "parameters": [
+            "17/55",
+            "1649/2323"
+          ]
+        }
+      },
+      "family": "074d9",
+      "prior_four_lower_bounds": [
+        23,
+        19,
+        25,
+        22
+      ],
+      "prior_four_spearman_with_extended_score": 0.8,
+      "prior_four_spearman_with_original_score": 0.0,
+      "remaining_pool_selection_vs_validation_spearman": 0.20292053501180174,
+      "validation_score_difference_extended_minus_original": 3.5139731660920006
+    },
+    {
+      "arms": {
+        "extended_top_two": {
+          "indices": [
+            5,
+            25
+          ],
+          "mean_validation_percentile": 0.7154471544715447,
+          "mean_validation_score": 15.505641369763,
+          "parameters": [
+            "633/4064",
+            "-428/491"
+          ]
+        },
+        "original_next_two": {
+          "indices": [
+            4,
+            5
+          ],
+          "mean_validation_percentile": 0.2967479674796748,
+          "mean_validation_score": 11.035851078639,
+          "parameters": [
+            "2027/2347",
+            "633/4064"
+          ]
+        }
+      },
+      "family": "07ca9",
+      "prior_four_lower_bounds": [
+        26,
+        25,
+        19,
+        24
+      ],
+      "prior_four_spearman_with_extended_score": 0.4,
+      "prior_four_spearman_with_original_score": 0.8,
+      "remaining_pool_selection_vs_validation_spearman": 0.07136428009441385,
+      "validation_score_difference_extended_minus_original": 4.469790291123999
+    },
+    {
+      "arms": {
+        "extended_top_two": {
+          "indices": [
+            37,
+            15
+          ],
+          "mean_validation_percentile": 0.8983739837398375,
+          "mean_validation_score": 16.6069692307235,
+          "parameters": [
+            "-1807/60",
+            "-1909/53"
+          ]
+        },
+        "original_next_two": {
+          "indices": [
+            4,
+            5
+          ],
+          "mean_validation_percentile": 0.5609756097560976,
+          "mean_validation_score": 12.8723112758945,
+          "parameters": [
+            "1931/3733",
+            "-2957/3626"
+          ]
+        }
+      },
+      "family": "08234",
+      "prior_four_lower_bounds": [
+        25,
+        19,
+        19,
+        17
+      ],
+      "prior_four_spearman_with_extended_score": 0.9486832980505138,
+      "prior_four_spearman_with_original_score": 0.9486832980505138,
+      "remaining_pool_selection_vs_validation_spearman": 0.18805350118017308,
+      "validation_score_difference_extended_minus_original": 3.734657954829
+    },
+    {
+      "arms": {
+        "extended_top_two": {
+          "indices": [
+            70,
+            9
+          ],
+          "mean_validation_percentile": 0.8089430894308942,
+          "mean_validation_score": 15.007639044544,
+          "parameters": [
+            "1361/72",
+            "9/17"
+          ]
+        },
+        "original_next_two": {
+          "indices": [
+            4,
+            5
+          ],
+          "mean_validation_percentile": 0.6788617886178862,
+          "mean_validation_score": 14.502363408554,
+          "parameters": [
+            "-4072/2691",
+            "992/3991"
+          ]
+        }
+      },
+      "family": "08f72",
+      "prior_four_lower_bounds": [
+        19,
+        17,
+        20,
+        17
+      ],
+      "prior_four_spearman_with_extended_score": 0.9486832980505138,
+      "prior_four_spearman_with_original_score": 0.21081851067789195,
+      "remaining_pool_selection_vs_validation_spearman": 0.11614791502753737,
+      "validation_score_difference_extended_minus_original": 0.5052756359899995
+    },
+    {
+      "arms": {
+        "extended_top_two": {
+          "indices": [
+            26,
+            62
+          ],
+          "mean_validation_percentile": 0.7764227642276422,
+          "mean_validation_score": 15.811124818551,
+          "parameters": [
+            "503/138",
+            "791/627"
+          ]
+        },
+        "original_next_two": {
+          "indices": [
+            4,
+            5
+          ],
+          "mean_validation_percentile": 0.5,
+          "mean_validation_score": 14.1283976647135,
+          "parameters": [
+            "85/1261",
+            "-2875/1133"
+          ]
+        }
+      },
+      "family": "103b2",
+      "prior_four_lower_bounds": [
+        23,
+        21,
+        17,
+        18
+      ],
+      "prior_four_spearman_with_extended_score": 0.8,
+      "prior_four_spearman_with_original_score": 0.8,
+      "remaining_pool_selection_vs_validation_spearman": 0.18813532651455547,
+      "validation_score_difference_extended_minus_original": 1.6827271538375008
+    },
+    {
+      "arms": {
+        "extended_top_two": {
+          "indices": [
+            10,
+            48
+          ],
+          "mean_validation_percentile": 0.7154471544715447,
+          "mean_validation_score": 16.223031229741,
+          "parameters": [
+            "-2448/11",
+            "-328/1123"
+          ]
+        },
+        "original_next_two": {
+          "indices": [
+            4,
+            5
+          ],
+          "mean_validation_percentile": 0.3861788617886179,
+          "mean_validation_score": 12.069783768231002,
+          "parameters": [
+            "-757/1276",
+            "1926/3347"
+          ]
+        }
+      },
+      "family": "11952",
+      "prior_four_lower_bounds": [
+        20,
+        17,
+        18,
+        17
+      ],
+      "prior_four_spearman_with_extended_score": 0.7378647873726218,
+      "prior_four_spearman_with_original_score": 0.6324555320336759,
+      "remaining_pool_selection_vs_validation_spearman": 0.262690794649882,
+      "validation_score_difference_extended_minus_original": 4.153247461509999
+    }
+  ],
+  "schema": "elliptic-curves.r17-prime-extension-diagnostics.v1",
+  "source_sha256": "59ca7b1286d64ae055b0bc27963ae28006eb497560da7234318ae7dbe4888cf7",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_r17_wide_results_v1.json": "9129bfa90eeaab1f1660c5d6ff39de691560a47f4af929ea19a176c2faf4b404",
+    "artifacts/local/elliptic-curves/r17-retained-extended-primes-v1/protocol.json": "477cb488be28b154f24b34990b306fd9ceb4a9c42164bb90f3f3ee2b03e885ee",
+    "artifacts/local/elliptic-curves/r17-retained-extended-primes-v1/replay.supervisor.json": "12d94d508452a91e908dfced688aed66147a0e4c00bf6e735ed77ae976785096",
+    "artifacts/local/elliptic-curves/r17-retained-extended-primes-v1/result.json": "d9aa9b4240260af6f6c7d432241efb639c3c9821f591937e33ae893442395c89",
+    "elliptic-curves/cas/analyze_r17_prime_extension.py": "59ca7b1286d64ae055b0bc27963ae28006eb497560da7234318ae7dbe4888cf7"
+  },
+  "trace_lookups": 4591104
+}

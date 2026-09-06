@@ -1,0 +1,241 @@
+{
+  "schema": "elliptic-curves.retention-rank27-followup-portable.v1",
+  "status": "PASS",
+  "protocol": {
+    "jobs": [
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/workspace/elliptic-curves/cas/replay_retention_rank27_followup_geometry.py"
+        ],
+        "name": "geometry602",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention_rank27_103b2_733_all_retained_mod2_v1.json"
+        ],
+        "name": "103b2_733-mod2",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention_rank27_103b2_733_all_retained_modl_v1.json"
+        ],
+        "name": "103b2_733-modl",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention_rank27_11952_113_all_retained_mod2_v1.json"
+        ],
+        "name": "11952_113-mod2",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention_rank27_11952_113_all_retained_modl_v1.json"
+        ],
+        "name": "11952_113-modl",
+        "wall_seconds": 180
+      }
+    ],
+    "manifest_sha256": "566ebc83aa3e98857951d746261eee34d39ad74c6083018fe99b0978848de475",
+    "rss_bytes": 1610612736,
+    "scope": "All602 adaptive chart centres, parity rosters, exact maps, raw points and full-cloud provenance, plus both1426/1928-point clouds modulo2,3,5. No point search. All admission histories passed separately and are retained.",
+    "verifier_sha256": "11ee7edaae083b91fb83a43aad2449136635b284b501bfb67122375925c4792c"
+  },
+  "ledger": {
+    "rows": [
+      {
+        "name": "geometry602",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/workspace/elliptic-curves/cas/replay_retention_rank27_followup_geometry.py"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/verification/geometry602.log",
+          "log_sha256": "c722d460900678bd6c4f9507054ddfb0d784a00da7e0d5d56b4d2d8c3b1f00e9",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 321757184,
+          "pid": 2651933,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49100944",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 4.851169026980642,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "103b2_733-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention_rank27_103b2_733_all_retained_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/verification/103b2_733-mod2.log",
+          "log_sha256": "770fae177c847d844d61fd751644cd548c38212c23f82a1f0bbcf5d4104d98e4",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 27791360,
+          "pid": 2652542,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49101429",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.3296623550122604,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "103b2_733-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention_rank27_103b2_733_all_retained_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/verification/103b2_733-modl.log",
+          "log_sha256": "a25241fe4e67c5aeb20317087f4bec5227c1eb457a36fb23d187a408c4259cda",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23846912,
+          "pid": 2652544,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49101465",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.6357444049790502,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "11952_113-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention_rank27_11952_113_all_retained_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/verification/11952_113-mod2.log",
+          "log_sha256": "d72a7ced80548e2bc63f1d815a6b6fc39d4e922948a1c5fb99b581b585af6b9f",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 27000832,
+          "pid": 2652546,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49101531",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.3298651449731551,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "11952_113-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention_rank27_11952_113_all_retained_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention-rank27-followup-portable-v1/verification/11952_113-modl.log",
+          "log_sha256": "54921805d2d33b982ad8cf8525900bf4fdbaab2f23d59740656538cbdf4c8b00",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25141248,
+          "pid": 2652548,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49101567",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.8400895249797031,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      }
+    ],
+    "status": "PASS"
+  },
+  "logs": {
+    "geometry602": "EXACT RETENTION RANK27 FOLLOWUP GEOMETRY AND CLOUD PROVENANCE 602 charts\n",
+    "103b2_733-mod2": "REPLAYED RECORDED-POINT RANK 103b2 3726/881 rank >= 27\n",
+    "103b2_733-modl": "REPLAYED CLOUD MODL 103b2 3 rank >= 27\nREPLAYED CLOUD MODL 103b2 5 rank >= 27\n",
+    "11952_113-mod2": "REPLAYED RECORDED-POINT RANK 11952 2012/211 rank >= 27\n",
+    "11952_113-modl": "REPLAYED CLOUD MODL 11952 3 rank >= 27\nREPLAYED CLOUD MODL 11952 5 rank >= 27\n"
+  },
+  "aggregate_stage_wall_seconds": 6.986530456924811
+}

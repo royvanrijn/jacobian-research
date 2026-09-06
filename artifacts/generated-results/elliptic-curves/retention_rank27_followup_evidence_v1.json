@@ -1,0 +1,3829 @@
+{
+  "archive": "artifacts/generated-results/elliptic-curves/retention_rank27_followup_evidence_v1.zip",
+  "archive_bytes": 6406987,
+  "archive_sha256": "db1017de2287a672034f216f57875fd36a6412ed2cd41ef6d3c81fa372d16831",
+  "claim_boundary": "Extract eleven pinned bases in order, then this supplement. Retains602 exact adaptive chart records and archived histories on the two new27 curves, both complete point clouds and mod2/3/5 proofs. The corrected initial-experiment note is included. No exact rank, saturation, point absence or new28 direction is asserted.",
+  "files": [
+    {
+      "bytes": 1194,
+      "path": "artifacts/generated-results/elliptic-curves/retention24_discovery_note_correction_v1.json",
+      "sha256": "4ab5155bfda67115d5e2da806793e301004c4e8e730790d2fe2055806c5a335e"
+    },
+    {
+      "bytes": 90445,
+      "path": "artifacts/generated-results/elliptic-curves/retention24_portable_replay_v1.json",
+      "sha256": "ca43b4ee1a82fcd5cf91eaa1d89d7f76042cfe2706a17b1dfa71944e922c9a66"
+    },
+    {
+      "bytes": 2259,
+      "path": "artifacts/generated-results/elliptic-curves/retention_rank27_103b2_733_adaptive_coverage_v1.json",
+      "sha256": "da0fbdd418fa7aba76456293e8754b1587b77b0a9c8399fcfb69b0f3b3637e8f"
+    },
+    {
+      "bytes": 742041,
+      "path": "artifacts/generated-results/elliptic-curves/retention_rank27_103b2_733_all_retained_mod2_v1.json",
+      "sha256": "f0c3e3b3deb9505bcea717978460bcb741cab70ca51d1216483c5f6e276a9400"
+    },
+    {
+      "bytes": 1533935,
+      "path": "artifacts/generated-results/elliptic-curves/retention_rank27_103b2_733_all_retained_modl_v1.json",
+      "sha256": "78cf011f89924bda6db05ccbced2e4c7cc63ccdedb03a9d4fa9fe185239598fb"
+    },
+    {
+      "bytes": 2259,
+      "path": "artifacts/generated-results/elliptic-curves/retention_rank27_11952_113_adaptive_coverage_v1.json",
+      "sha256": "3e1c26c245c1ba5ffe9f19fd3d922a0cc0246921788530b2b32e6027f2a553a9"
+    },
+    {
+      "bytes": 962552,
+      "path": "artifacts/generated-results/elliptic-curves/retention_rank27_11952_113_all_retained_mod2_v1.json",
+      "sha256": "4eed5030364aeec99e443e2255183af3ebb21e11721bc4ee5feff38b5d7b0e52"
+    },
+    {
+      "bytes": 2033926,
+      "path": "artifacts/generated-results/elliptic-curves/retention_rank27_11952_113_all_retained_modl_v1.json",
+      "sha256": "783b75f0bd50c1a58dca719d2abcf4db5dbedf706e62b503d5ea036285232c30"
+    },
+    {
+      "bytes": 297921,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/all-retained-point-cloud-only.json",
+      "sha256": "4be9d819bc3b5847e35e214fcd1fc5aefde6bcddd1db0ebd8ddcada6990f8cda"
+    },
+    {
+      "bytes": 67,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/audit.log",
+      "sha256": "d045ae2bf97c9a83a9256dc9fe4e85c7fb94cd2bb0f3abd4948fd83b75092ebc"
+    },
+    {
+      "bytes": 956,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/audit.supervisor.json",
+      "sha256": "0b63d9ef1706e0d467b3f23f93af01c9efdf537c9b52e61f98e7383089612e91"
+    },
+    {
+      "bytes": 5950,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/cloud-verification-ledger.json",
+      "sha256": "48a119c0a7cdab48cde3d7d5f76b021fada8c558c1e018da33138077b5225ed1"
+    },
+    {
+      "bytes": 78,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/launch.log",
+      "sha256": "c1ff451d8bd0afc48dc753eb9fec8320b5402e64a11d5c438f05097aa74a29d4"
+    },
+    {
+      "bytes": 966,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/launch.supervisor.json",
+      "sha256": "0913c897098cff9859a04e6b7f888085493f49fb82f676991d5e896e56ac0a5b"
+    },
+    {
+      "bytes": 1006390,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/maps.json",
+      "sha256": "df1335b54c88d5ec5334ad8d3df71f7842a7fed25098aeadbe05d9d2fec2c50f"
+    },
+    {
+      "bytes": 190,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/maps.log",
+      "sha256": "af89e271ca7af548d199c911e588790f89aa7415c1a07eabd5650a0f83a0ace2"
+    },
+    {
+      "bytes": 1000,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/maps.supervisor.json",
+      "sha256": "51ebacb9d95941589961acd5bd4f474653eee2f1f02bc3df32076fc73f5615cc"
+    },
+    {
+      "bytes": 1541,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/mod2-build.log",
+      "sha256": "cef7cae14416cb5a3ffa389b3aeea81321fbb5791d78390fc8de89927c2778b0"
+    },
+    {
+      "bytes": 1385,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/mod2-build.supervisor.json",
+      "sha256": "748da41f5819e4ef8e4537b4b63ad23fbec292cb0686d741270a9f3bc681437c"
+    },
+    {
+      "bytes": 55,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/mod2-check.log",
+      "sha256": "770fae177c847d844d61fd751644cd548c38212c23f82a1f0bbcf5d4104d98e4"
+    },
+    {
+      "bytes": 1091,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/mod2-check.supervisor.json",
+      "sha256": "967888af8b205ab0689edd669e73b3a4af1f6020a3bf1eb5d018a54de3c78537"
+    },
+    {
+      "bytes": 1790,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/modl-build.log",
+      "sha256": "b4da05705fa0950cac66a965ed864b5eee55f1b3e90144ba0803bae7abe179eb"
+    },
+    {
+      "bytes": 1241,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/modl-build.supervisor.json",
+      "sha256": "8f1f1f208db767bb0105c74352253dbec8333f1bb47ec7c6e5a997da85beb89d"
+    },
+    {
+      "bytes": 78,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/modl-check.log",
+      "sha256": "a25241fe4e67c5aeb20317087f4bec5227c1eb457a36fb23d187a408c4259cda"
+    },
+    {
+      "bytes": 1082,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/modl-check.supervisor.json",
+      "sha256": "a4edf31a9903da94d8cb8bca0391443fcdece4c6c657243624bacae47c906839"
+    },
+    {
+      "bytes": 25777,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/protocol.json",
+      "sha256": "928edeb22bb2d2212d6568de5bff936d7df1a093f21584918fae7589ded8ac3d"
+    },
+    {
+      "bytes": 39,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/replay.log",
+      "sha256": "94f0f010de279e9c9a72e9104586db43394c8a3016b76cc7dd837bb95b097981"
+    },
+    {
+      "bytes": 965,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/replay.supervisor.json",
+      "sha256": "a179e5b507eb78881c9023d14388a33bd7b4a9086479873c52b8e77a4fa3d19b"
+    },
+    {
+      "bytes": 15452682,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/result.json",
+      "sha256": "7c1a423fe834f4f134bdb8fc445744a93e8aa17cfb2209b232371185127e41de"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/000.json",
+      "sha256": "df947be969a36d53c6cfbc79ef65827a7cc164987286690c2ae10c0b97c635fd"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/001.json",
+      "sha256": "ffdd0fd1ed644a48cf5f9cbe7e258e18280de703c27277a99ebfbc2e8f5e05f3"
+    },
+    {
+      "bytes": 27214,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/002.json",
+      "sha256": "36c8b570a3988a7f1a025cde740deccaaa97cc36553e103d060403a410c83d2d"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/003.json",
+      "sha256": "0aaa0524716773b883430b6c35dfc01134901d9b1226bda929f1af3f51608c40"
+    },
+    {
+      "bytes": 27243,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/004.json",
+      "sha256": "8b56990aecaa18310f8879d251ff277ab646e18a7dc6f091b149641814162f76"
+    },
+    {
+      "bytes": 27188,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/005.json",
+      "sha256": "aea3eaf38a31e81e5e216fcf7e21900ea24cf62cdb290dd560620866e09141e1"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/006.json",
+      "sha256": "5b256727bc7ce863d149f058a3843e0594e6a1574dc70a4413801bb3b31f2d40"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/007.json",
+      "sha256": "f77effd304081152897a177aa2985d2c025e5687a810680d452684bd3138c3c0"
+    },
+    {
+      "bytes": 27168,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/008.json",
+      "sha256": "016dafb5004d4e434bfc0ece1703eb0a8e3362e60bd2495b9b50cd401d81e91d"
+    },
+    {
+      "bytes": 27497,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/009.json",
+      "sha256": "c107f3c9dbac6d0fa9ff3f9ec44bb6b35335a91615e518f38b9d72cfe25f90ca"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/010.json",
+      "sha256": "011925886d7a9e25db6729a729138ec7ee40d566f11e62fc75097199c81d66e4"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/011.json",
+      "sha256": "cbb91d7bb761ebfc28051a95c1b604f464a34b5be1967dc31884b7a8b790a1fb"
+    },
+    {
+      "bytes": 27426,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/012.json",
+      "sha256": "3815f21a1b8bda438d4d3a7bc6a204d6bee55dd408fefe51d75dd5699f0ac22f"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/013.json",
+      "sha256": "37984945e92a8948f7a26bd9884c356b44134dc295c145ecdc66fe7a66202c61"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/014.json",
+      "sha256": "f373f9f49b1c84bd4ebfdaedd2025160922ddc4b592abf53f6e854785aca9373"
+    },
+    {
+      "bytes": 27189,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/015.json",
+      "sha256": "24f849c16e86b7cc02965618a80f19651402867ab85598e3f7ba942f8bcb2f19"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/016.json",
+      "sha256": "678365b3ac25c1bc23dd7243499f9478f56f4852333f7650dd07f5628f219b74"
+    },
+    {
+      "bytes": 27435,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/017.json",
+      "sha256": "7d17c1d93f8d2bfa01151bdd44823eebecc70aae74d02415a08faa4c668a6223"
+    },
+    {
+      "bytes": 27442,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/018.json",
+      "sha256": "6ec3205905ff509305dd8ed1fd8bec51a277ab123bbe9a21d8b0dde815591110"
+    },
+    {
+      "bytes": 27210,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/019.json",
+      "sha256": "b4b764e9e318336c58fb3c922287a4be9cbda2c8362ca36e91d1d71bf3a40d54"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/020.json",
+      "sha256": "9cc2b6264283d1df29cc88ede011319add180538a033a97804ddc1dab3579448"
+    },
+    {
+      "bytes": 27465,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/021.json",
+      "sha256": "80a1175afde9e1b8475200e67fbfd74f81c88de36fe53a12a35cc00acd02a8f3"
+    },
+    {
+      "bytes": 27494,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/022.json",
+      "sha256": "52cbe961e18cd6aef8547710c104a9745d33ae934293e6be1a8da9ca78993866"
+    },
+    {
+      "bytes": 27473,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/023.json",
+      "sha256": "5cef66b303c160e90c1e9e3e0789077ad52a133f0e97347b59f7966e9d8f88e2"
+    },
+    {
+      "bytes": 27730,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/024.json",
+      "sha256": "9af3d7d66e980a80da169196a95275de52fd20e9ae131df20ae34ee5fcc841cf"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/025.json",
+      "sha256": "fead498069f4cfcd07e68c4f4e497a0fa95fb5c080b260a5f954148cd8a627cb"
+    },
+    {
+      "bytes": 27165,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/026.json",
+      "sha256": "9762bc90ecbf506e1e41e1c3d36a748e68c0d5b1c330dab60b03593f3a3b255b"
+    },
+    {
+      "bytes": 27229,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/027.json",
+      "sha256": "13832ea05cdfed99591ae63463c8eaeb93a530ed4abd0e9050fb3863f3a0185f"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/028.json",
+      "sha256": "3bdc7bc748def565dd08bf2ab7730698697aa909c29acab7a79d6aeed6ca9e23"
+    },
+    {
+      "bytes": 27740,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/029.json",
+      "sha256": "3e6f8e1e2c7daa9bea448fc13665736cc5356203239fde127cfdbf71e0d4ffe8"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/030.json",
+      "sha256": "87ad3b27e53aaeb3c87218c0d8809e05337a022e9279385bd97ee51b66774085"
+    },
+    {
+      "bytes": 27225,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/031.json",
+      "sha256": "19c8fd06aceb2f41a6b81ba6b8477b85c93866a69073247d7e766908a1900eed"
+    },
+    {
+      "bytes": 27195,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/032.json",
+      "sha256": "8f7eadc1cbd17d6821cb4df70e8fd26cd1bbdbac364736cf58f2e9089193adc1"
+    },
+    {
+      "bytes": 27778,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/033.json",
+      "sha256": "a144e859ed8105fa2f21522a8ee1f7028468eff473002faefcb415ffff73aa50"
+    },
+    {
+      "bytes": 27535,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/034.json",
+      "sha256": "e0d0f07ea760b26841bb5bbdcdd31d5d349a15facdb65c2fda9141c923ff62e7"
+    },
+    {
+      "bytes": 27501,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/035.json",
+      "sha256": "11aad8d576e7415e37399ab01e63a75a0cb4ff35b3456f58dbd8449098ec7a15"
+    },
+    {
+      "bytes": 27224,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/036.json",
+      "sha256": "1e913e3e8ddeac908cd7e76d39c80ac9404b0aa9b301c9626176e9c002a4b8f9"
+    },
+    {
+      "bytes": 27504,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/037.json",
+      "sha256": "d2ee21d5d1f706616d9c5af7ea2d2c545c6bf7ba26f4170a080355ea1d6381f3"
+    },
+    {
+      "bytes": 27458,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/038.json",
+      "sha256": "3f087dcb2c6a7241ce8c7db10591123fdeaaf2185c5938e7eb730939cfc21ce4"
+    },
+    {
+      "bytes": 27199,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/039.json",
+      "sha256": "7faf5f690f9fb3fc5532ecb0645ad5bcc379dcddc1fef9ffc87693f56f8669ba"
+    },
+    {
+      "bytes": 27522,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/040.json",
+      "sha256": "6af7fa34cdc9e7efd7ca625dd598566c32d61dc1e3c4a53625ebc9e45ac036fa"
+    },
+    {
+      "bytes": 28562,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/041.json",
+      "sha256": "d2b1d8c5a4effbd4dcbea09b25344f38ec7f3be9c1437ee3cd60f6bb60532925"
+    },
+    {
+      "bytes": 27225,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/042.json",
+      "sha256": "058ddcd19d2d5c17ee213b6369cbefa57e47c6549bd641c2e41eb13ef82d852a"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/043.json",
+      "sha256": "0a462c37a0211cda8d2eaa8bd8da260d2a611a44516b7663cc32d492711e510c"
+    },
+    {
+      "bytes": 28023,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/044.json",
+      "sha256": "f0a4fd33d7e2421da1d8b1243e343a6eb17b24db561282846c8e300de37e225d"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/045.json",
+      "sha256": "d1eafcad52a394ba14246342d387570e85059faf812cf99f33bf7835bad34d8b"
+    },
+    {
+      "bytes": 27739,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/046.json",
+      "sha256": "d69168acb43ffa6cc5bb8d84d5450bb69528ff582ca7972505f21820c95a0e66"
+    },
+    {
+      "bytes": 27227,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/047.json",
+      "sha256": "8bdbea0cd29db178593a7778aae914f53f554279c09cc70425c279a2223fc6ee"
+    },
+    {
+      "bytes": 27719,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/048.json",
+      "sha256": "6b053d3987279e4142df69fcb52fbea1cb9769df1287906a9e33b3839a514239"
+    },
+    {
+      "bytes": 27437,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/049.json",
+      "sha256": "7b247d51349f93498f7890cfd4c9d19b6885abcc2dc4e77ba087bb7d8aac3331"
+    },
+    {
+      "bytes": 27179,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/050.json",
+      "sha256": "ee4a2b3b5ecd69103f97ce685cf3071b10b1e1aebeefe3674812805b9ac2225b"
+    },
+    {
+      "bytes": 27199,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/051.json",
+      "sha256": "8a49d1a299a2abc9dceedeb7c9cd19e98a9a2b4aa58a736c4a7e8cfe88e9ad05"
+    },
+    {
+      "bytes": 28030,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/052.json",
+      "sha256": "a191bf21d567b8e6728920d6740f94d09f59f9d068d91b1b17b56ffdedd220c0"
+    },
+    {
+      "bytes": 27445,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/053.json",
+      "sha256": "2cd30a4b8a23afc3f983a99919fc7ded8342fec9450d5d33e5aec76ff476785e"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/054.json",
+      "sha256": "b84f6caf28752163da411beb744484dc004ee757342ba53d686d3a0b5fddd930"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/055.json",
+      "sha256": "f9f1d31880eb18794b00e4fc14a60bf509b7c3febebcf44f6bf51d8a773bfb42"
+    },
+    {
+      "bytes": 27212,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/056.json",
+      "sha256": "40f05fbd2c0daddf111f65f3160bcab7bc5cb598f627c4975b2e132dc33befec"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/057.json",
+      "sha256": "619e026759c11da1df94148fb9076a26c5efb467c2aab1bb422ac4f59f26f998"
+    },
+    {
+      "bytes": 27697,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/058.json",
+      "sha256": "3f6fdc35877bb11907e9dd2e47e377679d58b993a2f9c15b7d20eb4e0f9d4241"
+    },
+    {
+      "bytes": 27491,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/059.json",
+      "sha256": "9ac770647317def333ee92237999be76de1b290ac3c908baeb8fa14b8f3b7e16"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/060.json",
+      "sha256": "23427af50bcb8706fd2fb694a628914d40ab6493c53668c65320310871f9dc23"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/061.json",
+      "sha256": "55ffa996bcfb37d1285a86cab15ffaf605ddedcc72bb80d2e36c36fe95d6c9f1"
+    },
+    {
+      "bytes": 27999,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/062.json",
+      "sha256": "6d5c88e6ecfa75b4c4b6c3c320422a197f2f80b2d473ad26bc0fbb32c8669534"
+    },
+    {
+      "bytes": 27763,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/063.json",
+      "sha256": "38537f89740c280fe13b3678b7360801fb5b2c2cfa7b14fc50aedf9fac25061c"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/064.json",
+      "sha256": "003b00fe581e2860a431ee4ef8b3729fdefbae8230664e33ecc4829831d7e08c"
+    },
+    {
+      "bytes": 27215,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/065.json",
+      "sha256": "83760560b0ecf7b42f9bd6131b9fe096a7faae861b874c2d5ac7d8d0d47fe0dd"
+    },
+    {
+      "bytes": 28682,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/066.json",
+      "sha256": "3aeefc0be090c7108010556a9c677d3325b0a35bb5d1771e2046619f7796c6ad"
+    },
+    {
+      "bytes": 27484,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/067.json",
+      "sha256": "d6e490f451d57e49e3e590b013d4cdd4c224669c38cbf8e2bd86a51580d5df75"
+    },
+    {
+      "bytes": 27181,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/068.json",
+      "sha256": "9d5f5f17b3f0e417344592024263ac874aeb714d45a212097fdef96f5a102fe7"
+    },
+    {
+      "bytes": 28211,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/069.json",
+      "sha256": "5cebb91707b2be78e3e6d0e699a0696dbd645aca89f2fa4e06d7638c8f0f37a5"
+    },
+    {
+      "bytes": 27731,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/070.json",
+      "sha256": "8f46ddf84068ef9d3afcd7f8b19d657223c2f66d78cf52994591a8677fd86086"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/071.json",
+      "sha256": "582e4dabac675b6ae85c7100c8911172e6275175ed7642003e23701d204f363c"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/072.json",
+      "sha256": "10d05263312effc1ff7a766773f98963ec736b6b23345ac3af5788bcc7d647e4"
+    },
+    {
+      "bytes": 27179,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/073.json",
+      "sha256": "6e695680f1fc8044f1acee6cb7800ecd168a4417668f6344810957ef2f902e96"
+    },
+    {
+      "bytes": 27476,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/074.json",
+      "sha256": "c596f8e772cd95f7c6190125d1dee279ef1a3d3ea3ac3c24e11660ef7bbf3801"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/075.json",
+      "sha256": "1fddaf87e616b183e88ac4ac91e50713ff68448c6ca46a9d92d4a00a31a7f42b"
+    },
+    {
+      "bytes": 28463,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/076.json",
+      "sha256": "1b7705e0229951a8f5240669c8d3b23933b5fe0246e50edcca6fb8bd94fbf250"
+    },
+    {
+      "bytes": 27743,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/077.json",
+      "sha256": "51b6edb9d0142954232aac5bfacc42759a0dddcbf9cfaed71e6d82875227d6d9"
+    },
+    {
+      "bytes": 27458,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/078.json",
+      "sha256": "284f15a3aee8b34d817285102008b3f93b20d5fb67dfd355a74f499881a8e91e"
+    },
+    {
+      "bytes": 27173,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/079.json",
+      "sha256": "96e7db01ebbc6f7dd0a356105574f1a7d87d5422b1162ccc386aaf575545b9ab"
+    },
+    {
+      "bytes": 27469,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/080.json",
+      "sha256": "7679698914f428dd51202eb70930361a611bd7b55d7e3f65ebf3f2c44f288798"
+    },
+    {
+      "bytes": 27960,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/081.json",
+      "sha256": "a6a94fb9b65948d8910e18a28f3b38eb5fe76ca2d75bba4f95b234cacb6a2ebf"
+    },
+    {
+      "bytes": 27451,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/082.json",
+      "sha256": "e2e648b1018c57b383631d7f2ce346774ede15f16518e267ccb827792428509d"
+    },
+    {
+      "bytes": 27711,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/083.json",
+      "sha256": "6a7f8c93d387c1769610292bcdd6ab1ae2e360199aca58c139da844d767da6e1"
+    },
+    {
+      "bytes": 27483,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/084.json",
+      "sha256": "515fdeb37e0957cbf66d35a486bbfd59601af358eab697067552af6431d93d19"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/085.json",
+      "sha256": "769903ef1d62230e001e9cd6142d6445c1c4ab9c65ce5dcad7c3b1cb6d297a97"
+    },
+    {
+      "bytes": 27220,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/086.json",
+      "sha256": "14207af5cf7c3757f95b94bdaac0c204ae4b797d7663dc116f5f440965d07049"
+    },
+    {
+      "bytes": 27501,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/087.json",
+      "sha256": "7eba914502dd47462a08d76db1bafedbdfaf96e0c63bd4b00219004f538d5c86"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/088.json",
+      "sha256": "71f761302c93aaae833f5d1e0f1524ac7688eae225a157a872435cf4bed66dfb"
+    },
+    {
+      "bytes": 27697,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/089.json",
+      "sha256": "3de937f1a213290f74a0ab2750cf9d1f051c26760b35ba068f255015885941fc"
+    },
+    {
+      "bytes": 27734,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/090.json",
+      "sha256": "8158b42839966222ef048d158257b7fccdf2f04c488c252ac99a06b590ca1500"
+    },
+    {
+      "bytes": 27227,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/091.json",
+      "sha256": "b32889acaf244e2839e41e363b006fc11c913a645e99e7e07e4a1ecc7cc76401"
+    },
+    {
+      "bytes": 27228,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/092.json",
+      "sha256": "ea8c5eb816a1794421d73cb9e1168ce588abf0cf6a72024abf7a98f980e6f43b"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/093.json",
+      "sha256": "71b78d49c0277cbee4df5e60c4f026c5a30963814afb10209ecb8b94eae1a31f"
+    },
+    {
+      "bytes": 27198,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/094.json",
+      "sha256": "db21b626a3b880e3251a2c273cc5b82cbdda45f5a85eb0e7aa48f000c40aa597"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/095.json",
+      "sha256": "4120339c06f533c7cf17b513cbbf03c7e8756bebc66cc9f9286fa1343cacbccd"
+    },
+    {
+      "bytes": 27409,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/096.json",
+      "sha256": "63ade90153d35ef3767a30e37bac337ff24002d4433384adeda8f4a8ab12d675"
+    },
+    {
+      "bytes": 27412,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/097.json",
+      "sha256": "3a116f31041ec04ba57be538d4935025fc308b7b8846f46f66d2a208dcd05e9d"
+    },
+    {
+      "bytes": 27899,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/098.json",
+      "sha256": "f8c6d0aa519bdbd6cc4de97548461b9274a3de210e9463aa7625c76d24983358"
+    },
+    {
+      "bytes": 27482,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/099.json",
+      "sha256": "90f7b6c35a90fd6b7b431c25ecd0f92d73bd8a63e7db2ad21e6b74b28674fe92"
+    },
+    {
+      "bytes": 27433,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/100.json",
+      "sha256": "75bf3400e39af120aa3365a525953363eece26a2bfd676f13ff4c4423218c05d"
+    },
+    {
+      "bytes": 27227,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/101.json",
+      "sha256": "3f8642298373b1c612ae9d6fadda971280a270f094a968c2f415a4b7d0da05b9"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/102.json",
+      "sha256": "d5c14c31dbf12f312316e3b7db57867064aad36ec14c65b86a9287d7551ad3e9"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/103.json",
+      "sha256": "c971236a1713fd51dd1f0cff49ca4292d80b199ba5bbc6ad9a170d74e44b9a09"
+    },
+    {
+      "bytes": 27693,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/104.json",
+      "sha256": "4d48e8cc3c9e706c7bd9d4453dc4861909ff2e574a6c455087ff417b63b619db"
+    },
+    {
+      "bytes": 27218,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/105.json",
+      "sha256": "fa728fc818a67aedf94cee8da696a7077fccbc5f37444a26eb05f25f692121bd"
+    },
+    {
+      "bytes": 27454,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/106.json",
+      "sha256": "8bc1d8b931e6bf5c6b686a44803a5b6fb7e8fe88e3f6ab9cc5bf978befeb2f31"
+    },
+    {
+      "bytes": 27499,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/107.json",
+      "sha256": "8401febd3351b9f4d57758442efd4df3fac574cd5a104f8261b25c54cca84625"
+    },
+    {
+      "bytes": 27214,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/108.json",
+      "sha256": "ee68e28314d5f62227afbd8795f002c287affb7a2a65188da0d8869bf5295f2e"
+    },
+    {
+      "bytes": 27997,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/109.json",
+      "sha256": "17a2b4a1a9b37a5efe4ccf5cecd7e27d462fa7b76d493c8a4fc7f917127ef8e0"
+    },
+    {
+      "bytes": 27216,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/110.json",
+      "sha256": "62762e03c4c47ce96ffabdde6e3d40baf471e4e6fdb3ca05a3fff6695c2ae2e9"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/111.json",
+      "sha256": "94e675a5b4a1eae5801c098553745b4da629ca322f9761f5d0eeb9f46f207078"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/112.json",
+      "sha256": "32edd01c917b332e5928984aff83b370536edf886585c63fc148f01424560f8d"
+    },
+    {
+      "bytes": 27994,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/113.json",
+      "sha256": "480cf0b571dfdeed9f59fd175159415e0b13af557a33d7490f6cda4684a4c280"
+    },
+    {
+      "bytes": 27197,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/114.json",
+      "sha256": "dc3e167793478e85b791626432d3ce104ba6ee74b713560b1b2d878c1cdecdbf"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/115.json",
+      "sha256": "0b9737c5f03027336c5757b91600a96fcb486d725f2a99b5652fb52319c90929"
+    },
+    {
+      "bytes": 27684,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/116.json",
+      "sha256": "6b2f723eb1a7cbc5fb2b4f56b44acdc48cb56d1693c85ec8ff884b925158d5bb"
+    },
+    {
+      "bytes": 27473,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/117.json",
+      "sha256": "df473318132a8631e74855ec44291460719f23110564e8dc6431472bd1c747af"
+    },
+    {
+      "bytes": 27167,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/118.json",
+      "sha256": "f358ba0b5fea1102dd3ced348326e4741f4d3c1ae61f8d3cf677818bc05daf79"
+    },
+    {
+      "bytes": 27448,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/119.json",
+      "sha256": "c2825537e1717b1b01020727498bb2665a5b895631af7e7a8c6e3f44106010e1"
+    },
+    {
+      "bytes": 27191,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/120.json",
+      "sha256": "148b1e1577699262f424843c4c95c5767df6c236759a73b53e01abc4af74983a"
+    },
+    {
+      "bytes": 27648,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/121.json",
+      "sha256": "94a837e2c9137f8635775f0deba216dbe0a9fc97dcbd2bbcf9406500fd300af8"
+    },
+    {
+      "bytes": 27205,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/122.json",
+      "sha256": "996dd509fd76b3fd33ed1fa109c60bf03efe0b95c49bc0da0b5e40782c1e38b4"
+    },
+    {
+      "bytes": 27436,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/123.json",
+      "sha256": "e27563c7c9f02da92b3e3ababd11f9aa60bb68f378e21608aef07de6e0d219f8"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/124.json",
+      "sha256": "e9077c12da7fbc2b04321a37cbaf21df6fc54178e4c6816e43ddff86e882022c"
+    },
+    {
+      "bytes": 27742,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/125.json",
+      "sha256": "57fca2e03a0a63866d0f991d213824d379386e896362f45f2a2a326ee169e6a2"
+    },
+    {
+      "bytes": 27209,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/126.json",
+      "sha256": "31123b5c7dbfe13e80af5e559d42163712684e1f6b345b8de8287c6d3dd661e5"
+    },
+    {
+      "bytes": 27176,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/127.json",
+      "sha256": "601fa04db26f34fea15af4e7be155b147524090ba83bbacceb4694090df611a8"
+    },
+    {
+      "bytes": 27398,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/128.json",
+      "sha256": "a98c35c5811432f6732be7b924693416cd9bb709b35b19b7a120bd154e99aff5"
+    },
+    {
+      "bytes": 27471,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/129.json",
+      "sha256": "b7064d8d3e09e6f5d7b98a4ebd6d5a9b86696f6fb8ad37867928cebb6151db4e"
+    },
+    {
+      "bytes": 27202,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/130.json",
+      "sha256": "402ea4f3be762b02d012a4ad66b25a27906c3acf9861fd53da763aa338abae3d"
+    },
+    {
+      "bytes": 27749,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/131.json",
+      "sha256": "215ecaefbad106a862615f1292ba21555f7c70ddd10366cf7ddf1a20b5fe0ba7"
+    },
+    {
+      "bytes": 27734,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/132.json",
+      "sha256": "4402d70f8dd06b955483e0b8443619aba883fa96aff7c3a747671c09ac9e2827"
+    },
+    {
+      "bytes": 28206,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/133.json",
+      "sha256": "f739d2dfb14ac395cd0c7c07b7e286db45b116a8e585a1c2d84044c3a5cea994"
+    },
+    {
+      "bytes": 27438,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/134.json",
+      "sha256": "7b9677b8683bebabbca96456770078223abea3d8764940cd0e30a16d685a3efb"
+    },
+    {
+      "bytes": 28443,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/135.json",
+      "sha256": "cb34c440f96e70ef5eff2d98034e3fa584b35ef052f5c5e5173da4689e384599"
+    },
+    {
+      "bytes": 27950,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/136.json",
+      "sha256": "3eb3af0ddcecef965b27a191005d8ffc44e0816c73dd63d5285abe8f8c89b60a"
+    },
+    {
+      "bytes": 27473,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/137.json",
+      "sha256": "7a7fced97f7ae4fb59afd1540451af165c0656b63614d1bff0c9a985c71501d1"
+    },
+    {
+      "bytes": 27766,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/138.json",
+      "sha256": "f11dd57b6b125e063fe292bd4fbb2adf7bdef119016d5cc261c78f645b860597"
+    },
+    {
+      "bytes": 27424,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/139.json",
+      "sha256": "50595d44fdc48fa750dde5d53338346275a47c7ad01c21ebcca3f95937c5d04a"
+    },
+    {
+      "bytes": 27188,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/140.json",
+      "sha256": "d828a8d2776b5a21336a2845aac01eefb653e9de4928105757763d75d370a448"
+    },
+    {
+      "bytes": 27455,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/141.json",
+      "sha256": "69a888334babdb43051357f5fb0d46ed78bca927225b2238e9eee89f311c3ecc"
+    },
+    {
+      "bytes": 27220,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/142.json",
+      "sha256": "c1a976e2ddedace703a9f1a322e3852a163bbb0b56241167b6721f17df02287f"
+    },
+    {
+      "bytes": 28265,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/143.json",
+      "sha256": "cee4ccaed8950445d4003e033fba786ca22a074efe460579caf1d94a77c89b50"
+    },
+    {
+      "bytes": 28169,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/144.json",
+      "sha256": "1f2c5b86ebb63a0115425abba20f446852f3e61729ad901b8102cff404b8fb67"
+    },
+    {
+      "bytes": 27418,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/145.json",
+      "sha256": "fbc1b2c9d94daed3bc72de0f4393e30ca0ccea3e9c6d8a4cb93100be90b785c4"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/146.json",
+      "sha256": "33b04f0d4422cfa175a1df91e0993b9c0cbc26e901ca90a094420db65339db6b"
+    },
+    {
+      "bytes": 28175,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/147.json",
+      "sha256": "8041d015733fa1189fe1fc4b1a0bf3d3718d23a161769a4ff0747fa6b3a78517"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/148.json",
+      "sha256": "af7ae28eb7ddab12aadc2285a0b7880098ecf832fe6a39ccc36329178b3039a7"
+    },
+    {
+      "bytes": 27484,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/149.json",
+      "sha256": "8d06ff3db90793c65aa1b78e4161338e8e4006181a9d846194992ba613d086e7"
+    },
+    {
+      "bytes": 28194,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/150.json",
+      "sha256": "97190163372f7da462c618038cba28ae87d5c00396b09d699ef15b5d9c4d75e1"
+    },
+    {
+      "bytes": 27461,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/151.json",
+      "sha256": "07ecfaebd75381790502d6027364e26f12ac7cb21db09369a49da2252c903c2a"
+    },
+    {
+      "bytes": 27981,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/152.json",
+      "sha256": "7cd9162d584604dbe3250460f586c6761711d62745d316ef5a99579fb12fdc86"
+    },
+    {
+      "bytes": 28275,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/153.json",
+      "sha256": "21881fca59f5cc4a31693500f04f25af06b967f588658abadc576104714a352a"
+    },
+    {
+      "bytes": 27438,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/154.json",
+      "sha256": "6ae52a5c12a0f868ad594d8ea1e5c1483ac34be7c7e68e1bdc5d29a2ed8d5368"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/155.json",
+      "sha256": "0c338028d01e41826de1f35f3e95bdc6b5f589f745d159b3ba0beaab16818015"
+    },
+    {
+      "bytes": 27945,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/156.json",
+      "sha256": "966d1e458aa2577a9be2a055fcd58e260f45b07ea68e0fec894435be475ccab8"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/157.json",
+      "sha256": "e6ed02f341f5f8f88605990c0b3dacf095df6773e74bf0b0a682ed9fa31b4789"
+    },
+    {
+      "bytes": 28516,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/158.json",
+      "sha256": "13857eb5d6d379c172b4f1bf625c0c59770b8bfd1b29482296c03c7ad1c78d7c"
+    },
+    {
+      "bytes": 27891,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/159.json",
+      "sha256": "9cd5ff4492041efb141b33ba599d89202d5067bde3ad31bd20e8fe36e817d48c"
+    },
+    {
+      "bytes": 27444,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/160.json",
+      "sha256": "2fb5befb1667a6e8eca04ec6f8f174fedff48262494993aac361c8395f2f7fca"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/161.json",
+      "sha256": "ecffcf7b9da85d1f6bacce6186ebf40f8a9d725d5ad3f360c507feca66742be8"
+    },
+    {
+      "bytes": 29224,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/162.json",
+      "sha256": "a34ef23a1494e896f5315951edf0a48f707eed5c36da1a9416c390db7096c764"
+    },
+    {
+      "bytes": 27402,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/163.json",
+      "sha256": "6afc7ba337ac4b79388265a3da44c7d291ea2fdbf360f82fd865bf9373179c97"
+    },
+    {
+      "bytes": 28016,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/164.json",
+      "sha256": "4546ee313f33183e6317b2be197a131f7fd713b22282bc8aaae2dc3ce1156f63"
+    },
+    {
+      "bytes": 28239,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/165.json",
+      "sha256": "38f80fdad189afdc67b02ed8a0cb92a696d391fe69821857d23ba637bfbb3229"
+    },
+    {
+      "bytes": 27699,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/166.json",
+      "sha256": "7d7eea5ba680931e35075545989f73e792f787de38d535bc0ad0c9f2789c1ad2"
+    },
+    {
+      "bytes": 27471,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/167.json",
+      "sha256": "640c9f04bdcfde62f8ad77a14e68f840071fe2f25d0529dd2c2745768f7000d5"
+    },
+    {
+      "bytes": 27946,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/168.json",
+      "sha256": "992cd7cf35e2ccee719f827e40762bf21ce1c6d358571b180a78eed8114f4287"
+    },
+    {
+      "bytes": 27190,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/169.json",
+      "sha256": "4c69e4427153b062bfcb5463e7ccb0606a7b5eaffc7b1bf93c30b964bf7a0ba2"
+    },
+    {
+      "bytes": 27471,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/170.json",
+      "sha256": "6e47d9188dc5744eae81171d6ca1f89597785c8546256b02e96a00335959fe29"
+    },
+    {
+      "bytes": 27213,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/171.json",
+      "sha256": "cda6a482aa891001a0f744a5414ac22dce887c1545e86a8862dde3a261692b8b"
+    },
+    {
+      "bytes": 28276,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/172.json",
+      "sha256": "234756fb15ddfc91383e758a2f8790ebb616b5453aac612511f7c877b8c91983"
+    },
+    {
+      "bytes": 28037,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/173.json",
+      "sha256": "14880344c0433b8b3572ef60b8e13f4e862e34a3e2e7e07609d86b4332255175"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/174.json",
+      "sha256": "5210e228ab453cf7d5f4f35caed5f8b0e4908494f243b14ad8e5a94c9d4074c4"
+    },
+    {
+      "bytes": 27166,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/175.json",
+      "sha256": "04e2dd03b09c3dd5080e77b2d7e670c86cf065173c69f907b58a3edf347c1ca4"
+    },
+    {
+      "bytes": 27194,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/176.json",
+      "sha256": "c5e1cfb69a4f50cfa0af654d4ab4bd57936a7cbe953c92eb98707ef795dfa8cb"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/177.json",
+      "sha256": "ba8a3877389c4ccc0bc61ef9a914d7fd9af0e789511a4ce1f1b567837318c14f"
+    },
+    {
+      "bytes": 27194,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/178.json",
+      "sha256": "28adee8037ea4e993f93d222c2ae2c52387df3ac49b16577b9efaed0ed9491f4"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/179.json",
+      "sha256": "8b64181113fc0b55046db65e601bc169b6d85133dc9588b5474198964fe08e39"
+    },
+    {
+      "bytes": 28770,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/180.json",
+      "sha256": "683b9e8372407e475c05a19000c1210b616e9faf208b7ab7dcf657a6267140ae"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/181.json",
+      "sha256": "c1cef7a128001974325592689e691e7c14ec1485b3025a531519ea5416c46c23"
+    },
+    {
+      "bytes": 27174,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/182.json",
+      "sha256": "c517fe735a2c978c7a245c71a73057efa8f6e6cf62344b26d14f53d32fe152c0"
+    },
+    {
+      "bytes": 27449,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/183.json",
+      "sha256": "9862af31aaaf01254b97ad4aafdb78351bfa7ef99997d27dcbc2e2abf8f65064"
+    },
+    {
+      "bytes": 27168,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/184.json",
+      "sha256": "22bd5c4f3042cd7d39ca345599934a43ea088f024c2553baf73e20ac3ab6726c"
+    },
+    {
+      "bytes": 28455,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/185.json",
+      "sha256": "0a05b5b574916cb78048265c4df166fa86c0b85899e586058ba0af02ef035a57"
+    },
+    {
+      "bytes": 28794,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/186.json",
+      "sha256": "90ecfab1b4c215ef4333e82de43cdf8515a5550276647d0b37cea571920552ac"
+    },
+    {
+      "bytes": 27474,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/187.json",
+      "sha256": "7cc8c163ddfca404c41bee9cc0d803ae0e92f939f4ec7ed3cdf781ae91c4ead3"
+    },
+    {
+      "bytes": 27414,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/188.json",
+      "sha256": "952f2305a3da8df6d0f9e635a58e87cdf66b84061c80a428f77019d5a7595813"
+    },
+    {
+      "bytes": 27214,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/189.json",
+      "sha256": "0f76a1ad190213725bcfbfe6c41e39a552d04e5defdaee44bcaeabe098d1fd3d"
+    },
+    {
+      "bytes": 27426,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/190.json",
+      "sha256": "691e404c643d38b30711357b2b8fc094b99b0c0b7cf8d69521c6ff970fa1ca3d"
+    },
+    {
+      "bytes": 27221,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/191.json",
+      "sha256": "9562ad32586db46f61a62af51524ea017237098dac74a35d202c759cf47f076a"
+    },
+    {
+      "bytes": 27413,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/192.json",
+      "sha256": "ae597020a87f243c97fd45a5a873f1692aea11330c1d87e292415c6fbc74b204"
+    },
+    {
+      "bytes": 27487,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/193.json",
+      "sha256": "2cbf7e7144994389c541b5b06f07b87f39efef55c1fcf9348b1cbebef654d02e"
+    },
+    {
+      "bytes": 27186,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/194.json",
+      "sha256": "e28ae85f5040daa37ddd069ce052ffbcc3a6ea10e4f5e94246c6cf358b9c87e9"
+    },
+    {
+      "bytes": 27487,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/195.json",
+      "sha256": "eda6e7a21b25d468397decd150bc3bc17b72e028d7710e0891db1a8ac094fb2c"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/196.json",
+      "sha256": "5b5effdce2c53d2dcb00af56099b512061fe367836e4d031d621e037800ade86"
+    },
+    {
+      "bytes": 27213,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/197.json",
+      "sha256": "b7bdfe3852becf750ca8ca1359329a04bd7f398d3c111af6bf8d77fd65bbdadf"
+    },
+    {
+      "bytes": 27667,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/198.json",
+      "sha256": "9dc4be548504554cd2f75a7ecde712782fbef9796b34cff3ecc6e3f4dd8b2f0d"
+    },
+    {
+      "bytes": 27165,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/199.json",
+      "sha256": "89b81e26af6efe26f6c22262b9c235cf4abb5d95f53f1b6e162fa65591ed08a4"
+    },
+    {
+      "bytes": 27652,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/200.json",
+      "sha256": "a4023d1843a879f0361deb1ccc70ed9981a9bf854b385e6775c99d59fa51dc9f"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/201.json",
+      "sha256": "ad74f87dde30c0d125fac6c6d6bd35eeb21594546fa5dcb8caf89cbd1be71e69"
+    },
+    {
+      "bytes": 27901,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/202.json",
+      "sha256": "4883444910e4051adaaef14ca946b7ee4f9817496cc074dc5482d6d942a75dd5"
+    },
+    {
+      "bytes": 27729,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/203.json",
+      "sha256": "b428f673959629c8873355789b343fbdcb6aff5b1cd90943ca9648ce48a26ec8"
+    },
+    {
+      "bytes": 27436,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/204.json",
+      "sha256": "f4e4c4cdefbc2afda16bd1a84b184d2b76ee059097bab0622485f64ba60f771e"
+    },
+    {
+      "bytes": 27688,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/205.json",
+      "sha256": "2e30071c9e7a7183e960a8c303b72c6f73f28858b2b5c328f183a42b4af4ffe7"
+    },
+    {
+      "bytes": 27743,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/206.json",
+      "sha256": "7db07a8136b8aea9776866c8170b3249256e8461cae88c7c4cd9710381aaa814"
+    },
+    {
+      "bytes": 27179,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/207.json",
+      "sha256": "53171d56a2beccb8152cc01fb8eb3880c4343a20104bb8f90a4352052cab5e79"
+    },
+    {
+      "bytes": 27400,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/208.json",
+      "sha256": "53f10bf878587f9d81507704cfaf348adfe8f562ae46837f9040eeb2e8bf954c"
+    },
+    {
+      "bytes": 27680,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/209.json",
+      "sha256": "a55abb2b69fd1321bdccc8c9a1de3ab2954768448c5af2b2659cb1ce8b80bb14"
+    },
+    {
+      "bytes": 27413,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/210.json",
+      "sha256": "6998be2360980992cdabbf7dfa6a053c4972695d1ef03e2bfadf27707a108d32"
+    },
+    {
+      "bytes": 27681,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/211.json",
+      "sha256": "5ef53b6e841b4a1bdf5d93f483291affeefeee74c73abb21d5792db20bfc0803"
+    },
+    {
+      "bytes": 27427,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/212.json",
+      "sha256": "5f96ae7a8c96bc19e60b76a6aa66c6dc503f1f04154830c7474b55b80ec9ffdc"
+    },
+    {
+      "bytes": 28223,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/213.json",
+      "sha256": "93e254ce776f2ed7ce12885a5dac78e10afc9ff92b73eb28d93886e0d31ac095"
+    },
+    {
+      "bytes": 27678,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/214.json",
+      "sha256": "0a1dfe0aea4dd2185091deee3f5c1fd4953346684309b0ed691d36e97bdd1705"
+    },
+    {
+      "bytes": 27422,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/215.json",
+      "sha256": "e1fdc8e3b722aa395961f0938e1bf017ef33933a74e0aeb140b562930d01e37c"
+    },
+    {
+      "bytes": 27667,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/216.json",
+      "sha256": "345e678d6acb784480d980edbcd3c3a68d4dc0311ddf7ee90534bb6086d1d3ed"
+    },
+    {
+      "bytes": 28125,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/217.json",
+      "sha256": "abf661b0749754e86b86e6b18d9393d620ccee627f20d56f6a4894c9dd74da34"
+    },
+    {
+      "bytes": 27668,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/218.json",
+      "sha256": "4fda1d1236061f73521f0889673e0bdb3af967c10d3d9436fe84fbdb419863d4"
+    },
+    {
+      "bytes": 27750,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/219.json",
+      "sha256": "af8aacaebd03ecada670ab64e57286bc00099da32366d28ee33ce656a4c20fca"
+    },
+    {
+      "bytes": 27203,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/220.json",
+      "sha256": "1e7f882b78f2fc03c960d5dd3c954c09d254dacc0089a123d8ca1fb6cd55b894"
+    },
+    {
+      "bytes": 27431,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/221.json",
+      "sha256": "33af60e04de3c66c82557960c0d4e5a198dd817004f03cce42eda90ce4e7cc8f"
+    },
+    {
+      "bytes": 27637,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/222.json",
+      "sha256": "1ef332b0490b2ab055aa683bc282dee51b4d0b96326dc04a9e6f58a36f507d5e"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/223.json",
+      "sha256": "399a677cbd8f60b468cc1ffa2eb0d9949fda0278246dcc9746a71bdc91bc0bcc"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/224.json",
+      "sha256": "8cc3673b24781f7a763d99499d8caa832b6a6e2545e993f759213d53e0df59ce"
+    },
+    {
+      "bytes": 27410,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/225.json",
+      "sha256": "23e582a15b665f2775842a4e34e758ad46761a135037001481fa527f5e7f07d0"
+    },
+    {
+      "bytes": 27983,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/226.json",
+      "sha256": "c67571d7b90b7634463ee519e2d89ca921bb148a37bc6c61c666c68705f86e5a"
+    },
+    {
+      "bytes": 27972,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/227.json",
+      "sha256": "f3651b67330371f561aa2a3a02b7219af410b2262f6ecd11c99c07e944015024"
+    },
+    {
+      "bytes": 27728,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/228.json",
+      "sha256": "4980c0b3edfcdbadea9bb8cc3a3fc2621e2b75091d9f863b733768accf9efc2d"
+    },
+    {
+      "bytes": 27181,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/229.json",
+      "sha256": "fd7e192d5700887ae9f117389c30adf8006e23720456da41290c033b3cf6ba42"
+    },
+    {
+      "bytes": 28236,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/230.json",
+      "sha256": "28131959671da5a7b885d05dd678b166be5c5956d1065c70719fd494c53845db"
+    },
+    {
+      "bytes": 27197,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/231.json",
+      "sha256": "9da6e704c02bb5757d2c1df8118deed18e29a2fedd2c43425b5246a6c3023b05"
+    },
+    {
+      "bytes": 27181,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/232.json",
+      "sha256": "f8184c3d81e6c9a600cd247d4054524aca5ad06cac442782b875e86f512e3b84"
+    },
+    {
+      "bytes": 27727,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/233.json",
+      "sha256": "2387ba679d82bd816f4a9fce5d4353d0b921d4b3dd24515dcaf0cd68785e6f61"
+    },
+    {
+      "bytes": 28208,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/234.json",
+      "sha256": "629c701341e8ef2d250f8daa170cc918b406ab3370d885e45ce47100f15b3319"
+    },
+    {
+      "bytes": 27930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/235.json",
+      "sha256": "9f823ca264c5b20377cc2fa5127ad33f47b009452cf0837c6eb1e82d41ab8352"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/236.json",
+      "sha256": "38c3147094b12ee3a19a1b04e6d916795b8931803cf5d58bb05a28e96466e7f8"
+    },
+    {
+      "bytes": 27191,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/237.json",
+      "sha256": "fc39fd2dfa5b8f27431daf74051a0fa4f56d3287f7fe754daf344d55a651bdee"
+    },
+    {
+      "bytes": 28203,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/238.json",
+      "sha256": "c963f803764a063761ad0913799de33ce27d0d02db596ffcb14688dadd6b07d4"
+    },
+    {
+      "bytes": 28397,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/239.json",
+      "sha256": "dc98cbbd92ab9489adcf5b7f65636e1518297101fba8a33cb4d636043ac46a27"
+    },
+    {
+      "bytes": 28197,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/240.json",
+      "sha256": "ff75b99308b98d473c1c7a8c132ebb6afcceed5098e7b737d526157e365b9155"
+    },
+    {
+      "bytes": 27690,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/241.json",
+      "sha256": "bf489a93ea46ad72f2ca8d06ddfd2d82039562dab8532ae3abafa278cf3b843a"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/242.json",
+      "sha256": "f9129726378a98a2d79e1e124aff92a3cd94ece1365c91b561850e2b7011a5b0"
+    },
+    {
+      "bytes": 27194,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/243.json",
+      "sha256": "5bc1c238f7be72530a2082c01972ad948bf2d1490e059c28bb5bcc12d137fb95"
+    },
+    {
+      "bytes": 27732,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/244.json",
+      "sha256": "e4c0db59d5cad659959d1b8045627e758eb63252509887953824a4f44565b592"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/245.json",
+      "sha256": "8d57b59f7d8897cde2e87f4b5d6f3dd589a4367b2148c99564661fc25d792793"
+    },
+    {
+      "bytes": 27190,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/246.json",
+      "sha256": "17bb9603d0f4307871018fe3a075ec3e08685e84f92fddc53ce773accc415e9f"
+    },
+    {
+      "bytes": 27757,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/247.json",
+      "sha256": "cba5e9d7519924abcaa250231041c95d3981ddcc26cbb838729d44ed7b90d610"
+    },
+    {
+      "bytes": 27725,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/248.json",
+      "sha256": "b93c48ba4867fba5fc3f38ed79bac26cf498f865ea4e1d6ab5f9f61f75251cbb"
+    },
+    {
+      "bytes": 27452,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/249.json",
+      "sha256": "5c32d527478a026253efbf530fafb17e6cb5870481821625d49599e574aa3f37"
+    },
+    {
+      "bytes": 27437,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/250.json",
+      "sha256": "8f33800ddf4a2beb3d4f48299782987fd58f317b8e619cfd25ddc2e1b4353e89"
+    },
+    {
+      "bytes": 27935,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/251.json",
+      "sha256": "2c07438e22de19a507a338326ad3ba028d951435ab783631630c0c83eeff9976"
+    },
+    {
+      "bytes": 27443,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/252.json",
+      "sha256": "31bc2b9c6a867af84544a838d3568e4850afdad402983e319dc99914f5841484"
+    },
+    {
+      "bytes": 27689,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/253.json",
+      "sha256": "33f6548cd66885f76ebb00c327de353f868aed1d07cdc0c82df8411f072a3cef"
+    },
+    {
+      "bytes": 28156,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/254.json",
+      "sha256": "6a5c4c16cf7a0713ae601ae54f91a80ef4c6717d17d665d4bf4b3b1402931a66"
+    },
+    {
+      "bytes": 27690,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/255.json",
+      "sha256": "40bac1307373ebaca05bff18863ec601d82863d02477c1c263590bcb87d40df4"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/256.json",
+      "sha256": "679b537f7327588994259ff30d59764395ec617d27ef367c570825143de74636"
+    },
+    {
+      "bytes": 27169,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/257.json",
+      "sha256": "00bd9aaddae33e95f6b000ee6fbaafc2c45288bea135abfa98b6575920cd7222"
+    },
+    {
+      "bytes": 27949,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/258.json",
+      "sha256": "5a598a01cd9af8b56dd336572129f756ea00737a9e607ee2f17ccd8274f97f45"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/259.json",
+      "sha256": "82d79f9dd857dd2b9731375b55a54380ce59a59ae50c387845f3e895febece86"
+    },
+    {
+      "bytes": 27166,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/260.json",
+      "sha256": "b0dc5a083a085aa6ff62a56fef0d523bedc30729744f3dc2352d93e272d83066"
+    },
+    {
+      "bytes": 27418,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/261.json",
+      "sha256": "ce9fb49f2cb29946f86e0b97f34e392bcbaadaa2d7e1024b1bcb4377d864309a"
+    },
+    {
+      "bytes": 27442,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/262.json",
+      "sha256": "4f3304ad1041a4eb63f8e6bb5bdda72ca14d27fec20a012531079c3e38dff076"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/263.json",
+      "sha256": "ec5c7d0a6a635d5cd38d40158a4bc98851d41b8140e228241843c7973a4b22d7"
+    },
+    {
+      "bytes": 27425,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/264.json",
+      "sha256": "7bf28f484d9286e27fdc68ee963ff4b317f4467747dd776d7accf695177385de"
+    },
+    {
+      "bytes": 27211,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/265.json",
+      "sha256": "14379974acaa57e38a7f6ca30fff784f42419abe073316384881616b5ed1b3c5"
+    },
+    {
+      "bytes": 27689,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/266.json",
+      "sha256": "fa87cca268f367e873fb5e9446e06b093931a7d64ed4300fb828fbb5035d82b2"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/267.json",
+      "sha256": "b5a8cae9706a3a1111fce3205386192bcbfb2a27bda8b1658b4e3b663e03538b"
+    },
+    {
+      "bytes": 27703,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/268.json",
+      "sha256": "35d38cb4ad1ddb31b1821ab3d0ea8a3d80b5b806eaa6fb56e5e20b4a60ad0d5e"
+    },
+    {
+      "bytes": 27468,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/269.json",
+      "sha256": "621344a30d381e53ca73da3bcb0c423e39216192bb852dded316782333bdabc9"
+    },
+    {
+      "bytes": 28478,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/270.json",
+      "sha256": "a2ddfd442157c4f1f71e46071d1fb1afc61c4f6847d51b04b05cd1af5678b0ac"
+    },
+    {
+      "bytes": 27949,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/271.json",
+      "sha256": "0f3dff64d25e8b5c010637117aaba2c37baf9c2ee2427b74b4b34a3c7e140627"
+    },
+    {
+      "bytes": 27204,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/272.json",
+      "sha256": "7e4902628f4ec3b306d8953415790ef3a28c00715e7c00f802c4c68ce2e28bc9"
+    },
+    {
+      "bytes": 27951,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/273.json",
+      "sha256": "e9cbf94bd638373407b13adac6c36134688742947bd8180a7d1cec725a2c2cd9"
+    },
+    {
+      "bytes": 27166,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/274.json",
+      "sha256": "49c611b07223052efe3e41554fe79fbff073e8217568177fe021bc0fe0e26cb1"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/275.json",
+      "sha256": "9f96dc85bfa1bf98295ad73ba72248176d6c0061145daf51556e6188d601c287"
+    },
+    {
+      "bytes": 27915,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/276.json",
+      "sha256": "508adbe760a276c5d7b9e0443b5ba5a2f8d97568445ba397faafaf1f823f46d0"
+    },
+    {
+      "bytes": 28166,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/277.json",
+      "sha256": "a414dfff36501ffdcb698dc436c8fd1cf00d5561e6518a3bd3740b6f4d76e20c"
+    },
+    {
+      "bytes": 27186,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/278.json",
+      "sha256": "0f3f9ce31e21d169544b3fac12e22a4126efafd641af4f6ae039fbb030df038d"
+    },
+    {
+      "bytes": 28887,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/279.json",
+      "sha256": "296e38d099583dfb2e0c38616e4cf69f69c6143262cc23f1fef5a68879e28b6d"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/280.json",
+      "sha256": "61775cccb69379d37c028509e4cf9f3d84197486dc90f32a74231ea0499ebb18"
+    },
+    {
+      "bytes": 27189,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/281.json",
+      "sha256": "1f8591bf02f41624ab517b25fbad5c1abe7edaf82b1e3e7d5989e572a8545bef"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/282.json",
+      "sha256": "95c1dd77e8457f17a04e4537e0629fbeb7cca465a44f18d888211a242895a3af"
+    },
+    {
+      "bytes": 27664,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/283.json",
+      "sha256": "dcab0faf09a45f30e2314cefa112b237f0c16a373e1698d04c9812a1d70a19a0"
+    },
+    {
+      "bytes": 27176,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/284.json",
+      "sha256": "855a8116941a20bf81f256ffa72b91bee2549d72fa8ea9a90bedeeb45d05c352"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/285.json",
+      "sha256": "8f2996575a57dec5f91f129c3d71a6542dcbc9b29cddf94521f93068592851e7"
+    },
+    {
+      "bytes": 27205,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/286.json",
+      "sha256": "02764a17e11f9782009c3645120049ba6a1f4f74d33ebee91356db22385d1799"
+    },
+    {
+      "bytes": 27189,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/287.json",
+      "sha256": "1ebf280b0a6429409049b674af5f48dd27758bbdc095b80c74445fbe8b1e3f72"
+    },
+    {
+      "bytes": 27169,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/288.json",
+      "sha256": "562133be20f756d34bed753bdcad7f0a8bda1d48d40a1ec9bf03fb6799c9106c"
+    },
+    {
+      "bytes": 27416,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/289.json",
+      "sha256": "4908e94752f161cc8a114cd1f54b0eedb5738127cff48dd819eacfe24d0ef5ce"
+    },
+    {
+      "bytes": 27193,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/290.json",
+      "sha256": "b7d52c82748b79d933e39bef0d8b2ac9c2884dd330220362b4bd834764b7a8b7"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/291.json",
+      "sha256": "a53b022c7ade867898d5926425f844926184ebb0092a1e291551a85b619132d3"
+    },
+    {
+      "bytes": 27406,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/292.json",
+      "sha256": "7a55f733ee350b31478263052406a1a9940ad45c27236d9b2f0630cdaf0344a8"
+    },
+    {
+      "bytes": 27419,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/293.json",
+      "sha256": "dc21f1f6661bd9aaa592d78fd24e6cef7a7f7a14eff84c5debc792b561bc03c8"
+    },
+    {
+      "bytes": 27645,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/294.json",
+      "sha256": "d03acd0fc56e14a368a23f369206d814740053a76de80d22a9fdada82b1e2a79"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/295.json",
+      "sha256": "aac07a43fe569a91e81b08ceeeecd206527e13d37e3a91eb810b69f0ec5ed530"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/296.json",
+      "sha256": "e8ccf4916bb4dc0c652be20c54ca8fb4a634add18ac1021ec86f0b3a80226835"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/297.json",
+      "sha256": "41a72efadda0df4598a2b2c33eaa5fa2f685aad9d78e1f9ebe4739ed7ee07ce8"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/298.json",
+      "sha256": "4cd8bfd7778bffb53dd3d5861f2b7922c17a0e0dbba6091ea79df3ed4ead7e06"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/299.json",
+      "sha256": "b748773df91b9a1a1459e433cc60ead1dbcd39b3bc37e3588ae24a642c74e472"
+    },
+    {
+      "bytes": 26930,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/states/300.json",
+      "sha256": "70199ed828433af5c933e46256ace0aa219acd95a3f0a132f02f149793ae16d9"
+    },
+    {
+      "bytes": 15243,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/worker.log",
+      "sha256": "de379d961c9d38618e38163251e1de5837dcbdcfa12c913d0d83eca36ae0059a"
+    },
+    {
+      "bytes": 966,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-103b2-733-adaptive-v1/worker.supervisor.json",
+      "sha256": "568965fc27e79b6760630818cfdd90f73b2d2034b52c73e40686ce5b787f735e"
+    },
+    {
+      "bytes": 389173,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/all-retained-point-cloud-only.json",
+      "sha256": "8dc2a510a866365b68ea840a0940596fbf5dcf1480685c84e228eceb3f62490d"
+    },
+    {
+      "bytes": 67,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/audit.log",
+      "sha256": "fe76eeb7a28ced426742fea0726a9cb573a8aff861d20c2fd199e6e0ccebf4da"
+    },
+    {
+      "bytes": 956,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/audit.supervisor.json",
+      "sha256": "6e93d6858e2239f1e3900ae819ab00f849a273fd41a1455b3141a44c2f433767"
+    },
+    {
+      "bytes": 5951,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/cloud-verification-ledger.json",
+      "sha256": "9cb20c33f3233c75d6bb69138d1da5c64c891721f35b12767145ff61919cd844"
+    },
+    {
+      "bytes": 78,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/launch.log",
+      "sha256": "c1ff451d8bd0afc48dc753eb9fec8320b5402e64a11d5c438f05097aa74a29d4"
+    },
+    {
+      "bytes": 966,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/launch.supervisor.json",
+      "sha256": "70178cb838d271439c0c958bd8a32e2c428e9cec778fd64b2b468cd5ca3cb712"
+    },
+    {
+      "bytes": 1008372,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/maps.json",
+      "sha256": "846bbf651c450d3d4b18174e53a8f315a2ff7d3694a6666d366718c7c8d5c76e"
+    },
+    {
+      "bytes": 190,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/maps.log",
+      "sha256": "af89e271ca7af548d199c911e588790f89aa7415c1a07eabd5650a0f83a0ace2"
+    },
+    {
+      "bytes": 1001,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/maps.supervisor.json",
+      "sha256": "8cc9f025d3277ff8cb00f8cbfdfe7e7ce272af2ada26af3d134b45ebe8508e53"
+    },
+    {
+      "bytes": 1469,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/mod2-build.log",
+      "sha256": "c6253a70dcf9685bcc12afabb17c35559ae0ae87d6b9c241262f80bcb41be601"
+    },
+    {
+      "bytes": 1385,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/mod2-build.supervisor.json",
+      "sha256": "391df24bbff6459aa95b945323d0f1133c12d4cc56aeb3ded4521d9b60fca952"
+    },
+    {
+      "bytes": 55,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/mod2-check.log",
+      "sha256": "d72a7ced80548e2bc63f1d815a6b6fc39d4e922948a1c5fb99b581b585af6b9f"
+    },
+    {
+      "bytes": 1091,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/mod2-check.supervisor.json",
+      "sha256": "04715f4cf9a2e6f9888d414304fa0d3c40414c5dd364b5f9722a55768a6445fe"
+    },
+    {
+      "bytes": 1827,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/modl-build.log",
+      "sha256": "620626c4b3b88e6a773beffc415297bb7d7249c0ce8ea37b84d35b5919ea4c6c"
+    },
+    {
+      "bytes": 1242,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/modl-build.supervisor.json",
+      "sha256": "4ee78ca049c5520b83e7f1d8c5c4f41b10e658076b9c75b528ca03b8c39beae8"
+    },
+    {
+      "bytes": 78,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/modl-check.log",
+      "sha256": "54921805d2d33b982ad8cf8525900bf4fdbaab2f23d59740656538cbdf4c8b00"
+    },
+    {
+      "bytes": 1082,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/modl-check.supervisor.json",
+      "sha256": "b0f3966a81db564863a52ef62d31627561d7163e572d842bf73e284f8f6d63db"
+    },
+    {
+      "bytes": 25846,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/protocol.json",
+      "sha256": "6427d4bc219bcf90f101cdb469e7c69b704bd0e15386f985a69a5c955057cb44"
+    },
+    {
+      "bytes": 39,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/replay.log",
+      "sha256": "94f0f010de279e9c9a72e9104586db43394c8a3016b76cc7dd837bb95b097981"
+    },
+    {
+      "bytes": 964,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/replay.supervisor.json",
+      "sha256": "7bda787b083b5020cd91696b652a90d99a6651183f28ee54d8504556e78853ea"
+    },
+    {
+      "bytes": 15716190,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/result.json",
+      "sha256": "a19747d44d8c827bbb53581ea14b85a3feee0baf3e56c9a920c3ed105d8eef4a"
+    },
+    {
+      "bytes": 28686,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/000.json",
+      "sha256": "45aa6ea1b2a279ed20d5415e0b1764d3c2ee8ad83427637cc01497a99c16bd1a"
+    },
+    {
+      "bytes": 27956,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/001.json",
+      "sha256": "cb72825d0e10bd92d5e2797a572c5d98202ffd42255db4bc7b1a3c68d3373311"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/002.json",
+      "sha256": "5d6ba173992135adb7328649e0e482d48e0fcf66e30571306cbcc015c4f3842e"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/003.json",
+      "sha256": "ef1d92d07de743cce2ea0f19e75b350a6b16e45dabeae6eb09a0809f95ef4373"
+    },
+    {
+      "bytes": 28513,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/004.json",
+      "sha256": "a3b7c0d50b3bf2d072468894ad27a121b80842855be95d97abbb7e77b0b7f7b1"
+    },
+    {
+      "bytes": 27950,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/005.json",
+      "sha256": "6b5b08fc89addb57bed419576b60cc9b426dbe1f27cdda29688cdddf6f7d1275"
+    },
+    {
+      "bytes": 27941,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/006.json",
+      "sha256": "3814b5093e4de7a8f75c895878bcb465c7532b9f3cd4a46176d660fbf9d5cd7e"
+    },
+    {
+      "bytes": 28518,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/007.json",
+      "sha256": "12cc0b630363438480293f7d1939434d3345b05c6195c2cd829d2d9b24fa2fa9"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/008.json",
+      "sha256": "ad45b9d3681d47c405d2db26f3cd5edebe76d2fc704910b0cd61ac541155e7e0"
+    },
+    {
+      "bytes": 28243,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/009.json",
+      "sha256": "f4cc37d6e27627d6562ab0ceef5361b48ae0cf5aeb7aa415256abcc08d676c8a"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/010.json",
+      "sha256": "93dc47282e2d3873092a2c02631e1a0a11c585c82ba3ef4574a86892c44a525c"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/011.json",
+      "sha256": "16b4e6dcb20de84eb582b5c466b21ec95751ed383eb179c5728f1066f16d0dfb"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/012.json",
+      "sha256": "a62f944e94310e192dbf3a0a4942f3b48d3a8ecaf6f12240b05ee83f73049994"
+    },
+    {
+      "bytes": 28013,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/013.json",
+      "sha256": "65ce343276349edf28018b4496257e46b9a5d8a35a70fe7dbee793f123524216"
+    },
+    {
+      "bytes": 28248,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/014.json",
+      "sha256": "884fff8ea7e24b89c56801ea8309c49006e23b06805216193f11eb4d06af9679"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/015.json",
+      "sha256": "15be797df4c4a2f6903c8be23b607974c200e906ca0c05db11104caa9a7a4145"
+    },
+    {
+      "bytes": 28508,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/016.json",
+      "sha256": "3ca4e85663ae2577c798baa2e04992001013a2aa2366222c8a50ee41db6419f5"
+    },
+    {
+      "bytes": 28259,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/017.json",
+      "sha256": "0e4c17f712d46cb60973903e74c25d390d0f75e21b4701424867966239e0ed45"
+    },
+    {
+      "bytes": 28210,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/018.json",
+      "sha256": "e3a26918f3c7a11ee04314a53063330bb8eacbe15f6af8022e61fe5cf47a4c7b"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/019.json",
+      "sha256": "24d5943622cd57d0f60c76094def7b88b7505c7852b01edcc42f5dfa30ee14d8"
+    },
+    {
+      "bytes": 27940,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/020.json",
+      "sha256": "6023f23be8621e65873cdbb80af05b45709beeb062d347f742b5603c7fc2a63b"
+    },
+    {
+      "bytes": 28489,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/021.json",
+      "sha256": "10e1fd0bbe52882fd8841c70ce3a46dac3d327a7e52a267c54ba75dfa99c6592"
+    },
+    {
+      "bytes": 28979,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/022.json",
+      "sha256": "02660d82e1b1b33dafd710f6d9077e2318a6ca933607fedf49fb14d19f733d2b"
+    },
+    {
+      "bytes": 28249,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/023.json",
+      "sha256": "7d98e96743874266e09773a724f17d96878dd768e15cf52707e8c7d744e029c1"
+    },
+    {
+      "bytes": 28006,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/024.json",
+      "sha256": "c5d207e57991aff36a4ce0b16b740309fafe794d525f63a06d55d51a0f1d1bed"
+    },
+    {
+      "bytes": 27971,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/025.json",
+      "sha256": "8b275589ace1475aca08788aa8df327d921ce85ba44351ad3c4fa57b13de04f7"
+    },
+    {
+      "bytes": 28015,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/026.json",
+      "sha256": "9f3be8c6d5e459f52efa04cc8bb72cadcafc2a810f64021ab84c92f995c576c7"
+    },
+    {
+      "bytes": 28233,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/027.json",
+      "sha256": "9cf20ee6fac9a6cb0b19dfbe271d6f6c34c193e08a20985d31cd13521ee30e47"
+    },
+    {
+      "bytes": 27970,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/028.json",
+      "sha256": "6f1ee7baa144cd4bf2674893531bf4dbcb62b59ae5d4cca6f9a7a432a578b42d"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/029.json",
+      "sha256": "1e3e186a69e9a301cabb071978d21c2083bfd5d84a8e21acb27d390dae75a991"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/030.json",
+      "sha256": "47b6b21ccf9947cf0202e46777de5c196e6b10efbc7dc8e062ecb888c06c9dba"
+    },
+    {
+      "bytes": 28825,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/031.json",
+      "sha256": "0879f734ca19bcfa9f362791b1797542fd400da5039a0001fb4f92427e0620bb"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/032.json",
+      "sha256": "1fb0098cdead69fcbd511a38c0f3713b61007293451d6ccc465f17e19a6b10a4"
+    },
+    {
+      "bytes": 28013,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/033.json",
+      "sha256": "c6a831dda554519de4412fc336a019494cc19acd93a9ce72b13f20bddb6db093"
+    },
+    {
+      "bytes": 28207,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/034.json",
+      "sha256": "7d1cef61fe6c3699af2413bdfa9091af4a5e74a84a645da975876acb1692a412"
+    },
+    {
+      "bytes": 28209,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/035.json",
+      "sha256": "3444137995f1dc709f55c694e009bdc594c03e53015faf7afe56431ca3a22850"
+    },
+    {
+      "bytes": 28778,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/036.json",
+      "sha256": "a85882cc9e6736199cffcc665003d324bd43928df5dff680f8b0671aadd40266"
+    },
+    {
+      "bytes": 28018,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/037.json",
+      "sha256": "9c7fea96565df78f76f3b89b38ddc74f7970a9fbdcd54c7ab849165b370766ac"
+    },
+    {
+      "bytes": 28515,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/038.json",
+      "sha256": "9ccbb63b5bead855266d56dc7bee2c6d1c6f774c5e5235a1588550ba4a79f8ea"
+    },
+    {
+      "bytes": 28015,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/039.json",
+      "sha256": "60a5cd30d7e8d1c32f9c0b3b53312c3b15b79ee9499996fb125e6f2ce6ed4bff"
+    },
+    {
+      "bytes": 27959,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/040.json",
+      "sha256": "07682ec8c6515d1a98fec68d34f428480dbac163510984bde33b6693f1956916"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/041.json",
+      "sha256": "a0468435e2634b210159433f3104471ee7592356b07b8e67ed31fc1b587df3e0"
+    },
+    {
+      "bytes": 27969,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/042.json",
+      "sha256": "099d38ce87700b8ebb5781a2d93581ce0d4e00f24cbe11452fe7d116bc37ae05"
+    },
+    {
+      "bytes": 28219,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/043.json",
+      "sha256": "081d48b9c921ac7bdf5c0df7d4dceeae7bc8932db4ae31943984d8894738b770"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/044.json",
+      "sha256": "b4a2b12f2c3fab6c61dd32db11a7230c8433522ac662eb1aaef9af5f9cfbcb7a"
+    },
+    {
+      "bytes": 28271,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/045.json",
+      "sha256": "938e73de3e5cf8f1b64f4b78867b7e1a272ff136cefe32e44976b442aac1b857"
+    },
+    {
+      "bytes": 28280,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/046.json",
+      "sha256": "8bdc24248f4c5b099c0265f3ecd7374f30d7368c4046d13801bb7be1f89b895a"
+    },
+    {
+      "bytes": 27994,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/047.json",
+      "sha256": "ab8d134eaac0693836f974557823d2d10af0824667960079a41e2c93a969e14c"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/048.json",
+      "sha256": "3ffc079663063805b8d9b943b1c873aabe50ee52c729299c8d5bcbb8b6d80ea4"
+    },
+    {
+      "bytes": 28191,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/049.json",
+      "sha256": "3c348289c6a386f279f09570ae4204269cea76853cd47b43819b60b194e4eefd"
+    },
+    {
+      "bytes": 27999,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/050.json",
+      "sha256": "d72763c67c676069b7eb9c033d2dad023506ff1919215adcc444c62fca17ed40"
+    },
+    {
+      "bytes": 28559,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/051.json",
+      "sha256": "068bd2faad3b66fa48f096b68af050e7afe5e34713d1436f5450a0527592a498"
+    },
+    {
+      "bytes": 28521,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/052.json",
+      "sha256": "c892a364836a9b008d4508c42e48c99a3efe2ce88061ea00c80788b72916123d"
+    },
+    {
+      "bytes": 28254,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/053.json",
+      "sha256": "11ea2861f7f18f148f64a7f90bef9ee62b7647f7e3a4b0a7502435d2e3761888"
+    },
+    {
+      "bytes": 28269,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/054.json",
+      "sha256": "5a69d491cd0a1fdbdab6ff39fc412bfeb4a4dd450cb543ed7d73f4c0c7c0b5ca"
+    },
+    {
+      "bytes": 28765,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/055.json",
+      "sha256": "3e0b5e157d3edad4f1c0a7af7d3a35dff90aa8670fb2e68c63935129c3bf320c"
+    },
+    {
+      "bytes": 28496,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/056.json",
+      "sha256": "79cfa7c0272c22c04476af3227d7f8215fa55d0490add50f9cda7153769d752a"
+    },
+    {
+      "bytes": 28551,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/057.json",
+      "sha256": "dfec99649316093ee982767d4a34073cf2aae4414c6cc5a51ae40ec5cc32a279"
+    },
+    {
+      "bytes": 28697,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/058.json",
+      "sha256": "ab5536906b92dce31f093728e924d05d7bcafe21703814362367281a2f2b09f1"
+    },
+    {
+      "bytes": 28239,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/059.json",
+      "sha256": "9357e95bbdea910e1e1e333e39b9230b1ba11aef8f8b86082da3f792088f43c2"
+    },
+    {
+      "bytes": 28268,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/060.json",
+      "sha256": "0a8d3316942e7399df1238b6ef91764d45842bdcc644c9f9843250b31f2b15ef"
+    },
+    {
+      "bytes": 29078,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/061.json",
+      "sha256": "1fed3c5dcedd2e050a7b34e773bc01513e448c5ba1faa2f56bd62d4182d976b5"
+    },
+    {
+      "bytes": 27960,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/062.json",
+      "sha256": "f004228676b8a0ccf3a80a6600557a80589f963d5a36ebe7bbfda54431da0d5b"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/063.json",
+      "sha256": "4d2a43292de4844f2a406fdd78b7bcbea8ddf07ddaba7e02c989ab9029692706"
+    },
+    {
+      "bytes": 28491,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/064.json",
+      "sha256": "ec5f9a957559efe8edcae56c49873bab178d6b4b0e81ef85a2bb96de5dea32f1"
+    },
+    {
+      "bytes": 28759,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/065.json",
+      "sha256": "f0b8eb0064ddff3ace06cde4f4a4db9b39498a71befb0d5d61468275bf73e3b6"
+    },
+    {
+      "bytes": 28253,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/066.json",
+      "sha256": "b71ea1d1baa3dc31a972b4038a0359669e9c2f3ededbaf3eeb78233ed1ed8924"
+    },
+    {
+      "bytes": 28202,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/067.json",
+      "sha256": "fa8e5d3b1759e1aac2b16bcf3307baa7a9d4bb9628ff65fb608e46411bbd1780"
+    },
+    {
+      "bytes": 28467,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/068.json",
+      "sha256": "49e365a613756df0bef922cfc013ac89534f1b2a92e6629ef640622c3f5c99f5"
+    },
+    {
+      "bytes": 28232,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/069.json",
+      "sha256": "19fe0c802bad4c3a85de80345e61c038f4d7b35ffd78db89c17c5bafff9434d6"
+    },
+    {
+      "bytes": 29057,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/070.json",
+      "sha256": "a1c3d317b9217e3a78012f3860fb16e4c0d8de78aae819ccc5b4dcbd1fbe5d8c"
+    },
+    {
+      "bytes": 28514,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/071.json",
+      "sha256": "65448e25b8fa4e23afe00f2754c06d696f1d948237de2fd8d3196ddcb715a0aa"
+    },
+    {
+      "bytes": 28242,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/072.json",
+      "sha256": "33ff723186ae62d70937624afa112eea61b5e8c36c7f6ec7e97cf710fc5ff2ce"
+    },
+    {
+      "bytes": 27967,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/073.json",
+      "sha256": "9b469991300e4702c83a7c46314007ef5fa1dedf16865a96c35cb8f620ea44b2"
+    },
+    {
+      "bytes": 29029,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/074.json",
+      "sha256": "992f6dde6a918ace9dfdcb9424711367bb1343f099b0d9f8933b95182c61e9d4"
+    },
+    {
+      "bytes": 27991,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/075.json",
+      "sha256": "97f12312729321b3c000a012ebb21f54c840c7c74db2d9247a89e6dd45a97a05"
+    },
+    {
+      "bytes": 28215,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/076.json",
+      "sha256": "e69041c293bf04e4b108eead86ea6b7991e54f5ffba512b31a551988dfbd6ac2"
+    },
+    {
+      "bytes": 30694,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/077.json",
+      "sha256": "bd20936702f4ac1bec11a364e2cb35bc7cb69cf7d1c1eaf64dcc2b93285c2c8a"
+    },
+    {
+      "bytes": 28833,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/078.json",
+      "sha256": "edd952593fdacb1a6c07e57ace21d2e48b558e32f5ad1cf03e21c66731c15af5"
+    },
+    {
+      "bytes": 28479,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/079.json",
+      "sha256": "bc09dca1fcf5e1dbd2b7b7e52f4a8c6646a705e8fd5fe07ed7ffddf99cfb3146"
+    },
+    {
+      "bytes": 27999,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/080.json",
+      "sha256": "a32ba2ab8b416b2ed176045addee777c99ff54ecf77b9e359d161f149eefe0ed"
+    },
+    {
+      "bytes": 28229,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/081.json",
+      "sha256": "d34f2de77a8acb5243269ed722eeaa6c2a41ed80712e83240645357b4f72e921"
+    },
+    {
+      "bytes": 28224,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/082.json",
+      "sha256": "a52d7d4f49f49b1d5d880c5cdcf5bedd3c8f9a204a2b2cf388b55d97b4d4d078"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/083.json",
+      "sha256": "67ae426b29713ca52c703a550f4bf2718bd638faf158f422a95fc123bd6e0cbc"
+    },
+    {
+      "bytes": 28463,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/084.json",
+      "sha256": "a949af0bab8b1c014061a8f27c50a5e93aa3456bbe5f8565ae0701af46a3485f"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/085.json",
+      "sha256": "86b578c900c36d18ea9bd3d0a0ac7512edd7782d1364e4a4b2860a6431ba00bc"
+    },
+    {
+      "bytes": 28492,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/086.json",
+      "sha256": "6f4d071d1d6fd6648ccc5f3acce9654c50eea7953ed7a22e082dd2461d5f7792"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/087.json",
+      "sha256": "8f1386f74c8516ed5eca73b20237d45aafc04208df0164fab242daa35d2bd49b"
+    },
+    {
+      "bytes": 28677,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/088.json",
+      "sha256": "eedbd7728129650753f1755172aa2c4cf2acdf1d9a559191e15a902cd139eae9"
+    },
+    {
+      "bytes": 27983,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/089.json",
+      "sha256": "bbd2c45cda0e2157be121d7e7f04f79914de7cdecf3f0ce47689ccdc429af402"
+    },
+    {
+      "bytes": 28235,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/090.json",
+      "sha256": "4c313addb99f06101048788b319899cf2c893813832e04f64e24062f909da342"
+    },
+    {
+      "bytes": 28270,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/091.json",
+      "sha256": "cebfadf9f73963854a990430148acb7d8b350176310324989a6851a51f9428dc"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/092.json",
+      "sha256": "2fb17ac504e0d49f87b9c308e08d64e1218b4b384cdafcd2815dd0ca7041dadc"
+    },
+    {
+      "bytes": 28485,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/093.json",
+      "sha256": "4446100e811ce00439b23fd5612112a131e4b8bf11967360c2f7706d8dceeb4c"
+    },
+    {
+      "bytes": 29242,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/094.json",
+      "sha256": "d790de3291f7e138cf242a2fcc0a92c7c094781727da3e49c9e55e7cc6dba638"
+    },
+    {
+      "bytes": 28297,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/095.json",
+      "sha256": "fee1a5e3d4219f1a2f733a3b31e45e9aa4e748ebb6841636a0427c5735bf5e0f"
+    },
+    {
+      "bytes": 28447,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/096.json",
+      "sha256": "f9946ab46de477ccfdb0a5bc22c355dcdf4959c84c8a77fb1cf5eb2c1ce66e68"
+    },
+    {
+      "bytes": 28546,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/097.json",
+      "sha256": "4d411d01e7f853110b414391a7ab29dee5e2e10b3ad29f73a715474ff7216a4b"
+    },
+    {
+      "bytes": 28528,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/098.json",
+      "sha256": "a949e12d89e86892ab5272cfa4ceb50b73abf045936619c50acd65ac63fb35f0"
+    },
+    {
+      "bytes": 28531,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/099.json",
+      "sha256": "0a0d2163187ccf706daec55ff215f75cfbfe9a71e56bf0adf02003f4544ee199"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/100.json",
+      "sha256": "c226534997f5fd79634713d36b23728c94abdee283d07258da431a99178f81ec"
+    },
+    {
+      "bytes": 28194,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/101.json",
+      "sha256": "84687009f9cbe6b76d459a122f1e6ea56545da3ad732a5f4430e91c96dbde102"
+    },
+    {
+      "bytes": 28531,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/102.json",
+      "sha256": "704faa3acd38b81fb024c618869413cf112dbb06d54fd55d15e04cba79feca57"
+    },
+    {
+      "bytes": 28495,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/103.json",
+      "sha256": "2d2a1a879b783fe03d252ceb5822aeb133f88b0715279cd04437ea575752af02"
+    },
+    {
+      "bytes": 28016,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/104.json",
+      "sha256": "e1279e424ccc40b2df96f99cc549ede153e35441eecacd40cf1af167d72d84a5"
+    },
+    {
+      "bytes": 28013,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/105.json",
+      "sha256": "0c24b4c8bf4c6a798d2f38da4ab8a3c5612458a0ffdd326a0dfccfd8825bcfef"
+    },
+    {
+      "bytes": 28853,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/106.json",
+      "sha256": "813f3277af374d80c92cc43d25d4630b1a71337ccf898dd09a8d9c4cf1b5d94f"
+    },
+    {
+      "bytes": 27962,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/107.json",
+      "sha256": "d7ee794bdad0e81bddd35791b5c5e63a982d6fc017a2f231ac577be974fb5ced"
+    },
+    {
+      "bytes": 28433,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/108.json",
+      "sha256": "33f2cc19d0e058ee91eefdbcd7981e92af1d2d4d9326877e61aec03cf7358047"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/109.json",
+      "sha256": "a82e4569192c721dcd9929637d3011aee9a230908455a7b70a30aecdad3d569b"
+    },
+    {
+      "bytes": 27982,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/110.json",
+      "sha256": "a836d230577fd3da65aa160a94bd2b54c86096c8f0588bd3bd11ab9b8cb40337"
+    },
+    {
+      "bytes": 28798,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/111.json",
+      "sha256": "49d9cbbeaf2ebdc3113b48e770c24035ffee5f6e54900ff07982e45893ab9400"
+    },
+    {
+      "bytes": 29102,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/112.json",
+      "sha256": "6d69b485ba3e0ff073c4af3aaac7097932ae88eef80c689c823b2e889749ba02"
+    },
+    {
+      "bytes": 27946,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/113.json",
+      "sha256": "624786917d1be075c48dbe9873fe2ad14de38f35f0b47901e03af7d1d2f79366"
+    },
+    {
+      "bytes": 28686,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/114.json",
+      "sha256": "861a40d4804f6744cc08ce514ce1a42cc31ad72297fc5a7c8f30036e3a2eea14"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/115.json",
+      "sha256": "e04ef5b85d5db46148c04dc4a9de8dc7fc0dd537f3c2657bb73892c4bd3dae0b"
+    },
+    {
+      "bytes": 29110,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/116.json",
+      "sha256": "5a306f11c3babe4e9a3c96a9bb97d8d0e529a53df0aaf1b38d78f8745219f2f5"
+    },
+    {
+      "bytes": 28545,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/117.json",
+      "sha256": "2e1ba68dbafaf4793708b83f52cae60e448dbae863a51cace158185033ca0d72"
+    },
+    {
+      "bytes": 29124,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/118.json",
+      "sha256": "a26785425fcf91f2326ef04df6e20a5b57c2b65e3c73d95067db173e87a38da4"
+    },
+    {
+      "bytes": 28544,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/119.json",
+      "sha256": "ce403c973b48101883296ce718cafd916bed30bd7c8b888ad9dc9caa91d4c627"
+    },
+    {
+      "bytes": 28970,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/120.json",
+      "sha256": "81b7567831b9c0fc978c1b7b66e12dbb18a24fa60392972e72e824421d933d67"
+    },
+    {
+      "bytes": 28272,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/121.json",
+      "sha256": "b4297605dd715f5135e678fffe80c548d57c560412db4cc402a60d491ca77a05"
+    },
+    {
+      "bytes": 29260,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/122.json",
+      "sha256": "6c56fc66ae6517a7d0e8d7e3a603e8563f72db9b86bdcba37d2418e641ce29fc"
+    },
+    {
+      "bytes": 28967,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/123.json",
+      "sha256": "b51ed08bb76b0021dc96118f8b3f98a0b05ccc0e13274fc8b23181ed856ada6d"
+    },
+    {
+      "bytes": 27973,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/124.json",
+      "sha256": "55e00e80b984be2185aafc593fae5ea71445ed931fa3bb97b2494b45fc388cf9"
+    },
+    {
+      "bytes": 28226,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/125.json",
+      "sha256": "349c50ae789da60b53deeb51aa9f5894fefd3033d0bf6f0a2e00ea67f43c1752"
+    },
+    {
+      "bytes": 27990,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/126.json",
+      "sha256": "0590e0d6f86cfb76da76e2ed08bb08b0e1fa30a11b1cb27fc385e9c96fb3bbec"
+    },
+    {
+      "bytes": 28778,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/127.json",
+      "sha256": "5cca7f74877127bf3a96b4e88a34586f2b2c94d5e2eb6782d801487c16db288e"
+    },
+    {
+      "bytes": 28222,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/128.json",
+      "sha256": "badabf2cfe9dce0e6be7c5c6cd7e8212e1870c5bfcc3812e681bb794ad435bdc"
+    },
+    {
+      "bytes": 27963,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/129.json",
+      "sha256": "4a4763019ae96be59ebbfe50e03b07bf23834acc7b29b7a2e60d2c599a9d9f7e"
+    },
+    {
+      "bytes": 28249,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/130.json",
+      "sha256": "a30d6b383991e5f5596c60d4e57b168d8a1bc6a1bb92ed4468dc707a6425aced"
+    },
+    {
+      "bytes": 28976,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/131.json",
+      "sha256": "57535266dcb16a2c2568db53c0c86e06881497efe8aeac8817cea7a6522cb7d5"
+    },
+    {
+      "bytes": 28233,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/132.json",
+      "sha256": "0c52044eabaca21c1e5826725bbe02e4208a9a7ffcd1f998e1e999742c696727"
+    },
+    {
+      "bytes": 28818,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/133.json",
+      "sha256": "6f781ccd8a3e523601159f8e2824cbdc92774dc87303c696deba8ac513904fe5"
+    },
+    {
+      "bytes": 28948,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/134.json",
+      "sha256": "36d127e42d0e07fff2095f10101babe7d414fa6a76e38e0571036499a6fab72a"
+    },
+    {
+      "bytes": 28234,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/135.json",
+      "sha256": "841dc6df4b731bb2fd2db91f88f7516ff2fbcaeed12e9e7e9342d0062372ff22"
+    },
+    {
+      "bytes": 28217,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/136.json",
+      "sha256": "49db5bfc58e4381207a708154922c45874ca772c0a43c876fd586718018c3ae8"
+    },
+    {
+      "bytes": 28423,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/137.json",
+      "sha256": "08c4e30edde224ada6f0678f64f8ce8bb35b59ed0cdcbdf6596c212d24dd009f"
+    },
+    {
+      "bytes": 29295,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/138.json",
+      "sha256": "125be8e83d294b422b31aad9774a1a16a5f4c5bb1a152294e71d9516bba189d2"
+    },
+    {
+      "bytes": 29143,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/139.json",
+      "sha256": "81b3f0d51ebdc5c04e94382565548a1f3f9cf4a51ead5076116e8bf8c6727d3e"
+    },
+    {
+      "bytes": 28201,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/140.json",
+      "sha256": "e437851bfdf3b6514b87e49bc96b3b42c90e9572d600c6932904b8e7d869dd43"
+    },
+    {
+      "bytes": 28789,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/141.json",
+      "sha256": "0a4022ab33fab312e60b68dcdd20426342af3de9b620d41138d44bbca3dce906"
+    },
+    {
+      "bytes": 28498,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/142.json",
+      "sha256": "afd104f09bfa4c3ddf47042e73f5592a7983ca1ea668a460dd8db9ecfcc22df5"
+    },
+    {
+      "bytes": 28520,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/143.json",
+      "sha256": "e841c12c2dabb6f7b1ad0909fcd1c4fa060992f79146116ee77896703e5825a1"
+    },
+    {
+      "bytes": 28225,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/144.json",
+      "sha256": "83b505e837a9e8e2e974147d03c1f3230a6a238890c10baf0620e143947b0bba"
+    },
+    {
+      "bytes": 28799,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/145.json",
+      "sha256": "2ed09657a7b01f1972066918961966b1d82e1d57a032f5fcbd4f2b756baf1aac"
+    },
+    {
+      "bytes": 28234,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/146.json",
+      "sha256": "d34fc9d190c685a16884feba8c194cf6267758a7773f9fee3d932011787eff1a"
+    },
+    {
+      "bytes": 28511,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/147.json",
+      "sha256": "434d65ff3ea0c6e24e4f7c25c5fedaf74fcde7170dbe9eb1a87db96ef6e820a6"
+    },
+    {
+      "bytes": 28467,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/148.json",
+      "sha256": "2d7d6e72bde289d7759221115de31c04ac143482e71046e2eeb987d3da3802c2"
+    },
+    {
+      "bytes": 27977,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/149.json",
+      "sha256": "0d7df1f35235e1eda95f9c3658570f3de8a706da078c94526ba32a07ce5e5e86"
+    },
+    {
+      "bytes": 29302,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/150.json",
+      "sha256": "6ab01117b6a7d0e7c1652470bcdaaaf263ec9348692ea82b0e7d28bf3ed599fb"
+    },
+    {
+      "bytes": 28208,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/151.json",
+      "sha256": "968fba295d0d49e508b519b781b1d693f2fbdb974003a64893ac74e2472579c1"
+    },
+    {
+      "bytes": 29283,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/152.json",
+      "sha256": "0884285aa05a5c7f23c88c80dba72db2c3489b9b516958ba56fa9715ddc40cc9"
+    },
+    {
+      "bytes": 27948,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/153.json",
+      "sha256": "b59a63da58dff0824e027cf136cbc2f66b9a021438228afcdb3c18b8eab926b9"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/154.json",
+      "sha256": "37e3ccdcac94489aea17b347056ed3c182e3f4b910991511a82db8364fbb5537"
+    },
+    {
+      "bytes": 27969,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/155.json",
+      "sha256": "b5b43dd01bb1374d0986d23d529e2e6475bec72ef69fee220bf1b57a3da24ca9"
+    },
+    {
+      "bytes": 28502,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/156.json",
+      "sha256": "cf44e9602a0711d5d99b879a464eb265d7f8775e9c1768bb6522218251251487"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/157.json",
+      "sha256": "9ec069ec6da0c1a69404d3b96b83f5450fcae9ae505661fd454f77036d7e8704"
+    },
+    {
+      "bytes": 28481,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/158.json",
+      "sha256": "847111c5f5620ec720a13ca94fd895580ce035f567ff4e5459a6cecab8a339a5"
+    },
+    {
+      "bytes": 28243,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/159.json",
+      "sha256": "664cf93fe64e5952dde66d82b3419d7ec3bef3404410fb3ac67ab6b1109fc807"
+    },
+    {
+      "bytes": 28528,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/160.json",
+      "sha256": "ffc8dcdd927770de1359193a02e2b7ca09a38b7c1590356f09804570d715add7"
+    },
+    {
+      "bytes": 28477,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/161.json",
+      "sha256": "7e536c3f5dff68315978f28ccd0a1fcae7fd3f0e3ecca4a547d46dc51d07f061"
+    },
+    {
+      "bytes": 28506,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/162.json",
+      "sha256": "e66811be5dfee3d36a6077ca1d6bd47786efb0d518fba7fa76c524e4091012a1"
+    },
+    {
+      "bytes": 28631,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/163.json",
+      "sha256": "b75ff18673d50b90f7534ae64b6d20fbc1f4d1908588785da3de6e8c84b4070b"
+    },
+    {
+      "bytes": 28533,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/164.json",
+      "sha256": "b91f66a31c5424a73d15cd4d7efd927fd0cdb0f2478372b06b88a5129460436f"
+    },
+    {
+      "bytes": 29011,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/165.json",
+      "sha256": "b903ab8beed12fc5ce94ec8c53efe02090e3d6175353495b4aaf294d5e51d224"
+    },
+    {
+      "bytes": 28511,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/166.json",
+      "sha256": "449cfe7d765e9ba5af9d653f626f130073a4effc2653184f58061c864b472edb"
+    },
+    {
+      "bytes": 29310,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/167.json",
+      "sha256": "c73714cd62acaf5e0ba687911231d256b964eb3ecd89f639d5c25dec3b99c458"
+    },
+    {
+      "bytes": 28539,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/168.json",
+      "sha256": "fe1acc8ce2b464bc5eae6906fd5bffaf5c35f45334faf47d6fd9e6af471d371e"
+    },
+    {
+      "bytes": 28784,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/169.json",
+      "sha256": "6bc60a3db480636003481158a67f9e16df820f878c8f46eaf523fcc88cf73c19"
+    },
+    {
+      "bytes": 29227,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/170.json",
+      "sha256": "61b83713cdf929649414a31749bad6027e3021c1ddad29f7c8f3cdbb375a8af0"
+    },
+    {
+      "bytes": 28450,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/171.json",
+      "sha256": "3cd3ba5dbd1ecb41490107f683bca553c4275e30469de42879508906498e24c5"
+    },
+    {
+      "bytes": 28702,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/172.json",
+      "sha256": "8fce33e8027a86398b614521b75a666c895d5da2464843570a40ab636dcadf88"
+    },
+    {
+      "bytes": 28520,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/173.json",
+      "sha256": "5dc7dc3987d275126eae7293aa81382742e051b5997787dcdc713bfe7d911140"
+    },
+    {
+      "bytes": 28748,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/174.json",
+      "sha256": "809a690c0801210789e1eb0b7a17c7c7943e35c1991e59edf98cfdb777e78eb1"
+    },
+    {
+      "bytes": 28708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/175.json",
+      "sha256": "eed3dfbf5cbe4559e86822609b1c055e1899e55c58529fac300362c491912941"
+    },
+    {
+      "bytes": 28210,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/176.json",
+      "sha256": "bb23a10a9aefd16447089bedc5175990e7435c4a32577aea30a9bcf019df4a4b"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/177.json",
+      "sha256": "65e841c82835a7788a261fcd1f0ed31cebb8951d90cca850558ef048572264c7"
+    },
+    {
+      "bytes": 28486,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/178.json",
+      "sha256": "801473326545500e522dcdf39aa8ec5a86600d033be0a029fe5fd2c1d26bc0f6"
+    },
+    {
+      "bytes": 28528,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/179.json",
+      "sha256": "38d01e9ab4d971cb666918058f1b0172988d7bb49d0073d50f11a57c859b27f7"
+    },
+    {
+      "bytes": 28733,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/180.json",
+      "sha256": "5316c66dfedb1164308a37639a405beaf45d9a61012c0f02911d1eea48c8129a"
+    },
+    {
+      "bytes": 29014,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/181.json",
+      "sha256": "d0005c5657a17e4ae303d51c5e8ff76e5b2105f8ce4997a57d5dc7ff379285fb"
+    },
+    {
+      "bytes": 29034,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/182.json",
+      "sha256": "6de7d71b439614a7990abd7f54cac93d3024e03f41f2c55f965bf878c9a43671"
+    },
+    {
+      "bytes": 28778,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/183.json",
+      "sha256": "cc740b420f0149ec6f1b4116b80c39668ac19f39b90d3f9a2f69e929dbc14964"
+    },
+    {
+      "bytes": 28276,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/184.json",
+      "sha256": "73fb622aca2d081e1ea0aa83cd47349164ac4006b8e22b97e15f59fee30312a0"
+    },
+    {
+      "bytes": 28220,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/185.json",
+      "sha256": "02205a9b6f2c39d986018a5bccd4448f5ad2028641e6f907fc5bf0091ac6e8ed"
+    },
+    {
+      "bytes": 27940,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/186.json",
+      "sha256": "cc1076ac85a1a3151b4cfaee64eda4a9f38f4793b06bef3176239a266e8662c7"
+    },
+    {
+      "bytes": 28729,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/187.json",
+      "sha256": "70fb547541bbd9d9a4a6a067b6162f9ec0565e418e473c3a81cae10e27d4ba6c"
+    },
+    {
+      "bytes": 28667,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/188.json",
+      "sha256": "bf119d512fbeda23c001032667d284d5d49a0e9fa4bde1819f15b641ab5c3170"
+    },
+    {
+      "bytes": 28520,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/189.json",
+      "sha256": "96c80592797f7c1fc9c647702f3a99654db00c5a9760d41c59c0f9219c2adb82"
+    },
+    {
+      "bytes": 28487,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/190.json",
+      "sha256": "902f269049125a65a895f38336238e251ad6556f0241e4dbfbba355cc39fdb4c"
+    },
+    {
+      "bytes": 27940,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/191.json",
+      "sha256": "948798b151ce3e2ead7641eb6e56c313d22b69f3a558889eeb4c836e6e1d9450"
+    },
+    {
+      "bytes": 27994,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/192.json",
+      "sha256": "1a1d795f8d191c16afd8577dba9e5677f369420b67c1f0bb45195ecd52e1217c"
+    },
+    {
+      "bytes": 28521,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/193.json",
+      "sha256": "3220656fde43422464dcedb447f71f36ad3def8fb511eb67ace8ed4f9cb640b1"
+    },
+    {
+      "bytes": 29228,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/194.json",
+      "sha256": "7106bc073cb027802c44b2204753d442cf040ddc46ed6dc86f4e1d495434dd0c"
+    },
+    {
+      "bytes": 28250,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/195.json",
+      "sha256": "6a5fe7c93d4522ca2637d582f4e136fa42463c26984a5dce796b2d07c9598c67"
+    },
+    {
+      "bytes": 28232,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/196.json",
+      "sha256": "0131c4e7289c862f95194af9cdc77dbc3299a697b3883609051460ef41a1cb3c"
+    },
+    {
+      "bytes": 29037,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/197.json",
+      "sha256": "dac97ad2dd073e1d0f31eed2e7c8391b60b128ea8b01bdc867572989748ad55f"
+    },
+    {
+      "bytes": 28221,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/198.json",
+      "sha256": "fa3c8037934c9fc9b27c8ea5322b1b0bd11fc36628c66361ed66fbc93f8154fb"
+    },
+    {
+      "bytes": 28519,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/199.json",
+      "sha256": "4d8624ee10c9551b15f4e78ffb90262db762eebf76617c9e621cdc90ff8d3efa"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/200.json",
+      "sha256": "ded889622e114867233074196855e6296442cfea0042c8c5d986ba863f2cf944"
+    },
+    {
+      "bytes": 27942,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/201.json",
+      "sha256": "254920df65c5129305c5be5d4e6dbfd437dc77e4f2a9bb564be62cb4b90818e0"
+    },
+    {
+      "bytes": 28466,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/202.json",
+      "sha256": "f198dd6076ceb783f418a0d2c1a68310b39a1c11ec7aa0b29287eb47c94c217a"
+    },
+    {
+      "bytes": 28187,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/203.json",
+      "sha256": "06a754ffdf4959276ee7ed45790b4ae5b5b495e3df8b622a7b4dea6194053193"
+    },
+    {
+      "bytes": 28503,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/204.json",
+      "sha256": "3a3c2ebe89f280c859f63d869b73511a6af836fb84b22821cae77ab71ad48b12"
+    },
+    {
+      "bytes": 28707,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/205.json",
+      "sha256": "d868fe4dd3c1624bfadb1d7df6b0b4d5fcc0a7c6a8ead6bf9d8645a13ac94e79"
+    },
+    {
+      "bytes": 28744,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/206.json",
+      "sha256": "6ca58a7db8d4d2ee946f732f05d4505f6fe6bd864a706647c3ecc5456c50ca83"
+    },
+    {
+      "bytes": 28570,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/207.json",
+      "sha256": "1bbd23a75a3ee8a57c1e4307c8764f0113627c1b6814154430d1eb4218646a30"
+    },
+    {
+      "bytes": 28739,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/208.json",
+      "sha256": "2337c277fafe593a6b432e721f68d63113b2870a85796598082d6bb3a2c5daf6"
+    },
+    {
+      "bytes": 28490,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/209.json",
+      "sha256": "8c51d2d848ae6feca1e36597f1d0c4e9ca00680620c025bd4e9c2701ffc55620"
+    },
+    {
+      "bytes": 28459,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/210.json",
+      "sha256": "55c657f2250cc2ab0db8ff63b0c8d9f4b0cacd7e7789aeedb4e2f25bbe4278be"
+    },
+    {
+      "bytes": 28770,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/211.json",
+      "sha256": "4e444159d37705b487ec3ddacf07df4faab60897c2c66cd77a6d67cc54c24680"
+    },
+    {
+      "bytes": 28458,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/212.json",
+      "sha256": "485e5e60a5cd05b59383104215ea946a4b036de72d1457ec4f6f05538a5f8857"
+    },
+    {
+      "bytes": 27990,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/213.json",
+      "sha256": "462ee3fdda8c401f1af4c9cb3fdd853b380115575fc3210c2036ccdec0206595"
+    },
+    {
+      "bytes": 28189,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/214.json",
+      "sha256": "10944cc19593665e2c782dfdb6ce79265e8ad8a701ebcabc62ce972df32f2f44"
+    },
+    {
+      "bytes": 28974,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/215.json",
+      "sha256": "81b5a68cc3baedbee560c5740b0c820cf0c01136730b8cc89fec302440b6e521"
+    },
+    {
+      "bytes": 27941,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/216.json",
+      "sha256": "9bfc2a83e5a8cb47034dce825f350b719c290ced283c1f4e64e7689475ee507c"
+    },
+    {
+      "bytes": 28495,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/217.json",
+      "sha256": "de50f33d7f68968679c87a15d78bb31f4f2ea360cfba1a29182418868d132f6b"
+    },
+    {
+      "bytes": 28208,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/218.json",
+      "sha256": "9239c66f5d41662ef5fd89d5a9da33322ceb7097aae42567cb26b5fef7a37b3e"
+    },
+    {
+      "bytes": 29278,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/219.json",
+      "sha256": "82af9e1ce2ef1b2e0ef5f4e29b52bd781975a13df86b4e148ddc0c4367d7ac5c"
+    },
+    {
+      "bytes": 27961,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/220.json",
+      "sha256": "05fb86c66b4334bfbe0e8c44426d3cfe1bbb79a30c0ca9d24fb94c4ae3c014bc"
+    },
+    {
+      "bytes": 28691,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/221.json",
+      "sha256": "4a31d280fb9ee6e18ca17e4402c83b3c5784b090422f3d72ccd126c39a33fb35"
+    },
+    {
+      "bytes": 30515,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/222.json",
+      "sha256": "d9a5f1cad73025a7ae03509a81b529c218e444add30623fc641357d20fb07b59"
+    },
+    {
+      "bytes": 27940,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/223.json",
+      "sha256": "cac549ae98ff962e6c4a3c54e7dd44aa7a994efe85b0e16305d724e594e04cc7"
+    },
+    {
+      "bytes": 28738,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/224.json",
+      "sha256": "8cd4d705a9ac82b1c22bf46352a1d4ec8636a3e848407a96807d928a66508593"
+    },
+    {
+      "bytes": 27942,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/225.json",
+      "sha256": "639f1c255d7ed38f0873008390f71f92aa2fe9f83e700893f489b8f09a388118"
+    },
+    {
+      "bytes": 28243,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/226.json",
+      "sha256": "67cc3f1e8b585a2a8024ed085a5f98fd6229b2c219d5050ece7b96edb492d422"
+    },
+    {
+      "bytes": 29202,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/227.json",
+      "sha256": "cf891e549e2514d4c46b8b122020129eb01e4aade6babe71651699a8ce0137de"
+    },
+    {
+      "bytes": 28971,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/228.json",
+      "sha256": "b732eb22e64a941ced67a1924ef2ab28f3ecf2d1c6118edc60b5522eaf18f0c3"
+    },
+    {
+      "bytes": 28980,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/229.json",
+      "sha256": "e8e7baeeec41e4640fa7d4acf0a59aad4b3c3a9815abf097b4fc97e98132993d"
+    },
+    {
+      "bytes": 27996,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/230.json",
+      "sha256": "0c9a5482ca2be43d52da40d8716882afb596dfcf620f6b37e36708f648da3eb0"
+    },
+    {
+      "bytes": 28428,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/231.json",
+      "sha256": "e2c624cd00c91cdbc7377776db0ad6257ef38179b2f499934af9066557f34b60"
+    },
+    {
+      "bytes": 28454,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/232.json",
+      "sha256": "378e102ab846751ca0abecfb79c752148833b8ece8a2bf6315b227891e367f06"
+    },
+    {
+      "bytes": 28227,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/233.json",
+      "sha256": "f69f4ba36042739a71b67772a08e3e67c385ff3853a96c553f46e4bcff6dc482"
+    },
+    {
+      "bytes": 27969,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/234.json",
+      "sha256": "5a907ea101037d034fde48842d42ec70ecb2c7023cec3b3625aa4c605af0544d"
+    },
+    {
+      "bytes": 28757,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/235.json",
+      "sha256": "e606cb014693cfe4043445d88c378f40f9763dbc6554807c1aafe5a3e173459d"
+    },
+    {
+      "bytes": 28735,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/236.json",
+      "sha256": "916191d0a6f8338ae176417cdd9db982e4a53dc3c517e4d31831e83495fa0794"
+    },
+    {
+      "bytes": 28208,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/237.json",
+      "sha256": "1ed4a4ce1602b2429608dac92c9576b9be9acb5817830ed901bed05b43ff2f4a"
+    },
+    {
+      "bytes": 28220,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/238.json",
+      "sha256": "3f7a786b256e9ca9b8175b5ad86ffbaa1e6a91448fe1a14d33f82f7872927930"
+    },
+    {
+      "bytes": 29260,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/239.json",
+      "sha256": "b9de02ca92c68defdecfa7f77d684b3b72f4e1703dbfe918d4b41c4eaddbc343"
+    },
+    {
+      "bytes": 29251,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/240.json",
+      "sha256": "74ca66196a38ef108ad2022620d8e6e02dd3b9a02ca119146c3b26f2a2dad05e"
+    },
+    {
+      "bytes": 27973,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/241.json",
+      "sha256": "e2bc1cd19461c9dcc042bded9fdce060a2862d1f829255052da16d73fe928628"
+    },
+    {
+      "bytes": 29235,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/242.json",
+      "sha256": "e479c8b3ca8be3019fe3b33719aac27e21c6184bc090dbc782d3ca26e43e1d7b"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/243.json",
+      "sha256": "2208041513d12d9273a6efb96d7820a067915f31495d9692990ce88168f2c5d6"
+    },
+    {
+      "bytes": 27994,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/244.json",
+      "sha256": "3075c451ecda13661e1a64a7ff4d7fb398e8947d97af8ade8feb4df81aec8106"
+    },
+    {
+      "bytes": 28192,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/245.json",
+      "sha256": "304d241e050b4d2e5f45d301c7ad909edc3c3808eecc185890fdc1b1f1c87ef4"
+    },
+    {
+      "bytes": 28738,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/246.json",
+      "sha256": "1dadf6b404e226dc6794379b8d460728e617d0a6e287ed2e6ff16592a7ee626b"
+    },
+    {
+      "bytes": 28451,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/247.json",
+      "sha256": "1bca0de9bd4d451763983b73b25364e4cb7bb1047ccea1829b01c4aa7b6f9bd4"
+    },
+    {
+      "bytes": 28982,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/248.json",
+      "sha256": "bba2992d2f55fa8ccec379f33edca2bbd18e925d91048807fbd9fd58582e5531"
+    },
+    {
+      "bytes": 28713,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/249.json",
+      "sha256": "d21f94a18e89dc919cad39445a3e9aeda9c83921940fa3f1d017b4b5777e49ee"
+    },
+    {
+      "bytes": 28462,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/250.json",
+      "sha256": "fe09595f9352102ac02bf4b850c0745257681f50b60a91647338b8db2fb6f728"
+    },
+    {
+      "bytes": 28710,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/251.json",
+      "sha256": "52698dc4a4e4734cf1e0e3cbf8fe0b89f612a0c1c3bb050f4f8c978798fabf56"
+    },
+    {
+      "bytes": 28457,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/252.json",
+      "sha256": "a9a5862e77e714a7c394c46f72939398cfd09a3360c00f24d58edf00a0f31d0f"
+    },
+    {
+      "bytes": 27940,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/253.json",
+      "sha256": "d1c469db1bcc06e47c71826f8662f9a1ab9ae1761c8f737ece0d2b4fad821e8b"
+    },
+    {
+      "bytes": 29238,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/254.json",
+      "sha256": "cb00c12411f2ba04a7756c9cf0bb379bb54cb0a23994ec5e0e467491b1156c4a"
+    },
+    {
+      "bytes": 28470,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/255.json",
+      "sha256": "0e2adfff4c53e58b834662c3fc25f7d6e9b1122462cf69a1fec70904845c51d7"
+    },
+    {
+      "bytes": 28502,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/256.json",
+      "sha256": "e48b67d699beee1c9428ea2d63cd14900f6fbdb7441fe13e35c45eb7b78893e7"
+    },
+    {
+      "bytes": 28955,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/257.json",
+      "sha256": "f1a928856570eddb05445ca32ad5259550dcd7b5eef841fab18fac6560b324a7"
+    },
+    {
+      "bytes": 28189,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/258.json",
+      "sha256": "ae036687806a791c5453373cf29d9636a36ab3ffdb7a5f87cad707aa6586bc72"
+    },
+    {
+      "bytes": 28934,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/259.json",
+      "sha256": "8a81aa16e4602ad991107ac4bc18d603cc937c14f37a10b2c41566393345d3e5"
+    },
+    {
+      "bytes": 29037,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/260.json",
+      "sha256": "ed51e3e49e38df69975b406e0ea231f0c202c2633ae0782685255cfcbd8d9456"
+    },
+    {
+      "bytes": 28452,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/261.json",
+      "sha256": "5f3361754d3f49129d9d6937b9986525a137bffea7241468cf1642b04873b6f2"
+    },
+    {
+      "bytes": 29511,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/262.json",
+      "sha256": "a97fd4aed89b154f5113eec787ab6c0828d280fd7e655fce43833e3582a40bae"
+    },
+    {
+      "bytes": 29132,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/263.json",
+      "sha256": "626f0aecf57908be5ff87d31e8a2c1b0e694283daedbe7a2e72a37da11e14641"
+    },
+    {
+      "bytes": 28997,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/264.json",
+      "sha256": "4860e803daea181315bdf360bd7c6579eeafe8afefb787091a0cd44883b07457"
+    },
+    {
+      "bytes": 27967,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/265.json",
+      "sha256": "0d6ff097d388e9ee648e60c6f69e170192189eceeb0e3625c4072d4cc4d90762"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/266.json",
+      "sha256": "e6148fd22ff6906c81f9dd09093b4da132fcc6d4edfc6c0a4ac46ca78af81557"
+    },
+    {
+      "bytes": 28460,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/267.json",
+      "sha256": "2796ab97739daee57d4c135db1f8ecc116bedf7933d8c1ecf2d18ab3c93690d7"
+    },
+    {
+      "bytes": 28219,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/268.json",
+      "sha256": "a1676dee5c2390a4398c3ce23abb7aee5e43dd032b1d1bb840e13d809e9f34fa"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/269.json",
+      "sha256": "6a8406d14b1924abb8be2b6e2fa741a37bb374f2c8984510b37ee1b9ff278ae8"
+    },
+    {
+      "bytes": 27992,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/270.json",
+      "sha256": "c8a0e8ebed848bfeb00f164cc5b707e74e33816f5cd167b0f497cfaf12e22fda"
+    },
+    {
+      "bytes": 28441,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/271.json",
+      "sha256": "e0596468ed5667bda01f481c43560989008fb9af56c782fb011b15aa9f7d45b4"
+    },
+    {
+      "bytes": 28413,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/272.json",
+      "sha256": "097bd81355027c97543709b4283c7b63c4bd4318f60dba8d7007041ba1fc14fe"
+    },
+    {
+      "bytes": 28424,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/273.json",
+      "sha256": "59e6dfaf0226d9ec9f3a82d65850740dd246187389c65875ba9b0aeeda7ffa6f"
+    },
+    {
+      "bytes": 28672,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/274.json",
+      "sha256": "f36d86c5e9f87571d0385d73aabef945de1af37b5f079f485cb1233b65d41b5e"
+    },
+    {
+      "bytes": 28919,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/275.json",
+      "sha256": "e1a556a4556d759e5f18f5815007db7f1549af4681a6af9699bd6284b1d56505"
+    },
+    {
+      "bytes": 28904,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/276.json",
+      "sha256": "bf58795e59b061210f6f7d09ddaab21f7badc6ec5d3a885a755802dc08a7cce1"
+    },
+    {
+      "bytes": 28413,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/277.json",
+      "sha256": "06729782e61ad25c8d5caf5d697e0a0caeccce43b5c3c16940937203d4250f0b"
+    },
+    {
+      "bytes": 28744,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/278.json",
+      "sha256": "7ab664444477ffc739462d48ed299a3210d642307f28b0be801f4cd865bd18fb"
+    },
+    {
+      "bytes": 28171,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/279.json",
+      "sha256": "2c5c3b12da2ec8d9c2d9e9edbd4624426b36155f9ecdf7c6ab17d0dfc5692ad5"
+    },
+    {
+      "bytes": 28966,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/280.json",
+      "sha256": "d0d5e50388dd3781135c94d6d458674461aadc34582faf61ed50c85328e6cfc7"
+    },
+    {
+      "bytes": 28200,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/281.json",
+      "sha256": "ef22aae024248b595c32a6cdefd133f7dc8ab97159b48608da3667b6b254f25c"
+    },
+    {
+      "bytes": 28168,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/282.json",
+      "sha256": "dbe56f756d8729f196b67e5e20c8b444bc8b2ced31b454d1a0467d50f0d4e019"
+    },
+    {
+      "bytes": 28704,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/283.json",
+      "sha256": "49939ca9c37753c5954dc222fb628be41e2f63b2c0bd1bed3b3f2f094966676f"
+    },
+    {
+      "bytes": 28245,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/284.json",
+      "sha256": "80b2aaae2a33cd65734a755fa7d587777c929784639590b466ceba1d6ec01885"
+    },
+    {
+      "bytes": 28210,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/285.json",
+      "sha256": "154c02fda3ad12e61bf8e873dc860caeeccfb3ea2603b03621f10ddb0c41d267"
+    },
+    {
+      "bytes": 27945,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/286.json",
+      "sha256": "e23bf8ee26881c19a054e2aee62060087a5eb7557577e2bc938c7ecd6671168c"
+    },
+    {
+      "bytes": 28474,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/287.json",
+      "sha256": "24608b6401bf603efb2977d129c36c7229c89eb0d5a9b12517c0bbd0ca3a6ed9"
+    },
+    {
+      "bytes": 28167,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/288.json",
+      "sha256": "eedf5c0487cef1091fa5be3ce2bcd9fe3dd1e06e669b79c8049e371e04dd60ef"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/289.json",
+      "sha256": "61150a3509e3feb6bcc5395eebdc2b8a1fc684e024c8acd4fd94f155507682f9"
+    },
+    {
+      "bytes": 27943,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/290.json",
+      "sha256": "7283a357a183a108f4516c3a7ada34a98886117a3af77058c007e60a7591981a"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/291.json",
+      "sha256": "3aff30c1a2ac1ad9bb7d69c51017f76198266095bd3346928844f6e84d6dc888"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/292.json",
+      "sha256": "381017ae5e218b8d632d6856fa0f70a0899c486b6d453425d04fcd4a853dd9a7"
+    },
+    {
+      "bytes": 28862,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/293.json",
+      "sha256": "9ef057577c6b3f62908b3c68fa8acc86a972e8ad64df8f4732932092442fd952"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/294.json",
+      "sha256": "80d62f2a920a72eda657fec4adc3b4bed008690d6051fff49af7eeaf87af7d64"
+    },
+    {
+      "bytes": 28188,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/295.json",
+      "sha256": "ed2f9d29452c115147c1771167984709deba94323044e1531886233ef667c4c0"
+    },
+    {
+      "bytes": 28426,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/296.json",
+      "sha256": "87de1e0747d3cbd747ebb27365ca52e6dbf8c8448bd70518cdf73c677a8674f6"
+    },
+    {
+      "bytes": 28214,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/297.json",
+      "sha256": "84352bd67342dd3a5dddaf017d9a8cee84b1d7b9cb7f106a15cc6f94fa0967b1"
+    },
+    {
+      "bytes": 27708,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/298.json",
+      "sha256": "5ad0bf7126f7f88d48e1668faf8bbaa67df1d47b59c7d80b6264c3ef2786fb20"
+    },
+    {
+      "bytes": 28172,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/299.json",
+      "sha256": "1531c4ef198fb2090885527394c63ba82bcf0e111ab7de3719a5278ec19adf62"
+    },
+    {
+      "bytes": 28170,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/states/300.json",
+      "sha256": "747f69d88b31d39db3efa817ce9155add2ac41b03e3768aa676d3b53861233a4"
+    },
+    {
+      "bytes": 15243,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/worker.log",
+      "sha256": "de379d961c9d38618e38163251e1de5837dcbdcfa12c913d0d83eca36ae0059a"
+    },
+    {
+      "bytes": 967,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-11952-113-adaptive-v1/worker.supervisor.json",
+      "sha256": "8c82c4ea7536df1f5dac2b55b4b540b04caffeeb539c3649d21a8d1f7c0352b1"
+    },
+    {
+      "bytes": 0,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-followups-v1/103b2-733-freeze.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 967,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-followups-v1/103b2-733-freeze.supervisor.json",
+      "sha256": "dc893c2e605d9d4eb0d8110e295b40e5ffc63e568324c241f9695b4dd2d66c08"
+    },
+    {
+      "bytes": 0,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-followups-v1/11952-113-freeze.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 967,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-followups-v1/11952-113-freeze.supervisor.json",
+      "sha256": "2d13dcd606b1b74d8f3faa1b8b5ab853a7759bdbd6418ca9585c8cf57d579ca1"
+    },
+    {
+      "bytes": 8274,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-followups-v1/ledger.json",
+      "sha256": "e451e2a67a05295a2d34457f37000091f8314b24122c90a048050a1c3be4c0a4"
+    },
+    {
+      "bytes": 1094,
+      "path": "artifacts/local/elliptic-curves/retention-rank27-followups-v1/protocol.json",
+      "sha256": "c2f7d767a776f01e3d2b939a1652bab6db5d9ed8c5caa5df8af6048d94dd75a6"
+    },
+    {
+      "bytes": 4548,
+      "path": "elliptic-curves/cas/audit_retention_rank27_followup.py",
+      "sha256": "30969907d13fc4a49bc6c2674791b83b5b06bb9625543f336819137594fa481a"
+    },
+    {
+      "bytes": 11104,
+      "path": "elliptic-curves/cas/followup_retention_rank27.py",
+      "sha256": "40578cbe1b3e5346b7ac101d08ffded82d912d02a39ae573cc1bec091ecc3452"
+    },
+    {
+      "bytes": 4678,
+      "path": "elliptic-curves/cas/package_retention_rank27_followup.py",
+      "sha256": "0e771da5941a9e3175fce8f5f04bc452f6d4306c8e94070ee4fc48f6725b9aab"
+    },
+    {
+      "bytes": 2218,
+      "path": "elliptic-curves/cas/prepare_retention_rank27_adaptive.sage",
+      "sha256": "7df24464ffc1110b4a3e319008862b47f12fde92cd53c4f2d2621e041f1d6644"
+    },
+    {
+      "bytes": 2274,
+      "path": "elliptic-curves/cas/replay_retention_rank27_followup_geometry.py",
+      "sha256": "d24d10b522b0b3a01d9617f3d6d8b851d5a1684db5b22338b783595f78640513"
+    },
+    {
+      "bytes": 3332,
+      "path": "elliptic-curves/cas/verify_retention_rank27_followup_bundle.py",
+      "sha256": "11ee7edaae083b91fb83a43aad2449136635b284b501bfb67122375925c4792c"
+    },
+    {
+      "bytes": 1907,
+      "path": "elliptic-curves/notes/RETENTION_RANK27_FOLLOWUPS_2026-09-06.md",
+      "sha256": "0182916245ce60f405f3ff0fec16b053c28d025ea667a5c59e413c20ac21b60f"
+    },
+    {
+      "bytes": 6622,
+      "path": "elliptic-curves/notes/WIDER_RETENTION_DISCOVERIES_2026-09-06.md",
+      "sha256": "5a8193b1b28ac3f537ca627c06e116bcedfde0f04e43776ef9cbe6f99960b2c7"
+    }
+  ],
+  "inherited_exact_members": [
+    {
+      "bytes": 42032382,
+      "path": "artifacts/local/elliptic-curves/compact-r17-fresh-generic-census-v1/103b2/generic-census.json",
+      "sha256": "d958da353d9a84ef447933d433e543a9e60cef810a03995b04448d00822ae3dc"
+    },
+    {
+      "bytes": 42036434,
+      "path": "artifacts/local/elliptic-curves/compact-r17-fresh-generic-census-v1/11952/generic-census.json",
+      "sha256": "de6b96f473d7da85e9487acd6e51db9bd3dad160cf1d052cd556e7bcc720318f"
+    },
+    {
+      "bytes": 11435468,
+      "path": "artifacts/local/elliptic-curves/retention24-r17-pari-v1/103b2-733/result.json",
+      "sha256": "fd3259c3dc4a42cf8e13573f7a1e279688c3a353c6047b35035c384d568d6f5e"
+    },
+    {
+      "bytes": 11634135,
+      "path": "artifacts/local/elliptic-curves/retention24-r17-pari-v1/11952-113/result.json",
+      "sha256": "eccd538a34b6156627a2bc75d9686cd7f2199caef1e4ad30ff8abf56a01df5d2"
+    },
+    {
+      "bytes": 9593,
+      "path": "elliptic-curves/cas/alternate_quartic_covers.py",
+      "sha256": "598f7556333c9d8462f251d97a6d132e0bd672a11861f8c2f142fc4588abe9e5"
+    },
+    {
+      "bytes": 14235,
+      "path": "elliptic-curves/cas/analyze_icarm_7fff_zip_sequence.py",
+      "sha256": "2957bb20d4fbcde1adfedf29fb211d8f3aa584a37a5719694d13e9313a1e7ed5"
+    },
+    {
+      "bytes": 6443,
+      "path": "elliptic-curves/cas/audit_compact_r17_ambiguous.py",
+      "sha256": "2fcef5457ab8efd67fa6dd473949823653901b533c3862d3ba4d83fd4cd2fb01"
+    },
+    {
+      "bytes": 7019,
+      "path": "elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+      "sha256": "5f63d2a929a1b10c3413189b3d7e7ac6be0216dfd80a0da1cc8bc52d934af93f"
+    },
+    {
+      "bytes": 4512,
+      "path": "elliptic-curves/cas/audit_retained_cloud_modl.py",
+      "sha256": "9922a557d96f692f01d8a7c834826212928b515eaf66b13507c50cd9a59d3206"
+    },
+    {
+      "bytes": 5134,
+      "path": "elliptic-curves/cas/benchmark_r17_extended_prime_traces.py",
+      "sha256": "0239593edaa2e1dd19a5ac0fe18652cd0ccb7cddeb9046c40fa3da7f9e97d47d"
+    },
+    {
+      "bytes": 6732,
+      "path": "elliptic-curves/cas/benchmark_r17_retention512.py",
+      "sha256": "a653c4bf6e4396aac13e3f5003e5909ed5b2a12ed06142fa5ad55c9e7592a749"
+    },
+    {
+      "bytes": 18239,
+      "path": "elliptic-curves/cas/build_elkies_2026_rank28_bad_place_ledger.py",
+      "sha256": "08222418ef223f787f83a9ea37bd3cc9ca4744e7d72b8b2d874da04dc7fd262d"
+    },
+    {
+      "bytes": 30238,
+      "path": "elliptic-curves/cas/build_elkies_2026_relative_2selmer_suite.py",
+      "sha256": "bf3b22cae0e429196101083f70862bf549189ac8cfa6ded402b95ccc55dbcf26"
+    },
+    {
+      "bytes": 13165,
+      "path": "elliptic-curves/cas/build_q12o5867_bnf_free_signature.py",
+      "sha256": "721f6c6f250fca9afdbc3034390558edaf90e515f146e66ec3eb780c689828b0"
+    },
+    {
+      "bytes": 8974,
+      "path": "elliptic-curves/cas/certify_compact_r17_candidates.py",
+      "sha256": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9"
+    },
+    {
+      "bytes": 1751,
+      "path": "elliptic-curves/cas/compact_atlas_specialization.py",
+      "sha256": "ea68110968e86cb0502a74a995c26054ff8e4a0da90c49bb2bdf0b753a759b14"
+    },
+    {
+      "bytes": 14246,
+      "path": "elliptic-curves/cas/ek_k3.py",
+      "sha256": "53b96064afee80c102bf149242754ed98afc85b5bf3c422429d1f23c9db68f0f"
+    },
+    {
+      "bytes": 21409,
+      "path": "elliptic-curves/cas/elliptic_candidate_record.py",
+      "sha256": "5b9f6f843d48e705253404a5583ef53966c72c7f229c68ef17c6b848f5e94af3"
+    },
+    {
+      "bytes": 7419,
+      "path": "elliptic-curves/cas/extend_retained_r17_prime_scores.py",
+      "sha256": "c7b1262544a9791f842b5a06b2524d9bf57e0983f2a6d867eda216b14eb33767"
+    },
+    {
+      "bytes": 8479,
+      "path": "elliptic-curves/cas/extend_retention512_r17_scores.py",
+      "sha256": "7dcc70f14aa1ddb016efb63e25d7abc5869807319487a440a443a9a863d95b55"
+    },
+    {
+      "bytes": 14700,
+      "path": "elliptic-curves/cas/fermigier_mestre.py",
+      "sha256": "6932c04fa699683ec112f25801adaa74ccb5e16dfa789b28ad56abf720c51090"
+    },
+    {
+      "bytes": 12316,
+      "path": "elliptic-curves/cas/fresh_r17_pari_batch.py",
+      "sha256": "18a5b22b1608af3e20003debb39e1c588234767e22d7d3f0f25a1c723fb38a2f"
+    },
+    {
+      "bytes": 15983,
+      "path": "elliptic-curves/cas/half_lattice_pointed_sieve.py",
+      "sha256": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4"
+    },
+    {
+      "bytes": 1493,
+      "path": "elliptic-curves/cas/memory_rank_certificate.py",
+      "sha256": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6"
+    },
+    {
+      "bytes": 8101,
+      "path": "elliptic-curves/cas/mod2_reduction_independence.py",
+      "sha256": "c5963952d1a9089416479671b788b6437dbba26591d796646022f4e9dddd0c70"
+    },
+    {
+      "bytes": 10228,
+      "path": "elliptic-curves/cas/mod_l_reduction_independence.py",
+      "sha256": "93cdef9eb9053987d0aa85abff2d6e1d487caa827b43a7c00d0b8a43395063f0"
+    },
+    {
+      "bytes": 5787,
+      "path": "elliptic-curves/cas/package_recorded_mod2_audit.py",
+      "sha256": "aac478e8abe4221a4cbf38c2d4ae52866bb61c9c3249b7572da45846f1a7e8df"
+    },
+    {
+      "bytes": 6409,
+      "path": "elliptic-curves/cas/pari_bridge.py",
+      "sha256": "d8c40e3c1b0f9eeb78e2f4b01aa2f3d5f793bfb35956c5846b2312da90132e45"
+    },
+    {
+      "bytes": 6536,
+      "path": "elliptic-curves/cas/pari_pointed_backend.py",
+      "sha256": "895c0f3c14eefc2537ef1aca4354719e47ce2a7cd09fcf2e83f2c44cc60733de"
+    },
+    {
+      "bytes": 20080,
+      "path": "elliptic-curves/cas/pointed_quartic_search.py",
+      "sha256": "01c40a10cbe31f4439c4f2dacf7e2e5831f8bd6b83079933c9d506b6a25d1ff9"
+    },
+    {
+      "bytes": 7157,
+      "path": "elliptic-curves/cas/pointed_quartic_sieve.cpp",
+      "sha256": "7a015c85e54e14f16848626b154236132e34c0e42315242959a0be59e2de97a4"
+    },
+    {
+      "bytes": 4521,
+      "path": "elliptic-curves/cas/prepare_fresh_r17_pari_batch.sage",
+      "sha256": "0647e6e0f8f9364163517e8a725963406b1aa0b0ab5519e4edc85c758b2763b6"
+    },
+    {
+      "bytes": 9767,
+      "path": "elliptic-curves/cas/production_search_gates.py",
+      "sha256": "4770ce8930623f5b5dcb631b8fc9dc1c5a1fd8f7862f557d943f8b8fb375e337"
+    },
+    {
+      "bytes": 4394,
+      "path": "elliptic-curves/cas/prospective_half_lattice_v2.sage",
+      "sha256": "4d06eef3eb078116989b4df7df0afe8333da78d0d2e9ce010f1e0da8fc7a41bb"
+    },
+    {
+      "bytes": 5221,
+      "path": "elliptic-curves/cas/replay_retention24_geometry.py",
+      "sha256": "341b3ede2ecd39cbfdf8ad009c0db8bba42afa0a01ab2d6dfd767a2898075f05"
+    },
+    {
+      "bytes": 207,
+      "path": "elliptic-curves/cas/research_runtime/__init__.py",
+      "sha256": "fcf27db31ec58866898e7e014861f8a566dd5f65c276f205e99ff64bd793a45e"
+    },
+    {
+      "bytes": 8430,
+      "path": "elliptic-curves/cas/research_runtime/arithmetic.py",
+      "sha256": "f304317492824cf149c88b5814e68cdd0bffb0542a3d8db7bb4d9f3ec988802b"
+    },
+    {
+      "bytes": 3191,
+      "path": "elliptic-curves/cas/research_runtime/binary.py",
+      "sha256": "9956f4b5236d8ad2260018182eebfa18bcd8ced7fdc92ffa6023ad9da7d9dd99"
+    },
+    {
+      "bytes": 4074,
+      "path": "elliptic-curves/cas/research_runtime/cached_observation_state.py",
+      "sha256": "c1480925932b0cf86c0392cb796e9f83d278e84fc0a769ad031e93a8a68d43a7"
+    },
+    {
+      "bytes": 7407,
+      "path": "elliptic-curves/cas/research_runtime/chart_policy.py",
+      "sha256": "0a9212fdaaa3a6abcd09034c003eed0d48bdb258d3161bcee6685607f87b21ad"
+    },
+    {
+      "bytes": 9303,
+      "path": "elliptic-curves/cas/research_runtime/cvp.py",
+      "sha256": "83d9d87e9f465acffb48c3a5400ded28d10382f7c690492fb8dc998775767c8a"
+    },
+    {
+      "bytes": 3714,
+      "path": "elliptic-curves/cas/research_runtime/deep_centres.py",
+      "sha256": "4dd57a7e5a254eba1f7cffed9dd62838cf7607b54a0ae29c162b4cc3d282799a"
+    },
+    {
+      "bytes": 2626,
+      "path": "elliptic-curves/cas/research_runtime/finite_fields.py",
+      "sha256": "24be713a49328db4eb8409e5023fafff3dfb638e4cb56151444abd631eb055ef"
+    },
+    {
+      "bytes": 9211,
+      "path": "elliptic-curves/cas/research_runtime/finite_reduction.py",
+      "sha256": "467609d4a1003127a9dcfb5ff3cd911d3748f5c5c5ff68a43f09db0de9b69992"
+    },
+    {
+      "bytes": 3463,
+      "path": "elliptic-curves/cas/research_runtime/fisher.py",
+      "sha256": "fb8cf017ade457f4680ba8aa7cda0e57dab2f1fba6ab3fcfb99bb4b1bf256a5c"
+    },
+    {
+      "bytes": 10982,
+      "path": "elliptic-curves/cas/research_runtime/function_field_witness.py",
+      "sha256": "f952ccde7737327d8a30d09917b91f6d273074661eea86ab9bfee620998e9b90"
+    },
+    {
+      "bytes": 4543,
+      "path": "elliptic-curves/cas/research_runtime/local_kummer.py",
+      "sha256": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e"
+    },
+    {
+      "bytes": 3015,
+      "path": "elliptic-curves/cas/research_runtime/memory_store.py",
+      "sha256": "0ce81817fc94949864b2f653e9ece207d666d61fbdabeb56f52e044bb83dd873"
+    },
+    {
+      "bytes": 10208,
+      "path": "elliptic-curves/cas/research_runtime/mw_state.py",
+      "sha256": "e53c24a786afe1096a3bc90eff94396b1b3b6b1fd3ec52c24e51c69622b4596d"
+    },
+    {
+      "bytes": 5613,
+      "path": "elliptic-curves/cas/research_runtime/pari_context.py",
+      "sha256": "20db26886dc17baf4ae7ab7c43d669bc53a07c953a8e99b94435fe7846e8acaa"
+    },
+    {
+      "bytes": 2333,
+      "path": "elliptic-curves/cas/research_runtime/pointed_orbit_compression.py",
+      "sha256": "23f69a9b9aedc040c0a2d97e2b1f722c00a97a1a26702b04a94fba8d1ed3914c"
+    },
+    {
+      "bytes": 3967,
+      "path": "elliptic-curves/cas/research_runtime/pointed_worker.py",
+      "sha256": "7126cac4ed8bbfd7015476670b61fc317649700436b92e072a21d1bac4695ddf"
+    },
+    {
+      "bytes": 1045,
+      "path": "elliptic-curves/cas/research_runtime/preloaded_prime_state.py",
+      "sha256": "584b340f730b12a6f4cd8f6b6e7f248c7bce5acfafb3b4d89ff4b43f737102ed"
+    },
+    {
+      "bytes": 9660,
+      "path": "elliptic-curves/cas/research_runtime/pruning.py",
+      "sha256": "9f5748f7a6fe0d06befab7d596b7469b2180331416ac2d039fd7f636ed91b7c6"
+    },
+    {
+      "bytes": 1863,
+      "path": "elliptic-curves/cas/research_runtime/quotient_only_reduction.py",
+      "sha256": "b47036dd2d5882a8bdccfb9095fb11c543ddc8e209e487d6c7afdf8a8d06986a"
+    },
+    {
+      "bytes": 9450,
+      "path": "elliptic-curves/cas/research_runtime/regulator.py",
+      "sha256": "aa4bdc99095199936417058f46ee2fd0d48acd497676f46c5d0456e7865be970"
+    },
+    {
+      "bytes": 829,
+      "path": "elliptic-curves/cas/research_runtime/rotated_observation_state.py",
+      "sha256": "3568529c9513db8fe56d8622ec7c7eae9dbedef4a160836a8db63aba58f2c9ab"
+    },
+    {
+      "bytes": 25277,
+      "path": "elliptic-curves/cas/research_runtime/sage_arithmetic.py",
+      "sha256": "105fc55cc851c0b60d1132e3f0afbac8c872344d7d17c3d2610c1b24390f4dd1"
+    },
+    {
+      "bytes": 28373,
+      "path": "elliptic-curves/cas/research_runtime/sage_subspace.py",
+      "sha256": "86fd5f87fa773bb817e3f19e3847e9188a7071b41bc3d8adb81b21c804fb6cf5"
+    },
+    {
+      "bytes": 5172,
+      "path": "elliptic-curves/cas/research_runtime/sage_surface.py",
+      "sha256": "43942f606c97580a324f4e22d6c771eb5ca8264953ceca8e29aced7afffd0418"
+    },
+    {
+      "bytes": 3309,
+      "path": "elliptic-curves/cas/research_runtime/search_state.py",
+      "sha256": "598a2177fa1cdd5b45c801c09adcc4ac51bd2a87152b7982ea70e78585f8671c"
+    },
+    {
+      "bytes": 4351,
+      "path": "elliptic-curves/cas/research_runtime/section_gate.py",
+      "sha256": "df5fd619731f2bcc08df2c24806fa479b68879792ca84a5a972ca0cf122ae2ed"
+    },
+    {
+      "bytes": 4039,
+      "path": "elliptic-curves/cas/research_runtime/simon.py",
+      "sha256": "08d7ef9a7443f8268aee0b0799e290494e79a1532828c73345432259887e644e"
+    },
+    {
+      "bytes": 8233,
+      "path": "elliptic-curves/cas/research_runtime/store.py",
+      "sha256": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965"
+    },
+    {
+      "bytes": 9744,
+      "path": "elliptic-curves/cas/research_runtime/subspace.py",
+      "sha256": "2ce4a9f7d688a2a4581d844dd3663fb7fae63904d167caecef4af6bc6cfd2534"
+    },
+    {
+      "bytes": 20249,
+      "path": "elliptic-curves/cas/research_runtime/supervisor.py",
+      "sha256": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233"
+    },
+    {
+      "bytes": 4954,
+      "path": "elliptic-curves/cas/research_runtime/surface_repository.py",
+      "sha256": "3d3d9f28b2605c248c021a4ed8490d815cd16ac233923ece899ff940ec3e16af"
+    },
+    {
+      "bytes": 5670,
+      "path": "elliptic-curves/cas/research_runtime/toric_surface.py",
+      "sha256": "b8e1d5329c32402b693b27e61887c30eb6cf1606043a5f1048ffc6dd7d6606ab"
+    },
+    {
+      "bytes": 2717,
+      "path": "elliptic-curves/cas/research_runtime/witnesses.py",
+      "sha256": "e6ea79fabb7d16e179d5ea347a2006e19193f910a3c6d56940c73ff8dbce2619"
+    },
+    {
+      "bytes": 6838,
+      "path": "elliptic-curves/cas/retain512_compact_r17.py",
+      "sha256": "66437e97f00f40f6c2c20548c85ee51fbb608b1d773077b64468f7394990ec45"
+    },
+    {
+      "bytes": 13917,
+      "path": "elliptic-curves/cas/retention24_r17_pari_batch.py",
+      "sha256": "e011e226bca10d54242b11ac80cd702c01ec49e1df3df74de6ad6477c23cf035"
+    },
+    {
+      "bytes": 51705,
+      "path": "elliptic-curves/cas/run_elkies_2026_relative_2selmer_checkpointed.py",
+      "sha256": "1e674eb42122784c580777b782ffee1c737c1bc9788ba00b47a09777e26b1477"
+    },
+    {
+      "bytes": 27525,
+      "path": "elliptic-curves/cas/run_elkies_2026_relative_2selmer_open.py",
+      "sha256": "158bd9c13fb583d5ffa4f3363063703b7e0014c996ccc8bdcd273fbdcf08e944"
+    },
+    {
+      "bytes": 13126,
+      "path": "elliptic-curves/cas/run_fermigier_rank20_auxiliary_fingerprints.py",
+      "sha256": "b8bab575cc8109a9f64256b77b0e340d87fe741718fb46f0f0ecff80c3857d17"
+    },
+    {
+      "bytes": 15562,
+      "path": "elliptic-curves/cas/run_fermigier_rank20_pari_descent.py",
+      "sha256": "ac7759f2dc16816251c791b60df7e4e6e41473656660c7e253141d576f536f5a"
+    },
+    {
+      "bytes": 14648,
+      "path": "elliptic-curves/cas/search_extra_points.py",
+      "sha256": "8719a8868f60a055ecfc2c68e95b253386a0f5e856c2686749bd8d8e1f83775e"
+    },
+    {
+      "bytes": 10390,
+      "path": "elliptic-curves/cas/search_observability.py",
+      "sha256": "b6189a0cee9805336609f413b2dd8ccb38263c2d594131aabf3b0555a9c04b58"
+    },
+    {
+      "bytes": 6961,
+      "path": "elliptic-curves/cas/select_compact_r17_wide.py",
+      "sha256": "319ec3d6f33106698b48c0f7ef46a54e303d647bb6c674af9fed4932b5394c83"
+    },
+    {
+      "bytes": 14716,
+      "path": "elliptic-curves/cas/verify_icarm_curve394_rank21.py",
+      "sha256": "3868a6e6b5fa6134949d92a4f1aaa526cd42f50335109f02aefab58bb52968b0"
+    },
+    {
+      "bytes": 25600,
+      "path": "elliptic-curves/ecsearch/q12o5867_specialization.py",
+      "sha256": "a9911a9fd0a295f9e399436006d6d1f7bcd204778b577a4fead5def04df5dfa7"
+    }
+  ],
+  "required_base_archives": [
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/compact_r17_wide_evidence_v1.zip",
+      "archive_sha256": "d54b2a494a8bd3841700379aa28ef32366730bbc1bb208d5e03285786ff8a01a",
+      "manifest": "artifacts/generated-results/elliptic-curves/compact_r17_wide_evidence_v1.json",
+      "manifest_sha256": "c1f1f5262df6b9ec0218d38fd553e1d3fd467b6f5362ce8462279f34a77b238d"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/new_rank26_followup_evidence_v1.zip",
+      "archive_sha256": "202f421f4fbadb5d5ba0c5911883214c2ee9269ca79844e4bf1795fae0b77594",
+      "manifest": "artifacts/generated-results/elliptic-curves/new_rank26_followup_evidence_v1.json",
+      "manifest_sha256": "247675cc39e6816eab66d273b4375b140af2a73a1c41e7418e47c72edf2de030"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/exact_parity_coordinate_evidence_v1.zip",
+      "archive_sha256": "f6caba4eef5b22e0eedf242b47cba7c99a16e4e2cba9aae0102d1e92ce4f4a46",
+      "manifest": "artifacts/generated-results/elliptic-curves/exact_parity_coordinate_evidence_v1.json",
+      "manifest_sha256": "e936d77fa42c0358cddb5b6407e9b99b4922647b63907f80cb8b3a7486cc549c"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/small_conductor_followup_evidence_v1.zip",
+      "archive_sha256": "b355fd65496388e4e3b9a4c2bbce1b9af7f5573ee9a9efd64ceed1668028935f",
+      "manifest": "artifacts/generated-results/elliptic-curves/small_conductor_followup_evidence_v1.json",
+      "manifest_sha256": "43f27e5cf5d32122d6d19778bba34cb2d64f1b6e975bd70ed23f220ceba127a3"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/fast_point_pipeline_evidence_v1.zip",
+      "archive_sha256": "2108d6d5c21b04757c87dc7ef5369f7894e57569d0c7c61b74c998bf5bffc69d",
+      "manifest": "artifacts/generated-results/elliptic-curves/fast_point_pipeline_evidence_v1.json",
+      "manifest_sha256": "a2a3382767547e1be9fc6f9a3f7f33a1d316ff05cfbd03793e34bcfca2a9e431"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/paired_rank27_discovery_evidence_v1.zip",
+      "archive_sha256": "cf884ab414618e8df2ded9e6f037ca46eb28fa449286ce5e9e22b152446033f3",
+      "manifest": "artifacts/generated-results/elliptic-curves/paired_rank27_discovery_evidence_v1.json",
+      "manifest_sha256": "6218d541ec5f3588f6df81a131ae96524168c68cddb9376efc31c430f71fa2ec"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/latest8_cross_family_evidence_v1.zip",
+      "archive_sha256": "221a5a2a719308fc61684b32699669959fb95952a04852ff2d143ffa6cea0ee7",
+      "manifest": "artifacts/generated-results/elliptic-curves/latest8_cross_family_evidence_v1.json",
+      "manifest_sha256": "8636987a23d8308e1ba6e5810da609f96af003fc08f70e0ea06b7b34ba222989"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/paired_rank27_inventory_replay_evidence_v2.zip",
+      "archive_sha256": "53ca4e9dbb8d24c53f9979b875adc7e6b7d78e440961f3050470dafcd89dc0d9",
+      "manifest": "artifacts/generated-results/elliptic-curves/paired_rank27_inventory_replay_evidence_v2.json",
+      "manifest_sha256": "b9d1ce027e5c6eaa76da1f78fb1391cd3aee858adfd5fb514a7ca9f002c7485d"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/next24_discovery_evidence_v1.zip",
+      "archive_sha256": "57f6c328f25d3c3426746a6fe5e2c9e08ddf9e8eaa046b1c0aef9c32d0e72097",
+      "manifest": "artifacts/generated-results/elliptic-curves/next24_discovery_evidence_v1.json",
+      "manifest_sha256": "9e145fdcaf4fcbc3690c13f5476b50f01e08a486c106f905428ab1b1be124c64"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/height_and_discarded_evidence_v1.zip",
+      "archive_sha256": "9da2377f22a55fb681350dd8d56a6456705d3ca6a3b2a4f3d141ad29e254b3da",
+      "manifest": "artifacts/generated-results/elliptic-curves/height_and_discarded_evidence_v1.json",
+      "manifest_sha256": "569c48d08b635c46b56cf0b756afe8669c180e391b621187c247b551f66a1c15"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/retention24_discovery_evidence_v1.zip",
+      "archive_sha256": "107c391bf0ceec289c5fcd93b0b9715f8dd8475298b3a21435c25e90a0ce47f9",
+      "manifest": "artifacts/generated-results/elliptic-curves/retention24_discovery_evidence_v1.json",
+      "manifest_sha256": "e0ac29b3f0ec27beaa85f8ba41f5ef93db27f6529db6bf2605ec1a2c69cad81a"
+    }
+  ],
+  "schema": "elliptic-curves.retention-rank27-followup-evidence.v1"
+}

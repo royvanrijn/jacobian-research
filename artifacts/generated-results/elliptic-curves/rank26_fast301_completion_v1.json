@@ -1,0 +1,1825 @@
+{
+  "attempted_maps": 301,
+  "case": "rank26",
+  "claim_boundary": "Disjoint fixed adaptive map roster and replayed retained histories. Complete finite coverage trusts pinned PARI invocations; neither finite completion nor a miss supplies a rank upper bound.",
+  "complete_finite_boxes": 301,
+  "coverage": [
+    {
+      "chart": 0,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 1,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 2,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 3,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 4,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 5,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 6,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 7,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 8,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 9,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 10,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 11,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 12,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 13,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 14,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 15,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 16,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 17,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 18,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 19,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 20,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 21,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 22,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 23,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 24,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 25,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 26,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 27,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 28,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 29,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 30,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 31,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 32,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 33,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 34,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 35,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 36,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 37,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 38,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 39,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 40,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 41,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 42,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 43,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 44,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 45,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 46,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 47,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 48,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 49,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 50,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 51,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 52,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 53,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 54,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 55,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 56,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 57,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 58,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 59,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 60,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 61,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 62,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 63,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 64,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 65,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 66,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 67,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 68,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 69,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 70,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 71,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 72,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 73,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 74,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 75,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 76,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 77,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 78,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 79,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 80,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 81,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 82,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 83,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 84,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 85,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 86,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 87,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 88,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 89,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 90,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 91,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 92,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 93,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 94,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 95,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 96,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 97,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 98,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 99,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 100,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 101,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 102,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 103,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 104,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 105,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 106,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 107,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 108,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 109,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 110,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 111,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 112,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 113,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 114,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 115,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 116,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 117,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 118,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 119,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 120,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 121,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 122,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 123,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 124,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 125,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 126,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 127,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 128,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 129,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 130,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 131,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 132,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 133,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 134,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 135,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 136,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 137,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 138,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 139,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 140,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 141,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 142,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 143,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 144,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 145,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 146,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 147,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 148,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 149,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 150,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 151,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 152,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 153,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 154,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 155,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 156,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 157,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 158,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 159,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 160,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 161,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 162,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 163,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 164,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 165,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 166,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 167,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 168,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 169,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 170,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 171,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 172,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 173,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 174,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 175,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 176,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 177,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 178,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 179,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 180,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 181,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 182,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 183,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 184,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 185,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 186,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 187,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 188,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 189,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 190,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 191,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 192,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 193,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 194,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 195,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 196,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 197,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 198,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 199,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 200,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 201,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 202,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 203,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 204,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 205,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 206,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 207,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 208,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 209,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 210,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 211,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 212,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 213,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 214,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 215,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 216,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 217,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 218,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 219,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 220,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 221,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 222,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 223,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 224,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 225,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 226,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 227,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 228,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 229,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 230,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 231,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 232,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 233,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 234,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 235,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 236,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 237,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 238,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 239,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 240,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 241,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 242,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 243,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 244,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 245,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 246,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 247,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 248,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 249,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 250,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 251,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 252,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 253,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 254,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 255,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 256,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 257,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 258,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 259,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 260,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 261,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 262,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 263,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 264,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 265,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 266,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 267,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 268,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 269,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 270,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 271,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 272,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 273,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 274,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 275,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 276,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 277,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 278,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 279,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 280,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 281,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 282,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 283,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 284,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 285,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 286,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 287,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 288,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 289,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 290,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 291,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 292,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 293,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 294,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 295,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 296,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 297,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 298,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 299,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    },
+    {
+      "chart": 300,
+      "height": 100000,
+      "infinity_checked": true,
+      "status": "bounded_search_complete"
+    }
+  ],
+  "planned_adaptive_maps": 301,
+  "schema": "elliptic-curves.fixed-pari-adaptive-completion.v1",
+  "sources": {
+    "artifacts/local/elliptic-curves/new-rank26-adaptive-pari-maps-v1/maps.json": "22d03ff0c7ed215e1c57854a8301edeff855917e84997d47aedceefc89bf98fb",
+    "artifacts/local/elliptic-curves/new-rank26-fast301-v1/candidate-00/result.json": "f342eb7de7f9a22651df53c76ad8b330380eafbb4d4632a9553024ad44f71433",
+    "artifacts/local/elliptic-curves/new-rank26-fast301-v1/verification/result.json": "b287f27ebbf1066da0bbdbb91b9170f0f685b7f50e01f63b6f37ee21f9d4fc30",
+    "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/candidate-00/result.json": "cab7e4fcebfc203d5fd9246c3b1d37b93433857f2f70436d62eb97f2f3df4924",
+    "artifacts/local/elliptic-curves/rank26-primebank-continuation-v1/verification/charts-result.json": "768a75f4c14f0c1d3cbd0de00879ede57e8c138e755d2a5deafb9e91611f1849",
+    "elliptic-curves/cas/audit_fixed_pari_completion.py": "4b30173f769a8b602265eec711773f8ba1ae675a51d92e8e5858466288cb9810"
+  },
+  "status": "PASS"
+}

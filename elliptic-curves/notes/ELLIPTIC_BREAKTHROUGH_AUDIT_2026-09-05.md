@@ -1,14 +1,15 @@
 # Elliptic-curve machinery audit and prospective results
 
-The [latest fixed MW16 follow-on](NEW_SMALL_CONDUCTOR_CURVE_2026-09-05.md)
-adds four curves with certified lower bounds 22–24, bringing the inventory to
-36 distinct curves absent from the refreshed 586-row ICARM snapshot.
-Its `3/17` curve has rank at least 22 and a proved exact 76-digit conductor,
-third among recorded rank-at-least-22 conductors in that snapshot. Four such
-catalogue entries lack conductor data. This is a low-conductor near-record
-result; exact rank and new rank-at-least-28/32 targets remain open.
-The [index](../../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v2.json)
-contains all 36 equations and point certificates.
+The [balanced wider R17 experiment](NEW_COMPACT_RANK26_CURVE_2026-09-05.md)
+adds one new curve of rank at least 26 and two of rank at least 25. Its six
+fresh generic parity censuses and all 1,032 point-chart records replayed.
+The [index](../../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v3.json)
+now contains 39 distinct curves absent from the pinned 586-row ICARM snapshot,
+with all equations and point certificates independently checked.
+The [small-conductor curve](NEW_SMALL_CONDUCTOR_CURVE_2026-09-05.md) remains
+rank at least 22 with a proved exact 76-digit conductor, third among recorded
+rank-at-least-22 conductors in that snapshot; four entries lack conductor data.
+Exact ranks and new rank-at-least-28/32 targets remain open.
 The original audit and earlier experiments below retain their own scopes.
 
 The first concrete outcome is [fifteen newly certified prospective curves of
@@ -161,7 +162,7 @@ are recorded separately as `EC-COMPACT-R17-NEW-CURVES-20260905`.
 
 | Programme | What is available | Missing endpoint that matters |
 |---|---|---|
-| Compact R17/MW17 | Six compact families, 102 exact generic sections and new lower bounds through 25; native known-rank controls | A distinct curve of rank at least 28, then 32; full fresh generic parity censuses for all six presentations and balanced wider searches remain separate unrun experiments |
+| Compact R17/MW17 | Six compact families, 102 exact generic sections, six fresh complete parity censuses and a balanced H4096 experiment yielding a new rank-at-least-26 curve | Two further certified directions on that curve would reach the rank28 near-record target; rank32 still needs six. The generic census proves representative norms, not exact CVP minima or specialized rank jumps |
 | A1/MW16 | Five compact fibrations, 80 exact sections and fifteen new curves with lower bounds 22–25 across the completed pilots and next-twelve follow-on | Prospective gains currently reach nine beyond MW16; rank 32 needs sixteen certified quotient directions. The new small-conductor rank22 fibre needs one further direction to beat the recorded rank23 conductor minimum |
 | Anchored MW18 | Exact rank-18 specializations and deep-centre diagnostics | Adaptive rather than initial-only recovery, and a point-producing extension that does not merely re-count the same anchor |
 | Fixed cubic / 2-Selmer / CT | Exact transported cohomology and insolubility results | Global rational points on surviving covers; a fixed cubic algebra does not preserve the old high-rank group |

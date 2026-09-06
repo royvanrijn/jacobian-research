@@ -1,0 +1,2635 @@
+{
+  "claim_boundary": "Retrospective descriptive comparison of two fixed24 candidate cohorts at identical125000/10-second per-chart exposure and eight mapped public successes. Exact j height and normalized coefficient bit sizes; global minimality only where the existing bounded gcd proof closes it. Point ranks are lower bounds from separately replayed proofs, public ranks remain catalogue metadata. Different selected populations and coefficient sizes confound causality: no density, calibrated rank predictor, rank upper bound or proof that misses result from poor visibility. No selection/refill or new point search occurs here.",
+  "groups": {
+    "higher_h32768_slices": {
+      "rank_lower_bound_counts": {
+        "17": 13,
+        "18": 3,
+        "19": 2,
+        "20": 2,
+        "21": 2,
+        "22": 1,
+        "25": 1
+      },
+      "rows": [
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "074d9",
+          "gp_cpu_ms": 24421,
+          "id": "074d9-023",
+          "invariant_gcd": 1,
+          "j_invariant": "-3080909601935154573835057046439381859002133656555145235684162642110539776574532465561030604504338754882011228891207572586367222503348358014756891028780096905414570162890503254321/3692524957132199680040325002247077770570845173936398435921628890156281722793470821934499266837598403094528942638464943966874657484466756731486798306207250244453740800000000",
+          "j_projective_height_bits": 590,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 286,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-3031459342139056032769340954684657042237022619226312514955",
+            "64309478924710984873375509356678236881067794224179959334511829072704012583163982071025"
+          ],
+          "parameter": "-19976/8597",
+          "parameter_height": 19976,
+          "rank_lower_bound": 17,
+          "retained_points": 245
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "074d9",
+          "gp_cpu_ms": 27362,
+          "id": "074d9-010",
+          "invariant_gcd": 121,
+          "j_invariant": "-29199224245014808311482630843195733085675349351160713338883316881973081500899417541211764591876366377356524557938783980158329456438332528859217235631633437892481/470744217960813063057827328538786866559404360641143809656110001889597182873345169419264994524107645903217909411506123557761526962049264286890056521728000000",
+          "j_projective_height_bits": 534,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                11,
+                2
+              ]
+            ],
+            "invariant_gcd": 121,
+            "local_exclusion_rows": [
+              {
+                "prime": 11,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  2,
+                  4
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 264,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-156942095597499394361238557453482767002048851377429955",
+            "24261851834351956596767545804379794581016957744717867497374337527160328743222977"
+          ],
+          "parameter": "19133/898",
+          "parameter_height": 19133,
+          "rank_lower_bound": 21,
+          "retained_points": 289
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "074d9",
+          "gp_cpu_ms": 21277,
+          "id": "074d9-489",
+          "invariant_gcd": 1,
+          "j_invariant": "3977075335151938209183772050582471004358669134889082961525187670743460638298769054557578053090035725062434908027251164255487926495162563370193857353854072934572401848283858959860510081/295126947109987897979589545003594335842801368876881176592846091663754390295739745909342908352624115346225272407101912187655067663751303952641573182037732170235183989567618611200000",
+          "j_projective_height_bits": 610,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 296,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-330075559792687364403702496220868245654404933627392421316120",
+            "68150522389561401281374038541893014256928736205999261140687115576628992732385607585870400"
+          ],
+          "parameter": "24665/12226",
+          "parameter_height": 24665,
+          "rank_lower_bound": 17,
+          "retained_points": 200
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "074d9",
+          "gp_cpu_ms": 26542,
+          "id": "074d9-117",
+          "invariant_gcd": 2561328,
+          "j_invariant": "-1174409782217008649279571789163830539601533282400886232001687973627016658758326495877026927789399918832178613046789279032165769070850584263258851022590259781163792490578896/45283090036926389291340036129747099063513981310999295255214442065220140998001981477297444358564298804611664536233795034301473422437966078951771488346955207546828359375",
+          "j_projective_height_bits": 569,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                7,
+                2
+              ],
+              [
+                11,
+                2
+              ]
+            ],
+            "invariant_gcd": 2561328,
+            "local_exclusion_rows": [
+              {
+                "prime": 2,
+                "valuations_c4_c6_discriminant": [
+                  4,
+                  6,
+                  8
+                ]
+              },
+              {
+                "prime": 3,
+                "valuations_c4_c6_discriminant": [
+                  3,
+                  7,
+                  6
+                ]
+              },
+              {
+                "prime": 7,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  4,
+                  6
+                ]
+              },
+              {
+                "prime": 11,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  2,
+                  4
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 299,
+          "normalized_integral_curve": [
+            "0",
+            "0",
+            "0",
+            "-1505708171802785642355594629161768008113421290027944986486927",
+            "734456230880519678802131893773748849725154740612157485087336542971426905261099172572841746"
+          ],
+          "parameter": "-30718/23381",
+          "parameter_height": 30718,
+          "rank_lower_bound": 17,
+          "retained_points": 211
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "07ca9",
+          "gp_cpu_ms": 28551,
+          "id": "07ca9-001",
+          "invariant_gcd": 1,
+          "j_invariant": "-169468956529849806438527940806518735370526830946712199673837851366127163993688295744716918185662660946250947020434511530589759672010350515874043509203031695898429178737639289681/702369110329923229580345269504769151619830815809879216949107642980554653567275132705996615848005771345885370690458689556984543862086744313677776313186715468711338957774848",
+          "j_projective_height_bits": 586,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 283,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-1152892501262501949015234181470106771574959592114612079645",
+            "15121015079352003215733625511348069277315393074061187923053531173311651679666443575601"
+          ],
+          "parameter": "-16565/12474",
+          "parameter_height": 16565,
+          "rank_lower_bound": 17,
+          "retained_points": 31
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "07ca9",
+          "gp_cpu_ms": 28595,
+          "id": "07ca9-905",
+          "invariant_gcd": 1083,
+          "j_invariant": "-112199826922099233154407023333503006598112020865380419840128044049549423065062398963372719449067282561706337132254361999600778611578537216034227376644171428241/2290851320932393280386541998438082126987253188433067653861286844511882374388554675426848515825633902401584859744538731821824350929632141594440663040000000",
+          "j_projective_height_bits": 526,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                3,
+                1
+              ],
+              [
+                19,
+                2
+              ]
+            ],
+            "invariant_gcd": 1083,
+            "local_exclusion_rows": [
+              {
+                "prime": 3,
+                "valuations_c4_c6_discriminant": [
+                  1,
+                  3,
+                  0
+                ]
+              },
+              {
+                "prime": 19,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  2,
+                  4
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 262,
+          "normalized_integral_curve": [
+            "1",
+            "-1",
+            "1",
+            "-50944146765835432290195845389634303477761534222273557",
+            "4503174783502096825619552435191351892257909007350317632846576934857880621548781"
+          ],
+          "parameter": "-31051/7930",
+          "parameter_height": 31051,
+          "rank_lower_bound": 20,
+          "retained_points": 81
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "07ca9",
+          "gp_cpu_ms": 23411,
+          "id": "07ca9-617",
+          "invariant_gcd": 8,
+          "j_invariant": "-395220934198913680234124661166419697358143980883595767011910134441245921491885011876477941368429460207661088997614613403277939713734859753978304923679225820281187616147033363964973056/3801161367859139466993328796370350008412924379773636358353404057984951781412554768029081668074910782466089436702945012937056368829020073021830549893115329527167897230629117783723",
+          "j_projective_height_bits": 607,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                2,
+                3
+              ]
+            ],
+            "invariant_gcd": 8,
+            "local_exclusion_rows": [
+              {
+                "prime": 2,
+                "valuations_c4_c6_discriminant": [
+                  4,
+                  3,
+                  0
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 294,
+          "normalized_integral_curve": [
+            "0",
+            "1",
+            "1",
+            "-152887534114514439384572829902652503015923311724256078418340",
+            "23199865289859157130478788847175533639839948753271586113336489606499108221568403304796420"
+          ],
+          "parameter": "29660/29399",
+          "parameter_height": 29660,
+          "rank_lower_bound": 17,
+          "retained_points": 21
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "07ca9",
+          "gp_cpu_ms": 21524,
+          "id": "07ca9-510",
+          "invariant_gcd": 3136,
+          "j_invariant": "-48116179577781193504953462268466750334867864024967200306860518847942700600514540372446414439117010477400104534618941602463645813977545377085418356824209312941056/43477616941697734182502908956600287773066863084893563228176587189236338725211054636884288140687790537012374194547958302984203621959934682280975416306395298723",
+          "j_projective_height_bits": 534,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                2,
+                6
+              ],
+              [
+                7,
+                2
+              ]
+            ],
+            "invariant_gcd": 3136,
+            "local_exclusion_rows": [
+              {
+                "prime": 2,
+                "valuations_c4_c6_discriminant": [
+                  6,
+                  7,
+                  8
+                ]
+              },
+              {
+                "prime": 7,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  2,
+                  4
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 268,
+          "normalized_integral_curve": [
+            "0",
+            "1",
+            "0",
+            "-644267934377141828007097059287721568489050806987747585",
+            "318557517783090015426773514364195519999218303571140200220157060564456316898010659"
+          ],
+          "parameter": "11205/21463",
+          "parameter_height": 21463,
+          "rank_lower_bound": 20,
+          "retained_points": 66
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "08234",
+          "gp_cpu_ms": 22373,
+          "id": "08234-711",
+          "invariant_gcd": 16,
+          "j_invariant": "180371449278646800555667464137217767724619547766530388280377650920237594476170694716307127429436849106424807315685406025561702372053161362840941735898640726153876176/6463402570998301807746828908354877267508896371201333728056888405801067687626541798723868664996134220138960498659007384552079722301093355910848320755884333578125",
+          "j_projective_height_bits": 546,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                2,
+                4
+              ]
+            ],
+            "invariant_gcd": 16,
+            "local_exclusion_rows": [
+              {
+                "prime": 2,
+                "valuations_c4_c6_discriminant": [
+                  4,
+                  6,
+                  8
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 268,
+          "normalized_integral_curve": [
+            "0",
+            "1",
+            "0",
+            "-747414208017103015158844836270408126019519711531765340",
+            "240885063318076410413739271930345885747830650643447417395360833499496131236328688"
+          ],
+          "parameter": "-17887/1827",
+          "parameter_height": 17887,
+          "rank_lower_bound": 18,
+          "retained_points": 109
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "08234",
+          "gp_cpu_ms": 23729,
+          "id": "08234-093",
+          "invariant_gcd": 27,
+          "j_invariant": "-4391257665781518572020251657424179696600738683654213355646894127262083502567678299504293194735469453380204080822405661579261890307187301793668200980535837909082105970318257236154631651864609/47480764281998330121887804591572681522872044698807884856731248325868004800578334976876245430656125780635452533303435618662233815898955025915807351673222003800719834281794018380567187500",
+          "j_projective_height_bits": 630,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                3,
+                3
+              ]
+            ],
+            "invariant_gcd": 27,
+            "local_exclusion_rows": [
+              {
+                "prime": 3,
+                "valuations_c4_c6_discriminant": [
+                  3,
+                  7,
+                  6
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 311,
+          "normalized_integral_curve": [
+            "1",
+            "-1",
+            "0",
+            "-307041853477550188921532268626582074313279098711609315667939394",
+            "2090086446529338272233600636679275120821810473742771931279623147756515854414032646673720116400"
+          ],
+          "parameter": "18803/8518",
+          "parameter_height": 18803,
+          "rank_lower_bound": 17,
+          "retained_points": 17
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "08234",
+          "gp_cpu_ms": 27558,
+          "id": "08234-005",
+          "invariant_gcd": 21168,
+          "j_invariant": "-15720049949968160827493717131606494269241896769543813293072741703394541327321302133078247332104796389399367874536509582895833109787174475145962657135078745704041349807005264/180713868790481246253715056822854153678214934265438959661818048898254915681988854431246085812634449154786959777362224928716048207483685614087331321281697648415065672387",
+          "j_projective_height_bits": 573,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                7,
+                2
+              ]
+            ],
+            "invariant_gcd": 21168,
+            "local_exclusion_rows": [
+              {
+                "prime": 2,
+                "valuations_c4_c6_discriminant": [
+                  4,
+                  6,
+                  8
+                ]
+              },
+              {
+                "prime": 3,
+                "valuations_c4_c6_discriminant": [
+                  3,
+                  9,
+                  6
+                ]
+              },
+              {
+                "prime": 7,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  2,
+                  4
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 291,
+          "normalized_integral_curve": [
+            "0",
+            "0",
+            "0",
+            "-39935882671130550435801594515501896367969600062129887200727",
+            "3102160890415208135859281510054357830622179420253219722781651562094263760379579970646650"
+          ],
+          "parameter": "-1411/7075",
+          "parameter_height": 7075,
+          "rank_lower_bound": 17,
+          "retained_points": 41
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "08234",
+          "gp_cpu_ms": 24535,
+          "id": "08234-446",
+          "invariant_gcd": 432,
+          "j_invariant": "-432862965357142535297141774454946248179770238872990040144506435148856443168925135213050415595635014129883830759294069204575888489122754431467625470561087751282891483918473658293003988780427146222907366224/4899059206138411913492811389102268096873980186690572538442584658064063113697491857895318241292083655898463880711803530934200724799540617436913191927402999943636150316389507991238730189830781808221875",
+          "j_projective_height_bits": 677,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "invariant_gcd": 432,
+            "local_exclusion_rows": [
+              {
+                "prime": 2,
+                "valuations_c4_c6_discriminant": [
+                  4,
+                  6,
+                  8
+                ]
+              },
+              {
+                "prime": 3,
+                "valuations_c4_c6_discriminant": [
+                  3,
+                  7,
+                  6
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 338,
+          "normalized_integral_curve": [
+            "0",
+            "0",
+            "0",
+            "-90059888289770547771125905899398471766904882688909834956536905046087",
+            "332162813867442765211735768891814802857125439887908591874097938509070637365945265103038798821780497834"
+          ],
+          "parameter": "-10147/28963",
+          "parameter_height": 28963,
+          "rank_lower_bound": 17,
+          "retained_points": 17
+        },
+        {
+          "charts": 49,
+          "completed_boxes": 49,
+          "family": "08f72",
+          "gp_cpu_ms": 33484,
+          "id": "08f72-058",
+          "invariant_gcd": 1,
+          "j_invariant": "-1135720555275863810901285517521661327886146882601537601115304734265103572826754693369352935788985226942029378052353468338370281984113010743410831319303757406387766249408951833869841/17878743373224970445817910404600746729739065116838656691620725089424129852906690153210248903123476069567862726070675291319391986318761252287704942346591147108252089451168022528",
+          "j_projective_height_bits": 599,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 290,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-21736148441555629278694905951500029894652248055772443262185",
+            "1250115212360624696175220301140269785313433871302059736117586877282653136686312085459801"
+          ],
+          "parameter": "-21677/7566",
+          "parameter_height": 21677,
+          "rank_lower_bound": 19,
+          "retained_points": 44
+        },
+        {
+          "charts": 49,
+          "completed_boxes": 49,
+          "family": "08f72",
+          "gp_cpu_ms": 30443,
+          "id": "08f72-088",
+          "invariant_gcd": 1,
+          "j_invariant": "1277418702432161424785754743313410641592327761280378823036340334036297999124554952333001694046661035394866352554133257771938391889674854857912102631973278772304070875201/81187793947443701722329745858121892517448991838560097787144946627152773326714967247629954439531878339869434480825584307489772803937272813820405067103057412096000000",
+          "j_projective_height_bits": 559,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 270,
+          "normalized_integral_curve": [
+            "1",
+            "1",
+            "1",
+            "-2260493101745071131502800292475679455629765270788883300",
+            "1234214344050973486628654106141968249519678710138752953764370744017718611549114085"
+          ],
+          "parameter": "10236/26261",
+          "parameter_height": 26261,
+          "rank_lower_bound": 21,
+          "retained_points": 86
+        },
+        {
+          "charts": 49,
+          "completed_boxes": 49,
+          "family": "08f72",
+          "gp_cpu_ms": 27493,
+          "id": "08f72-104",
+          "invariant_gcd": 7225,
+          "j_invariant": "2579810860338022816511550725225418844027440146859826337369628313238738449990066286197817410642948425148960388273650815484036359572167099411600743130586157676111076108202251488225/125224419907180324498115306727110167708007878989974704923191651970335233930075751439398294596078129842656113538292119322960594910608013816716437414321912860688298851705929728",
+          "j_projective_height_bits": 590,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                5,
+                2
+              ],
+              [
+                17,
+                2
+              ]
+            ],
+            "invariant_gcd": 7225,
+            "local_exclusion_rows": [
+              {
+                "prime": 5,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  2,
+                  4
+                ]
+              },
+              {
+                "prime": 17,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  2,
+                  4
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 298,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-1067857459615961426996226557513639200744045089674212357945713",
+            "406532100097375109862582839071111682440448010688597686146718862040230397590808165972839017"
+          ],
+          "parameter": "-13661/15310",
+          "parameter_height": 15310,
+          "rank_lower_bound": 17,
+          "retained_points": 26
+        },
+        {
+          "charts": 49,
+          "completed_boxes": 49,
+          "family": "08f72",
+          "gp_cpu_ms": 28623,
+          "id": "08f72-011",
+          "invariant_gcd": 1,
+          "j_invariant": "118293457580916083804149296182184009265418544211475729359158573213007668294797557794920868628309524146001107850793253773216052512723325003554042672391408824197077587226410164422934783121/6408801162908954227418549340694768365214260155858882471056940657250302715137609353693861603286175581357955723613957924873376104952686374805209835390884217146381689026132897536000000",
+          "j_projective_height_bits": 615,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 298,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-1022693913452105489809585280047787543552364460059390568837905",
+            "378985185088280851874971690200423482588965124765350887671609405976481871096829505770938025"
+          ],
+          "parameter": "-8605/16526",
+          "parameter_height": 16526,
+          "rank_lower_bound": 18,
+          "retained_points": 69
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "103b2",
+          "gp_cpu_ms": 20474,
+          "id": "103b2-379",
+          "invariant_gcd": 1,
+          "j_invariant": "180195977232765057763541284814406253511081777342281921467761767191912512575596930411011655488407357460801956664808877380556040715147132844035942773037435334645265559121/22328367740559802916934003699783756880925306830838619019003068985139884185341250271288141046703675053955569687636397043824664499202468202980593433923171868096000000",
+          "j_projective_height_bits": 556,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 268,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-1176721783200542085104308081748263407541334171372259405",
+            "435549120408145551814817649555358666083603029586422631178429904265027684078203025"
+          ],
+          "parameter": "-9066/7861",
+          "parameter_height": 9066,
+          "rank_lower_bound": 17,
+          "retained_points": 55
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "103b2",
+          "gp_cpu_ms": 19457,
+          "id": "103b2-974",
+          "invariant_gcd": 1600,
+          "j_invariant": "7048342511715596466218756993131367752326233239919409679804605433719321371689977815400667771206510437541258596611130737473096278759128593856741088055936615963081800/1266322215939903082965009513110688529482175519674776980575984651590350738437192003491527127719270937176741950633739394698467729665343803209486558205980595088261",
+          "j_projective_height_bits": 541,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                2,
+                6
+              ],
+              [
+                5,
+                2
+              ]
+            ],
+            "invariant_gcd": 1600,
+            "local_exclusion_rows": [
+              {
+                "p_denominator_obstruction_indices": [
+                  [
+                    3
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    3,
+                    4
+                  ],
+                  [
+                    3,
+                    4
+                  ]
+                ],
+                "prime": 2,
+                "scaled_integral_model_excluded": true,
+                "scaled_invariant_normalized_candidates": [
+                  [
+                    "0",
+                    "-1",
+                    "0",
+                    "-2732149263608184251229767614357288614003760271459036407/4",
+                    "4871461918510025528996794739319707717387089069363287416354745453667085281025474374/27"
+                  ],
+                  [
+                    "0",
+                    "-1",
+                    "1",
+                    "-2732149263608184251229767614357288614003760271459036407/4",
+                    "19485847674040102115987178957278830869548356277453149665418981814668341124101897469/108"
+                  ],
+                  [
+                    "0",
+                    "0",
+                    "0",
+                    "-8196447790824552753689302843071865842011280814377109225/12",
+                    "19485847674040102115987178932689487497074698016385241136203384288634498680970569825/108"
+                  ],
+                  [
+                    "0",
+                    "0",
+                    "1",
+                    "-8196447790824552753689302843071865842011280814377109225/12",
+                    "9742923837020051057993589466344743748537349008192620568101692144317249340485284899/54"
+                  ],
+                  [
+                    "0",
+                    "1",
+                    "0",
+                    "-2732149263608184251229767614357288614003760271459036407/4",
+                    "360849031000742631777540350150002668974093328802172826055329384492604745145171151/2"
+                  ],
+                  [
+                    "0",
+                    "1",
+                    "1",
+                    "-2732149263608184251229767614357288614003760271459036407/4",
+                    "721698062001485263555080700300005337948186657604345652110658768985209490290342301/4"
+                  ],
+                  [
+                    "1",
+                    "-1",
+                    "0",
+                    "-32785791163298211014757211372287463368045123257508436891/48",
+                    "311773562784641633855794863218103920422879067394978760529841318930558088213105049273/1728"
+                  ],
+                  [
+                    "1",
+                    "-1",
+                    "1",
+                    "-32785791163298211014757211372287463368045123257508436915/48",
+                    "311773562784641633855794863218103920422879067394978760529841318930558088213105048841/1728"
+                  ],
+                  [
+                    "1",
+                    "0",
+                    "0",
+                    "-10928597054432737004919070457429154456015041085836145633/16",
+                    "11547168992023764216881291215728682461603723526588600891199694759778392930481622463/64"
+                  ],
+                  [
+                    "1",
+                    "0",
+                    "1",
+                    "-10928597054432737004919070457429154456015041085836145641/16",
+                    "11547168992023764216881291215728682461603723526588600891199694759778392930481622447/64"
+                  ],
+                  [
+                    "1",
+                    "1",
+                    "0",
+                    "-10928597054432737004919070457429154456015041085836145625/16",
+                    "311773562784641633855794862431244932503722003040805687594942198097475130032902563825/1728"
+                  ],
+                  [
+                    "1",
+                    "1",
+                    "1",
+                    "-10928597054432737004919070457429154456015041085836145633/16",
+                    "311773562784641633855794862431244932503722003040805687594942198097475130032902563393/1728"
+                  ]
+                ],
+                "valuations_c4_c6_discriminant": [
+                  6,
+                  9,
+                  15
+                ]
+              },
+              {
+                "prime": 5,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  2,
+                  4
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 273,
+          "normalized_integral_curve": [
+            "0",
+            "1",
+            "0",
+            "-10928597054432737004919070457429154456015041085836145633",
+            "11547168992023764216881291215728682461603723526588600891199694759778392930481622463"
+          ],
+          "parameter": "4271/6508",
+          "parameter_height": 6508,
+          "rank_lower_bound": 22,
+          "retained_points": 91
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "103b2",
+          "gp_cpu_ms": 25526,
+          "id": "103b2-159",
+          "invariant_gcd": 1,
+          "j_invariant": "1103746546320753292992708765972683000349737264500738049600351690222587489008747831875002322905435108922436907738148077809932062595766840603619155561622923861366450257484580199253759841/11288714293441189135374940338236822922498704420718601440041259432218777568847352361276613451640915078873591909840542951732877712277171525406501547357349933495558993044203110400000",
+          "j_projective_height_bits": 609,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 295,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-215302240135227525220652834344422439562141869802604576050310",
+            "38110873217973621070722518411013910050114112075867801860165299439829483965190677963008100"
+          ],
+          "parameter": "-26958/29749",
+          "parameter_height": 29749,
+          "rank_lower_bound": 18,
+          "retained_points": 38
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "103b2",
+          "gp_cpu_ms": 23864,
+          "id": "103b2-210",
+          "invariant_gcd": 561600,
+          "j_invariant": "1771125227101388257856634798188533179125146972493403448753754356726950535099016195197821950056254925863557474376182485540488087101834089585599943406493477406451089657031970892800/135763366928692554372142141237272620327272162493022106808371305134259845429739564737188347342373915564498458637464672999671608138091945323636601247184790836570037463029251081",
+          "j_projective_height_bits": 589,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                2,
+                6
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                13,
+                1
+              ]
+            ],
+            "invariant_gcd": 561600,
+            "local_exclusion_rows": [
+              {
+                "prime": 2,
+                "valuations_c4_c6_discriminant": [
+                  6,
+                  7,
+                  8
+                ]
+              },
+              {
+                "prime": 3,
+                "valuations_c4_c6_discriminant": [
+                  3,
+                  7,
+                  6
+                ]
+              },
+              {
+                "prime": 5,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  2,
+                  4
+                ]
+              },
+              {
+                "prime": 13,
+                "valuations_c4_c6_discriminant": [
+                  1,
+                  2,
+                  3
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 304,
+          "normalized_integral_curve": [
+            "0",
+            "0",
+            "0",
+            "-16010357944930245877167479007231459057323268108424253158281300",
+            "22966510623894682133240151059485143633333675622493775085296216009882512904396552083147916900"
+          ],
+          "parameter": "-17989/24053",
+          "parameter_height": 24053,
+          "rank_lower_bound": 17,
+          "retained_points": 21
+        },
+        {
+          "charts": 49,
+          "completed_boxes": 49,
+          "family": "11952",
+          "gp_cpu_ms": 21831,
+          "id": "11952-846",
+          "invariant_gcd": 64,
+          "j_invariant": "-2431367954765422120820106607592374101229958364600675895114633931419975710897825911928262123135076402641749231124330988374986795545025691882222042015560851746053568391204002816/150225588689548386061356536279260326838800345985680839776089370278372168173855041501409678101834058898507084888406466766561516724163542787098014464843110543784831712796875",
+          "j_projective_height_bits": 580,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                2,
+                6
+              ]
+            ],
+            "invariant_gcd": 64,
+            "local_exclusion_rows": [
+              {
+                "prime": 2,
+                "valuations_c4_c6_discriminant": [
+                  6,
+                  7,
+                  8
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 284,
+          "normalized_integral_curve": [
+            "0",
+            "1",
+            "0",
+            "-1778780311805920862903590599446180797904001767354215266825",
+            "30378035234335787228983915220244651066068851709686287157704849913516598644362066406875"
+          ],
+          "parameter": "-8439/24314",
+          "parameter_height": 24314,
+          "rank_lower_bound": 19,
+          "retained_points": 43
+        },
+        {
+          "charts": 49,
+          "completed_boxes": 49,
+          "family": "11952",
+          "gp_cpu_ms": 25269,
+          "id": "11952-069",
+          "invariant_gcd": 1,
+          "j_invariant": "-33310134393454652081573911136171422619504245780912740971274226495788679372590166458057808438882907236792399085642384978673154386403847851513942633718412170514902630028397921/63283610144546016064087614415103414318842787169458515109985656551184899599142941366074286878485018974700185662980080254701210733852818428942740906907526560006950400000",
+          "j_projective_height_bits": 574,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 277,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-67032315925132515518574925613377641806054416249435904230",
+            "211585624000252210792909737627250671997115932131400571389543578375708225639461940452"
+          ],
+          "parameter": "7460/32309",
+          "parameter_height": 32309,
+          "rank_lower_bound": 25,
+          "retained_points": 141
+        },
+        {
+          "charts": 49,
+          "completed_boxes": 49,
+          "family": "11952",
+          "gp_cpu_ms": 23854,
+          "id": "11952-309",
+          "invariant_gcd": 16,
+          "j_invariant": "92782712410025721367812625909578941960585801838181613810179479981919359584784454685645671868324970326584775007161431292439455685338641423189268310625813851196776463596019456/27474575362575990828605568888167223401829178739488687030626619213971939032074905780754819991564236120000862322992091923958112990359144563398843457374171083783010124240625",
+          "j_projective_height_bits": 575,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                2,
+                4
+              ]
+            ],
+            "invariant_gcd": 16,
+            "local_exclusion_rows": [
+              {
+                "prime": 2,
+                "valuations_c4_c6_discriminant": [
+                  4,
+                  5,
+                  4
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 280,
+          "normalized_integral_curve": [
+            "0",
+            "1",
+            "0",
+            "-237659098290365034891952635000167309309329131870611031050",
+            "985433237094063464106479976385414311214533703360425302971151327899143035471984783073"
+          ],
+          "parameter": "14463/10229",
+          "parameter_height": 14463,
+          "rank_lower_bound": 17,
+          "retained_points": 40
+        },
+        {
+          "charts": 49,
+          "completed_boxes": 49,
+          "family": "11952",
+          "gp_cpu_ms": 22765,
+          "id": "11952-057",
+          "invariant_gcd": 16,
+          "j_invariant": "-29157058343082861372575384403386347383116817546898415304351744652145747427525642373711078180698712164687575378528413822177035469299935371361793574569318038726875950792129210251804416/104937730547765777351301031669893139185299463223237867358155801215805884570076862002951755050852269635627651049282174642837069568391094784104764845294907789789787893568273359375",
+          "j_projective_height_bits": 603,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                2,
+                4
+              ]
+            ],
+            "invariant_gcd": 16,
+            "local_exclusion_rows": [
+              {
+                "prime": 2,
+                "valuations_c4_c6_discriminant": [
+                  4,
+                  5,
+                  4
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 294,
+          "normalized_integral_curve": [
+            "0",
+            "1",
+            "0",
+            "-161577168092555253040663234471952237005620289565179243544490",
+            "25076354055087502067791031411263966293798319632484098459599773574742253122139484827627713"
+          ],
+          "parameter": "32031/14005",
+          "parameter_height": 32031,
+          "rank_lower_bound": 17,
+          "retained_points": 25
+        }
+      ],
+      "statistics": {
+        "gp_cpu_ms": {
+          "count": 24,
+          "maximum": 33484,
+          "median": "24478",
+          "minimum": 19457
+        },
+        "j_projective_height_bits": {
+          "count": 24,
+          "maximum": 677,
+          "median": "583",
+          "minimum": 526
+        },
+        "normalized_coefficient_bits": {
+          "count": 24,
+          "maximum": 338,
+          "median": "288",
+          "minimum": 262
+        },
+        "parameter_height": {
+          "count": 24,
+          "maximum": 32309,
+          "median": "21570",
+          "minimum": 6508
+        },
+        "retained_points": {
+          "count": 24,
+          "maximum": 289,
+          "median": "99/2",
+          "minimum": 17
+        }
+      }
+    },
+    "prior_h4096": {
+      "rank_lower_bound_counts": {
+        "19": 1,
+        "21": 3,
+        "23": 2,
+        "24": 5,
+        "25": 7,
+        "26": 3,
+        "27": 3
+      },
+      "rows": [
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "074d9",
+          "gp_cpu_ms": 18667,
+          "id": "074d9-112",
+          "invariant_gcd": 8325,
+          "j_invariant": "127102792231065226170357681880501337878896556195103697715845757833542768416482052665653245977677868964755916880675831036927883975/2410391346571627207518244393186593680697098645773707339677662253952294867889831570146768661591390372024880962493085952090112",
+          "j_projective_height_bits": 426,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                3,
+                2
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                37,
+                1
+              ]
+            ],
+            "invariant_gcd": 8325,
+            "local_exclusion_rows": [
+              {
+                "prime": 3,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  3,
+                  5
+                ]
+              },
+              {
+                "prime": 5,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  2,
+                  4
+                ]
+              },
+              {
+                "prime": 37,
+                "valuations_c4_c6_discriminant": [
+                  1,
+                  2,
+                  3
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 220,
+          "normalized_integral_curve": [
+            "1",
+            "-1",
+            "1",
+            "-206779563456005044164402103620282757058208605",
+            "1125574946715885585513277731794799070076845589553171800573910752997"
+          ],
+          "parameter": "-289/572",
+          "parameter_height": 572,
+          "rank_lower_bound": 23,
+          "retained_points": 587
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "074d9",
+          "gp_cpu_ms": 17964,
+          "id": "074d9-425",
+          "invariant_gcd": 1,
+          "j_invariant": "-91665941600347131003980245200171187485553245426532440901373756798884487437628006467986684803058216659476779650003195657685662690684795386483882408907310922321/991966854405524973434169124264920441407211328587334770772046503275620135456150194378479423856196831085000988176340035425550078089914459127128281676800000",
+          "j_projective_height_bits": 525,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 253,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-939351422245153281651322736260734182374699583208205",
+            "11184416527482208008670699538483995766686348478624223146193119890425368040977"
+          ],
+          "parameter": "759/2636",
+          "parameter_height": 2636,
+          "rank_lower_bound": 21,
+          "retained_points": 296
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "074d9",
+          "gp_cpu_ms": 21871,
+          "id": "074d9-069",
+          "invariant_gcd": 24843,
+          "j_invariant": "2360841953552508930835712531513582133832414793895759856726874191118542815687086926827212072119113617714746402309894080567219330162734348305972401/12723362260679088444567761042313490474540446128959814238160106249579800512337622897528015934961504347534264262941686683870889491014400000000",
+          "j_projective_height_bits": 480,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                3,
+                1
+              ],
+              [
+                7,
+                2
+              ],
+              [
+                13,
+                2
+              ]
+            ],
+            "invariant_gcd": 24843,
+            "local_exclusion_rows": [
+              {
+                "prime": 3,
+                "valuations_c4_c6_discriminant": [
+                  1,
+                  3,
+                  0
+                ]
+              },
+              {
+                "prime": 7,
+                "valuations_c4_c6_discriminant": [
+                  3,
+                  2,
+                  4
+                ]
+              },
+              {
+                "prime": 13,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  2,
+                  4
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 244,
+          "normalized_integral_curve": [
+            "1",
+            "-1",
+            "1",
+            "-11354541199384654329972620039188640321100673387557",
+            "14657867194438895431667681768621012908526333715333161427553095435417122781"
+          ],
+          "parameter": "1175/1901",
+          "parameter_height": 1901,
+          "rank_lower_bound": 26,
+          "retained_points": 450
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "074d9",
+          "gp_cpu_ms": 22215,
+          "id": "074d9-415",
+          "invariant_gcd": 25,
+          "j_invariant": "-348376909134617063854472363843461173089087829201432193958474419252370241116162541604004822523948912806410432911896511732070247119815625/29397888319399226984779695151062798151313485586028355155096855115133402104069087119083013746209312426912603552279462532243846386572",
+          "j_projective_height_bits": 447,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                5,
+                2
+              ]
+            ],
+            "invariant_gcd": 25,
+            "local_exclusion_rows": [
+              {
+                "prime": 5,
+                "valuations_c4_c6_discriminant": [
+                  3,
+                  2,
+                  4
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 219,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "1",
+            "-125333900539493090817839270327770628058553076",
+            "578107664805729448373729757215253945572809607804184852168725837198"
+          ],
+          "parameter": "492/169",
+          "parameter_height": 492,
+          "rank_lower_bound": 25,
+          "retained_points": 664
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "07ca9",
+          "gp_cpu_ms": 27115,
+          "id": "07ca9-280",
+          "invariant_gcd": 1,
+          "j_invariant": "44763735820973428904442911638987109193812199149788324678582528092637276308862154527108753267408834485936942772602332573528032454837710342834561/2245918041486141190926974176727987385690816577853421568624449454496325758000634232132281588319988325217960623682486008004852284850176000000",
+          "j_projective_height_bits": 474,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 228,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-7397203003011291119584233830188508263022420440",
+            "234021908942528155578505694886974432623567980580184104181837379286592"
+          ],
+          "parameter": "613/828",
+          "parameter_height": 828,
+          "rank_lower_bound": 26,
+          "retained_points": 717
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "07ca9",
+          "gp_cpu_ms": 30300,
+          "id": "07ca9-248",
+          "invariant_gcd": 49,
+          "j_invariant": "1281693210186147360920272420433388014529916368403849936564808723053309793416774766640244142592440805172088921760913905115386375706808417957563587101948929/31226631374647188104295950442323206292476594353958449249228082038480161997213673714324144662316062487572689288148556050521375963392326628012416000000",
+          "j_projective_height_bits": 509,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                7,
+                2
+              ]
+            ],
+            "invariant_gcd": 49,
+            "local_exclusion_rows": [
+              {
+                "prime": 7,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  4,
+                  6
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 253,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-1108875710517669591357665536661062259615031220551105",
+            "13910170292293850295340865333254318594406869768663260418494287713232189693577"
+          ],
+          "parameter": "3469/2070",
+          "parameter_height": 3469,
+          "rank_lower_bound": 25,
+          "retained_points": 229
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "07ca9",
+          "gp_cpu_ms": 21872,
+          "id": "07ca9-214",
+          "invariant_gcd": 1,
+          "j_invariant": "-529833591908253933293233268161169617171045422736602673718516938747534609997519725854551945965676152291863004626711214113589604221670161/79192839035646401378632099884100410735637834222543995067405580186866601575480583362376268147655368302934534797681994850152960000000",
+          "j_projective_height_bits": 448,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 215,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-16857969319749328841622223534356721824897465",
+            "29884403100220314132915220354679346285982566177154617238786959225"
+          ],
+          "parameter": "21/1196",
+          "parameter_height": 1196,
+          "rank_lower_bound": 25,
+          "retained_points": 945
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "07ca9",
+          "gp_cpu_ms": 21645,
+          "id": "07ca9-245",
+          "invariant_gcd": 3136,
+          "j_invariant": "-27418636208546208312596550024915395537837828442853301368067646351657311386398776225543053344324885211349778532803466939406945422248242176/26222708230874575810657673463169652954711631075408747412947387332011375331444062336519907379349229938298129810954757516116507049046875",
+          "j_projective_height_bits": 454,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                2,
+                6
+              ],
+              [
+                7,
+                2
+              ]
+            ],
+            "invariant_gcd": 3136,
+            "local_exclusion_rows": [
+              {
+                "prime": 2,
+                "valuations_c4_c6_discriminant": [
+                  6,
+                  7,
+                  8
+                ]
+              },
+              {
+                "prime": 7,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  2,
+                  4
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 228,
+          "normalized_integral_curve": [
+            "0",
+            "1",
+            "0",
+            "-5341354724849796566263996592795254555041823065",
+            "244716651154777925889627495646655454816339603814024909571988629947275"
+          ],
+          "parameter": "408/797",
+          "parameter_height": 797,
+          "rank_lower_bound": 21,
+          "retained_points": 452
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "08234",
+          "gp_cpu_ms": 26010,
+          "id": "08234-433",
+          "invariant_gcd": 16,
+          "j_invariant": "163374113393099652476949774498172948646070255520177809777301845394143467639221147314583786346378992203838979723696023910877001164976336/3021696211321556727285307471755298728103212085328617603658930773800181595480198424755152853650085467408118798962414739192207878125",
+          "j_projective_height_bits": 446,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                2,
+                4
+              ]
+            ],
+            "invariant_gcd": 16,
+            "local_exclusion_rows": [
+              {
+                "prime": 2,
+                "valuations_c4_c6_discriminant": [
+                  4,
+                  6,
+                  8
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 218,
+          "normalized_integral_curve": [
+            "0",
+            "1",
+            "0",
+            "-72315795113861451841222281212061727629931580",
+            "232886566950139213834146705594571179161628304998159507736077207600"
+          ],
+          "parameter": "4051/121",
+          "parameter_height": 4051,
+          "rank_lower_bound": 25,
+          "retained_points": 888
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "08234",
+          "gp_cpu_ms": 32079,
+          "id": "08234-671",
+          "invariant_gcd": 9,
+          "j_invariant": "-88594919643931015034584798603946221614859121569271820522206141939738780501262061106723755798304685094675844484444781953310210787026524084478107/109882219433962557943864687917401965703793531559523928264212505797573249696261780639027086966115338977104695140069890443642791155200000000",
+          "j_projective_height_bits": 475,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                3,
+                2
+              ]
+            ],
+            "invariant_gcd": 9,
+            "local_exclusion_rows": [
+              {
+                "prime": 3,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  3,
+                  5
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 232,
+          "normalized_integral_curve": [
+            "1",
+            "-1",
+            "1",
+            "-57955829576977163301484931302292453430428667917",
+            "5375993007810160017670120289029701066901139050729889920164091845157941"
+          ],
+          "parameter": "-2980/811",
+          "parameter_height": 2980,
+          "rank_lower_bound": 25,
+          "retained_points": 522
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "08234",
+          "gp_cpu_ms": 20667,
+          "id": "08234-154",
+          "invariant_gcd": 1,
+          "j_invariant": "4939533001552835478746742830549596923006009694553314320051128402179625733447700310981388073820207322481/31362810004008297563332830974145357962340308661810559854716023966067971553607881810277592152000000",
+          "j_projective_height_bits": 342,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 161,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-354803089674674467206754048738095",
+            "2558194545892203175112161719607326368645810580537"
+          ],
+          "parameter": "-239/4",
+          "parameter_height": 239,
+          "rank_lower_bound": 21,
+          "retained_points": 6063
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "08234",
+          "gp_cpu_ms": 20798,
+          "id": "08234-305",
+          "invariant_gcd": 1,
+          "j_invariant": "-36929802334019859541135689884049777500150750101247892496437922157595942880313868519917197725916340187054492995302698989563173442533001/4617062832012027790787146711537860558218907720203453397249978298723230132277931197747045047122678981819830879414519007450830687500",
+          "j_projective_height_bits": 444,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 213,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "1",
+            "-6937735796735416652751623407389151688052313",
+            "7756191705208903206681846103774868279582179398401925214325097656"
+          ],
+          "parameter": "-2741/118",
+          "parameter_height": 2741,
+          "rank_lower_bound": 25,
+          "retained_points": 1115
+        },
+        {
+          "charts": 49,
+          "completed_boxes": 49,
+          "family": "08f72",
+          "gp_cpu_ms": 26779,
+          "id": "08f72-464",
+          "invariant_gcd": 25,
+          "j_invariant": "-83277741099574437456360812462151261620373083507397416185399646493209966214635816415464605172252250521953434055047012569549827205888704014040825/17236337839453643461095458315910737430544703958958214003704028337735401916228364928402680460043728234144587145925770595573562378778345224452",
+          "j_projective_height_bits": 475,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                5,
+                2
+              ]
+            ],
+            "invariant_gcd": 25,
+            "local_exclusion_rows": [
+              {
+                "prime": 5,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  2,
+                  4
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 233,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "1",
+            "-77784861105517331567918462464043246062399071551",
+            "9729372994024391552036598189578155261901018816064506695929640000090598"
+          ],
+          "parameter": "1103/375",
+          "parameter_height": 1103,
+          "rank_lower_bound": 27,
+          "retained_points": 510
+        },
+        {
+          "charts": 49,
+          "completed_boxes": 49,
+          "family": "08f72",
+          "gp_cpu_ms": 22975,
+          "id": "08f72-124",
+          "invariant_gcd": 1,
+          "j_invariant": "-27223410368538999503915053204525519532922222431472310012168516057491403175855149632189124329751341846356448310892427193695145015376401/385650257688048508398076856127765355275699709507505910256859589820352364345197301799056454975894906982064128699849112557568000000",
+          "j_projective_height_bits": 444,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 212,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-6267191125441300855377089347498604295021225",
+            "6112361992952270050105617220536994644774302138486410204468625625"
+          ],
+          "parameter": "149/177",
+          "parameter_height": 177,
+          "rank_lower_bound": 23,
+          "retained_points": 1097
+        },
+        {
+          "charts": 49,
+          "completed_boxes": 49,
+          "family": "08f72",
+          "gp_cpu_ms": 27802,
+          "id": "08f72-475",
+          "invariant_gcd": 21025,
+          "j_invariant": "7861526675464895547416770868778893382568808369519381266128575601982042860054148226088950552288869751499162668395990669566169031425/6898943645400044658668926110974087189053269777167130525971955592048269686543158878365031376901959690109107311304616999436288",
+          "j_projective_height_bits": 432,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                5,
+                2
+              ],
+              [
+                29,
+                2
+              ]
+            ],
+            "invariant_gcd": 21025,
+            "local_exclusion_rows": [
+              {
+                "prime": 5,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  2,
+                  4
+                ]
+              },
+              {
+                "prime": 29,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  2,
+                  4
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 221,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-315562263873430936845713921877013638890048788",
+            "2155987169015679391813412938356566946288028891645324301303845576592"
+          ],
+          "parameter": "3431/70",
+          "parameter_height": 3431,
+          "rank_lower_bound": 24,
+          "retained_points": 634
+        },
+        {
+          "charts": 49,
+          "completed_boxes": 49,
+          "family": "08f72",
+          "gp_cpu_ms": 27085,
+          "id": "08f72-336",
+          "invariant_gcd": 1,
+          "j_invariant": "-2085760744343243363077838044364893096988603824127867982686212410020184962909986536563355621900809395720749005862659269915718548463946673881361/692373493954305144655878767428146587709676047133259801353643642134513509829769093524189030813341862866275743522280373581029479161856000000",
+          "j_projective_height_bits": 470,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 226,
+          "normalized_integral_curve": [
+            "1",
+            "1",
+            "1",
+            "-2661829654680670315576235681655024814579450265",
+            "66308254642014348981714163361382410554995901815313320708246637951655"
+          ],
+          "parameter": "2784/167",
+          "parameter_height": 2784,
+          "rank_lower_bound": 24,
+          "retained_points": 613
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "103b2",
+          "gp_cpu_ms": 23366,
+          "id": "103b2-733",
+          "invariant_gcd": 1,
+          "j_invariant": "968838608308896706832462779921993162623464612166414037694210242516423619651266590600107052522631656822089946356637536370745933031557827882497625433412851441/32890330752280708732651287188959919374134379111932748195500602422159240389543744044056588696059474384051705456392854745943699010222081672024268544000000",
+          "j_projective_height_bits": 519,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 250,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-206146472796129715074018059573733454563478276563335",
+            "1105311419338647732650534549181813400819706534279793673221000968292289116297"
+          ],
+          "parameter": "3726/881",
+          "parameter_height": 3726,
+          "rank_lower_bound": 27,
+          "retained_points": 277
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "103b2",
+          "gp_cpu_ms": 21689,
+          "id": "103b2-461",
+          "invariant_gcd": 1,
+          "j_invariant": "-876457614913199854531746899993418864288452212809703228148759916850481657519100785526195645702580439590480032738797659862196582762975601/345672569201645555371469233649651561020816753824346809773061449837306969330422088726634749896485464888618713408477034209159220625408",
+          "j_projective_height_bits": 449,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 215,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-19937425098916186440295109217804173470401775",
+            "44432685174151380138180908849530439297933796156167628619421408441"
+          ],
+          "parameter": "2280/299",
+          "parameter_height": 2280,
+          "rank_lower_bound": 25,
+          "retained_points": 974
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "103b2",
+          "gp_cpu_ms": 22851,
+          "id": "103b2-198",
+          "invariant_gcd": 1,
+          "j_invariant": "2248029976114599105084384300859358637840610935955697715798766919749884209482295418689263382316857189445919389356546793255033259605486481/28059870389542570980281781680307401851877555292309855462852036922402327955202649403602387110504751247077863471097009442202624000000",
+          "j_projective_height_bits": 450,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 216,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-27291419722539605513664031291284338237305345",
+            "54281574759682764234887741756394385736700714389179997892373750025"
+          ],
+          "parameter": "-1498/507",
+          "parameter_height": 1498,
+          "rank_lower_bound": 24,
+          "retained_points": 1070
+        },
+        {
+          "charts": 43,
+          "completed_boxes": 43,
+          "family": "103b2",
+          "gp_cpu_ms": 21851,
+          "id": "103b2-074",
+          "invariant_gcd": 361,
+          "j_invariant": "5054594382047329720015691375935482214243353886878791221779473798788123576297836698889230176554818372792895390923438105801511335000939093532961/338432260380869196699826200004643065721179706833273265036103894159904247705589713571966615631037064949195850167524602796616320071884800000",
+          "j_projective_height_bits": 471,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                19,
+                2
+              ]
+            ],
+            "invariant_gcd": 361,
+            "local_exclusion_rows": [
+              {
+                "prime": 19,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  2,
+                  4
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 235,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-181269888385729547300770949480503253549298137595",
+            "27934229722153698687132115968198865648100648224486973645734131875915025"
+          ],
+          "parameter": "-2558/3185",
+          "parameter_height": 3185,
+          "rank_lower_bound": 24,
+          "retained_points": 292
+        },
+        {
+          "charts": 49,
+          "completed_boxes": 49,
+          "family": "11952",
+          "gp_cpu_ms": 30735,
+          "id": "11952-113",
+          "invariant_gcd": 1,
+          "j_invariant": "-28629151995526797836382034931020536857774680679956649496542208478751552931381031047750351725241872449959635129124765597896532465465452713511532241/10863674322637137846445544651693256944481282560960892285281862063428728947974938098910621879159341471070348304525089881189071500256450112000000",
+          "j_projective_height_bits": 484,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 233,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-63732593342850967458504535648490033346020923285",
+            "7968611834872631407039058304455964638234186241293355884337746122912097"
+          ],
+          "parameter": "2012/211",
+          "parameter_height": 2012,
+          "rank_lower_bound": 27,
+          "retained_points": 451
+        },
+        {
+          "charts": 49,
+          "completed_boxes": 49,
+          "family": "11952",
+          "gp_cpu_ms": 29085,
+          "id": "11952-035",
+          "invariant_gcd": 1,
+          "j_invariant": "-17739691845963858630899163420646583262482894022160931442328541108230771879555658689973194754939807984455453176664162815788873203033267149857527277281/68483695062022215689198250062524032065145869087661602131708486989562826665551755313398941461840477300647887876044756054185796791360335872000000",
+          "j_projective_height_bits": 493,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 237,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-543343054370888096603245975658636557211893812670",
+            "154668919620232834672239151092474875112213515948319385603753967732550212"
+          ],
+          "parameter": "-1376/455",
+          "parameter_height": 1376,
+          "rank_lower_bound": 26,
+          "retained_points": 347
+        },
+        {
+          "charts": 49,
+          "completed_boxes": 49,
+          "family": "11952",
+          "gp_cpu_ms": 27752,
+          "id": "11952-571",
+          "invariant_gcd": 3600,
+          "j_invariant": "-881662980285481954370813150551861603540678639261346377215935911681346834689146225011329532035983195059169083576783880999567645510200130677113269504/15188765231663014271068014913108744680784814125585314589672061125507806248977893235527729261947943654319975065170780891313369850734695390512957",
+          "j_projective_height_bits": 489,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                5,
+                2
+              ]
+            ],
+            "invariant_gcd": 3600,
+            "local_exclusion_rows": [
+              {
+                "prime": 2,
+                "valuations_c4_c6_discriminant": [
+                  4,
+                  5,
+                  4
+                ]
+              },
+              {
+                "prime": 3,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  3,
+                  5
+                ]
+              },
+              {
+                "prime": 5,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  4,
+                  6
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 248,
+          "normalized_integral_curve": [
+            "0",
+            "0",
+            "0",
+            "-78531108059986105763004850874826680944941365571525",
+            "271819493646284854350546451450103333171419767479197858283970680641856358125"
+          ],
+          "parameter": "3811/2241",
+          "parameter_height": 3811,
+          "rank_lower_bound": 19,
+          "retained_points": 143
+        },
+        {
+          "charts": 49,
+          "completed_boxes": 49,
+          "family": "11952",
+          "gp_cpu_ms": 21189,
+          "id": "11952-446",
+          "invariant_gcd": 400,
+          "j_invariant": "-35031894747899399502500771283772538921570776541251636628798468259260126999087655189812403575683234259767994528866673272052057765377874/8667448186955248258936482925698367191835442961254222178319159390273581759182469760922218427435605490788643934674690870003855937117",
+          "j_projective_height_bits": 444,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                2,
+                4
+              ],
+              [
+                5,
+                2
+              ]
+            ],
+            "invariant_gcd": 400,
+            "local_exclusion_rows": [
+              {
+                "prime": 2,
+                "valuations_c4_c6_discriminant": [
+                  4,
+                  6,
+                  11
+                ]
+              },
+              {
+                "prime": 5,
+                "valuations_c4_c6_discriminant": [
+                  2,
+                  4,
+                  6
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 225,
+          "normalized_integral_curve": [
+            "0",
+            "1",
+            "0",
+            "-2164196205172840236380241289742724537939658608",
+            "46300576290568322730985383998332411389038028309016851909858841300788"
+          ],
+          "parameter": "-811/1609",
+          "parameter_height": 1609,
+          "rank_lower_bound": 24,
+          "retained_points": 559
+        }
+      ],
+      "statistics": {
+        "gp_cpu_ms": {
+          "count": 24,
+          "maximum": 32079,
+          "median": "22913",
+          "minimum": 17964
+        },
+        "j_projective_height_bits": {
+          "count": 24,
+          "maximum": 525,
+          "median": "462",
+          "minimum": 342
+        },
+        "normalized_coefficient_bits": {
+          "count": 24,
+          "maximum": 253,
+          "median": "227",
+          "minimum": 161
+        },
+        "parameter_height": {
+          "count": 24,
+          "maximum": 4051,
+          "median": "3913/2",
+          "minimum": 177
+        },
+        "retained_points": {
+          "count": 24,
+          "maximum": 6063,
+          "median": "573",
+          "minimum": 143
+        }
+      }
+    },
+    "public_successes_reported_ge28": {
+      "rows": [
+        {
+          "catalogue_id": 11,
+          "invariant_gcd": 27,
+          "j_invariant": "1226007243212608888866916438050803469815245868601714575812830610588988145033634341671193988565188857512790532675609299974164298804872213167549130339154698870805175624729/4913271980221021357618307917397842063502840085350879228329798386467428719194915788099271692259622196339940966698514954093787531893856313165327458443714561536000000",
+          "j_projective_height_bits": 559,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                3,
+                3
+              ]
+            ],
+            "invariant_gcd": 27,
+            "local_exclusion_rows": [
+              {
+                "prime": 3,
+                "valuations_c4_c6_discriminant": [
+                  3,
+                  9,
+                  6
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 275,
+          "normalized_integral_curve": [
+            "1",
+            "-1",
+            "1",
+            "-20067762415575526585033208209338542750930230312178956502",
+            "34481611795030556467032985690390720374855944359319180361266008296291939448732243429"
+          ],
+          "reported_rank_lower_bound": 28
+        },
+        {
+          "catalogue_id": 12,
+          "invariant_gcd": 1,
+          "j_invariant": "-2178278186417661901253576189103582365997935396472623778840162578414756885078160008166998745534482953456950649575682874999212260264866779577866068298184392291373758903459432104260760768986641/58514056884179895803252795545068205623215359270190478217393508483140281138663769634024489915971980794469429246265449489823479442097938729025702174957426421151737866434992604323840000000",
+          "j_projective_height_bits": 629,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 305,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-27006183241630922218434652145297453784768054621836357954737385",
+            "55258058551342376475736699591118191821521067032535079608372404779149413277716173425636721497"
+          ],
+          "reported_rank_lower_bound": 29
+        },
+        {
+          "catalogue_id": 356,
+          "invariant_gcd": 16,
+          "j_invariant": "-6269304979845216954180474107964236883093366229250053435188280568027048697421724052240535825519946281433161245836403423888092120684546840521155592517406084571460519563216/90724956272739281140548641860939027287262202267374386853850123537496837825431026396331026124780490448645951855330227344308171529147373250905806946195368048088046875",
+          "j_projective_height_bits": 561,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                2,
+                4
+              ]
+            ],
+            "invariant_gcd": 16,
+            "local_exclusion_rows": [
+              {
+                "prime": 2,
+                "valuations_c4_c6_discriminant": [
+                  4,
+                  6,
+                  8
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 275,
+          "normalized_integral_curve": [
+            "0",
+            "1",
+            "0",
+            "-24391876744717707263532695900840552395172973498186560300",
+            "46943906433780620456844832699051340439698711588743845207309557656274241785479710000"
+          ],
+          "reported_rank_lower_bound": 29
+        },
+        {
+          "catalogue_id": 364,
+          "invariant_gcd": 1,
+          "j_invariant": "-247200680930599689249948895672953364965861756286398821354763526266081323051273848933921357481949064706955545562634446695919059990591700690308340415741092969357193441/2961010737665381694238613317467592451754758483359953191258113526268782917400825037154831811985806378694418704889772150842685729834590642700867701289591040000000",
+          "j_projective_height_bits": 547,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 264,
+          "normalized_integral_curve": [
+            "1",
+            "1",
+            "1",
+            "-130750086100690559519772647173975676256671070075535710",
+            "18384836769279670096464557320539537966102850938229644233522192756030698426661787"
+          ],
+          "reported_rank_lower_bound": 28
+        },
+        {
+          "catalogue_id": 385,
+          "invariant_gcd": 3,
+          "j_invariant": "4040739232014149382404671605831145393430581927690769095539083208899705552098244821396534329236844622563484283376195833131104096922858468102168806500560539716467091799036539198313560467421667201/7471095450087195680727910445236600611605374236497648624054680031636234554634519268881655134072097590988924720904838797989784438432624613801399248973213649643196099694576440515449856000000",
+          "j_projective_height_bits": 640,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                3,
+                1
+              ]
+            ],
+            "invariant_gcd": 3,
+            "local_exclusion_rows": [
+              {
+                "prime": 3,
+                "valuations_c4_c6_discriminant": [
+                  1,
+                  3,
+                  0
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 311,
+          "normalized_integral_curve": [
+            "1",
+            "-1",
+            "1",
+            "-331827496674406562041164370816053963496434513510649284995530467",
+            "2322853282053688692296179831887155386042997843373920023045057766047634710076537198987220653859"
+          ],
+          "reported_rank_lower_bound": 29
+        },
+        {
+          "catalogue_id": 391,
+          "invariant_gcd": 13,
+          "j_invariant": "-818649401371543207243745332008487833430344030697331332345161580344276001816171118204404757480947046134810842636244096946781019907114774163569723298864661849043594971445293/18292265299058070625282765849390356407281102553060534335453130063736852706852899913915887716975081285924728295357867512931561770691034655440239562746058646697472000000",
+          "j_projective_height_bits": 568,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                13,
+                1
+              ]
+            ],
+            "invariant_gcd": 13,
+            "local_exclusion_rows": [
+              {
+                "prime": 13,
+                "valuations_c4_c6_discriminant": [
+                  1,
+                  2,
+                  3
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 280,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-253358083066972965014377893305253723955166094643129094555",
+            "1581891748619190376056299653607794133364757942527274090543772455710877264718525507025"
+          ],
+          "reported_rank_lower_bound": 28
+        },
+        {
+          "catalogue_id": 395,
+          "invariant_gcd": 27,
+          "j_invariant": "588689640533196722140692811939993697563679519041524530323736780102595850136313291983771549185058819213440126745437730952661132597249618737006577900160681767036341609/11129490219092854759152200486563237133920974273919284727522190341094378651390549220807052395505015400645194790823492220787825933461852149026643201815879680000000",
+          "j_projective_height_bits": 548,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [
+              [
+                3,
+                3
+              ]
+            ],
+            "invariant_gcd": 27,
+            "local_exclusion_rows": [
+              {
+                "prime": 3,
+                "valuations_c4_c6_discriminant": [
+                  3,
+                  7,
+                  6
+                ]
+              }
+            ]
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 269,
+          "normalized_integral_curve": [
+            "1",
+            "-1",
+            "1",
+            "-1571436138788579721131230519678999674817868532078561707",
+            "745728645244690014891125566886054009886463789156281759801829847987045667940220539"
+          ],
+          "reported_rank_lower_bound": 28
+        },
+        {
+          "catalogue_id": 423,
+          "invariant_gcd": 1,
+          "j_invariant": "2369976056690869180800014580594574845307674307358508590680361204117326490300654023841439423903394559456586162960419536535844443166400635716827951592412181355393425411376143681/54982549279076737648560456645555796539139519502785293433793118087871249992058975961811051872139310047478232925568429450545689426273411586773356193898145626236206080000000",
+          "j_projective_height_bits": 580,
+          "minimality": {
+            "argument": "A nonminimal integral model at p requires v_p(c4)>=4, v_p(c6)>=6 and v_p(discriminant)>=12. Each gcd prime either fails those valuations or has no integral model with scaled invariants c4/p^4,c6/p^6. Every p-integral Weierstrass equation admits p-integral translations normalizing a1,a3 to0 or1 and a2 to-1,0 or1: choose s using residues modulo2 when p=2 (otherwise2 is a unit), r using residues modulo3 when p=3 (otherwise3 is a unit), then t using residues modulo2. For each of these12 triples c4,c6 uniquely determine a4,a6 by the displayed b-invariant equations. A coefficient with denominator divisible by p in every candidate exclude a smaller integral model. Primes outside the gcd are excluded by invariant valuations.",
+            "gcd_factorization": [],
+            "invariant_gcd": 1,
+            "local_exclusion_rows": []
+          },
+          "minimality_status": "PROVED_GLOBAL_MINIMAL",
+          "normalized_coefficient_bits": 280,
+          "normalized_integral_curve": [
+            "1",
+            "0",
+            "0",
+            "-277762374045498166503978906288594827838146361987727860020",
+            "1745716564920954436762537886066484987032789883722113978504519639885660024203054176400"
+          ],
+          "reported_rank_lower_bound": 28
+        }
+      ],
+      "statistics": {
+        "j_projective_height_bits": {
+          "count": 8,
+          "maximum": 640,
+          "median": "1129/2",
+          "minimum": 547
+        },
+        "normalized_coefficient_bits": {
+          "count": 8,
+          "maximum": 311,
+          "median": "555/2",
+          "minimum": 264
+        }
+      }
+    }
+  },
+  "schema": "elliptic-curves.higher24-visibility-cost.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/higher24_r17_074d9_010_mod2_v1.json": "dd47af13ab6766952bb79536aba57836b16713d72b1d2c4dcd57c7e4eb668437",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_074d9_023_mod2_v1.json": "190ab3b2bb990c8167cd48455eccf193e15570afa6c0bd9c035cd555fd140fe6",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_074d9_117_mod2_v1.json": "5787ffb7add8eb95a182b1281a79102950ea85d02b1fec7968febbc21827f9b2",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_074d9_489_mod2_v1.json": "ce10871e4a4c6a4e9cb6ce14852c3f294d01b741f6493fbac8935009c3f669ed",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_07ca9_001_mod2_v1.json": "41bbb18facfd811b7067239b41ed83e8f42eda29dad9c9e1c76f7ee9da6a3837",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_07ca9_510_mod2_v1.json": "40f3e984dcd0664b5da8b2c493a986c14042928ccd7122924b13e310d8924f7b",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_07ca9_617_mod2_v1.json": "e66c903f4b7532159c230001994247100c831236de1005e23616c3758e2a7771",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_07ca9_905_mod2_v1.json": "ae3bc772926ead0ab70299e9ba925f6b61d8f30990942a2fa7b403fd8f200319",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_08234_005_mod2_v1.json": "dddfb80ec459ded9e055aa8aec7b3e815855b4d9315b78c34ef224727fac510d",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_08234_093_mod2_v1.json": "36724efebf754b7c67fa6d699e1973c87442ffd03309473132b4c5334b46e732",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_08234_446_mod2_v1.json": "da5d95db39e214eaeb82d0fba953f3e810c7bc57a70a7ef0b17e6fc81ddadcf8",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_08234_711_mod2_v1.json": "72442b2e810bb3a15f09402b08fc6d49e062a32dfa6a08ea59ffa575017864aa",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_08f72_011_mod2_v1.json": "d92426675d1e3c65d418ebbc893c24ce8d7487b9b86c0310d401e052c567b67b",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_08f72_058_mod2_v1.json": "5ca9ac335b6902205ce8614088737391eb0a7bb06e6353baf84c89549f40611e",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_08f72_088_mod2_v1.json": "6eac8fbda82f48650b0e2d0d10103d286bbff8dd8c4c33229c4af2e3dd3e5c26",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_08f72_104_mod2_v1.json": "496f4f83ad31fb789158fc99d9085dcf50c81af65d0007c93b3f99c1b3d2424b",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_103b2_159_mod2_v1.json": "c23f032b25c220fb31bb620768b718b1c0f54b2f0aef97a7fdc113e867120802",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_103b2_210_mod2_v1.json": "f982e1d5a4ceb7b7d354b746d02f3eb51845a0b9d43326bdb4f162ee574ff0e1",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_103b2_379_mod2_v1.json": "aa02398e8b5e582cb9e0e5a4380da33af50930507a5f576344e06317cd42c573",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_103b2_974_mod2_v1.json": "7200681474b99e860cd8c8c422db25fcf308fc8b6e514e5e3116b561cd169c93",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_11952_057_mod2_v1.json": "2e0358e2f62525e4df08c757461e3aed63a07618ab598d059f4dd1e82a2b0916",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_11952_069_mod2_v1.json": "47d1e7f04a56d690d936c1a3a727340426b3952d66b1027b331159c028825b3c",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_11952_309_mod2_v1.json": "2ba931de963807f01300f56c2b4fc93a90a38db9ccef307af5e29e655edf6994",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_11952_846_mod2_v1.json": "5a67c69ada90ff95ee0a221c4c171ed0927faa737feac468714907a107e734db",
+    "artifacts/generated-results/elliptic-curves/higher24_r17_results_v1.json": "5bd5ae6b7f9d5fd4f3edf182f796ba0871a0b906e9c16ee4d7c1c65405ef0661",
+    "artifacts/generated-results/elliptic-curves/public_compact_parameter_heights_v1.json": "fe3e45057fbbbd1009ec82edbada980f6875316b8b9449364376eff47bb0f0c5",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_074d9_069_mod2_v1.json": "3fd3429f8b37e71884bf43ec17913d7e191d001a8105ea8a38acfbc175b14ac6",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_074d9_112_mod2_v1.json": "e9d2ff551c1fe5136c73c2f38d2fd2b465c150ca8c5b5aa6b195731f35840791",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_074d9_415_mod2_v1.json": "1a7e3c74f0d36e7bed7cc702e49fde7bd831f17d54d42ede958e111154c3ee73",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_074d9_425_mod2_v1.json": "5e7b0524654d11b10206d6f81feaf5418cbcb5788371e46adab57ef285abb246",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_07ca9_214_mod2_v1.json": "9a7361ad4dc3a4331a68958e816e016d0ee6cb096f1c6469363b38e0012ca8b1",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_07ca9_245_mod2_v1.json": "aeda6751b6bd882c8ff0b660e9b589abe6a718b27f53e79ef15177a3f65b20ca",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_07ca9_248_mod2_v1.json": "004a5a3520e7d9f1466473479eda1236918f7a5fc5e580632fca6659843e9f0e",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_07ca9_280_mod2_v1.json": "010347cd76a69c80f5e6c8b69f1490934e5674f6f114c31a3dad9191041f4250",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_08234_154_mod2_v1.json": "e20ba5a7780064811826642064b2732cee12105f1691ef5234624c50d51f27c3",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_08234_305_mod2_v1.json": "1adc23cf68a47fd6e3564f5b15691bad7738bc1f453eee65b776cc49593aea6e",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_08234_433_mod2_v1.json": "8585f794fe217c21f8e1599b54565f5814026ed8917566ad96a1276b73c7919b",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_08234_671_mod2_v1.json": "9319ba27c2622ea34da386f556dcbffd74dec804ff6c6f5542217d121122320e",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_08f72_124_mod2_v1.json": "888952e1d783e91eee89f21b16d89459bc0b8c533528a0bc3bf57118639fa975",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_08f72_336_mod2_v1.json": "ea092930155bfe72e0d49e7fb0fc9ec82517a28f5daf0ec0109aa60335da875b",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_08f72_464_mod2_v1.json": "58dbd9ea491640ad12e76286d64ec6ecc3f070d2e6d343eed5c4df5e185f3165",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_08f72_475_mod2_v1.json": "9f537937fa4ae0e57ed1eba65372a4c2c3e7a526a6349077540567b9f30e0a30",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_103b2_074_mod2_v1.json": "5b7ab6698261ff094fca4a6ed91fe323d9875643e429501a9dc4cfa187962f62",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_103b2_198_mod2_v1.json": "17f88886779c2860abab1668541bc5f5b297a3dcf60e43b33a32cd533e360fc4",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_103b2_461_mod2_v1.json": "c1017b8dc27bd2bc5b5277d595fe88a0c0f94cb1242b1f581488157a642fd40e",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_103b2_733_mod2_v1.json": "2f83914fe55c385f501b498f3eb7151ca224b64bfb9cfcf12266f600feb0c91e",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_11952_035_mod2_v1.json": "bdbd13dadceedb6c6f3504d6bed1ee21d2acf3f7c90c51e999514c28b4c9b1d2",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_11952_113_mod2_v1.json": "856d417121d0c830ef447fab3294c451fc99120acff514929d8dfb5f956da790",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_11952_446_mod2_v1.json": "16d060e2b1a67a15ef236b04f831f560fec91d1eaf82a83a4f9f537f15e250c9",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_11952_571_mod2_v1.json": "97de6567fe76c21d4ff3e7db0b616d36b9a8e935f2736a6568a784c2c3e6545a",
+    "artifacts/generated-results/elliptic-curves/retention24_r17_results_v1.json": "a13682e6a0d07a54d226ef2a4f7de86a98425ea6e696bbd11ae1d5b7e04e1795",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/074d9-010/result.json": "b6cf4e66a1941bea8bc7d5bfa4b1620aa24441cc85ef39f191d33fb25d9ff9db",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/074d9-023/result.json": "ca96643bbe584ec9b2aa69a7ef640ac5fbe45280773cbeb20e46b1e34a42b01a",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/074d9-117/result.json": "eeea6bae4396ab5f6b5ec438448a93bbf869840de5fafc47cf058b8fbc9c0049",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/074d9-489/result.json": "63bfa4efc7ff712874f097e3ee2eae6477fb83942140a5ef8efbcfddc107a2aa",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/07ca9-001/result.json": "b7ff94434b4714214d57a29a26440f0a4a9e336d4297831504dfaab631ed5e01",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/07ca9-510/result.json": "06c3fc7bde9b8f74c2047d8d2f7257930126bd135c965098ef8cc423965d77c5",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/07ca9-617/result.json": "703955ea83fc3703edfa9aa358e3a63f611e112d3125112a79478c53f7b31e26",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/07ca9-905/result.json": "abecc73c1879c94f53737fe72651a3c52b663062e7e8efe105f82d6a54b369b9",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/08234-005/result.json": "ad5e63436222d504bd684a16c161c5f267f379700102e72c3384c8a76a6cdb61",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/08234-093/result.json": "45e680c3e0705d482405199f15f5cb53f22f944d152052b1b4e5b8e725c07154",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/08234-446/result.json": "c1b833da23b62b39ca0ebe21f038884ec088174b38546647c02aa58b1a809427",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/08234-711/result.json": "2f20a6df1faf172015d55ad432be6f078206a52125dd86147f0c3620c4cc0da0",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/08f72-011/result.json": "f303fc854b407f0ddd2055625f6d0984980844fd4960854423f9780215c2b387",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/08f72-058/result.json": "93a6a3079fcb8e8e339e153087b9ad39ec6137cbcffaa9148bac3eb6a9fd2ceb",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/08f72-088/result.json": "8378c6db498c9f58f47a3b4fe87e146272c684e708c77a64ff8869d23045ab18",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/08f72-104/result.json": "e3acbb6d90026b3ab5bd1fccbdc00bde968d9cadf7db4ada2eab773eec10f703",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/103b2-159/result.json": "3c8af82dc06f84724c145a22e6d6481e2e05e6001c201be1d6f878ba0eeff978",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/103b2-210/result.json": "9327680e918c30611b9418850581c722a4ed0232550e5239b28f1f8940b8dce7",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/103b2-379/result.json": "2dc72141ddc74647bb8a7012247ad9c2800fac2f43995eabaa4450d429c1fb6d",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/103b2-974/result.json": "f1d5f202fd3bbb894cae6349a42899c1a68fc1f08e7d7b6d2a544fa26d01701f",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/11952-057/result.json": "83a344514717f3d3996eaa90c9c71aad5fe3153ec7a1531ccad68257f0c31416",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/11952-069/result.json": "dc256dd8c6210e2207ef530cb095e84c31fd610af6c5e937b13919068326f43c",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/11952-309/result.json": "327308d1a7efd2eb598928439be5d05ad976908395b7d68b85e057e57b505d7d",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/11952-846/result.json": "9447ca41a4e69652b369ec4d4af9f16dd3d8639a17793907b3b1a8a704990bce",
+    "artifacts/local/elliptic-curves/higher24-r17-pari-v1/verification-ledger.json": "0bf471ab89b5c9e96b7956ace3ca18afe5aa3e0210ee4a04b3b19bfc4785d86b",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/074d9-069/result.json": "516f67560c645efd759bf34e95aa08b0149d818e65438c313bd029f955049bb1",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/074d9-112/result.json": "e0e936560abd70e611f524153935e92ac2e9535c435792f762d220c8f3939915",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/074d9-415/result.json": "2de2e999b9ac51511b397854bfb73fce64eb51639926adca9c551287ec0a88b1",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/074d9-425/result.json": "2568f0dd931efba1c09b2fc09ee71e6985f7c7c942ab8f2fae522b5281838d4a",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/07ca9-214/result.json": "b4f437e5d7dcdccd433879a8d8cc16d56da2d192921cf5bd8659c7f2becd0ada",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/07ca9-245/result.json": "ccb6d3f53e4b91a813890b9a7c20764a59de6aecb27639ef3c3f8ffd0349fc78",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/07ca9-248/result.json": "03eaed3da93ebb92b3360db6a71b8072d7eb7d836c2707435e7ca32679d836dd",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/07ca9-280/result.json": "1da3b1857c056c355b429a975d53f492dcd3e5e1ec78f6ebd4a2bd3e647cb6a9",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/08234-154/result.json": "2ddd0ef1e8a55899845a2faf5ebe6bca1dcdedee92a00af3f3be78b6669b7a23",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/08234-305/result.json": "5cf3d8b40f47615b5d39163130afa9af66567a2445830bcef17fd95a1aa03384",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/08234-433/result.json": "c56a719f8b249ab76b6397334b6096b760b9b44ee0758b8f81b3d260f992cc59",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/08234-671/result.json": "1afb33d979936db6df9d54244cbec7f309bdd50f327325597ce3af00328cc8e3",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/08f72-124/result.json": "ed9491b8c130ddfcaa275dfe2aaa9f561f4db3b01655bd0b34e1f2c1a049b11e",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/08f72-336/result.json": "051ca356a94b60394ab5d1b2b765d6e5134451d4e638bc307f9dfcffb11cdbb5",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/08f72-464/result.json": "6b8fb62c43f6719311979a7293079b8afcc2ad70f669305bc361e3764db7d427",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/08f72-475/result.json": "f5abcdbd3b024c9f2837a2ec8e9765d6e7e4fe947060a3f243f15778523a616c",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/103b2-074/result.json": "742896d64acf2ab811b443a023508254b454d9d9c4aafa08d1e1465f0c9c2347",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/103b2-198/result.json": "89df1023fdbb0cd02e46a33297351f3b7ce79922885686841797763fbfcf0136",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/103b2-461/result.json": "58ab0fa360c2a3669ace3a9406a79ddd9bc24117b7f000e51b2f780c53386c5f",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/103b2-733/result.json": "fd3259c3dc4a42cf8e13573f7a1e279688c3a353c6047b35035c384d568d6f5e",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/11952-035/result.json": "11ceaf2ddba9d70caeea58d24a2af56010fc501da07161a1d3f78b9acf247ee1",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/11952-113/result.json": "eccd538a34b6156627a2bc75d9686cd7f2199caef1e4ad30ff8abf56a01df5d2",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/11952-446/result.json": "08f3c6bc74dbbcc5d2cd8f1ca829bed3b06233ee6ccd15e58aba4e2a9a074f0c",
+    "artifacts/local/elliptic-curves/retention24-r17-pari-v1/11952-571/result.json": "b04d8e20bd30c564db45f3fbb7d9dedadac6874bb1fa933c8f9a76a3b3aafa03",
+    "elliptic-curves/cas/audit_higher24_visibility_cost.py": "42be97246119a6263dce42140bfb2dcb08167c02ad87eb36fe6bd1f72dc02706",
+    "elliptic-curves/cas/certify_discarded_rank26_minimal.py": "9a3774353e3516478a1d56f36536f2e58e1baf5a860633c9517642783c632f21"
+  },
+  "status": "PASS"
+}

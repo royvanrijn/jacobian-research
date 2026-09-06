@@ -1,0 +1,1862 @@
+{
+  "archive": {
+    "path": "artifacts/generated-results/elliptic-curves/product22_comparison_evidence_v1.zip",
+    "sha256": "0dbcd3ab5448a29eedc15111e0ad76bed08a2fc25c5fcc5928d8ca3f9ebbea35"
+  },
+  "base_archives": [
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/compact_r17_wide_evidence_v1.zip",
+      "archive_sha256": "d54b2a494a8bd3841700379aa28ef32366730bbc1bb208d5e03285786ff8a01a",
+      "manifest": "artifacts/generated-results/elliptic-curves/compact_r17_wide_evidence_v1.json",
+      "manifest_sha256": "c1f1f5262df6b9ec0218d38fd553e1d3fd467b6f5362ce8462279f34a77b238d"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/new_rank26_followup_evidence_v1.zip",
+      "archive_sha256": "202f421f4fbadb5d5ba0c5911883214c2ee9269ca79844e4bf1795fae0b77594",
+      "manifest": "artifacts/generated-results/elliptic-curves/new_rank26_followup_evidence_v1.json",
+      "manifest_sha256": "247675cc39e6816eab66d273b4375b140af2a73a1c41e7418e47c72edf2de030"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/exact_parity_coordinate_evidence_v1.zip",
+      "archive_sha256": "f6caba4eef5b22e0eedf242b47cba7c99a16e4e2cba9aae0102d1e92ce4f4a46",
+      "manifest": "artifacts/generated-results/elliptic-curves/exact_parity_coordinate_evidence_v1.json",
+      "manifest_sha256": "e936d77fa42c0358cddb5b6407e9b99b4922647b63907f80cb8b3a7486cc549c"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/small_conductor_followup_evidence_v1.zip",
+      "archive_sha256": "b355fd65496388e4e3b9a4c2bbce1b9af7f5573ee9a9efd64ceed1668028935f",
+      "manifest": "artifacts/generated-results/elliptic-curves/small_conductor_followup_evidence_v1.json",
+      "manifest_sha256": "43f27e5cf5d32122d6d19778bba34cb2d64f1b6e975bd70ed23f220ceba127a3"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/fast_point_pipeline_evidence_v1.zip",
+      "archive_sha256": "2108d6d5c21b04757c87dc7ef5369f7894e57569d0c7c61b74c998bf5bffc69d",
+      "manifest": "artifacts/generated-results/elliptic-curves/fast_point_pipeline_evidence_v1.json",
+      "manifest_sha256": "a2a3382767547e1be9fc6f9a3f7f33a1d316ff05cfbd03793e34bcfca2a9e431"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/paired_rank27_discovery_evidence_v1.zip",
+      "archive_sha256": "cf884ab414618e8df2ded9e6f037ca46eb28fa449286ce5e9e22b152446033f3",
+      "manifest": "artifacts/generated-results/elliptic-curves/paired_rank27_discovery_evidence_v1.json",
+      "manifest_sha256": "6218d541ec5f3588f6df81a131ae96524168c68cddb9376efc31c430f71fa2ec"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/latest8_cross_family_evidence_v1.zip",
+      "archive_sha256": "221a5a2a719308fc61684b32699669959fb95952a04852ff2d143ffa6cea0ee7",
+      "manifest": "artifacts/generated-results/elliptic-curves/latest8_cross_family_evidence_v1.json",
+      "manifest_sha256": "8636987a23d8308e1ba6e5810da609f96af003fc08f70e0ea06b7b34ba222989"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/paired_rank27_inventory_replay_evidence_v2.zip",
+      "archive_sha256": "53ca4e9dbb8d24c53f9979b875adc7e6b7d78e440961f3050470dafcd89dc0d9",
+      "manifest": "artifacts/generated-results/elliptic-curves/paired_rank27_inventory_replay_evidence_v2.json",
+      "manifest_sha256": "b9d1ce027e5c6eaa76da1f78fb1391cd3aee858adfd5fb514a7ca9f002c7485d"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/next24_discovery_evidence_v1.zip",
+      "archive_sha256": "57f6c328f25d3c3426746a6fe5e2c9e08ddf9e8eaa046b1c0aef9c32d0e72097",
+      "manifest": "artifacts/generated-results/elliptic-curves/next24_discovery_evidence_v1.json",
+      "manifest_sha256": "9e145fdcaf4fcbc3690c13f5476b50f01e08a486c106f905428ab1b1be124c64"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/height_and_discarded_evidence_v1.zip",
+      "archive_sha256": "9da2377f22a55fb681350dd8d56a6456705d3ca6a3b2a4f3d141ad29e254b3da",
+      "manifest": "artifacts/generated-results/elliptic-curves/height_and_discarded_evidence_v1.json",
+      "manifest_sha256": "569c48d08b635c46b56cf0b756afe8669c180e391b621187c247b551f66a1c15"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/retention24_discovery_evidence_v1.zip",
+      "archive_sha256": "107c391bf0ceec289c5fcd93b0b9715f8dd8475298b3a21435c25e90a0ce47f9",
+      "manifest": "artifacts/generated-results/elliptic-curves/retention24_discovery_evidence_v1.json",
+      "manifest_sha256": "e0ac29b3f0ec27beaa85f8ba41f5ef93db27f6529db6bf2605ec1a2c69cad81a"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/retention_rank27_followup_evidence_v1.zip",
+      "archive_sha256": "db1017de2287a672034f216f57875fd36a6412ed2cd41ef6d3c81fa372d16831",
+      "manifest": "artifacts/generated-results/elliptic-curves/retention_rank27_followup_evidence_v1.json",
+      "manifest_sha256": "566ebc83aa3e98857951d746261eee34d39ad74c6083018fe99b0978848de475"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/million_height_mw16_evidence_v1.zip",
+      "archive_sha256": "81774dffffa1124e42ec7e7777b782c6f1fa7075ed994a736a44edeca794a126",
+      "manifest": "artifacts/generated-results/elliptic-curves/million_height_mw16_evidence_v1.json",
+      "manifest_sha256": "42471ce91d0c58b68b5108e5fac4e74e9d4979f80cddbef20df71c61256bd7e4"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/million_height_mw16_population_supplement_v1.zip",
+      "archive_sha256": "3d7382ca2c150fb043e3b0ab348e23412b3373fcaf15d685bf9215f4290e346e",
+      "manifest": "artifacts/generated-results/elliptic-curves/million_height_mw16_population_supplement_v1.json",
+      "manifest_sha256": "564e872a5c18637573abab758ad56b285f960e5fee0b018a6d2e21ad6849a536"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/new_mw16_rank27_evidence_v1.zip",
+      "archive_sha256": "0b1c2597dcbc2134a3c96c45c7746b29174bd866401722ef1bb602050ffc49ab",
+      "manifest": "artifacts/generated-results/elliptic-curves/new_mw16_rank27_evidence_v1.json",
+      "manifest_sha256": "c5a09f44225cd33a651061c872bdb5bae69a696acd55c27be300e7c9fe3882f6"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/higher_r17_rank26_evidence_v1.zip",
+      "archive_sha256": "73cacb98256dccadbbabd875aa2c411da27d969c383c5649f151e130615c844e",
+      "manifest": "artifacts/generated-results/elliptic-curves/higher_r17_rank26_evidence_v1.json",
+      "manifest_sha256": "63d787ea4659724d148211f4a2ee4da3a3279e1aecd41ed5fef97b88ff17f7a3"
+    }
+  ],
+  "claim_boundary": "Isolated saved6144 score replay,22 exact curve proofs,988 map and raw-point geometry checks,all22 complete clouds modulo2,3,5,and both exact generic-representative visibility audits. The completed admission histories remain retained. No new point search or rank upper bound.",
+  "ledger": {
+    "rows": [
+      {
+        "name": "saved6144-scores",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/compare_higher_r17_product_score.py",
+            "replay"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/saved6144-scores.log",
+          "log_sha256": "027eccdfa96b6bad80c91d2ab9633abd78ed087b1cba4a5b06ec63a33c782d66",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 40132608,
+          "pid": 890136,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50105051",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 39.33940273296321,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "curve-proofs",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/certify_product22_r17_results.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/curve-proofs.log",
+          "log_sha256": "3100ebdc53cd7b103379965b4c70ac395162522c14144e48a3f57ce2f1793ec2",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 28266496,
+          "pid": 890207,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50108964",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 2.375857262988575,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "geometry988",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/replay_product22_geometry.py"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/geometry988.log",
+          "log_sha256": "0cab037890a4a5e6e1941b49a317d735efc5475eac1ee8f5f6c1e3fa657fa270",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 183492608,
+          "pid": 890212,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50109204",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 5.228084170026705,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "074d9-005-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product24_r17_074d9_005_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/074d9-005-mod2.log",
+          "log_sha256": "963679387bb4266afb98069ae11c192894c4d099efb9857641dc1f903e8c1890",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23425024,
+          "pid": 891274,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50109729",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.17701910599134862,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "074d9-005-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product22_r17_074d9_005_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/074d9-005-modl.log",
+          "log_sha256": "8a81f6c09a470c446f41d060a996373960fe5099d4251a29f43bbf9cd5692556",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22036480,
+          "pid": 891276,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50109749",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.17747684702044353,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "074d9-032-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product24_r17_074d9_032_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/074d9-032-mod2.log",
+          "log_sha256": "75781a2ee3dc3eeac64af78d5f6f2b79e33cd26016e77ca091b45979370fbff0",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23126016,
+          "pid": 891278,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50109769",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.1773482869612053,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "074d9-032-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product22_r17_074d9_032_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/074d9-032-modl.log",
+          "log_sha256": "8a81f6c09a470c446f41d060a996373960fe5099d4251a29f43bbf9cd5692556",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21561344,
+          "pid": 891280,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50109789",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.1765417239512317,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "074d9-102-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product24_r17_074d9_102_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/074d9-102-mod2.log",
+          "log_sha256": "841d02df1c5bdd86d84943de4a963d23b5a45c99ca3b12b1edfe43a6d020021c",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23248896,
+          "pid": 891282,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50109809",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.17706590599846095,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "074d9-102-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product22_r17_074d9_102_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/074d9-102-modl.log",
+          "log_sha256": "8a81f6c09a470c446f41d060a996373960fe5099d4251a29f43bbf9cd5692556",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21504000,
+          "pid": 891284,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50109829",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.17744006600696594,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "074d9-568-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product24_r17_074d9_568_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/074d9-568-mod2.log",
+          "log_sha256": "d4ebd6295e1af088e9bb06cf861d158b39c7866471bad553e23f80338b867ad8",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23121920,
+          "pid": 891286,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50109850",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.1774737680098042,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "074d9-568-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product22_r17_074d9_568_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/074d9-568-modl.log",
+          "log_sha256": "8a81f6c09a470c446f41d060a996373960fe5099d4251a29f43bbf9cd5692556",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21553152,
+          "pid": 891288,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50109869",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.17668551002861932,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "07ca9-002-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product24_r17_07ca9_002_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/07ca9-002-mod2.log",
+          "log_sha256": "ded27aa18be2d0d97aef0a24350433855f252edce90a07e722f7f3659702b0de",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22872064,
+          "pid": 891290,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50109889",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.17805346800014377,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "07ca9-002-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product22_r17_07ca9_002_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/07ca9-002-modl.log",
+          "log_sha256": "2f660c7349560a5047bef08b6cb161d0b09a86f4d77e0abfbea39c9297a964fd",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21262336,
+          "pid": 891292,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50109910",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.126058125984855,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "07ca9-020-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product24_r17_07ca9_020_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/07ca9-020-mod2.log",
+          "log_sha256": "43b5f66f691225afc9accc83c9f76d415f9a67552e4a2804631e37108da76dff",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22593536,
+          "pid": 891294,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50109924",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.1775272969971411,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "07ca9-020-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product22_r17_07ca9_020_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/07ca9-020-modl.log",
+          "log_sha256": "2f660c7349560a5047bef08b6cb161d0b09a86f4d77e0abfbea39c9297a964fd",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21307392,
+          "pid": 891296,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50109945",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.12572788598481566,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "07ca9-095-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product24_r17_07ca9_095_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/07ca9-095-mod2.log",
+          "log_sha256": "9410b662c22cfde8c807860989cbadf755075fdce718fbdb10319591e6e54ab9",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22859776,
+          "pid": 891298,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50109959",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.17708259599749,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "07ca9-095-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product22_r17_07ca9_095_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/07ca9-095-modl.log",
+          "log_sha256": "2f660c7349560a5047bef08b6cb161d0b09a86f4d77e0abfbea39c9297a964fd",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21049344,
+          "pid": 891300,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50109979",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.12547180999536067,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "07ca9-110-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product24_r17_07ca9_110_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/07ca9-110-mod2.log",
+          "log_sha256": "89cb9d3d9aedc0feb571b88282006a0f289ed16cd136827d3ae02dc22bf37cd1",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23134208,
+          "pid": 891302,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50109994",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.17721561598591506,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "07ca9-110-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product22_r17_07ca9_110_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/07ca9-110-modl.log",
+          "log_sha256": "2f660c7349560a5047bef08b6cb161d0b09a86f4d77e0abfbea39c9297a964fd",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21295104,
+          "pid": 891304,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110014",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.1257403859635815,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "08234-159-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product24_r17_08234_159_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/08234-159-mod2.log",
+          "log_sha256": "204c587ae0f22967a9f3470cf10b3617c0a29451009eb8f8c4f1ac77d0320bca",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23158784,
+          "pid": 891306,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110029",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.17713925597490743,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "08234-159-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product22_r17_08234_159_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/08234-159-modl.log",
+          "log_sha256": "3f4b2ffc9c39827ff9d009cbbd4d23cd1a67078f51ce628e312799721996e339",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21319680,
+          "pid": 891308,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110049",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.1251391749829054,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "08234-339-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product24_r17_08234_339_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/08234-339-mod2.log",
+          "log_sha256": "43ef230033eb0c8f62e64c16e7d3b15006bbf4f710ae6d5407a554cda03eaadf",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22966272,
+          "pid": 891310,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110064",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.17846726899733767,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "08234-339-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product22_r17_08234_339_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/08234-339-modl.log",
+          "log_sha256": "3f4b2ffc9c39827ff9d009cbbd4d23cd1a67078f51ce628e312799721996e339",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21307392,
+          "pid": 891312,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110084",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.12549653596943244,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "08234-590-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product24_r17_08234_590_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/08234-590-mod2.log",
+          "log_sha256": "8882dd3e5749c766d673076c25bc1f01ced54ad41844872ac86096151a6c6e1c",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22859776,
+          "pid": 891314,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110099",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.1773280730121769,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "08234-590-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product22_r17_08234_590_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/08234-590-modl.log",
+          "log_sha256": "3f4b2ffc9c39827ff9d009cbbd4d23cd1a67078f51ce628e312799721996e339",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21028864,
+          "pid": 891316,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110119",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.12585295195458457,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "08234-956-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product24_r17_08234_956_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/08234-956-mod2.log",
+          "log_sha256": "830a3ce3ccdd2311ce7941777eb4cfecce522cfd6c899da4ab00769afa344c52",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23121920,
+          "pid": 891318,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110134",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.17690453998511657,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "08234-956-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product22_r17_08234_956_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/08234-956-modl.log",
+          "log_sha256": "3f4b2ffc9c39827ff9d009cbbd4d23cd1a67078f51ce628e312799721996e339",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21274624,
+          "pid": 891320,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110154",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.1253930269740522,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "08f72-005-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product24_r17_08f72_005_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/08f72-005-mod2.log",
+          "log_sha256": "a95868958981bc2ebad8ca3609526f524525710ca2938f3610e6a339b316624d",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23179264,
+          "pid": 891322,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110169",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.17713608994381502,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "08f72-005-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product22_r17_08f72_005_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/08f72-005-modl.log",
+          "log_sha256": "18d675eb0c735a85a138765545363f3ffa7fa7243621df555df25715098567a4",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21303296,
+          "pid": 891324,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110189",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.12625488301273435,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "08f72-131-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product24_r17_08f72_131_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/08f72-131-mod2.log",
+          "log_sha256": "4acb49c496cdfff7737a453d92f4ab2b65fe8b2b4f07b11c2bd35f6423ac1d76",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22818816,
+          "pid": 891326,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110204",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.1779790730215609,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "08f72-131-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product22_r17_08f72_131_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/08f72-131-modl.log",
+          "log_sha256": "18d675eb0c735a85a138765545363f3ffa7fa7243621df555df25715098567a4",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21032960,
+          "pid": 891328,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110224",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.12572608096525073,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "08f72-168-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product24_r17_08f72_168_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/08f72-168-mod2.log",
+          "log_sha256": "39d6af21662ef2d7d97f418a3544bce427f4bf43e5e9f6ff8f5c1150b2e5db59",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22880256,
+          "pid": 891330,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110239",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.1761080779833719,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "08f72-168-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product22_r17_08f72_168_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/08f72-168-modl.log",
+          "log_sha256": "18d675eb0c735a85a138765545363f3ffa7fa7243621df555df25715098567a4",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21151744,
+          "pid": 891332,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110259",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.12567574600689113,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "08f72-358-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product24_r17_08f72_358_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/08f72-358-mod2.log",
+          "log_sha256": "9b3e0abdc63279dd601f5baccb365f529a732a3277f3b3e2de4f8800a4586697",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22917120,
+          "pid": 891334,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110274",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.17658532899804413,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "08f72-358-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product22_r17_08f72_358_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/08f72-358-modl.log",
+          "log_sha256": "18d675eb0c735a85a138765545363f3ffa7fa7243621df555df25715098567a4",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 20987904,
+          "pid": 891336,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110294",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.12588313699234277,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "103b2-005-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product24_r17_103b2_005_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/103b2-005-mod2.log",
+          "log_sha256": "ec7f5386698044272fa462c23f23e4d7b85a806accf8cc9eba4a11ea0533b4c7",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22876160,
+          "pid": 891338,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110309",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.17697760998271406,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "103b2-005-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product22_r17_103b2_005_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/103b2-005-modl.log",
+          "log_sha256": "8ad1067f1a674b9729c6aa5876bb963ad688f46ea8b931460f41c20dea4cf259",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21045248,
+          "pid": 891340,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110329",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.12653558398596942,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "103b2-023-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product24_r17_103b2_023_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/103b2-023-mod2.log",
+          "log_sha256": "adc23bdcc1b96da2dc1f19940c108ea75bdef36e3488e968419e5edf8e3368b2",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22884352,
+          "pid": 891342,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110343",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.17662140500033274,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "103b2-023-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product22_r17_103b2_023_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/103b2-023-modl.log",
+          "log_sha256": "8ad1067f1a674b9729c6aa5876bb963ad688f46ea8b931460f41c20dea4cf259",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21147648,
+          "pid": 891344,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110363",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.12563117098761722,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "103b2-394-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product24_r17_103b2_394_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/103b2-394-mod2.log",
+          "log_sha256": "ea1f2eeb120cbf879b9e1135cbee7384d85341c8ca6eca54230634e0aa16d706",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22884352,
+          "pid": 891346,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110378",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.1773255960433744,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "103b2-394-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product22_r17_103b2_394_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/103b2-394-modl.log",
+          "log_sha256": "8ad1067f1a674b9729c6aa5876bb963ad688f46ea8b931460f41c20dea4cf259",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21266432,
+          "pid": 891348,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110398",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.1261182920425199,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "11952-005-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product24_r17_11952_005_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/11952-005-mod2.log",
+          "log_sha256": "3a8fe4633ff4054665754643a90fdcb9fdc35088e8d7d0ac46c19627daa8a8bd",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23130112,
+          "pid": 891350,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110413",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.17667997995158657,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "11952-005-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product22_r17_11952_005_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/11952-005-modl.log",
+          "log_sha256": "63e52451b2842c252cfa9011baa13284f422e4ea40c38fafcd1a11ee170f15d9",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21843968,
+          "pid": 891373,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110433",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.1771394310053438,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "11952-007-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product24_r17_11952_007_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/11952-007-mod2.log",
+          "log_sha256": "a5c7011e681e8b5616a1944035288d0f437842f94fd36cb2f3172939ebbca6b6",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22872064,
+          "pid": 891407,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110454",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.1764443189604208,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "11952-007-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product22_r17_11952_007_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/11952-007-modl.log",
+          "log_sha256": "d6bd8c1d2e95f817ab96ed06aadbf41aaea058634af530197ece844bb183df1e",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21041152,
+          "pid": 891409,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110473",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.1252188400248997,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "11952-659-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product24_r17_11952_659_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/11952-659-mod2.log",
+          "log_sha256": "31db1ef719d49d36c664897d4010c5985f4ec6ccb986487f6b3e1c7e87609e7e",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23130112,
+          "pid": 891411,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110488",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.17692006996367127,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "11952-659-modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/artifacts/generated-results/elliptic-curves/product22_r17_11952_659_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/11952-659-modl.log",
+          "log_sha256": "d6bd8c1d2e95f817ab96ed06aadbf41aaea058634af530197ece844bb183df1e",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21311488,
+          "pid": 891413,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110508",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.12572206603363156,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "visibility48",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_generic_point_box_visibility.py",
+            "replay"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/visibility48.log",
+          "log_sha256": "370d929fdb4a3152a7b8f5403a7e1fa5a563fd28d4660533162b8821cc86c1c2",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 97234944,
+          "pid": 891415,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50110523",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 30.58609419997083,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "visibility-known28",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/audit_native28_generic_visibility.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/visibility-known28.log",
+          "log_sha256": "f9c7a57f92a973f4343f548070bb76c35936597ed2a7e9a110c78f937ea41c86",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 41545728,
+          "pid": 891443,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50113584",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.7918147899908945,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "aggregate",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/workspace/elliptic-curves/cas/report_product22_comparison.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 60
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/aggregate.log",
+          "log_sha256": "e8574eda219dd36130f85926d6c38d809a69cdb7286de61eb6cee54ca84e14a8",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 93585408,
+          "pid": 891445,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "50113667",
+          "termination_signal": null,
+          "timeout_seconds": 60,
+          "wall_seconds": 0.8528375189634971,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      }
+    ],
+    "status": "PASS"
+  },
+  "logical_stages": 50,
+  "schema": "elliptic-curves.product22-comparison-portable-replay.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/product22_comparison_evidence_v1.json": "5c4ed06e6b84e60a1f464c9a79158ee6d3189372b474ea3534a5e548bde9c96b",
+    "artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/ledger.json": "4a9782138bd18243091a7f65a6740886997d20fb31f1b64b7073a16bc91f16a7",
+    "artifacts/local/elliptic-curves/product22-comparison-portable-v1/verification/protocol.json": "c1ecf0e822bd1f34a781fb4e7732d7d18698c435b49168d94eb503fcc0782418",
+    "elliptic-curves/cas/report_product22_comparison_portable.py": "f1c7484ea76eed71572d3f1b070be70dc11c382fd8cdae95bf65e221716e12cf"
+  },
+  "status": "PASS"
+}

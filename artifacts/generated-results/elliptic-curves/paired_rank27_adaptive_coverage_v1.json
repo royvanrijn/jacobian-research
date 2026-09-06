@@ -1,0 +1,29 @@
+{
+  "adaptive_attempted_charts": 301,
+  "adaptive_completed_boxes": 301,
+  "adaptive_declared_charts": 301,
+  "claim_boundary": "Recorded completed box coverage trusts the pinned PARI executions. All301 adaptive histories replay. Full retained-cloud finite quotient certificates are lower bounds only; no exact rank, saturation or point-absence conclusion.",
+  "cloud_verification_ledger_sha256": "c376f29cf491c2572ab4ba902a38d8368811c3d4dd568c9c99923cbce3e46b05",
+  "height": 100000,
+  "initial_charts": 43,
+  "mod2_lower_bound": 27,
+  "odd_modulus_lower_bounds": {
+    "3": 27,
+    "5": 27
+  },
+  "point_certificates": {
+    "artifacts/generated-results/elliptic-curves/paired_rank27_all_retained_mod2_v1.json": "752df5fece02cb21f8abbff01e64eb90fad4a3007d667b31d29fd7ea5cca2c08",
+    "artifacts/generated-results/elliptic-curves/paired_rank27_all_retained_modl_v1.json": "3a5fc1f6cd8cb2c08f96b70c7dadd2cf32b07803c15acde1291a3b50f1c35c9e"
+  },
+  "retained_point_count": 1832,
+  "schema": "elliptic-curves.paired-rank27-adaptive-coverage.v1",
+  "sources": {
+    "artifacts/local/elliptic-curves/fresh-r17-paired-pari-v1/074d9-007/result.json": "6299686cd5bc3a775674a0278e84d4f43b618bf8a91893c0b035cbf9e95a3530",
+    "artifacts/local/elliptic-curves/paired-rank27-adaptive-v1/maps.json": "c08ba2e24526aebeb00d823c297a8e656199c83513674d382be2c9cbbe44c783",
+    "artifacts/local/elliptic-curves/paired-rank27-adaptive-v1/protocol.json": "14c801225e58c5b663f80bec64edd9d73eb69f68f0e515e07cdf86bf4d801ef0",
+    "artifacts/local/elliptic-curves/paired-rank27-adaptive-v1/replay.supervisor.json": "6c696799a3fe2d92bb7566058c656d7f310e8f5d43724a870fffe1c84e7e52d0",
+    "artifacts/local/elliptic-curves/paired-rank27-adaptive-v1/result.json": "2a236edae7e79662b8122eaa2b55d968143ba3e519c0138da7f8c1da4c10661a",
+    "artifacts/local/elliptic-curves/paired-rank27-adaptive-v1/worker.supervisor.json": "20d342edb9b4f9c43afcfd070602d40ac3911e77eeaa32334ffb4dbecb625785",
+    "elliptic-curves/cas/audit_paired_rank27_followup.py": "ac9a8d69b94268664a863f485c3524e8254ae68e62168673d44a3772de8592fd"
+  }
+}

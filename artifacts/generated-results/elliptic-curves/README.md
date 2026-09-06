@@ -1,5 +1,69 @@
 # Active elliptic-curve artifacts
 
+The [five compact192 rank26 curves](compact192_rank26_models_v1.json) have a [standalone690KB proof bundle](compact192_five_rank26_evidence_v1.zip), requiring no base archives. Both [isolated model-proof and Sage-export checks](compact192_five_rank26_portable_replay_v1.json) pass.
+
+The [completed endpoint point trial](endpoint_specialized_trial_v1.json) has 252 completed boxes and bounds at most 19 among its certificates. Its [evidence bundle](endpoint_point_trial_evidence_v1.json) passes [all 66 isolated replay stages](endpoint_point_trial_portable_replay_v1.json), including the six rank-27 subgroup saturation proofs at 2, 3 and 5. These lower bounds are not whole-curve upper bounds.
+
+The [exact endpoint section spans](endpoint_section_spans_summary_v1.json) establish 19 specialization losses and five proper indices in known section-generated groups. The [evidence bundle](endpoint_section_spans_evidence_v1.json) passes [all three isolated checks](endpoint_section_spans_portable_replay_v1.json).
+
+The [skew parameter experiment](skew_r17_experiment_v1.json) adds no high-rank curve. The [endpoint audit](compact_endpoint_summary_v1.json) certifies section bounds on 21 omitted nonsingular curves. Their [combined evidence](skew_endpoint_evidence_v1.json) passes [all 54 isolated replay stages](skew_endpoint_portable_replay_v1.json).
+
+The [101-curve inventory](new_high_rank_curve_index_v12.json) and
+[equation CSV](new_high_rank_curve_index_v12.csv) contain certified lower
+bounds22–27, including six with bound27, unmatched among593 pinned equations.
+The latest [minimal25-point proof](scaled13_24_rank25_minimal_proof_v1.json)
+and [Sage point file](new_scaled13_rank25_curve_11952.sage) describe11952 at102/1525;
+[canonical discovery and local-feature experiments](../../../elliptic-curves/notes/LOCAL_FEATURE_RANK25_2026-09-06.md).
+
+The [specialized parity report](specialized_parity_experiment_v1.json) and
+[evidence archive](specialized_parity_evidence_v1.json) retain the known29
+recovery at125000 and294 completed prospective boxes without a new bound28.
+[All24 isolated checks pass](specialized_parity_portable_replay_v1.json).
+
+The [local-feature report](local_feature_experiments_v1.json) and
+[evidence archive](local_feature_evidence_v1.json) retain both24-curve cohorts,
+301 follow-up boxes and the new25 curve. [All113 isolated checks pass](local_feature_portable_replay_v1.json).
+
+The [product-first report](product_first_experiment_v1.json) and
+[evidence archive](product_first_evidence_v1.json) retain4338 newly selected
+addresses and1080 completed point boxes without a high-rank addition.
+[All55 isolated checks pass](product_first_portable_replay_v1.json).
+The preceding [paired comparison](product22_comparison_v1.json) passes
+[50 isolated checks](product22_comparison_portable_replay_v1.json).
+The [masked/height supplement](higher_masked_height_evidence_v1.json) passes
+[11 isolated checks](higher_masked_height_portable_replay_v1.json): six known
+directions recovered, and the1233-point deeper-search union still certifies26.
+
+The [higher-parameter evidence](higher_r17_rank26_evidence_v1.json) retains the
+fixed population, all6144 prime-score extensions,1080 initial boxes,301 adaptive
+boxes,100-curve inventory and1200 incidence pairs.
+[All40 isolated checks pass](higher_r17_rank26_portable_replay_v1.json).
+The [new-direction supplement](higher_rank26_direction_evidence_v1.json)
+retains301 further completed boxes and the965-point cloud, still certifying26;
+[all three isolated checks pass](higher_rank26_direction_portable_replay_v1.json).
+
+The [first new MW16 rank27 proof](new_mw16_rank27_minimal_proof_v1.json),
+[Sage point file](new_mw16_rank27_curve_a1_01.sage) and
+[18-stage evidence replay](new_mw16_rank27_portable_replay_v1.json) remain available.
+The [preceding MW16 evidence](million_height_mw16_evidence_v1.json) retains its
+[population-file correction](million_height_mw16_population_supplement_v1.json)
+and [47 completed logical checks](million_height_mw16_portable_replay_v1.json).
+
+The [fast pipeline evidence](fast_point_pipeline_evidence_v1.json) completes both fixed 301-box PARI follow-ups. The full point clouds still certify 26 and 22 modulo 2, 3 and 5; all 13 isolated pipeline checks pass.
+
+The [exact parity and coordinate supplement](exact_parity_coordinate_evidence_v1.json)
+contains all six exact parity proofs, completed search gaps and fixed-box
+coordinate/backend controls; see the [canonical audit](../../../elliptic-curves/notes/EXACT_PARITY_AND_COORDINATE_AUDIT_2026-09-06.md).
+
+The [new rank-at-least-26 proof](new_compact_rank26_proof_v1.json) contains
+26 independent points and a global minimal integral equation;
+[standalone Sage curve](new_compact_rank26_curve.sage),
+[canonical note](../../../elliptic-curves/notes/NEW_COMPACT_RANK26_CURVE_2026-09-05.md).
+The [balanced R17 evidence](compact_r17_wide_evidence_v1.json) retains six
+fresh generic parity censuses and all 1,032 replayed charts on 24 fixed candidates.
+The [rank26 follow-up](new_rank26_followup_evidence_v1.json) adds 301 exactly
+replayed chart attempts, a 1,947-point audit and explicit remaining search gaps.
+
 The [new rank-at-least-22 small-conductor proof](small_conductor_rank22_proof_v1.json)
 contains 22 independent points and a Sage-free exact conductor certificate;
 [canonical note](../../../elliptic-curves/notes/NEW_SMALL_CONDUCTOR_CURVE_2026-09-05.md).
@@ -10,19 +74,20 @@ The [bounded follow-up](small_conductor_followup_evidence_v1.json) retains
 The [refreshed inventory comparison](refreshed_new_curve_inventory_replay_v1.json)
 checks all 36 equations against the later pinned 586-row catalogue.
 
-The [cross-family incidence bundle](compact_cross_family_incidence_evidence_v1.json)
-contains 384 exact projective j-incidence outcomes and the generic R17
-section transport proof; [canonical note](../../../elliptic-curves/notes/COMPACT_CROSS_FAMILY_INCIDENCE_2026-09-05.md).
+The [seventy-curve cross-family incidence supplement](inventory70_incidence_evidence_v1.json)
+checks all 840 pairs for the 70-curve cohort. Its six isolated stages replay
+four incidence cohorts, the exact generic R17 section transport, and the
+aggregate binding; [canonical proof](../../../elliptic-curves/notes/INVENTORY70_CROSS_FAMILY_INCIDENCE_2026-09-06.md).
+The earlier component certificates remain retained.
 
 The [retained-point admission audit](../../../elliptic-curves/notes/RECORDED_POINT_ADMISSION_AUDIT_2026-09-05.md)
 indexes [202 exact point-cloud proofs](recorded_mod2_admission_audit_v1.json)
 and a portable evidence ZIP. It recovers known rank 26 at prime 257.
 
-The [consolidated 36-curve index](new_high_rank_curve_index_v2.json) contains
-equations, points and exact rank certificates, including three rank-at-least-25
-examples; [equation CSV](new_high_rank_curve_index_v2.csv).
+The historical [39-curve index](new_high_rank_curve_index_v3.json) contains
+equations, points and exact rank certificates, including one with lower bound 26 and five with 25; [equation CSV](new_high_rank_curve_index_v3.csv).
 The [wider MW16 certificate](prospective_mw16_wide_results_v1.json) supplies
-the latest new rank-at-least-25 example; see the
+an earlier new rank-at-least-25 example; see the
 [completed searches and remaining gaps](../../../elliptic-curves/notes/PROSPECTIVE_COMPACT_MW16_PILOT_2026-09-05.md).
 
 The [prospective MW16 certificates](prospective_mw16_results_v1.json) add ten

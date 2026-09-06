@@ -1,0 +1,458 @@
+{
+  "archive": "artifacts/generated-results/elliptic-curves/paired_rank27_inventory_replay_evidence_v2.zip",
+  "archive_bytes": 65553,
+  "archive_sha256": "53ca4e9dbb8d24c53f9979b875adc7e6b7d78e440961f3050470dafcd89dc0d9",
+  "claim_boundary": "Preserves34 passed original isolated checks and the inventory180-second timeout. Adds a separately versioned memory-cache inventory/CSV replayer and exact latest8 incidence evidence. Completion requires the new isolated inventory replay; no original outcome is rewritten.",
+  "files": [
+    {
+      "bytes": 2977,
+      "path": "artifacts/generated-results/elliptic-curves/latest8_incidence_portable_replay_v1.json",
+      "sha256": "8ea62a239ad0a57896d6d8743bd8656131817869e385c49b9e9a9d0ee783090d"
+    },
+    {
+      "bytes": 4602,
+      "path": "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v4_memory_replay_v1.json",
+      "sha256": "5f7775af016a6b7e7ca9f82ab09b3278bf75ba09289d4976b03f93bc96b3dbac"
+    },
+    {
+      "bytes": 76405,
+      "path": "artifacts/generated-results/elliptic-curves/paired_rank27_portable_replay_v1.json",
+      "sha256": "e7687695245184c6ef5c3215ce71eda5e8837c5830dbdf62baba3af648c29896"
+    },
+    {
+      "bytes": 2107,
+      "path": "artifacts/local/elliptic-curves/inventory-v4-memory-replay-v1/replay.log",
+      "sha256": "db3c01c094c536a459cc06478f10371ba8b809b4c50498cf57f8312c89427e97"
+    },
+    {
+      "bytes": 1029,
+      "path": "artifacts/local/elliptic-curves/inventory-v4-memory-replay-v1/replay.supervisor.json",
+      "sha256": "b43de7476e606892787d6e57e65d2eeab63a69e877896e16160c9be31e6c393e"
+    },
+    {
+      "bytes": 36,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/batch-certificates.log",
+      "sha256": "1df4b60babb9a0dd33d6adf2e749f60995d865697cca33883319157462ef9a1b"
+    },
+    {
+      "bytes": 1021,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/batch-certificates.supervisor.json",
+      "sha256": "1dfdc224d31fc3e3387afab7ec1a7603c79257568534eb4186dfcfc301d54bbd"
+    },
+    {
+      "bytes": 52,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-074d9-004.log",
+      "sha256": "d7b4a35c212eb587ddae4d1c3520eddcb2f14800f052a1ac9f4e4710d4edaaef"
+    },
+    {
+      "bytes": 1217,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-074d9-004.supervisor.json",
+      "sha256": "8da3f6aa3e9208e5ac17d5a8ac9e97449acc5ef888a3606964166de345e1afa9"
+    },
+    {
+      "bytes": 56,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-074d9-005.log",
+      "sha256": "7d8b93c3ea2442c3792f7edc6e66a5360b9cfce42d6e72a932363d5a4f2ff2d7"
+    },
+    {
+      "bytes": 1218,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-074d9-005.supervisor.json",
+      "sha256": "af70104a29557678ad5ff825983acd1513e1f95f7362eac016044254cad57996"
+    },
+    {
+      "bytes": 56,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-074d9-007.log",
+      "sha256": "646973038c8d6efc5bb2fb9a03376f826f9b8d622b20490fc7eea527b5ccc0ef"
+    },
+    {
+      "bytes": 1218,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-074d9-007.supervisor.json",
+      "sha256": "d886f4a9a70ccb27adef8b07301ba2090ecf6c7ca47828596d0948b41b79555f"
+    },
+    {
+      "bytes": 55,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-074d9-017.log",
+      "sha256": "3487f207e6315603183a304036d55dcbf91b537ff465e655a908340a07174bf3"
+    },
+    {
+      "bytes": 1219,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-074d9-017.supervisor.json",
+      "sha256": "9da5b57f2047a0e764c2e3af076898e2bd6fda19bd66501942e6bb5739dd557e"
+    },
+    {
+      "bytes": 56,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-07ca9-004.log",
+      "sha256": "75099d0fcc76c69f8aab8b87696a08518e6ee732ef8c44265217e13feda6748f"
+    },
+    {
+      "bytes": 1219,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-07ca9-004.supervisor.json",
+      "sha256": "098e27304789655326c0f6eea8ab03760293b7410b09bc98527a0c4e0a842cf4"
+    },
+    {
+      "bytes": 55,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-07ca9-005.log",
+      "sha256": "8e23996a125699527fb292c40c017898a54db40914258f568551d2ec6660c5ea"
+    },
+    {
+      "bytes": 1219,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-07ca9-005.supervisor.json",
+      "sha256": "b9a8c483f94ba558c10e0e88fcaf307e6ff8ec7cb4a030d001cc1420949c3dd6"
+    },
+    {
+      "bytes": 55,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-07ca9-025.log",
+      "sha256": "17a08b9297b8cf90a514845d1d6a6dff98616cf824ff0f041b247cc649f495f3"
+    },
+    {
+      "bytes": 1218,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-07ca9-025.supervisor.json",
+      "sha256": "a3a8970c307b04104eac2c21c795f0d5ba6407d763ee11f2a08520b65c49e460"
+    },
+    {
+      "bytes": 56,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08234-004.log",
+      "sha256": "d2267bd216033bc13fa8872daf344b7b7497ae6d019b8e5b30e757dfebd3b7a3"
+    },
+    {
+      "bytes": 1218,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08234-004.supervisor.json",
+      "sha256": "2a6d40309edd47998c40c4912918892fe926e0bd5d31a6cf90bed9e30ce0eedf"
+    },
+    {
+      "bytes": 57,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08234-005.log",
+      "sha256": "5e637a19dda6113c79316ba7ea60cc8fca7c361b2e085fc6dc3ab9189fc2d635"
+    },
+    {
+      "bytes": 1219,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08234-005.supervisor.json",
+      "sha256": "6482968e974fdadf6920fbec107326f2ffdca456bbebce91f0ef1e9857816f13"
+    },
+    {
+      "bytes": 55,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08234-015.log",
+      "sha256": "9954cc99f2b56a2691432d0150b21eadd72fd1234b769ba9b87d34532b86c84e"
+    },
+    {
+      "bytes": 1218,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08234-015.supervisor.json",
+      "sha256": "b89f585133fcb9f61a7205f959c9b7d893b7f90eca3057a5f8332546b10b0148"
+    },
+    {
+      "bytes": 55,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08234-037.log",
+      "sha256": "5443b0a47e983ee9ff96da67e8e56599ab2e79b7270c8a06f6c24ba44508083e"
+    },
+    {
+      "bytes": 1219,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08234-037.supervisor.json",
+      "sha256": "e2b1f665cc70ee35179b50685e82959cb6a43997b3272d9a676ee6c6db3de0bc"
+    },
+    {
+      "bytes": 57,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08f72-004.log",
+      "sha256": "42085cec3d4989c5f3163dcf87eca84d386ff0a99f6fc2a9f06ce6388c980ebd"
+    },
+    {
+      "bytes": 1219,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08f72-004.supervisor.json",
+      "sha256": "cf51f7a321a43ab56a2d1abdc5690a68e489a1c5c71b32fe016b26e95d4a78f2"
+    },
+    {
+      "bytes": 55,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08f72-005.log",
+      "sha256": "f9da5fb590def9eb2ccc7a814f4cfbc89719df718b27dd233bb06992a701866d"
+    },
+    {
+      "bytes": 1219,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08f72-005.supervisor.json",
+      "sha256": "09e5ded101b922e22faa68ae4c42b9c95a74f8401d201437a4558e5fa5bafa3e"
+    },
+    {
+      "bytes": 51,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08f72-009.log",
+      "sha256": "977fde3b9a21a0119ef10c9291f7c1bed9f9ce6c007d6b5bb1d6abf626165f96"
+    },
+    {
+      "bytes": 1217,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08f72-009.supervisor.json",
+      "sha256": "4bfc1dd570c5ed65f8ae5fcb939b45be1256f1538b6d2f39576be04b44ccf581"
+    },
+    {
+      "bytes": 54,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08f72-070.log",
+      "sha256": "51478048fa18e39f3a7ae2bc723614d1117ca143502873e530caa4a71f565e72"
+    },
+    {
+      "bytes": 1218,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-08f72-070.supervisor.json",
+      "sha256": "2378f9c68cf3aa59b4a7fc8fa67fde447f494891955dfa499f3e1bcc41d4c6aa"
+    },
+    {
+      "bytes": 54,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-103b2-004.log",
+      "sha256": "1c2b8001d0d5487cdef77d588d7e2e7ff8441d1d1ebd01d5d667f0294d7e81af"
+    },
+    {
+      "bytes": 1219,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-103b2-004.supervisor.json",
+      "sha256": "b3b6f3ce68151efb4edbfc3808e5baf7d48ec50803a0d00abb900cac126791f9"
+    },
+    {
+      "bytes": 57,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-103b2-005.log",
+      "sha256": "fc019dfa27aaeff4e55ba0c79ca47ff13bce7d398e529d1eebeb5bf1a4cd4510"
+    },
+    {
+      "bytes": 1219,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-103b2-005.supervisor.json",
+      "sha256": "248576cc4d38f47fd2278cc0f021c2e92115743f623dfdd59e158c9b7a687b01"
+    },
+    {
+      "bytes": 54,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-103b2-026.log",
+      "sha256": "ec66ee389e83e99466b2ec88e880442d3ab8c3632989cc683b259cea187f6211"
+    },
+    {
+      "bytes": 1218,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-103b2-026.supervisor.json",
+      "sha256": "0fb3d73d990511e87ee345ef83a01ab189db0c3b75d1e7daaf407e87e66afeb5"
+    },
+    {
+      "bytes": 54,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-103b2-062.log",
+      "sha256": "5a99c0371083b023cc68b204ce451250ed95c8da5ccf54b691e19c5924a70572"
+    },
+    {
+      "bytes": 1219,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-103b2-062.supervisor.json",
+      "sha256": "9bc58c4bd84eb08b132a8a036279e76cfbcaa342d0acecf5b765a1cc00cb7238"
+    },
+    {
+      "bytes": 56,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-11952-004.log",
+      "sha256": "cff0f0c9764eccd8273dbc50fcc89c0807126b68b4a0ff1ff2def036d959e82c"
+    },
+    {
+      "bytes": 1218,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-11952-004.supervisor.json",
+      "sha256": "a6b35b397d33ae3c2331289f349bc3d0dd542b867f48ebd5fc3dae6142571f24"
+    },
+    {
+      "bytes": 56,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-11952-005.log",
+      "sha256": "b4d3dd85a1691c0488da7428b0ae4a70184c0d87cefa502fe771211fb4d02d0e"
+    },
+    {
+      "bytes": 1218,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-11952-005.supervisor.json",
+      "sha256": "5662149556cfe390961a10b1611ea8d983905e6f1d9b1a63ac53142d804fc9cc"
+    },
+    {
+      "bytes": 55,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-11952-010.log",
+      "sha256": "b6f991a66141cc80f43fe4985bbca4fdb892aa7645e8b560a7a1c5e35ded50f7"
+    },
+    {
+      "bytes": 1218,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-11952-010.supervisor.json",
+      "sha256": "6262daec7afc3c700f24c1fceb8b959f5a103d8a38b9ec6e3175fdbf77c0fc18"
+    },
+    {
+      "bytes": 56,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-11952-048.log",
+      "sha256": "7e87f615a4234a558e856fcd7a85789e905878e9702fd7bead7622394c1bcc75"
+    },
+    {
+      "bytes": 1219,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/cloud-11952-048.supervisor.json",
+      "sha256": "f37008f28ab8469ca4fc911198c52481cd4f95288bf8a093b86c9cc6f673ed91"
+    },
+    {
+      "bytes": 113,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/first-rank27.log",
+      "sha256": "b61e82ebdd36c0bf4140f3e2ca20f00d88104b2d858e4c6d9ce50fe8f213525b"
+    },
+    {
+      "bytes": 1005,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/first-rank27.supervisor.json",
+      "sha256": "138fe28475b0a3e81ecf2596c7da0f1c08fd40120d8126a6dbb4fe95a04c6884"
+    },
+    {
+      "bytes": 186,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/geometry-and-provenance.log",
+      "sha256": "3628eb1bb1e4db5531bacee98779a79a9bf1c23cb828ce40244456b7d0874dae"
+    },
+    {
+      "bytes": 1008,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/geometry-and-provenance.supervisor.json",
+      "sha256": "76811f69337da10b445db497088fd1ab427754255b5be6817331fadeb1b692f9"
+    },
+    {
+      "bytes": 1274,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/inventory47.log",
+      "sha256": "3953d8a37bff8144a371c9bf8dede74f7ac44587859071995bfe95e86f631114"
+    },
+    {
+      "bytes": 1237,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/inventory47.supervisor.json",
+      "sha256": "5e24684b60f06654d2cdb8676c79432f1263eb28b097b0c5bdf2b6213ddc1067"
+    },
+    {
+      "bytes": 51006,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/ledger.json",
+      "sha256": "d6dafcf335a08c256dee12f6f3f12952c060443d435f580a08268b8ad6034d88"
+    },
+    {
+      "bytes": 39,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/minimal-models.log",
+      "sha256": "922b7feaece3f1627e6da1c0d7bc32456ade18a43d41f10704fc0a24580e43f4"
+    },
+    {
+      "bytes": 1020,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/minimal-models.supervisor.json",
+      "sha256": "55739a9c53d17bf074dff4be506e5f7b8cffdcb24fddd8d75c56ed6685e8f283"
+    },
+    {
+      "bytes": 56,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/paired_rank27-mod2.log",
+      "sha256": "646973038c8d6efc5bb2fb9a03376f826f9b8d622b20490fc7eea527b5ccc0ef"
+    },
+    {
+      "bytes": 1221,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/paired_rank27-mod2.supervisor.json",
+      "sha256": "19e0fda3dd0aae89c63c346d49fdad4cca5d975bce1976bae851483cafe9d345"
+    },
+    {
+      "bytes": 78,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/paired_rank27-mod3-mod5.log",
+      "sha256": "bbea74fc2763a8d94be04f5bb0ab64240403540fe984022dd576cdc822e35be2"
+    },
+    {
+      "bytes": 1218,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/paired_rank27-mod3-mod5.supervisor.json",
+      "sha256": "cafe3e5e737142dff7c7db7454e208128ccf8332c73ddf900aa8287801cdf935"
+    },
+    {
+      "bytes": 55,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/paired_second27-mod2.log",
+      "sha256": "b6f991a66141cc80f43fe4985bbca4fdb892aa7645e8b560a7a1c5e35ded50f7"
+    },
+    {
+      "bytes": 1225,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/paired_second27-mod2.supervisor.json",
+      "sha256": "789af191380f9f81a3f01288931defde56a62a6769bdfb901d74f30fd12af3ec"
+    },
+    {
+      "bytes": 78,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/paired_second27-mod3-mod5.log",
+      "sha256": "54921805d2d33b982ad8cf8525900bf4fdbaab2f23d59740656538cbdf4c8b00"
+    },
+    {
+      "bytes": 1222,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/paired_second27-mod3-mod5.supervisor.json",
+      "sha256": "a8db8a5786b3befb65a864a569618afc301d80d74c952d567c1de46ca5866a91"
+    },
+    {
+      "bytes": 16615,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/protocol.json",
+      "sha256": "9faf4a746fd62526598a7be4da5ff9815a12741a4a98e5a29b1b964af1fa62bb"
+    },
+    {
+      "bytes": 98,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/test-memory_rank_certificate.log",
+      "sha256": "35e072967e6a0f63e78e425baf66a453e309765e3f23959f3d500b657546f10f"
+    },
+    {
+      "bytes": 1083,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/test-memory_rank_certificate.supervisor.json",
+      "sha256": "ff536561e102a202a2731379ab7837f4a6ce1155c7a45c3e12a2cd55191eeb10"
+    },
+    {
+      "bytes": 98,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/test-r17_prime_extension.log",
+      "sha256": "fb184ea57734512b1f088f9181209901b9cd46df3eb7eaa2500ea9e48dde20b5"
+    },
+    {
+      "bytes": 1075,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/test-r17_prime_extension.supervisor.json",
+      "sha256": "7d0cfd325bf4028113ba3b824904faf12ef0400daaec167409b0b899be045ceb"
+    },
+    {
+      "bytes": 479,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/trace-extension.log",
+      "sha256": "b6900ddb77023374a059555128e4f2a62a14f1951904472a86cc9bc6c2dcf8f0"
+    },
+    {
+      "bytes": 1018,
+      "path": "artifacts/local/elliptic-curves/paired-rank27-portable-v1/verification/trace-extension.supervisor.json",
+      "sha256": "431010f4a5faecccf5b4a1fcb88850223b8dfc47616e0f35564113fe2bc80cc4"
+    },
+    {
+      "bytes": 4120,
+      "path": "elliptic-curves/cas/complete_paired_rank27_inventory_replay.py",
+      "sha256": "0d79d88e0234ab1e8332385b09bc2f6a46cbbb59a90515ed55ea6409ef3cf4e8"
+    },
+    {
+      "bytes": 3332,
+      "path": "elliptic-curves/cas/package_paired_rank27_inventory_delta.py",
+      "sha256": "a58efe7d61ecaf48b4e3e49f8f81ab881abc8e2b9b3915ea9dcd55c5c7241e15"
+    },
+    {
+      "bytes": 3821,
+      "path": "elliptic-curves/cas/replay_inventory_v4_memory.py",
+      "sha256": "d240f60a6072c7ee9e8f397a9e05dcf8e4ec1eedae47da13a5d85430baac9771"
+    },
+    {
+      "bytes": 9597,
+      "path": "elliptic-curves/notes/EXTENDED_PRIME_RANK27_DISCOVERIES_2026-09-06.md",
+      "sha256": "e7a127ea772b22d48b0b724ecde655b3ce14e5b50c36787fcffd16b4bc7829c9"
+    }
+  ],
+  "required_base_archives": [
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/compact_r17_wide_evidence_v1.zip",
+      "archive_sha256": "d54b2a494a8bd3841700379aa28ef32366730bbc1bb208d5e03285786ff8a01a",
+      "manifest": "artifacts/generated-results/elliptic-curves/compact_r17_wide_evidence_v1.json",
+      "manifest_sha256": "c1f1f5262df6b9ec0218d38fd553e1d3fd467b6f5362ce8462279f34a77b238d"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/new_rank26_followup_evidence_v1.zip",
+      "archive_sha256": "202f421f4fbadb5d5ba0c5911883214c2ee9269ca79844e4bf1795fae0b77594",
+      "manifest": "artifacts/generated-results/elliptic-curves/new_rank26_followup_evidence_v1.json",
+      "manifest_sha256": "247675cc39e6816eab66d273b4375b140af2a73a1c41e7418e47c72edf2de030"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/exact_parity_coordinate_evidence_v1.zip",
+      "archive_sha256": "f6caba4eef5b22e0eedf242b47cba7c99a16e4e2cba9aae0102d1e92ce4f4a46",
+      "manifest": "artifacts/generated-results/elliptic-curves/exact_parity_coordinate_evidence_v1.json",
+      "manifest_sha256": "e936d77fa42c0358cddb5b6407e9b99b4922647b63907f80cb8b3a7486cc549c"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/small_conductor_followup_evidence_v1.zip",
+      "archive_sha256": "b355fd65496388e4e3b9a4c2bbce1b9af7f5573ee9a9efd64ceed1668028935f",
+      "manifest": "artifacts/generated-results/elliptic-curves/small_conductor_followup_evidence_v1.json",
+      "manifest_sha256": "43f27e5cf5d32122d6d19778bba34cb2d64f1b6e975bd70ed23f220ceba127a3"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/fast_point_pipeline_evidence_v1.zip",
+      "archive_sha256": "2108d6d5c21b04757c87dc7ef5369f7894e57569d0c7c61b74c998bf5bffc69d",
+      "manifest": "artifacts/generated-results/elliptic-curves/fast_point_pipeline_evidence_v1.json",
+      "manifest_sha256": "a2a3382767547e1be9fc6f9a3f7f33a1d316ff05cfbd03793e34bcfca2a9e431"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/paired_rank27_discovery_evidence_v1.zip",
+      "archive_sha256": "cf884ab414618e8df2ded9e6f037ca46eb28fa449286ce5e9e22b152446033f3",
+      "manifest": "artifacts/generated-results/elliptic-curves/paired_rank27_discovery_evidence_v1.json",
+      "manifest_sha256": "6218d541ec5f3588f6df81a131ae96524168c68cddb9376efc31c430f71fa2ec"
+    },
+    {
+      "archive": "artifacts/generated-results/elliptic-curves/latest8_cross_family_evidence_v1.zip",
+      "archive_sha256": "221a5a2a719308fc61684b32699669959fb95952a04852ff2d143ffa6cea0ee7",
+      "manifest": "artifacts/generated-results/elliptic-curves/latest8_cross_family_evidence_v1.json",
+      "manifest_sha256": "8636987a23d8308e1ba6e5810da609f96af003fc08f70e0ea06b7b34ba222989"
+    }
+  ],
+  "schema": "elliptic-curves.paired-rank27-inventory-replay-evidence.v2"
+}

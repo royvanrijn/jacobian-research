@@ -1,0 +1,1781 @@
+{
+  "schema": "elliptic-curves.retention24-portable-replay.v1",
+  "status": "PASS",
+  "protocol": {
+    "jobs": [
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/replay_retention24_geometry.py"
+        ],
+        "name": "geometry1080",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/retain512_compact_r17.py",
+          "replay"
+        ],
+        "name": "retained-short-scores6144",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/extend_retention512_r17_scores.py",
+          "replay"
+        ],
+        "name": "extended-trace-rosters4608",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/replay_native11952_rank28_coset_visibility.py",
+          "--output",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/oracle-replay.json"
+        ],
+        "name": "oracle-translations98",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/certify_retention24_r17_results.py",
+          "--check"
+        ],
+        "name": "batch-certificates24",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/certify_retention_high_rank_minimal.py",
+          "--check"
+        ],
+        "name": "high-rank-minimal",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/replay_inventory_v7_memory.py",
+          "--output",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/inventory-v7-result.json"
+        ],
+        "name": "inventory-v7",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_074d9_112_mod2_v1.json"
+        ],
+        "name": "cloud-074d9-112",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_074d9_425_mod2_v1.json"
+        ],
+        "name": "cloud-074d9-425",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_074d9_069_mod2_v1.json"
+        ],
+        "name": "cloud-074d9-069",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_074d9_415_mod2_v1.json"
+        ],
+        "name": "cloud-074d9-415",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_07ca9_280_mod2_v1.json"
+        ],
+        "name": "cloud-07ca9-280",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_07ca9_248_mod2_v1.json"
+        ],
+        "name": "cloud-07ca9-248",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_07ca9_214_mod2_v1.json"
+        ],
+        "name": "cloud-07ca9-214",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_07ca9_245_mod2_v1.json"
+        ],
+        "name": "cloud-07ca9-245",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_08234_433_mod2_v1.json"
+        ],
+        "name": "cloud-08234-433",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_08234_671_mod2_v1.json"
+        ],
+        "name": "cloud-08234-671",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_08234_154_mod2_v1.json"
+        ],
+        "name": "cloud-08234-154",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_08234_305_mod2_v1.json"
+        ],
+        "name": "cloud-08234-305",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_08f72_464_mod2_v1.json"
+        ],
+        "name": "cloud-08f72-464",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_08f72_124_mod2_v1.json"
+        ],
+        "name": "cloud-08f72-124",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_08f72_475_mod2_v1.json"
+        ],
+        "name": "cloud-08f72-475",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_08f72_336_mod2_v1.json"
+        ],
+        "name": "cloud-08f72-336",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_103b2_733_mod2_v1.json"
+        ],
+        "name": "cloud-103b2-733",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_103b2_461_mod2_v1.json"
+        ],
+        "name": "cloud-103b2-461",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_103b2_198_mod2_v1.json"
+        ],
+        "name": "cloud-103b2-198",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_103b2_074_mod2_v1.json"
+        ],
+        "name": "cloud-103b2-074",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_11952_113_mod2_v1.json"
+        ],
+        "name": "cloud-11952-113",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_11952_035_mod2_v1.json"
+        ],
+        "name": "cloud-11952-035",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_11952_571_mod2_v1.json"
+        ],
+        "name": "cloud-11952-571",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_11952_446_mod2_v1.json"
+        ],
+        "name": "cloud-11952-446",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/replay_compact_cross_family_incidence.py",
+          "--input",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/compact_cross_family_j_incidence_v1.json",
+          "--output",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/compact-incidence-replay.json"
+        ],
+        "name": "incidence-compact",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/replay_latest7_cross_family_incidence.py",
+          "--input",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/latest7_cross_family_j_incidence_v1.json",
+          "--output",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/latest7-incidence-replay.json"
+        ],
+        "name": "incidence-latest7",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/replay_latest8_cross_family_incidence.py",
+          "--input",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/latest8_cross_family_j_incidence_v1.json",
+          "--output",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/latest8-incidence-replay.json"
+        ],
+        "name": "incidence-latest8",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/replay_latest23_cross_family_incidence.py",
+          "--input",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/latest23_cross_family_j_incidence_v1.json",
+          "--output",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/latest23-incidence-replay.json"
+        ],
+        "name": "incidence-latest23",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/replay_retention_cross_family_incidence.py",
+          "--input",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention_cross_family_j_incidence_v1.json",
+          "--output",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/retention-incidence-replay.json"
+        ],
+        "name": "incidence-retention",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/certify_inventory89_incidence.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/inventory89_cross_family_incidence_v1.json"
+        ],
+        "name": "incidence-aggregate89",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/refresh_retention_catalogue.py",
+          "--check"
+        ],
+        "name": "catalogue593",
+        "wall_seconds": 120
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_compact_published_r17_transport_v3.sage",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/compact_published_r17_generic_transport_v1.json"
+        ],
+        "name": "generic-transport",
+        "wall_seconds": 120
+      }
+    ],
+    "manifest_sha256": "e0ac29b3f0ec27beaa85f8ba41f5ef93db27f6529db6bf2605ec1a2c69cad81a",
+    "rss_bytes": 1610612736,
+    "scope": "Isolated exact geometry and raw-point/cloud provenance for1080 charts,6144 short scores and all old128 prefixes,4608 extended trace rosters and fixed24 selection,98 retrospective oracle translations,24 exact point proofs, all new>=27 minimal models, the89-curve V7 inventory/CSV, all1068 incidence checks and generic transport, and the593-equation refreshed comparison. No point search. All admission/archive histories passed local replay and are retained but not repeated here.",
+    "verifier_sha256": "74ffbe2e4cf469d7055c99169a4a549e8d95d13c97255df67f2d7516d1b22b8d"
+  },
+  "ledger": {
+    "rows": [
+      {
+        "name": "geometry1080",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/replay_retention24_geometry.py"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/geometry1080.log",
+          "log_sha256": "7854dc2b1d401b2e64e84ede533f198ea30eff59cbcffddcfe5a789bda3823b4",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 183812096,
+          "pid": 2554545,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49076472",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 7.621986644982826,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "retained-short-scores6144",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/retain512_compact_r17.py",
+            "replay"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/retained-short-scores6144.log",
+          "log_sha256": "ed6e3fb7ac2f6af33af46f940259e02ff1b0a3608b6ad0174e6fb225e9faffaf",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 46022656,
+          "pid": 2555662,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49077231",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 2.9340065710130148,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "extended-trace-rosters4608",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/extend_retention512_r17_scores.py",
+            "replay"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/extended-trace-rosters4608.log",
+          "log_sha256": "4447eef231685536806633741809a8b38f1bfc59b4526f607be25561bbb90900",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 45092864,
+          "pid": 2555680,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49077527",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 21.93047821096843,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "oracle-translations98",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/replay_native11952_rank28_coset_visibility.py",
+            "--output",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/oracle-replay.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/oracle-translations98.log",
+          "log_sha256": "c78b6e18c4be40c90c70c3ca05139a5e7b9543e80d6d11859f3c2ed4494e6a78",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 58466304,
+          "pid": 2555852,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49079722",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 1.5040097599849105,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "batch-certificates24",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/certify_retention24_r17_results.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/batch-certificates24.log",
+          "log_sha256": "89a351aba400647043047de7f85203243b77bd68f7e335a3ca4e2c87c8d7296e",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 28704768,
+          "pid": 2555861,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49079875",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 3.8538971439702436,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "high-rank-minimal",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/certify_retention_high_rank_minimal.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/high-rank-minimal.log",
+          "log_sha256": "24c360e032496c4b8ce31ddb40b87cdce6d344390a202a1b6b38b8707ce56486",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 26554368,
+          "pid": 2555889,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49080263",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.48286520602414384,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "inventory-v7",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/replay_inventory_v7_memory.py",
+            "--output",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/inventory-v7-result.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/inventory-v7.log",
+          "log_sha256": "1eb1dca40085d9d612c3a58e54fc488985ff58fd4a32ab8249f5e83ede59a497",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 38789120,
+          "pid": 2555893,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49080313",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 12.73253203096101,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-074d9-112",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_074d9_112_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-074d9-112.log",
+          "log_sha256": "975c229d62d40c712c5eaa5161af015bac049bb1fe1a0b264414a953a4243e9a",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24436736,
+          "pid": 2556305,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49081589",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2280841390020214,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-074d9-425",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_074d9_425_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-074d9-425.log",
+          "log_sha256": "2e69e67dd39422502968b6096783df4a2a4b6fd75ff5fef6b4c318daa68a3b26",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24477696,
+          "pid": 2556313,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49081614",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.22855443798471242,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-074d9-069",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_074d9_069_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-074d9-069.log",
+          "log_sha256": "fab1b3eeb30185c8cd6812293e35cb68857b49077b878ff0e9ea9f7d6382ce9f",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 26288128,
+          "pid": 2556320,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49081640",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2791492829564959,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-074d9-415",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_074d9_415_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-074d9-415.log",
+          "log_sha256": "f928b9f3dd74d52e9754e309abe8ae28a6d4dec337212092996b4520f30c4314",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25776128,
+          "pid": 2556334,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49081670",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2787375540356152,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-07ca9-280",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_07ca9_280_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-07ca9-280.log",
+          "log_sha256": "c1e0630716672fed46de4a75eb9d780bd3c64255ca04bf924bbafecda0361998",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24444928,
+          "pid": 2556346,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49081700",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2782884140033275,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-07ca9-248",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_07ca9_248_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-07ca9-248.log",
+          "log_sha256": "537b5011522f7bddba35e753b742a97eac61f8072d8505a2570a81d4bd16fcb4",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 26300416,
+          "pid": 2556356,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49081731",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.27991378196747974,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-07ca9-214",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_07ca9_214_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-07ca9-214.log",
+          "log_sha256": "aa482486eba76c1732e13218ec8e48625d6ecbbd1e6426cbd8aa80d35108120a",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25653248,
+          "pid": 2556365,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49081761",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2784756139735691,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-07ca9-245",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_07ca9_245_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-07ca9-245.log",
+          "log_sha256": "dc8d545b9e17e5b85628522a891e723ee540596c2bf1d8cc75aaf3db92abafc2",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23146496,
+          "pid": 2556377,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49081792",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.22719737997977063,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08234-433",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_08234_433_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-08234-433.log",
+          "log_sha256": "bda14641ada11c25ce70e076fea8204d69a0c24eb089e345b71044ae7e869e16",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 26509312,
+          "pid": 2556387,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49081817",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2846740640234202,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08234-671",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_08234_671_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-08234-671.log",
+          "log_sha256": "49f682f0b2306458d3b9ad5288c4ea8efa726d0f04261d6766b947e15e2d1d5d",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24424448,
+          "pid": 2556396,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49081847",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2794024730101228,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08234-154",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_08234_154_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-08234-154.log",
+          "log_sha256": "d02d206c147bb5f9078d42a22d4f7aaf6212871ebcb0740050abd8c9c646e50d",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 28889088,
+          "pid": 2556404,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49081878",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.3805535139981657,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08234-305",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_08234_305_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-08234-305.log",
+          "log_sha256": "17bf98f618574e1ba3a376607b024358d71593fc2c0186414d29c6609f273fdf",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 27631616,
+          "pid": 2556425,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49081919",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.3302787979482673,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08f72-464",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_08f72_464_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-08f72-464.log",
+          "log_sha256": "d0f63af3382c88126a90df3da4aee80f0658f33d5828fbbcb5298137e0fdf584",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25735168,
+          "pid": 2556445,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49081954",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.27879592502722517,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08f72-124",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_08f72_124_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-08f72-124.log",
+          "log_sha256": "aed8381c8c9f8ba182520d8655e2c8254043ec49546df75af4178fd930a84d9b",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 26087424,
+          "pid": 2556451,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49081984",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2783032449660823,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08f72-475",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_08f72_475_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-08f72-475.log",
+          "log_sha256": "a1700c796b10559942cb5378fb06194a22319847cdcc4f2127dae98261654b0c",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24436736,
+          "pid": 2556467,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49082015",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.27832676499383524,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-08f72-336",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_08f72_336_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-08f72-336.log",
+          "log_sha256": "56c908afdea6042066f954e765285faa26d476511281bdbe7b2d3d7dc4386716",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24469504,
+          "pid": 2556484,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49082045",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.22853627696167678,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-103b2-733",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_103b2_733_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-103b2-733.log",
+          "log_sha256": "770fae177c847d844d61fd751644cd548c38212c23f82a1f0bbcf5d4104d98e4",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 26533888,
+          "pid": 2556494,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49082070",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.27934473200002685,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-103b2-461",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_103b2_461_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-103b2-461.log",
+          "log_sha256": "6d53ba01ae3a6464de2b26ed1a7597e6b4f3974f40fc318e98d693bcc4006b12",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 26251264,
+          "pid": 2556508,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49082100",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2783726250054315,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-103b2-198",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_103b2_198_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-103b2-198.log",
+          "log_sha256": "5ab59e29f7b220c9251125edf3d42953c26cd52e4be11ea8f353843118cd6a82",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25677824,
+          "pid": 2556518,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49082131",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.27897147298790514,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-103b2-074",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_103b2_074_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-103b2-074.log",
+          "log_sha256": "cdc54981d459a032eb288cdb591bd1e3e272e35e185080f86de891aae232f4f8",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24190976,
+          "pid": 2556529,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49082161",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2789109629811719,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-11952-113",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_11952_113_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-11952-113.log",
+          "log_sha256": "d72a7ced80548e2bc63f1d815a6b6fc39d4e922948a1c5fb99b581b585af6b9f",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25751552,
+          "pid": 2556539,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49082192",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2786630939808674,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-11952-035",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_11952_035_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-11952-035.log",
+          "log_sha256": "250f64cf0c54f182d3be75767029f42e32ed3987d7b9b4e72d4c57bccc6362ef",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25731072,
+          "pid": 2556556,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49082222",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2794475330156274,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-11952-571",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_11952_571_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-11952-571.log",
+          "log_sha256": "4921cdbbcddb1912051dca4c150be7f9cc89562cae627c2daa71d8bb4d508d2f",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 23138304,
+          "pid": 2556566,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49082252",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.1773206730140373,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "cloud-11952-446",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention24_r17_11952_446_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/cloud-11952-446.log",
+          "log_sha256": "3ed22b5d9dd8e8d91e5d82fba511242cb6a94c1dc6fe2fde53a3dc7ff12e7a1c",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25485312,
+          "pid": 2556576,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49082272",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.2786675219540484,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "incidence-compact",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/replay_compact_cross_family_incidence.py",
+            "--input",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/compact_cross_family_j_incidence_v1.json",
+            "--output",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/compact-incidence-replay.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/incidence-compact.log",
+          "log_sha256": "542061ac4afe9b3a96bb85899aff4dc8d7495f96fcc8e63d89050bb506b8151c",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25497600,
+          "pid": 2556586,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49082303",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.43138668197207153,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "incidence-latest7",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/replay_latest7_cross_family_incidence.py",
+            "--input",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/latest7_cross_family_j_incidence_v1.json",
+            "--output",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/latest7-incidence-replay.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/incidence-latest7.log",
+          "log_sha256": "48fca9a3bbe71af0259c5fc84234d83c85006e75ca9cf04a4a1d612db472e94d",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24817664,
+          "pid": 2556601,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49082348",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.381169377011247,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "incidence-latest8",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/replay_latest8_cross_family_incidence.py",
+            "--input",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/latest8_cross_family_j_incidence_v1.json",
+            "--output",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/latest8-incidence-replay.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/incidence-latest8.log",
+          "log_sha256": "739d7aa1f5faac8f828ab47b64be1ec4985be179979c56238796a9ca572989b9",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 24735744,
+          "pid": 2556619,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49082389",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.3824009060044773,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "incidence-latest23",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/replay_latest23_cross_family_incidence.py",
+            "--input",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/latest23_cross_family_j_incidence_v1.json",
+            "--output",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/latest23-incidence-replay.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/incidence-latest23.log",
+          "log_sha256": "59fa69eb948f3f8e47c3362f60a617503affefb816f4ba0d25509425bdbf9d0f",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 25702400,
+          "pid": 2556635,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49082429",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.3813226170022972,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "incidence-retention",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/replay_retention_cross_family_incidence.py",
+            "--input",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/retention_cross_family_j_incidence_v1.json",
+            "--output",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/retention-incidence-replay.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/incidence-retention.log",
+          "log_sha256": "c5a1a87b101c9c8ffa2afcf56023461098742eae4704ae1880dd2340373867d5",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 26042368,
+          "pid": 2556654,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49082470",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.3906188139808364,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "incidence-aggregate89",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/certify_inventory89_incidence.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/inventory89_cross_family_incidence_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/incidence-aggregate89.log",
+          "log_sha256": "02574ea7b119592a653316feef0d1b2208193efd5ac598243049702aeb60d9b7",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21090304,
+          "pid": 2556667,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49082511",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.12497021199669689,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "catalogue593",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/refresh_retention_catalogue.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/catalogue593.log",
+          "log_sha256": "918cfaa01c40cf82a9cdf329d2d653af79d87950bcbf175d6a82653cf04c2fbf",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 32600064,
+          "pid": 2556677,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49082526",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 3.2879138300195336,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "generic-transport",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/elliptic-curves/cas/audit_compact_published_r17_transport_v3.sage",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/workspace/artifacts/generated-results/elliptic-curves/compact_published_r17_generic_transport_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retention24-discovery-portable-v1/verification/generic-transport.log",
+          "log_sha256": "07c8f37e4f243f9fac49f9721464c77ad68c3a51af020bc8bfaf13e8a4505981",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 230375424,
+          "pid": 2556871,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "49082857",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.692578410031274,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      }
+    ],
+    "status": "PASS"
+  },
+  "logs": {
+    "geometry1080": "REPLAYED1080 RETENTION24 CHARTS, GENERIC CENTRES, RAW POINTS AND CLOUD PROVENANCE\nAdmission/archive histories passed separately and are retained.\n",
+    "retained-short-scores6144": "REPLAYED6144 RETAINED SCORES AND ALL OLD128 PREFIXES\n",
+    "extended-trace-rosters4608": "REPLAYED4608 TRACE ROSTERS AND FIXED24 SELECTION {'074d9': {'extended_top_four': [112, 425, 69, 415]}, '07ca9': {'extended_top_four': [280, 248, 214, 245]}, '08234': {'extended_top_four': [433, 671, 154, 305]}, '08f72': {'extended_top_four': [464, 124, 475, 336]}, '103b2': {'extended_top_four': [733, 461, 198, 74]}, '11952': {'extended_top_four': [113, 35, 571, 446]}}\n",
+    "oracle-translations98": "REPLAYED98 NATIVE29 TRANSLATIONS [(27, 918522)]\n",
+    "batch-certificates24": "REPLAYED RETENTION24 R17 CERTIFICATES 24\n",
+    "high-rank-minimal": "EXACT RETENTION HIGH-RANK MINIMAL PROOFS [('103b2-733', 27, 1), ('11952-113', 27, 1)]\n",
+    "inventory-v7": "MEMORY REPLAY V7 new-20260906-40 rank >= 27\nMEMORY REPLAY V7 new-20260906-71 rank >= 27\nMEMORY REPLAY V7 new-20260906-41 rank >= 27\nMEMORY REPLAY V7 new-20260906-72 rank >= 27\nMEMORY REPLAY V7 new-20260906-48 rank >= 27\nMEMORY REPLAY V7 new-20260906-73 rank >= 26\nMEMORY REPLAY V7 new-20260906-63 rank >= 26\nMEMORY REPLAY V7 new-20260906-42 rank >= 26\nMEMORY REPLAY V7 new-20260905-37 rank >= 26\nMEMORY REPLAY V7 new-20260906-74 rank >= 26\nMEMORY REPLAY V7 new-20260906-49 rank >= 26\nMEMORY REPLAY V7 new-20260906-50 rank >= 26\nMEMORY REPLAY V7 new-20260906-75 rank >= 26\nMEMORY REPLAY V7 new-20260905-38 rank >= 25\nMEMORY REPLAY V7 new-20260906-76 rank >= 25\nMEMORY REPLAY V7 new-20260906-51 rank >= 25\nMEMORY REPLAY V7 new-20260906-64 rank >= 25\nMEMORY REPLAY V7 new-20260905-39 rank >= 25\nMEMORY REPLAY V7 new-20260906-65 rank >= 25\nMEMORY REPLAY V7 new-20260906-77 rank >= 25\nMEMORY REPLAY V7 new-20260906-78 rank >= 25\nMEMORY REPLAY V7 new-20260905-01 rank >= 25\nMEMORY REPLAY V7 new-20260906-79 rank >= 25\nMEMORY REPLAY V7 new-20260906-80 rank >= 25\nMEMORY REPLAY V7 new-20260906-81 rank >= 25\nMEMORY REPLAY V7 new-20260906-52 rank >= 25\nMEMORY REPLAY V7 new-20260906-43 rank >= 25\nMEMORY REPLAY V7 new-20260906-53 rank >= 25\nMEMORY REPLAY V7 new-20260906-54 rank >= 25\nMEMORY REPLAY V7 new-20260906-82 rank >= 25\nMEMORY REPLAY V7 new-20260906-44 rank >= 25\nMEMORY REPLAY V7 new-20260906-66 rank >= 25\nMEMORY REPLAY V7 new-20260905-02 rank >= 25\nMEMORY REPLAY V7 new-20260905-03 rank >= 25\nMEMORY REPLAY V7 new-20260906-55 rank >= 24\nMEMORY REPLAY V7 new-20260906-67 rank >= 24\nMEMORY REPLAY V7 new-20260906-56 rank >= 24\nMEMORY REPLAY V7 new-20260905-04 rank >= 24\nMEMORY REPLAY V7 new-20260906-83 rank >= 24\nMEMORY REPLAY V7 new-20260906-84 rank >= 24\nMEMORY REPLAY V7 new-20260906-85 rank >= 24\nMEMORY REPLAY V7 new-20260906-86 rank >= 24\nMEMORY REPLAY V7 new-20260906-45 rank >= 24\nMEMORY REPLAY V7 new-20260906-46 rank >= 24\nMEMORY REPLAY V7 new-20260906-57 rank >= 24\nMEMORY REPLAY V7 new-20260906-87 rank >= 24\nMEMORY REPLAY V7 new-20260905-05 rank >= 24\nMEMORY REPLAY V7 new-20260905-33 rank >= 24\nMEMORY REPLAY V7 new-20260905-06 rank >= 24\nMEMORY REPLAY V7 new-20260905-07 rank >= 24\nMEMORY REPLAY V7 new-20260905-08 rank >= 24\nMEMORY REPLAY V7 new-20260905-09 rank >= 24\nMEMORY REPLAY V7 new-20260905-10 rank >= 24\nMEMORY REPLAY V7 new-20260906-88 rank >= 23\nMEMORY REPLAY V7 new-20260905-11 rank >= 23\nMEMORY REPLAY V7 new-20260906-58 rank >= 23\nMEMORY REPLAY V7 new-20260905-12 rank >= 23\nMEMORY REPLAY V7 new-20260906-68 rank >= 23\nMEMORY REPLAY V7 new-20260906-89 rank >= 23\nMEMORY REPLAY V7 new-20260906-69 rank >= 23\nMEMORY REPLAY V7 new-20260906-70 rank >= 23\nMEMORY REPLAY V7 new-20260906-59 rank >= 23\nMEMORY REPLAY V7 new-20260906-60 rank >= 23\nMEMORY REPLAY V7 new-20260905-13 rank >= 23\nMEMORY REPLAY V7 new-20260905-34 rank >= 23\nMEMORY REPLAY V7 new-20260905-14 rank >= 23\nMEMORY REPLAY V7 new-20260905-15 rank >= 23\nMEMORY REPLAY V7 new-20260905-16 rank >= 23\nMEMORY REPLAY V7 new-20260905-17 rank >= 23\nMEMORY REPLAY V7 new-20260905-18 rank >= 23\nMEMORY REPLAY V7 new-20260905-19 rank >= 23\nMEMORY REPLAY V7 new-20260905-20 rank >= 23\nMEMORY REPLAY V7 new-20260905-21 rank >= 22\nMEMORY REPLAY V7 new-20260906-61 rank >= 22\nMEMORY REPLAY V7 new-20260906-62 rank >= 22\nMEMORY REPLAY V7 new-20260906-47 rank >= 22\nMEMORY REPLAY V7 new-20260905-22 rank >= 22\nMEMORY REPLAY V7 new-20260905-23 rank >= 22\nMEMORY REPLAY V7 new-20260905-24 rank >= 22\nMEMORY REPLAY V7 new-20260905-25 rank >= 22\nMEMORY REPLAY V7 new-20260905-26 rank >= 22\nMEMORY REPLAY V7 new-20260905-27 rank >= 22\nMEMORY REPLAY V7 new-20260905-35 rank >= 22\nMEMORY REPLAY V7 new-20260905-36 rank >= 22\nMEMORY REPLAY V7 new-20260905-28 rank >= 22\nMEMORY REPLAY V7 new-20260905-29 rank >= 22\nMEMORY REPLAY V7 new-20260905-30 rank >= 22\nMEMORY REPLAY V7 new-20260905-31 rank >= 22\nMEMORY REPLAY V7 new-20260905-32 rank >= 22\nEXACT MEMORY INVENTORY PASS 89 AND CSV\n",
+    "cloud-074d9-112": "REPLAYED RECORDED-POINT RANK 074d9 -289/572 rank >= 23\n",
+    "cloud-074d9-425": "REPLAYED RECORDED-POINT RANK 074d9 759/2636 rank >= 21\n",
+    "cloud-074d9-069": "REPLAYED RECORDED-POINT RANK 074d9 1175/1901 rank >= 26\n",
+    "cloud-074d9-415": "REPLAYED RECORDED-POINT RANK 074d9 492/169 rank >= 25\n",
+    "cloud-07ca9-280": "REPLAYED RECORDED-POINT RANK 07ca9 613/828 rank >= 26\n",
+    "cloud-07ca9-248": "REPLAYED RECORDED-POINT RANK 07ca9 3469/2070 rank >= 25\n",
+    "cloud-07ca9-214": "REPLAYED RECORDED-POINT RANK 07ca9 21/1196 rank >= 25\n",
+    "cloud-07ca9-245": "REPLAYED RECORDED-POINT RANK 07ca9 408/797 rank >= 21\n",
+    "cloud-08234-433": "REPLAYED RECORDED-POINT RANK 08234 4051/121 rank >= 25\n",
+    "cloud-08234-671": "REPLAYED RECORDED-POINT RANK 08234 -2980/811 rank >= 25\n",
+    "cloud-08234-154": "REPLAYED RECORDED-POINT RANK 08234 -239/4 rank >= 21\n",
+    "cloud-08234-305": "REPLAYED RECORDED-POINT RANK 08234 -2741/118 rank >= 25\n",
+    "cloud-08f72-464": "REPLAYED RECORDED-POINT RANK 08f72 1103/375 rank >= 27\n",
+    "cloud-08f72-124": "REPLAYED RECORDED-POINT RANK 08f72 149/177 rank >= 23\n",
+    "cloud-08f72-475": "REPLAYED RECORDED-POINT RANK 08f72 3431/70 rank >= 24\n",
+    "cloud-08f72-336": "REPLAYED RECORDED-POINT RANK 08f72 2784/167 rank >= 24\n",
+    "cloud-103b2-733": "REPLAYED RECORDED-POINT RANK 103b2 3726/881 rank >= 27\n",
+    "cloud-103b2-461": "REPLAYED RECORDED-POINT RANK 103b2 2280/299 rank >= 25\n",
+    "cloud-103b2-198": "REPLAYED RECORDED-POINT RANK 103b2 -1498/507 rank >= 24\n",
+    "cloud-103b2-074": "REPLAYED RECORDED-POINT RANK 103b2 -2558/3185 rank >= 24\n",
+    "cloud-11952-113": "REPLAYED RECORDED-POINT RANK 11952 2012/211 rank >= 27\n",
+    "cloud-11952-035": "REPLAYED RECORDED-POINT RANK 11952 -1376/455 rank >= 26\n",
+    "cloud-11952-571": "REPLAYED RECORDED-POINT RANK 11952 3811/2241 rank >= 19\n",
+    "cloud-11952-446": "REPLAYED RECORDED-POINT RANK 11952 -811/1609 rank >= 24\n",
+    "incidence-compact": "REPLAYED ALL CROSS-FAMILY J INCIDENCE {'NO_RATIONAL_J_PREIMAGE': 336, 'RATIONAL_J_PREIMAGES_CERTIFIED': 48}\n",
+    "incidence-latest7": "REPLAYED LATEST7 CROSS-FAMILY J INCIDENCE {'NO_RATIONAL_J_PREIMAGE': 77, 'RATIONAL_J_PREIMAGES_CERTIFIED': 7}\n",
+    "incidence-latest8": "REPLAYED LATEST8 CROSS-FAMILY J INCIDENCE {'NO_RATIONAL_J_PREIMAGE': 88, 'RATIONAL_J_PREIMAGES_CERTIFIED': 8}\n",
+    "incidence-latest23": "REPLAYED LATEST23 CROSS-FAMILY J INCIDENCE {'NO_RATIONAL_J_PREIMAGE': 251, 'RATIONAL_J_PREIMAGES_CERTIFIED': 25}\n",
+    "incidence-retention": "REPLAYED RETENTION CROSS-FAMILY J INCIDENCE {'RATIONAL_J_PREIMAGES_CERTIFIED': 22, 'NO_RATIONAL_J_PREIMAGE': 206}\n",
+    "incidence-aggregate89": "EXACT COHORT BINDING89 CURVES1068 PAIRS21 DUPLICATE PRESENTATIONS\n",
+    "catalogue593": "EXACT593 CATALOGUE COMPARISON 89 inventory curves; matches []\n",
+    "generic-transport": "REPLAYED GENERIC R17 TRANSPORT WITHOUT NUMERICAL HEIGHTS\n"
+  },
+  "aggregate_stage_wall_seconds": 63.67910669569392
+}

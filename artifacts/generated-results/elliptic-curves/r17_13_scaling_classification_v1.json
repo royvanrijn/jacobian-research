@@ -1,0 +1,2781 @@
+{
+  "claim_boundary": "At depth k retain all13 lifts satisfying A=0 modulo13^min(k,4) and B=0 modulo13^min(k,6). Empty levels prove local impossibility; a surviving level6 or the fixed4096-residue cap leaves the relevant classification UNKNOWN. The kernel of a determinant13 chart modulo13 is excluded only for original primitive parameter pairs. No point search, parameter score, rank predictor or automatic deeper lifting.",
+  "complete_classifications": 6,
+  "protocol_sha256": "ed038b3cc590c84057d540e5e9c9a9d8ff1eededb539fc98ad50a279cd505f0f",
+  "rows": [
+    {
+      "additional_scaling_in_integral_chart": [
+        {
+          "residue": 0,
+          "status": "EXCLUDED_NONPRIMITIVE_OLD_PARAMETER_KERNEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 1,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 2,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 3,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 4,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 5,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 6,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 7,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 8,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 9,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 10,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 11,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 12,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": "infinity",
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        }
+      ],
+      "all_eligible_scaled_models_remain_bad_at13": true,
+      "classification": "EXACT_ONE_SCALE_MAXIMUM",
+      "family": "103b2",
+      "matrix": [
+        1,
+        0,
+        0,
+        13
+      ],
+      "other_original_cells": [
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 0,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": [
+                1
+              ]
+            },
+            {
+              "A_modulus": 169,
+              "B_modulus": 169,
+              "depth": 2,
+              "modulus": 169,
+              "residues": []
+            }
+          ],
+          "residue": 1,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 2,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 3,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 4,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 5,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 6,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 7,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 8,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 9,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 10,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 11,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 12,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        }
+      ],
+      "scaled_discriminant_residues": [
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 1
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 2
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 3
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 4
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 5
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 6
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 7
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 8
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 9
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 10
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 11
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 12
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": "infinity"
+        }
+      ],
+      "universal_residue_mod13": "infinity"
+    },
+    {
+      "additional_scaling_in_integral_chart": [
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 0,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 1,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 2,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 3,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 4,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 5,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 6,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 7,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "residue": 8,
+          "status": "EXCLUDED_NONPRIMITIVE_OLD_PARAMETER_KERNEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 9,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 10,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 11,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 12,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": "infinity",
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        }
+      ],
+      "all_eligible_scaled_models_remain_bad_at13": true,
+      "classification": "EXACT_ONE_SCALE_MAXIMUM",
+      "family": "11952",
+      "matrix": [
+        1,
+        5,
+        -2,
+        3
+      ],
+      "other_original_cells": [
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 0,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 1,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 2,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 3,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 4,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": [
+                5
+              ]
+            },
+            {
+              "A_modulus": 169,
+              "B_modulus": 169,
+              "depth": 2,
+              "modulus": 169,
+              "residues": [
+                5,
+                18,
+                31,
+                44,
+                57,
+                70,
+                83,
+                96,
+                109,
+                122,
+                135,
+                148,
+                161
+              ]
+            },
+            {
+              "A_modulus": 2197,
+              "B_modulus": 2197,
+              "depth": 3,
+              "modulus": 2197,
+              "residues": []
+            }
+          ],
+          "residue": 5,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 7,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 8,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 9,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 10,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 11,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 12,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": "infinity",
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        }
+      ],
+      "scaled_discriminant_residues": [
+        {
+          "A_mod13": 4,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 0
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 1
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 2
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 3
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 4
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 5
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 6
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 7
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 9
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 10
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 11
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 12
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": "infinity"
+        }
+      ],
+      "universal_residue_mod13": 6
+    },
+    {
+      "additional_scaling_in_integral_chart": [
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 0,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 1,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 2,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 3,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "residue": 4,
+          "status": "EXCLUDED_NONPRIMITIVE_OLD_PARAMETER_KERNEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 5,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 6,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 7,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 8,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 9,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 10,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 11,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 12,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": "infinity",
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        }
+      ],
+      "all_eligible_scaled_models_remain_bad_at13": true,
+      "classification": "EXACT_ONE_SCALE_MAXIMUM",
+      "family": "074d9",
+      "matrix": [
+        3,
+        1,
+        -1,
+        4
+      ],
+      "other_original_cells": [
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 0,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 1,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 2,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 3,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 4,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 5,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": [
+                6
+              ]
+            },
+            {
+              "A_modulus": 169,
+              "B_modulus": 169,
+              "depth": 2,
+              "modulus": 169,
+              "residues": [
+                6,
+                19,
+                32,
+                45,
+                58,
+                71,
+                84,
+                97,
+                110,
+                123,
+                136,
+                149,
+                162
+              ]
+            },
+            {
+              "A_modulus": 2197,
+              "B_modulus": 2197,
+              "depth": 3,
+              "modulus": 2197,
+              "residues": []
+            }
+          ],
+          "residue": 6,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 7,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 8,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 9,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 11,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 12,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": "infinity",
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        }
+      ],
+      "scaled_discriminant_residues": [
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 0
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 1
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 2
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 3
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 5
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 6
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 7
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 8
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 9
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 10
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 11
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 12
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": "infinity"
+        }
+      ],
+      "universal_residue_mod13": 10
+    },
+    {
+      "additional_scaling_in_integral_chart": [
+        {
+          "residue": 0,
+          "status": "EXCLUDED_NONPRIMITIVE_OLD_PARAMETER_KERNEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 1,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 2,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 3,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 4,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 5,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 6,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 7,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 8,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 9,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 10,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": [
+                11
+              ]
+            },
+            {
+              "A_modulus": 169,
+              "B_modulus": 169,
+              "depth": 2,
+              "modulus": 169,
+              "residues": []
+            }
+          ],
+          "residue": 11,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 12,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": "infinity",
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        }
+      ],
+      "all_eligible_scaled_models_remain_bad_at13": true,
+      "classification": "EXACT_ONE_SCALE_MAXIMUM",
+      "family": "07ca9",
+      "matrix": [
+        1,
+        0,
+        0,
+        13
+      ],
+      "other_original_cells": [
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 0,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 1,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 2,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 3,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 4,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 5,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 6,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 7,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 8,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 9,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 10,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 11,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 12,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        }
+      ],
+      "scaled_discriminant_residues": [
+        {
+          "A_mod13": 12,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 1
+        },
+        {
+          "A_mod13": 9,
+          "B_mod13": 3,
+          "discriminant_mod13": 0,
+          "residue": 2
+        },
+        {
+          "A_mod13": 3,
+          "B_mod13": 3,
+          "discriminant_mod13": 0,
+          "residue": 3
+        },
+        {
+          "A_mod13": 9,
+          "B_mod13": 10,
+          "discriminant_mod13": 0,
+          "residue": 4
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 5
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 6
+        },
+        {
+          "A_mod13": 9,
+          "B_mod13": 3,
+          "discriminant_mod13": 0,
+          "residue": 7
+        },
+        {
+          "A_mod13": 1,
+          "B_mod13": 10,
+          "discriminant_mod13": 0,
+          "residue": 8
+        },
+        {
+          "A_mod13": 1,
+          "B_mod13": 10,
+          "discriminant_mod13": 0,
+          "residue": 9
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 10
+        },
+        {
+          "A_mod13": 0,
+          "B_mod13": 0,
+          "discriminant_mod13": 0,
+          "residue": 11
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 12
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": "infinity"
+        }
+      ],
+      "universal_residue_mod13": "infinity"
+    },
+    {
+      "additional_scaling_in_integral_chart": [
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 0,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 1,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 2,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 3,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 4,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 5,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 6,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 7,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "residue": 8,
+          "status": "EXCLUDED_NONPRIMITIVE_OLD_PARAMETER_KERNEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 9,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 10,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 11,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 12,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": "infinity",
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        }
+      ],
+      "all_eligible_scaled_models_remain_bad_at13": true,
+      "classification": "EXACT_ONE_SCALE_MAXIMUM",
+      "family": "08234",
+      "matrix": [
+        2,
+        -3,
+        1,
+        5
+      ],
+      "other_original_cells": [
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 0,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 1,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": [
+                3
+              ]
+            },
+            {
+              "A_modulus": 169,
+              "B_modulus": 169,
+              "depth": 2,
+              "modulus": 169,
+              "residues": [
+                3,
+                16,
+                29,
+                42,
+                55,
+                68,
+                81,
+                94,
+                107,
+                120,
+                133,
+                146,
+                159
+              ]
+            },
+            {
+              "A_modulus": 2197,
+              "B_modulus": 2197,
+              "depth": 3,
+              "modulus": 2197,
+              "residues": []
+            }
+          ],
+          "residue": 3,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 4,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 5,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 6,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 7,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 8,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 9,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 10,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 11,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 12,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": "infinity",
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        }
+      ],
+      "scaled_discriminant_residues": [
+        {
+          "A_mod13": 12,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 0
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 1
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 2
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 3
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 4
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 5
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 6
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 7
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 9
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 10
+        },
+        {
+          "A_mod13": 4,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 11
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 12
+        },
+        {
+          "A_mod13": 12,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": "infinity"
+        }
+      ],
+      "universal_residue_mod13": 2
+    },
+    {
+      "additional_scaling_in_integral_chart": [
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 0,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 1,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 2,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 3,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 4,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 5,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 6,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 7,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "residue": 8,
+          "status": "EXCLUDED_NONPRIMITIVE_OLD_PARAMETER_KERNEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 9,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 10,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 11,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 12,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": [
+                0
+              ]
+            },
+            {
+              "A_modulus": 169,
+              "B_modulus": 169,
+              "depth": 2,
+              "modulus": 169,
+              "residues": [
+                0,
+                13,
+                26,
+                39,
+                52,
+                65,
+                78,
+                91,
+                104,
+                117,
+                130,
+                143,
+                156
+              ]
+            },
+            {
+              "A_modulus": 2197,
+              "B_modulus": 2197,
+              "depth": 3,
+              "modulus": 2197,
+              "residues": []
+            }
+          ],
+          "residue": "infinity",
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        }
+      ],
+      "all_eligible_scaled_models_remain_bad_at13": true,
+      "classification": "EXACT_ONE_SCALE_MAXIMUM",
+      "family": "08f72",
+      "matrix": [
+        3,
+        2,
+        -2,
+        3
+      ],
+      "other_original_cells": [
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 0,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 1,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 2,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 3,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 4,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 6,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 7,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 8,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 9,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 10,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 11,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": 12,
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        },
+        {
+          "levels": [
+            {
+              "A_modulus": 13,
+              "B_modulus": 13,
+              "depth": 1,
+              "modulus": 13,
+              "residues": []
+            }
+          ],
+          "residue": "infinity",
+          "status": "EXCLUDED_BY_EMPTY_LIFT_LEVEL"
+        }
+      ],
+      "scaled_discriminant_residues": [
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 0
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 1
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 2
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 3
+        },
+        {
+          "A_mod13": 3,
+          "B_mod13": 10,
+          "discriminant_mod13": 0,
+          "residue": 4
+        },
+        {
+          "A_mod13": 3,
+          "B_mod13": 3,
+          "discriminant_mod13": 0,
+          "residue": 5
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 2,
+          "discriminant_mod13": 0,
+          "residue": 6
+        },
+        {
+          "A_mod13": 3,
+          "B_mod13": 3,
+          "discriminant_mod13": 0,
+          "residue": 7
+        },
+        {
+          "A_mod13": 3,
+          "B_mod13": 10,
+          "discriminant_mod13": 0,
+          "residue": 9
+        },
+        {
+          "A_mod13": 10,
+          "B_mod13": 11,
+          "discriminant_mod13": 0,
+          "residue": 10
+        },
+        {
+          "A_mod13": 3,
+          "B_mod13": 10,
+          "discriminant_mod13": 0,
+          "residue": 11
+        },
+        {
+          "A_mod13": 3,
+          "B_mod13": 3,
+          "discriminant_mod13": 0,
+          "residue": 12
+        },
+        {
+          "A_mod13": 0,
+          "B_mod13": 0,
+          "discriminant_mod13": 0,
+          "residue": "infinity"
+        }
+      ],
+      "universal_residue_mod13": 5
+    }
+  ],
+  "schema": "elliptic-curves.r17-13-scaling-classification-result.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_six_r17_atlas_v1.json": "2f28c081c874adfaf738c1119e8f4e6e7ce70ea74277cd8cdb370a02bca34c5d",
+    "artifacts/generated-results/elliptic-curves/r17_integral13_parameter_charts_v1.json": "fde07490c442a100655fece815ebb0ae37ae6d08c6d31d1c2d4d9dbcb2ec4f1b",
+    "elliptic-curves/cas/audit_r17_integral13_charts.py": "3b4a9d517ebae49aa2b0fe05662d793fb5b24f7eebc4527f1fce74e45797552c",
+    "elliptic-curves/cas/classify_r17_13_scaling.py": "b3635664f94204b4a4073dade522c5246bfe31b14181c9e6e9c5f219f78a1376"
+  },
+  "status": "PASS_BOUNDED_EXACT_AUDIT"
+}

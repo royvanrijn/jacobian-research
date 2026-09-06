@@ -1,0 +1,2914 @@
+{
+  "charts": [
+    {
+      "centre": [
+        "5052262355613049189795636482618205655961168977196364411323/45056400881804741273714546190640996",
+        "-16745110901207105422259260681468332784360858058069767501264571078784232505227543015200/1195486727363891718075276829397265214331801323577443"
+      ],
+      "centre_coefficients": [
+        -1,
+        1,
+        -1,
+        0,
+        1,
+        -2,
+        -1,
+        0,
+        -1,
+        1,
+        1,
+        -1,
+        0,
+        0,
+        2,
+        -1,
+        1
+      ],
+      "chart": 0,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "raw_points": 16,
+      "skipped": [
+        {
+          "index": 2,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 8,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 10,
+          "partner_index": 3,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 11,
+          "partner_index": 4,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 12,
+          "partner_index": 5,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 13,
+          "partner_index": 9,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 14,
+          "partner_index": 6,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 15,
+          "partner_index": 7,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "-46342448237517314102872273771205722727148594916708611477/1342610154343477207732367008792996",
+        "-320935824211445027575996651591530178548558769627996997293171733370774000538994388000/6149430594932498816808201482667196928458747232693"
+      ],
+      "centre_coefficients": [
+        0,
+        2,
+        1,
+        -1,
+        1,
+        -3,
+        -2,
+        0,
+        -2,
+        1,
+        -2,
+        1,
+        -1,
+        1,
+        2,
+        -1,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 1,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1
+      ],
+      "raw_points": 4,
+      "skipped": [
+        {
+          "index": 2,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 3,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "11560024625911442057844001772223092551736120992181429203/6784638754906230094974466760836",
+        "-4890917646520566502260156071413440971383350788335815036912485284249414421410213240/2209022331117282121855687910943091322991392177"
+      ],
+      "centre_coefficients": [
+        2,
+        0,
+        1,
+        -2,
+        -3,
+        3,
+        0,
+        -1,
+        0,
+        -1,
+        -3,
+        2,
+        1,
+        -1,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 2,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        8
+      ],
+      "raw_points": 12,
+      "skipped": [
+        {
+          "index": 1,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 4,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 6,
+          "partner_index": 3,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 9,
+          "partner_index": 8,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 10,
+          "partner_index": 7,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 11,
+          "partner_index": 5,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "24966114963518286019960758857491789364728097868387911/269191478268749027305097448722",
+        "2071788360657224924275900802869566860866747611915172305677870610706329095720375/197518127126725281537261658304120061410563436"
+      ],
+      "centre_coefficients": [
+        0,
+        -3,
+        0,
+        2,
+        -1,
+        3,
+        2,
+        0,
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        0,
+        -3,
+        0,
+        -5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 3,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        2,
+        3,
+        7,
+        9
+      ],
+      "raw_points": 12,
+      "skipped": [
+        {
+          "index": 4,
+          "partner_index": 3,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 5,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 6,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 8,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 10,
+          "partner_index": 9,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 11,
+          "partner_index": 7,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "4883282769688477386968741858243967930580592031205838443/46303992838192311058346057827876",
+        "466382273363991784238043107245805281062679739266868183569467796706395284059120780/39385619091162656880548345369831093667426410203"
+      ],
+      "centre_coefficients": [
+        -1,
+        0,
+        0,
+        -1,
+        2,
+        -2,
+        -1,
+        1,
+        -2,
+        1,
+        0,
+        0,
+        -2,
+        1,
+        2,
+        -1,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 4,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "raw_points": 8,
+      "skipped": [
+        {
+          "index": 1,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 5,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 6,
+          "partner_index": 3,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 7,
+          "partner_index": 4,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "156627323617935073083638038926444812239052579724297427/4378206535081534268783772681604",
+        "-34423649266489116557547657636830823484908529596747591892808583024260267849108800/1145128913417826765166624993247673711038965649"
+      ],
+      "centre_coefficients": [
+        2,
+        -1,
+        2,
+        -1,
+        -4,
+        4,
+        0,
+        -1,
+        1,
+        -1,
+        -3,
+        2,
+        2,
+        -2,
+        0,
+        2,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 5,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        2
+      ],
+      "raw_points": 6,
+      "skipped": [
+        {
+          "index": 3,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 4,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 5,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "176266545122762746924130731198205257418974150527936547/1693212349880366431697447032644",
+        "3168075647064281120690178918867595930583943555956097702690271310525599266404000/275408382251787542958873407533072509523010841"
+      ],
+      "centre_coefficients": [
+        0,
+        -3,
+        1,
+        1,
+        -3,
+        4,
+        2,
+        0,
+        2,
+        -1,
+        0,
+        1,
+        2,
+        0,
+        -3,
+        2,
+        -6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 6,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        3,
+        4,
+        6
+      ],
+      "raw_points": 10,
+      "skipped": [
+        {
+          "index": 2,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 5,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 7,
+          "partner_index": 6,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 8,
+          "partner_index": 3,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 9,
+          "partner_index": 4,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "554970958189123146927407380498023192661050139682947/1547452519490875063810645444",
+        "1487701144454131279424657577764535774083626328787414311722791226814803694000/7609147655333799331564222265089627029641"
+      ],
+      "centre_coefficients": [
+        -2,
+        1,
+        -1,
+        1,
+        3,
+        -2,
+        0,
+        1,
+        0,
+        1,
+        3,
+        -2,
+        -1,
+        0,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 7,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "raw_points": 8,
+      "skipped": [
+        {
+          "index": 1,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 3,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 5,
+          "partner_index": 4,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 7,
+          "partner_index": 6,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "19338204450458483605133266567871197566019038349901667/213083248064953602956753394244",
+        "-131134500826612825285413795849351811033900185885319597843945158920902706453760/12295154071686848850895228705441662156053191"
+      ],
+      "centre_coefficients": [
+        1,
+        0,
+        1,
+        -1,
+        -1,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        -3,
+        2,
+        1,
+        -1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 8,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "raw_points": 8,
+      "skipped": [
+        {
+          "index": 4,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 5,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 6,
+          "partner_index": 3,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 7,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "6001796137096249258180831351411225751942669766027381/67343920667436589683876736322",
+        "134480549170957816481570292948627413884764274784704779628310502331871227856985/12357556289054864124078140701632544231251682"
+      ],
+      "centre_coefficients": [
+        -2,
+        -2,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        3,
+        -1,
+        -1,
+        -3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 9,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "raw_points": 8,
+      "skipped": [
+        {
+          "index": 3,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 5,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 6,
+          "partner_index": 4,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 7,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "40534259073736941735154235696571449013776498954472987/206988223373109456352548979684",
+        "746851687908091915618131503075547474897242939611679294725248459375223452656640/11771409508361841343287624190198903317936781"
+      ],
+      "centre_coefficients": [
+        0,
+        1,
+        -1,
+        0,
+        1,
+        -1,
+        0,
+        2,
+        -1,
+        0,
+        2,
+        -1,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 10,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        2,
+        6,
+        7
+      ],
+      "raw_points": 10,
+      "skipped": [
+        {
+          "index": 3,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 4,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 5,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 8,
+          "partner_index": 7,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 9,
+          "partner_index": 6,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "42337030951033104087617398007867884160818573864790403/491336699789367768354936137476",
+        "-491779551414266630081050870837933620254657824400799791742485159579785962449910/43050561442541082083430823719603436661975903"
+      ],
+      "centre_coefficients": [
+        0,
+        3,
+        0,
+        0,
+        1,
+        -3,
+        -1,
+        1,
+        -2,
+        -1,
+        0,
+        -1,
+        -3,
+        0,
+        2,
+        1,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 11,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "raw_points": 10,
+      "skipped": [
+        {
+          "index": 4,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 6,
+          "partner_index": 5,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 7,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 8,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 9,
+          "partner_index": 3,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "-242375429609463192504515974610730333796509217157601/1401932696394156311800975298",
+        "2728860139317216523376936640137833878348249913852899053141847769216308032775/74234492661314092952104420708652525999428"
+      ],
+      "centre_coefficients": [
+        2,
+        -2,
+        1,
+        -2,
+        -2,
+        2,
+        0,
+        -1,
+        0,
+        0,
+        -3,
+        2,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 12,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        2
+      ],
+      "raw_points": 6,
+      "skipped": [
+        {
+          "index": 3,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 4,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 5,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "2499842984874938526168407000195418423136138785205851/1758412295571215456515873924",
+        "15523316588432056686010312426137370646343519104732079600613113662536517925495/9217031692516104222558583186255380014129"
+      ],
+      "centre_coefficients": [
+        -2,
+        0,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 13,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        2
+      ],
+      "raw_points": 4,
+      "skipped": [
+        {
+          "index": 1,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 3,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "1434818454933241161913784520319526388858725317712916243/6026510878364632790691910554436",
+        "174118210994448945981785803192977724316566876657837455192774074669761540480142250/1849306645306655124841912045083127245742618727"
+      ],
+      "centre_coefficients": [
+        0,
+        -2,
+        1,
+        1,
+        -3,
+        5,
+        2,
+        0,
+        2,
+        -2,
+        1,
+        0,
+        2,
+        0,
+        -3,
+        1,
+        -6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 14,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        4,
+        6
+      ],
+      "raw_points": 8,
+      "skipped": [
+        {
+          "index": 2,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 3,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 5,
+          "partner_index": 4,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 7,
+          "partner_index": 6,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "713610021663505826102285522225690848426259862429547/9264904702740012707910548644",
+        "-1559604500502362114362086580698978045550772561976060413070928332548653699000/111473451426134401450633659768454245421909"
+      ],
+      "centre_coefficients": [
+        0,
+        -2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        1,
+        1,
+        -1,
+        0,
+        2,
+        1,
+        -1,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 15,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "raw_points": 10,
+      "skipped": [
+        {
+          "index": 4,
+          "partner_index": 3,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 6,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 7,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 8,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 9,
+          "partner_index": 5,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "774036053130430204418609932468590358266670031315547/10856675250008031465437130724",
+        "2264996666960513157812470079920355015858118008115323921076696311246978944680/141401912615738277626626363607636731069171"
+      ],
+      "centre_coefficients": [
+        0,
+        -3,
+        1,
+        1,
+        -2,
+        5,
+        2,
+        0,
+        2,
+        -1,
+        1,
+        0,
+        2,
+        0,
+        -3,
+        0,
+        -6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 16,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1
+      ],
+      "raw_points": 4,
+      "skipped": [
+        {
+          "index": 2,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 3,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "963559108857973598490631865595319488014585738249067/40698328491318786061163083684",
+        "35542987694373354292863828402417359960299520396416197393764760119986949154000/1026301283956811026404505380492617478465781"
+      ],
+      "centre_coefficients": [
+        2,
+        0,
+        0,
+        -1,
+        -1,
+        1,
+        0,
+        -1,
+        -1,
+        1,
+        -2,
+        1,
+        1,
+        -2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 17,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "raw_points": 10,
+      "skipped": [
+        {
+          "index": 5,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 6,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 7,
+          "partner_index": 4,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 8,
+          "partner_index": 3,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 9,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "-831186259869230054474877841758553389697409746197477/20087402576932689884965840996",
+        "-19098782087652086427532533036630494026623116174400239256961286780119294840500/355873531623094121738326576114541118477443"
+      ],
+      "centre_coefficients": [
+        -1,
+        1,
+        -1,
+        0,
+        1,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 18,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_points": 12,
+      "skipped": [
+        {
+          "index": 6,
+          "partner_index": 4,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 7,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 8,
+          "partner_index": 5,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 9,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 10,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 11,
+          "partner_index": 3,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "65741788836921012174818722228467651904083000856972563/848507224836258203335252299076",
+        "-1352114650441701513104017961557623963732367643897220291003079759616326766708250/97699722433493811407265681980405421460951897"
+      ],
+      "centre_coefficients": [
+        0,
+        3,
+        -1,
+        -1,
+        3,
+        -6,
+        -2,
+        0,
+        -3,
+        2,
+        -1,
+        0,
+        -3,
+        0,
+        4,
+        -1,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 19,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        10,
+        12
+      ],
+      "raw_points": 18,
+      "skipped": [
+        {
+          "index": 5,
+          "partner_index": 4,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 8,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 9,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 11,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 13,
+          "partner_index": 12,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 14,
+          "partner_index": 10,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 15,
+          "partner_index": 3,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 16,
+          "partner_index": 6,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 17,
+          "partner_index": 7,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "180195449067579273915912918887778310015721139578883/3164832680186568881068166116",
+        "481621137996585364210539002507659837606710642486805840761756126971941245825/22255437941574766388101118552875465707917"
+      ],
+      "centre_coefficients": [
+        1,
+        -1,
+        0,
+        0,
+        -3,
+        3,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        2,
+        0,
+        -1,
+        1,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 20,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "raw_points": 12,
+      "skipped": [
+        {
+          "index": 6,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 7,
+          "partner_index": 5,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 8,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 9,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 10,
+          "partner_index": 3,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 11,
+          "partner_index": 4,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "-39529439277710350732948800641877773673399272806997/1213213097274176308728016036",
+        "-273341117011459567228992284413142033338689791009882862988976486849717367040/5282209818739337036963895158177321018027"
+      ],
+      "centre_coefficients": [
+        -3,
+        -1,
+        -1,
+        1,
+        3,
+        -2,
+        0,
+        1,
+        0,
+        1,
+        2,
+        -1,
+        0,
+        3,
+        -1,
+        -2,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 21,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1
+      ],
+      "raw_points": 4,
+      "skipped": [
+        {
+          "index": 2,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 3,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "20528780273582114421439038325125150336783141501/1980965462881701712459922",
+        "-77578518260158824224169357869646643743163932322071045271717370489848695/1971516236266967339963862010029580918"
+      ],
+      "centre_coefficients": [
+        1,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 22,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "raw_points": 8,
+      "skipped": [
+        {
+          "index": 4,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 5,
+          "partner_index": 3,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 6,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 7,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "41600794674370592769406674926427803604034144862763/243454654950537671766845476",
+        "22180000302047763917658208702561691453423715034975737979242939026306941500/474828892650331530211355399372748549403"
+      ],
+      "centre_coefficients": [
+        0,
+        2,
+        0,
+        -2,
+        4,
+        -5,
+        -1,
+        1,
+        -3,
+        2,
+        -1,
+        0,
+        -3,
+        1,
+        3,
+        -2,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 23,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1
+      ],
+      "raw_points": 4,
+      "skipped": [
+        {
+          "index": 2,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 3,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "-1591284164931426731718227602967415291444928154957/37530447224182865645704036",
+        "1548363098456838331542494966620130521522076651526072947587436085340470125/28739924469964078103757062937464082973"
+      ],
+      "centre_coefficients": [
+        -1,
+        0,
+        -1,
+        0,
+        3,
+        -2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 24,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "raw_points": 8,
+      "skipped": [
+        {
+          "index": 4,
+          "partner_index": 3,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 5,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 6,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 7,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "4402211413744844794281129392496589918443309237039627/46503380588177319724249116964",
+        "-13057842398952768848901579088790737698282425219467858979120864416704824196960/1253535971416558852711758594572773836468539"
+      ],
+      "centre_coefficients": [
+        1,
+        0,
+        0,
+        1,
+        -3,
+        3,
+        1,
+        -2,
+        2,
+        -2,
+        0,
+        1,
+        0,
+        -2,
+        -1,
+        3,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 25,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "raw_points": 16,
+      "skipped": [
+        {
+          "index": 2,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 9,
+          "partner_index": 8,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 10,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 11,
+          "partner_index": 7,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 12,
+          "partner_index": 6,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 13,
+          "partner_index": 5,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 14,
+          "partner_index": 4,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 15,
+          "partner_index": 3,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "17345158902749337048700412344208483927386476747523/108711861477926280861785796",
+        "5598753323080922619142301677012693104673990328807162482424527807193533400/141685501393080604962906786637293332457"
+      ],
+      "centre_coefficients": [
+        0,
+        0,
+        -1,
+        1,
+        -2,
+        2,
+        0,
+        -1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        -1,
+        -1,
+        1,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 26,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0
+      ],
+      "raw_points": 2,
+      "skipped": [
+        {
+          "index": 1,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "2173104092405528848121261554281277517097839733610443/1819459242174512817740828836",
+        "-12548698038071768575862509092398710859624866622361395322591997028981625601500/9701156485332626555003384366851647681323"
+      ],
+      "centre_coefficients": [
+        -2,
+        0,
+        0,
+        0,
+        3,
+        -2,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 27,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        9,
+        10,
+        13
+      ],
+      "raw_points": 16,
+      "skipped": [
+        {
+          "index": 1,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 3,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 7,
+          "partner_index": 4,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 8,
+          "partner_index": 5,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 11,
+          "partner_index": 6,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 12,
+          "partner_index": 9,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 14,
+          "partner_index": 13,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 15,
+          "partner_index": 10,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "29872384825403702711036881209675850377151808337147/157267985488315349029907044",
+        "-14643853036320847092867307038780886955165584226967534623612325878546044800/246530410382988354639369030028075319491"
+      ],
+      "centre_coefficients": [
+        0,
+        -3,
+        1,
+        1,
+        -3,
+        5,
+        2,
+        0,
+        3,
+        -2,
+        1,
+        0,
+        3,
+        0,
+        -3,
+        1,
+        -7,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 28,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        4
+      ],
+      "raw_points": 6,
+      "skipped": [
+        {
+          "index": 2,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 3,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 5,
+          "partner_index": 4,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "24804717382849464208616088284452115556152722307403/181593230075845611235582756",
+        "-7924909538170810040346517753288629286840612637119617013131878077302177000/305885924761971397141414071147170986363"
+      ],
+      "centre_coefficients": [
+        0,
+        2,
+        1,
+        -1,
+        0,
+        -2,
+        -2,
+        0,
+        -2,
+        0,
+        -2,
+        1,
+        -2,
+        0,
+        3,
+        1,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 29,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "raw_points": 8,
+      "skipped": [
+        {
+          "index": 4,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 5,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 6,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 7,
+          "partner_index": 3,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "-273152123486607958360928751199266328203957856053/2053600773337048564580644",
+        "20428024572431654759195099516534603577267672854762883585547970099839800/367861249632163368581906311363193659"
+      ],
+      "centre_coefficients": [
+        1,
+        1,
+        -1,
+        0,
+        -1,
+        1,
+        1,
+        -1,
+        0,
+        -1,
+        0,
+        1,
+        -1,
+        -1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 30,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0
+      ],
+      "raw_points": 2,
+      "skipped": [
+        {
+          "index": 1,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "1252599584587912306745884230304918094696732645763147/5759571764763055717429124644",
+        "4307279653188841741316701529039243839279700193324738538820048313025872658800/54638064186721879972224750570020560624091"
+      ],
+      "centre_coefficients": [
+        1,
+        2,
+        0,
+        -1,
+        0,
+        -2,
+        0,
+        0,
+        -2,
+        1,
+        -2,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 31,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        4,
+        6,
+        7
+      ],
+      "raw_points": 10,
+      "skipped": [
+        {
+          "index": 2,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 3,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 5,
+          "partner_index": 4,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 8,
+          "partner_index": 7,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 9,
+          "partner_index": 6,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "1906861987806402116681843181000962725506032488632267/6620776418170314398528578084",
+        "-9010866704962536294531330117904384019723812053588936058008029538972617952000/67340044057423287508021019108839927049819"
+      ],
+      "centre_coefficients": [
+        0,
+        2,
+        1,
+        0,
+        0,
+        -2,
+        -1,
+        0,
+        -1,
+        -1,
+        -1,
+        0,
+        -2,
+        0,
+        2,
+        1,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 32,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        4,
+        5,
+        8,
+        9
+      ],
+      "raw_points": 12,
+      "skipped": [
+        {
+          "index": 2,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 3,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 6,
+          "partner_index": 4,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 7,
+          "partner_index": 5,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 10,
+          "partner_index": 9,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 11,
+          "partner_index": 8,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "233547526105915423389125787447350356048983301449067/1453146730835368853712774564",
+        "-278659693057184578461907877407045555180481289929318260550287535022374886880/6924273550832769245878466769805220228811"
+      ],
+      "centre_coefficients": [
+        0,
+        -2,
+        1,
+        1,
+        -3,
+        5,
+        1,
+        -1,
+        2,
+        -1,
+        0,
+        1,
+        3,
+        -1,
+        -3,
+        1,
+        -5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 33,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        3,
+        6,
+        7
+      ],
+      "raw_points": 10,
+      "skipped": [
+        {
+          "index": 2,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 4,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 5,
+          "partner_index": 3,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 8,
+          "partner_index": 6,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 9,
+          "partner_index": 7,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "98501998910140294809480586289170884083862434380683/773787511960045664789743396",
+        "-56289145632159582867975682063141169277567207562735178566197769289203973760/2690559419573444302826023900501180927493"
+      ],
+      "centre_coefficients": [
+        -1,
+        0,
+        1,
+        -1,
+        1,
+        -2,
+        -2,
+        1,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        2,
+        2,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 34,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "raw_points": 10,
+      "skipped": [
+        {
+          "index": 2,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 6,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 7,
+          "partner_index": 5,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 8,
+          "partner_index": 4,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 9,
+          "partner_index": 3,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "87319905586533910006552317693714649565453860111243/1830793531169577687742355236",
+        "-248291589886319210625258888321559726763900390154749405372440885195617798400/9791947287111584616962780636706650170373"
+      ],
+      "centre_coefficients": [
+        1,
+        2,
+        0,
+        -1,
+        -2,
+        1,
+        -1,
+        -1,
+        0,
+        -1,
+        -2,
+        2,
+        0,
+        -1,
+        1,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 35,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "raw_points": 8,
+      "skipped": [
+        {
+          "index": 3,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 5,
+          "partner_index": 4,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 6,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 7,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "286660011737125967771957535669587182151384427/4165298960132144060164",
+        "569549261003636767336734854105257316031381318337238639085699112935/33603095009014176251065951295839"
+      ],
+      "centre_coefficients": [
+        2,
+        -1,
+        1,
+        -1,
+        -1,
+        2,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        1,
+        -1,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 36,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1
+      ],
+      "raw_points": 4,
+      "skipped": [
+        {
+          "index": 2,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 3,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "1909508887352988494554067159095132425690827155003/17631152921123969765446756",
+        "-117245199695882055209309816711480029471267036911897929304317483956657400/9254033799016247417265391524000175613"
+      ],
+      "centre_coefficients": [
+        0,
+        -1,
+        1,
+        1,
+        -2,
+        2,
+        1,
+        -1,
+        2,
+        -1,
+        -1,
+        0,
+        1,
+        0,
+        -1,
+        1,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 37,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        9
+      ],
+      "raw_points": 14,
+      "skipped": [
+        {
+          "index": 3,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 5,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 8,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 10,
+          "partner_index": 9,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 11,
+          "partner_index": 7,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 12,
+          "partner_index": 4,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 13,
+          "partner_index": 6,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "2747610742188484957859320992722278099287194923/25417240444195871455396",
+        "6385018938653427542096156243518324550063293021455955109447338734800/506527010465706455186857540915243"
+      ],
+      "centre_coefficients": [
+        0,
+        1,
+        1,
+        -1,
+        2,
+        -3,
+        -1,
+        1,
+        -2,
+        0,
+        -1,
+        0,
+        -2,
+        1,
+        2,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 38,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        2
+      ],
+      "raw_points": 4,
+      "skipped": [
+        {
+          "index": 1,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 3,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "63892077003185593866763011400427493089814964683/1582674764696719697409316",
+        "7035086655320414126536818911756233290131899023925973279840982001083000/248884316079988311216849668900145733"
+      ],
+      "centre_coefficients": [
+        0,
+        0,
+        0,
+        -2,
+        3,
+        -4,
+        -1,
+        1,
+        -2,
+        2,
+        -1,
+        0,
+        -1,
+        2,
+        2,
+        -2,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 39,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "raw_points": 10,
+      "skipped": [
+        {
+          "index": 3,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 6,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 7,
+          "partner_index": 5,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 8,
+          "partner_index": 4,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 9,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "-1575010488723088674488285922748497945915392926773/8388847594860087368201764",
+        "52940735541883841077374590044145997395550614592970142198874959454625440/3037130614812555857148717109958178011"
+      ],
+      "centre_coefficients": [
+        -2,
+        1,
+        0,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        0,
+        1,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 40,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "raw_points": 10,
+      "skipped": [
+        {
+          "index": 5,
+          "partner_index": 4,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 6,
+          "partner_index": 3,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 7,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 8,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 9,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    },
+    {
+      "centre": [
+        "42079958160774830941614512726051145779843083/101390117899587192036",
+        "-31790772233478924496855709953535200324122972232842651815650417690/127615508438830679275136091027"
+      ],
+      "centre_coefficients": [
+        0,
+        -1,
+        0,
+        1,
+        -4,
+        4,
+        1,
+        -1,
+        2,
+        -2,
+        -1,
+        2,
+        2,
+        0,
+        -2,
+        2,
+        -4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 41,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [],
+      "raw_points": 0,
+      "skipped": []
+    },
+    {
+      "centre": [
+        "72714105796759481648496071955220210392756633987/623995207394859847619524",
+        "-972967776882771396713169078419935290055653497793905283677089616052000/61614353246973430692278931631324471"
+      ],
+      "centre_coefficients": [
+        -2,
+        -1,
+        0,
+        -1,
+        2,
+        -1,
+        -1,
+        1,
+        -1,
+        2,
+        1,
+        0,
+        1,
+        2,
+        0,
+        -2,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "chart": 42,
+      "claim_boundary": "Together with the supplied subgroup, kept points generate the same integral subgroup as all input points. Raw points remain necessary for complete-cloud replay; no exact rank or unrecorded-point claim.",
+      "kept_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        11,
+        15,
+        16
+      ],
+      "raw_points": 22,
+      "skipped": [
+        {
+          "index": 6,
+          "partner_index": 4,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 7,
+          "partner_index": 3,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 10,
+          "partner_index": 0,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 12,
+          "partner_index": 1,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 13,
+          "partner_index": 2,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 14,
+          "partner_index": 5,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 17,
+          "partner_index": 8,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 18,
+          "partner_index": 9,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 19,
+          "partner_index": 11,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 20,
+          "partner_index": 16,
+          "relation": "P[index] + P[partner_index] = centre"
+        },
+        {
+          "index": 21,
+          "partner_index": 15,
+          "relation": "P[index] + P[partner_index] = centre"
+        }
+      ]
+    }
+  ],
+  "claim_boundary": "Every omitted point is exactly centre minus a kept point, and every centre is an integral word in its chart input subgroup. Thus compression preserves the generated integral subgroup. This is an algebraic audit of retained charts, not a new full search replay, timing speedup measurement, or proof that finite-admission records are identical. No running or frozen search worker uses this optional helper.",
+  "input_path": "artifacts/local/elliptic-curves/compact-six-r17-h4096-v1/07ca9/candidate-00/result.json",
+  "input_sha256": "76c31f6ffbaa735e694f9b304819691dd74cdc62c4097cfbcb5f4b70c79bc139",
+  "kept_admission_events": 192,
+  "raw_admission_events": 384,
+  "schema": "elliptic-curves.pointed-orbit-compression-audit.v1",
+  "sources": {
+    "elliptic-curves/cas/alternate_quartic_covers.py": "598f7556333c9d8462f251d97a6d132e0bd672a11861f8c2f142fc4588abe9e5",
+    "elliptic-curves/cas/audit_pointed_orbit_compression.py": "10d61ad076234a572b98c527d1873eac49c2d8969106ee9f652ad831e8acf1ce",
+    "elliptic-curves/cas/half_lattice_pointed_sieve.py": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4",
+    "elliptic-curves/cas/research_runtime/pointed_orbit_compression.py": "23f69a9b9aedc040c0a2d97e2b1f722c00a97a1a26702b04a94fba8d1ed3914c",
+    "elliptic-curves/tests/test_pointed_orbit_compression.py": "225db85eacc7956ab0f37bedbdc4dbc75f1cacabe8dd6706074cc039edf08247"
+  },
+  "status": "PASS",
+  "verified_skip_relations": 192,
+  "wall_seconds": 0.09245213499525562
+}

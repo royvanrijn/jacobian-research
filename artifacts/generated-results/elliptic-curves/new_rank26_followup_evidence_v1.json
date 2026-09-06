@@ -1,0 +1,2270 @@
+{
+  "archive": "artifacts/generated-results/elliptic-curves/new_rank26_followup_evidence_v1.zip",
+  "archive_bytes": 5863442,
+  "archive_sha256": "202f421f4fbadb5d5ba0c5911883214c2ee9269ca79844e4bf1795fae0b77594",
+  "builder_sha256": "2a27c2c5d4747700527c5796ad7a9cb9938b9cf9b9c30054f4c8f15514fde6d7",
+  "charts_replayed": 301,
+  "claim_boundary": "All retained adaptive charts and their complete point cloud replay; incomplete search coverage remains censored and supplies no upper rank. Includes exact latest-seven family incidence, a span-preserving orbit compression audit and a partial conductor bound. The completed initial24-candidate experiment has a separate bundle.",
+  "cloud_points_up_to_sign": 1947,
+  "files": [
+    {
+      "bytes": 302802,
+      "path": "artifacts/generated-results/elliptic-curves/compact_five_mw16_atlas_v1.json",
+      "sha256": "88a8c61c2722394bb812da601e24ea2c19e54361eef4b0fe9c7924e78c828801"
+    },
+    {
+      "bytes": 926408,
+      "path": "artifacts/generated-results/elliptic-curves/compact_r17_new26_followup_recorded_mod2_v1.json",
+      "sha256": "85f0864936502d8ec1a4c13142d3deaaaf45eb042394656414e46d6fe59c1697"
+    },
+    {
+      "bytes": 665709,
+      "path": "artifacts/generated-results/elliptic-curves/compact_r17_wide_results_v1.json",
+      "sha256": "9129bfa90eeaab1f1660c5d6ff39de691560a47f4af929ea19a176c2faf4b404"
+    },
+    {
+      "bytes": 231474,
+      "path": "artifacts/generated-results/elliptic-curves/compact_six_r17_atlas_v1.json",
+      "sha256": "2f28c081c874adfaf738c1119e8f4e6e7ce70ea74277cd8cdb370a02bca34c5d"
+    },
+    {
+      "bytes": 813,
+      "path": "artifacts/generated-results/elliptic-curves/latest7_cross_family_j_incidence_replay_v1.json",
+      "sha256": "2ee23be059b72e61a3afd5dd2aeb035e5ced38f767297594718c667474b1637f"
+    },
+    {
+      "bytes": 807431,
+      "path": "artifacts/generated-results/elliptic-curves/latest7_cross_family_j_incidence_v1.json",
+      "sha256": "4cc2edee94ae9d0f44ec83e3703dc7e610182229ce30f1df336906ced2fce3fe"
+    },
+    {
+      "bytes": 230344,
+      "path": "artifacts/generated-results/elliptic-curves/new_compact_rank26_proof_v1.json",
+      "sha256": "99382336b06eb0a1a730d70ff3c8d263bc3844c89a53c87c30a24b49db45f030"
+    },
+    {
+      "bytes": 890827,
+      "path": "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v3.json",
+      "sha256": "35827784b4113a73f8d5ce0fba552b21f462dde47df290f3305d89adabbe3e6e"
+    },
+    {
+      "bytes": 68841,
+      "path": "artifacts/generated-results/elliptic-curves/pointed_orbit_compression_audit_v1.json",
+      "sha256": "6c3b3112433db5b9edd50e499766e6ec718699a04334f60728b8292c283778b9"
+    },
+    {
+      "bytes": 1615,
+      "path": "artifacts/local/elliptic-curves/compact-r17-fresh-generic-census-v1/protocol.json",
+      "sha256": "9dd048d152706af1ae9db5e37748bf42093fbb19cb2e61c07f55a3ee7fa7cbab"
+    },
+    {
+      "bytes": 17691,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/00170996d320e071c600ddd4c55c42d3a471afc9a8ea63862e7bb51dbaa0d554/354aca1deed46fcbf597664a048e0baf85a1637a68214a67d288ed5ea0086591.json",
+      "sha256": "b86b80c8fcef77fff6a88d1fe39c841f579fc5a46d8c6ac13dd98c9cd7713c43"
+    },
+    {
+      "bytes": 19006,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/003a84f14f3a8f95ce29c7b7bd590d79090a746c624cc974413b2d9bcd628041/1f7d30ff376ef9d4dba8a39f359801a6ed9667854b45f6cfeae5b4aa5f91643f.json",
+      "sha256": "f5703d798b5f93c97d98f8f4dcaf07af39865c398f845de20181987810ae50b9"
+    },
+    {
+      "bytes": 17270,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/0125337cd6f0cae7b6b3decbd571da3975189be05faec9cf3468713082459a46/f8bceba29e2a6c91e3bb1f55a5161c0ada4a472d5c224d325cf54c6cacd6aba6.json",
+      "sha256": "b87a63a93da5855419b6797e2c18d43fd5b70bf07e9ed42830fc0156d2c91cc9"
+    },
+    {
+      "bytes": 16866,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/01c318a95fe428718ebeaffc0716013ccb9e98957157c8a0ec333b5055fc217e/30ba57251b3216dd25d03e1d5ccc047749a0cd029606867b4fb6980cd3bd2f69.json",
+      "sha256": "1f7bc65eae3a498b3420d0e9f116022ceafd2e51f7224a5effdaad771d48d66f"
+    },
+    {
+      "bytes": 18157,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/01c318a95fe428718ebeaffc0716013ccb9e98957157c8a0ec333b5055fc217e/963fedc35e74ba0780bcc9a9463bedcb9aee466483394fc63379ae9408f91016.json",
+      "sha256": "616933c32a2272403342578181b924634a44e78d852b05b2501ffd7e5924d395"
+    },
+    {
+      "bytes": 16862,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/01c318a95fe428718ebeaffc0716013ccb9e98957157c8a0ec333b5055fc217e/97d24fb743b339e0436ec2fd87d6ea7fb611c18dc83a7b7a057e49b836cf2ba1.json",
+      "sha256": "4b0b87ad50cf8211228bb17bd3e498f48a1e1898160815178517a1aa31720778"
+    },
+    {
+      "bytes": 19110,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/024aef3cb8e6749126f152d3ee90782aaa51e58590032f92f848e97ee98444cf/948e6e3a9ca906b9acf40ac635fae083c2957a4cfc293a9419ae8e70e096da2a.json",
+      "sha256": "a33f04d80c4f9594857c0f192700c3026d9f66450d35ce7b8c2944b2eb861c53"
+    },
+    {
+      "bytes": 20099,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/02aaccc7064c501c4e84f3cdb414181f9ec7c4905865f5554673a3d56a044170/52789587824ab2d0bc4008579cc6f07a900fd79948835593a346b158c4a2df34.json",
+      "sha256": "f804081e6f3526bae2a02811af8f2f2501cb15a87fd53cf5e59f1c84a9418274"
+    },
+    {
+      "bytes": 16935,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/02aaccc7064c501c4e84f3cdb414181f9ec7c4905865f5554673a3d56a044170/bed20e65d16a41ef7317b84ab907fb6fc88a0b7dcbd0d7ac105a618852a46e52.json",
+      "sha256": "3da2fdc0035d145cb67961276698e6463af1f215f075094e5dace93cb6899ae3"
+    },
+    {
+      "bytes": 18075,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/03da0ba1eb864da393ffe90ba3b47aaf24ec3ebc95b3a93af3e1f63725834bec/380a11979e741b73536326665981dfb331b6904030f9fc8ba6b233daf3376c2f.json",
+      "sha256": "70d10ca7be644bf61ec0cf5fe35987c2a0f32f6c20c2571aade91a89b5f4af4b"
+    },
+    {
+      "bytes": 18465,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/04e0f476a97e29e3ea24ce69f7be9fb1736eecd390867ad9b36e4e024bda826e/fffd24f649651b47ea8e6dc652b54a95850fce78b61a17534c2dae5b07b78c0a.json",
+      "sha256": "beff0b3f803f9de5d34e87a3031c511f7f752b614126025b11d0ec8556f80f81"
+    },
+    {
+      "bytes": 19004,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/05aa7557453db6995074fde754ebad1220fda86add22216728e81aa67a429b72/c9b1b9865e08d861ed2ad68a1bee18f4ba5a3b17adfd3ed6694782fe4bfaa825.json",
+      "sha256": "c7ccbb8e25127d7a919fb6c576c5abb29222f80b49a1151c274870675705b75b"
+    },
+    {
+      "bytes": 18412,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/06304aafbe5c430362237dc5eac14749a57933e05a744afcc26711c474099b24/a942e117a0f97b765bd41dcb52567e34ea4276ce65818e1afa10b9ad5bfa74b4.json",
+      "sha256": "01af56a329acabadeba9df421e93765dbf9196cba02096564dcd4efdad5c10f1"
+    },
+    {
+      "bytes": 16820,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/07b6efdc61acf4678533303461fab206827b06f97ac18e28ac5321ba1c21dc18/2e221ff0be834cf14c5051622921557b038b840c1679be814f1e378bf908dcae.json",
+      "sha256": "a50d592458c1bbe19deef0437e3189a9693119fa9c89ef5d934060334e5e1105"
+    },
+    {
+      "bytes": 16729,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/07b6efdc61acf4678533303461fab206827b06f97ac18e28ac5321ba1c21dc18/6dfcde9d3e587b1366fd0b4e3dd9a85e775f9d09487e225f0c479304a15af622.json",
+      "sha256": "02be5563d486934aab2a12e3dc6526f6e1464ed1e508d5c36eb8f81bf4b4e239"
+    },
+    {
+      "bytes": 16726,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/07b6efdc61acf4678533303461fab206827b06f97ac18e28ac5321ba1c21dc18/7046c8142ef87e1fdfb9d5caad6c8c95bcb883ac31685d47e3ae46acc75fb09c.json",
+      "sha256": "aea6a74a8b2757f11c80a8fb932401e441f15f4ed9c03934945078f4b559864b"
+    },
+    {
+      "bytes": 16751,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/07b6efdc61acf4678533303461fab206827b06f97ac18e28ac5321ba1c21dc18/8681d0b53b6c0df4993a85797822bff84eacc35a5c59d35872db679f5fcfe997.json",
+      "sha256": "b85f9a4f90bf4d5297cabab17333b06a898afbf486cf80803239386fcaf179d4"
+    },
+    {
+      "bytes": 16740,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/07b6efdc61acf4678533303461fab206827b06f97ac18e28ac5321ba1c21dc18/86c8e2b529b7e81f3c6f386eebdc686d40ee83914ad990091c3fc72448201005.json",
+      "sha256": "b04182529648141618b23fddf328942229bdae24cefb972eb24b46c6afb38580"
+    },
+    {
+      "bytes": 16796,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/07b6efdc61acf4678533303461fab206827b06f97ac18e28ac5321ba1c21dc18/a440bfc581f561cba4c361b1a34abef835e421f6f0b884a0f314e00b0bd4530e.json",
+      "sha256": "4b5d8d09b10349c12ab3a087d736574fe387b5a3aed5127843974715d3b2827e"
+    },
+    {
+      "bytes": 16768,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/07b6efdc61acf4678533303461fab206827b06f97ac18e28ac5321ba1c21dc18/c9fb0e863df924236e11a20931b779b7b0d660ae6fac52098e32c0bcc2864580.json",
+      "sha256": "f34ddcc668f3e5338882644da97b20662db39f90e3fb96d576fcd6f6c7e13f95"
+    },
+    {
+      "bytes": 17156,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/07da4fcf33d25372a99f824693094c5eb409deb63095c42806d997e4ea8603b4/86d4251d4159fc653ccbe240844dd618bd31d8aa5fbb49f7400940eddadc0bef.json",
+      "sha256": "e3aa4a83e44128df084e6a67500545e9c79c3570b2fabb9df9c5229dae2d1a91"
+    },
+    {
+      "bytes": 17973,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/087bfe3f296b12fe29a560c2a82da50b9f440aea3837b35e14877212acc5a75d/3ca3b2e90cab8ed49859eb0e31f4cf5dc17511c805a2e86faf0136acba0c4715.json",
+      "sha256": "2c4db9fc6a30a448a62d56ce54972274eb90e78a1f5b466048a87192afe72de9"
+    },
+    {
+      "bytes": 18300,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/097146df46af4195db4369cd45b8345f31ee3870a45c802976b658ec54d1f250/344346c7907cca8b77ffd6ce54d2c117ea4b9e12a90393bfe6e952aa99258d88.json",
+      "sha256": "d2f431dcfe9168393bfd019484c1e78f28255e117f25db43ca01de55bc224546"
+    },
+    {
+      "bytes": 18038,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/0b5c09b663e1d6a677d58eeebd1760828c1e13b10f8017572de3e6af4c6719cf/a71379b9db99d455e25dfac9b1838d690cc026722fc7f7885f8f14ffbe89446f.json",
+      "sha256": "3f231c40827583e0e3be7fd93ab0b7000574af59ace023287091231e0ff68984"
+    },
+    {
+      "bytes": 18072,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/0cabf5f8e075423dbad234fe396b8e74bd64a238ad766c90b908eda3612d1139/8943357594550ac8ef292bdca266a1972d969bd91d0c08ea3c2d5b1800fa2ad9.json",
+      "sha256": "5cbec4bfff1c853e0790098eeb4a581464dbeec8f209830f6672c065cd886492"
+    },
+    {
+      "bytes": 19495,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/0cae0007dbeba997cbce29f1929289186bda9adb1bfb182a02855b8114ebfae8/39e6f29aae96c8de2ecc71956a25be0d7c5dcb707c4d1fe8fb36437e6334dff5.json",
+      "sha256": "438d4ed27913729bdc4a378ed31da2b3fc135abc4ba4e1353bb4ebd7a51e9db7"
+    },
+    {
+      "bytes": 18004,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/0e1674a24d8e25fd530d6b24dd09a88ee81c0fba6d6f90ef9c9a95a8acd7f4f9/4742c62c3e1f8dbc6c097b7c9fe137cea5d2e04741593878e2f7e5e2d66ed2bc.json",
+      "sha256": "37bc75df1102cde358eab26c63ac04d05707bc6e7ffe9f2c795e2c5de8041273"
+    },
+    {
+      "bytes": 18524,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/0ec864908d142194f83a6fb35d7e73393b3384f010cedafd55a6e743deceb171/2a44d4840ca8d8e7990af5dddd569217a6220ba10e75c566c9bec0a7b8b2b26c.json",
+      "sha256": "348e332ccb5e84ddba1680f18e557703b7696bf873c03a50fad7dfbdc6d766de"
+    },
+    {
+      "bytes": 17375,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/0ef69e71ae3b88103cd1149cee48561077a71bcf998529488c1eb064b96a3ff9/8e03ed9127eb5b1e12bb936059fa53e47c5d72d51f2631f0843c5b0c9ae05e18.json",
+      "sha256": "4ba2b62605eb3ff7cebd4429c4cd30277f2e23746049fcbc81f410e44c942f7e"
+    },
+    {
+      "bytes": 17324,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/10723d0f5f3e837ec804db0cb517a662ffac5e4b056192baa240441b1dd2ceb9/d3fb5d3fbb9ed8301842fd4a93271e2b9d4f8504779e08737fdfabb86a8f3743.json",
+      "sha256": "3750f03cc7a9f2c7c0031d925c238bca9c94b659ecb6a89523469102bb3f18b4"
+    },
+    {
+      "bytes": 18055,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/113d4e16a20abea1c834978a4d003190c0dec0cbcb03a3d1051547d36f448f38/eb25dd087cd0f98baa35e18cefe814e7785d8e57032892026431294b27cf6b37.json",
+      "sha256": "9c84dcff55a574c80c25838360c110958db5e6717a0da97478e0e07819b486a5"
+    },
+    {
+      "bytes": 17274,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/114ba3df310a70d8de6da39dfc48e65e9eee77769fe9e58e2cf7793a840d4000/d813b87f918aff7fa80875299cf88d180f2b96bb3523f6fc4887f6fbdcc7be0e.json",
+      "sha256": "65840fc145dbc157bc28fdf73adc7e5a0ca7f8c177b9c7c3c9971235bd0880df"
+    },
+    {
+      "bytes": 18022,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/1291ebb223f093f29fa708b36911023f0f70371bad7be7b303a25d24553cf1df/b1f80225d350875b794204961dbe3c294a2f3fe3510ba2d5e988ca88f5d4883e.json",
+      "sha256": "5b3c5bfab326f965fde4c8b18b96f68dd8e1b3d80b4a6e5f4a146fb06091afa9"
+    },
+    {
+      "bytes": 19077,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/13b4cbeefbd3f27c34d191555483083a27bbbfce141276a6d4e63ef84768ac50/1110874a7d98177d6044e87b2a6544d1833cc3ae2e883cf019c2bbaade9aabe9.json",
+      "sha256": "7c6092dddd30098805d986c77ae92cdc4272ebc0e50b36f6e00e6327dc6e153d"
+    },
+    {
+      "bytes": 17000,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/166ed76c0869ab24c16123498b9bb70edfe952ed07371839a55d8c70c2100251/32d6750fee4027d56935053d078b511dab9f7010e9d5682c00a021e881cfd9d1.json",
+      "sha256": "18fdeb10d9bb065cc422120250b71bc7876e5732918cb4ccd81e547c18cc76bd"
+    },
+    {
+      "bytes": 18088,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/166ed76c0869ab24c16123498b9bb70edfe952ed07371839a55d8c70c2100251/8e3f3b8fe0c47c6ae94067f8ddfadecb3f1b45f13d6493c3b105ea6354cf1f99.json",
+      "sha256": "ae94e614fcdbf0d441f89359eb1574e713bae682d8839b3ea6e4613225939f75"
+    },
+    {
+      "bytes": 18488,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/175ffb2d00147c6ff2bba4ae8993a4b88077c250a4fd69832ac3979c55a22423/f44fe88c70e3629307a2059e36a4d3ff06072bd7f0b328962744a5c7b2b9b257.json",
+      "sha256": "51266db4041955817da0e6f43ae274fdd4e798785262219aea7c00c55aaf6a29"
+    },
+    {
+      "bytes": 19507,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/183222ac4c7e59d60163fcd7ab20cc8048e3392f1acd5da146614ca1a0ab8b7c/65184eb62b19c705a414b1e2a9726576f14911f6b42b213f5577764f882f02ee.json",
+      "sha256": "b8ab3004dc46ca6c4d0dc4300fb569f89dfb649633c8b5a66bdf68d5dd18fc04"
+    },
+    {
+      "bytes": 17973,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/18866e93310643641541a92773d2f4bc0fb2013964c0b9b11d9aef2c9bf6a4c8/a11712e45c9278772a8717ed9b5beb9d951b3966354a0942661112207a0c565b.json",
+      "sha256": "ab5a37571c9e11eeeb1b58fbcf8f728195e75dbbb2f303498fac394e9a81e7bf"
+    },
+    {
+      "bytes": 17880,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/1b4889ec43a77c15b86a9fb9da3b9fd70fea7239c7b2c25b3592b96b6f88d176/71a1cf13e462f630e5322e3d1b32a60b57b485f168ca4fc6627360abec52ec70.json",
+      "sha256": "3156ff328245b67272688db384dd2d1db8c5629e43a2b000923df5d3cc3a2a0a"
+    },
+    {
+      "bytes": 18024,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/1c4ec2e520f497988ef83e35667236896fa886820d89787f45cf89e761f656fb/b8d8730087490344a70ffb83ff34448b7eb8fa6dff90829e7f56debea398b7f5.json",
+      "sha256": "ff6f42bfb5caf2d2b8e3f01a4706c1a9fcd2fff88ca0a6f66f4cdda35198776c"
+    },
+    {
+      "bytes": 18649,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/1c9bd10f9a0624fe1c376e27064114e34301fc002c23ca599f4622b71e89c7ef/57d77fba20ebb5bc69ef5b098e3108b998e52a221253c6f8ac0a30e6d59f90b7.json",
+      "sha256": "497e21e54dca9cc80e71fb3a56c16a1ec6b321ab88546a0cbadeff96b3011541"
+    },
+    {
+      "bytes": 17741,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/1ee68c408d3b9810098f5ff53c91b8748d0c009f0cbe436c7dd8ad3ac2d5c497/831c40570b4dece77e37190bf140ac9b48ac2d533cc4f06d34bb3ad3218147eb.json",
+      "sha256": "bea07fec0a1d53348534f5884e4abc7d9df61dd227f69034c2061866e39611a2"
+    },
+    {
+      "bytes": 17639,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/1f84e40725f5f107f06334aa754128678f12a4a737d4e4a5b19044bde31d181b/da2d2633d953388d8bb297419de81e09de95985b06b8fdb214ec5b98df96af78.json",
+      "sha256": "42c1b01b47a88daf7d061886a0b76938fbc88a89b5423db6c38496ae5c08874f"
+    },
+    {
+      "bytes": 17373,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/203b3d8704d44f7c12133a4f7eb043dbb9d03863e74cc796edb7705f17198e48/ac916aceef0b3cd79d0a3edebeedd71c548750cdd4fb1af443c2f2bbf851227f.json",
+      "sha256": "2ac54f4dea886fde0440610bfa25526d4f8533131279721196579784b6387aa6"
+    },
+    {
+      "bytes": 18428,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/21048c874483f871d55b8cfc6f97bc3a6d466035bc78c2c455e2374fba086edf/b524fe393bba16140595d4c723d19c395e42b5f8c0f3a4b90de09fd27688f20f.json",
+      "sha256": "24f2c27f952e437e08bf8692ef3823509ba419948273759f472333795ba793e8"
+    },
+    {
+      "bytes": 18048,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/223bdbffd28e9767bf818a3c108bebd61309a07ef1d965088a93c4042a796aae/12a46049aef1245b9b90e620ff61f9aba47384276eed4439321aa7a7ed38de8d.json",
+      "sha256": "712a4025c22e2a59ed810fbca0bfe31dc0a3ae97ab937fdead482afae9deaa00"
+    },
+    {
+      "bytes": 18337,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/2423516fadf722670f75f582bea3cf537c3ee0ca58eaf8cf52d43df4edc235b0/0b4dc384111e25c82b193fc2cdb57814fcab47c5b4095fa458023b9f02bf0f3a.json",
+      "sha256": "9d31de58e101e6964406d7679d79be0f7dec7a8ff20a49e600af2e8f579353b9"
+    },
+    {
+      "bytes": 17941,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/24af89a1ba82ac27b03ea0860926b0391a87014aae33bd24c1d295e15c08e8f9/0cbad67149068b4a655a7800dab715a9650c50a52e0db4f3df42432598d649b2.json",
+      "sha256": "45b7062c09ffa8e56f6dea0db3533a9d9156f91cb212f4c6da0aecc67aecb792"
+    },
+    {
+      "bytes": 16911,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/24af89a1ba82ac27b03ea0860926b0391a87014aae33bd24c1d295e15c08e8f9/cd8a7519eac0a252a47d17bf3f86096c14a1b427eae2679d036a6578a59aa31c.json",
+      "sha256": "a350c5ea9a81e0b46a02637b36b8c7e9a087a5ea87d6da7de2de33f022a01c16"
+    },
+    {
+      "bytes": 17691,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/24cab3668fa3b5340cfc15518aefc07983c8dfd5a828a5a2d093e39e0ab091a3/3ca2c9ee76d9d2a860b0d6f2f0159a8fece70e3f754175f4b9ff3028536789aa.json",
+      "sha256": "92ac835b364e1b32a147328469e2a76673dc8ada380378e41521bbb08da3555c"
+    },
+    {
+      "bytes": 18378,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/25f289ccc186eb78b8cd1a4951fbc32f56c9cdaf8a05ce64218995caf9df7c22/c6521112b3bb8ecf7ca66ae76e04350f40d340842c8d47acad16abf720ba69b2.json",
+      "sha256": "7ffeb628a0a6a4a45115b0d5f2c83d7bb51ed71de6391a3f73b36be26809123a"
+    },
+    {
+      "bytes": 17312,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/264dc3d2ffd6979f9e41bbb53ca02cdebdc80217bb61d88b6ac7b0c3b29ef5fa/22fcf9e3d067fc06119541011984cdda873afcfe30466cb755ee7307b2106c47.json",
+      "sha256": "5ea6e71bc5570e19230586cdb27ce37179c57ffca3e3134a597c1020a3184561"
+    },
+    {
+      "bytes": 18959,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/279fee564974c94e66011e7c03165c2039164041f249b65cae9fdc9162291dce/21a91ed59d2c77819562d848c1c39698d145397497240d5b1e82ed3cccf4dffc.json",
+      "sha256": "5ca00d0ae976bae48022322b27c84f9d2c4adfc0d7be0c30e067e890a81ea819"
+    },
+    {
+      "bytes": 16878,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/279fee564974c94e66011e7c03165c2039164041f249b65cae9fdc9162291dce/640fa095c5f65dcc746c215b2d40c1cb54f58bebcac661febeeee1468b6808a7.json",
+      "sha256": "a421afa41899c5af4b9ae6032a7ba9100f9e8fd26bc8f8d56dcba6848a955376"
+    },
+    {
+      "bytes": 18310,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/299dc28117dbd382bb1f12a30f996795e7de3c9ef40358945daf4fd45d1b9d56/d4ff9e62810a05daae31848e7011cafe8ea0fafa8a83bd19424b2e65c4a09dce.json",
+      "sha256": "2795af265730cf0c9838dab7c39a0212140f443515b7141b64e638c4e14caaa5"
+    },
+    {
+      "bytes": 17331,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/29c95c9b05b9882ef429514f0699f80ea0d7e5bcbf838260e765f8a5ba4f7590/396ecce125304fed24b9b49f4e381049ec2fe97f6ada349da3526a7665e4e0ee.json",
+      "sha256": "983b4fd0b34f0297678555efbf503d6e8b1d34711b44d1f33321f0c940b2ef7c"
+    },
+    {
+      "bytes": 16983,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/29c95c9b05b9882ef429514f0699f80ea0d7e5bcbf838260e765f8a5ba4f7590/579dc4d44fd9732f8654315113443a3299d9aabbc77c7011a24ec4f0427d17f9.json",
+      "sha256": "1d9ad81a1d18381371d4e394e1bbacd5891f66de058e79bf1cf15dc134ceaab2"
+    },
+    {
+      "bytes": 18398,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/2b4c84fac8841896aa441a5b65607839e8b1873354278a7b10f886fa5b805a8c/49b5a8639c048147d65459d06eeb396eb758bcc0e4507fe11bdfd09e5d7be6ff.json",
+      "sha256": "90cda7a2e92dbd7bd9bf6da5ff8c221a8d9c6b88768af08256594acb6a7fdd26"
+    },
+    {
+      "bytes": 19016,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/2e54e0aebb61cf58ed46a5d0e4d0521d584732aabf0f72ca8e3b2d334a5b8bf4/92ebddff8355b24ba60784a9cdf80960fbdd81e5c36910a579e6c77b901bf858.json",
+      "sha256": "62860c756980ed1b06b96567495f9920157cf0c129622ce6065fafe6bfa8d830"
+    },
+    {
+      "bytes": 17548,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/2e87ec116e4dc0784915c4022a00dca723bdd5c97d013eea00af704dea106fdb/f284ba1e5ca28470609ae6be0455ee14c5f8fbacbd2ab4a9bbf8d5eb5bfe21d6.json",
+      "sha256": "a8bbd8b0f5dcc308b7f0bb13267809fc81569726793ada6964f2271f26d8ffb6"
+    },
+    {
+      "bytes": 17693,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/2ed0d4b47b26c65a010ef686c5d5edcb24782f967aa3e1024f5d0a96b10d9a42/233df6fd9f05e417f7ccfec1ed2ad8aa8613471d90638e8b580a7ca492611048.json",
+      "sha256": "cb169283eb5007c27e93744e93339940b04e1b711dc8013076423768e7380ce8"
+    },
+    {
+      "bytes": 17365,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/2eec6fc499105cef13924cffa2175eb0a2b365b0df8c3d56466cc3744d1075cf/4dc5d8bf0de3921aca0c9600d81dc8f08ebf6512986baa7d44760f335e718e13.json",
+      "sha256": "c1cc2a64f9386c5553742740452ef492a5317e2078b7e48f55f0abc77fb8c33b"
+    },
+    {
+      "bytes": 18588,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/2f9f1b3324c68f9e3ba62776ebbfca4070872f6369b9fcbd9a866a87ee97f166/e7b3b334943e472e179e5d3f967c669aa62a4b04029f0523aa691f23de04d920.json",
+      "sha256": "4c65e42437f73470f2d11f43898ede876e5503f845d3a2b5b532da6f8cba72df"
+    },
+    {
+      "bytes": 17365,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/2fd6696c0f0d37ed8429aa5d2db7271b85fcf78923f9ad806784b0aabfbc4c49/5fd0d803b590bf9edd95f9837bdd4fb1b6718da10b50c4739f7cdf2de5fe13f8.json",
+      "sha256": "d7ff55171c7f93185d343567700e001c9d0611ea1bc52b3645547a45f69be646"
+    },
+    {
+      "bytes": 17167,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/301a96e2408b6df9fc62cc568cdd2ffbbb597f86cd9685dc79a7deafa159bbb9/f759f18b173f83335c0b96e8135796cc87e8a6a782052d29f1637fa004b00d29.json",
+      "sha256": "f47293edbf34f783e5f4e364dc148fe7fab27ac9a42d9eeb03b7c053ad90f3c0"
+    },
+    {
+      "bytes": 17210,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/305e92b9a6d8125f5bb12384a842876b7287a4b72f2d45b9d28e76070fc85cac/4e955c6193476f2c18871884f5aae4c41405bfdca4a0701a3adec8f49e20d444.json",
+      "sha256": "9b01f5f1d8ee5c5ab69269bd42e20690001a31a057215120be12c8028889b119"
+    },
+    {
+      "bytes": 18728,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/3406d2e2506011ef61d67e6b2de3a012673becf458af0049437b28e5f0394244/4663ed810a0a7b74bb3a33207744e738739ade09173c061e6709f166090dfe49.json",
+      "sha256": "aed6b0916ce362f0258d9319716f7d3da561f07adf843065367a6da37551dbf3"
+    },
+    {
+      "bytes": 16888,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/343fe0e3e39b80b5afcd9fcd7a36e6e8dde03f3d56376cb76cce61295db8f502/3fe1bedf57946f56343171cdcbe9297fd2b99ac98c1d824a6b96dc55fd1c90e7.json",
+      "sha256": "3242aabb6fecb350ee90f0af982461280ffedcfedec8a5e4163a71a036b9606f"
+    },
+    {
+      "bytes": 20694,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/343fe0e3e39b80b5afcd9fcd7a36e6e8dde03f3d56376cb76cce61295db8f502/e64efcfcdce743e505af66e0778db6472c01865cbb70c9631eda2ab847601f9b.json",
+      "sha256": "649746d90c767ba4d3119a4ea6c565e32c19386a9c1f8d85837bb11b4977673b"
+    },
+    {
+      "bytes": 20126,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/35afa4ffadf5d1b983ce46a502c9cdfc27aa29974181bd20f049655d1c61d174/91cef47e87d9775eb16b822e5ce1868a3e043c92b168bf37dec7238d0a690440.json",
+      "sha256": "92fd28bab57842a0bc510b818608bbb4af7e2ffb3ab1bb2f69db260d117ba6e6"
+    },
+    {
+      "bytes": 20518,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/37010fe03f441adf5f1ff46243d22d370ba136c97a32bb48ef60555988aac081/42696b29cadf14bdc739e347075371a5f20bb37034c5f774bd7e7f783c0d2421.json",
+      "sha256": "d5adcd5f793002a081c5ca1ce58bb4b8e675f6318fce741925c0e0cb07f43848"
+    },
+    {
+      "bytes": 16938,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/37010fe03f441adf5f1ff46243d22d370ba136c97a32bb48ef60555988aac081/9161214f3b23be0b0c49e53ba9a1ea42cdec9ed07c9e2ee1819f5f83ec498e35.json",
+      "sha256": "849f301c3e4a3d5e8d915eb4a046d4d1528e85026f7efe015b57d1c5ad1da71b"
+    },
+    {
+      "bytes": 18594,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/3702a446862d1037f1038c3aee2352e5b397dc12492b7d0015f6a75456205198/961807b5a98a613eaf7295bffe01f4008d8e43996da491c9ec584e43a4cc8e78.json",
+      "sha256": "7d690b8bc7f2e66df0bb9f2ec5d022129a16d0bb975987798a76cebf0b94c387"
+    },
+    {
+      "bytes": 18702,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/376d20da68b3d66024ed24f49286b9aa4f48bc1245be6be26edb62f267a6c20b/149d7510755c2b4d82e4ec2ff9a8a2a5fe66e99a362a0daaf091ff8355b767fe.json",
+      "sha256": "cfe65e5dc59cc15be6f046b8f508ebdecbc2cd8694f1f2494508255a07e6026e"
+    },
+    {
+      "bytes": 18132,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/3bc634d29e8271a32c90ee6918fa2f36ef7e501f28ef67d7c48d2b611eb0d9e1/4b08c35db79a8aed0c4c5cf92d15bbd6feaa565a7923e645d330e235f6a7d436.json",
+      "sha256": "00c3cdd6b60c64498d9eaa92f584724560fd03202d094b2e4866a70d31b18f1f"
+    },
+    {
+      "bytes": 17239,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/3bc8e5e82ecb03e5fbc126a66086f86aa4b2a623f136d41eb1d91eabf5f8ea32/a73789b371e17161aca207c0694889c799a1b4eb349ea5d479a4aa487618a8d1.json",
+      "sha256": "06cd67af72a6d6229cae6bf31a2d3e8c7cfb8167016b7967440186c85a590a62"
+    },
+    {
+      "bytes": 16846,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/3c9ece4918dc1e0fee19b91a13e715b01e9ba0b060d24df6f6b3a7eb1a81f54f/ec92182fac8f361b0b1ea737fbfc3323c7f14833cd9a69a6ac4a6bfa1cda8a24.json",
+      "sha256": "ebcb51f9bfd1a7a532de344889ff939c8e6aef501dae577a09d778a638114d3b"
+    },
+    {
+      "bytes": 17534,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/3c9ece4918dc1e0fee19b91a13e715b01e9ba0b060d24df6f6b3a7eb1a81f54f/f64ad44c468de3cd27608e794f25985a5a77009f24b7e399dc2660e7ae318f4a.json",
+      "sha256": "07854efedf94d455faaee550e234cce9ab6615edaf21074a4b60a0ee6113434b"
+    },
+    {
+      "bytes": 18044,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/3d05915f6416f70332573cc9f3eeebe8bbb32094c30a4cb3af8c40c832d926c2/0c7d8358ce03ec26d452d9bad8f0163650582c2736c48abee48eff5f84806dd2.json",
+      "sha256": "6a34e100b0ff8cf409a942b5cc9422246abde42ddcae214afc9769d89098adc3"
+    },
+    {
+      "bytes": 19754,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/431796c7c4b44e350355949c656ca87303e891dcf20eca316394a76b61e4d7d9/0b5ab84618d99cad47b80a4727527f77f9f4f200b51dd3bf104ae4eb69ecc33c.json",
+      "sha256": "afc326e5e5994fab71a1d38b735f44111805b8f1959b76fc35ef75d6af21d0f1"
+    },
+    {
+      "bytes": 17973,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/44a6997bf2c3cd73b69df2f7dd088cdabf4b6b3800934cc0930892bc0ef55094/279fcf36df7e56fc135b7d1da637a17030a0476770b3499853874caab9693eaf.json",
+      "sha256": "fd11ea1680d7e9a7e20089f1c9911952c75a0d4d4ec59163922a7aae31992d9d"
+    },
+    {
+      "bytes": 17199,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/45ec942d46ec56b5ba7dc737ae4402745995700c17a1285fc51c4166abab898f/03c88c3b847dcfbe83b351c55f4e15b2d120184e4a810086cf20dc8a98d24d78.json",
+      "sha256": "9817e44273a285139c780541329b61210a1691fee81c666251b5d58e64e34aec"
+    },
+    {
+      "bytes": 20019,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/46a6c130ddd98ddd69ebe7493a73ce4e8b51b1f603eb88faeb6e19dae7342500/3ec055dc7e919f17707e4c422ab435fdec3142519f02720cdd30bed60b625c85.json",
+      "sha256": "db6a58c40592a6098756b8ee77f384a8d183cd5e433061ed3b01e4d612dfa144"
+    },
+    {
+      "bytes": 18198,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/49d3c6d15faae20539a41666450cc0d6333b7d8bb436b1d5ba4ae8d3f8fb9100/410cb85af58a48b6cfdc83bb5e66a1aecc15182982377887d8080016912d9813.json",
+      "sha256": "b01f813ffd83f72f550d1cecaecd3efca282efb8d0e2b64dcf83cd02d6792adf"
+    },
+    {
+      "bytes": 18732,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/49fbd72b22cad0be0e61e35a893cbe2f4171e625af3cd8ab05f51e60a5dcb972/c154864e1cb48a3da057e3fb258c3acf5151d26f73df55d3ffedbacfffaa8645.json",
+      "sha256": "fa6b3337dfdad5b57e1e24572892a38a4a015c206b58ed3a9ae592aa749d9776"
+    },
+    {
+      "bytes": 17675,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/4a4fa07a14a5761e7bae73d89dfe48090889930cf219984246f7eac6d471926e/e38489e5c7408c43d6da0627fd8972089613f45bc048e187517a3102f132376f.json",
+      "sha256": "bcade653dcae3fab9e92b390a5d440ac1631e348f2cd0686b7d31f9a4bfa565d"
+    },
+    {
+      "bytes": 19083,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/4acfd9d9ee54161ac61b595fd59f79c4f0e63800754b084b011bd844aab557ce/9c77030a3ceee0571a4f2c3117984a3ce0a0edb6f4992955d9ff62439725675d.json",
+      "sha256": "b1ecd6af50bf6f1b53a5aa0554cd16f45e92dd2f9b680d60396a62d166591dc4"
+    },
+    {
+      "bytes": 17162,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/4b0924de4431ed748e636d4b662fa58a9066102fb00e7f433d3f62ccf6f691ff/e34cf260b09c1b0c136ccd3e93423024e05fee778726b67905c004e8aa57d327.json",
+      "sha256": "e00229745862581b312e7a7fb83a48d50d403e701ac77aa842ae706824a166a8"
+    },
+    {
+      "bytes": 19501,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/4bd2296882f79d87d4582d8f80cff321e58195454ac42d7602ce1d4a16ee26eb/93563d2c943f40bbd8312b32b516266078ac6fc032a6f6fb54dd5cf476e3e7eb.json",
+      "sha256": "f86e444914d62a9b81a120d5b206acb1de110419bbd001e40a2f595254f8a753"
+    },
+    {
+      "bytes": 18441,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/4cd16774f9f4c5cb1fd6ed4d7d4bfa3f4b27ec558f64f531ab198af680ffea66/6c64b2b818c66d0ae05840028ffc1df4cb6898ec670c8f9d0c8b97e077f0c851.json",
+      "sha256": "a22df2ecc9229f4a9c1d3f640287076eb3f2f28c3b2b54636f4f515663d814fb"
+    },
+    {
+      "bytes": 17948,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/4ea350a88f921fedeb9c08a620909b01602ad09436ba51d68e2279d332ca8753/164c168bf074c339448c83bed1f2296560dfe0e976dfb82d62ccc55da3b3c9fd.json",
+      "sha256": "54fe3af7ecdb24e7e36e76ccdd2399b29d68f9f115c44edf19653734824d34bd"
+    },
+    {
+      "bytes": 19134,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/4f37e0d6903afa4fd0e281cfa72e410efa497228a7e23b0902aa6c98e79fc637/5b6adaba6eec68bdd8188965207166a9fb14b95cd82a796ac77903fb222533ec.json",
+      "sha256": "a080ecf2bcc458e2a77907510458d8ec6370c567fdaa4c7bb213b4c3d475ecf2"
+    },
+    {
+      "bytes": 17131,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/4fa56aa0d750c8e7cd6828a7637153e8184c80c0c278aee08815673e0be82355/36969b88654f25c64760a037c4276f7aa764bd8808090fa929e64fd7096863de.json",
+      "sha256": "5fd063b9463fc34997ffb17e4d0592e41c9829014904b62a41f080e1ba42ff75"
+    },
+    {
+      "bytes": 18778,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/500e36f4f65b7da1a52715631c0d9af4b7ae1361fa316de7c8df974dfce51761/603d064a57d623186acc677383127e01d5a9f31dca1e89db62a7e8cb933fd4e4.json",
+      "sha256": "04e3db89976f4010693d1a77a9cbf4d6b24cdce7a824f1ea66c391591f901b29"
+    },
+    {
+      "bytes": 18815,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/5129ec91e8f8c0fb88d8b9d7d794ba15c86607d0c79eddac46950278f11eeb5a/1dd747340c848dd7693bb680683d933ff9edf86b289dd87e2e2f7914a1910254.json",
+      "sha256": "8b663fb54019c54b7db3d99b9798ac22a420bc134a9622a1099a42ca3442e422"
+    },
+    {
+      "bytes": 18662,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/516cb70020eb04088292ab73bf44cc5ff5bc158d7c53d49cfedf36f0cc78c0d4/0d79240a17c1a1e266e767764e535ef6e8599a80a41f146489aa91724fdd4daa.json",
+      "sha256": "3b5b5699d7dc0a605fb102fb97e3cacae32d9adb64b0cfa102e777a34338e843"
+    },
+    {
+      "bytes": 17348,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/5451b9b4527c9fc63afbf3c0849b1b18a5b5ce83a6a9d165d4a995a93ce0ea21/f8238c9a58ae6f44ad8f0ca0f9f52f0ecc73c965e9dc12e63a64343a81c977de.json",
+      "sha256": "a30f0196ca35e637c907ebec6bb4b87ae2adf35174e994c9d85d57f05a9fda90"
+    },
+    {
+      "bytes": 17240,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/555947264ee988df89523e278ca7817d0d83d3cddd8f1f221daa1498aa76dc62/c170432c750c3596640daaa3f5ccb73e2618db2907d421b4305093e51c039ab5.json",
+      "sha256": "27a2d3812306aea77e4c4f3d68297dfd008506f42fdf2843e6c710a087ed7118"
+    },
+    {
+      "bytes": 19105,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/555be9b36ff44bd863c1ac73d8724891fa67da027da2ce39560a72876cf92bbd/9422850941f7f2eb593fa6d0d4e82c2ae098f99a8b2137c54b34db79e1bca822.json",
+      "sha256": "72251cd295abcdf580da27cfbebc8b15dc0669638c4c4244cd72805319b9a1f2"
+    },
+    {
+      "bytes": 18394,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/5575b142a4a57a9ec172de4f81b334fe7902d0faa612aa918fefff4afd07629b/6ab648ddcaf205fa3a310f84027737cc508f356160800f6b17b1dfa259709874.json",
+      "sha256": "5940cc682cb07fce6de6544b6dcd92e21e5f612bd6f4a7bed2d2728189135981"
+    },
+    {
+      "bytes": 17983,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/573d37302010959de40dbcc9d4a348bd4fdcec480640e10864177fa55c3d41c1/9206c50bd81239a36e16d81f6cd72867f0779b73181a2a8828b3cbeccd5aae57.json",
+      "sha256": "d28fc2d08818a8f3795c84e72f03b3a5b9708b037b8f4d07571ed2892e97bdea"
+    },
+    {
+      "bytes": 19577,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/583286f6dcb3e74351d1125f7a2fddeefc940fea8fcbfe6f676d9b9f95f1d48e/4ecafb062b620bed34766cceb44bb8bda99092fa41e1c2fc6c5786e44f947646.json",
+      "sha256": "765786105257b35e5162ebb4387a4d7a3904c36568d992202289651b72af53e1"
+    },
+    {
+      "bytes": 17198,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/5a03e661ce1721ee59e5c244de3057a77f246ffa7f94d5019f1277cb50495693/09ae5e6206c3bed65a86f8ffb76612422baefc54627b655eb522e48f52e589d7.json",
+      "sha256": "1d3a1ebc65a77c1fe935ede89a2270d9692366a0f4d8d586eb9b38de36cda6be"
+    },
+    {
+      "bytes": 17957,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/5a6568c3e8f2218a19c1207e9d83c428139b16cf2934fc21c9bd7d6dd43b7f2e/f49dcfb143092585105322c774f2ed089b6051005b4471cfbca72bd870eac3d0.json",
+      "sha256": "5b7996c840d1b3f30cdf5f2f9110a84a57247db73d94ca0d8e64d4f9f16d1843"
+    },
+    {
+      "bytes": 17880,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/5a954482f765b051c9fcc7814d29fc6d624af2501af4949d335790a6b98e58f6/bde5d94fa82ac450e93c1c5eb53c5a88b1e02746c9152c6d1fbaa62b70ea853d.json",
+      "sha256": "90a5e2b440c6ddf8377bc22250c10c08cbc6aaaed908b26210029004029f4426"
+    },
+    {
+      "bytes": 18418,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/5bb0edab166c46a464b8914e72be3316ffcaad187443efc899df4c543cf87433/42c4aefb1ddde4958f80cdc3438db6d39b679384163656db55e51262f4d73c9f.json",
+      "sha256": "b2ff375b91d3a420887b51f68d50eb1c3dcd103ca125199587dab773f8cd80df"
+    },
+    {
+      "bytes": 17985,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/5c67da7652333dc32bdad1413e922682e732779ff79abef025e7cedd0a9fa48b/1d7964cfb88c1bc8a56581d6782e9cd59ed96e49644ae6420c7f26ada6995ffd.json",
+      "sha256": "101fc89f6247839dab680eaa09140bec32991e3e376a3098b5ef40f67baf6903"
+    },
+    {
+      "bytes": 19034,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/5c779ffef261dc1c204b36236faf49c4368566ebceb62ed43f55adf42f4791af/7c8945bf6a5b742f3bda018525508b43ea0f4187a41333aaca7b5d76a5d12374.json",
+      "sha256": "3e9a43607c3c2f4dc33b4e34203eef82194c67492994b6c5dae051cd63d9e551"
+    },
+    {
+      "bytes": 16885,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/5c779ffef261dc1c204b36236faf49c4368566ebceb62ed43f55adf42f4791af/db630d4509ac7fc8b5c8b527afe39f0fbf260347e61057569b51150301ffb983.json",
+      "sha256": "7f9c597dc29b6143209df3bfb27b348c32f1de4f2ce4a49640daf6ea9cf57ff8"
+    },
+    {
+      "bytes": 19100,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/5e8762b2702e186f1f792b45b2acf2ba9ce781227c001335de22a4f7b19050cd/fd9f6dc4e2eed5baf2529daa37f8515a1b3e371ee44543348a0c046f21ab3c8c.json",
+      "sha256": "1fbb4dfe4901993fa1e436bc6506bf02854557ebf6eef9debdaecbfdf5fd605c"
+    },
+    {
+      "bytes": 17615,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/605e37e55aed305746336dfb9dde55852a0cd95030a9c7ae6d9115f1f4138513/a27bf38a945bdbb3e2a3a026ea69c27f2bb06e85d037688d7d235bc128f1308c.json",
+      "sha256": "409e2e96fa51f76f310760198be8cb948bef372e0518609d24e0739d5af4883e"
+    },
+    {
+      "bytes": 18362,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/6066faada328975a027d5814062e459ffb05b444d1f2478b33c6d9b5f859f9fc/5d6e6ab0b69ebe307271717e69cd0710828fb8c8e62d4cea3fabf8f72a89d260.json",
+      "sha256": "2e5dbb525e21730e954b343c96c8930c966c3cbcd8dc90926e3b21a133fe2c23"
+    },
+    {
+      "bytes": 16796,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/60ffaa2e8a9a449721100da82447a4ac7a356432936c62a7488c06a671328ffa/1987fa95715f4a2bfe203446b3b5947093eae1b3b0c2d364fcab0d94467e76b8.json",
+      "sha256": "297888c08027ed29deef6ef177568b0c6526ac0db3243f2c279cb7de489be5fb"
+    },
+    {
+      "bytes": 16782,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/60ffaa2e8a9a449721100da82447a4ac7a356432936c62a7488c06a671328ffa/19ee38fbd02f5dd7f0e2f0b8f8621202dead48bd30df37da3018f7b3a0a441e0.json",
+      "sha256": "400324a86120b9b94338395974f129d892d093625ae8fc8847c1653ed09f9768"
+    },
+    {
+      "bytes": 16810,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/60ffaa2e8a9a449721100da82447a4ac7a356432936c62a7488c06a671328ffa/61938cae8d0c1d2f4a4dccae66d0ac4e6df6a33bfa1ee7e0eb35519359beaab7.json",
+      "sha256": "081a30f959aa7cd86214ee43c638f6394d7cff4106b5b550ad82d70b06736bd6"
+    },
+    {
+      "bytes": 16813,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/60ffaa2e8a9a449721100da82447a4ac7a356432936c62a7488c06a671328ffa/bbc33bdd506ab7a40b864e0eff2d32ea830f34b52fbe2066d6bdcdfe73cc8cdb.json",
+      "sha256": "516a057377cb7e57da01c7555c55c6f6ca3f50cc420256a2b7767885e5850cc4"
+    },
+    {
+      "bytes": 17161,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/60ffaa2e8a9a449721100da82447a4ac7a356432936c62a7488c06a671328ffa/f4a2deddb6b26aed10043e46db46e5e5d4ca02fc776e0a18a145af46d0683c99.json",
+      "sha256": "bf19c2e5856754b5992ea7032b5c542ae6f17f512876d0002626255aa755ea95"
+    },
+    {
+      "bytes": 17844,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/61f291efc93fab071463d0aa77b0b94cedde68f16d3350e59e8f01a2c1d7ffca/e89280fcb4d1aed7b1d9253d05a699bbbaad5700c36cacb3a6434ce2879e0bfb.json",
+      "sha256": "558708401dbadd68721f4d2a2648b67d1ad87436c40632bbbc7ac0baaa24843d"
+    },
+    {
+      "bytes": 20168,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/65915c8d573e7f00adb4c542abf005747371bc8221cad93b3b4b86331f75a0e9/5d3c17877876295a28ff330353d68eb1a50f9f1e03c3c81541817b58d96427d0.json",
+      "sha256": "7f2a02b41eda62c08b2f0b5ea5d2bf3ad6bcd18567da82d12bf1d1cfa6898037"
+    },
+    {
+      "bytes": 17691,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/661536ef597cfa8ce44fe04ccca5c8fc251c098fe1063f3a131cc4d5fafe3b7f/81aedc2a29106b6c311558cf77630793e92f0559d155a07274497869633e3d6f.json",
+      "sha256": "2b2cf2a0a903de0b5e547b5143bc51e8b6def7a8fc7c901e77ec99c86f9349f4"
+    },
+    {
+      "bytes": 18426,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/6619fd2077641d364a32a1a2b69f04e4d34f3192cbe075c61495b9b7e9f231cb/2da74e95a734717a88d63f453fb5c95d217c0244741db818dfc4e672392dff30.json",
+      "sha256": "edcb0b05ca7ef8ea82bc54b9a3412b9c069bb4354c5520df1040741e9fce3669"
+    },
+    {
+      "bytes": 17935,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/666a03a048100766f6f23cbdaf58712750dcf2e2b33434584f56ed164a9a4f6f/10d16314e959df685b25cb10b577c23a6b0dff9fb89f23d26899d05282ed6717.json",
+      "sha256": "736bb181e75ae2e16508f2d40d2d88ca033cea1c1423b6506b08e6f800aa714d"
+    },
+    {
+      "bytes": 17345,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/680c534544c93917efee320f2a429f3f8dd16647c676c6f7129fd9255889307e/804ffc88f33e1c44b17139282ae0eec9c393e599775065786a79335d943da1a8.json",
+      "sha256": "303329787933fbd485be535af719456512f89c1ce71090abd5f3a4d0e559e497"
+    },
+    {
+      "bytes": 19784,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/68100da3622ad86e2be61d27f40b9c1cd57f6c2dc833e039c5388ee8b7d310a5/17b2a70d209715696d439c12cc263508fa13f131f02717a86dd9569373e3af2e.json",
+      "sha256": "c2fbf5ddc74c22411dd6f3c185776caf620ad57bb1a13341b2b7cced2dee03f1"
+    },
+    {
+      "bytes": 19476,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/6a982d4784ea8ec360906d07c9ab31aee5a607924944bcf0335083d49f15a17f/f9684211fb3b8dab607f51df135bf97f7124b5b0b5b6b89ab5477d6a1492471a.json",
+      "sha256": "3ad33231df7b15314a89e61ebf4baa03157f8ac431794d39ed1b6fb66b6394e0"
+    },
+    {
+      "bytes": 16931,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/6aaf0b1b2ed05d006fac7f1de8f3a58a88de941541c032d1c06c84981f395bab/069e9c8e49e6a0267a02bf0b9d78f20d6dd615f0e8ee81569ba2c7a463ac44bc.json",
+      "sha256": "f7227833d66d4a9b5c92aaf2198b306a75b64ac5972d1018f568d7581b281ff1"
+    },
+    {
+      "bytes": 17928,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/6aaf0b1b2ed05d006fac7f1de8f3a58a88de941541c032d1c06c84981f395bab/0ed985508f5ecfbb62e3070524cdf1a87282eb418b1f7aeee3e241607a85b64d.json",
+      "sha256": "88fb8e48c9ec9292f9d38791b88a332c1f008916f5ac495a3a77b6bbe6ca1fcc"
+    },
+    {
+      "bytes": 17293,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/6b8c262c29eb669c524346e562ba6c8cfefb0a03af0005c6f8c4bf8ca75e0146/aa6f4ed57ad0e0b474914c94ec263e72ae44a3ac4adf4357494d632e7a469037.json",
+      "sha256": "5fa73913c7328833fd74c806a91858614aaff9d963962dfaace18e3ad9a1b5ae"
+    },
+    {
+      "bytes": 18737,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/6c8db4444b89b1aea387b3d7aafc1712a5d06ec156cc09ece5c47d680e50b9fa/d3c01fd6eb5d079f10ca150247121e622279d01ae95ed72a7fccdfca89fde6c1.json",
+      "sha256": "b8b125b92b0d6349105cbbf5e147190d5a7d0b1e74db36831063ee8523f3949a"
+    },
+    {
+      "bytes": 18102,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/6cd36e260c9c374049fa0c29508a7142dd9e418c030b6e0a49289ae9de62ff05/ca01c097fa33cdf3e45be5eaefddf34ad1a913d4bfe3cdf89457c2dbb3e07efb.json",
+      "sha256": "134952780d1266d2085f87b41b1157c43aa0ae4bfc8b68bce00a2ccb98ebe182"
+    },
+    {
+      "bytes": 17877,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/6cdb6b30d110414f2f52d28c71b7df9164c1b3ed84cedf4f1fb97f2406524310/b23e0ffbb8a6005a32b90c7ff32cf079fcdb9b402a7d5e0ccb089d7edcc72805.json",
+      "sha256": "5782db5ae7e0c3a0013bdbd39326e7d9a545f913b80f0d4ffe875ce7e9d41d1e"
+    },
+    {
+      "bytes": 18320,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/6e6a926f44564ed8494b7466acce2d293cca0414fcd69c7bcb91f0bfd2cfb3e1/de72553854249ad61a09916fc2129d58cd1d4b1e1472424b935c7acbf1903a61.json",
+      "sha256": "cbe294df41f2ceb6aaad19d1a2d90680e4d38850c9db4e597405c41420ad9de4"
+    },
+    {
+      "bytes": 18232,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/6eeea2c67dff570fb6fdecdf8020ab86034e2b5531652ee06295fe86826039e6/e7a670516cc22bb8c0f3cb792be5df2ad9ee4885e5598ed5d580351e42c30021.json",
+      "sha256": "e8e66d084ce5088bf69dd756c0e10e1706140d40173c585d91b3ead5777df8e7"
+    },
+    {
+      "bytes": 18148,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/71bd1e8f2ebda2a031399c0bbd25ffb82d3ce9868188ef637d8c176921935efb/d1abb5c8fdee3db5dfbf0a5ba9a499b8348a81cdf8afebc1b3405db734ead8e6.json",
+      "sha256": "37f6d36ec561b9db0d67e9db157f3627f207177076b8dc549d7d3cb52ae7a5ca"
+    },
+    {
+      "bytes": 18975,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/72acc03dd425994d0d5811f9c6c14ff8f1ee2e055bebd3946536c10e1e68cc39/1394a051bc0db62715606e425818a9ddd35b6df93b806b88079df3cf0de4e31e.json",
+      "sha256": "240551763ce1dfcdfd3c12ab9159b55d40f5b0bfba62dfb4eb23776fc4f85877"
+    },
+    {
+      "bytes": 17563,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/74e380cdd0a76faaf9de8a28879cde3fe2132ec58b08d2f25720058b9cc8df74/765be14012f79c447293270a53e3838ee195ee7d8450399a1f3c49793b6f7ebe.json",
+      "sha256": "baabd4b4d62b528982ec8b25c8fb6f459bfe67291886458879132dc1d7f0d462"
+    },
+    {
+      "bytes": 17645,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/765ae2b080f6d8b114d3a68fc5b5a4ff340c3433a1bbe6ee789a5449ceb276b2/1aa4b1fa0cd64f0d21f2ceb45dcd54f95924af7a829b1b60cb624d7e524a0b71.json",
+      "sha256": "8d41a6057578be8d9e23fd3674c4a7d51f7ef159c6a2895e2d8274bd02e9741b"
+    },
+    {
+      "bytes": 17220,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/767336fa03c4477384e47724a61c3b0811a43cd493fe2bdd7c1d9a884d5493ef/39e403433598e9507f8f0185820bd605868da35938f64c4ba1db7ac0197b0702.json",
+      "sha256": "2ad42527152a8655e2022cbd90aa498e060ea22ffa772aaaccea7f84c2b6f8f6"
+    },
+    {
+      "bytes": 19138,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/7675d8677b0a10d159e45863f15578c0d0bacb90b58f8ea1e076ea76511846cb/6007245cb73ed70020036ad763b185c906e51a78e6846df731e3ab5a0703f627.json",
+      "sha256": "db9e0b8529ceeb1cb3d1bfa1b477130fb7e561542c06a54f47243f78d4660ee1"
+    },
+    {
+      "bytes": 17524,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/76c109f54a7941c7b5d773cf242d458e419977e0dc33feb844997aa00c40d638/b3b1fd67bca658c7b9fd4698e8523b130dcb7e410c259749e6b326f4be820801.json",
+      "sha256": "b67aa8a144702c23df1a9c2197c936f44a316580a02816f3018346ec66b0b80c"
+    },
+    {
+      "bytes": 17537,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/77f2db0d4711c9a333c343b101b52c2be0ffbaa67bdfa324b7e07846f7d9dc0c/213023212ad092aeeca4a6cdc77437ba40c4237a49f7e4a27ad6bcbb4a1cdac2.json",
+      "sha256": "e00af7899a442b9ffeeb04ef4a433a0e57e9a6294100ed49fe79a346db3bee4e"
+    },
+    {
+      "bytes": 16857,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/77f2db0d4711c9a333c343b101b52c2be0ffbaa67bdfa324b7e07846f7d9dc0c/5a93cd8649227e0ee7eda0016185c3340058a504ab6b70eca7c1584a44a407c9.json",
+      "sha256": "cda6f0e57192c03c01744adaa84ed9fd40c97db1aa2f660a24810d8cbf405039"
+    },
+    {
+      "bytes": 18162,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/7ae7a82870f00f63413e85611484d939893970a16e6e35b00a3a63f76a6ea37e/17f88fc87a346343bae62caf2517368a3a8cd2cd2a65197d3190041c3b57ad30.json",
+      "sha256": "e677419f0dbc65e2d29ea05063d78b18b379ec1a8dc2e14ac5af93eaed19e227"
+    },
+    {
+      "bytes": 17244,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/7b12bc7811b43b305c4701ab87c4b7d195c589efbb101b51f0d2d89bdb914119/d185c6547e49a13c5f3e91cf9f0a0fc785b8ccf618cea3a88e82e1bdede9d68c.json",
+      "sha256": "16f1ddf7e0772809b733d7877369f248eaba9402d56093393ba310462d3f04d4"
+    },
+    {
+      "bytes": 18660,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/7bba0ff07782a63de253120b251f023e621560e21665977464c9ab2ab8606798/b9d7e9ba9df8abd20f004e8b130bfacd616188e501ece20859abb64ba069ef28.json",
+      "sha256": "dd3fe326662b3f9ebfb96be4f513b7921301c2042fc35d101e7def361f93b04c"
+    },
+    {
+      "bytes": 17626,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/7cb85cee7db843f6f4058149f31d033a3a92fac40b361c8d3af7b16310110dca/5d902e573d76153e0f3020e2988fcfe611cc3de4a88a1c2dc5f4c8d004c6b686.json",
+      "sha256": "2728acf865604f01a936f06eb50721d3def3148541733de4d65babe8457c2ef6"
+    },
+    {
+      "bytes": 17341,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/7d20f6856a7356e4134f1ed41aa3e742660fa39e9f7914e7aa3441b1fb9d4953/844e44c2fbb2df6659267722317800c5a014bf25eea596bfc6a8850e70e27e02.json",
+      "sha256": "f2ce5aedfea215b70148a2f68ecbfee3aab08befad76ce7b5fbd5f5f472f0db0"
+    },
+    {
+      "bytes": 18046,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/7dd542d294bc03662f5dfaa1a46b4f42e726d9895816ce28e5585214faa6e412/117b46c51c650754982f07562b7f6ced64ce2c3e80c51800c93ea9f118bac6cd.json",
+      "sha256": "0cd4a24ab23171b3eefada2fbe3fd2d4d52f38017a0b8e17d6c83974c3c3cb10"
+    },
+    {
+      "bytes": 19688,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/7ee0c6bda55a01f847c72a06aa6d102b336c087842734008a6cdc2a06db9f3cd/00d61edbdc7911f4481036f5fbc9897a9032029b3808b104264b7d6507a8fa58.json",
+      "sha256": "107a351d5a0e97e7de08b29ce9ca2b6269b10a0c3da9d027dd227798ee1dd2ea"
+    },
+    {
+      "bytes": 18369,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/7efe8231a11db349c4b11c2b11204639f083a66939253175d8f6d65e3272ebde/f70870e5636556f30289f437556eca397418203fe080549d5ea7f9a3e498f7e0.json",
+      "sha256": "d02b59b53af8636023135492a17bf369a498a0ccaccda92431cc78fc5b2eef2a"
+    },
+    {
+      "bytes": 18391,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/7fa7b9dca3bb8588632ffe1285410e860eab62d460ff0f8a8d19ed0711eb2a68/0988837b0108b83f5ad167ca3c949ea455f2855bd87970aecda95baf752a4676.json",
+      "sha256": "21433233af9fa42435c82ea7e88cfece42a361d9ca46582b9c662c8c18199724"
+    },
+    {
+      "bytes": 16822,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/801bf6be5a6e173ca079b0a8e071ac1a6f988bfed09f038c3d5b1ffcc6745c13/3064600b7e33ead9daf9d15d14c4bf1094c2463f79d3f61a343fd9a53999ed97.json",
+      "sha256": "b559f8edfe5a4acddc6655700951f99ccbd6869614cb9525d1f9079e90c1fcc7"
+    },
+    {
+      "bytes": 18169,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/801bf6be5a6e173ca079b0a8e071ac1a6f988bfed09f038c3d5b1ffcc6745c13/ac131702563a09517f6586404ff0e5c3773366fc009e9aeb4131eafa57ebf5db.json",
+      "sha256": "6dad3e57bda9da584383611c509a780f74fa48329cc42b00421898961bb2b842"
+    },
+    {
+      "bytes": 19969,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/815b1b2eb4adea868bb7fb864bab6ed26e55b9083a44d48d4e9e4e2d8fc92fe9/efd89c4e312783c06213b86a67ed14b2db1ba98ae97943b6c3f8afe2d297f538.json",
+      "sha256": "591605fcac926c56c7851aa8e25d03ab3ada8ecba41d804771c79c601ebe8b5d"
+    },
+    {
+      "bytes": 17004,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/815b1b2eb4adea868bb7fb864bab6ed26e55b9083a44d48d4e9e4e2d8fc92fe9/f8f157c2d1953f8802ec812367139e73428e3d09fcd580b97ec1c180d7e1a9f1.json",
+      "sha256": "209e42ee96a840918a7af962f6b7ece193db27b6782af9ea337248cd9869b1f1"
+    },
+    {
+      "bytes": 18311,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/848c32b6984422ba52b0347ac26769f9ee066e573512d6460472bf49e523ff33/12fd50fb96e0962a72f72c363e352645d7ba279c797e367012aa03f6aa9f9a51.json",
+      "sha256": "83fff81e5f67ec3289c4a7d0d26a64c243dca5cc6d500067a92bf93d3a5eaa77"
+    },
+    {
+      "bytes": 18846,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/859ac46eae0bd09c26e0e9cd2faeb564b55449dff183a9e1121df779cf78ee83/7bf5057d03337594b6747093cc1fffaaa60f251608719396530d752aa034fb4f.json",
+      "sha256": "b0dd398156389d6bfe946d450ce8c5597750f84879a71c8ffdc4b2588fdacf16"
+    },
+    {
+      "bytes": 18988,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/85b845cb35bdb51b4fc5a74b516ae25e3f3f70db4c63eda393f4c3a0a177ff05/407916795da6ccdd22181722cd99e08485d514342d8c22f7f3bd019f35f667b4.json",
+      "sha256": "74f983356f96edb4df86a3d7cb389ae262ea05670dd98674827610072a19b09d"
+    },
+    {
+      "bytes": 17296,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/861f24b72624f233ad79008436a2993114b44a7f5866823bc1d76cdae1e6b6b5/c1186372c508574a553bea3ddbbec3da98fd43405af9061bbd482563fba7592b.json",
+      "sha256": "b9f71ad111b1a3b7722d30b63f43e914086e17a6b09c65284aa6884589a76e9e"
+    },
+    {
+      "bytes": 18003,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/8646e995f5f80f39c2060e1fe6484fe8f5582840739072d8133577678fddfbe5/66cb78889b26b177fcb8f5701e4a9613c87df8477973a461c5e9b2c6b056d79d.json",
+      "sha256": "b2d9543d18bf5af8dec97ddf715452fd50726129a1c68ce9b85efa8a2148da7d"
+    },
+    {
+      "bytes": 18039,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/87434bbd0353aa0b63263bcc5f7b5ecda39b3e8a918757d7bc807d6638bc5303/aecd2d94905cde4cffd684a9b3c8664a785af4415675c5a9dfefb80a11dbf5ad.json",
+      "sha256": "5643cbbe54e6f8e6ae9379269da0b79768a50e23df8390aff56eade7e4f44917"
+    },
+    {
+      "bytes": 17734,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/8776a6ffbe88a4f313e9a0fdb815ffc12fe94b29c9df1eda8686f004368a1ea3/9a38f8bf6a130746650bf9a21079d309fd3ad364f548fc40b858b5d57ead3f7b.json",
+      "sha256": "5ee2a9de8067314c9bea961b5d2b1bb7ef01b5e838eaa8f2ef037242fd33b15a"
+    },
+    {
+      "bytes": 17699,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/89aa67af635a2e6909aea5c563b62eb0e662a552c7edb9526f2b4c79811d231c/05b7d2dea522dea95979f8b2dfeb6e66bb37908d6b432207c376d86fd254bcb9.json",
+      "sha256": "501032270e4f1431ef8c0d88774dd4977da385ab1118b7bc3602351f4fc9cb6c"
+    },
+    {
+      "bytes": 16985,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/89aa67af635a2e6909aea5c563b62eb0e662a552c7edb9526f2b4c79811d231c/7f02cba85d5e3ed07ca60aceef3b75a7f3b1a85630876042333eb04c47349545.json",
+      "sha256": "c46d34d75519aeb3ecd4daca78173b9266e2a98c4374c74961bf48f32c996c4a"
+    },
+    {
+      "bytes": 16928,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/89b3dd19ca163c1058979b6469426434fd8d53bac90603bd4dafe2f9b3aa7fe1/4a9dd6d052d31eecfda269939a7a17fbfbce33f97a59d17f93f0be78b4391d01.json",
+      "sha256": "2ad4f00f908977a7651797d6586f67c1ff338b0b526c6b3df28631236c6e9438"
+    },
+    {
+      "bytes": 17256,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/89b3dd19ca163c1058979b6469426434fd8d53bac90603bd4dafe2f9b3aa7fe1/9a2d4884b4e5eb85c995dc17ac67444b4ef215c5542efd849f75ee74cc5a942f.json",
+      "sha256": "ef9cda636e43be8216677eb28b90e03d09d4c97994f52d3db1d73fa9d6934322"
+    },
+    {
+      "bytes": 18406,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/8b8749fbf19aeb6e4cfb232b6b55caebda609644f5b89014940b04893df6d868/b5ec1c3f8061148f33513892491d3aa72036272587eabeb304f3d350876208e7.json",
+      "sha256": "bfdb9fa10a2bc4f62e5210d3f11ea957187cf259efe6057494c93eb9fb5c6cb0"
+    },
+    {
+      "bytes": 18939,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/8d59d5d01e58e4d4614525c3c7be52e6c6f3838c5a0a4f56b062f30d77bcbe69/ea7038eb91a46d83a9dd4f06c7c311346a42fc2d1138cfce3c2b916da06a1651.json",
+      "sha256": "62611e841d09ab474842eec466dbd63ba6827bfb787eddf6c2ca259fd3df14db"
+    },
+    {
+      "bytes": 18998,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/909547bbff9b8605c949b205be395da3039316f6506d1c7861976ec61f2e71d9/362fd7b672a8cca8c213081b99ea2181c4c5df8fe48f4590ec6a45eda45a80dc.json",
+      "sha256": "a9ee2df019d0057f843bbf83cc3f2ed1e9898b03d5a97bcf240f9ef594d30f66"
+    },
+    {
+      "bytes": 17713,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/90c49ca2375f5924cb512b483fde69dfe217f9f02942d8a7bb26eb64a513bbb1/095703f64d164cf7cb7cc531216cb1b58aec9d9bf2fadc1218670254a478f160.json",
+      "sha256": "4049eab32bb8a24287a4a3946830ce83715c532a67a8e175fa5ca804abb93cb4"
+    },
+    {
+      "bytes": 18002,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/915a142f82bef74b2175f14c7d6c3b3e51b8403f12a9ec6d36b6e71935adae0d/dabb5362cd009c8f6f8fdea30c7c72c172767e7f9596544369291fb060bee55e.json",
+      "sha256": "e52bd32e853198adf89db4c0d3424def8b5cf3e4c295f1aab460c60188542564"
+    },
+    {
+      "bytes": 17308,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/921641670b2270ecc7409a503098056f5687a471414479764b34030b74e5c7eb/b20af324b51b562187e4805b17a247c964d3b442d384c3707bf62ed34850125d.json",
+      "sha256": "d99abf5ee245b907e02a84c10c318e4dfdbcf53879378bef01cc31227815c2e1"
+    },
+    {
+      "bytes": 18678,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/94e0c8e0ea1a32c9dbbd6adcb6932bacc99407ed061ae4eebba0f321d9591a17/0a61e2a68e03b8a63b7e5e9c65f60dfbc9e94c9a2a696dbafe5ca8370f52caa6.json",
+      "sha256": "229fac06bde96c8ae2139a0b69acb0f64c619eead4f2c6d020710f691adf40f5"
+    },
+    {
+      "bytes": 17141,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/95a6299e1ee367a72fd727cca9177c2f9a3280c6e120501dc28b86a49ee4fe2d/4f6d7eeaed15a6aebfb06d25ca2fe168f5f7555e5520dbc4fa8c9a85d00c594e.json",
+      "sha256": "f7109a1a34de2a1b6b1e92d6c1e71aa4a24a0afc956e4218eecc26fc6600d760"
+    },
+    {
+      "bytes": 18640,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/965e391a41a97791044dd9e807fe866f1b2f9e3e9fecf41118579e370c307157/20bdba595c244488521bc01ee629c168fe73fa2083ec85b82d798e810ac9573e.json",
+      "sha256": "37fb786ef04fef8139303c68d395c5ca3f36d02540b7f201c6f3e3afed2b729a"
+    },
+    {
+      "bytes": 18725,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/96f72e52a7a2533f168eb5197555edc42bc9b16619a912dac43af74d0eb51253/ab171c737b836ae58d35975f7d443288884b80d29abe9e14a917637998255224.json",
+      "sha256": "e89da39308ea19cf0739bc301e863fdd9bbadbc0ceefd9107e90a67834b5e876"
+    },
+    {
+      "bytes": 17325,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/974fad29524476cf317fadba4e42a3188cb4154a7e0a6f41a97ad64934f21a28/eed971bd4a47fa9e0227fcbee6d3db5b4df391707b668506c2e60a393b61ce35.json",
+      "sha256": "cc0d99e7f4d388a311581adc4e8044f5987fb11854667c7bad1733136a26f0f9"
+    },
+    {
+      "bytes": 17338,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/97642b2a7da6aad304b44b5d85aaf3f0eeecea339e2daff8247b71dc1b5e33cd/2d40fe7274cc63390e76cfbda37fa99396876c429e9ec1f919cbced0162a756c.json",
+      "sha256": "b2cb2d91da8f744066f57b2d2dcf7fe7c4bbec16f7adc8166d0c500b59fec817"
+    },
+    {
+      "bytes": 17542,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/9883666f299ad025ca7baa4dbbcf1279e6434ad32895b1071c03601ce9261b6e/88d8dd5353572f16141d92ebf7070ac3879102e57bd5233f23d762ec0fa2bfb2.json",
+      "sha256": "19a92be873c9a397f8e633c9b40584bd4241f09d8226c5bcc005583b276ffd7b"
+    },
+    {
+      "bytes": 19463,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/997f7028a059696052c92fc6b4eb0e4d8264061bdde3be52a738f8b7160ec4d1/e9e59f852bb3f36b2da16b87a47bbaa8e8128de3b9068e905e4e9080e61ce9d3.json",
+      "sha256": "7ad2e869ab60c58c9528bcdf4cfb642be4b3e90e5a4dafd9338d5c17818196d3"
+    },
+    {
+      "bytes": 17555,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/9a948d84fb7f49ea2f09938ea4ad19183bc110f9ce206acd243313686c0aed7f/16513c1c60360540be50b589412ccd2cdd7965dd10bd993be5dfa17f7f9108c8.json",
+      "sha256": "89cd0e45f0683222bb9ead957f70f7d7d26926992a9544f1272eb7ebcbe1d564"
+    },
+    {
+      "bytes": 16874,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/9a948d84fb7f49ea2f09938ea4ad19183bc110f9ce206acd243313686c0aed7f/5605f8faa28e1611a93d2b8a86a08a611115a52663bf4b908dad97478fccd3a5.json",
+      "sha256": "e5b7041f9d9e4cf3d88b4f87c519425d6d7a97c431a3ed84488f1ae702b1ac46"
+    },
+    {
+      "bytes": 17888,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/9b07bf4275844b434b4bb3ee4f11087d07dee67dfc5255f47ee2ed239e44067a/06c171d91b1b4be4b495d1af8dfce11defa8314e3b4f984931e4d1c3332d10f0.json",
+      "sha256": "c1fbf547f6bfff5fac1ec68ea63c57c84723e48a1cdaa85313a8077b7a89f6d3"
+    },
+    {
+      "bytes": 18232,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/9c1d35fd14589b86ff1f74258506f806bc82abfbf15c3ea0b7c82d9063a7cf8c/7e1312dfe0098262b5cbc038ecd7f57474df10698de2d5a525ed4c75ff414f29.json",
+      "sha256": "780a18b819b56fe7b5a5c3e5b0b09877f08ae8177dc95baabfdd1fa80a6b6cef"
+    },
+    {
+      "bytes": 17397,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/9e211cd2b45e192a6c8e759f9209b739b59519456ea72852c104f02a35e962f5/93fc9076b374217dc445a6498543f5b4682b95c80424ffa3345fd52b0b83ceb3.json",
+      "sha256": "f64d4d2542f250a22a887f02a32b8978da568280293034a1b6f15815f68d35fd"
+    },
+    {
+      "bytes": 17052,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/9e211cd2b45e192a6c8e759f9209b739b59519456ea72852c104f02a35e962f5/c53d87533cf42a28c812bb35b1aaa936e652af3a2257eeb02eb020c004aeda53.json",
+      "sha256": "17d4863fee47b30e08585155cbbf459c32f1242ac7c55a9a2edca233d6790cb1"
+    },
+    {
+      "bytes": 19028,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/9e514e8c5ba220ce11eb9e544baabe9a9b8659d39a8d717f659b720c37d3ee44/01d00010e53354bbf55f440e2fa2272867856510fb49cf9344d2b0eb1842f670.json",
+      "sha256": "cb1e1767401ff54797ced072db3c1778f4bc1a510afc79bcbfd816210086d730"
+    },
+    {
+      "bytes": 18095,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/9fceebebec783c8b79c2abd2c02139c5773b34bb2a00a576397f8c81fd16b1eb/db50a699db68ba0c036a23d08923ce2cd8e898fa0d0013a19c8ff962147739bb.json",
+      "sha256": "40033d3598c071b6add5b52e04c1f587811dbb688ff0f590ab808105ae5cce8a"
+    },
+    {
+      "bytes": 18382,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/a0150f8ce44203c9b56ab1ec4fc70199b5caf23525271b4ad13bb004e656a30b/6016f2fa40eb760581b9eec24da23cc3516f77435c9ddbd5bfb6fc399e69ac1f.json",
+      "sha256": "d98851a1cebd5fe115ad0fe230ba67fff97e229e6810297b872a895fe2a62ccd"
+    },
+    {
+      "bytes": 19053,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/a075a41ff41e7895d5f705adc6e766a4eed3bc414e6baf1c822b07cedc6fd854/4c730af833f7950d153ff4751bc1dc0dfcfe070fa4c95b23bec913abcf35ace1.json",
+      "sha256": "f31a336d9c3a990bd6cf601e20e198575545ea7d2cd8492d21f16061fd83a76e"
+    },
+    {
+      "bytes": 18398,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/a0a2f2b7168f8d3c98065985ce8afd7608a1f0e4cfa5ba9c304fe3c5f592840f/ff6f3b7bebae0bfe8e9381c3b15dc928fb071a59dbae8adbee31445d2e216f93.json",
+      "sha256": "3709e01239dde9d165ba5a6c35d6d9b3a1c88c3a3766dfcd5bcdff54a437c188"
+    },
+    {
+      "bytes": 17648,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/a0aec34ff70e2635d6817ec47fdc27913bdd781b99aca21613a1fb4672663022/80306674f0e55a72a8a7b61a47d938d000aeb61559e5d939e0af663a6d7bf24b.json",
+      "sha256": "2c05c7148ffc3b239f5fa1a64ce2d917aaaf15d26f65b75a8d12fe7182d1c9fa"
+    },
+    {
+      "bytes": 20466,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/a1e98d6f418619a9ae141a46577b878e09f8b316296be3c654b0d572cb12858f/3fbf1cdf2aaac46c4ba98e80c3a14a1f6563b960dadac90e69edeb5ebdaa15eb.json",
+      "sha256": "11941b5c542cc7cd27ce252d0f81cdff020c795c1f4cd5258e01b2673028b1e6"
+    },
+    {
+      "bytes": 18969,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/a2c37f2ede5a7ece32ca64c810306d8f010163ef2457141ff9b6067937c044a6/36f0490ea1782ddb41bdeab9e7325df0a1d49388afacdd64e195f4dd8383e279.json",
+      "sha256": "16d78402ee64fde98b7f5e7e250786d15add4e51a65394f79c9be0ee6e46d17b"
+    },
+    {
+      "bytes": 16889,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/a2c37f2ede5a7ece32ca64c810306d8f010163ef2457141ff9b6067937c044a6/4970242555a76054865dc79260fbd4e479e75397390f1dc73b75fdca7d2c2c2e.json",
+      "sha256": "362cf8ea2b2508fde22ae53985fde9f159cadc905c20e9960a11af5ad712a38e"
+    },
+    {
+      "bytes": 17267,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/a534514bd8e0a8e37ac984acccb06587353b018d079417ee7f06412f3b2a51db/f3d1891ca57b9dc50567cb03a56727cacb5f6fc54f10c8239a14594141a3c934.json",
+      "sha256": "3c9f8d811aeaacd08f6e7b111ef1a0a906a8caaa0d300cecdffc5081a4f9e336"
+    },
+    {
+      "bytes": 18085,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/a61478bac860b4ebf600f651b9dff529917ade664d474d220c1d53a1b424106f/fdac773269f9fa957cfafca2cb1c869a7eb026d4a8a9b53de7d8317366f7e143.json",
+      "sha256": "76371e3f4b7a3a45f6991278d813db5a98a32ef1c0f019de55eaeaf41d32730f"
+    },
+    {
+      "bytes": 19011,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/a791cfbe3b16b4299d879db74ed5e395a1a272bbed97884c00bece36e7ff5ead/4255921b73bf339c665455aebf4859fafe8b175ea609d2ab49f71cb100b3c0ce.json",
+      "sha256": "4cc6cdc0374e420fbe61bee768b15034a1597a6d31327929baa00d540716ea7a"
+    },
+    {
+      "bytes": 19192,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/a991589cb00418c96e108caaa9e3f07419292efc28da58c65da15e1a660c556f/0590edf3de99b4c2eabf45d8f6b93f63b46887a61b40732f8a4b485deedb5846.json",
+      "sha256": "3ef489c3d67bc939f57d58f5286528875ffca3b52a6e15beb79fa03922025664"
+    },
+    {
+      "bytes": 18023,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/aa329703aed06e923992bfb9192e9e7c3914d699487a8f02a39c67713c8acd25/6fa328011d73df1aa3010b2a7dd2298ebb95648cc3fbfbc909dbb7d25a94785b.json",
+      "sha256": "ea962f5dca527fa186dd7dc3180c70ee281427fe227101359dcbb84238f19ea2"
+    },
+    {
+      "bytes": 17210,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/ab18b1ee4364b31db6ed720f3e043ff4fc2189c3b740f3720a27db06a91058de/b85d637505841f13b4c457ef32151661e81b8bb484770994029aae99d8d3ae70.json",
+      "sha256": "a33b8f6293cd841c2004fa925bb600ecdaad05ad5561734efa871dd51bcc2126"
+    },
+    {
+      "bytes": 19067,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/abcc549b1ea51eb2e6e5219e297e94d9d4d91f5f10a5d129b0dd3286cf75fc9c/e999533a57de7fa08623eea59d3aaaa6e6506c72dba3ccb6837f6549e31aaa51.json",
+      "sha256": "f626ab602240f5839e5f149d93455d649ac4383e67d904ffa845bb92a81ffa74"
+    },
+    {
+      "bytes": 18237,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/abd21a5b438298b6f817a126dc7c31bf499dc5c3e9086040da106f6772c0186d/f323049bf0028318c9ded2b01d2304c8eac2c7d3f3dbf1f7d27b5ca050d2c0b3.json",
+      "sha256": "3e339fe7c504cd0ba04661265cbf1673a3e12f552e5725304aad5c2a7baf5178"
+    },
+    {
+      "bytes": 17328,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/ac10f5e6496f88f953e8c9fcacf94c82c4a89634865e7d2ff1373ad0779cb53c/6332624b9ac674ecd5db3fdfa1db15a2cc5d64fac7498e333604aedde6384432.json",
+      "sha256": "9bd640ba62799c0b7e617293dea66d2fea2e581e6c13ddaf81bbf2d18a984887"
+    },
+    {
+      "bytes": 17725,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/ac9e980582c2019c72b54518a579e0459f16436b56a61a8b64fc1ba8ff9965a6/1278cbe4949e97b35aacaa1b989f2bdc946bab02ce87a601ac69e6fdaf44dd32.json",
+      "sha256": "d87bd1517ef0d20c6130053f91bbc8fcbd6fb97555aa977c73d88a70fa8c8786"
+    },
+    {
+      "bytes": 17649,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/acee79b2a2ba0957094ae409a8dbb68843de7dddec1c8f505e9530bf1e651a56/8d5a8a7dc658df7aa028a5e41e78b230d08e805a0bcc8a05fd9dbf9903c40a6f.json",
+      "sha256": "fc80aa01cf52d0c3980fcc0cbfeb3ccc849d5ff2f11bf6782708303a6fd55096"
+    },
+    {
+      "bytes": 18706,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/ad74abbf7cba924f15ab6138053489b84276c841cbedc8e0ce98b378cef0e81c/544663722f9d8e6770ff74379d1541c54a349893d6241d1e0bc2d5ab23306a82.json",
+      "sha256": "64ae71e898d030f6eb3ac074fe2b5c512ef3da11fb52109e9ca0d3c3e9cd2502"
+    },
+    {
+      "bytes": 18018,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/ae48005507ba1abc8a6e8053b8f771e5cbe9e8d7b92666e88f973546f4ab8ad1/e238d1e184d6302a1ed7ac1796c3788152b4ae02f2991d7fbdb54171a6548d6e.json",
+      "sha256": "5364f9167af994e8fbe181eb173586ee6ecc9999d2e4f757f9e04aaa80a16cd0"
+    },
+    {
+      "bytes": 18415,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/aedb6bde954c94a00e7e64a756f96ff70979c658b5780ff5a46cc755270a4c93/8d3ba5c0a48d576230475191e2efc3c28f702abf32881a2aa5ea3d1171c51113.json",
+      "sha256": "a584645b484cc7d1f20e9e911b54b82cfa31fcf942db62185667949a66539493"
+    },
+    {
+      "bytes": 18290,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/aefa2ae79502759bb2e0c161e5b932d40d77d7292c94524b6134a978c656fae2/ae9e7c6922c8af4a07fdbb2e55379c587a75abc26c5b2ebe20530af6ae6c0310.json",
+      "sha256": "82906bd7b89b3a2d4140e05bf9e0f9ea4e424f93a6f279ae07670168fc0653f5"
+    },
+    {
+      "bytes": 18355,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/af980f23806b8d80a53fd9b3b9ba8824158330ea78ce8206cfe28effe37b9295/3950b130d561ace9bb2d2be9128b7eb002013122171c409c7a8205d095ea7f44.json",
+      "sha256": "6094dd9888352eeb403fd5c4e80c820cc692de497170d11eb2058b2faf3659e6"
+    },
+    {
+      "bytes": 19271,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/b091cd188ef5190d7918bdeb4efbe5dfd3d75ac448ab962cbca5403ecd585c9b/061e643052c0af5ff06c05a4989037fb752edfe3008fc1df1c31c713fc9bfcf9.json",
+      "sha256": "f598cd5696bcbf4a875348eb27590c57e590ad6cc5d25dbd609709472535fc70"
+    },
+    {
+      "bytes": 18097,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/b1d17851149bcd4b364ed00e4a760e5c176f124448bbd2ba5a52edc78a4cd4a5/8b0797cc6801d37330a855b1832d6576117418b6fb6f1df5caefb8aa88df20d4.json",
+      "sha256": "a6f309505c447ea841d1f0e3332cda7223a8eb5714a37557352ce4543e7784da"
+    },
+    {
+      "bytes": 21980,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/b1e18e3b487fec3bb4d2320364838ec816c1d83b6bdd3a56aa0ebfe25874abd9/8c34a7b81caaa894bda1e1318dcda02877ad20a3c073ee20c94310025755a282.json",
+      "sha256": "5f72d1bab313e61a107dac109f70ecb1541f021b44958fc33f30ed73d6ffcaae"
+    },
+    {
+      "bytes": 17606,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/b3a10b4fdd378cd91c90f1e2a3e678e3bdfe2e8095673ffe884cb33042e3eafe/49f760573b2d35c4b3824094365f4ce9bf45ead88e5d7298d411812b7c7506c4.json",
+      "sha256": "2dc17e613069c1af1081748993fde1e46d29d175bdc702d8bcd1fb8f7bdd79cd"
+    },
+    {
+      "bytes": 17747,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/b4a401030d361d1ed23d816a77ca978b070acc9629a30f2ddf833eeb029d7ac9/61445fcc258b0d914517a99998f47ef258d7e6b528b5dbbfd09a949f2839b745.json",
+      "sha256": "28a4881ccaa4e60f2503e9d0b406e4bbfd0e6db8392028288907b1d4e87d0d70"
+    },
+    {
+      "bytes": 19333,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/b4ff1694996ffb7f98aded0d9681123b9eea3d9397bea4b82bd0f196278bb0c8/95e4fbb466d4e6f6fbf7615ed37cf59797d08c2b7f76441f6b8f0c55054d2ffb.json",
+      "sha256": "d64946827c69826a9d2da15d273ca138cae03263e408f6851e236a059fde9b3a"
+    },
+    {
+      "bytes": 17492,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/b6ac53ed71678f182224379bc8c6a224386bb07bd21f4282e804a8ba500beb51/4aa3e04d6da0988aa37b20729fea8dad03e03b90db456ef1df31d982258bf058.json",
+      "sha256": "9e86eb014ca219de99d17882f48b8680d12fa54147cd0713623e7b8107a2f1f2"
+    },
+    {
+      "bytes": 16855,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/b6ac53ed71678f182224379bc8c6a224386bb07bd21f4282e804a8ba500beb51/ad01a2d3abc7c4a5d63b41a6479a20c0b1fc2a635948d9d7cadba7bca05f255b.json",
+      "sha256": "596025d04ba185305580e19216a48557b8b4f8fc69defc52b4fd78674b5db616"
+    },
+    {
+      "bytes": 19356,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/b75f9cabbb1c4196a7d62e9a00b9509414f2c16975587373fca64d8955af7656/1605ad1b24c0538fbbb4e49b4fa1d0aae651b70cff6b52f45cae3b12bb1c4b10.json",
+      "sha256": "ae94ffa6b936ede156e612ff4c583ac58ac33db839f645ffdf4fc8336073e76e"
+    },
+    {
+      "bytes": 18626,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/ba2a2096eeee8cdbe595a5e44afd41eb2101ac9062aa092f3be7d462219e0c46/372c6eb22e6fade70aa1684aa8938ed5ae174abf701b47e17f367004903b5f2b.json",
+      "sha256": "4d1734ffc78dfeaa5d19b8e8d81b478e8ddf0b4696d471b0340364f913e57875"
+    },
+    {
+      "bytes": 16938,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/ba2a2096eeee8cdbe595a5e44afd41eb2101ac9062aa092f3be7d462219e0c46/aaa8389079e5d125b4c425f1ca784cb684460dce0101a5fbfa5c46fc77f42b82.json",
+      "sha256": "257c37d8ab15b53af13588aac942eb3d26f86eebe46d690045b4101f086d2c23"
+    },
+    {
+      "bytes": 18415,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/ba3a3d27acd65f31c45eea8b943f47bccaee4dc9d7e873b49e170e31aea84425/b5e03e3c7833469ae3b5ea9514af198b31e09d4302767a6e80a42b14d5111c2d.json",
+      "sha256": "e0c5050f8616261fb8b65b37ee350f0f72e83c4385cd3021bff3c186f02a832e"
+    },
+    {
+      "bytes": 18589,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/bb8f8d185e8d0aa409268ac66a34189b9bd92568c67ff7ef2c974f39986f5800/5ac519c1ee684a0b818075e446c99fc0193c39e4ce9b2167e587bc2d47842858.json",
+      "sha256": "811aea71ad6b07e701f3f317cecdf419bceebc3868f70d4bdb712e21cbeb65f6"
+    },
+    {
+      "bytes": 18049,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/bbddfa95a0fbc0dcfb6360bef4dfa53aa93db3ef274474d4354aedde9be63849/decc45b476f4e85b722f24445a353eb8aca47bc6877c90711cd169c9a46446b5.json",
+      "sha256": "0bc481a3cc313b0bcceadc17dd65de6816eb7a17da82063cf667fdd0ea4d826c"
+    },
+    {
+      "bytes": 17247,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/bbf7f22e081a57ea105dea4c7b23e5b5749615e365fd1218900eb71249b28e45/9a918731e9b5d4874fd68e04e70cedc9b7c66cd61d5c0a49a4679223e6b6e073.json",
+      "sha256": "59e268b633a6b28debe3b7d8e15c0cf53272ca5bc5c2ead1f42ac464295d135a"
+    },
+    {
+      "bytes": 17508,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/bd4e6a155ddcdea7263d9e5a932d6006ceabac0f9bc8510d7b67a1994f8d59fb/e61f3ee65128b40373219063bec710772b7923e8a4cd67ccd23da0a0ce385aa2.json",
+      "sha256": "61c5b6596c4d789c5bd207558cb6f41df64c2a6648a70cdcddf7883c53c4e576"
+    },
+    {
+      "bytes": 18055,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/bdf2698b803ef579a52e012a01dda537407cab9370e777543432de90552bb7bb/0756f3e2943a94e58149a3add71641f26d077fe9f26af2fa6b0d8a6cc2bfa9fc.json",
+      "sha256": "2d675a01ece5b30e46f9ebbedb7ff0f37630d9331fe6ae87df786342e4ad1fa3"
+    },
+    {
+      "bytes": 18421,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/becc4fa114383f247997e7149efc718ff34baa49b06650d97984e6fc0dde3678/c8217720d779b88d9b8f08a0d306a43db21362462d7f241a8013913f68eaa765.json",
+      "sha256": "d942277a05647fb04a405b5bf19feba8c9b0132a2fac4d3b75d24c8748be2c4b"
+    },
+    {
+      "bytes": 16946,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/c1b83289e8b943878daec31618cfbe414945d680f09f85ef5a01910cc6f98ed2/25fc505bebfdb2b451bce50bbb7e9bfb58ed088cac09b6161d5ee311021f2954.json",
+      "sha256": "b8eb200509d822eeb9a81436e938462b8cb90c7db8b9e3436ac7303b214a2f04"
+    },
+    {
+      "bytes": 20910,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/c1b83289e8b943878daec31618cfbe414945d680f09f85ef5a01910cc6f98ed2/fc5f7bdb165e342cd33bb17c325204a82328794364f676e045051333edcf37e5.json",
+      "sha256": "ff6d7cfebad48f7bed28a7ebe37099b0e6362a1c72163bf19fc1837720047d00"
+    },
+    {
+      "bytes": 18743,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/c1c808c968385386779a1d5046bd480fb79220e2ceb18f1ef745ac57a88f2142/d07079743ab30a2eb0e98f108c8ca49e5f1167d64a91388a75225487cc166a44.json",
+      "sha256": "8d8c4e29436c8b3c548042b1852580daebe9b985a507409ce46b68eabaf4addc"
+    },
+    {
+      "bytes": 17947,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/c2384531196e2164ebd66def632f6522d3ef4d55ac5d9ba318fdeb55b8dbbe94/54fa9035244b861614522905ec1c2b7a5234988bf7579145422b8a5f50bd32ed.json",
+      "sha256": "eb2c205765f997cd7dab9d4108d5c028fbc20ae5cd3a24442f650d9831a33fa2"
+    },
+    {
+      "bytes": 16877,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/c2384531196e2164ebd66def632f6522d3ef4d55ac5d9ba318fdeb55b8dbbe94/740088157f29ccfee16e8c6f69233f6fa6cd9a51362ceef18b4b8761364d8261.json",
+      "sha256": "5160f9843dcb47cb17a093b38e97f722ea9b5f1a946ca157b039a8ab477d96cc"
+    },
+    {
+      "bytes": 17935,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/c2a3a4d4bd795453d7dd28d48eafcc15ec9d8e806e96d61cd9edb4d8d84361e8/135ba50e037e2303359e0fafa7e980ed2d3b145ad957bfc80ee81e9f512c6bad.json",
+      "sha256": "d40540f1ea19fd2a78aa5f4a17b522eb48edf40f5eb7728ee9c6692e587ec032"
+    },
+    {
+      "bytes": 17143,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/c3e47f84843a2ac499794369ebc40b392daba9a55985af6f23f5102b48fb8c2d/36064feeaed7ecb71c7a99ea4654dcad9663a8077a6be1b7841d16f443cd0619.json",
+      "sha256": "7b466f35b3ffac79b9fc93889b2e1a64925f4414b00fd9fb0395eca9128407a2"
+    },
+    {
+      "bytes": 16918,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/c437c33315b0dad58b0bd5c225b18f1ca212cb05f7662f8fa82b5b3b5e5eb7fc/0c7059c2ce0d09fdcb7b4369e0d56119e1ce734d8bfe431b5d6fcc15f8802e53.json",
+      "sha256": "84d65d9e59454141b10b612f2fe6c4409935ea2fae84415cdae2d0c5be849a54"
+    },
+    {
+      "bytes": 19410,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/c437c33315b0dad58b0bd5c225b18f1ca212cb05f7662f8fa82b5b3b5e5eb7fc/7049f315a3b3668086efd0e6649f0d9333ed85d11e5987d1dbff4b2cd2876f64.json",
+      "sha256": "fc41478d6f8d3c7ad7e2ae603c645859ff782f6b4863fcb2610c0fd5c1cd0d07"
+    },
+    {
+      "bytes": 18106,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/c485bc827f0eeb3d805ed1c2a52f069aca3a0d8e91c442153b58efcf10c91d18/b5b805c31dcb38cb4f985127e2c2d938d90073f533822cb0444fb8a63b6581bf.json",
+      "sha256": "dadfc6a6796d0934fcf55be98ecde88674760992fa12f1fc4b9665f92b0e9a1d"
+    },
+    {
+      "bytes": 18286,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/c4e991f56a96ba74e69100a36cbe805a8a720b0b211af92f2833e9212e5b8461/c3020f3f85a454822aa505d996f4c1da2be57c5b533f983c8b30924174b0ec27.json",
+      "sha256": "7642035a9218023a59694e95ccaa4e25f97cc36b6473d3937768ffdd02e4b560"
+    },
+    {
+      "bytes": 18986,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/c61ad80af298ead945baa3ba925be96c6557466b063c16184d8b5dbea7ba0e86/d63d474629f96145ee5571c69e38902d1dfd14ff18a5081b90a42d219217c2e6.json",
+      "sha256": "6c74203d8c6f8c91124d29ed627076cd0237d2e90abaa86e7fe678e9c3322b79"
+    },
+    {
+      "bytes": 18088,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/c792b6dd8472b960b343d2634b7e7fd36a84e0c5580fc9cb65949df0a0169015/65df2e0f0c5da062eda1bc7c4be8fd7a17591303fc7b97ef80ce18c43dc74d54.json",
+      "sha256": "e1278edce5b64bb0fa633313108a276c3c5c090b2605f70eec0195d828671997"
+    },
+    {
+      "bytes": 17310,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/c852808c640435b109c48fba9da2f44353087bdfb311848790ce5141618e1719/6b2c02aef1551b31d66c1ed45857ba43326197510af0211a6865063bfbc75635.json",
+      "sha256": "1b265f86ecaa55add6fcd3ba76e6ba62fd34528ffd798f3ea5022d3e3cae5d8d"
+    },
+    {
+      "bytes": 19685,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/c9f4d22cb88675e3aa170da0934e0637439100a08dfbc7e34bc6ff9216e71a81/f89b64cf95ff304b5ccbbb79ead072eda38b71116ecf796d01cbe9c595703c40.json",
+      "sha256": "e0120f89d5b929c825ea8364c4ac18b88b1d1535f823d50e24a9a02ef3cc520f"
+    },
+    {
+      "bytes": 19879,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/cc39c830733e12b4cc9a29dc606b24d2d99f31c5ec35a9f1cc4b3ed0eb2f5b7e/9814b946f859cb62c2a67f0b9d27cd3e04f40b6f2fa74f37d5be8d70908ef8a7.json",
+      "sha256": "a7d762ff72e64ebf158e98e3f688541f8fbaf081b81f77645325b89bc4e0253f"
+    },
+    {
+      "bytes": 19864,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/ce6abc7621ced7df1ec3e324aa2ed4f9e7e100883df2795f938996c268735ec1/0e8d90c8175d67188a95fbda86b72cbc421bcd9c2f04a6b805b95adaa644c51e.json",
+      "sha256": "5006de103d2e4fda4402a8f6f9ca2bec5e225b2489cbaad581b6c911368b2c18"
+    },
+    {
+      "bytes": 16858,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/cec29cd73f949f7a1d7525ddf4efbcbb443af34ff1c3651cca4316f26d4fd370/073cfbb0e04c0896cbf272e07bf9d88904363a29130a65b72247e9121a38e396.json",
+      "sha256": "9a409b2789fcf3f2e306a038339507729ffb675843393717665e1f6ae74dc98b"
+    },
+    {
+      "bytes": 16827,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/cec29cd73f949f7a1d7525ddf4efbcbb443af34ff1c3651cca4316f26d4fd370/28b4612e40b48b77adac4cceb2499173fac88c2f6cc674295281183930e279c0.json",
+      "sha256": "600734e1a5792346657972931dd6ae9f8f499015071df6ae94dd7520b6f6c107"
+    },
+    {
+      "bytes": 16834,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/cec29cd73f949f7a1d7525ddf4efbcbb443af34ff1c3651cca4316f26d4fd370/44766dbdce476dd67a0dd55a9985453a870e2657ab9d930116000ccc033b20d6.json",
+      "sha256": "dc27a43b860df6e88440c91a4348902fb241e7d5882a3e5b90bdf97a9d6fc0c2"
+    },
+    {
+      "bytes": 16840,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/cec29cd73f949f7a1d7525ddf4efbcbb443af34ff1c3651cca4316f26d4fd370/56d39bf4c44812c3c628908d7d9804ada0dc1c0528401d0eb422ca8299dda4cd.json",
+      "sha256": "59801ed7f98a135a0a1d474e913c46fd48b7e5bd2e9a16fa990be6fa2e215720"
+    },
+    {
+      "bytes": 16842,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/cec29cd73f949f7a1d7525ddf4efbcbb443af34ff1c3651cca4316f26d4fd370/897999f1a2a960a9fb94f6bba64c9345f0ab6b5e316d96707bfcae8455065f81.json",
+      "sha256": "ae050f8ec36934112c46b79ec75b830b1b871dce8c4414e029fe9213ff0804f1"
+    },
+    {
+      "bytes": 16824,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/cec29cd73f949f7a1d7525ddf4efbcbb443af34ff1c3651cca4316f26d4fd370/baea8760c4a3eba92d11b7c2236df6b43313c2ffb412527d86adcb2b2752d5cd.json",
+      "sha256": "378d89967c57983b8846053d0819016aa2407f671e1bd724de23959608db826b"
+    },
+    {
+      "bytes": 17497,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/cec29cd73f949f7a1d7525ddf4efbcbb443af34ff1c3651cca4316f26d4fd370/e57f559846219f2e16d9fae41f59dc6b86af1ae0919ec0d5cf0c72e5bdbae7a4.json",
+      "sha256": "f14249a2aa3c6f1675e9b0261fcc5d7bf74b8641ec9336b545bb3702d35f20a2"
+    },
+    {
+      "bytes": 18344,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/cf52455a2b6de7e4d82bc8b209e3fe66ef92766dc313abb9e3ae2884d6672ae9/9060af28c09d07881af66077b4fcde21f9721ff2599a38bba568b40f27b66e9c.json",
+      "sha256": "2d51a22b6b57fc7faddfa7c78e4b45c423f18814e33aaca204ad07e637586c43"
+    },
+    {
+      "bytes": 20393,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/cfe43ef7cc4b8f0317bb0d387de68295719cfb1101d6686f38742fc6df390edc/539202e507fc2800784b28be2fed72bbc232faf13cc8913d6540a97a6950ba20.json",
+      "sha256": "26b687ec75e68dd4ac5dfd941c821498207388812e274cdd76bf8063255b4991"
+    },
+    {
+      "bytes": 17536,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/cfe7be47b03f0216242d00a55878448aa81859f85138a506f0165fa82ef0d46f/0396c46f3b3ef299ab6525ecd247ce3e3969e2d2935da778d8662cb8e3965c0d.json",
+      "sha256": "df20c02e6102dc8b0ba199eb4804082db840f32407b3996f1ec96e7c197fe8ee"
+    },
+    {
+      "bytes": 18415,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/d178a46533c3bc1c02bd2a0b5714d0b1f42bff0cf4628be108ce9346cc35fd9b/4b82573d61152499529ba1ecf551a5e664f9f569a260383817a52ef0f04eebb7.json",
+      "sha256": "4b4a22a283f40479175ac284412c57394bba45e88d37f0dbca5eda679ab6424c"
+    },
+    {
+      "bytes": 17725,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/d327d8fd2ec61ca0674c7877805ebbdacb153c0a1416b32ffb2936ce034bd09a/20a937d9ed477a42f2ce795ac72d9695f1dcbb8b2b62b1ce81d912f37760222d.json",
+      "sha256": "a3709492217ec32ec55e0e848caf0605f7d4195ddf1d96abe87775564b233eda"
+    },
+    {
+      "bytes": 18810,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/d345d0176f906f3515ee10e6c81d93a3c5de3a6726e709b23cbe55389d9c042d/f55201d18496cce7bef984290eba759980b10fe84886c1aca7ce6a5bb8ca1c6c.json",
+      "sha256": "0720aedf68f53a9230abece5f2b65bc8214be0116d7da8296bde4596e4414247"
+    },
+    {
+      "bytes": 17236,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/d4577c4a2c4439526dd687d0236c73c0c2f01f9d19d659d6523a9bdd18205a58/6128bbfc6fcf6a1cca7ac2ee60738fa4b38eba2ae1dc2b49ce2cbf95b5f92e0e.json",
+      "sha256": "52c42cbd490c5379882fa8ca80c968dc3255e2fcb2405b55e2f09bb41098afca"
+    },
+    {
+      "bytes": 20462,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/d6bb8d5a6eb23becaa51ac49824d6a89447760f6debbea09f50bfa19729af95b/4f4fecd1bfa347a41253ec5435b92654e4b095aea422a4d4adffd0a51eb03f8f.json",
+      "sha256": "c6a323fad694dbbbfb7e182c15bdff6af83fff3c6fd90c8b7eb03480bd6ca66d"
+    },
+    {
+      "bytes": 18371,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/d957d56f284270b1cbf0b56b5f348b1d4c6dfa99fa04b43724d830cc676fe90e/568fdb1628bf9fc0236d61dc79eb11d948a8a64f3e59cfa34be1e117f7dbea9c.json",
+      "sha256": "59b2c2c60b46a65fee6cd40a44619c4b63bec6299bd2df96b1c005ed745bb04a"
+    },
+    {
+      "bytes": 17989,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/db3ae2113ba127b3bdeb2ce8c0c5773d4e3dd627cfa41b196be72d7f0c2f940a/8d91aa3b16c5ddaaf009e2b86472643864c947bc79148765440f3896446ac8fe.json",
+      "sha256": "6cd731f72e8f64bbf75802aa37a1eec0fe1d4ab2f0b6e725e21876e4d56a830a"
+    },
+    {
+      "bytes": 18446,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/dc412dc3cbd8d19d1da69ed5f128edbfee84a86ac86819af387d480234247c6a/6d0795f0b42d5209612bb773d1f8d62777a6deb034d875bd78f377060f97f044.json",
+      "sha256": "8d323577fc7f107ca0a3b6b49d750817ad1a65bcdd1e7efa22659a4eba0bec8a"
+    },
+    {
+      "bytes": 19115,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/dd4c57f4aa5b35d10908fbf75305ee1ae2c09e0df90b7cc8c09084ccfff85ecb/c3b5a39bdf0b1e22d25f30e100e4cbbcf5b72128f73a56525404ede64144b8b6.json",
+      "sha256": "56f027e5949784b349a779b8def371086da04ccfcb116a5a9ad996ffae22400a"
+    },
+    {
+      "bytes": 17584,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/dd6790a04704aa0639b589fe0bf18bf0840c99fc7dd45d7ee744e8e3ed3b88e5/e2f3c653293da4e21a6d1b8a0cbf57e8092a9b245f4bb1fe4fde9b89fc301433.json",
+      "sha256": "99c768740345f412ec67c43a5ce4192d822f61de173374a72d329dec33bae422"
+    },
+    {
+      "bytes": 17701,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/e16118adc1c8aabe8a85e83b830e02dd93118e21ba041c40ff1aa82b4b75e91f/abbe664e828d6dc353c60c865ddcf49a1587e57520247598ac3b74155d2da340.json",
+      "sha256": "b635423582065724f74b69b35f0360c6cd5f2c8f5c8d770a01d8506241b4374f"
+    },
+    {
+      "bytes": 17722,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/e1b49977b36c54ed20455fa107d0ad42d51df06d839fd7b4d29d10a817cbe095/f993fc27d2ef97a7523ecf8a6362c23a4c6ea639ebeb7f8dac06a5d2223c09e9.json",
+      "sha256": "0f989ed033568fcac12725bd4e067a57c8737aad3cf8209edcc96a9ede09dc6d"
+    },
+    {
+      "bytes": 19536,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/e220b6175cdf863dd3e31b8dffa6b6a46fc0ef919cb8d5529e834a7a9869d28c/55b1ae8c862c7955b1d512dbe4607b2dff881033a75117ecdc9edf434c8c8d40.json",
+      "sha256": "1788b963c0d4544f4e4a540bc3aa6327e058f601e7236303d994a585d00b8be4"
+    },
+    {
+      "bytes": 19832,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/e58b1a155ed6c048d7fe03bd4b9b7716206237c8248f944b8266cfa63c2a6d48/9e5eaefb525e5a9d05f7f87e4f30a481b54d81fd3a688dc7ea42b01225a196f3.json",
+      "sha256": "9722afb079b881e9ad51f608f344fbd140d1509e62b3439fe056b99a8ea5fb69"
+    },
+    {
+      "bytes": 17343,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/e703e7e95ea8cc2caf846fe350406986f34f2162caf035c1f6474d8b46d0393e/38b3dbeb2141d6c0ab386ca3f0ba703ab224743298c613d8f6ae01cf17007c72.json",
+      "sha256": "05b7504dd5a8e3b1e135cabaf610ebdf3180822273f47903ea124989c38c5cd5"
+    },
+    {
+      "bytes": 18669,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/e92dbcd92b3e9af42675465a220be4e00c7a2ce0740675a67249e74d7ae1d9b5/b206dbb43847e24f972f3fa57c4428fe880cfd44e60c357016690d47f0bc7b77.json",
+      "sha256": "1be0d32984023b118ea28cc4d44a08d2493661dc11d443e6a23aa32f80f1904f"
+    },
+    {
+      "bytes": 17627,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/ea1a03a148348e8aeb50c3b935a099d87f9c2fa34b6034467bc1acc8461a8745/72c2a16ec3a167ec14a7e8e73fc26ecc8eb8358783611d6ca850703e8db31458.json",
+      "sha256": "afe09169d40f103d64279bece62c3cc9353e2243b94d54ad2f5b915fa54a85e5"
+    },
+    {
+      "bytes": 20382,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/eabc738932d8432972599fbbcc4604d3543c1740169ebc5b68ec4ebaa3df981d/64d56325d9f3abbac17c0966fcc1317558507f4dd57f051ab7e5432d11927844.json",
+      "sha256": "8aa78aa6115e535c9b0941da79095818b6ff74f494cad6e9a5d19912a3832843"
+    },
+    {
+      "bytes": 18653,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/eadb9428c27f0084c1dd725c2f4e3202b7ba817eb1579e2a58c47d2a4c97ac43/4bb74b6872a0e091dc17a70d0b9329e29fca30614cec5ce40fcedc202e95ebf1.json",
+      "sha256": "f02d69b862396bf84d3bde037937c60595ddabf74ea0b95714e707ed9eb90562"
+    },
+    {
+      "bytes": 19666,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/ec93633e122dbfbbb18e701b7efca0f92c77efe818e1173d48f48f6125800759/a386e86493edf912b3ad6ed6db0fb68d4baca0baa4c0fa41c2269e6257a52b9e.json",
+      "sha256": "001cc2f953ce664dbed38a83eb0b09d57941c846258d104ac4fdad26e815f956"
+    },
+    {
+      "bytes": 18344,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/eca3b6186f27f5d3ba9537753bb3bc6ca0d5212b422e225533cbed2f489cb6ca/c39f0843469583155ae07e3f929671dddcde9248770b92ba5823647309e9a9e1.json",
+      "sha256": "355c38cd8cdd82da9f0ecdbac215bb7565a01f952be34b4a4b2c2f4a200ca81b"
+    },
+    {
+      "bytes": 18977,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/ed03633344f80dfd3d1984f5f63cf78f08ab4fa3b6d53536caab9ce994277a5d/33aeb606cb0377a836b6a96c26a2c61069c8864e353c481a5982cf2fe0ec985b.json",
+      "sha256": "686878d06da99c469ad0c9ca8f4bddd8c9c4c37b273853f3550600e0ff449478"
+    },
+    {
+      "bytes": 18317,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/ed5a85607798df0ed5fe9f7ac9f1ef2e6e9b69b694a674ca3ecb2032ee8dd480/3f82e360478bc3871851870fdb3778e9584e32a42c49c62fa2c5a1ff4b24a893.json",
+      "sha256": "e286a78d501b26a8a4faa6cf3b8b6ab8a7e023404592f5e8b6c775c53313cb63"
+    },
+    {
+      "bytes": 17209,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/ee20784e092cc48bf9a73257aebb0f9e10f24dc5fc2f63983b57fd7d71168bf1/8213106e2c9d779b4b864dad26e2fffd298187c48ade11e2e43010a061e64e02.json",
+      "sha256": "3f18a1aa7bb14f6ff78a6ac0dce7abc142e6d8d5d359383349cb491b20cbbd1a"
+    },
+    {
+      "bytes": 18685,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/ef50de32cdc1af4133ad3a09a89be6720e4d317d9e99c20d7c8b4a1f00a2a7d4/5b71080fb6a6ce2fcb762df2c4b1ef7605174242778be3930e6c93d13a0d2644.json",
+      "sha256": "305fb7dfc5dc865143b9bf4432ced97c1779e955ccad3548106105cfc26c26f9"
+    },
+    {
+      "bytes": 17227,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/f0e0c3d01dee4e15a64a1af3e345f5817f70573bf3d0ab51604b207a8a289cec/176bdb0e28a73bf1ced6e2ede0b13dc8b602def65fbd3125380ae72aa25d7182.json",
+      "sha256": "54892666bb1176b59f87254e4279ca678dab175da3bd8b2a2d9051078a293e86"
+    },
+    {
+      "bytes": 17528,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/f13b789153a601dbd72b231854818bec07ac4b672ebe0521629f2619ba6dcdb4/38df480c171a03fa575f103c935b304fe435cc03967066135429dfdf9f4b9589.json",
+      "sha256": "7f2dd4772fca14cf3963e45ac5c7020a902c473652b172bea26d7b16fc2d86a4"
+    },
+    {
+      "bytes": 16898,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/f13b789153a601dbd72b231854818bec07ac4b672ebe0521629f2619ba6dcdb4/3dd055bd2b8495eb962cbe450d34a28a31e3f298e9d884497fd7e21076258098.json",
+      "sha256": "f1e592616be63672916fdbe3b096f91f2f85ed724e6e9e426883dd3908a7567e"
+    },
+    {
+      "bytes": 16880,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/f13b789153a601dbd72b231854818bec07ac4b672ebe0521629f2619ba6dcdb4/f2dc269935eb2eff24462fbeb187bc67c76c85e63dcc0aaf4c326335ce931cee.json",
+      "sha256": "1042de1eba4188b21ace40fd14fff1eb2e5b8e083dee4672bf041b4c24782d51"
+    },
+    {
+      "bytes": 19408,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/f1697a985de48cea841f390ca6f7e01d0c99e11d028589cdbf02ee9b16381c0d/c8c8489ab73352481341be84f63b5d1ae832578a421fdab95af695dad9faced0.json",
+      "sha256": "2984c446f36d15a7b15d096b57f0c00dc7bfee98a8b19dd6170473956944e39d"
+    },
+    {
+      "bytes": 18427,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/f1a59769f95df3976339a34b1d8e2db8835cf54540c9957d8ec0288376f0301a/6def71d44ea0376935171e137e441eaf8d06511ce1affe608922565d9b4d6966.json",
+      "sha256": "9c9e45e276f8b71d813c241029072680ed1a664eda13a28504f9e334ef37e7c4"
+    },
+    {
+      "bytes": 18288,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/f48588abbbdbbad0e3bdafdab0820154624c3321963efccd4156c1c95468ecf5/cfe8036c6c99dcb628e4bc340c525f5b4918d1fa050259357e2a9c0bee32abc6.json",
+      "sha256": "eb923503bad7dec4e3606eb4e03dbc6c3c82368930c35f2384b7d6338f2573a4"
+    },
+    {
+      "bytes": 17730,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/f56027287462989bc9fdb6f0ed30b886c1dfd855c3c3a88ffb02a9b5cb428b01/2cebf430b5385f7ceaaf86b2217756f34539f8bf64aa0556fcee90169b182248.json",
+      "sha256": "6b5f697212b959081886bd14e6ecdc24e89c6103a39e752767697ce128c8e281"
+    },
+    {
+      "bytes": 17300,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/f5be6ffe715667090da3b26557e0ce2916a34fbe93bd64aa2ccad60a8f8cea5e/84657e3ac0dc028db4a90ac84f93e0b8d49431ab7e76df59eb7f874ac9888d5e.json",
+      "sha256": "d9859fd603d99eece1f57b6d2006d5fe2e622a5b421d0a486e605bae9c442b80"
+    },
+    {
+      "bytes": 18012,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/f7b3f33e29cf7e5e05c87e3d4628467a03ab1723d2e8c30ce97962951f1772c7/31568535954e1ae18466c22bec7b2100c598c11e2f721e6150d28f1f97142e5e.json",
+      "sha256": "e946a191ed67e9bbe19a188d4686552e8e06949b07128a6a1cfc22da89ca9234"
+    },
+    {
+      "bytes": 18050,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/f8d6c19b98bde36c0c63465ba5a73d62c586d98cec2a40d2e17898f10fd0eb21/d4e559fde5cc5658d923910c35cc354f0259414fdace02f61e099246289d1ecb.json",
+      "sha256": "8935fbd55f1b12d7031c1233a5f2c52cfa47d5f505edf7c1fea925ae6911bd2f"
+    },
+    {
+      "bytes": 19619,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/fa790bb4dad529ffad8b75dbb527a65ab40918f3ec6a5acd21db8faf0af14830/3788a8b669c63e02b1d1690ded49d1a36e0dcd10e5d220a49c60a11411f968d9.json",
+      "sha256": "eb42b28e5b1ef3c8493f13d0e3144e01c02f9c7a5183a80b7846c71de858e6b2"
+    },
+    {
+      "bytes": 16832,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/fa790bb4dad529ffad8b75dbb527a65ab40918f3ec6a5acd21db8faf0af14830/7262368aa230a79633902a2a79150ef7c3fea283e58bd66523ba858fca26f60e.json",
+      "sha256": "7cbdfb941dd835bd35f3a9bf849148c2986646c4f64e90c9e1f740089dc05cb9"
+    },
+    {
+      "bytes": 18689,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/fa8628f0eb1c0d7f9e07cbe3fff8d68a1d538664dcc23ec14c288e09f73cc4e5/166990f797236bdb7f56873247d6abc2b9187bbeae5632cf26f721b7367fe8e4.json",
+      "sha256": "e153564a6921a6db254423dad6730d5454c4865e7379e5e11c3a4cde0d12b206"
+    },
+    {
+      "bytes": 17464,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/fce5f974a40bf3bb5b08107fc1000a77121879c00f839fd10b07ece18532bce6/9e7e1e279ca2cc6ace31c8271c3bb54115ea1fd60857ebc97d4d1bad0f0f77d2.json",
+      "sha256": "2d190d7116efcb01cebf14170b849e06d1cc4f1496710db5353304e56d773deb"
+    },
+    {
+      "bytes": 17891,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/fd3f0358e86c24948ccc09ae2854a34585e261f0e7c363fda8901cf4a62945f3/bc9c0756066513e27c4f7ec1d8eb0e3ac84f1f17c5bc45002a998d6ba8dcbfad.json",
+      "sha256": "a4921757e0f8df32839d20014bbe6a5052604e2a75c48645e9d00e41e5b19cee"
+    },
+    {
+      "bytes": 17675,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/fdf0d52506e9510ae2fe0cc954b23d5442dcf493f1605c793014f17697174919/27f2a25ec09e871ed6f26c6a3027a522558466587c87512d715512c5f9a515b0.json",
+      "sha256": "c4be2f34dbea4ad5beb5f1cd9372c490f49388e498a06aaf71450c959f9694ac"
+    },
+    {
+      "bytes": 18342,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/fe43c2ebfa0cd168ee05657389f5512cfe82b840c49ca24843c7490780ec491b/f0b4f104314be5e7df3688dd46ad9a99666d696164ed891f93a32e64cfc31b5d.json",
+      "sha256": "e0e35025ca85b010746b4399bdb1a6f5bf6e9eeb34140af8a8c69fc0eaab68b7"
+    },
+    {
+      "bytes": 18425,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/charts/ffa634c169a9a1ea3be4d18505e7581828abb4b77b7a673997925d8ff49628a8/001682baf2c0bd92eb1f8371af101e47fcfd4b1197ff46f6314c6dba60d6afb5.json",
+      "sha256": "c1d84b536d1ed403ea3cfbbcda1f72c25cce16ec96ab7fa8a51b387f83b91f56"
+    },
+    {
+      "bytes": 15826333,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/candidate-00/result.json",
+      "sha256": "316e48773bed55bf4c52cd9bea4c4a9c2db9bb6823020dbed52c870b63a16d97"
+    },
+    {
+      "bytes": 326,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/launch.json",
+      "sha256": "c2009c253037ebf095a392c35be6ebcaf601e725b6949c42e8e73a2fe182d844"
+    },
+    {
+      "bytes": 22163,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/protocol.json",
+      "sha256": "4291e86466fca1fa638802cf7526017a1aa1b37801885ab5bb4c1f102c97978d"
+    },
+    {
+      "bytes": 972,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/supervisor.json",
+      "sha256": "574885f1500ab9383a090b8c13ce8d9703f99cd47b4fe761e41382dd6c03b25e"
+    },
+    {
+      "bytes": 1220,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/terminal.json",
+      "sha256": "07a51f381df9ef813647c4f0ff6370af4abcc8444401428a3bfbdd70c16cf228"
+    },
+    {
+      "bytes": 69969,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/unsearched-tails.json",
+      "sha256": "f0fd41258a2e764b8055f82aa6ffe91b42884f1293b2568cb14b4a660218d5fb"
+    },
+    {
+      "bytes": 81,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/verification/charts.log",
+      "sha256": "da260ba8bc9a508655ebfb4bd99ee5f4aad620ed89ec195a418f3a8b6caccb2a"
+    },
+    {
+      "bytes": 1066,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/verification/charts.supervisor.json",
+      "sha256": "3773c7ef3ecfe63a4d0d0ff5ecd1f9d7e88afa92c6058395a8236390d8c77790"
+    },
+    {
+      "bytes": 1455,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/verification/cloud-build.log",
+      "sha256": "10b4c3b88b64c21416a747583283e9f9e03fd6af587870bb1f44e1555e52aba1"
+    },
+    {
+      "bytes": 1336,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/verification/cloud-build.supervisor.json",
+      "sha256": "1a21c2114a25df4b7bc4009935ec9d9b4ead4057482262cc6bfa63486587dc99"
+    },
+    {
+      "bytes": 57,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/verification/cloud-check.log",
+      "sha256": "79151b34e4b0642cb5f1a5d22d8af8fad0d95ee7d26671e466cb120aece652c6"
+    },
+    {
+      "bytes": 1092,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/verification/cloud-check.supervisor.json",
+      "sha256": "d521e97917dd268d5a9dbd136643032251ccc8f90596a6813b5c727910c5c180"
+    },
+    {
+      "bytes": 876,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/verification/protocol.json",
+      "sha256": "07cac9f2ba12455b25da661bb0a117e2dce619c17df40a02b2adbba39f5990b4"
+    },
+    {
+      "bytes": 4379,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/verification/result.json",
+      "sha256": "62089bae43cb4399caf7b5172d45f873e53338e189ca9d2d6e877fb19e4db840"
+    },
+    {
+      "bytes": 7576,
+      "path": "artifacts/local/elliptic-curves/compact-r17-new26-followup-v1/worker.log",
+      "sha256": "878cf35bef675b38848cb0364b09312c7f5f78b33ce615034cf149d8ec5b53d9"
+    },
+    {
+      "bytes": 3076,
+      "path": "artifacts/local/elliptic-curves/compact-r17-omitted-generic-class-gap-v1/gap.json",
+      "sha256": "d0debda997bac1bb5cd31e443030a21090a7614ba71dcc34a4c6a1569a7015aa"
+    },
+    {
+      "bytes": 1378,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/batch.log",
+      "sha256": "4996f7edea4dd528472c74a917b5ace9528f56cb85323a0de585ce53eef40e79"
+    },
+    {
+      "bytes": 989,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/batch.supervisor.json",
+      "sha256": "007615d7995cbe6d452a8a52be0a346daddacb9dd10c49eb93ea5e24ac6067f6"
+    },
+    {
+      "bytes": 1505,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/census-074d9.json",
+      "sha256": "77981be9fddf04a41bc4cadf1bb2d21302e6650bd5cc444771269e1b3ec7f32e"
+    },
+    {
+      "bytes": 99,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/census-074d9.log",
+      "sha256": "b8c54d924de6359cdd5e9d850e59e95b1e38bb0b3ecb4936e4ef7baa26e3b124"
+    },
+    {
+      "bytes": 1177,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/census-074d9.supervisor.json",
+      "sha256": "9ffcba06dade2b52a1157f5d9820d41d6a749864a638351fc6dd77f3d7a4c51b"
+    },
+    {
+      "bytes": 1501,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/census-07ca9.json",
+      "sha256": "219b68893235a58c3bb61e0fb90f6b707c1a9dc65cff6bbf55415e4a15216157"
+    },
+    {
+      "bytes": 99,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/census-07ca9.log",
+      "sha256": "8fb057b7ce638eb94a52cb43e9d7aa092bb85b3d06919711061d499979ae6001"
+    },
+    {
+      "bytes": 1177,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/census-07ca9.supervisor.json",
+      "sha256": "b75c42b0b0d0d23ba7c9af39e41abaf99cb8c6b6db4c1828ce72d83d7826a806"
+    },
+    {
+      "bytes": 1507,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/census-08234.json",
+      "sha256": "9c93f0ec5f3bf5c2c056b9528b738035a3a8e12ae57ad05247a429f5c3e58136"
+    },
+    {
+      "bytes": 99,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/census-08234.log",
+      "sha256": "01a87dc07168d0fbe60ed2666f0a7e4b721334d400b99effe5f51c430c73e696"
+    },
+    {
+      "bytes": 1177,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/census-08234.supervisor.json",
+      "sha256": "c84480d81d9af386ebbb9137b881489abaae22d3e8b69551a6e621f562a1b051"
+    },
+    {
+      "bytes": 1507,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/census-08f72.json",
+      "sha256": "9738d2b0650982eff107c598c4693628827898f8c946f3cea47f6966c1011085"
+    },
+    {
+      "bytes": 99,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/census-08f72.log",
+      "sha256": "625bf57da619d854087fa3da951fa1ec6ad0e8f5bc469c2182aceb104e7691be"
+    },
+    {
+      "bytes": 1177,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/census-08f72.supervisor.json",
+      "sha256": "08b2bb7e17796a926b0aa3017a3a1f77b8dd5eb7367b1f04526184dc545058eb"
+    },
+    {
+      "bytes": 1498,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/census-103b2.json",
+      "sha256": "0fc06adc05023daaa9f4c227caa35bd40a538b75d8763eec34b931c0a4a1af86"
+    },
+    {
+      "bytes": 99,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/census-103b2.log",
+      "sha256": "b6e2104c1df3560039fc026cf18edd69a1062b273e11b865bf219fc92eef5b35"
+    },
+    {
+      "bytes": 1177,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/census-103b2.supervisor.json",
+      "sha256": "b67049c73a67bd21d8ff54f4d346140cd4018954f99a56d84061b9184b997862"
+    },
+    {
+      "bytes": 1495,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/census-11952.json",
+      "sha256": "e923093da746dfa0ebe365e10824807e7af3af8510575fa109bb2225d219c322"
+    },
+    {
+      "bytes": 99,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/census-11952.log",
+      "sha256": "59ec793bf1104d443407004e35ad19df9aa42ac926b5eae4299261c4bae59465"
+    },
+    {
+      "bytes": 1177,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/census-11952.supervisor.json",
+      "sha256": "fc3899f4033ceb356e99d25f8b10fc1e09e29d4d7cb0956fdb20d39a15ba2668"
+    },
+    {
+      "bytes": 189,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/index39-retry-clarification.json",
+      "sha256": "4f9ada7b75a1f3208474becf515ae15a489b0c67468be6a9c8191c609ce07983"
+    },
+    {
+      "bytes": 334,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/index39-retry-protocol.json",
+      "sha256": "7f88005e7b7894b1420c3f6f13f7e7058faa961f597f7541644d1c2e089e157e"
+    },
+    {
+      "bytes": 1103,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/index39-retry-result.json",
+      "sha256": "6cb3da282c2cbfb5ff723e5443fe372af3547e7c5f3d807bd6ebcf4cbab3149f"
+    },
+    {
+      "bytes": 1936,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/index39-retry.log",
+      "sha256": "b6f6d0d40e9e2cb1752b60fdccee7b18f523be34c1f01154f89a773b02ca35b3"
+    },
+    {
+      "bytes": 1002,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/index39-retry.supervisor.json",
+      "sha256": "4290e405c30d6a997699b29a33ccc9638ed363d29b4ecb82853945e08f6e096b"
+    },
+    {
+      "bytes": 1176,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/index39.log",
+      "sha256": "d8a74cc002d2f2131714a4a10108dcdff7549b135884fbecd00ac0c890a6f2c1"
+    },
+    {
+      "bytes": 1021,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/index39.supervisor.json",
+      "sha256": "c815ad4f01e2e801f73dcc34ca5940becfc4053815aed904322b0f854e816fa4"
+    },
+    {
+      "bytes": 13929,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/ledger.json",
+      "sha256": "aea90bfdaaecc312a6ec74f3e0bd3325ef19e3b0a26e6e4ee6887e9d37b56fd1"
+    },
+    {
+      "bytes": 3766,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/protocol.json",
+      "sha256": "6e093fb93b1ce46126d7a70db218797be7e85b37705dee7a9707c8279358f154"
+    },
+    {
+      "bytes": 66,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/rank26-charts.log",
+      "sha256": "982d71cfa86dfe32b187747e3a5104d7abd0971b7e16a409d0c1b1e50433d2c9"
+    },
+    {
+      "bytes": 986,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/rank26-charts.supervisor.json",
+      "sha256": "d22e8689d6cb981130da3d0165a59a1c33e893e18bf93d3f8cc4016c870fd490"
+    },
+    {
+      "bytes": 103,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/rank26.log",
+      "sha256": "6456945dac8d957f8da78e43ee3fcc04647fc60eede95bb6820e52ce8f84a497"
+    },
+    {
+      "bytes": 988,
+      "path": "artifacts/local/elliptic-curves/compact-r17-wide-portable-verification-v1/rank26.supervisor.json",
+      "sha256": "d8ecb16f68fde8020c870933754320d5c91bf3a114b783b2de54be529d97bb98"
+    },
+    {
+      "bytes": 1705552,
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h4096-v1/07ca9/candidate-00/result.json",
+      "sha256": "76c31f6ffbaa735e694f9b304819691dd74cdc62c4097cfbcb5f4b70c79bc139"
+    },
+    {
+      "bytes": 41964065,
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h4096-v1/07ca9/generic-census.json",
+      "sha256": "eca3598b42f22436eecf0b2ddfaddd72848716155ea3a8d6b500ef4d894f1c64"
+    },
+    {
+      "bytes": 780,
+      "path": "artifacts/local/elliptic-curves/latest7-cross-family-incidence-v1/build.log",
+      "sha256": "8cdb1d0a1ca1555220a3b488de7bda9b82df9177561b0c74db2f586936ddf11c"
+    },
+    {
+      "bytes": 1119,
+      "path": "artifacts/local/elliptic-curves/latest7-cross-family-incidence-v1/build.supervisor.json",
+      "sha256": "dd31d292ab38f9043b5cf0adba3be869ee27c381e8109c8fdadecdcb046ac337"
+    },
+    {
+      "bytes": 881,
+      "path": "artifacts/local/elliptic-curves/latest7-cross-family-incidence-v1/protocol.json",
+      "sha256": "5639170f6899b06e4182da351eb9179a088115f639e9f463ba7e3c2f63f5c5f2"
+    },
+    {
+      "bytes": 110,
+      "path": "artifacts/local/elliptic-curves/latest7-cross-family-incidence-v1/replay.log",
+      "sha256": "48fca9a3bbe71af0259c5fc84234d83c85006e75ca9cf04a4a1d612db472e94d"
+    },
+    {
+      "bytes": 1229,
+      "path": "artifacts/local/elliptic-curves/latest7-cross-family-incidence-v1/replay.supervisor.json",
+      "sha256": "9ffc6f69cfd0b4316899a7970d06f85a13fa8dfe0251ec4c9b050e5caaeea869"
+    },
+    {
+      "bytes": 2625,
+      "path": "artifacts/local/elliptic-curves/latest7-cross-family-incidence-v1/result.json",
+      "sha256": "549597f5add17cba8f8bba34ed12af100791d96c15bcb7ebd508054295e1b773"
+    },
+    {
+      "bytes": 278,
+      "path": "artifacts/local/elliptic-curves/new-rank26-conductor-bound-v1/protocol.json",
+      "sha256": "e3369c96ff2286a3ed396ee5df5c7c3a72cc44fe39e19c3f467e50b771767a30"
+    },
+    {
+      "bytes": 3153,
+      "path": "artifacts/local/elliptic-curves/new-rank26-conductor-bound-v1/result.json",
+      "sha256": "fcd989aef65c90bf8bb8fbc0afd13a4e377b8821c6426d8d0f8ea6344a3e9fa6"
+    },
+    {
+      "bytes": 924,
+      "path": "artifacts/local/elliptic-curves/new-rank26-conductor-bound-v1/supervisor.json",
+      "sha256": "de0932c804553ed80fece591228588dfe096aeadbaf0c28f94ec7673dbb65411"
+    },
+    {
+      "bytes": 196,
+      "path": "artifacts/local/elliptic-curves/new-rank26-conductor-bound-v1/worker.log",
+      "sha256": "11a3179108743aad23e54d407de40639509e92a49114ef48030838292a5a2a05"
+    },
+    {
+      "bytes": 1655178,
+      "path": "artifacts/local/elliptic-curves/next12-current-catalogue-v1/database.json",
+      "sha256": "1ec915b1d108f906791f5361f8150d328ce96e5f41d95d9e78d9a354e175e53a"
+    },
+    {
+      "bytes": 221,
+      "path": "artifacts/local/elliptic-curves/pointed-orbit-compression-audit-v1/protocol.json",
+      "sha256": "191fece1a0b86b473858ec943101ea08237466ee225d0328e9c4ca3688a14365"
+    },
+    {
+      "bytes": 885,
+      "path": "artifacts/local/elliptic-curves/pointed-orbit-compression-audit-v1/supervisor.json",
+      "sha256": "0f3ae622cdb93445b5309cd45b29f58402273685b40da3d21e8d5baf98e8c655"
+    },
+    {
+      "bytes": 47,
+      "path": "artifacts/local/elliptic-curves/pointed-orbit-compression-audit-v1/worker.log",
+      "sha256": "f2e06f0f82d1a18d1139cbeccbefd7bdcaaa52fe17bc2f5ada4c4ceaf5afd697"
+    },
+    {
+      "bytes": 1928,
+      "path": "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json",
+      "sha256": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869"
+    },
+    {
+      "bytes": 9593,
+      "path": "elliptic-curves/cas/alternate_quartic_covers.py",
+      "sha256": "598f7556333c9d8462f251d97a6d132e0bd672a11861f8c2f142fc4588abe9e5"
+    },
+    {
+      "bytes": 14235,
+      "path": "elliptic-curves/cas/analyze_icarm_7fff_zip_sequence.py",
+      "sha256": "2957bb20d4fbcde1adfedf29fb211d8f3aa584a37a5719694d13e9313a1e7ed5"
+    },
+    {
+      "bytes": 6283,
+      "path": "elliptic-curves/cas/audit_latest7_cross_family_incidence.sage",
+      "sha256": "63ce59e665122727feb0b94ba270bf4a088771b8942fc72305fc567299b3e0ff"
+    },
+    {
+      "bytes": 3190,
+      "path": "elliptic-curves/cas/audit_new_rank26_conductor_bound.sage",
+      "sha256": "62b97a28d3ea999f7eb4b968b3787d974147bc5828306c66acf43a7fee70bd44"
+    },
+    {
+      "bytes": 2782,
+      "path": "elliptic-curves/cas/audit_pointed_orbit_compression.py",
+      "sha256": "10d61ad076234a572b98c527d1873eac49c2d8969106ee9f652ad831e8acf1ce"
+    },
+    {
+      "bytes": 6798,
+      "path": "elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+      "sha256": "e96c49b6cd412a1f00f4e579aa39fb1f9b9b65036eada8381d7060c60d1325c5"
+    },
+    {
+      "bytes": 18239,
+      "path": "elliptic-curves/cas/build_elkies_2026_rank28_bad_place_ledger.py",
+      "sha256": "08222418ef223f787f83a9ea37bd3cc9ca4744e7d72b8b2d874da04dc7fd262d"
+    },
+    {
+      "bytes": 30238,
+      "path": "elliptic-curves/cas/build_elkies_2026_relative_2selmer_suite.py",
+      "sha256": "bf3b22cae0e429196101083f70862bf549189ac8cfa6ded402b95ccc55dbcf26"
+    },
+    {
+      "bytes": 13165,
+      "path": "elliptic-curves/cas/build_q12o5867_bnf_free_signature.py",
+      "sha256": "721f6c6f250fca9afdbc3034390558edaf90e515f146e66ec3eb780c689828b0"
+    },
+    {
+      "bytes": 4993,
+      "path": "elliptic-curves/cas/census_compact_r17_generic_parities.sage",
+      "sha256": "e74d8c64bfb1c47e6a9ea65780209594c96b1bec94a0124ac79cbd63c4307053"
+    },
+    {
+      "bytes": 8974,
+      "path": "elliptic-curves/cas/certify_compact_r17_candidates.py",
+      "sha256": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9"
+    },
+    {
+      "bytes": 7143,
+      "path": "elliptic-curves/cas/certify_compact_r17_wide_results.py",
+      "sha256": "a77cb28dd9c70f16e54fb3dbfd365a299af93c39f6bc7138c607c1a844ad31d1"
+    },
+    {
+      "bytes": 5244,
+      "path": "elliptic-curves/cas/certify_new_compact_rank26_v2.py",
+      "sha256": "3a2f94317445eaa912a33e79ed3af1df4d6272139646b2712f7531ab53c1588a"
+    },
+    {
+      "bytes": 1751,
+      "path": "elliptic-curves/cas/compact_atlas_specialization.py",
+      "sha256": "ea68110968e86cb0502a74a995c26054ff8e4a0da90c49bb2bdf0b753a759b14"
+    },
+    {
+      "bytes": 14246,
+      "path": "elliptic-curves/cas/ek_k3.py",
+      "sha256": "53b96064afee80c102bf149242754ed98afc85b5bf3c422429d1f23c9db68f0f"
+    },
+    {
+      "bytes": 21409,
+      "path": "elliptic-curves/cas/elliptic_candidate_record.py",
+      "sha256": "5b9f6f843d48e705253404a5583ef53966c72c7f229c68ef17c6b848f5e94af3"
+    },
+    {
+      "bytes": 5332,
+      "path": "elliptic-curves/cas/export_new_high_rank_curve_index_v3.py",
+      "sha256": "cd232e107b10e52d588dd392fe01c54c56b09698550d4931b87ad174bbb1c2d2"
+    },
+    {
+      "bytes": 14700,
+      "path": "elliptic-curves/cas/fermigier_mestre.py",
+      "sha256": "6932c04fa699683ec112f25801adaa74ccb5e16dfa789b28ad56abf720c51090"
+    },
+    {
+      "bytes": 6438,
+      "path": "elliptic-curves/cas/fixed_cubic_geometry.py",
+      "sha256": "77db6402383e3e64e4577162a98cd69ee4ecd5050ffba69f02a6048e16238a7a"
+    },
+    {
+      "bytes": 8785,
+      "path": "elliptic-curves/cas/followup_compact_r17_new26.sage",
+      "sha256": "21d31a4bba3b271520e7b494e20f07b9fcee37b0bf633a2d5808a20c50b25b43"
+    },
+    {
+      "bytes": 15983,
+      "path": "elliptic-curves/cas/half_lattice_pointed_sieve.py",
+      "sha256": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4"
+    },
+    {
+      "bytes": 8101,
+      "path": "elliptic-curves/cas/mod2_reduction_independence.py",
+      "sha256": "c5963952d1a9089416479671b788b6437dbba26591d796646022f4e9dddd0c70"
+    },
+    {
+      "bytes": 5401,
+      "path": "elliptic-curves/cas/package_new_rank26_followup.py",
+      "sha256": "2a27c2c5d4747700527c5796ad7a9cb9938b9cf9b9c30054f4c8f15514fde6d7"
+    },
+    {
+      "bytes": 5787,
+      "path": "elliptic-curves/cas/package_recorded_mod2_audit.py",
+      "sha256": "aac478e8abe4221a4cbf38c2d4ae52866bb61c9c3249b7572da45846f1a7e8df"
+    },
+    {
+      "bytes": 6409,
+      "path": "elliptic-curves/cas/pari_bridge.py",
+      "sha256": "d8c40e3c1b0f9eeb78e2f4b01aa2f3d5f793bfb35956c5846b2312da90132e45"
+    },
+    {
+      "bytes": 20080,
+      "path": "elliptic-curves/cas/pointed_quartic_search.py",
+      "sha256": "01c40a10cbe31f4439c4f2dacf7e2e5831f8bd6b83079933c9d506b6a25d1ff9"
+    },
+    {
+      "bytes": 7157,
+      "path": "elliptic-curves/cas/pointed_quartic_sieve.cpp",
+      "sha256": "7a015c85e54e14f16848626b154236132e34c0e42315242959a0be59e2de97a4"
+    },
+    {
+      "bytes": 9767,
+      "path": "elliptic-curves/cas/production_search_gates.py",
+      "sha256": "4770ce8930623f5b5dcb631b8fc9dc1c5a1fd8f7862f557d943f8b8fb375e337"
+    },
+    {
+      "bytes": 4394,
+      "path": "elliptic-curves/cas/prospective_half_lattice_v2.sage",
+      "sha256": "4d06eef3eb078116989b4df7df0afe8333da78d0d2e9ce010f1e0da8fc7a41bb"
+    },
+    {
+      "bytes": 4241,
+      "path": "elliptic-curves/cas/replay_compact_r17_generic_census.py",
+      "sha256": "02a5f940d322bccedbf097ca5a24d9457b6d55638cee5bf0b698cd371fec4576"
+    },
+    {
+      "bytes": 5182,
+      "path": "elliptic-curves/cas/replay_compact_r17_new26_followup.py",
+      "sha256": "0d585673515d1a64bb7a599a532914764a2e6dad33ca2b25f3ca28d700644500"
+    },
+    {
+      "bytes": 6846,
+      "path": "elliptic-curves/cas/replay_latest7_cross_family_incidence.py",
+      "sha256": "62f7cafdbe566ca6446355e51b14d9a1197e607bcebcbe9096d21871700e120a"
+    },
+    {
+      "bytes": 207,
+      "path": "elliptic-curves/cas/research_runtime/__init__.py",
+      "sha256": "fcf27db31ec58866898e7e014861f8a566dd5f65c276f205e99ff64bd793a45e"
+    },
+    {
+      "bytes": 8430,
+      "path": "elliptic-curves/cas/research_runtime/arithmetic.py",
+      "sha256": "f304317492824cf149c88b5814e68cdd0bffb0542a3d8db7bb4d9f3ec988802b"
+    },
+    {
+      "bytes": 3191,
+      "path": "elliptic-curves/cas/research_runtime/binary.py",
+      "sha256": "9956f4b5236d8ad2260018182eebfa18bcd8ced7fdc92ffa6023ad9da7d9dd99"
+    },
+    {
+      "bytes": 4074,
+      "path": "elliptic-curves/cas/research_runtime/cached_observation_state.py",
+      "sha256": "c1480925932b0cf86c0392cb796e9f83d278e84fc0a769ad031e93a8a68d43a7"
+    },
+    {
+      "bytes": 7407,
+      "path": "elliptic-curves/cas/research_runtime/chart_policy.py",
+      "sha256": "0a9212fdaaa3a6abcd09034c003eed0d48bdb258d3161bcee6685607f87b21ad"
+    },
+    {
+      "bytes": 9303,
+      "path": "elliptic-curves/cas/research_runtime/cvp.py",
+      "sha256": "83d9d87e9f465acffb48c3a5400ded28d10382f7c690492fb8dc998775767c8a"
+    },
+    {
+      "bytes": 3714,
+      "path": "elliptic-curves/cas/research_runtime/deep_centres.py",
+      "sha256": "4dd57a7e5a254eba1f7cffed9dd62838cf7607b54a0ae29c162b4cc3d282799a"
+    },
+    {
+      "bytes": 2626,
+      "path": "elliptic-curves/cas/research_runtime/finite_fields.py",
+      "sha256": "24be713a49328db4eb8409e5023fafff3dfb638e4cb56151444abd631eb055ef"
+    },
+    {
+      "bytes": 9211,
+      "path": "elliptic-curves/cas/research_runtime/finite_reduction.py",
+      "sha256": "467609d4a1003127a9dcfb5ff3cd911d3748f5c5c5ff68a43f09db0de9b69992"
+    },
+    {
+      "bytes": 3463,
+      "path": "elliptic-curves/cas/research_runtime/fisher.py",
+      "sha256": "fb8cf017ade457f4680ba8aa7cda0e57dab2f1fba6ab3fcfb99bb4b1bf256a5c"
+    },
+    {
+      "bytes": 10982,
+      "path": "elliptic-curves/cas/research_runtime/function_field_witness.py",
+      "sha256": "f952ccde7737327d8a30d09917b91f6d273074661eea86ab9bfee620998e9b90"
+    },
+    {
+      "bytes": 4543,
+      "path": "elliptic-curves/cas/research_runtime/local_kummer.py",
+      "sha256": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e"
+    },
+    {
+      "bytes": 3015,
+      "path": "elliptic-curves/cas/research_runtime/memory_store.py",
+      "sha256": "0ce81817fc94949864b2f653e9ece207d666d61fbdabeb56f52e044bb83dd873"
+    },
+    {
+      "bytes": 10208,
+      "path": "elliptic-curves/cas/research_runtime/mw_state.py",
+      "sha256": "e53c24a786afe1096a3bc90eff94396b1b3b6b1fd3ec52c24e51c69622b4596d"
+    },
+    {
+      "bytes": 5613,
+      "path": "elliptic-curves/cas/research_runtime/pari_context.py",
+      "sha256": "20db26886dc17baf4ae7ab7c43d669bc53a07c953a8e99b94435fe7846e8acaa"
+    },
+    {
+      "bytes": 2333,
+      "path": "elliptic-curves/cas/research_runtime/pointed_orbit_compression.py",
+      "sha256": "23f69a9b9aedc040c0a2d97e2b1f722c00a97a1a26702b04a94fba8d1ed3914c"
+    },
+    {
+      "bytes": 3967,
+      "path": "elliptic-curves/cas/research_runtime/pointed_worker.py",
+      "sha256": "7126cac4ed8bbfd7015476670b61fc317649700436b92e072a21d1bac4695ddf"
+    },
+    {
+      "bytes": 9660,
+      "path": "elliptic-curves/cas/research_runtime/pruning.py",
+      "sha256": "9f5748f7a6fe0d06befab7d596b7469b2180331416ac2d039fd7f636ed91b7c6"
+    },
+    {
+      "bytes": 1863,
+      "path": "elliptic-curves/cas/research_runtime/quotient_only_reduction.py",
+      "sha256": "b47036dd2d5882a8bdccfb9095fb11c543ddc8e209e487d6c7afdf8a8d06986a"
+    },
+    {
+      "bytes": 9450,
+      "path": "elliptic-curves/cas/research_runtime/regulator.py",
+      "sha256": "aa4bdc99095199936417058f46ee2fd0d48acd497676f46c5d0456e7865be970"
+    },
+    {
+      "bytes": 25277,
+      "path": "elliptic-curves/cas/research_runtime/sage_arithmetic.py",
+      "sha256": "105fc55cc851c0b60d1132e3f0afbac8c872344d7d17c3d2610c1b24390f4dd1"
+    },
+    {
+      "bytes": 28373,
+      "path": "elliptic-curves/cas/research_runtime/sage_subspace.py",
+      "sha256": "86fd5f87fa773bb817e3f19e3847e9188a7071b41bc3d8adb81b21c804fb6cf5"
+    },
+    {
+      "bytes": 5172,
+      "path": "elliptic-curves/cas/research_runtime/sage_surface.py",
+      "sha256": "43942f606c97580a324f4e22d6c771eb5ca8264953ceca8e29aced7afffd0418"
+    },
+    {
+      "bytes": 3309,
+      "path": "elliptic-curves/cas/research_runtime/search_state.py",
+      "sha256": "598a2177fa1cdd5b45c801c09adcc4ac51bd2a87152b7982ea70e78585f8671c"
+    },
+    {
+      "bytes": 4351,
+      "path": "elliptic-curves/cas/research_runtime/section_gate.py",
+      "sha256": "df5fd619731f2bcc08df2c24806fa479b68879792ca84a5a972ca0cf122ae2ed"
+    },
+    {
+      "bytes": 4039,
+      "path": "elliptic-curves/cas/research_runtime/simon.py",
+      "sha256": "08d7ef9a7443f8268aee0b0799e290494e79a1532828c73345432259887e644e"
+    },
+    {
+      "bytes": 8233,
+      "path": "elliptic-curves/cas/research_runtime/store.py",
+      "sha256": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965"
+    },
+    {
+      "bytes": 9744,
+      "path": "elliptic-curves/cas/research_runtime/subspace.py",
+      "sha256": "2ce4a9f7d688a2a4581d844dd3663fb7fae63904d167caecef4af6bc6cfd2534"
+    },
+    {
+      "bytes": 20249,
+      "path": "elliptic-curves/cas/research_runtime/supervisor.py",
+      "sha256": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233"
+    },
+    {
+      "bytes": 4954,
+      "path": "elliptic-curves/cas/research_runtime/surface_repository.py",
+      "sha256": "3d3d9f28b2605c248c021a4ed8490d815cd16ac233923ece899ff940ec3e16af"
+    },
+    {
+      "bytes": 5670,
+      "path": "elliptic-curves/cas/research_runtime/toric_surface.py",
+      "sha256": "b8e1d5329c32402b693b27e61887c30eb6cf1606043a5f1048ffc6dd7d6606ab"
+    },
+    {
+      "bytes": 2717,
+      "path": "elliptic-curves/cas/research_runtime/witnesses.py",
+      "sha256": "e6ea79fabb7d16e179d5ea347a2006e19193f910a3c6d56940c73ff8dbce2619"
+    },
+    {
+      "bytes": 51705,
+      "path": "elliptic-curves/cas/run_elkies_2026_relative_2selmer_checkpointed.py",
+      "sha256": "1e674eb42122784c580777b782ffee1c737c1bc9788ba00b47a09777e26b1477"
+    },
+    {
+      "bytes": 27525,
+      "path": "elliptic-curves/cas/run_elkies_2026_relative_2selmer_open.py",
+      "sha256": "158bd9c13fb583d5ffa4f3363063703b7e0014c996ccc8bdcd273fbdcf08e944"
+    },
+    {
+      "bytes": 13126,
+      "path": "elliptic-curves/cas/run_fermigier_rank20_auxiliary_fingerprints.py",
+      "sha256": "b8bab575cc8109a9f64256b77b0e340d87fe741718fb46f0f0ecff80c3857d17"
+    },
+    {
+      "bytes": 15562,
+      "path": "elliptic-curves/cas/run_fermigier_rank20_pari_descent.py",
+      "sha256": "ac7759f2dc16816251c791b60df7e4e6e41473656660c7e253141d576f536f5a"
+    },
+    {
+      "bytes": 14648,
+      "path": "elliptic-curves/cas/search_extra_points.py",
+      "sha256": "8719a8868f60a055ecfc2c68e95b253386a0f5e856c2686749bd8d8e1f83775e"
+    },
+    {
+      "bytes": 2858,
+      "path": "elliptic-curves/cas/verify_compact_r17_new26_followup.py",
+      "sha256": "2784eefed70dcdda55457aadd5da5b4b0eca16a7922a265188a1fe949119b9d5"
+    },
+    {
+      "bytes": 14716,
+      "path": "elliptic-curves/cas/verify_icarm_curve394_rank21.py",
+      "sha256": "3868a6e6b5fa6134949d92a4f1aaa526cd42f50335109f02aefab58bb52968b0"
+    },
+    {
+      "bytes": 25600,
+      "path": "elliptic-curves/ecsearch/q12o5867_specialization.py",
+      "sha256": "a9911a9fd0a295f9e399436006d6d1f7bcd204778b577a4fead5def04df5dfa7"
+    },
+    {
+      "bytes": 6688,
+      "path": "elliptic-curves/notes/NEW_RANK26_FOLLOWUP_2026-09-05.md",
+      "sha256": "eda5930281fbdb795f689c1a1da491dffeece73b78c988caed762b781a86ee48"
+    },
+    {
+      "bytes": 1883,
+      "path": "elliptic-curves/tests/test_pointed_orbit_compression.py",
+      "sha256": "225db85eacc7956ab0f37bedbdc4dbc75f1cacabe8dd6706074cc039edf08247"
+    }
+  ],
+  "planned_charts": 301,
+  "rank_lower_bound": 26,
+  "schema": "elliptic-curves.new-rank26-followup-evidence.v1",
+  "supervision_outcome": "completed"
+}

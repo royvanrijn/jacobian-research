@@ -1,0 +1,328 @@
+{
+  "argument": "A primitive pair cannot have n=d=0 modulo any prime. Every retained rational point must pass the square condition at every prime. If a denominator row has no such numerator residue, it contains no primitive rational point. For r in[0,p), replacing (r+64)modp by r+(64modp) and one conditional subtraction is exact.",
+  "claim_boundary": "No production migration or new mathematical rank claim. Exhaustive Python enumeration on48 fixed quartics and two denominator intervals, then full-hit agreement against the original frozen worker on three real control charts. Both code versions, compiler output, raw transcripts and timeouts remain. Full-box execution still trusts the pinned worker.",
+  "protocol_sha256": "195b7947c5c5cf461634924e4cf7afdd2571dddf044f79e116017636a42dd240",
+  "real_charts": [
+    {
+      "index": 0,
+      "results": {
+        "v1": {
+          "all_prime_survivors": 26857,
+          "completed_denominator": 100000,
+          "exact_tests": 16297,
+          "hits": [
+            [
+              14247,
+              1391,
+              140891063675691481996001
+            ]
+          ],
+          "primes": [
+            61,
+            109,
+            71,
+            127,
+            101,
+            149,
+            151,
+            97,
+            139,
+            137,
+            131,
+            113,
+            107,
+            83,
+            89,
+            79,
+            103,
+            73,
+            53,
+            67,
+            59,
+            47,
+            23,
+            37,
+            29,
+            19
+          ],
+          "seconds": 5.2529,
+          "word_survivors": 143645422
+        },
+        "v2": {
+          "all_prime_survivors": 21760,
+          "completed_denominator": 100000,
+          "exact_tests": 16297,
+          "hits": [
+            [
+              14247,
+              1391,
+              140891063675691481996001
+            ]
+          ],
+          "primes": [
+            61,
+            109,
+            71,
+            127,
+            101,
+            149,
+            151,
+            97,
+            139,
+            137,
+            131,
+            113,
+            107,
+            83,
+            79,
+            89,
+            103,
+            73,
+            53,
+            67,
+            59,
+            47,
+            23,
+            37,
+            19,
+            29,
+            3,
+            5,
+            7,
+            11,
+            13,
+            17,
+            31,
+            41,
+            43
+          ],
+          "seconds": 6.3082,
+          "word_survivors": 137377298
+        }
+      },
+      "speedup": 0.8327098062838845
+    },
+    {
+      "index": 12,
+      "results": {
+        "v1": {
+          "all_prime_survivors": 15360,
+          "completed_denominator": 100000,
+          "exact_tests": 9001,
+          "hits": [
+            [
+              -574,
+              253,
+              217565997621881368614
+            ],
+            [
+              -1017,
+              406,
+              135967560765594450313
+            ]
+          ],
+          "primes": [
+            43,
+            109,
+            71,
+            127,
+            149,
+            101,
+            151,
+            97,
+            13,
+            139,
+            137,
+            131,
+            113,
+            83,
+            89,
+            79,
+            59,
+            103,
+            107,
+            53,
+            67,
+            73,
+            47,
+            37,
+            29,
+            23,
+            19
+          ],
+          "seconds": 5.22278,
+          "word_survivors": 143619923
+        },
+        "v2": {
+          "all_prime_survivors": 12037,
+          "completed_denominator": 100000,
+          "exact_tests": 9001,
+          "hits": [
+            [
+              -574,
+              253,
+              217565997621881368614
+            ],
+            [
+              -1017,
+              406,
+              135967560765594450313
+            ]
+          ],
+          "primes": [
+            43,
+            109,
+            71,
+            127,
+            149,
+            101,
+            151,
+            97,
+            13,
+            139,
+            137,
+            131,
+            113,
+            83,
+            59,
+            79,
+            89,
+            103,
+            53,
+            107,
+            67,
+            73,
+            47,
+            37,
+            23,
+            29,
+            19,
+            3,
+            5,
+            7,
+            11,
+            17,
+            31,
+            41,
+            61
+          ],
+          "seconds": 6.09018,
+          "word_survivors": 128561794
+        }
+      },
+      "speedup": 0.8575739961708849
+    },
+    {
+      "index": 48,
+      "results": {
+        "v1": {
+          "all_prime_survivors": 9970,
+          "completed_denominator": 100000,
+          "exact_tests": 3279,
+          "hits": [
+            [
+              -25,
+              2,
+              291513563025283923
+            ]
+          ],
+          "primes": [
+            109,
+            43,
+            71,
+            127,
+            31,
+            101,
+            149,
+            151,
+            97,
+            13,
+            131,
+            139,
+            137,
+            83,
+            113,
+            89,
+            79,
+            59,
+            103,
+            73,
+            107,
+            53,
+            67,
+            37,
+            47,
+            23,
+            29,
+            19,
+            3
+          ],
+          "seconds": 5.05676,
+          "word_survivors": 138947270
+        },
+        "v2": {
+          "all_prime_survivors": 5345,
+          "completed_denominator": 100000,
+          "exact_tests": 3279,
+          "hits": [
+            [
+              -25,
+              2,
+              291513563025283923
+            ]
+          ],
+          "primes": [
+            109,
+            43,
+            71,
+            31,
+            127,
+            101,
+            149,
+            151,
+            13,
+            97,
+            131,
+            139,
+            137,
+            83,
+            113,
+            59,
+            79,
+            89,
+            103,
+            73,
+            53,
+            107,
+            67,
+            37,
+            47,
+            23,
+            3,
+            19,
+            29,
+            5,
+            7,
+            11,
+            17,
+            41,
+            61
+          ],
+          "seconds": 3.62159,
+          "word_survivors": 83065236
+        }
+      },
+      "speedup": 1.3962817436540305
+    }
+  ],
+  "result_sha256": "a34d586d81cec5e466a838091cc1afe21accdcd060305fff1b2b53bc296eda4a",
+  "schema": "elliptic-curves.pointed-sieve-v2-benchmark.v1",
+  "sources": {
+    "artifacts/local/elliptic-curves/native11952-pari49-control-v1/candidate-00/result.json": "1a780424d4adf4ab2e9e7ff3d7781438ac1f136ef4c45acca32f9980dd8b3069",
+    "elliptic-curves/cas/benchmark_pointed_sieve_v2.py": "8cbc34a0c6fa9cb1d73f105364ccf333d36b039d15cb186ff22acd40297e6cb8",
+    "elliptic-curves/cas/pointed_quartic_sieve.cpp": "7a015c85e54e14f16848626b154236132e34c0e42315242959a0be59e2de97a4",
+    "elliptic-curves/cas/pointed_quartic_sieve_v2.cpp": "dc6918576f320ea5ce723aad430f1b708ffc5b2dc93f9076fca4ddae33e84920"
+  },
+  "status": "PASS",
+  "tests_checked": 96
+}

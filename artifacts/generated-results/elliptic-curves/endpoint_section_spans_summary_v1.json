@@ -1,0 +1,164 @@
+{
+  "claim_boundary": "Ranks are exact for the rational spans of the transported generic sections, using independently certified subsets and exact integer group relations for every section value. Indices concern two known subgroups after quotienting torsion, and do not saturate the full Mordell-Weil group. All five proper indices are odd, so the inclusion of free lattices induces an isomorphism modulo two. This does not prove whole-curve rank, exclude exceptional directions, produce a new near-record curve or change the frozen endpoint point trial.",
+  "nonsingular_endpoints": 21,
+  "proper_known_section_indices": 5,
+  "rows": [
+    {
+      "endpoint": "zero",
+      "family": "103b2",
+      "known_section_index": 1,
+      "original_generic_section_count": 17,
+      "specialized_generic_section_span_rank": 16
+    },
+    {
+      "endpoint": "infinity",
+      "family": "103b2",
+      "known_section_index": 5,
+      "original_generic_section_count": 17,
+      "specialized_generic_section_span_rank": 11
+    },
+    {
+      "endpoint": "zero",
+      "family": "11952",
+      "known_section_index": 1,
+      "original_generic_section_count": 17,
+      "specialized_generic_section_span_rank": 14
+    },
+    {
+      "endpoint": "infinity",
+      "family": "11952",
+      "known_section_index": 1,
+      "original_generic_section_count": 17,
+      "specialized_generic_section_span_rank": 15
+    },
+    {
+      "endpoint": "zero",
+      "family": "074d9",
+      "known_section_index": 3,
+      "original_generic_section_count": 17,
+      "specialized_generic_section_span_rank": 15
+    },
+    {
+      "endpoint": "infinity",
+      "family": "074d9",
+      "known_section_index": 1,
+      "original_generic_section_count": 17,
+      "specialized_generic_section_span_rank": 15
+    },
+    {
+      "endpoint": "zero",
+      "family": "07ca9",
+      "known_section_index": 1,
+      "original_generic_section_count": 17,
+      "specialized_generic_section_span_rank": 14
+    },
+    {
+      "endpoint": "infinity",
+      "family": "07ca9",
+      "known_section_index": 5,
+      "original_generic_section_count": 17,
+      "specialized_generic_section_span_rank": 13
+    },
+    {
+      "endpoint": "zero",
+      "family": "08234",
+      "known_section_index": 1,
+      "original_generic_section_count": 17,
+      "specialized_generic_section_span_rank": 17
+    },
+    {
+      "endpoint": "infinity",
+      "family": "08234",
+      "known_section_index": 5,
+      "original_generic_section_count": 17,
+      "specialized_generic_section_span_rank": 12
+    },
+    {
+      "endpoint": "zero",
+      "family": "08f72",
+      "known_section_index": 1,
+      "original_generic_section_count": 17,
+      "specialized_generic_section_span_rank": 15
+    },
+    {
+      "endpoint": "infinity",
+      "family": "08f72",
+      "known_section_index": 3,
+      "original_generic_section_count": 17,
+      "specialized_generic_section_span_rank": 13
+    },
+    {
+      "endpoint": "zero",
+      "family": "a1-fibration-01",
+      "known_section_index": 1,
+      "original_generic_section_count": 16,
+      "specialized_generic_section_span_rank": 15
+    },
+    {
+      "endpoint": "infinity",
+      "family": "a1-fibration-01",
+      "known_section_index": 1,
+      "original_generic_section_count": 16,
+      "specialized_generic_section_span_rank": 14
+    },
+    {
+      "endpoint": "zero",
+      "family": "a1-fibration-02",
+      "known_section_index": 1,
+      "original_generic_section_count": 16,
+      "specialized_generic_section_span_rank": 13
+    },
+    {
+      "endpoint": "infinity",
+      "family": "a1-fibration-02",
+      "known_section_index": 1,
+      "original_generic_section_count": 16,
+      "specialized_generic_section_span_rank": 15
+    },
+    {
+      "endpoint": "zero",
+      "family": "a1-fibration-03",
+      "known_section_index": 1,
+      "original_generic_section_count": 16,
+      "specialized_generic_section_span_rank": 16
+    },
+    {
+      "endpoint": "zero",
+      "family": "a1-fibration-04",
+      "known_section_index": 1,
+      "original_generic_section_count": 16,
+      "specialized_generic_section_span_rank": 14
+    },
+    {
+      "endpoint": "infinity",
+      "family": "a1-fibration-04",
+      "known_section_index": 1,
+      "original_generic_section_count": 16,
+      "specialized_generic_section_span_rank": 12
+    },
+    {
+      "endpoint": "zero",
+      "family": "a1-fibration-05",
+      "known_section_index": 1,
+      "original_generic_section_count": 16,
+      "specialized_generic_section_span_rank": 13
+    },
+    {
+      "endpoint": "infinity",
+      "family": "a1-fibration-05",
+      "known_section_index": 1,
+      "original_generic_section_count": 16,
+      "specialized_generic_section_span_rank": 14
+    }
+  ],
+  "schema": "elliptic-curves.endpoint-section-spans-summary.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/endpoint_section_lattice_indices_v1.json": "6efb7476eb5b27882b6f248eb5f9be6106f30a720708863031dd24268d4bf408",
+    "artifacts/generated-results/elliptic-curves/endpoint_section_relations_v1.json": "ef1630e53cd72f75ed8df9ab6289e7f56ed17f5c7d9f4ae3cf2e17753a07c622",
+    "elliptic-curves/cas/certify_endpoint_section_relations.py": "0dd4edceb68dcd6b8e24a94d58c9c4f663a14b8415a6d72b9d831e7c67e96173",
+    "elliptic-curves/cas/report_endpoint_section_spans.py": "1771ccfd8f05fbaf02451a1f41efc22c1f11e66780f4435540b02d22ca899091",
+    "elliptic-curves/cas/verify_endpoint_section_lattice_indices.py": "1147e02776490691b8dcc1aa3e4258d27c0c2e5b4503f286f463f2c213a05b5f"
+  },
+  "status": "PASS",
+  "strict_specialization_rank_losses": 19
+}

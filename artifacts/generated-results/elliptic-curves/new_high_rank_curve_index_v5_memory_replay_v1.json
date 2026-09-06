@@ -1,0 +1,264 @@
+{
+  "claim_boundary": "Same original V5 extraction, source bindings, independent finite point certificates, catalogue exclusion and distinctness checks, with explicit MemoryFactStore for ephemeral exact finite computations. Earlier frozen exporters and their outcomes remain unchanged.",
+  "csv_checked": true,
+  "curves_checked": 62,
+  "rank_lower_bounds": [
+    {
+      "id": "new-20260906-40",
+      "rank_lower_bound": 27
+    },
+    {
+      "id": "new-20260906-41",
+      "rank_lower_bound": 27
+    },
+    {
+      "id": "new-20260906-48",
+      "rank_lower_bound": 27
+    },
+    {
+      "id": "new-20260906-42",
+      "rank_lower_bound": 26
+    },
+    {
+      "id": "new-20260905-37",
+      "rank_lower_bound": 26
+    },
+    {
+      "id": "new-20260906-49",
+      "rank_lower_bound": 26
+    },
+    {
+      "id": "new-20260906-50",
+      "rank_lower_bound": 26
+    },
+    {
+      "id": "new-20260905-38",
+      "rank_lower_bound": 25
+    },
+    {
+      "id": "new-20260906-51",
+      "rank_lower_bound": 25
+    },
+    {
+      "id": "new-20260905-39",
+      "rank_lower_bound": 25
+    },
+    {
+      "id": "new-20260905-01",
+      "rank_lower_bound": 25
+    },
+    {
+      "id": "new-20260906-52",
+      "rank_lower_bound": 25
+    },
+    {
+      "id": "new-20260906-43",
+      "rank_lower_bound": 25
+    },
+    {
+      "id": "new-20260906-53",
+      "rank_lower_bound": 25
+    },
+    {
+      "id": "new-20260906-54",
+      "rank_lower_bound": 25
+    },
+    {
+      "id": "new-20260906-44",
+      "rank_lower_bound": 25
+    },
+    {
+      "id": "new-20260905-02",
+      "rank_lower_bound": 25
+    },
+    {
+      "id": "new-20260905-03",
+      "rank_lower_bound": 25
+    },
+    {
+      "id": "new-20260906-55",
+      "rank_lower_bound": 24
+    },
+    {
+      "id": "new-20260906-56",
+      "rank_lower_bound": 24
+    },
+    {
+      "id": "new-20260905-04",
+      "rank_lower_bound": 24
+    },
+    {
+      "id": "new-20260906-45",
+      "rank_lower_bound": 24
+    },
+    {
+      "id": "new-20260906-46",
+      "rank_lower_bound": 24
+    },
+    {
+      "id": "new-20260906-57",
+      "rank_lower_bound": 24
+    },
+    {
+      "id": "new-20260905-05",
+      "rank_lower_bound": 24
+    },
+    {
+      "id": "new-20260905-33",
+      "rank_lower_bound": 24
+    },
+    {
+      "id": "new-20260905-06",
+      "rank_lower_bound": 24
+    },
+    {
+      "id": "new-20260905-07",
+      "rank_lower_bound": 24
+    },
+    {
+      "id": "new-20260905-08",
+      "rank_lower_bound": 24
+    },
+    {
+      "id": "new-20260905-09",
+      "rank_lower_bound": 24
+    },
+    {
+      "id": "new-20260905-10",
+      "rank_lower_bound": 24
+    },
+    {
+      "id": "new-20260905-11",
+      "rank_lower_bound": 23
+    },
+    {
+      "id": "new-20260906-58",
+      "rank_lower_bound": 23
+    },
+    {
+      "id": "new-20260905-12",
+      "rank_lower_bound": 23
+    },
+    {
+      "id": "new-20260906-59",
+      "rank_lower_bound": 23
+    },
+    {
+      "id": "new-20260906-60",
+      "rank_lower_bound": 23
+    },
+    {
+      "id": "new-20260905-13",
+      "rank_lower_bound": 23
+    },
+    {
+      "id": "new-20260905-34",
+      "rank_lower_bound": 23
+    },
+    {
+      "id": "new-20260905-14",
+      "rank_lower_bound": 23
+    },
+    {
+      "id": "new-20260905-15",
+      "rank_lower_bound": 23
+    },
+    {
+      "id": "new-20260905-16",
+      "rank_lower_bound": 23
+    },
+    {
+      "id": "new-20260905-17",
+      "rank_lower_bound": 23
+    },
+    {
+      "id": "new-20260905-18",
+      "rank_lower_bound": 23
+    },
+    {
+      "id": "new-20260905-19",
+      "rank_lower_bound": 23
+    },
+    {
+      "id": "new-20260905-20",
+      "rank_lower_bound": 23
+    },
+    {
+      "id": "new-20260905-21",
+      "rank_lower_bound": 22
+    },
+    {
+      "id": "new-20260906-61",
+      "rank_lower_bound": 22
+    },
+    {
+      "id": "new-20260906-62",
+      "rank_lower_bound": 22
+    },
+    {
+      "id": "new-20260906-47",
+      "rank_lower_bound": 22
+    },
+    {
+      "id": "new-20260905-22",
+      "rank_lower_bound": 22
+    },
+    {
+      "id": "new-20260905-23",
+      "rank_lower_bound": 22
+    },
+    {
+      "id": "new-20260905-24",
+      "rank_lower_bound": 22
+    },
+    {
+      "id": "new-20260905-25",
+      "rank_lower_bound": 22
+    },
+    {
+      "id": "new-20260905-26",
+      "rank_lower_bound": 22
+    },
+    {
+      "id": "new-20260905-27",
+      "rank_lower_bound": 22
+    },
+    {
+      "id": "new-20260905-35",
+      "rank_lower_bound": 22
+    },
+    {
+      "id": "new-20260905-36",
+      "rank_lower_bound": 22
+    },
+    {
+      "id": "new-20260905-28",
+      "rank_lower_bound": 22
+    },
+    {
+      "id": "new-20260905-29",
+      "rank_lower_bound": 22
+    },
+    {
+      "id": "new-20260905-30",
+      "rank_lower_bound": 22
+    },
+    {
+      "id": "new-20260905-31",
+      "rank_lower_bound": 22
+    },
+    {
+      "id": "new-20260905-32",
+      "rank_lower_bound": 22
+    }
+  ],
+  "schema": "elliptic-curves.inventory-v5-memory-replay.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v5.csv": "8771700c791208c7033613cf9d02d65b35df9b49689025224fb135b12a6a4648",
+    "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v5.json": "0d0a36d8e67437055d2d15effbae5dec88239bf6c649e769843eed06e3b69085",
+    "elliptic-curves/cas/export_new_high_rank_curve_index_v5.py": "177c754baef83277fa46f683eb8b19029afa64e87af49263e93a879efdc61a06",
+    "elliptic-curves/cas/memory_rank_certificate.py": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6",
+    "elliptic-curves/cas/replay_inventory_v5_memory.py": "dc875ef6b5db23317dd14f27411d13803fefc65c57d361cb0c3deb7a55f3a2a4"
+  },
+  "status": "PASS"
+}

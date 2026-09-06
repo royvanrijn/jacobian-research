@@ -1,0 +1,29 @@
+{
+  "adaptive_attempted_charts": 18,
+  "adaptive_completed_boxes": 18,
+  "adaptive_declared_charts": 49,
+  "claim_boundary": "Recorded completed box coverage trusts the pinned PARI executions. Every attempted adaptive history replays; a target stop can leave part of the49-chart roster unsearched. Full retained-cloud finite quotient certificates are lower bounds only; no exact rank, saturation or point-absence conclusion.",
+  "cloud_verification_ledger_sha256": "62c4a958f2fd3fb31cc00db46811b93c91f5108b9bdb02b03321a94456322f93",
+  "height": 125000,
+  "initial_charts": 49,
+  "mod2_lower_bound": 29,
+  "odd_modulus_lower_bounds": {
+    "3": 29,
+    "5": 29
+  },
+  "point_certificates": {
+    "artifacts/generated-results/elliptic-curves/native28_specialized_parity_all_retained_mod2_v1.json": "4a62b75b6724a9f0e62d546b416aff41a31918ee33d229c1f548574a12850d46",
+    "artifacts/generated-results/elliptic-curves/native28_specialized_parity_all_retained_modl_v1.json": "209e9357ca20f09f962a48968f8e32321d36f9960344ed0dc25c864323fdffda"
+  },
+  "retained_point_count": 73,
+  "schema": "elliptic-curves.native28-specialized-parity-coverage.v1",
+  "sources": {
+    "artifacts/local/elliptic-curves/native11952-height125-control-v1/125000/result.json": "8f3b7be7f1e851d1cf05c7be6aa1e905d7237f62d29b8ba051fb69041ab7bde6",
+    "artifacts/local/elliptic-curves/native28-specialized-parity-control-v1/maps.json": "184f12cd029e96c21741a508636adedfdcabdfe51e937df765f02d81d0e4a2b0",
+    "artifacts/local/elliptic-curves/native28-specialized-parity-control-v1/protocol.json": "9f7ddb3b2d0a9e2979b47466c087ffa11b0d9f258c2cedeebd38db0818cb6574",
+    "artifacts/local/elliptic-curves/native28-specialized-parity-control-v1/replay.supervisor.json": "d59a055b33a9f799e4bf1c88b5eccf4ccf763f05c95d02f4bc7d6c87563383f5",
+    "artifacts/local/elliptic-curves/native28-specialized-parity-control-v1/result.json": "280a24c3b0beb8015c758c9d2b4470650ec31f39ae8afba0bc4b52b5a7474d33",
+    "artifacts/local/elliptic-curves/native28-specialized-parity-control-v1/worker.supervisor.json": "b246f86922758d00c4715a26e0fbbafd134eda1079142ff5cc4cf08af07689a0",
+    "elliptic-curves/cas/audit_native28_specialized_parity.py": "f5ca55ad4cf60c6834f58fc965380bd9997538630d8e762b5768067996c8d09b"
+  }
+}

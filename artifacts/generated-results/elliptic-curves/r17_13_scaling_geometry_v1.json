@@ -1,0 +1,107 @@
+{
+  "claim_boundary": "For each displayed compact R17 binary pair and every primitive integer parameter pair,13^4|A_h and13^6|B_h hold exactly in the single stated projective residue cell. One and only one13 scaling is removable there; no primitive pair admits13^8|A_h and13^12|B_h. For nonsingular fibres these are exact13-adic minimality statements, and the reduced model remains bad at13. The determinant13 parameter changes and explicit x/13^2,y/13^3 homogeneous scaling preserve the Q(t) family and its generic17-point subgroup. This proves neither a new family, improved search population, global model minimality, conductor, whole-curve rank nor a new near-record curve.",
+  "maximum_modular_witness_depth": 3,
+  "projective_cells_checked": 84,
+  "rows": [
+    {
+      "family": "103b2",
+      "maximum_removable_13_exponent": 1,
+      "parameter_matrix": [
+        1,
+        0,
+        0,
+        13
+      ],
+      "scaled_models_still_bad_at13": true,
+      "signed_permutation_self_presentations": [],
+      "square_box_weighted_bound_ratio": "1677669306143095654194779116674690417418606394914657848025426146002092900677597940135136431849/10186451141733908885165331910989588771359327601500132288545534819915530940269702169",
+      "unique_nonminimal_residue_mod13": "infinity"
+    },
+    {
+      "family": "11952",
+      "maximum_removable_13_exponent": 1,
+      "parameter_matrix": [
+        1,
+        5,
+        -2,
+        3
+      ],
+      "scaled_models_still_bad_at13": true,
+      "signed_permutation_self_presentations": [],
+      "square_box_weighted_bound_ratio": "153085357547248774139263818341239288885950255520935072489362498581118135064472375/19055474016517117515782302497440347258637022842970037674252820008958198221809527",
+      "unique_nonminimal_residue_mod13": 6
+    },
+    {
+      "family": "074d9",
+      "maximum_removable_13_exponent": 1,
+      "parameter_matrix": [
+        3,
+        1,
+        -1,
+        4
+      ],
+      "scaled_models_still_bad_at13": true,
+      "signed_permutation_self_presentations": [],
+      "square_box_weighted_bound_ratio": "10365223198607841252664869200784151045698761860155178337506638901295459401094734096/10822343511957739850662873818070241128745899276951976378734072884540935800681359121",
+      "unique_nonminimal_residue_mod13": 10
+    },
+    {
+      "family": "07ca9",
+      "maximum_removable_13_exponent": 1,
+      "parameter_matrix": [
+        1,
+        0,
+        0,
+        13
+      ],
+      "scaled_models_still_bad_at13": true,
+      "signed_permutation_self_presentations": [],
+      "square_box_weighted_bound_ratio": "9951228849747554728806057456509347412125632017339383833270673198303931899224235630694815489/3509993894024600175562411734564251712065921066419587054379882828809157202674637809",
+      "unique_nonminimal_residue_mod13": "infinity"
+    },
+    {
+      "family": "08234",
+      "maximum_removable_13_exponent": 1,
+      "parameter_matrix": [
+        2,
+        -3,
+        1,
+        5
+      ],
+      "scaled_models_still_bad_at13": true,
+      "signed_permutation_self_presentations": [],
+      "square_box_weighted_bound_ratio": "33566741057415564438713809591984364049988254315098956490068006314809933048208307640149860829043600354761/168828611084108504413279354633107769620059831708717063740604257248436917441217275836923839125152849",
+      "unique_nonminimal_residue_mod13": 2
+    },
+    {
+      "family": "08f72",
+      "maximum_removable_13_exponent": 1,
+      "parameter_matrix": [
+        3,
+        2,
+        -2,
+        3
+      ],
+      "scaled_models_still_bad_at13": true,
+      "signed_permutation_self_presentations": [],
+      "square_box_weighted_bound_ratio": "10760344271454391844603532542125134128668898114775987996918959790865517976679782523609/694077223439800456031075200188782952676697834864874505458524434703311667496222375136",
+      "unique_nonminimal_residue_mod13": 5
+    }
+  ],
+  "schema": "elliptic-curves.r17-13-scaling-geometry.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_six_r17_atlas_v1.json": "2f28c081c874adfaf738c1119e8f4e6e7ce70ea74277cd8cdb370a02bca34c5d",
+    "artifacts/generated-results/elliptic-curves/r17_13_scaling_classification_v1.json": "a05c205adc61e7fd23416e0f08733e0b3bb6e070c5000e51a2363e1c658ce9fc",
+    "artifacts/generated-results/elliptic-curves/r17_integral13_parameter_charts_v1.json": "fde07490c442a100655fece815ebb0ae37ae6d08c6d31d1c2d4d9dbcb2ec4f1b",
+    "artifacts/local/elliptic-curves/r17-13-scaling-classification-v1/independent-residues.supervisor.json": "b0049e68b223bc5d0d5124e68e6e3d90feefbb4d3150eb5b0e5eba2ddbf1ad24",
+    "artifacts/local/elliptic-curves/r17-13-scaling-classification-v1/protocol.json": "ed038b3cc590c84057d540e5e9c9a9d8ff1eededb539fc98ad50a279cd505f0f",
+    "artifacts/local/elliptic-curves/r17-13-scaling-classification-v1/symbolic.supervisor.json": "10c55a09029f54064811d279b733ea8c808873d942fe1c82dc147e7ada14b2a0",
+    "elliptic-curves/cas/audit_r17_integral13_charts.py": "3b4a9d517ebae49aa2b0fe05662d793fb5b24f7eebc4527f1fce74e45797552c",
+    "elliptic-curves/cas/classify_r17_13_scaling.py": "b3635664f94204b4a4073dade522c5246bfe31b14181c9e6e9c5f219f78a1376",
+    "elliptic-curves/cas/report_r17_13_scaling_geometry.py": "5ebc3707771efd4dc7d234849a4ed25239d1332717180a9d4dbf73b6f0edf2fc",
+    "elliptic-curves/cas/verify_r17_13_scaling_classification.py": "4ce6abe9cf523dd02c4f67f7bd429b850a11fabaefb1821d488acb9de9c538cd",
+    "elliptic-curves/cas/verify_r17_integral13_charts.sage": "808bce69653332789c0d90140fd2aad902dd7876aa1b7902f247b4800bc4dd34"
+  },
+  "status": "PASS",
+  "universal_integral_charts": 6
+}

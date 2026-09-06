@@ -1,0 +1,2125 @@
+{
+  "charts_replayed": 301,
+  "claim_boundary": "Exact retained maps, point admissions and contiguous interval union. Completeness relies on the pinned sieve executions, not a second sieve enumeration. Even an exhausted finite box supplies no upper rank bound.",
+  "complete_combined_boxes": 301,
+  "coverage": [
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 1
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 2
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 3
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 4
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 5
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 6
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 7
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 8
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 10
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 11
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 12
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 13
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 14
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 15
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 16
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 17
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 18
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 19
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 20
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 21
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 22
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 23
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 24
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 26
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 27
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 28
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 29
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 30
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 32
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 33
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 34
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 35
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 36
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 37
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 38
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 39
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 40
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 41
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 43
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 44
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 46
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 47
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 48
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 49
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 50
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 51
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 52
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 54
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 55
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 56
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 57
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 58
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 60
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 62
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 63
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 65
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 67
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 68
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 70
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 71
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 72
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 73
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 74
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 75
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 76
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 77
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 78
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 79
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 80
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 81
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 83
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 84
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 85
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 86
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 88
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 89
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 90
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 91
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 92
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 93
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 94
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 95
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 96
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 97
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 98
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 100
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 102
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 103
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 104
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 105
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 107
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 108
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 109
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 110
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 111
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 112
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 113
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 114
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 115
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 117
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 118
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 119
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 120
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 121
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 122
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 123
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 124
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 125
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 126
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 127
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 128
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 129
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 130
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 131
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 132
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 134
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 135
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 137
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 138
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 139
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 140
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 141
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 142
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 143
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 144
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 145
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 146
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 147
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 149
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 150
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 151
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 152
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 153
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 154
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 155
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 156
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 157
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 158
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 159
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 160
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 161
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 162
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 163
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 164
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 166
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 167
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 168
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 169
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 170
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 171
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 172
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 173
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 174
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 175
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 176
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 178
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 179
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 181
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 1
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 183
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 184
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 185
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 186
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 187
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 188
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 189
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 190
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 192
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 193
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 195
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 196
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 197
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 198
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 199
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 0
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 201
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 202
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 203
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 204
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 205
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 206
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 207
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 208
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 209
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 210
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 211
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 212
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 213
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 214
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 215
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 216
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 217
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 218
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 219
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 220
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 221
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 222
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 223
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 224
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 225
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 226
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 227
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 228
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 229
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 230
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 231
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 232
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 233
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 234
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 235
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 236
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 237
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 238
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 239
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 240
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 241
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 242
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 243
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 244
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 245
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 246
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 247
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 248
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 249
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 250
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 251
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 252
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 253
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 254
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 255
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 256
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 257
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 258
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 259
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 260
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 261
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 262
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 263
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 264
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 265
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 266
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 267
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 268
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 269
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 270
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 271
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 272
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 273
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 274
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 275
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 276
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 277
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 278
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 279
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 280
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 281
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 282
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 283
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 284
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 285
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 286
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 287
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 288
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 289
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 290
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 291
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 292
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 293
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 294
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 295
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 296
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 297
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 298
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 299
+    },
+    {
+      "combined_box_complete": true,
+      "completed_denominator": 100000,
+      "height": 100000,
+      "integer_pairs_covered": 20000100000,
+      "parent_chart": 300
+    }
+  ],
+  "input_path": "artifacts/local/elliptic-curves/new-rank26-fixed-tails-v1/candidate-00/result.json",
+  "input_sha256": "466abe493616bf96bbc7bf9308dbbc96b51534fd8a0e2c27f966b6d31191e947",
+  "parent_input_sha256": "316e48773bed55bf4c52cd9bea4c4a9c2db9bb6823020dbed52c870b63a16d97",
+  "planned_tails": 301,
+  "rank_lower_bound": 26,
+  "schema": "elliptic-curves.new-rank26-combined-box-coverage.v1",
+  "sources": {
+    "elliptic-curves/cas/replay_new_rank26_tails.py": "c0ba2ff6fd2600d3a0b04347a874ef0046bb65c6aee3c7beed1a2a51d49dea20",
+    "elliptic-curves/cas/search_new_rank26_tails.py": "cc2a0ca99d896c431134e5642642484293ab037c6a05dd470493c50c9b61c237"
+  },
+  "status": "PASS"
+}

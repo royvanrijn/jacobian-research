@@ -1,0 +1,75 @@
+{
+  "claim_boundary": "Full retained-point finite lower bounds on three previously certified new27 curves after a fixed141-map height increase. No exact rank, saturation, point absence or universal novelty.",
+  "height": 125000,
+  "protocol_sha256": "1255409dbb0de27f96379d825db764dc24e974e92f700dbff655e07be8c5ad1a",
+  "rows": [
+    {
+      "certificates": {
+        "artifacts/generated-results/elliptic-curves/new27_height125_paired_074d9_mod2_v1.json": "90514b17430b2afaeffc310f10cd64c9c284ff682c3801118dda1151d310e3f4",
+        "artifacts/generated-results/elliptic-curves/new27_height125_paired_074d9_modl_v1.json": "9413e695672789355c25e780bde0cab508604ab721b10b1179b0a31188848412"
+      },
+      "completed_boxes": 43,
+      "declared_charts": 43,
+      "id": "paired-074d9",
+      "mod2_lower_bound": 27,
+      "odd_modulus_lower_bounds": {
+        "3": 27,
+        "5": 27
+      },
+      "point_count": 1858,
+      "sources": {
+        "artifacts/generated-results/elliptic-curves/paired_rank27_all_retained_mod2_v1.json": "752df5fece02cb21f8abbff01e64eb90fad4a3007d667b31d29fd7ea5cca2c08",
+        "artifacts/local/elliptic-curves/new27-height125-followup-v1/ledger.json": "8560a7b35dc8dac5b8c0a68d0e6948e478cd6a5d36b1a17c7a569ef45dcf9638",
+        "artifacts/local/elliptic-curves/new27-height125-followup-v1/paired-074d9/result.json": "80e6a1ac868031ef67c69c808f8f2a068ddd333d0ed5d093737beacd16f83f7f",
+        "artifacts/local/elliptic-curves/new27-height125-followup-v1/protocol.json": "1255409dbb0de27f96379d825db764dc24e974e92f700dbff655e07be8c5ad1a",
+        "elliptic-curves/cas/audit_new27_height125_followup.py": "8926b0c92248aaaa07fce0c5370553a5284be202a927ea872dfa010cef1b9843"
+      }
+    },
+    {
+      "certificates": {
+        "artifacts/generated-results/elliptic-curves/new27_height125_paired_11952_mod2_v1.json": "4ecac8391234ce5f8da6826a2fb141dd2abb29e38f7a4fc73f1d164ffc26beb9",
+        "artifacts/generated-results/elliptic-curves/new27_height125_paired_11952_modl_v1.json": "b56306592d07788f7fc3e67d27a8184a7a4942f4329dba4800fca319e14f94a4"
+      },
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "id": "paired-11952",
+      "mod2_lower_bound": 27,
+      "odd_modulus_lower_bounds": {
+        "3": 27,
+        "5": 27
+      },
+      "point_count": 1815,
+      "sources": {
+        "artifacts/generated-results/elliptic-curves/paired_second27_all_retained_mod2_v1.json": "1951e66451def59800b51b4293d1671f44f427bb366a95b1379eb9004212b3b2",
+        "artifacts/local/elliptic-curves/new27-height125-followup-v1/ledger.json": "8560a7b35dc8dac5b8c0a68d0e6948e478cd6a5d36b1a17c7a569ef45dcf9638",
+        "artifacts/local/elliptic-curves/new27-height125-followup-v1/paired-11952/result.json": "b3671ee07b47386957ef14f25f53f37ec72ceb1b31f65e946a4f6ea25bd293e1",
+        "artifacts/local/elliptic-curves/new27-height125-followup-v1/protocol.json": "1255409dbb0de27f96379d825db764dc24e974e92f700dbff655e07be8c5ad1a",
+        "elliptic-curves/cas/audit_new27_height125_followup.py": "8926b0c92248aaaa07fce0c5370553a5284be202a927ea872dfa010cef1b9843"
+      }
+    },
+    {
+      "certificates": {
+        "artifacts/generated-results/elliptic-curves/new27_height125_next24_11952_mod2_v1.json": "80d3a0561b66f21406415df31cefcd54dfb93406879af37362206a37d52b0324",
+        "artifacts/generated-results/elliptic-curves/new27_height125_next24_11952_modl_v1.json": "64fa3acb50de8d78a5bd46646e5d18260572ef72423bc4746895a33700130116"
+      },
+      "completed_boxes": 49,
+      "declared_charts": 49,
+      "id": "next24-11952",
+      "mod2_lower_bound": 27,
+      "odd_modulus_lower_bounds": {
+        "3": 27,
+        "5": 27
+      },
+      "point_count": 940,
+      "sources": {
+        "artifacts/generated-results/elliptic-curves/next24_rank27_all_retained_mod2_v1.json": "9bd1219b0a36b4b8aca4301c48fae5ce95bc8ab2506f505f9d69c0dcb860a7ff",
+        "artifacts/local/elliptic-curves/new27-height125-followup-v1/ledger.json": "8560a7b35dc8dac5b8c0a68d0e6948e478cd6a5d36b1a17c7a569ef45dcf9638",
+        "artifacts/local/elliptic-curves/new27-height125-followup-v1/next24-11952/result.json": "634a632fcb07278f07917a9ece7405340de839acf9af0abbdb9133ee1c7d6f18",
+        "artifacts/local/elliptic-curves/new27-height125-followup-v1/protocol.json": "1255409dbb0de27f96379d825db764dc24e974e92f700dbff655e07be8c5ad1a",
+        "elliptic-curves/cas/audit_new27_height125_followup.py": "8926b0c92248aaaa07fce0c5370553a5284be202a927ea872dfa010cef1b9843"
+      }
+    }
+  ],
+  "schema": "elliptic-curves.new27-height125-followup-coverage.v1",
+  "status": "PASS"
+}

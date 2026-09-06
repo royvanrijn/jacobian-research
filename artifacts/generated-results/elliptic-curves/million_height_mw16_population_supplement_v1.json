@@ -1,0 +1,45 @@
+{
+  "archive": "artifacts/generated-results/elliptic-curves/million_height_mw16_population_supplement_v1.zip",
+  "archive_bytes": 21484,
+  "archive_sha256": "3d7382ca2c150fb043e3b0ab348e23412b3373fcaf15d685bf9215f4290e346e",
+  "base_manifest_sha256": "42471ce91d0c58b68b5108e5fac4e74e9d4979f80cddbef20df71c61256bd7e4",
+  "files": [
+    {
+      "bytes": 2312,
+      "path": "elliptic-curves/cas/package_million_mw16_population_supplement.py",
+      "sha256": "c81209abf5093aa06102508e8f7b40b308a33b37b16dfd86bc4e686e6c783a96"
+    },
+    {
+      "bytes": 5768,
+      "path": "elliptic-curves/cas/verify_million_height_mw16_bundle_v2.py",
+      "sha256": "7de10263b1f7badd7b931bedd9f8aa12651d3eff120ee0f374c612ff2f63b59c"
+    },
+    {
+      "bytes": 21177,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-01/population.json",
+      "sha256": "efeb766d8d3acb0fc6d249008e5d52db4bb44f6d8ab119b70b0da58fbb12aed0"
+    },
+    {
+      "bytes": 21237,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/population.json",
+      "sha256": "3f8581c2644334b6cd85e292ffac9fc8f3434a4ea7d37ae5795658e359fea9f4"
+    },
+    {
+      "bytes": 21209,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/population.json",
+      "sha256": "162348e9f3fb2693ad18128272d7da6a2fd532d01501b8d1b6da74557f6fe01f"
+    },
+    {
+      "bytes": 21227,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/population.json",
+      "sha256": "8dc221780dd84352f46a41fe25a2404356021210bdbd21169189564268798718"
+    },
+    {
+      "bytes": 21225,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-05/population.json",
+      "sha256": "8f44b74772102f2556ce806db7df29e10883795547e159d5200fee741a4a75f3"
+    }
+  ],
+  "reason": "The first isolated trace benchmark replay exposed five omitted population.json inputs. Their hashes had been pinned and checked locally, but the initial packager did not discover the implicit paths. Include the exact five original inputs and a version2 extractor. Original archive, failed replay and frozen arithmetic sources remain unchanged. No new search, trace, candidate selection or curve proof.",
+  "schema": "elliptic-curves.million-mw16-population-supplement.v1"
+}

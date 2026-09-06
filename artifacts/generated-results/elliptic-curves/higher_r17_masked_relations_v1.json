@@ -1,0 +1,3067 @@
+{
+  "claim_boundary": "At most first128 sign-distinct returned points per curve enter finite-quotient word proposals; exact rational group equality and a nonzero withheld coefficient certify recovery of the known direction. All other relations remain UNKNOWN. A changed16-point reference subgroup and six fixed curves do not calibrate exceptional-direction sensitivity or population rank incidence. No new curve rank, upper bound or saturation is claimed.",
+  "endpoint": "WITHHELD_KNOWN_DIRECTIONS_NOT_NEW_RANK",
+  "maximum_returned_points_per_curve": 128,
+  "moduli": [
+    3,
+    5,
+    7,
+    11
+  ],
+  "prime_bound": 997,
+  "rational_denominator_proposals": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "rows": [
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "direct_oracle_visibility": [
+        {
+          "chart": 0,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-296249637949735383741110722940392284",
+              "37625124314035226898899506403165"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 296249637949735383741110722940392284,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "464823308955633406239798100643260727967714974793346614885520824843389029777625700",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 0,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "4658638738956598698285869351",
+              "78738590301536946392430"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 4658638738956598698285869351,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "9380283184468619598211190502836326095238333099709324538134537370",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 1,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "1849485171125549103973565007806482929985015147",
+              "369592621101773869423812719684610644096861142"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 1849485171125549103973565007806482929985015147,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "58452820490857314749532412622218053122979195933786144964712792600691123047786662032099142739145488875938",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 1,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-34908564381700",
+              "10529587646031"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 34908564381700,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "5780186905186889513264254272236729806050",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 2,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "7134550438029621750198481227918490179652630746",
+              "487532961216620485342876095771468033365241983"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 7134550438029621750198481227918490179652630746,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "61062139853230494449881924410959332809242584319705138419355826187978145057781565166855049762841903623150",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 2,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "2635653902599281",
+              "89936592306728"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 2635653902599281,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "12546260245559407441570929007539311771003970",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 3,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "9142216737519507222763839786945787100597",
+              "4867830344964600912413917699434244959100"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 9142216737519507222763839786945787100597,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "396450630763563214779924364688126427776613549224755919567937812689523168739758550054095491350",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 3,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-239585802291723654",
+              "92855163482451661"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 239585802291723654,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "783108907879001007362944974649871124306136228374",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 4,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "1444624943",
+              "230811093"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 1444624943,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "2717477559483377432946461647650",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 4,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "1272999972165717966726042897306003211272394633244261",
+              "24402966213392369253040300361983243214699964197748"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 1272999972165717966726042897306003211272394633244261,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "6065780842634189023841464202103178555621495551870835072122285613974544524639720704553006660364008442619152990939866",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 5,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-637615164178604338776",
+              "30564063036551039827"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 637615164178604338776,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "2503298424384801880627006119275723644273814879571077175",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 5,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-6855995191589100401928264620776977465",
+              "1505792550852864351274835096177780503"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 6855995191589100401928264620776977465,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "126466211024602081959316956709599993947589769020829909233882823876704785704570213609506",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 6,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-713960108141475680155255",
+              "2305208042877944473304709"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 2305208042877944473304709,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "57723751334821619708916879938795711494183857244841532019771650",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 6,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-4759614754942118288559986604610",
+              "513198322164386511100277466286661"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 513198322164386511100277466286661,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "6048220991716641038472841984491368207102710314246467198190879938773832622045870",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 7,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-5872473516015551",
+              "2315146864353"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 5872473516015551,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "58625185933705221809267084586450840031650630",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 7,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-84021371011816512628049807393000722624858667",
+              "25825535318568234329305837906053061199820606"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 84021371011816512628049807393000722624858667,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "101745532218781951649782597864104833381603988207040652634167957529803917691335140004207855066223984550",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 8,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "945289529268980850433766739303454950218913",
+              "6158155156421183628074895375510493661987438"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 6158155156421183628074895375510493661987438,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "684436668226615406000066943917661443174132063631659552732250493484354751061731033109586802437215950",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 8,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "11101374645238",
+              "53839130503363"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 53839130503363,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "45672935648087061487046289040385998768050",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 9,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "176506342428852992106414639790186",
+              "30796151947017283950158967004263"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 176506342428852992106414639790186,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "171935945267687869122314352685584420413254354545854286533539495944831536707350",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 9,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-6080612871947782281777449",
+              "5056335045303989001594673"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 6080612871947782281777449,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "733498427322667770788161942468098953804622307286751016377635670",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 10,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "28929077990416466886578445903",
+              "29606435832677074619460536587"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 29606435832677074619460536587,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "34661102526383858647061683827052465776616551535745391860086490906745630",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 10,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "7782400279133914846728200494",
+              "980197362603905362761404719"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 7782400279133914846728200494,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "480189933405609788264450846173895359978367427127627819229831771070990",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 11,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-1375660662873831219147168565",
+              "196201817552027058805001527"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 1375660662873831219147168565,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "5368355139555365058477912902404838589914646177167807700965909084970",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 11,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-4215272521177736288400269814640",
+              "17838409615303535913540482152153"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 17838409615303535913540482152153,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "20987533167901817133588515099559937486361185132985451313995403999826824120650",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        }
+      ],
+      "family": "074d9",
+      "id": "074d9-010",
+      "parameter": "19133/898",
+      "points_considered_for_relations": 104,
+      "proposal_attempts": [
+        {
+          "last_prime": 461,
+          "modulus": 3,
+          "status": "FULL_FINITE_GENERIC_RANK"
+        }
+      ],
+      "recovery_status": "RECOVERED_KNOWN_DIRECTION",
+      "recovery_witness": {
+        "coefficients": [
+          "-1",
+          "-1",
+          "0",
+          "1",
+          "0",
+          "0",
+          "-1",
+          "1",
+          "1",
+          "1",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "exact_group_relation": true,
+        "point": [
+          "-2072685986468019525621801431/12",
+          "-6798274173326883824001260060948539982880"
+        ],
+        "returned_point_index": 0
+      },
+      "returned_points_up_to_sign": 104
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "direct_oracle_visibility": [
+        {
+          "chart": 0,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-3434418099121960281939965561484125373",
+              "1256192773941619140705323923126261349"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 3434418099121960281939965561484125373,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "858574166624013266291443318019256893314741043399178198171294778643616975897987446677776",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 0,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-473535597345484710728676962970",
+              "6916480813813354051918686443101"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 6916480813813354051918686443101,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "28238379393391692837116363761643732912097335100979389690853987489481999509908",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 1,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "5179102403766797277757057853331122221487369601064778582",
+              "3436248427205010165743819273627605299205574323302156315"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 5179102403766797277757057853331122221487369601064778582,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "2126973984644974808176025456479892326238347842769042642538840317948827999636591567546723096336967951890468288660085784433486",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 1,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "2636856989271",
+              "18594186607"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 2636856989271,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "1541451194910416958289158668604713685900",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 2,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "15183061968885860867418115517099406573068522727",
+              "11944686426911791543465347896501084343425399969"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 15183061968885860867418115517099406573068522727,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "91725452781686013822044803962254648817017723371874511725061657550264620236752395292644268945713385308085740",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 2,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "534948114243085461412",
+              "169112863615121020967"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 534948114243085461412,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "9011984713146258119471558151640889506959272948932375128",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 3,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "379093231138024463386073",
+              "61718769072318849048907"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 379093231138024463386073,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "5618872761452263552017622923812545138299947320526678941630812",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 3,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "355798294559302311494416569421402858346810221",
+              "5631308226366934107749094886350999162061998"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 355798294559302311494416569421402858346810221,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "3049956505034791028176398073054784185313304296716902941394222834436390141125679830940435706356392542820",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 4,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "60207959801219708473937283732",
+              "62610609868627287721839388547"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 62610609868627287721839388547,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "174816183443986457137477825068000638885418520013349033401739692970231636",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 4,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "130735906658321449143825501721480425357",
+              "58557146634705360326888434455599391515"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 130735906658321449143825501721480425357,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "2877372763855304452407701858626277916898200459604708377866202513002657608838167360502294166",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 5,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-1794215395038344178050318451195085983",
+              "1646603970074571564946342821020988440"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 1794215395038344178050318451195085983,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "1207642637265843444817973580442302082229491011954122570022108937380212236489597070986172",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 5,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-1494878166592161353186271457031",
+              "5583628471230282007154217467304"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 5583628471230282007154217467304,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "2864603192904173632243377808433862511491519793606003398526658898634282228500",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 6,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-9028067597862817521050814068186375650661155",
+              "5933815907555989039682768473314994983097667"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 9028067597862817521050814068186375650661155,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "10628708957362828746826451258495025629858385623590014357539184305471398222298787452981223083412372228",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 6,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-19586939931166637960619",
+              "177627624983836870206773"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 177627624983836870206773,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "8792692711938828889691267667473116793634265573126594821520750",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 7,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "260955230321365311714205396960",
+              "3384228661635116509242746507"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 260955230321365311714205396960,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "724611454168736808845972903722549762040995725093276911751665991502634076",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 7,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-121056357828530345715335643105880726782",
+              "986773649474955264012139837857901447"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 121056357828530345715335643105880726782,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "21681632289833213880829186742513922926529878584793645818165970130154691785483028481434414",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 8,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "225186736348268716578968027471296600308296127308527",
+              "541605240335144306061150678662179749680673690190"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 225186736348268716578968027471296600308296127308527,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "428525452850018139057552397766024483638629404427099027947341240783134851919174031424846948064050195731165129378836",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 8,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-316470054424557013",
+              "33863991051367727"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 316470054424557013,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "5609357091047284242655759462393183506138763235352",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 9,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "4898919870843421971971",
+              "1896703840626726817215"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 4898919870843421971971,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "2587485469125137260763992032919897893280255734655785121764",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 9,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-1160621071078833029998654070913618078003703676",
+              "220090155065539721722018943692621329438133751"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 1160621071078833029998654070913618078003703676,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "180744475001872212085366086286755839133726489501493516041705986317489615839957806663177763611042757991500",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 10,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "358212112490651207774",
+              "17982884505428974437961"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 17982884505428974437961,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "107646785605080790027232547320489819250608354417916105864228",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 10,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "959498595788221465830564014413865640912691406",
+              "992585381139312429108870281565736382173449445"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 992585381139312429108870281565736382173449445,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "103843600263756255873377492220821690135814468654907216281279790411936141660364845232796478515993315154068",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 11,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "365679578164331037765715593766",
+              "434985866189762098317976195175"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 434985866189762098317976195175,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "45834616384832266495319375367052457873258034727321088270825705453892679524",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 11,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "4256197624348564807108546080224102653",
+              "2720380330051954173623818111320611085"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 4256197624348564807108546080224102653,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "1549592134290812326505490966886379309087205558371151183755975863128491571009038102600769",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        }
+      ],
+      "family": "07ca9",
+      "id": "07ca9-001",
+      "parameter": "-16565/12474",
+      "points_considered_for_relations": 101,
+      "proposal_attempts": [
+        {
+          "last_prime": 383,
+          "modulus": 3,
+          "status": "FULL_FINITE_GENERIC_RANK"
+        }
+      ],
+      "recovery_status": "RECOVERED_KNOWN_DIRECTION",
+      "recovery_witness": {
+        "coefficients": [
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "-1"
+        ],
+        "exact_group_relation": true,
+        "point": [
+          "427485326675308286607565668235/36",
+          "47578831706123215354066609891005639000040360/27"
+        ],
+        "returned_point_index": 4
+      },
+      "returned_points_up_to_sign": 101
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "direct_oracle_visibility": [
+        {
+          "chart": 0,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "9571816631225486591278302376847329631246040665",
+              "1846139199230016765899274723357652451868879711"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 9571816631225486591278302376847329631246040665,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "4127567198680796775211748528334736436426681960550418915425134848946326811063780470929065580160408040764549",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 0,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-60363421443063572978121923",
+              "97002799945906292080278551"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 97002799945906292080278551,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "5795267725443283964311498225782961050678197298985721908690822256231",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 1,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "79447603177763504897",
+              "418258075232"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 79447603177763504897,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "60150788215749933113969009351959789507560068221",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 1,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "101495273341765695902152553501958822567763489281048486040325",
+              "5533307998944946338744712010927958285641977843683804"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 101495273341765695902152553501958822567763489281048486040325,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "268016551329640529542209093553273769228451505989088657874820682183845195517470709157092471782189920420789587420548921255669119",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 2,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "243274580305025521808075129769142855423714",
+              "202869641434312280479060730968371676357597"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 243274580305025521808075129769142855423714,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "39982354675916730297701019694264793296726647070730933834640462686753276759865372662288730642911091",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 2,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "429208578316020124522159589486",
+              "1371714263263921062016138750949"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 1371714263263921062016138750949,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "877499598929110726920247185880801683572043374498735119722430877643340888125",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 3,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "388666830227892143346449652031087713",
+              "56873602637316899684519786139450691"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 388666830227892143346449652031087713,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "26568222793754788087963334939373627395259313215480432985114973447870084748000097187530",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 3,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "470017776344913943055584110499101245",
+              "82324975642902594375212227685569019"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 470017776344913943055584110499101245,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "47580445726161628867071487502772874987519253240776073619051608101217351162456669755166",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 4,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "122505846352982328193",
+              "301222457118165880255"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 301222457118165880255,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "71792452553766555939082872300716907223418447094266669881",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 4,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-3114281196367823693935515248582662351208739811181",
+              "38384088097464937577086281705019654742338332065"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 3114281196367823693935515248582662351208739811181,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "5369949844618337440249434564447568616440215192640481909340174599227462485196575005634916229931724563202461841",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 5,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "7445850341258447709267",
+              "11798531707340949953396"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 11798531707340949953396,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "15404614603724676706006697631562022912223308242650267183647",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 5,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-4089723158122361404887415280699773160695871916509",
+              "1891395715426059867223746279249075479572079550160"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 4089723158122361404887415280699773160695871916509,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "1122940960207995799446309285398740931670972809954196699635681707464065080582999528892884745641317765951004629625",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 6,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-1734722295467319279703355878488466",
+              "611018702868604855672378230062409"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 1734722295467319279703355878488466,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "342636594433542518569524049085301628066502606010995499005907237688377463470489646",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 6,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "580294416999140574571450731360033258",
+              "169474811796895327796120780852625701"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 580294416999140574571450731360033258,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "36200721320415894128670706871645196923386637684567854964572378814853387881869284717142",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 7,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "155989681069880518591",
+              "331290189162593486081"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 331290189162593486081,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "67761830560802251832434187467700284733644399286166192066",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 7,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "26634585274392925564883572215099013950269927369",
+              "144207751636991738127719365629841819182499095895"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 144207751636991738127719365629841819182499095895,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "11627465134375837736930667365995821034085969157533806969988314803022867141461825373389221411301719612921405682",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 8,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "139662168952249214539951169832502555907735",
+              "14089950107265800327810265591732625332729"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 139662168952249214539951169832502555907735,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "616947769427790746350368932019845323550801014306157233884788730581771489834667748141135774956730",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 8,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-1024725498918504349990093243",
+              "93811216946662209306950735"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 1024725498918504349990093243,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "7375694598182632435089325458224693861963847123202640421053023254734",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 9,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-923420303832208494986850464895896036603269",
+              "77676510000623132744366970678397424557278"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 923420303832208494986850464895896036603269,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "161594278346067372668067327472163940742259246034642642976720236056003676617679496819572065263704981",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 9,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "67411410710909678134217747",
+              "1065622658925379842992063250"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 1065622658925379842992063250,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "309051217945677111239035761831398465596650246466658838869587167315333",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 10,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-8204374016544102602674675283181372628046646372499",
+              "110937823561569481186768115460504523349900180348761"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 110937823561569481186768115460504523349900180348761,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "2009504388643292858888537342784187556113042210376283362019672282846413711995079659648204686547920730527825168597533",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 10,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-1925529195924987055",
+              "14675611332482873"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 1925529195924987055,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "480888495540542290110174562025818675146061617308885",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 11,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "1640100489145004931897149683953246634296064179",
+              "545828035805437107862549634642809543188607180"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 1640100489145004931897149683953246634296064179,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "1027187280476892322315552205046181107748489187340237231127251724092249741072891988966614337234754160011862",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 11,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "13529199417250579448604705",
+              "13203222140630855974952264"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 13529199417250579448604705,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "141504792226938542938311956372952553754950162362258592791159408594",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        }
+      ],
+      "family": "08234",
+      "id": "08234-005",
+      "parameter": "-1411/7075",
+      "points_considered_for_relations": 89,
+      "proposal_attempts": [
+        {
+          "last_prime": 293,
+          "modulus": 3,
+          "status": "FULL_FINITE_GENERIC_RANK"
+        }
+      ],
+      "recovery_status": "RECOVERED_KNOWN_DIRECTION",
+      "recovery_witness": {
+        "coefficients": [
+          "-1",
+          "1",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0"
+        ],
+        "exact_group_relation": true,
+        "point": [
+          "543596831477994848963993626100457/4624",
+          "1779226526411292547496209702295939142165975881973/314432"
+        ],
+        "returned_point_index": 31
+      },
+      "returned_points_up_to_sign": 89
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "direct_oracle_visibility": [
+        {
+          "chart": 0,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-10333379071582333184316139471448283768191",
+              "2439722910199217097089450210121336582945"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 10333379071582333184316139471448283768191,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "50322110568421447022877128860689429735265928630660980812057582440182308327154425753128183589600",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 0,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-745694815752060854247127497356889274994289782597749244478112454028443",
+              "35382345551784412982193107452196573819974703752299632379067766854245"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 745694815752060854247127497356889274994289782597749244478112454028443,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "73362014443583024705788436722140697504932310045319584416517412026525037896143344807747587791022026428053915438018642484925712648420038470236077669564480",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 1,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-62404442471721167470421",
+              "9406844376228962314662"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 62404442471721167470421,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "1578906534024255643562108391965302310559521745876193729163200",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 1,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "23280989016705455580015576426984168696155443254531133308282106241015767739264992463",
+              "2769162585217737723670761356783064670090353308725834345035926424036635948047668814"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 23280989016705455580015576426984168696155443254531133308282106241015767739264992463,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "141168442766627802383572425757972543070946954724530812503522473439617835114366242259245714862330210724135698208211232916170311827970074937525912240226156474042717910888331092565600",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 2,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-347935250889855828487039329831225154883475543474568861563587582475495540560910",
+              "25988346243655022509938211898741760644515420076050638381210288989115867737719"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 347935250889855828487039329831225154883475543474568861563587582475495540560910,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "26795861532854936882859459155831418608493159939880259835662482127466345238579473572195999344523983193106535273677172997709193739767334630159535235269082795933691230352550",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 2,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-12754447556662952117939804095515",
+              "229764058148445530435700209549"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 12754447556662952117939804095515,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "2363266939459637469504544827506607912629166545841762073729417455286985004330",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 3,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-149956014851947948937308524925881761636233751056794581",
+              "7989333722356647680193308004091835738987317946074945"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 149956014851947948937308524925881761636233751056794581,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "9998798828564827324843906622743789827949837441178188214502208994172910452651082997457168854052090992118812719740876779650",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 3,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "933686002066264210211137439214729805370447326894927",
+              "618717654948671301213243292802869640492458822044494"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 933686002066264210211137439214729805370447326894927,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "2125580957814689083763426788494348148849457427696219946079147500714794925664607516208970968740776380730126606700473166",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 4,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-476986239852481270956614695283012055857966347578445813429",
+              "98223040724045617094055463641736962343077293382012135013"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 476986239852481270956614695283012055857966347578445813429,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "215160884871215565301027231950782711353338059488966831505267787784275444177286215481367705358913301718301672074980844786862956000",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 4,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "832532559963701200717033046067782484179199071",
+              "127219377947749700934333119547169834232788681"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 832532559963701200717033046067782484179199071,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "55553412101245445169809527040100405719703039791841598735568633592390261687572887676969833428067874834424",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 5,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-854445468120899751507768481242310027972",
+              "14100233562440501748002268056369412959769"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 14100233562440501748002268056369412959769,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "156359824833086390764827164880651753676187149624415203130521219478657590963669392173154588040185",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 5,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-200217323231941843385508124849861533507899070960169690790247097",
+              "208837635770847968141532841504052655484564653973911195451548724"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 208837635770847968141532841504052655484564653973911195451548724,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "98297187018010421804036043803752651035219058076751353073431365021426367833184325029960870690938232127350793968586892042228928263555583651100",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 6,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-666088894299803182240662782499004113822090228375398456316121",
+              "522875188055738486729824018295014725331096582638369855205"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 666088894299803182240662782499004113822090228375398456316121,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "130640379734119927462644569722392780623504400264776053379991179341089946876591904768617432727212098099819991897613686272511685830800",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 6,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "69753637850351881528396908658127457461725638203",
+              "18861501194995289434628019392532740942755245"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 69753637850351881528396908658127457461725638203,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "12277808951781444173704637366303156129079574701605098950273523903511998617005649460934046169740079301032620",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 7,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-541275566656973607658731649324055392854118327858252191162647710987366",
+              "811443512234767102586434046517813351707223109949243479221722971657977"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 811443512234767102586434046517813351707223109949243479221722971657977,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "992915599799083159088152424293329088922355350417660002869169814847662192200841403370276683823434150533470462545136480717838276499464213588427662289113040",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 7,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-403509759385416952911101517289232594",
+              "315617063261073804272481773235391203"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 403509759385416952911101517289232594,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "14836015238144050348348801116852638670330119276803336773120248775522872021854457980800",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 8,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "19145091016091452907263166464530747877249441040320193347955",
+              "3759337621352416963643564147758001511768596147404460111"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 19145091016091452907263166464530747877249441040320193347955,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "204500209340181092413713125531137577585267959834111471524903667640217514563332818946384310122548831831516386138449763370926937824",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 8,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-3318734824838438842779980778087107476567980144571",
+              "8908501708072337255741608963123925199408488785"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 3318734824838438842779980778087107476567980144571,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "274841135523930428180472881200460178323707929885072823518381328081931639984590924614760350138553972394438480600",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 9,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "705180849652723441174912589093733702613361980319",
+              "569148328284963479859291510504510804960368652589"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 705180849652723441174912589093733702613361980319,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "454513587152938220208685157494254134059839675690385135797228198471876315014704605962900943675603174772945184325",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 9,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-58573233918094539977477261127377629436328046287724816423",
+              "427453928131789204098269984543340018008548824264909141172"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 427453928131789204098269984543340018008548824264909141172,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "576778783734358383357115632846240826103709907921342743217382888583228984138128013506816997406672033085828010534401167830700834380",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 10,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-1741064220711898540774455602802985796808455792343313830",
+              "1727912371623737388064622600261181327998888780787699143"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 1741064220711898540774455602802985796808455792343313830,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "8473971121766987394449120624864046451808616029566476610346672337063193113838306879922458311414004514143113578063440158859450",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 10,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-435237224498115399925199087480530312171710447307",
+              "153680610462706377996585083384081344473137368660"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 435237224498115399925199087480530312171710447307,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "70888563801102161350594434074324617552175498721063737706893795832531904465498781465934035556191500650579050406",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 11,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "92376254681362334767231093358232407796350488991736893",
+              "38354078796390216714385785341378536657512853865759523"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 92376254681362334767231093358232407796350488991736893,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "8804727737778123244449030384882655203760963134945342617702848928649036505786407845640219999356025897934488206166985196700",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 11,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "120949156061970758317361596810091938773949996829038",
+              "161688783021541779982943330375374891254885896591193"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 161688783021541779982943330375374891254885896591193,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "28657435019189352687933969294552330241013203748203056786500553670541111283852070394499940715796573685680831942507825",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        }
+      ],
+      "family": "08f72",
+      "id": "08f72-011",
+      "parameter": "-8605/16526",
+      "points_considered_for_relations": 77,
+      "proposal_attempts": [
+        {
+          "last_prime": 313,
+          "modulus": 3,
+          "status": "FULL_FINITE_GENERIC_RANK"
+        }
+      ],
+      "recovery_status": "RECOVERED_KNOWN_DIRECTION",
+      "recovery_witness": {
+        "coefficients": [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "1",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        "exact_group_relation": true,
+        "point": [
+          "5417499919171108995646152892345/12",
+          "96412187385013521898287892260437722656985848"
+        ],
+        "returned_point_index": 7
+      },
+      "returned_points_up_to_sign": 77
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "direct_oracle_visibility": [
+        {
+          "chart": 0,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-39146765958098869",
+              "369631389343917115"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 369631389343917115,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "86555905730428593645972032925786363274944121709568",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 0,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "3677699251845626815276445342001103467746794809351",
+              "1270127169135061156160441245076749784075042568887"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 3677699251845626815276445342001103467746794809351,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "3248332640837368341926348844286798023927318636980487500096858240251946628782462274165786217734658290793282122240",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 1,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "19715365439588434612379",
+              "12309044572635646879777"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 19715365439588434612379,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "193302156665829112013543012182045147511532373969169350586388",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 1,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-3617696318453805886161019971510672748313",
+              "2906399548974715994436423909221651409665"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 3617696318453805886161019971510672748313,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "4563816690513780348428626441518058274525620083149190940622873142486845137828956258493503704640",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 2,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "2428875482898053237333108387354640393",
+              "373960442146687617051421998248136745"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 2428875482898053237333108387354640393,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "33980393371140561682106791149086160667201189431217151856330377369381348913908597204480",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 2,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-66452109277435534164069446173",
+              "8823879421759681495995223363"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 66452109277435534164069446173,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "704741497638044912045889904801486982575324909377590105578914745741839360",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 3,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "2839048971380096475820082416044",
+              "1169645238324406700681212669493"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 2839048971380096475820082416044,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "3139283541657812715865568124374024675210478299180613848979894047647220567040",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 3,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "291570433474218339190698421519818604",
+              "2901508523745250653320928445764869"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 291570433474218339190698421519818604,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "5327925933176637029776716829370144831384121100180900266912538817407806721246633025280",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 4,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-15827702361887",
+              "12124946770383"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 15827702361887,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "419323834300449324451476787687501758710310",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 4,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "2098883887414987062873398331545716635878348127661",
+              "638609082768355216175119238552816784012883482569"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 2098883887414987062873398331545716635878348127661,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "322693874509641125047688140316616874676430374411894653683314727205356976890896890147234724326023783189568858656",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 5,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "736940599111256189015227208216",
+              "524726706553973216985942650255"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 736940599111256189015227208216,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "236345600926537872166199725533258869618364490960298420450055479762459550720",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 5,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-12707124607933835009397367601115336",
+              "9902274351669184181698396201555907"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 12707124607933835009397367601115336,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "72068300151271262831691755975078886430517033369514254292650773398719412879170155520",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 6,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-2969337307927911180184368079",
+              "47394290877919795713308038"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 2969337307927911180184368079,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "156226977293991515436317323367345118135445957896351202704213892886850",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 6,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "1014963076751007155282221243470212857",
+              "162685647107587850151342042518382739"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 1014963076751007155282221243470212857,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "1483358739423212750120455298420499208728936689635657438621782079450983609563909038217960",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 7,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "5598589137001560216590213007546093565",
+              "421036387281841015090449337008169533"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 5598589137001560216590213007546093565,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "6008594410634987319038716591267655000152126368090814378037178774054549855388664064558080",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 7,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-574225746680668469288422715",
+              "74173495958458525055088389"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 574225746680668469288422715,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "22272014527353035975614737702297736567501102194090669697868161950720",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 8,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "163696828671838641265",
+              "56702432866197499647"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 163696828671838641265,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "23414116395571908043267223444902563655242296424983388480",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 8,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-3998849511105989061896438437899342433450257",
+              "2713616583998726332839031290331573409289313"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 3998849511105989061896438437899342433450257,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "11433697020144724841465388588674089544224427958108993528062253781847936077003546889269544448854323200",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 9,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "454466347780662768491472494622423425",
+              "79035344216716902237817653492548776"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 454466347780662768491472494622423425,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "10208105261766287833854830848396905489194069832082012303913618029919694551745454900620",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 9,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-41949904313063183486630095",
+              "1715471008921132427331139692"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 1715471008921132427331139692,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "2153047746150729298589088307432054544654570533045284349479874751686080",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 10,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-7595702024782176677720407318447208069",
+              "32268818439074755976490691825936502"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 7595702024782176677720407318447208069,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "63027912085011982310541944302297448343996687959876860557568143399492252777709498245120",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 10,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-147544687073346839691351826381",
+              "48024290806761667820013990"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 147544687073346839691351826381,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "16280454857788270145664312121951008171624890161689127285532209857305280",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 11,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "3168733311933619324189",
+              "445669054836538228176"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 3168733311933619324189,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "3244229005171204124347914776769634147263859595928672629760",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 11,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-1555840963306730480760492258361992706303189",
+              "284164381484136419288348998526393445205936"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 1555840963306730480760492258361992706303189,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "677919397369805645957775640282734596732061178454939404265850892238950552629285904296818198749228800",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        }
+      ],
+      "family": "103b2",
+      "id": "103b2-159",
+      "parameter": "-26958/29749",
+      "points_considered_for_relations": 76,
+      "proposal_attempts": [
+        {
+          "last_prime": 257,
+          "modulus": 3,
+          "status": "FULL_FINITE_GENERIC_RANK"
+        }
+      ],
+      "recovery_status": "RECOVERED_KNOWN_DIRECTION",
+      "recovery_witness": {
+        "coefficients": [
+          "-1",
+          "0",
+          "-1",
+          "0",
+          "-1",
+          "1",
+          "1",
+          "-1",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "1",
+          "0"
+        ],
+        "exact_group_relation": true,
+        "point": [
+          "31185016275513567596009132270124225813745129/134267256362028",
+          "942333201593282157319809724299116653938472502889377574875750400/37426852254720912803"
+        ],
+        "returned_point_index": 0
+      },
+      "returned_points_up_to_sign": 76
+    },
+    {
+      "attempted_charts": 12,
+      "completed_boxes": 12,
+      "direct_oracle_visibility": [
+        {
+          "chart": 0,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-2573102016708962597893591",
+              "9809392113382065539296041"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 9809392113382065539296041,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "58147937994274786987084381260974542733553269994103458927242319875",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 0,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "1040867965299351416691288517954870297081",
+              "715907664537065441424829723932510249719"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 1040867965299351416691288517954870297081,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "441207513845962338753076266944919566769986309986870095417987167202711486777238808469859605375",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 1,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-2925343196879145455737156696",
+              "898994623759260664241373003"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 2925343196879145455737156696,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "2268872723211832409911869133780443347695143882726177141610173454761975",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 1,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-349301364503367334915160504913472762",
+              "4968481813934347703119125036397229991"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 4968481813934347703119125036397229991,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "15308630130280568899113574305917782204844498674470242165095583488593757419917570770165875",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 2,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-941839898481710406133663588278366591269",
+              "575165082274696362403735549561950796571"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 941839898481710406133663588278366591269,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "229725108407768377723385666164006960443934540154832917907278303381767785933917675572808793165",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 2,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-3709504913027340003792091",
+              "6968555887607058312009487"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 6968555887607058312009487,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "55427914205801267625407175908473304463886538257661685632309532033",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 3,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-25563645052647327806",
+              "2507870712974037"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 25563645052647327806,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "2173148017835051720005221699294206654224817399799",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 3,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-662061415877033522689820836460886681236840398436",
+              "289974889655550569675598312802751786624283255"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 662061415877033522689820836460886681236840398436,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "320639080610032435260080272836318743940664129759108953357523511355259133562120916882113240944848451508866355",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 4,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "172810949328877315808228",
+              "75082724389565582594057"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 172810949328877315808228,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "8896884324783141356722001065164672245766851465031031170490125",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 4,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "198672211639018421458633358785891647365078",
+              "78710298194241988427878228128976195733357"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 198672211639018421458633358785891647365078,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "8301661496435790226546034193409956514702686406060105270073587299379492698954392053785843781627575",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 5,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-23828736336775864079302",
+              "3773832156131034120303"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 23828736336775864079302,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "14269370016377274852617534133569630231577982305995363439930",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 5,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-320513014931391408860958915620642506987066",
+              "183560992493146844112677150807731139204139"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 320513014931391408860958915620642506987066,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "82029288424750789535576378445541577449147187855265025899288728665453086416255307346075602549866100",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 6,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "25160541072679226905",
+              "164730576794468263014"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 164730576794468263014,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "32933033167368448128578517067960590107561942876682647125",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 6,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "202878234186483572981261165491019460488548995",
+              "37001845716185268604010859452809055818449856"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 202878234186483572981261165491019460488548995,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "5774236988182173599412371509023362225781684688036349475976347650179349038747101895002171477345277255125",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 7,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-103824437191284837739285646279",
+              "201455032307265783719630293"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 103824437191284837739285646279,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "40456230328402145424718836737563456873088166786892047216925497531235215",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 7,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "738673332032399572245673502869716527",
+              "10796363877072221879266516798223513"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 738673332032399572245673502869716527,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "1141230272625002698001235358049648989716900377975266741218664736445058334237071884117",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 8,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-20490147329091399448212351763661",
+              "10487920424649176103741365031874"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 20490147329091399448212351763661,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "88910397666601362214213250390874567189622010006749961815294649003388151558575",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 8,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-9482122793529170162169852591030659",
+              "5073184522755226037313990899747956"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 9482122793529170162169852591030659,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "23668210806515882368412422438583034059168545945981676157158527299872456055644995125",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 9,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "477422001468744",
+              "646424580990053"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 646424580990053,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "632309531612144892479762812843904379000018",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 9,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "9328205729031460998469740908558394324374094074124",
+              "2488693737508000639082737107037374862542702657527"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 9328205729031460998469740908558394324374094074124,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "36963538051696956491497250598719477988348842183549891645261102166447587146014352997012029459254567828168804302760",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 10,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-239774381759173241300047437326089",
+              "26854851090775450275637090300384"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 239774381759173241300047437326089,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "9346621303836407598282210502606832521826933817699698453233877855666675891115525",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 10,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-1872551604331058945499227399759",
+              "8073803268970463507978017063754"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 8073803268970463507978017063754,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "64212351278925185346830925577961476494921223703680731356469070744053907760625",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        },
+        {
+          "chart": 11,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-705629350009992114253088440545248906380776789",
+              "2343710936063904942298624169852390172529406242"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 2343710936063904942298624169852390172529406242,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "1052705529954000510380367595006415561992325039591301276411017807100451136919673600680308610246403201798035",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": -1
+        },
+        {
+          "chart": 11,
+          "observation": {
+            "at_parameter_infinity": false,
+            "claim_boundary": "One known point, one chart; no rank, coset-completeness or absence claim.",
+            "coordinate": [
+              "-12082657864232499",
+              "170583472385498524"
+            ],
+            "in_completed_box": false,
+            "in_requested_box": false,
+            "minimum_affine_height": 170583472385498524,
+            "recorded_curve_point": false,
+            "recorded_square_hit": false,
+            "square_root_absolute": "17592193860610862724917977402925723014030784234613",
+            "status": "OUTSIDE_BOX"
+          },
+          "sign": 1
+        }
+      ],
+      "family": "11952",
+      "id": "11952-057",
+      "parameter": "32031/14005",
+      "points_considered_for_relations": 64,
+      "proposal_attempts": [
+        {
+          "last_prime": 353,
+          "modulus": 3,
+          "status": "FULL_FINITE_GENERIC_RANK"
+        }
+      ],
+      "recovery_status": "RECOVERED_KNOWN_DIRECTION",
+      "recovery_witness": {
+        "coefficients": [
+          "-1",
+          "1",
+          "0",
+          "-1",
+          "1",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "exact_group_relation": true,
+        "point": [
+          "-497791754546544310670865131960771/1083",
+          "324287838031369786510458438742718750103602513625/6859"
+        ],
+        "returned_point_index": 22
+      },
+      "returned_points_up_to_sign": 64
+    }
+  ],
+  "schema": "elliptic-curves.higher-r17-masked-relations.v1",
+  "sources": {
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/074d9-010/blind.json": "5e098402a5c4f3ee357f7f0d7e541dcbce59909d48a81a5ae4f586294eb82806",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/074d9-010/maps.json": "64649341d5c2aee49e577556fb7abb794086a35490a662d7876b78040a7c4867",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/074d9-010/oracle.json": "99ee01b027e8fd17c8d80237a5f7226ce467969bf74ed04c40caaf34ff349d21",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/074d9-010/result.json": "3b16971ab1ccec87098cd9ea6942b61951f2e317e3ee184cd4aada6854b29815",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/07ca9-001/blind.json": "d71c2dbfbcaab5fa0a536ee3e8f79e958f83013cda589c9e017a50a1b408526f",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/07ca9-001/maps.json": "fe7e00b2ca58e9da852d4694fe35ad6dea57cae7522bc09f7deea686212d04e1",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/07ca9-001/oracle.json": "5f1e514c681f1ac66aeed2f9009ed67cc31bc6904abb3e741c585474f6aa5ec3",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/07ca9-001/result.json": "e17c71b54b2f5c54fa95d4a8dc6ee0e7073dc086db93bb5d33ddc8858436e7bb",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/08234-005/blind.json": "5d5f46ebd46e3d5467b8d8cb2e5797fbb73866ed9eb5ad2c6bde4ce0874a8fed",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/08234-005/maps.json": "f2078fd8a26681594ac5aa2c0654093ff1cfcfd78271d31652bada099832d94e",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/08234-005/oracle.json": "f75fc7bc2160fd41542321b422ae4e84469374cbf28c42b2ae0230c02b514b9a",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/08234-005/result.json": "916a527a605edd5bd0a1be8837375f00aec43674d348be6291f3f2b86e816bb1",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/08f72-011/blind.json": "1b31f1745e15a2de5dc014d2d036edc88fda666e24012e8459cb683fa19f2304",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/08f72-011/maps.json": "b5bbe9a6377ef8a28d7c3dfd0141ae7e07cd987cb625f2224c4aebc733b18697",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/08f72-011/oracle.json": "363e084a3508230cbe15d9bf25301757ade23ea0b5844a4ad5917961779a51a8",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/08f72-011/result.json": "a8531182c3404d644fb272f6b3e305c6153352b3061db350612e8bb9836c7fc6",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/103b2-159/blind.json": "cd8546ef6867eed34ffedc1b6af5ccf0c384f415bf185e821bdf1e9c79b0dabb",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/103b2-159/maps.json": "221f13370574228f969642d4619f167f2bcb3578b946c0d88f53b40ca545a017",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/103b2-159/oracle.json": "a286b063810e714f8bd71c83a56766e84e33756a1fd589cdcc4fe911b065b4fa",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/103b2-159/result.json": "425f2138663d1703f59be3fd95d3606455d32e561ea6c6cc95425348acdc74e2",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/11952-057/blind.json": "ad2ed3ffc3986c76681198bdcea2d57932d59c29b58fe5f28ac58cafd51f91ac",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/11952-057/maps.json": "54293b94137cb8131095c63ef68bcace5d7f1ef709226d75cab6750af9b21bc8",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/11952-057/oracle.json": "43a923ef146649429cb2b0479808fb3ca0417968932a55f075d26224991ae980",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/11952-057/result.json": "d19c6e77e34ef396564bc3f632921dfed1de04858ec9e4fb277cac6d58321129",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/ledger.json": "b7e56275ec8257f394f64b8a286066feb188456e4c56eaf20c745f2172b40c6e",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/prepared.json": "eb1efdd5888d23cf3a830af1331cf56163ec4bd238458e2ec93a9bd64e261943",
+    "artifacts/local/elliptic-curves/higher-r17-masked-controls-v1/protocol.json": "b3096456667ed9154192234b95559d500abee53037d8f8c28e1a4ed653fdbe0b",
+    "elliptic-curves/cas/audit_higher_r17_masked_relations.sage": "dce324bcf253fdc6f3b567a6e552166f259414ac963b64e4846917ebfd3ab6ab",
+    "elliptic-curves/cas/memory_rank_certificate.py": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6",
+    "elliptic-curves/cas/mod_l_reduction_independence.py": "93cdef9eb9053987d0aa85abff2d6e1d487caa827b43a7c00d0b8a43395063f0",
+    "elliptic-curves/cas/search_observability.py": "b6189a0cee9805336609f413b2dd8ccb38263c2d594131aabf3b0555a9c04b58"
+  },
+  "status": "COMPLETE_BOUNDED_RELATION_AUDIT"
+}

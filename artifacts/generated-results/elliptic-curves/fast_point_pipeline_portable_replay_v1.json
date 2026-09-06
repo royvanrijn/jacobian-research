@@ -1,0 +1,647 @@
+{
+  "claim_boundary": "All13 isolated declared checks pass:602 chart geometries/raw points,278 continuation admission/archive histories, both complete clouds modulo2,3,5, strict calibration rosters and focused tests. Original285+39 slow admission histories passed separate local replays; this does not claim they were redundantly rerun here. No new rank28/32 or second sieve enumeration.",
+  "ledger": {
+    "rows": [
+      {
+        "name": "all602-geometries",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/cas/replay_all_fast_backend_geometry.py"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 300
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/verification/all602-geometries.log",
+          "log_sha256": "2765bb63367d2fbbcabb3bfa9d79340b3421308a289ad99af57da444ef73e324",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 175878144,
+          "pid": 37644,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48034740",
+          "termination_signal": null,
+          "timeout_seconds": 300,
+          "wall_seconds": 4.0016242190031335,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "strict-calibrations",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/cas/replay_backend_calibrations_strict.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/verification/strict-calibrations.log",
+          "log_sha256": "a95cdddc9a249e07a23b71f499fb38565bf14a85684f9cd91b0a6c14c1a59870",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 85270528,
+          "pid": 37679,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48035143",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.27903053298359737,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "continuation-rank26",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/cas/continue_fixed_pari_search.py",
+            "replay",
+            "--case",
+            "rank26"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 900
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/verification/continuation-rank26.log",
+          "log_sha256": "54a85b7d07ccb2d71a3e56364229595d2fa03301455911ccc23ee8a6f62149ad",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 288776192,
+          "pid": 37681,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48035173",
+          "termination_signal": null,
+          "timeout_seconds": 900,
+          "wall_seconds": 17.288822481990792,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "continuation-small-conductor",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/cas/continue_fixed_pari_search.py",
+            "replay",
+            "--case",
+            "small-conductor"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 900
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/verification/continuation-small-conductor.log",
+          "log_sha256": "073490915cfeec12990882b8ce5454d774a16d1841d33a777b3aadb08f59da9a",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 192593920,
+          "pid": 37807,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48036904",
+          "termination_signal": null,
+          "timeout_seconds": 900,
+          "wall_seconds": 318.64656899496913,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "rank26-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/artifacts/generated-results/elliptic-curves/rank26_all_current_retained_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/verification/rank26-mod2.log",
+          "log_sha256": "79151b34e4b0642cb5f1a5d22d8af8fad0d95ee7d26671e466cb120aece652c6",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 27451392,
+          "pid": 133252,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48068772",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.3803120679804124,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "rank26-mod3-mod5",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/artifacts/generated-results/elliptic-curves/rank26_all_retained_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/verification/rank26-mod3-mod5.log",
+          "log_sha256": "1441c5edafc7055995af8763c63aa5e65644f4bad24ae231c4b83647c5a7b473",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 27742208,
+          "pid": 133258,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48068812",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 1.4000167310005054,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "small_conductor-mod2",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/artifacts/generated-results/elliptic-curves/small_conductor_all_current_retained_mod2_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/verification/small_conductor-mod2.log",
+          "log_sha256": "92ebe2f37103b39f3a5a649cf414eeb41670eb14c872974dafd3deb6b183bcfb",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 44589056,
+          "pid": 133294,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48068954",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 0.9921504830126651,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "small_conductor-mod3-mod5",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+            "--check",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/artifacts/generated-results/elliptic-curves/small_conductor_all_retained_modl_v1.json"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 180
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/verification/small_conductor-mod3-mod5.log",
+          "log_sha256": "df90b77bebb285f6eb8095c845b7fd6fdb84e01e70ea63be865ceef44c361934",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 60231680,
+          "pid": 133308,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48069056",
+          "termination_signal": null,
+          "timeout_seconds": 180,
+          "wall_seconds": 7.311875878018327,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "test-pari_pointed_backend",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/tests",
+            "-p",
+            "test_pari_pointed_backend.py"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 60
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/verification/test-pari_pointed_backend.log",
+          "log_sha256": "6f75a31c67524e73d50ce119fb4aff1f3416319c0134de5f53c07e69c7b53af7",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21254144,
+          "pid": 133400,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48069791",
+          "termination_signal": null,
+          "timeout_seconds": 60,
+          "wall_seconds": 0.12523590202908963,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "test-preloaded_prime_state",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/tests",
+            "-p",
+            "test_preloaded_prime_state.py"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 60
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/verification/test-preloaded_prime_state.log",
+          "log_sha256": "82e6aa80926086b192e1c363d80225ddd8ee1f1e21f5575a3d491df9fd1b6bfd",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21504000,
+          "pid": 133427,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48069807",
+          "termination_signal": null,
+          "timeout_seconds": 60,
+          "wall_seconds": 0.13419622200308368,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "test-rotated_observation_state",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/tests",
+            "-p",
+            "test_rotated_observation_state.py"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 60
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/verification/test-rotated_observation_state.log",
+          "log_sha256": "c3a83593d26384c7ba197fc59d784f63c97d392d7d404bd5e99e5f1e4a48395d",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21622784,
+          "pid": 133429,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48069823",
+          "termination_signal": null,
+          "timeout_seconds": 60,
+          "wall_seconds": 0.13323294703150168,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "test-retained_cloud_modl",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/tests",
+            "-p",
+            "test_retained_cloud_modl.py"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 60
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/verification/test-retained_cloud_modl.log",
+          "log_sha256": "c3dc4ce80790d0a5a68dcff2d3009be59564c24dfe01144e0f6b50051e539cc3",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 21524480,
+          "pid": 133433,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48069840",
+          "termination_signal": null,
+          "timeout_seconds": 60,
+          "wall_seconds": 0.13560967799276114,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "test-strict_calibration_roster",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/tests",
+            "-p",
+            "test_strict_calibration_roster.py"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 1610612736,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 60
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/verification/test-strict_calibration_roster.log",
+          "log_sha256": "fb184ea57734512b1f088f9181209901b9cd46df3eb7eaa2500ea9e48dde20b5",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 22110208,
+          "pid": 133437,
+          "returncode": 0,
+          "rss_limit_bytes": 1610612736,
+          "start_token": "48069855",
+          "termination_signal": null,
+          "timeout_seconds": 60,
+          "wall_seconds": 0.13207334600156173,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      }
+    ],
+    "status": "COMPLETE_DECLARED_REPLAY_ATTEMPTS"
+  },
+  "logs": {
+    "all602-geometries": "REPLAYED ALL FAST BACKEND GEOMETRIES rank26 301\nREPLAYED ALL FAST BACKEND GEOMETRIES small-conductor 301\nGeometry and raw points only; each admission history has its separate replayer.\n",
+    "continuation-rank26": "REPLAYED PRIMEBANK CONTINUATION rank26 16 rank >= 26\n",
+    "continuation-small-conductor": "REPLAYED PRIMEBANK CONTINUATION small-conductor 262 rank >= 22\n",
+    "rank26-mod2": "REPLAYED RECORDED-POINT RANK 07ca9 -2507/3068 rank >= 26\n",
+    "rank26-mod3-mod5": "REPLAYED CLOUD MODL 07ca9 3 rank >= 26\nREPLAYED CLOUD MODL 07ca9 5 rank >= 26\n",
+    "small_conductor-mod2": "REPLAYED RECORDED-POINT RANK a1-fibration-05 3/17 rank >= 22\n",
+    "small_conductor-mod3-mod5": "REPLAYED CLOUD MODL a1-fibration-05 3 rank >= 22\nREPLAYED CLOUD MODL a1-fibration-05 5 rank >= 22\n",
+    "strict-calibrations": "REPLAYED IDENTICAL AFFINE HIT SETS 49\nREPLAYED IDENTICAL AFFINE HIT SETS 43\nREPLAYED FOUR INCLUSIVE BOUNDARY BOXES\nSTRICT BACKEND CALIBRATIONS PASS\n",
+    "test-pari_pointed_backend": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.035s\n\nOK\n",
+    "test-preloaded_prime_state": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.016s\n\nOK\n",
+    "test-retained_cloud_modl": ".\n----------------------------------------------------------------------\nRan 1 test in 0.005s\n\nOK\n",
+    "test-rotated_observation_state": ".\n----------------------------------------------------------------------\nRan 1 test in 0.016s\n\nOK\n",
+    "test-strict_calibration_roster": ".\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n"
+  },
+  "manifest_sha256": "a2a3382767547e1be9fc6f9a3f7f33a1d316ff05cfbd03793e34bcfca2a9e431",
+  "protocol": {
+    "jobs": [
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/cas/replay_all_fast_backend_geometry.py"
+        ],
+        "name": "all602-geometries",
+        "wall_seconds": 300
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/cas/replay_backend_calibrations_strict.py",
+          "--check"
+        ],
+        "name": "strict-calibrations",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/cas/continue_fixed_pari_search.py",
+          "replay",
+          "--case",
+          "rank26"
+        ],
+        "name": "continuation-rank26",
+        "wall_seconds": 900
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/cas/continue_fixed_pari_search.py",
+          "replay",
+          "--case",
+          "small-conductor"
+        ],
+        "name": "continuation-small-conductor",
+        "wall_seconds": 900
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/artifacts/generated-results/elliptic-curves/rank26_all_current_retained_mod2_v1.json"
+        ],
+        "name": "rank26-mod2",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/artifacts/generated-results/elliptic-curves/rank26_all_retained_modl_v1.json"
+        ],
+        "name": "rank26-mod3-mod5",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/cas/audit_recorded_point_mod2_rank_v2.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/artifacts/generated-results/elliptic-curves/small_conductor_all_current_retained_mod2_v1.json"
+        ],
+        "name": "small_conductor-mod2",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/cas/audit_retained_cloud_modl.py",
+          "--check",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/artifacts/generated-results/elliptic-curves/small_conductor_all_retained_modl_v1.json"
+        ],
+        "name": "small_conductor-mod3-mod5",
+        "wall_seconds": 180
+      },
+      {
+        "args": [
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/tests",
+          "-p",
+          "test_pari_pointed_backend.py"
+        ],
+        "name": "test-pari_pointed_backend",
+        "wall_seconds": 60
+      },
+      {
+        "args": [
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/tests",
+          "-p",
+          "test_preloaded_prime_state.py"
+        ],
+        "name": "test-preloaded_prime_state",
+        "wall_seconds": 60
+      },
+      {
+        "args": [
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/tests",
+          "-p",
+          "test_rotated_observation_state.py"
+        ],
+        "name": "test-rotated_observation_state",
+        "wall_seconds": 60
+      },
+      {
+        "args": [
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/tests",
+          "-p",
+          "test_retained_cloud_modl.py"
+        ],
+        "name": "test-retained_cloud_modl",
+        "wall_seconds": 60
+      },
+      {
+        "args": [
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/fast-point-pipeline-portable-v1/workspace/elliptic-curves/tests",
+          "-p",
+          "test_strict_calibration_roster.py"
+        ],
+        "name": "test-strict_calibration_roster",
+        "wall_seconds": 60
+      }
+    ],
+    "manifest_sha256": "a2a3382767547e1be9fc6f9a3f7f33a1d316ff05cfbd03793e34bcfca2a9e431",
+    "rss_bytes": 1610612736,
+    "scope": "Isolated checks without point search or external CAS: all602 new adaptive geometries/raw point sets, all278 continuation admission/archive histories, complete point-cloud rank proofs, strict calibration rosters and targeted tests. The285+39 original slow admission histories were independently replayed locally and are retained; they are not redundantly re-executed here.",
+    "verifier_sha256": "6ecb998d854315b3f4a1736671468845326c4e41b4d34545721fcb8919d7b7fa"
+  },
+  "schema": "elliptic-curves.fast-point-pipeline-portable-replay.v1",
+  "stages": 13,
+  "status": "PASS",
+  "verifier_path": "elliptic-curves/cas/verify_fast_point_pipeline_bundle.py",
+  "verifier_sha256": "6ecb998d854315b3f4a1736671468845326c4e41b4d34545721fcb8919d7b7fa"
+}

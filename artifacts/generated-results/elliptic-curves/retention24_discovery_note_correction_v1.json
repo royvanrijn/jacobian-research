@@ -1,0 +1,17 @@
+{
+  "archive": "artifacts/generated-results/elliptic-curves/retention24_discovery_note_correction_v1.zip",
+  "archive_sha256": "c316793a804a5ad719d4bdd3f929e997f38adc13af8afadf4d3f3f814e25ad70",
+  "base_manifest": "artifacts/generated-results/elliptic-curves/retention24_discovery_evidence_v1.json",
+  "base_manifest_sha256": "e0ac29b3f0ec27beaa85f8ba41f5ef93db27f6529db6bf2605ec1a2c69cad81a",
+  "correction": "The original archived note incorrectly called all four lower-bound19or21 attempts catalogue-unmatched. One is known curve394; only three are unmatched. Corrected one phrase. All24 rank certificates, nineteen additions,89-curve inventory and equations were already correct and are unchanged. Extract this small note overlay after the main evidence supplement if reading its narrative.",
+  "files": [
+    {
+      "bytes": 6622,
+      "path": "elliptic-curves/notes/WIDER_RETENTION_DISCOVERIES_2026-09-06.md",
+      "sha256": "5a8193b1b28ac3f537ca627c06e116bcedfde0f04e43776ef9cbe6f99960b2c7"
+    }
+  ],
+  "old_note_sha256": "1d0c164637a18d5143d549f2db91d02ca3e69bf9eb2c827b21bf904b70d058a6",
+  "schema": "elliptic-curves.retention24-discovery-note-correction.v1",
+  "status": "PASS"
+}

@@ -1,5 +1,29 @@
 # Active CAS modules
 
+The [completed endpoint point trial](../notes/ENDPOINT_POINT_TRIAL_2026-09-06.md) replays through `verify_endpoint_point_trial_bundle.py`: all 66 isolated stages pass, including the six rank-27 subgroup saturation proofs at 2, 3 and 5.
+
+The [exact endpoint section-span proof](../notes/ENDPOINT_SECTION_SPANS_2026-09-06.md) uses `certify_endpoint_section_relations.py` and the Sage-free `verify_endpoint_section_lattice_indices.py`. All three isolated supplement stages pass.
+
+The [skew/endpoint audit](../notes/COMPACT_ENDPOINT_AUDIT_2026-09-06.md) replays through `verify_skew_endpoint_bundle.py`: all 54 stages pass. `report_skew_r17_experiment.py` binds the bounded skew search; `report_compact_endpoint_audit.py` binds the 21 nonsingular endpoints and their section proofs.
+
+The [current discovery inventory](../notes/COMPACT192_UNSEARCHED_TRIAL_2026-09-06.md)
+contains185 certified curves, including six with lower bound27; V13 and its equationCSV replay. The
+[MW16 rank27 proof](../notes/NEW_MW16_RANK27_2026-09-06.md) remains available.
+New rank28/32 remains open.
+
+Current audit entry points:
+
+- `verify_specialized_parity_bundle.py`: [known29 recovery and six prospective trials](../notes/SPECIALIZED_PARITY_CONTROL_2026-09-06.md),24 passing stages.
+- `verify_local_feature_bundle.py`: [new25 proof, local-feature cohorts and101-curve inventory](../notes/LOCAL_FEATURE_RANK25_2026-09-06.md),113 passing stages.
+- `verify_product_first_bundle.py`: [product-first retention and local-model audit](../notes/PRODUCT_FIRST_RETENTION_2026-09-06.md),55 passing stages.
+- `verify_product22_comparison_bundle.py`: [paired score and visibility audit](../notes/PAIRED_PRODUCT_SCORE_2026-09-06.md),50 passing stages.
+- `verify_higher_masked_height_bundle.py`: [masked controls](../notes/HIGHER_R17_MASKED_CONTROLS_2026-09-06.md) and [deeper follow-up](../notes/HIGHER26_MILLION_HEIGHT_2026-09-06.md),11 passing stages.
+
+The [fast point-pipeline audit](../notes/FAST_POINT_PIPELINE_AUDIT_2026-09-06.md) completes both fixed 301-box PARI follow-ups. The full point clouds still certify 26 and 22 modulo 2, 3 and 5; all 13 isolated pipeline checks pass.
+
+The [exact parity / coordinate audit](../notes/EXACT_PARITY_AND_COORDINATE_AUDIT_2026-09-06.md)
+links the new lattice checker, versioned coverage repairs and fixed-box engine comparison.
+
 This directory is intentionally narrower than the computational archive. It
 contains exact status checkers and their shared arithmetic, plus code for the
 current rank-32, low-conductor, residual-Selmer, and K3-construction gates.
@@ -7,6 +31,13 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
 [`../REPRODUCE.md`](../REPRODUCE.md).
 
 ## Start here
+
+- [`certify_new_compact_rank26_v2.py`](certify_new_compact_rank26_v2.py):
+  exact proof of the new rank-at-least-26 curve and its global minimal model;
+  [canonical note](../notes/NEW_COMPACT_RANK26_CURVE_2026-09-05.md).
+  `certify_compact_r17_wide_results.py` checks all 24 balanced H4096
+  measurements; `replay_compact_r17_generic_census.py` checks the six fresh
+  generic parity censuses. The failed first integral-model exporter is retained.
 
 - [`certify_small_conductor_curve.py`](certify_small_conductor_curve.py):
   Sage-free replay of 22 independent points, a global minimal equation,
@@ -17,8 +48,20 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   `replay_prospective_mw16_followup_v2.py` adds the optional exact observation
   cache to retained follow-up replay; [diagnostic and validation](../notes/SMALL_CONDUCTOR_FOLLOWUP_2026-09-05.md).
 
+- [`certify_retention_high_rank_minimal.py`](certify_retention_high_rank_minimal.py):
+  the two new27-point minimal models from the fixed wider-retention experiment;
+  `replay_inventory_v7_memory.py` checks all89 inventory entries andCSV.
+  `verify_retention24_discovery_bundle.py` declares39 isolated proof stages;
+  `verify_retention_rank27_followup_bundle.py` checks the602 follow-up charts
+  and both complete point clouds modulo2,3,5.
+- [`certify_inventory70_incidence.py`](certify_inventory70_incidence.py):
+  all 840 incidence pairs for the seventy-curve cohort, with the exact generic
+  transport proving every extra presentation duplicates the same subgroup;
+  `verify_inventory70_incidence_bundle.py` replays its six isolated stages.
 - [`replay_compact_cross_family_incidence.py`](replay_compact_cross_family_incidence.py):
   exact projective j-incidence on the pinned first 32-curve cohort.
+  `replay_latest7_cross_family_incidence.py` checks the subsequent seven;
+  [follow-up and search gaps](../notes/NEW_RANK26_FOLLOWUP_2026-09-05.md).
   `audit_compact_published_r17_transport_v3.sage --check` replays the generic
   section identities; its two earlier failed adapters are historical evidence.
 
@@ -28,10 +71,11 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   `research_runtime/quotient_only_reduction.py` provides an optional bounded
   cache for newly frozen workers.
 
-- [`export_new_high_rank_curve_index_v2.py`](export_new_high_rank_curve_index_v2.py):
-  standalone replay of all 36 current new rank-at-least-22–25 curves in the
-  [consolidated index](../../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v2.json),
-  preserving every prior ID. The earlier exporter and 32-curve index are retained.
+- [`export_new_high_rank_curve_index_v6.py`](export_new_high_rank_curve_index_v6.py):
+  standalone replay of all 70 catalogue-unmatched curves with lower bounds22–27.
+  [`replay_inventory_v6_memory.py`](replay_inventory_v6_memory.py) also verifies
+  the equation CSV using the explicit memory cache. Earlier exporters and
+  inventories remain historical replay inputs.
 - [`certify_prospective_mw16_results.py`](certify_prospective_mw16_results.py):
   Sage-free replay of the [completed five-family MW16 pilot](../notes/PROSPECTIVE_COMPACT_MW16_PILOT_2026-09-05.md),
   including ten new rank-at-least-22–25 examples. The `*_prospective_mw16_*`
