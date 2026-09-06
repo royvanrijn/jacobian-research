@@ -1,0 +1,11 @@
+{
+  "schema": "rank-jump.paired-character-moments-protocol.v1",
+  "layer": "incidence",
+  "question": "Do the two observed four-cover systems have distinctly larger generic section capacity than the fixed insoluble control, and can any one of their native covers account for the whole retained jump?",
+  "selection": "All 15 nonempty product characters in each of the two positive quartets and the existing obstructed A,B,C,D quartet. Add only the cross-group pair 1795d,11278 from the already completed global-solubility comparison. No new cover dictionary or ranking.",
+  "method": "Reuse the independently recounted original-fibre traces at131 and131^2. Reweight each by the exact quadratic character of the chosen product. Require the product's branch divisor to retain degree, separability and disjointness from the original discriminant at131. Good rows have L-degree20+4*k for k quadratic factors; apply the same two-moment and functional-equation-parity bounds. Bad reduction leaves the arithmetic bound UNKNOWN without choosing another prime.",
+  "limits": {"fixed_nonempty_characters":46,"existing_singleton_covers":12,"new_fibre_point_counts":0,"new_rational_parameters_or_points":0},
+  "comparison": "Preserve the distinction between rank on the original elliptic surface, arithmetic generic rank on a twist, generic rank on a simultaneous carrier, and rank of the carrier's own Jacobian. Compare the already globally soluble F,D and F,G pair carriers with the everywhere-locally-soluble but Sha-obstructed A,D carrier.",
+  "failure_semantics": "A bad-reduction row is not an exclusion. A positive generic upper bound is not evidence that extra sections exist. A product's odd analytic multiplicity over a finite field is not a characteristic-zero rank lower bound. No new selector follows from retrospective labels.",
+  "boundary": "Exact incidence bounds for fixed construction routes. Original specialized ranks and simultaneous global solubility are separate and are not predicted by these bounds."
+}

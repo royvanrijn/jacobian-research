@@ -1,0 +1,238 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_paired_quartet_relations_inputs_v1.json": "4f84dc712cb088ccad50b59e6a4a60f643afbd80f3d9a9714283e44c684d17cc",
+    "artifacts/generated-results/elliptic-curves/rank_jump_paired_quartet_relations_v1.json": "52410ec43618d39d963ae9be59b6a162b62ef1677140036307f58477e19802e2",
+    "elliptic-curves/rank-jump/branch_blocks.py": "59b1a57f38192f3438516d8948feacebcddef0364f2bfb9ec883c7ae37806f7f",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_paired_quartet_relations.py": "b0de9e0c0990390a5e0af8f752b356ccf7aa99ef1f8503b11d14f6faf06bc648"
+  },
+  "boundary": "Exact rational group addition and independent finite Kummer signatures; no numerical-height assumption in this replay.",
+  "rows": [
+    {
+      "basis_rank": 24,
+      "exact_quotient_rank": 3,
+      "id": "08234-003",
+      "kernel_generic_coordinates": [
+        [
+          "-1",
+          "2",
+          "1",
+          "2",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "-2",
+          "1",
+          "1",
+          "0",
+          "0",
+          "-1",
+          "-1",
+          "-1",
+          "1"
+        ]
+      ],
+      "kernel_integer_vectors": [
+        [
+          1,
+          -1,
+          0,
+          1
+        ]
+      ],
+      "pair_ranks": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "quotient_rank": 2
+        },
+        {
+          "indices": [
+            0,
+            2
+          ],
+          "quotient_rank": 2
+        },
+        {
+          "indices": [
+            0,
+            3
+          ],
+          "quotient_rank": 2
+        },
+        {
+          "indices": [
+            1,
+            2
+          ],
+          "quotient_rank": 2
+        },
+        {
+          "indices": [
+            1,
+            3
+          ],
+          "quotient_rank": 2
+        },
+        {
+          "indices": [
+            2,
+            3
+          ],
+          "quotient_rank": 2
+        }
+      ],
+      "triple_ranks": [
+        {
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "quotient_rank": 3
+        },
+        {
+          "indices": [
+            0,
+            1,
+            3
+          ],
+          "quotient_rank": 2
+        },
+        {
+          "indices": [
+            0,
+            2,
+            3
+          ],
+          "quotient_rank": 3
+        },
+        {
+          "indices": [
+            1,
+            2,
+            3
+          ],
+          "quotient_rank": 3
+        }
+      ]
+    },
+    {
+      "basis_rank": 25,
+      "exact_quotient_rank": 3,
+      "id": "08234-009",
+      "kernel_generic_coordinates": [
+        [
+          "1",
+          "-4",
+          "0",
+          "-6",
+          "4",
+          "0",
+          "4",
+          "1",
+          "0",
+          "-2",
+          "0",
+          "2",
+          "1",
+          "0",
+          "-3",
+          "0",
+          "1"
+        ]
+      ],
+      "kernel_integer_vectors": [
+        [
+          1,
+          0,
+          1,
+          0
+        ]
+      ],
+      "pair_ranks": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "quotient_rank": 2
+        },
+        {
+          "indices": [
+            0,
+            2
+          ],
+          "quotient_rank": 1
+        },
+        {
+          "indices": [
+            0,
+            3
+          ],
+          "quotient_rank": 2
+        },
+        {
+          "indices": [
+            1,
+            2
+          ],
+          "quotient_rank": 2
+        },
+        {
+          "indices": [
+            1,
+            3
+          ],
+          "quotient_rank": 2
+        },
+        {
+          "indices": [
+            2,
+            3
+          ],
+          "quotient_rank": 2
+        }
+      ],
+      "triple_ranks": [
+        {
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "quotient_rank": 2
+        },
+        {
+          "indices": [
+            0,
+            1,
+            3
+          ],
+          "quotient_rank": 3
+        },
+        {
+          "indices": [
+            0,
+            2,
+            3
+          ],
+          "quotient_rank": 2
+        },
+        {
+          "indices": [
+            1,
+            2,
+            3
+          ],
+          "quotient_rank": 3
+        }
+      ]
+    }
+  ],
+  "schema": "rank-jump.paired-quartet-relations-verification.v1",
+  "status": "PASS"
+}

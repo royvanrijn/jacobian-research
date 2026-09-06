@@ -40,9 +40,10 @@ the two previously successful quartets and the existing obstructed control:
 
 These are comparisons between fixed cover systems on the same R17 family.
 The obstructed quartet is not a newly chosen low-rank curve. The two high
-fibres' four constructed points have a certified quotient rank **at least
-3 and at most 4**; neither this calculation nor their four square values
-prove rank four. Full ranks of the original fibres remain UNKNOWN.
+fibres' four constructed points now have certified quotient rank **exactly
+3**, by the subsequent [exact group-law audit](PAIRED_SOLUBILITY_AND_SPECIALIZATION_COLLAPSE.md).
+The original square-value calculation alone gave 3..4. Full ranks of the
+original fibres remain UNKNOWN.
 
 For each quartet, exact polynomial gcds verify that the four quadratics
 are squarefree with pairwise disjoint geometric branch divisors. All have

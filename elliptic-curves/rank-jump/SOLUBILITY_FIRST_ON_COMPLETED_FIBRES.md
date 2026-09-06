@@ -1,5 +1,10 @@
 # A rational-solubility condition explains part of four new jumps
 
+**Exact-rank follow-up:** [rational group-law certificates](PAIRED_SOLUBILITY_AND_SPECIALIZATION_COLLAPSE.md)
+close both four-cover quotient ranks to exactly three and prove integral
+containment in the retained witness groups. On +8, two cover points occupy
+the same quotient line; on +7, a triple is dependent modulo the generic group.
+
 **Follow-up:** [the exact compression audit](SOLUBLE_QUARTETS_REQUIRE_HIGHER_GENUS_LIFTS.md)
 proves that both four-cover carriers have genus 17 and admit no rational
 or elliptic parametrization. The full finite-chart atlas also has no
@@ -48,8 +53,8 @@ parameters, point-search boxes, scoring policies, or workers were introduced.
 
 | Fibre | Compact parameter s | Observed quotient rank in retained subgroup | Soluble covers | Certified constructed quotient rank |
 |---|---:|---:|---:|---:|
-| 08234-003 | 326/5 | 7 | 4 | at least 3, at most 4 |
-| 08234-009 | 774/149 | 8 | 4 | at least 3, at most 4 |
+| 08234-003 | 326/5 | 7 | 4 | exactly 3, by the relation follow-up |
+| 08234-009 | 774/149 | 8 | 4 | exactly 3, by the relation follow-up |
 | 08234-020 | -2185/106 | 5 | 3 | exactly 3 |
 | 08234-027 | 2627/65 | 5 | 2 | exactly 2 |
 | 08234-002 | -20/2827 | 2 | 1 | exactly 1 |
@@ -60,9 +65,11 @@ The other eight observations also have no split covers. There are 14 distinct
 successful labels and 14 total hits; these fibres do not reuse a successful
 label. No tested value is a branch degeneracy. The constructed points do not
 increase the finite-character rank of the retained witness bases; that fact
-alone does not prove containment in their rational spans. In the four-cover
-cases the character calculation proves three independent images, **not** a
-rational relation among all four.
+alone does not prove containment in their rational spans. The initial
+four-cover character calculation proved three independent images, without
+an upper bound below four. The exact-rank follow-up above now proves
+integral containment and the rational relations closing both ranks to three.
+The original immutable certificate retains its initial interval 3..4.
 
 All full fibre ranks and full quotient ranks remain **UNKNOWN**. A zero-gain
 observation means that the completed bounded search certified only the generic

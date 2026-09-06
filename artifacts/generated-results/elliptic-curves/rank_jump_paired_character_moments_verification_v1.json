@@ -1,0 +1,67 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_disjoint_soluble_carriers_v1.json": "c6b53de1bda3c1bf099f03f31c76d4786d68dd05bd8d58ce64c5da5977517396",
+    "artifacts/generated-results/elliptic-curves/rank_jump_global_pair_solubility_v1.json": "00c7eb1bddddb16d811c5f7b27533ff934b8f5600b777c7019ec0ee81f28cf5f",
+    "artifacts/generated-results/elliptic-curves/rank_jump_labelled_carrier_ct_v2.json": "0aa6ef81adb9dd3056f3ac9e9c2c34b8970cb1aba96e2655ad381029a8474950",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_twist_frobenius_v1.json": "9ffc26f180d6c7cf14f2696e094aacd9145044bf6ab257361fcfc50236d98335",
+    "artifacts/generated-results/elliptic-curves/rank_jump_paired_character_moments_v1.json": "74f57db580962ae869329dd9a27a5b4abe3278b4c48da45a086c468752e1204e",
+    "artifacts/generated-results/elliptic-curves/rank_jump_solubility_first_v1.json": "a25cfcabd8597ed5b5f5700336541751dc512af9977bf1d5118280f6008691de",
+    "artifacts/generated-results/elliptic-curves/rank_jump_soluble_quartet_compression_inputs_v1.json": "fe70c730c1f19bf3eae03f3e78b52c23ed7de041f64c1e635600561487aed976",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_paired_character_moments.py": "772b9ecc581d7508fcb57bdc2af0386531f305aa2edfc25c469fe8af80f47fc0"
+  },
+  "boundary": "Reuses the independently verified base fibre counts. Reweights them independently in actual finite fields; the global carrier solubility comparison is checked against the preceding exact class certificates.",
+  "characters_verified": 46,
+  "individual_cover_specialization_boundaries": [
+    {
+      "generic_twist_upper_bound": 7,
+      "label": "orbit-01333",
+      "source_id": "08234-003",
+      "witness_directions_outside_entire_specialized_pullback_span_at_least": 0
+    },
+    {
+      "generic_twist_upper_bound": 8,
+      "label": "orbit-0b2d0",
+      "source_id": "08234-003",
+      "witness_directions_outside_entire_specialized_pullback_span_at_least": 0
+    },
+    {
+      "generic_twist_upper_bound": 8,
+      "label": "orbit-13109",
+      "source_id": "08234-003",
+      "witness_directions_outside_entire_specialized_pullback_span_at_least": 0
+    },
+    {
+      "generic_twist_upper_bound": 8,
+      "label": "orbit-19e45",
+      "source_id": "08234-003",
+      "witness_directions_outside_entire_specialized_pullback_span_at_least": 0
+    },
+    {
+      "generic_twist_upper_bound": 6,
+      "label": "orbit-0911e",
+      "source_id": "08234-009",
+      "witness_directions_outside_entire_specialized_pullback_span_at_least": 2
+    },
+    {
+      "generic_twist_upper_bound": 8,
+      "label": "orbit-0a037",
+      "source_id": "08234-009",
+      "witness_directions_outside_entire_specialized_pullback_span_at_least": 0
+    },
+    {
+      "generic_twist_upper_bound": 7,
+      "label": "orbit-1795d",
+      "source_id": "08234-009",
+      "witness_directions_outside_entire_specialized_pullback_span_at_least": 1
+    },
+    {
+      "generic_twist_upper_bound": 8,
+      "label": "orbit-18f5d",
+      "source_id": "08234-009",
+      "witness_directions_outside_entire_specialized_pullback_span_at_least": 0
+    }
+  ],
+  "schema": "rank-jump.paired-character-moments-verification.v1",
+  "status": "PASS"
+}

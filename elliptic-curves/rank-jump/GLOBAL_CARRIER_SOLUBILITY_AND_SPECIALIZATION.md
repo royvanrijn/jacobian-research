@@ -6,6 +6,11 @@ below records the earlier incomplete computations, whose immutable outputs
 are retained. The two positive carrier results and the prescribed-parameter
 distinction remain valid.
 
+**Specialization follow-up:** the [exact quotient audit](PAIRED_SOLUBILITY_AND_SPECIALIZATION_COLLAPSE.md)
+shows that the positive pair `1795d,0911e` gives only one displayed quotient
+direction on the +8 fibre, despite two independent generic characters.
+Its global solubility and exact carrier-Jacobian rank two remain valid.
+
 The smallest cross-group pair from the completed bisection experiment has
 an **everywhere locally and globally soluble genus-one carrier**, despite
 having no simultaneous split in the 32-fibre sample. Its Jacobian has exact

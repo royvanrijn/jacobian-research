@@ -1,0 +1,2990 @@
+{
+  "bad_reduction_rows": 0,
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_twist_frobenius_v1.json": "9ffc26f180d6c7cf14f2696e094aacd9145044bf6ab257361fcfc50236d98335",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_twist_frobenius_verification_v2.json": "d3e8b8ce981a207e456e82fa10bc9dd394c567d198b720dc3d82736c96a1fcfe",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_twist_moment_parity_v1.json": "d1ea430e41cae1262aebca2741db5faa9a17e8bde284d6e4547fa61d8bf74646",
+    "artifacts/generated-results/elliptic-curves/rank_jump_soluble_quartet_compression_inputs_v1.json": "fe70c730c1f19bf3eae03f3e78b52c23ed7de041f64c1e635600561487aed976",
+    "elliptic-curves/rank-jump/PAIRED_CHARACTER_MOMENTS_PROTOCOL.json": "936ff988d2e96de88beb4ca4f23d2f538cab82c0cb328930e737403f34efcd4d",
+    "elliptic-curves/rank-jump/paired_character_moments.py": "b5d185bf7413bc5dd94d1305839bb516193aa423ce3a297f251e9a57f77881e7",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "boundary": "Exact incidence bounds for fixed construction routes. Original specialized ranks and simultaneous global solubility are separate and are not predicted by these bounds.",
+  "good_rows": 46,
+  "layer": "incidence",
+  "paired_carrier_comparisons": [
+    {
+      "carrier_Jacobian_exact_rank": 2,
+      "carrier_global_solubility": "YES",
+      "generic_pullback_rank_lower_bound": 19,
+      "generic_pullback_rank_upper_bound": 40,
+      "id": "positive_FG",
+      "labels": [
+        "orbit-0911e",
+        "orbit-1795d"
+      ],
+      "twist_bounds": [
+        {
+          "labels": [
+            "orbit-0911e"
+          ],
+          "lower": 1,
+          "upper": 6
+        },
+        {
+          "labels": [
+            "orbit-1795d"
+          ],
+          "lower": 1,
+          "upper": 7
+        },
+        {
+          "labels": [
+            "orbit-0911e",
+            "orbit-1795d"
+          ],
+          "lower": 0,
+          "upper": 10
+        }
+      ]
+    },
+    {
+      "carrier_Jacobian_exact_rank": 3,
+      "carrier_global_solubility": "YES",
+      "generic_pullback_rank_lower_bound": 19,
+      "generic_pullback_rank_upper_bound": 38,
+      "id": "cross_group_FD",
+      "labels": [
+        "orbit-1795d",
+        "orbit-11278"
+      ],
+      "twist_bounds": [
+        {
+          "labels": [
+            "orbit-1795d"
+          ],
+          "lower": 1,
+          "upper": 7
+        },
+        {
+          "labels": [
+            "orbit-11278"
+          ],
+          "lower": 1,
+          "upper": 7
+        },
+        {
+          "labels": [
+            "orbit-1795d",
+            "orbit-11278"
+          ],
+          "lower": 0,
+          "upper": 7
+        }
+      ]
+    },
+    {
+      "carrier_Jacobian_exact_rank": 2,
+      "carrier_global_solubility": "NO",
+      "generic_pullback_rank_lower_bound": 19,
+      "generic_pullback_rank_upper_bound": 38,
+      "id": "obstructed_AD",
+      "labels": [
+        "orbit-030cb",
+        "orbit-11278"
+      ],
+      "twist_bounds": [
+        {
+          "labels": [
+            "orbit-030cb"
+          ],
+          "lower": 1,
+          "upper": 6
+        },
+        {
+          "labels": [
+            "orbit-11278"
+          ],
+          "lower": 1,
+          "upper": 7
+        },
+        {
+          "labels": [
+            "orbit-030cb",
+            "orbit-11278"
+          ],
+          "lower": 0,
+          "upper": 8
+        }
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "Frobenius_traces": [
+        12,
+        66020
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 1,
+      "arithmetic_generic_rank_upper_bound": 7,
+      "cohomology_dimension": 24,
+      "exact_moment_bound": "2867232/323831",
+      "global_root_number": -1,
+      "good_reduction_gate": {
+        "actual_degree": 2,
+        "expected_degree": 2,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-01333"
+      ],
+      "mask": 1,
+      "moment_integer_bound": 8,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 33,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 89,
+          "root_number": 1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 89,
+          "root_number": -1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 109,
+          "root_number": 1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 27,
+          "root_number": 1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 33,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 1,
+      "quadratic_center": "-118685/205146",
+      "status": "PASS",
+      "system": "08234-003"
+    },
+    {
+      "Frobenius_traces": [
+        177,
+        -19523
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 1,
+      "arithmetic_generic_rank_upper_bound": 8,
+      "cohomology_dimension": 24,
+      "exact_moment_bound": "9353526/1123321",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 2,
+        "expected_degree": 2,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-0b2d0"
+      ],
+      "mask": 2,
+      "moment_integer_bound": 8,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 28,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 124,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 7,
+          "root_number": -1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 126,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 98,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 113,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 1,
+      "quadratic_center": "-345967/777354",
+      "status": "PASS",
+      "system": "08234-003"
+    },
+    {
+      "Frobenius_traces": [
+        -181,
+        -17223
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 8,
+      "cohomology_dimension": 28,
+      "exact_moment_bound": "12906458/1519145",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 4,
+        "expected_degree": 4,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-01333",
+        "orbit-0b2d0"
+      ],
+      "mask": 3,
+      "moment_integer_bound": 8,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 7,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 32,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 99,
+          "root_number": -1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 110,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 26,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 61,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 2,
+      "quadratic_center": "-510707/1008438",
+      "status": "PASS",
+      "system": "08234-003"
+    },
+    {
+      "Frobenius_traces": [
+        110,
+        16712
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 1,
+      "arithmetic_generic_rank_upper_bound": 8,
+      "cohomology_dimension": 24,
+      "exact_moment_bound": "1282703/149333",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 2,
+        "expected_degree": 2,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-13109"
+      ],
+      "mask": 4,
+      "moment_integer_bound": 8,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 45,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 67,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 101,
+          "root_number": -1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 18,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 40,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 81,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 1,
+      "quadratic_center": "-99939/198727",
+      "status": "PASS",
+      "system": "08234-003"
+    },
+    {
+      "Frobenius_traces": [
+        -194,
+        20844
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 8,
+      "cohomology_dimension": 28,
+      "exact_moment_bound": "1745323/195503",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 4,
+        "expected_degree": 4,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-01333",
+        "orbit-13109"
+      ],
+      "mask": 5,
+      "moment_integer_bound": 8,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 44,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 68,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 81,
+          "root_number": -1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 128,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 32,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 53,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 2,
+      "quadratic_center": "-138045/252961",
+      "status": "PASS",
+      "system": "08234-003"
+    },
+    {
+      "Frobenius_traces": [
+        -37,
+        18341
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 9,
+      "cohomology_dimension": 28,
+      "exact_moment_bound": "13965034/1479253",
+      "global_root_number": -1,
+      "good_reduction_gate": {
+        "actual_degree": 4,
+        "expected_degree": 4,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-0b2d0",
+        "orbit-13109"
+      ],
+      "mask": 6,
+      "moment_integer_bound": 9,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 81,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 55,
+          "root_number": 1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 52,
+          "root_number": -1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 41,
+          "root_number": 1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 121,
+          "root_number": 1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 114,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 2,
+      "quadratic_center": "-508543/970710",
+      "status": "PASS",
+      "system": "08234-003"
+    },
+    {
+      "Frobenius_traces": [
+        -27,
+        -4863
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 9,
+      "cohomology_dimension": 32,
+      "exact_moment_bound": "17415790/1656741",
+      "global_root_number": -1,
+      "good_reduction_gate": {
+        "actual_degree": 6,
+        "expected_degree": 6,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-01333",
+        "orbit-0b2d0",
+        "orbit-13109"
+      ],
+      "mask": 7,
+      "moment_integer_bound": 10,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 53,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 48,
+          "root_number": 1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 43,
+          "root_number": -1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 15,
+          "root_number": 1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 123,
+          "root_number": 1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 94,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 3,
+      "quadratic_center": "-551363/1105378",
+      "status": "PASS",
+      "system": "08234-003"
+    },
+    {
+      "Frobenius_traces": [
+        64,
+        108
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 1,
+      "arithmetic_generic_rank_upper_bound": 8,
+      "cohomology_dimension": 24,
+      "exact_moment_bound": "2469784/300541",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 2,
+        "expected_degree": 2,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-19e45"
+      ],
+      "mask": 8,
+      "moment_integer_bound": 8,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 80,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 79,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 78,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 54,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 3,
+          "root_number": 1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 60,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 1,
+      "quadratic_center": "-98801/201740",
+      "status": "PASS",
+      "system": "08234-003"
+    },
+    {
+      "Frobenius_traces": [
+        -384,
+        -24688
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 6,
+      "cohomology_dimension": 28,
+      "exact_moment_bound": "3117012/404513",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 4,
+        "expected_degree": 4,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-01333",
+        "orbit-19e45"
+      ],
+      "mask": 9,
+      "moment_integer_bound": 7,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 20,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 88,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 130,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 122,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 81,
+          "root_number": 1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 15,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 2,
+      "quadratic_center": "-139107/265406",
+      "status": "PASS",
+      "system": "08234-003"
+    },
+    {
+      "Frobenius_traces": [
+        -71,
+        53409
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 9,
+      "cohomology_dimension": 28,
+      "exact_moment_bound": "14939594/1532137",
+      "global_root_number": -1,
+      "good_reduction_gate": {
+        "actual_degree": 4,
+        "expected_degree": 4,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-0b2d0",
+        "orbit-19e45"
+      ],
+      "mask": 10,
+      "moment_integer_bound": 9,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 13,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 102,
+          "root_number": 1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 22,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 123,
+          "root_number": 1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 32,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 99,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 2,
+      "quadratic_center": "-552519/979618",
+      "status": "PASS",
+      "system": "08234-003"
+    },
+    {
+      "Frobenius_traces": [
+        203,
+        -53891
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 9,
+      "cohomology_dimension": 32,
+      "exact_moment_bound": "15765934/1487193",
+      "global_root_number": -1,
+      "good_reduction_gate": {
+        "actual_degree": 6,
+        "expected_degree": 6,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-01333",
+        "orbit-0b2d0",
+        "orbit-19e45"
+      ],
+      "mask": 11,
+      "moment_integer_bound": 10,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 36,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 39,
+          "root_number": 1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 124,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 45,
+          "root_number": 1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 78,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 123,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 3,
+      "quadratic_center": "-442075/1045118",
+      "status": "PASS",
+      "system": "08234-003"
+    },
+    {
+      "Frobenius_traces": [
+        -106,
+        4412
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 9,
+      "cohomology_dimension": 28,
+      "exact_moment_bound": "1694411/187685",
+      "global_root_number": -1,
+      "good_reduction_gate": {
+        "actual_degree": 4,
+        "expected_degree": 4,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-13109",
+        "orbit-19e45"
+      ],
+      "mask": 12,
+      "moment_integer_bound": 9,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 63,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 53,
+          "root_number": 1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 18,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 55,
+          "root_number": 1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 120,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 13,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 2,
+      "quadratic_center": "-128173/247197",
+      "status": "PASS",
+      "system": "08234-003"
+    },
+    {
+      "Frobenius_traces": [
+        -26,
+        7008
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 9,
+      "cohomology_dimension": 32,
+      "exact_moment_bound": "2224471/208511",
+      "global_root_number": -1,
+      "good_reduction_gate": {
+        "actual_degree": 6,
+        "expected_degree": 6,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-01333",
+        "orbit-13109",
+        "orbit-19e45"
+      ],
+      "mask": 13,
+      "moment_integer_bound": 10,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 114,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 1,
+          "root_number": 1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 30,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 100,
+          "root_number": 1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 96,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 36,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 3,
+      "quadratic_center": "-140743/276279",
+      "status": "PASS",
+      "system": "08234-003"
+    },
+    {
+      "Frobenius_traces": [
+        -417,
+        -7151
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 8,
+      "cohomology_dimension": 32,
+      "exact_moment_bound": "1545114/168983",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 6,
+        "expected_degree": 6,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-0b2d0",
+        "orbit-13109",
+        "orbit-19e45"
+      ],
+      "mask": 14,
+      "moment_integer_bound": 9,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 61,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 22,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 126,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 118,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 101,
+          "root_number": 1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 28,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 3,
+      "quadratic_center": "-59205/109778",
+      "status": "PASS",
+      "system": "08234-003"
+    },
+    {
+      "Frobenius_traces": [
+        17,
+        -691
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 12,
+      "cohomology_dimension": 36,
+      "exact_moment_bound": "22215202/1843789",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 8,
+        "expected_degree": 8,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-01333",
+        "orbit-0b2d0",
+        "orbit-13109",
+        "orbit-19e45"
+      ],
+      "mask": 15,
+      "moment_integer_bound": 12,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 48,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 124,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 79,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 24,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 107,
+          "root_number": 1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 7,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 4,
+      "quadratic_center": "-612651/1231138",
+      "status": "PASS",
+      "system": "08234-003"
+    },
+    {
+      "Frobenius_traces": [
+        -52,
+        -2852
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 1,
+      "arithmetic_generic_rank_upper_bound": 6,
+      "cohomology_dimension": 24,
+      "exact_moment_bound": "2452720/314997",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 2,
+        "expected_degree": 2,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-0911e"
+      ],
+      "mask": 1,
+      "moment_integer_bound": 7,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 101,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 117,
+          "root_number": 1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 72,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 119,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 80,
+          "root_number": 1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 90,
+          "root_number": 1
+        }
+      ],
+      "number_of_quadratics": 1,
+      "quadratic_center": "-105659/209338",
+      "status": "PASS",
+      "system": "08234-009"
+    },
+    {
+      "Frobenius_traces": [
+        84,
+        25636
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 1,
+      "arithmetic_generic_rank_upper_bound": 8,
+      "cohomology_dimension": 24,
+      "exact_moment_bound": "2621472/304303",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 2,
+        "expected_degree": 2,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-0a037"
+      ],
+      "mask": 2,
+      "moment_integer_bound": 8,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 47,
+          "root_number": 1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 17,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 19,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 8,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 97,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 91,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 1,
+      "quadratic_center": "-103873/200430",
+      "status": "PASS",
+      "system": "08234-009"
+    },
+    {
+      "Frobenius_traces": [
+        104,
+        26192
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 9,
+      "cohomology_dimension": 28,
+      "exact_moment_bound": "3541492/353305",
+      "global_root_number": -1,
+      "good_reduction_gate": {
+        "actual_degree": 4,
+        "expected_degree": 4,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-0911e",
+        "orbit-0a037"
+      ],
+      "mask": 3,
+      "moment_integer_bound": 10,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 31,
+          "root_number": 1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 24,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 58,
+          "root_number": -1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 35,
+          "root_number": 1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 31,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 68,
+          "root_number": 1
+        }
+      ],
+      "number_of_quadratics": 2,
+      "quadratic_center": "-119863/233442",
+      "status": "PASS",
+      "system": "08234-009"
+    },
+    {
+      "Frobenius_traces": [
+        122,
+        33710
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 1,
+      "arithmetic_generic_rank_upper_bound": 7,
+      "cohomology_dimension": 24,
+      "exact_moment_bound": "5332004/602687",
+      "global_root_number": -1,
+      "good_reduction_gate": {
+        "actual_degree": 2,
+        "expected_degree": 2,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-1795d"
+      ],
+      "mask": 4,
+      "moment_integer_bound": 8,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 24,
+          "root_number": 1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 63,
+          "root_number": 1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 73,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 47,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 54,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 35,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 1,
+      "quadratic_center": "-206805/395882",
+      "status": "PASS",
+      "system": "08234-009"
+    },
+    {
+      "Frobenius_traces": [
+        360,
+        27242
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 10,
+      "cohomology_dimension": 28,
+      "exact_moment_bound": "6978900/640063",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 4,
+        "expected_degree": 4,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-0911e",
+        "orbit-1795d"
+      ],
+      "mask": 5,
+      "moment_integer_bound": 10,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 66,
+          "root_number": 1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 35,
+          "root_number": 1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 16,
+          "root_number": -1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 91,
+          "root_number": 1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 128,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 6,
+          "root_number": 1
+        }
+      ],
+      "number_of_quadratics": 2,
+      "quadratic_center": "-206715/433348",
+      "status": "PASS",
+      "system": "08234-009"
+    },
+    {
+      "Frobenius_traces": [
+        -128,
+        7714
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 8,
+      "cohomology_dimension": 28,
+      "exact_moment_bound": "6818724/758155",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 4,
+        "expected_degree": 4,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-0a037",
+        "orbit-1795d"
+      ],
+      "mask": 6,
+      "moment_integer_bound": 8,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 80,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 23,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 77,
+          "root_number": -1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 114,
+          "root_number": 1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 129,
+          "root_number": 1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 41,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 2,
+      "quadratic_center": "-260879/497276",
+      "status": "PASS",
+      "system": "08234-009"
+    },
+    {
+      "Frobenius_traces": [
+        46,
+        13550
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 9,
+      "cohomology_dimension": 32,
+      "exact_moment_bound": "1000124/90939",
+      "global_root_number": -1,
+      "good_reduction_gate": {
+        "actual_degree": 6,
+        "expected_degree": 6,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-0911e",
+        "orbit-0a037",
+        "orbit-1795d"
+      ],
+      "mask": 7,
+      "moment_integer_bound": 10,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 89,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 71,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 42,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 73,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 102,
+          "root_number": 1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 22,
+          "root_number": 1
+        }
+      ],
+      "number_of_quadratics": 3,
+      "quadratic_center": "-91775/181042",
+      "status": "PASS",
+      "system": "08234-009"
+    },
+    {
+      "Frobenius_traces": [
+        -12,
+        4444
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 1,
+      "arithmetic_generic_rank_upper_bound": 8,
+      "cohomology_dimension": 24,
+      "exact_moment_bound": "2497776/311581",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 2,
+        "expected_degree": 2,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-18f5d"
+      ],
+      "mask": 8,
+      "moment_integer_bound": 8,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 108,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 36,
+          "root_number": 1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 60,
+          "root_number": -1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 47,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 70,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 32,
+          "root_number": 1
+        }
+      ],
+      "number_of_quadratics": 1,
+      "quadratic_center": "-104863/206718",
+      "status": "PASS",
+      "system": "08234-009"
+    },
+    {
+      "Frobenius_traces": [
+        76,
+        5432
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 9,
+      "cohomology_dimension": 28,
+      "exact_moment_bound": "3398692/351783",
+      "global_root_number": -1,
+      "good_reduction_gate": {
+        "actual_degree": 4,
+        "expected_degree": 4,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-0911e",
+        "orbit-18f5d"
+      ],
+      "mask": 9,
+      "moment_integer_bound": 9,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 35,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 20,
+          "root_number": 1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 128,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 91,
+          "root_number": 1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 98,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 129,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 2,
+      "quadratic_center": "-116507/235276",
+      "status": "PASS",
+      "system": "08234-009"
+    },
+    {
+      "Frobenius_traces": [
+        8,
+        -13512
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 9,
+      "cohomology_dimension": 28,
+      "exact_moment_bound": "653788/71191",
+      "global_root_number": -1,
+      "good_reduction_gate": {
+        "actual_degree": 4,
+        "expected_degree": 4,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-0a037",
+        "orbit-18f5d"
+      ],
+      "mask": 10,
+      "moment_integer_bound": 9,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 98,
+          "root_number": 1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 88,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 92,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 114,
+          "root_number": 1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 109,
+          "root_number": 1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 30,
+          "root_number": 1
+        }
+      ],
+      "number_of_quadratics": 2,
+      "quadratic_center": "-23245/47946",
+      "status": "PASS",
+      "system": "08234-009"
+    },
+    {
+      "Frobenius_traces": [
+        -124,
+        35348
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 10,
+      "cohomology_dimension": 32,
+      "exact_moment_bound": "4668312/436945",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 6,
+        "expected_degree": 6,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-0911e",
+        "orbit-0a037",
+        "orbit-18f5d"
+      ],
+      "mask": 11,
+      "moment_integer_bound": 10,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 73,
+          "root_number": 1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 78,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 74,
+          "root_number": -1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 73,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 74,
+          "root_number": 1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 80,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 3,
+      "quadratic_center": "-154247/282698",
+      "status": "PASS",
+      "system": "08234-009"
+    },
+    {
+      "Frobenius_traces": [
+        -156,
+        -23078
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 8,
+      "cohomology_dimension": 28,
+      "exact_moment_bound": "6379684/750095",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 4,
+        "expected_degree": 4,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-1795d",
+        "orbit-18f5d"
+      ],
+      "mask": 12,
+      "moment_integer_bound": 8,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 103,
+          "root_number": 1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 41,
+          "root_number": 1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 57,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 113,
+          "root_number": 1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 112,
+          "root_number": 1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 72,
+          "root_number": 1
+        }
+      ],
+      "number_of_quadratics": 2,
+      "quadratic_center": "-249151/500944",
+      "status": "PASS",
+      "system": "08234-009"
+    },
+    {
+      "Frobenius_traces": [
+        -10,
+        8790
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 9,
+      "cohomology_dimension": 32,
+      "exact_moment_bound": "8926972/830743",
+      "global_root_number": -1,
+      "good_reduction_gate": {
+        "actual_degree": 6,
+        "expected_degree": 6,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-0911e",
+        "orbit-1795d",
+        "orbit-18f5d"
+      ],
+      "mask": 13,
+      "moment_integer_bound": 10,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 54,
+          "root_number": 1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 81,
+          "root_number": 1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 43,
+          "root_number": -1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 85,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 52,
+          "root_number": 1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 61,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 3,
+      "quadratic_center": "-280281/550462",
+      "status": "PASS",
+      "system": "08234-009"
+    },
+    {
+      "Frobenius_traces": [
+        -110,
+        -19690
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 9,
+      "cohomology_dimension": 32,
+      "exact_moment_bound": "2819764/280901",
+      "global_root_number": -1,
+      "good_reduction_gate": {
+        "actual_degree": 6,
+        "expected_degree": 6,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-0a037",
+        "orbit-1795d",
+        "orbit-18f5d"
+      ],
+      "mask": 14,
+      "moment_integer_bound": 10,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 125,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 42,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 35,
+          "root_number": -1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 118,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 122,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 2,
+          "root_number": 1
+        }
+      ],
+      "number_of_quadratics": 3,
+      "quadratic_center": "-93047/187854",
+      "status": "PASS",
+      "system": "08234-009"
+    },
+    {
+      "Frobenius_traces": [
+        -20,
+        -14638
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 10,
+      "cohomology_dimension": 36,
+      "exact_moment_bound": "10856444/924615",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 8,
+        "expected_degree": 8,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-0911e",
+        "orbit-0a037",
+        "orbit-1795d",
+        "orbit-18f5d"
+      ],
+      "mask": 15,
+      "moment_integer_bound": 11,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 49,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 67,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 31,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 25,
+          "root_number": 1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 66,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 49,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 4,
+      "quadratic_center": "-304199/620416",
+      "status": "PASS",
+      "system": "08234-009"
+    },
+    {
+      "Frobenius_traces": [
+        -86,
+        16644
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 1,
+      "arithmetic_generic_rank_upper_bound": 6,
+      "cohomology_dimension": 24,
+      "exact_moment_bound": "102694/12973",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 2,
+        "expected_degree": 2,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-030cb"
+      ],
+      "mask": 1,
+      "moment_integer_bound": 7,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 53,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 127,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 93,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 99,
+          "root_number": 1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 114,
+          "root_number": 1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 70,
+          "root_number": 1
+        }
+      ],
+      "number_of_quadratics": 1,
+      "quadratic_center": "-22552/42313",
+      "status": "PASS",
+      "system": "obstructed_ABCD"
+    },
+    {
+      "Frobenius_traces": [
+        -30,
+        3422
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 1,
+      "arithmetic_generic_rank_upper_bound": 7,
+      "cohomology_dimension": 24,
+      "exact_moment_bound": "4982532/627367",
+      "global_root_number": -1,
+      "good_reduction_gate": {
+        "actual_degree": 2,
+        "expected_degree": 2,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-03da0"
+      ],
+      "mask": 2,
+      "moment_integer_bound": 7,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 9,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 124,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 127,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 67,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 75,
+          "root_number": 1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 23,
+          "root_number": 1
+        }
+      ],
+      "number_of_quadratics": 1,
+      "quadratic_center": "-211573/415794",
+      "status": "PASS",
+      "system": "obstructed_ABCD"
+    },
+    {
+      "Frobenius_traces": [
+        116,
+        -8094
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 8,
+      "cohomology_dimension": 28,
+      "exact_moment_bound": "6600340/686323",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 4,
+        "expected_degree": 4,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-030cb",
+        "orbit-03da0"
+      ],
+      "mask": 3,
+      "moment_integer_bound": 9,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 84,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 28,
+          "root_number": 1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 21,
+          "root_number": -1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 83,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 35,
+          "root_number": 1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 38,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 2,
+      "quadratic_center": "-221011/465312",
+      "status": "PASS",
+      "system": "obstructed_ABCD"
+    },
+    {
+      "Frobenius_traces": [
+        -1,
+        51613
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 1,
+      "arithmetic_generic_rank_upper_bound": 8,
+      "cohomology_dimension": 24,
+      "exact_moment_bound": "11123446/1287729",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 2,
+        "expected_degree": 2,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-07086"
+      ],
+      "mask": 4,
+      "moment_integer_bound": 8,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 89,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 67,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 23,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 71,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 107,
+          "root_number": 1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 64,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 1,
+      "quadratic_center": "-463739/823990",
+      "status": "PASS",
+      "system": "obstructed_ABCD"
+    },
+    {
+      "Frobenius_traces": [
+        -61,
+        18129
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 9,
+      "cohomology_dimension": 28,
+      "exact_moment_bound": "13954394/1491617",
+      "global_root_number": -1,
+      "good_reduction_gate": {
+        "actual_degree": 4,
+        "expected_degree": 4,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-030cb",
+        "orbit-07086"
+      ],
+      "mask": 5,
+      "moment_integer_bound": 9,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 1,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 125,
+          "root_number": 1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 43,
+          "root_number": -1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 86,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 15,
+          "root_number": 1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 26,
+          "root_number": 1
+        }
+      ],
+      "number_of_quadratics": 2,
+      "quadratic_center": "-514619/976998",
+      "status": "PASS",
+      "system": "obstructed_ABCD"
+    },
+    {
+      "Frobenius_traces": [
+        -37,
+        -9573
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 8,
+      "cohomology_dimension": 28,
+      "exact_moment_bound": "13183442/1451339",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 4,
+        "expected_degree": 4,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-03da0",
+        "orbit-07086"
+      ],
+      "mask": 6,
+      "moment_integer_bound": 9,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 15,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 55,
+          "root_number": 1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 39,
+          "root_number": -1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 41,
+          "root_number": 1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 34,
+          "root_number": 1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 31,
+          "root_number": 1
+        }
+      ],
+      "number_of_quadratics": 2,
+      "quadratic_center": "-480629/970710",
+      "status": "PASS",
+      "system": "obstructed_ABCD"
+    },
+    {
+      "Frobenius_traces": [
+        -169,
+        32639
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 9,
+      "cohomology_dimension": 32,
+      "exact_moment_bound": "18560190/1768651",
+      "global_root_number": -1,
+      "good_reduction_gate": {
+        "actual_degree": 6,
+        "expected_degree": 6,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-030cb",
+        "orbit-03da0",
+        "orbit-07086"
+      ],
+      "mask": 7,
+      "moment_integer_bound": 10,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 9,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 42,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 90,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 129,
+          "root_number": 1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 77,
+          "root_number": 1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 74,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 3,
+      "quadratic_center": "-626069/1142582",
+      "status": "PASS",
+      "system": "obstructed_ABCD"
+    },
+    {
+      "Frobenius_traces": [
+        0,
+        21538
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 1,
+      "arithmetic_generic_rank_upper_bound": 7,
+      "cohomology_dimension": 24,
+      "exact_moment_bound": "5200824/628565",
+      "global_root_number": -1,
+      "good_reduction_gate": {
+        "actual_degree": 2,
+        "expected_degree": 2,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-11278"
+      ],
+      "mask": 8,
+      "moment_integer_bound": 8,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 103,
+          "root_number": 1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 61,
+          "root_number": 1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 4,
+          "root_number": -1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 24,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 40,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 66,
+          "root_number": 1
+        }
+      ],
+      "number_of_quadratics": 1,
+      "quadratic_center": "-216701/411864",
+      "status": "PASS",
+      "system": "obstructed_ABCD"
+    },
+    {
+      "Frobenius_traces": [
+        -86,
+        -31930
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 8,
+      "cohomology_dimension": 28,
+      "exact_moment_bound": "6272696/727329",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 4,
+        "expected_degree": 4,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-030cb",
+        "orbit-11278"
+      ],
+      "mask": 9,
+      "moment_integer_bound": 8,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 88,
+          "root_number": 1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 18,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 110,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 18,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 106,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 35,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 2,
+      "quadratic_center": "-235555/491774",
+      "status": "PASS",
+      "system": "obstructed_ABCD"
+    },
+    {
+      "Frobenius_traces": [
+        -362,
+        62616
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 7,
+      "cohomology_dimension": 28,
+      "exact_moment_bound": "3736346/423457",
+      "global_root_number": -1,
+      "good_reduction_gate": {
+        "actual_degree": 4,
+        "expected_degree": 4,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-03da0",
+        "orbit-11278"
+      ],
+      "mask": 10,
+      "moment_integer_bound": 8,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 10,
+          "root_number": 1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 97,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 115,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 36,
+          "root_number": 1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 118,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 77,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 2,
+      "quadratic_center": "-159492/263965",
+      "status": "PASS",
+      "system": "obstructed_ABCD"
+    },
+    {
+      "Frobenius_traces": [
+        -36,
+        -57316
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 8,
+      "cohomology_dimension": 32,
+      "exact_moment_bound": "3934040/402251",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 6,
+        "expected_degree": 6,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-030cb",
+        "orbit-03da0",
+        "orbit-11278"
+      ],
+      "mask": 11,
+      "moment_integer_bound": 9,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 6,
+          "root_number": 1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 5,
+          "root_number": 1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 84,
+          "root_number": -1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 27,
+          "root_number": 1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 90,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 19,
+          "root_number": 1
+        }
+      ],
+      "number_of_quadratics": 3,
+      "quadratic_center": "-125317/276934",
+      "status": "PASS",
+      "system": "obstructed_ABCD"
+    },
+    {
+      "Frobenius_traces": [
+        -247,
+        -14617
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 8,
+      "cohomology_dimension": 28,
+      "exact_moment_bound": "2584586/311267",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 4,
+        "expected_degree": 4,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-07086",
+        "orbit-11278"
+      ],
+      "mask": 12,
+      "moment_integer_bound": 8,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 128,
+          "root_number": 1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 26,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 92,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 1,
+          "root_number": 1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 88,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 32,
+          "root_number": 1
+        }
+      ],
+      "number_of_quadratics": 2,
+      "quadratic_center": "-106121/205146",
+      "status": "PASS",
+      "system": "obstructed_ABCD"
+    },
+    {
+      "Frobenius_traces": [
+        81,
+        -12453
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 9,
+      "cohomology_dimension": 32,
+      "exact_moment_bound": "17161246/1592559",
+      "global_root_number": -1,
+      "good_reduction_gate": {
+        "actual_degree": 6,
+        "expected_degree": 6,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-030cb",
+        "orbit-07086",
+        "orbit-11278"
+      ],
+      "mask": 13,
+      "moment_integer_bound": 10,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 103,
+          "root_number": 1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 27,
+          "root_number": 1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 41,
+          "root_number": -1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 99,
+          "root_number": 1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 76,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 13,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 3,
+      "quadratic_center": "-515477/1077082",
+      "status": "PASS",
+      "system": "obstructed_ABCD"
+    },
+    {
+      "Frobenius_traces": [
+        193,
+        38045
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 10,
+      "cohomology_dimension": 32,
+      "exact_moment_bound": "2079534/176041",
+      "global_root_number": 1,
+      "good_reduction_gate": {
+        "actual_degree": 6,
+        "expected_degree": 6,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-03da0",
+        "orbit-07086",
+        "orbit-11278"
+      ],
+      "mask": 14,
+      "moment_integer_bound": 11,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 104,
+          "root_number": 1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 80,
+          "root_number": 1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 25,
+          "root_number": -1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 67,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 50,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 81,
+          "root_number": -1
+        }
+      ],
+      "number_of_quadratics": 3,
+      "quadratic_center": "-178877/349246",
+      "status": "PASS",
+      "system": "obstructed_ABCD"
+    },
+    {
+      "Frobenius_traces": [
+        -423,
+        15265
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 9,
+      "cohomology_dimension": 36,
+      "exact_moment_bound": "22432338/2090305",
+      "global_root_number": -1,
+      "good_reduction_gate": {
+        "actual_degree": 8,
+        "expected_degree": 8,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-030cb",
+        "orbit-03da0",
+        "orbit-07086",
+        "orbit-11278"
+      ],
+      "mask": 15,
+      "moment_integer_bound": 10,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 10,
+          "root_number": 1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 73,
+          "root_number": -1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 98,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 83,
+          "root_number": -1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 67,
+          "root_number": -1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 37,
+          "root_number": 1
+        }
+      ],
+      "number_of_quadratics": 4,
+      "quadratic_center": "-743887/1346418",
+      "status": "PASS",
+      "system": "obstructed_ABCD"
+    },
+    {
+      "Frobenius_traces": [
+        -230,
+        29024
+      ],
+      "additive_root_number_product": 1,
+      "arithmetic_generic_rank_lower_bound": 0,
+      "arithmetic_generic_rank_upper_bound": 7,
+      "cohomology_dimension": 28,
+      "exact_moment_bound": "3540274/397767",
+      "global_root_number": -1,
+      "good_reduction_gate": {
+        "actual_degree": 4,
+        "expected_degree": 4,
+        "gcd_with_original_discriminant_degree": 0,
+        "squarefree": true
+      },
+      "labels": [
+        "orbit-1795d",
+        "orbit-11278"
+      ],
+      "mask": 3,
+      "moment_integer_bound": 8,
+      "multiplicative_root_numbers": [
+        {
+          "factor_index": 0,
+          "norm_of_product": 114,
+          "root_number": -1
+        },
+        {
+          "factor_index": 1,
+          "norm_of_product": 44,
+          "root_number": 1
+        },
+        {
+          "factor_index": 2,
+          "norm_of_product": 30,
+          "root_number": 1
+        },
+        {
+          "factor_index": 3,
+          "norm_of_product": 80,
+          "root_number": 1
+        },
+        {
+          "factor_index": 4,
+          "norm_of_product": 64,
+          "root_number": 1
+        },
+        {
+          "factor_index": 5,
+          "norm_of_product": 83,
+          "root_number": 1
+        }
+      ],
+      "number_of_quadratics": 2,
+      "quadratic_center": "-142448/255319",
+      "status": "PASS",
+      "system": "cross_group_FD"
+    }
+  ],
+  "schema": "rank-jump.paired-character-moments.v1",
+  "singleton_bounds": [
+    {
+      "arithmetic_generic_rank_upper_bound": 7,
+      "labels": [
+        "orbit-01333"
+      ],
+      "status": "PASS",
+      "system": "08234-003"
+    },
+    {
+      "arithmetic_generic_rank_upper_bound": 8,
+      "labels": [
+        "orbit-0b2d0"
+      ],
+      "status": "PASS",
+      "system": "08234-003"
+    },
+    {
+      "arithmetic_generic_rank_upper_bound": 8,
+      "labels": [
+        "orbit-13109"
+      ],
+      "status": "PASS",
+      "system": "08234-003"
+    },
+    {
+      "arithmetic_generic_rank_upper_bound": 8,
+      "labels": [
+        "orbit-19e45"
+      ],
+      "status": "PASS",
+      "system": "08234-003"
+    },
+    {
+      "arithmetic_generic_rank_upper_bound": 6,
+      "labels": [
+        "orbit-0911e"
+      ],
+      "status": "PASS",
+      "system": "08234-009"
+    },
+    {
+      "arithmetic_generic_rank_upper_bound": 8,
+      "labels": [
+        "orbit-0a037"
+      ],
+      "status": "PASS",
+      "system": "08234-009"
+    },
+    {
+      "arithmetic_generic_rank_upper_bound": 7,
+      "labels": [
+        "orbit-1795d"
+      ],
+      "status": "PASS",
+      "system": "08234-009"
+    },
+    {
+      "arithmetic_generic_rank_upper_bound": 8,
+      "labels": [
+        "orbit-18f5d"
+      ],
+      "status": "PASS",
+      "system": "08234-009"
+    },
+    {
+      "arithmetic_generic_rank_upper_bound": 6,
+      "labels": [
+        "orbit-030cb"
+      ],
+      "status": "PASS",
+      "system": "obstructed_ABCD"
+    },
+    {
+      "arithmetic_generic_rank_upper_bound": 7,
+      "labels": [
+        "orbit-03da0"
+      ],
+      "status": "PASS",
+      "system": "obstructed_ABCD"
+    },
+    {
+      "arithmetic_generic_rank_upper_bound": 8,
+      "labels": [
+        "orbit-07086"
+      ],
+      "status": "PASS",
+      "system": "obstructed_ABCD"
+    },
+    {
+      "arithmetic_generic_rank_upper_bound": 7,
+      "labels": [
+        "orbit-11278"
+      ],
+      "status": "PASS",
+      "system": "obstructed_ABCD"
+    }
+  ],
+  "status": "PASS"
+}
