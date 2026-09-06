@@ -1,0 +1,14 @@
+{
+  "schema": "rank-jump.unpointed-governing-norm-protocol.v1",
+  "question": "Can a cubic norm witness construct a governing cochain for two strict classes without using elliptic rational points?",
+  "layer": "solubility obstruction",
+  "cubic_ascending": [-1, -14, -11, 1],
+  "alpha_ascending": [1, -10, 1],
+  "beta_ascending": [12, -13, 1],
+  "selection": "Use the two already retained class-group strict generators in their original order. Their rational/Sha outcomes are already known; this is a confirmatory construction test, not a blinded rank prediction.",
+  "norm_equation": "X^2-alpha*Y^2=beta in the fixed cubic field",
+  "limits": {"worker_seconds": 60, "prime_bound": 199, "pari_stack_bytes": 256000000, "norm_equations": 1, "point_searches": 0, "parameter_searches": 0},
+  "seed": 20260906,
+  "endpoints": ["Exact cubic norm witness", "Symbolic octic identity and direct cup cocycle", "Independent modular factorization and radical evaluation at eligible inert primes", "Explicit Galois group of the small octic, without assuming the S3 independence theorem for this cyclic cubic"],
+  "failure_semantics": "A norm timeout is UNKNOWN. A failed identity refutes this construction. No norm witness, cochain, or zero governing bit alone proves rational solubility."
+}

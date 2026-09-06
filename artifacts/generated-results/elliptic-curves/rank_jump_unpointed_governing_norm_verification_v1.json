@@ -1,0 +1,204 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_scalar_cup_control_v1.json": "cba061a6ecfd64447a06f7c41dc89b4fb2800188067328ea58a535d7675b50b3",
+    "artifacts/generated-results/elliptic-curves/rank_jump_unpointed_governing_norm_v1.json": "a0046d2a9c51b5121bfdb2e66d8e1b588ce2c0c2128e673cd4cfa2ab61b1d8f8",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_explicit_governing_octic.py": "7d2567d37c720b56b21fd3f26e6fddd139fff646079d556f0d809260c04f3524",
+    "elliptic-curves/rank-jump/verify_unpointed_governing_norm.py": "69828517faa1ebdc92218dc338cfe156fbc8a16020bf6b28d8f59a60bc4c847a"
+  },
+  "boundary": "Exact norm, cochain, Galois and ramification construction for class-selected Sha controls; no rational-solubility conclusion.",
+  "conjugate_square_multiplier": [
+    "-29/25",
+    "-23/25",
+    "2/25"
+  ],
+  "cubic_automorphism": [
+    "-2",
+    "-12",
+    "1"
+  ],
+  "finite_ramification_support_contained_in": [
+    2,
+    163
+  ],
+  "group": {
+    "small_galois_relation": "beta_i=alpha_(i+1); f_i=e_(i+1)",
+    "small_group_order": 24,
+    "small_group_structure": "Q8 semidirect C3 with nontrivial order-three action; SL(2,3)",
+    "small_inert_cycle_counts": {
+      "(0, (1, 1, 3, 3))": 8,
+      "(1, (2, 6))": 8
+    },
+    "small_order_counts": {
+      "1": 1,
+      "2": 1,
+      "3": 8,
+      "4": 6,
+      "6": 8
+    },
+    "universal_cup_action_checks": 36864,
+    "universal_group_order": 192
+  },
+  "norm_identity": true,
+  "old_root_in_reduced_algebra": [
+    "0",
+    "135/2",
+    "0",
+    "-435/4",
+    "0",
+    "195/8",
+    "0",
+    "-45/32"
+  ],
+  "prime_replays": [
+    {
+      "prime": 7,
+      "psi": 0
+    },
+    {
+      "prime": 11,
+      "psi": 1
+    },
+    {
+      "prime": 19,
+      "psi": 1
+    },
+    {
+      "prime": 29,
+      "psi": 0
+    },
+    {
+      "prime": 41,
+      "psi": 1
+    },
+    {
+      "prime": 43,
+      "psi": 0
+    },
+    {
+      "prime": 47,
+      "psi": 0
+    },
+    {
+      "prime": 67,
+      "psi": 0
+    },
+    {
+      "prime": 71,
+      "psi": 1
+    },
+    {
+      "prime": 73,
+      "psi": 1
+    },
+    {
+      "prime": 79,
+      "psi": 0
+    },
+    {
+      "prime": 83,
+      "psi": 0
+    },
+    {
+      "prime": 89,
+      "psi": 0
+    },
+    {
+      "prime": 97,
+      "psi": 0
+    },
+    {
+      "prime": 101,
+      "psi": 0
+    },
+    {
+      "prime": 103,
+      "psi": 1
+    },
+    {
+      "prime": 107,
+      "psi": 1
+    },
+    {
+      "prime": 109,
+      "psi": 0
+    },
+    {
+      "prime": 113,
+      "psi": 1
+    },
+    {
+      "prime": 131,
+      "psi": 0
+    },
+    {
+      "prime": 137,
+      "psi": 1
+    },
+    {
+      "prime": 139,
+      "psi": 0
+    },
+    {
+      "prime": 149,
+      "psi": 1
+    },
+    {
+      "prime": 151,
+      "psi": 1
+    },
+    {
+      "prime": 167,
+      "psi": 0
+    },
+    {
+      "prime": 173,
+      "psi": 1
+    },
+    {
+      "prime": 179,
+      "psi": 1
+    },
+    {
+      "prime": 181,
+      "psi": 1
+    },
+    {
+      "prime": 197,
+      "psi": 1
+    }
+  ],
+  "reduced_octic_ascending": [
+    16,
+    0,
+    -112,
+    0,
+    92,
+    0,
+    -18,
+    0,
+    1
+  ],
+  "reduced_octic_discriminant": "48509886837708292096",
+  "reduction_map_generates_degree": 8,
+  "schema": "rank-jump.unpointed-governing-norm-verification.v1",
+  "split_prime_independence": {
+    "prime": 37,
+    "rank": 2,
+    "roots": [
+      25,
+      27,
+      33
+    ],
+    "signatures": [
+      5,
+      6
+    ]
+  },
+  "status": "PASS",
+  "symbolic": {
+    "elementary_symmetric_identities": 4,
+    "method": "integer sparse polynomial expansion",
+    "variables": 6
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "CT_difference_matrix": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_scalar_cup_control_v1.json": "cba061a6ecfd64447a06f7c41dc89b4fb2800188067328ea58a535d7675b50b3",
+    "artifacts/generated-results/elliptic-curves/rank_jump_unpointed_governing_norm_v1.json": "a0046d2a9c51b5121bfdb2e66d8e1b588ce2c0c2128e673cd4cfa2ab61b1d8f8",
+    "artifacts/generated-results/elliptic-curves/rank_jump_unpointed_governing_norm_verification_v1.json": "6ac77270ec6352c832e53a89efe3b9d424d6bead204e64eccfffbc891412653d",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/strict_cochain_dyadic_switch.py": "e172906206798bf1131fd4eaeacf3c3a1e92fe7cb90a2b90d121d22a785bd19e",
+    "elliptic-curves/rank-jump/verify_unpointed_governing_norm.py": "69828517faa1ebdc92218dc338cfe156fbc8a16020bf6b28d8f59a60bc4c847a"
+  },
+  "boundary": "New point-free local derivation of a previously known strict-block CT switch. The difference formula is proved in the accompanying note; no new curve rank or full-Selmer preservation is asserted.",
+  "infinity": {
+    "Hilbert_minus1_norm": 1,
+    "alpha_totally_positive": true,
+    "isolating_intervals": [
+      [
+        "-2",
+        "-1"
+      ],
+      [
+        "-1/10",
+        "0"
+      ],
+      [
+        "12",
+        "13"
+      ]
+    ],
+    "norm_X_positive": true
+  },
+  "matches_retained_independent_ideal_cup_matrix": true,
+  "other_places": "zero contribution: both curves and the governing extension are unramified outside 2,163",
+  "prime163": {
+    "Hilbert_minus1_norm": 1,
+    "norm_X_plus_root_valuation": 0,
+    "norm_delta_valuation": 0
+  },
+  "prime2": {
+    "Hilbert_minus1_norm": -1,
+    "actual_norm_valuation": -3,
+    "beta_square_root_mod2": [
+      1,
+      0,
+      1
+    ],
+    "norm_odd_unit_mod4": 3,
+    "norm_of_lift": "-79985",
+    "twice_X_plus_twice_root_mod4_lift": [
+      "39",
+      "42",
+      "-2"
+    ]
+  },
+  "schema": "rank-jump.strict-cochain-dyadic-switch.v1",
+  "status": "PASS"
+}

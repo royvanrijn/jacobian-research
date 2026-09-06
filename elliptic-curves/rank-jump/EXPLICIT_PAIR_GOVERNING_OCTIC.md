@@ -1,5 +1,11 @@
 # An explicit octic for a pair's governing obstruction
 
+Follow-up: [a cubic norm witness constructs the cochain without elliptic
+points](UNPOINTED_NORM_COCHAINS_AND_THE_DYADIC_BLOCK_SWITCH.md). The retained
+class-selected control gives an order-24 governing field and an exact
+dyadic explanation of its known rational/Sha block switch. The rational-pair
+construction and production replays below remain unchanged.
+
 For two independent rational Kummer classes on an S3 elliptic curve, an
 explicit even octic encodes the extra central bit needed to evaluate their
 governing cochain. Its splitting field has degree 192 on all three frozen
