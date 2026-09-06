@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.singular-fibre-galois-protocol.v1",
+  "question": "Do the original R17 singular fibres admit a rational block system that could come from a simpler family under rational parameter substitution?",
+  "inputs": "Only the frozen original R17 coefficients and the existing CAS-free degree-24 irreducibility certificate. No specialized points, ranks, parameters, or new primes.",
+  "limits": {"seconds": 10, "degree": 24, "retained_primes": [167, 181, 191], "new_parameters_or_point_searches": 0},
+  "method": "Replay modular irreducibility; extract a 17-cycle from the sixth power of cycle type (1,6,17); exclude all proper block sizes; apply Jordan's prime-cycle theorem and the odd Frobenius. Recompute the j numerator and denominator from original coefficients and their exact rational gcd.",
+  "falsifiable_endpoint": "A proper imprimitive Galois action leaves rational grouping open. Certified S24 rules out rational nontrivial partitions of the singular divisor and proper rational composition of this j map.",
+  "boundary": "A family-level structural incidence exclusion, not a specialization rank predictor. This is the constant-field Galois group of singular parameter locations, not the S3 group of the elliptic 2-division cubic and not the monodromy group of j. It does not exclude covers branched over smooth fibres."
+}

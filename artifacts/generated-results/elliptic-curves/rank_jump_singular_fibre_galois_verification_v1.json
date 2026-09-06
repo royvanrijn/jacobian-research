@@ -1,0 +1,13 @@
+{
+  "all_proper_block_sizes_excluded": true,
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_singular_fibre_galois_v1.json": "ef9532309a0d6c6029679d57380a42223628a96c5c703d6edaa0952248d5d137",
+    "elliptic-curves/rank-jump/verify_singular_fibre_galois.py": "4b9ef3117cc188f60fdcf1cd29fb233ff0f4b15a0d4624ed5381cdd9b524e719"
+  },
+  "exact_j_degree": 24,
+  "frobenius_power_checked_by_permutation_arithmetic": true,
+  "reduced_simple_pole_divisor": true,
+  "schema": "rank-jump.singular-fibre-galois-verification.v1",
+  "status": "PASS",
+  "theorem_boundary": "Jordan theorem and the written rational-composition proof are mathematical dependencies, not enumerated group searches."
+}

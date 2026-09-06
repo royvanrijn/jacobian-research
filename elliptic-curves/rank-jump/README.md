@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: parameter covers have capacity for large blocks; the discriminant cover misses the controls](PARAMETER_COVERS_HAVE_ROOM_BUT_NO_BLOCK_CERTIFICATE.md)
+- [Latest: S24 singular-fibre action excludes rational grouping and proper rational j-map composition](SINGULAR_FIBRES_HAVE_FULL_SYMMETRIC_GALOIS_ACTION.md)
+- [Parameter covers have capacity for large blocks; the discriminant cover misses the controls](PARAMETER_COVERS_HAVE_ROOM_BUT_NO_BLOCK_CERTIFICATE.md)
 - [One auxiliary point is bounded by elliptic multiplicity; the genus-five controls have only two independent maps](ONE_AUXILIARY_POINT_HAS_A_MULTIPLICITY_BOUND.md)
 - [Synchronizing residual covers can add an arbitrary local obstruction](SYNCHRONIZING_COVERS_CAN_ADD_AN_OBSTRUCTION.md)
 - [Common 2-cover geometry survives a rational/Sha switch](TWO_COVER_GEOMETRY_IS_AUTOMATIC.md)

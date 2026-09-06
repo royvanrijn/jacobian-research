@@ -1,0 +1,10 @@
+{
+  "classification": "Sage permutation API mismatch, before any successful verification artifact; no mathematical counterexample.",
+  "command": "timeout 10s sage -python elliptic-curves/rank-jump/verify_singular_fibre_galois.py build",
+  "exception": "TypeError: unsupported operand type(s) for ** or pow(): 'StandardPermutations_all_with_category.element_class' and 'int'",
+  "exit_code": 1,
+  "failed_expression": "(g**6).cycle_type()",
+  "schema": "rank-jump.singular-fibre-galois-verification-failure.v1",
+  "script_sha256": "c0392795bcfb114cb67bf0c43c1540758d6f6c7ca3391d29a2ed339dac2374cd",
+  "status": "UNKNOWN"
+}
