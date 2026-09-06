@@ -1,0 +1,13 @@
+{
+  "schema": "rank-jump.projection-fibre-protocol.v1",
+  "question": "Can the Jacobian projection fibres supply explicit divisor-class models and reproduce the retained CT submatrix through an independent cover construction?",
+  "layer": "solubility",
+  "parameter_u": -1,
+  "anchor_basis_masks": [1, 6, 10],
+  "cover_anchor_masks": [1, 6, 10, 7, 11, 12],
+  "pair_class_masks": [[1, 2, 3], [1, 4, 5], [2, 4, 6]],
+  "selection": "First three retained W[-1] basis classes, plus their pairwise sums. CT values are known retrospective checks, not blind predictions.",
+  "limits": {"covers": 6, "seconds_per_cover": 60, "CT_pairs": 3, "seconds_per_CT_pair": 60, "local_witness_node_cap": 40000, "new_parameters": 0, "rational_point_searches": 0, "class_groups": 0},
+  "checkpoints": "One immutable record per cover and per pairing; isolated rank-jump arithmetic store.",
+  "failure_semantics": "A timeout or failed map/class identity is UNKNOWN. The Fisher pairing formula is reused, so agreement checks an independent cover construction, not an independent CT algorithm."
+}

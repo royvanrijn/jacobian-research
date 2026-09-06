@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: ordinary Jacobian local conditions and the CT comparison](JACOBIAN_LOCAL_CONDITIONS_AND_CT.md)
+- [Latest: explicit projection fibres and the residual solubility obstruction](EXPLICIT_PROJECTION_FIBRES.md)
+- [Ordinary Jacobian local conditions and the CT comparison](JACOBIAN_LOCAL_CONDITIONS_AND_CT.md)
 - [The transporter in the torsion-difference and CT extension](TORSION_DIFFERENCE_AND_CT.md)
 - [One Jacobian for the Sha block and a soluble splitting event](JACOBIAN_GLUING_AND_SHA_BLOCKS.md)
 - [Exact relative full-Selmer dimensions and a common unknown quotient](RELATIVE_FULL_SELMER_THEOREM.md)
@@ -52,6 +53,8 @@ python3 elliptic-curves/rank-jump/jacobian_local_conditions.py check
 ```
 
 Optional independent Hilbert-symbol check: `sage -python -m unittest discover -s elliptic-curves/rank-jump -p test_local_collision.py`.
+
+Explicit Jacobian fibre and CT replay: `sage -python elliptic-curves/rank-jump/projection_pairings.py verify`.
 
 The portable `rank_jump_*inputs_v1.json` files retain the exact projections
 needed for replay. `capture` and `build` refuse to overwrite outputs; they

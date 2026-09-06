@@ -1,0 +1,17 @@
+{
+  "schema": "rank-jump.projection-pair-protocol.v1",
+  "question": "Can products of the six certified cubic square roots avoid rediscovering the pairing square root and complete the same three CT comparisons?",
+  "layer": "solubility",
+  "inputs": "rank_jump_projection_fibres_v1.json",
+  "selection": "Same three pairs as the original retrospective protocol; known CT entries are checks.",
+  "method": "Multiply the retained cubic-invariant/beta roots and the repeated basis beta factors. Divide support integers by the already certified discriminant primes before factoring any remaining cofactor.",
+  "limits": {
+    "pairs": 3,
+    "seconds_per_pair": 60,
+    "local_witness_node_cap": 40000,
+    "new_covers": 0,
+    "new_parameters": 0,
+    "rational_point_searches": 0
+  },
+  "failure_semantics": "Preserve the original three timed-out attempts. A retry timeout remains UNKNOWN; no budget extension or prospective sweep."
+}
