@@ -1,0 +1,141 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_manifest_v1.json": "dd07b100bd8cedd038dfe41f30bfb172ba030934cbc39cb7a16d1a5928412fbf",
+    "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+    "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f"
+  },
+  "rows": [
+    {
+      "hints": [
+        2,
+        3,
+        7,
+        11,
+        13,
+        23,
+        37,
+        1223,
+        25030356096734228476690707778115070384560946348742859633129630708823269637448302306333003457091675514936231569
+      ],
+      "source": "artifacts/generated-results/elliptic-curves/inventory187_conductor_bounds_v2.json",
+      "source_sha256": "36182d458af9a2ce3dcb99d28ed345d3a0235f347b43e1b4d49bb8c3cd8ddf64",
+      "token": "case-00",
+      "whitelist_pointer": "rows[id=new-20260906-40]:local_data.prime,remaining_cofactor"
+    },
+    {
+      "hints": [
+        2,
+        3,
+        5,
+        13,
+        17,
+        19,
+        37,
+        109,
+        270644862348926595807890502386063662801126642943972710391967487756014753293844658509114704718641576312747478743687131
+      ],
+      "source": "artifacts/generated-results/elliptic-curves/inventory187_conductor_bounds_v2.json",
+      "source_sha256": "36182d458af9a2ce3dcb99d28ed345d3a0235f347b43e1b4d49bb8c3cd8ddf64",
+      "token": "case-08",
+      "whitelist_pointer": "rows[id=new-20260906-72]:local_data.prime,remaining_cofactor"
+    },
+    {
+      "hints": [
+        2,
+        3,
+        5,
+        7,
+        13,
+        37,
+        61,
+        89,
+        149,
+        179,
+        4919,
+        5223425473787303905827422231722262215349338816882268000514116324261832941833750627474175086851990796626337
+      ],
+      "source": "artifacts/generated-results/elliptic-curves/inventory187_conductor_bounds_v2.json",
+      "source_sha256": "36182d458af9a2ce3dcb99d28ed345d3a0235f347b43e1b4d49bb8c3cd8ddf64",
+      "token": "case-10",
+      "whitelist_pointer": "rows[id=new-20260906-186]:local_data.prime,remaining_cofactor"
+    },
+    {
+      "hints": [
+        2,
+        3,
+        11,
+        13,
+        37,
+        41,
+        71,
+        1327,
+        160216007765732759131861941729425236209307839816280138386590013897195158480596709890499681834226482165048352316768151
+      ],
+      "source": "artifacts/generated-results/elliptic-curves/inventory187_conductor_bounds_v2.json",
+      "source_sha256": "36182d458af9a2ce3dcb99d28ed345d3a0235f347b43e1b4d49bb8c3cd8ddf64",
+      "token": "case-11",
+      "whitelist_pointer": "rows[id=new-20260906-90]:local_data.prime,remaining_cofactor"
+    },
+    {
+      "hints": [
+        2,
+        3,
+        5,
+        7,
+        601
+      ],
+      "source": "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_completion_v1.json",
+      "source_sha256": "7723a550f87b15cd4e5b1fcbb3e187327b8b209b9d702dee5748a20dd0d8c38e",
+      "token": "case-12",
+      "whitelist_pointer": "rows[token=case-12].tested_bad_primes"
+    },
+    {
+      "hints": [
+        2,
+        3,
+        5,
+        13,
+        23,
+        29,
+        37,
+        41,
+        139,
+        751,
+        28960331,
+        1204882855601765528877267647500895974865482613,
+        197980272243427555346397293722916980361535459279712115031762027678304939
+      ],
+      "source": "artifacts/generated-results/elliptic-curves/record_prime_factor_proofs_20260904.json",
+      "source_sha256": "22e6f9f63ef13b577547f684472ad9327ff301ec543cbaa93d08537e9d080e5b",
+      "token": "case-13",
+      "whitelist_pointer": "/records/356/factorizations/DISCRIMINANT_FACTORIZATION"
+    },
+    {
+      "hints": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        13,
+        29,
+        37,
+        41,
+        43,
+        47,
+        73,
+        89,
+        109,
+        127,
+        4678955899327531799218956351083,
+        3466418496046307687463380088830029870757187849126892374834076735615029496431422958053227129921575121
+      ],
+      "source": "artifacts/generated-results/elliptic-curves/exceptional_selmer_feasibility_v1.json",
+      "source_sha256": "8112a245164a6aa540458e1166521835123c4eb2de9147dbe94dc6bdb21d6306",
+      "token": "case-14",
+      "whitelist_pointer": "/historical_probes/1/record/input/factor_hint_primes"
+    }
+  ],
+  "schema": "rank-jump.fresh-retained-factor-hints.v1",
+  "scope": "Only equation factor hints projected. Hints are not assumed prime or complete. Rank labels and exceptional points are excluded from the worker payload."
+}

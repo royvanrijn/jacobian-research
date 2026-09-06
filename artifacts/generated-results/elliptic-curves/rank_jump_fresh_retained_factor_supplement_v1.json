@@ -1,0 +1,5570 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/rank-jump/FRESH_GOVERNING_PANEL_PROTOCOL.json": "26c3b9bb8361ceb923a67879b2069943a537354699f5bc2f708498fca91ec15d",
+    "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+    "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+    "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f",
+    "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+    "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "rows": [
+    {
+      "boundary": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/FRESH_GOVERNING_PANEL_PROTOCOL.json": "26c3b9bb8361ceb923a67879b2069943a537354699f5bc2f708498fca91ec15d",
+          "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f",
+          "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "reason": "Factor coverage incomplete",
+        "status": "UNKNOWN"
+      },
+      "factor": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/FRESH_GOVERNING_PANEL_PROTOCOL.json": "26c3b9bb8361ceb923a67879b2069943a537354699f5bc2f708498fca91ec15d",
+          "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f",
+          "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "elliptic_discriminant": "129271349661868341254072037499180108267104737620553074758134640398798192428830907936986737494597504751805527936738687278615071196548855130840726463254953755749632",
+        "factors": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            46
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            1223,
+            2
+          ]
+        ],
+        "integral_cubic_ascending": [
+          "46158335187118410687307670007371568132440238220077888648781070709353310864662490",
+          "-254073842442261809875900818804711165424598821493700567",
+          "0",
+          "1"
+        ],
+        "primality_checks": [
+          {
+            "hint": 2,
+            "proved_prime": true
+          },
+          {
+            "hint": 3,
+            "proved_prime": true
+          },
+          {
+            "hint": 7,
+            "proved_prime": true
+          },
+          {
+            "hint": 11,
+            "proved_prime": true
+          },
+          {
+            "hint": 13,
+            "proved_prime": true
+          },
+          {
+            "hint": 23,
+            "proved_prime": true
+          },
+          {
+            "hint": 37,
+            "proved_prime": true
+          },
+          {
+            "hint": 1223,
+            "proved_prime": true
+          },
+          {
+            "hint": 25030356096734228476690707778115070384560946348742859633129630708823269637448302306333003457091675514936231569,
+            "proved_prime": false
+          },
+          {
+            "proved_prime": false,
+            "remaining": "25030356096734228476690707778115070384560946348742859633129630708823269637448302306333003457091675514936231569"
+          }
+        ],
+        "reason": "Retained hints leave a composite cofactor; no general factorization attempted",
+        "scale": "27",
+        "status": "UNKNOWN",
+        "unresolved_cofactor": "25030356096734228476690707778115070384560946348742859633129630708823269637448302306333003457091675514936231569"
+      },
+      "local": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/FRESH_GOVERNING_PANEL_PROTOCOL.json": "26c3b9bb8361ceb923a67879b2069943a537354699f5bc2f708498fca91ec15d",
+          "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f",
+          "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "reason": "Factor coverage incomplete",
+        "status": "UNKNOWN"
+      },
+      "token": "case-00"
+    },
+    {
+      "boundary": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/FRESH_GOVERNING_PANEL_PROTOCOL.json": "26c3b9bb8361ceb923a67879b2069943a537354699f5bc2f708498fca91ec15d",
+          "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f",
+          "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "reason": "Factor coverage incomplete",
+        "status": "UNKNOWN"
+      },
+      "factor": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/FRESH_GOVERNING_PANEL_PROTOCOL.json": "26c3b9bb8361ceb923a67879b2069943a537354699f5bc2f708498fca91ec15d",
+          "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f",
+          "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "elliptic_discriminant": "-1879929865506006082437858894259994156222149146335376663541588944991463736770981535474677348318399786148713187901602303344889892353503097132735829250310410450199546012106752000000",
+        "factors": [
+          [
+            2,
+            72
+          ],
+          [
+            3,
+            43
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            109,
+            2
+          ]
+        ],
+        "integral_cubic_ascending": [
+          "3314859510403446208599368440378790258161178174164560641105654206308125978442821686788096",
+          "-35515387754544429528110972460931944872875346353470577508352",
+          "0",
+          "1"
+        ],
+        "primality_checks": [
+          {
+            "hint": 2,
+            "proved_prime": true
+          },
+          {
+            "hint": 3,
+            "proved_prime": true
+          },
+          {
+            "hint": 5,
+            "proved_prime": true
+          },
+          {
+            "hint": 13,
+            "proved_prime": true
+          },
+          {
+            "hint": 17,
+            "proved_prime": true
+          },
+          {
+            "hint": 19,
+            "proved_prime": true
+          },
+          {
+            "hint": 37,
+            "proved_prime": true
+          },
+          {
+            "hint": 109,
+            "proved_prime": true
+          },
+          {
+            "hint": 270644862348926595807890502386063662801126642943972710391967487756014753293844658509114704718641576312747478743687131,
+            "proved_prime": false
+          },
+          {
+            "proved_prime": false,
+            "remaining": "270644862348926595807890502386063662801126642943972710391967487756014753293844658509114704718641576312747478743687131"
+          }
+        ],
+        "reason": "Retained hints leave a composite cofactor; no general factorization attempted",
+        "scale": "864",
+        "status": "UNKNOWN",
+        "unresolved_cofactor": "270644862348926595807890502386063662801126642943972710391967487756014753293844658509114704718641576312747478743687131"
+      },
+      "local": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/FRESH_GOVERNING_PANEL_PROTOCOL.json": "26c3b9bb8361ceb923a67879b2069943a537354699f5bc2f708498fca91ec15d",
+          "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f",
+          "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "reason": "Factor coverage incomplete",
+        "status": "UNKNOWN"
+      },
+      "token": "case-08"
+    },
+    {
+      "boundary": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/FRESH_GOVERNING_PANEL_PROTOCOL.json": "26c3b9bb8361ceb923a67879b2069943a537354699f5bc2f708498fca91ec15d",
+          "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f",
+          "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "reason": "Factor coverage incomplete",
+        "status": "UNKNOWN"
+      },
+      "factor": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/FRESH_GOVERNING_PANEL_PROTOCOL.json": "26c3b9bb8361ceb923a67879b2069943a537354699f5bc2f708498fca91ec15d",
+          "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f",
+          "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "elliptic_discriminant": "-805665887400794122085729509642850061713233346229302223529390039501168998774491729621752249215850613726029555667485105388147055310461110701552570214355935606865920000",
+        "factors": [
+          [
+            2,
+            75
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            61,
+            2
+          ],
+          [
+            89,
+            2
+          ],
+          [
+            149,
+            2
+          ],
+          [
+            179,
+            3
+          ],
+          [
+            4919,
+            1
+          ]
+        ],
+        "integral_cubic_ascending": [
+          "19114973066610669503541438134544412191430225486640959803875488893065273423586918400",
+          "-13487856091648960697542634482035281747063784804455219200",
+          "0",
+          "1"
+        ],
+        "primality_checks": [
+          {
+            "hint": 2,
+            "proved_prime": true
+          },
+          {
+            "hint": 5,
+            "proved_prime": true
+          },
+          {
+            "hint": 7,
+            "proved_prime": true
+          },
+          {
+            "hint": 13,
+            "proved_prime": true
+          },
+          {
+            "hint": 37,
+            "proved_prime": true
+          },
+          {
+            "hint": 61,
+            "proved_prime": true
+          },
+          {
+            "hint": 89,
+            "proved_prime": true
+          },
+          {
+            "hint": 149,
+            "proved_prime": true
+          },
+          {
+            "hint": 179,
+            "proved_prime": true
+          },
+          {
+            "hint": 4919,
+            "proved_prime": true
+          },
+          {
+            "hint": 5223425473787303905827422231722262215349338816882268000514116324261832941833750627474175086851990796626337,
+            "proved_prime": false
+          },
+          {
+            "proved_prime": false,
+            "remaining": "5223425473787303905827422231722262215349338816882268000514116324261832941833750627474175086851990796626337"
+          }
+        ],
+        "reason": "Retained hints leave a composite cofactor; no general factorization attempted",
+        "scale": "32",
+        "status": "UNKNOWN",
+        "unresolved_cofactor": "5223425473787303905827422231722262215349338816882268000514116324261832941833750627474175086851990796626337"
+      },
+      "local": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/FRESH_GOVERNING_PANEL_PROTOCOL.json": "26c3b9bb8361ceb923a67879b2069943a537354699f5bc2f708498fca91ec15d",
+          "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f",
+          "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "reason": "Factor coverage incomplete",
+        "status": "UNKNOWN"
+      },
+      "token": "case-10"
+    },
+    {
+      "boundary": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/FRESH_GOVERNING_PANEL_PROTOCOL.json": "26c3b9bb8361ceb923a67879b2069943a537354699f5bc2f708498fca91ec15d",
+          "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f",
+          "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "reason": "Factor coverage incomplete",
+        "status": "UNKNOWN"
+      },
+      "factor": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/FRESH_GOVERNING_PANEL_PROTOCOL.json": "26c3b9bb8361ceb923a67879b2069943a537354699f5bc2f708498fca91ec15d",
+          "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f",
+          "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "elliptic_discriminant": "-8486202533982585487816619786901027427621573858663310549270559372982262108137533493376693135254512865590019688222070711454514187132473569795757557022631840549681156322358639308232982528",
+        "factors": [
+          [
+            2,
+            74
+          ],
+          [
+            3,
+            43
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            41,
+            2
+          ],
+          [
+            71,
+            2
+          ],
+          [
+            1327,
+            2
+          ]
+        ],
+        "integral_cubic_ascending": [
+          "132496135335996943484467894255977602317016022019428377697326340962787427858663458590215372800",
+          "-49099226633425762217292521834286612525792916031317395428278272",
+          "0",
+          "1"
+        ],
+        "primality_checks": [
+          {
+            "hint": 2,
+            "proved_prime": true
+          },
+          {
+            "hint": 3,
+            "proved_prime": true
+          },
+          {
+            "hint": 11,
+            "proved_prime": true
+          },
+          {
+            "hint": 13,
+            "proved_prime": true
+          },
+          {
+            "hint": 37,
+            "proved_prime": true
+          },
+          {
+            "hint": 41,
+            "proved_prime": true
+          },
+          {
+            "hint": 71,
+            "proved_prime": true
+          },
+          {
+            "hint": 1327,
+            "proved_prime": true
+          },
+          {
+            "hint": 160216007765732759131861941729425236209307839816280138386590013897195158480596709890499681834226482165048352316768151,
+            "proved_prime": false
+          },
+          {
+            "proved_prime": false,
+            "remaining": "160216007765732759131861941729425236209307839816280138386590013897195158480596709890499681834226482165048352316768151"
+          }
+        ],
+        "reason": "Retained hints leave a composite cofactor; no general factorization attempted",
+        "scale": "864",
+        "status": "UNKNOWN",
+        "unresolved_cofactor": "160216007765732759131861941729425236209307839816280138386590013897195158480596709890499681834226482165048352316768151"
+      },
+      "local": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/FRESH_GOVERNING_PANEL_PROTOCOL.json": "26c3b9bb8361ceb923a67879b2069943a537354699f5bc2f708498fca91ec15d",
+          "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f",
+          "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "reason": "Factor coverage incomplete",
+        "status": "UNKNOWN"
+      },
+      "token": "case-11"
+    },
+    {
+      "boundary": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/FRESH_GOVERNING_PANEL_PROTOCOL.json": "26c3b9bb8361ceb923a67879b2069943a537354699f5bc2f708498fca91ec15d",
+          "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f",
+          "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "reason": "Factor coverage incomplete",
+        "status": "UNKNOWN"
+      },
+      "factor": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/FRESH_GOVERNING_PANEL_PROTOCOL.json": "26c3b9bb8361ceb923a67879b2069943a537354699f5bc2f708498fca91ec15d",
+          "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f",
+          "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "elliptic_discriminant": "32589257389645449819968128840503566311520833367641167137434840860596942362424836446868791418266981024519530059782938770944815721323233502625695270276005786769700000000",
+        "factors": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            43
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            601,
+            2
+          ]
+        ],
+        "integral_cubic_ascending": [
+          "7756956548771830442392802435982979515927886183157675510661923817495283698288337026",
+          "-9709499947503208003944204491243480812052035432804919967",
+          "0",
+          "1"
+        ],
+        "primality_checks": [
+          {
+            "hint": 2,
+            "proved_prime": true
+          },
+          {
+            "hint": 3,
+            "proved_prime": true
+          },
+          {
+            "hint": 5,
+            "proved_prime": true
+          },
+          {
+            "hint": 7,
+            "proved_prime": true
+          },
+          {
+            "hint": 601,
+            "proved_prime": true
+          },
+          {
+            "proved_prime": false,
+            "remaining": "1144773077704900957083175276701163470777894740988913338961600185339301417816717153324949543355439584320104346751086020801553209811"
+          }
+        ],
+        "reason": "Retained hints leave a composite cofactor; no general factorization attempted",
+        "scale": "27",
+        "status": "UNKNOWN",
+        "unresolved_cofactor": "1144773077704900957083175276701163470777894740988913338961600185339301417816717153324949543355439584320104346751086020801553209811"
+      },
+      "local": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/FRESH_GOVERNING_PANEL_PROTOCOL.json": "26c3b9bb8361ceb923a67879b2069943a537354699f5bc2f708498fca91ec15d",
+          "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f",
+          "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "reason": "Factor coverage incomplete",
+        "status": "UNKNOWN"
+      },
+      "token": "case-12"
+    },
+    {
+      "boundary": {
+        "S_finite": [
+          2,
+          3,
+          5,
+          13,
+          23,
+          29,
+          37,
+          41,
+          139,
+          751,
+          28960331,
+          1204882855601765528877267647500895974865482613,
+          197980272243427555346397293722916980361535459279712115031762027678304939
+        ],
+        "Selmer_boundary_dimension_interval": [
+          16,
+          17
+        ],
+        "additional_boundary_capacity_upper_bound": 1,
+        "additional_quotient_CT": "UNKNOWN",
+        "additional_strict_dimension": "UNKNOWN",
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/FRESH_GOVERNING_PANEL_PROTOCOL.json": "26c3b9bb8361ceb923a67879b2069943a537354699f5bc2f708498fca91ec15d",
+          "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f",
+          "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "boundary": "A witnessed equation-defined constraint, or a conservative unreduced boundary. No new class representative or point supplied.",
+        "complete_real_point_basis": [],
+        "derivative_coefficients": [
+          "-2824308893395885789995684311050825974613248108954367500097136112986705572400447877762219248165175608307640304874098932685401701584408483939960862945709054204447200200537710310570031869628322313329443372344209779488238378347471751710828561250000",
+          "0",
+          "653631802756463765698561673317353031122209075401421739509367960507501064485131279955131375578200218548720433719205117709712848920373991035718379901484585088839509509743261319126250000"
+        ],
+        "derivative_norm": "2253448724429152398429236301035511491475634330809972106865525876995134336286147935530745567865788801456469237174645767372248222400948630725278215582491499529746350509661426414150076879751672220759011945097215749114458743893457899808583200712848101191830737971801069885888890610139130495057428758294331164275397432109094985024412463601813815781359433908739242065238430668848230497522756621536745412869566018916162849058351318596360430106676192451746026502202035425201413197818650780667840062483303679467548177918811474682503215260998860378739116354084819488023476626784878568838700305388295034934435134201864577901285348961577382624282619688097434098087462909700947214776523259343575071210068143094943358205566406250000000000000000",
+        "generic_dimension": 17,
+        "generic_local_dimension": 16,
+        "generic_strict_dimension": 1,
+        "local": [
+          {
+            "derivative_signature": 18,
+            "generic_local_rank": 2,
+            "outside_full_point_image": true,
+            "place": 2,
+            "point_dimension": 2,
+            "tested_derivative": true
+          },
+          {
+            "generic_local_rank": 1,
+            "place": 3,
+            "point_dimension": 1,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 1,
+            "place": 5,
+            "point_dimension": 1,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 2,
+            "place": 13,
+            "point_dimension": 2,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 2,
+            "place": 23,
+            "point_dimension": 2,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 1,
+            "place": 29,
+            "point_dimension": 1,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 2,
+            "place": 37,
+            "point_dimension": 2,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 1,
+            "place": 41,
+            "point_dimension": 1,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 2,
+            "place": 139,
+            "point_dimension": 2,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 1,
+            "place": 751,
+            "point_dimension": 1,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 1,
+            "place": 28960331,
+            "point_dimension": 1,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 1,
+            "place": 1204882855601765528877267647500895974865482613,
+            "point_dimension": 1,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 1,
+            "place": 197980272243427555346397293722916980361535459279712115031762027678304939,
+            "point_dimension": 1,
+            "tested_derivative": false
+          }
+        ],
+        "local_point_product_dimension": 18,
+        "omitted_good_prime_valuations": [],
+        "polynomial_discriminant": "-217877267585487921899520557772451010374069691800473913169789320169167021495043759985043791859400072849573477906401705903237616306791330345239459967161528362946503169914420439708750000",
+        "real_derivative_signs": [
+          0
+        ],
+        "reciprocity_constraint_rank_lower_bound": 1,
+        "status": "PASS",
+        "witness": {
+          "place": 2,
+          "type": "outside full generic local point span"
+        }
+      },
+      "factor": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/FRESH_GOVERNING_PANEL_PROTOCOL.json": "26c3b9bb8361ceb923a67879b2069943a537354699f5bc2f708498fca91ec15d",
+          "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f",
+          "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "elliptic_discriminant": "-3486036281367806750392328924359216165985115068807582610716629122706672343920700159760700669750401165593175646502427294451801860908661285523831359474584453807144050718630727035340000000",
+        "factors": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            46
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            13,
+            6
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            29,
+            3
+          ],
+          [
+            37,
+            4
+          ],
+          [
+            41,
+            2
+          ],
+          [
+            139,
+            2
+          ],
+          [
+            751,
+            1
+          ],
+          [
+            28960331,
+            1
+          ],
+          [
+            1204882855601765528877267647500895974865482613,
+            1
+          ],
+          [
+            197980272243427555346397293722916980361535459279712115031762027678304939,
+            1
+          ]
+        ],
+        "integral_cubic_ascending": [
+          "18187031186145534096114228484539631087942303961380003710420155974890138881385274949358216714",
+          "-12962843369089523065839079442238604005443120208849763792569447",
+          "0",
+          "1"
+        ],
+        "primality_checks": [
+          {
+            "hint": 2,
+            "proved_prime": true
+          },
+          {
+            "hint": 3,
+            "proved_prime": true
+          },
+          {
+            "hint": 5,
+            "proved_prime": true
+          },
+          {
+            "hint": 13,
+            "proved_prime": true
+          },
+          {
+            "hint": 23,
+            "proved_prime": true
+          },
+          {
+            "hint": 29,
+            "proved_prime": true
+          },
+          {
+            "hint": 37,
+            "proved_prime": true
+          },
+          {
+            "hint": 41,
+            "proved_prime": true
+          },
+          {
+            "hint": 139,
+            "proved_prime": true
+          },
+          {
+            "hint": 751,
+            "proved_prime": true
+          },
+          {
+            "hint": 28960331,
+            "proved_prime": true
+          },
+          {
+            "hint": 1204882855601765528877267647500895974865482613,
+            "proved_prime": true
+          },
+          {
+            "hint": 197980272243427555346397293722916980361535459279712115031762027678304939,
+            "proved_prime": true
+          }
+        ],
+        "reason": null,
+        "scale": "27",
+        "status": "PASS",
+        "unresolved_cofactor": "1"
+      },
+      "local": {
+        "Artin_matrix": [
+          [
+            1
+          ]
+        ],
+        "Artin_rank": 1,
+        "S_finite": [
+          2,
+          3,
+          5,
+          13,
+          23,
+          29,
+          37,
+          41,
+          139,
+          751,
+          28960331,
+          1204882855601765528877267647500895974865482613,
+          197980272243427555346397293722916980361535459279712115031762027678304939
+        ],
+        "additional_class_basis": "UNKNOWN",
+        "additional_quotient_CT": "UNKNOWN",
+        "artin_columns": [
+          {
+            "coprime_ideal_hnf": [
+              [
+                "26722277555661578403296124182159379974574462241",
+                "16289175891183476962444123524827472746811356877",
+                "18696536527571896057342621113075759591145394478"
+              ],
+              [
+                "0",
+                "1",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "1"
+              ]
+            ],
+            "cyclic": true,
+            "evaluations": [
+              {
+                "artin_bit": 1,
+                "residue": "16415650244567305051240153378404071467983662518"
+              }
+            ],
+            "multiplier_ascending": [
+              "2017367173584109406272113771106254107350296040792401928672336475747323843619055760726728435950203699682415167899820232/3340284694457697300412015522769922496821807780125",
+              "-29273247646840243156154671075789892873474619045692237319093640999139581655263958369186262/3340284694457697300412015522769922496821807780125",
+              "13724686079009604759633760410267663091370563876658451516766/3340284694457697300412015522769922496821807780125"
+            ],
+            "norm": "26722277555661578403296124182159379974574462241",
+            "reduced_ideal_hnf": [
+              [
+                "83868536165382755358204968148811768034701314104934525",
+                "68251465560923795568070803106149343698673304544481700",
+                "59980267395445664737713675650045022109965758289740145"
+              ],
+              [
+                "0",
+                "1",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "21645"
+              ]
+            ]
+          }
+        ],
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/FRESH_GOVERNING_PANEL_PROTOCOL.json": "26c3b9bb8361ceb923a67879b2069943a537354699f5bc2f708498fca91ec15d",
+          "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f",
+          "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "boundary": "Inherited generic strict block only. Original CT zero follows from generic rational sections. Switch rank is exact on this block; no exceptional quotient or whole-curve rank claim.",
+        "class_records": [
+          {
+            "beta_ascending": [
+              "201119897759503037389253147375099265059429689115035384635890606932754052652097633827137862049481709169182985424989236590683543707377125022732267291110649658915567427941734454443600",
+              "-192051951961204028103881804994029176129737615450108914264126297424271755774485573018477782800556130722596310294196040185148233159583077306381734696800",
+              "46143098933129344092982365596907770274163027921764596344903953416329257703826655333439483335929934207235644979048111200"
+            ],
+            "generic_mask": 73874,
+            "half_ideal_hnf": [
+              [
+                "1820013160954954887183361377076838011825141851090933002694242188850310321343911638621803717345406254124090643066199025446303887885752511528308048420679864186202203736949473686320387715419536190816238135836905072786278958340700",
+                "1593852284611468752379194609308738595204623951709550182990155229285625713987514415508833611857019111830264312577067026415591615135821512194580567273858126103322595617691445072168370689999895858730365457959597951500740553967100",
+                "1815039623285979229998934546741848674249262997572787726530347674571456178697264997510477193389003524587501557951372348801817991084852249321671790217142104638656534332204056132723641006704023274609444956139881208514676434348900"
+              ],
+              [
+                "0",
+                "202278527580750660",
+                "172423909577039040"
+              ],
+              [
+                "0",
+                "0",
+                "1328806780793094592302300"
+              ]
+            ]
+          }
+        ],
+        "field_discriminant": "-752277724884429603556499627496577219114608773920079457931321069663132744982183297505569516372870314046056607683593379327741881715",
+        "full_CT": "UNKNOWN",
+        "galois": {
+          "claim": "Equation-only E[2] representation test, not a rank predictor.",
+          "cubic_discriminant": "-217877267585487921899520557772451010374069691800473913169789320169167021495043759985043791859400072849573477906401705903237616306791330345239459967161528362946503169914420439708750000",
+          "discriminant_rational_square": false,
+          "galois_group": "S3",
+          "irreducibility_prime": 17,
+          "layer": "incidence"
+        },
+        "generic_dimension": 17,
+        "generic_strict_masks": [
+          73874
+        ],
+        "independence_blocks": [
+          [
+            7,
+            [
+              2
+            ]
+          ],
+          [
+            11,
+            [
+              1
+            ]
+          ],
+          [
+            43,
+            [
+              19
+            ]
+          ],
+          [
+            53,
+            [
+              0,
+              22,
+              31
+            ]
+          ],
+          [
+            67,
+            [
+              28
+            ]
+          ],
+          [
+            71,
+            [
+              59
+            ]
+          ],
+          [
+            73,
+            [
+              18,
+              60,
+              68
+            ]
+          ],
+          [
+            79,
+            [
+              32,
+              58,
+              68
+            ]
+          ],
+          [
+            83,
+            [
+              2,
+              4,
+              77
+            ]
+          ],
+          [
+            89,
+            [
+              57
+            ]
+          ],
+          [
+            97,
+            [
+              18
+            ]
+          ],
+          [
+            101,
+            [
+              7,
+              31,
+              63
+            ]
+          ],
+          [
+            103,
+            [
+              17
+            ]
+          ],
+          [
+            109,
+            [
+              86
+            ]
+          ]
+        ],
+        "independence_signatures": [
+          15309033,
+          15860714,
+          15915906,
+          8661019,
+          12027166,
+          8749057,
+          11465709,
+          10367852,
+          7009561,
+          8612057,
+          11987143,
+          4686022,
+          15841006,
+          8394927,
+          2975858,
+          50862,
+          10192519
+        ],
+        "local": [
+          {
+            "generic_image_dimension": 2,
+            "place": 2,
+            "point_kummer_dimension": 2,
+            "signatures": [
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 1,
+            "place": 3,
+            "point_kummer_dimension": 1,
+            "signatures": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 1,
+            "place": 5,
+            "point_kummer_dimension": 1,
+            "signatures": [
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 2,
+            "place": 13,
+            "point_kummer_dimension": 2,
+            "signatures": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 2,
+            "place": 23,
+            "point_kummer_dimension": 2,
+            "signatures": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 1,
+            "place": 29,
+            "point_kummer_dimension": 1,
+            "signatures": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 2,
+            "place": 37,
+            "point_kummer_dimension": 2,
+            "signatures": [
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 1,
+            "place": 41,
+            "point_kummer_dimension": 1,
+            "signatures": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 2,
+            "place": 139,
+            "point_kummer_dimension": 2,
+            "signatures": [
+              [
+                0,
+                0,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 1,
+            "place": 751,
+            "point_kummer_dimension": 1,
+            "signatures": [
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 1,
+            "place": 28960331,
+            "point_kummer_dimension": 1,
+            "signatures": [
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 1,
+            "place": 1204882855601765528877267647500895974865482613,
+            "point_kummer_dimension": 1,
+            "signatures": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 1,
+            "place": 197980272243427555346397293722916980361535459279712115031762027678304939,
+            "point_kummer_dimension": 1,
+            "signatures": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 0,
+            "place": "infinity",
+            "point_kummer_dimension": 0,
+            "signatures": [
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          }
+        ],
+        "maximal_order_basis": [
+          "1",
+          "1/729*z - 1/3",
+          "1/738225989329496995723500*z^2 + 8519070480616785472167650701/3037967034277765414500*z - 73175630234153121790598087702521657187602574153186406151/6250960975880175750"
+        ],
+        "minus_twist_CT_matrix": [
+          [
+            0
+          ]
+        ],
+        "minus_twist_CT_rank": 0,
+        "original_restricted_CT_rank": 0,
+        "software": {
+          "pari": "(2, 17, 3)",
+          "sage": "10.9"
+        },
+        "status": "PASS",
+        "strict_generic_dimension": 1
+      },
+      "token": "case-13"
+    },
+    {
+      "boundary": {
+        "S_finite": [
+          2,
+          5,
+          7,
+          11,
+          13,
+          29,
+          37,
+          41,
+          43,
+          47,
+          73,
+          89,
+          109,
+          127,
+          4678955899327531799218956351083,
+          3466418496046307687463380088830029870757187849126892374834076735615029496431422958053227129921575121
+        ],
+        "Selmer_boundary_dimension_interval": [
+          17,
+          25
+        ],
+        "additional_boundary_capacity_upper_bound": 8,
+        "additional_quotient_CT": "UNKNOWN",
+        "additional_strict_dimension": "UNKNOWN",
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/FRESH_GOVERNING_PANEL_PROTOCOL.json": "26c3b9bb8361ceb923a67879b2069943a537354699f5bc2f708498fca91ec15d",
+          "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f",
+          "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "boundary": "A witnessed equation-defined constraint, or a conservative unreduced boundary. No new class representative or point supplied.",
+        "complete_real_point_basis": [
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "derivative_coefficients": [
+          "187316625821777184684927627138898504687490800770783052925976803437557378850105306563257658235302615899382777758475204138806038737590205670394708178858595285129824108418399791249736848324545701449351962608349002633845136872859412615668064672474255734175524765818683392000000",
+          "0",
+          "-1615047488882980923123731242588028464775631113418411113414167346049554729901006261994253069759678947317047798556918900792877473697708600831129651136102800400255347296506632971878853701952759448731648000000"
+        ],
+        "derivative_norm": "83995528795643501617407406523246911021866440115262384017754347376576042671998551710020129342819513429643295790715635050805302786006097329098642678215548625077316840295074266661001631331469818027720465903056339792389109322242055194223169565108052128289125832005189254469004037723154405489875288390304647336136666855677120243304261801591788142336572193862144074005654644581360834069171119379488372954352715706125599118390412849294207519922410048601953358107760666340870742877960419582298837403201652846224256630799282771384847300900291936055224271313085521703243066450424937405987478329306880545196960894400662729300131284378781343927747192315917204034441321736977933824427999086776501953852010917583558186058481573438011075168973999965821638164239455641765975318707417766524421457700859150336000000000000000000000000",
+        "generic_dimension": 17,
+        "generic_local_dimension": 17,
+        "generic_strict_dimension": 0,
+        "local": [
+          {
+            "generic_local_rank": 2,
+            "place": 2,
+            "point_dimension": 2,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 2,
+            "place": 5,
+            "point_dimension": 2,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 1,
+            "place": 7,
+            "point_dimension": 1,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 1,
+            "place": 11,
+            "point_dimension": 1,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 1,
+            "place": 13,
+            "point_dimension": 1,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 2,
+            "place": 29,
+            "point_dimension": 2,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 2,
+            "place": 37,
+            "point_dimension": 2,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 2,
+            "place": 41,
+            "point_dimension": 2,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 1,
+            "place": 43,
+            "point_dimension": 1,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 2,
+            "place": 47,
+            "point_dimension": 2,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 2,
+            "place": 73,
+            "point_dimension": 2,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 1,
+            "place": 89,
+            "point_dimension": 1,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 2,
+            "place": 109,
+            "point_dimension": 2,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 2,
+            "place": 127,
+            "point_dimension": 2,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 1,
+            "place": 4678955899327531799218956351083,
+            "point_dimension": 1,
+            "tested_derivative": false
+          },
+          {
+            "generic_local_rank": 1,
+            "place": 3466418496046307687463380088830029870757187849126892374834076735615029496431422958053227129921575121,
+            "point_dimension": 1,
+            "tested_derivative": false
+          }
+        ],
+        "local_point_product_dimension": 26,
+        "omitted_good_prime_valuations": [],
+        "polynomial_discriminant": "538349162960993641041243747529342821591877037806137037804722448683184909967002087331417689919892982439015932852306300264292491232569533610376550378700933466751782432168877657292951233984253149577216000000",
+        "real_derivative_signs": [
+          1,
+          0,
+          1
+        ],
+        "reciprocity_constraint_rank_lower_bound": 1,
+        "status": "PASS",
+        "witness": {
+          "place": "infinity",
+          "type": "real Hilbert dot product"
+        }
+      },
+      "factor": {
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/FRESH_GOVERNING_PANEL_PROTOCOL.json": "26c3b9bb8361ceb923a67879b2069943a537354699f5bc2f708498fca91ec15d",
+          "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f",
+          "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "elliptic_discriminant": "8613586607375898256659899960469485145470032604898192604875559178930958559472033397302683038718287719024254925636900804228679859721112537766024806059214935468028518914702042516687219743748050393235456000000",
+        "factors": [
+          [
+            2,
+            76
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            29,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            41,
+            2
+          ],
+          [
+            43,
+            2
+          ],
+          [
+            47,
+            2
+          ],
+          [
+            73,
+            2
+          ],
+          [
+            89,
+            2
+          ],
+          [
+            109,
+            2
+          ],
+          [
+            127,
+            2
+          ],
+          [
+            4678955899327531799218956351083,
+            1
+          ],
+          [
+            3466418496046307687463380088830029870757187849126892374834076735615029496431422958053227129921575121,
+            1
+          ]
+        ],
+        "integral_cubic_ascending": [
+          "2494144719956714162394274880922438512115849513963368287325871399363540791730283862342715408386533359616",
+          "-347946349152862535198875971292814600827237316438942584663473354637312",
+          "0",
+          "1"
+        ],
+        "primality_checks": [
+          {
+            "hint": 2,
+            "proved_prime": true
+          },
+          {
+            "hint": 5,
+            "proved_prime": true
+          },
+          {
+            "hint": 7,
+            "proved_prime": true
+          },
+          {
+            "hint": 11,
+            "proved_prime": true
+          },
+          {
+            "hint": 13,
+            "proved_prime": true
+          },
+          {
+            "hint": 29,
+            "proved_prime": true
+          },
+          {
+            "hint": 37,
+            "proved_prime": true
+          },
+          {
+            "hint": 41,
+            "proved_prime": true
+          },
+          {
+            "hint": 43,
+            "proved_prime": true
+          },
+          {
+            "hint": 47,
+            "proved_prime": true
+          },
+          {
+            "hint": 73,
+            "proved_prime": true
+          },
+          {
+            "hint": 89,
+            "proved_prime": true
+          },
+          {
+            "hint": 109,
+            "proved_prime": true
+          },
+          {
+            "hint": 127,
+            "proved_prime": true
+          },
+          {
+            "hint": 4678955899327531799218956351083,
+            "proved_prime": true
+          },
+          {
+            "hint": 3466418496046307687463380088830029870757187849126892374834076735615029496431422958053227129921575121,
+            "proved_prime": true
+          }
+        ],
+        "reason": null,
+        "scale": "32",
+        "status": "PASS",
+        "unresolved_cofactor": "1"
+      },
+      "local": {
+        "Artin_matrix": [],
+        "Artin_rank": 0,
+        "S_finite": [
+          2,
+          5,
+          7,
+          11,
+          13,
+          29,
+          37,
+          41,
+          43,
+          47,
+          73,
+          89,
+          109,
+          127,
+          4678955899327531799218956351083,
+          3466418496046307687463380088830029870757187849126892374834076735615029496431422958053227129921575121
+        ],
+        "additional_class_basis": "UNKNOWN",
+        "additional_quotient_CT": "UNKNOWN",
+        "artin_columns": [],
+        "bindings": {
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+          "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+          "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+          "elliptic-curves/rank-jump/FRESH_GOVERNING_PANEL_PROTOCOL.json": "26c3b9bb8361ceb923a67879b2069943a537354699f5bc2f708498fca91ec15d",
+          "elliptic-curves/rank-jump/FRESH_RETAINED_FACTOR_PROTOCOL.json": "c37532a2b254956d9e1ba46f820cf417407ae89f47e8896fc3847dca7f14adb3",
+          "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+          "elliptic-curves/rank-jump/fresh_retained_factors.py": "70b556db8e6771db01377a0beeae6357e789dddad1f0873ebaf4cfd20987824f",
+          "elliptic-curves/rank-jump/fresh_strict_boundary_coordinates.py": "70d9b94e2c40baa1219f8ee29a93d3a267ad5f98db0360221ce7b79826d6bb4a",
+          "elliptic-curves/rank-jump/matched103b2_class_boundary.py": "cf80f2d2f562a75ec5297c734035cf36619ec8cc187280ffd24c602f56e5dd8d",
+          "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+        },
+        "boundary": "Inherited generic strict block only. Original CT zero follows from generic rational sections. Switch rank is exact on this block; no exceptional quotient or whole-curve rank claim.",
+        "class_records": [],
+        "field_discriminant": "2319348355840793680014289749859465262253655395058932289474378635276782174223531055738208365301710598272915423820568079569354891464149",
+        "full_CT": "UNKNOWN",
+        "galois": {
+          "claim": "Equation-only E[2] representation test, not a rank predictor.",
+          "cubic_discriminant": "538349162960993641041243747529342821591877037806137037804722448683184909967002087331417689919892982439015932852306300264292491232569533610376550378700933466751782432168877657292951233984253149577216000000",
+          "discriminant_rational_square": false,
+          "galois_group": "S3",
+          "irreducibility_prime": 3,
+          "layer": "incidence"
+        },
+        "generic_dimension": 17,
+        "generic_strict_masks": [],
+        "independence_blocks": [
+          [
+            17,
+            [
+              0
+            ]
+          ],
+          [
+            19,
+            [
+              4,
+              6,
+              9
+            ]
+          ],
+          [
+            23,
+            [
+              3
+            ]
+          ],
+          [
+            53,
+            [
+              39
+            ]
+          ],
+          [
+            59,
+            [
+              34
+            ]
+          ],
+          [
+            61,
+            [
+              0
+            ]
+          ],
+          [
+            67,
+            [
+              20
+            ]
+          ],
+          [
+            71,
+            [
+              41
+            ]
+          ],
+          [
+            79,
+            [
+              17,
+              65,
+              76
+            ]
+          ],
+          [
+            83,
+            [
+              19
+            ]
+          ],
+          [
+            101,
+            [
+              47
+            ]
+          ],
+          [
+            103,
+            [
+              11
+            ]
+          ],
+          [
+            107,
+            [
+              24
+            ]
+          ],
+          [
+            113,
+            [
+              79
+            ]
+          ],
+          [
+            131,
+            [
+              35
+            ]
+          ],
+          [
+            139,
+            [
+              73
+            ]
+          ],
+          [
+            149,
+            [
+              43
+            ]
+          ]
+        ],
+        "independence_signatures": [
+          1611009,
+          1906474,
+          767879,
+          628454,
+          16647,
+          1540151,
+          691926,
+          1447425,
+          1781434,
+          1261643,
+          1904493,
+          2081158,
+          1707531,
+          1899120,
+          1045770,
+          1087958,
+          464375
+        ],
+        "local": [
+          {
+            "generic_image_dimension": 2,
+            "place": 2,
+            "point_kummer_dimension": 2,
+            "signatures": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 2,
+            "place": 5,
+            "point_kummer_dimension": 2,
+            "signatures": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 1,
+            "place": 7,
+            "point_kummer_dimension": 1,
+            "signatures": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 1,
+            "place": 11,
+            "point_kummer_dimension": 1,
+            "signatures": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 1,
+            "place": 13,
+            "point_kummer_dimension": 1,
+            "signatures": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 2,
+            "place": 29,
+            "point_kummer_dimension": 2,
+            "signatures": [
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 2,
+            "place": 37,
+            "point_kummer_dimension": 2,
+            "signatures": [
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 2,
+            "place": 41,
+            "point_kummer_dimension": 2,
+            "signatures": [
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 1,
+            "place": 43,
+            "point_kummer_dimension": 1,
+            "signatures": [
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 2,
+            "place": 47,
+            "point_kummer_dimension": 2,
+            "signatures": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 2,
+            "place": 73,
+            "point_kummer_dimension": 2,
+            "signatures": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 1,
+            "place": 89,
+            "point_kummer_dimension": 1,
+            "signatures": [
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 2,
+            "place": 109,
+            "point_kummer_dimension": 2,
+            "signatures": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 2,
+            "place": 127,
+            "point_kummer_dimension": 2,
+            "signatures": [
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 1,
+            "place": 4678955899327531799218956351083,
+            "point_kummer_dimension": 1,
+            "signatures": [
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 1,
+            "place": 3466418496046307687463380088830029870757187849126892374834076735615029496431422958053227129921575121,
+            "point_kummer_dimension": 1,
+            "signatures": [
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "generic_image_dimension": 1,
+            "place": "infinity",
+            "point_kummer_dimension": 1,
+            "signatures": [
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1
+              ]
+            ]
+          }
+        ],
+        "maximal_order_basis": [
+          "1",
+          "1/256*z",
+          "1/1881954262322434337097553805312000*z^2 + 41993649033009725837274876841067/7351383837197009129287319552000*z - 1769746648930168330886209977685621133861593553048326701429730489/14358171557025408455639296000"
+        ],
+        "minus_twist_CT_matrix": [],
+        "minus_twist_CT_rank": 0,
+        "original_restricted_CT_rank": 0,
+        "software": {
+          "pari": "(2, 17, 3)",
+          "sage": "10.9"
+        },
+        "status": "PASS",
+        "strict_generic_dimension": 0
+      },
+      "token": "case-14"
+    }
+  ],
+  "schema": "rank-jump.fresh-retained-factor-supplement.v1"
+}

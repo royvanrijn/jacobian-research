@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.fresh-retained-factor-protocol.v1",
+  "cases": ["case-00", "case-08", "case-10", "case-11", "case-12", "case-13", "case-14"],
+  "hint_sources": "For 356, record_prime_factor_proofs_20260904.json discriminant factors. For 385, exceptional_selmer_feasibility_v1.json historical input factor_hint_primes only. For new fibres, the matching inventory187_conductor_bounds_v2.json local primes and remaining cofactor; for the unmatched MW16 control, existing masked completion tested bad primes. Always include 2 and 3 for displayed-model scale. Export only hint integers, tokens and provenance, never exceptional coordinates, masks or CT data.",
+  "factor_gate": "Check each hint dividing the frozen integral discriminant for primality, strip proved primes, then test the remaining cofactor for primality. No general factorization call. Only a complete proved-prime product permits new local arithmetic.",
+  "arithmetic": "Reuse the existing generic local/Artin worker with a new isolated checkpoint directory and validated factor record. Reuse the coordinate boundary worker with those new generic local data. No independent class-group call. Join rank labels only in the separate report.",
+  "limits": {"factor_seconds": 20, "local_seconds": 60, "boundary_seconds": 30, "pari_stack_bytes": 268435456, "workers": 1, "new_parameters": 0, "point_searches": 0, "general_factorization_calls": 0, "class_group_calls": 0},
+  "failure": "Incomplete hint coverage, resource limits or unresolved Artin entries remain explicitly incomplete. Preserve prior sixteen-fibre results and write a supplement. No budget escalation or edits to active searches."
+}
