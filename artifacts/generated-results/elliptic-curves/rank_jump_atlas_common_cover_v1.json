@@ -1,0 +1,23 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_solubility_first_geometry_v1.json.gz": "3ada2afa96b4f63944b0fdeebc2a28910870ba0391eee29a8721588426cda450",
+    "elliptic-curves/rank-jump/ATLAS_COMMON_COVER_PROTOCOL.json": "f6dd5b7e925805ebafcaacfe535ef34d47f535802efb700186992ea10d04599e",
+    "elliptic-curves/rank-jump/atlas_common_cover.py": "a4bde53294518f7dcc63d6507c0075aa729c372fe623f38b922224c4795e2196",
+    "elliptic-curves/rank-jump/cover_experiment.py": "ebb07b12f71ba1f24675673a2309133011a5f33786c5d26d4d6ecb94f964ed1f",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "boundary": "Input contains generic geometry and no exceptional points, ranks, or parameters. This is an incidence audit of possible common-field section groups, not a validated high-rank selector.",
+  "branch_group_size_counts": {
+    "1": 39119
+  },
+  "degenerate_labels": [],
+  "distinct_branch_polynomials": 39119,
+  "distinct_quadratic_function_fields": 39119,
+  "equations": 39119,
+  "layer": "incidence",
+  "normalized_roster_sha256": "69f20b04942a5b3618412e5444a60048b107e705ca28440899b068aaec4a6402",
+  "same_branch_groups": [],
+  "same_field_groups": [],
+  "schema": "rank-jump.atlas-common-cover.v1",
+  "status": "PASS"
+}

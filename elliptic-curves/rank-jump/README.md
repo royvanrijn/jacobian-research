@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: two individually soluble native covers have a simultaneous Sha obstruction](NATIVE_PAIR_CARRIER_HAS_A_SHA_OBSTRUCTION.md)
+- [Latest: successful quartets require genus-17 lifts; no repeated field in the finite atlas](SOLUBLE_QUARTETS_REQUIRE_HIGHER_GENUS_LIFTS.md)
+- [Two individually soluble native covers have a simultaneous Sha obstruction](NATIVE_PAIR_CARRIER_HAS_A_SHA_OBSTRUCTION.md)
 - [Global carrier solubility leaves the prescribed-specialization condition open](GLOBAL_CARRIER_SOLUBILITY_AND_SPECIALIZATION.md)
 - [Four-way solubility obstructions survive every pair and triple check](LOCAL_SOLUBILITY_IS_NOT_PAIRWISE.md)
 - [Pre-point square conditions construct four soluble quotient subblocks on completed fibres](SOLUBILITY_FIRST_ON_COMPLETED_FIBRES.md)
@@ -62,6 +63,9 @@ Retrospective analyses with pinned inputs, independent of the active curve searc
 Replay from the repository root, using Python 3.12 and its standard library:
 
 ```sh
+python3 elliptic-curves/rank-jump/soluble_quartet_compression.py check
+python3 elliptic-curves/rank-jump/atlas_common_cover.py check
+sage -python elliptic-curves/rank-jump/verify_quartet_compression.py check
 python3 elliptic-curves/rank-jump/verify_labelled_carrier_ct.py check
 sage -python elliptic-curves/rank-jump/carrier_ct_local_witness.py check
 sage -python elliptic-curves/rank-jump/verify_global_carriers.py check

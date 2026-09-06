@@ -1,0 +1,11 @@
+{
+  "schema": "rank-jump.soluble-quartet-compression-protocol.v1",
+  "layer": "solubility",
+  "question": "Can either observed four-cover block be parametrized by one rational or elliptic source, or replaced without information loss by product-square quotient conditions?",
+  "selection": "The two observed four-cover groups in the frozen 32-fibre 08234 cohort, and the previously fixed modulo-23 obstructed A,B,C,D quartet. No fitting of covers or new parameters.",
+  "hypotheses": ["A low-genus source dominates a positive simultaneous-lift carrier.", "A proper product-character quotient retains the full simultaneous-square condition on the frozen cohort."],
+  "method": "Verify squarefree, pairwise coprime quadratic branch equations. Compute the full multiquadratic carrier genus, all character-quotient genera, and Castelnuovo-Severi lower bounds for maps to rational or elliptic curves. At each retained parameter evaluate all 15 nonzero product characters exactly, record their square kernel and residual squareclass rank. The geometric obstruction uses characteristic-zero curve theorems and exact branch checks, not bounded point searches.",
+  "limits": {"fixed_quartets": 3, "retained_parameters_per_quartet": 32, "product_square_tests": 1440, "new_parameters_or_point_searches": 0},
+  "failure_semantics": "Branch collisions or zeros invalidate the corresponding uniform genus or squareclass accounting. No proper-quotient counterexample in the sample establishes only sample agreement, not equivalence. No original elliptic-fibre rank upper bound follows.",
+  "boundary": "The cover equations are from a pre-point generic atlas; the selected quartets are retrospective. Squareclass rank here concerns parameter-cover radicands, not the elliptic curve's Selmer or Mordell-Weil rank. Constant maps explaining only an already supplied parameter are excluded from the parametrization hypothesis."
+}

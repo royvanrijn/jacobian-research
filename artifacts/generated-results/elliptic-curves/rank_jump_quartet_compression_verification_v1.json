@@ -1,0 +1,15 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_atlas_common_cover_v1.json": "f5663bb72f401ed10b5ca5b9552a32141db08b4db647a7a96c522e91f3f881a7",
+    "artifacts/generated-results/elliptic-curves/rank_jump_solubility_first_geometry_v1.json.gz": "3ada2afa96b4f63944b0fdeebc2a28910870ba0391eee29a8721588426cda450",
+    "artifacts/generated-results/elliptic-curves/rank_jump_soluble_quartet_compression_inputs_v1.json": "fe70c730c1f19bf3eae03f3e78b52c23ed7de041f64c1e635600561487aed976",
+    "artifacts/generated-results/elliptic-curves/rank_jump_soluble_quartet_compression_v1.json": "aa204e1d3d38eab90d97d90c25ea7b70dc0d6b45dd0707eceab5a8fb7ec591b5",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_quartet_compression.py": "b5d5276f83be6b4598a04ffb6b839cfc7a741a2115b9aa113ba5617ef4567a9e"
+  },
+  "boundary": "Independent exact polynomial and arithmetic checks. Riemann-Hurwitz, Castelnuovo-Severi and the finiteness theorem are mathematical dependencies explained in the note, not reimplemented algorithms.",
+  "distinct_monic_branch_polynomials": 39119,
+  "independent_integer_square_tests": 1440,
+  "schema": "rank-jump.quartet-compression-verification.v1",
+  "status": "PASS"
+}

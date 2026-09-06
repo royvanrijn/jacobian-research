@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.atlas-common-cover-protocol.v1",
+  "layer": "incidence",
+  "question": "Does the already frozen generic bisection atlas contain several sections over the same quadratic parameter field, providing a possible block under one rational square condition?",
+  "selection": "All 39119 finite-chart equations in rank_jump_solubility_first_geometry_v1.json.gz; the previously excluded inverted chart remains outside this audit.",
+  "method": "Normalize each squarefree quadratic up to rational scalar by primitive signed integer coefficients. Only within equal branch-polynomial groups test the scalar ratio for being a rational square. Distinct squareclasses mean different quadratic function fields. A repeated field is only a candidate block; independence of its sections modulo the marked MW17 subgroup requires a separate certificate.",
+  "limits": {"existing_cover_equations":39119,"new_parameters":0,"new_points":0,"full_atlas_pairwise_comparisons":0},
+  "failure_semantics": "Nonsquarefree equations are reported separately rather than assigned the quadratic-branch argument. No duplicate field excludes a common-cover block among these displayed sections only, not hidden additional sections on a twist.",
+  "boundary": "Input contains generic geometry and no exceptional points, ranks, or parameters. This is an incidence audit of possible common-field section groups, not a validated high-rank selector."
+}

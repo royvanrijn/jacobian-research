@@ -1,0 +1,2673 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_soluble_quartet_compression_inputs_v1.json": "fe70c730c1f19bf3eae03f3e78b52c23ed7de041f64c1e635600561487aed976",
+    "elliptic-curves/rank-jump/SOLUBLE_QUARTET_COMPRESSION_PROTOCOL.json": "19b00b9c474b48819923e3992b13d10d70002b9e939c29233eddc25725b35585",
+    "elliptic-curves/rank-jump/cover_experiment.py": "ebb07b12f71ba1f24675673a2309133011a5f33786c5d26d4d6ecb94f964ed1f",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/soluble_quartet_compression.py": "e197adb0687f0a2e689cdb60b30bcd143cc01ec098f0c19b6de4f237e106879a"
+  },
+  "layer": "solubility",
+  "product_square_tests": 1440,
+  "rows": [
+    {
+      "all_four_product_false_positives": [],
+      "carrier_degree_over_parameter_line": 16,
+      "carrier_genus": 17,
+      "character_quotients": [
+        {
+          "coefficients": [
+            "3255283501715844",
+            "1254304425186516",
+            "125950947365881"
+          ],
+          "genus": 0,
+          "mask": 1,
+          "weight": 1
+        },
+        {
+          "coefficients": [
+            "16496921457",
+            "11037654810",
+            "1654807609"
+          ],
+          "genus": 0,
+          "mask": 2,
+          "weight": 1
+        },
+        {
+          "coefficients": [
+            "53702156248074203200464708",
+            "56622857186097015807283452",
+            "21309250066085456580207573",
+            "3465835586818091170537854",
+            "208424586061818385788529"
+          ],
+          "genus": 1,
+          "mask": 3,
+          "weight": 2
+        },
+        {
+          "coefficients": [
+            "459069811561",
+            "92081791006",
+            "-2589226631"
+          ],
+          "genus": 0,
+          "mask": 4,
+          "weight": 1
+        },
+        {
+          "coefficients": [
+            "1494402383710324725248072484",
+            "875565631180780512005010540",
+            "164890208877012551392583773",
+            "8350110391278686087758690",
+            "-326115547119418385976911"
+          ],
+          "genus": 1,
+          "mask": 5,
+          "weight": 2
+        },
+        {
+          "coefficients": [
+            "7573238624601607564377",
+            "6586120187547936274152",
+            "1733324972278149885142",
+            "123798658629239319544",
+            "-4284671930404235279"
+          ],
+          "genus": 1,
+          "mask": 6,
+          "weight": 2
+        },
+        {
+          "coefficients": [
+            "24653038749222803232382556609190889188",
+            "30938835106673697624799220165088404820",
+            "14857320460817211238214342565512145417",
+            "3406644991072309554321445486197808320",
+            "359647305856872259066998149545648330",
+            "10218275374199506985165033719780300",
+            "-539658488786411576769091221115799"
+          ],
+          "genus": 2,
+          "mask": 7,
+          "weight": 3
+        },
+        {
+          "coefficients": [
+            "4897771825",
+            "2856794060",
+            "580965316"
+          ],
+          "genus": 0,
+          "mask": 8,
+          "weight": 1
+        },
+        {
+          "coefficients": [
+            "15943635817091199899295300",
+            "15442971444969161381798340",
+            "6091375240889155080664489",
+            "1088523285024904114345916",
+            "73173131936918422783396"
+          ],
+          "genus": 1,
+          "mask": 9,
+          "weight": 2
+        },
+        {
+          "coefficients": [
+            "80798157111332549025",
+            "101188221969137873670",
+            "49221315967987430437",
+            "11139939162424572500",
+            "961385825481889444"
+          ],
+          "genus": 1,
+          "mask": 10,
+          "weight": 2
+        },
+        {
+          "coefficients": [
+            "263020907813565542944560873749252100",
+            "430741835555755015879813088048374380",
+            "297326776829566810476581164530993573",
+            "110746927016991251741201905323330762",
+            "23301929780975757119837598050280733",
+            "2608956386319179328727792302409604",
+            "121087455503573514034242659660164"
+          ],
+          "genus": 2,
+          "mask": 11,
+          "weight": 3
+        },
+        {
+          "coefficients": [
+            "2248419188771525068825",
+            "1762463512377509333610",
+            "517080910477847571061",
+            "46099439550212136036",
+            "-1504250867874530396"
+          ],
+          "genus": 1,
+          "mask": 12,
+          "weight": 2
+        },
+        {
+          "coefficients": [
+            "7319241890149267400920875547692963300",
+            "8557520532369064708967040380380680540",
+            "4177101266637023573707993727318953069",
+            "1020627568279734805091054781994128270",
+            "118052798533312880994647646246466093",
+            "3919479564219700951325904425647380",
+            "-189461821884745792345286067818876"
+          ],
+          "genus": 2,
+          "mask": 13,
+          "weight": 3
+        },
+        {
+          "coefficients": [
+            "37091994759575505378512544278025",
+            "53892497008360440476800422568020",
+            "31704408213710937196577713009402",
+            "9384397463033730782768702216352",
+            "1339683617398142993898469629337",
+            "59682301511084595374615293164",
+            "-2489245782003626556602583164"
+          ],
+          "genus": 2,
+          "mask": 14,
+          "weight": 3
+        },
+        {
+          "coefficients": [
+            "120744958586576686319082213381962673111683528100",
+            "221960009543516839586130329175292111399986819780",
+            "175476206351353910044669044621866850224764248633",
+            "77103664809450984533409789923297467125775630140",
+            "20125141493019010143597143924060537999652238222",
+            "3056627652032903056198391193246598095659196420",
+            "235490994946643706507086942058935098603777105",
+            "4394770416553237621451437335081056284720860",
+            "-313522864469880058203713340308366038627484"
+          ],
+          "genus": 3,
+          "mask": 15,
+          "weight": 4
+        }
+      ],
+      "fibres": [
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 3,
+          "product_roots": {},
+          "published_parameter": "-28367/15470",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-001",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "329972622553307920512769/239320900",
+            "368489445333847/202300",
+            "67372542221061295201/239320900",
+            "96491470743052956/59830225"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 2,
+          "product_roots": {},
+          "published_parameter": "-70665/36751",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-002",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "160745823940318026661539/122785091",
+            "11123042805895428/7991929",
+            "367969523761935292096/1350636001",
+            "2097060717698865025/1350636001"
+          ]
+        },
+        {
+          "all_four_product_square": true,
+          "full_lift": true,
+          "generic_rank": 17,
+          "observed_quotient_rank": 7,
+          "product_roots": {
+            "1": "848451138/65",
+            "10": "173669703669/325",
+            "11": "147350257714085825322/21125",
+            "12": "3998366902117/4225",
+            "13": "3392418948242703259146/274625",
+            "14": "176939730519383601/21125",
+            "15": "150124715716584347326987938/1373125",
+            "2": "44253/5",
+            "3": "37546508209914/325",
+            "4": "1018829/65",
+            "5": "864426624477402/4225",
+            "6": "45086239737/325",
+            "7": "38253471412998470706/21125",
+            "8": "3924473/65",
+            "9": "3329723582900274/4225"
+          },
+          "published_parameter": "-288/65",
+          "radicand_squareclass_rank": 0,
+          "source_id": "08234-003",
+          "square_character_masks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "values": [
+            "719869333573495044/4225",
+            "1958328009/25",
+            "1038012531241/4225",
+            "15401488327729/4225"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-182255/93054",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-004",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "11098903597867619540855809/8659046916",
+            "62848743162838273/51236964",
+            "2327434630670850684481/8659046916",
+            "3314483270213487100/2164761729"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-113593/59592",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-005",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "4694695213385497438372489/3551206464",
+            "30888163034789041/21013056",
+            "973518738302567507449/3551206464",
+            "1387775386950665881/887801616"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-174459/92092",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-006",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "1026298589758812104293539/770994224",
+            "10939086307641159/7169008",
+            "2335124677025114905225/8480936464",
+            "3330467628090413329/2120234116"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 1,
+          "product_roots": {},
+          "published_parameter": "-41757/22880",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-007",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "65943093885636548906019/47590400",
+            "5775557589208089/3097600",
+            "147830820326684435521/523494400",
+            "211893269917245721/130873600"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-190909/99008",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-008",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "12792371413430627011228225/9802584064",
+            "11323373603965279/8286208",
+            "2665217172382197392961/9802584064",
+            "3796769976019280569/2450646016"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 8,
+          "product_roots": {},
+          "published_parameter": "-4112/1937",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-009",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "4352905414464186988996/3751969",
+            "11609601878281/22201",
+            "945209340613984681/3751969",
+            "5445360957100689/3751969"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-94057/48789",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-010",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "3107084039159398842786025/2380366521",
+            "19272930380904832/14085009",
+            "647289793059689704324/2380366521",
+            "3688452669664258129/2380366521"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-202703/106054",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-011",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "14824413508261737994431841/11247450916",
+            "96214796253495217/66552964",
+            "3077452734337464462225/11247450916",
+            "4386154460357305756/2811862729"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-41346/21827",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-012",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "634229029979029516179600/476417929",
+            "4303411627539033/2819041",
+            "131182773308672711521/476417929",
+            "748401788308076161/476417929"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-73681/39130",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-013",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "2051791441350936132022561/1531156900",
+            "2045702769799303/1294300",
+            "423366816128365440529/1531156900",
+            "604180902533950044/382789225"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 2,
+          "product_roots": {},
+          "published_parameter": "-14057/6370",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-014",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "44662831699235775252529/40576900",
+            "6793706682727/34300",
+            "9870712499541692241/40576900",
+            "14432135019111196/10144225"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-94199/50700",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-015",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "3494874240685871067106681/2570490000",
+            "25884079048872361/15210000",
+            "717286542334844467969/2570490000",
+            "1025277232093090729/642622500"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-198633/101894",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-016",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "13380509069552087349169761/10382387236",
+            "77936330113126857/61434244",
+            "2800392024464736031225/10382387236",
+            "3988118901822043576/2595596809"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-33841/18655",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-017",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "485261516244848940138481/348009025",
+            "564726264891388/294175",
+            "98663631165545123584/348009025",
+            "566292890155181121/348009025"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-79649/42198",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-018",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "2379864844345318006222225/1780671204",
+            "16424610400668793/10536516",
+            "491536911519892530601/1780671204",
+            "701294394574266424/445167801"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 3,
+          "product_roots": {},
+          "published_parameter": "-45321/23621",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-019",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "732225960000003927800169/557951641",
+            "4658795602579584/3301489",
+            "152244426332203951684/557951641",
+            "867742394292286321/557951641"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 5,
+          "product_roots": {},
+          "published_parameter": "-3115/2756",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-020",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "15179625176782326869569/7595536",
+            "275753414752033/44944",
+            "2671240780769157081/7595536",
+            "4578258449365225/1898884"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 1,
+          "product_roots": {},
+          "published_parameter": "-63985/35256",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-021",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "1732394481375058434813049/1242985536",
+            "14088753315551233/7354944",
+            "352293450853621418761/1242985536",
+            "505466131860362425/310746384"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-70688/36829",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-022",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "1779320355327352880972836/1356375241",
+            "11299800299370577/8025889",
+            "370010275395488975025/1356375241",
+            "2108892819595452409/1356375241"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 1,
+          "product_roots": {},
+          "published_parameter": "-10565/5352",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-023",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "36379336347712561155121/28643904",
+            "33132748292468353/28643904",
+            "7653882400921449889/28643904",
+            "10900995944913025/7160976"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-168541/87360",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-024",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "9953290484217256381507201/7631769600",
+            "8784195440197663/6451200",
+            "2074176771067473491329/7631769600",
+            "2954727197101110649/1907942400"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-124285/64402",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-025",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "5407498664110421202335881/4147617604",
+            "33353342363430937/24542116",
+            "1127009558148470051449/4147617604",
+            "1605439700247786300/1036904401"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 6,
+          "product_roots": {},
+          "published_parameter": "-903/470",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-026",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "289454320476286344369/220900",
+            "309023889586281/220900",
+            "60216809755011361/220900",
+            "85797544123036/55225"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 5,
+          "product_roots": {},
+          "published_parameter": "-5877/1690",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-027",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "1189736617465244946969/2856100",
+            "-31686104244231/16900",
+            "307151337276604921/2856100",
+            "1420128029021116/714025"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-55104/28535",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-028",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "1060787112999301027055556/814246225",
+            "6519353544675801/4818025",
+            "221145071302644130489/814246225",
+            "1260062873313790081/814246225"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-75641/41314",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-029",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "2357163767163282244750801/1706846596",
+            "2648156554584967/1442812",
+            "480988758643808346801/1706846596",
+            "689049988764467164/426711649"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 1,
+          "product_roots": {},
+          "published_parameter": "-15109/7728",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-030",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "76708773574567270971025/59721984",
+            "10601276685732871/8531712",
+            "16073799921036078001/59721984",
+            "22890628018827769/14930496"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 1,
+          "product_roots": {},
+          "published_parameter": "-12009/6278",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-031",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "51900416296502419901025/39413284",
+            "56691306351160497/39413284",
+            "10777764128753086201/39413284",
+            "15360240273557944/9853321"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-102202/53157",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-032",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "3699610490364700562654656/2825666649",
+            "23283076233176881/16719921",
+            "769875631803858345481/2825666649",
+            "4387544946418827649/2825666649"
+          ]
+        }
+      ],
+      "full_lift_fibres": [
+        "08234-003"
+      ],
+      "generic_squareclass_rank": 4,
+      "geometric_gonality": 8,
+      "id": "08234-003",
+      "individual_conic_witnesses": [
+        {
+          "parameter": "-288/65",
+          "root": "848451138/65"
+        },
+        {
+          "parameter": "-288/65",
+          "root": "44253/5"
+        },
+        {
+          "parameter": "-288/65",
+          "root": "1018829/65"
+        },
+        {
+          "parameter": "-288/65",
+          "root": "3924473/65"
+        }
+      ],
+      "labels": [
+        "orbit-01333",
+        "orbit-0b2d0",
+        "orbit-13109",
+        "orbit-19e45"
+      ],
+      "minimum_geometric_degree_to_genus_one": 4,
+      "pairwise_gcd_degrees": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "proper_character_only_fibres": [],
+      "quadratic_discriminants": [
+        "-66744572900055925080862656000",
+        "12632899096240270848",
+        "13233599361200234016000",
+        "-3220469922776803200"
+      ],
+      "rational_gonality": 8,
+      "specialized_squareclass_rank_counts": {
+        "0": 1,
+        "4": 31
+      }
+    },
+    {
+      "all_four_product_false_positives": [],
+      "carrier_degree_over_parameter_line": 16,
+      "carrier_genus": 17,
+      "character_quotients": [
+        {
+          "coefficients": [
+            "47184481444",
+            "25665872604",
+            "3559010841"
+          ],
+          "genus": 0,
+          "mask": 1,
+          "weight": 1
+        },
+        {
+          "coefficients": [
+            "531230427916489",
+            "-49864417795362",
+            "-1905389166951"
+          ],
+          "genus": 0,
+          "mask": 2,
+          "weight": 1
+        },
+        {
+          "coefficients": [
+            "25065832268513754802130116",
+            "11281665790091890146704628",
+            "520936257623863682037357",
+            "-226371479133852730629846",
+            "-6781300701502567915791"
+          ],
+          "genus": 1,
+          "mask": 3,
+          "weight": 2
+        },
+        {
+          "coefficients": [
+            "409689",
+            "-1439214",
+            "328441"
+          ],
+          "genus": 0,
+          "mask": 4,
+          "weight": 1
+        },
+        {
+          "coefficients": [
+            "19330963018310916",
+            "-57393540595684860",
+            "-19983277311506003",
+            "3307546635411390",
+            "1168925079628881"
+          ],
+          "genus": 1,
+          "mask": 5,
+          "weight": 2
+        },
+        {
+          "coefficients": [
+            "217639262782678461921",
+            "-784983172545565862064",
+            "245462804185834700878",
+            "-13635256480602274128",
+            "-625807923382553391"
+          ],
+          "genus": 1,
+          "mask": 6,
+          "weight": 2
+        },
+        {
+          "coefficients": [
+            "10269195756255131691129885093924",
+            "-31453122346619798721479620428132",
+            "-7790662477868720356602734301263",
+            "2862880933768830155035091029656",
+            "494115603057290249905882252482",
+            "-64589932070389407920440021812",
+            "-2227257183702204908830311831"
+          ],
+          "genus": 2,
+          "mask": 7,
+          "weight": 3
+        },
+        {
+          "coefficients": [
+            "181288768144",
+            "124961177432",
+            "19675777849"
+          ],
+          "genus": 0,
+          "mask": 8,
+          "weight": 1
+        },
+        {
+          "coefficients": [
+            "8554016516496186319936",
+            "10549162785480593098784",
+            "4780837726403990055988",
+            "949734192841651689108",
+            "70026306669698661009"
+          ],
+          "genus": 1,
+          "mask": 9,
+          "weight": 2
+        },
+        {
+          "coefficients": [
+            "96306109877590279315526416",
+            "57343320883810738750928120",
+            "3875829871732967192972833",
+            "-1219220880879639635986170",
+            "-37490013964819048668399"
+          ],
+          "genus": 1,
+          "mask": 10,
+          "weight": 2
+        },
+        {
+          "coefficients": [
+            "4544153854462983645798233196843824704",
+            "5177495207284563626022176928170512544",
+            "1997399880265945184508511194731711188",
+            "246033751377097426486927840697086572",
+            "-19267194141682525928474126985092283",
+            "-5301434254967433721683677330709966",
+            "-133427366130032386814138655113559"
+          ],
+          "genus": 2,
+          "mask": 11,
+          "weight": 3
+        },
+        {
+          "coefficients": [
+            "74272014132147216",
+            "-209718113334660168",
+            "-112242261967455983",
+            "12724719135772826",
+            "6462332152503409"
+          ],
+          "genus": 1,
+          "mask": 12,
+          "weight": 2
+        },
+        {
+          "coefficients": [
+            "3504486472626806077228259904",
+            "-7989184374351783592212652128",
+            "-10414356403155418102919548268",
+            "-3026775361411657227622030276",
+            "232041384634650178620989797",
+            "211148807103781233716913702",
+            "22999510188902497920456969"
+          ],
+          "genus": 2,
+          "mask": 13,
+          "weight": 3
+        },
+        {
+          "coefficients": [
+            "39455553849640083942498701844624",
+            "-115112173831798678506687044722344",
+            "-49310550323846752035685604721287",
+            "12756247657916693517598841786528",
+            "3012341953424924405663482195822",
+            "-346485972378626639372692462584",
+            "-12313257676619133163697635959"
+          ],
+          "genus": 2,
+          "mask": 14,
+          "weight": 3
+        },
+        {
+          "coefficients": [
+            "1861689848481085306863432360181749699157056",
+            "-4418847011519882957422458748637139213903840",
+            "-5140724391596894326156156393236973385993420",
+            "-1073386846333391003322879638022004974666220",
+            "294039237119277634416091923377465728333513",
+            "106365247586989377770413165039173180519240",
+            "1247098164537902819323783593254899612770",
+            "-1549177834818290467427184915795106240380",
+            "-43823017559113967157622514024152431519"
+          ],
+          "genus": 3,
+          "mask": 15,
+          "weight": 4
+        }
+      ],
+      "fibres": [
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 3,
+          "product_roots": {},
+          "published_parameter": "-28367/15470",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-001",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "2892974102771651089/239320900",
+            "8675510515410411625073/14077700",
+            "993920300354809/239320900",
+            "217859789728071/11900"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 2,
+          "product_roots": {},
+          "published_parameter": "-70665/36751",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-002",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "14846617443770560009/1350636001",
+            "837482661998466729247744/1350636001",
+            "5931077022734724/1350636001",
+            "109950355210295881/7991929"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 7,
+          "product_roots": {},
+          "published_parameter": "-288/65",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-003",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "14087894149924/4225",
+            "3019869860012758921/4225",
+            "55915232409/4225",
+            "347097762064/25"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-182255/93054",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-004",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "10167785439980805961/962116324",
+            "598037392228064729543321/962116324",
+            "38865734743643929/8659046916",
+            "615797731280297281/51236964"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-113593/59592",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-005",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "4416307673632001889/394578496",
+            "244385211540792194551441/394578496",
+            "15435262278588889/3551206464",
+            "306427349409882625/21013056"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-174459/92092",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-006",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "96135388950817713025/8480936464",
+            "5248474801410476391397801/8480936464",
+            "36593770382722809/8480936464",
+            "108781341302923183/7169008"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 1,
+          "product_roots": {},
+          "published_parameter": "-41757/22880",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-007",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "6385291760705355169/523494400",
+            "322414300665730681741921/523494400",
+            "2162180363536449/523494400",
+            "58126260219820249/3097600"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-190909/99008",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-008",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "107118471507562820449/9802584064",
+            "357676461661641589542737/576622592",
+            "43189782155692225/9802584064",
+            "6576035817407471/487424"
+          ]
+        },
+        {
+          "all_four_product_square": true,
+          "full_lift": true,
+          "generic_rank": 17,
+          "observed_quotient_rank": 8,
+          "product_roots": {
+            "1": "181066742/1937",
+            "10": "495133433913880260/288613",
+            "11": "89652197734058607256312920/559043381",
+            "12": "43919495134236/288613",
+            "13": "7952359894240965179112/559043381",
+            "14": "2132747160775892195648940/559043381",
+            "15": "386169579911440992009380141553480/1082867028997",
+            "2": "48560375165/1937",
+            "3": "8792668921424262430/3751969",
+            "4": "4307419/1937",
+            "5": "779930324758898/3751969",
+            "6": "209169882632849135/3751969",
+            "7": "37873709172852375051968170/7267563953",
+            "8": "10196244/149",
+            "9": "1846200681717048/288613"
+          },
+          "published_parameter": "-4112/1937",
+          "radicand_squareclass_rank": 0,
+          "source_id": "08234-009",
+          "square_character_masks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "values": [
+            "32785165058494564/3751969",
+            "2358110036165548777225/3751969",
+            "18553858441561/3751969",
+            "103963391707536/22201"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-94057/48789",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-010",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "2891400139887587449/264485169",
+            "164054650181249610718244/264485169",
+            "10485312025282000/2380366521",
+            "190293373017826681/14085009"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-202703/106054",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-011",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "125188406718856517425/11247450916",
+            "6968657093001464759199409/11247450916",
+            "49042558084721161/11247450916",
+            "953470018602235969/66552964"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-41346/21827",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-012",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "5401231111445956864/476417929",
+            "294831052993030520952769/476417929",
+            "2055482185203225/476417929",
+            "42795513255946564/2819041"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-73681/39130",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-013",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "17570081305104234481/1531156900",
+            "946818961812512194771249/1531156900",
+            "6559820018298121/1531156900",
+            "20387926198769463/1294300"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 2,
+          "product_roots": {},
+          "published_parameter": "-14057/6370",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-014",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "319656313960995649/40576900",
+            "25644194532530030432881/40576900",
+            "210395273256169/40576900",
+            "46192041636487/34300"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-94199/50700",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-015",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "3365620200825403249/285610000",
+            "176306895944516151977561/285610000",
+            "10841033537904241/2570490000",
+            "259125904548577921/15210000"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-198633/101894",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-016",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "110843866700013977425/10382387236",
+            "6449494181304757277873689/10382387236",
+            "46341199502924481/10382387236",
+            "765480745494132049/61434244"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-33841/18655",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-017",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "4293487547949123001/348009025",
+            "5223670865161632647744/8488025",
+            "1427291811038116/348009025",
+            "5692828836656223/294175"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-79649/42198",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-018",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "2259394648835804601/197852356",
+            "122383859596290686124481/197852356",
+            "7650378297072625/1780671204",
+            "163550418197213569/10536516"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 3,
+          "product_roots": {},
+          "published_parameter": "-45321/23621",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-019",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "6160823998466541121/557951641",
+            "345868455508805071312900/557951641",
+            "2443920114778704/557951641",
+            "46094197955107129/3301489"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 5,
+          "product_roots": {},
+          "published_parameter": "-3115/2756",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-020",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "172585334063912449/7595536",
+            "4444574454643724124409/7595536",
+            "351968119013/143312",
+            "2929702093308841/44944"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 1,
+          "product_roots": {},
+          "published_parameter": "-63985/35256",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-021",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "1702445857068341841/138109504",
+            "84999758473111813558561/138109504",
+            "5100559632681769/1242985536",
+            "142007175950773681/7354944"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-70688/36829",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-022",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "14965783607880741700/1356375241",
+            "840842410963961476858129/1356375241",
+            "5943647998162081/1356375241",
+            "111783537400541584/8025889"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 1,
+          "product_roots": {},
+          "published_parameter": "-10565/5352",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-023",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "33061529777208009/3182656",
+            "1980373663674575353849/3182656",
+            "129774165974401/28643904",
+            "323223324398825041/28643904"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-168541/87360",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-024",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "9255657466177570009/847974400",
+            "526032713939918580143321/847974400",
+            "33646984932687361/7631769600",
+            "86702873997727903/6451200"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-124285/64402",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-025",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "45243533072629788121/4147617604",
+            "2573033484173479314477721/4147617604",
+            "18292343409645361/4147617604",
+            "329165390294292969/24542116"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 6,
+          "product_roots": {},
+          "published_parameter": "-903/470",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-026",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "2432248429964929/220900",
+            "136958087608047658561/220900",
+            "969130861209/220900",
+            "3055721909169721/220900"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 5,
+          "product_roots": {},
+          "published_parameter": "-5877/1690",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-027",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "2771948735539369/2856100",
+            "1946696622857609888281/2856100",
+            "26808639366609/2856100",
+            "-258979758637031/16900"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-55104/28535",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-028",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "8869718084959610596/814246225",
+            "505173193584662094257689/814246225",
+            "3593892165116841/814246225",
+            "64320657522912016/4818025"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-75641/41314",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-029",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "20693088511764654049/1706846596",
+            "1051654962394900779790801/1706846596",
+            "7076061651577801/1706846596",
+            "26627696679343975/1442812"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 1,
+          "product_roots": {},
+          "published_parameter": "-15109/7728",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-030",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "70400098194925801/6635776",
+            "4123717332907803765641/6635776",
+            "267490580851825/59721984",
+            "103969643190555943/8531712"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 1,
+          "product_roots": {},
+          "published_parameter": "-12009/6278",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-031",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "437947611641821009/39413284",
+            "24422151184842246476569/39413284",
+            "172019607141825/39413284",
+            "561613457414599801/39413284"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-102202/53157",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-032",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "3451783990706866896/313962961",
+            "194675426713970782461025/313962961",
+            "12407184831509521/2825666649",
+            "230159586690386116/16719921"
+          ]
+        }
+      ],
+      "full_lift_fibres": [
+        "08234-009"
+      ],
+      "generic_squareclass_rank": 4,
+      "geometric_gonality": 8,
+      "id": "08234-009",
+      "individual_conic_witnesses": [
+        {
+          "parameter": "-4112/1937",
+          "root": "181066742/1937"
+        },
+        {
+          "parameter": "-4112/1937",
+          "root": "48560375165/1937"
+        },
+        {
+          "parameter": "-4112/1937",
+          "root": "4307419/1937"
+        },
+        {
+          "parameter": "-4112/1937",
+          "root": "10196244/149"
+        }
+      ],
+      "labels": [
+        "orbit-0911e",
+        "orbit-0a037",
+        "orbit-1795d",
+        "orbit-18f5d"
+      ],
+      "minimum_geometric_degree_to_genus_one": 4,
+      "pairwise_gcd_degrees": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "proper_character_only_fibres": [],
+      "quadratic_discriminants": [
+        "-12983307419879596800",
+        "6535262972097703421735731200",
+        "1533102278400",
+        "1347305751110937945600"
+      ],
+      "rational_gonality": 8,
+      "specialized_squareclass_rank_counts": {
+        "0": 1,
+        "4": 31
+      }
+    },
+    {
+      "all_four_product_false_positives": [],
+      "carrier_degree_over_parameter_line": 16,
+      "carrier_genus": 17,
+      "character_quotients": [
+        {
+          "coefficients": [
+            "4865126421024",
+            "2514185838528",
+            "320914613929"
+          ],
+          "genus": 0,
+          "mask": 1,
+          "weight": 1
+        },
+        {
+          "coefficients": [
+            "32749355881225",
+            "8983755404520",
+            "183939299856"
+          ],
+          "genus": 0,
+          "mask": 2,
+          "weight": 1
+        },
+        {
+          "coefficients": [
+            "159329756569265469886874400",
+            "126045072556036969949465280",
+            "33991465461484396134502129",
+            "3345475980120813611211048",
+            "59028809399658805294224"
+          ],
+          "genus": 1,
+          "mask": 3,
+          "weight": 2
+        },
+        {
+          "coefficients": [
+            "-163392175124",
+            "42862125644",
+            "167098581169"
+          ],
+          "genus": 0,
+          "mask": 4,
+          "weight": 1
+        },
+        {
+          "coefficients": [
+            "-794923588184352763406976",
+            "-202268632891173031238016",
+            "868284134665339946406892",
+            "433871968916441885974508",
+            "53624376663933304503001"
+          ],
+          "genus": 1,
+          "mask": 5,
+          "weight": 2
+        },
+        {
+          "coefficients": [
+            "-5350988491343314543646900",
+            "-64168329785377010526580",
+            "5827379512560585971180761",
+            "1509056811045924912591144",
+            "30735996027156846011664"
+          ],
+          "genus": 1,
+          "mask": 6,
+          "weight": 2
+        },
+        {
+          "coefficients": [
+            "-26033235487829713091802330433792425600",
+            "-13765566523693487938319447460670581120",
+            "26472396520026113997081879817964974924",
+            "21972274653674233033687677690271238444",
+            "5813675016705242501190804684333039937",
+            "561554389858261507562521274093035368",
+            "9863630298778317037362455990867856"
+          ],
+          "genus": 2,
+          "mask": 7,
+          "weight": 3
+        },
+        {
+          "coefficients": [
+            "-144492039",
+            "-201200094",
+            "18383017"
+          ],
+          "genus": 0,
+          "mask": 8,
+          "weight": 1
+        },
+        {
+          "coefficients": [
+            "-702972036566530227936",
+            "-1342143731465747854848",
+            "-462788332251968083455",
+            "-18349729477669030350",
+            "5899378803405243793"
+          ],
+          "genus": 1,
+          "mask": 9,
+          "weight": 2
+        },
+        {
+          "coefficients": [
+            "-4732021207214842067775",
+            "-7887254618018287451430",
+            "-1232078230447248715439",
+            "128139923903811650376",
+            "3381359276220945552"
+          ],
+          "genus": 1,
+          "mask": 10,
+          "weight": 2
+        },
+        {
+          "coefficients": [
+            "-23021881400066812476247581392901600",
+            "-50269671538258053599573263913099520",
+            "-27342814976020746175022120282722551",
+            "-5005391980277732635608393199697238",
+            "-56773587271568397238121808178055",
+            "49623339815733143475598519514760",
+            "1085127606683687611923409793808"
+          ],
+          "genus": 2,
+          "mask": 11,
+          "weight": 3
+        },
+        {
+          "coefficients": [
+            "23608868540311837836",
+            "26681285063637513540",
+            "-35771919548699893235",
+            "-32832315054099641938",
+            "3071776058305606873"
+          ],
+          "genus": 1,
+          "mask": 12,
+          "weight": 2
+        },
+        {
+          "coefficients": [
+            "114860130105953438679958549064064",
+            "189164907857697121712034957610368",
+            "-99376770933484001812836210885876",
+            "-241108202684061557471673774763932",
+            "-79081694445845692985677802759627",
+            "-2813353845060364506352982351458",
+            "985777827827489223544843934017"
+          ],
+          "genus": 2,
+          "mask": 13,
+          "weight": 3
+        },
+        {
+          "coefficients": [
+            "773175237779729367429895077029100",
+            "1085891200261106629088033390705220",
+            "-927466586215232827759524713660459",
+            "-1391695608793033683293760873186010",
+            "-200938662325587157345136865974495",
+            "21556931721575441478596192305032",
+            "565020337479156761898801510288"
+          ],
+          "genus": 2,
+          "mask": 14,
+          "weight": 3
+        },
+        {
+          "coefficients": [
+            "3761595277403674929419512909330422077699798400",
+            "7226904202274088013293342709643761380551710080",
+            "-1533986682402471453178786634739749367250039956",
+            "-8754120077831624083025699537813471673374029212",
+            "-4774210967701791788690091067728701316562309571",
+            "-846935400159404949435065481627251607724483882",
+            "-7537125414839763347364848916912835856373047",
+            "8338500551893603410888329487080452982766792",
+            "181323283464156881329223663641875641601552"
+          ],
+          "genus": 3,
+          "mask": 15,
+          "weight": 4
+        }
+      ],
+      "fibres": [
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 3,
+          "product_roots": {},
+          "published_parameter": "-28367/15470",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-001",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "269858959471098967/202300",
+            "5981080114792413409/354025",
+            "452954638935914049/1416100",
+            "68506748505969673/239320900"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 2,
+          "product_roots": {
+            "8": "647424714/36751"
+          },
+          "published_parameter": "-70665/36751",
+          "radicand_squareclass_rank": 3,
+          "source_id": "08234-002",
+          "square_character_masks": [
+            0,
+            8
+          ],
+          "values": [
+            "9728705770464181041/7991929",
+            "129112842342105703225/7991929",
+            "2972882384357629489/7991929",
+            "419158760297981796/1350636001"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 7,
+          "product_roots": {},
+          "published_parameter": "-288/65",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-003",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "636343013664/25",
+            "-86113676255519/25",
+            "73178188074124/25",
+            "4680747856953/4225"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-182255/93054",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-004",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "60045350927776165921/51236964",
+            "22571924692382034025/1423249",
+            "20170125415875787969/51236964",
+            "2771727633734455081/8659046916"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-113593/59592",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-005",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "26028614689544207281/21013056",
+            "2377548407347633809/145924",
+            "7607997938211556249/21013056",
+            "1086052329096712201/3551206464"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-174459/92092",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-006",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "8989482385783783647/7169008",
+            "51408305692114435744/3136441",
+            "774748995769155383/2181872",
+            "2566613339106791913/8480936464"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 1,
+          "product_roots": {},
+          "published_parameter": "-41757/22880",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-007",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "4167897655958556489/3097600",
+            "3284670219651671761/193600",
+            "975595133538241489/3097600",
+            "148639322082300273/523494400"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-190909/99008",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-008",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "10029597812648309743/8286208",
+            "58404435710485878049/3625216",
+            "21765037037878091665/58003456",
+            "3056583859162660849/9802584064"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 8,
+          "product_roots": {},
+          "published_parameter": "-4112/1937",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-009",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "21625165521632800/22201",
+            "322068669080290561/22201",
+            "11070750921008076/22201",
+            "1371247882227193/3751969"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-94057/48789",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-010",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "17055384923648731249/14085009",
+            "25218114726444218329/1565001",
+            "5281946445677296585/14085009",
+            "741981940490583376/2380366521"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-202703/106054",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-011",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "81997356627552152161/66552964",
+            "270379594403572559689/16638241",
+            "24299755140504584161/66552964",
+            "3455455361655407257/11247450916"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-41346/21827",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-012",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "3535410255715209636/2819041",
+            "46209176450099848249/2819041",
+            "43511541405556280/122567",
+            "144161881500779289/476417929"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-73681/39130",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-013",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "1642213357720221463/1294300",
+            "37339624323395033641/2265025",
+            "3156232644846738081/9060100",
+            "458646932308597657/1531156900"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 2,
+          "product_roots": {},
+          "published_parameter": "-14057/6370",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-014",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "30174358548356647/34300",
+            "829556786161374769/60025",
+            "133435497177745009/240100",
+            "15785509461305593/40576900"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-94199/50700",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-015",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "19798259552030537041/15210000",
+            "1763175828552755296/105625",
+            "5077150610212813801/15210000",
+            "752614846394344417/2570490000"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-198633/101894",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-016",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "72706762736669131281/61434244",
+            "244744107615670206769/15358561",
+            "23840098846940892481/61434244",
+            "3297322393025265297/10382387236"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-33841/18655",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-017",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "400176135394460023/294175",
+            "35125690647606510169/2059225",
+            "635754660833794401/2059225",
+            "97786336569159172/348009025"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-79649/42198",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-018",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "13306572547623297601/10536516",
+            "4813951536351300249/292681",
+            "3698572087144535665/10536516",
+            "535567620855891649/1780671204"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 3,
+          "product_roots": {},
+          "published_parameter": "-45321/23621",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-019",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "4036431796147515825/3301489",
+            "53449769894070716929/3301489",
+            "53040728903994143/143543",
+            "172529220357868752/557951641"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 5,
+          "product_roots": {
+            "2": "253239890/53",
+            "4": "8557223/212",
+            "6": "1083515105612735/5618"
+          },
+          "published_parameter": "-3115/2756",
+          "radicand_squareclass_rank": 2,
+          "source_id": "08234-020",
+          "square_character_masks": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "values": [
+            "109366952707500601/44944",
+            "64130441887212100/2809",
+            "73226065471729/44944",
+            "808170801176281/7595536"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 1,
+          "product_roots": {},
+          "published_parameter": "-63985/35256",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-021",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "9996999111847284961/7354944",
+            "870890324554391625/51076",
+            "2274142834983808009/7354944",
+            "349538302073775961/1242985536"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-70688/36829",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-022",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "9805498139729437216/8025889",
+            "129890518597488058921/8025889",
+            "2968935360146366956/8025889",
+            "419668669906057537/1356375241"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 1,
+          "product_roots": {},
+          "published_parameter": "-10565/5352",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-023",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "33014632298177614081/28643904",
+            "3129334586653356225/198916",
+            "11547633461121071209/28643904",
+            "9289715987946289/28643904"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-168541/87360",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-024",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "7799850770072871343/6451200",
+            "5049557709056621401/313600",
+            "16973677330935610321/45158400",
+            "2381877518927501617/7631769600"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-124285/64402",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-025",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "29655163634884956169/24542116",
+            "98765197219361950225/6135529",
+            "9232937788273984521/24542116",
+            "1295106659078902849/4147617604"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 6,
+          "product_roots": {},
+          "published_parameter": "-903/470",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-026",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "269337479103765081/220900",
+            "892880710871637601/55225",
+            "81969240742971481/220900",
+            "68462717988393/220900"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 5,
+          "product_roots": {
+            "1": "6956427/130"
+          },
+          "published_parameter": "-5877/1690",
+          "radicand_squareclass_rank": 3,
+          "source_id": "08234-027",
+          "square_character_masks": [
+            0,
+            1
+          ],
+          "values": [
+            "48391876606329/16900",
+            "15770283982792249/4225",
+            "28870194410466649/16900",
+            "2220595172604513/2856100"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-55104/28535",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-028",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "5813993820733337376/4818025",
+            "77506338207004460209/4818025",
+            "1816266689091216076/4818025",
+            "254532576644797257/814246225"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-75641/41314",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-029",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "1930046562804825607/1442812",
+            "42716007291049060081/2524921",
+            "3214401191680327441/10099684",
+            "487310593307542489/1706846596"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 1,
+          "product_roots": {},
+          "published_parameter": "-15109/7728",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-030",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "10035963158693144887/8531712",
+            "6589459072814648809/414736",
+            "1016643084838992095/2596608",
+            "19059754655990689/59721984"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 1,
+          "product_roots": {},
+          "published_parameter": "-12009/6278",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-031",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "48480896424596958009/39413284",
+            "159994717957030617049/9853321",
+            "14426997421974110185/39413284",
+            "12125199389145489/39413284"
+          ]
+        },
+        {
+          "all_four_product_square": false,
+          "full_lift": false,
+          "generic_rank": 17,
+          "observed_quotient_rank": 0,
+          "product_roots": {},
+          "published_parameter": "-102202/53157",
+          "radicand_squareclass_rank": 4,
+          "source_id": "08234-032",
+          "square_character_masks": [
+            0
+          ],
+          "values": [
+            "20356870028442242500/16719921",
+            "30015477889267702689/1857769",
+            "6217959459124352536/16719921",
+            "876799006220315473/2825666649"
+          ]
+        }
+      ],
+      "full_lift_fibres": [],
+      "generic_squareclass_rank": 4,
+      "geometric_gonality": 8,
+      "id": "obstructed_ABCD",
+      "individual_conic_witnesses": [
+        {
+          "parameter": "-5877/1690",
+          "root": "6956427/130"
+        },
+        {
+          "parameter": "-3115/2756",
+          "root": "253239890/53"
+        },
+        {
+          "parameter": "-3115/2756",
+          "root": "8557223/212"
+        },
+        {
+          "parameter": "-70665/36751",
+          "root": "647424714/36751"
+        }
+      ],
+      "labels": [
+        "orbit-030cb",
+        "orbit-03da0",
+        "orbit-07086",
+        "orbit-11278"
+      ],
+      "minimum_geometric_degree_to_genus_one": 4,
+      "pairwise_gcd_degrees": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "proper_character_only_fibres": [
+        "08234-002",
+        "08234-020",
+        "08234-027"
+      ],
+      "quadratic_discriminants": [
+        "75969762179964613833600",
+        "56612286802132299254016000",
+        "111047564364070748974560",
+        "51106276262815488"
+      ],
+      "rational_gonality": 8,
+      "specialized_squareclass_rank_counts": {
+        "2": 1,
+        "3": 2,
+        "4": 29
+      }
+    }
+  ],
+  "schema": "rank-jump.soluble-quartet-compression.v1",
+  "status": "PASS",
+  "theorem_boundary": "Genus and map-degree conclusions use Riemann-Hurwitz and Castelnuovo-Severi as proved in the companion note. Exact branch conditions and rational conic witnesses are replayed here. The radicand squareclass rank is not an elliptic Selmer or MW rank.",
+  "tower_genus_table": [
+    {
+      "forget_one_genus": 0,
+      "genus": 1,
+      "gonality": 2,
+      "minimum_degree_to_genus_one": 1,
+      "radicands": 2
+    },
+    {
+      "forget_one_genus": 1,
+      "genus": 5,
+      "gonality": 4,
+      "minimum_degree_to_genus_one": 2,
+      "radicands": 3
+    },
+    {
+      "forget_one_genus": 5,
+      "genus": 17,
+      "gonality": 8,
+      "minimum_degree_to_genus_one": 4,
+      "radicands": 4
+    }
+  ]
+}

@@ -1,5 +1,12 @@
 # A rational-solubility condition explains part of four new jumps
 
+**Follow-up:** [the exact compression audit](SOLUBLE_QUARTETS_REQUIRE_HIGHER_GENUS_LIFTS.md)
+proves that both four-cover carriers have genus 17 and admit no rational
+or elliptic parametrization. The full finite-chart atlas also has no
+repeated quadratic function field. These restrict possible explanations
+of the simultaneous square event; they do not change the subgroup ranks
+certified below.
+
 The organizing question is now **what makes several pre-existing covers
 rationally soluble at this parameter?** Describing recovered points, their
 halving fields, or their lattices is secondary unless that description supplies
