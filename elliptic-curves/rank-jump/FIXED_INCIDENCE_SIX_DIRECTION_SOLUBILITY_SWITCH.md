@@ -1,5 +1,11 @@
 # A six-direction solubility switch with fixed strict incidence
 
+Transfer test: [fixing the cubic inside the actual families requires a
+degree6 carrier of genus28 or31](FIXED_CUBIC_TRANSFER_REQUIRES_HIGH_GENUS.md).
+All eight frozen matched pairs already have nonisomorphic cubic fields.
+The twist mechanism cannot be transferred by a rational or elliptic base
+change preserving that entire field.
+
 For the MW16-05 reference at t=3/17 and its minus-one quadratic twist, the
 equation-defined strict Selmer group is the same. Nevertheless, a
 six-dimensional block of generic rational classes on the original becomes

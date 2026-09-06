@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.cubic-isomorphism-carrier-protocol.v1",
+  "scope": "Construct the universal trace-zero cubic-generator equations, specialize them to the five frozen families at their retained witness parameters, and compare discriminant squareclasses on exactly the eight original matched pairs. No point inputs or new parameter search.",
+  "test": "A trace-zero element v*eta+w*(eta^2+2*a/3) in Q[eta]/(eta^3+a*eta+b) has a specified characteristic cubic. Verify its coefficients and basis discriminant identity symbolically. Rational solutions of the two coefficient equations at smooth t are exactly isomorphisms of the two cubic algebras. For each existing pair, a nonsquare discriminant ratio certifies different quadratic resolvents and hence nonisomorphic cubic fields.",
+  "observation": "The eight paired discriminant ratios were inspected before this protocol and all were nonsquare. Certify that retrospective fact, not a prospective discriminator.",
+  "limits": {"worker_seconds": 30, "verification_seconds": 30, "new_points": 0, "new_parameter_searches": 0},
+  "boundary": "The carrier tests constant cubic incidence, not Selmer excess or rational solubility of exceptional classes. A square discriminant ratio alone would not prove cubic-field isomorphism."
+}

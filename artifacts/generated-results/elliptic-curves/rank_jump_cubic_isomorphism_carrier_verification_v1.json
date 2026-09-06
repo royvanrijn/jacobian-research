@@ -1,0 +1,69 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_cubic_isomorphism_carrier_inputs_v1.json": "26d534ce23e1b1ffc44c09296c344e588885c40f2c6087134a9d6702b0fa6685",
+    "artifacts/generated-results/elliptic-curves/rank_jump_cubic_isomorphism_carrier_v1.json": "1abe5cddef1afdaf4242a7c5380918bc775d4b26eb3328d629e7b1071c5e28e6",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_cubic_isomorphism_carrier.py": "27c733a64fed211873f5d6801d8b91bfe289500bffba114090366bd6874e1126",
+    "elliptic-curves/rank-jump/verify_unpointed_governing_norm.py": "69828517faa1ebdc92218dc338cfe156fbc8a16020bf6b28d8f59a60bc4c847a"
+  },
+  "boundary": "Exact identities on all five specified fields and complete eight-pair nonisomorphism test. No rational-point enumeration on the carriers.",
+  "carrier_polynomial_identity_grid_checks": 245,
+  "individual_cubic_S3_witnesses": [
+    {
+      "irreducibility_prime": 19,
+      "token": "case-00"
+    },
+    {
+      "irreducibility_prime": 17,
+      "token": "case-01"
+    },
+    {
+      "irreducibility_prime": 31,
+      "token": "case-02"
+    },
+    {
+      "irreducibility_prime": 23,
+      "token": "case-03"
+    },
+    {
+      "irreducibility_prime": 31,
+      "token": "case-04"
+    },
+    {
+      "irreducibility_prime": 3,
+      "token": "case-05"
+    },
+    {
+      "irreducibility_prime": 23,
+      "token": "case-06"
+    },
+    {
+      "irreducibility_prime": 37,
+      "token": "case-07"
+    },
+    {
+      "irreducibility_prime": 7,
+      "token": "case-08"
+    },
+    {
+      "irreducibility_prime": 17,
+      "token": "case-09"
+    },
+    {
+      "irreducibility_prime": 3,
+      "token": "case-10"
+    },
+    {
+      "irreducibility_prime": 7,
+      "token": "case-11"
+    },
+    {
+      "irreducibility_prime": 17,
+      "token": "case-12"
+    }
+  ],
+  "nonisomorphic_matched_pairs": 8,
+  "numeric_carriers_verified": 5,
+  "schema": "rank-jump.cubic-isomorphism-carrier-verification.v1",
+  "status": "PASS"
+}

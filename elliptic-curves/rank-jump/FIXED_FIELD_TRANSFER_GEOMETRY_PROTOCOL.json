@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.fixed-field-transfer-geometry-protocol.v1",
+  "families": ["074d9", "103b2", "11952", "a1-fibration-01", "a1-fibration-05"],
+  "selection": "Three R17 families and the MW16 family from the frozen fresh27 comparison, plus the MW16-05 exact-reference family. Equations only. One already retained smooth parameter per family supplies a generic cubic irreducibility witness; no points or rank labels enter workers.",
+  "test": "Certify the compact Weierstrass discriminant's multiplicities, coprimality with c4, good reduction at infinity, and an irreducible cubic specialization modulo one good prime. These determine geometric S3 monodromy and transposition branch count. Compute genera of the root, discriminant and Galois splitting covers by Riemann-Hurwitz.",
+  "transfer_question": "Can a nonconstant low-genus parameter cover make the two-division cubic a fixed constant cubic algebra? Any such cover must geometrically dominate the splitting cover. This is a geometric obstruction to transferring the fixed-cubic twist experiment, not a rank or point-visibility feature.",
+  "limits": {"worker_seconds_per_family": 30, "verification_seconds": 60, "modular_prime_bound": 1999, "workers": 1, "pari_stack_bytes": 268435456, "new_point_searches": 0, "new_specialization_searches": 0, "class_group_computations": 0},
+  "failure": "UNKNOWN if discriminant support is not multiplicative, infinity is singular, or no irreducibility witness occurs in the bound. Preserve every checkpoint; no automatic enlargement."
+}

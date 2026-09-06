@@ -1,0 +1,13 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/compact_five_mw16_atlas_v1.json": "88a8c61c2722394bb812da601e24ea2c19e54361eef4b0fe9c7924e78c828801",
+    "artifacts/generated-results/elliptic-curves/compact_six_r17_atlas_v1.json": "2f28c081c874adfaf738c1119e8f4e6e7ce70ea74277cd8cdb370a02bca34c5d",
+    "artifacts/generated-results/elliptic-curves/rank_jump_bounded_gain_reference_provenance_v1.json": "12af21ef41ed782e0b54dc142d6411db4c04a8b5b1f97a6b7a2ca40be70c55e4",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fixed_field_transfer_geometry_inputs_v1.json": "9f49905d2194d57513c7950641d540b0e5340385b91e447024a6bb3de9be19b8",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_manifest_v1.json": "dd07b100bd8cedd038dfe41f30bfb172ba030934cbc39cb7a16d1a5928412fbf",
+    "elliptic-curves/rank-jump/FIXED_FIELD_TRANSFER_GEOMETRY_PROTOCOL.json": "99ef48527640c812b2f5252fa3d4cd459837230fb5f0ddc4d03d9f1bec148a0f",
+    "elliptic-curves/rank-jump/fixed_field_transfer_geometry.py": "bf09994b5d88e04164e502d665cc22f9888b4d56edd3de6b0e21cc1d79e75806"
+  },
+  "schema": "rank-jump.fixed-field-transfer-geometry-provenance.v1",
+  "whitelist": "Compact A,B coefficient arrays and already-retained rational parameters only. No points, classes or rank labels."
+}

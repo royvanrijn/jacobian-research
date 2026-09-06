@@ -1,0 +1,54 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_fixed_field_transfer_geometry_inputs_v1.json": "9f49905d2194d57513c7950641d540b0e5340385b91e447024a6bb3de9be19b8",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fixed_field_transfer_geometry_provenance_v1.json": "09f95b9c4ab81a856537ee3c79886f409a3d65c92daea666190b830de9d313bb",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fixed_field_transfer_geometry_v1.json": "717a38028b93809dd274331742aa7a50c6b5a24b04e2fc4c56479e0c8de67657",
+    "elliptic-curves/rank-jump/verify_fixed_field_transfer_geometry.py": "60e53aa09babca84166438a6bbbc2bf1e7859c2960408196f2d835784711a8a0",
+    "elliptic-curves/rank-jump/verify_fresh_symbolic_discriminant.py": "ef4d9f4e89cbdac899c559cdd276bfccdc2723766cd1ac3416e9ce2b24abf42b"
+  },
+  "boundary": "Exact multiplicative support, infinity, specialization irreducibility and Hurwitz arithmetic. Monodromy and constant-field carrier arguments are in the proof note; no rank or solubility assertion is computed.",
+  "rows": [
+    {
+      "branch_points": 24,
+      "constant_field_carrier_genus": 31,
+      "family": "074d9",
+      "irreducibility_prime": 19,
+      "resolvent_genus": 11,
+      "root_genus": 10
+    },
+    {
+      "branch_points": 24,
+      "constant_field_carrier_genus": 31,
+      "family": "103b2",
+      "irreducibility_prime": 31,
+      "resolvent_genus": 11,
+      "root_genus": 10
+    },
+    {
+      "branch_points": 24,
+      "constant_field_carrier_genus": 31,
+      "family": "11952",
+      "irreducibility_prime": 31,
+      "resolvent_genus": 11,
+      "root_genus": 10
+    },
+    {
+      "branch_points": 22,
+      "constant_field_carrier_genus": 28,
+      "family": "a1-fibration-01",
+      "irreducibility_prime": 7,
+      "resolvent_genus": 10,
+      "root_genus": 9
+    },
+    {
+      "branch_points": 22,
+      "constant_field_carrier_genus": 28,
+      "family": "a1-fibration-05",
+      "irreducibility_prime": 23,
+      "resolvent_genus": 10,
+      "root_genus": 9
+    }
+  ],
+  "schema": "rank-jump.fixed-field-transfer-geometry-verification.v1",
+  "status": "PASS"
+}
