@@ -1,0 +1,481 @@
+{
+  "claim_boundary": "Exactly three predetermined prime tables per family, all five remaining families equally represented;11952 is excluded because its complete cache already exists; compute every projective residue, including infinity. One worker,20 seconds per case and300 seconds total; preserve failure without retry. Verify complete framing, singularity markers and Hasse bounds, plus five independent character sums per table. No catalogue, known record equation/parameter/point/rank/j-invariant or jump label is read. A full cache or fresh parameter/point campaign requires a separate finite protocol after this cost gate; this benchmark launches none. Runtime extrapolations are descriptive, not mathematical bounds.",
+  "cost_gate_passed": true,
+  "direct_character_sums": 75,
+  "projected_serial_seconds": {
+    "074d9": 1667.699556241568,
+    "07ca9": 1666.4870252205385,
+    "08234": 1641.9083959677614,
+    "08f72": 1663.8862305124896,
+    "103b2": 1686.373059066027
+  },
+  "protocol_sha256": "4eea26b4b6e6290000444d7bfac318e05516929a2ac496edd5657fce5c0d958d",
+  "rows": [
+    {
+      "direct_checks": [
+        [
+          0,
+          31
+        ],
+        [
+          1366,
+          -28
+        ],
+        [
+          2732,
+          -50
+        ],
+        [
+          4098,
+          -95
+        ],
+        [
+          4099,
+          -92
+        ]
+      ],
+      "family": "103b2",
+      "prime": 4099,
+      "projective_rows": 4100,
+      "raw_sha256": "8dcda711ce2aaf75138e21f08cc4f3f2b81354143917f46339f23541fbe50d2b",
+      "table_sha256": "2898ffa1fa5f051257cd7f5df10b17b07d5e4a98e3458ab3408d0e5faffa426d",
+      "wall_seconds": 0.13048082892782986
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          250
+        ],
+        [
+          5916,
+          -206
+        ],
+        [
+          11832,
+          220
+        ],
+        [
+          17748,
+          198
+        ],
+        [
+          17749,
+          -42
+        ]
+      ],
+      "family": "103b2",
+      "prime": 17749,
+      "projective_rows": 17750,
+      "raw_sha256": "4741c92c9054e52e72c8bd818278b9aea496c8ec77267fde2a6471086047cd02",
+      "table_sha256": "58ac4f107d49054c02cdee75e229a93bc498edb3de1e7b1668d53e4e6e9086a7",
+      "wall_seconds": 0.2829216009704396
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          71
+        ],
+        [
+          10916,
+          -68
+        ],
+        [
+          21832,
+          334
+        ],
+        [
+          32748,
+          -134
+        ],
+        [
+          32749,
+          -307
+        ]
+      ],
+      "family": "103b2",
+      "prime": 32749,
+      "projective_rows": 32750,
+      "raw_sha256": "fdecfbb01c33baa8d664d911f6b17cb09cd7a09cac726cfc75b9cca207a048b0",
+      "table_sha256": "a53bb8de2b80ceab117f2c2c28b695cf2e0594c4450037b7ca92dd851d5f6870",
+      "wall_seconds": 0.49819680501241237
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          -24
+        ],
+        [
+          1366,
+          -24
+        ],
+        [
+          2732,
+          -80
+        ],
+        [
+          4098,
+          -59
+        ],
+        [
+          4099,
+          2
+        ]
+      ],
+      "family": "074d9",
+      "prime": 4099,
+      "projective_rows": 4100,
+      "raw_sha256": "57631f97114e83c04511be9284136d9c0f14262764b487d79e533b17d16d008f",
+      "table_sha256": "f88c721184b50242878d6c3fa00ad9743ca61ee2c021bb16318c729ba69769f3",
+      "wall_seconds": 0.12903599196579307
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          -92
+        ],
+        [
+          5916,
+          -182
+        ],
+        [
+          11832,
+          103
+        ],
+        [
+          17748,
+          118
+        ],
+        [
+          17749,
+          -114
+        ]
+      ],
+      "family": "074d9",
+      "prime": 17749,
+      "projective_rows": 17750,
+      "raw_sha256": "3815c05dfa268f635c164c7d9c748ed6e2757a403798f85b6d761676de2b84c4",
+      "table_sha256": "3dd78d711e222924c4956217e6e1fa3ba4a4e906de7dd35399cd86cf4ea7643f",
+      "wall_seconds": 0.2862328449264169
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          132
+        ],
+        [
+          10916,
+          -186
+        ],
+        [
+          21832,
+          73
+        ],
+        [
+          32748,
+          14
+        ],
+        [
+          32749,
+          -296
+        ]
+      ],
+      "family": "074d9",
+      "prime": 32749,
+      "projective_rows": 32750,
+      "raw_sha256": "fc9762b55a9a4f7d7c7ef81447733735d694a0efd3c909ab94488e6030fb8c31",
+      "table_sha256": "588e77062b12dbed13cea792745f75a857f64adb3723e2c48ac2b6655b381ea7",
+      "wall_seconds": 0.48835232004057616
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          60
+        ],
+        [
+          1366,
+          -44
+        ],
+        [
+          2732,
+          -64
+        ],
+        [
+          4098,
+          30
+        ],
+        [
+          4099,
+          -42
+        ]
+      ],
+      "family": "07ca9",
+      "prime": 4099,
+      "projective_rows": 4100,
+      "raw_sha256": "c6bb7ec5f7948b7c01883dbe7addc26712de77b50131251d6c91d08fe2b80d17",
+      "table_sha256": "4fc6ee51387452478f810537335cd053ea080923b9c9696ef3989babddf2a217",
+      "wall_seconds": 0.12894217402208596
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          37
+        ],
+        [
+          5916,
+          -59
+        ],
+        [
+          11832,
+          -79
+        ],
+        [
+          17748,
+          41
+        ],
+        [
+          17749,
+          112
+        ]
+      ],
+      "family": "07ca9",
+      "prime": 17749,
+      "projective_rows": 17750,
+      "raw_sha256": "ce1207b45c91b456a9cc8c03e3daa632a04370a42eab413752a9f4cbdcaa5e39",
+      "table_sha256": "7bc45cdff508dd984e2ca7afdcd273677ea55538735e78b32935e784071932b5",
+      "wall_seconds": 0.29118843004107475
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          -28
+        ],
+        [
+          10916,
+          317
+        ],
+        [
+          21832,
+          -4
+        ],
+        [
+          32748,
+          -211
+        ],
+        [
+          32749,
+          -161
+        ]
+      ],
+      "family": "07ca9",
+      "prime": 32749,
+      "projective_rows": 32750,
+      "raw_sha256": "fece8ed13689407a6262799214fc89c96bc9247890392f7c493c1d78702c0323",
+      "table_sha256": "509cd27836704de14b7f51082aca5f1a4ffad0858cf3a8503546ac6ea2604133",
+      "wall_seconds": 0.4869736669352278
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          108
+        ],
+        [
+          1366,
+          101
+        ],
+        [
+          2732,
+          -52
+        ],
+        [
+          4098,
+          -61
+        ],
+        [
+          4099,
+          17
+        ]
+      ],
+      "family": "08234",
+      "prime": 4099,
+      "projective_rows": 4100,
+      "raw_sha256": "f2b06200b4f67da6ca3be7ea9ffa9535af41b2949742528c6732a03018230757",
+      "table_sha256": "3dd58e29d49c0d7292ca6af63d8443da0befde62891f6c83e7f5b3a3424e56a2",
+      "wall_seconds": 0.1270404359092936
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          131
+        ],
+        [
+          5916,
+          5
+        ],
+        [
+          11832,
+          119
+        ],
+        [
+          17748,
+          -130
+        ],
+        [
+          17749,
+          -93
+        ]
+      ],
+      "family": "08234",
+      "prime": 17749,
+      "projective_rows": 17750,
+      "raw_sha256": "7d6d521aaee338ed613e04cf74232c90a45bbadb266a5b9191df97fd09835f75",
+      "table_sha256": "6770d93be2b2f508e97053aad32ee13da8b3711f996fb8672e538547b73136b2",
+      "wall_seconds": 0.28108439303468913
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          -263
+        ],
+        [
+          10916,
+          84
+        ],
+        [
+          21832,
+          -50
+        ],
+        [
+          32748,
+          -32
+        ],
+        [
+          32749,
+          151
+        ]
+      ],
+      "family": "08234",
+      "prime": 32749,
+      "projective_rows": 32750,
+      "raw_sha256": "d6ac2f25acc2dbb4c7fbbd66f1e025a8608e63729294a1fea2b6af78b0189acb",
+      "table_sha256": "896c768d963d2871ce39ae0b7ee8c8a6a236d563b687ebb457a2649a8c93b891",
+      "wall_seconds": 0.4352917919168249
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          -20
+        ],
+        [
+          1366,
+          5
+        ],
+        [
+          2732,
+          -32
+        ],
+        [
+          4098,
+          -19
+        ],
+        [
+          4099,
+          56
+        ]
+      ],
+      "family": "08f72",
+      "prime": 4099,
+      "projective_rows": 4100,
+      "raw_sha256": "76e7aeef9b0fdaba50d6f194cde568916052b4cc2d5a8432a45b0ab3b819e6ee",
+      "table_sha256": "1ddaaf04a2135ffaff11aff0dae856a5b38a5d70c7265396d0e9f6afbb1cbed0",
+      "wall_seconds": 0.128740941057913
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          -104
+        ],
+        [
+          5916,
+          -47
+        ],
+        [
+          11832,
+          -70
+        ],
+        [
+          17748,
+          -239
+        ],
+        [
+          17749,
+          148
+        ]
+      ],
+      "family": "08f72",
+      "prime": 17749,
+      "projective_rows": 17750,
+      "raw_sha256": "eb22d5a0f01e86ece9e9a3be7e694d1ef923db34fb1c7556eb2953e0283c8a34",
+      "table_sha256": "567cc02dadfd3448683d3c78594c0c6edc7f6d170fd96e1fba6904e2f4247d41",
+      "wall_seconds": 0.28458132105879486
+    },
+    {
+      "direct_checks": [
+        [
+          0,
+          242
+        ],
+        [
+          10916,
+          -4
+        ],
+        [
+          21832,
+          -170
+        ],
+        [
+          32748,
+          -346
+        ],
+        [
+          32749,
+          94
+        ]
+      ],
+      "family": "08f72",
+      "prime": 32749,
+      "projective_rows": 32750,
+      "raw_sha256": "ad329b9ceaf58802d0269e5dbf02a6867e7b16df30ba23d35d09da7d1740cafe",
+      "table_sha256": "1c01d3a1c4c971599fd0c44878f386260f0c8c818ae68886a85b530223232a57",
+      "wall_seconds": 0.489431292982772
+    }
+  ],
+  "schema": "elliptic-curves.r17_remaining-extended-projective-benchmark-result.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/broad60_mw16_experiment_v1.json": "81bdefa0177032988bcc610b7d9fba37e99a6cc9bb9c81e5d0de5c5df86bf64f",
+    "artifacts/generated-results/elliptic-curves/compact_six_r17_atlas_v1.json": "2f28c081c874adfaf738c1119e8f4e6e7ce70ea74277cd8cdb370a02bca34c5d",
+    "artifacts/generated-results/elliptic-curves/r17_extended_score_prime_minimality_sage_replay_v1.json": "e54271323a8e190a440ef64df6cc587926cde5c9ade8a65740a1e14658555170",
+    "artifacts/generated-results/elliptic-curves/r17_extended_score_prime_minimality_v1.json": "b96961a0a31de4e4c864ec4309777d70484e1f4f84bb11371ba8abec5486088b",
+    "elliptic-curves/cas/benchmark_extended_projective_trace_cache_v2.py": "d771dfa409d4002bfbe111433501a8433d53ccccf5095ea16998d709f3bac822",
+    "elliptic-curves/cas/benchmark_r17_extended_prime_traces.py": "0239593edaa2e1dd19a5ac0fe18652cd0ccb7cddeb9046c40fa3da7f9e97d47d",
+    "elliptic-curves/cas/benchmark_r17_remaining_extended_projective_tables.py": "1bde22f16340b820322f9936711f9d927e13206bcaac610a8b85b2ca7935e636",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9",
+    "elliptic-curves/cas/compact_atlas_specialization.py": "ea68110968e86cb0502a74a995c26054ff8e4a0da90c49bb2bdf0b753a759b14",
+    "elliptic-curves/cas/mod2_reduction_independence.py": "c5963952d1a9089416479671b788b6437dbba26591d796646022f4e9dddd0c70",
+    "elliptic-curves/cas/research_runtime/store.py": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965",
+    "elliptic-curves/cas/research_runtime/supervisor.py": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233"
+  },
+  "status": "PASS"
+}

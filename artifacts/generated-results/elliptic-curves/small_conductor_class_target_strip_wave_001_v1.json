@@ -1,0 +1,287 @@
+{
+  "candidate_occurrences": 358109,
+  "chunks": [
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0000.json",
+      "sha256": "139b6e1f0e368f38b39862957b4594faca20ab96c6f62555b35041fd1e2ca8c7"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0001.json",
+      "sha256": "31644abdecf2ca9299593ba8ea892084a8c18f361cfe6baacc717a6c878fbbe0"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0002.json",
+      "sha256": "e6ccef4bc7dfc0fc0622b9283268ddc49a4dbb22d5a1d6f700b7841cce1bfa02"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0003.json",
+      "sha256": "17412800afd55851355b7e690dc07a95ec87e012b9509a03b1d9a32d3c8913ca"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0004.json",
+      "sha256": "86a44651e6dc7ba1f52536c4f0bc76b8f9a58d185aa65d31b015b61d770796b8"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0005.json",
+      "sha256": "c3a99a028a1937e2620777fc55a16d57c86cd44f296b7089736d63894c34501f"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0006.json",
+      "sha256": "6da8370d24144549715574e641491d663bc5f68cd0e4522ed9f82ecb242f229f"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0007.json",
+      "sha256": "f289ac58fc76d2e3b94b4953130b3dc0dec33f93fb1a58984564713f8d80738b"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0008.json",
+      "sha256": "94c309e4e3c71a04e9086e1ebd8c071b4728149c5ec7dba93bb6154ada831ba6"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0009.json",
+      "sha256": "75ad72f3bfec61450c61cde2b11af89805d497e10adc59e0a986a17ea73ed5c8"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0010.json",
+      "sha256": "4500d080c74374a445a7feff0ae82089320a05df0d78c1e047efa2d384482654"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0011.json",
+      "sha256": "dd6e44c45a4160f8b470e76c5b1eef880ee98367f00c2795bd81865d4892c091"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0012.json",
+      "sha256": "a54fdfeeca71747ec2fe9d08b45877c47d0764596c48885979f4682e802e21cc"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0013.json",
+      "sha256": "280119cc4f27c3b2e27f59f23e705011f2860d392c12539f9202dbcc14570524"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0014.json",
+      "sha256": "5a79a6eeb352f90663d001679fd3c6c40382ce167ce2d87ac6ea53be30904744"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0015.json",
+      "sha256": "a87088b6371f00d2bfb4e4decd3e18016d01fbb9d5be32bc312b1e771acd1e8d"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0016.json",
+      "sha256": "3a474a4881d68ab7abe0315a25f8d5cf98e98a8260ad38706a95771ce2710df2"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0017.json",
+      "sha256": "99f7bb0d63cb45bd64b58b35ce0515787b112fb53ca79fa5ec5051cf045da310"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0018.json",
+      "sha256": "bd912eb4cc5e68fe279693c8cfd7cc8502e374f85cbca4d756d5811a178417d5"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0019.json",
+      "sha256": "96c0d4c85101b4f861cc5bccf81dfa9c0164a798261b2190bcca934db9cceb20"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0020.json",
+      "sha256": "1b573f08c79334e5e8155469fa42cd983262a833a3197dce3e43ad13c1dedc0e"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0021.json",
+      "sha256": "1c814eda71186c08dddc823da4997a8406e79df3a93201a9c5cce22f9aaf18ae"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0022.json",
+      "sha256": "2eb7738148aa26fdc0b7058a7121e90898121ad44860ddc743d8e468dae56f85"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0023.json",
+      "sha256": "1f7a99f557f38ce32cff65fe4b970a6bbc4e858b4737ef77537f4e3607e18ed6"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0024.json",
+      "sha256": "1644b32f791211abfbc1d1df359088d61ed5cdd7d511fe3102c2653f108b3970"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0025.json",
+      "sha256": "666da39d538cfc6d0fede9536b335918df06da91350b62e7a75987e82044aab5"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0026.json",
+      "sha256": "70c549fb10bf3f86305d0914fdce21266a6cc5fcdf5fafc53bfec50385d5df0c"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0027.json",
+      "sha256": "17721547822f267aa120049a68e811500751709acbd70350e5c12ebc0bf82f15"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0028.json",
+      "sha256": "827fbde84296a76cf305e179c7f2baadab8d02f62c3312d84a491ab8dfb2a155"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0029.json",
+      "sha256": "b98b5e532c546ae8352d152497460986f34ccc9cff826743c8107faec220923c"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0030.json",
+      "sha256": "4344f904ba74b27de9932184d3941ad57545de791d95183b374298b0b9cb5a21"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0031.json",
+      "sha256": "e65580b7989c236fb6f037f18d473b5610646bf25d431f307b50e657f0fe59f1"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0032.json",
+      "sha256": "34e09bc94074cf76420689cf663617b4942c06217f6a62254368df55e4a9d108"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0033.json",
+      "sha256": "16bbde7011c22082fb1caeda8e5bbabc20e3946722f4d7d928e188d7ad9eb485"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0034.json",
+      "sha256": "e18c21cac0de03f4018306542b4be2fd0e3ea46469ecde5206707a81a2cce267"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0035.json",
+      "sha256": "14bc49e91eac5d314944e4978c620ff564a3bd361378f7170f2d444b815988e1"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0036.json",
+      "sha256": "5f8c2b1ed4cd6a0c358839443930768331fe9b21f54d82790e0d5452b53b317e"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0037.json",
+      "sha256": "e51cf16dbe992fc129e1a7f4ea413548c474bbf5deb2c533abf1c4f6745bb1cc"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0038.json",
+      "sha256": "8f2658eccf27630ed34fb94b41db93cc48b3345a9223bd514839597a2cc49ff6"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0039.json",
+      "sha256": "0501c4eb2dfb80fdac0458d91d25f795f0176aa671bfdfd563f9431493841822"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0040.json",
+      "sha256": "98fe34da40cb32d12e74635a57a7483dda5cbfd902e946a70ae8b7508b70e6d4"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0041.json",
+      "sha256": "546512d00ca904540667cf55fb9c9f0cb437c4af13899fd38021e2273840304f"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0042.json",
+      "sha256": "fc7b3492f5c46c7dfffb1f194d07376ae34534cef461fa4d1661cecc36216cad"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0043.json",
+      "sha256": "cb1d3f6c24390a8bbe7a53a7e4a6fe6a8a6b86ad6ba09adb49c8ad9bc756a816"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0044.json",
+      "sha256": "fa0fc3c90db60f3e23db6dc79d704b139e1450dca29cf1eef4f87479293e8154"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0045.json",
+      "sha256": "6a4b70afca83ec0d62df06fbb1c6b353ccf466a3f5318508f05d4a24eb56268f"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0046.json",
+      "sha256": "d9ec80368342ee21868bc3e6df2b89dcc42606f1f06fde5ef988f0981e69b8bf"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0047.json",
+      "sha256": "d49d59a59caaf4731985c01c6fb5761ecd78bed5c51b498fa9da9a948dea76fb"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0048.json",
+      "sha256": "c10927c7fd33af62505ecb812291165bd5ecbcb78f858ca13e186063c7d3d6d8"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0049.json",
+      "sha256": "a404cb415ec6649d94c1f104c19349cc0473af794cf4d2e5b1d4d22adb08bbc0"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0050.json",
+      "sha256": "6f369c4fa097b9e8ad089ee436609fc0470eb10fc61fead494d6233b62c14289"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0051.json",
+      "sha256": "739dba95e231ba0699bf656a38f8dd1c0c22c6ea3571da72376966a504db0dce"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0052.json",
+      "sha256": "a13b24b46eb6d3da42740c04c65b0f7ed95b7a71dd65ed2a2e2fbe38457a983e"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0053.json",
+      "sha256": "4ccd90834d275f9ca35395fcfc666a4da505f786ff2a689f78e0bafc294ae4f5"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0054.json",
+      "sha256": "9c504e00ce44b99444b39278948acf2d2c65419a1c8bf99f3f974886f0355ba1"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0055.json",
+      "sha256": "1a7f0da3d58a53f91ac5f15259283091830c8867caa1ae632bb8514b0febe182"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0056.json",
+      "sha256": "b4ae4c42527f4738c9b158be65eb263f2113d2dd247823b531a44afc2e06d53d"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0057.json",
+      "sha256": "570fc0b7ee3420ed197b28417fe0448306cc4b87a1b228ad2486983dd106a92f"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0058.json",
+      "sha256": "2f58fb05ab13a3ef693da58cd9711d2faf6e1b8ba6a1be0883ddca951833b413"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0059.json",
+      "sha256": "3e01ee0e550478d904cfed3683b49bee47587ebdd0fc009a4e573ed3300273b6"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0060.json",
+      "sha256": "1974a5dff544e21d55fc0ecc1e9af2b9fda982c90b43d682bfbaa8c6d8565960"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0061.json",
+      "sha256": "87067d8942f2d5df1a3c97e57f34637e58174dac5d6e6d5ddbc24a001da9d52b"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0062.json",
+      "sha256": "d00d71a0b1080e826f25fb3d8afe93be80e85459e9dd7c5ef4050a0bca9f2eda"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/target_0063.json",
+      "sha256": "6ad996aac714811d706e5d23b00f2452e035cbe04d534ba33d2045a3d21a7995"
+    }
+  ],
+  "claim_boundary": "Generation and resulting class/rank upper bounds are GRH-conditional. Known curve rank is at least22. A residual<=16 would certify rank22 under GRH, not unconditionally.",
+  "conditional_on_grh_class_two_rank_upper_bound": 1142,
+  "conditional_on_grh_curve_rank_upper_bound": 1148,
+  "conditional_on_grh_exact_rank": null,
+  "distinct_pairs_up_to_sign": 52,
+  "independent_supported_gain": 24,
+  "matrix": {
+    "all_relation_rank": 3399,
+    "free_columns": 3243,
+    "further_rows_to_16": 1126,
+    "outside_projection_rank": 1298,
+    "quotient_dimension": 1142,
+    "supported_rank": 2101
+  },
+  "relation_occurrences": 55,
+  "schema": "elliptic-curves.small-conductor-class-target-strip-wave.v1",
+  "sources": {
+    "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/protocol.json": "81b4e3d72c73b7c5f7e829115a00a2794be47bb44ba5827ddad3d6cf84eac056",
+    "artifacts/local/elliptic-curves/small-conductor-class-target-strips-v1/wave_001/result.json": "aa09356e973e9d76d9047e0a05bfa2909a4b2e859a83e4273db63df07853ea8f",
+    "elliptic-curves/cas/pursue_small_conductor_class_target_strips.sage": "dbab4c92315ec9a891d971ea27164cff5b08be6fb8347a458a32abb27c98b48e"
+  },
+  "starting_dimension": 1166,
+  "status": "PASS",
+  "unconditional_rank_lower_bound": 22,
+  "unconditional_rank_upper_bound": null,
+  "wave": 1
+}
