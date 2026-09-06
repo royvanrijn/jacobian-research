@@ -1,0 +1,11 @@
+{
+  "schema":"rank-jump.small-quotient-solubility-protocol.v1",
+  "question":"Which classes in the retained two-dimensional strict block are rational on the original small elliptic quotient and its minus-one twist?",
+  "source":"rank_jump_nonscalar_cup_control_v1.json",
+  "models":[[0,-11,0,-14,-1],[0,11,0,-14,1]],
+  "supplied_points":[[[-1,1]],[[0,1]]],
+  "limits":{"fixed_curves":2,"seconds_per_descent":30,"PARI_ellrank_effort":0,"maximum_point_word_dimension":5,"parameter_searches":0,"production_searches":0},
+  "operations":"One deterministic effort-zero PARI 2-descent and Cassels-pairing computation per fixed curve; retain its points, unconditional rank interval, and reported pairing rank. Then exact rational point checks and at most 32 point-word Kummer comparisons per curve against the two retained strict classes.",
+  "endpoint":"Rational witnesses prove class solubility. A full-rank Kummer point subgroup plus a matching unconditional rank upper bound can prove absence of strict rational classes. Norm lifts alone are not point certificates.",
+  "failure":"Keep an unresolved rank or class membership UNKNOWN. Do not raise effort, add curves, or increase the timeout."
+}

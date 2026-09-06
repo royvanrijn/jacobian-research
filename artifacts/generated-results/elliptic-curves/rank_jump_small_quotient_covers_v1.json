@@ -1,0 +1,134 @@
+{
+  "block_sha256": "a277015dabaa62a3ed5efb06b51fa898044ea7dea49960842917ad8e9132ded5",
+  "boundary": "Solubility of these four fixed two-covers; not a general rule that a zero cup product implies rational solubility.",
+  "producer_sha256": "a980766a51921ecd3c339e468a6ea8ab2634eae5af3645232a0a499f2b0a21a4",
+  "rank_verification_sha256": "166b1fffa2d8ff575d33f225ea636ad590cf3935748440e453f56d0052b6573f",
+  "records": [
+    {
+      "Q0": [
+        "1",
+        "2",
+        "2",
+        "1",
+        "52",
+        "301"
+      ],
+      "Q1": [
+        "-10",
+        "30",
+        "30",
+        "15",
+        "730",
+        "4240"
+      ],
+      "Q2": [
+        "1",
+        "2",
+        "52",
+        "26",
+        "602",
+        "3676"
+      ],
+      "beta": [
+        "1",
+        "-10",
+        "1"
+      ],
+      "beta_index": 0,
+      "elliptic_image": [
+        "6",
+        "23"
+      ],
+      "local_solubility": "YES on both curves: retained strict Selmer classes",
+      "map": "x=Q0/h^2, y=25*N(u+v*theta+w*theta^2)/h^3",
+      "monomials": [
+        "u^2",
+        "u*v",
+        "u*w",
+        "v^2",
+        "v*w",
+        "w^2"
+      ],
+      "original_cover": [
+        "Q2=0",
+        "Q1+h^2=0"
+      ],
+      "original_rational_solubility": "NO: nonzero Sha[2] class, exact rank/CT certificate",
+      "twist_cover": [
+        "Q2=0",
+        "Q1-h^2=0"
+      ],
+      "twist_rational_point": [
+        "2",
+        "11/5",
+        "-1/5",
+        "1"
+      ],
+      "twist_rational_solubility": "YES: explicit projective point"
+    },
+    {
+      "Q0": [
+        "12",
+        "2",
+        "-4",
+        "-2",
+        "8",
+        "17"
+      ],
+      "Q1": [
+        "-13",
+        "52",
+        "-54",
+        "-27",
+        "108",
+        "242"
+      ],
+      "Q2": [
+        "1",
+        "-4",
+        "8",
+        "4",
+        "34",
+        "241"
+      ],
+      "beta": [
+        "12",
+        "-13",
+        "1"
+      ],
+      "beta_index": 1,
+      "elliptic_image": [
+        "2",
+        "5"
+      ],
+      "local_solubility": "YES on both curves: retained strict Selmer classes",
+      "map": "x=Q0/h^2, y=25*N(u+v*theta+w*theta^2)/h^3",
+      "monomials": [
+        "u^2",
+        "u*v",
+        "u*w",
+        "v^2",
+        "v*w",
+        "w^2"
+      ],
+      "original_cover": [
+        "Q2=0",
+        "Q1+h^2=0"
+      ],
+      "original_rational_solubility": "NO: nonzero Sha[2] class, exact rank/CT certificate",
+      "twist_cover": [
+        "Q2=0",
+        "Q1-h^2=0"
+      ],
+      "twist_rational_point": [
+        "2/5",
+        "1/5",
+        "0",
+        "1"
+      ],
+      "twist_rational_solubility": "YES: explicit projective point"
+    }
+  ],
+  "schema": "rank-jump.small-quotient-covers.v1",
+  "status": "PASS"
+}

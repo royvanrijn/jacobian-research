@@ -1,5 +1,10 @@
 # An explicit nonscalar norm-lifting block and its self-gluing explanation
 
+Follow-up: [the exact quotient comparison](NORM_LIFTS_CAN_BE_ENTIRELY_SHA.md)
+proves that both strict classes are Sha on the rank-one original curve
+and rational on its rank-three twist. Explicit unramified norm lifts
+therefore do not suffice for elliptic rational solubility.
+
 The bounded nonscalar control closes a complete two-dimensional arithmetic
 block. In the same cubic field, with the same strict classes and allowed
 ramification, one multiplier obstructs every nonzero class and its negative

@@ -1,0 +1,82 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_nonscalar_cup_control_v1.json": "d5e9ddb4345a809c58231b2767ce4f3e81639f853705ab6abdfd6c5a55a7b5b0",
+    "elliptic-curves/rank-jump/SMALL_QUOTIENT_SOLUBILITY_PROTOCOL.json": "4704898cc3c15ba4c640270f3e7a7959351b3b94bacb4645ba05e78b0a4f04bc",
+    "elliptic-curves/rank-jump/small_quotient_solubility.py": "b5f6e9dee3822cdff58afdce3f5a51ee9dcbc54f9b994187b9c739cd885a54a6"
+  },
+  "records": [
+    {
+      "Sha2_mod_twice_Sha4_dimension": 2,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_nonscalar_cup_control_v1.json": "d5e9ddb4345a809c58231b2767ce4f3e81639f853705ab6abdfd6c5a55a7b5b0",
+        "elliptic-curves/rank-jump/SMALL_QUOTIENT_SOLUBILITY_PROTOCOL.json": "4704898cc3c15ba4c640270f3e7a7959351b3b94bacb4645ba05e78b0a4f04bc",
+        "elliptic-curves/rank-jump/small_quotient_solubility.py": "b5f6e9dee3822cdff58afdce3f5a51ee9dcbc54f9b994187b9c739cd885a54a6"
+      },
+      "index": 0,
+      "model": [
+        0,
+        -11,
+        0,
+        -14,
+        -1
+      ],
+      "points": [
+        [
+          "-1",
+          "1"
+        ]
+      ],
+      "rank_interval": [
+        1,
+        1
+      ],
+      "raw_result": "[1, 1, 2, [[-1, 1]]]",
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "status": "COMPUTED"
+    },
+    {
+      "Sha2_mod_twice_Sha4_dimension": 0,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_nonscalar_cup_control_v1.json": "d5e9ddb4345a809c58231b2767ce4f3e81639f853705ab6abdfd6c5a55a7b5b0",
+        "elliptic-curves/rank-jump/SMALL_QUOTIENT_SOLUBILITY_PROTOCOL.json": "4704898cc3c15ba4c640270f3e7a7959351b3b94bacb4645ba05e78b0a4f04bc",
+        "elliptic-curves/rank-jump/small_quotient_solubility.py": "b5f6e9dee3822cdff58afdce3f5a51ee9dcbc54f9b994187b9c739cd885a54a6"
+      },
+      "index": 1,
+      "model": [
+        0,
+        11,
+        0,
+        -14,
+        1
+      ],
+      "points": [
+        [
+          "-1",
+          "5"
+        ],
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "5"
+        ]
+      ],
+      "rank_interval": [
+        3,
+        3
+      ],
+      "raw_result": "[3, 3, 0, [[-1, 5], [0, 1], [2, 5]]]",
+      "software": {
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "status": "COMPUTED"
+    }
+  ],
+  "schema": "rank-jump.small-quotient-descents.v1"
+}

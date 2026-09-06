@@ -1,0 +1,41 @@
+{
+  "Sha_2_dimensions": [
+    2,
+    0
+  ],
+  "analysis_sha256": "a277015dabaa62a3ed5efb06b51fa898044ea7dea49960842917ad8e9132ded5",
+  "arithmetic_source_sha256": "21ede981248c766c8250b1a854f7534b52ae5f69038a4acedd2933c981b6f868",
+  "exact_ranks": [
+    1,
+    3
+  ],
+  "full_Selmer_dimension": 3,
+  "new_descent_upper_bounds_used_as_proof": false,
+  "norm_kernel_dimension": 4,
+  "original_strict_CT_rank": 2,
+  "real_condition_codimension": 1,
+  "records": [
+    {
+      "index": 0,
+      "point_rank": 1,
+      "signatures": [
+        8
+      ],
+      "strict_rational_witnesses_checked": 0
+    },
+    {
+      "index": 1,
+      "point_rank": 3,
+      "signatures": [
+        13,
+        8,
+        6
+      ],
+      "strict_rational_witnesses_checked": 2
+    }
+  ],
+  "retained_class_group_certificate_used": true,
+  "schema": "rank-jump.small-quotient-block-verification.v1",
+  "status": "PASS",
+  "verifier_sha256": "0e3b7c4f3b717e94612605c76cf7e9dfc73b7132e86dc810679755e3888839d5"
+}
