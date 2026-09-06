@@ -1,0 +1,10 @@
+{
+  "schema":"rank-jump.quartet-unramified-descent-protocol.v1",
+  "layer":"solubility",
+  "selection":"Exactly the two successful quartets 08234-003 and 08234-009 and the already obstructed ABCD quartet in rank_jump_soluble_quartet_compression_inputs_v1.json.",
+  "question":"What is the smallest native unramified quotient of each full four-cover carrier, and what affine class distinguishes a rational product point from four simultaneous native lifts?",
+  "method":"Verify the degree-eight product polynomials, the unique largest freely acting native deck subgroup, the rank-three isotropic subgroup of the genus-three Jacobian, all character genera, both retained rational lifts, and existing quotient-rank certificates. Enumerate the product-point/native-class incidence at the fixed primes 131 and 137 only when the binary branch geometry has good reduction. Recheck the established projective obstruction at 23 for ABCD and exhibit a smooth local point on its product quotient.",
+  "limits":{"quartets":3,"good_prime_tests":[131,137],"obstruction_replay_prime":23,"workers":1,"new_original_rational_parameters":0,"online_requests":0,"Jacobian_descents":0},
+  "failure_semantics":"Bad branch reduction leaves that finite-field comparison UNKNOWN. Product points are not lifted points without the three-class test. The obstructed quartet is a cover-system control, not a low-rank fibre. Absolute minimum genus outside native deck quotients and genus-three Jacobian ranks remain UNKNOWN.",
+  "boundary":"Extend the solubility carrier from the two-direction triple to both complete retained three-direction quartets; do not claim to explain the full observed +7 or +8 quotient."
+}

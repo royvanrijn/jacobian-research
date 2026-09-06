@@ -1,0 +1,455 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_paired_quartet_relations_verification_v1.json": "c393c56047d7cde8a410a00560bda773ae71a87750cdc30d9d191d2f5ae7fc99",
+    "artifacts/generated-results/elliptic-curves/rank_jump_soluble_quartet_compression_inputs_v1.json": "fe70c730c1f19bf3eae03f3e78b52c23ed7de041f64c1e635600561487aed976",
+    "artifacts/generated-results/elliptic-curves/rank_jump_soluble_quartet_compression_v1.json": "aa204e1d3d38eab90d97d90c25ea7b70dc0d6b45dd0707eceab5a8fb7ec591b5",
+    "elliptic-curves/rank-jump/QUARTET_UNRAMIFIED_DESCENT_PROTOCOL.json": "42248e12e62929c201e04958f872d129a7f48fb34b8d279e97cc515f930adf5a",
+    "elliptic-curves/rank-jump/quartet_unramified_descent.py": "1b66ffbcff693964955ed1fb8c8088e1980fedfd0294e7e983f284d74a4e2024",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_paired_quartet_relations.py": "b0de9e0c0990390a5e0af8f752b356ccf7aa99ef1f8503b11d14f6faf06bc648"
+  },
+  "boundary": "Extend the solubility carrier from the two-direction triple to both complete retained three-direction quartets; do not claim to explain the full observed +7 or +8 quotient.",
+  "geometry": {
+    "carrier_genus": 17,
+    "character_quotients": [
+      {
+        "genus": 0,
+        "mask": 1
+      },
+      {
+        "genus": 0,
+        "mask": 2
+      },
+      {
+        "genus": 1,
+        "mask": 3
+      },
+      {
+        "genus": 0,
+        "mask": 4
+      },
+      {
+        "genus": 1,
+        "mask": 5
+      },
+      {
+        "genus": 1,
+        "mask": 6
+      },
+      {
+        "genus": 2,
+        "mask": 7
+      },
+      {
+        "genus": 0,
+        "mask": 8
+      },
+      {
+        "genus": 1,
+        "mask": 9
+      },
+      {
+        "genus": 1,
+        "mask": 10
+      },
+      {
+        "genus": 2,
+        "mask": 11
+      },
+      {
+        "genus": 1,
+        "mask": 12
+      },
+      {
+        "genus": 2,
+        "mask": 13
+      },
+      {
+        "genus": 2,
+        "mask": 14
+      },
+      {
+        "genus": 3,
+        "mask": 15
+      }
+    ],
+    "etale_degree": 8,
+    "free_native_subgroups": [
+      [
+        0
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        3,
+        5,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        3,
+        9,
+        10
+      ],
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        5,
+        9,
+        12
+      ],
+      [
+        0,
+        6,
+        10,
+        12
+      ],
+      [
+        0,
+        7,
+        11,
+        12
+      ],
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        7,
+        10,
+        13
+      ],
+      [
+        0,
+        6,
+        11,
+        13
+      ],
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        7,
+        9,
+        14
+      ],
+      [
+        0,
+        5,
+        11,
+        14
+      ],
+      [
+        0,
+        3,
+        13,
+        14
+      ],
+      [
+        0,
+        15
+      ],
+      [
+        0,
+        6,
+        9,
+        15
+      ],
+      [
+        0,
+        5,
+        10,
+        15
+      ],
+      [
+        0,
+        3,
+        12,
+        15
+      ],
+      [
+        0,
+        3,
+        5,
+        6,
+        9,
+        10,
+        12,
+        15
+      ]
+    ],
+    "isotropic_2_torsion_classes": [
+      0,
+      3,
+      12,
+      15,
+      48,
+      51,
+      60,
+      63
+    ],
+    "isotropic_dimension": 3,
+    "positive_genus_dimensions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      3
+    ],
+    "product_quotient_genus": 3,
+    "unique_maximal_free_subgroup": [
+      0,
+      3,
+      5,
+      6,
+      9,
+      10,
+      12,
+      15
+    ]
+  },
+  "layer": "solubility",
+  "rows": [
+    {
+      "finite_field_incidence": [
+        {
+          "branch_product_points": 2,
+          "carrier_points": 88,
+          "liftable_product_points": 11,
+          "non_branch_class_counts": {
+            "000": 10,
+            "001": 16,
+            "010": 18,
+            "011": 14,
+            "100": 22,
+            "101": 22,
+            "110": 24,
+            "111": 14
+          },
+          "prime": 131,
+          "product_points": 142,
+          "status": "PASS"
+        },
+        {
+          "branch_product_points": 4,
+          "carrier_points": 144,
+          "liftable_product_points": 18,
+          "non_branch_class_counts": {
+            "000": 16,
+            "001": 18,
+            "010": 22,
+            "011": 16,
+            "100": 12,
+            "101": 32,
+            "110": 10,
+            "111": 12
+          },
+          "prime": 137,
+          "product_points": 142,
+          "status": "PASS"
+        }
+      ],
+      "generic_rank": 17,
+      "id": "08234-003",
+      "native_roots": [
+        "848451138/65",
+        "44253/5",
+        "1018829/65",
+        "3924473/65"
+      ],
+      "observed_quotient": 7,
+      "product_polynomial": [
+        "120744958586576686319082213381962673111683528100",
+        "221960009543516839586130329175292111399986819780",
+        "175476206351353910044669044621866850224764248633",
+        "77103664809450984533409789923297467125775630140",
+        "20125141493019010143597143924060537999652238222",
+        "3056627652032903056198391193246598095659196420",
+        "235490994946643706507086942058935098603777105",
+        "4394770416553237621451437335081056284720860",
+        "-313522864469880058203713340308366038627484"
+      ],
+      "product_root": "150124715716584347326987938/1373125",
+      "quartet_exact_quotient_rank": 3,
+      "retained_parameter": "-288/65",
+      "retained_rank": 24,
+      "unexplained_retained_quotient": 4
+    },
+    {
+      "finite_field_incidence": [
+        {
+          "branch_product_points": 2,
+          "carrier_points": 120,
+          "liftable_product_points": 15,
+          "non_branch_class_counts": {
+            "000": 14,
+            "001": 14,
+            "010": 16,
+            "011": 22,
+            "100": 16,
+            "101": 24,
+            "110": 12,
+            "111": 18
+          },
+          "prime": 131,
+          "product_points": 138,
+          "status": "PASS"
+        },
+        {
+          "branch_product_points": 6,
+          "carrier_points": 152,
+          "liftable_product_points": 19,
+          "non_branch_class_counts": {
+            "000": 18,
+            "001": 18,
+            "010": 14,
+            "011": 18,
+            "100": 24,
+            "101": 24,
+            "110": 14,
+            "111": 20
+          },
+          "prime": 137,
+          "product_points": 156,
+          "status": "PASS"
+        }
+      ],
+      "generic_rank": 17,
+      "id": "08234-009",
+      "native_roots": [
+        "181066742/1937",
+        "48560375165/1937",
+        "4307419/1937",
+        "10196244/149"
+      ],
+      "observed_quotient": 8,
+      "product_polynomial": [
+        "1861689848481085306863432360181749699157056",
+        "-4418847011519882957422458748637139213903840",
+        "-5140724391596894326156156393236973385993420",
+        "-1073386846333391003322879638022004974666220",
+        "294039237119277634416091923377465728333513",
+        "106365247586989377770413165039173180519240",
+        "1247098164537902819323783593254899612770",
+        "-1549177834818290467427184915795106240380",
+        "-43823017559113967157622514024152431519"
+      ],
+      "product_root": "386169579911440992009380141553480/1082867028997",
+      "quartet_exact_quotient_rank": 3,
+      "retained_parameter": "-4112/1937",
+      "retained_rank": 25,
+      "unexplained_retained_quotient": 5
+    },
+    {
+      "finite_field_incidence": [
+        {
+          "branch_product_points": 4,
+          "carrier_points": 80,
+          "liftable_product_points": 10,
+          "non_branch_class_counts": {
+            "000": 10,
+            "001": 18,
+            "010": 14,
+            "011": 14,
+            "100": 14,
+            "101": 8,
+            "110": 12,
+            "111": 12
+          },
+          "prime": 131,
+          "product_points": 106,
+          "status": "PASS"
+        },
+        {
+          "branch_product_points": 6,
+          "carrier_points": 128,
+          "liftable_product_points": 16,
+          "non_branch_class_counts": {
+            "000": 16,
+            "001": 16,
+            "010": 18,
+            "011": 14,
+            "100": 12,
+            "101": 16,
+            "110": 26,
+            "111": 14
+          },
+          "prime": 137,
+          "product_points": 138,
+          "status": "PASS"
+        }
+      ],
+      "id": "obstructed_ABCD",
+      "local_control": {
+        "good_branch_reduction": false,
+        "native_affine_class": "001",
+        "native_values_mod_prime": [
+          16,
+          3,
+          21,
+          10
+        ],
+        "prime": 23,
+        "product_curve_Qp_point_by_Hensel": true,
+        "product_point_mod_prime": {
+          "t": 0,
+          "y": 11
+        },
+        "quartet_Qp_points": false,
+        "quartet_projective_support": []
+      },
+      "product_polynomial": [
+        "3761595277403674929419512909330422077699798400",
+        "7226904202274088013293342709643761380551710080",
+        "-1533986682402471453178786634739749367250039956",
+        "-8754120077831624083025699537813471673374029212",
+        "-4774210967701791788690091067728701316562309571",
+        "-846935400159404949435065481627251607724483882",
+        "-7537125414839763347364848916912835856373047",
+        "8338500551893603410888329487080452982766792",
+        "181323283464156881329223663641875641601552"
+      ]
+    }
+  ],
+  "schema": "rank-jump.quartet-unramified-descent.v1",
+  "status": "PASS"
+}
