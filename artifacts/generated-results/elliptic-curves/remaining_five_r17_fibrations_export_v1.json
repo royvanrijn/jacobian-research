@@ -1,0 +1,18 @@
+{
+  "claim_boundary": "Standalone equations, generic points and transported generic height forms for five existing compact R17 fibrations. Extraction preserves the exact atlas values. Running the Sage file checks all rational-function point identities and positive definiteness of the supplied height forms; the original atlas proof supplies their geometric provenance. No new fibration, automatic rank17 claim on every specialization, exact rank, new point search or record.",
+  "families": [
+    "103b2",
+    "074d9",
+    "07ca9",
+    "08234",
+    "08f72"
+  ],
+  "generic_sections": 85,
+  "output": "artifacts/generated-results/elliptic-curves/remaining_five_r17_fibrations.sage",
+  "output_sha256": "5ef0a06a2d5e63b922ebe9775eeeec4dba770e285f24db5bb35149201997bf05",
+  "schema": "elliptic-curves.remaining-five-r17-export.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_six_r17_atlas_v1.json": "2f28c081c874adfaf738c1119e8f4e6e7ce70ea74277cd8cdb370a02bca34c5d",
+    "elliptic-curves/cas/export_remaining_five_r17_fibrations.py": "9e05ea4dff1fcd74d7601d54b0b028170746197bbb94e7f4c4bcf0eff67349fe"
+  }
+}

@@ -1,0 +1,871 @@
+{
+  "claim_boundary": "Validated reusable sufficient generation test for Cl(K)/2 under quadratic class-character GRH. Matching toy oracle bounds validate the implementation; production output contains no lower bound or exact elliptic rank.",
+  "incomplete_formal_presentation_control": {
+    "analytic_test": {
+      "all_positive_sum_interval": {
+        "lower": "4.84956938420933843695261790080192491036502442623488790079",
+        "upper": "4.84956938420933843695261790080192491036502442623488790084"
+      },
+      "archimedean_rhs_upper_bound_interval": {
+        "lower": "-4.07332245876106878243521191859027036722533627561171195831",
+        "upper": "-4.07332245876106878243521191859027036722533627561171195829"
+      },
+      "claim": "Numerical sufficient test only; field, prime coverage and memberships require arithmetic audit.",
+      "cutoff": 100,
+      "margin_interval": {
+        "lower": "13.7478835578919491500375411290416069589495555895634952016",
+        "upper": "13.7478835578919491500375411290416069589495555895634952018"
+      },
+      "penalty_interval": {
+        "lower": "0.0245776692877965063029065911525132290058295385179925582588",
+        "upper": "0.0245776692877965063029065911525132290058295385179925582619"
+      },
+      "positive_margin_certified": true,
+      "precision_bits": 192,
+      "prime_ideals_contributing": 25,
+      "prime_power_terms": 33,
+      "unknown_odd_prime_power_terms": 2,
+      "unresolved_primes_by_penalty": [
+        {
+          "column": 34,
+          "norm": 97,
+          "penalty_interval": {
+            "lower": "0.0122888346438982531514532955762566145029147692589962791294",
+            "upper": "0.0122888346438982531514532955762566145029147692589962791310"
+          }
+        },
+        {
+          "column": 35,
+          "norm": 97,
+          "penalty_interval": {
+            "lower": "0.0122888346438982531514532955762566145029147692589962791294",
+            "upper": "0.0122888346438982531514532955762566145029147692589962791310"
+          }
+        }
+      ],
+      "worst_signed_sum_interval": {
+        "lower": "4.83728054956544018380116460522566829586210965697589162166",
+        "upper": "4.83728054956544018380116460522566829586210965697589162171"
+      }
+    },
+    "anchor_count": 0,
+    "anchor_image_dimension_upper_bound": 0,
+    "assumption": "GRH for nontrivial quadratic characters of the ordinary ideal class group of the specified field that are trivial on the proposed span.",
+    "canonical_rational_relations": 25,
+    "claim_boundary": "A conditional class-2-rank upper bound only. Positive margin certifies generation; nonpositive margin is inconclusive. Formal independence never establishes actual class independence. Elliptic rank needs separately certified points and Selmer bounds.",
+    "class_two_rank_lower_bound": null,
+    "class_two_rank_upper_bound_under_grh": 0,
+    "complete_prime_coverage_below": 100,
+    "elliptic_curve_rank": null,
+    "exact_class_two_rank": null,
+    "field_sha256": "888fff0ba66b02f5e9124929d4925fd1a637914d1624777c3abc10d1cbb70327",
+    "formal_quotient_dimension": 1,
+    "input_sha256": "fbf13aea26da2829735a064ee5c6a7f1f49134b7e9bbe54973eba5b48714b934",
+    "known_prime_coordinates": [
+      [
+        0,
+        "0x0"
+      ],
+      [
+        1,
+        "0x0"
+      ],
+      [
+        2,
+        "0x0"
+      ],
+      [
+        3,
+        "0x0"
+      ],
+      [
+        4,
+        "0x0"
+      ],
+      [
+        5,
+        "0x0"
+      ],
+      [
+        6,
+        "0x0"
+      ],
+      [
+        7,
+        "0x0"
+      ],
+      [
+        8,
+        "0x0"
+      ],
+      [
+        9,
+        "0x0"
+      ],
+      [
+        10,
+        "0x0"
+      ],
+      [
+        11,
+        "0x0"
+      ],
+      [
+        12,
+        "0x0"
+      ],
+      [
+        13,
+        "0x0"
+      ],
+      [
+        14,
+        "0x0"
+      ],
+      [
+        15,
+        "0x0"
+      ],
+      [
+        16,
+        "0x0"
+      ],
+      [
+        17,
+        "0x0"
+      ],
+      [
+        18,
+        "0x0"
+      ],
+      [
+        19,
+        "0x0"
+      ],
+      [
+        20,
+        "0x0"
+      ],
+      [
+        21,
+        "0x0"
+      ],
+      [
+        22,
+        "0x0"
+      ],
+      [
+        23,
+        "0x0"
+      ],
+      [
+        24,
+        "0x0"
+      ],
+      [
+        25,
+        "0x0"
+      ],
+      [
+        26,
+        "0x0"
+      ],
+      [
+        27,
+        "0x0"
+      ],
+      [
+        28,
+        "0x0"
+      ],
+      [
+        29,
+        "0x0"
+      ],
+      [
+        30,
+        "0x0"
+      ],
+      [
+        31,
+        "0x0"
+      ],
+      [
+        32,
+        "0x0"
+      ],
+      [
+        33,
+        "0x0"
+      ]
+    ],
+    "maximal_order_certified": true,
+    "principal_relations_replayed": 23,
+    "relation_rank": 35,
+    "schema": "number-fields.class-span-certificate.v1",
+    "status": "CERTIFIED_UNDER_GRH"
+  },
+  "negative_controls": [
+    {
+      "case": "imaginary_c2",
+      "result": {
+        "analytic_test": {
+          "all_positive_sum_interval": {
+            "lower": "5.51969988762332528122604088878476883380666326920264081254",
+            "upper": "5.51969988762332528122604088878476883380666326920264081259"
+          },
+          "archimedean_rhs_upper_bound_interval": {
+            "lower": "-2.46388454632696840783445258536408272769973492134319423640",
+            "upper": "-2.46388454632696840783445258536408272769973492134319423638"
+          },
+          "claim": "Numerical sufficient test only; field, prime coverage and memberships require arithmetic audit.",
+          "cutoff": 100,
+          "margin_interval": {
+            "lower": "-0.324454867728671993850769205038155450811689167473182623697",
+            "upper": "-0.324454867728671993850769205038155450811689167473182623649"
+          },
+          "penalty_interval": {
+            "lower": "13.8277391893022909641373035679717758461247506272216584851",
+            "upper": "13.8277391893022909641373035679717758461247506272216584853"
+          },
+          "positive_margin_certified": false,
+          "precision_bits": 192,
+          "prime_ideals_contributing": 24,
+          "prime_power_terms": 38,
+          "unknown_odd_prime_power_terms": 19,
+          "unresolved_primes_by_penalty": [
+            {
+              "column": 0,
+              "norm": 2,
+              "penalty_interval": {
+                "lower": "2.32432685959771885538435636262026543045018828801139871464",
+                "upper": "2.32432685959771885538435636262026543045018828801139871465"
+              }
+            },
+            {
+              "column": 1,
+              "norm": 3,
+              "penalty_interval": {
+                "lower": "2.17232683281697194800503765842681941160213573637919944658",
+                "upper": "2.17232683281697194800503765842681941160213573637919944660"
+              }
+            },
+            {
+              "column": 2,
+              "norm": 3,
+              "penalty_interval": {
+                "lower": "2.17232683281697194800503765842681941160213573637919944658",
+                "upper": "2.17232683281697194800503765842681941160213573637919944660"
+              }
+            },
+            {
+              "column": 4,
+              "norm": 7,
+              "penalty_interval": {
+                "lower": "1.69882591436445622036761489845815117847866227816745440739",
+                "upper": "1.69882591436445622036761489845815117847866227816745440740"
+              }
+            },
+            {
+              "column": 5,
+              "norm": 7,
+              "penalty_interval": {
+                "lower": "1.69882591436445622036761489845815117847866227816745440739",
+                "upper": "1.69882591436445622036761489845815117847866227816745440740"
+              }
+            },
+            {
+              "column": 10,
+              "norm": 23,
+              "penalty_interval": {
+                "lower": "0.834599242540956761473462302214882018239944383418131147439",
+                "upper": "0.834599242540956761473462302214882018239944383418131147442"
+              }
+            },
+            {
+              "column": 11,
+              "norm": 23,
+              "penalty_interval": {
+                "lower": "0.834599242540956761473462302214882018239944383418131147439",
+                "upper": "0.834599242540956761473462302214882018239944383418131147442"
+              }
+            },
+            {
+              "column": 18,
+              "norm": 43,
+              "penalty_interval": {
+                "lower": "0.420468596745599738452540275494257891194840244899881792559",
+                "upper": "0.420468596745599738452540275494257891194840244899881792562"
+              }
+            },
+            {
+              "column": 19,
+              "norm": 43,
+              "penalty_interval": {
+                "lower": "0.420468596745599738452540275494257891194840244899881792559",
+                "upper": "0.420468596745599738452540275494257891194840244899881792562"
+              }
+            },
+            {
+              "column": 20,
+              "norm": 47,
+              "penalty_interval": {
+                "lower": "0.368300831780683898918769445194241131776278754100867696750",
+                "upper": "0.368300831780683898918769445194241131776278754100867696753"
+              }
+            },
+            {
+              "column": 21,
+              "norm": 47,
+              "penalty_interval": {
+                "lower": "0.368300831780683898918769445194241131776278754100867696750",
+                "upper": "0.368300831780683898918769445194241131776278754100867696753"
+              }
+            },
+            {
+              "column": 26,
+              "norm": 67,
+              "penalty_interval": {
+                "lower": "0.178685516383104605351566614038840514545325296168328064953",
+                "upper": "0.178685516383104605351566614038840514545325296168328064956"
+              }
+            },
+            {
+              "column": 27,
+              "norm": 67,
+              "penalty_interval": {
+                "lower": "0.178685516383104605351566614038840514545325296168328064953",
+                "upper": "0.178685516383104605351566614038840514545325296168328064956"
+              }
+            },
+            {
+              "column": 31,
+              "norm": 83,
+              "penalty_interval": {
+                "lower": "0.0784992302205128818074824088485630620000944764712673295818",
+                "upper": "0.0784992302205128818074824088485630620000944764712673295832"
+              }
+            },
+            {
+              "column": 32,
+              "norm": 83,
+              "penalty_interval": {
+                "lower": "0.0784992302205128818074824088485630620000944764712673295818",
+                "upper": "0.0784992302205128818074824088485630620000944764712673295832"
+              }
+            }
+          ],
+          "worst_signed_sum_interval": {
+            "lower": "-1.39416970702782020084261089520111908925571204440818843004",
+            "upper": "-1.39416970702782020084261089520111908925571204440818843002"
+          }
+        },
+        "anchor_count": 0,
+        "anchor_image_dimension_upper_bound": 0,
+        "assumption": "GRH for nontrivial quadratic characters of the ordinary ideal class group of the specified field that are trivial on the proposed span.",
+        "canonical_rational_relations": 25,
+        "claim_boundary": "A conditional class-2-rank upper bound only. Positive margin certifies generation; nonpositive margin is inconclusive. Formal independence never establishes actual class independence. Elliptic rank needs separately certified points and Selmer bounds.",
+        "class_two_rank_lower_bound": null,
+        "class_two_rank_upper_bound_under_grh": null,
+        "complete_prime_coverage_below": 100,
+        "elliptic_curve_rank": null,
+        "exact_class_two_rank": null,
+        "field_sha256": "bf78283ca6e0b08e593c12c63cda17ae10760bacd01b3cbbbfcb1ce9efa3fd4d",
+        "formal_quotient_dimension": 1,
+        "input_sha256": "9796cbf5ce39d0a96e4e87143046d4281ea25b2dc2542fc86ed55616fd1fce5d",
+        "known_prime_coordinates": [
+          [
+            3,
+            "0x0"
+          ],
+          [
+            6,
+            "0x0"
+          ],
+          [
+            7,
+            "0x0"
+          ],
+          [
+            8,
+            "0x0"
+          ],
+          [
+            9,
+            "0x0"
+          ],
+          [
+            12,
+            "0x0"
+          ],
+          [
+            13,
+            "0x0"
+          ],
+          [
+            14,
+            "0x0"
+          ],
+          [
+            15,
+            "0x0"
+          ],
+          [
+            16,
+            "0x0"
+          ],
+          [
+            17,
+            "0x0"
+          ],
+          [
+            22,
+            "0x0"
+          ],
+          [
+            23,
+            "0x0"
+          ],
+          [
+            24,
+            "0x0"
+          ],
+          [
+            25,
+            "0x0"
+          ],
+          [
+            28,
+            "0x0"
+          ],
+          [
+            29,
+            "0x0"
+          ],
+          [
+            30,
+            "0x0"
+          ],
+          [
+            33,
+            "0x0"
+          ],
+          [
+            34,
+            "0x0"
+          ],
+          [
+            35,
+            "0x0"
+          ]
+        ],
+        "maximal_order_certified": true,
+        "principal_relations_replayed": 24,
+        "relation_rank": 35,
+        "schema": "number-fields.class-span-certificate.v1",
+        "status": "UNKNOWN"
+      }
+    },
+    {
+      "case": "imaginary_c2_squared",
+      "result": {
+        "analytic_test": {
+          "all_positive_sum_interval": {
+            "lower": "6.25912789201412870374202377230025069060883509846919148110",
+            "upper": "6.25912789201412870374202377230025069060883509846919148115"
+          },
+          "archimedean_rhs_upper_bound_interval": {
+            "lower": "-1.02880002103764578593461393822456493294076098820710131811",
+            "upper": "-1.02880002103764578593461393822456493294076098820710131810"
+          },
+          "claim": "Numerical sufficient test only; field, prime coverage and memberships require arithmetic audit.",
+          "cutoff": 100,
+          "margin_interval": {
+            "lower": "-7.45005531586309101806989453357657019531970289829577107265",
+            "upper": "-7.45005531586309101806989453357657019531970289829577107257"
+          },
+          "penalty_interval": {
+            "lower": "20.9971111209289942114885560164016365094781340834412553528",
+            "upper": "20.9971111209289942114885560164016365094781340834412553531"
+          },
+          "positive_margin_certified": false,
+          "precision_bits": 192,
+          "prime_ideals_contributing": 23,
+          "prime_power_terms": 34,
+          "unknown_odd_prime_power_terms": 24,
+          "unresolved_primes_by_penalty": [
+            {
+              "column": 0,
+              "norm": 2,
+              "penalty_interval": {
+                "lower": "2.32432685959771885538435636262026543045018828801139871464",
+                "upper": "2.32432685959771885538435636262026543045018828801139871465"
+              }
+            },
+            {
+              "column": 1,
+              "norm": 3,
+              "penalty_interval": {
+                "lower": "2.17232683281697194800503765842681941160213573637919944658",
+                "upper": "2.17232683281697194800503765842681941160213573637919944660"
+              }
+            },
+            {
+              "column": 2,
+              "norm": 5,
+              "penalty_interval": {
+                "lower": "1.87286524497959408933908349476917616300644306517655915095",
+                "upper": "1.87286524497959408933908349476917616300644306517655915096"
+              }
+            },
+            {
+              "column": 3,
+              "norm": 5,
+              "penalty_interval": {
+                "lower": "1.87286524497959408933908349476917616300644306517655915095",
+                "upper": "1.87286524497959408933908349476917616300644306517655915096"
+              }
+            },
+            {
+              "column": 4,
+              "norm": 7,
+              "penalty_interval": {
+                "lower": "1.69882591436445622036761489845815117847866227816745440739",
+                "upper": "1.69882591436445622036761489845815117847866227816745440740"
+              }
+            },
+            {
+              "column": 5,
+              "norm": 11,
+              "penalty_interval": {
+                "lower": "1.38613204328290381430033040094707454815256633853225116709",
+                "upper": "1.38613204328290381430033040094707454815256633853225116710"
+              }
+            },
+            {
+              "column": 6,
+              "norm": 11,
+              "penalty_interval": {
+                "lower": "1.38613204328290381430033040094707454815256633853225116709",
+                "upper": "1.38613204328290381430033040094707454815256633853225116710"
+              }
+            },
+            {
+              "column": 8,
+              "norm": 17,
+              "penalty_interval": {
+                "lower": "1.05760200337206207843249074189006004036772872626022596262",
+                "upper": "1.05760200337206207843249074189006004036772872626022596264"
+              }
+            },
+            {
+              "column": 9,
+              "norm": 17,
+              "penalty_interval": {
+                "lower": "1.05760200337206207843249074189006004036772872626022596262",
+                "upper": "1.05760200337206207843249074189006004036772872626022596264"
+              }
+            },
+            {
+              "column": 10,
+              "norm": 19,
+              "penalty_interval": {
+                "lower": "0.974404792790584315894373284059459544414036922800114943561",
+                "upper": "0.974404792790584315894373284059459544414036922800114943565"
+              }
+            },
+            {
+              "column": 11,
+              "norm": 19,
+              "penalty_interval": {
+                "lower": "0.974404792790584315894373284059459544414036922800114943561",
+                "upper": "0.974404792790584315894373284059459544414036922800114943565"
+              }
+            },
+            {
+              "column": 12,
+              "norm": 23,
+              "penalty_interval": {
+                "lower": "0.834599242540956761473462302214882018239944383418131147439",
+                "upper": "0.834599242540956761473462302214882018239944383418131147442"
+              }
+            },
+            {
+              "column": 13,
+              "norm": 23,
+              "penalty_interval": {
+                "lower": "0.834599242540956761473462302214882018239944383418131147439",
+                "upper": "0.834599242540956761473462302214882018239944383418131147442"
+              }
+            },
+            {
+              "column": 15,
+              "norm": 31,
+              "penalty_interval": {
+                "lower": "0.627417872331185624973688062160741025290203067753352837567",
+                "upper": "0.627417872331185624973688062160741025290203067753352837570"
+              }
+            },
+            {
+              "column": 16,
+              "norm": 31,
+              "penalty_interval": {
+                "lower": "0.627417872331185624973688062160741025290203067753352837567",
+                "upper": "0.627417872331185624973688062160741025290203067753352837570"
+              }
+            },
+            {
+              "column": 19,
+              "norm": 41,
+              "penalty_interval": {
+                "lower": "0.449141700251960309005030462556379121955281638884051306180",
+                "upper": "0.449141700251960309005030462556379121955281638884051306183"
+              }
+            },
+            {
+              "column": 20,
+              "norm": 41,
+              "penalty_interval": {
+                "lower": "0.449141700251960309005030462556379121955281638884051306180",
+                "upper": "0.449141700251960309005030462556379121955281638884051306183"
+              }
+            },
+            {
+              "column": 27,
+              "norm": 71,
+              "penalty_interval": {
+                "lower": "0.150492944194151107486348725235550510450936210902066241801",
+                "upper": "0.150492944194151107486348725235550510450936210902066241804"
+              }
+            },
+            {
+              "column": 28,
+              "norm": 71,
+              "penalty_interval": {
+                "lower": "0.150492944194151107486348725235550510450936210902066241801",
+                "upper": "0.150492944194151107486348725235550510450936210902066241804"
+              }
+            },
+            {
+              "column": 32,
+              "norm": 89,
+              "penalty_interval": {
+                "lower": "0.0481599133315254929609660746148772725964335367148486349232",
+                "upper": "0.0481599133315254929609660746148772725964335367148486349249"
+              }
+            },
+            {
+              "column": 33,
+              "norm": 89,
+              "penalty_interval": {
+                "lower": "0.0481599133315254929609660746148772725964335367148486349232",
+                "upper": "0.0481599133315254929609660746148772725964335367148486349249"
+              }
+            }
+          ],
+          "worst_signed_sum_interval": {
+            "lower": "-4.23942766845036840200225423590056756413023194325143619538",
+            "upper": "-4.23942766845036840200225423590056756413023194325143619534"
+          }
+        },
+        "anchor_count": 0,
+        "anchor_image_dimension_upper_bound": 0,
+        "assumption": "GRH for nontrivial quadratic characters of the ordinary ideal class group of the specified field that are trivial on the proposed span.",
+        "canonical_rational_relations": 25,
+        "claim_boundary": "A conditional class-2-rank upper bound only. Positive margin certifies generation; nonpositive margin is inconclusive. Formal independence never establishes actual class independence. Elliptic rank needs separately certified points and Selmer bounds.",
+        "class_two_rank_lower_bound": null,
+        "class_two_rank_upper_bound_under_grh": null,
+        "complete_prime_coverage_below": 100,
+        "elliptic_curve_rank": null,
+        "exact_class_two_rank": null,
+        "field_sha256": "98ee17854ba7781473bae31733565f7b835ad9ab6be825bca2f6f7673a4d4ed3",
+        "formal_quotient_dimension": 2,
+        "input_sha256": "5c82e1c73f97a4c70221d521059eb9200c13a3858c4acb85e33afa84c5c24071",
+        "known_prime_coordinates": [
+          [
+            7,
+            "0x0"
+          ],
+          [
+            14,
+            "0x0"
+          ],
+          [
+            17,
+            "0x0"
+          ],
+          [
+            18,
+            "0x0"
+          ],
+          [
+            21,
+            "0x0"
+          ],
+          [
+            22,
+            "0x0"
+          ],
+          [
+            23,
+            "0x0"
+          ],
+          [
+            24,
+            "0x0"
+          ],
+          [
+            25,
+            "0x0"
+          ],
+          [
+            26,
+            "0x0"
+          ],
+          [
+            29,
+            "0x0"
+          ],
+          [
+            30,
+            "0x0"
+          ],
+          [
+            31,
+            "0x0"
+          ],
+          [
+            34,
+            "0x0"
+          ]
+        ],
+        "maximal_order_certified": true,
+        "principal_relations_replayed": 23,
+        "relation_rank": 33,
+        "schema": "number-fields.class-span-certificate.v1",
+        "status": "UNKNOWN"
+      }
+    }
+  ],
+  "positive_cases": [
+    {
+      "case": "imaginary_trivial",
+      "certificate_sha256": "0d7c3cb602e625f0ec50dbe0785c56cf910b2c68910f00241d8db4fc371aa73f",
+      "input_sha256": "f0e1074d06c5c0209e26e9e998de6984849a388cab8dadd5f899519e2f436cb4",
+      "oracle": {
+        "certified_cyclic_invariants": [],
+        "unconditional_class_two_rank": 0
+      },
+      "signature": [
+        0,
+        1
+      ],
+      "upper_bound_under_grh": 0
+    },
+    {
+      "case": "imaginary_c2",
+      "certificate_sha256": "48eb77f19d1b2bcb8ef74d43fd0d51350ec36ba4575c49b1a5b3d3b04d23d438",
+      "input_sha256": "78841d98fe67df1053763f19b34b0a6a8a61864c886d10652d18926611c92150",
+      "oracle": {
+        "certified_cyclic_invariants": [
+          2
+        ],
+        "unconditional_class_two_rank": 1
+      },
+      "signature": [
+        0,
+        1
+      ],
+      "upper_bound_under_grh": 1
+    },
+    {
+      "case": "imaginary_c2_squared",
+      "certificate_sha256": "f497b0ea0f0831271e1d5865823bdda2d9b4916e968e67f323492548c208122b",
+      "input_sha256": "5eecfb574e01b31e6ce5227e01789d2237acc4991e04a306fdeca8c321dc344a",
+      "oracle": {
+        "certified_cyclic_invariants": [
+          2,
+          2
+        ],
+        "unconditional_class_two_rank": 2
+      },
+      "signature": [
+        0,
+        1
+      ],
+      "upper_bound_under_grh": 2
+    },
+    {
+      "case": "real_quadratic",
+      "certificate_sha256": "5ba9445bf753b4a7aa4dd62d735c85a930535697da82090f1d74e2714b594913",
+      "input_sha256": "49841c3075937a5c50d96455a543cd093f0c56f94afffdbbc72ad115f0e2b21a",
+      "oracle": {
+        "certified_cyclic_invariants": [],
+        "unconditional_class_two_rank": 0
+      },
+      "signature": [
+        2,
+        0
+      ],
+      "upper_bound_under_grh": 0
+    },
+    {
+      "case": "mixed_cubic",
+      "certificate_sha256": "cf128f72d8146f7f8a2b1753af4c54575d29497b5d40a86eadb12af07a9b800a",
+      "input_sha256": "e5552b5cfecd7f51fddcafebfd2fdcc8731801a10a6bc261b541a38d88115c9d",
+      "oracle": {
+        "certified_cyclic_invariants": [],
+        "unconditional_class_two_rank": 0
+      },
+      "signature": [
+        1,
+        1
+      ],
+      "upper_bound_under_grh": 0
+    },
+    {
+      "case": "real_cubic",
+      "certificate_sha256": "391fb266c23c37368219c32fd5f384c8abf647e4d32f4d625d38ce1f372cae85",
+      "input_sha256": "d2d42cc982710ef5403b4e5f1b1ddcf519bc098f0af5438b91ffb6b42738a9ac",
+      "oracle": {
+        "certified_cyclic_invariants": [],
+        "unconditional_class_two_rank": 0
+      },
+      "signature": [
+        3,
+        0
+      ],
+      "upper_bound_under_grh": 0
+    },
+    {
+      "case": "complex_quartic",
+      "certificate_sha256": "0cbeebd8678bc8b243e8f80c9e1f04eb6550e2be16f77b694fff1bc790e548f7",
+      "input_sha256": "3cb0d83ec38167e32bebf50a87576395e2fa8cab28b777e0c99ee2872ad1e4b2",
+      "oracle": {
+        "certified_cyclic_invariants": [],
+        "unconditional_class_two_rank": 0
+      },
+      "signature": [
+        0,
+        2
+      ],
+      "upper_bound_under_grh": 0
+    }
+  ],
+  "schema": "number-fields.class-span-machinery-validation.v1",
+  "software": {
+    "pari": "[2, 17, 3]",
+    "sage": "10.9"
+  },
+  "sources": {
+    "artifacts/local/elliptic-curves/class-span-machinery-v1/protocol.json": "bd9907094c29748e2ae2582b5f8ab7daebbb771a1db60334d413a3954edb5fc5",
+    "elliptic-curves/cas/certify_class_span_machinery.sage": "943ec4877fb7ae8a5091d5215262f670f073844d2ed4cbec2f837dd708fd8edf",
+    "elliptic-curves/cas/class_span_fixtures.py": "4c61749abc82864738ffaffa9bb90d7584909cdaec347af77ad5591eaf799151",
+    "elliptic-curves/cas/class_span_grh.py": "73482829353bfdb4a2a7cb18fed2a2419004c0139ecf5f627c96816edd93bc83",
+    "elliptic-curves/cas/verify_class_span_grh.py": "cf92baa9f6ceaae262579009ae001887ce34c55fb25eb2ae263c09a59e2636de",
+    "elliptic-curves/notes/CLASS_SPAN_GRH_MACHINERY.md": "fac918d849d2b09309b2d8edb827c20cb364c9d8718277beecc043b2f4e81300",
+    "elliptic-curves/tests/test_class_span_grh.py": "f721eef307382e3ddd144c58c3d2941aa9e409f371bbf51d82794ba46dc16a41"
+  },
+  "status": "PASS",
+  "tests_run": 13
+}

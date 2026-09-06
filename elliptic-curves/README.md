@@ -1,12 +1,20 @@
 # Elliptic curves over `Q` — ACTIVE
 
-The [remaining-five R17 preparation](notes/R17_FULL_SCORE_RANGE_PREPARATION_2026-09-06.md) closes the prime-scaling audit through 131071. All five cache cost gates pass, and the missing extended tables are being built for broader early selection on fresh high-height fibres.
+The [curve-302 inverse-fibration run](notes/ICARM_CURVE302_INVERSE_FIBRATIONS_2026-09-06.md)
+constructs an explicit K3 with nine independent sections specializing into the
+known 31-point group. Two complete fixed-NS tables exclude 127,842 further
+classes; 6,417 point-directed line covers give no larger displayed overlap.
+The original parent and a twelve-plus-direction family remain unknown.
 
-The [corrected higher MW16 campaign](notes/CORRECTED_MW16_HIGHER_POPULATION_2026-09-06.md) is frozen at 320 slices and 3.06 billion addresses, excluding the earlier campaigns and reusing one fixed benchmark. All 320 preflight checks pass and the main scan is active. Restored good-prime terms at 5 and 13 now enter before retention; the later 10,240-scalar and sixty-fibre budgets stay fixed.
+The [low-height sublattice searches](notes/LOW_HEIGHT_MW_SUBLATTICES_2026-09-06.md) enumerate combinations and common-cover representatives in the full displayed groups of curves245 and302 across ranks8–20. All184 finalists pass arithmetic replay, but both new methods fail the masked Fermigier recovery calibration. The existing rank17 curve302 core is rediscovered exactly; no new generic subgroup or rank is certified.
+
+The [completed retained-score comparison](notes/RETAINED_MW16_SCORE_STRATA_2026-09-06.md) favours the extreme-score arm:10 certified added directions versus1 moderate and0 lower, with860 completed boxes and nearly equal computation per arm. Top-only yield is2.72 times the equal three-arm portfolio rate. All240 standalone stages and independent accounting pass. It adds a new rank-at-least25 curve at family02 -32999/14074; inventoryV20 now has200 distinct curves with every point certificate and CSV entry replayed. The new curve was already ninth in the earlier extended-score list, below its six-finalist cutoff. No larger sweep follows; the queued R17 scan remains cancelled.
+
+The [completed corrected MW16 campaign](notes/CORRECTED_MW16_HIGHER_POPULATION_2026-09-06.md) certifies seventeen additional directions across five curves after all 2,580 boxes and 182 standalone proof stages. Its new family04 fibre at28195/1219 has rank at least23, a proved minimal model and executable point export. That cohort produced inventoryV19 with199 distinct curves; every point certificate and the equationCSV replay. No new bound28 or record is established.
 
 The [broader displayed-score trial](notes/BROAD_MW16_HIGHER_POPULATION_2026-09-06.md) adds three new curves with certified bounds 24, 24 and 22 from 3.06 billion initial addresses. All 2,580 boxes and 182 isolated proof stages pass, with the same selector and finalist budget as the smaller trial. Selection scores improve in all ten groups, but withheld-prime means improve in only three. The [preserved smaller trial](notes/MW16_JOINT_HIGHER_ANNULI_2026-09-06.md) completes all 182 isolated point-proof stages with bounds 16–19 and no high-rank addition.
 
-The [local-reduction audit](notes/MW16_OMITTED_GOOD_PRIMES_2026-09-06.md) identifies omitted good-prime terms at 5 and 13 on 904 of the 10,240 preserved higher-band scalar candidates. The diagnostic changes five finalists; both running trials retain their frozen scores and budgets.
+The [local-reduction audit](notes/MW16_OMITTED_GOOD_PRIMES_2026-09-06.md) identifies omitted good-prime terms at 5 and 13 on 904 of the 10,240 preserved higher-band scalar candidates. The diagnostic changes five finalists; both preserved trials retain their declared scores and budgets.
 
 The [MW16 rank-27 case study](notes/MW16_RANK27_VISIBILITY_AND_TRANSLATION_CLASSES_2026-09-06.md) proves a 17.36-billion-fold search-coordinate height reduction for the discovered point and 344 distinct rational-translation classes of centre involutions. All [four isolated replay stages](../artifacts/generated-results/elliptic-curves/mw16_rank27_case_study_portable_replay_v1.json) pass. A twelve-chart million-height probe times out throughout; the certified bound remains 27.
 
@@ -63,15 +71,20 @@ recorded conductors in that snapshot; four relevant entries lack conductors.
 Its targeted study confirms the comparison in a fresh snapshot of 614 curves
 and proves its 22-point subgroup saturated at 2, 3 and 5. Twelve million-height
 attempts complete four boxes and time out on eight, without a certified
-rank increase; exact rank remains unknown. The
-[descent study](notes/SMALL_CONDUCTOR_DESCENT_SHORTCUT_2026-09-06.md) gives an
-exact class-group stopping target and an interval-certified generating cutoff
-of 37,638 under GRH. A 35-second batch targeting 512 prime ideals adds 331
-independent relations on this smaller base, reducing the remaining quotient
-from 3,210 to 2,879. Scalar replay and exact ideal auditing pass; the
-rank-22 criterion requires dimension at most 16 and would inherit GRH. The
-[active continuation toward 16](notes/SMALL_CONDUCTOR_CLASS_TARGET_2026-09-06.md)
-records each subsequent audited matrix reduction and its frozen wave protocol.
+rank increase. The [completed class-group proof](notes/SMALL_CONDUCTOR_CLASS_COMPLETION_PROOF_2026-09-06.md)
+now proves **class-2-rank 16 and exact curve rank 22 under GRH** for the stated
+quadratic ideal-class characters. Exact relations reduce the formal quotient
+to 18; an interval-certified character exclusion proves that sixteen independent
+ideal classes already generate modulo squares. The
+[evidence and replay index](notes/SMALL_CONDUCTOR_CLASS_TARGET_2026-09-06.md)
+records the bounded waves and final certificate. The unconditional result
+remains rank at least 22.
+
+The [general class-span verifier](notes/CLASS_SPAN_GRH_MACHINERY.md) accepts
+portable principal-relation ledgers for arbitrary number fields. It returns a
+GRH-conditional class-2-rank upper bound or `UNKNOWN`, and ranks unresolved
+primes by their analytic penalty. Seven small-field controls and the MW16
+regression pass; the standalone checker has a separate portable evidence bundle.
 
 The [extended-prime experiment](notes/EXTENDED_PRIME_RANK27_DISCOVERIES_2026-09-06.md)
 compares two fixed selectors on 23 distinct curves. All 1,037 initial boxes
@@ -164,6 +177,9 @@ targets, parameters, public points, ranks, or target `j`-invariants.
   codes have rank 31 with no visible first-17 boundary; elementary
   squareclass, degree-six held-out interpolation, and fixed-`X` deformation
   probes are negative in their declared bounded models.
+- [Curve 302 after parent-relative lattice reduction](notes/CURVE302_PARENT_RELATIVE_BLOCKS_2026-09-06.md):
+  the additive candidate gives `D/M = Z^14`; its 91 pair cochains have
+  independent central extensions. Generic parent and shared solubility remain unknown.
 - ICARM curve 273: independently replayed `rank E(Q) >= 30`.
 - ICARM curve 398: independently replayed `rank E(Q) >= 30`, trivial torsion,
   a singleton rational isogeny class, and exact semistable conductor/local
@@ -429,7 +445,7 @@ Use [`REPRODUCE.md`](REPRODUCE.md) and the exact checker paths recorded in `../M
 <!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 8a4c932153e2bb2d -->
 <!-- status-consumer: EC-K3-R17-NORM12-ICARM-573-REFRESH a93ce35de34fde21 -->
 <!-- status-consumer: EC-CF-NEARMISS-DESCENT-INPUTS 25c9f212e5162216 -->
-<!-- status-consumer: OP-EC-NEXT 1aa89ab182362c71 -->
+<!-- status-consumer: OP-EC-NEXT bbe0c6369611b464 -->
 
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-SELMER-PANEL 539bd8ec36b36c44 -->
 

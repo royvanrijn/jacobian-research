@@ -1,0 +1,4099 @@
+{
+  "blocks": [
+    {
+      "band": 2,
+      "excluded_in_window": [],
+      "family": "a1-fibration-01",
+      "previously_allocated": [
+        {
+          "late_rank": 1,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-01-0005"
+          ]
+        },
+        {
+          "late_rank": 2,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-01-0042"
+          ]
+        },
+        {
+          "late_rank": 3,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-01-0043"
+          ]
+        },
+        {
+          "late_rank": 4,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-01-0067"
+          ]
+        },
+        {
+          "late_rank": 5,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-01-0011"
+          ]
+        },
+        {
+          "late_rank": 6,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-01-0132"
+          ]
+        },
+        {
+          "late_rank": 38,
+          "prior_ids": [
+            "strata-a1-fibration-01-b2-s1-top"
+          ]
+        },
+        {
+          "late_rank": 164,
+          "prior_ids": [
+            "strata-a1-fibration-01-b2-s-1-top"
+          ]
+        }
+      ],
+      "selected_late_ranks": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "unallocated_scalar_cases": 1016
+    },
+    {
+      "band": 3,
+      "excluded_in_window": [
+        {
+          "ids": [
+            "strata-a1-fibration-01-b3-s1-top"
+          ],
+          "late_rank": 8,
+          "reason": "PRIOR_PROSPECTIVE_ALLOCATION"
+        }
+      ],
+      "family": "a1-fibration-01",
+      "previously_allocated": [
+        {
+          "late_rank": 1,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-01-0002"
+          ]
+        },
+        {
+          "late_rank": 2,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-01-0000"
+          ]
+        },
+        {
+          "late_rank": 3,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-01-0001"
+          ]
+        },
+        {
+          "late_rank": 4,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-01-0444"
+          ]
+        },
+        {
+          "late_rank": 5,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-01-0516"
+          ]
+        },
+        {
+          "late_rank": 6,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-01-0459"
+          ]
+        },
+        {
+          "late_rank": 8,
+          "prior_ids": [
+            "strata-a1-fibration-01-b3-s1-top"
+          ]
+        },
+        {
+          "late_rank": 493,
+          "prior_ids": [
+            "strata-a1-fibration-01-b3-s-1-top"
+          ]
+        }
+      ],
+      "selected_late_ranks": [
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "unallocated_scalar_cases": 1016
+    },
+    {
+      "band": 2,
+      "excluded_in_window": [
+        {
+          "ids": [
+            "strata-a1-fibration-02-b2-s-1-top"
+          ],
+          "late_rank": 9,
+          "reason": "PRIOR_PROSPECTIVE_ALLOCATION"
+        }
+      ],
+      "family": "a1-fibration-02",
+      "previously_allocated": [
+        {
+          "late_rank": 1,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-02-0003"
+          ]
+        },
+        {
+          "late_rank": 2,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-02-0523"
+          ]
+        },
+        {
+          "late_rank": 3,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-02-0198"
+          ]
+        },
+        {
+          "late_rank": 4,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-02-0054"
+          ]
+        },
+        {
+          "late_rank": 5,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-02-0029"
+          ]
+        },
+        {
+          "late_rank": 6,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-02-0000"
+          ]
+        },
+        {
+          "late_rank": 9,
+          "prior_ids": [
+            "strata-a1-fibration-02-b2-s-1-top"
+          ]
+        },
+        {
+          "late_rank": 386,
+          "prior_ids": [
+            "strata-a1-fibration-02-b2-s1-top"
+          ]
+        }
+      ],
+      "selected_late_ranks": [
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "unallocated_scalar_cases": 1016
+    },
+    {
+      "band": 3,
+      "excluded_in_window": [],
+      "family": "a1-fibration-02",
+      "previously_allocated": [
+        {
+          "late_rank": 1,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-02-0272"
+          ]
+        },
+        {
+          "late_rank": 2,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-02-0009"
+          ]
+        },
+        {
+          "late_rank": 3,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-02-0483"
+          ]
+        },
+        {
+          "late_rank": 4,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-02-0093"
+          ]
+        },
+        {
+          "late_rank": 5,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-02-0188"
+          ]
+        },
+        {
+          "late_rank": 6,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-02-0001"
+          ]
+        },
+        {
+          "late_rank": 49,
+          "prior_ids": [
+            "strata-a1-fibration-02-b3-s-1-top"
+          ]
+        },
+        {
+          "late_rank": 383,
+          "prior_ids": [
+            "strata-a1-fibration-02-b3-s1-top"
+          ]
+        }
+      ],
+      "selected_late_ranks": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "unallocated_scalar_cases": 1016
+    },
+    {
+      "band": 2,
+      "excluded_in_window": [],
+      "family": "a1-fibration-03",
+      "previously_allocated": [
+        {
+          "late_rank": 1,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-03-0008"
+          ]
+        },
+        {
+          "late_rank": 2,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-03-0000"
+          ]
+        },
+        {
+          "late_rank": 3,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-03-0046"
+          ]
+        },
+        {
+          "late_rank": 4,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-03-0042"
+          ]
+        },
+        {
+          "late_rank": 5,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-03-0001"
+          ]
+        },
+        {
+          "late_rank": 6,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-03-0199"
+          ]
+        },
+        {
+          "late_rank": 50,
+          "prior_ids": [
+            "strata-a1-fibration-03-b2-s1-top"
+          ]
+        },
+        {
+          "late_rank": 428,
+          "prior_ids": [
+            "strata-a1-fibration-03-b2-s-1-top"
+          ]
+        }
+      ],
+      "selected_late_ranks": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "unallocated_scalar_cases": 1016
+    },
+    {
+      "band": 3,
+      "excluded_in_window": [],
+      "family": "a1-fibration-03",
+      "previously_allocated": [
+        {
+          "late_rank": 1,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-03-0001"
+          ]
+        },
+        {
+          "late_rank": 2,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-03-0661"
+          ]
+        },
+        {
+          "late_rank": 3,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-03-0038"
+          ]
+        },
+        {
+          "late_rank": 4,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-03-0002"
+          ]
+        },
+        {
+          "late_rank": 5,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-03-0059"
+          ]
+        },
+        {
+          "late_rank": 6,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-03-0006"
+          ]
+        },
+        {
+          "late_rank": 61,
+          "prior_ids": [
+            "strata-a1-fibration-03-b3-s-1-top"
+          ]
+        },
+        {
+          "late_rank": 140,
+          "prior_ids": [
+            "strata-a1-fibration-03-b3-s1-top"
+          ]
+        }
+      ],
+      "selected_late_ranks": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "unallocated_scalar_cases": 1016
+    },
+    {
+      "band": 2,
+      "excluded_in_window": [],
+      "family": "a1-fibration-04",
+      "previously_allocated": [
+        {
+          "late_rank": 1,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-04-0207"
+          ]
+        },
+        {
+          "late_rank": 2,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-04-0555"
+          ]
+        },
+        {
+          "late_rank": 3,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-04-0179"
+          ]
+        },
+        {
+          "late_rank": 4,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-04-0012"
+          ]
+        },
+        {
+          "late_rank": 5,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-04-0026"
+          ]
+        },
+        {
+          "late_rank": 6,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-04-0371"
+          ]
+        },
+        {
+          "late_rank": 442,
+          "prior_ids": [
+            "strata-a1-fibration-04-b2-s-1-top"
+          ]
+        },
+        {
+          "late_rank": 451,
+          "prior_ids": [
+            "strata-a1-fibration-04-b2-s1-top"
+          ]
+        }
+      ],
+      "selected_late_ranks": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "unallocated_scalar_cases": 1016
+    },
+    {
+      "band": 3,
+      "excluded_in_window": [],
+      "family": "a1-fibration-04",
+      "previously_allocated": [
+        {
+          "late_rank": 1,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-04-0000"
+          ]
+        },
+        {
+          "late_rank": 2,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-04-0018"
+          ]
+        },
+        {
+          "late_rank": 3,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-04-0900"
+          ]
+        },
+        {
+          "late_rank": 4,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-04-0002"
+          ]
+        },
+        {
+          "late_rank": 5,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-04-0130"
+          ]
+        },
+        {
+          "late_rank": 6,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-04-0003"
+          ]
+        },
+        {
+          "late_rank": 186,
+          "prior_ids": [
+            "strata-a1-fibration-04-b3-s1-top"
+          ]
+        },
+        {
+          "late_rank": 856,
+          "prior_ids": [
+            "strata-a1-fibration-04-b3-s-1-top"
+          ]
+        }
+      ],
+      "selected_late_ranks": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "unallocated_scalar_cases": 1016
+    },
+    {
+      "band": 2,
+      "excluded_in_window": [],
+      "family": "a1-fibration-05",
+      "previously_allocated": [
+        {
+          "late_rank": 1,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-05-0003"
+          ]
+        },
+        {
+          "late_rank": 2,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-05-0000"
+          ]
+        },
+        {
+          "late_rank": 3,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-05-0033"
+          ]
+        },
+        {
+          "late_rank": 4,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-05-0015"
+          ]
+        },
+        {
+          "late_rank": 5,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-05-0025"
+          ]
+        },
+        {
+          "late_rank": 6,
+          "prior_ids": [
+            "corrected-b2-a1-fibration-05-0125"
+          ]
+        },
+        {
+          "late_rank": 198,
+          "prior_ids": [
+            "strata-a1-fibration-05-b2-s-1-top"
+          ]
+        },
+        {
+          "late_rank": 600,
+          "prior_ids": [
+            "strata-a1-fibration-05-b2-s1-top"
+          ]
+        }
+      ],
+      "selected_late_ranks": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "unallocated_scalar_cases": 1016
+    },
+    {
+      "band": 3,
+      "excluded_in_window": [],
+      "family": "a1-fibration-05",
+      "previously_allocated": [
+        {
+          "late_rank": 1,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-05-0000"
+          ]
+        },
+        {
+          "late_rank": 2,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-05-0017"
+          ]
+        },
+        {
+          "late_rank": 3,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-05-0011"
+          ]
+        },
+        {
+          "late_rank": 4,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-05-0100"
+          ]
+        },
+        {
+          "late_rank": 5,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-05-0038"
+          ]
+        },
+        {
+          "late_rank": 6,
+          "prior_ids": [
+            "corrected-b3-a1-fibration-05-0032"
+          ]
+        },
+        {
+          "late_rank": 25,
+          "prior_ids": [
+            "strata-a1-fibration-05-b3-s-1-top"
+          ]
+        },
+        {
+          "late_rank": 608,
+          "prior_ids": [
+            "strata-a1-fibration-05-b3-s1-top"
+          ]
+        }
+      ],
+      "selected_late_ranks": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "unallocated_scalar_cases": 1016
+    }
+  ],
+  "claim_boundary": "A new fixed60 discovery trial from existing verified scalar candidates, not a continuation or rule change of either completed experiment. No parameter enumeration or new prime traces. All maps and independent16 baselines precede every point search. Fixed43 generic charts per curve, identical budgets, no rank stop, adaptive wave, retry, refill or automatic following campaign. Point gains and measured completion are certified independently; novelty only after terminal proofs.",
+  "covered_scalar_cases": 80,
+  "original_scalar_cases": 10240,
+  "prior_prospective_allocations": 120,
+  "protocol_sha256": "396d475fa9c6bf5dc5aa1c5946f47ca1e1680a8e3b6ac598b961496f15df4f72",
+  "schema": "elliptic-curves.retained-nearcutoff-mw16-selection.v1",
+  "selected": [
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-01-b2",
+      "combined_good": 3505,
+      "combined_late_good": 6535,
+      "combined_late_units": 156180340287336,
+      "combined_selection_units": 143429235283922,
+      "cpu_ms": 43,
+      "denominator": 14024,
+      "direct_checks": [
+        [
+          4099,
+          112
+        ],
+        [
+          32771,
+          -34
+        ]
+      ],
+      "displayed_good_primes": 556,
+      "displayed_score_units": 89941104672662,
+      "extension_good": 2948,
+      "extension_selection_units": 52462150868275,
+      "family": "a1-fibration-01",
+      "good_primes": 557,
+      "id": "nearcut-b2-a1-fibration-01-0007",
+      "j_height": "12264285410689909750399016298910075768572992587525822897751915679138263144343708349546752384932327639575272152985928388609128057728359810086438076588078671017341615049",
+      "j_invariant": "-12264285410689909750399016298910075768572992587525822897751915679138263144343708349546752384932327639575272152985928388609128057728359810086438076588078671017341615049/3404359892074738132815870185618350617731756987529782112407384630963699648449336139229456174509070242135547757738068259613864054044168599834211287183458219680366592",
+      "late_rank": 7,
+      "local_correction_units": 1025979742985,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-160051751966797314711148021913894685320017187934295565926189227",
+        "948026087809295430318476820221761337580697934057422901728237183745446151109311296114952945190"
+      ],
+      "numerator": 27839,
+      "original_scalar_id": "corrected-b2-a1-fibration-01-0000",
+      "parameter": "27839/14024",
+      "parameter_height": 27839,
+      "raw_sha256": "98045bbc6bdd8aa1ea96e9090b86d5d013ae355a7e90a65cbffb19c86ff367da",
+      "restored_good_primes": 1,
+      "retained_index": 0,
+      "retained_rank": 1,
+      "score_units": 90967084415647,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 52462150868275,
+        "validation_good": 3030,
+        "validation_units": 12751105003414
+      },
+      "sign": 1,
+      "slice_id": "corrected-b2-a1-fibration-01-pos-11",
+      "wall_seconds": 0.1269380960147828
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-01-b3",
+      "combined_good": 3506,
+      "combined_late_good": 6536,
+      "combined_late_units": 155069469483542,
+      "combined_selection_units": 138692112597472,
+      "cpu_ms": 42,
+      "denominator": 150926,
+      "direct_checks": [
+        [
+          4099,
+          30
+        ],
+        [
+          32771,
+          -45
+        ]
+      ],
+      "displayed_good_primes": 558,
+      "displayed_score_units": 83626531214025,
+      "extension_good": 2947,
+      "extension_selection_units": 54311184513605,
+      "family": "a1-fibration-01",
+      "good_primes": 559,
+      "id": "nearcut-b3-a1-fibration-01-0007",
+      "j_height": "4536427451886762326592627994142294702995259425049143516626545231762688242071668012547668322356821950441942095459885784859506769906185016734758050588978712562253613741377698963310198147905201",
+      "j_invariant": "-4536427451886762326592627994142294702995259425049143516626545231762688242071668012547668322356821950441942095459885784859506769906185016734758050588978712562253613741377698963310198147905201/36598703205238926331529298314596498831793657277715594771399030505073494398399175113039792347380952783209544961296125336534878363770686951592759752911891024329593081654566625598720000000",
+      "late_rank": 7,
+      "local_correction_units": 754396869842,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-1276561757700437760412289721946799415215364653635575527219655216205947",
+        "17677352066036233593055792093208889585901276107539962854375707691566187597968405139091415723831873651286"
+      ],
+      "numerator": 105139,
+      "original_scalar_id": "corrected-b3-a1-fibration-01-0041",
+      "parameter": "105139/150926",
+      "parameter_height": 150926,
+      "raw_sha256": "ecdfa529c45cd46c5f7e5b60a01edf3da91d9e97a73a73f84f4dcc79ed3d4900",
+      "restored_good_primes": 1,
+      "retained_index": 41,
+      "retained_rank": 42,
+      "score_units": 84380928083867,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 54311184513605,
+        "validation_good": 3030,
+        "validation_units": 16377356886070
+      },
+      "sign": 1,
+      "slice_id": "corrected-b3-a1-fibration-01-pos-13",
+      "wall_seconds": 0.2001111110439524
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-02-b2",
+      "combined_good": 3502,
+      "combined_late_good": 6532,
+      "combined_late_units": 155028431778209,
+      "combined_selection_units": 135439222380198,
+      "cpu_ms": 38,
+      "denominator": 7469,
+      "direct_checks": [
+        [
+          4099,
+          76
+        ],
+        [
+          32771,
+          -3
+        ]
+      ],
+      "displayed_good_primes": 555,
+      "displayed_score_units": 87186119148909,
+      "extension_good": 2947,
+      "extension_selection_units": 48253103231289,
+      "family": "a1-fibration-02",
+      "good_primes": 555,
+      "id": "nearcut-b2-a1-fibration-02-0007",
+      "j_height": "1368634233520192377903602115178707391444048036803590404900176217308053498349278785747851520131846330386380097021220199434518043865954330226397714678970986632433834717140176",
+      "j_invariant": "1368634233520192377903602115178707391444048036803590404900176217308053498349278785747851520131846330386380097021220199434518043865954330226397714678970986632433834717140176/18351182751711042505746410069647151795525252155459830138270353933779567149114292215114850643359124596553628208788388176081570257530870151592353298017676517618786078125",
+      "late_rank": 7,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-4656537796275567191411385777603259340371649289642878445931632",
+        "3822542947099823087835819519052938173000721163988431296682687736027362450927639152967062144"
+      ],
+      "numerator": 20772,
+      "original_scalar_id": "corrected-b2-a1-fibration-02-0325",
+      "parameter": "20772/7469",
+      "parameter_height": 20772,
+      "raw_sha256": "65d63e4ec33a2acc793ab99d9cfd3e437ce369d0bd2017933fdf9950318c38b3",
+      "restored_good_primes": 0,
+      "retained_index": 325,
+      "retained_rank": 326,
+      "score_units": 87186119148909,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 48253103231289,
+        "validation_good": 3030,
+        "validation_units": 19589209398011
+      },
+      "sign": 1,
+      "slice_id": "corrected-b2-a1-fibration-02-pos-07",
+      "wall_seconds": 0.1774450249504298
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-02-b3",
+      "combined_good": 3505,
+      "combined_late_good": 6535,
+      "combined_late_units": 154475593986164,
+      "combined_selection_units": 138014252829857,
+      "cpu_ms": 50,
+      "denominator": 50092,
+      "direct_checks": [
+        [
+          4099,
+          -4
+        ],
+        [
+          32771,
+          -20
+        ]
+      ],
+      "displayed_good_primes": 557,
+      "displayed_score_units": 85841015798229,
+      "extension_good": 2948,
+      "extension_selection_units": 52173237031628,
+      "family": "a1-fibration-02",
+      "good_primes": 557,
+      "id": "nearcut-b3-a1-fibration-02-0007",
+      "j_height": "187463917239224254098894801979762548917976961832964048833341321763768835831506971538234604479952198883200494774354763885861682081349682930591801225324074682884295879862043019504689004634895444641",
+      "j_invariant": "187463917239224254098894801979762548917976961832964048833341321763768835831506971538234604479952198883200494774354763885861682081349682930591801225324074682884295879862043019504689004634895444641/81220283175611055145484567651927425054454501664812603014741368877322145473551834614332404905356147313700000590445949453099634742507621690670035879646876655927151295711556112403731660800000",
+      "late_rank": 7,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-24724241446511358061428589511798553082026146106122799487771568847792",
+        "47300958917651316514237025032048789395064016791685720510062933923439888116958468686993618802151458176"
+      ],
+      "numerator": -118261,
+      "original_scalar_id": "corrected-b3-a1-fibration-02-0032",
+      "parameter": "-118261/50092",
+      "parameter_height": 118261,
+      "raw_sha256": "a86bdcdad8c3934803911d657b7ac689812e5270c6db9c38641c123d686a5be1",
+      "restored_good_primes": 0,
+      "retained_index": 32,
+      "retained_rank": 33,
+      "score_units": 85841015798229,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 52173237031628,
+        "validation_good": 3030,
+        "validation_units": 16461341156307
+      },
+      "sign": -1,
+      "slice_id": "corrected-b3-a1-fibration-02-neg-03",
+      "wall_seconds": 0.12512578500900418
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-03-b2",
+      "combined_good": 3504,
+      "combined_late_good": 6533,
+      "combined_late_units": 154164751318847,
+      "combined_selection_units": 135581263846847,
+      "cpu_ms": 46,
+      "denominator": 56923,
+      "direct_checks": [
+        [
+          4099,
+          -78
+        ],
+        [
+          32771,
+          -232
+        ]
+      ],
+      "displayed_good_primes": 556,
+      "displayed_score_units": 87635960577476,
+      "extension_good": 2948,
+      "extension_selection_units": 47945303269371,
+      "family": "a1-fibration-03",
+      "good_primes": 556,
+      "id": "nearcut-b2-a1-fibration-03-0007",
+      "j_height": "4642247715440849555507956404341224119287436203560437512772537785062406211246411889723013245100193504056198133087606660991905892195413356258901480368176827149963654404362135230139284478695854961704573070927435249073616",
+      "j_invariant": "4642247715440849555507956404341224119287436203560437512772537785062406211246411889723013245100193504056198133087606660991905892195413356258901480368176827149963654404362135230139284478695854961704573070927435249073616/35541467570722438048049925906949284608218684699610738610193870599993433738973810735360406225321215355618175424036301815269785430417557714878806500737285946426677622718618586073169482456927126652194323182786153125",
+      "late_rank": 7,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-285991542190643651570634543338798765336971630265775105609861830851285982832",
+        "1849208698084823450308529236755306927702979610008524274981892307871142539552008251013703400873349466052465967744"
+      ],
+      "numerator": -15085,
+      "original_scalar_id": "corrected-b2-a1-fibration-03-0208",
+      "parameter": "-15085/56923",
+      "parameter_height": 56923,
+      "raw_sha256": "b46b032fb30f3289b0ce09bc9230cf7e6440d9a2354f7ed9383f047d87d28a93",
+      "restored_good_primes": 0,
+      "retained_index": 208,
+      "retained_rank": 209,
+      "score_units": 87635960577476,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 47945303269371,
+        "validation_good": 3029,
+        "validation_units": 18583487472000
+      },
+      "sign": -1,
+      "slice_id": "corrected-b2-a1-fibration-03-neg-14",
+      "wall_seconds": 0.18494076002389193
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-03-b3",
+      "combined_good": 3504,
+      "combined_late_good": 6534,
+      "combined_late_units": 155455399311514,
+      "combined_selection_units": 138881724151343,
+      "cpu_ms": 47,
+      "denominator": 240203,
+      "direct_checks": [
+        [
+          4099,
+          -44
+        ],
+        [
+          32771,
+          -276
+        ]
+      ],
+      "displayed_good_primes": 556,
+      "displayed_score_units": 89571699152436,
+      "extension_good": 2948,
+      "extension_selection_units": 49310024998907,
+      "family": "a1-fibration-03",
+      "good_primes": 556,
+      "id": "nearcut-b3-a1-fibration-03-0007",
+      "j_height": "5035297198178808976740779350521215635219021517164486365033704147618800063649764726959343938765880070312869614955474147079339387276193460171757004093038800391038669112337127421639602957581615443326317162967942893307504332429831729616",
+      "j_invariant": "5035297198178808976740779350521215635219021517164486365033704147618800063649764726959343938765880070312869614955474147079339387276193460171757004093038800391038669112337127421639602957581615443326317162967942893307504332429831729616/26399126447610893287396874237102685130025422422428879729572437954498590665633238582019258158354709777472213474977230420468596973248270511457267151043517508704606839556021752829023096534110926641675751762674699952007699417453125",
+      "late_rank": 7,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-29384532725362295444298980590175179818262361812656370015028374386832627336286832",
+        "61030941281968621008673385998465062597857867635013135764793473433686812388339083075815846067372555003325351563772719744"
+      ],
+      "numerator": -234909,
+      "original_scalar_id": "corrected-b3-a1-fibration-03-0011",
+      "parameter": "-234909/240203",
+      "parameter_height": 240203,
+      "raw_sha256": "f19e7c2720067ea7e095f6d8362cd28a7bb75dd9165d6f8c972add0717f088d9",
+      "restored_good_primes": 0,
+      "retained_index": 11,
+      "retained_rank": 12,
+      "score_units": 89571699152436,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 49310024998907,
+        "validation_good": 3030,
+        "validation_units": 16573675160171
+      },
+      "sign": -1,
+      "slice_id": "corrected-b3-a1-fibration-03-neg-09",
+      "wall_seconds": 0.15847824607044458
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-04-b2",
+      "combined_good": 3506,
+      "combined_late_good": 6535,
+      "combined_late_units": 155279679022876,
+      "combined_selection_units": 135863827578680,
+      "cpu_ms": 49,
+      "denominator": 720,
+      "direct_checks": [
+        [
+          4099,
+          -32
+        ],
+        [
+          32771,
+          -230
+        ]
+      ],
+      "displayed_good_primes": 559,
+      "displayed_score_units": 87885948384429,
+      "extension_good": 2947,
+      "extension_selection_units": 47977879194251,
+      "family": "a1-fibration-04",
+      "good_primes": 559,
+      "id": "nearcut-b2-a1-fibration-04-0007",
+      "j_height": "44071930097891220845968132717254842112173614031455675591037584537077873588084996433828830053499524108249806121538946205778991109438598914499487113818506435850989138943438711796736",
+      "j_invariant": "44071930097891220845968132717254842112173614031455675591037584537077873588084996433828830053499524108249806121538946205778991109438598914499487113818506435850989138943438711796736/27594237016331027990068909262735241188714434542619319460644849770724959446629058769097015403756356579322677835572298487531786407062582914501666756236791991329102271919828125",
+      "late_rank": 7,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-115691716104010613912718553246794126025903483227915539490508572",
+        "478703323409269725673623531507515684477078600947705199520172696835067772235647463736508554036"
+      ],
+      "numerator": -56771,
+      "original_scalar_id": "corrected-b2-a1-fibration-04-0261",
+      "parameter": "-56771/720",
+      "parameter_height": 56771,
+      "raw_sha256": "909d83293b258f0f23baae4aa563a1c9916b471866e96ca21466765843f8699e",
+      "restored_good_primes": 0,
+      "retained_index": 261,
+      "retained_rank": 262,
+      "score_units": 87885948384429,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 47977879194251,
+        "validation_good": 3029,
+        "validation_units": 19415851444196
+      },
+      "sign": -1,
+      "slice_id": "corrected-b2-a1-fibration-04-neg-05",
+      "wall_seconds": 0.15294288890436292
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-04-b3",
+      "combined_good": 3505,
+      "combined_late_good": 6535,
+      "combined_late_units": 154732513838772,
+      "combined_selection_units": 136167977461374,
+      "cpu_ms": 46,
+      "denominator": 14821,
+      "direct_checks": [
+        [
+          4099,
+          -103
+        ],
+        [
+          32771,
+          -129
+        ]
+      ],
+      "displayed_good_primes": 558,
+      "displayed_score_units": 87211920918506,
+      "extension_good": 2946,
+      "extension_selection_units": 47930076799883,
+      "family": "a1-fibration-04",
+      "good_primes": 559,
+      "id": "nearcut-b3-a1-fibration-04-0007",
+      "j_height": "12468731326768821360316097455853567862779473179077842829403191329427503346326257431752656658823227052588072817260247006618794959328329676316813817836261902297563103817938685553449",
+      "j_invariant": "12468731326768821360316097455853567862779473179077842829403191329427503346326257431752656658823227052588072817260247006618794959328329676316813817836261902297563103817938685553449/2842249805013377781554182209330419256209442963234521124773024891955172919616796238575540201815252944858544069119909774996129462543118110201692759741631173205100872967243563008",
+      "late_rank": 7,
+      "local_correction_units": 1025979742985,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-25749793730981179277858434142561802483409583031476362434305776378032",
+        "39154494647120312422653784632931827084828058908801698036601663149280228586956402416648150311171363200"
+      ],
+      "numerator": 240304,
+      "original_scalar_id": "corrected-b3-a1-fibration-04-0203",
+      "parameter": "240304/14821",
+      "parameter_height": 240304,
+      "raw_sha256": "02867dcba0b557b3c279e40a1bc527a1db13cfa94c34b003fe0fd75fc8362ad7",
+      "restored_good_primes": 1,
+      "retained_index": 203,
+      "retained_rank": 204,
+      "score_units": 88237900661491,
+      "scores": {
+        "extension_good": 2946,
+        "extension_selection_units": 47930076799883,
+        "validation_good": 3030,
+        "validation_units": 18564536377398
+      },
+      "sign": 1,
+      "slice_id": "corrected-b3-a1-fibration-04-pos-05",
+      "wall_seconds": 0.18597250897437334
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-05-b2",
+      "combined_good": 3505,
+      "combined_late_good": 6535,
+      "combined_late_units": 154973449624652,
+      "combined_selection_units": 137059410607562,
+      "cpu_ms": 52,
+      "denominator": 37185,
+      "direct_checks": [
+        [
+          4099,
+          -115
+        ],
+        [
+          32771,
+          -75
+        ]
+      ],
+      "displayed_good_primes": 557,
+      "displayed_score_units": 82532231830757,
+      "extension_good": 2948,
+      "extension_selection_units": 54527178776805,
+      "family": "a1-fibration-05",
+      "good_primes": 557,
+      "id": "nearcut-b2-a1-fibration-05-0007",
+      "j_height": "6749977616466419016869289769466665498126795935500353246437409681820325188221291799487089238553148094715638065633334839842527012409107624171135967382313469341840071441421348289029256916001",
+      "j_invariant": "6749977616466419016869289769466665498126795935500353246437409681820325188221291799487089238553148094715638065633334839842527012409107624171135967382313469341840071441421348289029256916001/6193951287509112257817788967347903530362048414931465018399236630125813442093105280320481807505150933166168597300729233230539613974100268714805001131319033104001937614549062880000000",
+      "late_rank": 7,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-81642793788335612912089160648262055263762970783874110882307904432",
+        "8971814918949750403665888975656969268014876629181040507661818403149471197920062982180161838851456"
+      ],
+      "numerator": -34099,
+      "original_scalar_id": "corrected-b2-a1-fibration-05-0080",
+      "parameter": "-34099/37185",
+      "parameter_height": 37185,
+      "raw_sha256": "92779018f776d4bdf43d692f39c56e63d3b96b0ed43f5fd36988da85269dd166",
+      "restored_good_primes": 0,
+      "retained_index": 80,
+      "retained_rank": 81,
+      "score_units": 82532231830757,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 54527178776805,
+        "validation_good": 3030,
+        "validation_units": 17914039017090
+      },
+      "sign": -1,
+      "slice_id": "corrected-b2-a1-fibration-05-neg-00",
+      "wall_seconds": 0.19159902096726
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-05-b3",
+      "combined_good": 3505,
+      "combined_late_good": 6535,
+      "combined_late_units": 154156342835185,
+      "combined_selection_units": 141098560797556,
+      "cpu_ms": 42,
+      "denominator": 10265,
+      "direct_checks": [
+        [
+          4099,
+          -10
+        ],
+        [
+          32771,
+          50
+        ]
+      ],
+      "displayed_good_primes": 557,
+      "displayed_score_units": 84118339721994,
+      "extension_good": 2948,
+      "extension_selection_units": 56980221075562,
+      "family": "a1-fibration-05",
+      "good_primes": 557,
+      "id": "nearcut-b3-a1-fibration-05-0007",
+      "j_height": "16959749824271733924721226915129449241201200893874410995235785497207513861054415701771435653305980785395031417395518880336083819374044971701828833881554111185293252839877054761037994408851703164720801",
+      "j_invariant": "-16959749824271733924721226915129449241201200893874410995235785497207513861054415701771435653305980785395031417395518880336083819374044971701828833881554111185293252839877054761037994408851703164720801/1170098331176494414528578397373083461100792542369744620981256352981573047326780002428158636032136707932212079957752904588087321589009321651719807577059375186069345720443325574410880897753440000000",
+      "late_rank": 7,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-1109916294778356621207866292773818537844087132710320731971362313075632",
+        "15057090289745980543068252892183221794087723234293197037645614821501654017666763584169281809359049065856"
+      ],
+      "numerator": -206283,
+      "original_scalar_id": "corrected-b3-a1-fibration-05-0001",
+      "parameter": "-206283/10265",
+      "parameter_height": 206283,
+      "raw_sha256": "81048b60f3d3faa5b80f23e89991490d23a8f12b2def1bc0fa7c853ff6c896cf",
+      "restored_good_primes": 0,
+      "retained_index": 1,
+      "retained_rank": 2,
+      "score_units": 84118339721994,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 56980221075562,
+        "validation_good": 3030,
+        "validation_units": 13057782037629
+      },
+      "sign": -1,
+      "slice_id": "corrected-b3-a1-fibration-05-neg-10",
+      "wall_seconds": 0.12712302606087178
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-01-b2",
+      "combined_good": 3506,
+      "combined_late_good": 6536,
+      "combined_late_units": 156155567510856,
+      "combined_selection_units": 137715149534653,
+      "cpu_ms": 50,
+      "denominator": 9481,
+      "direct_checks": [
+        [
+          4099,
+          73
+        ],
+        [
+          32771,
+          -287
+        ]
+      ],
+      "displayed_good_primes": 557,
+      "displayed_score_units": 83834021520806,
+      "extension_good": 2948,
+      "extension_selection_units": 52855148270862,
+      "family": "a1-fibration-01",
+      "good_primes": 558,
+      "id": "nearcut-b2-a1-fibration-01-0008",
+      "j_height": "78949946556175409490317317555527925474633043922436485861641121327315663948788475904928706018908567040053839672678876272136035015868085878222050033246091572721",
+      "j_invariant": "-78949946556175409490317317555527925474633043922436485861641121327315663948788475904928706018908567040053839672678876272136035015868085878222050033246091572721/4456872515839451253379123558000933167687283144984038814022693634538291844662224185844917121410127374156664813141169178396759394988736032154435470080000000",
+      "late_rank": 8,
+      "local_correction_units": 1025979742985,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-12948854463190897701467770217266642360034767866730082353378992",
+        "18789147064113361966616686975260306479377908282278498421192036024827846857053823980440328576"
+      ],
+      "numerator": -21757,
+      "original_scalar_id": "corrected-b2-a1-fibration-01-0094",
+      "parameter": "-21757/9481",
+      "parameter_height": 21757,
+      "raw_sha256": "13f74e237c987d9b70a72707c4e3e296fcf364c0a203bad7e921edf973ff46bd",
+      "restored_good_primes": 1,
+      "retained_index": 94,
+      "retained_rank": 95,
+      "score_units": 84860001263791,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 52855148270862,
+        "validation_good": 3030,
+        "validation_units": 18440417976203
+      },
+      "sign": -1,
+      "slice_id": "corrected-b2-a1-fibration-01-neg-12",
+      "wall_seconds": 0.15907945192884654
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-01-b3",
+      "combined_good": 3504,
+      "combined_late_good": 6534,
+      "combined_late_units": 154607096354946,
+      "combined_selection_units": 140323316945738,
+      "cpu_ms": 34,
+      "denominator": 80295,
+      "direct_checks": [
+        [
+          4099,
+          42
+        ],
+        [
+          32771,
+          -117
+        ]
+      ],
+      "displayed_good_primes": 556,
+      "displayed_score_units": 91052893976697,
+      "extension_good": 2948,
+      "extension_selection_units": 49270422969041,
+      "family": "a1-fibration-01",
+      "good_primes": 556,
+      "id": "nearcut-b3-a1-fibration-01-0009",
+      "j_height": "5618208116463452512273264490985853443693001722629820638412948429965435093676704919864178958324767193182648074696624050247839674820886288386569783988931955802333566531234323337462978465647996496",
+      "j_invariant": "-5618208116463452512273264490985853443693001722629820638412948429965435093676704919864178958324767193182648074696624050247839674820886288386569783988931955802333566531234323337462978465647996496/133980518971576539000712254255536390341963918790233600805307764346579991400071605490166802902242579861190732394229968207944061358643002298012313524850882184392655369161703562545968321739143",
+      "late_rank": 9,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-93161004639883211871506201773185069074354268435671554421238513399792",
+        "353157331081939248394914973579119377751264395148668537906357393611047282664932024945527952132014989440"
+      ],
+      "numerator": -167213,
+      "original_scalar_id": "corrected-b3-a1-fibration-01-0006",
+      "parameter": "-167213/80295",
+      "parameter_height": 167213,
+      "raw_sha256": "2a03be47223edf0f3a9654f25fac78f65640cca1df096326d979c78b55e4aafe",
+      "restored_good_primes": 0,
+      "retained_index": 6,
+      "retained_rank": 7,
+      "score_units": 91052893976697,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 49270422969041,
+        "validation_good": 3030,
+        "validation_units": 14283779409208
+      },
+      "sign": -1,
+      "slice_id": "corrected-b3-a1-fibration-01-neg-03",
+      "wall_seconds": 0.26985857996623963
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-02-b2",
+      "combined_good": 3506,
+      "combined_late_good": 6536,
+      "combined_late_units": 154904524249198,
+      "combined_selection_units": 135648574320342,
+      "cpu_ms": 46,
+      "denominator": 39769,
+      "direct_checks": [
+        [
+          4099,
+          96
+        ],
+        [
+          32771,
+          130
+        ]
+      ],
+      "displayed_good_primes": 558,
+      "displayed_score_units": 82972676695001,
+      "extension_good": 2948,
+      "extension_selection_units": 52675897625341,
+      "family": "a1-fibration-02",
+      "good_primes": 558,
+      "id": "nearcut-b2-a1-fibration-02-0008",
+      "j_height": "63770633519090492429858750228770701748575570290935364101690927059838720579410016315994900252343546228946823122475331602016524606443473523527691003118455530330992677162946870946257934016",
+      "j_invariant": "63770633519090492429858750228770701748575570290935364101690927059838720579410016315994900252343546228946823122475331602016524606443473523527691003118455530330992677162946870946257934016/9172027262778720166132166917484449424171327172084662440407592943947003650123123419396454484756716718702408402328408463977401799501564147055665922741018108096926531551771627857614097",
+      "late_rank": 8,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-17259332307040267916523602870957086221031557593909993805052617792",
+        "756551241620483823552446927846673017252741325013707683832083789991218404932267874370615516958720"
+      ],
+      "numerator": 4554,
+      "original_scalar_id": "corrected-b2-a1-fibration-02-0285",
+      "parameter": "4554/39769",
+      "parameter_height": 39769,
+      "raw_sha256": "af10932491cb9ca97d965c36f6da1fbe48e35b3ff3dda4dc486a41a5982a99f7",
+      "restored_good_primes": 0,
+      "retained_index": 285,
+      "retained_rank": 286,
+      "score_units": 82972676695001,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 52675897625341,
+        "validation_good": 3030,
+        "validation_units": 19255949928856
+      },
+      "sign": 1,
+      "slice_id": "corrected-b2-a1-fibration-02-pos-11",
+      "wall_seconds": 0.11701984598767012
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-02-b3",
+      "combined_good": 3503,
+      "combined_late_good": 6533,
+      "combined_late_units": 154475478815453,
+      "combined_selection_units": 135229505413043,
+      "cpu_ms": 50,
+      "denominator": 193452,
+      "direct_checks": [
+        [
+          4099,
+          -41
+        ],
+        [
+          32771,
+          123
+        ]
+      ],
+      "displayed_good_primes": 557,
+      "displayed_score_units": 87104743565424,
+      "extension_good": 2946,
+      "extension_selection_units": 48124761847619,
+      "family": "a1-fibration-02",
+      "good_primes": 557,
+      "id": "nearcut-b3-a1-fibration-02-0008",
+      "j_height": "24631297244030923774389336979873719772739118867470194011423634413760823313745656785807307180928140616539161721889392099998916913606240892506633427819516978257576162002336702428464961788345194938998540809",
+      "j_invariant": "-24631297244030923774389336979873719772739118867470194011423634413760823313745656785807307180928140616539161721889392099998916913606240892506633427819516978257576162002336702428464961788345194938998540809/64569139197536622778846325199014519954777590789253028035436931808196784054065425549280197094007060916110243029422223388610417313015934976616412377330332426711038547525575418245279956580178706563072",
+      "late_rank": 8,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-113124155816445887799025156396554197277569982565901568316526618275761072",
+        "14677853831035848156633761557362844188387143358986519132730323247837996902619245175101927776556191346574720"
+      ],
+      "numerator": -136823,
+      "original_scalar_id": "corrected-b3-a1-fibration-02-0339",
+      "parameter": "-136823/193452",
+      "parameter_height": 193452,
+      "raw_sha256": "0a714cfad48c9160fc50dd196ac09594da138544f90c6c2860cd9bf12df7f87d",
+      "restored_good_primes": 0,
+      "retained_index": 339,
+      "retained_rank": 340,
+      "score_units": 87104743565424,
+      "scores": {
+        "extension_good": 2946,
+        "extension_selection_units": 48124761847619,
+        "validation_good": 3030,
+        "validation_units": 19245973402410
+      },
+      "sign": -1,
+      "slice_id": "corrected-b3-a1-fibration-02-neg-03",
+      "wall_seconds": 0.17429518594872206
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-03-b2",
+      "combined_good": 3505,
+      "combined_late_good": 6535,
+      "combined_late_units": 154107926886285,
+      "combined_selection_units": 135628317295942,
+      "cpu_ms": 45,
+      "denominator": 48161,
+      "direct_checks": [
+        [
+          4099,
+          -65
+        ],
+        [
+          32771,
+          -160
+        ]
+      ],
+      "displayed_good_primes": 557,
+      "displayed_score_units": 79383296480719,
+      "extension_good": 2948,
+      "extension_selection_units": 56245020815223,
+      "family": "a1-fibration-03",
+      "good_primes": 557,
+      "id": "nearcut-b2-a1-fibration-03-0008",
+      "j_height": "23045137448771605092710944608425698694160356550421990737716270336137459390999940473727455897772853594919856220934663808875469831680859150775086531257010800353943597597548671233034567465847770858225586189289186859411281",
+      "j_invariant": "23045137448771605092710944608425698694160356550421990737716270336137459390999940473727455897772853594919856220934663808875469831680859150775086531257010800353943597597548671233034567465847770858225586189289186859411281/117799686365164470976972361932483941824429942545713765032075409296205609806245606081227222945987828926718873864992754142496482496930807104393725564777918725345951626251220602314672029264898937560882341754328317952",
+      "late_rank": 8,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-76834605376707587791036910720574897352117643729473321738036090066657306347",
+        "258081471800236493044696909771014361001320606604397027838166987931112304412800498227882468940834286574973417190"
+      ],
+      "numerator": -48936,
+      "original_scalar_id": "corrected-b2-a1-fibration-03-0201",
+      "parameter": "-48936/48161",
+      "parameter_height": 48936,
+      "raw_sha256": "d4ab3e60e5fb2dea074f48e321ee56afa1cba5c727a2b6d6d5dee8347d5b6c96",
+      "restored_good_primes": 0,
+      "retained_index": 201,
+      "retained_rank": 202,
+      "score_units": 79383296480719,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 56245020815223,
+        "validation_good": 3030,
+        "validation_units": 18479609590343
+      },
+      "sign": -1,
+      "slice_id": "corrected-b2-a1-fibration-03-neg-00",
+      "wall_seconds": 0.1508686359738931
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-03-b3",
+      "combined_good": 3503,
+      "combined_late_good": 6532,
+      "combined_late_units": 155428389961791,
+      "combined_selection_units": 136668183318872,
+      "cpu_ms": 45,
+      "denominator": 257644,
+      "direct_checks": [
+        [
+          4099,
+          -44
+        ],
+        [
+          32771,
+          222
+        ]
+      ],
+      "displayed_good_primes": 556,
+      "displayed_score_units": 82049574807240,
+      "extension_good": 2947,
+      "extension_selection_units": 54618608511632,
+      "family": "a1-fibration-03",
+      "good_primes": 556,
+      "id": "nearcut-b3-a1-fibration-03-0008",
+      "j_height": "5903231710240725445193712257663248120623128357170833274167281474750165273684783390749995135325992442038839493328179977464125615131162381270162234281622714996803980777793032113544216652774097945356651136243185789488509042438394879821521",
+      "j_invariant": "5903231710240725445193712257663248120623128357170833274167281474750165273684783390749995135325992442038839493328179977464125615131162381270162234281622714996803980777793032113544216652774097945356651136243185789488509042438394879821521/64939374473655667733364740272350937831685997070959838673932463357691743111540745310307602001814355880615003430906158144332390064246625815333685510215024621473253747000362367551025186630877989131982400689771549616121018810368000000",
+      "late_rank": 8,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-48797065709847944967236500450337684724269658911188482472982081634874494853542507",
+        "129948466823868778125392307127070198885081357284178166748230800966720819289523194326367303137387435972797586550316737894"
+      ],
+      "numerator": 196385,
+      "original_scalar_id": "corrected-b3-a1-fibration-03-0088",
+      "parameter": "196385/257644",
+      "parameter_height": 257644,
+      "raw_sha256": "134a52a92567d6d84eed4790274714b218d64fb2bf627f6fd1206b3f8eb10950",
+      "restored_good_primes": 0,
+      "retained_index": 88,
+      "retained_rank": 89,
+      "score_units": 82049574807240,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 54618608511632,
+        "validation_good": 3029,
+        "validation_units": 18760206642919
+      },
+      "sign": 1,
+      "slice_id": "corrected-b3-a1-fibration-03-pos-02",
+      "wall_seconds": 0.1326629320392385
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-04-b2",
+      "combined_good": 3504,
+      "combined_late_good": 6533,
+      "combined_late_units": 155066344222462,
+      "combined_selection_units": 137468569556107,
+      "cpu_ms": 50,
+      "denominator": 40337,
+      "direct_checks": [
+        [
+          4099,
+          36
+        ],
+        [
+          32771,
+          41
+        ]
+      ],
+      "displayed_good_primes": 555,
+      "displayed_score_units": 85634757797603,
+      "extension_good": 2948,
+      "extension_selection_units": 50807832015519,
+      "family": "a1-fibration-04",
+      "good_primes": 556,
+      "id": "nearcut-b2-a1-fibration-04-0008",
+      "j_height": "719985298199076190685028010801730401051051764783040974152215476063824520707193304917793415198079609980400728220291051442433060526915890877015005677714016671168320296133091403539456",
+      "j_invariant": "719985298199076190685028010801730401051051764783040974152215476063824520707193304917793415198079609980400728220291051442433060526915890877015005677714016671168320296133091403539456/19063133771313848263839049367207125976534335446436713710661640141080720981709724535833844724243616294761423107018292858658704526943229652310411179701351257497221395482222438877",
+      "late_rank": 8,
+      "local_correction_units": 1025979742985,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-4388590290863460630760063694229652390546884672857676676175423954112",
+        "3456735868799187331624036853630381704908151327698755645768252304698172993616241672212093467880070400"
+      ],
+      "numerator": 25833,
+      "original_scalar_id": "corrected-b2-a1-fibration-04-0067",
+      "parameter": "25833/40337",
+      "parameter_height": 40337,
+      "raw_sha256": "4355ece4d65eed5feeb0f997535e3ee96f016ccf5d1b7ec59daa74b066b57eee",
+      "restored_good_primes": 1,
+      "retained_index": 67,
+      "retained_rank": 68,
+      "score_units": 86660737540588,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 50807832015519,
+        "validation_good": 3029,
+        "validation_units": 17597774666355
+      },
+      "sign": 1,
+      "slice_id": "corrected-b2-a1-fibration-04-pos-02",
+      "wall_seconds": 0.15869112603832036
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-04-b3",
+      "combined_good": 3505,
+      "combined_late_good": 6535,
+      "combined_late_units": 154506648359749,
+      "combined_selection_units": 135083063172627,
+      "cpu_ms": 33,
+      "denominator": 30722,
+      "direct_checks": [
+        [
+          4099,
+          -44
+        ],
+        [
+          32771,
+          -72
+        ]
+      ],
+      "displayed_good_primes": 557,
+      "displayed_score_units": 85078591542764,
+      "extension_good": 2947,
+      "extension_selection_units": 48978491886878,
+      "family": "a1-fibration-04",
+      "good_primes": 558,
+      "id": "nearcut-b3-a1-fibration-04-0008",
+      "j_height": "1793732382700676074458408215874360077988248912083652129868442356117398933637891614633663928413765776448349054781923143691120657494120110094992767673557767196225834489939080326287671428096",
+      "j_invariant": "1793732382700676074458408215874360077988248912083652129868442356117398933637891614633663928413765776448349054781923143691120657494120110094992767673557767196225834489939080326287671428096/12762548641116984048889807024963845358325582605284792696649361322574599721899176982573251309825472131661878418756130692408627546342988776190215298955894976130876689007468735687445757",
+      "late_rank": 8,
+      "local_correction_units": 1025979742985,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-37183453953020587354418401821617741181180627283685263028894539195692",
+        "86733398561854607782745921518340696538843573404999049425024830035134911863392106552685693790222718900"
+      ],
+      "numerator": -254127,
+      "original_scalar_id": "corrected-b3-a1-fibration-04-0492",
+      "parameter": "-254127/30722",
+      "parameter_height": 254127,
+      "raw_sha256": "14a9b4d311c79a2277744b2cadd4cffcf8c5abb4eff2c4fc6ed0a2a90622603b",
+      "restored_good_primes": 1,
+      "retained_index": 492,
+      "retained_rank": 493,
+      "score_units": 86104571285749,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 48978491886878,
+        "validation_good": 3030,
+        "validation_units": 19423585187122
+      },
+      "sign": -1,
+      "slice_id": "corrected-b3-a1-fibration-04-neg-03",
+      "wall_seconds": 0.16567761707119644
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-05-b2",
+      "combined_good": 3502,
+      "combined_late_good": 6532,
+      "combined_late_units": 154772884116024,
+      "combined_selection_units": 137062272470418,
+      "cpu_ms": 47,
+      "denominator": 4837,
+      "direct_checks": [
+        [
+          4099,
+          -69
+        ],
+        [
+          32771,
+          68
+        ]
+      ],
+      "displayed_good_primes": 555,
+      "displayed_score_units": 83544123685323,
+      "extension_good": 2947,
+      "extension_selection_units": 53518148785095,
+      "family": "a1-fibration-05",
+      "good_primes": 555,
+      "id": "nearcut-b2-a1-fibration-05-0008",
+      "j_height": "3616104936571198046611761275868001501825527796108933862643907955127578674929533637197569683351038701458819709783073056136482621708902575266616468127472747118297300484457",
+      "j_invariant": "3616104936571198046611761275868001501825527796108933862643907955127578674929533637197569683351038701458819709783073056136482621708902575266616468127472747118297300484457/403540729291758431302318209035404259080228559929078972335889195748467191970470310286894281676042063594991414741210387554969181507155596209539327405424438588743122944",
+      "late_rank": 8,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-1657692975367830922590013851039408798921922272381624654644400",
+        "738048522993714070758719694132914953310738145154015521301869166956521194530054078324720000"
+      ],
+      "numerator": -16509,
+      "original_scalar_id": "corrected-b2-a1-fibration-05-0079",
+      "parameter": "-16509/4837",
+      "parameter_height": 16509,
+      "raw_sha256": "91293ed36231fa7fc4e26d34d3a65941040857b518086cbf1e1b15104570e07b",
+      "restored_good_primes": 0,
+      "retained_index": 79,
+      "retained_rank": 80,
+      "score_units": 83544123685323,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 53518148785095,
+        "validation_good": 3030,
+        "validation_units": 17710611645606
+      },
+      "sign": -1,
+      "slice_id": "corrected-b2-a1-fibration-05-neg-08",
+      "wall_seconds": 0.1918693770421669
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-05-b3",
+      "combined_good": 3502,
+      "combined_late_good": 6532,
+      "combined_late_units": 154018849759150,
+      "combined_selection_units": 136844628766232,
+      "cpu_ms": 38,
+      "denominator": 65950,
+      "direct_checks": [
+        [
+          4099,
+          108
+        ],
+        [
+          32771,
+          -295
+        ]
+      ],
+      "displayed_good_primes": 556,
+      "displayed_score_units": 82574215224773,
+      "extension_good": 2946,
+      "extension_selection_units": 54270413541459,
+      "family": "a1-fibration-05",
+      "good_primes": 556,
+      "id": "nearcut-b3-a1-fibration-05-0008",
+      "j_height": "105571401150630447300959452796817358042428475000486710155492930386695138257863309234636307737199546213458510441578855101558611424392903941327300454599079836008271451263439173439184584792928",
+      "j_invariant": "-105571401150630447300959452796817358042428475000486710155492930386695138257863309234636307737199546213458510441578855101558611424392903941327300454599079836008271451263439173439184584792928/9329545633225951099408233545809823786364790585692692543602987901080987942779143327909594477193565085884505996450584646056371194896666053872248097426826300001026245246099656616708653125",
+      "late_rank": 8,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-16825951080441345758893437773493954361485262067116798171948874882112",
+        "28521801004860207956819693694095215239396679700942738422537670442891146065127575315406178302776329216"
+      ],
+      "numerator": 198651,
+      "original_scalar_id": "corrected-b3-a1-fibration-05-0084",
+      "parameter": "198651/65950",
+      "parameter_height": 198651,
+      "raw_sha256": "b60e142d844edd4af1fc8ac68117d632924d6676b8b54246d9302e2e6344721b",
+      "restored_good_primes": 0,
+      "retained_index": 84,
+      "retained_rank": 85,
+      "score_units": 82574215224773,
+      "scores": {
+        "extension_good": 2946,
+        "extension_selection_units": 54270413541459,
+        "validation_good": 3030,
+        "validation_units": 17174220992918
+      },
+      "sign": 1,
+      "slice_id": "corrected-b3-a1-fibration-05-pos-00",
+      "wall_seconds": 0.19907954602967948
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-01-b2",
+      "combined_good": 3501,
+      "combined_late_good": 6531,
+      "combined_late_units": 155950465272772,
+      "combined_selection_units": 135254756099246,
+      "cpu_ms": 49,
+      "denominator": 43197,
+      "direct_checks": [
+        [
+          4099,
+          -75
+        ],
+        [
+          32771,
+          138
+        ]
+      ],
+      "displayed_good_primes": 553,
+      "displayed_score_units": 80876162518286,
+      "extension_good": 2948,
+      "extension_selection_units": 54378593580960,
+      "family": "a1-fibration-01",
+      "good_primes": 553,
+      "id": "nearcut-b2-a1-fibration-01-0009",
+      "j_height": "97804034692663325802743676217266832386519577552380608738820107968590553115025638879944786437174822358044636921035414636070528861103204383281567944412146150051403472150970456818973573456",
+      "j_invariant": "97804034692663325802743676217266832386519577552380608738820107968590553115025638879944786437174822358044636921035414636070528861103204383281567944412146150051403472150970456818973573456/32308081346901761850406116243384710941633436865809071594937309345791099342961129854485144356871369954482665261314268659218832597489013695230594306514055359876622587103834836781640625",
+      "late_rank": 9,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-241446258208468805234108951769039794602015463826820583080277371632",
+        "29915706668332671559210753258272343725784018244355637654871635241080257931335455948073719638217856"
+      ],
+      "numerator": -38119,
+      "original_scalar_id": "corrected-b2-a1-fibration-01-0679",
+      "parameter": "-38119/43197",
+      "parameter_height": 43197,
+      "raw_sha256": "fb3eb158b693fedc3f0227c26a6660c6a86eff09d35670a1622f9dbd9ebb5d96",
+      "restored_good_primes": 0,
+      "retained_index": 679,
+      "retained_rank": 680,
+      "score_units": 80876162518286,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 54378593580960,
+        "validation_good": 3030,
+        "validation_units": 20695709173526
+      },
+      "sign": -1,
+      "slice_id": "corrected-b2-a1-fibration-01-neg-05",
+      "wall_seconds": 0.16324529401026666
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-01-b3",
+      "combined_good": 3508,
+      "combined_late_good": 6538,
+      "combined_late_units": 154597801677733,
+      "combined_selection_units": 139631315598740,
+      "cpu_ms": 47,
+      "denominator": 156770,
+      "direct_checks": [
+        [
+          4099,
+          -103
+        ],
+        [
+          32771,
+          353
+        ]
+      ],
+      "displayed_good_primes": 560,
+      "displayed_score_units": 91852435151192,
+      "extension_good": 2948,
+      "extension_selection_units": 47778880447548,
+      "family": "a1-fibration-01",
+      "good_primes": 560,
+      "id": "nearcut-b3-a1-fibration-01-0010",
+      "j_height": "13945671686960155396242465446867594170189129914253834953556362467913558837853724241381081117355649416031167174511339168118133101142708399446586082620766275921342078194146515808763948212923956249",
+      "j_invariant": "13945671686960155396242465446867594170189129914253834953556362467913558837853724241381081117355649416031167174511339168118133101142708399446586082620766275921342078194146515808763948212923956249/147553370730304350329157767725585817023686079331779414898825536013243174873316687952106368987270501210504257809355469193771425832641652928336814452109940333343621321928001137559224980471808",
+      "late_rank": 10,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-178790273572675651622387761612927843781026379091836785490061630352347",
+        "911710690096980755300114172101815517070316565856400526053015280868779607221166727236787158413929801590"
+      ],
+      "numerator": 14297,
+      "original_scalar_id": "corrected-b3-a1-fibration-01-0017",
+      "parameter": "14297/156770",
+      "parameter_height": 156770,
+      "raw_sha256": "1df8699e711653552e15b2a188cea72399687470f6d33f4d320ef6a1688f9b98",
+      "restored_good_primes": 0,
+      "retained_index": 17,
+      "retained_rank": 18,
+      "score_units": 91852435151192,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 47778880447548,
+        "validation_good": 3030,
+        "validation_units": 14966486078993
+      },
+      "sign": 1,
+      "slice_id": "corrected-b3-a1-fibration-01-pos-12",
+      "wall_seconds": 0.16174031794071198
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-02-b2",
+      "combined_good": 3505,
+      "combined_late_good": 6535,
+      "combined_late_units": 154763546168633,
+      "combined_selection_units": 141016739755783,
+      "cpu_ms": 49,
+      "denominator": 49987,
+      "direct_checks": [
+        [
+          4099,
+          -89
+        ],
+        [
+          32771,
+          228
+        ]
+      ],
+      "displayed_good_primes": 557,
+      "displayed_score_units": 89768789282066,
+      "extension_good": 2948,
+      "extension_selection_units": 51247950473717,
+      "family": "a1-fibration-02",
+      "good_primes": 557,
+      "id": "nearcut-b2-a1-fibration-02-0010",
+      "j_height": "35943603278725413939278504420309685302494095238045924443030604306681410421959992529853093147149873869040420636627857378123460425443349120023064584154661511019827567488991692269256907156511700622336",
+      "j_invariant": "-35943603278725413939278504420309685302494095238045924443030604306681410421959992529853093147149873869040420636627857378123460425443349120023064584154661511019827567488991692269256907156511700622336/4386641366165957352623974255428425402250937700864009645363271712718576065509718513956044546621340590316048191057595285771767210649781598843047469045932287077661960217941247290923020923783046875",
+      "late_rank": 10,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-3536152401309766200154687077392257271544516826595090353531859070132",
+        "2816415787789796371418523810207774639087066666447275027250740780543319364843861902552781123497112644"
+      ],
+      "numerator": 56333,
+      "original_scalar_id": "corrected-b2-a1-fibration-02-0004",
+      "parameter": "56333/49987",
+      "parameter_height": 56333,
+      "raw_sha256": "7203c559ba477f1616a2dfb0d4d199644d95713cc4eb06f9064036d60a0aab3b",
+      "restored_good_primes": 0,
+      "retained_index": 4,
+      "retained_rank": 5,
+      "score_units": 89768789282066,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 51247950473717,
+        "validation_good": 3030,
+        "validation_units": 13746806412850
+      },
+      "sign": 1,
+      "slice_id": "corrected-b2-a1-fibration-02-pos-00",
+      "wall_seconds": 0.1610116029623896
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-02-b3",
+      "combined_good": 3504,
+      "combined_late_good": 6534,
+      "combined_late_units": 154404613625684,
+      "combined_selection_units": 135772222520719,
+      "cpu_ms": 47,
+      "denominator": 23975,
+      "direct_checks": [
+        [
+          4099,
+          97
+        ],
+        [
+          32771,
+          354
+        ]
+      ],
+      "displayed_good_primes": 557,
+      "displayed_score_units": 84638147133090,
+      "extension_good": 2947,
+      "extension_selection_units": 51134075387629,
+      "family": "a1-fibration-02",
+      "good_primes": 557,
+      "id": "nearcut-b3-a1-fibration-02-0009",
+      "j_height": "14032150841626951973220571914944399811918966774162748921992275346316755399280363715551905834088053270817001910600939194291107897375066117369693527081571428590757484068291410119225",
+      "j_invariant": "14032150841626951973220571914944399811918966774162748921992275346316755399280363715551905834088053270817001910600939194291107897375066117369693527081571428590757484068291410119225/7853670419255979307165053919974542299574264123243928473259821909200033718814737604290756878148961129429896576885006480359268318095031290383094139087770621528942634000430450768",
+      "late_rank": 9,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-45167213873993520118712483129582457992138767272017047627860049200",
+        "669692358644555268947499205421975088262519305473493461272889526562461893313830911502190722505600"
+      ],
+      "numerator": 109336,
+      "original_scalar_id": "corrected-b3-a1-fibration-02-0224",
+      "parameter": "109336/23975",
+      "parameter_height": 109336,
+      "raw_sha256": "65e2391497761a5fe56d2861b891f4db893bfefefad13fc8790890478b07ebbf",
+      "restored_good_primes": 0,
+      "retained_index": 224,
+      "retained_rank": 225,
+      "score_units": 84638147133090,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 51134075387629,
+        "validation_good": 3030,
+        "validation_units": 18632391104965
+      },
+      "sign": 1,
+      "slice_id": "corrected-b3-a1-fibration-02-pos-13",
+      "wall_seconds": 0.1401428240351379
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-03-b2",
+      "combined_good": 3503,
+      "combined_late_good": 6533,
+      "combined_late_units": 154017110769069,
+      "combined_selection_units": 133767667696365,
+      "cpu_ms": 50,
+      "denominator": 34907,
+      "direct_checks": [
+        [
+          4099,
+          -41
+        ],
+        [
+          32771,
+          -294
+        ]
+      ],
+      "displayed_good_primes": 555,
+      "displayed_score_units": 79152983187257,
+      "extension_good": 2948,
+      "extension_selection_units": 54614684509108,
+      "family": "a1-fibration-03",
+      "good_primes": 555,
+      "id": "nearcut-b2-a1-fibration-03-0009",
+      "j_height": "4025493227326491513747251176736543423649890633501177993992004777118538486035632040326244501280664399314630300705192353957097885204457088894527807859773133223497439773868164876469225632697779725895720487232425",
+      "j_invariant": "4025493227326491513747251176736543423649890633501177993992004777118538486035632040326244501280664399314630300705192353957097885204457088894527807859773133223497439773868164876469225632697779725895720487232425/18718611303482676858360112997342776402003672062387379531606533187916632811538245119109688234598045127701038127008384909678985762041528316944457518861987227645414302049543581192807277995286353066363655028",
+      "late_rank": 9,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-5875571551217908850984972209172832760003227817452676222347714240333380400",
+        "5459733154212949126428313699494421531666604052756420889719037574025913964994365607524807229241167140965065600"
+      ],
+      "numerator": -40139,
+      "original_scalar_id": "corrected-b2-a1-fibration-03-0890",
+      "parameter": "-40139/34907",
+      "parameter_height": 40139,
+      "raw_sha256": "df4c86e2929ed9d925905caf16fb482fab8702a88b7f5a503187577d3cb12a24",
+      "restored_good_primes": 0,
+      "retained_index": 890,
+      "retained_rank": 891,
+      "score_units": 79152983187257,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 54614684509108,
+        "validation_good": 3030,
+        "validation_units": 20249443072704
+      },
+      "sign": -1,
+      "slice_id": "corrected-b2-a1-fibration-03-neg-14",
+      "wall_seconds": 0.14111578301526606
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-03-b3",
+      "combined_good": 3503,
+      "combined_late_good": 6533,
+      "combined_late_units": 155331241069697,
+      "combined_selection_units": 137573906625142,
+      "cpu_ms": 43,
+      "denominator": 82223,
+      "direct_checks": [
+        [
+          4099,
+          4
+        ],
+        [
+          32771,
+          68
+        ]
+      ],
+      "displayed_good_primes": 555,
+      "displayed_score_units": 91234374791604,
+      "extension_good": 2948,
+      "extension_selection_units": 46339531833538,
+      "family": "a1-fibration-03",
+      "good_primes": 555,
+      "id": "nearcut-b3-a1-fibration-03-0009",
+      "j_height": "1113021140607918661549216328834493614297952666952298490291530537464359375152516372607489819573899940898827684036001023808101009389152375935612368457054881769066019884456220060478672834636319531337589227432373052496",
+      "j_invariant": "-1113021140607918661549216328834493614297952666952298490291530537464359375152516372607489819573899940898827684036001023808101009389152375935612368457054881769066019884456220060478672834636319531337589227432373052496/712965861239715157444559897153084442849573262554896234336668304332042418232990690815579260870760489976736012439551534202743121936891633522888822253496105275306794390590137295889960376860377246021552428609375",
+      "late_rank": 9,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-5820127837934074630811042798644304826232705857982766662264572451908858224112",
+        "170996462986310182384927213507924137091636664449362354543720399707105759234210809503965330320704303964006647513216"
+      ],
+      "numerator": -216717,
+      "original_scalar_id": "corrected-b3-a1-fibration-03-0045",
+      "parameter": "-216717/82223",
+      "parameter_height": 216717,
+      "raw_sha256": "429b4e244e91d3159626f219f88559859c0f0923afee8ed9efad87ae3737ce7f",
+      "restored_good_primes": 0,
+      "retained_index": 45,
+      "retained_rank": 46,
+      "score_units": 91234374791604,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 46339531833538,
+        "validation_good": 3030,
+        "validation_units": 17757334444555
+      },
+      "sign": -1,
+      "slice_id": "corrected-b3-a1-fibration-03-neg-06",
+      "wall_seconds": 0.16582759097218513
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-04-b2",
+      "combined_good": 3509,
+      "combined_late_good": 6539,
+      "combined_late_units": 154961018399751,
+      "combined_selection_units": 139291743105078,
+      "cpu_ms": 50,
+      "denominator": 61267,
+      "direct_checks": [
+        [
+          4099,
+          114
+        ],
+        [
+          32771,
+          75
+        ]
+      ],
+      "displayed_good_primes": 560,
+      "displayed_score_units": 87828969125528,
+      "extension_good": 2948,
+      "extension_selection_units": 50436794236565,
+      "family": "a1-fibration-04",
+      "good_primes": 561,
+      "id": "nearcut-b2-a1-fibration-04-0009",
+      "j_height": "77573931995209218707207212657609192570732830508365196290257092023490470764732055687202519923101894743941278112416943808265152162947314646089098812807328885490226194567268227608477696",
+      "j_invariant": "77573931995209218707207212657609192570732830508365196290257092023490470764732055687202519923101894743941278112416943808265152162947314646089098812807328885490226194567268227608477696/2111929096685779883410832576607361896585957905181008644682718389773608905427212622468910272016869385111684461374276764554132621798164522990991279943776991908065914850312746053957",
+      "late_rank": 9,
+      "local_correction_units": 1025979742985,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-132597627021287272628335371353339856773413564488620846930152150843392",
+        "573704281853213035854656229537576478860961439100967638086486879721273834538798986331204204714220851200"
+      ],
+      "numerator": 42383,
+      "original_scalar_id": "corrected-b2-a1-fibration-04-0004",
+      "parameter": "42383/61267",
+      "parameter_height": 61267,
+      "raw_sha256": "cc46c2676e8f4520f8adf9c239356cf22f52ac5aba99de57d68c2fd1dfd8ecf4",
+      "restored_good_primes": 1,
+      "retained_index": 4,
+      "retained_rank": 5,
+      "score_units": 88854948868513,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 50436794236565,
+        "validation_good": 3030,
+        "validation_units": 15669275294673
+      },
+      "sign": 1,
+      "slice_id": "corrected-b2-a1-fibration-04-pos-13",
+      "wall_seconds": 0.161925949039869
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-04-b3",
+      "combined_good": 3507,
+      "combined_late_good": 6537,
+      "combined_late_units": 154195517771901,
+      "combined_selection_units": 134740299680387,
+      "cpu_ms": 47,
+      "denominator": 181006,
+      "direct_checks": [
+        [
+          4099,
+          1
+        ],
+        [
+          32771,
+          224
+        ]
+      ],
+      "displayed_good_primes": 559,
+      "displayed_score_units": 89512657202099,
+      "extension_good": 2948,
+      "extension_selection_units": 45227642478288,
+      "family": "a1-fibration-04",
+      "good_primes": 559,
+      "id": "nearcut-b3-a1-fibration-04-0009",
+      "j_height": "1104125537512238303819300849856282893541770462046847676368575368167030479364748112199857586821134818208573869914433228413751343721790897080909728565164593429600366296474086635764978478018832258976385159300096",
+      "j_invariant": "-1104125537512238303819300849856282893541770462046847676368575368167030479364748112199857586821134818208573869914433228413751343721790897080909728565164593429600366296474086635764978478018832258976385159300096/188775966626625440640630373790987979364473079246564425240125545343511557466096323767691835021250471063229384707969074836882605818023086303490192779591379863566823949649185516647784852973999514557301171875",
+      "late_rank": 9,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-338522644316269010182174582097629968065199769298637924764437009299252012",
+        "86285666656544758672359207583515707294778174442360690953957609380261522763475759829028325164410387707058484"
+      ],
+      "numerator": -240763,
+      "original_scalar_id": "corrected-b3-a1-fibration-04-0642",
+      "parameter": "-240763/181006",
+      "parameter_height": 240763,
+      "raw_sha256": "fa5de26b5555e140c78b2d7701930fd31530af3c4995e731265eabe23b06114f",
+      "restored_good_primes": 0,
+      "retained_index": 642,
+      "retained_rank": 643,
+      "score_units": 89512657202099,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 45227642478288,
+        "validation_good": 3030,
+        "validation_units": 19455218091514
+      },
+      "sign": -1,
+      "slice_id": "corrected-b3-a1-fibration-04-neg-15",
+      "wall_seconds": 0.14470174501184374
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-05-b2",
+      "combined_good": 3507,
+      "combined_late_good": 6537,
+      "combined_late_units": 154678560246038,
+      "combined_selection_units": 135172124283831,
+      "cpu_ms": 46,
+      "denominator": 42962,
+      "direct_checks": [
+        [
+          4099,
+          -64
+        ],
+        [
+          32771,
+          81
+        ]
+      ],
+      "displayed_good_primes": 559,
+      "displayed_score_units": 82463907254563,
+      "extension_good": 2948,
+      "extension_selection_units": 52708217029268,
+      "family": "a1-fibration-05",
+      "good_primes": 559,
+      "id": "nearcut-b2-a1-fibration-05-0009",
+      "j_height": "65645426459934730230115274324685093609178565976176961629588980384589693170531860180398433370632488617148309213045311594333657248784109768231669693633421237754348121843504016890117703008",
+      "j_invariant": "-65645426459934730230115274324685093609178565976176961629588980384589693170531860180398433370632488617148309213045311594333657248784109768231669693633421237754348121843504016890117703008/1002233683069098075057850081837682940908122964477228417954084429911080441573011872746325080889649321546279057932641163937045776239942492373060590659384779628273588059001126149807089",
+      "late_rank": 9,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-537137512483035097929091521197900270681969657406199902172327205952",
+        "153507945570972530250980683321323503171750705697300027952314870272421300118366747772129570328867840"
+      ],
+      "numerator": 52769,
+      "original_scalar_id": "corrected-b2-a1-fibration-05-0324",
+      "parameter": "52769/42962",
+      "parameter_height": 52769,
+      "raw_sha256": "67447784a8a728dc81ab70d840ac7a558584c421bba70bf6f4a408196d9e0fe7",
+      "restored_good_primes": 0,
+      "retained_index": 324,
+      "retained_rank": 325,
+      "score_units": 82463907254563,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 52708217029268,
+        "validation_good": 3030,
+        "validation_units": 19506435962207
+      },
+      "sign": 1,
+      "slice_id": "corrected-b2-a1-fibration-05-pos-13",
+      "wall_seconds": 0.16471045499201864
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-05-b3",
+      "combined_good": 3505,
+      "combined_late_good": 6535,
+      "combined_late_units": 153961047894970,
+      "combined_selection_units": 136222843779675,
+      "cpu_ms": 45,
+      "denominator": 80132,
+      "direct_checks": [
+        [
+          4099,
+          -70
+        ],
+        [
+          32771,
+          -33
+        ]
+      ],
+      "displayed_good_primes": 557,
+      "displayed_score_units": 89668797992516,
+      "extension_good": 2948,
+      "extension_selection_units": 46554045787159,
+      "family": "a1-fibration-05",
+      "good_primes": 557,
+      "id": "nearcut-b3-a1-fibration-05-0009",
+      "j_height": "16811422548380879350282249191038399350958451400664544453499654547508227747927101111737695597456273624508497658865887934804751004681902589578031014225662847153961673620351456120937633286884383478203136",
+      "j_invariant": "16811422548380879350282249191038399350958451400664544453499654547508227747927101111737695597456273624508497658865887934804751004681902589578031014225662847153961673620351456120937633286884383478203136/681044049061734662662065001309762285687861008485942326081619848896602298178791983464434501870201378389212901642835900311988082726567109508653227961079489135619022309633353432603165810475010751737",
+      "late_rank": 9,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-174289776538215673714631555367167977035449711715590964722388031550352",
+        "854076630815310582259036017757565930634369254059644827261522125771755202052790756798501981864957848640"
+      ],
+      "numerator": 148779,
+      "original_scalar_id": "corrected-b3-a1-fibration-05-0137",
+      "parameter": "148779/80132",
+      "parameter_height": 148779,
+      "raw_sha256": "838f34ab5e4173502cb15ab673bacbb1922a48fbd87895e8e46a39947b366ad6",
+      "restored_good_primes": 0,
+      "retained_index": 137,
+      "retained_rank": 138,
+      "score_units": 89668797992516,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 46554045787159,
+        "validation_good": 3030,
+        "validation_units": 17738204115295
+      },
+      "sign": 1,
+      "slice_id": "corrected-b3-a1-fibration-05-pos-15",
+      "wall_seconds": 0.15157192305196077
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-01-b2",
+      "combined_good": 3507,
+      "combined_late_good": 6537,
+      "combined_late_units": 155830444759277,
+      "combined_selection_units": 138489499224199,
+      "cpu_ms": 50,
+      "denominator": 15706,
+      "direct_checks": [
+        [
+          4099,
+          92
+        ],
+        [
+          32771,
+          -209
+        ]
+      ],
+      "displayed_good_primes": 559,
+      "displayed_score_units": 84859701946127,
+      "extension_good": 2947,
+      "extension_selection_units": 52684815935849,
+      "family": "a1-fibration-01",
+      "good_primes": 560,
+      "id": "nearcut-b2-a1-fibration-01-0010",
+      "j_height": "6288525562612665479269565155684558454405518587820272738587483681276299539997705530094970859516431836439523464157643899135115111469383945109550579084363844933783857",
+      "j_invariant": "-6288525562612665479269565155684558454405518587820272738587483681276299539997705530094970859516431836439523464157643899135115111469383945109550579084363844933783857/43369448186216634073647843565078577380081561542971602187156893522969068579436869898084998502022497898686748742902412423311416530817071565519613549821063764525056",
+      "late_rank": 10,
+      "local_correction_units": 944981342223,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-320259952608296874448657435670343640022693061236596220432888475",
+        "7928451410607332674676671886950298342659406785937741016954091680120693235029059525555305293750"
+      ],
+      "numerator": 39007,
+      "original_scalar_id": "corrected-b2-a1-fibration-01-0056",
+      "parameter": "39007/15706",
+      "parameter_height": 39007,
+      "raw_sha256": "0f5e9d4d92cb7bc019a87e9d8839a67a025e3727f70c4660f47d34e18b53fc35",
+      "restored_good_primes": 1,
+      "retained_index": 56,
+      "retained_rank": 57,
+      "score_units": 85804683288350,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 52684815935849,
+        "validation_good": 3030,
+        "validation_units": 17340945535078
+      },
+      "sign": 1,
+      "slice_id": "corrected-b2-a1-fibration-01-pos-07",
+      "wall_seconds": 0.15967860294040293
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-01-b3",
+      "combined_good": 3505,
+      "combined_late_good": 6535,
+      "combined_late_units": 154560060579563,
+      "combined_selection_units": 136097667764431,
+      "cpu_ms": 49,
+      "denominator": 68911,
+      "direct_checks": [
+        [
+          4099,
+          -13
+        ],
+        [
+          32771,
+          -63
+        ]
+      ],
+      "displayed_good_primes": 556,
+      "displayed_score_units": 84278729408940,
+      "extension_good": 2947,
+      "extension_selection_units": 49898826438931,
+      "family": "a1-fibration-01",
+      "good_primes": 558,
+      "id": "nearcut-b3-a1-fibration-01-0011",
+      "j_height": "13931948277960821997859706016904149787997145231927241828602495353179620569374905548550368034383100526011513263584676134472087407357718402782505787608107663047689704608616617",
+      "j_invariant": "13931948277960821997859706016904149787997145231927241828602495353179620569374905548550368034383100526011513263584676134472087407357718402782505787608107663047689704608616617/1148411693943350543152337221126585203192690168080728485212179952919152416124879795941657383148891053486141451557668094534120769722755278826337137605427948420580099751936",
+      "late_rank": 11,
+      "local_correction_units": 1920111916560,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-10437511924616290523821779219033235954124286820181269242779602486875",
+        "12019213614779643157622308595686544679479461667757608774817889782593658134939391270495941089227093750"
+      ],
+      "numerator": -98768,
+      "original_scalar_id": "corrected-b3-a1-fibration-01-0329",
+      "parameter": "-98768/68911",
+      "parameter_height": 98768,
+      "raw_sha256": "a7c09d3de4a634bd744fa81bdfb47e05abb293afb61005e9f1996810a8d64609",
+      "restored_good_primes": 2,
+      "retained_index": 329,
+      "retained_rank": 330,
+      "score_units": 86198841325500,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 49898826438931,
+        "validation_good": 3030,
+        "validation_units": 18462392815132
+      },
+      "sign": -1,
+      "slice_id": "corrected-b3-a1-fibration-01-neg-08",
+      "wall_seconds": 0.11518284399062395
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-02-b2",
+      "combined_good": 3505,
+      "combined_late_good": 6535,
+      "combined_late_units": 154720426513826,
+      "combined_selection_units": 137787206572013,
+      "cpu_ms": 46,
+      "denominator": 48197,
+      "direct_checks": [
+        [
+          4099,
+          52
+        ],
+        [
+          32771,
+          -303
+        ]
+      ],
+      "displayed_good_primes": 558,
+      "displayed_score_units": 88834564424061,
+      "extension_good": 2947,
+      "extension_selection_units": 48952642147952,
+      "family": "a1-fibration-02",
+      "good_primes": 558,
+      "id": "nearcut-b2-a1-fibration-02-0011",
+      "j_height": "524248695006764934395232316821602335065093641012523769843020708262720823353437907903558963295961939296311984126216228145131370054077044019289509228617533382625597941965963328021526159833922087936",
+      "j_invariant": "524248695006764934395232316821602335065093641012523769843020708262720823353437907903558963295961939296311984126216228145131370054077044019289509228617533382625597941965963328021526159833922087936/8375146073203176401580052296604395148561718079119271697475818280528326796269050931016556175924545187998109724190842245292998958915939546669536112188569948463833313393522763069472165608361237",
+      "late_rank": 11,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-863978408582801982677693649368244043343183310030627291247835222532",
+        "304806096826230133325611135112952013536720465852562524893147946465127508183341432825741435025722020"
+      ],
+      "numerator": 31157,
+      "original_scalar_id": "corrected-b2-a1-fibration-02-0043",
+      "parameter": "31157/48197",
+      "parameter_height": 48197,
+      "raw_sha256": "b3cd1feed57cadc25cd2c5f7a804eedfd1070a423fe7dafcd1e07533859b64e9",
+      "restored_good_primes": 0,
+      "retained_index": 43,
+      "retained_rank": 44,
+      "score_units": 88834564424061,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 48952642147952,
+        "validation_good": 3030,
+        "validation_units": 16933219941813
+      },
+      "sign": 1,
+      "slice_id": "corrected-b2-a1-fibration-02-pos-15",
+      "wall_seconds": 0.1780602689832449
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-02-b3",
+      "combined_good": 3504,
+      "combined_late_good": 6534,
+      "combined_late_units": 154326136046908,
+      "combined_selection_units": 136162987117062,
+      "cpu_ms": 49,
+      "denominator": 20083,
+      "direct_checks": [
+        [
+          4099,
+          108
+        ],
+        [
+          32771,
+          -180
+        ]
+      ],
+      "displayed_good_primes": 557,
+      "displayed_score_units": 84869068470756,
+      "extension_good": 2947,
+      "extension_selection_units": 51293918646306,
+      "family": "a1-fibration-02",
+      "good_primes": 557,
+      "id": "nearcut-b3-a1-fibration-02-0010",
+      "j_height": "118823756857867840382721933749726923157763306455272305896733743731568431394954551216756140877613133064793824007928012016957150113742883003511234168505128572745700712740018957587751910765899075480576",
+      "j_invariant": "-118823756857867840382721933749726923157763306455272305896733743731568431394954551216756140877613133064793824007928012016957150113742883003511234168505128572745700712740018957587751910765899075480576/1249817746723538948201180272153607265675919777950681034532947023581243863656536201238819687495747784751148012677306391267049115287529516856789011392183638462213549571508176407338762315492296875",
+      "late_rank": 10,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-5267746449597932757221630678366785097805731180773509580251813092292",
+        "4695661006789839017076430756907610197452609870998007586306477266357437876920118323343798550406864676"
+      ],
+      "numerator": 153591,
+      "original_scalar_id": "corrected-b3-a1-fibration-02-0170",
+      "parameter": "153591/20083",
+      "parameter_height": 153591,
+      "raw_sha256": "6d40544d0c48722ae8cf8d2a0ed6d4371a3c89cf7d5fc682fae2628928e5b6e3",
+      "restored_good_primes": 0,
+      "retained_index": 170,
+      "retained_rank": 171,
+      "score_units": 84869068470756,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 51293918646306,
+        "validation_good": 3030,
+        "validation_units": 18163148929846
+      },
+      "sign": 1,
+      "slice_id": "corrected-b3-a1-fibration-02-pos-03",
+      "wall_seconds": 0.1112057549180463
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-03-b2",
+      "combined_good": 3504,
+      "combined_late_good": 6534,
+      "combined_late_units": 153704766940835,
+      "combined_selection_units": 139043393649564,
+      "cpu_ms": 45,
+      "denominator": 51547,
+      "direct_checks": [
+        [
+          4099,
+          70
+        ],
+        [
+          32771,
+          -38
+        ]
+      ],
+      "displayed_good_primes": 556,
+      "displayed_score_units": 87306915810674,
+      "extension_good": 2948,
+      "extension_selection_units": 51736477838890,
+      "family": "a1-fibration-03",
+      "good_primes": 556,
+      "id": "nearcut-b2-a1-fibration-03-0010",
+      "j_height": "7452550281100415365512800382068258667313969652490179222586069183503839650620925732227680635275505284540161548804887953859984996989856669297968943587573226775088674722451683240450530544042526401029365648111784802521",
+      "j_invariant": "7452550281100415365512800382068258667313969652490179222586069183503839650620925732227680635275505284540161548804887953859984996989856669297968943587573226775088674722451683240450530544042526401029365648111784802521/41104195112850222511937995536632369990598416192116227172871418560403389459008931553105182019061950864724032347668120912368057314997393137565739565767699231521509258515728615660817557846001032292110128694558720",
+      "late_rank": 10,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-131847554146373661893589979263809437337165674287537027038522072535016287675",
+        "579931553455244191692670144362262605924718599480659509511320882521939959646607487806222255073957592433322121750"
+      ],
+      "numerator": -46314,
+      "original_scalar_id": "corrected-b2-a1-fibration-03-0005",
+      "parameter": "-46314/51547",
+      "parameter_height": 51547,
+      "raw_sha256": "d0c5a778ac063727043c8616d5d63c19c97a617296ee73e0b249af0b36e33ab2",
+      "restored_good_primes": 0,
+      "retained_index": 5,
+      "retained_rank": 6,
+      "score_units": 87306915810674,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 51736477838890,
+        "validation_good": 3030,
+        "validation_units": 14661373291271
+      },
+      "sign": -1,
+      "slice_id": "corrected-b2-a1-fibration-03-neg-14",
+      "wall_seconds": 0.17039206193294376
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-03-b3",
+      "combined_good": 3504,
+      "combined_late_good": 6534,
+      "combined_late_units": 155270247076844,
+      "combined_selection_units": 141914268443923,
+      "cpu_ms": 46,
+      "denominator": 215480,
+      "direct_checks": [
+        [
+          4099,
+          -52
+        ],
+        [
+          32771,
+          222
+        ]
+      ],
+      "displayed_good_primes": 557,
+      "displayed_score_units": 91883196930322,
+      "extension_good": 2947,
+      "extension_selection_units": 50031071513601,
+      "family": "a1-fibration-03",
+      "good_primes": 557,
+      "id": "nearcut-b3-a1-fibration-03-0010",
+      "j_height": "83974138587557292226353200933331645451705875545147384424619615029798512511832697895570793052368855795238657860477730274593627026538098265146717804781601302358905172174283044104523643794237258218663590970889244041495786472103776278481",
+      "j_invariant": "83974138587557292226353200933331645451705875545147384424619615029798512511832697895570793052368855795238657860477730274593627026538098265146717804781601302358905172174283044104523643794237258218663590970889244041495786472103776278481/819131449159789944212578050422266169972645068906303223950629480847960175631639691168108036720795214202889581832398062196948055253324874629245764981571062588522162491702795406505962212548481720115708829550868296497477871616000000",
+      "late_rank": 10,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-11823488047239188314529482467984659972205409080461349020299328292722906483895147",
+        "15515834146348083302304883745824150226937526923160650943825719303331481491118148244511100915679589816985880365224515686"
+      ],
+      "numerator": 80527,
+      "original_scalar_id": "corrected-b3-a1-fibration-03-0000",
+      "parameter": "80527/215480",
+      "parameter_height": 215480,
+      "raw_sha256": "de8c0f986b392a58911e2239eec973324ad9b8838ebadd8aba6f009b6d87d5ad",
+      "restored_good_primes": 0,
+      "retained_index": 0,
+      "retained_rank": 1,
+      "score_units": 91883196930322,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 50031071513601,
+        "validation_good": 3030,
+        "validation_units": 13355978632921
+      },
+      "sign": 1,
+      "slice_id": "corrected-b3-a1-fibration-03-pos-07",
+      "wall_seconds": 0.1257786030182615
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-04-b2",
+      "combined_good": 3505,
+      "combined_late_good": 6534,
+      "combined_late_units": 154797624202772,
+      "combined_selection_units": 135998019039102,
+      "cpu_ms": 46,
+      "denominator": 20437,
+      "direct_checks": [
+        [
+          4099,
+          -50
+        ],
+        [
+          32771,
+          -3
+        ]
+      ],
+      "displayed_good_primes": 556,
+      "displayed_score_units": 89667684287808,
+      "extension_good": 2948,
+      "extension_selection_units": 45575937881452,
+      "family": "a1-fibration-04",
+      "good_primes": 557,
+      "id": "nearcut-b2-a1-fibration-04-0010",
+      "j_height": "41984318041597862997647708058503632683622174326597653536537135110039395198952062445996354443461809837008510221368991033524081441597915495020561074096379301918711275318169",
+      "j_invariant": "41984318041597862997647708058503632683622174326597653536537135110039395198952062445996354443461809837008510221368991033524081441597915495020561074096379301918711275318169/506412782869434972843953832046738257971163396840601316839651143233927583066684649623349086016286230848445562004730687771603645486877560059443440851081735879808000000",
+      "late_rank": 10,
+      "local_correction_units": 754396869842,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-38594791572083340471503611325237641785954130911127998898578655152",
+        "2887801373425214806623250201846940134750523893552595154151833424125902344080521388347467799762304"
+      ],
+      "numerator": 27364,
+      "original_scalar_id": "corrected-b2-a1-fibration-04-0235",
+      "parameter": "27364/20437",
+      "parameter_height": 27364,
+      "raw_sha256": "b498b12636b63182ef0d9ba15139a6519d6b08cce34958ff160891af0b4ce114",
+      "restored_good_primes": 1,
+      "retained_index": 235,
+      "retained_rank": 236,
+      "score_units": 90422081157650,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 45575937881452,
+        "validation_good": 3029,
+        "validation_units": 18799605163670
+      },
+      "sign": 1,
+      "slice_id": "corrected-b2-a1-fibration-04-pos-05",
+      "wall_seconds": 0.2527003320865333
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-04-b3",
+      "combined_good": 3507,
+      "combined_late_good": 6537,
+      "combined_late_units": 154151342138531,
+      "combined_selection_units": 135031296170224,
+      "cpu_ms": 44,
+      "denominator": 173390,
+      "direct_checks": [
+        [
+          4099,
+          -104
+        ],
+        [
+          32771,
+          -220
+        ]
+      ],
+      "displayed_good_primes": 559,
+      "displayed_score_units": 82607941470959,
+      "extension_good": 2947,
+      "extension_selection_units": 51397374956280,
+      "family": "a1-fibration-04",
+      "good_primes": 560,
+      "id": "nearcut-b3-a1-fibration-04-0010",
+      "j_height": "104401526918469030390912886316018384605977647459814367055418138508086344162473288837030723587958850062622127049744336297472427682285949720342117772143461385123889501179463745114996606832690176",
+      "j_invariant": "-104401526918469030390912886316018384605977647459814367055418138508086344162473288837030723587958850062622127049744336297472427682285949720342117772143461385123889501179463745114996606832690176/42257207426661139144089534995896132067127868782538669339249814224260611873136918148352827473396147363242877545096692039205092343620725702483168698654799307837374321287703590083727781421875",
+      "late_rank": 10,
+      "local_correction_units": 1025979742985,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-116721577434380870341290331220648373539761453425575212247073315728432172",
+        "20008987969684643934415904732827613766925189422706298179176217056583420251519883714634432080089518031949236"
+      ],
+      "numerator": -182113,
+      "original_scalar_id": "corrected-b3-a1-fibration-04-0512",
+      "parameter": "-182113/173390",
+      "parameter_height": 182113,
+      "raw_sha256": "e6f900b1aa4c8d987fc97e9e150d8293338ab2cd860b40be90425c6915a106bf",
+      "restored_good_primes": 1,
+      "retained_index": 512,
+      "retained_rank": 513,
+      "score_units": 83633921213944,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 51397374956280,
+        "validation_good": 3030,
+        "validation_units": 19120045968307
+      },
+      "sign": -1,
+      "slice_id": "corrected-b3-a1-fibration-04-neg-08",
+      "wall_seconds": 0.15307982091326267
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-05-b2",
+      "combined_good": 3506,
+      "combined_late_good": 6536,
+      "combined_late_units": 154253340458479,
+      "combined_selection_units": 136392252142067,
+      "cpu_ms": 49,
+      "denominator": 22721,
+      "direct_checks": [
+        [
+          4099,
+          -5
+        ],
+        [
+          32771,
+          0
+        ]
+      ],
+      "displayed_good_primes": 558,
+      "displayed_score_units": 82468522338027,
+      "extension_good": 2948,
+      "extension_selection_units": 53923729804040,
+      "family": "a1-fibration-05",
+      "good_primes": 558,
+      "id": "nearcut-b2-a1-fibration-05-0010",
+      "j_height": "30003037298650173674821856149208173180447877973246078213860641038469312471495056557454436300807880550347458641020277743030501272157726503324191646225344572139816832801",
+      "j_invariant": "30003037298650173674821856149208173180447877973246078213860641038469312471495056557454436300807880550347458641020277743030501272157726503324191646225344572139816832801/2775029782972774075174761504645635117562318903335084819706769110254237341969610055154152062856062007673923942784128534576014563422213800941395945892491172758945792",
+      "late_rank": 10,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-383394221867023334781730050585481679204105401961157637383333552",
+        "2648507443565070137224534774824192592591979539162764060542506390607184840438994606494008826240"
+      ],
+      "numerator": -5193,
+      "original_scalar_id": "corrected-b2-a1-fibration-05-0129",
+      "parameter": "-5193/22721",
+      "parameter_height": 22721,
+      "raw_sha256": "bea62e7217dea4fa3fd8281aaad52141c4a9cd2c15ec96fcac9c7948d53561db",
+      "restored_good_primes": 0,
+      "retained_index": 129,
+      "retained_rank": 130,
+      "score_units": 82468522338027,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 53923729804040,
+        "validation_good": 3030,
+        "validation_units": 17861088316412
+      },
+      "sign": -1,
+      "slice_id": "corrected-b2-a1-fibration-05-neg-02",
+      "wall_seconds": 0.12827385298442096
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-05-b3",
+      "combined_good": 3506,
+      "combined_late_good": 6535,
+      "combined_late_units": 153809756654234,
+      "combined_selection_units": 137528061731057,
+      "cpu_ms": 50,
+      "denominator": 60506,
+      "direct_checks": [
+        [
+          4099,
+          12
+        ],
+        [
+          32771,
+          36
+        ]
+      ],
+      "displayed_good_primes": 558,
+      "displayed_score_units": 86100267204670,
+      "extension_good": 2948,
+      "extension_selection_units": 51427794526387,
+      "family": "a1-fibration-05",
+      "good_primes": 558,
+      "id": "nearcut-b3-a1-fibration-05-0010",
+      "j_height": "699246172917365019378904994824807432369072495486817920383224044429518340159247261969682484333420983183580931139595181453796186419716475989199491363663318502399563811765581963025111231197486080108128",
+      "j_invariant": "-699246172917365019378904994824807432369072495486817920383224044429518340159247261969682484333420983183580931139595181453796186419716475989199491363663318502399563811765581963025111231197486080108128/147805020008052988748461528183308106334841740375834020346693064506822590459828752974849319342951185330109596232606827144727565612120272156134501529176612341187471448648512374497350083243281035049",
+      "late_rank": 10,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-483100082218985719768575568258871787151372087567453705162007399909952",
+        "4775419832900143210732477345406822507630123974166247486120628285150696081428259662107204527356783191040"
+      ],
+      "numerator": 238537,
+      "original_scalar_id": "corrected-b3-a1-fibration-05-0046",
+      "parameter": "238537/60506",
+      "parameter_height": 238537,
+      "raw_sha256": "de2577770c12eecfd31c0ec2dfc958b2a6f27ed682499336416453253bef14b4",
+      "restored_good_primes": 0,
+      "retained_index": 46,
+      "retained_rank": 47,
+      "score_units": 86100267204670,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 51427794526387,
+        "validation_good": 3029,
+        "validation_units": 16281694923177
+      },
+      "sign": 1,
+      "slice_id": "corrected-b3-a1-fibration-05-pos-02",
+      "wall_seconds": 0.13902877201326191
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-01-b2",
+      "combined_good": 3499,
+      "combined_late_good": 6529,
+      "combined_late_units": 155610487155557,
+      "combined_selection_units": 135088245799505,
+      "cpu_ms": 46,
+      "denominator": 407,
+      "direct_checks": [
+        [
+          4099,
+          -62
+        ],
+        [
+          32771,
+          -246
+        ]
+      ],
+      "displayed_good_primes": 550,
+      "displayed_score_units": 82623026250430,
+      "extension_good": 2948,
+      "extension_selection_units": 51520238206852,
+      "family": "a1-fibration-01",
+      "good_primes": 551,
+      "id": "nearcut-b2-a1-fibration-01-0011",
+      "j_height": "1366525771420388801294254705762093307909773560752692382662588276907862974767108373192874445135528117655842047228974648167074046463154805417877045649349960682926289113",
+      "j_invariant": "1366525771420388801294254705762093307909773560752692382662588276907862974767108373192874445135528117655842047228974648167074046463154805417877045649349960682926289113/4062768994002566311593465898261572511188979538117415735760176174595229580052411351143879102515478796227363411627600886884598294795090761570032239561339686199296",
+      "late_rank": 11,
+      "local_correction_units": 944981342223,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-213935631907266929868202530228691708117581845998401814904042475",
+        "1201307919797525377064811729572559690460609923689436473267279305710459176401439899557951243750"
+      ],
+      "numerator": -27546,
+      "original_scalar_id": "corrected-b2-a1-fibration-01-0757",
+      "parameter": "-27546/407",
+      "parameter_height": 27546,
+      "raw_sha256": "1bd7a5e81e0070c1a9bfcd438fa08f5e787513715b39d40fe467ff0f61b6e49b",
+      "restored_good_primes": 1,
+      "retained_index": 757,
+      "retained_rank": 758,
+      "score_units": 83568007592653,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 51520238206852,
+        "validation_good": 3030,
+        "validation_units": 20522241356052
+      },
+      "sign": -1,
+      "slice_id": "corrected-b2-a1-fibration-01-neg-13",
+      "wall_seconds": 0.19776876992546022
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-01-b3",
+      "combined_good": 3509,
+      "combined_late_good": 6539,
+      "combined_late_units": 154491123510017,
+      "combined_selection_units": 138862876286202,
+      "cpu_ms": 36,
+      "denominator": 98697,
+      "direct_checks": [
+        [
+          4099,
+          -64
+        ],
+        [
+          32771,
+          270
+        ]
+      ],
+      "displayed_good_primes": 561,
+      "displayed_score_units": 89327527052853,
+      "extension_good": 2948,
+      "extension_selection_units": 49535349233349,
+      "family": "a1-fibration-01",
+      "good_primes": 561,
+      "id": "nearcut-b3-a1-fibration-01-0012",
+      "j_height": "43534181296385870180715437019656204914498551380092963253351180223470740617941043950452206675285465362099042725962990774691965811497749354594920296713929884026760714660996342407776906476871266256",
+      "j_invariant": "43534181296385870180715437019656204914498551380092963253351180223470740617941043950452206675285465362099042725962990774691965811497749354594920296713929884026760714660996342407776906476871266256/14739203972870288681652216936592530703220769514450505009983727652663139474323261154280768993441541921742393477085662311495510145126370453472157732268057288859125891397645335546060664010478277",
+      "late_rank": 12,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-184350795582327840403501982860913760822886514057208751350938589758832",
+        "620608141613965777747037057473257643237381610369522512925118968897408954097304703485690413500537400960"
+      ],
+      "numerator": -89263,
+      "original_scalar_id": "corrected-b3-a1-fibration-01-0034",
+      "parameter": "-89263/98697",
+      "parameter_height": 98697,
+      "raw_sha256": "1250bd80bce21f2d2261c40fc90af337d69f44b0a78aa3211dc992348ad31a2d",
+      "restored_good_primes": 0,
+      "retained_index": 34,
+      "retained_rank": 35,
+      "score_units": 89327527052853,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 49535349233349,
+        "validation_good": 3030,
+        "validation_units": 15628247223815
+      },
+      "sign": -1,
+      "slice_id": "corrected-b3-a1-fibration-01-neg-10",
+      "wall_seconds": 0.16645284206606448
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-02-b2",
+      "combined_good": 3503,
+      "combined_late_good": 6533,
+      "combined_late_units": 154036000806833,
+      "combined_selection_units": 140561800951787,
+      "cpu_ms": 50,
+      "denominator": 30077,
+      "direct_checks": [
+        [
+          4099,
+          -85
+        ],
+        [
+          32771,
+          45
+        ]
+      ],
+      "displayed_good_primes": 555,
+      "displayed_score_units": 87111545276171,
+      "extension_good": 2948,
+      "extension_selection_units": 53450255675616,
+      "family": "a1-fibration-02",
+      "good_primes": 555,
+      "id": "nearcut-b2-a1-fibration-02-0012",
+      "j_height": "41135340441313894801453150563087617333370617508008564144316463630663406013993589454034043939684774813297867602982280820294626279113963315272937296025863000282409713694536720206719696",
+      "j_invariant": "41135340441313894801453150563087617333370617508008564144316463630663406013993589454034043939684774813297867602982280820294626279113963315272937296025863000282409713694536720206719696/977117906110226129750479257009348301421664467787670947847104241501622719791004046498572466320915887272089868095021619465549143742375069224507502958772385329218423392234715703125",
+      "late_rank": 12,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-14477904184474900712088692945414110886452941549726729034069107312",
+        "656606905875497372150025191441625812253836559830251427295119339929563305532343592721800476799616"
+      ],
+      "numerator": 16540,
+      "original_scalar_id": "corrected-b2-a1-fibration-02-0005",
+      "parameter": "16540/30077",
+      "parameter_height": 30077,
+      "raw_sha256": "62cea2f83037179714e2d8d455c59df7729bdcc799b7ed0ba4ab90638c16cd4e",
+      "restored_good_primes": 0,
+      "retained_index": 5,
+      "retained_rank": 6,
+      "score_units": 87111545276171,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 53450255675616,
+        "validation_good": 3030,
+        "validation_units": 13474199855046
+      },
+      "sign": 1,
+      "slice_id": "corrected-b2-a1-fibration-02-pos-10",
+      "wall_seconds": 0.16475802101194859
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-02-b3",
+      "combined_good": 3504,
+      "combined_late_good": 6534,
+      "combined_late_units": 154177065839008,
+      "combined_selection_units": 143189701871774,
+      "cpu_ms": 34,
+      "denominator": 107702,
+      "direct_checks": [
+        [
+          4099,
+          9
+        ],
+        [
+          32771,
+          161
+        ]
+      ],
+      "displayed_good_primes": 557,
+      "displayed_score_units": 90007353803278,
+      "extension_good": 2947,
+      "extension_selection_units": 53182348068496,
+      "family": "a1-fibration-02",
+      "good_primes": 557,
+      "id": "nearcut-b3-a1-fibration-02-0011",
+      "j_height": "54381155202815693576498415994205315613506197010978973040251726888986101253562926044577790363101741120796651172623786140473035369550426218492308156222255240117034274615418282892732589286934757170416161",
+      "j_invariant": "54381155202815693576498415994205315613506197010978973040251726888986101253562926044577790363101741120796651172623786140473035369550426218492308156222255240117034274615418282892732589286934757170416161/200143042245399505173770838643366184916934495280756199961161495763630625586220685666135212115531809679234363012346652901869193554497591144988367539021118257311052834581564023702197088451302400000",
+      "late_rank": 11,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-1636690480615700555121819809657455409285363445343344474157978714698672",
+        "25404611014550653626320869138816366614917537642831969258364325065258071507693467989439978281327585764736"
+      ],
+      "numerator": -96161,
+      "original_scalar_id": "corrected-b3-a1-fibration-02-0000",
+      "parameter": "-96161/107702",
+      "parameter_height": 107702,
+      "raw_sha256": "342663b6942c19c24d53e012e4f996fa8bb3dbba51f4a0403d8601911e79cb3b",
+      "restored_good_primes": 0,
+      "retained_index": 0,
+      "retained_rank": 1,
+      "score_units": 90007353803278,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 53182348068496,
+        "validation_good": 3030,
+        "validation_units": 10987363967234
+      },
+      "sign": -1,
+      "slice_id": "corrected-b3-a1-fibration-02-neg-02",
+      "wall_seconds": 0.12635630392469466
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-03-b2",
+      "combined_good": 3504,
+      "combined_late_good": 6534,
+      "combined_late_units": 153298017707998,
+      "combined_selection_units": 136197150432311,
+      "cpu_ms": 50,
+      "denominator": 24949,
+      "direct_checks": [
+        [
+          4099,
+          -44
+        ],
+        [
+          32771,
+          -288
+        ]
+      ],
+      "displayed_good_primes": 556,
+      "displayed_score_units": 86437507454327,
+      "extension_good": 2948,
+      "extension_selection_units": 49759642977984,
+      "family": "a1-fibration-03",
+      "good_primes": 556,
+      "id": "nearcut-b2-a1-fibration-03-0011",
+      "j_height": "249417529862595139243952437871338169308850969047168182677883068902800767531965805546828842811599147309752852793245760385526918594973794036247728068649333966763474630475292496016363167822281747393637484881",
+      "j_invariant": "249417529862595139243952437871338169308850969047168182677883068902800767531965805546828842811599147309752852793245760385526918594973794036247728068649333966763474630475292496016363167822281747393637484881/582902234009196865837215061799008019204375237596025776617265329154434886720063057339411287757218265254591110934887258992496602943451446873126285744968497635741225581297488853053848015660782080000000",
+      "late_rank": 11,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-408111847100627997344565449545641794647363106863037728848269878011730107",
+        "100147060730452231049442886291086039071154641699913448631241051417525893852441743299724855192674967607036694"
+      ],
+      "numerator": -45150,
+      "original_scalar_id": "corrected-b2-a1-fibration-03-0112",
+      "parameter": "-45150/24949",
+      "parameter_height": 45150,
+      "raw_sha256": "8decf0185566a58e6925fcf72d43232f1cf9d74e6e16d897373ba1616b139e19",
+      "restored_good_primes": 0,
+      "retained_index": 112,
+      "retained_rank": 113,
+      "score_units": 86437507454327,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 49759642977984,
+        "validation_good": 3030,
+        "validation_units": 17100867275687
+      },
+      "sign": -1,
+      "slice_id": "corrected-b2-a1-fibration-03-neg-09",
+      "wall_seconds": 0.15917981695383787
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-03-b3",
+      "combined_good": 3506,
+      "combined_late_good": 6535,
+      "combined_late_units": 154925128497571,
+      "combined_selection_units": 138041778278439,
+      "cpu_ms": 45,
+      "denominator": 33587,
+      "direct_checks": [
+        [
+          4099,
+          -39
+        ],
+        [
+          32771,
+          -325
+        ]
+      ],
+      "displayed_good_primes": 558,
+      "displayed_score_units": 83859332618960,
+      "extension_good": 2948,
+      "extension_selection_units": 54182445659479,
+      "family": "a1-fibration-03",
+      "good_primes": 558,
+      "id": "nearcut-b3-a1-fibration-03-0011",
+      "j_height": "60201388945037225010338132698572917793881344080863927735805363424572365520649660310020757818136496808531793101468344161893139749175527203552304741545154567130407992414383640079536698573350307475580040677908001",
+      "j_invariant": "-60201388945037225010338132698572917793881344080863927735805363424572365520649660310020757818136496808531793101468344161893139749175527203552304741545154567130407992414383640079536698573350307475580040677908001/228952467952390068310601139597171468983992998699649354758847648620944025181076853584480727366646086546750897889140116587902253191078083459114521302278303870784266691654413262760960559654278397408256000000",
+      "late_rank": 11,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-4625561892424163193598811029614968749563616491406752028515917994492912507",
+        "3841645017558552169237157685836870041270024872386502960563988519398567480662637214490530932499392999545047894"
+      ],
+      "numerator": -117146,
+      "original_scalar_id": "corrected-b3-a1-fibration-03-0031",
+      "parameter": "-117146/33587",
+      "parameter_height": 117146,
+      "raw_sha256": "7293ee4a20b3d41d878c94964ff97f41a9b4f462278d9e3f22757ec5af2f186d",
+      "restored_good_primes": 0,
+      "retained_index": 31,
+      "retained_rank": 32,
+      "score_units": 83859332618960,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 54182445659479,
+        "validation_good": 3029,
+        "validation_units": 16883350219132
+      },
+      "sign": -1,
+      "slice_id": "corrected-b3-a1-fibration-03-neg-03",
+      "wall_seconds": 0.17346390092279762
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-04-b2",
+      "combined_good": 3504,
+      "combined_late_good": 6534,
+      "combined_late_units": 154733660337379,
+      "combined_selection_units": 135628016526356,
+      "cpu_ms": 42,
+      "denominator": 14164,
+      "direct_checks": [
+        [
+          4099,
+          -29
+        ],
+        [
+          32771,
+          180
+        ]
+      ],
+      "displayed_good_primes": 556,
+      "displayed_score_units": 84548209218355,
+      "extension_good": 2948,
+      "extension_selection_units": 51079807308001,
+      "family": "a1-fibration-04",
+      "good_primes": 556,
+      "id": "nearcut-b2-a1-fibration-04-0011",
+      "j_height": "502753882376353625138437608524010842578159676303038574683343051063708551070473483973538810116917167212171936836756565854783330299483159041004649633796738606053972307192513830032384",
+      "j_invariant": "502753882376353625138437608524010842578159676303038574683343051063708551070473483973538810116917167212171936836756565854783330299483159041004649633796738606053972307192513830032384/33795944327166975523835887698885788514836642908176294680487525503782959384281591786727209374894355411715686565243503744553487698253361849375876264873898185703203093763276923653",
+      "late_rank": 11,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-2343918787634310615090607698094287154018084147828967800207569372",
+        "41062843887378197853393499802961510445050155135047024157604414539146527024634254816098053955700"
+      ],
+      "numerator": -31739,
+      "original_scalar_id": "corrected-b2-a1-fibration-04-0317",
+      "parameter": "-31739/14164",
+      "parameter_height": 31739,
+      "raw_sha256": "58cb3ea0a193017b7ba9ef4cf98587aab3a725b7b9daa6d8311e32fdcc27e95d",
+      "restored_good_primes": 0,
+      "retained_index": 317,
+      "retained_rank": 318,
+      "score_units": 84548209218355,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 51079807308001,
+        "validation_good": 3030,
+        "validation_units": 19105643811023
+      },
+      "sign": -1,
+      "slice_id": "corrected-b2-a1-fibration-04-neg-13",
+      "wall_seconds": 0.15815635304898024
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-04-b3",
+      "combined_good": 3503,
+      "combined_late_good": 6533,
+      "combined_late_units": 153711487143168,
+      "combined_selection_units": 137533857440923,
+      "cpu_ms": 50,
+      "denominator": 162767,
+      "direct_checks": [
+        [
+          4099,
+          39
+        ],
+        [
+          32771,
+          -285
+        ]
+      ],
+      "displayed_good_primes": 556,
+      "displayed_score_units": 87338505641154,
+      "extension_good": 2947,
+      "extension_selection_units": 50195351799769,
+      "family": "a1-fibration-04",
+      "good_primes": 556,
+      "id": "nearcut-b3-a1-fibration-04-0011",
+      "j_height": "61212645910256112629789208405487133004747781052615832910458001805888006473488150856406825450272358510289865060097413032835008045831808810487777209500783049009844191764290428575736045347699974627991572161",
+      "j_invariant": "61212645910256112629789208405487133004747781052615832910458001805888006473488150856406825450272358510289865060097413032835008045831808810487777209500783049009844191764290428575736045347699974627991572161/1236112215423004801420533904339096700907366799021889611338408862060454598998403675290984622934100196228551591807766736738301074315585834014148169636463752007289733891386365466557291097728668160000000",
+      "late_rank": 11,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-520421544553628035497476341208976649922463468252357678215018585430171312",
+        "141960770059964959618322250228002307355361219896717522704694157345460709785059780805648301079734050761472384"
+      ],
+      "numerator": 182934,
+      "original_scalar_id": "corrected-b3-a1-fibration-04-0062",
+      "parameter": "182934/162767",
+      "parameter_height": 182934,
+      "raw_sha256": "55028db6dce8eb09504de5e109583f357b908fe369716b1af950dc7bc6f5644a",
+      "restored_good_primes": 0,
+      "retained_index": 62,
+      "retained_rank": 63,
+      "score_units": 87338505641154,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 50195351799769,
+        "validation_good": 3030,
+        "validation_units": 16177629702245
+      },
+      "sign": 1,
+      "slice_id": "corrected-b3-a1-fibration-04-pos-13",
+      "wall_seconds": 0.11591406096704304
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-05-b2",
+      "combined_good": 3505,
+      "combined_late_good": 6535,
+      "combined_late_units": 154217328820887,
+      "combined_selection_units": 135628806898120,
+      "cpu_ms": 45,
+      "denominator": 18075,
+      "direct_checks": [
+        [
+          4099,
+          -56
+        ],
+        [
+          32771,
+          -266
+        ]
+      ],
+      "displayed_good_primes": 557,
+      "displayed_score_units": 82346183448496,
+      "extension_good": 2948,
+      "extension_selection_units": 53282623449624,
+      "family": "a1-fibration-05",
+      "good_primes": 557,
+      "id": "nearcut-b2-a1-fibration-05-0011",
+      "j_height": "244222013889829650907554669191978710585019047412668326942851072013715432334546228206276062063883200130098358074552574238466395896446275448975772984996388548696538626701528704415441",
+      "j_invariant": "244222013889829650907554669191978710585019047412668326942851072013715432334546228206276062063883200130098358074552574238466395896446275448975772984996388548696538626701528704415441/218822177529941480965844668455031234218605819008420105702751200259578436524161164399767784034427054801283162610939029678590192528338766141051219350802711765894445715865600000",
+      "late_rank": 11,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-270029999866919587389495428324416603419753953988134093459170992",
+        "1706591868667618200884240775593787742237027176270204348540967714829708091848088473435632392576"
+      ],
+      "numerator": -21581,
+      "original_scalar_id": "corrected-b2-a1-fibration-05-0238",
+      "parameter": "-21581/18075",
+      "parameter_height": 21581,
+      "raw_sha256": "13dcce560dba7dcf713b535d013898a5bd6dafa91009d5e9b0113fe7eea75aa6",
+      "restored_good_primes": 0,
+      "retained_index": 238,
+      "retained_rank": 239,
+      "score_units": 82346183448496,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 53282623449624,
+        "validation_good": 3030,
+        "validation_units": 18588521922767
+      },
+      "sign": -1,
+      "slice_id": "corrected-b2-a1-fibration-05-neg-10",
+      "wall_seconds": 0.12394651293288916
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-05-b3",
+      "combined_good": 3501,
+      "combined_late_good": 6531,
+      "combined_late_units": 153804399868759,
+      "combined_selection_units": 137056289459986,
+      "cpu_ms": 42,
+      "denominator": 84486,
+      "direct_checks": [
+        [
+          4099,
+          -82
+        ],
+        [
+          32771,
+          105
+        ]
+      ],
+      "displayed_good_primes": 554,
+      "displayed_score_units": 87775185255876,
+      "extension_good": 2947,
+      "extension_selection_units": 49281104204110,
+      "family": "a1-fibration-05",
+      "good_primes": 554,
+      "id": "nearcut-b3-a1-fibration-05-0011",
+      "j_height": "320367311491581981557911523197899601785241563074257318499068707932876374535023233798089199323444447140998217229569791694107497215209729916604746905461958508131151389405567367216550541601764",
+      "j_invariant": "-320367311491581981557911523197899601785241563074257318499068707932876374535023233798089199323444447140998217229569791694107497215209729916604746905461958508131151389405567367216550541601764/1545338166055488202473904544035093297000199142131167075049319035074308933897854027634630910630013616048492688224985882904397296468253618064278457542099330448072487635486522866268859375",
+      "late_rank": 11,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-151055983385310104617781433730488535254623005258685683094834151236352",
+        "717558790376453279176592045441501785700363902546162711259082124912370348740329345432945779736742404096"
+      ],
+      "numerator": 114505,
+      "original_scalar_id": "corrected-b3-a1-fibration-05-0068",
+      "parameter": "114505/84486",
+      "parameter_height": 114505,
+      "raw_sha256": "1e3658424c2336d5eff16b19b6641f2d672d833efe8592caad9087b5b8ab7c2f",
+      "restored_good_primes": 0,
+      "retained_index": 68,
+      "retained_rank": 69,
+      "score_units": 87775185255876,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 49281104204110,
+        "validation_good": 3030,
+        "validation_units": 16748110408773
+      },
+      "sign": 1,
+      "slice_id": "corrected-b3-a1-fibration-05-pos-14",
+      "wall_seconds": 0.14829925703816116
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-01-b2",
+      "combined_good": 3503,
+      "combined_late_good": 6533,
+      "combined_late_units": 155599278405111,
+      "combined_selection_units": 140000055208362,
+      "cpu_ms": 46,
+      "denominator": 17939,
+      "direct_checks": [
+        [
+          4099,
+          40
+        ],
+        [
+          32771,
+          -60
+        ]
+      ],
+      "displayed_good_primes": 555,
+      "displayed_score_units": 89209664512302,
+      "extension_good": 2948,
+      "extension_selection_units": 50790390696060,
+      "family": "a1-fibration-01",
+      "good_primes": 555,
+      "id": "nearcut-b2-a1-fibration-01-0012",
+      "j_height": "2949429461820473780882140395743626399456459843813489265987492185780581658878961441440104878863470966929311127668457174492197382499932683529152047657000944655976022772111161",
+      "j_invariant": "2949429461820473780882140395743626399456459843813489265987492185780581658878961441440104878863470966929311127668457174492197382499932683529152047657000944655976022772111161/577128345617473614386696973830130293913918934847013097101547072449115204978206669208244360221248013087102987523319818122520133413303867689404119025371511277017600000000",
+      "late_rank": 12,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-143214264050787145174878115899153982942294989894901711030121547",
+        "536679861957346058437593798003278040604672290816632585283384647060903670837270283321143540486"
+      ],
+      "numerator": -11678,
+      "original_scalar_id": "corrected-b2-a1-fibration-01-0014",
+      "parameter": "-11678/17939",
+      "parameter_height": 17939,
+      "raw_sha256": "ce832e916838e3ddba73932fd4876eaebc8cd6cfc0922a3b191275866ce72e3e",
+      "restored_good_primes": 0,
+      "retained_index": 14,
+      "retained_rank": 15,
+      "score_units": 89209664512302,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 50790390696060,
+        "validation_good": 3030,
+        "validation_units": 15599223196749
+      },
+      "sign": -1,
+      "slice_id": "corrected-b2-a1-fibration-01-neg-01",
+      "wall_seconds": 0.17116700601764023
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-01-b3",
+      "combined_good": 3506,
+      "combined_late_good": 6536,
+      "combined_late_units": 154479266075858,
+      "combined_selection_units": 138607190086036,
+      "cpu_ms": 43,
+      "denominator": 35495,
+      "direct_checks": [
+        [
+          4099,
+          91
+        ],
+        [
+          32771,
+          -107
+        ]
+      ],
+      "displayed_good_primes": 558,
+      "displayed_score_units": 84081922510328,
+      "extension_good": 2948,
+      "extension_selection_units": 54525267575708,
+      "family": "a1-fibration-01",
+      "good_primes": 558,
+      "id": "nearcut-b3-a1-fibration-01-0013",
+      "j_height": "140642545370265148310513318821567086579073958852384684211980258731242175654908385680390934266549979596267792467574876001713590398468613171850655543943056515153499485405028044154205140783824106702801",
+      "j_invariant": "-140642545370265148310513318821567086579073958852384684211980258731242175654908385680390934266549979596267792467574876001713590398468613171850655543943056515153499485405028044154205140783824106702801/94575800017653692402597450101157410540110268711569331668021015193459382635810069238655601319946647812775542760714594297886020494844076603384244700526773399630746105665575530460606434617950208",
+      "late_rank": 13,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-10499873174370433052161690350403637068481384285681348789682362882019627",
+        "414358614992409923685790897224336047974041526933431013589790809062746391197829272956423191090545878399910"
+      ],
+      "numerator": -246374,
+      "original_scalar_id": "corrected-b3-a1-fibration-01-0047",
+      "parameter": "-246374/35495",
+      "parameter_height": 246374,
+      "raw_sha256": "627f6bd6b0ef050129bed97aad6384125f7c64667c2add918e55d44185ff6ccc",
+      "restored_good_primes": 0,
+      "retained_index": 47,
+      "retained_rank": 48,
+      "score_units": 84081922510328,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 54525267575708,
+        "validation_good": 3030,
+        "validation_units": 15872075989822
+      },
+      "sign": -1,
+      "slice_id": "corrected-b3-a1-fibration-01-neg-14",
+      "wall_seconds": 0.14560564898420125
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-02-b2",
+      "combined_good": 3502,
+      "combined_late_good": 6532,
+      "combined_late_units": 153979880208487,
+      "combined_selection_units": 137646268935136,
+      "cpu_ms": 49,
+      "denominator": 36421,
+      "direct_checks": [
+        [
+          4099,
+          -70
+        ],
+        [
+          32771,
+          102
+        ]
+      ],
+      "displayed_good_primes": 555,
+      "displayed_score_units": 83580753810864,
+      "extension_good": 2947,
+      "extension_selection_units": 54065515124272,
+      "family": "a1-fibration-02",
+      "good_primes": 555,
+      "id": "nearcut-b2-a1-fibration-02-0013",
+      "j_height": "8733388609142803726128401784655766060188290306547416363096241436690913703622390155121067228878215993737469499095835097118561985645214654431701736252091266000880085929070606824564960863251456",
+      "j_invariant": "-8733388609142803726128401784655766060188290306547416363096241436690913703622390155121067228878215993737469499095835097118561985645214654431701736252091266000880085929070606824564960863251456/1640253993387245962086437432643479191948039603615051424612838402357739311842305038466448298085899608189903764139006434821776284333506445351864406023400593992741914223676067001181071046875",
+      "late_rank": 13,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-539810853073305928679388867280701196558006219409186834167171271172",
+        "175688582618669901770250841436304378879426929307630994306339263574181460015411161479674732524377764"
+      ],
+      "numerator": 56533,
+      "original_scalar_id": "corrected-b2-a1-fibration-02-0049",
+      "parameter": "56533/36421",
+      "parameter_height": 56533,
+      "raw_sha256": "23076657ba1b616c61e946180525d3d73720c5f02377fe5217c539ebaab430cb",
+      "restored_good_primes": 0,
+      "retained_index": 49,
+      "retained_rank": 50,
+      "score_units": 83580753810864,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 54065515124272,
+        "validation_good": 3030,
+        "validation_units": 16333611273351
+      },
+      "sign": 1,
+      "slice_id": "corrected-b2-a1-fibration-02-pos-15",
+      "wall_seconds": 0.1790536269545555
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-02-b3",
+      "combined_good": 3505,
+      "combined_late_good": 6535,
+      "combined_late_units": 154013755403356,
+      "combined_selection_units": 135116219100175,
+      "cpu_ms": 43,
+      "denominator": 161329,
+      "direct_checks": [
+        [
+          4099,
+          76
+        ],
+        [
+          32771,
+          -53
+        ]
+      ],
+      "displayed_good_primes": 558,
+      "displayed_score_units": 84482536200476,
+      "extension_good": 2947,
+      "extension_selection_units": 50633682899699,
+      "family": "a1-fibration-02",
+      "good_primes": 558,
+      "id": "nearcut-b3-a1-fibration-02-0012",
+      "j_height": "2792064174480442927002335448543698600740706932106583580861841631283065045269335236555506474672581592649793907545628645790242979447502253030751987888323678953718759840615657406614560936099365321388860799936",
+      "j_invariant": "-2792064174480442927002335448543698600740706932106583580861841631283065045269335236555506474672581592649793907545628645790242979447502253030751987888323678953718759840615657406614560936099365321388860799936/481237400409313046061066830346986825007794265697384741137540094904714347844642887068006107777658054557786479031499750981752223210664881950305125750656486779196742720089753338876859995390552067624859375",
+      "late_rank": 12,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-60831082591358259117741785877447906403175137842031355204225779747198272",
+        "6578795705978820286785538036983890975695140627250860563650667383952926648760913379531449848276229207128064"
+      ],
+      "numerator": 218922,
+      "original_scalar_id": "corrected-b3-a1-fibration-02-0377",
+      "parameter": "218922/161329",
+      "parameter_height": 218922,
+      "raw_sha256": "b671d61f9de5db3a396151124d33091f50c1e7e7a57291bd183e955c2d14b807",
+      "restored_good_primes": 0,
+      "retained_index": 377,
+      "retained_rank": 378,
+      "score_units": 84482536200476,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 50633682899699,
+        "validation_good": 3030,
+        "validation_units": 18897536303181
+      },
+      "sign": 1,
+      "slice_id": "corrected-b3-a1-fibration-02-pos-02",
+      "wall_seconds": 0.14039155398495495
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-03-b2",
+      "combined_good": 3500,
+      "combined_late_good": 6530,
+      "combined_late_units": 153269271079500,
+      "combined_selection_units": 135823514774386,
+      "cpu_ms": 50,
+      "denominator": 45804,
+      "direct_checks": [
+        [
+          4099,
+          -35
+        ],
+        [
+          32771,
+          33
+        ]
+      ],
+      "displayed_good_primes": 553,
+      "displayed_score_units": 86000176689695,
+      "extension_good": 2947,
+      "extension_selection_units": 49823338084691,
+      "family": "a1-fibration-03",
+      "good_primes": 553,
+      "id": "nearcut-b2-a1-fibration-03-0012",
+      "j_height": "408636034122837443773710086520191413043074622529098542080341299011464233017611594362223431842174895538958092825654776194228393144219792033821773140465869455157656465431635634278090638406837259059252651924319998401",
+      "j_invariant": "408636034122837443773710086520191413043074622529098542080341299011464233017611594362223431842174895538958092825654776194228393144219792033821773140465869455157656465431635634278090638406837259059252651924319998401/4218660908844194164156994603296132912313900900467739142861253896588540427696984823808343185676665327201882691525704476466461960721566694109208329004395314251898302086987511562706057582879735552481230848000000",
+      "late_rank": 12,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-49015439140989353982360231735897794091276893879934224697565855176450376587",
+        "130899715115726579188585884814268016629883913791342124625745865659326151650005083834779411213147594129391899334"
+      ],
+      "numerator": 25205,
+      "original_scalar_id": "corrected-b2-a1-fibration-03-0168",
+      "parameter": "25205/45804",
+      "parameter_height": 45804,
+      "raw_sha256": "79d3fae7413a01931c4d755a2b9ea5e64aa163669008c0514b79a41a56918d01",
+      "restored_good_primes": 0,
+      "retained_index": 168,
+      "retained_rank": 169,
+      "score_units": 86000176689695,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 49823338084691,
+        "validation_good": 3030,
+        "validation_units": 17445756305114
+      },
+      "sign": 1,
+      "slice_id": "corrected-b2-a1-fibration-03-pos-01",
+      "wall_seconds": 0.18111731496173888
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-03-b3",
+      "combined_good": 3504,
+      "combined_late_good": 6534,
+      "combined_late_units": 154707746673633,
+      "combined_selection_units": 138909498155223,
+      "cpu_ms": 50,
+      "denominator": 819,
+      "direct_checks": [
+        [
+          4099,
+          -16
+        ],
+        [
+          32771,
+          -270
+        ]
+      ],
+      "displayed_good_primes": 556,
+      "displayed_score_units": 89127945359028,
+      "extension_good": 2948,
+      "extension_selection_units": 49781552796195,
+      "family": "a1-fibration-03",
+      "good_primes": 556,
+      "id": "nearcut-b3-a1-fibration-03-0012",
+      "j_height": "2799648945251894646930826257208149455505999499559483315692370220588968060969298425252920737307690342267281085173483737056874130213740211456834787306458197509455883284987083521",
+      "j_invariant": "2799648945251894646930826257208149455505999499559483315692370220588968060969298425252920737307690342267281085173483737056874130213740211456834787306458197509455883284987083521/241442142169342137448895830423080364052866390511359554402677738545196265939231466467606755401071971198009245435512742026912240073605137820792561749703192824268109667500032",
+      "late_rank": 12,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-5095604080107277742595500322808774257058942061873709365386107",
+        "4084139291463298710975045650170190436803789927393531025449936591706625429390644734975144790"
+      ],
+      "numerator": -169934,
+      "original_scalar_id": "corrected-b3-a1-fibration-03-0010",
+      "parameter": "-169934/819",
+      "parameter_height": 169934,
+      "raw_sha256": "b6354abb372af7dc3fdba0982528d4e798269639f785d55ec56a1fe314f0d3ea",
+      "restored_good_primes": 0,
+      "retained_index": 10,
+      "retained_rank": 11,
+      "score_units": 89127945359028,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 49781552796195,
+        "validation_good": 3030,
+        "validation_units": 15798248518410
+      },
+      "sign": -1,
+      "slice_id": "corrected-b3-a1-fibration-03-neg-03",
+      "wall_seconds": 0.20790079096332192
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-04-b2",
+      "combined_good": 3502,
+      "combined_late_good": 6532,
+      "combined_late_units": 154650149841247,
+      "combined_selection_units": 137154534455085,
+      "cpu_ms": 51,
+      "denominator": 56363,
+      "direct_checks": [
+        [
+          4099,
+          -68
+        ],
+        [
+          32771,
+          174
+        ]
+      ],
+      "displayed_good_primes": 555,
+      "displayed_score_units": 85851340573706,
+      "extension_good": 2947,
+      "extension_selection_units": 51303193881379,
+      "family": "a1-fibration-04",
+      "good_primes": 555,
+      "id": "nearcut-b2-a1-fibration-04-0012",
+      "j_height": "12488729798748706125996394457721589605296378487926520375584033897656026069011820049510153972932034284320364985597391570170837172128128172039548101520903163589887231936403586426365464576",
+      "j_invariant": "-12488729798748706125996394457721589605296378487926520375584033897656026069011820049510153972932034284320364985597391570170837172128128172039548101520903163589887231936403586426365464576/200799712657447682934359970673484192774713198696944563341252813247740742844620088895538581355892925684001995585103663595990559010691669729809959125311397534974358956610637720096875",
+      "late_rank": 12,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-24816050177096440518805701427122340114545415757995328663895697880832",
+        "48238960845933035246924043694671720121957702160537435042930863186363643787995209089754722631997408256"
+      ],
+      "numerator": 3503,
+      "original_scalar_id": "corrected-b2-a1-fibration-04-0093",
+      "parameter": "3503/56363",
+      "parameter_height": 56363,
+      "raw_sha256": "2bdc4cc70149c56ee4dfc4c58b291f7918ce0cde9aeb21986a7cf7c894db2180",
+      "restored_good_primes": 0,
+      "retained_index": 93,
+      "retained_rank": 94,
+      "score_units": 85851340573706,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 51303193881379,
+        "validation_good": 3030,
+        "validation_units": 17495615386162
+      },
+      "sign": 1,
+      "slice_id": "corrected-b2-a1-fibration-04-pos-00",
+      "wall_seconds": 0.2001681550173089
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-04-b3",
+      "combined_good": 3502,
+      "combined_late_good": 6531,
+      "combined_late_units": 153684102139507,
+      "combined_selection_units": 137522196888520,
+      "cpu_ms": 50,
+      "denominator": 109029,
+      "direct_checks": [
+        [
+          4099,
+          -112
+        ],
+        [
+          32771,
+          -355
+        ]
+      ],
+      "displayed_good_primes": 555,
+      "displayed_score_units": 87905770895216,
+      "extension_good": 2947,
+      "extension_selection_units": 49616425993304,
+      "family": "a1-fibration-04",
+      "good_primes": 555,
+      "id": "nearcut-b3-a1-fibration-04-0012",
+      "j_height": "3426405241825746212305403532373557594270651660619689779624334884504313755028701952422603535629139574344544419225139603779354461927699388104530950752829718117560337674003066389780863092224517230036176",
+      "j_invariant": "3426405241825746212305403532373557594270651660619689779624334884504313755028701952422603535629139574344544419225139603779354461927699388104530950752829718117560337674003066389780863092224517230036176/34961671020636454357115051118649464300788709429613150535926589343804151089716677515343745047350349299607134860451337702275479493402588631758097195091089298847209647196908918049951371448459278125",
+      "late_rank": 12,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-7900376665510934026707420154406228932454829019530229864236917236697712",
+        "267890277987248038318292572114935021644608169520833765334560463370061099026002957142852785379449007180416"
+      ],
+      "numerator": 35399,
+      "original_scalar_id": "corrected-b3-a1-fibration-04-0063",
+      "parameter": "35399/109029",
+      "parameter_height": 109029,
+      "raw_sha256": "3485eda1bab046f0ab620db398ffb0c24bb12eca621ecf8589ef9385771f2566",
+      "restored_good_primes": 0,
+      "retained_index": 63,
+      "retained_rank": 64,
+      "score_units": 87905770895216,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 49616425993304,
+        "validation_good": 3029,
+        "validation_units": 16161905250987
+      },
+      "sign": 1,
+      "slice_id": "corrected-b3-a1-fibration-04-pos-05",
+      "wall_seconds": 0.145429119002074
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 2,
+      "block": "a1-fibration-05-b2",
+      "combined_good": 3505,
+      "combined_late_good": 6535,
+      "combined_late_units": 154198325799650,
+      "combined_selection_units": 134553817911142,
+      "cpu_ms": 41,
+      "denominator": 509,
+      "direct_checks": [
+        [
+          4099,
+          102
+        ],
+        [
+          32771,
+          108
+        ]
+      ],
+      "displayed_good_primes": 557,
+      "displayed_score_units": 87313508748717,
+      "extension_good": 2948,
+      "extension_selection_units": 47240309162425,
+      "family": "a1-fibration-05",
+      "good_primes": 557,
+      "id": "nearcut-b2-a1-fibration-05-0012",
+      "j_height": "98166337010584328029546553056955084089538906146253378382879511973338598046703052193629035508606613300056814243720964115178935616725438122383623909828492957444887084796023201",
+      "j_invariant": "-98166337010584328029546553056955084089538906146253378382879511973338598046703052193629035508606613300056814243720964115178935616725438122383623909828492957444887084796023201/6780170308356078037183826234721463164599823275491639269017507018166631618984993832016543855265449666813264202866962139040478208380835065503521442195202144138969088000000",
+      "late_rank": 12,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-1992834694405202030213077494673389508902777936309754071821232",
+        "1145613025750811035222104015530890173822660998187360535815639981613484379642822565611586944"
+      ],
+      "numerator": -16719,
+      "original_scalar_id": "corrected-b2-a1-fibration-05-0536",
+      "parameter": "-16719/509",
+      "parameter_height": 16719,
+      "raw_sha256": "7e4339f39ef01a6714ba97c806bc2b7bf0047d591099df176df86a978641bfcf",
+      "restored_good_primes": 0,
+      "retained_index": 536,
+      "retained_rank": 537,
+      "score_units": 87313508748717,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 47240309162425,
+        "validation_good": 3030,
+        "validation_units": 19644507888508
+      },
+      "sign": -1,
+      "slice_id": "corrected-b2-a1-fibration-05-neg-01",
+      "wall_seconds": 0.1393387810094282
+    },
+    {
+      "arm": "nearcutoff",
+      "band": 3,
+      "block": "a1-fibration-05-b3",
+      "combined_good": 3504,
+      "combined_late_good": 6534,
+      "combined_late_units": 153735191595633,
+      "combined_selection_units": 137051392889987,
+      "cpu_ms": 47,
+      "denominator": 220469,
+      "direct_checks": [
+        [
+          4099,
+          -1
+        ],
+        [
+          32771,
+          358
+        ]
+      ],
+      "displayed_good_primes": 557,
+      "displayed_score_units": 86499333987077,
+      "extension_good": 2947,
+      "extension_selection_units": 50552058902910,
+      "family": "a1-fibration-05",
+      "good_primes": 557,
+      "id": "nearcut-b3-a1-fibration-05-0012",
+      "j_height": "30694881414768671361235280903725883658334632518644249770138991984704368741047846663580103672991224031373041673707414482318184112188410026750417710188783403767664609811927318016652390378660747175147301531913216",
+      "j_invariant": "30694881414768671361235280903725883658334632518644249770138991984704368741047846663580103672991224031373041673707414482318184112188410026750417710188783403767664609811927318016652390378660747175147301531913216/2878223720493265717113718997657283404007838776518830865914769239548779646527454560397670613959278409387799508938824483946578535404366158547073754662269724681131679952617876458245430327790604706178849010597",
+      "late_rank": 12,
+      "local_correction_units": 0,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-33548962169748373296093719038354083002124003135087269593073120836612452",
+        "2165111751848871003172842386042308621843264891914420577217944721151431283456558775391902978869248585145540"
+      ],
+      "numerator": -56612,
+      "original_scalar_id": "corrected-b3-a1-fibration-05-0069",
+      "parameter": "-56612/220469",
+      "parameter_height": 220469,
+      "raw_sha256": "081c82101a8637fa2e3c5efd0a33799a0586c039c7073df7818c4ce60009e34e",
+      "restored_good_primes": 0,
+      "retained_index": 69,
+      "retained_rank": 70,
+      "score_units": 86499333987077,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 50552058902910,
+        "validation_good": 3030,
+        "validation_units": 16683798705646
+      },
+      "sign": -1,
+      "slice_id": "corrected-b3-a1-fibration-05-neg-05",
+      "wall_seconds": 0.17179025593213737
+    }
+  ],
+  "selection_failures": [],
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/corrected_mw16_higher_selection_v1.json": "3ae2fd2584bab231cabf907cab650cfa8b03e77494f78b9752e8f129aa062a1e",
+    "artifacts/generated-results/elliptic-curves/retained_mw16_score_strata_selection_v1.json": "7ad1d4bab88491eff9403500edbbdf53e35c36264c2e18df34760c1ca7f5cfaf",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-scores-v1/controller/ledger.json": "3dcb0fdf7005cc87f27bdb829b6baf8e628cf781f7ee87496728bf32a16ecb15",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-scores-v1/protocol.json": "d48a64ebc5c2ef6af392798c5aaa6d0d31908c5b969e078e5f62b9c8003da853",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-scores-v1/result.json": "45934e363e52aa34801dd8ac274600ea2a457b01f757166867b7fc022af5617e",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9",
+    "elliptic-curves/cas/select_retained_mw16_nearcutoff.py": "20284392257d558da0740499eb75ff9eb7d39d41b72020574062d23047cd5789"
+  },
+  "status": "PASS_FROZEN60_RETAINED_SELECTION"
+}

@@ -1,0 +1,26 @@
+{
+  "claim_boundary": "Exact arithmetic equivalence, with timing measured on one fixed actual target. No universal speedup or full-search runtime claim.",
+  "edge_case_lists": 200,
+  "exact_agreement": true,
+  "measured_full_over_capped_ratio": 2.8570111562281633,
+  "modulus_bits": 71749,
+  "proof": "With cap=M+1, each node stores min(true product,cap). Capping commutes with positive multiplication. Every propagated remainder is<=M, so reducing it modulo a product>=cap leaves it unchanged. All leaf remainders are exactly M mod value.",
+  "remainder_digest": "a8dc087ac7b64535596491655f2e8dd23dc98f9f72c7ffe7f24dcdbb74fb298e",
+  "schema": "elliptic-curves.capped-primorial-remainders-benchmark.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/small_conductor_reduced_norm_form_v1.json": "8dab54430620b0e3e3c55ce3c6cf93c1346cdd7e79b1879091fe3c4dec0e63f2",
+    "artifacts/local/elliptic-curves/small-conductor-class-target-protected-v1/wave_003/protocol.json": "01e6ba436128d3806c42c0079684aa73647f2624e6fc43cddbf88b8c0a3781c7",
+    "elliptic-curves/cas/benchmark_capped_primorial_remainders.py": "d00aa9a838981a33de60e037e812c174b4e48e50dda7ff14da5ed332feb22c9b",
+    "elliptic-curves/cas/capped_primorial_remainders.py": "a2fe8930d46c716bddb2a52f27d7fc6efa9c8c7c6196639dd7fc1c1624cdd3d9",
+    "elliptic-curves/cas/extend_small_conductor_norm_batch.py": "f9b0707bb11d32f807dff2749172a8332dda97afffb51aaed7acbaaa7d88a228"
+  },
+  "status": "PASS",
+  "target_column": 6,
+  "value_count": 58819,
+  "value_digest": "0d3d33f8c65551f7885efa6684c7936a748cae9dae496726576dc1ee4fc9d0b4",
+  "wall_seconds": {
+    "capped_tree": 0.40725203696638346,
+    "full_tree": 1.1635236130096018,
+    "scalar": 1.2674488659249619
+  }
+}

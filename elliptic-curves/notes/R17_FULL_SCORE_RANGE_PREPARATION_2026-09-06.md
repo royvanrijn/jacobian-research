@@ -1,25 +1,36 @@
 # Full score range on the remaining compact R17 fibrations
 
-**All six R17 models are now proved minimal at every prime from 5 through
-131071 except the separately classified prime 13. The five fibrations other
-than `11952` pass all fifteen extended-cache cost cases and their replay.
-The fixed 14,740-table build is active. No new parameter or point campaign
-has started from these tables.**
+**The five queued R17 search/downstream controllers were cancelled before
+any parameter scan or point exposure by the latest user instruction. Their
+frozen protocols and waiting ledgers are preserved. The already-started cache
+construction, read-only replay and byte verification have finished successfully. The next priority is the
+[retained MW16 score-stratum comparison](RETAINED_MW16_SCORE_STRATA_2026-09-06.md),
+after the corrected MW16 experiment finishes unchanged.**
 
 The user requests broader initial populations while retaining the working
 selection stages. The [completed broader MW16 trial](BROAD_MW16_HIGHER_POPULATION_2026-09-06.md)
 supplies a finite comparison in that direction. A separate machinery gap
-remains on the [six compact R17 fibrations](COMPACT_SIX_R17_ATLAS_2026-09-05.md):
-`11952` has a complete extended projective trace cache, while `103b2`,
-`074d9`, `07ca9`, `08234` and `08f72` have short-prime projective caches
-followed by scalar extension only after short-score retention. Their existing
+has now been filled on the [six compact R17 fibrations](COMPACT_SIX_R17_ATLAS_2026-09-05.md):
+`103b2`, `074d9`, `07ca9`, `08234` and `08f72` now join `11952` with complete
+extended projective trace caches. Earlier searches on these five used
+short-prime retention followed by scalar extension. Their existing
 high-parameter trials therefore do not implement the same longer scoring
 before retention used in the recent `11952` and MW16 trials.
 
-These are existing fibrations with proved generic sections, not new generic
-groups. The intended use of new tables is to score previously unscanned
-parameter territory on them. No target parameter, catalogue equation, public
+These are existing fibrations with proved generic sections. The new tables
+are preserved for possible future work; their proposed new-parameter
+sweep is cancelled. No target parameter, catalogue equation, public
 point, jump label or rank-conditioned local residue enters this preparation.
+
+The standalone [Sage export](../../artifacts/generated-results/elliptic-curves/remaining_five_r17_fibrations.sage)
+provides all five exact Q(t) equations, their 85 generic sections and their
+transported generic height forms. Running it checks every rational-function
+point identity and positive definiteness of all five supplied forms, each
+with determinant 948. Direct Sage execution and exact extraction replay pass.
+The helper `fibre(family, parameter)` returns an integral rational fibre and
+the transported seventeen points; specialized independence must still be
+certified. The [export manifest](../../artifacts/generated-results/elliptic-curves/remaining_five_r17_fibrations_export_v1.json)
+pins the original atlas and [generator](../cas/export_remaining_five_r17_fibrations.py).
 
 ## Prime range theorem
 
@@ -56,6 +67,13 @@ above 131071 remain outside this theorem. Large residual cofactors remain
 unfactored and complete global prime support remains UNKNOWN. This audit
 establishes neither a conductor nor a new rank bound.
 
+The full cache build and its read-only replay now pass for all 14,740 tables.
+The ten binary encodings replay exactly, and the independent compiled reader
+agrees on both score components for all 4,831 saved fixtures: 9,662 checks.
+See the [cache certificate](../../artifacts/generated-results/elliptic-curves/r17_remaining_extended_projective_caches_v1.json)
+and [binary/replay certificate](../../artifacts/generated-results/elliptic-curves/r17_remaining_joint_binary_caches_v1.json).
+These are arithmetic and encoding results; they launch no new fibre search.
+
 ## Bounded table gate
 
 The [remaining-five benchmark](../cas/benchmark_r17_remaining_extended_projective_tables.py)
@@ -87,11 +105,75 @@ sum checks. A separate 3,600-second read-only replay follows. The
 or censoring without a retry. These tables contain 264,948,100 projective
 residues and require 73,700 independent character sums per full pass.
 
-The user explicitly requests filling this five-fibration gap. After the cache
-and binary-score checks pass, the next finite protocol will select fresh
-high-height parameter slices, apply all selection primes before retention,
-and retain bounded scalar and generic17-only point stages. It must exclude
-the earlier square and skew-rectangle scan slices explicitly; parameter
-freshness and rational-isomorphism novelty remain separate checks. No
-compact-height revisit, adaptive point exposure or record-conditioned
-candidate selection is part of this preparation.
+The [binary encoder](../cas/encode_r17_remaining_joint_caches.py) and its
+[waiting controller](../cas/finish_r17_remaining_binary_caches.py) follow
+successful table replay. All ten short/extended cache files are checked byte
+for byte. The independently compiled retained-list reader must reproduce
+both score components and good-prime counts for every one of the 4,831
+previously scalar-scored outer candidates on these five families: 9,662
+component comparisons. These fixtures are existing arithmetic checks, not
+new candidate selection. The explicit reader height limit is 524288.
+
+## Cancelled-before-execution fresh-fibre campaign
+
+The earlier request to fill this five-fibration gap produced the following
+frozen protocol. Its scan and downstream controllers have now been stopped
+before execution; the following allocation is preserved historical scope. The separate
+[scanner](../cas/scan_r17_remaining_higher_annuli.py) and
+[controller](../cas/finish_r17_remaining_higher_scan.py) freeze the following
+before new scores or point outcomes exist:
+
+| Stage | Fixed allocation |
+|---|---:|
+| Families | Five, excluding `11952` |
+| Height bands | 32768 < H <= 131072; 131072 < H <= 524288 |
+| New signed denominator slices | 320 |
+| Primitive parameter addresses | 3,059,808,912 |
+| Retention per slice | 4,096 |
+| Complete-score survivors | 1,310,720 |
+| Fresh scalar candidates | 10,240 |
+| Distinct prospective point finalists | 60 |
+| Maximum generic17 point boxes | 2,652 |
+
+For each family, sign and band, a fixed SHA256 seed chooses sixteen residues
+of the prescribed parity, modulo 1024 and 16384 respectively. Every slice
+excludes the earlier outer131072 residue modulo 1024, and the applicable
+skew-rectangle residue modulo 64. Earlier square scans through 32768 fall
+below the inner cut. These exclusions are stored explicitly with every
+slice; the complete new slices are mutually disjoint within each family.
+Parameter freshness does not establish equation novelty.
+
+Every address receives all 3,510 selection primes through 32749 before
+retention. All 320 complete signed actual-modulus frames and top-seven
+orderings must agree with the independent retained-list reader. The first
+full slice in each band has a 45-second gate and is reused once within this
+campaign. Four workers, 120 seconds per call, a 7,200-second main cap and
+1,800-second replay cap apply. All retained component scores and exact
+primitive counts must replay; immutable files checkpoint individual slices.
+
+The [scalar stage](../cas/score_r17_remaining_higher.py) chooses 1,024
+within-roster Q-distinct equations per band/family, applies fresh traces
+through 65521, and selects six per group. It retains the existing four-worker,
+20-second per-case, 2,400-second total and first-twenty cost gates, with
+20,480 independent character sums. Disjoint primes 65537 through 131071
+validate the frozen finalists without changing them.
+
+The [point controller](../cas/finish_remaining60_r17_points.py) starts only
+after those proofs pass. Every fibre starts from its seventeen generic
+sections. Four families use their 43 recorded generic parity labels; `08f72`
+uses its 49 labels. Twelve finalists per family therefore give exactly
+2,652 possible boxes at height 125000 and ten seconds per chart. All sixty
+map files precede every point attempt. Two workers, 600 seconds per fibre
+and a provisional 28-direction stop apply. There is no adaptive wave,
+refill or retry.
+
+Exact histories, generic transports, rational maps and full-cloud independence
+modulo 2, 3 and 5 precede any catalogue access. The
+[finalizer](../cas/finalize_remaining60_r17_results.py) additionally waits for
+the corrected MW16 cohort before comparing against all 1,345 prior equations
+and the 593 pinned catalogue equations. The
+[portable controller](../cas/finish_remaining60_r17_portable.py) then packages
+and runs 182 isolated point-only proof stages. No known-record parameter,
+equation, point, rank, j-invariant or jump label enters prospective selection
+or execution. No rank, record or universal-novelty result is asserted by
+these queued protocols.

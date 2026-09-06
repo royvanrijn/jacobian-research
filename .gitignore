@@ -82,6 +82,12 @@ elkies-k3/results/**/*.sqlite
 /artifacts/generated-results
 !/artifacts/generated-results/
 /artifacts/generated-results/*
+!/artifacts/generated-results/elkies-k3-curve302-nine-direction-k3-v1.json
+!/artifacts/generated-results/elkies-k3-curve302-inverse-fibration-extension-full-v1.json
+!/artifacts/generated-results/elkies-k3-curve302-cubic-pencil-overlap-v1.json
+!/artifacts/generated-results/elkies-k3-r17-norm12-103b2-norm8-pencil-priority-v1.json
+!/artifacts/generated-results/elkies-k3-r17-norm12-103b2-norm8-pencil-priority-v1.tsv
+!/artifacts/generated-results/elkies-k3-r17-norm12-orbit103b2-direct-fibration-v1.json
 !/artifacts/generated-results/binary-gvc-finite-certificate-v1.json
 !/artifacts/generated-results/binary-gvc-optimal-cutoff-v1.json
 !/artifacts/generated-results/hc4-motion-frame-transport-v1.json

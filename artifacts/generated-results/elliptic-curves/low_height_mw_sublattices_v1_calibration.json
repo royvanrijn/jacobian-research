@@ -1,0 +1,28 @@
+{
+  "actual_generic_subgroup_recovered": false,
+  "best_intersection_by_rank": {
+    "10": 6,
+    "11": 7,
+    "12": 8,
+    "13": 8,
+    "14": 9,
+    "15": 10,
+    "16": 10,
+    "17": 11,
+    "18": 12,
+    "19": 12,
+    "20": 12,
+    "8": 5,
+    "9": 5
+  },
+  "boundary": "An exact primitive-space recovery would still not recover the index-2048 generic subgroup. No target generic-family or root-complement certification follows.",
+  "exact_truth_candidate_indices": [],
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/latent_lattice_calibration_truth_v1.json": "357113254603a7910b781514bfdf2c147132a5e02c676c31513efb1786187224",
+    "artifacts/generated-results/elliptic-curves/low_height_mw_sublattices_v1_245_selection.json": "46415fde509a1f4718168f3f4fe9b093fb9000814d083ef21e9eb59d139a5e5d"
+  },
+  "selected_exact_truth_indices": [],
+  "status": "FAIL_BLIND_CALIBRATION",
+  "truth_generic_index": 2048,
+  "truth_rank": 12
+}

@@ -1,0 +1,160 @@
+{
+  "analytic_test": {
+    "all_positive_sum_interval": {
+      "lower": "3.95323849495856491145512275378440390579127177166454229292",
+      "upper": "3.95323849495856491145512275378440390579127177166454229296"
+    },
+    "archimedean_rhs_upper_bound_interval": {
+      "lower": "-5.37405619528235632720149535134783446214867201378240290013",
+      "upper": "-5.37405619528235632720149535134783446214867201378240290010"
+    },
+    "claim": "Numerical sufficient test only; field, prime coverage and memberships require arithmetic audit.",
+    "cutoff": 100,
+    "margin_interval": {
+      "lower": "13.2805331851994861501117408589166422737312155571114874859",
+      "upper": "13.2805331851994861501117408589166422737312155571114874861"
+    },
+    "penalty_interval": {
+      "lower": "0.000000000000000000000000000000000000000000000000000000000",
+      "upper": "-0.000000000000000000000000000000000000000000000000000000000"
+    },
+    "positive_margin_certified": true,
+    "precision_bits": 192,
+    "prime_ideals_contributing": 27,
+    "prime_power_terms": 34,
+    "unknown_odd_prime_power_terms": 0,
+    "unresolved_primes_by_penalty": [],
+    "worst_signed_sum_interval": {
+      "lower": "3.95323849495856491145512275378440390579127177166454229292",
+      "upper": "3.95323849495856491145512275378440390579127177166454229296"
+    }
+  },
+  "anchor_count": 0,
+  "anchor_image_dimension_upper_bound": 0,
+  "assumption": "GRH for nontrivial quadratic characters of the ordinary ideal class group of the specified field that are trivial on the proposed span.",
+  "canonical_rational_relations": 25,
+  "claim_boundary": "A conditional class-2-rank upper bound only. Positive margin certifies generation; nonpositive margin is inconclusive. Formal independence never establishes actual class independence. Elliptic rank needs separately certified points and Selmer bounds.",
+  "class_two_rank_lower_bound": null,
+  "class_two_rank_upper_bound_under_grh": 0,
+  "complete_prime_coverage_below": 100,
+  "elliptic_curve_rank": null,
+  "exact_class_two_rank": null,
+  "field_sha256": "e2cd27c492e50f32ede6d65934c34b726727a76085442fd3fbd879341953c15d",
+  "formal_quotient_dimension": 16,
+  "input_sha256": "3cb0d83ec38167e32bebf50a87576395e2fa8cab28b777e0c99ee2872ad1e4b2",
+  "known_prime_coordinates": [
+    [
+      0,
+      "0x0"
+    ],
+    [
+      1,
+      "0x0"
+    ],
+    [
+      2,
+      "0x0"
+    ],
+    [
+      3,
+      "0x0"
+    ],
+    [
+      4,
+      "0x0"
+    ],
+    [
+      5,
+      "0x0"
+    ],
+    [
+      6,
+      "0x0"
+    ],
+    [
+      11,
+      "0x0"
+    ],
+    [
+      12,
+      "0x0"
+    ],
+    [
+      13,
+      "0x0"
+    ],
+    [
+      14,
+      "0x0"
+    ],
+    [
+      25,
+      "0x0"
+    ],
+    [
+      26,
+      "0x0"
+    ],
+    [
+      27,
+      "0x0"
+    ],
+    [
+      28,
+      "0x0"
+    ],
+    [
+      43,
+      "0x0"
+    ],
+    [
+      44,
+      "0x0"
+    ],
+    [
+      45,
+      "0x0"
+    ],
+    [
+      46,
+      "0x0"
+    ],
+    [
+      51,
+      "0x0"
+    ],
+    [
+      52,
+      "0x0"
+    ],
+    [
+      53,
+      "0x0"
+    ],
+    [
+      54,
+      "0x0"
+    ],
+    [
+      55,
+      "0x0"
+    ],
+    [
+      56,
+      "0x0"
+    ],
+    [
+      57,
+      "0x0"
+    ],
+    [
+      58,
+      "0x0"
+    ]
+  ],
+  "maximal_order_certified": true,
+  "principal_relations_replayed": 27,
+  "relation_rank": 43,
+  "schema": "number-fields.class-span-certificate.v1",
+  "status": "CERTIFIED_UNDER_GRH"
+}

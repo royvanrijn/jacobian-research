@@ -1,0 +1,113 @@
+{
+  "schema": "number-fields.class-span-portable-replay.v1",
+  "scope": "Self-contained general engine, seven small-field fixtures, exact arithmetic controls, tests, CLI and protocol. MW16 integration has a separate regression and depends on the original curve evidence.",
+  "stages": [
+    {
+      "stage": "core",
+      "supervision": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "elliptic-curves/cas/certify_class_span_machinery.sage",
+          "check"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 1610612736,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 120
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/class-span-machinery-isolated-v1/core.log",
+        "log_sha256": "947a543dd83bd6e9ab304ff7fea47d53a2b1474decc50d32b2eed001f54a2fc6",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 236347392,
+        "pid": 4024097,
+        "returncode": 0,
+        "rss_limit_bytes": 1610612736,
+        "start_token": "56021226",
+        "termination_signal": null,
+        "timeout_seconds": 120,
+        "wall_seconds": 0.7431017280323431,
+        "worker_result": null,
+        "worker_result_sha256": null
+      }
+    },
+    {
+      "stage": "cli-build",
+      "supervision": {
+        "command": [
+          "/usr/bin/python3",
+          "elliptic-curves/cas/verify_class_span_grh.py",
+          "artifacts/generated-results/elliptic-curves/class-span-v1/imaginary_c2.input.json",
+          "--output",
+          "example.certificate.json"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 1610612736,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 120
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/class-span-machinery-isolated-v1/cli-build.log",
+        "log_sha256": "8caeffda4831935fe55700c2e8ba5fbd6843dad6ca94ed397a72ecafbb442a9c",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 273944576,
+        "pid": 4024597,
+        "returncode": 0,
+        "rss_limit_bytes": 1610612736,
+        "start_token": "56021302",
+        "termination_signal": null,
+        "timeout_seconds": 120,
+        "wall_seconds": 0.7953767930157483,
+        "worker_result": null,
+        "worker_result_sha256": null
+      }
+    },
+    {
+      "stage": "cli-replay",
+      "supervision": {
+        "command": [
+          "/usr/bin/python3",
+          "elliptic-curves/cas/verify_class_span_grh.py",
+          "artifacts/generated-results/elliptic-curves/class-span-v1/imaginary_c2.input.json",
+          "--output",
+          "example.certificate.json",
+          "--check"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 1610612736,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 120
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/class-span-machinery-isolated-v1/cli-replay.log",
+        "log_sha256": "8caeffda4831935fe55700c2e8ba5fbd6843dad6ca94ed397a72ecafbb442a9c",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 271863808,
+        "pid": 4025572,
+        "returncode": 0,
+        "rss_limit_bytes": 1610612736,
+        "start_token": "56021383",
+        "termination_signal": null,
+        "timeout_seconds": 120,
+        "wall_seconds": 0.7467085319804028,
+        "worker_result": null,
+        "worker_result_sha256": null
+      }
+    }
+  ],
+  "status": "PASS",
+  "zip_sha256": "83726884465964abd5ee2962f12b8a880054ac403fb87594213f07213e200ea3"
+}

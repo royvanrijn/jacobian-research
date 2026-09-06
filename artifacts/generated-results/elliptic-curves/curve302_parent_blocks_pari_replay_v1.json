@@ -1,0 +1,23 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/curve302_parent_blocks_inputs_v1.json": "a2c25c206aa6c9e98bb0cc7fbd14af8d0e3eb959301547e41f292258ca364238",
+    "artifacts/generated-results/elliptic-curves/curve302_parent_blocks_v1.json": "277c1839a706931be13aeab5c8d4485e7e733999a642752c7caaa7ffb1c1f166",
+    "elliptic-curves/rank-jump/verify_curve302_parent_blocks.py": "6cd3712bc41ee598204ea5ef36f33c82c6ebb8259e8ede12ec7972e6020373c9"
+  },
+  "boundary": "Independent arithmetic replay; governing-field and carrier implications require the written proofs.",
+  "pari_version": "[2, 15, 4]",
+  "rows": [
+    {
+      "exact_lift_identities": 14,
+      "exact_octic_formulas": 91,
+      "id": "additive_core17",
+      "independent_prime_factorizations": 7007,
+      "independent_scalar_squareclass_comparisons": 4095,
+      "integral_projection_and_component_product": "PASS",
+      "sample_binary_rank": 77
+    }
+  ],
+  "schema": "curve302.parent-blocks-pari-replay.v1",
+  "status": "PASS",
+  "worker_timeout_seconds": 60
+}

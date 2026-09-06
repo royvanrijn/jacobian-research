@@ -1,0 +1,32 @@
+{
+  "base_script_sha256": "a9fc26042d1a78e92ea3cd7a8d26957176de4953f97d4f5b86f8fa7b59b62413",
+  "policy": {
+    "boundary": "Numerical ordering; exact rank, same-parity identities and generated subgroup indices. No exhaustive CVP or optimality claim.",
+    "cosets": "every primitive ray in the v1 short ball",
+    "independence": "first independent representatives in increasing height order",
+    "ranks": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "representatives": "c+2z with z=0 or a signed support<=2 vector in the ambient LLL basis",
+    "retain_per_coset": 128,
+    "scores": [
+      "generated_log_determinant",
+      "largest_generator_height",
+      "height_ratio"
+    ],
+    "shortlist_per_rank_per_score": 8
+  },
+  "sha256": "28c1e7aaaf22f8e6f82db86da1f2018163e1dc02c6e7557bc277c10043f8827c"
+}

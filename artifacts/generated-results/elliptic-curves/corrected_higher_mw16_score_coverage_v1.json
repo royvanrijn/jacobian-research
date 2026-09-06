@@ -1,0 +1,3373 @@
+{
+  "argument": "The scanner retains the best4096 of each signed slice, ordered by decreasing combined units, decreasing good count, denominator, absolute numerator. Every omitted address is no better than its slice boundary in the first three fields. If the last admitted scalar candidate in a band/family is strictly better than every slice boundary in those fields, no omitted address can precede that candidate, regardless of the signed-numerator tie convention. Thus truncation cannot remove any address before this selected prefix, including any earlier within-roster duplicate that the frozen scalar selection skips.",
+  "claim_boundary": "Independent exact homogeneous models, primitive higher-band membership, within-roster Q-isomorphism distinctness, saved score provenance and finite strict-prefix coverage through prime32749. This preserves the existing selector. It does not prove the globally best65521 scores, a rank predictor, coverage outside the declared slices, catalogue absence, rational-point independence or a new rank.",
+  "distinct_Q_isomorphism_classes": 10240,
+  "distinct_j_invariants": 10240,
+  "groups": [
+    {
+      "band": 2,
+      "family": "a1-fibration-01",
+      "last_selected_primary_key": [
+        -134669475335840,
+        -3506,
+        54106
+      ],
+      "parameter_height_maximum": 65530,
+      "parameter_height_minimum": 16442,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -127915153874258,
+            -3501,
+            31331
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-neg-00"
+        },
+        {
+          "last_retained_key": [
+            -127914333635743,
+            -3506,
+            64787
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-neg-01"
+        },
+        {
+          "last_retained_key": [
+            -127877412860805,
+            -3505,
+            24973
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-neg-02"
+        },
+        {
+          "last_retained_key": [
+            -127943697545526,
+            -3504,
+            64709
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-neg-03"
+        },
+        {
+          "last_retained_key": [
+            -127903603871318,
+            -3504,
+            3433
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-neg-04"
+        },
+        {
+          "last_retained_key": [
+            -127934644504786,
+            -3506,
+            63421
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-neg-05"
+        },
+        {
+          "last_retained_key": [
+            -127872259821946,
+            -3506,
+            64175
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-neg-06"
+        },
+        {
+          "last_retained_key": [
+            -127914995207171,
+            -3505,
+            60863
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-neg-07"
+        },
+        {
+          "last_retained_key": [
+            -127895529256615,
+            -3505,
+            20213
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-neg-08"
+        },
+        {
+          "last_retained_key": [
+            -127897326886636,
+            -3502,
+            60485
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-neg-09"
+        },
+        {
+          "last_retained_key": [
+            -127918688074424,
+            -3507,
+            47407
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-neg-10"
+        },
+        {
+          "last_retained_key": [
+            -127836496780391,
+            -3503,
+            61989
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-neg-11"
+        },
+        {
+          "last_retained_key": [
+            -127885440450565,
+            -3504,
+            3081
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-neg-12"
+        },
+        {
+          "last_retained_key": [
+            -127941002035192,
+            -3505,
+            35991
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-neg-13"
+        },
+        {
+          "last_retained_key": [
+            -127874536407231,
+            -3505,
+            31123
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-neg-14"
+        },
+        {
+          "last_retained_key": [
+            -127870571678466,
+            -3505,
+            60245
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-neg-15"
+        },
+        {
+          "last_retained_key": [
+            -126707067080571,
+            -3507,
+            14362
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-pos-00"
+        },
+        {
+          "last_retained_key": [
+            -126695156719746,
+            -3501,
+            44894
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-pos-01"
+        },
+        {
+          "last_retained_key": [
+            -126673228987668,
+            -3502,
+            2130
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-pos-02"
+        },
+        {
+          "last_retained_key": [
+            -126649231941429,
+            -3503,
+            63614
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-pos-03"
+        },
+        {
+          "last_retained_key": [
+            -126710110358362,
+            -3506,
+            38228
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-pos-04"
+        },
+        {
+          "last_retained_key": [
+            -126684161362367,
+            -3507,
+            6638
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-pos-05"
+        },
+        {
+          "last_retained_key": [
+            -126721971796593,
+            -3506,
+            47704
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-pos-06"
+        },
+        {
+          "last_retained_key": [
+            -126727027600105,
+            -3506,
+            26970
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-pos-07"
+        },
+        {
+          "last_retained_key": [
+            -126734723402548,
+            -3507,
+            55900
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-pos-08"
+        },
+        {
+          "last_retained_key": [
+            -126693648565471,
+            -3503,
+            51866
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-pos-09"
+        },
+        {
+          "last_retained_key": [
+            -126727578059799,
+            -3505,
+            32498
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-pos-10"
+        },
+        {
+          "last_retained_key": [
+            -126741179067019,
+            -3503,
+            42952
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-pos-11"
+        },
+        {
+          "last_retained_key": [
+            -126712019800641,
+            -3505,
+            46074
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-pos-12"
+        },
+        {
+          "last_retained_key": [
+            -126756300359795,
+            -3506,
+            13732
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-pos-13"
+        },
+        {
+          "last_retained_key": [
+            -126724329971218,
+            -3506,
+            16870
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-pos-14"
+        },
+        {
+          "last_retained_key": [
+            -126740932407010,
+            -3504,
+            41728
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-01-pos-15"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 2,
+      "family": "a1-fibration-02",
+      "last_selected_primary_key": [
+        -133899359617575,
+        -3505,
+        41165
+      ],
+      "parameter_height_maximum": 65521,
+      "parameter_height_minimum": 16515,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -126053952043991,
+            -3504,
+            46352
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-neg-00"
+        },
+        {
+          "last_retained_key": [
+            -126068875856796,
+            -3502,
+            57338
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-neg-01"
+        },
+        {
+          "last_retained_key": [
+            -126020246198468,
+            -3504,
+            2654
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-neg-02"
+        },
+        {
+          "last_retained_key": [
+            -125985384717564,
+            -3501,
+            29512
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-neg-03"
+        },
+        {
+          "last_retained_key": [
+            -126016643104945,
+            -3502,
+            36292
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-neg-04"
+        },
+        {
+          "last_retained_key": [
+            -126021896310319,
+            -3504,
+            22694
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-neg-05"
+        },
+        {
+          "last_retained_key": [
+            -125988321581128,
+            -3504,
+            18824
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-neg-06"
+        },
+        {
+          "last_retained_key": [
+            -126049111907663,
+            -3503,
+            34436
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-neg-07"
+        },
+        {
+          "last_retained_key": [
+            -126028066785522,
+            -3504,
+            55964
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-neg-08"
+        },
+        {
+          "last_retained_key": [
+            -126024386994060,
+            -3505,
+            42440
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-neg-09"
+        },
+        {
+          "last_retained_key": [
+            -125966785092623,
+            -3504,
+            11570
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-neg-10"
+        },
+        {
+          "last_retained_key": [
+            -126088936006295,
+            -3502,
+            45716
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-neg-11"
+        },
+        {
+          "last_retained_key": [
+            -125970374086474,
+            -3504,
+            34872
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-neg-12"
+        },
+        {
+          "last_retained_key": [
+            -125999022084787,
+            -3501,
+            6664
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-neg-13"
+        },
+        {
+          "last_retained_key": [
+            -126014438458893,
+            -3501,
+            38674
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-neg-14"
+        },
+        {
+          "last_retained_key": [
+            -126061678559921,
+            -3505,
+            9106
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-neg-15"
+        },
+        {
+          "last_retained_key": [
+            -127237537581383,
+            -3502,
+            43843
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-pos-00"
+        },
+        {
+          "last_retained_key": [
+            -127188091422911,
+            -3506,
+            57833
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-pos-01"
+        },
+        {
+          "last_retained_key": [
+            -127193709842442,
+            -3505,
+            49051
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-pos-02"
+        },
+        {
+          "last_retained_key": [
+            -127169528404094,
+            -3506,
+            55171
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-pos-03"
+        },
+        {
+          "last_retained_key": [
+            -127204939230640,
+            -3504,
+            6757
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-pos-04"
+        },
+        {
+          "last_retained_key": [
+            -127218666982237,
+            -3504,
+            40795
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-pos-05"
+        },
+        {
+          "last_retained_key": [
+            -127191918870540,
+            -3504,
+            65025
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-pos-06"
+        },
+        {
+          "last_retained_key": [
+            -127167112955746,
+            -3507,
+            4909
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-pos-07"
+        },
+        {
+          "last_retained_key": [
+            -127189802039713,
+            -3502,
+            25239
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-pos-08"
+        },
+        {
+          "last_retained_key": [
+            -127248069467368,
+            -3505,
+            3021
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-pos-09"
+        },
+        {
+          "last_retained_key": [
+            -127211957102292,
+            -3503,
+            42109
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-pos-10"
+        },
+        {
+          "last_retained_key": [
+            -127193959585554,
+            -3502,
+            60761
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-pos-11"
+        },
+        {
+          "last_retained_key": [
+            -127183585553828,
+            -3505,
+            3867
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-pos-12"
+        },
+        {
+          "last_retained_key": [
+            -127172616121333,
+            -3501,
+            39129
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-pos-13"
+        },
+        {
+          "last_retained_key": [
+            -127189533673541,
+            -3504,
+            54263
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-pos-14"
+        },
+        {
+          "last_retained_key": [
+            -127189741583472,
+            -3505,
+            3653
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-02-pos-15"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 2,
+      "family": "a1-fibration-03",
+      "last_selected_primary_key": [
+        -133596900512264,
+        -3504,
+        34849
+      ],
+      "parameter_height_maximum": 65439,
+      "parameter_height_minimum": 16411,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -126895139500973,
+            -3503,
+            32289
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-neg-00"
+        },
+        {
+          "last_retained_key": [
+            -126918342893005,
+            -3502,
+            6463
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-neg-01"
+        },
+        {
+          "last_retained_key": [
+            -126929891589862,
+            -3502,
+            18791
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-neg-02"
+        },
+        {
+          "last_retained_key": [
+            -126967416219327,
+            -3505,
+            27017
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-neg-03"
+        },
+        {
+          "last_retained_key": [
+            -126925315320616,
+            -3498,
+            18551
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-neg-04"
+        },
+        {
+          "last_retained_key": [
+            -126894813101050,
+            -3502,
+            47537
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-neg-05"
+        },
+        {
+          "last_retained_key": [
+            -126933148343896,
+            -3506,
+            10267
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-neg-06"
+        },
+        {
+          "last_retained_key": [
+            -126969053372138,
+            -3502,
+            14383
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-neg-07"
+        },
+        {
+          "last_retained_key": [
+            -126917145845045,
+            -3502,
+            30599
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-neg-08"
+        },
+        {
+          "last_retained_key": [
+            -126971065220102,
+            -3504,
+            23157
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-neg-09"
+        },
+        {
+          "last_retained_key": [
+            -126940040527380,
+            -3505,
+            41737
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-neg-10"
+        },
+        {
+          "last_retained_key": [
+            -126917018944563,
+            -3502,
+            5281
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-neg-11"
+        },
+        {
+          "last_retained_key": [
+            -126935199583381,
+            -3506,
+            64099
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-neg-12"
+        },
+        {
+          "last_retained_key": [
+            -126912601745929,
+            -3506,
+            32875
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-neg-13"
+        },
+        {
+          "last_retained_key": [
+            -126943813280075,
+            -3503,
+            32091
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-neg-14"
+        },
+        {
+          "last_retained_key": [
+            -126952147370385,
+            -3503,
+            32891
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-neg-15"
+        },
+        {
+          "last_retained_key": [
+            -125797969638860,
+            -3501,
+            44548
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-pos-00"
+        },
+        {
+          "last_retained_key": [
+            -125736286427955,
+            -3503,
+            41964
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-pos-01"
+        },
+        {
+          "last_retained_key": [
+            -125751233092356,
+            -3503,
+            21354
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-pos-02"
+        },
+        {
+          "last_retained_key": [
+            -125773103238824,
+            -3505,
+            61406
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-pos-03"
+        },
+        {
+          "last_retained_key": [
+            -125739822600682,
+            -3506,
+            5360
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-pos-04"
+        },
+        {
+          "last_retained_key": [
+            -125746365788107,
+            -3505,
+            22864
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-pos-05"
+        },
+        {
+          "last_retained_key": [
+            -125687480552912,
+            -3503,
+            17974
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-pos-06"
+        },
+        {
+          "last_retained_key": [
+            -125723383245444,
+            -3504,
+            47740
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-pos-07"
+        },
+        {
+          "last_retained_key": [
+            -125754822232348,
+            -3506,
+            55250
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-pos-08"
+        },
+        {
+          "last_retained_key": [
+            -125745075780375,
+            -3507,
+            64000
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-pos-09"
+        },
+        {
+          "last_retained_key": [
+            -125695743611483,
+            -3505,
+            39086
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-pos-10"
+        },
+        {
+          "last_retained_key": [
+            -125744915137477,
+            -3500,
+            1194
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-pos-11"
+        },
+        {
+          "last_retained_key": [
+            -125749314880400,
+            -3502,
+            16372
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-pos-12"
+        },
+        {
+          "last_retained_key": [
+            -125769691523329,
+            -3500,
+            38154
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-pos-13"
+        },
+        {
+          "last_retained_key": [
+            -125738261267345,
+            -3504,
+            5162
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-pos-14"
+        },
+        {
+          "last_retained_key": [
+            -125726426097052,
+            -3505,
+            2450
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-03-pos-15"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 2,
+      "family": "a1-fibration-04",
+      "last_selected_primary_key": [
+        -134173661200378,
+        -3505,
+        18371
+      ],
+      "parameter_height_maximum": 65505,
+      "parameter_height_minimum": 16563,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -126214479484288,
+            -3507,
+            17280
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-neg-00"
+        },
+        {
+          "last_retained_key": [
+            -126177679713766,
+            -3506,
+            20476
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-neg-01"
+        },
+        {
+          "last_retained_key": [
+            -126211006234728,
+            -3502,
+            8806
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-neg-02"
+        },
+        {
+          "last_retained_key": [
+            -126214939958122,
+            -3502,
+            12024
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-neg-03"
+        },
+        {
+          "last_retained_key": [
+            -126233173195375,
+            -3504,
+            53702
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-neg-04"
+        },
+        {
+          "last_retained_key": [
+            -126164337560324,
+            -3507,
+            27856
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-neg-05"
+        },
+        {
+          "last_retained_key": [
+            -126239894149259,
+            -3503,
+            37226
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-neg-06"
+        },
+        {
+          "last_retained_key": [
+            -126259139184142,
+            -3508,
+            12058
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-neg-07"
+        },
+        {
+          "last_retained_key": [
+            -126208230897706,
+            -3506,
+            22928
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-neg-08"
+        },
+        {
+          "last_retained_key": [
+            -126249839277960,
+            -3505,
+            23092
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-neg-09"
+        },
+        {
+          "last_retained_key": [
+            -126214858096930,
+            -3502,
+            53594
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-neg-10"
+        },
+        {
+          "last_retained_key": [
+            -126205412689049,
+            -3505,
+            60314
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-neg-11"
+        },
+        {
+          "last_retained_key": [
+            -126221734260161,
+            -3503,
+            51174
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-neg-12"
+        },
+        {
+          "last_retained_key": [
+            -126261648536343,
+            -3503,
+            57684
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-neg-13"
+        },
+        {
+          "last_retained_key": [
+            -126260271470732,
+            -3505,
+            57742
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-neg-14"
+        },
+        {
+          "last_retained_key": [
+            -126240246083500,
+            -3505,
+            58540
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-neg-15"
+        },
+        {
+          "last_retained_key": [
+            -127431494478968,
+            -3503,
+            19499
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-pos-00"
+        },
+        {
+          "last_retained_key": [
+            -127491339783978,
+            -3502,
+            47379
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-pos-01"
+        },
+        {
+          "last_retained_key": [
+            -127441867120399,
+            -3505,
+            6289
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-pos-02"
+        },
+        {
+          "last_retained_key": [
+            -127432644088436,
+            -3503,
+            36347
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-pos-03"
+        },
+        {
+          "last_retained_key": [
+            -127424212362604,
+            -3507,
+            44483
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-pos-04"
+        },
+        {
+          "last_retained_key": [
+            -127417720935023,
+            -3503,
+            17877
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-pos-05"
+        },
+        {
+          "last_retained_key": [
+            -127416695502329,
+            -3507,
+            18187
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-pos-06"
+        },
+        {
+          "last_retained_key": [
+            -127475659729172,
+            -3502,
+            55195
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-pos-07"
+        },
+        {
+          "last_retained_key": [
+            -127426823798370,
+            -3504,
+            58459
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-pos-08"
+        },
+        {
+          "last_retained_key": [
+            -127391194433946,
+            -3505,
+            10053
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-pos-09"
+        },
+        {
+          "last_retained_key": [
+            -127461527421193,
+            -3506,
+            58487
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-pos-10"
+        },
+        {
+          "last_retained_key": [
+            -127443240509168,
+            -3504,
+            34511
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-pos-11"
+        },
+        {
+          "last_retained_key": [
+            -127441314774451,
+            -3507,
+            47221
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-pos-12"
+        },
+        {
+          "last_retained_key": [
+            -127385216731683,
+            -3504,
+            57939
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-pos-13"
+        },
+        {
+          "last_retained_key": [
+            -127433170306523,
+            -3505,
+            62177
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-pos-14"
+        },
+        {
+          "last_retained_key": [
+            -127399754044358,
+            -3505,
+            29159
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-04-pos-15"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 2,
+      "family": "a1-fibration-05",
+      "last_selected_primary_key": [
+        -133727990813830,
+        -3505,
+        42981
+      ],
+      "parameter_height_maximum": 65534,
+      "parameter_height_minimum": 16385,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -127098033393448,
+            -3503,
+            41025
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-neg-00"
+        },
+        {
+          "last_retained_key": [
+            -127005739931788,
+            -3502,
+            57597
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-neg-01"
+        },
+        {
+          "last_retained_key": [
+            -127032411381482,
+            -3505,
+            53441
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-neg-02"
+        },
+        {
+          "last_retained_key": [
+            -127012738967595,
+            -3505,
+            16777
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-neg-03"
+        },
+        {
+          "last_retained_key": [
+            -127006922986609,
+            -3503,
+            22785
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-neg-04"
+        },
+        {
+          "last_retained_key": [
+            -127062138147141,
+            -3503,
+            36985
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-neg-05"
+        },
+        {
+          "last_retained_key": [
+            -127022435120071,
+            -3504,
+            47991
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-neg-06"
+        },
+        {
+          "last_retained_key": [
+            -126993346041448,
+            -3497,
+            14341
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-neg-07"
+        },
+        {
+          "last_retained_key": [
+            -127021054749873,
+            -3505,
+            58853
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-neg-08"
+        },
+        {
+          "last_retained_key": [
+            -127028733033114,
+            -3505,
+            59413
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-neg-09"
+        },
+        {
+          "last_retained_key": [
+            -126973712833255,
+            -3504,
+            17819
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-neg-10"
+        },
+        {
+          "last_retained_key": [
+            -127024679002027,
+            -3504,
+            31047
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-neg-11"
+        },
+        {
+          "last_retained_key": [
+            -127028632641782,
+            -3501,
+            42203
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-neg-12"
+        },
+        {
+          "last_retained_key": [
+            -127076752034190,
+            -3505,
+            11373
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-neg-13"
+        },
+        {
+          "last_retained_key": [
+            -127085089648447,
+            -3503,
+            55507
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-neg-14"
+        },
+        {
+          "last_retained_key": [
+            -127031423909318,
+            -3504,
+            29745
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-neg-15"
+        },
+        {
+          "last_retained_key": [
+            -125842254927184,
+            -3506,
+            21680
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-pos-00"
+        },
+        {
+          "last_retained_key": [
+            -125813592790036,
+            -3503,
+            20404
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-pos-01"
+        },
+        {
+          "last_retained_key": [
+            -125850771719405,
+            -3501,
+            9778
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-pos-02"
+        },
+        {
+          "last_retained_key": [
+            -125851446746903,
+            -3502,
+            22290
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-pos-03"
+        },
+        {
+          "last_retained_key": [
+            -125897051047903,
+            -3503,
+            2016
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-pos-04"
+        },
+        {
+          "last_retained_key": [
+            -125848229627430,
+            -3506,
+            15870
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-pos-05"
+        },
+        {
+          "last_retained_key": [
+            -125812085286219,
+            -3503,
+            28782
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-pos-06"
+        },
+        {
+          "last_retained_key": [
+            -125829795643137,
+            -3503,
+            10252
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-pos-07"
+        },
+        {
+          "last_retained_key": [
+            -125882723018630,
+            -3502,
+            56100
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-pos-08"
+        },
+        {
+          "last_retained_key": [
+            -125837050043779,
+            -3501,
+            45022
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-pos-09"
+        },
+        {
+          "last_retained_key": [
+            -125831927070133,
+            -3501,
+            9598
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-pos-10"
+        },
+        {
+          "last_retained_key": [
+            -125861688010469,
+            -3505,
+            1256
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-pos-11"
+        },
+        {
+          "last_retained_key": [
+            -125906191090770,
+            -3507,
+            36048
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-pos-12"
+        },
+        {
+          "last_retained_key": [
+            -125859393804630,
+            -3503,
+            61394
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-pos-13"
+        },
+        {
+          "last_retained_key": [
+            -125822205122411,
+            -3503,
+            39190
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-pos-14"
+        },
+        {
+          "last_retained_key": [
+            -125847652282090,
+            -3502,
+            53446
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b2-a1-fibration-05-pos-15"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 3,
+      "family": "a1-fibration-01",
+      "last_selected_primary_key": [
+        -134675685592627,
+        -3504,
+        161282
+      ],
+      "parameter_height_maximum": 261767,
+      "parameter_height_minimum": 65773,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -127934275648880,
+            -3503,
+            8895
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-neg-00"
+        },
+        {
+          "last_retained_key": [
+            -127895399161813,
+            -3503,
+            185647
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-neg-01"
+        },
+        {
+          "last_retained_key": [
+            -127912160451843,
+            -3502,
+            90163
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-neg-02"
+        },
+        {
+          "last_retained_key": [
+            -127917006817826,
+            -3503,
+            207271
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-neg-03"
+        },
+        {
+          "last_retained_key": [
+            -127876046848602,
+            -3503,
+            236045
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-neg-04"
+        },
+        {
+          "last_retained_key": [
+            -127934525702497,
+            -3505,
+            212043
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-neg-05"
+        },
+        {
+          "last_retained_key": [
+            -127927103326417,
+            -3503,
+            26053
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-neg-06"
+        },
+        {
+          "last_retained_key": [
+            -127877155055453,
+            -3505,
+            165661
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-neg-07"
+        },
+        {
+          "last_retained_key": [
+            -127854502256952,
+            -3507,
+            44335
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-neg-08"
+        },
+        {
+          "last_retained_key": [
+            -127857560584900,
+            -3503,
+            139501
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-neg-09"
+        },
+        {
+          "last_retained_key": [
+            -127847307508356,
+            -3507,
+            98697
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-neg-10"
+        },
+        {
+          "last_retained_key": [
+            -127861613111717,
+            -3508,
+            120215
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-neg-11"
+        },
+        {
+          "last_retained_key": [
+            -127851723900489,
+            -3506,
+            98309
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-neg-12"
+        },
+        {
+          "last_retained_key": [
+            -127913668598848,
+            -3502,
+            9493
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-neg-13"
+        },
+        {
+          "last_retained_key": [
+            -127933193053217,
+            -3507,
+            76455
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-neg-14"
+        },
+        {
+          "last_retained_key": [
+            -127939672172693,
+            -3506,
+            27113
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-neg-15"
+        },
+        {
+          "last_retained_key": [
+            -126721752407217,
+            -3502,
+            173570
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-pos-00"
+        },
+        {
+          "last_retained_key": [
+            -126763464264527,
+            -3503,
+            126944
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-pos-01"
+        },
+        {
+          "last_retained_key": [
+            -126754182720688,
+            -3506,
+            226290
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-pos-02"
+        },
+        {
+          "last_retained_key": [
+            -126739688906152,
+            -3500,
+            224312
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-pos-03"
+        },
+        {
+          "last_retained_key": [
+            -126733192976658,
+            -3503,
+            137002
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-pos-04"
+        },
+        {
+          "last_retained_key": [
+            -126702417335912,
+            -3507,
+            197686
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-pos-05"
+        },
+        {
+          "last_retained_key": [
+            -126696868977615,
+            -3505,
+            250382
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-pos-06"
+        },
+        {
+          "last_retained_key": [
+            -126730555371322,
+            -3500,
+            195178
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-pos-07"
+        },
+        {
+          "last_retained_key": [
+            -126710966662727,
+            -3506,
+            141696
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-pos-08"
+        },
+        {
+          "last_retained_key": [
+            -126675155691594,
+            -3503,
+            155224
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-pos-09"
+        },
+        {
+          "last_retained_key": [
+            -126700580690200,
+            -3503,
+            234108
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-pos-10"
+        },
+        {
+          "last_retained_key": [
+            -126749335807356,
+            -3507,
+            220350
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-pos-11"
+        },
+        {
+          "last_retained_key": [
+            -126701458266071,
+            -3503,
+            164962
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-pos-12"
+        },
+        {
+          "last_retained_key": [
+            -126727922442448,
+            -3506,
+            15758
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-pos-13"
+        },
+        {
+          "last_retained_key": [
+            -126630732184142,
+            -3503,
+            91548
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-pos-14"
+        },
+        {
+          "last_retained_key": [
+            -126666498973170,
+            -3504,
+            121540
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-01-pos-15"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 3,
+      "family": "a1-fibration-02",
+      "last_selected_primary_key": [
+        -133889958327837,
+        -3501,
+        120778
+      ],
+      "parameter_height_maximum": 261747,
+      "parameter_height_minimum": 66907,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -125959213576706,
+            -3503,
+            69406
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-neg-00"
+        },
+        {
+          "last_retained_key": [
+            -126031712134434,
+            -3503,
+            255316
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-neg-01"
+        },
+        {
+          "last_retained_key": [
+            -125981149911100,
+            -3502,
+            177334
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-neg-02"
+        },
+        {
+          "last_retained_key": [
+            -126029023992090,
+            -3502,
+            25516
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-neg-03"
+        },
+        {
+          "last_retained_key": [
+            -126014685944107,
+            -3505,
+            65176
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-neg-04"
+        },
+        {
+          "last_retained_key": [
+            -125992747381354,
+            -3505,
+            123136
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-neg-05"
+        },
+        {
+          "last_retained_key": [
+            -126055796876307,
+            -3502,
+            88060
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-neg-06"
+        },
+        {
+          "last_retained_key": [
+            -125991563868241,
+            -3504,
+            182260
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-neg-07"
+        },
+        {
+          "last_retained_key": [
+            -126030812158670,
+            -3507,
+            160966
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-neg-08"
+        },
+        {
+          "last_retained_key": [
+            -126000621319702,
+            -3505,
+            149450
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-neg-09"
+        },
+        {
+          "last_retained_key": [
+            -125962885886053,
+            -3505,
+            75634
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-neg-10"
+        },
+        {
+          "last_retained_key": [
+            -125951339746071,
+            -3503,
+            52994
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-neg-11"
+        },
+        {
+          "last_retained_key": [
+            -126068332032059,
+            -3506,
+            43090
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-neg-12"
+        },
+        {
+          "last_retained_key": [
+            -126000577630531,
+            -3504,
+            70070
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-neg-13"
+        },
+        {
+          "last_retained_key": [
+            -125968491029344,
+            -3503,
+            259158
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-neg-14"
+        },
+        {
+          "last_retained_key": [
+            -126014091372585,
+            -3503,
+            17398
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-neg-15"
+        },
+        {
+          "last_retained_key": [
+            -127156937363088,
+            -3506,
+            227207
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-pos-00"
+        },
+        {
+          "last_retained_key": [
+            -127188451249260,
+            -3505,
+            35423
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-pos-01"
+        },
+        {
+          "last_retained_key": [
+            -127140575554726,
+            -3499,
+            230961
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-pos-02"
+        },
+        {
+          "last_retained_key": [
+            -127230212059721,
+            -3507,
+            134771
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-pos-03"
+        },
+        {
+          "last_retained_key": [
+            -127245897482838,
+            -3503,
+            51703
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-pos-04"
+        },
+        {
+          "last_retained_key": [
+            -127240621582089,
+            -3506,
+            14593
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-pos-05"
+        },
+        {
+          "last_retained_key": [
+            -127190690376933,
+            -3506,
+            255261
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-pos-06"
+        },
+        {
+          "last_retained_key": [
+            -127217882160281,
+            -3500,
+            2123
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-pos-07"
+        },
+        {
+          "last_retained_key": [
+            -127206214302971,
+            -3504,
+            62375
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-pos-08"
+        },
+        {
+          "last_retained_key": [
+            -127194060188991,
+            -3501,
+            79361
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-pos-09"
+        },
+        {
+          "last_retained_key": [
+            -127183168414054,
+            -3505,
+            31255
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-pos-10"
+        },
+        {
+          "last_retained_key": [
+            -127135725490575,
+            -3505,
+            135779
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-pos-11"
+        },
+        {
+          "last_retained_key": [
+            -127197883707494,
+            -3507,
+            226909
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-pos-12"
+        },
+        {
+          "last_retained_key": [
+            -127196263953155,
+            -3498,
+            11687
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-pos-13"
+        },
+        {
+          "last_retained_key": [
+            -127185508091752,
+            -3505,
+            83291
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-pos-14"
+        },
+        {
+          "last_retained_key": [
+            -127211707284923,
+            -3504,
+            246323
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-02-pos-15"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 3,
+      "family": "a1-fibration-03",
+      "last_selected_primary_key": [
+        -133601891167057,
+        -3502,
+        85025
+      ],
+      "parameter_height_maximum": 262109,
+      "parameter_height_minimum": 65603,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -126976579013115,
+            -3503,
+            100723
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-neg-00"
+        },
+        {
+          "last_retained_key": [
+            -126923649867346,
+            -3504,
+            249821
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-neg-01"
+        },
+        {
+          "last_retained_key": [
+            -126904722589352,
+            -3502,
+            120229
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-neg-02"
+        },
+        {
+          "last_retained_key": [
+            -126975723455339,
+            -3504,
+            181043
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-neg-03"
+        },
+        {
+          "last_retained_key": [
+            -126917132027227,
+            -3504,
+            193057
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-neg-04"
+        },
+        {
+          "last_retained_key": [
+            -126949090316562,
+            -3501,
+            82247
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-neg-05"
+        },
+        {
+          "last_retained_key": [
+            -126944489000302,
+            -3501,
+            254255
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-neg-06"
+        },
+        {
+          "last_retained_key": [
+            -126900161235247,
+            -3505,
+            93603
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-neg-07"
+        },
+        {
+          "last_retained_key": [
+            -126899073999817,
+            -3505,
+            155069
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-neg-08"
+        },
+        {
+          "last_retained_key": [
+            -126875111375855,
+            -3503,
+            27211
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-neg-09"
+        },
+        {
+          "last_retained_key": [
+            -126978327689564,
+            -3505,
+            221069
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-neg-10"
+        },
+        {
+          "last_retained_key": [
+            -126932473932116,
+            -3503,
+            227701
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-neg-11"
+        },
+        {
+          "last_retained_key": [
+            -126910805791890,
+            -3502,
+            147005
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-neg-12"
+        },
+        {
+          "last_retained_key": [
+            -126904571694482,
+            -3500,
+            153493
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-neg-13"
+        },
+        {
+          "last_retained_key": [
+            -126872961502538,
+            -3502,
+            48161
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-neg-14"
+        },
+        {
+          "last_retained_key": [
+            -126884101698252,
+            -3503,
+            158657
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-neg-15"
+        },
+        {
+          "last_retained_key": [
+            -125772909052868,
+            -3503,
+            236596
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-pos-00"
+        },
+        {
+          "last_retained_key": [
+            -125717627500475,
+            -3504,
+            64682
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-pos-01"
+        },
+        {
+          "last_retained_key": [
+            -125675237316177,
+            -3505,
+            200300
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-pos-02"
+        },
+        {
+          "last_retained_key": [
+            -125699399327038,
+            -3504,
+            23984
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-pos-03"
+        },
+        {
+          "last_retained_key": [
+            -125736380674856,
+            -3501,
+            106078
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-pos-04"
+        },
+        {
+          "last_retained_key": [
+            -125747838651773,
+            -3501,
+            50638
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-pos-05"
+        },
+        {
+          "last_retained_key": [
+            -125674725546905,
+            -3503,
+            220442
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-pos-06"
+        },
+        {
+          "last_retained_key": [
+            -125680918277834,
+            -3502,
+            76216
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-pos-07"
+        },
+        {
+          "last_retained_key": [
+            -125765080332602,
+            -3503,
+            242582
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-pos-08"
+        },
+        {
+          "last_retained_key": [
+            -125712733854851,
+            -3504,
+            184614
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-pos-09"
+        },
+        {
+          "last_retained_key": [
+            -125674655337172,
+            -3504,
+            16914
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-pos-10"
+        },
+        {
+          "last_retained_key": [
+            -125731309596635,
+            -3504,
+            191496
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-pos-11"
+        },
+        {
+          "last_retained_key": [
+            -125776078694027,
+            -3504,
+            104114
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-pos-12"
+        },
+        {
+          "last_retained_key": [
+            -125661971559497,
+            -3503,
+            215610
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-pos-13"
+        },
+        {
+          "last_retained_key": [
+            -125733061523896,
+            -3502,
+            68854
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-pos-14"
+        },
+        {
+          "last_retained_key": [
+            -125771776762493,
+            -3503,
+            112150
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-03-pos-15"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 3,
+      "family": "a1-fibration-04",
+      "last_selected_primary_key": [
+        -134090049443618,
+        -3507,
+        71536
+      ],
+      "parameter_height_maximum": 261927,
+      "parameter_height_minimum": 65910,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -126259321778557,
+            -3503,
+            187074
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-neg-00"
+        },
+        {
+          "last_retained_key": [
+            -126181803885233,
+            -3501,
+            75474
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-neg-01"
+        },
+        {
+          "last_retained_key": [
+            -126222381365331,
+            -3503,
+            179188
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-neg-02"
+        },
+        {
+          "last_retained_key": [
+            -126208215196380,
+            -3506,
+            133122
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-neg-03"
+        },
+        {
+          "last_retained_key": [
+            -126238566887187,
+            -3500,
+            73564
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-neg-04"
+        },
+        {
+          "last_retained_key": [
+            -126217868746332,
+            -3505,
+            108606
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-neg-05"
+        },
+        {
+          "last_retained_key": [
+            -126189092210518,
+            -3503,
+            29676
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-neg-06"
+        },
+        {
+          "last_retained_key": [
+            -126224271032502,
+            -3507,
+            147474
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-neg-07"
+        },
+        {
+          "last_retained_key": [
+            -126262899327970,
+            -3504,
+            5454
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-neg-08"
+        },
+        {
+          "last_retained_key": [
+            -126260246526004,
+            -3504,
+            125938
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-neg-09"
+        },
+        {
+          "last_retained_key": [
+            -126207996622946,
+            -3503,
+            53110
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-neg-10"
+        },
+        {
+          "last_retained_key": [
+            -126226707217606,
+            -3506,
+            127784
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-neg-11"
+        },
+        {
+          "last_retained_key": [
+            -126171493856421,
+            -3505,
+            7054
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-neg-12"
+        },
+        {
+          "last_retained_key": [
+            -126243687210063,
+            -3506,
+            26480
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-neg-13"
+        },
+        {
+          "last_retained_key": [
+            -126211516938718,
+            -3501,
+            91044
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-neg-14"
+        },
+        {
+          "last_retained_key": [
+            -126256958121813,
+            -3505,
+            37646
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-neg-15"
+        },
+        {
+          "last_retained_key": [
+            -127464827257577,
+            -3503,
+            148873
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-pos-00"
+        },
+        {
+          "last_retained_key": [
+            -127387974874885,
+            -3504,
+            120701
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-pos-01"
+        },
+        {
+          "last_retained_key": [
+            -127399611911038,
+            -3507,
+            210977
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-pos-02"
+        },
+        {
+          "last_retained_key": [
+            -127389945703504,
+            -3504,
+            115369
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-pos-03"
+        },
+        {
+          "last_retained_key": [
+            -127430184262065,
+            -3505,
+            237499
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-pos-04"
+        },
+        {
+          "last_retained_key": [
+            -127376608938969,
+            -3500,
+            137701
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-pos-05"
+        },
+        {
+          "last_retained_key": [
+            -127400454704423,
+            -3501,
+            82351
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-pos-06"
+        },
+        {
+          "last_retained_key": [
+            -127417794941443,
+            -3502,
+            186697
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-pos-07"
+        },
+        {
+          "last_retained_key": [
+            -127416603869480,
+            -3506,
+            177913
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-pos-08"
+        },
+        {
+          "last_retained_key": [
+            -127412480732115,
+            -3504,
+            66299
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-pos-09"
+        },
+        {
+          "last_retained_key": [
+            -127413665074005,
+            -3503,
+            67875
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-pos-10"
+        },
+        {
+          "last_retained_key": [
+            -127421318506825,
+            -3505,
+            168715
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-pos-11"
+        },
+        {
+          "last_retained_key": [
+            -127444448710556,
+            -3504,
+            43157
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-pos-12"
+        },
+        {
+          "last_retained_key": [
+            -127409418547689,
+            -3505,
+            203727
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-pos-13"
+        },
+        {
+          "last_retained_key": [
+            -127398678546340,
+            -3504,
+            44073
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-pos-14"
+        },
+        {
+          "last_retained_key": [
+            -127426118248510,
+            -3503,
+            97483
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-04-pos-15"
+        }
+      ],
+      "strict_retention_coverage": true
+    },
+    {
+      "band": 3,
+      "family": "a1-fibration-05",
+      "last_selected_primary_key": [
+        -133733949167379,
+        -3503,
+        63748
+      ],
+      "parameter_height_maximum": 261906,
+      "parameter_height_minimum": 65709,
+      "scalar_candidates": 1024,
+      "slice_boundaries": [
+        {
+          "last_retained_key": [
+            -127020606721600,
+            -3504,
+            76793
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-neg-00"
+        },
+        {
+          "last_retained_key": [
+            -127003008878351,
+            -3502,
+            96175
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-neg-01"
+        },
+        {
+          "last_retained_key": [
+            -126953236716146,
+            -3499,
+            238351
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-neg-02"
+        },
+        {
+          "last_retained_key": [
+            -127026064132993,
+            -3506,
+            37297
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-neg-03"
+        },
+        {
+          "last_retained_key": [
+            -127014863898223,
+            -3505,
+            12101
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-neg-04"
+        },
+        {
+          "last_retained_key": [
+            -127068638349764,
+            -3503,
+            154933
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-neg-05"
+        },
+        {
+          "last_retained_key": [
+            -126988210223621,
+            -3503,
+            121055
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-neg-06"
+        },
+        {
+          "last_retained_key": [
+            -126975242042491,
+            -3503,
+            129427
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-neg-07"
+        },
+        {
+          "last_retained_key": [
+            -127024590072431,
+            -3504,
+            74629
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-neg-08"
+        },
+        {
+          "last_retained_key": [
+            -126977446958010,
+            -3503,
+            174361
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-neg-09"
+        },
+        {
+          "last_retained_key": [
+            -127001985475507,
+            -3502,
+            239641
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-neg-10"
+        },
+        {
+          "last_retained_key": [
+            -126998602695454,
+            -3504,
+            200241
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-neg-11"
+        },
+        {
+          "last_retained_key": [
+            -127093857431062,
+            -3503,
+            106945
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-neg-12"
+        },
+        {
+          "last_retained_key": [
+            -127065524029305,
+            -3507,
+            41247
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-neg-13"
+        },
+        {
+          "last_retained_key": [
+            -126998851548328,
+            -3503,
+            66433
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-neg-14"
+        },
+        {
+          "last_retained_key": [
+            -126979556388291,
+            -3505,
+            53249
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-neg-15"
+        },
+        {
+          "last_retained_key": [
+            -125826537076601,
+            -3503,
+            188830
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-pos-00"
+        },
+        {
+          "last_retained_key": [
+            -125809673957240,
+            -3502,
+            200666
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-pos-01"
+        },
+        {
+          "last_retained_key": [
+            -125818645557970,
+            -3501,
+            195674
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-pos-02"
+        },
+        {
+          "last_retained_key": [
+            -125769830842894,
+            -3504,
+            95108
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-pos-03"
+        },
+        {
+          "last_retained_key": [
+            -125831617112685,
+            -3500,
+            217706
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-pos-04"
+        },
+        {
+          "last_retained_key": [
+            -125886777546076,
+            -3504,
+            142784
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-pos-05"
+        },
+        {
+          "last_retained_key": [
+            -125800225312404,
+            -3502,
+            211194
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-pos-06"
+        },
+        {
+          "last_retained_key": [
+            -125891587003599,
+            -3501,
+            76768
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-pos-07"
+        },
+        {
+          "last_retained_key": [
+            -125809826286101,
+            -3505,
+            39102
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-pos-08"
+        },
+        {
+          "last_retained_key": [
+            -125803300511241,
+            -3499,
+            168518
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-pos-09"
+        },
+        {
+          "last_retained_key": [
+            -125841921663450,
+            -3501,
+            158852
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-pos-10"
+        },
+        {
+          "last_retained_key": [
+            -125822341779129,
+            -3502,
+            121340
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-pos-11"
+        },
+        {
+          "last_retained_key": [
+            -125811239569210,
+            -3502,
+            71284
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-pos-12"
+        },
+        {
+          "last_retained_key": [
+            -125874525933016,
+            -3502,
+            150428
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-pos-13"
+        },
+        {
+          "last_retained_key": [
+            -125836899349616,
+            -3502,
+            219654
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-pos-14"
+        },
+        {
+          "last_retained_key": [
+            -125822321905464,
+            -3504,
+            137476
+          ],
+          "selected_threshold_strictly_better": true,
+          "slice": "corrected-b3-a1-fibration-05-pos-15"
+        }
+      ],
+      "strict_retention_coverage": true
+    }
+  ],
+  "models_checked": 10240,
+  "schema": "elliptic-curves.higher-mw16-model-and-retention-audit.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_five_mw16_atlas_v1.json": "88a8c61c2722394bb812da601e24ea2c19e54361eef4b0fe9c7924e78c828801",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/controller/ledger.json": "dea4fdb2429f31a1f08ad36ac820a6155eb63289c690ec2513be4c2c224c7bc3",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-neg-00/retained.json": "446715b339d6c2129545f66eaeb6edc919505c9aa8447ce2459f8bc99258a9c3",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-neg-01/retained.json": "7bf974dcf44f581356bc18a0b2409dd015403c4e39cfee7dce3bc9bfb481badc",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-neg-02/retained.json": "e0f8633a7a59998d1e7736ae874ad3cac50d2c924c5a71b6f3b09815c1d384e2",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-neg-03/retained.json": "1f980179c37e81985b46017948254750e57e72b06a74ec4e22f26ab3612abbff",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-neg-04/retained.json": "2292e074d1af810ce6d1ace2f1ef16b2599540f67f05d7293f1e0d0a72ec9384",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-neg-05/retained.json": "b5a4bd7ee795635b4e5ab34b20f9a8be946d530bf8ed15c9a691e8c1f554f122",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-neg-06/retained.json": "1c0bf118b9ef8b017841c497a7ef077d0b4bb549f6d669c0c9fb5fbbf50ee51b",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-neg-07/retained.json": "316605928e9baf1c70b8497c6a4233f1734002397ed6a5fcace4e08fb85c4e6e",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-neg-08/retained.json": "d31d2c0a3a63937e1b55916246a2ff0a3e4e285f08fa2ba89fd4f562f5a16916",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-neg-09/retained.json": "2c93df5097af37aedf7368fe7ca97d9e03813f1eae312ac93aee4192bf83e26f",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-neg-10/retained.json": "24d7fd989f87ce79bc024e0b18c85fe00e7eaf5e8d8ae43902ed772f460d1372",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-neg-11/retained.json": "9849444c91be754c7639a6e58ca66c481f14a668c22c45d04a42bd4c5c050961",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-neg-12/retained.json": "7d8bee1df7775cab64761f4a392c0721ebcdddbbaa1bea38880a6893d4617337",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-neg-13/retained.json": "8855e00f8c9c91df3f5f73be2d41885b487cdf6fad77059fec558ec1cd1c6d34",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-neg-14/retained.json": "100fff6f3df3c0d96dcac0a88ae942cae49476c550e3e75d419ee45e0c7be860",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-neg-15/retained.json": "416e3dbedcfd4c6b8b94f661004178381e168cba8762417d5d0fff8715dd599b",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-pos-00/retained.json": "6e440ab1cc461f8aa10e8aa626316eb13fc5d78cc64699201f2c32a11545bb2f",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-pos-01/retained.json": "079aeccd0113deb5a4d46e8708b932178fa4cb55cb735d7574a78253fd8ace58",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-pos-02/retained.json": "640df2f99bef58689ee7e88e37e14fc159c7b07d7594a7a600f3c702a04f617e",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-pos-03/retained.json": "5e06a522c7f5ba5e727c960466cf68f119ce6f6ba662a19809d50963eb17bf53",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-pos-04/retained.json": "5eb0392d6910c823f75d8b82deb14ee3a225026478623eb3afc8acba2ef490d2",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-pos-05/retained.json": "64078c7295550a880d81925b3d1187b6d524fa034fe25a33428777cd2f86f217",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-pos-06/retained.json": "87529169542a43476bfd0172854670f06f3c12020d25d2717e4fd8b6727d6ea9",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-pos-07/retained.json": "c607f95a5fe1461ea47fd2e037b5a285adfb610fa7264c711aa50c1a97176ede",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-pos-08/retained.json": "2632a205d799fc9da82017995e2faabcb6738ce6f5adcc6e694e737c57d57248",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-pos-09/retained.json": "a74bf3e0b42d0e32290a41f1ab34a1fd076eb55ab4f5f63f4ddeabe577724e02",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-pos-10/retained.json": "098b902fbbbc99583031638c20fc9b02c45803fc4aafd3ded51c1f7fd19365c4",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-pos-11/retained.json": "34873dd84c65235c04053e38fc2de5d3bde10996e93fcb2381cc8152b63a3122",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-pos-12/retained.json": "3722a10197b3b7ad6fde10c22770212b452771e72e89f4d8f69e056b18a8b45b",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-pos-13/retained.json": "2c2cadb0ef5097c5ea3d4081edc620584dae3c4d54ca517cbc8f069c3c4691be",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-pos-14/retained.json": "fe2bbc07e7e9931938bcb3631acec11f96a1b08cc0082cd125b8ee27a49f2425",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-01-pos-15/retained.json": "cc68836b3e3cecc38e2da0a92eed415cd2d3c4a2b9f48c862feb030bdce0f93e",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-neg-00/retained.json": "e371d642925ac2e59c80f10014e62f13630c77bc73ee4b2b4b630fc30831c5de",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-neg-01/retained.json": "edf5fd5c60afa822306160d8cf7f3ad509b16e9d6cb0c1621da79fb9e8b841d4",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-neg-02/retained.json": "f7046d951c704eb83d7900b128cce91ce8a43c257ccbcc95e38c0ccd8b5c78bd",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-neg-03/retained.json": "69fb486a59a3c6f88a11e112f858cbf3718310a45a51c41c7bf19d1675efe6f6",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-neg-04/retained.json": "ff452b84c12512df11e00218090ad4075b1f4ae5484b31d08303486b9e33086c",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-neg-05/retained.json": "c400e000d012391e76fc96018eaa30cbfc82d07036434de58679a39a921d994c",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-neg-06/retained.json": "d6d325ce5a4045fb0b4149089231a2a90dc692ff619a2b95e9602166fead7b00",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-neg-07/retained.json": "bfbadb6b6d7a6962c228ab0c9250d2f050832b9345f4ca1babbb54a6ee5564d6",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-neg-08/retained.json": "2572e223cd54ae994c41a54b4101ec03b2d3abbbebf8d8252fcd68c46f183235",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-neg-09/retained.json": "1b1e0a9e8a7dcd628e99406fbad999a0e46b88a269395bdc92d61db7d7cbea6a",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-neg-10/retained.json": "ac8e2daa474689302da0a7b1533bf12a46ccb3680d9c72a0219c956633219954",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-neg-11/retained.json": "f22c806fb199277992c1bce8951bfc64dc50965571fa9883bb6c0f441921ab66",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-neg-12/retained.json": "14179a60bdcd6d578a5da98236d4a83938a69205fe1162792da7f54958a1017a",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-neg-13/retained.json": "b626e3128e75aa5d91bd6722f48ca1791ef1d5f41697155c3eeacd3adf8176b1",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-neg-14/retained.json": "18f7a6ece63474b04e9ad67e78550649d92a0d6a79d66e25ecbf142804d50f86",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-neg-15/retained.json": "fc15e31f6f83a6bc44e57e338c9a7b2675b3fbd3400756aeb113401f0a17abef",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-pos-00/retained.json": "e8d923305b43d63ed06fd5db4faca3fda9971cc17c04845faf709c2bd17dfa3f",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-pos-01/retained.json": "e2cb4a5667a76b92652692dfac6e678a76c84fd9de131d70a731ec0b9e316225",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-pos-02/retained.json": "5a1a8f99652d01e4b27f7977ad69af59cae01f66b8e62fba78e37726b66976fe",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-pos-03/retained.json": "be4698e358774e7c7b9928405053348423f05ffa9e9ce8ca5b00ee275d166f00",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-pos-04/retained.json": "818763c694ab3e5c3419e665ea3394113caea539cfbf721233b6c3671654cda6",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-pos-05/retained.json": "17d3ee8e05b27865fce6585f4d60eaea06033875753f0b8c5b932588de1b9737",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-pos-06/retained.json": "1541eeb31ea111265996213e70ddee35f92b171000123cb835e191299adf97d0",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-pos-07/retained.json": "d35e9ee7d7693c1ab55dfde93171aecf28aa130dd45308185e1b5c612569572e",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-pos-08/retained.json": "a6ef6a11039073f864afc6cff1286dd524cc26463ee067ef9526abddd2beefc8",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-pos-09/retained.json": "9f026fca5d58c7a44dd74d94515ff7b784162373a922f14ba4ee269f2e6cfeb1",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-pos-10/retained.json": "b52b8107fae54df5ebad2e1ebe0e942261296cd31d571a2f5da9d0cd383e5419",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-pos-11/retained.json": "7c158fb290e04ff301786a70cd07f58c4fbeec919a2bb8765367bed8e55975a0",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-pos-12/retained.json": "5f43c5abcf243475c7393544ff2f7bbc4130214c3e4712005f295f1b4bf7530d",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-pos-13/retained.json": "d32f839604327ce8a593184dd0d01df4ecfdc650253279491102523a041d15ac",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-pos-14/retained.json": "501adcbfd55b12e6105dc4a761c023fd4fed3dd7958b3c11981bbf8d5d0b6b17",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-02-pos-15/retained.json": "5a1a55a0241c00ed98075ed2558237d2c4dcce3d821db58f6687b3fc3269b03e",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-neg-00/retained.json": "eac70fc45fb21e0c20b301ed727c4d0a00c615702254b07c5532fdb02a2d6e71",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-neg-01/retained.json": "c6db79f7caa86dc3c79911cbd92d2ad84b470be8522a5e1b0395c79e9e351a46",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-neg-02/retained.json": "a535d9a6306c286dadf3e914b76d4e2f02b0305e5bf3cc91ec3ef97b279aca9e",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-neg-03/retained.json": "cdfed6aab1d9eba7ae352395c7619b75a1ffcc504e8fbb3eb4dd3b93ebe552df",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-neg-04/retained.json": "007cb91ec6b84f58de278f5a58096ce8f717c490f8d3c9900f4b7c3f68c6a273",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-neg-05/retained.json": "aeb3d88c82921aeffe47f64b3bc8b1ea9f34b7b23fa7a0284c9bf3e4d42d9eb0",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-neg-06/retained.json": "97929cc0e6986780ca398715f91cd3a0393da5fc00ec88471aea2744b6093ce7",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-neg-07/retained.json": "2d8d3dca33c85913ee225c2a4410ee4c79b7ee1e0a33d0ea74dd91a081bd7c8a",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-neg-08/retained.json": "81061827dd8d710889e7b4b29072cb0349610e92ea065e695a67109827584d9d",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-neg-09/retained.json": "8b0bff8f276bc2425c3d811607c05c19f0d688b73442bd010717739ab9c9ddf8",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-neg-10/retained.json": "fcd87aa10cd838013d4dddd9532ef64c20ad523bb9012e62150d5b43e05c8781",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-neg-11/retained.json": "03c117e1a43758954cd140febf9b7413de66d3d1abe038c27efb35d7d8eb4c78",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-neg-12/retained.json": "5cc8ca79e777f347ec48b0785297edfd9ed99bd5f4d76e0b2760b314b3278b47",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-neg-13/retained.json": "ac78e8ee4c57fe0727dacd012329aceb18a26f6caa61391d389955ebb35c5c39",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-neg-14/retained.json": "2ac2bec8f3c5a168035c40d79bffc18c21db5cc051aa1fe06d59bf07e147675d",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-neg-15/retained.json": "0bbb355e9b57ffdbf169dbfdb4de970625d2daf81a050f88b162548bac1e7548",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-pos-00/retained.json": "fde7dd298fea203a647a8ee44f5cd2de6e743421d952f3b83a39f71facea00df",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-pos-01/retained.json": "f16ebdf59a12a06e8b96238f7bd7927a243fe037907e26886162f9aaf82013e3",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-pos-02/retained.json": "16f8f3f8bc1f483cf37ed0866dfb197cac74e782a2e088d6c4627addb9f4edb9",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-pos-03/retained.json": "4c1d1aecce515d9b3ccb8dbdc123bce105e3e5cf047658ebb4571b6a0a3420b9",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-pos-04/retained.json": "dcd1e3a9f2bf21a3bfbd97d4ba7a8adf042a2ef5e41f798cc7985fd6990910d6",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-pos-05/retained.json": "bdd529012d4cad68598538b96666326606966aeed07575775ca4b6b9f73c3ce9",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-pos-06/retained.json": "de3b29b0b5c71bfdce8411ab6a10f79acacbb0b0b30fb81767117bc1f0330157",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-pos-07/retained.json": "b38933ef35c628178e664f71dbe0e11bd562cc91b33bb3403c560cdf2fd18651",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-pos-08/retained.json": "270335e929664648392e8cca83dd890d7f9be838a9cfce55953cc0926912c08f",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-pos-09/retained.json": "b61b020d86b256daaa99c24e94b95702aca859d413c21022c038674f65951777",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-pos-10/retained.json": "f02ffcd5dbad47165bfa3275b238e4c483f27d1ff737d64616d1cbbf6ff8da06",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-pos-11/retained.json": "d7aeee33ebab0ce0ce91d47464050034561effea821b51dfa1b9da745f48acda",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-pos-12/retained.json": "85e03c40ca9caa4bbacd540419cb96f82909cbe586fa0c22183ddbc803991c62",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-pos-13/retained.json": "1e049928433ff2ecfb50165335845fcd401eb335968deb05855488355874126d",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-pos-14/retained.json": "6b582647dfa3ffe6d07a1a964ade12a9b4c57762abc1534ee9e8dd60c72504ad",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-03-pos-15/retained.json": "af54dfd5a163c92cb220bc3bf6a098ad49a61cf49a97eff9f9d87a304569f956",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-neg-00/retained.json": "02c398e191071a87504375a18a270011a200dd6bd9fc389bcf835a870cddb137",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-neg-01/retained.json": "065bdaaed914edb824b1fe0a304e8b0b71d7456e367ddf4991187a53019e7f5d",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-neg-02/retained.json": "12baf1501056faa257d85f91a75e074b3a3a94ebb9c9112621b400aec6d99674",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-neg-03/retained.json": "760fa8b442473f01a617d7a5db3bc69157bcb5806a1916e82a9512219214c2e8",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-neg-04/retained.json": "b918abc38264e909a331cf786e0bfbe350ccabd4b33fe92b7becc62a725ddd36",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-neg-05/retained.json": "66f29e191dc6147a958c3b0ebe316f43ff58ad71133e0474b5c04face3b2e0e5",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-neg-06/retained.json": "cacf504e1e7b00eeeeaaf0e9702c07833fff36cf4e6b51624e49e4b390f89dd3",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-neg-07/retained.json": "c482980e687e8993b8e53e92eae2026403ed3ffbb592f3fca85bd2d3412cb73b",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-neg-08/retained.json": "9f2deca471e6b60737d72686660561e09dfde3af2d80fff1b141f791701530c7",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-neg-09/retained.json": "3abb8daa2f3117e2fdb0ae34e45fcf9910ac7809fdc5ab4a44a7c5be5e8ece61",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-neg-10/retained.json": "bc219d496106a0c971c445a1e892ed7c4332a8da58da83dd5eafb921a0f4c041",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-neg-11/retained.json": "a6525e755a9a5951ace194c873265d639093212f34fcc96bf37299824450a4d7",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-neg-12/retained.json": "37d4926efb1eec5335c6890e3508323dafec92a39774274dd0250c7f7a092d94",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-neg-13/retained.json": "55026e411e30bff378e5941028effd21ca7c14a32195869e8d5c2ee69a89c8b1",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-neg-14/retained.json": "42f157bd3d0a9a6d7518e873f43aa78a3c62d09b48e4a0be524ec1a043d45458",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-neg-15/retained.json": "c56d07951f96e3f44acc7ff1e68f9f7e32312f56c6a4bd5a56d8385b33ee0173",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-pos-00/retained.json": "ed8fee5975f135054c5c6ecf6b7946396b133308baa08315171833b0b5144f32",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-pos-01/retained.json": "0a1acef15953b762130b8240fdb4fed5e719fb2139fd1cec4923489a328d7152",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-pos-02/retained.json": "281ad471b039f522245854ca821a6f7f77ca8b36f670fc6aa992178869540099",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-pos-03/retained.json": "e243a5ead39071bf15634edc5611a92e15cd0e6c02cd2454e6ffc01aa0a70a3a",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-pos-04/retained.json": "ea303d1a1cbcfb11349a1592328047c1a4d6f4a19e3f89c2833bc4c653b21a1a",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-pos-05/retained.json": "ee11d06f509f347d2f025c877e1155ed5ef93918148ef07da91809b6ce14210e",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-pos-06/retained.json": "3c82da393296ef40e26e101837a03d3233365d4c219aede85169ab8164cfc7ee",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-pos-07/retained.json": "ed55429b0b00288448cae2102e50d47a8c3e7b7bb962677e8a0daf995bcfc5ab",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-pos-08/retained.json": "9e8eb6225820e849448c2246e5e33e6fd8a4862d2da5e431192f666a32229f6f",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-pos-09/retained.json": "6cd77dd3a3d31cc55a9ab4a2116668dccc0b1cdf54246fec1057c11e6b35a7a8",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-pos-10/retained.json": "aa95a6a863acfe34c63a5610b0f951266609d04c401b2781b840ec18946d3dec",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-pos-11/retained.json": "9b50eefa3d9d9b1279f8aef663589b6b541a76761c89d7593a0fe875157cb002",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-pos-12/retained.json": "8ff9c4125248537d6e4b360e101bc6ff8d6a5d8b8d820cff698fa851f8f1a458",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-pos-13/retained.json": "cb9b4d7861973a19192646526b5b342535f0da783c99c92f4548c5a738bed4a0",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-pos-14/retained.json": "06829e4cc1a8fd5fcb01f8a4f0061a048d44bf7308ee669119760c9219030d7f",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-04-pos-15/retained.json": "583a6b51ae0ea18962572169e83dcdcd359e22c02ab7cd9034b834bfc9bcdeb7",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-neg-00/retained.json": "4e74d3d16a230a0c64950cbb2957bd8cdfb9b4e974bea0c0769b9b03d99ba102",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-neg-01/retained.json": "21ec8d46764f2d30879de0242ee1b1e25d9d7a9a848bce776c8dfde824ab3e9d",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-neg-02/retained.json": "47d7de3eb7d5809144e552f5547a8d623a513e73876378e80f446b2cc9d8ad54",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-neg-03/retained.json": "82c580f96e7c0e85f2de0e0ce9c693962da5ed910b17175fa802df48e6f7a451",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-neg-04/retained.json": "6bd6eb731eac6efb4cdbb377fec16a70c3ae5c0a80b1681a5a5dc50402ce6f88",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-neg-05/retained.json": "6281c8f8b0e109dfcd82acbea72b01ff60dfbee04a2f95bb4491608548e5eb30",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-neg-06/retained.json": "059088d9341281ac80215f9d3b0586ec78fa6800249ae01ef7b3ba2d1104fdc9",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-neg-07/retained.json": "e6a581b7b247d6c3b9382afc9361c3c6743f24877b558bc7e0e7ba74fa850a11",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-neg-08/retained.json": "0faab5d15b0aa4463e4500d3342d6b184b4e8941d25084d0835c1f5882e69932",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-neg-09/retained.json": "cc0f85031a255bb0b4a0ba9b8697ef088a08b5d37a6455439b8761df5f251e75",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-neg-10/retained.json": "0fb53c35f7ca6e3b10415c6313d06e0ee121fd81052fd2682840720f3c0c1423",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-neg-11/retained.json": "4643a2020612b20d90641c5eaa7f8477c000a6765810da3085263245195a8e09",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-neg-12/retained.json": "7ba319e53707768ea0a37b3ec6f052f6a4736be4c27c8c451608a9e539c1169a",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-neg-13/retained.json": "51418e45836b7f0b946ebdb873aa63fcbeed9f80c2cec1aa0249e8a9d37cdeac",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-neg-14/retained.json": "57e42d1ccdc238b33a5f52175653e6329d6614d73b97b59874a209b5dd4ff49a",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-neg-15/retained.json": "1b7b5594dbbc87d987649cc5988b24ecd4cd496108d210d08732de689e936159",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-pos-00/retained.json": "15a7f548fb169dae703aa071c5d91197062e5ab748409274de3da0f6d92612fc",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-pos-01/retained.json": "95a7d7b87ecd252617329040990ee0b6c1dc5f32825edd34a132dc7f8320895e",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-pos-02/retained.json": "c31e86f9d342b827448119c2d9addbdc9961ae13e9c5efaf27984735db0a146c",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-pos-03/retained.json": "5a6bdf7f7e983e75ad21091fa077e44aee1ca0193388f1114667c8430f6a4238",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-pos-04/retained.json": "3637bea9fade6bbae26d6b1e734107f7fba1a35e67ffad16425fbebd5c83454f",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-pos-05/retained.json": "5af751df596cc45db34f577334e79b05de41cb571ec0dfcf8047dfc03f92285d",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-pos-06/retained.json": "dddaca00e8d740d5e1338e3bf3eb2e417948267bea4c3c07e7e5b872928afeb8",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-pos-07/retained.json": "2c4e29d86f44e6ad21f8aaa03f1e65d30d6776cc455d63ffd15a3a9b08cdf4f6",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-pos-08/retained.json": "ab56b8640dfe83f318a2583bebe9e782a016e3812a64674dbf97de0cf7c10c3b",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-pos-09/retained.json": "f884d3d6f97c564c127be8a53d6ed75e8202487d9d662cc40d9b47d0b82d184d",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-pos-10/retained.json": "5bc424cb676523a4f9791052e2ee399215df22b9404594c76a60ee08c8ac8174",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-pos-11/retained.json": "ccf10b78a5cf49672f9ccd818da44f0b4a962072abe887d9236eefc7115d3425",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-pos-12/retained.json": "ad27eff5334006dbbbf5c8b266e7f81a7cd0801bfb79aa864344afae552489f1",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-pos-13/retained.json": "7abecf9c2d55fbe2ad38b7052f1c1d70df4e06529f921c36dfd3cf0b6e3e4791",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-pos-14/retained.json": "e921b5fbdf63cc241dc94a8c29218ea40e5a00efe6942b100dfa8231741b3bf8",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b2-a1-fibration-05-pos-15/retained.json": "02f6c988c221e77252dd59105796bf37ec946bb185d39f1bde028b085b31a50d",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-neg-00/retained.json": "6929537a03a9a543cf040b490deaf1ea107c41785b32f92fcfeeded1af76042b",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-neg-01/retained.json": "835dbaa92f221e5db8d18aa9a6eadefe2da9b7367889719a8ad1885e519308bd",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-neg-02/retained.json": "ba9bbc4ab61e40c65bd7a8a3d48c237155afe429c518336bace8c691397ec290",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-neg-03/retained.json": "084d7613dcada003b9ff2c28ddeef877d47fdd4cef22acd8aaf88aeed206bde0",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-neg-04/retained.json": "9c5ef1e7a5edae614ac7c4a21241064d01d07326867056ea68fed15347474f0b",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-neg-05/retained.json": "4bea8749a9f5410b743c451861553a68638f382e1f681ac99ba7abd0ba7c0440",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-neg-06/retained.json": "53afd5770356f0417e6ab91de115c7b58f2b678b9b39c555d0c3613b2b953c4f",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-neg-07/retained.json": "78f33d606af4e2b3dd98b98fb4709e6340096a8d96a0b03db4eff666f95d07ca",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-neg-08/retained.json": "5541b05198b0cd4da52872b606139b16192938bc7402e3b3e73551ce534ac173",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-neg-09/retained.json": "3aafe3d017cf73e845458acde903df6b7656b18fc89f45ccc3e3d97beccec2a7",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-neg-10/retained.json": "abe283a681e6fd91b3915a8109952b74e0c6219423abab46292a2346d939b543",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-neg-11/retained.json": "d1605e2312c43b3f5888d3ce48a66b2a56c045494711e802a4e10b44674e8e57",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-neg-12/retained.json": "cd62990d398ae7624942669f1ae7613fc9eccac8d529bffbf8bcec08be04d0cc",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-neg-13/retained.json": "d44cb33b9b817a978233befd29a3c84b436b3922f2bf80e172fbaacc95a0a503",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-neg-14/retained.json": "96711cf95adfdbe8b35ded445b21c6678a8372d244712d25b4914f3ad2ba58df",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-neg-15/retained.json": "692ccb51c1567cacc68cd58c9b3f60f142158742e87b35364d0717e9e565d43d",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-pos-00/retained.json": "258c62b1db22797e12186648c6f6a3a5a78290218cdd595fca69153ca5bd0865",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-pos-01/retained.json": "43a7a9678ed2fb05e4680d5ee694567a362331059bfe9a708f2e1b16f815a71b",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-pos-02/retained.json": "aa96a556fc122ddd9fa01a98298af6657fa2ba911e2796f5f5805008686b9c9f",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-pos-03/retained.json": "56b28b90dc5a847c6f5bd7ff5586551042c06f5691d4fcd7faf45e0cdd561df0",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-pos-04/retained.json": "2539b8a89cded62c588f83c5de09b012c9898fdeed8850e31bfaf5d1f10e4448",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-pos-05/retained.json": "122fa34ea93ca191afd4dc110beb40d9db1e353d2f2732e20b6c921e5cfc7d83",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-pos-06/retained.json": "213668a0d78c5561af12b8594c617e694a82edb052de546de265253deae92b08",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-pos-07/retained.json": "4d0f71b2c4f7840ac849c2b570220ece0b0941f1099a473be82706da330d7b9f",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-pos-08/retained.json": "a74db169e7e428be791156e3a3073fd6917d7e8a834fa85020419877afad3dfa",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-pos-09/retained.json": "985bf70efc95cbab0fdf1b7b1d6051954fc9d1bc04d02a69f36e390dca3f999a",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-pos-10/retained.json": "eda35fab532589aaa7406ce70eb3810a0f6be1feb1ee9c82c1f612d5948aad72",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-pos-11/retained.json": "e85f09cabbdcd06221198fbc19455234d85e6c29266a782ca07fe0fa2636276c",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-pos-12/retained.json": "d86236f40b04fc99672d2781b190b6cc444015d679270dcbaf961220a5b5e74d",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-pos-13/retained.json": "b2b52f1a52a330ebb4f1e5dae9cb317a8f1f5c3235a7db529d03ad5570eceaee",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-pos-14/retained.json": "5d24e5a676deafd7a3a3c66312203dedcc5d525dce83d21a76fa6a0fbfaeaad0",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-01-pos-15/retained.json": "6a207f72f9d074a7deae763c0f49e64d900896a1bf5ae2c631a3df4ccf74fde6",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-neg-00/retained.json": "33d0b33ced40c84deda10d98c4897e2ddca475e9a82c1692daf30db2996c622a",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-neg-01/retained.json": "f32ccf033c8dbebb8f070a6d5f1be7425418f89b5cd564c376b8c89af590800e",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-neg-02/retained.json": "665231215134352b5eefb87881c10e1b576630c403f212680faaa01e5e4acc1c",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-neg-03/retained.json": "a7ae61baee4bf7474bcab53907aebdf4c2534c5a03501197722ec58cc6d96e85",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-neg-04/retained.json": "20cf7d400833c20b77adc7505b727e5ad824b68368f4458fbd18b0e60e0795c2",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-neg-05/retained.json": "5eaf13af167e46eab9cfe5b72e4ee5fc2e597e467814fdb0a562f59251f7dcd1",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-neg-06/retained.json": "ce2df658ba0b6ec129b99104a3e363f9dc75267606670bb12c0950be7ec6975d",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-neg-07/retained.json": "92b138ea5aeef4d38e6c63cdf054d8a6410e3f221f8aacf2ab8cef110f970485",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-neg-08/retained.json": "e8a881ce742604afe96fa52f2ee471663671508bf93741636a2aa5bd86c14b22",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-neg-09/retained.json": "28229d814d41d57d985931c74e155101ee0da483004ed38aaec0e00767bb3703",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-neg-10/retained.json": "1a816dea0c88a7a7db8712337edde5d3f93291800b54b5cc803c787a70287ff9",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-neg-11/retained.json": "6ddfd2e726ca6cd65024ad034c23eb06d0d0438e7a00bed51a31a9b07a0a45ce",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-neg-12/retained.json": "5f98cbe9c620618cf3968756b21db6ca15d6d6d1380e5517af44bdb7812506e5",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-neg-13/retained.json": "a187fa38ff6bd2dc77e98e84798d3d31c1d7cd2e612ec82a1fc0262d16c82e3a",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-neg-14/retained.json": "e8d48613c299840a2e16b14eefd1de395676fbb0f93f09b77ad359a32a6140da",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-neg-15/retained.json": "b6407a04de9485f8991acf3112afa7e8a6d6136b1c523ec744d0caea2e8acaf5",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-pos-00/retained.json": "ad8339abb5cff39a4ab3d6d518d90b01e7907091704b59e3b078523fd99cbcf0",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-pos-01/retained.json": "1fdba81c9576e7e93f84271b01567daf921a127a9a921ec9744ead465389a76f",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-pos-02/retained.json": "b7874dd60770799a04cd0da27ee6d4e75445c41f49a95299f59f03dd412d2939",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-pos-03/retained.json": "b0d8fa12bbe889678409f454c4c813d4b06e72463f77f7b040dcba76e7c9a5d9",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-pos-04/retained.json": "05d6fc8c0ece56c1ea74426d207e5f5aac7b1b9d6ff65ab326fea48a757a657f",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-pos-05/retained.json": "129d780f99004c261f3dc30cde02663d6e8a5c1d0740230e32f7bc5c2563491f",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-pos-06/retained.json": "0b672d722616bba13b06d98859a6f8c6cc6ca28fd5783b4b8c62cdcdc3996a62",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-pos-07/retained.json": "dde0acfbb95a2274d5f716fdd03d078da7994f9f5fbc8dd9c75edf8db9c0a6c4",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-pos-08/retained.json": "15ecfbc60f642b43c1ff57a31bf5ca72b1a607ad742b1dc0a3a66a636eb4b48e",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-pos-09/retained.json": "660d77a6d3b5a73401811b295f8898750b604f8c4532f4ed54cd31671ca52099",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-pos-10/retained.json": "23a6f85e6fc0e47238bade83763f4f3dcd62ca560dd226f59f42e91d865111ae",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-pos-11/retained.json": "8a65a65069bf29d9d5572bc10a102775f8297a7dd5235b3a94250b248af278e4",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-pos-12/retained.json": "b0af76807e2153116ce4752452641c41d0f9e05236440c4e69cf4823f40d1d26",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-pos-13/retained.json": "20b4a1b392f46dbea4a8cfd50ccaed84126b1c0f4c023f1ed27c83ffd71b2786",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-pos-14/retained.json": "e3955e42d00b4ccb1f3f362017cfd44534388ce576a29ac48d8dcf83f383ec18",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-02-pos-15/retained.json": "911d3949eb9733cbff0b2b5f3065088f3df12a04e5cc32d6fb27aa514d6a2c15",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-neg-00/retained.json": "201edc5e2301b90c3a17c6e13dd91695985ab3b97a99020bb444516d46f8ed79",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-neg-01/retained.json": "d70a964276aa86091284cd3723f9e0047fbeae1ea04609ebc5cc03f6dafcb419",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-neg-02/retained.json": "29dc8b1caccb1eaeb15fa0063c62e97f0ae0f1517647eac812ff22953b3c2c73",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-neg-03/retained.json": "ab67cfa944b84e2c91a195f043a983031ded02b8cef633874f10507df77c9ef9",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-neg-04/retained.json": "eea46f535b224ecc951901f66b6ca5d1286b1975ab885e814f955f353ea6114f",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-neg-05/retained.json": "a1749b88755d640a4c1169fde223d5c02b94a408d4c5ff3d63bde6aa2e88c6b3",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-neg-06/retained.json": "3d069c80d64d59345f472460e677f43f54054ec5124d5c2043f4b057c9342d70",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-neg-07/retained.json": "f9312251073834de744607ca4762829280736c306d5747cf56cd49ba9656fe22",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-neg-08/retained.json": "685d9a890516c43a0c1ac29f62f6987f6fcc36a69fb34abf3dcee9ab2c0381cd",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-neg-09/retained.json": "cca1fb4098fd5ef40e1ef1e2c99627f313f8858390d16ebf73dcfdade2b85642",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-neg-10/retained.json": "d0461aec5a20804526c261c3d98cd5b94f8a483385fc9c4e5b64f629cd3971f2",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-neg-11/retained.json": "dd7a4aa0eb86dd01d67b32b0c161afd74024548cae52e101c4f838b8035bdbdf",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-neg-12/retained.json": "701f8845c42516e39c49324237a195c9607da9a63bea8723def81246d893ea3b",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-neg-13/retained.json": "e9eba0342d1eb02a52760ed1c7fc09d867801f0ec6faa8406359fb17ebf65de5",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-neg-14/retained.json": "6c5aee670f7de67f9c8388a7eb6ea9cfc6cb3cc173b3f234e5f0b04e8a3aaba0",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-neg-15/retained.json": "4b35914f2ea780574cec0eb2389a019574aeae77e84cb53e194cfa8eaa5aba02",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-pos-00/retained.json": "2f92468e19683f5bb062b2ef513d91a756e5bda1cbb0636683d35a592c5bd725",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-pos-01/retained.json": "1768783b5608616416235c381ea413eac0f853a082980bd260f14bea890486bc",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-pos-02/retained.json": "18e1b85f82641f885f111f155ec3519316423fb1d30a44161d75b6786168f86b",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-pos-03/retained.json": "71e6d46ba8ff9cd147b0cbd8496ad8ac4e6147e821e7de0461afb09f9b554891",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-pos-04/retained.json": "aa3ea3ae33779d8ecabc3b135d6de057e7d36af2c9f41d3a87f56d84f81e7415",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-pos-05/retained.json": "c63114d9c10aeeaefd7c01a7f666141e4e8575862c0db2252b8c375148591510",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-pos-06/retained.json": "00d60d3e90dca4bdcff928eeb6243b83d3700acab65017fcc1516b2bec25de74",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-pos-07/retained.json": "022fdacbe6cc884259e38238ba4c3f10bada9b72f3b7cf84031090ae015e464e",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-pos-08/retained.json": "74fb46f7572f9be96744b1d75f11d6fe6260dc75a0039c965aa17a401314d4ce",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-pos-09/retained.json": "e1565f4c2ba452f42bd9dcca4069c619e5bc9a248b0f578b5b752154c2320d45",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-pos-10/retained.json": "2cd78a3db3368691d5b9ec7e1f25edd372c260e98188ba07324aa24d67bb8e97",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-pos-11/retained.json": "2a16c4f3f44e40b253d1721fc5530cd0413ff45378b912036dd6c0003fb0e50b",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-pos-12/retained.json": "735295d8994271e8393cb7fe28048d72ecd3080eabfd9680b36e04118bcc3cb7",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-pos-13/retained.json": "83927acdc3e608bf845281214d1b9dc4e53c474b3a222c85af2158d33452879e",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-pos-14/retained.json": "38392c73e1de68eb17b0ec9b6774266ece645b4385ee1962399532438bd90f18",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-03-pos-15/retained.json": "2b23225ea2f2599568260c7c26a40047050b2d23f3053f0a7537ef43b2e42944",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-neg-00/retained.json": "4b1e617d3ee227eb2cefb5993562171dfc13552f8fce44c540d8ef011647697e",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-neg-01/retained.json": "496e70e9cd490fc2864e316dfb5485b5ca7e3758918df088a7b2aab9b8b88c39",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-neg-02/retained.json": "2315e30c933cf5ff60a6066badbd6d970a7445da9edaf770807d987c2bb99144",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-neg-03/retained.json": "6f50e4d552a5f2331cf5ae45363e1eafdec32705a2a62cc979eb2283f4d9a319",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-neg-04/retained.json": "54ab4e67797570ab5bceab588b8a164bb13a354f218eadb912a1a5c25bdea1ab",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-neg-05/retained.json": "965a87f3bea7e1f87d2d1fcf763b6806624c92c6281455fe34f46cca31900e12",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-neg-06/retained.json": "88099e7e6b7f1ec3e858950ace6f3a2af8e8630e400d84e219ed4a25eb195b80",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-neg-07/retained.json": "8fb4f67987c760369ece59374af2bc0daf6f3eb853095f6074f6dd6d893953a2",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-neg-08/retained.json": "b0f9b70f1239b21f6e6e0987c03508fefa7cc0fe4611530da76ff65d3cd47054",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-neg-09/retained.json": "678eb086c605f0c4960d0668ea89f7fcbd9ed6287b6a507669af00e3be07c1f1",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-neg-10/retained.json": "0689d1becf4310d7b012e6045d786c3d84d40be798cac05b966924238760f93c",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-neg-11/retained.json": "483bdf500fc75ef91f4f210b2b51dfda12fcfae133018db7926f1045d14d2e74",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-neg-12/retained.json": "4fed452ab65853332cd4e48205f39dc056f952487025378d38b3af1552adf79a",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-neg-13/retained.json": "ce73eaef920b882e635108d3bdbb0df9c965c9a427a245f67bf105d637357baf",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-neg-14/retained.json": "c52da4db49d57b8d778f2101206389cfda33cbfd2a50c1f2b6c7f5d314ad48d6",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-neg-15/retained.json": "61a78599f8f29501a62e38c4e50330ac6a6f628d41d564a91cfc4fabb63cd28d",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-pos-00/retained.json": "13cead5802a52415b81f96f77a629231463b178585e11dd2594d61c729f3417b",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-pos-01/retained.json": "5cfb5a4aab0bcc02cb2df9fee98e6937d896314d4757e451f844eb21b2c81e8e",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-pos-02/retained.json": "a077b008dd79285c500de3b02f3f87520217ba3a05ab3d179e774a4f3fdb4bfd",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-pos-03/retained.json": "90a576402e86dfa6c94ef58bab5d461466f372273612ff41c5221c012edf66d2",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-pos-04/retained.json": "b0c1c4cd3c3e0a7af869d3872094eae083eeb67cb9130d49d061293b6265fede",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-pos-05/retained.json": "68fe09f02515e1de4c6732f1c319b1ff7504a0380f8e662db124415c9aa171ee",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-pos-06/retained.json": "328f26a601a141be3d173cd5b944bb08c34898e7b19c2639924083650bcf6a21",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-pos-07/retained.json": "c8be2077603d7ca94c7e0c3269ce6298d858bc4550fd7900f15f93ec79837311",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-pos-08/retained.json": "4130a37d9b293b5a2d18dd04e1b72eabdb2a9673dd2fb9ae749384a738cbb44a",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-pos-09/retained.json": "51d488158977c52f193c2ce623452dd5ef93788753cda15ea4bc903184162327",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-pos-10/retained.json": "fc71b811e85e1281313690279442de0a4c50933a1c279d158dcd42552e25e7ef",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-pos-11/retained.json": "326110a23b7ca4ac2c8083eee054602507f198ea372b8271d9b000cbaf1a90ce",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-pos-12/retained.json": "17992b7f15a71d41222ec59ecb5e43899337014a968983ed576b469a5bee48fb",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-pos-13/retained.json": "52e54aff22399c7f40f9f48b8d2776acb7f305f516249feaf52738c23527883d",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-pos-14/retained.json": "f69faeeb17da5a374da57c6ac1b8854ed020ac1fbbb135d403ecc3446b334385",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-04-pos-15/retained.json": "03a2e6a56f29926bca064facba2718cd9ae7519dc9b51d662bd1d161689254a8",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-neg-00/retained.json": "e850baa85018063bf1ec4c9100082eec8657a32c5e76ca30255a64e4db8f11c1",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-neg-01/retained.json": "05c0fa72f9c38d03367c7113786d66839c234082af584a954aae4b1b4e44bf0b",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-neg-02/retained.json": "622ab9bcd2d65eb6727b9dfb0abd3d5c4c57c39c975e7b3d1526910636a36724",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-neg-03/retained.json": "834b491e637f9ddb0d7ae8bb5c593e9edbee3f7d43636a559d9c66d8d0b84c8e",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-neg-04/retained.json": "5227789d09797471922d39e9514c8f9981d58025bbece387b9b18a06bdc3946c",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-neg-05/retained.json": "ccd7fa7bd830cc0e41a395f482b983657ae5c31ee1e51ebf9853e6529d8fadf7",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-neg-06/retained.json": "0863ed39e27d45901101d406ced0df249fdfcaf869e721cf24213448338f7bb4",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-neg-07/retained.json": "1db53c1ce242ae9e432472ea9a20dd8b772938cb4acc9d985b599fbfba2a81d1",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-neg-08/retained.json": "cac1a4535f1c3a87fa8ff2e48e81bba68756191a9ac9f8eb115dc40f04cdbf18",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-neg-09/retained.json": "feba2cd59ed70a1c0218e2b7fb3870d1d223faca7feac405b2c03359b5e5126e",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-neg-10/retained.json": "3f9d4adfeed0b06928a0d2025c2ef806af84b83b5f8acf8321ef6e6939e77a8e",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-neg-11/retained.json": "da0c86e8e398b073c50d933558cf4dd267a98688e3e3ab5a724786c3bd2e7b81",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-neg-12/retained.json": "e528060024e3a7d89f2e6376d3aa7b4de31a180ec7e15215628514e61d502ab8",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-neg-13/retained.json": "9d4b89c9df5b2cd64eda6ffa2976b7dd259399a71f3d089ef13e8d6c94e132c8",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-neg-14/retained.json": "6d1909d2cd07d1fdb3542869b707d3d3b6e2d22049c691407bc8947d0ac52ceb",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-neg-15/retained.json": "83757b0ca78323fd740735056fcbefed6b6629cf6a75d5504501a105b9b068d1",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-pos-00/retained.json": "1f0fae85e7116212af646641f9783c8e212f5192fbf5234b63f421c2b64108a2",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-pos-01/retained.json": "2872d26b87452606d432c9768549f5a0c7b4d6b2fa1932632a4edda186d54553",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-pos-02/retained.json": "8bb11616840361c2fd2bafe8f57e928cf009828445e3576645804a92eb3fe0d5",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-pos-03/retained.json": "78423954acad717c7df10c28f28e9d8e2a80c748b1c880053b88bccffc718579",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-pos-04/retained.json": "adab8ae03be4600dc39b104cd08185599e0de745081504594e8170108d90ce3d",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-pos-05/retained.json": "e4edd83bdf6dad8f5ce0a38e569b045aa91c622777aa98bc7b0118b0b615932f",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-pos-06/retained.json": "04f270dee4ace772414b1f756a60af30f6a669909fda0f1bd788f83c16d55389",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-pos-07/retained.json": "2d2f13b42eb53a67d27d51e11f01276d6761e612fd69b79126d1c2c60d9fff50",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-pos-08/retained.json": "bd155ed22be43d5c013c6082ec6e69cb12d291d821c4b51b38d20b514a95db1c",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-pos-09/retained.json": "52f499ecd4b60f40deb7182caf2c61e97411add5a7f686fdeb9fefc32c060b42",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-pos-10/retained.json": "06d06d9a88aa8d7d9dc3a5d956b777ef752e081284bdbb5285cdc1d777e89603",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-pos-11/retained.json": "4916a819185d6f0d0bb45b3d35f2fe9c2111852f3dc591421808b1de8c927766",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-pos-12/retained.json": "4b519e0120311a5bc76a6b701901142ae62355ced2402e83ca19dc27d6563fb8",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-pos-13/retained.json": "c3aeb7872f744514f984af7062aa6f212ca894d31fc9ede240c67b34d665cb4c",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-pos-14/retained.json": "439eef62fb74b81373649fc80e34f9ce3b8073cf73a2e55299211f1446fa8474",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/corrected-b3-a1-fibration-05-pos-15/retained.json": "f387f09dff023d363fd6832aebd76e23aadfb59bd9a16c069791ea1715994a4d",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/protocol.json": "4fd98835e7de181a220bdcbf027ba0e339b0496b4a1f86d009c2a007ece92e93",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/replay.json": "78d6eaced1f73a2626785764f8225d50b65dc5d6b0a4137455841297ef30f466",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-annuli-v1/result.json": "9f6d3b6926b9b8710318f4f3b14c74498ae906c272e1c9e28c89ba94ceca6945",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-scores-v1/protocol.json": "d48a64ebc5c2ef6af392798c5aaa6d0d31908c5b969e078e5f62b9c8003da853",
+    "elliptic-curves/cas/audit_corrected_mw16_score_coverage.py": "35af52a57a61a54e7be9019265fed0bafb6b52b7b10adcd6984b39263a751315",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9"
+  },
+  "status": "PASS",
+  "strict_retention_coverage": true,
+  "variant": "corrected"
+}

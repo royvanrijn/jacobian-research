@@ -1,0 +1,139 @@
+{
+  "files": [
+    {
+      "bytes": 3426,
+      "path": "artifacts/generated-results/elliptic-curves/class-span-v1/complex_quartic.certificate.json",
+      "sha256": "62f7673741584d4d75e5da339436be04780f495aa2740b50764b62885e5be0e2"
+    },
+    {
+      "bytes": 27084,
+      "path": "artifacts/generated-results/elliptic-curves/class-span-v1/complex_quartic.input.json",
+      "sha256": "67a00fec1188c57415e26e1ebf917616f062c702a06be21345726bfdcfe1c184"
+    },
+    {
+      "bytes": 3737,
+      "path": "artifacts/generated-results/elliptic-curves/class-span-v1/imaginary_c2.certificate.json",
+      "sha256": "25c8d4ee26555243dee25af29420bdeb82249b89a88ad4c132be2506e58b8d73"
+    },
+    {
+      "bytes": 10814,
+      "path": "artifacts/generated-results/elliptic-curves/class-span-v1/imaginary_c2.input.json",
+      "sha256": "d4976e34ff55017803f449aa9b438861659183a8704eb014c543c70dab4dac6a"
+    },
+    {
+      "bytes": 3702,
+      "path": "artifacts/generated-results/elliptic-curves/class-span-v1/imaginary_c2_squared.certificate.json",
+      "sha256": "c5a09b5db7617b8f9f1e576910d8dbd4c06af4af2af042eca931324c940216a4"
+    },
+    {
+      "bytes": 11047,
+      "path": "artifacts/generated-results/elliptic-curves/class-span-v1/imaginary_c2_squared.input.json",
+      "sha256": "21e0202c4535954b4a184b93176e247a49b40ea864dfa1170db56a6c0380ae9c"
+    },
+    {
+      "bytes": 3737,
+      "path": "artifacts/generated-results/elliptic-curves/class-span-v1/imaginary_trivial.certificate.json",
+      "sha256": "571b612e0023b16ce4adf956ad2194370f3accfb41ec68cbfc547ac534ccaf16"
+    },
+    {
+      "bytes": 10243,
+      "path": "artifacts/generated-results/elliptic-curves/class-span-v1/imaginary_trivial.input.json",
+      "sha256": "8133c1ce705effcc7143af2ebd186f77155dbedc3ba75c83abe004242ec1a342"
+    },
+    {
+      "bytes": 3947,
+      "path": "artifacts/generated-results/elliptic-curves/class-span-v1/mixed_cubic.certificate.json",
+      "sha256": "0d47c9046a923e24812f5d7f7b94917fb1d2456bfe60551c6338119540de40f1"
+    },
+    {
+      "bytes": 14996,
+      "path": "artifacts/generated-results/elliptic-curves/class-span-v1/mixed_cubic.input.json",
+      "sha256": "abfc86d4b75387e04c5be5c53905bbb9be6437cce532c5ce3ea233eaea735483"
+    },
+    {
+      "bytes": 3842,
+      "path": "artifacts/generated-results/elliptic-curves/class-span-v1/real_cubic.certificate.json",
+      "sha256": "db4b94dbd243dcb5cffece10126dec030c3fe0529ab71bc9770f3827a25279a9"
+    },
+    {
+      "bytes": 14223,
+      "path": "artifacts/generated-results/elliptic-curves/class-span-v1/real_cubic.input.json",
+      "sha256": "aa7dfaebc6fae54ef2f64fc5a12a7e33eaad6f34d82a3269e1f8d0452dc0c195"
+    },
+    {
+      "bytes": 3702,
+      "path": "artifacts/generated-results/elliptic-curves/class-span-v1/real_quadratic.certificate.json",
+      "sha256": "84250ef43b2e46d3a2f0cc70370bb306ebe9786108b3083e659c2f37d91b092a"
+    },
+    {
+      "bytes": 10002,
+      "path": "artifacts/generated-results/elliptic-curves/class-span-v1/real_quadratic.input.json",
+      "sha256": "0c8f4fc93356370cfd99bc42b894db2407b559c0b2ea5c82fbd83af9ff79bda0"
+    },
+    {
+      "bytes": 27951,
+      "path": "artifacts/generated-results/elliptic-curves/class_span_machinery_v1.json",
+      "sha256": "e8e65f3b806d4eb213747e984ea5ea6a2e6f9f88527f61292ce8483ac4c4b19d"
+    },
+    {
+      "bytes": 2327,
+      "path": "artifacts/local/elliptic-curves/class-span-machinery-v1/protocol.json",
+      "sha256": "bd9907094c29748e2ae2582b5f8ab7daebbb771a1db60334d413a3954edb5fc5"
+    },
+    {
+      "bytes": 9261,
+      "path": "elliptic-curves/cas/certify_class_span_machinery.sage",
+      "sha256": "943ec4877fb7ae8a5091d5215262f670f073844d2ed4cbec2f837dd708fd8edf"
+    },
+    {
+      "bytes": 2659,
+      "path": "elliptic-curves/cas/class_span_fixtures.py",
+      "sha256": "4c61749abc82864738ffaffa9bb90d7584909cdaec347af77ad5591eaf799151"
+    },
+    {
+      "bytes": 15019,
+      "path": "elliptic-curves/cas/class_span_grh.py",
+      "sha256": "73482829353bfdb4a2a7cb18fed2a2419004c0139ecf5f627c96816edd93bc83"
+    },
+    {
+      "bytes": 4440,
+      "path": "elliptic-curves/cas/package_class_span_machinery.py",
+      "sha256": "dfcd1a6c9eca51496ded777653f7a0d2a5ec281917b6546a144feb8d3c1a4891"
+    },
+    {
+      "bytes": 207,
+      "path": "elliptic-curves/cas/research_runtime/__init__.py",
+      "sha256": "fcf27db31ec58866898e7e014861f8a566dd5f65c276f205e99ff64bd793a45e"
+    },
+    {
+      "bytes": 8233,
+      "path": "elliptic-curves/cas/research_runtime/store.py",
+      "sha256": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965"
+    },
+    {
+      "bytes": 20249,
+      "path": "elliptic-curves/cas/research_runtime/supervisor.py",
+      "sha256": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233"
+    },
+    {
+      "bytes": 2838,
+      "path": "elliptic-curves/cas/verify_class_span_grh.py",
+      "sha256": "cf92baa9f6ceaae262579009ae001887ce34c55fb25eb2ae263c09a59e2636de"
+    },
+    {
+      "bytes": 8622,
+      "path": "elliptic-curves/notes/CLASS_SPAN_GRH_MACHINERY.md",
+      "sha256": "fac918d849d2b09309b2d8edb827c20cb364c9d8718277beecc043b2f4e81300"
+    },
+    {
+      "bytes": 6437,
+      "path": "elliptic-curves/tests/test_class_span_grh.py",
+      "sha256": "f721eef307382e3ddd144c58c3d2941aa9e409f371bbf51d82794ba46dc16a41"
+    }
+  ],
+  "replay": "sage -python elliptic-curves/cas/certify_class_span_machinery.sage check",
+  "schema": "number-fields.class-span-evidence.v1",
+  "scope": "Self-contained general engine, seven small-field fixtures, exact arithmetic controls, tests, CLI and protocol. MW16 integration has a separate regression and depends on the original curve evidence.",
+  "zip_bytes": 52935,
+  "zip_sha256": "83726884465964abd5ee2962f12b8a880054ac403fb87594213f07213e200ea3"
+}

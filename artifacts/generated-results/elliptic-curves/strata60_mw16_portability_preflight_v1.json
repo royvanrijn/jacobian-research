@@ -1,0 +1,43 @@
+{
+  "allocated_curves": 60,
+  "claim_boundary": "Isolated Python imports and frozen prospective60 protocol bindings succeed in a separate workspace with no point outcomes copied. No point proof, matching rerun, score or search was executed.",
+  "files_relocated": 116,
+  "schema": "elliptic-curves.strata60-portability-preflight.v1",
+  "sources": {
+    "artifacts/local/elliptic-curves/retained-score-stratification-v1/portability-preflight/preflight.supervisor.json": "1a2785a4ed078ffd8c086f2edde61de1047b7f0e816122ee645f8313624d73e7",
+    "artifacts/local/elliptic-curves/retained-score-stratification-v1/portability-preflight/protocol.json": "80e76e2cc90657da662ba89a616847edd6afaf7edb51f8409952c5a8cd99ee70",
+    "elliptic-curves/cas/preflight_strata60_point_portability.py": "f2bdef6a6deb41117b6b01a692231695c3166cefe2bcd841429c6e3646a22c7c"
+  },
+  "status": "PASS",
+  "supervision": {
+    "command": [
+      "/usr/bin/python3",
+      "-I",
+      "-c",
+      "import sys;sys.path.insert(0,'/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retained-score-stratification-v1/portability-preflight/workspace/elliptic-curves/cas');import strata60_mw16_pari_batch as b;import verify_strata60_mw16_points; p=b.protocol();assert len(p[\"rows\"])==60;assert p[\"stop_rank\"] is None;print(\"RELOCATED FROZEN60 INPUTS AND PROOF IMPORTS PASS\")"
+    ],
+    "failure_reason": null,
+    "limits": {
+      "address_space_bytes": null,
+      "cgroup": null,
+      "pari_stack_bytes": 256000000,
+      "poll_seconds": 0.05,
+      "rss_bytes": 1073741824,
+      "terminate_grace_seconds": 1.0,
+      "wall_seconds": 120
+    },
+    "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retained-score-stratification-v1/portability-preflight/preflight.log",
+    "log_sha256": "a30e3765073437f21f5d9c273aa6ec7a0c0cbc78049bf865b433bc12dc303ed1",
+    "outcome": "completed",
+    "peak_observed_rss_bytes": 133001216,
+    "pid": 3394444,
+    "returncode": 0,
+    "rss_limit_bytes": 1073741824,
+    "start_token": "55840190",
+    "termination_signal": null,
+    "timeout_seconds": 120,
+    "wall_seconds": 1.8666263869963586,
+    "worker_result": null,
+    "worker_result_sha256": null
+  }
+}

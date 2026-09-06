@@ -1,0 +1,20 @@
+{
+  "claim_boundary": "Independent PARI elllocalred agrees with every one of the Sage generic Tate local results and reconstructs the new-curve conductor upper bound. This does not factor the residual cofactors, verify external catalogue conductors, reprove ranks or assert conductor records.",
+  "curves": 1,
+  "local_pairs": 9,
+  "pari_version": "(2, 17, 3)",
+  "rows": [
+    {
+      "conductor_upper_bound": "30236546246488535835644316343937401668737803980376385100165623513285248069846947679798912983586401512222560877037091162696255032402360",
+      "id": "corrected-b2-a1-fibration-04-0207",
+      "local_pairs": 9
+    }
+  ],
+  "schema": "elliptic-curves.corrected60-conductor-pari-replay.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/corrected60_conductor_bounds_v1.json": "4a64845d1e6c51c80b3e92dbf3750a7ffa7889c188e701aed8a1da9c9205d23c",
+    "artifacts/generated-results/elliptic-curves/corrected60_mw16_results_v1.json": "7eb49da0775afc670a2dba325d6bb3ffeb3127dd0fecf53173183f55d1aceeb1",
+    "elliptic-curves/cas/verify_corrected60_conductor_bounds.sage": "edbbb3ce229ca6db7e107e5bf6dd72cbfc95e3c8487f14d767de994d3760366f"
+  },
+  "status": "PASS"
+}

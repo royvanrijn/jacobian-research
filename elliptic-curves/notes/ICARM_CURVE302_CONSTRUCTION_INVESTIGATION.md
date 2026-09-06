@@ -1,7 +1,10 @@
 # ICARM curve 302: construction and H3/R17 provenance investigation
 
-Status: **exactly excluded from the published R17 chart; direct point-cloud
-reconstruction is active; broader public provenance incomplete**.
+Status: **a constructed K3 explains nine directions; twelve-plus-direction
+recovery and original construction provenance remain open**. The
+[inverse-fibration run](ICARM_CURVE302_INVERSE_FIBRATIONS_2026-09-06.md) gives
+the explicit family, its rank-nine specialization lattice, and the complete
+127,842-class extension of the fixed-NS exclusions.
 
 ## Bottom line
 

@@ -1,0 +1,220 @@
+{
+  "analytic_test": {
+    "all_positive_sum_interval": {
+      "lower": "3.84537973882428059950799000178277188278437526724229607545",
+      "upper": "3.84537973882428059950799000178277188278437526724229607548"
+    },
+    "archimedean_rhs_upper_bound_interval": {
+      "lower": "-5.82912973435838692798389201327556043180915075332423448120",
+      "upper": "-5.82912973435838692798389201327556043180915075332423448117"
+    },
+    "claim": "Numerical sufficient test only; field, prime coverage and memberships require arithmetic audit.",
+    "cutoff": 100,
+    "margin_interval": {
+      "lower": "13.5198892120069481269998720168411041973779012878088266320",
+      "upper": "13.5198892120069481269998720168411041973779012878088266322"
+    },
+    "penalty_interval": {
+      "lower": "0.000000000000000000000000000000000000000000000000000000000",
+      "upper": "-0.000000000000000000000000000000000000000000000000000000000"
+    },
+    "positive_margin_certified": true,
+    "precision_bits": 192,
+    "prime_ideals_contributing": 23,
+    "prime_power_terms": 26,
+    "unknown_odd_prime_power_terms": 0,
+    "unresolved_primes_by_penalty": [],
+    "worst_signed_sum_interval": {
+      "lower": "3.84537973882428059950799000178277188278437526724229607545",
+      "upper": "3.84537973882428059950799000178277188278437526724229607548"
+    }
+  },
+  "anchor_count": 0,
+  "anchor_image_dimension_upper_bound": 0,
+  "assumption": "GRH for nontrivial quadratic characters of the ordinary ideal class group of the specified field that are trivial on the proposed span.",
+  "canonical_rational_relations": 25,
+  "claim_boundary": "A conditional class-2-rank upper bound only. Positive margin certifies generation; nonpositive margin is inconclusive. Formal independence never establishes actual class independence. Elliptic rank needs separately certified points and Selmer bounds.",
+  "class_two_rank_lower_bound": null,
+  "class_two_rank_upper_bound_under_grh": 0,
+  "complete_prime_coverage_below": 100,
+  "elliptic_curve_rank": null,
+  "exact_class_two_rank": null,
+  "field_sha256": "a27fb089ee75add3cc4fa96ab8fccd0b7facc424d9e3d379b7a0ae1a833a9297",
+  "formal_quotient_dimension": 0,
+  "input_sha256": "e5552b5cfecd7f51fddcafebfd2fdcc8731801a10a6bc261b541a38d88115c9d",
+  "known_prime_coordinates": [
+    [
+      0,
+      "0x0"
+    ],
+    [
+      1,
+      "0x0"
+    ],
+    [
+      2,
+      "0x0"
+    ],
+    [
+      3,
+      "0x0"
+    ],
+    [
+      4,
+      "0x0"
+    ],
+    [
+      5,
+      "0x0"
+    ],
+    [
+      6,
+      "0x0"
+    ],
+    [
+      7,
+      "0x0"
+    ],
+    [
+      8,
+      "0x0"
+    ],
+    [
+      9,
+      "0x0"
+    ],
+    [
+      10,
+      "0x0"
+    ],
+    [
+      11,
+      "0x0"
+    ],
+    [
+      12,
+      "0x0"
+    ],
+    [
+      13,
+      "0x0"
+    ],
+    [
+      14,
+      "0x0"
+    ],
+    [
+      15,
+      "0x0"
+    ],
+    [
+      16,
+      "0x0"
+    ],
+    [
+      17,
+      "0x0"
+    ],
+    [
+      18,
+      "0x0"
+    ],
+    [
+      19,
+      "0x0"
+    ],
+    [
+      20,
+      "0x0"
+    ],
+    [
+      21,
+      "0x0"
+    ],
+    [
+      22,
+      "0x0"
+    ],
+    [
+      23,
+      "0x0"
+    ],
+    [
+      24,
+      "0x0"
+    ],
+    [
+      25,
+      "0x0"
+    ],
+    [
+      26,
+      "0x0"
+    ],
+    [
+      27,
+      "0x0"
+    ],
+    [
+      28,
+      "0x0"
+    ],
+    [
+      29,
+      "0x0"
+    ],
+    [
+      30,
+      "0x0"
+    ],
+    [
+      31,
+      "0x0"
+    ],
+    [
+      32,
+      "0x0"
+    ],
+    [
+      33,
+      "0x0"
+    ],
+    [
+      34,
+      "0x0"
+    ],
+    [
+      35,
+      "0x0"
+    ],
+    [
+      36,
+      "0x0"
+    ],
+    [
+      37,
+      "0x0"
+    ],
+    [
+      38,
+      "0x0"
+    ],
+    [
+      39,
+      "0x0"
+    ],
+    [
+      40,
+      "0x0"
+    ],
+    [
+      41,
+      "0x0"
+    ]
+  ],
+  "maximal_order_certified": true,
+  "principal_relations_replayed": 23,
+  "relation_rank": 42,
+  "schema": "number-fields.class-span-certificate.v1",
+  "status": "CERTIFIED_UNDER_GRH"
+}

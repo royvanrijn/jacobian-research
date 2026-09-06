@@ -1,0 +1,41 @@
+{
+  "protocol": {
+    "channels": [
+      "determinant",
+      "relation",
+      "random"
+    ],
+    "combination_coefficients": [
+      -1,
+      1
+    ],
+    "combination_support": 3,
+    "digits": 80,
+    "finalists_per_rank_per_score": 2,
+    "gp_timeout_seconds": 120,
+    "height_bounds": {
+      "245": 28,
+      "302": 70
+    },
+    "paths_per_channel": 16,
+    "proof_boundary": "Heuristic subspace proposals, exact integer embeddings; numerical height balls and determinants, no certified interval bounds. No exhaustive sublattice search.",
+    "ranks": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "seed": 20260906,
+    "short_ball_cap": 10000
+  },
+  "selection_script_sha256": "3b8265f3512ea97d3baf75d11440460f0869fe7b521642f2af8ae1750318634a"
+}

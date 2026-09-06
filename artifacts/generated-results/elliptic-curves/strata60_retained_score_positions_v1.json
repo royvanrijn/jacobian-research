@@ -1,0 +1,839 @@
+{
+  "claim_boundary": "Retrospective accounting for all60 completed matched curves against existing initial/late score tables. No additional prime trace, validation-prime result, parameter or point search is read or computed. The rank labels are joined only after the independently audited comparison ends. The initial rank refers to the signed retained block; the old initial and late positions use its two-sign family/band pool. A late shortlist miss locates a retained candidate; it does not prove another score rule, cutoff or point-budget allocation optimal.",
+  "overlap_with_original_scalar_population": 20,
+  "rows": [
+    {
+      "arm": "top",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-03",
+      "id": "strata-a1-fibration-03-b3-s-1-top",
+      "original_scalar_row": {
+        "id": "corrected-b3-a1-fibration-03-0113",
+        "initial_combined_sign_pool_rank": 114,
+        "late_rank_in_1024": 61,
+        "late_score_gap_to_sixth_units": 3906719436319,
+        "late_selection_units": 151579673799457,
+        "original_finalist": false,
+        "sixth_late_selection_units": 155486393235776
+      },
+      "parameter": "-132864/205619",
+      "rank_lower_bound": 16,
+      "retained_rank": 72
+    },
+    {
+      "arm": "moderate",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-03",
+      "id": "strata-a1-fibration-03-b3-s-1-moderate",
+      "original_scalar_row": null,
+      "parameter": "-138679/187329",
+      "rank_lower_bound": 16,
+      "retained_rank": 1741
+    },
+    {
+      "arm": "lower",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-03",
+      "id": "strata-a1-fibration-03-b3-s-1-lower",
+      "original_scalar_row": null,
+      "parameter": "-28216/196157",
+      "rank_lower_bound": 16,
+      "retained_rank": 55598
+    },
+    {
+      "arm": "top",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-04",
+      "id": "strata-a1-fibration-04-b2-s1-top",
+      "original_scalar_row": {
+        "id": "corrected-b2-a1-fibration-04-0136",
+        "initial_combined_sign_pool_rank": 137,
+        "late_rank_in_1024": 451,
+        "late_score_gap_to_sixth_units": 7961187975087,
+        "late_selection_units": 147464601003705,
+        "original_finalist": false,
+        "sixth_late_selection_units": 155425788978792
+      },
+      "parameter": "32559/59087",
+      "rank_lower_bound": 16,
+      "retained_rank": 100
+    },
+    {
+      "arm": "lower",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-04",
+      "id": "strata-a1-fibration-04-b2-s1-lower",
+      "original_scalar_row": null,
+      "parameter": "62768/61963",
+      "rank_lower_bound": 16,
+      "retained_rank": 18939
+    },
+    {
+      "arm": "moderate",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-04",
+      "id": "strata-a1-fibration-04-b2-s1-moderate",
+      "original_scalar_row": null,
+      "parameter": "23063/61135",
+      "rank_lower_bound": 16,
+      "retained_rank": 3478
+    },
+    {
+      "arm": "moderate",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-03",
+      "id": "strata-a1-fibration-03-b3-s1-moderate",
+      "original_scalar_row": null,
+      "parameter": "118917/15412",
+      "rank_lower_bound": 16,
+      "retained_rank": 2905
+    },
+    {
+      "arm": "top",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-03",
+      "id": "strata-a1-fibration-03-b3-s1-top",
+      "original_scalar_row": {
+        "id": "corrected-b3-a1-fibration-03-0051",
+        "initial_combined_sign_pool_rank": 52,
+        "late_rank_in_1024": 140,
+        "late_score_gap_to_sixth_units": 5510109252229,
+        "late_selection_units": 149976283983547,
+        "original_finalist": false,
+        "sixth_late_selection_units": 155486393235776
+      },
+      "parameter": "213233/11884",
+      "rank_lower_bound": 16,
+      "retained_rank": 19
+    },
+    {
+      "arm": "lower",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-03",
+      "id": "strata-a1-fibration-03-b3-s1-lower",
+      "original_scalar_row": null,
+      "parameter": "146979/11510",
+      "rank_lower_bound": 16,
+      "retained_rank": 35313
+    },
+    {
+      "arm": "moderate",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-05",
+      "id": "strata-a1-fibration-05-b3-s-1-moderate",
+      "original_scalar_row": null,
+      "parameter": "-176576/136069",
+      "rank_lower_bound": 16,
+      "retained_rank": 5341
+    },
+    {
+      "arm": "lower",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-05",
+      "id": "strata-a1-fibration-05-b3-s-1-lower",
+      "original_scalar_row": null,
+      "parameter": "-91249/242113",
+      "rank_lower_bound": 16,
+      "retained_rank": 35381
+    },
+    {
+      "arm": "top",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-05",
+      "id": "strata-a1-fibration-05-b3-s-1-top",
+      "original_scalar_row": {
+        "id": "corrected-b3-a1-fibration-05-0020",
+        "initial_combined_sign_pool_rank": 21,
+        "late_rank_in_1024": 25,
+        "late_score_gap_to_sixth_units": 1307685742886,
+        "late_selection_units": 153150389469563,
+        "original_finalist": false,
+        "sixth_late_selection_units": 154458075212449
+      },
+      "parameter": "-228144/51481",
+      "rank_lower_bound": 16,
+      "retained_rank": 16
+    },
+    {
+      "arm": "lower",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-03",
+      "id": "strata-a1-fibration-03-b2-s1-lower",
+      "original_scalar_row": null,
+      "parameter": "33347/20278",
+      "rank_lower_bound": 16,
+      "retained_rank": 62086
+    },
+    {
+      "arm": "top",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-03",
+      "id": "strata-a1-fibration-03-b2-s1-top",
+      "original_scalar_row": {
+        "id": "corrected-b2-a1-fibration-03-0002",
+        "initial_combined_sign_pool_rank": 3,
+        "late_rank_in_1024": 50,
+        "late_score_gap_to_sixth_units": 2490394479957,
+        "late_selection_units": 151674899797530,
+        "original_finalist": false,
+        "sixth_late_selection_units": 154165294277487
+      },
+      "parameter": "25013/34102",
+      "rank_lower_bound": 16,
+      "retained_rank": 1
+    },
+    {
+      "arm": "moderate",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-03",
+      "id": "strata-a1-fibration-03-b2-s1-moderate",
+      "original_scalar_row": null,
+      "parameter": "36791/26678",
+      "rank_lower_bound": 16,
+      "retained_rank": 2990
+    },
+    {
+      "arm": "lower",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-01",
+      "id": "strata-a1-fibration-01-b2-s1-lower",
+      "original_scalar_row": null,
+      "parameter": "13197/24920",
+      "rank_lower_bound": 16,
+      "retained_rank": 57977
+    },
+    {
+      "arm": "moderate",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-01",
+      "id": "strata-a1-fibration-01-b2-s1-moderate",
+      "original_scalar_row": null,
+      "parameter": "36031/32090",
+      "rank_lower_bound": 16,
+      "retained_rank": 4338
+    },
+    {
+      "arm": "top",
+      "band": 2,
+      "certified_gain": 1,
+      "family": "a1-fibration-01",
+      "id": "strata-a1-fibration-01-b2-s1-top",
+      "original_scalar_row": {
+        "id": "corrected-b2-a1-fibration-01-0054",
+        "initial_combined_sign_pool_rank": 55,
+        "late_rank_in_1024": 38,
+        "late_score_gap_to_sixth_units": 2378042949534,
+        "late_selection_units": 153903910487642,
+        "original_finalist": false,
+        "sixth_late_selection_units": 156281953437176
+      },
+      "parameter": "32719/6374",
+      "rank_lower_bound": 17,
+      "retained_rank": 24
+    },
+    {
+      "arm": "top",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-01",
+      "id": "strata-a1-fibration-01-b2-s-1-top",
+      "original_scalar_row": {
+        "id": "corrected-b2-a1-fibration-01-0135",
+        "initial_combined_sign_pool_rank": 136,
+        "late_rank_in_1024": 164,
+        "late_score_gap_to_sixth_units": 5407349919745,
+        "late_selection_units": 150874603517431,
+        "original_finalist": false,
+        "sixth_late_selection_units": 156281953437176
+      },
+      "parameter": "-1451/61733",
+      "rank_lower_bound": 16,
+      "retained_rank": 90
+    },
+    {
+      "arm": "moderate",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-01",
+      "id": "strata-a1-fibration-01-b2-s-1-moderate",
+      "original_scalar_row": null,
+      "parameter": "-65122/61843",
+      "rank_lower_bound": 16,
+      "retained_rank": 5032
+    },
+    {
+      "arm": "lower",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-01",
+      "id": "strata-a1-fibration-01-b2-s-1-lower",
+      "original_scalar_row": null,
+      "parameter": "-56076/20911",
+      "rank_lower_bound": 16,
+      "retained_rank": 26450
+    },
+    {
+      "arm": "top",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-04",
+      "id": "strata-a1-fibration-04-b3-s-1-top",
+      "original_scalar_row": {
+        "id": "corrected-b3-a1-fibration-04-0320",
+        "initial_combined_sign_pool_rank": 321,
+        "late_rank_in_1024": 856,
+        "late_score_gap_to_sixth_units": 10855884356860,
+        "late_selection_units": 144193538707626,
+        "original_finalist": false,
+        "sixth_late_selection_units": 155049423064486
+      },
+      "parameter": "-236423/13070",
+      "rank_lower_bound": 16,
+      "retained_rank": 103
+    },
+    {
+      "arm": "lower",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-04",
+      "id": "strata-a1-fibration-04-b3-s-1-lower",
+      "original_scalar_row": null,
+      "parameter": "-187129/38974",
+      "rank_lower_bound": 16,
+      "retained_rank": 31591
+    },
+    {
+      "arm": "moderate",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-04",
+      "id": "strata-a1-fibration-04-b3-s-1-moderate",
+      "original_scalar_row": null,
+      "parameter": "-147169/32786",
+      "rank_lower_bound": 16,
+      "retained_rank": 1254
+    },
+    {
+      "arm": "moderate",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-04",
+      "id": "strata-a1-fibration-04-b2-s-1-moderate",
+      "original_scalar_row": null,
+      "parameter": "-54295/46234",
+      "rank_lower_bound": 16,
+      "retained_rank": 2758
+    },
+    {
+      "arm": "top",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-04",
+      "id": "strata-a1-fibration-04-b2-s-1-top",
+      "original_scalar_row": {
+        "id": "corrected-b2-a1-fibration-04-0322",
+        "initial_combined_sign_pool_rank": 323,
+        "late_rank_in_1024": 442,
+        "late_score_gap_to_sixth_units": 7862542442911,
+        "late_selection_units": 147563246535881,
+        "original_finalist": false,
+        "sixth_late_selection_units": 155425788978792
+      },
+      "parameter": "-13289/64084",
+      "rank_lower_bound": 16,
+      "retained_rank": 98
+    },
+    {
+      "arm": "lower",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-04",
+      "id": "strata-a1-fibration-04-b2-s-1-lower",
+      "original_scalar_row": null,
+      "parameter": "-19739/51344",
+      "rank_lower_bound": 16,
+      "retained_rank": 64438
+    },
+    {
+      "arm": "moderate",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-02",
+      "id": "strata-a1-fibration-02-b3-s1-moderate",
+      "original_scalar_row": null,
+      "parameter": "174863/158199",
+      "rank_lower_bound": 16,
+      "retained_rank": 5846
+    },
+    {
+      "arm": "lower",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-02",
+      "id": "strata-a1-fibration-02-b3-s1-lower",
+      "original_scalar_row": null,
+      "parameter": "24239/183719",
+      "rank_lower_bound": 16,
+      "retained_rank": 64639
+    },
+    {
+      "arm": "top",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-02",
+      "id": "strata-a1-fibration-02-b3-s1-top",
+      "original_scalar_row": {
+        "id": "corrected-b3-a1-fibration-02-0003",
+        "initial_combined_sign_pool_rank": 4,
+        "late_rank_in_1024": 383,
+        "late_score_gap_to_sixth_units": 7084226265833,
+        "late_selection_units": 147733229963773,
+        "original_finalist": false,
+        "sixth_late_selection_units": 154817456229606
+      },
+      "parameter": "250213/166145",
+      "rank_lower_bound": 16,
+      "retained_rank": 3
+    },
+    {
+      "arm": "lower",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-05",
+      "id": "strata-a1-fibration-05-b2-s-1-lower",
+      "original_scalar_row": null,
+      "parameter": "-54628/44763",
+      "rank_lower_bound": 16,
+      "retained_rank": 56285
+    },
+    {
+      "arm": "top",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-05",
+      "id": "strata-a1-fibration-05-b2-s-1-top",
+      "original_scalar_row": {
+        "id": "corrected-b2-a1-fibration-05-0030",
+        "initial_combined_sign_pool_rank": 31,
+        "late_rank_in_1024": 198,
+        "late_score_gap_to_sixth_units": 5783945678568,
+        "late_selection_units": 149457255449154,
+        "original_finalist": false,
+        "sixth_late_selection_units": 155241201127722
+      },
+      "parameter": "-50510/9729",
+      "rank_lower_bound": 16,
+      "retained_rank": 20
+    },
+    {
+      "arm": "moderate",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-05",
+      "id": "strata-a1-fibration-05-b2-s-1-moderate",
+      "original_scalar_row": null,
+      "parameter": "-7463/60743",
+      "rank_lower_bound": 16,
+      "retained_rank": 1691
+    },
+    {
+      "arm": "lower",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-01",
+      "id": "strata-a1-fibration-01-b3-s1-lower",
+      "original_scalar_row": null,
+      "parameter": "174589/144482",
+      "rank_lower_bound": 16,
+      "retained_rank": 43496
+    },
+    {
+      "arm": "moderate",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-01",
+      "id": "strata-a1-fibration-01-b3-s1-moderate",
+      "original_scalar_row": null,
+      "parameter": "113497/203136",
+      "rank_lower_bound": 16,
+      "retained_rank": 1365
+    },
+    {
+      "arm": "top",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-01",
+      "id": "strata-a1-fibration-01-b3-s1-top",
+      "original_scalar_row": {
+        "id": "corrected-b3-a1-fibration-01-0234",
+        "initial_combined_sign_pool_rank": 235,
+        "late_rank_in_1024": 8,
+        "late_score_gap_to_sixth_units": 520111652118,
+        "late_selection_units": 154636972676468,
+        "original_finalist": false,
+        "sixth_late_selection_units": 155157084328586
+      },
+      "parameter": "115601/97336",
+      "rank_lower_bound": 16,
+      "retained_rank": 76
+    },
+    {
+      "arm": "top",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-05",
+      "id": "strata-a1-fibration-05-b3-s1-top",
+      "original_scalar_row": {
+        "id": "corrected-b3-a1-fibration-05-0058",
+        "initial_combined_sign_pool_rank": 59,
+        "late_rank_in_1024": 608,
+        "late_score_gap_to_sixth_units": 8505734198079,
+        "late_selection_units": 145952341014370,
+        "original_finalist": false,
+        "sixth_late_selection_units": 154458075212449
+      },
+      "parameter": "255255/100612",
+      "rank_lower_bound": 16,
+      "retained_rank": 23
+    },
+    {
+      "arm": "moderate",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-05",
+      "id": "strata-a1-fibration-05-b3-s1-moderate",
+      "original_scalar_row": null,
+      "parameter": "92433/195716",
+      "rank_lower_bound": 16,
+      "retained_rank": 6780
+    },
+    {
+      "arm": "lower",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-05",
+      "id": "strata-a1-fibration-05-b3-s1-lower",
+      "original_scalar_row": null,
+      "parameter": "203335/3204",
+      "rank_lower_bound": 16,
+      "retained_rank": 28899
+    },
+    {
+      "arm": "top",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-03",
+      "id": "strata-a1-fibration-03-b2-s-1-top",
+      "original_scalar_row": {
+        "id": "corrected-b2-a1-fibration-03-0133",
+        "initial_combined_sign_pool_rank": 134,
+        "late_rank_in_1024": 428,
+        "late_score_gap_to_sixth_units": 7102947475497,
+        "late_selection_units": 147062346801990,
+        "original_finalist": false,
+        "sixth_late_selection_units": 154165294277487
+      },
+      "parameter": "-62438/6703",
+      "rank_lower_bound": 16,
+      "retained_rank": 90
+    },
+    {
+      "arm": "lower",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-03",
+      "id": "strata-a1-fibration-03-b2-s-1-lower",
+      "original_scalar_row": null,
+      "parameter": "-42037/11655",
+      "rank_lower_bound": 16,
+      "retained_rank": 59344
+    },
+    {
+      "arm": "moderate",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-03",
+      "id": "strata-a1-fibration-03-b2-s-1-moderate",
+      "original_scalar_row": null,
+      "parameter": "-38416/5793",
+      "rank_lower_bound": 16,
+      "retained_rank": 3884
+    },
+    {
+      "arm": "moderate",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-02",
+      "id": "strata-a1-fibration-02-b2-s1-moderate",
+      "original_scalar_row": null,
+      "parameter": "45343/58243",
+      "rank_lower_bound": 16,
+      "retained_rank": 5483
+    },
+    {
+      "arm": "top",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-02",
+      "id": "strata-a1-fibration-02-b2-s1-top",
+      "original_scalar_row": {
+        "id": "corrected-b2-a1-fibration-02-0117",
+        "initial_combined_sign_pool_rank": 118,
+        "late_rank_in_1024": 386,
+        "late_score_gap_to_sixth_units": 7330765450944,
+        "late_selection_units": 147841343286567,
+        "original_finalist": false,
+        "sixth_late_selection_units": 155172108737511
+      },
+      "parameter": "53867/54679",
+      "rank_lower_bound": 16,
+      "retained_rank": 80
+    },
+    {
+      "arm": "lower",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-02",
+      "id": "strata-a1-fibration-02-b2-s1-lower",
+      "original_scalar_row": null,
+      "parameter": "51263/55621",
+      "rank_lower_bound": 16,
+      "retained_rank": 35783
+    },
+    {
+      "arm": "moderate",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-05",
+      "id": "strata-a1-fibration-05-b2-s1-moderate",
+      "original_scalar_row": null,
+      "parameter": "63591/13054",
+      "rank_lower_bound": 16,
+      "retained_rank": 1085
+    },
+    {
+      "arm": "lower",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-05",
+      "id": "strata-a1-fibration-05-b2-s1-lower",
+      "original_scalar_row": null,
+      "parameter": "56881/65478",
+      "rank_lower_bound": 16,
+      "retained_rank": 36116
+    },
+    {
+      "arm": "top",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-05",
+      "id": "strata-a1-fibration-05-b2-s1-top",
+      "original_scalar_row": {
+        "id": "corrected-b2-a1-fibration-05-0285",
+        "initial_combined_sign_pool_rank": 286,
+        "late_rank_in_1024": 600,
+        "late_score_gap_to_sixth_units": 8967704779826,
+        "late_selection_units": 146273496347896,
+        "original_finalist": false,
+        "sixth_late_selection_units": 155241201127722
+      },
+      "parameter": "37741/41950",
+      "rank_lower_bound": 16,
+      "retained_rank": 104
+    },
+    {
+      "arm": "lower",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-02",
+      "id": "strata-a1-fibration-02-b3-s-1-lower",
+      "original_scalar_row": null,
+      "parameter": "-122869/40706",
+      "rank_lower_bound": 16,
+      "retained_rank": 19395
+    },
+    {
+      "arm": "top",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-02",
+      "id": "strata-a1-fibration-02-b3-s-1-top",
+      "original_scalar_row": {
+        "id": "corrected-b3-a1-fibration-02-0256",
+        "initial_combined_sign_pool_rank": 257,
+        "late_rank_in_1024": 49,
+        "late_score_gap_to_sixth_units": 2647613000306,
+        "late_selection_units": 152169843229300,
+        "original_finalist": false,
+        "sixth_late_selection_units": 154817456229606
+      },
+      "parameter": "-177793/36504",
+      "rank_lower_bound": 16,
+      "retained_rank": 72
+    },
+    {
+      "arm": "moderate",
+      "band": 3,
+      "certified_gain": 1,
+      "family": "a1-fibration-02",
+      "id": "strata-a1-fibration-02-b3-s-1-moderate",
+      "original_scalar_row": null,
+      "parameter": "-134337/196864",
+      "rank_lower_bound": 17,
+      "retained_rank": 4130
+    },
+    {
+      "arm": "lower",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-04",
+      "id": "strata-a1-fibration-04-b3-s1-lower",
+      "original_scalar_row": null,
+      "parameter": "229396/108693",
+      "rank_lower_bound": 16,
+      "retained_rank": 34999
+    },
+    {
+      "arm": "moderate",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-04",
+      "id": "strata-a1-fibration-04-b3-s1-moderate",
+      "original_scalar_row": null,
+      "parameter": "227650/108693",
+      "rank_lower_bound": 16,
+      "retained_rank": 2999
+    },
+    {
+      "arm": "top",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-04",
+      "id": "strata-a1-fibration-04-b3-s1-top",
+      "original_scalar_row": {
+        "id": "corrected-b3-a1-fibration-04-0074",
+        "initial_combined_sign_pool_rank": 75,
+        "late_rank_in_1024": 186,
+        "late_score_gap_to_sixth_units": 5337698872339,
+        "late_selection_units": 149711724192147,
+        "original_finalist": false,
+        "sixth_late_selection_units": 155049423064486
+      },
+      "parameter": "199789/165257",
+      "rank_lower_bound": 16,
+      "retained_rank": 60
+    },
+    {
+      "arm": "top",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-01",
+      "id": "strata-a1-fibration-01-b3-s-1-top",
+      "original_scalar_row": {
+        "id": "corrected-b3-a1-fibration-01-0014",
+        "initial_combined_sign_pool_rank": 15,
+        "late_rank_in_1024": 493,
+        "late_score_gap_to_sixth_units": 7414677576217,
+        "late_selection_units": 147742406752369,
+        "original_finalist": false,
+        "sixth_late_selection_units": 155157084328586
+      },
+      "parameter": "-146519/154125",
+      "rank_lower_bound": 16,
+      "retained_rank": 11
+    },
+    {
+      "arm": "moderate",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-01",
+      "id": "strata-a1-fibration-01-b3-s-1-moderate",
+      "original_scalar_row": null,
+      "parameter": "-190813/176831",
+      "rank_lower_bound": 16,
+      "retained_rank": 7763
+    },
+    {
+      "arm": "lower",
+      "band": 3,
+      "certified_gain": 0,
+      "family": "a1-fibration-01",
+      "id": "strata-a1-fibration-01-b3-s-1-lower",
+      "original_scalar_row": null,
+      "parameter": "-239473/39335",
+      "rank_lower_bound": 16,
+      "retained_rank": 52703
+    },
+    {
+      "arm": "top",
+      "band": 2,
+      "certified_gain": 9,
+      "family": "a1-fibration-02",
+      "id": "strata-a1-fibration-02-b2-s-1-top",
+      "original_scalar_row": {
+        "id": "corrected-b2-a1-fibration-02-0069",
+        "initial_combined_sign_pool_rank": 70,
+        "late_rank_in_1024": 9,
+        "late_score_gap_to_sixth_units": 303426112505,
+        "late_selection_units": 154868682625006,
+        "original_finalist": false,
+        "sixth_late_selection_units": 155172108737511
+      },
+      "parameter": "-32999/14074",
+      "rank_lower_bound": 25,
+      "retained_rank": 21
+    },
+    {
+      "arm": "lower",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-02",
+      "id": "strata-a1-fibration-02-b2-s-1-lower",
+      "original_scalar_row": null,
+      "parameter": "-54999/25510",
+      "rank_lower_bound": 16,
+      "retained_rank": 37939
+    },
+    {
+      "arm": "moderate",
+      "band": 2,
+      "certified_gain": 0,
+      "family": "a1-fibration-02",
+      "id": "strata-a1-fibration-02-b2-s-1-moderate",
+      "original_scalar_row": null,
+      "parameter": "-1477/42372",
+      "rank_lower_bound": 16,
+      "retained_rank": 5054
+    }
+  ],
+  "schema": "elliptic-curves.strata60-retained-score-positions.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/corrected_mw16_higher_selection_v1.json": "3ae2fd2584bab231cabf907cab650cfa8b03e77494f78b9752e8f129aa062a1e",
+    "artifacts/generated-results/elliptic-curves/retained_mw16_score_strata_accounting_replay_v1.json": "bf435cf7940dc1dd97b680e67ed34d1e28fa0bcf42277bb0bab33bd36833a6bd",
+    "artifacts/generated-results/elliptic-curves/retained_mw16_score_strata_experiment_v1.json": "358c3d5d02aca3d5a21c8e4b5b0984c9eb644589c1bc1492d0bb2ff19827f043",
+    "artifacts/generated-results/elliptic-curves/retained_mw16_score_strata_selection_v1.json": "7ad1d4bab88491eff9403500edbbdf53e35c36264c2e18df34760c1ca7f5cfaf",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-scores-v1/controller/ledger.json": "3dcb0fdf7005cc87f27bdb829b6baf8e628cf781f7ee87496728bf32a16ecb15",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-scores-v1/protocol.json": "d48a64ebc5c2ef6af392798c5aaa6d0d31908c5b969e078e5f62b9c8003da853",
+    "artifacts/local/elliptic-curves/corrected-mw16-higher-scores-v1/result.json": "45934e363e52aa34801dd8ac274600ea2a457b01f757166867b7fc022af5617e",
+    "elliptic-curves/cas/audit_strata60_retained_score_positions.py": "9e0f1d6fadb3c5968907a5f58ef7b47be2cb47369364f94c8c164ab34a3d2d59",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9"
+  },
+  "status": "PASS"
+}

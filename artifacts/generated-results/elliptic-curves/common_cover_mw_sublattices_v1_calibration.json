@@ -1,0 +1,13 @@
+{
+  "best_rank12_intersection": 10,
+  "exact_generated_subgroup_seed_indices": [],
+  "exact_primitive_space_seed_indices": [],
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/common_cover_mw_sublattices_v1_245_proposals.json.gz": "9a8caa837987a30fcab83c673a73e22962b5889f18ce5c2cec4e36b6afa3f314",
+    "artifacts/generated-results/elliptic-curves/common_cover_mw_sublattices_v1_245_selection.json": "3e142027e8709207c3485644449fa0108d9a75225ad804274e73ec5318535a07",
+    "artifacts/generated-results/elliptic-curves/latent_lattice_calibration_truth_v1.json": "357113254603a7910b781514bfdf2c147132a5e02c676c31513efb1786187224"
+  },
+  "selected_exact_generated_subgroup_seed_indices": [],
+  "selected_exact_primitive_space_seed_indices": [],
+  "status": "FAIL_BLIND_CALIBRATION"
+}
