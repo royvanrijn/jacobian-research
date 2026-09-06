@@ -1,0 +1,1578 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_direct_relation_local_gate_inputs_v1.json": "fcef7028d5004ea149b807094ff2414a2516a6464825aedf24eef115f1f79aae",
+    "elliptic-curves/rank-jump/DIRECT_RELATION_GOOD_PRIMES_PROTOCOL.json": "de9b451a9a8b00156439055f0c4bee37d9cc1483c41769cd801635cff031c7a8",
+    "elliptic-curves/rank-jump/direct_relation_good_primes.py": "60800d2d56e8f747e97ce7b27fe07552fd40ba010f8704811dfbf1a1452f2bb8",
+    "elliptic-curves/rank-jump/direct_relation_local_gate.py": "9b765a21dd1a194ebb9fa6480834d1a26f7022acb26a06f0f8aa5afb3d82ffb4",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "boundary": "A second fixed finite-field panel for the same retrospective relation constructions. It does not modify or enlarge the active curve search.",
+  "layer": "solubility",
+  "rows": [
+    {
+      "base_fibre_counts": [
+        {
+          "base_t": 0,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 1,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 2,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 3,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 4,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 5,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 6,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 7,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 8,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 9,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 10,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 11,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 12,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 13,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 14,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 15,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 16,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 17,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 18,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 19,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 20,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 21,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 22,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 23,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 24,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 25,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 26,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 27,
+          "root_choice_count": 4,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 28,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 29,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 30,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 31,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 32,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 33,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 34,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 35,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 36,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 37,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 38,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 39,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 40,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 41,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 42,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": false
+        },
+        {
+          "base_t": 43,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 44,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 45,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 46,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 47,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 48,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 49,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 50,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 51,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 52,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 53,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 54,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 55,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 56,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 57,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 58,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 59,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 60,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 61,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 62,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 63,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 64,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 65,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 66,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 67,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 68,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 69,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 70,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 71,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 72,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 73,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 74,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 75,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 76,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 77,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 78,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 79,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 80,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 81,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 82,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 83,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 84,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 85,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 86,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 87,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 88,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 89,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 90,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 91,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 92,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 93,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 94,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 95,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 96,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 97,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 98,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 99,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 100,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 101,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 102,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 103,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 104,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 105,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 106,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 107,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 108,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 109,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 110,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 111,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 112,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 113,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 114,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 115,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 116,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 117,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 118,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 119,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 120,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 121,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 122,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 123,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 124,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 125,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 126,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 127,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 128,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 129,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 130,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": "infinity",
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        }
+      ],
+      "carrier_Fp_point_count": 116,
+      "geometry_gate": {
+        "cover_degrees": [
+          2,
+          2,
+          2
+        ],
+        "cover_discriminant_gcd_degrees": [
+          0,
+          0,
+          0
+        ],
+        "cover_squarefree": [
+          true,
+          true,
+          true
+        ],
+        "discriminant_degree": 24,
+        "discriminant_squarefree": true,
+        "infinity_smooth": true,
+        "pairwise_branch_gcd_degrees": [
+          0,
+          0,
+          0
+        ]
+      },
+      "prime": 131,
+      "projective_base_fibres": 132,
+      "relations": [
+        {
+          "Fp_point_count": 1,
+          "Fp_points": [
+            {
+              "base_t": 4,
+              "roots": [
+                116,
+                124,
+                130
+              ],
+              "smooth_elliptic_fibre": true
+            }
+          ],
+          "index": 0,
+          "local_obstruction_proved": false
+        },
+        {
+          "Fp_point_count": 1,
+          "Fp_points": [
+            {
+              "base_t": 52,
+              "roots": [
+                64,
+                5,
+                81
+              ],
+              "smooth_elliptic_fibre": true
+            }
+          ],
+          "index": 1,
+          "local_obstruction_proved": false
+        },
+        {
+          "Fp_point_count": 0,
+          "Fp_points": [],
+          "index": 2,
+          "local_obstruction_proved": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "base_fibre_counts": [
+        {
+          "base_t": 0,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 1,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 2,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 3,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 4,
+          "root_choice_count": 4,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 5,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 6,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 7,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 8,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 9,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 10,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 11,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 12,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 13,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 14,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 15,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 16,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 17,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 18,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 19,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 20,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 21,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 22,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 23,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 24,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 25,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 26,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 27,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 28,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 29,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 30,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 31,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 32,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 33,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 34,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 35,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 36,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 37,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 38,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 39,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 40,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 41,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 42,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 43,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 44,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 45,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 46,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 47,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 48,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 49,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 50,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 51,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 52,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 53,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 54,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 55,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 56,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 57,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 58,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 59,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 60,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 61,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 62,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 63,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 64,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 65,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 66,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 67,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 68,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 69,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 70,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 71,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 72,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 73,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 74,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 75,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 76,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 77,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 78,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 79,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 80,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 81,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 82,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 83,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 84,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 85,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 86,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 87,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 88,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 89,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 90,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 91,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 92,
+          "root_choice_count": 4,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 93,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 94,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 95,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 96,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 97,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 98,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 99,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 100,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 101,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 102,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 103,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 104,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 105,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 106,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 107,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 108,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 109,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 110,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 111,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 112,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 113,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 114,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 115,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 116,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 117,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 118,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 119,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 120,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 121,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 122,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 123,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 124,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 125,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 126,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 127,
+          "root_choice_count": 8,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 128,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 129,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 130,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 131,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 132,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 133,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 134,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 135,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": 136,
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        },
+        {
+          "base_t": "infinity",
+          "root_choice_count": 0,
+          "smooth_elliptic_fibre": true
+        }
+      ],
+      "carrier_Fp_point_count": 120,
+      "geometry_gate": {
+        "cover_degrees": [
+          2,
+          2,
+          2
+        ],
+        "cover_discriminant_gcd_degrees": [
+          0,
+          0,
+          0
+        ],
+        "cover_squarefree": [
+          true,
+          true,
+          true
+        ],
+        "discriminant_degree": 24,
+        "discriminant_squarefree": true,
+        "infinity_smooth": true,
+        "pairwise_branch_gcd_degrees": [
+          0,
+          0,
+          0
+        ]
+      },
+      "prime": 137,
+      "projective_base_fibres": 138,
+      "relations": [
+        {
+          "Fp_point_count": 1,
+          "Fp_points": [
+            {
+              "base_t": 32,
+              "roots": [
+                71,
+                30,
+                55
+              ],
+              "smooth_elliptic_fibre": true
+            }
+          ],
+          "index": 0,
+          "local_obstruction_proved": false
+        },
+        {
+          "Fp_point_count": 1,
+          "Fp_points": [
+            {
+              "base_t": 4,
+              "roots": [
+                0,
+                27,
+                70
+              ],
+              "smooth_elliptic_fibre": true
+            }
+          ],
+          "index": 1,
+          "local_obstruction_proved": false
+        },
+        {
+          "Fp_point_count": 1,
+          "Fp_points": [
+            {
+              "base_t": 44,
+              "roots": [
+                118,
+                23,
+                10
+              ],
+              "smooth_elliptic_fibre": true
+            }
+          ],
+          "index": 2,
+          "local_obstruction_proved": false
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "geometry_gate": {
+        "cover_degrees": [
+          2,
+          2,
+          2
+        ],
+        "cover_discriminant_gcd_degrees": [
+          0,
+          0,
+          0
+        ],
+        "cover_squarefree": [
+          true,
+          true,
+          true
+        ],
+        "discriminant_degree": 24,
+        "discriminant_squarefree": false,
+        "infinity_smooth": true,
+        "pairwise_branch_gcd_degrees": [
+          0,
+          0,
+          0
+        ]
+      },
+      "prime": 139,
+      "status": "UNKNOWN_BAD_GEOMETRY"
+    },
+    {
+      "geometry_gate": {
+        "cover_degrees": [
+          2,
+          2,
+          2
+        ],
+        "cover_discriminant_gcd_degrees": [
+          0,
+          0,
+          0
+        ],
+        "cover_squarefree": [
+          true,
+          true,
+          true
+        ],
+        "discriminant_degree": 24,
+        "discriminant_squarefree": false,
+        "infinity_smooth": true,
+        "pairwise_branch_gcd_degrees": [
+          0,
+          0,
+          0
+        ]
+      },
+      "prime": 149,
+      "status": "UNKNOWN_BAD_GEOMETRY"
+    }
+  ],
+  "schema": "rank-jump.direct-relation-local-gate.v1"
+}

@@ -1,0 +1,100 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_direct_relation_local_gate_inputs_v1.json": "fcef7028d5004ea149b807094ff2414a2516a6464825aedf24eef115f1f79aae",
+    "elliptic-curves/rank-jump/DIRECT_RELATION_LOCAL_GATE_PROTOCOL.json": "d045cea6a1d9b6ea25f66e8fa2a7fa2c024c94107e06296cf5cd1a0c8dd0e728",
+    "elliptic-curves/rank-jump/direct_relation_local_gate.py": "9b765a21dd1a194ebb9fa6480834d1a26f7022acb26a06f0f8aa5afb3d82ffb4",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "boundary": "An equation-only necessary global-solubility test for specified relation constructions. It neither excludes the original fibre nor changes active search policy.",
+  "layer": "solubility",
+  "rows": [
+    {
+      "geometry_gate": {
+        "cover_degrees": [
+          2,
+          2,
+          2
+        ],
+        "cover_discriminant_gcd_degrees": [
+          2,
+          0,
+          0
+        ],
+        "cover_squarefree": [
+          true,
+          true,
+          true
+        ],
+        "discriminant_degree": 24,
+        "discriminant_squarefree": false,
+        "infinity_smooth": true,
+        "pairwise_branch_gcd_degrees": [
+          0,
+          0,
+          0
+        ]
+      },
+      "prime": 53,
+      "status": "UNKNOWN_BAD_GEOMETRY"
+    },
+    {
+      "geometry_gate": {
+        "cover_degrees": [
+          2,
+          2,
+          2
+        ],
+        "cover_discriminant_gcd_degrees": [
+          0,
+          0,
+          1
+        ],
+        "cover_squarefree": [
+          true,
+          true,
+          true
+        ],
+        "discriminant_degree": 24,
+        "discriminant_squarefree": false,
+        "infinity_smooth": true,
+        "pairwise_branch_gcd_degrees": [
+          0,
+          0,
+          0
+        ]
+      },
+      "prime": 61,
+      "status": "UNKNOWN_BAD_GEOMETRY"
+    },
+    {
+      "geometry_gate": {
+        "cover_degrees": [
+          2,
+          2,
+          2
+        ],
+        "cover_discriminant_gcd_degrees": [
+          0,
+          0,
+          1
+        ],
+        "cover_squarefree": [
+          true,
+          true,
+          true
+        ],
+        "discriminant_degree": 24,
+        "discriminant_squarefree": false,
+        "infinity_smooth": true,
+        "pairwise_branch_gcd_degrees": [
+          0,
+          0,
+          0
+        ]
+      },
+      "prime": 73,
+      "status": "UNKNOWN_BAD_GEOMETRY"
+    }
+  ],
+  "schema": "rank-jump.direct-relation-local-gate.v1"
+}

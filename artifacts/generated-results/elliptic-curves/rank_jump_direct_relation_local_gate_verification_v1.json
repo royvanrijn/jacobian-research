@@ -1,0 +1,113 @@
+{
+  "after_detector_comparison_with_finite_schemes": [
+    {
+      "direct_Fp_points": 1,
+      "finite_scheme_simple_Fp_roots": 1,
+      "index": 0,
+      "prime": 131,
+      "relation_Qp_solubility": "YES"
+    },
+    {
+      "direct_Fp_points": 1,
+      "finite_scheme_simple_Fp_roots": 1,
+      "index": 1,
+      "prime": 131,
+      "relation_Qp_solubility": "YES"
+    },
+    {
+      "direct_Fp_points": 0,
+      "finite_scheme_simple_Fp_roots": 0,
+      "index": 2,
+      "prime": 131,
+      "relation_Qp_solubility": "NO"
+    },
+    {
+      "direct_Fp_points": 1,
+      "finite_scheme_simple_Fp_roots": 1,
+      "index": 0,
+      "prime": 137,
+      "relation_Qp_solubility": "YES"
+    },
+    {
+      "direct_Fp_points": 1,
+      "finite_scheme_simple_Fp_roots": 1,
+      "index": 1,
+      "prime": 137,
+      "relation_Qp_solubility": "YES"
+    },
+    {
+      "direct_Fp_points": 1,
+      "finite_scheme_simple_Fp_roots": 1,
+      "index": 2,
+      "prime": 137,
+      "relation_Qp_solubility": "YES"
+    }
+  ],
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_direct_relation_good_primes_v1.json": "e2c129fedfed7820dcb426fa960a2c000f3d82a4ab6e87f3dac525709f597a18",
+    "artifacts/generated-results/elliptic-curves/rank_jump_direct_relation_local_gate_inputs_v1.json": "fcef7028d5004ea149b807094ff2414a2516a6464825aedf24eef115f1f79aae",
+    "artifacts/generated-results/elliptic-curves/rank_jump_direct_relation_local_gate_v1.json": "1ff18014f1d185d410356d4e5794022acbdc1f7715af645f25826c769736cd91",
+    "artifacts/generated-results/elliptic-curves/rank_jump_triple_translate_control_0_v1.json": "dcf5e8ffd61c6cc3ec424dc318972c5ea022f71a6ebb98187fa1fb6e0dfa97df",
+    "artifacts/generated-results/elliptic-curves/rank_jump_triple_translate_control_1_v1.json": "58e6a06838e1a56a54ed2663053eef0d217e4434a6a6b780beed25093510234a",
+    "artifacts/generated-results/elliptic-curves/rank_jump_triple_translate_control_2_v1.json": "63b2f94d97e9818adbf2be23efe03b8980bd4682ebdc9c2f388c412a09e73ff9",
+    "artifacts/generated-results/elliptic-curves/rank_jump_triple_translate_controls_verification_v1.json": "d1b7a2785b52ccf32841e3b65e6d40260dc38d941f83d568d487fec1e983c5d5",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_direct_relation_local_gate.py": "ff4cb19daba2658c150007b5a0124d11a97ace35d0ac409fd46b8b4a6e2da741"
+  },
+  "boundary": "Sage elliptic groups and independent nodal normalization replay every projective carrier point; polynomial-root comparisons enter only afterwards. Bad surface reductions remain UNKNOWN.",
+  "rows": [
+    {
+      "prime": 53,
+      "status": "VERIFIED_UNKNOWN_BAD_GEOMETRY"
+    },
+    {
+      "prime": 61,
+      "status": "VERIFIED_UNKNOWN_BAD_GEOMETRY"
+    },
+    {
+      "prime": 73,
+      "status": "VERIFIED_UNKNOWN_BAD_GEOMETRY"
+    },
+    {
+      "carrier_Fp_points": 116,
+      "infinity_included": true,
+      "nodal_fibres": [
+        {
+          "base_t": 42,
+          "carrier_points_above": 8,
+          "double_root": 20,
+          "split": true
+        }
+      ],
+      "prime": 131,
+      "relation_Fp_points": [
+        1,
+        1,
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "carrier_Fp_points": 120,
+      "infinity_included": true,
+      "nodal_fibres": [],
+      "prime": 137,
+      "relation_Fp_points": [
+        1,
+        1,
+        1
+      ],
+      "status": "PASS"
+    },
+    {
+      "prime": 139,
+      "status": "VERIFIED_UNKNOWN_BAD_GEOMETRY"
+    },
+    {
+      "prime": 149,
+      "status": "VERIFIED_UNKNOWN_BAD_GEOMETRY"
+    }
+  ],
+  "schema": "rank-jump.direct-relation-local-gate-verification.v1",
+  "status": "PASS"
+}

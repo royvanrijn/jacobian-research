@@ -1,0 +1,11 @@
+{
+  "schema": "rank-jump.direct-relation-local-gate-protocol.v1",
+  "layer": "solubility",
+  "question": "Can the two matched local obstructions be detected from native cover equations and generic section words, without the characteristic-zero intersection polynomial?",
+  "selection": "The same three frozen lattice-selected translates and the same native triple. Fix primes 53 and 61 from the preceding certified obstructions, plus 73 as a successful calibration prime. The detector receives only generic equations, primitive quadratic cover forms, their exact rational square scalings, and the selected generic words. No original characteristic-zero intersection result, exceptional point, rational parameter, or observed rank is passed to the detector.",
+  "geometry_gate": "Require integral coefficients at p, the original discriminant of degree24 squarefree modulo p, smooth original infinity fibre, and three degree-two squarefree cover branch polynomials with pairwise disjoint branch divisors disjoint from the original discriminant. Verify all section and lift identities modulo p. Failure leaves that prime UNKNOWN.",
+  "method": "Enumerate every fibre of the proper three-conic carrier above P1(Fp), including infinity and cover branch points. Evaluate all square-root choices in the weighted native polynomial maps. Compute each generic translate from the specialized published basis. Test P_A-P_B+P_D=S in the smooth group of the Weierstrass fibre, including nonsingular points on nodal fibres. No rational-function elimination or characteristic-zero factorization is used. A complete empty set gives a local solubility obstruction by proper reduction.",
+  "limits": {"fixed_translates":3,"fixed_primes":[53,61,73],"workers":1,"seconds_per_worker":60,"new_original_parameters_or_point_searches":0},
+  "failure_semantics": "A missed affine chart, bad geometry gate, singular image point or invalid group operation prevents exclusion. Nonempty reduction is only a necessary condition for a Qp point, and is not a rational point or rank certificate. The comparisons are retrospective and do not validate new cover-triple selection.",
+  "boundary": "An equation-only necessary global-solubility test for specified relation constructions. It neither excludes the original fibre nor changes active search policy."
+}

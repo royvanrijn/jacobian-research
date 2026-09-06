@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.direct-relation-good-primes-protocol.v1",
+  "layer": "solubility",
+  "question": "After all three initial primes failed the surface-reduction gate, does the same direct detector give certified exclusions at a fixed larger prime panel?",
+  "selection": "Keep exactly the same three translates and native triple. Use the first four primes at least131: 131,137,139,149. The first is already known to preserve the original surface and all twelve previous native branch divisors. Do not replace individual failed primes based on their outcomes.",
+  "method": "Reuse the original direct equation-only detector and all its geometry, nodal-group, projective-chart and failure gates unchanged. No characteristic-zero intersection polynomial is an input. Compare with existing intersection certificates only in the later verifier.",
+  "limits": {"fixed_translates":3,"fixed_primes":[131,137,139,149],"workers":1,"seconds_per_worker":60,"new_original_parameters_or_point_searches":0},
+  "failure_semantics": "A bad surface/cover reduction remains UNKNOWN. A complete empty finite-field relation set proves a local obstruction only after every geometry gate passes. A nonempty set proves neither local lifting nor a global point.",
+  "boundary": "A second fixed finite-field panel for the same retrospective relation constructions. It does not modify or enlarge the active curve search."
+}

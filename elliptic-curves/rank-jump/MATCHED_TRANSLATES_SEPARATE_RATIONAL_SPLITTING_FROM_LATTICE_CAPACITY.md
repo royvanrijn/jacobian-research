@@ -1,5 +1,11 @@
 # Matched translates separate rational splitting from lattice capacity
 
+**Direct-equation follow-up:** a [complete projective finite-field test](DIRECT_NATIVE_RELATION_TEST_GIVES_A_LOCAL_OBSTRUCTION.md)
+now excludes control 2 at 131 without characteristic-zero elimination.
+It includes nodal fibres and branch roots, while bad surface reductions
+remain UNKNOWN. Control 0 passes the two good primes but remains globally
+insoluble, so the direct test is only a necessary solubility condition.
+
 Three translates chosen by the generic lattice alone give the same
 intersection degree twelve on the same successful native triple. Two have
 irreducible degree-twelve intersection polynomials and no rational points.
