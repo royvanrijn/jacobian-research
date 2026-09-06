@@ -1,0 +1,66 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_triple_intersection_inputs_v1.json": "061bfa592f87db5c186e54bc73035505af07e52a74cb2a5f3dc7804fa1a8d017",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_triple_intersection_v1.json": "9457865c87fc7aee8a860798b605353e7215c2fc30217b712367a77de81d7c86",
+    "artifacts/generated-results/elliptic-curves/rank_jump_triple_translate_control_0_inputs_v1.json": "aac09b66c825de7ee2537de3001c8b4d360399b133b384e64e245161be4c3b25",
+    "artifacts/generated-results/elliptic-curves/rank_jump_triple_translate_control_0_v1.json": "dcf5e8ffd61c6cc3ec424dc318972c5ea022f71a6ebb98187fa1fb6e0dfa97df",
+    "artifacts/generated-results/elliptic-curves/rank_jump_triple_translate_control_1_inputs_v1.json": "0f738a551b6ee5a51a4b71bff32d73dfd6041bf624ea3659532a2c8347c41427",
+    "artifacts/generated-results/elliptic-curves/rank_jump_triple_translate_control_1_v1.json": "58e6a06838e1a56a54ed2663053eef0d217e4434a6a6b780beed25093510234a",
+    "artifacts/generated-results/elliptic-curves/rank_jump_triple_translate_control_2_inputs_v1.json": "f71a201dc7113442ef5ef2e9398a3947d03cc82a7e54c2fddf56bacb9aa9d33a",
+    "artifacts/generated-results/elliptic-curves/rank_jump_triple_translate_control_2_v1.json": "63b2f94d97e9818adbf2be23efe03b8980bd4682ebdc9c2f388c412a09e73ff9",
+    "artifacts/generated-results/elliptic-curves/rank_jump_triple_translate_selection_v1.json": "521edc9dbdbe46068c441668fcbef225cc2c1368c8a6c08d73a158d22f9211be",
+    "elliptic-curves/rank-jump/TRIPLE_TRANSLATE_CONTROL_PROTOCOL.json": "2cec94da16ef98df287d8711abf36c9422cf93c6480dad968cca9ab811c56c0b",
+    "elliptic-curves/rank-jump/native_triple_intersection.py": "4f55c49ab12f2dccf4d307522ff21ce5f0c4f91f1597fa068590cc5f8d9e47f7",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/triple_translate_controls.py": "9810ef7e7f17bb5d7ece1c17a530550a625dacbdb669d1d815028a1af4757be2"
+  },
+  "boundary": "Matched retrospective solubility controls with generic lattice-only translate selection. Neither intersection degree nor the existence of a rational component alone certifies a high-rank fibre or a new selector.",
+  "rows": [
+    {
+      "execution": {
+        "returncode": 0,
+        "status": "COMPLETE"
+      },
+      "factor_degrees": [
+        12
+      ],
+      "frozen_hits": [],
+      "index": 0,
+      "intersection_degree": 12,
+      "log": "Geometry gate {'translate_height': 10, 'residual_trace_vector': [1, 1, 0, 0, 2, -2, 0, -1, -1, 1, 1, 0, 0, 0, -1, 1, -1], 'residual_trace_height': 10, 'pair_image_trace': [0, 2, -2, 0, 2, -4, 0, -2, 0, 2, 2, -2, -2, 2, 0, 2, 0], 'pair_image_fibre_degree': 4, 'pair_image_zero_intersection': 8, 'pair_image_square': 16, 'pair_image_arithmetic_genus': 9, 'pair_carrier_genus': 1, 'predicted_proper_intersection_degree': 12}\nBiquadratic sum formed\nNorm degree 84 common degree 12\nFinite algebra exact relation verified; factoring\nControl 0 degree 12 factor degrees [12]\n",
+      "result": "artifacts/generated-results/elliptic-curves/rank_jump_triple_translate_control_0_v1.json"
+    },
+    {
+      "execution": {
+        "returncode": 0,
+        "status": "COMPLETE"
+      },
+      "factor_degrees": [
+        1,
+        11
+      ],
+      "frozen_hits": [
+        "08234-003"
+      ],
+      "index": 1,
+      "intersection_degree": 12,
+      "log": "Geometry gate {'translate_height': 10, 'residual_trace_vector': [1, 1, 0, -2, 2, -2, 2, -1, 1, 1, 1, 0, 0, 0, -1, -1, 1], 'residual_trace_height': 10, 'pair_image_trace': [0, 2, -2, -4, 2, -4, 4, -2, 4, 2, 2, -2, -2, 2, 0, -2, 4], 'pair_image_fibre_degree': 4, 'pair_image_zero_intersection': 10, 'pair_image_square': 16, 'pair_image_arithmetic_genus': 9, 'pair_carrier_genus': 1, 'predicted_proper_intersection_degree': 12}\nBiquadratic sum formed\nNorm degree 96 common degree 12\nFinite algebra exact relation verified; factoring\nControl 1 degree 12 factor degrees [1, 11]\n",
+      "result": "artifacts/generated-results/elliptic-curves/rank_jump_triple_translate_control_1_v1.json"
+    },
+    {
+      "execution": {
+        "returncode": 0,
+        "status": "COMPLETE"
+      },
+      "factor_degrees": [
+        12
+      ],
+      "frozen_hits": [],
+      "index": 2,
+      "intersection_degree": 12,
+      "log": "Geometry gate {'translate_height': 10, 'residual_trace_vector': [1, -1, 0, 0, 0, -2, 2, 1, -1, -1, 3, 2, 2, 0, -1, -1, 1], 'residual_trace_height': 10, 'pair_image_trace': [0, -2, -2, 0, -2, -4, 4, 2, 0, -2, 6, 2, 2, 2, 0, -2, 4], 'pair_image_fibre_degree': 4, 'pair_image_zero_intersection': 10, 'pair_image_square': 16, 'pair_image_arithmetic_genus': 9, 'pair_carrier_genus': 1, 'predicted_proper_intersection_degree': 12}\nBiquadratic sum formed\nNorm degree 96 common degree 12\nFinite algebra exact relation verified; factoring\nControl 2 degree 12 factor degrees [12]\n",
+      "result": "artifacts/generated-results/elliptic-curves/rank_jump_triple_translate_control_2_v1.json"
+    }
+  ],
+  "schema": "rank-jump.triple-translate-controls.v1"
+}

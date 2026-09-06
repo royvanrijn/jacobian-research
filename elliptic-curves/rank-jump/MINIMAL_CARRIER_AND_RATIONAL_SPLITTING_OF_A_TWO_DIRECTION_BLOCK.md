@@ -1,5 +1,11 @@
 # The marked minimal carrier of a successful two-direction block
 
+**Matched-translate follow-up:** [three lattice-selected controls](MATCHED_TRANSLATES_SEPARATE_RATIONAL_SPLITTING_FROM_LATTICE_CAPACITY.md)
+now give two irreducible S12 intersection schemes and the successful
+1+S11 scheme at the same intersection degree. The negative schemes have
+local obstructions at 61 and 53; generic trace norms do not force rational
+splitting.
+
 For the certified two-direction subblock on the +7 R17 fibre `08234-003`,
 the minimal carrier of the **specified native character directions** is
 an explicit genus-one curve of degree four over the parameter line:

@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: the minimal marked genus-one carrier and a rational component producing two directions](MINIMAL_CARRIER_AND_RATIONAL_SPLITTING_OF_A_TWO_DIRECTION_BLOCK.md)
+- [Latest: matched translates separate a rational component from S12 and local obstructions](MATCHED_TRANSLATES_SEPARATE_RATIONAL_SPLITTING_FROM_LATTICE_CAPACITY.md)
+- [The minimal marked genus-one carrier and a rational component producing two directions](MINIMAL_CARRIER_AND_RATIONAL_SPLITTING_OF_A_TWO_DIRECTION_BLOCK.md)
 - [A norm-six trace class forces a rational simultaneous lift, with one quotient direction](NORM_SIX_INTERSECTION_FORCES_NATIVE_PAIR_SOLUBILITY.md)
 - [Both soluble quartets have exact quotient rank 3; the +8 pair collapses to one line](PAIRED_SOLUBILITY_AND_SPECIALIZATION_COLLAPSE.md)
 - [A native twist has generic rank at most 7, insufficient for the full observed +8](NATIVE_SINGLE_COVER_CANNOT_EXPLAIN_THE_WHOLE_PLUS8.md)
@@ -67,6 +68,7 @@ Retrospective analyses with pinned inputs, independent of the active curve searc
 Replay from the repository root, using Python 3.12 and its standard library:
 
 ```sh
+sage -python elliptic-curves/rank-jump/verify_triple_translate_controls.py check
 sage -python elliptic-curves/rank-jump/native_triple_intersection.py check
 sage -python elliptic-curves/rank-jump/verify_native_triple_carrier.py check
 sage -python elliptic-curves/rank-jump/native_pair_collapse_locus.py check
