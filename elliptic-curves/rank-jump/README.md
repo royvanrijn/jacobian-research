@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: strict soluble blocks force ordinary ideal-class 2-torsion](STRICT_HALF_IDEALS_AND_UNIT_KERNEL.md)
+- [Latest: soluble half ideals split off elementary S-class factors](SOLUBLE_ELEMENTARY_S_CLASS_BLOCKS.md)
+- [Strict soluble blocks force ordinary ideal-class 2-torsion](STRICT_HALF_IDEALS_AND_UNIT_KERNEL.md)
 - [A canonical derivative class closes the full Selmer boundary](DERIVATIVE_RECIPROCITY_AND_COMPLETE_BOUNDARY.md)
 - [Strict Selmer incidence and concrete Artin-dual ideal blocks](STRICT_SELMER_AND_ARTIN_BLOCKS.md)
 - [Bad-place support and unramified class-field blocks](BAD_PLACE_CLASS_FIELD_BLOCKS.md)
@@ -60,6 +61,9 @@ python3 elliptic-curves/rank-jump/strict_artin.py check
 python3 elliptic-curves/rank-jump/strict_selmer_model.py check
 python3 elliptic-curves/rank-jump/derivative_local_duality.py check
 python3 elliptic-curves/rank-jump/strict_half_ideals.py check
+python3 elliptic-curves/rank-jump/half_ideal_artin.py check
+python3 elliptic-curves/rank-jump/half_ideal_artin_completion.py check
+python3 elliptic-curves/rank-jump/half_ideal_class_blocks.py check
 ```
 
 Optional independent Hilbert-symbol check: `sage -python -m unittest discover -s elliptic-curves/rank-jump -p test_local_collision.py`.

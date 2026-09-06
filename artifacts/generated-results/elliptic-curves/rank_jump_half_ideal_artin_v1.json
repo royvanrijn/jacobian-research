@@ -1,0 +1,305 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_strict_half_ideal_inputs_v2.json": "4a06d81ba1fbc24c0dc1d9af89e0387b980ab7bde036d5275849e3d26a926ba7",
+    "elliptic-curves/rank-jump/HALF_IDEAL_ARTIN_PROTOCOL.json": "15195d42d2df10f88ec7457e1e875f50ad4906a8f0daf1f2ff6d98ca410bf733",
+    "elliptic-curves/rank-jump/half_ideal_artin.py": "bbc10c8cd0c0d6ac6c93835cb608fd114389a6d423b71c3fc41e6ab81d0aae4b"
+  },
+  "input_sha256": "d27ca47c62c31c94587546076bd89dd15d4db97c970d9f503acb19d924c838dd",
+  "rows": [
+    {
+      "S_class_mod_two_half_ideal_image_dimension_lower_bound": 8,
+      "artin_rank": 8,
+      "boundary": "Retrospective pairing of known strict characters with known half ideals; no full class group or CT computation. Zero on known characters is not a triviality or divisibility certificate.",
+      "case_index": 0,
+      "complete_columns": 8,
+      "generic_artin_rank": 1,
+      "generic_columns_complete": true,
+      "generic_strict_dimension": 1,
+      "id": "a1-fibration-05:307/206",
+      "known_strict_dimension": 10,
+      "matrix_rows": [
+        [
+          1,
+          0,
+          1,
+          null,
+          null,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          null,
+          null,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          null,
+          null,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          null,
+          null,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      "relative_S_class_mod_two_half_ideal_image_dimension_lower_bound": 7
+    },
+    {
+      "S_class_mod_two_half_ideal_image_dimension_lower_bound": 7,
+      "artin_rank": 7,
+      "boundary": "Retrospective pairing of known strict characters with known half ideals; no full class group or CT computation. Zero on known characters is not a triviality or divisibility certificate.",
+      "case_index": 4,
+      "complete_columns": 7,
+      "generic_artin_rank": 1,
+      "generic_columns_complete": false,
+      "generic_strict_dimension": 2,
+      "id": "published-R17:-2300/843",
+      "known_strict_dimension": 8,
+      "matrix_rows": [
+        [
+          null,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          null,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          null,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          null,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          null,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          null,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          null,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          null,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      "relative_S_class_mod_two_half_ideal_image_dimension_lower_bound": 5
+    },
+    {
+      "S_class_mod_two_half_ideal_image_dimension_lower_bound": 5,
+      "artin_rank": 5,
+      "boundary": "Retrospective pairing of known strict characters with known half ideals; no full class group or CT computation. Zero on known characters is not a triviality or divisibility certificate.",
+      "case_index": 5,
+      "complete_columns": 5,
+      "generic_artin_rank": 5,
+      "generic_columns_complete": false,
+      "generic_strict_dimension": 6,
+      "id": "published-R17:-1561/3133",
+      "known_strict_dimension": 6,
+      "matrix_rows": [
+        [
+          1,
+          1,
+          1,
+          0,
+          null,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          null,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          null,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1,
+          null,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          null,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          null,
+          1
+        ]
+      ],
+      "relative_S_class_mod_two_half_ideal_image_dimension_lower_bound": 0
+    }
+  ],
+  "schema": "rank-jump.half-ideal-artin.v1"
+}

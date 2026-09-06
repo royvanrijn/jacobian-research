@@ -1,0 +1,317 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_half_ideal_artin_inputs_v1.json": "d27ca47c62c31c94587546076bd89dd15d4db97c970d9f503acb19d924c838dd",
+    "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_strict_half_ideal_inputs_v2.json": "4a06d81ba1fbc24c0dc1d9af89e0387b980ab7bde036d5275849e3d26a926ba7",
+    "elliptic-curves/rank-jump/HALF_IDEAL_ARTIN_COMPLETION_PROTOCOL.json": "623e96c18212bc9444826657891c373c9046acbfdf7f2b3459784fe36e279f08",
+    "elliptic-curves/rank-jump/half_ideal_artin_completion.py": "cf446a847976f6d8a26954e0e0b70dc4200aebe566c20adec8e387e85712c03a"
+  },
+  "cases": [
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_half_ideal_artin_inputs_v1.json": "d27ca47c62c31c94587546076bd89dd15d4db97c970d9f503acb19d924c838dd",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+        "artifacts/generated-results/elliptic-curves/rank_jump_strict_half_ideal_inputs_v2.json": "4a06d81ba1fbc24c0dc1d9af89e0387b980ab7bde036d5275849e3d26a926ba7",
+        "elliptic-curves/rank-jump/HALF_IDEAL_ARTIN_COMPLETION_PROTOCOL.json": "623e96c18212bc9444826657891c373c9046acbfdf7f2b3459784fe36e279f08",
+        "elliptic-curves/rank-jump/half_ideal_artin_completion.py": "cf446a847976f6d8a26954e0e0b70dc4200aebe566c20adec8e387e85712c03a"
+      },
+      "case_index": 0,
+      "id": "a1-fibration-05:307/206",
+      "repairs": [
+        {
+          "artin_bit": 0,
+          "beta_local_valuation": 2,
+          "character": 0,
+          "cofactor": "1456835516597926969215173537021679997243543",
+          "cofactor_jacobi_symbol": 1,
+          "cofactor_residue": "943024191590143043949349823553855093694045",
+          "column": 3,
+          "independent_point_bit": 0,
+          "local_frobenius_bit": 0,
+          "prime": 191,
+          "prime_exponent": 1,
+          "theta_residue": 161
+        },
+        {
+          "artin_bit": 0,
+          "beta_local_valuation": 2,
+          "character": 1,
+          "cofactor": "1456835516597926969215173537021679997243543",
+          "cofactor_jacobi_symbol": 1,
+          "cofactor_residue": "297720513327612281385664595015893653959222",
+          "column": 3,
+          "independent_point_bit": 0,
+          "local_frobenius_bit": 0,
+          "prime": 191,
+          "prime_exponent": 1,
+          "theta_residue": 161
+        },
+        {
+          "artin_bit": 1,
+          "beta_local_valuation": 2,
+          "character": 4,
+          "cofactor": "1456835516597926969215173537021679997243543",
+          "cofactor_jacobi_symbol": 1,
+          "cofactor_residue": "1382749946224570042759218452085258721927072",
+          "column": 3,
+          "independent_point_bit": 1,
+          "local_frobenius_bit": 1,
+          "prime": 191,
+          "prime_exponent": 1,
+          "theta_residue": 161
+        },
+        {
+          "artin_bit": 0,
+          "beta_local_valuation": 2,
+          "character": 5,
+          "cofactor": "1456835516597926969215173537021679997243543",
+          "cofactor_jacobi_symbol": 1,
+          "cofactor_residue": "741092055069049608686441408720771892011588",
+          "column": 3,
+          "independent_point_bit": 0,
+          "local_frobenius_bit": 0,
+          "prime": 191,
+          "prime_exponent": 1,
+          "theta_residue": 161
+        },
+        {
+          "artin_bit": 0,
+          "beta_local_valuation": 2,
+          "character": 8,
+          "cofactor": "1456835516597926969215173537021679997243543",
+          "cofactor_jacobi_symbol": -1,
+          "cofactor_residue": "678603910153115828447083086416587944988403",
+          "column": 3,
+          "independent_point_bit": 1,
+          "local_frobenius_bit": 1,
+          "prime": 191,
+          "prime_exponent": 1,
+          "theta_residue": 161
+        },
+        {
+          "artin_bit": 1,
+          "beta_local_valuation": 2,
+          "character": 9,
+          "cofactor": "1456835516597926969215173537021679997243543",
+          "cofactor_jacobi_symbol": -1,
+          "cofactor_residue": "767984260002326874823953718339239000676457",
+          "column": 3,
+          "independent_point_bit": 0,
+          "local_frobenius_bit": 0,
+          "prime": 191,
+          "prime_exponent": 1,
+          "theta_residue": 161
+        },
+        {
+          "artin_bit": 1,
+          "beta_local_valuation": 2,
+          "character": 1,
+          "cofactor": "1305441044453980842347790469940261011588858843",
+          "cofactor_jacobi_symbol": -1,
+          "cofactor_residue": "199413055468921177364006933547553980345481673",
+          "column": 4,
+          "independent_point_bit": 0,
+          "local_frobenius_bit": 0,
+          "prime": 53,
+          "prime_exponent": 1,
+          "theta_residue": 36
+        },
+        {
+          "artin_bit": 0,
+          "beta_local_valuation": 2,
+          "character": 2,
+          "cofactor": "1305441044453980842347790469940261011588858843",
+          "cofactor_jacobi_symbol": -1,
+          "cofactor_residue": "290812326043847875406588019256083016213866681",
+          "column": 4,
+          "independent_point_bit": 1,
+          "local_frobenius_bit": 1,
+          "prime": 53,
+          "prime_exponent": 1,
+          "theta_residue": 36
+        },
+        {
+          "artin_bit": 1,
+          "beta_local_valuation": 2,
+          "character": 4,
+          "cofactor": "1305441044453980842347790469940261011588858843",
+          "cofactor_jacobi_symbol": 1,
+          "cofactor_residue": "1198892472646137972039024088985420272293423384",
+          "column": 4,
+          "independent_point_bit": 1,
+          "local_frobenius_bit": 1,
+          "prime": 53,
+          "prime_exponent": 1,
+          "theta_residue": 36
+        },
+        {
+          "artin_bit": 1,
+          "beta_local_valuation": 2,
+          "character": 5,
+          "cofactor": "1305441044453980842347790469940261011588858843",
+          "cofactor_jacobi_symbol": 1,
+          "cofactor_residue": "491613316071431407135615563778296677569698128",
+          "column": 4,
+          "independent_point_bit": 1,
+          "local_frobenius_bit": 1,
+          "prime": 53,
+          "prime_exponent": 1,
+          "theta_residue": 36
+        },
+        {
+          "artin_bit": 0,
+          "beta_local_valuation": 2,
+          "character": 6,
+          "cofactor": "1305441044453980842347790469940261011588858843",
+          "cofactor_jacobi_symbol": 1,
+          "cofactor_residue": "100204026221110365673742646007926412627898310",
+          "column": 4,
+          "independent_point_bit": 0,
+          "local_frobenius_bit": 0,
+          "prime": 53,
+          "prime_exponent": 1,
+          "theta_residue": 36
+        },
+        {
+          "artin_bit": 0,
+          "beta_local_valuation": 2,
+          "character": 7,
+          "cofactor": "1305441044453980842347790469940261011588858843",
+          "cofactor_jacobi_symbol": -1,
+          "cofactor_residue": "982782983217451164971587770745222207389546360",
+          "column": 4,
+          "independent_point_bit": 1,
+          "local_frobenius_bit": 1,
+          "prime": 53,
+          "prime_exponent": 1,
+          "theta_residue": 36
+        },
+        {
+          "artin_bit": 1,
+          "beta_local_valuation": 2,
+          "character": 8,
+          "cofactor": "1305441044453980842347790469940261011588858843",
+          "cofactor_jacobi_symbol": 1,
+          "cofactor_residue": "962154385886912643903752118695694715364062881",
+          "column": 4,
+          "independent_point_bit": 1,
+          "local_frobenius_bit": 1,
+          "prime": 53,
+          "prime_exponent": 1,
+          "theta_residue": 36
+        }
+      ]
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_half_ideal_artin_inputs_v1.json": "d27ca47c62c31c94587546076bd89dd15d4db97c970d9f503acb19d924c838dd",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+        "artifacts/generated-results/elliptic-curves/rank_jump_strict_half_ideal_inputs_v2.json": "4a06d81ba1fbc24c0dc1d9af89e0387b980ab7bde036d5275849e3d26a926ba7",
+        "elliptic-curves/rank-jump/HALF_IDEAL_ARTIN_COMPLETION_PROTOCOL.json": "623e96c18212bc9444826657891c373c9046acbfdf7f2b3459784fe36e279f08",
+        "elliptic-curves/rank-jump/half_ideal_artin_completion.py": "cf446a847976f6d8a26954e0e0b70dc4200aebe566c20adec8e387e85712c03a"
+      },
+      "case_index": 4,
+      "id": "published-R17:-2300/843",
+      "repairs": [
+        {
+          "artin_bit": 0,
+          "beta_local_valuation": 2,
+          "character": 2,
+          "cofactor": "16024408442323949363846509897837669254919766503543",
+          "cofactor_jacobi_symbol": 1,
+          "cofactor_residue": "13949998291951339882803660430164699012800459200113",
+          "column": 0,
+          "independent_point_bit": 0,
+          "local_frobenius_bit": 0,
+          "prime": 59,
+          "prime_exponent": 1,
+          "theta_residue": 50
+        },
+        {
+          "artin_bit": 1,
+          "beta_local_valuation": 2,
+          "character": 3,
+          "cofactor": "16024408442323949363846509897837669254919766503543",
+          "cofactor_jacobi_symbol": -1,
+          "cofactor_residue": "971224255563474968130566809366250642094517531420",
+          "column": 0,
+          "independent_point_bit": 0,
+          "local_frobenius_bit": 0,
+          "prime": 59,
+          "prime_exponent": 1,
+          "theta_residue": 50
+        },
+        {
+          "artin_bit": 1,
+          "beta_local_valuation": 2,
+          "character": 4,
+          "cofactor": "16024408442323949363846509897837669254919766503543",
+          "cofactor_jacobi_symbol": 1,
+          "cofactor_residue": "9117095427562998200005259890184121778415810938416",
+          "column": 0,
+          "independent_point_bit": 1,
+          "local_frobenius_bit": 1,
+          "prime": 59,
+          "prime_exponent": 1,
+          "theta_residue": 50
+        },
+        {
+          "artin_bit": 1,
+          "beta_local_valuation": 2,
+          "character": 6,
+          "cofactor": "16024408442323949363846509897837669254919766503543",
+          "cofactor_jacobi_symbol": -1,
+          "cofactor_residue": "6664758808527484162845787562087428780175534072305",
+          "column": 0,
+          "independent_point_bit": 0,
+          "local_frobenius_bit": 0,
+          "prime": 59,
+          "prime_exponent": 1,
+          "theta_residue": 50
+        },
+        {
+          "artin_bit": 0,
+          "beta_local_valuation": 2,
+          "character": 7,
+          "cofactor": "16024408442323949363846509897837669254919766503543",
+          "cofactor_jacobi_symbol": -1,
+          "cofactor_residue": "5712100799138707650263157761798917751509141726889",
+          "column": 0,
+          "independent_point_bit": 1,
+          "local_frobenius_bit": 1,
+          "prime": 59,
+          "prime_exponent": 1,
+          "theta_residue": 50
+        }
+      ]
+    },
+    {
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_half_ideal_artin_inputs_v1.json": "d27ca47c62c31c94587546076bd89dd15d4db97c970d9f503acb19d924c838dd",
+        "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+        "artifacts/generated-results/elliptic-curves/rank_jump_strict_half_ideal_inputs_v2.json": "4a06d81ba1fbc24c0dc1d9af89e0387b980ab7bde036d5275849e3d26a926ba7",
+        "elliptic-curves/rank-jump/HALF_IDEAL_ARTIN_COMPLETION_PROTOCOL.json": "623e96c18212bc9444826657891c373c9046acbfdf7f2b3459784fe36e279f08",
+        "elliptic-curves/rank-jump/half_ideal_artin_completion.py": "cf446a847976f6d8a26954e0e0b70dc4200aebe566c20adec8e387e85712c03a"
+      },
+      "case_index": 5,
+      "id": "published-R17:-1561/3133",
+      "repairs": [
+        {
+          "artin_bit": 1,
+          "beta_local_valuation": 2,
+          "character": 3,
+          "cofactor": "43357550970673909723855168997076375840547604673594679689247",
+          "cofactor_jacobi_symbol": 1,
+          "cofactor_residue": "28680419665469077207885466335377118265259072368395305877681",
+          "column": 4,
+          "independent_point_bit": 1,
+          "local_frobenius_bit": 1,
+          "prime": 29,
+          "prime_exponent": 1,
+          "theta_residue": 22
+        }
+      ]
+    }
+  ],
+  "schema": "rank-jump.half-ideal-artin-completion-inputs.v1"
+}

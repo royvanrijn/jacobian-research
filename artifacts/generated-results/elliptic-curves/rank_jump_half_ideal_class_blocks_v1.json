@@ -1,0 +1,153 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_half_ideal_artin_completion_v1.json": "8b77ed4807be853c4921f1ea3f6d6a241bfceba8e337fb07d91f2383323f28cd",
+    "artifacts/generated-results/elliptic-curves/rank_jump_half_ideal_artin_inputs_v1.json": "d27ca47c62c31c94587546076bd89dd15d4db97c970d9f503acb19d924c838dd",
+    "elliptic-curves/rank-jump/half_ideal_class_blocks.py": "55b3fa7bbd51c5522bf9235915661d677b69ea57979099c7443690471a7cb6ec"
+  },
+  "rows": [
+    {
+      "boundary": "C=H_selected direct sum ker(selected characters), H_selected elementary of the displayed dimension. epsilon=c_S-known_strict_dimension is uncomputed. A right kernel is only invisible to retained characters, not certified zero in C/2.",
+      "case_index": 0,
+      "complete_known_block_splits": false,
+      "dual_half_ideal_words": [
+        276,
+        27,
+        443,
+        151,
+        462,
+        244,
+        328,
+        454,
+        37
+      ],
+      "generic_dimension_inside_selected_factor": 1,
+      "generic_strict_dimension": 1,
+      "id": "a1-fibration-05:307/206",
+      "known_strict_dimension": 10,
+      "left_character_kernel_masks": [
+        896
+      ],
+      "left_character_kernel_point_masks": [
+        29384098
+      ],
+      "relative_dimension_inside_selected_factor": 8,
+      "remaining_S_class_two_rank": "1 + epsilon",
+      "right_half_ideal_kernel_masks": [
+        637
+      ],
+      "right_half_ideal_kernel_point_masks": [
+        20890849
+      ],
+      "selected_character_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "selected_half_ideal_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "split_elementary_S_class_factor_dimension": 9
+    },
+    {
+      "boundary": "C=H_selected direct sum ker(selected characters), H_selected elementary of the displayed dimension. epsilon=c_S-known_strict_dimension is uncomputed. A right kernel is only invisible to retained characters, not certified zero in C/2.",
+      "case_index": 4,
+      "complete_known_block_splits": true,
+      "dual_half_ideal_words": [
+        6,
+        149,
+        171,
+        198,
+        79,
+        125,
+        96,
+        15
+      ],
+      "generic_dimension_inside_selected_factor": 2,
+      "generic_strict_dimension": 2,
+      "id": "published-R17:-2300/843",
+      "known_strict_dimension": 8,
+      "left_character_kernel_masks": [],
+      "left_character_kernel_point_masks": [],
+      "relative_dimension_inside_selected_factor": 6,
+      "remaining_S_class_two_rank": "0 + epsilon",
+      "right_half_ideal_kernel_masks": [],
+      "right_half_ideal_kernel_point_masks": [],
+      "selected_character_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "selected_half_ideal_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "split_elementary_S_class_factor_dimension": 8
+    },
+    {
+      "boundary": "C=H_selected direct sum ker(selected characters), H_selected elementary of the displayed dimension. epsilon=c_S-known_strict_dimension is uncomputed. A right kernel is only invisible to retained characters, not certified zero in C/2.",
+      "case_index": 5,
+      "complete_known_block_splits": true,
+      "dual_half_ideal_words": [
+        39,
+        29,
+        54,
+        6,
+        19,
+        22
+      ],
+      "generic_dimension_inside_selected_factor": 6,
+      "generic_strict_dimension": 6,
+      "id": "published-R17:-1561/3133",
+      "known_strict_dimension": 6,
+      "left_character_kernel_masks": [],
+      "left_character_kernel_point_masks": [],
+      "relative_dimension_inside_selected_factor": 0,
+      "remaining_S_class_two_rank": "0 + epsilon",
+      "right_half_ideal_kernel_masks": [],
+      "right_half_ideal_kernel_point_masks": [],
+      "selected_character_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "selected_half_ideal_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "split_elementary_S_class_factor_dimension": 6
+    }
+  ],
+  "schema": "rank-jump.half-ideal-class-blocks.v1"
+}

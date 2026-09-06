@@ -1,0 +1,73 @@
+{
+  "schema": "rank-jump.half-ideal-artin-completion-protocol.v1",
+  "layer": "incidence",
+  "question": "Complete the 19 nonunit-residue Artin entries in the fixed 24-ideal experiment using their already exposed prime gcds.",
+  "cases": [
+    0,
+    4,
+    5
+  ],
+  "frozen_exceptions": [
+    {
+      "case": 0,
+      "column": 3,
+      "prime": 191,
+      "characters": [
+        0,
+        1,
+        4,
+        5,
+        8,
+        9
+      ]
+    },
+    {
+      "case": 0,
+      "column": 4,
+      "prime": 53,
+      "characters": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "case": 4,
+      "column": 0,
+      "prime": 59,
+      "characters": [
+        2,
+        3,
+        4,
+        6,
+        7
+      ]
+    },
+    {
+      "case": 5,
+      "column": 4,
+      "prime": 29,
+      "characters": [
+        3
+      ]
+    }
+  ],
+  "construction": "For an unresolved residue gcd p, prove p prime, remove the whole p-power from the ideal norm, evaluate the unit residue by Jacobi on the cofactor, and add the local Frobenius bit at the unique degree-one prime ideal dividing the cyclic ideal, weighted by its valuation. Check the Frobenius bit independently from the retained point signatures.",
+  "limits": {
+    "curves": 3,
+    "seconds_per_curve": 30,
+    "missing_entries": 19,
+    "prime_ideals": 4,
+    "ideal_reductions": 0,
+    "norm_factorizations": 0,
+    "new_parameters": 0,
+    "point_searches": 0,
+    "class_groups": 0
+  },
+  "failure": "Unexpected gcd, nonprime gcd, nonunit cofactor residue, ambiguous local prime, failed independent comparison or timeout remains UNKNOWN. Do not add exceptions or enlarge budgets.",
+  "claim_boundary": "Completes the same retrospective pairing, without selecting new ideals or characters. Full rank, if obtained, certifies the displayed 2-torsion ideal subgroup as a direct factor of the S-class group. It does not bound the remaining class factor or prove unknown covers soluble."
+}

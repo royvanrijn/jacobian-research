@@ -1,0 +1,352 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_half_ideal_artin_inputs_v1.json": "d27ca47c62c31c94587546076bd89dd15d4db97c970d9f503acb19d924c838dd",
+    "artifacts/generated-results/elliptic-curves/rank_jump_remaining_bad_prime_inputs_v1.json": "72a49316d9d174d5a5f243f6e07a1331908373b044caf08ea4207a0edf985fc2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_strict_half_ideal_inputs_v2.json": "4a06d81ba1fbc24c0dc1d9af89e0387b980ab7bde036d5275849e3d26a926ba7",
+    "elliptic-curves/rank-jump/HALF_IDEAL_ARTIN_COMPLETION_PROTOCOL.json": "623e96c18212bc9444826657891c373c9046acbfdf7f2b3459784fe36e279f08",
+    "elliptic-curves/rank-jump/half_ideal_artin_completion.py": "cf446a847976f6d8a26954e0e0b70dc4200aebe566c20adec8e387e85712c03a"
+  },
+  "input_sha256": "6f20d6a1a634b9d15c55449119dad424bdb7732ee978c40baf733a14a8694a22",
+  "rows": [
+    {
+      "artin_rank": 9,
+      "boundary": "All ideals are certified 2-torsion. Full Artin rank certifies their direct factor in the S-class group; deficient rank is only a lower bound. The remaining class factor and unknown rational solubility are unresolved.",
+      "case_index": 0,
+      "character_dimension": 10,
+      "columns": [
+        875,
+        714,
+        453,
+        656,
+        819,
+        430,
+        39,
+        863,
+        759,
+        644
+      ],
+      "direct_factor_dimension": null,
+      "dual_half_ideal_words": [],
+      "full_rank": false,
+      "generic_artin_rank": 1,
+      "generic_strict_dimension": 1,
+      "id": "a1-fibration-05:307/206",
+      "matrix_rows": [
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      "relative_S_class_mod_two_image_dimension_lower_bound": 8
+    },
+    {
+      "artin_rank": 8,
+      "boundary": "All ideals are certified 2-torsion. Full Artin rank certifies their direct factor in the S-class group; deficient rank is only a lower bound. The remaining class factor and unknown rational solubility are unresolved.",
+      "case_index": 4,
+      "character_dimension": 8,
+      "columns": [
+        122,
+        204,
+        205,
+        251,
+        44,
+        208,
+        144,
+        153
+      ],
+      "direct_factor_dimension": 8,
+      "dual_half_ideal_words": [
+        6,
+        149,
+        171,
+        198,
+        79,
+        125,
+        96,
+        15
+      ],
+      "full_rank": true,
+      "generic_artin_rank": 2,
+      "generic_strict_dimension": 2,
+      "id": "published-R17:-2300/843",
+      "matrix_rows": [
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      "relative_S_class_mod_two_image_dimension_lower_bound": 6
+    },
+    {
+      "artin_rank": 6,
+      "boundary": "All ideals are certified 2-torsion. Full Artin rank certifies their direct factor in the S-class group; deficient rank is only a lower bound. The remaining class factor and unknown rational solubility are unresolved.",
+      "case_index": 5,
+      "character_dimension": 6,
+      "columns": [
+        45,
+        21,
+        29,
+        26,
+        40,
+        36
+      ],
+      "direct_factor_dimension": 6,
+      "dual_half_ideal_words": [
+        39,
+        29,
+        54,
+        6,
+        19,
+        22
+      ],
+      "full_rank": true,
+      "generic_artin_rank": 6,
+      "generic_strict_dimension": 6,
+      "id": "published-R17:-1561/3133",
+      "matrix_rows": [
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "relative_S_class_mod_two_image_dimension_lower_bound": 0
+    }
+  ],
+  "schema": "rank-jump.half-ideal-artin-completion.v1"
+}

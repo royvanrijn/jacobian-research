@@ -1,0 +1,27 @@
+{
+  "schema": "rank-jump.half-ideal-artin-protocol.v1",
+  "layer": "incidence",
+  "question": "Do the known strict half-ideal images survive in the S-class quotient modulo two, and how many remain beyond the generic strict images?",
+  "cases": [
+    0,
+    4,
+    5
+  ],
+  "pilot": "One ideal, the first generic strict ideal of case 0, was reduced once to establish the PARI interface and verify its principal multiplier. Its reduced lattice had cyclic quotient. No character values were inspected before this protocol.",
+  "construction": "Reduce each of the 24 retained half ideals once, keeping the exact principal multiplier. Remove prime-ideal factors above the already certified S support. If the remaining integral ideal HNF has diagonal (N,1,1), identify its residue ring with Z/N. For each retained strict character represented by an integral gamma product coprime to N in that ring, compute the ordinary Jacobi symbol. Check every ideal transport exactly.",
+  "limits": {
+    "curves": 3,
+    "half_ideals": 24,
+    "seconds_per_curve": 30,
+    "ideal_reductions_per_ideal": 1,
+    "character_evaluations": 200,
+    "new_parameters": 0,
+    "point_searches": 0,
+    "norm_factorizations": 0,
+    "class_groups": 0,
+    "alternative_reductions": 0
+  },
+  "positive": "Artin matrix rank gives a certified lower bound on the displayed half-ideal image in Cl_S/2; subtract the rank of the generic half-ideal columns for a relative image lower bound. Nonzero entries exclude disappearance under localization and divisibility by two in Cl_S for the detected classes.",
+  "failure": "A noncyclic quotient or nonunit character residue is UNKNOWN for the affected column or entry. A timeout is UNKNOWN for the curve. Use only fully evaluated columns for rank lower bounds; do not impute missing bits, increase limits, or refactor norms.",
+  "claim_boundary": "Characters and half ideals are derived from existing rational points, so all measurements are retrospective. Zero Artin evaluations on this known character subspace do not prove an ideal is zero or divisible by two in the full S-class group. This is not Cassels-Tate pairing or a solubility criterion."
+}
