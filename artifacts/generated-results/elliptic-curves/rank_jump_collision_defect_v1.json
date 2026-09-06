@@ -1,0 +1,44 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_collision_prime_lift_v1.json": "fdd9434a349845a7ea04d03b2cbd45adbd96e25cfee4259f02c436a905ad7642",
+    "artifacts/generated-results/elliptic-curves/rank_jump_soluble_quartet_compression_inputs_v1.json": "fe70c730c1f19bf3eae03f3e78b52c23ed7de041f64c1e635600561487aed976",
+    "elliptic-curves/rank-jump/COLLISION_DEFECT_PROTOCOL.json": "2c460e4c0146c97cb80739f4d5175b4fae100b5d72807ae28266b1e631cf9cc3",
+    "elliptic-curves/rank-jump/collision_defect.py": "26b35e5ada6aa4326ab9fd8ed9c12f7e8d45d2c0f79b5f7438e59d0c9b1dec59",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "boundary": "A missing bounded local witness is UNKNOWN, not an obstruction. Nonordinary collisions retain only a necessary valuation-support bound. Local points do not prove rational product points or global independence of defects.",
+  "layer": "solubility",
+  "rows": [
+    {
+      "execution": {
+        "returncode": 1,
+        "status": "FAILED"
+      },
+      "log": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/elliptic-curves/rank-jump/collision_defect.py\", line 126, in <module>\n    else: worker(args.case)\n          ~~~~~~^^^^^^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/elliptic-curves/rank-jump/collision_defect.py\", line 36, in worker\n    roots = sorted(int(a) for a in g.roots(multiplicities=False))\n                                   ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^\n  File \"sage/rings/polynomial/polynomial_element.pyx\", line 8787, in sage.rings.polynomial.polynomial_element.Polynomial.roots\n    return K._roots_univariate_polynomial(self, ring=ring, multiplicities=multiplicities, algorithm=algorithm, **kwds)\n  File \"sage/rings/finite_rings/finite_field_base.pyx\", line 2254, in sage.rings.finite_rings.finite_field_base.FiniteField._roots_univariate_polynomial\n    g = pow(x, p, f) - x\n  File \"sage/rings/polynomial/polynomial_modn_dense_ntl.pyx\", line 1946, in sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p.__pow__\n    return parent(pow(self.ntl_ZZ_pX(), n, modulus.ntl_ZZ_pX()), construct=True)\n  File \"sage/libs/ntl/ntl_ZZ_pX.pyx\", line 531, in sage.libs.ntl.ntl_ZZ_pX.ntl_ZZ_pX.__pow__\n    return (<ntl_ZZ_pX>self)._powmod(Integer(n), modulus)\n  File \"sage/libs/ntl/ntl_ZZ_pX.pyx\", line 558, in sage.libs.ntl.ntl_ZZ_pX.ntl_ZZ_pX._powmod\n    sig_on()\n  File \"sage/libs/ntl/error.pyx\", line 49, in sage.libs.ntl.error.NTL_error_callback\n    raise NTLError(char_to_str(s))\nsage.libs.ntl.error.NTLError: build: deg(f) must be at least 1\n",
+      "result": {
+        "status": "UNKNOWN"
+      }
+    },
+    {
+      "execution": {
+        "returncode": 1,
+        "status": "FAILED"
+      },
+      "log": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/elliptic-curves/rank-jump/collision_defect.py\", line 126, in <module>\n    else: worker(args.case)\n          ~~~~~~^^^^^^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/elliptic-curves/rank-jump/collision_defect.py\", line 36, in worker\n    roots = sorted(int(a) for a in g.roots(multiplicities=False))\n                                   ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^\n  File \"sage/rings/polynomial/polynomial_element.pyx\", line 8787, in sage.rings.polynomial.polynomial_element.Polynomial.roots\n    return K._roots_univariate_polynomial(self, ring=ring, multiplicities=multiplicities, algorithm=algorithm, **kwds)\n  File \"sage/rings/finite_rings/finite_field_base.pyx\", line 2254, in sage.rings.finite_rings.finite_field_base.FiniteField._roots_univariate_polynomial\n    g = pow(x, p, f) - x\n  File \"sage/rings/polynomial/polynomial_modn_dense_ntl.pyx\", line 1946, in sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p.__pow__\n    return parent(pow(self.ntl_ZZ_pX(), n, modulus.ntl_ZZ_pX()), construct=True)\n  File \"sage/libs/ntl/ntl_ZZ_pX.pyx\", line 531, in sage.libs.ntl.ntl_ZZ_pX.ntl_ZZ_pX.__pow__\n    return (<ntl_ZZ_pX>self)._powmod(Integer(n), modulus)\n  File \"sage/libs/ntl/ntl_ZZ_pX.pyx\", line 558, in sage.libs.ntl.ntl_ZZ_pX.ntl_ZZ_pX._powmod\n    sig_on()\n  File \"sage/libs/ntl/error.pyx\", line 49, in sage.libs.ntl.error.NTL_error_callback\n    raise NTLError(char_to_str(s))\nsage.libs.ntl.error.NTLError: build: deg(f) must be at least 1\n",
+      "result": {
+        "status": "UNKNOWN"
+      }
+    },
+    {
+      "execution": {
+        "returncode": 1,
+        "status": "FAILED"
+      },
+      "log": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/elliptic-curves/rank-jump/collision_defect.py\", line 126, in <module>\n    else: worker(args.case)\n          ~~~~~~^^^^^^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/elliptic-curves/rank-jump/collision_defect.py\", line 36, in worker\n    roots = sorted(int(a) for a in g.roots(multiplicities=False))\n                                   ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^\n  File \"sage/rings/polynomial/polynomial_element.pyx\", line 8787, in sage.rings.polynomial.polynomial_element.Polynomial.roots\n    return K._roots_univariate_polynomial(self, ring=ring, multiplicities=multiplicities, algorithm=algorithm, **kwds)\n  File \"sage/rings/finite_rings/finite_field_base.pyx\", line 2254, in sage.rings.finite_rings.finite_field_base.FiniteField._roots_univariate_polynomial\n    g = pow(x, p, f) - x\n  File \"sage/rings/polynomial/polynomial_modn_dense_ntl.pyx\", line 1946, in sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p.__pow__\n    return parent(pow(self.ntl_ZZ_pX(), n, modulus.ntl_ZZ_pX()), construct=True)\n  File \"sage/libs/ntl/ntl_ZZ_pX.pyx\", line 531, in sage.libs.ntl.ntl_ZZ_pX.ntl_ZZ_pX.__pow__\n    return (<ntl_ZZ_pX>self)._powmod(Integer(n), modulus)\n  File \"sage/libs/ntl/ntl_ZZ_pX.pyx\", line 558, in sage.libs.ntl.ntl_ZZ_pX.ntl_ZZ_pX._powmod\n    sig_on()\n  File \"sage/libs/ntl/error.pyx\", line 49, in sage.libs.ntl.error.NTL_error_callback\n    raise NTLError(char_to_str(s))\nsage.libs.ntl.error.NTLError: build: deg(f) must be at least 1\n",
+      "result": {
+        "status": "UNKNOWN"
+      }
+    }
+  ],
+  "schema": "rank-jump.collision-defect.v1"
+}

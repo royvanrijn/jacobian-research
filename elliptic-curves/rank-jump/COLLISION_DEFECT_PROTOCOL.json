@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.collision-defect-protocol.v1",
+  "layer": "solubility",
+  "question": "Do fixed collision primes support a common small defect, or separate pairwise valuation defects on the rational product carrier?",
+  "selection": "Exactly the three frozen quartet systems in rank_jump_soluble_quartet_compression_inputs_v1.json and their already factored resultant support. No exceptional coordinates enter the calculation.",
+  "method": "Compute all common projective roots of pairs modulo every support prime. Remove primes with no rational collision. At odd primes occurring to exponent one in exactly one pair resultant, certify simple affine collisions and construct local product-curve points with precisely that pair of odd valuations. Construct zero-valuation product points independently. Use at most 64 residues per witness, with incomplete witnesses marked UNKNOWN.",
+  "limits": {"systems": 3, "seconds_per_system": 60, "workers": 1, "residues_per_witness": 64, "new_original_rational_parameter_searches": 0, "network_requests": 0},
+  "failure_semantics": "A missing bounded local witness is UNKNOWN, not an obstruction. Nonordinary collisions retain only a necessary valuation-support bound. Local points do not prove rational product points or global independence of defects.",
+  "falsifiable_target": "The hypothesis that branch collisions leave only a proper subspace of the three native parity coordinates is rejected if certified local defect masks span the full even-parity space. Defects at different primes remain separate coordinates of the global squareclass target."
+}
