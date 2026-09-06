@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: successful quartets require genus-17 lifts; no repeated field in the finite atlas](SOLUBLE_QUARTETS_REQUIRE_HIGHER_GENUS_LIFTS.md)
+- [Latest: a native twist has generic rank at most 7, insufficient for the full observed +8](NATIVE_SINGLE_COVER_CANNOT_EXPLAIN_THE_WHOLE_PLUS8.md)
+- [Successful quartets require genus-17 lifts; no repeated field in the finite atlas](SOLUBLE_QUARTETS_REQUIRE_HIGHER_GENUS_LIFTS.md)
 - [Two individually soluble native covers have a simultaneous Sha obstruction](NATIVE_PAIR_CARRIER_HAS_A_SHA_OBSTRUCTION.md)
 - [Global carrier solubility leaves the prescribed-specialization condition open](GLOBAL_CARRIER_SOLUBILITY_AND_SPECIALIZATION.md)
 - [Four-way solubility obstructions survive every pair and triple check](LOCAL_SOLUBILITY_IS_NOT_PAIRWISE.md)
@@ -63,6 +64,9 @@ Retrospective analyses with pinned inputs, independent of the active curve searc
 Replay from the repository root, using Python 3.12 and its standard library:
 
 ```sh
+sage -python elliptic-curves/rank-jump/verify_native_twist_frobenius.py check
+sage -python elliptic-curves/rank-jump/native_twist_moment_parity.py check
+python3 elliptic-curves/rank-jump/native_twist_jump_boundary.py check
 python3 elliptic-curves/rank-jump/soluble_quartet_compression.py check
 python3 elliptic-curves/rank-jump/atlas_common_cover.py check
 sage -python elliptic-curves/rank-jump/verify_quartet_compression.py check

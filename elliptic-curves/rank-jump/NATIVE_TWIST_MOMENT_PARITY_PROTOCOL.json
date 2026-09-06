@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.native-twist-moment-parity-protocol.v1",
+  "layer": "incidence",
+  "question": "Does the exact functional-equation sign lower the moment bound8 for the fixed orbit-1795d twist to7?",
+  "selection": "Only the already counted original and native-twist surfaces at131; no new surface or field-point count.",
+  "method": "Factor the original degree24 discriminant over F131 and verify every factor. At each multiplicative place compute the split character from the norm of -c6=864B (and its quadratic twist). Local root number is minus this character. At the two geometric I0* branches the product of local root numbers is chi131(-1)^2=1. Smooth infinity contributes1. Multiply the local signs and apply parity only to the analytic multiplicity at the central Frobenius eigenvalue, not to an unknown number-field MW rank.",
+  "limits": {"degree24_factorizations":1,"new_point_counts":0,"new_rational_parameters":0},
+  "failure_semantics": "Any mismatch with factor products, split tests, or the original forced-rank17 parity leaves refinement UNKNOWN. A positive sign leaves bound8 unchanged. No parity conjecture or BSD equality is used."
+}

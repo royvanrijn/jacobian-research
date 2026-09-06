@@ -1,0 +1,11 @@
+{
+  "schema": "rank-jump.native-twist-frobenius-moments-protocol.v1",
+  "layer": "incidence",
+  "question": "Can the fixed native orbit-1795d quadratic cover carry enough generic rational sections to explain an extreme specialization block by one square condition?",
+  "selection": "Only orbit-1795d, the smallest-coefficient member of the already fixed positive +8 quartet. Its primitive radicand is 409689-1439214*t+328441*t^2. This choice is retrospective. No replacement twist.",
+  "method": "Verify its known anti-invariant section exactly and verify good reduction geometry at p=131. Count all fibre traces over F_131 and F_(131^2), including singular local Euler traces and infinity. The original untwisted surface is counted as a forced-rank-17 calibration. Apply an explicit nonnegative quadratic polynomial in cos(theta) to the weight-two Frobenius eigenvalues to bound multiplicity of eigenvalue p, hence arithmetic generic section rank. No full Frobenius polynomial or Tate-conjecture equality is assumed.",
+  "limits": {"twists":1,"prime":131,"extension_degrees":[1,2],"counting_workers":1,"compile_seconds":30,"count_seconds":60,"independent_replay_seconds":60,"new_rational_parameters_or_points":0},
+  "good_reduction_gate": "Original discriminant of full degree24 and squarefree mod131; quadratic of degree2 with nonzero discriminant, coprime to the original discriminant; smooth infinity; characteristic greater than3. Thus original 24I1 and twisted 24I1+2I0* configurations persist, and their nontrivial cohomology dimensions are20 and24.",
+  "failure_semantics": "Failure of good reduction, exact section identity, count agreement, moment positivity, or the forced rank17 calibration leaves the proposed generic upper bound UNKNOWN. Timeouts are retained. The bound concerns Q(t) and F_131(t), not ranks of rational number-field specializations or geometric rank over all constant extensions.",
+  "boundary": "This is an exact fixed-surface finite-field calculation, not a Nagao average or prospective parameter sweep. A small generic twist bound can exclude only the proposed one-cover explanation; a fibre admitting that cover can still gain unrelated specialized directions."
+}

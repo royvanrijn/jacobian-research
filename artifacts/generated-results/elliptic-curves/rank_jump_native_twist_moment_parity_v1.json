@@ -1,0 +1,164 @@
+{
+  "additive_argument": "Two total geometric I0* places: product chi_residue(-1)=chi_131(-1)^2=1.",
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_twist_frobenius_v1.json": "9ffc26f180d6c7cf14f2696e094aacd9145044bf6ab257361fcfc50236d98335",
+    "elliptic-curves/rank-jump/NATIVE_TWIST_MOMENT_PARITY_PROTOCOL.json": "ce5d9704956584284321ad37ddd146759bb70cc473209a4eaed3531bd0b2831b",
+    "elliptic-curves/rank-jump/native_twist_moment_parity.py": "11748c1e2774fbe5de0ada266210617484a90aed14c9633278ed944c8e680f40",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "boundary": "Parity of the functional-equation central multiplicity only. The rank bound uses rank<=analytic multiplicity over a finite function field and good surface reduction, not a number-field parity conjecture.",
+  "infinity_root_number": 1,
+  "multiplicative_places": [
+    {
+      "degree": 1,
+      "factor": [
+        89,
+        1
+      ],
+      "local_root_numbers": [
+        -1,
+        1
+      ],
+      "norms_minus_c6": [
+        94,
+        67
+      ],
+      "split_characters": [
+        1,
+        -1
+      ]
+    },
+    {
+      "degree": 2,
+      "factor": [
+        100,
+        43,
+        1
+      ],
+      "local_root_numbers": [
+        1,
+        1
+      ],
+      "norms_minus_c6": [
+        130,
+        32
+      ],
+      "split_characters": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "degree": 3,
+      "factor": [
+        8,
+        57,
+        86,
+        1
+      ],
+      "local_root_numbers": [
+        -1,
+        1
+      ],
+      "norms_minus_c6": [
+        28,
+        88
+      ],
+      "split_characters": [
+        1,
+        -1
+      ]
+    },
+    {
+      "degree": 4,
+      "factor": [
+        42,
+        39,
+        45,
+        51,
+        1
+      ],
+      "local_root_numbers": [
+        1,
+        -1
+      ],
+      "norms_minus_c6": [
+        47,
+        62
+      ],
+      "split_characters": [
+        -1,
+        1
+      ]
+    },
+    {
+      "degree": 7,
+      "factor": [
+        30,
+        114,
+        41,
+        8,
+        116,
+        101,
+        56,
+        1
+      ],
+      "local_root_numbers": [
+        1,
+        -1
+      ],
+      "norms_minus_c6": [
+        79,
+        27
+      ],
+      "split_characters": [
+        -1,
+        1
+      ]
+    },
+    {
+      "degree": 7,
+      "factor": [
+        71,
+        62,
+        20,
+        109,
+        53,
+        120,
+        119,
+        1
+      ],
+      "local_root_numbers": [
+        -1,
+        -1
+      ],
+      "norms_minus_c6": [
+        99,
+        94
+      ],
+      "split_characters": [
+        1,
+        1
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "central_multiplicity_parity": "odd",
+      "global_root_number": -1,
+      "id": "original",
+      "moment_bound": 17,
+      "parity_refined_upper_bound": 17
+    },
+    {
+      "central_multiplicity_parity": "odd",
+      "global_root_number": -1,
+      "id": "native_twist",
+      "moment_bound": 8,
+      "parity_refined_upper_bound": 7
+    }
+  ],
+  "schema": "rank-jump.native-twist-moment-parity.v1",
+  "status": "PASS",
+  "twisted_additive_root_number_product": 1
+}

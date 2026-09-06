@@ -1,0 +1,33 @@
+{
+  "argument": "Character decomposition gives full pullback rank=17+twist rank<=24. At either rational lift of this smooth parameter, the specialized image has rank<=24. The retained independent witness subgroup has rank25, so its image modulo that entire specialized rational span has dimension at least1.",
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_twist_frobenius_inputs_v1.json": "21e2afd42d2642ed609f868ee0ceb4e4472858db2faf4af5e93bc3114be231cf",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_twist_frobenius_v1.json": "9ffc26f180d6c7cf14f2696e094aacd9145044bf6ab257361fcfc50236d98335",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_twist_frobenius_verification_v2.json": "d3e8b8ce981a207e456e82fa10bc9dd394c567d198b720dc3d82736c96a1fcfe",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_twist_moment_parity_v1.json": "d1ea430e41cae1262aebca2741db5faa9a17e8bde284d6e4547fa61d8bf74646",
+    "artifacts/generated-results/elliptic-curves/rank_jump_solubility_first_v1.json": "a25cfcabd8597ed5b5f5700336541751dc512af9977bf1d5118280f6008691de",
+    "elliptic-curves/rank-jump/cover_experiment.py": "ebb07b12f71ba1f24675673a2309133011a5f33786c5d26d4d6ecb94f964ed1f",
+    "elliptic-curves/rank-jump/native_twist_jump_boundary.py": "98de7c0c916a61f4c7f655f8048aa1285300365060101cbd1e709d69a969b6af",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "boundary": "This excludes only the claim that every retained direction is supplied by generic sections on this one quadratic cover. Other covers, product characters and specialization-only directions remain possible.",
+  "full_quadratic_pullback_arithmetic_generic_rank_bounds": [
+    18,
+    24
+  ],
+  "marked_generic_rank": 17,
+  "native_twist_arithmetic_generic_rank_bounds": [
+    1,
+    7
+  ],
+  "native_twist_exact_rank": "UNKNOWN",
+  "original_fibre_full_rank": "UNKNOWN",
+  "primitive_cover_square_root": "4307419/1937",
+  "published_parameter": "-4112/1937",
+  "retained_witness_quotient_rank": 8,
+  "retained_witness_rank": 25,
+  "schema": "rank-jump.native-twist-jump-boundary.v1",
+  "source_id": "08234-009",
+  "status": "PASS",
+  "witness_directions_outside_full_specialized_pullback_span_at_least": 1
+}

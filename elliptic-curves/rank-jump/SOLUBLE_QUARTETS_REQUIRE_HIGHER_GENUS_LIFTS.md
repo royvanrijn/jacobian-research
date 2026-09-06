@@ -1,5 +1,11 @@
 # The observed four-cover blocks require a genus-17 rational lift
 
+**Follow-up:** [exact Frobenius moments](NATIVE_SINGLE_COVER_CANNOT_EXPLAIN_THE_WHOLE_PLUS8.md)
+now bound the full arithmetic generic rank of the native 1795d twist by 7.
+Even all hidden sections on that one cover cannot supply the whole observed
++8 quotient. Other common-cover and product-character possibilities remain
+open.
+
 **Solubility:** neither successful four-cover block can come from a
 nonconstant rational or elliptic parametrization of those fixed cover
 equations. Both simultaneous-lift curves have **genus 17**, exact rational

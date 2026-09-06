@@ -1,0 +1,40 @@
+{
+  "Frobenius_traces": {
+    "1": [
+      1884,
+      122
+    ],
+    "2": [
+      319520,
+      33710
+    ]
+  },
+  "Sage_elliptic_trace_crosschecks": 148,
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_twist_frobenius_v1.json": "9ffc26f180d6c7cf14f2696e094aacd9145044bf6ab257361fcfc50236d98335",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_twist_moment_parity_v1.json": "d1ea430e41cae1262aebca2741db5faa9a17e8bde284d6e4547fa61d8bf74646",
+    "elliptic-curves/rank-jump/native_twist_frobenius.py": "f63040c37d1a2538af0e0173f9e6e854e5586b8850bc4c6e4331bc5b1bc56d4c",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_native_twist_frobenius.py": "5f0a5416e85f69f88b3c3d417eb10cd310b0ffbf4a72f510f3fa7b213216517e"
+  },
+  "boundary": "All counted fibre orbits are independently recounted. The cycle-class specialization, L-function purity/dimension, and local epsilon-factor formulas are mathematical dependencies stated in the companion note.",
+  "fibre_orbits_independently_recounted": 8779,
+  "refined_bounds": [
+    {
+      "central_multiplicity_parity": "odd",
+      "global_root_number": -1,
+      "id": "original",
+      "moment_bound": 17,
+      "parity_refined_upper_bound": 17
+    },
+    {
+      "central_multiplicity_parity": "odd",
+      "global_root_number": -1,
+      "id": "native_twist",
+      "moment_bound": 8,
+      "parity_refined_upper_bound": 7
+    }
+  ],
+  "schema": "rank-jump.native-twist-frobenius-verification.v1",
+  "status": "PASS"
+}
