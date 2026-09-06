@@ -1,0 +1,170 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_small_quotient_covers_v1.json": "c908e91696b1c9644e69055fdddfdeddcaefd9f3f9b2eb45c7aa5d9e67b05985",
+    "artifacts/generated-results/elliptic-curves/rank_jump_two_cover_pencil_geometry_v1.json": "2193bbd16006e3698370cf374ff4e1f135e39a8d6a895e5783c92b0efeefab3d",
+    "artifacts/generated-results/elliptic-curves/rank_jump_two_cover_pencil_inputs_v1.json": "4dad9fd8b711e591385d2b76e3ed49d42d7a5e9d111b84c3294b0f5f4f77a788",
+    "elliptic-curves/rank-jump/TWO_COVER_PENCIL_GEOMETRY_PROTOCOL.json": "3941b05957c45860c9eec5f1d7bf0e058e2cee8fe4429d4875a18effa5cee2b5",
+    "elliptic-curves/rank-jump/verify_two_cover_pencil_geometry.py": "a59ed84527269f2c476a502a3b8851490047091e08f8387cf4576d0a6be005d2"
+  },
+  "boundary": "Source rank/CT solubility certificates are retained inputs, not recomputed. This independently verifies the common trace geometry and explicit conic points.",
+  "rows": [
+    {
+      "both_signs_smooth": true,
+      "case_index": 0,
+      "class_count": 10,
+      "cubic_irreducibility_prime": 29,
+      "generic_class_count": 1,
+      "id": "a1-fibration-05:307/206",
+      "normalized_pencil_coefficients": [
+        "0",
+        "1",
+        "0",
+        "-94906677054393466110816339922046107183061710818372",
+        "-352828243349831404712617799673077133207162344822366545727829706873326815760"
+      ],
+      "relative_class_count": 9,
+      "status": "PASS",
+      "trace_forms_verified": true
+    },
+    {
+      "both_signs_smooth": true,
+      "case_index": 1,
+      "class_count": 8,
+      "cubic_irreducibility_prime": 19,
+      "generic_class_count": 8,
+      "id": "a1-fibration-05:-3158/1291",
+      "normalized_pencil_coefficients": [
+        "0",
+        "1",
+        "0",
+        "-8799737347189266372783907782186623703144076381799737406772",
+        "-499222412494317946151849305968672903629130203780121125327787335230469226710707073159940"
+      ],
+      "relative_class_count": 0,
+      "status": "PASS",
+      "trace_forms_verified": true
+    },
+    {
+      "both_signs_smooth": true,
+      "case_index": 2,
+      "class_count": 8,
+      "cubic_irreducibility_prime": 13,
+      "generic_class_count": 1,
+      "id": "a1-fibration-04:-1647/91",
+      "normalized_pencil_coefficients": [
+        "0",
+        "1",
+        "0",
+        "-121961594926318604241974601564149184372737573775",
+        "-16717933304249395550340196077878113736119991904039922069323937922711250"
+      ],
+      "relative_class_count": 7,
+      "status": "PASS",
+      "trace_forms_verified": true
+    },
+    {
+      "both_signs_smooth": true,
+      "case_index": 3,
+      "class_count": 8,
+      "cubic_irreducibility_prime": 17,
+      "generic_class_count": 8,
+      "id": "a1-fibration-04:-2177/2397",
+      "normalized_pencil_coefficients": [
+        "0",
+        "1",
+        "0",
+        "-43352050916458189784000967859489022518832204221929176354007",
+        "-4576744480449135907165840679321583372887436390537830969322740556457160421426826162517850"
+      ],
+      "relative_class_count": 0,
+      "status": "PASS",
+      "trace_forms_verified": true
+    },
+    {
+      "both_signs_smooth": true,
+      "case_index": 4,
+      "class_count": 8,
+      "cubic_irreducibility_prime": 17,
+      "generic_class_count": 2,
+      "id": "published-R17:-2300/843",
+      "normalized_pencil_coefficients": [
+        "0",
+        "1",
+        "0",
+        "-1503161773208672080973766449211708290944810023968557217021952",
+        "-713827218925723547304411672228281833517446887134720684710147456285397920302209030846152704"
+      ],
+      "relative_class_count": 6,
+      "status": "PASS",
+      "trace_forms_verified": true
+    },
+    {
+      "both_signs_smooth": true,
+      "case_index": 5,
+      "class_count": 6,
+      "cubic_irreducibility_prime": 17,
+      "generic_class_count": 6,
+      "id": "published-R17:-1561/3133",
+      "normalized_pencil_coefficients": [
+        "0",
+        "1",
+        "0",
+        "-892157636500647662171450158029394721897846492604962915942400",
+        "-128900832227812971002793243049766432229492164282639873998685258759480249197899892654080000"
+      ],
+      "relative_class_count": 0,
+      "status": "PASS",
+      "trace_forms_verified": true
+    },
+    {
+      "both_signs_smooth": true,
+      "case_index": 6,
+      "class_count": 2,
+      "cubic_irreducibility_prime": 3,
+      "generic_class_count": 0,
+      "id": "small-rational-versus-Sha",
+      "normalized_pencil_coefficients": [
+        "0",
+        "1",
+        "-22",
+        "107",
+        "155"
+      ],
+      "relative_class_count": 0,
+      "status": "PASS",
+      "trace_forms_verified": true
+    }
+  ],
+  "schema": "rank-jump.two-cover-pencil-verification.v1",
+  "small_control_common_conics_split": true,
+  "universal": {
+    "coefficient_ring": "Multivariate Polynomial Ring in a, b, c, v0, v1, v2, lam, mu over Rational Field",
+    "cyclic_basis_determinant": "1",
+    "first_conic_base_Gram": [
+      [
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "1",
+        "-a"
+      ],
+      [
+        "1",
+        "-a",
+        "a^2 - b"
+      ]
+    ],
+    "identities": [
+      "Q2(beta)=Q2(1)*M_beta",
+      "Q1(beta)=Q2(beta)*(H+a*I)",
+      "det(Q2(beta))=-Norm(beta)",
+      "det(lam*Q2+mu*Q1)=-Norm(beta)*Norm(lam+mu*(theta+a))",
+      "M_u^T*Qj(beta)*M_u=Qj(beta*u^2), j=1,2 (explicit nonconstant u regression)"
+    ],
+    "norm_pencil_polynomial": "a^2*lam*mu^2 + a*b*mu^3 + 2*a*lam^2*mu + b*lam*mu^2 - c*mu^3 + lam^3",
+    "status": "PASS"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_two_cover_pencil_inputs_v1.json": "4dad9fd8b711e591385d2b76e3ed49d42d7a5e9d111b84c3294b0f5f4f77a788",
+    "elliptic-curves/rank-jump/verify_two_cover_class_sources.py": "09d680a5670dbc4e4596c6d366aee1c3232bbf3bb9fed3b2c904bd2fd4633f15"
+  },
+  "boundary": "Retrospective label verification. Incomplete local kernels are not full strict Selmer spaces; original known subgroup ranks are not curve-rank upper bounds.",
+  "rows": [
+    {
+      "case_index": 0,
+      "class_count": 10,
+      "full_strict_locality_certified": true,
+      "id": "a1-fibration-05:307/206",
+      "independent_class_dimension": 10,
+      "original_generic_rank": 16,
+      "original_known_independent_rank": 25,
+      "original_observed_quotient_rank": 9,
+      "relative_quotient_dimension": 9,
+      "status": "PASS"
+    },
+    {
+      "case_index": 1,
+      "class_count": 8,
+      "full_strict_locality_certified": false,
+      "id": "a1-fibration-05:-3158/1291",
+      "independent_class_dimension": 8,
+      "original_generic_rank": 16,
+      "original_known_independent_rank": 16,
+      "original_observed_quotient_rank": 0,
+      "relative_quotient_dimension": 0,
+      "status": "PASS"
+    },
+    {
+      "case_index": 2,
+      "class_count": 8,
+      "full_strict_locality_certified": false,
+      "id": "a1-fibration-04:-1647/91",
+      "independent_class_dimension": 8,
+      "original_generic_rank": 16,
+      "original_known_independent_rank": 25,
+      "original_observed_quotient_rank": 9,
+      "relative_quotient_dimension": 7,
+      "status": "PASS"
+    },
+    {
+      "case_index": 3,
+      "class_count": 8,
+      "full_strict_locality_certified": false,
+      "id": "a1-fibration-04:-2177/2397",
+      "independent_class_dimension": 8,
+      "original_generic_rank": 16,
+      "original_known_independent_rank": 16,
+      "original_observed_quotient_rank": 0,
+      "relative_quotient_dimension": 0,
+      "status": "PASS"
+    },
+    {
+      "case_index": 4,
+      "class_count": 8,
+      "full_strict_locality_certified": true,
+      "id": "published-R17:-2300/843",
+      "independent_class_dimension": 8,
+      "original_generic_rank": 17,
+      "original_known_independent_rank": 24,
+      "original_observed_quotient_rank": 7,
+      "relative_quotient_dimension": 6,
+      "status": "PASS"
+    },
+    {
+      "case_index": 5,
+      "class_count": 6,
+      "full_strict_locality_certified": true,
+      "id": "published-R17:-1561/3133",
+      "independent_class_dimension": 6,
+      "original_generic_rank": 17,
+      "original_known_independent_rank": 17,
+      "original_observed_quotient_rank": 0,
+      "relative_quotient_dimension": 0,
+      "status": "PASS"
+    }
+  ],
+  "schema": "rank-jump.two-cover-class-source-verification.v1",
+  "small_class_source_verified": true
+}

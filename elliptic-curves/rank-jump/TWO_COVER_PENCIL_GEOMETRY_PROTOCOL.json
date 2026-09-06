@@ -1,0 +1,11 @@
+{
+  "schema": "rank-jump.two-cover-pencil-geometry-protocol.v1",
+  "question": "Which common geometric features of the observed class blocks are automatic for cubic 2-cover equations, and do any distinguish their rational and Sha controls?",
+  "production_cases": [0, 1, 2, 3, 4, 5],
+  "selection": "The already retained generic_strict_kernel_masks followed by relative_strict_lift_masks on each of the six paired controls: 48 classes total. Incomplete bad-place cases remain tested-place kernels. Add the two certified small strict classes on the rational/Sha sign pair.",
+  "limits": {"seconds_per_case": 30, "production_classes": 48, "small_classes": 2, "signs": [1, -1], "new_parameters": 0, "point_or_conic_searches": 0},
+  "construction": "For beta in Q[theta]/f of square norm, expand beta*(z0+z1*theta+z2*theta^2)^2 into Q0,Q1,Q2. Construct Q2=0 and Q1+sigma*h^2=0, and compute their 4-by-4 Gram pencil determinant. Check its beta-normalization, the common multiplication operator M2^-1*M1, and nonzero cubic discriminant.",
+  "symbolic_gate": "Prove M2(beta)=M2(1)*multiplication(beta), M1(beta)=M2(beta)*multiplication(theta+a), det(M2(beta))=-Norm(beta), and the normalized binary quartic mu*Norm(lambda+mu*(theta+a)).",
+  "classification": "Retrospective structural/solubility diagnostic of actual retained classes; exceptional point-derived classes are explicitly oracle inputs. No prospective selector.",
+  "boundary": "A common pencil determinant or split first conic is not a rational-point certificate. Geometric invariants are not evidence for extra Selmer incidence or Mordell-Weil rank. No active search file or mathematical status entry is modified."
+}
