@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: matched high/zero-gain fibres have at most one mixed-character direction](MIXED_CHARACTER_PAIRED_BOUNDS.md)
+- [Latest: genus-one three-point bases have two vanishing mixed characters](TRIPLE_CHARACTER_GENUS_ONE_BOUNDS.md)
+- [Matched high/zero-gain fibres have at most one mixed-character direction](MIXED_CHARACTER_PAIRED_BOUNDS.md)
 - [Full branch splitting adds no generic rank; a three-character Picard gate](FULL_BRANCH_SPLITTING_AND_THREE_CHARACTER_GATE.md)
 - [A square norm reduces the torsion field but adds no generic directions](NORM_SQUARE_EVENT_AND_EXTREMAL_K3.md)
 - [Independent scalar cup products and simultaneous twist obstructions](INDEPENDENT_SCALAR_CUP_AND_TWIST_BLOCKS.md)

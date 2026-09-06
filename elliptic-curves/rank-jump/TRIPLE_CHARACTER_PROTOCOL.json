@@ -1,0 +1,62 @@
+{
+  "schema": "rank-jump.triple-character-protocol.v1",
+  "question": "Can the genus-one cover from three generic points carry a multi-direction mixed-character block on the fixed high/zero-gain MW16-04 pair?",
+  "selection": "Same matched pair, first three generic indices. All four non-singleton masks 3,5,6,7. Primes fixed after coefficient-only preflight; no new weighted traces inspected.",
+  "primes": {
+    "high": [
+      11,
+      13,
+      17
+    ],
+    "low": [
+      11,
+      17,
+      19
+    ]
+  },
+  "new_count_primes": [
+    11
+  ],
+  "reused": "All four old untwisted arrays from rank_jump_mixed_character_counts_v2.json; each mask rejects primes where its branch configuration collides.",
+  "masks": [
+    3,
+    5,
+    6,
+    7
+  ],
+  "limits": {
+    "curves": 2,
+    "new_untwisted_prime_counts": 2,
+    "extension_degrees": [
+      1,
+      2,
+      3
+    ],
+    "seconds_per_new_prime": 40,
+    "new_rational_point_searches": 0,
+    "new_parameters": 0
+  },
+  "geometry": {
+    "non_singleton_fibres": "3 I2 + 3 I0*",
+    "trivial_rank": 17,
+    "base_degree": 8,
+    "base_genus": 1,
+    "triple_infinity": "smooth; its character sum must be added to the finite-base sum"
+  },
+  "auxiliary_base_check": {
+    "primes": {
+      "high": [
+        17,
+        29
+      ],
+      "low": [
+        17,
+        19
+      ]
+    },
+    "selection": "First two good primes >3 and <=31 of the norm cubic, before inspecting point orders.",
+    "endpoint": "The rational origin image has infinite order if prime-to-p torsion injection bounds a torsion order N but [N]Q != O; no rational point search."
+  },
+  "failure": "Bad branch configurations, ambiguous Frobenius recovery, and matching NS squareclasses are UNKNOWN for an exact rank. Only certified specialization upper bounds and explicit sections yield rank intervals.",
+  "boundary": "A new function-field construction through the retained curve, not preservation of its MW16 generic subgroup or an upper bound on that specialized curve."
+}
