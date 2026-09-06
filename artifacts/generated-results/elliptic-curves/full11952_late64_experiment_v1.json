@@ -1,0 +1,1184 @@
+{
+  "attempted_charts": 3136,
+  "claim_boundary": "A finite second-prime-band selection experiment on4096 fresh equations from the existing retained population, followed by64 fixed generic17 point searches and exact complete-cloud proofs. All853 prior cohort and593 pinned catalogue equations were excluded before the4096 roster. The wholly disjoint final validation band does not alter selection or maps. Matching finite bounds do not prove exact rank, saturation or absence. No rank-density, selector sensitivity, universal novelty or isolated portability claim is made here.",
+  "completed_point_boxes": 3136,
+  "maximum_declared_boxes": 3136,
+  "retained_point_witnesses": 1818,
+  "rows": [
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 16551581614058,
+      "icarm_matches": [],
+      "id": "11952-0959582",
+      "odd_modulus_lower_bounds": {
+        "3": 27,
+        "5": 27
+      },
+      "parameter": "110314/102227",
+      "previous_matches": [],
+      "rank_lower_bound": 27,
+      "retained_points": 129,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 12730109524971,
+      "icarm_matches": [],
+      "id": "11952-0280670",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-26370/48677",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 17309685918583,
+      "icarm_matches": [],
+      "id": "11952-0671851",
+      "odd_modulus_lower_bounds": {
+        "3": 26,
+        "5": 26
+      },
+      "parameter": "2618/26913",
+      "previous_matches": [],
+      "rank_lower_bound": 26,
+      "retained_points": 149,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 14026870846098,
+      "icarm_matches": [],
+      "id": "11952-0970821",
+      "odd_modulus_lower_bounds": {
+        "3": 19,
+        "5": 19
+      },
+      "parameter": "130724/36713",
+      "previous_matches": [],
+      "rank_lower_bound": 19,
+      "retained_points": 43,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 10474219084521,
+      "icarm_matches": [],
+      "id": "11952-0908880",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "31901/82672",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 13942782686980,
+      "icarm_matches": [],
+      "id": "11952-0090121",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-24046/30897",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 23,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 12885053963216,
+      "icarm_matches": [],
+      "id": "11952-0509073",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-119091/96227",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 14375724455931,
+      "icarm_matches": [],
+      "id": "11952-0109166",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-59441/101590",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 8095103108705,
+      "icarm_matches": [],
+      "id": "11952-0929095",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "101436/94999",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 23,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 14222532891644,
+      "icarm_matches": [],
+      "id": "11952-0426330",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-60038/18241",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 38,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 12704065922263,
+      "icarm_matches": [],
+      "id": "11952-0784385",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "98624/110077",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 21,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 13030612266376,
+      "icarm_matches": [],
+      "id": "11952-0857337",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "1808/10891",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 27,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 9306198089043,
+      "icarm_matches": [],
+      "id": "11952-0654631",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "80307/78079",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 23,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 18163830332003,
+      "icarm_matches": [],
+      "id": "11952-0046276",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-3058/78939",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 21,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 11679910692056,
+      "icarm_matches": [],
+      "id": "11952-0315399",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-77456/92777",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 21,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 11185300208395,
+      "icarm_matches": [],
+      "id": "11952-0043220",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "-24256/116821",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 9029864704948,
+      "icarm_matches": [],
+      "id": "11952-0637442",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "46703/90334",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 9508800461718,
+      "icarm_matches": [],
+      "id": "11952-0003079",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-24466/29703",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 23,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 13803602784879,
+      "icarm_matches": [],
+      "id": "11952-0552991",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "10120/98361",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 13354744960722,
+      "icarm_matches": [],
+      "id": "11952-0649211",
+      "odd_modulus_lower_bounds": {
+        "3": 19,
+        "5": 19
+      },
+      "parameter": "84029/23796",
+      "previous_matches": [],
+      "rank_lower_bound": 19,
+      "retained_points": 80,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 8191746722496,
+      "icarm_matches": [],
+      "id": "11952-0697366",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "44221/115027",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 11813073380231,
+      "icarm_matches": [],
+      "id": "11952-0952348",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "61891/837",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 41,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 13498100016126,
+      "icarm_matches": [],
+      "id": "11952-1037461",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "107703/74731",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 23,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 12846034816911,
+      "icarm_matches": [],
+      "id": "11952-0313949",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-115175/54886",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 7721672165480,
+      "icarm_matches": [],
+      "id": "11952-0035843",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-60405/106567",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 16959023707764,
+      "icarm_matches": [],
+      "id": "11952-0816645",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "88187/27196",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 25,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 16207705452323,
+      "icarm_matches": [],
+      "id": "11952-0675988",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "96282/84265",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 11202636942966,
+      "icarm_matches": [],
+      "id": "11952-0116916",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-52923/86245",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 14047858022295,
+      "icarm_matches": [],
+      "id": "11952-0348049",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-1099/79528",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 11307308442571,
+      "icarm_matches": [],
+      "id": "11952-0188928",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-27813/32114",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 13781610160733,
+      "icarm_matches": [],
+      "id": "11952-0881212",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "28699/88762",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 10932381222581,
+      "icarm_matches": [],
+      "id": "11952-0250241",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-123173/96745",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 20253687035726,
+      "icarm_matches": [],
+      "id": "11952-0175156",
+      "odd_modulus_lower_bounds": {
+        "3": 21,
+        "5": 21
+      },
+      "parameter": "-117677/81239",
+      "previous_matches": [],
+      "rank_lower_bound": 21,
+      "retained_points": 46,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 12440079663469,
+      "icarm_matches": [],
+      "id": "11952-0470307",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-130384/44951",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 14769692624897,
+      "icarm_matches": [],
+      "id": "11952-0403547",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-37321/105237",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 12941654436966,
+      "icarm_matches": [],
+      "id": "11952-0021006",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-107953/120874",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 14335808397842,
+      "icarm_matches": [],
+      "id": "11952-0652800",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "90709/76028",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 12309123763725,
+      "icarm_matches": [],
+      "id": "11952-0067682",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-129707/52357",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 12071493360394,
+      "icarm_matches": [],
+      "id": "11952-0840198",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "53673/125546",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 17036260397753,
+      "icarm_matches": [],
+      "id": "11952-0292998",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-95511/64061",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 14766641925462,
+      "icarm_matches": [],
+      "id": "11952-1004724",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "48368/118699",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 7950709914433,
+      "icarm_matches": [],
+      "id": "11952-0867511",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "93962/10911",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 46,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 10762117935221,
+      "icarm_matches": [],
+      "id": "11952-0525933",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "124501/2052",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 21,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 9627291393488,
+      "icarm_matches": [],
+      "id": "11952-0304226",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-36361/105043",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 15488244798801,
+      "icarm_matches": [],
+      "id": "11952-0484356",
+      "odd_modulus_lower_bounds": {
+        "3": 19,
+        "5": 19
+      },
+      "parameter": "-97918/78771",
+      "previous_matches": [],
+      "rank_lower_bound": 19,
+      "retained_points": 31,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 12196542062022,
+      "icarm_matches": [],
+      "id": "11952-0706370",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "13539/64868",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 23,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 18059281658255,
+      "icarm_matches": [],
+      "id": "11952-0278044",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-12949/91680",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 10676957056468,
+      "icarm_matches": [],
+      "id": "11952-0321176",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-10687/64116",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 13443434202218,
+      "icarm_matches": [],
+      "id": "11952-0202081",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-119202/43403",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 6242773293642,
+      "icarm_matches": [],
+      "id": "11952-0003128",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-49154/12295",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 21,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 13079798552359,
+      "icarm_matches": [],
+      "id": "11952-0474125",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-75217/79775",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 11241097162289,
+      "icarm_matches": [],
+      "id": "11952-1003566",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "73890/124841",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 10960862282666,
+      "icarm_matches": [],
+      "id": "11952-0889458",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "38293/104138",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 12596576548474,
+      "icarm_matches": [],
+      "id": "11952-0787136",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "58903/22018",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 23,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 17910248189652,
+      "icarm_matches": [],
+      "id": "11952-0951298",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "9201/29507",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 6332376637462,
+      "icarm_matches": [],
+      "id": "11952-0735792",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "59195/62878",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 21,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 18786293747079,
+      "icarm_matches": [],
+      "id": "11952-0513211",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-113467/49131",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 12844121845407,
+      "icarm_matches": [],
+      "id": "11952-0695407",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "61359/86351",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 19,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 9261377494698,
+      "icarm_matches": [],
+      "id": "11952-0739615",
+      "odd_modulus_lower_bounds": {
+        "3": 20,
+        "5": 20
+      },
+      "parameter": "8240/3493",
+      "previous_matches": [],
+      "rank_lower_bound": 20,
+      "retained_points": 124,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 10624220375582,
+      "icarm_matches": [],
+      "id": "11952-0629884",
+      "odd_modulus_lower_bounds": {
+        "3": 18,
+        "5": 18
+      },
+      "parameter": "19770/82127",
+      "previous_matches": [],
+      "rank_lower_bound": 18,
+      "retained_points": 70,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 11563904245686,
+      "icarm_matches": [],
+      "id": "11952-0085426",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-126484/30887",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 13250248797278,
+      "icarm_matches": [],
+      "id": "11952-0411591",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-49299/107300",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 15849499350265,
+      "icarm_matches": [],
+      "id": "11952-0539177",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "43717/79902",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 29,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    },
+    {
+      "attempted_charts": 49,
+      "completed_boxes": 49,
+      "fresh_validation_units": 16957546648599,
+      "icarm_matches": [],
+      "id": "11952-0514560",
+      "odd_modulus_lower_bounds": {
+        "3": 17,
+        "5": 17
+      },
+      "parameter": "-37929/40942",
+      "previous_matches": [],
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "search_status": "COMPLETE_DECLARED_POINT_ATTEMPT"
+    }
+  ],
+  "schema": "elliptic-curves.full11952-late64-experiment.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0003079_mod2_v1.json": "36623a26f6a29bb4b13d08193c8f907f4e37927f1cd4374f93ab7938c38db02b",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0003079_modl_v1.json": "c93d925846c24106fe36d6a7f738cd0154604de15f72b141bb306a039fb57e2e",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0003128_mod2_v1.json": "6defc77921099afb34c0cf4fa76df4906d44f0fc56f2f40643513ac9ceb2bf58",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0003128_modl_v1.json": "aaa780dac09f366658c41a26fc7c4da8656a782fd72f8ca2916cf9b344239c18",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0021006_mod2_v1.json": "fef0f7271ceca40c194541a2851af8c13f0c93a4fdbf56e066ca1a6b790da18c",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0021006_modl_v1.json": "9ff6e4ef899b1bd30e4c4c70b4f64ed8f7476e47668bafd83587145b3e9e2969",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0035843_mod2_v1.json": "1d68dca57c6b71dc30027eef7ba9a27eb1079430bfc498392210a0e9921472c6",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0035843_modl_v1.json": "ae969fb7f52278beb927c50220d3ec1af6c4dcfb54d042604e1bc812b9e0dc95",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0043220_mod2_v1.json": "00e0cf0808fdafe40bacf93e93d104efc0f1db8dc48f662fca945b1c49b5701c",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0043220_modl_v1.json": "a48441d7cab88fc8f7cc59c7c95ce6fdf513ac17ecb60d46441db0d12b28a445",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0046276_mod2_v1.json": "bd32782a440afa8dc47d8ca32982ccc99f979d67685702aa70f9f608b391d156",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0046276_modl_v1.json": "b216e64731328c18e19ca568ec7710f2c2be39c6e723442d991c0e7b8665fcba",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0067682_mod2_v1.json": "b7074f4d901d16d9395c59bd3aa4bf69100a28a395e3915ada75581a81d5bb49",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0067682_modl_v1.json": "ed67f1c71dcf9e24fad8b9d8ae73c1d00c919131396a5b43317c70c31605648f",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0085426_mod2_v1.json": "234f9cf97eafce93c7875c3f23080951443512e10af7c52614ee5f901fd81b96",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0085426_modl_v1.json": "3c9de1ab1ce426e1ab70f59c70e29adacd40343a1253a4363afe558a8833ded5",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0090121_mod2_v1.json": "96cbf6d6bfafa4c75974ea85aac6e946d2bc7bbe538b7bce0aa852b42551a285",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0090121_modl_v1.json": "27f5ecfaa2299d8b485c1e94fae572ab293b5fce499a4f6c08c456e61ce98c4e",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0109166_mod2_v1.json": "bc3f7467a989d1b02f04c0617c0c269705f8c71c57098648a48800cf949cef07",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0109166_modl_v1.json": "558085ad7063b6c555d916bc56c3f1a9803018e458acb0316f8fa0c09b5a06f4",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0116916_mod2_v1.json": "33ad984af2cd2c9687f19ed02a9abbaa2f82ad4acd62338afcf8857a69d41cbf",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0116916_modl_v1.json": "82231da808482f5e1006d41a6a5c1e8d40eeefe1a604e3a3cfbf84ace263a0a0",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0175156_mod2_v1.json": "6c7d2aa24a06d7cfb0b4567ade86a4835ac0b623ea537e38ae3a62398dfc56b6",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0175156_modl_v1.json": "8018d86e13ab54e09f4e0c97e6102d2512f930801d8a11d5ea240d8b247f9a80",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0188928_mod2_v1.json": "e2303185686b2998e54af1dc550dadb7208fdeb71eb409f63f2f7ca16bbff810",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0188928_modl_v1.json": "0eb80016a292db35fc5db4e20008a0937a51e2dab2d0c08066c38f03e5f9fc1e",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0202081_mod2_v1.json": "fa12555f924204e95a80616adc436b9ea32939d46545178a8674be8df40fe558",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0202081_modl_v1.json": "6b8d9fb747e1035f33b32932d96848db13d4da02b767c07883a504304633c7c8",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0250241_mod2_v1.json": "8d0bde778509902e6aed0916b022ecb41126f14801c7d663676f73adf4fa453d",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0250241_modl_v1.json": "b94da91275f2e9e6ba2c38c3f430ed294ee2b1699dd16f2630bf8e3eaf5d7e8d",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0278044_mod2_v1.json": "95dbb7fa4aec003bf255385b796679ddb8b1a1dfbe51a2bcbc9e33272db09f00",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0278044_modl_v1.json": "159fc7bafeabd6973d0e30ae78aa19f932bdd8d2217a597e174133166062c05b",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0280670_mod2_v1.json": "bd021d4e25800af172b539310f3609672579e986bdc3c5b8670795986d8684d4",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0280670_modl_v1.json": "2b4f220f869e2a2f420f8fbbfa1c8e4aa03826d911d78ff3a2cb86b85a694bab",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0292998_mod2_v1.json": "0e5fdce58a24707fcf7082804397c1fcf7af66096d3e83e455490f066cfb0b86",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0292998_modl_v1.json": "5ed86894dbe2c30c9608312581e743774e19ffded7e6bd57d81a8132e2f14377",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0304226_mod2_v1.json": "0dcdbcdb9bdc283d1548a759a23f2611bf6450aacf4b8eaf92474f6db2e47818",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0304226_modl_v1.json": "82959dfe5e46c506e5df69203f517084c9aa691ac295cdcca0b758a831a4baea",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0313949_mod2_v1.json": "29f65b40da1e93dd429675660b0a070c7308c1b4b8eab6e7487dfef87fc36391",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0313949_modl_v1.json": "4e91e83b59d3983a787b8192ed9837f32117de7aec0383dbdfb09d95a4ca158b",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0315399_mod2_v1.json": "d71ffee74096ff0fc5725c57e3210788da8957fbcc016b68f1f9de5803f4b8d7",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0315399_modl_v1.json": "f54f79367b7d93b8a19603c797a6a7042f0b28b0f6401249251c146b4afd0de5",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0321176_mod2_v1.json": "c2f97659d181dc60b38e5e7796b21481eb1f42f64f2bb8bb68da2a0c8572b1dd",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0321176_modl_v1.json": "acd6636c4dbf9fd1b82dfade15e026ae3f7f680d4264fe86ae1df4f7530634f4",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0348049_mod2_v1.json": "404f6745e154c0ebc0e45365a4878a78e633002d2cf985b6e2f0c92ccf670cd0",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0348049_modl_v1.json": "a8b81575ddfa923aabd46f1b2ba775e2c11d36cae2cd3e60cb1523dbd595c735",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0403547_mod2_v1.json": "2b4a312b52c6dd8d4deed530f346e6b94d2f159bbf31c9bc6c23731ea4534723",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0403547_modl_v1.json": "a7e77731866ed52c2b6c788b6adc7e360ae52052871a3e4f14881e481cff5c21",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0411591_mod2_v1.json": "0b0524d754aa8d9b71bb81b65ae7f0b825b9e353185c1a5b04deb1be527b79d3",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0411591_modl_v1.json": "e62cce6c7b35708df386503d3f74989e1170ea97214f373ee750524cf548830f",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0426330_mod2_v1.json": "7ddd9512e92715dcade208d55ec807a034ada7c9d68545b643eea301628617ce",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0426330_modl_v1.json": "df081c0ebc77c1bb62f528aab627b85be4732eed1be40632ca7c66d3ed849f10",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0470307_mod2_v1.json": "1b62fde2e4e6451147cea4851e06b50bb7d3bb18485042fe6f401dc9f43e43de",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0470307_modl_v1.json": "03b04f912f019cf95f9c0a75b03c240ffc71855c7c805674918c073c8e968e04",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0474125_mod2_v1.json": "54462dc99a0909ee53d0d6e3e70a59df153f72c831356af76c6d9654ffecf074",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0474125_modl_v1.json": "a45d21c61d200d3326d32d21caad3eefd5b8eef39fc41a9a6575f6fd1a9df2fd",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0484356_mod2_v1.json": "cb16e8b9775cc4832f6fb232fa7132e187679afba225424b41715e25adfa6abb",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0484356_modl_v1.json": "0d958eae8e9e0100283425e67b9821f0d28d3569069e7e9421e5c924faa8a539",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0509073_mod2_v1.json": "eb9431a91756c27771cb7e81c39c5c87d5549198a22f583e24a28fc8bf84a840",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0509073_modl_v1.json": "66cf958c487626b0563ca235ff5d5354f3d6bffeb9233edc9eab91dd40ecdee5",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0513211_mod2_v1.json": "f7b23397d97b5a2d91becfa48130fd667f689739d8b6d63130eba85f50cd4fe2",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0513211_modl_v1.json": "418ec277b6305b5d2e449f8495807992de70ae1b29c9e7616976a8e89160b7fb",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0514560_mod2_v1.json": "10b6b7d833fc51dddbcf1193d357962f2883392a50231f15ac9c8db576313243",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0514560_modl_v1.json": "4a5ca0930a8a3618d4431e36247a7d0b8d4e720f2e8f0c44e818c949cf3ad8a7",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0525933_mod2_v1.json": "32c90205a2acfd433718cd0afc874d7daaecaf351ac2fd68e918c91a49925b11",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0525933_modl_v1.json": "658324b57596ffa477bb65a564fcac8e50d73a0def409bb89ee3bdd59c663201",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0539177_mod2_v1.json": "58d1433ac76e6f6bd8b677043718f943742f55ab1e4e4ef832669543b41525dc",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0539177_modl_v1.json": "50caf33218fe3a8157a780e8572acfece625b7d1c03cc5978c1f47fd4d3b2b2f",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0552991_mod2_v1.json": "2de575c6f51c68c43cc5d5b02fb805bc448e4c83e5e70e8286fa05344f50e1b4",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0552991_modl_v1.json": "aaf5a6e308fc9158e2e67bf4327afa15e65d8336ab35e1582b5fef537fb109de",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0629884_mod2_v1.json": "302aec5146c35ba03b8a54dd0a3efc3de119aebc60c434a31a811e91a55a820f",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0629884_modl_v1.json": "0c30c6c96fb34a5543eb84c619b302670c870b83a72147b246408ed41aa89248",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0637442_mod2_v1.json": "bfbf9b57e1822df55a0a1bd0691e65b2fbcf5fecf73fb38971eacde71de09e15",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0637442_modl_v1.json": "91b4afe984bcd4b61a5494be764d1efe2e2141a398e25b12eb5482d17009946e",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0649211_mod2_v1.json": "e0f52ff1dbe59095480a994a49e564ffe5dc2260b0a114e8f6ccbd8c943b6787",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0649211_modl_v1.json": "6d56d59abc6b137eba79ab6c2c6a12302b8519a78ce21187adb4b24a6ef1d5db",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0652800_mod2_v1.json": "551741fa803b2af7b6e397253d64547ad9d93bf053b3736c8b1915f069c0d7f0",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0652800_modl_v1.json": "b208983d244ad1649e08294bc37a34730eb87c0687fa58594cd106583ba31a4f",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0654631_mod2_v1.json": "656c60c319736b9fb764f8e6abc234e0429feb7edeeee5f4df2abe60d69d43fa",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0654631_modl_v1.json": "1a87af01d87e5c5032059e56236a97910f05558dc065c717143da2f7693ac1a6",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0671851_mod2_v1.json": "b6b05513d9f9904418f9c9301f6ebde47fb91725b5783809740eafc36db16165",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0671851_modl_v1.json": "ffa5c617966c2af152433c0459efba303c296114cef8759bb7d8e57b86f35c3e",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0675988_mod2_v1.json": "b75d244ce2cc0b85959ad7b3ef9a5f2bdbe3a73862c2d3dd43288e5a3741f633",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0675988_modl_v1.json": "e8025bdb103f95d642dd0dd4263273f4e2c7de36510ccde66c57bdedede59791",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0695407_mod2_v1.json": "f50c5e9ccbf514e09b8634d058a379354a16428c1bfa8005f7bffd563387a014",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0695407_modl_v1.json": "be89343606f956e9cdacaf79b144c23ff7c2dac5c9d48eca2ac5e30042fae0e2",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0697366_mod2_v1.json": "5b94d2ce351380a04c8fedede5b68afce40439aaf088626be1e3b8ace4ebabf9",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0697366_modl_v1.json": "88a948e928d1ff27d50eb8e329e2ecd32f07d852f1e88198a525f924f8682909",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0706370_mod2_v1.json": "5bbb9b638ca5052f6f58d7a8cca0e5a2af9af6f71f77a93e7300133e3e27811e",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0706370_modl_v1.json": "01203b2a22a4f2f6c70f1a3928095a7cb07cf53d6b35b0e9694e6bc0ef6736ed",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0735792_mod2_v1.json": "f4bdf318d3b99d7460913fc22dd489c4287d4bf325a71fd2ad504a21f49b4927",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0735792_modl_v1.json": "3021f31545044e460a4f88ffe699435df346ff5935b18409353017662865db4e",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0739615_mod2_v1.json": "90faa5490a070d567944857b4628cfedf3d424d5a716255827953eae60b2ec63",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0739615_modl_v1.json": "b7b19acce56f639aade8dff9860216bb069be6b99af680a6a7b1d52d64f6b06e",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0784385_mod2_v1.json": "621bd9d1e2759d611900862cd7d94af0cf1f2f625b22cd9d0ed6f640b378e5e0",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0784385_modl_v1.json": "203f482147a75fbc3ee43376658e136c48bebc126e7d20a07198582ec913718f",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0787136_mod2_v1.json": "ee2fd2ef1f413825a06cdaf0d97e79bb8d50c5c83b7fd4bd953962c3ed0c73a6",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0787136_modl_v1.json": "57b769506973ac6bf47626098ff0f135527673588e546cd092f08dffdad704c3",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0816645_mod2_v1.json": "10b4a27698d4d481c29a2095fd0b7e104b143d5f122025736a0e5aa8cffea94d",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0816645_modl_v1.json": "3addaa23bdc342305aef88b05000330520323ab38bfb6fcf15e5bbcd185fadc1",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0840198_mod2_v1.json": "139467fb341bf48b2c831755a0ae286c3e12d61df1c4e64ae402766807ba39e9",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0840198_modl_v1.json": "f1f85ab095292737659b4bef6a94d3cb56506faf734f22af5a9629e16edc326b",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0857337_mod2_v1.json": "623fd02bd5a0f67c37ef989b4ec50222b881970e754f95b35f1af701acef2cc3",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0857337_modl_v1.json": "98e944b4d096fbba364946d0a5d68576d3d3d5f37e2c3c756e8e15270c40323c",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0867511_mod2_v1.json": "4ca3b2f69950da9e0c8af9f3c971c156eae0d36e0e6647039d82ad4f307affc9",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0867511_modl_v1.json": "3dfdb512a088b23bc51bc3cc75a86a16d5a4f71d6fa8dcf38805932530af28a9",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0881212_mod2_v1.json": "34c33412ce2c724c77fa9396c89ab6363ce7215651d1dbbbcd80bf88c68d154c",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0881212_modl_v1.json": "013252442614ea17c839795aaf68c83fb2fd8ddba2b11dc946ff4407a8b3d0b1",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0889458_mod2_v1.json": "b5a70f337c046f954773ec5711b2b8a7eab1e16a6e76c76784d8c41b5e710bda",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0889458_modl_v1.json": "056076430789edaabb9277e577d001d6925caa26fd1ab739f4d6255fbaf27491",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0908880_mod2_v1.json": "f05501c9adb8f81c062168f59118e00a863641ce882f90a05f9a29c074df8a3a",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0908880_modl_v1.json": "64ceb31f63f2a6292f67f5da6901e6dd080df69d0a640fae83fc1c2f7a9b2097",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0929095_mod2_v1.json": "01e5b79abd7d131e2812b236b6be8a07f83c97147ee5aed82b042fe735ec9542",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0929095_modl_v1.json": "f1a92fde46f6a5ee61189e2075b12682aaee6c7fa0e7e3de9893163f9770b0e9",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0951298_mod2_v1.json": "31891394e6a923ebb7cead8de7d62af8c00aab0f6146554cc4d5daef5e90dc1e",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0951298_modl_v1.json": "780c7870d393fa48f541895ac4eda8590ddc0b31b5f1b0e42e2706a2fcf42a41",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0952348_mod2_v1.json": "ad856182c9119aa7ac4b8a33a3a31c3bf5f452ef984e5057b82c288140bb418c",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0952348_modl_v1.json": "b5916849c26fbcc1cc4ef3a05638f54645e44e15e14b73d9d3dd78736f0bb685",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0959582_mod2_v1.json": "a0b28afe696fe25f2a452359f069db04d5c5de6de5fc742bbd97b5b976b9dfb1",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0959582_modl_v1.json": "fb6d232b59db3d9fdd9c6019f380b7d9611a43c0163e2c7be382c4f50fad01db",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0970821_mod2_v1.json": "eb1130f50feb7bedcb222b3140846701988a5f0d3daa7580cf97e0d3658303c7",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_0970821_modl_v1.json": "1f0269969248eb446625af9b21a95171b941492c22ef990c5e31a6c6a7480e56",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_1003566_mod2_v1.json": "eec4a1c5396e9fffc835c79aa509dcf4c04ece9bdbc1f04ee99f6884ad348eb4",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_1003566_modl_v1.json": "58a1ac0c5975781740254363d4f92051813dad22ac1993cba9450cabb5de6e50",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_1004724_mod2_v1.json": "b58f7ab613c318370daa19a546313ed724c0b3531102bad439810dd874b745a8",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_1004724_modl_v1.json": "a320ca8248def897a39a46a6189f43f0bab8c949385b3bad52bdb08e0793fbef",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_1037461_mod2_v1.json": "59385f704e4ccd43e32aba6aec03502457b820092d9b7e3049cbb0e017992705",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_11952_1037461_modl_v1.json": "53436c8e40236228aa85c64e7bfcec3b35c3fb93f1e0fce3b4c5a925a5b8528a",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_results_v1.json": "cc3a3a465e1555249ad0ced589ad1457c25c95f6d58db0dadfb99e7349490283",
+    "artifacts/generated-results/elliptic-curves/full11952_late_band_selection_v1.json": "132275e6cd46b2b108526bfb2a1678f315293c3db15548c1198c68e50b8848ed",
+    "artifacts/local/elliptic-curves/full11952-late-band-selection-v1/fresh-validation.json": "d1a09833ac272d2587e2044048af1591d3ddefefe396cf9a770a093e8dd29892",
+    "artifacts/local/elliptic-curves/full11952-late-band-selection-v1/selection-replay.log": "3a0d68ad7c07e8de4a5512d050b019cb0288c631de05965f3220846b6e868f92",
+    "artifacts/local/elliptic-curves/full11952-late64-controller-v1/freeze.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/local/elliptic-curves/full11952-late64-controller-v1/geometry.log": "0fd7c9c77737cee88469872acf4701b456c47bb52f14882b0486ba77af481e6c",
+    "artifacts/local/elliptic-curves/full11952-late64-controller-v1/ledger.json": "d2a7237723d844f08f0b6ef86f284faf1112bcff87ed7989b3b8fcfa07702e7c",
+    "artifacts/local/elliptic-curves/full11952-late64-controller-v1/maps.log": "41e5870a399e7c5a7fb0c4037b02587a73e2b06a9b676c7ec0645ec0808ff1cf",
+    "artifacts/local/elliptic-curves/full11952-late64-controller-v1/odd.log": "1c9efd2c18b3c4b2dac88b96533a4ead003b32de7dd88993b29ce7c3c75a442f",
+    "artifacts/local/elliptic-curves/full11952-late64-controller-v1/points.log": "30a60da44384dca0a5cb653702ee01c76d385f894b4ea52cdfdeaf161a411726",
+    "artifacts/local/elliptic-curves/full11952-late64-controller-v1/protocol.json": "35f8da7f32dd4fadca0b31550b2c730395e38a8842dcf09bc1ac410ccd43aba3",
+    "artifacts/local/elliptic-curves/full11952-late64-controller-v1/stream-freeze.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/local/elliptic-curves/full11952-late64-controller-v1/stream.log": "a948bce0091bcb99de4d38f9a20798c90a87c8172ae6ea066256b6f83aded065",
+    "artifacts/local/elliptic-curves/full11952-late64-r17-pari-v1/ledger.json": "a9292135827bea92db6d7e64947c55f2fa8b2a66510ebb5a927046a5e056e044",
+    "artifacts/local/elliptic-curves/full11952-late64-r17-pari-v1/odd-cloud-audit/ledger.json": "d35237a7c1bbc50f63a4b020f362ccb5642c5bd4bcad87845bb7859abb554219",
+    "artifacts/local/elliptic-curves/full11952-late64-r17-pari-v1/protocol.json": "1191bf8695d40208d1fa8810df072b20bcc0bc11b70c079b8d1075ae0d98023d",
+    "artifacts/local/elliptic-curves/full11952-late64-r17-pari-v1/verification-ledger.json": "14ef1ffc671484f15059d9a55b2c1f98a04bd3367d9eedfa9a09326c49405ce0",
+    "elliptic-curves/cas/report_full11952_late64_experiment.py": "d96d3a1b42b61741847399c0375f416800426600bb0a43e14c1867823dfefdbd"
+  },
+  "status": "PASS",
+  "stronger_odd_prime_bounds": []
+}

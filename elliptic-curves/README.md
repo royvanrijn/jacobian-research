@@ -1,12 +1,18 @@
 # Elliptic curves over `Q` — ACTIVE
 
-A [second-prime-band trial](notes/FULL11952_LATE_BAND_TRIAL_2026-09-06.md) is active on4096 fresh equations from the existing retained population. It will freeze64 finalists before a fixed generic17 point trial; no new rank bound is certified yet.
+The [new 11952 outer-annulus trial](notes/NEW11952_OUTER_ANNULUS_2026-09-06.md) moves beyond the completely scanned height-131072 square, through height524288. All76.7 million addresses and32768 retained short scores replay. A hardcoded reader limit is repaired and independently checked. All4096 scalar scores and64-finalist validation now pass; the fixed point batch is running.
 
-The [full11952 trial adds a new27-point curve and a new23-point curve](notes/FULL11952_NEW_RANK27_2026-09-06.md). All3136 initial boxes and194 isolated proof stages pass. The new27 curve has a proved global minimal equation and an executable Sage point export, with both standalone model checks passing. Its49-box own-subgroup follow-up and separate49-box million-height trial both complete. The147-chart union retains720 witnesses and still certifies27 modulo2,3,5. The inventory contains187 curves, including seven with lower bound27.
+The [fresh outer-MW16 retention trial](notes/MW16_FRESH_OUTER_RETENTION_2026-09-06.md) scans untouched parameter slices beyond4096 and retains eight times as many candidates before longer-prime scoring. All95.6 million addresses and40960 short scores replay; extended scoring is active.
+
+The [completed three-band MW16 trial](notes/MW16_OUTER_PARAMETER_BANDS_2026-09-06.md) adds two curves with certified rank at least23. All2580 boxes and182 corrected isolated checks pass. InventoryV16 contains191 distinct curves, including eight with lower bound27. The [twelve carrier constructions](notes/NATIVE_RANK3_CARRIER_IMAGES_2026-09-06.md) now each have19 independent points. Their [missing third auxiliary direction and full-span cube](notes/NATIVE_CARRIER_THIRD_DIRECTION_2026-09-06.md) are also checked; all74 nonanchor cube images exceed the400-bit model gate.
+
+The [second-prime-band trial adds a new27-point curve and a new26-point curve](notes/FULL11952_LATE_BAND_TRIAL_2026-09-06.md). All3136 boxes and194 isolated point-proof stages pass. ID188 at110314/102227 has a proved minimal equation and executable27-point export; both standalone model checks pass. InventoryV15 contains189 distinct curves, including eight with lower bound27.
+
+The [full11952 trial adds a new27-point curve and a new23-point curve](notes/FULL11952_NEW_RANK27_2026-09-06.md). All3136 initial boxes and194 isolated proof stages pass. The new27 curve has a proved global minimal equation and an executable Sage point export, with both standalone model checks passing. Its49-box own-subgroup follow-up and separate49-box million-height trial both complete. A further fixed parity-sample trial also completes; the196-chart union retains744 witnesses and still certifies27 modulo2,3,5. That earlier cohort produced inventoryV14 with187 curves.
 
 The [retention audit](notes/FULL11952_RETENTION_TRIAL_2026-09-06.md) covers20.89 billion primitive short-score addresses and all1048576 retained extended scores. The known29 control is478285th by short score but30th by extended score and enters the fixed64 automatically. It is recovered to28 and correctly excluded as ICARM12. The separate [soluble-carrier height gate](notes/SOLUBLE_PAIR_CARRIER_HEIGHT_GATE_2026-09-06.md) constructs seven distinct19-point parameter images, but none supplies a new model within its declared360-bit gate; the carrier generator subgroup is2,3,5-saturated.
 
-The [complete187-curve conductor audit](notes/INVENTORY187_CONDUCTOR_BOUNDS_2026-09-06.md) proves upper bounds with1656 local calculations independently checked by PARI. The new27 curve's bound is below24 of29 recorded rank-at-least27 catalogue conductors. None of the inventory bounds beats its recorded rank-threshold minimum; exact residual conductors and record status remain unresolved.
+The [V14 conductor audit on187 curves](notes/INVENTORY187_CONDUCTOR_BOUNDS_2026-09-06.md) proves upper bounds with1656 local calculations independently checked by PARI. The new27 curve's bound is below24 of29 recorded rank-at-least27 catalogue conductors. None of the inventory bounds beats its recorded rank-threshold minimum; exact residual conductors and record status remain unresolved.
 
 [Five compact192 curves](notes/COMPACT192_FIVE_RANK26_CURVES_2026-09-06.md) now have proved minimal models and rank at least26, with an executable five-curve Sage export and a standalone proof bundle passing both isolated checks. All are unmatched in the pinned catalogue. That cohort raised the [V13 inventory](../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v13.json) to185 curves before the latest two additions.
 
@@ -16,8 +22,8 @@ The [192-curve compact trial](notes/COMPACT192_UNSEARCHED_TRIAL_2026-09-06.md) t
 
 The [skew parameter experiment](notes/SKEW_PARAMETER_BOXES_2026-09-06.md) completes 368 point boxes without inventory gain. The [endpoint audit](notes/COMPACT_ENDPOINT_AUDIT_2026-09-06.md) identifies 21 omitted nonsingular curves; the subsequent [exact span proof](notes/ENDPOINT_SECTION_SPANS_2026-09-06.md) establishes their generic-section span ranks and five proper known-subgroup indices. The 54 audit and three section-span isolated replay stages pass. The [endpoint point trial](notes/ENDPOINT_POINT_TRIAL_2026-09-06.md) completes all 252 boxes, with strongest bounds 19 and no inventory gain; [all 66 isolated replay stages pass](../artifacts/generated-results/elliptic-curves/endpoint_point_trial_portable_replay_v1.json). The six rank-27 search subgroups already have [proved saturation at 2, 3 and 5](notes/NEW27_SMALL_PRIME_SATURATION_2026-09-06.md).
 
-The exactly replayed inventory contains **187 distinct curves**, including
-**seven with rank at least27**, unmatched in the pinned593-equation catalogue.
+The exactly replayed inventory contains **191 distinct curves**, including
+**eight with rank at least27**, unmatched in the pinned593-equation catalogue.
 The [earlier rank25 discovery](notes/LOCAL_FEATURE_RANK25_2026-09-06.md),
 [higher-parameter rank26 curve](notes/HIGHER_PARAMETER_RANK26_2026-09-06.md)
 and [first new MW16 rank27 proof](notes/NEW_MW16_RANK27_2026-09-06.md) link
@@ -36,8 +42,8 @@ The [specialized parity trial](notes/SPECIALIZED_PARITY_CONTROL_2026-09-06.md)
 recovers the known29th direction at125000, but all294 charts on our six
 rank27 curves complete without gain. All24 isolated checks pass.
 
-The [complete JSON](../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v14.json)
-and [equation CSV](../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v14.csv)
+The [complete JSON](../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v16.json)
+and [equation CSV](../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v16.csv)
 contain the equations and point certificates. The
 [small-conductor curve](notes/NEW_SMALL_CONDUCTOR_CURVE_2026-09-05.md) retains
 rank at least 22 and an exact 76-digit conductor, third among the relevant
@@ -53,7 +59,7 @@ certifies all 270 maximum classes in the six displayed lattices.
 
 Earlier [machinery corrections](notes/ELLIPTIC_BREAKTHROUGH_AUDIT_2026-09-05.md)
 and [retained-point checks](notes/RECORDED_POINT_ADMISSION_AUDIT_2026-09-05.md)
-remain available. The [current cross-family audit](notes/FULL11952_NEW_RANK27_2026-09-06.md)
+remain available. The [V14 cross-family audit](notes/FULL11952_NEW_RANK27_2026-09-06.md)
 covers all187 curves against twelve presentations:2,244 exact incidence checks.
 The earlier2,220 checks pass all three isolated proof stages; the latest24
 have exact local replay, with isolated replay not yet claimed.
@@ -390,7 +396,7 @@ Use [`REPRODUCE.md`](REPRODUCE.md) and the exact checker paths recorded in `../M
 <!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 8a4c932153e2bb2d -->
 <!-- status-consumer: EC-K3-R17-NORM12-ICARM-573-REFRESH a93ce35de34fde21 -->
 <!-- status-consumer: EC-CF-NEARMISS-DESCENT-INPUTS 25c9f212e5162216 -->
-<!-- status-consumer: OP-EC-NEXT 092c81b8d8e061d6 -->
+<!-- status-consumer: OP-EC-NEXT 999a3c28e6a6197b -->
 
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-SELMER-PANEL 539bd8ec36b36c44 -->
 

@@ -1,0 +1,37 @@
+{
+  "boundaries": "Independent exact homogeneous specialization and primitive annulus membership for the32768 frozen prospective models. Exact within-roster Q-isomorphism comparisons only; no catalogue or old point results read. Integral coefficient sizes are for these displayed models, not globally minimal heights. Different parameters are not automatically different curves; distinct classes here need not be absent from previous work. No new point, rank bound, selector modification or isolated portability claim.",
+  "curves_checked": 32768,
+  "distinct_Q_isomorphism_classes": 32768,
+  "distinct_j_invariants": 32768,
+  "groups": [
+    {
+      "band": 1,
+      "curves": 32768,
+      "family": "11952",
+      "largest_integral_coefficient_bits": {
+        "maximum": 369,
+        "median": "358",
+        "minimum": 325
+      },
+      "negative": 16384,
+      "parameter_height": {
+        "maximum": 524281,
+        "median": "380693",
+        "minimum": 131111
+      },
+      "positive": 16384
+    }
+  ],
+  "schema": "elliptic-curves.11952-annulus-parameter-models.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_six_r17_atlas_v1.json": "2f28c081c874adfaf738c1119e8f4e6e7ce70ea74277cd8cdb370a02bca34c5d",
+    "artifacts/local/elliptic-curves/11952-new-annulus-scores-v2/bank-protocol.json": "6dcb7bf34a6b070743d24bf18f1cca42287526907aee2a636074623413ed1cf0",
+    "artifacts/local/elliptic-curves/11952-new-annulus-v1/result.json": "8eb48cae2b8357f5c9e4ab2e15041be6774b0eb3a1466c7e9dd4b2b92f62c309",
+    "elliptic-curves/cas/audit_11952_annulus_parameter_models.py": "4e0749ea04734e49ade90f954c070518a55e13fbdbd4e185bcf6ffdcd764ee69",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9",
+    "elliptic-curves/cas/compact_atlas_specialization.py": "ea68110968e86cb0502a74a995c26054ff8e4a0da90c49bb2bdf0b753a759b14",
+    "elliptic-curves/cas/research_runtime/store.py": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965"
+  },
+  "status": "PASS",
+  "within_roster_matches": []
+}

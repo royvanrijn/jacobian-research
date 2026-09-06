@@ -1,0 +1,51 @@
+{
+  "audits": [
+    {
+      "independent_indices": [
+        0,
+        1,
+        2
+      ],
+      "modulus": 3,
+      "rank_lower_bound": 3
+    },
+    {
+      "independent_indices": [
+        0,
+        1,
+        2
+      ],
+      "modulus": 5,
+      "rank_lower_bound": 3
+    }
+  ],
+  "claim_boundary": "Independent rational formulas reconstruct both marked quartic points and their Jacobian transports; exact finite reductions modulo3 and5 prove three independent auxiliary points despite rational2-torsion. This closes the explicit rank-three subspace gap, not saturation or a full integral generator claim. No new original fibre or original-rank increase is asserted by this auxiliary proof.",
+  "rank_lower_bound": 3,
+  "schema": "elliptic-curves.native-carrier-marked-point-replay.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/native_rank3_carrier_marked_point_v1.json": "4fdf620557dc872416657c34550765687d786280f061439442b97a2e12ff4876",
+    "artifacts/generated-results/elliptic-curves/rank_jump_minimal_native_block_carrier_v1.json": "8a9c56f7178da2c6212412151822811aaea913c7f92adc9547f316fb1eaa54f1",
+    "elliptic-curves/cas/audit_compact_r17_ambiguous.py": "2fcef5457ab8efd67fa6dd473949823653901b533c3862d3ba4d83fd4cd2fb01",
+    "elliptic-curves/cas/audit_retained_cloud_modl.py": "9922a557d96f692f01d8a7c834826212928b515eaf66b13507c50cd9a59d3206",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9",
+    "elliptic-curves/cas/elliptic_candidate_record.py": "5b9f6f843d48e705253404a5583ef53966c72c7f229c68ef17c6b848f5e94af3",
+    "elliptic-curves/cas/mod2_reduction_independence.py": "c5963952d1a9089416479671b788b6437dbba26591d796646022f4e9dddd0c70",
+    "elliptic-curves/cas/mod_l_reduction_independence.py": "93cdef9eb9053987d0aa85abff2d6e1d487caa827b43a7c00d0b8a43395063f0",
+    "elliptic-curves/cas/verify_native_rank3_carrier_marked_point.py": "c8ca2bf05357aa0e5f17c08d053a41317f1aee240d7b5f156e43ee84bfe3daff"
+  },
+  "status": "PASS",
+  "three_independent_Jacobian_points": [
+    [
+      "-319684377057680072",
+      "276500000438162160828242986"
+    ],
+    [
+      "395796450013330236",
+      "48053080903719662543637930"
+    ],
+    [
+      "49005891476829078312687044788/314316088321",
+      "-4649890735583771052832412990871048905192266/176217857440197119"
+    ]
+  ]
+}

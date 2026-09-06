@@ -1,0 +1,318 @@
+{
+  "binary_sha256": "532c738b4e13eb5538c02b59b1d4b8217626c0b58f64c6eabde1eda79131dc07",
+  "boundary_rows": [
+    {
+      "denominator": 131073,
+      "direct_checks": [
+        [
+          4099,
+          -104
+        ],
+        [
+          32771,
+          -95
+        ]
+      ],
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-795372271992572835561340301416867868598721123471025726441590385042352",
+        "8615412134464666985007094503469343560006253089204904637009526916859129361430017439715635025247237236096"
+      ],
+      "numerator": 131072,
+      "parameter": "131072/131073",
+      "raw_sha256": "72e3123447ec3ccaf44184daf0baafd742bfb1e8e275776d1bb4f815b88f36fa",
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 38709761994119,
+        "validation_good": 3030,
+        "validation_units": 7751264179316
+      }
+    },
+    {
+      "denominator": 131073,
+      "direct_checks": [
+        [
+          4099,
+          -90
+        ],
+        [
+          32771,
+          96
+        ]
+      ],
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-349889275801705495677219084620957835275171356460539873877847361479600",
+        "19922539100110696945980693859117690749118680894249280708060655847182239784941539043216164984486082569600"
+      ],
+      "numerator": -131072,
+      "parameter": "-131072/131073",
+      "raw_sha256": "5d2bab1ae7088706959691e732e1748dd73ffb1c2fbf4fc8607d515ef12a889b",
+      "scores": {
+        "extension_good": 2946,
+        "extension_selection_units": 32621309541626,
+        "validation_good": 3030,
+        "validation_units": 12941192446259
+      }
+    },
+    {
+      "denominator": 524288,
+      "direct_checks": [
+        [
+          4099,
+          -24
+        ],
+        [
+          32771,
+          -282
+        ]
+      ],
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-52121343761001496290636485908088377098888381372537784419133993180927758852",
+        "144525497701189643624674441237463176449021381297582227492193963615991027263446231988517333639938925961480086596"
+      ],
+      "numerator": 524287,
+      "parameter": "524287/524288",
+      "raw_sha256": "c637dfe214fd18c8ee70ea6805ff747ea0fafa95daf40e0622f971a27971b650",
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 43346017129582,
+        "validation_good": 3030,
+        "validation_units": 8707300464372
+      }
+    },
+    {
+      "denominator": 524288,
+      "direct_checks": [
+        [
+          4099,
+          28
+        ],
+        [
+          32771,
+          -180
+        ]
+      ],
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-22927705964244407902808969586881993539792431248682267401678489471199351300",
+        "334204907477326547333573257183413746392520623985534940341540888614245063604833305728076864797626387921704952900"
+      ],
+      "numerator": -524287,
+      "parameter": "-524287/524288",
+      "raw_sha256": "7f28f6b2cd8c3435ec296391563587701d997c440e42bed488f5a06011d63f66",
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 29588857072731,
+        "validation_good": 3030,
+        "validation_units": 14590734955951
+      }
+    },
+    {
+      "denominator": 524287,
+      "direct_checks": [
+        [
+          4099,
+          -70
+        ],
+        [
+          32771,
+          34
+        ]
+      ],
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-52119887080159549491429499111869155321041679624894758487782355128838546352",
+        "144519589882047593940757694127631846564993431399010261326316184559456337611972255069012157255335624028484724096"
+      ],
+      "numerator": 524288,
+      "parameter": "524288/524287",
+      "raw_sha256": "36eceba3c8ddab8eb7720c3d3f684a46719793248281d7c96bc7b065cbfc9f59",
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 38121392424572,
+        "validation_good": 3030,
+        "validation_units": 16101243226400
+      }
+    },
+    {
+      "denominator": 524287,
+      "direct_checks": [
+        [
+          4099,
+          -16
+        ],
+        [
+          32771,
+          -105
+        ]
+      ],
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-22926530735166890921407888412381354756407126330215588507628494950103802800",
+        "334191101763563983456281067364395105137740696194909476973592832813585470913177008208330089628481873351312598400"
+      ],
+      "numerator": -524288,
+      "parameter": "-524288/524287",
+      "raw_sha256": "f8dc381071912562469aad03ed5a5a1ab85d4d9abd920a1db746cdfab4a5192d",
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 37549183638475,
+        "validation_good": 3030,
+        "validation_units": 11857281145010
+      }
+    },
+    {
+      "denominator": 520573,
+      "direct_checks": [
+        [
+          4099,
+          54
+        ],
+        [
+          32771,
+          -157
+        ]
+      ],
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-198303030836779774666536937503036547746768049636434435243825914981057037312",
+        "1065859586618873894411838844264405051364937438809782994802708514946101879825957545581509596073148438351181840384"
+      ],
+      "numerator": 1,
+      "parameter": "1/520573",
+      "raw_sha256": "9163d78000c9c3019985010bb1fd751576da189c038e9fb3165acf0d6e7c87be",
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 38017110600542,
+        "validation_good": 3030,
+        "validation_units": 14435673537741
+      }
+    },
+    {
+      "denominator": 520573,
+      "direct_checks": [
+        [
+          4099,
+          54
+        ],
+        [
+          32771,
+          148
+        ]
+      ],
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-198303162729186430426278033681499802827860096834673941242775805291742718672",
+        "1065860545214554525935913904508428251106530637204300849701972534610617072879359858169390923826996167833976102720"
+      ],
+      "numerator": -1,
+      "parameter": "-1/520573",
+      "raw_sha256": "ea2fad2ebd8d6444213ddd13d97ba826fb6f38ce675c62702d3385c020e9b8a0",
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 39411386864099,
+        "validation_good": 3030,
+        "validation_units": 11832238833577
+      }
+    },
+    {
+      "denominator": 1,
+      "direct_checks": [
+        [
+          4099,
+          -14
+        ],
+        [
+          32771,
+          -84
+        ]
+      ],
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-126421607465073134375603947279481786181794197621922993215517132362376112",
+        "17206363403755117969617225919269456435544409022001735047430671973183199438416891666918995637050162756904320"
+      ],
+      "numerator": 524288,
+      "parameter": "524288",
+      "raw_sha256": "feaf446ce6d0eadfbc7bdbc8199ea3f8c2e31b4119253fc35ba7bf649a7006a0",
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 42369001649228,
+        "validation_good": 3030,
+        "validation_units": 15518432614476
+      }
+    },
+    {
+      "denominator": 1,
+      "direct_checks": [
+        [
+          4099,
+          86
+        ],
+        [
+          32771,
+          196
+        ]
+      ],
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-126433400959880361069240640571338024955727412123325810189153926670738352",
+        "17208702028762498451113038912863169623031005553639197807715232125460000744841110948704859008634459244651904"
+      ],
+      "numerator": -524288,
+      "parameter": "-524288",
+      "raw_sha256": "6a0682d380d1dad66aa06d095b82dfaf659d5536a3c0aa5ebfd832b315b10cb1",
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 42839029197637,
+        "validation_good": 3030,
+        "validation_units": 12665300255710
+      }
+    }
+  ],
+  "claim_boundary": "Compile one new binary, run exact signed/infinity and framing unit regressions, compare all967 old fixture scores byte-for-byte with recorded old output, then compare ten fixed boundary parameters against fresh scalar4099..65521 traces and independent sums at4099 and32771. No parameter enumeration, point search, rank claim or implicit retry of the failed frozen pipeline.",
+  "new_height_bound": 524288,
+  "old_fixture_rows": 967,
+  "protocol_sha256": "8b49bdce9f305885f4f2ba747dafe63dc1706a01e5e57ec77f438e932c3f3ac8",
+  "schema": "elliptic-curves.11952-annulus-cache-reader-proof.v3",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_six_r17_atlas_v1.json": "2f28c081c874adfaf738c1119e8f4e6e7ce70ea74277cd8cdb370a02bca34c5d",
+    "artifacts/generated-results/elliptic-curves/retained_extended_cache_benchmark_v1.json": "f4ac6b17907cc5166b763a33732934b360b67cb29c511ae7aff8e291e2d9197c",
+    "artifacts/local/elliptic-curves/11952-new-annulus-scores-v1/cache-raw.json": "cad7c608f98e4a69a56a68a39c51880b51b35b2012020747dc6001b0a07fa4fd",
+    "artifacts/local/elliptic-curves/retained-extended-cache-benchmark-v1/candidates.txt": "9bbf6fe5efff298dafdaeef175ccc15da355bc3c845d70827f1fbb9bb2aeffc7",
+    "artifacts/local/elliptic-curves/retained-extended-cache-benchmark-v1/raw.json": "37b5c44e57d6cb8c84f0abadc7f81170c2b2f6739a59eead7320b3f3546eeede",
+    "artifacts/local/elliptic-curves/retained-extended-cache-benchmark-v1/selection-cache.bin": "256792d65c3d566cbc382bd001351dd0f075f28847c845dd9959966b202216f9",
+    "elliptic-curves/cas/benchmark_11952_annulus_cache_v3.py": "9fd1dfb5370da586572dda18704a49a96922bf049cfcd321e263b9fad81d62e4",
+    "elliptic-curves/cas/benchmark_r17_extended_prime_traces.py": "0239593edaa2e1dd19a5ac0fe18652cd0ccb7cddeb9046c40fa3da7f9e97d47d",
+    "elliptic-curves/cas/extend_outer131072_r17.py": "d3a45443ca7a6b9eaf9ebd2b97661d389a1bd68962b280ca6b6fd6399912f5ef",
+    "elliptic-curves/cas/extend_retained_r17_prime_scores.py": "c7b1262544a9791f842b5a06b2524d9bf57e0983f2a6d867eda216b14eb33767",
+    "elliptic-curves/cas/newfamily/score_retained_projective_cache_v3.cpp": "3c42700577d84e87d2526e19188518298e64fdd66aae41d56126c2975b3110d6",
+    "elliptic-curves/cas/research_runtime/store.py": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965",
+    "elliptic-curves/cas/research_runtime/supervisor.py": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233",
+    "elliptic-curves/tests/test_retained_projective_cache_scorer_v3.py": "d55049b7a0983879c0338743d41632d0ed571c012f71bac1bc7580f3756451b5"
+  },
+  "status": "PASS",
+  "unit_tests": 3
+}

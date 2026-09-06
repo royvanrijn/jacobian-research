@@ -1,0 +1,87 @@
+{
+  "archive_sha256": "cf7f4e365c6f00b1158994c8f12faf2f879232a93434c01a6c2775721e87c229",
+  "claim_boundary": "Standalone exact high-rank proof supplement requiring no base archive. Replays global minimality, exact transports andindependence of every listed point subgroup, mutual rational nonisomorphism and absence from the embedded593-equation catalogue and853 prior equations, plus exact Sage-export agreement and execution. The full64 search history, score selection, trace tables, chronology and other curve proofs are not replayed by this small bundle. No new point search, exact rank, conductor, full saturation, record or universal novelty claim.",
+  "curves_checked": 1,
+  "independent_point_witnesses": 27,
+  "ledger": {
+    "rows": [
+      {
+        "name": "models",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/usr/bin/python3",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/full11952-late-high-rank-models-portable-v1/workspace/elliptic-curves/cas/export_full11952_late_high_rank_models.py",
+            "--check"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/full11952-late-high-rank-models-portable-v1/verification/models.log",
+          "log_sha256": "fed1ef59cd6f81fecb529a8e1f3f9fef1937c55870c4fcf560932057d3cbfd29",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 30285824,
+          "pid": 1923291,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "53426296",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.3811349660390988,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      },
+      {
+        "name": "sage-export",
+        "status": "PASS",
+        "supervision": {
+          "command": [
+            "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+            "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/full11952-late-high-rank-models-portable-v1/workspace/artifacts/generated-results/elliptic-curves/new_full11952_late_high_rank_curves.sage"
+          ],
+          "failure_reason": null,
+          "limits": {
+            "address_space_bytes": null,
+            "cgroup": null,
+            "pari_stack_bytes": 256000000,
+            "poll_seconds": 0.05,
+            "rss_bytes": 2147483648,
+            "terminate_grace_seconds": 1.0,
+            "wall_seconds": 120
+          },
+          "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/full11952-late-high-rank-models-portable-v1/verification/sage-export.log",
+          "log_sha256": "c1df5f345af91a14cc9482ae15ddd90a9a134b541cb93ba8150bd4a5caa0d436",
+          "outcome": "completed",
+          "peak_observed_rss_bytes": 226926592,
+          "pid": 1923293,
+          "returncode": 0,
+          "rss_limit_bytes": 2147483648,
+          "start_token": "53426337",
+          "termination_signal": null,
+          "timeout_seconds": 120,
+          "wall_seconds": 0.5844310719985515,
+          "worker_result": null,
+          "worker_result_sha256": null
+        }
+      }
+    ],
+    "status": "PASS"
+  },
+  "logical_stages": 2,
+  "schema": "elliptic-curves.full11952-late-high-rank-models-portable-replay.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/full11952_late_high_rank_models_evidence_v1.json": "370a1ed74bcd37f53a05ab946e685b31c26a51a600a5cb5b1b05e9f2b1509c73",
+    "artifacts/local/elliptic-curves/full11952-late-high-rank-models-portable-v1/verification/ledger.json": "5a4a5ea9786190ee65ffd6930c9935b997314bc673554c90443aac114be8ae8c",
+    "artifacts/local/elliptic-curves/full11952-late-high-rank-models-portable-v1/verification/protocol.json": "23b43bd8738af608b0e412420927da56d8a2beca1a022589e17d123cfe95faa0",
+    "elliptic-curves/cas/verify_full11952_late_high_rank_models.py": "09300d8c33e4de8e6b2e37990021d5f2f702576bf9a7cbe7ece9b533a085f642"
+  },
+  "status": "PASS"
+}

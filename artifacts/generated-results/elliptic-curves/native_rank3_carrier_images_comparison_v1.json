@@ -1,0 +1,126 @@
+{
+  "catalogue_equations": 593,
+  "claim_boundary": "Exact rational-isomorphism comparisons after all twelve fixed constructions and independent arithmetic proofs completed. Absence from this pinned catalogue and917 prior equations is relative novelty only. No specialized independence, high-rank, record or universal novelty claim. These comparisons do not enter the separate prospective MW16 selection or point execution.",
+  "previous_equations": 917,
+  "rows": [
+    {
+      "catalogue_matches": [],
+      "compact_parameter": "-75239325853559356632832990168/5946686588662135816916326787",
+      "previous_matches": [],
+      "word": [
+        -1,
+        0
+      ]
+    },
+    {
+      "catalogue_matches": [],
+      "compact_parameter": "-7119612289/2394065174",
+      "previous_matches": [],
+      "word": [
+        1,
+        0
+      ]
+    },
+    {
+      "catalogue_matches": [],
+      "compact_parameter": "2363368659385562602563796/413005307070371729339911",
+      "previous_matches": [],
+      "word": [
+        0,
+        -1
+      ]
+    },
+    {
+      "catalogue_matches": [],
+      "compact_parameter": "1070928971468708/131218272072197",
+      "previous_matches": [],
+      "word": [
+        0,
+        1
+      ]
+    },
+    {
+      "catalogue_matches": [],
+      "compact_parameter": "-1262091640445072211353890758356507125336755951962567018173/3540496987762020402779243354268161548548578071958960912",
+      "previous_matches": [],
+      "word": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "catalogue_matches": [],
+      "compact_parameter": "3178813240606526662842337272162585479063/32810492652546924584966163436321372190",
+      "previous_matches": [],
+      "word": [
+        -1,
+        1
+      ]
+    },
+    {
+      "catalogue_matches": [],
+      "compact_parameter": "29720269727719887395672757690104/388302050009140023493076788145",
+      "previous_matches": [],
+      "word": [
+        1,
+        -1
+      ]
+    },
+    {
+      "catalogue_matches": [],
+      "compact_parameter": "62053928138516551235584034584/204421137942686802584565271",
+      "previous_matches": [],
+      "word": [
+        1,
+        1
+      ]
+    },
+    {
+      "catalogue_matches": [],
+      "compact_parameter": "-23767034495653201374186163411498030718038012470109570445634709616372988006844170639409523751988/982679937887547225464088674704901298638973531073403059519958254412394485723311829295159279897",
+      "previous_matches": [],
+      "word": [
+        -2,
+        0
+      ]
+    },
+    {
+      "catalogue_matches": [],
+      "compact_parameter": "-1653785682389689952361951311312576707251554628770056751204/32256924103905525077133730556340963603068328758041551699",
+      "previous_matches": [],
+      "word": [
+        2,
+        0
+      ]
+    },
+    {
+      "catalogue_matches": [],
+      "compact_parameter": "168497308832577770766633604137146470215993428913793466809835729974763295624398661673714/1708439052749352763898950205955581647970504253431229712323691492885796489770790263309",
+      "previous_matches": [],
+      "word": [
+        0,
+        -2
+      ]
+    },
+    {
+      "catalogue_matches": [],
+      "compact_parameter": "850408945641426599512524328478737376133663891791008455388409697814/11003527056434235810015569074730652848801267306530567735920114391",
+      "previous_matches": [],
+      "word": [
+        0,
+        2
+      ]
+    }
+  ],
+  "schema": "elliptic-curves.native-rank3-carrier-image-comparison.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_results_v1.json": "cc3a3a465e1555249ad0ced589ad1457c25c95f6d58db0dadfb99e7349490283",
+    "artifacts/generated-results/elliptic-curves/native_rank3_carrier_images_replay_v1.json": "f0b42ce4deb474f1dbd6a6faf17251391121729c3448fd78fc832b2cf0559226",
+    "artifacts/generated-results/elliptic-curves/native_rank3_carrier_images_v1.json": "636e541c31175355fb91fa8e5e95da02ef1a4409d8eda04bc3bc57621dd77fa3",
+    "artifacts/local/elliptic-curves/retention24-current-catalogue-v1/database.json": "4ab1b29bbcb90ba329c280b26924313685a98b30891baefafd98dfa4f25199ed",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9",
+    "elliptic-curves/cas/compare_native_rank3_carrier_images.py": "7691f74ac64f8c82534bc8e5b76a24fc2adb9a3c7b92cbb4e1272aa1e7cc2ed7"
+  },
+  "status": "PASS",
+  "unmatched_images": 12
+}

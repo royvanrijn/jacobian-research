@@ -1,0 +1,11 @@
+{
+  "claim_boundary": "On the short auxiliary model, determine the single rational point of order2 by exact cubic factorization. For all15 nonzero parity combinations of the three recorded independent points and that torsion point, factor the exact duplication quartic and classify every rational half. Nonlinear factors require a finite prime with no root; rational factors require exact square tests and doubling. One layer only, no auxiliary point search, adaptive saturation loop, original-fibre search, new rank or full Mordell-Weil basis claim. No halves proves2-saturation of this subgroup including rational2-torsion; any half records a missing coset and leaves further saturation open.",
+  "missing_coset_masks": [],
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/native_carrier_halving_v1.json": "d0a6840ecc748dab8123e601931319375f20a1760fb20d0763aef99ce71f4d84",
+    "elliptic-curves/cas/alternate_quartic_covers.py": "598f7556333c9d8462f251d97a6d132e0bd672a11861f8c2f142fc4588abe9e5",
+    "elliptic-curves/cas/verify_native_carrier_halving.py": "0bc0c0c715ba99833b9e6b39695feb5bd656bf1449600b7f9aa201aecb3d65bb"
+  },
+  "status": "PASS",
+  "two_saturated": true
+}

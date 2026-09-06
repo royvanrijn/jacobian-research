@@ -1,0 +1,239 @@
+{
+  "Jacobian_model": [
+    "1",
+    "0",
+    "0",
+    "-235950017004391353572674922721546566",
+    "33693852184918766381840507850394292045967182353721700"
+  ],
+  "Jacobian_points": [
+    [
+      "-319684377057680072",
+      "276500000438162160828242986"
+    ],
+    [
+      "395796450013330236",
+      "48053080903719662543637930"
+    ],
+    [
+      "49005891476829078312687044788/314316088321",
+      "-4649890735583771052832412990871048905192266/176217857440197119"
+    ],
+    [
+      "49005891476829078312687044788/314316088321",
+      "4649890708109157061154435354724496802292734/176217857440197119"
+    ]
+  ],
+  "audits": [
+    {
+      "finite_column_rank": 3,
+      "independent_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "modulus": 3,
+      "no_rational_ell_torsion_prime": 29,
+      "processed_primes": [
+        29,
+        53,
+        59,
+        61,
+        67,
+        71,
+        73
+      ],
+      "signatures": [
+        {
+          "group_order": 60,
+          "modulus": 3,
+          "multiple_subgroup_order": 20,
+          "prime": 59,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              2,
+              0,
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "group_order": 72,
+          "modulus": 3,
+          "multiple_subgroup_order": 24,
+          "prime": 71,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              2,
+              2,
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "group_order": 72,
+          "modulus": 3,
+          "multiple_subgroup_order": 24,
+          "prime": 73,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              1,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "finite_column_rank": 3,
+      "independent_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "modulus": 5,
+      "no_rational_ell_torsion_prime": 29,
+      "processed_primes": [
+        29,
+        53,
+        59,
+        61,
+        67,
+        71,
+        73,
+        79,
+        83,
+        89,
+        97,
+        103,
+        109,
+        113,
+        127,
+        131,
+        137,
+        139,
+        149,
+        151,
+        157,
+        163,
+        167,
+        173
+      ],
+      "signatures": [
+        {
+          "group_order": 60,
+          "modulus": 5,
+          "multiple_subgroup_order": 12,
+          "prime": 59,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              2,
+              3,
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "group_order": 130,
+          "modulus": 5,
+          "multiple_subgroup_order": 26,
+          "prime": 113,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              4,
+              0,
+              4,
+              1
+            ]
+          ]
+        },
+        {
+          "group_order": 190,
+          "modulus": 5,
+          "multiple_subgroup_order": 38,
+          "prime": 173,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              4,
+              1,
+              4,
+              1
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "auxiliary_rank_upper_bound": 3,
+  "claim_boundary": "Exact rational square roots and curve isomorphism only; no point search or additional descent. Combine the two recorded points with all opposite-point lifts and compute exact finite odd-prime quotient lower bounds. Odd torsion is excluded by a good-reduction witness; existing rational2-torsion is respected. A third independent point gives a full-rank rational subspace, not saturation or an integral Mordell-Weil basis. If the span remains two, retain that finite result without changing candidates.",
+  "opposite_points": [
+    [
+      "20678324401099694083978186179360753050/314316088321",
+      "-44888268770450018656944745476155690380799965365000000000/176217857440197119"
+    ],
+    [
+      "20678324401099694083978186179360753050/314316088321",
+      "0"
+    ]
+  ],
+  "opposite_x": "20678324401099694083978186179360753050/314316088321",
+  "pointed_curve": [
+    "1591312906869131160/560639",
+    "-20678324401099694083978186179360753050/314316088321",
+    "67998694528559323971585070171041798000",
+    "-17987955261229393476288707497685663099594960738702500",
+    "1183397185270067667137318574306717503609967544327993196528663509768244077625000"
+  ],
+  "protocol_sha256": "b5119e32304a4b5dee5e2bc57445c197a5a0c677ce5e825880a023ba390c3bc2",
+  "rank_lower_bound": 3,
+  "schema": "elliptic-curves.native-carrier-marked-point-result.v1",
+  "short_curve": [
+    "0",
+    "0",
+    "0",
+    "-11325600816210784971488396290634235169/48",
+    "29111488287769814170898600007056845784948239989566901553/864"
+  ],
+  "short_points": [
+    [
+      "-3836212524692160863/12",
+      "276500000278319972299402950"
+    ],
+    [
+      "4749557400159962833/12",
+      "48053081101617887550303048"
+    ],
+    [
+      "588070697721948940066560625777/3771793059852",
+      "-4649890721846464056993424172797772853742500/176217857440197119"
+    ],
+    [
+      "588070697721948940066560625777/3771793059852",
+      "4649890721846464056993424172797772853742500/176217857440197119"
+    ]
+  ],
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_minimal_native_block_carrier_v1.json": "8a9c56f7178da2c6212412151822811aaea913c7f92adc9547f316fb1eaa54f1",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_triple_carrier_verification_v1.json": "1f8854802c58ce36e07c176d1003536b4f836246b43acfc598915432240af6f7",
+    "elkies-k3/scripts/prepare_r17_norm12_11952_alternate_v4_rank_one_bases.sage": "3cbd1a75b1dfcd061131c5dfe91e955cfb4a482da0c8febbcdf9e7d578e91ff3",
+    "elliptic-curves/cas/audit_compact_r17_ambiguous.py": "2fcef5457ab8efd67fa6dd473949823653901b533c3862d3ba4d83fd4cd2fb01",
+    "elliptic-curves/cas/audit_native_rank3_carrier_marked_point.sage": "3c179110a06c8ba3c24c09834a947144fbeb0dd4b895f03da51a08805cef558c",
+    "elliptic-curves/cas/audit_retained_cloud_modl.py": "9922a557d96f692f01d8a7c834826212928b515eaf66b13507c50cd9a59d3206",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9",
+    "elliptic-curves/cas/elliptic_candidate_record.py": "5b9f6f843d48e705253404a5583ef53966c72c7f229c68ef17c6b848f5e94af3",
+    "elliptic-curves/cas/mod2_reduction_independence.py": "c5963952d1a9089416479671b788b6437dbba26591d796646022f4e9dddd0c70",
+    "elliptic-curves/cas/mod_l_reduction_independence.py": "93cdef9eb9053987d0aa85abff2d6e1d487caa827b43a7c00d0b8a43395063f0"
+  },
+  "status": "PASS"
+}

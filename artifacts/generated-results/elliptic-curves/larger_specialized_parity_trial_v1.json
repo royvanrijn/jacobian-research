@@ -1,0 +1,42 @@
+{
+  "certificates": {
+    "artifacts/generated-results/elliptic-curves/larger_parity_own196_union_mod2_v1.json": "c2e84e1f0138241b0d49f25dfda130c4653b5e0d9085469745586bfb24fea1bd",
+    "artifacts/generated-results/elliptic-curves/larger_parity_own196_union_modl_v1.json": "2593a1e15c8f58d4279d436ff4dcf4ee89246616f5839a10d96edecc74cdbb94",
+    "artifacts/local/elliptic-curves/larger-specialized-parity-trial-v1/own-union.json": "c3f0872b92f45ae488ebcd9e2994e0b454eb3768a75b7029cb2adc71a5fab365"
+  },
+  "claim_boundary": "Run the known28 control first, stopping at provisional29; require exact history, geometry and cloud proofs modulo2,3,5 before the own27 search. If it does not recover29, the own curve remains unsearched under this protocol. Otherwise run its49 charts and stop at provisional28. Maximum98 boxes, unchanged125000 height and10 seconds per chart, one point worker, no new parameter, score change, further sample expansion, automatic retry or inference of exact rank/absence/covering optimality. The separate live late64 cohort is unchanged. The recovery chart class was checked retrospectively only after both searches froze and finished. All196 own-curve chart inputs have an exact point-union audit. No isolated portable supplement replay is yet claimed.",
+  "control": {
+    "completed_boxes": 14,
+    "lower_bound": 29,
+    "target_chart_parity": 116052719,
+    "target_class_absent_from_original2048": true
+  },
+  "own": {
+    "completed_boxes": 49,
+    "mod2_lower_bound": 27,
+    "odd_modulus_lower_bounds": {
+      "3": 27,
+      "5": 27
+    },
+    "trial_retained_points": 55,
+    "union_chart_inputs": 196,
+    "union_retained_points": 744
+  },
+  "schema": "elliptic-curves.larger-specialized-parity-trial.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/full11952_million_new_20260906_186_coverage_v1.json": "c024155cd7f0eca9a16784c87910ae400d66481b490e9a953be0b2a43304bf73",
+    "artifacts/generated-results/elliptic-curves/larger_parity_native28_coverage_v1.json": "977e54b2e813bcbac3e606485e553c73c90cbc2c623c3b74ae9c750d2b348176",
+    "artifacts/generated-results/elliptic-curves/larger_parity_new_20260906_186_coverage_v1.json": "b336d749c082ba4c2fe9e5a248de56408c9b4dc60d5c7765135eb2d1b613bc4b",
+    "artifacts/generated-results/elliptic-curves/larger_specialized_parity_v1.json": "9e32efbecd181f48c38da71359b56a95442bd699425b57195e217dc487f8747e",
+    "artifacts/local/elliptic-curves/full11952-64-r17-pari-v1/11952-0962587/result.json": "0542bd492a73e3c7b3c11efdf7a95ea1cbc0e8894a77ab35961d54a9a6f8ce43",
+    "artifacts/local/elliptic-curves/full11952-million-height-v1/new-20260906-186/result.json": "b32505a8ba91979f787e04f47904ce2b658200bbfb42d15c14356f11a7639146",
+    "artifacts/local/elliptic-curves/full11952-specialized-followup-v1/new-20260906-186/result.json": "4de3ce74756d852e8ee4b01a0b62370947deb576bf794642bfd5ddf2c63c519b",
+    "artifacts/local/elliptic-curves/larger-specialized-parity-trial-v1/ledger.json": "07a1dd530e8d819cf0f4e30e86957a163ddbce135b181eb372ef75db9b11b24a",
+    "artifacts/local/elliptic-curves/larger-specialized-parity-trial-v1/new-20260906-186/result.json": "f5f0dc9ab78491fc7a1130a81acf5143988fc01cd6901ddcabad06ec873e7568",
+    "artifacts/local/elliptic-curves/larger-specialized-parity-trial-v1/protocol.json": "ca8671643c259cff566a160cab6779ac30b74f41531db87ca50e416ae2154db1",
+    "elliptic-curves/cas/audit_larger_specialized_parity_trial.py": "71599896266a9f028b114ab9d63c8a31034fadd78a59a09981822c497ffb223f",
+    "elliptic-curves/cas/replay_retention24_geometry.py": "341b3ede2ecd39cbfdf8ad009c0db8bba42afa0a01ab2d6dfd767a2898075f05",
+    "elliptic-curves/cas/report_larger_specialized_parity_trial.py": "aa3538323bf6b1da585b531353addbb0a22f505bfe12f48553275aae5eab99e8"
+  },
+  "status": "PASS"
+}

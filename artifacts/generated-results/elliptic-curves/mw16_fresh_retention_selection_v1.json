@@ -1,0 +1,2426 @@
+{
+  "claim_boundary": "All40960 retained candidates from ten unused denominator slices in4096<H<=16384. The first ten rows, two per family, form a runtime gate and are reused once. Four scalar workers,20 seconds per curve,3600-second outer cap and80-address checkpoints. Two direct character sums per curve and exact score replay precede60 finalists and wholly disjoint validation. No retries, compact-region rescan, adaptive parameter expansion, rank prediction or universal novelty.",
+  "protocol_sha256": "65ea8babb9aa6408e99c1dc54e84bab8247613c2cc1095dfe7844c77b40a7100",
+  "schema": "elliptic-curves.mw16-fresh-retention-finalists.v1",
+  "score_replay_sha256": "50ddba49334f399fcd479b2c40c70ba9d64a223909ab4512ab88c5524139605f",
+  "scores_sha256": "5eb9e5e6de85bcb2b438029d8de76eccf0863c4521b6411cd688c4e12ec49005",
+  "selected": [
+    {
+      "band": 1,
+      "combined_late_good": 6536,
+      "combined_late_units": 157673501126927,
+      "cpu_ms": 46,
+      "denominator": 11136,
+      "direct_checks": [
+        [
+          4099,
+          -120
+        ],
+        [
+          32771,
+          -292
+        ]
+      ],
+      "family": "a1-fibration-01",
+      "good_primes": 558,
+      "id": "fresh-a1-fibration-01-3904",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-70575950189507005547832885993443205641192798055742345141227",
+        "7323942049906034740911522538852080480281834708510066942014792136988887559320076788727270"
+      ],
+      "numerator": 1511,
+      "parameter": "1511/11136",
+      "raw_sha256": "27e2dfc61031d9814a449464b228d7d09c36319235072ca7898d5a2e38044062",
+      "retained_index": 3904,
+      "score_units": 86927435194195,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 55155134366072,
+        "validation_good": 3030,
+        "validation_units": 15590931566660
+      },
+      "slice_id": "a1-fibration-01-pos",
+      "wall_seconds": 0.1855093960184604
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6535,
+      "combined_late_units": 153386959185423,
+      "cpu_ms": 47,
+      "denominator": 5513,
+      "direct_checks": [
+        [
+          4099,
+          -44
+        ],
+        [
+          32771,
+          -78
+        ]
+      ],
+      "family": "a1-fibration-01",
+      "good_primes": 557,
+      "id": "fresh-a1-fibration-01-5302",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-88833931610733356311057798996243929146141014415290038928107",
+        "10630525173379920111933089434415113871010594728288077409789591657577415841964042213976806"
+      ],
+      "numerator": -12038,
+      "parameter": "-12038/5513",
+      "raw_sha256": "3d5e110b10fda4459871fc59105c1dd38e0babf7d0bc8de63830ab11c65fa3df",
+      "retained_index": 5302,
+      "score_units": 86595272478548,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 46554037145814,
+        "validation_good": 3030,
+        "validation_units": 20237649561061
+      },
+      "slice_id": "a1-fibration-01-neg",
+      "wall_seconds": 0.13450594700407237
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6533,
+      "combined_late_units": 152330096630100,
+      "cpu_ms": 45,
+      "denominator": 217,
+      "direct_checks": [
+        [
+          4099,
+          -110
+        ],
+        [
+          32771,
+          -258
+        ]
+      ],
+      "family": "a1-fibration-01",
+      "good_primes": 555,
+      "id": "fresh-a1-fibration-01-0773",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-106187429693505322847923600367728907019523455156799482267",
+        "421147089390594990523220211569186635034952817785888093558248349550570713563692371126"
+      ],
+      "numerator": -4444,
+      "parameter": "-4444/217",
+      "raw_sha256": "77054c0fcc5f2963cd14e23981af3c52d5a72311d0d407b0ce6a58d83f371845",
+      "retained_index": 773,
+      "score_units": 88620781076609,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 44450268582199,
+        "validation_good": 3030,
+        "validation_units": 19259046971292
+      },
+      "slice_id": "a1-fibration-01-neg",
+      "wall_seconds": 0.13124903989955783
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6538,
+      "combined_late_units": 152200927418093,
+      "cpu_ms": 43,
+      "denominator": 9833,
+      "direct_checks": [
+        [
+          4099,
+          -4
+        ],
+        [
+          32771,
+          6
+        ]
+      ],
+      "family": "a1-fibration-01",
+      "good_primes": 560,
+      "id": "fresh-a1-fibration-01-0042",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-1318766607239148536831639488956021608969721473974658398849707",
+        "833038814172266516060081588458627534318505259389011065487407263306372736037207986957079590"
+      ],
+      "numerator": -15562,
+      "parameter": "-15562/9833",
+      "raw_sha256": "2744b351049836d0d6a14251c6b9dd34dae8e3b8b7409a94c1fcb102071eed86",
+      "retained_index": 42,
+      "score_units": 91597892204388,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 41306536825917,
+        "validation_good": 3030,
+        "validation_units": 19296498387788
+      },
+      "slice_id": "a1-fibration-01-neg",
+      "wall_seconds": 0.13561014307197183
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6535,
+      "combined_late_units": 151970739976869,
+      "cpu_ms": 36,
+      "denominator": 16,
+      "direct_checks": [
+        [
+          4099,
+          -104
+        ],
+        [
+          32771,
+          -81
+        ]
+      ],
+      "family": "a1-fibration-01",
+      "good_primes": 557,
+      "id": "fresh-a1-fibration-01-3048",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-1465109809796356392859728788090349827678788769572620054842475",
+        "679819752014166875264657169803963911852339747164378677412370846466071428232293325440123750"
+      ],
+      "numerator": 14857,
+      "parameter": "14857/16",
+      "raw_sha256": "35b992c2f514c9e0168826cbade8d8569c983fa0f5da0c3ae3adec830c605b03",
+      "retained_index": 3048,
+      "score_units": 87216048810049,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 47797847350699,
+        "validation_good": 3030,
+        "validation_units": 16956843816121
+      },
+      "slice_id": "a1-fibration-01-pos",
+      "wall_seconds": 0.1327353019732982
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6534,
+      "combined_late_units": 151145728164138,
+      "cpu_ms": 47,
+      "denominator": 13081,
+      "direct_checks": [
+        [
+          4099,
+          22
+        ],
+        [
+          32771,
+          -207
+        ]
+      ],
+      "family": "a1-fibration-01",
+      "good_primes": 556,
+      "id": "fresh-a1-fibration-01-0125",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-15121573231704093451911593976492724954650603720145305488430000",
+        "15945326200607387250695334046490334648910840014509025551990741321138425461198832294758000000"
+      ],
+      "numerator": -10453,
+      "parameter": "-10453/13081",
+      "raw_sha256": "a8ec902da5daf07aa49040668954dcb215ce98fe49243cb72020ff60a9f171b3",
+      "retained_index": 125,
+      "score_units": 90341937120113,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 42626567270822,
+        "validation_good": 3030,
+        "validation_units": 18177223773203
+      },
+      "slice_id": "a1-fibration-01-neg",
+      "wall_seconds": 0.13712572492659092
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6533,
+      "combined_late_units": 150510559902426,
+      "cpu_ms": 40,
+      "denominator": 14816,
+      "direct_checks": [
+        [
+          4099,
+          -76
+        ],
+        [
+          32771,
+          -192
+        ]
+      ],
+      "family": "a1-fibration-01",
+      "good_primes": 556,
+      "id": "fresh-a1-fibration-01-1203",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-25081837759642590972438762906937154415739787313506875862688267",
+        "48188782680091632344442491303947237426200546065427076409596848362326141870507075423460973126"
+      ],
+      "numerator": 13005,
+      "parameter": "13005/14816",
+      "raw_sha256": "b374421dea121330611a1989b91e8799f7bc7a8e7715bd8cf90436caab5cb51d",
+      "retained_index": 1203,
+      "score_units": 88192401902115,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 47331251363899,
+        "validation_good": 3030,
+        "validation_units": 14986906636412
+      },
+      "slice_id": "a1-fibration-01-pos",
+      "wall_seconds": 0.12379990494810045
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6534,
+      "combined_late_units": 150431798012634,
+      "cpu_ms": 43,
+      "denominator": 7456,
+      "direct_checks": [
+        [
+          4099,
+          -84
+        ],
+        [
+          32771,
+          53
+        ]
+      ],
+      "family": "a1-fibration-01",
+      "good_primes": 556,
+      "id": "fresh-a1-fibration-01-0215",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-5084648503388027726185214996878073535496078126627860449067",
+        "147034317276047297132861056048929756865992440598174464489967978476677681365607366626726"
+      ],
+      "numerator": 3023,
+      "parameter": "3023/7456",
+      "raw_sha256": "99d1c1634e6bdabc97bfa62d692807e9d391a47d3d52eeeb9f9bde3f10071b79",
+      "retained_index": 215,
+      "score_units": 89843240642350,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 46891812667216,
+        "validation_good": 3030,
+        "validation_units": 13696744703068
+      },
+      "slice_id": "a1-fibration-01-pos",
+      "wall_seconds": 0.13673627108801156
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6535,
+      "combined_late_units": 150416532633330,
+      "cpu_ms": 46,
+      "denominator": 12697,
+      "direct_checks": [
+        [
+          4099,
+          64
+        ],
+        [
+          32771,
+          -196
+        ]
+      ],
+      "family": "a1-fibration-01",
+      "good_primes": 558,
+      "id": "fresh-a1-fibration-01-2280",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-1295047428732597376808330358155414654449370808321726518204400",
+        "579920492632517927116524571681191724044744236255362072447218062871717821632328849639760000"
+      ],
+      "numerator": -1171,
+      "parameter": "-1171/12697",
+      "raw_sha256": "312cbc41e829db4013e99f5affc866dc2da2eadf86f45d302c86455790fb8f33",
+      "retained_index": 2280,
+      "score_units": 87534682706035,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 50733846028075,
+        "validation_good": 3030,
+        "validation_units": 12148003899220
+      },
+      "slice_id": "a1-fibration-01-neg",
+      "wall_seconds": 0.14511786308139563
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6534,
+      "combined_late_units": 150219529561011,
+      "cpu_ms": 48,
+      "denominator": 12137,
+      "direct_checks": [
+        [
+          4099,
+          -64
+        ],
+        [
+          32771,
+          -132
+        ]
+      ],
+      "family": "a1-fibration-01",
+      "good_primes": 557,
+      "id": "fresh-a1-fibration-01-4279",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-6015187340111154118646779393981620883928721483568362944599152",
+        "4710562302353792761679625489585592837428397635799047585906974239051407690652492258037805696"
+      ],
+      "numerator": -7655,
+      "parameter": "-7655/12137",
+      "raw_sha256": "e1b730ca158e3fb42d9d8f1ba11a9f2d0d2f98f30b54747f39e1a44ca8a2da6d",
+      "retained_index": 4279,
+      "score_units": 86831416974669,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 48899618913916,
+        "validation_good": 3030,
+        "validation_units": 14488493672426
+      },
+      "slice_id": "a1-fibration-01-neg",
+      "wall_seconds": 0.13808478193823248
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6535,
+      "combined_late_units": 150166244641924,
+      "cpu_ms": 47,
+      "denominator": 14185,
+      "direct_checks": [
+        [
+          4099,
+          72
+        ],
+        [
+          32771,
+          -205
+        ]
+      ],
+      "family": "a1-fibration-01",
+      "good_primes": 557,
+      "id": "fresh-a1-fibration-01-4752",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-19453274781443382896286932429421815318997791766648174472817712",
+        "28240202017122398908439537992908962821546285416558790810809495860209292045876432242739744640"
+      ],
+      "numerator": -8489,
+      "parameter": "-8489/14185",
+      "raw_sha256": "2a05eba01eb8fec4bc08d4e41a42da7a81d6df3d24f0bdabf7bfaebbb3140dbd",
+      "retained_index": 4752,
+      "score_units": 86720678549029,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 48609118059804,
+        "validation_good": 3030,
+        "validation_units": 14836448033091
+      },
+      "slice_id": "a1-fibration-01-neg",
+      "wall_seconds": 0.1492125840159133
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6535,
+      "combined_late_units": 150128165494509,
+      "cpu_ms": 40,
+      "denominator": 10841,
+      "direct_checks": [
+        [
+          4099,
+          10
+        ],
+        [
+          32771,
+          -78
+        ]
+      ],
+      "family": "a1-fibration-01",
+      "good_primes": 557,
+      "id": "fresh-a1-fibration-01-0001",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-3988457926184242248563040842366527687755668346835587047967387",
+        "2752251450206849218991720427105637442653117534929992360988228731016731280402092458047893430"
+      ],
+      "numerator": -15404,
+      "parameter": "-15404/10841",
+      "raw_sha256": "07848cb849ac7b328fd100663c810eb683b9c1b51ff73487428cdeaad8f1b798",
+      "retained_index": 1,
+      "score_units": 95016667307883,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 41299395374469,
+        "validation_good": 3030,
+        "validation_units": 13812102812157
+      },
+      "slice_id": "a1-fibration-01-neg",
+      "wall_seconds": 0.12464497599285096
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6532,
+      "combined_late_units": 155867305262948,
+      "cpu_ms": 47,
+      "denominator": 4286,
+      "direct_checks": [
+        [
+          4099,
+          68
+        ],
+        [
+          32771,
+          -110
+        ]
+      ],
+      "family": "a1-fibration-02",
+      "good_primes": 554,
+      "id": "fresh-a1-fibration-02-6371",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-18164395696892381407426562418212932363766587465368727173552",
+        "941794367451897492025083155462776389020673965438322893550020779920610336349959343877504"
+      ],
+      "numerator": -5081,
+      "parameter": "-5081/4286",
+      "raw_sha256": "abd956d130635a4e26ab6a3d3524014b574d0ec687bbb8f7cc19dc3424ad9bef",
+      "retained_index": 6371,
+      "score_units": 85883653372202,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 53125621811123,
+        "validation_good": 3030,
+        "validation_units": 16858030079623
+      },
+      "slice_id": "a1-fibration-02-neg",
+      "wall_seconds": 0.1373925571097061
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6537,
+      "combined_late_units": 154279630179796,
+      "cpu_ms": 44,
+      "denominator": 4713,
+      "direct_checks": [
+        [
+          4099,
+          -24
+        ],
+        [
+          32771,
+          -48
+        ]
+      ],
+      "family": "a1-fibration-02",
+      "good_primes": 560,
+      "id": "fresh-a1-fibration-02-0124",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-14635042629662649974980329789879561011397465153133836288132",
+        "714432150341613549577390850534777511005129981674076523702059416864061836437084807196644"
+      ],
+      "numerator": 4337,
+      "parameter": "4337/4713",
+      "raw_sha256": "7b5bbbdff035bcc2daedc2196c92326964ba51ad47e8b2cecf9f118c51bf9d60",
+      "retained_index": 124,
+      "score_units": 90063195598720,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 42531286430564,
+        "validation_good": 3030,
+        "validation_units": 21685148150512
+      },
+      "slice_id": "a1-fibration-02-pos",
+      "wall_seconds": 0.14411523600574583
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6535,
+      "combined_late_units": 152846769536739,
+      "cpu_ms": 48,
+      "denominator": 958,
+      "direct_checks": [
+        [
+          4099,
+          -68
+        ],
+        [
+          32771,
+          5
+        ]
+      ],
+      "family": "a1-fibration-02",
+      "good_primes": 557,
+      "id": "fresh-a1-fibration-02-0366",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-195207309875040262314827838143893663079303963817348465072",
+        "1055079521651431129459233163874001583791696699350092817835676075030189934002063150464"
+      ],
+      "numerator": -6853,
+      "parameter": "-6853/958",
+      "raw_sha256": "5f1d0506ac51fda8211d8f9f369b114ec99d1f40c6e59b078ba40f7809db9465",
+      "retained_index": 366,
+      "score_units": 89013171517351,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 45868175129772,
+        "validation_good": 3030,
+        "validation_units": 17965422889616
+      },
+      "slice_id": "a1-fibration-02-neg",
+      "wall_seconds": 0.15919094602577388
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6536,
+      "combined_late_units": 152692179598384,
+      "cpu_ms": 44,
+      "denominator": 6089,
+      "direct_checks": [
+        [
+          4099,
+          -20
+        ],
+        [
+          32771,
+          -172
+        ]
+      ],
+      "family": "a1-fibration-02",
+      "good_primes": 558,
+      "id": "fresh-a1-fibration-02-3542",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-100153340532445964562213926928636863647200708716367405709872",
+        "12608157082337833785008408819288948898894958638633244785465614090369379532475403361998720"
+      ],
+      "numerator": 5264,
+      "parameter": "5264/6089",
+      "raw_sha256": "897d7634082e375f6e438b8b09e0d67ddbccf129ded4062f4119c3455591b725",
+      "retained_index": 3542,
+      "score_units": 86629310116192,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 50208525609187,
+        "validation_good": 3030,
+        "validation_units": 15854343873005
+      },
+      "slice_id": "a1-fibration-02-pos",
+      "wall_seconds": 0.15217638993635774
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6531,
+      "combined_late_units": 152269444687315,
+      "cpu_ms": 48,
+      "denominator": 16057,
+      "direct_checks": [
+        [
+          4099,
+          -28
+        ],
+        [
+          32771,
+          -180
+        ]
+      ],
+      "family": "a1-fibration-02",
+      "good_primes": 554,
+      "id": "fresh-a1-fibration-02-2083",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-104125274256788010166265219091730603626658393169269211588895552",
+        "400673152086901316427518867526156716988654815965009270222035972670619543795376560661392906496"
+      ],
+      "numerator": 9230,
+      "parameter": "9230/16057",
+      "raw_sha256": "06a87545f809b46c79b18531784a7dbed41f38a12e2007813194f0153b12287c",
+      "retained_index": 2083,
+      "score_units": 87207593878640,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 44708829431090,
+        "validation_good": 3030,
+        "validation_units": 20353021377585
+      },
+      "slice_id": "a1-fibration-02-pos",
+      "wall_seconds": 0.1787303650053218
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6534,
+      "combined_late_units": 151803392014036,
+      "cpu_ms": 48,
+      "denominator": 12382,
+      "direct_checks": [
+        [
+          4099,
+          -95
+        ],
+        [
+          32771,
+          -138
+        ]
+      ],
+      "family": "a1-fibration-02",
+      "good_primes": 556,
+      "id": "fresh-a1-fibration-02-3288",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-18207745439090348857652235003489805368307947245721548052603312",
+        "30813898599218890416721023640231002696038352894342716499528869492400841634295555412836191616"
+      ],
+      "numerator": -6441,
+      "parameter": "-6441/12382",
+      "raw_sha256": "107ed0465c8d44d8e1eb56b32df2ff7ccdffecb29fbce2fbaab2a3fb34aedf8c",
+      "retained_index": 3288,
+      "score_units": 86720154635536,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 49928226322164,
+        "validation_good": 3030,
+        "validation_units": 15155011056336
+      },
+      "slice_id": "a1-fibration-02-neg",
+      "wall_seconds": 0.13829263392835855
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6536,
+      "combined_late_units": 151762172425910,
+      "cpu_ms": 48,
+      "denominator": 13897,
+      "direct_checks": [
+        [
+          4099,
+          -24
+        ],
+        [
+          32771,
+          108
+        ]
+      ],
+      "family": "a1-fibration-02",
+      "good_primes": 559,
+      "id": "fresh-a1-fibration-02-2553",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-74141090701997781114290912200056674555532349394533315746961332",
+        "254100455334863174642273370693451824127056427834113240714167570246619633964400032653367663620"
+      ],
+      "numerator": 12047,
+      "parameter": "12047/13897",
+      "raw_sha256": "ee13752e244ba827e5fed88b9258382554a85fe7ca2269c6b38e383dff45b0f1",
+      "retained_index": 2553,
+      "score_units": 86989580682470,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 49672344841538,
+        "validation_good": 3030,
+        "validation_units": 15100246901902
+      },
+      "slice_id": "a1-fibration-02-pos",
+      "wall_seconds": 0.13796698406804353
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6535,
+      "combined_late_units": 151704222522532,
+      "cpu_ms": 44,
+      "denominator": 9657,
+      "direct_checks": [
+        [
+          4099,
+          8
+        ],
+        [
+          32771,
+          -168
+        ]
+      ],
+      "family": "a1-fibration-02",
+      "good_primes": 558,
+      "id": "fresh-a1-fibration-02-1289",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-768625413255461509910378733371425457516238111664359079288512",
+        "261556796820501774817402993191645976616475060518489028446556348211112800215108188578110720"
+      ],
+      "numerator": 3542,
+      "parameter": "3542/9657",
+      "raw_sha256": "7bdc3205e52bbdf42caa6e21b355ff54e9d15a475aa17368af9d29d54a3595d5",
+      "retained_index": 1289,
+      "score_units": 87728955040698,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 46540290208602,
+        "validation_good": 3030,
+        "validation_units": 17434977273232
+      },
+      "slice_id": "a1-fibration-02-pos",
+      "wall_seconds": 0.1374673959799111
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6533,
+      "combined_late_units": 151592714832540,
+      "cpu_ms": 49,
+      "denominator": 11593,
+      "direct_checks": [
+        [
+          4099,
+          -36
+        ],
+        [
+          32771,
+          282
+        ]
+      ],
+      "family": "a1-fibration-02",
+      "good_primes": 558,
+      "id": "fresh-a1-fibration-02-0794",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-1634069863146967268474271701942567857395502797566425045048452",
+        "818052075022295746151036676307599076019691082641727410746253835569671056198370310239117796"
+      ],
+      "numerator": 2705,
+      "parameter": "2705/11593",
+      "raw_sha256": "f6bdfb0751c2a674bd57cb0d681ff3ba76c9c74fb48decf34e63226aecccf241",
+      "retained_index": 794,
+      "score_units": 88233750619214,
+      "scores": {
+        "extension_good": 2945,
+        "extension_selection_units": 46483901271542,
+        "validation_good": 3030,
+        "validation_units": 16875062941784
+      },
+      "slice_id": "a1-fibration-02-pos",
+      "wall_seconds": 0.15296127705369145
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6531,
+      "combined_late_units": 151380426463233,
+      "cpu_ms": 37,
+      "denominator": 3214,
+      "direct_checks": [
+        [
+          4099,
+          55
+        ],
+        [
+          32771,
+          188
+        ]
+      ],
+      "family": "a1-fibration-02",
+      "good_primes": 554,
+      "id": "fresh-a1-fibration-02-7807",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-25463224296546968824184097993607217455354406207355105469872",
+        "1556417120066681353916219587863016332259989484895610827330790704563960915322603065163136"
+      ],
+      "numerator": -12537,
+      "parameter": "-12537/3214",
+      "raw_sha256": "2dca333c58de5df676a9d9a1d36ed105342441f041c8641bf53284a63909fe01",
+      "retained_index": 7807,
+      "score_units": 85306009261151,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 46612785149021,
+        "validation_good": 3030,
+        "validation_units": 19461632053061
+      },
+      "slice_id": "a1-fibration-02-neg",
+      "wall_seconds": 0.19053591403644532
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6534,
+      "combined_late_units": 150877711400597,
+      "cpu_ms": 43,
+      "denominator": 3481,
+      "direct_checks": [
+        [
+          4099,
+          -90
+        ],
+        [
+          32771,
+          -120
+        ]
+      ],
+      "family": "a1-fibration-02",
+      "good_primes": 556,
+      "id": "fresh-a1-fibration-02-2096",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-6989079840569922460997392163715155871731808584356273847232",
+        "128373533746813844693404878543972617353831500972851839612807851939758921812541733874944"
+      ],
+      "numerator": 14758,
+      "parameter": "14758/3481",
+      "raw_sha256": "e535cab015f454e4fad42918dee88154049d964513e0a19bd2498298b8f5cd8d",
+      "retained_index": 2096,
+      "score_units": 87202220089017,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 48536138421239,
+        "validation_good": 3030,
+        "validation_units": 15139352890341
+      },
+      "slice_id": "a1-fibration-02-pos",
+      "wall_seconds": 0.14678893995005637
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6536,
+      "combined_late_units": 150783669782015,
+      "cpu_ms": 40,
+      "denominator": 13769,
+      "direct_checks": [
+        [
+          4099,
+          -85
+        ],
+        [
+          32771,
+          -121
+        ]
+      ],
+      "family": "a1-fibration-02",
+      "good_primes": 559,
+      "id": "fresh-a1-fibration-02-1191",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-84112850436398450265541112087209384600227838183646650359826032",
+        "314231644162652250339457800368003207998064952440671804703484220923267322626278108654795350656"
+      ],
+      "numerator": 13180,
+      "parameter": "13180/13769",
+      "raw_sha256": "17372a426537b4be1533865da8e96092487c10eddefc589aa6b9c1fd9051ca36",
+      "retained_index": 1191,
+      "score_units": 87812075599060,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 42802543354303,
+        "validation_good": 3030,
+        "validation_units": 20169050828652
+      },
+      "slice_id": "a1-fibration-02-pos",
+      "wall_seconds": 0.15606947208289057
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6532,
+      "combined_late_units": 155394890074402,
+      "cpu_ms": 40,
+      "denominator": 4321,
+      "direct_checks": [
+        [
+          4099,
+          57
+        ],
+        [
+          32771,
+          -36
+        ]
+      ],
+      "family": "a1-fibration-03",
+      "good_primes": 554,
+      "id": "fresh-a1-fibration-03-4293",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-348232580656787644655878762364260691238561562572388078178347965675",
+        "79383639525783290893222227181435759246664205846293017993407714527089249687474495082293720987371750"
+      ],
+      "numerator": -15552,
+      "parameter": "-15552/4321",
+      "raw_sha256": "1d9c2ffbc704a69a80f1d18d8563207e67f03f2c6ed94fde10df36d5ecabbf05",
+      "retained_index": 4293,
+      "score_units": 86142897348399,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 50295527431182,
+        "validation_good": 3030,
+        "validation_units": 18956465294821
+      },
+      "slice_id": "a1-fibration-03-neg",
+      "wall_seconds": 0.15694516198709607
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6534,
+      "combined_late_units": 153002276729872,
+      "cpu_ms": 44,
+      "denominator": 10026,
+      "direct_checks": [
+        [
+          4099,
+          -116
+        ],
+        [
+          32771,
+          -2
+        ]
+      ],
+      "family": "a1-fibration-03",
+      "good_primes": 556,
+      "id": "fresh-a1-fibration-03-0821",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-253641810779181753773501906476739391108369958642694917651483246210587",
+        "1538390113994358799668651719822782394504115300333190795890691249984495178889627007554664364703266081334"
+      ],
+      "numerator": 11347,
+      "parameter": "11347/10026",
+      "raw_sha256": "be70a98957d9467a94d0c3c8a9b4ec5803a0371b80bc3b035f82421257fcefa7",
+      "retained_index": 821,
+      "score_units": 87953502448483,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 48580232210547,
+        "validation_good": 3030,
+        "validation_units": 16468542070842
+      },
+      "slice_id": "a1-fibration-03-pos",
+      "wall_seconds": 0.13566419400740415
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6533,
+      "combined_late_units": 151465412342557,
+      "cpu_ms": 40,
+      "denominator": 15937,
+      "direct_checks": [
+        [
+          4099,
+          31
+        ],
+        [
+          32771,
+          76
+        ]
+      ],
+      "family": "a1-fibration-03",
+      "good_primes": 556,
+      "id": "fresh-a1-fibration-03-0123",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-10760419128172840592594453018409335545296698688403802488600004947852827",
+        "426638593170755964470321678757987396885650656947401846643496886653563304443499940306117445629228738689590"
+      ],
+      "numerator": -2462,
+      "parameter": "-2462/15937",
+      "raw_sha256": "464ae788b45400035429390ff63c5faa999ff6419a385f0e4d580cd1c04533e9",
+      "retained_index": 123,
+      "score_units": 89744513955748,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 47476331549679,
+        "validation_good": 3030,
+        "validation_units": 14244566837130
+      },
+      "slice_id": "a1-fibration-03-neg",
+      "wall_seconds": 0.14646013197489083
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6532,
+      "combined_late_units": 150697028121886,
+      "cpu_ms": 41,
+      "denominator": 11361,
+      "direct_checks": [
+        [
+          4099,
+          0
+        ],
+        [
+          32771,
+          -200
+        ]
+      ],
+      "family": "a1-fibration-03",
+      "good_primes": 554,
+      "id": "fresh-a1-fibration-03-5747",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-720036309101092826537150229817358020118863321052483454337780551889947",
+        "7387287104557015921637145249189199689502413743254339606242563438774060878961822435887327876136403803190"
+      ],
+      "numerator": -2986,
+      "parameter": "-2986/11361",
+      "raw_sha256": "41a24b6da41d09fe906106032dca993be2959d88b17491212b5c5e749f5fb140",
+      "retained_index": 5747,
+      "score_units": 85810251021809,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 47484783242052,
+        "validation_good": 3030,
+        "validation_units": 17401993858025
+      },
+      "slice_id": "a1-fibration-03-neg",
+      "wall_seconds": 0.1472012010635808
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6535,
+      "combined_late_units": 150486579120301,
+      "cpu_ms": 45,
+      "denominator": 15665,
+      "direct_checks": [
+        [
+          4099,
+          -32
+        ],
+        [
+          32771,
+          141
+        ]
+      ],
+      "family": "a1-fibration-03",
+      "good_primes": 557,
+      "id": "fresh-a1-fibration-03-4218",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-9562468969251604408842987999730909122556750121990856919744967552037552",
+        "358091683692509346037896370662183977905578220194211966646693988541859856832750529382936441713526314330496"
+      ],
+      "numerator": -12509,
+      "parameter": "-12509/15665",
+      "raw_sha256": "31bec4ed47bcaaf0344faa0f52add3b18c5b88fd82e2826f4476fb7d09369924",
+      "retained_index": 4218,
+      "score_units": 86164289429911,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 51697722248175,
+        "validation_good": 3030,
+        "validation_units": 12624567442215
+      },
+      "slice_id": "a1-fibration-03-neg",
+      "wall_seconds": 0.13620159297715873
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6534,
+      "combined_late_units": 150006132925242,
+      "cpu_ms": 37,
+      "denominator": 9361,
+      "direct_checks": [
+        [
+          4099,
+          -35
+        ],
+        [
+          32771,
+          192
+        ]
+      ],
+      "family": "a1-fibration-03",
+      "good_primes": 556,
+      "id": "fresh-a1-fibration-03-0027",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-151826560717855950034128247218136489366582646449569827820887802501552",
+        "714772564508510819869210020735574223336703693401723094440415085787555114717230645644665610101491117440"
+      ],
+      "numerator": -181,
+      "parameter": "-181/9361",
+      "raw_sha256": "5d4be706834e7e9719f3f564783abc30ca95f5011d5ba59f3325f9af7a6eeec7",
+      "retained_index": 27,
+      "score_units": 90951555143347,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 43946714215956,
+        "validation_good": 3030,
+        "validation_units": 15107863565939
+      },
+      "slice_id": "a1-fibration-03-neg",
+      "wall_seconds": 0.16377817909233272
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6535,
+      "combined_late_units": 149961347324700,
+      "cpu_ms": 44,
+      "denominator": 9489,
+      "direct_checks": [
+        [
+          4099,
+          30
+        ],
+        [
+          32771,
+          -213
+        ]
+      ],
+      "family": "a1-fibration-03",
+      "good_primes": 557,
+      "id": "fresh-a1-fibration-03-0062",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-176984130629514696831817546053507062108125192432966497566286131671152",
+        "903530300402155779493870117530708936758547756267089416294746928337791719964854888101757638480719309440"
+      ],
+      "numerator": -14119,
+      "parameter": "-14119/9489",
+      "raw_sha256": "486c6b60813a638805f9922046769249c85c2130b0b780417c0e1810776966cf",
+      "retained_index": 62,
+      "score_units": 90289045871088,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 42026759346327,
+        "validation_good": 3030,
+        "validation_units": 17645542107285
+      },
+      "slice_id": "a1-fibration-03-neg",
+      "wall_seconds": 0.14737876504659653
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6532,
+      "combined_late_units": 149888087855618,
+      "cpu_ms": 47,
+      "denominator": 3521,
+      "direct_checks": [
+        [
+          4099,
+          -32
+        ],
+        [
+          32771,
+          -195
+        ]
+      ],
+      "family": "a1-fibration-03",
+      "good_primes": 554,
+      "id": "fresh-a1-fibration-03-1440",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-63412625630906174685465641704844249629237913664257234228575870875",
+        "6125913112463579448389139850969824178276840420852000940987840413195863434586545420974527431700150"
+      ],
+      "numerator": -4882,
+      "parameter": "-4882/3521",
+      "raw_sha256": "c9a2583783a5a8fec3682ae5b7129639a32b774529933808c453c017f7f486cd",
+      "retained_index": 1440,
+      "score_units": 87332180886939,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 45791844904995,
+        "validation_good": 3030,
+        "validation_units": 16764062063684
+      },
+      "slice_id": "a1-fibration-03-neg",
+      "wall_seconds": 0.15080044395290315
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6536,
+      "combined_late_units": 149872021061315,
+      "cpu_ms": 48,
+      "denominator": 15898,
+      "direct_checks": [
+        [
+          4099,
+          -14
+        ],
+        [
+          32771,
+          48
+        ]
+      ],
+      "family": "a1-fibration-03",
+      "good_primes": 559,
+      "id": "fresh-a1-fibration-03-0068",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-10482005712303608140272020914076208563157243214601196819849879550802907",
+        "409933250335728177768042358180090458960464782988347707339771335463988459430448054779319986491273135331190"
+      ],
+      "numerator": 957,
+      "parameter": "957/15898",
+      "raw_sha256": "45eeb535440bdd8d279f4a80e2a837c2e3cf2ee36b4ad49ba7b5a5f2a990e5e8",
+      "retained_index": 68,
+      "score_units": 90197982719321,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 40621072140040,
+        "validation_good": 3030,
+        "validation_units": 19052966201954
+      },
+      "slice_id": "a1-fibration-03-pos",
+      "wall_seconds": 0.16096577292773873
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6535,
+      "combined_late_units": 149644446356151,
+      "cpu_ms": 51,
+      "denominator": 4417,
+      "direct_checks": [
+        [
+          4099,
+          -108
+        ],
+        [
+          32771,
+          -12
+        ]
+      ],
+      "family": "a1-fibration-03",
+      "good_primes": 558,
+      "id": "fresh-a1-fibration-03-0263",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-384836927824025284268088854580133334721668571494892614186358123312",
+        "91487734732322328685703434839481718377501230417151762880630409327934826960574491998325162523911040"
+      ],
+      "numerator": -4577,
+      "parameter": "-4577/4417",
+      "raw_sha256": "c9b16f3d647e629f39122a2e4fdca032436a00891b3e86e82342254228233c48",
+      "retained_index": 263,
+      "score_units": 89109207807834,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 42825247145219,
+        "validation_good": 3030,
+        "validation_units": 17709991403098
+      },
+      "slice_id": "a1-fibration-03-neg",
+      "wall_seconds": 0.14803709601983428
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6537,
+      "combined_late_units": 149223277191488,
+      "cpu_ms": 48,
+      "denominator": 16001,
+      "direct_checks": [
+        [
+          4099,
+          74
+        ],
+        [
+          32771,
+          -93
+        ]
+      ],
+      "family": "a1-fibration-03",
+      "good_primes": 561,
+      "id": "fresh-a1-fibration-03-2720",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-11098292649252805657795346331935543743942497922900693558125401115887787",
+        "446841653222568129991653800305118183742115665518548052287532487324858573712960913519116951307891394084390"
+      ],
+      "numerator": -1876,
+      "parameter": "-1876/16001",
+      "raw_sha256": "656dc1ff77532c758a223ab1e958ee0922cac3f6935f6c5d87dee3120887c22e",
+      "retained_index": 2720,
+      "score_units": 86662843995238,
+      "scores": {
+        "extension_good": 2946,
+        "extension_selection_units": 48842445895824,
+        "validation_good": 3030,
+        "validation_units": 13717987300426
+      },
+      "slice_id": "a1-fibration-03-neg",
+      "wall_seconds": 0.16761079290881753
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6533,
+      "combined_late_units": 149103254751349,
+      "cpu_ms": 34,
+      "denominator": 9153,
+      "direct_checks": [
+        [
+          4099,
+          -7
+        ],
+        [
+          32771,
+          240
+        ]
+      ],
+      "family": "a1-fibration-03",
+      "good_primes": 557,
+      "id": "fresh-a1-fibration-03-0806",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-128219948420054645000688876343920125525291984927260321995929624091675",
+        "555293763864858453921367525910360301035494032988762790906977856695332145667873332842684953358072861750"
+      ],
+      "numerator": -3386,
+      "parameter": "-3386/9153",
+      "raw_sha256": "e27fb438f29a4b4c0816bd0acdbaa6472770ab00c87b32ddc938e176d9535701",
+      "retained_index": 806,
+      "score_units": 87974616020926,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 46837468905418,
+        "validation_good": 3029,
+        "validation_units": 14291169825005
+      },
+      "slice_id": "a1-fibration-03-neg",
+      "wall_seconds": 0.1416904809884727
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6534,
+      "combined_late_units": 154505897637845,
+      "cpu_ms": 44,
+      "denominator": 14755,
+      "direct_checks": [
+        [
+          4099,
+          69
+        ],
+        [
+          32771,
+          146
+        ]
+      ],
+      "family": "a1-fibration-04",
+      "good_primes": 557,
+      "id": "fresh-a1-fibration-04-0655",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-1272281865818128341347290684735324328684826783861424340173451952",
+        "17093784499855221352346919790770060310887831857922641612076120208320060681495456139278688807296"
+      ],
+      "numerator": 8326,
+      "parameter": "8326/14755",
+      "raw_sha256": "f1552df344da12277793fc89ffabf4e0720a6928eed75e70a246076519e140e8",
+      "retained_index": 655,
+      "score_units": 88391893831295,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 50410501533020,
+        "validation_good": 3030,
+        "validation_units": 15703502273530
+      },
+      "slice_id": "a1-fibration-04-pos",
+      "wall_seconds": 0.13760182599071413
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6530,
+      "combined_late_units": 154430878904427,
+      "cpu_ms": 47,
+      "denominator": 1092,
+      "direct_checks": [
+        [
+          4099,
+          -35
+        ],
+        [
+          32771,
+          35
+        ]
+      ],
+      "family": "a1-fibration-04",
+      "good_primes": 552,
+      "id": "fresh-a1-fibration-04-1296",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-47837055851244265200051243357288819274450022724903378012",
+        "128346836415941542754112493045056562807795186110924007999710869317257466054232978100"
+      ],
+      "numerator": -6577,
+      "parameter": "-6577/1092",
+      "raw_sha256": "9aa3a361cb57b13e2dbe70fd32d8c865cd0262ec3a491ac2520c60224c7bc0ea",
+      "retained_index": 1296,
+      "score_units": 87710947349237,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 48360325390707,
+        "validation_good": 3030,
+        "validation_units": 18359606164483
+      },
+      "slice_id": "a1-fibration-04-neg",
+      "wall_seconds": 0.15197403309866786
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6535,
+      "combined_late_units": 153147757319509,
+      "cpu_ms": 44,
+      "denominator": 6675,
+      "direct_checks": [
+        [
+          4099,
+          28
+        ],
+        [
+          32771,
+          -28
+        ]
+      ],
+      "family": "a1-fibration-04",
+      "good_primes": 557,
+      "id": "fresh-a1-fibration-04-0984",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-3403939127520142663380595827074706915201577230126746766385152",
+        "2362551443639150896619821512433619822095084656105303221389278807342776022467970598672797696"
+      ],
+      "numerator": 6127,
+      "parameter": "6127/6675",
+      "raw_sha256": "0c2a1a0551fe34ffa39f90c376d89ba0cf56dab290055c7de0d78494299fa42a",
+      "retained_index": 984,
+      "score_units": 88005165769822,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 49565367030936,
+        "validation_good": 3030,
+        "validation_units": 15577224518751
+      },
+      "slice_id": "a1-fibration-04-pos",
+      "wall_seconds": 0.14839306892827153
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6532,
+      "combined_late_units": 151656483964887,
+      "cpu_ms": 32,
+      "denominator": 7395,
+      "direct_checks": [
+        [
+          4099,
+          -4
+        ],
+        [
+          32771,
+          144
+        ]
+      ],
+      "family": "a1-fibration-04",
+      "good_primes": 554,
+      "id": "fresh-a1-fibration-04-3120",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-3941873383975541186129378422362432227017419453398268478095552",
+        "2971723125012200330543925089757937477802847918861535895312916154873936792252318797114506496"
+      ],
+      "numerator": 2899,
+      "parameter": "2899/7395",
+      "raw_sha256": "df236d28963d8776aafa7900bd359e33cab91e0663c2f4306a84581a232dd01c",
+      "retained_index": 3120,
+      "score_units": 86748752445657,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 49746318026402,
+        "validation_good": 3030,
+        "validation_units": 15161413492828
+      },
+      "slice_id": "a1-fibration-04-pos",
+      "wall_seconds": 0.1548133639153093
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6534,
+      "combined_late_units": 151389842707874,
+      "cpu_ms": 43,
+      "denominator": 1123,
+      "direct_checks": [
+        [
+          4099,
+          -105
+        ],
+        [
+          32771,
+          -262
+        ]
+      ],
+      "family": "a1-fibration-04",
+      "good_primes": 557,
+      "id": "fresh-a1-fibration-04-0093",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-2745909868012793715802445571076447712062095327171871152",
+        "1744749288429609405636163612977809145999358352696301599566226966181285057492028800"
+      ],
+      "numerator": 6042,
+      "parameter": "6042/1123",
+      "raw_sha256": "bc7022e64a6ebe79357738780805e00efe26da43ff23abee7b15643402ac064f",
+      "retained_index": 93,
+      "score_units": 90246057133861,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 45776159732558,
+        "validation_good": 3030,
+        "validation_units": 15367625841455
+      },
+      "slice_id": "a1-fibration-04-pos",
+      "wall_seconds": 0.15513989701867104
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6535,
+      "combined_late_units": 151217212805472,
+      "cpu_ms": 44,
+      "denominator": 1891,
+      "direct_checks": [
+        [
+          4099,
+          -16
+        ],
+        [
+          32771,
+          336
+        ]
+      ],
+      "family": "a1-fibration-04",
+      "good_primes": 558,
+      "id": "fresh-a1-fibration-04-4335",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-376957382633551071185102069017017360879734336701940330352",
+        "2855978582445885788096318222460221721316782137822831168143582047988104991586203459200"
+      ],
+      "numerator": 4509,
+      "parameter": "4509/1891",
+      "raw_sha256": "aecd21c8da530952a330d36c61e34e63f7d92b9516849f5d9566ff8aa7b8cad6",
+      "retained_index": 4335,
+      "score_units": 86382641026621,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 45927067302982,
+        "validation_good": 3030,
+        "validation_units": 18907504475869
+      },
+      "slice_id": "a1-fibration-04-pos",
+      "wall_seconds": 0.14432847790885717
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6527,
+      "combined_late_units": 150902901003390,
+      "cpu_ms": 48,
+      "denominator": 563,
+      "direct_checks": [
+        [
+          4099,
+          -28
+        ],
+        [
+          32771,
+          -105
+        ]
+      ],
+      "family": "a1-fibration-04",
+      "good_primes": 550,
+      "id": "fresh-a1-fibration-04-2064",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-46313724636936504572005242106359818403692537874932400",
+        "5911476185234859849885128178173621600813566814184221862386011530903113687280000"
+      ],
+      "numerator": 4104,
+      "parameter": "4104/563",
+      "raw_sha256": "4ddeb2ca60c82d3c45bfa4272f25a623a6c47e79178ebbdf511c2fb751a526ba",
+      "retained_index": 2064,
+      "score_units": 87190912565764,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 47462931774030,
+        "validation_good": 3030,
+        "validation_units": 16249056663596
+      },
+      "slice_id": "a1-fibration-04-pos",
+      "wall_seconds": 0.12557777506299317
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6534,
+      "combined_late_units": 150898306141574,
+      "cpu_ms": 40,
+      "denominator": 4867,
+      "direct_checks": [
+        [
+          4099,
+          -13
+        ],
+        [
+          32771,
+          -222
+        ]
+      ],
+      "family": "a1-fibration-04",
+      "good_primes": 556,
+      "id": "fresh-a1-fibration-04-3833",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-577608348212483335594802618761763343846621587411149298489712",
+        "170140611668954181074432844964551644169491537990538636697740187097715321812620398434764416"
+      ],
+      "numerator": 9217,
+      "parameter": "9217/4867",
+      "raw_sha256": "8645eabf5ed8b64b1e033e56a917997d82ac82e10f3f5e168ff32f981dbd83ee",
+      "retained_index": 3833,
+      "score_units": 86515446224593,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 51987216174829,
+        "validation_good": 3030,
+        "validation_units": 12395643742152
+      },
+      "slice_id": "a1-fibration-04-pos",
+      "wall_seconds": 0.1278939580079168
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6535,
+      "combined_late_units": 150531155762428,
+      "cpu_ms": 47,
+      "denominator": 11108,
+      "direct_checks": [
+        [
+          4099,
+          -52
+        ],
+        [
+          32771,
+          84
+        ]
+      ],
+      "family": "a1-fibration-04",
+      "good_primes": 557,
+      "id": "fresh-a1-fibration-04-0018",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-18422738750590669397775862422007584956113848295544197843788252",
+        "27397661980712642986943976265560203934364492578293259018544802215290432636976883034643446900"
+      ],
+      "numerator": -4653,
+      "parameter": "-4653/11108",
+      "raw_sha256": "85c34b03c86ac52db85bc39b9d9b08611b2ca6769a5f5a5690830da8ada734b2",
+      "retained_index": 18,
+      "score_units": 91543485564766,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 45971932459960,
+        "validation_good": 3030,
+        "validation_units": 13015737737702
+      },
+      "slice_id": "a1-fibration-04-neg",
+      "wall_seconds": 0.15426148707047105
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6536,
+      "combined_late_units": 150503745956969,
+      "cpu_ms": 39,
+      "denominator": 7604,
+      "direct_checks": [
+        [
+          4099,
+          61
+        ],
+        [
+          32771,
+          303
+        ]
+      ],
+      "family": "a1-fibration-04",
+      "good_primes": 558,
+      "id": "fresh-a1-fibration-04-0017",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-1686099507127277147006907933393319548298682513130696905155932",
+        "1090623653310663270393411124298477363462700766802329558332323843891007709641401404108693044"
+      ],
+      "numerator": -8137,
+      "parameter": "-8137/7604",
+      "raw_sha256": "7a8cc7799696cb51671740094a76cca4aaffc9d2cbbfd729d543c74219f97b1d",
+      "retained_index": 17,
+      "score_units": 91553318677075,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 44077907038762,
+        "validation_good": 3030,
+        "validation_units": 14872520241132
+      },
+      "slice_id": "a1-fibration-04-neg",
+      "wall_seconds": 0.13635829708073288
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6530,
+      "combined_late_units": 149854643255671,
+      "cpu_ms": 45,
+      "denominator": 115,
+      "direct_checks": [
+        [
+          4099,
+          -19
+        ],
+        [
+          32771,
+          184
+        ]
+      ],
+      "family": "a1-fibration-04",
+      "good_primes": 552,
+      "id": "fresh-a1-fibration-04-2314",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-372352288898544560120101817811202848275083982197643952",
+        "85351309028088368805655253129038950226043194407799477813180706906229747093031296"
+      ],
+      "numerator": 4584,
+      "parameter": "4584/115",
+      "raw_sha256": "2aac2799a40301499315e7523214401c533c5584af6a6b0105ff0769e504b3a0",
+      "retained_index": 2314,
+      "score_units": 87069702690594,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 45446240110337,
+        "validation_good": 3030,
+        "validation_units": 17338700454740
+      },
+      "slice_id": "a1-fibration-04-pos",
+      "wall_seconds": 0.1366978749865666
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6537,
+      "combined_late_units": 149721931251524,
+      "cpu_ms": 45,
+      "denominator": 1587,
+      "direct_checks": [
+        [
+          4099,
+          110
+        ],
+        [
+          32771,
+          -153
+        ]
+      ],
+      "family": "a1-fibration-04",
+      "good_primes": 560,
+      "id": "fresh-a1-fibration-04-0688",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-620933950312935822351006864881784265929354855045761583792",
+        "5648053976627691942892917224513299620467573481325081813007544771942299798717722429824"
+      ],
+      "numerator": 12584,
+      "parameter": "12584/1587",
+      "raw_sha256": "15bf7a0179b6f4cdd5b8b80813e382fc6d66599c5e77146cb59cb8648d382171",
+      "retained_index": 688,
+      "score_units": 88355131565190,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 46294391048962,
+        "validation_good": 3030,
+        "validation_units": 15072408637372
+      },
+      "slice_id": "a1-fibration-04-pos",
+      "wall_seconds": 0.14973183500114828
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6536,
+      "combined_late_units": 152725245288447,
+      "cpu_ms": 44,
+      "denominator": 15065,
+      "direct_checks": [
+        [
+          4099,
+          19
+        ],
+        [
+          32771,
+          -174
+        ]
+      ],
+      "family": "a1-fibration-05",
+      "good_primes": 559,
+      "id": "fresh-a1-fibration-05-2213",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-8836773866493723853518350518489120491919789870709746869183972",
+        "9571566017048707583475405153656624643086087922072328142542719083673182400370584293631256836"
+      ],
+      "numerator": -1816,
+      "parameter": "-1816/15065",
+      "raw_sha256": "a1da39b34afb067913568780e27fa48d92197a8e48eba2ea4fed316de4134f76",
+      "retained_index": 2213,
+      "score_units": 87011774446061,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 53203098517157,
+        "validation_good": 3030,
+        "validation_units": 12510372325229
+      },
+      "slice_id": "a1-fibration-05-neg",
+      "wall_seconds": 0.11664394196122885
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6534,
+      "combined_late_units": 151872010907811,
+      "cpu_ms": 44,
+      "denominator": 12004,
+      "direct_checks": [
+        [
+          4099,
+          -75
+        ],
+        [
+          32771,
+          220
+        ]
+      ],
+      "family": "a1-fibration-05",
+      "good_primes": 557,
+      "id": "fresh-a1-fibration-05-0057",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-576461139159678959993151937372686933542197082530621346135952",
+        "179674409265112189479724025334533421887561313043411420743002206891216355342758598428144704"
+      ],
+      "numerator": 339,
+      "parameter": "339/12004",
+      "raw_sha256": "8efe72f673dfbed1cf36f8ba3a279a0158110898dd9c7a6841c6121eb4865490",
+      "retained_index": 57,
+      "score_units": 90490187185867,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 44966201285242,
+        "validation_good": 3030,
+        "validation_units": 16415622436702
+      },
+      "slice_id": "a1-fibration-05-pos",
+      "wall_seconds": 0.11390656197909266
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6532,
+      "combined_late_units": 151683475612001,
+      "cpu_ms": 45,
+      "denominator": 15721,
+      "direct_checks": [
+        [
+          4099,
+          -66
+        ],
+        [
+          32771,
+          144
+        ]
+      ],
+      "family": "a1-fibration-05",
+      "good_primes": 555,
+      "id": "fresh-a1-fibration-05-3735",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-74826752752247154494907851830377943366628886355664417962892772",
+        "247671340636795901755365257572271282623582176147015776987639663273357913020538542446739858436"
+      ],
+      "numerator": -12600,
+      "parameter": "-12600/15721",
+      "raw_sha256": "3b7861118e43a46795a9a8976569403b62d974b92df78b38fad5b07bf84616b5",
+      "retained_index": 3735,
+      "score_units": 86407588699399,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 47957420955295,
+        "validation_good": 3030,
+        "validation_units": 17318465957307
+      },
+      "slice_id": "a1-fibration-05-neg",
+      "wall_seconds": 0.12778332503512502
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6532,
+      "combined_late_units": 151295730290071,
+      "cpu_ms": 44,
+      "denominator": 6025,
+      "direct_checks": [
+        [
+          4099,
+          96
+        ],
+        [
+          32771,
+          -276
+        ]
+      ],
+      "family": "a1-fibration-05",
+      "good_primes": 554,
+      "id": "fresh-a1-fibration-05-1377",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-41687391026253693181560305287099112350423772173586513505252",
+        "3273531794576820443446495999397920834385262986385302571661328693509186635078469327227396"
+      ],
+      "numerator": -6884,
+      "parameter": "-6884/6025",
+      "raw_sha256": "21cb8a9394d91a3cd6f7ef96a1a17fc9f6e106c600ee0b2e1b00ffe7100c4a38",
+      "retained_index": 1377,
+      "score_units": 87534314252424,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 45220884700320,
+        "validation_good": 3030,
+        "validation_units": 18540531337327
+      },
+      "slice_id": "a1-fibration-05-neg",
+      "wall_seconds": 0.13076169497799128
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6535,
+      "combined_late_units": 150926576748071,
+      "cpu_ms": 44,
+      "denominator": 10105,
+      "direct_checks": [
+        [
+          4099,
+          -4
+        ],
+        [
+          32771,
+          -42
+        ]
+      ],
+      "family": "a1-fibration-05",
+      "good_primes": 557,
+      "id": "fresh-a1-fibration-05-1364",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-2590448681379299958556523208530694193782979651833362335807152",
+        "1604534394331202703918613383461972645553205321934267435679404493846743253491827058480781696"
+      ],
+      "numerator": -10551,
+      "parameter": "-10551/10105",
+      "raw_sha256": "d021ee7d266e90319e57021310e3e048d9d759c44495a952b44f2015e3bcef89",
+      "retained_index": 1364,
+      "score_units": 87542858348107,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 44188300259024,
+        "validation_good": 3030,
+        "validation_units": 19195418140940
+      },
+      "slice_id": "a1-fibration-05-neg",
+      "wall_seconds": 0.16174916503950953
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6534,
+      "combined_late_units": 150757289979804,
+      "cpu_ms": 35,
+      "denominator": 5321,
+      "direct_checks": [
+        [
+          4099,
+          -116
+        ],
+        [
+          32771,
+          -88
+        ]
+      ],
+      "family": "a1-fibration-05",
+      "good_primes": 556,
+      "id": "fresh-a1-fibration-05-2068",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-7983040339797332508891879772199872955855670754609266743652",
+        "274460791231165858573300552530207706701776950303710854700352364269911235381404766516740"
+      ],
+      "numerator": -8368,
+      "parameter": "-8368/5321",
+      "raw_sha256": "101e69f0fe8fbc8d001a1d242c029ed1f5c674f2ea99bbb350600913bd423837",
+      "retained_index": 2068,
+      "score_units": 87082302198036,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 48927010066831,
+        "validation_good": 3030,
+        "validation_units": 14747977714937
+      },
+      "slice_id": "a1-fibration-05-neg",
+      "wall_seconds": 0.13803423999343067
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6535,
+      "combined_late_units": 150606223808502,
+      "cpu_ms": 44,
+      "denominator": 5673,
+      "direct_checks": [
+        [
+          4099,
+          -64
+        ],
+        [
+          32771,
+          -155
+        ]
+      ],
+      "family": "a1-fibration-05",
+      "good_primes": 558,
+      "id": "fresh-a1-fibration-05-3117",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-10074960734794961738886915971824598621710893134839957573092",
+        "378206410667537517709505290980274052594978050122343487611918239601552809311644725671940"
+      ],
+      "numerator": -9284,
+      "parameter": "-9284/5673",
+      "raw_sha256": "8232dd52cee5b3758d93a96916299dbc275be9cef8963be698d8e7ef016ded43",
+      "retained_index": 3117,
+      "score_units": 86610643648837,
+      "scores": {
+        "extension_good": 2947,
+        "extension_selection_units": 46704214229352,
+        "validation_good": 3030,
+        "validation_units": 17291365930313
+      },
+      "slice_id": "a1-fibration-05-neg",
+      "wall_seconds": 0.15449934103526175
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6533,
+      "combined_late_units": 150473873375490,
+      "cpu_ms": 40,
+      "denominator": 729,
+      "direct_checks": [
+        [
+          4099,
+          -116
+        ],
+        [
+          32771,
+          172
+        ]
+      ],
+      "family": "a1-fibration-05",
+      "good_primes": 555,
+      "id": "fresh-a1-fibration-05-6211",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-321941548653735491325003894679128805483570581207930899697072",
+        "74323906872723192714639918633606866586251786511139047170706702020118814460865746311290240"
+      ],
+      "numerator": -13237,
+      "parameter": "-13237/729",
+      "raw_sha256": "bfb5aa2406c4805e19cd05d019a7b64294dbfad1429155bc67ee515f08bee1c5",
+      "retained_index": 6211,
+      "score_units": 85827421103613,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 48601258968191,
+        "validation_good": 3030,
+        "validation_units": 16045193303686
+      },
+      "slice_id": "a1-fibration-05-neg",
+      "wall_seconds": 0.13599755510222167
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6537,
+      "combined_late_units": 150126770993891,
+      "cpu_ms": 43,
+      "denominator": 4057,
+      "direct_checks": [
+        [
+          4099,
+          -84
+        ],
+        [
+          32771,
+          -220
+        ]
+      ],
+      "family": "a1-fibration-05",
+      "good_primes": 559,
+      "id": "fresh-a1-fibration-05-1447",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-191682313835774411556328418550287779250036889059235409847412",
+        "29960729531033949464614204360350176365128829425082293505511377725726279517669780195339140"
+      ],
+      "numerator": -12766,
+      "parameter": "-12766/4057",
+      "raw_sha256": "253b353743fe9e03e15dad9b89c1f2fbfc0f1be050dbf704c136b9f57454b36f",
+      "retained_index": 1447,
+      "score_units": 87474576110660,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 47192307681283,
+        "validation_good": 3030,
+        "validation_units": 15459887201948
+      },
+      "slice_id": "a1-fibration-05-neg",
+      "wall_seconds": 0.13878394500352442
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6534,
+      "combined_late_units": 150004005821548,
+      "cpu_ms": 44,
+      "denominator": 13716,
+      "direct_checks": [
+        [
+          4099,
+          -96
+        ],
+        [
+          32771,
+          -199
+        ]
+      ],
+      "family": "a1-fibration-05",
+      "good_primes": 558,
+      "id": "fresh-a1-fibration-05-6298",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-728837904983825412205400175576852621790385408088798370092432",
+        "204442389401581977159793670547841615853006126886737435803185114894087277271513868142923840"
+      ],
+      "numerator": 2087,
+      "parameter": "2087/13716",
+      "raw_sha256": "14cead21a98e4fac72463c9ad8f2c0a216362943379bdcf5db2e20ef1bfad9c3",
+      "retained_index": 6298,
+      "score_units": 85807404525327,
+      "scores": {
+        "extension_good": 2946,
+        "extension_selection_units": 48725508752418,
+        "validation_good": 3030,
+        "validation_units": 15471092543803
+      },
+      "slice_id": "a1-fibration-05-pos",
+      "wall_seconds": 0.17626318102702498
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6531,
+      "combined_late_units": 149959609848082,
+      "cpu_ms": 32,
+      "denominator": 8116,
+      "direct_checks": [
+        [
+          4099,
+          -73
+        ],
+        [
+          32771,
+          -120
+        ]
+      ],
+      "family": "a1-fibration-05",
+      "good_primes": 555,
+      "id": "fresh-a1-fibration-05-2038",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-27594301468331979031134763834517703937465892770126820875152",
+        "1754861023612114132805070126897822884660050109855704759584525590716272942986998150922304"
+      ],
+      "numerator": 2871,
+      "parameter": "2871/8116",
+      "raw_sha256": "68a9ec402b3c61dc153375df677d9b56108de42ca49f6603f7ad427f01eb3e70",
+      "retained_index": 2038,
+      "score_units": 87104495061059,
+      "scores": {
+        "extension_good": 2946,
+        "extension_selection_units": 43513802491353,
+        "validation_good": 3030,
+        "validation_units": 19341312295670
+      },
+      "slice_id": "a1-fibration-05-pos",
+      "wall_seconds": 0.15432505204807967
+    },
+    {
+      "band": 1,
+      "combined_late_good": 6535,
+      "combined_late_units": 149723571287650,
+      "cpu_ms": 49,
+      "denominator": 11113,
+      "direct_checks": [
+        [
+          4099,
+          -80
+        ],
+        [
+          32771,
+          -299
+        ]
+      ],
+      "family": "a1-fibration-05",
+      "good_primes": 557,
+      "id": "fresh-a1-fibration-05-2096",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-473641409261246129855285689352429993289150433839372866288100",
+        "126797925081418227825810147603056576042506422302085546299821664165332684724362986956112900"
+      ],
+      "numerator": -376,
+      "parameter": "-376/11113",
+      "raw_sha256": "a75d35764e40e72406b19870181a420b37462d2593e5a64584e321af4e9881d9",
+      "retained_index": 2096,
+      "score_units": 87071405533028,
+      "scores": {
+        "extension_good": 2948,
+        "extension_selection_units": 46590505147190,
+        "validation_good": 3030,
+        "validation_units": 16061660607432
+      },
+      "slice_id": "a1-fibration-05-neg",
+      "wall_seconds": 0.16966082202270627
+    }
+  ],
+  "skips": [],
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_five_mw16_atlas_v1.json": "88a8c61c2722394bb812da601e24ea2c19e54361eef4b0fe9c7924e78c828801",
+    "artifacts/local/elliptic-curves/mw16-fresh-outer-retention-v1/protocol.json": "b0a69fe792d93ff26713c8c42096088f59ed53b978b59c09b2f348e30b22c141",
+    "artifacts/local/elliptic-curves/mw16-fresh-outer-retention-v1/replay.json": "ece362537e18a0388f2c68548a28a03df68dada97854c510a929f1c96448027b",
+    "artifacts/local/elliptic-curves/mw16-fresh-outer-retention-v1/result.json": "61d724e724da198b1675271efd4f13f3e4d91bb2581b87691b7aea1bcc7774cc",
+    "elliptic-curves/cas/benchmark_mw16_extended_prime_traces.py": "c9f5b629e0921cadc7271d891fabc23fe837a3c7266d13c2653679e23f342023",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9",
+    "elliptic-curves/cas/extend_mw16_retained_prime_scores.py": "4e5137609badde68832a7f1041f0eaec1cbaea59e5297c0156439ad1a30d27cc",
+    "elliptic-curves/cas/extend_retained_r17_prime_scores.py": "c7b1262544a9791f842b5a06b2524d9bf57e0983f2a6d867eda216b14eb33767",
+    "elliptic-curves/cas/mod2_reduction_independence.py": "c5963952d1a9089416479671b788b6437dbba26591d796646022f4e9dddd0c70",
+    "elliptic-curves/cas/research_runtime/store.py": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965",
+    "elliptic-curves/cas/research_runtime/supervisor.py": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233",
+    "elliptic-curves/cas/scan_mw16_fresh_retention.py": "cb9e71f183d03c67acee7e6af3969d1563d1de1e78df0745e9438523050655ba",
+    "elliptic-curves/cas/score_mw16_fresh_retention.py": "5d775be43a8993478e301c346cdb0e26e69c72827e2ab836c70033c800182d02"
+  },
+  "status": "PASS_FROZEN60_SELECTION"
+}
