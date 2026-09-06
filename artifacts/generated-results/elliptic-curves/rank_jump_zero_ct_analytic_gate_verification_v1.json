@@ -1,0 +1,365 @@
+{
+  "base_small_prime_character_checks": [
+    {
+      "a_p": 1,
+      "prime": 3
+    },
+    {
+      "a_p": -2,
+      "prime": 5
+    },
+    {
+      "a_p": 3,
+      "prime": 7
+    },
+    {
+      "a_p": 5,
+      "prime": 11
+    },
+    {
+      "a_p": -2,
+      "prime": 13
+    },
+    {
+      "a_p": -6,
+      "prime": 17
+    },
+    {
+      "a_p": 1,
+      "prime": 19
+    },
+    {
+      "a_p": 8,
+      "prime": 23
+    },
+    {
+      "a_p": -3,
+      "prime": 29
+    },
+    {
+      "a_p": 0,
+      "prime": 31
+    },
+    {
+      "a_p": -6,
+      "prime": 37
+    },
+    {
+      "a_p": -5,
+      "prime": 41
+    },
+    {
+      "a_p": -1,
+      "prime": 43
+    },
+    {
+      "a_p": 13,
+      "prime": 47
+    },
+    {
+      "a_p": -10,
+      "prime": 53
+    },
+    {
+      "a_p": 0,
+      "prime": 59
+    },
+    {
+      "a_p": 2,
+      "prime": 61
+    },
+    {
+      "a_p": 7,
+      "prime": 67
+    },
+    {
+      "a_p": 15,
+      "prime": 71
+    },
+    {
+      "a_p": -11,
+      "prime": 73
+    },
+    {
+      "a_p": 5,
+      "prime": 79
+    },
+    {
+      "a_p": -11,
+      "prime": 83
+    },
+    {
+      "a_p": -3,
+      "prime": 89
+    },
+    {
+      "a_p": -17,
+      "prime": 97
+    },
+    {
+      "a_p": -3,
+      "prime": 101
+    },
+    {
+      "a_p": -9,
+      "prime": 103
+    },
+    {
+      "a_p": 15,
+      "prime": 107
+    },
+    {
+      "a_p": -11,
+      "prime": 109
+    },
+    {
+      "a_p": 3,
+      "prime": 113
+    },
+    {
+      "a_p": -8,
+      "prime": 127
+    },
+    {
+      "a_p": -5,
+      "prime": 131
+    },
+    {
+      "a_p": 5,
+      "prime": 137
+    },
+    {
+      "a_p": -7,
+      "prime": 139
+    },
+    {
+      "a_p": 1,
+      "prime": 149
+    },
+    {
+      "a_p": -7,
+      "prime": 151
+    },
+    {
+      "a_p": -2,
+      "prime": 157
+    },
+    {
+      "a_p": 0,
+      "prime": 163
+    },
+    {
+      "a_p": 11,
+      "prime": 167
+    },
+    {
+      "a_p": 19,
+      "prime": 173
+    },
+    {
+      "a_p": 9,
+      "prime": 179
+    },
+    {
+      "a_p": 17,
+      "prime": 181
+    },
+    {
+      "a_p": 24,
+      "prime": 191
+    },
+    {
+      "a_p": -14,
+      "prime": 193
+    },
+    {
+      "a_p": 15,
+      "prime": 197
+    },
+    {
+      "a_p": 24,
+      "prime": 199
+    }
+  ],
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_full_small_governing_block_v1.json": "53aff6be1a8c0d5e58cd393d3d6851c2da317a3a3fe8799716ef909299cb0199",
+    "artifacts/generated-results/elliptic-curves/rank_jump_zero_ct_analytic_gate_v1.json": "9bdcf6843b6afa4dcd7ec7b5add330626c415de5933600749d5d43ec8ee933f5",
+    "elliptic-curves/rank-jump/ZERO_CT_ANALYTIC_GATE_PROTOCOL.json": "2e3a0ec821c987f6cd01ae0a47621b00d291e39f0c93fe0ac74d4846d27f75c8",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_zero_ct_analytic_gate.py": "41fa71b40e607d31833f88f3ecb348c9f21f9e4579a5f2a84a96b1bbd82957c4"
+  },
+  "boundary": "Derivative nonvanishing gives exact rank one and finite Sha. Zero-containing intervals at 41 and113 remain inconclusive. The rational class at97 is certified without a point coordinate.",
+  "external_rank_theorem": {
+    "location": "Introduction, page330, recalled Gross-Zagier/Kolyvagin implication; not the converse Theorem A",
+    "source": "https://annals.math.princeton.edu/wp-content/uploads/annals-v191-n2-p01-s.pdf"
+  },
+  "independent_lseries_source": {
+    "module": "sage.schemes.elliptic_curves.lseries_ell",
+    "sha256": "d6368b6e40fc104de55ef5e29d3a5eabdc33185bffffcadcb4b8b8149420b11e"
+  },
+  "records": [
+    {
+      "Sha_2_primary_structure": "C2 x C2",
+      "Sha_4_equals_Sha_2": true,
+      "Sha_finite": true,
+      "all_coefficient_twist_identities_verified": 2608,
+      "exact_MW_rank": 1,
+      "full_CT_radical_masks": [
+        0,
+        4
+      ],
+      "full_CT_rank": 2,
+      "generic_Tate_checks": [
+        {
+          "conductor_exponent": 4,
+          "kodaira": "II",
+          "prime": 2
+        },
+        {
+          "conductor_exponent": 2,
+          "kodaira": "II",
+          "prime": 163
+        }
+      ],
+      "independent_derivative_interval": {
+        "error": "2.51185e-9",
+        "lower": "45052476172016135231388714035/4951760157141521099596496896",
+        "upper": "45052476196892233966099825715/4951760157141521099596496896",
+        "value": "9.098275109201050647909783106"
+      },
+      "nonzero_derivative_certified": true,
+      "overlaps_Arb_enclosure": true,
+      "rational_Kummer_line_nonzero_mask": 4,
+      "twist": 1
+    },
+    {
+      "Sha_2_primary_structure": "UNKNOWN",
+      "Sha_finite": "UNKNOWN",
+      "all_coefficient_twist_identities_verified": 106928,
+      "exact_MW_rank": "UNKNOWN",
+      "full_CT_radical_masks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "full_CT_rank": 0,
+      "generic_Tate_checks": [
+        {
+          "conductor_exponent": 4,
+          "kodaira": "II",
+          "prime": 2
+        },
+        {
+          "conductor_exponent": 2,
+          "kodaira": "I0*",
+          "prime": 41
+        },
+        {
+          "conductor_exponent": 2,
+          "kodaira": "II",
+          "prime": 163
+        }
+      ],
+      "independent_derivative_interval": {
+        "error": "1.03472e-7",
+        "lower": "-72108994514307619149595534751683819/696898287454081973172991196020261297061888",
+        "upper": "72108910612612240588164009236638485/696898287454081973172991196020261297061888",
+        "value": "-6.019651424677208855794931351e-14"
+      },
+      "nonzero_derivative_certified": false,
+      "overlaps_Arb_enclosure": true,
+      "rational_Kummer_subspace": "UNKNOWN",
+      "twist": 41
+    },
+    {
+      "Sha_2_primary_structure": "C2 x C2",
+      "Sha_4_equals_Sha_2": true,
+      "Sha_finite": true,
+      "all_coefficient_twist_identities_verified": 252976,
+      "exact_MW_rank": 1,
+      "full_CT_radical_masks": [
+        0,
+        5
+      ],
+      "full_CT_rank": 2,
+      "generic_Tate_checks": [
+        {
+          "conductor_exponent": 4,
+          "kodaira": "II",
+          "prime": 2
+        },
+        {
+          "conductor_exponent": 2,
+          "kodaira": "I0*",
+          "prime": 97
+        },
+        {
+          "conductor_exponent": 2,
+          "kodaira": "II",
+          "prime": 163
+        }
+      ],
+      "independent_derivative_interval": {
+        "error": "2.44815e-7",
+        "lower": "691497735431132243960559449/38685626227668133590597632",
+        "upper": "691497754372737914029766489/38685626227668133590597632",
+        "value": "17.87479775646937277091959094"
+      },
+      "nonzero_derivative_certified": true,
+      "overlaps_Arb_enclosure": true,
+      "rational_Kummer_line_nonzero_mask": 5,
+      "twist": 97
+    },
+    {
+      "Sha_2_primary_structure": "UNKNOWN",
+      "Sha_finite": "UNKNOWN",
+      "all_coefficient_twist_identities_verified": 294704,
+      "exact_MW_rank": "UNKNOWN",
+      "full_CT_radical_masks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "full_CT_rank": 0,
+      "generic_Tate_checks": [
+        {
+          "conductor_exponent": 4,
+          "kodaira": "II",
+          "prime": 2
+        },
+        {
+          "conductor_exponent": 2,
+          "kodaira": "I0*",
+          "prime": 113
+        },
+        {
+          "conductor_exponent": 2,
+          "kodaira": "II",
+          "prime": 163
+        }
+      ],
+      "independent_derivative_interval": {
+        "error": "2.85199e-7",
+        "lower": "-3180067282675324594949911281454888701/11150372599265311570767859136324180752990208",
+        "upper": "3180067269301661994347540087804709123/11150372599265311570767859136324180752990208",
+        "value": "-5.996957716679149485398314695e-16"
+      },
+      "nonzero_derivative_certified": false,
+      "overlaps_Arb_enclosure": true,
+      "rational_Kummer_subspace": "UNKNOWN",
+      "twist": 113
+    }
+  ],
+  "schema": "rank-jump.zero-ct-analytic-gate-verification.v1",
+  "status": "PASS"
+}
