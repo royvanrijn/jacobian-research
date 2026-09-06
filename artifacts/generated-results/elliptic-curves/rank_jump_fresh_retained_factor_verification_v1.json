@@ -1,0 +1,68 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_comparison_v1.json": "6055432914a348fefd383363646a3354385ad0edfe49e25af6c17af54f0a9c3d",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_hints_v1.json": "3f91cb54f1b83a186ad2f4416fc278632cab8828fe60ac57b7cf71b026e407b5",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_supplement_v1.json": "db79021f3a6ba6d4a2bb4cba175b961aadbe30eaac819f7667d3b01395a25a1f",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/rank-jump/verify_fresh_governing_panel.py": "4083566bbbfa042c85cc471edbc91f9598b6694dee487c934de66bcb67020698",
+    "elliptic-curves/rank-jump/verify_fresh_retained_factors.py": "5e1beeb5569f80d1c6c350cd063f28e0e835bcdb39673ed2bb334d9889596179",
+    "elliptic-curves/rank-jump/verify_unpointed_governing_norm.py": "69828517faa1ebdc92218dc338cfe156fbc8a16020bf6b28d8f59a60bc4c847a"
+  },
+  "rows": [
+    {
+      "composite_cofactor_bits": 364,
+      "status": "VERIFIED_INCOMPLETE",
+      "token": "case-00"
+    },
+    {
+      "composite_cofactor_bits": 387,
+      "status": "VERIFIED_INCOMPLETE",
+      "token": "case-08"
+    },
+    {
+      "composite_cofactor_bits": 352,
+      "status": "VERIFIED_INCOMPLETE",
+      "token": "case-10"
+    },
+    {
+      "composite_cofactor_bits": 387,
+      "status": "VERIFIED_INCOMPLETE",
+      "token": "case-11"
+    },
+    {
+      "composite_cofactor_bits": 429,
+      "status": "VERIFIED_INCOMPLETE",
+      "token": "case-12"
+    },
+    {
+      "Jacobi_checks": 1,
+      "additional_boundary_capacity": 1,
+      "generic_independence_dimension": 17,
+      "generic_strict_dimension": 1,
+      "ideal_square_checks": 1,
+      "local_power_checks": 30,
+      "local_product_dimension": 18,
+      "proved_factor_count": 13,
+      "rank_label_dependent_additional_strict_minimum": 11,
+      "status": "PASS",
+      "token": "case-13"
+    },
+    {
+      "Jacobi_checks": 0,
+      "additional_boundary_capacity": 8,
+      "generic_independence_dimension": 17,
+      "generic_strict_dimension": 0,
+      "ideal_square_checks": 0,
+      "local_power_checks": 0,
+      "local_product_dimension": 26,
+      "proved_factor_count": 16,
+      "rank_label_dependent_additional_strict_minimum": 4,
+      "status": "PASS",
+      "token": "case-14"
+    }
+  ],
+  "schema": "rank-jump.fresh-retained-factor-verification.v1",
+  "scope": "Prime products, composite residuals, generic local coordinates and good-prime independence, separate local-power tests, full half-ideal and Jacobi identities, derivative norm/support and boundary arithmetic. No exceptional quotient certificate.",
+  "status": "PASS"
+}

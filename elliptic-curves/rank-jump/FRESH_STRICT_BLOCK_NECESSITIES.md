@@ -1,9 +1,11 @@
 # How much of a recorded jump must be strict?
 
 The frozen sixteen-fibre panel now has complete equation-defined local
-boundary bounds on its nine fully factored rows. Four fresh +10 fibres
+boundary bounds on eleven rows, including a [retained-factor supplement](HISTORIC_RETAINED_FACTOR_BOUNDARY.md)
+for the two historic +12 controls. Four fresh +10 fibres
 require at least **9, 5, 6, 8 additional strict rational directions**;
-historic curve 398's +14 requires at least **5**. These are necessities
+historic curves 356 and 385 require at least **11 and 4** for their +12,
+and curve 398's +14 requires at least **5**. These are necessities
 obtained by joining existing rank lower bounds *after* the masked
 arithmetic. They are not independent measurements of additional classes.
 
@@ -14,11 +16,13 @@ The relevant incidence quantity is the **excess beyond that subgroup**,
 not the total strict dimension or the degree of a generic governing field.
 
 This extends the [masked governing/CT panel](FRESH_RANK27_GOVERNING_AND_CT_COMPARISON.md).
-The full additional-class CT comparison remains UNKNOWN. Seven rows,
-including the fresh +11 and both historic +12 controls, still lack complete
-factorization in the frozen inputs and receive no complete boundary bound.
+The full additional-class CT comparison remains UNKNOWN. Five rows,
+including the fresh +11, still lack complete factorization after the
+retained-hint audit and receive no complete boundary bound.
 The [comparison certificate](../../artifacts/generated-results/elliptic-curves/rank_jump_fresh_strict_boundary_coordinate_comparison_v1.json)
-retains all sixteen rows and their missing values.
+retains the initial sixteen rows and their missing values; the separate
+[supplement comparison](../../artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_comparison_v1.json)
+closes the two historic +12 entries without rewriting the initial artifact.
 
 ## Accounting before and after the rank labels
 
@@ -89,6 +93,8 @@ field and its own c_S.
 | new-188, 110314/102227 | 11952 | 27 / 17 | +10 | 0 | 22 | 4 | ≥6 |
 | low, 130349/28916 | 11952 | 17 / 17 | 0 | 5 | 13 | 0 | ≥0 |
 | new-48, 2828/2015 | 11952 | 27 / 17 | +10 | 0 | 20 | 2 | ≥8 |
+| ICARM356 | published R17 lineage | 29 / 17 | +12 | 1 | 18 | 1 | ≥11 |
+| ICARM385 | published R17 lineage | 29 / 17 | +12 | 0 | 26 | 8 | ≥4 |
 | ICARM398 | recovered MW16 parent | 30 / 16 | +14 | 0 | 26 | 9 | ≥5 |
 
 The upper cap a is not the measured boundary contribution e. In particular,
@@ -206,8 +212,9 @@ The priorities are now:
 2. **Solubility:** construct independent additional classes and evaluate
    their CT obstruction; then identify the missing higher-descent or rational
    carrier criterion. Zero CT alone is not a rationality theorem.
-3. **Coverage:** recover any already certified equation-only factor data for
-   the seven unfinished rows before considering new factorization work.
+3. **Coverage:** the retained-factor audit closes both historic +12 rows.
+   Five fresh/control rows retain verified composite cofactors; the +11
+   comparison is still unfinished. No missing value is a negative result.
 4. **Weak explanations:** generic governing degree, inherited strict size,
    and local-boundary capacity alone fail to distinguish the observed pairs.
    The latter even orders the 103b2 pair in the opposite direction.
