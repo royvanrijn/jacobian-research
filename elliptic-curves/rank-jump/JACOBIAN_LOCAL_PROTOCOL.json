@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.jacobian-local-protocol.v1",
+  "parameter_u": 2,
+  "question": "Identify the ordinary Jacobian local Kummer condition in the torsion-difference sequence, and certify the local connecting ranks on rational two-torsion.",
+  "layer": "solubility",
+  "limits": {"new_parameters": 0, "new_points": 0, "new_CT_pairs": 0, "class_groups": 0, "worker_seconds": 60, "maximum_root_precision": 128},
+  "precision_rule": "min(128, max(16, 4*v_p(disc(f))+16)); all returned root approximations must pass exact Hensel and local square-stability inequalities.",
+  "checkpoints": "One immutable record per retained place under an isolated rank-jump directory.",
+  "failure_semantics": "A failed root count, stability inequality, local membership or resource limit leaves the local condition uncertified. No CT entry or rational point is inferred from dimensions."
+}

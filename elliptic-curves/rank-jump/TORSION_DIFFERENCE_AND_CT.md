@@ -1,5 +1,10 @@
 # The transporter is part of the CT difference extension
 
+Follow-up: [the compatible Kummer diagram](JACOBIAN_LOCAL_CONDITIONS_AND_CT.md)
+now identifies the local Baer-sum condition below with the ordinary Jacobian
+condition and certifies the local connecting ranks at \(u=2\). The gap
+recorded here is retained as the previous stage of the argument.
+
 The genus-two Jacobian's 2-torsion gives a concrete bridge between three
 previously separate observations: the changing 4-division fields, the
 affine transporter class, and the changing CT pairings.

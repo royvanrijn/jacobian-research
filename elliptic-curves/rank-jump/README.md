@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: the transporter in the torsion-difference and CT extension](TORSION_DIFFERENCE_AND_CT.md)
+- [Latest: ordinary Jacobian local conditions and the CT comparison](JACOBIAN_LOCAL_CONDITIONS_AND_CT.md)
+- [The transporter in the torsion-difference and CT extension](TORSION_DIFFERENCE_AND_CT.md)
 - [One Jacobian for the Sha block and a soluble splitting event](JACOBIAN_GLUING_AND_SHA_BLOCKS.md)
 - [Exact relative full-Selmer dimensions and a common unknown quotient](RELATIVE_FULL_SELMER_THEOREM.md)
 - [Full-Selmer ramification block and two unresolved affine covers](FULL_SELMER_RAMIFICATION_BLOCK.md)
@@ -47,6 +48,7 @@ python3 elliptic-curves/rank-jump/u2_affine_radical.py check
 python3 elliptic-curves/rank-jump/selmer_comparison.py check
 python3 elliptic-curves/rank-jump/jacobian_sha_blocks.py check
 python3 elliptic-curves/rank-jump/torsion_difference.py check
+python3 elliptic-curves/rank-jump/jacobian_local_conditions.py check
 ```
 
 Optional independent Hilbert-symbol check: `sage -python -m unittest discover -s elliptic-curves/rank-jump -p test_local_collision.py`.

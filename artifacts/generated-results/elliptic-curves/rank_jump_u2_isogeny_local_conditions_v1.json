@@ -1,0 +1,1004 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+    "artifacts/generated-results/elliptic-curves/rank_jump_selmer_comparison_v1.json": "1ffeb87414e912f7006f52043509e3d666270e425dfe5baa1a16f09f2f49cec0",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/rank-jump/JACOBIAN_LOCAL_PROTOCOL.json": "9b94feea2151553f7a287e1ec6c12dbe7d660f633b94101df31457f78135fb2d",
+    "elliptic-curves/rank-jump/jacobian_local_conditions.py": "7f2b584cfa2d6a3e02129725515f4235156ea877a91b3f2781f71665c76b5c6f"
+  },
+  "places": [
+    {
+      "Jacobian_local_Kummer_dimension": 3,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+        "artifacts/generated-results/elliptic-curves/rank_jump_selmer_comparison_v1.json": "1ffeb87414e912f7006f52043509e3d666270e425dfe5baa1a16f09f2f49cec0",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/JACOBIAN_LOCAL_PROTOCOL.json": "9b94feea2151553f7a287e1ec6c12dbe7d660f633b94101df31457f78135fb2d",
+        "elliptic-curves/rank-jump/jacobian_local_conditions.py": "7f2b584cfa2d6a3e02129725515f4235156ea877a91b3f2781f71665c76b5c6f"
+      },
+      "connecting_rank": 1,
+      "left_local_dimension": 2,
+      "place": 2,
+      "rational_Jacobian_two_torsion_dimension": 1,
+      "rational_elliptic_two_torsion_dimension": 1,
+      "requested_root_precision": 116,
+      "right_local_dimension": 2,
+      "root_classes": [
+        {
+          "class_coordinates": [
+            "5945196362165988345422788519408677794318411773634377461677126684538229283063985774901493387856550948182531108430604434674978289564836288503/2111610113544754563261161520910619316454442078724324683296288471925035",
+            "129377673320446777529091766424998085870742601141300642148443038325515592103203717720657913936876259020342/2111610113544754563261161520910619316454442078724324683296288471925035",
+            "2815480151393006084348215361214159052859184699049623710606110972156464/2111610113544754563261161520910619316454442078724324683296288471925035"
+          ],
+          "class_ideal_valuations": [
+            0,
+            0
+          ],
+          "root_accuracy_lower_bound": 119,
+          "root_approximation": "45952259069002848788127786928096298",
+          "signature": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "square_stability_margins": [
+            234,
+            117
+          ],
+          "v_derivative": 0,
+          "v_f": 119
+        }
+      ]
+    },
+    {
+      "Jacobian_local_Kummer_dimension": 2,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+        "artifacts/generated-results/elliptic-curves/rank_jump_selmer_comparison_v1.json": "1ffeb87414e912f7006f52043509e3d666270e425dfe5baa1a16f09f2f49cec0",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/JACOBIAN_LOCAL_PROTOCOL.json": "9b94feea2151553f7a287e1ec6c12dbe7d660f633b94101df31457f78135fb2d",
+        "elliptic-curves/rank-jump/jacobian_local_conditions.py": "7f2b584cfa2d6a3e02129725515f4235156ea877a91b3f2781f71665c76b5c6f"
+      },
+      "connecting_rank": 0,
+      "left_local_dimension": 1,
+      "place": 3,
+      "rational_Jacobian_two_torsion_dimension": 2,
+      "rational_elliptic_two_torsion_dimension": 1,
+      "requested_root_precision": 72,
+      "right_local_dimension": 1,
+      "root_classes": [
+        {
+          "class_coordinates": [
+            "13441393981737721941343571710271725125863599014377959641084015955242321336883141815308459638617675864330140526697749956354264982759987167/33468136565169118506667034911250066632817349295542117766281808232115",
+            "2323424393623447474428425100890025742209654978255146794935172232519756447894924668134533540968746694114/100404409695507355520001104733750199898452047886626353298845424696345",
+            "401617638782029422080004418935000782911579068243075141993327052377464/301213229086522066560003314201250599695356143659879059896536274089035"
+          ],
+          "class_ideal_valuations": [
+            0,
+            0
+          ],
+          "root_accuracy_lower_bound": 75,
+          "root_approximation": "17355495645083780394247458412092798",
+          "signature": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "square_stability_margins": [
+            67,
+            67
+          ],
+          "v_derivative": 4,
+          "v_f": 79
+        }
+      ]
+    },
+    {
+      "Jacobian_local_Kummer_dimension": 1,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+        "artifacts/generated-results/elliptic-curves/rank_jump_selmer_comparison_v1.json": "1ffeb87414e912f7006f52043509e3d666270e425dfe5baa1a16f09f2f49cec0",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/JACOBIAN_LOCAL_PROTOCOL.json": "9b94feea2151553f7a287e1ec6c12dbe7d660f633b94101df31457f78135fb2d",
+        "elliptic-curves/rank-jump/jacobian_local_conditions.py": "7f2b584cfa2d6a3e02129725515f4235156ea877a91b3f2781f71665c76b5c6f"
+      },
+      "connecting_rank": 1,
+      "left_local_dimension": 1,
+      "place": 5,
+      "rational_Jacobian_two_torsion_dimension": 1,
+      "rational_elliptic_two_torsion_dimension": 1,
+      "requested_root_precision": 52,
+      "right_local_dimension": 1,
+      "root_classes": [
+        {
+          "class_coordinates": [
+            "311682235022509928217392720306054576120539732448458983299577298209972818711453531890758957754207743413360463449036076116671747693289111/13240893368657638828205497121098492110932583648614053926745451788074",
+            "148359046259861410655498804382677645624391756883261563080092808126644691768354664478457025680705027683/26481786737315277656410994242196984221865167297228107853490903576148",
+            "35309048983087036875214658989595967092910099505208747953503454347187/26481786737315277656410994242196984221865167297228107853490903576148"
+          ],
+          "class_ideal_valuations": [
+            0,
+            0
+          ],
+          "root_accuracy_lower_bound": 52,
+          "root_approximation": "4201728750353063716628860859568601",
+          "signature": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "square_stability_margins": [
+            52,
+            104
+          ],
+          "v_derivative": 0,
+          "v_f": 52
+        }
+      ]
+    },
+    {
+      "Jacobian_local_Kummer_dimension": 2,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+        "artifacts/generated-results/elliptic-curves/rank_jump_selmer_comparison_v1.json": "1ffeb87414e912f7006f52043509e3d666270e425dfe5baa1a16f09f2f49cec0",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/JACOBIAN_LOCAL_PROTOCOL.json": "9b94feea2151553f7a287e1ec6c12dbe7d660f633b94101df31457f78135fb2d",
+        "elliptic-curves/rank-jump/jacobian_local_conditions.py": "7f2b584cfa2d6a3e02129725515f4235156ea877a91b3f2781f71665c76b5c6f"
+      },
+      "connecting_rank": 0,
+      "left_local_dimension": 2,
+      "place": 7,
+      "rational_Jacobian_two_torsion_dimension": 2,
+      "rational_elliptic_two_torsion_dimension": 1,
+      "requested_root_precision": 40,
+      "right_local_dimension": 0,
+      "root_classes": [
+        {
+          "class_coordinates": [
+            "1171739204544479997204498124507812154532259969901044205051201565000713236084398469292664973776819908337144741222614369215547929072503/55143863543771737066338269089050377522382138393641138201761105003",
+            "293517124552755740381294593367955234926308975077117179075501464883195007943883988245005862151238502/55143863543771737066338269089050377522382138393641138201761105003",
+            "1249927573658826040170334099351808099922534812540554482231600441528/937445680244119530127750574513856417880496352691899349429938785051"
+          ],
+          "class_ideal_valuations": [
+            0,
+            0
+          ],
+          "root_accuracy_lower_bound": 40,
+          "root_approximation": "3992064198400375426028088549913694",
+          "signature": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "square_stability_margins": [
+            40,
+            40
+          ],
+          "v_derivative": 0,
+          "v_f": 40
+        }
+      ]
+    },
+    {
+      "Jacobian_local_Kummer_dimension": 2,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+        "artifacts/generated-results/elliptic-curves/rank_jump_selmer_comparison_v1.json": "1ffeb87414e912f7006f52043509e3d666270e425dfe5baa1a16f09f2f49cec0",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/JACOBIAN_LOCAL_PROTOCOL.json": "9b94feea2151553f7a287e1ec6c12dbe7d660f633b94101df31457f78135fb2d",
+        "elliptic-curves/rank-jump/jacobian_local_conditions.py": "7f2b584cfa2d6a3e02129725515f4235156ea877a91b3f2781f71665c76b5c6f"
+      },
+      "connecting_rank": 2,
+      "left_local_dimension": 3,
+      "place": 13,
+      "rational_Jacobian_two_torsion_dimension": 2,
+      "rational_elliptic_two_torsion_dimension": 2,
+      "requested_root_precision": 24,
+      "right_local_dimension": 1,
+      "root_classes": [
+        {
+          "class_coordinates": [
+            "831228319071478437925593221770825382215833523973016993794085872486809043198833201665234283235249364466487/24968404820965412019355364368463520062059084818310507",
+            "5260474651490082406539213185190096879275647077863625299278406486365581718875638/24968404820965412019355364368463520062059084818310507",
+            "33291206427953882687361920359361157613028455198996176/24968404820965412019355364368463520062059084818310507"
+          ],
+          "class_ideal_valuations": [
+            0,
+            0,
+            0
+          ],
+          "root_accuracy_lower_bound": 24,
+          "root_approximation": "158013938692019863280607674",
+          "signature": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "square_stability_margins": [
+            22,
+            22,
+            22
+          ],
+          "v_derivative": 1,
+          "v_f": 25
+        },
+        {
+          "class_coordinates": [
+            "2799374612213544159284614060723486593248867837172951341077511451792987305779998835129951231040139346851/1448975831116640168292904413522982578798260516480215",
+            "73541155419614691001675819544437665359836760888748595746359651953413561619966/1448975831116640168292904413522982578798260516480215",
+            "1931967774822186885945307166072789991660573106956388/1448975831116640168292904413522982578798260516480215"
+          ],
+          "class_ideal_valuations": [
+            0,
+            0,
+            0
+          ],
+          "root_accuracy_lower_bound": 24,
+          "root_approximation": "38065415157550037815006772",
+          "signature": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "square_stability_margins": [
+            22,
+            22,
+            22
+          ],
+          "v_derivative": 1,
+          "v_f": 25
+        },
+        {
+          "class_coordinates": [
+            "535252752093004588332618052702131231594607597033765844895466375985507428083380517936308028628693863801433/3339326129915674407483977557807420962124706154301596",
+            "9262527088021143893489701125748303183182306389573617110080516820492773855422787/20035956779494046444903865346844525772748236925809576",
+            "80143827117976185777059511925180509245207535958738307/60107870338482139334711596040533577318244710777428728"
+          ],
+          "class_ideal_valuations": [
+            0,
+            0,
+            0
+          ],
+          "root_accuracy_lower_bound": 24,
+          "root_approximation": "346721416524800611675980915",
+          "signature": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "square_stability_margins": [
+            24,
+            24,
+            24
+          ],
+          "v_derivative": 0,
+          "v_f": 24
+        }
+      ]
+    },
+    {
+      "Jacobian_local_Kummer_dimension": 0,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+        "artifacts/generated-results/elliptic-curves/rank_jump_selmer_comparison_v1.json": "1ffeb87414e912f7006f52043509e3d666270e425dfe5baa1a16f09f2f49cec0",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/JACOBIAN_LOCAL_PROTOCOL.json": "9b94feea2151553f7a287e1ec6c12dbe7d660f633b94101df31457f78135fb2d",
+        "elliptic-curves/rank-jump/jacobian_local_conditions.py": "7f2b584cfa2d6a3e02129725515f4235156ea877a91b3f2781f71665c76b5c6f"
+      },
+      "connecting_rank": 0,
+      "left_local_dimension": 0,
+      "place": 17,
+      "rational_Jacobian_two_torsion_dimension": 0,
+      "rational_elliptic_two_torsion_dimension": 0,
+      "requested_root_precision": 32,
+      "right_local_dimension": 0,
+      "root_classes": []
+    },
+    {
+      "Jacobian_local_Kummer_dimension": 2,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+        "artifacts/generated-results/elliptic-curves/rank_jump_selmer_comparison_v1.json": "1ffeb87414e912f7006f52043509e3d666270e425dfe5baa1a16f09f2f49cec0",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/JACOBIAN_LOCAL_PROTOCOL.json": "9b94feea2151553f7a287e1ec6c12dbe7d660f633b94101df31457f78135fb2d",
+        "elliptic-curves/rank-jump/jacobian_local_conditions.py": "7f2b584cfa2d6a3e02129725515f4235156ea877a91b3f2781f71665c76b5c6f"
+      },
+      "connecting_rank": 2,
+      "left_local_dimension": 3,
+      "place": 31,
+      "rational_Jacobian_two_torsion_dimension": 2,
+      "rational_elliptic_two_torsion_dimension": 2,
+      "requested_root_precision": 24,
+      "right_local_dimension": 1,
+      "root_classes": [
+        {
+          "class_coordinates": [
+            "56794210939004596901379564490481682202563452474122029213149374177719725747270567699534091542809443794417678221403313314903296042802504561568389/357473040399916512400726504036253124029932281273093485234894133734424993",
+            "164529224400936020424052943125498682816331289226567451036548071405643282996746604101524910420993673481411266/357473040399916512400726504036253124029932281273093485234894133734424993",
+            "476630720533222016534302005381670831334189539303404442441107899520492992/357473040399916512400726504036253124029932281273093485234894133734424993"
+          ],
+          "class_ideal_valuations": [
+            0,
+            0,
+            0
+          ],
+          "root_accuracy_lower_bound": 24,
+          "root_approximation": "345192236490488737256819849171851090",
+          "signature": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "square_stability_margins": [
+            24,
+            24,
+            24
+          ],
+          "v_derivative": 0,
+          "v_f": 24
+        },
+        {
+          "class_coordinates": [
+            "792634610619402116128837224160569996089416861606965334749884508896775382081549566540817505355020320332168800250317031141084151266621250462637/4063646275768952483906770106465383317594328063314624245126270661756102",
+            "12434120829695887502515263576524598081907966625457533699755301017532861206083089883275326295754367760695883/24381877654613714903440620638792299905565968379887745470757623970536612",
+            "97527510618454859613762482555169199492214453347649988153954980496124513/73145632963841144710321861916376899716697905139663236412272871911609836"
+          ],
+          "class_ideal_valuations": [
+            0,
+            0,
+            0
+          ],
+          "root_accuracy_lower_bound": 24,
+          "root_approximation": "382480412475831616174670922600546729",
+          "signature": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "square_stability_margins": [
+            22,
+            22,
+            22
+          ],
+          "v_derivative": 1,
+          "v_f": 25
+        },
+        {
+          "class_coordinates": [
+            "69340406253662611738430802294937513486063104622275347709986036014283560331361124805798856295838033142963355450843894560686191022971314530667221/197494249328139220892432108245870994094342758665339748201878058624801370",
+            "270252538501062573722825208906122527148389512276701924819047275015117421624712937084092841716946886406970763/394988498656278441784864216491741988188685517330679496403756117249602740",
+            "526651331541704589046485621988989317064093502102966273914009068068034821/394988498656278441784864216491741988188685517330679496403756117249602740"
+          ],
+          "class_ideal_valuations": [
+            0,
+            0,
+            0
+          ],
+          "root_accuracy_lower_bound": 24,
+          "root_approximation": "513152672964735022945110131373916423",
+          "signature": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "square_stability_margins": [
+            22,
+            22,
+            22
+          ],
+          "v_derivative": 1,
+          "v_f": 25
+        }
+      ]
+    },
+    {
+      "Jacobian_local_Kummer_dimension": 2,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+        "artifacts/generated-results/elliptic-curves/rank_jump_selmer_comparison_v1.json": "1ffeb87414e912f7006f52043509e3d666270e425dfe5baa1a16f09f2f49cec0",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/JACOBIAN_LOCAL_PROTOCOL.json": "9b94feea2151553f7a287e1ec6c12dbe7d660f633b94101df31457f78135fb2d",
+        "elliptic-curves/rank-jump/jacobian_local_conditions.py": "7f2b584cfa2d6a3e02129725515f4235156ea877a91b3f2781f71665c76b5c6f"
+      },
+      "connecting_rank": 0,
+      "left_local_dimension": 1,
+      "place": 79,
+      "rational_Jacobian_two_torsion_dimension": 2,
+      "rational_elliptic_two_torsion_dimension": 1,
+      "requested_root_precision": 24,
+      "right_local_dimension": 1,
+      "root_classes": [
+        {
+          "class_coordinates": [
+            "2579088698685460706781661316206664218116534464657082629636230182003794823255620525759009575992680673798940494133511967081780422176543629018308963705498318993200851865805722966978433/231799513709470706598513418575599551837571301575025827860259170229416528606168210601033346",
+            "5356856568558309630407465692483398173473547749179080988543338270228903208638488908902844532556359204226899296977582284601329542044902187/1390797082256824239591080511453597311025427809450154967161555021376499171637009263606200076",
+            "5563188329027296958364322045814389244101711236837708629308551366081012069340389457397804857/4172391246770472718773241534360791933076283428350464901484665064129497514911027790818600228"
+          ],
+          "class_ideal_valuations": [
+            0,
+            0
+          ],
+          "root_accuracy_lower_bound": 24,
+          "root_approximation": "2888733718005338310235082486610387167523467265",
+          "signature": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "square_stability_margins": [
+            24,
+            24
+          ],
+          "v_derivative": 0,
+          "v_f": 24
+        }
+      ]
+    },
+    {
+      "Jacobian_local_Kummer_dimension": 3,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+        "artifacts/generated-results/elliptic-curves/rank_jump_selmer_comparison_v1.json": "1ffeb87414e912f7006f52043509e3d666270e425dfe5baa1a16f09f2f49cec0",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/JACOBIAN_LOCAL_PROTOCOL.json": "9b94feea2151553f7a287e1ec6c12dbe7d660f633b94101df31457f78135fb2d",
+        "elliptic-curves/rank-jump/jacobian_local_conditions.py": "7f2b584cfa2d6a3e02129725515f4235156ea877a91b3f2781f71665c76b5c6f"
+      },
+      "connecting_rank": 1,
+      "left_local_dimension": 3,
+      "place": 233,
+      "rational_Jacobian_two_torsion_dimension": 3,
+      "rational_elliptic_two_torsion_dimension": 2,
+      "requested_root_precision": 16,
+      "right_local_dimension": 1,
+      "root_classes": [
+        {
+          "class_coordinates": [
+            "1183417085156747928429559388991706865772654881557378547679843378340486489188883087355660280566154753857956213657753298545417316178566399816393267711/25800622287081967003074022361820450286189247913743215546798663079966859480",
+            "403537010097521000718154532759151608651353429749738225012468088146016222824543281145800018810968833049802065723/51601244574163934006148044723640900572378495827486431093597326159933718960",
+            "68801659432218578674864059631521200757298437870211233845473384303518100801/51601244574163934006148044723640900572378495827486431093597326159933718960"
+          ],
+          "class_ideal_valuations": [
+            0,
+            1,
+            1
+          ],
+          "root_accuracy_lower_bound": 16,
+          "root_approximation": "5865222051730802914310494952836005403",
+          "signature": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "square_stability_margins": [
+            16,
+            15,
+            15
+          ],
+          "v_derivative": 0,
+          "v_f": 16
+        },
+        {
+          "class_coordinates": [
+            "3955619707421301879031331894379417920514537569385972765582585481876494910589833069378639928573581496808209739060531983161303891992195979320978495069/27233778568929690523242533065438374410878842580981390835112838260313767310",
+            "757984946956270132903678167124877455293259589671618351223694048011235920240322710996664329792980503448290444833/54467557137859381046485066130876748821757685161962781670225676520627534620",
+            "72623409517145841395313421507835665092195291405368350894894666669807661969/54467557137859381046485066130876748821757685161962781670225676520627534620"
+          ],
+          "class_ideal_valuations": [
+            0,
+            0,
+            0
+          ],
+          "root_accuracy_lower_bound": 16,
+          "root_approximation": "10437198583706202631206150449529633497",
+          "signature": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "square_stability_margins": [
+            16,
+            16,
+            16
+          ],
+          "v_derivative": 0,
+          "v_f": 16
+        },
+        {
+          "class_coordinates": [
+            "1749165729347558002900207736976340416387902209757812425153514046658179903224162456402457774675375588200712949117143960629374624855226801698700357924043/374910603202950498602509424258694778921642492574715756073480540828828627692",
+            "59139643948499693318275584343224298257936119656659883895495424875255607628392606940051687782539688936851853462709/749821206405900997205018848517389557843284985149431512146961081657657255384",
+            "999761608541201329606691798023186077115928349692917802705437379433992329561/749821206405900997205018848517389557843284985149431512146961081657657255384"
+          ],
+          "class_ideal_valuations": [
+            0,
+            1,
+            1
+          ],
+          "root_accuracy_lower_bound": 16,
+          "root_approximation": "59153745696229623068562550476630557581",
+          "signature": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "square_stability_margins": [
+            16,
+            15,
+            15
+          ],
+          "v_derivative": 0,
+          "v_f": 16
+        }
+      ]
+    },
+    {
+      "Jacobian_local_Kummer_dimension": 2,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+        "artifacts/generated-results/elliptic-curves/rank_jump_selmer_comparison_v1.json": "1ffeb87414e912f7006f52043509e3d666270e425dfe5baa1a16f09f2f49cec0",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/JACOBIAN_LOCAL_PROTOCOL.json": "9b94feea2151553f7a287e1ec6c12dbe7d660f633b94101df31457f78135fb2d",
+        "elliptic-curves/rank-jump/jacobian_local_conditions.py": "7f2b584cfa2d6a3e02129725515f4235156ea877a91b3f2781f71665c76b5c6f"
+      },
+      "connecting_rank": 2,
+      "left_local_dimension": 3,
+      "place": 647,
+      "rational_Jacobian_two_torsion_dimension": 2,
+      "rational_elliptic_two_torsion_dimension": 2,
+      "requested_root_precision": 16,
+      "right_local_dimension": 1,
+      "root_classes": [
+        {
+          "class_coordinates": [
+            "30251407515396270465912039117483705178154160253076588210421318514208145112309399002503991774286689880543880401035291593480680384688641339735764818062093334634548178322512947155487/50209069163678214308608723859582650071598476331905074328514327763270255768651292511253043",
+            "135006444834569861445968722984328682250349645321884694233213709343770323007397015204374596737617663953522622393029017403723699536993394/150627207491034642925826171578747950214795428995715222985542983289810767305953877533759129",
+            "602508829964138571703304686314991800859181715534713286058469116343703068346982403679243488/451881622473103928777478514736243850644386286987145668956628949869432301917861632601277387"
+          ],
+          "class_ideal_valuations": [
+            0,
+            0,
+            0
+          ],
+          "root_accuracy_lower_bound": 16,
+          "root_approximation": "672221408817886377183438636302694036126170466",
+          "signature": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "square_stability_margins": [
+            16,
+            16,
+            16
+          ],
+          "v_derivative": 0,
+          "v_f": 16
+        },
+        {
+          "class_coordinates": [
+            "5837211802914963578977058882507923034584935356932195652640598151405299729555472795771440919136221694793320089109560633320572694221211168840392411195600905591328316783633825409213/11027627996418589498539285097043321880725758775703312763168529396471171763215664751368822",
+            "55585868836825821013290890078371878096702627837253150806314985270761258903806115679878610392595485787294121952034483801811862828469707/66165767978511536991235710582259931284354552654219876579011176378827030579293988508212932",
+            "264663071914046147964942842329039725137418210406854479267485598192561683976624225446454209/198497303935534610973707131746779793853063657962659629737033529136481091737881965524638796"
+          ],
+          "class_ideal_valuations": [
+            0,
+            1,
+            1
+          ],
+          "root_accuracy_lower_bound": 16,
+          "root_approximation": "630075081138009473928367950009099562201673481",
+          "signature": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "square_stability_margins": [
+            16,
+            15,
+            15
+          ],
+          "v_derivative": 0,
+          "v_f": 16
+        },
+        {
+          "class_coordinates": [
+            "38644664728043246452500211166052457065524165313841195532467570264159806691251783828825709670021895164790053382643646756706193036470395872093017889816603125469235857645446131122447/85122703414001770705321255167927639034326297227675937510542434082159207638337982493497814",
+            "132454537290926316577804752582580650010892630497263345112489018615353009247732668202356966719313466224415065529210796081995446372855321/170245406828003541410642510335855278068652594455351875021084868164318415276675964986995628",
+            "226993875770671388547523347114473704091536792412630531044415753274254738070547738540959847/170245406828003541410642510335855278068652594455351875021084868164318415276675964986995628"
+          ],
+          "class_ideal_valuations": [
+            0,
+            1,
+            1
+          ],
+          "root_accuracy_lower_bound": 16,
+          "root_approximation": "583515906943424364794638081882505020767583895",
+          "signature": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "square_stability_margins": [
+            16,
+            15,
+            15
+          ],
+          "v_derivative": 0,
+          "v_f": 16
+        }
+      ]
+    },
+    {
+      "Jacobian_local_Kummer_dimension": 1,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+        "artifacts/generated-results/elliptic-curves/rank_jump_selmer_comparison_v1.json": "1ffeb87414e912f7006f52043509e3d666270e425dfe5baa1a16f09f2f49cec0",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/JACOBIAN_LOCAL_PROTOCOL.json": "9b94feea2151553f7a287e1ec6c12dbe7d660f633b94101df31457f78135fb2d",
+        "elliptic-curves/rank-jump/jacobian_local_conditions.py": "7f2b584cfa2d6a3e02129725515f4235156ea877a91b3f2781f71665c76b5c6f"
+      },
+      "connecting_rank": 1,
+      "left_local_dimension": 1,
+      "place": 1049,
+      "rational_Jacobian_two_torsion_dimension": 1,
+      "rational_elliptic_two_torsion_dimension": 1,
+      "requested_root_precision": 20,
+      "right_local_dimension": 1,
+      "root_classes": [
+        {
+          "class_coordinates": [
+            "22159715449043776306662462066614763993423733025869974055840033542281478782737186998572542844793837942315108608810621884560337995044808412896565542730838856100535008106830111148375379185729930264557383586597169473577646857826352563056552892089/7061116042124537744140859567548197842211373018345322328670821703348314374352347962052881915132455944515035667106925197781",
+            "14444021704320347792427831249877531306915832831240782744249466656270895644587664252038282639996436291136793473677443735125382631399042348878117294822852881584750391593280372154705386/7061116042124537744140859567548197842211373018345322328670821703348314374352347962052881915132455944515035667106925197781",
+            "9414821389499383658854479423397597122948497357793763104894425869439659072069783621083120689551246730588343057019032860084/7061116042124537744140859567548197842211373018345322328670821703348314374352347962052881915132455944515035667106925197781"
+          ],
+          "class_ideal_valuations": [
+            0,
+            0
+          ],
+          "root_accuracy_lower_bound": 20,
+          "root_approximation": "1534179046713533340164160353264131307393017506360604876182736",
+          "signature": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "square_stability_margins": [
+            40,
+            20
+          ],
+          "v_derivative": 0,
+          "v_f": 20
+        }
+      ]
+    },
+    {
+      "Jacobian_local_Kummer_dimension": 1,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+        "artifacts/generated-results/elliptic-curves/rank_jump_selmer_comparison_v1.json": "1ffeb87414e912f7006f52043509e3d666270e425dfe5baa1a16f09f2f49cec0",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/JACOBIAN_LOCAL_PROTOCOL.json": "9b94feea2151553f7a287e1ec6c12dbe7d660f633b94101df31457f78135fb2d",
+        "elliptic-curves/rank-jump/jacobian_local_conditions.py": "7f2b584cfa2d6a3e02129725515f4235156ea877a91b3f2781f71665c76b5c6f"
+      },
+      "connecting_rank": 1,
+      "left_local_dimension": 1,
+      "place": 71889448247,
+      "rational_Jacobian_two_torsion_dimension": 1,
+      "rational_elliptic_two_torsion_dimension": 1,
+      "requested_root_precision": 20,
+      "right_local_dimension": 1,
+      "root_classes": [
+        {
+          "class_coordinates": [
+            "252422069314537145138990860764855571962722893645606745222125835904199627774078781882092826235738822355622914437219322611282055292643867323351084573660468901505197033311821724721995659753173721739427865573982746386174853139501634564575726404233391863233402368563830239756101174830263100685733555142856079735305989387930432837702508405748010735762962015871210537320666501015339939404809554273403224242702506219811873766697189394758484801613503675522004422670143820038739247988743877720827616356501762313975782288082966813983712980745517169575511757547974935273305390993491303127836035373186934306123894133440516128603688558598103132973387328066716521590985038200406368321809577480386512149705001769946916340308204624310944426369413480064743990670638643265384306492483266987656287904943566310892712201340499484022332202146282353450889997053004214948948030375089934017189/23831694357676471689974515368730902780251973322129551530482942834753767955335509174843760382388461335121848679021735689879839795063332054420378947482737207255906555703731636929726749801512518233227441026660255185191277891362260752823077619997559408813141494075277428152094652124989254479932644891926496792902948824931705240533636243945271529880644944706014295414342665360276244210208966726320918980287124905395529506988883907183063425",
+            "89559258632008740880185804027282764050328894606276565784950743603483023050203805388000594117817999123458381484217386784153144375319540416704218111185668023036881389132821328089203512749158593701159653856168756461849413250985472545621189698971057060205065620869520123525023305453285999888320346930290754436868122935655088048590903083416571432278115880014398241401861288272323578007366143050596044170701336469781788452372226838229287530455903248303119405498081348764047264639290234754249076063529726986142763017870780873187609941003000411819741037134584200334523538443362659499706985352924994994174323642105838422001581638401411070191015127897829023186/23831694357676471689974515368730902780251973322129551530482942834753767955335509174843760382388461335121848679021735689879839795063332054420378947482737207255906555703731636929726749801512518233227441026660255185191277891362260752823077619997559408813141494075277428152094652124989254479932644891926496792902948824931705240533636243945271529880644944706014295414342665360276244210208966726320918980287124905395529506988883907183063425",
+            "31775592476901962253299353824974537040335964429506068707310590446338357273780678899791680509851281780162464905362314253173119726751109405893838596643649609674542074271642182572968999735350024310969921368880340246921698218165338564806942282656768138324070007865171923464655744046524706391800451773663535700151496621344327516490239345529022143104273931180573112660966379910036402171940208467794059638174321441195509942909388300029014072/23831694357676471689974515368730902780251973322129551530482942834753767955335509174843760382388461335121848679021735689879839795063332054420378947482737207255906555703731636929726749801512518233227441026660255185191277891362260752823077619997559408813141494075277428152094652124989254479932644891926496792902948824931705240533636243945271529880644944706014295414342665360276244210208966726320918980287124905395529506988883907183063425"
+          ],
+          "class_ideal_valuations": [
+            0,
+            0
+          ],
+          "root_accuracy_lower_bound": 20,
+          "root_approximation": "2818492171219478580605336655536713392658784265657035735229393397149790721537374452563345192884239282306402110637823199003281701626330880389640612411920285165961720835873583650249501096588034959393334858672831216682838",
+          "signature": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "square_stability_margins": [
+            20,
+            40
+          ],
+          "v_derivative": 0,
+          "v_f": 20
+        }
+      ]
+    },
+    {
+      "Jacobian_local_Kummer_dimension": 1,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+        "artifacts/generated-results/elliptic-curves/rank_jump_selmer_comparison_v1.json": "1ffeb87414e912f7006f52043509e3d666270e425dfe5baa1a16f09f2f49cec0",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/JACOBIAN_LOCAL_PROTOCOL.json": "9b94feea2151553f7a287e1ec6c12dbe7d660f633b94101df31457f78135fb2d",
+        "elliptic-curves/rank-jump/jacobian_local_conditions.py": "7f2b584cfa2d6a3e02129725515f4235156ea877a91b3f2781f71665c76b5c6f"
+      },
+      "connecting_rank": 1,
+      "left_local_dimension": 1,
+      "place": 40200713707633,
+      "rational_Jacobian_two_torsion_dimension": 1,
+      "rational_elliptic_two_torsion_dimension": 1,
+      "requested_root_precision": 20,
+      "right_local_dimension": 1,
+      "root_classes": [
+        {
+          "class_coordinates": [
+            "25639885096665972851254119010661358880473824358293848105174457646160892288557015002132749774348401851507310483546020483594171476518589208229767415633997998862984867582132028468176013459835994469708603584207182790320182238109527718185200688554893405732759914442781109350512526407618586962752702085587124107608378835168419042933301574486159981550042791774009612608814427428040857248572775062789995638168827868967116761219360470684767680153782438124719522546818949264701631372668712905060983927597162660150394333293054182657474296767849331260193204894056610756651658018604962753514934600864941183634074892279868436213148455676861171813720968896681166506492766632751295872396734193789330790357713080592313574735065135799110227423207440164451945665445527477260197578219680711465594702566319690451686230417827103279529183725280077038844783278873085256295745101263695773027337651750977443831496886073554234267387027158286721982034013436767381354979911881697326587693760489421709104389953733149127793015261442478595027449699163161845884371029263809492936727751788871153671115412915279749697489/69335982401815508635577154834494344510015884644362657508107390399699527457876256759222512163172204993593792135298692834701395637639733204753503667191011518323069283088266646498556114150768199045372420253001112878741735739132456035701027238652419359051586329247779255745378734634367256040385712515536489519966887429273297249946587935444600695638703414083367060639516228225156252468375397494298738031079477530411028518646369755565423236615331567073311166381664979594392653034928252793557481046083541039308007832922957238513207103143504627193420",
+            "3079191774343394048336639114989682737540022021837559521787824799497838170327081032424337971906647224014970800186639088747166484505416759093123257057499136288566039590037071318960505379902616528098598852958800978656699453928488318156875972782914137634179432393909440188348323173694612434809760244427699803931170587669476387139792320118525405936567968630491460661616833601553910405422943716580943162444497045360603158278731904413234409386618309219790681616114071423959349238468821642637935489826463079866350582403359870116166993218269106853272338532236244334424276644692237322831245719207443646308790902694800504648707256691924671402212555660022995835955154815380809652807968897644737282382336044774604324950013826533649998439591298286175341790286466025873998593388578203250408442076367113530577029527915366005681993/138671964803631017271154309668988689020031769288725315016214780799399054915752513518445024326344409987187584270597385669402791275279466409507007334382023036646138566176533292997112228301536398090744840506002225757483471478264912071402054477304838718103172658495558511490757469268734512080771425031072979039933774858546594499893175870889201391277406828166734121279032456450312504936750794988597476062158955060822057037292739511130846473230663134146622332763329959188785306069856505587114962092167082078616015665845914477026414206287009254386840",
+            "184895953071508023028205746225318252026709025718300420021619707732532073221003351357926699101792546649583445694129847559203721700372621879342676445842697382194851421568711057329482971068715197454326454008002967676644628637686549428536072636406451624137563544660744681987671074476267508021876513515458142442634480351132833923126143897838251476359026947412097724177071868284118313444452752151422200879898090137185478596278556817686538943389089280626316708694725409835647085643905768783997999225181891690010958761181133435482784269053006752425059/138671964803631017271154309668988689020031769288725315016214780799399054915752513518445024326344409987187584270597385669402791275279466409507007334382023036646138566176533292997112228301536398090744840506002225757483471478264912071402054477304838718103172658495558511490757469268734512080771425031072979039933774858546594499893175870889201391277406828166734121279032456450312504936750794988597476062158955060822057037292739511130846473230663134146622332763329959188785306069856505587114962092167082078616015665845914477026414206287009254386840"
+          ],
+          "class_ideal_valuations": [
+            0,
+            0
+          ],
+          "root_accuracy_lower_bound": 20,
+          "root_approximation": "16653646135524257456159577917488831831658380787876230194271790042051136032546470430643312584914220948895079413644923500123301608941549831731792360335287591463769062755384694707539204969143607248199967347708715996465850693122653244431186372172409561785939005433393202753107",
+          "signature": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "square_stability_margins": [
+            40,
+            20
+          ],
+          "v_derivative": 0,
+          "v_f": 20
+        }
+      ]
+    },
+    {
+      "Jacobian_local_Kummer_dimension": 2,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+        "artifacts/generated-results/elliptic-curves/rank_jump_selmer_comparison_v1.json": "1ffeb87414e912f7006f52043509e3d666270e425dfe5baa1a16f09f2f49cec0",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/JACOBIAN_LOCAL_PROTOCOL.json": "9b94feea2151553f7a287e1ec6c12dbe7d660f633b94101df31457f78135fb2d",
+        "elliptic-curves/rank-jump/jacobian_local_conditions.py": "7f2b584cfa2d6a3e02129725515f4235156ea877a91b3f2781f71665c76b5c6f"
+      },
+      "connecting_rank": 0,
+      "left_local_dimension": 2,
+      "place": 26558335042564254253,
+      "rational_Jacobian_two_torsion_dimension": 2,
+      "rational_elliptic_two_torsion_dimension": 1,
+      "requested_root_precision": 16,
+      "right_local_dimension": 0,
+      "root_classes": [
+        {
+          "class_coordinates": [
+            "7536183416108860716463301537722181773528832268281251451186164206992460410365256578537560750855206065618050121861140691033154521225664282000985458583409748517385786137415652644639913782118059791525052517215017757607785599703102706575796035055860247406780464270336658647971034006289339973490594552372840861164732376494774523075757852178796514778758190292972431219833228893620704211341975009626937606671518175096551284444386250185904655845195244486209742674695351865010742594354147108565943474451210688152965199718608042557283008057185196578373432834412231687322587854036104142557633633197339239952522232577967568262644025043958616383588190557473912336285661598625092725892538116955504279299111635128138990184904051825413808785085296948505176439584366565196704925891545311526980246047819979506049089620193432645837249774496032848849583100145464982449390750031788718775081618984520805998874710691514526972753597075074688921461314073501490781226774907951291367930663676403709369321612268589601429436428407836207950497912277191989846530961787121221793494489386926455385460246881329735505731978303986800382463811826710503242318817895049893488789314904112828471307585278078384669846770585761477507758495326198173123752386573428490694504861959359754963/2377422461844264972146801975153375152545144445735923878006257649872372012210250276221811514998980488795576889837450320709982737178599169828678190924493994850872357939033145222964300508033075452862536861116839212614602413581399675966386930654363900627618081064684460178521491497271190905578660161251844705142388314662992792473469676569637613648992224735307942298533848771798823888133947011341571352681548440359243990490918714029535277633857261363442666611939307603136827983908512504243226066689595491402344142309624106071910395272422921846152105973729810703739489362099180613061429311018766918775340214807943987016274333831",
+            "154560416364326392905086614091034254350543886426723090966818879420879564319389786108458071474726185942912013491729232025527617146509031971318385493426603073514623493555431300238652971897640793724512266578526532688623657952617375556437640956926513543230514877245702250351497433431509760015358456037249613047843239146580618008994037880434609784884375212128786782225964253053238711305288927562784706440971893992771070588645858288532821968789525493831838973035058227171242715118983064868998549696037544138305511810128732148379136974983503312351893552325036368508109904616033398243149303828526153820941178754289859573281879854616160432315621653242411937479935624623805053046510389301537853214230249628434335801733364804654553423036298654434752952045482426727480385056981812261095359140606052879726138052167811001638978860436324079178904758847066180717080769490455577566937901362047465743043655957749072746305114256082014521169491193510702/2377422461844264972146801975153375152545144445735923878006257649872372012210250276221811514998980488795576889837450320709982737178599169828678190924493994850872357939033145222964300508033075452862536861116839212614602413581399675966386930654363900627618081064684460178521491497271190905578660161251844705142388314662992792473469676569637613648992224735307942298533848771798823888133947011341571352681548440359243990490918714029535277633857261363442666611939307603136827983908512504243226066689595491402344142309624106071910395272422921846152105973729810703739489362099180613061429311018766918775340214807943987016274333831",
+            "3169896615792353296195735966871166870060192594314565170675010199829829349613667034962415353331973985060769186449933760946643649571465559771570921232658659801163143918710860297285734010710767270483382481489118950152803218108532901288515907539151867503490774752912613571361988663028254540771546881669126273523184387044777507477146603998553743873414106955889884002211062850815348518202902558522446271899984514158597421314926248852272659063153785210567762205851194915705975670822082240355247821471028414364150605876934473072872726709132994622375964893572878812187178422734444362153018821688982094715238667507679104980387468684/2377422461844264972146801975153375152545144445735923878006257649872372012210250276221811514998980488795576889837450320709982737178599169828678190924493994850872357939033145222964300508033075452862536861116839212614602413581399675966386930654363900627618081064684460178521491497271190905578660161251844705142388314662992792473469676569637613648992224735307942298533848771798823888133947011341571352681548440359243990490918714029535277633857261363442666611939307603136827983908512504243226066689595491402344142309624106071910395272422921846152105973729810703739489362099180613061429311018766918775340214807943987016274333831"
+          ],
+          "class_ideal_valuations": [
+            0,
+            0
+          ],
+          "root_accuracy_lower_bound": 16,
+          "root_approximation": "48758819323731219447141444611487863289036781058593751103267374624998963540184899473297513120109480591849009448054780661566672983844911033689915101822832714692461583901647953580401172648361258462375803846502534511700481146351758740264607100303189198211090096694682893330389504053027629782556989356760938409945560",
+          "signature": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "square_stability_margins": [
+            16,
+            16
+          ],
+          "v_derivative": 0,
+          "v_f": 16
+        }
+      ]
+    },
+    {
+      "Jacobian_local_Kummer_dimension": 2,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+        "artifacts/generated-results/elliptic-curves/rank_jump_selmer_comparison_v1.json": "1ffeb87414e912f7006f52043509e3d666270e425dfe5baa1a16f09f2f49cec0",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/JACOBIAN_LOCAL_PROTOCOL.json": "9b94feea2151553f7a287e1ec6c12dbe7d660f633b94101df31457f78135fb2d",
+        "elliptic-curves/rank-jump/jacobian_local_conditions.py": "7f2b584cfa2d6a3e02129725515f4235156ea877a91b3f2781f71665c76b5c6f"
+      },
+      "connecting_rank": 0,
+      "left_local_dimension": 2,
+      "place": 47769497729370851316266401,
+      "rational_Jacobian_two_torsion_dimension": 2,
+      "rational_elliptic_two_torsion_dimension": 1,
+      "requested_root_precision": 16,
+      "right_local_dimension": 0,
+      "root_classes": [
+        {
+          "class_coordinates": [
+            "511816033576133804532943463957752401412490314609064740166116242937251923434342637758936289920668659777194426867581490449415496812600083287102222124981973486263084433171209269001252858574149363747280571317502354038106180601994589747563398142870986497237566880255794507488580968658513271953030746590717737333606361395637556778421740499086319405898327726379790862575003431920902214010219307667111330689915807630762836834563741565065975790515221709415389322035434235061751855477779035086599764527704124055893656587270446078064175458367065706368131050325531297433020926428379868772182305139681558953386676633953087100600930515842013125782439381545130909116245227372294708937168790013610237823666901431913252587861127836046383980566761134492922532085865670216680487418032137041585101758275814237819377146537240882034288225988282171057529325935862283566019412755976107835239071420998289403118816386972468493630314111189531706271040733485939702537133398473809503130322490518154936579187225209581959863059009324805367147345017240590392005406132674343235079955118817578464540452063119322892449476016265478296994814094736821369139089738331528249150157292574701715372510936090912979616168579072074269865578033847864028810876648933816778907444944792394108783209264198552590572851954460398653662137153447716535974117265840507640165731536580816012103401582964439614386212765992874140236818703869729236713277561843768723577887307237535975302857022939726275499746013715706238696302486229841937521785787197978484910203595424926237926275418243592712246490303094938785102202654633648598529989034875774395095449166271610333727974299782175924568436871909685734869/7405230055094269592012843864853205571041455873501257989470475481410766993786894777409994259495955873232760958575820170639840284007513568171829029193909195643359351189554686921814084433562325133028669280671391281890648179343868741148986645448963280556516363493388312141642351234318971300348839278699289335152536255839619735264151492036132689936177023630133049861044676477242446954883545757835395674519241509610258655052108242732620816270178386916744015390081390197157326803730154608860169060639840919405407713063300803986824860594530333815112113269993130918569089539415400569228723049986655812020530030580376806523363336111666352013040365033558439672002691124694318612618068959962144001975506016226087100800734558170208205255427210973542466979792212169572061222297531510297338617217279193822705631725767487899029316091265",
+            "2247996285440917973552581089791897440346085105329713009732557964620182974344818543858451496219145192962766994621886428928692165804707338034721785278950231879576375283278356086835843324183512683294706208986521586276695600677358036689067123360567474675779140071848803122336271046405711785313233850300537217455626855344185738765661844211445096057371848174831122707360323195040203205945970962940391897599816262573138621745592573277315535952149371114256344559784808357561077732903729792813495729677161491244507263380934216317622823971103843992437636105761283972416705347619326320222618031804860711028485887741135140158448982509036586427461761446743443537814686976252499315330394786771315581815844692893303445469295659602428834010546237069644992147716419774763986762043194016943468532988189141214310627429745863171512393943465106276425905056179951782972109603504341537553904038786509006315744518912180716269498081987400430863904765166054534333380054743047604291070941188316665873192370765148793026642519291404163398955222651581347574813513501228909235633247638913437658203940034265234621195450123842348834890252527293041471279230635174700893530319426587692118849744747669921391392077033548938306733894186924262362896327230780630112364386/7405230055094269592012843864853205571041455873501257989470475481410766993786894777409994259495955873232760958575820170639840284007513568171829029193909195643359351189554686921814084433562325133028669280671391281890648179343868741148986645448963280556516363493388312141642351234318971300348839278699289335152536255839619735264151492036132689936177023630133049861044676477242446954883545757835395674519241509610258655052108242732620816270178386916744015390081390197157326803730154608860169060639840919405407713063300803986824860594530333815112113269993130918569089539415400569228723049986655812020530030580376806523363336111666352013040365033558439672002691124694318612618068959962144001975506016226087100800734558170208205255427210973542466979792212169572061222297531510297338617217279193822705631725767487899029316091265",
+            "9873640073459026122683791819804274094721941164668343985960633975214355991715859703213325679327941164310347944767760227519787045343351424229105372258545594191145801586072915895752112578083100177371559040895188375854197572458491654865315527265284374075355151324517749522189801645758628400465119038265719113536715007786159647018868656048176919914902698173510733148059568636323262606511394343780527566025655346146989856588741590126522272058250296463744382040167076920628752605564495015896408059296466044350647426252361549382856808909638618857351125236070734087183195012960958230820717363068583031257049304696603443779862127917895084116053260571164129415438577974041407214434229322859225187014674615030685851774157298375780044683248458076825845825866069494797397698746387225684352278584353694176814473395030036173668941278292/7405230055094269592012843864853205571041455873501257989470475481410766993786894777409994259495955873232760958575820170639840284007513568171829029193909195643359351189554686921814084433562325133028669280671391281890648179343868741148986645448963280556516363493388312141642351234318971300348839278699289335152536255839619735264151492036132689936177023630133049861044676477242446954883545757835395674519241509610258655052108242732620816270178386916744015390081390197157326803730154608860169060639840919405407713063300803986824860594530333815112113269993130918569089539415400569228723049986655812020530030580376806523363336111666352013040365033558439672002691124694318612618068959962144001975506016226087100800734558170208205255427210973542466979792212169572061222297531510297338617217279193822705631725767487899029316091265"
+          ],
+          "class_ideal_valuations": [
+            0,
+            0
+          ],
+          "root_accuracy_lower_bound": 16,
+          "root_approximation": "227676547728701928207571170869303965100204039385155093600672893794966857130082226344879405993910007236414987295551554772219175409382770801161124944543705915725546545584590387593059540088402728810939131638534362425430544964005874472594796545932607018285684825093557549448151564003000769343017967581632181437224404401872143822923156545497240678636181275328375274477041715906194916993478833641564438207262984336568",
+          "signature": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "square_stability_margins": [
+            16,
+            16
+          ],
+          "v_derivative": 0,
+          "v_f": 16
+        }
+      ]
+    },
+    {
+      "Jacobian_local_Kummer_dimension": 1,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+        "artifacts/generated-results/elliptic-curves/rank_jump_selmer_comparison_v1.json": "1ffeb87414e912f7006f52043509e3d666270e425dfe5baa1a16f09f2f49cec0",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/JACOBIAN_LOCAL_PROTOCOL.json": "9b94feea2151553f7a287e1ec6c12dbe7d660f633b94101df31457f78135fb2d",
+        "elliptic-curves/rank-jump/jacobian_local_conditions.py": "7f2b584cfa2d6a3e02129725515f4235156ea877a91b3f2781f71665c76b5c6f"
+      },
+      "connecting_rank": 1,
+      "left_local_dimension": 1,
+      "place": 491007790268548705232623905732119,
+      "rational_Jacobian_two_torsion_dimension": 1,
+      "rational_elliptic_two_torsion_dimension": 1,
+      "requested_root_precision": 20,
+      "right_local_dimension": 1,
+      "root_classes": [
+        {
+          "class_coordinates": [
+            "203785449784721202684673882065293486335300310680036775734822092930242202848912776818707292240612249021553409479132895335869390615372369678274922540676851237791125198221475400765510395174847625764063842433685081635306842261369254537742337140161030360135404892052667974801636257865292292204374721132882767036518009873753659402911805465430264278214918852162200414803579579184034058753198818292063587493439968452513480272757933196760267862654502496630489465698970139348818133148611001809536654493024185723056058230180091847379485233994605442432510423840835574525711265391424004867597479208872210017465637812276267885726685711564035717976013491689772569182849048485682685681946094466516365474432551041566754679317343202434911174870436912833410097639426007880334961291892477936314622461160391162315682996307599611201310239738114506924668887921760562176721411034954061413712220530658997097035872354194724370880570670469877087501650474765177472436131536559587640364371778346301470736929556538512287987103006902176749117389806073022481350649514963727613695788817095990024353689207759727124619468705087696483959004341567626783923580445203876591886998837820338923557409219866998834527267587649321247796303231385184578939884981407881769741950463733424343693986974106108953280595924068803268120619374739297207371361074130804611519180412234366715776571244081835739692975888408363482198251890355416167352285773743624118139672208339129338499045753377514286995464104912795625640846344270550977238171186131117398307636802563050341198849633359166218625046972319981203005220741160159810683232260652256679132038726079738799417037432609048943331412062028513741062672634123769135725480711178504644206985225333491673097864433801137329132414641806852871380184945303457561165052490213509122307578515685247475096586210575654234529329966694388245691297031752540674319025355178037182071999656642591353738338556326785095077853818181733515131890059187743070455897910027123531713239977280326472933528378201005302214323682980192629668697692947440295110753562158904776482420135296278824509569959957673810410487595693498387659721813440868620843737282820555953951862911674925747997851179157359950113422895516574316368289225760842746862849434730025854963719691055294668190149370413454117089124941317264790485852162392582952633504400489964063587089860948522443160876723331194634502841701672187942230435923693707995786958070372971213293653979002781496579788170095327004290048060347317928827884711111848816830455654606945930403079375684518188739349284788536990980576973316432092207254140531580243631064522235725384844875339677479508095888271275241/21413016182117425048245415976049882246916386827636527582489628988859213373194893952324052469462524564721275063780983046641145549265527362187322092903150407868066668720632465778783052261090894060554758159049374504767233589934098992490219652560885054742982420119008590708494740288199983318066257763741602450365554552447671661527017924164958585910242693178467215031961585664165189865405233702130239333202314572264167318474378292352432002599325655884549272719987999207048518278039949529237101670390338809709755534205585015419231680925563428023002512766094799847768097567613022034153672726463108816382052718363159158458957241756499972126685403212478143892158505024872019717240484961353014723316820827227901472423546755922669503128187186139543967774434929439215418367287074920537261079495514647208495207198233053092513799822625096199888453754122496462631078981400236410492279040982737606327919572717087132019423175168067299490018513110643458485788841636889733411350141808447471056771656250148846617746644280878437854803560625676857607625411234340417171708411028168379282779822122420319974601509280662617490151282091323850953868469786799092753064664869357339972827716218754370557691533393974508223659304759099546536757320633959106979272897571122047570193206065535708476157247506736148859175862403233462516226181",
+            "76277223633448301203235515789238919833295612543161706298511706728291794915888518624284678917594867561061811552892081360672404881962696638487978061918717363514163072440523621417417373181503430340792694212830817872996006696683030640511492628232587290010466558921780893313733200865307492461827824177872419900321750646821961058560697025335100328569935936861206811822381598967180663046440538871548011435084674619465822026088548751861396014093653632891126397976080308969941255687505056014332666892908686787101101958803660298580939240938647950942078575373827760521398835719982681580878584374438528627962516774796013334703179895662792512165849734247926880079047180695515278704683809468179665828417610709593129802435772412083456142685721666106598086857914404847904166281386725120317965512718594726833247797343886371360882336155793703681724744066966741087467792990183520235398264733072815136832304391932254406092605793831804842786395455934300661524598883323086363545287430469900912752531569454590004411432413707225041588765278339926400638081701797185306189536800224022950534129498788306351644128579465838924819333086290328124348953705459693472735060322185000464942250420512144276233451903308679194805338282110064607175739199193486606355280329528725091973437202785339171097311017425075987862831930405665147550544786100434867933761972170965174824775367002399124480915134025834423187046659506600612851669673111061965994191962624184197357104246785791344276624707652488471483407217327609999682182911874832591417721822195178975936215507120497592717665894518541997959378303170408840920737882941540728016169033750071405982283900144643625799157676369213972285011525192467258566868350536133128950224909549285518126588399000275374084679396771236976185637597416304205313644580884906539702375093099761564100311277742968703180976312232414684770911117425443239436108613141529213653678327013408867024222943541372530651812711181904656403052427725012088924347751465678842153873506554/21413016182117425048245415976049882246916386827636527582489628988859213373194893952324052469462524564721275063780983046641145549265527362187322092903150407868066668720632465778783052261090894060554758159049374504767233589934098992490219652560885054742982420119008590708494740288199983318066257763741602450365554552447671661527017924164958585910242693178467215031961585664165189865405233702130239333202314572264167318474378292352432002599325655884549272719987999207048518278039949529237101670390338809709755534205585015419231680925563428023002512766094799847768097567613022034153672726463108816382052718363159158458957241756499972126685403212478143892158505024872019717240484961353014723316820827227901472423546755922669503128187186139543967774434929439215418367287074920537261079495514647208495207198233053092513799822625096199888453754122496462631078981400236410492279040982737606327919572717087132019423175168067299490018513110643458485788841636889733411350141808447471056771656250148846617746644280878437854803560625676857607625411234340417171708411028168379282779822122420319974601509280662617490151282091323850953868469786799092753064664869357339972827716218754370557691533393974508223659304759099546536757320633959106979272897571122047570193206065535708476157247506736148859175862403233462516226181",
+            "28550688242823233397660554634733176329221849103515370109986171985145617830926525269765403292616699419628366751707977395521527399020703149583096123870867210490755558294176621038377403014787858747406344212065832673022978119912131989986959536747846739657309893492011454277992987050933311090755010351655469933820739403263562215369357232219944781213656924237956286709282114218886919820540311602840319110936419429685556424632504389803242670132434207846065696959983998942731357704053266038982802227187118412946340712274113353892308907900751237364003350354793066463690796756817362712204896968617478421842736957817545544611942989008666629502247204283304191856205996748756747186958051169036678020101605506263283053941245828744859378765307839116190208785815755827482723636864590714160153665903891208381052804818844805956815650598527689709227633069424873365046250810079868561023214892556286310716484361494715374009031727446275953389359250873828372988961431134051010381745153238127276468967214586228455180396134115310715969911016080264174047930335647078395352000789310995728785935940987094572444671965868694085716917958017278955032960148683771646312742135826562238390448132043927676944846828273372491647735199094373593020987918750942697324734902054091918782818276037846137664204795593132037728625183256244351630042028/21413016182117425048245415976049882246916386827636527582489628988859213373194893952324052469462524564721275063780983046641145549265527362187322092903150407868066668720632465778783052261090894060554758159049374504767233589934098992490219652560885054742982420119008590708494740288199983318066257763741602450365554552447671661527017924164958585910242693178467215031961585664165189865405233702130239333202314572264167318474378292352432002599325655884549272719987999207048518278039949529237101670390338809709755534205585015419231680925563428023002512766094799847768097567613022034153672726463108816382052718363159158458957241756499972126685403212478143892158505024872019717240484961353014723316820827227901472423546755922669503128187186139543967774434929439215418367287074920537261079495514647208495207198233053092513799822625096199888453754122496462631078981400236410492279040982737606327919572717087132019423175168067299490018513110643458485788841636889733411350141808447471056771656250148846617746644280878437854803560625676857607625411234340417171708411028168379282779822122420319974601509280662617490151282091323850953868469786799092753064664869357339972827716218754370557691533393974508223659304759099546536757320633959106979272897571122047570193206065535708476157247506736148859175862403233462516226181"
+          ],
+          "class_ideal_valuations": [
+            0,
+            0
+          ],
+          "root_accuracy_lower_bound": 20,
+          "root_approximation": "2671642202972884681297723050337472160411131686959454645074922909349979369470871201600874123382075045735583759759087923278097220045064160615137069056066299083268041249152885945311819301369227625897593915893556659816578581043681915527037534397367067675099586388906889631999383303514785829378512190900983750027517919901342470030830206985003488299695796263600584913532376985818047785106332687747105138546029947721795551910921399593760731689919428035468308542385576423119432238849313572012338708666290440786661078123872408566037608125963426325238603625546234514010921047168055990481147353702072322052999358100736818669100533590232335266618294811175638277364",
+          "signature": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "square_stability_margins": [
+            40,
+            20
+          ],
+          "v_derivative": 0,
+          "v_f": 20
+        }
+      ]
+    },
+    {
+      "Jacobian_local_Kummer_dimension": 0,
+      "bindings": {
+        "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_inputs_v1.json": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+        "artifacts/generated-results/elliptic-curves/rank_jump_selmer_comparison_v1.json": "1ffeb87414e912f7006f52043509e3d666270e425dfe5baa1a16f09f2f49cec0",
+        "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+        "elliptic-curves/rank-jump/JACOBIAN_LOCAL_PROTOCOL.json": "9b94feea2151553f7a287e1ec6c12dbe7d660f633b94101df31457f78135fb2d",
+        "elliptic-curves/rank-jump/jacobian_local_conditions.py": "7f2b584cfa2d6a3e02129725515f4235156ea877a91b3f2781f71665c76b5c6f"
+      },
+      "connecting_rank": 2,
+      "left_local_dimension": 2,
+      "place": "infinity",
+      "rational_Jacobian_two_torsion_dimension": 2,
+      "rational_elliptic_two_torsion_dimension": 2,
+      "right_local_dimension": 0,
+      "root_classes": [
+        {
+          "gamma_signs": [
+            0,
+            1,
+            1
+          ],
+          "root_index": 0,
+          "signature": [
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "gamma_signs": [
+            0,
+            1,
+            1
+          ],
+          "root_index": 1,
+          "signature": [
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "gamma_signs": [
+            0,
+            1,
+            1
+          ],
+          "root_index": 2,
+          "signature": [
+            1,
+            0,
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "schema": "rank-jump.u2-isogeny-local.v1",
+  "scope": "Exact local connecting classes and dimensions; no complete middle local basis or independent CT entry has been computed.",
+  "software": {
+    "pari": "[2, 17, 3]",
+    "sage": "10.9"
+  },
+  "u": 2
+}
