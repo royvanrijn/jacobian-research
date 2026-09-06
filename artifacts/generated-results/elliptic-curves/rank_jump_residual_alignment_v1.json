@@ -1,0 +1,192 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_residual_double_covers_v1.json": "4e3c6893e7c9e01a2c4c10fd1a25948eb01065afa3ac4216987f2fcd81bc0e6b",
+    "elliptic-curves/rank-jump/RESIDUAL_ALIGNMENT_PROTOCOL.json": "6bf9b316f68851e8b6046617fe254953a042f03a5e4221112657ee064bb8d19c",
+    "elliptic-curves/rank-jump/residual_alignment.py": "777fa1a7fef3a12e2eb590057babebe558a217268faa2b121f2f7b344dae3d0b"
+  },
+  "boundary": "Exact Q2 results for two chosen alignments. No rational point or full local solubility assertion for either genus-five curve.",
+  "parity_obstruction_verified": true,
+  "rows": [
+    {
+      "alignment": "identity",
+      "product_quotient_genus": 3,
+      "quartic_coefficients": [
+        [
+          "1753",
+          "89212",
+          "1666268",
+          "13531912",
+          "40363728"
+        ],
+        [
+          "16",
+          "-128",
+          "-3016",
+          "3088",
+          "82281"
+        ]
+      ],
+      "resultant": "2719706437485373792534133497804161",
+      "signs": [
+        {
+          "Q2_solubility": "YES",
+          "Q2_witness": {
+            "parameter": [
+              1,
+              1
+            ],
+            "square_certificates": [
+              {
+                "odd_unit_mod8": 1,
+                "square": true,
+                "valuation": 0
+              },
+              {
+                "odd_unit_mod8": 1,
+                "square": true,
+                "valuation": 0
+              }
+            ],
+            "values": [
+              "55652873",
+              "82241"
+            ]
+          },
+          "epsilon": 1,
+          "mod8_test": {
+            "conclusion": "FINITE_CONGRUENCE_SURVIVAL_ONLY",
+            "exponent": 3,
+            "first_survivor": [
+              0,
+              1
+            ],
+            "modulus": 8,
+            "prime": 2,
+            "projective_classes_tested": 12,
+            "sign": 1,
+            "survivor_count": 12
+          }
+        },
+        {
+          "Q2_solubility": "NO",
+          "Q2_witness": null,
+          "epsilon": -1,
+          "mod8_test": {
+            "conclusion": "LOCALLY_INSOLUBLE",
+            "exponent": 3,
+            "first_survivor": null,
+            "modulus": 8,
+            "prime": 2,
+            "projective_classes_tested": 12,
+            "sign": -1,
+            "survivor_count": 0
+          }
+        }
+      ],
+      "simultaneous_curve_genus": 5
+    },
+    {
+      "alignment": "swap_second",
+      "product_quotient_genus": 3,
+      "quartic_coefficients": [
+        [
+          "1753",
+          "89212",
+          "1666268",
+          "13531912",
+          "40363728"
+        ],
+        [
+          "82281",
+          "3088",
+          "-3016",
+          "-128",
+          "16"
+        ]
+      ],
+      "resultant": "120009395751454163226852122197982496449329428955136",
+      "signs": [
+        {
+          "Q2_solubility": "YES",
+          "Q2_witness": {
+            "parameter": [
+              1,
+              1
+            ],
+            "square_certificates": [
+              {
+                "odd_unit_mod8": 1,
+                "square": true,
+                "valuation": 0
+              },
+              {
+                "odd_unit_mod8": 1,
+                "square": true,
+                "valuation": 0
+              }
+            ],
+            "values": [
+              "55652873",
+              "82241"
+            ]
+          },
+          "epsilon": 1,
+          "mod8_test": {
+            "conclusion": "FINITE_CONGRUENCE_SURVIVAL_ONLY",
+            "exponent": 3,
+            "first_survivor": [
+              0,
+              1
+            ],
+            "modulus": 8,
+            "prime": 2,
+            "projective_classes_tested": 12,
+            "sign": 1,
+            "survivor_count": 12
+          }
+        },
+        {
+          "Q2_solubility": "YES",
+          "Q2_witness": {
+            "parameter": [
+              2,
+              1
+            ],
+            "square_certificates": [
+              {
+                "odd_unit_mod8": 1,
+                "square": true,
+                "valuation": 6
+              },
+              {
+                "odd_unit_mod8": 1,
+                "square": true,
+                "valuation": 8
+              }
+            ],
+            "values": [
+              "-74834368",
+              "-1328896"
+            ]
+          },
+          "epsilon": -1,
+          "mod8_test": {
+            "conclusion": "FINITE_CONGRUENCE_SURVIVAL_ONLY",
+            "exponent": 3,
+            "first_survivor": [
+              0,
+              1
+            ],
+            "modulus": 8,
+            "prime": 2,
+            "projective_classes_tested": 12,
+            "sign": -1,
+            "survivor_count": 4
+          }
+        }
+      ],
+      "simultaneous_curve_genus": 5
+    }
+  ],
+  "schema": "rank-jump.residual-alignment.v1"
+}

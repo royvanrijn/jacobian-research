@@ -1,0 +1,67 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_residual_alignment_v1.json": "ce17579eab4987b74646a236775136a1a7c942e18014e6512b781e7c99641c2a",
+    "artifacts/generated-results/elliptic-curves/rank_jump_residual_double_covers_v1.json": "4e3c6893e7c9e01a2c4c10fd1a25948eb01065afa3ac4216987f2fcd81bc0e6b",
+    "elliptic-curves/rank-jump/verify_residual_alignment.py": "d3dc6eeccffcdfe68fb6e4e336f1ce8e644b06d88a34b96130455fefab7898f4"
+  },
+  "boundary": "The elliptic ranks 3 and 1 are retained exact control results. No genus-three or genus-five Jacobian rank computation, full local-solubility claim, or rational-point existence claim is made.",
+  "rows": [
+    {
+      "Jacobian_dimension": 5,
+      "alignment": "identity",
+      "branch_points": 8,
+      "genus_by_Riemann_Hurwitz": 5,
+      "geometric_character_rank": 2,
+      "quotient_character_genera": [
+        1,
+        1,
+        3
+      ],
+      "signed_Jacobian_rank_difference_from_retained_E_ranks": 4,
+      "signs": [
+        {
+          "Q2_solubility": "YES",
+          "epsilon": 1,
+          "p_adic_witness_verified": true,
+          "primitive_mod8_survivor_count": 48
+        },
+        {
+          "Q2_solubility": "NO",
+          "epsilon": -1,
+          "p_adic_witness_verified": false,
+          "primitive_mod8_survivor_count": 0
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "Jacobian_dimension": 5,
+      "alignment": "swap_second",
+      "branch_points": 8,
+      "genus_by_Riemann_Hurwitz": 5,
+      "geometric_character_rank": 2,
+      "quotient_character_genera": [
+        1,
+        1,
+        3
+      ],
+      "signed_Jacobian_rank_difference_from_retained_E_ranks": 4,
+      "signs": [
+        {
+          "Q2_solubility": "YES",
+          "epsilon": 1,
+          "p_adic_witness_verified": true,
+          "primitive_mod8_survivor_count": 48
+        },
+        {
+          "Q2_solubility": "YES",
+          "epsilon": -1,
+          "p_adic_witness_verified": true,
+          "primitive_mod8_survivor_count": 16
+        }
+      ],
+      "status": "PASS"
+    }
+  ],
+  "schema": "rank-jump.residual-alignment-verification.v1"
+}

@@ -1,0 +1,281 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_small_quotient_covers_v1.json": "c908e91696b1c9644e69055fdddfdeddcaefd9f3f9b2eb45c7aa5d9e67b05985",
+    "elliptic-curves/rank-jump/RESIDUAL_DOUBLE_COVER_PROTOCOL.json": "0244ba6b70fdfec5cd7bb44aa6a33c536fc9f20e672a85845255112c33b5d7ae",
+    "elliptic-curves/rank-jump/residual_double_covers.py": "3d1101591b66225a106eb9ec0e05b16f9140fbece64b9bdac372d7dd6057de11"
+  },
+  "boundary": "No rational miss is an absence theorem. Local survival is not Q_p solubility. The product quotient is independent of sign, but its rational points need not lift.",
+  "diagonal_quotient_degree": 2,
+  "diagonal_quotient_unramified": true,
+  "local_tests": [
+    {
+      "conclusion": "FINITE_CONGRUENCE_SURVIVAL_ONLY",
+      "exponent": 5,
+      "first_survivor": [
+        0,
+        1
+      ],
+      "modulus": 32,
+      "prime": 2,
+      "projective_classes_tested": 48,
+      "sign": 1,
+      "survivor_count": 48
+    },
+    {
+      "conclusion": "LOCALLY_INSOLUBLE",
+      "exponent": 5,
+      "first_survivor": null,
+      "modulus": 32,
+      "prime": 2,
+      "projective_classes_tested": 48,
+      "sign": -1,
+      "survivor_count": 0
+    },
+    {
+      "conclusion": "FINITE_CONGRUENCE_SURVIVAL_ONLY",
+      "exponent": 3,
+      "first_survivor": [
+        2,
+        1
+      ],
+      "modulus": 27,
+      "prime": 3,
+      "projective_classes_tested": 36,
+      "sign": 1,
+      "survivor_count": 18
+    },
+    {
+      "conclusion": "FINITE_CONGRUENCE_SURVIVAL_ONLY",
+      "exponent": 3,
+      "first_survivor": [
+        1,
+        1
+      ],
+      "modulus": 27,
+      "prime": 3,
+      "projective_classes_tested": 36,
+      "sign": -1,
+      "survivor_count": 9
+    },
+    {
+      "conclusion": "FINITE_CONGRUENCE_SURVIVAL_ONLY",
+      "exponent": 2,
+      "first_survivor": [
+        0,
+        1
+      ],
+      "modulus": 25,
+      "prime": 5,
+      "projective_classes_tested": 30,
+      "sign": 1,
+      "survivor_count": 30
+    },
+    {
+      "conclusion": "FINITE_CONGRUENCE_SURVIVAL_ONLY",
+      "exponent": 2,
+      "first_survivor": [
+        0,
+        1
+      ],
+      "modulus": 25,
+      "prime": 5,
+      "projective_classes_tested": 30,
+      "sign": -1,
+      "survivor_count": 30
+    },
+    {
+      "conclusion": "FINITE_CONGRUENCE_SURVIVAL_ONLY",
+      "exponent": 2,
+      "first_survivor": [
+        2,
+        1
+      ],
+      "modulus": 49,
+      "prime": 7,
+      "projective_classes_tested": 56,
+      "sign": 1,
+      "survivor_count": 7
+    },
+    {
+      "conclusion": "FINITE_CONGRUENCE_SURVIVAL_ONLY",
+      "exponent": 2,
+      "first_survivor": [
+        0,
+        1
+      ],
+      "modulus": 49,
+      "prime": 7,
+      "projective_classes_tested": 56,
+      "sign": -1,
+      "survivor_count": 15
+    }
+  ],
+  "product_coefficients_ascending": [
+    "8302919758920000",
+    "3095156108340000",
+    "142879344790000",
+    "-83732289050000",
+    "-14230010317500",
+    "-651054600000",
+    "24885260000",
+    "3007520000",
+    "70120000"
+  ],
+  "product_quotient_genus": 3,
+  "product_quotient_hits": [],
+  "quartics": [
+    {
+      "Q1_Gram": [
+        [
+          "-10",
+          "15",
+          "15"
+        ],
+        [
+          "15",
+          "15",
+          "365"
+        ],
+        [
+          "15",
+          "365",
+          "4240"
+        ]
+      ],
+      "Q2_Gram": [
+        [
+          "1",
+          "1",
+          "26"
+        ],
+        [
+          "1",
+          "26",
+          "301"
+        ],
+        [
+          "26",
+          "301",
+          "3676"
+        ]
+      ],
+      "beta_index": 0,
+      "other_axes": [
+        1,
+        2
+      ],
+      "parametrization_coefficients": [
+        [
+          "-364",
+          "-8428",
+          "-51464"
+        ],
+        [
+          "-262",
+          "-6624",
+          "-44112"
+        ],
+        [
+          "26",
+          "652",
+          "4276"
+        ]
+      ],
+      "pivot": 0,
+      "qfsolve_point": [
+        "-14",
+        "-12",
+        "1"
+      ],
+      "quartic_coefficients": [
+        "175300",
+        "8921200",
+        "166626800",
+        "1353191200",
+        "4036372800"
+      ],
+      "quartic_discriminant": "367749159643369000000000000000000000000"
+    },
+    {
+      "Q1_Gram": [
+        [
+          "-13",
+          "26",
+          "-27"
+        ],
+        [
+          "26",
+          "-27",
+          "54"
+        ],
+        [
+          "-27",
+          "54",
+          "242"
+        ]
+      ],
+      "Q2_Gram": [
+        [
+          "1",
+          "-2",
+          "4"
+        ],
+        [
+          "-2",
+          "4",
+          "17"
+        ],
+        [
+          "4",
+          "17",
+          "241"
+        ]
+      ],
+      "beta_index": 1,
+      "other_axes": [
+        1,
+        2
+      ],
+      "parametrization_coefficients": [
+        [
+          "8",
+          "68",
+          "482"
+        ],
+        [
+          "4",
+          "-16",
+          "241"
+        ],
+        [
+          "0",
+          "0",
+          "-50"
+        ]
+      ],
+      "pivot": 0,
+      "qfsolve_point": [
+        "2",
+        "1",
+        "0"
+      ],
+      "quartic_coefficients": [
+        "400",
+        "-3200",
+        "-75400",
+        "77200",
+        "2057025"
+      ],
+      "quartic_discriminant": "26569000000000000000000000000"
+    }
+  ],
+  "rational_parameters_tested": 320,
+  "resultant": "106238532714272413770864589757975039062500000000",
+  "schema": "rank-jump.residual-double-covers.v1",
+  "simultaneous_cover_genus": 5,
+  "software": {
+    "pari": "(2, 17, 3)",
+    "sage": "10.9"
+  },
+  "status": "PASS"
+}

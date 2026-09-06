@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.residual-alignment-protocol.v1",
+  "question": "Is the new dyadic obstruction intrinsic to the two classes or caused by identifying their independently parametrized conics?",
+  "source": "The sealed residual-double-cover quartics. Preserve the initial experiment and its bounded rational miss.",
+  "alignments": ["identity", "swap_second"],
+  "normalization": "Divide the first quartic by the rational square 100 and the second by 25; verify exact coefficient divisibility. For swap_second replace h1(s,t) by h1(t,s).",
+  "limits": {"local_prime": 2, "obstruction_modulus": 8, "witness_parameter_modulus": 256, "seconds": 30, "new_rational_or_elliptic_point_searches": 0},
+  "gate": "An empty full primitive residue test modulo 8 proves Q2 insolubility. For surviving alignments, certify Q2 solubility only with a rational parameter whose two signed nonzero values have even valuations and odd units congruent to 1 mod 8.",
+  "boundary": "The fixed swap uses no exceptional point. It tests alignment dependence of simultaneous local solubility, not rational solubility of the genus-five curve or intrinsic rank incidence."
+}

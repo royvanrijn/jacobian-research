@@ -1,0 +1,17 @@
+{
+  "schema": "rank-jump.residual-double-cover-protocol.v1",
+  "question": "Does combining the two residual quartics on the exact rational/Sha control remove their obstruction, or create a further simultaneous-lifting problem?",
+  "source": "The two Q1,Q2 pairs in rank_jump_small_quotient_covers_v1.json. No rational elliptic point or supplied cover point enters the conic parametrization.",
+  "construction": "Use PARI qfsolve on each Q2 Gram matrix. Choose the first nonzero coordinate of the resulting isotropic vector as pivot. Parametrize by intersection with lines through that vector, using the remaining coordinate axes in increasing order. Set h_i=Q1_i(z_i(s,t)). Keep this common parameter identification fixed.",
+  "geometry": "Check quartic separability and their resultant. If coprime, the normalization y0^2=epsilon*h0, y1^2=epsilon*h1 has genus five, and w^2=h0*h1 is its genus-three quotient. The latter is independent of epsilon.",
+  "limits": {
+    "seconds_capture": 30,
+    "rational_parameter_height": 16,
+    "local_moduli": [[2, 5], [3, 3], [5, 2], [7, 2]],
+    "signs": [1, -1],
+    "production_or_new_elliptic_parameters": 0
+  },
+  "rational_diagnostic": "Test all primitive projective rational parameters of height at most 16 for product-square values, recording exact lifts to each signed cover where they exist. This is a small auxiliary-curve diagnostic, not a high-rank search or a selector.",
+  "local_diagnostic": "For each fixed prime power, exhaust normalized projective parameter charts and test both signed quartic values against the complete square-residue set. Failure proves a local obstruction; survival is only a finite congruence result.",
+  "boundary": "A rational point on the product quotient does not automatically lift. Parametrization-dependent alignment is not intrinsic. Missing rational points remain a bounded miss, except where the retained Sha proof or an exact local obstruction excludes them."
+}
