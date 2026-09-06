@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.completed-ordinate-protocol.v1",
+  "question": "Is the small common-value mechanism visible as an invariant horizontal block in the retained production point lists, and does the detector reject equality manufactured by a y shear?",
+  "production_cases": [0, 1, 2, 3, 4, 5],
+  "small_controls": [[1, 5], [3, 7], [1, 1]],
+  "limits": {"max_input_points_per_case": 64, "new_point_or_parameter_searches": 0, "new_subgroup_enumerations": 0},
+  "method": "Group retained points up to sign by the absolute completed ordinate 2*y+a1*x+a3, deduplicating x coordinates. For each group of at least two, certify the third intersection and the group-law relation. Compare finite Kummer images modulo the generic subgroup as lower bounds only. Apply one fixed Weierstrass change and one deliberately misleading y shear per production case.",
+  "classification": "retrospective simultaneous-solubility structure; not a prospective selector, rank predictor or visibility score",
+  "boundary": "Absence from the supplied point lists does not exclude hidden combinations, other multisections or a common auxiliary cover. At most two directions belong to one horizontal triple, but a common quadratic cover may carry several distinct triples."
+}

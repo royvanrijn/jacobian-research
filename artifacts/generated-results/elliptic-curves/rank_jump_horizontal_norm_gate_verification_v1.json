@@ -1,0 +1,58 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_horizontal_norm_gate_inputs_v1.json": "3826fe80ec583b9c9422d45dda7d4f2aebb658a02ba12057c525b4187400e015",
+    "artifacts/generated-results/elliptic-curves/rank_jump_horizontal_norm_gate_v1.json": "fe8b2684f1e52d12d456e80d0131f7ea132f27453330fba8483bb7a5fba4bece",
+    "elliptic-curves/rank-jump/verify_horizontal_norm_gate.py": "60f6fb2b90b9e98d2ac79874f0b72c070c8513801854ba9c4b2694aebb7b54ce"
+  },
+  "local_conclusion": "Any nonzero rational value ell^2+3*z^2 has even 23-adic valuation.",
+  "mod_23_zero_pairs": [
+    [
+      0,
+      0
+    ]
+  ],
+  "rows": [
+    {
+      "c4": "8572015517453275854364236700326495593653786816",
+      "case_index": 0,
+      "obstructions": [
+        {
+          "prime": 23,
+          "valuation_minus_A": 1
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "c4": "794796398217459296316293950871231120201331222706542016",
+      "case_index": 1,
+      "obstructions": [],
+      "status": "PASS"
+    },
+    {
+      "c4": "11015628369778193635069143846784799911733200",
+      "case_index": 2,
+      "obstructions": [],
+      "status": "PASS"
+    },
+    {
+      "c4": "3915577541044054014711033693778750756723598297181814096",
+      "case_index": 3,
+      "obstructions": [],
+      "status": "PASS"
+    },
+    {
+      "c4": "129476809791893687611484370859574682138615020208481",
+      "case_index": 4,
+      "obstructions": [],
+      "status": "PASS"
+    },
+    {
+      "c4": "76847167526754239821774676800074654021745156867825",
+      "case_index": 5,
+      "obstructions": [],
+      "status": "PASS"
+    }
+  ],
+  "schema": "rank-jump.horizontal-norm-gate-verification.v1"
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "rank-jump.horizontal-norm-gate-protocol.v1",
+  "question": "Does a coefficient-only local norm obstruction rule out all rational horizontal pairs on the six fixed production fibres?",
+  "cases": [0, 1, 2, 3, 4, 5],
+  "prime_dictionary": {"lower_bound": 5, "upper_bound": 1999, "congruence_mod_3": 2},
+  "classification": "incidence exclusion for the specific equal-completed-ordinate mechanism; no full rank bound",
+  "mask": "The detector reads only a case number and the five Weierstrass coefficients. No generic or exceptional points, rank labels, chart data, CT matrix or prior norm outcome enters.",
+  "gate": "Complete the square and remove the quadratic x term. If -A is negative, use the real obstruction. Otherwise an odd p-valuation of -A at a listed inert prime excludes rational solutions of ell^2+3*z^2=-A, hence all distinct rational equal-completed-ordinate pairs. No found obstruction means UNKNOWN, not soluble.",
+  "limits": {"factorization_campaigns": 0, "new_parameters_or_points": 0, "dictionary_primes_only": true},
+  "controls": "The c=1,n=5 and c=3,n=7 small mechanism anchors supply exact (z,ell) witnesses; their coefficients must not be falsely excluded."
+}
