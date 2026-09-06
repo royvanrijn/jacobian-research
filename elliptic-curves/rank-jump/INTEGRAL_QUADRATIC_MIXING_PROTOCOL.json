@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.integral-quadratic-mixing-protocol.v1",
+  "question": "Is integral invariant/anti-invariant mixing necessary for a simultaneous rational/Sha switch, and what does a global trace lift certify?",
+  "controls": {"closed_control": "The retained rank-one/rank-three cyclic twist pair, with its standard scalar labels, not the genus-two relabelling.", "constructive_control": "Prescribe T=(i,1+2i). Solving its real and imaginary equations fixes E:y^2=x^3+5x-3 and its -1 twist. No coefficient or point search."},
+  "limits": {"seconds_per_worker": 15, "small_curve_ellrank_calls": 2, "ellrank_effort": 0, "finite_reduction_primes": [3,5,7,11,13], "new_production_parameters_or_searches": 0},
+  "checks": "Exact trace and anti-trace of the prescribed point; finite-field nondivisibility; optional retained rank bounds from two effort-zero descents; standard-labelled intersections of the old complete Selmer and rational spaces; production bounds from generic local saturation and CT norm defects.",
+  "boundary": "Integral mixing is a 2-primary saturation quantity, not free-rank gain. Rank claims require independent point lower bounds and a justified upper bound; incomplete small descents remain UNKNOWN. No production twists or high-rank candidates are searched."
+}
