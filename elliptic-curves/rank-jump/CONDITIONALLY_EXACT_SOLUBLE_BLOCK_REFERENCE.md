@@ -1,5 +1,10 @@
 # A complete +6 reference for the missing additional strict block
 
+Follow-up: [the fixed-incidence minus-one control](FIXED_INCIDENCE_SIX_DIRECTION_SOLUBILITY_SWITCH.md)
+has an unconditional six-dimensional Sha[2] block and a GRH-conditional
+rank upper bound16. Its six explicit genus-one covers give a precise
+simultaneous-solubility switch and a restricted carrier-minimality result.
+
 Follow-up: [the retained norm-relation capacity test](RETAINED_NORM_RELATIONS_DO_NOT_YET_SUPPLY_THE_BLOCK.md)
 excludes every nonempty product in the296-element fixed-box norm-projection
 dictionary by complete ramification parity. A separate early-wave survivor

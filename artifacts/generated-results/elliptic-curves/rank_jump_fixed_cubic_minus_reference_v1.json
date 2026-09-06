@@ -1,0 +1,458 @@
+{
+  "arms": [
+    {
+      "S_finite": [
+        2,
+        3,
+        5,
+        13,
+        17,
+        19,
+        29,
+        71,
+        2465779087453622652131442949,
+        519784438179112504122441050306814600881
+      ],
+      "Selmer_boundary_upper_bound": 10,
+      "cubic_ascending": [
+        "295353914057581350751385160103610824018542473678045192396426182656",
+        "-101672509398215298907060061737046215818412032",
+        "0",
+        "1"
+      ],
+      "derivative_coefficients": [
+        "187968104481709748960485009513400669749417113893581880274969361256828904099670369950646387624206861112705111201124179979091076331951754677899931142413318887012993213661184000000",
+        "0",
+        "-5546281062430703621005809336841390240251201944853582893897799638278217577047670256377293514206483082716515628386386489938804736000000"
+      ],
+      "derivative_norm": "11682141901705677605266769978150209913478632970962709445037179751070710124316589881229098893059981709423927013062268034848126229542199628134270709424355229342180135824017755671528234128194625334849380760414515559415946699782488045160038819721794225368287534459252341978296279640500099415453603224364944923726067106211504753472940410553098661708287634807288403511275031756415930175928674467177230532784900853130061102893391794588262353097454711313811598010317194707273766403024968856807746922096380698689536000000000000000000000000",
+      "field_discriminant": "128900477062442043600727490102612931938219670661531295245188752203875468",
+      "local": [
+        {
+          "conductor_valuation": 1,
+          "local_point_dimension": 2,
+          "prime": 2,
+          "splitting": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "conductor_valuation": 1,
+          "local_point_dimension": 1,
+          "prime": 3,
+          "splitting": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "conductor_valuation": 1,
+          "local_point_dimension": 1,
+          "prime": 5,
+          "splitting": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "conductor_valuation": 1,
+          "local_point_dimension": 1,
+          "prime": 13,
+          "splitting": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "conductor_valuation": 2,
+          "local_point_dimension": 0,
+          "prime": 17,
+          "splitting": [
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        {
+          "conductor_valuation": 1,
+          "local_point_dimension": 1,
+          "prime": 19,
+          "splitting": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "conductor_valuation": 1,
+          "local_point_dimension": 1,
+          "prime": 29,
+          "splitting": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "conductor_valuation": 1,
+          "local_point_dimension": 1,
+          "prime": 71,
+          "splitting": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "conductor_valuation": 1,
+          "local_point_dimension": 1,
+          "prime": 2465779087453622652131442949,
+          "splitting": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "conductor_valuation": 1,
+          "local_point_dimension": 1,
+          "prime": 519784438179112504122441050306814600881,
+          "splitting": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "local_point_product_dimension": 11,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-101672509398215298907060061737046215818412032",
+        "295353914057581350751385160103610824018542473678045192396426182656"
+      ],
+      "name": "original",
+      "omitted_good_prime_valuations": [],
+      "real_derivative_signs": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "S_finite": [
+        2,
+        3,
+        5,
+        13,
+        17,
+        19,
+        29,
+        71,
+        2465779087453622652131442949,
+        519784438179112504122441050306814600881
+      ],
+      "Selmer_boundary_upper_bound": 10,
+      "cubic_ascending": [
+        "-295353914057581350751385160103610824018542473678045192396426182656",
+        "-101672509398215298907060061737046215818412032",
+        "0",
+        "1"
+      ],
+      "derivative_coefficients": [
+        "187968104481709748960485009513400669749417113893581880274969361256828904099670369950646387624206861112705111201124179979091076331951754677899931142413318887012993213661184000000",
+        "0",
+        "-5546281062430703621005809336841390240251201944853582893897799638278217577047670256377293514206483082716515628386386489938804736000000"
+      ],
+      "derivative_norm": "11682141901705677605266769978150209913478632970962709445037179751070710124316589881229098893059981709423927013062268034848126229542199628134270709424355229342180135824017755671528234128194625334849380760414515559415946699782488045160038819721794225368287534459252341978296279640500099415453603224364944923726067106211504753472940410553098661708287634807288403511275031756415930175928674467177230532784900853130061102893391794588262353097454711313811598010317194707273766403024968856807746922096380698689536000000000000000000000000",
+      "field_discriminant": "128900477062442043600727490102612931938219670661531295245188752203875468",
+      "local": [
+        {
+          "conductor_valuation": 4,
+          "local_point_dimension": 2,
+          "prime": 2,
+          "splitting": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "conductor_valuation": 1,
+          "local_point_dimension": 1,
+          "prime": 3,
+          "splitting": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "conductor_valuation": 1,
+          "local_point_dimension": 1,
+          "prime": 5,
+          "splitting": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "conductor_valuation": 1,
+          "local_point_dimension": 1,
+          "prime": 13,
+          "splitting": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "conductor_valuation": 2,
+          "local_point_dimension": 0,
+          "prime": 17,
+          "splitting": [
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        {
+          "conductor_valuation": 1,
+          "local_point_dimension": 1,
+          "prime": 19,
+          "splitting": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "conductor_valuation": 1,
+          "local_point_dimension": 1,
+          "prime": 29,
+          "splitting": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "conductor_valuation": 1,
+          "local_point_dimension": 1,
+          "prime": 71,
+          "splitting": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "conductor_valuation": 1,
+          "local_point_dimension": 1,
+          "prime": 2465779087453622652131442949,
+          "splitting": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "conductor_valuation": 1,
+          "local_point_dimension": 1,
+          "prime": 519784438179112504122441050306814600881,
+          "splitting": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        }
+      ],
+      "local_point_product_dimension": 11,
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-101672509398215298907060061737046215818412032",
+        "-295353914057581350751385160103610824018542473678045192396426182656"
+      ],
+      "name": "minus_one",
+      "omitted_good_prime_valuations": [],
+      "real_derivative_signs": [
+        1,
+        0,
+        1
+      ]
+    }
+  ],
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_bounded_gain_reference_completion_v1.json": "9e29a2573c7b302af2e1199323aa4600c7402ddd77c0b27d7b2dfaedc6a3d23b",
+    "artifacts/generated-results/elliptic-curves/rank_jump_bounded_gain_reference_inputs_v1.json": "cecc1a51b2334a439059cfe58eec5f00c951fdd4693cf287c1df4898ca4989c8",
+    "elliptic-curves/rank-jump/FIXED_CUBIC_MINUS_REFERENCE_PROTOCOL.json": "a1398e2ec236090ae769b95bd56498eddaebc935455efae42104702fc431d4e9",
+    "elliptic-curves/rank-jump/INDEPENDENT_SCALAR_CUP_AND_TWIST_BLOCKS.md": "91e1306308e018a081a34f788e7e0d5c0ada67212adf9c3f3b3290baef998067",
+    "elliptic-curves/rank-jump/bounded_gain_reference.py": "1cf18114f6e30b42afda99a7280d6bac82f4e4dd6a7ea245a83cd54948db8470",
+    "elliptic-curves/rank-jump/fixed_cubic_minus_reference.py": "bac2aba81be8b50904d7eef9e9a2629723813879e13813aafc0778da0d6b33db"
+  },
+  "boundary": "Unconditional witnessed Sha[2] subspace and bounds in c_S. Original strict classes are generic and rational; their transported nondegenerate CT block intersects the twist rational Kummer image trivially. No total c_S or numerical whole-twist rank upper bound computed here.",
+  "field_identification": "theta_original = -theta_minus",
+  "same_strict_class_group": true,
+  "schema": "rank-jump.fixed-cubic-minus-reference.v1",
+  "status": "PASS",
+  "transported_block_rational_dimension_on_original": 6,
+  "transported_block_rational_dimension_on_twist": 0,
+  "transported_local_power_checks": 114,
+  "transported_norm_square_checks": 6,
+  "transported_strict_dimension": 6,
+  "twist_CT_matrix": [
+    [
+      0,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+    ]
+  ],
+  "twist_CT_restriction_rank": 6,
+  "twist_Sha2_dimension_unconditional_lower_bound": 6,
+  "twist_rank_upper_formula": "c_S + 10 - 6",
+  "twist_strict_rational_dimension_upper_formula": "c_S - 6"
+}

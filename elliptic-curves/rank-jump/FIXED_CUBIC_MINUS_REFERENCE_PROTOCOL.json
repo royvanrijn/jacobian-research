@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.fixed-cubic-minus-reference-protocol.v1",
+  "population": "The frozen MW16-05 at3/17 reference and its minus-one quadratic twist only. No new family parameter selection.",
+  "inputs": "Masked reference equation/factor hints and the six strict classes derived only from its sixteen generic sections, with their verified half ideals and Artin matrix. No exceptional point or additional point-derived class enters arithmetic. The completed class bound is joined only after the twist arithmetic.",
+  "test": "Check the explicit cubic-field isomorphism, complete bad-prime sets, identical strict local conditions, local-point dimensions, derivative reciprocity boundary and the inherited six-dimensional alternating CT-switch matrix. On the twist, a nondegenerate CT restriction forces an injective six-dimensional subgroup of Sha[2].",
+  "conditional_join": "If the bad-prime sets coincide, reuse the reference's GRH-conditional c_S=12 label. Bound twist Selmer dimension by c_S plus its derivative-constrained boundary and twist rank by Selmer dimension minus the witnessed CT rank. Do not call the conditional bound unconditional or an exact twist rank.",
+  "limits": {"worker_seconds": 30, "verification_seconds": 60, "pari_stack_bytes": 268435456, "point_searches": 0, "class_group_computations": 0, "new_parameters": 0, "workers": 1},
+  "failure": "UNKNOWN if complete S equality, transported strict compatibility, or CT identity fails. No automatic budget increase. The fixed-cubic control is not a discriminator for the original varying-cubic K3 families."
+}

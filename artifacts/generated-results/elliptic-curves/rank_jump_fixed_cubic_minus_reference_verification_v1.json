@@ -1,0 +1,22 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_bounded_gain_reference_verification_v1.json": "20bcd21c74ca0146b8d58cbedd721ea8d3906d0b6cc62fd02a65129fe5bc9aae",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fixed_cubic_minus_reference_comparison_v1.json": "16a7c11d7a51a89a18e0e9aa1ee2c4042eee8788c1053237593f3b68fe6115a3",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fixed_cubic_minus_reference_v1.json": "544146aad52d06b11f08375f0f3d2430a8090967c964cc27249e1841d090d365",
+    "artifacts/generated-results/elliptic-curves/rank_jump_minus_reference_carriers_v1.json": "4d1a5c25448873d96d8415d5d456ed8af95463ea8693805c81f83b9ed140a122",
+    "elliptic-curves/rank-jump/verify_bounded_gain_reference.py": "611a4f312c289fbc8b8f7064d30d56a89817f9d819464d4203c6d714d8c261e0",
+    "elliptic-curves/rank-jump/verify_fixed_cubic_minus_reference.py": "d3ae8107534b8ed0659eecebf7c2b0bca5c1bddb8e6c0b042d453d8a03e5a94b",
+    "elliptic-curves/rank-jump/verify_unpointed_governing_norm.py": "69828517faa1ebdc92218dc338cfe156fbc8a16020bf6b28d8f59a60bc4c847a"
+  },
+  "carrier_minimality": "Mathematical argument in proof note; numerical checks certify its six independent torsor-class hypothesis.",
+  "common_boundary_upper_bound": 10,
+  "conditional_twist_rank_upper_bound": 16,
+  "independent_pencil_determinants": 30,
+  "local_arms": 2,
+  "quadric_coefficient_checks": 192,
+  "schema": "rank-jump.fixed-cubic-minus-reference-verification.v1",
+  "smooth_genus_one_covers": 6,
+  "status": "PASS",
+  "unconditional_CT_rank": 6,
+  "upstream_strict_Artin_replay": true
+}

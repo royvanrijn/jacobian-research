@@ -1,0 +1,28 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_bounded_gain_reference_comparison_v1.json": "6bb18ce6f2c5ae70e5eeb5d401d7eb925844af3810eb30bc2c1d549c6dc24be8",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fixed_cubic_minus_reference_v1.json": "544146aad52d06b11f08375f0f3d2430a8090967c964cc27249e1841d090d365",
+    "artifacts/generated-results/elliptic-curves/small_conductor_class_completion_v1.json": "437e6815e644d22b1b69cd0b96efd8441892c40e1399ed109c48dcaf2fd056cd",
+    "elliptic-curves/rank-jump/FIXED_CUBIC_MINUS_REFERENCE_PROTOCOL.json": "a1398e2ec236090ae769b95bd56498eddaebc935455efae42104702fc431d4e9",
+    "elliptic-curves/rank-jump/fixed_cubic_minus_reference.py": "bac2aba81be8b50904d7eef9e9a2629723813879e13813aafc0778da0d6b33db"
+  },
+  "boundary": "Conditional class/rank label joined after masked arithmetic. The six-dimensional Sha[2] lower bound is unconditional; the twist rank upper bound and full strict-incidence comparison use the stated GRH assumption.",
+  "result": {
+    "assumption": "GRH for nontrivial quadratic characters of the ordinary ideal class group of this field, in fact only those trivial on the anchor span.",
+    "family_parameter_transfer": "UNKNOWN; this is a quadratic twist, not a K3 base specialization",
+    "new_point_searches": 0,
+    "original_rank_exact_conditional": 22,
+    "original_strict_rational_dimension_exact_conditional": 12,
+    "rank_drop_conditional_lower_bound": 6,
+    "rank_of_twist_exact": "UNKNOWN",
+    "shared_strict_Selmer_dimension_conditional": 12,
+    "twist_Selmer_dimension_conditional_interval": [
+      12,
+      22
+    ],
+    "twist_Sha2_dimension_lower_bound_unconditional": 6,
+    "twist_rank_conditional_upper_bound": 16,
+    "twist_strict_rational_dimension_conditional_upper_bound": 6
+  },
+  "schema": "rank-jump.fixed-cubic-minus-reference-comparison.v1"
+}
