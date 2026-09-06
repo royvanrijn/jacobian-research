@@ -1,0 +1,79 @@
+{
+  "analysis_sha256": "75f581b2cd7ea28a331954422e74ca33c4467937408e68bbfc416ae92ecb9a80",
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_equal_class_counts_v1.json": "28c2755947fb371a1bd431bdd44cceacb2528462d47172a602e91143198cef26",
+    "artifacts/generated-results/elliptic-curves/rank_jump_equal_class_inputs_v1.json": "27c5a22bc93dfcc5ee811b2b3262d73abcf321c86c8647341483b9532e1da346",
+    "artifacts/generated-results/elliptic-curves/rank_jump_equal_class_picard_v1.json": "d701677009b5c4e41e83796e08203bc63f5323819997ac05956ff0ec33eecde5",
+    "artifacts/generated-results/elliptic-curves/rank_jump_equal_class_verification_v1.json": "20d6782984f1ab102a4562c52b821e8c09cc5f9612ff8ee3936afed2dbab7af3",
+    "elliptic-curves/rank-jump/EQUAL_CLASS_HIGH_FOLLOWUP_PROTOCOL.json": "233d04de16f97c6c3d5bd85f6e675211aa0db5f3f88b6dba28c1993c266b99f6",
+    "elliptic-curves/rank-jump/equal_class_high_followup.py": "3d459d97d7d78e2ae7cfae6297f5c4ed8898eff69fc9b964dd0d244a40816ae7",
+    "elliptic-curves/rank-jump/equal_class_picard.py": "0c48cf6296cb881bcf64c221e4c51f25df3900861880980137dd6e0bc1667c71",
+    "elliptic-curves/rank-jump/triple_character.py": "e7dff417dc7d9b38508262cc24247b59dc46cbfb3bfdf4b84de20d02241f5587",
+    "elliptic-curves/rank-jump/verify_equal_class_picard.py": "0f229a13afc1e2c25702c21bd7d4412192733e98e1446de68076730b3bb37792"
+  },
+  "counts_sha256": "3f7fdff543e2da0ebfb4e81dcbc7c984da0c76e2829bcda78f39f3f524a7e77f",
+  "frobenius_checks": [
+    {
+      "PASS": true,
+      "case": 0,
+      "p": 13
+    },
+    {
+      "PASS": true,
+      "case": 0,
+      "p": 17
+    },
+    {
+      "PASS": true,
+      "case": 1,
+      "p": 17
+    },
+    {
+      "PASS": true,
+      "case": 1,
+      "p": 31
+    },
+    {
+      "PASS": true,
+      "case": 0,
+      "p": 29
+    }
+  ],
+  "new_record": {
+    "case": 0,
+    "fields": [
+      {
+        "base_parameters": 29,
+        "degree": 1,
+        "direct_orbit_character_sums": 29,
+        "finite_sum": -16,
+        "infinity_sum": -9,
+        "reused": false,
+        "trace_sha256": "ac7e121ab504b14d371c25cf216fc5114dd422d23edf27bf530c04440ae186c9"
+      },
+      {
+        "base_parameters": 841,
+        "degree": 2,
+        "direct_orbit_character_sums": 435,
+        "finite_sum": 358,
+        "infinity_sum": -23,
+        "reused": false,
+        "trace_sha256": "87b0ae56ab63ecb68d114fa0af5566e1172ed064fa6be0b389676c1d339c1de9"
+      },
+      {
+        "base_parameters": 24389,
+        "degree": 3,
+        "direct_orbit_character_sums": 8149,
+        "finite_sum": 7811,
+        "infinity_sum": 54,
+        "reused": false,
+        "trace_sha256": "e9bdef0cb4c693da7002abc6c6bf1b34789e5bb54fa8a864b6f7fc314da8a463"
+      }
+    ],
+    "p": 29,
+    "status": "PASS"
+  },
+  "reused_verification_sha256": "20d6782984f1ab102a4562c52b821e8c09cc5f9612ff8ee3936afed2dbab7af3",
+  "schema": "rank-jump.equal-class-high-followup-verification.v1",
+  "status": "PASS"
+}

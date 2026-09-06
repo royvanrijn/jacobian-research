@@ -1,0 +1,12 @@
+{
+  "schema": "rank-jump.equal-class-high-followup-protocol.v1",
+  "question": "Does one additional good reduction disprove a geometric mixed direction on the high equal-class control?",
+  "case": 0,
+  "mask": 7,
+  "selection": "First coefficient-eligible prime greater than 17 and at most 31, excluding no eligible prime. Weighted traces not inspected before freezing.",
+  "eligibility": [{"p":19,"good":false},{"p":23,"good":false},{"p":29,"good":true}],
+  "prime": 29,
+  "limits": {"new_untwisted_prime_counts":1,"degrees":[1,2,3],"seconds_count":40,"seconds_independent_replay":60,"point_searches":0,"parameter_searches":0},
+  "endpoint": "An additional rank-18 reduction with NS discriminant squareclass different from -1 forces characteristic-zero Picard rank 17 and geometric mixed rank zero. A match, higher reduction rank, or failed count leaves UNKNOWN; no further prime is added in this experiment.",
+  "boundary": "This is a retrospective function-field construction, not an upper bound or selector for either production curve."
+}

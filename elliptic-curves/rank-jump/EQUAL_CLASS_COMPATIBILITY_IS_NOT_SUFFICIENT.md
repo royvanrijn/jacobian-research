@@ -1,5 +1,9 @@
 # Equal Kummer classes need not create a geometric direction
 
+Follow-up: [one further high-control reduction](EQUAL_CLASS_HIGH_HEIGHT_CONSTRAINT.md)
+leaves rank `0–1` unresolved, but the height formula excludes a rational
+mixed section disjoint from zero and specifies the first allowed contact.
+
 The compatible three-point construction has **geometric mixed rank zero on
 the retained low-gain anchor**. On the matched high-gain anchor the mixed
 rank is still `0–1`. Thus the necessary additive compatibility condition
