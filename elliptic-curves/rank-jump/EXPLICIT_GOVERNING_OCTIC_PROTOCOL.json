@@ -1,0 +1,18 @@
+{
+  "schema": "rank-jump.explicit-governing-octic-protocol.v1",
+  "question": "Does the radical product of two fixed rational Kummer classes explicitly realize their central governing cochain, with a Frobenius bit readable from an octic?",
+  "layer": "solubility obstruction; retrospective rational controls only",
+  "input": "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_inputs_v1.json",
+  "cases": [
+    {"case_index": 0, "basis_indices": [16, 17], "role": "first two retained exceptional directions"},
+    {"case_index": 4, "basis_indices": [17, 18], "role": "first two retained exceptional directions"},
+    {"case_index": 5, "basis_indices": [0, 1], "role": "first two generic directions; observed-zero-gain control"}
+  ],
+  "model": "Use each frozen integral cubic and its specified rational Weierstrass scaling; do not identify cochain gauges across different scalings.",
+  "symbolic_endpoint": "Verify the quartic radical-product identity in a rank-eight free algebra; verify the corrected cup cocycle on all 96 squared pairs; verify a faithful degree-eight action of all 192 elements and both inert Frobenius cycle types.",
+  "arithmetic_endpoint": "Replay existing pair independence; write exact rational and integral octics and their nonzero discriminants; factor reductions at every eligible odd prime at most 199; independently evaluate the radical product in the cubic finite field.",
+  "prime_bound": 199,
+  "worker_timeout_seconds": 60,
+  "checkpoint": "artifacts/local/rank-jump-explicit-governing-octic-v1",
+  "exclusions": "No new points, original parameters, twists, candidate scores, global class groups, or searches for favorable primes. No rational-solubility inference from zero CT. Inert-prime tables alone do not satisfy the twist theorem's local-square hypotheses."
+}
