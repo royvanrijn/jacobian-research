@@ -1,0 +1,463 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_disjoint_soluble_carriers_inputs_v1.json": "1a16d91c2076bc51fbfe86149581a7ac239d0a2b830a631b5aa6a7f8c11c45d2",
+    "elliptic-curves/rank-jump/DISJOINT_SOLUBLE_CARRIERS_PROTOCOL.json": "164c6df6be609640eec21d5c74988a1c4de58c778e3e3eff19b5ab6fb0447e66",
+    "elliptic-curves/rank-jump/disjoint_soluble_carriers.py": "2152123ecf7398e6aa4ac4f4b7c28d0313fd1e4de4e916bea02bfafb5144203a",
+    "elliptic-curves/rank-jump/global_pair_solubility.py": "2f21c0fc4bc4150b8db76cb11a5039bfd2019c7951eb6f208150110e832a4b3d",
+    "elliptic-curves/rank-jump/local_solubility_blocks.py": "1c36415a83865f4410babcbb03c830b080d2ace257a4a318c3b9242c1f659901",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "boundary": "This is a separate single-carrier continuation after the two successful descents. A failure stays UNKNOWN. No inference of original fibre rank or full-block rational solubility from carrier nonemptiness is allowed.",
+  "rows": [
+    {
+      "descent": {
+        "CT_Sha2_mod_2Sha4_dimension": 2,
+        "Sha_2_dimension": 2,
+        "full_2_Selmer_dimension": 5,
+        "global_carrier_solubility_proved": false,
+        "id": "complementary_AD",
+        "points": [
+          [
+            "-3211450610333958502",
+            "8905248757330350140491839851"
+          ]
+        ],
+        "rank_lower_bound": 2,
+        "rank_upper_bound": 2,
+        "rational_2_torsion_dimension": 1,
+        "raw_ellrank": "[2, 2, 2, [[-3211450610333958502, 8905248757330350140491839851]]]",
+        "reason": "An everywhere locally soluble period-dividing-two torsor is trivial when Sha(J)[2]=0."
+      },
+      "execution": {
+        "status": "COMPLETE"
+      },
+      "geometry": {
+        "Jacobian_model": [
+          "0",
+          "0",
+          "0",
+          "-153119443130114083780891458926472657687903081153938366354065578671602608",
+          "23061217057246120034138290992232879760047959784772330060107282949355822364925344792198267047240159991170432"
+        ],
+        "Sage_Jacobian_model": [
+          "0",
+          "0",
+          "0",
+          "-1890363495433507207171499492919415527011149150048621806840315786069168",
+          "31634042602532400595525776395381179369064416714365336159269249587593720665192516861726017897448779137408"
+        ],
+        "bad_reduction_integer": "672775999929767699354687057446386305251202826943280226522787745228979399755366400",
+        "bad_support_factorization": [
+          [
+            "2",
+            16
+          ],
+          [
+            "3",
+            10
+          ],
+          [
+            "5",
+            2
+          ],
+          [
+            "7",
+            1
+          ],
+          [
+            "11",
+            1
+          ],
+          [
+            "13",
+            3
+          ],
+          [
+            "17",
+            2
+          ],
+          [
+            "19",
+            1
+          ],
+          [
+            "29",
+            1
+          ],
+          [
+            "31",
+            1
+          ],
+          [
+            "37",
+            2
+          ],
+          [
+            "43",
+            2
+          ],
+          [
+            "47",
+            1
+          ],
+          [
+            "101",
+            1
+          ],
+          [
+            "251",
+            1
+          ],
+          [
+            "331",
+            1
+          ],
+          [
+            "937",
+            1
+          ],
+          [
+            "2089",
+            1
+          ],
+          [
+            "18401",
+            1
+          ],
+          [
+            "11613166291978687",
+            1
+          ],
+          [
+            "19942274001039517",
+            1
+          ]
+        ],
+        "conic_root_numerator": [
+          "-11901619523682138/36751",
+          "-9992376447204/36751",
+          "-647424714/36751"
+        ],
+        "factor_primality_proved": true,
+        "forms": [
+          [
+            -144492039,
+            -201200094,
+            18383017
+          ],
+          [
+            4865126421024,
+            2514185838528,
+            320914613929
+          ]
+        ],
+        "genus": 1,
+        "id": "complementary_AD",
+        "invariants_I_J": [
+          "5671090486300521621514498478758246581033447450145865420520947358207504",
+          "-854119150268374816079195962675291842964739251287864076300269738865030457960197955266602483231117036710016"
+        ],
+        "minimal_Jacobian_model": [
+          "1",
+          "0",
+          "0",
+          "-22346724249689819463954606277705347361",
+          "40659077139706222675001173966969442586598667246064627785"
+        ],
+        "parameter_denominator": [
+          "-18383017",
+          "0",
+          "1"
+        ],
+        "parameter_numerator": [
+          "-8693340550899/36751",
+          "-1294849428/36751",
+          "-70665/36751"
+        ],
+        "quartic_coefficients": [
+          "1950204549930954876105428247362469017171649",
+          "445665215234469386767207049850757470264",
+          "355929017286705843340537824691638",
+          "-2880635118090528832876970880984",
+          "77751125779440031922818089"
+        ],
+        "quartic_square_scaling": "7991929",
+        "single_conic_anchor": [
+          "-70665/36751",
+          "647424714/36751"
+        ],
+        "software": {
+          "pari": "[2, 17, 3]",
+          "sage": "10.9"
+        },
+        "torsor_period_divides": 2
+      },
+      "id": "complementary_AD",
+      "local": {
+        "everywhere_locally_soluble": true,
+        "finite_bad_places": [
+          {
+            "base_point": [
+              1,
+              0
+            ],
+            "exact_form_values": [
+              "18383017",
+              "320914613929"
+            ],
+            "prime": "2",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              3,
+              1
+            ],
+            "exact_form_values": [
+              "-582645168",
+              "15295915461969"
+            ],
+            "prime": "3",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              16,
+              1
+            ],
+            "exact_form_values": [
+              "1342358809",
+              "127246241003296"
+            ],
+            "prime": "5",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              2,
+              1
+            ],
+            "exact_form_values": [
+              "-473360159",
+              "11177156553796"
+            ],
+            "prime": "7",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              7,
+              1
+            ],
+            "exact_form_values": [
+              "-652124864",
+              "38189243373241"
+            ],
+            "prime": "11",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              2,
+              1
+            ],
+            "exact_form_values": [
+              "-473360159",
+              "11177156553796"
+            ],
+            "prime": "13",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              16,
+              1
+            ],
+            "exact_form_values": [
+              "1342358809",
+              "127246241003296"
+            ],
+            "prime": "17",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              10,
+              1
+            ],
+            "exact_form_values": [
+              "-318191279",
+              "62098446199204"
+            ],
+            "prime": "19",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              28,
+              1
+            ],
+            "exact_form_values": [
+              "8634190657",
+              "326859387220144"
+            ],
+            "prime": "29",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              21,
+              1
+            ],
+            "exact_form_values": [
+              "3737216484",
+              "199186373772801"
+            ],
+            "prime": "31",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              27,
+              1
+            ],
+            "exact_form_values": [
+              "7824324816",
+              "306694897615521"
+            ],
+            "prime": "37",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              10,
+              1
+            ],
+            "exact_form_values": [
+              "-318191279",
+              "62098446199204"
+            ],
+            "prime": "43",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              0,
+              1
+            ],
+            "exact_form_values": [
+              "-144492039",
+              "4865126421024"
+            ],
+            "prime": "47",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              -70665,
+              36751
+            ],
+            "exact_form_values": [
+              "419158760297981796",
+              "1644151275208446595929"
+            ],
+            "prime": "101",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              -1,
+              1
+            ],
+            "exact_form_values": [
+              "75091072",
+              "2671855196425"
+            ],
+            "prime": "251",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              0,
+              1
+            ],
+            "exact_form_values": [
+              "-144492039",
+              "4865126421024"
+            ],
+            "prime": "331",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              -70665,
+              36751
+            ],
+            "exact_form_values": [
+              "419158760297981796",
+              "1644151275208446595929"
+            ],
+            "prime": "937",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              -1,
+              1
+            ],
+            "exact_form_values": [
+              "75091072",
+              "2671855196425"
+            ],
+            "prime": "2089",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              -2,
+              1
+            ],
+            "exact_form_values": [
+              "331440217",
+              "1120413199684"
+            ],
+            "prime": "18401",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              -70665,
+              36751
+            ],
+            "exact_form_values": [
+              "419158760297981796",
+              "1644151275208446595929"
+            ],
+            "prime": "11613166291978687",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              -1,
+              1
+            ],
+            "exact_form_values": [
+              "75091072",
+              "2671855196425"
+            ],
+            "prime": "19942274001039517",
+            "status": "PROVED"
+          }
+        ],
+        "id": "complementary_AD",
+        "other_places": "Smooth projective genus-one reduction outside the factored support: Weil bound supplies an Fp point and Hensel lifts it.",
+        "real_witness": [
+          -1,
+          1
+        ]
+      },
+      "log": "complementary_AD geometry complete; bad primes ['2', '3', '5', '7', '11', '13', '17', '19', '29', '31', '37', '43', '47', '101', '251', '331', '937', '2089', '18401', '11613166291978687', '19942274001039517']\ncomplementary_AD local complete True\ncomplementary_AD descent 2 2 Sha2 2 global False\n"
+    }
+  ],
+  "schema": "rank-jump.disjoint-soluble-carriers.v1"
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "rank-jump.carrier-sha-class-protocol.v1",
+  "layer": "solubility",
+  "question": "Does the everywhere locally soluble A,D carrier itself represent nonzero Sha, rather than merely having a Jacobian with nonzero Sha?",
+  "target": "Only complementary_AD from the frozen single-carrier descent: exact Jacobian rank2, rational2torsion dimension1, Sha[2] dimension2. Effort zero returned only one rational generator, so its span is insufficient to identify the torsor class.",
+  "method": "Construct the quartic's degree-four Jacobian map. Verify X=N(v)/f(v), Y=G(v)/w^3 and the polynomial syzygy. In the cubic etale algebra verify N-theta*f=beta*h(v)^2 with beta the leading coefficient. Compare finite split-root Kummer characters of beta with a full rational Kummer subgroup, whose dimension is exact rank plus rational2torsion dimension.",
+  "limits": {"carriers":1,"seconds_per_worker":60,"pari_effort":1,"pari_random_seed":1,"pari_stack_bytes":67108864,"finite_character_prime_bound":503,"new_original_curve_parameters_or_point_searches":0},
+  "rational_basis": "One reproducibly seeded effort-one PARI call on this auxiliary Jacobian with the existing point supplied, followed by 2-saturation if at least two generators are returned. No further effort increases. Require three independent Kummer images including rational torsion before declaring the rational Kummer space complete.",
+  "positive_obstruction_endpoint": "If adding beta increases the finite-character rank of the certified complete rational Kummer space, the locally soluble carrier has no rational point and defines a nonzero Sha[2] class.",
+  "failure_semantics": "An incomplete rational basis, timeout, or failure of character separation leaves this particular carrier class UNKNOWN. A Jacobian Sha dimension alone is not a carrier obstruction. Equality of finite fingerprints alone does not prove global solubility."
+}

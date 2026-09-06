@@ -1,0 +1,843 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_global_pair_solubility_inputs_v1.json": "a72c2b113844b06a1ee99b6739fcb9de0f9961a0beff9c0a0e50ffb8670ac9c8",
+    "elliptic-curves/rank-jump/GLOBAL_PAIR_SOLUBILITY_PROTOCOL.json": "0589c182070c3a046e0b1c17c5a9afb08282ba9b1704c9c3887d239df0b0fe8f",
+    "elliptic-curves/rank-jump/global_pair_solubility.py": "2f21c0fc4bc4150b8db76cb11a5039bfd2019c7951eb6f208150110e832a4b3d",
+    "elliptic-curves/rank-jump/local_solubility_blocks.py": "1c36415a83865f4410babcbb03c830b080d2ace257a4a318c3b9242c1f659901",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "boundary": "Global nonemptiness of the parameter carrier is distinct from a lift above a prescribed specialization. No points on new original fibres are sought or forwarded. No rank bound for an original elliptic fibre is inferred from the auxiliary Jacobian rank.",
+  "rows": [
+    {
+      "descent": {
+        "CT_Sha2_mod_2Sha4_dimension": 0,
+        "Sha_2_dimension": 0,
+        "full_2_Selmer_dimension": 4,
+        "global_carrier_solubility_proved": true,
+        "id": "cross_group",
+        "points": [
+          [
+            "-104245452237",
+            "6070059489589095"
+          ],
+          [
+            "-15883478225191927531/186431716",
+            "34103715615134825133591352235/2545538650264"
+          ],
+          [
+            "-5668910781410889/100489",
+            "239550988356774417323385/31855013"
+          ]
+        ],
+        "rank_lower_bound": 3,
+        "rank_upper_bound": 3,
+        "rational_2_torsion_dimension": 1,
+        "raw_ellrank": "[3, 3, 0, [[-104245452237, 6070059489589095], [-15883478225191927531/186431716, 34103715615134825133591352235/2545538650264], [-5668910781410889/100489, 239550988356774417323385/31855013]]]",
+        "reason": "An everywhere locally soluble period-dividing-two torsor is trivial when Sha(J)[2]=0."
+      },
+      "execution": {
+        "status": "COMPLETE"
+      },
+      "geometry": {
+        "Jacobian_model": [
+          "0",
+          "0",
+          "0",
+          "-1663151018043633297983733525866542722270684856653048840192",
+          "-21515605923470669192135310847613034967523788138415582463715816148529790901813482881024"
+        ],
+        "Sage_Jacobian_model": [
+          "0",
+          "0",
+          "0",
+          "-20532728617822633308441154640327687929267714279667269632",
+          "-29513862720810245805398231615381392273695182631571443708800845196885858575875833856"
+        ],
+        "bad_reduction_integer": "2276929399817811142245760982757441260572712079114790502400",
+        "bad_support_factorization": [
+          [
+            "2",
+            29
+          ],
+          [
+            "3",
+            9
+          ],
+          [
+            "5",
+            2
+          ],
+          [
+            "7",
+            2
+          ],
+          [
+            "11",
+            2
+          ],
+          [
+            "13",
+            2
+          ],
+          [
+            "19",
+            1
+          ],
+          [
+            "23",
+            1
+          ],
+          [
+            "37",
+            1
+          ],
+          [
+            "43",
+            1
+          ],
+          [
+            "47",
+            1
+          ],
+          [
+            "61",
+            1
+          ],
+          [
+            "113",
+            1
+          ],
+          [
+            "197",
+            1
+          ],
+          [
+            "331",
+            1
+          ],
+          [
+            "2089",
+            1
+          ],
+          [
+            "80677",
+            1
+          ],
+          [
+            "223481",
+            1
+          ],
+          [
+            "15548893",
+            1
+          ]
+        ],
+        "conic_root_numerator": [
+          "-1414733003779/1937",
+          "-5488856302/1937",
+          "-4307419/1937"
+        ],
+        "factor_primality_proved": true,
+        "forms": [
+          [
+            409689,
+            -1439214,
+            328441
+          ],
+          [
+            -144492039,
+            -201200094,
+            18383017
+          ]
+        ],
+        "genus": 1,
+        "id": "cross_group",
+        "invariants_I_J": [
+          "61598185853467899925323463920983063787803142839001808896",
+          "796874293461876636745752253615297591389769931052428980137622820315918181548647514112"
+        ],
+        "minimal_Jacobian_model": [
+          "0",
+          "-1",
+          "0",
+          "-19518424173760592711895",
+          "-865014086753558055277835395559868"
+        ],
+        "parameter_denominator": [
+          "-328441",
+          "0",
+          "1"
+        ],
+        "parameter_numerator": [
+          "-4138306910/1937",
+          "-8614838/1937",
+          "-4112/1937"
+        ],
+        "quartic_coefficients": [
+          "-1025680029992325792396066462746519",
+          "780513374635194795358847591924",
+          "12878684832203001297314527686",
+          "17483507653021248584081492",
+          "5144879545432079093017"
+        ],
+        "quartic_square_scaling": "3751969",
+        "single_conic_anchor": [
+          "-4112/1937",
+          "4307419/1937"
+        ],
+        "software": {
+          "pari": "[2, 17, 3]",
+          "sage": "10.9"
+        },
+        "torsor_period_divides": 2
+      },
+      "id": "cross_group",
+      "local": {
+        "everywhere_locally_soluble": true,
+        "finite_bad_places": [
+          {
+            "base_point": [
+              1,
+              0
+            ],
+            "exact_form_values": [
+              "328441",
+              "18383017"
+            ],
+            "prime": "2",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              3,
+              1
+            ],
+            "exact_form_values": [
+              "-951984",
+              "-582645168"
+            ],
+            "prime": "3",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              16,
+              1
+            ],
+            "exact_form_values": [
+              "61463161",
+              "1342358809"
+            ],
+            "prime": "5",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              2,
+              1
+            ],
+            "exact_form_values": [
+              "-1154975",
+              "-473360159"
+            ],
+            "prime": "7",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              7,
+              1
+            ],
+            "exact_form_values": [
+              "6428800",
+              "-652124864"
+            ],
+            "prime": "11",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              2,
+              1
+            ],
+            "exact_form_values": [
+              "-1154975",
+              "-473360159"
+            ],
+            "prime": "13",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              10,
+              1
+            ],
+            "exact_form_values": [
+              "18861649",
+              "-318191279"
+            ],
+            "prime": "19",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              17,
+              1
+            ],
+            "exact_form_values": [
+              "70862500",
+              "1747798276"
+            ],
+            "prime": "23",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              27,
+              1
+            ],
+            "exact_form_values": [
+              "200984400",
+              "7824324816"
+            ],
+            "prime": "37",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              10,
+              1
+            ],
+            "exact_form_values": [
+              "18861649",
+              "-318191279"
+            ],
+            "prime": "43",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              -4112,
+              1937
+            ],
+            "exact_form_values": [
+              "18553858441561",
+              "1371247882227193"
+            ],
+            "prime": "47",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              -4112,
+              1937
+            ],
+            "exact_form_values": [
+              "18553858441561",
+              "1371247882227193"
+            ],
+            "prime": "61",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              -4112,
+              1937
+            ],
+            "exact_form_values": [
+              "18553858441561",
+              "1371247882227193"
+            ],
+            "prime": "113",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              -4112,
+              1937
+            ],
+            "exact_form_values": [
+              "18553858441561",
+              "1371247882227193"
+            ],
+            "prime": "197",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              -4112,
+              1937
+            ],
+            "exact_form_values": [
+              "18553858441561",
+              "1371247882227193"
+            ],
+            "prime": "331",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              -4112,
+              1937
+            ],
+            "exact_form_values": [
+              "18553858441561",
+              "1371247882227193"
+            ],
+            "prime": "2089",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              -4112,
+              1937
+            ],
+            "exact_form_values": [
+              "18553858441561",
+              "1371247882227193"
+            ],
+            "prime": "80677",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              -1,
+              1
+            ],
+            "exact_form_values": [
+              "2177344",
+              "75091072"
+            ],
+            "prime": "223481",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              -1,
+              1
+            ],
+            "exact_form_values": [
+              "2177344",
+              "75091072"
+            ],
+            "prime": "15548893",
+            "status": "PROVED"
+          }
+        ],
+        "id": "cross_group",
+        "other_places": "Smooth projective genus-one reduction outside the factored support: Weil bound supplies an Fp point and Hensel lifts it.",
+        "real_witness": [
+          -1,
+          1
+        ]
+      },
+      "log": "cross_group geometry complete; bad primes ['2', '3', '5', '7', '11', '13', '19', '23', '37', '43', '47', '61', '113', '197', '331', '2089', '80677', '223481', '15548893']\ncross_group local complete True\ncross_group descent 3 3 Sha2 0 global True\n"
+    },
+    {
+      "descent": {
+        "CT_Sha2_mod_2Sha4_dimension": 0,
+        "Sha_2_dimension": 0,
+        "full_2_Selmer_dimension": 3,
+        "global_carrier_solubility_proved": true,
+        "id": "observed_positive",
+        "points": [
+          [
+            "3692389151242266176810/1075369",
+            "51440028873552193068406220329015/1115157653"
+          ],
+          [
+            "58858503926697260971729610/19879026049",
+            "28058914472028257574586671676991035/2802803519726657"
+          ]
+        ],
+        "rank_lower_bound": 2,
+        "rank_upper_bound": 2,
+        "rational_2_torsion_dimension": 1,
+        "raw_ellrank": "[2, 2, 0, [[3692389151242266176810/1075369, 51440028873552193068406220329015/1115157653], [58858503926697260971729610/19879026049, 28058914472028257574586671676991035/2802803519726657]]]",
+        "reason": "An everywhere locally soluble period-dividing-two torsor is trivial when Sha(J)[2]=0."
+      },
+      "execution": {
+        "status": "COMPLETE"
+      },
+      "geometry": {
+        "Jacobian_model": [
+          "0",
+          "0",
+          "0",
+          "-107751648380843854526588831312583388308596427795545212080380592",
+          "430509326390701142772796411567907046450025543944746729661938045723655312019698402907175995776"
+        ],
+        "Sage_Jacobian_model": [
+          "0",
+          "0",
+          "0",
+          "-3990801791883105723206993752317903270688756585020193040014096/3",
+          "15944789866322264547140607835848409127778723849805434431923631323098344889618459366932444288/27"
+        ],
+        "bad_reduction_integer": "50155518050074797822404274750735292429562167475480614806896640000",
+        "bad_support_factorization": [
+          [
+            "2",
+            17
+          ],
+          [
+            "3",
+            5
+          ],
+          [
+            "5",
+            4
+          ],
+          [
+            "7",
+            4
+          ],
+          [
+            "11",
+            2
+          ],
+          [
+            "13",
+            1
+          ],
+          [
+            "17",
+            1
+          ],
+          [
+            "19",
+            2
+          ],
+          [
+            "23",
+            1
+          ],
+          [
+            "31",
+            1
+          ],
+          [
+            "37",
+            1
+          ],
+          [
+            "41",
+            2
+          ],
+          [
+            "103",
+            1
+          ],
+          [
+            "113",
+            1
+          ],
+          [
+            "281",
+            1
+          ],
+          [
+            "367",
+            1
+          ],
+          [
+            "127637",
+            1
+          ],
+          [
+            "16000070259350081396339",
+            1
+          ]
+        ],
+        "conic_root_numerator": [
+          "-1414733003779/1937",
+          "-5488856302/1937",
+          "-4307419/1937"
+        ],
+        "factor_primality_proved": true,
+        "forms": [
+          [
+            409689,
+            -1439214,
+            328441
+          ],
+          [
+            47184481444,
+            25665872604,
+            3559010841
+          ]
+        ],
+        "genus": 1,
+        "id": "observed_positive",
+        "invariants_I_J": [
+          "3990801791883105723206993752317903270688756585020193040014096",
+          "-15944789866322264547140607835848409127778723849805434431923631323098344889618459366932444288"
+        ],
+        "minimal_Jacobian_model": [
+          "1",
+          "0",
+          "0",
+          "-26221768130397333373486549322545",
+          "51682038990320677938630940036567086255134338025"
+        ],
+        "parameter_denominator": [
+          "-328441",
+          "0",
+          "1"
+        ],
+        "parameter_numerator": [
+          "-4138306910/1937",
+          "-8614838/1937",
+          "-4112/1937"
+        ],
+        "quartic_coefficients": [
+          "553863139865568079175200704900508624",
+          "1479888386342927895105746449637136",
+          "489163676839206881133078799732",
+          "-660851502180647183999130408",
+          "123008922959354790796516"
+        ],
+        "quartic_square_scaling": "3751969",
+        "single_conic_anchor": [
+          "-4112/1937",
+          "4307419/1937"
+        ],
+        "software": {
+          "pari": "[2, 17, 3]",
+          "sage": "10.9"
+        },
+        "torsor_period_divides": 2
+      },
+      "id": "observed_positive",
+      "local": {
+        "everywhere_locally_soluble": true,
+        "finite_bad_places": [
+          {
+            "base_point": [
+              1,
+              0
+            ],
+            "exact_form_values": [
+              "328441",
+              "3559010841"
+            ],
+            "prime": "2",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              3,
+              1
+            ],
+            "exact_form_values": [
+              "-951984",
+              "156213196825"
+            ],
+            "prime": "3",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              16,
+              1
+            ],
+            "exact_form_values": [
+              "61463161",
+              "1368945218404"
+            ],
+            "prime": "5",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              2,
+              1
+            ],
+            "exact_form_values": [
+              "-1154975",
+              "112752270016"
+            ],
+            "prime": "7",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              7,
+              1
+            ],
+            "exact_form_values": [
+              "6428800",
+              "401237120881"
+            ],
+            "prime": "11",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              2,
+              1
+            ],
+            "exact_form_values": [
+              "-1154975",
+              "112752270016"
+            ],
+            "prime": "13",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              16,
+              1
+            ],
+            "exact_form_values": [
+              "61463161",
+              "1368945218404"
+            ],
+            "prime": "17",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              7,
+              1
+            ],
+            "exact_form_values": [
+              "6428800",
+              "401237120881"
+            ],
+            "prime": "19",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              17,
+              1
+            ],
+            "exact_form_values": [
+              "70862500",
+              "1512058448761"
+            ],
+            "prime": "23",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              21,
+              1
+            ],
+            "exact_form_values": [
+              "115028676",
+              "2155691587009"
+            ],
+            "prime": "31",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              27,
+              1
+            ],
+            "exact_form_values": [
+              "200984400",
+              "3334681944841"
+            ],
+            "prime": "37",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              40,
+              1
+            ],
+            "exact_form_values": [
+              "468346729",
+              "6768236731204"
+            ],
+            "prime": "41",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              -4112,
+              1937
+            ],
+            "exact_form_values": [
+              "18553858441561",
+              "32785165058494564"
+            ],
+            "prime": "103",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              -4112,
+              1937
+            ],
+            "exact_form_values": [
+              "18553858441561",
+              "32785165058494564"
+            ],
+            "prime": "113",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              -4112,
+              1937
+            ],
+            "exact_form_values": [
+              "18553858441561",
+              "32785165058494564"
+            ],
+            "prime": "281",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              -4112,
+              1937
+            ],
+            "exact_form_values": [
+              "18553858441561",
+              "32785165058494564"
+            ],
+            "prime": "367",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              -4112,
+              1937
+            ],
+            "exact_form_values": [
+              "18553858441561",
+              "32785165058494564"
+            ],
+            "prime": "127637",
+            "status": "PROVED"
+          },
+          {
+            "base_point": [
+              -4112,
+              1937
+            ],
+            "exact_form_values": [
+              "18553858441561",
+              "32785165058494564"
+            ],
+            "prime": "16000070259350081396339",
+            "status": "PROVED"
+          }
+        ],
+        "id": "observed_positive",
+        "other_places": "Smooth projective genus-one reduction outside the factored support: Weil bound supplies an Fp point and Hensel lifts it.",
+        "real_witness": [
+          0,
+          1
+        ]
+      },
+      "log": "observed_positive geometry complete; bad primes ['2', '3', '5', '7', '11', '13', '17', '19', '23', '31', '37', '41', '103', '113', '281', '367', '127637', '16000070259350081396339']\nobserved_positive local complete True\nobserved_positive descent 2 2 Sha2 0 global True\n"
+    }
+  ],
+  "schema": "rank-jump.global-pair-solubility.v1"
+}

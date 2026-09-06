@@ -1,0 +1,114 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_carrier_isogeny_obstruction_v1.json": "2332ac6c292cb9597bdbbefca0982fb37577f224425cd946b79bdf30a49ddeae",
+    "artifacts/generated-results/elliptic-curves/rank_jump_carrier_sha_class_v1.json": "c8de3586f16f52e23f4256b0d0f816145e428523a6329f219434f286d3b4e541",
+    "artifacts/generated-results/elliptic-curves/rank_jump_disjoint_soluble_carriers_v1.json": "c6b53de1bda3c1bf099f03f31c76d4786d68dd05bd8d58ce64c5da5977517396",
+    "artifacts/generated-results/elliptic-curves/rank_jump_global_pair_solubility_v1.json": "00c7eb1bddddb16d811c5f7b27533ff934b8f5600b777c7019ec0ee81f28cf5f",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_global_carriers.py": "10198f5bf52b10c1d273ba8af93387cbbbece0a20981cbe1ae3882d7b652be27"
+  },
+  "boundary": "This replay proves the two global nonemptiness results and preserves the unresolved A,D torsor class. It does not certify rank jumps on new original fibres.",
+  "carrier_checks": [
+    {
+      "Sha_2_dimension": 0,
+      "complete_local_support": [
+        "2",
+        "3",
+        "5",
+        "7",
+        "11",
+        "13",
+        "19",
+        "23",
+        "37",
+        "43",
+        "47",
+        "61",
+        "113",
+        "197",
+        "331",
+        "2089",
+        "80677",
+        "223481",
+        "15548893"
+      ],
+      "finite_Kummer_free_rank_lower_bound": 3,
+      "global_solubility_proved_by_Sha_vanishing": true,
+      "id": "cross_group",
+      "rank_interval_replayed": [
+        3,
+        3
+      ]
+    },
+    {
+      "Sha_2_dimension": 0,
+      "complete_local_support": [
+        "2",
+        "3",
+        "5",
+        "7",
+        "11",
+        "13",
+        "17",
+        "19",
+        "23",
+        "31",
+        "37",
+        "41",
+        "103",
+        "113",
+        "281",
+        "367",
+        "127637",
+        "16000070259350081396339"
+      ],
+      "finite_Kummer_free_rank_lower_bound": 2,
+      "global_solubility_proved_by_Sha_vanishing": true,
+      "id": "observed_positive",
+      "rank_interval_replayed": [
+        2,
+        2
+      ]
+    },
+    {
+      "Sha_2_dimension": 2,
+      "complete_local_support": [
+        "2",
+        "3",
+        "5",
+        "7",
+        "11",
+        "13",
+        "17",
+        "19",
+        "29",
+        "31",
+        "37",
+        "43",
+        "47",
+        "101",
+        "251",
+        "331",
+        "937",
+        "2089",
+        "18401",
+        "11613166291978687",
+        "19942274001039517"
+      ],
+      "finite_Kummer_free_rank_lower_bound": 1,
+      "global_solubility_proved_by_Sha_vanishing": false,
+      "id": "complementary_AD",
+      "rank_interval_replayed": [
+        2,
+        2
+      ]
+    }
+  ],
+  "schema": "rank-jump.global-carrier-verification.v1",
+  "software": {
+    "pari": "[2, 17, 3]",
+    "sage": "10.9"
+  },
+  "specific_AD_class": "UNKNOWN: both attempted completeness gates remain unsatisfied",
+  "status": "PASS"
+}

@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.carrier-isogeny-obstruction-protocol.v1",
+  "layer": "solubility",
+  "question": "Can the particular A,D torsor be excluded by the scalar 2-isogeny quotient without finding a second generator on its Jacobian?",
+  "prior_result": "The seeded effort-one call left the full rational Kummer basis incomplete. However, the supplied point and rational2torsion already give two independent scalar squareclasses, while the torsor's scalar beta gives a third.",
+  "method": "Write the Jacobian as y^2=x(x^2+a*x+b), and its 2-isogenous curve as y^2=x(x^2-2a*x+a^2-4b). The classical exact index formula is dim(alpha(J))+dim(alpha(J'))=rank(J)+2. With the inherited unconditional rank upper bound2, two independent scalar classes on each side prove the original scalar image has dimension exactly2. A third torsor scalar class is then a global obstruction.",
+  "limits": {"new_auxiliary_isogenous_models":1,"seconds_per_worker":30,"pari_effort":0,"pari_stack_bytes":67108864,"finite_character_prime_bound":503,"new_original_parameters_or_point_searches":0},
+  "rational_points": "One effort-zero PARI call on the 2-isogenous auxiliary curve only. Test its returned points and rational2torsion. Do not increase the effort or infer completeness if two independent scalar classes are not certified.",
+  "boundary": "This uses a complete isogeny quotient, not an unproved complete Mordell-Weil basis. It identifies the fixed carrier class only; Jacobian Sha dimension alone remains insufficient."
+}

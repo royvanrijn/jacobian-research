@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: four-way solubility obstructions survive every pair and triple check](LOCAL_SOLUBILITY_IS_NOT_PAIRWISE.md)
+- [Latest: global carrier solubility leaves the prescribed-specialization condition open](GLOBAL_CARRIER_SOLUBILITY_AND_SPECIALIZATION.md)
+- [Four-way solubility obstructions survive every pair and triple check](LOCAL_SOLUBILITY_IS_NOT_PAIRWISE.md)
 - [Pre-point square conditions construct four soluble quotient subblocks on completed fibres](SOLUBILITY_FIRST_ON_COMPLETED_FIBRES.md)
 - [Integral Galois mixing equals common rational Kummer dimension, not rank gain](INTEGRAL_GALOIS_MIXING_IS_NOT_RANK_GAIN.md)
 - [Production scalar-twist blocks share an elliptic norm defect; S3 excludes the cyclic genus-two shortcut](SCALAR_TWIST_BLOCKS_ARE_ELLIPTIC_NORM_DEFECTS.md)
@@ -60,6 +61,7 @@ Retrospective analyses with pinned inputs, independent of the active curve searc
 Replay from the repository root, using Python 3.12 and its standard library:
 
 ```sh
+sage -python elliptic-curves/rank-jump/verify_global_carriers.py check
 python3 elliptic-curves/rank-jump/local_solubility_blocks.py check
 python3 elliptic-curves/rank-jump/verify_local_solubility_blocks.py check
 python3 elliptic-curves/rank-jump/completed_cohort_panel.py check
