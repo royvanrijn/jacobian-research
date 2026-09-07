@@ -1,0 +1,44 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_half_ideal_artin_completion_v1.json": "8b77ed4807be853c4921f1ea3f6d6a241bfceba8e337fb07d91f2383323f28cd",
+    "elliptic-curves/rank-jump/strict_sunit_carrier_bound.py": "ac9d4d8f3078034374533e0c6fb237c857eacf832a2e37feaf9936b992cc60bb"
+  },
+  "boundary": "Oracle-derived retrospective diagnostic only. Existing Artin matrices come from known exceptional points. They are not inputs to the separate equation-only principalization experiment or any prospective selector. A zero Artin kernel vector is not certified S-unit; no claim about S-units plus non-strict generic corrections.",
+  "rows": [
+    {
+      "artin_rank": 9,
+      "case_index": 0,
+      "id": "a1-fibration-05:307/206",
+      "known_strict_dimension": 10,
+      "known_strict_quotient_by_S_units_dimension_lower_bound": 9,
+      "right_kernel_masks": [
+        0,
+        637
+      ],
+      "strict_S_unit_dimension_in_known_space_upper_bound": 1
+    },
+    {
+      "artin_rank": 8,
+      "case_index": 4,
+      "id": "published-R17:-2300/843",
+      "known_strict_dimension": 8,
+      "known_strict_quotient_by_S_units_dimension_lower_bound": 8,
+      "right_kernel_masks": [
+        0
+      ],
+      "strict_S_unit_dimension_in_known_space_upper_bound": 0
+    },
+    {
+      "artin_rank": 6,
+      "case_index": 5,
+      "id": "published-R17:-1561/3133",
+      "known_strict_dimension": 6,
+      "known_strict_quotient_by_S_units_dimension_lower_bound": 6,
+      "right_kernel_masks": [
+        0
+      ],
+      "strict_S_unit_dimension_in_known_space_upper_bound": 0
+    }
+  ],
+  "schema": "rank-jump.strict-sunit-carrier-bound.v1"
+}

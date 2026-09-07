@@ -1,0 +1,11 @@
+{
+  "schema": "rank-jump.bad-prime-principalization-protocol.v1",
+  "question": "Can principalizations of squared bad-prime ideals supply strict classes independently of exceptional points on the frozen 103b2 pair?",
+  "cases": ["case-02", "case-03"],
+  "inputs": "Previously certified reduced cubic, maximal order and complete bad-prime set; three marked generic classes per case as generator-recovery controls only.",
+  "method": "For every prime ideal above S, form P^2, first replace it by a PARI idealred-equivalent ideal retaining the exact multiplier, then test the 49 primitive trace-LLL directions in [-2,2]^3 up to sign. This differs from the earlier good-prime test by its bad-prime population and exact ideal-class reduction before generator enumeration.",
+  "bounds": {"worker_seconds_per_case": 60, "pari_stack_bytes": 268435456, "directions_per_ideal": 49, "workers": 1},
+  "success_gate": "Exact principal-square ideal identity, positive square norm, complete strict local-square conditions, and independent nontrivial squareclass modulo the marked generic subgroup. Generator discovery alone is not class creation.",
+  "failure_semantics": "A missing generator in the finite reduced box is UNKNOWN principality, not an incidence exclusion. No larger box, higher ideal powers, additional primes, full class group or point search is part of this run.",
+  "boundary": "Retrospective equation-only constructor test, not a prospective rank selector. No exceptional points, active search outputs or candidate policies are read or modified."
+}

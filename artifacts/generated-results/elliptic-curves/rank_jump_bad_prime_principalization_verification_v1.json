@@ -1,0 +1,33 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_principalization_inputs_v1.json": "ef1bcde687807386b5ec0ec6ce2cf071f317313a3ddd14e928b97e25be1bc2cb",
+    "artifacts/generated-results/elliptic-curves/rank_jump_bad_prime_principalization_v1.json": "0f025bc7ac06c5df2433bb64a5a1a6ac29704837c7e5b1ab1d1c6f2b18552e3b",
+    "elliptic-curves/rank-jump/verify_bad_prime_principalization.py": "6f1ff40674b8f7935b9ed446dda988374b289efb58389a28d9ee55893b56ae7e",
+    "elliptic-curves/rank-jump/verify_unpointed_governing_norm.py": "69828517faa1ebdc92218dc338cfe156fbc8a16020bf6b28d8f59a60bc4c847a"
+  },
+  "boundary": "Certifies the finite generator misses and six exact positive controls, not nonprincipality, class rank or a high/low incidence comparison.",
+  "cases": [
+    {
+      "candidate_generators": 0,
+      "controls_recovered": 3,
+      "identical_reduced_ideal_pairs": [],
+      "new_strict_classes_constructed": 0,
+      "norms_verified": 1568,
+      "prime_square_targets": 29,
+      "principality_of_missed_targets": "UNKNOWN",
+      "token": "case-02"
+    },
+    {
+      "candidate_generators": 0,
+      "controls_recovered": 3,
+      "identical_reduced_ideal_pairs": [],
+      "new_strict_classes_constructed": 0,
+      "norms_verified": 1666,
+      "prime_square_targets": 31,
+      "principality_of_missed_targets": "UNKNOWN",
+      "token": "case-03"
+    }
+  ],
+  "schema": "rank-jump.bad-prime-principalization-verification.v1",
+  "status": "PASS"
+}
