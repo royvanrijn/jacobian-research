@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.residual-quartic-incidence-protocol.v1",
+  "question": "Does the remaining published-root-curve incidence gate reduce to an explicitly defined finite etale scheme of degree four?",
+  "inputs": "Only A, B and the seventeen generic section polynomials projected from the completed branch-divisibility input. No branch choice, exceptional point, fibre parameter, gain or adaptive class dictionary enters the calculation.",
+  "preliminary_disclosure": "A bounded local calculation found Weil-pairing rank16 and an isotropic radical. This protocol certifies that structural observation; it is not a preregistered statistical test.",
+  "mathematical_gate": "Compute the theta quadratic form by Riemann-Roch on the cubic root curve, independently replay the Weil pairing using resultants, and classify the residual four-dimensional orthogonal representation. The geometric definition of a degree-four etale scheme is not a coefficient polynomial and does not settle whether it has a rational point.",
+  "limits": {"generic_sections": 17, "section_pairs": 136, "quadratic_form_vectors": 65536, "orthogonal_model_vectors": 16, "quartic_permutations": 24, "worker_seconds": 30, "verifier_seconds": 30, "workers": 1, "point_searches": 0, "parameter_searches": 0, "class_group_computations": 0},
+  "failure": "Fail closed on any geometric support condition, parity identity, rank or enumeration mismatch. The extra global class and its coefficient representative remain UNKNOWN. The fixed root-curve carrier is not presented as explaining class creation in the sixteen specialized cubic fields."
+}

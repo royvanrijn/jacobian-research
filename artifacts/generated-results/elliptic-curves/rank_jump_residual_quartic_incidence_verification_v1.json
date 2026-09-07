@@ -1,0 +1,73 @@
+{
+  "admissible_subgroup_orders": {
+    "24": 1,
+    "6": 4
+  },
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_residual_quartic_incidence_inputs_v1.json": "211ff20ecf7802b483d239f8669f052a411b8787fd61a00ee9cf952ce4deae11",
+    "artifacts/generated-results/elliptic-curves/rank_jump_residual_quartic_incidence_v1.json": "8d72287fb493cdc454f77f8966ebd17025807527583e09258bb1acfb8d917796",
+    "elliptic-curves/rank-jump/residual_quartic_incidence.py": "1ebec189ce1c66196784a7edf49293917d9025a65a2f499d0baf8577a91ed564",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_residual_quartic_incidence.py": "3339121169f8fb813857a6ac2486037da187435c6a43dea0dba989932d82387e"
+  },
+  "coefficient_quartic_constructed": false,
+  "extra_global_class_constructed": false,
+  "generic_complement_arf": 1,
+  "generic_identities_and_simple_divisors_verified": 17,
+  "independent_resultant_pairings": 136,
+  "permutations_verified": 24,
+  "residual_module_is_quartic_permutation_module": true,
+  "schema": "rank-jump.residual-quartic-incidence-verification.v1",
+  "status": "PASS",
+  "subgroups_verified": 30,
+  "symplectic_elimination_pairs": [
+    [
+      2,
+      8,
+      0,
+      0
+    ],
+    [
+      4,
+      18,
+      0,
+      0
+    ],
+    [
+      44,
+      80,
+      0,
+      0
+    ],
+    [
+      246,
+      1048,
+      0,
+      1
+    ],
+    [
+      400,
+      9358,
+      1,
+      1
+    ],
+    [
+      662,
+      2090,
+      1,
+      0
+    ],
+    [
+      4122,
+      34450,
+      0,
+      0
+    ],
+    [
+      27686,
+      73644,
+      0,
+      0
+    ]
+  ]
+}
