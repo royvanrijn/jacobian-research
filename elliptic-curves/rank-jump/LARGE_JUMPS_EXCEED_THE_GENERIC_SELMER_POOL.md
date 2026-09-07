@@ -1,5 +1,10 @@
 # Large jumps exceed the generic geometric Selmer pool
 
+Follow-up: [the cubic root curve and its real topology](ROOT_CURVE_TORSION_AND_REAL_CAPACITY.md)
+identify the global pool through Jacobian 2-torsion and tighten its extra
+capacity from three to **at most two** on all six panel family presentations.
+The geometric dimensions proved below remain unchanged.
+
 For the families in the frozen fresh27/historic comparison, classes defined
 over `Q(t)` and satisfying the **geometric local Kummer conditions at every
 base place** have room for at most **three dimensions beyond the marked

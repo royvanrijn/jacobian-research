@@ -1,0 +1,187 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_generic_selmer_capacity_comparison_v1.json": "efaa9f5291da1556163a1ab8ac71b2d3ff951f5941977f9adfb3e2b4069a23ab",
+    "artifacts/generated-results/elliptic-curves/rank_jump_root_curve_capacity_verification_v1.json": "8678e6a51c770b376ff0f655bf90b2673cc210392efa7f76757d81e8ce13595d",
+    "elliptic-curves/rank-jump/verify_root_curve_capacity.py": "01317d67b822b569378889c3f57288eec7f2b725757f2f8b746dce26baccf927"
+  },
+  "boundary": "Labels joined after equation-only counting. These are capacity bounds and retrospective necessities, not a prospective rank predictor or an additional class basis.",
+  "rows": [
+    {
+      "additional_quotient_CT": "UNKNOWN",
+      "arithmetic_global_pool_dimension_upper_bound": 19,
+      "extra_global_pool_capacity_upper_bound": 2,
+      "family": "074d9",
+      "generic_dimension": 17,
+      "id": "new-20260906-40",
+      "rational_fibre_dimensions_outside_pool_lower_bound": 8,
+      "retained_rank_lower_bound": 27,
+      "token": "case-00"
+    },
+    {
+      "additional_quotient_CT": "UNKNOWN",
+      "arithmetic_global_pool_dimension_upper_bound": 19,
+      "extra_global_pool_capacity_upper_bound": 2,
+      "family": "074d9",
+      "generic_dimension": 17,
+      "id": "074d9:2824/885",
+      "rational_fibre_dimensions_outside_pool_lower_bound": 0,
+      "retained_rank_lower_bound": 17,
+      "token": "case-01"
+    },
+    {
+      "additional_quotient_CT": "UNKNOWN",
+      "arithmetic_global_pool_dimension_upper_bound": 19,
+      "extra_global_pool_capacity_upper_bound": 2,
+      "family": "103b2",
+      "generic_dimension": 17,
+      "id": "new-20260906-71",
+      "rational_fibre_dimensions_outside_pool_lower_bound": 8,
+      "retained_rank_lower_bound": 27,
+      "token": "case-02"
+    },
+    {
+      "additional_quotient_CT": "UNKNOWN",
+      "arithmetic_global_pool_dimension_upper_bound": 19,
+      "extra_global_pool_capacity_upper_bound": 2,
+      "family": "103b2",
+      "generic_dimension": 17,
+      "id": "103b2:-1049/2296",
+      "rational_fibre_dimensions_outside_pool_lower_bound": 0,
+      "retained_rank_lower_bound": 17,
+      "token": "case-03"
+    },
+    {
+      "additional_quotient_CT": "UNKNOWN",
+      "arithmetic_global_pool_dimension_upper_bound": 19,
+      "extra_global_pool_capacity_upper_bound": 2,
+      "family": "11952",
+      "generic_dimension": 17,
+      "id": "new-20260906-41",
+      "rational_fibre_dimensions_outside_pool_lower_bound": 8,
+      "retained_rank_lower_bound": 27,
+      "token": "case-04"
+    },
+    {
+      "additional_quotient_CT": "UNKNOWN",
+      "arithmetic_global_pool_dimension_upper_bound": 19,
+      "extra_global_pool_capacity_upper_bound": 2,
+      "family": "11952",
+      "generic_dimension": 17,
+      "id": "11952:-1171/1683",
+      "rational_fibre_dimensions_outside_pool_lower_bound": 0,
+      "retained_rank_lower_bound": 17,
+      "token": "case-05"
+    },
+    {
+      "additional_quotient_CT": "UNKNOWN",
+      "arithmetic_global_pool_dimension_upper_bound": 19,
+      "extra_global_pool_capacity_upper_bound": 2,
+      "family": "11952",
+      "generic_dimension": 17,
+      "id": "new-20260906-188",
+      "rational_fibre_dimensions_outside_pool_lower_bound": 8,
+      "retained_rank_lower_bound": 27,
+      "token": "case-06"
+    },
+    {
+      "additional_quotient_CT": "UNKNOWN",
+      "arithmetic_global_pool_dimension_upper_bound": 19,
+      "extra_global_pool_capacity_upper_bound": 2,
+      "family": "11952",
+      "generic_dimension": 17,
+      "id": "11952:130349/28916",
+      "rational_fibre_dimensions_outside_pool_lower_bound": 0,
+      "retained_rank_lower_bound": 17,
+      "token": "case-07"
+    },
+    {
+      "additional_quotient_CT": "UNKNOWN",
+      "arithmetic_global_pool_dimension_upper_bound": 19,
+      "extra_global_pool_capacity_upper_bound": 2,
+      "family": "11952",
+      "generic_dimension": 17,
+      "id": "new-20260906-72",
+      "rational_fibre_dimensions_outside_pool_lower_bound": 8,
+      "retained_rank_lower_bound": 27,
+      "token": "case-08"
+    },
+    {
+      "additional_quotient_CT": "UNKNOWN",
+      "arithmetic_global_pool_dimension_upper_bound": 19,
+      "extra_global_pool_capacity_upper_bound": 2,
+      "family": "11952",
+      "generic_dimension": 17,
+      "id": "new-20260906-48",
+      "rational_fibre_dimensions_outside_pool_lower_bound": 8,
+      "retained_rank_lower_bound": 27,
+      "token": "case-09"
+    },
+    {
+      "additional_quotient_CT": "UNKNOWN",
+      "arithmetic_global_pool_dimension_upper_bound": 19,
+      "extra_global_pool_capacity_upper_bound": 2,
+      "family": "11952",
+      "generic_dimension": 17,
+      "id": "new-20260906-186",
+      "rational_fibre_dimensions_outside_pool_lower_bound": 8,
+      "retained_rank_lower_bound": 27,
+      "token": "case-10"
+    },
+    {
+      "additional_quotient_CT": "UNKNOWN",
+      "arithmetic_global_pool_dimension_upper_bound": 18,
+      "extra_global_pool_capacity_upper_bound": 2,
+      "family": "a1-fibration-01",
+      "generic_dimension": 16,
+      "id": "new-20260906-90",
+      "rational_fibre_dimensions_outside_pool_lower_bound": 9,
+      "retained_rank_lower_bound": 27,
+      "token": "case-11"
+    },
+    {
+      "additional_quotient_CT": "UNKNOWN",
+      "arithmetic_global_pool_dimension_upper_bound": 18,
+      "extra_global_pool_capacity_upper_bound": 2,
+      "family": "a1-fibration-01",
+      "generic_dimension": 16,
+      "id": "a1-fibration-01:-3187/3697",
+      "rational_fibre_dimensions_outside_pool_lower_bound": 0,
+      "retained_rank_lower_bound": 17,
+      "token": "case-12"
+    },
+    {
+      "additional_quotient_CT": "UNKNOWN",
+      "arithmetic_global_pool_dimension_upper_bound": 19,
+      "extra_global_pool_capacity_upper_bound": 2,
+      "family": "historic-lineage-074d9",
+      "generic_dimension": 17,
+      "id": "ICARM-356",
+      "rational_fibre_dimensions_outside_pool_lower_bound": 10,
+      "retained_rank_lower_bound": 29,
+      "token": "case-13"
+    },
+    {
+      "additional_quotient_CT": "UNKNOWN",
+      "arithmetic_global_pool_dimension_upper_bound": 19,
+      "extra_global_pool_capacity_upper_bound": 2,
+      "family": "historic-lineage-074d9",
+      "generic_dimension": 17,
+      "id": "ICARM-385",
+      "rational_fibre_dimensions_outside_pool_lower_bound": 10,
+      "retained_rank_lower_bound": 29,
+      "token": "case-14"
+    },
+    {
+      "additional_quotient_CT": "UNKNOWN",
+      "arithmetic_global_pool_dimension_upper_bound": 18,
+      "extra_global_pool_capacity_upper_bound": 2,
+      "family": "curve398-p16875",
+      "generic_dimension": 16,
+      "id": "ICARM-398",
+      "rational_fibre_dimensions_outside_pool_lower_bound": 12,
+      "retained_rank_lower_bound": 30,
+      "token": "case-15"
+    }
+  ],
+  "schema": "rank-jump.root-curve-capacity-comparison.v1"
+}

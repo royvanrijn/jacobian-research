@@ -1,0 +1,222 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_generic_selmer_capacity_verification_v1.json": "7b113a6a8f74f43d89695dd5803d52430953be3306488b522a7c445c6b94c022",
+    "artifacts/generated-results/elliptic-curves/rank_jump_root_curve_frobenius_capacity_inputs_v1.json": "f849fecd6a7b37d3dc73dcba543a42dcf553939f2097936ffb9f04b559594913",
+    "artifacts/generated-results/elliptic-curves/rank_jump_root_curve_frobenius_capacity_v1.json": "910200830b5730647dc981cd57169f5e970e84bb16738fcdbe6c587d6d945b0c",
+    "artifacts/generated-results/elliptic-curves/rank_jump_root_curve_real_components_v1.json": "d7a8fd3c4684a044cfac593449553f79119452ce8fe21d2f3fda94f19d4b150d",
+    "elliptic-curves/rank-jump/ROOT_CURVE_FROBENIUS_CAPACITY_PROTOCOL.json": "20cdb9ff3ee3287ccf7a409c2a2c7241e1fd1969692ea8c645c220df32be7e2e",
+    "elliptic-curves/rank-jump/ROOT_CURVE_REAL_COMPONENTS_PROTOCOL.json": "850b65270f03cd735345dd7a820ce3fc24c3dd677aaa3b766d412ca17a7c6f1e",
+    "elliptic-curves/rank-jump/root_curve_frobenius_capacity.py": "22e82c74a57b47a1ddd9e37469b1e50ac376815fbc2b889ad0da802f6e00bd57",
+    "elliptic-curves/rank-jump/root_curve_real_components.py": "f5151e29f669cffbbdad024a2d1a0923513a45d2fa0ff8db268abeb186d27f62",
+    "elliptic-curves/rank-jump/verify_root_curve_capacity.py": "01317d67b822b569378889c3f57288eec7f2b725757f2f8b746dce26baccf927"
+  },
+  "boundary": "Independent finite-field gcd counts, exact PARI Sturm root isolation checks, normalization/topology graph replay and real-capacity arithmetic. Picard-descent and Frobenius/real-torsion implications are proved in the note. No exceptional points used.",
+  "families": [
+    {
+      "arithmetic_global_pool_dimension_upper_bound": 19,
+      "family": "074d9",
+      "finite_counts": [
+        {
+          "normalized_count": 124,
+          "prime": 131,
+          "trace": 8
+        },
+        {
+          "normalized_count": 148,
+          "prime": 137,
+          "trace": -10
+        },
+        {
+          "normalized_count": 140,
+          "prime": 151,
+          "trace": 12
+        }
+      ],
+      "genus": 10,
+      "node_allowance": 0,
+      "odd_frobenius_count_found": false,
+      "real_Jacobian_two_torsion_dimension": 19,
+      "real_components": 10,
+      "real_discriminant_places": 18
+    },
+    {
+      "arithmetic_global_pool_dimension_upper_bound": 19,
+      "family": "103b2",
+      "finite_counts": [
+        {
+          "normalized_count": 128,
+          "prime": 131,
+          "trace": 4
+        },
+        {
+          "normalized_count": 138,
+          "prime": 137,
+          "trace": 0
+        },
+        {
+          "normalized_count": 154,
+          "prime": 151,
+          "trace": -2
+        }
+      ],
+      "genus": 10,
+      "node_allowance": 0,
+      "odd_frobenius_count_found": false,
+      "real_Jacobian_two_torsion_dimension": 19,
+      "real_components": 10,
+      "real_discriminant_places": 18
+    },
+    {
+      "arithmetic_global_pool_dimension_upper_bound": 19,
+      "family": "11952",
+      "finite_counts": [
+        {
+          "normalized_count": 110,
+          "prime": 131,
+          "trace": 22
+        },
+        {
+          "normalized_count": 150,
+          "prime": 137,
+          "trace": -12
+        },
+        {
+          "normalized_count": 150,
+          "prime": 151,
+          "trace": 2
+        }
+      ],
+      "genus": 10,
+      "node_allowance": 0,
+      "odd_frobenius_count_found": false,
+      "real_Jacobian_two_torsion_dimension": 19,
+      "real_components": 10,
+      "real_discriminant_places": 18
+    },
+    {
+      "arithmetic_global_pool_dimension_upper_bound": 18,
+      "family": "a1-fibration-01",
+      "finite_counts": [
+        {
+          "normalized_count": 130,
+          "prime": 131,
+          "trace": 2
+        },
+        {
+          "normalized_count": 150,
+          "prime": 137,
+          "trace": -12
+        },
+        {
+          "normalized_count": 160,
+          "prime": 151,
+          "trace": -8
+        }
+      ],
+      "genus": 9,
+      "node_allowance": 1,
+      "odd_frobenius_count_found": false,
+      "real_Jacobian_two_torsion_dimension": 17,
+      "real_components": 9,
+      "real_discriminant_places": 17
+    },
+    {
+      "arithmetic_global_pool_dimension_upper_bound": 18,
+      "family": "curve398-p16875",
+      "finite_counts": [
+        {
+          "normalized_count": 130,
+          "prime": 131,
+          "trace": 2
+        },
+        {
+          "normalized_count": 150,
+          "prime": 137,
+          "trace": -12
+        },
+        {
+          "normalized_count": 160,
+          "prime": 151,
+          "trace": -8
+        }
+      ],
+      "genus": 9,
+      "node_allowance": 1,
+      "odd_frobenius_count_found": false,
+      "real_Jacobian_two_torsion_dimension": 17,
+      "real_components": 9,
+      "real_discriminant_places": 17
+    },
+    {
+      "arithmetic_global_pool_dimension_upper_bound": 19,
+      "family": "historic-lineage-074d9",
+      "finite_counts": [
+        {
+          "normalized_count": 124,
+          "prime": 131,
+          "trace": 8
+        },
+        {
+          "normalized_count": 148,
+          "prime": 137,
+          "trace": -10
+        },
+        {
+          "normalized_count": 140,
+          "prime": 151,
+          "trace": 12
+        }
+      ],
+      "genus": 10,
+      "node_allowance": 0,
+      "odd_frobenius_count_found": false,
+      "real_Jacobian_two_torsion_dimension": 19,
+      "real_components": 10,
+      "real_discriminant_places": 18
+    }
+  ],
+  "schema": "rank-jump.root-curve-capacity-verification.v1",
+  "status": "PASS",
+  "unipotent_ambiguity_examples": [
+    {
+      "fixed_dimension": 18,
+      "genus": 9,
+      "transvections": 0
+    },
+    {
+      "fixed_dimension": 17,
+      "genus": 9,
+      "transvections": 1
+    },
+    {
+      "fixed_dimension": 16,
+      "genus": 9,
+      "transvections": 2
+    },
+    {
+      "fixed_dimension": 15,
+      "genus": 9,
+      "transvections": 3
+    },
+    {
+      "fixed_dimension": 20,
+      "genus": 10,
+      "transvections": 0
+    },
+    {
+      "fixed_dimension": 19,
+      "genus": 10,
+      "transvections": 1
+    },
+    {
+      "fixed_dimension": 18,
+      "genus": 10,
+      "transvections": 2
+    },
+    {
+      "fixed_dimension": 17,
+      "genus": 10,
+      "transvections": 3
+    }
+  ]
+}

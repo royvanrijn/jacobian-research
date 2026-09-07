@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.root-curve-real-components-protocol.v1",
+  "question": "Does the number of real components of the normalized cubic root curve bound the global cover pool more sharply?",
+  "inputs": "The same six equation-only root-curve inputs as the completed Frobenius test. No points, class anchors or rank labels.",
+  "method": "Isolate real roots of rad(discriminant)*B by exact rational intervals. Read the merging root pair from the sign of B. At an ordinary split I2 node, connect crossing normalization branches instead of merging them; at a nonsplit node remove the isolated real node. Glue the ordered real roots around RP1, including the degree-four x transition at infinity. Count connected components of the resulting graph.",
+  "endpoint": "For normalized genus g and s real components, dim Jac(C)[2](R)=g+s-1. Compare this with the prior generic pool bound only after the topology computation.",
+  "limits": {"worker_seconds_per_family": 30, "workers": 1, "new_rational_point_searches": 0, "new_specializations": 0, "class_groups": 0},
+  "failure": "UNKNOWN on timeout or unsupported fibre configuration. No numerical component guesses and no extension of the cap."
+}

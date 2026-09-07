@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.root-curve-frobenius-capacity-protocol.v1",
+  "question": "Does odd Frobenius trace on the normalized cubic root curve tighten the arithmetic Q(t) cover-pool bound?",
+  "population": "The six family presentations used by the frozen sixteen-fibre panel; omit MW16-05, which is not in that panel. Reuse the verified inversion for curve398.",
+  "inputs": "Family A,B coefficient arrays and exact squarefree discriminant factors only. No generic or exceptional points, rank labels, Kummer classes or search results enter counting workers.",
+  "selection": "In increasing order, take the first three odd primes at most 499 for which denominators are invertible, the discriminant factors preserve degree/multiplicity/coprimality, c4 stays coprime to the discriminant, infinity is good, and every I2 root-curve node stays ordinary. Do not select primes by the observed counts.",
+  "endpoint": "Exact normalized root-curve counts and parity. An odd count, combined later with the independently certified generic Kummer dimension and reciprocal Frobenius polynomial, bounds rational Jacobian 2-torsion by 2g-2. The local I2 allowance adds at most one dimension to the Q(t) pool.",
+  "limits": {"prime_bound": 499, "good_primes_per_family": 3, "worker_seconds_per_family": 30, "workers": 1, "new_rational_point_searches": 0, "new_specializations": 0, "class_groups": 0},
+  "failure": "Preserve UNKNOWN if fewer than three eligible primes exist or a worker exceeds its cap. No larger prime bound and no automatic retries. Even counts give no improved bound; they are not evidence of extra rational torsion."
+}
