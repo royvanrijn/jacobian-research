@@ -1,0 +1,9 @@
+{
+  "engine": "Magma GenusOneModel Minimise/Reduce followed by PointsQI",
+  "error": "TimeoutError('The read operation timed out')",
+  "schema": "elliptic-curves.sealed-two-quadric-solver-result.v1",
+  "sealed_input_sha256": "3c6c18262a88781777fec67f59367da47c5e906376b05831427516748e514302",
+  "status": "TRANSPORT_OR_PARSE_FAILURE",
+  "token": "case-08",
+  "wall_seconds": 50.92827108700294
+}

@@ -1,0 +1,20 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/curve302_strict_cover_control_benchmark_v2.json": "b94fa876a7f660ac508338fd1fb196473da37726fe917bcd0b07496d3d082ccf",
+    "artifacts/generated-results/elliptic-curves/curve302_strict_cover_missing_panel_v2.json": "1d07444269cc366b2037e378a8123ee6470a6e2dee29dbb6e7edbea7c8619928",
+    "elliptic-curves/cas/audit_curve302_strict_cover_benchmark_v2.py": "7d96657006fc57602ba51ab5a284d4d481ccdeb679d47ca26f9a563006c6e394"
+  },
+  "cohort_aware_counts": {
+    "nontrivial_missing_R_plus_H_coset": {
+      "solved": 8,
+      "total": 8
+    },
+    "recovered_nontrivial_H_controls": {
+      "solved": 7,
+      "total": 7
+    }
+  },
+  "correction": "The v2 comparison field applies member!=0 to both cohorts. That convention is correct for H but excludes R+0 in the affine R+H panel. This audit supplies the cohort-aware count without rewriting either immutable v2 artifact.",
+  "schema": "elliptic-curves.curve302-strict-cover-benchmark-v2-metric-audit.v1",
+  "status": "PASS"
+}

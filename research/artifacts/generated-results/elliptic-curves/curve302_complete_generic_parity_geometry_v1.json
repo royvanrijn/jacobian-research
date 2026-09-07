@@ -1,0 +1,27 @@
+{
+  "checked_classes": 131071,
+  "checked_maps": 49,
+  "checker_sha256": "8c8bb9182a11c15ad167d78a2595700803d1fd4d08dd39f0ebcbf81211902ab7",
+  "geometry_seconds": 22.80015107197687,
+  "inputs": {
+    "artifacts/local/elliptic-curves/curve302-complete-generic-parity-v1/data-access.json": "8657ff833f30a0fb4b28478918143637aa72bb46fe69b418284b550de4a94f57",
+    "artifacts/local/elliptic-curves/curve302-complete-generic-parity-v1/ledger.json": "fc48540fb7545f7cbc76ad7eb2c70a89f9e8cb6beb3cb87a89628432b59832ae",
+    "artifacts/local/elliptic-curves/curve302-complete-generic-parity-v1/maps.json": "0c3caa61423ae4ea3ae1114ceb44b8d6e342fc61c553c8ecfcf70c0b16c9f404",
+    "artifacts/local/elliptic-curves/curve302-complete-generic-parity-v1/metric.json": "e3c69028820dfdf41e175d49e4cfd2b62bac5b80d1f4bf9fcf2878e7f5b9bf33",
+    "artifacts/local/elliptic-curves/curve302-complete-generic-parity-v1/protocol.json": "cb76836a5d79e0548e358ea313d136d131413d882654a4f814ec966d3c400692",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/curve302-generic17/maps.json": "08831bf89682af7bc3eafe1bb775eeef129f42d1b7c9f4db8e5b859a57f928fa"
+  },
+  "new_norm_range": [
+    161236614,
+    170482149
+  ],
+  "old_norm_range": [
+    149668095,
+    169049461
+  ],
+  "old_sample_reproduced": 2048,
+  "old_selected_overlap": 1,
+  "schema": "elliptic-curves.curve302-complete-generic-parity-geometry.v1",
+  "scope": "All nonzero parities of the original17-section subgroup, exact rounded norms, transport and all49 factor-free quartic identities verified. The original2048 candidates reproduce exactly;48 of the top49 complete-enumeration choices were absent from that sample. Complete subgroup parity coverage does not cover every unknown ambient class, prove CVP optimality or produce a new rational point. No point worker or active48-fibre rule changed.",
+  "status": "PASS"
+}

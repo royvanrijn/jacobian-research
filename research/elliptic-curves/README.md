@@ -1,7 +1,18 @@
 # Elliptic curves over `Q` — ACTIVE
 
+The [adaptive half-lattice cascade](notes/ADAPTIVE_HALF_LATTICE_VISIBILITY_2026-09-07.md)
+autonomously reaches **17→19→22→23→26→28** on302, then stops on a completed
+no-gain wave; ten matched determinant1092 controls remain17. All1,040 charts
+complete. Exact finite-atlas matrices quantify visibility drops and correct
+late-scheduling effects; the note proves the parity and monotonicity statements.
+Autonomous31 remains unachieved.
+
 The [302 calibration](notes/CURVE302_RECOVERED_SUBGROUP_CALIBRATION_2026-09-07.md)
 recovers **7 of14 known exceptional directions from generic17 alone**. The
+[post-hoc local filtration](notes/CURVE302_RECOVERED_QUOTIENT_LOCAL_FILTRATION_2026-09-07.md)
+shows that those seven contain all four joint bad-place patterns and three
+strict directions; the remaining seven mod-two quotient classes admit strict
+representatives. The
 recovered MW17 parent is now the main search family: a
 [million-parameter intake near302's arithmetic height](notes/DET1092_RECORD_SCALE_CAMPAIGN_2026-09-07.md)
 is complete and the calibrated policy is running on48 fixed fibres. No new
@@ -517,7 +528,7 @@ Use [`REPRODUCE.md`](REPRODUCE.md) and the exact checker paths recorded in `../M
 
 [Reduced determinant1092 parameter chart](notes/DET1092_REDUCED_PARAMETER_CHART_2026-09-07.md): exact90/135-bit equation and17 transported sections;98 boxes complete, no certified rank gain.
 
-<!-- status-consumer: OP-EC-NEXT 4af57d6bc347284b -->
+<!-- status-consumer: OP-EC-NEXT 5fd7a6760deb6c33 -->
 
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-SELMER-PANEL 539bd8ec36b36c44 -->
 

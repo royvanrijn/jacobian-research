@@ -1,0 +1,46 @@
+{
+  "schema": "elliptic-curves.curve302-fixed-resolvent-orbit-protocol.v1",
+  "endpoint": "Find one new strict norm-square character of the maximal cubic order of ICARM curve 302 outside the recovered M24 strict span, then materialize its 2-cover and run the sealed PointsQI pipeline. A bounded enumeration by itself is never an endpoint.",
+  "stage_order": [
+    "recompute and certify the maximal-order binary cubic form",
+    "bounded normalized fixed-resolvent pair enumeration",
+    "exact quartic-ring and field gates",
+    "strict squareclass and M24-independence gate",
+    "sealed 2-cover and PointsQI handoff"
+  ],
+  "bounds": {
+    "affine_slice_parameter_bound": 3,
+    "raw_pair_candidates": 49,
+    "quartic_generator_l1_bound": 2,
+    "finite_field_witness_prime_bound": 503,
+    "pari_stack_bytes": 268435456,
+    "worker_seconds": 50,
+    "elliptic_point_searches_before_strict_acceptance": 0,
+    "class_group_relation_searches": 0
+  },
+  "normalization": {
+    "pair_convention": "Integral ternary quadratic-form coefficients are [x1^2,x2^2,x3^2,x1*x2,x2*x3,x1*x3]; Gram off-diagonals are half these coefficients. The fixed invariant is 4*det(x*A-y*B).",
+    "slice": "The determinantal affine chart has M11=0, M12=x, M13=y. For F=a*x^3+b*x^2*y+c*x*y^2+d*y^3, choose p_x,p_y in [-3,3], q_x=-a, q_y=2*p_x-b, n_x=2*p_y-c, n_y=-d, and M=[[0,x,y],[x,n_x*x+n_y*y,p_x*x+p_y*y],[y,p_x*x+p_y*y,q_x*x+q_y*y]]. The recorded pair is the half-integral Gram pair with det(M/2 in the first coordinate)=F/4.",
+    "reduction_boundary": "This is a finite normalized slice of the fixed-resolvent fibre, not a fundamental domain and not a completeness claim. Rational GL3 changes of a seed are excluded as they preserve its rational quartic algebra."
+  },
+  "acceptance": {
+    "mandatory": [
+      "maximal cubic-ring preflight PASS",
+      "exact determinant identity and primitive pair",
+      "associative integral quartic multiplication table reconstructed directly from the pair",
+      "quartic Q-algebra is a field",
+      "field discriminant equals the certified cubic field discriminant and hence the reconstructed quartic order is maximal",
+      "S4 witnesses: separable irreducible degree-four reduction and 1+3 factorisation reduction",
+      "four real embeddings",
+      "strict class extraction has positive square norm, exact square-ideal identity, and exact local square certificates at all places over S",
+      "Artin-character rank increases beyond the three recovered M24 strict directions"
+    ],
+    "fail_closed": "No pair is called accepted, no cover is constructed, and no PointsQI request is made unless every mandatory gate is recorded PASS. Unsupported local or squareclass extraction is UNKNOWN, not PASS."
+  },
+  "handoff": {
+    "trigger": "the first M24-independent strict character only",
+    "target": "a fresh sealed two-quadric job using elliptic-curves/cas/build_bnf_free_two_covers.py conventions and the existing curve302 PointsQI isolation pattern",
+    "prohibited_before_trigger": ["cover construction", "PointsQI", "rank claim"]
+  },
+  "boundary": "This protocol neither asserts completeness of the fixed-resolvent fibre nor turns any field count into a class-rank or Mordell-Weil-rank assertion."
+}

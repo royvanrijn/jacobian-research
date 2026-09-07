@@ -1,0 +1,25 @@
+{
+  "bisection_policy": {
+    "completed_boxes": 2352,
+    "gain_count": 0,
+    "gain_rate": "0/48",
+    "gain_rows": [],
+    "name": "all generic norm-ten rational-bisection orbits then top-49 specialized norms"
+  },
+  "boundary": "This matched finite portfolio comparison measures certified gain incidence under two fixed 49-chart policies only. It is not a population-level rate estimate or a claim that unchanged rank is an upper bound.",
+  "candidate_count": 48,
+  "equal_boxes_per_candidate": 49,
+  "inputs": {
+    "artifacts/local/elliptic-curves/det1092-bisection-orbit-holdout-v6/ledger.json": "9538ca32ecbeffea523934bcc600d5bb809eff894b5790dac04a5252e3fc011b",
+    "artifacts/local/elliptic-curves/det1092-bisection-orbit-holdout-v6/protocol.json": "d253ad8a8d0f0ae5423c602e82fa44153528d65a4320f841ba8d4037960b23db",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/ledger.json": "ab7287eaf2589948ad5569d29f0a35e4ab64eb3e9c93cb0c22bbcfee76405177"
+  },
+  "old_policy": {
+    "completed_boxes": 2352,
+    "gain_count": 0,
+    "gain_rate": "0/48",
+    "name": "2048-SHA-parity then top-49 specialized norms"
+  },
+  "schema": "elliptic-curves.det1092-bisection-orbit-holdout-comparison.v1",
+  "status": "PASS_TERMINAL_MATCHED_COMPARISON"
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "rank-jump.curve302-square-half-ideal-constructor-protocol.v1",
+  "endpoint": "Construct one strict Kummer class outside the marked generic M17 subgroup by principalizing the square of an equation-defined good-prime half ideal.",
+  "inputs": "Only the E302 cubic, complete S, maximal-order data and generic Kummer classes from the frozen constructor arithmetic. The M24/public point data are forbidden until a later post-construction validator.",
+  "method": "Take the first twenty rational good primes admitting a degree-one prime of K and choose its first deterministic prime ideal. Enumerate every nonempty subset J in binary-mask order. Test I=J^2 using PARI idealred; I is accepted only when its reduced ideal is O_K and the returned multiplier verifies I=(alpha). Reject rational-square classes. Impose the exact strict local condition after a generic correction and require a fixed good-prime character outside the generic span.",
+  "bounds": {
+    "half_ideal_primes": 20,
+    "prime_search_bound": 1000,
+    "page_masks": 65536,
+    "worker_seconds": 180,
+    "pari_stack_bytes": 268435456,
+    "proof_prime_bound": 2003,
+    "workers": 1,
+    "elliptic_point_searches": 0,
+    "new_parameters": 0,
+    "class_group_completions": 0
+  },
+  "verification": "Each reported candidate carries the exact half ideal, its square, the principal generator, norm-square check, all strict local signatures, generic correction and an independent fixed-good-prime character witness. A relation or a strict class is not a rational point; only a later cover solver and an M24 post-hoc validator may prove rank growth.",
+  "failure_semantics": "Completion without a candidate closes only this finite deterministic half-ideal family. It is not a class-group computation, class-group bound, Selmer bound, Sha statement, or rank conclusion."
+}

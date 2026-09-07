@@ -1,0 +1,117 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_strict_constructor_arithmetic_v1.json": "2764439bcd7cec13d7f271f4b3e6d0d8e666d3a4083b7748da791e56b20a5446",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/rank-jump/CURVE302_SQUARE_HALF_IDEAL_CONSTRUCTOR_PROTOCOL.json": "3aed80a537a781897933553cf555a335884ad924da97f2ed34ccafb2b3e01637",
+    "elliptic-curves/rank-jump/curve302_square_half_ideal_constructor.py": "d4a50704a7d6ffd6957d95115c9e2a491d10793b13c6b00e9ec21c357c9ba1d7"
+  },
+  "boundary": "Completion without a candidate closes only this finite deterministic half-ideal family. It is not a class-group computation, class-group bound, Selmer bound, Sha statement, or rank conclusion.",
+  "candidate_count": 0,
+  "positive_endpoint": "NOT_REACHED",
+  "schema": "rank-jump.curve302-square-half-ideal-constructor.v1",
+  "status": "PASS",
+  "strict_class_candidates": [],
+  "targets": [
+    {
+      "hnf": "[17, 11, 12; 0, 1, 0; 0, 0, 1]",
+      "p": 17,
+      "prime_index": 0
+    },
+    {
+      "hnf": "[47, 16, 20; 0, 1, 0; 0, 0, 1]",
+      "p": 47,
+      "prime_index": 0
+    },
+    {
+      "hnf": "[53, 51, 41; 0, 1, 0; 0, 0, 1]",
+      "p": 53,
+      "prime_index": 0
+    },
+    {
+      "hnf": "[61, 35, 11; 0, 1, 0; 0, 0, 1]",
+      "p": 61,
+      "prime_index": 0
+    },
+    {
+      "hnf": "[67, 26, 9; 0, 1, 0; 0, 0, 1]",
+      "p": 67,
+      "prime_index": 0
+    },
+    {
+      "hnf": "[71, 48, 36; 0, 1, 0; 0, 0, 1]",
+      "p": 71,
+      "prime_index": 0
+    },
+    {
+      "hnf": "[79, 27, 16; 0, 1, 0; 0, 0, 1]",
+      "p": 79,
+      "prime_index": 0
+    },
+    {
+      "hnf": "[83, 4, 47; 0, 1, 0; 0, 0, 1]",
+      "p": 83,
+      "prime_index": 0
+    },
+    {
+      "hnf": "[89, 1, 72; 0, 1, 0; 0, 0, 1]",
+      "p": 89,
+      "prime_index": 0
+    },
+    {
+      "hnf": "[101, 25, 75; 0, 1, 0; 0, 0, 1]",
+      "p": 101,
+      "prime_index": 0
+    },
+    {
+      "hnf": "[107, 103, 76; 0, 1, 0; 0, 0, 1]",
+      "p": 107,
+      "prime_index": 0
+    },
+    {
+      "hnf": "[113, 68, 13; 0, 1, 0; 0, 0, 1]",
+      "p": 113,
+      "prime_index": 0
+    },
+    {
+      "hnf": "[127, 85, 118; 0, 1, 0; 0, 0, 1]",
+      "p": 127,
+      "prime_index": 0
+    },
+    {
+      "hnf": "[137, 76, 129; 0, 1, 0; 0, 0, 1]",
+      "p": 137,
+      "prime_index": 0
+    },
+    {
+      "hnf": "[149, 57, 109; 0, 1, 0; 0, 0, 1]",
+      "p": 149,
+      "prime_index": 0
+    },
+    {
+      "hnf": "[179, 7, 137; 0, 1, 0; 0, 0, 1]",
+      "p": 179,
+      "prime_index": 0
+    },
+    {
+      "hnf": "[191, 1, 147; 0, 1, 0; 0, 0, 1]",
+      "p": 191,
+      "prime_index": 0
+    },
+    {
+      "hnf": "[197, 162, 142; 0, 1, 0; 0, 0, 1]",
+      "p": 197,
+      "prime_index": 0
+    },
+    {
+      "hnf": "[211, 55, 107; 0, 1, 0; 0, 0, 1]",
+      "p": 211,
+      "prime_index": 0
+    },
+    {
+      "hnf": "[229, 118, 213; 0, 1, 0; 0, 0, 1]",
+      "p": 229,
+      "prime_index": 0
+    }
+  ],
+  "tested_subset_count": "1048575"
+}

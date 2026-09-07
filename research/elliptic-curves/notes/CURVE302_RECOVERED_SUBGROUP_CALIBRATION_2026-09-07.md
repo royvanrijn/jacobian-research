@@ -63,6 +63,11 @@ The successful policy has been deployed in the
 Its source roster, parent inputs and calibration gate are frozen. Public points
 and the known302 address do not choose prospective parameters or centres.
 
+A separate [complete generic-parity geometry audit](CURVE302_COMPLETE_GENERIC_PARITY_2026-09-07.md)
+now checks all131071 original subgroup classes and prepares48 previously
+unselected charts among its top49. This has no point outcome yet and does not
+change the successful policy already deployed prospectively.
+
 Replay from the research directory:
 
 ```sh

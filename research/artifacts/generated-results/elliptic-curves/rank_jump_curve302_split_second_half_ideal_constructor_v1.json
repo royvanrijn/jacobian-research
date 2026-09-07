@@ -1,0 +1,118 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_strict_constructor_arithmetic_v1.json": "2764439bcd7cec13d7f271f4b3e6d0d8e666d3a4083b7748da791e56b20a5446",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/rank-jump/CURVE302_SPLIT_SECOND_HALF_IDEAL_CONSTRUCTOR_PROTOCOL.json": "21de7b44183ab18264c8f5206536fd41a8f2b7a60e7d8a4d7b39c2576b6ae704",
+    "elliptic-curves/rank-jump/curve302_split_second_half_ideal_constructor.py": "e5767550740e32f5fcc37005d51f17216b8208e80f0c3fb5b4f808e4d03d6cd3",
+    "elliptic-curves/rank-jump/curve302_square_half_ideal_constructor.py": "d4a50704a7d6ffd6957d95115c9e2a491d10793b13c6b00e9ec21c357c9ba1d7"
+  },
+  "boundary": "A completed negative result closes only this second-factor finite family. It supplies no class-group, Selmer, Sha or rank bound. Any positive strict class still requires post-hoc M24 independence, an independently solved cover and a point-rank certificate.",
+  "candidate_count": 0,
+  "positive_endpoint": "NOT_REACHED",
+  "schema": "rank-jump.curve302-split-second-half-ideal-constructor.v1",
+  "status": "PASS",
+  "strict_class_candidates": [],
+  "targets": [
+    {
+      "hnf": "[113, 72, 73; 0, 1, 0; 0, 0, 1]",
+      "p": 113,
+      "prime_index": 1
+    },
+    {
+      "hnf": "[229, 45, 135; 0, 1, 0; 0, 0, 1]",
+      "p": 229,
+      "prime_index": 1
+    },
+    {
+      "hnf": "[241, 6, 75; 0, 1, 0; 0, 0, 1]",
+      "p": 241,
+      "prime_index": 1
+    },
+    {
+      "hnf": "[263, 145, 147; 0, 1, 0; 0, 0, 1]",
+      "p": 263,
+      "prime_index": 1
+    },
+    {
+      "hnf": "[281, 34, 273; 0, 1, 0; 0, 0, 1]",
+      "p": 281,
+      "prime_index": 1
+    },
+    {
+      "hnf": "[283, 237, 197; 0, 1, 0; 0, 0, 1]",
+      "p": 283,
+      "prime_index": 1
+    },
+    {
+      "hnf": "[337, 32, 107; 0, 1, 0; 0, 0, 1]",
+      "p": 337,
+      "prime_index": 1
+    },
+    {
+      "hnf": "[347, 13, 1; 0, 1, 0; 0, 0, 1]",
+      "p": 347,
+      "prime_index": 1
+    },
+    {
+      "hnf": "[373, 353, 118; 0, 1, 0; 0, 0, 1]",
+      "p": 373,
+      "prime_index": 1
+    },
+    {
+      "hnf": "[389, 371, 360; 0, 1, 0; 0, 0, 1]",
+      "p": 389,
+      "prime_index": 1
+    },
+    {
+      "hnf": "[467, 401, 68; 0, 1, 0; 0, 0, 1]",
+      "p": 467,
+      "prime_index": 1
+    },
+    {
+      "hnf": "[491, 399, 375; 0, 1, 0; 0, 0, 1]",
+      "p": 491,
+      "prime_index": 1
+    },
+    {
+      "hnf": "[541, 515, 28; 0, 1, 0; 0, 0, 1]",
+      "p": 541,
+      "prime_index": 1
+    },
+    {
+      "hnf": "[601, 0, 41; 0, 1, 0; 0, 0, 1]",
+      "p": 601,
+      "prime_index": 1
+    },
+    {
+      "hnf": "[607, 597, 23; 0, 1, 0; 0, 0, 1]",
+      "p": 607,
+      "prime_index": 1
+    },
+    {
+      "hnf": "[617, 554, 104; 0, 1, 0; 0, 0, 1]",
+      "p": 617,
+      "prime_index": 1
+    },
+    {
+      "hnf": "[653, 531, 20; 0, 1, 0; 0, 0, 1]",
+      "p": 653,
+      "prime_index": 1
+    },
+    {
+      "hnf": "[701, 443, 236; 0, 1, 0; 0, 0, 1]",
+      "p": 701,
+      "prime_index": 1
+    },
+    {
+      "hnf": "[709, 628, 225; 0, 1, 0; 0, 0, 1]",
+      "p": 709,
+      "prime_index": 1
+    },
+    {
+      "hnf": "[751, 718, 509; 0, 1, 0; 0, 0, 1]",
+      "p": 751,
+      "prime_index": 1
+    }
+  ],
+  "tested_subset_count": "1048575"
+}

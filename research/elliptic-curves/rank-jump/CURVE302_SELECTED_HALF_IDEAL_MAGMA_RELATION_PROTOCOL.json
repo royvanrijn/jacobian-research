@@ -1,0 +1,15 @@
+{
+  "schema": "rank-jump.curve302-selected-half-ideal-magma-relation-protocol.v1",
+  "endpoint": "Compute the class-coordinate relation lattice for exactly the twenty frozen E302 degree-one half ideals, then test short lattice representatives for a strict class using equation/S/generic M17 only.",
+  "inputs": "The completed first-20 frozen target list and the E302 equation/S/generic-M17 arithmetic. Public E302 points, M24 and all public strict witnesses are excluded.",
+  "method": "An independent class-group engine returns finite-abelian class coordinates of the exact selected prime ideals. Locally replay the lattice L={e in Z^20: 2 sum e_i[P_i]=0}; its F2 image is the requested principal-square relation space. Test only an LLL-reduced basis of L, not binary subsets of the twenty primes. Each accepted relation is independently replayed as J^2=(alpha), followed by strict-local generic correction and generic-character exclusion.",
+  "bounds": {
+    "selected_half_ideals": 20,
+    "prime_set_expansion": 0,
+    "elliptic_point_searches": 0,
+    "remote_request_timeout_seconds": 240,
+    "relation_representatives": "LLL-reduced full lattice basis only",
+    "new_parameters": 0
+  },
+  "failure_semantics": "A transport failure, timeout or unverified external class-coordinate output is UNKNOWN. An exact replay failure rejects only that proposed relation. Testing an LLL basis without a strict candidate does not close the full relation lattice. A strict class remains only an arithmetic class until the separate post-hoc M24 test and witness-hidden cover solve certify an independent rational point."
+}

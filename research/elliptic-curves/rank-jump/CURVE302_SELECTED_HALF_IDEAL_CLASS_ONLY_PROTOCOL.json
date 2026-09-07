@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.curve302-selected-half-ideal-class-only-protocol.v1",
+  "endpoint": "Obtain a class-quotient relation lattice for the exact frozen first twenty E302 half ideals without computing the unit/regulator layer.",
+  "inputs": "The completed first-20 target list, E302 equation/S/maximal order, and generic M17 arithmetic. Public points, M24 and point-dependent selection history are excluded.",
+  "method": "Run PARI bnfinit(...,0) on the fixed field. From its selected-prime class coordinates construct both R={e in Z^20: sum e_i[P_i]=0} and T={e in Z^20: 2 sum e_i[P_i]=0}; use HNF/SNF-kernel coordinates and LLL bases. First exact-principalize each nonzero-parity short vector from R as a principal multiplier, without calling it a Kummer class. Then exact-principalize J(e)^2 for each nonzero-parity short vector from T; only those square-ideal identities enter strict local correction and generic-character exclusion. Rank candidates by support, exponent size, and generator size rather than accepting the first one.",
+  "bounds": {"selected_half_ideals": 20, "prime_set_expansion": 0, "pari_stack_bytes": 4294967296, "compact_relation_tech": "[0.03,0.03,-1]", "workers": 1, "elliptic_point_searches": 0, "new_parameters": 0},
+  "failure_semantics": "No BNF return is UNKNOWN. A class-only BNF is at most a quotient-coordinate guide; every reported relation and every square-ideal candidate is replayed exactly. A direct principal relation with odd valuation at a selected good prime is a multiplier, not an unramified Kummer representative. A miss among LLL bases does not close either full lattice. A strict class is not a rational point until post-hoc M24 exclusion and a witness-hidden cover solve are complete."
+}

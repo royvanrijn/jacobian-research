@@ -1,0 +1,93 @@
+{
+  "basis_randomization": {
+    "canonical_norm_transport_preserved": true,
+    "consequence": "Do not claim intrinsic basis invariance for coordinate-hashed sampling. Replace the schedule by canonical parity addressing before a next deployment.",
+    "policy_is_basis_invariant": false,
+    "selected_coset_intersection_size": 21
+  },
+  "claim_boundary": "The new three-fibre low-shell deployment is target-blind and complete. The two matched existing exposures are terminal negative controls, not inputs to its selection or execution. No bounded miss is an upper rank bound.",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/a1_mw16_target_free_parameter_search_h300_v1.json": "c4c17e1a837fe851ac0a878139621be40bc490beb1b00c169ed9755c50aa9586",
+    "artifacts/generated-results/elliptic-curves/det1092_low_shell_basis_randomization_v1.json": "3b1c9d7b8a277b2875082a31cebde88ce256b42017b789c6477ad0ca1878615b",
+    "artifacts/local/elliptic-curves/det1092-low-shell-cascade-v3/ledger.json": "d2d3844b5d00bcf76eba724d03afcfc3076d72ece3c1b6641c873003bb5316f8",
+    "artifacts/local/elliptic-curves/det1092-low-shell-cascade-v3/protocol.json": "02358e9c255c0d8463606506898c2b71a073e8a7207635b363d95e63df4dd258",
+    "artifacts/local/elliptic-curves/det1092-low-shell-cascade-v3/scale-0131232/wave-01/certification-ledger.json": "9b5fc3cb09335e2ed1aa240845c7f714681ddf31f124c4ecd8f391c4a30fea51",
+    "artifacts/local/elliptic-curves/det1092-low-shell-cascade-v3/scale-0131232/wave-01/maps.json": "914d84af6607824fed9bdd6f80c73b87db77cac3c8e0e7a613955c00e84d250c",
+    "artifacts/local/elliptic-curves/det1092-low-shell-cascade-v3/scale-0131232/wave-01/result.json": "1d01d397bfbc32317edcb5663d075eb5e8b17afb371d92d87e8fc3f8998ec4e2",
+    "artifacts/local/elliptic-curves/det1092-low-shell-cascade-v3/scale-0185392/wave-01/certification-ledger.json": "1eb47499639c0fc68ab0c7c25040bb58349a6c207425c0685cfed3eab1a86492",
+    "artifacts/local/elliptic-curves/det1092-low-shell-cascade-v3/scale-0185392/wave-01/maps.json": "d3ce6be52779811172d030d4b4699f931f2c880341b568c9930b8556af940c11",
+    "artifacts/local/elliptic-curves/det1092-low-shell-cascade-v3/scale-0185392/wave-01/result.json": "8e3f0852f4e39c9e1a673b2051566c94258b98c2cf66e7affa238d8162fb5a37",
+    "artifacts/local/elliptic-curves/det1092-low-shell-cascade-v3/scale-0213106/wave-01/certification-ledger.json": "ccd33f4db12c47eb6115256f6a3c5561a73ab6833f45e05f676ff697559c6f93",
+    "artifacts/local/elliptic-curves/det1092-low-shell-cascade-v3/scale-0213106/wave-01/maps.json": "c9789b37296ecd420ae2e65a3c0e80a098d90702efd74fddcae88db82caf8a11",
+    "artifacts/local/elliptic-curves/det1092-low-shell-cascade-v3/scale-0213106/wave-01/result.json": "f4fcddef637397aa0457ceb67b90668a2d39c87973a8c91f4fc2404e896a1757",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/ledger.json": "ab7287eaf2589948ad5569d29f0a35e4ab64eb3e9c93cb0c22bbcfee76405177",
+    "elliptic-curves/cas/report_det1092_low_shell_cascade.py": "b1f4fec18d78bf9ffc3cf2031ce98c36cce87e9763da55a3a960c3563801f564"
+  },
+  "matched_existing_parent_exposures": {
+    "a1_mw16_target_free_104": {
+      "adaptive_waves_entered": 0,
+      "completed_candidates": 104,
+      "generic_rank": 16,
+      "positive_candidates": 0
+    },
+    "det1092_deep_centre_48": {
+      "adaptive_waves_entered": 0,
+      "completed_boxes": 2352,
+      "initial_rank": 17,
+      "terminal_rank_lower_bound": 17
+    }
+  },
+  "new_low_shell_deployment": {
+    "complete_negative_exposure": true,
+    "frozen_policy": "At every wave recompute 2048 SHA-derived nonzero parities in the current certified subgroup, retain the 49 smallest exact rounded canonical-height coset representatives (ties by parity), map all 49 before point execution, and continue only after an independently certified rank gain. Later waves require a parity nonzero in a newly added coordinate. Stop at no gain, rank at least32, or five waves.",
+    "rows": [
+      {
+        "completed_boxes": 49,
+        "id": "scale-0131232",
+        "initial_rank": 17,
+        "mod2_cloud": "artifacts/generated-results/elliptic-curves/det1092_low_shell_v3_scale_0131232_wave_01_mod2_v1.json",
+        "mod2_mod3_mod5": [
+          17,
+          17,
+          17
+        ],
+        "score_stratum": "strong",
+        "stop_reason": "NO_CERTIFIED_GAIN",
+        "terminal_rank_lower_bound": 17
+      },
+      {
+        "completed_boxes": 49,
+        "id": "scale-0185392",
+        "initial_rank": 17,
+        "mod2_cloud": "artifacts/generated-results/elliptic-curves/det1092_low_shell_v3_scale_0185392_wave_01_mod2_v1.json",
+        "mod2_mod3_mod5": [
+          17,
+          17,
+          17
+        ],
+        "score_stratum": "moderate",
+        "stop_reason": "NO_CERTIFIED_GAIN",
+        "terminal_rank_lower_bound": 17
+      },
+      {
+        "completed_boxes": 49,
+        "id": "scale-0213106",
+        "initial_rank": 17,
+        "mod2_cloud": "artifacts/generated-results/elliptic-curves/det1092_low_shell_v3_scale_0213106_wave_01_mod2_v1.json",
+        "mod2_mod3_mod5": [
+          17,
+          17,
+          17
+        ],
+        "score_stratum": "lower_fixed",
+        "stop_reason": "NO_CERTIFIED_GAIN",
+        "terminal_rank_lower_bound": 17
+      }
+    ],
+    "selection_boundary": "Exactly one maximum frozen score row in each of the strong, moderate, and lower-fixed strata. The source contains no catalogue rank, exceptional-point coordinate, or prior point outcome. No outcome-dependent replacement."
+  },
+  "rank32_status": "No certified gain occurred, so no subgroup enlargement or later wave was authorized. Rank at least 32 remains open.",
+  "reproducing_command": "python3 elliptic-curves/cas/report_det1092_low_shell_cascade.py --check",
+  "schema": "elliptic-curves.det1092-low-shell-cascade-report.v1",
+  "status": "PASS_COMPLETE_TARGET_BLIND_LOW_SHELL_DEPLOYMENT"
+}

@@ -1,0 +1,25 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_square_half_ideal_constructor_v1.json": "886783130899347f5d584d59f68c0127d0b0d0dcf9d9dc0c0135ec48df96510b",
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_strict_constructor_arithmetic_v1.json": "2764439bcd7cec13d7f271f4b3e6d0d8e666d3a4083b7748da791e56b20a5446",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/rank-jump/CURVE302_SELECTED_HALF_IDEAL_REDUCED_RELATION_PROTOCOL.json": "8c5175507c1491c4dab7036f93da1dc314756c562f2390fb68e8a4060c6a8e49",
+    "elliptic-curves/rank-jump/curve302_selected_half_ideal_reduced_relation.py": "2e1332f6ec76ebc1e45064eca129e9fb161b4b1fa986b29fe9c7d31f231e6d26",
+    "elliptic-curves/rank-jump/curve302_square_half_ideal_constructor.py": "d4a50704a7d6ffd6957d95115c9e2a491d10793b13c6b00e9ec21c357c9ba1d7"
+  },
+  "boundary": "The finite short relation collection is a discovery procedure, not a complete class-group computation. A missing collision or strict candidate does not exclude longer relations. A collision is not promoted without an exact principal-ideal identity. A strict class is not a rational point until separate post-hoc M24 exclusion and a witness-hidden cover solve complete.",
+  "direct_relation_hnf_basis": [],
+  "direct_relation_lll_basis": [],
+  "exact_direct_relation_count": 0,
+  "exact_direct_relations": [],
+  "exact_principal_square_candidates": [],
+  "half_relation_lattice_basis": [],
+  "half_relation_lll_basis": [],
+  "positive_endpoint": "NOT_REACHED",
+  "preferred_strict_class_candidate": null,
+  "rejected_square_candidates": [],
+  "schema": "rank-jump.curve302-selected-half-ideal-reduced-relation.v1",
+  "state_count": 11520,
+  "status": "PASS",
+  "strict_class_candidates": []
+}

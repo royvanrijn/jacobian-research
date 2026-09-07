@@ -1,0 +1,27 @@
+{
+  "schema": "elliptic-curves.curve302-strict-cover-hidden-benchmark-protocol.v1",
+  "purpose": "A post-search, witness-hidden calibration of the degree-four covering solver. This benchmark does not select a new class or constitute a point-search chart wave.",
+  "baseline": "M24",
+  "classes": {
+    "recovered_control": "The eight elements of H = M24 intersect ker(loc_S), where dim_F2(H)=3.",
+    "missing_strict_coset": "R + H, where R is the fixed displayed strict word P4+P12+P18+P23+P27, known post hoc to lie outside M24."
+  },
+  "solver": {
+    "engine": "Magma GenusOneModel Minimise/Reduce followed by PointsQI",
+    "pointsqi_height": 10000000,
+    "only_one": true,
+    "remote_request_timeout_seconds": 50,
+    "subprocess_timeout_seconds": 58
+  },
+  "blinding": [
+    "The solver subprocess receives a sealed JSON file containing only a token and two integral quadric equations.",
+    "It receives neither alpha, a public word, a point coordinate, a coset label, nor an expected witness.",
+    "Only after the solver terminates does the parent process map a returned cover point to E302 and test its Kummer character against M24."
+  ],
+  "advance_gate": "PASS requires at least one nonzero recovered-control representative and at least one missing-coset representative to yield an exact rational cover point. Bounded misses, timeouts, or a trivial-cover hit alone do not pass the gate.",
+  "boundaries": [
+    "Each cover is known retrospectively to be soluble, but no witness is passed to the solver.",
+    "A completed bounded solver run that finds no point is not an obstruction or a Sha certificate.",
+    "A successful missing-coset calibration is not counted as a newly recovered direction: its strict word is a forbidden prospective input for the next construction phase."
+  ]
+}

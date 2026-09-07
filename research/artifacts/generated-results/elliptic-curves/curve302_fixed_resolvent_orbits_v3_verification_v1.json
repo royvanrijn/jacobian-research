@@ -1,0 +1,20 @@
+{
+  "accepted_strict_characters": 0,
+  "associative_quartic_orders": 56,
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/curve302_fixed_resolvent_orbits_v3.json": "2e56633a04791cfa4a37235ae16c8a6b0f95c88e863418328ddd213148b432f6",
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_strict_constructor_arithmetic_v1.json": "2764439bcd7cec13d7f271f4b3e6d0d8e666d3a4083b7748da791e56b20a5446",
+    "elliptic-curves/cas/CURVE302_FIXED_RESOLVENT_ORBIT_PROTOCOL_V3.json": "d46af986fd031325e5183c8a54311c8dbfc1382bd872801ad834e02ee8d28937",
+    "elliptic-curves/cas/curve302_fixed_resolvent_orbits_v3.sage": "e77bd83cfaa2119aabf424bfcb2f6455f31334df800f9db63a9bd43e49d48c04",
+    "elliptic-curves/cas/verify_curve302_fixed_resolvent_orbits_v3.sage": "bda740a6140916b1707840a00d5fc0ac6cebc09d43628894c9c08ca32adea7d2"
+  },
+  "boundary": "The verification proves only that this finite retained slice lies in the nonfield locus. It supplies no class-group or rank conclusion.",
+  "explicit_nonzero_zero_divisor_certificates": 56,
+  "maximal_binary_cubic_discriminant": "148151006937477335436888985219857355877893619411164996244607656867074308087083576658270682361256762502621989271112905529033440639729791702026879115800",
+  "maximal_order_index_positive": "9923258571576383661788160",
+  "pairs_with_exact_fixed_resolvent": 56,
+  "primitive_pairs": 56,
+  "schema": "elliptic-curves.curve302-fixed-resolvent-orbits-v3-verification.v1",
+  "sealed_cover_jobs": 0,
+  "status": "PASS"
+}

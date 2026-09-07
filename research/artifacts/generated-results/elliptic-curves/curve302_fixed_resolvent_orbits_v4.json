@@ -1,0 +1,2471 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_quotient_local_filtration_v1.json": "001e12e65bd41bd8ecbfddce42953b41c7365060e6678ac0978a227bb9c1b715",
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_maximal_norm_form_v1.json": "0cd0bd76d6640325ca3e0ba4f9884ddac96a204c2b3a7992dc74227895219440",
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_strict_constructor_arithmetic_v1.json": "2764439bcd7cec13d7f271f4b3e6d0d8e666d3a4083b7748da791e56b20a5446",
+    "elliptic-curves/cas/CURVE302_FIXED_RESOLVENT_ORBIT_PROTOCOL_V3.json": "d46af986fd031325e5183c8a54311c8dbfc1382bd872801ad834e02ee8d28937",
+    "elliptic-curves/cas/benchmark_curve302_strict_covers_hidden.sage": "bd60c1247946ba200876d4fa215eb96d8ca3dabb34690859095ed65cf4540137",
+    "elliptic-curves/cas/curve302_fixed_resolvent_orbits.sage": "85f96a8a62848854889b6f58e522f772b5e95ea93e9eba0e5d87dac273a63a8e",
+    "elliptic-curves/cas/curve302_fixed_resolvent_orbits_v2.sage": "3e3f73d0110366c04c6cfe5328f6669d759d91990369bec5902f06067a5c098f",
+    "elliptic-curves/cas/curve302_fixed_resolvent_orbits_v3.sage": "e77bd83cfaa2119aabf424bfcb2f6455f31334df800f9db63a9bd43e49d48c04",
+    "elliptic-curves/cas/curve302_fixed_resolvent_orbits_v4.sage": "7c0c0b7d0db276862cd4df32fc29f9278cabb744bdd6a1618c73bc7c0b4de07a",
+    "elliptic-curves/cas/icarm_curve302.py": "7b3c5f92f92278b7f0823114ef8e9967a9e8c867f1435238a2521938380ec73f"
+  },
+  "boundary": "Neither an enumeration count nor a bounded null result is a class-rank, Selmer-rank, rational-point, or Mordell-Weil-rank result.",
+  "bounded_search": {
+    "accepted_count": 0,
+    "completeness": "NOT_CLAIMED",
+    "corrected_determinant_identity": "det(x*A-y*B)=Fmax/4",
+    "declared_determinantal_attempts": 3969,
+    "distinct_primitive_pairs": 56,
+    "normalization": {
+      "pair_convention": "Integral ternary quadratic-form coefficients are [x1^2,x2^2,x3^2,x1*x2,x2*x3,x1*x3]; Gram off-diagonals are half these coefficients. Every retained pair must satisfy 4*det(x*A-y*B)=Fmax exactly.",
+      "reduction_boundary": "The chart is normalized and bounded but not a fundamental domain; no completeness is asserted. Duplicate integral pairs are removed by their twelve form coefficients.",
+      "slice": "Start from the universal M11=0 determinantal pair and swap its first two coordinates. With L=M11, m=M12, n=M13 and base r=M22,s=M23, enumerate R=r_x*x+r_y*y and S=s_x*x+s_y*y with coefficients in [-1,1]. Set r'=r+R,s'=s+S and retain the pair exactly when t'=(Fmax/4+L*s'^2-2*m*n*s'+n^2*r')/(L*r'-m^2) is degree one with integral-form parity. This is a finite direct determinant solve, not a GL3(Q) move of a seed."
+    },
+    "raw_pair_candidates": [
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189856",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-6",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571139",
+          "0",
+          "-1",
+          "6"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -3,
+          "p_y": -3,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189854",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-6",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571139",
+          "0",
+          "-1",
+          "4"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -3,
+          "p_y": -2,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189852",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-6",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571139",
+          "0",
+          "-1",
+          "2"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -3,
+          "p_y": -1,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189850",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-6",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571151",
+          "0",
+          "1",
+          "0"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -3,
+          "p_y": 0,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": -1
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189850",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-6",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571139",
+          "0",
+          "-1",
+          "0"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -3,
+          "p_y": 0,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189848",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-6",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571139",
+          "0",
+          "-1",
+          "-2"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -3,
+          "p_y": 1,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189846",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-6",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571139",
+          "0",
+          "-1",
+          "-4"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -3,
+          "p_y": 2,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189844",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-6",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571139",
+          "0",
+          "-1",
+          "-6"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -3,
+          "p_y": 3,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189856",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-4",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571141",
+          "0",
+          "-1",
+          "6"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -2,
+          "p_y": -3,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189854",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-4",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571141",
+          "0",
+          "-1",
+          "4"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -2,
+          "p_y": -2,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189852",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-4",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571141",
+          "0",
+          "-1",
+          "2"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -2,
+          "p_y": -1,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189850",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-4",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571149",
+          "0",
+          "1",
+          "0"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -2,
+          "p_y": 0,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": -1
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189850",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-4",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571141",
+          "0",
+          "-1",
+          "0"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -2,
+          "p_y": 0,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189848",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-4",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571141",
+          "0",
+          "-1",
+          "-2"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -2,
+          "p_y": 1,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189846",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-4",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571141",
+          "0",
+          "-1",
+          "-4"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -2,
+          "p_y": 2,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189844",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-4",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571141",
+          "0",
+          "-1",
+          "-6"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -2,
+          "p_y": 3,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189856",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-2",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571143",
+          "0",
+          "-1",
+          "6"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -1,
+          "p_y": -3,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189854",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-2",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571143",
+          "0",
+          "-1",
+          "4"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -1,
+          "p_y": -2,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189852",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-2",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571143",
+          "0",
+          "-1",
+          "2"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -1,
+          "p_y": -1,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189850",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-2",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571147",
+          "0",
+          "1",
+          "0"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -1,
+          "p_y": 0,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": -1
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189850",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-2",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571143",
+          "0",
+          "-1",
+          "0"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -1,
+          "p_y": 0,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189848",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-2",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571143",
+          "0",
+          "-1",
+          "-2"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -1,
+          "p_y": 1,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189846",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-2",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571143",
+          "0",
+          "-1",
+          "-4"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -1,
+          "p_y": 2,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189844",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "-2",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571143",
+          "0",
+          "-1",
+          "-6"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": -1,
+          "p_y": 3,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189856",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "0",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571145",
+          "0",
+          "-1",
+          "6"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 0,
+          "p_y": -3,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189854",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "0",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571145",
+          "0",
+          "-1",
+          "4"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 0,
+          "p_y": -2,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189852",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "0",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571145",
+          "0",
+          "-1",
+          "2"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 0,
+          "p_y": -1,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189850",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "0",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571145",
+          "0",
+          "1",
+          "0"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 0,
+          "p_y": 0,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": -1
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189850",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "0",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571145",
+          "0",
+          "-1",
+          "0"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 0,
+          "p_y": 0,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189848",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "0",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571145",
+          "0",
+          "-1",
+          "-2"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 0,
+          "p_y": 1,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189846",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "0",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571145",
+          "0",
+          "-1",
+          "-4"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 0,
+          "p_y": 2,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189844",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "0",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571145",
+          "0",
+          "-1",
+          "-6"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 0,
+          "p_y": 3,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189856",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "2",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571147",
+          "0",
+          "-1",
+          "6"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 1,
+          "p_y": -3,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189854",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "2",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571147",
+          "0",
+          "-1",
+          "4"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 1,
+          "p_y": -2,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189852",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "2",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571147",
+          "0",
+          "-1",
+          "2"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 1,
+          "p_y": -1,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189850",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "2",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571143",
+          "0",
+          "1",
+          "0"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 1,
+          "p_y": 0,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": -1
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189850",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "2",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571147",
+          "0",
+          "-1",
+          "0"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 1,
+          "p_y": 0,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189848",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "2",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571147",
+          "0",
+          "-1",
+          "-2"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 1,
+          "p_y": 1,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189846",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "2",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571147",
+          "0",
+          "-1",
+          "-4"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 1,
+          "p_y": 2,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189844",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "2",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571147",
+          "0",
+          "-1",
+          "-6"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 1,
+          "p_y": 3,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189856",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "4",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571149",
+          "0",
+          "-1",
+          "6"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 2,
+          "p_y": -3,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189854",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "4",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571149",
+          "0",
+          "-1",
+          "4"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 2,
+          "p_y": -2,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189852",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "4",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571149",
+          "0",
+          "-1",
+          "2"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 2,
+          "p_y": -1,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189850",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "4",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571141",
+          "0",
+          "1",
+          "0"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 2,
+          "p_y": 0,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": -1
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189850",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "4",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571149",
+          "0",
+          "-1",
+          "0"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 2,
+          "p_y": 0,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189848",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "4",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571149",
+          "0",
+          "-1",
+          "-2"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 2,
+          "p_y": 1,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189846",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "4",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571149",
+          "0",
+          "-1",
+          "-4"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 2,
+          "p_y": 2,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189844",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "4",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571149",
+          "0",
+          "-1",
+          "-6"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 2,
+          "p_y": 3,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189856",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "6",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571151",
+          "0",
+          "-1",
+          "6"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 3,
+          "p_y": -3,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189854",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "6",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571151",
+          "0",
+          "-1",
+          "4"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 3,
+          "p_y": -2,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189852",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "6",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571151",
+          "0",
+          "-1",
+          "2"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 3,
+          "p_y": -1,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189850",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "6",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571139",
+          "0",
+          "1",
+          "0"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 3,
+          "p_y": 0,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": -1
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189850",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "6",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571151",
+          "0",
+          "-1",
+          "0"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 3,
+          "p_y": 0,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189848",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "6",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571151",
+          "0",
+          "-1",
+          "-2"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 3,
+          "p_y": 1,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189846",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "6",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571151",
+          "0",
+          "-1",
+          "-4"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 3,
+          "p_y": 2,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      },
+      {
+        "algebra_probe": {
+          "coordinates": [
+            0,
+            1,
+            0
+          ],
+          "norm": "0",
+          "status": "ZERO_DIVISOR"
+        },
+        "determinant_form_descending": [
+          "-9923258571576383661788160",
+          "-7851180678455372984811918483571145",
+          "869829586504686453875887554455898189850",
+          "76467148428008343737496240497823633059162876309"
+        ],
+        "pair_coefficients": [
+          "-869829586504686453875887554455898189844",
+          "0",
+          "9923258571576383661788160",
+          "1",
+          "0",
+          "6",
+          "76467148428008343737496240497823633059162876309",
+          "0",
+          "-7851180678455372984811918483571151",
+          "0",
+          "-1",
+          "-6"
+        ],
+        "primitive": true,
+        "quartic_ring_associative_integral": true,
+        "slice_parameters": {
+          "p_x": 3,
+          "p_y": 3,
+          "r_x": 0,
+          "r_y": 0,
+          "s_x": 0,
+          "s_y": 0
+        },
+        "status": "REJECTED_ZERO_DIVISOR"
+      }
+    ],
+    "solved_determinantal_pairs_before_deduplication": 56
+  },
+  "extractor_runtime_fix": "Use NumberField(polynomial, name), the Sage-10.9 API, in the dormant classical-resolvent branch.",
+  "maximal_cubic_preflight": {
+    "artifact_crosscheck": "artifacts/generated-results/elliptic-curves/rank_jump_curve302_maximal_norm_form_v1.json",
+    "assertion": "The determinant fibre below is attached to this maximal cubic ring, never to the nonmaximal displayed cubic polynomial.",
+    "binary_cubic_descending": [
+      "-9923258571576383661788160",
+      "-7851180678455372984811918483571145",
+      "869829586504686453875887554455898189850",
+      "76467148428008343737496240497823633059162876309"
+    ],
+    "binary_cubic_discriminant": "148151006937477335436888985219857355877893619411164996244607656867074308087083576658270682361256762502621989271112905529033440639729791702026879115800",
+    "field_discriminant": "148151006937477335436888985219857355877893619411164996244607656867074308087083576658270682361256762502621989271112905529033440639729791702026879115800",
+    "maximal_order_basis_GP": [
+      "1",
+      "z + 2",
+      "1/9923258571576383661788160*z^2 + 523412045230358198987461232238077/1984651714315276732357632*z - 9920342568454291434415228335071956912274567212886334264499759/7183583497355096832"
+    ],
+    "normal_basis_GP": [
+      "1",
+      "z - 2617060226151790994937306161190380",
+      "1/9923258571576383661788160*z^2 + 523412045230358198987461232238077/1984651714315276732357632*z - 9922425399608666858833151655617070819222129534970628569319215/7183583497355096832"
+    ],
+    "normal_basis_multiplication_table": [
+      [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      [
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "8631543900093371347292749603828346337680844700978976758162176000",
+          "-7851180678455372984811918483571145",
+          "9923258571576383661788160"
+        ],
+        [
+          "758803286082237388470057934407289235872714047484022697313181399840701440",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "758803286082237388470057934407289235872714047484022697313181399840701440",
+          "0",
+          "0"
+        ],
+        [
+          "600357398274558255994330947353473583297742521911145224262925886742295500236503805",
+          "76467148428008343737496240497823633059162876309",
+          "-869829586504686453875887554455898189850"
+        ]
+      ]
+    ],
+    "raw_defining_cubic_ascending": [
+      "35863572573072725712438997689722579989297270955836506038914807628765229483647299767251594888128395600",
+      "-20555644225817083652508762176252556301867322902653588194515587713000",
+      "5",
+      "1"
+    ],
+    "raw_order_index_in_maximal_order": "9923258571576383661788160",
+    "status": "PASS"
+  },
+  "next_action": "STOP_BOUNDED_SLICE_NO_CLASS_CREATED",
+  "protocol": "elliptic-curves/cas/CURVE302_FIXED_RESOLVENT_ORBIT_PROTOCOL_V3.json",
+  "protocol_sha256": "d46af986fd031325e5183c8a54311c8dbfc1382bd872801ad834e02ee8d28937",
+  "schema": "elliptic-curves.curve302-fixed-resolvent-orbits.v4",
+  "status": "BOUNDED_SLICE_NO_ACCEPTED_CHARACTER"
+}

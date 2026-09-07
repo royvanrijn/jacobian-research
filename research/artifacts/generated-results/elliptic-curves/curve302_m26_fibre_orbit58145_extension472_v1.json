@@ -1,0 +1,235 @@
+{
+  "boundary": "This successful execution was target-blind but the rule was retrospectively calibrated. It proves a lower bound for the completed cloud only; it is not a prospective selector validation or exact-rank proof.",
+  "completed_search": {
+    "height": 125000,
+    "mod_2_certified_rank_lower_bound": 27,
+    "mod_3_5_ranks": {
+      "3": 27,
+      "5": 27
+    },
+    "rank_after_exact_map_replay": 26,
+    "rank_after_worker_mod2_admission": 26,
+    "rank_before": 26,
+    "returned_finite_curve_points": [
+      {
+        "x": "1186918353780399449607548731197549975675/49729",
+        "y": "399429162219832078848048389002024072912876036539636224160/11089567"
+      },
+      {
+        "x": "466240870123765086941825377933969334574/18769",
+        "y": "-863872995219790656359275793282044686382813843703244488682/2571353"
+      }
+    ],
+    "search_status": "bounded_search_complete",
+    "seconds_per_chart": 10
+  },
+  "exact_M26_centre": {
+    "M25_parity_mask": 61894383,
+    "base_M17_parity_mask": 28399,
+    "centre_point_short_model": {
+      "x": "117602668956979967323896579103351916225464963596328084874685157809925515/1207889735705040130170269790124553521",
+      "y": "37240837438237685484384962373313158155225930767939733826004754196671844201871491791832224070974027004226080/1327519582496495097628252445563982360637959848937648681"
+    },
+    "coordinate_matrix": [
+      "-340575553753318268410953527438167224/1099040370370915961",
+      "5975947488251495887923619174258894657/1099040370370915961",
+      "1",
+      "-14"
+    ],
+    "generic_degree_two_orbit": {
+      "category": "rational",
+      "degree_two_LLL_minimum_word": [
+        1,
+        0,
+        0,
+        2,
+        -2,
+        1,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        -2
+      ],
+      "degree_two_divisor_class": "2O+4F+phi(w)",
+      "minimum_generic_MW17_norm": 10,
+      "orbit_mask": 58145,
+      "parent_MW17_norm_rechecked": 10,
+      "parent_MW17_representative": [
+        1,
+        1,
+        1,
+        -1,
+        2,
+        1,
+        -1,
+        -1,
+        0,
+        -1,
+        1,
+        1,
+        0,
+        -1,
+        -1,
+        0,
+        -2
+      ]
+    },
+    "new_M25_extension_mask": 472,
+    "reduced_quartic_coefficients_ascending": [
+      "634875663302971313300010256782804601",
+      "709917152591598274502093401632367992",
+      "149335853148599503037835044323235574",
+      "-24413953186335289512181058517989592",
+      "738136043895726384835748328730161"
+    ],
+    "representative": [
+      5,
+      -3,
+      -7,
+      -3,
+      0,
+      -5,
+      1,
+      -3,
+      -2,
+      -3,
+      7,
+      -1,
+      -2,
+      7,
+      5,
+      -2,
+      0,
+      0,
+      -2,
+      0,
+      1,
+      1,
+      0,
+      -1,
+      1,
+      -1
+    ],
+    "selection_rule": "metric-shortest representative in the fixed M26 parity; the stored word is rederived in the Sage geometry stage"
+  },
+  "execution_oracle_audit": {
+    "allowed_inputs": [
+      "artifacts/generated-results/elliptic-curves/curve302_m25_fibre_orbit64677_extension103_mod2_v1.json",
+      "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json",
+      "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_lattice_v1.json",
+      "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv"
+    ],
+    "excluded_from_execution": [
+      "the residual-visibility diagnostics",
+      "all public missing-point coordinates and public rank-31 point lists",
+      "post-search finite-rank outcomes"
+    ],
+    "execution_is_target_blind": true,
+    "geometry_reads": [
+      "artifacts/generated-results/elliptic-curves/curve302_m25_fibre_orbit64677_extension103_mod2_v1.json",
+      "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_lattice_v1.json",
+      "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv",
+      "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json",
+      "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1",
+      "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1/.maps.json.yztx0ty2",
+      "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1/centre.json",
+      "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1/protocol.json",
+      "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1/seed.json"
+    ],
+    "replay_reads": [
+      "artifacts/generated-results/elliptic-curves/curve302_m25_fibre_orbit64677_extension103_mod2_v1.json",
+      "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_lattice_v1.json",
+      "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv",
+      "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json",
+      "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1",
+      "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1/.replay.json.m5lx3u2f",
+      "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1/centre.json",
+      "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1/maps.json",
+      "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1/protocol.json",
+      "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1/result.json",
+      "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1/seed.json"
+    ],
+    "rule_is_retrospectively_calibrated": true,
+    "worker_reads": [
+      "artifacts/generated-results/elliptic-curves/curve302_m25_fibre_orbit64677_extension103_mod2_v1.json",
+      "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_lattice_v1.json",
+      "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv",
+      "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json",
+      "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1",
+      "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1/.result.json.ee6znhes",
+      "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1/centre.json",
+      "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1/maps.json",
+      "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1/protocol.json",
+      "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1/seed.json"
+    ]
+  },
+  "frozen_rule": {
+    "base_M17_parity_mask": 28399,
+    "calibration_status": "retrospectively calibrated; execution-blind",
+    "frozen_M26_extension_mask": 472,
+    "generic_degree_two_orbit_mask": 58145,
+    "minimum_change": "one additional M26 centre/chart; earlier sealed policies remain unmodified",
+    "rule": "fix M17 parity28399 (generic rational norm-ten degree-two orbit58145), extend it by M26 bits472, then select the shortest representative in the rounded specialized M26 metric",
+    "selection_inputs": [
+      "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json",
+      "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_lattice_v1.json",
+      "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv",
+      "artifacts/generated-results/elliptic-curves/curve302_m25_fibre_orbit64677_extension103_mod2_v1.json"
+    ]
+  },
+  "historical_policy_exclusion": {
+    "base_M17_parity": 28399,
+    "later_M22_floor_excludes_M17_supported_base_parity": true,
+    "old_initial_SHA_sample_contains_base_parity": false,
+    "old_initial_selected_centres_contain_base_parity": false
+  },
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_m25_fibre_orbit64677_extension103_mod2_v1.json": "01e3e17b7f03d115f93e23e989e97ccaf0428d6415deb6251eeac66cf386b368",
+    "artifacts/generated-results/elliptic-curves/curve302_m26_fibre_orbit58145_extension472_mod2_v1.json": "178995ca1a03a8633dd1537cbd309f200d1fe33b655237baf50970f7b722d37c",
+    "artifacts/generated-results/elliptic-curves/curve302_m26_fibre_orbit58145_extension472_modl_v1.json": "266c485b4ca768891aad19af9fca7ec3385e2530539f709e521d02f68463d68f",
+    "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_lattice_v1.json": "8f31f069755ff55fbdbded39170688ef491a470467aa3aee57b52368bc9bd260",
+    "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv": "6eabef60743153bad58de5cdc0c49777036991282a362d26ab286722986ae40f",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/curve302-generic17/maps.json": "08831bf89682af7bc3eafe1bb775eeef129f42d1b7c9f4db8e5b859a57f928fa",
+    "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1/centre.json": "d089bc85cc7d555c5230140440055c0fb38f343be2fb84a04747aee61234307d",
+    "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1/certification-ledger.json": "ff8b3a3fa655eb6e85bea42d0fc79b4a778dda63264cde97082ddcbc5395a6e2",
+    "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1/maps.json": "8113faddf1ca3b44fcea08354e7d96e45fdbb03273c56b6d5bba5dcb1087bb24",
+    "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1/replay.json": "2ad8b3f83f961784234c42ef19344fa8b786c11fd61bb2a5cd87cd981b8b3e9b",
+    "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1/result.json": "a8bb210ba3a4b3466fec3d260bdfe03083c92c5f7cfb746989fa297abe799d4b",
+    "artifacts/local/elliptic-curves/curve302-m26-fibre-orbit58145-extension472-v1/seed.json": "1c7ab39be1e94130dd8dbe7d94f109fc146d9f248fa5fc12b14a1979e89e025b"
+  },
+  "reproducing_command": "python3 elliptic-curves/cas/run_curve302_m26_fibre_orbit58145_extension472.py launch",
+  "schema": "elliptic-curves.curve302-m26-fibre-orbit58145-extension472-report.v1",
+  "sources": {
+    "elliptic-curves/cas/alternate_quartic_covers.py": "598f7556333c9d8462f251d97a6d132e0bd672a11861f8c2f142fc4588abe9e5",
+    "elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py": "5f63d2a929a1b10c3413189b3d7e7ac6be0216dfd80a0da1cc8bc52d934af93f",
+    "elliptic-curves/cas/audit_retained_cloud_modl.py": "9922a557d96f692f01d8a7c834826212928b515eaf66b13507c50cd9a59d3206",
+    "elliptic-curves/cas/factor_free_pari_mapping.sage": "dba526e16844dc61a37be74cf562404cfe819d22b84e454c9522638fb487d7d7",
+    "elliptic-curves/cas/half_lattice_pointed_sieve.py": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4",
+    "elliptic-curves/cas/load_curve302_recovered_parent.sage": "c4d57ab8ebeedfbc8b74c1838760dd4036d958985ed63ad2f52b2ce348d3173f",
+    "elliptic-curves/cas/pari_pointed_backend.py": "895c0f3c14eefc2537ef1aca4354719e47ce2a7cd09fcf2e83f2c44cc60733de",
+    "elliptic-curves/cas/pointed_quartic_search.py": "01c40a10cbe31f4439c4f2dacf7e2e5831f8bd6b83079933c9d506b6a25d1ff9",
+    "elliptic-curves/cas/pointed_quartic_sieve.cpp": "7a015c85e54e14f16848626b154236132e34c0e42315242959a0be59e2de97a4",
+    "elliptic-curves/cas/research_runtime/arithmetic.py": "f304317492824cf149c88b5814e68cdd0bffb0542a3d8db7bb4d9f3ec988802b",
+    "elliptic-curves/cas/research_runtime/binary.py": "9956f4b5236d8ad2260018182eebfa18bcd8ced7fdc92ffa6023ad9da7d9dd99",
+    "elliptic-curves/cas/research_runtime/finite_reduction.py": "467609d4a1003127a9dcfb5ff3cd911d3748f5c5c5ff68a43f09db0de9b69992",
+    "elliptic-curves/cas/research_runtime/mw_state.py": "e53c24a786afe1096a3bc90eff94396b1b3b6b1fd3ec52c24e51c69622b4596d",
+    "elliptic-curves/cas/research_runtime/pointed_worker.py": "7126cac4ed8bbfd7015476670b61fc317649700436b92e072a21d1bac4695ddf",
+    "elliptic-curves/cas/research_runtime/search_state.py": "598a2177fa1cdd5b45c801c09adcc4ac51bd2a87152b7982ea70e78585f8671c",
+    "elliptic-curves/cas/research_runtime/store.py": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965",
+    "elliptic-curves/cas/research_runtime/supervisor.py": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233",
+    "elliptic-curves/cas/run_curve302_m24_bisection_orbit117420.py": "ebbc70ffa55ec8ae2038ffef8373f74bcf55850b9a2d1b7f982a9cf7260b7101",
+    "elliptic-curves/cas/run_curve302_m25_fibre_orbit64677_extension103.py": "417abf217f176f641d0b7f7fa1fccfc2393f400445e64bf035d327309317cab1",
+    "elliptic-curves/cas/run_curve302_m26_fibre_orbit58145_extension472.py": "672b8bd37f3fdace7b33922c8c2a3bed4269048c236eaab8054985e158f5cb01",
+    "elliptic-curves/cas/search_observability.py": "b6189a0cee9805336609f413b2dd8ccb38263c2d594131aabf3b0555a9c04b58",
+    "elliptic-curves/cas/verify_factor_free_rank.sage": "fd95c46b9b79c89deeeed14afa2e46088590459ce1a144ebb1cd61e8713309db"
+  },
+  "status": "PASS_CERTIFIED_RANK_AT_LEAST_27"
+}

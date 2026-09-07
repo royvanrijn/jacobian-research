@@ -38,6 +38,16 @@ replay checker binds raw score hashes and reconstructs equations, heights and
 selection from retained scores; it does not repeat the entire population or
 all original character sums.
 
+A subsequent [complete intake audit](../../artifacts/generated-results/elliptic-curves/det1092_record_scale_population_audit_v1.json)
+reconstructs every SHA draw, including rejected fractions and deduplication,
+then rechecks all1048576 rational j-heights, every admitted first-stage table
+score, and both1024-row retention heaps. Direct polynomial evaluation checks
+all2048 retained models independently of homogeneous Horner evaluation. It
+finds no actual removable local scaling and no selection mismatch. This costs
+11.070738775 supervised seconds, separately from the original selection and
+point exposure. It reuses the previously independently checked trace tables;
+it does not repeat every finite-field point count or add a parameter search.
+
 ## Frozen prospective point policy
 
 Every fibre first supplies its seventeen specialized generic sections and

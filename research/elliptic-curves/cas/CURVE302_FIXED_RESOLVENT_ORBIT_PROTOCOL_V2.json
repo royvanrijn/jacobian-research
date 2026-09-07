@@ -1,0 +1,36 @@
+{
+  "schema": "elliptic-curves.curve302-fixed-resolvent-orbit-protocol.v2",
+  "endpoint": "The first independent strict norm-square character of E302's maximal cubic order outside M24 is immediately handed to a sealed 2-cover/PointsQI run. A finite orbit slice is only a constructor experiment.",
+  "predecessor": "curve302_fixed_resolvent_orbits_v1.json: its 49-pair M11=0 affine chart was entirely split Q x K, proved by exact zero divisors.",
+  "bounds": {
+    "base_affine_parameter_bound": 3,
+    "perturbation_coefficient_bound": 1,
+    "base_pairs": 49,
+    "perturbations_per_base_pair": 81,
+    "determinantal_attempts": 3969,
+    "quartic_generator_l1_bound": 2,
+    "finite_field_witness_prime_bound": 503,
+    "pari_stack_bytes": 268435456,
+    "worker_seconds": 55,
+    "elliptic_point_searches_before_strict_acceptance": 0,
+    "class_group_relation_searches": 0
+  },
+  "normalization": {
+    "pair_convention": "Integral ternary quadratic-form coefficients are [x1^2,x2^2,x3^2,x1*x2,x2*x3,x1*x3]; Gram off-diagonals are half these coefficients. Every retained pair must satisfy 4*det(x*A-y*B)=Fmax exactly.",
+    "slice": "Start from the universal M11=0 determinantal pair and swap its first two coordinates. With L=M11, m=M12, n=M13 and its base r=M22,s=M23,t=M33, enumerate R=r_x*x+r_y*y and S=s_x*x+s_y*y with each coefficient in [-1,1]. Set r'=r+R,s'=s+S and retain the pair exactly when the homogeneous quotient t'=(Fmax+L*s'^2-2*m*n*s'+n^2*r')/(L*r'-m^2) is a degree-one polynomial with integral-form parity. This is a finite direct determinant solve, not a GL3(Q) move of a seed.",
+    "reduction_boundary": "The chart is normalized and bounded but not a fundamental domain; no completeness is asserted. Duplicate integral pairs are removed by their twelve form coefficients."
+  },
+  "acceptance": {
+    "mandatory": [
+      "independent maximal-order binary-cubic preflight",
+      "primitive integral pair and exact fixed determinant",
+      "direct associative integral quartic multiplication table",
+      "quartic field, maximality, S4 witnesses, and four real roots",
+      "exact norm-square alpha extraction, square-principal ideal, and nfislocalpower certificates at each prime over S",
+      "good split-prime squarecharacter rank 4 after appending the three M24 strict directions"
+    ],
+    "fail_closed": "UNKNOWN never advances; no cover or PointsQI request is allowed before all mandatory gates pass."
+  },
+  "handoff": "On the first accepted candidate, build the standard two quadrics in raw cubic coordinates, seal only those quadrics for the existing isolated PointsQI worker, and retain the exact post-solver recheck as the next certificate.",
+  "boundary": "Neither an enumeration count nor a bounded null result is a class-rank, Selmer-rank, rational-point, or Mordell-Weil-rank result."
+}

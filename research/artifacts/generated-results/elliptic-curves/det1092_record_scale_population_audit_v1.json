@@ -1,0 +1,19 @@
+{
+  "actual_local_scalings": 0,
+  "checker_sha256": "739da257bb598151f2f8af939205e842c8dbbc76dffd801584f8c81085b6b673",
+  "draws": 1133153,
+  "height_bin_counts": {
+    "10": 635666,
+    "11": 270161,
+    "8": 3197,
+    "9": 139552
+  },
+  "parameters": 1048576,
+  "population_sha256": "a9882518b95daef322ce553f79af97f9cc9160306d9725819bfe0eef2000982e",
+  "protocol_sha256": "4eb4341cd96fa716206da6e25441a9645887b172e88c316cf763e446c49f74e7",
+  "retained": 2048,
+  "schema": "elliptic-curves.det1092-record-scale-population-audit.v1",
+  "scope": "Reconstruct every SHA draw including rejection/deduplication, exact j heights and all admitted table scores; independently rebuild both retention heaps and directly evaluate retained polynomials. Trace tables were independently checked in the original run. This does not rerun ellcard, point searches, or introduce new addresses. Actual local scaling fails closed for a separate audit. No rank inference.",
+  "status": "PASS",
+  "tables_sha256": "e4909220ed3a434f690b61311880c8558127e4ef8b374030cc700121e1b2e18f"
+}

@@ -1,0 +1,246 @@
+{
+  "boundary": "This recovers an additional direction from an execution that did not read its point. The one-chart rule was nonetheless chosen retrospectively from orbit117420, so it is not a prospective visibility ranking validation. It gives a certified lower bound only and changes neither the sealed historical 17-to-24 policy nor the curve's already larger public rank lower bound.",
+  "completed_search": {
+    "certified_rank_lower_bound_by_odd_descent": 25,
+    "charts": 1,
+    "height": 125000,
+    "mod_2_certified_rank_lower_bound": 25,
+    "mod_3_5_ranks": {
+      "3": 25,
+      "5": 25
+    },
+    "rank_after_exact_replay": 24,
+    "rank_after_worker": 24,
+    "rank_before": 24,
+    "returned_finite_curve_points": [
+      {
+        "x": "-736436254900659024837129159498616106445/17161",
+        "y": "9687212337068025422705190603750510638475333455422044276480/2248091"
+      },
+      {
+        "x": "-3543774521501272238907686063659941285/169",
+        "y": "-15818104038982758127854382292223601510426792061756358840/2197"
+      },
+      {
+        "x": "2552479560600882045451655421314849811/169",
+        "y": "4630681567694131430845225627929965647878027654266006784/2197"
+      },
+      {
+        "x": "4888030205233055480236048018777502846834115/243953161",
+        "y": "-3465889445062686853472769993286930302356925151123912707465075120/3810304421659"
+      },
+      {
+        "x": "23845172647463607342280787982789891",
+        "y": "18473137155892719783851949146906488029500505150264"
+      },
+      {
+        "x": "8747978582077673595089550684909189469643355/363779329",
+        "y": "-744891342047361935946572934865500295149745845123846342335746560/6938363142017"
+      }
+    ],
+    "search_status": "bounded_search_complete",
+    "seconds_per_chart": 10
+  },
+  "exact_half_lattice_degree_two_reconstruction": {
+    "M24_extension_rule": "append seven zero coordinates to the certified M17 representative",
+    "M24_parity_mask": 95909,
+    "category": "rational",
+    "degree_two_LLL_minimum_word": [
+      2,
+      2,
+      -3,
+      1,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      1,
+      -2,
+      3,
+      -2,
+      0,
+      -1,
+      1,
+      1
+    ],
+    "degree_two_divisor_class": "2O+4F+phi(w)",
+    "minimum_generic_MW17_norm": 10,
+    "orbit_mask": 117420,
+    "parent_MW17_norm_rechecked": 10,
+    "parent_MW17_representative": [
+      1,
+      0,
+      -1,
+      2,
+      0,
+      1,
+      2,
+      -1,
+      0,
+      -1,
+      1,
+      0,
+      1,
+      -3,
+      -1,
+      0,
+      1
+    ],
+    "pointed_quartic_centre_short_model": {
+      "x": "61828531326218172286760896978482862538607014153070212440830323820409035/182415668163236766025736260596156241",
+      "y": "15267260437798721339710443715760861638186513667915600859834546781049578162884504547432838259490449685777920/77910000554667507349176316878599943792863290293231961"
+    },
+    "quartic_coefficient_bits": 118,
+    "raw_coordinate_matrix": [
+      "-286232012734649616064114722906344182/427101472911574921",
+      "2107440433713960162487181522654597215/427101472911574921",
+      "1",
+      "-8"
+    ],
+    "reduced_quartic_coefficients_ascending": [
+      "124708632283171180843825860566455825",
+      "300209892329032468904309443497827960",
+      "124618415288871754426277815005293430",
+      "-62665607103243924206232454096698520",
+      "5313779334868384459047038864555161"
+    ],
+    "representative": [
+      1,
+      0,
+      -1,
+      2,
+      0,
+      1,
+      2,
+      -1,
+      0,
+      -1,
+      1,
+      0,
+      1,
+      -3,
+      -1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "execution_oracle_audit": {
+    "allowed_inputs": [
+      "artifacts/generated-results/elliptic-curves/curve302_recovered_followup_wave_03_mod2_v1.json",
+      "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json",
+      "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_lattice_v1.json",
+      "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv"
+    ],
+    "excluded_from_execution": [
+      "the residual-visibility diagnostic",
+      "any public missing-point coordinate or public rank-31 point list",
+      "post-search finite-rank outcomes"
+    ],
+    "execution_is_target_blind": true,
+    "geometry_reads": [
+      "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_lattice_v1.json",
+      "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv",
+      "artifacts/generated-results/elliptic-curves/curve302_recovered_followup_wave_03_mod2_v1.json",
+      "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json",
+      "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1",
+      "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1/.maps.json.jfmnt6l1",
+      "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1/centre.json",
+      "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1/protocol.json",
+      "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1/seed.json"
+    ],
+    "replay_reads": [
+      "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_lattice_v1.json",
+      "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv",
+      "artifacts/generated-results/elliptic-curves/curve302_recovered_followup_wave_03_mod2_v1.json",
+      "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json",
+      "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1",
+      "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1/.replay.json.2501v_7d",
+      "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1/centre.json",
+      "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1/maps.json",
+      "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1/protocol.json",
+      "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1/result.json",
+      "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1/seed.json"
+    ],
+    "rule_is_retrospectively_calibrated": true,
+    "worker_reads": [
+      "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_lattice_v1.json",
+      "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv",
+      "artifacts/generated-results/elliptic-curves/curve302_recovered_followup_wave_03_mod2_v1.json",
+      "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json",
+      "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1",
+      "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1/.result.json.lu8qvb4s",
+      "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1/centre.json",
+      "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1/maps.json",
+      "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1/protocol.json",
+      "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1/seed.json"
+    ]
+  },
+  "frozen_rule": {
+    "calibration_status": "retrospectively calibrated; execution-blind",
+    "frozen_orbit_mask": 117420,
+    "minimum_change": "one additional centre/chart; the sealed 17-to-24 deep-centre policy is not modified",
+    "rule": "one predeclared complete-degree-two rational-bisection translation orbit; take its canonical exported M17 minimum and append seven M24 zeros",
+    "selection_inputs": [
+      "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json",
+      "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_lattice_v1.json",
+      "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv"
+    ]
+  },
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_m24_bisection_orbit117420_mod2_v1.json": "0c1a8fd52a4cfa7c6dbd69c14850b8874f3e4d4f6740c26811ce557828596142",
+    "artifacts/generated-results/elliptic-curves/curve302_m24_bisection_orbit117420_modl_v1.json": "d06210070f8974f5ab2e2694787ac5d198b279699083f9fd606e765d0abb9a7c",
+    "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_lattice_v1.json": "8f31f069755ff55fbdbded39170688ef491a470467aa3aee57b52368bc9bd260",
+    "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv": "6eabef60743153bad58de5cdc0c49777036991282a362d26ab286722986ae40f",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_followup_wave_03_mod2_v1.json": "2850bb912ad4607c0ea90fe24a734ee92536f458177014c2882e3079482f1341",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/curve302-generic17/maps.json": "08831bf89682af7bc3eafe1bb775eeef129f42d1b7c9f4db8e5b859a57f928fa",
+    "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1/centre.json": "d9ea2d9aaad2481e43b4234fe6398ea27c847220831e9f6bce966291a03d1ca2",
+    "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1/certification-ledger.json": "e49c3768267d687701da568d8d4fb5bbcdb42bdd4f77247fc7cfb2beb01862fc",
+    "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1/maps.json": "eff34e7d9c075664d7c1205a5cfb61c9f8e4bf07d22922df362e937a12fd59ad",
+    "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1/replay.json": "6c639a95d4264d4c890eb5a6dfd5ae1e3be6395ca43cb7256dd631ad08fa5266",
+    "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1/result.json": "107245a515085209feb6a483cee16ef04a9e63788b04fdc3d71510bc33a8ce0c",
+    "artifacts/local/elliptic-curves/curve302-m24-bisection-orbit117420-v1/seed.json": "451f5355b6df629525044ed5d6301a5233a188bb20fa178cd82800e05095b5d1"
+  },
+  "reproducing_command": "python3 elliptic-curves/cas/run_curve302_m24_bisection_orbit117420.py launch",
+  "schema": "elliptic-curves.curve302-m24-bisection-orbit117420-report.v1",
+  "sources": {
+    "elliptic-curves/cas/alternate_quartic_covers.py": "598f7556333c9d8462f251d97a6d132e0bd672a11861f8c2f142fc4588abe9e5",
+    "elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py": "5f63d2a929a1b10c3413189b3d7e7ac6be0216dfd80a0da1cc8bc52d934af93f",
+    "elliptic-curves/cas/audit_retained_cloud_modl.py": "9922a557d96f692f01d8a7c834826212928b515eaf66b13507c50cd9a59d3206",
+    "elliptic-curves/cas/factor_free_pari_mapping.sage": "dba526e16844dc61a37be74cf562404cfe819d22b84e454c9522638fb487d7d7",
+    "elliptic-curves/cas/half_lattice_pointed_sieve.py": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4",
+    "elliptic-curves/cas/load_curve302_recovered_parent.sage": "c4d57ab8ebeedfbc8b74c1838760dd4036d958985ed63ad2f52b2ce348d3173f",
+    "elliptic-curves/cas/pari_pointed_backend.py": "895c0f3c14eefc2537ef1aca4354719e47ce2a7cd09fcf2e83f2c44cc60733de",
+    "elliptic-curves/cas/pointed_quartic_search.py": "01c40a10cbe31f4439c4f2dacf7e2e5831f8bd6b83079933c9d506b6a25d1ff9",
+    "elliptic-curves/cas/pointed_quartic_sieve.cpp": "7a015c85e54e14f16848626b154236132e34c0e42315242959a0be59e2de97a4",
+    "elliptic-curves/cas/research_runtime/arithmetic.py": "f304317492824cf149c88b5814e68cdd0bffb0542a3d8db7bb4d9f3ec988802b",
+    "elliptic-curves/cas/research_runtime/binary.py": "9956f4b5236d8ad2260018182eebfa18bcd8ced7fdc92ffa6023ad9da7d9dd99",
+    "elliptic-curves/cas/research_runtime/finite_reduction.py": "467609d4a1003127a9dcfb5ff3cd911d3748f5c5c5ff68a43f09db0de9b69992",
+    "elliptic-curves/cas/research_runtime/mw_state.py": "e53c24a786afe1096a3bc90eff94396b1b3b6b1fd3ec52c24e51c69622b4596d",
+    "elliptic-curves/cas/research_runtime/pointed_worker.py": "7126cac4ed8bbfd7015476670b61fc317649700436b92e072a21d1bac4695ddf",
+    "elliptic-curves/cas/research_runtime/search_state.py": "598a2177fa1cdd5b45c801c09adcc4ac51bd2a87152b7982ea70e78585f8671c",
+    "elliptic-curves/cas/research_runtime/store.py": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965",
+    "elliptic-curves/cas/research_runtime/supervisor.py": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233",
+    "elliptic-curves/cas/run_curve302_m24_bisection_orbit117420.py": "ebbc70ffa55ec8ae2038ffef8373f74bcf55850b9a2d1b7f982a9cf7260b7101",
+    "elliptic-curves/cas/search_observability.py": "b6189a0cee9805336609f413b2dd8ccb38263c2d594131aabf3b0555a9c04b58",
+    "elliptic-curves/cas/verify_factor_free_rank.sage": "fd95c46b9b79c89deeeed14afa2e46088590459ce1a144ebb1cd61e8713309db"
+  },
+  "status": "PASS_CERTIFIED_RANK_AT_LEAST_25",
+  "why_sealed_17_to_24_policy_excluded_it": {
+    "consequence": "This M17-supported parity was not sampled initially and is arithmetically ineligible in the M24 wave because the M22 floor rejects every M17-supported word.",
+    "initial_M17_deep_sample_contains_parity": false,
+    "initial_M17_selected_centres_contain_parity": false,
+    "initial_policy": "2048 SHA masks; select the 49 largest specialized rounded-height norms",
+    "later_policy": "each follow-up wave requires a nonzero coordinate above the preceding subgroup rank",
+    "padded_M24_parity_mask": 95909,
+    "padded_parity_shift_right_22": 0
+  }
+}

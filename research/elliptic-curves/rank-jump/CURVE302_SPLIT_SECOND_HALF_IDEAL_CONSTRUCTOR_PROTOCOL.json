@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.curve302-split-second-half-ideal-constructor-protocol.v1",
+  "endpoint": "Continue the E302 generic-only principal-square constructor on a disjoint deterministic family of half ideals.",
+  "inputs": "The frozen E302 cubic/S/generic-M17 constructor arithmetic and the reusable exact local/character routines. M24, all public exceptional words and rational cover witnesses are forbidden.",
+  "method": "At each fully split good rational prime choose the second, rather than first, degree-one prime ideal in PARI decomposition order. Use the first twenty such distinct rational primes. Enumerate all nonempty subset half ideals J, verify J^2=(alpha) exactly through idealred, then retain only strict generic-corrected classes with a good-prime character outside generic M17.",
+  "bounds": {"half_ideal_primes": 20, "prime_search_bound": 1000, "page_masks": 65536, "pari_stack_bytes": 268435456, "workers": 1, "elliptic_point_searches": 0, "new_parameters": 0, "class_group_completions": 0},
+  "failure_semantics": "A completed negative result closes only this second-factor finite family. It supplies no class-group, Selmer, Sha or rank bound. Any positive strict class still requires post-hoc M24 independence, an independently solved cover and a point-rank certificate."
+}

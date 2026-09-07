@@ -1,0 +1,108 @@
+{
+  "bindings": {
+    "elliptic-curves/cas/benchmark_curve302_strict_covers_hidden.sage": "8aad1264ec167c94d015a03c1c2cacd1476090b9a4aefb5c06b016470fc9fd92",
+    "elliptic-curves/cas/recover_curve302_strict_covers_blind.sage": "c2a650e18e6e3d084acfbf031d40fdc11c789777319166e048ac2fd933e6c580"
+  },
+  "boundary": "A completed raw-coordinate box miss says nothing about global solubility or rank.",
+  "cases": [
+    {
+      "exact_blind_cover_points": [],
+      "input_coefficient_bits": 914,
+      "result": "artifacts/local/elliptic-curves/curve302-strict-cover-blind-recovery-v2/case-08-result.json",
+      "result_sha256": "357e987dce9423913cea64d738be172a9598d22fe10e4bc7b252eb36fd570400",
+      "sealed_input": "artifacts/local/elliptic-curves/curve302-strict-cover-blind-recovery-v2/case-08.json",
+      "sealed_input_sha256": "ba3a058752e394fcfa025636c69ecb168b7bddda2e2ea91a9085a92e9ae4ecaf",
+      "token": "case-08",
+      "worker_status": "COMPLETED"
+    },
+    {
+      "exact_blind_cover_points": [],
+      "input_coefficient_bits": 2047,
+      "result": "artifacts/local/elliptic-curves/curve302-strict-cover-blind-recovery-v2/case-09-result.json",
+      "result_sha256": "2b1ed4d4ca7c0f120b7fb98c977389428b15f3524e403ea427a9d4a0044e01d2",
+      "sealed_input": "artifacts/local/elliptic-curves/curve302-strict-cover-blind-recovery-v2/case-09.json",
+      "sealed_input_sha256": "282bd43eb97d75c5f6806002a14c10c6526f751d2c4b905e0d87645f17fa736c",
+      "token": "case-09",
+      "worker_status": "COMPLETED"
+    },
+    {
+      "exact_blind_cover_points": [],
+      "input_coefficient_bits": 2446,
+      "result": "artifacts/local/elliptic-curves/curve302-strict-cover-blind-recovery-v2/case-10-result.json",
+      "result_sha256": "1a79b62fb7e59b484c4e17f9d2d8684be20453408641078a6f58042ce335cce6",
+      "sealed_input": "artifacts/local/elliptic-curves/curve302-strict-cover-blind-recovery-v2/case-10.json",
+      "sealed_input_sha256": "b73efe2a3ac1d7f809b935cefa126ad8b5753fe84a2a21d66de9c0940addeb87",
+      "token": "case-10",
+      "worker_status": "COMPLETED"
+    },
+    {
+      "exact_blind_cover_points": [],
+      "input_coefficient_bits": 2678,
+      "result": "artifacts/local/elliptic-curves/curve302-strict-cover-blind-recovery-v2/case-11-result.json",
+      "result_sha256": "6140aad63ba56129281884a616e7607253281660803552327d4d8478ebcebb71",
+      "sealed_input": "artifacts/local/elliptic-curves/curve302-strict-cover-blind-recovery-v2/case-11.json",
+      "sealed_input_sha256": "f6661d95d81da0f93ec35f99c00c455576ae4541216f25a386cc7dfbe850b678",
+      "token": "case-11",
+      "worker_status": "COMPLETED"
+    },
+    {
+      "exact_blind_cover_points": [],
+      "input_coefficient_bits": 1985,
+      "result": "artifacts/local/elliptic-curves/curve302-strict-cover-blind-recovery-v2/case-12-result.json",
+      "result_sha256": "e5eb640185b12ef6e3a1f330e14a681132569ff948b2a25a07d6616e24fc57bd",
+      "sealed_input": "artifacts/local/elliptic-curves/curve302-strict-cover-blind-recovery-v2/case-12.json",
+      "sealed_input_sha256": "60c87469b495bffa86e5105bbc008b917f7b4eb79f8c3792eeb9dd1888054f09",
+      "token": "case-12",
+      "worker_status": "COMPLETED"
+    },
+    {
+      "exact_blind_cover_points": [],
+      "input_coefficient_bits": 2213,
+      "result": "artifacts/local/elliptic-curves/curve302-strict-cover-blind-recovery-v2/case-13-result.json",
+      "result_sha256": "1f9d07f668b62f7e9e25dc19947ee3b06cbabd7dc17140e6dee660a5cb2821dd",
+      "sealed_input": "artifacts/local/elliptic-curves/curve302-strict-cover-blind-recovery-v2/case-13.json",
+      "sealed_input_sha256": "e1fdac06c146674ae7874608524140b184d6c59ff85afaf6cdb7d794fa2edc95",
+      "token": "case-13",
+      "worker_status": "COMPLETED"
+    },
+    {
+      "exact_blind_cover_points": [],
+      "input_coefficient_bits": 1833,
+      "result": "artifacts/local/elliptic-curves/curve302-strict-cover-blind-recovery-v2/case-14-result.json",
+      "result_sha256": "229b7c7a4137cab585a71f9581b545e34e9c4d36d2d3c2f5b34dcb1e82f54df4",
+      "sealed_input": "artifacts/local/elliptic-curves/curve302-strict-cover-blind-recovery-v2/case-14.json",
+      "sealed_input_sha256": "fb2000138a0497b948f768b98cf15e138e15be87e0ab134199c3ba0284738e52",
+      "token": "case-14",
+      "worker_status": "COMPLETED"
+    },
+    {
+      "exact_blind_cover_points": [],
+      "input_coefficient_bits": 2062,
+      "result": "artifacts/local/elliptic-curves/curve302-strict-cover-blind-recovery-v2/case-15-result.json",
+      "result_sha256": "8f6f7c0a2100505849cf249223ae8c75da6a2acf522728b087ba691c0e449a07",
+      "sealed_input": "artifacts/local/elliptic-curves/curve302-strict-cover-blind-recovery-v2/case-15.json",
+      "sealed_input_sha256": "c8e2fb299db7da4f30028edbfd89e328a87ba669a78ea5226b9ae2c7066ebbd4",
+      "token": "case-15",
+      "worker_status": "COMPLETED"
+    }
+  ],
+  "policy": {
+    "bounded_projective_slice_height": 300,
+    "fixed_primary_tokens": [
+      "case-08",
+      "case-09",
+      "case-10",
+      "case-11",
+      "case-12",
+      "case-13",
+      "case-14",
+      "case-15"
+    ],
+    "selection": "all eight strict-coset controls; no witness-dependent ordering or stopping",
+    "worker_timeout_seconds": 20
+  },
+  "protocol": "eight post-hoc known-soluble strict-coset controls; workers receive quadrics only",
+  "recovered_control_count": 0,
+  "schema": "elliptic-curves.curve302-strict-cover-blind-recovery.v2",
+  "status": "BOUNDED_NO_POINT"
+}

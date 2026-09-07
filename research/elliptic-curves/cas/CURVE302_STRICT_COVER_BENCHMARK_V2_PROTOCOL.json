@@ -1,0 +1,25 @@
+{
+  "schema": "elliptic-curves.curve302-strict-cover-benchmark-protocol.v2",
+  "baseline": "M24",
+  "controls": "All eight elements of H=M24 intersect ker(loc_S), with dim_F2(H)=3.",
+  "missing_panel": "The eight elements of R+H, where R=P4+P12+P18+P23+P27 is used only after the control benchmark has passed.",
+  "representative_normalisation": "For a nonzero displayed control word, form its exact group sum only in the sealed preparer, then use the normalized Kummer representative 4*x(Q)-theta. This is square-equivalent to the word product. The isolated solver receives only the resulting quadrics, never Q, alpha, a word, a coset label, or a cover witness.",
+  "solver": {
+    "engine": "Magma GenusOneModel Reduce followed by PointsQI",
+    "model_preparation": "reduce_only",
+    "pointsqi_height": 10000000,
+    "only_one": true,
+    "remote_request_timeout_seconds": 50,
+    "subprocess_timeout_seconds": 58
+  },
+  "advance_rules": [
+    "The eight H controls are a solver benchmark. At least one nonzero H class must yield an exact returned rational cover point before R+H jobs are prepared.",
+    "Only a PASS control artifact authorizes the R+H panel.",
+    "Only PASS control and missing-panel artifacts reopen the generic-only principal-relation constructor gate. The missing words remain forbidden inputs to that constructor."
+  ],
+  "boundaries": [
+    "A control representative is intentionally retrospective and known soluble; it is not a new direction.",
+    "No rational cover witness is written to, or read by, a solver job. Cover points are mapped and checked only after the isolated solver exits.",
+    "A bounded miss remains a bounded solver outcome, not an obstruction or a Sha conclusion."
+  ]
+}

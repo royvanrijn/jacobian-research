@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.curve302-selected-half-ideal-relation-protocol.v1",
+  "endpoint": "Solve the principal-square relation problem algebraically for exactly the twenty half ideals frozen in the completed first E302 calibration.",
+  "inputs": "The immutable completed first-20 target list, E302 equation/S/maximal order/generic M17 arithmetic, and exact local Kummer routines. Public E302 points and M24 are excluded.",
+  "method": "Compute class coordinates of the twenty selected ideals with PARI's compact BNF relation lattice. Enumerate only their 2^20 binary combinations and retain masks satisfying 2 times the summed class coordinate equals zero. Principalize only those square ideals, replay the identity J^2=(alpha) exactly, then require a generic correction to be strictly local and a fixed good-prime character outside generic M17. bnfcertify is requested for the reported relation-space status, but an accepted generator is checked independently even if certification is unavailable.",
+  "bounds": {"selected_half_ideals": 20, "pari_stack_bytes": 4294967296, "compact_relation_tech": "[0.03,0.03,-1]", "workers": 1, "elliptic_point_searches": 0, "new_parameters": 0, "prime_set_expansion": 0},
+  "failure_semantics": "A failed or uncertified BNF is UNKNOWN. A certified relation-space miss closes only the selected twenty-ideal relation problem. A strict class remains only an arithmetic class until a separate post-hoc M24 test and witness-hidden cover solve certify an independent rational point."
+}

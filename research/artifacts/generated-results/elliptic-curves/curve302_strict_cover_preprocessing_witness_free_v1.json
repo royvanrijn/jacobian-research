@@ -1,0 +1,115 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/record_prime_factor_proofs_20260904.json": "22e6f9f63ef13b577547f684472ad9327ff301ec543cbaa93d08537e9d080e5b",
+    "elliptic-curves/cas/benchmark_curve302_strict_covers_hidden.sage": "bd60c1247946ba200876d4fa215eb96d8ca3dabb34690859095ed65cf4540137",
+    "elliptic-curves/cas/preprocess_curve302_strict_covers_witness_free.sage": "8adc31c035d092a0c3f2757e2c3ead4a051894e3e27386641d157a69d4ecb6d0"
+  },
+  "boundary": "A preprocessing or conic-interface failure is not a claim about a cover's rational points, solubility, rank, or Sha.",
+  "cases": [
+    {
+      "final_quartic_coefficient_bits": 115,
+      "raw_quartic_coefficient_bits": 1832,
+      "result": "artifacts/local/elliptic-curves/curve302-strict-cover-preprocessing-witness-free-v1/case-08-result.json",
+      "result_sha256": "3c7ecbbd67cdb942dfa29263aa786e3167340bca078e58ac6f36a320a20fbccb",
+      "sealed_input": "artifacts/local/elliptic-curves/curve302-strict-cover-preprocessing-witness-free-v1/case-08.json",
+      "sealed_input_sha256": "dc67eb012f90d5522b9aba2b67e809c4f70d6b95cc6f8fe8521f5bba4b91ff83",
+      "token": "case-08",
+      "worker_status": "PREPROCESSED_WITH_EXACT_TRANSPORTS"
+    },
+    {
+      "final_quartic_coefficient_bits": 115,
+      "raw_quartic_coefficient_bits": 5101,
+      "result": "artifacts/local/elliptic-curves/curve302-strict-cover-preprocessing-witness-free-v1/case-09-result.json",
+      "result_sha256": "e902968f4f7866b4dd4677b2e86ea86c0a5c1aa7356824a0e91dd4a764539929",
+      "sealed_input": "artifacts/local/elliptic-curves/curve302-strict-cover-preprocessing-witness-free-v1/case-09.json",
+      "sealed_input_sha256": "ddf4036828a790d3627d63d446f54c2325d57b4c9ce13c2ba9b12f589f74613f",
+      "token": "case-09",
+      "worker_status": "PREPROCESSED_WITH_EXACT_TRANSPORTS"
+    },
+    {
+      "final_quartic_coefficient_bits": 129,
+      "raw_quartic_coefficient_bits": 6278,
+      "result": "artifacts/local/elliptic-curves/curve302-strict-cover-preprocessing-witness-free-v1/case-10-result.json",
+      "result_sha256": "a71fe8d206b0a8e1e619f003d851fd607daf5fcb59180cd0b96f87df28af0fd0",
+      "sealed_input": "artifacts/local/elliptic-curves/curve302-strict-cover-preprocessing-witness-free-v1/case-10.json",
+      "sealed_input_sha256": "b39a3698bf43784a507eae13b6cf80a612b942ff8961ac04389b4bba79893814",
+      "token": "case-10",
+      "worker_status": "PREPROCESSED_WITH_EXACT_TRANSPORTS"
+    },
+    {
+      "final_quartic_coefficient_bits": null,
+      "raw_quartic_coefficient_bits": null,
+      "result": "artifacts/local/elliptic-curves/curve302-strict-cover-preprocessing-witness-free-v1/case-11-result.json",
+      "result_sha256": "d4d2578875dc4ba3961dabeefc655a375f3add8851e75e39bd638e580aec3246",
+      "sealed_input": "artifacts/local/elliptic-curves/curve302-strict-cover-preprocessing-witness-free-v1/case-11.json",
+      "sealed_input_sha256": "8d2dcc4ab1af9d8b06420a2a914faee17354fed9b52f48efd127a3e2f1173052",
+      "token": "case-11",
+      "worker_status": "CONIC_SOLVER_REJECTED_DETERMINANT_ENCODING"
+    },
+    {
+      "final_quartic_coefficient_bits": 115,
+      "raw_quartic_coefficient_bits": 4931,
+      "result": "artifacts/local/elliptic-curves/curve302-strict-cover-preprocessing-witness-free-v1/case-12-result.json",
+      "result_sha256": "ca329d1fe53c6a62b45b5f875a1c716db013996bd97a8c31a62c93178d356a25",
+      "sealed_input": "artifacts/local/elliptic-curves/curve302-strict-cover-preprocessing-witness-free-v1/case-12.json",
+      "sealed_input_sha256": "389f197853df5496fea2768967222a81cafcb5804d17d416f9627b3ae5175bad",
+      "token": "case-12",
+      "worker_status": "PREPROCESSED_WITH_EXACT_TRANSPORTS"
+    },
+    {
+      "final_quartic_coefficient_bits": 118,
+      "raw_quartic_coefficient_bits": 5594,
+      "result": "artifacts/local/elliptic-curves/curve302-strict-cover-preprocessing-witness-free-v1/case-13-result.json",
+      "result_sha256": "56e47eb6de0d171827d90bd1235e433cfc596b4f0a19ef8ed712ab2429271504",
+      "sealed_input": "artifacts/local/elliptic-curves/curve302-strict-cover-preprocessing-witness-free-v1/case-13.json",
+      "sealed_input_sha256": "cd05b5275f747b58f68fd8924cf3b63481b2e03e7112dd9dc4bcf0246ee85b74",
+      "token": "case-13",
+      "worker_status": "PREPROCESSED_WITH_EXACT_TRANSPORTS"
+    },
+    {
+      "final_quartic_coefficient_bits": 120,
+      "raw_quartic_coefficient_bits": 4474,
+      "result": "artifacts/local/elliptic-curves/curve302-strict-cover-preprocessing-witness-free-v1/case-14-result.json",
+      "result_sha256": "2299030b7c85892e00ed2322e1713eb7d2f33be8b3aac7a09b7650db43647876",
+      "sealed_input": "artifacts/local/elliptic-curves/curve302-strict-cover-preprocessing-witness-free-v1/case-14.json",
+      "sealed_input_sha256": "b39323c5a56da8d258f683f315475ebc7bc0d2d24fef8583d078fd727e61d794",
+      "token": "case-14",
+      "worker_status": "PREPROCESSED_WITH_EXACT_TRANSPORTS"
+    },
+    {
+      "final_quartic_coefficient_bits": null,
+      "raw_quartic_coefficient_bits": null,
+      "result": "artifacts/local/elliptic-curves/curve302-strict-cover-preprocessing-witness-free-v1/case-15-result.json",
+      "result_sha256": "175a914b54afbb50199abdf59a194dd8986362e5c447db5a57cf209f3a5f3203",
+      "sealed_input": "artifacts/local/elliptic-curves/curve302-strict-cover-preprocessing-witness-free-v1/case-15.json",
+      "sealed_input_sha256": "64938eebcf0d923d3b7a70873bc1b306af48a76d1f973970bde5c4f458040838",
+      "token": "case-15",
+      "worker_status": "CONIC_SOLVER_REJECTED_DETERMINANT_ENCODING"
+    }
+  ],
+  "exactly_preprocessed_count": 6,
+  "factor_certificate_source": "artifacts/generated-results/elliptic-curves/record_prime_factor_proofs_20260904.json",
+  "policy": {
+    "conic_algorithm": "PARI qfsolve followed by qfparam with the supplied exact determinant decomposition",
+    "fixed_primary_tokens": [
+      "case-08",
+      "case-09",
+      "case-10",
+      "case-11",
+      "case-12",
+      "case-13",
+      "case-14",
+      "case-15"
+    ],
+    "quartic_algorithms": [
+      "PARI hyperellred",
+      "PARI hyperellminimalmodel",
+      "PARI hyperellred"
+    ],
+    "selection": "all eight strict-coset controls; no witness-dependent ordering, tuning, or stopping",
+    "worker_timeout_seconds": 120
+  },
+  "protocol": "fixed eight known-soluble strict-coset controls; a worker sees only its quadrics and public determinant-prime support",
+  "schema": "elliptic-curves.curve302-strict-cover-preprocessing-witness-free.v1",
+  "status": "PREPROCESSING_COMPLETED"
+}
