@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.three-radical-incidence-protocol.v1",
+  "question": "Do symmetric additive collisions among three inherited Kummer radicals create unramified classes on high-jump fibres more often than on the frozen low-gain controls?",
+  "construction": "For each unordered triple of generic x coordinates use q(theta)=(alpha_i+alpha_j-alpha_k)^2-4*alpha_i*alpha_j, alpha_i=x_i-theta. Clear rational scalar content to obtain a primitive integral quadratic q. The candidate is pi(q)=Norm(q)*q. Unlike multiplicative radical closure, this introduces addition.",
+  "incidence_gate": "Remove from abs(Norm(q)) all factors supported on disc(f), by repeated gcd. A nonsquare remainder proves pi(q) ramified outside disc(f), because q is primitive and has degree below the cubic. A square remainder is only a necessary condition; it does not certify even ideal valuations, local solubility or independence.",
+  "inputs": "All sixteen frozen masked equations and their marked generic sections. No exceptional points, rank labels, new parameters or selected triples derived from outcomes.",
+  "limits": {"fibres": 16, "triples_per_MW17_fibre": 680, "triples_per_MW16_fibre": 560, "workers": 1, "worker_seconds": 30, "new_factorizations": 0, "new_class_groups": 0, "new_local_number_fields": 0, "new_points_or_parameters": 0},
+  "controls": "Apply the same norm gate to every inherited linear Kummer representative and to f'(theta). The latter projects to the derivative class already excluded from Selmer, so it is a deliberate false-positive control for this necessary gate.",
+  "failure": "A zero norm or degenerate polynomial is reported separately. Surviving candidates remain UNKNOWN until exact ideal valuations, complete local conditions and independence are established. This is not a rank score or point visibility test."
+}

@@ -1,0 +1,182 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+    "artifacts/generated-results/elliptic-curves/rank_jump_three_radical_evidence_v1.json": "31014ded24cb75842ace35d55a867a054bcf2cd2523df9efbefc0d2982bee5c1",
+    "artifacts/generated-results/elliptic-curves/rank_jump_three_radical_evidence_v1.zip": "32d260ffee49552702d7545b7254068c3f32ea5bee5b3f5d3b72e13a1a2b7269",
+    "elliptic-curves/rank-jump/package_three_radical_evidence.py": "0afa63e460510e589cb2bcfb51345efae84c0e5e02e3c7fbc660097648ff91fd",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_three_radical_incidence.py": "0bb4f6af90865129bc843599806b7d1c1b0ab946f3e242b04729023ad4083d72"
+  },
+  "method": "Independent rational Weierstrass invariants and primitive coefficients, cubic companion-matrix determinants, gcd support checks, and coprimality of every odd private witness with the product of all other norms. No factoring or local number-field computation.",
+  "rows": [
+    {
+      "candidate_span_new_Selmer_dimension": 0,
+      "independent_private_odd_ramification_witnesses": 680,
+      "private_odd_factor_bit_range": [
+        398,
+        768
+      ],
+      "token": "case-00",
+      "triples": 680
+    },
+    {
+      "candidate_span_new_Selmer_dimension": 0,
+      "independent_private_odd_ramification_witnesses": 680,
+      "private_odd_factor_bit_range": [
+        452,
+        835
+      ],
+      "token": "case-01",
+      "triples": 680
+    },
+    {
+      "candidate_span_new_Selmer_dimension": 0,
+      "independent_private_odd_ramification_witnesses": 680,
+      "private_odd_factor_bit_range": [
+        404,
+        1132
+      ],
+      "token": "case-02",
+      "triples": 680
+    },
+    {
+      "candidate_span_new_Selmer_dimension": 0,
+      "independent_private_odd_ramification_witnesses": 680,
+      "private_odd_factor_bit_range": [
+        481,
+        1315
+      ],
+      "token": "case-03",
+      "triples": 680
+    },
+    {
+      "candidate_span_new_Selmer_dimension": 0,
+      "independent_private_odd_ramification_witnesses": 680,
+      "private_odd_factor_bit_range": [
+        446,
+        1554
+      ],
+      "token": "case-04",
+      "triples": 680
+    },
+    {
+      "candidate_span_new_Selmer_dimension": 0,
+      "independent_private_odd_ramification_witnesses": 680,
+      "private_odd_factor_bit_range": [
+        577,
+        1899
+      ],
+      "token": "case-05",
+      "triples": 680
+    },
+    {
+      "candidate_span_new_Selmer_dimension": 0,
+      "independent_private_odd_ramification_witnesses": 680,
+      "private_odd_factor_bit_range": [
+        517,
+        1817
+      ],
+      "token": "case-06",
+      "triples": 680
+    },
+    {
+      "candidate_span_new_Selmer_dimension": 0,
+      "independent_private_odd_ramification_witnesses": 680,
+      "private_odd_factor_bit_range": [
+        591,
+        1942
+      ],
+      "token": "case-07",
+      "triples": 680
+    },
+    {
+      "candidate_span_new_Selmer_dimension": 0,
+      "independent_private_odd_ramification_witnesses": 680,
+      "private_odd_factor_bit_range": [
+        431,
+        1503
+      ],
+      "token": "case-08",
+      "triples": 680
+    },
+    {
+      "candidate_span_new_Selmer_dimension": 0,
+      "independent_private_odd_ramification_witnesses": 680,
+      "private_odd_factor_bit_range": [
+        485,
+        1657
+      ],
+      "token": "case-09",
+      "triples": 680
+    },
+    {
+      "candidate_span_new_Selmer_dimension": 0,
+      "independent_private_odd_ramification_witnesses": 680,
+      "private_odd_factor_bit_range": [
+        505,
+        1668
+      ],
+      "token": "case-10",
+      "triples": 680
+    },
+    {
+      "candidate_span_new_Selmer_dimension": 0,
+      "independent_private_odd_ramification_witnesses": 560,
+      "private_odd_factor_bit_range": [
+        417,
+        988
+      ],
+      "token": "case-11",
+      "triples": 560
+    },
+    {
+      "candidate_span_new_Selmer_dimension": 0,
+      "independent_private_odd_ramification_witnesses": 560,
+      "private_odd_factor_bit_range": [
+        443,
+        1026
+      ],
+      "token": "case-12",
+      "triples": 560
+    },
+    {
+      "candidate_span_new_Selmer_dimension": 0,
+      "independent_private_odd_ramification_witnesses": 680,
+      "private_odd_factor_bit_range": [
+        510,
+        1645
+      ],
+      "token": "case-13",
+      "triples": 680
+    },
+    {
+      "candidate_span_new_Selmer_dimension": 0,
+      "independent_private_odd_ramification_witnesses": 680,
+      "private_odd_factor_bit_range": [
+        534,
+        1851
+      ],
+      "token": "case-14",
+      "triples": 680
+    },
+    {
+      "candidate_span_new_Selmer_dimension": 0,
+      "independent_private_odd_ramification_witnesses": 560,
+      "private_odd_factor_bit_range": [
+        476,
+        1216
+      ],
+      "token": "case-15",
+      "triples": 560
+    }
+  ],
+  "schema": "rank-jump.three-radical-incidence-verification.v1",
+  "status": "PASS",
+  "symbolic_norm": {
+    "formal_radical_norm_terms": 15,
+    "identity": "Product over all eight signs of (+/-u +/-v +/-w) equals (u^4+v^4+w^4-2u^2v^2-2u^2w^2-2v^2w^2)^2."
+  },
+  "verified_controls": 285,
+  "verified_private_odd_ramification_witnesses": 10520,
+  "verified_triple_norms": 10520
+}

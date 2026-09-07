@@ -1,0 +1,184 @@
+{
+  "boundary": "Unlabelled frozen generic-only panel. Norm and private-factor certificates are preserved byte for byte in the ZIP, not discarded.",
+  "bundle": "artifacts/generated-results/elliptic-curves/rank_jump_three_radical_evidence_v1.zip",
+  "bundle_sha256": "32d260ffee49552702d7545b7254068c3f32ea5bee5b3f5d3b72e13a1a2b7269",
+  "members": [
+    {
+      "bytes": 14208908,
+      "member": "rank_jump_three_radical_incidence_v1.json",
+      "path": "artifacts/generated-results/elliptic-curves/rank_jump_three_radical_incidence_v1.json",
+      "sha256": "759ec1d56b718c30fc0d78502d016dc790498883391f2f03d09680ca593fb67f"
+    },
+    {
+      "bytes": 5124152,
+      "member": "rank_jump_three_radical_private_ramification_v1.json",
+      "path": "artifacts/generated-results/elliptic-curves/rank_jump_three_radical_private_ramification_v1.json",
+      "sha256": "3b7803001a3e817749205e56cb486a28f9b30a048ddd66fdb32007ee672272e0"
+    }
+  ],
+  "packager_sha256": "0afa63e460510e589cb2bcfb51345efae84c0e5e02e3c7fbc660097648ff91fd",
+  "rows": [
+    {
+      "candidate_span_unramified_dimension_upper_bound": 0,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_after_adding_generic_subgroup": 0,
+      "ramification_rank_lower_bound": 680,
+      "ramified_exclusions": 680,
+      "token": "case-00",
+      "triples": 680,
+      "unresolved_survivors": 0
+    },
+    {
+      "candidate_span_unramified_dimension_upper_bound": 0,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_after_adding_generic_subgroup": 0,
+      "ramification_rank_lower_bound": 680,
+      "ramified_exclusions": 680,
+      "token": "case-01",
+      "triples": 680,
+      "unresolved_survivors": 0
+    },
+    {
+      "candidate_span_unramified_dimension_upper_bound": 0,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_after_adding_generic_subgroup": 0,
+      "ramification_rank_lower_bound": 680,
+      "ramified_exclusions": 680,
+      "token": "case-02",
+      "triples": 680,
+      "unresolved_survivors": 0
+    },
+    {
+      "candidate_span_unramified_dimension_upper_bound": 0,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_after_adding_generic_subgroup": 0,
+      "ramification_rank_lower_bound": 680,
+      "ramified_exclusions": 680,
+      "token": "case-03",
+      "triples": 680,
+      "unresolved_survivors": 0
+    },
+    {
+      "candidate_span_unramified_dimension_upper_bound": 0,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_after_adding_generic_subgroup": 0,
+      "ramification_rank_lower_bound": 680,
+      "ramified_exclusions": 680,
+      "token": "case-04",
+      "triples": 680,
+      "unresolved_survivors": 0
+    },
+    {
+      "candidate_span_unramified_dimension_upper_bound": 0,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_after_adding_generic_subgroup": 0,
+      "ramification_rank_lower_bound": 680,
+      "ramified_exclusions": 680,
+      "token": "case-05",
+      "triples": 680,
+      "unresolved_survivors": 0
+    },
+    {
+      "candidate_span_unramified_dimension_upper_bound": 0,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_after_adding_generic_subgroup": 0,
+      "ramification_rank_lower_bound": 680,
+      "ramified_exclusions": 680,
+      "token": "case-06",
+      "triples": 680,
+      "unresolved_survivors": 0
+    },
+    {
+      "candidate_span_unramified_dimension_upper_bound": 0,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_after_adding_generic_subgroup": 0,
+      "ramification_rank_lower_bound": 680,
+      "ramified_exclusions": 680,
+      "token": "case-07",
+      "triples": 680,
+      "unresolved_survivors": 0
+    },
+    {
+      "candidate_span_unramified_dimension_upper_bound": 0,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_after_adding_generic_subgroup": 0,
+      "ramification_rank_lower_bound": 680,
+      "ramified_exclusions": 680,
+      "token": "case-08",
+      "triples": 680,
+      "unresolved_survivors": 0
+    },
+    {
+      "candidate_span_unramified_dimension_upper_bound": 0,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_after_adding_generic_subgroup": 0,
+      "ramification_rank_lower_bound": 680,
+      "ramified_exclusions": 680,
+      "token": "case-09",
+      "triples": 680,
+      "unresolved_survivors": 0
+    },
+    {
+      "candidate_span_unramified_dimension_upper_bound": 0,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_after_adding_generic_subgroup": 0,
+      "ramification_rank_lower_bound": 680,
+      "ramified_exclusions": 680,
+      "token": "case-10",
+      "triples": 680,
+      "unresolved_survivors": 0
+    },
+    {
+      "candidate_span_unramified_dimension_upper_bound": 0,
+      "generic_dimension": 16,
+      "new_Selmer_dimension_after_adding_generic_subgroup": 0,
+      "ramification_rank_lower_bound": 560,
+      "ramified_exclusions": 560,
+      "token": "case-11",
+      "triples": 560,
+      "unresolved_survivors": 0
+    },
+    {
+      "candidate_span_unramified_dimension_upper_bound": 0,
+      "generic_dimension": 16,
+      "new_Selmer_dimension_after_adding_generic_subgroup": 0,
+      "ramification_rank_lower_bound": 560,
+      "ramified_exclusions": 560,
+      "token": "case-12",
+      "triples": 560,
+      "unresolved_survivors": 0
+    },
+    {
+      "candidate_span_unramified_dimension_upper_bound": 0,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_after_adding_generic_subgroup": 0,
+      "ramification_rank_lower_bound": 680,
+      "ramified_exclusions": 680,
+      "token": "case-13",
+      "triples": 680,
+      "unresolved_survivors": 0
+    },
+    {
+      "candidate_span_unramified_dimension_upper_bound": 0,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_after_adding_generic_subgroup": 0,
+      "ramification_rank_lower_bound": 680,
+      "ramified_exclusions": 680,
+      "token": "case-14",
+      "triples": 680,
+      "unresolved_survivors": 0
+    },
+    {
+      "candidate_span_unramified_dimension_upper_bound": 0,
+      "generic_dimension": 16,
+      "new_Selmer_dimension_after_adding_generic_subgroup": 0,
+      "ramification_rank_lower_bound": 560,
+      "ramified_exclusions": 560,
+      "token": "case-15",
+      "triples": 560,
+      "unresolved_survivors": 0
+    }
+  ],
+  "schema": "rank-jump.three-radical-evidence.v1",
+  "status": "PASS"
+}

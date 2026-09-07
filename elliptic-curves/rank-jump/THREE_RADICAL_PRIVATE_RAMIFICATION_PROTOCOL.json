@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.three-radical-private-ramification-protocol.v1",
+  "question": "Can products of the frozen three-radical candidates cancel their good-prime ramification even though each individual candidate is ramified?",
+  "gate": "For each primitive q_i, remove from its outside-discriminant norm all primes shared with the other outside norms, using repeated gcd with their product. A nonsquare private remainder proves a good prime with odd norm valuation unique to q_i. Primitivity supplies a nonzero valuation of pi(q_i) at a prime above it, while all other candidate classes have zero valuation there. Such private witnesses give independent ramification coordinates.",
+  "inputs": "Only the immutable three-radical incidence certificate. No exceptional points or rank labels.",
+  "limits": {"fibres": 16, "worker_seconds": 30, "workers": 1, "new_factorizations": 0, "new_points_or_parameters": 0},
+  "failure": "A square private remainder is not evidence of unramifiedness. Only witnessed columns contribute to the proved ramification-rank lower bound. Unwitnessed combinations remain UNKNOWN. A full set of witnesses excludes every nonzero word in the candidate span, including products with generic Selmer classes."
+}
