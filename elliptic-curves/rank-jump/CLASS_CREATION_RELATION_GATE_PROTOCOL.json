@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.class-creation-relation-gate-protocol.v1",
+  "question": "Does greater Artin detection of generic half ideals force greater quadratic-character incidence?",
+  "scope": "49 abstract two-factor finite abelian groups, four explicit abstract countermodels, and a read-only audit of the frozen sixteen-row panel and three previous generic-ideal certificates.",
+  "method": "Compare Smith-form invariants with independent exhaustive character enumeration modulo 2 and 4. Test integral presentation changes. Retain the distinction between oracle rank necessities and certified arithmetic presentations.",
+  "bounds": {"seconds": 30, "workers": 1, "new_number_fields": 0, "new_points": 0, "new_factorizations": 0},
+  "failure_semantics": "A finite presentation describes an abstract group only. No arithmetic class rank is asserted without a separately certified map and completeness at 2. Missing arithmetic presentations remain UNKNOWN.",
+  "boundary": "Incidence and class-group structure only. No CT, rational solubility, visibility, new parameter search or active search changes."
+}

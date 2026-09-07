@@ -1,0 +1,234 @@
+{
+  "abstract_models": [
+    {
+      "elementary_factor_dimension": 0,
+      "four_rank": 10,
+      "generic_ideal_image_mod_2_dimension": 0,
+      "label": "ten_C4",
+      "provenance": "ABSTRACT_REGRESSION_ONLY",
+      "quadratic_character_dimension": 10
+    },
+    {
+      "elementary_factor_dimension": 10,
+      "four_rank": 0,
+      "generic_ideal_image_mod_2_dimension": 10,
+      "label": "ten_C2",
+      "provenance": "ABSTRACT_REGRESSION_ONLY",
+      "quadratic_character_dimension": 10
+    },
+    {
+      "elementary_factor_dimension": 1,
+      "four_rank": 0,
+      "generic_ideal_image_mod_2_dimension": 1,
+      "label": "missing_relation",
+      "provenance": "ABSTRACT_REGRESSION_ONLY",
+      "quadratic_character_dimension": 1
+    },
+    {
+      "elementary_factor_dimension": 0,
+      "four_rank": 0,
+      "generic_ideal_image_mod_2_dimension": 0,
+      "label": "relation_completed",
+      "provenance": "ABSTRACT_REGRESSION_ONLY",
+      "quadratic_character_dimension": 0
+    }
+  ],
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_generic_sunit_carrier_v1.json": "04665c8c93bbe8a840fd41672e4b55288dae3f053ee98b4238cdc49c3cb2826d",
+    "artifacts/generated-results/elliptic-curves/rank_jump_strict_cover_creation_capacity_v1.json": "94d450602bac0b8aa2f46c0c84e7cc945823ff1afdd4848ce8c150578becf2bc",
+    "elliptic-curves/rank-jump/CLASS_CREATION_RELATION_GATE_PROTOCOL.json": "090901760109fccbe33ef4616495615d2764a22acfd2b30d492aa9772275195e",
+    "elliptic-curves/rank-jump/class_creation_relation_gate.py": "f858c05fae5855a7da41f4f593a0026449e7f56de0ebbdd090e751a60f8f901f"
+  },
+  "earlier_ideal_certificates": [
+    {
+      "absolute_four_rank": "UNKNOWN",
+      "absolute_two_rank": "UNKNOWN",
+      "case_index": 0,
+      "elementary_factor_dimension_lower_bound": 10,
+      "id": "a1-fibration-05:307/206",
+      "provenance": "RETROSPECTIVE_ORACLE_CHARACTERS"
+    },
+    {
+      "absolute_four_rank": "UNKNOWN",
+      "absolute_two_rank": "UNKNOWN",
+      "case_index": 4,
+      "elementary_factor_dimension_lower_bound": 8,
+      "id": "published-R17:-2300/843",
+      "provenance": "RETROSPECTIVE_ORACLE_CHARACTERS"
+    },
+    {
+      "absolute_four_rank": "UNKNOWN",
+      "absolute_two_rank": "UNKNOWN",
+      "case_index": 5,
+      "elementary_factor_dimension_lower_bound": 6,
+      "id": "published-R17:-1561/3133",
+      "provenance": "RETROSPECTIVE_ORACLE_CHARACTERS"
+    }
+  ],
+  "exhaustive_two_factor_cases": 49,
+  "fresh_panel": [
+    {
+      "certified_two_primary_relation_presentation": "ABSENT_IN_THIS_INPUT",
+      "equation_only_class_four_rank": "UNKNOWN",
+      "equation_only_class_two_rank": "UNKNOWN",
+      "family": "074d9",
+      "generic_strict_dimension": "UNKNOWN",
+      "oracle_rank_derived_strict_dimension_lower_bound": "UNKNOWN",
+      "paired_absolute_class_creation": "UNKNOWN",
+      "token": "case-00"
+    },
+    {
+      "certified_two_primary_relation_presentation": "ABSENT_IN_THIS_INPUT",
+      "equation_only_class_four_rank": "UNKNOWN",
+      "equation_only_class_two_rank": "UNKNOWN",
+      "family": "074d9",
+      "generic_strict_dimension": 9,
+      "oracle_rank_derived_strict_dimension_lower_bound": 9,
+      "paired_absolute_class_creation": "UNKNOWN",
+      "token": "case-01"
+    },
+    {
+      "certified_two_primary_relation_presentation": "ABSENT_IN_THIS_INPUT",
+      "equation_only_class_four_rank": "UNKNOWN",
+      "equation_only_class_two_rank": "UNKNOWN",
+      "family": "103b2",
+      "generic_strict_dimension": 0,
+      "oracle_rank_derived_strict_dimension_lower_bound": 9,
+      "paired_absolute_class_creation": "UNKNOWN",
+      "token": "case-02"
+    },
+    {
+      "certified_two_primary_relation_presentation": "ABSENT_IN_THIS_INPUT",
+      "equation_only_class_four_rank": "UNKNOWN",
+      "equation_only_class_two_rank": "UNKNOWN",
+      "family": "103b2",
+      "generic_strict_dimension": 0,
+      "oracle_rank_derived_strict_dimension_lower_bound": 0,
+      "paired_absolute_class_creation": "UNKNOWN",
+      "token": "case-03"
+    },
+    {
+      "certified_two_primary_relation_presentation": "ABSENT_IN_THIS_INPUT",
+      "equation_only_class_four_rank": "UNKNOWN",
+      "equation_only_class_two_rank": "UNKNOWN",
+      "family": "11952",
+      "generic_strict_dimension": 0,
+      "oracle_rank_derived_strict_dimension_lower_bound": 5,
+      "paired_absolute_class_creation": "UNKNOWN",
+      "token": "case-04"
+    },
+    {
+      "certified_two_primary_relation_presentation": "ABSENT_IN_THIS_INPUT",
+      "equation_only_class_four_rank": "UNKNOWN",
+      "equation_only_class_two_rank": "UNKNOWN",
+      "family": "11952",
+      "generic_strict_dimension": 10,
+      "oracle_rank_derived_strict_dimension_lower_bound": 10,
+      "paired_absolute_class_creation": "UNKNOWN",
+      "token": "case-05"
+    },
+    {
+      "certified_two_primary_relation_presentation": "ABSENT_IN_THIS_INPUT",
+      "equation_only_class_four_rank": "UNKNOWN",
+      "equation_only_class_two_rank": "UNKNOWN",
+      "family": "11952",
+      "generic_strict_dimension": 0,
+      "oracle_rank_derived_strict_dimension_lower_bound": 6,
+      "paired_absolute_class_creation": "UNKNOWN",
+      "token": "case-06"
+    },
+    {
+      "certified_two_primary_relation_presentation": "ABSENT_IN_THIS_INPUT",
+      "equation_only_class_four_rank": "UNKNOWN",
+      "equation_only_class_two_rank": "UNKNOWN",
+      "family": "11952",
+      "generic_strict_dimension": 5,
+      "oracle_rank_derived_strict_dimension_lower_bound": 5,
+      "paired_absolute_class_creation": "UNKNOWN",
+      "token": "case-07"
+    },
+    {
+      "certified_two_primary_relation_presentation": "ABSENT_IN_THIS_INPUT",
+      "equation_only_class_four_rank": "UNKNOWN",
+      "equation_only_class_two_rank": "UNKNOWN",
+      "family": "11952",
+      "generic_strict_dimension": "UNKNOWN",
+      "oracle_rank_derived_strict_dimension_lower_bound": "UNKNOWN",
+      "paired_absolute_class_creation": "UNKNOWN",
+      "token": "case-08"
+    },
+    {
+      "certified_two_primary_relation_presentation": "ABSENT_IN_THIS_INPUT",
+      "equation_only_class_four_rank": "UNKNOWN",
+      "equation_only_class_two_rank": "UNKNOWN",
+      "family": "11952",
+      "generic_strict_dimension": 0,
+      "oracle_rank_derived_strict_dimension_lower_bound": 8,
+      "paired_absolute_class_creation": "UNKNOWN",
+      "token": "case-09"
+    },
+    {
+      "certified_two_primary_relation_presentation": "ABSENT_IN_THIS_INPUT",
+      "equation_only_class_four_rank": "UNKNOWN",
+      "equation_only_class_two_rank": "UNKNOWN",
+      "family": "11952",
+      "generic_strict_dimension": "UNKNOWN",
+      "oracle_rank_derived_strict_dimension_lower_bound": "UNKNOWN",
+      "paired_absolute_class_creation": "UNKNOWN",
+      "token": "case-10"
+    },
+    {
+      "certified_two_primary_relation_presentation": "ABSENT_IN_THIS_INPUT",
+      "equation_only_class_four_rank": "UNKNOWN",
+      "equation_only_class_two_rank": "UNKNOWN",
+      "family": "a1-fibration-01",
+      "generic_strict_dimension": "UNKNOWN",
+      "oracle_rank_derived_strict_dimension_lower_bound": "UNKNOWN",
+      "paired_absolute_class_creation": "UNKNOWN",
+      "token": "case-11"
+    },
+    {
+      "certified_two_primary_relation_presentation": "ABSENT_IN_THIS_INPUT",
+      "equation_only_class_four_rank": "UNKNOWN",
+      "equation_only_class_two_rank": "UNKNOWN",
+      "family": "a1-fibration-01",
+      "generic_strict_dimension": "UNKNOWN",
+      "oracle_rank_derived_strict_dimension_lower_bound": "UNKNOWN",
+      "paired_absolute_class_creation": "UNKNOWN",
+      "token": "case-12"
+    },
+    {
+      "certified_two_primary_relation_presentation": "ABSENT_IN_THIS_INPUT",
+      "equation_only_class_four_rank": "UNKNOWN",
+      "equation_only_class_two_rank": "UNKNOWN",
+      "family": "historic-lineage-074d9",
+      "generic_strict_dimension": 1,
+      "oracle_rank_derived_strict_dimension_lower_bound": 12,
+      "paired_absolute_class_creation": "UNKNOWN",
+      "token": "case-13"
+    },
+    {
+      "certified_two_primary_relation_presentation": "ABSENT_IN_THIS_INPUT",
+      "equation_only_class_four_rank": "UNKNOWN",
+      "equation_only_class_two_rank": "UNKNOWN",
+      "family": "historic-lineage-074d9",
+      "generic_strict_dimension": 0,
+      "oracle_rank_derived_strict_dimension_lower_bound": 4,
+      "paired_absolute_class_creation": "UNKNOWN",
+      "token": "case-14"
+    },
+    {
+      "certified_two_primary_relation_presentation": "ABSENT_IN_THIS_INPUT",
+      "equation_only_class_four_rank": "UNKNOWN",
+      "equation_only_class_two_rank": "UNKNOWN",
+      "family": "curve398-p16875",
+      "generic_strict_dimension": 0,
+      "oracle_rank_derived_strict_dimension_lower_bound": 5,
+      "paired_absolute_class_creation": "UNKNOWN",
+      "token": "case-15"
+    }
+  ],
+  "new_arithmetic_classes_constructed": 0,
+  "schema": "rank-jump.class-creation-relation-gate.v1",
+  "status": "PASS_ABSTRACT_REGRESSIONS_AND_SOURCE_AUDIT"
+}
