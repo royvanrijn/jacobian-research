@@ -1,5 +1,12 @@
 # Elliptic curves over `Q` — ACTIVE
 
+The [302 calibration](notes/CURVE302_RECOVERED_SUBGROUP_CALIBRATION_2026-09-07.md)
+recovers **7 of14 known exceptional directions from generic17 alone**. The
+recovered MW17 parent is now the main search family: a
+[million-parameter intake near302's arithmetic height](notes/DET1092_RECORD_SCALE_CAMPAIGN_2026-09-07.md)
+is complete and the calibrated policy is running on48 fixed fibres. No new
+near-record curve is certified from this active campaign yet.
+
 The [main README table](../../README.md#elliptic-curve-inventory) and [expanded inventory](INVENTORY.md) now cover all201 curves with ICARM-compatible metrics. The [continued conductor pass](notes/INVENTORY201_TABLE_AND_CONDUCTORS_2026-09-07.md) proves **129 exact conductors**,100 more than before;72 remain unresolved.
 
 The [submitted-curve conductor proofs](notes/SUBMITTED627_630_BAD_PRIMES_2026-09-07.md)
@@ -510,7 +517,7 @@ Use [`REPRODUCE.md`](REPRODUCE.md) and the exact checker paths recorded in `../M
 
 [Reduced determinant1092 parameter chart](notes/DET1092_REDUCED_PARAMETER_CHART_2026-09-07.md): exact90/135-bit equation and17 transported sections;98 boxes complete, no certified rank gain.
 
-<!-- status-consumer: OP-EC-NEXT 42dbf5da50cff4f9 -->
+<!-- status-consumer: OP-EC-NEXT 4af57d6bc347284b -->
 
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-SELMER-PANEL 539bd8ec36b36c44 -->
 

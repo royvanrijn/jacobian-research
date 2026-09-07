@@ -1,0 +1,21 @@
+{
+  "files": {
+    "input.json": "7efa45e9ecbf56860f8ba4d3e6784fe07d26aea442fdc4fde60d5ba03fd6d8b1",
+    "public-cloud.json": "d2e22c52758591ebb78b425f9c441babb634a0edf7358ae105c1c524755bc52a",
+    "recovered-cloud.json": "2850bb912ad4607c0ea90fe24a734ee92536f458177014c2882e3079482f1341",
+    "result.json": "e25f06f1826c84e0ed1a4758cd7cfa222e1acb10da4cb33c95c3b1f21a191d85",
+    "verify_curve302_recovered_public_span.sage": "89eab3c8e9ae3204c513dd044af191a1f6d4f8c2aeec92450238368257e76b3d",
+    "verify_factor_free_rank.sage": "fd95c46b9b79c89deeeed14afa2e46088590459ce1a144ebb1cd61e8713309db"
+  },
+  "schema": "elliptic-curves.curve302-recovered-public-span-package.v1",
+  "scope": "Post-search exact24-in31 basis identities and independent finite-group rank proofs. No public data selected the calibration point searches. Compare input basis lists exactly with their bundled cloud independent_points.",
+  "source_paths": {
+    "input.json": "artifacts/local/elliptic-curves/curve302-recovered-subgroup-followup-v1/public-span/input.json",
+    "public-cloud.json": "artifacts/generated-results/elliptic-curves/curve302_focused_curve302_full31_mod2_v1.json",
+    "recovered-cloud.json": "artifacts/generated-results/elliptic-curves/curve302_recovered_followup_wave_03_mod2_v1.json",
+    "result.json": "artifacts/local/elliptic-curves/curve302-recovered-subgroup-followup-v1/public-span/result.json",
+    "verify_curve302_recovered_public_span.sage": "elliptic-curves/cas/verify_curve302_recovered_public_span.sage",
+    "verify_factor_free_rank.sage": "elliptic-curves/cas/verify_factor_free_rank.sage"
+  },
+  "status": "PASS"
+}

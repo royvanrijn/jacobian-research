@@ -1,5 +1,10 @@
 # Focus on302 and its determinant1092 siblings
 
+The subsequent [recovered-subgroup calibration](CURVE302_RECOVERED_SUBGROUP_CALIBRATION_2026-09-07.md)
+extends this generic17-only control to24 and exactly identifies seven of the
+fourteen known exceptional directions. This note retains the preceding fixed
+experiment and its unchanged outcomes.
+
 The fixed196 point boxes and all independent certificates are **complete**.
 The [terminal report](../../artifacts/generated-results/elliptic-curves/curve302_focused_point_exposure_v2.json)
 records generic17→19 recovery on302, no improvement beyond its public31, and

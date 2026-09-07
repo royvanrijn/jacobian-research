@@ -190,7 +190,14 @@ has two independent group-order checks:
 sage -python elliptic-curves/cas/verify_curve302_parent_quadratic_descent_gate.sage
 ```
 
-## Next experiment worth calibrating
+## Subsequent calibration and deployment
+
+The [generic17-only adaptive calibration](CURVE302_RECOVERED_SUBGROUP_CALIBRATION_2026-09-07.md)
+now completes196 boxes, reaches24 and identifies seven of the fourteen known
+exceptional directions by exact identities checked only after the searches.
+The [record-scale campaign](DET1092_RECORD_SCALE_CAMPAIGN_2026-09-07.md)
+has completed its million-parameter intake and deployed the calibrated policy
+on48 fixed prospective fibres. The following motivation predates those runs.
 
 The most informative point-search control is302 with **only the17 generic
 images** supplied to centre selection and execution. Keep the other14 public
@@ -201,5 +208,5 @@ the earlier27-to28 control tested a different surface and subgroup.
 Such a control should compare frozen equal-budget centre policies and retain
 every completed or censored box. Its outcome would guide whether effort should
 go into point charts, adaptive subgroup enlargement or a larger parameter
-population. It has not been run in this work. The trace cache is ready for
-future bounded screening; no rank-success calibration is claimed for its scores.
+population. The subsequent runs above address that control; no rank-success
+calibration is claimed for the screening scores themselves.
