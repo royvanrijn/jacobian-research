@@ -1,5 +1,9 @@
 # Fourth division of the generic points has no new Selmer classes
 
+The [uniform congruence-filtration proof](THE_GENERIC_TWO_POWER_DIVISION_TOWER_IS_CLOSED.md)
+now extends this exclusion to the entire generic two-power division tower,
+without requiring the actual higher torsion images.
+
 On all sixteen frozen fibres, the field obtained by adjoining all fourth
 preimages of the marked generic points contains exactly the generic Kummer
 classes and the derivative class. The latter is outside Selmer. Thus this

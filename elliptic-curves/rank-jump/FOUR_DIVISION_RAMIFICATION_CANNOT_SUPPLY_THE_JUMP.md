@@ -1,5 +1,10 @@
 # Four-division ramification cannot supply the missing jump classes
 
+The [whole-tower theorem](THE_GENERIC_TWO_POWER_DIVISION_TOWER_IS_CLOSED.md)
+now handles all higher levels and proper images on this panel. Its uniform
+Frattini bound replaces the earlier need for actual higher-image computations
+for this capacity question.
+
 Follow-up: [fourth division of every generic point](GENERIC_FOURTH_DIVISION_HAS_NO_NEW_SELMER_CLASSES.md)
 also adds no Selmer class on all sixteen fibres. Its translation group is
 maximal; the new standard layers lie in doubles and do not survive in H1.

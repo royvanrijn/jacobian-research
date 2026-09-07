@@ -1,0 +1,47 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_generic_two_power_tower_v1.json": "bafcf3de30879c802e982cd897c789c3b2b69e974f1694a3b79cda939177d5a8",
+    "elliptic-curves/rank-jump/verify_generic_two_power_tower.py": "f0accaa26fa24fd1a37341f3921e3f4e22d2210e8aa0a59f5ae6a1de63335b5e"
+  },
+  "module": {
+    "stable_subspaces": 6,
+    "standard_dimension": 2,
+    "subspaces": 67
+  },
+  "panel_rows": 16,
+  "proof_boundary": "Independent finite checks support the written arbitrary-depth filtration proof; finite controls alone do not prove it.",
+  "proper_image_controls": [
+    {
+      "H1_dimension": 1,
+      "group_order": 384,
+      "modulus": 8,
+      "status": "PASS"
+    },
+    {
+      "H1_dimension": 1,
+      "group_order": 24,
+      "modulus": 8,
+      "status": "PASS"
+    },
+    {
+      "H1_dimension": 1,
+      "group_order": 6144,
+      "modulus": 16,
+      "status": "PASS"
+    },
+    {
+      "H1_dimension": 1,
+      "group_order": 384,
+      "modulus": 16,
+      "status": "PASS"
+    },
+    {
+      "H1_dimension": 1,
+      "group_order": 24,
+      "modulus": 16,
+      "status": "PASS"
+    }
+  ],
+  "schema": "rank-jump.generic-two-power-tower-verification.v1",
+  "status": "PASS"
+}
