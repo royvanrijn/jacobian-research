@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.j-preimage-sign-trace-protocol.v1",
+  "question": "Can generic sections at the nonrational j-preimages of a retained curve supply a rational block, or does the quadratic isomorphism sign force every trace to vanish?",
+  "inputs": "The same 112 retained target/family cells as the completed rational-presentation test. Remove exactly its certified rational linear factors; each remaining monic polynomial has degree 23 or 24. No points or rank labels enter arithmetic.",
+  "method": "Use full-degree squarefree reductions at odd primes at most 251. Intersect subset sums of irreducible factor degrees to certify irreducibility over Q. For the source-to-target scaling class r=b*A(s)/(a*B(s)), find one irreducible residue factor where r is a unit nonsquare. When both certificates hold, r is nonsquare in the preimage number field and the degree-two isomorphism extension pairs every transported source section with its negative. This excludes rational non-torsion directions in the span of all conjugates of those sections.",
+  "limits": {"total_worker_seconds":30,"workers":1,"cells":112,"modular_prime_bound":251,"pari_stack_bytes":268435456,"number_field_constructions":0,"new_curve_searches":0,"elliptic_point_searches":0},
+  "checkpointing": "Write each completed cell separately. Preserve partial evidence and label a cell UNKNOWN if either certificate is missing. Preserve all completed cells on timeout and mark the rest UNKNOWN. No adaptive extension of primes, families or time cap.",
+  "interpretation": "A falsifiable exclusion of this explicit simultaneous block constructor. A failure to find a nonsquare witness does not certify a square; an irreducibility failure does not certify a factorization. The theorem is about spans of specialized rational generic sections and their conjugates, not all points over the preimage fields."
+}

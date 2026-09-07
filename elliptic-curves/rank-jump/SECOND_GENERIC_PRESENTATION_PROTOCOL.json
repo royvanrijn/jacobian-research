@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.second-generic-presentation-protocol.v1",
+  "question": "Does a retained high-jump curve acquire a second rational presentation among the seven already-used high-generic-rank family models, potentially supplying a simultaneous rational block?",
+  "population": "Exactly the sixteen targets and seven source families in rank_jump_generic_selmer_capacity_inputs_v1.json. Workers receive only A,B family coefficients, target short equations, and the existing own-family parameter as a mandatory positive control. No rank labels or points enter workers.",
+  "construction": "For target y^2=x^3+a*x+b and source A(s),B(s), solve B_target^2*A(s)^3-A_target^3*B(s)^2=0 over P1(Q). Remove the certified own-family root first where available. Certify no further rational root by a root-free full-degree reduction at an odd prime at most 251; otherwise factor the remaining polynomial over Q. Check every rational preimage for rational isomorphism by u^2=(b/B(s))/(a/A(s)) and u^4=a/A(s), u^6=b/B(s). Include infinity in the degree-(8,12) chart and reject singular source fibres.",
+  "interpretation": "A rational isomorphism permits transfer of generic sections, but creates a jump block only if their union with the retained generic subgroup has larger rank. Equal j alone, a nonsquare twist, or a base-equivalent duplicate is not class creation. No transfer or extra rank is claimed until that later independence check.",
+  "limits": {"targets":16,"source_family_presentations":7,"worker_seconds_per_target":15,"workers":1,"modular_prime_bound":251,"pari_stack_bytes":268435456,"new_curve_searches":0,"elliptic_point_searches":0,"class_group_computations":0},
+  "checkpoints": "Write each completed target/family pair separately. Preserve completed pairs if the target worker times out; mark the unfinished pairs UNKNOWN. Do not enlarge the family set or time limit after inspecting outcomes.",
+  "layer": "incidence and potential simultaneous rational construction; not a visibility score or a rank predictor"
+}

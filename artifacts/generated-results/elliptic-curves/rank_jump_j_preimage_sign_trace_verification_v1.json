@@ -1,0 +1,1138 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_j_preimage_sign_trace_inputs_v1.json": "3110a393cc19376cffc53f537603a756fb615036e708ad012f839a00d624bfdd",
+    "artifacts/generated-results/elliptic-curves/rank_jump_j_preimage_sign_trace_v1.json": "1552def1a6a2c17bcd128f69d4c4247430e299cb87253d9a1177498640f8901b",
+    "artifacts/generated-results/elliptic-curves/rank_jump_second_generic_presentation_v1.json": "9df81d8fb8ff4cd18178bb9254fc49f6ff79dc485971835882f1d8f8f8fcfbc0",
+    "artifacts/generated-results/elliptic-curves/rank_jump_second_generic_presentation_verification_v1.json": "e9002bb4b03e01924ec21f091da8cb338326c623caa4e9775fc894f5d446bb5c",
+    "elliptic-curves/rank-jump/verify_j_preimage_sign_trace.py": "014344e3329e4cecb0c073ba741d5524880c5b34eae2e1249cfeb044a845147b",
+    "elliptic-curves/rank-jump/verify_second_generic_presentation.py": "aa04df66ca2a070f154bd734a8bcaec86210512ea16f6ce2999b763b0eb8b784",
+    "elliptic-curves/rank-jump/verify_surface_discriminant_modular.py": "6bb85cee6012de2b98f7662107423c194eb92a7d9ad68dea4be4942996e72ff4"
+  },
+  "boundary": "Independent rational polynomial products, finite Rabin tests, subset-degree exclusions, and Euler quadratic characters. The trace-vanishing theorem is proved in the note. No field class group, elliptic points or rank labels enter this replay.",
+  "distinct_cached_factors": 2844,
+  "finite_irreducible_factor_checks": 4871,
+  "rows": [
+    {
+      "family": "103b2",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 41,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-00"
+    },
+    {
+      "family": "11952",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 29,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-00"
+    },
+    {
+      "family": "074d9",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 29,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-00"
+    },
+    {
+      "family": "a1-fibration-01",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 29,
+      "nonsquare_residue_degree": 23,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-00"
+    },
+    {
+      "family": "a1-fibration-05",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 31,
+      "nonsquare_residue_degree": 5,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-00"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 29,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-00"
+    },
+    {
+      "family": "curve398-p16875",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 29,
+      "nonsquare_residue_degree": 23,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-00"
+    },
+    {
+      "family": "103b2",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 37,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-01"
+    },
+    {
+      "family": "11952",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 17,
+      "nonsquare_residue_degree": 2,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-01"
+    },
+    {
+      "family": "074d9",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 43,
+      "nonsquare_residue_degree": 9,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-01"
+    },
+    {
+      "family": "a1-fibration-01",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 29,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-01"
+    },
+    {
+      "family": "a1-fibration-05",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 37,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-01"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 43,
+      "nonsquare_residue_degree": 9,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-01"
+    },
+    {
+      "family": "curve398-p16875",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 29,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-01"
+    },
+    {
+      "family": "103b2",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 5,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-02"
+    },
+    {
+      "family": "11952",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 9,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-02"
+    },
+    {
+      "family": "074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 29,
+      "nonsquare_residue_degree": 8,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-02"
+    },
+    {
+      "family": "a1-fibration-01",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 9,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-02"
+    },
+    {
+      "family": "a1-fibration-05",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 37,
+      "nonsquare_residue_degree": 2,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-02"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 29,
+      "nonsquare_residue_degree": 8,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-02"
+    },
+    {
+      "family": "curve398-p16875",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 9,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-02"
+    },
+    {
+      "family": "103b2",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 12,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-03"
+    },
+    {
+      "family": "11952",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 4,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-03"
+    },
+    {
+      "family": "074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 47,
+      "nonsquare_residue_degree": 24,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-03"
+    },
+    {
+      "family": "a1-fibration-01",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 4,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-03"
+    },
+    {
+      "family": "a1-fibration-05",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 53,
+      "nonsquare_residue_degree": 2,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-03"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 47,
+      "nonsquare_residue_degree": 24,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-03"
+    },
+    {
+      "family": "curve398-p16875",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 4,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-03"
+    },
+    {
+      "family": "103b2",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 21,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-04"
+    },
+    {
+      "family": "11952",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-04"
+    },
+    {
+      "family": "074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 43,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-04"
+    },
+    {
+      "family": "a1-fibration-01",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-04"
+    },
+    {
+      "family": "a1-fibration-05",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 41,
+      "nonsquare_residue_degree": 5,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-04"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 47,
+      "nonsquare_residue_degree": 14,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-04"
+    },
+    {
+      "family": "curve398-p16875",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-04"
+    },
+    {
+      "family": "103b2",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 37,
+      "nonsquare_residue_degree": 6,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-05"
+    },
+    {
+      "family": "11952",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 37,
+      "nonsquare_residue_degree": 2,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-05"
+    },
+    {
+      "family": "074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 47,
+      "nonsquare_residue_degree": 24,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-05"
+    },
+    {
+      "family": "a1-fibration-01",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 37,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-05"
+    },
+    {
+      "family": "a1-fibration-05",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 37,
+      "nonsquare_residue_degree": 6,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-05"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 43,
+      "nonsquare_residue_degree": 10,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-05"
+    },
+    {
+      "family": "curve398-p16875",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 37,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-05"
+    },
+    {
+      "family": "103b2",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 12,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-06"
+    },
+    {
+      "family": "11952",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 4,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-06"
+    },
+    {
+      "family": "074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 47,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-06"
+    },
+    {
+      "family": "a1-fibration-01",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 4,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-06"
+    },
+    {
+      "family": "a1-fibration-05",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 43,
+      "nonsquare_residue_degree": 5,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-06"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 47,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-06"
+    },
+    {
+      "family": "curve398-p16875",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 4,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-06"
+    },
+    {
+      "family": "103b2",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 21,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-07"
+    },
+    {
+      "family": "11952",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-07"
+    },
+    {
+      "family": "074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 47,
+      "nonsquare_residue_degree": 18,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-07"
+    },
+    {
+      "family": "a1-fibration-01",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-07"
+    },
+    {
+      "family": "a1-fibration-05",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 37,
+      "nonsquare_residue_degree": 6,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-07"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 47,
+      "nonsquare_residue_degree": 18,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-07"
+    },
+    {
+      "family": "curve398-p16875",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-07"
+    },
+    {
+      "family": "103b2",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 21,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-08"
+    },
+    {
+      "family": "11952",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-08"
+    },
+    {
+      "family": "074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 47,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-08"
+    },
+    {
+      "family": "a1-fibration-01",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-08"
+    },
+    {
+      "family": "a1-fibration-05",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 43,
+      "nonsquare_residue_degree": 10,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-08"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 47,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-08"
+    },
+    {
+      "family": "curve398-p16875",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-08"
+    },
+    {
+      "family": "103b2",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 11,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-09"
+    },
+    {
+      "family": "11952",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 17,
+      "nonsquare_residue_degree": 2,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-09"
+    },
+    {
+      "family": "074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 53,
+      "nonsquare_residue_degree": 2,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-09"
+    },
+    {
+      "family": "a1-fibration-01",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-09"
+    },
+    {
+      "family": "a1-fibration-05",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 37,
+      "nonsquare_residue_degree": 6,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-09"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 53,
+      "nonsquare_residue_degree": 2,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-09"
+    },
+    {
+      "family": "curve398-p16875",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-09"
+    },
+    {
+      "family": "103b2",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 21,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-10"
+    },
+    {
+      "family": "11952",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-10"
+    },
+    {
+      "family": "074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 29,
+      "nonsquare_residue_degree": 8,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-10"
+    },
+    {
+      "family": "a1-fibration-01",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-10"
+    },
+    {
+      "family": "a1-fibration-05",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 41,
+      "nonsquare_residue_degree": 2,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-10"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 29,
+      "nonsquare_residue_degree": 8,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-10"
+    },
+    {
+      "family": "curve398-p16875",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-10"
+    },
+    {
+      "family": "103b2",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 21,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-11"
+    },
+    {
+      "family": "11952",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 17,
+      "nonsquare_residue_degree": 2,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-11"
+    },
+    {
+      "family": "074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 47,
+      "nonsquare_residue_degree": 19,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-11"
+    },
+    {
+      "family": "a1-fibration-01",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-11"
+    },
+    {
+      "family": "a1-fibration-05",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 59,
+      "nonsquare_residue_degree": 2,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-11"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 47,
+      "nonsquare_residue_degree": 19,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-11"
+    },
+    {
+      "family": "curve398-p16875",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-11"
+    },
+    {
+      "family": "103b2",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 21,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-12"
+    },
+    {
+      "family": "11952",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 17,
+      "nonsquare_residue_degree": 2,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-12"
+    },
+    {
+      "family": "074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 43,
+      "nonsquare_residue_degree": 9,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-12"
+    },
+    {
+      "family": "a1-fibration-01",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-12"
+    },
+    {
+      "family": "a1-fibration-05",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 43,
+      "nonsquare_residue_degree": 4,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-12"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 43,
+      "nonsquare_residue_degree": 9,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-12"
+    },
+    {
+      "family": "curve398-p16875",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-12"
+    },
+    {
+      "family": "103b2",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 59,
+      "nonsquare_residue_degree": 2,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-13"
+    },
+    {
+      "family": "11952",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 17,
+      "nonsquare_residue_degree": 2,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-13"
+    },
+    {
+      "family": "074d9",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 43,
+      "nonsquare_residue_degree": 9,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-13"
+    },
+    {
+      "family": "a1-fibration-01",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 47,
+      "nonsquare_residue_degree": 3,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-13"
+    },
+    {
+      "family": "a1-fibration-05",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 43,
+      "nonsquare_residue_degree": 4,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-13"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 43,
+      "nonsquare_residue_degree": 9,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-13"
+    },
+    {
+      "family": "curve398-p16875",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 71,
+      "nonsquare_residue_degree": 24,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-13"
+    },
+    {
+      "family": "103b2",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 20,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-14"
+    },
+    {
+      "family": "11952",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 5,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-14"
+    },
+    {
+      "family": "074d9",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 59,
+      "nonsquare_residue_degree": 2,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-14"
+    },
+    {
+      "family": "a1-fibration-01",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 5,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-14"
+    },
+    {
+      "family": "a1-fibration-05",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 53,
+      "nonsquare_residue_degree": 4,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-14"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 59,
+      "nonsquare_residue_degree": 2,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-14"
+    },
+    {
+      "family": "curve398-p16875",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 5,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-14"
+    },
+    {
+      "family": "103b2",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 12,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-15"
+    },
+    {
+      "family": "11952",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 4,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-15"
+    },
+    {
+      "family": "074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 43,
+      "nonsquare_residue_degree": 9,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-15"
+    },
+    {
+      "family": "a1-fibration-01",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 4,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-15"
+    },
+    {
+      "family": "a1-fibration-05",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 43,
+      "nonsquare_residue_degree": 4,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-15"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "isomorphism_field_degree": 48,
+      "nonsquare_prime": 43,
+      "nonsquare_residue_degree": 9,
+      "preimage_degree": 24,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-15"
+    },
+    {
+      "family": "curve398-p16875",
+      "isomorphism_field_degree": 46,
+      "nonsquare_prime": 23,
+      "nonsquare_residue_degree": 4,
+      "preimage_degree": 23,
+      "rational_irreducibility": "PASS",
+      "rational_trace_span_dimension": 0,
+      "token": "case-15"
+    }
+  ],
+  "schema": "rank-jump.j-preimage-sign-trace-verification.v1",
+  "status": "PASS"
+}

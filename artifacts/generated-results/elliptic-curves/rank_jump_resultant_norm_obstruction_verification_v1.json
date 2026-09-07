@@ -1,0 +1,836 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_j_preimage_sign_trace_verification_v1.json": "4fa8e812eb86b38871cbf8d16e93b88db8a991ee635ed17cbade9d04acfe3fac",
+    "artifacts/generated-results/elliptic-curves/rank_jump_resultant_norm_obstruction_v1.json": "c4648b9ca28591f7d2ea64d940b0245f09318a7171c92ab35ed809051a07379f",
+    "artifacts/generated-results/elliptic-curves/rank_jump_second_generic_presentation_inputs_v1.json": "a2810b2990bd08e90fb69316e3bbe0a19f60ad6e980a84707bd1196c81c9f061",
+    "artifacts/generated-results/elliptic-curves/rank_jump_second_generic_presentation_v1.json": "9df81d8fb8ff4cd18178bb9254fc49f6ff79dc485971835882f1d8f8f8fcfbc0",
+    "artifacts/generated-results/elliptic-curves/rank_jump_second_generic_presentation_verification_v1.json": "e9002bb4b03e01924ec21f091da8cb338326c623caa4e9775fc894f5d446bb5c",
+    "elliptic-curves/rank-jump/verify_resultant_norm_obstruction.py": "471566525b517cde507fc0dffd577cbe02a139fff688655090c2a9a69fe9ef29"
+  },
+  "boundary": "Exact integer Sylvester determinants and square-root bounds independently verify all seven nonsquare resultants; the proved norm identity reproduces all112 sign obstructions. The identity is an algebraic theorem proved in the note, not a separate numerical norm calculation in112 number fields.",
+  "cells": [
+    {
+      "family": "103b2",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-00"
+    },
+    {
+      "family": "11952",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-00"
+    },
+    {
+      "family": "074d9",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-00"
+    },
+    {
+      "family": "a1-fibration-01",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-00"
+    },
+    {
+      "family": "a1-fibration-05",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-00"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-00"
+    },
+    {
+      "family": "curve398-p16875",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-00"
+    },
+    {
+      "family": "103b2",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-01"
+    },
+    {
+      "family": "11952",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-01"
+    },
+    {
+      "family": "074d9",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-01"
+    },
+    {
+      "family": "a1-fibration-01",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-01"
+    },
+    {
+      "family": "a1-fibration-05",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-01"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-01"
+    },
+    {
+      "family": "curve398-p16875",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-01"
+    },
+    {
+      "family": "103b2",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-02"
+    },
+    {
+      "family": "11952",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-02"
+    },
+    {
+      "family": "074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-02"
+    },
+    {
+      "family": "a1-fibration-01",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-02"
+    },
+    {
+      "family": "a1-fibration-05",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-02"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-02"
+    },
+    {
+      "family": "curve398-p16875",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-02"
+    },
+    {
+      "family": "103b2",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-03"
+    },
+    {
+      "family": "11952",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-03"
+    },
+    {
+      "family": "074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-03"
+    },
+    {
+      "family": "a1-fibration-01",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-03"
+    },
+    {
+      "family": "a1-fibration-05",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-03"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-03"
+    },
+    {
+      "family": "curve398-p16875",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-03"
+    },
+    {
+      "family": "103b2",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-04"
+    },
+    {
+      "family": "11952",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-04"
+    },
+    {
+      "family": "074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-04"
+    },
+    {
+      "family": "a1-fibration-01",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-04"
+    },
+    {
+      "family": "a1-fibration-05",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-04"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-04"
+    },
+    {
+      "family": "curve398-p16875",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-04"
+    },
+    {
+      "family": "103b2",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-05"
+    },
+    {
+      "family": "11952",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-05"
+    },
+    {
+      "family": "074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-05"
+    },
+    {
+      "family": "a1-fibration-01",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-05"
+    },
+    {
+      "family": "a1-fibration-05",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-05"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-05"
+    },
+    {
+      "family": "curve398-p16875",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-05"
+    },
+    {
+      "family": "103b2",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-06"
+    },
+    {
+      "family": "11952",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-06"
+    },
+    {
+      "family": "074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-06"
+    },
+    {
+      "family": "a1-fibration-01",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-06"
+    },
+    {
+      "family": "a1-fibration-05",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-06"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-06"
+    },
+    {
+      "family": "curve398-p16875",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-06"
+    },
+    {
+      "family": "103b2",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-07"
+    },
+    {
+      "family": "11952",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-07"
+    },
+    {
+      "family": "074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-07"
+    },
+    {
+      "family": "a1-fibration-01",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-07"
+    },
+    {
+      "family": "a1-fibration-05",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-07"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-07"
+    },
+    {
+      "family": "curve398-p16875",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-07"
+    },
+    {
+      "family": "103b2",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-08"
+    },
+    {
+      "family": "11952",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-08"
+    },
+    {
+      "family": "074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-08"
+    },
+    {
+      "family": "a1-fibration-01",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-08"
+    },
+    {
+      "family": "a1-fibration-05",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-08"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-08"
+    },
+    {
+      "family": "curve398-p16875",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-08"
+    },
+    {
+      "family": "103b2",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-09"
+    },
+    {
+      "family": "11952",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-09"
+    },
+    {
+      "family": "074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-09"
+    },
+    {
+      "family": "a1-fibration-01",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-09"
+    },
+    {
+      "family": "a1-fibration-05",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-09"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-09"
+    },
+    {
+      "family": "curve398-p16875",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-09"
+    },
+    {
+      "family": "103b2",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-10"
+    },
+    {
+      "family": "11952",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-10"
+    },
+    {
+      "family": "074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-10"
+    },
+    {
+      "family": "a1-fibration-01",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-10"
+    },
+    {
+      "family": "a1-fibration-05",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-10"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-10"
+    },
+    {
+      "family": "curve398-p16875",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-10"
+    },
+    {
+      "family": "103b2",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-11"
+    },
+    {
+      "family": "11952",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-11"
+    },
+    {
+      "family": "074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-11"
+    },
+    {
+      "family": "a1-fibration-01",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-11"
+    },
+    {
+      "family": "a1-fibration-05",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-11"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-11"
+    },
+    {
+      "family": "curve398-p16875",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-11"
+    },
+    {
+      "family": "103b2",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-12"
+    },
+    {
+      "family": "11952",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-12"
+    },
+    {
+      "family": "074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-12"
+    },
+    {
+      "family": "a1-fibration-01",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-12"
+    },
+    {
+      "family": "a1-fibration-05",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-12"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-12"
+    },
+    {
+      "family": "curve398-p16875",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-12"
+    },
+    {
+      "family": "103b2",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-13"
+    },
+    {
+      "family": "11952",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-13"
+    },
+    {
+      "family": "074d9",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-13"
+    },
+    {
+      "family": "a1-fibration-01",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-13"
+    },
+    {
+      "family": "a1-fibration-05",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-13"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-13"
+    },
+    {
+      "family": "curve398-p16875",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-13"
+    },
+    {
+      "family": "103b2",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-14"
+    },
+    {
+      "family": "11952",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-14"
+    },
+    {
+      "family": "074d9",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-14"
+    },
+    {
+      "family": "a1-fibration-01",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-14"
+    },
+    {
+      "family": "a1-fibration-05",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-14"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-14"
+    },
+    {
+      "family": "curve398-p16875",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-14"
+    },
+    {
+      "family": "103b2",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-15"
+    },
+    {
+      "family": "11952",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-15"
+    },
+    {
+      "family": "074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-15"
+    },
+    {
+      "family": "a1-fibration-01",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-15"
+    },
+    {
+      "family": "a1-fibration-05",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-15"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "irreducible_residual_degree": 24,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-15"
+    },
+    {
+      "family": "curve398-p16875",
+      "irreducible_residual_degree": 23,
+      "local_sign_witness_agrees": true,
+      "residual_scaling_norm_nonsquare": true,
+      "token": "case-15"
+    }
+  ],
+  "families": [
+    {
+      "family": "103b2",
+      "resultant_nonsquare": true,
+      "sylvester_dimension": 20
+    },
+    {
+      "family": "11952",
+      "resultant_nonsquare": true,
+      "sylvester_dimension": 20
+    },
+    {
+      "family": "074d9",
+      "resultant_nonsquare": true,
+      "sylvester_dimension": 20
+    },
+    {
+      "family": "a1-fibration-01",
+      "resultant_nonsquare": true,
+      "sylvester_dimension": 20
+    },
+    {
+      "family": "a1-fibration-05",
+      "resultant_nonsquare": true,
+      "sylvester_dimension": 20
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "resultant_nonsquare": true,
+      "sylvester_dimension": 20
+    },
+    {
+      "family": "curve398-p16875",
+      "resultant_nonsquare": true,
+      "sylvester_dimension": 20
+    }
+  ],
+  "schema": "rank-jump.resultant-norm-obstruction-verification.v1",
+  "status": "PASS"
+}

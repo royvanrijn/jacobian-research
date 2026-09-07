@@ -1,0 +1,4281 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_second_generic_presentation_inputs_v1.json": "a2810b2990bd08e90fb69316e3bbe0a19f60ad6e980a84707bd1196c81c9f061",
+    "artifacts/generated-results/elliptic-curves/rank_jump_second_generic_presentation_v1.json": "9df81d8fb8ff4cd18178bb9254fc49f6ff79dc485971835882f1d8f8f8fcfbc0",
+    "elliptic-curves/rank-jump/verify_fresh_symbolic_discriminant.py": "ef4d9f4e89cbdac899c559cdd276bfccdc2723766cd1ac3416e9ce2b24abf42b",
+    "elliptic-curves/rank-jump/verify_second_generic_presentation.py": "aa04df66ca2a070f154bd734a8bcaec86210512ea16f6ce2999b763b0eb8b784"
+  },
+  "boundary": "Every rational preimage excluded or verified by rational coefficients and direct finite-field root enumeration. Both duplicate families globally identified by exact weighted polynomial substitutions. No point or rank computation.",
+  "global_base_equivalences": [
+    {
+      "A_identity_degree": 8,
+      "B_identity_degree": 12,
+      "left_family": "074d9",
+      "mobius_matrix": [
+        51007415448506578532070336,
+        -225617022132281018963710272,
+        -103763101021917661673515305,
+        1006219091282922116102788259
+      ],
+      "right_family": "historic-lineage-074d9",
+      "specialized_matches": 4,
+      "weierstrass_numerator": "22285759156221292104923350958221677415821869690279905408840181900185383254333069496516062002661147019326163136015899820032/7692054655727058408236184249996883788995628625095055558903809121",
+      "weierstrass_scaling": "numerator/(c*t+d)^2 from left to right"
+    },
+    {
+      "A_identity_degree": 8,
+      "B_identity_degree": 12,
+      "left_family": "a1-fibration-01",
+      "mobius_matrix": [
+        21744515268853360005219195968411614159125484638027387980887791305388417062781908441670460335907666380469213304407193975190260544,
+        -4055776213289339776855157953315580984843995357477672078007040645360795676466494584109751649303955656252043715574136573517230272,
+        -8171452924695399731225202739908714716095859875633489948556486729205565777213157123092647059751316676605509475513,
+        -16342905849390799462450405479817429432191719751266979897112973458411131554426314246185294119502633353211018951026
+      ],
+      "right_family": "curve398-p16875",
+      "specialized_matches": 3,
+      "weierstrass_numerator": "133126579283459626350607066022563863312893147689172548042006208551256702791908741178520568159673487683640886037082169965101513113093901384810006744032659970621930140229507402991699005603214929281455413343646458862547774474926956013576204638458071040",
+      "weierstrass_scaling": "numerator/(c*t+d)^2 from left to right"
+    }
+  ],
+  "non_base_equivalent_rational_presentations": 0,
+  "rational_preimages": 23,
+  "rows": [
+    {
+      "family": "103b2",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            49,
+            50,
+            29,
+            58,
+            30,
+            50,
+            63,
+            73,
+            49,
+            18,
+            88,
+            90,
+            25,
+            49,
+            4,
+            96,
+            33,
+            59,
+            70,
+            102,
+            16,
+            73,
+            29,
+            7,
+            1
+          ],
+          "prime": 109
+        }
+      ],
+      "token": "case-00"
+    },
+    {
+      "family": "11952",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            38,
+            10,
+            8,
+            58,
+            13,
+            19,
+            56,
+            10,
+            59,
+            2,
+            35,
+            34,
+            30,
+            28,
+            56,
+            24,
+            30,
+            40,
+            36,
+            59,
+            5,
+            9,
+            27,
+            2,
+            1
+          ],
+          "prime": 61
+        }
+      ],
+      "token": "case-00"
+    },
+    {
+      "family": "074d9",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            67,
+            1,
+            48,
+            27,
+            6,
+            66,
+            54,
+            63,
+            17,
+            46,
+            61,
+            48,
+            26,
+            39,
+            44,
+            35,
+            19,
+            22,
+            3,
+            39,
+            18,
+            61,
+            29,
+            1
+          ],
+          "prime": 73
+        }
+      ],
+      "token": "case-00"
+    },
+    {
+      "family": "a1-fibration-01",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            11,
+            5,
+            19,
+            3,
+            8,
+            23,
+            30,
+            9,
+            15,
+            1,
+            24,
+            15,
+            4,
+            14,
+            22,
+            12,
+            22,
+            4,
+            6,
+            14,
+            30,
+            22,
+            24,
+            4,
+            1
+          ],
+          "prime": 31
+        }
+      ],
+      "token": "case-00"
+    },
+    {
+      "family": "a1-fibration-05",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            60,
+            41,
+            35,
+            40,
+            31,
+            52,
+            3,
+            44,
+            36,
+            10,
+            58,
+            4,
+            54,
+            2,
+            9,
+            29,
+            37,
+            13,
+            34,
+            45,
+            5,
+            13,
+            54,
+            47,
+            1
+          ],
+          "prime": 61
+        }
+      ],
+      "token": "case-00"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            51,
+            49,
+            58,
+            67,
+            61,
+            31,
+            30,
+            44,
+            67,
+            28,
+            34,
+            40,
+            55,
+            32,
+            14,
+            19,
+            42,
+            54,
+            3,
+            5,
+            65,
+            47,
+            49,
+            1
+          ],
+          "prime": 73
+        }
+      ],
+      "token": "case-00"
+    },
+    {
+      "family": "curve398-p16875",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            25,
+            2,
+            21,
+            26,
+            10,
+            15,
+            7,
+            8,
+            2,
+            3,
+            20,
+            4,
+            6,
+            29,
+            7,
+            3,
+            19,
+            12,
+            13,
+            20,
+            26,
+            25,
+            22,
+            17,
+            1
+          ],
+          "prime": 31
+        }
+      ],
+      "token": "case-00"
+    },
+    {
+      "family": "103b2",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            10,
+            60,
+            51,
+            34,
+            13,
+            48,
+            31,
+            59,
+            22,
+            54,
+            13,
+            47,
+            3,
+            33,
+            3,
+            3,
+            37,
+            31,
+            16,
+            8,
+            35,
+            59,
+            11,
+            10,
+            1
+          ],
+          "prime": 61
+        }
+      ],
+      "token": "case-01"
+    },
+    {
+      "family": "11952",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            41,
+            65,
+            47,
+            37,
+            40,
+            65,
+            65,
+            33,
+            6,
+            51,
+            3,
+            33,
+            1,
+            16,
+            9,
+            65,
+            5,
+            65,
+            14,
+            37,
+            16,
+            40,
+            32,
+            33,
+            1
+          ],
+          "prime": 73
+        }
+      ],
+      "token": "case-01"
+    },
+    {
+      "family": "074d9",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            44,
+            9,
+            30,
+            7,
+            29,
+            8,
+            2,
+            29,
+            29,
+            9,
+            13,
+            45,
+            15,
+            1,
+            4,
+            16,
+            10,
+            40,
+            17,
+            31,
+            20,
+            33,
+            8,
+            1
+          ],
+          "prime": 47
+        }
+      ],
+      "token": "case-01"
+    },
+    {
+      "family": "a1-fibration-01",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            13,
+            6,
+            13,
+            42,
+            4,
+            4,
+            33,
+            7,
+            29,
+            9,
+            31,
+            37,
+            6,
+            39,
+            1,
+            44,
+            33,
+            33,
+            23,
+            29,
+            21,
+            6,
+            30,
+            27,
+            1
+          ],
+          "prime": 47
+        }
+      ],
+      "token": "case-01"
+    },
+    {
+      "family": "a1-fibration-05",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            46,
+            66,
+            67,
+            22,
+            38,
+            2,
+            3,
+            42,
+            39,
+            47,
+            64,
+            29,
+            3,
+            2,
+            35,
+            38,
+            65,
+            37,
+            43,
+            59,
+            7,
+            49,
+            65,
+            25,
+            1
+          ],
+          "prime": 71
+        }
+      ],
+      "token": "case-01"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            32,
+            13,
+            28,
+            23,
+            39,
+            13,
+            31,
+            27,
+            16,
+            39,
+            10,
+            18,
+            1,
+            0,
+            36,
+            45,
+            46,
+            42,
+            0,
+            44,
+            10,
+            24,
+            35,
+            1
+          ],
+          "prime": 47
+        }
+      ],
+      "token": "case-01"
+    },
+    {
+      "family": "curve398-p16875",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            55,
+            15,
+            8,
+            18,
+            38,
+            29,
+            6,
+            17,
+            11,
+            60,
+            4,
+            28,
+            45,
+            27,
+            40,
+            46,
+            2,
+            53,
+            31,
+            34,
+            49,
+            18,
+            54,
+            40,
+            1
+          ],
+          "prime": 61
+        }
+      ],
+      "token": "case-01"
+    },
+    {
+      "family": "103b2",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            63,
+            36,
+            36,
+            18,
+            70,
+            26,
+            7,
+            34,
+            67,
+            58,
+            25,
+            41,
+            27,
+            7,
+            65,
+            62,
+            7,
+            48,
+            48,
+            55,
+            27,
+            12,
+            56,
+            1
+          ],
+          "prime": 71
+        }
+      ],
+      "token": "case-02"
+    },
+    {
+      "family": "11952",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            13,
+            5,
+            12,
+            13,
+            10,
+            19,
+            21,
+            12,
+            19,
+            5,
+            16,
+            12,
+            10,
+            6,
+            8,
+            3,
+            15,
+            15,
+            21,
+            7,
+            7,
+            15,
+            17,
+            21,
+            1
+          ],
+          "prime": 23
+        }
+      ],
+      "token": "case-02"
+    },
+    {
+      "family": "074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            52,
+            8,
+            25,
+            2,
+            50,
+            61,
+            36,
+            63,
+            30,
+            11,
+            40,
+            29,
+            48,
+            45,
+            48,
+            30,
+            52,
+            63,
+            35,
+            38,
+            53,
+            17,
+            35,
+            44,
+            1
+          ],
+          "prime": 67
+        }
+      ],
+      "token": "case-02"
+    },
+    {
+      "family": "a1-fibration-01",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            12,
+            19,
+            12,
+            1,
+            7,
+            15,
+            5,
+            3,
+            7,
+            21,
+            8,
+            4,
+            15,
+            6,
+            13,
+            9,
+            7,
+            20,
+            11,
+            5,
+            11,
+            19,
+            21,
+            20,
+            1
+          ],
+          "prime": 23
+        }
+      ],
+      "token": "case-02"
+    },
+    {
+      "family": "a1-fibration-05",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            70,
+            61,
+            51,
+            8,
+            22,
+            3,
+            42,
+            17,
+            68,
+            51,
+            7,
+            21,
+            27,
+            55,
+            10,
+            59,
+            24,
+            18,
+            31,
+            27,
+            6,
+            56,
+            44,
+            3,
+            1
+          ],
+          "prime": 73
+        }
+      ],
+      "token": "case-02"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            45,
+            32,
+            44,
+            58,
+            24,
+            59,
+            0,
+            33,
+            41,
+            33,
+            41,
+            1,
+            11,
+            53,
+            14,
+            23,
+            25,
+            65,
+            43,
+            19,
+            10,
+            58,
+            31,
+            65,
+            1
+          ],
+          "prime": 67
+        }
+      ],
+      "token": "case-02"
+    },
+    {
+      "family": "curve398-p16875",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            6,
+            13,
+            14,
+            21,
+            6,
+            0,
+            5,
+            21,
+            16,
+            6,
+            17,
+            14,
+            2,
+            4,
+            21,
+            17,
+            8,
+            20,
+            22,
+            5,
+            0,
+            15,
+            14,
+            1,
+            1
+          ],
+          "prime": 23
+        }
+      ],
+      "token": "case-02"
+    },
+    {
+      "family": "103b2",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            15,
+            17,
+            52,
+            4,
+            68,
+            46,
+            17,
+            61,
+            34,
+            42,
+            60,
+            60,
+            23,
+            10,
+            44,
+            70,
+            54,
+            52,
+            77,
+            32,
+            5,
+            66,
+            56,
+            1
+          ],
+          "prime": 83
+        }
+      ],
+      "token": "case-03"
+    },
+    {
+      "family": "11952",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            25,
+            7,
+            36,
+            18,
+            5,
+            30,
+            33,
+            11,
+            6,
+            30,
+            0,
+            0,
+            4,
+            0,
+            36,
+            22,
+            28,
+            27,
+            19,
+            38,
+            39,
+            26,
+            1,
+            40,
+            1
+          ],
+          "prime": 41
+        }
+      ],
+      "token": "case-03"
+    },
+    {
+      "family": "074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            40,
+            13,
+            33,
+            5,
+            4,
+            16,
+            5,
+            10,
+            0,
+            21,
+            20,
+            32,
+            2,
+            40,
+            12,
+            20,
+            25,
+            25,
+            37,
+            0,
+            25,
+            18,
+            31,
+            17,
+            1
+          ],
+          "prime": 41
+        }
+      ],
+      "token": "case-03"
+    },
+    {
+      "family": "a1-fibration-01",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            94,
+            64,
+            30,
+            36,
+            81,
+            97,
+            92,
+            25,
+            13,
+            42,
+            47,
+            42,
+            3,
+            90,
+            97,
+            99,
+            80,
+            14,
+            98,
+            35,
+            38,
+            74,
+            85,
+            40,
+            1
+          ],
+          "prime": 103
+        }
+      ],
+      "token": "case-03"
+    },
+    {
+      "family": "a1-fibration-05",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            23,
+            65,
+            2,
+            47,
+            45,
+            53,
+            13,
+            73,
+            58,
+            32,
+            38,
+            29,
+            28,
+            76,
+            74,
+            34,
+            51,
+            78,
+            37,
+            59,
+            20,
+            16,
+            62,
+            16,
+            1
+          ],
+          "prime": 79
+        }
+      ],
+      "token": "case-03"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            16,
+            9,
+            3,
+            20,
+            26,
+            10,
+            9,
+            13,
+            38,
+            0,
+            10,
+            37,
+            35,
+            35,
+            33,
+            1,
+            19,
+            40,
+            17,
+            33,
+            37,
+            24,
+            6,
+            38,
+            1
+          ],
+          "prime": 41
+        }
+      ],
+      "token": "case-03"
+    },
+    {
+      "family": "curve398-p16875",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            18,
+            3,
+            85,
+            7,
+            31,
+            53,
+            60,
+            7,
+            13,
+            101,
+            33,
+            28,
+            86,
+            19,
+            73,
+            51,
+            12,
+            56,
+            74,
+            34,
+            70,
+            55,
+            95,
+            98,
+            1
+          ],
+          "prime": 103
+        }
+      ],
+      "token": "case-03"
+    },
+    {
+      "family": "103b2",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            10,
+            23,
+            13,
+            16,
+            38,
+            22,
+            2,
+            5,
+            26,
+            33,
+            0,
+            39,
+            21,
+            5,
+            17,
+            6,
+            11,
+            23,
+            38,
+            38,
+            2,
+            31,
+            38,
+            5,
+            1
+          ],
+          "prime": 41
+        }
+      ],
+      "token": "case-04"
+    },
+    {
+      "family": "11952",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            61,
+            36,
+            42,
+            8,
+            39,
+            45,
+            61,
+            56,
+            46,
+            7,
+            35,
+            59,
+            27,
+            5,
+            19,
+            0,
+            22,
+            5,
+            37,
+            25,
+            7,
+            52,
+            46,
+            1
+          ],
+          "prime": 71
+        }
+      ],
+      "token": "case-04"
+    },
+    {
+      "family": "074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            39,
+            41,
+            32,
+            0,
+            12,
+            58,
+            46,
+            29,
+            58,
+            51,
+            2,
+            4,
+            34,
+            7,
+            18,
+            30,
+            5,
+            15,
+            22,
+            40,
+            27,
+            1,
+            22,
+            2,
+            1
+          ],
+          "prime": 59
+        }
+      ],
+      "token": "case-04"
+    },
+    {
+      "family": "a1-fibration-01",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            61,
+            40,
+            61,
+            37,
+            35,
+            31,
+            63,
+            58,
+            34,
+            39,
+            16,
+            51,
+            24,
+            66,
+            25,
+            65,
+            70,
+            7,
+            10,
+            5,
+            31,
+            4,
+            66,
+            25,
+            1
+          ],
+          "prime": 71
+        }
+      ],
+      "token": "case-04"
+    },
+    {
+      "family": "a1-fibration-05",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            9,
+            12,
+            36,
+            3,
+            35,
+            34,
+            22,
+            6,
+            38,
+            0,
+            26,
+            17,
+            17,
+            2,
+            35,
+            32,
+            6,
+            40,
+            6,
+            12,
+            37,
+            32,
+            25,
+            1,
+            1
+          ],
+          "prime": 41
+        }
+      ],
+      "token": "case-04"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            34,
+            19,
+            19,
+            28,
+            18,
+            41,
+            3,
+            57,
+            31,
+            22,
+            0,
+            12,
+            35,
+            12,
+            13,
+            10,
+            46,
+            29,
+            34,
+            9,
+            16,
+            22,
+            18,
+            11,
+            1
+          ],
+          "prime": 59
+        }
+      ],
+      "token": "case-04"
+    },
+    {
+      "family": "curve398-p16875",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            19,
+            46,
+            64,
+            6,
+            26,
+            63,
+            53,
+            70,
+            33,
+            10,
+            48,
+            42,
+            18,
+            36,
+            22,
+            17,
+            22,
+            53,
+            69,
+            55,
+            1,
+            32,
+            9,
+            66,
+            1
+          ],
+          "prime": 71
+        }
+      ],
+      "token": "case-04"
+    },
+    {
+      "family": "103b2",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            29,
+            12,
+            71,
+            38,
+            75,
+            80,
+            20,
+            39,
+            55,
+            58,
+            13,
+            86,
+            39,
+            70,
+            21,
+            2,
+            13,
+            16,
+            11,
+            53,
+            29,
+            4,
+            69,
+            14,
+            1
+          ],
+          "prime": 89
+        }
+      ],
+      "token": "case-05"
+    },
+    {
+      "family": "11952",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            17,
+            4,
+            14,
+            20,
+            39,
+            29,
+            45,
+            44,
+            32,
+            12,
+            13,
+            39,
+            4,
+            19,
+            5,
+            17,
+            11,
+            20,
+            27,
+            23,
+            26,
+            33,
+            17,
+            1
+          ],
+          "prime": 47
+        }
+      ],
+      "token": "case-05"
+    },
+    {
+      "family": "074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            11,
+            17,
+            33,
+            35,
+            25,
+            16,
+            44,
+            15,
+            36,
+            24,
+            35,
+            31,
+            23,
+            43,
+            1,
+            8,
+            39,
+            16,
+            1,
+            30,
+            19,
+            44,
+            46,
+            22,
+            1
+          ],
+          "prime": 47
+        }
+      ],
+      "token": "case-05"
+    },
+    {
+      "family": "a1-fibration-01",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            12,
+            20,
+            23,
+            12,
+            26,
+            3,
+            24,
+            43,
+            18,
+            29,
+            10,
+            1,
+            41,
+            17,
+            2,
+            4,
+            28,
+            13,
+            20,
+            24,
+            17,
+            21,
+            41,
+            27,
+            1
+          ],
+          "prime": 47
+        }
+      ],
+      "token": "case-05"
+    },
+    {
+      "family": "a1-fibration-05",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            15,
+            21,
+            18,
+            63,
+            21,
+            29,
+            7,
+            9,
+            48,
+            22,
+            18,
+            63,
+            34,
+            36,
+            25,
+            56,
+            39,
+            60,
+            23,
+            34,
+            0,
+            16,
+            58,
+            0,
+            1
+          ],
+          "prime": 71
+        }
+      ],
+      "token": "case-05"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            45,
+            44,
+            18,
+            14,
+            2,
+            26,
+            34,
+            38,
+            35,
+            22,
+            41,
+            10,
+            33,
+            34,
+            40,
+            17,
+            38,
+            33,
+            24,
+            21,
+            37,
+            4,
+            24,
+            35,
+            1
+          ],
+          "prime": 47
+        }
+      ],
+      "token": "case-05"
+    },
+    {
+      "family": "curve398-p16875",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            64,
+            97,
+            10,
+            78,
+            37,
+            79,
+            25,
+            89,
+            92,
+            89,
+            31,
+            21,
+            68,
+            27,
+            50,
+            33,
+            46,
+            65,
+            41,
+            85,
+            10,
+            19,
+            37,
+            66,
+            1
+          ],
+          "prime": 101
+        }
+      ],
+      "token": "case-05"
+    },
+    {
+      "family": "103b2",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            44,
+            24,
+            43,
+            19,
+            55,
+            25,
+            54,
+            0,
+            25,
+            39,
+            20,
+            46,
+            25,
+            55,
+            21,
+            40,
+            42,
+            47,
+            41,
+            49,
+            25,
+            41,
+            34,
+            41,
+            1
+          ],
+          "prime": 59
+        }
+      ],
+      "token": "case-06"
+    },
+    {
+      "family": "11952",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            135,
+            139,
+            197,
+            231,
+            184,
+            197,
+            54,
+            153,
+            70,
+            78,
+            175,
+            96,
+            163,
+            31,
+            13,
+            238,
+            16,
+            226,
+            66,
+            31,
+            43,
+            201,
+            92,
+            1
+          ],
+          "prime": 239
+        }
+      ],
+      "token": "case-06"
+    },
+    {
+      "family": "074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            33,
+            2,
+            24,
+            27,
+            15,
+            9,
+            12,
+            40,
+            19,
+            2,
+            48,
+            22,
+            52,
+            44,
+            22,
+            22,
+            10,
+            38,
+            16,
+            11,
+            29,
+            25,
+            2,
+            2,
+            1
+          ],
+          "prime": 59
+        }
+      ],
+      "token": "case-06"
+    },
+    {
+      "family": "a1-fibration-01",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            38,
+            1,
+            7,
+            24,
+            7,
+            15,
+            25,
+            6,
+            23,
+            37,
+            25,
+            31,
+            24,
+            35,
+            50,
+            37,
+            9,
+            5,
+            37,
+            35,
+            53,
+            24,
+            18,
+            55,
+            1
+          ],
+          "prime": 59
+        }
+      ],
+      "token": "case-06"
+    },
+    {
+      "family": "a1-fibration-05",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            26,
+            29,
+            8,
+            29,
+            3,
+            0,
+            0,
+            23,
+            30,
+            31,
+            36,
+            9,
+            1,
+            18,
+            35,
+            33,
+            26,
+            23,
+            26,
+            20,
+            14,
+            8,
+            27,
+            20,
+            1
+          ],
+          "prime": 43
+        }
+      ],
+      "token": "case-06"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            53,
+            18,
+            57,
+            40,
+            36,
+            50,
+            20,
+            53,
+            57,
+            11,
+            53,
+            28,
+            34,
+            58,
+            35,
+            15,
+            57,
+            27,
+            38,
+            11,
+            21,
+            33,
+            26,
+            20,
+            1
+          ],
+          "prime": 59
+        }
+      ],
+      "token": "case-06"
+    },
+    {
+      "family": "curve398-p16875",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            10,
+            18,
+            38,
+            26,
+            49,
+            4,
+            48,
+            52,
+            54,
+            15,
+            39,
+            48,
+            9,
+            48,
+            48,
+            30,
+            28,
+            2,
+            32,
+            9,
+            24,
+            31,
+            6,
+            30,
+            1
+          ],
+          "prime": 59
+        }
+      ],
+      "token": "case-06"
+    },
+    {
+      "family": "103b2",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            13,
+            11,
+            27,
+            25,
+            23,
+            15,
+            2,
+            2,
+            12,
+            15,
+            16,
+            7,
+            9,
+            6,
+            2,
+            7,
+            18,
+            27,
+            27,
+            23,
+            3,
+            6,
+            8,
+            21,
+            1
+          ],
+          "prime": 29
+        }
+      ],
+      "token": "case-07"
+    },
+    {
+      "family": "11952",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            34,
+            28,
+            19,
+            60,
+            14,
+            38,
+            10,
+            9,
+            3,
+            44,
+            63,
+            52,
+            8,
+            58,
+            47,
+            56,
+            58,
+            23,
+            62,
+            6,
+            59,
+            59,
+            52,
+            1
+          ],
+          "prime": 67
+        }
+      ],
+      "token": "case-07"
+    },
+    {
+      "family": "074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            56,
+            4,
+            35,
+            12,
+            33,
+            10,
+            44,
+            47,
+            21,
+            3,
+            29,
+            12,
+            42,
+            30,
+            46,
+            33,
+            40,
+            58,
+            39,
+            14,
+            41,
+            51,
+            0,
+            2,
+            1
+          ],
+          "prime": 59
+        }
+      ],
+      "token": "case-07"
+    },
+    {
+      "family": "a1-fibration-01",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            27,
+            36,
+            11,
+            87,
+            28,
+            18,
+            25,
+            42,
+            78,
+            48,
+            66,
+            85,
+            11,
+            7,
+            88,
+            45,
+            82,
+            54,
+            78,
+            61,
+            27,
+            37,
+            14,
+            74,
+            1
+          ],
+          "prime": 89
+        }
+      ],
+      "token": "case-07"
+    },
+    {
+      "family": "a1-fibration-05",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            97,
+            31,
+            103,
+            88,
+            31,
+            28,
+            62,
+            95,
+            12,
+            41,
+            50,
+            33,
+            78,
+            40,
+            70,
+            104,
+            52,
+            60,
+            27,
+            106,
+            36,
+            88,
+            24,
+            17,
+            1
+          ],
+          "prime": 109
+        }
+      ],
+      "token": "case-07"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            46,
+            37,
+            43,
+            48,
+            48,
+            56,
+            51,
+            11,
+            35,
+            43,
+            49,
+            19,
+            53,
+            10,
+            30,
+            38,
+            25,
+            6,
+            21,
+            32,
+            44,
+            1,
+            51,
+            26,
+            1
+          ],
+          "prime": 59
+        }
+      ],
+      "token": "case-07"
+    },
+    {
+      "family": "curve398-p16875",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            5,
+            50,
+            74,
+            66,
+            60,
+            20,
+            21,
+            82,
+            70,
+            48,
+            82,
+            68,
+            29,
+            65,
+            8,
+            75,
+            60,
+            1,
+            0,
+            49,
+            23,
+            12,
+            14,
+            83,
+            1
+          ],
+          "prime": 89
+        }
+      ],
+      "token": "case-07"
+    },
+    {
+      "family": "103b2",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            50,
+            54,
+            67,
+            57,
+            62,
+            21,
+            14,
+            69,
+            53,
+            14,
+            1,
+            17,
+            54,
+            6,
+            57,
+            22,
+            50,
+            17,
+            16,
+            12,
+            69,
+            14,
+            20,
+            23,
+            1
+          ],
+          "prime": 71
+        }
+      ],
+      "token": "case-08"
+    },
+    {
+      "family": "11952",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            5,
+            29,
+            28,
+            31,
+            10,
+            41,
+            6,
+            20,
+            7,
+            18,
+            19,
+            39,
+            14,
+            15,
+            11,
+            20,
+            36,
+            21,
+            3,
+            0,
+            36,
+            2,
+            39,
+            1
+          ],
+          "prime": 43
+        }
+      ],
+      "token": "case-08"
+    },
+    {
+      "family": "074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            23,
+            30,
+            36,
+            12,
+            34,
+            26,
+            40,
+            38,
+            10,
+            13,
+            18,
+            6,
+            21,
+            13,
+            16,
+            38,
+            45,
+            27,
+            40,
+            37,
+            43,
+            23,
+            2,
+            3,
+            1
+          ],
+          "prime": 47
+        }
+      ],
+      "token": "case-08"
+    },
+    {
+      "family": "a1-fibration-01",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            20,
+            2,
+            37,
+            17,
+            38,
+            11,
+            2,
+            37,
+            12,
+            10,
+            37,
+            7,
+            43,
+            5,
+            41,
+            42,
+            21,
+            32,
+            44,
+            17,
+            2,
+            42,
+            0,
+            27,
+            1
+          ],
+          "prime": 47
+        }
+      ],
+      "token": "case-08"
+    },
+    {
+      "family": "a1-fibration-05",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            28,
+            31,
+            38,
+            22,
+            4,
+            40,
+            29,
+            21,
+            24,
+            1,
+            11,
+            38,
+            21,
+            16,
+            29,
+            31,
+            38,
+            14,
+            33,
+            9,
+            28,
+            29,
+            2,
+            14,
+            1
+          ],
+          "prime": 43
+        }
+      ],
+      "token": "case-08"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            38,
+            39,
+            12,
+            12,
+            46,
+            4,
+            37,
+            39,
+            16,
+            43,
+            1,
+            10,
+            15,
+            32,
+            39,
+            21,
+            37,
+            11,
+            8,
+            24,
+            36,
+            30,
+            24,
+            35,
+            1
+          ],
+          "prime": 47
+        }
+      ],
+      "token": "case-08"
+    },
+    {
+      "family": "curve398-p16875",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            11,
+            76,
+            14,
+            110,
+            7,
+            71,
+            12,
+            111,
+            102,
+            8,
+            58,
+            12,
+            91,
+            3,
+            110,
+            71,
+            52,
+            14,
+            82,
+            25,
+            86,
+            21,
+            129,
+            41,
+            1
+          ],
+          "prime": 149
+        }
+      ],
+      "token": "case-08"
+    },
+    {
+      "family": "103b2",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            10,
+            20,
+            9,
+            5,
+            15,
+            16,
+            19,
+            9,
+            10,
+            20,
+            18,
+            5,
+            8,
+            19,
+            14,
+            12,
+            8,
+            3,
+            0,
+            7,
+            2,
+            4,
+            4,
+            5,
+            1
+          ],
+          "prime": 23
+        }
+      ],
+      "token": "case-09"
+    },
+    {
+      "family": "11952",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            21,
+            2,
+            4,
+            22,
+            16,
+            3,
+            16,
+            20,
+            21,
+            17,
+            5,
+            0,
+            3,
+            19,
+            21,
+            6,
+            15,
+            13,
+            15,
+            12,
+            8,
+            22,
+            10,
+            1
+          ],
+          "prime": 23
+        }
+      ],
+      "token": "case-09"
+    },
+    {
+      "family": "074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            6,
+            55,
+            40,
+            27,
+            11,
+            67,
+            46,
+            6,
+            34,
+            0,
+            64,
+            25,
+            17,
+            33,
+            7,
+            11,
+            43,
+            4,
+            4,
+            2,
+            47,
+            6,
+            31,
+            19,
+            1
+          ],
+          "prime": 71
+        }
+      ],
+      "token": "case-09"
+    },
+    {
+      "family": "a1-fibration-01",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            65,
+            54,
+            50,
+            21,
+            36,
+            2,
+            13,
+            94,
+            71,
+            20,
+            78,
+            79,
+            85,
+            51,
+            58,
+            8,
+            23,
+            18,
+            55,
+            90,
+            3,
+            92,
+            78,
+            86,
+            1
+          ],
+          "prime": 103
+        }
+      ],
+      "token": "case-09"
+    },
+    {
+      "family": "a1-fibration-05",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            26,
+            29,
+            8,
+            29,
+            3,
+            0,
+            0,
+            23,
+            30,
+            31,
+            36,
+            9,
+            1,
+            18,
+            35,
+            33,
+            26,
+            23,
+            26,
+            20,
+            14,
+            8,
+            27,
+            20,
+            1
+          ],
+          "prime": 43
+        }
+      ],
+      "token": "case-09"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            37,
+            4,
+            2,
+            20,
+            70,
+            8,
+            19,
+            57,
+            52,
+            62,
+            18,
+            63,
+            16,
+            59,
+            58,
+            39,
+            69,
+            57,
+            12,
+            32,
+            18,
+            40,
+            59,
+            8,
+            1
+          ],
+          "prime": 71
+        }
+      ],
+      "token": "case-09"
+    },
+    {
+      "family": "curve398-p16875",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            16,
+            89,
+            81,
+            72,
+            52,
+            65,
+            14,
+            58,
+            41,
+            42,
+            89,
+            6,
+            18,
+            82,
+            64,
+            9,
+            24,
+            12,
+            13,
+            85,
+            70,
+            7,
+            46,
+            98,
+            1
+          ],
+          "prime": 103
+        }
+      ],
+      "token": "case-09"
+    },
+    {
+      "family": "103b2",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            89,
+            98,
+            39,
+            4,
+            68,
+            106,
+            80,
+            1,
+            0,
+            45,
+            75,
+            7,
+            20,
+            25,
+            77,
+            22,
+            19,
+            106,
+            35,
+            37,
+            46,
+            75,
+            11,
+            96,
+            1
+          ],
+          "prime": 109
+        }
+      ],
+      "token": "case-10"
+    },
+    {
+      "family": "11952",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            5,
+            29,
+            28,
+            31,
+            10,
+            41,
+            6,
+            20,
+            7,
+            18,
+            19,
+            39,
+            14,
+            15,
+            11,
+            20,
+            36,
+            21,
+            3,
+            0,
+            36,
+            2,
+            39,
+            1
+          ],
+          "prime": 43
+        }
+      ],
+      "token": "case-10"
+    },
+    {
+      "family": "074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            56,
+            4,
+            35,
+            12,
+            33,
+            10,
+            44,
+            47,
+            21,
+            3,
+            29,
+            12,
+            42,
+            30,
+            46,
+            33,
+            40,
+            58,
+            39,
+            14,
+            41,
+            51,
+            0,
+            2,
+            1
+          ],
+          "prime": 59
+        }
+      ],
+      "token": "case-10"
+    },
+    {
+      "family": "a1-fibration-01",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            53,
+            34,
+            28,
+            44,
+            33,
+            65,
+            66,
+            46,
+            77,
+            22,
+            37,
+            26,
+            70,
+            39,
+            54,
+            67,
+            26,
+            31,
+            78,
+            43,
+            23,
+            79,
+            38,
+            45,
+            1
+          ],
+          "prime": 83
+        }
+      ],
+      "token": "case-10"
+    },
+    {
+      "family": "a1-fibration-05",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            28,
+            31,
+            38,
+            22,
+            4,
+            40,
+            29,
+            21,
+            24,
+            1,
+            11,
+            38,
+            21,
+            16,
+            29,
+            31,
+            38,
+            14,
+            33,
+            9,
+            28,
+            29,
+            2,
+            14,
+            1
+          ],
+          "prime": 43
+        }
+      ],
+      "token": "case-10"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            46,
+            37,
+            43,
+            48,
+            48,
+            56,
+            51,
+            11,
+            35,
+            43,
+            49,
+            19,
+            53,
+            10,
+            30,
+            38,
+            25,
+            6,
+            21,
+            32,
+            44,
+            1,
+            51,
+            26,
+            1
+          ],
+          "prime": 59
+        }
+      ],
+      "token": "case-10"
+    },
+    {
+      "family": "curve398-p16875",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            74,
+            76,
+            35,
+            81,
+            20,
+            45,
+            57,
+            71,
+            81,
+            7,
+            67,
+            37,
+            51,
+            50,
+            58,
+            48,
+            61,
+            67,
+            61,
+            19,
+            70,
+            81,
+            12,
+            48,
+            1
+          ],
+          "prime": 83
+        }
+      ],
+      "token": "case-10"
+    },
+    {
+      "family": "103b2",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            89,
+            98,
+            39,
+            4,
+            68,
+            106,
+            80,
+            1,
+            0,
+            45,
+            75,
+            7,
+            20,
+            25,
+            77,
+            22,
+            19,
+            106,
+            35,
+            37,
+            46,
+            75,
+            11,
+            96,
+            1
+          ],
+          "prime": 109
+        }
+      ],
+      "token": "case-11"
+    },
+    {
+      "family": "11952",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            55,
+            59,
+            46,
+            46,
+            69,
+            57,
+            47,
+            34,
+            71,
+            5,
+            30,
+            29,
+            56,
+            15,
+            50,
+            27,
+            37,
+            28,
+            23,
+            64,
+            63,
+            37,
+            30,
+            71,
+            1
+          ],
+          "prime": 73
+        }
+      ],
+      "token": "case-11"
+    },
+    {
+      "family": "074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            15,
+            18,
+            24,
+            40,
+            56,
+            32,
+            58,
+            59,
+            64,
+            24,
+            58,
+            22,
+            9,
+            41,
+            22,
+            46,
+            6,
+            44,
+            54,
+            50,
+            38,
+            60,
+            13,
+            44,
+            1
+          ],
+          "prime": 67
+        }
+      ],
+      "token": "case-11"
+    },
+    {
+      "family": "a1-fibration-01",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            1,
+            13,
+            103,
+            14,
+            79,
+            67,
+            99,
+            33,
+            87,
+            2,
+            19,
+            102,
+            56,
+            96,
+            88,
+            55,
+            68,
+            77,
+            102,
+            39,
+            60,
+            92,
+            23,
+            1
+          ],
+          "prime": 109
+        }
+      ],
+      "token": "case-11"
+    },
+    {
+      "family": "a1-fibration-05",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            41,
+            55,
+            25,
+            11,
+            13,
+            3,
+            44,
+            48,
+            49,
+            28,
+            13,
+            25,
+            36,
+            28,
+            1,
+            15,
+            33,
+            8,
+            47,
+            24,
+            18,
+            8,
+            44,
+            20,
+            1
+          ],
+          "prime": 61
+        }
+      ],
+      "token": "case-11"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            8,
+            24,
+            57,
+            55,
+            7,
+            49,
+            14,
+            19,
+            32,
+            17,
+            58,
+            33,
+            62,
+            52,
+            13,
+            66,
+            39,
+            27,
+            26,
+            63,
+            13,
+            51,
+            59,
+            40,
+            1
+          ],
+          "prime": 67
+        }
+      ],
+      "token": "case-11"
+    },
+    {
+      "family": "curve398-p16875",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            65,
+            14,
+            48,
+            13,
+            17,
+            21,
+            75,
+            105,
+            95,
+            18,
+            93,
+            63,
+            14,
+            57,
+            31,
+            107,
+            77,
+            57,
+            69,
+            24,
+            102,
+            97,
+            88,
+            1
+          ],
+          "prime": 109
+        }
+      ],
+      "token": "case-11"
+    },
+    {
+      "family": "103b2",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            50,
+            54,
+            67,
+            57,
+            62,
+            21,
+            14,
+            69,
+            53,
+            14,
+            1,
+            17,
+            54,
+            6,
+            57,
+            22,
+            50,
+            17,
+            16,
+            12,
+            69,
+            14,
+            20,
+            23,
+            1
+          ],
+          "prime": 71
+        }
+      ],
+      "token": "case-12"
+    },
+    {
+      "family": "11952",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            24,
+            0,
+            11,
+            7,
+            7,
+            8,
+            2,
+            4,
+            2,
+            6,
+            1,
+            11,
+            9,
+            24,
+            9,
+            19,
+            2,
+            8,
+            22,
+            3,
+            9,
+            1,
+            10,
+            23,
+            1
+          ],
+          "prime": 29
+        }
+      ],
+      "token": "case-12"
+    },
+    {
+      "family": "074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            16,
+            19,
+            3,
+            7,
+            20,
+            20,
+            7,
+            20,
+            16,
+            27,
+            17,
+            17,
+            20,
+            7,
+            28,
+            17,
+            22,
+            18,
+            18,
+            18,
+            12,
+            10,
+            1,
+            0,
+            1
+          ],
+          "prime": 29
+        }
+      ],
+      "token": "case-12"
+    },
+    {
+      "family": "a1-fibration-01",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            67,
+            71,
+            54,
+            24,
+            64,
+            43,
+            59,
+            8,
+            62,
+            13,
+            27,
+            31,
+            27,
+            2,
+            8,
+            5,
+            11,
+            28,
+            54,
+            41,
+            61,
+            51,
+            58,
+            1
+          ],
+          "prime": 73
+        }
+      ],
+      "token": "case-12"
+    },
+    {
+      "family": "a1-fibration-05",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            57,
+            91,
+            31,
+            14,
+            3,
+            20,
+            41,
+            43,
+            15,
+            87,
+            14,
+            90,
+            11,
+            31,
+            67,
+            78,
+            72,
+            21,
+            41,
+            25,
+            90,
+            17,
+            51,
+            11,
+            1
+          ],
+          "prime": 103
+        }
+      ],
+      "token": "case-12"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            9,
+            6,
+            23,
+            10,
+            17,
+            14,
+            3,
+            9,
+            26,
+            4,
+            26,
+            6,
+            27,
+            17,
+            1,
+            15,
+            12,
+            10,
+            2,
+            13,
+            8,
+            20,
+            19,
+            28,
+            1
+          ],
+          "prime": 29
+        }
+      ],
+      "token": "case-12"
+    },
+    {
+      "family": "curve398-p16875",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            13,
+            15,
+            60,
+            3,
+            27,
+            1,
+            67,
+            16,
+            19,
+            52,
+            5,
+            34,
+            21,
+            52,
+            2,
+            50,
+            18,
+            46,
+            54,
+            42,
+            49,
+            12,
+            26,
+            1
+          ],
+          "prime": 73
+        }
+      ],
+      "token": "case-12"
+    },
+    {
+      "family": "103b2",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            34,
+            32,
+            46,
+            28,
+            25,
+            43,
+            39,
+            56,
+            20,
+            41,
+            6,
+            24,
+            34,
+            29,
+            32,
+            49,
+            4,
+            32,
+            69,
+            5,
+            65,
+            36,
+            38,
+            23,
+            1
+          ],
+          "prime": 71
+        }
+      ],
+      "token": "case-13"
+    },
+    {
+      "family": "11952",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            23,
+            31,
+            17,
+            15,
+            34,
+            44,
+            36,
+            63,
+            58,
+            58,
+            10,
+            59,
+            45,
+            59,
+            71,
+            20,
+            16,
+            50,
+            65,
+            44,
+            39,
+            23,
+            45,
+            5,
+            1
+          ],
+          "prime": 73
+        }
+      ],
+      "token": "case-13"
+    },
+    {
+      "family": "074d9",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            16,
+            4,
+            7,
+            2,
+            51,
+            36,
+            13,
+            43,
+            39,
+            48,
+            44,
+            7,
+            38,
+            58,
+            58,
+            26,
+            30,
+            53,
+            25,
+            11,
+            21,
+            50,
+            36,
+            1
+          ],
+          "prime": 59
+        }
+      ],
+      "token": "case-13"
+    },
+    {
+      "family": "a1-fibration-01",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            35,
+            20,
+            31,
+            56,
+            28,
+            19,
+            45,
+            13,
+            4,
+            37,
+            21,
+            52,
+            0,
+            5,
+            20,
+            18,
+            66,
+            10,
+            37,
+            52,
+            70,
+            17,
+            12,
+            33,
+            1
+          ],
+          "prime": 71
+        }
+      ],
+      "token": "case-13"
+    },
+    {
+      "family": "a1-fibration-05",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            41,
+            55,
+            25,
+            11,
+            13,
+            3,
+            44,
+            48,
+            49,
+            28,
+            13,
+            25,
+            36,
+            28,
+            1,
+            15,
+            33,
+            8,
+            47,
+            24,
+            18,
+            8,
+            44,
+            20,
+            1
+          ],
+          "prime": 61
+        }
+      ],
+      "token": "case-13"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            10,
+            29,
+            46,
+            35,
+            0,
+            13,
+            10,
+            14,
+            8,
+            13,
+            39,
+            28,
+            10,
+            22,
+            7,
+            16,
+            51,
+            32,
+            9,
+            54,
+            10,
+            57,
+            52,
+            1
+          ],
+          "prime": 59
+        }
+      ],
+      "token": "case-13"
+    },
+    {
+      "family": "curve398-p16875",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            1,
+            24,
+            16,
+            53,
+            2,
+            67,
+            50,
+            17,
+            17,
+            36,
+            10,
+            65,
+            69,
+            41,
+            18,
+            59,
+            24,
+            34,
+            42,
+            67,
+            56,
+            29,
+            9,
+            66,
+            1
+          ],
+          "prime": 71
+        }
+      ],
+      "token": "case-13"
+    },
+    {
+      "family": "103b2",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            34,
+            32,
+            46,
+            28,
+            25,
+            43,
+            39,
+            56,
+            20,
+            41,
+            6,
+            24,
+            34,
+            29,
+            32,
+            49,
+            4,
+            32,
+            69,
+            5,
+            65,
+            36,
+            38,
+            23,
+            1
+          ],
+          "prime": 71
+        }
+      ],
+      "token": "case-14"
+    },
+    {
+      "family": "11952",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            62,
+            56,
+            7,
+            48,
+            103,
+            15,
+            97,
+            40,
+            107,
+            96,
+            1,
+            45,
+            44,
+            93,
+            2,
+            81,
+            66,
+            8,
+            30,
+            107,
+            98,
+            48,
+            88,
+            76,
+            1
+          ],
+          "prime": 113
+        }
+      ],
+      "token": "case-14"
+    },
+    {
+      "family": "074d9",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            95,
+            8,
+            67,
+            59,
+            32,
+            67,
+            47,
+            66,
+            84,
+            83,
+            28,
+            9,
+            62,
+            90,
+            60,
+            55,
+            63,
+            35,
+            47,
+            78,
+            31,
+            56,
+            32,
+            1
+          ],
+          "prime": 97
+        }
+      ],
+      "token": "case-14"
+    },
+    {
+      "family": "a1-fibration-01",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            35,
+            20,
+            31,
+            56,
+            28,
+            19,
+            45,
+            13,
+            4,
+            37,
+            21,
+            52,
+            0,
+            5,
+            20,
+            18,
+            66,
+            10,
+            37,
+            52,
+            70,
+            17,
+            12,
+            33,
+            1
+          ],
+          "prime": 71
+        }
+      ],
+      "token": "case-14"
+    },
+    {
+      "family": "a1-fibration-05",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            10,
+            17,
+            57,
+            102,
+            72,
+            63,
+            5,
+            52,
+            82,
+            12,
+            79,
+            57,
+            66,
+            87,
+            82,
+            25,
+            43,
+            12,
+            59,
+            37,
+            81,
+            23,
+            111,
+            45,
+            1
+          ],
+          "prime": 113
+        }
+      ],
+      "token": "case-14"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            39,
+            93,
+            27,
+            59,
+            71,
+            66,
+            73,
+            60,
+            33,
+            20,
+            80,
+            46,
+            54,
+            40,
+            88,
+            86,
+            70,
+            16,
+            22,
+            17,
+            43,
+            93,
+            13,
+            1
+          ],
+          "prime": 97
+        }
+      ],
+      "token": "case-14"
+    },
+    {
+      "family": "curve398-p16875",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            1,
+            24,
+            16,
+            53,
+            2,
+            67,
+            50,
+            17,
+            17,
+            36,
+            10,
+            65,
+            69,
+            41,
+            18,
+            59,
+            24,
+            34,
+            42,
+            67,
+            56,
+            29,
+            9,
+            66,
+            1
+          ],
+          "prime": 71
+        }
+      ],
+      "token": "case-14"
+    },
+    {
+      "family": "103b2",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            13,
+            78,
+            50,
+            45,
+            77,
+            22,
+            59,
+            69,
+            40,
+            3,
+            48,
+            41,
+            2,
+            44,
+            33,
+            74,
+            71,
+            2,
+            55,
+            15,
+            33,
+            56,
+            77,
+            18,
+            1
+          ],
+          "prime": 83
+        }
+      ],
+      "token": "case-15"
+    },
+    {
+      "family": "11952",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            73,
+            5,
+            38,
+            14,
+            38,
+            79,
+            71,
+            55,
+            44,
+            80,
+            65,
+            45,
+            40,
+            30,
+            58,
+            25,
+            13,
+            47,
+            7,
+            67,
+            57,
+            0,
+            4,
+            45,
+            1
+          ],
+          "prime": 83
+        }
+      ],
+      "token": "case-15"
+    },
+    {
+      "family": "074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            36,
+            42,
+            75,
+            61,
+            38,
+            1,
+            73,
+            1,
+            45,
+            53,
+            28,
+            15,
+            16,
+            62,
+            15,
+            65,
+            28,
+            80,
+            37,
+            69,
+            81,
+            11,
+            38,
+            45,
+            1
+          ],
+          "prime": 83
+        }
+      ],
+      "token": "case-15"
+    },
+    {
+      "family": "a1-fibration-01",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            8,
+            17,
+            15,
+            1,
+            46,
+            43,
+            46,
+            3,
+            30,
+            34,
+            36,
+            34,
+            8,
+            5,
+            29,
+            9,
+            2,
+            28,
+            5,
+            2,
+            6,
+            8,
+            42,
+            1
+          ],
+          "prime": 47
+        }
+      ],
+      "token": "case-15"
+    },
+    {
+      "family": "a1-fibration-05",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            67,
+            14,
+            13,
+            13,
+            15,
+            45,
+            10,
+            24,
+            52,
+            41,
+            5,
+            35,
+            8,
+            4,
+            55,
+            58,
+            67,
+            58,
+            29,
+            23,
+            58,
+            29,
+            25,
+            63,
+            1
+          ],
+          "prime": 83
+        }
+      ],
+      "token": "case-15"
+    },
+    {
+      "family": "historic-lineage-074d9",
+      "rational_isomorphisms": 0,
+      "rational_preimages": 0,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            51,
+            55,
+            51,
+            59,
+            17,
+            59,
+            55,
+            7,
+            38,
+            26,
+            47,
+            59,
+            18,
+            64,
+            36,
+            24,
+            30,
+            8,
+            40,
+            31,
+            20,
+            38,
+            67,
+            17,
+            1
+          ],
+          "prime": 83
+        }
+      ],
+      "token": "case-15"
+    },
+    {
+      "family": "curve398-p16875",
+      "rational_isomorphisms": 1,
+      "rational_preimages": 1,
+      "root_exclusion_certificates": [
+        {
+          "polynomial_mod_p": [
+            22,
+            13,
+            2,
+            35,
+            44,
+            47,
+            19,
+            6,
+            52,
+            5,
+            5,
+            39,
+            36,
+            67,
+            42,
+            70,
+            36,
+            22,
+            12,
+            36,
+            13,
+            10,
+            28,
+            1
+          ],
+          "prime": 71
+        }
+      ],
+      "token": "case-15"
+    }
+  ],
+  "schema": "rank-jump.second-generic-presentation-verification.v1",
+  "status": "PASS",
+  "target_family_cells": 112
+}

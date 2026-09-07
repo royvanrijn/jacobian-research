@@ -1,5 +1,10 @@
 # Class creation: new unramified covers beyond the global pool
 
+Follow-up: [other generic fibres do not supply the retained jump blocks](OTHER_GENERIC_FIBRES_DO_NOT_SUPPLY_THE_JUMP_BLOCK.md)
+tests 112 equation-only fibre correspondences. Rational matches are global
+duplicates; a quadratic sign obstruction kills the entire rational trace
+span on every nonrational component.
+
 The large-jump problem now has a more specific target than an enlarged
 collision statistic. Several successful fibres necessarily have an
 additional **unramified quadratic-cover block of their cubic number field**
