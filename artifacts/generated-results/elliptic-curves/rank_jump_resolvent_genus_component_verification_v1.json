@@ -1,0 +1,207 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_resolvent_genus_component_inputs_v1.json": "d594f2a0a7fc64e4d687fb4b9f2bada23f2eb2199395efe520091a8d4f0d67cb",
+    "artifacts/generated-results/elliptic-curves/rank_jump_resolvent_genus_component_v1.json": "7592ef38f7be62d2311ca63f3c2626b5921875e2a3c0c4b44b4ee82a92c56fe1",
+    "artifacts/generated-results/elliptic-curves/rank_jump_standard_s3_class_module_v1.json": "4ff0fc3ee6001988ed9ff6c26cfd76c2be36bd2a42eb3be049f6b757b9be58b4",
+    "elliptic-curves/rank-jump/standard_s3_class_module.py": "b5e31d128f547974064267dd0a2694100a8a7da70a1284005d102ee083abad63",
+    "elliptic-curves/rank-jump/verify_resolvent_genus_component.py": "963299735b4020a8509418ecbfec38d2558120c06503d7218e531a7f0c9617da"
+  },
+  "boundary": "Exact quadratic-resolvent S-class 2-dimensions by genus theory and independent local Hilbert constraints; four small certified class-group regressions. No research-field class group or additional elliptic class is constructed.",
+  "certified_input_primes": 79,
+  "local_Hilbert_bit_checks": 1933,
+  "rows": [
+    {
+      "reason": "Retained complete factorization/local set unavailable; no retry",
+      "status": "UNKNOWN",
+      "token": "case-00"
+    },
+    {
+      "S_genus_dimension": 0,
+      "ordinary_genus_dimension": 1,
+      "quadratic_discriminant": "-1583213818193290406086087507877231293304964951944595762308245558971019053317132741654022595373457363681751452170684958838694565293059972",
+      "standard_component_contribution": 0,
+      "status": "PASS",
+      "token": "case-01"
+    },
+    {
+      "S_genus_dimension": 0,
+      "ordinary_genus_dimension": 3,
+      "quadratic_discriminant": "14590302306182795653540689285522140640458760308968582781406375102424908251282509249852942194910335295630558857209436",
+      "standard_component_contribution": 0,
+      "status": "PASS",
+      "token": "case-02"
+    },
+    {
+      "S_genus_dimension": 0,
+      "ordinary_genus_dimension": 4,
+      "quadratic_discriminant": "4925564657231041174309566243894320731882025881338727594499098430874597871838647643067955751670642560405913942166653536837788395661",
+      "standard_component_contribution": 0,
+      "status": "PASS",
+      "token": "case-03"
+    },
+    {
+      "S_genus_dimension": 0,
+      "ordinary_genus_dimension": 9,
+      "quadratic_discriminant": "63018183083244651623047362490606129666234739674366181163358145575263353427460493901493211690808745888725319230581720",
+      "standard_component_contribution": 0,
+      "status": "PASS",
+      "token": "case-04"
+    },
+    {
+      "S_genus_dimension": 0,
+      "ordinary_genus_dimension": 3,
+      "quadratic_discriminant": "-303750392838410802807705312285186704100698332052696032729436605735327210517994881070364546611504439456553317586782678956305187343864946003183",
+      "standard_component_contribution": 0,
+      "status": "PASS",
+      "token": "case-05"
+    },
+    {
+      "S_genus_dimension": 0,
+      "ordinary_genus_dimension": 8,
+      "quadratic_discriminant": "-11745125294215423944325119488871324777516375948433450278279447283566896380111330979951999442580389905547198082316321948728965860",
+      "standard_component_contribution": 0,
+      "status": "PASS",
+      "token": "case-06"
+    },
+    {
+      "S_genus_dimension": 1,
+      "ordinary_genus_dimension": 5,
+      "quadratic_discriminant": "102703840505676544458614476921151849181659915969522594716620179164277222005200002530104324565939879595519697489358568018158311805132077050767107685148215191685",
+      "standard_component_contribution": 0,
+      "status": "PASS",
+      "token": "case-07"
+    },
+    {
+      "reason": "Retained complete factorization/local set unavailable; no retry",
+      "status": "UNKNOWN",
+      "token": "case-08"
+    },
+    {
+      "S_genus_dimension": 0,
+      "ordinary_genus_dimension": 10,
+      "quadratic_discriminant": "9996718070343809337365047311211258311157480738152049719831572923958331786280951212476852072251322333154539906168520031692",
+      "standard_component_contribution": 0,
+      "status": "PASS",
+      "token": "case-09"
+    },
+    {
+      "reason": "Retained complete factorization/local set unavailable; no retry",
+      "status": "UNKNOWN",
+      "token": "case-10"
+    },
+    {
+      "reason": "Retained complete factorization/local set unavailable; no retry",
+      "status": "UNKNOWN",
+      "token": "case-11"
+    },
+    {
+      "reason": "Retained complete factorization/local set unavailable; no retry",
+      "status": "UNKNOWN",
+      "token": "case-12"
+    },
+    {
+      "S_genus_dimension": 0,
+      "ordinary_genus_dimension": 5,
+      "quadratic_discriminant": "-752277724884429603556499627496577219114608773920079457931321069663132744982183297505569516372870314046056607683593379327741881715",
+      "standard_component_contribution": 0,
+      "status": "PASS",
+      "token": "case-13"
+    },
+    {
+      "S_genus_dimension": 0,
+      "ordinary_genus_dimension": 2,
+      "quadratic_discriminant": "2319348355840793680014289749859465262253655395058932289474378635276782174223531055738208365301710598272915423820568079569354891464149",
+      "standard_component_contribution": 0,
+      "status": "PASS",
+      "token": "case-14"
+    },
+    {
+      "S_genus_dimension": 0,
+      "ordinary_genus_dimension": 5,
+      "quadratic_discriminant": "15303059887649553153623957740436849721895215697070839553145377754084498137912865717975857396796632303266778833109260",
+      "standard_component_contribution": 0,
+      "status": "PASS",
+      "token": "case-15"
+    },
+    {
+      "S_genus_dimension": 0,
+      "ordinary_genus_dimension": 3,
+      "quadratic_discriminant": "446022411980768316957534567829110491135708202981077146177123710048012",
+      "standard_component_contribution": 0,
+      "status": "PASS",
+      "token": "reference-00"
+    }
+  ],
+  "schema": "rank-jump.resolvent-genus-component-verification.v1",
+  "small_controls": [
+    {
+      "S_genus_dimension": 1,
+      "S_prime_class_coordinates": [
+        0,
+        0
+      ],
+      "bnfcertify": true,
+      "direct_S_class_two_dimension": 1,
+      "ordinary_class_group_invariants": [
+        4
+      ],
+      "ordinary_genus_dimension": 1,
+      "quadratic_discriminant": "-56",
+      "standard_component_contribution": 0,
+      "token": "control--56"
+    },
+    {
+      "S_genus_dimension": 0,
+      "S_prime_class_coordinates": [
+        2,
+        3,
+        3
+      ],
+      "bnfcertify": true,
+      "direct_S_class_two_dimension": 0,
+      "ordinary_class_group_invariants": [
+        2,
+        2
+      ],
+      "ordinary_genus_dimension": 2,
+      "quadratic_discriminant": "-84",
+      "standard_component_contribution": 0,
+      "token": "control--84"
+    },
+    {
+      "S_genus_dimension": 0,
+      "S_prime_class_coordinates": [
+        0,
+        0
+      ],
+      "bnfcertify": true,
+      "direct_S_class_two_dimension": 0,
+      "ordinary_class_group_invariants": [],
+      "ordinary_genus_dimension": 0,
+      "quadratic_discriminant": "12",
+      "standard_component_contribution": 0,
+      "token": "control-12"
+    },
+    {
+      "S_genus_dimension": 1,
+      "S_prime_class_coordinates": [
+        0,
+        0
+      ],
+      "bnfcertify": true,
+      "direct_S_class_two_dimension": 1,
+      "ordinary_class_group_invariants": [
+        2
+      ],
+      "ordinary_genus_dimension": 1,
+      "quadratic_discriminant": "136",
+      "standard_component_contribution": 0,
+      "token": "control-136"
+    }
+  ],
+  "software": {
+    "pari": "[2, 17, 3]",
+    "sage": "10.9"
+  },
+  "status": "PASS"
+}

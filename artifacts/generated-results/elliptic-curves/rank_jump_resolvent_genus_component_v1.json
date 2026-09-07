@@ -1,0 +1,4230 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_resolvent_genus_component_inputs_v1.json": "d594f2a0a7fc64e4d687fb4b9f2bada23f2eb2199395efe520091a8d4f0d67cb",
+    "elliptic-curves/rank-jump/RESOLVENT_GENUS_COMPONENT_PROTOCOL.json": "488254c2148677f1ae1aafdc51a2c5f76c26ed5c08eeb49023879ae94133da1e",
+    "elliptic-curves/rank-jump/resolvent_genus_component.py": "b7c088cc1710fcfb8359cbde6a70dfd2df4643b50d275ef7858f9b27b653fc1a"
+  },
+  "boundary": "Exact quadratic resolvent genus component with S splitting; its S3 standard projection is zero by the theorem in the note. Additional cubic strict classes and their solubility are not computed.",
+  "rows": [
+    {
+      "reason": "Retained complete factorization/local set unavailable; no retry",
+      "status": "UNKNOWN",
+      "token": "case-00"
+    },
+    {
+      "S_genus_basis_masks": [],
+      "S_genus_dimension": 0,
+      "S_genus_generators": [],
+      "contribution_to_standard_S3_component": 0,
+      "finite_unramified_genus_dimension": 1,
+      "full_kernel_basis_masks": [
+        3
+      ],
+      "ordinary_genus_dimension": 1,
+      "places": [
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1,
+            4,
+            5
+          ],
+          "constraint_rows": [
+            0,
+            0,
+            0
+          ],
+          "local_dimension": 3,
+          "place": 2,
+          "prime_discriminant_signatures": [
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 3,
+          "prime_discriminant_signatures": [
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            0,
+            0
+          ],
+          "local_dimension": 2,
+          "place": 13,
+          "prime_discriminant_signatures": [
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            3,
+            3
+          ],
+          "local_dimension": 2,
+          "place": 79,
+          "prime_discriminant_signatures": [
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 89,
+          "prime_discriminant_signatures": [
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 395803454548322601521521876969307823326241237986148940577061389742754763329283185413505648843364340920437863042671239709673641323264993,
+          "prime_discriminant_signatures": [
+            0,
+            1
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [],
+          "constraint_rows": [],
+          "local_dimension": 1,
+          "place": "infinity",
+          "prime_discriminant_signatures": [
+            1,
+            0
+          ]
+        }
+      ],
+      "prime_discriminants": [
+        "-4",
+        "395803454548322601521521876969307823326241237986148940577061389742754763329283185413505648843364340920437863042671239709673641323264993"
+      ],
+      "quadratic_discriminant": "-1583213818193290406086087507877231293304964951944595762308245558971019053317132741654022595373457363681751452170684958838694565293059972",
+      "status": "PASS",
+      "token": "case-01",
+      "trivial_total_product_mask": 3
+    },
+    {
+      "S_genus_basis_masks": [],
+      "S_genus_dimension": 0,
+      "S_genus_generators": [],
+      "contribution_to_standard_S3_component": 0,
+      "finite_unramified_genus_dimension": 4,
+      "full_kernel_basis_masks": [
+        31
+      ],
+      "ordinary_genus_dimension": 3,
+      "places": [
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1,
+            4,
+            5
+          ],
+          "constraint_rows": [
+            0,
+            30,
+            30
+          ],
+          "local_dimension": 3,
+          "place": 2,
+          "prime_discriminant_signatures": [
+            2,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            5
+          ],
+          "local_dimension": 2,
+          "place": 3,
+          "prime_discriminant_signatures": [
+            2,
+            3,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            30,
+            30
+          ],
+          "local_dimension": 2,
+          "place": 5,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            29,
+            29
+          ],
+          "local_dimension": 2,
+          "place": 7,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 11,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            0,
+            0
+          ],
+          "local_dimension": 2,
+          "place": 13,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            10,
+            10
+          ],
+          "local_dimension": 2,
+          "place": 17,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            18,
+            18
+          ],
+          "local_dimension": 2,
+          "place": 41,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            17
+          ],
+          "local_dimension": 2,
+          "place": 43,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            3,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 59,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            23
+          ],
+          "local_dimension": 2,
+          "place": 20615041675346507,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            2,
+            3,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            12
+          ],
+          "local_dimension": 2,
+          "place": 1371609143868959976154145640664687027995574838295626697379856471001437756163360865284294725678053,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            2,
+            2,
+            1
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            15
+          ],
+          "local_dimension": 1,
+          "place": "infinity",
+          "prime_discriminant_signatures": [
+            1,
+            1,
+            1,
+            1,
+            0
+          ]
+        }
+      ],
+      "prime_discriminants": [
+        "-4",
+        "-3",
+        "-43",
+        "-20615041675346507",
+        "1371609143868959976154145640664687027995574838295626697379856471001437756163360865284294725678053"
+      ],
+      "quadratic_discriminant": "14590302306182795653540689285522140640458760308968582781406375102424908251282509249852942194910335295630558857209436",
+      "status": "PASS",
+      "token": "case-02",
+      "trivial_total_product_mask": 31
+    },
+    {
+      "S_genus_basis_masks": [],
+      "S_genus_dimension": 0,
+      "S_genus_generators": [],
+      "contribution_to_standard_S3_component": 0,
+      "finite_unramified_genus_dimension": 5,
+      "full_kernel_basis_masks": [
+        63
+      ],
+      "ordinary_genus_dimension": 4,
+      "places": [
+        {
+          "D_signature": 4,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            0,
+            0
+          ],
+          "local_dimension": 3,
+          "place": 2,
+          "prime_discriminant_signatures": [
+            0,
+            4,
+            4,
+            0,
+            0,
+            4
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            36,
+            36
+          ],
+          "local_dimension": 2,
+          "place": 3,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            3,
+            3
+          ],
+          "local_dimension": 2,
+          "place": 5,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            5,
+            5
+          ],
+          "local_dimension": 2,
+          "place": 13,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            51,
+            51
+          ],
+          "local_dimension": 2,
+          "place": 19,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            0,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            18,
+            18
+          ],
+          "local_dimension": 2,
+          "place": 43,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            34,
+            34
+          ],
+          "local_dimension": 2,
+          "place": 149,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            34
+          ],
+          "local_dimension": 2,
+          "place": 4297,
+          "prime_discriminant_signatures": [
+            1,
+            2,
+            0,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            45
+          ],
+          "local_dimension": 2,
+          "place": 3478907,
+          "prime_discriminant_signatures": [
+            2,
+            3,
+            2,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            36
+          ],
+          "local_dimension": 2,
+          "place": 4955611,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            3,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            36
+          ],
+          "local_dimension": 2,
+          "place": 298809242544719,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            2,
+            3,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            48
+          ],
+          "local_dimension": 2,
+          "place": 5796185682939961,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            17
+          ],
+          "local_dimension": 2,
+          "place": 38389665399337604755954086815648556260176517531824390908960172592828166471668421691,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            0,
+            0,
+            2,
+            3
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            46
+          ],
+          "local_dimension": 1,
+          "place": "infinity",
+          "prime_discriminant_signatures": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ]
+        }
+      ],
+      "prime_discriminants": [
+        "4297",
+        "-3478907",
+        "-4955611",
+        "-298809242544719",
+        "5796185682939961",
+        "-38389665399337604755954086815648556260176517531824390908960172592828166471668421691"
+      ],
+      "quadratic_discriminant": "4925564657231041174309566243894320731882025881338727594499098430874597871838647643067955751670642560405913942166653536837788395661",
+      "status": "PASS",
+      "token": "case-03",
+      "trivial_total_product_mask": 63
+    },
+    {
+      "S_genus_basis_masks": [],
+      "S_genus_dimension": 0,
+      "S_genus_generators": [],
+      "contribution_to_standard_S3_component": 0,
+      "finite_unramified_genus_dimension": 10,
+      "full_kernel_basis_masks": [
+        2047
+      ],
+      "ordinary_genus_dimension": 9,
+      "places": [
+        {
+          "D_signature": 7,
+          "annihilator_functionals": [
+            3,
+            5,
+            6
+          ],
+          "constraint_rows": [
+            0,
+            1535,
+            1535
+          ],
+          "local_dimension": 3,
+          "place": 2,
+          "prime_discriminant_signatures": [
+            3,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            0,
+            4
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 3,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            2,
+            2,
+            0,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            1049
+          ],
+          "local_dimension": 2,
+          "place": 5,
+          "prime_discriminant_signatures": [
+            2,
+            1,
+            0,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            231,
+            231
+          ],
+          "local_dimension": 2,
+          "place": 13,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            2,
+            0,
+            0,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            1938,
+            1938
+          ],
+          "local_dimension": 2,
+          "place": 17,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            0,
+            0,
+            2,
+            0,
+            0,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 19,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            0,
+            2,
+            2,
+            0,
+            0,
+            2,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            741,
+            741
+          ],
+          "local_dimension": 2,
+          "place": 29,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            2,
+            0,
+            0,
+            2,
+            2,
+            2,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            2046,
+            2046
+          ],
+          "local_dimension": 2,
+          "place": 67,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            1265
+          ],
+          "local_dimension": 2,
+          "place": 229,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            1,
+            0,
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            1554
+          ],
+          "local_dimension": 2,
+          "place": 11483,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            0,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            102
+          ],
+          "local_dimension": 2,
+          "place": 1015067,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            2,
+            0,
+            3,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            1525
+          ],
+          "local_dimension": 2,
+          "place": 1185749,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            2,
+            0,
+            2,
+            1,
+            2,
+            2,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            373
+          ],
+          "local_dimension": 2,
+          "place": 11359109,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            2,
+            0,
+            2,
+            2,
+            1,
+            0,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            549
+          ],
+          "local_dimension": 2,
+          "place": 28592101,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            2,
+            0,
+            0,
+            2,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            120
+          ],
+          "local_dimension": 2,
+          "place": 2613768493918386139,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            0,
+            2,
+            2,
+            2,
+            2,
+            0,
+            3,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            401
+          ],
+          "local_dimension": 2,
+          "place": 8789417427421464766489779706511,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            2,
+            2,
+            3,
+            0
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            822
+          ],
+          "local_dimension": 2,
+          "place": 66712930379907104512639308779323,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            2,
+            0,
+            2,
+            2,
+            0,
+            0,
+            2,
+            2,
+            3
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            1817
+          ],
+          "local_dimension": 1,
+          "place": "infinity",
+          "prime_discriminant_signatures": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "prime_discriminants": [
+        "-8",
+        "5",
+        "229",
+        "-11483",
+        "-1015067",
+        "1185749",
+        "11359109",
+        "28592101",
+        "-2613768493918386139",
+        "-8789417427421464766489779706511",
+        "-66712930379907104512639308779323"
+      ],
+      "quadratic_discriminant": "63018183083244651623047362490606129666234739674366181163358145575263353427460493901493211690808745888725319230581720",
+      "status": "PASS",
+      "token": "case-04",
+      "trivial_total_product_mask": 2047
+    },
+    {
+      "S_genus_basis_masks": [],
+      "S_genus_dimension": 0,
+      "S_genus_generators": [],
+      "contribution_to_standard_S3_component": 0,
+      "finite_unramified_genus_dimension": 3,
+      "full_kernel_basis_masks": [
+        15
+      ],
+      "ordinary_genus_dimension": 3,
+      "places": [
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "constraint_rows": [
+            0,
+            0,
+            0,
+            12,
+            12,
+            12,
+            12
+          ],
+          "local_dimension": 3,
+          "place": 2,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            4,
+            4
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            6,
+            6
+          ],
+          "local_dimension": 2,
+          "place": 13,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            3
+          ],
+          "local_dimension": 2,
+          "place": 17,
+          "prime_discriminant_signatures": [
+            1,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 29,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            3
+          ],
+          "local_dimension": 2,
+          "place": 191296177,
+          "prime_discriminant_signatures": [
+            2,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 26412210008369203,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            3,
+            0
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 3536363458029489949221275615151091215008653652856616413241728517046806970396071365144595348096004967550204243700629,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [],
+          "constraint_rows": [],
+          "local_dimension": 1,
+          "place": "infinity",
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            1,
+            0
+          ]
+        }
+      ],
+      "prime_discriminants": [
+        "17",
+        "191296177",
+        "-26412210008369203",
+        "3536363458029489949221275615151091215008653652856616413241728517046806970396071365144595348096004967550204243700629"
+      ],
+      "quadratic_discriminant": "-303750392838410802807705312285186704100698332052696032729436605735327210517994881070364546611504439456553317586782678956305187343864946003183",
+      "status": "PASS",
+      "token": "case-05",
+      "trivial_total_product_mask": 15
+    },
+    {
+      "S_genus_basis_masks": [],
+      "S_genus_dimension": 0,
+      "S_genus_generators": [],
+      "contribution_to_standard_S3_component": 0,
+      "finite_unramified_genus_dimension": 8,
+      "full_kernel_basis_masks": [
+        511
+      ],
+      "ordinary_genus_dimension": 8,
+      "places": [
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1,
+            4,
+            5
+          ],
+          "constraint_rows": [
+            0,
+            318,
+            318
+          ],
+          "local_dimension": 3,
+          "place": 2,
+          "prime_discriminant_signatures": [
+            2,
+            4,
+            4,
+            4,
+            4,
+            4,
+            0,
+            0,
+            4
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            363,
+            363
+          ],
+          "local_dimension": 2,
+          "place": 3,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            0,
+            2,
+            0,
+            2,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            278
+          ],
+          "local_dimension": 2,
+          "place": 5,
+          "prime_discriminant_signatures": [
+            0,
+            1,
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 7,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            2,
+            0,
+            0,
+            2,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 11,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            2,
+            0,
+            0,
+            2,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            442
+          ],
+          "local_dimension": 2,
+          "place": 13,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            1,
+            2,
+            2,
+            2,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            498,
+            498
+          ],
+          "local_dimension": 2,
+          "place": 17,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            0,
+            0,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            125
+          ],
+          "local_dimension": 2,
+          "place": 19,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            2,
+            3,
+            2,
+            2,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            510
+          ],
+          "local_dimension": 2,
+          "place": 37,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            2,
+            2,
+            1,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            108,
+            108
+          ],
+          "local_dimension": 2,
+          "place": 41,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            2,
+            2,
+            0,
+            2,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 107,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            0,
+            2,
+            0,
+            0,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 139,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            380,
+            380
+          ],
+          "local_dimension": 2,
+          "place": 241,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            92
+          ],
+          "local_dimension": 2,
+          "place": 2309,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            2,
+            2,
+            2,
+            1,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            497
+          ],
+          "local_dimension": 2,
+          "place": 146750759902520012671,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            0,
+            0,
+            2,
+            2,
+            3,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            340
+          ],
+          "local_dimension": 2,
+          "place": 174361184822160214729,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            1,
+            2
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            470
+          ],
+          "local_dimension": 2,
+          "place": 1087614221970164994197309267684770841847552381021820065017808837975906824362877,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            2,
+            0,
+            2,
+            0,
+            2,
+            2,
+            1
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [],
+          "constraint_rows": [],
+          "local_dimension": 1,
+          "place": "infinity",
+          "prime_discriminant_signatures": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "prime_discriminants": [
+        "-4",
+        "5",
+        "13",
+        "-19",
+        "37",
+        "2309",
+        "-146750759902520012671",
+        "174361184822160214729",
+        "1087614221970164994197309267684770841847552381021820065017808837975906824362877"
+      ],
+      "quadratic_discriminant": "-11745125294215423944325119488871324777516375948433450278279447283566896380111330979951999442580389905547198082316321948728965860",
+      "status": "PASS",
+      "token": "case-06",
+      "trivial_total_product_mask": 511
+    },
+    {
+      "S_genus_basis_masks": [
+        30
+      ],
+      "S_genus_dimension": 1,
+      "S_genus_generators": [
+        "1172785373546842861"
+      ],
+      "contribution_to_standard_S3_component": 0,
+      "finite_unramified_genus_dimension": 6,
+      "full_kernel_basis_masks": [
+        30,
+        97
+      ],
+      "ordinary_genus_dimension": 5,
+      "places": [
+        {
+          "D_signature": 4,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            0,
+            0
+          ],
+          "local_dimension": 3,
+          "place": 2,
+          "prime_discriminant_signatures": [
+            4,
+            4,
+            4,
+            0,
+            4,
+            4,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            33,
+            33
+          ],
+          "local_dimension": 2,
+          "place": 3,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            83
+          ],
+          "local_dimension": 2,
+          "place": 5,
+          "prime_discriminant_signatures": [
+            1,
+            2,
+            0,
+            0,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 7,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            2,
+            0,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            65
+          ],
+          "local_dimension": 2,
+          "place": 13,
+          "prime_discriminant_signatures": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 17,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            0,
+            2,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            108
+          ],
+          "local_dimension": 2,
+          "place": 179,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            3,
+            2,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            108
+          ],
+          "local_dimension": 2,
+          "place": 8089,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            2,
+            1,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            85
+          ],
+          "local_dimension": 2,
+          "place": 62305634387,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            2,
+            0,
+            3,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            24
+          ],
+          "local_dimension": 2,
+          "place": 252255154771,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            0,
+            2,
+            2,
+            3,
+            0
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            43
+          ],
+          "local_dimension": 2,
+          "place": 69431746362168076474800083356577848380092656289923653202287850916929457025993070891646848979058042910072537020841609041180365927,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            0,
+            2,
+            0,
+            2,
+            3
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            116
+          ],
+          "local_dimension": 1,
+          "place": "infinity",
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "prime_discriminants": [
+        "5",
+        "13",
+        "-179",
+        "8089",
+        "-62305634387",
+        "-252255154771",
+        "-69431746362168076474800083356577848380092656289923653202287850916929457025993070891646848979058042910072537020841609041180365927"
+      ],
+      "quadratic_discriminant": "102703840505676544458614476921151849181659915969522594716620179164277222005200002530104324565939879595519697489358568018158311805132077050767107685148215191685",
+      "status": "PASS",
+      "token": "case-07",
+      "trivial_total_product_mask": 127
+    },
+    {
+      "reason": "Retained complete factorization/local set unavailable; no retry",
+      "status": "UNKNOWN",
+      "token": "case-08"
+    },
+    {
+      "S_genus_basis_masks": [],
+      "S_genus_dimension": 0,
+      "S_genus_generators": [],
+      "contribution_to_standard_S3_component": 0,
+      "finite_unramified_genus_dimension": 11,
+      "full_kernel_basis_masks": [
+        4095
+      ],
+      "ordinary_genus_dimension": 10,
+      "places": [
+        {
+          "D_signature": 6,
+          "annihilator_functionals": [
+            1,
+            6,
+            7
+          ],
+          "constraint_rows": [
+            0,
+            1403,
+            1403
+          ],
+          "local_dimension": 3,
+          "place": 2,
+          "prime_discriminant_signatures": [
+            2,
+            4,
+            0,
+            4,
+            4,
+            4,
+            4,
+            0,
+            4,
+            0,
+            4,
+            0
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            3541
+          ],
+          "local_dimension": 2,
+          "place": 3,
+          "prime_discriminant_signatures": [
+            2,
+            3,
+            2,
+            0,
+            2,
+            0,
+            2,
+            2,
+            2,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 5,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            2,
+            0,
+            0,
+            2,
+            0,
+            2,
+            2,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            3241
+          ],
+          "local_dimension": 2,
+          "place": 7,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            3,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            1227
+          ],
+          "local_dimension": 2,
+          "place": 11,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            0,
+            3,
+            0,
+            0,
+            2,
+            2,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            924,
+            924
+          ],
+          "local_dimension": 2,
+          "place": 13,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            2,
+            2,
+            2,
+            0,
+            0,
+            2,
+            2,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            1181
+          ],
+          "local_dimension": 2,
+          "place": 19,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            2,
+            2,
+            3,
+            0,
+            0,
+            2,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            3975,
+            3975
+          ],
+          "local_dimension": 2,
+          "place": 47,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 509,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            3643
+          ],
+          "local_dimension": 2,
+          "place": 1880603,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            0,
+            2,
+            2,
+            3,
+            0,
+            0,
+            0,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            1141
+          ],
+          "local_dimension": 2,
+          "place": 7106189011,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            2,
+            0,
+            2,
+            2,
+            3,
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            4065
+          ],
+          "local_dimension": 2,
+          "place": 259807211574607,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            2685
+          ],
+          "local_dimension": 2,
+          "place": 553567795022107,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            3,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            2655
+          ],
+          "local_dimension": 2,
+          "place": 1129105272486743,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            2,
+            0,
+            0,
+            3,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            2302
+          ],
+          "local_dimension": 2,
+          "place": 1872767131490633970393149,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            4006
+          ],
+          "local_dimension": 2,
+          "place": 140106331191119962071569896497953,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            2,
+            0,
+            0,
+            2,
+            0,
+            2,
+            2,
+            2,
+            2,
+            1
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            1023
+          ],
+          "local_dimension": 1,
+          "place": "infinity",
+          "prime_discriminant_signatures": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "prime_discriminants": [
+        "-4",
+        "-3",
+        "-7",
+        "-11",
+        "-19",
+        "-1880603",
+        "-7106189011",
+        "-259807211574607",
+        "-553567795022107",
+        "-1129105272486743",
+        "1872767131490633970393149",
+        "140106331191119962071569896497953"
+      ],
+      "quadratic_discriminant": "9996718070343809337365047311211258311157480738152049719831572923958331786280951212476852072251322333154539906168520031692",
+      "status": "PASS",
+      "token": "case-09",
+      "trivial_total_product_mask": 4095
+    },
+    {
+      "reason": "Retained complete factorization/local set unavailable; no retry",
+      "status": "UNKNOWN",
+      "token": "case-10"
+    },
+    {
+      "reason": "Retained complete factorization/local set unavailable; no retry",
+      "status": "UNKNOWN",
+      "token": "case-11"
+    },
+    {
+      "reason": "Retained complete factorization/local set unavailable; no retry",
+      "status": "UNKNOWN",
+      "token": "case-12"
+    },
+    {
+      "S_genus_basis_masks": [],
+      "S_genus_dimension": 0,
+      "S_genus_generators": [],
+      "contribution_to_standard_S3_component": 0,
+      "finite_unramified_genus_dimension": 5,
+      "full_kernel_basis_masks": [
+        63
+      ],
+      "ordinary_genus_dimension": 5,
+      "places": [
+        {
+          "D_signature": 4,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            0,
+            0
+          ],
+          "local_dimension": 3,
+          "place": 2,
+          "prime_discriminant_signatures": [
+            4,
+            4,
+            0,
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 3,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            2,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            17
+          ],
+          "local_dimension": 2,
+          "place": 5,
+          "prime_discriminant_signatures": [
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            33,
+            33
+          ],
+          "local_dimension": 2,
+          "place": 13,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            17,
+            17
+          ],
+          "local_dimension": 2,
+          "place": 23,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            30
+          ],
+          "local_dimension": 2,
+          "place": 29,
+          "prime_discriminant_signatures": [
+            0,
+            1,
+            2,
+            2,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            43,
+            43
+          ],
+          "local_dimension": 2,
+          "place": 37,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            0,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 41,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            2,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            48,
+            48
+          ],
+          "local_dimension": 2,
+          "place": 139,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            30
+          ],
+          "local_dimension": 2,
+          "place": 751,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            3,
+            2,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            10
+          ],
+          "local_dimension": 2,
+          "place": 28960331,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            0,
+            3,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            39
+          ],
+          "local_dimension": 2,
+          "place": 1204882855601765528877267647500895974865482613,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            2,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            60
+          ],
+          "local_dimension": 2,
+          "place": 197980272243427555346397293722916980361535459279712115031762027678304939,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            2,
+            2,
+            2,
+            3
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [],
+          "constraint_rows": [],
+          "local_dimension": 1,
+          "place": "infinity",
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ]
+        }
+      ],
+      "prime_discriminants": [
+        "5",
+        "29",
+        "-751",
+        "-28960331",
+        "1204882855601765528877267647500895974865482613",
+        "-197980272243427555346397293722916980361535459279712115031762027678304939"
+      ],
+      "quadratic_discriminant": "-752277724884429603556499627496577219114608773920079457931321069663132744982183297505569516372870314046056607683593379327741881715",
+      "status": "PASS",
+      "token": "case-13",
+      "trivial_total_product_mask": 63
+    },
+    {
+      "S_genus_basis_masks": [],
+      "S_genus_dimension": 0,
+      "S_genus_generators": [],
+      "contribution_to_standard_S3_component": 0,
+      "finite_unramified_genus_dimension": 3,
+      "full_kernel_basis_masks": [
+        15
+      ],
+      "ordinary_genus_dimension": 2,
+      "places": [
+        {
+          "D_signature": 4,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            0,
+            0
+          ],
+          "local_dimension": 3,
+          "place": 2,
+          "prime_discriminant_signatures": [
+            4,
+            4,
+            4,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            6,
+            6
+          ],
+          "local_dimension": 2,
+          "place": 5,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 7,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            10
+          ],
+          "local_dimension": 2,
+          "place": 11,
+          "prime_discriminant_signatures": [
+            3,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            15
+          ],
+          "local_dimension": 2,
+          "place": 13,
+          "prime_discriminant_signatures": [
+            2,
+            1,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            5,
+            5
+          ],
+          "local_dimension": 2,
+          "place": 29,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            6,
+            6
+          ],
+          "local_dimension": 2,
+          "place": 37,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            3,
+            3
+          ],
+          "local_dimension": 2,
+          "place": 41,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 43,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            6,
+            6
+          ],
+          "local_dimension": 2,
+          "place": 47,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            3,
+            3
+          ],
+          "local_dimension": 2,
+          "place": 73,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 89,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            3,
+            3
+          ],
+          "local_dimension": 2,
+          "place": 109,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            5,
+            5
+          ],
+          "local_dimension": 2,
+          "place": 127,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            3
+          ],
+          "local_dimension": 2,
+          "place": 4678955899327531799218956351083,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            3,
+            0
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            3
+          ],
+          "local_dimension": 2,
+          "place": 3466418496046307687463380088830029870757187849126892374834076735615029496431422958053227129921575121,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            5
+          ],
+          "local_dimension": 1,
+          "place": "infinity",
+          "prime_discriminant_signatures": [
+            1,
+            0,
+            1,
+            0
+          ]
+        }
+      ],
+      "prime_discriminants": [
+        "-11",
+        "13",
+        "-4678955899327531799218956351083",
+        "3466418496046307687463380088830029870757187849126892374834076735615029496431422958053227129921575121"
+      ],
+      "quadratic_discriminant": "2319348355840793680014289749859465262253655395058932289474378635276782174223531055738208365301710598272915423820568079569354891464149",
+      "status": "PASS",
+      "token": "case-14",
+      "trivial_total_product_mask": 15
+    },
+    {
+      "S_genus_basis_masks": [],
+      "S_genus_dimension": 0,
+      "S_genus_generators": [],
+      "contribution_to_standard_S3_component": 0,
+      "finite_unramified_genus_dimension": 6,
+      "full_kernel_basis_masks": [
+        127
+      ],
+      "ordinary_genus_dimension": 5,
+      "places": [
+        {
+          "D_signature": 6,
+          "annihilator_functionals": [
+            1,
+            6,
+            7
+          ],
+          "constraint_rows": [
+            0,
+            71,
+            71
+          ],
+          "local_dimension": 3,
+          "place": 2,
+          "prime_discriminant_signatures": [
+            2,
+            4,
+            4,
+            0,
+            0,
+            0,
+            4
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            111,
+            111
+          ],
+          "local_dimension": 2,
+          "place": 3,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            2,
+            2,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            114
+          ],
+          "local_dimension": 2,
+          "place": 5,
+          "prime_discriminant_signatures": [
+            0,
+            1,
+            0,
+            0,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 7,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            33
+          ],
+          "local_dimension": 2,
+          "place": 19,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            3,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 29,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            5,
+            5
+          ],
+          "local_dimension": 2,
+          "place": 31,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            78,
+            78
+          ],
+          "local_dimension": 2,
+          "place": 37,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            2,
+            2,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            92,
+            92
+          ],
+          "local_dimension": 2,
+          "place": 41,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            2,
+            2,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            125,
+            125
+          ],
+          "local_dimension": 2,
+          "place": 59,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 73,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            0,
+            0,
+            2,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            29
+          ],
+          "local_dimension": 2,
+          "place": 79,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            2,
+            3,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1,
+            2,
+            3
+          ],
+          "constraint_rows": [
+            0,
+            0,
+            0
+          ],
+          "local_dimension": 2,
+          "place": 101,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 151,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            2,
+            0,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 197,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            0,
+            2,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            23
+          ],
+          "local_dimension": 2,
+          "place": 20084070565614383,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            2,
+            0,
+            3,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            102
+          ],
+          "local_dimension": 2,
+          "place": 277131689105980733414153,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            2,
+            0,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            34
+          ],
+          "local_dimension": 2,
+          "place": 91586120381369539248864736998169886452607476058975046580346704317125237,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            29
+          ],
+          "local_dimension": 1,
+          "place": "infinity",
+          "prime_discriminant_signatures": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "prime_discriminants": [
+        "-4",
+        "5",
+        "-19",
+        "-79",
+        "-20084070565614383",
+        "277131689105980733414153",
+        "91586120381369539248864736998169886452607476058975046580346704317125237"
+      ],
+      "quadratic_discriminant": "15303059887649553153623957740436849721895215697070839553145377754084498137912865717975857396796632303266778833109260",
+      "status": "PASS",
+      "token": "case-15",
+      "trivial_total_product_mask": 127
+    },
+    {
+      "S_genus_basis_masks": [],
+      "S_genus_dimension": 0,
+      "S_genus_generators": [],
+      "contribution_to_standard_S3_component": 0,
+      "finite_unramified_genus_dimension": 4,
+      "full_kernel_basis_masks": [
+        31
+      ],
+      "ordinary_genus_dimension": 3,
+      "places": [
+        {
+          "D_signature": 6,
+          "annihilator_functionals": [
+            1,
+            6,
+            7
+          ],
+          "constraint_rows": [
+            0,
+            15,
+            15
+          ],
+          "local_dimension": 3,
+          "place": 2,
+          "prime_discriminant_signatures": [
+            2,
+            4,
+            4,
+            4,
+            0
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            23
+          ],
+          "local_dimension": 2,
+          "place": 3,
+          "prime_discriminant_signatures": [
+            2,
+            3,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 5,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 13,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 17,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 19,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            10
+          ],
+          "local_dimension": 2,
+          "place": 29,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "D_signature": 2,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 71,
+          "prime_discriminant_signatures": [
+            2,
+            2,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            20
+          ],
+          "local_dimension": 2,
+          "place": 2465779087453622652131442949,
+          "prime_discriminant_signatures": [
+            0,
+            0,
+            2,
+            1,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            10
+          ],
+          "local_dimension": 2,
+          "place": 519784438179112504122441050306814600881,
+          "prime_discriminant_signatures": [
+            0,
+            2,
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            3
+          ],
+          "local_dimension": 1,
+          "place": "infinity",
+          "prime_discriminant_signatures": [
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "prime_discriminants": [
+        "-4",
+        "-3",
+        "29",
+        "2465779087453622652131442949",
+        "519784438179112504122441050306814600881"
+      ],
+      "quadratic_discriminant": "446022411980768316957534567829110491135708202981077146177123710048012",
+      "status": "PASS",
+      "token": "reference-00",
+      "trivial_total_product_mask": 31
+    }
+  ],
+  "schema": "rank-jump.resolvent-genus-component.v1",
+  "small_controls": [
+    {
+      "S_genus_basis_masks": [
+        1
+      ],
+      "S_genus_dimension": 1,
+      "S_genus_generators": [
+        "8"
+      ],
+      "contribution_to_standard_S3_component": 0,
+      "finite_unramified_genus_dimension": 1,
+      "full_kernel_basis_masks": [
+        1,
+        2
+      ],
+      "ordinary_genus_dimension": 1,
+      "places": [
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2,
+            4,
+            6
+          ],
+          "constraint_rows": [
+            0,
+            0,
+            0
+          ],
+          "local_dimension": 3,
+          "place": 2,
+          "prime_discriminant_signatures": [
+            1,
+            0
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 7,
+          "prime_discriminant_signatures": [
+            0,
+            3
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [],
+          "constraint_rows": [],
+          "local_dimension": 1,
+          "place": "infinity",
+          "prime_discriminant_signatures": [
+            0,
+            1
+          ]
+        }
+      ],
+      "prime_discriminants": [
+        "8",
+        "-7"
+      ],
+      "quadratic_discriminant": "-56",
+      "status": "PASS",
+      "token": "control--56",
+      "trivial_total_product_mask": 3
+    },
+    {
+      "S_genus_basis_masks": [],
+      "S_genus_dimension": 0,
+      "S_genus_generators": [],
+      "contribution_to_standard_S3_component": 0,
+      "finite_unramified_genus_dimension": 2,
+      "full_kernel_basis_masks": [
+        7
+      ],
+      "ordinary_genus_dimension": 2,
+      "places": [
+        {
+          "D_signature": 6,
+          "annihilator_functionals": [
+            1,
+            6,
+            7
+          ],
+          "constraint_rows": [
+            0,
+            3,
+            3
+          ],
+          "local_dimension": 3,
+          "place": 2,
+          "prime_discriminant_signatures": [
+            2,
+            4,
+            0
+          ]
+        },
+        {
+          "D_signature": 3,
+          "annihilator_functionals": [
+            3
+          ],
+          "constraint_rows": [
+            5
+          ],
+          "local_dimension": 2,
+          "place": 3,
+          "prime_discriminant_signatures": [
+            2,
+            3,
+            2
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            5
+          ],
+          "local_dimension": 2,
+          "place": 7,
+          "prime_discriminant_signatures": [
+            2,
+            0,
+            3
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [],
+          "constraint_rows": [],
+          "local_dimension": 1,
+          "place": "infinity",
+          "prime_discriminant_signatures": [
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "prime_discriminants": [
+        "-4",
+        "-3",
+        "-7"
+      ],
+      "quadratic_discriminant": "-84",
+      "status": "PASS",
+      "token": "control--84",
+      "trivial_total_product_mask": 7
+    },
+    {
+      "S_genus_basis_masks": [],
+      "S_genus_dimension": 0,
+      "S_genus_generators": [],
+      "contribution_to_standard_S3_component": 0,
+      "finite_unramified_genus_dimension": 1,
+      "full_kernel_basis_masks": [
+        3
+      ],
+      "ordinary_genus_dimension": 0,
+      "places": [
+        {
+          "D_signature": 6,
+          "annihilator_functionals": [
+            1,
+            6,
+            7
+          ],
+          "constraint_rows": [
+            0,
+            3,
+            3
+          ],
+          "local_dimension": 3,
+          "place": 2,
+          "prime_discriminant_signatures": [
+            2,
+            4
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            3
+          ],
+          "local_dimension": 2,
+          "place": 3,
+          "prime_discriminant_signatures": [
+            2,
+            3
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            3
+          ],
+          "local_dimension": 1,
+          "place": "infinity",
+          "prime_discriminant_signatures": [
+            1,
+            1
+          ]
+        }
+      ],
+      "prime_discriminants": [
+        "-4",
+        "-3"
+      ],
+      "quadratic_discriminant": "12",
+      "status": "PASS",
+      "token": "control-12",
+      "trivial_total_product_mask": 3
+    },
+    {
+      "S_genus_basis_masks": [
+        1
+      ],
+      "S_genus_dimension": 1,
+      "S_genus_generators": [
+        "8"
+      ],
+      "contribution_to_standard_S3_component": 0,
+      "finite_unramified_genus_dimension": 1,
+      "full_kernel_basis_masks": [
+        1,
+        2
+      ],
+      "ordinary_genus_dimension": 1,
+      "places": [
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2,
+            4,
+            6
+          ],
+          "constraint_rows": [
+            0,
+            0,
+            0
+          ],
+          "local_dimension": 3,
+          "place": 2,
+          "prime_discriminant_signatures": [
+            1,
+            0
+          ]
+        },
+        {
+          "D_signature": 1,
+          "annihilator_functionals": [
+            2
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 2,
+          "place": 17,
+          "prime_discriminant_signatures": [
+            0,
+            1
+          ]
+        },
+        {
+          "D_signature": 0,
+          "annihilator_functionals": [
+            1
+          ],
+          "constraint_rows": [
+            0
+          ],
+          "local_dimension": 1,
+          "place": "infinity",
+          "prime_discriminant_signatures": [
+            0,
+            0
+          ]
+        }
+      ],
+      "prime_discriminants": [
+        "8",
+        "17"
+      ],
+      "quadratic_discriminant": "136",
+      "status": "PASS",
+      "token": "control-136",
+      "trivial_total_product_mask": 3
+    }
+  ]
+}

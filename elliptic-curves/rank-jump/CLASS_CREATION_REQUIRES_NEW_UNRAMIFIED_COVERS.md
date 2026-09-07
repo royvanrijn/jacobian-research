@@ -1,5 +1,10 @@
 # Class creation: new unramified covers beyond the global pool
 
+Follow-up: [strict class creation requires the standard S3 block](STRICT_CLASS_CREATION_IS_A_STANDARD_S3_BLOCK.md)
+identifies the sextic S-class module and computes the quadratic genus
+component. Genus characters and base-changed quadratic-resolvent 2-towers
+cannot supply the standard component required by the jumps.
+
 Follow-up: [other generic fibres do not supply the retained jump blocks](OTHER_GENERIC_FIBRES_DO_NOT_SUPPLY_THE_JUMP_BLOCK.md)
 tests 112 equation-only fibre correspondences. Rational matches are global
 duplicates; a quadratic sign obstruction kills the entire rational trace
