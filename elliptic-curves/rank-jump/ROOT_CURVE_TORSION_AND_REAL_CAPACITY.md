@@ -1,5 +1,10 @@
 # The cubic root curve carries global incidence; real topology cuts its capacity
 
+Follow-up: [class creation requires new unramified covers](CLASS_CREATION_REQUIRES_NEW_UNRAMIFIED_COVERS.md)
+combines this capacity with the strict-boundary bounds. It forces at least
+seven strict directions outside this pool on fresh 103b2 and nine on
+ICARM356; a bounded point-independent principalization test supplies none.
+
 The original-parameter global cover pool has room for at most **two**
 dimensions beyond the marked generic subgroup on every family in the
 sixteen-fibre panel. This improves the previous bound of three. The

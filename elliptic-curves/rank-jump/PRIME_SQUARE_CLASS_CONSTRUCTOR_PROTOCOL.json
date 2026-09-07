@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.prime-square-class-constructor-protocol.v1",
+  "question": "Can short generators of squared prime ideals construct new norm-square classes without exceptional points or a full class group?",
+  "fibre": "Retained MW16-05 reference at t=3/17; no new specialization.",
+  "selection": "First 24 residue-degree-one prime ideals in the existing equation-only early norm pool, ordered by rational prime and retained column index. Three positive controls are the principal ideals of the first three marked generic Kummer classes. Controls do not change candidate selection.",
+  "method": "For each candidate P, form I=P^2. Reduce its exact positive trace Gram matrix by unimodular LLL. Test every primitive vector in [-2,2]^3 up to simultaneous sign. If |Norm(alpha)|=Norm(I), exact ideal equality proves I=(alpha); choose the sign giving square norm. Preserve all norms and successes. Do not infer nonprincipality from a bounded miss.",
+  "layers": {"principal_square_success": "incidence constructor for a cubic norm-square class; not yet a strict class or a rational elliptic point", "positive_control_recovery": "visibility of a principal generator in this bounded ideal lattice search"},
+  "limits": {"worker_seconds": 30, "prime_ideals": 24, "controls": 3, "coefficient_bound": 2, "workers": 1, "pari_stack_bytes": 268435456, "new_parameter_searches": 0, "elliptic_point_searches": 0, "class_group_computations": 0},
+  "failure": "UNKNOWN on timeout. A completed miss excludes only the 49 tested primitive directions in the specified reduced basis. No adaptive weights, enlarged boxes or extra ideals."
+}

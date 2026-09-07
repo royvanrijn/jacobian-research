@@ -1,0 +1,185 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_early_relation_pool_inputs_v1.json": "04aa9df34ad4c2b9a4d1794f54c7d44fa2d8349583e7c64102f6b58045d3d6c2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_prime_square_class_constructor_inputs_v1.json": "66036f2b59107ae938d837c4c747189b307ea531712c4ec9be4d6bf79b963cd4",
+    "artifacts/generated-results/elliptic-curves/rank_jump_prime_square_class_constructor_v2.json": "89c52e4563e3c7ea607c43a8d0088073ed14ed6a6a50ff7e8a5f78d35dc1deeb",
+    "elliptic-curves/rank-jump/complete_prime_square_class_constructor.py": "36123d8a50b1f1ecf590b0f2031d87332699e664e0e09ac027affa86dac37fc9",
+    "elliptic-curves/rank-jump/verify_prime_square_class_constructor.py": "909510f4d8e2282c29768d372e264f32c73700a6026afc5cf2101b42721d248a",
+    "elliptic-curves/rank-jump/verify_unpointed_governing_norm.py": "69828517faa1ebdc92218dc338cfe156fbc8a16020bf6b28d8f59a60bc4c847a"
+  },
+  "boundary": "No candidate principal generator found in the frozen box. This is not a nonprincipality certificate. Target ideals use PARI; all 1323 norms and equal-index principal-ideal witnesses use independent rational arithmetic.",
+  "candidate_generators": 0,
+  "new_independent_classes_certified": 0,
+  "positive_controls_recovered": 3,
+  "rational_norm_checks": 1323,
+  "rows": [
+    {
+      "generators": 0,
+      "id": "prime-column-0",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-1",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-2",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-3",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-4",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-6",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-8",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-10",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-12",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-13",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-15",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-16",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-17",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-19",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-21",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-22",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-23",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-24",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-26",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-28",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-29",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-30",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-31",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 0,
+      "id": "prime-column-33",
+      "kind": "candidate",
+      "norms_verified": 49
+    },
+    {
+      "generators": 1,
+      "id": "generic-0",
+      "kind": "positive_control",
+      "norms_verified": 49
+    },
+    {
+      "generators": 1,
+      "id": "generic-1",
+      "kind": "positive_control",
+      "norms_verified": 49
+    },
+    {
+      "generators": 1,
+      "id": "generic-2",
+      "kind": "positive_control",
+      "norms_verified": 49
+    }
+  ],
+  "schema": "rank-jump.prime-square-class-constructor-verification.v1",
+  "software": {
+    "pari": "[2, 17, 3]",
+    "sage": "10.9"
+  },
+  "status": "PASS"
+}
