@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.generic-selmer-capacity-protocol.v1",
+  "question": "How many independent fibre classes can descend from Q(t) classes satisfying the geometric local Kummer conditions at every base place?",
+  "selection": "The unchanged sixteen-fibre fresh27 comparison, plus the already retained MW16-05 reference family. Reuse five equation-only family geometry certificates and compute two historical parent presentations. Rank labels enter only a separate comparison after computation.",
+  "permitted_worker_inputs": "Family A,B polynomials, retained parameters, fibre equations, marked generic sections and their retained finite-prime independence witnesses. No exceptional points, exceptional Kummer classes, class-group anchors or point-search outputs.",
+  "computation": "Verify minimal semistable K3 geometry, geometric S3 monodromy, exact specialization isomorphisms and generic mod-two independence. Apply the geometric Kummer sequence, Shioda-Tate and Sha-Brauer identification to compute d=20-sum(m_v-1). The arithmetic preimage of geometric Selmer has dimension at most d. No arithmetic Selmer basis is asserted.",
+  "residue_test": "A Q(t) block specializing to R independent rational Kummer classes needs geometric local-obstruction rank at least R-d. For permitted extra support T, good geometric base places contribute at most two dimensions each and multiplicative bad base places at most one each. These are base valuations, not rational primes of a specialized cubic field.",
+  "limits": {"worker_seconds_per_family": 30, "verification_seconds": 60, "modular_prime_bound": 1999, "workers": 1, "new_point_searches": 0, "new_specialization_searches": 0, "class_group_computations": 0},
+  "failure": "UNKNOWN for any historical geometry worker that exceeds its cap. Preserve checkpoints. Do not enlarge the experiment or borrow a fibre configuration from a similarly named family."
+}

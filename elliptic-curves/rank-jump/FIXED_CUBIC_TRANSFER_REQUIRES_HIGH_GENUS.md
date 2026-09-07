@@ -201,6 +201,13 @@ over the generic family with the necessary geometric local conditions.
 This distinguishes classes already present in a global cover construction
 from arithmetic classes which arise only after specialization.
 
+That bound is now established in
+[large jumps exceed the generic geometric Selmer pool](LARGE_JUMPS_EXCEED_THE_GENERIC_SELMER_POOL.md):
+the restricted global pool has room for at most three dimensions beyond
+the marked generic subgroup, even with a varying cubic field. The note
+also gives the geometric local-obstruction rank required of a larger
+ramified family-level construction.
+
 No claim is made that all mechanisms require a constant field. A common
 auxiliary curve for several rational points may keep neither E[2] nor the
 cubic field constant; the genus bounds above do not apply to that weaker

@@ -1,0 +1,16 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json": "15aeb70029a078dd51024a2e4c8d75a336a7197abe9471d79151a91178a59ec5",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fixed_field_transfer_geometry_inputs_v1.json": "9f49905d2194d57513c7950641d540b0e5340385b91e447024a6bb3de9be19b8",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_completion_v1.json": "7723a550f87b15cd4e5b1fcbb3e187327b8b209b9d702dee5748a20dd0d8c38e",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_manifest_v1.json": "dd07b100bd8cedd038dfe41f30bfb172ba030934cbc39cb7a16d1a5928412fbf",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+    "artifacts/generated-results/elliptic-curves/rank_jump_generic_selmer_capacity_inputs_v1.json": "c45200ef84403566246ad87afa34bfa23d77af7a2d00a42573ba40ed916bdf1c",
+    "elliptic-curves/data/icarm_mw16_parent_ladder_blind_inputs_v1.json": "a56208ecb81944b9a78c7eaa258ceaed29d21f72f25f88c130fac01b5ad511fe",
+    "elliptic-curves/rank-jump/GENERIC_SELMER_CAPACITY_PROTOCOL.json": "e307fb9bcaa373b6337128025937b0afee40a7c6407d334bdd86c74a9fa5e6ff",
+    "elliptic-curves/rank-jump/generic_selmer_capacity.py": "cbd13393c96e560fc9fd0e05727b93852f32df160237bd278a7cbfbfca8c7369"
+  },
+  "boundary": "Export projects equations and explicitly generic coordinates. It does not project any exceptional point or retained rank. Historical lineage supplies family identification only.",
+  "schema": "rank-jump.generic-selmer-capacity-provenance.v1"
+}

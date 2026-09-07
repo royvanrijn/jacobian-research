@@ -1,0 +1,1110 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_generic_selmer_capacity_geometry_v1.json": "0ea4f9d866671edd038ee6020e1878af35e8ea06e861794df90bc9c43b6407a8",
+    "artifacts/generated-results/elliptic-curves/rank_jump_generic_selmer_capacity_inputs_v1.json": "c45200ef84403566246ad87afa34bfa23d77af7a2d00a42573ba40ed916bdf1c",
+    "artifacts/generated-results/elliptic-curves/rank_jump_generic_selmer_capacity_provenance_v1.json": "80afa1fc2e81cfc608abf048f099add7d4695cdf48f9cc2a44f79d37231b2d24",
+    "artifacts/generated-results/elliptic-curves/rank_jump_generic_selmer_geometry_completion_inputs_v1.json": "e835c061ae9d5f3ef1570212cc0e5cc427d24cc045b025576d48218b95ebc17a",
+    "artifacts/generated-results/elliptic-curves/rank_jump_generic_selmer_geometry_completion_v1.json": "e77e1c0dcc2ccf83b36fafef62e8c0555ab09836fa715161088d2c9feb2b44e5",
+    "elliptic-curves/rank-jump/GENERIC_SELMER_CAPACITY_PROTOCOL.json": "e307fb9bcaa373b6337128025937b0afee40a7c6407d334bdd86c74a9fa5e6ff",
+    "elliptic-curves/rank-jump/complete_generic_selmer_geometry.py": "924410f4e27226b88703e2e96d66f02c47c021e1e7447be32746919a9b55edaf",
+    "elliptic-curves/rank-jump/generic_selmer_capacity.py": "cbd13393c96e560fc9fd0e05727b93852f32df160237bd278a7cbfbfca8c7369",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_fixed_field_transfer_geometry.py": "60e53aa09babca84166438a6bbbc2bf1e7859c2960408196f2d835784711a8a0",
+    "elliptic-curves/rank-jump/verify_fresh_symbolic_discriminant.py": "ef4d9f4e89cbdac899c559cdd276bfccdc2723766cd1ac3416e9ce2b24abf42b",
+    "elliptic-curves/rank-jump/verify_generic_selmer_capacity.py": "a0c3a19c94c1dc39be219ccfad7eae5163f7adbea9f239cc435ff4f6a7fe3480"
+  },
+  "boundary": "Portable verification of hypotheses, exact model isomorphisms, generic mod-two independence and dimension arithmetic. The cohomological theorem is proved in the accompanying note, not mechanically formalized. No exceptional points or rank labels read; no arithmetic Selmer basis computed.",
+  "cases": [
+    {
+      "extra_global_pool_capacity_upper_bound": 3,
+      "family": "074d9",
+      "generic_good_prime_witness_count": 12,
+      "generic_mod_two_dimension": 17,
+      "geometric_selmer_dimension": 20,
+      "parameter": "2818/1535",
+      "short_model_scale_u": "2356225/78",
+      "token": "case-00"
+    },
+    {
+      "extra_global_pool_capacity_upper_bound": 3,
+      "family": "074d9",
+      "generic_good_prime_witness_count": 16,
+      "generic_mod_two_dimension": 17,
+      "geometric_selmer_dimension": 20,
+      "parameter": "2824/885",
+      "short_model_scale_u": "261075/4",
+      "token": "case-01"
+    },
+    {
+      "extra_global_pool_capacity_upper_bound": 3,
+      "family": "103b2",
+      "generic_good_prime_witness_count": 14,
+      "generic_mod_two_dimension": 17,
+      "geometric_selmer_dimension": 20,
+      "parameter": "3726/881",
+      "short_model_scale_u": "776161/12",
+      "token": "case-02"
+    },
+    {
+      "extra_global_pool_capacity_upper_bound": 3,
+      "family": "103b2",
+      "generic_good_prime_witness_count": 17,
+      "generic_mod_two_dimension": 17,
+      "geometric_selmer_dimension": 20,
+      "parameter": "-1049/2296",
+      "short_model_scale_u": "2635808/3",
+      "token": "case-03"
+    },
+    {
+      "extra_global_pool_capacity_upper_bound": 3,
+      "family": "11952",
+      "generic_good_prime_witness_count": 15,
+      "generic_mod_two_dimension": 17,
+      "geometric_selmer_dimension": 20,
+      "parameter": "-2448/11",
+      "short_model_scale_u": "121/12",
+      "token": "case-04"
+    },
+    {
+      "extra_global_pool_capacity_upper_bound": 3,
+      "family": "11952",
+      "generic_good_prime_witness_count": 17,
+      "generic_mod_two_dimension": 17,
+      "geometric_selmer_dimension": 20,
+      "parameter": "-1171/1683",
+      "short_model_scale_u": "314721/2",
+      "token": "case-05"
+    },
+    {
+      "extra_global_pool_capacity_upper_bound": 3,
+      "family": "11952",
+      "generic_good_prime_witness_count": 18,
+      "generic_mod_two_dimension": 17,
+      "geometric_selmer_dimension": 20,
+      "parameter": "110314/102227",
+      "short_model_scale_u": "10450359529/156",
+      "token": "case-06"
+    },
+    {
+      "extra_global_pool_capacity_upper_bound": 3,
+      "family": "11952",
+      "generic_good_prime_witness_count": 13,
+      "generic_mod_two_dimension": 17,
+      "geometric_selmer_dimension": 20,
+      "parameter": "130349/28916",
+      "short_model_scale_u": "836135056/39",
+      "token": "case-07"
+    },
+    {
+      "extra_global_pool_capacity_upper_bound": 3,
+      "family": "11952",
+      "generic_good_prime_witness_count": 13,
+      "generic_mod_two_dimension": 17,
+      "geometric_selmer_dimension": 20,
+      "parameter": "2012/211",
+      "short_model_scale_u": "44521/12",
+      "token": "case-08"
+    },
+    {
+      "extra_global_pool_capacity_upper_bound": 3,
+      "family": "11952",
+      "generic_good_prime_witness_count": 16,
+      "generic_mod_two_dimension": 17,
+      "geometric_selmer_dimension": 20,
+      "parameter": "2828/2015",
+      "short_model_scale_u": "4060225/12",
+      "token": "case-09"
+    },
+    {
+      "extra_global_pool_capacity_upper_bound": 3,
+      "family": "11952",
+      "generic_good_prime_witness_count": 16,
+      "generic_mod_two_dimension": 17,
+      "geometric_selmer_dimension": 20,
+      "parameter": "4286/1881",
+      "short_model_scale_u": "393129/4",
+      "token": "case-10"
+    },
+    {
+      "extra_global_pool_capacity_upper_bound": 3,
+      "family": "a1-fibration-01",
+      "generic_good_prime_witness_count": 11,
+      "generic_mod_two_dimension": 16,
+      "geometric_selmer_dimension": 19,
+      "parameter": "-1867/270",
+      "short_model_scale_u": "12150",
+      "token": "case-11"
+    },
+    {
+      "extra_global_pool_capacity_upper_bound": 3,
+      "family": "a1-fibration-01",
+      "generic_good_prime_witness_count": 16,
+      "generic_mod_two_dimension": 16,
+      "geometric_selmer_dimension": 19,
+      "parameter": "-3187/3697",
+      "short_model_scale_u": "13667809/78",
+      "token": "case-12"
+    },
+    {
+      "extra_global_pool_capacity_upper_bound": 3,
+      "family": "historic-lineage-074d9",
+      "generic_good_prime_witness_count": 14,
+      "generic_mod_two_dimension": 17,
+      "geometric_selmer_dimension": 20,
+      "parameter": "-970521251165766412987689802944/5201452365084059419448702694373",
+      "short_model_scale_u": "3106109843297233434212751671402396570341708486968036791951266723695213388023321089044551375887444413845348433039150180713427/2882735015232604948895557835391858770205813989787450450894749897536417734391342322932425930692486679116817122071708434432",
+      "token": "case-13"
+    },
+    {
+      "extra_global_pool_capacity_upper_bound": 3,
+      "family": "historic-lineage-074d9",
+      "generic_good_prime_witness_count": 17,
+      "generic_mod_two_dimension": 17,
+      "geometric_selmer_dimension": 20,
+      "parameter": "-4569968803191492789881348058432/20219201289082406615406548938643",
+      "short_model_scale_u": "3144635791251996960147042980899285886037389597408041344539134871633672388228022707147717289065676292848959554759275566959696329/10774519922635913951553851496330315114260986585796483193530170588106156366764335252447848158311380996946946640139918508032",
+      "token": "case-14"
+    },
+    {
+      "extra_global_pool_capacity_upper_bound": 3,
+      "family": "curve398-p16875",
+      "generic_good_prime_witness_count": 16,
+      "generic_mod_two_dimension": 16,
+      "geometric_selmer_dimension": 19,
+      "parameter": "-273478312517509127154149830485048828022673347107308547939067553994727903425458545978043182638015899676311550557441827100822466901248/243076210150914055804756105904064536659703543720469425499709810733677965174759784940636972086422417178984090368085211",
+      "short_model_scale_u": "11146467708736743123286807553982878663143521523496136013858197348682555121364459680361680895468033437782615853238588073/13325833722104967189348170080066555910090040277848901026789423442140938536613117909687026261682539103203818974306958332888389058580480",
+      "token": "case-15"
+    }
+  ],
+  "families": [
+    {
+      "arithmetic_global_pool_dimension_upper_bound": 20,
+      "euler_number": 24,
+      "family": "074d9",
+      "geometric_selmer_dimension": 20,
+      "geometric_two_torsion_dimension": 0,
+      "picard_rank_checks": [
+        {
+          "geometric_MW_rank": 0,
+          "geometric_Sha_two_dimension": 20,
+          "rho": 2
+        },
+        {
+          "geometric_MW_rank": 1,
+          "geometric_Sha_two_dimension": 19,
+          "rho": 3
+        },
+        {
+          "geometric_MW_rank": 2,
+          "geometric_Sha_two_dimension": 18,
+          "rho": 4
+        },
+        {
+          "geometric_MW_rank": 3,
+          "geometric_Sha_two_dimension": 17,
+          "rho": 5
+        },
+        {
+          "geometric_MW_rank": 4,
+          "geometric_Sha_two_dimension": 16,
+          "rho": 6
+        },
+        {
+          "geometric_MW_rank": 5,
+          "geometric_Sha_two_dimension": 15,
+          "rho": 7
+        },
+        {
+          "geometric_MW_rank": 6,
+          "geometric_Sha_two_dimension": 14,
+          "rho": 8
+        },
+        {
+          "geometric_MW_rank": 7,
+          "geometric_Sha_two_dimension": 13,
+          "rho": 9
+        },
+        {
+          "geometric_MW_rank": 8,
+          "geometric_Sha_two_dimension": 12,
+          "rho": 10
+        },
+        {
+          "geometric_MW_rank": 9,
+          "geometric_Sha_two_dimension": 11,
+          "rho": 11
+        },
+        {
+          "geometric_MW_rank": 10,
+          "geometric_Sha_two_dimension": 10,
+          "rho": 12
+        },
+        {
+          "geometric_MW_rank": 11,
+          "geometric_Sha_two_dimension": 9,
+          "rho": 13
+        },
+        {
+          "geometric_MW_rank": 12,
+          "geometric_Sha_two_dimension": 8,
+          "rho": 14
+        },
+        {
+          "geometric_MW_rank": 13,
+          "geometric_Sha_two_dimension": 7,
+          "rho": 15
+        },
+        {
+          "geometric_MW_rank": 14,
+          "geometric_Sha_two_dimension": 6,
+          "rho": 16
+        },
+        {
+          "geometric_MW_rank": 15,
+          "geometric_Sha_two_dimension": 5,
+          "rho": 17
+        },
+        {
+          "geometric_MW_rank": 16,
+          "geometric_Sha_two_dimension": 4,
+          "rho": 18
+        },
+        {
+          "geometric_MW_rank": 17,
+          "geometric_Sha_two_dimension": 3,
+          "rho": 19
+        },
+        {
+          "geometric_MW_rank": 18,
+          "geometric_Sha_two_dimension": 2,
+          "rho": 20
+        }
+      ],
+      "root_lattice_rank": 0,
+      "theorem_inputs": "Kummer exact sequence, Shioda-Tate, geometric Sha=Br and dim Br[2]=22-rho; see proof note."
+    },
+    {
+      "arithmetic_global_pool_dimension_upper_bound": 20,
+      "euler_number": 24,
+      "family": "103b2",
+      "geometric_selmer_dimension": 20,
+      "geometric_two_torsion_dimension": 0,
+      "picard_rank_checks": [
+        {
+          "geometric_MW_rank": 0,
+          "geometric_Sha_two_dimension": 20,
+          "rho": 2
+        },
+        {
+          "geometric_MW_rank": 1,
+          "geometric_Sha_two_dimension": 19,
+          "rho": 3
+        },
+        {
+          "geometric_MW_rank": 2,
+          "geometric_Sha_two_dimension": 18,
+          "rho": 4
+        },
+        {
+          "geometric_MW_rank": 3,
+          "geometric_Sha_two_dimension": 17,
+          "rho": 5
+        },
+        {
+          "geometric_MW_rank": 4,
+          "geometric_Sha_two_dimension": 16,
+          "rho": 6
+        },
+        {
+          "geometric_MW_rank": 5,
+          "geometric_Sha_two_dimension": 15,
+          "rho": 7
+        },
+        {
+          "geometric_MW_rank": 6,
+          "geometric_Sha_two_dimension": 14,
+          "rho": 8
+        },
+        {
+          "geometric_MW_rank": 7,
+          "geometric_Sha_two_dimension": 13,
+          "rho": 9
+        },
+        {
+          "geometric_MW_rank": 8,
+          "geometric_Sha_two_dimension": 12,
+          "rho": 10
+        },
+        {
+          "geometric_MW_rank": 9,
+          "geometric_Sha_two_dimension": 11,
+          "rho": 11
+        },
+        {
+          "geometric_MW_rank": 10,
+          "geometric_Sha_two_dimension": 10,
+          "rho": 12
+        },
+        {
+          "geometric_MW_rank": 11,
+          "geometric_Sha_two_dimension": 9,
+          "rho": 13
+        },
+        {
+          "geometric_MW_rank": 12,
+          "geometric_Sha_two_dimension": 8,
+          "rho": 14
+        },
+        {
+          "geometric_MW_rank": 13,
+          "geometric_Sha_two_dimension": 7,
+          "rho": 15
+        },
+        {
+          "geometric_MW_rank": 14,
+          "geometric_Sha_two_dimension": 6,
+          "rho": 16
+        },
+        {
+          "geometric_MW_rank": 15,
+          "geometric_Sha_two_dimension": 5,
+          "rho": 17
+        },
+        {
+          "geometric_MW_rank": 16,
+          "geometric_Sha_two_dimension": 4,
+          "rho": 18
+        },
+        {
+          "geometric_MW_rank": 17,
+          "geometric_Sha_two_dimension": 3,
+          "rho": 19
+        },
+        {
+          "geometric_MW_rank": 18,
+          "geometric_Sha_two_dimension": 2,
+          "rho": 20
+        }
+      ],
+      "root_lattice_rank": 0,
+      "theorem_inputs": "Kummer exact sequence, Shioda-Tate, geometric Sha=Br and dim Br[2]=22-rho; see proof note."
+    },
+    {
+      "arithmetic_global_pool_dimension_upper_bound": 20,
+      "euler_number": 24,
+      "family": "11952",
+      "geometric_selmer_dimension": 20,
+      "geometric_two_torsion_dimension": 0,
+      "picard_rank_checks": [
+        {
+          "geometric_MW_rank": 0,
+          "geometric_Sha_two_dimension": 20,
+          "rho": 2
+        },
+        {
+          "geometric_MW_rank": 1,
+          "geometric_Sha_two_dimension": 19,
+          "rho": 3
+        },
+        {
+          "geometric_MW_rank": 2,
+          "geometric_Sha_two_dimension": 18,
+          "rho": 4
+        },
+        {
+          "geometric_MW_rank": 3,
+          "geometric_Sha_two_dimension": 17,
+          "rho": 5
+        },
+        {
+          "geometric_MW_rank": 4,
+          "geometric_Sha_two_dimension": 16,
+          "rho": 6
+        },
+        {
+          "geometric_MW_rank": 5,
+          "geometric_Sha_two_dimension": 15,
+          "rho": 7
+        },
+        {
+          "geometric_MW_rank": 6,
+          "geometric_Sha_two_dimension": 14,
+          "rho": 8
+        },
+        {
+          "geometric_MW_rank": 7,
+          "geometric_Sha_two_dimension": 13,
+          "rho": 9
+        },
+        {
+          "geometric_MW_rank": 8,
+          "geometric_Sha_two_dimension": 12,
+          "rho": 10
+        },
+        {
+          "geometric_MW_rank": 9,
+          "geometric_Sha_two_dimension": 11,
+          "rho": 11
+        },
+        {
+          "geometric_MW_rank": 10,
+          "geometric_Sha_two_dimension": 10,
+          "rho": 12
+        },
+        {
+          "geometric_MW_rank": 11,
+          "geometric_Sha_two_dimension": 9,
+          "rho": 13
+        },
+        {
+          "geometric_MW_rank": 12,
+          "geometric_Sha_two_dimension": 8,
+          "rho": 14
+        },
+        {
+          "geometric_MW_rank": 13,
+          "geometric_Sha_two_dimension": 7,
+          "rho": 15
+        },
+        {
+          "geometric_MW_rank": 14,
+          "geometric_Sha_two_dimension": 6,
+          "rho": 16
+        },
+        {
+          "geometric_MW_rank": 15,
+          "geometric_Sha_two_dimension": 5,
+          "rho": 17
+        },
+        {
+          "geometric_MW_rank": 16,
+          "geometric_Sha_two_dimension": 4,
+          "rho": 18
+        },
+        {
+          "geometric_MW_rank": 17,
+          "geometric_Sha_two_dimension": 3,
+          "rho": 19
+        },
+        {
+          "geometric_MW_rank": 18,
+          "geometric_Sha_two_dimension": 2,
+          "rho": 20
+        }
+      ],
+      "root_lattice_rank": 0,
+      "theorem_inputs": "Kummer exact sequence, Shioda-Tate, geometric Sha=Br and dim Br[2]=22-rho; see proof note."
+    },
+    {
+      "arithmetic_global_pool_dimension_upper_bound": 19,
+      "euler_number": 24,
+      "family": "a1-fibration-01",
+      "geometric_selmer_dimension": 19,
+      "geometric_two_torsion_dimension": 0,
+      "picard_rank_checks": [
+        {
+          "geometric_MW_rank": 0,
+          "geometric_Sha_two_dimension": 19,
+          "rho": 3
+        },
+        {
+          "geometric_MW_rank": 1,
+          "geometric_Sha_two_dimension": 18,
+          "rho": 4
+        },
+        {
+          "geometric_MW_rank": 2,
+          "geometric_Sha_two_dimension": 17,
+          "rho": 5
+        },
+        {
+          "geometric_MW_rank": 3,
+          "geometric_Sha_two_dimension": 16,
+          "rho": 6
+        },
+        {
+          "geometric_MW_rank": 4,
+          "geometric_Sha_two_dimension": 15,
+          "rho": 7
+        },
+        {
+          "geometric_MW_rank": 5,
+          "geometric_Sha_two_dimension": 14,
+          "rho": 8
+        },
+        {
+          "geometric_MW_rank": 6,
+          "geometric_Sha_two_dimension": 13,
+          "rho": 9
+        },
+        {
+          "geometric_MW_rank": 7,
+          "geometric_Sha_two_dimension": 12,
+          "rho": 10
+        },
+        {
+          "geometric_MW_rank": 8,
+          "geometric_Sha_two_dimension": 11,
+          "rho": 11
+        },
+        {
+          "geometric_MW_rank": 9,
+          "geometric_Sha_two_dimension": 10,
+          "rho": 12
+        },
+        {
+          "geometric_MW_rank": 10,
+          "geometric_Sha_two_dimension": 9,
+          "rho": 13
+        },
+        {
+          "geometric_MW_rank": 11,
+          "geometric_Sha_two_dimension": 8,
+          "rho": 14
+        },
+        {
+          "geometric_MW_rank": 12,
+          "geometric_Sha_two_dimension": 7,
+          "rho": 15
+        },
+        {
+          "geometric_MW_rank": 13,
+          "geometric_Sha_two_dimension": 6,
+          "rho": 16
+        },
+        {
+          "geometric_MW_rank": 14,
+          "geometric_Sha_two_dimension": 5,
+          "rho": 17
+        },
+        {
+          "geometric_MW_rank": 15,
+          "geometric_Sha_two_dimension": 4,
+          "rho": 18
+        },
+        {
+          "geometric_MW_rank": 16,
+          "geometric_Sha_two_dimension": 3,
+          "rho": 19
+        },
+        {
+          "geometric_MW_rank": 17,
+          "geometric_Sha_two_dimension": 2,
+          "rho": 20
+        }
+      ],
+      "root_lattice_rank": 1,
+      "theorem_inputs": "Kummer exact sequence, Shioda-Tate, geometric Sha=Br and dim Br[2]=22-rho; see proof note."
+    },
+    {
+      "arithmetic_global_pool_dimension_upper_bound": 19,
+      "euler_number": 24,
+      "family": "a1-fibration-05",
+      "geometric_selmer_dimension": 19,
+      "geometric_two_torsion_dimension": 0,
+      "picard_rank_checks": [
+        {
+          "geometric_MW_rank": 0,
+          "geometric_Sha_two_dimension": 19,
+          "rho": 3
+        },
+        {
+          "geometric_MW_rank": 1,
+          "geometric_Sha_two_dimension": 18,
+          "rho": 4
+        },
+        {
+          "geometric_MW_rank": 2,
+          "geometric_Sha_two_dimension": 17,
+          "rho": 5
+        },
+        {
+          "geometric_MW_rank": 3,
+          "geometric_Sha_two_dimension": 16,
+          "rho": 6
+        },
+        {
+          "geometric_MW_rank": 4,
+          "geometric_Sha_two_dimension": 15,
+          "rho": 7
+        },
+        {
+          "geometric_MW_rank": 5,
+          "geometric_Sha_two_dimension": 14,
+          "rho": 8
+        },
+        {
+          "geometric_MW_rank": 6,
+          "geometric_Sha_two_dimension": 13,
+          "rho": 9
+        },
+        {
+          "geometric_MW_rank": 7,
+          "geometric_Sha_two_dimension": 12,
+          "rho": 10
+        },
+        {
+          "geometric_MW_rank": 8,
+          "geometric_Sha_two_dimension": 11,
+          "rho": 11
+        },
+        {
+          "geometric_MW_rank": 9,
+          "geometric_Sha_two_dimension": 10,
+          "rho": 12
+        },
+        {
+          "geometric_MW_rank": 10,
+          "geometric_Sha_two_dimension": 9,
+          "rho": 13
+        },
+        {
+          "geometric_MW_rank": 11,
+          "geometric_Sha_two_dimension": 8,
+          "rho": 14
+        },
+        {
+          "geometric_MW_rank": 12,
+          "geometric_Sha_two_dimension": 7,
+          "rho": 15
+        },
+        {
+          "geometric_MW_rank": 13,
+          "geometric_Sha_two_dimension": 6,
+          "rho": 16
+        },
+        {
+          "geometric_MW_rank": 14,
+          "geometric_Sha_two_dimension": 5,
+          "rho": 17
+        },
+        {
+          "geometric_MW_rank": 15,
+          "geometric_Sha_two_dimension": 4,
+          "rho": 18
+        },
+        {
+          "geometric_MW_rank": 16,
+          "geometric_Sha_two_dimension": 3,
+          "rho": 19
+        },
+        {
+          "geometric_MW_rank": 17,
+          "geometric_Sha_two_dimension": 2,
+          "rho": 20
+        }
+      ],
+      "root_lattice_rank": 1,
+      "theorem_inputs": "Kummer exact sequence, Shioda-Tate, geometric Sha=Br and dim Br[2]=22-rho; see proof note."
+    },
+    {
+      "arithmetic_global_pool_dimension_upper_bound": 20,
+      "euler_number": 24,
+      "family": "historic-lineage-074d9",
+      "geometric_selmer_dimension": 20,
+      "geometric_two_torsion_dimension": 0,
+      "picard_rank_checks": [
+        {
+          "geometric_MW_rank": 0,
+          "geometric_Sha_two_dimension": 20,
+          "rho": 2
+        },
+        {
+          "geometric_MW_rank": 1,
+          "geometric_Sha_two_dimension": 19,
+          "rho": 3
+        },
+        {
+          "geometric_MW_rank": 2,
+          "geometric_Sha_two_dimension": 18,
+          "rho": 4
+        },
+        {
+          "geometric_MW_rank": 3,
+          "geometric_Sha_two_dimension": 17,
+          "rho": 5
+        },
+        {
+          "geometric_MW_rank": 4,
+          "geometric_Sha_two_dimension": 16,
+          "rho": 6
+        },
+        {
+          "geometric_MW_rank": 5,
+          "geometric_Sha_two_dimension": 15,
+          "rho": 7
+        },
+        {
+          "geometric_MW_rank": 6,
+          "geometric_Sha_two_dimension": 14,
+          "rho": 8
+        },
+        {
+          "geometric_MW_rank": 7,
+          "geometric_Sha_two_dimension": 13,
+          "rho": 9
+        },
+        {
+          "geometric_MW_rank": 8,
+          "geometric_Sha_two_dimension": 12,
+          "rho": 10
+        },
+        {
+          "geometric_MW_rank": 9,
+          "geometric_Sha_two_dimension": 11,
+          "rho": 11
+        },
+        {
+          "geometric_MW_rank": 10,
+          "geometric_Sha_two_dimension": 10,
+          "rho": 12
+        },
+        {
+          "geometric_MW_rank": 11,
+          "geometric_Sha_two_dimension": 9,
+          "rho": 13
+        },
+        {
+          "geometric_MW_rank": 12,
+          "geometric_Sha_two_dimension": 8,
+          "rho": 14
+        },
+        {
+          "geometric_MW_rank": 13,
+          "geometric_Sha_two_dimension": 7,
+          "rho": 15
+        },
+        {
+          "geometric_MW_rank": 14,
+          "geometric_Sha_two_dimension": 6,
+          "rho": 16
+        },
+        {
+          "geometric_MW_rank": 15,
+          "geometric_Sha_two_dimension": 5,
+          "rho": 17
+        },
+        {
+          "geometric_MW_rank": 16,
+          "geometric_Sha_two_dimension": 4,
+          "rho": 18
+        },
+        {
+          "geometric_MW_rank": 17,
+          "geometric_Sha_two_dimension": 3,
+          "rho": 19
+        },
+        {
+          "geometric_MW_rank": 18,
+          "geometric_Sha_two_dimension": 2,
+          "rho": 20
+        }
+      ],
+      "root_lattice_rank": 0,
+      "theorem_inputs": "Kummer exact sequence, Shioda-Tate, geometric Sha=Br and dim Br[2]=22-rho; see proof note."
+    },
+    {
+      "arithmetic_global_pool_dimension_upper_bound": 19,
+      "euler_number": 24,
+      "family": "curve398-p16875",
+      "geometric_selmer_dimension": 19,
+      "geometric_two_torsion_dimension": 0,
+      "picard_rank_checks": [
+        {
+          "geometric_MW_rank": 0,
+          "geometric_Sha_two_dimension": 19,
+          "rho": 3
+        },
+        {
+          "geometric_MW_rank": 1,
+          "geometric_Sha_two_dimension": 18,
+          "rho": 4
+        },
+        {
+          "geometric_MW_rank": 2,
+          "geometric_Sha_two_dimension": 17,
+          "rho": 5
+        },
+        {
+          "geometric_MW_rank": 3,
+          "geometric_Sha_two_dimension": 16,
+          "rho": 6
+        },
+        {
+          "geometric_MW_rank": 4,
+          "geometric_Sha_two_dimension": 15,
+          "rho": 7
+        },
+        {
+          "geometric_MW_rank": 5,
+          "geometric_Sha_two_dimension": 14,
+          "rho": 8
+        },
+        {
+          "geometric_MW_rank": 6,
+          "geometric_Sha_two_dimension": 13,
+          "rho": 9
+        },
+        {
+          "geometric_MW_rank": 7,
+          "geometric_Sha_two_dimension": 12,
+          "rho": 10
+        },
+        {
+          "geometric_MW_rank": 8,
+          "geometric_Sha_two_dimension": 11,
+          "rho": 11
+        },
+        {
+          "geometric_MW_rank": 9,
+          "geometric_Sha_two_dimension": 10,
+          "rho": 12
+        },
+        {
+          "geometric_MW_rank": 10,
+          "geometric_Sha_two_dimension": 9,
+          "rho": 13
+        },
+        {
+          "geometric_MW_rank": 11,
+          "geometric_Sha_two_dimension": 8,
+          "rho": 14
+        },
+        {
+          "geometric_MW_rank": 12,
+          "geometric_Sha_two_dimension": 7,
+          "rho": 15
+        },
+        {
+          "geometric_MW_rank": 13,
+          "geometric_Sha_two_dimension": 6,
+          "rho": 16
+        },
+        {
+          "geometric_MW_rank": 14,
+          "geometric_Sha_two_dimension": 5,
+          "rho": 17
+        },
+        {
+          "geometric_MW_rank": 15,
+          "geometric_Sha_two_dimension": 4,
+          "rho": 18
+        },
+        {
+          "geometric_MW_rank": 16,
+          "geometric_Sha_two_dimension": 3,
+          "rho": 19
+        },
+        {
+          "geometric_MW_rank": 17,
+          "geometric_Sha_two_dimension": 2,
+          "rho": 20
+        }
+      ],
+      "root_lattice_rank": 1,
+      "theorem_inputs": "Kummer exact sequence, Shioda-Tate, geometric Sha=Br and dim Br[2]=22-rho; see proof note."
+    }
+  ],
+  "geometry_replay_rows": [
+    {
+      "branch_points": 24,
+      "constant_field_carrier_genus": 31,
+      "family": "074d9",
+      "irreducibility_prime": 19,
+      "resolvent_genus": 11,
+      "root_genus": 10
+    },
+    {
+      "branch_points": 24,
+      "constant_field_carrier_genus": 31,
+      "family": "103b2",
+      "irreducibility_prime": 31,
+      "resolvent_genus": 11,
+      "root_genus": 10
+    },
+    {
+      "branch_points": 24,
+      "constant_field_carrier_genus": 31,
+      "family": "11952",
+      "irreducibility_prime": 31,
+      "resolvent_genus": 11,
+      "root_genus": 10
+    },
+    {
+      "branch_points": 22,
+      "constant_field_carrier_genus": 28,
+      "family": "a1-fibration-01",
+      "irreducibility_prime": 7,
+      "resolvent_genus": 10,
+      "root_genus": 9
+    },
+    {
+      "branch_points": 22,
+      "constant_field_carrier_genus": 28,
+      "family": "a1-fibration-05",
+      "irreducibility_prime": 23,
+      "resolvent_genus": 10,
+      "root_genus": 9
+    },
+    {
+      "branch_points": 24,
+      "constant_field_carrier_genus": 31,
+      "family": "historic-lineage-074d9",
+      "irreducibility_prime": 17,
+      "resolvent_genus": 11,
+      "root_genus": 10
+    },
+    {
+      "branch_points": 22,
+      "constant_field_carrier_genus": 28,
+      "family": "curve398-p16875",
+      "irreducibility_prime": 23,
+      "resolvent_genus": 10,
+      "root_genus": 9
+    }
+  ],
+  "modular_coprimality_witnesses": [
+    {
+      "degrees": [
+        8,
+        24
+      ],
+      "prime": 1009
+    },
+    {
+      "degrees": [
+        24,
+        23
+      ],
+      "prime": 1009
+    },
+    {
+      "degrees": [
+        8,
+        24
+      ],
+      "prime": 1009
+    },
+    {
+      "degrees": [
+        24,
+        23
+      ],
+      "prime": 1009
+    },
+    {
+      "degrees": [
+        8,
+        24
+      ],
+      "prime": 1009
+    },
+    {
+      "degrees": [
+        24,
+        23
+      ],
+      "prime": 1009
+    },
+    {
+      "degrees": [
+        8,
+        24
+      ],
+      "prime": 1009
+    },
+    {
+      "degrees": [
+        22,
+        21
+      ],
+      "prime": 1009
+    },
+    {
+      "degrees": [
+        1,
+        0
+      ],
+      "prime": 1009
+    },
+    {
+      "degrees": [
+        1,
+        22
+      ],
+      "prime": 1009
+    },
+    {
+      "degrees": [
+        8,
+        24
+      ],
+      "prime": 1009
+    },
+    {
+      "degrees": [
+        22,
+        21
+      ],
+      "prime": 1009
+    },
+    {
+      "degrees": [
+        1,
+        0
+      ],
+      "prime": 1009
+    },
+    {
+      "degrees": [
+        1,
+        22
+      ],
+      "prime": 1009
+    },
+    {
+      "degrees": [
+        8,
+        24
+      ],
+      "prime": 1009
+    },
+    {
+      "degrees": [
+        24,
+        23
+      ],
+      "prime": 1009
+    },
+    {
+      "degrees": [
+        8,
+        24
+      ],
+      "prime": 1009
+    },
+    {
+      "degrees": [
+        22,
+        21
+      ],
+      "prime": 1009
+    },
+    {
+      "degrees": [
+        1,
+        0
+      ],
+      "prime": 1009
+    },
+    {
+      "degrees": [
+        1,
+        22
+      ],
+      "prime": 1009
+    }
+  ],
+  "schema": "rank-jump.generic-selmer-capacity-verification.v1",
+  "status": "PASS"
+}
