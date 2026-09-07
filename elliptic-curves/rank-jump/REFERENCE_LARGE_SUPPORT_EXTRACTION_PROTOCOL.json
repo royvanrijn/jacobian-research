@@ -1,0 +1,18 @@
+{
+  "schema": "rank-jump.reference-large-support-extraction-protocol.v1",
+  "endpoint": "Extract the first additional strict class from the already completed 352 small-representative targets; no further relation or point search.",
+  "correction": "The first new broad parity cycle made the old requirement that all individual factors be units at the same primes below1009 too restrictive: even G no longer achieved character rank16. Preserve that fail-closed run and use a fixed proof-prime window above the retained50000 smooth support. Only the character evaluation window changes.",
+  "bounds": {
+    "worker_seconds": 120,
+    "workers": 1,
+    "pari_stack_bytes": 268435456,
+    "proof_prime_start": 50001,
+    "proof_prime_end": 55000,
+    "new_parameters": 0,
+    "elliptic_point_searches": 0,
+    "new_principal_relation_searches": 0
+  },
+  "inputs": "Immutable monitor011 accepted elements, eligible early pool, equation and sixteen generic classes. No exceptional-point character, class or anchor.",
+  "verification": "Reuse the exact norm projection, complete outside-S parity and local-square kernel. Every additional independence witness requires independent ideal and local-power replay.",
+  "boundary": "A larger character window is a verification repair, not a larger class or parameter search. Rational versus Sha remains a separate question."
+}

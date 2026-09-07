@@ -1,0 +1,21 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_generic_only_class_anchors_v1.json": "db90a1d3e95599dbac001c51693fab379062e913b279db7a88cfacc6e630b096",
+    "elliptic-curves/rank-jump/verify_generic_only_class_anchors.py": "697f2ea41fb74e78fdffa8426050153b9738b35e2a16c556a8705ee99c5c23b5"
+  },
+  "boundary": "Certifies inherited unramified characters. Does not construct an additional strict class.",
+  "cases": [
+    {
+      "independent_unramified_characters": 10,
+      "local_checks": 210,
+      "source": "artifacts/generated-results/elliptic-curves/rank_jump_reference_strict_class_construction_inputs_v1.json"
+    },
+    {
+      "independent_unramified_characters": 6,
+      "local_checks": 252,
+      "source": "artifacts/generated-results/elliptic-curves/rank_jump_curve302_strict_constructor_arithmetic_v1.json"
+    }
+  ],
+  "schema": "rank-jump.generic-only-class-anchors-verification.v1",
+  "status": "PASS"
+}

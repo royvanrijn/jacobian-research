@@ -2,9 +2,10 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-Current priority: [construct an extra strict class, with the new302 MW17 parent as the primary mechanism case](POSITIVE_CLASS_CONSTRUCTION_AND_THE_302_PIVOT.md).
-The completed +6 calibration has not yet constructed such a class. Earlier
-exclusion and carrier results below are retained as evidence, not the main endpoint.
+Current result: [two extra strict classes constructed without exceptional points on the +6 reference](TWO_CONSTRUCTED_STRICT_CLASSES_AND_302.md).
+Their rational solubility remains unknown. The new302 MW17 parent is the primary
+target for transferring the constructor and identifying the specialization event.
+Earlier exclusion and carrier results below remain historical evidence.
 
 - [J7–J10: adding independent blocks, radical partners, and certified rank exclusions](INDEPENDENT_BLOCKS_AND_RANK_OBSTRUCTIONS.md)
 - [Current theorem gates and search priorities](SEARCH_THEOREM_GATES_V2.json)

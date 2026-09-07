@@ -1,0 +1,7 @@
+{
+  "schema": "rank-jump.reference-additional-strict-verification-protocol.v1",
+  "endpoint": "Independently certify both additional strict candidates from the completed equation-only relation run.",
+  "bounds": {"workers": 1, "worker_seconds": 180, "pari_stack_bytes": 268435456, "new_parameters": 0, "elliptic_point_searches": 0, "new_relation_searches": 0},
+  "method": "Verify exact norms and complete ideal valuations of every used principal atom. Sum projected ideal exponents to prove even valuations outside S. At each S prime independently use Hilbert pairings against a certified full local squareclass basis; multiply pairings factorwise to avoid expanding huge representatives. Check positivity and recompute enough good-prime residues to prove rank18 for G and the two new classes. Output explicit factored representatives and square-ideal exponents.",
+  "boundary": "These are strict Selmer classes. Rational solubility and Sha membership require a separate global certificate. No full class-group computation, class-group completeness or rank upper bound is asserted."
+}

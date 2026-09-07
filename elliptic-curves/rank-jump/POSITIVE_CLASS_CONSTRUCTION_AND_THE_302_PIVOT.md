@@ -1,5 +1,12 @@
 # Constructive class endpoint and the new 302 parent
 
+Historical construction checkpoint. The later
+[positive construction report](TWO_CONSTRUCTED_STRICT_CLASSES_AND_302.md)
+supersedes the unmet calibration endpoint below: two additional strict classes
+have now been independently certified on the +6 reference. Their rational
+solubility and the transfer to302 remain unresolved. This earlier report is
+retained for its frozen protocols and evidence archive.
+
 The primary research endpoint is an explicit strict cubic Kummer class
 outside the marked generic subgroup, constructed from the equation and
 generic sections without exceptional points. **That endpoint is not yet

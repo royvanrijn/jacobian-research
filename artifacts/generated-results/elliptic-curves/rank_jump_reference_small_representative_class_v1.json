@@ -1,0 +1,14 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_reference_small_representative_class_inputs_v1.json": "df80a68477e1257a1ea7bf0f54c3ed58f0a92e6423f76b2a537ae402dac73d93",
+    "artifacts/local/rank-jump-reference-small-representative-class-v1/worker.log": "0868623e7c4d8300273f2bf38a7c69d11fed720ed53e36d6d76d03f8404ca3a3",
+    "elliptic-curves/rank-jump/REFERENCE_SMALL_REPRESENTATIVE_CLASS_PROTOCOL.json": "6136ad3b23ff9b7531904db5bfac4db54a17e21b870a9265ce83f4f134b606ab",
+    "elliptic-curves/rank-jump/reference_small_representative_class.py": "fb755f878bb32723bbaf0aa9dcfd6d4bd555ebfbfabc65dec066a35ecaa60404"
+  },
+  "elapsed_seconds": 59.22712445794605,
+  "reason": "worker failure",
+  "retained_monitor_results": 11,
+  "retained_target_chunks": 352,
+  "schema": "rank-jump.reference-small-representative-class.v1",
+  "status": "PARTIAL"
+}
