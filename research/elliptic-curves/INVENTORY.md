@@ -6,7 +6,7 @@
 ## Elliptic curve inventory
 
 **201 research curves · 129 exact conductors · 72 unresolved**.
-Includes seven ICARM matches; the rank-28 row is a public-point reproduction. Rank values are proved lower bounds.
+Includes independently rediscovered [ICARM #600](https://elliptic-rank.icarm.cloud/curve/600) and [ICARM #619](https://elliptic-rank.icarm.cloud/curve/619); five curves submitted today are [ICARM #626](https://elliptic-rank.icarm.cloud/curve/626), [ICARM #627](https://elliptic-rank.icarm.cloud/curve/627), [ICARM #628](https://elliptic-rank.icarm.cloud/curve/628), [ICARM #629](https://elliptic-rank.icarm.cloud/curve/629), and [ICARM #630](https://elliptic-rank.icarm.cloud/curve/630). Rank values are proved lower bounds.
 
 Columns and height conventions follow [ICARM’s table](https://elliptic-rank.icarm.cloud/curves). Logs are natural and shown to two decimals. A dash means the exact conductor is unknown; bounds and partial primes are available on the linked curve page. Coefficients are clipped here; each page contains the complete equation and data.
 
@@ -14,14 +14,14 @@ Columns and height conventions follow [ICARM’s table](https://elliptic-rank.ic
 
 | Curve | a-invariants | Rank | log N | Naive height | Faltings height | log abs(Δ) |
 |---|---|---:|---:|---:|---:|---:|
-| [new-20260906-188](data/research_curves/new-20260906-188.md) [#619](https://elliptic-rank.icarm.cloud/curve/619) | `[1, 0, 0, -1382175065636…, 20242130248207…]` | ≥ 28 | 318.98 | 420.19 | 32.92 | 409.64 |
-| [new-20260906-40](https://elliptic-rank.icarm.cloud/curve/630) | `[0, 1, 0, -4780847590649…, 11914273121243…]` | ≥ 27 | 275.84 | 340.97 | 26.37 | 331.42 |
+| [ICARM #619](https://elliptic-rank.icarm.cloud/curve/619) | `[1, 0, 0, -1382175065636…, 20242130248207…]` | ≥ 28 | 318.98 | 420.19 | 32.92 | 409.64 |
+| [new-20260906-40](data/research_curves/new-20260906-40.md) [ICARM #630](https://elliptic-rank.icarm.cloud/curve/630) | `[0, 1, 0, -4780847590649…, 11914273121243…]` | ≥ 27 | 275.84 | 340.97 | 26.37 | 331.42 |
 | [new-20260906-41](data/research_curves/new-20260906-41.md) | `[1, 0, 0, -1534141051320…, 72409877873967…]` | ≥ 27 | 282.27 | 344.47 | 26.57 | 333.09 |
-| [new-20260906-186](https://elliptic-rank.icarm.cloud/curve/628) | `[1, -1, 1, -1286302193798…, 17802205930101…]` | ≥ 27 | 282.75 | 350.85 | 27.05 | 338.12 |
-| [new-20260906-71](https://elliptic-rank.icarm.cloud/curve/629) | `[1, 0, 0, -2061464727961…, 11053114193386…]` | ≥ 27 | 283.62 | 359.17 | 27.85 | 348.88 |
+| [new-20260906-186](data/research_curves/new-20260906-186.md) [ICARM #628](https://elliptic-rank.icarm.cloud/curve/628) | `[1, -1, 1, -1286302193798…, 17802205930101…]` | ≥ 27 | 282.75 | 350.85 | 27.05 | 338.12 |
+| [new-20260906-71](data/research_curves/new-20260906-71.md) [ICARM #629](https://elliptic-rank.icarm.cloud/curve/629) | `[1, 0, 0, -2061464727961…, 11053114193386…]` | ≥ 27 | 283.62 | 359.17 | 27.85 | 348.88 |
 | [new-20260906-72](data/research_curves/new-20260906-72.md) | `[1, 0, 0, -6373259334285…, 79686118348726…]` | ≥ 27 | 288.14 | 335.43 | 25.96 | 327.05 |
 | [new-20260906-48](data/research_curves/new-20260906-48.md) | `[1, 0, 0, -3285612539947…, 50166999670818…]` | ≥ 27 | 295.12 | 353.66 | 27.50 | 345.56 |
-| [new-20260906-90](https://elliptic-rank.icarm.cloud/curve/627) | `[1, 0, 0, -8810888018746…, 31850830142264…]` | ≥ 27 | 295.67 | 356.62 | 27.47 | 342.37 |
+| [new-20260906-90](data/research_curves/new-20260906-90.md) [ICARM #627](https://elliptic-rank.icarm.cloud/curve/627) | `[1, 0, 0, -8810888018746…, 31850830142264…]` | ≥ 27 | 295.67 | 356.62 | 27.47 | 342.37 |
 | [new-20260906-92](data/research_curves/new-20260906-92.md) | `[1, -1, 1, -9220735229473…, 10935366812635…]` | ≥ 26 | 240.05 | 336.06 | 25.89 | 325.06 |
 | [new-20260906-74](data/research_curves/new-20260906-74.md) | `[1, 0, 0, -7397203003011…, 23402190894252…]` | ≥ 26 | 249.51 | 328.47 | 25.31 | 318.57 |
 | [new-20260905-37](data/research_curves/new-20260905-37.md) | `[1, -1, 1, -2712997815437…, 18284322660546…]` | ≥ 26 | 255.18 | 332.49 | 25.65 | 322.87 |
@@ -129,7 +129,7 @@ Columns and height conventions follow [ICARM’s table](https://elliptic-rank.ic
 | [new-20260906-46](data/research_curves/new-20260906-46.md) | `[0, 1, 0, -2451091942964…, 14729131656777…]` | ≥ 24 | — | 345.88 | 26.64 | 333.23 |
 | [new-20260906-141](data/research_curves/new-20260906-141.md) | `[0, 1, 0, -2568174338905…, 15911676041496…]` | ≥ 24 | — | 359.84 | 27.82 | 347.66 |
 | [new-20260906-162](data/research_curves/new-20260906-162.md) | `[1, 0, 0, -3230152894772…, 27145586613507…]` | ≥ 23 | 198.13 | 250.38 | 18.87 | 241.80 |
-| [new-20260905-12](data/research_curves/new-20260905-12.md) [#600](https://elliptic-rank.icarm.cloud/curve/600) | `[1, 0, 0, -2673631332732…, 16765556663649…]` | ≥ 23 | 205.75 | 277.06 | 20.91 | 264.68 |
+| [ICARM #600](https://elliptic-rank.icarm.cloud/curve/600) | `[1, 0, 0, -2673631332732…, 16765556663649…]` | ≥ 23 | 205.75 | 277.06 | 20.91 | 264.68 |
 | [new-20260906-150](data/research_curves/new-20260906-150.md) | `[1, 0, 0, -1139693092949…, 14458937284597…]` | ≥ 23 | 211.71 | 295.22 | 22.51 | 284.71 |
 | [new-20260906-161](data/research_curves/new-20260906-161.md) | `[0, -1, 0, -7495108039460…, 78286697905930…]` | ≥ 23 | 214.82 | 252.52 | 18.90 | 241.02 |
 | [new-20260906-156](data/research_curves/new-20260906-156.md) | `[1, 0, 0, -2827155291397…, 66384479645955…]` | ≥ 23 | 222.75 | 298.22 | 22.84 | 289.34 |
@@ -175,7 +175,7 @@ Columns and height conventions follow [ICARM’s table](https://elliptic-rank.ic
 | [new-20260905-16](data/research_curves/new-20260905-16.md) | `[1, -1, 1, -5693101643316…, 18063073394371…]` | ≥ 23 | — | 369.30 | 28.74 | 360.03 |
 | [new-20260906-148](data/research_curves/new-20260906-148.md) | `[0, 1, 0, -4002927137327…, 97079439842254…]` | ≥ 23 | — | 368.07 | 28.50 | 355.81 |
 | [new-20260906-69](data/research_curves/new-20260906-69.md) | `[0, 1, 0, -9270078556395…, 10822713038341…]` | ≥ 23 | — | 363.68 | 28.13 | 351.34 |
-| [new-20260905-36](https://elliptic-rank.icarm.cloud/curve/626) | `[1, 0, 0, -1824519766025…, 71000315025379…]` | ≥ 22 | 174.43 | 234.47 | 17.56 | 226.19 |
+| [new-20260905-36](data/research_curves/new-20260905-36.md) [ICARM #626](https://elliptic-rank.icarm.cloud/curve/626) | `[1, 0, 0, -1824519766025…, 71000315025379…]` | ≥ 22 | 174.43 | 234.47 | 17.56 | 226.19 |
 | [new-20260906-181](data/research_curves/new-20260906-181.md) | `[1, -1, 1, -5860321714788…, 17761183148463…]` | ≥ 22 | 179.38 | 244.93 | 18.32 | 234.57 |
 | [new-20260905-32](data/research_curves/new-20260905-32.md) | `[1, 0, 0, -3618975169760…, 26426786986322…]` | ≥ 22 | 186.42 | 250.34 | 18.67 | 237.67 |
 | [new-20260905-25](data/research_curves/new-20260905-25.md) | `[1, 0, 0, -3319768398911…, 95350749122919…]` | ≥ 22 | 189.82 | 257.50 | 19.47 | 249.14 |

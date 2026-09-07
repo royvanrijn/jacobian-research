@@ -18,9 +18,11 @@ METRICS = ROOT/'artifacts/generated-results/elliptic-curves/inventory201_table_m
 OUT = ROOT/'elliptic-curves/data/research_curves'
 BEGIN = '<!-- BEGIN GENERATED ELLIPTIC CURVE TABLE -->'
 END = '<!-- END GENERATED ELLIPTIC CURVE TABLE -->'
-# These five entries are project submissions.  Earlier ICARM matches in the
-# inventory remain local-record links with a separate catalogue reference.
+# These five entries are project submissions. The two earlier ICARM matches
+# were independently rediscovered locally, so the inventory identifies them
+# directly by their established catalogue entries.
 SUBMITTED_ICARM_IDS = frozenset(range(626, 631))
+REDISCOVERED_ICARM_IDS = frozenset((600, 619))
 
 
 def encoded(value):
@@ -119,21 +121,21 @@ def run(check=False):
         put(OUT/(r['id']+'.md'),'\n'.join(text)+'\n',check)
     table = [BEGIN,'## Elliptic curve inventory','',
         f'**201 research curves · {counts["EXACT"]} exact conductors · {counts["UNKNOWN"]} unresolved**'+(f' · {counts["REPORTED"]} reported only' if counts['REPORTED'] else '')+'.',
-        'Includes seven ICARM matches; the rank-28 row is a public-point reproduction. Rank values are proved lower bounds.','',
+        'Includes independently rediscovered [ICARM #600](https://elliptic-rank.icarm.cloud/curve/600) and [ICARM #619](https://elliptic-rank.icarm.cloud/curve/619); five curves submitted today are [ICARM #626](https://elliptic-rank.icarm.cloud/curve/626), [ICARM #627](https://elliptic-rank.icarm.cloud/curve/627), [ICARM #628](https://elliptic-rank.icarm.cloud/curve/628), [ICARM #629](https://elliptic-rank.icarm.cloud/curve/629), and [ICARM #630](https://elliptic-rank.icarm.cloud/curve/630). Rank values are proved lower bounds.','',
         'Columns and height conventions follow [ICARM’s table](https://elliptic-rank.icarm.cloud/curves). Logs are natural and shown to two decimals. A dash means the exact conductor is unknown; bounds and partial primes are available on the linked curve page. Coefficients are clipped here; each page contains the complete equation and data.',
         '', '[Download JSON](elliptic-curves/data/research_curves/database.json) · [Download CSV](elliptic-curves/data/research_curves/database.csv) · [Arithmetic and replay notes](elliptic-curves/notes/INVENTORY201_TABLE_AND_CONDUCTORS_2026-09-07.md)',
         '', '| Curve | a-invariants | Rank | log N | Naive height | Faltings height | log abs(Δ) |','|---|---|---:|---:|---:|---:|---:|']
     for r in rows:
         submitted_ids = [i for i in r['icarm_ids'] if i in SUBMITTED_ICARM_IDS]
-        if submitted_ids:
-            # The public catalogue is the canonical destination once our
-            # submission has been accepted; retain its local discovery ID as
-            # the visible name in the table.
-            name = f'[{r["id"]}](https://elliptic-rank.icarm.cloud/curve/{submitted_ids[0]})'
+        rediscovered_ids = [i for i in r['icarm_ids'] if i in REDISCOVERED_ICARM_IDS]
+        if rediscovered_ids:
+            name = ', '.join(f'[ICARM #{i}](https://elliptic-rank.icarm.cloud/curve/{i})' for i in rediscovered_ids)
         else:
             name = f'[{r["id"]}](elliptic-curves/data/research_curves/{r["id"]}.md)'
-        if r['icarm_ids'] and not submitted_ids:
-            name += ' '+', '.join(f'[#{i}](https://elliptic-rank.icarm.cloud/curve/{i})' for i in r['icarm_ids'])
+            if submitted_ids:
+                name += ' '+', '.join(f'[ICARM #{i}](https://elliptic-rank.icarm.cloud/curve/{i})' for i in submitted_ids)
+            elif r['icarm_ids']:
+                name += ' '+', '.join(f'[ICARM #{i}](https://elliptic-rank.icarm.cloud/curve/{i})' for i in r['icarm_ids'])
         ainvs = '['+', '.join(a if len(a)<=14 else a[:14]+'…' for a in r['ainvs'])+']'
         ln = f'{r["log_conductor"]:.2f}' if r['conductor'] else '—'
         table.append(f'| {name} | `{ainvs}` | ≥ {r["rank_lower_bound"]} | {ln} | {r["naive_height"]:.2f} | {r["faltings_height"]:.2f} | {r["log_abs_discriminant"]:.2f} |')
