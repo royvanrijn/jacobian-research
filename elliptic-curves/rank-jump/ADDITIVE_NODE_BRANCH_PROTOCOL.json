@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.additive-node-branch-protocol.v1",
+  "question": "Does the common obstruction among the 120 MW16 triples come exactly from ten generic sections through the I2 node, and does it leave any shared odd branch divisor?",
+  "inputs": "The frozen A1 generic family and all560 norm polynomials from the completed rational-section calculation. The120 unresolved triples are the complete output of that calculation, not selected by rank outcomes.",
+  "gate": "Compute gcd(Delta,Delta') and its rational root. Identify the node and all generic sections passing through it. Compute exact multiplicities of that linear factor in every norm, remove its even power, then repeat the same squarefree, discriminant and pairwise gcd checks on the remaining branch polynomials.",
+  "limits": {"families": 1, "norm_polynomials": 560, "primes": [1009,1013,1019,1021,1031], "worker_seconds": 60, "new_points_or_parameters": 0, "new_integer_factorizations": 0},
+  "failure": "An odd removed multiplicity is retained in the branch divisor, not discarded. Missing modular certificates remain UNKNOWN. A shared square norm factor is not a new Selmer direction or a rational-solubility certificate."
+}

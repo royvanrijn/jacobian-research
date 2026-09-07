@@ -1,0 +1,222 @@
+{
+  "boundary": "Geometric norm-carrier calculation. A1 results refer to the residual branch polynomials after removing the common fourth power. No rank or Selmer dimension is inferred.",
+  "bundle": "artifacts/generated-results/elliptic-curves/rank_jump_additive_branch_evidence_v1.zip",
+  "bundle_sha256": "5da61723142335c17aa804b8c0674782b5677308879e13cac88a65be3877ec47",
+  "members": [
+    {
+      "bytes": 1921433,
+      "member": "rank_jump_additive_branch_geometry_v1.json",
+      "path": "artifacts/generated-results/elliptic-curves/rank_jump_additive_branch_geometry_v1.json",
+      "sha256": "58468e38c93f109076509c3ae0550f826d193284c573dd94873472b86cbdff80"
+    },
+    {
+      "bytes": 20283855,
+      "member": "rank_jump_additive_branch_geometry_v2.json",
+      "path": "artifacts/generated-results/elliptic-curves/rank_jump_additive_branch_geometry_v2.json",
+      "sha256": "0eee50e77914e2e60ca0f7b9e5a9e28ad193af3dcc02d03661c33ec1f16202cc"
+    },
+    {
+      "bytes": 2512279,
+      "member": "rank_jump_additive_node_branch_v1.json",
+      "path": "artifacts/generated-results/elliptic-curves/rank_jump_additive_node_branch_v1.json",
+      "sha256": "a5f322f77e22ce4f180a116b1debac763479a4f4bfa6f994ee2c6588363130cb"
+    }
+  ],
+  "node_norm_multiplicity": 4,
+  "node_parameter": "-2",
+  "node_triples": 120,
+  "packager_sha256": "6e47f5d03ce3565166393f2f09e63bc4a3fef45e56a8267912ecaf86eeb2395a",
+  "rows": [
+    {
+      "degree_distribution": {
+        "24": 680
+      },
+      "discriminant_coprime_count": 680,
+      "family": "074d9",
+      "norm_count": 680,
+      "proved_coprime_pairs": 230860,
+      "simultaneous_norm_cover_genus_ranges_first_four": [
+        {
+          "classes": 1,
+          "genus_range": [
+            11,
+            11
+          ]
+        },
+        {
+          "classes": 2,
+          "genus_range": [
+            45,
+            45
+          ]
+        },
+        {
+          "classes": 3,
+          "genus_range": [
+            137,
+            137
+          ]
+        },
+        {
+          "classes": 4,
+          "genus_range": [
+            369,
+            369
+          ]
+        }
+      ],
+      "squarefree_count": 680,
+      "status": "PASS"
+    },
+    {
+      "degree_distribution": {
+        "24": 220,
+        "36": 330,
+        "48": 120,
+        "60": 10
+      },
+      "discriminant_coprime_count": 680,
+      "family": "103b2",
+      "norm_count": 680,
+      "proved_coprime_pairs": 230860,
+      "simultaneous_norm_cover_genus_ranges_first_four": [
+        {
+          "classes": 1,
+          "genus_range": [
+            11,
+            29
+          ]
+        },
+        {
+          "classes": 2,
+          "genus_range": [
+            45,
+            117
+          ]
+        },
+        {
+          "classes": 3,
+          "genus_range": [
+            137,
+            353
+          ]
+        },
+        {
+          "classes": 4,
+          "genus_range": [
+            369,
+            945
+          ]
+        }
+      ],
+      "squarefree_count": 680,
+      "status": "PASS"
+    },
+    {
+      "degree_distribution": {
+        "24": 10,
+        "36": 100,
+        "48": 245,
+        "60": 220,
+        "72": 95,
+        "84": 10
+      },
+      "discriminant_coprime_count": 680,
+      "family": "11952",
+      "norm_count": 680,
+      "proved_coprime_pairs": 230860,
+      "simultaneous_norm_cover_genus_ranges_first_four": [
+        {
+          "classes": 1,
+          "genus_range": [
+            11,
+            41
+          ]
+        },
+        {
+          "classes": 2,
+          "genus_range": [
+            45,
+            165
+          ]
+        },
+        {
+          "classes": 3,
+          "genus_range": [
+            137,
+            497
+          ]
+        },
+        {
+          "classes": 4,
+          "genus_range": [
+            369,
+            1329
+          ]
+        }
+      ],
+      "squarefree_count": 680,
+      "status": "PASS"
+    },
+    {
+      "branch_degree_distribution": {
+        "20": 84,
+        "24": 371,
+        "32": 36,
+        "36": 69
+      },
+      "family": "a1-fibration-01",
+      "norm_count": 560,
+      "proved_coprime_pairs": 156520,
+      "simultaneous_norm_cover_genus_ranges_first_four": [
+        {
+          "classes": 1,
+          "genus_range": [
+            9,
+            17
+          ]
+        },
+        {
+          "classes": 2,
+          "genus_range": [
+            37,
+            69
+          ]
+        },
+        {
+          "classes": 3,
+          "genus_range": [
+            113,
+            209
+          ]
+        },
+        {
+          "classes": 4,
+          "genus_range": [
+            305,
+            561
+          ]
+        }
+      ],
+      "status": "PASS_AFTER_NODE_FACTOR"
+    },
+    {
+      "degree24_count": 680,
+      "discriminant_coprime_count": 680,
+      "family": "published-r17",
+      "norm_count": 680,
+      "proved_coprime_pairs": 230860,
+      "simultaneous_norm_cover_genera_first_four": [
+        11,
+        45,
+        137,
+        369
+      ],
+      "single_norm_cover_genus": 11,
+      "squarefree_count": 680,
+      "status": "PASS"
+    }
+  ],
+  "schema": "rank-jump.additive-branch-evidence.v1",
+  "status": "PASS"
+}

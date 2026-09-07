@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.additive-branch-geometry-completion-protocol.v1",
+  "question": "Complete the same all-triple branch test when compact generic sections have rational-function coordinates rather than polynomial coordinates.",
+  "repair": "Read numerator and denominator arrays explicitly. For a triple clear a common x denominator squared in the Heron quadratic, then divide its three coefficients by their polynomial gcd. This gives a primitive polynomial class generator. Compute its polynomial norm. Do not assume degree24 or squarefreeness for rational sections.",
+  "reuse": "Preserve the v1 four input-interface failures and reuse its successful published-R17 row. No mathematical or arithmetic result is overwritten.",
+  "limits": {"families_to_complete": ["074d9","103b2","11952","a1-fibration-01"], "primes": [1009,1013,1019,1021,1031], "seconds_per_family": 60, "workers": 1, "new_integer_factorizations": 0, "new_points_or_parameters": 0},
+  "failure": "Modular degree loss or unresolved gcds remain UNKNOWN. A squarefree norm of degree d gives a double-cover genus floor((d-1)/2); common factors are not assumed absent. These are necessary norm carriers, not sufficient elliptic solubility carriers."
+}

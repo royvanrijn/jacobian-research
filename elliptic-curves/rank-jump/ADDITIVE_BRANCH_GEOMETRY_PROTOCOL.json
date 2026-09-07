@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.additive-branch-geometry-protocol.v1",
+  "question": "Do the additive triple norm divisors share geometric branch components or admit a reduced-genus simultaneous norm carrier over the parameter line?",
+  "families": ["074d9", "103b2", "11952", "a1-fibration-01", "published-r17"],
+  "inputs": "Only A(t), B(t), and the marked generic polynomial sections, projected from immutable compact atlases and the retained published-model input. No specialized parameters, ranks or exceptional points.",
+  "gate": "Construct all symmetric triple quadratics q_I, then their polynomial norms R_I(t). Verify exact degree, squarefreeness, disjointness from the elliptic discriminant, and pairwise coprimality by degree-preserving finite-prime gcd certificates. No unproved factorization or presumed genericity is allowed.",
+  "limits": {"families": 5, "triples_per_rank17_family": 680, "triples_per_rank16_family": 560, "primes": [1009,1013,1019,1021,1031], "workers": 1, "seconds_per_family": 60, "new_integer_factorizations": 0, "new_points_or_parameters": 0},
+  "failure": "Failed modular certificates remain UNKNOWN, not common factors. Norm curves are necessary incidence carriers only. Their rational points do not certify ideal parity, Selmer membership, independence, or rational elliptic points."
+}

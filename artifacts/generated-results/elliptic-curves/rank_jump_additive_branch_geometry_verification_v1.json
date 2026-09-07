@@ -1,0 +1,548 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_additive_branch_evidence_v1.json": "61a8c8e9432f5c48360457aa29ef241c31c105febebf99ebacb54881d32ed1b8",
+    "artifacts/generated-results/elliptic-curves/rank_jump_additive_branch_evidence_v1.zip": "5da61723142335c17aa804b8c0674782b5677308879e13cac88a65be3877ec47",
+    "artifacts/generated-results/elliptic-curves/rank_jump_additive_branch_geometry_inputs_v1.json": "d19188e10a005e0789c0c34be45b0b79f141fc3f5055347f02a0418d01ea6750",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_manifest_v1.json": "dd07b100bd8cedd038dfe41f30bfb172ba030934cbc39cb7a16d1a5928412fbf",
+    "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+    "elliptic-curves/rank-jump/package_additive_branch_evidence.py": "6e47f5d03ce3565166393f2f09e63bc4a3fef45e56a8267912ecaf86eeb2395a",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_additive_branch_geometry.py": "0f6d4c2a3886db8eb6d5f1ed26c42aaf420862f734f875c77280f44fb52cbfd1"
+  },
+  "exact_interpolation_evaluations": 110620,
+  "frozen_specialization_bridge": [
+    {
+      "atlas_to_frozen_generic_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "family": "074d9",
+      "parameter": "2818/1535",
+      "token": "case-00",
+      "x_scale": "449695496300625/676"
+    },
+    {
+      "atlas_to_frozen_generic_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "family": "074d9",
+      "parameter": "2824/885",
+      "token": "case-01",
+      "x_scale": "3180080220840000"
+    },
+    {
+      "atlas_to_frozen_generic_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "family": "103b2",
+      "parameter": "3726/881",
+      "token": "case-02",
+      "x_scale": "3122975854822464"
+    },
+    {
+      "atlas_to_frozen_generic_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "family": "103b2",
+      "parameter": "-1049/2296",
+      "token": "case-03",
+      "x_scale": "6947483812864/9"
+    },
+    {
+      "atlas_to_frozen_generic_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "family": "11952",
+      "parameter": "-2448/11",
+      "token": "case-04",
+      "x_scale": "75898944"
+    },
+    {
+      "atlas_to_frozen_generic_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "family": "11952",
+      "parameter": "-1171/1683",
+      "token": "case-05",
+      "x_scale": "99049307841/4"
+    },
+    {
+      "atlas_to_frozen_generic_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "family": "11952",
+      "parameter": "110314/102227",
+      "token": "case-06",
+      "x_scale": "566144714055311951943744/169"
+    },
+    {
+      "atlas_to_frozen_generic_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "family": "11952",
+      "parameter": "130349/28916",
+      "token": "case-07",
+      "x_scale": "56628868381641974016/169"
+    },
+    {
+      "atlas_to_frozen_generic_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "family": "11952",
+      "parameter": "2012/211",
+      "token": "case-08",
+      "x_scale": "10275307182144"
+    },
+    {
+      "atlas_to_frozen_generic_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "family": "11952",
+      "parameter": "2828/2015",
+      "token": "case-09",
+      "x_scale": "85460453830440000"
+    },
+    {
+      "atlas_to_frozen_generic_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "family": "11952",
+      "parameter": "4286/1881",
+      "token": "case-10",
+      "x_scale": "9891226281024"
+    },
+    {
+      "atlas_to_frozen_generic_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "family": "a1-fibration-01",
+      "parameter": "-1867/270",
+      "token": "case-11",
+      "x_scale": "110199605760000"
+    },
+    {
+      "atlas_to_frozen_generic_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "family": "a1-fibration-01",
+      "parameter": "-3187/3697",
+      "token": "case-12",
+      "x_scale": "15131529231698961/676"
+    }
+  ],
+  "method": "Reconstruct primitive quadratics from rational-function sections; prove each norm identity by degree-bounded exact integer interpolation; replay every modular branch gcd; verify the node multiplicity by derivatives; check all thirteen fresh model and generic-x transports after arithmetic.",
+  "node_multiplicity": 4,
+  "node_triples_verified": 120,
+  "norm_polynomials": 3280,
+  "pairwise_branch_coprimality_certificates": 1079960,
+  "rows": [
+    {
+      "branch_degree_range": [
+        24,
+        24
+      ],
+      "coprime_branch_pairs": 230860,
+      "family": "074d9",
+      "interpolation_evaluations": 17000,
+      "norms": 680,
+      "simultaneous_norm_cover_genus_ranges_first_four": [
+        {
+          "classes": 1,
+          "genus_range": [
+            11,
+            11
+          ]
+        },
+        {
+          "classes": 2,
+          "genus_range": [
+            45,
+            45
+          ]
+        },
+        {
+          "classes": 3,
+          "genus_range": [
+            137,
+            137
+          ]
+        },
+        {
+          "classes": 4,
+          "genus_range": [
+            369,
+            369
+          ]
+        }
+      ]
+    },
+    {
+      "branch_degree_range": [
+        24,
+        60
+      ],
+      "coprime_branch_pairs": 230860,
+      "family": "103b2",
+      "interpolation_evaluations": 24200,
+      "norms": 680,
+      "simultaneous_norm_cover_genus_ranges_first_four": [
+        {
+          "classes": 1,
+          "genus_range": [
+            11,
+            29
+          ]
+        },
+        {
+          "classes": 2,
+          "genus_range": [
+            45,
+            117
+          ]
+        },
+        {
+          "classes": 3,
+          "genus_range": [
+            137,
+            353
+          ]
+        },
+        {
+          "classes": 4,
+          "genus_range": [
+            369,
+            945
+          ]
+        }
+      ]
+    },
+    {
+      "branch_degree_range": [
+        24,
+        84
+      ],
+      "coprime_branch_pairs": 230860,
+      "family": "11952",
+      "interpolation_evaluations": 37160,
+      "norms": 680,
+      "simultaneous_norm_cover_genus_ranges_first_four": [
+        {
+          "classes": 1,
+          "genus_range": [
+            11,
+            41
+          ]
+        },
+        {
+          "classes": 2,
+          "genus_range": [
+            45,
+            165
+          ]
+        },
+        {
+          "classes": 3,
+          "genus_range": [
+            137,
+            497
+          ]
+        },
+        {
+          "classes": 4,
+          "genus_range": [
+            369,
+            1329
+          ]
+        }
+      ]
+    },
+    {
+      "branch_degree_range": [
+        20,
+        36
+      ],
+      "coprime_branch_pairs": 156520,
+      "family": "a1-fibration-01",
+      "interpolation_evaluations": 15260,
+      "norms": 560,
+      "simultaneous_norm_cover_genus_ranges_first_four": [
+        {
+          "classes": 1,
+          "genus_range": [
+            9,
+            17
+          ]
+        },
+        {
+          "classes": 2,
+          "genus_range": [
+            37,
+            69
+          ]
+        },
+        {
+          "classes": 3,
+          "genus_range": [
+            113,
+            209
+          ]
+        },
+        {
+          "classes": 4,
+          "genus_range": [
+            305,
+            561
+          ]
+        }
+      ]
+    },
+    {
+      "branch_degree_range": [
+        24,
+        24
+      ],
+      "coprime_branch_pairs": 230860,
+      "family": "published-r17",
+      "interpolation_evaluations": 17000,
+      "norms": 680,
+      "simultaneous_norm_cover_genus_ranges_first_four": [
+        {
+          "classes": 1,
+          "genus_range": [
+            11,
+            11
+          ]
+        },
+        {
+          "classes": 2,
+          "genus_range": [
+            45,
+            45
+          ]
+        },
+        {
+          "classes": 3,
+          "genus_range": [
+            137,
+            137
+          ]
+        },
+        {
+          "classes": 4,
+          "genus_range": [
+            369,
+            369
+          ]
+        }
+      ]
+    }
+  ],
+  "schema": "rank-jump.additive-branch-geometry-verification.v1",
+  "status": "PASS"
+}
