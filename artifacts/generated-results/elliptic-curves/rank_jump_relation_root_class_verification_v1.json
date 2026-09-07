@@ -1,0 +1,92 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_bounded_gain_reference_inputs_v1.json": "cecc1a51b2334a439059cfe58eec5f00c951fdd4693cf287c1df4898ca4989c8",
+    "artifacts/generated-results/elliptic-curves/rank_jump_early_relation_pool_inputs_v1.json": "04aa9df34ad4c2b9a4d1794f54c7d44fa2d8349583e7c64102f6b58045d3d6c2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_relation_root_class_inputs_v1.json": "732ed2bc842ab1a0e86bad206f19f958aa6e20a73344b0d57c664a1c869863a2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_relation_root_class_v2.json": "ab494dd9cd93c1d96cbce08ae384d5965dd2f9044faf7a499564448e51199613",
+    "artifacts/generated-results/elliptic-curves/rank_jump_retained_norm_inherited_hit_v1.json": "434c49fcdf2dd7e50e3a8e594e3a3ae99716330d4d29a56d288ccc6c96543575",
+    "elliptic-curves/rank-jump/verify_relation_root_class.py": "1bff4f1de78848c3cd9a8a341acd29fd441fdd682483137407f714a6d174b542",
+    "elliptic-curves/rank-jump/verify_unpointed_governing_norm.py": "69828517faa1ebdc92218dc338cfe156fbc8a16020bf6b28d8f59a60bc4c847a"
+  },
+  "generic_unit_checks": 192,
+  "independent_valuation_checks": 24,
+  "method": "Pure rational root and norm identities; independently multiplied integral ideal lattices and membership/nonmembership. PARI is used only for the maximal order and prime ideal identification, not valuations or ideal powers.",
+  "odd_good_prime_ideal_witnesses": 7,
+  "rational_witness_primes": 5,
+  "rows": [
+    {
+      "p": 113,
+      "parent_norm_projection_valuation_mod4": 2,
+      "projection_valuation": 5,
+      "residue_degree": 1
+    },
+    {
+      "p": 113,
+      "parent_norm_projection_valuation_mod4": 0,
+      "projection_valuation": 6,
+      "residue_degree": 1
+    },
+    {
+      "p": 113,
+      "parent_norm_projection_valuation_mod4": 2,
+      "projection_valuation": 5,
+      "residue_degree": 1
+    },
+    {
+      "p": 163,
+      "parent_norm_projection_valuation_mod4": 0,
+      "projection_valuation": 6,
+      "residue_degree": 1
+    },
+    {
+      "p": 163,
+      "parent_norm_projection_valuation_mod4": 2,
+      "projection_valuation": 5,
+      "residue_degree": 2
+    },
+    {
+      "p": 277,
+      "parent_norm_projection_valuation_mod4": 2,
+      "projection_valuation": 5,
+      "residue_degree": 1
+    },
+    {
+      "p": 277,
+      "parent_norm_projection_valuation_mod4": 2,
+      "projection_valuation": 5,
+      "residue_degree": 1
+    },
+    {
+      "p": 277,
+      "parent_norm_projection_valuation_mod4": 0,
+      "projection_valuation": 6,
+      "residue_degree": 1
+    },
+    {
+      "p": 787,
+      "parent_norm_projection_valuation_mod4": 0,
+      "projection_valuation": 6,
+      "residue_degree": 1
+    },
+    {
+      "p": 787,
+      "parent_norm_projection_valuation_mod4": 2,
+      "projection_valuation": 5,
+      "residue_degree": 2
+    },
+    {
+      "p": 929,
+      "parent_norm_projection_valuation_mod4": 0,
+      "projection_valuation": 6,
+      "residue_degree": 1
+    },
+    {
+      "p": 929,
+      "parent_norm_projection_valuation_mod4": 2,
+      "projection_valuation": 5,
+      "residue_degree": 2
+    }
+  ],
+  "schema": "rank-jump.relation-root-class-verification.v1",
+  "status": "PASS"
+}

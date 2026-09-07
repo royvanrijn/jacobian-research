@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.relation-root-affine-protocol.v1",
+  "question": "Can any combination of the entire retained norm dictionary cancel the good-prime obstruction of the fixed relation-root projection?",
+  "input": "The same fixed root as RELATION_ROOT_CLASS_PROTOCOL.json. The 4134 principal elements and complete prime blocks of rank_jump_early_relation_pool_inputs_v1.json, whose parity computation was already certified. No extra dictionary rows or exceptional inputs.",
+  "method": "Compute the root projection valuation parity on all prime ideals in the retained 4569 rational-prime blocks. Reconstruct dictionary parity vectors from the complete stored factorizations. Solve the affine F2 system. If inconsistent, construct a dual linear functional annihilating every dictionary row but evaluating to one on the root. Retain the sparse dual witness and all root valuations. If consistent, preserve the solution, but do not claim unramifiedness at untested primes or local square conditions at S.",
+  "limits": {"worker_seconds": 60, "workers": 1, "pari_stack_bytes": 268435456, "new_primes": 0, "new_norm_factorizations": 0, "elliptic_point_searches": 0, "new_parameter_searches": 0},
+  "layer": "incidence obstruction for an affine coset of the retained class dictionary",
+  "failure": "UNKNOWN on timeout; a consistent restricted system remains UNKNOWN for global incidence. An inconsistent system exactly excludes every dictionary and generic correction of the fixed root class."
+}

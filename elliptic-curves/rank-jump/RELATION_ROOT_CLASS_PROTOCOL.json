@@ -1,0 +1,11 @@
+{
+  "schema": "rank-jump.relation-root-class-protocol.v1",
+  "question": "Does the explicit root of the sole inherited relation in the exhausted equation-only norm pool supply a new unramified class?",
+  "selection": "One candidate only: w is square_root_ascending in rank_jump_retained_norm_inherited_hit_v1.json, with w^2=pi(alpha) times the recorded generic product. Test pi(w)=Norm(w)w. The sign of w does not change pi(w). No exceptional points or adaptive character anchors enter.",
+  "probe": "The first 32 rational good primes occurring in the complete ideal support of the parent alpha, in increasing order. Compute all prime-ideal valuations of w and pi(w) above those primes. Preserve every valuation, including zeros. Stop after this fixed list, without factoring a new norm. Any odd valuation excludes pi(w) and all generic corrections from Selmer at that good prime.",
+  "independent_replay": "Check the root and norm identities by rational multiplication matrices. For every prime-ideal valuation, clear a common denominator and certify ideal membership at P^v and nonmembership at P^(v+1) by exact rational matrix inversion in the maximal-order basis. Recheck that all generic classes have even valuations at every witness prime.",
+  "limits": {"worker_seconds": 30, "probe_primes": 32, "workers": 1, "pari_stack_bytes": 268435456, "new_parameter_searches": 0, "elliptic_point_searches": 0, "class_group_computations": 0, "new_norm_factorizations": 0},
+  "layer": "incidence obstruction for one explicitly represented candidate; no rational-solubility conclusion",
+  "failure": "UNKNOWN on timeout or missing witness. Even valuations at the probe primes alone do not prove unramifiedness or membership in Selmer. A successful obstruction is exact, not a bounded-search miss.",
+  "scope": "Root extraction depends on the supplied representatives; it is not a well-defined operation on squareclasses. No claim of exhausting all possible relation roots or creating a block."
+}

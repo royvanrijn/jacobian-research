@@ -1,5 +1,10 @@
 # Class creation: new unramified covers beyond the global pool
 
+Follow-up: [a relation root creates ramification, not the missing block](RELATION_ROOTS_CREATE_RAMIFICATION_NOT_THE_MISSING_BLOCK.md)
+tests a constructor outside the exhausted norm span. A dual certificate
+excludes every correction by the full 4134-element dictionary and generic
+subgroup; the enlarged space still adds no Selmer class.
+
 Follow-up: [strict class creation requires the standard S3 block](STRICT_CLASS_CREATION_IS_A_STANDARD_S3_BLOCK.md)
 identifies the sextic S-class module and computes the quadratic genus
 component. Genus characters and base-changed quadratic-resolvent 2-towers

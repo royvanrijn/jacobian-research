@@ -1,0 +1,11 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_relation_root_class_inputs_v1.json": "732ed2bc842ab1a0e86bad206f19f958aa6e20a73344b0d57c664a1c869863a2",
+    "artifacts/local/rank-jump-relation-root-class-v1/worker.json": "21e8366ab357430f6c99d228a7c987170edcc447b27036a967d7a21752272352",
+    "artifacts/local/rank-jump-relation-root-class-v1/worker.log": "0d3100a47e9a9085db0f5ad88e52299c8622a8d0d7b4c9aefff1356a066d74e8",
+    "elliptic-curves/rank-jump/RELATION_ROOT_CLASS_PROTOCOL.json": "7928e090fd81a2e828688b3dba7f2425ed7cdecfbd1cb881585fd4148fdbc233"
+  },
+  "reason": "Arithmetic completed, but JSON encoding failed on a Sage Integer; the incomplete checkpoint and error log are retained.",
+  "schema": "rank-jump.relation-root-class.v1",
+  "status": "UNKNOWN"
+}
