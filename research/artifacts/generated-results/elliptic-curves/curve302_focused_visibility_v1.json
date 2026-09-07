@@ -1,0 +1,97 @@
+{
+  "inputs": {
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/curve302-full31/result.json": "5e71ce4b8e15c4cde8137790b11c89a60c6e70280221159f4a7846c3c7a23d7c",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/curve302-full31/seed.json": "116735a35ef8d84708d5d45ef392f95b8083dc1edb1328a8b2abb37c6d452b79",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/curve302-generic17/result.json": "2b03e2da6a69af80fd7791c7b200e33ed61efcd3c048607fb6ebd0be556889f5",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/protocol.json": "032591479e803849dc7101679bdaf5cea4bd330ba2207f79e8b6e5e4560dd1a0"
+  },
+  "producer_sha256": "c43c9a3672b0348404bdfb0df5254bf0819f78b2fde1caed22dc349b81deb453",
+  "rows": [
+    {
+      "details_sha256": "d082b976dc1ba13690ee2048e6502d63271a487dc8ba99bee178b39b9e29fd16",
+      "id": "curve302-generic17",
+      "minimum_affine_heights": [
+        3040300752570713037,
+        271350312297,
+        17476851321704019,
+        7147319782502137,
+        1542498,
+        10694798626,
+        693476544030,
+        21594146,
+        8020756948688,
+        3799245784293,
+        1255055,
+        26056436816,
+        15711388858801,
+        124957687559,
+        7504966477,
+        43693630335,
+        38292566930,
+        16499000,
+        2921783277846,
+        7189383,
+        55914472635,
+        69463825341742,
+        31377993,
+        3828695419,
+        9821848,
+        251999152406179039,
+        594263,
+        15937451287,
+        15561705385515327588,
+        346291643995251823,
+        12292694663076334255
+      ],
+      "observations": 3038,
+      "public_indices_inside_any_box": [],
+      "status_counts": {
+        "OUTSIDE_BOX": 3038
+      }
+    },
+    {
+      "details_sha256": "3fd9c8ec5a16538910cc9ad65c6ad9a125c3ffebfdc0c47533e6a1a03982f0b9",
+      "id": "curve302-full31",
+      "minimum_affine_heights": [
+        30584758501153,
+        163500360531293032269233,
+        6348461694853,
+        1438172943271751,
+        195112237776937,
+        9759283981783976481,
+        79490026122285697,
+        1723250758224512495,
+        915285825679607666485,
+        46621084715159271255,
+        3817242831,
+        70772328872269041,
+        641749210783,
+        50246625693965879,
+        832164011997088,
+        240003080363293413,
+        71466348990996630967,
+        552707228318457304,
+        3760890692135304829,
+        1771193698650809411,
+        50546949044339021469,
+        3068650833662525478,
+        284159603472550436,
+        653653257913952589645,
+        2779448167185812671,
+        894356517923966571,
+        523031710408297511,
+        520687488291468083,
+        3295604066931872004,
+        1030759220090762,
+        113806830865805053322773
+      ],
+      "observations": 3038,
+      "public_indices_inside_any_box": [],
+      "status_counts": {
+        "OUTSIDE_BOX": 3038
+      }
+    }
+  ],
+  "scope": "Retrospective only after all four runs and proofs. Exact original31 signed representatives in frozen charts; these are not all translates or all representatives of their quotient directions. Completed GP boxes retain their original trust boundary. No success threshold or subsequent coordinates chosen from this oracle.",
+  "status": "PASS"
+}
