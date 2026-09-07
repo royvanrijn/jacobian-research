@@ -1,0 +1,523 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_generic_fourth_division_v1.json": "823b2896fde7bb8237acbedf6804dcc747b1b4fc891dcccb6849f3c37f00880d",
+    "elliptic-curves/rank-jump/GENERIC_TWO_POWER_TOWER_PROTOCOL.json": "2bb4387a18cf02375b45ed56e9d066c163e26f8944fc0b15ade261ff03216e2b",
+    "elliptic-curves/rank-jump/generic_two_power_tower.py": "649b4627913a5cf012c5054379f237e581f5ab689e7ce6a3a26d02668122247d"
+  },
+  "boundary": "Incidence-capacity theorem for the generic division tower, not a construction of the missing unramified block or a solubility/visibility feature. No active search changes.",
+  "module": {
+    "all_subspaces_checked": 67,
+    "invariant_subspaces": [
+      {
+        "standard_dimension": 0,
+        "subspace": [
+          0
+        ]
+      },
+      {
+        "standard_dimension": 2,
+        "subspace": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "standard_dimension": 2,
+        "subspace": [
+          0,
+          2,
+          4,
+          6,
+          9,
+          11,
+          13,
+          15
+        ]
+      },
+      {
+        "standard_dimension": 2,
+        "subspace": [
+          0,
+          6,
+          11,
+          13
+        ]
+      },
+      {
+        "standard_dimension": 0,
+        "subspace": [
+          0,
+          7,
+          9,
+          14
+        ]
+      },
+      {
+        "standard_dimension": 0,
+        "subspace": [
+          0,
+          9
+        ]
+      }
+    ],
+    "lowest_depth_lifts_checked": 256,
+    "standard_component_of_squaring_is_identity": true,
+    "standard_matrices": [
+      0,
+      6,
+      11,
+      13
+    ]
+  },
+  "proper_image_controls": [
+    {
+      "B1_dimension": 2,
+      "H1_dimension": 1,
+      "Z1_dimension": 3,
+      "cochain_assignments": [
+        0,
+        7,
+        8,
+        15,
+        112,
+        119,
+        120,
+        127
+      ],
+      "constraint_basis": [
+        3,
+        48,
+        6,
+        176,
+        96
+      ],
+      "first_standard_depth": 1,
+      "generators": [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          7,
+          1,
+          7
+        ],
+        [
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          2,
+          0,
+          3
+        ]
+      ],
+      "group_order": 384,
+      "modulus": 8
+    },
+    {
+      "B1_dimension": 2,
+      "H1_dimension": 1,
+      "Z1_dimension": 3,
+      "cochain_assignments": [
+        0,
+        7,
+        8,
+        15,
+        112,
+        119,
+        120,
+        127
+      ],
+      "constraint_basis": [
+        3,
+        48,
+        96,
+        176,
+        6
+      ],
+      "first_standard_depth": 2,
+      "generators": [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          7,
+          1,
+          7
+        ],
+        [
+          1,
+          4,
+          4,
+          1
+        ],
+        [
+          5,
+          4,
+          0,
+          5
+        ]
+      ],
+      "group_order": 24,
+      "modulus": 8
+    },
+    {
+      "B1_dimension": 2,
+      "H1_dimension": 1,
+      "Z1_dimension": 3,
+      "cochain_assignments": [
+        0,
+        7,
+        8,
+        15,
+        112,
+        119,
+        120,
+        127
+      ],
+      "constraint_basis": [
+        3,
+        48,
+        6,
+        208,
+        85
+      ],
+      "first_standard_depth": 1,
+      "generators": [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          15,
+          1,
+          15
+        ],
+        [
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          2,
+          0,
+          3
+        ]
+      ],
+      "group_order": 6144,
+      "modulus": 16
+    },
+    {
+      "B1_dimension": 2,
+      "H1_dimension": 1,
+      "Z1_dimension": 3,
+      "cochain_assignments": [
+        0,
+        7,
+        8,
+        15,
+        112,
+        119,
+        120,
+        127
+      ],
+      "constraint_basis": [
+        3,
+        48,
+        6,
+        208,
+        96
+      ],
+      "first_standard_depth": 2,
+      "generators": [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          15,
+          1,
+          15
+        ],
+        [
+          1,
+          4,
+          4,
+          1
+        ],
+        [
+          5,
+          4,
+          0,
+          5
+        ]
+      ],
+      "group_order": 384,
+      "modulus": 16
+    },
+    {
+      "B1_dimension": 2,
+      "H1_dimension": 1,
+      "Z1_dimension": 3,
+      "cochain_assignments": [
+        0,
+        7,
+        8,
+        15,
+        112,
+        119,
+        120,
+        127
+      ],
+      "constraint_basis": [
+        3,
+        48,
+        96,
+        176,
+        6
+      ],
+      "first_standard_depth": 3,
+      "generators": [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          15,
+          1,
+          15
+        ],
+        [
+          1,
+          8,
+          8,
+          1
+        ],
+        [
+          9,
+          8,
+          0,
+          9
+        ]
+      ],
+      "group_order": 24,
+      "modulus": 16
+    }
+  ],
+  "rows": [
+    {
+      "actual_higher_linear_images": "NOT_COMPUTED_OR_REQUIRED_FOR_THIS_BOUND",
+      "all_n_at_least_2_full_translation_rank_over_Z_mod_2n": 34,
+      "all_n_at_least_2_generic_division_split_Kummer_dimension": 18,
+      "all_n_at_least_2_generic_division_split_Selmer_dimension": 17,
+      "all_n_at_least_2_torsion_split_Kummer_dimension": 1,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_in_entire_generic_two_power_tower": 0,
+      "proof_basis": "uniform congruence filtration theorem plus nonzero inadmissible level-four derivative",
+      "token": "case-00"
+    },
+    {
+      "actual_higher_linear_images": "NOT_COMPUTED_OR_REQUIRED_FOR_THIS_BOUND",
+      "all_n_at_least_2_full_translation_rank_over_Z_mod_2n": 34,
+      "all_n_at_least_2_generic_division_split_Kummer_dimension": 18,
+      "all_n_at_least_2_generic_division_split_Selmer_dimension": 17,
+      "all_n_at_least_2_torsion_split_Kummer_dimension": 1,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_in_entire_generic_two_power_tower": 0,
+      "proof_basis": "uniform congruence filtration theorem plus nonzero inadmissible level-four derivative",
+      "token": "case-01"
+    },
+    {
+      "actual_higher_linear_images": "NOT_COMPUTED_OR_REQUIRED_FOR_THIS_BOUND",
+      "all_n_at_least_2_full_translation_rank_over_Z_mod_2n": 34,
+      "all_n_at_least_2_generic_division_split_Kummer_dimension": 18,
+      "all_n_at_least_2_generic_division_split_Selmer_dimension": 17,
+      "all_n_at_least_2_torsion_split_Kummer_dimension": 1,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_in_entire_generic_two_power_tower": 0,
+      "proof_basis": "uniform congruence filtration theorem plus nonzero inadmissible level-four derivative",
+      "token": "case-02"
+    },
+    {
+      "actual_higher_linear_images": "NOT_COMPUTED_OR_REQUIRED_FOR_THIS_BOUND",
+      "all_n_at_least_2_full_translation_rank_over_Z_mod_2n": 34,
+      "all_n_at_least_2_generic_division_split_Kummer_dimension": 18,
+      "all_n_at_least_2_generic_division_split_Selmer_dimension": 17,
+      "all_n_at_least_2_torsion_split_Kummer_dimension": 1,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_in_entire_generic_two_power_tower": 0,
+      "proof_basis": "uniform congruence filtration theorem plus nonzero inadmissible level-four derivative",
+      "token": "case-03"
+    },
+    {
+      "actual_higher_linear_images": "NOT_COMPUTED_OR_REQUIRED_FOR_THIS_BOUND",
+      "all_n_at_least_2_full_translation_rank_over_Z_mod_2n": 34,
+      "all_n_at_least_2_generic_division_split_Kummer_dimension": 18,
+      "all_n_at_least_2_generic_division_split_Selmer_dimension": 17,
+      "all_n_at_least_2_torsion_split_Kummer_dimension": 1,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_in_entire_generic_two_power_tower": 0,
+      "proof_basis": "uniform congruence filtration theorem plus nonzero inadmissible level-four derivative",
+      "token": "case-04"
+    },
+    {
+      "actual_higher_linear_images": "NOT_COMPUTED_OR_REQUIRED_FOR_THIS_BOUND",
+      "all_n_at_least_2_full_translation_rank_over_Z_mod_2n": 34,
+      "all_n_at_least_2_generic_division_split_Kummer_dimension": 18,
+      "all_n_at_least_2_generic_division_split_Selmer_dimension": 17,
+      "all_n_at_least_2_torsion_split_Kummer_dimension": 1,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_in_entire_generic_two_power_tower": 0,
+      "proof_basis": "uniform congruence filtration theorem plus nonzero inadmissible level-four derivative",
+      "token": "case-05"
+    },
+    {
+      "actual_higher_linear_images": "NOT_COMPUTED_OR_REQUIRED_FOR_THIS_BOUND",
+      "all_n_at_least_2_full_translation_rank_over_Z_mod_2n": 34,
+      "all_n_at_least_2_generic_division_split_Kummer_dimension": 18,
+      "all_n_at_least_2_generic_division_split_Selmer_dimension": 17,
+      "all_n_at_least_2_torsion_split_Kummer_dimension": 1,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_in_entire_generic_two_power_tower": 0,
+      "proof_basis": "uniform congruence filtration theorem plus nonzero inadmissible level-four derivative",
+      "token": "case-06"
+    },
+    {
+      "actual_higher_linear_images": "NOT_COMPUTED_OR_REQUIRED_FOR_THIS_BOUND",
+      "all_n_at_least_2_full_translation_rank_over_Z_mod_2n": 34,
+      "all_n_at_least_2_generic_division_split_Kummer_dimension": 18,
+      "all_n_at_least_2_generic_division_split_Selmer_dimension": 17,
+      "all_n_at_least_2_torsion_split_Kummer_dimension": 1,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_in_entire_generic_two_power_tower": 0,
+      "proof_basis": "uniform congruence filtration theorem plus nonzero inadmissible level-four derivative",
+      "token": "case-07"
+    },
+    {
+      "actual_higher_linear_images": "NOT_COMPUTED_OR_REQUIRED_FOR_THIS_BOUND",
+      "all_n_at_least_2_full_translation_rank_over_Z_mod_2n": 34,
+      "all_n_at_least_2_generic_division_split_Kummer_dimension": 18,
+      "all_n_at_least_2_generic_division_split_Selmer_dimension": 17,
+      "all_n_at_least_2_torsion_split_Kummer_dimension": 1,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_in_entire_generic_two_power_tower": 0,
+      "proof_basis": "uniform congruence filtration theorem plus nonzero inadmissible level-four derivative",
+      "token": "case-08"
+    },
+    {
+      "actual_higher_linear_images": "NOT_COMPUTED_OR_REQUIRED_FOR_THIS_BOUND",
+      "all_n_at_least_2_full_translation_rank_over_Z_mod_2n": 34,
+      "all_n_at_least_2_generic_division_split_Kummer_dimension": 18,
+      "all_n_at_least_2_generic_division_split_Selmer_dimension": 17,
+      "all_n_at_least_2_torsion_split_Kummer_dimension": 1,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_in_entire_generic_two_power_tower": 0,
+      "proof_basis": "uniform congruence filtration theorem plus nonzero inadmissible level-four derivative",
+      "token": "case-09"
+    },
+    {
+      "actual_higher_linear_images": "NOT_COMPUTED_OR_REQUIRED_FOR_THIS_BOUND",
+      "all_n_at_least_2_full_translation_rank_over_Z_mod_2n": 34,
+      "all_n_at_least_2_generic_division_split_Kummer_dimension": 18,
+      "all_n_at_least_2_generic_division_split_Selmer_dimension": 17,
+      "all_n_at_least_2_torsion_split_Kummer_dimension": 1,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_in_entire_generic_two_power_tower": 0,
+      "proof_basis": "uniform congruence filtration theorem plus nonzero inadmissible level-four derivative",
+      "token": "case-10"
+    },
+    {
+      "actual_higher_linear_images": "NOT_COMPUTED_OR_REQUIRED_FOR_THIS_BOUND",
+      "all_n_at_least_2_full_translation_rank_over_Z_mod_2n": 32,
+      "all_n_at_least_2_generic_division_split_Kummer_dimension": 17,
+      "all_n_at_least_2_generic_division_split_Selmer_dimension": 16,
+      "all_n_at_least_2_torsion_split_Kummer_dimension": 1,
+      "generic_dimension": 16,
+      "new_Selmer_dimension_in_entire_generic_two_power_tower": 0,
+      "proof_basis": "uniform congruence filtration theorem plus nonzero inadmissible level-four derivative",
+      "token": "case-11"
+    },
+    {
+      "actual_higher_linear_images": "NOT_COMPUTED_OR_REQUIRED_FOR_THIS_BOUND",
+      "all_n_at_least_2_full_translation_rank_over_Z_mod_2n": 32,
+      "all_n_at_least_2_generic_division_split_Kummer_dimension": 17,
+      "all_n_at_least_2_generic_division_split_Selmer_dimension": 16,
+      "all_n_at_least_2_torsion_split_Kummer_dimension": 1,
+      "generic_dimension": 16,
+      "new_Selmer_dimension_in_entire_generic_two_power_tower": 0,
+      "proof_basis": "uniform congruence filtration theorem plus nonzero inadmissible level-four derivative",
+      "token": "case-12"
+    },
+    {
+      "actual_higher_linear_images": "NOT_COMPUTED_OR_REQUIRED_FOR_THIS_BOUND",
+      "all_n_at_least_2_full_translation_rank_over_Z_mod_2n": 34,
+      "all_n_at_least_2_generic_division_split_Kummer_dimension": 18,
+      "all_n_at_least_2_generic_division_split_Selmer_dimension": 17,
+      "all_n_at_least_2_torsion_split_Kummer_dimension": 1,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_in_entire_generic_two_power_tower": 0,
+      "proof_basis": "uniform congruence filtration theorem plus nonzero inadmissible level-four derivative",
+      "token": "case-13"
+    },
+    {
+      "actual_higher_linear_images": "NOT_COMPUTED_OR_REQUIRED_FOR_THIS_BOUND",
+      "all_n_at_least_2_full_translation_rank_over_Z_mod_2n": 34,
+      "all_n_at_least_2_generic_division_split_Kummer_dimension": 18,
+      "all_n_at_least_2_generic_division_split_Selmer_dimension": 17,
+      "all_n_at_least_2_torsion_split_Kummer_dimension": 1,
+      "generic_dimension": 17,
+      "new_Selmer_dimension_in_entire_generic_two_power_tower": 0,
+      "proof_basis": "uniform congruence filtration theorem plus nonzero inadmissible level-four derivative",
+      "token": "case-14"
+    },
+    {
+      "actual_higher_linear_images": "NOT_COMPUTED_OR_REQUIRED_FOR_THIS_BOUND",
+      "all_n_at_least_2_full_translation_rank_over_Z_mod_2n": 32,
+      "all_n_at_least_2_generic_division_split_Kummer_dimension": 17,
+      "all_n_at_least_2_generic_division_split_Selmer_dimension": 16,
+      "all_n_at_least_2_torsion_split_Kummer_dimension": 1,
+      "generic_dimension": 16,
+      "new_Selmer_dimension_in_entire_generic_two_power_tower": 0,
+      "proof_basis": "uniform congruence filtration theorem plus nonzero inadmissible level-four derivative",
+      "token": "case-15"
+    }
+  ],
+  "schema": "rank-jump.generic-two-power-tower.v1",
+  "status": "PASS"
+}

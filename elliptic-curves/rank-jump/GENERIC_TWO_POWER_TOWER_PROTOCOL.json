@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.generic-two-power-tower-protocol.v1",
+  "question": "Can a deeper congruence layer create another standard quadratic character after the derivative class already appears at level four?",
+  "method": "Prove a uniform Frattini-quotient bound for every subgroup of GL2(Z/2^n) surjecting modulo two. Verify all 67 subspaces of M2(F2), the characteristic-two squaring identity, and small proper-image cocycle controls with early and delayed standard layers. Apply only the retained sixteen equation-only derivative exclusions and generic mod-two independence certificates.",
+  "controls": [[8, 1], [8, 2], [16, 1], [16, 2], [16, 3]],
+  "bounds": {"seconds": 30, "workers": 1, "new_number_fields": 0, "new_points": 0, "new_factorizations": 0},
+  "failure_semantics": "Finite controls alone do not prove the tower result. Application requires the written filtration argument and a nonzero level-four derivative class. Delayed standard layers are allowed on other curves; the universal H1 upper bound does not identify their generator as the derivative.",
+  "boundary": "Incidence-capacity theorem for the generic division tower, not a construction of the missing unramified block or a solubility/visibility feature. No active search changes."
+}
