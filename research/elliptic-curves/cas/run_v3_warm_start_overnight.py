@@ -42,6 +42,17 @@ def tail(path,n=120):
     if not p.exists():return None
     return '\n'.join(p.read_text(errors='replace').splitlines()[-n:])
 
+def resolve_sage():
+    """Resolve the same Sage launcher class used by the validated transfer run."""
+    candidates=[]
+    if os.environ.get('V3_SAGE'): candidates.append(Path(os.environ['V3_SAGE']).expanduser())
+    found=shutil.which('sage')
+    if found:candidates.append(Path(found))
+    candidates += [Path.home()/'.local/bin/sage', Path('/usr/local/bin/sage'), Path('/usr/bin/sage')]
+    for p in candidates:
+        if p.is_file() and os.access(p,os.X_OK): return str(p.resolve())
+    raise RuntimeError('Sage launcher not found. Set V3_SAGE=/path/to/sage')
+
 def validate_authorization():
     control=D/'control-native11952/verified.json'
     if not control.exists(): raise RuntimeError('completed independently replayed native11952 control is required')
@@ -106,7 +117,6 @@ base.replay_case.__globals__['bind_job']=bind_with_cert
 def attempt_paths(case,action):
     stem='warm-'+action.replace('-worker','');folder=D/case
     return folder/(stem+'.supervisor.json'),folder/(stem+'.log')
-
 def latest_failure():
     found=[]
     for c in WARM:
@@ -129,8 +139,9 @@ def supervise(action,case):
         if report.get('outcome')=='completed': return
         raise RuntimeError(f'preserved failed warm attempt exists for {case}: {sup}')
     seconds=base.LIMITS['case_wall_seconds'] if action=='run-worker' else base.LIMITS['replay_wall_seconds']
-    command=[sys.executable,str(SELF),action,'--case',case]
-    env={**os.environ,'V3_WARM_SUPERVISED':'1','OPENBLAS_NUM_THREADS':'1','OMP_NUM_THREADS':'1','MKL_NUM_THREADS':'1'}
+    sage=resolve_sage()
+    command=[sage,'-python',str(SELF),action,'--case',case]
+    env={**os.environ,'V3_WARM_SUPERVISED':'1','V3_SAGE':sage,'OPENBLAS_NUM_THREADS':'1','OMP_NUM_THREADS':'1','MKL_NUM_THREADS':'1'}
     report=run(command,limits=Limits(seconds,base.LIMITS['rss_bytes']),cwd=ROOT,env=env,log_path=log,checkpoint_path=sup)
     if report['outcome']!='completed': raise RuntimeError(f'{case} {action} stopped: {report["outcome"]}')
 
@@ -142,7 +153,7 @@ def worker():
         for case in WARM:
             folder=D/case
             if (folder/'warm-verified.json').exists(): continue
-            atomic(STATE,{'status':'RUNNING_WARM_CASE','case':case,'pid':os.getpid(),'updated_unix':time.time()})
+            atomic(STATE,{'status':'RUNNING_WARM_CASE','case':case,'pid':os.getpid(),'sage':resolve_sage(),'updated_unix':time.time()})
             if not (folder/'replay-M17/terminal.json').exists(): supervise('run-worker',case)
             supervise('replay-worker',case)
             verified=read(folder/'verified.json')
@@ -171,10 +182,10 @@ def launch():
         if s.get('status')=='STOPPED_REVIEW_REQUIRED':
             raise RuntimeError('preserved failed attempt exists; use diagnose, then resume after the underlying issue is understood/fixed')
     stream=LOG.open('ab',buffering=0)
-    p=subprocess.Popen([sys.executable,str(SELF),'worker'],cwd=ROOT,stdin=subprocess.DEVNULL,stdout=stream,stderr=subprocess.STDOUT,start_new_session=True,close_fds=True)
+    p=subprocess.Popen([sys.executable,str(SELF),'worker'],cwd=ROOT,stdin=subprocess.DEVNULL,stdout=stream,stderr=subprocess.STDOUT,start_new_session=True,close_fds=True,
+        env={**os.environ,'V3_SAGE':resolve_sage()})
     atomic(STATE,{'status':'LAUNCHED','pid':p.pid,'updated_unix':time.time(),'authorization':auth})
     print('Launched detached warm-start V3 roster pid='+str(p.pid))
-
 def archive_failed(case,action):
     sup,log=attempt_paths(case,action)
     if not sup.exists():raise RuntimeError('no failed supervisor to archive')
@@ -184,14 +195,12 @@ def archive_failed(case,action):
     dst=D/case/'warm-failed-attempts'/stamp;dst.mkdir(parents=True,exist_ok=False)
     for p in (sup,log):
         if p.exists():shutil.move(str(p),str(dst/p.name))
-    # Preserve an unsealed partial epoch, but never move sealed stages.
     replay=D/case/'replay-M17'
     if replay.exists():
         for ep in sorted(replay.glob('epoch-*')):
             if not (ep/'stage.json').exists() and any(ep.iterdir()):
                 shutil.move(str(ep),str(dst/ep.name))
     return dst
-
 def resume():
     if not STATE.exists():raise RuntimeError('no prior warm state')
     s=read(STATE)
@@ -201,18 +210,17 @@ def resume():
     dst=archive_failed(f['case'],f['action'])
     atomic(STATE,{'status':'RESUMING','archived':str(dst.relative_to(ROOT)),'updated_unix':time.time()})
     stream=LOG.open('ab',buffering=0)
-    p=subprocess.Popen([sys.executable,str(SELF),'worker'],cwd=ROOT,stdin=subprocess.DEVNULL,stdout=stream,stderr=subprocess.STDOUT,start_new_session=True,close_fds=True)
+    p=subprocess.Popen([sys.executable,str(SELF),'worker'],cwd=ROOT,stdin=subprocess.DEVNULL,stdout=stream,stderr=subprocess.STDOUT,start_new_session=True,close_fds=True,
+        env={**os.environ,'V3_SAGE':resolve_sage()})
     atomic(STATE,{'status':'RELAUNCHED','pid':p.pid,'updated_unix':time.time(),'archived':str(dst.relative_to(ROOT))})
     print('Relaunched detached warm-start roster pid='+str(p.pid))
-
 def status():
     s=read(STATE) if STATE.exists() else None
     if s is None: print('NOT_LAUNCHED')
     else:
         x=dict(s);x['process_alive']=alive(x.get('pid'))
         if x.get('status') in ('RUNNING_WARM_CASE','LAUNCHED','RELAUNCHED') and not x['process_alive']:
-            x['effective_status']='STOPPED_REVIEW_REQUIRED'
-            x['failure']=latest_failure()
+            x['effective_status']='STOPPED_REVIEW_REQUIRED';x['failure']=latest_failure()
         print(json.dumps(x,indent=2,sort_keys=True))
     for c in WARM:
         p=D/c/'warm-verified.json'
@@ -221,10 +229,8 @@ def status():
             stages=D/c/'replay-M17/stages.json'
             if stages.exists(): print(c,'stages',json.dumps(read(stages)[-1],sort_keys=True))
             else: print(c,'NOT_YET_COMPLETE')
-
 def diagnose():
-    f=latest_failure()
-    print('NO_FAILED_WARM_ATTEMPT' if f is None else json.dumps(f,indent=2,sort_keys=True))
+    f=latest_failure();print('NO_FAILED_WARM_ATTEMPT' if f is None else json.dumps(f,indent=2,sort_keys=True))
 
 
 def main():
