@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.reference-partial-class-extraction-protocol.v1",
+  "endpoint": "Extract an explicit extra strict class from a possibly incomplete equation-only relation computation, without requiring a completed BNF.",
+  "inputs": "Frozen reference equation/generic projection, the eligible early principal-relation pool, and exact accepted elements from the seeded relation-only memory-corrected run. No exceptional point input.",
+  "method": "Deduplicate primitive elements modulo rational scaling and sign; norm projection changes such scaling by a fourth power. Factor every additional principal ideal exactly. Eliminate outside-S valuation parity with complete prime blocks. Combine the surviving norm-square products with all sixteen generic classes; impose local squares at every finite S place and positivity at every real embedding. Evaluate fixed good-prime residue characters to certify independence, never to assert dependence or completeness.",
+  "bounds": {"worker_seconds": 120, "workers": 1, "pari_stack_bytes": 268435456, "proof_prime_bound": 1009, "elliptic_point_searches": 0, "new_parameters": 0},
+  "failure_semantics": "A character rank increase certifies independence. Failure to detect an increase is not a class-group upper bound. Positive classes require subsequent independent ideal/local replay. No exceptional class, specialization mechanism, rationality or Sha status is claimed without its certificate."
+}

@@ -2,6 +2,10 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
+Current priority: [construct an extra strict class, with the new302 MW17 parent as the primary mechanism case](POSITIVE_CLASS_CONSTRUCTION_AND_THE_302_PIVOT.md).
+The completed +6 calibration has not yet constructed such a class. Earlier
+exclusion and carrier results below are retained as evidence, not the main endpoint.
+
 - [J7–J10: adding independent blocks, radical partners, and certified rank exclusions](INDEPENDENT_BLOCKS_AND_RANK_OBSTRUCTIONS.md)
 - [Current theorem gates and search priorities](SEARCH_THEOREM_GATES_V2.json)
 - [J1–J6: specialization loss, relation capacity, marked carriers, collision squareclasses, and short trace cosets](RANK_JUMP_MECHANISM_THEOREMS.md)

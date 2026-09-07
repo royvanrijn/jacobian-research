@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.reference-strict-class-construction-protocol.v1",
+  "primary_endpoint": "Construct at least one explicit strict norm-square cubic class outside the sixteen marked generic classes on MW16-05 at t=3/17, without exceptional-point inputs. Only after that endpoint, attempt transfer to a retained +10/+12 fibre.",
+  "input_whitelist": "The cubic, field discriminant, S_finite and all sixteen generic_classes from rank_jump_prime_square_class_constructor_inputs_v1.json. Prime-ideal search choices and all oracle characters, exceptional coordinates and rank-derived class-group bounds are excluded from the arithmetic input projection.",
+  "method": "One PARI bnfinit(nf,1) computation on the certified reference cubic. Preserve compact class/unit data on return. Obtain candidate virtual units from compact fundamental units and principal powers of even-order class generators, then impose every strict local square condition and prove independence modulo the generic subgroup. Incomplete class-group certification does not invalidate an independently checked individual ideal identity, but gives no completeness or upper-bound claim.",
+  "bounds": {"reference_bnf_seconds": 300, "pari_stack_bytes": 268435456, "initial_stack_bytes": 64000000, "workers": 1, "random_seed": 20260908, "new_parameters": 0, "elliptic_point_searches": 0},
+  "checkpointing": "Exclusive input, setup, returned-BNF and terminal records; retain the debug log. Do not restart a live worker or increase the frozen limits. Further extraction has its own bounded stage after BNF returns.",
+  "failure_semantics": "Timeout or stack exhaustion is UNKNOWN and no constructed class. A candidate is not called strict until its ideal, norm, all local conditions and independent nontriviality are certified. Rationality versus Sha is a separate unsolved endpoint unless certified.",
+  "boundary": "Positive construction calibration only. No additional generic-capacity exclusions and no changes to active rank-search files or policies."
+}

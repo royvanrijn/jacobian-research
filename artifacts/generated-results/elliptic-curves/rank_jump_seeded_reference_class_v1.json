@@ -1,0 +1,32 @@
+{
+  "accepted_principal_element_occurrences": 0,
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_seeded_reference_class_inputs_v1.json": "632e7212693b95cdaa6de7c060066bfaf4180dbefaacace5d39979b63c439ab4",
+    "artifacts/local/rank-jump-seeded-reference-class-v1/compile.json": "3c057b3c2cbb4e6b35bb024c46e17f50b389a80cdedbe69472aad723b1dfe997",
+    "artifacts/local/rank-jump-seeded-reference-class-v1/reference-accepted-elements.json": "237b3857bd1806064af6c22bb45e57bba022dc81ff19c485c81a5c9076c2ab9f",
+    "artifacts/local/rank-jump-seeded-reference-class-v1/reference-bnf.gp": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "artifacts/local/rank-jump-seeded-reference-class-v1/reference.log": "f063b3d3195fffc2c051a60a81f710167b8c3fc9eab293cace506b739cf77c2f",
+    "elliptic-curves/rank-jump/SEEDED_REFERENCE_CLASS_PROTOCOL.json": "596703beada4e32fc3e734c049668136c74c806ade68602e7a262894b4cfdf38",
+    "elliptic-curves/rank-jump/seeded_reference_class.py": "f14b3869bc2de5e16a8a74dbe393889e7aa1f512c23a1e58a2653725be871b87"
+  },
+  "boundary": "Principal relations are construction inputs, not strict classes. No class-group completeness, rank, absence, rationality or Sha claim.",
+  "control": {
+    "bnfcertify": 1,
+    "elapsed_seconds": 0.01585671294014901,
+    "ordinary_class_group": [
+      2
+    ],
+    "reason": null,
+    "status": "RETURNED_UNCERTIFIED"
+  },
+  "explicit_additional_strict_class": "NOT_YET_CONSTRUCTED",
+  "reference": {
+    "elapsed_seconds": 0.565818895935081,
+    "reason": "worker failure",
+    "status": "UNKNOWN"
+  },
+  "schema": "rank-jump.seeded-reference-class.v1",
+  "seed_checkpoint_lines": [
+    "RJ_SEEDED 3013 MISSING 865"
+  ]
+}

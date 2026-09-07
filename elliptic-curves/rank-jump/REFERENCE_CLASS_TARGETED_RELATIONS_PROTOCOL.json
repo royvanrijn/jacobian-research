@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.reference-class-targeted-relations-protocol.v1",
+  "endpoint": "Obtain additional principal relations capable of constructing a new strict class outside G on MW16-05 at 3/17. This is a single-field constructive incidence calculation, not a parameter or elliptic-point search.",
+  "selection": "Reconstruct only the four early box waves and five early root-strip waves. Use the existing equation-only free-column selector at wave6, vmax8192, at most512 targets. Never read protected/capped/residual waves or point-derived character anchors. Rank22/target16 is not a stopping rule for this new worker.",
+  "population": "For each selected degree-one prime ideal, use its exact binary norm congruence lattice and the three real roots of the norm form. Enumerate primitive pairs in the three width-three root strips for old_vmax < v <=8192. Keep all smooth principal ideals, including every outside coordinate. No adaptive extension of the selected population.",
+  "bounds": {"workers": 1, "worker_seconds": 600, "targets_max": 512, "vmax": 8192, "smooth_bound": 50000, "pari_stack_bytes": 268435456, "new_parameters": 0, "elliptic_point_searches": 0},
+  "checkpointing": "One exclusive completed-target chunk; target identity, candidate count and population digest are retained. A timeout preserves every completed chunk. No restart or larger follow-up under this frozen protocol.",
+  "verification": "Replay every retained principal ideal and complete norm factorization from the equation; export elements to the independent strict-class extraction pipeline. A relation count or formal quotient dimension does not certify a new class or rank.",
+  "boundary": "Retrospective choice of the known +6 reference is disclosed. Arithmetic selection and generation use no exceptional-point coordinates or characters. Transfer waits for a certified new reference class."
+}

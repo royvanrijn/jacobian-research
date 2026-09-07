@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.seeded-reference-relations-protocol.v1",
+  "endpoint": "Construct one new strict class on the reference using exact principal-element parity dependencies.",
+  "change_from_compact_attempt": "The compact attempt overflowed at the first 3878-by-3013 matrix reduction. Use PARI flag0 to omit the compact unit transformation. Retain every accepted primitive element independently for later exact parity-kernel extraction. Also reset temporary stack after rejected seeds and put observational records on separate lines. This is a method repair at the same memory, time, seed, input and one-worker limits, not a larger search.",
+  "inputs": "Exactly rank_jump_seeded_reference_class_inputs_v1.json and its bound equation-only ancestors. No exceptional points, protected character anchors, protected relations, or target class-group rank.",
+  "bounds": {"reference_seconds": 300, "control_seconds": 15, "workers": 1, "pari_stack_bytes": 268435456, "seed": 20260908, "new_parameters": 0, "elliptic_point_searches": 0},
+  "certification": "The small control must reproduce and certify C2. Research field accepted elements require exact refactorization, norm projection, all strict local checks and independent nontriviality modulo generic classes. Floating embeddings and class-group estimates never substitute for these certificates.",
+  "checkpointing": "Exclusive logs, exact accepted-element extraction and terminal artifacts. No restarting live workers or overwriting prior failures. No transfer until the positive reference endpoint."
+}

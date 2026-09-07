@@ -1,0 +1,31 @@
+{
+  "accepted_principal_element_occurrences": 2378,
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_seeded_reference_class_inputs_v1.json": "632e7212693b95cdaa6de7c060066bfaf4180dbefaacace5d39979b63c439ab4",
+    "artifacts/local/rank-jump-seeded-reference-relations-v1/accepted-elements.json": "b8d12eea619088dcff97b668b9d505ed4d08ae90a5c0d941b1f0dff5c07b07cd",
+    "artifacts/local/rank-jump-seeded-reference-relations-v1/compile.json": "a66be1546d1a088bfa043a67bdc948a87c277b88cf1b3be6aa1c0fec93769b92",
+    "artifacts/local/rank-jump-seeded-reference-relations-v1/reference-bnf.gp": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "artifacts/local/rank-jump-seeded-reference-relations-v1/reference.log": "08302ff6b38de12d815ce1a5785eea98f78e3b3e84960f2c7510e86174f7551c",
+    "elliptic-curves/rank-jump/SEEDED_REFERENCE_RELATIONS_PROTOCOL.json": "c374be2a5aa91d74fdcf848833662c57306f80e68ffc59ca85af5148c5a71faa",
+    "elliptic-curves/rank-jump/seeded_reference_class.py": "f14b3869bc2de5e16a8a74dbe393889e7aa1f512c23a1e58a2653725be871b87",
+    "elliptic-curves/rank-jump/seeded_reference_relations.py": "dfa791414a730b54eb70b35284cefb031b24ceca6566847056c033a334ed48fc"
+  },
+  "boundary": "Exact accepted elements retained for independent parity-kernel extraction. Floating class-group output gives no unverified completeness claim.",
+  "explicit_additional_strict_class": "NOT_YET_CONSTRUCTED",
+  "schema": "rank-jump.seeded-reference-relations.v1",
+  "seed_checkpoint_lines": [
+    "RJ_SEEDED 3013 MISSING 865"
+  ],
+  "terminals": {
+    "control": {
+      "elapsed_seconds": 0.01591579196974635,
+      "reason": null,
+      "status": "RETURNED_UNCERTIFIED"
+    },
+    "reference": {
+      "elapsed_seconds": 0.7162024520803243,
+      "reason": "worker failure",
+      "status": "UNKNOWN"
+    }
+  }
+}

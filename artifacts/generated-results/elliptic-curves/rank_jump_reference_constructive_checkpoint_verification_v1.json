@@ -1,0 +1,16 @@
+{
+  "additional_class_certified": false,
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_reference_strict_class_construction_inputs_v1.json": "0a3980b6ab354d3c365160afc175b191fb39c5c777981a8fc20f5e5c0edd78ee",
+    "artifacts/generated-results/elliptic-curves/rank_jump_reference_targeted_class_extraction_v1.json": "6bf1520615430b7f87d149ac1f4b11a59bf7d70fad4a65c60a68c2f86494e82e",
+    "elliptic-curves/rank-jump/verify_reference_constructive_checkpoint.py": "2a2275d87a2cb5e1f98259d545c1d15e0dcad60bf8f23ef7e845cdeb3176fd65"
+  },
+  "boundary": "Independent local-power and linear-algebra verification of retained candidate products. No full class-group computation or extra class asserted.",
+  "detected_strict_character_rank": 6,
+  "generic_character_rank": 16,
+  "generic_local_rank": 10,
+  "individual_local_power_checks": 133,
+  "schema": "rank-jump.reference-constructive-checkpoint-verification.v1",
+  "status": "PASS",
+  "strict_candidate_products": 7
+}

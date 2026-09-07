@@ -1,0 +1,11 @@
+{
+  "schema": "rank-jump.seeded-reference-class-protocol.v1",
+  "endpoint": "Construct an additional strict class on MW16-05 at 3/17; no transfer run before positive calibration.",
+  "method": "Supply the equation-only early principal elements to an isolated PARI Buchall_param through its existing try_elt routine. Keep the defining polynomial, norm factor tests and relation checks unchanged. Retain accepted principal elements even if full BNF construction times out, so individual virtual-unit dependencies can be extracted separately.",
+  "inputs": ["rank_jump_reference_strict_class_construction_inputs_v1.json", "rank_jump_early_relation_pool_inputs_v1.json"],
+  "provenance": "The early pool is retrospective and its allocation used a rank target, but its elements and target choices precede all protected point-character waves. No exceptional points, protected anchors, protected relations, or class-group rank targets enter this computation.",
+  "upstream": {"url": "https://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.17.3.tar.gz", "archive_sha256": "8d9c4fcd584c468d27e0f23c36836587284452094c4b1c404c20c4b810462dcb", "buch2_c_sha256": "904ced8034732c7fcfe1da393e23950aac0862b085150fdc24ce1e31beb7d1ac"},
+  "bounds": {"reference_seconds": 300, "control_seconds": 15, "compile_seconds": 30, "workers": 1, "pari_stack_bytes": 268435456, "seed_elements_max": 4134, "seed": 20260908, "new_parameters": 0, "elliptic_point_searches": 0},
+  "verification": "Small x^3-11 control must return the correct ordinary class group C2. Every claimed research class subsequently needs exact norm and ideal-square identities, strict local square checks at all S places, and good-prime character independence modulo all generic classes. A returned BNF is not itself an unconditional completeness certificate.",
+  "failure": "Preserve logs, accepted relations and terminal status. Timeout or failure means UNKNOWN, never absence of a strict class. No larger restart under this protocol."
+}

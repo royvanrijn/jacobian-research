@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.seeded-reference-relations-memory-protocol.v1",
+  "endpoint": "Construct an additional strict class from retained and newly accepted principal elements on the single reference.",
+  "resource_correction": "Both isolated variants failed in less than one second at the initial 3878-by-3013 exact matrix reduction, before any additional relation collection. Authorize one separately recorded run with 1 GiB PARI stack, preserving the two failed experiments. This explicitly replaces the former no-larger-restart restriction for memory only: the user-authorized class construction needs the matrix reduction to execute. No time, input population, parameter or worker-count expansion.",
+  "method": "Identical to seeded_reference_relations.py, with its exact accepted-element records and flag0 matrix handling. The wrapper changes only the work/output paths, protocol and compiled main's memory constant. Original producers and artifacts remain immutable.",
+  "bounds": {"reference_seconds": 300, "control_seconds": 15, "workers": 1, "pari_stack_bytes": 1073741824, "seed": 20260908, "new_parameters": 0, "elliptic_point_searches": 0},
+  "input_boundary": "Only the original equation-only seed projection; all protected point-derived inputs remain excluded.",
+  "verification": "Certify C2 on the small control. Independently certify every proposed research class; no floating class-group assertion substitutes for an ideal, norm, strict-local or independence certificate.",
+  "failure": "Keep terminal failures and accepted-element checkpoints. Missing a class means UNKNOWN. No transfer before positive reference calibration."
+}
