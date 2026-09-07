@@ -1,0 +1,183 @@
+{
+  "archive_sha256": "cb60d13af1da29bd111ea535b2c9a7a7826550de8cd4da03de1fe263c1d2d2d5",
+  "boundary": "Includes both point-free arithmetic and explicitly oracle-labelled retrospective solubility outputs. Oracle files must not feed prospective selectors.",
+  "files": [
+    {
+      "bytes": 36019,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-half-ideal-v1/column_00.json",
+      "sha256": "bd783502a0e4bce213284d5df8af01d7ee7c9bda6e6b66d79bc897d588bf23ce"
+    },
+    {
+      "bytes": 35085,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-half-ideal-v1/column_01.json",
+      "sha256": "48faf32399649fed5b5d0f348923822e0b57c84fa3530672f1f5c77a082bdab8"
+    },
+    {
+      "bytes": 35414,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-half-ideal-v1/column_02.json",
+      "sha256": "0bde71a9c524db9d0216f7032cd942cb6fe236af6bb62a08c4e56b5e8958e8ca"
+    },
+    {
+      "bytes": 32271,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-half-ideal-v1/column_03.json",
+      "sha256": "6336e96d3483389d6a0c0bc03225cd1ef06320254ae78d86925375d0367e70e0"
+    },
+    {
+      "bytes": 37057,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-half-ideal-v1/column_04.json",
+      "sha256": "1416a984de14f9d390f84fe8bf14ecf7dde15ab759a8d801bc1136b021b3770a"
+    },
+    {
+      "bytes": 35977,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-half-ideal-v1/column_05.json",
+      "sha256": "f1be6ed6543a5e221e0a494edecd87f9304371c91558feea7d29d2bd6c7fae06"
+    },
+    {
+      "bytes": 2595542,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-half-ideal-v1/column_06.json",
+      "sha256": "bb7f19d8b5f86d50dc6b5fbd9b46b9bd699dd5f0a93b56deac1fe93e679b87f0"
+    },
+    {
+      "bytes": 2506138,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-half-ideal-v1/column_07.json",
+      "sha256": "675c4f8b5d07c376454ff2e94109581ab17f6c3d80bcc48762a61900c213819c"
+    },
+    {
+      "bytes": 205,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-half-ideal-v1/worker.log",
+      "sha256": "9d3ce2bcc5646d4587b452f6e3ddddf6894e8b68f0f80fe61ef6806749811724"
+    },
+    {
+      "bytes": 903,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-direct-artin-v1/column_00.json",
+      "sha256": "47ced5947818ba57165c3522ee1afb25167dcbc880bc8db8c44765871ca4a5c9"
+    },
+    {
+      "bytes": 821,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-direct-artin-v1/column_01.json",
+      "sha256": "484dd18beed2ba251feaf0395a4164dd286a06b8b159cab6ee8eb8542fdef535"
+    },
+    {
+      "bytes": 984,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-direct-artin-v1/column_02.json",
+      "sha256": "ab34c548f1e1f65f129218db142b27cd5e29aaf0556efdf0d0db389fe4431f20"
+    },
+    {
+      "bytes": 822,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-direct-artin-v1/column_03.json",
+      "sha256": "79b2a825d828faf5ffc7336cdc01f1ab3454dd5fafef388c77c0c9a2bccb5e62"
+    },
+    {
+      "bytes": 901,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-direct-artin-v1/column_04.json",
+      "sha256": "ec710f26cea96ae7d2ad0e192ec46621849e97be46e4868981f9f9a9dfa66190"
+    },
+    {
+      "bytes": 899,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-direct-artin-v1/column_05.json",
+      "sha256": "76c4e47ac5e42a22f2a58049af182567e52ee4954b64bc498e70782ab38b901a"
+    },
+    {
+      "bytes": 899,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-direct-artin-v1/column_06.json",
+      "sha256": "785d3859a1531a8f9a01ddd7a0ab4d8a8a4deb2ecf57b89128cbcd9bec3c345f"
+    },
+    {
+      "bytes": 978,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-direct-artin-v1/column_07.json",
+      "sha256": "213006e733fbcb2b9c82590d15f25d468386837170f16750b94ba1cf650ba5f3"
+    },
+    {
+      "bytes": 416,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-direct-artin-v1/worker.log",
+      "sha256": "e6f7a13535a08c6e026d0344c75d28d44f71e90259f4210748993403b7a785c3"
+    },
+    {
+      "bytes": 2541,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-curve302-maximal-norm-form-v1/case_1.json",
+      "sha256": "d01ba67e39af553091a541b4e9aa291ed8bf1549f0e8f2fef45a97e08eef50ef"
+    },
+    {
+      "bytes": 3534,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-curve302-maximal-norm-form-v1/case_2.json",
+      "sha256": "3899eb0b0f9a3986c1b9d26572079571820041d8a3d51e7eb5c5f2385924d43a"
+    },
+    {
+      "bytes": 71,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-curve302-maximal-norm-form-v1/worker.log",
+      "sha256": "95ec246c62c89b0db3de61e9dede7dabfd4fbfca9fade8d2b3e4ecfb4afb2279"
+    },
+    {
+      "bytes": 16895,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-compaction-v1/column_06.json",
+      "sha256": "7cff51b16f42e4cb6676e4cf15f6fc0ec28116b10863dbcffe93cd208123f0f7"
+    },
+    {
+      "bytes": 1443943,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-compaction-v1/column_06_factorization.json",
+      "sha256": "92d30218857c6020792e036fc18efb0ac9474c6aee37a87f7a033e48ecaa1397"
+    },
+    {
+      "bytes": 12426,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-compaction-v1/column_07.json",
+      "sha256": "cca1831bc59f6622ee785e49c602910e646e1a615d18c90f3b9c3a12c581427a"
+    },
+    {
+      "bytes": 1380975,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-compaction-v1/column_07_factorization.json",
+      "sha256": "908e634da9dd3b4638c8b264fc0deb97071ae99dbfdd56f3104cb78ff565f8d8"
+    },
+    {
+      "bytes": 114,
+      "oracle_evaluation": false,
+      "path": "artifacts/local/rank-jump-constructed-class-compaction-v1/worker.log",
+      "sha256": "95b302e46fe66ee09d1e515ec62c043c0c1acde81077990faca46a4193f304ec"
+    },
+    {
+      "bytes": 13352,
+      "oracle_evaluation": true,
+      "path": "artifacts/local/rank-jump-constructed-class-oracle-solubility-v1/column_06.json",
+      "sha256": "43a3f4754ee7904f719c90ca58e58f517268c2273b13dc681fec88a75f9db1f8"
+    },
+    {
+      "bytes": 16627,
+      "oracle_evaluation": true,
+      "path": "artifacts/local/rank-jump-constructed-class-oracle-solubility-v1/column_07.json",
+      "sha256": "14a21368826b4ee212802c886960605b029cce5b648d088cb3fe867f4f8dfa67"
+    },
+    {
+      "bytes": 161,
+      "oracle_evaluation": true,
+      "path": "artifacts/local/rank-jump-constructed-class-oracle-solubility-v1/worker.log",
+      "sha256": "75c0d9fb1dd93d26d842606665163228656cf73a4b2ca38c1366bbe12f3c6f40"
+    }
+  ],
+  "producer_sha256": "7be462bb437e3d87e5f55bf46652caeeb19966aacaec526aa179909b944c48f7",
+  "restore": "Extract into an empty replay checkout; do not overwrite live data. Earlier constructive archives remain separate.",
+  "schema": "rank-jump.class-block-lift-evidence.v1"
+}

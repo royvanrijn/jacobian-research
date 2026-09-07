@@ -1,5 +1,12 @@
 # Two constructed strict classes; 302 remains the primary target
 
+Historical positive-construction checkpoint. The later
+[class-block and rational-lift report](CONSTRUCTED_CLASS_BLOCK_AND_RATIONAL_LIFTS.md)
+certifies two additional ordinary ideal-class2-torsion factors and verifies
+rational points on both covers in a separately labelled retrospective
+evaluation. That result supersedes the unresolved solubility statements below.
+The specialization condition and additional-class construction on302 remain open.
+
 The constructive calibration has succeeded. From the MW16-05 equation at
 `t=3/17`, its sixteen generic Kummer classes, and equation-only principal
 relations, we have constructed **two independent strict Selmer classes

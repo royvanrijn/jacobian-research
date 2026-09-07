@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.constructed-class-oracle-solubility-protocol.v1",
+  "classification": "Retrospective solubility evaluation of already frozen equation/generic-only constructed classes. Oracle points are evaluation inputs only.",
+  "endpoint": "For each fixed constructed class, test whether a combination of the already certified22 reference points supplies a rational point on its explicit cover. Certify any success by an exact cubic-field square root and direct evaluation of the cover quadrics.",
+  "bounds": {"workers": 1, "worker_seconds": 120, "pari_stack_bytes": 268435456, "character_prime_bound": 2003, "new_parameters": 0, "elliptic_point_searches": 0, "new_class_constructions": 0},
+  "method": "Compute good-prime characters of the known point Kummer classes and the two fixed compact representatives. Solve for candidate parity combinations, add those already known points using exact group law, then compute an exact square root of (4*x(P)-theta)/beta. A square root gives an explicit rational point on Q2=0,Q1+s^2=0. Character agreement alone is never a solubility proof.",
+  "provenance_boundary": "The constructor, its selector, its generic-only anchors and its independence certificate are frozen before this oracle input is admitted. This output must never be used as a prospective selector input. Failure to match does not imply Sha. No CT claim or complete rank bound."
+}

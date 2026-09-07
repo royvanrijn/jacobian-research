@@ -1,0 +1,24 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_constructed_class_compaction_v1.json": "dc82ce34d07078e4546cc2b9218b971d79a77dcfdf61d5432e38b50c76f04c64",
+    "artifacts/generated-results/elliptic-curves/rank_jump_constructed_class_oracle_solubility_v1.json": "e5959552e1674c874200317dbf11287891db46df1f8b0bb8bc3d17b7573d814e",
+    "artifacts/generated-results/elliptic-curves/rank_jump_reference_strict_class_construction_inputs_v1.json": "0a3980b6ab354d3c365160afc175b191fb39c5c777981a8fc20f5e5c0edd78ee",
+    "artifacts/generated-results/elliptic-curves/small_conductor_rank22_proof_v1.json": "36552cd46a2a0f4bdf46667674a95c5211ddde083e4045817129dcdb5c3001e2",
+    "elliptic-curves/rank-jump/verify_constructed_cover_points.py": "c0aa2733d9d9714a30d1153c3d17d50786072924b69aae9feb2540bacdbfb5c4"
+  },
+  "boundary": "Independent rational arithmetic verifies the displayed point and cubic-field identities. Oracle-assisted retrospective solubility only; no prospective constructor consumes this output.",
+  "cases": [
+    {
+      "column": 6,
+      "exact_square_identity_verified": true,
+      "rational_cover_point_verified": true
+    },
+    {
+      "column": 7,
+      "exact_square_identity_verified": true,
+      "rational_cover_point_verified": true
+    }
+  ],
+  "schema": "rank-jump.constructed-cover-points-verification.v1",
+  "status": "PASS"
+}

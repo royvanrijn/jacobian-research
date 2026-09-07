@@ -1,0 +1,7 @@
+{
+  "schema": "rank-jump.constructed-class-direct-artin-protocol.v1",
+  "endpoint": "Finish the Artin evaluations on the eight already constructed reduced half ideals, using their exact prime factors instead of requiring one coprime cyclic residue representation.",
+  "bounds": {"workers": 1, "worker_seconds": 180, "pari_stack_bytes": 268435456, "new_parameters": 0, "new_ideal_reduction_directions": 0, "elliptic_point_searches": 0},
+  "method": "Factor only the eight fixed reduced ideal norms (about120bits). For every prime-ideal factor P evaluate each globally unramified character as its Hilbert pairing with a local uniformizer. Evaluate the two large characters factorwise. Check norm and ideal reconstruction and sum with ideal valuations. Compare the combined Artin column rank with the generic six-column rank.",
+  "boundary": "Verification repair for fixed half ideals, not a new selector or search. All character inputs are equation/generic-only. Artin and CT remain distinct; zero Artin columns do not prove principal half ideals."
+}

@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.constructed-class-compaction-protocol.v1",
+  "endpoint": "Turn the two certified factored strict classes into explicit smaller representatives and degree-four genus-one cover equations, without new points or oracle input.",
+  "bounds": {"workers": 1, "worker_seconds": 180, "pari_stack_bytes": 268435456, "maximum_cover_coefficient_bits": 65536, "new_parameters": 0, "elliptic_point_searches": 0},
+  "method": "The recorded half-ideal reductions give J_original=A*J_reduced with A an exact product of principal multipliers. Expand beta/A^2 using PARI nffactorback, preserving the square-equivalence circuit. Verify (beta/A^2)=J_reduced^2 and its norm. If coefficients are within the declared output bound, expand beta*(u+v*theta+w*theta^2)^2 and output Q2=0,Q1+s^2=0.",
+  "boundary": "Exact representation change only. A smaller representative does not prove a rational point. Oversized or timed-out expansion remains UNKNOWN and does not invalidate the factored class certificate.",
+  "source": "PARI documentation https://pari.math.u-bordeaux.fr/dochtml/html-stable/General_number_fields.html#nffactorback and #idealred"
+}

@@ -2,9 +2,10 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-Current result: [two extra strict classes constructed without exceptional points on the +6 reference](TWO_CONSTRUCTED_STRICT_CLASSES_AND_302.md).
-Their rational solubility remains unknown. The new302 MW17 parent is the primary
-target for transferring the constructor and identifying the specialization event.
+Current result: [a constructed two-direction ideal-class block with exact rational lifts](CONSTRUCTED_CLASS_BLOCK_AND_RATIONAL_LIFTS.md).
+Class construction is point-free; solubility is verified retrospectively. The
+new302 MW17 parent is the primary target for transferring the constructor and
+identifying the specialization event.
 Earlier exclusion and carrier results below remain historical evidence.
 
 - [J7–J10: adding independent blocks, radical partners, and certified rank exclusions](INDEPENDENT_BLOCKS_AND_RANK_OBSTRUCTIONS.md)

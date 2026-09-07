@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.constructed-class-half-ideal-protocol.v1",
+  "endpoint": "Locate the two constructed reference strict classes in ordinary ideal-class two-torsion relative to the six generic strict controls. Distinguish class information from unit information without exceptional points.",
+  "bounds": {"workers": 1, "worker_seconds": 180, "pari_stack_bytes": 268435456, "ideal_columns": 8, "character_rows": 12, "reduction_directions": "[0,a,b] with a,b from -4 through4, with [0,0,0] first", "new_parameters": 0, "elliptic_point_searches": 0},
+  "method": "Construct square-root ideals from the exact projected-atom valuations and generic gcd ideals, correcting only at the complete bad set. Reduce products incrementally with exact principal-multiplier checks. Evaluate the ten generic ordinary unramified characters and two constructed strict characters on cyclic odd-norm ideal representatives by factorwise Jacobi symbols. No class-group completion or prospective class selector is changed.",
+  "failure_semantics": "If no declared reduced representative has a cyclic residue ring and all character factors invertible, keep that Artin column UNKNOWN. Artin zero does not prove a principal ideal or divisibility. This is not a Cassels-Tate pairing.",
+  "inputs": "Frozen generic equation projection, certified generic-only unramified masks, certified constructed classes and their exact factors. No exceptional point or historical point-derived anchor.",
+  "classification": "Incidence: individually constructed strict classes and their ordinary half-ideal images. No rational-solubility or visibility claim."
+}
