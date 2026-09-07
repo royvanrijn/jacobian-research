@@ -1,13 +1,13 @@
 #!/usr/bin/env sage-python
 """V3 transfer wrapper with deterministic seed replay and isolated supervision.
 
-This wrapper preserves the failed v1/v2 transfer attempts. New work remains in
-v3-transfer-11952-v3. Compared with the earlier wrapper, seed intake is now
-certificate-driven: after bind_job has validated the frozen seed/proof files,
-raw_state reconstructs the exact seed basis using the exact finite-reduction
-primes and no-rational-2-torsion witness from seed-proof.json. The resulting
-certified seed state is then reused for the worker's first exact seed request;
-only later enlarged-subgroup states go through the normal raw_state path.
+This wrapper preserves failed transfer attempts while keeping new work in the
+v3-transfer-11952-v3 namespace. Seed intake is certificate-driven: bind_job
+validates the frozen seed/proof files, replays the exact finite-reduction
+certificate, then binds that certified MWState to the exact (model,basis) tuple
+returned by engine.v1.seed(None). The worker's first raw_state request must be
+that exact tuple and receives the certified state directly; later enlarged
+subgroups use the normal raw_state path.
 """
 from importlib.machinery import SourceFileLoader
 from pathlib import Path
@@ -22,7 +22,6 @@ base = v2.base
 base.D = base.ROOT/'artifacts/local/elliptic-curves/v3-transfer-11952-v3'
 base.__file__ = str(SELF)
 
-# Bind v1, v2 and this wrapper into every newly prepared protocol.
 _prev_sources = base.driver_sources
 def driver_sources():
     rows = dict(_prev_sources())
@@ -31,7 +30,6 @@ def driver_sources():
     return rows
 base.driver_sources = driver_sources
 
-# Preparation supervision must belong to the active campaign, not v1.
 _original_supervise = base.supervise
 def supervise(action, case=None, v3_replay=None):
     if action != 'prepare-worker':
@@ -55,67 +53,86 @@ def supervise(action, case=None, v3_replay=None):
                  f"prepare-worker stopped: {report['outcome']}; inspect {logdir/'prepare.log'}")
 base.supervise = supervise
 
-# Deterministic theorem-backed seed replay. bind_job registers only a seed whose
-# exact files and protocol hashes have already passed the preserved v1 checks.
 import research_runtime.search_state as search_state
 from research_runtime.arithmetic import ArithmeticContext, CurveModel, rationals
 from research_runtime.mw_state import MWState
 _fallback_raw_state = search_state.raw_state
-_certified_seeds = {}
-_certified_states = {}
+_active_seed = None
 
 def _normal_curve(curve):
     curve = tuple(map(F, curve))
     return (F(0),F(0),F(0),*curve) if len(curve)==2 else curve
 
-def _seed_key(curve, points, prime_bound):
-    return (_normal_curve(curve), tuple(rationals(p) for p in points), int(prime_bound))
+def _normal_points(points):
+    return tuple(rationals(p) for p in points)
+
+def _first_diff(left, right):
+    n=min(len(left),len(right))
+    for i in range(n):
+        if left[i] != right[i]:
+            return i,left[i],right[i]
+    if len(left)!=len(right):
+        return n,('<missing>' if n>=len(left) else left[n]),('<missing>' if n>=len(right) else right[n])
+    return None
 
 def certified_raw_state(curve, points, *, cache=None, prime_bound=1000):
-    key = _seed_key(curve, points, prime_bound)
-    frozen_state = _certified_states.get(key)
-    if frozen_state is not None:
-        # This is the exact state independently replayed at bind_job's trust
-        # boundary. Reusing it avoids asking a second cache/admission path to
-        # rediscover an already-certified ordered basis. MWState is immutable;
-        # later adjoin() calls may use the worker's fresh cache safely.
-        return frozen_state
-    proof = _certified_seeds.get(key)
-    if proof is None:
-        return _fallback_raw_state(curve, points, cache=cache, prime_bound=prime_bound)
-    cache = cache or search_state.reduction_cache()
-    model = CurveModel(key[0])
-    context = ArithmeticContext.for_search(model)
-    state = MWState.empty(context, cache=cache, primes=proof['primes'],
-                          no_two_torsion_prime=proof['torsion_prime'])
-    for index, point in enumerate(key[1]):
-        before = state.rank
-        state = state.adjoin(point, cache=cache, extra_primes=())
-        base.require(state.rank == before + 1,
-            f'Frozen seed proof failed at column {index}; exact certificate primes do not certify this basis prefix')
-    base.require(tuple(state.basis) == key[1], 'Certificate-driven seed replay changed exact basis/order')
-    return state
+    global _active_seed
+    c = _normal_curve(curve)
+    pts = _normal_points(points)
+    if _active_seed is not None and int(prime_bound)==1000:
+        expected_curve, expected_points, state = _active_seed
+        if c == expected_curve and pts == expected_points:
+            return state
+        # During initial worker startup, a same-curve request with the declared
+        # seed cardinality must be the frozen marked basis. Do not silently fall
+        # back to heuristic admission if it differs.
+        if c == expected_curve and len(pts) == len(expected_points):
+            diff = _first_diff(pts, expected_points)
+            raise ValueError('V3 initial seed identity mismatch: '+repr(diff))
+    return _fallback_raw_state(curve, points, cache=cache, prime_bound=prime_bound)
 search_state.raw_state = certified_raw_state
 
 _original_bind_job = base.bind_job
 def bind_job(case):
+    global _active_seed
     engine, folder, policy = _original_bind_job(case)
     seed = base.read_json(folder/'seed-input.json')
     proof = base.read_json(folder/'seed-proof.json')
+    frozen_curve = _normal_curve(seed['curve'])
+    frozen_points = _normal_points(seed['points'])
+
+    # Bind to the exact tuple the worker will subsequently request.
+    engine_curve, engine_points = engine.v1.seed(None)
+    engine_curve = _normal_curve(engine_curve)
+    engine_points = _normal_points(engine_points)
+    base.require(engine_curve == frozen_curve, 'Frozen engine seed curve differs from seed-input.json')
+    diff = _first_diff(engine_points, frozen_points)
+    base.require(diff is None, 'Frozen engine seed points differ from seed-input.json: '+repr(diff))
+
     primes = tuple(int(row['prime']) for row in proof['signatures'])
     base.require(bool(primes) and len(set(primes)) == len(primes), 'Malformed frozen seed certificate prime list')
     torsion = int(proof['no_rational_2_torsion_prime'])
-    key = _seed_key(seed['curve'], seed['points'], 1000)
-    _certified_seeds[key] = {'primes':primes, 'torsion_prime':torsion}
-    # Replay immediately at the trust boundary. This is intentionally stronger
-    # than merely checking the JSON digest and catches a stale/mismatched proof
-    # before any landscape or chart is built.
+
+    # Rebuild the exact marked basis from the already frozen finite-reduction
+    # certificate. MWState.adjoin preserves basis order; every prefix must gain
+    # exactly one certified dimension.
     from research_runtime.memory_store import MemoryFactStore
     from research_runtime.quotient_only_reduction import QuotientOnlyReductionCache as Cache
-    replay = certified_raw_state(key[0], key[1], cache=Cache(MemoryFactStore()), prime_bound=1000)
-    base.require(replay.rank == policy['initial_rank'] and tuple(replay.basis) == key[1],
-                 'Frozen seed certificate does not replay to declared initial rank')
-    _certified_states[key] = replay
+    cache = Cache(MemoryFactStore())
+    model = CurveModel(frozen_curve)
+    context = ArithmeticContext.for_search(model)
+    state = MWState.empty(context, cache=cache, primes=primes, no_two_torsion_prime=torsion)
+    for index, point in enumerate(frozen_points):
+        before = state.rank
+        state = state.adjoin(point, cache=cache, extra_primes=())
+        base.require(state.rank == before + 1,
+            f'Frozen seed certificate failed at column {index}; certificate primes do not certify this marked prefix')
+    base.require(state.rank == policy['initial_rank'],
+                 f'Frozen seed certificate rank {state.rank} != declared {policy["initial_rank"]}')
+    diff = _first_diff(tuple(state.basis), frozen_points)
+    base.require(diff is None, 'Certificate-driven marked basis changed: '+repr(diff))
+
+    _active_seed = (engine_curve, engine_points, state)
     return engine, folder, policy
 base.bind_job = bind_job
 
