@@ -1,0 +1,22 @@
+{
+  "schema": "mestre.degree-two-rank-gate-replay.v1",
+  "status": "PASS",
+  "fresh_directory": true,
+  "producer_imported": false,
+  "short_vector_search": false,
+  "source_sha256": {
+    "elliptic-curves/cas/verify_mestre_degree_two_rank_gate.sage": "f2e81a5347746abd9b2413bde3418a7177eabc9b38a6555c2d0ec4450f9f8a14",
+    "artifacts/generated-results/elliptic-curves/mestre_rational_ns_gram_v2.json": "61ee2361fd3c7df7f6e471e0f9be60e87f2ac050b08ba93b0e8df7de143066cc",
+    "artifacts/generated-results/elliptic-curves/mestre_degree_two_rank_gate_v1.json": "5f98e2e2b7494eaed3e34ae12025551cc3922e7dc92dd0f9c62527855ba01177",
+    "artifacts/generated-results/elliptic-curves/mestre_degree_two_rank_gate_witnesses_v1.npz": "b6385a389305a94f5233adb2b6e0ab8b6326db70822752cb67cc3c76dfbb96da"
+  },
+  "command": "sage -python elliptic-curves/cas/verify_mestre_degree_two_rank_gate.sage",
+  "exit_code": 0,
+  "stdout": "PASS_ALL_PARITY_CLASSES 65536\nPASS_DIVISIBILITY_ONE_CLASSES 32509\nPASS_INDEPENDENT_VERTICAL_ROOTS 97527\nPASS_MW_RANK_AT_MOST13_FOR_EVERY_OLD_DEGREE_TWO_Q_JACOBIAN_FIBRATION\n",
+  "stderr": "",
+  "seconds": 0.7441729219863191,
+  "software": {
+    "SageMath": "10.9",
+    "numpy": "2.5.2"
+  }
+}

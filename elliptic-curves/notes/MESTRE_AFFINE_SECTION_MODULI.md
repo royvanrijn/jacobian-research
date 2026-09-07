@@ -8,6 +8,14 @@ one companion supplies a thirteenth generic direction after the
 split-infinity base change.  There is no generic-rank equality or
 rank-21/rank-30 claim here.
 
+**Correction, 2026-09-07:** the later `EC-MF2S13` claim on the Fermigier
+two-section component is withdrawn as an independence certificate. Its
+multi-specialization matrix mixed sorted-root columns and independently
+positive square-root branches. With coherent generic sections, the same
+thirteen probes have rank11, not13. The component identities and the separate
+single-fibre rank13 proofs mentioned above remain unaffected. See the
+[parent-expansion and label audit](PARENT_PORTFOLIO_AND_SECTION_LABEL_AUDIT_2026-09-07.md).
+
 ## Affine normalization
 
 Fix two labelled roots at `0` and `1` and write
@@ -845,24 +853,23 @@ open locus.  The pinned discovery and identity artifacts are
 `elliptic_mestre_fermigier_two_section_local_branch.json` and
 `elliptic_mestre_fermigier_two_section_component.json`.
 
-There is now an exact generic rank lower bound on this particular component.
-Take the first eleven primitive visible points (discarding only the twelfth
-visible point) and the two selected affine sections.  Thirteen fixed
-finite-reduction quotients, distributed over the smooth specializations
-`(u,T)=(-5,1),(-5,2),(-3,1),(-1/2,1)`, have full stacked column rank 13 over
-`F_3`.  At `u=-5,T=1`, good reduction modulo 19 has group order 28, excluding
-rational 3-torsion; smooth specialization also excludes generic rational
-3-torsion.  Infinite 3-divisibility of a hypothetical generic relation then
-proves these thirteen sections independent over `Q(u)(T)`.  Thus the
-one-parameter Fermigier two-section curve has generic Mordell--Weil rank at
-least 13.  The certificate uses the compact root/triangular-ordinate
-representation throughout, not an expanded residual.
+The historical `elliptic_mestre_fermigier_two_section_generic_rank13.json`
+is retained as rejected evidence. Its thirteen finite probes at
+`(u,T)=(-5,1),(-5,2),(-3,1),(-1/2,1)` still produce the recorded numerical
+matrix rank13. However, `SixRootMestreConstruction` sorts the roots anew,
+and the specialization wrapper chooses positive rational square roots for
+both extra ordinates. Those columns are not a fixed list of rational-function
+sections as u varies. A generic relation therefore need not specialize to
+one common coefficient vector in that matrix.
 
-This is a genuine independent second direction on this component, but it is
-not a rank-14 claim: it does not compare against a separate pre-existing
-rank-13 family.  Saturation, the full pair intersections, and the Shioda Gram
-matrix remain open.  The pinned certificate is
-`elliptic_mestre_fermigier_two_section_generic_rank13.json`.
+The [coherent-label audit](../../artifacts/generated-results/elliptic-curves/mestre_component_label_audit_v1.json)
+fixes the source-root order once at u=-5 and reconstructs both exact global
+ordinate branches over Q(u)[T]. The same probes now have stacked rank11.
+An independent full finite-group replay confirms both13 and11 and the
+unchanged three-torsion exclusion at p=19. The corrected probes certify a
+generic lower bound11; they establish neither a rank upper bound nor an
+independent second extra direction. Generic rank13, saturation, full pair
+intersections and the Shioda Gram remain unresolved by this argument.
 
 One signed finite intersection is now fixed before those lattice calculations:
 at the continuation seed `u=-3`, the two cubic ordinates meet at
@@ -886,9 +893,9 @@ pairs with `H(u)<=5` and `T=1,...,4`, using reduction primes through 151.
 The first Fermigier section raises the visible mod-3 quotient on 57 of those
 fibres, but the reconstructed second section never raises the
 visible-plus-first baseline for either modulus.  This is bounded non-escape
-data only: the later stacked multi-specialization certificate shows that it
-does not refute a generic independent second direction.  It remains neither a
-generic relation, saturation, nor Shioda calculation.  The pinned record is
+data only. The later stacked certificate has been rejected for changing its
+section columns. This grid remains neither a generic relation, saturation,
+nor Shioda calculation. The pinned record is
 `elliptic_mestre_fermigier_two_section_component_escape_h5_t4.json`.
 
 A separate numerical-height triage covers all 366 smooth specializations in
@@ -898,7 +905,7 @@ at five listed fibres (for example `u=-7/8,T=3`); no fibre has numerical rank
 14.  This is only an efficiently reproducible target-selection result: a
 canonical-height rank is neither an algebraic rank bound nor a generic
 dependence statement.  In particular, it does not give a rank-14 witness;
-the separate exact quotient certificate gives rank at least 13.  The pinned
+the former exact quotient claim has been withdrawn as described above. The pinned
 record is
 `elliptic_mestre_fermigier_two_section_height_triage_h10_t123.json`.
 

@@ -1,0 +1,16 @@
+{
+  "schema": "kihara-universal-anti-replay.v1",
+  "status": "PASS",
+  "parent_ratio": "v=p/q with q=1",
+  "section_field": "Q(v)(sqrt(-3))",
+  "anti_X_degree": 4,
+  "anti_Y_degree": 6,
+  "section_denominator_factors": "1",
+  "section_Y_leading_factors": "(10616832) * (v - 1/2)^3 * v^3 * (v + 1)^6 * (v^2 + 1/2*v + 1)^3",
+  "rank14_path_ratio": "(-1/2*z^2 - 4/3*z)/(z^2 + 6*z + 8)",
+  "path_variable": "z=t^2",
+  "path_ratio_plus_half": "(5/3*z + 4)/(z^2 + 6*z + 8)",
+  "inverse_discriminant": "16*(9*v^2+4)",
+  "path_coverage": "For every nonzero rational path t, z=t^2>0 and -1/2<v<0. Positive parent-ratio coordinates are absent from that path; this does not prove inequivalence under unmarked parent isomorphisms.",
+  "scope": "Exact anti-section over the unrestricted rational parent-ratio function field; the parent formula is reconstructed from six centres without the producer model, normalization, elimination or Groebner basis. The section remains nonrational wherever its specialized Y is nonzero. No full generic rank, full constant field, new rational direction, specialization yield or exhaustive parent classification is claimed."
+}

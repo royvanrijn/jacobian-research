@@ -1,0 +1,25 @@
+{
+  "boundary": "Frozen integer input and exact finite/rational claims replay. Shared code, not an independent implementation or numerical enumeration proof.",
+  "input_sha256": {
+    "artifacts/generated-results/elliptic-curves/curve302_signature_packet_protocol_v1.json": "d95d980a1c5bdd051aac3b541a280421b9207726dc87618e9b48c4717833f803",
+    "artifacts/generated-results/elliptic-curves/curve302_signature_packets_v1.json": "48010dae9007478e91146e16248040ae579c2f6ed1a99516c6ed6e2d8155c29a",
+    "elliptic-curves/cas/mw_pair_collision_filter.py": "594cd961a33a63850973bbe47c7e574d98d911999067967658fd4957523caf39",
+    "elliptic-curves/cas/search_curve302_visible_signature_packets.sage": "2a810f4eeadfe074a0d2240a3b0f124b86ea3381d7f6b0a0ba3fdef1d4c8d490"
+  },
+  "records": [
+    {
+      "label": "106",
+      "modular_checked": 2634,
+      "pending": 0,
+      "rational_checked": 0
+    },
+    {
+      "label": "130",
+      "modular_checked": 137,
+      "pending": 0,
+      "rational_checked": 0
+    }
+  ],
+  "schema": "curve302.wide-packets.replay.v1",
+  "status": "PASS_REPLAY_OF_RECORDED_RESULTS"
+}

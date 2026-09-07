@@ -1,0 +1,2412 @@
+{
+  "rows": [
+    {
+      "all_Q_fibrations_MW_rank_upper_bound": 16,
+      "anti_invariant_height_determinant": "1872",
+      "arithmetic_MW_base_involution": [
+        [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ]
+      ],
+      "arithmetic_MW_height_determinant": "117/4",
+      "arithmetic_NS_rank": 18,
+      "arithmetic_anti_invariant_rank": 6,
+      "arithmetic_generic_MW_rank": 11,
+      "arithmetic_invariant_rank": 5,
+      "artin_tate_ratio": "124/3705",
+      "artin_tate_ratio_is_square": false,
+      "certified_index": 1,
+      "finite_saturation_injections": [
+        {
+          "groups": [
+            {
+              "ell_multiple_subgroup_order": 6,
+              "group_order": 12,
+              "prime": 11,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 11,
+              "group_order": 22,
+              "prime": 17,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 9,
+              "group_order": 36,
+              "prime": 29,
+              "quotient_dimension": 2
+            },
+            {
+              "ell_multiple_subgroup_order": 9,
+              "group_order": 36,
+              "prime": 31,
+              "quotient_dimension": 2
+            },
+            {
+              "ell_multiple_subgroup_order": 21,
+              "group_order": 42,
+              "prime": 37,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 35,
+              "group_order": 70,
+              "prime": 59,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 19,
+              "group_order": 76,
+              "prime": 61,
+              "quotient_dimension": 2
+            },
+            {
+              "ell_multiple_subgroup_order": 47,
+              "group_order": 94,
+              "prime": 79,
+              "quotient_dimension": 1
+            }
+          ],
+          "modulus": 2,
+          "rank": 11
+        },
+        {
+          "groups": [
+            {
+              "ell_multiple_subgroup_order": 4,
+              "group_order": 12,
+              "prime": 11,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 11,
+              "group_order": 33,
+              "prime": 23,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 12,
+              "group_order": 36,
+              "prime": 29,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 12,
+              "group_order": 36,
+              "prime": 31,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 14,
+              "group_order": 42,
+              "prime": 37,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 26,
+              "group_order": 78,
+              "prime": 71,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 29,
+              "group_order": 87,
+              "prime": 73,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 31,
+              "group_order": 93,
+              "prime": 83,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 35,
+              "group_order": 105,
+              "prime": 89,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 39,
+              "group_order": 117,
+              "prime": 97,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 36,
+              "group_order": 108,
+              "prime": 101,
+              "quotient_dimension": 1
+            }
+          ],
+          "modulus": 3,
+          "rank": 11
+        }
+      ],
+      "frobenius_witnesses": [
+        {
+          "algebraic_residual_eigenvalues": [
+            {
+              "multiplicity": 1,
+              "sign": 1
+            },
+            {
+              "multiplicity": 1,
+              "sign": -1
+            }
+          ],
+          "arithmetic_NS_upper_bound": 19,
+          "artin_tate_over_Fp2_discriminant_squareclass_representative": "-372",
+          "geometric_reduction_NS_rank": 20,
+          "nonalgebraic_pair_trace": "-92",
+          "prime": 47,
+          "residual_polynomial": [
+            "-4879681",
+            "-203228",
+            "0",
+            "92",
+            "1"
+          ],
+          "surface_counts": [
+            2964,
+            4927908
+          ]
+        },
+        {
+          "algebraic_residual_eigenvalues": [
+            {
+              "multiplicity": 2,
+              "sign": -1
+            }
+          ],
+          "arithmetic_NS_upper_bound": 18,
+          "artin_tate_over_Fp2_discriminant_squareclass_representative": "-11115",
+          "geometric_reduction_NS_rank": 20,
+          "nonalgebraic_pair_trace": "-11",
+          "prime": 53,
+          "residual_polynomial": [
+            "7890481",
+            "328653",
+            "6784",
+            "117",
+            "1"
+          ],
+          "surface_counts": [
+            3647,
+            7941165
+          ]
+        }
+      ],
+      "full_arithmetic_NS_absolute_determinant": 468,
+      "full_geometric_NS_determinant": "UNKNOWN",
+      "geometric_NS_rank": 19,
+      "geometric_generic_MW_rank": 12,
+      "geometric_torsion_order": 1,
+      "initial_possible_arithmetic_lattice_indices": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "invariant_height_determinant": "16",
+      "invariant_height_gram": [
+        [
+          "2",
+          "-1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "3",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "1",
+          "2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "2",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "2"
+        ]
+      ],
+      "outer_u": "11",
+      "quadratic_twist_quotient_arithmetic_NS_rank_upper_bound": 17,
+      "quadratic_twist_quotient_generic_MW_rank": 6,
+      "quadratic_twist_zero_cubic_coefficients": [
+        "16380196699742830558562813235904987491949296124000282853249013374976000000/550892378962365588304561118053988796799287710804809",
+        "-40943394936150476042148174770023407603486481920000/6720132606147183987606999123736561",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "all_Q_fibrations_MW_rank_upper_bound": 16,
+      "anti_invariant_height_determinant": "1872",
+      "arithmetic_MW_base_involution": [
+        [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ]
+      ],
+      "arithmetic_MW_height_determinant": "117/4",
+      "arithmetic_NS_rank": 18,
+      "arithmetic_anti_invariant_rank": 6,
+      "arithmetic_generic_MW_rank": 11,
+      "arithmetic_invariant_rank": 5,
+      "artin_tate_ratio": "1833/124",
+      "artin_tate_ratio_is_square": false,
+      "certified_index": 1,
+      "finite_saturation_injections": [
+        {
+          "groups": [
+            {
+              "ell_multiple_subgroup_order": 10,
+              "group_order": 20,
+              "prime": 13,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 5,
+              "group_order": 20,
+              "prime": 17,
+              "quotient_dimension": 2
+            },
+            {
+              "ell_multiple_subgroup_order": 20,
+              "group_order": 40,
+              "prime": 29,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 21,
+              "group_order": 42,
+              "prime": 31,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 12,
+              "group_order": 48,
+              "prime": 41,
+              "quotient_dimension": 2
+            },
+            {
+              "ell_multiple_subgroup_order": 15,
+              "group_order": 60,
+              "prime": 47,
+              "quotient_dimension": 2
+            },
+            {
+              "ell_multiple_subgroup_order": 33,
+              "group_order": 66,
+              "prime": 53,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 35,
+              "group_order": 70,
+              "prime": 59,
+              "quotient_dimension": 1
+            }
+          ],
+          "modulus": 2,
+          "rank": 11
+        },
+        {
+          "groups": [
+            {
+              "ell_multiple_subgroup_order": 14,
+              "group_order": 42,
+              "prime": 31,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 16,
+              "group_order": 48,
+              "prime": 41,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 20,
+              "group_order": 60,
+              "prime": 47,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 22,
+              "group_order": 66,
+              "prime": 53,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 24,
+              "group_order": 72,
+              "prime": 61,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 28,
+              "group_order": 84,
+              "prime": 71,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 33,
+              "group_order": 99,
+              "prime": 83,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 28,
+              "group_order": 84,
+              "prime": 89,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 34,
+              "group_order": 102,
+              "prime": 101,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 39,
+              "group_order": 117,
+              "prime": 103,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 43,
+              "group_order": 129,
+              "prime": 109,
+              "quotient_dimension": 1
+            }
+          ],
+          "modulus": 3,
+          "rank": 11
+        }
+      ],
+      "frobenius_witnesses": [
+        {
+          "algebraic_residual_eigenvalues": [
+            {
+              "multiplicity": 2,
+              "sign": -1
+            }
+          ],
+          "arithmetic_NS_upper_bound": 18,
+          "artin_tate_over_Fp2_discriminant_squareclass_representative": "-5499",
+          "geometric_reduction_NS_rank": 20,
+          "nonalgebraic_pair_trace": "-35",
+          "prime": 41,
+          "residual_polynomial": [
+            "2825761",
+            "196677",
+            "6232",
+            "117",
+            "1"
+          ],
+          "surface_counts": [
+            2303,
+            2857245
+          ]
+        },
+        {
+          "algebraic_residual_eigenvalues": [
+            {
+              "multiplicity": 1,
+              "sign": 1
+            },
+            {
+              "multiplicity": 1,
+              "sign": -1
+            }
+          ],
+          "arithmetic_NS_upper_bound": 19,
+          "artin_tate_over_Fp2_discriminant_squareclass_representative": "-372",
+          "geometric_reduction_NS_rank": 20,
+          "nonalgebraic_pair_trace": "-92",
+          "prime": 47,
+          "residual_polynomial": [
+            "-4879681",
+            "-203228",
+            "0",
+            "92",
+            "1"
+          ],
+          "surface_counts": [
+            2964,
+            4927908
+          ]
+        }
+      ],
+      "full_arithmetic_NS_absolute_determinant": 468,
+      "full_geometric_NS_determinant": "UNKNOWN",
+      "geometric_NS_rank": 19,
+      "geometric_generic_MW_rank": 12,
+      "geometric_torsion_order": 1,
+      "initial_possible_arithmetic_lattice_indices": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "invariant_height_determinant": "16",
+      "invariant_height_gram": [
+        [
+          "2",
+          "-1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "3",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "1",
+          "2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "2",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "2"
+        ]
+      ],
+      "outer_u": "13",
+      "quadratic_twist_quotient_arithmetic_NS_rank_upper_bound": 17,
+      "quadratic_twist_quotient_generic_MW_rank": 6,
+      "quadratic_twist_zero_cubic_coefficients": [
+        "-8381593282247363001555355332836180982166355465257101899119586861202121864257/34359738368000000000000000000000000000000000000000000",
+        "-9210909059789767323198111582529935946702139239484547/167772160000000000000000000000000000",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "all_Q_fibrations_MW_rank_upper_bound": 16,
+      "anti_invariant_height_determinant": "1872",
+      "arithmetic_MW_base_involution": [
+        [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ]
+      ],
+      "arithmetic_MW_height_determinant": "117/4",
+      "arithmetic_NS_rank": 18,
+      "arithmetic_anti_invariant_rank": 6,
+      "arithmetic_generic_MW_rank": 11,
+      "arithmetic_invariant_rank": 5,
+      "artin_tate_ratio": "95/119",
+      "artin_tate_ratio_is_square": false,
+      "certified_index": 1,
+      "finite_saturation_injections": [
+        {
+          "groups": [
+            {
+              "ell_multiple_subgroup_order": 6,
+              "group_order": 12,
+              "prime": 7,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 8,
+              "group_order": 16,
+              "prime": 17,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 8,
+              "group_order": 32,
+              "prime": 29,
+              "quotient_dimension": 2
+            },
+            {
+              "ell_multiple_subgroup_order": 13,
+              "group_order": 52,
+              "prime": 41,
+              "quotient_dimension": 2
+            },
+            {
+              "ell_multiple_subgroup_order": 28,
+              "group_order": 56,
+              "prime": 47,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 36,
+              "group_order": 72,
+              "prime": 59,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 39,
+              "group_order": 78,
+              "prime": 67,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 39,
+              "group_order": 78,
+              "prime": 73,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 54,
+              "group_order": 108,
+              "prime": 89,
+              "quotient_dimension": 1
+            }
+          ],
+          "modulus": 2,
+          "rank": 11
+        },
+        {
+          "groups": [
+            {
+              "ell_multiple_subgroup_order": 4,
+              "group_order": 12,
+              "prime": 7,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 5,
+              "group_order": 45,
+              "prime": 37,
+              "quotient_dimension": 2
+            },
+            {
+              "ell_multiple_subgroup_order": 21,
+              "group_order": 63,
+              "prime": 53,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 24,
+              "group_order": 72,
+              "prime": 59,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 8,
+              "group_order": 72,
+              "prime": 61,
+              "quotient_dimension": 2
+            },
+            {
+              "ell_multiple_subgroup_order": 26,
+              "group_order": 78,
+              "prime": 67,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 29,
+              "group_order": 87,
+              "prime": 71,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 26,
+              "group_order": 78,
+              "prime": 73,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 42,
+              "group_order": 126,
+              "prime": 109,
+              "quotient_dimension": 1
+            }
+          ],
+          "modulus": 3,
+          "rank": 11
+        }
+      ],
+      "frobenius_witnesses": [
+        {
+          "algebraic_residual_eigenvalues": [
+            {
+              "multiplicity": 2,
+              "sign": -1
+            }
+          ],
+          "arithmetic_NS_upper_bound": 18,
+          "artin_tate_over_Fp2_discriminant_squareclass_representative": "-11115",
+          "geometric_reduction_NS_rank": 20,
+          "nonalgebraic_pair_trace": "-11",
+          "prime": 53,
+          "residual_polynomial": [
+            "7890481",
+            "328653",
+            "6784",
+            "117",
+            "1"
+          ],
+          "surface_counts": [
+            3647,
+            7941165
+          ]
+        },
+        {
+          "algebraic_residual_eigenvalues": [
+            {
+              "multiplicity": 2,
+              "sign": -1
+            }
+          ],
+          "arithmetic_NS_upper_bound": 18,
+          "artin_tate_over_Fp2_discriminant_squareclass_representative": "-13923",
+          "geometric_reduction_NS_rank": 20,
+          "nonalgebraic_pair_trace": "1",
+          "prime": 59,
+          "residual_polynomial": [
+            "12117361",
+            "407277",
+            "6844",
+            "117",
+            "1"
+          ],
+          "surface_counts": [
+            4427,
+            12180021
+          ]
+        }
+      ],
+      "full_arithmetic_NS_absolute_determinant": 468,
+      "full_geometric_NS_determinant": "UNKNOWN",
+      "geometric_NS_rank": 19,
+      "geometric_generic_MW_rank": 12,
+      "geometric_torsion_order": 1,
+      "initial_possible_arithmetic_lattice_indices": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "invariant_height_determinant": "16",
+      "invariant_height_gram": [
+        [
+          "2",
+          "-1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "3",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "1",
+          "2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "2",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "2"
+        ]
+      ],
+      "outer_u": "17",
+      "quadratic_twist_quotient_arithmetic_NS_rank_upper_bound": 17,
+      "quadratic_twist_quotient_generic_MW_rank": 6,
+      "quadratic_twist_zero_cubic_coefficients": [
+        "-15584251482537244358247748139682705501095087924513303495848100015805707744454000000/50007239533503261462214787234394547332804422719167909481",
+        "-23733725127248841976651831118329373416429449105348270000/13573398125847285492276095700772908721",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "all_Q_fibrations_MW_rank_upper_bound": 16,
+      "anti_invariant_height_determinant": "1872",
+      "arithmetic_MW_base_involution": [
+        [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ]
+      ],
+      "arithmetic_MW_height_determinant": "117/4",
+      "arithmetic_NS_rank": 18,
+      "arithmetic_anti_invariant_rank": 6,
+      "arithmetic_generic_MW_rank": 11,
+      "arithmetic_invariant_rank": 5,
+      "artin_tate_ratio": "47/95",
+      "artin_tate_ratio_is_square": false,
+      "certified_index": 1,
+      "finite_saturation_injections": [
+        {
+          "groups": [
+            {
+              "ell_multiple_subgroup_order": 6,
+              "group_order": 24,
+              "prime": 19,
+              "quotient_dimension": 2
+            },
+            {
+              "ell_multiple_subgroup_order": 16,
+              "group_order": 32,
+              "prime": 23,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 21,
+              "group_order": 42,
+              "prime": 31,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 24,
+              "group_order": 48,
+              "prime": 37,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 24,
+              "group_order": 48,
+              "prime": 41,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 28,
+              "group_order": 56,
+              "prime": 53,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 37,
+              "group_order": 74,
+              "prime": 59,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 38,
+              "group_order": 76,
+              "prime": 67,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 43,
+              "group_order": 86,
+              "prime": 71,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 46,
+              "group_order": 92,
+              "prime": 79,
+              "quotient_dimension": 1
+            }
+          ],
+          "modulus": 2,
+          "rank": 11
+        },
+        {
+          "groups": [
+            {
+              "ell_multiple_subgroup_order": 8,
+              "group_order": 24,
+              "prime": 19,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 14,
+              "group_order": 42,
+              "prime": 31,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 16,
+              "group_order": 48,
+              "prime": 37,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 16,
+              "group_order": 48,
+              "prime": 41,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 17,
+              "group_order": 51,
+              "prime": 47,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 28,
+              "group_order": 84,
+              "prime": 73,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 34,
+              "group_order": 102,
+              "prime": 101,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 40,
+              "group_order": 120,
+              "prime": 103,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 37,
+              "group_order": 111,
+              "prime": 107,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 35,
+              "group_order": 105,
+              "prime": 113,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 68,
+              "group_order": 204,
+              "prime": 181,
+              "quotient_dimension": 1
+            }
+          ],
+          "modulus": 3,
+          "rank": 11
+        }
+      ],
+      "frobenius_witnesses": [
+        {
+          "algebraic_residual_eigenvalues": [
+            {
+              "multiplicity": 2,
+              "sign": -1
+            }
+          ],
+          "arithmetic_NS_upper_bound": 18,
+          "artin_tate_over_Fp2_discriminant_squareclass_representative": "-5499",
+          "geometric_reduction_NS_rank": 20,
+          "nonalgebraic_pair_trace": "-35",
+          "prime": 41,
+          "residual_polynomial": [
+            "2825761",
+            "196677",
+            "6232",
+            "117",
+            "1"
+          ],
+          "surface_counts": [
+            2303,
+            2857245
+          ]
+        },
+        {
+          "algebraic_residual_eigenvalues": [
+            {
+              "multiplicity": 2,
+              "sign": -1
+            }
+          ],
+          "arithmetic_NS_upper_bound": 18,
+          "artin_tate_over_Fp2_discriminant_squareclass_representative": "-11115",
+          "geometric_reduction_NS_rank": 20,
+          "nonalgebraic_pair_trace": "-11",
+          "prime": 53,
+          "residual_polynomial": [
+            "7890481",
+            "328653",
+            "6784",
+            "117",
+            "1"
+          ],
+          "surface_counts": [
+            3647,
+            7941165
+          ]
+        }
+      ],
+      "full_arithmetic_NS_absolute_determinant": 468,
+      "full_geometric_NS_determinant": "UNKNOWN",
+      "geometric_NS_rank": 19,
+      "geometric_generic_MW_rank": 12,
+      "geometric_torsion_order": 1,
+      "initial_possible_arithmetic_lattice_indices": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "invariant_height_determinant": "16",
+      "invariant_height_gram": [
+        [
+          "2",
+          "-1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "3",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "1",
+          "2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "2",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "2"
+        ]
+      ],
+      "outer_u": "19",
+      "quadratic_twist_quotient_arithmetic_NS_rank_upper_bound": 17,
+      "quadratic_twist_quotient_generic_MW_rank": 6,
+      "quadratic_twist_zero_cubic_coefficients": [
+        "-2848969703363009721466137758773065379778222925348451569984418279585097541552773485524688896000000/841145634585949275012295814031361568757645321411228005128811831144209",
+        "-64249814194436053115641274343660270558628270601506424754347520000/8910747352365263897952967983472811701652964961",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "all_Q_fibrations_MW_rank_upper_bound": 16,
+      "anti_invariant_height_determinant": "1872",
+      "arithmetic_MW_base_involution": [
+        [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ]
+      ],
+      "arithmetic_MW_height_determinant": "117/4",
+      "arithmetic_NS_rank": 18,
+      "arithmetic_anti_invariant_rank": 6,
+      "arithmetic_generic_MW_rank": 11,
+      "arithmetic_invariant_rank": 5,
+      "artin_tate_ratio": "71/68",
+      "artin_tate_ratio_is_square": false,
+      "certified_index": 1,
+      "finite_saturation_injections": [
+        {
+          "groups": [
+            {
+              "ell_multiple_subgroup_order": 4,
+              "group_order": 16,
+              "prime": 11,
+              "quotient_dimension": 2
+            },
+            {
+              "ell_multiple_subgroup_order": 8,
+              "group_order": 32,
+              "prime": 23,
+              "quotient_dimension": 2
+            },
+            {
+              "ell_multiple_subgroup_order": 20,
+              "group_order": 40,
+              "prime": 29,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 21,
+              "group_order": 42,
+              "prime": 31,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 11,
+              "group_order": 44,
+              "prime": 37,
+              "quotient_dimension": 2
+            },
+            {
+              "ell_multiple_subgroup_order": 12,
+              "group_order": 48,
+              "prime": 41,
+              "quotient_dimension": 2
+            },
+            {
+              "ell_multiple_subgroup_order": 26,
+              "group_order": 52,
+              "prime": 43,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 15,
+              "group_order": 60,
+              "prime": 53,
+              "quotient_dimension": 2
+            }
+          ],
+          "modulus": 2,
+          "rank": 11
+        },
+        {
+          "groups": [
+            {
+              "ell_multiple_subgroup_order": 14,
+              "group_order": 42,
+              "prime": 31,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 16,
+              "group_order": 48,
+              "prime": 41,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 16,
+              "group_order": 48,
+              "prime": 47,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 20,
+              "group_order": 60,
+              "prime": 53,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 27,
+              "group_order": 81,
+              "prime": 71,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 38,
+              "group_order": 114,
+              "prime": 97,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 48,
+              "group_order": 144,
+              "prime": 127,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 51,
+              "group_order": 153,
+              "prime": 137,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 51,
+              "group_order": 153,
+              "prime": 139,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 54,
+              "group_order": 162,
+              "prime": 151,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 54,
+              "group_order": 162,
+              "prime": 157,
+              "quotient_dimension": 1
+            }
+          ],
+          "modulus": 3,
+          "rank": 11
+        }
+      ],
+      "frobenius_witnesses": [
+        {
+          "algebraic_residual_eigenvalues": [
+            {
+              "multiplicity": 2,
+              "sign": -1
+            }
+          ],
+          "arithmetic_NS_upper_bound": 18,
+          "artin_tate_over_Fp2_discriminant_squareclass_representative": "-8307",
+          "geometric_reduction_NS_rank": 20,
+          "nonalgebraic_pair_trace": "-23",
+          "prime": 47,
+          "residual_polynomial": [
+            "4879681",
+            "258453",
+            "6580",
+            "117",
+            "1"
+          ],
+          "surface_counts": [
+            2939,
+            4919973
+          ]
+        },
+        {
+          "algebraic_residual_eigenvalues": [
+            {
+              "multiplicity": 1,
+              "sign": 1
+            },
+            {
+              "multiplicity": 1,
+              "sign": -1
+            }
+          ],
+          "arithmetic_NS_upper_bound": 19,
+          "artin_tate_over_Fp2_discriminant_squareclass_representative": "-7956",
+          "geometric_reduction_NS_rank": 20,
+          "nonalgebraic_pair_trace": "-100",
+          "prime": 67,
+          "residual_polynomial": [
+            "-20151121",
+            "-448900",
+            "0",
+            "100",
+            "1"
+          ],
+          "surface_counts": [
+            5596,
+            20241924
+          ]
+        }
+      ],
+      "full_arithmetic_NS_absolute_determinant": 468,
+      "full_geometric_NS_determinant": "UNKNOWN",
+      "geometric_NS_rank": 19,
+      "geometric_generic_MW_rank": 12,
+      "geometric_torsion_order": 1,
+      "initial_possible_arithmetic_lattice_indices": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "invariant_height_determinant": "16",
+      "invariant_height_gram": [
+        [
+          "2",
+          "-1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "3",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "1",
+          "2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "2",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "2"
+        ]
+      ],
+      "outer_u": "23",
+      "quadratic_twist_quotient_arithmetic_NS_rank_upper_bound": 17,
+      "quadratic_twist_quotient_generic_MW_rank": 6,
+      "quadratic_twist_zero_cubic_coefficients": [
+        "-10083001154045539687762077684659514562075650536222745659736616836615388033285000616759741852418048/59927699879767174010621059478121086527835359447635710239410400390625",
+        "-123515714258245470548074346294090877745739410958844902225774051328/1531387411518161834464990533888339996337890625",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "all_Q_fibrations_MW_rank_upper_bound": 16,
+      "anti_invariant_height_determinant": "1872",
+      "arithmetic_MW_base_involution": [
+        [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ]
+      ],
+      "arithmetic_MW_height_determinant": "117/4",
+      "arithmetic_NS_rank": 18,
+      "arithmetic_anti_invariant_rank": 6,
+      "arithmetic_generic_MW_rank": 11,
+      "arithmetic_invariant_rank": 5,
+      "artin_tate_ratio": "47/71",
+      "artin_tate_ratio_is_square": false,
+      "certified_index": 1,
+      "finite_saturation_injections": [
+        {
+          "groups": [
+            {
+              "ell_multiple_subgroup_order": 3,
+              "group_order": 12,
+              "prime": 7,
+              "quotient_dimension": 2
+            },
+            {
+              "ell_multiple_subgroup_order": 9,
+              "group_order": 18,
+              "prime": 11,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 5,
+              "group_order": 20,
+              "prime": 13,
+              "quotient_dimension": 2
+            },
+            {
+              "ell_multiple_subgroup_order": 13,
+              "group_order": 26,
+              "prime": 19,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 8,
+              "group_order": 32,
+              "prime": 23,
+              "quotient_dimension": 2
+            },
+            {
+              "ell_multiple_subgroup_order": 6,
+              "group_order": 24,
+              "prime": 29,
+              "quotient_dimension": 2
+            },
+            {
+              "ell_multiple_subgroup_order": 43,
+              "group_order": 86,
+              "prime": 71,
+              "quotient_dimension": 1
+            }
+          ],
+          "modulus": 2,
+          "rank": 11
+        },
+        {
+          "groups": [
+            {
+              "ell_multiple_subgroup_order": 4,
+              "group_order": 12,
+              "prime": 7,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 6,
+              "group_order": 18,
+              "prime": 11,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 8,
+              "group_order": 24,
+              "prime": 29,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 18,
+              "group_order": 54,
+              "prime": 41,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 18,
+              "group_order": 54,
+              "prime": 53,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 30,
+              "group_order": 90,
+              "prime": 73,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 32,
+              "group_order": 96,
+              "prime": 79,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 32,
+              "group_order": 96,
+              "prime": 97,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 38,
+              "group_order": 114,
+              "prime": 101,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 37,
+              "group_order": 111,
+              "prime": 103,
+              "quotient_dimension": 1
+            },
+            {
+              "ell_multiple_subgroup_order": 34,
+              "group_order": 102,
+              "prime": 107,
+              "quotient_dimension": 1
+            }
+          ],
+          "modulus": 3,
+          "rank": 11
+        }
+      ],
+      "frobenius_witnesses": [
+        {
+          "algebraic_residual_eigenvalues": [
+            {
+              "multiplicity": 2,
+              "sign": -1
+            }
+          ],
+          "arithmetic_NS_upper_bound": 18,
+          "artin_tate_over_Fp2_discriminant_squareclass_representative": "-5499",
+          "geometric_reduction_NS_rank": 20,
+          "nonalgebraic_pair_trace": "-35",
+          "prime": 41,
+          "residual_polynomial": [
+            "2825761",
+            "196677",
+            "6232",
+            "117",
+            "1"
+          ],
+          "surface_counts": [
+            2303,
+            2857245
+          ]
+        },
+        {
+          "algebraic_residual_eigenvalues": [
+            {
+              "multiplicity": 2,
+              "sign": -1
+            }
+          ],
+          "arithmetic_NS_upper_bound": 18,
+          "artin_tate_over_Fp2_discriminant_squareclass_representative": "-8307",
+          "geometric_reduction_NS_rank": 20,
+          "nonalgebraic_pair_trace": "-23",
+          "prime": 47,
+          "residual_polynomial": [
+            "4879681",
+            "258453",
+            "6580",
+            "117",
+            "1"
+          ],
+          "surface_counts": [
+            2939,
+            4919973
+          ]
+        }
+      ],
+      "full_arithmetic_NS_absolute_determinant": 468,
+      "full_geometric_NS_determinant": "UNKNOWN",
+      "geometric_NS_rank": 19,
+      "geometric_generic_MW_rank": 12,
+      "geometric_torsion_order": 1,
+      "initial_possible_arithmetic_lattice_indices": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "invariant_height_determinant": "16",
+      "invariant_height_gram": [
+        [
+          "2",
+          "-1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "3",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "1",
+          "2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "2",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "2"
+        ]
+      ],
+      "outer_u": "29",
+      "quadratic_twist_quotient_arithmetic_NS_rank_upper_bound": 17,
+      "quadratic_twist_quotient_generic_MW_rank": 6,
+      "quadratic_twist_zero_cubic_coefficients": [
+        "-6964463672316213791768919508273191309003859341535130570082816128147676905094265207591346983061390625/435038415195277274472451160187614552001870399761051041526691213082624",
+        "-13407970659634549123285849268996997572914078125849930316741416151875/9113917000939519802614472202108076112094429184",
+        "0",
+        "1"
+      ]
+    }
+  ],
+  "schema": "elliptic-curves.mestre-parent-picard-saturation.v1",
+  "scope": "Frobenius fixes exactly18 rational divisor directions at a certified good prime on each parent. Two incompatible Artin-Tate squareclasses bound geometric Picard rank by19, and the exact5+6 base-involution decomposition supplies the matching lower bound via the rank6 geometric rational quotient. Arithmetic/geometric generic MW ranks are11/12. Complete finite groups show the actual generic basis injects modulo2 and3 at T=1, excluding every possible index in the rank18 arithmetic NS lattice of determinant468. The full geometric NS lattice is not identified. Every Q-fibration on each parent has MW rank at most16; this does not bound specialized elliptic ranks. The twist quotient has an I0* with irreducible cubic at zero, forcing at least two nonrational divisor directions and arithmetic NS rank at most17. No new fibration, rootless-frame search or foundry admission.",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/mestre_base_involution_v1.json": "424d19f51bedd9634b8f1ec9d5cfd916bd46a32af9eb536d04f3307b5e34c09b",
+    "artifacts/generated-results/elliptic-curves/mestre_generic_height_independent_v1.json": "348ae819942f0a4b6e01ffa09c1bc10f23efa8edf4bc053daa238298a7832926",
+    "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_seed_clouds_v1.json": "77145010e6560728f94ab04df726a848e32f655acc50a56510617d461487f9d5",
+    "artifacts/generated-results/elliptic-curves/mestre_parent_fibre_geometry_v1.json": "ce1b467e592a19ff80f24a4f09799026f81e9b9e2e7e0d13c48e4d27a5972b49",
+    "artifacts/local/elliptic-curves/mestre-generic-height-v1/ledger.json": "d28b596a76705f685f612b6265a3b17bc3609636dd57bd9f07a48d4f8849d9ec",
+    "artifacts/local/elliptic-curves/mestre-generic-height-v1/protocol.json": "c522520f1800fe4d0fd36fe5fadd4e30d55bfa180437b46ab4d89b00c6d7c4df",
+    "artifacts/local/elliptic-curves/mestre-generic-height-v1/u11/height.json": "51e0dba75704ce8f4fae2e4ed080783bec94f2ec29457e05a67b9f6df312231c",
+    "artifacts/local/elliptic-curves/mestre-generic-height-v1/u13/height.json": "95e7369abf1be92cf0dec3d8c0a19debbaa5383f3af8bed43587bea59c49d6ad",
+    "artifacts/local/elliptic-curves/mestre-generic-height-v1/u17/height.json": "533674ee2a8d8d0b18221bd359d874b4c8f863568e49e816aa14c009ea7beb57",
+    "artifacts/local/elliptic-curves/mestre-generic-height-v1/u19/height.json": "a78be1bdfc5810c94be1769ff9d42c635dbab94a74982d515c288afdf732ad34",
+    "artifacts/local/elliptic-curves/mestre-generic-height-v1/u23/height.json": "3d3eed30df6200cd8bfead71f96d5ccc97b2bf3cdfa0104d78c638dbcbe18f33",
+    "artifacts/local/elliptic-curves/mestre-generic-height-v1/u29/height.json": "caf1b48af3ae685e93c96ccf478ee6fee9edae5c14a063835edd1134f468e04c",
+    "artifacts/local/elliptic-curves/mestre-parent-calibration-v1/u11-unit/seed.json": "4160970379df0c459e507fffa2a277a8ed97b7260045b094c6bceff79d85e29d",
+    "artifacts/local/elliptic-curves/mestre-parent-calibration-v1/u13-unit/seed.json": "6fd40c078bdc6e5716e50955713edfe7010cacb37ba5152c8f95693c66262d2b",
+    "artifacts/local/elliptic-curves/mestre-parent-calibration-v1/u17-unit/seed.json": "a50d681ec3980bc4f1ae3f69fe5bb577ead18aed83067b2959ae63fadfb681d3",
+    "artifacts/local/elliptic-curves/mestre-parent-calibration-v1/u19-unit/seed.json": "c0da57a33d3355a3bc283331f2909018a67b53bcc780f3e96672bcc413369534",
+    "artifacts/local/elliptic-curves/mestre-parent-calibration-v1/u23-unit/seed.json": "93372d6392b9e062b7cfe2b3e12571dae23fc70bf757561d7b642ac355638bc8",
+    "artifacts/local/elliptic-curves/mestre-parent-calibration-v1/u29-unit/seed.json": "fc6bb85ce7c5e5c8195f0f2504a4385923b0ecf81dc3097d973aed5a4960eda8",
+    "artifacts/local/elliptic-curves/mestre-picard-count-v1/ledger.json": "cf7983bc83aef258403943ad64a87957230ad5ff853f752d966975fedc86ad55",
+    "artifacts/local/elliptic-curves/mestre-picard-count-v1/protocol.json": "2c1d0cfee78bc70caf1ec867b6c60dd2cf03677cc266dac846c0835385d3340d",
+    "artifacts/local/elliptic-curves/mestre-picard-count-v1/u11-p47/counts.json": "e3f94122998d3864e4d5cb512a3b0d5a27409cc5add20e30992af18cfa880f20",
+    "artifacts/local/elliptic-curves/mestre-picard-count-v1/u11-p53/counts.json": "62e6567e5dfa044efafa3f5cb01626dc1faaa9b4ab6ac8608b70be2feffe0b99",
+    "artifacts/local/elliptic-curves/mestre-picard-count-v1/u13-p41/counts.json": "a63c2c462636f3138d8de7ad4375da871c2d07bb6aedb7b0121d6b776c6bc15d",
+    "artifacts/local/elliptic-curves/mestre-picard-count-v1/u13-p47/counts.json": "74bbef05b10ed822a39c817915e02ada515faaf860a35308db95711685ce1b11",
+    "artifacts/local/elliptic-curves/mestre-picard-count-v1/u17-p53/counts.json": "dab9e1a00f10bda60a8b6d3410dc15a3e888a21e76ec9fbd09001d5e2e4e7356",
+    "artifacts/local/elliptic-curves/mestre-picard-count-v1/u17-p59/counts.json": "3998aba0827a50d6ef9ccc6827e7bd49bccff7c41848fecd6960025d80b2cf1c",
+    "artifacts/local/elliptic-curves/mestre-picard-count-v1/u19-p41/counts.json": "00da42268ee60f4f13058d4f98adfaf6773445760d2c11336454d718084cbbbd",
+    "artifacts/local/elliptic-curves/mestre-picard-count-v1/u19-p53/counts.json": "972ad3a938666885e973e6603a3284200c61d2c164ff245adeb4e4ef191053df",
+    "artifacts/local/elliptic-curves/mestre-picard-count-v1/u23-p47/counts.json": "0765d6086301af1322671b07704ea7fdfd8d8db51e26a534272a07f6d0e52c63",
+    "artifacts/local/elliptic-curves/mestre-picard-count-v1/u23-p67/counts.json": "b55bdaf644fefcd1248b1387b35bd4140ca80953e628bc089ba937ca9a2050b4",
+    "artifacts/local/elliptic-curves/mestre-picard-count-v1/u29-p41/counts.json": "cb3b9d0409e719e7c9c570651dd71d521f36dd203d3e0b7b76a4a451b08ec604",
+    "artifacts/local/elliptic-curves/mestre-picard-count-v1/u29-p47/counts.json": "40b4182f8509bf2cf96a6f264ee15ab34dfe29d9edc5332536c960a20888da10",
+    "elliptic-curves/cas/certify_mestre_parent_picard_and_saturation.sage": "0d88c88008611f165d74b5086312880b23f8450878c2b7f7dc79cdcee6926aee"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,2147 @@
+{
+  "rows": [
+    {
+      "action_matrix": [
+        [
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ]
+      ],
+      "anti_invariant_rank": 6,
+      "exact_group_relations": [
+        {
+          "coefficients": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 0
+        },
+        {
+          "coefficients": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 1
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 2
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 3
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 4
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 5
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 6
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 7
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 8
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 9
+        },
+        {
+          "coefficients": [
+            -1,
+            1,
+            1,
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            -1,
+            1,
+            -1
+          ],
+          "multiplier": 1,
+          "target_index": 10
+        }
+      ],
+      "geometric_K3_MW_lower_bound": 12,
+      "geometric_NS_lower_bound": 19,
+      "invariant_rank": 5,
+      "outer_u": "11",
+      "quotient_geometric_MW_rank": 6,
+      "raw_covariant_basis_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ]
+    },
+    {
+      "action_matrix": [
+        [
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ]
+      ],
+      "anti_invariant_rank": 6,
+      "exact_group_relations": [
+        {
+          "coefficients": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 0
+        },
+        {
+          "coefficients": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 1
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 2
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 3
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 4
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 5
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 6
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 7
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 8
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 9
+        },
+        {
+          "coefficients": [
+            -1,
+            1,
+            1,
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            -1,
+            1,
+            -1
+          ],
+          "multiplier": 1,
+          "target_index": 10
+        }
+      ],
+      "geometric_K3_MW_lower_bound": 12,
+      "geometric_NS_lower_bound": 19,
+      "invariant_rank": 5,
+      "outer_u": "13",
+      "quotient_geometric_MW_rank": 6,
+      "raw_covariant_basis_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ]
+    },
+    {
+      "action_matrix": [
+        [
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ]
+      ],
+      "anti_invariant_rank": 6,
+      "exact_group_relations": [
+        {
+          "coefficients": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 0
+        },
+        {
+          "coefficients": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 1
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 2
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 3
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 4
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 5
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 6
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 7
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 8
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 9
+        },
+        {
+          "coefficients": [
+            -1,
+            1,
+            1,
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            -1,
+            1,
+            -1
+          ],
+          "multiplier": 1,
+          "target_index": 10
+        }
+      ],
+      "geometric_K3_MW_lower_bound": 12,
+      "geometric_NS_lower_bound": 19,
+      "invariant_rank": 5,
+      "outer_u": "17",
+      "quotient_geometric_MW_rank": 6,
+      "raw_covariant_basis_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ]
+    },
+    {
+      "action_matrix": [
+        [
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ]
+      ],
+      "anti_invariant_rank": 6,
+      "exact_group_relations": [
+        {
+          "coefficients": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 0
+        },
+        {
+          "coefficients": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 1
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 2
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 3
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 4
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 5
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 6
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 7
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 8
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 9
+        },
+        {
+          "coefficients": [
+            -1,
+            1,
+            1,
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            -1,
+            1,
+            -1
+          ],
+          "multiplier": 1,
+          "target_index": 10
+        }
+      ],
+      "geometric_K3_MW_lower_bound": 12,
+      "geometric_NS_lower_bound": 19,
+      "invariant_rank": 5,
+      "outer_u": "19",
+      "quotient_geometric_MW_rank": 6,
+      "raw_covariant_basis_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ]
+    },
+    {
+      "action_matrix": [
+        [
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ]
+      ],
+      "anti_invariant_rank": 6,
+      "exact_group_relations": [
+        {
+          "coefficients": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 0
+        },
+        {
+          "coefficients": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 1
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 2
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 3
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 4
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 5
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 6
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 7
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 8
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 9
+        },
+        {
+          "coefficients": [
+            -1,
+            1,
+            1,
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            -1,
+            1,
+            -1
+          ],
+          "multiplier": 1,
+          "target_index": 10
+        }
+      ],
+      "geometric_K3_MW_lower_bound": 12,
+      "geometric_NS_lower_bound": 19,
+      "invariant_rank": 5,
+      "outer_u": "23",
+      "quotient_geometric_MW_rank": 6,
+      "raw_covariant_basis_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ]
+    },
+    {
+      "action_matrix": [
+        [
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ]
+      ],
+      "anti_invariant_rank": 6,
+      "exact_group_relations": [
+        {
+          "coefficients": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 0
+        },
+        {
+          "coefficients": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 1
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 2
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 3
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 4
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 5
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 6
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 7
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 8
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "multiplier": 1,
+          "target_index": 9
+        },
+        {
+          "coefficients": [
+            -1,
+            1,
+            1,
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            -1,
+            1,
+            -1
+          ],
+          "multiplier": 1,
+          "target_index": 10
+        }
+      ],
+      "geometric_K3_MW_lower_bound": 12,
+      "geometric_NS_lower_bound": 19,
+      "invariant_rank": 5,
+      "outer_u": "29",
+      "quotient_geometric_MW_rank": 6,
+      "raw_covariant_basis_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ]
+    }
+  ],
+  "schema": "elliptic-curves.mestre-base-involution.v1",
+  "scope": "Every column of the T->-T action is checked by exact rational-function group law, and the matrix is an involutive height isometry. The invariant geometric part is the rank6 rational elliptic quotient over Qbar(s), s=T^2. Combining it with the certified anti-invariant span gives a geometric MW/NS lower bound, not additional rational sections, a full NS marking, or a new fibration.",
+  "sources": {
+    "artifacts/local/elliptic-curves/mestre-generic-height-v1/u11/height.json": "51e0dba75704ce8f4fae2e4ed080783bec94f2ec29457e05a67b9f6df312231c",
+    "artifacts/local/elliptic-curves/mestre-generic-height-v1/u13/height.json": "95e7369abf1be92cf0dec3d8c0a19debbaa5383f3af8bed43587bea59c49d6ad",
+    "artifacts/local/elliptic-curves/mestre-generic-height-v1/u17/height.json": "533674ee2a8d8d0b18221bd359d874b4c8f863568e49e816aa14c009ea7beb57",
+    "artifacts/local/elliptic-curves/mestre-generic-height-v1/u19/height.json": "a78be1bdfc5810c94be1769ff9d42c635dbab94a74982d515c288afdf732ad34",
+    "artifacts/local/elliptic-curves/mestre-generic-height-v1/u23/height.json": "3d3eed30df6200cd8bfead71f96d5ccc97b2bf3cdfa0104d78c638dbcbe18f33",
+    "artifacts/local/elliptic-curves/mestre-generic-height-v1/u29/height.json": "caf1b48af3ae685e93c96ccf478ee6fee9edae5c14a063835edd1134f468e04c",
+    "elliptic-curves/cas/mestre_base_involution.sage": "b0c4e3fe410261b62433d479e501423957f27d9b18e036d5f4ea36f9956cc15d",
+    "elliptic-curves/cas/mestre_generic_height_audit.sage": "fdf3b968186462e9d36189a68d48618b5eeebeb0b52f986f38392fb701b5ef54"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,776 @@
+{
+  "boundary": "Same13 historical finite probes, with one fixed generic root order and exact global rational ordinate branches. Different rank after restoring coherent labels invalidates the mixed-specialization independence argument; it does not alone prove a generic-rank upper bound. No elliptic point or parameter search.",
+  "coherent_stacked_rank": 11,
+  "fixed_source_root_order": [
+    0,
+    1,
+    5,
+    2,
+    3,
+    4
+  ],
+  "global_extra_ordinate_coefficients": [
+    [
+      "(4*u^16 - 30*u^15 + 106*u^14 - 296*u^13 + 660*u^12 - 1146*u^11 + 1630*u^10 - 1776*u^9 + 1384*u^8 - 320*u^7 - 840*u^6 + 1776*u^5 - 2048*u^4 + 1536*u^3 - 896*u^2 + 256*u)/(u^12 + 4*u^11 + 14*u^10 + 60*u^9 + 145*u^8 + 344*u^7 + 856*u^6 + 1376*u^5 + 2320*u^4 + 3840*u^3 + 3584*u^2 + 4096*u + 4096)",
+      "(-12*u^16 + 72*u^15 - 292*u^14 + 896*u^13 - 2104*u^12 + 3992*u^11 - 6076*u^10 + 7304*u^9 - 6140*u^8 + 2584*u^7 + 2464*u^6 - 6656*u^5 + 8320*u^4 - 6656*u^3 + 3840*u^2 - 1536*u)/(u^13 + 2*u^12 + 12*u^11 + 44*u^10 + 85*u^9 + 294*u^8 + 558*u^7 + 948*u^6 + 2136*u^5 + 2320*u^4 + 3584*u^3 + 4608*u^2 + 2048*u + 4096)",
+      "(8*u^12 - 48*u^11 + 152*u^10 - 360*u^9 + 640*u^8 - 760*u^7 + 448*u^6 + 144*u^5 - 608*u^4 + 768*u^3 - 640*u^2 + 256*u)/(u^10 + u^9 + 9*u^8 + 25*u^7 + 34*u^6 + 138*u^5 + 152*u^4 + 248*u^3 + 480*u^2 + 128*u + 512)",
+      "(16*u^7 - 48*u^6 + 48*u^5 - 16*u^4 - 64*u^3 + 64*u^2)/(u^7 + 7*u^5 + 10*u^4 + 10*u^3 + 52*u^2 + 64)"
+    ],
+    [
+      "(-6*u^16 + 12*u^15 - 30*u^14 + 60*u^13 - 78*u^12 + 156*u^11 - 114*u^10 + 228*u^9 - 60*u^8 + 120*u^7 + 96*u^6 - 192*u^5 + 192*u^4 - 384*u^3)/(u^14 + 3*u^13 + 14*u^12 + 62*u^11 + 141*u^10 + 439*u^9 + 1092*u^8 + 1896*u^7 + 4368*u^6 + 7024*u^5 + 9024*u^4 + 15872*u^3 + 14336*u^2 + 12288*u + 16384)",
+      "(-4*u^16 + 8*u^15 - 21*u^14 + 42*u^13 - 25*u^12 + 50*u^11 - 23*u^10 + 46*u^9 - 127*u^8 + 254*u^7 - 200*u^6 + 400*u^5 + 144*u^4 - 288*u^3 + 256*u^2 - 512*u)/(u^13 + 2*u^12 + 12*u^11 + 44*u^10 + 85*u^9 + 294*u^8 + 558*u^7 + 948*u^6 + 2136*u^5 + 2320*u^4 + 3584*u^3 + 4608*u^2 + 2048*u + 4096)",
+      "(4*u^10 - 8*u^9 + 24*u^8 - 48*u^7 - 12*u^6 + 24*u^5 - 16*u^4 + 32*u^3)/(u^10 + u^9 + 9*u^8 + 25*u^7 + 34*u^6 + 138*u^5 + 152*u^4 + 248*u^3 + 480*u^2 + 128*u + 512)",
+      "(4*u^8 - 8*u^7 + 8*u^6 - 16*u^5 + 4*u^4 - 8*u^3 - 16*u^2 + 32*u)/(u^7 + 7*u^5 + 10*u^4 + 10*u^3 + 52*u^2 + 64)"
+    ]
+  ],
+  "normalized_root_functions": [
+    "0",
+    "1",
+    "(-u^4 + 2*u^3 - 3*u^2 + 4*u + 4)/(u^3 + u^2 + 2*u + 8)",
+    "(-2*u^4 + 8)/(u^3 + u^2 + 2*u + 8)",
+    "(-2*u^4 + u^3 - u^2 + 2*u)/(u^3 + u^2 + 2*u + 8)",
+    "(-u^4 + 2*u^3 + 3*u^2 + 4*u + 4)/(u^3 + u^2 + 2*u + 8)"
+  ],
+  "original_stacked_rank": 13,
+  "probes": [
+    {
+      "T": "1",
+      "coherent_rows": [
+        [
+          0,
+          0,
+          1,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          0
+        ]
+      ],
+      "extra_ordinate_signs_relative_to_old_positive_sqrt": [
+        1,
+        1
+      ],
+      "original_rows": [
+        [
+          0,
+          0,
+          1,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          0
+        ]
+      ],
+      "outer_u": "-5",
+      "prime": 23,
+      "visible_indices_in_old_sorted_roster": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "T": "1",
+      "coherent_rows": [
+        [
+          0,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          0,
+          2,
+          0,
+          2,
+          2,
+          1
+        ]
+      ],
+      "extra_ordinate_signs_relative_to_old_positive_sqrt": [
+        1,
+        1
+      ],
+      "original_rows": [
+        [
+          0,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          0,
+          2,
+          0,
+          2,
+          2,
+          1
+        ]
+      ],
+      "outer_u": "-5",
+      "prime": 41,
+      "visible_indices_in_old_sorted_roster": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "T": "1",
+      "coherent_rows": [
+        [
+          2,
+          0,
+          1,
+          2,
+          2,
+          1,
+          2,
+          2,
+          2,
+          2,
+          0,
+          2,
+          1
+        ]
+      ],
+      "extra_ordinate_signs_relative_to_old_positive_sqrt": [
+        1,
+        1
+      ],
+      "original_rows": [
+        [
+          2,
+          0,
+          1,
+          2,
+          2,
+          1,
+          2,
+          2,
+          2,
+          2,
+          0,
+          2,
+          1
+        ]
+      ],
+      "outer_u": "-5",
+      "prime": 59,
+      "visible_indices_in_old_sorted_roster": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "T": "1",
+      "coherent_rows": [
+        [
+          2,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          2,
+          1
+        ]
+      ],
+      "extra_ordinate_signs_relative_to_old_positive_sqrt": [
+        1,
+        1
+      ],
+      "original_rows": [
+        [
+          2,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          2,
+          1
+        ]
+      ],
+      "outer_u": "-5",
+      "prime": 67,
+      "visible_indices_in_old_sorted_roster": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "T": "1",
+      "coherent_rows": [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          2,
+          2,
+          2,
+          1,
+          2,
+          2,
+          1,
+          0
+        ]
+      ],
+      "extra_ordinate_signs_relative_to_old_positive_sqrt": [
+        1,
+        1
+      ],
+      "original_rows": [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          2,
+          2,
+          2,
+          1,
+          2,
+          2,
+          1,
+          0
+        ]
+      ],
+      "outer_u": "-5",
+      "prime": 71,
+      "visible_indices_in_old_sorted_roster": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "T": "1",
+      "coherent_rows": [
+        [
+          1,
+          2,
+          2,
+          1,
+          2,
+          2,
+          2,
+          1,
+          2,
+          0,
+          2,
+          2,
+          0
+        ]
+      ],
+      "extra_ordinate_signs_relative_to_old_positive_sqrt": [
+        1,
+        1
+      ],
+      "original_rows": [
+        [
+          1,
+          2,
+          2,
+          1,
+          2,
+          2,
+          2,
+          1,
+          2,
+          0,
+          2,
+          2,
+          0
+        ]
+      ],
+      "outer_u": "-5",
+      "prime": 73,
+      "visible_indices_in_old_sorted_roster": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "T": "1",
+      "coherent_rows": [
+        [
+          1,
+          0,
+          0,
+          2,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          2
+        ]
+      ],
+      "extra_ordinate_signs_relative_to_old_positive_sqrt": [
+        1,
+        1
+      ],
+      "original_rows": [
+        [
+          1,
+          0,
+          0,
+          2,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          2
+        ]
+      ],
+      "outer_u": "-5",
+      "prime": 79,
+      "visible_indices_in_old_sorted_roster": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "T": "1",
+      "coherent_rows": [
+        [
+          2,
+          2,
+          0,
+          0,
+          2,
+          1,
+          2,
+          1,
+          1,
+          0,
+          2,
+          2,
+          1
+        ]
+      ],
+      "extra_ordinate_signs_relative_to_old_positive_sqrt": [
+        1,
+        1
+      ],
+      "original_rows": [
+        [
+          2,
+          2,
+          0,
+          0,
+          2,
+          1,
+          2,
+          1,
+          1,
+          0,
+          2,
+          2,
+          1
+        ]
+      ],
+      "outer_u": "-5",
+      "prime": 83,
+      "visible_indices_in_old_sorted_roster": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "T": "1",
+      "coherent_rows": [
+        [
+          0,
+          2,
+          0,
+          2,
+          1,
+          2,
+          2,
+          0,
+          2,
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "extra_ordinate_signs_relative_to_old_positive_sqrt": [
+        1,
+        1
+      ],
+      "original_rows": [
+        [
+          0,
+          2,
+          0,
+          2,
+          1,
+          2,
+          2,
+          0,
+          2,
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "outer_u": "-5",
+      "prime": 103,
+      "visible_indices_in_old_sorted_roster": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "T": "1",
+      "coherent_rows": [
+        [
+          2,
+          2,
+          1,
+          2,
+          1,
+          2,
+          2,
+          1,
+          0,
+          2,
+          1,
+          1,
+          1
+        ]
+      ],
+      "extra_ordinate_signs_relative_to_old_positive_sqrt": [
+        1,
+        1
+      ],
+      "original_rows": [
+        [
+          2,
+          2,
+          1,
+          2,
+          1,
+          2,
+          2,
+          1,
+          0,
+          2,
+          1,
+          1,
+          1
+        ]
+      ],
+      "outer_u": "-5",
+      "prime": 109,
+      "visible_indices_in_old_sorted_roster": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "T": "2",
+      "coherent_rows": [
+        [
+          1,
+          2,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          2,
+          0,
+          1,
+          2,
+          2
+        ]
+      ],
+      "extra_ordinate_signs_relative_to_old_positive_sqrt": [
+        1,
+        1
+      ],
+      "original_rows": [
+        [
+          1,
+          2,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          2,
+          0,
+          1,
+          2,
+          2
+        ]
+      ],
+      "outer_u": "-5",
+      "prime": 37,
+      "visible_indices_in_old_sorted_roster": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "T": "1",
+      "coherent_rows": [
+        [
+          2,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "extra_ordinate_signs_relative_to_old_positive_sqrt": [
+        1,
+        -1
+      ],
+      "original_rows": [
+        [
+          2,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          2
+        ]
+      ],
+      "outer_u": "-3",
+      "prime": 41,
+      "visible_indices_in_old_sorted_roster": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        6,
+        7,
+        10
+      ]
+    },
+    {
+      "T": "1",
+      "coherent_rows": [
+        [
+          1,
+          2,
+          2,
+          0,
+          2,
+          1,
+          1,
+          0,
+          1,
+          2,
+          2,
+          2,
+          1
+        ]
+      ],
+      "extra_ordinate_signs_relative_to_old_positive_sqrt": [
+        1,
+        -1
+      ],
+      "original_rows": [
+        [
+          2,
+          1,
+          1,
+          2,
+          1,
+          0,
+          2,
+          1,
+          2,
+          0,
+          1,
+          2,
+          2
+        ]
+      ],
+      "outer_u": "-1/2",
+      "prime": 7,
+      "visible_indices_in_old_sorted_roster": [
+        2,
+        3,
+        8,
+        9,
+        6,
+        7,
+        4,
+        5,
+        10,
+        11,
+        0
+      ]
+    }
+  ],
+  "schema": "elliptic-curves.mestre-component-label-audit.v1",
+  "sources": {
+    "elliptic-curves/cas/audit_mestre_component_section_labels.sage": "86e78f247f6b81a385df495f9a14eef9a0efa03f92d524dc7fffbb4b456cee84",
+    "elliptic-curves/cas/icarm_curve245_mestre.py": "0d8b6823ba1cb80de4251adb3ff944bc3465bff58ea2bf82d2e0691a0194f225",
+    "elliptic-curves/cas/mestre_root_tuples.py": "83dd78f2ae1c652c5a9f33c46f2475c180371076fa149fc955cb653480496d75",
+    "elliptic-curves/cas/nagao_1994.py": "402dd7afa117b3737fc9caa0776b474eefc95a5638307e09199f2820b4c20af2",
+    "elliptic-curves/cas/probe_mestre_fermigier_two_section_local_continuation.py": "4b2b6b67bb38bcf4dbded18198dff780a60640e559a43ee68e1d7e9f956cae13",
+    "elliptic-curves/cas/screen_mestre_fermigier_two_section_height_triage.py": "fb55b7a752bad9d8182f56d830f6a2b08c435f8f98a3c09bd3e11f0d58665f4b",
+    "elliptic-curves/cas/verify_mestre_fermigier_two_section_generic_rank13.py": "c548a3c9febf37f3e8d8f92c857a50015ba87808c5a10815a63f3393c42498b8"
+  },
+  "status": "PASS"
+}

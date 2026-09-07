@@ -1,0 +1,181 @@
+{
+  "proof": "The quotient geometric MW lattice has rank6 and determinant1/4; its Galois-fixed rank5 lattice has determinant1/2. An involution with rank-one anti space has eigenspace index1 or2. The quotient height lower bound1 forces anti height2 and index2. This generator is narrow. Its degree-two pullback has height4 and integral primitive anti NS class of square-4. The quotient index2 glue survives pullback, and the K3 anti space is still rank one, forcing NS eigenspace index2. Thus geometric NS determinant is468*4/4=468. The rational fixed lattice has rank18, so these determinant468 surfaces cannot supply an arithmetic MW17 fibration. Their full Gram and a useful new fibration remain unconstructed.",
+  "rows": [
+    {
+      "K3_NS_Galois_eigenspace_index": 2,
+      "all_Q_fibrations_MW_upper_bound": 16,
+      "arithmetic_NS_discriminant": -468,
+      "arithmetic_NS_rank": 18,
+      "different_NS_arithmetic_MW17_foundry_admission": false,
+      "different_geometric_NS_from_determinant948": true,
+      "full_geometric_NS_Gram": "UNKNOWN",
+      "geometric_NS_discriminant": -468,
+      "geometric_NS_rank": 19,
+      "outer_u": "11",
+      "primitive_K3_anti_NS_square": -4,
+      "quotient_MW_Galois_eigenspace_index": 2,
+      "quotient_anti_height": 2,
+      "quotient_anti_height_possibilities": [
+        {
+          "anti_height": "1/2",
+          "index": 1
+        },
+        {
+          "anti_height": "2",
+          "index": 2
+        }
+      ],
+      "quotient_full_MW_determinant": "1/4",
+      "quotient_rational_MW_determinant": "1/2",
+      "transcendental_Gram": "UNKNOWN"
+    },
+    {
+      "K3_NS_Galois_eigenspace_index": 2,
+      "all_Q_fibrations_MW_upper_bound": 16,
+      "arithmetic_NS_discriminant": -468,
+      "arithmetic_NS_rank": 18,
+      "different_NS_arithmetic_MW17_foundry_admission": false,
+      "different_geometric_NS_from_determinant948": true,
+      "full_geometric_NS_Gram": "UNKNOWN",
+      "geometric_NS_discriminant": -468,
+      "geometric_NS_rank": 19,
+      "outer_u": "13",
+      "primitive_K3_anti_NS_square": -4,
+      "quotient_MW_Galois_eigenspace_index": 2,
+      "quotient_anti_height": 2,
+      "quotient_anti_height_possibilities": [
+        {
+          "anti_height": "1/2",
+          "index": 1
+        },
+        {
+          "anti_height": "2",
+          "index": 2
+        }
+      ],
+      "quotient_full_MW_determinant": "1/4",
+      "quotient_rational_MW_determinant": "1/2",
+      "transcendental_Gram": "UNKNOWN"
+    },
+    {
+      "K3_NS_Galois_eigenspace_index": 2,
+      "all_Q_fibrations_MW_upper_bound": 16,
+      "arithmetic_NS_discriminant": -468,
+      "arithmetic_NS_rank": 18,
+      "different_NS_arithmetic_MW17_foundry_admission": false,
+      "different_geometric_NS_from_determinant948": true,
+      "full_geometric_NS_Gram": "UNKNOWN",
+      "geometric_NS_discriminant": -468,
+      "geometric_NS_rank": 19,
+      "outer_u": "17",
+      "primitive_K3_anti_NS_square": -4,
+      "quotient_MW_Galois_eigenspace_index": 2,
+      "quotient_anti_height": 2,
+      "quotient_anti_height_possibilities": [
+        {
+          "anti_height": "1/2",
+          "index": 1
+        },
+        {
+          "anti_height": "2",
+          "index": 2
+        }
+      ],
+      "quotient_full_MW_determinant": "1/4",
+      "quotient_rational_MW_determinant": "1/2",
+      "transcendental_Gram": "UNKNOWN"
+    },
+    {
+      "K3_NS_Galois_eigenspace_index": 2,
+      "all_Q_fibrations_MW_upper_bound": 16,
+      "arithmetic_NS_discriminant": -468,
+      "arithmetic_NS_rank": 18,
+      "different_NS_arithmetic_MW17_foundry_admission": false,
+      "different_geometric_NS_from_determinant948": true,
+      "full_geometric_NS_Gram": "UNKNOWN",
+      "geometric_NS_discriminant": -468,
+      "geometric_NS_rank": 19,
+      "outer_u": "19",
+      "primitive_K3_anti_NS_square": -4,
+      "quotient_MW_Galois_eigenspace_index": 2,
+      "quotient_anti_height": 2,
+      "quotient_anti_height_possibilities": [
+        {
+          "anti_height": "1/2",
+          "index": 1
+        },
+        {
+          "anti_height": "2",
+          "index": 2
+        }
+      ],
+      "quotient_full_MW_determinant": "1/4",
+      "quotient_rational_MW_determinant": "1/2",
+      "transcendental_Gram": "UNKNOWN"
+    },
+    {
+      "K3_NS_Galois_eigenspace_index": 2,
+      "all_Q_fibrations_MW_upper_bound": 16,
+      "arithmetic_NS_discriminant": -468,
+      "arithmetic_NS_rank": 18,
+      "different_NS_arithmetic_MW17_foundry_admission": false,
+      "different_geometric_NS_from_determinant948": true,
+      "full_geometric_NS_Gram": "UNKNOWN",
+      "geometric_NS_discriminant": -468,
+      "geometric_NS_rank": 19,
+      "outer_u": "23",
+      "primitive_K3_anti_NS_square": -4,
+      "quotient_MW_Galois_eigenspace_index": 2,
+      "quotient_anti_height": 2,
+      "quotient_anti_height_possibilities": [
+        {
+          "anti_height": "1/2",
+          "index": 1
+        },
+        {
+          "anti_height": "2",
+          "index": 2
+        }
+      ],
+      "quotient_full_MW_determinant": "1/4",
+      "quotient_rational_MW_determinant": "1/2",
+      "transcendental_Gram": "UNKNOWN"
+    },
+    {
+      "K3_NS_Galois_eigenspace_index": 2,
+      "all_Q_fibrations_MW_upper_bound": 16,
+      "arithmetic_NS_discriminant": -468,
+      "arithmetic_NS_rank": 18,
+      "different_NS_arithmetic_MW17_foundry_admission": false,
+      "different_geometric_NS_from_determinant948": true,
+      "full_geometric_NS_Gram": "UNKNOWN",
+      "geometric_NS_discriminant": -468,
+      "geometric_NS_rank": 19,
+      "outer_u": "29",
+      "primitive_K3_anti_NS_square": -4,
+      "quotient_MW_Galois_eigenspace_index": 2,
+      "quotient_anti_height": 2,
+      "quotient_anti_height_possibilities": [
+        {
+          "anti_height": "1/2",
+          "index": 1
+        },
+        {
+          "anti_height": "2",
+          "index": 2
+        }
+      ],
+      "quotient_full_MW_determinant": "1/4",
+      "quotient_rational_MW_determinant": "1/2",
+      "transcendental_Gram": "UNKNOWN"
+    }
+  ],
+  "schema": "elliptic-curves.mestre-geometric-discriminant.v1",
+  "scope": "A theorem-derived exact discriminant, not a full marked NS isometry or the arithmetic MW17 foundry milestone. Six Q-distinct parents now provably have geometric NS discriminant different from948. No new elliptic point, fibration or rootless frame is constructed.",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/mestre_parent_fibre_geometry_v1.json": "ce1b467e592a19ff80f24a4f09799026f81e9b9e2e7e0d13c48e4d27a5972b49",
+    "artifacts/generated-results/elliptic-curves/mestre_parent_picard_and_saturation_v1.json": "9e185712629c1756847bded8c71bc50302e53a29af22d436117ae39538b737c6",
+    "elliptic-curves/cas/mestre_geometric_discriminant.py": "670f12531993e7bdddd45c22ed81544ad4557d896c3df0872dac1304f5c6489d"
+  },
+  "status": "PASS"
+}

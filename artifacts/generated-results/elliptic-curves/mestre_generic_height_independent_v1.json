@@ -1,0 +1,66 @@
+{
+  "rows": [
+    {
+      "generic_relations": 3,
+      "height_determinant": "117/4",
+      "outer_u": "11",
+      "quadrupled_height_checks": 119,
+      "rank18_divisor_sublattice_absolute_determinant": "468",
+      "section_rank": 11
+    },
+    {
+      "generic_relations": 3,
+      "height_determinant": "117/4",
+      "outer_u": "13",
+      "quadrupled_height_checks": 119,
+      "rank18_divisor_sublattice_absolute_determinant": "468",
+      "section_rank": 11
+    },
+    {
+      "generic_relations": 3,
+      "height_determinant": "117/4",
+      "outer_u": "17",
+      "quadrupled_height_checks": 119,
+      "rank18_divisor_sublattice_absolute_determinant": "468",
+      "section_rank": 11
+    },
+    {
+      "generic_relations": 3,
+      "height_determinant": "117/4",
+      "outer_u": "19",
+      "quadrupled_height_checks": 119,
+      "rank18_divisor_sublattice_absolute_determinant": "468",
+      "section_rank": 11
+    },
+    {
+      "generic_relations": 3,
+      "height_determinant": "117/4",
+      "outer_u": "23",
+      "quadrupled_height_checks": 119,
+      "rank18_divisor_sublattice_absolute_determinant": "468",
+      "section_rank": 11
+    },
+    {
+      "generic_relations": 3,
+      "height_determinant": "117/4",
+      "outer_u": "29",
+      "quadrupled_height_checks": 119,
+      "rank18_divisor_sublattice_absolute_determinant": "468",
+      "section_rank": 11
+    }
+  ],
+  "schema": "elliptic-curves.mestre-generic-height-independent.v1",
+  "scope": "Point membership and exact rational-function group law on saved section equations. All119 heights per parent are recomputed from degrees after multiplication by4 clears the I2/I2/I4 component groups. No producer local component selector is imported. Three generic group relations per parent and every Gram/determinant replay. No full NS or MW saturation or ambient-rank upper bound.",
+  "sources": {
+    "artifacts/local/elliptic-curves/mestre-generic-height-v1/ledger.json": "d28b596a76705f685f612b6265a3b17bc3609636dd57bd9f07a48d4f8849d9ec",
+    "artifacts/local/elliptic-curves/mestre-generic-height-v1/protocol.json": "c522520f1800fe4d0fd36fe5fadd4e30d55bfa180437b46ab4d89b00c6d7c4df",
+    "artifacts/local/elliptic-curves/mestre-generic-height-v1/u11/height.json": "51e0dba75704ce8f4fae2e4ed080783bec94f2ec29457e05a67b9f6df312231c",
+    "artifacts/local/elliptic-curves/mestre-generic-height-v1/u13/height.json": "95e7369abf1be92cf0dec3d8c0a19debbaa5383f3af8bed43587bea59c49d6ad",
+    "artifacts/local/elliptic-curves/mestre-generic-height-v1/u17/height.json": "533674ee2a8d8d0b18221bd359d874b4c8f863568e49e816aa14c009ea7beb57",
+    "artifacts/local/elliptic-curves/mestre-generic-height-v1/u19/height.json": "a78be1bdfc5810c94be1769ff9d42c635dbab94a74982d515c288afdf732ad34",
+    "artifacts/local/elliptic-curves/mestre-generic-height-v1/u23/height.json": "3d3eed30df6200cd8bfead71f96d5ccc97b2bf3cdfa0104d78c638dbcbe18f33",
+    "artifacts/local/elliptic-curves/mestre-generic-height-v1/u29/height.json": "caf1b48af3ae685e93c96ccf478ee6fee9edae5c14a063835edd1134f468e04c",
+    "elliptic-curves/cas/verify_mestre_generic_heights.sage": "8e89deec2e6c41b3e10447796ccc52e192acd9e38eaca2f8c553adebc6b8748b"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,49 @@
+{
+  "boundary": "Frozen integer input and exact finite/rational claims replay. Shared code, not an independent implementation or numerical enumeration proof.",
+  "input_sha256": {
+    "artifacts/generated-results/elliptic-curves/curve302_wide_packet_protocol_v1.json": "64f8ba2adab0ab77d0dc2adfd69a661982b6341aa2a8fd82b7e54afa2f3f7f87",
+    "artifacts/generated-results/elliptic-curves/curve302_wide_packets_v1.json": "2a19ee78d77f03beab1fb8dae51e2b6de8d283db9d8a542dba20766e727fce43",
+    "elliptic-curves/cas/mw_pair_collision_filter.py": "594cd961a33a63850973bbe47c7e574d98d911999067967658fd4957523caf39",
+    "elliptic-curves/cas/search_curve302_wide_packets.sage": "01b5b6024c07824040e2327dc13540d1bf35ae332d911f2595b868b7c080435e"
+  },
+  "records": [
+    {
+      "label": "32",
+      "modular_checked": 3446,
+      "pending": 0,
+      "rational_checked": 0
+    },
+    {
+      "label": "58",
+      "modular_checked": 8959,
+      "pending": 0,
+      "rational_checked": 0
+    },
+    {
+      "label": "59",
+      "modular_checked": 23625,
+      "pending": 0,
+      "rational_checked": 0
+    },
+    {
+      "label": "60",
+      "modular_checked": 55559,
+      "pending": 0,
+      "rational_checked": 0
+    },
+    {
+      "label": "86",
+      "modular_checked": 40916,
+      "pending": 0,
+      "rational_checked": 0
+    },
+    {
+      "label": "core17",
+      "modular_checked": 130929,
+      "pending": 0,
+      "rational_checked": 0
+    }
+  ],
+  "schema": "curve302.wide-packets.replay.v1",
+  "status": "PASS_REPLAY_OF_RECORDED_RESULTS"
+}

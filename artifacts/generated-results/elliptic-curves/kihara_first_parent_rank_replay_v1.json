@@ -1,0 +1,146 @@
+{
+  "schema": "elliptic-curves.kihara-first-parent-rank-replay.v1",
+  "status": "PASS",
+  "stages": {
+    "heights": {
+      "command": [
+        "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+        "/home/royvanrijn/src/jacobian-research/elliptic-curves/cas/audit_kihara_section_involution.sage"
+      ],
+      "failure_reason": null,
+      "limits": {
+        "address_space_bytes": null,
+        "cgroup": null,
+        "pari_stack_bytes": 256000000,
+        "poll_seconds": 0.05,
+        "rss_bytes": 2147483648,
+        "terminate_grace_seconds": 1.0,
+        "wall_seconds": 120
+      },
+      "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/kihara-section-involution-v1/worker.log",
+      "log_sha256": "48f14ddb5dd4654cfe1ee5d26709e843f0710a2c881ce859f73b78080a848be6",
+      "outcome": "completed",
+      "peak_observed_rss_bytes": 241143808,
+      "pid": 1531888,
+      "returncode": 0,
+      "rss_limit_bytes": 2147483648,
+      "start_token": "58160113",
+      "termination_signal": null,
+      "timeout_seconds": 120,
+      "wall_seconds": 0.8483392669586465,
+      "worker_result": null,
+      "worker_result_sha256": null
+    },
+    "counts": {
+      "command": [
+        "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+        "/home/royvanrijn/src/jacobian-research/elliptic-curves/cas/count_kihara_picard.sage"
+      ],
+      "failure_reason": null,
+      "limits": {
+        "address_space_bytes": null,
+        "cgroup": null,
+        "pari_stack_bytes": 256000000,
+        "poll_seconds": 0.05,
+        "rss_bytes": 2147483648,
+        "terminate_grace_seconds": 1.0,
+        "wall_seconds": 120
+      },
+      "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/kihara-picard-count-v1/worker.log",
+      "log_sha256": "5ee19422dd37c9403615dcc90ec2cd4c4e2bd36da72814474ca5b84d4f6b0c5e",
+      "outcome": "completed",
+      "peak_observed_rss_bytes": 249733120,
+      "pid": 1567373,
+      "returncode": 0,
+      "rss_limit_bytes": 2147483648,
+      "start_token": "58171496",
+      "termination_signal": null,
+      "timeout_seconds": 120,
+      "wall_seconds": 4.1597583330003545,
+      "worker_result": null,
+      "worker_result_sha256": null
+    },
+    "saturation": {
+      "command": [
+        "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+        "/home/royvanrijn/src/jacobian-research/elliptic-curves/cas/certify_kihara_parent_rank.sage"
+      ],
+      "failure_reason": null,
+      "limits": {
+        "address_space_bytes": null,
+        "cgroup": null,
+        "pari_stack_bytes": 256000000,
+        "poll_seconds": 0.05,
+        "rss_bytes": 2147483648,
+        "terminate_grace_seconds": 1.0,
+        "wall_seconds": 60
+      },
+      "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/kihara-first-parent-rank-v1/worker.log",
+      "log_sha256": "fc1c87b31397868aafe1a31a2bc95daee81bac771115975f79897ec714d529c5",
+      "outcome": "completed",
+      "peak_observed_rss_bytes": 311328768,
+      "pid": 1685314,
+      "returncode": 0,
+      "rss_limit_bytes": 2147483648,
+      "start_token": "58185346",
+      "termination_signal": null,
+      "timeout_seconds": 60,
+      "wall_seconds": 8.311085380031727,
+      "worker_result": null,
+      "worker_result_sha256": null
+    },
+    "independent": {
+      "command": [
+        "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+        "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/kihara-rank-standalone-v1/verify_kihara_parent_rank.sage",
+        "--input",
+        "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/kihara-rank-standalone-v1/kihara_first_parent_rank_bundle_v1.json"
+      ],
+      "failure_reason": null,
+      "limits": {
+        "address_space_bytes": null,
+        "cgroup": null,
+        "pari_stack_bytes": 256000000,
+        "poll_seconds": 0.05,
+        "rss_bytes": 2147483648,
+        "terminate_grace_seconds": 1.0,
+        "wall_seconds": 120
+      },
+      "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/kihara-rank-standalone-v1/replay.log",
+      "log_sha256": "ef09b2d77003909b5970438cc219fa2dcb1e1dd579aea6c3eb2a1944cad2a441",
+      "outcome": "completed",
+      "peak_observed_rss_bytes": 318939136,
+      "pid": 1686243,
+      "returncode": 0,
+      "rss_limit_bytes": 2147483648,
+      "start_token": "58201007",
+      "termination_signal": null,
+      "timeout_seconds": 120,
+      "wall_seconds": 27.019968435983174,
+      "worker_result": null,
+      "worker_result_sha256": null
+    }
+  },
+  "total_supervised_seconds": 40.3391514159739,
+  "transcript": "PASS78 independent generic heights and exact6+6 symmetry; geometric NS>=18\nPASS complete finite quotient rank12 modulo 2\nPASS complete finite quotient rank12 modulo 3\nPASS p 53 complete Fp/Fp2 counts; rational/geometric Picard upper17/18\nPASS p 83 complete Fp/Fp2 counts; rational/geometric Picard upper17/18\nPASS full rational NSdet756; MW12/13; every Q-Jacobian fibration MW<=15\n",
+  "sources": {
+    "elliptic-curves/cas/record_kihara_parent_rank_replay.py": "784155ed271c8ff69d07594a9a75b13feb06c95d3f2e5c86ad396f2d216ff07f",
+    "artifacts/local/elliptic-curves/kihara-section-involution-v1/supervisor.json": "8a7d3c580ac9b9fe6022bf2fe6175a5e9a71157c525bcf7470e42300eaeb253d",
+    "artifacts/local/elliptic-curves/kihara-section-involution-v1/protocol.json": "d321eda41a4aed847b9c054fddbaff8839dcc0f82285e39b0f9135daa22499cd",
+    "artifacts/local/elliptic-curves/kihara-section-involution-v1/worker.log": "48f14ddb5dd4654cfe1ee5d26709e843f0710a2c881ce859f73b78080a848be6",
+    "artifacts/local/elliptic-curves/kihara-picard-count-v1/supervisor.json": "61926e60a06e662bcf7ebc1ba6e249450fd25d2e5063980a04ce661bc72dfa50",
+    "artifacts/local/elliptic-curves/kihara-picard-count-v1/protocol.json": "b13fad004481d89d6f297a012ab65441c7345e608d1564225f430eca0f11ef95",
+    "artifacts/local/elliptic-curves/kihara-picard-count-v1/worker.log": "5ee19422dd37c9403615dcc90ec2cd4c4e2bd36da72814474ca5b84d4f6b0c5e",
+    "artifacts/local/elliptic-curves/kihara-first-parent-rank-v1/supervisor.json": "d8fc51d4858100dfb8d2c39db09a8353501628beed857c588a84c6ea7908d099",
+    "artifacts/local/elliptic-curves/kihara-first-parent-rank-v1/protocol.json": "f40a7a700d64393def2edf99c62738cac4a757b47ee8ec0f5552e29fc588232a",
+    "artifacts/local/elliptic-curves/kihara-first-parent-rank-v1/worker.log": "fc1c87b31397868aafe1a31a2bc95daee81bac771115975f79897ec714d529c5",
+    "artifacts/local/elliptic-curves/kihara-rank-standalone-v1/supervisor.json": "0e26b1a3d9d8844152155bdafbe209328972208425a1170d05df94c7916b2b54",
+    "artifacts/local/elliptic-curves/kihara-rank-standalone-v1/protocol.json": "63a75ea6b8dc0c13710cb41c6dcd7d4aa7948b77774ec6005aafabbca40478b2",
+    "artifacts/local/elliptic-curves/kihara-rank-standalone-v1/replay.log": "ef09b2d77003909b5970438cc219fa2dcb1e1dd579aea6c3eb2a1944cad2a441",
+    "elliptic-curves/cas/verify_kihara_parent_rank.sage": "4de897f3e144dfb033699c4aa8f7279238f83204d48879c6dca098b9816374d3",
+    "artifacts/generated-results/elliptic-curves/kihara_first_parent_rank_bundle_v1.json": "3a310d39883c18b1527fab7e693d9459ddbfee68405757f2b77144e9bf042cec",
+    "artifacts/generated-results/elliptic-curves/kihara_section_involution_v1.json": "5d4dd2860d1e32b0e8820fe9f7eefa908c504b5e9cbd50e45544610e06efc4b1",
+    "artifacts/generated-results/elliptic-curves/kihara_first_parent_rank_v1.json": "b89566b1a90740461dd8ae9031ec82a511d4b13bc826cf7b3e54d4f6f7ae9d7a"
+  },
+  "scope": "Completed standalone exact replay of the first new Kihara parent: Picard17/18, genericMW12/13, full rational NSdet756 and all-Q-fibration MW15 upper bound. Finite field counts and generic heights use independent arithmetic methods. No specialized-rank upper bound, new fibration, near-record curve or following search."
+}

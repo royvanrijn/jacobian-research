@@ -11,6 +11,10 @@ open. The
 the explicit family, its rank-nine specialization lattice, and the complete
 127,842-class extension of the fixed-NS exclusions.
 
+Later refinement: [the rational isogeny class is a singleton](CURVE302_CONSTRUCTION_RECOVERY.md#a-rational-isogeny-cannot-bypass-the-inverse-tests).
+The earlier exclusions below left isogenous constructions open; that escape
+is now closed over Q. Isogenies over larger fields are not excluded.
+
 ## Bottom line
 
 Curve 302 and 31 independent points are exactly reproducible; see

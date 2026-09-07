@@ -1,0 +1,443 @@
+{
+  "coherent_column_rank": 11,
+  "generic_three_torsion_exclusion": {
+    "group_order": 28,
+    "multiple_subgroup_order": 28,
+    "prime": 19,
+    "quotient_dimension": 0
+  },
+  "label_probe_groups": [
+    {
+      "group_order": 30,
+      "multiple_subgroup_order": 10,
+      "prime": 23,
+      "quotient_dimension": 1
+    },
+    {
+      "group_order": 54,
+      "multiple_subgroup_order": 18,
+      "prime": 41,
+      "quotient_dimension": 1
+    },
+    {
+      "group_order": 72,
+      "multiple_subgroup_order": 24,
+      "prime": 59,
+      "quotient_dimension": 1
+    },
+    {
+      "group_order": 78,
+      "multiple_subgroup_order": 26,
+      "prime": 67,
+      "quotient_dimension": 1
+    },
+    {
+      "group_order": 84,
+      "multiple_subgroup_order": 28,
+      "prime": 71,
+      "quotient_dimension": 1
+    },
+    {
+      "group_order": 87,
+      "multiple_subgroup_order": 29,
+      "prime": 73,
+      "quotient_dimension": 1
+    },
+    {
+      "group_order": 81,
+      "multiple_subgroup_order": 27,
+      "prime": 79,
+      "quotient_dimension": 1
+    },
+    {
+      "group_order": 99,
+      "multiple_subgroup_order": 33,
+      "prime": 83,
+      "quotient_dimension": 1
+    },
+    {
+      "group_order": 117,
+      "multiple_subgroup_order": 39,
+      "prime": 103,
+      "quotient_dimension": 1
+    },
+    {
+      "group_order": 120,
+      "multiple_subgroup_order": 40,
+      "prime": 109,
+      "quotient_dimension": 1
+    },
+    {
+      "group_order": 48,
+      "multiple_subgroup_order": 16,
+      "prime": 37,
+      "quotient_dimension": 1
+    },
+    {
+      "group_order": 54,
+      "multiple_subgroup_order": 18,
+      "prime": 41,
+      "quotient_dimension": 1
+    },
+    {
+      "group_order": 12,
+      "multiple_subgroup_order": 4,
+      "prime": 7,
+      "quotient_dimension": 1
+    }
+  ],
+  "old_mixed_column_rank": 13,
+  "parents": [
+    {
+      "groups": [
+        {
+          "group_order": 12,
+          "multiple_subgroup_order": 6,
+          "prime": 11,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 22,
+          "multiple_subgroup_order": 11,
+          "prime": 17,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 36,
+          "multiple_subgroup_order": 9,
+          "prime": 29,
+          "quotient_dimension": 2
+        },
+        {
+          "group_order": 36,
+          "multiple_subgroup_order": 9,
+          "prime": 31,
+          "quotient_dimension": 2
+        },
+        {
+          "group_order": 42,
+          "multiple_subgroup_order": 21,
+          "prime": 37,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 70,
+          "multiple_subgroup_order": 35,
+          "prime": 59,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 76,
+          "multiple_subgroup_order": 19,
+          "prime": 61,
+          "quotient_dimension": 2
+        },
+        {
+          "group_order": 94,
+          "multiple_subgroup_order": 47,
+          "prime": 79,
+          "quotient_dimension": 1
+        }
+      ],
+      "id": "mestre-u11",
+      "points": 14,
+      "rank_lower_bound": 11
+    },
+    {
+      "groups": [
+        {
+          "group_order": 20,
+          "multiple_subgroup_order": 10,
+          "prime": 13,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 20,
+          "multiple_subgroup_order": 5,
+          "prime": 17,
+          "quotient_dimension": 2
+        },
+        {
+          "group_order": 40,
+          "multiple_subgroup_order": 20,
+          "prime": 29,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 42,
+          "multiple_subgroup_order": 21,
+          "prime": 31,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 48,
+          "multiple_subgroup_order": 12,
+          "prime": 41,
+          "quotient_dimension": 2
+        },
+        {
+          "group_order": 60,
+          "multiple_subgroup_order": 15,
+          "prime": 47,
+          "quotient_dimension": 2
+        },
+        {
+          "group_order": 66,
+          "multiple_subgroup_order": 33,
+          "prime": 53,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 70,
+          "multiple_subgroup_order": 35,
+          "prime": 59,
+          "quotient_dimension": 1
+        }
+      ],
+      "id": "mestre-u13",
+      "points": 14,
+      "rank_lower_bound": 11
+    },
+    {
+      "groups": [
+        {
+          "group_order": 12,
+          "multiple_subgroup_order": 6,
+          "prime": 7,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 16,
+          "multiple_subgroup_order": 8,
+          "prime": 17,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 32,
+          "multiple_subgroup_order": 8,
+          "prime": 29,
+          "quotient_dimension": 2
+        },
+        {
+          "group_order": 52,
+          "multiple_subgroup_order": 13,
+          "prime": 41,
+          "quotient_dimension": 2
+        },
+        {
+          "group_order": 56,
+          "multiple_subgroup_order": 28,
+          "prime": 47,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 72,
+          "multiple_subgroup_order": 36,
+          "prime": 59,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 78,
+          "multiple_subgroup_order": 39,
+          "prime": 67,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 78,
+          "multiple_subgroup_order": 39,
+          "prime": 73,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 108,
+          "multiple_subgroup_order": 54,
+          "prime": 89,
+          "quotient_dimension": 1
+        }
+      ],
+      "id": "mestre-u17",
+      "points": 14,
+      "rank_lower_bound": 11
+    },
+    {
+      "groups": [
+        {
+          "group_order": 24,
+          "multiple_subgroup_order": 6,
+          "prime": 19,
+          "quotient_dimension": 2
+        },
+        {
+          "group_order": 32,
+          "multiple_subgroup_order": 16,
+          "prime": 23,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 42,
+          "multiple_subgroup_order": 21,
+          "prime": 31,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 48,
+          "multiple_subgroup_order": 24,
+          "prime": 37,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 48,
+          "multiple_subgroup_order": 24,
+          "prime": 41,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 56,
+          "multiple_subgroup_order": 28,
+          "prime": 53,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 74,
+          "multiple_subgroup_order": 37,
+          "prime": 59,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 76,
+          "multiple_subgroup_order": 38,
+          "prime": 67,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 86,
+          "multiple_subgroup_order": 43,
+          "prime": 71,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 92,
+          "multiple_subgroup_order": 46,
+          "prime": 79,
+          "quotient_dimension": 1
+        }
+      ],
+      "id": "mestre-u19",
+      "points": 14,
+      "rank_lower_bound": 11
+    },
+    {
+      "groups": [
+        {
+          "group_order": 16,
+          "multiple_subgroup_order": 4,
+          "prime": 11,
+          "quotient_dimension": 2
+        },
+        {
+          "group_order": 32,
+          "multiple_subgroup_order": 8,
+          "prime": 23,
+          "quotient_dimension": 2
+        },
+        {
+          "group_order": 40,
+          "multiple_subgroup_order": 20,
+          "prime": 29,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 42,
+          "multiple_subgroup_order": 21,
+          "prime": 31,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 44,
+          "multiple_subgroup_order": 11,
+          "prime": 37,
+          "quotient_dimension": 2
+        },
+        {
+          "group_order": 48,
+          "multiple_subgroup_order": 12,
+          "prime": 41,
+          "quotient_dimension": 2
+        },
+        {
+          "group_order": 52,
+          "multiple_subgroup_order": 26,
+          "prime": 43,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 60,
+          "multiple_subgroup_order": 15,
+          "prime": 53,
+          "quotient_dimension": 2
+        }
+      ],
+      "id": "mestre-u23",
+      "points": 14,
+      "rank_lower_bound": 11
+    },
+    {
+      "groups": [
+        {
+          "group_order": 12,
+          "multiple_subgroup_order": 3,
+          "prime": 7,
+          "quotient_dimension": 2
+        },
+        {
+          "group_order": 18,
+          "multiple_subgroup_order": 9,
+          "prime": 11,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 20,
+          "multiple_subgroup_order": 5,
+          "prime": 13,
+          "quotient_dimension": 2
+        },
+        {
+          "group_order": 26,
+          "multiple_subgroup_order": 13,
+          "prime": 19,
+          "quotient_dimension": 1
+        },
+        {
+          "group_order": 32,
+          "multiple_subgroup_order": 8,
+          "prime": 23,
+          "quotient_dimension": 2
+        },
+        {
+          "group_order": 24,
+          "multiple_subgroup_order": 6,
+          "prime": 29,
+          "quotient_dimension": 2
+        },
+        {
+          "group_order": 86,
+          "multiple_subgroup_order": 43,
+          "prime": 71,
+          "quotient_dimension": 1
+        }
+      ],
+      "id": "mestre-u29",
+      "points": 14,
+      "rank_lower_bound": 11
+    }
+  ],
+  "scope": "Independent complete finite-group enumeration and quotient cosets, exact point membership and torsion exclusion. Six14-point seed clouds have rank lower bound11. The same old13 generic probes give13 with mixed labels but11 with fixed labels and globally rational ordinate branches. Surface-count and symbolic-square identities are separately certified; no generic-rank upper bound.",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/mestre_component_label_audit_v1.json": "8e7f1261e78b37ef3fb4d221b06c5cfd3f2a80c8a345bd27b9e22ca706bd7836",
+    "artifacts/generated-results/elliptic-curves/mestre_parent_portfolio_intake_v1.json": "33695739364c68a1a00e8197f7ad05f5a71567daa846150e2016bcba73ec756c",
+    "elliptic-curves/cas/mestre_root_tuples.py": "83dd78f2ae1c652c5a9f33c46f2475c180371076fa149fc955cb653480496d75",
+    "elliptic-curves/cas/verify_mestre_fermigier_two_section_generic_rank13.py": "c548a3c9febf37f3e8d8f92c857a50015ba87808c5a10815a63f3393c42498b8",
+    "elliptic-curves/cas/verify_mestre_parent_and_label_audits.sage": "83720b2c122a0d715915a22ec4e1dd1811139b00f80ffada15df5dffb19aed63"
+  },
+  "status": "PASS"
+}

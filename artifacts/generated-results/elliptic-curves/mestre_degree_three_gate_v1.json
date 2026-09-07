@@ -1,0 +1,238 @@
+{
+  "schema": "mestre-degree-three-gate.v1",
+  "status": "PASS",
+  "rows": [
+    {
+      "source_index": 27,
+      "subtract_section_word": [
+        -3,
+        0,
+        0,
+        -2,
+        -1,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "fibre_class": [
+        -48,
+        -15,
+        4,
+        2,
+        2,
+        3,
+        1,
+        7,
+        -1,
+        0,
+        4,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2
+      ],
+      "visible_MW_upper_bound": 14,
+      "generic_Q_MW_rank": 8,
+      "generic_geometric_MW_rank": 9,
+      "geometric_root_count": 20,
+      "geometric_root_rank": 8,
+      "rational_root_rank": 8
+    },
+    {
+      "source_index": 35,
+      "subtract_section_word": [
+        -3,
+        0,
+        -1,
+        -1,
+        0,
+        -1,
+        0,
+        -1,
+        -1,
+        0,
+        -1
+      ],
+      "fibre_class": [
+        -51,
+        -16,
+        6,
+        4,
+        3,
+        5,
+        2,
+        7,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        2
+      ],
+      "visible_MW_upper_bound": 14,
+      "generic_Q_MW_rank": 10,
+      "generic_geometric_MW_rank": 11,
+      "geometric_root_count": 14,
+      "geometric_root_rank": 6,
+      "rational_root_rank": 6
+    },
+    {
+      "source_index": 35,
+      "subtract_section_word": [
+        -3,
+        0,
+        0,
+        -2,
+        -1,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "fibre_class": [
+        -49,
+        -16,
+        4,
+        2,
+        2,
+        3,
+        1,
+        7,
+        0,
+        0,
+        4,
+        3,
+        -1,
+        2,
+        0,
+        2,
+        0,
+        2
+      ],
+      "visible_MW_upper_bound": 14,
+      "generic_Q_MW_rank": 10,
+      "generic_geometric_MW_rank": 11,
+      "geometric_root_count": 14,
+      "geometric_root_rank": 6,
+      "rational_root_rank": 6
+    }
+  ],
+  "bounded_three_section_pencils": 1726,
+  "alternate_section_words": 50,
+  "rational_bisections": 2,
+  "basis_translations": 46,
+  "class_selected_pencils": 554,
+  "rational_MW_lower_upper_equal": [
+    8,
+    10,
+    10
+  ],
+  "geometric_MW_lower_upper_equal": [
+    9,
+    11,
+    11
+  ],
+  "point_search_boxes": 0,
+  "new_parents": 0,
+  "inventory_additions": 0,
+  "stages": [
+    {
+      "name": "bounded-triangles",
+      "wall_seconds": 16.48190077894833,
+      "supervisor": "artifacts/local/elliptic-curves/mestre-degree-three-pencils-v1/roster.supervisor.json"
+    },
+    {
+      "name": "height-domain",
+      "wall_seconds": 0.6407550959847867,
+      "supervisor": "artifacts/local/elliptic-curves/mestre-all-section-triangles-v1/enumeration.supervisor.json"
+    },
+    {
+      "name": "alternate-section-admission",
+      "wall_seconds": 1.5592085669049993,
+      "supervisor": "artifacts/local/elliptic-curves/mestre-rational-bisections-v1/admission.supervisor.json"
+    },
+    {
+      "name": "rational-curves",
+      "wall_seconds": 6.3750855550169945,
+      "supervisor": "artifacts/local/elliptic-curves/mestre-rational-bisections-v1/curves.supervisor.json"
+    },
+    {
+      "name": "basis-translations",
+      "wall_seconds": 1.050238554016687,
+      "supervisor": "artifacts/local/elliptic-curves/mestre-translated-bisections-v1/supervisor.json"
+    },
+    {
+      "name": "class-selection",
+      "wall_seconds": 7.428599135018885,
+      "supervisor": "artifacts/local/elliptic-curves/mestre-bisection-pencil-admission-v1/supervisor.json"
+    },
+    {
+      "name": "complete-frames",
+      "wall_seconds": 1.4571033489191905,
+      "supervisor": "artifacts/local/elliptic-curves/mestre-degree-three-frames-v1/supervisor.json"
+    },
+    {
+      "name": "independent-proof",
+      "wall_seconds": 1.560442331014201,
+      "supervisor": "artifacts/local/elliptic-curves/mestre-degree-three-standalone-v1/supervisor.json"
+    }
+  ],
+  "total_supervised_seconds": 36.553333365824074,
+  "standalone_transcript": "PASS standalone exact bisections, primitive degree3 pencils and exhaustive roots [[8, 9, 20, 776], [10, 11, 14, 486], [10, 11, 14, 578]]\n",
+  "sources": {
+    "elliptic-curves/cas/report_mestre_degree_three_gate.py": "abc5f864a78ce4dcea13c2cdd3e4b4b78de75f853d79775314fd4f51918ee4e2",
+    "elliptic-curves/cas/prepare_mestre_degree_three_pencils.sage": "8f435b61cf10d92f2236a0e4ce3e2359e036f4fe8cc89d91fda3ccb2c3ab2699",
+    "artifacts/generated-results/elliptic-curves/mestre_rational_ns_gram_v2.json": "61ee2361fd3c7df7f6e471e0f9be60e87f2ac050b08ba93b0e8df7de143066cc",
+    "artifacts/generated-results/elliptic-curves/mestre_468_replay_bundle_v1.json": "c7d479dd4a10da5953b04d70b1077337e8a33bb8e53e07033a98397642f6adcc",
+    "artifacts/local/elliptic-curves/mestre-degree-three-pencils-v1/protocol.json": "9a2cba7a37675134ae12d2feef3cf4d1c52e32a0d4f714b08aea54aac0c00ea3",
+    "artifacts/local/elliptic-curves/mestre-degree-three-pencils-v1/roster.supervisor.json": "12474243d0479aec6101c5b5f87b42ec63dfd1f00e1787d15703a349ee1a63cc",
+    "artifacts/local/elliptic-curves/mestre-degree-three-pencils-v1/roster.log": "04b1d490d0fd356d0802d87f8d5242292b7c143966d1d317feb83c1fa1fc68a0",
+    "elliptic-curves/cas/enumerate_mestre_height_six.sage": "165de029300779d14548834fc7a3f4551e09beb720a3941587aa49b54f8f8f96",
+    "artifacts/local/elliptic-curves/mestre-all-section-triangles-v1/protocol.json": "2448e29a94222ec2f7d7eb80badd01d9cf60c943e8bea629ad0ed1d5a3e865d9",
+    "artifacts/local/elliptic-curves/mestre-all-section-triangles-v1/enumeration.supervisor.json": "516d3e495b97f3a698682774bd04535061a727bd3c5c6732b90c79a1c2829f50",
+    "artifacts/local/elliptic-curves/mestre-all-section-triangles-v1/enumeration.log": "1587cfb67b090841277813542cc60427dc23878c834c804d5aab51b868d629d5",
+    "elliptic-curves/cas/construct_mestre_rational_bisections.sage": "c5bb1eb011af1e8cbe2d280f04843b8864b6c90bd53900c90eaca2e9ac3cd327",
+    "artifacts/generated-results/elliptic-curves/mestre_u11_visible_two_neighbor_v1.json": "873b84b31e3fb0cabd34b2c17a1e8eb4dd50d4125d41e44f3155d7f35fa1c2fa",
+    "artifacts/local/elliptic-curves/mestre-all-section-triangles-v1/height-domain.json": "bbfc0f6558ab5baf6b2eeaa8e4c4208208dd148a667d5d8baaa0e965c3f9f065",
+    "artifacts/local/elliptic-curves/mestre-rational-bisections-v1/protocol.json": "4e6bcbc4e3587b82b7627b453635487d5822cee7a07edf97fbad01dae16e88bc",
+    "artifacts/local/elliptic-curves/mestre-rational-bisections-v1/admission.supervisor.json": "d8f46d7417c5653cd3aee0063c5038b820e6035e5f935a7ea008977aae451ebe",
+    "artifacts/local/elliptic-curves/mestre-rational-bisections-v1/admission.log": "69502b0066f23fb7b5c70b7d58c2d5d7dc5eba1c1e1aa33edb12404b57f3107b",
+    "artifacts/local/elliptic-curves/mestre-rational-bisections-v1/curves.supervisor.json": "8ac49150de647b9c9220fc1e445c6dd674c973b67b5b8d7c3c6f9bc5887f09b4",
+    "artifacts/local/elliptic-curves/mestre-rational-bisections-v1/curves.log": "78d707d5808283620672dd521e592759130b8760eff90b43f30ec54054bb74a9",
+    "elliptic-curves/cas/translate_mestre_bisections.sage": "ca14ac471554252f3b494a581b5ec34f553181c44aafc680a0be6520ff4d8b00",
+    "artifacts/local/elliptic-curves/mestre-rational-bisections-v1/result.json": "7ec81eab4654f8d84d7d846b55be89843460d572b2596966caa689687db08ea0",
+    "artifacts/local/elliptic-curves/mestre-degree-three-pencils-v1/roster.json": "2aeaa5ccf6e424d310eea880cdae28407f5a0bb607d3dfc28f1743a46fd9cd41",
+    "artifacts/local/elliptic-curves/mestre-translated-bisections-v1/protocol.json": "85add96cb5703052026cf776d21434dd590edc1b316b8700fa282eceebf06010",
+    "artifacts/local/elliptic-curves/mestre-translated-bisections-v1/supervisor.json": "8ef8afcbaf45ca8c4122d685f16a52f7e8e379f106b89c40dd39c5eb4d75f20d",
+    "artifacts/local/elliptic-curves/mestre-translated-bisections-v1/worker.log": "03168b7cae7068a7625a9866f60b5993eda90913b32607d10e9e3b3a7369fbb6",
+    "elliptic-curves/cas/admit_mestre_bisection_pencils.sage": "d7db862410a597f155bbbc01e0ecc142f3cac73fb088b04366b9482a7ce9c3a8",
+    "artifacts/local/elliptic-curves/mestre-translated-bisections-v1/result.json": "1570e72227f37c14d5165dcfe974e11a01ada254897fbd841a8089b7aefa434b",
+    "artifacts/local/elliptic-curves/mestre-bisection-pencil-admission-v1/protocol.json": "1719c4c10084314abb69320516fd585907d210ed0eab904ddde5ca5779b9ce76",
+    "artifacts/local/elliptic-curves/mestre-bisection-pencil-admission-v1/supervisor.json": "020e422948afe7339617b7db1a458b6a4608f418f389deac4e162ef5bc004659",
+    "artifacts/local/elliptic-curves/mestre-bisection-pencil-admission-v1/worker.log": "26c405d81d30bb6f6e5dd88976d67a7e0ddd8b191d5808b1b8a211e61e0d80ea",
+    "elliptic-curves/cas/certify_mestre_degree_three_frames.sage": "1e03ac7151796360ebe72c07e271c5fa76e3aff64f29f03847b356c611556bfd",
+    "artifacts/local/elliptic-curves/mestre-bisection-pencil-admission-v1/result.json": "43fe6aed3006c1e93c666f7b8c77e185a757344e692fe4c7ad999e306f167659",
+    "artifacts/local/elliptic-curves/mestre-degree-three-frames-v1/protocol.json": "9947a5337ca89b4dbfda0219e68208c1a537d29c8b6fd2bacc699a62df4b3aaf",
+    "artifacts/local/elliptic-curves/mestre-degree-three-frames-v1/supervisor.json": "b733b68be9c4f090f1d5a0b21e4e8cba1f955ca489037cbd0dbd8a95bd181306",
+    "artifacts/local/elliptic-curves/mestre-degree-three-frames-v1/worker.log": "c557dad21fb0394b8c1a1c8ddb91bceb66d5da9e7839750ab099b6cfd1203c09",
+    "artifacts/local/elliptic-curves/mestre-degree-three-standalone-v1/protocol.json": "1d8a06ffce2cf532f2a41787acb08e65af4f419a26003b61fbbb3ebf9f8a811c",
+    "artifacts/local/elliptic-curves/mestre-degree-three-standalone-v1/supervisor.json": "ff4595cd2813b93971e0e97820392e368c89896f210e92e97f3e5bfbd5e7d356",
+    "artifacts/local/elliptic-curves/mestre-degree-three-standalone-v1/replay.log": "2ba35b2e367242a68a52232abbf48d3a4663d97f5e89f84408fd38aac7920cc3",
+    "artifacts/local/elliptic-curves/mestre-degree-three-frames-v1/result.json": "ac1241b2138db02209c5b52e396443f55db10a1645f41492e069420de8dcbe15",
+    "artifacts/generated-results/elliptic-curves/mestre_degree_three_proof_bundle_v1.json": "0cb7aa7e649e1436bd3e2dea9faaae138049c8f7a3efef0736ef0053c1a9b467",
+    "elliptic-curves/cas/verify_mestre_degree_three_gate.sage": "1de330c77f7d7f50d6566e2b8196a3f322751d408e7b8e16c6c7a416ee0f1a08"
+  },
+  "scope": "Three exact primitive old-degree3 rational Jacobian pencils on the explicit u11 Mestre K3, constructed as O plus translates of two rational bisections. Independent rational LDL enumeration closes all geometric frame roots and gives exact generic Q ranks8,10,10. No pairwise inequivalence, new Weierstrass equations or point bases, high-rank fibre, search-yield estimate or parent expansion is claimed. Visible rank14 upper bounds were loose by four or six directions. The retained height domain is selection input; this report does not certify completeness of that separate height-six enumeration or all degree3 fibrations. Two initial launcher API errors preceded the first CAS worker; no arithmetic rerun occurred. Supervised stage accounting excludes launcher, source-review and report CPU."
+}

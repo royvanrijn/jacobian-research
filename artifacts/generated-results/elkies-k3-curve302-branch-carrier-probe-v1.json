@@ -1,0 +1,181 @@
+{
+  "boundary": "Only the complete inclusive height512 boxes in two frozen rational charts, with chart infinities accounted for. No global rational-point exclusion, Jacobian rank upper bound, new parent or full generic MW basis.",
+  "input_sha256": {
+    "artifacts/generated-results/elkies-k3-curve302-branch-carrier-protocol-v1.json": "8263d177b932300f78b05e2c5b428da6485bfaa8715456031d65d02b35426a50",
+    "artifacts/generated-results/elkies-k3-curve302-rational-branch-carrier-v1.json": "e93c57fd7e026d2c6dec9405392c96da5da47d0e3f69473dd5e8370e31ed8bd3",
+    "elkies-k3/scripts/probe_curve302_branch_carrier.sage": "c6fa8d71fb18bdd01036607f9968aa3311d4072b6561d9c291deabe600842584"
+  },
+  "jacobian_arithmetic": {
+    "boundary": "No Mordell-Weil rank upper bound. The genus-three Jacobian rank remains UNKNOWN.",
+    "jacobian_order_gcd": 64,
+    "no_curve302_Q_isogeny_factor": true,
+    "rational_torsion": "(Z/2)^6",
+    "rational_two_torsion_order_from_eight_rational_branch_points": 64,
+    "records": [
+      {
+        "coprime_to_curve302_frobenius": true,
+        "curve302_frobenius_low_to_high": [
+          "47",
+          "8",
+          "1"
+        ],
+        "extension_point_counts_n1_n2_n3": [
+          40,
+          2332,
+          104248
+        ],
+        "frobenius_low_to_high": [
+          "103823",
+          "-17672",
+          "4371",
+          "-432",
+          "93",
+          "-8",
+          "1"
+        ],
+        "jacobian_order": "90176",
+        "prime": 47
+      },
+      {
+        "coprime_to_curve302_frobenius": true,
+        "curve302_frobenius_low_to_high": [
+          "53",
+          "12",
+          "1"
+        ],
+        "extension_point_counts_n1_n2_n3": [
+          52,
+          2988,
+          148804
+        ],
+        "frobenius_low_to_high": [
+          "148877",
+          "-5618",
+          "4823",
+          "-204",
+          "91",
+          "-2",
+          "1"
+        ],
+        "jacobian_order": "147968",
+        "prime": 53
+      }
+    ]
+  },
+  "nondegenerate_lifts_to302": 0,
+  "nondegenerate_points": 0,
+  "results": [
+    {
+      "finite_points_up_to_hyperelliptic_sign": [
+        {
+          "D4_is_square": true,
+          "H": "12869917696776928930461184535543183908268935439572320/2943480976418553649",
+          "Y": "0",
+          "degenerate": true,
+          "m": "305743490330571708709677681/1715657593",
+          "v_nonnegative": "0",
+          "z": "0"
+        },
+        {
+          "D4_is_square": true,
+          "H": "93364905569287649728396154209792221156766910697280/11223718170086601",
+          "Y": "0",
+          "degenerate": true,
+          "m": "21363469437849191580214757/105942051",
+          "v_nonnegative": "0",
+          "z": "1"
+        }
+      ],
+      "height_inclusive": 512,
+      "pari_and_integer_replay_agree": true,
+      "point_at_infinity": {
+        "degenerate": true,
+        "m": "451516600401260302939731/2288557"
+      },
+      "replay_counts": {
+        "exact_square_tests": 1760,
+        "excluded_mod_103": 141611,
+        "excluded_mod_113": 81134,
+        "excluded_mod_127": 40565,
+        "excluded_mod_137": 23586,
+        "excluded_mod_149": 16913,
+        "excluded_mod_151": 8366,
+        "excluded_mod_157": 3946,
+        "excluded_mod_163": 1526,
+        "reduced_pairs": 319407
+      },
+      "root_triple_infinity_zero_one": [
+        1,
+        2,
+        3
+      ],
+      "sieve_primes": [
+        103,
+        113,
+        127,
+        137,
+        149,
+        151,
+        157,
+        163
+      ]
+    },
+    {
+      "finite_points_up_to_hyperelliptic_sign": [
+        {
+          "D4_is_square": true,
+          "H": "3657377257197602987908335185155551168743060118096452582720/3865569997300466868134929",
+          "Y": "0",
+          "degenerate": true,
+          "m": "368423323019985971097526952591/1966105286423",
+          "v_nonnegative": "0",
+          "z": "0"
+        },
+        {
+          "D4_is_square": true,
+          "H": "31082609637019299941026632220402221618750081552/5237493142249",
+          "Y": "0",
+          "degenerate": true,
+          "m": "451516600401260302939731/2288557",
+          "v_nonnegative": "0",
+          "z": "1"
+        }
+      ],
+      "height_inclusive": 512,
+      "pari_and_integer_replay_agree": true,
+      "point_at_infinity": {
+        "degenerate": true,
+        "m": "21363469437849191580214757/105942051"
+      },
+      "replay_counts": {
+        "exact_square_tests": 1762,
+        "excluded_mod_103": 141610,
+        "excluded_mod_113": 81150,
+        "excluded_mod_127": 40702,
+        "excluded_mod_137": 23618,
+        "excluded_mod_149": 16811,
+        "excluded_mod_151": 8332,
+        "excluded_mod_157": 3928,
+        "excluded_mod_163": 1494,
+        "reduced_pairs": 319407
+      },
+      "root_triple_infinity_zero_one": [
+        3,
+        4,
+        1
+      ],
+      "sieve_primes": [
+        103,
+        113,
+        127,
+        137,
+        149,
+        151,
+        157,
+        163
+      ]
+    }
+  ],
+  "schema": "curve302.branch-carrier-probe.v1",
+  "status": "COMPLETE_TWO_CHART_PROBE_AND_JACOBIAN_TORSION_CERTIFICATE"
+}

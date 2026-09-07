@@ -1,0 +1,517 @@
+{
+  "schema": "elliptic-curves.mestre-chord-pencil-geometry.v1",
+  "status": "PASS",
+  "rows": [
+    {
+      "source": "artifacts/generated-results/elliptic-curves/mestre_u11_visible_two_neighbor_v1.json",
+      "source_sha256": "873b84b31e3fb0cabd34b2c17a1e8eb4dd50d4125d41e44f3155d7f35fa1c2fa",
+      "id": "baseline",
+      "reducible_fibres": [
+        {
+          "base": "231683141448/781529983",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "570842124594425137793031239960107200000000/99830740762180596089389530049"
+        },
+        {
+          "base": "31143397296/116572391",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "23480303749965363553699864484986896384000000/6439897249197450170572849511089"
+        },
+        {
+          "base": "276561072/55128671",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "2004324357437699750083727484276178944/2471677526896288369178689"
+        },
+        {
+          "base": "-1364421168/385900697",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "-474472606420637845783632312385536000000/5934497742077988374398032289"
+        },
+        {
+          "base": "-3260770763184/800987161",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "2379583323540509654939416554247671398400000000/110149856679296234778590029729"
+        },
+        {
+          "base": "-647037072/3242863",
+          "type": "I4",
+          "split": true,
+          "geometric_component_rank": 3,
+          "rational_component_rank": 3,
+          "tangent_squareclass_representative": "172003489697313996192497664000000/29593485792750187009"
+        },
+        {
+          "base": "infinity",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1
+        }
+      ],
+      "geometric_generic_MW_rank": 8,
+      "rational_generic_MW_rank": 7,
+      "rational_point_search_admission": false
+    },
+    {
+      "source": "artifacts/local/elliptic-curves/mestre-chord-pencils-v1/pencil0.json",
+      "source_sha256": "c82fa3ca45854d4a03661525a9e751a4f6d7fcfda407c855fde72f51a17454d4",
+      "id": "pencil0",
+      "reducible_fibres": [
+        {
+          "base": "365310000/1131013",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "1002269832685145702552377826025068298240000/99830740762180596089389530049"
+        },
+        {
+          "base": "-2801489328/1722331",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "518386864164312223173199012791616605480026112/41296859683261098894362843653"
+        },
+        {
+          "base": "-974160/4693",
+          "type": "I4",
+          "split": true,
+          "geometric_component_rank": 3,
+          "rational_component_rank": 3,
+          "tangent_squareclass_representative": "45187384938104485167759360000/29593485792750187009"
+        },
+        {
+          "base": "infinity",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1
+        }
+      ],
+      "geometric_generic_MW_rank": 11,
+      "rational_generic_MW_rank": 10,
+      "rational_point_search_admission": false
+    },
+    {
+      "source": "artifacts/local/elliptic-curves/mestre-chord-pencils-v1/pencil1.json",
+      "source_sha256": "c238abc9d1fcd865e31be4e1322b9884fcf48b21190150f5d69866d25f214050",
+      "id": "pencil1",
+      "reducible_fibres": [
+        {
+          "base": "-6099215760/29486119",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "461215709193854642928597291000547828417167360000/46117351950532889071231338791850289"
+        },
+        {
+          "base": "-1233584/4693",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "639081273701964456658928324837376/29593485792750187009"
+        },
+        {
+          "base": "974160/4693",
+          "type": "I4",
+          "split": true,
+          "geometric_component_rank": 3,
+          "rational_component_rank": 3,
+          "tangent_squareclass_representative": "141707639165895665486093352960000/29593485792750187009"
+        },
+        {
+          "base": "infinity",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1
+        }
+      ],
+      "geometric_generic_MW_rank": 11,
+      "rational_generic_MW_rank": 10,
+      "rational_point_search_admission": false
+    },
+    {
+      "source": "artifacts/local/elliptic-curves/mestre-chord-pencils-v1/pencil2.json",
+      "source_sha256": "40aaec58f0f7627cd37f969760822fc3650a4dc508555fe3bcb2fac074c96f6a",
+      "id": "pencil2",
+      "reducible_fibres": [
+        {
+          "base": "100306800/473993",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "32615969625116821814991546545602560000/3079509998581387352981530609"
+        },
+        {
+          "base": "990396/4693",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "-111370918363077988771543183104/29593485792750187009"
+        },
+        {
+          "base": "131511600/624169",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "54906437735635692817693703114588160000/9259823041454790088000933489"
+        },
+        {
+          "base": "811800/4693",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "58926228814458693844738560000/29593485792750187009"
+        },
+        {
+          "base": "-974160/4693",
+          "type": "I4",
+          "split": true,
+          "geometric_component_rank": 3,
+          "rational_component_rank": 3,
+          "tangent_squareclass_representative": "17146624339073375523817295708160000/29593485792750187009"
+        },
+        {
+          "base": "infinity",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1
+        }
+      ],
+      "geometric_generic_MW_rank": 9,
+      "rational_generic_MW_rank": 8,
+      "rational_point_search_admission": false
+    },
+    {
+      "source": "artifacts/local/elliptic-curves/mestre-chord-pencils-v1/pencil3.json",
+      "source_sha256": "d0bd31784168ae64853ed8ce6772ed67f59d4a2c4b657da560a9be9f73b96d86",
+      "id": "pencil3",
+      "reducible_fibres": [
+        {
+          "base": "34485264/61009",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "647016064292498494621162319195710685184/845219547726738091164049"
+        },
+        {
+          "base": "119821680/558467",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "549102565729084087173532378596802560000/5934497742077988374398032289"
+        },
+        {
+          "base": "131511600/624169",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "516814602174777892250686142842306560000/9259823041454790088000933489"
+        },
+        {
+          "base": "811800/4693",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "-3300135184470269236743843840000/29593485792750187009"
+        },
+        {
+          "base": "-974160/4693",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "23307106295099700111872444497920000/29593485792750187009"
+        },
+        {
+          "base": "974160/4693",
+          "type": "I3",
+          "split": true,
+          "geometric_component_rank": 2,
+          "rational_component_rank": 2,
+          "tangent_squareclass_representative": "1216760778295881154679439360000/29593485792750187009"
+        },
+        {
+          "base": "infinity",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1
+        }
+      ],
+      "geometric_generic_MW_rank": 9,
+      "rational_generic_MW_rank": 8,
+      "rational_point_search_admission": false
+    },
+    {
+      "source": "artifacts/local/elliptic-curves/mestre-chord-pencils-v1/pencil4.json",
+      "source_sha256": "88ee84ec50e63a11d9b5adf500a266f4d97988cc6dd16a3abacb61f848b8572a",
+      "id": "pencil4",
+      "reducible_fibres": [
+        {
+          "base": "34485264/61009",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "600107089879856964972953036732896641024/845219547726738091164049"
+        },
+        {
+          "base": "131511600/624169",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "750217452307029911735776468914831360000/9259823041454790088000933489"
+        },
+        {
+          "base": "974160/4693",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "40899057379283841695907840000/2276421984057706693"
+        },
+        {
+          "base": "811800/4693",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "5021971561982770490416527360000/29593485792750187009"
+        },
+        {
+          "base": "534813840/3205319",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "1268352715830208008505805724060983132160000/6439897249197450170572849511089"
+        },
+        {
+          "base": "-974160/4693",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "1625017083669123479020570705920000/2276421984057706693"
+        },
+        {
+          "base": "infinity",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1
+        }
+      ],
+      "geometric_generic_MW_rank": 10,
+      "rational_generic_MW_rank": 9,
+      "rational_point_search_admission": false
+    },
+    {
+      "source": "artifacts/local/elliptic-curves/mestre-chord-pencils-v1/pencil5.json",
+      "source_sha256": "18b95239d0a55f6543d6a5f4f26c0e3488393e7d032733cbac9fc07d276a81de",
+      "id": "pencil5",
+      "reducible_fibres": [
+        {
+          "base": "87120/4693",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "-99073339796715821605666160640000/29593485792750187009"
+        },
+        {
+          "base": "-799920/4693",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "257181281888541384904928133120000/29593485792750187009"
+        },
+        {
+          "base": "-100306800/473993",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "22276311766900735639792040273101455360000/3079509998581387352981530609"
+        },
+        {
+          "base": "-1148400/4693",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "4105897526213442151687512483840000/1450080803844759163441"
+        },
+        {
+          "base": "974160/4693",
+          "type": "I3",
+          "split": true,
+          "geometric_component_rank": 2,
+          "rational_component_rank": 2,
+          "tangent_squareclass_representative": "13010526061893260452823040000/175109383389054361"
+        },
+        {
+          "base": "infinity",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1
+        }
+      ],
+      "geometric_generic_MW_rank": 10,
+      "rational_generic_MW_rank": 9,
+      "rational_point_search_admission": false
+    },
+    {
+      "source": "artifacts/local/elliptic-curves/mestre-chord-pencils-v1/pencil6.json",
+      "source_sha256": "1bc2a35b85bcad5b6533d8d09ad50c4664feba5480fe108ade17914f63688b62",
+      "id": "pencil6",
+      "reducible_fibres": [
+        {
+          "base": "8767440/61009",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "1660810426826744712001049754992640000/845219547726738091164049"
+        },
+        {
+          "base": "-1148400/4693",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "302581181701715055321940623360000/29593485792750187009"
+        },
+        {
+          "base": "-108240/361",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "597013007701854901006408458240000/29593485792750187009"
+        },
+        {
+          "base": "974160/4693",
+          "type": "I3",
+          "split": true,
+          "geometric_component_rank": 2,
+          "rational_component_rank": 2,
+          "tangent_squareclass_representative": "258310977061056826565064130560000/29593485792750187009"
+        },
+        {
+          "base": "infinity",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1
+        }
+      ],
+      "geometric_generic_MW_rank": 11,
+      "rational_generic_MW_rank": 10,
+      "rational_point_search_admission": false
+    },
+    {
+      "source": "artifacts/local/elliptic-curves/mestre-chord-pencils-v1/pencil7.json",
+      "source_sha256": "9853c6e67729681c84f49c5c66d1d0f99bac5260210811af4ad93d4d291c100e",
+      "id": "pencil7",
+      "reducible_fibres": [
+        {
+          "base": "108240/361",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "1882169923816821259604459520000/2276421984057706693"
+        },
+        {
+          "base": "13443408/61009",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "122940083633805837625872209591402496/845219547726738091164049"
+        },
+        {
+          "base": "119821680/558467",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "1116490707869720351678303495389839360000/5934497742077988374398032289"
+        },
+        {
+          "base": "974160/4693",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "8688260298913719106228715520000/29593485792750187009"
+        },
+        {
+          "base": "-336085200/483379",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1,
+          "tangent_squareclass_representative": "14636901814808074860243665876015280291840000/3330772897835016960777704929"
+        },
+        {
+          "base": "-974160/4693",
+          "type": "I3",
+          "split": true,
+          "geometric_component_rank": 2,
+          "rational_component_rank": 2,
+          "tangent_squareclass_representative": "9021814069718973338632149442560000/29593485792750187009"
+        },
+        {
+          "base": "infinity",
+          "type": "I2",
+          "split": false,
+          "geometric_component_rank": 1,
+          "rational_component_rank": 1
+        }
+      ],
+      "geometric_generic_MW_rank": 9,
+      "rational_generic_MW_rank": 8,
+      "rational_point_search_admission": false
+    }
+  ],
+  "sources": {
+    "elliptic-curves/cas/audit_mestre_chord_pencil_geometry.sage": "1ef69b949becefc3cfc997c3cf135301473c062b981adf4d34dd78760d3b13e6",
+    "artifacts/generated-results/elliptic-curves/mestre_rational_ns_gram_v2.json": "61ee2361fd3c7df7f6e471e0f9be60e87f2ac050b08ba93b0e8df7de143066cc",
+    "artifacts/generated-results/elliptic-curves/mestre_468_portable_replay_v2.json": "13d94464a38cb1db1f045aa61f7cdbcc81dca0edca4b86c6f80c8c9f75142986"
+  },
+  "scope": "Exact birational chord inverse, rational quartic sections, Jacobian invariants and complete minimal semistable fibre decomposition. Picard ranks18/19 transport through the birational K3 identification and the rational quartic section; Shioda-Tate yields exact rational and geometric generic ranks. Nine presentations, not claimed pairwise inequivalent. No rational point search or high-rank addition."
+}

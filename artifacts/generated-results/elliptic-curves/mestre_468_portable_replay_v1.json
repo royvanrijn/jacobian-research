@@ -1,0 +1,55 @@
+{
+  "schema": "elliptic-curves.mestre-468-portable-replay.v1",
+  "status": "PASS",
+  "parents": [
+    11,
+    13,
+    17,
+    19,
+    23,
+    29
+  ],
+  "portable_files": {
+    "elliptic-curves/cas/verify_mestre_468_bundle.sage": {
+      "sha256": "c65e8087d98aae7cddfe66255f0141285109306c4d676d85a5559a56cb6ba988",
+      "bytes": 10537
+    },
+    "artifacts/generated-results/elliptic-curves/mestre_468_replay_bundle_v1.json": {
+      "sha256": "c7d479dd4a10da5953b04d70b1077337e8a33bb8e53e07033a98397642f6adcc",
+      "bytes": 1674081
+    }
+  },
+  "command": "sage -python verify_mestre_468_bundle.sage --input mestre_468_replay_bundle_v1.json",
+  "supervisor": {
+    "command": [
+      "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+      "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/mestre-468-standalone-v1/verify_mestre_468_bundle.sage"
+    ],
+    "failure_reason": null,
+    "limits": {
+      "address_space_bytes": null,
+      "cgroup": null,
+      "pari_stack_bytes": 256000000,
+      "poll_seconds": 0.05,
+      "rss_bytes": 2147483648,
+      "terminate_grace_seconds": 1.0,
+      "wall_seconds": 180
+    },
+    "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/mestre-468-standalone-v1/replay.log",
+    "log_sha256": "4aff4e06f963082cfffd7e0e5d419bd04f228fa12389d13f95e99514735eea7a",
+    "outcome": "completed",
+    "peak_observed_rss_bytes": 275603456,
+    "pid": 4015993,
+    "returncode": 0,
+    "rss_limit_bytes": 2147483648,
+    "start_token": "57654185",
+    "termination_signal": null,
+    "timeout_seconds": 180,
+    "wall_seconds": 31.08919219300151,
+    "worker_result": null,
+    "worker_result_sha256": null
+  },
+  "transcript": "PASS u11 714-height-chain / counts / rank / saturation / discriminant witnesses\nPASS u13 714-height-chain / counts / rank / saturation / discriminant witnesses\nPASS u17 714-height-chain / counts / rank / saturation / discriminant witnesses\nPASS u19 714-height-chain / counts / rank / saturation / discriminant witnesses\nPASS u23 714-height-chain / counts / rank / saturation / discriminant witnesses\nPASS u29 714-height-chain / counts / rank / saturation / discriminant witnesses\nPASS6 INDEPENDENT DET468 PARENT REPLAYS\n",
+  "checks": "714 heights total, exact generic relations and base involutions, finite saturation witnesses, every saved finite fibre count, Picard bounds and determinant arithmetic",
+  "scope": "Completed independent arithmetic replay using the mathematical implications in MESTRE_DETERMINANT468_PARENTS_2026-09-07.md. No formal proof-assistant verification or new point search."
+}

@@ -1,0 +1,42 @@
+{
+  "boundary": "Replays every claimed finite/rational result from the frozen integer words; shares chart and detector implementation. No numerical height enumeration is needed or certified.",
+  "candidates": [
+    {
+      "candidate_id": 32,
+      "modular_checked": 2002,
+      "rational_checked": 0,
+      "unresolved": 0
+    },
+    {
+      "candidate_id": 58,
+      "modular_checked": 6216,
+      "rational_checked": 0,
+      "unresolved": 0
+    },
+    {
+      "candidate_id": 59,
+      "modular_checked": 18818,
+      "rational_checked": 5,
+      "unresolved": 0
+    },
+    {
+      "candidate_id": 60,
+      "modular_checked": 49019,
+      "rational_checked": 11,
+      "unresolved": 0
+    },
+    {
+      "candidate_id": 86,
+      "modular_checked": 31039,
+      "rational_checked": 4,
+      "unresolved": 0
+    }
+  ],
+  "input_sha256": {
+    "artifacts/generated-results/elliptic-curves/curve302_mw14_16_packet_protocol_v1.json": "10edd26e6bd35fbede9de5fb47a03e799e2dbfac0ae43525f009bd036749ceba",
+    "artifacts/generated-results/elliptic-curves/curve302_mw14_16_packets_v1.json": "540137eb2e6235596e91b7b153c9309d85e3901d51172ce138300fd58fa3607a",
+    "elliptic-curves/cas/search_curve302_lower_rank_packets.sage": "84323337fcb58ac44080a766a3cb957801e8ad550143a2ebdd41eaca33ba991c"
+  },
+  "schema": "curve302.lower-rank-packets.replay.v1",
+  "status": "PASS_COMPLETE_FROZEN_PACKET_REPLAY"
+}

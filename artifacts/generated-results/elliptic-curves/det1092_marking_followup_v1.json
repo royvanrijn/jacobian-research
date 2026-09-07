@@ -1,0 +1,50 @@
+{
+  "schema": "det1092.marking-followup.v1",
+  "status": "PASS",
+  "stages": [
+    {
+      "directory": "artifacts/local/elliptic-curves/det1092-marking-v1",
+      "source": "elliptic-curves/cas/audit_det1092_marking.sage",
+      "source_sha256": "318a2de23de71f090fa409da2a63b92a847eeab90543f5ac499a0f8297e45570",
+      "artifact": "det1092_marking_v1.json",
+      "artifact_sha256": "2ba393f21efcd1b4a945eed2c6adc4879bb804867a055b9e338705b87bc179ee",
+      "protocol_sha256": "026d71bbc489a07b8fcbbb007f983ec3faaaf7d9e816136add63180e296fda68",
+      "ledger_sha256": "ffa52dca89a7c3c78223de7aa7679bb03dbeef6f271609e5018b15e65c6a68b7",
+      "completed_wall_seconds": 0.7471494160126895
+    },
+    {
+      "directory": "artifacts/local/elliptic-curves/det1092-marking-independent-v1",
+      "source": "elliptic-curves/cas/verify_det1092_marking.sage",
+      "source_sha256": "7bf0cef965ffa6e0a62254c700173a9af7b85decda3650ba3b1cbbb8fbf40f16",
+      "artifact": "det1092_marking_independent_v1.json",
+      "artifact_sha256": "0f4e0e72bb53122ea30924b1916b29e5fc606a1cded0ed5c8ddc8fc39fd04371",
+      "protocol_sha256": "ec7c39db8adb77f3b1cb063cee183c6e2f116164ef206b00c954313bf3220fd5",
+      "ledger_sha256": "e5b50d09acba185c1789dd754fabfb0149ddf83e9dba643ad8cc9f8c952c2192",
+      "completed_wall_seconds": 0.6438618659740314
+    },
+    {
+      "directory": "artifacts/local/elliptic-curves/det1092-cm-locus-v1",
+      "source": "elliptic-curves/cas/certify_det1092_cm_locus.sage",
+      "source_sha256": "f10c6b2e82a9694e6f14f79cc856eb9eb829933b35ea2019a02a4e14ac68a10a",
+      "artifact": "det1092_cm_locus_v1.json",
+      "artifact_sha256": "7612d384a2377bec2eec2b4302b69be139d8e12205d787bce77526a24e87b0b1",
+      "protocol_sha256": "b8f2afd874b5991b7ce73acff20dd2d042380d44d03dae72528385db496f1798",
+      "ledger_sha256": "a97793b3d43baceb048ae1591d85be0d06ecf15d1d47e75cddf6b202c8763615",
+      "completed_wall_seconds": 0.6401694669621065
+    }
+  ],
+  "total_supervised_seconds": 2.0311807489488274,
+  "full_projective_stable_curve": "X(546)/<w546>",
+  "marking_arithmetic_independently_replayed": true,
+  "rational_CM_discriminants": [
+    -67,
+    -163
+  ],
+  "rational_CM_point_count": 16,
+  "CM_completeness_uses_named_external_theorems": true,
+  "CM_coordinates": "UNKNOWN",
+  "individual_non_CM_point": "UNKNOWN",
+  "explicit_K3_equation": "UNKNOWN",
+  "new_searched_fibres": 0,
+  "boundary": "No new parent equation, section basis, record recovery, or near-record curve."
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS_INDEPENDENT_WORD_REDUCTION",
+  "stable_labels": [
+    1,
+    546
+  ],
+  "algebra_discriminant": 546,
+  "order_reduced_discriminant": 546,
+  "verified_prime_normalizers": 4,
+  "verified_discriminant_actions": 16,
+  "boundary": "Period correspondence is external; no individual non-CM point or K3 equation is certified.",
+  "input_sha256": "2ba393f21efcd1b4a945eed2c6adc4879bb804867a055b9e338705b87bc179ee",
+  "checker_sha256": "7bf0cef965ffa6e0a62254c700173a9af7b85decda3650ba3b1cbbb8fbf40f16"
+}

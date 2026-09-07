@@ -1,0 +1,59 @@
+{
+  "schema": "elliptic-curves.mestre-ns-gram-independent.v2",
+  "status": "PASS",
+  "parents": [
+    11,
+    13,
+    17,
+    19,
+    23,
+    29
+  ],
+  "portable_files": {
+    "elliptic-curves/cas/verify_mestre_ns_gram_v2.sage": {
+      "sha256": "35fe9fc875d112e9b3466c8bb97babc052544ed1bdb8096d486d32b0c2b68a08",
+      "bytes": 5990
+    },
+    "artifacts/generated-results/elliptic-curves/mestre_468_replay_bundle_v1.json": {
+      "sha256": "c7d479dd4a10da5953b04d70b1077337e8a33bb8e53e07033a98397642f6adcc",
+      "bytes": 1674081
+    },
+    "artifacts/generated-results/elliptic-curves/mestre_rational_ns_gram_v2.json": {
+      "sha256": "61ee2361fd3c7df7f6e471e0f9be60e87f2ac050b08ba93b0e8df7de143066cc",
+      "bytes": 224944
+    }
+  },
+  "command": "sage -python verify_mestre_ns_gram_v2.sage --bundle mestre_468_replay_bundle_v1.json --certificate mestre_rational_ns_gram_v2.json",
+  "supervisor": {
+    "command": [
+      "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+      "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/mestre-ns-gram-independent-v2/verify_mestre_ns_gram_v2.sage"
+    ],
+    "failure_reason": null,
+    "limits": {
+      "address_space_bytes": null,
+      "cgroup": null,
+      "pari_stack_bytes": 256000000,
+      "poll_seconds": 0.05,
+      "rss_bytes": 2147483648,
+      "terminate_grace_seconds": 1.0,
+      "wall_seconds": 120
+    },
+    "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/mestre-ns-gram-independent-v2/replay.log",
+    "log_sha256": "87a5b6aa03a52241b674663255d6b9e7a866e8b54320f65a9654daf773d8a102",
+    "outcome": "completed",
+    "peak_observed_rss_bytes": 256708608,
+    "pid": 286850,
+    "returncode": 0,
+    "rss_limit_bytes": 2147483648,
+    "start_token": "57792236",
+    "termination_signal": null,
+    "timeout_seconds": 120,
+    "wall_seconds": 7.125597383012064,
+    "worker_result": null,
+    "worker_result_sha256": null
+  },
+  "transcript": "PASS u11 intersections, 66 heights, unique glue and Galois action\nPASS u13 intersections, 66 heights, unique glue and Galois action\nPASS u17 intersections, 66 heights, unique glue and Galois action\nPASS u19 intersections, 66 heights, unique glue and Galois action\nPASS u23 intersections, 66 heights, unique glue and Galois action\nPASS u29 intersections, 66 heights, unique glue and Galois action\nPASS6 COMMON ARITHMETIC AND GEOMETRIC NS MATRICES\n",
+  "checks": "396 independent generic heights, exact section identities and component intersections, full rational NS Gram, all four two-primary classes and unique geometric gluing, integral discriminant groups and nontrivial Galois-image generator",
+  "scope": "Completed independent arithmetic replay using the mathematical implications in MESTRE_FULL_NS_GRAMS_2026-09-07.md. No formal proof-assistant verification or new point search."
+}

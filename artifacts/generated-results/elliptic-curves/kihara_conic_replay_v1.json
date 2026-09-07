@@ -1,0 +1,128 @@
+{
+  "schema": "elliptic-curves.kihara-conic-replay.v1",
+  "status": "PASS",
+  "generic_subgroup_rank": 13,
+  "generic_subgroup_saturated_in_its_rational_span": true,
+  "ambient_generic_rank": "UNKNOWN",
+  "anti_invariant_section_height": "10",
+  "geometric_nontorsion_height_lower_bound": "6",
+  "base_chi": 4,
+  "control_rank_lower_bound": 13,
+  "control_model_bits": 998,
+  "control_catalogue_matches": [],
+  "control_inventory_matches": [],
+  "point_search_boxes": 0,
+  "stages": {
+    "construction": {
+      "command": [
+        "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+        "/home/royvanrijn/src/jacobian-research/elliptic-curves/cas/construct_kihara_split_infinity.sage"
+      ],
+      "failure_reason": null,
+      "limits": {
+        "address_space_bytes": null,
+        "cgroup": null,
+        "pari_stack_bytes": 256000000,
+        "poll_seconds": 0.05,
+        "rss_bytes": 2147483648,
+        "terminate_grace_seconds": 1.0,
+        "wall_seconds": 120
+      },
+      "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/kihara-split-infinity-v1/worker.log",
+      "log_sha256": "3a36827ad7295b4487a07c89cdbb579071877c9a4732eb391518b869fba284b2",
+      "outcome": "completed",
+      "peak_observed_rss_bytes": 333864960,
+      "pid": 1971048,
+      "returncode": 0,
+      "rss_limit_bytes": 2147483648,
+      "start_token": "58267675",
+      "termination_signal": null,
+      "timeout_seconds": 120,
+      "wall_seconds": 113.99733490706421,
+      "worker_result": null,
+      "worker_result_sha256": null
+    },
+    "control": {
+      "command": [
+        "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+        "/home/royvanrijn/src/jacobian-research/elliptic-curves/cas/intake_kihara_conic_control.sage"
+      ],
+      "failure_reason": null,
+      "limits": {
+        "address_space_bytes": null,
+        "cgroup": null,
+        "pari_stack_bytes": 256000000,
+        "poll_seconds": 0.05,
+        "rss_bytes": 2147483648,
+        "terminate_grace_seconds": 1.0,
+        "wall_seconds": 60
+      },
+      "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/kihara-conic-control-v1/worker.log",
+      "log_sha256": "7d72500fa41710cdea04b61a6c9843cbfd0470cda952dd333099aa726e7d35d2",
+      "outcome": "completed",
+      "peak_observed_rss_bytes": 273547264,
+      "pid": 1998300,
+      "returncode": 0,
+      "rss_limit_bytes": 2147483648,
+      "start_token": "58294943",
+      "termination_signal": null,
+      "timeout_seconds": 60,
+      "wall_seconds": 1.3074791280087084,
+      "worker_result": null,
+      "worker_result_sha256": null
+    },
+    "independent": {
+      "command": [
+        "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+        "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/kihara-conic-standalone-v1/verify_kihara_conic.sage",
+        "--input",
+        "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/kihara-conic-standalone-v1/kihara_conic_replay_bundle_v1.json"
+      ],
+      "failure_reason": null,
+      "limits": {
+        "address_space_bytes": null,
+        "cgroup": null,
+        "pari_stack_bytes": 256000000,
+        "poll_seconds": 0.05,
+        "rss_bytes": 2147483648,
+        "terminate_grace_seconds": 1.0,
+        "wall_seconds": 120
+      },
+      "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/kihara-conic-standalone-v1/replay.log",
+      "log_sha256": "05655aa9c8df0c777ddfe9facc8fc8b8388bc660df8072b291658fc379fb9238",
+      "outcome": "completed",
+      "peak_observed_rss_bytes": 241868800,
+      "pid": 2053379,
+      "returncode": 0,
+      "rss_limit_bytes": 2147483648,
+      "start_token": "58306908",
+      "termination_signal": null,
+      "timeout_seconds": 120,
+      "wall_seconds": 0.9008701370330527,
+      "worker_result": null,
+      "worker_result_sha256": null
+    }
+  },
+  "total_supervised_seconds": 116.20568417210598,
+  "transcript": "PASS explicit conic, all infinity images, primitive rank13 subgroup and anti-height10\nPASS balanced v774161 control,998-bit model and independent rational rank13\n",
+  "sources": {
+    "elliptic-curves/cas/record_kihara_conic_replay.py": "bdbaf5b58c5785be58eaae8ca9051f398d921f11d6a2a6a53e53187ee880fe6e",
+    "artifacts/local/elliptic-curves/kihara-split-infinity-v1/protocol.json": "b456b20d665ae204361564c6c8b09ed14f9608b2a2080c2674dc646a5179a0b6",
+    "artifacts/local/elliptic-curves/kihara-split-infinity-v1/supervisor.json": "3a62b2c181ca3de355f9f5b370079bf865cfb1fe63ccc9720e1347202a299ddf",
+    "artifacts/local/elliptic-curves/kihara-split-infinity-v1/worker.log": "3a36827ad7295b4487a07c89cdbb579071877c9a4732eb391518b869fba284b2",
+    "artifacts/local/elliptic-curves/kihara-conic-control-v1/protocol.json": "53cb8dfc48e96a820240141822b175d56c22c2772eb36bfe2b83956cf641c458",
+    "artifacts/local/elliptic-curves/kihara-conic-control-v1/supervisor.json": "1a12f94c7d95d5b4305b74802513515ce3e27bd53f8d38b7756a56e10c5cb9d3",
+    "artifacts/local/elliptic-curves/kihara-conic-control-v1/worker.log": "7d72500fa41710cdea04b61a6c9843cbfd0470cda952dd333099aa726e7d35d2",
+    "artifacts/local/elliptic-curves/kihara-conic-standalone-v1/protocol.json": "fdc123a5b0d7688b20424453506ac47124f808fffaafd3537c59c9ff0220e641",
+    "artifacts/local/elliptic-curves/kihara-conic-standalone-v1/supervisor.json": "9716a81a6b103d59701412dcd2d44534f1b004e861742ad7603d59e82f35af1e",
+    "artifacts/local/elliptic-curves/kihara-conic-standalone-v1/replay.log": "05655aa9c8df0c777ddfe9facc8fc8b8388bc660df8072b291658fc379fb9238",
+    "elliptic-curves/cas/verify_kihara_conic.sage": "f87f0bb3427d1a2e83b0ad42d5f4a2d82ee8fd175a8f1f0fcbc52d658dcbf475",
+    "artifacts/generated-results/elliptic-curves/kihara_conic_replay_bundle_v1.json": "24aca1f531dee98ae42303e36db8b2b34087ab671a1ff21b6b1a6954f061a48e",
+    "artifacts/generated-results/elliptic-curves/kihara_conic_control_v1.json": "6853c8fd85f383c16cc96648b08a3152fe2b17543b27988cb6d0f8e8489f245d",
+    "artifacts/local/elliptic-curves/inventory200-current-catalogue-v1/database.json": "b378d458aab4b0d09f9fc8e2e382baa7a20236715a8099c52b4573f00239126e",
+    "artifacts/local/elliptic-curves/inventory200-current-catalogue-v1/metadata.json": "f5bab99912e021012fa32b1edc7e3c7316cb28fe7bf4ed30398c145290a82885",
+    "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v22.json": "5f64cf83268829549a4095dc04a9e69c73513be711c1745b61dc9d8b1a2167b0",
+    "elliptic-curves/cas/audit_inventory200_current_catalogue.py": "fce602ea92b420a26fc064df4e76ac47624782d7725a469722680ddb33a0b8f5"
+  },
+  "scope": "One explicit rational conic base change over the first new Kihara K3 parent. The13-section subgroup is primitive by the deck action, anti-height10 and universal height lower6; full ambient rank remains unknown. One balanced control has13 independent points. Pinned catalogue/inventory comparisons are post-construction and do not prove literature novelty. No new parent count, near-record curve, searched rank gain, or superiority to the existing rank14 path is claimed. No point search or following population campaign."
+}

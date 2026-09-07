@@ -1,0 +1,14 @@
+{
+  "boundary": "Reconstructs every recorded finite group from its generators and enumerates all quotient labels; shared group-law implementation. Global saturation additionally uses trivial rational torsion from ECR31.",
+  "combined_ranks": {
+    "3": 31,
+    "5": 31,
+    "7": 31
+  },
+  "input_sha256": {
+    "artifacts/generated-results/elliptic-curves/curve302_small_prime_saturation_v1.json": "e2e117b008a2b45ce06d2622a9df2fe07839481ba97e8e817bbf88174d32ee63",
+    "elliptic-curves/cas/certify_curve302_small_prime_saturation.sage": "aaf261a69e6d2f99dca5b1360eb0aaf8829526d1594ec5ddb7c00696ff6a2539"
+  },
+  "schema": "curve302.small-prime-saturation.replay.v1",
+  "status": "PASS_FINITE_QUOTIENT_REPLAY"
+}

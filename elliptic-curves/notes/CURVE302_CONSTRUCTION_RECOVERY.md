@@ -3,7 +3,7 @@
 Curve 302 is the main construction-recovery target. The endpoint is an
 explicit elliptic surface over `Q(t)`, its **full generic MW basis**, and a
 rational parameter with an exact `Q`-isomorphism and section transport to
-`E302`. Generic rank 17 is not a requirement. The additive rank-17 candidate
+`E302`. Generic ranks 14, 15 and 16 are explicitly in scope; rank 17 is not a requirement. The additive rank-17 candidate
 is evidence to test, not a prescribed generic subgroup.
 
 **Current priority: mathematically reconstruct a structured alternative
@@ -20,10 +20,549 @@ The boxed surface/basis/specialization endpoint is now complete for a
 and `t0=1` specialization to `E302` are explicit and certified. The original
 parent remains **UNKNOWN**. This construction works for general nondegenerate
 point configurations. Neither that construction nor the additive core
-establishes the discoverers' method. A parent of generic rank 17–20 would
-be valuable, with the surface type and its possible rank checked first;
+establishes the discoverers' method. A structured parent of generic rank 14–16 would already be valuable.
+Higher ranks remain eligible when permitted by the surface geometry;
 the existing K3 has arithmetic MW rank exactly nine. Every elliptic
 fibration over `Q` on this same K3 has arithmetic MW rank at most nine.
+
+For the six alternative determinant468 Mestre surfaces, a new
+[complete degree-two rank gate](MESTRE_DEGREE_TWO_RANK_GATE_2026-09-07.md)
+proves that every Q-defined Jacobian fibration of intersection two with
+the original fibre has arithmetic MW rank at most13. All32,509 eligible
+parity classes have explicit root witnesses and an independent replay.
+MW14–16 construction on this cohort must therefore use old degree at
+least three. Higher-degree fibrations and their302 specialization remain
+open; this is not a global exclusion of these surfaces as parents.
+
+On the same six surfaces, the
+[degree-three component gate](MESTRE_DEGREE3_COMPONENT_GATE_2026-09-07.md)
+rules out old-section triangles as MW14–16 constructors: an untouched
+component of the split I4 fibre forces rank at most 13. Any degree-three
+fibration has rank at most 15, so an MW16 constructor requires old degree
+at least four. Nontriangle degree-three MW14–15 candidates remain open.
+
+On the determinant948 source, the
+[completed ten-pencil triangle dictionary](../../elkies-k3/CURVE302_SHORTWORD_TRIANGLES_2026-09-07.md)
+supplies ten inequivalent rational fibrations of exact generic MW14, all
+excluded as302 parents at every rational parameter. The first-stage
+three-prime screen left one candidate unresolved. A new exact generic
+plane-cubic conversion computes its QQ Jacobian and j-map and closes its
+inverse at139; the same algebraic method independently verifies all sixteen
+earlier modular j-maps. The dictionary and its zero-section rule are finite;
+other configurations and higher-degree constructions remain open.
+
+The [complete P6 triangle gate](../../elkies-k3/CURVE302_COMPLETE_P6_TRIANGLE_GATE_2026-09-07.md)
+now covers all 880 height-six configurations at that fixed anchor.
+Exact rational enumeration closes the shell: 786 configurations have
+generic MW rank at most 13, while 88 MW14 and the
+[six MW15 pencils](../../elkies-k3/CURVE302_SIX_MW15_TRIANGLES_2026-09-07.md)
+all exclude 302 at rational parameters. The two final MW14 inverse
+polynomials have no projective roots modulo 61. These candidates have
+full abstract MW lattices; coordinate bases are not constructed for the
+excluded pencils. Other anchors, nontriangle fibrations and the broad
+MW14–16 parent objective remain open.
+
+A different [integral-point quadratic test](CURVE302_INTEGRAL_SHELL_LIFT_GATE_2026-09-07.md)
+now exactly recovers a withheld generic Gram matrix on a native R17
+control. Four bounded target point sets have no nonzero constant-height
+form; two others produce 144 positive even forms in finite adaptive
+coefficient boxes. All 144 have height-two words and fail a K3 lifting
+obstruction using the primitive target embeddings and saturation of D
+at two. This does not exclude other forms, mixed-height point sets or
+non-K3 parents. The section-basis and specialization endpoint remains open.
+
+A [mixed-height follow-up](CURVE302_DET1092_RECONSTRUCTION_2026-09-07.md)
+now recovers a unique determinant1092 form by removing one uniquely
+determined norm6 outlier from the401 integral-point words. The other400
+words have norm4. Exact enumeration proves minimum4, and explicit gluing
+verifies a primitive K3-lattice embedding. The local arithmetic type is
+Elkies's L546, with published moduli quotient X(546)/<w546> an elliptic
+curve carrying an exactly certified nontorsion rational point. Recovering
+the marked K3 equation, section basis and302 fibre remains open. This is
+a new construction lead, not a certified parent or provenance claim.
+
+## Larger point sets: completed six-space screen
+
+Authority: `EC-CURVE302-WIDE-PACKETS`. The
+[frozen protocol](../../artifacts/generated-results/elliptic-curves/curve302_wide_packet_protocol_v1.json)
+uses the same numerical height 190 and four-million-ray storage cap per
+space. It retains the first **up to 24** points in each parity class with
+at least **twelve**, on candidates 32,58,59,60,86 and the original rank-17
+core. No new generic-rank requirement is imposed.
+
+Preparation passes exact rational recognition and section transport on
+12-, 13- and 24-point controls. It then checks that the first thirteen
+entries reproduce **every one of the 237,820 old packets exactly**. All
+six integer arrays are frozen before the target test. The additional
+25,614 classes with exactly twelve points were previously omitted.
+
+The declared search uses primes `10007,10009,10037`, at most 64 rational
+packets per space, one worker and a 900-second invocation limit. Modular
+checkpoints preserve completed exclusions if an invocation is interrupted.
+No timeout or chart failure counts as an exclusion.
+
+| Space | Candidate rank | Packets | Newly included twelve-point classes | Exclusions at the three primes |
+|---|---:|---:|---:|---|
+| 32 | 14 | 3,446 | 1,444 | 3,444 / 2 / 0 |
+| 58 | 14 | 8,959 | 2,743 | 8,932 / 26 / 1 |
+| 59 | 15 | 23,625 | 4,802 | 23,573 / 51 / 1 |
+| 60 | 16 | 55,559 | 6,529 | 55,448 / 105 / 6 |
+| 86 | 16 | 40,916 | 9,873 | 40,491 / 403 / 22 |
+| Original core | 17 | 130,929 | 223 | 129,657 / 1,224 / 48 |
+
+The [result](../../artifacts/generated-results/elliptic-curves/curve302_wide_packets_v1.json)
+is **263,434 packet exclusions, zero surviving patterns and zero unresolved
+packets**. Three core packets gave a positive finite-field pattern at 10007;
+all were excluded at 10009. Every other survivor was a modular chart issue.
+No packet required rational reconstruction after the third prime.
+
+The [replay](../../artifacts/generated-results/elliptic-curves/curve302_wide_packets_replay_v1.json)
+checks every modular exclusion from the frozen integer words, together with
+primitive embeddings, packet parities, lengths and hashes. It shares the
+chart and detector code, and does not rerun numerical height selection.
+Counts are per space; signed point sets have not been deduplicated across
+spaces. The input is a numerically selected finite set, not an
+interval-certified complete canonical-height ball.
+
+These results supersede the thirteen-point-only restriction **for these
+six frozen inputs**. They do not exclude higher points, additional points
+beyond the 24-entry cap, other candidate spaces, other construction patterns,
+or all parents. The rational generic basis and specialization endpoint for
+an alternative parent remain unknown. Do not enlarge the same height bound
+by default merely because this finite search is negative.
+
+```
+# Preparation writes fresh frozen inputs; retain the existing ones.
+# sage -python elliptic-curves/cas/search_curve302_wide_packets.sage prepare
+sage -python elliptic-curves/cas/search_curve302_wide_packets.sage search
+sage -python elliptic-curves/cas/search_curve302_wide_packets.sage replay
+```
+
+Logs and restart checkpoints are in
+`artifacts/local/elliptic-curves/curve302-wide-packets/`; the preparation log
+is `artifacts/local/elliptic-curves/curve302-wide-prepare.log`.
+
+## The parity domain has no missing rational halves
+
+Authority: `EC-CURVE302-PARITY-DOMAIN`. Let `D` be the subgroup generated by
+the 31 displayed points. The existing `ECR31` certificate gives an injective
+map `D/2D -> product_p E(Fp)/2E(Fp)` and proves trivial rational torsion.
+The new [certificate](../../artifacts/generated-results/elliptic-curves/curve302_displayed_group_parity_domain_v1.json)
+extracts an explicit binary left inverse to its 32-by-31 matrix, and checks
+the second quadratic-character matrix as well.
+
+If `2R` belongs to `D`, its reduction is zero in each quotient. Injectivity
+forces all its displayed coefficients to be even, so `2R=2S` for some
+`S` in `D`. Trivial rational 2-torsion gives `R=S`. Therefore
+
+\[
+D\cap 2E(\mathbb Q)=2D.
+\]
+
+The statement iterates to every power of two. If `B` is a primitive
+integral sublattice of `D`, then `B` is also saturated at two in `E(Q)`.
+Consequently a putative quartic presentation `Qi=2Ri-C` with `Qi` in `B`
+forces `Qi-Q0` into `2B`. Partitioning the displayed candidate by its
+integral parity classes does not miss such rational halves outside `D`.
+
+This is not odd saturation or an exact rank upper bound. It is compatible
+with the completed MW9 specialization's index-three defect. The finite
+elliptic-group arithmetic is inherited from `ECR31`; the new checker
+replays the binary inverses and derives their consequence.
+
+```
+python3 elliptic-curves/cas/certify_curve302_parity_domain.py --check
+```
+
+## Small odd-prime saturation also closes
+
+Authority: `EC-CURVE302-SMALL-PRIME-SATURATION`. A fresh finite-quotient
+calculation proves saturation of the displayed group `D` at **3, 5 and 7**.
+The declared budget was good primes at most 3000, 120 seconds and one worker,
+stopping as soon as each quotient matrix had column rank 31.
+
+| Saturation prime ell | Used reduction primes | Matrix rows | Largest used prime | Rank |
+|---|---:|---:|---:|---:|
+| 3 | 31 | 31 | 521 | 31 |
+| 5 | 30 | 31 | 883 | 31 |
+| 7 | 31 | 31 | 1091 | 31 |
+
+For each used prime, the certificate pins generators of the complete finite
+elliptic group. Exhaustively enumerating their combinations gives the
+coordinates of all displayed points. Reduce each cyclic coordinate modulo
+`ell` when its cyclic order is divisible by `ell`, then stack these quotient
+rows. Their full rank makes `D/ell D` inject into the finite quotients.
+Together with trivial rational torsion, the same argument used for two gives
+`D intersection ell E(Q)=ell D`, and iterates to every power of each prime.
+
+The [certificate](../../artifacts/generated-results/elliptic-curves/curve302_small_prime_saturation_v1.json)
+and [replay](../../artifacts/generated-results/elliptic-curves/curve302_small_prime_saturation_replay_v1.json)
+reconstruct every used finite group and quotient label. This is an exact
+subgroup statement, not evidence that the whole Mordell–Weil group has rank
+31. Saturation at primes at least eleven remains unproved here. In
+particular, the old MW9 specialization's index-three defect is a defect
+inside the displayed group, not evidence that `D` itself is missing a third.
+
+```
+sage -python elliptic-curves/cas/certify_curve302_small_prime_saturation.sage --replay
+```
+
+## A rational isogeny cannot bypass the inverse tests
+
+Authority: `EC-CURVE302-ISOGENY-CLASS`. The rational isogeny class of 302
+contains exactly one Q-isomorphism class.
+
+Direct enumeration on the public integral model gives:
+
+| Good prime p | #E(Fp) | Trace a_p | a_p²−4p |
+|---|---:|---:|---:|
+| 17 | 26 | −8 | −4 |
+| 31 | 43 | −11 | −3 |
+| 47 | 56 | −8 | −124 |
+
+A rational cyclic isogeny of prime degree `ell` would give a Galois-stable
+line in `E[ell]`. At every good `p != ell`, its Frobenius polynomial
+`X²-a_p X+p` would have a root in `F_ell`. By
+[Mazur, Theorem 1](https://www.math.columbia.edu/~goldfeld/Mazur-Goldfeld1978.pdf),
+the only possible prime degrees are
+`2,3,5,7,11,13,17,19,37,43,67,163`. Each is excluded by one of the three
+polynomials above: the
+[certificate](../../artifacts/generated-results/elliptic-curves/curve302_rational_isogeny_class_v1.json)
+records all polynomial values, none zero, for each chosen witness.
+
+To see that this isolates the full isogeny class, take an isogeny of minimum
+degree to any hypothetical nonisomorphic rational curve. Its kernel must
+be cyclic: otherwise it contains `E[n]` for some `n>1`, and factoring through
+`[n]` gives a smaller rational isogeny to the same target. A nontrivial
+cyclic kernel has a rational prime-order subgroup, already excluded.
+
+This rules out the previously untested **rational isogeny** escape from
+j-inverse exclusions. It does not exclude isogenies over larger fields or
+multiplication endomorphisms, and does not recover a parent.
+
+```
+python3 elliptic-curves/cas/certify_curve302_isogeny_class.py --check
+```
+
+## Smaller signature spaces: completed screen
+
+A Mestre square-completion quartic has an identity `G(x)^2-F(x)=P(x)`
+with `deg G=6`, `deg F<=4` and twelve distinct roots of `P`. On the smooth
+genus-one curve `y²=F(x)`, let `P_i=(r_i,G(r_i))` be the twelve visible
+points, and let `D_infinity` be the degree-two pole divisor of `x`. Then
+
+\[
+\operatorname{div}(y-G)=\sum_{i=1}^{12}P_i-6D_\infty.
+\]
+
+Choose a rational origin, put `R_i=[P_i-O]` and
+`C=[D_infinity-2O]`. The covariant images `Q_i=2R_i-C` therefore satisfy
+
+\[
+\sum_{i=1}^{12}Q_i=0.
+\]
+
+Thus their span has rank **at most eleven**, even when extra generic
+sections raise the parent rank to fourteen or more. Passing to unsigned
+point representatives changes this to a signed relation. This motivates
+recognition in smaller candidate spaces without lowering the desired
+parent's generic rank.
+
+The exact [intake](../../artifacts/generated-results/elliptic-curves/curve302_visible_subspace_intake_v1.json),
+authority `EC-CURVE302-VISIBLE-SUBSPACE-INTAKE`, compares all thirteen
+retained rank-11–13 finalists with the six tested spaces. Nine are contained
+in a tested space, with explicit integral inclusion matrices. Four are
+outside every tested space: rank-eleven candidates **130 and 104**,
+rank-twelve candidate **105**, and rank-thirteen candidate **106**.
+
+Candidates 104 and 105 lie inside 106. Hence there are **two new maximal
+signature spaces: 130 of rank eleven, and 106 of rank thirteen**.
+The subsequent frozen screen is now completed, with authority
+`EC-CURVE302-SIGNATURE-PACKETS`.
+
+The [protocol](../../artifacts/generated-results/elliptic-curves/curve302_signature_packet_protocol_v1.json)
+keeps numerical height 190, the four-million-ray cap, and up to 24 rays in
+each class containing at least twelve. It passes the existing rational
+12-, 13- and 24-point controls before freezing either target input.
+Candidate 106 supplies 86,282 rays and 2,634 packets; candidate 130 supplies
+18,047 rays and 137 packets. Their largest packets have sizes 20 and 15,
+respectively, so the 24-entry cap does not bind in these inputs.
+
+The [result](../../artifacts/generated-results/elliptic-curves/curve302_signature_packets_v1.json)
+excludes all **2,771** frozen packets: 2,632 from candidate 106 at 10007 and
+two at 10009; all 137 from candidate 130 at 10007. There are zero unresolved
+packets and no rational reconstruction was needed. The
+[replay](../../artifacts/generated-results/elliptic-curves/curve302_signature_packets_replay_v1.json)
+rechecks every modular exclusion and frozen input hash. It shares the
+existing detector and does not certify complete numerical height selection.
+
+The frozen search artifact inherits a legacy boundary string saying
+"six specified spaces" from the reused engine. Its actual two-space domain
+is fixed by the protocol, the wrapper's finalizer and the replay records:
+only 106 and 130. This wording does not enlarge its mathematical scope.
+Containment alone does not imply coverage by a truncated point packet; these
+results exclude neither whole candidate spaces nor other construction
+patterns or generic ranks.
+
+```
+sage -python elliptic-curves/cas/intake_curve302_visible_subspaces.sage --check
+sage -python elliptic-curves/cas/search_curve302_visible_signature_packets.sage replay
+```
+
+## Rational common-cover gate
+
+The [shared-branch proof](../../elkies-k3/CURVE302_SHARED_BRANCH_GATE.md)
+goes beyond comparing identical quadratic covers. All 6,417 stored branch
+quadratics are irreducible, and distinct within each source pencil. Thus all
+660,951 within-pencil pairs have genus-one fibre products, excluding common
+rational covers of any degree for these fixed pairs.
+
+For one pencil and basepoint, an exact resultant identity now describes all
+pointed lines with rational branch points by a genus-three curve. Requiring
+a rational residual point on 302 yields a genus-nine double cover of 302;
+its Jacobian has rank at least 31. Ordinary Chabauty on that full Jacobian
+cannot satisfy its rank-below-genus condition. The genus-three necessary gate
+now has certified torsion `(Z/2)^6` and a Jacobian simple over `Q`.
+A complete two-chart height-512 probe finds only degenerate points, with
+integer enumeration replay. A natural divisor now proves Jacobian rank at
+least one, closing the proposed rank-zero route. Its rational half gives
+an index-two enlargement that is proved two-saturated. A 131,136-word sieve
+on that explicit rank-one subgroup finds only Weierstrass classes. The full
+rank and global rational points remain unknown. These are construction
+constraints, not a recovered parent. Authorities:
+`EC-K3-CURVE302-SHARED-BRANCH-GATE` and
+`EC-K3-CURVE302-RATIONAL-BRANCH-CARRIER`, followed by
+`EC-K3-CURVE302-BRANCH-CARRIER-ARITHMETIC` and
+`EC-K3-CURVE302-BRANCH-JACOBIAN-ENLARGEMENT`.
+
+## Six additional Mestre parents: existing fibrations excluded
+
+The newly certified [six determinant-468 parents](MESTRE_DETERMINANT468_PARENTS_2026-09-07.md)
+have full arithmetic MW11 bases and rational Picard rank 18. Their lattice
+type differs from X948, and other fibrations could have arithmetic rank up
+to 16. The existence of a useful MW14–16 fibration on them is not established.
+
+Authority `EC-CURVE302-SIX-MESTRE-PARENT-INVERSE` tests their **displayed
+MW11 equations**, using the frozen self-contained replay bundle. For each
+outer parameter, the saved `T=1` fibre is an exact Q-isomorphism control and
+both `T=1,-1` survive the inverse test. The reduced j-map has degree 24.
+The primitive integral homogeneous polynomial for `j(T)=j(E302)` has no
+projective root at the following prime:
+
+| Outer u | Excluding prime |
+|---:|---:|
+| 11 | 47 |
+| 13 | 47 |
+| 17 | 53 |
+| 19 | 31 |
+| 23 | 53 |
+| 29 | 43 |
+
+The [certificate](../../artifacts/generated-results/elliptic-curves/curve302_six_mestre_parent_inverse_v1.json)
+therefore excludes **every rational T**, including infinity, in these six
+fixed fibrations. There is no height bound on T. This does not exclude other
+fibrations on the six surfaces, other outer parameters, the determinant-468
+lattice type or all parents of 302. In particular the new rational NS matrices
+remain potential inputs for a separate construction of MW14–16 fibrations.
+
+```
+sage -python elliptic-curves/cas/exclude_curve302_six_mestre_parents.sage --check
+```
+
+## Rank 14–16 intake and inverse tests, 2026-09-07
+
+The requested generic-rank range is widened explicitly to include 14, 15
+and 16. A candidate subgroup's rank does not establish a parent's generic
+rank. Exact equation recovery, section transport, independence and generic
+saturation remain the acceptance gates.
+
+The [intake and Kihara certificate](../../artifacts/generated-results/elliptic-curves/curve302_inverse_kihara_and_rank14_16_intake_v1.json)
+audits all eleven retained rank-14–16 finalists. Six lie inside the previously
+tested rank-17 core. Five extend outside it: rank-14 candidates 32 and 58,
+rank-15 candidate 59, and rank-16 candidates 60 and 86. Their intersections
+with the core have ranks 12,13,14,15,14 respectively. The recorded integer
+matrices are primitive. These are additional candidate spaces, not recovered
+generic groups. Even containment in the old core does not imply that the
+old thirteen-point-per-class selection tested every useful point packet.
+
+The published Kihara arithmetic rank-at-least-14 family is reconstructed
+symbolically from its six paired roots. Five rational substitutions agree
+with the separate rational implementation. Its known rank-14 control and
+independence manifest replay; exact inverse reconstruction returns precisely
+`t=±2`, with rational Weierstrass isomorphisms to the control. The cancelled
+j-map has degree 432. For 302, its primitive homogeneous comparison has no
+projective root modulo 101. This excludes **every rational parameter of
+this one Kihara family**, including infinity, without a height bound. It
+excludes no other MW14 parent. Authority: `EC-CURVE302-INVERSE-KIHARA`.
+
+The existing certified fixed `3A1/MW14` fibration also fails its complete
+rational inverse test: the degree-24 homogeneous j comparison has no root
+modulo 1009. Its
+[certificate](../../artifacts/generated-results/elkies-k3-curve302-fixed-3a1-mw14-exclusion-v1.json)
+pins the source equation and every residue witness. Authority:
+`EC-K3-CURVE302-FIXED-MW14-INVERSE`.
+
+A different, old-degree-three construction now supplies an explicit rational
+`A2+A1/MW14` pencil on 11952, with zero section and complete abstract MW
+lattice of determinant 158. Two root-enumeration algorithms verify the rank.
+It too has no 302 fibre: exact modular j-maps exclude it at both 1013 and
+1021. The [proof and replay](../../elkies-k3/CURVE302_TRIANGLE_MW14_2026-09-07.md)
+distinguish the rational pencil from uncompiled Weierstrass section
+coordinates. This closes one construction beyond the old degree-two atlas;
+it is not a recovered parent. Authority: `EC-K3-CURVE302-TRIANGLE-MW14`.
+
+The five spaces outside the old core have now completed the packet screen
+below. Their first-thirteen selections contain no recognized family. Further
+recognition must change the point selection or the construction pattern;
+this is not an exclusion of the entire spaces. The completed MW9 baseline
+stays closed to searches for another independent rational section on that K3.
+
+```
+sage -python elliptic-curves/cas/inverse_kihara_curve302.sage --check
+sage -python elkies-k3/scripts/exclude_curve302_fixed_mw14.sage --check
+```
+
+## Completed rank-14–16 packet screen
+
+Authority: `EC-CURVE302-MW14-16-PACKETS`. The
+[frozen protocol](../../artifacts/generated-results/elliptic-curves/curve302_mw14_16_packet_protocol_v1.json)
+selects **all five** retained candidate spaces outside the old rank-17 core.
+It uses numerical height 190, a four-million-ray cap per space, thirteen
+points per parity class, primes `1019,1031,1033,1039`, at most 32 rational
+packets per space, one worker and a 900-second invocation limit. Integer
+inputs were saved before any 302 modular tests. The driver first reproduced
+all 4,092 packets of the 245 control and its exact family/section transport.
+
+| Candidate | Rank | Selected rays up to sign | Eligible packets | Modular exclusions | Rational exclusions |
+|---|---:|---:|---:|---:|---:|
+| 32 | 14 | 152,990 | 2,002 | 2,002 | 0 |
+| 58 | 14 | 193,544 | 6,216 | 6,216 | 0 |
+| 59 | 15 | 427,443 | 18,823 | 18,818 | 5 |
+| 60 | 16 | 948,768 | 49,030 | 49,019 | 11 |
+| 86 | 16 | 813,845 | 31,043 | 31,039 | 4 |
+
+The [completed screen](../../artifacts/generated-results/elliptic-curves/curve302_mw14_16_packets_v1.json)
+has **107,114 packet exclusions, zero hits and zero unresolved packets**.
+These counts are per candidate space, not a claim that every signed point
+set is distinct across spaces. Every last-prime survivor was unresolved
+because of modular chart issues; none was a genuine six-pair modular match.
+The exact rational detector then excluded all twenty.
+
+The [replay](../../artifacts/generated-results/elliptic-curves/curve302_mw14_16_packets_replay_v1.json)
+checks the primitive embedding, every packet's parity and integer-array hash,
+all 107,094 finite exclusions and all twenty rational exclusions. It does
+not rerun numerical height enumeration. The five compact NPZ files linked
+by the protocol are the precise mathematical input domain. Replay shares
+the chart and detector implementation; it is not independent code.
+
+This excludes the Mestre six-disjoint-equal-gap pattern only in those
+specific point packets. It excludes neither all points in a candidate
+space nor classes with fewer than thirteen selected rays, larger point
+sets, different families, or any generic-rank range. A packet may omit a
+construction point even when the full candidate space contains it.
+
+```
+# Search preparation writes new frozen inputs only; do not overwrite them.
+# sage -python elliptic-curves/cas/search_curve302_lower_rank_packets.sage prepare
+sage -python elliptic-curves/cas/search_curve302_lower_rank_packets.sage search
+sage -python elliptic-curves/cas/search_curve302_lower_rank_packets.sage replay
+```
+
+Preparation and search checkpoints are retained under
+`artifacts/local/elliptic-curves/curve302-mw14-16-packets/`. The search can
+resume completed candidate spaces against the same protocol hash.
+
+## Does a larger candidate subspace hide the known parent?
+
+Authority: `EC-CURVE302-ENLARGED-PACKET-CONTROL`. Starting from the recovered
+primitive rank-12 subspace for 245, append the first public coordinate
+vectors that increase rank, saturating after each addition. This selects
+three nested candidate containers of ranks 14, 15 and 16 without consulting
+the known section-image list or parity class.
+
+Repeat the original height-84, first-thirteen selector, with a four-million
+ray storage cap. It returns 460,373, 977,007 and 2,383,326 rays respectively.
+Only after selection, inspect the oracle section images. **All twelve
+visible construction images remain in the selected packet in each case.**
+The exact rational recognizer recovers roots `(0,106,344,475,594,731)` and
+`T=5801/10` in all three cases; symbolic identities and all twelve transported
+images are checked again. The
+[certificate](../../artifacts/generated-results/elliptic-curves/curve302_mw14_16_enlarged_control_v1.json)
+and [frozen inputs](../../artifacts/generated-results/elliptic-curves/curve302_mw14_16_enlarged_control_inputs_v1.json)
+retain the subspace bases, packets and oracle coordinates.
+
+This is a development robustness control, not a held-out success rate or
+a guarantee of sensitivity on 302. It rules out the narrow explanation that
+adding these particular extra directions necessarily breaks selection.
+It does not certify a complete canonical-height ball. The first rank-16
+pilot exceeded PARI's default one-gigabyte maximum workspace; the resumed
+case used the same mathematical bounds with up to eight gigabytes available.
+No timeout or memory failure was counted as a negative result.
+
+```
+sage -python elliptic-curves/cas/audit_curve302_enlarged_packet_control.sage --check
+# Optional complete numerical selection replay (roughly two minutes locally):
+sage -python elliptic-curves/cas/audit_curve302_enlarged_packet_control.sage --check --recompute-selection
+```
+
+The variable-size detector below now recognizes the six-pair geometry
+inside a larger point set. A broader 302 search still needs a newly frozen
+finite protocol; these results do not authorize an unbounded height increase.
+
+## Recognizing twelve construction points inside a larger set
+
+Authority: `EC-CURVE302-VARIABLE-PACKET-RECOGNIZER`. The new
+[finite-field detector](../cas/mw_pair_collision_filter.py) accepts any
+supplied set of at least twelve distinct projective abscissas, rather than
+requiring exactly thirteen. Colliding reductions remain unresolved.
+
+After choosing a chart in which all abscissas are finite, any two disjoint
+pairs `(a,b),(c,d)` with equal unsigned gap under a Möbius transformation
+satisfy, for one sign `epsilon`,
+
+\[
+(a-b)(c-k)(d-k)-\epsilon(c-d)(a-k)(b-k)=0.
+\]
+
+Enumerate the at most two finite roots of each such quadratic, with its
+linear and infinity cases. For each valid root, record `(pole, unsigned
+gap)`. Six disjoint equal-gap pairs contribute all fifteen pair-of-pair
+coincidences to the same key. Thus only keys occurring at least fifteen
+times can give a solution. Check those keys by an exact six-edge matching.
+Conversely every returned matching is a solution of the finite-field
+predicate. This gives a complete finite-field test, with no scan over all
+projective poles. It is still only a necessary test for rational recovery.
+
+The [checker](../cas/verify_mw_pair_collision_filter.sage) compares both
+algorithms on all 4,092 original 245 packets at 1019: they agree on one
+positive, 3,732 negatives and 359 unresolved cases. It also rechecks every
+one of the **107,094** saved modular exclusions for the five 302 spaces,
+using the new enumeration. The elliptic reduction code is shared; the
+pole-enumeration algorithms differ.
+
+For a supplied-image recognition control, mix the twelve known 245 images
+with twelve distinct same-parity coordinate shifts, then shuffle all 24
+labels by a deterministic hash. The detector receives neither the marked
+twelve nor the family. The first thirteen shuffled points contain only
+**seven** of the construction images and fail the finite-field test. The
+24-point detector finds the hidden twelve at prime 10007. Exact rational
+reconstruction then recovers the original roots and `T=5801/10`, verifies
+the generic identity, and matches all twelve section images to the fibre.
+
+This demonstrates recognition despite irrelevant points; it is not a blind
+point-selection calibration. The shuffle is not a height ordering. The subsequent six-space screen above now applies this detector to 302;
+no parent has been recovered.
+The [certificate](../../artifacts/generated-results/elliptic-curves/curve302_mw_pair_collision_control_v1.json)
+pins the complete supplied point set, matching and rational transport.
+
+```
+sage -python elliptic-curves/cas/verify_mw_pair_collision_filter.sage --check
+```
+
+That larger-packet experiment is completed above. Its frozen inputs retain
+more points per class at the same height and include twelve-point classes.
+The rational construction and section checks remain required for any future
+positive modular matching.
 
 ## From a recovered MW subspace to a family, 2026-09-07
 

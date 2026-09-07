@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "id": "v1-unit",
+      "status": "PASS",
+      "exact_displayed_span_rank": 6,
+      "modulus": 5,
+      "finite_primes": [
+        7,
+        13,
+        29,
+        37,
+        47,
+        53
+      ]
+    },
+    {
+      "id": "v1-outer",
+      "status": "PASS",
+      "exact_displayed_span_rank": 7,
+      "modulus": 5,
+      "finite_primes": [
+        7,
+        13,
+        23,
+        37,
+        53,
+        79,
+        103
+      ]
+    },
+    {
+      "id": "v2-unit",
+      "status": "PASS",
+      "exact_displayed_span_rank": 4,
+      "modulus": 5,
+      "finite_primes": [
+        17,
+        31,
+        67,
+        79
+      ]
+    },
+    {
+      "id": "v2-outer",
+      "status": "PASS",
+      "exact_displayed_span_rank": 9,
+      "modulus": 2,
+      "finite_primes": [
+        11,
+        17,
+        23,
+        29,
+        31,
+        47,
+        59
+      ]
+    },
+    {
+      "id": "v3-unit",
+      "status": "PASS",
+      "exact_displayed_span_rank": 12,
+      "modulus": 2,
+      "finite_primes": [
+        13,
+        17,
+        31,
+        37,
+        41,
+        43,
+        47,
+        53,
+        59,
+        67
+      ]
+    },
+    {
+      "id": "v3-outer",
+      "status": "PASS",
+      "exact_displayed_span_rank": 12,
+      "modulus": 2,
+      "finite_primes": [
+        11,
+        13,
+        19,
+        29,
+        37,
+        43,
+        47,
+        61,
+        73
+      ]
+    }
+  ],
+  "scope": "Exact model/section specialization, all point equations, independently enumerated finite quotient groups and prime-to-ell torsion exclusion. Exact elliptic relations close the two smaller displayed spans. No whole-curve rank upper bounds or new point search."
+}

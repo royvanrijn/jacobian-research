@@ -7,9 +7,45 @@ the rank-jump commits through `e16d3dc1`, and the curve302 and class-span
 results included in `1845b0f4`. It produces a reusable exact norm preflight,
 tested on retained inputs. It supplies **no new arithmetic-score term, curve
 exclusion, parameter sweep, or rank-record claim**. The supplement below
-extends the review through `73602fb5`.
+extends the review through `e575d0e5`.
 
 ## Newer commits: useful construction gates, no new score terms
+
+The follow-up review through `e575d0e5` independently replays three further
+restrictions. These refine constructor requirements while preserving the
+completed score experiments and their separate validation primes.
+
+- `b6bcf2bd`: the [standard S3 class block](../rank-jump/STRICT_CLASS_CREATION_IS_A_STANDARD_S3_BLOCK.md)
+  carries the strict elliptic classes. The trivial quadratic-resolvent genus
+  component contributes none. The subgroup cochain checks, 1,933 Hilbert
+  bits and four small certified class groups replay. Increasing resolvent
+  genus rank alone is therefore not a constructor for the missing elliptic
+  directions; the cubic standard component remains to be found.
+- `085690b6`: the [relation-root construction](../rank-jump/RELATION_ROOTS_CREATE_RAMIFICATION_NOT_THE_MISSING_BLOCK.md)
+  leaves the old span but has seven odd ideal valuations. The entire
+  4,134-element retained dictionary plus generic corrections cannot remove
+  them; independent replay checks 33,864 lattice valuations. Apply its
+  necessary modulo-four valuation condition before treating a square-root
+  norm relation as a new unramified class. This excludes the retained
+  construction, not its elliptic curve or every possible dictionary.
+- `e575d0e5`: [branch-fibre divisibility](../rank-jump/BRANCH_FIBRES_BOUND_NATIVE_CLASS_CREATION.md)
+  bounds each of the 37 retained native quadratic twist supports by three
+  new generic directions, for every nonzero rational scalar. Their distinct
+  branch kernels bound any product involving two or more supports by two;
+  the full fibre product of a pair can add at most eight directions. All
+  1,604 finite blocks and 81,804 character bits replay independently. A
+  proposed generic gain of nine or more through this specific construction
+  requires at least three supports and cover genus at least five. New
+  supports with different branch-fibre two-torsion or divisibility require
+  their own proofs; none of these bounds excludes specialization gains.
+
+The [six additional parents](MESTRE_DETERMINANT468_PARENTS_2026-09-07.md)
+now give an actual change of geometric NS determinant, from production948
+to468. Their rational Picard rank18 rules out arithmetic MW17 on those
+surfaces and focuses their next construction gate on an explicit useful
+MW16 fibration. No such fibration is yet constructed. This parent result
+does not use the native-cover capacity bounds outside their proved scope,
+and no larger parameter or point sweep follows either result.
 
 `1f7f8632` proves a [fixed-incidence six-direction solubility switch](../rank-jump/FIXED_INCIDENCE_SIX_DIRECTION_SOLUBILITY_SWITCH.md).
 The same strict incidence block can contain rational directions on one curve
@@ -188,3 +224,185 @@ with identical completed exposure. The next class-construction change needs
 a dictionary surviving the complete parity and generic-dependence gates.
 Neither result calls for another parameter scan. Validation primes remain
 separate, and the completed retained-score comparison is unchanged.
+
+## Subsequent review through 6b832b2b
+
+The independent verifiers for `fc264181`, `34c83f03` and `6b832b2b` pass.
+These sharpen construction requirements without changing the completed
+score-strata experiment or launching another parameter scan:
+
+- [The native global pool](../rank-jump/ONE_COMMON_CLASS_FOR_A_LARGE_NATIVE_BLOCK.md)
+  has dimension 17 or 18. New generic-rank capacities for one through four
+  supports are at most 2,5,10,19, at genera 0,1,5,17. A four-support gain
+  at least fourteen requires a common extra class rational on at least
+  ten character twists. That class and simultaneous solubility remain
+  unknown. The producer's direct capacity check has a tuple-versus-JSON-list
+  comparison defect; the read-only
+  [`verify_native_common_class_json.py`](../cas/verify_native_common_class_json.py)
+  replays its exact object after JSON normalization. Frozen producer files
+  and certificates are preserved; no arithmetic values are changed.
+- [A degree-four Galois scheme](../rank-jump/A_QUARTIC_GOVERNS_THE_LAST_GLOBAL_CLASS.md)
+  reduces the remaining global-class question to an S4 versus S3 action.
+  Its defining coefficient polynomial and any extra class remain
+  unconstructed. The independent replay checks 136 pairings, the Arf
+  invariant and the permutation representation. This is a fixed-root-curve
+  incidence result, not a detector for new specialized classes.
+- [Fixing a resolvent polynomial](../rank-jump/FIXING_THE_RESOLVENT_POLYNOMIAL_TESTS_SOLUBILITY.md)
+  can silently impose point solubility. On the retained MW16-05 control,
+  all 63 nonzero classes in a strict six-dimensional block are admitted
+  with an arbitrary cubic generator, none with the fixed polynomial
+  Z^3+AZ+B, and all with Z^3+AZ-B, although the two polynomials define
+  the same cubic field. The independent root-sum quartic, prime-witness
+  and CT replay passes. Future incidence constructors must allow arbitrary
+  cubic generators and certify field identity, or explicitly label the
+  stronger fixed-polynomial condition as a solubility restriction.
+
+These classes are already present in the generic control. No new
+specialization direction follows. The concrete parent expansion and seed
+repair are recorded in the
+[Kihara experiment](KIHARA_PARENT_EXPANSION_AND_SEED_INDEX_2026-09-07.md):
+four further Q-distinct parents, exact index-six seed enlargement, smaller
+models, and 196 completed boxes with zero rank gains. These bounded outcomes
+supply no parent-superiority or specialized-rank upper bound.
+
+The subsequent `0dd1e731` result also passes its independent parity-rank,
+norm-one-relation and inclusion replay. It
+[exhausts all in-field radical operations on the retained pool](../rank-jump/ALL_IN_FIELD_ROOTS_OF_THE_RETAINED_POOL_ARE_EXHAUSTED.md):
+after its one required square root, the 4150-generator group is
+2-saturated and its Selmer intersection is precisely the generic16
+subgroup. Repeated multiplication, inversion, rational rescaling, norm
+projection and integer-root extraction cannot create an extra class from
+that fixed dictionary. A future constructor needs an element outside
+that radical closure; the theorem does not bound the whole cubic class
+or elliptic Selmer group, or exclude the underlying fibre. No production
+score changes follow.
+
+## Subsequent review through 9c5c4d3b
+
+The independent checks for `ade6aebf` and `9c5c4d3b` pass. The former
+[central-governing-field theorem](../rank-jump/CENTRAL_GOVERNING_FIELDS_CANNOT_CREATE_THE_JUMP_CLASSES.md)
+shows that each frozen degree192 pair field contains only its two input
+Kummer directions; all three nonzero combinations fail strictness on all
+sixteen fibres, with48 explicit local witnesses. Central extensions and
+composita of generic pair-governing fields cannot add a Kummer direction:
+centrality forces every cocycle into the zero invariant subspace of the
+standard S3 module. Three independent finite-prime witnesses also separate
+the third generic class field from the first-pair governing field. These
+are capacity restrictions on the construction, not fibre-rank bounds.
+
+The latter [four-division result](../rank-jump/FOUR_DIVISION_RAMIFICATION_CANNOT_SUPPLY_THE_JUMP.md)
+identifies the sole possible Kummer direction in Q(E[4]) as the derivative
+class -Delta f'(theta). On all sixteen frozen fibres it is nonzero but
+locally outside the2-Selmer group. Adjoining this field to the generic
+governing compositum therefore supplies no additional Selmer class on
+the panel. The independent replay covers all67 sign-module subspaces and
+the exact local exclusions. It does not assume a full mod4 Galois image.
+
+Future class constructors need a new standard S3 module and independently
+verified local admissibility before a solubility test. More central bits,
+division-field degree or operations within the exhausted dictionary cannot
+stand in for those inputs. Neither commit supplies a production score or
+a new rational point, and neither changes the frozen score comparison.
+
+The [retained26 source audit](RETAINED26_SOURCE_GAPS_AND_COMPLETED_EXPOSURE_2026-09-07.md)
+separately finds seven source-prefix exposure gaps among eighteen curves,
+avoids eleven already-exposed curves and completes98 new boxes on two
+fixed training-score selections with zero gains. Five gaps remain
+unscheduled. Parent expansion remains a separate need: the twelve labels
+of the high-rank inventory all belong to X948, whereas the six Mestre and
+four Kihara additions have only bounded pilot exposure so far.
+## Subsequent review through 3abeefeb
+
+All three new independent arithmetic replays pass; their
+[source bindings and transcripts](../../artifacts/generated-results/elliptic-curves/parallel_parent_review_through_3abeefeb_v1.json)
+record20.969733168 supervised seconds in total.
+
+- `3c3a5e73` proves [full private ramification](../rank-jump/ADDITIVE_COLLISION_BLOCKS_HAVE_FULL_PRIVATE_RAMIFICATION.md)
+  for every additive three-radical block on the frozen sixteen fibres.
+  The10520 independent private odd-prime witnesses exclude the entire
+  respective block from Selmer, including combinations within the block.
+  Adding the generic subgroup gives no extra Selmer dimension. This is a
+  construction exclusion; the fibre ranks remain unaffected.
+- `4e4ef90a` identifies the [ten-section node factor](../rank-jump/ADDITIVE_NORM_CARRIERS_AND_THE_TEN_SECTION_NODE.md).
+  On MW16 at t=-2,120 triple norms share(t+2)^4. Removing that square factor
+  reduces some necessary carrier genera from11 to9. The remaining3280
+  branch polynomials are squarefree and pairwise coprime within their
+  families. The carriers still impose necessary incidence conditions,
+  not global point solubility. The generic node factor is not a new
+  specialized rank selector.
+- `3abeefeb` closes [the remaining global class](../rank-jump/THE_LAST_GLOBAL_CLASS_IS_ABSENT.md)
+  on the fixed published R17 root curve: its rational Jacobian2-torsion
+  is exactly the seventeen generic classes. The residual quartic has
+  S4 Galois group and no rational point. On any k of the37 retained native
+  supports with their original scalars, the multiquadratic pullback has
+  exact generic rank17+k; all mixed-support character ranks vanish. This
+  removes the proposed hidden common class from this model, while leaving
+  exceptional rational specializations open. The new replay checks the
+  height, finite characters and residual trace arithmetic; the previously
+  retained independent surface count and the companion note's Artin–Tate
+  and local descent arguments remain explicit dependencies.
+
+None supplies a prospective condition constructing new specialized strict
+classes. The production scores and completed frozen comparisons remain as
+recorded. More generic collisions on these fixed inputs cannot substitute
+for a new parent or a certified new specialized class.
+
+The parent-side consequences are now concrete. The
+[full554-pencil Mestre audit](MESTRE_DEGREE_THREE_PENCILS_2026-09-07.md)
+finds no generic rank improvement in that retained portfolio. The
+[Kihara section and coverage proof](KIHARA_QUADRATIC_SECTION_AND_PARENT_COVERAGE_2026-09-07.md)
+closes the first parent's full geometric lattice and exhibits a quadratic
+section over the unrestricted parent-ratio line. It also proves that the
+existing rank14 path covers only negative ratios between-1/2 and0.
+Broader intake should test the unrestricted parent coordinate, check
+surface equivalence and rational section independence, and compare equal
+completed exposure. Neither a fresh coordinate nor another fibration label
+alone counts as a new parent.
+## Subsequent review through 9f59caad
+
+The independent arithmetic checks for `79a3487a` and `9f59caad` pass;
+the [retained review](../../artifacts/generated-results/elliptic-curves/parallel_review_through_9f59caad_v1.json)
+records6.364229609 supervised seconds. These results require a distinction
+between S-units alone and S-units combined with generic classes.
+
+The [bad-prime principalization experiment](../rank-jump/STRICT_BLOCKS_NEED_IDEALS_OUTSIDE_BAD_SUPPORT.md)
+finds no generator among60 fixed squared bad-prime ideals on the fresh
+matched pair, while recovering all six positive controls. The replay
+checks3234 norms and exact ideal transports. Those bounded misses prove
+neither nonprincipality nor a small class group. A separate retrospective
+Artin-kernel bound limits the S-unit portion of three earlier known strict
+blocks to dimensions1,0,0. That bound does not apply to the larger
+generic-plus-S-unit constructor.
+
+The [enlarged constructor](../rank-jump/GENERIC_IDEALS_AND_SUNIT_CORRECTIONS_CARRY_INCIDENCE.md)
+has a positive incidence criterion. Write G for the generic Kummer group,
+E_S for norm-square S-unit classes, U for the strict subgroup, and Phi_S
+for the localized half-ideal map. Then
+
+```
+dim((G+E_S) intersect U) >= dim Phi_S(G).
+```
+
+The complete generic half-ideal images detect elementary S-class factors
+of dimensions10,8,6 on the earlier controls. Relative to generic strict
+dimensions1,2,6, this forces at least9,6,0 additional strict directions
+in the enlarged constructor. The arithmetic replay verifies the Artin
+evaluations and explicit dual generic-ideal words. These independence
+witnesses still use old exceptional-point-derived characters; they do not
+provide a prospective selector or explicit new rational elliptic points.
+
+This corrects a possible overreading of the preceding exclusions: new
+strict Kummer classes need not have half ideals outside the span of the
+generic half ideals. A usable next arithmetic input is a certified
+sufficient S-unit span and its joint localization matrix, together with
+point-independent independence witnesses for the generic ideal image.
+Explicit corrections and their rationality versus Sha remain unresolved.
+No production score or completed experiment changes follow from these
+retrospective matrices.
+
+Separately, the [positive-parent fibre pilot](KIHARA_POSITIVE_PARENT_POINT_PILOT_2026-09-07.md)
+now completes294 fixed boxes, with three certified directions on two
+curves and strongest lower bound14. It also closes two specialization
+losses and uses odd-prime certification for the new rational2-torsion
+fibres. Those are concrete visibility and admission improvements in the
+broader parent portfolio; they do not test the new S-unit criterion.

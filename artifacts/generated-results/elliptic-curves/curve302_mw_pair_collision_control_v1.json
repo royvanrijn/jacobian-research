@@ -1,0 +1,478 @@
+{
+  "boundary": "The new finite-field pole enumeration agrees with the old algorithm on4092 packets and on every107094 saved302 modular exclusion. The24-point example supplies the known12 images mixed with12 distractors; it calibrates recognition, not blind point selection. Generic identity and exact12-image transport are reverified. No larger302 point packet or new parent has been searched. Elliptic reduction and rational family verification share existing code.",
+  "control_24_point_modular_hits": [
+    {
+      "finite_chart_offset": 0,
+      "gap": 1379,
+      "pairs": [
+        [
+          0,
+          19
+        ],
+        [
+          4,
+          21
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          6,
+          18
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          13,
+          20
+        ]
+      ],
+      "pole": 9852
+    }
+  ],
+  "control_24_point_prime": 10007,
+  "control_24_point_rows": [
+    [
+      3,
+      -2,
+      3,
+      2,
+      -2,
+      3,
+      0,
+      -2,
+      0,
+      -2,
+      3,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      2,
+      0,
+      1,
+      0,
+      -2,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0,
+      3,
+      0,
+      -2,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      -2,
+      2,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      -2,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      3,
+      -2,
+      1,
+      0,
+      -2,
+      3,
+      0,
+      -2,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      -2,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      2,
+      1,
+      0,
+      -2,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      -2,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      -2,
+      2,
+      -1,
+      0,
+      2,
+      -4,
+      0,
+      1,
+      2
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      -2,
+      0,
+      0,
+      3,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      -2,
+      0,
+      2,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      -1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      -1,
+      0,
+      0,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      -1,
+      0
+    ],
+    [
+      1,
+      0,
+      3,
+      0,
+      0,
+      1,
+      0,
+      -2,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      2,
+      -2,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      2,
+      1,
+      0,
+      0,
+      1,
+      0,
+      -2,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      -2,
+      0,
+      0,
+      1,
+      2
+    ],
+    [
+      7,
+      -2,
+      5,
+      -2,
+      2,
+      3,
+      -2,
+      0,
+      -6,
+      -2,
+      7,
+      2
+    ],
+    [
+      1,
+      -2,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      -2,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      3,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      -2,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      5,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      -2,
+      0,
+      0,
+      1,
+      0
+    ]
+  ],
+  "control_24_point_verified_families": [
+    {
+      "T": "5801/10",
+      "generic_identity_checked": true,
+      "roots": [
+        0,
+        106,
+        344,
+        475,
+        594,
+        731
+      ],
+      "twelve_images_match_up_to_sign": [
+        {
+          "indices": [
+            5,
+            4,
+            7,
+            10,
+            3,
+            8,
+            1,
+            11,
+            9,
+            0,
+            6,
+            2
+          ],
+          "u_r_s_t": [
+            "-1/50",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "indices": [
+            5,
+            4,
+            7,
+            10,
+            3,
+            8,
+            1,
+            11,
+            9,
+            0,
+            6,
+            2
+          ],
+          "u_r_s_t": [
+            "1/50",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "control_4092_comparison_at1019": {
+    "false": 3732,
+    "true": 1,
+    "unresolved": 359
+  },
+  "control_first13_known_images": 7,
+  "control_first13_modular_excluded": true,
+  "input_sha256": {
+    "artifacts/generated-results/elliptic-curves/curve302_mw14_16_packet_protocol_v1.json": "10edd26e6bd35fbede9de5fb47a03e799e2dbfac0ae43525f009bd036749ceba",
+    "artifacts/generated-results/elliptic-curves/curve302_mw14_16_packets_v1.json": "540137eb2e6235596e91b7b153c9309d85e3901d51172ce138300fd58fa3607a",
+    "artifacts/generated-results/elliptic-curves/curve302_mw_packet_245_control_v1.json": "5a53f0baf6d4b2a023d48b758b72807e3fd172d94fda372ca68b6ab5ca9fc943",
+    "artifacts/generated-results/elliptic-curves/latent_lattice_graph_walk_calibration_v1.json": "cb2d5406275b633ecae20cf37cba0795b1e589d14ebeb0bf16f75a6ee31a9ec4",
+    "artifacts/generated-results/elliptic-curves/low_height_mw_sublattices_v1_245_cloud.json.gz": "69153601d97fccf47cca28e667dc45fc674a06b8c9fe0748f8440b46e5a87a3f",
+    "elliptic-curves/cas/mw_pair_collision_filter.py": "594cd961a33a63850973bbe47c7e574d98d911999067967658fd4957523caf39",
+    "elliptic-curves/cas/recover_mw_quartic_pairs.sage": "ab61a3b094c048146277344b65c98824273c80cf32f1a8c66df9155fe93cf34e",
+    "elliptic-curves/cas/search_curve302_lower_rank_packets.sage": "84323337fcb58ac44080a766a3cb957801e8ad550143a2ebdd41eaca33ba991c",
+    "elliptic-curves/cas/select_mw_quartic_packet.sage": "dab85bb3273721d76e8865d89be8436a96d96c4f5eaff3d04009a2ae99e97132",
+    "elliptic-curves/cas/verify_mw_pair_collision_filter.sage": "bc24c9d09cc2c2bebba877513653d3f5449cc882b8f98d28ec5d99acf37c89ee"
+  },
+  "schema": "curve302.pair-collision-control.v1",
+  "status": "PASS_VARIABLE_SIZE_RECOGNITION_AND_107094_RECHECKS",
+  "target_modular_rechecks": [
+    {
+      "candidate_id": 32,
+      "modular_exclusions_verified": 2002
+    },
+    {
+      "candidate_id": 58,
+      "modular_exclusions_verified": 6216
+    },
+    {
+      "candidate_id": 59,
+      "modular_exclusions_verified": 18818
+    },
+    {
+      "candidate_id": 60,
+      "modular_exclusions_verified": 49019
+    },
+    {
+      "candidate_id": 86,
+      "modular_exclusions_verified": 31039
+    }
+  ]
+}

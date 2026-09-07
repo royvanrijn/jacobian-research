@@ -1,0 +1,46 @@
+{
+  "schema": "elliptic-curves.mestre-chord-pencils-portable-replay.v1",
+  "status": "PASS",
+  "files": {
+    "elliptic-curves/cas/verify_mestre_chord_pencils.sage": {
+      "sha256": "d0123bfc165ae072b5d28f9809b39c282788d97b40ef4466e4384d0c54487f9b",
+      "bytes": 5604
+    },
+    "artifacts/generated-results/elliptic-curves/mestre_chord_pencils_v1.json": {
+      "sha256": "739548efee36beb58986c4ed7e08703224a8ff4cba999008082792265a9c14dd",
+      "bytes": 239574
+    }
+  },
+  "supervisor": {
+    "command": [
+      "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+      "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/mestre-chord-pencils-standalone-v1/verify_mestre_chord_pencils.sage"
+    ],
+    "failure_reason": null,
+    "limits": {
+      "address_space_bytes": null,
+      "cgroup": null,
+      "pari_stack_bytes": 256000000,
+      "poll_seconds": 0.05,
+      "rss_bytes": 2147483648,
+      "terminate_grace_seconds": 1.0,
+      "wall_seconds": 120
+    },
+    "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/mestre-chord-pencils-standalone-v1/replay.log",
+    "log_sha256": "2a01513819260ee157a53358b7ea94b97c4b296a7c49706db2277d9c3e078805",
+    "outcome": "completed",
+    "peak_observed_rss_bytes": 243073024,
+    "pid": 628225,
+    "returncode": 0,
+    "rss_limit_bytes": 2147483648,
+    "start_token": "57902177",
+    "termination_signal": null,
+    "timeout_seconds": 120,
+    "wall_seconds": 0.998026215005666,
+    "worker_result": null,
+    "worker_result_sha256": null
+  },
+  "transcript": "PASS all781 words,151 eligible divisors and fixed eight-pencil admission\nbaseline generic Q rank 7 geometric 8\npencil0 generic Q rank 10 geometric 11\npencil1 generic Q rank 10 geometric 11\npencil2 generic Q rank 8 geometric 9\npencil3 generic Q rank 8 geometric 9\npencil4 generic Q rank 9 geometric 10\npencil5 generic Q rank 9 geometric 10\npencil6 generic Q rank 10 geometric 11\npencil7 generic Q rank 8 geometric 9\nPASS9 INDEPENDENT BIRATIONAL MAPS AND EXACT GENERIC RANKS\n",
+  "command": "sage -python verify_mestre_chord_pencils.sage --input mestre_chord_pencils_v1.json",
+  "scope": "Completed exact standalone replay, not a new point search, specialized-rank upper bound, or proof that these presentations have inferior discovery yield."
+}

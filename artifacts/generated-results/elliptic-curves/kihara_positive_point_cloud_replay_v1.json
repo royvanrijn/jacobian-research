@@ -1,0 +1,237 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "id": "v1-unit",
+      "point_count": 3352,
+      "initial_rank": 6,
+      "rank_lower_bound": 7,
+      "discovered_rank_gain_lower_bound": 1,
+      "audits": [
+        {
+          "modulus": 3,
+          "rank_lower_bound": 7,
+          "finite_primes": [
+            11,
+            47,
+            53,
+            59,
+            61,
+            71,
+            89
+          ]
+        },
+        {
+          "modulus": 5,
+          "rank_lower_bound": 7,
+          "finite_primes": [
+            7,
+            13,
+            29,
+            37,
+            47,
+            53,
+            59
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v1-outer",
+      "point_count": 158,
+      "initial_rank": 7,
+      "rank_lower_bound": 7,
+      "discovered_rank_gain_lower_bound": 0,
+      "audits": [
+        {
+          "modulus": 3,
+          "rank_lower_bound": 7,
+          "finite_primes": [
+            17,
+            23,
+            29,
+            41,
+            53,
+            67,
+            103
+          ]
+        },
+        {
+          "modulus": 5,
+          "rank_lower_bound": 7,
+          "finite_primes": [
+            7,
+            13,
+            23,
+            37,
+            53,
+            79,
+            103
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2-unit",
+      "point_count": 1821,
+      "initial_rank": 4,
+      "rank_lower_bound": 4,
+      "discovered_rank_gain_lower_bound": 0,
+      "audits": [
+        {
+          "modulus": 3,
+          "rank_lower_bound": 4,
+          "finite_primes": [
+            23,
+            29,
+            41,
+            43
+          ]
+        },
+        {
+          "modulus": 5,
+          "rank_lower_bound": 4,
+          "finite_primes": [
+            17,
+            31,
+            67,
+            79
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2-outer",
+      "point_count": 420,
+      "initial_rank": 9,
+      "rank_lower_bound": 9,
+      "discovered_rank_gain_lower_bound": 0,
+      "audits": [
+        {
+          "modulus": 3,
+          "rank_lower_bound": 9,
+          "finite_primes": [
+            11,
+            19,
+            41,
+            53,
+            71,
+            83,
+            97,
+            127,
+            137
+          ]
+        },
+        {
+          "modulus": 5,
+          "rank_lower_bound": 9,
+          "finite_primes": [
+            29,
+            31,
+            61,
+            97,
+            137,
+            139,
+            197,
+            227,
+            233
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3-unit",
+      "point_count": 6298,
+      "initial_rank": 12,
+      "rank_lower_bound": 14,
+      "discovered_rank_gain_lower_bound": 2,
+      "audits": [
+        {
+          "modulus": 3,
+          "rank_lower_bound": 14,
+          "finite_primes": [
+            17,
+            29,
+            43,
+            47,
+            53,
+            59,
+            67,
+            79,
+            83,
+            89,
+            107,
+            131,
+            157
+          ]
+        },
+        {
+          "modulus": 5,
+          "rank_lower_bound": 14,
+          "finite_primes": [
+            13,
+            31,
+            41,
+            53,
+            59,
+            71,
+            83,
+            137,
+            191,
+            199,
+            229,
+            257,
+            263,
+            293
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3-outer",
+      "point_count": 353,
+      "initial_rank": 12,
+      "rank_lower_bound": 12,
+      "discovered_rank_gain_lower_bound": 0,
+      "audits": [
+        {
+          "modulus": 3,
+          "rank_lower_bound": 12,
+          "finite_primes": [
+            11,
+            29,
+            41,
+            59,
+            107,
+            151,
+            163,
+            173,
+            191,
+            197,
+            211,
+            223
+          ]
+        },
+        {
+          "modulus": 5,
+          "rank_lower_bound": 12,
+          "finite_primes": [
+            13,
+            53,
+            61,
+            127,
+            131,
+            271,
+            277,
+            397,
+            439,
+            443,
+            491,
+            571
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": "Every retained rational point checked on its exact equation; complete finite groups and quotients at odd primes independently enumerated, torsion excluded at each proof modulus, and exported independent columns verified. Rank lower bounds only; exposure, provenance and exact initial-span upper bounds are separate dependencies."
+}

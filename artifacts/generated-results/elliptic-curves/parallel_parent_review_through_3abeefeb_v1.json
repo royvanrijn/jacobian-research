@@ -1,0 +1,39 @@
+{
+  "schema": "parallel-parent-review-through-3abeefeb.v1",
+  "status": "PASS",
+  "stages": [
+    {
+      "commit": "3c3a5e73",
+      "supervisor": "artifacts/local/elliptic-curves/parallel-parent-review-through-3abeefeb-v1/0.supervisor.json",
+      "wall_seconds": 14.580798057024367,
+      "transcript": "case-00 PASS 680 private odd witnesses\ncase-01 PASS 680 private odd witnesses\ncase-02 PASS 680 private odd witnesses\ncase-03 PASS 680 private odd witnesses\ncase-04 PASS 680 private odd witnesses\ncase-05 PASS 680 private odd witnesses\ncase-06 PASS 680 private odd witnesses\ncase-07 PASS 680 private odd witnesses\ncase-08 PASS 680 private odd witnesses\ncase-09 PASS 680 private odd witnesses\ncase-10 PASS 680 private odd witnesses\ncase-11 PASS 560 private odd witnesses\ncase-12 PASS 560 private odd witnesses\ncase-13 PASS 680 private odd witnesses\ncase-14 PASS 680 private odd witnesses\ncase-15 PASS 560 private odd witnesses\nPASS all additive norms and complete block ramification ranks\n"
+    },
+    {
+      "commit": "4e4ef90a",
+      "supervisor": "artifacts/local/elliptic-curves/parallel-parent-review-through-3abeefeb-v1/1.supervisor.json",
+      "wall_seconds": 6.0571848950348794,
+      "transcript": "074d9 PASS 680 230860\n103b2 PASS 680 230860\n11952 PASS 680 230860\na1-fibration-01 PASS 560 156520\npublished-r17 PASS 680 230860\nPASS exact branch geometry and frozen generic transports\n"
+    },
+    {
+      "commit": "3abeefeb",
+      "supervisor": "artifacts/local/elliptic-curves/parallel-parent-review-through-3abeefeb-v1/2.supervisor.json",
+      "wall_seconds": 0.3317502159625292,
+      "transcript": "PASS 91 characters; determinant 948; residual Frobenius polynomial\n"
+    }
+  ],
+  "total_supervised_seconds": 20.969733168021776,
+  "production_changes": false,
+  "sources": {
+    "artifacts/local/elliptic-curves/parallel-parent-review-through-3abeefeb-v1/protocol.json": "0d3e4740c06565d809a1bf3de6d1c90e8e109cdcf60077807ffb92d120e08883",
+    "elliptic-curves/rank-jump/verify_three_radical_incidence.py": "0bb4f6af90865129bc843599806b7d1c1b0ab946f3e242b04729023ad4083d72",
+    "elliptic-curves/rank-jump/verify_additive_branch_geometry.py": "0f6d4c2a3886db8eb6d5f1ed26c42aaf420862f734f875c77280f44fb52cbfd1",
+    "elliptic-curves/rank-jump/verify_residual_quartic_at_131.py": "4a22b0555a63af45e34057c1276dc8e3c936e982d9c361e3dec3a1267a00c636",
+    "artifacts/local/elliptic-curves/parallel-parent-review-through-3abeefeb-v1/0.supervisor.json": "2468d8904e78dd2fea11242d7d72e8b9bafda6e8507ba9344e5f0c8a5280a8b0",
+    "artifacts/local/elliptic-curves/parallel-parent-review-through-3abeefeb-v1/0.log": "3806764fe1b57b53e00fcb19988049fdac889403f79f4431aa599f5034071340",
+    "artifacts/local/elliptic-curves/parallel-parent-review-through-3abeefeb-v1/1.supervisor.json": "d6521665f8d44e8dd2ee98e45c01055a989b6ea6c1ca8f3ce7d3beed812e6655",
+    "artifacts/local/elliptic-curves/parallel-parent-review-through-3abeefeb-v1/1.log": "8905631622a6a89e12232c94e2cdfe916f6c5b6999b2e2aa775a66bc6f274593",
+    "artifacts/local/elliptic-curves/parallel-parent-review-through-3abeefeb-v1/2.supervisor.json": "e097539d3dbaaa58a9ac5f3052ec9ebeaeeb8d0f47b92af92ea14eb9bf74fcbb",
+    "artifacts/local/elliptic-curves/parallel-parent-review-through-3abeefeb-v1/2.log": "def983b94b835da98cab311128916f0b47ccd88429d5adaa41df2cb8aa290d3a"
+  },
+  "scope": "Independent arithmetic replays only. The cited companion notes carry the geometric and descent arguments; these checks do not construct specialized classes, points or a score selector."
+}

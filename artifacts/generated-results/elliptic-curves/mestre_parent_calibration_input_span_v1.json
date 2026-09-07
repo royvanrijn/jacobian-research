@@ -1,0 +1,864 @@
+{
+  "coefficient_denominator_bound": 64,
+  "proposal_precision_bits": 384,
+  "rows": [
+    {
+      "basis_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "id": "u11-unit",
+      "relations": [
+        {
+          "basis_coefficients": [
+            -3,
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0
+          ],
+          "target_index": 10,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -3,
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "target_index": 11,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -2,
+            1,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1
+          ],
+          "target_index": 13,
+          "target_multiplier": 1
+        }
+      ],
+      "supplied_image_subgroup_rank": 11
+    },
+    {
+      "basis_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "id": "u11-outer",
+      "relations": [
+        {
+          "basis_coefficients": [
+            -3,
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0
+          ],
+          "target_index": 10,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -3,
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "target_index": 11,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -2,
+            1,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1
+          ],
+          "target_index": 13,
+          "target_multiplier": 1
+        }
+      ],
+      "supplied_image_subgroup_rank": 11
+    },
+    {
+      "basis_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "id": "u13-unit",
+      "relations": [
+        {
+          "basis_coefficients": [
+            -3,
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0
+          ],
+          "target_index": 10,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -3,
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "target_index": 11,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -2,
+            1,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1
+          ],
+          "target_index": 13,
+          "target_multiplier": 1
+        }
+      ],
+      "supplied_image_subgroup_rank": 11
+    },
+    {
+      "basis_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "id": "u13-outer",
+      "relations": [
+        {
+          "basis_coefficients": [
+            -3,
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0
+          ],
+          "target_index": 10,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -3,
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "target_index": 11,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -2,
+            1,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1
+          ],
+          "target_index": 13,
+          "target_multiplier": 1
+        }
+      ],
+      "supplied_image_subgroup_rank": 11
+    },
+    {
+      "basis_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "id": "u17-unit",
+      "relations": [
+        {
+          "basis_coefficients": [
+            -3,
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0
+          ],
+          "target_index": 10,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -3,
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "target_index": 11,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -2,
+            1,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1
+          ],
+          "target_index": 13,
+          "target_multiplier": 1
+        }
+      ],
+      "supplied_image_subgroup_rank": 11
+    },
+    {
+      "basis_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "id": "u17-outer",
+      "relations": [
+        {
+          "basis_coefficients": [
+            -3,
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0
+          ],
+          "target_index": 10,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -3,
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "target_index": 11,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -2,
+            1,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1
+          ],
+          "target_index": 13,
+          "target_multiplier": 1
+        }
+      ],
+      "supplied_image_subgroup_rank": 11
+    },
+    {
+      "basis_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "id": "u19-unit",
+      "relations": [
+        {
+          "basis_coefficients": [
+            -3,
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0
+          ],
+          "target_index": 10,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -3,
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "target_index": 11,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -2,
+            1,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1
+          ],
+          "target_index": 13,
+          "target_multiplier": 1
+        }
+      ],
+      "supplied_image_subgroup_rank": 11
+    },
+    {
+      "basis_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "id": "u19-outer",
+      "relations": [
+        {
+          "basis_coefficients": [
+            -3,
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0
+          ],
+          "target_index": 10,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -3,
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "target_index": 11,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -2,
+            1,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1
+          ],
+          "target_index": 13,
+          "target_multiplier": 1
+        }
+      ],
+      "supplied_image_subgroup_rank": 11
+    },
+    {
+      "basis_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "id": "u23-unit",
+      "relations": [
+        {
+          "basis_coefficients": [
+            -3,
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0
+          ],
+          "target_index": 10,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -3,
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "target_index": 11,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -2,
+            1,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1
+          ],
+          "target_index": 13,
+          "target_multiplier": 1
+        }
+      ],
+      "supplied_image_subgroup_rank": 11
+    },
+    {
+      "basis_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "id": "u23-outer",
+      "relations": [
+        {
+          "basis_coefficients": [
+            -3,
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0
+          ],
+          "target_index": 10,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -3,
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "target_index": 11,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -2,
+            1,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1
+          ],
+          "target_index": 13,
+          "target_multiplier": 1
+        }
+      ],
+      "supplied_image_subgroup_rank": 11
+    },
+    {
+      "basis_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "id": "u29-unit",
+      "relations": [
+        {
+          "basis_coefficients": [
+            -3,
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0
+          ],
+          "target_index": 10,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -3,
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "target_index": 11,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -2,
+            1,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1
+          ],
+          "target_index": 13,
+          "target_multiplier": 1
+        }
+      ],
+      "supplied_image_subgroup_rank": 11
+    },
+    {
+      "basis_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "id": "u29-outer",
+      "relations": [
+        {
+          "basis_coefficients": [
+            -3,
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0
+          ],
+          "target_index": 10,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -3,
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "target_index": 11,
+          "target_multiplier": 1
+        },
+        {
+          "basis_coefficients": [
+            -2,
+            1,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1
+          ],
+          "target_index": 13,
+          "target_multiplier": 1
+        }
+      ],
+      "supplied_image_subgroup_rank": 11
+    }
+  ],
+  "schema": "elliptic-curves.mestre-parent-calibration-input-span.v1",
+  "scope": "Three exact rational group relations per14-image cloud, plus certified11 independent seed points, prove supplied-image subgroup rank exactly11 at each of twelve frozen fibres. Numeric heights only propose relations; replay uses exact group arithmetic. No full-curve or generic-rank upper bound, saturation claim, or elliptic point search.",
+  "sources": {
+    "artifacts/local/elliptic-curves/mestre-parent-calibration-v1/u11-outer/seed.json": "3c1965f870594143d332d4f3803780ed8531a4955b99fac94851415b9ff239d1",
+    "artifacts/local/elliptic-curves/mestre-parent-calibration-v1/u11-unit/seed.json": "4160970379df0c459e507fffa2a277a8ed97b7260045b094c6bceff79d85e29d",
+    "artifacts/local/elliptic-curves/mestre-parent-calibration-v1/u13-outer/seed.json": "71599e276276c440e7ed03921f8736ba58b1fab9df7d43e6340830bace7efd33",
+    "artifacts/local/elliptic-curves/mestre-parent-calibration-v1/u13-unit/seed.json": "6fd40c078bdc6e5716e50955713edfe7010cacb37ba5152c8f95693c66262d2b",
+    "artifacts/local/elliptic-curves/mestre-parent-calibration-v1/u17-outer/seed.json": "eb1bd25ee4671826ed6297475710a354175307199052f820b6b74dad6c6b6670",
+    "artifacts/local/elliptic-curves/mestre-parent-calibration-v1/u17-unit/seed.json": "a50d681ec3980bc4f1ae3f69fe5bb577ead18aed83067b2959ae63fadfb681d3",
+    "artifacts/local/elliptic-curves/mestre-parent-calibration-v1/u19-outer/seed.json": "d40cd02da6d4a8ac07a102f617d3ef41bb91c36fface2bcd22f8c6e9da1be34c",
+    "artifacts/local/elliptic-curves/mestre-parent-calibration-v1/u19-unit/seed.json": "c0da57a33d3355a3bc283331f2909018a67b53bcc780f3e96672bcc413369534",
+    "artifacts/local/elliptic-curves/mestre-parent-calibration-v1/u23-outer/seed.json": "65d680e8f2f04325af5f9e5c4b80663d5a5f0deffd5ba6c9e1199d73a4eea831",
+    "artifacts/local/elliptic-curves/mestre-parent-calibration-v1/u23-unit/seed.json": "93372d6392b9e062b7cfe2b3e12571dae23fc70bf757561d7b642ac355638bc8",
+    "artifacts/local/elliptic-curves/mestre-parent-calibration-v1/u29-outer/seed.json": "7fda1747cd85245b3e78442bfdc086079831b04d367e695517103a3125eaa401",
+    "artifacts/local/elliptic-curves/mestre-parent-calibration-v1/u29-unit/seed.json": "fc6bb85ce7c5e5c8195f0f2504a4385923b0ecf81dc3097d973aed5a4960eda8",
+    "elliptic-curves/cas/certify_mestre_input_span.sage": "9353457b65e4a41654577df0f26b72587f63924fdbbb257934f15ddaa3db13a4"
+  },
+  "status": "PASS"
+}

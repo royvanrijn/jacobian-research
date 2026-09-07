@@ -1,0 +1,314 @@
+{
+  "rows": [
+    {
+      "exported_basis_rank": 14,
+      "groups": [
+        {
+          "double_subgroup_order": 8,
+          "order": 32,
+          "prime": 23,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 25,
+          "order": 50,
+          "prime": 37,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 27,
+          "order": 54,
+          "prime": 41,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 14,
+          "order": 56,
+          "prime": 43,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 27,
+          "order": 54,
+          "prime": 47,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 30,
+          "order": 60,
+          "prime": 53,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 18,
+          "order": 72,
+          "prime": 59,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 41,
+          "order": 82,
+          "prime": 67,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 43,
+          "order": 86,
+          "prime": 71,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 43,
+          "order": 86,
+          "prime": 73,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 47,
+          "order": 94,
+          "prime": 79,
+          "quotient_dimension": 1
+        }
+      ],
+      "input": "artifacts/generated-results/elliptic-curves/kihara_fresh_point_pilot_fibre0_mod2_v1.json",
+      "no_two_torsion_prime": 5,
+      "point_count": 14,
+      "union_finite_rank": 14
+    },
+    {
+      "exported_basis_rank": 14,
+      "groups": [
+        {
+          "double_subgroup_order": 5,
+          "order": 20,
+          "prime": 13,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 13,
+          "order": 26,
+          "prime": 19,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 16,
+          "order": 32,
+          "prime": 23,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 23,
+          "order": 46,
+          "prime": 41,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 34,
+          "order": 68,
+          "prime": 53,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 36,
+          "order": 72,
+          "prime": 59,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 32,
+          "order": 64,
+          "prime": 61,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 35,
+          "order": 70,
+          "prime": 71,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 41,
+          "order": 82,
+          "prime": 73,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 48,
+          "order": 96,
+          "prime": 79,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 21,
+          "order": 84,
+          "prime": 83,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 32,
+          "order": 128,
+          "prime": 107,
+          "quotient_dimension": 2
+        }
+      ],
+      "input": "artifacts/generated-results/elliptic-curves/kihara_fresh_point_pilot_fibre1_mod2_v1.json",
+      "no_two_torsion_prime": 17,
+      "point_count": 14,
+      "union_finite_rank": 14
+    },
+    {
+      "exported_basis_rank": 14,
+      "groups": [
+        {
+          "double_subgroup_order": 13,
+          "order": 26,
+          "prime": 19,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 27,
+          "order": 54,
+          "prime": 41,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 30,
+          "order": 60,
+          "prime": 47,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 33,
+          "order": 66,
+          "prime": 53,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 35,
+          "order": 70,
+          "prime": 61,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 40,
+          "order": 80,
+          "prime": 67,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 24,
+          "order": 96,
+          "prime": 79,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 50,
+          "order": 100,
+          "prime": 83,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 54,
+          "order": 108,
+          "prime": 89,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 56,
+          "order": 112,
+          "prime": 101,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 63,
+          "order": 126,
+          "prime": 107,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 53,
+          "order": 106,
+          "prime": 109,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 78,
+          "order": 156,
+          "prime": 137,
+          "quotient_dimension": 1
+        }
+      ],
+      "input": "artifacts/generated-results/elliptic-curves/kihara_fresh_point_pilot_fibre2_mod2_v1.json",
+      "no_two_torsion_prime": 17,
+      "point_count": 14,
+      "union_finite_rank": 14
+    },
+    {
+      "exported_basis_rank": 14,
+      "groups": [
+        {
+          "double_subgroup_order": 5,
+          "order": 20,
+          "prime": 13,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 13,
+          "order": 52,
+          "prime": 41,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 14,
+          "order": 56,
+          "prime": 43,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 15,
+          "order": 60,
+          "prime": 47,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 15,
+          "order": 60,
+          "prime": 53,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 17,
+          "order": 68,
+          "prime": 61,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 20,
+          "order": 80,
+          "prime": 67,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 48,
+          "order": 96,
+          "prime": 89,
+          "quotient_dimension": 1
+        }
+      ],
+      "input": "artifacts/generated-results/elliptic-curves/kihara_fresh_point_pilot_fibre3_mod2_v1.json",
+      "no_two_torsion_prime": 5,
+      "point_count": 14,
+      "union_finite_rank": 14
+    }
+  ],
+  "schema": "elliptic-curves.kihara-fresh-point-pilot-sage.v1",
+  "scope": "Standalone Sage point membership, complete finite groups and quotients by doubles, exported-basis independence and rational2-torsion exclusion. Only rank lower bounds; source search history is separately verified.",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/kihara_fresh_point_pilot_fibre0_mod2_v1.json": "c6af21b67a921f771db5ef78403b6a1c324f6b791f7c31798126f51df9c6fe8c",
+    "artifacts/generated-results/elliptic-curves/kihara_fresh_point_pilot_fibre1_mod2_v1.json": "9521e654a23f1e966d5680adc8be2001f0615b78eb353141352d4620428159bf",
+    "artifacts/generated-results/elliptic-curves/kihara_fresh_point_pilot_fibre2_mod2_v1.json": "b26a2c10808840e2f2fd7adebe802e48f84dbc8039180f90f76dc4fd007d1bef",
+    "artifacts/generated-results/elliptic-curves/kihara_fresh_point_pilot_fibre3_mod2_v1.json": "692f8ee63077da7775170c3c30bc16c94870a1d07fa89b54f110133cee0a6170",
+    "elliptic-curves/cas/verify_kihara_fresh_point_rank.sage": "a27b14de2548ddd3d6f700cdbeb8ad8dc92d31f152891819aa0411ea760089cb"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,2012 @@
+{
+  "all64_halves_double_to_D": true,
+  "all_half_height_records": [
+    {
+      "coefficient_max_bits": 2315,
+      "mumford_degree": 3,
+      "torsion_mask": 0
+    },
+    {
+      "coefficient_max_bits": 1838,
+      "mumford_degree": 3,
+      "torsion_mask": 1
+    },
+    {
+      "coefficient_max_bits": 2555,
+      "mumford_degree": 3,
+      "torsion_mask": 2
+    },
+    {
+      "coefficient_max_bits": 2009,
+      "mumford_degree": 3,
+      "torsion_mask": 3
+    },
+    {
+      "coefficient_max_bits": 1959,
+      "mumford_degree": 3,
+      "torsion_mask": 4
+    },
+    {
+      "coefficient_max_bits": 1647,
+      "mumford_degree": 3,
+      "torsion_mask": 5
+    },
+    {
+      "coefficient_max_bits": 2326,
+      "mumford_degree": 3,
+      "torsion_mask": 6
+    },
+    {
+      "coefficient_max_bits": 1767,
+      "mumford_degree": 3,
+      "torsion_mask": 7
+    },
+    {
+      "coefficient_max_bits": 2138,
+      "mumford_degree": 3,
+      "torsion_mask": 8
+    },
+    {
+      "coefficient_max_bits": 1724,
+      "mumford_degree": 3,
+      "torsion_mask": 9
+    },
+    {
+      "coefficient_max_bits": 2445,
+      "mumford_degree": 3,
+      "torsion_mask": 10
+    },
+    {
+      "coefficient_max_bits": 1872,
+      "mumford_degree": 3,
+      "torsion_mask": 11
+    },
+    {
+      "coefficient_max_bits": 1829,
+      "mumford_degree": 3,
+      "torsion_mask": 12
+    },
+    {
+      "coefficient_max_bits": 1467,
+      "mumford_degree": 3,
+      "torsion_mask": 13
+    },
+    {
+      "coefficient_max_bits": 1987,
+      "mumford_degree": 3,
+      "torsion_mask": 14
+    },
+    {
+      "coefficient_max_bits": 1893,
+      "mumford_degree": 3,
+      "torsion_mask": 16
+    },
+    {
+      "coefficient_max_bits": 1660,
+      "mumford_degree": 3,
+      "torsion_mask": 17
+    },
+    {
+      "coefficient_max_bits": 2166,
+      "mumford_degree": 3,
+      "torsion_mask": 18
+    },
+    {
+      "coefficient_max_bits": 1743,
+      "mumford_degree": 3,
+      "torsion_mask": 19
+    },
+    {
+      "coefficient_max_bits": 1752,
+      "mumford_degree": 3,
+      "torsion_mask": 20
+    },
+    {
+      "coefficient_max_bits": 1571,
+      "mumford_degree": 3,
+      "torsion_mask": 21
+    },
+    {
+      "coefficient_max_bits": 1877,
+      "mumford_degree": 3,
+      "torsion_mask": 22
+    },
+    {
+      "coefficient_max_bits": 1849,
+      "mumford_degree": 3,
+      "torsion_mask": 24
+    },
+    {
+      "coefficient_max_bits": 1644,
+      "mumford_degree": 3,
+      "torsion_mask": 25
+    },
+    {
+      "coefficient_max_bits": 2008,
+      "mumford_degree": 3,
+      "torsion_mask": 26
+    },
+    {
+      "coefficient_max_bits": 1548,
+      "mumford_degree": 3,
+      "torsion_mask": 28
+    },
+    {
+      "coefficient_max_bits": 1893,
+      "mumford_degree": 3,
+      "torsion_mask": 32
+    },
+    {
+      "coefficient_max_bits": 1579,
+      "mumford_degree": 3,
+      "torsion_mask": 33
+    },
+    {
+      "coefficient_max_bits": 2129,
+      "mumford_degree": 3,
+      "torsion_mask": 34
+    },
+    {
+      "coefficient_max_bits": 1695,
+      "mumford_degree": 3,
+      "torsion_mask": 35
+    },
+    {
+      "coefficient_max_bits": 1733,
+      "mumford_degree": 3,
+      "torsion_mask": 36
+    },
+    {
+      "coefficient_max_bits": 1489,
+      "mumford_degree": 3,
+      "torsion_mask": 37
+    },
+    {
+      "coefficient_max_bits": 1873,
+      "mumford_degree": 3,
+      "torsion_mask": 38
+    },
+    {
+      "coefficient_max_bits": 1856,
+      "mumford_degree": 3,
+      "torsion_mask": 40
+    },
+    {
+      "coefficient_max_bits": 1621,
+      "mumford_degree": 3,
+      "torsion_mask": 41
+    },
+    {
+      "coefficient_max_bits": 2031,
+      "mumford_degree": 3,
+      "torsion_mask": 42
+    },
+    {
+      "coefficient_max_bits": 1555,
+      "mumford_degree": 3,
+      "torsion_mask": 44
+    },
+    {
+      "coefficient_max_bits": 1564,
+      "mumford_degree": 3,
+      "torsion_mask": 48
+    },
+    {
+      "coefficient_max_bits": 1489,
+      "mumford_degree": 3,
+      "torsion_mask": 49
+    },
+    {
+      "coefficient_max_bits": 1679,
+      "mumford_degree": 3,
+      "torsion_mask": 50
+    },
+    {
+      "coefficient_max_bits": 1437,
+      "mumford_degree": 3,
+      "torsion_mask": 52
+    },
+    {
+      "coefficient_max_bits": 1584,
+      "mumford_degree": 3,
+      "torsion_mask": 56
+    },
+    {
+      "coefficient_max_bits": 1553,
+      "mumford_degree": 3,
+      "torsion_mask": 64
+    },
+    {
+      "coefficient_max_bits": 1525,
+      "mumford_degree": 3,
+      "torsion_mask": 65
+    },
+    {
+      "coefficient_max_bits": 1523,
+      "mumford_degree": 3,
+      "torsion_mask": 66
+    },
+    {
+      "coefficient_max_bits": 1486,
+      "mumford_degree": 3,
+      "torsion_mask": 67
+    },
+    {
+      "coefficient_max_bits": 1560,
+      "mumford_degree": 3,
+      "torsion_mask": 68
+    },
+    {
+      "coefficient_max_bits": 1739,
+      "mumford_degree": 3,
+      "torsion_mask": 69
+    },
+    {
+      "coefficient_max_bits": 1559,
+      "mumford_degree": 3,
+      "torsion_mask": 70
+    },
+    {
+      "coefficient_max_bits": 1500,
+      "mumford_degree": 3,
+      "torsion_mask": 72
+    },
+    {
+      "coefficient_max_bits": 1645,
+      "mumford_degree": 3,
+      "torsion_mask": 73
+    },
+    {
+      "coefficient_max_bits": 1521,
+      "mumford_degree": 3,
+      "torsion_mask": 74
+    },
+    {
+      "coefficient_max_bits": 1511,
+      "mumford_degree": 3,
+      "torsion_mask": 76
+    },
+    {
+      "coefficient_max_bits": 1494,
+      "mumford_degree": 3,
+      "torsion_mask": 80
+    },
+    {
+      "coefficient_max_bits": 1830,
+      "mumford_degree": 3,
+      "torsion_mask": 81
+    },
+    {
+      "coefficient_max_bits": 1458,
+      "mumford_degree": 3,
+      "torsion_mask": 82
+    },
+    {
+      "coefficient_max_bits": 1675,
+      "mumford_degree": 3,
+      "torsion_mask": 84
+    },
+    {
+      "coefficient_max_bits": 1611,
+      "mumford_degree": 3,
+      "torsion_mask": 88
+    },
+    {
+      "coefficient_max_bits": 1514,
+      "mumford_degree": 3,
+      "torsion_mask": 96
+    },
+    {
+      "coefficient_max_bits": 1841,
+      "mumford_degree": 3,
+      "torsion_mask": 97
+    },
+    {
+      "coefficient_max_bits": 1543,
+      "mumford_degree": 3,
+      "torsion_mask": 98
+    },
+    {
+      "coefficient_max_bits": 1713,
+      "mumford_degree": 3,
+      "torsion_mask": 100
+    },
+    {
+      "coefficient_max_bits": 1710,
+      "mumford_degree": 3,
+      "torsion_mask": 104
+    },
+    {
+      "coefficient_max_bits": 1658,
+      "mumford_degree": 3,
+      "torsion_mask": 112
+    }
+  ],
+  "boundary": "This is an explicit2-saturated rank-one subgroup, not a full Mordell-Weil basis or an exact rank determination. Other independent directions, odd-index enlargements and global nonWeierstrass points remain UNKNOWN. No new cover or302 parent is constructed.",
+  "curve_points_among_halves": [],
+  "exclusions_by_prime": [
+    131080,
+    48
+  ],
+  "finite_tables": [
+    {
+      "D_mumford": [
+        [
+          "38",
+          "18",
+          "6",
+          "1"
+        ],
+        [
+          "7",
+          "20",
+          "37"
+        ]
+      ],
+      "D_order": 2818,
+      "complete_word_image": [
+        {
+          "curve_point": {
+            "infinity": true
+          },
+          "n_residue": 0,
+          "torsion_mask": 0
+        },
+        {
+          "curve_point": {
+            "x": 21,
+            "y": 23
+          },
+          "n_residue": 2679,
+          "torsion_mask": 0
+        },
+        {
+          "curve_point": {
+            "x": 21,
+            "y": 24
+          },
+          "n_residue": 139,
+          "torsion_mask": 0
+        },
+        {
+          "curve_point": {
+            "x": 9,
+            "y": 0
+          },
+          "n_residue": 0,
+          "torsion_mask": 1
+        },
+        {
+          "curve_point": {
+            "x": 0,
+            "y": 0
+          },
+          "n_residue": 0,
+          "torsion_mask": 2
+        },
+        {
+          "curve_point": {
+            "x": 10,
+            "y": 0
+          },
+          "n_residue": 1409,
+          "torsion_mask": 3
+        },
+        {
+          "curve_point": {
+            "x": 1,
+            "y": 0
+          },
+          "n_residue": 0,
+          "torsion_mask": 4
+        },
+        {
+          "curve_point": {
+            "x": 39,
+            "y": 11
+          },
+          "n_residue": 2090,
+          "torsion_mask": 5
+        },
+        {
+          "curve_point": {
+            "x": 39,
+            "y": 36
+          },
+          "n_residue": 728,
+          "torsion_mask": 5
+        },
+        {
+          "curve_point": {
+            "x": 16,
+            "y": 10
+          },
+          "n_residue": 49,
+          "torsion_mask": 7
+        },
+        {
+          "curve_point": {
+            "x": 16,
+            "y": 37
+          },
+          "n_residue": 2769,
+          "torsion_mask": 7
+        },
+        {
+          "curve_point": {
+            "x": 23,
+            "y": 0
+          },
+          "n_residue": 0,
+          "torsion_mask": 8
+        },
+        {
+          "curve_point": {
+            "x": 30,
+            "y": 15
+          },
+          "n_residue": 1848,
+          "torsion_mask": 8
+        },
+        {
+          "curve_point": {
+            "x": 30,
+            "y": 32
+          },
+          "n_residue": 970,
+          "torsion_mask": 8
+        },
+        {
+          "curve_point": {
+            "x": 25,
+            "y": 9
+          },
+          "n_residue": 874,
+          "torsion_mask": 9
+        },
+        {
+          "curve_point": {
+            "x": 25,
+            "y": 38
+          },
+          "n_residue": 1944,
+          "torsion_mask": 9
+        },
+        {
+          "curve_point": {
+            "x": 14,
+            "y": 13
+          },
+          "n_residue": 2219,
+          "torsion_mask": 10
+        },
+        {
+          "curve_point": {
+            "x": 14,
+            "y": 34
+          },
+          "n_residue": 599,
+          "torsion_mask": 10
+        },
+        {
+          "curve_point": {
+            "x": 17,
+            "y": 11
+          },
+          "n_residue": 1008,
+          "torsion_mask": 11
+        },
+        {
+          "curve_point": {
+            "x": 17,
+            "y": 36
+          },
+          "n_residue": 1810,
+          "torsion_mask": 11
+        },
+        {
+          "curve_point": {
+            "x": 10,
+            "y": 0
+          },
+          "n_residue": 0,
+          "torsion_mask": 16
+        },
+        {
+          "curve_point": {
+            "x": 0,
+            "y": 0
+          },
+          "n_residue": 1409,
+          "torsion_mask": 17
+        },
+        {
+          "curve_point": {
+            "x": 9,
+            "y": 0
+          },
+          "n_residue": 1409,
+          "torsion_mask": 18
+        },
+        {
+          "curve_point": {
+            "infinity": true
+          },
+          "n_residue": 1409,
+          "torsion_mask": 19
+        },
+        {
+          "curve_point": {
+            "x": 21,
+            "y": 23
+          },
+          "n_residue": 1270,
+          "torsion_mask": 19
+        },
+        {
+          "curve_point": {
+            "x": 21,
+            "y": 24
+          },
+          "n_residue": 1548,
+          "torsion_mask": 19
+        },
+        {
+          "curve_point": {
+            "x": 16,
+            "y": 10
+          },
+          "n_residue": 1458,
+          "torsion_mask": 20
+        },
+        {
+          "curve_point": {
+            "x": 16,
+            "y": 37
+          },
+          "n_residue": 1360,
+          "torsion_mask": 20
+        },
+        {
+          "curve_point": {
+            "x": 39,
+            "y": 11
+          },
+          "n_residue": 681,
+          "torsion_mask": 22
+        },
+        {
+          "curve_point": {
+            "x": 39,
+            "y": 36
+          },
+          "n_residue": 2137,
+          "torsion_mask": 22
+        },
+        {
+          "curve_point": {
+            "x": 17,
+            "y": 11
+          },
+          "n_residue": 2417,
+          "torsion_mask": 24
+        },
+        {
+          "curve_point": {
+            "x": 17,
+            "y": 36
+          },
+          "n_residue": 401,
+          "torsion_mask": 24
+        },
+        {
+          "curve_point": {
+            "x": 14,
+            "y": 13
+          },
+          "n_residue": 810,
+          "torsion_mask": 25
+        },
+        {
+          "curve_point": {
+            "x": 14,
+            "y": 34
+          },
+          "n_residue": 2008,
+          "torsion_mask": 25
+        },
+        {
+          "curve_point": {
+            "x": 25,
+            "y": 9
+          },
+          "n_residue": 2283,
+          "torsion_mask": 26
+        },
+        {
+          "curve_point": {
+            "x": 25,
+            "y": 38
+          },
+          "n_residue": 535,
+          "torsion_mask": 26
+        },
+        {
+          "curve_point": {
+            "x": 24,
+            "y": 6
+          },
+          "n_residue": 2118,
+          "torsion_mask": 28
+        },
+        {
+          "curve_point": {
+            "x": 24,
+            "y": 41
+          },
+          "n_residue": 700,
+          "torsion_mask": 28
+        },
+        {
+          "curve_point": {
+            "x": 2,
+            "y": 0
+          },
+          "n_residue": 0,
+          "torsion_mask": 32
+        },
+        {
+          "curve_point": {
+            "x": 20,
+            "y": 23
+          },
+          "n_residue": 906,
+          "torsion_mask": 33
+        },
+        {
+          "curve_point": {
+            "x": 20,
+            "y": 24
+          },
+          "n_residue": 1912,
+          "torsion_mask": 33
+        },
+        {
+          "curve_point": {
+            "x": 27,
+            "y": 22
+          },
+          "n_residue": 121,
+          "torsion_mask": 35
+        },
+        {
+          "curve_point": {
+            "x": 27,
+            "y": 25
+          },
+          "n_residue": 2697,
+          "torsion_mask": 35
+        },
+        {
+          "curve_point": {
+            "x": 40,
+            "y": 10
+          },
+          "n_residue": 348,
+          "torsion_mask": 36
+        },
+        {
+          "curve_point": {
+            "x": 40,
+            "y": 37
+          },
+          "n_residue": 2470,
+          "torsion_mask": 36
+        },
+        {
+          "curve_point": {
+            "x": 3,
+            "y": 14
+          },
+          "n_residue": 1160,
+          "torsion_mask": 37
+        },
+        {
+          "curve_point": {
+            "x": 3,
+            "y": 33
+          },
+          "n_residue": 1658,
+          "torsion_mask": 37
+        },
+        {
+          "curve_point": {
+            "x": 32,
+            "y": 20
+          },
+          "n_residue": 2159,
+          "torsion_mask": 41
+        },
+        {
+          "curve_point": {
+            "x": 32,
+            "y": 27
+          },
+          "n_residue": 659,
+          "torsion_mask": 41
+        },
+        {
+          "curve_point": {
+            "x": 41,
+            "y": 2
+          },
+          "n_residue": 268,
+          "torsion_mask": 41
+        },
+        {
+          "curve_point": {
+            "x": 41,
+            "y": 45
+          },
+          "n_residue": 2550,
+          "torsion_mask": 41
+        },
+        {
+          "curve_point": {
+            "x": 38,
+            "y": 14
+          },
+          "n_residue": 1673,
+          "torsion_mask": 42
+        },
+        {
+          "curve_point": {
+            "x": 38,
+            "y": 33
+          },
+          "n_residue": 1145,
+          "torsion_mask": 42
+        },
+        {
+          "curve_point": {
+            "x": 6,
+            "y": 0
+          },
+          "n_residue": 1409,
+          "torsion_mask": 44
+        },
+        {
+          "curve_point": {
+            "x": 27,
+            "y": 22
+          },
+          "n_residue": 1530,
+          "torsion_mask": 48
+        },
+        {
+          "curve_point": {
+            "x": 27,
+            "y": 25
+          },
+          "n_residue": 1288,
+          "torsion_mask": 48
+        },
+        {
+          "curve_point": {
+            "x": 20,
+            "y": 23
+          },
+          "n_residue": 2315,
+          "torsion_mask": 50
+        },
+        {
+          "curve_point": {
+            "x": 20,
+            "y": 24
+          },
+          "n_residue": 503,
+          "torsion_mask": 50
+        },
+        {
+          "curve_point": {
+            "x": 46,
+            "y": 2
+          },
+          "n_residue": 1333,
+          "torsion_mask": 56
+        },
+        {
+          "curve_point": {
+            "x": 46,
+            "y": 45
+          },
+          "n_residue": 1485,
+          "torsion_mask": 56
+        },
+        {
+          "curve_point": {
+            "x": 6,
+            "y": 0
+          },
+          "n_residue": 0,
+          "torsion_mask": 64
+        },
+        {
+          "curve_point": {
+            "x": 32,
+            "y": 20
+          },
+          "n_residue": 750,
+          "torsion_mask": 69
+        },
+        {
+          "curve_point": {
+            "x": 32,
+            "y": 27
+          },
+          "n_residue": 2068,
+          "torsion_mask": 69
+        },
+        {
+          "curve_point": {
+            "x": 41,
+            "y": 2
+          },
+          "n_residue": 1677,
+          "torsion_mask": 69
+        },
+        {
+          "curve_point": {
+            "x": 41,
+            "y": 45
+          },
+          "n_residue": 1141,
+          "torsion_mask": 69
+        },
+        {
+          "curve_point": {
+            "x": 38,
+            "y": 14
+          },
+          "n_residue": 264,
+          "torsion_mask": 70
+        },
+        {
+          "curve_point": {
+            "x": 38,
+            "y": 33
+          },
+          "n_residue": 2554,
+          "torsion_mask": 70
+        },
+        {
+          "curve_point": {
+            "x": 40,
+            "y": 10
+          },
+          "n_residue": 1757,
+          "torsion_mask": 72
+        },
+        {
+          "curve_point": {
+            "x": 40,
+            "y": 37
+          },
+          "n_residue": 1061,
+          "torsion_mask": 72
+        },
+        {
+          "curve_point": {
+            "x": 3,
+            "y": 14
+          },
+          "n_residue": 2569,
+          "torsion_mask": 73
+        },
+        {
+          "curve_point": {
+            "x": 3,
+            "y": 33
+          },
+          "n_residue": 249,
+          "torsion_mask": 73
+        },
+        {
+          "curve_point": {
+            "x": 2,
+            "y": 0
+          },
+          "n_residue": 1409,
+          "torsion_mask": 76
+        },
+        {
+          "curve_point": {
+            "x": 46,
+            "y": 2
+          },
+          "n_residue": 2742,
+          "torsion_mask": 84
+        },
+        {
+          "curve_point": {
+            "x": 46,
+            "y": 45
+          },
+          "n_residue": 76,
+          "torsion_mask": 84
+        },
+        {
+          "curve_point": {
+            "x": 23,
+            "y": 0
+          },
+          "n_residue": 1409,
+          "torsion_mask": 100
+        },
+        {
+          "curve_point": {
+            "x": 30,
+            "y": 15
+          },
+          "n_residue": 439,
+          "torsion_mask": 100
+        },
+        {
+          "curve_point": {
+            "x": 30,
+            "y": 32
+          },
+          "n_residue": 2379,
+          "torsion_mask": 100
+        },
+        {
+          "curve_point": {
+            "x": 1,
+            "y": 0
+          },
+          "n_residue": 1409,
+          "torsion_mask": 104
+        },
+        {
+          "curve_point": {
+            "x": 24,
+            "y": 6
+          },
+          "n_residue": 709,
+          "torsion_mask": 112
+        },
+        {
+          "curve_point": {
+            "x": 24,
+            "y": 41
+          },
+          "n_residue": 2109,
+          "torsion_mask": 112
+        }
+      ],
+      "curve_point_count": 40,
+      "jacobian_order_bound": 90176,
+      "prime": 47,
+      "twice_D_is_nonzero": true,
+      "twice_D_mumford": [
+        [
+          "6",
+          "15",
+          "39",
+          "1"
+        ],
+        [
+          "33",
+          "14",
+          "30"
+        ]
+      ]
+    },
+    {
+      "D_mumford": [
+        [
+          "51",
+          "26",
+          "32",
+          "1"
+        ],
+        [
+          "34",
+          "24",
+          "47"
+        ]
+      ],
+      "D_order": 4624,
+      "complete_word_image": [
+        {
+          "curve_point": {
+            "infinity": true
+          },
+          "n_residue": 0,
+          "torsion_mask": 0
+        },
+        {
+          "curve_point": {
+            "x": 48,
+            "y": 24
+          },
+          "n_residue": 4069,
+          "torsion_mask": 0
+        },
+        {
+          "curve_point": {
+            "x": 48,
+            "y": 29
+          },
+          "n_residue": 555,
+          "torsion_mask": 0
+        },
+        {
+          "curve_point": {
+            "x": 47,
+            "y": 0
+          },
+          "n_residue": 0,
+          "torsion_mask": 1
+        },
+        {
+          "curve_point": {
+            "x": 0,
+            "y": 0
+          },
+          "n_residue": 0,
+          "torsion_mask": 2
+        },
+        {
+          "curve_point": {
+            "x": 15,
+            "y": 19
+          },
+          "n_residue": 3556,
+          "torsion_mask": 3
+        },
+        {
+          "curve_point": {
+            "x": 15,
+            "y": 34
+          },
+          "n_residue": 1068,
+          "torsion_mask": 3
+        },
+        {
+          "curve_point": {
+            "x": 1,
+            "y": 0
+          },
+          "n_residue": 0,
+          "torsion_mask": 4
+        },
+        {
+          "curve_point": {
+            "x": 24,
+            "y": 14
+          },
+          "n_residue": 1491,
+          "torsion_mask": 4
+        },
+        {
+          "curve_point": {
+            "x": 24,
+            "y": 39
+          },
+          "n_residue": 3133,
+          "torsion_mask": 4
+        },
+        {
+          "curve_point": {
+            "x": 35,
+            "y": 18
+          },
+          "n_residue": 170,
+          "torsion_mask": 5
+        },
+        {
+          "curve_point": {
+            "x": 35,
+            "y": 35
+          },
+          "n_residue": 4454,
+          "torsion_mask": 5
+        },
+        {
+          "curve_point": {
+            "x": 41,
+            "y": 22
+          },
+          "n_residue": 3437,
+          "torsion_mask": 5
+        },
+        {
+          "curve_point": {
+            "x": 41,
+            "y": 31
+          },
+          "n_residue": 1187,
+          "torsion_mask": 5
+        },
+        {
+          "curve_point": {
+            "x": 7,
+            "y": 23
+          },
+          "n_residue": 3787,
+          "torsion_mask": 6
+        },
+        {
+          "curve_point": {
+            "x": 7,
+            "y": 30
+          },
+          "n_residue": 837,
+          "torsion_mask": 6
+        },
+        {
+          "curve_point": {
+            "x": 5,
+            "y": 0
+          },
+          "n_residue": 2312,
+          "torsion_mask": 7
+        },
+        {
+          "curve_point": {
+            "x": 27,
+            "y": 0
+          },
+          "n_residue": 0,
+          "torsion_mask": 8
+        },
+        {
+          "curve_point": {
+            "x": 43,
+            "y": 22
+          },
+          "n_residue": 1614,
+          "torsion_mask": 9
+        },
+        {
+          "curve_point": {
+            "x": 43,
+            "y": 31
+          },
+          "n_residue": 3010,
+          "torsion_mask": 9
+        },
+        {
+          "curve_point": {
+            "x": 38,
+            "y": 2
+          },
+          "n_residue": 2295,
+          "torsion_mask": 11
+        },
+        {
+          "curve_point": {
+            "x": 38,
+            "y": 51
+          },
+          "n_residue": 2329,
+          "torsion_mask": 11
+        },
+        {
+          "curve_point": {
+            "x": 42,
+            "y": 8
+          },
+          "n_residue": 918,
+          "torsion_mask": 11
+        },
+        {
+          "curve_point": {
+            "x": 42,
+            "y": 45
+          },
+          "n_residue": 3706,
+          "torsion_mask": 11
+        },
+        {
+          "curve_point": {
+            "x": 44,
+            "y": 0
+          },
+          "n_residue": 0,
+          "torsion_mask": 16
+        },
+        {
+          "curve_point": {
+            "x": 51,
+            "y": 1
+          },
+          "n_residue": 4022,
+          "torsion_mask": 17
+        },
+        {
+          "curve_point": {
+            "x": 51,
+            "y": 52
+          },
+          "n_residue": 602,
+          "torsion_mask": 17
+        },
+        {
+          "curve_point": {
+            "x": 16,
+            "y": 10
+          },
+          "n_residue": 3069,
+          "torsion_mask": 18
+        },
+        {
+          "curve_point": {
+            "x": 16,
+            "y": 43
+          },
+          "n_residue": 1555,
+          "torsion_mask": 18
+        },
+        {
+          "curve_point": {
+            "x": 36,
+            "y": 16
+          },
+          "n_residue": 712,
+          "torsion_mask": 18
+        },
+        {
+          "curve_point": {
+            "x": 36,
+            "y": 37
+          },
+          "n_residue": 3912,
+          "torsion_mask": 18
+        },
+        {
+          "curve_point": {
+            "x": 12,
+            "y": 19
+          },
+          "n_residue": 1874,
+          "torsion_mask": 19
+        },
+        {
+          "curve_point": {
+            "x": 12,
+            "y": 34
+          },
+          "n_residue": 2750,
+          "torsion_mask": 19
+        },
+        {
+          "curve_point": {
+            "x": 14,
+            "y": 17
+          },
+          "n_residue": 3580,
+          "torsion_mask": 19
+        },
+        {
+          "curve_point": {
+            "x": 14,
+            "y": 36
+          },
+          "n_residue": 1044,
+          "torsion_mask": 19
+        },
+        {
+          "curve_point": {
+            "x": 31,
+            "y": 1
+          },
+          "n_residue": 4589,
+          "torsion_mask": 19
+        },
+        {
+          "curve_point": {
+            "x": 31,
+            "y": 52
+          },
+          "n_residue": 35,
+          "torsion_mask": 19
+        },
+        {
+          "curve_point": {
+            "x": 3,
+            "y": 8
+          },
+          "n_residue": 1159,
+          "torsion_mask": 22
+        },
+        {
+          "curve_point": {
+            "x": 3,
+            "y": 45
+          },
+          "n_residue": 3465,
+          "torsion_mask": 22
+        },
+        {
+          "curve_point": {
+            "x": 23,
+            "y": 9
+          },
+          "n_residue": 4215,
+          "torsion_mask": 22
+        },
+        {
+          "curve_point": {
+            "x": 23,
+            "y": 44
+          },
+          "n_residue": 409,
+          "torsion_mask": 22
+        },
+        {
+          "curve_point": {
+            "x": 4,
+            "y": 9
+          },
+          "n_residue": 1397,
+          "torsion_mask": 24
+        },
+        {
+          "curve_point": {
+            "x": 4,
+            "y": 44
+          },
+          "n_residue": 3227,
+          "torsion_mask": 24
+        },
+        {
+          "curve_point": {
+            "x": 25,
+            "y": 0
+          },
+          "n_residue": 2312,
+          "torsion_mask": 24
+        },
+        {
+          "curve_point": {
+            "x": 22,
+            "y": 5
+          },
+          "n_residue": 2814,
+          "torsion_mask": 25
+        },
+        {
+          "curve_point": {
+            "x": 22,
+            "y": 48
+          },
+          "n_residue": 1810,
+          "torsion_mask": 25
+        },
+        {
+          "curve_point": {
+            "x": 4,
+            "y": 9
+          },
+          "n_residue": 3709,
+          "torsion_mask": 32
+        },
+        {
+          "curve_point": {
+            "x": 4,
+            "y": 44
+          },
+          "n_residue": 915,
+          "torsion_mask": 32
+        },
+        {
+          "curve_point": {
+            "x": 25,
+            "y": 0
+          },
+          "n_residue": 0,
+          "torsion_mask": 32
+        },
+        {
+          "curve_point": {
+            "x": 22,
+            "y": 5
+          },
+          "n_residue": 502,
+          "torsion_mask": 33
+        },
+        {
+          "curve_point": {
+            "x": 22,
+            "y": 48
+          },
+          "n_residue": 4122,
+          "torsion_mask": 33
+        },
+        {
+          "curve_point": {
+            "x": 32,
+            "y": 21
+          },
+          "n_residue": 2683,
+          "torsion_mask": 35
+        },
+        {
+          "curve_point": {
+            "x": 32,
+            "y": 32
+          },
+          "n_residue": 1941,
+          "torsion_mask": 35
+        },
+        {
+          "curve_point": {
+            "x": 9,
+            "y": 8
+          },
+          "n_residue": 2977,
+          "torsion_mask": 37
+        },
+        {
+          "curve_point": {
+            "x": 9,
+            "y": 45
+          },
+          "n_residue": 1647,
+          "torsion_mask": 37
+        },
+        {
+          "curve_point": {
+            "x": 44,
+            "y": 0
+          },
+          "n_residue": 2312,
+          "torsion_mask": 40
+        },
+        {
+          "curve_point": {
+            "x": 51,
+            "y": 1
+          },
+          "n_residue": 1710,
+          "torsion_mask": 41
+        },
+        {
+          "curve_point": {
+            "x": 51,
+            "y": 52
+          },
+          "n_residue": 2914,
+          "torsion_mask": 41
+        },
+        {
+          "curve_point": {
+            "x": 16,
+            "y": 10
+          },
+          "n_residue": 757,
+          "torsion_mask": 42
+        },
+        {
+          "curve_point": {
+            "x": 16,
+            "y": 43
+          },
+          "n_residue": 3867,
+          "torsion_mask": 42
+        },
+        {
+          "curve_point": {
+            "x": 36,
+            "y": 16
+          },
+          "n_residue": 3024,
+          "torsion_mask": 42
+        },
+        {
+          "curve_point": {
+            "x": 36,
+            "y": 37
+          },
+          "n_residue": 1600,
+          "torsion_mask": 42
+        },
+        {
+          "curve_point": {
+            "x": 27,
+            "y": 0
+          },
+          "n_residue": 2312,
+          "torsion_mask": 48
+        },
+        {
+          "curve_point": {
+            "x": 43,
+            "y": 22
+          },
+          "n_residue": 3926,
+          "torsion_mask": 49
+        },
+        {
+          "curve_point": {
+            "x": 43,
+            "y": 31
+          },
+          "n_residue": 698,
+          "torsion_mask": 49
+        },
+        {
+          "curve_point": {
+            "infinity": true
+          },
+          "n_residue": 2312,
+          "torsion_mask": 56
+        },
+        {
+          "curve_point": {
+            "x": 48,
+            "y": 24
+          },
+          "n_residue": 1757,
+          "torsion_mask": 56
+        },
+        {
+          "curve_point": {
+            "x": 48,
+            "y": 29
+          },
+          "n_residue": 2867,
+          "torsion_mask": 56
+        },
+        {
+          "curve_point": {
+            "x": 5,
+            "y": 0
+          },
+          "n_residue": 0,
+          "torsion_mask": 64
+        },
+        {
+          "curve_point": {
+            "x": 7,
+            "y": 23
+          },
+          "n_residue": 1475,
+          "torsion_mask": 65
+        },
+        {
+          "curve_point": {
+            "x": 7,
+            "y": 30
+          },
+          "n_residue": 3149,
+          "torsion_mask": 65
+        },
+        {
+          "curve_point": {
+            "x": 35,
+            "y": 18
+          },
+          "n_residue": 2482,
+          "torsion_mask": 66
+        },
+        {
+          "curve_point": {
+            "x": 35,
+            "y": 35
+          },
+          "n_residue": 2142,
+          "torsion_mask": 66
+        },
+        {
+          "curve_point": {
+            "x": 41,
+            "y": 22
+          },
+          "n_residue": 1125,
+          "torsion_mask": 66
+        },
+        {
+          "curve_point": {
+            "x": 41,
+            "y": 31
+          },
+          "n_residue": 3499,
+          "torsion_mask": 66
+        },
+        {
+          "curve_point": {
+            "x": 1,
+            "y": 0
+          },
+          "n_residue": 2312,
+          "torsion_mask": 67
+        },
+        {
+          "curve_point": {
+            "x": 24,
+            "y": 14
+          },
+          "n_residue": 3803,
+          "torsion_mask": 67
+        },
+        {
+          "curve_point": {
+            "x": 24,
+            "y": 39
+          },
+          "n_residue": 821,
+          "torsion_mask": 67
+        },
+        {
+          "curve_point": {
+            "x": 15,
+            "y": 19
+          },
+          "n_residue": 1244,
+          "torsion_mask": 68
+        },
+        {
+          "curve_point": {
+            "x": 15,
+            "y": 34
+          },
+          "n_residue": 3380,
+          "torsion_mask": 68
+        },
+        {
+          "curve_point": {
+            "x": 0,
+            "y": 0
+          },
+          "n_residue": 2312,
+          "torsion_mask": 69
+        },
+        {
+          "curve_point": {
+            "x": 47,
+            "y": 0
+          },
+          "n_residue": 2312,
+          "torsion_mask": 70
+        },
+        {
+          "curve_point": {
+            "x": 38,
+            "y": 2
+          },
+          "n_residue": 4607,
+          "torsion_mask": 76
+        },
+        {
+          "curve_point": {
+            "x": 38,
+            "y": 51
+          },
+          "n_residue": 17,
+          "torsion_mask": 76
+        },
+        {
+          "curve_point": {
+            "x": 42,
+            "y": 8
+          },
+          "n_residue": 3230,
+          "torsion_mask": 76
+        },
+        {
+          "curve_point": {
+            "x": 42,
+            "y": 45
+          },
+          "n_residue": 1394,
+          "torsion_mask": 76
+        },
+        {
+          "curve_point": {
+            "x": 3,
+            "y": 8
+          },
+          "n_residue": 3471,
+          "torsion_mask": 81
+        },
+        {
+          "curve_point": {
+            "x": 3,
+            "y": 45
+          },
+          "n_residue": 1153,
+          "torsion_mask": 81
+        },
+        {
+          "curve_point": {
+            "x": 23,
+            "y": 9
+          },
+          "n_residue": 1903,
+          "torsion_mask": 81
+        },
+        {
+          "curve_point": {
+            "x": 23,
+            "y": 44
+          },
+          "n_residue": 2721,
+          "torsion_mask": 81
+        },
+        {
+          "curve_point": {
+            "x": 12,
+            "y": 19
+          },
+          "n_residue": 4186,
+          "torsion_mask": 84
+        },
+        {
+          "curve_point": {
+            "x": 12,
+            "y": 34
+          },
+          "n_residue": 438,
+          "torsion_mask": 84
+        },
+        {
+          "curve_point": {
+            "x": 14,
+            "y": 17
+          },
+          "n_residue": 1268,
+          "torsion_mask": 84
+        },
+        {
+          "curve_point": {
+            "x": 14,
+            "y": 36
+          },
+          "n_residue": 3356,
+          "torsion_mask": 84
+        },
+        {
+          "curve_point": {
+            "x": 31,
+            "y": 1
+          },
+          "n_residue": 2277,
+          "torsion_mask": 84
+        },
+        {
+          "curve_point": {
+            "x": 31,
+            "y": 52
+          },
+          "n_residue": 2347,
+          "torsion_mask": 84
+        },
+        {
+          "curve_point": {
+            "x": 46,
+            "y": 12
+          },
+          "n_residue": 3048,
+          "torsion_mask": 88
+        },
+        {
+          "curve_point": {
+            "x": 46,
+            "y": 41
+          },
+          "n_residue": 1576,
+          "torsion_mask": 88
+        },
+        {
+          "curve_point": {
+            "x": 46,
+            "y": 12
+          },
+          "n_residue": 736,
+          "torsion_mask": 96
+        },
+        {
+          "curve_point": {
+            "x": 46,
+            "y": 41
+          },
+          "n_residue": 3888,
+          "torsion_mask": 96
+        },
+        {
+          "curve_point": {
+            "x": 9,
+            "y": 8
+          },
+          "n_residue": 665,
+          "torsion_mask": 98
+        },
+        {
+          "curve_point": {
+            "x": 9,
+            "y": 45
+          },
+          "n_residue": 3959,
+          "torsion_mask": 98
+        },
+        {
+          "curve_point": {
+            "x": 32,
+            "y": 21
+          },
+          "n_residue": 371,
+          "torsion_mask": 100
+        },
+        {
+          "curve_point": {
+            "x": 32,
+            "y": 32
+          },
+          "n_residue": 4253,
+          "torsion_mask": 100
+        }
+      ],
+      "curve_point_count": 52,
+      "jacobian_order_bound": 147968,
+      "prime": 53,
+      "twice_D_is_nonzero": true,
+      "twice_D_mumford": [
+        [
+          "21",
+          "9",
+          "27",
+          "1"
+        ],
+        [
+          "20",
+          "11",
+          "5"
+        ]
+      ]
+    }
+  ],
+  "halving_reference": "Michael Stoll, Chabauty without the Mordell-Weil group, Proposition5.1",
+  "halving_reference_url": "https://www.mathe2.uni-bayreuth.de/stoll/papers/ratpts-selmer-2016-12-07.pdf",
+  "index_of_old_group_in_new": 2,
+  "input_sha256": {
+    "artifacts/generated-results/elkies-k3-curve302-branch-jacobian-generator-v1.json": "89850256b3c622add5aeb308a1e074dc69a920081cb609208aefeecabc287596",
+    "elkies-k3/scripts/certify_curve302_branch_jacobian_generator.sage": "9f40935ef67a8157761e2a53a5c4d4d9440b2a07cbb61d11d42a66e5808a6575",
+    "elkies-k3/scripts/enlarge_curve302_branch_jacobian.sage": "9894fa3a719b863c9c09dcaca31b0e1ccbdf2b64adbdd3742a125f3c87a82691"
+  },
+  "interpolated_square_root_S": [
+    "522218957217335147538378241914220440595570951771188071300550678926764413379697185577805687069769180839228545244170223881259610033642678363710197024363992747074147029585922311053348543061287653141485477951307297370282293416487601537767232806353087033674360997741377206445990774057536188365155100654578338456597295799753261770186806679818135593515541841233295156655767252485393513164414332895739782065176261176457781046540176650271604754921916696395311327768027615039271470663834993788007093093207859607143502914191319399434760511064402560597552646886271684566724081472136701658759390547081619654025604981819985926658094632668387791299624463186374705015908072060061879478086052478065641764563792794204153331355652000/13",
+    "9692865866006395019235936362440233498303812134803281527481897631292656709920158096286781747520465911515643179797822168419012181110095989270525586535371549574672519174915040041051548809398668190198081078011038207396131787658561492280152479977019788530203154664101271769615401619587821189143348954809868179711695614251844724564225395941455911612903483317222495626398134712617380904551060624757137575585049929965926733422542627091030947448846759969232500535242488790914996581849167466392799245316840183335885226941821130685042255041279041930637307399319100792529782591796631502394309744741236418169202101018319344682641474981503676785196830388193850220028170635428884708008581604206800228363745173094511049599697688316453025442041483339582515714628273052026902818950038944832267306133045770700858781697687377947005268937254794654311435109297768774217099600014125479285347128861816083153439938084374332843787239693660242926723917877670553484636035830095838314057710186063603084208206697217631696833755711253161078722928729609977336608799532116881985793020628661145321296952005931224896641817660516139602622238516631969349037565605705880686737073241222175559089356683098920835475938833768276530659085741646443698523296427601282763069256577527544669252093981252738757970825959977604642390607855401028101023410447654991474080651945724116354852247211638740733972615704007587395431766911823073043626354622182917278696263118452604384353695992861783788995675506670838819223994593980210170990322258334789018104609847481600699587579185370468755088369199560058232611620098229676630812806309688912631396495941576894311974965925521039946983847321648326097195707875494055676041880061524043798179123870089858821002547396376061559526392641691513918737772861291098220852821372565670610638655391799689998710136291617945226498678324680822916185604137837347542695958619624126392245630873052314221136680351091518890375/43187762148060932551325829262133334319626196554002139427217459116392266835404189953064545312180265019973628930709968203617488456511012631152643481376364306427314244090606264642959404766163692890786627815964587008324633845103373725583931698699859599992794703073410690674678228702295784890293927061262855851379145766975566800081397951411576206781850666885100498736756819060622590251340217466869723708191459474535233958115302316650445758741921159062563086667985087183310232741570432040740633645065261329942876045535472961730467086153526256241985388509248274252273185580625753093944445478690552473209262211409003756675112356664821316981668683048795539052417197608162444388027675156366139284149783110069108497797018097745300214028324392869222352394027169541787310280067197984798589468367608548355902442202027835149007725308194523686802889556010091033357435044141137717599841647660537191372168186923740945903748258244737776993139995621142308986728092058008153542476365125884435449790640280627112814576562628473403307373080406641557781177624886849417291040819873537101724211793250966691106759638287916756429088050395896694550838760147757859892646411331426805983625264744186407184475083831",
+    "77916567571822157649741115115741435880214496793182072505733215391695722177586205320059822444099116415039940622106902042798232966156313211026384480056703401802464359456936369052596173525298597979197783687256686529917968776802194848308454086700822740448891920263116352419849491577075976547246629053975072563466864599257238455559731744291209992169029801696946474450004565422087897140080760286238614414804470356986229204004583492044751733518290871560160828309918858930083364792062760379532933594969413289771836601834638619268693222108013701653543038185302371671230173392472415661757216093006636832957776007009749818873110765259479433121831249349725217560277310037073825504196491225841172283422994755434133979448608500321018246171887389193761025330308399463580603415002991398191468436367588276150714171800098262169026536961487526738186851166108657912033840178668790378612290321078278688653274761593397888892000605189124051551347758076973135581232730120055944319499139522241937457622184231612682247316838369149604748085839353450512432187713002040140170199596824689030166663464169732117480389694114893289192221530942103658844999187068415931613405089862514523914781566634793697939140807333709581719816615194405049304710746176810089584655859591961820201421085966162394839912173071708748290370976732499960597117931128059065462916319471498509303043560658324024731058666729647348454211291693050857097255766817371323192292179588950646898795816650068573986415175650840629806080477502790945104074074319318478195649531197360762629948248195150663286886343411897367925149466152074631746359004830374155800711867746877815073766102017044440623978930162404806184256505003021212098093139679181498864135489002391071943297658009194540048028189868963768605388072295078648387546310982842885089779239053131767991007275132418954163166987052533291558578806849704439147454611856521446898380313106141841650182461855472185208296762130313765316977300734125/465441034215992515893916545224050051874676208724068697434591545386059299504536540539265765656046987955250764038358879948968947395429494085806511886462225155953689118551581005283228016410416891505427525687100977627423636640484025743801532658934774671860123298226471685562238217854916459795596517443219053336602538781144627056410610351217138217038523062736079812373391118666946539520981947221797978459387780368559973934655299406123593169154390713535403599694623872507293667870749111427692581783612023941027171556271312010090995045719098855354267421409305495788333541916669423228531257871145846526652729475466119094090749700218239451554367770419587522224458749594653569905828510789906789147052742536721919239035792845436679939654536663307321494606123311185961237209956756393801820683906943280217935247292987442492759668150342327312460043850874900500359893498457361010658004847941182582040782868139550255623088064740072291911608324572639813225872351064034398247937597819991169534426382556495799811393835117988841173158580338877924925698881602565189358286889566074693451827799011381516912248027033918084589850894976766793505092574067652703236822182462769890715979894294249145399140176703096024568861043929004264488",
+    "-130186139804787751109958819816242574714382189118075652216596699430522567533877163888664568707884210046413048459393339068376904046607330910244662955544693829276114124082537349276524092678981796262568384930211838805369567704221317545401597636706217418879750940580018759134772061786660913197473198289890544381058445175123689478959673072718862439773959061290030768746663084037013777391523343976399952035776761092390198957637571610048937910000020933972002152463347166404561637239454279822321639137716536328379834638144271266692175219255505140727639190232375052570185491920079038518640917022384820715770919185714530258292279640872561893093794318654168287303057274501785927940992753602961792865378479427629676146661699142257519706232302501541436693155083894554981548945200000998400665200018798155700664931617663711772289500119183051577359458969522923294492103219697417308315520437400391147574983112286792809089838220939851020350882934613663340519388387212381490128522707807599961176786660772467600940119567463396179857635207184425541997015403645765949666774398860884905901936370950184343964331535747857448773104571973675418284290984466881046328024425738095772573443747126164048104067423711683535032750608458845070973101949822351870206690765406119725085058189363460907232635293905745045293711313742694378248465862766176353917729162750786604776104399858758272826092262279397948376806485668762625788762831444396967014649269567938560530383035346766503208483040661850527259513611414109693119342712591501653218085653102943296253941674828186221080636232852895838438615407417248289281582685231510667795257386145528378954207140226687572492454037371982787641643913030966238450154730156371039025548246038733313095636638812745644273215786671455037767443509937489729209721026450324063295275346991977679291485101004589032708020181185320225262477691749301073753825297632371036639264728859478170397820336173394398666380776714301186617156906411553392210029812935106174297125/86113790719921694293875530422933124439570247839139383202483901946883200192625435644901515909300123501209066669600724879423019283634236325438632874648485299805276321849987010563081142528192526921860497785344495470080146063808143795398067048534588268228873913204023638024183721089814999853655671662479302693227585658445544029860900126521127749415209589444733316261490352131899833270382278947963828058248163857674901071855172363306061879689989915617661336642450934673327125206098981444287510303896730088592084347655541206885993390737123986566963498780149583365569680974389584403841439565285841488943545422829195935326023150041949525868557306456674262025390131526570581628755524951910491545623278244128663161118134776700414895991160127692187718145454311632430242536191527430247243630924263653465354311699570822232458000794429284614318628847048675161207515083688291759710640920400696096452215639411202887877178852989876163105725354337981885522311641854256618888610043629555156169848902599382592770187939656851384057509906850630028211935411376705129543300716877960769962553089618549123883350326432738215085262002316641153378914877798100224930416956800496107729900494129444978634043980709675366763569667720352979855145751026856186772785747712",
+    "51193292303910136879682290913456342857791507755071095483116656493186195969351311829131224232641132582032242828400615369195874884522518104007029228163528382855520591559434880941184948335794093711176653340496818015231456158113976124429149982447022164578937055287985747235652402044222091679922970822867727106700044820913328352012222819751572457989326001310644957291867568576989508958960076969895902382554700124294395663912526433431532896156062530154948584794461461003912639817160774514542797882763257144123618680710556176734818514131703454587679393371267211558266298278902530740371122541186836544474383631611653999603218242435936791099784862528076310344712123710163045325653355525443269071442862233733486769078006885892781685313156639408755885477965941104712948325551815598676890690187198924790587970123647044674671476490709484169898347127948890483487753829722380919800998447455561929236373574688389055488135772270555758777499440435142083084228833927682272469047391891875131414556961883926757590866029007930877762069066600809907530720013798843238758158201523721222367224442518007264481415755421618175503261885654171813145771815093323135335235551735141510362502373929491467740623340677822628685461720596638105422301177511336757414798736972006195160233746822561959311779892854015128696768546637318491191718741248339278543983369889253467021226172800943059637635192078237938494435426270292465286632836204878806461702577105005147434591072436976495961401931459186074828493602637956060165807472867965513085357965595469265888380764965301873323561491547478563598386429815812858220817649997334185841044816087067490580221874338401242908337585389647234405359409456504735983715735606569856263953727060793305209588633413996268818607096041266542148641903474083032586883019556837829434332863026658456741899239268112374317958442136287125895779500622500557202309280374161465379916535908176906357697691770445361495285769015955487964160379026365496823430525706039486708191524220365083099131630805625/11067009007364273836433701977318843782311695364775600661178759134537840376314947329018931296703832227790972534552932792822261152041406395512593028432020103919908472418696715676333314031935053426682645573629247015020136845036778186112572183644012429638483110089908556703650862159249169373661019172023343457731597493730569795875080850100211574528605192852816700872545667665738962476909959932837341678053102646550615606876244597589591211004906613958817624277475524952381983629932848303938472048974950582118402825406217608544779379953337208951221142011161374706959125915458140152661816450891614008759616498823956201568720168295654798733897692922133190699996496181201446113091547801935920375180399157518966868822824695172413126531117804279627182739411434982883024786761360076002534037502213506283382114770927352833626035216566237299090337249630873964438429312245797881675684392273547323401725246413305062167606143797618298747777565936998335463422175067319472811478596707152944975846862282055917560423485279609349471974393955412472615183412405996720373890181435034657245045320104995497743531740600140007075147360837930275912976091687745829031010713957108863259945789807287573133066069992203864899020829221734671009122839222398694260032645212480549288682509012393654272",
+    "106568381543779265409493854855233312360199086589400492989117546500194288058499806662258599886599708684178013707207079202194772225113044120378753899106905722171695733859057901990414679440066034263001210079757877491669512025227734685341452159678099176000311686309839099956620898933231756133561914755396715987371139067773941120701407177926699998782889593882013457703954296648041146067680842102122834122205300368452314004945882212777352069095305462064841055199030953395299714705368904249038374212172813087480449963549103954355103067356896261380754279177582154410876316195326796218902777097939947173263484375182745640739324295599254495062496377307973396441722829424109734402833495198608483407823607357878658456692820665359561150978862328487374038802113968378752183928499467370328647595262490107401376619885959759525230922363438080082561323675073388002195745609899668891166820146055199545768703179274831354090529398182163530113618655114081124965816232257242048324322748934607141120724472253033785627897111366858568795892035259806014050127474519418371920347794270111284883938003347240414009634602532903022129896622809351735020604065347037383824539722408851591573058703527752267125995428437257190007227528834257713368208722801354531600882713602927174344964509892875000550319393884705919020585122052046420469990093057735969627637595176949565635457539379088208228175373906840640388314406942471105200742331127971853273571504140700349875127948684294220472983449795981158202128533043653911523635385746045570711673461076812361330368639889392048019235141270898091613192926670945744128891455784905643240235016916170061748737262169666517054627022806912986236437502659178329490110285510742825223435830101834116952224952792340278254618661569668405254522192476737610120207010105937240156468298929997130654071166183886391590379294415130079525266963717348859474733811107183393139427779432141609278692033193839442516521602858089897514478852535847676113947965696829713921961923380415785810777742479891694115665577972572012375/23445847004877300811439504252410111438322612372846724267290022187285864895064464572675685158343576075147164805439499574310355963873785345638728728963311074649328219947040234844749014274696975274134754637380730591008704820324926039429663953078192526920832186302607890003099607147451077734565287625109652492461814112390933673867180446251718636095616085582645304592206987098915948504148208105514710735381637933400029843184188122947270009999893004898397563165940126964669289757144943939910776592230831774313794182674509585029551757626582908538747818209063767068440130323411532141566854564098397942477211305770839596488447757793750802638658615934861526568603657648183883780520816500780128876523146742441272486542228327410428847566354012386769002754988999326413659517399158664131789875701162334982426573108885571888492223069278710276792777461683585841289131934138736871055269239660863091073295627217501067441575063967893998184284918875472514760469148136773711977176990837990968588239600131420457932449439665377710723712126869464489863898854791810767652962664841174643143790441272097652537813219005065383672474702813516330281498010287500891237325418293096690952211128891520351278691132139632972050197980282084132272965542744272770209546895077138450878779037313977464370220011601673635109883904",
+    "-61042955659129256484476671162112632050283820821189893556326944455465808486138569416617730357630037174098398291094961374304675976960355716737370567317850784908512501230838268638851158158572757032963833278252450256378532484389346691221214865381433318374951331770366662666558170043578693393601817944794115182854606197600760065814598117793730945621638703434490634581001043198431031593256744519652679510509458529512404013083838624945893316054673354566773323202998098938700991476808082800551026695365186844252949467182275131665098843027071838604973046233963050686014474845526300727381364317851041729091110754789392394152428689018656835621307102507700661983067459100012347330432814500530100161913949022853262365055759116077643621038490541595213455548514394154306604998167750912868439240716427695292102893387706412647953765538651070448245836725612213343701290861518839084276196842614556546836860896171452723578674106884052837066931086493249710714508593055199041606733929670167006371897753366453734584638533499374054841149337611634113056914570555260908868834896070758259942081823401060818000038662748385406882742297564343115600343632205689967006709536980880310825045661667798792185783834290121135066252774589213757111569157724489427770519449979503527633687883919544088191184521934431030069827256586329531173646662526207564547955649588250234608125934018584966270229536085995276513224655300592017418469324278268106809187972684141421662313411040713451266912857745879837288849494310634820444820826702076694899264040740624355828951172742509317987751302774794518691382138108043898948966960522957936072763812513368771087300988484450213534435796408530014077398368692000366375075124040577523959544501878582098685988820526333421823774224159208681500886438685304200969858681295764535818638833935463493178035113440829862353737687975494318119031222375643862871862145905395455062322172273863611984892425382894127246754505476118198156267704655453831817444022233192519363503736166776022113176435452283663512767211692182659375/7815282334959100270479834750803370479440870790948908089096674062428621631688154857558561719447858691715721601813166524770118654624595115212909576321103691549776073315680078281583004758232325091378251545793576863669568273441642013143221317692730842306944062100869296667699869049150359244855095875036550830820604704130311224622393482083906212031872028527548434864068995699638649501382736035171570245127212644466676614394729374315756669999964334966132521055313375654889763252381647979970258864076943924771264727558169861676517252542194302846249272736354589022813376774470510713855618188032799314159070435256946532162815919264583600879552871978287175522867885882727961260173605500260042958841048914147090828847409442470142949188784670795589667584996333108804553172466386221377263291900387444994142191036295190629497407689759570092264259153894528613763043978046245623685089746553621030357765209072500355813858354655964666061428306291824171586823049378924570659058996945996989529413200043806819310816479888459236907904042289821496621299618263936922550987554947058214381263480424032550845937739668355127890824900937838776760499336762500297079108472764365563650737042963840117092897044046544324016732660094028044090988514248090923403182298359046150292926345771325821456740003867224545036627968"
+  ],
+  "known_Weierstrass_survivors": [
+    {
+      "n": 0,
+      "torsion_mask": 0
+    },
+    {
+      "n": 0,
+      "torsion_mask": 1
+    },
+    {
+      "n": 0,
+      "torsion_mask": 2
+    },
+    {
+      "n": 0,
+      "torsion_mask": 4
+    },
+    {
+      "n": 0,
+      "torsion_mask": 8
+    },
+    {
+      "n": 0,
+      "torsion_mask": 16
+    },
+    {
+      "n": 0,
+      "torsion_mask": 32
+    },
+    {
+      "n": 0,
+      "torsion_mask": 64
+    }
+  ],
+  "kummer_square_roots": [
+    "1562105292055694393913571464767651836987277454599844252885355261859481871837421528120364886494736413230090688984320752825568685402524295461826213098511491843608689721968712341125267754086638188560227736845382282649234703928608467353581550764345374473057680264042443053248780554723645049855204342917715542310278294987357162663130634332218509598476790605375527103242272326574238069613734291886732610231524519650382985979701990842342781442719633159459997121494058499010217384423607496942103130704510028330455798066549917701039957535172085518615818951209458830467025874857432420046811597403318220478972715520113198095169738938207183523294650123569909500522214178225257963323166946778491999540602122675091541215076696000/13",
+    "522218957217335147538378241914220440595570951771188071300550678926764413379697185577805687069769180839228545244170223881259610033642678363710197024363992747074147029585922311053348543061287653141485477951307297370282293416487601537767232806353087033674360997741377206445990774057536188365155100654578338456597295799753261770186806679818135593515541841233295156655767252485393513164414332895739782065176261176457781046540176650271604754921916696395311327768027615039271470663834993788007093093207859607143502914191319399434760511064402560597552646886271684566724081472136701658759390547081619654025604981819985926658094632668387791299624463186374705015908072060061879478086052478065641764563792794204153331355652000/13",
+    "3647240238851742691181711151235126349279350782552681662317406502487047909653394623301117712625990606759689388152467570680030525294307281941854228385367988089641255655385174191346791936050844145681025043472888894981342801256591262743360988680913798852563876042321250824165127955672065550142404463424572909444705762347772676478810730765788099991773047688921851672546288465800359416807926897148841764241090667703419395109778875538141639756572863764189859014119831438911899113397878305681817224446570406345049268170385377997813140373241349434470083934076816174405613444626113650524774355732298044289010378285463319368424516346388890827694307761980641958027517554964476564387646618998838524418045651261269444630720325375/13",
+    "226015072587065967857220946219458244845732758128867170356035235199855016208607869461388421734084610909231164185051321904398275148131411046118684774172063226033158974662454808496732818923375975193036047197767387099215485530346137637236024179870147867274323268143618824160885780723987645867415068935455701510320112918646214160063666520805866770525651786654209367115148762753539641973945121014012120543506875927198589103601099806681734743909768444409870280952165676645903809864799542751187917990357470990083899568421759647482203246833292851712463684629449941265907056406927367786802133332388072052510039498756228625875459862799904215791070847931479229735999793920329772465880357163555156019471906182356539759312072000/13",
+    "72691066212800132658582969593742834047968512846479262954188515899599043084339783887285477260256651355829705262866231889851959114211219226144727134830639710989891755294504891166608254371671977812293916749819468126570742954639968364048569673629899562566195538210899716784153197978279611149638407724113155599028665047402219905559218479846974418302051234031067072048234357053722291945982669310914466212029680178967634162966245142430287653730269889786272974015930034231283705836296528328839960601191185562575921907328179450394039414212389208770564541423885745950554118605566516693559518645182795481906561830387047250559405984984555172776658482351839499663060637307237318502707733231547503509518037007065862911275276102",
+    "893839871057905773504944641040814663136393328883599953023651969761434123701841797641660141660002026199487426613490019866165176827702211746970334601711596081808440340901406107217608142457941414708842197382463261048801445423937364901487671405886090111346982182807561633986216859465056125824794959217303308732987928283393634550387953715084159397551777765623188427346924759472957870796158910227885959480561777791550029472279641956551732020187895273790162644447681988922870151421547213416661026235549212161816461333997875587397518240721058463336274894396920406747385405741656718147767267352083535326284785783602222691467383049794591995782144508355363147544555269980143159886891607268261103932352455118199822907658527000/13",
+    "28661439257748919073760710899067578491039165361266378946955278493540952004868296832321056781667629401243311893731557623743546758080056504210937841667738840418148078543220716762548482615455463337751008582469955178399570244631393714904542901856981213787533623666183630787301410137286759534446025429369394245039442758591850178445442620387397622431691399362154381820878870035301515583767954360953639552596950961470223390311220945195115512814238756166267812998711262498411123502805158755095377688414577052934707727705234055851374971118250555355051719479744196116133580465563176683383665533970305862302562849454134439455976414073275950391406510750513428329586356548641622331570812185537102740255618945613810616050452000"
+  ],
+  "kummer_values": [
+    "2440172943468406278937347016980881036162018228435808554435848384795349599413435059634346068075922167144683107303980722573988698862641696657093875875792562638235638387945090934842911912957603690995706808105907770147918162613014854395197234200742161712373512511147591908937750432535879586251004974827712054956822845708300496119078388297728214591332565624513425458738931382035612116096333703018823057609473945920154126567404688423925431725094036612348306799377837330211811375014979805520115467820345374105359565237383733534344447324843765146814964980913054750289417538562054980486053138155256832034211229907207126732097516675999194179249324956504863582262928158195731643554417506380619557550247104631800325148039764527612379947912933714594715230787189995228906191555805217378549915512037185567294973488056671474079221581494325025289110157449601697977249579242867644766832065952772843149903205149460578246240102266090080651867997945966418358690740240261267600424268293045997363417743349940207686851051398013328233285202881466873993594630554852894184292600208817468718044406210427938093209084032485158535174224766063535181510821180506454779324521598767313822338364518375306037489701920415358688292264382513175912524943170324999328802210660352325234218102745274677357460348393791604839915871528115039321487887973434633904992343626930880591985209763060309521553316634163247441731480563902027447920701037520845421317915057162276416000000/169",
+    "272712639277160917181100572283404401897707495568027502419048534644352920778320458520859606684911495551898404319727359301258453914581349899490536161719216422573899658898743281078322386398382681916457489511060971103323949725530848565691686684761337659115351218196051175014597445224312500843895621758753314106580913552595572410697712164878407150077379144581572856190009599706933599830658349056277225376828858657170721450898789130226211907729570441796630473468786299548980980323921916551233902608682189853898889275529867990124926173387630634538873711415933981988443276158773999477552546029277918021475111733239566085800301593002166749237336987918551476199845761263881461817748923994667896862666108982575119097775669864226371939960691359543348057271825174250145823782737483804281321658988042254141536038239783027753473504439659171982468520012110270252321635901888322057028394603771291722348458126796093662230427945431803400473373846484814821441954924313849252843218150702907857651341204195698170430119382471275389682792210060950332086049581490914044567496099283331677091585240893467786274438727210612116743393860973451629987214746949882389081526453374639220187084982455759834206419335688252508087549875842202358765553414845688891942196924508141114881650221276415038887431297472361739672146009927539349558465697153877141193983774680360036930696016921069556276806926890635013408823731491424201161807520756280246986642080112345104000000/169",
+    "13302361359899317076126154972937576211119828876689453079917542606590610907236157029577884901303032361797099109963884613374142658268877217862129610595325785765694708087308784381525282412829588229897696302936480165259043415178552311915995401715400818820475384746408249558917914265821149872153896448482471358074359054675498588572139621698662128649317513299735089056031843715478067043546924881311385428351239611154828707464568405381013849876649512283771635031988761724458611967151069478432849938396525024659838766821977325810222164563021156341858320580733919537442096774145452277898967907679493467540283665830813362107438659508679782977333362244026924642216370769139447273717187507295367178702127197008082112133667218565931635548435045221695998273295176744747263918039179163561996822196898435484204419119512776730258113865810735442353896827326837482166315474814549675223337882571559307467540991417573438097194515601862192155707133287614201410256836611225992884152103062504028639439954837788945616545048428078905870830042796664778304137644123482580202957128084026486309710072501239358676200308544294651070859556202903592349814353730715322006731841507094919490030241064694707965918594527697620743152565087784780340380317810092268926270968270127378866153049977953859789207083973721176878789502970531438817886394318648397325550095842200513242085207828433518319987058749819754889936570396491912404411107081738292422108258811841145868890625/169",
+    "51082813036536698332645406375533543204394084532858057078391409799306451094877086230912781905598996959344694744404238794393694494106621474501907660347382695143268412629449919541580229856475805909572110916119745914790365361756764965454711119423172802776255393507073184461864981961409525783171299339777595331970942249662879108647576823443567123391486787964295588131957838525228875237372090884808371810714717376766762969086494414056218656036107196034718286698602567964812819262495956305212043853044051616428927374284963738493959044020482949355173190238309218954542265908405054943762201324460401053789683433461304130662099191329685503153842526307625809355999517821996009411140081842613897814031064245652393424443497148393354793190991982320657903988056476158724579905754923193653918428791909379409169285281399905275597129956986248658989884807449472334023674824939200302296071436284637470670591579079071775938191973273061216260197882697996745211787820090585199425864901609789610634747387442401562687261632657244266908773274306879738401107089117772045078847926852361520608550816009023057815777006705090570389725148196799438888928317131338847878675304472951402316728767521998553773799343229780258793113693036175150854944567738468228632888296475879070864116760781542096814709529528119452545263786766698958805052244568173927533839349954817634770046047912505075756266885215562761196845704101822879611897546174288028518232438684933184000000/169",
+    "5283991107153693021071516677940017232348303424326929965318846756439045010770078640523533355981528532254552634867439614311193669433686573745074925097002758247226567089507902682522908109836082697918871153877862454132352196244788837600694442016414245224406953765299530730183005580904560533166085231817585967692358820756604118157478335600023766908187703901389924720673604757652422275048601373724026137593206162497348079469996437953276450893476665949393090049431393006473411052354283336266650478290155990929472342042485591958994849060206247828043346094895627341242437073694692733614106340708263877640228476925622561123640205932227063743380097276471307643841037595509001641178681910951909430408733587908681708111617236735136793854042019595685534705371504116676495558258323719585773891138529014589418438382309223046346257680691765748755873491588316974978673674633021645631092728037175921054449299551990689475914067947740178098910374085145906224955004687244188887349581240162789153006068081680830398944605865052299167489295619595039104501663710613588873187626746046397961611257955361827418205554247171937411930662037085302762031572984545904186601985832685994252132410394131773861612298499684251239005231648065480843372885547168659610403983252594395323312430647907643018650874391089505032158051339239310457039722759302638159069804922740605599462389012741821164562708439872407042711915111196933186685440722929039068319888682776332314404",
+    "798949715092813619242982950225332117243805422742287204186180401508894747653878920319087404160314119059542889115694163483887041394615243749899988236073194898550017878898406846648626630856081090759571693440636186708531843952564850898102547640030271972663147764916945430996915766204660222191180978058925011383728633039723357878805911996825306604824189722538686577411283053009051787592493006136040804712265331382661194805219993181092071790053571810719035166970357939287186181372740360644363723669151464808241499209926339396409002444214186252015099271683109874758923498062086562567835479727209446857198652901402016336812935013338927473187822198362388022435175577464232367278290088706467075541584220827125521331228626386394985184189001338166533544897524782727747987735878368021457064201233000433704087856982991939327672046846899458283796137030860219224475101692329500470959168179074468011230574709777937833093717507259166461581946389801397512014517096063976173516002089430801409987716304086335233945218232199359015564310067339250729836466459325748378993316256499210141996081938364059253826610348041319116830943066030476541466093135797973807656199735670882740859247125081796082441087785298946194052962573690178025348706594639401194549091186946102536548217712566731896874833379754433708814536047012634862927564514722903896889793188002807803582754256883905351348870022600519151524324613536726880351763092035669407480208389635809729000000/169",
+    "821478100325630909131563515752569118850277569587517346217458833235134196510104452248573625333477281956162290259833311839141270284357315992949100399571562901390133142018792879333893186729700511909929182286351540176035077048808613658457009668694520351345408702602206759118935271419732810734660484762757941419808197310048717104461696372266097013289789615375305855206412481352100557316506749621867337193465373983905270908712500282249350555921331194327432566733527479793300722213160093636018724611565928578443409012374139161964951590238628825229067422172495775572113516026254146564421379936195862103640273916089655041618776862933803497613636850900136479848453013403195533968392422709538480876129424942518177378356967204051794028880991656572123844394770713037629864924727446803600995278310870795936849568531430152957941465604647028531262972844655919723019543969908445583390752789793550216804512838141735703951607113936931880143450927198036648406685548111069609970336098808553437071683509639287071126943906065858463587960421010854669553848220680038963693580161190680797891396788692919574261305149002569419177856672984891852246437685646498044432174119553968482725876271936971207381382902102187222985470817961720093429179199589642318281900216789234092373586960536135058395165598727690559565912797213915354747163319601236942514136383441779131303061325859203755098238673614981591731770651525515527764462956686402515402399409404304000000"
+  ],
+  "limits": {
+    "abs_n_max": 1024,
+    "seconds": 300,
+    "torsion_classes": 64,
+    "workers": 1
+  },
+  "linear_solution_u_v_w": [
+    [
+      "3883481041581065021667207682324076989392479360469518111134341881301816611272513324032167232569268716918527243673537756435631350247570970188239555536414303586941069446496109424468996099725116538000559172555581354851395795279797961241131246955626896581005930452486945586142854985401758033293564652887585398890443337863919073103777985205672597079651160454635951391396887741148651341885119817995624812602566446293443999124615130946823130779379806985852763864643062929602250433705951483644161600856993183636909193493170330864700189579949739082575034243604264762164484858678439592006747532297746342993756454158087181224791047845488863360164885300/6966035612190725768357393715006745484902447631481897238665062920715997206721564875148325013296173862085417802760663191901823639591021418974279800096862977788279049",
+      "6937187718840010206310087467192904782001230803573478199035938814450757133903417254050882070567894771797340190713522096412467253100339229496558285210097859261288280526744225491342356891159935326814566561904442271084201979789306501160405668483085990196918511280130424257907965123443567866017206294409071031762285648333641259332080954149185604798758599140981392934244634582137066005547576979555833897383531365107806100054601709333497215449093371538846738553063109720171323475050"
+    ],
+    [
+      "-6311241964066520046459991449927213289038673280412233276066037269188291976849754585715362561937295941880783671371415405237357716298517455358580841371767732000410508976514177103288157770775613235796551226553009045435255057322207512129598090894132349112960016546841530097459424892150691296289218106263726675662307892331066496668273627257239443551482194646630318417765368191285324765700834643251526217580518151099955929297284327493463079464067330425210342031742731661697812548687099739407362662016142285271218500463079502726827097861769158245752050203031362268546210962040107731296997497384307367968527184272377915426805920577776421704097018181941495407861895031832659501166036785142682264429227716499094633534539312608212958820422324153741989451209151563505350454378498166019549522339891141622518427083589772828964693129799459428661377192579128199209499376493677404067700861132800/90558462958479434988646118295087691303731819209264664102645817969307963687380343376928225172850260207110431435888621494723707314683278446665637401259218711247627637",
+      "-57780941339012491854866377729646340347690918440345568124336249704777975651240815500246891033670059319206644923602130084794464310749568623034059854605071855582644828756286280730852918049668845859523112360158116894307878892950616208050238044858741812681586984999147720012221940426646660426086569535652925339605552170171767759095887553230373901046940466970557740600785020709814962291194028186143703966306238590633754277125492425571285768083895477990443597602948022224226582116803857834414928620560599042391460141362390298570023539989085112346205594290911170659415818093025740087429544531712297978558963882679485287291603677106077072254218261810052344819009334431946159997272840511312882508615142439853054035036868572328917681287372818772339985750616670566791315544349313971542900063052893433564053871665357282315388983478034279749735079325704903696935143790647662341590482701766400/90558462958479434988646118295087691303731819209264664102645817969307963687380343376928225172850260207110431435888621494723707314683278446665637401259218711247627637",
+      "-192935919830821495555552238490250591659165129309385550314328879587112276332846871834484049176514116284891431256655794964712608290360076100528923430263311432743223334680371679268174049828872322157145033740685682810556935510677532711556679860260527981741586711648657668577820797480177736653463787001857087059044356432157425046075452640586386135300687837142899137045351282918731692452790473769129758914490583629314748590643973238891793601402146051429930151623257554748366177655226737597851257129868949094878142065809903477403812150651975428913559401970878966119596235233269432101404458417615602930967773278886552545180816573584147645266544592900955749275943169790082049222382069133730850240877020410889847870158029818940011262605580301978131113778543925352077525167777478316035491760271988830787353607987835019121426771754235482434406468189656155687366100904488358362190537172097200/90558462958479434988646118295087691303731819209264664102645817969307963687380343376928225172850260207110431435888621494723707314683278446665637401259218711247627637",
+      "-20497349923582761170978458719242467776136710464423208454306809869389775490402862709246732995194078483201145640826148862974616463232068783407592477583125481237155986938269150149040003846064145699769889062969362064529235006885303292116085745039670794462817424706203671383376527264992663423409802453240026182665854002193145317927187635462397234911542486886893702412039040300006662147330668522240256969793789828448522600036405086528188834408387785703482441706125123175774976105949832940124306809906305450117285121395824202527341826222246457344099912835758013621552124317693506485109498852273692857591951652544782278040375722482208247161119703946083878683703264930807786307639997845138279477076628777902178748557886888518823112854232361522862189269942719924246784688182149875012399069709617502143313574171636116196787058968847595959441279419330567862286056445016650860531676027365325/13932071224381451536714787430013490969804895262963794477330125841431994413443129750296650026592347724170835605521326383803647279182042837948559600193725955576558098",
+      "-11856975430995709780261533305143792084420770594415388107397069465627646417000274324250893347333424835420839626130999744291803371964162429470890089941495776946963929932200582681439453702746986394737531385033829992744296058816874537931152643768873264981625306730974657597928164635786502369076596238507759713352192359805535531021191808231364076748053898315940744569786085458680762965087521540051731158216198086738946889601016618197447947068385755050141398087903332469020586871464542162566800162489434791645618677317978284221595205017599872243227002071049788272516010871891917393164902966342595344780392091958285602775765765557392611854500225436637213914763594847083959067468058497594008978400699303090841856205778421350885473331679238678558253593579561035370851233007844108077448299861398610279338025/34311222922831425287542367910989131339058017805248543357537407790224157720608455591"
+    ],
+    [
+      "-679797053478390699205617061298348569031850820079950358487425419323601068195309230665681166162509315328505997142271291459745796828767724545458569151898210280946020552049258161758547256395814450682598374651687229595207509576053424112778039214125161211418184143165316762022270926321981687783331901723376250701792762511425829278961355918320482739932333976009534219695945384282047564105627919307646270092923687923646782143387087720589258496/391834589187741937126531854674049943069153904453538997434364379785842730788708568655442797331964450053110973717643714405226856557623787543173105491421384256510707436991548153741879518985954976308592537805736209028996697925918778171784494636039108370380228708255800983531725403744276468215240632975794754941157450208165621884448612945856715578027569883362250932495354177625888512151680281403527275131839433111716491049685886403537933985",
+      "-533583982577484119249656624786406487249837432730783000068395099099503493912809529480104454642872721837404731743560590558269928928369776649670866294663675690388993103044867450025023487431811623989105329351180935199488711076110953561544609942141606491852909737346158799667767392777931969491590302407192209121472686774738914756901938688439498292857358781192894630692949822010143157934699763168735359196241107117175310794161022944/82722244641581442588468458989311627944529212887557966175699605163198399972768981258622024272379726471551308995488929810240646988317416797558239480708754788981040229816054273009445419932178259596413606280425529821592574321660594058307070984564540777465764816297190729755487705835052007572066015943095409724704304098677463743446172855838472299678871645518400188276644546882459381446927977004666870662819019885984653165617314035",
+      "-7091944733539405600181175859574308477354733509117892933405752771507773972000951475742210129260322085447281569558588983566131716340389852132808350294460915858113406454296960116434713192128273588978144814608094034940580798967871389527270674486438414069218476364253329371568100581001015917258382012657943059093689603544986876092058811735304750083042813160168153088093244952352998750539377771053406697/753900567388343224051879986822333997286381850220368638459355801508205422565963032039988960552571194837788898807464338421714484272780196783586639080030705761975675671537775983959477485261721081363297478228029682608969472198017185228324463269291977480549518065770017845882654680670642586070844465241610931708647727868237613211495656472910978349099468158629328278322310792073696263885062088174062678",
+      "1"
+    ]
+  ],
+  "linear_system_rank": 10,
+  "old_word_embedding": "nD+T=(2n)H+T; every old prime-table membership is replayed under this embedding.",
+  "pending_nonWeierstrass_words": [],
+  "rank_lower_bound": 1,
+  "raw_half_mumford": [
+    [
+      "-679797053478390699205617061298348569031850820079950358487425419323601068195309230665681166162509315328505997142271291459745796828767724545458569151898210280946020552049258161758547256395814450682598374651687229595207509576053424112778039214125161211418184143165316762022270926321981687783331901723376250701792762511425829278961355918320482739932333976009534219695945384282047564105627919307646270092923687923646782143387087720589258496/391834589187741937126531854674049943069153904453538997434364379785842730788708568655442797331964450053110973717643714405226856557623787543173105491421384256510707436991548153741879518985954976308592537805736209028996697925918778171784494636039108370380228708255800983531725403744276468215240632975794754941157450208165621884448612945856715578027569883362250932495354177625888512151680281403527275131839433111716491049685886403537933985",
+      "-533583982577484119249656624786406487249837432730783000068395099099503493912809529480104454642872721837404731743560590558269928928369776649670866294663675690388993103044867450025023487431811623989105329351180935199488711076110953561544609942141606491852909737346158799667767392777931969491590302407192209121472686774738914756901938688439498292857358781192894630692949822010143157934699763168735359196241107117175310794161022944/82722244641581442588468458989311627944529212887557966175699605163198399972768981258622024272379726471551308995488929810240646988317416797558239480708754788981040229816054273009445419932178259596413606280425529821592574321660594058307070984564540777465764816297190729755487705835052007572066015943095409724704304098677463743446172855838472299678871645518400188276644546882459381446927977004666870662819019885984653165617314035",
+      "-7091944733539405600181175859574308477354733509117892933405752771507773972000951475742210129260322085447281569558588983566131716340389852132808350294460915858113406454296960116434713192128273588978144814608094034940580798967871389527270674486438414069218476364253329371568100581001015917258382012657943059093689603544986876092058811735304750083042813160168153088093244952352998750539377771053406697/753900567388343224051879986822333997286381850220368638459355801508205422565963032039988960552571194837788898807464338421714484272780196783586639080030705761975675671537775983959477485261721081363297478228029682608969472198017185228324463269291977480549518065770017845882654680670642586070844465241610931708647727868237613211495656472910978349099468158629328278322310792073696263885062088174062678",
+      "1"
+    ],
+    [
+      "7054901370315289051235101745636309159556506804219116427869436438738809467952512026126407097415263032345769338902308422976522001147226313788305978735665014749616489795168775388342303143863398427845616875910778322518426152664932188249505802996908444773271319279448950293224294291586005112126544167807755316759450559433174000967113820302652353308991326285972761721042150144364010001046704479147747503703406474296253067872284991071872595516296481239609798847336107717364892731169355127471967752879092641389047312002481816919726323153973121906288850190318108998939355160262226279497417565116699777108828948401491889859716239753626419974623174987393195002371268044754678595968533347211615319722422645504/536857658436074445665512991267851922419643143964229893636788258958820791523691063636775945760234020015815756329633640083680748406357836176161359819657918060626838652376415032665250536128450491699928499446705891502220739738933669045897608378148082031907317844034186451097116664392963517320591444927468988650044699838671284150845094771778682366921252415755476871502129504497191110058442764347790493688098871658960918282801037056854183592526152981599792218244955",
+      "5717901680329922635941876241795780060030156747629392589754790517329985811002679826064977490921109265913781016261824860316094556965441441290830655459283540536826546842696261009057530579981855569471793442309050267039119386270200267699623007108772541311717251412807852108592939001470345818930222065856634746698635660865171745234432445221768644406612212240448093987229999897818242776145525959797477684354175840973146214753816590469277600558100344622771965539122094510196298785891718643966797170639738087521791854565053339110045906457471689045162683208158986625316013291314277554769423065183059683138155797269170586298752766091824417385299415738137620534863620489484916437065864469205404013536/113338821493314031451670119328365281399092583515027570831908998945047905167058024498407723077462104759256665360418215474352943608007070892891996117219362468979643900124225766235834069474552580709442981335682834475005514272767791735255281227623367802481780482990217261677329201183921082606476022159263464456068087224550599123457026532025505450722285105028417063655244930756804454508054693880482177508467068991048714246317844090175726328687632049575105",
+      "503664385972201961968756526012306989776722101099149801817558340595132046255127073322258294628573880473678193633097963989871846981232823100509137724861006698701133078083724105989413652633342462298276199963886765772020910105472592779852678706097711804962576982198074415280529011489537409047274598768220145244156767128137388685241432814557217632434592257470499500958289171975586328346788828980664728515821431680618149652053724641360407467887784083341446893212621020796644366932952933488152699641560687218042451464449008868588319241093232881738667553845085069806883460302723728791063359900221221879864420620296718952541472647703719152798437869408057747023737964282345958631592807330622844143/6476504085332230368666863961620873222805290486573004047537657082574166009546172828480441318712120271957523734881040884248739634743261193879542635269677855370265365721384329499190518255688718897682456076324733398571743672729588099157444641578478160141816027599440986381561668639081204720370058409100769397489604984260034235626115801830028882898416291715909546494585424614674540257603125364598981571912403942345640814075305376581470075925007545690006"
+    ]
+  ],
+  "schema": "curve302.branch-jacobian-enlargement.v1",
+  "selected_half": {
+    "coefficient_max_bits": 1437,
+    "mumford_degree": 3,
+    "torsion_mask": 52
+  },
+  "selected_half_mumford": [
+    [
+      "-47560303345360606807681328353006417734613323113708810578787309098643449780064436416718114171176925358957358393531001421197316447970139115599334591797374373988481518838164066130363111812384698724788667964386593888935925569205821812185600/20504089915856579877190409971019397510320722216957290807413812803318722986317856582679558983729732873303720236629835240643869787202200316222082644424184556214154506865682444563802820625354381956817906685864344950858101250567224257393367",
+      "-3622734375940054562712622091881738339212542345921186442574186974745568584260849493425630698823970452925525823742185222398988076318864891258865972002691428569469594006107505312368604786984228289170075693884480853747321672672/1781347328761906379347605296059313885083419011847288392372126073840336166270595703093590131120754072820735423506797293456309632167797463027203633747377951592172314223990340823609667283566759860340428011138046856476821645",
+      "-287950316827714918043799621566473659542767418621566988416840440193040148007730322580805645653549165016409414206287077432351046202140970205638364557839211113219056762224499144363204912953955741327/16234554172073984195820578361206555685803274657804232397693793699362973368945187794448828254912367019043734475140255937428167352847918753765641973056989449144076934412035767289741486508535466",
+      "1"
+    ],
+    [
+      "-2515578474342907222954994261850468872445511077212914778371528707711256562314987216613725793541489184323258692585022697332786456953505268187454251039459299581527756256160693596951956621732996821916730383337116536478168773915763335581836190731206457458597985724697932814291726063888222072383830959511066371470641005914199888951679912277816353549801025489081726226411141476832895353226527821889538555471687411651700661862522794211212800/3091764667015182866931025330392621803024176584034533725713587841627536409769780826548679367680001624187921169997239174480513871516914926139700065680792664277159944369730779342876329169011991113",
+      "-191614663949906181822604494112426812575202207035415658971074881678198926269169223923858990623988452843962131522971912028018525337712638095151297610517328982568697960371254746482191942557913297317907892116547030420290113467109877255777646647471539713625236283076442837849966588372890311115902907470660004765670727371319303851991238020332881377624116019228477525956428775077348009918873190839930398676898156742471830152736/268605275988805528234056556789961536797684952283044879309920149934618935080466116378196563938364993779038972180944704739462851999531728343022631222387018332807740991792779507155",
+      "-95495487544349177155558055312014393767815971691429776218846284214783179171998776823276451112296883453865187276974928125364041345950010849510182096051628408710453666319964947845001713508336690044348745460738325363290759497706295827374717102924057316293577036056169379865735175544379078526473338521818590810873107665560156008270697650932327020285062259722131570515953317005080002581493058202416911688557157740535561615543/15348872913646030184803231816569230674153425844745421674852579996263939147455206650182660796477999644516512696053983127969305828544670191029864641279258190446156628102444543266"
+    ]
+  ],
+  "status": "INDEX_TWO_ENLARGEMENT_PROVED_TWO_SATURATED",
+  "two_saturation": {
+    "H_reduction_order": 4624,
+    "jacobian_order": 147968,
+    "max_two_primary_exponent": 4,
+    "prime": 53,
+    "proof": "Every odd multiple ofH plus rational two-torsion has2-primary order16 at53, whereas twice any element has2-primary order at most8. Thus none can have a rational half. If2X=2nH+T, nonzeroT would give rational4-torsion, already excluded; whenT=0, X-nH is rational two-torsion and lies in the subgroup. Therefore <H,J(Q)[2]> is2-saturated inJ(Q).",
+    "two_primary_order_valuation": 9,
+    "two_torsion_rank": 6
+  },
+  "word_count": 131136
+}

@@ -1,0 +1,63 @@
+{
+  "boundary": "Six additional verified Q-parent inputs, not six new production campaigns, geometric isomorphism classes, different-NS milestones, literature novelties or record curves. Family aliases, carrier lifts and coordinate changes do not increase the parent count.",
+  "current_high_rank_inventory": {
+    "curve_count": 201,
+    "family_label_counts": {
+      "074d9": 26,
+      "07ca9": 29,
+      "08234": 10,
+      "08f72": 24,
+      "103b2": 30,
+      "11952": 31,
+      "a1-fibration-01": 8,
+      "a1-fibration-02": 5,
+      "a1-fibration-03": 5,
+      "a1-fibration-04": 10,
+      "a1-fibration-05": 8,
+      "published-R17": 15
+    },
+    "provenance_basis": "Existing direct fibration-hop and atlas source certificates; not inferred from equal NS determinant and not a new replay of every birational map.",
+    "source_parent_count": 1,
+    "source_parent_surface": "X948"
+  },
+  "new_parent_intake": {
+    "count": 6,
+    "count_including_current_X948": 7,
+    "pairwise_and_X948_separations": 21,
+    "parent_ids": [
+      "mestre-u11",
+      "mestre-u13",
+      "mestre-u17",
+      "mestre-u19",
+      "mestre-u23",
+      "mestre-u29"
+    ],
+    "point_search_boxes": 0,
+    "rank_lower_bounds": [
+      11,
+      11,
+      11,
+      11,
+      11,
+      11
+    ]
+  },
+  "schema": "elliptic-curves.parent-portfolio-coverage.v1",
+  "sources": {
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit07ca9-direct-fibration-v1.json": "a9c21568aa5f909013a951924f78f6a222f59b38c12f3048b8a3fb5febc1871b",
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit08234-direct-fibration-v1.json": "650c200300f884b266c316eae5bd6c7567c1707dfc21196827b8c18d84a16ddd",
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit08f72-direct-fibration-v1.json": "5091c7fd2199692b538ecfd64b2bb3a2a208ac01ae28db082ca0dff6e21d1b90",
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit103b2-direct-fibration-v1.json": "3f676dd0ce76da7f3092b073519b11af964c6982bfbc7262057d0f5c66234b9f",
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+    "artifacts/generated-results/elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json": "15aeb70029a078dd51024a2e4c8d75a336a7197abe9471d79151a91178a59ec5",
+    "artifacts/generated-results/elliptic-curves/compact_five_mw16_atlas_v1.json": "88a8c61c2722394bb812da601e24ea2c19e54361eef4b0fe9c7924e78c828801",
+    "artifacts/generated-results/elliptic-curves/compact_six_r17_atlas_v1.json": "2f28c081c874adfaf738c1119e8f4e6e7ce70ea74277cd8cdb370a02bca34c5d",
+    "artifacts/generated-results/elliptic-curves/mestre_parent_and_label_independent_v1.json": "d641346951cc85e5ffcd98c8380bde34b143ad4c16019059343f9301c6ce5d9e",
+    "artifacts/generated-results/elliptic-curves/mestre_parent_portfolio_intake_v1.json": "33695739364c68a1a00e8197f7ad05f5a71567daa846150e2016bcba73ec756c",
+    "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v22.json": "5f64cf83268829549a4095dc04a9e69c73513be711c1745b61dc9d8b1a2167b0",
+    "elkies-k3/AGENTS.md": "03fd4de144dc9766d92b49fcb96101e76f423ac3d2decbc611c2e69469908ff6",
+    "elliptic-curves/cas/audit_parent_portfolio_coverage.py": "a4c14cab78fa98d28427999aca7dbd77573fb8ef60cd93ba08b2b654bd93c880",
+    "elliptic-curves/notes/COMPACT_FIVE_MW16_ATLAS_2026-09-05.md": "b11ffc18de0d1c7e528ae281ae0bdef24728362f926d1023c80541db30a4c488"
+  },
+  "status": "PASS"
+}

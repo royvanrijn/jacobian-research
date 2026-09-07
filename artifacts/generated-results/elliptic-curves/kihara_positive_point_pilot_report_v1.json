@@ -1,0 +1,467 @@
+{
+  "schema": "kihara-positive-point-pilot-report.v1",
+  "status": "PASS",
+  "rows": [
+    {
+      "family": "kihara-positive-1",
+      "id": "v1-unit",
+      "initial_rank": 6,
+      "parameter": "1",
+      "parent_ratio": "1",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-890938647507",
+        "316307846233142894"
+      ],
+      "points": 3352,
+      "rank_lower_bound": 7,
+      "discovered_rank_gain_lower_bound": 1,
+      "completed_boxes": 49,
+      "attempted_boxes": 49,
+      "incomplete_boxes": 0,
+      "gp_cpu_milliseconds": 21516,
+      "rank_moduli": [
+        3,
+        5
+      ],
+      "catalogue_matches": [],
+      "inventory_matches": []
+    },
+    {
+      "family": "kihara-positive-1",
+      "id": "v1-outer",
+      "initial_rank": 7,
+      "parameter": "1009/101",
+      "parent_ratio": "1",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-877274622568598318438107053319213107",
+        "316259663564417312914937970872137182883701077896455694"
+      ],
+      "points": 158,
+      "rank_lower_bound": 7,
+      "discovered_rank_gain_lower_bound": 0,
+      "completed_boxes": 49,
+      "attempted_boxes": 49,
+      "incomplete_boxes": 0,
+      "gp_cpu_milliseconds": 18225,
+      "rank_moduli": [
+        3,
+        5
+      ],
+      "catalogue_matches": [],
+      "inventory_matches": []
+    },
+    {
+      "family": "kihara-positive-2",
+      "id": "v2-unit",
+      "initial_rank": 4,
+      "parameter": "1",
+      "parent_ratio": "2",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-72205923",
+        "236800792478"
+      ],
+      "points": 1821,
+      "rank_lower_bound": 4,
+      "discovered_rank_gain_lower_bound": 0,
+      "completed_boxes": 49,
+      "attempted_boxes": 49,
+      "incomplete_boxes": 0,
+      "gp_cpu_milliseconds": 25920,
+      "rank_moduli": [
+        3,
+        5
+      ],
+      "catalogue_matches": [],
+      "inventory_matches": []
+    },
+    {
+      "family": "kihara-positive-2",
+      "id": "v2-outer",
+      "initial_rank": 9,
+      "parameter": "1009/101",
+      "parent_ratio": "2",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-96124801181801246661642935558403",
+        "362744900119330956667770064328521732859135999998"
+      ],
+      "points": 420,
+      "rank_lower_bound": 9,
+      "discovered_rank_gain_lower_bound": 0,
+      "completed_boxes": 49,
+      "attempted_boxes": 49,
+      "incomplete_boxes": 0,
+      "gp_cpu_milliseconds": 25975,
+      "rank_moduli": [
+        3,
+        5
+      ],
+      "catalogue_matches": [],
+      "inventory_matches": []
+    },
+    {
+      "family": "kihara-positive-3",
+      "id": "v3-unit",
+      "initial_rank": 12,
+      "parameter": "1",
+      "parent_ratio": "3",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-23954333173179822722475",
+        "1416739547341158145265761630526250"
+      ],
+      "points": 6298,
+      "rank_lower_bound": 14,
+      "discovered_rank_gain_lower_bound": 2,
+      "completed_boxes": 49,
+      "attempted_boxes": 49,
+      "incomplete_boxes": 0,
+      "gp_cpu_milliseconds": 22034,
+      "rank_moduli": [
+        3,
+        5
+      ],
+      "catalogue_matches": [],
+      "inventory_matches": []
+    },
+    {
+      "family": "kihara-positive-3",
+      "id": "v3-outer",
+      "initial_rank": 12,
+      "parameter": "1009/101",
+      "parent_ratio": "3",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-2843836766813392202070734633332825558870209577275",
+        "1845885355250495212171885047592286904851318457534042471901126044509936250"
+      ],
+      "points": 353,
+      "rank_lower_bound": 12,
+      "discovered_rank_gain_lower_bound": 0,
+      "completed_boxes": 49,
+      "attempted_boxes": 49,
+      "incomplete_boxes": 0,
+      "gp_cpu_milliseconds": 25111,
+      "rank_moduli": [
+        3,
+        5
+      ],
+      "catalogue_matches": [],
+      "inventory_matches": []
+    }
+  ],
+  "attempted_boxes": 294,
+  "completed_boxes": 294,
+  "discovered_rank_gain_lower_bound": 3,
+  "new_Q_distinct_parents_in_this_stage": 0,
+  "inventory_additions": 0,
+  "stages": [
+    {
+      "stage": "kihara-positive-fibre-intake-v1/supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 4.530056174029596
+    },
+    {
+      "stage": "kihara-positive-seed-gaps-v1/supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 1.5128818210214376
+    },
+    {
+      "stage": "kihara-positive-seed-spans-v1/supervisor.json",
+      "outcome": "backend_failure",
+      "wall_seconds": 0.6916726019699126
+    },
+    {
+      "stage": "kihara-positive-seed-spans-v2/supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 0.7440757919102907
+    },
+    {
+      "stage": "kihara-positive-fibre-seeds-standalone-v1/supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 0.7928702200297266
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v1-unit/maps.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 1.2530548659851775
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v1-unit/worker.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 26.980842184042558
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v1-unit/replay.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 2.3195342499529943
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v1-unit/cloud.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 6.458837189944461
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v1-outer/maps.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 1.199900418985635
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v1-outer/worker.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 19.679421547916718
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v1-outer/replay.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 0.3289499180391431
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v1-outer/cloud.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 0.7386611260008067
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v2-unit/maps.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 1.150100938975811
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v2-unit/worker.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 31.477409480023198
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v2-unit/replay.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 2.522036968031898
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v2-unit/cloud.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 3.8021968270186335
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v2-outer/maps.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 1.249505229992792
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v2-outer/worker.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 27.588013645960018
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v2-outer/replay.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 0.38098638399969786
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v2-outer/cloud.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 1.2494542630156502
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v3-unit/maps.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 1.5594308379804716
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v3-unit/worker.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 25.132808183901943
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v3-unit/replay.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 1.1481135460780933
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v3-unit/cloud.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 12.432635772041976
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v3-outer/maps.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 1.6642721600364894
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v3-outer/worker.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 26.640531448065303
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v3-outer/replay.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 0.3292786969104782
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/v3-outer/cloud.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 1.1486300970427692
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/geometry.supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 6.721581590012647
+    },
+    {
+      "stage": "kihara-positive-point-pilot-v1/standalone/supervisor.json",
+      "outcome": "completed",
+      "wall_seconds": 4.573321106028743
+    }
+  ],
+  "total_supervised_seconds_including_failed_span_attempt": 218.00106528494507,
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/kihara_positive_fibre_seed_bundle_v1.json": "f3a42ba370f005fd6c54a70be5fece70c1a9cb9de3f483771a0feac44551caea",
+    "artifacts/generated-results/elliptic-curves/kihara_positive_fibre_seed_replay_v1.json": "dc9fb53558299d6f99f80190fcd775aa90d48ccd5896ea7396f218073cd0fbed",
+    "artifacts/generated-results/elliptic-curves/kihara_positive_parent_expansion_v1.json": "a32af266fb1fbe3650762293d0ed5d029b77143fd410f683d60d8de9782ee2b2",
+    "artifacts/generated-results/elliptic-curves/kihara_positive_point_cloud_bundle_v1.json": "fed77dba6a9d7d40dba26f55738c65c45fff881c5a7f32e554f83539a0f4aa08",
+    "artifacts/generated-results/elliptic-curves/kihara_positive_point_cloud_replay_v1.json": "e191ff59bca6b108a4a33b72957278f19141369cd3cea36942fbea6c7c231fee",
+    "artifacts/generated-results/elliptic-curves/kihara_positive_v1_outer_cloud_v1.json": "8f92a89e127168003c7a4ef425563ee87dd8175dfab39b6a372b696654ad236f",
+    "artifacts/generated-results/elliptic-curves/kihara_positive_v1_unit_cloud_v1.json": "71fc44a79e1c4609ebb140358db0e8b9073c8c2fc7e73ea89698a282b7aec6cb",
+    "artifacts/generated-results/elliptic-curves/kihara_positive_v2_outer_cloud_v1.json": "f741c2b7d45b66e20d19da38817a77acb8e4e8b5e7a4086858ad6fb99616faa6",
+    "artifacts/generated-results/elliptic-curves/kihara_positive_v2_unit_cloud_v1.json": "6bb9654d80809857d0f089cbd45ac387ed3e43f90992273e1bd3a4cfea86541b",
+    "artifacts/generated-results/elliptic-curves/kihara_positive_v3_outer_cloud_v1.json": "14da804fa103d244320f051760b064edc863ec78473b969c9e32066454e8742c",
+    "artifacts/generated-results/elliptic-curves/kihara_positive_v3_unit_cloud_v1.json": "08c9ef9bdb999595bc0317904e3554211a908c1081c76b83dd1cef4b6d173e27",
+    "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v22.json": "5f64cf83268829549a4095dc04a9e69c73513be711c1745b61dc9d8b1a2167b0",
+    "artifacts/local/elliptic-curves/inventory200-current-catalogue-v1/database.json": "b378d458aab4b0d09f9fc8e2e382baa7a20236715a8099c52b4573f00239126e",
+    "artifacts/local/elliptic-curves/inventory200-current-catalogue-v1/metadata.json": "f5bab99912e021012fa32b1edc7e3c7316cb28fe7bf4ed30398c145290a82885",
+    "artifacts/local/elliptic-curves/kihara-positive-fibre-intake-v1/protocol.json": "449fbd963afab9787dbd1e42720fe1fc624f0ed064c65b40d310167fe1c363f7",
+    "artifacts/local/elliptic-curves/kihara-positive-fibre-intake-v1/result.json": "23776cc5591cf46c3e575eec2753e664c2eb365c66f695c4a1d24289eb792c43",
+    "artifacts/local/elliptic-curves/kihara-positive-fibre-intake-v1/seed0.json": "0db8f88dbcfe088747c6f29c910e36e42258f08583759a16546db22711589c35",
+    "artifacts/local/elliptic-curves/kihara-positive-fibre-intake-v1/seed1.json": "24e2746e714bd23e9047a048dfb3397f7b26c918b4c3d71b1e76f6195b72fbfd",
+    "artifacts/local/elliptic-curves/kihara-positive-fibre-intake-v1/seed2.json": "dcfc554f9586fc3c771c7177beba17a811a7a2c97aeb0db8c17379eaeb80dc11",
+    "artifacts/local/elliptic-curves/kihara-positive-fibre-intake-v1/seed3.json": "27319d76b42831a6b2e86778a484e4635edbd7dfde369d10d9bf33a11a28ef2e",
+    "artifacts/local/elliptic-curves/kihara-positive-fibre-intake-v1/seed4.json": "984fc34847e28174864ae0714e40a9214c77d461b1d9c816de7d860b6550b167",
+    "artifacts/local/elliptic-curves/kihara-positive-fibre-intake-v1/seed5.json": "95480bd1e2533eea71fc36859c461ff9dda59372a729fd6826a5109e4016f613",
+    "artifacts/local/elliptic-curves/kihara-positive-fibre-intake-v1/supervisor.json": "392f0eb7e623387a0dbd62e763ed699bfdafc34e7c590784ac0e97e22b7e9215",
+    "artifacts/local/elliptic-curves/kihara-positive-fibre-intake-v1/worker.log": "9680cfcb55aaaa1bb343c0fb39b3bd0d5bc10e77aac4c8ac4a98492cf35b5e64",
+    "artifacts/local/elliptic-curves/kihara-positive-fibre-seeds-standalone-v1/kihara_positive_fibre_seed_bundle_v1.json": "f3a42ba370f005fd6c54a70be5fece70c1a9cb9de3f483771a0feac44551caea",
+    "artifacts/local/elliptic-curves/kihara-positive-fibre-seeds-standalone-v1/protocol.json": "57c236b13b09b4bbe3bd946ccc49a79c0b9a119cd66e26c7cdc8edae59e7e461",
+    "artifacts/local/elliptic-curves/kihara-positive-fibre-seeds-standalone-v1/replay.log": "e3eaf3e2b1f887776bd53d8dcb7eba52b0c618f999ccfd2dcd6f56ce39b5b21b",
+    "artifacts/local/elliptic-curves/kihara-positive-fibre-seeds-standalone-v1/supervisor.json": "2cfff5173c0dea59bc7ebf3abfe4d11538edd58184fa68f931b41d94d1016ec3",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/geometry.log": "b86d0419e524db53f6a9c0ac3974a6bfc3287fbc2214ba45f1f9af1788083260",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/geometry.supervisor.json": "0ffe8f8093113273f1f79cdd027bb3716b68a00208bfe49c5fb40e7d52ea38c5",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/ledger.json": "be01d10568de299c58a6d5b04fbfbfe84d67d9fb7623ece5b99021cb2537a08d",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/protocol.json": "68ec141cfe62812fa06f7a4cf12087f6c8b4f9d462d064e7b8daa4c981b03044",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/standalone/protocol.json": "00b30a94e120e8e35ead49a379eddd7a52857504285a42f3f0738279629659a1",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/standalone/replay.log": "12aedc7e2f204de8cd9d617e9db844a6954a7a1b050642f5d9f66025be08f3ee",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/standalone/supervisor.json": "73a40bc0b0177dd8248e8c239df5ce20d7e2f23f1afbda5afbce10923c6f4f21",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v1-outer/cloud.log": "5025831d9a5e746dbce1118349141ed5a1ecec3b2793338eb114779413cfa3b2",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v1-outer/cloud.supervisor.json": "1cf3fbd610118602375127340852c7235564c59d8f7afb09df27a5274f8ff582",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v1-outer/maps.json": "ba14960ddc9bedcf131f240c5a9d598298403813b88a43d928740ee7c46d1f09",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v1-outer/maps.log": "af0da3b4d190171c68427ecb648dfa37d54e4bb7834ffdbbc1ae5f39a177e9ad",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v1-outer/maps.supervisor.json": "db3f4642681973627306a3a2ed181b6e850e22bc059b1ad74190025dce557df6",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v1-outer/replay.log": "7ffc716095c9dfbab2e45089c1c2710a631c85543b9edee2bfea3e386d7f6614",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v1-outer/replay.supervisor.json": "81a071174e1140c7c1ff27913cb0af5300a060364d53435983fb21adfc424a92",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v1-outer/result.json": "3aa7a1a266ae654ed5b8a32017b88d81a1ba5e4cbbde4ca4159f6f7d332e0eb3",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v1-outer/seed.json": "483eeb76e0ad556a28cba1497244455b160eee86bb3747a8106d07e385f9d90c",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v1-outer/worker.log": "ac3d88d07a8b7270bc0cff5c46edb0039853b0ab14adf298282d905a8441f746",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v1-outer/worker.supervisor.json": "1bdccc2e5a395b72b097671eef31833066042102fd2697dd974bd01590b6966d",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v1-unit/cloud.log": "8c2780cd3eb64e6f644bc3a88072f93f81b41a77e75537ae6780079e92432681",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v1-unit/cloud.supervisor.json": "951ce54a0164cf57dc25bf596c13beba07681c11b2f8576890b7b9040b5a2294",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v1-unit/maps.json": "1c7d6950ab475fed15a240cd4330845c1841ea278c3b21bd585b2c8f7c3da511",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v1-unit/maps.log": "6d0e6f46a2b9110181050b3279d12fbcc9ad1b41312847228b93002325951ff0",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v1-unit/maps.supervisor.json": "6ba0ed2aa107d82cfbc2421b25a58741404d311d93de6a03987d88ce5b0cc86e",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v1-unit/replay.log": "425ec47c0aa670b0e1b134e14c30a75fb0b490317eb5baf9a8ca12e847d88049",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v1-unit/replay.supervisor.json": "84ca6293344efce84883c77f5b8a7f15dac044f62f03bd99f8e5b3f76e8a5f3b",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v1-unit/result.json": "b8a73a65dbb9453d6027118c523682ab2ec8bd05965a772a82fc8fec57ae6d69",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v1-unit/seed.json": "3473ff676a1eac3e5dab47e87806f238429aa16067aae0f727fcb51fe5b34985",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v1-unit/worker.log": "e563fd4dd43450568a12ca54d8283fe80812dca55b66bef0e8338ea59998e1b3",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v1-unit/worker.supervisor.json": "fbd4be12f42c861cd7504b3184c68a1b104480a77f4ff0ec7687de8148319682",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v2-outer/cloud.log": "61d0790b3f19693386b40ffbf141be0566b6264a56ae6cc00a211b3ab879078f",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v2-outer/cloud.supervisor.json": "0e3b0a7762c6fd5b285bb920ca8c1157d21581f45658d7284a6b21508575870d",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v2-outer/maps.json": "38898b75910b83aeab73e8ab64bc9f0d62a6303bbf81317623a2b86587047027",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v2-outer/maps.log": "2a1e95ace0798b44e73df45d274c03583f1868f39ca066824d034a7aab8ad5f3",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v2-outer/maps.supervisor.json": "8d8d756aa4f698e421c0f3e8ef0c546fc357507cf851fb7db9a1b0efe7bbc1d2",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v2-outer/replay.log": "ca2793828e8ab51dcfbcb67ff29888f85913ed6f9ef2306a393ea9bce047bf0d",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v2-outer/replay.supervisor.json": "c36304078183a509737be80aab7059cc235d49715918e5766dff9d289250e7e6",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v2-outer/result.json": "0af29a8c8d20db3c9b262c2555364e7f88450165666d1e733aabd35e23b153cb",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v2-outer/seed.json": "7ba8ee88e30cf137a0449bb20b77a7134ba2dc42105f18419a79902802d9a1bd",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v2-outer/worker.log": "67337875943304280da886f2ab81f2a3134c828b0a01b479c637288806649b3e",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v2-outer/worker.supervisor.json": "7ac4ef24d8c97ccf45fd901f4b2dee81fd82840def730ff96cd7b67cc302cddf",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v2-unit/cloud.log": "24dd447fb5af664771e208f56d3a616225cf63efef07e634a5072f02a02c0d0e",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v2-unit/cloud.supervisor.json": "16770740d6d16cb316e320cd2a58fba6f896d0bc25821dd930ab466874eccdd9",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v2-unit/maps.json": "605dd664b439f69055b1b6d61f6bc430b18c925a16aa589c7d66988b5f395e51",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v2-unit/maps.log": "5191d224a8ce94058f7bc7451902a4b930a01e70c5f94869fa56506bb08f3100",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v2-unit/maps.supervisor.json": "47fc4341eedecb03dd0f0030a00f3c0661711c832afa2f28c7d10b00babeb2a2",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v2-unit/replay.log": "7670d6ccfe60cad22f1aa460dc51d7d7a9b0e2d68803bcd61abe897cbd4a204f",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v2-unit/replay.supervisor.json": "951833fd75d05ad1b606d56473a63448ee34f718518c0c05e093f62a9451bce4",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v2-unit/result.json": "b5880f8ea4ba91d2af8531173516e2c2dc7a33de82fd9b74c2d407a65d612a26",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v2-unit/seed.json": "b32425ba54795b88746017a3e82cc14ff5a556b54a626111c2477016fbca16ef",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v2-unit/worker.log": "8f767536454da1aee8559d522818554a85c1945af3a698dddf65ad728d7e01fe",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v2-unit/worker.supervisor.json": "94af18883c68669f4b3b25aa08eddf9a36195a953186b71c4037f006d2a59eef",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v3-outer/cloud.log": "064ad5e7ccfc19f9118f7d8f8bb33c00f1113d0a229b53c36e16635fdb888980",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v3-outer/cloud.supervisor.json": "a417a767b7c2785e6397cb2c5dfdd2964c0bc05356d07f113fcf957bccad0228",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v3-outer/maps.json": "25ba2d646a1d549f6250c8c85c48799a1d5fff8dd21dc59644c51c6f116835c8",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v3-outer/maps.log": "5a425b34b973fe07ae024c821acb11da2749bf9eb0e6c5000912bfdd84f6b0f2",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v3-outer/maps.supervisor.json": "9695eb0e73ae615cb15775b4c8f5ac377c2584ac14ed0dbc383413bca89eb6ac",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v3-outer/replay.log": "36b79d70e8dc080c1376886f77916ddfc5a3db5b1adf2b9a0cd4e2b008022235",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v3-outer/replay.supervisor.json": "68f6bd1463d1dce58f64f8c7ba062a3a078bad31c00f0e2d6df62d7c0eb40243",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v3-outer/result.json": "5dc303f2e070d8ee9295342dff63ebad38c15e4b6141930eb65105d62ddcaa96",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v3-outer/seed.json": "ae53438e7d3d77773808861afb97a26247903b5d544c2f29dd1df925a0f9ed10",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v3-outer/worker.log": "ede586866ab61593caae00cf873c64e04bb7723882c31a48ba4684ba69f084d2",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v3-outer/worker.supervisor.json": "8fb2aa635aaf00225fbfcace5e503b976e631ce0d4917c65baad790f9f73b76a",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v3-unit/cloud.log": "54d2058c2c5e84b37cf2224904f5ef109ffea1cb116e193eaa4ea6e20f4fa471",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v3-unit/cloud.supervisor.json": "2f04575584fffd3cb46fdef037181081708aa76b25372b2248c51b45e930dccf",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v3-unit/maps.json": "d25d78b38e4dd243589741c010bffc3c9fe88e7fe30b99433c30fd0cb0d84251",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v3-unit/maps.log": "93ff30a1e3f1420d34e40a4f8cc0536a653c600d36d84c28cee7f60eef5137d3",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v3-unit/maps.supervisor.json": "0077020be40d4356110f6a1daa37411d854366bb00f5a89a69f8487fb0206717",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v3-unit/replay.log": "0d52b51fb33f23b59600b84771579360d7f68b32d0e35c53ae03345262632504",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v3-unit/replay.supervisor.json": "9c64ea5943f00a9469f390e55a6da6bfe9b1a643ee98db36da7623600ba798d6",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v3-unit/result.json": "1ab3f9dc4dd87551526cb3d42a3129e2688ade7e4616ecbcf2f338458913122d",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v3-unit/seed.json": "47dd792d2e0ad14dc9ce229203281c5ba44b6e4c9b4147ebbf9a36cb4cb39901",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v3-unit/worker.log": "bb00dfb7526483b4971e39fc24511dd646d19fd468c7f666fecbe9a03137ba48",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/v3-unit/worker.supervisor.json": "e3910b114a4b916a5ef0199dfe59747c213ad1f4f547257d302fe0896654383e",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/verification-ledger.json": "536347f85a1c5806414bc9431bbc581595842774fed861a2c246ef5943e5b788",
+    "artifacts/local/elliptic-curves/kihara-positive-point-pilot-v1/verification-protocol.json": "68b96bb856546274cd810c9d8e8e8622cc6570b11ad0516170d9e8d648f595b6",
+    "artifacts/local/elliptic-curves/kihara-positive-seed-gaps-v1/protocol.json": "6d6fb4e6da98f955344078851912968a55ccb5553e0e24ee535bab29557d37ad",
+    "artifacts/local/elliptic-curves/kihara-positive-seed-gaps-v1/result.json": "3a29204dbd769c5a915c3c50a7f37f2e20a909646089118ef3765225c2ddb683",
+    "artifacts/local/elliptic-curves/kihara-positive-seed-gaps-v1/seed0.json": "f1d997c92acea4f5b0bacb8d2dfdb201da1803ffb241d2bfa1d5ff9b9657cf57",
+    "artifacts/local/elliptic-curves/kihara-positive-seed-gaps-v1/seed1.json": "2bd6ab8c98ab1f282f59d9dc71faa9c39028ff937dc4646f68bdaad40ff0d24d",
+    "artifacts/local/elliptic-curves/kihara-positive-seed-gaps-v1/seed2.json": "6a8cd0a76ab50583304a3f6c40205ab267d029e820c21bb1115ee05d5bee9ae6",
+    "artifacts/local/elliptic-curves/kihara-positive-seed-gaps-v1/supervisor.json": "faf7f6298f8bbf431c7512b95a74385f117a3a2fc58596b02666524a5866d559",
+    "artifacts/local/elliptic-curves/kihara-positive-seed-gaps-v1/worker.log": "e12314a76b138e77598a51e19c69f5825793d141e4f57ac6e369680b99476de3",
+    "artifacts/local/elliptic-curves/kihara-positive-seed-spans-v1/protocol.json": "8c783d03fabd5851da2a0f6b3be456a8304cc0bd45b795fa80f246f039610344",
+    "artifacts/local/elliptic-curves/kihara-positive-seed-spans-v1/supervisor.json": "a6e012ac024e80d495ac911382decd38b9f406570625235480088a7809f0cacc",
+    "artifacts/local/elliptic-curves/kihara-positive-seed-spans-v1/worker.log": "4c1f632fc9f7c423f966561d3f61661f0146a8ec58d4219a13083801cac7b38b",
+    "artifacts/local/elliptic-curves/kihara-positive-seed-spans-v2/protocol.json": "c31e89546352852e3b6a5a1ec526c3626f0a197baaa7961fbeb94914547c20ca",
+    "artifacts/local/elliptic-curves/kihara-positive-seed-spans-v2/result.json": "7fae0c7808a2bb95f89087ffa989eaa29c033426065e6a746d1b86d1b4dfb255",
+    "artifacts/local/elliptic-curves/kihara-positive-seed-spans-v2/seed0.json": "fa6e1e4772426f179eaad542242115176af578cc2f23ec92210d12ac83ac7057",
+    "artifacts/local/elliptic-curves/kihara-positive-seed-spans-v2/seed2.json": "941aab32bacdb5cb59ae5dcdb00ce9c0c298abaf5a43da242db28eb7c6c1bf43",
+    "artifacts/local/elliptic-curves/kihara-positive-seed-spans-v2/supervisor.json": "dd0ffee671117f8099ace3884aeefa9a20058bb2239d39da32fd3b9c918da164",
+    "artifacts/local/elliptic-curves/kihara-positive-seed-spans-v2/worker.log": "9f73413eafe945c901cc6d0a5ed4c7fdd5bafa70b47e026d34223bbb3b2a6da4",
+    "elliptic-curves/cas/audit_compact_r17_ambiguous.py": "2fcef5457ab8efd67fa6dd473949823653901b533c3862d3ba4d83fd4cd2fb01",
+    "elliptic-curves/cas/audit_kihara_positive_point_clouds.py": "81f9a9f85fb3c420ba3f87db0c701a7999bb5ee260aba3ac19218f9a832fe52e",
+    "elliptic-curves/cas/audit_kihara_positive_seed_gaps.sage": "7a6b53f76a541cb69488aad9945efb152450ce2ad002340d2e6fc998ce4eb016",
+    "elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py": "5f63d2a929a1b10c3413189b3d7e7ac6be0216dfd80a0da1cc8bc52d934af93f",
+    "elliptic-curves/cas/audit_retained_cloud_modl.py": "9922a557d96f692f01d8a7c834826212928b515eaf66b13507c50cd9a59d3206",
+    "elliptic-curves/cas/close_kihara_positive_seed_spans.sage": "28229744bb229492062a52992b001b2113fbb2c1de92218ce03f83c2c380f26f",
+    "elliptic-curves/cas/close_kihara_positive_seed_spans_v2.sage": "617cbd5cd0103e4c45cd24d4049112eb40fc87f967bb07fb5cb02626897b53f3",
+    "elliptic-curves/cas/memory_rank_certificate.py": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6",
+    "elliptic-curves/cas/prepare_kihara_positive_fibres.sage": "ac47ed55cb9199d712b2da7262725d9e15eb88f03924c33d2b889ab204d4c0a3",
+    "elliptic-curves/cas/prospective_half_lattice_v3.sage": "aefcbe5dd6eadbd97446bcc19ae3876d4469b7fb206a3366b6e1fa0401cecf91",
+    "elliptic-curves/cas/report_kihara_positive_point_pilot.py": "5586593ca01ac5cf3402a054a8e7554928c8718c54ed20303dffa6e9a276cf65",
+    "elliptic-curves/cas/verify_kihara_positive_fibre_seeds.sage": "e950d70d5c69856bffe4b2ac6736f07eb46d1a5dbcbbb7bf986978c5897ce3ec",
+    "elliptic-curves/cas/verify_kihara_positive_point_clouds.sage": "abb041df80f0b1d93c34b7832faa632265c52785511ab7763bb2a183768eea9e",
+    "elliptic-curves/cas/verify_kihara_positive_point_maps.sage": "9ba8fdef83fb069df1743abc179b9981eb46d57958e397d9140ede1ea5d35aee"
+  },
+  "scope": "Equal49-box fixed point exposure on six fibres of three previously certified new positive-ratio Kihara parents. Exact displayed specialization spans are6,7,4,9,12,12; two unit fibres lose generic directions, and both first-parent fibres have rational2-torsion. Empty-state explicit-centre backend searches avoid the adaptive no-two-torsion gate, without weakening it. Frozen numerical centre proposals have exact parity/norm/group/map checks. The rank4 seed uses additional representatives in existing cosets, not new parity classes. Complete returned clouds independently prove final lower bounds7,7,4,9,14,12 at3and5. Three discovered directions occur on two curves; no exact whole-curve rank, parent-superiority, new high-rank inventory or near-record claim. Pinned620 catalogue and201 inventory comparisons are post-search, not literature-wide novelty. No larger population or automatic next wave follows. Initial intake and the failed numerical-span source attempt are charged; previous parent-construction costs are not counted again."
+}

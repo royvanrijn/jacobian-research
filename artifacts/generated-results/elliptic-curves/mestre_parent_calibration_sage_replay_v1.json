@@ -1,0 +1,766 @@
+{
+  "rows": [
+    {
+      "exported_basis_rank": 12,
+      "groups": [
+        {
+          "double_subgroup_order": 6,
+          "order": 12,
+          "prime": 11,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 11,
+          "order": 22,
+          "prime": 17,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 9,
+          "order": 36,
+          "prime": 29,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 9,
+          "order": 36,
+          "prime": 31,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 21,
+          "order": 42,
+          "prime": 37,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 29,
+          "order": 58,
+          "prime": 53,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 35,
+          "order": 70,
+          "prime": 59,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 19,
+          "order": 76,
+          "prime": 61,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 47,
+          "order": 94,
+          "prime": 79,
+          "quotient_dimension": 1
+        }
+      ],
+      "input": "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u11_unit_mod2_v1.json",
+      "no_two_torsion_prime": 23,
+      "point_count": 1072,
+      "union_finite_rank": 12
+    },
+    {
+      "exported_basis_rank": 11,
+      "groups": [
+        {
+          "double_subgroup_order": 15,
+          "order": 30,
+          "prime": 23,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 20,
+          "order": 40,
+          "prime": 29,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 21,
+          "order": 42,
+          "prime": 37,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 26,
+          "order": 52,
+          "prime": 41,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 14,
+          "order": 56,
+          "prime": 43,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 14,
+          "order": 56,
+          "prime": 47,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 29,
+          "order": 58,
+          "prime": 53,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 18,
+          "order": 72,
+          "prime": 61,
+          "quotient_dimension": 2
+        }
+      ],
+      "input": "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u11_outer_mod2_v1.json",
+      "no_two_torsion_prime": 7,
+      "point_count": 314,
+      "union_finite_rank": 11
+    },
+    {
+      "exported_basis_rank": 12,
+      "groups": [
+        {
+          "double_subgroup_order": 10,
+          "order": 20,
+          "prime": 13,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 5,
+          "order": 20,
+          "prime": 17,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 20,
+          "order": 40,
+          "prime": 29,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 21,
+          "order": 42,
+          "prime": 31,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 12,
+          "order": 48,
+          "prime": 41,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 15,
+          "order": 60,
+          "prime": 47,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 33,
+          "order": 66,
+          "prime": 53,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 35,
+          "order": 70,
+          "prime": 59,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 36,
+          "order": 72,
+          "prime": 61,
+          "quotient_dimension": 1
+        }
+      ],
+      "input": "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u13_unit_mod2_v1.json",
+      "no_two_torsion_prime": 37,
+      "point_count": 1003,
+      "union_finite_rank": 12
+    },
+    {
+      "exported_basis_rank": 11,
+      "groups": [
+        {
+          "double_subgroup_order": 3,
+          "order": 12,
+          "prime": 7,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 12,
+          "order": 24,
+          "prime": 17,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 14,
+          "order": 28,
+          "prime": 19,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 16,
+          "order": 32,
+          "prime": 23,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 9,
+          "order": 36,
+          "prime": 29,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 21,
+          "order": 42,
+          "prime": 31,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 12,
+          "order": 48,
+          "prime": 41,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 15,
+          "order": 60,
+          "prime": 47,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 16,
+          "order": 64,
+          "prime": 53,
+          "quotient_dimension": 2
+        }
+      ],
+      "input": "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u13_outer_mod2_v1.json",
+      "no_two_torsion_prime": 37,
+      "point_count": 283,
+      "union_finite_rank": 11
+    },
+    {
+      "exported_basis_rank": 11,
+      "groups": [
+        {
+          "double_subgroup_order": 6,
+          "order": 12,
+          "prime": 7,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 8,
+          "order": 16,
+          "prime": 17,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 8,
+          "order": 32,
+          "prime": 29,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 13,
+          "order": 52,
+          "prime": 41,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 28,
+          "order": 56,
+          "prime": 47,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 36,
+          "order": 72,
+          "prime": 59,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 39,
+          "order": 78,
+          "prime": 67,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 39,
+          "order": 78,
+          "prime": 73,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 54,
+          "order": 108,
+          "prime": 89,
+          "quotient_dimension": 1
+        }
+      ],
+      "input": "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u17_unit_mod2_v1.json",
+      "no_two_torsion_prime": 37,
+      "point_count": 654,
+      "union_finite_rank": 11
+    },
+    {
+      "exported_basis_rank": 11,
+      "groups": [
+        {
+          "double_subgroup_order": 9,
+          "order": 18,
+          "prime": 11,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 10,
+          "order": 20,
+          "prime": 13,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 10,
+          "order": 20,
+          "prime": 17,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 21,
+          "order": 42,
+          "prime": 31,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 26,
+          "order": 52,
+          "prime": 41,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 27,
+          "order": 54,
+          "prime": 43,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 17,
+          "order": 68,
+          "prime": 61,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 38,
+          "order": 76,
+          "prime": 71,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 50,
+          "order": 100,
+          "prime": 83,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 57,
+          "order": 114,
+          "prime": 97,
+          "quotient_dimension": 1
+        }
+      ],
+      "input": "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u17_outer_mod2_v1.json",
+      "no_two_torsion_prime": 37,
+      "point_count": 240,
+      "union_finite_rank": 11
+    },
+    {
+      "exported_basis_rank": 11,
+      "groups": [
+        {
+          "double_subgroup_order": 6,
+          "order": 24,
+          "prime": 19,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 16,
+          "order": 32,
+          "prime": 23,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 21,
+          "order": 42,
+          "prime": 31,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 24,
+          "order": 48,
+          "prime": 37,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 24,
+          "order": 48,
+          "prime": 41,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 28,
+          "order": 56,
+          "prime": 53,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 37,
+          "order": 74,
+          "prime": 59,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 38,
+          "order": 76,
+          "prime": 67,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 43,
+          "order": 86,
+          "prime": 71,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 46,
+          "order": 92,
+          "prime": 79,
+          "quotient_dimension": 1
+        }
+      ],
+      "input": "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u19_unit_mod2_v1.json",
+      "no_two_torsion_prime": 13,
+      "point_count": 558,
+      "union_finite_rank": 11
+    },
+    {
+      "exported_basis_rank": 11,
+      "groups": [
+        {
+          "double_subgroup_order": 7,
+          "order": 14,
+          "prime": 11,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 11,
+          "order": 22,
+          "prime": 17,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 10,
+          "order": 20,
+          "prime": 19,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 20,
+          "order": 40,
+          "prime": 29,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 24,
+          "order": 48,
+          "prime": 37,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 27,
+          "order": 54,
+          "prime": 41,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 25,
+          "order": 50,
+          "prime": 43,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 15,
+          "order": 60,
+          "prime": 47,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 28,
+          "order": 56,
+          "prime": 53,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 37,
+          "order": 74,
+          "prime": 59,
+          "quotient_dimension": 1
+        }
+      ],
+      "input": "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u19_outer_mod2_v1.json",
+      "no_two_torsion_prime": 13,
+      "point_count": 215,
+      "union_finite_rank": 11
+    },
+    {
+      "exported_basis_rank": 11,
+      "groups": [
+        {
+          "double_subgroup_order": 4,
+          "order": 16,
+          "prime": 11,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 8,
+          "order": 32,
+          "prime": 23,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 20,
+          "order": 40,
+          "prime": 29,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 21,
+          "order": 42,
+          "prime": 31,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 11,
+          "order": 44,
+          "prime": 37,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 12,
+          "order": 48,
+          "prime": 41,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 26,
+          "order": 52,
+          "prime": 43,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 15,
+          "order": 60,
+          "prime": 53,
+          "quotient_dimension": 2
+        }
+      ],
+      "input": "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u23_unit_mod2_v1.json",
+      "no_two_torsion_prime": 67,
+      "point_count": 511,
+      "union_finite_rank": 11
+    },
+    {
+      "exported_basis_rank": 11,
+      "groups": [
+        {
+          "double_subgroup_order": 3,
+          "order": 12,
+          "prime": 7,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 9,
+          "order": 18,
+          "prime": 11,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 21,
+          "order": 42,
+          "prime": 31,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 11,
+          "order": 44,
+          "prime": 37,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 26,
+          "order": 52,
+          "prime": 41,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 12,
+          "order": 48,
+          "prime": 43,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 16,
+          "order": 64,
+          "prime": 53,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 18,
+          "order": 72,
+          "prime": 59,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 38,
+          "order": 76,
+          "prime": 61,
+          "quotient_dimension": 1
+        }
+      ],
+      "input": "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u23_outer_mod2_v1.json",
+      "no_two_torsion_prime": 29,
+      "point_count": 194,
+      "union_finite_rank": 11
+    },
+    {
+      "exported_basis_rank": 11,
+      "groups": [
+        {
+          "double_subgroup_order": 3,
+          "order": 12,
+          "prime": 7,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 9,
+          "order": 18,
+          "prime": 11,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 5,
+          "order": 20,
+          "prime": 13,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 13,
+          "order": 26,
+          "prime": 19,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 8,
+          "order": 32,
+          "prime": 23,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 6,
+          "order": 24,
+          "prime": 29,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 43,
+          "order": 86,
+          "prime": 71,
+          "quotient_dimension": 1
+        }
+      ],
+      "input": "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u29_unit_mod2_v1.json",
+      "no_two_torsion_prime": 37,
+      "point_count": 432,
+      "union_finite_rank": 11
+    },
+    {
+      "exported_basis_rank": 11,
+      "groups": [
+        {
+          "double_subgroup_order": 5,
+          "order": 20,
+          "prime": 13,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 7,
+          "order": 28,
+          "prime": 19,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 8,
+          "order": 32,
+          "prime": 23,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 14,
+          "order": 28,
+          "prime": 29,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 24,
+          "order": 48,
+          "prime": 41,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 27,
+          "order": 54,
+          "prime": 47,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 33,
+          "order": 66,
+          "prime": 59,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 37,
+          "order": 74,
+          "prime": 61,
+          "quotient_dimension": 1
+        }
+      ],
+      "input": "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u29_outer_mod2_v1.json",
+      "no_two_torsion_prime": 37,
+      "point_count": 186,
+      "union_finite_rank": 11
+    }
+  ],
+  "schema": "elliptic-curves.mestre-parent-calibration-sage.v1",
+  "scope": "Standalone Sage point membership, complete finite groups and quotients by doubles, exported-basis independence and rational2-torsion exclusion. Only rank lower bounds; source search history is separately verified.",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u11_outer_mod2_v1.json": "693769510511107b9db4fa76cea619b7edfa9d2a2d5c05abf49a9f3dcbe284aa",
+    "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u11_unit_mod2_v1.json": "bdcdeeed245f4500deddd7af8a2ed11b7ffea3448e26ecc1469deb286f8d69ff",
+    "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u13_outer_mod2_v1.json": "ba257fe6fa3505509dd93a96e54dea02dbdc47ea048652a3b33fbae9674be4a0",
+    "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u13_unit_mod2_v1.json": "390eb3d6e5b3428e2c8d16eeff2cd8934cae6bd854a434c902fe6f065bc9dd1a",
+    "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u17_outer_mod2_v1.json": "ccc81df71c557dc64afed2f32982edb93e93d44e2fbf539b3feaa3cc3bd5b50b",
+    "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u17_unit_mod2_v1.json": "4c70292ed34f7d14b5bba986648ffc042a945a6985bacb0508afa875d36456d8",
+    "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u19_outer_mod2_v1.json": "bd987c9b7e3a225d8ab82b836e1a9d1081d5c133bb36416d2557e1067f1b9d57",
+    "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u19_unit_mod2_v1.json": "c010397a8ac24b59724440814de7fbc394900e209d913fe4d84a93e3db5f106b",
+    "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u23_outer_mod2_v1.json": "c87fabcbb904e870d617894d02cd62c6947072dff0e37c39694325244a26fe3a",
+    "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u23_unit_mod2_v1.json": "8bfbc143c1ed9e60cc3d44c2f14dd54e8ca8c54040449d45e5edb6cfa4268a1b",
+    "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u29_outer_mod2_v1.json": "f7a79775f5b9b721a605e2c89f0bc4550ec42084a3114acc08c6d07b124c2a16",
+    "artifacts/generated-results/elliptic-curves/mestre_parent_calibration_u29_unit_mod2_v1.json": "b5f6efbddb3f9cdbb88f3e547cd42196634297f7b0ebac102297d57a0e84bce0",
+    "elliptic-curves/cas/verify_mestre_parent_calibration_rank.sage": "51dc756565611065058ca825345835ed3934207de88aa3d2b435dacf18dec8a7"
+  },
+  "status": "PASS"
+}

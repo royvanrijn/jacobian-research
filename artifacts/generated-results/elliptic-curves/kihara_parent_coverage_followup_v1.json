@@ -1,0 +1,117 @@
+{
+  "first_parent_path_parameter": "3/2",
+  "full_geometric_NS_rank": 18,
+  "full_geometric_NS_determinant": -756,
+  "full_geometric_NS_discriminant_group": [
+    3,
+    6,
+    42
+  ],
+  "exact_first_parent_constant_field": "Q(sqrt(-3))",
+  "first_parent_rational_MW_rank": 12,
+  "first_parent_geometric_MW_rank": 13,
+  "unrestricted_ratio_anti_section": "Q(v)(sqrt(-3))(T)",
+  "path_coordinate_coverage": "For every nonzero rational path t, z=t^2>0 and -1/2<v<0. Positive parent-ratio coordinates are absent from that path; this does not prove inequivalence under unmarked parent isomorphisms.",
+  "scope": "First Kihara parent full geometric basis and field proved using direct section, Galois trace and height identities plus prior full rational basis and exact ranks. Separate unrestricted-ratio anti-section identity does not determine every specialized full lattice, field or rank. The path covers only -1/2<v<0; omitted coordinate regions are not automatically distinct moduli. Five retained quotient character audits are diagnostic, not field proofs. Preserved FGLM timeout and overly linear universal-extraction assumption are charged; saved bases are reused. No point search or new parent values.",
+  "schema": "kihara-parent-coverage-followup.v1",
+  "status": "PASS",
+  "stages": [
+    {
+      "stage": "kihara-quotient-characters-v1",
+      "outcome": "completed",
+      "wall_seconds": 1.3031546380370855,
+      "supervisor": "artifacts/local/elliptic-curves/kihara-quotient-characters-v1/supervisor.json"
+    },
+    {
+      "stage": "kihara-quotient-minimal-sections-v1",
+      "outcome": "strict_wall_timeout",
+      "wall_seconds": 121.03216078702826,
+      "supervisor": "artifacts/local/elliptic-curves/kihara-quotient-minimal-sections-v1/supervisor.json"
+    },
+    {
+      "stage": "kihara-quotient-section-extraction-v1",
+      "outcome": "completed",
+      "wall_seconds": 7.228382496978156,
+      "supervisor": "artifacts/local/elliptic-curves/kihara-quotient-section-extraction-v1/supervisor.json"
+    },
+    {
+      "stage": "kihara-quadratic-section-standalone-v1",
+      "outcome": "completed",
+      "wall_seconds": 19.077485986985266,
+      "supervisor": "artifacts/local/elliptic-curves/kihara-quadratic-section-standalone-v1/supervisor.json"
+    },
+    {
+      "stage": "kihara-universal-anti-v1",
+      "outcome": "backend_failure",
+      "wall_seconds": 1.713220510049723,
+      "supervisor": "artifacts/local/elliptic-curves/kihara-universal-anti-v1/supervisor.json"
+    },
+    {
+      "stage": "kihara-universal-anti-extraction-v1",
+      "outcome": "completed",
+      "wall_seconds": 0.691502135945484,
+      "supervisor": "artifacts/local/elliptic-curves/kihara-universal-anti-extraction-v1/supervisor.json"
+    },
+    {
+      "stage": "kihara-universal-anti-standalone-v1",
+      "outcome": "completed",
+      "wall_seconds": 0.6891392599791288,
+      "supervisor": "artifacts/local/elliptic-curves/kihara-universal-anti-standalone-v1/supervisor.json"
+    }
+  ],
+  "total_supervised_seconds": 151.7350458150031,
+  "new_parents": 0,
+  "point_search_boxes": 0,
+  "inventory_additions": 0,
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/kihara_first_parent_rank_v1.json": "b89566b1a90740461dd8ae9031ec82a511d4b13bc826cf7b3e54d4f6f7ae9d7a",
+    "artifacts/generated-results/elliptic-curves/kihara_five_parent_distinctness_v1.json": "2924c336d8c9d145ea2959ce6ba9ea03fdaebe34299d8e562bd179a5b9cae283",
+    "artifacts/generated-results/elliptic-curves/kihara_quadratic_section_bundle_v1.json": "25fe097faac37eef2fbebc9ff80108ca43b44bb6aacd291f625f2bbf6128e0cd",
+    "artifacts/generated-results/elliptic-curves/kihara_quadratic_section_full_NS_v1.json": "168b7f584ea9160c76b6cb6960c1151e64dbcdd15afe0ece95c4096a9bb056f9",
+    "artifacts/generated-results/elliptic-curves/kihara_section_involution_v1.json": "5d4dd2860d1e32b0e8820fe9f7eefa908c504b5e9cbd50e45544610e06efc4b1",
+    "artifacts/generated-results/elliptic-curves/kihara_universal_anti_bundle_v1.json": "f7c61f552046a14bd90e7ad2055d3a4f360ec6a303c2744972ab422bffa1728a",
+    "artifacts/generated-results/elliptic-curves/kihara_universal_anti_replay_v1.json": "3c3d23925544a2d5290c95e75da1e2eb4bfae628532ae63cda312ad39601e228",
+    "artifacts/local/elliptic-curves/kihara-quadratic-section-standalone-v1/kihara_quadratic_section_bundle_v1.json": "25fe097faac37eef2fbebc9ff80108ca43b44bb6aacd291f625f2bbf6128e0cd",
+    "artifacts/local/elliptic-curves/kihara-quadratic-section-standalone-v1/protocol.json": "ea74aa6ee93438ee29f33da723b62e734a23d73e0799fe8fa6e798a9f07e17e2",
+    "artifacts/local/elliptic-curves/kihara-quadratic-section-standalone-v1/replay.log": "2f19d10928b425f1b30c026698e3b5466d6d48846c9fd8c1ab5cc97c39a424d0",
+    "artifacts/local/elliptic-curves/kihara-quadratic-section-standalone-v1/supervisor.json": "96ce02c5084213f5f0ae0872481b9d9a5b0e70eab938fabd85c083276110d57d",
+    "artifacts/local/elliptic-curves/kihara-quadratic-section-standalone-v1/verify_kihara_quadratic_section.sage": "6491ab85eb33fac3f82421bbbf9cd95a9283129cbc2b502463bd58ca1cc31ae4",
+    "artifacts/local/elliptic-curves/kihara-quotient-characters-v1/protocol.json": "d44908d33f9297ae6860207f4ec4c6b94bdab5ba7712943c2932f7bcfa5bcd4c",
+    "artifacts/local/elliptic-curves/kihara-quotient-characters-v1/result.json": "9ca019d391297c2daa60ee2e2a7d6f75e4277e9dba40091d762c7edfd14bc427",
+    "artifacts/local/elliptic-curves/kihara-quotient-characters-v1/supervisor.json": "70df9ca75fa1ffbd140671c0a8c55874abcf844f70f5434b9494b945172a5f11",
+    "artifacts/local/elliptic-curves/kihara-quotient-characters-v1/worker.log": "ba8de9527018be90471bd78fabe09e3e61b59239b2e6ca363e85a7e9e6fe7644",
+    "artifacts/local/elliptic-curves/kihara-quotient-minimal-sections-v1/equations.json": "23d9571002ab7ea2ccd9e4d124e501091121ec53d5af4fbc3324258141ae88db",
+    "artifacts/local/elliptic-curves/kihara-quotient-minimal-sections-v1/groebner.json": "417f36b30cd96a759e048ebf9494e2b9b6e6d5ab86a36b92e4c0f8e6ab398e07",
+    "artifacts/local/elliptic-curves/kihara-quotient-minimal-sections-v1/protocol.json": "fcaeb9c11d9f1885fcbbadd67e4a66651105287e95df88d57f41e58f7cde83cb",
+    "artifacts/local/elliptic-curves/kihara-quotient-minimal-sections-v1/supervisor.json": "8dcfa4f68ff20f848266d569b09acb54cd4f7250e34d21fb4b4582c836e5115c",
+    "artifacts/local/elliptic-curves/kihara-quotient-minimal-sections-v1/worker.log": "f553141151e2e429fa2c8ac0dc351f824bc7c92a85b48e953ec982d148af9e22",
+    "artifacts/local/elliptic-curves/kihara-quotient-section-extraction-v1/characteristic.json": "7e926f3c8f893c570aa0a0ce4b2a7cf1c3c3d02058ceac1e93b0e940c3c736e2",
+    "artifacts/local/elliptic-curves/kihara-quotient-section-extraction-v1/protocol.json": "5bf8cd77a14d72a45a5d6c13dbc84311722cb060c7ae972222dadcc3699c6585",
+    "artifacts/local/elliptic-curves/kihara-quotient-section-extraction-v1/result.json": "5a9b5b012f7a6d7c370f1cf5d89e10f1dc338fbc0469d539df6c3c8f2cf0bca0",
+    "artifacts/local/elliptic-curves/kihara-quotient-section-extraction-v1/supervisor.json": "006df45602f723bf36a197ecdc5210789e843df665742a7a542092cae9434198",
+    "artifacts/local/elliptic-curves/kihara-quotient-section-extraction-v1/worker.log": "829c02ed82db1f9141ad29a404328b62f1f61b786efdeb868ec3f0e9db69b8fe",
+    "artifacts/local/elliptic-curves/kihara-universal-anti-extraction-v1/protocol.json": "2332d0ae6cd09f62ca5134fa33ef855143491816a000e185d9ca0af07c0fefe4",
+    "artifacts/local/elliptic-curves/kihara-universal-anti-extraction-v1/result.json": "f7c61f552046a14bd90e7ad2055d3a4f360ec6a303c2744972ab422bffa1728a",
+    "artifacts/local/elliptic-curves/kihara-universal-anti-extraction-v1/supervisor.json": "e269100e4896db5250b3d90e559d0c44d67d59419ca1e548f22eb543a3e55eb0",
+    "artifacts/local/elliptic-curves/kihara-universal-anti-extraction-v1/worker.log": "acd7abff1aa3e014ca3846b2f4843a4c710f439dbcace8f49b086a56ef58b729",
+    "artifacts/local/elliptic-curves/kihara-universal-anti-standalone-v1/kihara_universal_anti_bundle_v1.json": "f7c61f552046a14bd90e7ad2055d3a4f360ec6a303c2744972ab422bffa1728a",
+    "artifacts/local/elliptic-curves/kihara-universal-anti-standalone-v1/protocol.json": "b356305c6d2c9c7b1251a76469f5224f32f95882953804f7bb07bac87d5bd73f",
+    "artifacts/local/elliptic-curves/kihara-universal-anti-standalone-v1/replay.log": "51e8f9a91f19e2b26a94d327fc51f33efc8fa94362b2177e6b8902fe35e07745",
+    "artifacts/local/elliptic-curves/kihara-universal-anti-standalone-v1/supervisor.json": "f5b8cf7ca06fd3c7de5c27fdd3c114a505639c81d5aa1df7a401ca3745e38e00",
+    "artifacts/local/elliptic-curves/kihara-universal-anti-v1/equations.json": "cb96c3bfe3e4a59f6f285f1620901cab7954ac8d71610bd2b1d4edac6301a29c",
+    "artifacts/local/elliptic-curves/kihara-universal-anti-v1/groebner.json": "3448ede49bed2edf6f3f0aae42d73b1ce5366a6f16ce16308c5b1e7ca1e4e0bf",
+    "artifacts/local/elliptic-curves/kihara-universal-anti-v1/model.json": "a64d58cc87735ee0507ec0fe5e811693a4c8c8deeead7235fd6215dfbe6a3fc7",
+    "artifacts/local/elliptic-curves/kihara-universal-anti-v1/protocol.json": "d4ba9c68413c33e306cf18f41b2f12fa424890638e499e8db1382fbb82d5160f",
+    "artifacts/local/elliptic-curves/kihara-universal-anti-v1/supervisor.json": "89b05c2cac3b84ac924d7f82273529061d45811225ea8f3d20053083556d0467",
+    "artifacts/local/elliptic-curves/kihara-universal-anti-v1/worker.log": "f12dedd0e9ed2cc04aa54a57b2d694c62ab91409dcd46f84856b1a3244b1d030",
+    "elliptic-curves/cas/audit_kihara_quotient_characters.sage": "8fe298453e253db609f68bf6f15aa7c7e3378f5731a2c78f1d91081940c77d8e",
+    "elliptic-curves/cas/construct_kihara_universal_anti.sage": "63f1297a55fdf4fd90f9a801e0e38f0d37560b7e58dc340c03abcecc8dfc46f5",
+    "elliptic-curves/cas/extract_kihara_quotient_section.sage": "4bc57cae76c0d556175ef8961d694b2e3612d346b1afd5319876ccba11fb011a",
+    "elliptic-curves/cas/extract_kihara_universal_anti.sage": "d2b35f8d7280e891ec21a96d60de57f18c76df7d55ba45b10355962be7cac65b",
+    "elliptic-curves/cas/record_parent_coverage_followup.py": "4fdbf6cd7ee270bbc20513b1f7a30050639018399683e71bae18411a25bd76c1",
+    "elliptic-curves/cas/solve_kihara_quotient_minimal_sections.sage": "5fbb051b13b3c0887c86ae4162741daac9b8a6ff11a2bcad717e71960c52d4d3",
+    "elliptic-curves/cas/verify_kihara_quadratic_section.sage": "6491ab85eb33fac3f82421bbbf9cd95a9283129cbc2b502463bd58ca1cc31ae4",
+    "elliptic-curves/cas/verify_kihara_universal_anti.sage": "230324033177c948cf88408196ca5653ee2466116ec317e81e3e035ae68db600",
+    "elliptic-curves/ecsearch/kihara.py": "8afd5fe957daad8884d5e8598ed53ddb0794da89989a6599dccb0008925963d7"
+  }
+}

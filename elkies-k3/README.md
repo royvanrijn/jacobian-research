@@ -18,6 +18,21 @@ remains a separate calibration question.
 The [MW18 centre comparison](../elliptic-curves/notes/MW18_DEEP_CENTRE_CALIBRATION_2026-09-05.md)
 tests that question with the exact generic height Gram and equal chart exposure.
 
+The [complete P6 triangle gate](CURVE302_COMPLETE_P6_TRIANGLE_GATE_2026-09-07.md)
+accounts for all 880 height-six configurations with that fixed anchor:
+786 have MW rank at most 13; the 88 MW14 and six MW15 pencils all exclude
+302. Other anchors and constructions remain open. The earlier
+[ten-pencil dictionary](CURVE302_SHORTWORD_TRIANGLES_2026-09-07.md) and
+[six-MW15 proof](CURVE302_SIX_MW15_TRIANGLES_2026-09-07.md) retain the
+construction and conversion evidence.
+
+The [302 common-cover gate](CURVE302_SHARED_BRANCH_GATE.md) proves that all
+660,951 within-pencil pairs of stored quadratic covers have genus-one fibre
+products. An explicit genus-three curve gives a necessary condition for
+new rational branch points in one pencil. Its Jacobian is simple over `Q`
+with torsion `(Z/2)^6`. Its rank is now at least one, with an explicit
+two-saturated subgroup; the exact rank is unknown and no new parent is constructed.
+
 ## Primary lanes
 
 Three peer lanes set the operational roadmap.  Rank 17 is not a prerequisite
@@ -488,7 +503,7 @@ twist and yields arithmetic exclusion.
 <!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
 <!-- status-consumer: EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION bf05d9b06ccc1502 -->
 <!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 6a9cd04e00dcdaad -->
-<!-- status-consumer: OP-EC-NEXT 6cffb77d2f73532a -->
+<!-- status-consumer: OP-EC-NEXT 4ac6bebc76a6c1fd -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->
 <!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->

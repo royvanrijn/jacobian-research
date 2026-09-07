@@ -1,0 +1,82 @@
+{
+  "T_power729_minus_T_remainder": [],
+  "boundary": "No rank-zero proof, global rational-point determination, absolute simplicity proof or parent construction. Point counts are supplied by the probe and its direct enumeration replay.",
+  "conditional_rank_zero_consequence": "If rank J(Q)=0, every rational point on the genus-three curve is Weierstrass: [P-W] then has order dividing2, so2P belongs to the unique hyperelliptic degree-two linear system.",
+  "deduction": "Rabin proves the degree-six Frobenius polynomial irreducible mod3 and hence overQ. A proper positive-dimensional Q-abelian subvariety would factor that good-reduction Frobenius polynomial, a contradiction. Thus the genus-three Jacobian is Q-simple. Its64 rational two-torsion points exhaust rational torsion by the two good-reduction orders.",
+  "good_reduction_prime": 47,
+  "input_sha256": {
+    "artifacts/generated-results/elkies-k3-curve302-branch-carrier-probe-v1.json": "2cdbc35c183a3a40c73eba5ffd83029e29be127a5c74d50ddc06248991e4ab80",
+    "elkies-k3/scripts/certify_curve302_branch_jacobian_simple.sage": "4aa10995b8556d1f6b07b64b80aaf7a58c8f9c3d08fabaa28e10e4ae3edfba76"
+  },
+  "irreducibility_prime": 3,
+  "jacobian_orders": [
+    "90176",
+    "147968"
+  ],
+  "mod3_polynomial_low_to_high": [
+    2,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1
+  ],
+  "order_gcd": 64,
+  "rabin_witnesses": [
+    {
+      "bezout_for_f_low_to_high": [
+        1,
+        0,
+        1,
+        1,
+        2
+      ],
+      "bezout_for_remainder_low_to_high": [
+        1,
+        2,
+        2,
+        0,
+        1,
+        1
+      ],
+      "exponent_degree": 2,
+      "remainder_low_to_high": [
+        2,
+        1,
+        1,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "bezout_for_f_low_to_high": [
+        0,
+        0,
+        2,
+        0,
+        2
+      ],
+      "bezout_for_remainder_low_to_high": [
+        2,
+        1,
+        0,
+        2,
+        0,
+        2
+      ],
+      "exponent_degree": 3,
+      "remainder_low_to_high": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        2
+      ]
+    }
+  ],
+  "schema": "curve302.branch-jacobian-simple.v1",
+  "status": "Q_SIMPLE_JACOBIAN_WITH_RATIONAL_TORSION_Z2_POWER6"
+}

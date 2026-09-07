@@ -1,0 +1,110 @@
+{
+  "schema": "parallel-review-through-9f59caad.v1",
+  "status": "PASS",
+  "stages": [
+    {
+      "command": [
+        "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+        "/home/royvanrijn/src/jacobian-research/elliptic-curves/rank-jump/verify_bad_prime_principalization.py",
+        "check"
+      ],
+      "limits": {
+        "wall_seconds": 60,
+        "rss_bytes": 2147483648,
+        "address_space_bytes": null,
+        "pari_stack_bytes": 256000000,
+        "terminate_grace_seconds": 1.0,
+        "poll_seconds": 0.05,
+        "cgroup": null
+      },
+      "outcome": "completed",
+      "pid": 604664,
+      "start_token": "59091887",
+      "returncode": 0,
+      "wall_seconds": 5.491950572934002,
+      "peak_observed_rss_bytes": 243785728,
+      "timeout_seconds": 60,
+      "failure_reason": null,
+      "termination_signal": null,
+      "rss_limit_bytes": 2147483648,
+      "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/parallel-review-through-9f59caad-v1/0.log",
+      "log_sha256": "bbde8193deaef92507a61e61482dcefc9f3789b9e68a47e81d47f7e824a514a3",
+      "worker_result": null,
+      "worker_result_sha256": null
+    },
+    {
+      "command": [
+        "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+        "/home/royvanrijn/src/jacobian-research/elliptic-curves/rank-jump/strict_sunit_carrier_bound.py",
+        "check"
+      ],
+      "limits": {
+        "wall_seconds": 60,
+        "rss_bytes": 2147483648,
+        "address_space_bytes": null,
+        "pari_stack_bytes": 256000000,
+        "terminate_grace_seconds": 1.0,
+        "poll_seconds": 0.05,
+        "cgroup": null
+      },
+      "outcome": "completed",
+      "pid": 604735,
+      "start_token": "59092438",
+      "returncode": 0,
+      "wall_seconds": 0.1280197319574654,
+      "peak_observed_rss_bytes": 19488768,
+      "timeout_seconds": 60,
+      "failure_reason": null,
+      "termination_signal": null,
+      "rss_limit_bytes": 2147483648,
+      "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/parallel-review-through-9f59caad-v1/1.log",
+      "log_sha256": "05fac92c3d14af09f6587f3139950fdb2bb6b93e0e1dfb10a66814614d2745c7",
+      "worker_result": null,
+      "worker_result_sha256": null
+    },
+    {
+      "command": [
+        "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+        "/home/royvanrijn/src/jacobian-research/elliptic-curves/rank-jump/verify_generic_sunit_carrier.py",
+        "check"
+      ],
+      "limits": {
+        "wall_seconds": 60,
+        "rss_bytes": 2147483648,
+        "address_space_bytes": null,
+        "pari_stack_bytes": 256000000,
+        "terminate_grace_seconds": 1.0,
+        "poll_seconds": 0.05,
+        "cgroup": null
+      },
+      "outcome": "completed",
+      "pid": 604737,
+      "start_token": "59092452",
+      "returncode": 0,
+      "wall_seconds": 0.7442593040177599,
+      "peak_observed_rss_bytes": 246988800,
+      "timeout_seconds": 60,
+      "failure_reason": null,
+      "termination_signal": null,
+      "rss_limit_bytes": 2147483648,
+      "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/parallel-review-through-9f59caad-v1/2.log",
+      "log_sha256": "3fa405c1484bfab7479f9d95ffc83335a96bb828ac43bd8f1ece3ed7361c93b9",
+      "worker_result": null,
+      "worker_result_sha256": null
+    }
+  ],
+  "total_supervised_seconds": 6.364229608909227,
+  "sources": {
+    "artifacts/local/elliptic-curves/parallel-review-through-9f59caad-v1/protocol.json": "53e18e494c01da2629cd3265f76d0c2be34b8c737c0df31ed868423629943e97",
+    "elliptic-curves/rank-jump/verify_bad_prime_principalization.py": "6f1ff40674b8f7935b9ed446dda988374b289efb58389a28d9ee55893b56ae7e",
+    "elliptic-curves/rank-jump/strict_sunit_carrier_bound.py": "ac9d4d8f3078034374533e0c6fb237c857eacf832a2e37feaf9936b992cc60bb",
+    "elliptic-curves/rank-jump/verify_generic_sunit_carrier.py": "78cfd2538415f167983b2b6062c9286808ad95475fd7c38bd104ba628325c04a",
+    "artifacts/local/elliptic-curves/parallel-review-through-9f59caad-v1/2.supervisor.json": "6473fd1bb3ba0d9151b2f01b9edc1dc854e15dba94f514af3432ccbc046f73d3",
+    "artifacts/local/elliptic-curves/parallel-review-through-9f59caad-v1/1.supervisor.json": "8469e665e975ee894b0dd3ef7afe0415ec2bc75e22516e8e48e30be1feae2cea",
+    "artifacts/local/elliptic-curves/parallel-review-through-9f59caad-v1/0.supervisor.json": "b09f9b9483c70a5ea2e2f63f066e9dbdc365dd339afe7f8641e70552e9a4dc79",
+    "artifacts/local/elliptic-curves/parallel-review-through-9f59caad-v1/1.log": "05fac92c3d14af09f6587f3139950fdb2bb6b93e0e1dfb10a66814614d2745c7",
+    "artifacts/local/elliptic-curves/parallel-review-through-9f59caad-v1/2.log": "3fa405c1484bfab7479f9d95ffc83335a96bb828ac43bd8f1ece3ed7361c93b9",
+    "artifacts/local/elliptic-curves/parallel-review-through-9f59caad-v1/0.log": "bbde8193deaef92507a61e61482dcefc9f3789b9e68a47e81d47f7e824a514a3"
+  },
+  "scope": "Read-only independent arithmetic review of completed parallel results. The S-unit-only bound must not be extended to generic-plus-S-unit corrections. No production score, point-search or prospective selection changes."
+}
