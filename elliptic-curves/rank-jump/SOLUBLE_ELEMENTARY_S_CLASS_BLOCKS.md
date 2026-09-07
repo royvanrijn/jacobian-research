@@ -1,5 +1,10 @@
 # Soluble half ideals split off elementary S-class factors
 
+**Enlarged column population:** [all generic half ideals](GENERIC_IDEALS_AND_SUNIT_CORRECTIONS_CARRY_INCIDENCE.md)
+certify factors of dimensions 10,8,6, improving MW16 high from nine to
+ten. The strict-half-ideal matrices, kernels and nine-dimensional factor
+below remain valid for their original column population.
+
 The retained half ideals survive localization in a much stronger form than
 the previous unit bound established. They certify elementary direct factors
 of dimensions **9, 8 and 6** in the three \(S\)-class groups. The selected

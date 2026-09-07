@@ -1,5 +1,11 @@
 # Strict blocks need ideal classes surviving outside the bad support
 
+**Full generic corrections tested:** [the enlarged constructor](GENERIC_IDEALS_AND_SUNIT_CORRECTIONS_CARRY_INCIDENCE.md)
+detects no quotient beyond the full generic half-ideal image. Generic
+ideals certify elementary factors of dimensions 10,8,6 and force strict
+blocks after S-unit correction. The S-unit-only exclusion below remains
+valid; it does not extend to that larger constructor.
+
 The latest constructor test produced no new class. On the fixed 103b2
 high/low pair, none of the 60 squared bad-prime ideals yielded a generator
 in the frozen reduced-lattice test. All six generic positive controls

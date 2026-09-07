@@ -1,0 +1,11 @@
+{
+  "schema": "rank-jump.generic-sunit-carrier-protocol.v1",
+  "question": "Can arbitrary generic corrections enlarge an S-unit constructor enough to contain the known strict exceptional blocks?",
+  "cases": [0, 4, 5],
+  "provenance": "Explicitly retrospective and oracle-derived. Uses the previously certified point basis, strict masks and Artin matrices on three old controls. No exceptional data enters a prospective selector or the recent equation-only bad-prime experiment.",
+  "method": "Compute the localized half ideal of every retained point, including non-strict generic points. Evaluate the old strict characters using cyclic residue rings. For nonunit point residues, split the ideal norm by repeated gcd and use the derivative to regularize the Kummer evaluation. Compare the full generic image with the known strict image.",
+  "bounds": {"worker_seconds_per_case": 60, "pari_stack_bytes": 268435456, "workers": 1, "new_points": 0, "new_factorizations": 0},
+  "controls": "Reproduce all previously certified strict half-ideal Artin matrices from the new point columns and strict masks.",
+  "failure_semantics": "Noncyclic residue rings, failed derivative-unit gates or inconsistent matrices leave the corresponding output UNKNOWN. Zero quotient rank is not a class identity or an S-unit representation certificate.",
+  "boundary": "Incidence carrier exclusion only. No CT or rational solubility claim, no fresh-panel extrapolation, no active search changes."
+}
