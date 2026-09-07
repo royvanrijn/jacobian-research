@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.generic-only-class-anchors-protocol.v1",
+  "endpoint": "Produce equation/generic-only ordinary unramified characters for positive class-construction target selection. These are inherited controls, not additional strict classes.",
+  "cases": ["MW16-05 at3/17", "new302 parent at0"],
+  "method": "Inside the generic Kummer subgroup impose even ideal valuations, vanishing dyadic Hilbert symbols on a complete local unit filtration and positive real signs. The resulting classes define ordinary unramified quadratic characters. Select the first good degree-one ideals, in prime/root order, with independent residue-character columns. No protected historical anchor or exceptional point is read.",
+  "bounds": {"workers": 1, "worker_seconds": 60, "pari_stack_bytes": 268435456, "anchor_prime_start": 101, "anchor_prime_bound": 10007, "new_parameters": 0, "elliptic_point_searches": 0},
+  "certification": "Check every norm, integral generic point representation, full discriminant support, dyadic uniformizer and residue degree, local signature kernel and invertible anchor matrix. The F2 residue-field unit-filtration proof is used only when every dyadic residue degree is1. No class-group completeness or rank upper bound.",
+  "boundary": "This prepares a new constructor input; it does not alter the currently running frozen adaptive experiment or Agent1's search."
+}
