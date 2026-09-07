@@ -1,0 +1,147 @@
+{
+  "blind_control_stage_seconds": 67.71179170790128,
+  "boundary": "No new parameter population. Full49 original27-only restricted-prime control recovered28; two retained27 rosters prove covered by declared completed history and are skipped. Both new-parent49 rosters prove new coordinate exposure and complete without new finite points. All exact maps, history witnesses, point clouds and ranks independently checked. Coefficient bounds concern integral short and completed-square quartic models, not point-search heights or rank upper bounds. Original signed generic-point visibility is retrospective and does not cover all translated representatives. No new curve rank or near-record result.",
+  "combined_supervised_seconds": 204.458541662083,
+  "completed_point_boxes": 98,
+  "discovered_rank_gains": 0,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/blind_bounded_prime_28_control_v2.json": "b94571cd3f6a729461b2e51b6989c849d51a1fc9a8a4735a162a8ba8c75ac411",
+    "artifacts/generated-results/elliptic-curves/bounded_prime_history_and_height_v1.json": "aa95fe7465e6c467651ca1c89d5ff17e836fbfcd0daabb46bf7415f9d55fadf0",
+    "artifacts/generated-results/elliptic-curves/bounded_prime_point_det1092_outer_mod2_v1.json": "51da479b215eca6942e7cd5737793861d510247bc49810ae1bceb2f92a5ce4dd",
+    "artifacts/generated-results/elliptic-curves/bounded_prime_point_det1092_outer_modl_v1.json": "29239d832c502d5dd09a82afe9e24c2ffbe628cee0ff48a4c905322d20267a31",
+    "artifacts/generated-results/elliptic-curves/bounded_prime_point_det1092_unit_mod2_v1.json": "65d0638aba8ae1796da16d977a93d07935de4b4003764d9d11616d366edb4b0d",
+    "artifacts/generated-results/elliptic-curves/bounded_prime_point_det1092_unit_modl_v1.json": "72b0d4d5cd0f3b297b7496b3006d2e55aa56d73563c0d7c3d846def6a4ac2977",
+    "artifacts/generated-results/elliptic-curves/det1092_refined_visibility_v1.json": "b50cd58d2b3e709c721e7e7075dc4bb43806682adc53fe76335d13218748330f",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/det1092-outer/certification-ledger.json": "ab190ec7e072712fc3d3dfb6465c63e4ba3a2e95d045828547aa33aa22fecd90",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/det1092-outer/certification-protocol.json": "7e54ba5abeefabd88916acc0b3dea3b2e7972afe8ab10d92dd69280529057975",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/det1092-outer/maps.json": "40e97a3e8cf923b29a0409f11657cf541a4313db1d706a191bc974d4c4d8d94a",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/det1092-outer/result.json": "1074be0ad0a1ef002d33e04ffe26060815cf1814b1ce623579dab834283d9d2b",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/det1092-outer/seed.json": "a2e59d5ce90f505638f5c91ec360e69c278612d60daff98690035f993359e14f",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/det1092-unit/certification-ledger.json": "f185d68717b074c3e2d2db6cfd652e026d6f0f5c3a3640b3ca60bd0b2f636f80",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/det1092-unit/certification-protocol.json": "56a138bdbbb2b00355d58838f600d6b80e2f8765c77fa72fd0de1d9afa518785",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/det1092-unit/maps.json": "1fa4efc7fbe97cb61befb890d363f982e9e87189f0577dbc51dcb0cf24555d81",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/det1092-unit/result.json": "fd5ca838dcfa6e90338c48138148aa6bf8ce740c2184ecbd7a3ba021c3e04b18",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/det1092-unit/seed.json": "ef292b0fb1215ba8ef2d351cc3d3066a7241b8d97adc3be698ffb58a1750e566",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/history-height-protocol.json": "b12de8529383778ebbb99e2a2ab23626e20e6b9b3c0a19e6df797fa7875ba174",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/history-height-v2-protocol.json": "cf35159195c3a8e6390b20f5a02d975e1995dbd864697d0842dc5c9bb48a5cf5",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/history-height-v2.supervisor.json": "5687466f51ab0eb1355f9b56407262599006eb0ef2666ee60daf39bb0b29c26e",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/history-height.supervisor.json": "df7cb91ab4511bf20d933b0e19533f85e33ec8cb33b6b4a39f4ed8e33781bae5",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/ledger.json": "620a7e5392a09319fac6307e376ee80287bd3ad32dcaf57cd54156dcfe6a5da1",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/new-20260906-186/maps.json": "c3fa739a4455476ae068fa45aab169fce7540d5999c3d3e88858a6efd157619c",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/new-20260906-186/seed.json": "8d3b5c574f030ac2860e6aeca2ea0e96fad98a53bd036779325face7d82d0f51",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/new-20260906-90/maps.json": "bbaac69a270f349f4d5d61e02bf5e2e489e11b4f2fdbe82ea462771fd8dbc74a",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/new-20260906-90/seed.json": "cc13f0907ba372e4ef26abdb8eafec8353af7a14431936e28313c57678afba0d",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/post-verification-ledger.json": "71c324337336123e8caaf21b93bbc54f729f9355f49bba24273ad890b89b9d2b",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/post-verification-protocol.json": "2780a46b08303ebe25c9e2a66137f0189e65e024408c22ef6f67b1b42461076a",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/protocol.json": "d5fb17bdb9dcee1d6edf61e7a714fa4d9712de7c44cedbcf1e90ff4217efb5aa",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/visibility-protocol.json": "183d437861f38dba198c2e9a1f1e5556e0e1c1ab6cecadb6594648642c55a235",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/visibility.supervisor.json": "262ddcd3c0d3abfff3d01bd9364cacdee5b089f62ed5cab41e939e53b837da0d"
+  },
+  "rows": [
+    {
+      "discovered_rank_gain": 0,
+      "geometry_seconds": 1.5601581340888515,
+      "history": {
+        "id": "new-20260906-186",
+        "integral_quartic_coefficient_bits_lower_bound": 79,
+        "integral_short_coefficient_bits_lower_bound": 162,
+        "j_denominator_bits": 479,
+        "j_numerator_bits": 497,
+        "observed_refined_quartic_bits_max": 92,
+        "observed_refined_quartic_bits_min": 83,
+        "proved_covered_by_prior_boxes": 49,
+        "proved_new_history_boxes": 0
+      },
+      "id": "new-20260906-186",
+      "initial_rank": 27,
+      "point_boxes": 0,
+      "rank_lower_bound": 27,
+      "retained_points": 0,
+      "status": "PROVED_PREVIOUSLY_COVERED"
+    },
+    {
+      "discovered_rank_gain": 0,
+      "geometry_seconds": 1.5599503150442615,
+      "history": {
+        "id": "new-20260906-90",
+        "integral_quartic_coefficient_bits_lower_bound": 80,
+        "integral_short_coefficient_bits_lower_bound": 163,
+        "j_denominator_bits": 480,
+        "j_numerator_bits": 500,
+        "observed_refined_quartic_bits_max": 90,
+        "observed_refined_quartic_bits_min": 85,
+        "proved_covered_by_prior_boxes": 49,
+        "proved_new_history_boxes": 0
+      },
+      "id": "new-20260906-90",
+      "initial_rank": 27,
+      "point_boxes": 0,
+      "rank_lower_bound": 27,
+      "retained_points": 0,
+      "status": "PROVED_PREVIOUSLY_COVERED"
+    },
+    {
+      "discovered_rank_gain": 0,
+      "finite_ranks": {
+        "2": 17,
+        "3": 17,
+        "5": 17
+      },
+      "geometry_seconds": 1.612410862930119,
+      "history": {
+        "id": "det1092-unit",
+        "integral_quartic_coefficient_bits_lower_bound": 255,
+        "integral_short_coefficient_bits_lower_bound": 514,
+        "j_denominator_bits": 1533,
+        "j_numerator_bits": 1555,
+        "observed_refined_quartic_bits_max": 350,
+        "observed_refined_quartic_bits_min": 258,
+        "proved_covered_by_prior_boxes": 0,
+        "proved_new_history_boxes": 49
+      },
+      "id": "det1092-unit",
+      "initial_rank": 17,
+      "point_boxes": 49,
+      "point_search_cpu_ms": 29827,
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "returned_finite_points": 0,
+      "status": "COMPLETED_AND_CERTIFIED"
+    },
+    {
+      "discovered_rank_gain": 0,
+      "finite_ranks": {
+        "2": 17,
+        "3": 17,
+        "5": 17
+      },
+      "geometry_seconds": 1.713011272950098,
+      "history": {
+        "id": "det1092-outer",
+        "integral_quartic_coefficient_bits_lower_bound": 438,
+        "integral_short_coefficient_bits_lower_bound": 879,
+        "j_denominator_bits": 2629,
+        "j_numerator_bits": 2648,
+        "observed_refined_quartic_bits_max": 615,
+        "observed_refined_quartic_bits_min": 444,
+        "proved_covered_by_prior_boxes": 0,
+        "proved_new_history_boxes": 49
+      },
+      "id": "det1092-outer",
+      "initial_rank": 17,
+      "point_boxes": 49,
+      "point_search_cpu_ms": 32517,
+      "rank_lower_bound": 17,
+      "retained_points": 17,
+      "returned_finite_points": 0,
+      "status": "COMPLETED_AND_CERTIFIED"
+    }
+  ],
+  "schema": "elliptic-curves.bounded-prime-point-portfolio.v1",
+  "skipped_proved_covered_boxes": 98,
+  "sources": {
+    "elliptic-curves/cas/report_bounded_prime_exposure.py": "1bbf75057ff6cc725ecbf87d8371342807f7e51e0765a5fd94123a9e8048429a"
+  },
+  "status": "PASS",
+  "total_stage_seconds": 136.74674995418172
+}

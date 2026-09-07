@@ -1,60 +1,39 @@
 # Elliptic curves over `Q` — ACTIVE
 
+Our small-conductor rank-at-least-22 curve is now **[ICARM #626](https://elliptic-rank.icarm.cloud/curve/626)**.
+The [publication supplement and submission shortlist](notes/ICARM626_PUBLICATION_AND_SUBMISSIONS_2026-09-07.md)
+match three of our 201 inventory curves to the current 626-entry catalogue;
+198 remain unmatched, including seven with certified rank at least 27.
+#626 is fourth among recorded rank-at-least-22 conductors in this snapshot;
+nine relevant entries lack conductors.
+
+The [restricted-prime refinement and invariant height bound](notes/BOUNDED_PRIME_EXPOSURE_AND_HEIGHT_FLOOR_2026-09-07.md) passes another full blind27→28 control, skips98 proved previously covered boxes and completes98 new-parent boxes with no added direction. Exact j-invariant bounds force255/438-bit quartic coefficients on the new fibres, close to their best258/444-bit charts; further normalization cannot put these fibres into the retained27 curves’83–92-bit range.
+
+The [blind factor-free regression](notes/BLIND_FACTOR_FREE_CONTROL_AND_PROSPECTIVE_EXPOSURE_2026-09-07.md) now recovers28 from the original27-point subgroup across all49 charts, with independent exact proofs. The539-box follow-up completes on nine retained26/27 curves and two improved Mestre/Kihara fibres with no added direction; all8,907 retained witnesses pass independent proofs. A separate98-box pilot on the newly reconstructed determinant1092 MW17 parent also completes, with both fixed fibres remaining17.
+
 Three [positive-ratio Kihara parents](notes/KIHARA_THREE_POSITIVE_PARENT_EXPANSION_2026-09-07.md) now expand the proved portfolio to at least **fourteen Q-distinct parents**. Their generic section spans have ranks7,9,12; full generic ranks and lattice types remain unknown. The [six-fibre pilot](notes/KIHARA_POSITIVE_PARENT_POINT_PILOT_2026-09-07.md) now completes294 boxes and certifies three discovered directions, with strongest lower bound14. It also handles rational2-torsion and proves two specialization losses before counting gains.
 
 The [Kihara expansion](notes/KIHARA_PARENT_EXPANSION_AND_SEED_INDEX_2026-09-07.md) adds four further Q-distinct tested K3 parents, previously bringing the proved total to at least eleven. Corrected index-six seeds and smaller models support196 completed boxes, with all four bounds remaining14. The [first-parent proof](notes/KIHARA_FIRST_PARENT_PICARD_AND_RANK_2026-09-07.md) now gives exact rational/geometric Picard17/18 and generic MW12/13, with full rational NS determinant756. Every Q-fibration on that parent has generic rank at most15; its fibres remain unrestricted by this bound. The [quadratic-section proof](notes/KIHARA_QUADRATIC_SECTION_AND_PARENT_COVERAGE_2026-09-07.md) closes its full geometric NS determinant-756 and exact field Q(sqrt(-3)); it also proves that the existing rank14 path omits all positive parent-ratio coordinates. The other three exact generic ranks and NS types remain unknown. A [conic base change](notes/KIHARA_CONIC_RANK13_CONSTRUCTION_2026-09-07.md) now adds one independent direction to the first parent, giving a primitive rank13 subgroup on a chi4 surface and one independently certified998-bit control; no point search or near-record gain follows.
 
 The [parent audit](notes/PARENT_PORTFOLIO_AND_SECTION_LABEL_AUDIT_2026-09-07.md) finds all 201 high-rank inventory curves concentrated on one K3 surface and supplies six additional Q-distinct Mestre parents. Their [exact lattice proof](notes/MESTRE_DETERMINANT468_PARENTS_2026-09-07.md) gives geometric NS rank19 and determinant468, distinct from production948, with rational NS rank18. The [full Gram matrices](notes/MESTRE_FULL_NS_GRAMS_2026-09-07.md) now prove all six share this one additional geometric lattice type. The [degree-three follow-up](notes/MESTRE_DEGREE_THREE_PENCILS_2026-09-07.md) now closes all554 retained pencils at generic rational rank at most11, including200 further complete frame checks; complete root checks must precede coefficient work for a rank target. Their current generic MW ranks are exactly11 over Q(T) and12 over Qbar(T); every Q-fibration with section is capped at16, and a useful rank16 fibration remains unconstructed. A [bounded chord trial](notes/MESTRE_EXPLICIT_CHORD_FIBRATIONS_2026-09-07.md) now compiles nine presentations, but their exact generic Q ranks7–10 give no improvement over11. The [fixed twelve-fibre calibration](notes/MESTRE_PARENT_CALIBRATION_2026-09-07.md) completes588 boxes and two specialization jumps to12, with no near-record result or larger sweep. The intake also rejects the former `EC-MF2S13` generic-13 certificate after correcting inconsistent section labels and signs.
 
-[Curve 302: inverse parent construction](notes/CURVE302_CONSTRUCTION_RECOVERY.md).
-The [determinant1092 reconstruction](notes/CURVE302_DET1092_RECONSTRUCTION_2026-09-07.md) recovers a unique rootless form from400 of401 integral-point words and verifies a primitive K3-lattice embedding. Its L546 arithmetic type leads to a published elliptic moduli curve with infinitely many rational points; the K3 equation, section basis and302 fibre match remain open. The [literal marking and CM audit](notes/DET1092_MARKING_AND_CM_GATE_2026-09-07.md) now independently verifies the full Fricke stable quotient and determines sixteen rational CM points of discriminants-67,-163; their coordinates and an individually identified non-CM point remain unknown.
-The calibrated inverse Fermigier recognizer recovers 245's family and actual
-rank-twelve section image, then excludes 302 from 2,578 nondegenerate root
-configurations at parameter height eight, with no height bound on rational
-specialization. A new packet selector also recovers 245's six-pair family
-from its previously recovered MW subspace, without supplying section images
-or a parity class. It tests thirteen points per class and verifies the
-generic identity and twelve transported images. The corresponding test on
-302's rank-seventeen candidate excludes that pattern in 130,706 frozen
-thirteen-point packets; other selections and subspaces remain open.
-Generic MW14–16 parents are explicitly in scope. The enlarged 12–24-point
-screen now excludes 263,434 frozen packets across those five spaces and the
-old rank-17 core. Controls still recover 245. The displayed group is saturated
-at 2,3,5,7, and 302 has a singleton rational isogeny class; neither a missing half
-nor a rational isogeny bypasses these tests. Another 2,771 frozen packets in
-two smaller signature spaces are now excluded. The
-[common-cover gate](../elkies-k3/CURVE302_SHARED_BRANCH_GATE.md) excludes
-rational fibre products for all 660,951 within-pencil pairs of stored covers
-and supplies an exact genus-three necessary curve for finding new rational
-branch points. Its Jacobian is now proved simple over `Q`, with torsion
-`(Z/2)^6`. A natural nontorsion divisor and its rational half now give an
-explicit two-saturated rank-one subgroup; its finite word sieve gives only
-Weierstrass classes. The full rank and global rational points remain unknown.
-The six new determinant-468 parents' displayed MW11 fibrations also exclude
-302 at every rational parameter. A
-[complete degree-two gate](notes/MESTRE_DEGREE_TWO_RANK_GATE_2026-09-07.md)
-now bounds every degree-two Q-Jacobian fibration on these surfaces by MW13;
-an MW14–16 construction must use higher old degree.
-The [degree-three component bound](notes/MESTRE_DEGREE3_COMPONENT_GATE_2026-09-07.md)
-also excludes every old-section triangle from MW14–16 and forces an
-MW16 construction to have old degree at least four.
-Other constructions remain open.
-Exact inverse tests exclude
-one Kihara line, the fixed MW14 fibration and the
-[completed dictionary of ten inequivalent MW14 triangles](../elkies-k3/CURVE302_SHORTWORD_TRIANGLES_2026-09-07.md);
-the [complete P6 triangle gate](../elkies-k3/CURVE302_COMPLETE_P6_TRIANGLE_GATE_2026-09-07.md)
-also closes all 94 MW14–15 pencils among that anchor's 880 configurations.
-The broader parent problem remains open. No messages may
-be sent; original provenance is a separate unresolved route.
-The constructed K3's full arithmetic MW9 basis and `t=1` specialization are
-a **completed baseline**. Preserve its certificates without promoting it to
-a major production search solely because it contains 302. Original
-provenance remains unknown.
-
-The [integral-point height-form test](notes/CURVE302_INTEGRAL_SHELL_LIFT_GATE_2026-09-07.md)
-recovers the exact generic Gram on a native control. Its 144 finite
-positive target forms fail a K3 height-two/saturation obstruction;
-other forms and the parent-recovery objective remain open.
+**[Curve302 now has an explicit alternative MW17 parent](notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md).**
+The full saturated generic basis has determinant1092; `t=0` is literally302,
+and its images generate the complete primitive17-core of the displayed
+rank-31 group, with quotient `Z^14`. Frobenius at149 proves rational Picard
+rank19 and exact arithmetic generic MW rank17. The surface differs from
+production948 and the completed MW9 control.
+[Load the equation and basis](cas/load_curve302_recovered_parent.sage).
+The [search and geometry follow-up](notes/CURVE302_PARENT_SEARCH_AND_GEOMETRY_2026-09-07.md)
+now closes geometric Picard19/full geometric MW17, excludes positive-rank
+quadratic sources of rank1–16, and exports independently checked trace tables
+to the existing rational scanner.
+The [earlier investigations](notes/CURVE302_CONSTRUCTION_RECOVERY.md) retain
+their bounded exclusions and proof inputs. Original provenance remains
+unknown, outreach is prohibited, and no production sweep is launched.
+The [literal marking and CM audit](notes/DET1092_MARKING_AND_CM_GATE_2026-09-07.md)
+remains a separate moduli result; the explicit parent proof does not require
+identifying an individual non-CM point on that curve.
 
 The [low-height sublattice searches](notes/LOW_HEIGHT_MW_SUBLATTICES_2026-09-06.md) enumerate combinations and common-cover representatives in the full displayed groups of curves245 and302 across ranks8–20. All184 finalists pass arithmetic replay, but both new methods fail the masked Fermigier recovery calibration. The existing rank17 curve302 core is rediscovered exactly; no new generic subgroup or rank is certified.
 
@@ -62,7 +41,7 @@ The [current catalogue refresh](notes/CURRENT_CATALOGUE_AND_PUBLIC28_2026-09-07.
 
 The [known28 point-search control](notes/INVENTORY188_EXCEPTIONAL_DIRECTION_RECOVERY_2026-09-07.md) recovers the extra direction on chart5 using only the old27 seed; all49 boxes and independent rank proofs pass. Its returned representative has coordinate−94237/33087, despite21,952 fixed translated-witness coordinates being outside the same height limit. This calibrates exceptional recovery and exposes a limit of representative-only diagnostics; it is not a new curve.
 
-The [retained outer/native follow-up](notes/RETAINED_OUTER_AND_NATIVE_EXPOSURE_2026-09-07.md) completes196 boxes without rank gain: the two outer curves remain26 and two native carrier fibres remain19. A separately calibrated factor-free mapper prepares all49 charts on a3,875-bit model in2.58 seconds, after the historical pipeline timed out before its first chart. Independent standalone proofs pass; failed preparation costs remain recorded. No new parameter sweep follows. The later [retained26 source audit](notes/RETAINED26_SOURCE_GAPS_AND_COMPLETED_EXPOSURE_2026-09-07.md) avoids eleven previously exposed curves and completes98 boxes on two of seven source gaps, again with zero gains; all477 retained points pass independent checks. Five gaps remain unscheduled.
+The [retained outer/native follow-up](notes/RETAINED_OUTER_AND_NATIVE_EXPOSURE_2026-09-07.md) completes196 boxes without rank gain: the two outer curves remain26 and two native carrier fibres remain19. A separately calibrated factor-free mapper prepares all49 charts on a3,875-bit model in2.58 seconds, after the historical pipeline timed out before its first chart. Independent standalone proofs pass; failed preparation costs remain recorded. No new parameter sweep follows. The later [retained26 source audit](notes/RETAINED26_SOURCE_GAPS_AND_COMPLETED_EXPOSURE_2026-09-07.md) avoids eleven previously exposed curves and completes98 boxes on two of seven source gaps, again with zero gains; all477 retained points pass independent checks. The [later point portfolio](notes/BLIND_FACTOR_FREE_CONTROL_AND_PROSPECTIVE_EXPOSURE_2026-09-07.md) completes another98 boxes on IDs42/49 with no gain; three source gaps remain unscheduled.
 
 The [recent parallel-results review](notes/SEARCH_IMPROVEMENTS_FROM_PARALLEL_RESULTS_2026-09-07.md) supplies an exact factor-free preflight for norm-class constructions. It excludes all428 retained dictionary generators from unramified words in0.13 seconds, with independent replay. The review through e575d0e5 adds generic Selmer-capacity, standard-S3 class, relation-root ramification and native-cover branch-divisibility bounds as construction gates. These results do not exclude specialized curves or change arithmetic scores.
 
@@ -489,8 +468,9 @@ The useful gates are now:
    below the family-relative requirement `32-r`; permit only explicitly
    bounded point search while the full descent is open, and still require a
    complete unconditional descent for every Selmer or exact-rank claim;
-4. continue curve-302 parent reconstruction independently of the parameter
-   experiments;
+4. use the completed [curve302 MW17 parent](notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md)
+   as a separate calibrated family; require explicit bounds and quotient
+   gates before any new parameter experiment;
 5. use the completed [fixed-field comparison](notes/FIXED_FIELD_COMPARISON_2026-09-05.md)
    to select any next bounded experiment before enlarging a point budget;
    all five tested deformations leave one unresolved inherited class, versus
@@ -509,7 +489,7 @@ Use [`REPRODUCE.md`](REPRODUCE.md) and the exact checker paths recorded in `../M
 <!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 8a4c932153e2bb2d -->
 <!-- status-consumer: EC-K3-R17-NORM12-ICARM-573-REFRESH a93ce35de34fde21 -->
 <!-- status-consumer: EC-CF-NEARMISS-DESCENT-INPUTS 25c9f212e5162216 -->
-<!-- status-consumer: OP-EC-NEXT 4ac6bebc76a6c1fd -->
+<!-- status-consumer: OP-EC-NEXT d5167cb3263ee6b9 -->
 
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-SELMER-PANEL 539bd8ec36b36c44 -->
 

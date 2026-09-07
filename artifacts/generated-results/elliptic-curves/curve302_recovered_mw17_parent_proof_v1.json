@@ -1,0 +1,91 @@
+{
+  "E302_exact_rank": "UNKNOWN",
+  "absolute_rational_NS_determinant": 1092,
+  "discriminant_group_invariants": [
+    1092
+  ],
+  "displayed_D_quotient": "Z^14",
+  "frobenius_prime": 149,
+  "full_basis_size": 17,
+  "full_generic_saturation": true,
+  "generic_arithmetic_MW_rank": 17,
+  "generic_geometric_MW_rank_interval": [
+    17,
+    18
+  ],
+  "generic_torsion_order": 1,
+  "geometric_NS_rank_interval": [
+    19,
+    20
+  ],
+  "geometric_fibres": "24 I1",
+  "height_determinant": 1092,
+  "independent_fibre_count_moments": [
+    {
+      "extension_degree": 1,
+      "field_modulus": [
+        148,
+        1
+      ],
+      "primitive_trace": 2136,
+      "singular_fibres": 0,
+      "surface_point_count": 24636
+    },
+    {
+      "extension_degree": 2,
+      "field_modulus": [
+        2,
+        145,
+        1
+      ],
+      "primitive_trace": 416720,
+      "singular_fibres": 0,
+      "surface_point_count": 493345524
+    }
+  ],
+  "independent_full_frobenius_implementation": false,
+  "input_sha256": {
+    "artifacts/generated-results/elliptic-curves/curve302_det1092_recovery_v1.json": "dba132cb054acf8f906872f4ed8c54583f1e8c7acf0bbaf98d8b8e25a4f32b2c",
+    "artifacts/generated-results/elliptic-curves/curve302_integral_shell_inputs_v1.json": "801d20aff986a5c20c023e3fa984aa340ffe2d4a6d1059e0af7ef51a889a49af",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_construction_inputs_v1.json": "8641c09069fc04b77a819b4602873858ed90a0eb858fde1b699e020f56b3129c",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_frobenius_p149_backend_log.txt": "f43060a678341e8af052f2db33fc15c1a71e14acd6dd5fce34f4abe0af580b12",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_frobenius_p149_independent-moments_json.json": "c6790828c5d42d0e83daa58cd0837fd5696fb3629a8afb18e16ac871c1f906d5",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_frobenius_p149_input_txt.txt": "a8c43f967fc4ed5e4f2fb735906edc1bfaa2f62d2f7e49dbef09c2601e4be712",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_frobenius_p149_output_txt.txt": "8973944daa8113bd54f1970da516e6a6bdaba8d025e1f78ca5da053b42ad2308",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "elkies-k3/scripts/parse_toric_controlled_reduction_output.py": "d5fd2852107fc61f16649ebe3a2f50527fdd4d53ab7930af0f6c96f680a73073",
+    "elliptic-curves/cas/icarm_curve302.py": "7b3c5f92f92278b7f0823114ef8e9967a9e8c867f1435238a2521938380ec73f",
+    "elliptic-curves/cas/load_curve302_recovered_parent.sage": "c4d57ab8ebeedfbc8b74c1838760dd4036d958985ed63ad2f52b2ce348d3173f",
+    "elliptic-curves/cas/reconstruct_curve302_recovered_parent.sage": "78ac829076b8a2e453952610a0449e4adea4d95a2a71837c4a04f69fa2a783c3",
+    "elliptic-curves/cas/verify_curve302_recovered_mw17_parent.sage": "e01678418b87cb0ea324b31bc9906f964a447c4077a4fbc9a36be47ab05842d3"
+  },
+  "only_possible_enlargement_prime": 2,
+  "original_discoverer_provenance": "UNKNOWN",
+  "primitive_frobenius_factorization": "(T-149)^17*(T+149)*(T^2+248*T+22201)",
+  "primitive_rank17_core_recovered": true,
+  "rational_NS_rank": 19,
+  "schema": "curve302.recovered-mw17-parent-proof.v1",
+  "specialization_Smith_factors": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "specialization_model": "literal public302",
+  "specialization_parameter": "0",
+  "status": "PASS_FULL_ARITHMETIC_MW17_PARENT",
+  "unique_order_two_coset_norm": "45"
+}

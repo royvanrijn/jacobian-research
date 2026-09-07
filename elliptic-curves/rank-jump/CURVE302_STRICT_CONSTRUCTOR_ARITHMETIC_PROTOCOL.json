@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.curve302-strict-constructor-arithmetic-protocol.v1",
+  "endpoint": "Supply the certified cubic algebra, complete bad-place set and generic strict-local map needed to admit an extra equation-only class on302.",
+  "input_projection": "The frozen new-parent equation and17 generic sections, plus only302's discriminant and conductor factors from the retained primality certificate. No public31 points, exceptional classes or point-derived class-group information.",
+  "method": "Use X=4x and V=8y+4x+4 to obtain V^2=X^3+5X^2+(16a4+8)X+64a6+16. Verify all discriminant factors prime and their complete product, construct the maximal order using these hints, record all ramification/index data, and evaluate all generic cubic Kummer classes locally at every S place and infinity. Prove generic mod2 independence at fixed small good primes. Do not run a full class-group computation or infer extra classes from a dimension count.",
+  "bounds": {"workers": 1, "worker_seconds": 120, "pari_stack_bytes": 268435456, "proof_prime_bound": 2003, "new_parameters": 0, "elliptic_point_searches": 0},
+  "verification": "Any future additional class must use the same complete local map and independently verified ideal/norm/independence witnesses. Generic strict directions here are inherited controls, never claimed as the requested additional class.",
+  "failure": "A timeout or incomplete factorization is UNKNOWN. Preserve terminal checkpoints. Active rank-search files and mathematical-status entries remain unchanged."
+}

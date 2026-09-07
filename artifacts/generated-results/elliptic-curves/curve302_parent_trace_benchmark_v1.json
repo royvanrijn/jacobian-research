@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "parameters": 529,
+  "parameter_sha256": "4785793fdbf0c182e85e6a77879cf590e3a7ae09cd077da0ea3ee09782e530d7",
+  "prime_count": 16,
+  "projective_entries": 3506,
+  "cold_build_seconds": 0.14340236701536924,
+  "warm_lookup_seconds": 0.0014722009655088186,
+  "uncached_character_sum_seconds": 0.10877507098484784,
+  "warm_lookup_speedup": 73.88602068145856,
+  "total_seconds": 0.2730033230036497,
+  "boundary": "Single observed timing; excludes file load, not a point-search speedup or rank-success predictor. No parameter selection or promotion.",
+  "cpp_adapter_all_seven_rows_verified": true,
+  "cpp_scanner_sha256": "1aaf8ba3ed7a08102837c106b737b9bc729bd2cf252d3863940c9aa8240c381f",
+  "table_sha256": "6cb3f4a621c798d3f37dbec8d2059d274876c23d609dd10c075becb41f363550"
+}

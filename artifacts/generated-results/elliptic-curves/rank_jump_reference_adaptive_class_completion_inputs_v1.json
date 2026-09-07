@@ -1,0 +1,2108 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_early_relation_pool_inputs_v1.json": "04aa9df34ad4c2b9a4d1794f54c7d44fa2d8349583e7c64102f6b58045d3d6c2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_reference_class_targeted_relations_inputs_v1.json": "f2e3acfb725bb4d671721aea7f46c8692e301f64e6cadcbee71b59db4e982167",
+    "artifacts/generated-results/elliptic-curves/rank_jump_reference_class_targeted_relations_v1.json": "380df1ac727feb4a6dd47f80af936a5a849e4f4df0950f4e61314e50de116f2d",
+    "artifacts/generated-results/elliptic-curves/rank_jump_reference_strict_class_construction_inputs_v1.json": "0a3980b6ab354d3c365160afc175b191fb39c5c777981a8fc20f5e5c0edd78ee",
+    "artifacts/local/rank-jump-seeded-reference-relations-memory-v1/accepted-elements.json": "08b678024224ae6f5f92bad6ce271f734196bd1df4d1de5233746fe41170c712",
+    "elliptic-curves/cas/pursue_small_conductor_class_target_strips.sage": "dbab4c92315ec9a891d971ea27164cff5b08be6fb8347a458a32abb27c98b48e",
+    "elliptic-curves/rank-jump/REFERENCE_ADAPTIVE_CLASS_COMPLETION_PROTOCOL.json": "a93ed551924d8683200ea2a25e4571e85b5120be884830058ee4caa23ad0d41d",
+    "elliptic-curves/rank-jump/reference_adaptive_class_completion.py": "042391b9d9e5ad9c9d070a8349d43d0a451f9ad34dcd28230ec38ebf26ae8fc0",
+    "elliptic-curves/rank-jump/reference_partial_class_extraction.py": "3fae72908ac73003de79df6b5c684678c3e198f254df8c443fb2546e5fc46981"
+  },
+  "form": {
+    "S_finite": [
+      2,
+      3,
+      5,
+      13,
+      17,
+      19,
+      29,
+      71,
+      2465779087453622652131442949,
+      519784438179112504122441050306814600881
+    ],
+    "binary_cubic_descending": [
+      "-582653777472000",
+      "-69418898236910689",
+      "2253317262489553494",
+      "28630981474137424362"
+    ],
+    "cubic_ascending": [
+      "45440201616242830029801770634418828098464819545088",
+      "-2919231625641258502793755607986240",
+      "1",
+      "1"
+    ],
+    "field_discriminant": "128900477062442043600727490102612931938219670661531295245188752203875468",
+    "fixed_a": "-582653777472000",
+    "sl2_matrix": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "slope_scale": "79228162514264337593543950336",
+    "w_power_basis": [
+      "-23139632745636896",
+      "1",
+      "0"
+    ]
+  },
+  "previous_fixed_chunks": [
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0000.json",
+      "sha256": "5863fdeeadaca3edad1b6b03213e232e7bceb4ea7d3451a04b02f3add3a7e3d8"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0001.json",
+      "sha256": "8717bfda7cc9b7053ee24236ce24fb3cecdf0e30e754b573cae8ffa80c0fda75"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0002.json",
+      "sha256": "68ca6b38c2599ea84139abd81f806480fdfb4eb0c6c0191ddf6f7b7854e2ea20"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0003.json",
+      "sha256": "54213d239cbfc0bbd24a6eea69dc4abb2bad85b30f9f7345ba214418948c62a3"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0004.json",
+      "sha256": "9cceb41097a7667b944dfe22f720b952794d91c67a04656782a3c773dd4ff1b6"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0005.json",
+      "sha256": "1de27db8fbad7521a88c2609e4a7916eee8793f0d0d56bb2389f0e5df1cf4859"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0006.json",
+      "sha256": "16f817a4f63645d09ddfa2a929640f106c6c52af1b49c2a8ed3e00373691db10"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0007.json",
+      "sha256": "56f49905a8b83fc5c2ba8f714b98a74f9e20778ff809b8caf2210137a5b4a8ff"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0008.json",
+      "sha256": "72e5cc15ce5419ac9255b6eb98a94fa19a4d53ecf2a544c38768d3fef9e03434"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0009.json",
+      "sha256": "b4ec6e001814f924a6b8cf762c8b59fb736961ccaa9db0aec622b5b4eafb7aa3"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0010.json",
+      "sha256": "530a79a2d0134c8498ac15c66c92c87a4aa148133645eafb6d84c6b2a1959ed3"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0011.json",
+      "sha256": "ab7d4a03061ac7cde9101d01271bd03d45ecff8b293acce99ca4977ff31f910c"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0012.json",
+      "sha256": "6e103b0c0972ec071d6600cd9333413f8c4285874adf637b7a0dbc649f1b998c"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0013.json",
+      "sha256": "1f491e632fb16f88c532657fc414bdc41a3cba596d0cc0e8b62f5380174dee75"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0014.json",
+      "sha256": "8fd3b2b813d967248254d57bb123ac187db16f43f842f106d6952cab6525f6e4"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0015.json",
+      "sha256": "0455b57fc89cde9a0afdefea2a708cd1bb72574332823db940e27f29c0290264"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0016.json",
+      "sha256": "5715c93b52562950ce0820f262da4fb79e74f3e350043a0727d8128bda1249fb"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0017.json",
+      "sha256": "47a3784eb21e013c60198ffeaa14909c2da472a4844aa136781aa256d5c1ca93"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0018.json",
+      "sha256": "837fb369f1c536507756ff904422e0522d6b88bdd8aa4a5c371b1d1b4330a4a1"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0019.json",
+      "sha256": "3d2e1f1ae52f9799a4b327c6a975e34efd56722b39d7638da68d0500e0d6e9c7"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0020.json",
+      "sha256": "8945284f3af22840734fd7d25ad144fafe540f85f5e803a8fbb45d4951d58f0f"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0021.json",
+      "sha256": "fefffe24ee6fb38c4752dd0753a765cd1555dfd9e1f835d0612f0d5579ac9ddf"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0022.json",
+      "sha256": "3356ad1efaf2dd58484285ccc22ffc92f899f5e3fdb248fde2bb4af08ce4098d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0023.json",
+      "sha256": "fea8f6aa005bb9460c7284fb532690a74825b52ff049646c06b4f96cc042311b"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0024.json",
+      "sha256": "d79382d0b9a74b2e63901a542db65f3de197552a451b089fa9eb185a7084d0a9"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0025.json",
+      "sha256": "d4fbfcac5571aea73583cb74d1731ea0cd0fb7bfafbc3d3845451a8e1c375ec8"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0026.json",
+      "sha256": "b7c8ad65c5b936cf1f96b4a1db1b47b7968fb0fe0e52f7b1417734b011f3f243"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0027.json",
+      "sha256": "9f5b055271dc2db589e162bdd8236186920625ebc55fa040336b459d85618b0d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0028.json",
+      "sha256": "9430df982a51ec60112a80fa3345c1f6b411d20c43ec87f28f5f3ee234c23ad0"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0029.json",
+      "sha256": "830f5a2d151a3a0d0a30cd64656213b30ba1b9963204896393a4e89f487bd47c"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0030.json",
+      "sha256": "c74541ce97a298e8889f184b846cebc48c8156a8974b3f8f4a067af3f871a7ab"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0031.json",
+      "sha256": "39e2da36c73971ce5c53fdb19ea3ec0cc91322be6109df50fbc3fc50df53b4bd"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0032.json",
+      "sha256": "ff81ba6e41aedfd21abfd1a497fbe981dda11ab64236439acffa72e63f6c85b0"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0033.json",
+      "sha256": "ab68bc2c5ba534a60732fed5e013831dbd59022036ea0419d0788e6efdacaf3c"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0034.json",
+      "sha256": "ec55730c65119dc4eb8c16de494400ae2d3864178d28e56e1bfd11b6aa80a7d3"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0035.json",
+      "sha256": "576c482a98f3baf532b46fc991e728b125ebc624745b503e76cb251f3385f715"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0036.json",
+      "sha256": "0a33debb36c6610918c1277b1e000f6526b6543da48a809f40170eea99e73392"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0037.json",
+      "sha256": "0bf5b88df8d50e41b444ba0b045989e032202042aa13f05334dd1dbb681bc34e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0038.json",
+      "sha256": "965a1fad86a3759e3cf06f092dcaee2ce5071768d53705f3658a26b0c3093ecc"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0039.json",
+      "sha256": "717dffa1d699451e17a813eaa8c1aafecdc9b5ea467f7b56b3b3451aa56200cb"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0040.json",
+      "sha256": "f5c8925088254373c09f8c6d724e112d3739cef246bba93ade21d51d2db12c77"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0041.json",
+      "sha256": "99371d4752627493ff0fca7849a2293f0284d01569693afc55a5e44432f08c74"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0042.json",
+      "sha256": "cfa23531e849eec4287f387903c39d797ef7fdca93d00fea5f31de672f07d73b"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0043.json",
+      "sha256": "8633e103f2c0071c3e7781479f1783d5dbbc14724590a757b05cab93ae350300"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0044.json",
+      "sha256": "6909733d0a0db9803729991c0dbcb6154d56e8c0a745051fb13cb9e165641315"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0045.json",
+      "sha256": "4733ed783532ac8c89f7cd2df66e2deb90de90c3b9aad242c0d4765d166ef131"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0046.json",
+      "sha256": "8a84fa9d6984056cf913a199786292c2adcd9d75c84c03dfd5c618fb0061336f"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0047.json",
+      "sha256": "c03b76e67c2e7544150399cd476aeec0bc2eb2589f179d35dd30e39c15fb0f6f"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0048.json",
+      "sha256": "bde44c6a907b84c8000f79165d74b7b4b370120181a52f9c48f54493deeb30ab"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0049.json",
+      "sha256": "b31b48c7af76cdea019666940aa525a7f3ab68bb023e312a9aeab9f0a99e82c7"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0050.json",
+      "sha256": "d45e6af3bab4bda416a3d3c1b4bd52f568a2fecedc6cbde348c504493093745c"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0051.json",
+      "sha256": "334790c4418056ed897a91ecac8e08080c8749ad6499d0d5b76d07b787d5a685"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0052.json",
+      "sha256": "68b98108899e2d74a7636374ef9dbf08ec3213ce23dcbfa4b2f58618c407213f"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0053.json",
+      "sha256": "32ce1d5a3de60b5b61bb94ad355781f04f958ba5e7826ffcbc519c9d32783ec0"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0054.json",
+      "sha256": "5d42eecf61cb6f739c05dc4da7250dbef6b2b1d413cedbbee377aacc3bbc0c09"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0055.json",
+      "sha256": "2815f4097c2c2cc6449cca6801eaf68e0c3f8086b681cf7388337c83dc807fab"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0056.json",
+      "sha256": "51146060e2d6e40538592864f19b2cdce13d275b0a79b479f08e5dfcb3722f35"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0057.json",
+      "sha256": "89a20fd6d60954c73a7d409bd9766dfa983ccc1c76070314dc3feb9beaa52f43"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0058.json",
+      "sha256": "5a127d1b0ab9cd4328c6f7d32f69ec8a30e357ac545f75f4d360dc07dd9689f5"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0059.json",
+      "sha256": "9156d8a0cc5b5fcebd2a30e53bd6a11c5f38ac3d7abdaccafaf7452e92e9d94c"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0060.json",
+      "sha256": "24b8494a128dfe02bb86f29b9335e54a4b7c38dde9cfb7ebeba4ced58bf00fe5"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0061.json",
+      "sha256": "e9f03db7d9bd841fa9aa295a1f5104853cf709b185080d615d81434781a555e7"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0062.json",
+      "sha256": "8d1e12204ae44735e831cf7a0bc9c4d8f3f98e55b9a68e2ca9cc90675ba7ff38"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0063.json",
+      "sha256": "c37e67a0d0d00a02badaab6767309f0bbe31fa291f9e8e16b4372057d9db4930"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0064.json",
+      "sha256": "b23d1587ef1cba1ca88d308296c4b479b3f6aca7e1087fcbf45686c8b40a5458"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0065.json",
+      "sha256": "038eea4193ec01672b857845404655a1329ad14f60561024fbcf5d1226f318d3"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0066.json",
+      "sha256": "8d0cee20a17a3ad05d96d3ec1478a8c103116a41d973958a3772abd2892db128"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0067.json",
+      "sha256": "44d9a9b35a0e7ce3eacbed64d9ad0f8088059b9cef807f6a61e895eaad81b733"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0068.json",
+      "sha256": "ee82482f19f147a9d9eea54b5fda240dc0212ed223a2d683b0890d160e5f8759"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0069.json",
+      "sha256": "1b216544135374848ae5142b485065d3f840a3ccefffb06379f3733feb969ea5"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0070.json",
+      "sha256": "45d0810e767b54a32d57c5048f829a7f4172fa86f00207055b8d8a2a1a002736"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0071.json",
+      "sha256": "5033e52a41310fab50ea91900151e98986a0eea20a583132e528d41e8082191e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0072.json",
+      "sha256": "560717839a0a1b8c94df063cb59ca4eecf3b3c0d65afe0093387c69f0a08533e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0073.json",
+      "sha256": "afb2ee2658b9e685fb47f4017baa6083c17e4b3bd6c11fb1dacd417818e38a9a"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0074.json",
+      "sha256": "ac83c29eb6198c1794b1395eb8448b71c87905cf4a3d3eb5f346ba8b928d7087"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0075.json",
+      "sha256": "334133b8958824089f287cc95a367587555a6e7c25380e6737124a9608f9e26e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0076.json",
+      "sha256": "e92d38530d16954fd281845cba6eef88d4fc68b711c7364df49420cd64995e5a"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0077.json",
+      "sha256": "567b1115216c9938113d9fb83a8903c5cf4596b95341818416b8831ba70e2520"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0078.json",
+      "sha256": "73b5fa58e4557aa2a6ffd1da794c44508a33824dc232654efbcc1c508d530d19"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0079.json",
+      "sha256": "e4cc7bd14d942de687c05460c2dcad0e7b7a6940b67a3faeb9729b51e1973c40"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0080.json",
+      "sha256": "44db4da0c91c83928af016f75c7d9963f8f8ee137a714a2646b79ecb6376c4c0"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0081.json",
+      "sha256": "d414bad16ad1d272ee9cdf679c68c883843f9be3e04d6589fa743d4750db3a69"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0082.json",
+      "sha256": "c371f2ad73373e88e206edf3cce40bb8574ca48fd3a1e5a7776d7451c053434d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0083.json",
+      "sha256": "5f953f5324573117836efab4458d47b6c5b44c5827b1311ad2f4fa2b96ea5b72"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0084.json",
+      "sha256": "633fdf1f209f61baf3d8be24970acfa7b95c97865c8e7a1c733e8e8ec53c8a33"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0085.json",
+      "sha256": "945c5a2b5cdca4fcd60b9bff365e103da3c8eb8a23c51bdfc94c7c9072816d5f"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0086.json",
+      "sha256": "01ea5c6c64e302035acbbfe62deb4f166a8388826ba8a6c92f9cd37e3be6f09c"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0087.json",
+      "sha256": "f23dcfe8c9609496198c7239da8882bb7fd0673ce9544843312c9f44aa04fefd"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0088.json",
+      "sha256": "493c66f78492f63fc543d5849a0573a268ac8cdb2305cf639234fc60cb944d15"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0089.json",
+      "sha256": "db38fa4ccb73eab7ce6310443951b4e6044180472e8f32c7c40ca50f9d55017c"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0090.json",
+      "sha256": "6d2d8be300c7a7f8d8e3c550deff2c659f4d0f8a93dd5edbe8e3bd6bc2cc83c7"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0091.json",
+      "sha256": "fb8a42fcc8e53557ba600dc7f931865cf55a38b8a82637897978b2ed63eb2f96"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0092.json",
+      "sha256": "29fa6f69760cc5dd8df66b9782b00e2254282a280049a9880c4d8996c35ed60c"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0093.json",
+      "sha256": "596ed57e7cf6ca984b6e5ac46d9554cd9717a64a17803112ef3e153a5a0b2553"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0094.json",
+      "sha256": "af0017c8b7b0896e291bf1858c0cc1f036a34170c683438222b7494ea69b9c5a"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0095.json",
+      "sha256": "49eee5b23c29079d647a6f641d3b2b5e01222b3346f0193825eca0f46fcf2f31"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0096.json",
+      "sha256": "c636ac94b4d797097369ff713263b1c9f6ca1036b7911b17a3d998276140e30d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0097.json",
+      "sha256": "bf37440345106b37d4e7e91c98b1960b6c4c343f0d9b4a6d8c43c0b48a8c480f"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0098.json",
+      "sha256": "c30caff1e8c807fb734c5b50b0862dd49f7a6d3cec7985512b4f47bb1b16b937"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0099.json",
+      "sha256": "c9ef9c5af33995983d39f144cfa276977dc747b0928f6ff3468705b6562b87aa"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0100.json",
+      "sha256": "42a6bbbf051566bb52b2d094b9432ff765505a11e0ca076056884a39467eb149"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0101.json",
+      "sha256": "27dd12720bce7b8f90f307e528daf5460303ff92ff68dbb34f266eef28d6718f"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0102.json",
+      "sha256": "e08ee1297bc5030860ad5c20c5e16c26259d0c9a1bd1656b4ec749e2f89e5eef"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0103.json",
+      "sha256": "35915b5628764c8c4e9150c7e1839886dc39d1e36c6e33e5f00ddb80f435daa4"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0104.json",
+      "sha256": "1af5982e1a16d92a34f595ec4a4d732ce3af5bd9950849626fbd42ae14bde8d1"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0105.json",
+      "sha256": "4830c7ad042d7d9169a4e9d81e187ff86da336e39c2c939dd0c672755485657b"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0106.json",
+      "sha256": "8d59af70913f7331cc2763cc604358962efa8922a7bbc98cc1cff9bc0448d8fb"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0107.json",
+      "sha256": "618ba21714831585883d5afa60e828689be5f4d899a11625845937a4244455e6"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0108.json",
+      "sha256": "0068c9d0a9ae564840479f74f7529cb36540114ebddb1c184f8dc7c95cae26f3"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0109.json",
+      "sha256": "466541012cec43a736c6efb460a4a47f994dd27d8b88094301ff1f0d4463cb2d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0110.json",
+      "sha256": "20cbbb67708d09cc3cb34d07d6c283c8c9f3f533ffd5ce666026e60cfb58cc24"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0111.json",
+      "sha256": "90d8e85cc1121aa7c0d6ffb6f397fbef627a126b55ca4d23451ae795e616d499"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0112.json",
+      "sha256": "ed6123228e44fb830a5aa24a706abc7a61ee24e057442e17d51d5089dbd30ead"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0113.json",
+      "sha256": "fc82c622a01f97620567bccb3503fd3c26e5260dfe4b1af9f0e6d0324325021f"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0114.json",
+      "sha256": "51bb0707d7842554945f4e59bcd255f6030b18440bef74217a1a434472823a92"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0115.json",
+      "sha256": "f81c25928d580349a1afb285b5ecc3afa47b701eeedba5602d85a86d68e60f94"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0116.json",
+      "sha256": "032afb63bb9089148b7e54e826fa94e65703e13892956ce429610daffaddb18f"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0117.json",
+      "sha256": "839bb5f600d015773d852390ce51ca1e0ff00df25517c1552a96e0fb77c52121"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0118.json",
+      "sha256": "094e6c137e72074caf52445db187c6415f47a6d404e5fcb06037ac2133e7772d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0119.json",
+      "sha256": "149474aba61fea8fcc0693dbb6d2d9846b03214a4631f238213c32e289657cbf"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0120.json",
+      "sha256": "247457fa4ef8c22f5f60168a0fc990dcc9e5662470cb28c366d500c4de2fcb9e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0121.json",
+      "sha256": "3beee143ac809cd3eb53d9a9b2dbc1a32059a006c8073c0d5e126de8f14ccde7"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0122.json",
+      "sha256": "26a71d394d8e9c9dd9daf16c4bfa950953a52e03cb90fe7f6a4b616265e63ce5"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0123.json",
+      "sha256": "f4f6e312be25886bc6680799e64b78f54b45c241e433513f490542f391a8358f"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0124.json",
+      "sha256": "87198915e44261a1e22ce05f4f4d833b0bc18dfee58b601cd6f5b168c51baa81"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0125.json",
+      "sha256": "7fcbf0693329c0e7a4bd426047989e35cdd0d7cd65ab6111e0820131a2881dc2"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0126.json",
+      "sha256": "d8950788b49ad72c09d567a22b030330386813b0e078efb58b96b297ffe3a421"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0127.json",
+      "sha256": "673c51ee5845d9462bb6e6e7a8486bf0e3e1cf4a26bb52d6be806e58c5a78875"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0128.json",
+      "sha256": "99dfedd5825c4e29654a256e96a8bc615203adb651b498b5bd1bdd7a0046e0a4"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0129.json",
+      "sha256": "8e457e29d40ccdc1ddc8483b77616c748e48cea0271882f492518bedaa813a97"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0130.json",
+      "sha256": "b18c4148ef4d468cd099b2fe4ab9ec6e64bc59d58865773bc4885d974caba109"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0131.json",
+      "sha256": "177b17f829bf241168d2b100aecbab5c7c233eb366272b4af9991ba4bb2d1070"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0132.json",
+      "sha256": "a76f909f78a979c22c29fe3378e99dad81ed3448fbb3a6dae7a938848b3bcd2f"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0133.json",
+      "sha256": "8d29a1eef4b40465ed49ec4568205ecc812100901326d2bc72c7341ed8999f19"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0134.json",
+      "sha256": "cbba8939a5a8ac0314e55b211bddb2ad33f3b234c2d062ee74e50d9405c7e7c8"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0135.json",
+      "sha256": "68842427a2529649ceb5059c4304f2bc7ed9a628f7a333a00cad9dbf3bef04e7"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0136.json",
+      "sha256": "e50f23671fd4d7f1c004a1268c39e476bdaeaaa8c3a01cffbc13f858d0680689"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0137.json",
+      "sha256": "bf9be12b329fbb57144b1a52209b684158f044fb9b29455c4f128e9fb3236b2d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0138.json",
+      "sha256": "04c6d2cc1a6adb89dfbd18574d7b826790a6e7ea0660480413119fd162835967"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0139.json",
+      "sha256": "278bcdddee1781ed4eaa727f990b4acebe3be9e6cdf4d2a18e34b337985061ea"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0140.json",
+      "sha256": "b207a2a71e6337c050550fd8a560d19dd2939bd234f23d1e2c6e084fd87cd264"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0141.json",
+      "sha256": "e5e6f2e0d65da4d5d9ce90c0572834d7197ddb0a5d0094e697724993e56020c7"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0142.json",
+      "sha256": "3b5c2d3994b8de1a4140a7b14e76e110ee7f35e5c2951b91c99f4228f9de4380"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0143.json",
+      "sha256": "26b1fd6e30e96f786f61208abc52e9224c18197e61d03c14f87cce1866944185"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0144.json",
+      "sha256": "875311f7ed426bb808233c58ca20ef5a2c455141eb9fd314111ce08f1f0b49a3"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0145.json",
+      "sha256": "a66461abc68c448411dd5c2f34e396e884b0b078b3a68eeee86371a87cda22e7"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0146.json",
+      "sha256": "c621fa03c89ea226e565d03dfd37c702be30ec0cea670062b5b887ce0a53506e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0147.json",
+      "sha256": "2497a5fa5656d8637c6efb0a969c08bb66dad0c4b85862aa54a829610187a55c"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0148.json",
+      "sha256": "c78ee7929068843950dc65781276dcaa29c0eb5518e725b0e174e29bc8a7274b"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0149.json",
+      "sha256": "a3fb03d340d29219a90ad371354392e5b3a46ff29caa1cae7abb8693b1fc228e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0150.json",
+      "sha256": "aa7fd0af7099448590019e7825cb0b8954134efe1b93d8560ba97ea129e5cec5"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0151.json",
+      "sha256": "530ba52f68952802abd0ace0b19b4cfa16e62599c115d792348c1a488e0ba829"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0152.json",
+      "sha256": "951e28886a938ffc7469ae61d6c74bbd4a272c00121d6d7824e0ec180bb183f5"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0153.json",
+      "sha256": "0fedf561ea28b5abde01b54664260dbe056cfca1e35af693ea5ea1e55ec13f0f"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0154.json",
+      "sha256": "989108701ea410f76ea1555ca8f5555ad38a49e009f28af6de26110f4a756a07"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0155.json",
+      "sha256": "d10bffdedd4243cb62f746f57369f8501c7f2bd13ddd58f82b049b9b7e9b5f24"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0156.json",
+      "sha256": "333b9650ef046ab8b1fed7814c961eb16aba33be32276c06485e2fb8ad4851fc"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0157.json",
+      "sha256": "754d8b1bf9f84776d3ec9027467ef4524c19cd2d4abc03d3824a4b025d7e7ef3"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0158.json",
+      "sha256": "c96260d50a4364c4745089a9fa5880272eb4892041b19b57475bc5cb101abf2f"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0159.json",
+      "sha256": "a0429c0982ff3ca3cd8ba39cefd07d5ced032b49883debc1c62d68933f96d439"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0160.json",
+      "sha256": "fea50810ae3e2b8056e4a2a01390cee8f8404b261a6a1faf99491f90155105d3"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0161.json",
+      "sha256": "ba193f2079f4f98af0d161d61376b8fe0b01f80aba92daa5990378b7a1c53a35"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0162.json",
+      "sha256": "dc9088d683e844b8ed789fead98f31a867cd0306ad5ec23bd413f9b895d7abe1"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0163.json",
+      "sha256": "77e692f042ed7f851f184a917e9dbdc744e7e88e00a201fd9ca641e8b8ee9670"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0164.json",
+      "sha256": "d91c9e346724fa552fd62407a0c7349a12d4a2fb8dc357b5178b8aba0c61ec6c"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0165.json",
+      "sha256": "a7df5a986514ee0cb65cc22867c83434ff180f8c1024e65e41f38f0bc825e581"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0166.json",
+      "sha256": "eb41f4b41f0654f113cb749881e974111589e2951550bccd940d8a5509361f4d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0167.json",
+      "sha256": "020b51d6e1b1f6f46af62f3073efc5546363bfc0b0142d390257dcaa44a4c2a0"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0168.json",
+      "sha256": "542361a16c08cdd7442555018024ed511f36a6f15eae7446a2c896676a5c3b63"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0169.json",
+      "sha256": "121886156823168edcf894b3ef6fd3eb43e38d6004e0e5cf6188888babcfbef5"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0170.json",
+      "sha256": "f69cda1e22349fd9038222299ff84b491602166e188a24ce59d00cb7013fbe87"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0171.json",
+      "sha256": "a47ccdecb293d579f1555f10a338cf0a161609e9a4718a76a8d9e0268fd66cd8"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0172.json",
+      "sha256": "c318881ead9d6ba8a6418516f255cc8e5a634417883f82c82a4966d48e200fbf"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0173.json",
+      "sha256": "b7fa96d05d76b05352d40bbc0928579aafe24ec34d8912959a648e417fd9af7e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0174.json",
+      "sha256": "201c6a40c9c71870726d40ee93b864742d680dc85f659201ee73d74fd77e8503"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0175.json",
+      "sha256": "2000ff68391e3f8bb567e3114ebe8607e63514ee8b7867ffb16822d5eb33ad8b"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0176.json",
+      "sha256": "57c70609afbe8df5c0a33e9adc367c2b20df9fbf91a1f29c7c6c0dcc8fb107ba"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0177.json",
+      "sha256": "5c56bedabe6c95624ded09cfe5ac753a26ffa84b96f514481ca11c775be157ef"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0178.json",
+      "sha256": "fca8989b8c174210fcb17aa30a5f18c7dcbf565fa12e4b7cea61d62b3c8ae6f0"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0179.json",
+      "sha256": "bf85092b90a04a789cbbcc1dbcdb89f311f9f2df9df9a35a48d61d7c958c5137"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0180.json",
+      "sha256": "e398e13038c51055cbe85db49c2691b0feb5db849b1035974987774041296877"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0181.json",
+      "sha256": "a20e582a39dd061ed6459b6f3c073a44d6897935da6a579802cfae531f3a03ee"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0182.json",
+      "sha256": "5a67696cf44540fadfaf6b4a3cdd7540cf65d26c57f1a4af19f3e144a72aa53e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0183.json",
+      "sha256": "ee124243243b930881ed633c0738009dc2733f9fe6e5c1175f2bbd20edc4af27"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0184.json",
+      "sha256": "ab95205c9d1a9363a75240b8b27b67f3b771dbaaf4e59d1f09348e303e6117a7"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0185.json",
+      "sha256": "df5f491a2e0d874ba6527cba61a5e8bd814de24d88fb23b0653f7fa8b2225672"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0186.json",
+      "sha256": "8649d185b401ce5b78d039b3627acb0f78d85d4b5afaa74f66c5b240b1909666"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0187.json",
+      "sha256": "3666db5efc9cf44cee42c251472f944303c5c129ff1022b2f48daf9deb27ed5d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0188.json",
+      "sha256": "0189195245a85ca88545893108ef2898d040304e326fdfa86cdadbb60e6f3e60"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0189.json",
+      "sha256": "69ced2cfc033daf2c136fe2223abd096212ff4883d2d76bce25d9f2cac3d1d30"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0190.json",
+      "sha256": "385988bf916c54871bec5cc7de9a082107a324b3cb6eeab7c131bdbeb7defeb6"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0191.json",
+      "sha256": "3321c680f662995b86f809c73b0088c49783da2d4627bb071dc842c68be4d38a"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0192.json",
+      "sha256": "17e9e73306e42a2b1055dcfa6ba4d2db14e572bea917a36aa3519e84a5da789d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0193.json",
+      "sha256": "875e36e1496d73a463cb7ad7b74627f37943bcdc9b4a53444467f5b088c2c91a"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0194.json",
+      "sha256": "75c7a114498066ae75d16896ee78d301e44fb30b0ceeb0b317794152a639b32e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0195.json",
+      "sha256": "d65d380281051743f26586723d6519b0776b54159187e380cd088ac25a24ab57"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0196.json",
+      "sha256": "d667fdca7e88c2340588b8271ce0ae557e92f2c9aa6f3bd2d3901965f72d8cd3"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0197.json",
+      "sha256": "18b6ad6eaadba1ebe8f1c87db2ba1b44ab84828a426f6d7851357d3e4f230245"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0198.json",
+      "sha256": "462e9edb30061a2e4ca226d53be2a757c7c90171f2a2e4c004f6335e62ce0acc"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0199.json",
+      "sha256": "3dff853d58571fdeb6ad954490551a1bcc928b6a9a2cfe0a42ac35f80de25f30"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0200.json",
+      "sha256": "652bdcec2f2a14141f4194b2f1f153e0ec70b6ba62873801a242a73ea85f7fa8"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0201.json",
+      "sha256": "a4158a679efa574136ffef332e73631c5b117c6975ac938eba5eb15d51511136"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0202.json",
+      "sha256": "a95c298c39377a4b670f5b868080c1e391de97309625e0b2bb1dc0a774702416"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0203.json",
+      "sha256": "34f868e155b61c7757e512f00e4003ddd98fa2bc07382e0608b215712348ceb5"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0204.json",
+      "sha256": "19160e16d9c6c75a0c45c7364a9694a43ca1af1eb842b43cf2fdc2ffff6bed78"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0205.json",
+      "sha256": "9bda9dcc621d68236f0d13c89cfc2f8335923a7d593104dfce6d4d3e85ba9bb6"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0206.json",
+      "sha256": "4d47bb992e777758ede79bafbc591b983d7598625be30176336295ef3cb0bfef"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0207.json",
+      "sha256": "7b5b0b7ba6b94d5fcc458599f184285616914283bdffe7ca1e496a8f033803ea"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0208.json",
+      "sha256": "63dea19618dd9461ea2e12516e9e4db1766b37a0748a9a99ad0397e2a4c9541e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0209.json",
+      "sha256": "a9324453b0886549259b7c7dfe09dbb2c6a399ad298b7ce61fb65e15de1d8a6c"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0210.json",
+      "sha256": "3f1a4702d3e3310d40d595ebccdfb154daa6624afa343e6cc9c4ea84b8214506"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0211.json",
+      "sha256": "85d773e4e6a235216dbd5d5e7dbb5d356d50b346ab7b0e56b6e3f0f4094f34ba"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0212.json",
+      "sha256": "42d0cc38efb53e2adf1d9cfe0105ae322112c3ef19dc34b8cbb1f2cc8c077ddf"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0213.json",
+      "sha256": "0cd0134bed1f47364b8fada688ec8ce0abf03a4d2ef0234ac0986eaee9e3d1a2"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0214.json",
+      "sha256": "c08b6efef9075c3f52fb3235dd0134c8e49f67c699bc59e5741a7d3ff3ea8ec9"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0215.json",
+      "sha256": "99d49e3ea7fc23b7b28e381fa723aef5264b14b1266824bc5f6dfdec7f9bc467"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0216.json",
+      "sha256": "26f66c3fa316a6564eef6bb17d916bc3957ecab440ee610b23e950330cfe978a"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0217.json",
+      "sha256": "42287a921ce047c0dc799e49619a1d83a4151807562c4f52f73c61da757e1367"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0218.json",
+      "sha256": "69b8ef7d4650d30530abc907dbea6e11c7de499288bfbb947ffa542f0fcbadb2"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0219.json",
+      "sha256": "d5e64ff23b95441b686bd9945d4866f2da34968edcdf789a73b409e5a6e6aceb"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0220.json",
+      "sha256": "fe94ddedd2f92e5660e3bb43dcb11faef69ecfa8a6b5530ad021d8dc1b428514"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0221.json",
+      "sha256": "95fb4d27960b48ddceed8816b45f1be9c272011c7297d0c593db2027b0a1ccff"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0222.json",
+      "sha256": "39ada1b80b732a43e38543c9bc8eabfede2f3f800270bb57027fa0d1cb4a626f"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0223.json",
+      "sha256": "ff7e784c8240abc44714ba3b1e8e4ea801e7aacf45ef1f89ffce0bb760afe014"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0224.json",
+      "sha256": "70dbddea87236705fea2c5cc49cb8acb0fbe8e50c82b7d66ed19d6487ea70c1a"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0225.json",
+      "sha256": "5d0fac2a9efbd9197294eba5c44b1d54fa4accc056310d4b9e891cf69f0d18c1"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0226.json",
+      "sha256": "ed7f59d0c1953c1cc40b4660df7980fdeca53791d2c0951ca809cda359e0d436"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0227.json",
+      "sha256": "79d3b4246951450c92b115c4c5d94967fecc0799f1650115d087a910040f45e8"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0228.json",
+      "sha256": "ef831fdf4cd41a18905917bccd742d83eefd9d8b7ea449d23b3e95ec52c2bf2b"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0229.json",
+      "sha256": "ffe02ef52225d2e15d37ef83da004eae89febb438d61912464321d7b08eca98e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0230.json",
+      "sha256": "08de86d13df53c0e818046afbb77aac7cec29dd647a7e8378be98f7ad816f558"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0231.json",
+      "sha256": "b40f2857d95a700eea35b2ce083c2f8fe42eafab9cb167dad2028e0a7ae2b360"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0232.json",
+      "sha256": "a2bdc78c1e733d53a008bb0815976ea5f3bd0656e8780ffaa92181acb5db98c2"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0233.json",
+      "sha256": "8e287024ea425ad1766f84133163d8c872f0487e54dcb8ff6b743e39bb1a3a38"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0234.json",
+      "sha256": "f539ad68cde9e7a1982e03a4576e1ac8af9b8496fec3a35849d9294dd1cf7b7d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0235.json",
+      "sha256": "be9da2973f4b08c880f297f8406f1df0c5a4fa029b5f590834b1d18a1f26a0df"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0236.json",
+      "sha256": "5f0d5354d7da293896af733d98f051a8a5660ab9da64324016dd16fc36f2b1fd"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0237.json",
+      "sha256": "382484a90910f921d845d21f5461cb9afeceef6fee56eb74e6ba0769e66e7ab6"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0238.json",
+      "sha256": "900cc522b3b0a49437d8e681fca70debfcb2605f4f30e7996a8ca8e42eecea73"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0239.json",
+      "sha256": "b446537e2ae3bc458d2f7aa077e7a7f09de3f19319b9e00c30f4edb8dd6bf4a9"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0240.json",
+      "sha256": "c800e5a8856e903bd70e06770f464354d0d2fb03b4e1d52755f62391a2ec4bda"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0241.json",
+      "sha256": "907cf28aab2a74aa9e09caad639697c462d1b156c737d6f0a1566dcb9ce8fbb9"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0242.json",
+      "sha256": "a9c7d28af118e4e62f2cda519573dd19996fa3554a5ff5ae8c30c824d636befa"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0243.json",
+      "sha256": "ed938eb8d5828faf1fec3242b5ac9799c173126adfdf301cc54d33400dfae98a"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0244.json",
+      "sha256": "287590e9e40d89f87e6979d2eff0745f0a073d5a66350dcb0388c8062ddd1381"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0245.json",
+      "sha256": "024e4377eb6ebf388b760d3303941aa18777e2f20315b9adfcd434828db05d51"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0246.json",
+      "sha256": "b430d8b876831aa76f93e9a8ae207843a6fd2ed4de334942bb5b2ed74aee357e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0247.json",
+      "sha256": "faa6ff16cbe6a305b8fd8c1b30ec7b7c0d68f22393270ee622e048cbf48a1801"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0248.json",
+      "sha256": "f904d968ebe3bfad2bf66a6d5e5729f4a28dd0e3bc0e9940591b8f7e27d7a382"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0249.json",
+      "sha256": "f9acad0c803b53152291ef292d3110d268c3ce02b05c539ce8233c50f7ccbc1f"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0250.json",
+      "sha256": "de4e9e443ef40d35adcff96fd49490a0bd321f8b9e39bb4305e1d1a8961383a0"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0251.json",
+      "sha256": "4011a5e311184a5299f973a0374cf36ef00697f39c9293a0303a72693d0985fd"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0252.json",
+      "sha256": "4b48cd7df0e5738ce564c62403be6f1a28c986bfb4884f5f46b524d37daa66e7"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0253.json",
+      "sha256": "ad75cc38f7ca3743d306f9f4963062751837707db422cab727fadc7cca88c51d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0254.json",
+      "sha256": "17e8905492e2c0249b186d2b65227beb04dae14ba680f2af63395589fff9a245"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0255.json",
+      "sha256": "0cb09c55d4a5545b465bfcab7487ee864e64bfa50ec2617773fb066d365190ef"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0256.json",
+      "sha256": "d0c00b12a0ae16dea372bd15f8cd370d3227362190c17307cf6f8c329328212d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0257.json",
+      "sha256": "2e8e688c000b42d32e6a2adaea586ba900885c8ffc98422cd0dc92612b7a132b"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0258.json",
+      "sha256": "5638fa88c98c59c5883d1aa8f810632c45e01b9e32af54dadc2328215f1da05c"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0259.json",
+      "sha256": "cf1932f2f0395c941442f1b820102f614afcc843134e0d28261478b46c3b8668"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0260.json",
+      "sha256": "6f74b2d2601b4740b2658b8ef853e6313146c373aa69a813e922b804e677104c"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0261.json",
+      "sha256": "b4951d8da7fa74d4f58c3d4cfa5884939af3355433f1335d1975aa947886b73e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0262.json",
+      "sha256": "8f50d7b896356673226d896ad9d61c21db49a84d94f6020edaf188c77a23e2e0"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0263.json",
+      "sha256": "bcd20e0116ab6d0c2b317079ceb07e5c131a88296664fc20c9f1b371c5ef39f9"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0264.json",
+      "sha256": "74c4a9df5103a3ff0fe6953ee9cabd66be047e924a7a9a89f03a9358240636a6"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0265.json",
+      "sha256": "b38aaa14618ee01a7882a5f4f9a713a3e29ecabb0dc64716e9ca978b891711f0"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0266.json",
+      "sha256": "9793e4331be3f1316f9280e6e9b9506cf4947cde8c4ff5e568202cef30cf0893"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0267.json",
+      "sha256": "4336b4708a416b3f37aefb0a5959c31192062edff4f194f4a3ed0105002d9a95"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0268.json",
+      "sha256": "2590832edc5ccfcc4611ace7baf4aaaf68362a02e009ccedb406633da2df64eb"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0269.json",
+      "sha256": "c0ab28d8895eba3b90fc27ca4c5406287e4e527c04a06346470c9f44a32e6fbc"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0270.json",
+      "sha256": "9dbbe118d4e0d610989229ce40cc30d26fdf73c8ec0a29d8f09e3eba623e9af8"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0271.json",
+      "sha256": "ccedb0cf01bf0d11897effffd8a8c9dc66cea6b17c52dbe6c0e8680eb7471bb6"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0272.json",
+      "sha256": "0a11f655596097931bc662672e2297c8cc5acd4c22004295705e519799ad6959"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0273.json",
+      "sha256": "68307cbad7b6a529b9ab53ea674484c4e4704a61c4930efbd674faa15f46eb00"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0274.json",
+      "sha256": "81e65fa4549be61c1b0650e2434b5216c3fdbaeac40e7653e0567c5213343e53"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0275.json",
+      "sha256": "3231b010fcb51a6bc4d3bc984ff1424ba56bde2efe28dc47023366ac2f63d956"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0276.json",
+      "sha256": "d2d1796ac0855ca73a1e739d7eee07ef4ad638f82043d3c541da797221f280de"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0277.json",
+      "sha256": "5e053a66fdd155fd31302a2b72ffe4afb133c880512dc36198e4ebe59068de27"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0278.json",
+      "sha256": "749bc4452ef09292f23e26a23897492f5eca483f326e9af95623e7caf62fb07e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0279.json",
+      "sha256": "381f42fb4259ecb126db52ae864a9ef59ed67b43001116bfbb0181f20038e77f"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0280.json",
+      "sha256": "afeafc37ae979051ec144a59778dc2c2c19cb9eb5ad03651e2cf0314ca97f90f"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0281.json",
+      "sha256": "e74ae475adf9373610f716ed5e4097efe79263591abcefa918817a63b2227cae"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0282.json",
+      "sha256": "fbd298f33fce9c63b6baf49ded5fe1494ed2c7d2f5c5b0868e9c51dd190d1111"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0283.json",
+      "sha256": "26f43b8e5f95e030ea1eda5f53c93e66108e4a97ee441b7825ed362d28272c66"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0284.json",
+      "sha256": "7d28a909c965631728bb768ad61f8a7831721ebd834f54d07825cb9cffac38d7"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0285.json",
+      "sha256": "bea148cd6af81bb9f13f3332e183646df87a174e61be15c10bce718637802683"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0286.json",
+      "sha256": "6f5028e67ff17d60177e049a614a09a0d96b01db835b8440d8f7cc9499bdce00"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0287.json",
+      "sha256": "bf02c9c6a0f8f05d0ce05528ac2941360344495f9010fd17d304131bf5d1c866"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0288.json",
+      "sha256": "ece6733fee076f1a29e2092028d36def9f60db206bfbdb9369c93b42e9459a06"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0289.json",
+      "sha256": "b385d3c56d805e564e8a0ab38de07a0b88d27cbfb1e8e2f4b52bf62e3ea8a236"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0290.json",
+      "sha256": "66c5cddae358def83b988f054da05534e5427da7afb6b3707970aecf322d369d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0291.json",
+      "sha256": "b8aa66f9827164dc99921c53472c11eed0607e9e6a4549d83d7108efec0e6eb9"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0292.json",
+      "sha256": "5d149fe20d53c24366004e3cb699213923dfe9ac7d136430a50309af08f888a6"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0293.json",
+      "sha256": "3c95a8e9329919c6b9db27f734d4fe462c4fe47006c0578df7ec946b75837763"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0294.json",
+      "sha256": "f212502d495530b8fd8012e33e000acd2eef52b905a33b4d006b3eed045371ce"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0295.json",
+      "sha256": "4a1e21ed76d62f37d7e226aea15a92538b7e3b1070baddec6f4de1140621ec66"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0296.json",
+      "sha256": "bcd23c82133533601f5d728bf1d762b312db20062e8cd4c9e9d987fc268b0b6b"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0297.json",
+      "sha256": "0973d8491d56d982762e6a60744bfcf82527334137a3b4a291eb55f4178c6100"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0298.json",
+      "sha256": "936dd609b15e71ee1b7493de9a46c3d8e6924bc9b3c8577aaa3951b23ab66c1f"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0299.json",
+      "sha256": "9cc1920e60b872355f8c83e3e38fb25465b6c2a6298a651d6e48942778b08d2f"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0300.json",
+      "sha256": "4b0ef21864e7b14a9b5338b6d8f1e8cc48d8797dd664e130393443665a9c69c5"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0301.json",
+      "sha256": "d6944f075f736b8554d95f61cb770b19d3162829b1ed3e0b7841624f1077774a"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0302.json",
+      "sha256": "63af896be289751df88f0420ecb51352e9fed600571d838c16210c695c77dff6"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0303.json",
+      "sha256": "a823a877dc13f1fe23491549178b9d445b68c228fca42af3465b432f8825b3fd"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0304.json",
+      "sha256": "e1880d0da4951f924a6a3120548627161ac4d9db3bb772ebdc1c498fb1e0258e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0305.json",
+      "sha256": "665029e11104538c772b4dbe61aced42abea39c6bef77b1eb5796d851684b74b"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0306.json",
+      "sha256": "2e159ea68d7c4484dda8d997200a4000b35bb9786c34b8bbfc893f2e7c3dbba4"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0307.json",
+      "sha256": "6bccec1758012f0f268c8b7b7740d4364e64f7c78c1d26f1f60c5d7fc8460ad5"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0308.json",
+      "sha256": "b23793f78ce62cde06bfd78f941d40ec1568170c24cc9608c04d42cf7b060cd3"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0309.json",
+      "sha256": "3955a7d6f34eb4d06676df4a830b419c9f539e3bf81d53ac6413865c3d2a28f3"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0310.json",
+      "sha256": "b578ca5c5f7e134075962704207dd5d7f1e1b94c2c68424a1ebc5dfc0c70ff0a"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0311.json",
+      "sha256": "9848f65512a3e28836eaf32f8a2eff0d743ea1537d872f7d40b61de3379777bc"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0312.json",
+      "sha256": "2ebbdf4f5c0ef9f947001d2da680d0de86d212dbe99606a743fce59d7b4a3de5"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0313.json",
+      "sha256": "509da4009391ff45a95e9d4d8dbdcd2a6d0cb87be437eb6bd83b8d3c945ff416"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0314.json",
+      "sha256": "ea069e8429217e4173fa0a61d70b3a4b5ed1e7131e0c65a3558177c7928b589a"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0315.json",
+      "sha256": "c62a1e47d847dc3a70b7b66262c3903c1b2bc99c15009017aa392f62d636b644"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0316.json",
+      "sha256": "a03589fc53b5338fb79b143b87ce84a8881c83b2610677befe7180a76f384370"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0317.json",
+      "sha256": "de4bac7b2e1824acb45a26b6163a1f69bd8c77276919f98dfba477f536b18684"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0318.json",
+      "sha256": "b9b1b3087913496504b920a7481aa5da6250c7bbb3247d6b159708126cd075e5"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0319.json",
+      "sha256": "f827188f90f6237389667970cc7c84698c4c9fc67c35f5a7bffd55e8db6034e9"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0320.json",
+      "sha256": "2e2741b39c5b07bd2d825c609e30f16e92f6b91d961c6b7db39526aae790b7da"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0321.json",
+      "sha256": "550f0019c836e19b32e6685a4c542997e12e7c4da82aec7a08574d4e071b5c90"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0322.json",
+      "sha256": "4a41019eeb6f374e60aa2b982d25a5a1147ee957083ce42e0ea5d7df31ec78ae"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0323.json",
+      "sha256": "f1d31db1668c2a87facbbf233450e993bff88ac30671c60133a7a94852722802"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0324.json",
+      "sha256": "a5fb563ef883a4fc46ed3a5200651c9b607938617e89f822ec45a582d9f23e6c"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0325.json",
+      "sha256": "05e0e3964e5f2bf941bcaedc370db5a2bc6e77ca874548ab24c159698f2bdc8a"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0326.json",
+      "sha256": "190714b897c75fdf9aeffe358a49d0455d357665834b032f955e6c07ee62db54"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0327.json",
+      "sha256": "d318e76a233ff02f2b7855a9064c0f9cbe1b9653b7d9ed56a32df24684487568"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0328.json",
+      "sha256": "bc662ceee92d154a5e497b720b548d9610673fe4961d0b87bd83ab841f7ffa27"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0329.json",
+      "sha256": "889ff172be8491d5618197b0f697d205c410000678d81a87e93c0096dd2e199c"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0330.json",
+      "sha256": "a149f39318009602b6c1d98d4ffc104304100bd836ef87446b431f1ce2358414"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0331.json",
+      "sha256": "456dcced260ca75e326df667ed17598e00ef6eec941115fef1fb2f66a2a8e21d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0332.json",
+      "sha256": "80d6d0c3dab5628800b8b3c23886ddabc6974316f9a24204ac17b2f4847fe2ca"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0333.json",
+      "sha256": "5ba6be619151a72d7c0512036fd7bd9773b4bd302e5da4bd5a3503c5f7dfd01d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0334.json",
+      "sha256": "89e6043138c7b0a185deb239a6cdadf850cde31bcb6988b2c1c0c28b4a5f7159"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0335.json",
+      "sha256": "72c7db25c1c4c6918e23881ebc1c75e125d1877519c5a5f9dfc9b647bfa85933"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0336.json",
+      "sha256": "e33b193f0aca0b23e3787479ed6ffb9610f9faf8918c381f0bbe81a27e4c94e7"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0337.json",
+      "sha256": "f673deeaba42b42db666f1469659c25254bd4c6a697334b9644de01cc10a36de"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0338.json",
+      "sha256": "eb60f0240d24e81be59325575478c8c58d8bf2280d712b2b651dc9a415827523"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0339.json",
+      "sha256": "8c7ab18d8d6027764f3dfc6670456eaa26483d49ac6b6a1a193fd7f12fcf7ab3"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0340.json",
+      "sha256": "f183cc75c78610ee9576ddf977bd160ef388b8c0e43a4c5cd1eb59e7a71bed82"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0341.json",
+      "sha256": "949ab4cd16e5fafeb8c7ad6e540f85ef92415cfc507e13889d2dcb763a011f7b"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0342.json",
+      "sha256": "76c0a7cb6d6249bb81e9b8383c3134480dc472c6e1aca16cd29851e424b68234"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0343.json",
+      "sha256": "0961d579c610abde0dc685508a60c41ccf2ab57b01e99bbb6c16e7e558724885"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0344.json",
+      "sha256": "77cc642a79b596be7f06bb498d4b0181755a6d1dc9e12e6a3617a1ada9622803"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0345.json",
+      "sha256": "e235f3afe68c1d57f69ca709270168d785aaa4653e54205f4e7ed8c770bd9d22"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0346.json",
+      "sha256": "8790a711928f566fa5f3ce294a72d74057b00d3000d87879b2462e5de6236920"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0347.json",
+      "sha256": "d622b378076a458da9846fc34ca20a651eb8ce385f659d88a8756d775b890788"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0348.json",
+      "sha256": "0dfb1f5a04615f74796f32a0b84f95fdd46ac142cb8d07120f953e24708975c3"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0349.json",
+      "sha256": "d38b1854a503b41003c7ea96f41199fb1027e2d6a1a415c17a0489f72b73a4be"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0350.json",
+      "sha256": "30dcd06a7a43937fe95c578a03eea80e6d47735b1a5c59d6ce11653eddcce65e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0351.json",
+      "sha256": "8248da74d4fb659d1df7e5926398883af6be5137baf03affe31d913fa81d6a99"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0352.json",
+      "sha256": "3a90b37f290147b12f6139148d7ec1193abcc79348860d8f281a5fd24d381c5d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0353.json",
+      "sha256": "d5a8fd2d07eae216eb5ec5d3a0c034e26da5b2b59823fdd3a6fa69f03b748a19"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0354.json",
+      "sha256": "2a3c995089d7320e890887c73abd756bfcbf4b3d9f15e84f539b7e7ff24c2dd4"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0355.json",
+      "sha256": "421ccea0391f546e45d1883887c376b921cedb71c96cf0e866b2d2b30554d5c6"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0356.json",
+      "sha256": "e88a7352880e4db1bb412bc552772403672fec8aaa66c74700d5f6da356a1c33"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0357.json",
+      "sha256": "3a96d5efa4eb428b9d76b1e46565823df9f0561d8654af98737f8fd125afeac5"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0358.json",
+      "sha256": "674127a42731a69bb13045ffe044517b00b038448572f653705584e4498d8f71"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0359.json",
+      "sha256": "db62b6fd9e61972f82770ad9adf1ac9558922eca74e2bc3634f0d7cb0eff9299"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0360.json",
+      "sha256": "95d84237041ba3f57675575fda97f83105bde78928693c68401053f4c1d3e691"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0361.json",
+      "sha256": "7be6a625335ed9bf91f20fc7e9ef7b36131254a6a2b74a43672d5be34a8c786d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0362.json",
+      "sha256": "6c6aa76a2334cc464a21eeecf956158dce9e277b206198538cecbedfa7f55718"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0363.json",
+      "sha256": "0aec11adae0afb63cfe6f0e2e43cb4d7c73867855fd8be3755643817b62387a4"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0364.json",
+      "sha256": "78062b3cb3243dfb18651e67c234e7368a7ef843f5e620f1f71ca45cc924d418"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0365.json",
+      "sha256": "a671061e4f787d1d0483e322ee675c0b55ee59f5802e67e6f837f9ad464f3278"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0366.json",
+      "sha256": "1085bbec97cd8992da5bbba13bd69ad0d2d520d7559e0ee6d2ff9ddbcd77b96e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0367.json",
+      "sha256": "281c48a21f191a278f2453b25fa404f7b2fc9463a77e7d0216cfdd5e26709089"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0368.json",
+      "sha256": "1e25bcae76599c29f65ecb37780943db183b26e8e179358af96382a0dc3638b1"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0369.json",
+      "sha256": "07b4d2a8401ba60f3f56ef68ca21b70c0c1c9333f43e2d71db5c85113167479a"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0370.json",
+      "sha256": "4808b061601c5e29663cef7553a87cb6d193a68427a67ff82caf340db79e5801"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0371.json",
+      "sha256": "10601542bab7909f96fd569bf27f256196e9525b3cc43a6afccb3a1680989483"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0372.json",
+      "sha256": "d3761813900c0669ffad481e9068b6d562f60dbd1de8dc35dd405d57705e38ae"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0373.json",
+      "sha256": "90bef200fe4c7386eb8d60566557e90e1f0e4391ae121614786a01463713c694"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0374.json",
+      "sha256": "2d3bfaeda00308be511587d14fdc9c19f1224690c467a284bbe5b7bdebafd0af"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0375.json",
+      "sha256": "1868296bfc11a6edf69dfc61be4743cb12af6dec80bebfa911eb818526b8cf85"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0376.json",
+      "sha256": "8bf063347ef7000d31c57a654761c3c6927fc86f4fe6df958e049321023cd5a7"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0377.json",
+      "sha256": "d471806ca1db9b277b06480f234ac26527bddbdf7a7de5907991c64ea335689d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0378.json",
+      "sha256": "4d5f8bccf2fe11b9ec6e9dc1e9a3ad23423bcebd18eb99d851a71ead02f636f2"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0379.json",
+      "sha256": "7cf6ae74e1ade850e6d1c8e3e89a278975e6faa85914fdfcf8d13386902641c1"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0380.json",
+      "sha256": "1589f291279d0401ab36fa3723b4fb231b2bf945f9b433ed325c9f715e9b0c63"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0381.json",
+      "sha256": "bfd2d45b20118549fbb356f5d3650454300535a9119eaa22ef568d42ce194646"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0382.json",
+      "sha256": "9e6cca5afa723f93e6de02432f5b91e3ac1e739ec2828123c077f26aec5ecb27"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0383.json",
+      "sha256": "0b13d45b69912df8e226684ab8899ad5c19d43be60b54869bb6f0e7712e8ef2c"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0384.json",
+      "sha256": "919311ce9e538fb11e72ef65a777afd0bd022ff0558762916831a37a0fe8b2bb"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0385.json",
+      "sha256": "1bf2345135eac69d8caba610248ccf6d54e9cda9b532571c4be9368bdfa1562e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0386.json",
+      "sha256": "b26852948351cca4a0bd4661dc8e87b32b62df3b3695ed5494b63961f21662fa"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0387.json",
+      "sha256": "f328e65b9cabfaf052765c157eed06e6d42e838473ecb6962692851771a0397c"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0388.json",
+      "sha256": "bdbb6e79906b2f15455c6456feaec0c4c2496728112321068469f3a604a320da"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0389.json",
+      "sha256": "d85aa05168145927355c1e94a48dbdd5bc22b0a779934a952adfb29e5ed2ec48"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0390.json",
+      "sha256": "80ae30ce8cc0b42f06278028cea3ade6f53072846ec42db61252595bb4776fce"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0391.json",
+      "sha256": "eb67ef7947d85e8feb402cf2d394d38c296f3b211765a1a4a604991154528f79"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0392.json",
+      "sha256": "f1ace4ed85b3af2bf430996a6657b345d0b61c797b12501593e3023e856d3082"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0393.json",
+      "sha256": "210a58184f03b5853995e8c0df54cc30e2f745e79cfef8ebd78934da31f2c537"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0394.json",
+      "sha256": "8f7a1595670e859117802e90d5e9457900be60fcf89bf0a3957db59459dfb4ab"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0395.json",
+      "sha256": "c8c2f49277df3b83fb28794dba33a6c0ed6f7940283cb03740f968248cfb796e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0396.json",
+      "sha256": "624817cf8225c6427b3436f78a8a58fa89075ac095d8b70f213a7f8109cb0b3d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0397.json",
+      "sha256": "cbd5d501bb69bcd5090a293e68d9029e56eca04700aa3fbb954c073d52730023"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0398.json",
+      "sha256": "ea62c8b26b72a74fd389980550ed107347a80997687e13dca2289c68a277c43d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0399.json",
+      "sha256": "016cb44c9c43468bf32aa6ff5b5ce7b6fd8e84ee86f9b9c9fdab8d3a4309d69d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0400.json",
+      "sha256": "4fec4dbf1de832bcca87b8db37b9b16fdeed39359149b5e43086bf40536ca90a"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0401.json",
+      "sha256": "b12b79a846c40dca58abc852dfdc126931d4c3e11bb2ff17c2dbc53654f5be5e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0402.json",
+      "sha256": "99a1631ad4f299b9318589517c06158f8d2ac21654186ba35f482fb0ba7c9352"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0403.json",
+      "sha256": "e0f508ac89b9f0932853886401ced5e8cf4112d0fed891b8850295c27a64d103"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0404.json",
+      "sha256": "e3a69fe1252ed4c363de857b1ec7d6317e512459fcf9d809bb357946c9860d77"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0405.json",
+      "sha256": "f3fb35d8fa086e7beb0f33db3324b3f8861dba5d58fb2f595e25cc8876588b82"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0406.json",
+      "sha256": "d277031ea594b9e2f36ed5d0e0b6a43e184a31b363df86e4b302d1f0184a6a42"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0407.json",
+      "sha256": "aca26cfcc39314ba565fe9f41d658d39b1e0f4c5a57255bbb9f0bcb41555436e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0408.json",
+      "sha256": "991127542de915d97e59c3d6ef7dbf15aa604a4b0cac7901a54e094c3419f96b"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0409.json",
+      "sha256": "4db9a5428b46aa2d7c6b23e27c58238c7f265c40025efc85ecf47f63aa5d419d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0410.json",
+      "sha256": "04a90c29fd2ebc789d2c034bc8f2f09e2fbac1fcc04cef463ba946d690e29b77"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0411.json",
+      "sha256": "094b89c6ba42a8a398787539b0403aacd36409433694fa4fc1ef46a92e79d9dd"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0412.json",
+      "sha256": "af0d8f68781d924b3c4bfc10ffa3a19edde9e20de6373b8de0cc1f8cd2b09dce"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0413.json",
+      "sha256": "51b7cd12bd746e459426c9ec113e369ec890ce4c7778eea5ed2dc39244cc222b"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0414.json",
+      "sha256": "29e6f41e5b6c2289879332fa1cceb53f6274743dd8bff35fd98a9ddb0b97d507"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0415.json",
+      "sha256": "ccd1808ee353cb909c7f877b6bc2da021a502327ad8e1aae1465edc02bba5228"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0416.json",
+      "sha256": "e29454bda3cf4646d56ee0a3a4f285d2d4602513f45a2ae7c358a59c6da0c6b7"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0417.json",
+      "sha256": "5f17bd87b7c53674d59ece456ae7b7a8d3a2486d02d69b76de4636541e17dd43"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0418.json",
+      "sha256": "c8587be22d551a8cd53e4c040fb91af4eb22e348619666249b9b75fcd87ea3a7"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0419.json",
+      "sha256": "574fd9f3be697c0544e747d9608d9ad44fb2a237e87bfa5077a6319592bc75c0"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0420.json",
+      "sha256": "19f8941f09e54387113f281b90180f967b77157b02bdc25e8b5e0fba91fb132f"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0421.json",
+      "sha256": "805f1a7066581e52e5ea8a8907df82a8845d14e7eeb393a28105f1765b8fdc19"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0422.json",
+      "sha256": "dde26cb3c300f334901821e44aeb881c456a34a809122c2556c3f31e781efd6f"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0423.json",
+      "sha256": "5a4c0f5fecab77f07ac0d8925c666e6a14a00ac07e24e48b3c16d47502d7e8fa"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0424.json",
+      "sha256": "1514e130ac6d90eb2947ff5c5d4e5f6db5592e4601df4abbbad62d3ac99887bc"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0425.json",
+      "sha256": "2f88579f0ffa4073ce9dbdd7ce3dd6ea4718e3797e1316d258c85e946b79df11"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0426.json",
+      "sha256": "5e9c52b819f43c367814f6c9197442baf2dfe75753fc4ad65794ddd15dd040e6"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0427.json",
+      "sha256": "f38c85c83ad0fb60bbb9d593c36a554dd5952a57d0d652feb844967b23e0a133"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0428.json",
+      "sha256": "d3697c164d0de757de0969e2d4be654dcc529a14bcb6e86a6c01e349c189683d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0429.json",
+      "sha256": "afb5ef7e39ecfdd131481a774727d40f6c1120fab531eeca6045c812695a3336"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0430.json",
+      "sha256": "b008ff838356e6d9eaee3e31e544c5890d9bf00f6424395d29af2cee2bfa65a3"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0431.json",
+      "sha256": "1b95481a39ca4281df30939726d4d39402f403ee306b10cb9a9327f878d174ea"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0432.json",
+      "sha256": "204ac1ba307ee99a895954e04d6356dafbcdfca88d8c7faca2418ece8e4e5a30"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0433.json",
+      "sha256": "fb0bab2d842071ed3bc6833b19e10e180378b78511a07e6f1bc9eb8cab0c8456"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0434.json",
+      "sha256": "ef334a53e43dd0a6f00fd56f5e174ceb0bce3f39ad49b272637c6ebed4d7a8fe"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0435.json",
+      "sha256": "d333af43e5abde18855aec648ef1945fa9dc396e7fe21c088f576e20d36cbfcf"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0436.json",
+      "sha256": "c947f1eb095451fc9eae833df01214c2e16216eb588d8bb1079b70d87b8dacc7"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0437.json",
+      "sha256": "45d18af5e1d981d2afcb7f4cd83cc094109620cd377752a632bdf43528918bd6"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0438.json",
+      "sha256": "647fe5ce3f25c4dcb6eccbb81e233c08932a5eabb931dc33d195c19d05166464"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0439.json",
+      "sha256": "f794e2419e38f7ecd985464694c2fecbbf1b692b39725285dd1df6d04084b068"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0440.json",
+      "sha256": "5040b41b5d6b32a7605bbdea3245c0c4997466e7d0cee08b18edd1767769afa6"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0441.json",
+      "sha256": "cd0b5350c1bade6da9278135dbcef4754022c2b309e6f8a9c178e72f22cc49db"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0442.json",
+      "sha256": "242a43a458c4788845f20b2b8b4c679327b2c5cdb009971b1471ec11db6f8fab"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0443.json",
+      "sha256": "082a53fbb662c233a237531dac9835407d16ee694e2afa8255fe5772004fa878"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0444.json",
+      "sha256": "60cc032ca06ef1008b308d7ae78fc0b906becdd39309f58550728672019f230a"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0445.json",
+      "sha256": "38d26dd415a1eedeb096f19d83e16f4f50e422657ee3d89174cba245bf1e6bb2"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0446.json",
+      "sha256": "d4149154e9ed145b36f1003a545d89bfd55564e4cc82b2e3a1ffcf6df346f357"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0447.json",
+      "sha256": "9e64f6db81a429c223e01e304d4e36465a7da6cb428407f3659da265cf4e3248"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0448.json",
+      "sha256": "697a813d68cb8ac07c6589a94c9a99e66ed705e0bc7f74da3b32776d76010734"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0449.json",
+      "sha256": "40de716d31c880ac25aed0b02489dd24a365f74d888b2764d1f4331ffd7a4a78"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0450.json",
+      "sha256": "091d2c7d50a79ef4cc1107742f43be42dd14f60e152005d1665c7e6c49dc6b09"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0451.json",
+      "sha256": "a8930e9aacba4e2386af132408638d12569498d813857c2a058ae071f4b5108e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0452.json",
+      "sha256": "5fbe04c5ed088f181ff0e2a720904705f168b5109a3fffd94f0672da7d84fde7"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0453.json",
+      "sha256": "074efed2eb6401d96ef8a443f54ed4e81b4b778336cd6410441eefa2b2d28b89"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0454.json",
+      "sha256": "c3e93469eb252bf9bf9483f260b2bbfde6a17d4aef9b34e94bf607e6d73de43b"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0455.json",
+      "sha256": "4bec4bff6b139336d5537ab147e47dad3e06bb11fa822530182b29f85826f95c"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0456.json",
+      "sha256": "4286fa4c32bb951885e8a25b55500380c2f96ed4b71e65592ebbb98d358f2358"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0457.json",
+      "sha256": "ff84d3f6ef436e94842bbfcf33f664a33bac0330a5248b5668f8d5e96108ee00"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0458.json",
+      "sha256": "4c7892632fb2f61ef84cd893610a121d9d51fd58eee82107c2bd915ace4ef0e0"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0459.json",
+      "sha256": "6b2ad3c676b806e7589ac854e318bf7e70d138ab8f53aa4022e09af9a34ee3b8"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0460.json",
+      "sha256": "1985538107719d4002c30fb1e1d2831e877c623ff296bcb5b79d5e140d07a4e7"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0461.json",
+      "sha256": "5ba7bbf7849bd4a3e692cf9163d65b74955d01f845f9d1b11d559d022bb61f72"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0462.json",
+      "sha256": "dfbf83a6a62f024aecac7a7181a90bb8a6e45d4a5073eac61dcaaea0b8258c83"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0463.json",
+      "sha256": "867dd41365664a025c7c6b4bf47480eea711114e3ac2abc6662d1a240143197d"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0464.json",
+      "sha256": "106e66e28b56c70bd5c0618c2c73eb314050c1b1b0ac755d120bd836faab3720"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0465.json",
+      "sha256": "221f58e2883bc4eea7c2291f44040b48c7e6a941516265fcf5c19147e99f72bd"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0466.json",
+      "sha256": "a55f9f1d194d3afcef55289b03bf2d6c83bdd84f4b7e893ab0a8834ee51672db"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0467.json",
+      "sha256": "9670125cafa30280566348e0c595e6e3d412f58e5a502ef20c5d4c8a54e65e18"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0468.json",
+      "sha256": "da7292ec0a095ad20e93349c60681f0ffeb91377564ccfacde56be2eab35d8ff"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0469.json",
+      "sha256": "816b7f61147047adebb8e1b7d0820c6b85f1058011bd7c4557028dc6fe2d95ad"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0470.json",
+      "sha256": "8415be34496d0d97e8b7978c6f7e23b7fd54d857ed946dd2241601187d75817a"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0471.json",
+      "sha256": "6508a0d082fe5dd18940d3ea121456ede16f3d9a07e3b398290ee6636973292e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0472.json",
+      "sha256": "c2f4ad727fe5360f2be045c4b98ca6b7958c726e35fcfe41072c94580ebea2ba"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0473.json",
+      "sha256": "8b9c5ed80107bd1d58b73a9d07aaaaa78ac28304b8e9bf4e7262749cd2a9ff68"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0474.json",
+      "sha256": "4e5e5d1e6146e545617713fb24ff968524f5fd4a454e9a9c042b2a2fda4fd718"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0475.json",
+      "sha256": "95ec384aea262df496d2154e0a48a17c1134887e5e390569925a3ce44b8ca9f5"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0476.json",
+      "sha256": "f8e40a290c6285d227d5f97a3bbca2b22d722adc172009368a5012ac4c42d079"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0477.json",
+      "sha256": "721deeb508f1a0b9ebfcd32f42277f15f31d376fcf078edced08e6a815bc1bc9"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0478.json",
+      "sha256": "f992222042dc4874d6d82189c08200d4eab076481b885e30f2c4e0134be85605"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0479.json",
+      "sha256": "741ceded7c10672fbbf47579e8fee7329d5d0d622ed3a32438781716a40bb65a"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0480.json",
+      "sha256": "841f04ce3697020995a30c6fbf54dee32678fa46a13fe627245e67af93befd32"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0481.json",
+      "sha256": "cd18b3c6ea8812235196b560434e4956f820514e17a0b208adc99094640262e8"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0482.json",
+      "sha256": "16df7e82455e9f867dc589e897d9509b94b4bc8b801852165e662806e756f35b"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0483.json",
+      "sha256": "384058165d373e5868015c17b9d4a7353cc9ceae508e2bd6e7868244fa20a8c0"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0484.json",
+      "sha256": "95d9bad736876cf4fa3ff3d9557c863f373255ca1705d18b82da8c158e954c66"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0485.json",
+      "sha256": "22c30f8e880b79fdc2781703897833ff1d4692d9ef6c7407fa329933f63532ca"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0486.json",
+      "sha256": "3bf852279af6b2caaaccc7b34260e621ba6a4b509bac6f688caa72c716c0a29e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0487.json",
+      "sha256": "d3c7c25628d3f23a255d1f02ba81b6d6cca925c22503d79924b27fe87a469961"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0488.json",
+      "sha256": "5f8b11fbe0f17f4aa1ca2ec6bcb4bfd15cceca7bc1427d8c3d22e43f4509b75f"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0489.json",
+      "sha256": "c3d9eaac567137469e632a8015f0d4130c1714e042491c447e91f6d18ba806ea"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0490.json",
+      "sha256": "d17d814d2dc1a637bcfb3f2f1e060bab3407fb52ba26feb23f8b8cf1127f97e1"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0491.json",
+      "sha256": "3abfeb518929d08ffd0974e2f3d69524c2d65812782c0c9c6609fb1950d05e85"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0492.json",
+      "sha256": "12a626c46d02f79bccdfc904e989f5a985c010ce91e778d6f176c826efb71b8e"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0493.json",
+      "sha256": "d5679409f1b2cc968c450c8382cf1a896af2526381d035519788943a33139e1b"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0494.json",
+      "sha256": "a248ab3d75e8f62ea5b1c1174593f97f2732aa63135eb491c7e7048b71bb6fb1"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0495.json",
+      "sha256": "b0cdd984ca28055a2eabb0b085e2a470a6e882a3f52d38702f3c1ad15d097af3"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0496.json",
+      "sha256": "6d22b3b239d326a9a52d99778bf065c869291a11ef98ff55e7bf7523f58b671b"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0497.json",
+      "sha256": "cd3c88b5f53f20814aaba8b796611655b343d69bb16900c14fc324a7e2e4e81a"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0498.json",
+      "sha256": "4a7b80900726bdf6d3834358824a2781c3d52575fb3b37f3c06b46ed5b206d77"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0499.json",
+      "sha256": "997492572db371d734530386c8341b51f51aadfcf9e1e4ea4e03dc7ca4db686c"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0500.json",
+      "sha256": "2c3d8ef13b7e88dd8ca6926993c698448680582a8ad6688bf1895a8665701299"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0501.json",
+      "sha256": "dcac2101af61ab1cfd11f7022acac9808764af807bc65c9cd678786a699368c4"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0502.json",
+      "sha256": "83c68f80f33fc94157b05e5bb08f6f004dd617438f76b45fe725b45f3e2665b3"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0503.json",
+      "sha256": "d41a641ac1d61a734d3f1509c5b51d7146ade20cb349743eb04ade4db7a11599"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0504.json",
+      "sha256": "7b0d71ece9fef5cb526e59eeff5066f90c967fe93af5162448b35062147c2176"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0505.json",
+      "sha256": "ebadb321ade037f8fbe73f0154d45eee2d419a87b4e7dfdfb7676a15c2c4e166"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0506.json",
+      "sha256": "6c00166bba0b07153d84137dfb16bd572b1ba61df3e92ac209dba811376b696a"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0507.json",
+      "sha256": "2e8219528e284adc933d135b7e8be72515987d77ae739411450ed7fd74ef46fb"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0508.json",
+      "sha256": "54c17bc6255955f97277a111ee3213f4bc7e769d595bce96015f82d014d1177b"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0509.json",
+      "sha256": "6feb22b7149695c21cd1d78a2506acfcbca3f70b5e51cf540577c6c3a32a1fd2"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0510.json",
+      "sha256": "6e05c448b2afd2eb869fc4d0a0d5e3857c8b1f85e4abb95960c4c61c262545b7"
+    },
+    {
+      "path": "artifacts/local/rank-jump-reference-class-targeted-relations-v1/target_0511.json",
+      "sha256": "7422b63044c977219309064f75f606bd733b1ad77b2a5e7c4adcebb10386befc"
+    }
+  ],
+  "schema": "rank-jump.reference-adaptive-class-completion-inputs.v1"
+}

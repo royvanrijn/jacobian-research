@@ -1,0 +1,1676 @@
+{
+  "catalogue_count": 626,
+  "catalogue_intake": {
+    "retrieved_at": "2026-09-07T08:08:39.902705+00:00",
+    "sha256": "6a7ebb045f371832f54ba7509c7c802e484de14ef0fcbf0b2b10d0d019bc96d6",
+    "url": "https://elliptic-rank.icarm.cloud/database.json"
+  },
+  "claim_boundary": "Publication metadata and exact Q-isomorphism comparison only. V22 equations, points, ranks and frozen novelty claims are unchanged. The submitted point set is identical to the existing proof; no new rank certificate, independent implementation, universal novelty, record, or first-discovery priority is claimed. The shortlist is editorial advice.",
+  "inventory_count": 201,
+  "missing_rank_at_least22_conductor_ids": [
+    537,
+    543,
+    545,
+    581,
+    615,
+    616,
+    617,
+    619,
+    620
+  ],
+  "optional_rank27_submission_shortlist": [
+    "new-20260906-40",
+    "new-20260906-71",
+    "new-20260906-41",
+    "new-20260906-72",
+    "new-20260906-48",
+    "new-20260906-186",
+    "new-20260906-90"
+  ],
+  "publication_status": [
+    {
+      "catalogue_matches": [
+        619
+      ],
+      "family": "11952",
+      "id": "new-20260906-188",
+      "parameter": "110314/102227",
+      "rank_lower_bound": 28,
+      "rank_provenance": "PUBLIC_POINT_REPRODUCTION"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-40",
+      "parameter": "2818/1535",
+      "rank_lower_bound": 27,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-71",
+      "parameter": "3726/881",
+      "rank_lower_bound": 27,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-41",
+      "parameter": "-2448/11",
+      "rank_lower_bound": 27,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-72",
+      "parameter": "2012/211",
+      "rank_lower_bound": 27,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-48",
+      "parameter": "2828/2015",
+      "rank_lower_bound": 27,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-186",
+      "parameter": "4286/1881",
+      "rank_lower_bound": 27,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-01",
+      "id": "new-20260906-90",
+      "parameter": "-1867/270",
+      "rank_lower_bound": 27,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-73",
+      "parameter": "1175/1901",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-63",
+      "parameter": "2588/1603",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-42",
+      "parameter": "808/2259",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260905-37",
+      "parameter": "-2507/3068",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-102",
+      "parameter": "-575/1207",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-103",
+      "parameter": "3307/1128",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-74",
+      "parameter": "613/828",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-104",
+      "parameter": "760/211",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-49",
+      "parameter": "2773/962",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-105",
+      "parameter": "726/761",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-50",
+      "parameter": "-1173/127",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-75",
+      "parameter": "-1376/455",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-106",
+      "parameter": "-1826/2583",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-189",
+      "parameter": "2618/26913",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-99",
+      "parameter": "7460/32309",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-01",
+      "id": "new-20260906-192",
+      "parameter": "-4444/217",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-01",
+      "id": "new-20260906-91",
+      "parameter": "-557/3572",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-02",
+      "id": "new-20260906-92",
+      "parameter": "3161/432",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260905-38",
+      "parameter": "-1525/1388",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-107",
+      "parameter": "-2336/731",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-76",
+      "parameter": "492/169",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-51",
+      "parameter": "922/2063",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-108",
+      "parameter": "-1193/99",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-64",
+      "parameter": "-489/40",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260905-39",
+      "parameter": "-951/1696",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-65",
+      "parameter": "2059/3120",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-77",
+      "parameter": "21/1196",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-109",
+      "parameter": "2393/1860",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-110",
+      "parameter": "3/377",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-78",
+      "parameter": "3469/2070",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260905-01",
+      "parameter": "505/794",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08234",
+      "id": "new-20260906-79",
+      "parameter": "-2741/118",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08234",
+      "id": "new-20260906-80",
+      "parameter": "-2980/811",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08234",
+      "id": "new-20260906-81",
+      "parameter": "4051/121",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08234",
+      "id": "new-20260906-111",
+      "parameter": "774/149",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-52",
+      "parameter": "-164/2855",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-112",
+      "parameter": "-2129/1207",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-113",
+      "parameter": "-3292/1853",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-114",
+      "parameter": "-3791/529",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-43",
+      "parameter": "1361/72",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-53",
+      "parameter": "2454/25",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-115",
+      "parameter": "4071/52",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-116",
+      "parameter": "-1588/3431",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-117",
+      "parameter": "-2101/756",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-118",
+      "parameter": "-2254/1257",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-54",
+      "parameter": "-538/249",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-82",
+      "parameter": "2280/299",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-119",
+      "parameter": "2566/3809",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-44",
+      "parameter": "-328/1123",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-66",
+      "parameter": "-695/311",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-101",
+      "parameter": "102/1525",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-120",
+      "parameter": "3148/2791",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-121",
+      "parameter": "914/2111",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-02",
+      "id": "new-20260906-200",
+      "parameter": "-32999/14074",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-04",
+      "id": "new-20260905-02",
+      "parameter": "-1647/91",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-05",
+      "id": "new-20260905-03",
+      "parameter": "307/206",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-122",
+      "parameter": "-1449/1094",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-55",
+      "parameter": "-1477/1933",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-123",
+      "parameter": "-1773/136",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-124",
+      "parameter": "-2021/2823",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-67",
+      "parameter": "-649/921",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-125",
+      "parameter": "-670/1129",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-126",
+      "parameter": "26/57",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-127",
+      "parameter": "117/238",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-128",
+      "parameter": "422/879",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-129",
+      "parameter": "561/26",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-130",
+      "parameter": "869/2730",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08234",
+      "id": "new-20260906-56",
+      "parameter": "1504/3",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-131",
+      "parameter": "-2751/886",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-132",
+      "parameter": "-517/543",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-133",
+      "parameter": "-543/229",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260905-04",
+      "parameter": "-704/93",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-134",
+      "parameter": "1055/1833",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-135",
+      "parameter": "107/603",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-83",
+      "parameter": "2784/167",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-84",
+      "parameter": "3431/70",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-85",
+      "parameter": "-1498/507",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-86",
+      "parameter": "-2558/3185",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-136",
+      "parameter": "-778/259",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-137",
+      "parameter": "1130/789",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-138",
+      "parameter": "1139/1293",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-45",
+      "parameter": "503/138",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-46",
+      "parameter": "791/627",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-57",
+      "parameter": "934/1207",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-139",
+      "parameter": "-3814/2675",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-87",
+      "parameter": "-811/1609",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-140",
+      "parameter": "1292/601",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-141",
+      "parameter": "1551/1252",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-142",
+      "parameter": "2324/1991",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-143",
+      "parameter": "775/803",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-01",
+      "id": "new-20260905-05",
+      "parameter": "787/103",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-02",
+      "id": "new-20260906-196",
+      "parameter": "-22059/7204",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-02",
+      "id": "new-20260906-93",
+      "parameter": "3853/666",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-03",
+      "id": "new-20260906-94",
+      "parameter": "1784/39",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-03",
+      "id": "new-20260906-197",
+      "parameter": "24405/86",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-03",
+      "id": "new-20260906-95",
+      "parameter": "2555/33",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-04",
+      "id": "new-20260906-96",
+      "parameter": "-1786/317",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-04",
+      "id": "new-20260906-97",
+      "parameter": "-2138/473",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-04",
+      "id": "new-20260906-193",
+      "parameter": "-6577/1092",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-04",
+      "id": "new-20260906-194",
+      "parameter": "4584/115",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-05",
+      "id": "new-20260905-33",
+      "parameter": "-109/521",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-05",
+      "id": "new-20260905-06",
+      "parameter": "-227/647",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-05",
+      "id": "new-20260905-07",
+      "parameter": "509/149",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "published-R17",
+      "id": "new-20260905-08",
+      "parameter": "-2300/843",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "published-R17",
+      "id": "new-20260905-09",
+      "parameter": "-695/97",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "published-R17",
+      "id": "new-20260905-10",
+      "parameter": "33/119",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-88",
+      "parameter": "-289/572",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-144",
+      "parameter": "-661/900",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-145",
+      "parameter": "-676/921",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-146",
+      "parameter": "-807/115",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260905-11",
+      "parameter": "-839/505",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-147",
+      "parameter": "38/353",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-148",
+      "parameter": "-2402/1309",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-149",
+      "parameter": "1053/2968",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-150",
+      "parameter": "197/116",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-151",
+      "parameter": "965/1196",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08234",
+      "id": "new-20260906-152",
+      "parameter": "-11/235",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08234",
+      "id": "new-20260906-58",
+      "parameter": "-2387/360",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [
+        600
+      ],
+      "family": "08234",
+      "id": "new-20260905-12",
+      "parameter": "-506/9",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-153",
+      "parameter": "-2799/491",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-154",
+      "parameter": "-2884/621",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-68",
+      "parameter": "-307/72",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-155",
+      "parameter": "1308/277",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-156",
+      "parameter": "146/59",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-89",
+      "parameter": "149/177",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-157",
+      "parameter": "2007/112",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-158",
+      "parameter": "-1616/419",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-159",
+      "parameter": "-1788/7",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-69",
+      "parameter": "-2445/83",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-70",
+      "parameter": "-481/278",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-160",
+      "parameter": "2390/1319",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-161",
+      "parameter": "41/38",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-162",
+      "parameter": "48/7",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-59",
+      "parameter": "522/329",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-60",
+      "parameter": "-1451/86",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-187",
+      "parameter": "11019/11983",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-163",
+      "parameter": "1490/943",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-164",
+      "parameter": "3058/1387",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-01",
+      "id": "new-20260907-201",
+      "parameter": "-27546/407",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-01",
+      "id": "new-20260906-98",
+      "parameter": "2407/532",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-02",
+      "id": "new-20260906-190",
+      "parameter": "-5383/2146",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-03",
+      "id": "new-20260905-13",
+      "parameter": "478/49",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-03",
+      "id": "new-20260906-191",
+      "parameter": "9053/2",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-04",
+      "id": "new-20260906-199",
+      "parameter": "28195/1219",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-04",
+      "id": "new-20260906-195",
+      "parameter": "4104/563",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-05",
+      "id": "new-20260905-34",
+      "parameter": "643/7",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "published-R17",
+      "id": "new-20260905-14",
+      "parameter": "-1193/1560",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "published-R17",
+      "id": "new-20260905-15",
+      "parameter": "-1264/1047",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "published-R17",
+      "id": "new-20260905-16",
+      "parameter": "-3895/3749",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "published-R17",
+      "id": "new-20260905-17",
+      "parameter": "1229/894",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "published-R17",
+      "id": "new-20260905-18",
+      "parameter": "129/70",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "published-R17",
+      "id": "new-20260905-19",
+      "parameter": "2291/2392",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "published-R17",
+      "id": "new-20260905-20",
+      "parameter": "44/35",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-165",
+      "parameter": "-2789/1357",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-166",
+      "parameter": "-297/335",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-167",
+      "parameter": "1224/931",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260906-168",
+      "parameter": "1381/558",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "074d9",
+      "id": "new-20260905-21",
+      "parameter": "148/225",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-169",
+      "parameter": "1443/986",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-170",
+      "parameter": "1572/785",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-171",
+      "parameter": "167/887",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-61",
+      "parameter": "267/1004",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-172",
+      "parameter": "3076/2339",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-62",
+      "parameter": "3221/1002",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "07ca9",
+      "id": "new-20260906-47",
+      "parameter": "633/4064",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08234",
+      "id": "new-20260906-173",
+      "parameter": "-2185/106",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08234",
+      "id": "new-20260906-174",
+      "parameter": "2627/65",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-175",
+      "parameter": "-1737/1790",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "08f72",
+      "id": "new-20260906-176",
+      "parameter": "-2449/1927",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-177",
+      "parameter": "-3939/2032",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-178",
+      "parameter": "1986/1147",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-179",
+      "parameter": "3371/300",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-180",
+      "parameter": "3466/307",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "103b2",
+      "id": "new-20260906-100",
+      "parameter": "4271/6508",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-181",
+      "parameter": "-8/27",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-182",
+      "parameter": "1737/530",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-183",
+      "parameter": "1972/1459",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-184",
+      "parameter": "402/517",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260906-185",
+      "parameter": "420/2827",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "11952",
+      "id": "new-20260905-22",
+      "parameter": "744/5",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-01",
+      "id": "new-20260905-23",
+      "parameter": "32/253",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-01",
+      "id": "new-20260905-24",
+      "parameter": "699/19",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-04",
+      "id": "new-20260905-25",
+      "parameter": "-20/23",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-04",
+      "id": "new-20260905-26",
+      "parameter": "-209/118",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-04",
+      "id": "new-20260905-27",
+      "parameter": "-338/47",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-05",
+      "id": "new-20260905-35",
+      "parameter": "-279/730",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "a1-fibration-05",
+      "id": "new-20260906-198",
+      "parameter": "-37260/16691",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [
+        626
+      ],
+      "family": "a1-fibration-05",
+      "id": "new-20260905-36",
+      "parameter": "3/17",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "published-R17",
+      "id": "new-20260905-28",
+      "parameter": "-3/148",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "published-R17",
+      "id": "new-20260905-29",
+      "parameter": "-70/61",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "published-R17",
+      "id": "new-20260905-30",
+      "parameter": "-7540/2317",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "published-R17",
+      "id": "new-20260905-31",
+      "parameter": "1348/1431",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "catalogue_matches": [],
+      "family": "published-R17",
+      "id": "new-20260905-32",
+      "parameter": "8/39",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    }
+  ],
+  "schema": "elliptic-curves.icarm626-publication.v1",
+  "smaller_recorded_rank_at_least22_conductor_ids": [
+    376,
+    575,
+    625
+  ],
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/icarm626_publication_snapshot_v1.json": "03a3467b976334de0b7ae7f6b94f87fe07a30b8e88081d0f6644e0a58d869949",
+    "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v22.json": "5f64cf83268829549a4095dc04a9e69c73513be711c1745b61dc9d8b1a2167b0",
+    "artifacts/generated-results/elliptic-curves/small_conductor_rank22_proof_v1.json": "36552cd46a2a0f4bdf46667674a95c5211ddde083e4045817129dcdb5c3001e2",
+    "elliptic-curves/cas/audit_icarm626_publication.py": "6d69feb15321ece9a4e7bdde48d51381fab31ba2336fa0154eec61b14786a728",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9",
+    "elliptic-curves/cas/elliptic_candidate_record.py": "5b9f6f843d48e705253404a5583ef53966c72c7f229c68ef17c6b848f5e94af3"
+  },
+  "status": "PASS",
+  "submitted": {
+    "equation_conductor_and_point_set_match": true,
+    "icarm_id": 626,
+    "local_id": "new-20260905-36",
+    "url": "https://elliptic-rank.icarm.cloud/curve/626"
+  },
+  "unmatched_by_rank_lower_bound": {
+    "22": 39,
+    "23": 46,
+    "24": 50,
+    "25": 38,
+    "26": 18,
+    "27": 7
+  },
+  "unmatched_count": 198
+}

@@ -1,5 +1,29 @@
 # Reproducing the elliptic-curve programme
 
+## Curve302: full MW17 alternative parent
+
+The [canonical proof](notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md)
+provides the exact model, full saturated basis and literal `t=0` fibre302.
+The commands below run bounded single-worker exact replays with Sage10.9:
+
+```sh
+sage -python elliptic-curves/cas/reconstruct_curve302_recovered_parent.sage
+sage -python elliptic-curves/cas/verify_curve302_recovered_mw17_parent.sage
+sage -python elliptic-curves/cas/verify_curve302_parent_geometric_picard.sage
+sage -python elliptic-curves/cas/verify_curve302_parent_quadratic_descent_gate.sage
+sage -python elliptic-curves/cas/prepare_curve302_parent_trace_cache.sage
+```
+
+The first rebuilds the equation and basis from the quartic and four conics.
+The second checks every generic point, the full height Gram, saturation,
+all specialization images, the pinned full Frobenius output and two
+independently computed fibre-count moments. It does not rerun the external
+controlled-reduction backend. The remaining commands certify geometric Picard19,
+replay the quadratic-source obstruction, and rebuild/check the trace tables.
+For interactive use,
+[load the equation and basis](cas/load_curve302_recovered_parent.sage).
+
+
 For new work, use the [shared-runtime commands and controls](notes/SHARED_RESEARCH_RUNTIME.md).
 `run_mw17_jump_v2.sage --single-index N` now uses a bounded lazy search;
 add `--legacy-census-regression` only when regenerating the historical fixed-centre campaign.

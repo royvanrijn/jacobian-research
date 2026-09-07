@@ -1,4 +1,24 @@
-# Curve 302: primary construction-recovery project
+# Curve 302: alternative-parent construction completed
+
+The [explicit MW17 parent and full proof](CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md)
+close the requested endpoint: a different elliptic K3 over `Q(t)`, a full
+saturated arithmetic generic basis of rank17 and determinant1092, and
+`t=0` literally equal to302. Its specialization is the entire primitive
+rank-17 core of the displayed rank-31 group, with quotient `Z^14`.
+Frobenius at149 supplies the matching Picard/rank upper bound.
+
+[Load the equation and basis](../cas/load_curve302_recovered_parent.sage).
+Original discoverer provenance remains `UNKNOWN`. No messages may be sent.
+The completed MW9 K3 remains a control; its section-search direction is closed.
+No production parameter sweep follows automatically from this theorem.
+
+The material below is preserved at this path because older certificates and
+status entries use it as their canonical proof source. Its search priorities
+and statements that an alternative parent is unknown are **historical**.
+The [pre-closure status record](../../archive/elliptic-curves/CURVE302_PARENT_PRE_MW17_2026-09-07.md)
+is archived separately. Current authority: `EC-CURVE302-RECOVERED-MW17-PARENT`.
+
+# Historical construction investigations and the completed MW9 baseline
 
 Curve 302 is the main construction-recovery target. The endpoint is an
 explicit elliptic surface over `Q(t)`, its **full generic MW basis**, and a

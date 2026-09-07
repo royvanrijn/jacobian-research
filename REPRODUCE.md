@@ -23,9 +23,10 @@ The compact-`t` positive-control and residual 2-Selmer section of that
 catalogue is the replay surface for the R17/MW17 rank-32 lane, not the whole
 rank-32 programme.  The parallel first-class construction lane now has the
 recovered curve-398 A1/MW16 family and its blind rank-14 quotient recovery as
-a cross-fibration positive control; curve 302's rank-31 point cloud remains a
-parent-reconstruction target whose family equation and specialization map are
-`UNKNOWN`.  Every lane requires an
+a cross-fibration positive control. Curve302 now has an
+[explicit alternative MW17 parent](elliptic-curves/notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md),
+a full saturated basis and a literal `t=0` specialization recovering its
+primitive17-core. Original discoverer provenance remains `UNKNOWN`.  Every lane requires an
 actual completed global/local descent before any expensive point search; a
 score or timeout is never an authorization. The direct q12 point-search entry
 points enforce this same-parameter, same-minimal-model gate; the obsolete

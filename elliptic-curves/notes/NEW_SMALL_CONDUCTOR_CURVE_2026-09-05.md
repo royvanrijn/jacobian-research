@@ -1,5 +1,13 @@
 # A new rank-at-least-22 curve with an exact 76-digit conductor
 
+**Publication update, 2026-09-07:** this is now
+[ICARM #626](https://elliptic-rank.icarm.cloud/curve/626). Its public equation,
+22-point set and conductor match our proof. The
+[publication supplement](ICARM626_PUBLICATION_AND_SUBMISSIONS_2026-09-07.md)
+records the current catalogue comparison; absence claims below concern the
+original snapshots. The unconditional rank bound remains 22; the later
+[exact-rank result is conditional on GRH](SMALL_CONDUCTOR_CLASS_COMPLETION_PROOF_2026-09-06.md).
+
 The compact MW16 family `a1-fibration-05` at parameter `3/17` gives the
 global minimal equation
 
@@ -266,7 +274,8 @@ python3 elliptic-curves/cas/export_new_high_rank_curve_index_v2.py --check artif
 The first checker also rejects six deliberate corruptions: a Lucas witness,
 a discriminant exponent, the conductor, a point, the rank label and the
 catalogue placement. These checks complement, rather than replace, the
-mathematical argument above. No external submission has been made.
+mathematical argument above. At the time of this original proof no external
+submission had been made; the curve was subsequently submitted as ICARM #626.
 
 The subsequent [bounded follow-up](SMALL_CONDUCTOR_FOLLOWUP_2026-09-05.md)
 retains 127 further chart attempts and a 7,753-point finite-quotient audit,

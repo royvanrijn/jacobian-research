@@ -1,0 +1,5 @@
+Date:   	2026-09-07 08:40:47
+Starting:	curve302-det1092-recovered-p149
+Date:   	2026-09-07 08:40:56
+Done:   	curve302-det1092-recovered-p149	took   9.49s
+

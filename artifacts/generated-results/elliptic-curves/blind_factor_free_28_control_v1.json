@@ -1,0 +1,43 @@
+{
+  "boundary": "Known public28 curve recovered from original27 only. All49 charts regenerated before points; no public exceptional point, previous maps or successful chart enters geometry/execution. Python artifact-open audit is a process-level audit, not an OS sandbox. Prior one-chart success was known and disclosed. This is a method regression, not a new curve or new record.",
+  "certificates": {
+    "artifacts/generated-results/elliptic-curves/blind_factor_free_28_control_mod2_v1.json": "e8c6fd1534ef76d4c5108037c3929dd809eade723023dac43cc3e5f05698c534",
+    "artifacts/generated-results/elliptic-curves/blind_factor_free_28_control_modl_v1.json": "fe54277123514cca2eb4e431948b92369951a4ddfb1d4107ebb80e75da74c362"
+  },
+  "completed_boxes": 49,
+  "discovered_rank_gain": 1,
+  "finite_ranks": {
+    "2": 28,
+    "3": 28,
+    "5": 28
+  },
+  "initial_rank": 27,
+  "input_access_counts": {
+    "freeze": 5,
+    "geometry": 72,
+    "replay": 54,
+    "worker": 155
+  },
+  "inputs": {
+    "artifacts/local/elliptic-curves/blind-factor-free-28-control-v1/certification-ledger.json": "3a7de403ac740a2dba0af3c60432c4e55dee6149b8f7349c016b7b4451800416",
+    "artifacts/local/elliptic-curves/blind-factor-free-28-control-v1/certification-protocol.json": "eee8b70ce886ae90206c41223afd6d4e1342832ed51c36c3c8f1bdf02a634fb6",
+    "artifacts/local/elliptic-curves/blind-factor-free-28-control-v1/freeze-data-access.json": "ac7a80b7fb4823e1ee05b840d035b1ed121308bb3824d982378974783733472b",
+    "artifacts/local/elliptic-curves/blind-factor-free-28-control-v1/geometry-data-access.json": "a48b6dd6d992274e11bc6ea67824d48cc6fa25046628a04bf8770b56abe72f0b",
+    "artifacts/local/elliptic-curves/blind-factor-free-28-control-v1/ledger.json": "7634e326ea90f8e16de43d62145fc8ddad225b3b8016ed513a5578a68afaeb7f",
+    "artifacts/local/elliptic-curves/blind-factor-free-28-control-v1/maps.json": "971775df21207dd0615287a1924bd74ca187bcb8e7acc0549e846f404a14ade4",
+    "artifacts/local/elliptic-curves/blind-factor-free-28-control-v1/protocol.json": "ee0905dc7ce4aafc9bb76d7bd65ee7d261bee378ebe0700153126e208b96404d",
+    "artifacts/local/elliptic-curves/blind-factor-free-28-control-v1/replay-data-access.json": "29fe089f142668a1cda08dab2bdd9cb77fa3d227e025ee5ad579c5fcdd6cc128",
+    "artifacts/local/elliptic-curves/blind-factor-free-28-control-v1/result.json": "d6d2ec439846991fc1a95b9994cb29fb4233db57e572ce549b43fa802facd115",
+    "artifacts/local/elliptic-curves/blind-factor-free-28-control-v1/seed.json": "65df2addc1e7ca20687a7d6221a91a4a53db5aae87e094a24ff945f6010fbc24",
+    "artifacts/local/elliptic-curves/blind-factor-free-28-control-v1/worker-data-access.json": "bb4702e504f0b6dfb6308e579a090e019c2481d64efdd2620f14382926583a7d",
+    "artifacts/local/elliptic-curves/inventory188-own27-geometry-control-v1/seed.json": "65df2addc1e7ca20687a7d6221a91a4a53db5aae87e094a24ff945f6010fbc24"
+  },
+  "rank_lower_bound": 28,
+  "retained_points": 49,
+  "schema": "elliptic-curves.blind-factor-free-28-control.v1",
+  "sources": {
+    "elliptic-curves/cas/report_blind_factor_free_28.py": "cd34461ecb9e06f1eab9423733b93df76a5100d1e442cc1bf6d46b6a83723fc0"
+  },
+  "status": "PASS",
+  "total_stage_seconds": 67.70651898207143
+}

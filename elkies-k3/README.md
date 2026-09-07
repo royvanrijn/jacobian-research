@@ -171,21 +171,14 @@ record-construction work.
   See
   [`../elliptic-curves/notes/ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md`](../elliptic-curves/notes/ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md).
 <!-- status-consumer: EC-K3-ICARM-MW16-BLIND-LADDER acfa3bdcebb18137 -->
-- **Curve 302 / inverse parent construction:** use calibrated equation and
-  section-subgroup recognition to find a structured alternative parent.
-  The inverse Fermigier height-eight run recovers 245's actual rank-twelve
-  section image but excludes 302 from all 2,578 tested root configurations,
-  for every rational specialization parameter. No messages may be sent;
-  original provenance remains a separate open route.
-  The [construction-recovery proof and next gates](../elliptic-curves/notes/CURVE302_CONSTRUCTION_RECOVERY.md)
-  give an explicit constructed K3 with **full arithmetic MW9 basis**,
-  determinant 512, and `t=1` fibre 302. Frobenius at 47 proves the rank
-  upper bound. All elliptic fibrations over `Q` on this K3 have MW rank at
-  most nine; a higher-rank parent requires a different surface. Original
-  provenance remains unknown. Retain MW9 as a **completed baseline**; its
-  302 fibre alone does not make it a major production-search priority.
-  The current construction search changes the underlying family, with
-  generic rank seventeen not prescribed.
+- **Curve302 / alternative parent completed:** the
+  [explicit MW17 construction](../elliptic-curves/notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md)
+  supplies a different K3 with full saturated arithmetic generic basis,
+  determinant1092 and literal `t=0` fibre302. Frobenius at149 proves the
+  matching rational Picard rank19. The basis images recover the complete
+  primitive17-core, leaving `Z^14` inside the displayed rank-31 group.
+  The MW9 surface remains a completed control. Original provenance is
+  unknown; no messages or production parameter sweep are authorized here.
 
 Neither known curve may enter the A1/MW16 parameter experiment as a target,
 control, parameter match, or scheduling label.  The curve-398 equivalence is
@@ -196,8 +189,8 @@ The exact starting boundaries are
 and
 [`../elliptic-curves/notes/ICARM_CURVE302_CONSTRUCTION_INVESTIGATION.md`](../elliptic-curves/notes/ICARM_CURVE302_CONSTRUCTION_INVESTIGATION.md).
 Curve 398's construction boundary is closed by an exact certificate.  Curve
-302 has an explicit constructed MW9 parent and section map; its original
-parent and construction provenance remain `UNKNOWN`.
+302 now has an explicit full MW17 alternative parent and specialization map;
+its original discoverers' construction provenance remains `UNKNOWN`.
 <!-- status-consumer: EC-K3-CURVE398-TWO-PARENT-COLLISION 626a440519ff77f3 -->
 
 ### Lane C — foundry lane
@@ -503,7 +496,7 @@ twist and yields arithmetic exclusion.
 <!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
 <!-- status-consumer: EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION bf05d9b06ccc1502 -->
 <!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 6a9cd04e00dcdaad -->
-<!-- status-consumer: OP-EC-NEXT 4ac6bebc76a6c1fd -->
+<!-- status-consumer: OP-EC-NEXT d5167cb3263ee6b9 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->
 <!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->

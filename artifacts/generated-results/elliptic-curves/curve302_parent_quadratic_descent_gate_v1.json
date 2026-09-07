@@ -1,0 +1,47 @@
+{
+  "schema": "curve302.quadratic-descent-gate.v1",
+  "status": "PASS",
+  "sources": {
+    "elliptic-curves/cas/verify_curve302_parent_quadratic_descent_gate.sage": "699cf0be11db44516795eced000c26fc6c30054b3633063aaec8811f91fe957e",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_proof_v1.json": "e46bf0356a91c1ddca097b29009847bc2e4028bb47964ec8b196f797b6af15e2",
+    "artifacts/generated-results/elliptic-curves/curve302_det1092_recovery_v1.json": "dba132cb054acf8f906872f4ed8c54583f1e8c7acf0bbaf98d8b8e25a4f32b2c",
+    "elkies-k3/scripts/certify_curve302_anchor6_triangle_gate.sage": "d742728b3cbc83ec5753064eebdf2e646cc06379c7dcff5538eb6530a2ccc832"
+  },
+  "rank": 17,
+  "height_determinant": 1092,
+  "lattice_automorphism_order": 2,
+  "lattice_automorphisms": [
+    "I",
+    "-I"
+  ],
+  "independent_graph_vertices": 2436,
+  "independent_graph_edges": 158496,
+  "independent_graph_automorphism_order": 2,
+  "spanning_shell_rank": 17,
+  "exact_shell_nodes": 20688,
+  "possible_quadratic_descent_arithmetic_ranks": [
+    0,
+    17
+  ],
+  "excluded_quadratic_descent_arithmetic_ranks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "scope": "For a quadratic Q(u)/Q(s) descent of this pointed elliptic fibration, the deck involution is an integral height isometry. It is +/-I, so its invariant MW space has rank17 or0. This excludes every source with arithmetic generic rank1..16, in particular an MW8 rational elliptic source.",
+  "boundary": "Does not exclude a rank-zero source, other fibrations of this K3, higher-degree covers, multiparameter constructions or identify original discoverer provenance."
+}

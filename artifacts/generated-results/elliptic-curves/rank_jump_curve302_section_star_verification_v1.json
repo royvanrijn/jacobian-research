@@ -1,0 +1,166 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_new_parent_inputs_v1.json": "05d170d2776f2d5f3c348851791288789529121ce75b9df48d696c4142457618",
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_section_star_inputs_v2.json": "a675b1a5728eb47a24225ecd09210b5fa4454fbb1709d72d397a97e212b1ebf8",
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_section_star_v2.json": "30fad6463390208f13c451ec6c8a35313f5c7c9a0efe50ff5386916b90d68c6f",
+    "elliptic-curves/rank-jump/verify_curve302_section_star.py": "422152f9d52e36c0f66fc217813cd235923a49cfe1451278e8b5d5b16848ae63"
+  },
+  "boundary": "Exact membership and field comparisons for this fixed generic-section construction. No exclusion of other classes or larger carriers, and no extra strict class constructed.",
+  "cubic_to_intermediate_matrix": [
+    [
+      "1",
+      "1",
+      "0"
+    ],
+    [
+      "1",
+      "1",
+      "1287871656940557840076827522638364194198124722766127727574040037521378511059470461882376147333000/62699056432114918933612070146196645633331589629376421791248312879376234510845787"
+    ],
+    [
+      "0",
+      "-6607874813670410232652040365689466537227222881665/1733139362182282352662892091267600796803733823296434582087333839613",
+      "-14378547501219979999345636624463745862937346143434450034449054329668390242718641910876904625616940707533108919986885658329356950984/333752449860623164981030495151229977329174394377073032099622935969399129060816789070215609390127113214682547276210732563727689776641"
+    ]
+  ],
+  "distinct_nonsplit_quadratic_fields": 54,
+  "generic_line_transports_verified": 15,
+  "line_quadric_identities": 684,
+  "new_rational_Kummer_directions_from_catalogue": 0,
+  "pairwise_squareclass_checks": 1431,
+  "plane_to_normalized_sign": -1,
+  "rational_residual_generic_membership": [
+    {
+      "generic_coordinate_rows": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          -1,
+          -1,
+          2,
+          2,
+          0,
+          0
+        ]
+      ],
+      "star_index": 6
+    },
+    {
+      "generic_coordinate_rows": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          -1,
+          -2,
+          0,
+          0,
+          -1,
+          1,
+          -1,
+          -1,
+          -1,
+          1,
+          -1,
+          0,
+          2,
+          2,
+          0,
+          0
+        ]
+      ],
+      "star_index": 7
+    },
+    {
+      "generic_coordinate_rows": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          2,
+          2,
+          0,
+          0
+        ]
+      ],
+      "star_index": 12
+    }
+  ],
+  "schema": "rank-jump.curve302-section-star-verification.v1",
+  "status": "PASS"
+}

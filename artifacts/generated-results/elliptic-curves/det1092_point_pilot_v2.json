@@ -1,0 +1,107 @@
+{
+  "boundary": "Two fixed non-anchor fibres of the new determinant1092 arithmetic MW17 parent, chosen before scores or point search. Execution input contains only the equation and17 generic sections; no public exceptional point or record-group embedding. Exact seed transport and full-cloud finite proofs precede any rank claim. Catalogue comparison is post-search against pinned620 equations and201 inventory only. No exact-rank, literature-wide novelty or parent-superiority claim; no automatic following wave.",
+  "completed_boxes": 98,
+  "discovered_rank_gains": 0,
+  "distinct_curves": 2,
+  "distinct_parent_surfaces": 1,
+  "failed_intake_and_diagnosis_seconds": 0.8905787910334766,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_point_pilot_outer_mod2_v1.json": "ae453054f100fcbff1d92feb12c1e5bb196ff8b1bd94832f556a4d67bfdeefc6",
+    "artifacts/generated-results/elliptic-curves/det1092_point_pilot_outer_modl_v1.json": "acd3ac1f5577fd175b7e83df667fea2c1c90fd04e72720dc4c48d78fcdcbd7c6",
+    "artifacts/generated-results/elliptic-curves/det1092_point_pilot_unit_mod2_v1.json": "cc35cf9ce604d9f6f6ee17901267efed2a0ff61df6520ffbd6025b094884a12d",
+    "artifacts/generated-results/elliptic-curves/det1092_point_pilot_unit_modl_v1.json": "67cc16a519cf1ce3d73e18c41ea3200239734f2fded196ddc3567501b9ac1048",
+    "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v22.json": "5f64cf83268829549a4095dc04a9e69c73513be711c1745b61dc9d8b1a2167b0",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v1/diagnosis-protocol.json": "972937e7a02cd80f47ea3ceabdf4eb6b6af998658ed8b66fc068c3684e6f7372",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v1/diagnosis.log": "7fdeafc15f6e165ea9be9761bcd0ded9e3a692fd2c698c4ee781cd540e7ea841",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v1/diagnosis.supervisor.json": "e42cb2979cfd4fa99d6e4a2c86fbac07998571f68bd1e15ea10401f7c8a591e8",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v1/protocol.json": "e229e137d75da6d098f99e95a6a08f48bd9710478c5a100434018fff582c2efa",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v1/run-ledger.json": "0fc0f31130a67652ece3bbd3d581f10b07bf002664c6bdfde37cb8f595bba98d",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v2/ledger.json": "5cf07199c9978dfc5599aa549fc21ac545a231c7142c4fee3c8d4e3ddbd921fe",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v2/outer/certification-ledger.json": "7913ec013a4b79dba13cce6f926ccc4f4cdc998f020bb521ca5a6a57b905977b",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v2/outer/certification-protocol.json": "8c2e0090462d76c443b97d81f6eb28b0f797a99ad07b0e5fae2fa0fe2cb70c88",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v2/outer/maps.json": "f4c192deca2a1668bff9425a18cdf9b85b2fe214bbe6b720b060f41e35c6d333",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v2/outer/result.json": "e5cf18cdead2068779be5bd7630b78b46eece40376d82be5818940be87bffb36",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v2/outer/seed.json": "a2e59d5ce90f505638f5c91ec360e69c278612d60daff98690035f993359e14f",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v2/parent-sections.json": "2b622ffba7b8d9d64f4f1adf22ec82ab61f65b7cc51f881814acf7634572a402",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v2/post-verification-ledger.json": "c8a37aa0cb3b63468e2bd02d3cc1fa5b7f10dd13a0bdb1aa86ef33d6cad13316",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v2/post-verification-protocol.json": "2b28d5c1e21537d38897ce1a98fca6906dd9fb46cc2c3ed79d4a69fdfbbd059e",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v2/protocol.json": "f0831bf79745eb435388ac0517e441efa07329bc6a3b11b37d7f42a822d61fe6",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v2/run-ledger.json": "5525aeef7cb268c1b29c16832a561f022ccbbeea16c4940bb26c61dca17fd86e",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v2/run-protocol.json": "9c6bd4bbc06b6e4ddead4361241b7a6735b89bdedc7e8d67cec402dc91a5a6b5",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v2/seed-replay/protocol.json": "da88c58b5567c17e25869c4f8eec1f974f69979bd98be9e2c45a9919f16a3081",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v2/seed-replay/result.json": "a52240f96f0ab417808e0bbee5f2fd9f2cb69650b80187888251c8b0668a253d",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v2/unit/certification-ledger.json": "f33b0883707aaba4f6dfdd44641768242ad6869ea98ceb11604a2f8890610fe6",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v2/unit/certification-protocol.json": "04d21b4303223044c2b896e1634d0252ddb58f01399535b7e5f1024bdd9b1408",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v2/unit/maps.json": "0cb255eaad0f0cf37d3f3ce8216c5ab9d1947996ef64cb943770646556bf5bf7",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v2/unit/result.json": "acc65ed4f3d1896369163b9871eef7136c96bf16bb4c500a6de569b53f9b10c4",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v2/unit/seed.json": "ef292b0fb1215ba8ef2d351cc3d3066a7241b8d97adc3be698ffb58a1750e566",
+    "artifacts/local/elliptic-curves/inventory200-current-catalogue-v1/database.json": "b378d458aab4b0d09f9fc8e2e382baa7a20236715a8099c52b4573f00239126e",
+    "artifacts/local/elliptic-curves/inventory200-current-catalogue-v1/metadata.json": "f5bab99912e021012fa32b1edc7e3c7316cb28fe7bf4ed30398c145290a82885"
+  },
+  "retained_point_witnesses": 34,
+  "rows": [
+    {
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-2593827495283785226401772816317869443261700915831899603363990113685851160819355539366405345013047272519788749851496026048586184656889647740752100973915210896619137282064692274954109217510833683589649145469851814989780664043722988613783642347/258201282110885123893143920014708240001419788262816479200723425671210645035611547080120599639713319048571259491967795740433823926118698995216000000000000000000000000",
+        "803796607465695499641167872028459882428744954091187961663551065568119816588098734582813750358628602424979428460374142272632863594020803895656919685619206298692339166002167327605955099369188457939354898832667223676317941602924105134374870056419823444458665286700853576618086711038098974071938489313038834696489912401071309139003342498275638956609820301692590707/2074472089090110627332231033764100418250833527889569839644213780316414663715266001037718902115386996780613733886176133286812537176499993567902428251797194101736702057538321802237976318955829004716561298927065632000000000000000000000000000000000000"
+      ],
+      "discovered_rank_gain": 0,
+      "finite_ranks": {
+        "2": 17,
+        "3": 17,
+        "5": 17
+      },
+      "geometry_seconds": 1.9703709370223805,
+      "id": "unit",
+      "initial_rank": 17,
+      "inventory_matches": [],
+      "model_coefficient_bits": 1196,
+      "parameter": "1",
+      "point_count": 17,
+      "point_search_cpu_ms": 31093,
+      "point_worker_seconds": 50.32888436410576,
+      "rank_lower_bound": 17,
+      "total_stage_seconds": 62.54950058727991
+    },
+    {
+      "catalogue_matches": [],
+      "completed_boxes": 49,
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-16717191087659823243771525078141914668485179633590240044448988477805731295951595572251055366235833656888399373606206584646349507766557701374849859466885764286617214637149211270167137637726373757166441346527064017215653819412986237856209512870112652041341126785663683/25163549076198563728270158331910586501136492208188818069697650258901007554089312892754685082174890543898864296947768650239625937335647720697089024005864832144000000000000000000000000",
+        "4389752481146973604299333912840865098938923463948704500534364410487918090224975599229996549017905580652188516821022549795705003309310282717175173039108823954971260695740105270423068902243424179910339642038470234717095735644418421714562420684934684240756898011208974136264678822092146021872674634501334863272541006305707976098201199394583482101789056933307836495106416158870669674503343704129222603/21038103668672046742172760257622233221101288668341254501008290360174745604160383660696292250580627757907467016031692383712834641032923366485777426890309697395651309116955736312280643786638957481498536580155094596881846433596839866496288000000000000000000000000000000000000"
+      ],
+      "discovered_rank_gain": 0,
+      "finite_ranks": {
+        "2": 17,
+        "3": 17,
+        "5": 17
+      },
+      "geometry_seconds": 2.07214495097287,
+      "id": "outer",
+      "initial_rank": 17,
+      "inventory_matches": [],
+      "model_coefficient_bits": 1318,
+      "parameter": "1009/101",
+      "point_count": 17,
+      "point_search_cpu_ms": 33074,
+      "point_worker_seconds": 52.640562648070045,
+      "rank_lower_bound": 17,
+      "total_stage_seconds": 65.16350200108718
+    }
+  ],
+  "schema": "elliptic-curves.det1092-point-pilot.v2",
+  "sources": {
+    "elliptic-curves/cas/report_det1092_point_pilot_v2.py": "a7497693b225946c3511d713e3c79c80cacad66f64ae37a963609e8de305c7f9"
+  },
+  "status": "PASS",
+  "total_stage_seconds": 130.11090195633005
+}

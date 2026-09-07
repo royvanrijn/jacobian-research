@@ -1,0 +1,72 @@
+{
+  "schema": "elliptic-curves.bounded-prime-history-height.v1",
+  "status": "PASS",
+  "rows": [
+    {
+      "id": "new-20260906-186",
+      "j_numerator_bits": 497,
+      "j_denominator_bits": 479,
+      "integral_short_coefficient_bits_lower_bound": 162,
+      "integral_quartic_coefficient_bits_lower_bound": 79,
+      "observed_refined_quartic_bits_min": 83,
+      "observed_refined_quartic_bits_max": 92,
+      "proved_new_history_boxes": 0,
+      "proved_covered_by_prior_boxes": 49
+    },
+    {
+      "id": "new-20260906-90",
+      "j_numerator_bits": 500,
+      "j_denominator_bits": 480,
+      "integral_short_coefficient_bits_lower_bound": 163,
+      "integral_quartic_coefficient_bits_lower_bound": 80,
+      "observed_refined_quartic_bits_min": 85,
+      "observed_refined_quartic_bits_max": 90,
+      "proved_new_history_boxes": 0,
+      "proved_covered_by_prior_boxes": 49
+    },
+    {
+      "id": "det1092-unit",
+      "j_numerator_bits": 1555,
+      "j_denominator_bits": 1533,
+      "integral_short_coefficient_bits_lower_bound": 514,
+      "integral_quartic_coefficient_bits_lower_bound": 255,
+      "observed_refined_quartic_bits_min": 258,
+      "observed_refined_quartic_bits_max": 350,
+      "proved_new_history_boxes": 49,
+      "proved_covered_by_prior_boxes": 0
+    },
+    {
+      "id": "det1092-outer",
+      "j_numerator_bits": 2648,
+      "j_denominator_bits": 2629,
+      "integral_short_coefficient_bits_lower_bound": 879,
+      "integral_quartic_coefficient_bits_lower_bound": 438,
+      "observed_refined_quartic_bits_min": 444,
+      "observed_refined_quartic_bits_max": 615,
+      "proved_new_history_boxes": 49,
+      "proved_covered_by_prior_boxes": 0
+    }
+  ],
+  "inputs": {
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/protocol.json": "d5fb17bdb9dcee1d6edf61e7a714fa4d9712de7c44cedbcf1e90ff4217efb5aa",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/ledger.json": "620a7e5392a09319fac6307e376ee80287bd3ad32dcaf57cd54156dcfe6a5da1",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/new-20260906-186/seed.json": "8d3b5c574f030ac2860e6aeca2ea0e96fad98a53bd036779325face7d82d0f51",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/new-20260906-186/maps.json": "c3fa739a4455476ae068fa45aab169fce7540d5999c3d3e88858a6efd157619c",
+    "artifacts/local/elliptic-curves/prospective-factor-free-portfolio-v2/new-20260906-186/maps.json": "6d718466a3f42abb76e9377a786e874d14b766457269d63e79351b6e75dcf65e",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/new-20260906-90/seed.json": "cc13f0907ba372e4ef26abdb8eafec8353af7a14431936e28313c57678afba0d",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/new-20260906-90/maps.json": "bbaac69a270f349f4d5d61e02bf5e2e489e11b4f2fdbe82ea462771fd8dbc74a",
+    "artifacts/local/elliptic-curves/prospective-factor-free-portfolio-v2/new-20260906-90/maps.json": "2def1bd20ccce9ae21fedb1168cee4f011de02363fd133a1add641cd18e6757b",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/det1092-unit/seed.json": "ef292b0fb1215ba8ef2d351cc3d3066a7241b8d97adc3be698ffb58a1750e566",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/det1092-unit/maps.json": "1fa4efc7fbe97cb61befb890d363f982e9e87189f0577dbc51dcb0cf24555d81",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v2/unit/maps.json": "0cb255eaad0f0cf37d3f3ce8216c5ab9d1947996ef64cb943770646556bf5bf7",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/det1092-outer/seed.json": "a2e59d5ce90f505638f5c91ec360e69c278612d60daff98690035f993359e14f",
+    "artifacts/local/elliptic-curves/bounded-prime-point-portfolio-v1/det1092-outer/maps.json": "40e97a3e8cf923b29a0409f11657cf541a4313db1d706a191bc974d4c4d8d94a",
+    "artifacts/local/elliptic-curves/det1092-point-pilot-v2/outer/maps.json": "f4c192deca2a1668bff9425a18cdf9b85b2fe214bbe6b720b060f41e35c6d333"
+  },
+  "source_sha256": "d3b6b2cb4c829209bb61f9e43680d59ebb09c6d6a33f48f6739252c2622702b5",
+  "inequalities": {
+    "short": "For integral |A|,|B|<2^k, j=6912 A^3/(4A^3+27B^2) has numerator bits<=3k+13 and denominator bits<=3k+5 after cancellation.",
+    "quartic": "For integral binary-quartic coefficients of absolute value<2^k, |I|<16*2^(2k), |J|<137*2^(3k). From j=6912 I^3/(4I^3-J^2), numerator bits<=6k+25 and denominator bits<=6k+16. Cancellation can only decrease both."
+  },
+  "boundary": "Universal coefficient lower bounds for integral short models and integral binary quartics with this j, not rank bounds or bounds on point-search height. Exact new coordinate witnesses need not lift to curve points. Prior coverage is limited to the explicitly bound same-centre boxes."
+}

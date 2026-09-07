@@ -32,7 +32,7 @@ and a reproducible certificate plan.
   sections and target-free reverse selection.
 - The rank-32 programme has three peer lanes: calibrated R17/MW17
   specialization, record-construction recovery around curve 398 and curve
-  302's unknown parent, and the different-NS foundry.  Curve 398's two
+  302's recovered determinant1092 MW17 parent, and the different-NS foundry.  Curve 398's two
   norm-eight A1/MW16 survivor labels are exact `PGL2(Q)`/Weierstrass-equivalent
   presentations of one fibration, and their specialized integral MW16 groups
   agree.  Deduplicate fibrations before applying a relative-subgroup

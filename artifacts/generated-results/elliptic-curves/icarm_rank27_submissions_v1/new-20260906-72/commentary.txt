@@ -1,0 +1,5 @@
+Found by Roy van Rijn with AI assistance from OpenAI Codex, as a rational specialization at t = 2012/211 of the compact elliptic-curve family labelled 11952 in our research repository. This is a specialization of an existing family; the family label identifies the construction and is not a claim to have originated the family.
+
+The 27 submitted rational points are exactly certified independent, proving rank E(Q) >= 27. The equation is a proved global minimal Weierstrass model. The exact rank and conductor remain unknown; no record is claimed.
+
+Repository reference: elliptic-curves/notes/WIDER_RETENTION_DISCOVERIES_2026-09-06.md; stable curve ID new-20260906-72. Exact point and model certificates: artifacts/generated-results/elliptic-curves/retention_high_rank_minimal_proofs_v1.json and retention24_r17_results_v1.json. The coefficients and point coordinates were exported from these certificates and checked by exact arithmetic. Catalogue comparisons acknowledge ICARM, supported by NSF Grant DMS 2425401.

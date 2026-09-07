@@ -1,5 +1,11 @@
 # Current catalogue matches and a public28 reproduction
 
+**Later publication update:** the
+[626-entry comparison](ICARM626_PUBLICATION_AND_SUBMISSIONS_2026-09-07.md)
+also matches our small-conductor curve to ICARM #626, leaving 198 of the
+201 inventory curves unmatched. The 620-entry comparison and V22 below
+remain frozen historical evidence.
+
 The separately downloaded [ICARM database](https://elliptic-rank.icarm.cloud/database.json)
 at **2026-09-06T22:30:32.628536+00:00** contains620 equations. Its SHA256 is
 `b378d458aab4b0d09f9fc8e2e382baa7a20236715a8099c52b4573f00239126e`.

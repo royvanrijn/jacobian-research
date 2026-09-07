@@ -1,0 +1,76 @@
+{
+  "boundary": "Known public28 curve recovered from original27 only with explicit25-prime minimisation. No unrestricted minimisation or complete discriminant factorization requested. All49 charts regenerated before points; no public exceptional point, previous maps or successful chart enters geometry/execution. Python artifact-open audit is a process-level audit, not an OS sandbox. Prior one-chart success was known and disclosed. This is a method regression, not a new curve or new record.",
+  "box_comparison_counts": {
+    "PROVED_NEW_COORDINATE_EXPOSURE": 49
+  },
+  "certificates": {
+    "artifacts/generated-results/elliptic-curves/blind_bounded_prime_28_control_mod2_v1.json": "5c12dfc5fa380939f38f1d454115fdcc5ce59dc741836a0ab31ccb58fb79ffb9",
+    "artifacts/generated-results/elliptic-curves/blind_bounded_prime_28_control_modl_v1.json": "a56ffe20adedcba502c7a058f0249f2ea22abe9d1efef1a00c16b9d704c8a0aa"
+  },
+  "completed_boxes": 49,
+  "discovered_rank_gain": 1,
+  "failed_preparation_seconds": 2.166648819926195,
+  "finite_ranks": {
+    "2": 28,
+    "3": 28,
+    "5": 28
+  },
+  "initial_rank": 27,
+  "input_access_counts": {
+    "freeze": 5,
+    "geometry": 72,
+    "replay": 54,
+    "worker": 155
+  },
+  "inputs": {
+    "artifacts/local/elliptic-curves/blind-bounded-prime-28-control-v1/ledger.json": "7994f89a8d7800a345bac914de2ddc72f13dacb9188e5257599abf51e629997d",
+    "artifacts/local/elliptic-curves/blind-bounded-prime-28-control-v1/protocol.json": "3c31dae835675e5d3654c41fa4e8aa5cf7f10e35fe7de03b5a5ce64108b5417f",
+    "artifacts/local/elliptic-curves/blind-bounded-prime-28-control-v2/certification-ledger.json": "8efbb8d5a7d95695a0a9189d91a81f5bfbbf6adbb821a7d0dd8871c8cd2e5861",
+    "artifacts/local/elliptic-curves/blind-bounded-prime-28-control-v2/certification-protocol.json": "be04651baa0a31b1b3f50a709beca9e5e7778827acba51db453b14aa302378ad",
+    "artifacts/local/elliptic-curves/blind-bounded-prime-28-control-v2/freeze-data-access.json": "94d8376c844a9afb78771897e5f1a595f4052971494288fafe5f48a8dfb743cc",
+    "artifacts/local/elliptic-curves/blind-bounded-prime-28-control-v2/geometry-data-access.json": "83c59b36380308f06cd6221bfda0ad5ad62ce8056bf8482db52d3a967683ee97",
+    "artifacts/local/elliptic-curves/blind-bounded-prime-28-control-v2/ledger.json": "64c17dda471572a7275067e0e4d24acec5cfdb761c446efee73ddf9acfb4a2e8",
+    "artifacts/local/elliptic-curves/blind-bounded-prime-28-control-v2/maps.json": "f0318f9a338d353f30ae33b21c7f1e95633182453af7075389125d0e16745e10",
+    "artifacts/local/elliptic-curves/blind-bounded-prime-28-control-v2/protocol.json": "b286af81e27183c555a73326090513d7f3373efa9de0288227df4ffcf5430dbd",
+    "artifacts/local/elliptic-curves/blind-bounded-prime-28-control-v2/replay-data-access.json": "53d603c9dbe1c483bb79b0343c293d0058b3f797433f9784a0970fe3db92f73d",
+    "artifacts/local/elliptic-curves/blind-bounded-prime-28-control-v2/result.json": "2eee5e15a1aead7ababb11336650bb0a7c8e834739fe0ef0e35d13c0a43fd0dd",
+    "artifacts/local/elliptic-curves/blind-bounded-prime-28-control-v2/seed.json": "65df2addc1e7ca20687a7d6221a91a4a53db5aae87e094a24ff945f6010fbc24",
+    "artifacts/local/elliptic-curves/blind-bounded-prime-28-control-v2/worker-data-access.json": "d33f31608cbd32eea18decae4b290d21a492e8c13b429f98e2610e9aad2e6fb0",
+    "artifacts/local/elliptic-curves/inventory188-own27-geometry-control-v1/seed.json": "65df2addc1e7ca20687a7d6221a91a4a53db5aae87e094a24ff945f6010fbc24"
+  },
+  "minimization_primes": [
+    2,
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    41,
+    43,
+    47,
+    53,
+    59,
+    61,
+    67,
+    71,
+    73,
+    79,
+    83,
+    89,
+    97
+  ],
+  "rank_lower_bound": 28,
+  "retained_points": 49,
+  "schema": "elliptic-curves.blind-bounded-prime-28-control.v2",
+  "sources": {
+    "elliptic-curves/cas/report_blind_bounded_prime_28.py": "8ac35b771dbb5bda5fdd852b98adf652cebfb12321a608bc9da9cf2cfa513c9f"
+  },
+  "status": "PASS",
+  "total_stage_seconds": 67.71179170790128
+}

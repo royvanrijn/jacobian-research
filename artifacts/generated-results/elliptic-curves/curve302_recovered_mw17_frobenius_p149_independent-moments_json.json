@@ -1,0 +1,26 @@
+{
+  "status": "PASS_TWO_INDEPENDENT_FIBRE_COUNT_MOMENTS",
+  "records": [
+    {
+      "extension_degree": 1,
+      "primitive_trace": 2136,
+      "surface_point_count": 24636,
+      "singular_fibres": 0,
+      "field_modulus": [
+        148,
+        1
+      ]
+    },
+    {
+      "extension_degree": 2,
+      "primitive_trace": 416720,
+      "surface_point_count": 493345524,
+      "singular_fibres": 0,
+      "field_modulus": [
+        2,
+        145,
+        1
+      ]
+    }
+  ]
+}

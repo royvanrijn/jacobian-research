@@ -2,7 +2,10 @@
 
 Authority: `EC-CURVE302-DET1092-RECONSTRUCTION`.
 
-**An exact lattice candidate is recovered; an alternative parent is not.**
+**Lattice-stage certificate, now realized by the [explicit full MW17 parent](CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md).**
+This note and its unchanged checker retain the earlier lattice-only result.
+Their no-parent boundaries describe that stage; the linked theorem supplies
+the equation, full generic basis and exact302 specialization.
 Removing one uniquely determined word from the existing 401 integral-point
 words recovers a positive even rank-17 Gram matrix of determinant 1092 and
 minimum four. Its discriminant passes a primitive K3-lattice embedding test
