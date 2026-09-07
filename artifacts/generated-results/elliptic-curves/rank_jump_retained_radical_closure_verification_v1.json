@@ -1,0 +1,24 @@
+{
+  "basis_inclusion_determinant": 2,
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_early_relation_pool_inputs_v1.json": "04aa9df34ad4c2b9a4d1794f54c7d44fa2d8349583e7c64102f6b58045d3d6c2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_relation_root_affine_v1.json": "5993b24814f91613855b8ab25cfcf0b35582ebdf461f54157a971e7f96284c46",
+    "artifacts/generated-results/elliptic-curves/rank_jump_relation_root_class_inputs_v1.json": "732ed2bc842ab1a0e86bad206f19f958aa6e20a73344b0d57c664a1c869863a2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_retained_radical_closure_v1.json": "79648bda65988b6bb87559a0e97e12d8e60f25c4eaaf9fe95e146435cc1551d2",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_retained_radical_closure.py": "e8212e2e240943b494436c82c531611c588d42c0050897e8bf34b5bea9b04b2b"
+  },
+  "dictionary_rows_rebuilt_from_norm_one_valuations": 4134,
+  "exact_norm_one_root_relation": true,
+  "generic_character_rank": 16,
+  "generic_finite_character_blocks": 38,
+  "independent_low_pivot_ranks": [
+    4133,
+    4134
+  ],
+  "norm_one_generator_identities": 18,
+  "replacement_squareclass_rank": 4150,
+  "saturation_scope": "The accompanying torsion-free group proof promotes the exact index and squareclass independence to full 2-saturation and exhausts the squareclass image of all in-field radical operations.",
+  "schema": "rank-jump.retained-radical-closure-verification.v1",
+  "status": "PASS"
+}

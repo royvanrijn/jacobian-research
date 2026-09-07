@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.retained-radical-closure-protocol.v1",
+  "question": "Can any further in-field root extraction, after arbitrary products and rational rescalings of the retained dictionary, create an extra Selmer class?",
+  "gate": "Normalize all generators by D(a)=a^3/Norm(a), which has norm one and the same squareclass as Norm(a)*a. Replace the unique relation generator by D(w). If the resulting 4150 generators are independent modulo squares, the enlarged group is 2-saturated. All in-field radical operations then have the same squareclass image, already excluded from adding Selmer classes by good-prime valuations.",
+  "inputs": "The fixed 4134-element early norm pool, its complete ideal parity data, the sixteen generic classes, the exact sole-relation root, and the completed affine ramification obstruction. No exceptional class, point, rank label, parameter or new relation is selected.",
+  "limits": {"dictionary_elements": 4134, "generic_elements": 16, "root_elements": 1, "prime_ideal_columns": 10606, "generic_character_prime_bound": 2003, "worker_seconds": 30, "verifier_seconds": 30, "workers": 1, "number_field_initializations": 0, "factorizations": 0, "new_point_or_parameter_searches": 0},
+  "failure": "UNKNOWN if the replacement independence or exact norm-one relation fails. The exclusion concerns the entire in-field radical closure of this frozen multiplicative dictionary; it is not a full Selmer/class-group bound and excludes neither new generators nor constructions over extensions."
+}
