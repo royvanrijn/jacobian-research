@@ -1,0 +1,201 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_branch_divisibility_capacity_verification_v1.json": "575c6047d0ebc2fb2efa9ee74c92aaedb98864969cdf63d031ffd291058cedaa",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_branch_half_section_inputs_v1.json": "d6a4f55e82adf57b2908401a916ea8228cc90276fc7aa3156b97a3f338d12cfc",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_branch_half_section_v1.json": "09d829847f4830855d974b40effb378c10ba57acac4015c0b6893214511c0514",
+    "elliptic-curves/rank-jump/verify_native_branch_half_section.py": "920b009bd60a6bcaf607dac28d4952e0cb57be34d694190e1a274cf3f3d470f5",
+    "elliptic-curves/rank-jump/verify_unpointed_governing_norm.py": "69828517faa1ebdc92218dc338cfe156fbc8a16020bf6b28d8f59a60bc4c847a"
+  },
+  "branch_kernels_exact": 37,
+  "method": "Rational multiplication and inversion modulo the monic quadratic, explicit chord/tangent group law; no Sage elliptic or number-field arithmetic.",
+  "rational_group_operations": 310,
+  "rows": [
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 29205,
+      "label": "orbit-00ca6"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 52405,
+      "label": "orbit-00edf"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 14696,
+      "label": "orbit-01926"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 111343,
+      "label": "orbit-01e36"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 1615,
+      "label": "orbit-02d31"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 104197,
+      "label": "orbit-045c2"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 66121,
+      "label": "orbit-04d17"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 52779,
+      "label": "orbit-051a1"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 70404,
+      "label": "orbit-05443"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 52252,
+      "label": "orbit-055ad"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 22017,
+      "label": "orbit-05980"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 46878,
+      "label": "orbit-06f04"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 98060,
+      "label": "orbit-06faa"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 98512,
+      "label": "orbit-07843"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 62286,
+      "label": "orbit-0888a"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 93074,
+      "label": "orbit-08e3a"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 9496,
+      "label": "orbit-090a3"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 58396,
+      "label": "orbit-0976c"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 87682,
+      "label": "orbit-0be21"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 21524,
+      "label": "orbit-0cff7"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 61944,
+      "label": "orbit-0d4ca"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 30406,
+      "label": "orbit-0da89"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 30671,
+      "label": "orbit-0eba4"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 10639,
+      "label": "orbit-0fb68"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 33937,
+      "label": "orbit-101f2"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 73389,
+      "label": "orbit-10aaa"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 122873,
+      "label": "orbit-126e6"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 90591,
+      "label": "orbit-12c1b"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 96867,
+      "label": "orbit-15a68"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 75849,
+      "label": "orbit-18fd5"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 25491,
+      "label": "orbit-195a4"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 45212,
+      "label": "orbit-196a3"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 32867,
+      "label": "orbit-1cb25"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 92011,
+      "label": "orbit-1d5bb"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 363,
+      "label": "orbit-1ea09"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 93597,
+      "label": "orbit-1ea54"
+    },
+    {
+      "exact_branch_kernel_dimension": 1,
+      "kernel_mask": 41624,
+      "label": "orbit-1f786"
+    }
+  ],
+  "schema": "rank-jump.native-branch-half-section-verification.v1",
+  "status": "PASS"
+}

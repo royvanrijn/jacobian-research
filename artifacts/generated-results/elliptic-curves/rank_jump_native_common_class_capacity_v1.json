@@ -1,0 +1,352 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_branch_divisibility_capacity_verification_v1.json": "575c6047d0ebc2fb2efa9ee74c92aaedb98864969cdf63d031ffd291058cedaa",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_branch_half_section_verification_v1.json": "9cb625cdd2bad4b1d661be3fb7351d50cd1d158b3f6ed6eee4409f28af48fc74",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_root_frobenius_slack_verification_v1.json": "815dab4c2aea26b8ca05a0bc85bd9b6002d9aca41eecf04710fb1b7daf3c487e",
+    "elliptic-curves/rank-jump/native_common_class_capacity.py": "acaecc87a657da05dc0c3b5eb62e35ee686d9ec52ade4b3be8e7293ed336231e",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "boundary": "Necessary structure for large generic blocks on these retained native supports. The extra global class, its branch trivializations and its rational realizations on the twists remain UNKNOWN. No rank predictor or actual successful jump mechanism is claimed.",
+  "character_lattice_quotient_two_rank_if_gain_J_exceeds_k": "J-1",
+  "dependent_trace_triples": 0,
+  "extra_global_class_dimension_upper_bound": 1,
+  "four_support_gain14_requires_common_class_rational_on_at_least_twists": 10,
+  "four_support_gain_at_least14_requires_one_common_extra_class": true,
+  "four_support_nonconcurrent_mixed_character_capacity": 5,
+  "four_support_nonconcurrent_total_gain_upper_bound": 13,
+  "global_pool_dimension_interval": [
+    17,
+    18
+  ],
+  "independent_trace_triples_checked": 7770,
+  "multiple_twist_rank_upper_bound": 1,
+  "nonconcurrent_degree_profiles": [
+    [],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      1,
+      1
+    ],
+    [
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      2,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      2,
+      2
+    ],
+    [
+      3,
+      1,
+      1,
+      1
+    ],
+    [
+      3,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      3,
+      2,
+      1,
+      1,
+      1
+    ]
+  ],
+  "rows": [
+    {
+      "full_generic_rank_upper_bound": 19,
+      "generic_gain_upper_bound": 2,
+      "genus": 0,
+      "supports": 1
+    },
+    {
+      "full_generic_rank_upper_bound": 22,
+      "generic_gain_upper_bound": 5,
+      "genus": 1,
+      "supports": 2
+    },
+    {
+      "full_generic_rank_upper_bound": 27,
+      "generic_gain_upper_bound": 10,
+      "genus": 5,
+      "supports": 3
+    },
+    {
+      "full_generic_rank_upper_bound": 36,
+      "generic_gain_upper_bound": 19,
+      "genus": 17,
+      "supports": 4
+    },
+    {
+      "full_generic_rank_upper_bound": 53,
+      "generic_gain_upper_bound": 36,
+      "genus": 49,
+      "supports": 5
+    },
+    {
+      "full_generic_rank_upper_bound": 86,
+      "generic_gain_upper_bound": 69,
+      "genus": 129,
+      "supports": 6
+    },
+    {
+      "full_generic_rank_upper_bound": 151,
+      "generic_gain_upper_bound": 134,
+      "genus": 321,
+      "supports": 7
+    },
+    {
+      "full_generic_rank_upper_bound": 280,
+      "generic_gain_upper_bound": 263,
+      "genus": 769,
+      "supports": 8
+    },
+    {
+      "full_generic_rank_upper_bound": 537,
+      "generic_gain_upper_bound": 520,
+      "genus": 1793,
+      "supports": 9
+    },
+    {
+      "full_generic_rank_upper_bound": 1050,
+      "generic_gain_upper_bound": 1033,
+      "genus": 4097,
+      "supports": 10
+    },
+    {
+      "full_generic_rank_upper_bound": 2075,
+      "generic_gain_upper_bound": 2058,
+      "genus": 9217,
+      "supports": 11
+    },
+    {
+      "full_generic_rank_upper_bound": 4124,
+      "generic_gain_upper_bound": 4107,
+      "genus": 20481,
+      "supports": 12
+    },
+    {
+      "full_generic_rank_upper_bound": 8221,
+      "generic_gain_upper_bound": 8204,
+      "genus": 45057,
+      "supports": 13
+    },
+    {
+      "full_generic_rank_upper_bound": 16414,
+      "generic_gain_upper_bound": 16397,
+      "genus": 98305,
+      "supports": 14
+    },
+    {
+      "full_generic_rank_upper_bound": 32799,
+      "generic_gain_upper_bound": 32782,
+      "genus": 212993,
+      "supports": 15
+    },
+    {
+      "full_generic_rank_upper_bound": 65568,
+      "generic_gain_upper_bound": 65551,
+      "genus": 458753,
+      "supports": 16
+    },
+    {
+      "full_generic_rank_upper_bound": 131105,
+      "generic_gain_upper_bound": 131088,
+      "genus": 983041,
+      "supports": 17
+    },
+    {
+      "full_generic_rank_upper_bound": 262178,
+      "generic_gain_upper_bound": 262161,
+      "genus": 2097153,
+      "supports": 18
+    },
+    {
+      "full_generic_rank_upper_bound": 524323,
+      "generic_gain_upper_bound": 524306,
+      "genus": 4456449,
+      "supports": 19
+    },
+    {
+      "full_generic_rank_upper_bound": 1048612,
+      "generic_gain_upper_bound": 1048595,
+      "genus": 9437185,
+      "supports": 20
+    },
+    {
+      "full_generic_rank_upper_bound": 2097189,
+      "generic_gain_upper_bound": 2097172,
+      "genus": 19922945,
+      "supports": 21
+    },
+    {
+      "full_generic_rank_upper_bound": 4194342,
+      "generic_gain_upper_bound": 4194325,
+      "genus": 41943041,
+      "supports": 22
+    },
+    {
+      "full_generic_rank_upper_bound": 8388647,
+      "generic_gain_upper_bound": 8388630,
+      "genus": 88080385,
+      "supports": 23
+    },
+    {
+      "full_generic_rank_upper_bound": 16777256,
+      "generic_gain_upper_bound": 16777239,
+      "genus": 184549377,
+      "supports": 24
+    },
+    {
+      "full_generic_rank_upper_bound": 33554473,
+      "generic_gain_upper_bound": 33554456,
+      "genus": 385875969,
+      "supports": 25
+    },
+    {
+      "full_generic_rank_upper_bound": 67108906,
+      "generic_gain_upper_bound": 67108889,
+      "genus": 805306369,
+      "supports": 26
+    },
+    {
+      "full_generic_rank_upper_bound": 134217771,
+      "generic_gain_upper_bound": 134217754,
+      "genus": 1677721601,
+      "supports": 27
+    },
+    {
+      "full_generic_rank_upper_bound": 268435500,
+      "generic_gain_upper_bound": 268435483,
+      "genus": 3489660929,
+      "supports": 28
+    },
+    {
+      "full_generic_rank_upper_bound": 536870957,
+      "generic_gain_upper_bound": 536870940,
+      "genus": 7247757313,
+      "supports": 29
+    },
+    {
+      "full_generic_rank_upper_bound": 1073741870,
+      "generic_gain_upper_bound": 1073741853,
+      "genus": 15032385537,
+      "supports": 30
+    },
+    {
+      "full_generic_rank_upper_bound": 2147483695,
+      "generic_gain_upper_bound": 2147483678,
+      "genus": 31138512897,
+      "supports": 31
+    },
+    {
+      "full_generic_rank_upper_bound": 4294967344,
+      "generic_gain_upper_bound": 4294967327,
+      "genus": 64424509441,
+      "supports": 32
+    },
+    {
+      "full_generic_rank_upper_bound": 8589934641,
+      "generic_gain_upper_bound": 8589934624,
+      "genus": 133143986177,
+      "supports": 33
+    },
+    {
+      "full_generic_rank_upper_bound": 17179869234,
+      "generic_gain_upper_bound": 17179869217,
+      "genus": 274877906945,
+      "supports": 34
+    },
+    {
+      "full_generic_rank_upper_bound": 34359738419,
+      "generic_gain_upper_bound": 34359738402,
+      "genus": 566935683073,
+      "supports": 35
+    },
+    {
+      "full_generic_rank_upper_bound": 68719476788,
+      "generic_gain_upper_bound": 68719476771,
+      "genus": 1168231104513,
+      "supports": 36
+    },
+    {
+      "full_generic_rank_upper_bound": 137438953525,
+      "generic_gain_upper_bound": 137438953508,
+      "genus": 2405181685761,
+      "supports": 37
+    }
+  ],
+  "schema": "rank-jump.native-common-class-capacity.v1",
+  "single_twist_rank_upper_bound": 2,
+  "status": "PASS",
+  "three_support_gain10_requires_common_class_rational_on_all_twists": 7,
+  "triangle_free_graphs_checked": 22702
+}

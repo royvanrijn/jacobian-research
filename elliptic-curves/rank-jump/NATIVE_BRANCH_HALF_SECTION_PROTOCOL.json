@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.native-branch-half-section-protocol.v1",
+  "question": "Is the one-dimensional branch fingerprint kernel exactly the native trace word, witnessed by a half section over the branch field?",
+  "selection": "The same 37 retained native quadratics. Project their published generic trace words and the x0,y0 terms of their pre-existing equation-only lifted sections. No specialized exceptional points or quotient labels are projected.",
+  "method": "For each quadratic branch field Q[b], reduce A,B, all17 generic sections, and x0,y0 modulo q. Verify the half point and its double, and compare that double with the exact elliptic sum of the supplied generic word. Compare the word mod2 with the independently verified finite branch kernel. No point search, ideal factorization or field-class computation.",
+  "limits": {"covers": 37, "worker_seconds": 60, "workers": 1},
+  "boundary": "An exact generic branch-divisibility certificate. The half point is an equation-defined native section at its branch, not a new exceptional point on a research fibre."
+}

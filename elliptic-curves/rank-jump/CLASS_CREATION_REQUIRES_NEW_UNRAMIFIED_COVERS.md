@@ -1,5 +1,12 @@
 # Class creation: new unramified covers beyond the global pool
 
+Follow-up: [one common class for a large native block](ONE_COMMON_CLASS_FOR_A_LARGE_NATIVE_BLOCK.md)
+leaves at most one extra global class on the published R17 root curve.
+Among 37 retained native supports, a four-cover generic gain of at least
+fourteen requires a common class rational on ten character twists. Its
+shared conic and genus-one double-cover equations are derived explicitly;
+the class and its simultaneous solubility remain unconstructed.
+
 Follow-up: [branch fibres bound whole native class blocks](BRANCH_FIBRES_BOUND_NATIVE_CLASS_CREATION.md)
 proves generic twist rank at most three on 37 retained native quadratic
 supports, uniformly in rational scalar twists. Products of two or more

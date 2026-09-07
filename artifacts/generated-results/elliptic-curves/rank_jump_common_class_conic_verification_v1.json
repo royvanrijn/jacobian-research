@@ -1,0 +1,15 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_common_class_conic_v1.json": "5a2994ce51fe7108e2d78c58174f8918a95a66ca0cfa337293d6a29a64a0b45b",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_common_class_conic.py": "b2f7592ffee19ba260b4bb21bc07ad8b734588b0ffff2df87ab380f0c4ff193c"
+  },
+  "conic_determinant_verified": true,
+  "matrix_norm_identity_entries": 9,
+  "method": "SymPy companion matrices, independent of the Sage polynomial multiplication/reduction worker.",
+  "pencil_determinant_verified": true,
+  "quadratic_forms_verified": 3,
+  "schema": "rank-jump.common-class-conic-verification.v1",
+  "status": "PASS",
+  "twist_point_map_norm_identity_verified": true
+}

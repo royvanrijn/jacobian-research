@@ -1,0 +1,104 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_branch_divisibility_capacity_inputs_v1.json": "07b0be6a843a1a21b122bd4012c8ffe27b7c828d8f566f9de3056652b5df092d",
+    "artifacts/generated-results/elliptic-curves/rank_jump_native_root_frobenius_slack_v1.json": "a13db56f1a15491d55c4f6bf4733c0944023633aefa7f851c061c0b1e9af0d4c",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_native_root_frobenius_slack.py": "c2b632de97669375ec30e2cc0ef7a7300bf9074a9c1ca2593581f1195f0c0f72"
+  },
+  "counts": [
+    {
+      "p": 131,
+      "point_count": 112,
+      "trace_mod2": 0
+    },
+    {
+      "p": 137,
+      "point_count": 146,
+      "trace_mod2": 0
+    },
+    {
+      "p": 151,
+      "point_count": 158,
+      "trace_mod2": 0
+    },
+    {
+      "p": 157,
+      "point_count": 156,
+      "trace_mod2": 0
+    },
+    {
+      "p": 167,
+      "point_count": 150,
+      "trace_mod2": 0
+    },
+    {
+      "p": 181,
+      "point_count": 156,
+      "trace_mod2": 0
+    },
+    {
+      "p": 191,
+      "point_count": 186,
+      "trace_mod2": 0
+    },
+    {
+      "p": 197,
+      "point_count": 186,
+      "trace_mod2": 0
+    },
+    {
+      "p": 199,
+      "point_count": 218,
+      "trace_mod2": 0
+    },
+    {
+      "p": 211,
+      "point_count": 205,
+      "trace_mod2": 1
+    },
+    {
+      "p": 227,
+      "point_count": 222,
+      "trace_mod2": 0
+    },
+    {
+      "p": 229,
+      "point_count": 225,
+      "trace_mod2": 1
+    }
+  ],
+  "finite_and_infinity_fibres_verified": 2190,
+  "global_pool_dimension_interval": [
+    17,
+    18
+  ],
+  "method": "Sage finite polynomial roots versus exhaustive enumeration; independent good-prime selection; explicit reciprocal mod-two polynomial enumeration. Fixed-space dimension is bounded by algebraic multiplicity, never equated to it.",
+  "odd_count_primes": [
+    211,
+    229
+  ],
+  "reciprocal_possibilities": [
+    {
+      "eigenvalue_one_algebraic_multiplicity": 18,
+      "residual_coefficients": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "trace_mod2": 1
+    },
+    {
+      "eigenvalue_one_algebraic_multiplicity": 20,
+      "residual_coefficients": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "trace_mod2": 0
+    }
+  ],
+  "schema": "rank-jump.native-root-frobenius-slack-verification.v1",
+  "status": "PASS"
+}

@@ -1,0 +1,77 @@
+{
+  "bindings": {
+    "elliptic-curves/rank-jump/common_class_conic.py": "051397b2c17a419e8c178bc032401f6542510344c77482787e021402b15357d5",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "common_conic": "Q2(z0,z1,z2)=0",
+  "conclusion": "Every scalar twist cover of the same Kummer class has the same conic quotient. If the conic has a rational point it can be parametrized, giving quadratic twists of a single binary quartic. Conic solubility alone is insufficient.",
+  "conditions": "Characteristic0; d*Norm(h)*(-4*A^3-27*B^2) nonzero; Norm(h)=n^2. The class is nonzero when using the rational-point equivalence without an infinity exception.",
+  "cubic": "theta^3 + A*theta + B",
+  "kummer_class": "h0+h1*theta+h2*theta^2",
+  "norm_h": "A^2*h0*h2^2 - A*B*h1*h2^2 + B^2*h2^3 + A*h0*h1^2 - B*h1^3 - 2*A*h0^2*h2 + 3*B*h0*h1*h2 + h0^3",
+  "norm_z": "A^2*z0*z2^2 - A*B*z1*z2^2 + B^2*z2^3 + A*z0*z1^2 - B*z1^3 - 2*A*z0^2*z2 + 3*B*z0*z1*z2 + z0^3",
+  "pencil_determinant": "-A^3*h0*h2^2*l*m^3*d + A^2*B*h1*h2^2*l*m^3*d - A*B^2*h2^3*l*m^3*d + A^2*B*h0*h2^2*m^4*d - A*B^2*h1*h2^2*m^4*d + B^3*h2^3*m^4*d - A^2*h0*h2^2*l^3*m*d + A*B*h1*h2^2*l^3*m*d - B^2*h2^3*l^3*m*d - A^2*h0*h1^2*l*m^3*d + A*B*h1^3*l*m^3*d + 2*A^2*h0^2*h2*l*m^3*d - 3*A*B*h0*h1*h2*l*m^3*d + A*B*h0*h1^2*m^4*d - B^2*h1^3*m^4*d - 2*A*B*h0^2*h2*m^4*d + 3*B^2*h0*h1*h2*m^4*d - A*h0*h1^2*l^3*m*d + B*h1^3*l^3*m*d + 2*A*h0^2*h2*l^3*m*d - 3*B*h0*h1*h2*l^3*m*d - A*h0^3*l*m^3*d + B*h0^3*m^4*d - h0^3*l^3*m*d",
+  "point_map": "x=Q0(z)/w^2, y=n*Norm(z)/w^3, where Norm(h)=n^2",
+  "quadratic_forms": [
+    "2*A*B*h2*z1*z2 + A*B*h1*z2^2 + B^2*h2*z2^2 - 2*B*h2*z0*z1 - B*h1*z1^2 - 2*B*h1*z0*z2 - 2*B*h0*z1*z2 + h0*z0^2",
+    "2*A^2*h2*z1*z2 + A^2*h1*z2^2 + 2*A*B*h2*z2^2 - 2*A*h2*z0*z1 - A*h1*z1^2 - B*h2*z1^2 - 2*A*h1*z0*z2 - 2*B*h2*z0*z2 - 2*A*h0*z1*z2 - 2*B*h1*z1*z2 - B*h0*z2^2 + h1*z0^2 + 2*h0*z0*z1",
+    "A^2*h2*z2^2 - A*h2*z1^2 - 2*A*h2*z0*z2 - 2*A*h1*z1*z2 - 2*B*h2*z1*z2 - A*h0*z2^2 - B*h1*z2^2 + h2*z0^2 + 2*h1*z0*z1 + h0*z1^2 + 2*h0*z0*z2"
+  ],
+  "quadratic_matrices": [
+    [
+      [
+        "h0",
+        "-B*h2",
+        "-B*h1"
+      ],
+      [
+        "-B*h2",
+        "-B*h1",
+        "A*B*h2 - B*h0"
+      ],
+      [
+        "-B*h1",
+        "A*B*h2 - B*h0",
+        "A*B*h1 + B^2*h2"
+      ]
+    ],
+    [
+      [
+        "h1",
+        "-A*h2 + h0",
+        "-A*h1 - B*h2"
+      ],
+      [
+        "-A*h2 + h0",
+        "-A*h1 - B*h2",
+        "A^2*h2 - A*h0 - B*h1"
+      ],
+      [
+        "-A*h1 - B*h2",
+        "A^2*h2 - A*h0 - B*h1",
+        "A^2*h1 + 2*A*B*h2 - B*h0"
+      ]
+    ],
+    [
+      [
+        "h2",
+        "h1",
+        "-A*h2 + h0"
+      ],
+      [
+        "h1",
+        "-A*h2 + h0",
+        "-A*h1 - B*h2"
+      ],
+      [
+        "-A*h2 + h0",
+        "-A*h1 - B*h2",
+        "A^2*h2 - A*h0 - B*h1"
+      ]
+    ]
+  ],
+  "schema": "rank-jump.common-class-conic.v1",
+  "status": "PASS",
+  "target": "y^2=x^3+d^2*A*x+d^3*B",
+  "twist_cover": "Q2(z)=0, Q1(z)+d*w^2=0 in P^3"
+}

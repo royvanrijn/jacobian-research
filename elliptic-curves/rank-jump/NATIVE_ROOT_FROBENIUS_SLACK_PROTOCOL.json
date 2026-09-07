@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.native-root-frobenius-slack-protocol.v1",
+  "question": "Can Frobenius parity remove one dimension of the shared global-pool slack in the new native branch bounds?",
+  "selection": "The fixed published R17 cubic root curve, using the equation-only input of the completed 37-cover branch-divisibility experiment. Count at the first 12 primes at most 1009 where the degree24 discriminant remains squarefree, coprime to A, and full degree. No specialized curve outcome selects a prime.",
+  "mathematical_gate": "The 17 independent generic Kummer classes give 17 rational Jacobian two-torsion classes. An odd root-curve point count forces the reciprocal residual cubic of Frobenius mod2 to be T^3+1, bounding its eigenvalue-one multiplicity by18. The global pool is then at most18, improving all single-support twist bounds to2 and all multiple-support twist bounds to1. Even counts yield no improvement, not a rational two-torsion dimension.",
+  "limits": {"good_primes": 12, "prime_bound": 1009, "worker_seconds": 30, "workers": 1, "new_parameter_searches": 0, "elliptic_point_searches": 0, "class_group_computations": 0},
+  "failure": "UNKNOWN on timeout or insufficient good primes. No larger dictionary is authorized by this protocol. Counts measure an exact capacity obstruction, not a rank correlation."
+}

@@ -1,5 +1,12 @@
 # Branch divisibility bounds whole native twist blocks
 
+**Strengthened:** [one common class for a large native block](ONE_COMMON_CLASS_FOR_A_LARGE_NATIVE_BLOCK.md)
+reduces the global pool to dimension at most 18. The bounds below improve
+to two per singleton twist and one per product twist. A four-support gain
+of at least fourteen requires one extra class rational on at least ten
+character twists. The original bounds and their proof inputs are retained
+below.
+
 Every one of the **37 retained native quadratic branch supports** has
 arithmetic generic twist rank at most **three**. This holds for every
 nonzero rational scalar multiple of its branch polynomial, including
