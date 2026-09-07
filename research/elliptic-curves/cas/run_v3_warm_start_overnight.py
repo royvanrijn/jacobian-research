@@ -42,8 +42,7 @@ def validate_authorization():
     for name,digest in c.get('bindings',{}).items():
         p=ROOT/name
         if not p.exists() or sha(p)!=digest: raise RuntimeError('control binding changed: '+name)
-    roster=read(D/'roster.json')
-    ids={r['id']:r for r in roster['cases']}
+    roster=read(D/'roster.json'); ids={r['id']:r for r in roster['cases']}
     for case in WARM:
         if case not in ids: raise RuntimeError('missing frozen warm case '+case)
         folder=D/case
@@ -66,14 +65,10 @@ def warm_bind(case):
         raise RuntimeError('frozen transfer preparation changed')
     if sha(folder/'protocol.json')!=entry['protocol_sha256']: raise RuntimeError('job protocol changed')
     engine=base.engine_for(folder); policy=read(folder/'protocol.json')
-    # Do not call base.bind_job: its only additional warm condition is the
-    # deliberately failed generic-control release gate.  Everything else is
-    # replayed here or by the V3 worker itself.
     base.check_bindings(ROOT,policy['inputs'])
     return engine,folder,policy
 
-# Install explicit warm binding into the module used by the existing patched
-# V3 run_case/replay_case.  Seed certificate handling remains v3's.
+
 def bind_with_cert(case):
     engine,folder,policy=warm_bind(case)
     seed=read(folder/'seed-input.json'); proof=read(folder/'seed-proof.json')
@@ -92,7 +87,15 @@ def bind_with_cert(case):
     if state.rank!=27 or tuple(state.basis)!=frozen_points: raise RuntimeError('warm marked rank-27 seed did not replay exactly')
     v3._active_seed=(ec,ep,state)
     return engine,folder,policy
+
+# The V3 run_case was compiled into a private globals dictionary. Patch THAT
+# dictionary, not only base.bind_job, otherwise it still invokes the generic
+# control gate. replay_case has its own module globals and receives the same
+# explicit warm binder.
 base.bind_job=bind_with_cert
+base.run_case.__globals__['bind_job']=bind_with_cert
+base.run_case.__globals__['_initial_worker_state']=v3._initial_worker_state
+base.replay_case.__globals__['bind_job']=bind_with_cert
 
 
 def supervise(action,case):
@@ -135,6 +138,10 @@ def launch():
     if STATE.exists():
         s=read(STATE)
         if s.get('status')=='COMPLETE_WARM_ROSTER': print('Already complete');return
+        pid=int(s.get('pid',0) or 0)
+        if pid:
+            try: os.kill(pid,0); raise RuntimeError(f'warm controller pid {pid} is still alive')
+            except ProcessLookupError: pass
     stream=LOG.open('ab',buffering=0)
     p=subprocess.Popen([sys.executable,str(SELF),'worker'],cwd=ROOT,stdin=subprocess.DEVNULL,stdout=stream,stderr=subprocess.STDOUT,start_new_session=True,close_fds=True)
     atomic(STATE,{'status':'LAUNCHED','pid':p.pid,'updated_unix':time.time(),'authorization':auth})
@@ -159,8 +166,6 @@ def main():
     else:
         if os.environ.get('V3_WARM_SUPERVISED')!='1': raise RuntimeError('worker action must be supervised')
         if a.action=='run-worker': base.run_case(a.case)
-        else:
-            base.replay_case(a.case)
-            # base replay publishes verified.json; retain it and label warm result in parent controller.
+        else: base.replay_case(a.case)
 
 if __name__=='__main__': main()
