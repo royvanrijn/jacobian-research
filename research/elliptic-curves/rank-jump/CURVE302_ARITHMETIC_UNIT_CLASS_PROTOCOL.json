@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.curve302-arithmetic-unit-class-protocol.v1",
+  "endpoint": "Try to construct one additional302 strict class from equation/generic-only arithmetic unit relations, without a full class-group computation.",
+  "bounds": {"workers": 1, "worker_seconds": 180, "pari_stack_bytes": 268435456, "starting_ideals": 7, "directions": "[0,i,j] for i,j in [0,16,32,48,64,80,96,112,128], lexicographic order", "proof_prime_start": 50001, "proof_prime_end": 55000, "new_parameters": 0, "elliptic_point_searches": 0},
+  "method": "Start with the unit ideal and the reduced half ideals of the six generic ordinary unramified classes. At each fixed nonnegative archimedean direction, use idealred with an exact multiplier. Two identical reduced ideals from the same start give a unit as the ratio of their multipliers. Normalize its norm to+1; deduplicate and test finite characters, complete strict local conditions and generic corrections. Stop on an extra strict independence witness. Store exact unit-ideal and local certificates.",
+  "scope": "One bounded arithmetic-unit attempt. Units can contribute at most two norm-square squareclass dimensions in this totally real cubic field; this is not proposed as the full large-jump mechanism. A miss closes this fixed attempt and does not authorize a larger restart.",
+  "inputs": "The302 equation and seventeen generic classes plus the six certified generic-only ordinary unramified coefficient masks. No exceptional point or oracle-labelled output.",
+  "failure_semantics": "A unit or a new global squareclass is not yet a Selmer class. Only a norm-square class with every strict local condition and independence from G reaches the positive endpoint. Rational versus Sha then requires a separate certificate."
+}

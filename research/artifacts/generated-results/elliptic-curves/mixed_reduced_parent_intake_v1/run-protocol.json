@@ -1,0 +1,8 @@
+{
+  "certificate_curve_seconds": 1800,
+  "driver_sha256": "23052ebb61d790be28eb258e04ad0bb198f07066776e85711ac17ea6ec2cce10",
+  "intake_seconds": 180,
+  "maximum_workers": 1,
+  "rss_bytes": 2147483648,
+  "seed_replay_seconds": 120
+}

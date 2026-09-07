@@ -1,0 +1,9 @@
+{
+  "schema": "elliptic-curves.current-conductor-screen.v1",
+  "small_rank22_certificate": "artifacts/generated-results/elliptic-curves/small_conductor_rank22_proof_v1.json",
+  "small_rank22_sha256": "36552cd46a2a0f4bdf46667674a95c5211ddde083e4045817129dcdb5c3001e2",
+  "submitted_summary": "artifacts/generated-results/elliptic-curves/submitted628_conductor_v2/summary.json",
+  "submitted_summary_sha256": "3b0ffe0e43e28185152aa8b98fc431b62d60a00cc7248b64330e19de7ed97616",
+  "summary": "artifacts/generated-results/elliptic-curves/inventory201_conductors_v2/summary.json",
+  "summary_sha256": "67ebab1f8f4cfe90ec941f0e72758c16e509087fb9d4252353f3a366f03dca08"
+}

@@ -1,0 +1,107 @@
+{
+  "argument": "Every listed prime has an exact primality certificate. Sage generic Tate and PARI elllocalred independently agree on its conductor exponent. Their product divides the true conductor. The unresolved cofactor is prime to2,3 and all processed primes, and bounds the remaining conductor by f_p<=v_p(Delta). Thus divisor <= N <= upper_bound. If the cofactor is1, N and the bad-prime list are exact, allowing nonminimal input models through local minimization. Public benchmarks are reported metadata, not universal records. No new rank claim.",
+  "bad_primes": null,
+  "conductor_divisor": "207480",
+  "conductor_upper_bound": "84728161354516311686264721836924479429995993697072804904441337753845560270675927939705408163201379512378398468971502727172797925584646148920",
+  "discovery_factors": [
+    "408367849212050856401892817798941967563119306425066536073073731221542125846712588874616387908238767651717748549120410290981289404205929"
+  ],
+  "discriminant": "317576599007367707151294674459274522401116979000349204369457666935433769439629780814434438787546494908384986175403696142528162501346296482330814976367412000000",
+  "exact_conductor": null,
+  "family": "103b2",
+  "id": "new-20260906-177",
+  "integral_curve": [
+    "0",
+    "1",
+    "0",
+    "-39457046424372925984288250082869250288220867380292825",
+    "2892311756307113721007813460646383690776565760616890951262922090176988000256875"
+  ],
+  "local_data": [
+    {
+      "conductor_exponent": 3,
+      "displayed_discriminant_valuation": 8,
+      "kodaira": "I1*",
+      "minimal_discriminant_valuation": 8,
+      "pari_local_reduction": "[3, -5, [1, 0, 0, 0], 4]",
+      "prime": "2"
+    },
+    {
+      "conductor_exponent": 1,
+      "displayed_discriminant_valuation": 10,
+      "kodaira": "I10",
+      "minimal_discriminant_valuation": 10,
+      "pari_local_reduction": "[1, 14, [1, 0, 0, 0], 10]",
+      "prime": "3"
+    },
+    {
+      "conductor_exponent": 1,
+      "displayed_discriminant_valuation": 6,
+      "kodaira": "I6",
+      "minimal_discriminant_valuation": 6,
+      "pari_local_reduction": "[1, 10, [1, 0, 0, 0], 6]",
+      "prime": "5"
+    },
+    {
+      "conductor_exponent": 1,
+      "displayed_discriminant_valuation": 5,
+      "kodaira": "I5",
+      "minimal_discriminant_valuation": 5,
+      "pari_local_reduction": "[1, 9, [1, 0, 0, 0], 5]",
+      "prime": "7"
+    },
+    {
+      "conductor_exponent": 1,
+      "displayed_discriminant_valuation": 4,
+      "kodaira": "I4",
+      "minimal_discriminant_valuation": 4,
+      "pari_local_reduction": "[1, 8, [1, 0, 0, 0], 4]",
+      "prime": "13"
+    },
+    {
+      "conductor_exponent": 1,
+      "displayed_discriminant_valuation": 3,
+      "kodaira": "I3",
+      "minimal_discriminant_valuation": 3,
+      "pari_local_reduction": "[1, 7, [1, 0, 0, 0], 3]",
+      "prime": "19"
+    }
+  ],
+  "parameter": "-3939/2032",
+  "pari_version": "(2, 17, 3)",
+  "prime_certificates": {
+    "13": "13",
+    "19": "19",
+    "2": "2",
+    "3": "3",
+    "5": "5",
+    "7": "7"
+  },
+  "proved_above_recorded_benchmark": false,
+  "proved_below_recorded_benchmark": false,
+  "rank_lower_bound": 22,
+  "recorded_benchmark": {
+    "catalogue_curves": 97,
+    "id": 625,
+    "missing_conductor_ids": [
+      537,
+      543,
+      545,
+      581,
+      615,
+      616,
+      617,
+      619,
+      620,
+      628
+    ],
+    "recorded_conductor": "214830001287596349624206698595249377510923944541593010474955868696121214"
+  },
+  "sage_version": "10.9",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/inventory201_conductor_bounds_v1.json": "8fed25c88f7c2936ce857617e50ff75d210ef774e4d8ca91a7e1aae4acb635c0",
+    "elliptic-curves/cas/certify_new_curve_conductor_screen.sage": "55c9ac2a9170db1630d11ec2bc0b58d982a344e6b0f762f99b1fd15db5313667"
+  },
+  "status": "UNKNOWN",
+  "unresolved_discriminant_cofactor": "408367849212050856401892817798941967563119306425066536073073731221542125846712588874616387908238767651717748549120410290981289404205929"
+}

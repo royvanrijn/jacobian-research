@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "inputs": {
+    "parent_sha256": "2b622ffba7b8d9d64f4f1adf22ec82ab61f65b7cc51f881814acf7634572a402",
+    "chart_sha256": "8f9976ff467625f01ac78cb9d418307e5a24b3eeb034cdb1861a6e06bf5272e6"
+  },
+  "export_sha256": "3f9c9d3bed66a29327bdc2abfb7cf2ddae04068f74100924feeaed5527d1b023",
+  "parameter_matrix": [
+    "-36201755177827284938903000",
+    "-41418390914593414769282000",
+    "-1016449687002447546724417437",
+    "1324257248229139113399816775"
+  ],
+  "weierstrass_u": "127912441776881731337678240068563891280789386291887300898201991681/6",
+  "section_count": 17,
+  "coefficient_bits": {
+    "A": 90,
+    "B": 135
+  },
+  "boundary": "Exact Q(s) isomorphism, j identity, and all seventeen section transports verified independently with Sage; no project arithmetic imports. This is the same fibration and parent. No point search, rank increase, global coefficient optimum, or new parent claimed."
+}

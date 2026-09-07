@@ -1,0 +1,9 @@
+{
+  "chart_sha256": "8f9976ff467625f01ac78cb9d418307e5a24b3eeb034cdb1861a6e06bf5272e6",
+  "parent_sha256": "2b622ffba7b8d9d64f4f1adf22ec82ab61f65b7cc51f881814acf7634572a402",
+  "previous_attempt": "V1 verified the generic model and j but incorrectly required every section to have polynomial coordinates. Two original sections have rational-function coordinates. No source equation, sections or chart changed.",
+  "rss_bytes": 2147483648,
+  "script_sha256": "f163e58272045a28334e3dec26c83974ae394ebed024a7ece8c1d32b18bc1a70",
+  "seconds": 120,
+  "workers": 1
+}

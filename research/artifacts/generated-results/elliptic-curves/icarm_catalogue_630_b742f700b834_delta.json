@@ -1,0 +1,176 @@
+{
+  "added_ids": [
+    621,
+    622,
+    623,
+    624,
+    625,
+    626,
+    627,
+    628,
+    629,
+    630
+  ],
+  "baseline_count": 620,
+  "claim_boundary": "Exact equation, point membership and Q-isomorphism audit. Public ranks and conductors remain reported metadata unless separately certified. No search, point-independence claim for the whole catalogue or universal record claim.",
+  "conductor_benchmarks": [
+    {
+      "current": {
+        "id": 625,
+        "recorded_conductor": "214830001287596349624206698595249377510923944541593010474955868696121214"
+      },
+      "missing_conductors": [
+        537,
+        543,
+        545,
+        581,
+        615,
+        616,
+        617,
+        619,
+        620,
+        628
+      ],
+      "previous": {
+        "id": 376,
+        "recorded_conductor": "176634054787705380330890095321066714644533156566592717278673628271112803086"
+      },
+      "rank_threshold": 22
+    },
+    {
+      "current": {
+        "id": 624,
+        "recorded_conductor": "113492893163216590951326900190230978222582452610473766586860712405885559618730"
+      },
+      "missing_conductors": [
+        537,
+        543,
+        545,
+        581,
+        615,
+        616,
+        617,
+        619,
+        620,
+        628
+      ],
+      "previous": {
+        "id": 539,
+        "recorded_conductor": "95221940916620808088830143485247567246687065418433849627482469977720285740879030062"
+      },
+      "rank_threshold": 23
+    },
+    {
+      "current": {
+        "id": 623,
+        "recorded_conductor": "104248168115693608073559801519130263017579290095801453847349400259924673492465624274936"
+      },
+      "missing_conductors": [
+        537,
+        543,
+        545,
+        581,
+        615,
+        616,
+        617,
+        619,
+        620,
+        628
+      ],
+      "previous": {
+        "id": 548,
+        "recorded_conductor": "361660950250291954113011326751617907627414070443777168347285410734060239220929310535800"
+      },
+      "rank_threshold": 24
+    },
+    {
+      "current": {
+        "id": 622,
+        "recorded_conductor": "670806436169815337953893530982465615029341453029546883473693424304045096438291347454167080"
+      },
+      "missing_conductors": [
+        537,
+        543,
+        545,
+        581,
+        615,
+        616,
+        617,
+        619,
+        620,
+        628
+      ],
+      "previous": {
+        "id": 542,
+        "recorded_conductor": "13858119093380870911402836699917707730917559748643075892856552587147896304378790356681414169480"
+      },
+      "rank_threshold": 25
+    },
+    {
+      "current": {
+        "id": 542,
+        "recorded_conductor": "13858119093380870911402836699917707730917559748643075892856552587147896304378790356681414169480"
+      },
+      "missing_conductors": [
+        537,
+        543,
+        545,
+        581,
+        615,
+        616,
+        617,
+        619,
+        620,
+        628
+      ],
+      "previous": {
+        "id": 542,
+        "recorded_conductor": "13858119093380870911402836699917707730917559748643075892856552587147896304378790356681414169480"
+      },
+      "rank_threshold": 26
+    },
+    {
+      "current": {
+        "id": 614,
+        "recorded_conductor": "2798269498065207394410944473876126988677958069177633823142936526529755081283469905582705125459068762952810"
+      },
+      "missing_conductors": [
+        537,
+        543,
+        545,
+        581,
+        615,
+        616,
+        617,
+        619,
+        620,
+        628
+      ],
+      "previous": {
+        "id": 614,
+        "recorded_conductor": "2798269498065207394410944473876126988677958069177633823142936526529755081283469905582705125459068762952810"
+      },
+      "rank_threshold": 27
+    }
+  ],
+  "current_count": 630,
+  "equation_discriminants_checked": 630,
+  "existing_entry_changes": [],
+  "intake": {
+    "retrieved_at": "2026-09-07T08:58:21.750673+00:00",
+    "sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a",
+    "url": "https://elliptic-rank.icarm.cloud/database.json"
+  },
+  "point_memberships_checked": 9484,
+  "removed_ids": [],
+  "schema": "elliptic-curves.catalogue-refresh.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v22.json": "5f64cf83268829549a4095dc04a9e69c73513be711c1745b61dc9d8b1a2167b0",
+    "artifacts/local/elliptic-curves/conductor-record-screen-v1/metadata.json": "c19c0dbc132d728fdd358ab2a054d66000433709153603cabbb6b543c5700482",
+    "artifacts/local/elliptic-curves/inventory200-current-catalogue-v1/database.json": "b378d458aab4b0d09f9fc8e2e382baa7a20236715a8099c52b4573f00239126e",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9",
+    "elliptic-curves/cas/elliptic_candidate_record.py": "5b9f6f843d48e705253404a5583ef53966c72c7f229c68ef17c6b848f5e94af3",
+    "elliptic-curves/cas/refresh_icarm_local_database.py": "0d3df7ca6bb71d2cb35870f39088c43000c69bfaca1acb0de4d3abe885bb3676"
+  },
+  "status": "PASS"
+}

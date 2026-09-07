@@ -1,0 +1,714 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_strict_constructor_arithmetic_v1.json": "2764439bcd7cec13d7f271f4b3e6d0d8e666d3a4083b7748da791e56b20a5446",
+    "artifacts/generated-results/elliptic-curves/rank_jump_generic_only_class_anchors_v1.json": "db90a1d3e95599dbac001c51693fab379062e913b279db7a88cfacc6e630b096",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/rank-jump/CURVE302_ARITHMETIC_UNIT_CLASS_PROTOCOL.json": "8e1a68ef2192696215563ba0eb71c57a46e1cc675761ea8d5f1df64aa41f6e7c",
+    "elliptic-curves/rank-jump/curve302_arithmetic_unit_class.py": "ec54ebc30f186b1dec2ec46c6ffe729aad230a0b2f342d4b15587eccea248055"
+  },
+  "boundary": "Equation/generic-only arithmetic unit relations and exact local tests. A negative result closes only this bounded attempt. No class-group completeness, rank prediction, rational solubility or large-jump explanation.",
+  "character_blocks": [
+    {
+      "p": 50047,
+      "roots": [
+        44048,
+        5305,
+        689
+      ]
+    },
+    {
+      "p": 50077,
+      "roots": [
+        25245,
+        16563,
+        8264
+      ]
+    },
+    {
+      "p": 50123,
+      "roots": [
+        20881,
+        18837,
+        10400
+      ]
+    },
+    {
+      "p": 50261,
+      "roots": [
+        38847,
+        7879,
+        3530
+      ]
+    },
+    {
+      "p": 50263,
+      "roots": [
+        30474,
+        14036,
+        5748
+      ]
+    },
+    {
+      "p": 50291,
+      "roots": [
+        22518,
+        15684,
+        12084
+      ]
+    },
+    {
+      "p": 50461,
+      "roots": [
+        23805,
+        17588,
+        9063
+      ]
+    },
+    {
+      "p": 50497,
+      "roots": [
+        39111,
+        33510,
+        28368
+      ]
+    },
+    {
+      "p": 50503,
+      "roots": [
+        38195,
+        10342,
+        1961
+      ]
+    },
+    {
+      "p": 50551,
+      "roots": [
+        42657,
+        7485,
+        404
+      ]
+    },
+    {
+      "p": 50741,
+      "roots": [
+        22999,
+        18059,
+        9678
+      ]
+    },
+    {
+      "p": 50873,
+      "roots": [
+        50521,
+        48070,
+        3150
+      ]
+    },
+    {
+      "p": 50893,
+      "roots": [
+        42467,
+        6807,
+        1614
+      ]
+    },
+    {
+      "p": 50923,
+      "roots": [
+        48025,
+        34803,
+        19013
+      ]
+    },
+    {
+      "p": 50969,
+      "roots": [
+        29358,
+        12442,
+        9164
+      ]
+    },
+    {
+      "p": 50971,
+      "roots": [
+        44378,
+        41771,
+        15788
+      ]
+    },
+    {
+      "p": 51031,
+      "roots": [
+        33022,
+        12429,
+        5575
+      ]
+    },
+    {
+      "p": 51043,
+      "roots": [
+        31584,
+        15176,
+        4278
+      ]
+    },
+    {
+      "p": 51071,
+      "roots": [
+        24480,
+        23212,
+        3374
+      ]
+    },
+    {
+      "p": 51157,
+      "roots": [
+        28644,
+        21710,
+        798
+      ]
+    },
+    {
+      "p": 51241,
+      "roots": [
+        44507,
+        42248,
+        15722
+      ]
+    },
+    {
+      "p": 51287,
+      "roots": [
+        38663,
+        34407,
+        29499
+      ]
+    },
+    {
+      "p": 51343,
+      "roots": [
+        51005,
+        34548,
+        17128
+      ]
+    },
+    {
+      "p": 51413,
+      "roots": [
+        29247,
+        16605,
+        5556
+      ]
+    },
+    {
+      "p": 51551,
+      "roots": [
+        37388,
+        12101,
+        2057
+      ]
+    },
+    {
+      "p": 51599,
+      "roots": [
+        23772,
+        15953,
+        11869
+      ]
+    },
+    {
+      "p": 51631,
+      "roots": [
+        51056,
+        33544,
+        18657
+      ]
+    },
+    {
+      "p": 51679,
+      "roots": [
+        21580,
+        15588,
+        14506
+      ]
+    },
+    {
+      "p": 51719,
+      "roots": [
+        47330,
+        35198,
+        20905
+      ]
+    },
+    {
+      "p": 51829,
+      "roots": [
+        43363,
+        37099,
+        23191
+      ]
+    },
+    {
+      "p": 51869,
+      "roots": [
+        47003,
+        33713,
+        23017
+      ]
+    },
+    {
+      "p": 51907,
+      "roots": [
+        43982,
+        36173,
+        23654
+      ]
+    },
+    {
+      "p": 52027,
+      "roots": [
+        36701,
+        11651,
+        3670
+      ]
+    },
+    {
+      "p": 52051,
+      "roots": [
+        41578,
+        32297,
+        30222
+      ]
+    },
+    {
+      "p": 52057,
+      "roots": [
+        34419,
+        14835,
+        2798
+      ]
+    },
+    {
+      "p": 52183,
+      "roots": [
+        44505,
+        33653,
+        26203
+      ]
+    },
+    {
+      "p": 52201,
+      "roots": [
+        34814,
+        10477,
+        6905
+      ]
+    },
+    {
+      "p": 52223,
+      "roots": [
+        50175,
+        40522,
+        13744
+      ]
+    },
+    {
+      "p": 52453,
+      "roots": [
+        22464,
+        16675,
+        13309
+      ]
+    },
+    {
+      "p": 52489,
+      "roots": [
+        47228,
+        47110,
+        10635
+      ]
+    },
+    {
+      "p": 52553,
+      "roots": [
+        48014,
+        44816,
+        12271
+      ]
+    },
+    {
+      "p": 52697,
+      "roots": [
+        21947,
+        20485,
+        10260
+      ]
+    },
+    {
+      "p": 52711,
+      "roots": [
+        51144,
+        43334,
+        10939
+      ]
+    },
+    {
+      "p": 52747,
+      "roots": [
+        30962,
+        16595,
+        5185
+      ]
+    },
+    {
+      "p": 52807,
+      "roots": [
+        26645,
+        25214,
+        943
+      ]
+    },
+    {
+      "p": 52861,
+      "roots": [
+        35580,
+        12109,
+        5167
+      ]
+    },
+    {
+      "p": 52937,
+      "roots": [
+        28413,
+        22701,
+        1818
+      ]
+    },
+    {
+      "p": 52999,
+      "roots": [
+        33931,
+        11215,
+        7848
+      ]
+    },
+    {
+      "p": 53003,
+      "roots": [
+        43397,
+        8828,
+        773
+      ]
+    },
+    {
+      "p": 53051,
+      "roots": [
+        26842,
+        17354,
+        8850
+      ]
+    },
+    {
+      "p": 53129,
+      "roots": [
+        19341,
+        17254,
+        16529
+      ]
+    },
+    {
+      "p": 53171,
+      "roots": [
+        49811,
+        33931,
+        22595
+      ]
+    },
+    {
+      "p": 53269,
+      "roots": [
+        41180,
+        9714,
+        2370
+      ]
+    },
+    {
+      "p": 53327,
+      "roots": [
+        32906,
+        13257,
+        7159
+      ]
+    },
+    {
+      "p": 53411,
+      "roots": [
+        34866,
+        13769,
+        4771
+      ]
+    },
+    {
+      "p": 53453,
+      "roots": [
+        38772,
+        35483,
+        32646
+      ]
+    },
+    {
+      "p": 53633,
+      "roots": [
+        53225,
+        46526,
+        7510
+      ]
+    },
+    {
+      "p": 53773,
+      "roots": [
+        28884,
+        19570,
+        5314
+      ]
+    },
+    {
+      "p": 53783,
+      "roots": [
+        22645,
+        17114,
+        14019
+      ]
+    },
+    {
+      "p": 53813,
+      "roots": [
+        31630,
+        17269,
+        4909
+      ]
+    },
+    {
+      "p": 53831,
+      "roots": [
+        46852,
+        43284,
+        17521
+      ]
+    },
+    {
+      "p": 53881,
+      "roots": [
+        50150,
+        45057,
+        12550
+      ]
+    },
+    {
+      "p": 53887,
+      "roots": [
+        50639,
+        33221,
+        23909
+      ]
+    },
+    {
+      "p": 53891,
+      "roots": [
+        52116,
+        33513,
+        22148
+      ]
+    },
+    {
+      "p": 53897,
+      "roots": [
+        43840,
+        9093,
+        959
+      ]
+    },
+    {
+      "p": 54011,
+      "roots": [
+        48215,
+        4836,
+        955
+      ]
+    },
+    {
+      "p": 54083,
+      "roots": [
+        32516,
+        21278,
+        284
+      ]
+    },
+    {
+      "p": 54139,
+      "roots": [
+        31149,
+        14164,
+        8821
+      ]
+    },
+    {
+      "p": 54287,
+      "roots": [
+        38865,
+        9564,
+        5853
+      ]
+    },
+    {
+      "p": 54319,
+      "roots": [
+        38886,
+        37116,
+        32631
+      ]
+    },
+    {
+      "p": 54371,
+      "roots": [
+        48058,
+        30551,
+        30128
+      ]
+    },
+    {
+      "p": 54409,
+      "roots": [
+        31502,
+        13830,
+        9072
+      ]
+    },
+    {
+      "p": 54419,
+      "roots": [
+        48009,
+        42347,
+        18477
+      ]
+    },
+    {
+      "p": 54449,
+      "roots": [
+        24309,
+        23651,
+        6484
+      ]
+    },
+    {
+      "p": 54547,
+      "roots": [
+        34162,
+        17414,
+        2966
+      ]
+    },
+    {
+      "p": 54563,
+      "roots": [
+        52027,
+        45983,
+        11111
+      ]
+    },
+    {
+      "p": 54667,
+      "roots": [
+        32545,
+        19906,
+        2211
+      ]
+    },
+    {
+      "p": 54673,
+      "roots": [
+        52259,
+        37802,
+        19280
+      ]
+    },
+    {
+      "p": 54751,
+      "roots": [
+        41565,
+        41459,
+        26473
+      ]
+    },
+    {
+      "p": 54833,
+      "roots": [
+        30766,
+        21291,
+        2771
+      ]
+    },
+    {
+      "p": 54949,
+      "roots": [
+        54454,
+        28460,
+        26979
+      ]
+    },
+    {
+      "p": 54959,
+      "roots": [
+        45257,
+        38419,
+        26237
+      ]
+    },
+    {
+      "p": 54979,
+      "roots": [
+        25478,
+        17362,
+        12134
+      ]
+    }
+  ],
+  "distinct_unit_values": 1,
+  "generic_plus_units_character_rank": 17,
+  "generic_plus_units_local_rank": 17,
+  "positive_endpoint": "NOT_REACHED",
+  "retained_units": [],
+  "schema": "rank-jump.curve302-arithmetic-unit-class.v1",
+  "status": "PASS",
+  "strict_candidates": [],
+  "trials": [
+    {
+      "path": "artifacts/local/rank-jump-curve302-arithmetic-unit-class-v1/start_00.json",
+      "sha256": "fe4c5f1fff0126c0a729d31b8d091ba3437b9d2fd256f23d10417a0165362e16"
+    },
+    {
+      "path": "artifacts/local/rank-jump-curve302-arithmetic-unit-class-v1/start_01.json",
+      "sha256": "255351f2b43702bc24b59f3f87fe9a110d308d7c355325a7623901176ffdef34"
+    },
+    {
+      "path": "artifacts/local/rank-jump-curve302-arithmetic-unit-class-v1/start_02.json",
+      "sha256": "1677d1c1c1bd061c43d02a2855684e9cf24ae1ce638b6694339cb8d6d4e68f80"
+    },
+    {
+      "path": "artifacts/local/rank-jump-curve302-arithmetic-unit-class-v1/start_03.json",
+      "sha256": "011bf95a27a340ec76deb7c0055686e47273f7f7cc6876c24d3d43996d9eefdb"
+    },
+    {
+      "path": "artifacts/local/rank-jump-curve302-arithmetic-unit-class-v1/start_04.json",
+      "sha256": "16a4fa43b2d6ce3a3636dbd7ca44aaa5880a61d29a18a79d507b18568a1ed462"
+    },
+    {
+      "path": "artifacts/local/rank-jump-curve302-arithmetic-unit-class-v1/start_05.json",
+      "sha256": "6f2534f893e051cd32bf9b95d25876e9bb38be54bb96acec321fdae8f6eec1dd"
+    },
+    {
+      "path": "artifacts/local/rank-jump-curve302-arithmetic-unit-class-v1/start_06.json",
+      "sha256": "20bb96563bacff0bfeb1be40094fd4027db74bf338d383ea3d9c5a46ccf531eb"
+    }
+  ]
+}

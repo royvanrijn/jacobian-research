@@ -1,0 +1,99 @@
+{
+  "checker_sha256": "161245bc3a2187c10dd428476b931bab19e3afc5e0bfa487c0de18ee7c05ee8e",
+  "claim_boundary": "Four complete prime lists and exact conductors; no rank change or universal record claim.",
+  "exact_count": 4,
+  "previous_summary": "artifacts/generated-results/elliptic-curves/submitted627_630_conductors_v1/summary.json",
+  "previous_summary_sha256": "e408dfe40160f61b81f72b1af4a472432269297e32442bb74bb28764b051d9aa",
+  "rows": [
+    {
+      "bad_primes": [
+        "2",
+        "3",
+        "11",
+        "13",
+        "37",
+        "41",
+        "71",
+        "1327",
+        "338177617721711",
+        "613548173194227342170437609",
+        "1201184027477738426918374049",
+        "642839906786788643584327182240675424261680581201"
+      ],
+      "certificate": "artifacts/generated-results/elliptic-curves/submitted627_630_conductors_v1/curve627.json",
+      "certificate_sha256": "988d5ebe4a39891e86098a93d9dfd0edeebb0da8894dce44ebc7551b7031a856",
+      "conductor": "255417940288246678150583574922944179897578074304448055056272816920964172850303531273517623698377800620421130739930868904355190006",
+      "icarm_id": 627,
+      "inventory_id": "new-20260906-90",
+      "status": "EXACT"
+    },
+    {
+      "bad_primes": [
+        "2",
+        "5",
+        "7",
+        "13",
+        "37",
+        "61",
+        "89",
+        "149",
+        "179",
+        "4919",
+        "526689608973452707",
+        "1297327695885285412767490764778583",
+        "7644533052528481157308027511138991115839138041559182477"
+      ],
+      "certificate": "artifacts/generated-results/elliptic-curves/submitted628_conductor_v2/curve628.json",
+      "certificate_sha256": "231b1c861af0cfe1055634d21ca472156bbb7cdd420bcb5a0795f2a962259c8c",
+      "conductor": "626331835852237837959942160026415058213286411653252011129135977016421858574282246171665388209084791081551835278559332642950",
+      "icarm_id": 628,
+      "inventory_id": "new-20260906-186",
+      "status": "EXACT"
+    },
+    {
+      "bad_primes": [
+        "2",
+        "3",
+        "5",
+        "7",
+        "11",
+        "13",
+        "17",
+        "41",
+        "43",
+        "59",
+        "20615041675346507",
+        "1371609143868959976154145640664687027995574838295626697379856471001437756163360865284294725678053"
+      ],
+      "certificate": "artifacts/generated-results/elliptic-curves/submitted627_630_conductors_v1/curve629.json",
+      "certificate_sha256": "76446b64e815c278bec2538f3a96d8aa0f2e5dbc2d0a056479604e54ec523fb1",
+      "conductor": "1501492496847230651915535798135038791367857964464751861873735344250891303798770296273960611057947540201444218392271650661570",
+      "icarm_id": 629,
+      "inventory_id": "new-20260906-71",
+      "status": "EXACT"
+    },
+    {
+      "bad_primes": [
+        "2",
+        "3",
+        "7",
+        "11",
+        "13",
+        "23",
+        "37",
+        "1223",
+        "24437972051",
+        "561063059024179810500844410439",
+        "1825535106347063733958801675489652807861250517266415081493807015950621"
+      ],
+      "certificate": "artifacts/generated-results/elliptic-curves/submitted627_630_conductors_v1/curve630.json",
+      "certificate_sha256": "a6435f03c7b72235b28cb312ec60ab257788e9a7d609edb4d26bad2d3841028c",
+      "conductor": "625847273392133749141084531784604199332000011136824937628804232804540038348472590036929315025313329802578398367238396088",
+      "icarm_id": 630,
+      "inventory_id": "new-20260906-40",
+      "status": "EXACT"
+    }
+  ],
+  "schema": "elliptic-curves.submitted-conductor-index.v2",
+  "unresolved_count": 0
+}

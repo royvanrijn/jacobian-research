@@ -1,0 +1,97 @@
+{
+  "boundary": "Exact Q(s) base and Weierstrass isomorphism and seventeen section transports; same parent and fibration. Nineteen strict local contractions followed by seventeen weighted two-dimensional LLL bases selected from source equation coefficients only. No global minimality, optimality, or completeness of partial-collapse primes claimed. Unit span15 follows from exact relations and independently certified fifteen-point subset. The first section proof wrongly required polynomial section coordinates; the first diagnosis constructed invalid Fraction(Sage QQ) values and incorrectly reported an empty mod2 audit. Those attempts are superseded, preserved and counted; their erroneous outputs are not evidence. Signed-kernel relation proposals were insufficient; bounded numerical proposals are accepted only after exact group equality. No new rank direction is claimed by the coordinate reduction.",
+  "files": {
+    "chart-search.json": "8f9976ff467625f01ac78cb9d418307e5a24b3eeb034cdb1861a6e06bf5272e6",
+    "generic-proof.json": "166dded75c99aab73e30f3528d9e89a6dccf6984f92bf850c7f668afeae7a2fd",
+    "hessian-support.json": "8af5812db384eb687ee5c77efde7427a70647dfc0be04e3a7fa6706077d65da7",
+    "integral-source.json": "57a2c40717a4f4ad6cfbd5192d5b616965d8073fc85ff1ab164581ce85315308",
+    "proof-protocol.json": "83b402d691fc933fab2fa2df7fadf520fc8a67c9fd4ea31cc3a4dc346433c382",
+    "reduced-parent.json": "3f9c9d3bed66a29327bdc2abfb7cf2ddae04068f74100924feeaed5527d1b023",
+    "source-parent.json": "2b622ffba7b8d9d64f4f1adf22ec82ab61f65b7cc51f881814acf7634572a402",
+    "unit-relations.json": "a5b37e58ac12196ae51f736f53572b963016035e5e0216b9fdd8a0e6734cb181",
+    "verify.sage": "f163e58272045a28334e3dec26c83974ae394ebed024a7ece8c1d32b18bc1a70"
+  },
+  "schema": "elliptic-curves.det1092-reduced-parameter-chart.v1",
+  "section_count": 17,
+  "selected_coefficient_bits": {
+    "A": 90,
+    "B": 135
+  },
+  "selected_parameter_matrix": [
+    "-36201755177827284938903000",
+    "-41418390914593414769282000",
+    "-1016449687002447546724417437",
+    "1324257248229139113399816775"
+  ],
+  "source_parent_sha256": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+  "status": "PASS",
+  "strict_contractions": 19,
+  "supervised_stages": [
+    {
+      "name": "det1092-integral-parameter-model-v1",
+      "outcome": "completed",
+      "returncode": 0,
+      "supervisor_sha256": "9f0fc9f5cb21a08d44b4565e6ca33a1f904c81a1a9a9c82deddc1accdcac2d28",
+      "wall_seconds": 0.7942116128979251
+    },
+    {
+      "name": "det1092-parameter-hessian-support-v1",
+      "outcome": "completed",
+      "returncode": 0,
+      "supervisor_sha256": "0715e4b28d04ada8c1c34118ef5dd15ad7e753e7649b82b073fd0729beb18fe2",
+      "wall_seconds": 0.6435468390118331
+    },
+    {
+      "name": "det1092-parameter-lattice-reduction-v1",
+      "outcome": "completed",
+      "returncode": 0,
+      "supervisor_sha256": "08d58b359eb10984aa5bfddd57204cda71005aeb684d425ec718a78b9a94c24a",
+      "wall_seconds": 1.1155540180625394
+    },
+    {
+      "name": "det1092-reduced-chart-proof-v1",
+      "outcome": "backend_failure",
+      "returncode": 1,
+      "supervisor_sha256": "1556199fa28837038b6abd8261bb9c96e376f89d77f36f400c4b10d694e62b2d",
+      "wall_seconds": 0.6937096259789541
+    },
+    {
+      "name": "det1092-reduced-chart-proof-v2",
+      "outcome": "completed",
+      "returncode": 0,
+      "supervisor_sha256": "147950a21cfcc10fbbb90a98fe8de539bf29d12413b05b3eb8085aba74ba1d9e",
+      "wall_seconds": 0.6933794789947569
+    },
+    {
+      "name": "det1092-reduced-seed-diagnosis-v1",
+      "outcome": "completed",
+      "returncode": 0,
+      "supervisor_sha256": "f6eed824db676b43d981bb61cd464b4591cf682db1806e6fccda29078aa4c024",
+      "wall_seconds": 3.3492672559805214
+    },
+    {
+      "name": "det1092-reduced-seed-diagnosis-v2",
+      "outcome": "completed",
+      "returncode": 0,
+      "supervisor_sha256": "77d2bab6aefd7ee81440566684066d214f99e2440470f9cdc107fdd29bb84b3b",
+      "wall_seconds": 4.11381558701396
+    },
+    {
+      "name": "det1092-unit-section-relations-v1",
+      "outcome": "backend_failure",
+      "returncode": 1,
+      "supervisor_sha256": "1e59f6b0cce7e4d3e3574d8defb9707d577aa025ac8cbb094cbecf9cf1d7b153",
+      "wall_seconds": 0.6398678120458499
+    },
+    {
+      "name": "det1092-unit-section-relations-v2",
+      "outcome": "completed",
+      "returncode": 0,
+      "supervisor_sha256": "2c0d1b9a047f190f7c1394d105e47517a59f6ec2f989322c62b77e83db77ae12",
+      "wall_seconds": 0.6399215580895543
+    }
+  ],
+  "total_derivation_diagnosis_seconds": 12.683273788075894,
+  "unit_section_span": 15,
+  "weighted_lattice_charts": 17
+}

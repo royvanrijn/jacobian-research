@@ -1,0 +1,944 @@
+{
+  "archive_sha256": "293479ea9749832e94c36b4f2c5a1034ba9ba3447e43110a6dc725c33846b4aa",
+  "boundary": "Terminal equation/generic-only constructor evidence. These attempts produced no additional302 strict class.",
+  "files": [
+    {
+      "bytes": 13264,
+      "path": "artifacts/local/rank-jump-curve302-arithmetic-unit-class-v1/start_00.json",
+      "sha256": "fe4c5f1fff0126c0a729d31b8d091ba3437b9d2fd256f23d10417a0165362e16"
+    },
+    {
+      "bytes": 63786,
+      "path": "artifacts/local/rank-jump-curve302-arithmetic-unit-class-v1/start_01.json",
+      "sha256": "255351f2b43702bc24b59f3f87fe9a110d308d7c355325a7623901176ffdef34"
+    },
+    {
+      "bytes": 63595,
+      "path": "artifacts/local/rank-jump-curve302-arithmetic-unit-class-v1/start_02.json",
+      "sha256": "1677d1c1c1bd061c43d02a2855684e9cf24ae1ce638b6694339cb8d6d4e68f80"
+    },
+    {
+      "bytes": 62864,
+      "path": "artifacts/local/rank-jump-curve302-arithmetic-unit-class-v1/start_03.json",
+      "sha256": "011bf95a27a340ec76deb7c0055686e47273f7f7cc6876c24d3d43996d9eefdb"
+    },
+    {
+      "bytes": 63857,
+      "path": "artifacts/local/rank-jump-curve302-arithmetic-unit-class-v1/start_04.json",
+      "sha256": "16a4fa43b2d6ce3a3636dbd7ca44aaa5880a61d29a18a79d507b18568a1ed462"
+    },
+    {
+      "bytes": 63685,
+      "path": "artifacts/local/rank-jump-curve302-arithmetic-unit-class-v1/start_05.json",
+      "sha256": "6f2534f893e051cd32bf9b95d25876e9bb38be54bb96acec321fdae8f6eec1dd"
+    },
+    {
+      "bytes": 63902,
+      "path": "artifacts/local/rank-jump-curve302-arithmetic-unit-class-v1/start_06.json",
+      "sha256": "20bb96563bacff0bfeb1be40094fd4027db74bf338d383ea3d9c5a46ccf531eb"
+    },
+    {
+      "bytes": 237,
+      "path": "artifacts/local/rank-jump-curve302-arithmetic-unit-class-v1/worker.log",
+      "sha256": "c82df709a095563272ee3cf86534ae8c8066d42a5eb315ea30f89fc077a8cc2c"
+    },
+    {
+      "bytes": 14819,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_000.json",
+      "sha256": "29ccf288e095a1653d92997d9b7a00f6048208698ae5b687306c62eddc0ca241"
+    },
+    {
+      "bytes": 13967,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_001.json",
+      "sha256": "aed224b42e556a4b31b9865b17ff73691a2394365061d07ff558150184bf0f67"
+    },
+    {
+      "bytes": 14142,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_002.json",
+      "sha256": "9b9155fac1fd5bc5e7aa253ba0e6d57c9be59a3bc96425d9f47b0ad661102192"
+    },
+    {
+      "bytes": 13734,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_003.json",
+      "sha256": "ee3ce4cba8df82ecf9e5c9ef4bf25c7503fdb4ac0e78a934345ce5eac7d6650c"
+    },
+    {
+      "bytes": 16125,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_006.json",
+      "sha256": "e74ee6551bb3ea9c45319d3ebc1cc96ee4834709d31399329a40a9d7dba70dcd"
+    },
+    {
+      "bytes": 17044,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_007.json",
+      "sha256": "2e3698882985e26edd7ed9a10ac9e769bd4a916436aa79c257cdea861684d44a"
+    },
+    {
+      "bytes": 15380,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_009.json",
+      "sha256": "fdcf486be20a67a8d0a57ae684fb8cacaa99e0eb981034132d2f33596b8a7199"
+    },
+    {
+      "bytes": 15195,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_010.json",
+      "sha256": "865e88325188a643bb1d83b64ee5fb6f2259b204a9f8e1b44fefe29d07057435"
+    },
+    {
+      "bytes": 15876,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_011.json",
+      "sha256": "ec5e8b252926d8dab597d09a22d6495e27756c5aa13bd1b84a28c894355316fa"
+    },
+    {
+      "bytes": 13069,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_014.json",
+      "sha256": "41079ebe0f0c02c63427937d040c106d9f42dd961dcfdf1cabc886fe527c2d1d"
+    },
+    {
+      "bytes": 13700,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_015.json",
+      "sha256": "973c770ab2ab096431109ab234b942c7ffc97d32f3cce736e4113c1e865897a6"
+    },
+    {
+      "bytes": 13402,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_017.json",
+      "sha256": "6450fda57ce99b3fdef863083b3be0dfeb16ef3e72b79806af320c5ae8554ce3"
+    },
+    {
+      "bytes": 13436,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_019.json",
+      "sha256": "3d2f8dec21ce39be7a4bb69ab2b89d4820f7f5f0380b11e732e12ada4cc29bce"
+    },
+    {
+      "bytes": 15147,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_024.json",
+      "sha256": "972b66060e60f4b2176bd63489be20978eeb15e5a7a32f927d4880eaaa57df42"
+    },
+    {
+      "bytes": 15354,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_026.json",
+      "sha256": "55026c88040d54bfd3f09e72604003fea99c3b269bed0299e6d537e9fc9dbdfb"
+    },
+    {
+      "bytes": 15521,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_027.json",
+      "sha256": "640ba7102ca1ec3a5adb82ebeb9a377283e274ec372f2ff8c56659401c3bfd09"
+    },
+    {
+      "bytes": 14228,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_028.json",
+      "sha256": "e38d7cfe9309a10a4d15aa7648b328f591af2937ef010769b4366ac415dde9fc"
+    },
+    {
+      "bytes": 14186,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_029.json",
+      "sha256": "d7ece2f646b24c2e67d4b547b48e02a0f1ecde4b20edf8bb42553477140d5976"
+    },
+    {
+      "bytes": 14171,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_030.json",
+      "sha256": "a33804ca8de2d25b3928aa5f2288ee19c9a537282cacab5ec8c270dd74d9e1ea"
+    },
+    {
+      "bytes": 15573,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_031.json",
+      "sha256": "7defea067e6143252137adfca7d29389c452fcfebb8bf493d9e6ba59890dd909"
+    },
+    {
+      "bytes": 16197,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_032.json",
+      "sha256": "65927ce2cedadd42b6adf2f8840290f05163b5865f3123d7363ad44f1afc2938"
+    },
+    {
+      "bytes": 15793,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_033.json",
+      "sha256": "fe886b8af1098e5aa8830cb887a0520588f8196d7d75eb3b7e309debd96ca278"
+    },
+    {
+      "bytes": 14713,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_034.json",
+      "sha256": "f8e398c1e3cfbf3b33034a73f2021ef8cac2def0adb3a1d9b076b7ee6286edbf"
+    },
+    {
+      "bytes": 14995,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_035.json",
+      "sha256": "2a2db338b067f5d8ce873f98e304c130a42148d3d21f38ec8e2a6357b5e15dd0"
+    },
+    {
+      "bytes": 16253,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_036.json",
+      "sha256": "523891e781577655b65b26e1f93a9b98512725aa843f56ac8bab25a8a0d628e8"
+    },
+    {
+      "bytes": 16337,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_037.json",
+      "sha256": "f95a99c7b319f411be9f7e532908e42de14e5fc57215cd9617471bac5dd888f2"
+    },
+    {
+      "bytes": 16015,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_038.json",
+      "sha256": "f7fe27f90336becc6b58104e069d32bb84dac86e7cc6ebf867d67a5c554c3409"
+    },
+    {
+      "bytes": 16490,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_039.json",
+      "sha256": "9c84d0d9d276ac3abe8fe957bd2eb10945b13c4f9c24a99a424b4a3b63cb465f"
+    },
+    {
+      "bytes": 14633,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_040.json",
+      "sha256": "0374f43f057f3b2952dfe412b73d09049fc1030a329bed0acba58fb0c9012efa"
+    },
+    {
+      "bytes": 15478,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_041.json",
+      "sha256": "baf4cfafbe4b1bb4fb42bfebf454c760190c05bf21856d17060fa8f200cdd78a"
+    },
+    {
+      "bytes": 15198,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_042.json",
+      "sha256": "ee8ff19f11acd86155c5f9d8741af78b9491dcaffbf4c8d079928b4934b5b64e"
+    },
+    {
+      "bytes": 16015,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_043.json",
+      "sha256": "5359ba9ea7b02c89759cce1cbc1495d23a55aa9f56214703af35a430fed476f0"
+    },
+    {
+      "bytes": 15329,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_044.json",
+      "sha256": "e8ee47b065cf0346ac20eeed6a3bb144ef82be01c8a915e913adc6f30107d1e2"
+    },
+    {
+      "bytes": 15537,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_045.json",
+      "sha256": "4a80ae3cd9bf0cb86126b827b1e52e03b89826c4e99b7b904a831e71ffd55b65"
+    },
+    {
+      "bytes": 14295,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_048.json",
+      "sha256": "cbbb70057213d4ce653f28e186ea96c5e691064153d74d80c48b989178a934a9"
+    },
+    {
+      "bytes": 13708,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_050.json",
+      "sha256": "0f46d98dad6f1885b3a6e6fec01d4494527e8fed530b22ae4218a1e6b626880c"
+    },
+    {
+      "bytes": 15165,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_051.json",
+      "sha256": "cfcccf77906d6290aa865c46c8206a05cf42018992028042e161f496063cc68b"
+    },
+    {
+      "bytes": 15492,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_052.json",
+      "sha256": "be3918d43f11625d332fc56083d5b72e1c418300a23f030ba038419908d050cc"
+    },
+    {
+      "bytes": 14380,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_053.json",
+      "sha256": "41bf27af4f95c7952078b4cdab43ea0601379b77b696ff5d4a6c177f4c526cae"
+    },
+    {
+      "bytes": 14468,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_055.json",
+      "sha256": "975daed9136d35063134a28f5c28a7812896ffa2aba830abaae2b24dc30296f7"
+    },
+    {
+      "bytes": 14291,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_056.json",
+      "sha256": "678de4e47916242f06dd8c0fbee73b8a40df65be9dfedcef53b179a43023c2d9"
+    },
+    {
+      "bytes": 14256,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_057.json",
+      "sha256": "e7bfc0c4d69fb0073a19c906c85886c38748f11a3f9c396d2cc15ccbbc3c80e4"
+    },
+    {
+      "bytes": 14435,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_058.json",
+      "sha256": "354aafbb78171e5327d9c7abb9abd6aa167014cff732305f240adfa88c3d823e"
+    },
+    {
+      "bytes": 14567,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_059.json",
+      "sha256": "3d8bf7578034c219386aa217afc2ed0aad59376eab9a1ccbf90b3a53bedc535e"
+    },
+    {
+      "bytes": 14138,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_060.json",
+      "sha256": "7574726050076890317a14badea292a3a8a7229b653c20ee633a6ba86dab4ea7"
+    },
+    {
+      "bytes": 14386,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_061.json",
+      "sha256": "0d375cd0452415c81f7acad65cb39273793a47e1c6084445fed68c14e846ef2b"
+    },
+    {
+      "bytes": 15586,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_062.json",
+      "sha256": "728dab2ea2046ebc581892c39a288e8d7bef6a4d802f7c5f81e5623caf1e5d41"
+    },
+    {
+      "bytes": 14634,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_065.json",
+      "sha256": "916a4c419068e19909b8fc0c3175bc1c37ac23192de54f2f2eb8bc0aa494b828"
+    },
+    {
+      "bytes": 15323,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_067.json",
+      "sha256": "5f54e149de5d8d509de327264b6c35aabd4f14341b35fc877439e72411137def"
+    },
+    {
+      "bytes": 15172,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_068.json",
+      "sha256": "a7add400bccd40deb29c00ae5efe17483843c6e99ac92c9d701b3e31f0ee626e"
+    },
+    {
+      "bytes": 15227,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_069.json",
+      "sha256": "fbd0861756dbdf2ada8f5b431ecfc1fa2c43123f8df1ddf349623050a5b90c7a"
+    },
+    {
+      "bytes": 14870,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_070.json",
+      "sha256": "d1d4283bbf85a2f7c0c1772da297b5efa5c7f9ad5ab2b3ec1e38d9445e8acfb5"
+    },
+    {
+      "bytes": 14721,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_072.json",
+      "sha256": "9101b35ab201297d75d3acb3c080a4f69eb8b42d20a209435f09827d605ad8dd"
+    },
+    {
+      "bytes": 15218,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_073.json",
+      "sha256": "7cb82fa5b2c394fff37960f0a3452f9e66a3f47f5f4508113f287ad3bcb79f11"
+    },
+    {
+      "bytes": 14882,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_074.json",
+      "sha256": "ce8a1963641e25bb8e5b48960cf4e486d1e748fb288dd6c163a0cccb553428bb"
+    },
+    {
+      "bytes": 15203,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_075.json",
+      "sha256": "f08432f2cdce80771f3a2e39a780f0de6e7487cdebc9eb60945915a3af106c66"
+    },
+    {
+      "bytes": 14798,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_076.json",
+      "sha256": "efe4026a35a41bb90006ec7afd41f3aa846409b21f6d2c1e582771a5b4aa4db4"
+    },
+    {
+      "bytes": 15012,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_080.json",
+      "sha256": "42c40a4035a99bcecdb3bee276b177e7143de61975c7495e62b03d152ae5bcc5"
+    },
+    {
+      "bytes": 15212,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_081.json",
+      "sha256": "ef6cf922ff56973650f3f097cf5af8db6e87621d1b54d2209b085d25383eb518"
+    },
+    {
+      "bytes": 14557,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_085.json",
+      "sha256": "b6583a960f11fd0ed64822cd04499de741db4960415812ec78a160d2bad83a98"
+    },
+    {
+      "bytes": 14229,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_087.json",
+      "sha256": "552b4f8aba0ec811235fae50b465b84b80590525e1f7772e4ba6323c211d4b7b"
+    },
+    {
+      "bytes": 14408,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_088.json",
+      "sha256": "15ac8bb111f1a14aa88e1329cc290ab2bd05f4d13e3a58bfbb114ac82caae54a"
+    },
+    {
+      "bytes": 15709,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_089.json",
+      "sha256": "bec0dfb874509578b670ae9a191c72016d401e3e477dd9097d083c99e486c5c6"
+    },
+    {
+      "bytes": 16078,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_090.json",
+      "sha256": "3f5f04d4987a218228c55a894539a0db1d24d28c3c45f72909d9fe9618f5b410"
+    },
+    {
+      "bytes": 15103,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_091.json",
+      "sha256": "bba9d872870f309d6facfcaf3002c685500568650e3f6faa76f46cc91ef21d2b"
+    },
+    {
+      "bytes": 15491,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_093.json",
+      "sha256": "eb67891e9fb115a2aee7aa0650260f2bf2d7ed48c1da2c4f85f493fe5f4e6f8b"
+    },
+    {
+      "bytes": 15615,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_094.json",
+      "sha256": "a0912dd26ab94884831a02bd2e3971a332a07ad25901d039c6f7b4d25a59da51"
+    },
+    {
+      "bytes": 15056,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_095.json",
+      "sha256": "340e94e1183226321db6a45a4dd8b245d61c8bbe91809a9cbcb0856c0da5eb67"
+    },
+    {
+      "bytes": 15610,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_096.json",
+      "sha256": "ff8915cc2c61230cb3ea490b3fae61b8e57782683808a2e56c37a72bf6e5a618"
+    },
+    {
+      "bytes": 15407,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_097.json",
+      "sha256": "6431002978325a1b195795dbb060b4ad1d2ddcb2bdedf4dc012bb609cb5d9403"
+    },
+    {
+      "bytes": 14480,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_100.json",
+      "sha256": "4e64b5629997403b11f7c9ae432837b45bae7e18f9ab9fed6566bab304e0e684"
+    },
+    {
+      "bytes": 14042,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_101.json",
+      "sha256": "eeebd9bb2f13fda90cf13264045b6c74fb963b1d9d1a317a1057a9014cfad419"
+    },
+    {
+      "bytes": 13388,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_103.json",
+      "sha256": "c9d1650874c4315509da9e8c8662fd8d0baa5484b6185c94012099f7ed9689ff"
+    },
+    {
+      "bytes": 13691,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_104.json",
+      "sha256": "3ab52379c0bc5d6b6e2ee55c5a420b2f239765bbbff742f741e0443fc27e75ff"
+    },
+    {
+      "bytes": 14816,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_105.json",
+      "sha256": "9f22fd0318bdb2554d8041b629783945c1ea33a7e4fdc6398a21d0aa95b9b7e3"
+    },
+    {
+      "bytes": 14886,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_106.json",
+      "sha256": "f3b2fded35840e970a76a6884ff76b1c3494902705ff96de1bc00f9726092187"
+    },
+    {
+      "bytes": 14839,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_108.json",
+      "sha256": "da3d0a82ce6e4ca9803c4e6df20c79f650f8d0dd26437bd74c03ac514aef543e"
+    },
+    {
+      "bytes": 13831,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_109.json",
+      "sha256": "238d66f3d7b6a0da30497f937df7aba1e3b3d74c7d07fd0073f894c2a28b3d59"
+    },
+    {
+      "bytes": 14352,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_110.json",
+      "sha256": "5ac75def156072860abd9d1c25783e9ed8f1fcf4dd5013fc6e85cab021040b76"
+    },
+    {
+      "bytes": 13954,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_111.json",
+      "sha256": "d14dd9298c6adac2215aecae2c18cc85fcd3d29edf72398661d0a24d663c47dc"
+    },
+    {
+      "bytes": 14101,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_112.json",
+      "sha256": "d02c1a2e72edb81edf64400d0ea88a4259ffde514e56c41a410d948bb7907f5c"
+    },
+    {
+      "bytes": 13167,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_113.json",
+      "sha256": "f52e5356a94b7669b9778b7b171c3b64b008ffb1e8cf53a9cbc939f82a9999d4"
+    },
+    {
+      "bytes": 13396,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_116.json",
+      "sha256": "f3517953a35f4a14be8e01b14371b30f50bbe9e94332bf56749f2f4cd334365c"
+    },
+    {
+      "bytes": 13367,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_117.json",
+      "sha256": "a989a5911f9d3748750e6e202ecb001c85f0c8f2881547eac6a161827d093293"
+    },
+    {
+      "bytes": 14689,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_123.json",
+      "sha256": "577155cd77552e012c2bba595901d9d0f6102dce273095eeda3775f42f7069a2"
+    },
+    {
+      "bytes": 14861,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_124.json",
+      "sha256": "cd4b4e796cebcb0797cd281e2fd5b02ec9e475c154daef424bd11b552a47b410"
+    },
+    {
+      "bytes": 14648,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_126.json",
+      "sha256": "52f700ff50216fd550ebca2599143723bc9d0dbe2d40932b4b194f8e42d89af4"
+    },
+    {
+      "bytes": 14925,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_129.json",
+      "sha256": "724e3ee0d1d05ab4ffdf7d5d131f3d503a232145018d70d8b3eed65118eed1c0"
+    },
+    {
+      "bytes": 14769,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_130.json",
+      "sha256": "7681da90f1490aa7053baa731d97ed9d121d40dff8075a48870ba6350760517a"
+    },
+    {
+      "bytes": 14778,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_132.json",
+      "sha256": "549021e78fa9fdeb5745a04e781e680ff0faa285f869831111c851bbf99796b9"
+    },
+    {
+      "bytes": 14219,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_134.json",
+      "sha256": "8008d2b008ca91e74382480713f7621d1455af1188c1d5b48361375cdbf51d2a"
+    },
+    {
+      "bytes": 13872,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_136.json",
+      "sha256": "f6e2be2b2356cfd2f24ae3feafb46dfa548dc6fc6f725441bbdf3276ade131ca"
+    },
+    {
+      "bytes": 15511,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_138.json",
+      "sha256": "2c37da585e16146b20e1fb3497f5671eac37ed9ec2c93a1fa8817354020b5ba4"
+    },
+    {
+      "bytes": 16027,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_139.json",
+      "sha256": "e532cc15450f1a47c33b94417adc46e9f77946c3d1e07e5dd71a0963a5f39c48"
+    },
+    {
+      "bytes": 15492,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_142.json",
+      "sha256": "2124ab85476e409553d93ada8727e72680a6e6922ec433f4cff38d818844736c"
+    },
+    {
+      "bytes": 15885,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_143.json",
+      "sha256": "e4cdb672e7fc5d374809477c496bbc570521e06554a2a83b0ccffee53331797e"
+    },
+    {
+      "bytes": 15101,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_144.json",
+      "sha256": "67705bb2e9f6bbf5720cbc398ea3d7b8893c0206cf08064f8f89de6d4e087bf7"
+    },
+    {
+      "bytes": 14470,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_145.json",
+      "sha256": "287eec57631545ab50d16d9f035680b7d098486d233ff78ca38fec7ec6e77d40"
+    },
+    {
+      "bytes": 15250,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_146.json",
+      "sha256": "e566193da6eb7220a3700b91bd843ef4be4c61d35d363b721018980ec8c331fa"
+    },
+    {
+      "bytes": 14680,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_147.json",
+      "sha256": "97b8a7072e82b922fa4703bc782f92090011a77267d259ae12afe90dd530103d"
+    },
+    {
+      "bytes": 15955,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_151.json",
+      "sha256": "263d50d1eb604724b011bee685ef0983d7ceb46c5dc4816eaf4fba0c58badb40"
+    },
+    {
+      "bytes": 15404,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_152.json",
+      "sha256": "dc4b9a7a6b30092480cdbea005e10c0f188ab3e7d96deb8f3ab97666e58869dd"
+    },
+    {
+      "bytes": 15426,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_153.json",
+      "sha256": "c7b7f4611ab047e01c5fcb81642e48a1b892ae805911b85c725c66ae538a22f7"
+    },
+    {
+      "bytes": 14353,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_155.json",
+      "sha256": "c16268637ddd9f43244a7cd1d02ca7c6c63ebc6ccc36c691f8d13ea900469f5e"
+    },
+    {
+      "bytes": 14621,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_156.json",
+      "sha256": "07b42025d9a196b82040a9b50e02f08d4af90fef4e3097a10d4d00b820de8537"
+    },
+    {
+      "bytes": 14812,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_157.json",
+      "sha256": "51960e6d75771fe34bb206833a899d092e41cc1cb5facaba186a094090e55745"
+    },
+    {
+      "bytes": 15376,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_158.json",
+      "sha256": "5b7181444fc45bbbc62be57cd88b197d6d89c6a995df49b6b9922770ac7eefdd"
+    },
+    {
+      "bytes": 14547,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_159.json",
+      "sha256": "0b055b8acc1775376521f39a106b6eab6c32a800f1831c032843dd4b7d7fc0ce"
+    },
+    {
+      "bytes": 15918,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_162.json",
+      "sha256": "20478a4f323a3bfdd85081ba49ec961dabd08cbc16c08947578db668381c14e9"
+    },
+    {
+      "bytes": 16271,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_163.json",
+      "sha256": "207fb2feb421ab980f3a4200f544c14c28dc31d1ce87d22f00490e5cbd4d4b95"
+    },
+    {
+      "bytes": 14983,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_165.json",
+      "sha256": "d5a05c0ba71806b557c5b185185e0d2d4739644bba4b13793dc727137158a65d"
+    },
+    {
+      "bytes": 15334,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_166.json",
+      "sha256": "fa09aadd6138e147fb36559de563180ca89b6148f78278df79b701b6bfa161d6"
+    },
+    {
+      "bytes": 15181,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_167.json",
+      "sha256": "0a3128534007719bed97e14444c45524e854d3b9fa04f8a40096a7741f9df159"
+    },
+    {
+      "bytes": 15964,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_168.json",
+      "sha256": "6493dfa59c92d7777c0dfbb1f9a7214a0f9421cb1837731cfddd1792664038d7"
+    },
+    {
+      "bytes": 16854,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_170.json",
+      "sha256": "40a75fa8e1d407d15e5911c6d5652a0414e0dc1528198a3007771d92acb84a7a"
+    },
+    {
+      "bytes": 15592,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_171.json",
+      "sha256": "3c4cb791bd34c9f3c94536c6570d6c903dae4ac515669e4382dc368f2f3f9fad"
+    },
+    {
+      "bytes": 15584,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_172.json",
+      "sha256": "67bbe718e9cc505d73ce44fd16437238429ecb91045420e7836408ae6e1e8dea"
+    },
+    {
+      "bytes": 15702,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_176.json",
+      "sha256": "24a8be123cf20307de79d3b74d14ff33c66a8d61f6d8cf5d5b30f25e193ab4d4"
+    },
+    {
+      "bytes": 15271,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_177.json",
+      "sha256": "5e8f6449b63e1f948cef65cc0dac44deacae5109985b54d5cdcbc14ecf7b1a60"
+    },
+    {
+      "bytes": 15125,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_179.json",
+      "sha256": "b5a88131b946bdeccac869ff896b4d05032463a44905e87bc3e3da5fa754bb6c"
+    },
+    {
+      "bytes": 15099,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_180.json",
+      "sha256": "ddeaab99c3dc67b24f0976d3c93c3a454c904665eb99f99d8dd2f75b61fc6a07"
+    },
+    {
+      "bytes": 16315,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_181.json",
+      "sha256": "3401165766d81f869c38272acbb2155143450765238ac47b203dbfe750b37cef"
+    },
+    {
+      "bytes": 14669,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_182.json",
+      "sha256": "4618efde582b4322a2dd5d20d84e2ff2195c6d0b6d6d58044dd9afd0fb49070c"
+    },
+    {
+      "bytes": 14122,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_183.json",
+      "sha256": "a10e9723d408ccc58a5abbd90d1977c404d914223540a00cacdea3d01924756f"
+    },
+    {
+      "bytes": 14579,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_184.json",
+      "sha256": "8967ed9fee2407233dc81418ee517d3249a142d1084e27037afcafd7ad104927"
+    },
+    {
+      "bytes": 14397,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_185.json",
+      "sha256": "4ff41c0f57c9a52c01f89cdcf89c83cc8732449c8ab83cdc35445809d1002ecf"
+    },
+    {
+      "bytes": 14876,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_186.json",
+      "sha256": "ccc7dcc70b1b97c2bd3ff8f422a4f6e382d47f3c89162a8497f39bda14e0692e"
+    },
+    {
+      "bytes": 14247,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_187.json",
+      "sha256": "413d989cb1b8f95158c6e89d7747d5c8f77b58251cf779c349594204802f13c9"
+    },
+    {
+      "bytes": 14113,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_188.json",
+      "sha256": "ba17b0e2db516a1a48dc4c22a591e6905b0456aa92fb30d687f598f70a28c328"
+    },
+    {
+      "bytes": 14275,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_189.json",
+      "sha256": "063728a8c9523ca5ce87706af327b23a29b4bc624d6f24223ae8420e7948ae38"
+    },
+    {
+      "bytes": 15340,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_190.json",
+      "sha256": "9f59c56ec199125c8f5e0e9d2960fa727c7a88ab1e322efb11ec5be4f928fef2"
+    },
+    {
+      "bytes": 14972,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_191.json",
+      "sha256": "5644b559abffa3dee3ebb31463a5179ef711c72c1e22cd205fb59c4b9c2bccc1"
+    },
+    {
+      "bytes": 14751,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_192.json",
+      "sha256": "692d684c7b82c9f8efb8a153de00763cf6d8c5afbb9992a2531f1e5a87c2151d"
+    },
+    {
+      "bytes": 14279,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_193.json",
+      "sha256": "63d3d4dd72b46eae0cfb01b0df910ef64592422af3682c5329ff785c7787935c"
+    },
+    {
+      "bytes": 13477,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_195.json",
+      "sha256": "0f51218dea889cd7f5676b14bef0251e6aec68c301c3be8bcd591e0325293315"
+    },
+    {
+      "bytes": 16374,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_198.json",
+      "sha256": "5ef4a9c681ac9c39359e8ccf456806cb54473cdf2a528eb9f10f071fe35cbc68"
+    },
+    {
+      "bytes": 16485,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_199.json",
+      "sha256": "f5ec3c96211f1a70c522b7a547473a14e08050780c5b814397ed6331a8b6b6de"
+    },
+    {
+      "bytes": 16205,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_200.json",
+      "sha256": "a1fbcb701e70f4a5178ccda159ec2af5d884cf5e40258f10aeb9341c8dc91e89"
+    },
+    {
+      "bytes": 15521,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_202.json",
+      "sha256": "b2432be57b459b9690d1eceecf356dc0d4c22f2da1a1b7acc505f1c91406ad6b"
+    },
+    {
+      "bytes": 15680,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_204.json",
+      "sha256": "607f0cdac9eff89e3036fbeba8f8c2f95cdf89eef821d54aed84e2a97dbb1fcf"
+    },
+    {
+      "bytes": 16267,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_208.json",
+      "sha256": "55fb9406c5f9c594e4c200296a49984cff3faab5d87ba166ba42d3e4f3aa8b89"
+    },
+    {
+      "bytes": 14613,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_211.json",
+      "sha256": "be7bc406c93d3ffc31e3c1e4e236d1bef2d321ffd2a319d81a8205ec820187c6"
+    },
+    {
+      "bytes": 15066,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_216.json",
+      "sha256": "1582c3852caeed4bbea7d18716adf42e5c7fe9824ca7102dc2911d9eaca1858e"
+    },
+    {
+      "bytes": 15791,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_217.json",
+      "sha256": "626ed668e193db853a00301e44ac99a91ce0b1ce406c4188ffda4438cac17d03"
+    },
+    {
+      "bytes": 15764,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_218.json",
+      "sha256": "85cda8d3b5d509a26adfb7028b94172682cb77c4accaea2877a82ddab5de3aa6"
+    },
+    {
+      "bytes": 16006,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_219.json",
+      "sha256": "152e4d5839dcf19d837c7a4f4a726836146d0bf3f1205eaa5486cb2175f485d7"
+    },
+    {
+      "bytes": 15666,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_220.json",
+      "sha256": "6f63f222dcf5f8686979e394854e0c1dbc62b6fd536d2709146ccce3dffa18a7"
+    },
+    {
+      "bytes": 16612,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_221.json",
+      "sha256": "85d35c154436470d620fcc43773443ef743a55c205063d3a58c37befda9069cf"
+    },
+    {
+      "bytes": 14632,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_222.json",
+      "sha256": "c0cce46e50ccc858193a8cbc3a73263428c5a6edd06cccad4d5ed3baee58e8f6"
+    },
+    {
+      "bytes": 14997,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_225.json",
+      "sha256": "18ceb4af760da8bceab740b4673bee6d297ecbf31e92c03f35651f95f9e6a1cc"
+    },
+    {
+      "bytes": 14822,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_226.json",
+      "sha256": "a7a898d3e0b6c26f046ded5d071dbf9da806082d2fedd90b89b499aee31810bf"
+    },
+    {
+      "bytes": 15451,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_227.json",
+      "sha256": "0ea148b74fd9bbf373c63bcef4b8f8463b3e401f39f4fd98ab56e48e4905ed85"
+    },
+    {
+      "bytes": 15788,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_230.json",
+      "sha256": "52816a7d520d1dc1eef16a6b6ea9f677eed214a2f76ae8b9456398279478f073"
+    },
+    {
+      "bytes": 15489,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_232.json",
+      "sha256": "4b5772bc1f657e973c56c81269b76be4da8df9def1cdbdf9f04eecc8b7ac5aa3"
+    },
+    {
+      "bytes": 13794,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_234.json",
+      "sha256": "3d449cb2fb0e3c9e2071db01ecbfa0982f1abc33bc8324ba6cb7dd4dd892b5ea"
+    },
+    {
+      "bytes": 13401,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_235.json",
+      "sha256": "d5e60ed76e0505725b82133b06dafff1ce071ee554dd7e10d538ac31a80fda9a"
+    },
+    {
+      "bytes": 15659,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_236.json",
+      "sha256": "67935eebf5171c3c74c962dfef1c4b193780afd636b7ec6fc53521877e52687a"
+    },
+    {
+      "bytes": 15788,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_237.json",
+      "sha256": "bdb0ed05a1448062df9fa43bdbffb3515ef580e1ef59d5dcb840954adc4b00a0"
+    },
+    {
+      "bytes": 15909,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_238.json",
+      "sha256": "7e45732b2e9ba3d3a5da4d87b104faf78213f84b719967462a2f5fdb48132108"
+    },
+    {
+      "bytes": 15165,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_239.json",
+      "sha256": "4487e25bfda7a7b6ea8323a9a3b7f584f129595acfd38b24166c0a8efdb19770"
+    },
+    {
+      "bytes": 15016,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_242.json",
+      "sha256": "48a9215ec26c50048faebb238ffe3671b4a38c47a87e625495b12bbcd0f2ecac"
+    },
+    {
+      "bytes": 15433,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_245.json",
+      "sha256": "e5238efb139c71153805ab6108889a00f0c4ea9d6cbc2f24409c1a23b8203a52"
+    },
+    {
+      "bytes": 15008,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_246.json",
+      "sha256": "7eb3877b91fd6ee0219e6d292e1a2231f077e61f564111fae44a200ebf815ab5"
+    },
+    {
+      "bytes": 15174,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_247.json",
+      "sha256": "2bd34f855a8cae3a065761f622255a50738c360b80f8dcfdd4889b6177c89b7d"
+    },
+    {
+      "bytes": 15120,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_248.json",
+      "sha256": "db543d8658d181f7355fbdfed3c5d5e38465ec5aebbbcc08701368c64e63f995"
+    },
+    {
+      "bytes": 15085,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_249.json",
+      "sha256": "f34631dbe8727a461a46774363c85dec5314f4f1d5767a3de12b0e9ef22c9738"
+    },
+    {
+      "bytes": 14926,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_250.json",
+      "sha256": "b66a43110ba7a785f1163aa95ddf8f0d1a8c3a257c688caf2228658ec9abf3f2"
+    },
+    {
+      "bytes": 16442,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_251.json",
+      "sha256": "fb822d22338d49f9071dd9f8b0aa5da7b3cc6838cd94cbde1c3ee553cdbd9190"
+    },
+    {
+      "bytes": 16936,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_252.json",
+      "sha256": "a7af073e6051ba28c7bdda590ce92611c3b9a3a5ad43c3b1ee4a88296296de7c"
+    },
+    {
+      "bytes": 16357,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_253.json",
+      "sha256": "16905f9f813b139f4d708582dccf73e1265ee3ca39d737102829aa6dd4080b6f"
+    },
+    {
+      "bytes": 15593,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_255.json",
+      "sha256": "bd4c32bc49c6c8fa8fdfedfe2718b485f73d7e70ac5ad55de766458014cc42aa"
+    },
+    {
+      "bytes": 15750,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_257.json",
+      "sha256": "e9077de9b572b40081702ce95efcc106abf7dc4032618d8c48547e6857dcbbb2"
+    },
+    {
+      "bytes": 16811,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_259.json",
+      "sha256": "28fd0af728ea4b3538982a0a6f53ac09c8ff26ca0675b0a074a18359a7e3ea7d"
+    },
+    {
+      "bytes": 16116,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_261.json",
+      "sha256": "173f473ac95878dfa9fb335e795579ff893c0351b802a87beaa563be3f847d77"
+    },
+    {
+      "bytes": 15945,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_262.json",
+      "sha256": "87152b9df5dd392b3008487c73b966fc5339c81bd05f02376d8c508139bcd7cd"
+    },
+    {
+      "bytes": 15031,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_263.json",
+      "sha256": "a9fef5878ddd580bd1cedbe11218c272ed0905e2b1ad63c46361ef3a9ae05d09"
+    },
+    {
+      "bytes": 15402,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_264.json",
+      "sha256": "11ae50e398e73493d6555ec429e637bafc77c15e6a6c9b423a39aafd82614550"
+    },
+    {
+      "bytes": 15453,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/configuration_265.json",
+      "sha256": "1cf7de4ffa6e825da23eeea40706d8d3cca7f7a2fd87f3a4a4ab382bcf4a7fc0"
+    },
+    {
+      "bytes": 7218,
+      "path": "artifacts/local/rank-jump-curve302-conic-triple-bisection-v1/worker.log",
+      "sha256": "a16fcbdd63791b45e8e2b58fd715a1efb89ba9bff9e9b3dad46475cce1199e5a"
+    }
+  ],
+  "producer_sha256": "c602cc8b2c8cd136d2cada723a63f9d3d464b45e7427884c2bdc63c6434b12f6",
+  "restore": "Extract into an empty replay checkout, never over live checkpoints.",
+  "schema": "rank-jump.curve302-transfer-attempts-evidence.v1"
+}

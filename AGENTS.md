@@ -11,13 +11,14 @@ motivated, checkpointed, and reproducible.
 
 ## Authority order
 
-1. `MATH_STATUS.json` — mathematical status.
+1. `research/MATH_STATUS.json` — mathematical status.
 2. Canonical proof/source notes referenced by that file.
 3. Generated certificates under `artifacts/generated-results/`.
 4. Exploratory notes.
-5. `archive/` — historical context only.
+5. `research/archive/` — historical context only.
 
-`STATUS.md` is generated. Regenerate it through the repository status renderer; never edit it by hand.
+`research/STATUS.md` is generated. Regenerate it through the repository status
+renderer; never edit it by hand.
 
 ## Editing discipline
 
@@ -34,11 +35,11 @@ motivated, checkpointed, and reproducible.
 When a result supersedes an old route or handoff:
 
 1. update the active README/navigation surface;
-2. keep the current theorem in `MATH_STATUS.json` and its canonical proof note;
-3. move historical narrative to `archive/`, or retain it at the old path only when current certificates/ledgers depend on that path and index it as historical;
+2. keep the current theorem in `research/MATH_STATUS.json` and its canonical proof note;
+3. move historical narrative to `research/archive/`, or retain it at the old path only when current certificates/ledgers depend on that path and index it as historical;
 4. retain scripts/certificates when they are useful regressions;
 5. avoid deleting evidence just because it is no longer operational.
 
-The pre-streamlining repository state is pinned in [`archive/STREAMLINING_2026-09-03.md`](archive/STREAMLINING_2026-09-03.md).
+The pre-streamlining repository state is pinned in [`research/archive/STREAMLINING_2026-09-03.md`](research/archive/STREAMLINING_2026-09-03.md).
 
-For K3-specific work, follow [`elkies-k3/AGENTS.md`](elkies-k3/AGENTS.md). For elliptic-curve work, follow [`elliptic-curves/AGENTS.md`](elliptic-curves/AGENTS.md).
+For K3-specific work, follow [`research/elkies-k3/AGENTS.md`](research/elkies-k3/AGENTS.md). For elliptic-curve work, follow [`research/elliptic-curves/AGENTS.md`](research/elliptic-curves/AGENTS.md).

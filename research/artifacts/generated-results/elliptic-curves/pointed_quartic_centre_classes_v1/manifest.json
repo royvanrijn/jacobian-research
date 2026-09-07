@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "files": {
+    "input.json": "f737408239570efa1025c8ec56f5c86ac2c1ebd1576ee6f5490e62c833f01127",
+    "protocol.json": "d47fce8be06135210e9152bdfed23aa6ad6f7a5048ec3885e8bf75be08dd52ea",
+    "result.json": "ce17509c957873e43e3c98d311e221e40138afafb06279e8ce9892697e894054",
+    "verify_pointed_quartic_centre_classes.sage": "4169a3b646df49f74e25c2aece0a22ee1d7274da5a92700bb56afedb756c207f",
+    "verify_factor_free_rank.sage": "fd95c46b9b79c89deeeed14afa2e46088590459ce1a144ebb1cd61e8713309db",
+    "mestre-u11-unit-rank-input.json": "2ad490f05f8533b21f568b806d70feb2b893987365fdaac4324e19e49ed3b7ab",
+    "kihara-v3-unit-rank-input.json": "a57109283cb160e0935c0cc8518a768564925af734966be7a9c7a4f654f81428"
+  },
+  "supervised_seconds": 0.8498647660017014,
+  "boundary": "Copied-input standalone Sage replay; symbolic chart identity, exact centre sums and independent complete finite quotients for two completed controls. No new point search or rank gain."
+}

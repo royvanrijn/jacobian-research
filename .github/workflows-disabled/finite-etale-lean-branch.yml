@@ -1,0 +1,138 @@
+name: finite-etale-lean-branch
+
+on:
+  push:
+    branches:
+      - agent/finite-etale-lean
+      - agent/formal-realization-fiber
+      - agent/admissible-translation-and-paper-clarity
+  pull_request:
+    paths:
+      - research/formal/finite-etale-keller/**
+      - research/scripts/check_lean_placeholders.py
+      - research/scripts/check_lean_axiom_log.py
+      - research/scripts/check_paper_certificate_imports.py
+      - .github/workflows/finite-etale-lean-branch.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: finite-etale-lean-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: build-finite-etale-lean
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Audit Lean placeholders and explicit axioms
+        run: python3 research/scripts/check_lean_placeholders.py
+      - name: Enforce the paper certificate import boundary
+        run: python3 research/scripts/check_paper_certificate_imports.py
+      - name: Install Lean and prime the Mathlib cache
+        uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9 # v1
+        with:
+          lake-package-directory: research/formal/finite-etale-keller
+          auto-config: false
+          build: false
+          test: false
+          lint: false
+          use-mathlib-cache: true
+      - name: Compile both paper certificates with captured output
+        id: lean_build
+        if: ${{ always() }}
+        continue-on-error: true
+        shell: bash
+        run: |
+          mkdir -p research/artifacts/verification
+          set -euo pipefail
+          cd research/formal/finite-etale-keller
+          "$HOME/.elan/bin/lake" build FiniteEtaleKeller.PaperCertificate \
+            2>&1 | tee ../../artifacts/verification/paper-certificate.log
+          "$HOME/.elan/bin/lake" build \
+            FiniteEtaleKeller.FixedHassePaperCertificate \
+            2>&1 | tee ../../artifacts/verification/fixed-hasse-paper-certificate.log
+      - name: Audit both public theorem axiom reports
+        id: axiom_audit
+        if: ${{ always() && steps.lean_build.outcome == 'success' }}
+        continue-on-error: true
+        run: |
+          python3 research/scripts/check_lean_axiom_log.py fibers \
+            research/artifacts/verification/paper-certificate.log
+          python3 research/scripts/check_lean_axiom_log.py fixed-hasse \
+            research/artifacts/verification/fixed-hasse-paper-certificate.log
+      - name: Archive Lean compiler log
+        if: ${{ always() }}
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: paper-certificates-${{ github.sha }}
+          path: |
+            research/artifacts/verification/paper-certificate.log
+            research/artifacts/verification/fixed-hasse-paper-certificate.log
+          if-no-files-found: error
+          retention-days: 3
+      - name: Report branch build to issue 11
+        if: ${{ always() && github.event_name == 'push' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BUILD_RESULT: ${{ steps.lean_build.outcome }}
+          AXIOM_RESULT: ${{ steps.axiom_audit.outcome }}
+          RUN_ID: ${{ github.run_id }}
+          HEAD_SHA: ${{ github.sha }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          import urllib.request
+
+          repository = os.environ["REPOSITORY"]
+          result = os.environ["BUILD_RESULT"]
+          axiom_result = os.environ.get("AXIOM_RESULT", "skipped")
+          run_id = os.environ["RUN_ID"]
+          head_sha = os.environ["HEAD_SHA"]
+          token = os.environ["GH_TOKEN"]
+          log_path = Path("research/artifacts/verification/paper-certificate.log")
+          lines = log_path.read_text(errors="replace").splitlines() if log_path.exists() else []
+          tail = "\n".join(lines[-60:])
+          if len(tail) > 15000:
+              tail = tail[-15000:]
+          body = (
+              "<!-- finite-etale-lean-ci -->\n"
+              f"Finite-étale Lean branch CI: build **{result}**, "
+              f"axiom audit **{axiom_result}**. Run ID `{run_id}`, "
+              f"head `{head_sha}`.\n\n"
+              "<details><summary>Compiler tail</summary>\n\n"
+              f"```text\n{tail}\n```\n\n</details>"
+          )
+          request = urllib.request.Request(
+              f"https://api.github.com/repos/{repository}/issues/comments/5073755913",
+              data=json.dumps({"body": body}).encode(),
+              headers={
+                  "Authorization": f"Bearer {token}",
+                  "Accept": "application/vnd.github+json",
+                  "X-GitHub-Api-Version": "2022-11-28",
+                  "Content-Type": "application/json",
+              },
+              method="PATCH",
+          )
+          with urllib.request.urlopen(request) as response:
+              response.read()
+          PY
+      - name: Require a clean Lean build and axiom audit
+        if: ${{ always() }}
+        env:
+          BUILD_RESULT: ${{ steps.lean_build.outcome }}
+          AXIOM_RESULT: ${{ steps.axiom_audit.outcome }}
+        run: |
+          test "$BUILD_RESULT" = success
+          test "$AXIOM_RESULT" = success

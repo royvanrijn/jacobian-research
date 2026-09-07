@@ -1,0 +1,971 @@
+{
+  "benchmarks": {
+    "22": {
+      "catalogue_curves": 97,
+      "id": 625,
+      "missing_conductor_ids": [
+        537,
+        543,
+        545,
+        581,
+        615,
+        616,
+        617,
+        619,
+        620,
+        628
+      ],
+      "recorded_conductor": "214830001287596349624206698595249377510923944541593010474955868696121214"
+    },
+    "23": {
+      "catalogue_curves": 87,
+      "id": 624,
+      "missing_conductor_ids": [
+        537,
+        543,
+        545,
+        581,
+        615,
+        616,
+        617,
+        619,
+        620,
+        628
+      ],
+      "recorded_conductor": "113492893163216590951326900190230978222582452610473766586860712405885559618730"
+    },
+    "24": {
+      "catalogue_curves": 66,
+      "id": 623,
+      "missing_conductor_ids": [
+        537,
+        543,
+        545,
+        581,
+        615,
+        616,
+        617,
+        619,
+        620,
+        628
+      ],
+      "recorded_conductor": "104248168115693608073559801519130263017579290095801453847349400259924673492465624274936"
+    },
+    "25": {
+      "catalogue_curves": 58,
+      "id": 622,
+      "missing_conductor_ids": [
+        537,
+        543,
+        545,
+        581,
+        615,
+        616,
+        617,
+        619,
+        620,
+        628
+      ],
+      "recorded_conductor": "670806436169815337953893530982465615029341453029546883473693424304045096438291347454167080"
+    },
+    "26": {
+      "catalogue_curves": 50,
+      "id": 542,
+      "missing_conductor_ids": [
+        537,
+        543,
+        545,
+        581,
+        615,
+        616,
+        617,
+        619,
+        620,
+        628
+      ],
+      "recorded_conductor": "13858119093380870911402836699917707730917559748643075892856552587147896304378790356681414169480"
+    },
+    "27": {
+      "catalogue_curves": 45,
+      "id": 614,
+      "missing_conductor_ids": [
+        537,
+        543,
+        545,
+        581,
+        615,
+        616,
+        617,
+        619,
+        620,
+        628
+      ],
+      "recorded_conductor": "2798269498065207394410944473876126988677958069177633823142936526529755081283469905582705125459068762952810"
+    },
+    "28": {
+      "catalogue_curves": 32,
+      "id": 613,
+      "missing_conductor_ids": [
+        543,
+        545,
+        581,
+        615,
+        616,
+        617,
+        619,
+        620
+      ],
+      "recorded_conductor": "342523533647914951820703775690355483082106333747339519016573360293993471250429399722837611188967052860640860844920"
+    }
+  },
+  "best_by_rank": {
+    "22": {
+      "best_exact_conductor": "801759366600408255731113968344306127138129416996405428108788127367893872409350",
+      "best_exact_id": "new-20260906-181",
+      "best_upper_bound": "801759366600408255731113968344306127138129416996405428108788127367893872409350",
+      "best_upper_bound_id": "new-20260906-181",
+      "cohort_size": 194,
+      "proved_above_benchmark_count": 24
+    },
+    "23": {
+      "best_exact_conductor": "110849033292895360421492483237869176560078004425738502597529064825902278436441593884430",
+      "best_exact_id": "new-20260906-162",
+      "best_upper_bound": "110849033292895360421492483237869176560078004425738502597529064825902278436441593884430",
+      "best_upper_bound_id": "new-20260906-162",
+      "cohort_size": 155,
+      "proved_above_benchmark_count": 18
+    },
+    "24": {
+      "best_exact_conductor": "65299116602761260811134096289647491770735079407434392438493418693062366940950611956611306283770",
+      "best_exact_id": "new-20260906-129",
+      "best_upper_bound": "65299116602761260811134096289647491770735079407434392438493418693062366940950611956611306283770",
+      "best_upper_bound_id": "new-20260906-129",
+      "cohort_size": 109,
+      "proved_above_benchmark_count": 14
+    },
+    "25": {
+      "best_exact_conductor": "1315832847984114216697355753574011416390661831087186710614663379625564897539845716127627832975944210",
+      "best_exact_id": "new-20260906-54",
+      "best_upper_bound": "1315832847984114216697355753574011416390661831087186710614663379625564897539845716127627832975944210",
+      "best_upper_bound_id": "new-20260906-54",
+      "cohort_size": 59,
+      "proved_above_benchmark_count": 12
+    },
+    "26": {
+      "best_exact_conductor": "178321887387254814419033031050910811472177334674674639168272857236608886001857928328384699652646249158710",
+      "best_exact_id": "new-20260906-92",
+      "best_upper_bound": "178321887387254814419033031050910811472177334674674639168272857236608886001857928328384699652646249158710",
+      "best_upper_bound_id": "new-20260906-92",
+      "cohort_size": 21,
+      "proved_above_benchmark_count": 6
+    },
+    "27": {
+      "best_exact_conductor": "385607805404546669757702543986640850533250291865584023383775058428481038963318413094656176510273957729702535113365122962530",
+      "best_exact_id": "new-20260906-41",
+      "best_upper_bound": "385607805404546669757702543986640850533250291865584023383775058428481038963318413094656176510273957729702535113365122962530",
+      "best_upper_bound_id": "new-20260906-41",
+      "cohort_size": 3,
+      "proved_above_benchmark_count": 3
+    }
+  },
+  "certificates": {
+    "new-20260905-01": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-01.json",
+      "sha256": "48797c794484f4db74117d6762ac2224d8553e9e749342895622e36c913957a2"
+    },
+    "new-20260905-02": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-02.json",
+      "sha256": "1fbd98e6a2c59c3f8446f207c534ea73d6760b7d9fdeadeb7dac165de1b7388c"
+    },
+    "new-20260905-03": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-03.json",
+      "sha256": "ae40418027f5f25afbef0b2810e3f663533475ea38c8194ad6a98be729e74a77"
+    },
+    "new-20260905-04": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-04.json",
+      "sha256": "d9850fbdb6f8335dc8b070946cd009d81e214aee7df52f31a70c6f94f66c625b"
+    },
+    "new-20260905-05": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-05.json",
+      "sha256": "12b115843420f4de25a875da86b7e13ca3269bb4959766d42cdd0561c745f986"
+    },
+    "new-20260905-06": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-06.json",
+      "sha256": "421e9696e849f0f4a22a7a4bf896bda8cda498591a0835589fd745022ba0713e"
+    },
+    "new-20260905-07": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-07.json",
+      "sha256": "dcf057b47cda244ce61758b1fa339483da389b87df83f6646b40043c44b12d3e"
+    },
+    "new-20260905-08": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-08.json",
+      "sha256": "e060b29777fb7d88cee0198a748b36adc55dd1cf5259c5e42e2d320a45023bea"
+    },
+    "new-20260905-09": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-09.json",
+      "sha256": "012133b92d393171db081762284e15d486ec645207166cf795dba10126e1ec7b"
+    },
+    "new-20260905-10": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-10.json",
+      "sha256": "00c04e79db5466bf785ecf2a3ff0b2800cdb3d64f04acd7e6fcb664354f24d8c"
+    },
+    "new-20260905-11": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-11.json",
+      "sha256": "8b6278e2ee6eed2e1d91b6ea3cf89ef47a2b83a588d0c2c8e0b417558fc8bdae"
+    },
+    "new-20260905-13": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-13.json",
+      "sha256": "4e63a54702d6770d5400b3fbeebde2a3ede7bb6470276e83f058bd3922c87d50"
+    },
+    "new-20260905-14": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-14.json",
+      "sha256": "466dc98f7496652a797b460db948732a719f05f6bdf36e0137a707a1ca3ef868"
+    },
+    "new-20260905-15": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-15.json",
+      "sha256": "19bb7d97fd0a6772b560255a9f9bbf75544aaaddc1c7a77fd88b00d2419be54a"
+    },
+    "new-20260905-16": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-16.json",
+      "sha256": "68bffa7b7c9843508c04d77c7458517c2921945ad30b5ce141b1af07d1b7d729"
+    },
+    "new-20260905-17": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-17.json",
+      "sha256": "6e11b016da50cd236597fa75a11ebac423a0918653626d9f323e913c03334925"
+    },
+    "new-20260905-18": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-18.json",
+      "sha256": "78179e9b7a990eaf3126102349fe5b480ff3a558a879973d6ca4d9ce48a0c060"
+    },
+    "new-20260905-19": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-19.json",
+      "sha256": "5e38a37f8190cdeb85de18bcae1a562959fed8c58b7a978162c64f2bbbea5446"
+    },
+    "new-20260905-20": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-20.json",
+      "sha256": "d7bf250b59b027fb403a3ab2a092663573ca7e3e44d10ea6c485af67931fe554"
+    },
+    "new-20260905-21": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-21.json",
+      "sha256": "297ff5741955997da70b9ad70ea542329c725d4f67fe5f2f66505f6cc6284170"
+    },
+    "new-20260905-22": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-22.json",
+      "sha256": "0aea1262f0f0ee4c0689deb5dcf8785662bce00b8cb21a3911294bfe059a5ca2"
+    },
+    "new-20260905-23": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-23.json",
+      "sha256": "3b6176e51ce6e32fc9403634b4dc81d3dc92c1f8d275f13ae8835e9b11b51553"
+    },
+    "new-20260905-24": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-24.json",
+      "sha256": "702a46e740a97c600ae4b0df98ad4a7a2e663f29d77bc72317489c660b690186"
+    },
+    "new-20260905-25": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-25.json",
+      "sha256": "59291d61363d454378af66902f09663a68032c50716f5349e7cead263952a0ac"
+    },
+    "new-20260905-26": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-26.json",
+      "sha256": "94e7c02fd07a545610c604feec0d5680432576359c917e1d38a9be30bbe335b0"
+    },
+    "new-20260905-27": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-27.json",
+      "sha256": "82aa91abf0d0a58f6158f5bacda3971d9420d11c924c5b7b79cf4791a34b4b0f"
+    },
+    "new-20260905-28": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-28.json",
+      "sha256": "9aa29eab4582c373d65b5a88484bec34207352661d6c2953f169167230ce3208"
+    },
+    "new-20260905-29": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-29.json",
+      "sha256": "5ff3a237a79d05daf7be8a1f05784841fb960effdbbdc07e562572a5ecfb2bff"
+    },
+    "new-20260905-30": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-30.json",
+      "sha256": "35ccd83dec35b36035441023bd1c175594e296791920d94ba558da94689509b0"
+    },
+    "new-20260905-31": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-31.json",
+      "sha256": "8d3dc6e4cea9e28304cf0b9be1ce2fd67daf4ee2c5df880f42a6dc953ec8cace"
+    },
+    "new-20260905-32": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-32.json",
+      "sha256": "6ccaf2b91aa697fb4ce1f6eec00fee91f36491ba0f9d1b2ad0826dc0462d9c00"
+    },
+    "new-20260905-33": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-33.json",
+      "sha256": "05ff648b5f368b20a56ef5c5e984edca79ecefe738bf635ba1171fdd339c376c"
+    },
+    "new-20260905-34": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-34.json",
+      "sha256": "65f8495a24d027a2758a7f2ee0df75aa1b9f86760125f9799bdf4f382f222f69"
+    },
+    "new-20260905-35": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-35.json",
+      "sha256": "0c3c878a80f140d3430cdb9d1316c20675b38902cda0bb6a88bc103bfbe46196"
+    },
+    "new-20260905-37": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-37.json",
+      "sha256": "fdeacc3a43d4f42ef537ad229a3fb8b7f89d27ad776e3fcf19e1ddee455b045a"
+    },
+    "new-20260905-38": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-38.json",
+      "sha256": "e9bac2472f871e94ecd6e1f884f8b30a65b036a4f6794facee50f7e8b0cb6f64"
+    },
+    "new-20260905-39": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260905-39.json",
+      "sha256": "17852a76509208d65beedf9c85eb6ef5b829777ff390c209d6d5c62782332323"
+    },
+    "new-20260906-100": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-100.json",
+      "sha256": "281d35f67224e2b78001f8e93e319b079be091ac52d5917c35dda3baaa8a6f55"
+    },
+    "new-20260906-101": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-101.json",
+      "sha256": "701606d9f02ac15c62dfa98039b3ae65c1aeac3217385cc771ce3881c08a1b48"
+    },
+    "new-20260906-102": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-102.json",
+      "sha256": "fb427f9f8f1e1361896427fa9ea9b1954d91612fbab565ad0a1358c7d40ab39a"
+    },
+    "new-20260906-103": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-103.json",
+      "sha256": "a1009c78febe73975b8a03b90038ecca8f9c492f9cc15ff3df3f4777f2352088"
+    },
+    "new-20260906-104": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-104.json",
+      "sha256": "75c04346ccbdd7e8216e40e15ad5cffad16770a6036a9902b60e9f47629fd498"
+    },
+    "new-20260906-105": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-105.json",
+      "sha256": "d0a5d9a732e9611979937f83eca1cc85d3c3eebb0d5cd4ceb0a8320ea2ecc6d5"
+    },
+    "new-20260906-106": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-106.json",
+      "sha256": "e9ddb099e78e8ead372f83e74765779d52fb0d9b87c09beababef5c88ad019c6"
+    },
+    "new-20260906-107": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-107.json",
+      "sha256": "3330ebaf9d7f998b34bd6b399b8db5718e2cf4e1b90b9a802b2cec7fb1aa70db"
+    },
+    "new-20260906-108": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-108.json",
+      "sha256": "c3b85f5927cd4894fa192df27b3adb71da17c9d271071187e8abee03f2e31239"
+    },
+    "new-20260906-109": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-109.json",
+      "sha256": "8d897bb80f475f40d77a3c59410ee397f1c1dd69a71992d21ef4c6a87c38c3ce"
+    },
+    "new-20260906-110": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-110.json",
+      "sha256": "d1da6d2e89220f96d4c46a523dc8823d092ea12d2a44cb9ffe092f3b47ee09c9"
+    },
+    "new-20260906-111": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-111.json",
+      "sha256": "43251e228a6fb18e9e72422b58b1469064c8daf62bc2262b017de53b35491edc"
+    },
+    "new-20260906-112": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-112.json",
+      "sha256": "60ccc547edf746c83d15e0ab1a5a5cb147e689aed3158dcbbb3fe0dfdb97a05c"
+    },
+    "new-20260906-113": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-113.json",
+      "sha256": "0b608798bc8d255d9a92b7842ef2d7631dea870e81585f4ccd4722814fae3fd5"
+    },
+    "new-20260906-114": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-114.json",
+      "sha256": "852bef20d5794146bacc0d1fe80fe983e3a2f5e8eb1768c516dd80ba40b564f0"
+    },
+    "new-20260906-115": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-115.json",
+      "sha256": "502bcd7741e91be4044d8598dc5c313d561caac6eb6940aca10cfcbb554d4b8b"
+    },
+    "new-20260906-116": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-116.json",
+      "sha256": "a133aba68848810c8071a6678543d2a83d5246b6332cb99f69a410d590ce3841"
+    },
+    "new-20260906-117": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-117.json",
+      "sha256": "e1c258093940ffde2b7fb0bf04a97eb590405131d4c028d95eee40aca3089f0b"
+    },
+    "new-20260906-118": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-118.json",
+      "sha256": "46b3b10c20cc77df00be6e81d7bb4c11827d1f4f5c3c0a54d29e8c63128688ed"
+    },
+    "new-20260906-119": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-119.json",
+      "sha256": "44d9c647838bd198e5bfd403f94cfd6e62386a5d044ee8930731174e268b268f"
+    },
+    "new-20260906-120": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-120.json",
+      "sha256": "f6629bd0d4319424c78a66301609ebe17e9c995b5dba1731b1e0d168bdf30e5b"
+    },
+    "new-20260906-121": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-121.json",
+      "sha256": "2d8d60843ea538747006941eeca1420d4b88269da80364fe75995e9ed50d468e"
+    },
+    "new-20260906-122": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-122.json",
+      "sha256": "530470e246690ef50c0298da725a57f5cb1b440e353367a724861875bb19f0d8"
+    },
+    "new-20260906-123": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-123.json",
+      "sha256": "d52dbfd6001dce55c95419ae2574f8a4e7c6bbd97aa42f23ccb73b0ac8406c46"
+    },
+    "new-20260906-124": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-124.json",
+      "sha256": "da75a257b4ec8f197ad0e01933904c607c3272ce4d1e5e7e2b01e300cd7f3fa4"
+    },
+    "new-20260906-125": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-125.json",
+      "sha256": "d6ee3d612f2e96d4abef26d8396c3c0445ca96629ede6054a0618f483685c540"
+    },
+    "new-20260906-126": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-126.json",
+      "sha256": "46be2df2d064aa8776585c94b5cc3d6eb4c3da4dd1adb7a1864c6d2b5e15dd5f"
+    },
+    "new-20260906-127": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-127.json",
+      "sha256": "8c4936a90cc5987524b9f4213f07c34de80a8fd04e2f1ba5c397d147741eadbd"
+    },
+    "new-20260906-128": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-128.json",
+      "sha256": "4107b04fb7f19c3ef62dd5a59966810ca64975de1837435313ad976462024f81"
+    },
+    "new-20260906-129": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-129.json",
+      "sha256": "f3686759cc3b957f0abbbf330e161a6c218c8b15e562ca6ca3fb57abb4890079"
+    },
+    "new-20260906-130": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-130.json",
+      "sha256": "c64902ba0c682510174501cadcf1e616685489040de50a8cfb8b980243482284"
+    },
+    "new-20260906-131": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-131.json",
+      "sha256": "31e46afc37e412f20196bb10c817036bc8cfba2d342e02918a84d6619726eefd"
+    },
+    "new-20260906-132": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-132.json",
+      "sha256": "778bd068555a83d4019ddb381ab19e677903a06efefed60dc5eb2b1a16c5d128"
+    },
+    "new-20260906-133": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-133.json",
+      "sha256": "4a7157a596eee8d16710fb9629754c7a84f87b60bb6e74f8da43452f252582ae"
+    },
+    "new-20260906-134": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-134.json",
+      "sha256": "5651950599efeddc10780cd668077e690136dc6d78d703443ce0ef7aaefdd581"
+    },
+    "new-20260906-135": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-135.json",
+      "sha256": "43c0d862d367974e5481d6bd28dcdbadd104805e89e791d597ad7b8eaab286f6"
+    },
+    "new-20260906-136": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-136.json",
+      "sha256": "5af95968dc85208dcb0c3e009d8082bac0e2a7591fd52dab349491c08dc690cf"
+    },
+    "new-20260906-137": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-137.json",
+      "sha256": "d36c086bbaf99feacb8abbe6662bef3cd45ef1f85c76288b798de599a472af82"
+    },
+    "new-20260906-138": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-138.json",
+      "sha256": "59821df10fe5da80e319a4a09813e5bcdcc8160832f4ccaf69590a26affb8cff"
+    },
+    "new-20260906-139": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-139.json",
+      "sha256": "b9b64d0bf27b4dbdd0de1e5170297000c36b8d19aee33dbe1cfd9ddb054983cc"
+    },
+    "new-20260906-140": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-140.json",
+      "sha256": "08500b1e52d1cf4466cc87040fdde56440cab8ade85def1ff0060fd3cc8ad656"
+    },
+    "new-20260906-141": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-141.json",
+      "sha256": "2f822722d424801ddf03892db3fb807ff9c88b059b5d8e6785ff2fd48bfe81e1"
+    },
+    "new-20260906-142": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-142.json",
+      "sha256": "cf5993d1ce4b1225c9bfed79e69ab98a75c436085968d120adc34cc93fc475ed"
+    },
+    "new-20260906-143": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-143.json",
+      "sha256": "fa331e7b4fa293bfbc2ac97f372b06b525add357749c53fc606e1050bf639740"
+    },
+    "new-20260906-144": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-144.json",
+      "sha256": "af9fc0a36d409475f6d977e8ea6ffd6c4fec2daa0ab95ada9fbbe7b188fecaf3"
+    },
+    "new-20260906-145": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-145.json",
+      "sha256": "10c426342902ba4caad7abbe968c1517cd055164baf4dd7f068122daa2dd2796"
+    },
+    "new-20260906-146": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-146.json",
+      "sha256": "a4574670309bdc4798b3b0eb6d354ec56f364742086294e11cfc2e03f0d8d3a0"
+    },
+    "new-20260906-147": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-147.json",
+      "sha256": "6a3dd1e5abab9804ee6b3fb4ae9dce8e90c0a237a7f8955369a70b65abf92ebf"
+    },
+    "new-20260906-148": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-148.json",
+      "sha256": "c37707c9dc1ec4bca209aae13a3f24670ca97c9b61aa07e8c358eedc73d70956"
+    },
+    "new-20260906-149": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-149.json",
+      "sha256": "62b3f06854005c99a078b10fe4b5035e8fb348292e61b33a942f23e564c942e2"
+    },
+    "new-20260906-150": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-150.json",
+      "sha256": "7086c11151b211312050d639a4f1f7c24e17445c8742fee57638361b60097ae7"
+    },
+    "new-20260906-151": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-151.json",
+      "sha256": "92a565100e0ecf7b6724aeebf41774d9190da2d1473da60ef638232100557bea"
+    },
+    "new-20260906-152": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-152.json",
+      "sha256": "1d138f996376671e5fbcd38a18abfe9768e053fec5b83f857c2a1d424ef7fc0c"
+    },
+    "new-20260906-153": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-153.json",
+      "sha256": "aaebb15e8ef6fbcc74c275a8b2734f89a26281c4dae737390e5f2730cc4eac26"
+    },
+    "new-20260906-154": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-154.json",
+      "sha256": "b09a7dec6ceedc2d291113edbbcc1664d4363fd7ea76d21943c6f408077e91c4"
+    },
+    "new-20260906-155": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-155.json",
+      "sha256": "a074547b05950ee09130588dc754aa316107b1c2d5eee8d734cb3452ac447726"
+    },
+    "new-20260906-156": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-156.json",
+      "sha256": "246222375e36a1e1c52e1380d0906903fdea05417dda6b09f353c0c6e4571ebc"
+    },
+    "new-20260906-157": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-157.json",
+      "sha256": "0b4ca21bce843e9a417bcab74f90650426f4f867450b5806656b7c9a5dbf6bf9"
+    },
+    "new-20260906-158": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-158.json",
+      "sha256": "e624b66976d82a85c7b83fa629e8352a2dc2f09b3909a0aa6a9d0f5c56af95d4"
+    },
+    "new-20260906-159": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-159.json",
+      "sha256": "031e6082a7b56c73cf0920299264c7be00f644652cec79ff0994149638fba209"
+    },
+    "new-20260906-160": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-160.json",
+      "sha256": "bae0236fb48b299563101f7ee81f95d318d9cfc8bf997c567645bdab57caf3f1"
+    },
+    "new-20260906-161": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-161.json",
+      "sha256": "ecf1272a1888929e6b35647b969573d0efdf789bdf53863b56b1a08bca65608c"
+    },
+    "new-20260906-162": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-162.json",
+      "sha256": "01f84ef58b471f4aa3f89f5ecfd63d1126238cf652f599df077c8dc574c04794"
+    },
+    "new-20260906-163": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-163.json",
+      "sha256": "b65b411ba7f749c55b2908c3a2702dcdb08291eb909f5709b0df3eda1efcb4f6"
+    },
+    "new-20260906-164": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-164.json",
+      "sha256": "95e654e952dec4a8a9e15b9756e0ab5115c99bf93ec6206b9532d93ba5736589"
+    },
+    "new-20260906-165": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-165.json",
+      "sha256": "7d3886cd5283deabc0e60530c674961c0002b752351f26f5fb6cf9a02c3d41ee"
+    },
+    "new-20260906-166": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-166.json",
+      "sha256": "8d83d27eb82584513b733b2efeb4813ac83d73816d8d94bacc5457db3c6f785c"
+    },
+    "new-20260906-167": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-167.json",
+      "sha256": "00747e0ec999a990e1f148523aaf929be3acaa145274748f2e8af95faf3749e3"
+    },
+    "new-20260906-168": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-168.json",
+      "sha256": "3a756b2dc8ecfb7e1f71c64531fd10f4527b10aadcaf46ab4b76f1fbbd1e9be6"
+    },
+    "new-20260906-169": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-169.json",
+      "sha256": "7df6bdd0e685ce94ecc3de07bd410f334748ef30cb220b3d6fd866368509c58c"
+    },
+    "new-20260906-170": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-170.json",
+      "sha256": "d253ef28f61272d2af1ad72faac490a6c9ce01ee36bdb71bbe27f899b6d9b1f6"
+    },
+    "new-20260906-171": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-171.json",
+      "sha256": "68c363f743f4fd9231ad0d5eec25b2cdc6ea768432179915fe8be5a72a4cd88a"
+    },
+    "new-20260906-172": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-172.json",
+      "sha256": "58a45565e5447924ff5982f4b7a66160d9c17873a21c77a96833180ad3355aac"
+    },
+    "new-20260906-173": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-173.json",
+      "sha256": "fe174e4517f6adf10265d0bdaf18ad37547f08f61d2bc36c545062300f748ac3"
+    },
+    "new-20260906-174": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-174.json",
+      "sha256": "02932638299f2df7c6315f568176587274a6c938c82c512dc8439da8fe9de2ed"
+    },
+    "new-20260906-175": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-175.json",
+      "sha256": "af99a174a57382e641922253ede751e635e8c83634c1a5616a8df8b9ba6e7b42"
+    },
+    "new-20260906-176": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-176.json",
+      "sha256": "8edf507df5d25bf3a37440eb0d93f7b2e51a0f28bf12d15698b05bae0366e919"
+    },
+    "new-20260906-177": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-177.json",
+      "sha256": "47388df52d922cc01ff406fc86a95f1a783918a1995cef3b8db8aed397cf511a"
+    },
+    "new-20260906-178": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-178.json",
+      "sha256": "018aacf85b9d32fd9f79499403b11651fdf6c973dcb81b1b969043fdeac46864"
+    },
+    "new-20260906-179": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-179.json",
+      "sha256": "0f6ca3c8ffe64c4d3038d782af04ccabb52179006aff180d7ae13cf1f2c4b0ec"
+    },
+    "new-20260906-180": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-180.json",
+      "sha256": "13088ab9eb7a0bfee62ab406ebd080d537655c5ed5b0c9fb6b51f9873f5e064d"
+    },
+    "new-20260906-181": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-181.json",
+      "sha256": "c3fd7e399c3b99428c3b87f40749bcca8329105e9298bb7c024d4d6a5574ee75"
+    },
+    "new-20260906-182": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-182.json",
+      "sha256": "e4fe64ac0d98643f55f76569091d9a947e3cc0638b319f934e3bebb69135b691"
+    },
+    "new-20260906-183": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-183.json",
+      "sha256": "0ea1d2e6aad7610e2ccca50a4bca27806ebc6617e1969cf7f653b62c8211a611"
+    },
+    "new-20260906-184": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-184.json",
+      "sha256": "e758fc3ad37dae73d8ccd504fe3b1d6d31d6420739b350b65a9fed69e0c802e0"
+    },
+    "new-20260906-185": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-185.json",
+      "sha256": "bff9b4c169ab36e8304a8a3e6cbd9444953e026430ee5c66c44c723bf6d8488d"
+    },
+    "new-20260906-187": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-187.json",
+      "sha256": "de6b3b5fde668b80e5efff273cf60fce70bbfa565fa7d0f5cfd41a99c5ad2689"
+    },
+    "new-20260906-189": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-189.json",
+      "sha256": "1489f8ecf13f5f746eb4183eb45b2e5751374f1ba79beba975bbe37fd4db0a2f"
+    },
+    "new-20260906-190": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-190.json",
+      "sha256": "f2a99154f0eb370c1e65733c777164bbf8f43292e034b6e47a584f035f322f54"
+    },
+    "new-20260906-191": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-191.json",
+      "sha256": "00f89200764b9feda4408de7065675b7bea6377de71c103d77a9061bf5132fc3"
+    },
+    "new-20260906-192": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-192.json",
+      "sha256": "e9518e7d668eb4ef59b6884a97cf7465e106b5493e8343c27ed931aa9b0ca52e"
+    },
+    "new-20260906-193": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-193.json",
+      "sha256": "cb96576af7062488f490fdaed46b305e72563268369410d78f5fceaeac5b289a"
+    },
+    "new-20260906-194": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-194.json",
+      "sha256": "220c31063d4b4a9a69ba3a18e349f861ddd808f2718bd506f72e4bae3d828a1a"
+    },
+    "new-20260906-195": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-195.json",
+      "sha256": "ea4f2322769b8a05bfdf81f0750714969f450084350d30619fc8c078ac1016f7"
+    },
+    "new-20260906-196": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-196.json",
+      "sha256": "403f6bce73695d35a6be946af029c1198816447553a12f441dd4c534befdf01c"
+    },
+    "new-20260906-197": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-197.json",
+      "sha256": "09bfe2c90605616d2bd7d7a1879eeb1979b6ea0de69830e5446750d45a7a348f"
+    },
+    "new-20260906-198": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-198.json",
+      "sha256": "77a1c2b878099b2dfe25ecf259c4aa6ff5d5c3afa4e1801982c57987ed75bf74"
+    },
+    "new-20260906-199": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-199.json",
+      "sha256": "5defc7b4b83b7e561c4288089eaad68786e60e01ff2d2a870fcab92edf8d2283"
+    },
+    "new-20260906-200": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-200.json",
+      "sha256": "1ddffc365df1aea08b162cdf6e2f16964566dd62064f86336c6800a2445e3deb"
+    },
+    "new-20260906-41": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-41.json",
+      "sha256": "013ac32f113618ad58a7f0ac207e10c1c16b80e046e72befa4d433adbeba953e"
+    },
+    "new-20260906-42": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-42.json",
+      "sha256": "53ee708e56b693af110cd8d9ebebed5d503e43027b69979aba2db2dda490b400"
+    },
+    "new-20260906-43": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-43.json",
+      "sha256": "53a3b465a013c845615380e1f47b1734a6468f084fec6b3952f521df2fe1f4e5"
+    },
+    "new-20260906-44": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-44.json",
+      "sha256": "56373833974acbf59a7c8b910486823015059e10d23e720e901713b41eccbb27"
+    },
+    "new-20260906-45": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-45.json",
+      "sha256": "2dd4629a8087121becea1371dd56737e0bcb2f12e6bb471bc1f5bec8d41b5b6f"
+    },
+    "new-20260906-46": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-46.json",
+      "sha256": "55549e90ebc2f8abca8711afac46c7e36930c3a53c032bb1ef3f1c296e2f332a"
+    },
+    "new-20260906-47": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-47.json",
+      "sha256": "596a7861ab7a243b0b24b7901a75ca1a88c3e6ae9038c09e75de3bcb31f67e53"
+    },
+    "new-20260906-48": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-48.json",
+      "sha256": "2b100046754bc7464c2b4b2e42e07950e4c5e8a035dcf1e0a8a9456b89b1262d"
+    },
+    "new-20260906-49": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-49.json",
+      "sha256": "91e4e5d3de54cf36964c2a5788b34071e0285fc02ade2d699c57d1b5edc4960a"
+    },
+    "new-20260906-50": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-50.json",
+      "sha256": "bfe8aca1039440b14229d867a4ff92f8895388be5c809d170e1c3e1937327573"
+    },
+    "new-20260906-51": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-51.json",
+      "sha256": "015d989da073de3212a36c7c5633e5c96d170c95bc83a620001dbc374e190d9c"
+    },
+    "new-20260906-52": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-52.json",
+      "sha256": "d671f174eb60018638ecc033577b4e5d21d96193aafcbae19cf9012df4bec157"
+    },
+    "new-20260906-53": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-53.json",
+      "sha256": "ec9ff19abfbab06838d2ea1c8f6ad4596a762de2f0a1807c217f9d5dd247f8ad"
+    },
+    "new-20260906-54": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-54.json",
+      "sha256": "d27e89c9c6bfb507c97eea7de9075b1e7b2a2369edf18383be4a05c8604ae6d8"
+    },
+    "new-20260906-55": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-55.json",
+      "sha256": "46e325d3dbafd07e51f02663d4d031ce6aa6f27f0423e4c51e4735e0995244f4"
+    },
+    "new-20260906-56": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-56.json",
+      "sha256": "2f2a538e09cb9a832f0b4b7f34a5ebb5ae497be8601144a08532ba5036ecd924"
+    },
+    "new-20260906-57": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-57.json",
+      "sha256": "5cd2938c472687d112ecd1b08f37a8d3b3d1426616744e8c6500cd82e1c7058b"
+    },
+    "new-20260906-58": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-58.json",
+      "sha256": "1c90e8935c2adb1e919113678d8081473561d0327ca3a6d31e6c1cc3cc58433f"
+    },
+    "new-20260906-59": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-59.json",
+      "sha256": "69744eb08563cb2df687181f39f531b6ab9ae38232d58f3df3062362acc61e58"
+    },
+    "new-20260906-60": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-60.json",
+      "sha256": "ae70cc729e298f3b7340ecc42dd384258f3385b3f1f98257fe95cefb5d903c8f"
+    },
+    "new-20260906-61": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-61.json",
+      "sha256": "ef7a3a20974feddb69fce42941bf9486c46e36b7d7ee9cfb4b87f9cf1b997de2"
+    },
+    "new-20260906-62": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-62.json",
+      "sha256": "5c3b984e4ea27930e3c29e68a6e275625c698e9613f2a7b8b1bc98f0a51f3883"
+    },
+    "new-20260906-63": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-63.json",
+      "sha256": "2fd4e5a268dd673574c30a235d0337c84dd727d6729036cd67c92f85bed2fc37"
+    },
+    "new-20260906-64": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-64.json",
+      "sha256": "1b6204753b594b5f34d55acc32bfa0de59f3368b0d8d3e3e089e0ab7b45542b0"
+    },
+    "new-20260906-65": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-65.json",
+      "sha256": "f2cc303687ec6cccce9fb60695b906953faa4d395e74355ea9de5978d81c1a45"
+    },
+    "new-20260906-66": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-66.json",
+      "sha256": "a265364cc489f34712d9d6dabcee4cd8d6133529fda2775b52c00dc951ad50e7"
+    },
+    "new-20260906-67": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-67.json",
+      "sha256": "96d2e92878ea2147e891796e0dd33cbe107be6f6c1a12eeb505002a0698ff490"
+    },
+    "new-20260906-68": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-68.json",
+      "sha256": "6af8f6dc5c3741a24670f9cbcca15bd505ec12ef19c1f387559fb596a9946433"
+    },
+    "new-20260906-69": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-69.json",
+      "sha256": "0c65b60e379a1e8cd88299fa36a6adbbe78612794138bb7bee3427d6c848d9fb"
+    },
+    "new-20260906-70": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-70.json",
+      "sha256": "89b890926236d06f0be4c3a44e06a29ec29fc6c240e90c347e0de1f44b2ad978"
+    },
+    "new-20260906-72": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-72.json",
+      "sha256": "2f8293bebbe3ee34beedc6a695f72d86a98ad510c69dcded3bdd81db08ef8911"
+    },
+    "new-20260906-73": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-73.json",
+      "sha256": "5abef95668aa34ddbec3d51eb5ea9e0f321c904cf35404db4e4fa987de8bea82"
+    },
+    "new-20260906-74": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-74.json",
+      "sha256": "3511c433f3efce0d23320f23871505c8c441196aae1e156a9614891313bc93f0"
+    },
+    "new-20260906-75": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-75.json",
+      "sha256": "8eb404434f5471da02dbe272bb3f1d3b480cbefe33643db917f0827a56ded697"
+    },
+    "new-20260906-76": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-76.json",
+      "sha256": "20f418936a301bf1b662ed839110360083876f107c10cd6094259829b9c92ca5"
+    },
+    "new-20260906-77": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-77.json",
+      "sha256": "5df4807ea2d599b25bb0f6d4fe9586d3a964df2f89d10bb5d7814a2ed1f16559"
+    },
+    "new-20260906-78": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-78.json",
+      "sha256": "1f2f19cc591680b38617e180f9621ddef6f3446b11d900cc7adf4e15b0cee916"
+    },
+    "new-20260906-79": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-79.json",
+      "sha256": "e9ffdb23f73bb2174df665c7cab569e8002dfa1421bb44b3ce39c7171f05af10"
+    },
+    "new-20260906-80": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-80.json",
+      "sha256": "0df1a005b8e607587226f5a6dbba70b855641247c864ef427c770088d63e9c5c"
+    },
+    "new-20260906-81": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-81.json",
+      "sha256": "fefd89b97f2c98d4bd91064e21c68797e0beed88ba4aea106d25d7c3eded9dd4"
+    },
+    "new-20260906-82": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-82.json",
+      "sha256": "cac1098dbf6f362ad4e63e9ec2b599555055473948d227a768a6a168639b906c"
+    },
+    "new-20260906-83": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-83.json",
+      "sha256": "fccd2f4855b43f6d918b1f25cd01cd0bead24058512a715312a186c5e85487a3"
+    },
+    "new-20260906-84": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-84.json",
+      "sha256": "32d5ef5f01f88a039b3359d2c89e4b450c68dabb0b10830c1731d4ec5ce91a91"
+    },
+    "new-20260906-85": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-85.json",
+      "sha256": "0f2a0bd734dddecf187c30632dadbc39c9f418d1982df28d67a9bb1213239f43"
+    },
+    "new-20260906-86": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-86.json",
+      "sha256": "4208f38766cb6af7cae6fc51bb50e96de54ad8e1e658dad4d64c0f6d32de1cf2"
+    },
+    "new-20260906-87": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-87.json",
+      "sha256": "419df63518a24abf2a1216c56b80598da02428c988b8a35ef6f89e16859ba28e"
+    },
+    "new-20260906-88": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-88.json",
+      "sha256": "991b9150a403173107c8605803a88196dfd0c47bda42b570b6765ce552deb186"
+    },
+    "new-20260906-89": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-89.json",
+      "sha256": "2019417a34c652765f1867cd235039c3d741014e33d740658f86004f40408bec"
+    },
+    "new-20260906-91": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-91.json",
+      "sha256": "43ae8fe70920099f5f97606cd031e2d45d112dab7d4005aa5cd1d0811f7a1780"
+    },
+    "new-20260906-92": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-92.json",
+      "sha256": "d7986a70aa8b8e4764dbd58ef2a71533c05c09c1dadc09eb2f15f760a7604e60"
+    },
+    "new-20260906-93": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-93.json",
+      "sha256": "3e657652c3b26e6aa0d60ca70bccd0ae9ec0268a6478e92d090ea937d7ef195a"
+    },
+    "new-20260906-94": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-94.json",
+      "sha256": "94471e2bee578a1f960fe57b14fac13f00d3b10e9d8aa0238aa26366c8a6e300"
+    },
+    "new-20260906-95": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-95.json",
+      "sha256": "64ea2b6ffda014882893fc586609b819573c71b26ee28e430ad79cb659a8b94b"
+    },
+    "new-20260906-96": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-96.json",
+      "sha256": "f7d6d9654d244c8770485b242ed840c91dd34e288179b6b9022a556c0812357a"
+    },
+    "new-20260906-97": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-97.json",
+      "sha256": "061fabf6c8d27c87f60c235dd64131ee7c0fa22a9b7526335041b721a6d4009f"
+    },
+    "new-20260906-98": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-98.json",
+      "sha256": "24360a54aefbbfd4b82bcbe655795b572fcc3585f8c8dd697290797c87e0b81d"
+    },
+    "new-20260906-99": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260906-99.json",
+      "sha256": "56845478cfb1be7853ec08387666b20b5c4cc7a1823a32e5a7bd3b971bc6958d"
+    },
+    "new-20260907-201": {
+      "path": "artifacts/generated-results/elliptic-curves/new_curve_conductor_screen_v1/new-20260907-201.json",
+      "sha256": "112b39bb0656d3ac628802aecdebc301b13901207a66b6c3b0b270b32a0624cb"
+    }
+  },
+  "claim_boundary": "Partial factorizations remain UNKNOWN. Only a certified conductor divisor above the recorded minimum excludes improvement at that rank. No full-inventory exclusion follows merely from large upper bounds; rank means certified lower bound.",
+  "curves": 194,
+  "exact_count": 24,
+  "improvement_ids": [],
+  "priority_ids": [
+    "new-20260905-32",
+    "new-20260906-127",
+    "new-20260906-129",
+    "new-20260906-150",
+    "new-20260906-162",
+    "new-20260906-181",
+    "new-20260906-41",
+    "new-20260906-43",
+    "new-20260906-48",
+    "new-20260906-54",
+    "new-20260906-72",
+    "new-20260906-74",
+    "new-20260906-92"
+  ],
+  "proved_above_own_rank_benchmark": 24,
+  "schema": "elliptic-curves.new-conductor-screen.v1",
+  "status": "PASS"
+}

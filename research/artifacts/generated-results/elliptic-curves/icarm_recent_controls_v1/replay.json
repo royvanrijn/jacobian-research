@@ -1,0 +1,48 @@
+{
+  "certified_recovery_controls": 6,
+  "claim_boundary": "Public-point reproduction, not new discoveries. Exact lower bounds and27-to28 seed/oracle separations are certified. No exact rank, conductor verification, family recognition, recovery success or search improvement yet.",
+  "genuine_historical_controls": 1,
+  "outputs": {
+    "oracle.json": "e0733408e78ff1638194f9bee3ef4b208f23769dbf3d1d51e35f536c2bdaf95e",
+    "protocol.json": "3ee8f4fcaaa219049afa8df7b3d45d6db5f17dd4ae50e8f7f866c229a5939e06",
+    "public_615.json": "13fbbb66b07b33e9b70684bb201bee83938974ff57ab8fd2cc1bee62d731f797",
+    "public_616.json": "3d5fd0f3003efb047a586fadccd20e87bcd7c9de84873c65a9196340f568dc01",
+    "public_617.json": "d4798d886f52ee55237f0f0accd8ac1b382ffcc9446c75d3603d98bdb19873f9",
+    "public_618.json": "2e601ceb062c08d16be0afbd34dc2df5f767dd1b635805466e12ba896fa0415d",
+    "public_619.json": "5ce0a19161e6af9c2a7df3d67ed1508515c2f8d2dc3a1e02533a3c2312903893",
+    "public_620.json": "3950ca6a5c0e41365dfdc27dcb389bc919248db149685ad01625a920180b5ea6",
+    "public_621.json": "202e0bca56e28048ef7076a04aa3e99e09d82131d382f157d010ebb440b62f41",
+    "public_622.json": "6db14304d4259fb77febe855f9bf614d1e87760f92d6037f4472c0c6980f0ad2",
+    "public_623.json": "4eb35792af504ee33cc70f2a78e1dfb16d391c93a199d4ecd539e500773d7bd4",
+    "public_624.json": "1a4320c82cd90ae537c8871f80afb47ade5e64347326796e04eaca83b4c99e9d",
+    "public_625.json": "1a1f541eafdf811612534beaee3682f78a887c0089afcca5b8c9be3647f29a68",
+    "seeds.json": "58f8675c9a5eafd0e5d96f613dedef44515e799923abd253e2ee18ed050813c8"
+  },
+  "public_curves_certified": 11,
+  "public_rank_lower_bounds": {
+    "615": 28,
+    "616": 28,
+    "617": 28,
+    "618": 28,
+    "619": 28,
+    "620": 28,
+    "621": 20,
+    "622": 25,
+    "623": 24,
+    "624": 23,
+    "625": 22
+  },
+  "searches_run": 0,
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/icarm_catalogue_626_6a7ebb045f37.json.gz": "f91dbaccd104ae07b802ffe5415e72d719c178ca3f67df322e040abeff3816f3",
+    "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v20.json": "41dd4cc4ff1dd898efca2928240393f53220e20149d08c62f96a1b9b115a8b4c",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9",
+    "elliptic-curves/cas/elliptic_candidate_record.py": "5b9f6f843d48e705253404a5583ef53966c72c7f229c68ef17c6b848f5e94af3",
+    "elliptic-curves/cas/memory_rank_certificate.py": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6",
+    "elliptic-curves/cas/mod2_reduction_independence.py": "c5963952d1a9089416479671b788b6437dbba26591d796646022f4e9dddd0c70",
+    "elliptic-curves/cas/prepare_recent_icarm_controls.py": "0769d870b3dd51f302c58a517dd45a4f736d58d2e42319251c59dd68f7ffec8a",
+    "elliptic-curves/cas/research_runtime/finite_reduction.py": "467609d4a1003127a9dcfb5ff3cd911d3748f5c5c5ff68a43f09db0de9b69992"
+  },
+  "status": "PASS",
+  "synthetic_deletion_controls": 5
+}

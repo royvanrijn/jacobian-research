@@ -1,0 +1,31 @@
+{
+  "evaluation": "Freeze a search algorithm and equal budgets before a trial; log every completed/timeout box and runtime. Success requires an exactly independent 28th direction, which need not equal the withheld representative. Report genuine-local619 separately from five synthetic deletions. A miss does not prove rank27; a recovery is not a new curve or rank discovery.",
+  "failure": "Rank stays UNKNOWN unless full finite-column rank and torsion exclusion close.",
+  "limits": "One process; finite reduction primes at most997; checkpoint each public proof. No rational-point enumeration, factorization, descent or parameter scan.",
+  "mask": "Last public point withheld for 615,616,617,618,620. 619 uses the historical local27 basis and public point26 (zero-based).",
+  "prime_bound": 997,
+  "public_ids": [
+    615,
+    616,
+    617,
+    618,
+    619,
+    620,
+    621,
+    622,
+    623,
+    624,
+    625
+  ],
+  "purpose": "Retrospective point-recovery calibration and smaller-conductor comparison.",
+  "recovery_control_ids": [
+    615,
+    616,
+    617,
+    618,
+    619,
+    620
+  ],
+  "schema": "elliptic-curves.public-control-protocol.v1",
+  "separation": "seeds.json is the only worker input. oracle.json and public proofs are validator-only data. No existing prospective protocol is changed."
+}

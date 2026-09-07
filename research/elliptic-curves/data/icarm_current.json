@@ -1,0 +1,14 @@
+{
+  "count": 630,
+  "delta": "artifacts/generated-results/elliptic-curves/icarm_catalogue_630_b742f700b834_delta.json",
+  "intake_directory": "artifacts/local/elliptic-curves/conductor-record-screen-v1",
+  "inventory": "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v22.json",
+  "inventory_sha256": "5f64cf83268829549a4095dc04a9e69c73513be711c1745b61dc9d8b1a2167b0",
+  "publication": "artifacts/generated-results/elliptic-curves/icarm_catalogue_630_b742f700b834_publication.json",
+  "publication_sha256": "92bc2d991a1f67c3db19bffef784b0c42086449cd748d73a46d8d3812139a819",
+  "raw_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a",
+  "retrieved_at": "2026-09-07T08:58:21.750673+00:00",
+  "schema": "elliptic-curves.current-catalogue.v1",
+  "snapshot": "artifacts/generated-results/elliptic-curves/icarm_catalogue_630_b742f700b834.json.gz",
+  "usage": "Post-discovery deduplication and explicitly retrospective controls. Prospective selection continues to use its own frozen inputs."
+}

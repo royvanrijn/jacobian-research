@@ -1,0 +1,9 @@
+{
+  "gate": "No new point or parameter search. Verify the exact raw slope quartic identity and finite-certified centre-class separation on two completed own-subgroup follow-ups. This supplies a rigorous scheduling reason for a later updated-subgroup follow-up after the current frozen campaign finishes; no following wave is launched.",
+  "input_sha256": "f737408239570efa1025c8ec56f5c86ac2c1ebd1576ee6f5490e62c833f01127",
+  "rank_verifier_sha256": "fd95c46b9b79c89deeeed14afa2e46088590459ce1a144ebb1cd61e8713309db",
+  "rss_bytes": 2147483648,
+  "seconds": 120,
+  "verifier_sha256": "4169a3b646df49f74e25c2aece0a22ee1d7274da5a92700bb56afedb756c207f",
+  "workers": 1
+}

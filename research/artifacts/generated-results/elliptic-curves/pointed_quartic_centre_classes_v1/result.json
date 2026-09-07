@@ -1,0 +1,306 @@
+{
+  "status": "PASS",
+  "input_sha256": "f737408239570efa1025c8ec56f5c86ac2c1ebd1576ee6f5490e62c833f01127",
+  "protocol_sha256": "d47fce8be06135210e9152bdfed23aa6ad6f7a5048ec3885e8bf75be08dd52ea",
+  "symbolic_raw_quartic_identity": true,
+  "rows": [
+    {
+      "id": "mestre-u11-unit",
+      "certified_dimension": 12,
+      "old_dimension": 11,
+      "selected_distinct_new_centre_classes": 49,
+      "available_classes_outside_old_span": 2048,
+      "parity_masks": [
+        3458,
+        4052,
+        3292,
+        3011,
+        3523,
+        3475,
+        3800,
+        2180,
+        4018,
+        3802,
+        3549,
+        2812,
+        3333,
+        3460,
+        2467,
+        4020,
+        3294,
+        3480,
+        2451,
+        2698,
+        3542,
+        3457,
+        3227,
+        2205,
+        3231,
+        4032,
+        2253,
+        3521,
+        3677,
+        3985,
+        2243,
+        3547,
+        3796,
+        3365,
+        2506,
+        3211,
+        2218,
+        3291,
+        3571,
+        3391,
+        3737,
+        3573,
+        2780,
+        2501,
+        2461,
+        3546,
+        3423,
+        3329,
+        2973
+      ],
+      "finite_groups": [
+        {
+          "prime": 11,
+          "order": 12,
+          "double_subgroup_order": 6,
+          "quotient_dimension": 1
+        },
+        {
+          "prime": 17,
+          "order": 22,
+          "double_subgroup_order": 11,
+          "quotient_dimension": 1
+        },
+        {
+          "prime": 23,
+          "order": 33,
+          "double_subgroup_order": 33,
+          "quotient_dimension": 0
+        },
+        {
+          "prime": 29,
+          "order": 36,
+          "double_subgroup_order": 9,
+          "quotient_dimension": 2
+        },
+        {
+          "prime": 31,
+          "order": 36,
+          "double_subgroup_order": 9,
+          "quotient_dimension": 2
+        },
+        {
+          "prime": 37,
+          "order": 42,
+          "double_subgroup_order": 21,
+          "quotient_dimension": 1
+        },
+        {
+          "prime": 43,
+          "order": 53,
+          "double_subgroup_order": 53,
+          "quotient_dimension": 0
+        },
+        {
+          "prime": 47,
+          "order": 61,
+          "double_subgroup_order": 61,
+          "quotient_dimension": 0
+        },
+        {
+          "prime": 53,
+          "order": 58,
+          "double_subgroup_order": 29,
+          "quotient_dimension": 1
+        },
+        {
+          "prime": 59,
+          "order": 70,
+          "double_subgroup_order": 35,
+          "quotient_dimension": 1
+        },
+        {
+          "prime": 61,
+          "order": 76,
+          "double_subgroup_order": 19,
+          "quotient_dimension": 2
+        },
+        {
+          "prime": 67,
+          "order": 80,
+          "double_subgroup_order": 40,
+          "quotient_dimension": 1
+        },
+        {
+          "prime": 71,
+          "order": 78,
+          "double_subgroup_order": 39,
+          "quotient_dimension": 1
+        },
+        {
+          "prime": 73,
+          "order": 87,
+          "double_subgroup_order": 87,
+          "quotient_dimension": 0
+        },
+        {
+          "prime": 79,
+          "order": 94,
+          "double_subgroup_order": 47,
+          "quotient_dimension": 1
+        }
+      ],
+      "no_two_torsion_prime": 23
+    },
+    {
+      "id": "kihara-v3-unit",
+      "certified_dimension": 14,
+      "old_dimension": 12,
+      "selected_distinct_new_centre_classes": 49,
+      "available_classes_outside_old_span": 12288,
+      "parity_masks": [
+        10511,
+        15244,
+        15263,
+        12324,
+        4756,
+        13531,
+        16271,
+        15795,
+        11818,
+        14937,
+        12529,
+        7531,
+        9977,
+        13769,
+        14517,
+        14468,
+        11275,
+        9014,
+        5055,
+        9036,
+        10024,
+        9477,
+        15938,
+        10906,
+        6668,
+        14981,
+        15523,
+        10029,
+        10838,
+        15009,
+        13462,
+        10744,
+        7438,
+        6276,
+        13292,
+        8302,
+        13995,
+        8159,
+        14255,
+        12889,
+        7524,
+        5653,
+        14549,
+        7946,
+        16350,
+        14260,
+        9521,
+        13811,
+        14120
+      ],
+      "finite_groups": [
+        {
+          "prime": 13,
+          "order": 20,
+          "double_subgroup_order": 5,
+          "quotient_dimension": 2
+        },
+        {
+          "prime": 17,
+          "order": 24,
+          "double_subgroup_order": 12,
+          "quotient_dimension": 1
+        },
+        {
+          "prime": 29,
+          "order": 39,
+          "double_subgroup_order": 39,
+          "quotient_dimension": 0
+        },
+        {
+          "prime": 31,
+          "order": 40,
+          "double_subgroup_order": 10,
+          "quotient_dimension": 2
+        },
+        {
+          "prime": 37,
+          "order": 46,
+          "double_subgroup_order": 23,
+          "quotient_dimension": 1
+        },
+        {
+          "prime": 41,
+          "order": 50,
+          "double_subgroup_order": 25,
+          "quotient_dimension": 1
+        },
+        {
+          "prime": 43,
+          "order": 54,
+          "double_subgroup_order": 27,
+          "quotient_dimension": 1
+        },
+        {
+          "prime": 47,
+          "order": 54,
+          "double_subgroup_order": 27,
+          "quotient_dimension": 1
+        },
+        {
+          "prime": 53,
+          "order": 60,
+          "double_subgroup_order": 30,
+          "quotient_dimension": 1
+        },
+        {
+          "prime": 59,
+          "order": 60,
+          "double_subgroup_order": 30,
+          "quotient_dimension": 1
+        },
+        {
+          "prime": 61,
+          "order": 73,
+          "double_subgroup_order": 73,
+          "quotient_dimension": 0
+        },
+        {
+          "prime": 67,
+          "order": 78,
+          "double_subgroup_order": 39,
+          "quotient_dimension": 1
+        },
+        {
+          "prime": 71,
+          "order": 80,
+          "double_subgroup_order": 20,
+          "quotient_dimension": 2
+        },
+        {
+          "prime": 73,
+          "order": 88,
+          "double_subgroup_order": 44,
+          "quotient_dimension": 1
+        }
+      ],
+      "no_two_torsion_prime": 29
+    }
+  ],
+  "total_distinct_new_centre_classes": 98,
+  "boundary": "Classical degree-two quotient classification applied to exact finite-independent point subgroups. Every selected centre has a class in E(Q)/2E(Q) outside the old seed image; the associated degree-two map cannot be equivalent to an old-subgroup-centre map by a rational curve automorphism and PGL2 change. These are presentations of the same elliptic curve, not new curves, Selmer directions, or a proof of finite-box point non-overlap or improved detection."
+}

@@ -1,0 +1,17 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_arithmetic_unit_class_v1.json": "bac7de34e6ddd901a829c2228ad6c27135d39f4e0e00d118c6382b9c87473548",
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_strict_constructor_arithmetic_v1.json": "2764439bcd7cec13d7f271f4b3e6d0d8e666d3a4083b7748da791e56b20a5446",
+    "artifacts/generated-results/elliptic-curves/rank_jump_generic_only_class_anchors_v1.json": "db90a1d3e95599dbac001c51693fab379062e913b279db7a88cfacc6e630b096",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/rank-jump/CURVE302_ARITHMETIC_UNIT_CLASS_PROTOCOL.json": "8e1a68ef2192696215563ba0eb71c57a46e1cc675761ea8d5f1df64aa41f6e7c",
+    "elliptic-curves/rank-jump/curve302_arithmetic_unit_class.py": "ec54ebc30f186b1dec2ec46c6ffe729aad230a0b2f342d4b15587eccea248055",
+    "elliptic-curves/rank-jump/verify_curve302_unit_attempt.py": "00f99172fa626de05ca1127f49a631cc33bf840a234fcc3e7b31831bfa9a13c8"
+  },
+  "boundary": "All repeated ideals in this fixed run give only units+/-1. This is not an exclusion of other unit algorithms or other302 classes.",
+  "exact_ideal_identities": 567,
+  "nontrivial_norm_one_units": 0,
+  "repeated_ideal_pairs": 81,
+  "schema": "rank-jump.curve302-arithmetic-unit-class-verification.v1",
+  "status": "PASS"
+}

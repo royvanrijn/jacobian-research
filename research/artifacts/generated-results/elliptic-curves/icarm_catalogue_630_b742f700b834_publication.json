@@ -1,0 +1,1236 @@
+{
+  "catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a",
+  "claim_boundary": "Publication metadata only. No point, rank or discovery provenance changes.",
+  "curves": [
+    {
+      "current_catalogue_matches": [
+        619
+      ],
+      "id": "new-20260906-188",
+      "novelty_status": "CATALOGUE_MATCH",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [
+        630
+      ],
+      "id": "new-20260906-40",
+      "novelty_status": "CATALOGUE_MATCH",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [
+        629
+      ],
+      "id": "new-20260906-71",
+      "novelty_status": "CATALOGUE_MATCH",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-41",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-72",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-48",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [
+        628
+      ],
+      "id": "new-20260906-186",
+      "novelty_status": "CATALOGUE_MATCH",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [
+        627
+      ],
+      "id": "new-20260906-90",
+      "novelty_status": "CATALOGUE_MATCH",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-73",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-63",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-42",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-37",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-102",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-103",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-74",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-104",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-49",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-105",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-50",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-75",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-106",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-189",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-99",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-192",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-91",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-92",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-38",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-107",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-76",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-51",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-108",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-64",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-39",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-65",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-77",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-109",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-110",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-78",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-01",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-79",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-80",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-81",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-111",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-52",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-112",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-113",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-114",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-43",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-53",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-115",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-116",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-117",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-118",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-54",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-82",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-119",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-44",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-66",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-101",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-120",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-121",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-200",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-02",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-03",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-122",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-55",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-123",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-124",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-67",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-125",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-126",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-127",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-128",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-129",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-130",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-56",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-131",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-132",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-133",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-04",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-134",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-135",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-83",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-84",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-85",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-86",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-136",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-137",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-138",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-45",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-46",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-57",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-139",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-87",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-140",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-141",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-142",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-143",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-05",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-196",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-93",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-94",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-197",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-95",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-96",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-97",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-193",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-194",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-33",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-06",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-07",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-08",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-09",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-10",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-88",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-144",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-145",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-146",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-11",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-147",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-148",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-149",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-150",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-151",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-152",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-58",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [
+        600
+      ],
+      "id": "new-20260905-12",
+      "novelty_status": "CATALOGUE_MATCH",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-153",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-154",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-68",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-155",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-156",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-89",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-157",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-158",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-159",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-69",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-70",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-160",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-161",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-162",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-59",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-60",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-187",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-163",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-164",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260907-201",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-98",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-190",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-13",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-191",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-199",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-195",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-34",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-14",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-15",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-16",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-17",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-18",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-19",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-20",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-165",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-166",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-167",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-168",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-21",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-169",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-170",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-171",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-61",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-172",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-62",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-47",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-173",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-174",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-175",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-176",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-177",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-178",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-179",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-180",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-100",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-181",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-182",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-183",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-184",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-185",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-22",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-23",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-24",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-25",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-26",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-27",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-35",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260906-198",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [
+        626
+      ],
+      "id": "new-20260905-36",
+      "novelty_status": "CATALOGUE_MATCH",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-28",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-29",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-30",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-31",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    },
+    {
+      "current_catalogue_matches": [],
+      "id": "new-20260905-32",
+      "novelty_status": "UNMATCHED_IN_CURRENT_SNAPSHOT",
+      "publication_catalogue_sha256": "b742f700b8349f8db781e17715dccc031f24f5c47ee65d934f30379f4a3c310a"
+    }
+  ],
+  "inventory_sha256": "5f64cf83268829549a4095dc04a9e69c73513be711c1745b61dc9d8b1a2167b0",
+  "unmatched_by_local_rank": {
+    "22": 39,
+    "23": 46,
+    "24": 50,
+    "25": 38,
+    "26": 18,
+    "27": 3
+  },
+  "unmatched_count": 194
+}

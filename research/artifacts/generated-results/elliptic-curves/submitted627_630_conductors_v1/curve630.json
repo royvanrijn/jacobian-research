@@ -1,0 +1,177 @@
+{
+  "ainvs": [
+    "0",
+    "1",
+    "0",
+    "-478084759064998390933143695734260558414948830620",
+    "119142731212438304178867546335237459944511190723779503318854859356288944"
+  ],
+  "argument": "Exact ECPP certificates (or deterministic small-prime certificates) prove every factor prime and their product reconstructs the full discriminant. Independent Sage generic Tate and PARI elllocalred agree at every bad prime. The integral equation is minimal at all discriminant primes; all other primes are good. Thus the displayed list is complete and N=product(p^f_p) is exact.",
+  "bad_primes": [
+    "2",
+    "3",
+    "7",
+    "11",
+    "13",
+    "23",
+    "37",
+    "1223",
+    "24437972051",
+    "561063059024179810500844410439",
+    "1825535106347063733958801675489652807861250517266415081493807015950621"
+  ],
+  "claim_boundary": "Exact bad-prime support and conductor; no rank change, universal record claim or external submission. Replay performs no factor search.",
+  "conductor": "625847273392133749141084531784604199332000011136824937628804232804540038348472590036929315025313329802578398367238396088",
+  "conductor_digits": 120,
+  "discriminant": "861265623558584942823941824946868543987257828061527080055139637101120161140597943176655121328773583392980179877870893149948554653730382857870592",
+  "discriminant_factorization": [
+    [
+      "2",
+      8
+    ],
+    [
+      "3",
+      10
+    ],
+    [
+      "7",
+      5
+    ],
+    [
+      "11",
+      4
+    ],
+    [
+      "13",
+      5
+    ],
+    [
+      "23",
+      3
+    ],
+    [
+      "37",
+      2
+    ],
+    [
+      "1223",
+      2
+    ],
+    [
+      "24437972051",
+      1
+    ],
+    [
+      "561063059024179810500844410439",
+      1
+    ],
+    [
+      "1825535106347063733958801675489652807861250517266415081493807015950621",
+      1
+    ]
+  ],
+  "global_minimality": "PROVED_AT_EVERY_DISCRIMINANT_PRIME",
+  "icarm_id": 630,
+  "inventory_id": "new-20260906-40",
+  "local_data": [
+    {
+      "conductor_exponent": 3,
+      "kodaira": "I1*",
+      "minimal_discriminant_valuation": 8,
+      "pari_local_reduction": "[3, -5, [1, 0, 0, 0], 4]",
+      "prime": "2"
+    },
+    {
+      "conductor_exponent": 1,
+      "kodaira": "I10",
+      "minimal_discriminant_valuation": 10,
+      "pari_local_reduction": "[1, 14, [1, 0, 0, 0], 10]",
+      "prime": "3"
+    },
+    {
+      "conductor_exponent": 1,
+      "kodaira": "I5",
+      "minimal_discriminant_valuation": 5,
+      "pari_local_reduction": "[1, 9, [1, 0, 0, 0], 5]",
+      "prime": "7"
+    },
+    {
+      "conductor_exponent": 1,
+      "kodaira": "I4",
+      "minimal_discriminant_valuation": 4,
+      "pari_local_reduction": "[1, 8, [1, 0, 0, 0], 4]",
+      "prime": "11"
+    },
+    {
+      "conductor_exponent": 1,
+      "kodaira": "I5",
+      "minimal_discriminant_valuation": 5,
+      "pari_local_reduction": "[1, 9, [1, 0, 0, 0], 5]",
+      "prime": "13"
+    },
+    {
+      "conductor_exponent": 1,
+      "kodaira": "I3",
+      "minimal_discriminant_valuation": 3,
+      "pari_local_reduction": "[1, 7, [1, 0, 0, 0], 3]",
+      "prime": "23"
+    },
+    {
+      "conductor_exponent": 1,
+      "kodaira": "I2",
+      "minimal_discriminant_valuation": 2,
+      "pari_local_reduction": "[1, 6, [1, 0, 0, 0], 2]",
+      "prime": "37"
+    },
+    {
+      "conductor_exponent": 1,
+      "kodaira": "I2",
+      "minimal_discriminant_valuation": 2,
+      "pari_local_reduction": "[1, 6, [1, 0, 0, 0], 2]",
+      "prime": "1223"
+    },
+    {
+      "conductor_exponent": 1,
+      "kodaira": "I1",
+      "minimal_discriminant_valuation": 1,
+      "pari_local_reduction": "[1, 5, [1, 0, 0, 0], 1]",
+      "prime": "24437972051"
+    },
+    {
+      "conductor_exponent": 1,
+      "kodaira": "I1",
+      "minimal_discriminant_valuation": 1,
+      "pari_local_reduction": "[1, 5, [1, 0, 0, 0], 1]",
+      "prime": "561063059024179810500844410439"
+    },
+    {
+      "conductor_exponent": 1,
+      "kodaira": "I1",
+      "minimal_discriminant_valuation": 1,
+      "pari_local_reduction": "[1, 5, [1, 0, 0, 0], 1]",
+      "prime": "1825535106347063733958801675489652807861250517266415081493807015950621"
+    }
+  ],
+  "pari_version": "(2, 17, 3)",
+  "prime_certificates": {
+    "11": "11",
+    "1223": "1223",
+    "13": "13",
+    "1825535106347063733958801675489652807861250517266415081493807015950621": "[[1825535106347063733958801675489652807861250517266415081493807015950621, -36723086077247110585459787389997272, 486, 1575532820703125960432587196686496690586190140214108765384802126652773, [1224194277004376473926862164583153259588702069045085956089708131727979, 393979232027878232651447931537858003320303209192427186507568268052288]], [3756245074788196983454324435163894741943079412579270919657601658329, -3712641517274101541516053898415862, 23344120450405296144, 0, [3657333449889378639258413142616217183176152843922727604320756381548, 654461343113998274865856713458611488433684214946409800597402490286]], [160907543411984998413976839805111077796305641293, -230187223735157349165497, 36441436567, 0, [85309551013971227604048697086395793396904801125, 39203337188730933289299182073094051729827803321]], [4415510434561101873642748535949472273, 2934084603915197155, 1027, 0, [2482834711118558931691360628721623283, 669057883967302817780899431793298454]], [4299425934334081665733849982506597, 126773541133215571, 20805691, 0, [1898061853876450309000623629349812, 908947233865110711922151969406122]], [206646630209690297667129097, -23229820687109, 31408921, 0, [158064846839848330714204136, 95905427861468627403034786]]]",
+    "2": "2",
+    "23": "23",
+    "24437972051": "24437972051",
+    "3": "3",
+    "37": "37",
+    "561063059024179810500844410439": "[[561063059024179810500844410439, 347822630275817, 2919228849, 0, [341070333027397796878149354955, 239531994057357866000200645906]], [192195640713942349327, -27208160884, 111972, 0, [123962872398510884408, 68354291517472437503]]]",
+    "7": "7"
+  },
+  "sage_version": "10.9",
+  "schema": "elliptic-curves.submitted-exact-conductor.v1",
+  "sources": {
+    "artifacts/local/elliptic-curves/submitted627-630-conductors-v1/curve630.json": "185bdcf37a11d6a87097d709883ce609eaab475e7f57ef98508c3a192d0b6a2b",
+    "artifacts/local/elliptic-curves/submitted627-630-conductors-v1/protocol.json": "085169eb8ae2265c9a4d538ace36bd7a77725cd61b11a51a1f7218f08f1e174e",
+    "elliptic-curves/cas/certify_submitted627_630_conductors.sage": "edcd94535ac74e6d692827e75d5ee28f72b166668f3eddb0fb99b793fc09f124"
+  },
+  "status": "PASS"
+}

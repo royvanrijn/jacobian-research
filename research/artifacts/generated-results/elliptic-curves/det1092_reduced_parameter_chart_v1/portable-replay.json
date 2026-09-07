@@ -1,0 +1,47 @@
+{
+  "manifest_sha256": "116e81ec7438346ed6230dde15bbdf65dca107bc2acdc9564b687891530ee99d",
+  "matched_files": {
+    "generic-proof.json": "166dded75c99aab73e30f3528d9e89a6dccf6984f92bf850c7f668afeae7a2fd",
+    "reduced-parent.json": "3f9c9d3bed66a29327bdc2abfb7cf2ddae04068f74100924feeaed5527d1b023"
+  },
+  "status": "PASS",
+  "supervision": {
+    "command": [
+      "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+      "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/det1092-reduced-chart-portable-replay-v1/verify.sage",
+      "--protocol",
+      "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/det1092-reduced-chart-portable-replay-v1/proof-protocol.json",
+      "--parent",
+      "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/det1092-reduced-chart-portable-replay-v1/source-parent.json",
+      "--chart",
+      "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/det1092-reduced-chart-portable-replay-v1/chart-search.json",
+      "--output",
+      "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/det1092-reduced-chart-portable-replay-v1/reduced-parent.json",
+      "--certificate",
+      "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/det1092-reduced-chart-portable-replay-v1/generic-proof.json"
+    ],
+    "failure_reason": null,
+    "limits": {
+      "address_space_bytes": null,
+      "cgroup": null,
+      "pari_stack_bytes": 256000000,
+      "poll_seconds": 0.05,
+      "rss_bytes": 2147483648,
+      "terminate_grace_seconds": 1.0,
+      "wall_seconds": 120
+    },
+    "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/det1092-reduced-chart-portable-replay-v1/replay.log",
+    "log_sha256": "7e7b1f4aa3c4301d3f6d31f5deef935e570fa9025c8be9b8055797d9d38ff5bc",
+    "outcome": "completed",
+    "peak_observed_rss_bytes": 229560320,
+    "pid": 2700165,
+    "returncode": 0,
+    "rss_limit_bytes": 2147483648,
+    "start_token": "59991560",
+    "termination_signal": null,
+    "timeout_seconds": 120,
+    "wall_seconds": 0.7437980930553749,
+    "worker_result": null,
+    "worker_result_sha256": null
+  }
+}
