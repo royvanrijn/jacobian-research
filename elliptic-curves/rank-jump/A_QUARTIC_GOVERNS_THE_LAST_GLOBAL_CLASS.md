@@ -1,5 +1,10 @@
 # A degree-four Galois scheme governs the last global class
 
+**Gate now closed:** [the reduction at 131 proves that the last global
+class is absent](THE_LAST_GLOBAL_CLASS_IS_ABSENT.md). The action on Ω is
+S4 and dim J[2](Q)=17. The former UNKNOWN alternatives and their
+intermediate proof below are retained as the construction of Ω.
+
 The fixed published R17 cubic root curve has an exactly defined
 **degree-four étale incidence scheme** Ω. Its rational-point question
 settles the last global-pool dimension:

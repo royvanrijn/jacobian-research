@@ -1,0 +1,22 @@
+{
+  "Artin_Tate_factor": "948/131",
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_residual_quartic_at_131_v1.json": "2f07599aaafe2ae17eedfaa58276a3463b7a8c3751ad480c01c32d689c366030",
+    "artifacts/generated-results/elliptic-curves/rank_jump_residual_quartic_incidence_inputs_v1.json": "211ff20ecf7802b483d239f8669f052a411b8787fd61a00ee9cf952ce4deae11",
+    "elliptic-curves/rank-jump/verify_residual_quartic_at_131.py": "4a22b0555a63af45e34057c1276dc8e3c936e982d9c361e3dec3a1267a00c636"
+  },
+  "boundary": "Arithmetic replay only. Selmer/Jacobian identification and Artin-Tate implications are proved in the companion note; no full point recount or exceptional coordinates.",
+  "character_rank": 17,
+  "characters_recomputed": 91,
+  "determinant": 948,
+  "height_intersections_recomputed": 272,
+  "original_fibre_ledger_orbits_reassembled": 8779,
+  "quartic_cycle_types_if_two_torsion_dimension_17": [
+    [
+      4
+    ]
+  ],
+  "residual_polynomial": "X**3 + 343*X**2 + 44933*X + 2248091",
+  "schema": "rank-jump.residual-quartic-at-131-verification.v1",
+  "status": "PASS"
+}

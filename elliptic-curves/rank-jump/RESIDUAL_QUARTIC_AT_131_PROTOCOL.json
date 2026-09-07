@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.residual-quartic-at-131-protocol.v1",
+  "question": "Does the already counted reduction at 131 exclude the last extra global root-curve class?",
+  "inputs": "Published generic A, B and seventeen sections only; retained original-surface Frobenius ledger and independent replay. No specialized exceptional points or new parameter selection.",
+  "precomputation_disclosure": "The retained first two traces suggest residual polynomial (X+131)(X^2+212X+17161) and Artin-Tate factor 948/131. Saturation at two in characteristic 131 has not been computed when this protocol is written.",
+  "bounds": {"prime": 131, "finite_base_values": 131, "root_places": "all degree-one roots at smooth fibres avoiding zeros of every marked y", "height_pairs": 136, "timeout_seconds": 60},
+  "method": "Compute generic height intersection Gram over Q and F131. Certify mod-two independence by Legendre characters of x_i(t)-theta at retained degree-one root places. Reassemble original traces from immutable ledger. Apply finite-field Artin-Tate and unramified two-descent only after checking their hypotheses in a proof note.",
+  "failure_semantics": "Insufficient character rank leaves saturation UNKNOWN. A determinant mismatch or inconsistent trace is a failed gate, not a theorem. No larger-prime search or extension-field campaign is authorized by this protocol.",
+  "boundary": "Fixed global-pool incidence gate, not a specialization rank predictor. Does not compute new specialized class groups, CT matrices or rational points. No active search files or mathematical-status entries are modified."
+}

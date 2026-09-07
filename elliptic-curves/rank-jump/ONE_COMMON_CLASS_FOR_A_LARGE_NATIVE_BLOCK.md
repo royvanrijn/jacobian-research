@@ -1,5 +1,10 @@
 # A large native block would require one class soluble on many twists
 
+**Gate now closed:** [the required extra class is absent](THE_LAST_GLOBAL_CLASS_IS_ABSENT.md).
+The global pool equals G, and the original k-support native pullbacks
+have rank exactly 17+k. The conditional common-class argument below is
+retained as the proof of why its absence excludes hidden mixed blocks.
+
 The published R17 global cover pool has dimension **17 or 18**, so at
 most **one** class remains beyond the marked generic subgroup. Two exact
 odd Frobenius counts improve the previous upper bound of 19.
