@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.four-division-class-creation-protocol.v1",
+  "question": "Can specialization-dependent four-division ramification supply any of the missing cubic Kummer or Selmer classes?",
+  "gate": "Prove that for an S3 cubic the only possible Kummer direction split by Q(E[4]) is -disc(f)*f'(theta). Check that direction against the frozen sixteen-fibre panel. No full mod4 image hypothesis is permitted in the four-division conclusion.",
+  "inputs": "Masked equation and generic-section panel, retained equation-defined derivative exclusions, and retained generic local images. Exceptional points and rank labels are excluded from arithmetic workers.",
+  "limits": {"fibres": 16, "new_local_workers": 3, "worker_seconds": 30, "workers": 1, "pari_stack_bytes": 256000000, "finite_group_moduli": [4,8,16], "largest_finite_group": 24576, "new_factorizations": 0, "new_class_groups": 0, "new_points_or_parameters": 0},
+  "failure": "A missing local exclusion remains UNKNOWN. Full-group cohomology at levels 8 and 16 is an abstract control; it is not applied to a fibre without a certified division image. No conclusion about the entire torsion tower is licensed."
+}

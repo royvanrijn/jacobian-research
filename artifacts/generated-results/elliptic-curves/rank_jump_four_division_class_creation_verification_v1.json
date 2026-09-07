@@ -1,0 +1,228 @@
+{
+  "abstract_full_group_controls": [
+    {
+      "B1_dimension": 2,
+      "H1_dimension": 1,
+      "Z1_dimension": 3,
+      "modulus": 4,
+      "order": 96
+    },
+    {
+      "B1_dimension": 2,
+      "H1_dimension": 1,
+      "Z1_dimension": 3,
+      "modulus": 8,
+      "order": 1536
+    },
+    {
+      "B1_dimension": 2,
+      "H1_dimension": 1,
+      "Z1_dimension": 3,
+      "modulus": 16,
+      "order": 24576
+    }
+  ],
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_four_division_class_creation_v1.json": "042f088542ff692b2e2798141798f05c6c69321f4d8810344db48acce3706084",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_octics_v1.json": "ac239168b99362ea0d8be8eadc0c5114a774ebb5ec1dcc6c6251b0dba0e39677",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_four_division_class_creation.py": "9c5b66370599a8b8b051bbc7d120029f807d439a26bfb057682f7572d6d97b84"
+  },
+  "method": "All 67 sign-module subspaces; independent Weierstrass invariants, finite cubic irreducibility, exact norms and PARI local-power tests against complete generic local images; Sage GF(2) cohomology kernels.",
+  "module": {
+    "all_subspaces": 67,
+    "conclusion": "Every stable subgroup has zero or one standard summand, detected exactly by the derivative map.",
+    "stable_subspaces": [
+      {
+        "standard_dimension": 0,
+        "subspace": [
+          0
+        ]
+      },
+      {
+        "standard_dimension": 2,
+        "subspace": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "standard_dimension": 2,
+        "subspace": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14
+        ]
+      },
+      {
+        "standard_dimension": 0,
+        "subspace": [
+          0,
+          5,
+          11,
+          14
+        ]
+      },
+      {
+        "standard_dimension": 2,
+        "subspace": [
+          0,
+          6,
+          10,
+          12
+        ]
+      },
+      {
+        "standard_dimension": 0,
+        "subspace": [
+          0,
+          14
+        ]
+      }
+    ]
+  },
+  "rows": [
+    {
+      "irreducibility_prime": 19,
+      "token": "case-00",
+      "witness_place": "infinity"
+    },
+    {
+      "excluded_local_point_classes": 4,
+      "generic_basis_indices": [
+        0,
+        2
+      ],
+      "irreducibility_prime": 17,
+      "point_dimension": 2,
+      "token": "case-01",
+      "witness_place": 13
+    },
+    {
+      "irreducibility_prime": 31,
+      "token": "case-02",
+      "witness_place": "infinity"
+    },
+    {
+      "irreducibility_prime": 23,
+      "token": "case-03",
+      "witness_place": "infinity"
+    },
+    {
+      "irreducibility_prime": 31,
+      "token": "case-04",
+      "witness_place": "infinity"
+    },
+    {
+      "excluded_local_point_classes": 2,
+      "generic_basis_indices": [
+        0
+      ],
+      "irreducibility_prime": 3,
+      "point_dimension": 1,
+      "token": "case-05",
+      "witness_place": 2
+    },
+    {
+      "excluded_local_point_classes": 4,
+      "generic_basis_indices": [
+        0,
+        1
+      ],
+      "irreducibility_prime": 23,
+      "point_dimension": 2,
+      "token": "case-06",
+      "witness_place": 3
+    },
+    {
+      "irreducibility_prime": 37,
+      "token": "case-07",
+      "witness_place": "infinity"
+    },
+    {
+      "excluded_local_point_classes": 2,
+      "generic_basis_indices": [
+        1
+      ],
+      "irreducibility_prime": 7,
+      "point_dimension": 1,
+      "token": "case-08",
+      "witness_place": 3
+    },
+    {
+      "irreducibility_prime": 17,
+      "token": "case-09",
+      "witness_place": "infinity"
+    },
+    {
+      "excluded_local_point_classes": 4,
+      "generic_basis_indices": [
+        0,
+        1
+      ],
+      "irreducibility_prime": 3,
+      "point_dimension": 2,
+      "token": "case-10",
+      "witness_place": 2
+    },
+    {
+      "excluded_local_point_classes": 4,
+      "generic_basis_indices": [
+        0,
+        2
+      ],
+      "irreducibility_prime": 7,
+      "point_dimension": 2,
+      "token": "case-11",
+      "witness_place": 2
+    },
+    {
+      "irreducibility_prime": 17,
+      "token": "case-12",
+      "witness_place": "infinity"
+    },
+    {
+      "excluded_local_point_classes": 4,
+      "generic_basis_indices": [
+        0,
+        1
+      ],
+      "irreducibility_prime": 17,
+      "point_dimension": 2,
+      "token": "case-13",
+      "witness_place": 2
+    },
+    {
+      "irreducibility_prime": 3,
+      "token": "case-14",
+      "witness_place": "infinity"
+    },
+    {
+      "irreducibility_prime": 23,
+      "token": "case-15",
+      "witness_place": "infinity"
+    }
+  ],
+  "schema": "rank-jump.four-division-class-creation-verification.v1",
+  "status": "PASS"
+}
