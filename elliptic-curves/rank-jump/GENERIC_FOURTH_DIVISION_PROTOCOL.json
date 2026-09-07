@@ -1,0 +1,9 @@
+{
+  "schema": "rank-jump.generic-fourth-division-protocol.v1",
+  "question": "Can fourth-division fields of the generic points create new Selmer classes, or undergo a translation-image collapse on the high-jump panel?",
+  "inputs": "Frozen generic bases and the independently verified equation-only four-torsion derivative-class exclusion on all sixteen fibres. No exceptional coordinates or search outputs are new arithmetic inputs.",
+  "method": "Prove full translation image from mod-two independence over the four-torsion field, then compute H1 of the affine semidirect product. Check the proof on abstract affine groups with zero, one and two marked points and independently enumerate all subgroups of (Z/4)^2 and equivariant maps to F2^2.",
+  "bounds": {"seconds": 30, "workers": 1, "largest_group_order": 24576, "new_fields_constructed": 0, "new_points": 0, "new_factorizations": 0},
+  "failure_semantics": "Every application requires the certified S3 image, generic mod-two independence, and derivative exclusion. The result covers fourth division only, with no assumption of a full mod-four linear image and no assertion about actual mod-eight or higher torsion images.",
+  "boundary": "Incidence and finite Galois representation only; no CT or rational solubility conclusion, no prospective search or active files changed."
+}

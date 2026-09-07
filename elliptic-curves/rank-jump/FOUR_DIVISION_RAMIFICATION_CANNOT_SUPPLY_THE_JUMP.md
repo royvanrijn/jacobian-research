@@ -1,5 +1,9 @@
 # Four-division ramification cannot supply the missing jump classes
 
+Follow-up: [fourth division of every generic point](GENERIC_FOURTH_DIVISION_HAS_NO_NEW_SELMER_CLASSES.md)
+also adds no Selmer class on all sixteen fibres. Its translation group is
+maximal; the new standard layers lie in doubles and do not survive in H1.
+
 On every fibre in the frozen sixteen-case panel, the four-division field
 contains **exactly one** cubic Kummer direction, and that direction is
 **outside the 2-Selmer group**. Thus it supplies zero strict classes and

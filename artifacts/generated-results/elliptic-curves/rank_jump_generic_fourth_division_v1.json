@@ -1,0 +1,277 @@
+{
+  "affine_controls": [
+    {
+      "B1_dimension": 2,
+      "H1_dimension": 1,
+      "Z1_dimension": 3,
+      "cayley_edges": 288,
+      "coboundaries": [
+        3,
+        7
+      ],
+      "constraint_rank": 3,
+      "coordinate_cocycles": [],
+      "derivative_cocycle": 56,
+      "generic_points": 0,
+      "order": 96
+    },
+    {
+      "B1_dimension": 2,
+      "H1_dimension": 2,
+      "Z1_dimension": 4,
+      "cayley_edges": 7680,
+      "coboundaries": [
+        3,
+        7
+      ],
+      "constraint_rank": 6,
+      "coordinate_cocycles": [
+        576
+      ],
+      "derivative_cocycle": 56,
+      "generic_points": 1,
+      "order": 1536
+    },
+    {
+      "B1_dimension": 2,
+      "H1_dimension": 3,
+      "Z1_dimension": 5,
+      "cayley_edges": 172032,
+      "coboundaries": [
+        3,
+        7
+      ],
+      "constraint_rank": 9,
+      "coordinate_cocycles": [
+        576,
+        9216
+      ],
+      "derivative_cocycle": 56,
+      "generic_points": 2,
+      "order": 24576
+    }
+  ],
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_four_division_class_creation_v1.json": "042f088542ff692b2e2798141798f05c6c69321f4d8810344db48acce3706084",
+    "artifacts/generated-results/elliptic-curves/rank_jump_four_division_class_creation_verification_v1.json": "4f017b3eac60fdd10febf460d9045cbfff5f5e978813daa06f2e148019c86e29",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+    "elliptic-curves/rank-jump/GENERIC_FOURTH_DIVISION_PROTOCOL.json": "3b32d410db9ae69d623f3a60e1217384e11e5d2072bb1577bf4cb648c18027d1",
+    "elliptic-curves/rank-jump/generic_fourth_division.py": "f81825d3736956bfe1678ead3e3624247c047cb705c471bb19ba684598dea071"
+  },
+  "boundary": "Fourth division only. No new point, CT, class group, or higher-torsion-image computation.",
+  "independent_module_checks": {
+    "Hom_dimension_per_generic_point": 1,
+    "equivariant_maps_Z4_squared_to_V": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1
+      ]
+    ],
+    "subgroups_Z4_squared": 15,
+    "subgroups_with_full_mod2_image": 1
+  },
+  "rows": [
+    {
+      "derivative_excluding_place": "infinity",
+      "generic_dimension": 17,
+      "new_Selmer_dimensions_from_generic_fourth_division": 0,
+      "proof": "uniform theorem; actual linear mod4 image need not be full",
+      "relative_field_degree": "295147905179352825856",
+      "split_Kummer_dimension": 18,
+      "split_Selmer_dimension": 17,
+      "token": "case-00",
+      "translation_group_over_Q_E4": "(Z/4)^34",
+      "translation_image_collapse": false
+    },
+    {
+      "derivative_excluding_place": 13,
+      "generic_dimension": 17,
+      "new_Selmer_dimensions_from_generic_fourth_division": 0,
+      "proof": "uniform theorem; actual linear mod4 image need not be full",
+      "relative_field_degree": "295147905179352825856",
+      "split_Kummer_dimension": 18,
+      "split_Selmer_dimension": 17,
+      "token": "case-01",
+      "translation_group_over_Q_E4": "(Z/4)^34",
+      "translation_image_collapse": false
+    },
+    {
+      "derivative_excluding_place": "infinity",
+      "generic_dimension": 17,
+      "new_Selmer_dimensions_from_generic_fourth_division": 0,
+      "proof": "uniform theorem; actual linear mod4 image need not be full",
+      "relative_field_degree": "295147905179352825856",
+      "split_Kummer_dimension": 18,
+      "split_Selmer_dimension": 17,
+      "token": "case-02",
+      "translation_group_over_Q_E4": "(Z/4)^34",
+      "translation_image_collapse": false
+    },
+    {
+      "derivative_excluding_place": "infinity",
+      "generic_dimension": 17,
+      "new_Selmer_dimensions_from_generic_fourth_division": 0,
+      "proof": "uniform theorem; actual linear mod4 image need not be full",
+      "relative_field_degree": "295147905179352825856",
+      "split_Kummer_dimension": 18,
+      "split_Selmer_dimension": 17,
+      "token": "case-03",
+      "translation_group_over_Q_E4": "(Z/4)^34",
+      "translation_image_collapse": false
+    },
+    {
+      "derivative_excluding_place": "infinity",
+      "generic_dimension": 17,
+      "new_Selmer_dimensions_from_generic_fourth_division": 0,
+      "proof": "uniform theorem; actual linear mod4 image need not be full",
+      "relative_field_degree": "295147905179352825856",
+      "split_Kummer_dimension": 18,
+      "split_Selmer_dimension": 17,
+      "token": "case-04",
+      "translation_group_over_Q_E4": "(Z/4)^34",
+      "translation_image_collapse": false
+    },
+    {
+      "derivative_excluding_place": 2,
+      "generic_dimension": 17,
+      "new_Selmer_dimensions_from_generic_fourth_division": 0,
+      "proof": "uniform theorem; actual linear mod4 image need not be full",
+      "relative_field_degree": "295147905179352825856",
+      "split_Kummer_dimension": 18,
+      "split_Selmer_dimension": 17,
+      "token": "case-05",
+      "translation_group_over_Q_E4": "(Z/4)^34",
+      "translation_image_collapse": false
+    },
+    {
+      "derivative_excluding_place": 3,
+      "generic_dimension": 17,
+      "new_Selmer_dimensions_from_generic_fourth_division": 0,
+      "proof": "uniform theorem; actual linear mod4 image need not be full",
+      "relative_field_degree": "295147905179352825856",
+      "split_Kummer_dimension": 18,
+      "split_Selmer_dimension": 17,
+      "token": "case-06",
+      "translation_group_over_Q_E4": "(Z/4)^34",
+      "translation_image_collapse": false
+    },
+    {
+      "derivative_excluding_place": "infinity",
+      "generic_dimension": 17,
+      "new_Selmer_dimensions_from_generic_fourth_division": 0,
+      "proof": "uniform theorem; actual linear mod4 image need not be full",
+      "relative_field_degree": "295147905179352825856",
+      "split_Kummer_dimension": 18,
+      "split_Selmer_dimension": 17,
+      "token": "case-07",
+      "translation_group_over_Q_E4": "(Z/4)^34",
+      "translation_image_collapse": false
+    },
+    {
+      "derivative_excluding_place": 3,
+      "generic_dimension": 17,
+      "new_Selmer_dimensions_from_generic_fourth_division": 0,
+      "proof": "uniform theorem; actual linear mod4 image need not be full",
+      "relative_field_degree": "295147905179352825856",
+      "split_Kummer_dimension": 18,
+      "split_Selmer_dimension": 17,
+      "token": "case-08",
+      "translation_group_over_Q_E4": "(Z/4)^34",
+      "translation_image_collapse": false
+    },
+    {
+      "derivative_excluding_place": "infinity",
+      "generic_dimension": 17,
+      "new_Selmer_dimensions_from_generic_fourth_division": 0,
+      "proof": "uniform theorem; actual linear mod4 image need not be full",
+      "relative_field_degree": "295147905179352825856",
+      "split_Kummer_dimension": 18,
+      "split_Selmer_dimension": 17,
+      "token": "case-09",
+      "translation_group_over_Q_E4": "(Z/4)^34",
+      "translation_image_collapse": false
+    },
+    {
+      "derivative_excluding_place": 2,
+      "generic_dimension": 17,
+      "new_Selmer_dimensions_from_generic_fourth_division": 0,
+      "proof": "uniform theorem; actual linear mod4 image need not be full",
+      "relative_field_degree": "295147905179352825856",
+      "split_Kummer_dimension": 18,
+      "split_Selmer_dimension": 17,
+      "token": "case-10",
+      "translation_group_over_Q_E4": "(Z/4)^34",
+      "translation_image_collapse": false
+    },
+    {
+      "derivative_excluding_place": 2,
+      "generic_dimension": 16,
+      "new_Selmer_dimensions_from_generic_fourth_division": 0,
+      "proof": "uniform theorem; actual linear mod4 image need not be full",
+      "relative_field_degree": "18446744073709551616",
+      "split_Kummer_dimension": 17,
+      "split_Selmer_dimension": 16,
+      "token": "case-11",
+      "translation_group_over_Q_E4": "(Z/4)^32",
+      "translation_image_collapse": false
+    },
+    {
+      "derivative_excluding_place": "infinity",
+      "generic_dimension": 16,
+      "new_Selmer_dimensions_from_generic_fourth_division": 0,
+      "proof": "uniform theorem; actual linear mod4 image need not be full",
+      "relative_field_degree": "18446744073709551616",
+      "split_Kummer_dimension": 17,
+      "split_Selmer_dimension": 16,
+      "token": "case-12",
+      "translation_group_over_Q_E4": "(Z/4)^32",
+      "translation_image_collapse": false
+    },
+    {
+      "derivative_excluding_place": 2,
+      "generic_dimension": 17,
+      "new_Selmer_dimensions_from_generic_fourth_division": 0,
+      "proof": "uniform theorem; actual linear mod4 image need not be full",
+      "relative_field_degree": "295147905179352825856",
+      "split_Kummer_dimension": 18,
+      "split_Selmer_dimension": 17,
+      "token": "case-13",
+      "translation_group_over_Q_E4": "(Z/4)^34",
+      "translation_image_collapse": false
+    },
+    {
+      "derivative_excluding_place": "infinity",
+      "generic_dimension": 17,
+      "new_Selmer_dimensions_from_generic_fourth_division": 0,
+      "proof": "uniform theorem; actual linear mod4 image need not be full",
+      "relative_field_degree": "295147905179352825856",
+      "split_Kummer_dimension": 18,
+      "split_Selmer_dimension": 17,
+      "token": "case-14",
+      "translation_group_over_Q_E4": "(Z/4)^34",
+      "translation_image_collapse": false
+    },
+    {
+      "derivative_excluding_place": "infinity",
+      "generic_dimension": 16,
+      "new_Selmer_dimensions_from_generic_fourth_division": 0,
+      "proof": "uniform theorem; actual linear mod4 image need not be full",
+      "relative_field_degree": "18446744073709551616",
+      "split_Kummer_dimension": 17,
+      "split_Selmer_dimension": 16,
+      "token": "case-15",
+      "translation_group_over_Q_E4": "(Z/4)^32",
+      "translation_image_collapse": false
+    }
+  ],
+  "schema": "rank-jump.generic-fourth-division.v1",
+  "status": "PASS"
+}
