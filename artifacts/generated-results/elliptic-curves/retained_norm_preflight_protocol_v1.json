@@ -1,0 +1,21 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_norm_projection_v1.json": "c74e187b68070d29fc87c1e3dd56f3725ab17c7de5f4eda2bd21b52d6b64a6f8",
+    "artifacts/generated-results/elliptic-curves/rank_jump_retained_norm_batch_capacity_inputs_v1.json": "1d339793fae18f32807bcd7944a7627c40edaa0eadc9a07c73fed4550b7c1952",
+    "artifacts/generated-results/elliptic-curves/retained_norm_preflight_inputs_v1.json": "048e0ae775145818dd37bdd0708e1d7f797f1f6e1cab54e40665c747f273d3db",
+    "elliptic-curves/cas/audit_retained_norm_preflight.py": "cf52fc57b9e0113b4b4f4973925248bf012883c6292bdfad26acdfe3a9487887",
+    "elliptic-curves/cas/research_runtime/norm_ramification.py": "8f6d607056287e28986eee67d57449310fdd3d50e94c33cd662a0d92ded7d98f"
+  },
+  "endpoint": "Forced-zero coefficient coordinates and unresolved dimension cap, never curve exclusion or rational points.",
+  "following_campaign": null,
+  "limits": {
+    "cases": 12,
+    "generators": 428,
+    "wall_seconds": 60
+  },
+  "population": "All132 original panel generators plus all296 fixed-box reference generators; no new candidates.",
+  "provenance": "Retrospective retained dictionaries. Worker reads only cubics and element coefficients. Known outcomes informed motivation, not a blind discrimination test.",
+  "rule": "Peel only generators with an isolated nonsquare norm remainder. Repeat until stable. Retain shared-support cancellations.",
+  "schema": "elliptic-curves.retained-norm-preflight-protocol.v1"
+}

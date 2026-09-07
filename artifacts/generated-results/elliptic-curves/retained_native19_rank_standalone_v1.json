@@ -1,0 +1,54 @@
+{
+  "boundary": "Fresh-directory Sage full finite-group enumeration on two retained native19 clouds and one known28 control, with no repository imports. Proves lower bounds only. Search exposure and exact maps are separately replayed.",
+  "files": {
+    "factor_free_known28_control_v1.json": "5c4811e4042542ae9c9a4319e57c3b578c3b9f2fda2fba1fb4c6e0b80b73f4a9",
+    "retained_native19_trial_v3_01_mod2_v1.json": "5939b567b9d183df43136ce03086f39c97b0f5d2182a7a73028ff96c89fbff69",
+    "retained_native19_trial_v3_08_mod2_v1.json": "3ecbb5a190ab396fb6e24dda65746d75115ea7f15b8ffae70758baefe42f731f",
+    "verify_retained_native19_rank.sage": "0f0a38825f8abcfbd83ddf15c39bb1285f8e23135d0a660f7d34d23fd5aeb6b1"
+  },
+  "rank_lower_bounds": [
+    19,
+    19,
+    28
+  ],
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/factor_free_known28_control_v1.json": "5c4811e4042542ae9c9a4319e57c3b578c3b9f2fda2fba1fb4c6e0b80b73f4a9",
+    "artifacts/generated-results/elliptic-curves/retained_native19_sage_replay_v1.json": "fd809c97a2762f2ae6ee8aea5166454b4d5dc8453e36d7fb9084a0f7f3c2f18d",
+    "artifacts/generated-results/elliptic-curves/retained_native19_trial_v3_01_mod2_v1.json": "5939b567b9d183df43136ce03086f39c97b0f5d2182a7a73028ff96c89fbff69",
+    "artifacts/generated-results/elliptic-curves/retained_native19_trial_v3_08_mod2_v1.json": "3ecbb5a190ab396fb6e24dda65746d75115ea7f15b8ffae70758baefe42f731f",
+    "elliptic-curves/cas/package_retained_native19_proofs.py": "be6d6881b31c94be1360505d81276034dba76d9bd398261b71d7a35339d8e72f",
+    "elliptic-curves/cas/verify_retained_native19_rank.sage": "08713532b2589f6e01d79a2146e087d646886d51b38dc6c8532db007c67ad029"
+  },
+  "status": "PASS",
+  "supervision": {
+    "command": [
+      "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+      "/tmp/native19-standalone-xu6cpg2z/verify_retained_native19_rank.sage"
+    ],
+    "failure_reason": null,
+    "limits": {
+      "address_space_bytes": null,
+      "cgroup": null,
+      "pari_stack_bytes": 256000000,
+      "poll_seconds": 0.05,
+      "rss_bytes": 1610612736,
+      "terminate_grace_seconds": 1.0,
+      "wall_seconds": 120
+    },
+    "log": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/retained-native19-point-trial-v3/standalone.log",
+    "log_sha256": "9edfadd8e75fd61beea7e73588fe1803e74f930d52380e7bdfe4c7e4c554ec3a",
+    "outcome": "completed",
+    "peak_observed_rss_bytes": 238997504,
+    "pid": 2173891,
+    "returncode": 0,
+    "rss_limit_bytes": 1610612736,
+    "start_token": "56986392",
+    "termination_signal": null,
+    "timeout_seconds": 120,
+    "wall_seconds": 0.9436261489754543,
+    "worker_result": null,
+    "worker_result_sha256": null
+  },
+  "zip_bytes": 28070,
+  "zip_sha256": "5100c94469becc4772ba968034499f3e2a4d43fa92610ffddf505a0febfb6865"
+}

@@ -156,17 +156,21 @@ record-construction work.
   See
   [`../elliptic-curves/notes/ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md`](../elliptic-curves/notes/ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md).
 <!-- status-consumer: EC-K3-ICARM-MW16-BLIND-LADDER acfa3bdcebb18137 -->
-- **Curve 302 / main construction-recovery project:** recover an explicit
-  surface over `Q(t)`, a full generic MW basis, and a parameter with exact
-  isomorphism and section transport to 302. Generic rank 17 is not prescribed.
+- **Curve 302 / inverse parent construction:** use calibrated equation and
+  section-subgroup recognition to find a structured alternative parent.
+  The inverse Fermigier height-eight run recovers 245's actual rank-twelve
+  section image but excludes 302 from all 2,578 tested root configurations,
+  for every rational specialization parameter. No messages may be sent;
+  original provenance remains a separate open route.
   The [construction-recovery proof and next gates](../elliptic-curves/notes/CURVE302_CONSTRUCTION_RECOVERY.md)
   give an explicit constructed K3 with **full arithmetic MW9 basis**,
   determinant 512, and `t=1` fibre 302. Frobenius at 47 proves the rank
   upper bound. All elliptic fibrations over `Q` on this K3 have MW rank at
   most nine; a higher-rank parent requires a different surface. Original
-  provenance remains unknown.
-  Use a recovered parent as a neighbourhood for rank 32; do not substitute a
-  blind 32nd-point search on curve 302 for construction recovery.
+  provenance remains unknown. Retain MW9 as a **completed baseline**; its
+  302 fibre alone does not make it a major production-search priority.
+  The current construction search changes the underlying family, with
+  generic rank seventeen not prescribed.
 
 Neither known curve may enter the A1/MW16 parameter experiment as a target,
 control, parameter match, or scheduling label.  The curve-398 equivalence is
@@ -484,7 +488,7 @@ twist and yields arithmetic exclusion.
 <!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
 <!-- status-consumer: EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION bf05d9b06ccc1502 -->
 <!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 6a9cd04e00dcdaad -->
-<!-- status-consumer: OP-EC-NEXT b0871cb95a6b27cf -->
+<!-- status-consumer: OP-EC-NEXT 6cffb77d2f73532a -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->
 <!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->

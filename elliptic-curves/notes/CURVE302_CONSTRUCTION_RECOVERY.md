@@ -6,6 +6,15 @@ rational parameter with an exact `Q`-isomorphism and section transport to
 `E302`. Generic rank 17 is not a requirement. The additive rank-17 candidate
 is evidence to test, not a prescribed generic subgroup.
 
+**Current priority: mathematically reconstruct a structured alternative
+parent using calibrated inverse-family and MW recognition.** The user has
+reopened this construction route; original-provenance recovery is useful but
+is not a prerequisite for an alternative parent. The MW9 result below is a
+**completed baseline**, not a production-search priority merely because it
+contains 302.
+**No outreach:** the user has instructed that no messages be sent. The local
+request draft is inactive. Mathematical inverse construction proceeds locally.
+
 The boxed surface/basis/specialization endpoint is now complete for a
 **constructed generic-rank-nine K3 parent**: the full arithmetic MW basis
 and `t0=1` specialization to `E302` are explicit and certified. The original
@@ -15,6 +24,286 @@ establishes the discoverers' method. A parent of generic rank 17–20 would
 be valuable, with the surface type and its possible rank checked first;
 the existing K3 has arithmetic MW rank exactly nine. Every elliptic
 fibration over `Q` on this same K3 has arithmetic MW rank at most nine.
+
+## From a recovered MW subspace to a family, 2026-09-07
+
+The geometric control now works **without supplying the known section-image
+set or parity class**. Start from the rank-twelve primitive subspace selected
+by the existing graph-consensus calibration (source index 65), enumerate
+vectors in that subspace, and partition them by parity. The
+[packet selector](../cas/select_mw_quartic_packet.sage) retains thirteen
+vectors per eligible class in numerical height order. It uses the recovered
+subspace, curve and displayed points; it does not load the known generic
+image list or construction parameter during selection.
+
+The development height bound is 84, with a 200,000-representative cap and
+300-second time limit. PARI at 280-bit working precision returns 171,874
+signed vectors, or **85,937 representatives up to sign**, occupying all
+4,096 parity classes. There are 4,092 classes with at least thirteen
+representatives. This is numerical candidate selection, not an
+interval-certified exhaustive canonical-height ball. The bound was chosen
+during control development, so this is not a held-out statistical test.
+
+For each thirteen-point packet, construct the degree-two coordinates below
+and test for six disjoint equal-gap pairs over finite fields. At each prime
+test every projective Mobius pole, including infinity. Distinct coordinate
+reductions are required for exclusion; collisions and exceptional chart
+values pass as unresolved to the next prime. A used coordinate cannot be
+the reduced pole when all thirteen reductions are distinct: comparing its
+pair difference with a disjoint pair gives a nonzero numerator in the
+cross-multiplied equation. Consequently the finite pole test remains
+necessary even if an unnormalized rational Mobius matrix has bad reduction.
+
+Primes 1019, 1031 and 1033 leave respectively 360, 5 and 2 packets. Exact
+rational reconstruction finds one six-pair configuration in class 1061
+and none in class 3728. The positive result is precisely the 245 roots
+`(0,106,344,475,594,731)` and `T=5801/10`. The replay verifies the generic
+Mestre identity and matches all twelve visible covariant images, up to
+sign, to the selected MW points on the target fibre. Its
+[certificate](../../artifacts/generated-results/elliptic-curves/curve302_mw_packet_245_control_v1.json)
+records the packet selection, finite exclusions and exact reconstruction.
+The first twelve height-ordered points of the positive packet happen to be
+the twelve known visible images; the thirteenth is not one of those images.
+Neither that fact nor the known class was used to choose the packet.
+
+This recovers a family from the previously recovered MW subspace. It does
+not yet infer the full generic rank-twelve basis solely from that packet:
+the thirteenth Fermigier section and its earlier exact subgroup calibration
+remain the separate control results below.
+
+Before switching to this subspace route, a full exact XOR-convolution pilot
+counted triple decompositions of all rank-twenty parity classes. Ranking
+previously absent classes by decreasing count put the known control class
+199,356th: 199,355 scored higher and 474 tied its count of 1,459. Popularity
+of triple decompositions alone therefore did not repair selection. Local
+pilot inputs and outputs remain under
+`artifacts/local/elliptic-curves/mw-parity-selection/`.
+
+Replay the packet control with:
+
+```
+sage -python elliptic-curves/cas/select_mw_quartic_packet.sage --check
+```
+
+The [target driver](../cas/search_curve302_mw_packets.sage) also checks that
+its optimized array extraction reproduces every control packet exactly:
+
+```
+sage -python elliptic-curves/cas/search_curve302_mw_packets.sage --target 245
+```
+
+The subsequent bounded 302 protocol takes the minimum-determinant retained
+rank-seventeen finalist, the existing additive core, and uses height bound
+190, at most four million vector representatives, thirteen points per
+eligible parity class, primes 1019/1031/1033/1039, at most 32 exact survivor
+packets, one worker and 900 seconds. The height bound is a computational
+coverage choice, not a prediction of generic rank or a completeness bound.
+Checkpoints are under `artifacts/local/elliptic-curves/curve302-mw-packets/`.
+An initial decimal-input conversion failure is retained separately; it
+produced no exclusion.
+
+The [302 screen](../../artifacts/generated-results/elliptic-curves/curve302_mw_packet_rank17_h190_v1.json)
+completed in approximately 202 seconds. It enumerated **2,724,221 vector
+representatives up to sign**, occupying 131,071 of the 131,072 parity
+classes. Of these, **130,706 classes** supplied thirteen points. The four
+modular stages excluded respectively 113,741, 15,437, 1,378 and 129 packets.
+All 21 remaining packets were unresolved because of modular chart issues
+or coordinate collisions, rather than positive finite-field configurations;
+exact rational reconstruction excluded all 21. There were **no six-pair
+hits and no unresolved packets** in the completed screen.
+
+This excludes the pair configuration in those specific packets. In
+particular it does not exclude other point selections in the same classes,
+the 366 classes that did not supply a packet, other subspaces, or every
+Mestre parent. The rank-seventeen candidate is a tested container, not a
+generic-rank requirement. The earlier forced-rank-seventeen 245 candidate
+intersects its actual rank-twelve family space in only rank nine; that is
+a further reason not to infer global provenance from this 302 core.
+
+The exact [packet inputs](../../artifacts/generated-results/elliptic-curves/curve302_mw_packet_rank17_h190_inputs_v1.npz)
+store every selected integer vector. The
+[certificate replay](../cas/verify_curve302_mw_packets.sage) checks their
+hashes, all parity classes, the primitive rank-seventeen embedding, every
+finite exclusion and all 21 rational exclusions. It avoids repeating the
+numerical height enumeration and shares the original chart/detector code.
+
+```
+sage -python elliptic-curves/cas/verify_curve302_mw_packets.sage --check
+```
+
+The construction objective remains open. The new gate is now passed for
+the recovered control subspace. Further construction work must change the
+tested packet or subspace, or use a different family architecture; rerunning
+these frozen packets cannot add information.
+
+## Recovering quartic pairs from MW images, 2026-09-07
+
+The next geometric recognizer now passes an exact supplied-point control.
+Authority: `EC-CURVE302-MW-QUARTIC-PAIR-CONTROL`. The
+[checker](../cas/recover_mw_quartic_pairs.sage) takes the thirteen known 245
+section images in the displayed MW coordinates, scrambles their order, and
+withholds their quartic coordinates and pair labels. Its
+[certificate](../../artifacts/generated-results/elliptic-curves/curve302_mw_quartic_pairs_245_control_v1.json)
+recovers the unique six-pair configuration, the roots
+`(0,106,344,475,594,731)`, and `T=5801/10`. It then checks the generic
+Mestre polynomial identity, a rational isomorphism of the recovered fibre,
+and equality of all twelve visible covariant images with the selected input
+images up to sign. This calibrates geometric recognition **given the correct
+MW images**, not blind selection of those images or a full generic basis.
+
+Here is the coordinate issue resolved by that control. Covariant images of
+the quartic points have the form `Q_i=2R_i-C`. They lie in one class modulo
+twice the displayed MW group. Choose `R_0=O`, so `C=-Q_0`, and compute
+`R_i=(Q_i-Q_0)/2` using the integer MW coordinates. On a short Weierstrass
+model the function
+
+```
+z(R) = (y(R)+y(C))/(x(R)-x(C))
+```
+
+has poles at `O,C` and involution `R -> C-R`. It is therefore a suitable
+degree-two coordinate, up to a rational Mobius transformation. The checker
+verifies this recovery on the control; it fails closed at exceptional
+coordinates not implemented in this control. Directly matching the
+Weierstrass x-coordinates of `Q_i` would omit both the halving and the Mobius
+freedom.
+
+After choosing a finite chart, write four abscissas as `a,b,c,d`. Equality
+of two transformed pair differences determines the Mobius pole `k` through
+
+```
+(a-b)(c-k)(d-k) = +/-(c-d)(a-k)(b-k).
+```
+
+This is quadratic in `k`; also test the affine case `k=infinity`. Every
+six-pair solution contains two disjoint pairs, so this enumerates all
+possible poles for the supplied thirteen coordinates. Here 4,290 equations
+leave 17 candidate poles including infinity, and exactly one pole has six
+disjoint pairs with a common separation. All matchings are enumerated.
+The pair centers recover the roots; half the separation recovers `T`, up
+to the usual affine scaling and reflection. The subsequent polynomial and
+point checks are essential: equal gaps alone do not certify a Mestre parent.
+
+The same replay diagnoses the old point selector exactly. The thirteen
+control image rays occur **zero times** in either the 1,928-vector short
+ball or the 6,798-vector sparse pool. More decisively, **none of the 1,928
+ball seeds has their parity class**. For every such seed `c`, no vector
+`c+2z`, for any integral displayed-basis vector `z`, can equal a known
+control image, even up to sign. Enlarging only the old shift bound cannot
+repair that failure. This does not exclude alternative presentations of
+the family or other parent families.
+
+A cheap retrospective parity audit points to a specific change of selector:
+the missing class is the sum of no two distinct ball-ray classes, but is
+the sum of **1,459 triples** of distinct ball-ray classes. The replay checks
+all 1,857,628 unordered pairs against a parity lookup and stores witness
+triples. This is a diagnostic using the known control class, not a blind
+method for prioritizing unknown classes on 302.
+
+The packet control above now reaches the missing class by enumerating inside
+the previously recovered MW subspace. Triple sums remain a possible source
+of additional classes when such a subspace is unavailable; count popularity
+alone failed the development pilot. Successful configurations must still
+give a surface, a certified generic MW basis and exact specialization. This
+supplied-image control alone asserts no alternative 302 parent or exclusion.
+
+```
+sage -python elliptic-curves/cas/recover_mw_quartic_pairs.sage --check
+```
+
+The declared control limit is thirteen points, 4,290 quadratic equations,
+1,857,628 parity comparisons, one worker and 180 seconds. Replay takes
+approximately one second in the local Sage runtime.
+
+## Calibrated inverse Fermigier recognition, 2026-09-07
+
+The first executable inverse run is complete. It recovers the known 245
+family and its actual transported rank-twelve section subgroup, while
+excluding 302 from the declared height-eight parameter box. The authority
+is `EC-CURVE302-INVERSE-FERMIGIER-H8`; this narrows the parent objective
+without completing it.
+
+Fermigier's two rational parameters `u,v` give six labelled roots. The
+constructor builds `q(X)=product(X-a_i)` and the unique monic degree-six
+`g(X,T)` with
+
+```
+q(X-T)q(X+T) = g(X,T)^2 - T^2 R(X,T),   degree_X R <= 4.
+```
+
+The identity and quartic condition are checked symbolically for each root
+configuration. If `I,J` are the binary-quartic invariants, its Jacobian is
+`y^2=x^3-27I(T)x-27J(T)` and
+
+```
+j(T) = 6912 I(T)^3 / (4 I(T)^3-J(T)^2).
+```
+
+The even parameter dependence permits exact factorization in `Z=T^2`.
+For each root configuration, cancel the common factors of the j-map and
+compare it with the target's exact j-invariant. Modular rejection checks
+all square `Z` residues and the point at infinity; degree loss or a zero
+reduction cannot be counted as an exclusion. Surviving comparisons are
+factored over `Q`. Only rational square linear roots can give rational
+finite `T`; both signs are checked, followed by an exact `Q`-isomorphism
+to the target. Singular raw models and matching infinity limits remain
+unresolved unless local minimalization settles them. None occurs in the
+completed 302 run.
+
+The frozen box is `max(|numerator|,denominator)<=8` for each of `u,v`, in
+lowest terms: 87 rationals and **7,569 ordered pairs**. Of these, 383 have
+repeated roots and lie outside the declared nondegenerate six-root locus.
+Affine normalization and reflection leave **2,578 root configurations**.
+This is not asserted to be a complete fibration-equivalence classification.
+There is **no height cutoff on rational T**. The fixed prime list is
+`101,103,107,109,127,131,137,139,149,151,157,163`, with one worker,
+900 seconds per run and per-configuration checkpoints.
+
+The [245 recognition certificate](../../artifacts/generated-results/elliptic-curves/curve302_inverse_fermigier_245_h8_v1.json)
+finds the roots `(0,106,344,475,594,731)` and `T=+-5801/10`. Its equivalent
+parameter presentations include `(u,v,T_native)=(3/2,2,5801/160)`.
+The known parameter was used only in the post-search control evaluator.
+The [MW control replay](../../artifacts/generated-results/elliptic-curves/curve302_inverse_fermigier_245_mw_control_v1.json)
+then reconstructs the twelve visible quartic points and the extra affine
+section from the recovered parameters, verifies the generic identities,
+and transports their covariant images to the public 245 model. Eleven
+visible images and the extra image give exactly the retained integer
+rank-twelve subgroup. Its Smith factors are `1,2,2,2,2,2,2,2,2,2,2,2` and
+its index in the displayed primitive closure is **2,048**. Fresh complete
+finite-group quotients modulo doubles independently verify the public
+twenty-point independence needed for this comparison. This checks the
+actual subgroup, not just its rank or primitive closure; it is not a new
+generic-saturation theorem for 245.
+
+The [302 result](../../artifacts/generated-results/elliptic-curves/curve302_inverse_fermigier_302_h8_v1.json)
+has **2,577 modular exclusions and one exact exclusion**. The sole modular
+survivor has roots `(0,24662,468768,473773,502957,581750)` and an irreducible
+degree-twelve comparison in `Z`, so it has no rational `T`. There are no
+unresolved configurations and no 302 match. Comparing canonical root tuples
+with the earlier 2,333-six-root screen gives 30 overlaps and **2,548 newly
+tested root configurations**. The old census and this parameter box are
+different finite spaces.
+
+This is a calibrated inverse recognizer with a bounded negative result,
+not a solution of the full rational moduli problem. The next construction
+step must reach parameters outside this box or impose genuine section
+incidence constraints on the moduli equations. Another search for an
+independent section on the completed MW9 K3 cannot achieve that step.
+
+Replay:
+
+```
+sage -python elliptic-curves/cas/inverse_fermigier_parent.sage --target 245 --height 8 --check
+sage -python elliptic-curves/cas/verify_inverse_fermigier_245_control.sage --check
+sage -python elliptic-curves/cas/inverse_fermigier_parent.sage --target 302 --height 8 --check
+```
+
+Local logs and checkpoints are in
+`artifacts/local/elliptic-curves/inverse-fermigier-parent/`. An initial
+Fraction/Sage coercion error and a Smith-form return-type error are retained;
+neither produced a mathematical exclusion. The generic-recognition script
+also preserves unresolved local-minimalization cases instead of rejecting
+a potentially removable singular model.
 
 ## Full arithmetic MW9 certificate
 
@@ -220,23 +509,95 @@ the displayed public quotient is `Z^22 + Z/3`. Generic saturation therefore
 does not imply saturated specialization. No additional independent direction
 on the K3 or on the rational fibre was discovered.
 
-## Next mathematical gates
+## Original construction record: separate open route
 
-1. The baseline arithmetic rank gate is closed. Additional sections or
-   fibration changes on this K3 cannot produce a higher arithmetic generic
-   rank. Recovering a higher-rank parent requires a different underlying
-   surface, such as a different pencil or base change, and an exact reason
-   its section configuration reflects the complete 31-point group.
-2. For construction recovery beyond this baseline, test candidate parent
-   configurations with equations,
-   rational sections, a generic rank upper bound, saturation, and the exact
-   302 specialization map. Use the additive rank-17 core only as a
-   retrospective overlap test, allowing different generic ranks.
-3. The constructed MW9 family now meets the equation/basis/specialization
-   gate for a separate 302-calibrated rank-search lane. Its known exceptional
-   points calibrate recovery at 302; fresh-fibre selection and independent
-   point proofs must be distinguished from that retrospective calibration.
-   The original construction's provenance remains a separate open problem.
+1. Inspect available original records for the family or generation procedure,
+   exact parameter/input values, and generators before basis reduction.
+   No messages may be sent. Do not assume a one-parameter elliptic surface
+   or generic rank seventeen. The catalogue source audit below distinguishes
+   the submitted witness from the still-unknown pre-upload generators.
+2. Preserve any supplied record in its original form with attribution and
+   hash. Replay its model and parameter to the exact public curve, transport
+   its original points, and compare their span with the published basis.
+   Recover a generic basis and rank only when the supplied construction
+   actually defines a family to which those questions apply.
+3. Use that provenance to investigate the source of the exceptional rank
+   and possible improvements. Retain the MW9 theorem and replay as a
+   completed baseline. Its successful 302 specialization alone does not
+   justify promoting it to a major production search. Additional imposed
+   parents are not a substitute for provenance. The calibrated mathematical
+   inverse-construction route above proceeds independently.
+
+The arithmetic rank gate for the baseline is closed. Every elliptic
+fibration over `Q` on that K3 has MW rank at most nine. This remains useful
+evidence, independently of the original construction's provenance.
+
+### Outreach preparation, 2026-09-07
+
+The [catalogue](https://elliptic-rank.icarm.cloud/curve/302) credits Claude,
+Levent Alpöge and Ava Howell. Levent's [linked CV](https://alpo.ge/cv.pdf)
+publishes `alpoge@fas.harvard.edu`; his [homepage](https://alpo.ge/) retains
+the matching abbreviated address. Ava's [website](https://avahowell.me/pages/about/)
+has a contact link, but its protected address was not recoverable in this
+session. No address has been guessed or taken from a namesake's profile.
+
+The [prepared request](CURVE302_PROVENANCE_REQUEST.md) addresses Levent and
+asks him to include Ava if she holds the relevant record. **Not sent and
+inactive:** the user subsequently instructed that no messages be sent.
+Connecting a mail service would not authorize delivery. No reply or
+recovered provenance is claimed.
+
+### Catalogue source audit, 2026-09-07
+
+The [source-review evidence](../../artifacts/generated-results/elliptic-curves/curve302_catalogue_provenance_audit_v1.json)
+pins the public JSON and eight source blobs. The live model and all 31
+ordered points exactly match the retained certified inputs. This is a
+provenance audit, not a new mathematical certificate.
+
+Two code revisions were inspected: current commit
+`15957f7d7d2f539ff9a457264544caac9e7567bf` and the latest repository commit
+preceding the recorded submission,
+`4c9ef36265c3cbc10f5da84fcade3f4bbe6854cc`. The actual deployed revision at
+submission time has not been established.
+
+- **The inspected application does not LLL-reduce its stored witnesses.**
+  Its successful [verifier output](https://github.com/icarm/elliptic-rank/blob/4c9ef36265c3cbc10f5da84fcade3f4bbe6854cc/src/verify.ts#L778)
+  maps each input point through the minimal-model change, preserving order.
+  [Storage](https://github.com/icarm/elliptic-rank/blob/4c9ef36265c3cbc10f5da84fcade3f4bbe6854cc/src/store.ts#L234)
+  serializes those points. The independence algorithm's internal point
+  replacements do not become the stored witness. Thus reduction performed
+  before upload remains a distinct unknown; the catalogue is not evidence
+  that it happened, nor that it did not.
+- **Empty history is inconclusive.** The
+  [contribution-log migration](https://github.com/icarm/elliptic-rank/blob/18bf9b3ce79ea1bf1e58c983dadcbcd2b65cfc48/migrations/0012_curve_events.sql)
+  was introduced on September 2, after 302's August 23 submission, without
+  backfilling earlier events. The public `history: []` cannot certify that
+  the present witness was the first submitted list. The recorded update
+  at `20:16:24` could reflect a rank improvement or a prime/conductor update;
+  the public export does not identify which.
+- **The public store cannot reconstruct the original coordinate model.**
+  Its inspected schema and export retain the minimal model and current
+  witness, without the original input model, its transformation tuple,
+  family parameter, or generation procedure. This says nothing about
+  private logs or backups. No such records were accessed.
+
+A bounded commit-message search found only a coordinate-length limit change
+mentioning a doubled point on a rank-31 curve, not a generation recipe.
+The public issues about subfamilies and literature also supplied no 302
+construction. Public Zulip messages and the gist landing page were not
+readable in the available view and remain unaudited.
+
+This narrows the useful missing evidence to **the pre-upload construction
+record**, rather than an assumed catalogue basis-reduction transform. It
+does not identify a parent. Preserve point ordering for comparison with any
+future source record, while retaining the earlier negative calibration of
+the first-seventeen boundary.
+
+For replay, use the recorded git commits and `git show COMMIT:PATH`, compare
+each blob's SHA-256 with the evidence file, and compare the embedded public
+snapshot with `icarm_curve302.py`. The local source checkout is under
+`artifacts/local/tools/icarm-elliptic-rank-provenance/`; no code from that
+checkout was executed. Only public read operations were used.
 
 Large neighbour, descent, or specialization campaigns require a separate
 finite protocol with a mathematical gate, limits, checkpoints, and replay

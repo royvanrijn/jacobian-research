@@ -1,0 +1,21 @@
+{
+  "archive": "artifacts/generated-results/elliptic-curves/inventory188_point_search_standalone_v1.zip",
+  "archive_bytes": 9980,
+  "archive_sha256": "7466f10e0d0aea696173841de3ee499d2a1cf32ce3d6a2fccb289049ed296df7",
+  "files": [
+    {
+      "bytes": 3193,
+      "path": "elliptic-curves/cas/verify_inventory188_point_search.sage",
+      "sha256": "30c58d7de3e89e085b6615fcb9cae86f53b49b6978b6bbaa0eccddd3bda62754"
+    },
+    {
+      "bytes": 70800,
+      "path": "artifacts/generated-results/elliptic-curves/inventory188_fixed49_point_control_mod2_v1.json",
+      "sha256": "5ff64969ac9ea705ddea8427155437429cdc4fefa2fb167083baf5c430046b8c"
+    }
+  ],
+  "isolated_replay_seconds": 0.8431257010670379,
+  "isolation": "Fresh temporary directory containing only the two archived files. System Sage runtime; no repository imports, public data or source search directory.",
+  "scope": "Standalone exact28-point rank lower bound and49-point membership. Full point-search history and map provenance remain separately replayed retained evidence.",
+  "status": "PASS"
+}

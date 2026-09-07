@@ -1,0 +1,176 @@
+{
+  "catalogue_count": 620,
+  "distinct_j_count": 12,
+  "inventory_count": 201,
+  "rows": [
+    {
+      "catalogue_matches": [],
+      "id": "native19-00",
+      "inventory_matches": [],
+      "model_coefficient_bits": 1276,
+      "parameter": "-75239325853559356632832990168/5946686588662135816916326787",
+      "rank_lower_bound": 19,
+      "score_units": 121594683448962,
+      "word": [
+        -1,
+        0
+      ]
+    },
+    {
+      "catalogue_matches": [],
+      "id": "native19-01",
+      "inventory_matches": [],
+      "model_coefficient_bits": 543,
+      "parameter": "-7119612289/2394065174",
+      "rank_lower_bound": 19,
+      "score_units": 124016921795943,
+      "word": [
+        1,
+        0
+      ]
+    },
+    {
+      "catalogue_matches": [],
+      "id": "native19-02",
+      "inventory_matches": [],
+      "model_coefficient_bits": 1111,
+      "parameter": "2363368659385562602563796/413005307070371729339911",
+      "rank_lower_bound": 19,
+      "score_units": 125968268856603,
+      "word": [
+        0,
+        -1
+      ]
+    },
+    {
+      "catalogue_matches": [],
+      "id": "native19-03",
+      "inventory_matches": [],
+      "model_coefficient_bits": 732,
+      "parameter": "1070928971468708/131218272072197",
+      "rank_lower_bound": 19,
+      "score_units": 110310725959049,
+      "word": [
+        0,
+        1
+      ]
+    },
+    {
+      "catalogue_matches": [],
+      "id": "native19-04",
+      "inventory_matches": [],
+      "model_coefficient_bits": 2375,
+      "parameter": "-1262091640445072211353890758356507125336755951962567018173/3540496987762020402779243354268161548548578071958960912",
+      "rank_lower_bound": 19,
+      "score_units": 123611733988685,
+      "word": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "catalogue_matches": [],
+      "id": "native19-05",
+      "inventory_matches": [],
+      "model_coefficient_bits": 1677,
+      "parameter": "3178813240606526662842337272162585479063/32810492652546924584966163436321372190",
+      "rank_lower_bound": 19,
+      "score_units": 101909963980663,
+      "word": [
+        -1,
+        1
+      ]
+    },
+    {
+      "catalogue_matches": [],
+      "id": "native19-06",
+      "inventory_matches": [],
+      "model_coefficient_bits": 1358,
+      "parameter": "29720269727719887395672757690104/388302050009140023493076788145",
+      "rank_lower_bound": 19,
+      "score_units": 120135701429685,
+      "word": [
+        1,
+        -1
+      ]
+    },
+    {
+      "catalogue_matches": [],
+      "id": "native19-07",
+      "inventory_matches": [],
+      "model_coefficient_bits": 1245,
+      "parameter": "62053928138516551235584034584/204421137942686802584565271",
+      "rank_lower_bound": 19,
+      "score_units": 123372908588500,
+      "word": [
+        1,
+        1
+      ]
+    },
+    {
+      "catalogue_matches": [],
+      "id": "native19-08",
+      "inventory_matches": [],
+      "model_coefficient_bits": 3875,
+      "parameter": "-23767034495653201374186163411498030718038012470109570445634709616372988006844170639409523751988/982679937887547225464088674704901298638973531073403059519958254412394485723311829295159279897",
+      "rank_lower_bound": 19,
+      "score_units": 126642309679919,
+      "word": [
+        -2,
+        0
+      ]
+    },
+    {
+      "catalogue_matches": [],
+      "id": "native19-09",
+      "inventory_matches": [],
+      "model_coefficient_bits": 2385,
+      "parameter": "-1653785682389689952361951311312576707251554628770056751204/32256924103905525077133730556340963603068328758041551699",
+      "rank_lower_bound": 19,
+      "score_units": 117903876400452,
+      "word": [
+        2,
+        0
+      ]
+    },
+    {
+      "catalogue_matches": [],
+      "id": "native19-10",
+      "inventory_matches": [],
+      "model_coefficient_bits": 3539,
+      "parameter": "168497308832577770766633604137146470215993428913793466809835729974763295624398661673714/1708439052749352763898950205955581647970504253431229712323691492885796489770790263309",
+      "rank_lower_bound": 19,
+      "score_units": 124490588388366,
+      "word": [
+        0,
+        -2
+      ]
+    },
+    {
+      "catalogue_matches": [],
+      "id": "native19-11",
+      "inventory_matches": [],
+      "model_coefficient_bits": 2731,
+      "parameter": "850408945641426599512524328478737376133663891791008455388409697814/11003527056434235810015569074730652848801267306530567735920114391",
+      "rank_lower_bound": 19,
+      "score_units": 124743864987727,
+      "word": [
+        0,
+        2
+      ]
+    }
+  ],
+  "schema": "elliptic-curves.retained-native19-intake.v1",
+  "scope": "All twelve finite19-point seed proofs replay. Exact j indexing and Q-isomorphism comparison with620 pinned catalogue equations and201 current inventory curves happen after scoring. This is relative novelty, not universal novelty, a rank increase, or point-search exposure. No catalogue field enters the score calculation.",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/native_rank3_carrier_subgroups_v1.json": "7d390a93c40eedb7c3f9501bf66a72e1a57acb68a271a91c4828d86691a60183",
+    "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v22.json": "5f64cf83268829549a4095dc04a9e69c73513be711c1745b61dc9d8b1a2167b0",
+    "artifacts/generated-results/elliptic-curves/retained_native19_scores_v1.json": "054aaa910d06e7900d486aaa2a6c284048385ac632fc920347f2f84566d83a1d",
+    "artifacts/local/elliptic-curves/inventory200-current-catalogue-v1/database.json": "b378d458aab4b0d09f9fc8e2e382baa7a20236715a8099c52b4573f00239126e",
+    "artifacts/local/elliptic-curves/inventory200-current-catalogue-v1/metadata.json": "f5bab99912e021012fa32b1edc7e3c7316cb28fe7bf4ed30398c145290a82885",
+    "elliptic-curves/cas/audit_inventory200_current_catalogue.py": "fce602ea92b420a26fc064df4e76ac47624782d7725a469722680ddb33a0b8f5",
+    "elliptic-curves/cas/audit_retained_native19_intake.py": "7526a320ca4d544198d4809c84eed59dc17e6ad2f92012c0772e5f7ee9f68b2c",
+    "elliptic-curves/cas/memory_rank_certificate.py": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6"
+  },
+  "status": "PASS"
+}

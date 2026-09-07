@@ -1,0 +1,164 @@
+{
+  "claim_boundary": "Independent Sage membership of all49 worker-cloud points, complete finite group enumeration, quotient-by-doubles matrices and irreducible2-division cubic. This standalone check proves the28-point lower bound. Search history and oracle separation are separate certificates; no exact rank or new curve is claimed.",
+  "exported_basis_rank": 28,
+  "groups": [
+    {
+      "double_subgroup_order": 19,
+      "order": 38,
+      "prime": 29,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 21,
+      "order": 42,
+      "prime": 31,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 27,
+      "order": 54,
+      "prime": 43,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 33,
+      "order": 66,
+      "prime": 53,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 36,
+      "order": 72,
+      "prime": 61,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 41,
+      "order": 82,
+      "prime": 67,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 40,
+      "order": 80,
+      "prime": 71,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 51,
+      "order": 102,
+      "prime": 83,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 54,
+      "order": 108,
+      "prime": 101,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 65,
+      "order": 130,
+      "prime": 109,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 65,
+      "order": 130,
+      "prime": 113,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 36,
+      "order": 144,
+      "prime": 127,
+      "quotient_dimension": 2
+    },
+    {
+      "double_subgroup_order": 77,
+      "order": 154,
+      "prime": 131,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 92,
+      "order": 184,
+      "prime": 163,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 95,
+      "order": 190,
+      "prime": 167,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 102,
+      "order": 204,
+      "prime": 179,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 52,
+      "order": 208,
+      "prime": 181,
+      "quotient_dimension": 2
+    },
+    {
+      "double_subgroup_order": 107,
+      "order": 214,
+      "prime": 191,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 109,
+      "order": 218,
+      "prime": 197,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 59,
+      "order": 236,
+      "prime": 211,
+      "quotient_dimension": 2
+    },
+    {
+      "double_subgroup_order": 124,
+      "order": 248,
+      "prime": 223,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 110,
+      "order": 220,
+      "prime": 227,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 63,
+      "order": 252,
+      "prime": 229,
+      "quotient_dimension": 2
+    },
+    {
+      "double_subgroup_order": 138,
+      "order": 276,
+      "prime": 257,
+      "quotient_dimension": 1
+    },
+    {
+      "double_subgroup_order": 70,
+      "order": 280,
+      "prime": 263,
+      "quotient_dimension": 2
+    }
+  ],
+  "no_two_torsion_prime": 23,
+  "schema": "elliptic-curves.inventory188-point-search-sage.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/inventory188_fixed49_point_control_mod2_v1.json": "5ff64969ac9ea705ddea8427155437429cdc4fefa2fb167083baf5c430046b8c",
+    "elliptic-curves/cas/verify_inventory188_point_search.sage": "30c58d7de3e89e085b6615fcb9cae86f53b49b6978b6bbaa0eccddd3bda62754"
+  },
+  "status": "PASS",
+  "union_finite_rank": 28
+}

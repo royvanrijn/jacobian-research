@@ -1,0 +1,112 @@
+{
+  "schema": "curve302.catalogue-provenance-source-audit.v1",
+  "audit_date": "2026-09-07",
+  "kind": "source_review_not_mathematical_certificate",
+  "repository": "https://github.com/icarm/elliptic-rank",
+  "commits": {
+    "current": "15957f7d7d2f539ff9a457264544caac9e7567bf",
+    "preceding_submission": "4c9ef36265c3cbc10f5da84fcade3f4bbe6854cc",
+    "history_introduction": "18bf9b3ce79ea1bf1e58c983dadcbcd2b65cfc48"
+  },
+  "source_views": [
+    {
+      "revision_role": "current",
+      "commit": "15957f7d7d2f539ff9a457264544caac9e7567bf",
+      "path": "src/verify.ts",
+      "sha256": "092ec6a1d446a2ee520265507195462d6d617787d75197eaadbe88ef91a8e890",
+      "url": "https://github.com/icarm/elliptic-rank/blob/15957f7d7d2f539ff9a457264544caac9e7567bf/src/verify.ts"
+    },
+    {
+      "revision_role": "current",
+      "commit": "15957f7d7d2f539ff9a457264544caac9e7567bf",
+      "path": "src/store.ts",
+      "sha256": "fcda43270df034e00ff584a6da2a62415c7abe7cc4ecf01a9cf8a445ca9ffde1",
+      "url": "https://github.com/icarm/elliptic-rank/blob/15957f7d7d2f539ff9a457264544caac9e7567bf/src/store.ts"
+    },
+    {
+      "revision_role": "current",
+      "commit": "15957f7d7d2f539ff9a457264544caac9e7567bf",
+      "path": "src/index.ts",
+      "sha256": "c2919244f5c2d3cf289b9df1f8fb081a82fa061d2a4627a144013ff3183e24e2",
+      "url": "https://github.com/icarm/elliptic-rank/blob/15957f7d7d2f539ff9a457264544caac9e7567bf/src/index.ts"
+    },
+    {
+      "revision_role": "current",
+      "commit": "15957f7d7d2f539ff9a457264544caac9e7567bf",
+      "path": "migrations/0002_curves.sql",
+      "sha256": "706cc3ef2381cc75d46c7962725844af932e1b2a677930afab3fc34c2748829d",
+      "url": "https://github.com/icarm/elliptic-rank/blob/15957f7d7d2f539ff9a457264544caac9e7567bf/migrations/0002_curves.sql"
+    },
+    {
+      "revision_role": "current",
+      "commit": "15957f7d7d2f539ff9a457264544caac9e7567bf",
+      "path": "migrations/0012_curve_events.sql",
+      "sha256": "c226fa11eab16c7d2782be42aee4d42eb6c07c184d4c957edaec155e83475404",
+      "url": "https://github.com/icarm/elliptic-rank/blob/15957f7d7d2f539ff9a457264544caac9e7567bf/migrations/0012_curve_events.sql"
+    },
+    {
+      "revision_role": "preceding_submission",
+      "commit": "4c9ef36265c3cbc10f5da84fcade3f4bbe6854cc",
+      "path": "src/verify.ts",
+      "sha256": "396935d13fa3779683f1f7e138d91bb7d32e2c2efb698858c096cf5b40585068",
+      "url": "https://github.com/icarm/elliptic-rank/blob/4c9ef36265c3cbc10f5da84fcade3f4bbe6854cc/src/verify.ts"
+    },
+    {
+      "revision_role": "preceding_submission",
+      "commit": "4c9ef36265c3cbc10f5da84fcade3f4bbe6854cc",
+      "path": "src/store.ts",
+      "sha256": "6f1d222b767c5bfda3a086ebafa03cd4f309a861325d020fd33410a7696886b9",
+      "url": "https://github.com/icarm/elliptic-rank/blob/4c9ef36265c3cbc10f5da84fcade3f4bbe6854cc/src/store.ts"
+    },
+    {
+      "revision_role": "history_introduction",
+      "commit": "18bf9b3ce79ea1bf1e58c983dadcbcd2b65cfc48",
+      "path": "migrations/0012_curve_events.sql",
+      "sha256": "c226fa11eab16c7d2782be42aee4d42eb6c07c184d4c957edaec155e83475404",
+      "url": "https://github.com/icarm/elliptic-rank/blob/18bf9b3ce79ea1bf1e58c983dadcbcd2b65cfc48/migrations/0012_curve_events.sql"
+    }
+  ],
+  "catalogue_snapshot": {
+    "url": "https://elliptic-rank.icarm.cloud/curve/302.json",
+    "raw_sha256": "396e3d87af21a40b6516413934fa5e202b8b1c05eb7718de5d734555ad1f37cb",
+    "raw_json": "{\n  \"id\": 302,\n  \"curve_key\": \"61666932677451250957526286528757668905601968707960764583546763139025:-484158229736481797117926468811255292357508238788175012972498868670847390044003856563630907590456883225\",\n  \"ainvs\": [\n    \"1\",\n    \"1\",\n    \"1\",\n    \"-1284727764113567728281797636015784768866707681415849262157224232063\",\n    \"560368321454261339256859338901915312332769858684945406858043869199456710681989058863306170127006181\"\n  ],\n  \"rank_lower_bound\": 31,\n  \"torsion\": [],\n  \"naive_height\": 468.277091963089,\n  \"faltings_height\": 36.74250427555862,\n  \"conductor\": \"9058040138868690262858791849730511364320517732812998655982537144987090191789878126630171056773171491466723174687496041392810438595512770829603147288102844437462050\",\n  \"bad_primes\": [\n    \"2\",\n    \"3\",\n    \"5\",\n    \"7\",\n    \"11\",\n    \"13\",\n    \"19\",\n    \"23\",\n    \"29\",\n    \"37\",\n    \"41\",\n    \"73\",\n    \"131\",\n    \"167\",\n    \"7547\",\n    \"632881\",\n    \"966509\",\n    \"18145679437533309132469\",\n    \"767028866604834801397681553\",\n    \"30580600452196904409276223329355584892025407195996968868775951126238056443210297\"\n  ],\n  \"discriminant\": \"56986667162894850943626331069759320443067423220527305082244725946223212417010574363800489149279120357391198820328667683955054948591887684940751932057558936585975074155693048247805850350226862080000\",\n  \"regulator\": \"5520367374821893536678475926502746956624.072603230810343324240227195436655202216427344786535970988197\",\n  \"points\": [\n    [\n      \"-343746913367434053557936715792581\",\n      \"-31005994945795167281668477280091616990476695982462\"\n    ],\n    [\n      \"739387066521976456185309925500635\",\n      \"3830813927243125109605210052773411116315836476962\"\n    ],\n    [\n      \"794918160232596023344129483097739\",\n      \"6435806665987309972375508567418781686192466975138\"\n    ],\n    [\n      \"552229821725543064455253103966115\",\n      \"-4394327660511778936811414681478594663009127495638\"\n    ],\n    [\n      \"621111741565922967463663441261795\",\n      \"1421683191996488160880565213880200774834445145522\"\n    ],\n    [\n      \"672709190481033101277453068263195\",\n      \"739179814158401859498464392317452223287910224482\"\n    ],\n    [\n      \"821399009280840681555588652225649\",\n      \"-7699942068198872209289633789793873375706107955662\"\n    ],\n    [\n      \"765203485098820658379256355481245\",\n      \"-5034345308760298854369394902951465889284652680168\"\n    ],\n    [\n      \"5399595603851507511243908479925915\",\n      \"388654067273650918227195921742660550010310029109122\"\n    ],\n    [\n      \"752668954339285868300409092384315\",\n      \"4448429560131722871335630396999897920170009189762\"\n    ],\n    [\n      \"665267573831105472345147950403835\",\n      \"-339632380726246052348178275348181915170728600638\"\n    ],\n    [\n      \"2348702476455858806523697264250795\",\n      \"102466166054736815527265002023727452468648322685682\"\n    ],\n    [\n      \"-485301239340016399925702578908055\",\n      \"-32703997667874232639739344802658052943027850955518\"\n    ],\n    [\n      \"1671562150318197588290891477490065\",\n      \"-55528472789639333688258829014227823359584879796238\"\n    ],\n    [\n      \"533792265728561313885832952129951\",\n      \"-5165872676030535509137532850965718653070997396662\"\n    ],\n    [\n      \"8050101189939018648004785213625795/9\",\n      \"-304090504548899861983493167851611965128494136836666/27\"\n    ],\n    [\n      \"641126276756517817380587191947425\",\n      \"475393761225519880788251703870437551199359754892\"\n    ],\n    [\n      \"-28607312564278696457116932283279229/25\",\n      \"2883492798944948226520935391601885431994599305099066/125\"\n    ],\n    [\n      \"56549444812087071231733196839837255/4\",\n      \"13405577698133557868624072930089297336164276021592851/8\"\n    ],\n    [\n      \"1436747523773762064481823443661979\",\n      \"40991896134294415817647888149334972652525806317538\"\n    ],\n    [\n      \"-5064387018792502839844249474841045/9\",\n      \"897570094862437631568619794896775730629375504169894/27\"\n    ],\n    [\n      \"487104273264503086273608258117432335/484\",\n      \"-180314887995146178717423515157548125006198119570993099/10648\"\n    ],\n    [\n      \"25599342024506626201702677512314955\",\n      \"4091893764954118703319829997327215311497327967339042\"\n    ],\n    [\n      \"980266989498097787981788009573917995/961\",\n      \"-525575897314714907955968902277850024344706090034709538/29791\"\n    ],\n    [\n      \"5818507410725525932023407879789875/9\",\n      \"1789182708478717961552943758166081786352797832214/27\"\n    ],\n    [\n      \"19197683320190396803412613672365855/49\",\n      \"-3712724452088495818457900090458774587078999890353974/343\"\n    ],\n    [\n      \"887913128901643530184527456121547975/841\",\n      \"-475948997371817062287059043149845391545859899478008302/24389\"\n    ],\n    [\n      \"1816718417495680977851120075801270195/1849\",\n      \"1248545591609034704022269662335921779441905481482388694/79507\"\n    ],\n    [\n      \"4528903098191425769774358894938128668457595/3630906049\",\n      \"-6558125371552387528524400913253424783234119422079260125534495614/218787505794593\"\n    ],\n    [\n      \"33880100347989327554317013369507240405/52441\",\n      \"-1625428840401701290033088199518465040555146308891387272/12008989\"\n    ],\n    [\n      \"-11477003798992551861310315487329257523535/8922169\",\n      \"-244939776343182008186576362205394985355490153552116110249914/26650518803\"\n    ]\n  ],\n  \"submitter\": \"Ava Howell\",\n  \"history\": [],\n  \"commentary\": \"BSD + GRH certified to rank 31, found by Claude, Levent Alpöge, and Ava Howell.\",\n  \"created_at\": \"2026-08-23 20:02:58\",\n  \"updated_at\": \"2026-08-23 20:16:24\"\n}",
+    "ordered_points_equal_local_certified_inputs": true
+  },
+  "findings": [
+    {
+      "id": "stored_points",
+      "observation": "Both inspected verifiers build successful output by mapping each submitted point through ellchangepoint with EminChange, preserving order; recordCurve serializes that output without lattice reduction. Independence-check working points are separate from stored witnesses.",
+      "boundary": "Source review of two revisions; deployment at submission time is unverified. Pre-upload reduction and original generation order remain UNKNOWN."
+    },
+    {
+      "id": "history",
+      "observation": "Contribution-event migration is in commit18bf9b3 dated2026-09-02, after the2026-08-23 submission. It does not backfill earlier events. The public302 history array is empty.",
+      "boundary": "An empty public history does not prove no earlier replacement; current public witnesses cannot be certified the very first submitted witness set."
+    },
+    {
+      "id": "raw_inputs",
+      "observation": "Inspected schema and successful store path retain minimal-model invariants and current witness points; they do not store the original input model, its change-of-variables tuple, a family parameter or generation script.",
+      "boundary": "This describes the public application source and export, not private logs, backups or unpublished discoverer files."
+    },
+    {
+      "id": "replacement",
+      "observation": "The inspected store path replaces witness points on a strictly higher rank submission; rank and prime/conductor updates can change updated_at.",
+      "boundary": "The2026-08-23 20:16:24 update cannot be identified as a point replacement or metadata-only update from the public export."
+    }
+  ],
+  "source_history_search": {
+    "patterns": [
+      "302",
+      "rank.31",
+      "alp.ge",
+      "howell"
+    ],
+    "matching_commit": "df1e3abee6f7b0f52a6acb2663ea477c23c455ae",
+    "result": "Coordinate-size limit change with a rank31 doubled-point performance example; no construction recipe in that matching commit message. This is a bounded message search."
+  },
+  "access_gaps": [
+    "Public Zulip messages not readable in the available web view",
+    "Public gist landing page unavailable in the available web view"
+  ],
+  "proof_boundary": "No parent recovered, no original unreduced generator list identified, no theorem or rank claim added. No messages sent; outreach prohibited by user."
+}

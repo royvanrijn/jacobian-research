@@ -1,0 +1,44 @@
+{
+  "following_search": null,
+  "rows": [
+    {
+      "completed_generic_center_boxes": 49,
+      "family": "11952",
+      "generic_prefix_dimension": 17,
+      "id": "new-20260906-189",
+      "known_directions_beyond_generic": 9,
+      "own26_center_exposure_in_this_source_run": 0,
+      "parameter": "2618/26913",
+      "parameter_height": 26913,
+      "rank_lower_bound": 26,
+      "source_certificate": "full11952_late64_r17_results_v1.json",
+      "source_curve_index": 2,
+      "source_search": "artifacts/local/elliptic-curves/full11952-late64-r17-pari-v1/11952-0671851/result.json"
+    },
+    {
+      "completed_generic_center_boxes": 43,
+      "family": "a1-fibration-01",
+      "generic_prefix_dimension": 16,
+      "id": "new-20260906-192",
+      "known_directions_beyond_generic": 10,
+      "own26_center_exposure_in_this_source_run": 0,
+      "parameter": "-4444/217",
+      "parameter_height": 4444,
+      "rank_lower_bound": 26,
+      "source_certificate": "fresh60_mw16_results_v1.json",
+      "source_curve_index": 2,
+      "source_search": "artifacts/local/elliptic-curves/fresh60-mw16-pari-v1/fresh-a1-fibration-01-0773/result.json"
+    }
+  ],
+  "schema": "elliptic-curves.recent-outer26-exposure.v1",
+  "scope": "The two retained source runs use only their16/17 generic directions as chart centres, despite ending with26 independent points. This proves an exposure difference available to an own26 policy; it is not an exhaustive repository-wide absence certificate, a rank-gain prediction, or an automatic following campaign.",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/fresh60_mw16_results_v1.json": "6887b3d69c7397f317dfad57356b5c3f6e9739754b18a4d0ee581b16caba60f9",
+    "artifacts/generated-results/elliptic-curves/full11952_late64_r17_results_v1.json": "cc3a3a465e1555249ad0ced589ad1457c25c95f6d58db0dadfb99e7349490283",
+    "artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v22.json": "5f64cf83268829549a4095dc04a9e69c73513be711c1745b61dc9d8b1a2167b0",
+    "artifacts/local/elliptic-curves/fresh60-mw16-pari-v1/fresh-a1-fibration-01-0773/result.json": "7a0ab231df916ee2b8c7e1bdb9b95f0490905bc888ab5000ee2ecb9385f1cf69",
+    "artifacts/local/elliptic-curves/full11952-late64-r17-pari-v1/11952-0671851/result.json": "a3edfd0a2eabec295023a115c2c226cda691d742163137a73f8053d03e6065fa",
+    "elliptic-curves/cas/audit_recent_outer26_exposure.py": "8d34ebbb29e10f88c06c8016d782b70737e226566c043e13685702b288b4796c"
+  },
+  "status": "PASS"
+}

@@ -109,7 +109,7 @@ isomorphism or section transport could be attached.
 ## Earlier reconstruction leads
 
 The current ordered proof gates are in
-[the construction-recovery note](CURVE302_CONSTRUCTION_RECOVERY.md#next-mathematical-gates).
+[the construction-recovery note](CURVE302_CONSTRUCTION_RECOVERY.md#calibrated-inverse-fermigier-recognition-2026-09-07).
 The following point-cloud leads remain bounded exploratory options.
 
 The public BSD+GRH calculation predicts exact rank 31, so a blind 32nd-point

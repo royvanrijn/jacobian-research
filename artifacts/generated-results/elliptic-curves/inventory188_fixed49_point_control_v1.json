@@ -1,0 +1,25 @@
+{
+  "attempted_charts": 49,
+  "claim_boundary": "Known-control detector calibration, not a blind curve discovery or a new parameter population. All49 charts receive125000 height and ten seconds each, without rank stopping, new maps, adaptive centres or following search. Public points are absent from the point worker input.",
+  "completed_charts": 49,
+  "initial_rank_lower_bound": 27,
+  "odd_modulus_lower_bounds": {
+    "3": 28,
+    "5": 28
+  },
+  "point_worker_seconds": 46.42734827497043,
+  "rank_lower_bound": 28,
+  "retained_points": 49,
+  "schema": "elliptic-curves.inventory188-fixed49-outcome.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/inventory188_fixed49_point_control_mod2_v1.json": "5ff64969ac9ea705ddea8427155437429cdc4fefa2fb167083baf5c430046b8c",
+    "artifacts/generated-results/elliptic-curves/inventory188_fixed49_point_control_modl_v1.json": "bc84383f8ef4fb28999bf0dc2bdec496fb03d12604f1fc03107f856aec16bfa9",
+    "artifacts/local/elliptic-curves/inventory188-fixed49-point-control-v1/ledger.json": "a2bfbd70b2cfdb49a6ca92a54bf316129321fc11c4710ea9b4478c3adc8026ce",
+    "artifacts/local/elliptic-curves/inventory188-fixed49-point-control-v1/maps.json": "4a2ac3feb8813e5f9601faed633dad823383882b347d552a6ab2b418f1643a3a",
+    "artifacts/local/elliptic-curves/inventory188-fixed49-point-control-v1/protocol.json": "71603df319bfc63b8aa2cb64797d7546d6a3ef4cd59bbf55a522cd1a3b7cd2bc",
+    "artifacts/local/elliptic-curves/inventory188-fixed49-point-control-v1/result.json": "f41637a570d3b5bce305256c446fe84b6005a45b4759d56d6ed1292d4b7cf27d",
+    "elliptic-curves/cas/inventory188_fixed49_point_control.py": "796b6f4217caeabf57af23158f4a1a1bcc5f0f99e95319fb93320a6f13ccac8e"
+  },
+  "status": "PASS",
+  "total_supervised_seconds": 55.25887581403367
+}

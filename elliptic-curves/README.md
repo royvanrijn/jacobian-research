@@ -1,17 +1,33 @@
 # Elliptic curves over `Q` — ACTIVE
 
-[Curve 302 is the main construction-recovery project](notes/CURVE302_CONSTRUCTION_RECOVERY.md):
-recover an explicit surface over `Q(t)`, a full generic MW basis, and an exact
-specialization to 302, without prescribing generic rank 17. The constructed
-K3 now has a **full generic arithmetic MW9 basis**, determinant 512, and
-`t=1` mapping to 302. Frobenius at 47 closes the rank upper bound. Every
-elliptic fibration over `Q` on this K3 has MW rank at most nine; recovering
-a higher-rank parent requires a different surface. Original provenance
-remains unknown.
+[Curve 302: inverse parent construction](notes/CURVE302_CONSTRUCTION_RECOVERY.md).
+The calibrated inverse Fermigier recognizer recovers 245's family and actual
+rank-twelve section image, then excludes 302 from 2,578 nondegenerate root
+configurations at parameter height eight, with no height bound on rational
+specialization. A new packet selector also recovers 245's six-pair family
+from its previously recovered MW subspace, without supplying section images
+or a parity class. It tests thirteen points per class and verifies the
+generic identity and twelve transported images. The corresponding test on
+302's rank-seventeen candidate excludes that pattern in 130,706 frozen
+thirteen-point packets; other selections and subspaces remain open.
+The broader parent problem remains open. No messages may
+be sent; original provenance is a separate unresolved route.
+The constructed K3's full arithmetic MW9 basis and `t=1` specialization are
+a **completed baseline**. Preserve its certificates without promoting it to
+a major production search solely because it contains 302. Original
+provenance remains unknown.
 
 The [low-height sublattice searches](notes/LOW_HEIGHT_MW_SUBLATTICES_2026-09-06.md) enumerate combinations and common-cover representatives in the full displayed groups of curves245 and302 across ranks8–20. All184 finalists pass arithmetic replay, but both new methods fail the masked Fermigier recovery calibration. The existing rank17 curve302 core is rediscovered exactly; no new generic subgroup or rank is certified.
 
 The [current catalogue refresh](notes/CURRENT_CATALOGUE_AND_PUBLIC28_2026-09-07.md) compares all200 inventory curves with620 equations and finds two matches: IDs12 and188. The other198 remain unmatched. Published28-point data for curve188 independently prove rank at least28 on our earlier27-point curve; this is a public-data reproduction and a missed-direction control, not a new rank28 discovery.
+
+The [known28 point-search control](notes/INVENTORY188_EXCEPTIONAL_DIRECTION_RECOVERY_2026-09-07.md) recovers the extra direction on chart5 using only the old27 seed; all49 boxes and independent rank proofs pass. Its returned representative has coordinate−94237/33087, despite21,952 fixed translated-witness coordinates being outside the same height limit. This calibrates exceptional recovery and exposes a limit of representative-only diagnostics; it is not a new curve.
+
+The [retained outer/native follow-up](notes/RETAINED_OUTER_AND_NATIVE_EXPOSURE_2026-09-07.md) completes196 boxes without rank gain: the two outer curves remain26 and two native carrier fibres remain19. A separately calibrated factor-free mapper prepares all49 charts on a3,875-bit model in2.58 seconds, after the historical pipeline timed out before its first chart. Independent standalone proofs pass; failed preparation costs remain recorded. No new parameter sweep follows.
+
+The [recent parallel-results review](notes/SEARCH_IMPROVEMENTS_FROM_PARALLEL_RESULTS_2026-09-07.md) supplies an exact factor-free preflight for norm-class constructions. It excludes all428 retained dictionary generators from unramified words in0.13 seconds, with independent replay. The review through73602fb5 adds generic Selmer-capacity, root-Jacobian real-topology and constant-cubic carrier bounds as construction gates. These results do not exclude specialized curves or change arithmetic scores.
+
+The [known28 chart-coverage control](notes/INVENTORY188_CHART_COVERAGE_2026-09-07.md) checks fixed translations and geometry from the old27-point subgroup. Neither tested extra public representative becomes visible at125000; own27 charts worsen both coordinate minima. No point enumeration or budget increase follows.
 
 The [fixed retained near-finalist follow-up](notes/RETAINED_MW16_NEAR_FINALISTS_2026-09-07.md) gives identical point exposure to60 previously unsearched curves already ranked7–13 by saved extended scores. All2580 boxes, exact proofs, independent accounting and240 standalone stages pass:16 added directions across nine curves, including new23-point ID201 at family01 -27546/407. Failed preparation cost is charged. InventoryV22 contains201 distinct researched curves with explicit publication status;199 remain unmatched in620 catalogue equations. No new parameter scan runs.
 
@@ -454,7 +470,7 @@ Use [`REPRODUCE.md`](REPRODUCE.md) and the exact checker paths recorded in `../M
 <!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 8a4c932153e2bb2d -->
 <!-- status-consumer: EC-K3-R17-NORM12-ICARM-573-REFRESH a93ce35de34fde21 -->
 <!-- status-consumer: EC-CF-NEARMISS-DESCENT-INPUTS 25c9f212e5162216 -->
-<!-- status-consumer: OP-EC-NEXT b0871cb95a6b27cf -->
+<!-- status-consumer: OP-EC-NEXT 6cffb77d2f73532a -->
 
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-SELMER-PANEL 539bd8ec36b36c44 -->
 

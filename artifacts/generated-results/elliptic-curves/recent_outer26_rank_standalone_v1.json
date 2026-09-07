@@ -1,0 +1,25 @@
+{
+  "archive": "artifacts/generated-results/elliptic-curves/recent_outer26_rank_standalone_v1.zip",
+  "archive_bytes": 16121,
+  "archive_sha256": "acc636855db4447971dacd4effc9f086fae5a8aa36a2e458621670afc78ac340",
+  "files": [
+    {
+      "bytes": 3523,
+      "path": "elliptic-curves/cas/verify_recent_outer26_rank.sage",
+      "sha256": "db28aa9877e3c529a9b9b764a589397dc7717a6a1d93a38198a48ea74335ff9e"
+    },
+    {
+      "bytes": 55821,
+      "path": "artifacts/generated-results/elliptic-curves/recent_outer26_specialized_189_mod2_v1.json",
+      "sha256": "4c677c7ad1145469998248e5c4d1ba26e8d90f8c17dd4bcd4e4884ccca6cde28"
+    },
+    {
+      "bytes": 66983,
+      "path": "artifacts/generated-results/elliptic-curves/recent_outer26_specialized_192_mod2_v1.json",
+      "sha256": "807ee390705605f373670e06f4b62e1e92786d0587164c09e1a4b3432b8b9afe"
+    }
+  ],
+  "isolated_replay_seconds": 0.8929006080143154,
+  "scope": "Fresh directory containing only three archived files. Independent Sage membership of all88 points and rank26 on both curves. Search history and geometry remain separate retained proof inputs.",
+  "status": "PASS"
+}

@@ -1,0 +1,17 @@
+{
+  "all_packet_parities_verified": true,
+  "boundary": "Exact exclusion of a six-disjoint-equal-gap configuration for each frozen13-point packet. No numerical completeness claim, no exclusion of other points or classes or subspaces, no exclusion of all302 parents. Replay shares the chart and detector code.",
+  "input_sha256": {
+    "artifacts/generated-results/elliptic-curves/curve302_mw_packet_rank17_h190_inputs_v1.npz": "082f29864a7715985c8815d335ed545270c105788850d372eacdcc897e008d27",
+    "artifacts/generated-results/elliptic-curves/curve302_mw_packet_rank17_h190_v1.json": "11c67fed929f0953501f54a21f97ead0e3555e85152366aed2e9fb5288eae34b",
+    "elliptic-curves/cas/icarm_curve302.py": "7b3c5f92f92278b7f0823114ef8e9967a9e8c867f1435238a2521938380ec73f",
+    "elliptic-curves/cas/recover_mw_quartic_pairs.sage": "ab61a3b094c048146277344b65c98824273c80cf32f1a8c66df9155fe93cf34e",
+    "elliptic-curves/cas/select_mw_quartic_packet.sage": "dab85bb3273721d76e8865d89be8436a96d96c4f5eaff3d04009a2ae99e97132",
+    "elliptic-curves/cas/verify_curve302_mw_packets.sage": "d187e4c83d9d61812327f732f5114223f44bd5500e2dceda55a09daedbd7f6ad"
+  },
+  "modular_exclusions_replayed": 130685,
+  "primitive_rank17_embedding_verified": true,
+  "rational_exclusions_replayed": 21,
+  "schema": "curve302.mw-packet-replay.v1",
+  "status": "PASS_ALL_130706_FROZEN_PACKET_EXCLUSIONS"
+}

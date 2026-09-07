@@ -1,0 +1,83 @@
+{
+  "boundary": "Inherited certificates supply the boundary and bad sets; only the joins, support inclusion and public finite rank evidence are replayed here.",
+  "following_parameter_scan": null,
+  "norm_preflight_bad_support_checks": [
+    {
+      "bad_places_checked": 6,
+      "id": "case-01"
+    },
+    {
+      "bad_places_checked": 12,
+      "id": "case-02"
+    },
+    {
+      "bad_places_checked": 13,
+      "id": "case-03"
+    },
+    {
+      "bad_places_checked": 17,
+      "id": "case-04"
+    },
+    {
+      "bad_places_checked": 7,
+      "id": "case-05"
+    },
+    {
+      "bad_places_checked": 17,
+      "id": "case-06"
+    },
+    {
+      "bad_places_checked": 11,
+      "id": "case-07"
+    },
+    {
+      "bad_places_checked": 16,
+      "id": "case-09"
+    },
+    {
+      "bad_places_checked": 13,
+      "id": "case-13"
+    },
+    {
+      "bad_places_checked": 16,
+      "id": "case-14"
+    },
+    {
+      "bad_places_checked": 18,
+      "id": "case-15"
+    },
+    {
+      "bad_places_checked": 10,
+      "id": "retained-reference-296"
+    }
+  ],
+  "norm_preflight_forced_zero_count": 428,
+  "production_curve_exclusions": 0,
+  "public28_strict_consequence": {
+    "additional_boundary_capacity_upper_bound": 4,
+    "additional_strict_rational_dimension_lower_bound": 7,
+    "generic_dimension": 17,
+    "generic_strict_dimension": 0,
+    "local_id": "new-20260906-188",
+    "localized_class_dimension_lower_bound": 7,
+    "localized_class_dimension_upper_bound": "UNKNOWN",
+    "previous_rank27_strict_lower_bound": 6,
+    "provenance": "Public-point reproduction joined AFTER masked boundary arithmetic; never a prospective selection feature.",
+    "rank_lower_bound_replayed": 28,
+    "rank_upper_bound": "UNKNOWN"
+  },
+  "schema": "elliptic-curves.search-result-integration.v1",
+  "score_changes": 0,
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/inventory188_public28_reproduction_v1.json": "8ddc99180ab3f5455e60653afef6eeb30621000ad9daa228b0a941e37c4c92f2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_norm_projection_v1.json": "c74e187b68070d29fc87c1e3dd56f3725ab17c7de5f4eda2bd21b52d6b64a6f8",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_strict_boundary_coordinate_comparison_v1.json": "0154b0198c75cefdbde5ff6429fca907938c9574fbcbe03afbff5a18c3ca3ab9",
+    "artifacts/generated-results/elliptic-curves/rank_jump_retained_norm_batch_capacity_inputs_v1.json": "1d339793fae18f32807bcd7944a7627c40edaa0eadc9a07c73fed4550b7c1952",
+    "artifacts/generated-results/elliptic-curves/retained_norm_preflight_inputs_v1.json": "048e0ae775145818dd37bdd0708e1d7f797f1f6e1cab54e40665c747f273d3db",
+    "artifacts/generated-results/elliptic-curves/retained_norm_preflight_sage_v1.json": "71ef4cd64e20e44d687d0436c1c33fd87c749c68be5b7ccc9185df7149ffb2e1",
+    "artifacts/generated-results/elliptic-curves/retained_norm_preflight_v1.json": "ce556bc2bab6c792adc5a4d83a3aff8697eba5d24273b0f65c8ec23d72247cf9",
+    "elliptic-curves/cas/audit_search_result_integration.py": "4bf672480b3bd7a27d65c47c7630c062731d275e9bba61f4506247a97cb7c858"
+  },
+  "status": "PASS"
+}

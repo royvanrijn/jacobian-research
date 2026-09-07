@@ -88,6 +88,15 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-curve302-section-saturation-v1.json
 !/artifacts/generated-results/elkies-k3-curve302-conic-parent-overlap-v1.json
 !/artifacts/generated-results/elkies-k3-curve302-full-mw-basis-v1.json
+!/artifacts/generated-results/elliptic-curves/curve302_catalogue_provenance_audit_v1.json
+!/artifacts/generated-results/elliptic-curves/curve302_inverse_fermigier_245_h8_v1.json
+!/artifacts/generated-results/elliptic-curves/curve302_inverse_fermigier_245_mw_control_v1.json
+!/artifacts/generated-results/elliptic-curves/curve302_inverse_fermigier_302_h8_v1.json
+!/artifacts/generated-results/elliptic-curves/curve302_mw_quartic_pairs_245_control_v1.json
+!/artifacts/generated-results/elliptic-curves/curve302_mw_packet_245_control_v1.json
+!/artifacts/generated-results/elliptic-curves/curve302_mw_packet_rank17_h190_v1.json
+!/artifacts/generated-results/elliptic-curves/curve302_mw_packet_rank17_h190_inputs_v1.npz
+!/artifacts/generated-results/elliptic-curves/curve302_mw_packet_rank17_h190_replay_v1.json
 !/artifacts/generated-results/elkies-k3-r17-norm12-103b2-norm8-pencil-priority-v1.json
 !/artifacts/generated-results/elkies-k3-r17-norm12-103b2-norm8-pencil-priority-v1.tsv
 !/artifacts/generated-results/elkies-k3-r17-norm12-orbit103b2-direct-fibration-v1.json

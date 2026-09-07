@@ -1,0 +1,43 @@
+{
+  "independent_coordinates": 21952,
+  "independent_rational_group_sums": 112,
+  "minima": [
+    {
+      "arm": "own27",
+      "chart": 43,
+      "coordinate": [
+        "-119747429439",
+        "44329639748"
+      ],
+      "height": 119747429439,
+      "infinity": false,
+      "public_index": 26,
+      "representative_index": 1,
+      "sign": 1,
+      "within_height_or_infinity": false
+    },
+    {
+      "arm": "own27",
+      "chart": 43,
+      "coordinate": [
+        "-119747429439",
+        "44329639748"
+      ],
+      "height": 119747429439,
+      "infinity": false,
+      "public_index": 27,
+      "representative_index": 1,
+      "sign": 1,
+      "within_height_or_infinity": false
+    }
+  ],
+  "schema": "elliptic-curves.inventory188-nearest-translates-replay.v1",
+  "scope": "Exact metric transports, finite independence, group sums and coordinates. Floating CVP optimality is not certified; oracle-assisted coverage is not a prospective recovery.",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/inventory188_nearest_translate_visibility_v2.json": "51da2c550286c1fd64e0fc2b69afe81258b42bfc94aa73cf8d82f482f5163178",
+    "artifacts/local/elliptic-curves/inventory188-nearest-translates-v2/protocol.json": "a86d8a820942fd63bd33c0b373d680a25d0e7b842cffaa7e8e33c7a9e09da97d",
+    "elliptic-curves/cas/verify_inventory188_nearest_translates_v2.py": "026b23587d697d36df8abbfcda712d2d4dcd603416738b7c6cb5477a82f3d132"
+  },
+  "status": "PASS",
+  "within_height_or_infinity": 0
+}

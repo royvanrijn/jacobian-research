@@ -107,3 +107,5 @@ rechecks the changed28-point basis, checks current catalogue comparisons and
 verifies every CSV cell. The public basis also has its independent Sage
 finite-group proof above. The exporter is
 `elliptic-curves/cas/export_publication_aware_inventory_v22.py --check`.
+
+The subsequent [fixed translation and own27 geometry control](INVENTORY188_CHART_COVERAGE_2026-09-07.md) checks coverage without another point search.

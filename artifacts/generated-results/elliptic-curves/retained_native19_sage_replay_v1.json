@@ -1,0 +1,364 @@
+{
+  "rows": [
+    {
+      "exported_basis_rank": 19,
+      "groups": [
+        {
+          "double_subgroup_order": 6,
+          "order": 12,
+          "prime": 7,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 16,
+          "order": 32,
+          "prime": 23,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 24,
+          "order": 48,
+          "prime": 37,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 27,
+          "order": 54,
+          "prime": 41,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 36,
+          "order": 72,
+          "prime": 59,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 36,
+          "order": 72,
+          "prime": 61,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 19,
+          "order": 76,
+          "prime": 67,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 19,
+          "order": 76,
+          "prime": 71,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 45,
+          "order": 90,
+          "prime": 79,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 49,
+          "order": 98,
+          "prime": 83,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 54,
+          "order": 108,
+          "prime": 89,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 59,
+          "order": 118,
+          "prime": 101,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 64,
+          "order": 128,
+          "prime": 107,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 38,
+          "order": 152,
+          "prime": 131,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 80,
+          "order": 160,
+          "prime": 139,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 91,
+          "order": 182,
+          "prime": 157,
+          "quotient_dimension": 1
+        }
+      ],
+      "input": "artifacts/generated-results/elliptic-curves/retained_native19_trial_v3_08_mod2_v1.json",
+      "no_two_torsion_prime": 29,
+      "point_count": 19,
+      "union_finite_rank": 19
+    },
+    {
+      "exported_basis_rank": 19,
+      "groups": [
+        {
+          "double_subgroup_order": 27,
+          "order": 54,
+          "prime": 41,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 34,
+          "order": 68,
+          "prime": 53,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 18,
+          "order": 72,
+          "prime": 59,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 19,
+          "order": 76,
+          "prime": 61,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 36,
+          "order": 72,
+          "prime": 71,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 22,
+          "order": 88,
+          "prime": 73,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 24,
+          "order": 96,
+          "prime": 89,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 63,
+          "order": 126,
+          "prime": 107,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 67,
+          "order": 134,
+          "prime": 113,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 39,
+          "order": 156,
+          "prime": 139,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 76,
+          "order": 152,
+          "prime": 151,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 76,
+          "order": 152,
+          "prime": 157,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 45,
+          "order": 180,
+          "prime": 167,
+          "quotient_dimension": 2
+        }
+      ],
+      "input": "artifacts/generated-results/elliptic-curves/retained_native19_trial_v3_01_mod2_v1.json",
+      "no_two_torsion_prime": 31,
+      "point_count": 19,
+      "union_finite_rank": 19
+    },
+    {
+      "exported_basis_rank": 28,
+      "groups": [
+        {
+          "double_subgroup_order": 19,
+          "order": 38,
+          "prime": 29,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 21,
+          "order": 42,
+          "prime": 31,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 27,
+          "order": 54,
+          "prime": 43,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 33,
+          "order": 66,
+          "prime": 53,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 36,
+          "order": 72,
+          "prime": 61,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 41,
+          "order": 82,
+          "prime": 67,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 40,
+          "order": 80,
+          "prime": 71,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 51,
+          "order": 102,
+          "prime": 83,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 54,
+          "order": 108,
+          "prime": 101,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 65,
+          "order": 130,
+          "prime": 109,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 65,
+          "order": 130,
+          "prime": 113,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 36,
+          "order": 144,
+          "prime": 127,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 77,
+          "order": 154,
+          "prime": 131,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 92,
+          "order": 184,
+          "prime": 163,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 95,
+          "order": 190,
+          "prime": 167,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 102,
+          "order": 204,
+          "prime": 179,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 52,
+          "order": 208,
+          "prime": 181,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 107,
+          "order": 214,
+          "prime": 191,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 109,
+          "order": 218,
+          "prime": 197,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 59,
+          "order": 236,
+          "prime": 211,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 124,
+          "order": 248,
+          "prime": 223,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 110,
+          "order": 220,
+          "prime": 227,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 63,
+          "order": 252,
+          "prime": 229,
+          "quotient_dimension": 2
+        },
+        {
+          "double_subgroup_order": 138,
+          "order": 276,
+          "prime": 257,
+          "quotient_dimension": 1
+        },
+        {
+          "double_subgroup_order": 70,
+          "order": 280,
+          "prime": 263,
+          "quotient_dimension": 2
+        }
+      ],
+      "input": "artifacts/generated-results/elliptic-curves/factor_free_known28_control_v1.json",
+      "no_two_torsion_prime": 23,
+      "point_count": 29,
+      "union_finite_rank": 28
+    }
+  ],
+  "schema": "elliptic-curves.retained-native19-sage.v1",
+  "scope": "Standalone Sage point membership, complete finite groups and quotients by doubles, exported-basis independence and rational2-torsion exclusion. Only rank lower bounds; source search history is separately verified.",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/factor_free_known28_control_v1.json": "5c4811e4042542ae9c9a4319e57c3b578c3b9f2fda2fba1fb4c6e0b80b73f4a9",
+    "artifacts/generated-results/elliptic-curves/retained_native19_trial_v3_01_mod2_v1.json": "5939b567b9d183df43136ce03086f39c97b0f5d2182a7a73028ff96c89fbff69",
+    "artifacts/generated-results/elliptic-curves/retained_native19_trial_v3_08_mod2_v1.json": "3ecbb5a190ab396fb6e24dda65746d75115ea7f15b8ffae70758baefe42f731f",
+    "elliptic-curves/cas/verify_retained_native19_rank.sage": "08713532b2589f6e01d79a2146e087d646886d51b38dc6c8532db007c67ad029"
+  },
+  "status": "PASS"
+}

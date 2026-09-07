@@ -1,0 +1,12 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/retained_norm_preflight_inputs_v1.json": "048e0ae775145818dd37bdd0708e1d7f797f1f6e1cab54e40665c747f273d3db",
+    "artifacts/generated-results/elliptic-curves/retained_norm_preflight_v1.json": "ce556bc2bab6c792adc5a4d83a3aff8697eba5d24273b0f65c8ec23d72247cf9",
+    "elliptic-curves/cas/verify_retained_norm_preflight.sage": "212dac3950827d5f40e9aec577566abaec1f735867b02c29d72f0a6c3011c741"
+  },
+  "boundary": "Necessary coefficient restrictions; no class admissibility or elliptic rank exclusion.",
+  "independent_isolation_witnesses": 428,
+  "independent_resultant_norms": 428,
+  "schema": "elliptic-curves.retained-norm-preflight-sage.v1",
+  "status": "PASS"
+}
