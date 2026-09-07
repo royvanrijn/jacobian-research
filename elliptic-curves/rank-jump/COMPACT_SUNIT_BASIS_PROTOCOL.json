@@ -1,0 +1,12 @@
+{
+  "schema": "rank-jump.compact-sunit-basis-protocol.v1",
+  "question": "Can a smaller factor base with random relations obtain the missing compact S-unit basis on the fixed 103b2 pair within the existing memory envelope?",
+  "cases": ["case-02", "case-03"],
+  "inputs": "Previously certified reduced cubic, maximal order and S_finite from the matched class-boundary certificate. No point coordinates or character masks are projected into the worker input.",
+  "method": "PARI bnfinit with flag 1 and tech=[0.03,0.03,-1], then bnfunits on all prime ideals above S. Retain compact factorizations before attempting any certification. This changes relation strategy and factor-base size, not the tested fields or computational memory limit.",
+  "method_source": "B. Allombert, PARI 2026 class groups tutorial, slides 2-3 and 9-10: https://pari.math.u-bordeaux.fr/Events/PARI2026/talks/bnfinit.pdf",
+  "bounds": {"seconds_per_case": 30, "pari_stack_bytes": 268435456, "initial_stack_bytes": 64000000, "workers": 1, "random_seed": 20260907},
+  "positive_control": "Run the same bnfinit/bnfunits interface on x^3-11 with S above 2,3,11 before either research field; verify its class group using bnfcertify.",
+  "failure_semantics": "A timeout or stack exhaustion remains UNKNOWN class group and UNKNOWN S-unit basis. No rerun with more resources or changed parameters. A returned uncertified BNF is labelled conditional, not an exact class-group certificate.",
+  "boundary": "Equation-only bounded retrospective computation. No new parameter or point search, no exceptional inputs, no active worker or candidate-policy changes."
+}

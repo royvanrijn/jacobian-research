@@ -1,0 +1,965 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_compact_sunit_basis_inputs_v1.json": "132c93ebfbc1fc498fb1137377ebb8155ccb76a99839950dab2a1b70b54bde53",
+    "artifacts/generated-results/elliptic-curves/rank_jump_compact_sunit_basis_v1.json": "d352f6c12c79c69df4b2309fe90093c0f5d960632b53181df2eb9867589761ed",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/rank-jump/verify_compact_sunit_basis.py": "6da45f77063b7c0c3b8abbab0b9e0a570d154a627417ca0eea97b4ae24da168e"
+  },
+  "boundary": "Only the small compact-unit control is certified. No full research-field computation is replayed; research class groups, S-units and extra strict classes remain UNKNOWN.",
+  "control": {
+    "S_class_two_rank": 0,
+    "S_finite": [
+      2,
+      3,
+      11
+    ],
+    "cubic_ascending": [
+      -11,
+      0,
+      0,
+      1
+    ],
+    "local_power_checks": 24,
+    "norm_square_S_unit_dimension": 2,
+    "ordinary_S_unit_generators": [
+      {
+        "S_valuations": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "factors": [
+          {
+            "coefficients": [
+              "2",
+              "0",
+              "0"
+            ],
+            "exponent": -2,
+            "projected_local_bits": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "coefficients": [
+              "3",
+              "1",
+              "-1"
+            ],
+            "exponent": 1,
+            "projected_local_bits": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "coefficients": [
+              "5",
+              "2",
+              "1"
+            ],
+            "exponent": 2,
+            "projected_local_bits": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "generator": 0,
+        "norm_square_projected_local_bits": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "S_valuations": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "factors": [
+          {
+            "coefficients": [
+              "2",
+              "0",
+              "0"
+            ],
+            "exponent": -1,
+            "projected_local_bits": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "coefficients": [
+              "3",
+              "1",
+              "-1"
+            ],
+            "exponent": 1,
+            "projected_local_bits": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "coefficients": [
+              "5",
+              "2",
+              "1"
+            ],
+            "exponent": 1,
+            "projected_local_bits": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "generator": 1,
+        "norm_square_projected_local_bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "S_valuations": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "factors": [
+          {
+            "coefficients": [
+              "-2",
+              "1",
+              "0"
+            ],
+            "exponent": 1,
+            "projected_local_bits": [
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "generator": 2,
+        "norm_square_projected_local_bits": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "S_valuations": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "factors": [
+          {
+            "coefficients": [
+              "0",
+              "1",
+              "0"
+            ],
+            "exponent": 1,
+            "projected_local_bits": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "generator": 3,
+        "norm_square_projected_local_bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "S_valuations": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "factors": [
+          {
+            "coefficients": [
+              "3",
+              "0",
+              "0"
+            ],
+            "exponent": 1,
+            "projected_local_bits": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "coefficients": [
+              "-19",
+              "-4",
+              "7"
+            ],
+            "exponent": 4,
+            "projected_local_bits": [
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "coefficients": [
+              "23",
+              "0",
+              "1"
+            ],
+            "exponent": -3,
+            "projected_local_bits": [
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "coefficients": [
+              "1",
+              "-1",
+              "2"
+            ],
+            "exponent": -2,
+            "projected_local_bits": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "generator": 4,
+        "norm_square_projected_local_bits": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "S_valuations": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "factors": [
+          {
+            "coefficients": [
+              "-1",
+              "0",
+              "0"
+            ],
+            "exponent": 1,
+            "projected_local_bits": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "generator": 5,
+        "norm_square_projected_local_bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "ordinary_class_group": [
+      2
+    ],
+    "projected_local_rank": 2,
+    "strict_S_unit_dimension": 0
+  },
+  "research_fields": [
+    {
+      "constant_requested_relation_count": 273,
+      "factor_base_initial_columns": 350,
+      "logged_relation_requests": [
+        [
+          273,
+          350
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ],
+        [
+          273,
+          268
+        ]
+      ],
+      "returned_S_unit_basis": false,
+      "returned_bnf": false,
+      "status": "UNKNOWN",
+      "token": "case-02"
+    },
+    {
+      "constant_requested_relation_count": 328,
+      "factor_base_initial_columns": 421,
+      "logged_relation_requests": [
+        [
+          328,
+          421
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ],
+        [
+          328,
+          323
+        ]
+      ],
+      "returned_S_unit_basis": false,
+      "returned_bnf": false,
+      "status": "UNKNOWN",
+      "token": "case-03"
+    }
+  ],
+  "schema": "rank-jump.compact-sunit-basis-verification.v1",
+  "status": "PASS"
+}
