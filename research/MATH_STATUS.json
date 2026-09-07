@@ -3,6 +3,40 @@
   "authority": "MATH_STATUS.json",
   "entries": [
     {
+      "id": "EC-ADAPTIVE-HALF-LATTICE-CASCADE-V2-20260907",
+      "kind": "example",
+      "state": "proved",
+      "title": "Frozen full-extension V2 autonomously reaches rank30 on302; rank31 goal remains unmet",
+      "scope": "A separate calibration-only V2 starts from generic MW17 under one source-hashed policy with no amendments. It certifies every successive rank17 through30, then completes a30->30 no-gain epoch and stops. At each subgroup it scores all2^(r-17) extensions of each of32 retained base anchors:524256 coset evaluations across14 landscapes,5600 exact rational LDL CVP refinements in a frozen rounded height metric, and906 completed factor-free pointed-quartic charts with no timeout. Each certified gain immediately cancels remaining stale charts and rebuilds the full extension landscape;2834 chart slots are cancelled. Selection uses coset fingerprints and geometric metrics, not mask-integer priorities. Five gains use extensions outside the first64 prefix in their displayed bases; this is not a controlled attribution to that cutoff alone. Independent replay verifies all height decision forms, LLL transports, full coverage, shortlists, exact minima, chart witnesses, and per-chart mod2 certificates; every gain has separate mod3/mod5 certificates. A terminal post-run mod3/mod5 audit also gives finite column rank30. All906 certificate clouds are bound to their exact transcripts, the artifact guard rejects an unredacted-parent read, and1169 recorded V1 source/checkpoint hashes remain unchanged. The note proves coordinate independence of transported extension-fibre coverage and finite-coset fingerprints, exact rounded-metric CVP correctness, and2-saturation from injective finite mod2 fingerprints with no rational2-torsion. It does not assert full-policy basis invariance, exact canonical-height minima, dependence of all other returned points, an upper rank bound, autonomous31, or a new rank record. No V2 controls or post-stop policy retuning are included.",
+      "canonical_source": "elliptic-curves/notes/ADAPTIVE_HALF_LATTICE_V2_2026-09-07.md",
+      "dependencies": [
+        "EC-CURVE302-RECOVERED-MW17-PARENT",
+        "EC-CURVE302-PARENT-DEGREE2-MULTISECTION-QUOTIENT",
+        "EC-ADAPTIVE-HALF-LATTICE-CASCADE-20260907"
+      ],
+      "checker": "elliptic-curves/cas/check_visibility_cascade_v2.sage",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:9e836ce3dcb3f83f41f335351a3890393f70b84fcd877dfaac17dd718d25ece1",
+      "software_lock": [
+        "elliptic-curves/cas/adaptive_visibility_cascade_v2.sage",
+        "elliptic-curves/cas/visibility_lattice_v2.py",
+        "elliptic-curves/cas/check_visibility_cascade_v2.sage",
+        "elliptic-curves/cas/check_visibility_metric_v2.sage",
+        "elliptic-curves/cas/finalize_visibility_cascade_v2.py",
+        "artifacts/generated-results/elliptic-curves/adaptive_visibility_cascade_v2.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "EC-ADAPTIVE-HALF-LATTICE-CASCADE-20260907",
       "kind": "example",
       "state": "proved",

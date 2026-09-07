@@ -1,0 +1,908 @@
+{
+  "artifacts": {
+    "figure": "artifacts/generated-results/elliptic-curves/curve302_exceptional_subgroup_landscape_v1.svg",
+    "table": "artifacts/generated-results/elliptic-curves/curve302_exceptional_subgroup_landscape_v1.tsv"
+  },
+  "autonomous_V1_comparison": {
+    "interpretation": "Each autonomous point is expressed and exactly verified in the fixed 31-point basis. These are arbitrary subgroup directions, not a permutation of the fourteen diagnostic coordinate axes, so they are compared as subgroup states rather than falsely as a 14-direction order.",
+    "stages": [
+      {
+        "direction_costs": {
+          "0": {
+            "continuous_lower_bound_scaled": "18617514.2457",
+            "fresh_numerator": 102309244
+          },
+          "1": {
+            "continuous_lower_bound_scaled": "4.47034835815e-08",
+            "fresh_numerator": 0
+          },
+          "10": {
+            "continuous_lower_bound_scaled": "271792835.308",
+            "fresh_numerator": 1143127174
+          },
+          "11": {
+            "continuous_lower_bound_scaled": "337231168.598",
+            "fresh_numerator": 1393518864
+          },
+          "12": {
+            "continuous_lower_bound_scaled": "25202737.3",
+            "fresh_numerator": 158555491
+          },
+          "13": {
+            "continuous_lower_bound_scaled": "120507902.352",
+            "fresh_numerator": 525407958
+          },
+          "2": {
+            "continuous_lower_bound_scaled": "28157847.1644",
+            "fresh_numerator": 161400849
+          },
+          "3": {
+            "continuous_lower_bound_scaled": "15917596.1774",
+            "fresh_numerator": 123778523
+          },
+          "4": {
+            "continuous_lower_bound_scaled": "52052715.1822",
+            "fresh_numerator": 249663218
+          },
+          "5": {
+            "continuous_lower_bound_scaled": "132831436.993",
+            "fresh_numerator": 567637219
+          },
+          "6": {
+            "continuous_lower_bound_scaled": "280945699.945",
+            "fresh_numerator": 1160755039
+          },
+          "7": {
+            "continuous_lower_bound_scaled": "368931613.067",
+            "fresh_numerator": 1519612820
+          },
+          "8": {
+            "continuous_lower_bound_scaled": "160327927.817",
+            "fresh_numerator": 684407011
+          },
+          "9": {
+            "continuous_lower_bound_scaled": "337104765.711",
+            "fresh_numerator": 1377161869
+          }
+        },
+        "new_words": [
+          [
+            0,
+            1,
+            2,
+            -1,
+            0,
+            0,
+            -1,
+            1,
+            1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            2,
+            -2,
+            4,
+            -1,
+            -1,
+            2,
+            -3,
+            0,
+            2,
+            1,
+            -4,
+            3,
+            2,
+            2,
+            -1,
+            2,
+            2,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            -1
+          ]
+        ],
+        "rank_after": 19,
+        "rank_before": 17,
+        "wave": 0
+      },
+      {
+        "direction_costs": {
+          "0": {
+            "continuous_lower_bound_scaled": "0",
+            "fresh_numerator": 0
+          },
+          "1": {
+            "continuous_lower_bound_scaled": "1.49011611938e-08",
+            "fresh_numerator": 0
+          },
+          "10": {
+            "continuous_lower_bound_scaled": "63180668.9607",
+            "fresh_numerator": 279077713
+          },
+          "11": {
+            "continuous_lower_bound_scaled": "80916162.1332",
+            "fresh_numerator": 367898164
+          },
+          "12": {
+            "continuous_lower_bound_scaled": "16626394.8709",
+            "fresh_numerator": 113325193
+          },
+          "13": {
+            "continuous_lower_bound_scaled": "93736188.9497",
+            "fresh_numerator": 413981609
+          },
+          "2": {
+            "continuous_lower_bound_scaled": "4.47034835815e-08",
+            "fresh_numerator": 0
+          },
+          "3": {
+            "continuous_lower_bound_scaled": "15242119.1861",
+            "fresh_numerator": 116686481
+          },
+          "4": {
+            "continuous_lower_bound_scaled": "32198790.7705",
+            "fresh_numerator": 183304139
+          },
+          "5": {
+            "continuous_lower_bound_scaled": "102204831.196",
+            "fresh_numerator": 473828003
+          },
+          "6": {
+            "continuous_lower_bound_scaled": "102190925.273",
+            "fresh_numerator": 446328798
+          },
+          "7": {
+            "continuous_lower_bound_scaled": "62936237.5538",
+            "fresh_numerator": 289032822
+          },
+          "8": {
+            "continuous_lower_bound_scaled": "39831581.9245",
+            "fresh_numerator": 227496760
+          },
+          "9": {
+            "continuous_lower_bound_scaled": "140182269.344",
+            "fresh_numerator": 601024193
+          }
+        },
+        "new_words": [
+          [
+            6,
+            -5,
+            -8,
+            0,
+            1,
+            -3,
+            6,
+            -6,
+            2,
+            -3,
+            10,
+            -2,
+            3,
+            4,
+            8,
+            1,
+            1,
+            -5,
+            -3,
+            0,
+            0,
+            -3,
+            -1,
+            2,
+            0,
+            1,
+            1,
+            -1,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            1,
+            1,
+            -1,
+            1,
+            0,
+            1,
+            -1,
+            1,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -3,
+            2,
+            5,
+            0,
+            0,
+            2,
+            -2,
+            3,
+            0,
+            3,
+            -4,
+            0,
+            -1,
+            -2,
+            -2,
+            1,
+            0,
+            1,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rank_after": 22,
+        "rank_before": 19,
+        "wave": 1
+      },
+      {
+        "direction_costs": {
+          "0": {
+            "continuous_lower_bound_scaled": "0",
+            "fresh_numerator": 0
+          },
+          "1": {
+            "continuous_lower_bound_scaled": "5.96046447754e-08",
+            "fresh_numerator": 0
+          },
+          "10": {
+            "continuous_lower_bound_scaled": "48286533.3058",
+            "fresh_numerator": 247805362
+          },
+          "11": {
+            "continuous_lower_bound_scaled": "51585567.8863",
+            "fresh_numerator": 250277221
+          },
+          "12": {
+            "continuous_lower_bound_scaled": "16624297.9114",
+            "fresh_numerator": 113325193
+          },
+          "13": {
+            "continuous_lower_bound_scaled": "19969721.3874",
+            "fresh_numerator": 131741262
+          },
+          "2": {
+            "continuous_lower_bound_scaled": "4.47034835815e-08",
+            "fresh_numerator": 0
+          },
+          "3": {
+            "continuous_lower_bound_scaled": "4.47034835815e-08",
+            "fresh_numerator": 0
+          },
+          "4": {
+            "continuous_lower_bound_scaled": "13313688.7405",
+            "fresh_numerator": 94508900
+          },
+          "5": {
+            "continuous_lower_bound_scaled": "38792969.4442",
+            "fresh_numerator": 221053378
+          },
+          "6": {
+            "continuous_lower_bound_scaled": "35111028.6731",
+            "fresh_numerator": 176505640
+          },
+          "7": {
+            "continuous_lower_bound_scaled": "61699767.634",
+            "fresh_numerator": 285287205
+          },
+          "8": {
+            "continuous_lower_bound_scaled": "39716711.217",
+            "fresh_numerator": 227496760
+          },
+          "9": {
+            "continuous_lower_bound_scaled": "63230494.1629",
+            "fresh_numerator": 304858424
+          }
+        },
+        "new_words": [
+          [
+            -2,
+            2,
+            3,
+            1,
+            0,
+            1,
+            -1,
+            2,
+            1,
+            2,
+            -3,
+            0,
+            1,
+            -3,
+            -3,
+            1,
+            1,
+            0,
+            1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "rank_after": 23,
+        "rank_before": 22,
+        "wave": 2
+      },
+      {
+        "direction_costs": {
+          "0": {
+            "continuous_lower_bound_scaled": "0",
+            "fresh_numerator": 0
+          },
+          "1": {
+            "continuous_lower_bound_scaled": "2.98023223877e-08",
+            "fresh_numerator": 0
+          },
+          "10": {
+            "continuous_lower_bound_scaled": "13068980.5594",
+            "fresh_numerator": 121491328
+          },
+          "11": {
+            "continuous_lower_bound_scaled": "35696792.2169",
+            "fresh_numerator": 186094208
+          },
+          "12": {
+            "continuous_lower_bound_scaled": "10084051.7331",
+            "fresh_numerator": 87912556
+          },
+          "13": {
+            "continuous_lower_bound_scaled": "16189692.769",
+            "fresh_numerator": 114775663
+          },
+          "2": {
+            "continuous_lower_bound_scaled": "1.9371509552e-07",
+            "fresh_numerator": 0
+          },
+          "3": {
+            "continuous_lower_bound_scaled": "3.27825546265e-07",
+            "fresh_numerator": 0
+          },
+          "4": {
+            "continuous_lower_bound_scaled": "9.53674316406e-07",
+            "fresh_numerator": 0
+          },
+          "5": {
+            "continuous_lower_bound_scaled": "23150488.5484",
+            "fresh_numerator": 149259190
+          },
+          "6": {
+            "continuous_lower_bound_scaled": "13068980.5594",
+            "fresh_numerator": 121491328
+          },
+          "7": {
+            "continuous_lower_bound_scaled": "28156229.0019",
+            "fresh_numerator": 166413937
+          },
+          "8": {
+            "continuous_lower_bound_scaled": "16189692.769",
+            "fresh_numerator": 114775663
+          },
+          "9": {
+            "continuous_lower_bound_scaled": "23150488.5484",
+            "fresh_numerator": 149259190
+          }
+        },
+        "new_words": [
+          [
+            1,
+            0,
+            -2,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            2,
+            0,
+            0,
+            -1,
+            1,
+            1,
+            1,
+            -1,
+            0,
+            1,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            -1,
+            1,
+            0,
+            -1,
+            1,
+            -1,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            0,
+            1,
+            0,
+            -2,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            -3,
+            -4,
+            2,
+            -2,
+            1,
+            3,
+            -3,
+            2,
+            -2,
+            1,
+            -1,
+            4,
+            -1,
+            1,
+            -1,
+            1,
+            -2,
+            -2,
+            0,
+            0,
+            -2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "rank_after": 26,
+        "rank_before": 23,
+        "wave": 3
+      },
+      {
+        "direction_costs": {
+          "0": {
+            "continuous_lower_bound_scaled": "0",
+            "fresh_numerator": 0
+          },
+          "1": {
+            "continuous_lower_bound_scaled": "7.45058059692e-08",
+            "fresh_numerator": 0
+          },
+          "10": {
+            "continuous_lower_bound_scaled": "4.76837158203e-07",
+            "fresh_numerator": 0
+          },
+          "11": {
+            "continuous_lower_bound_scaled": "13928415.1248",
+            "fresh_numerator": 127156412
+          },
+          "12": {
+            "continuous_lower_bound_scaled": "7621595.96193",
+            "fresh_numerator": 85766264
+          },
+          "13": {
+            "continuous_lower_bound_scaled": "7621595.96193",
+            "fresh_numerator": 85766264
+          },
+          "2": {
+            "continuous_lower_bound_scaled": "1.78813934326e-07",
+            "fresh_numerator": 0
+          },
+          "3": {
+            "continuous_lower_bound_scaled": "3.42726707458e-07",
+            "fresh_numerator": 0
+          },
+          "4": {
+            "continuous_lower_bound_scaled": "1.43051147461e-06",
+            "fresh_numerator": 0
+          },
+          "5": {
+            "continuous_lower_bound_scaled": "14632748.3078",
+            "fresh_numerator": 94858137
+          },
+          "6": {
+            "continuous_lower_bound_scaled": "4.76837158203e-07",
+            "fresh_numerator": 0
+          },
+          "7": {
+            "continuous_lower_bound_scaled": "14632748.3078",
+            "fresh_numerator": 94858137
+          },
+          "8": {
+            "continuous_lower_bound_scaled": "7621595.96193",
+            "fresh_numerator": 85766264
+          },
+          "9": {
+            "continuous_lower_bound_scaled": "14632748.3078",
+            "fresh_numerator": 94858137
+          }
+        },
+        "new_words": [
+          [
+            -6,
+            2,
+            7,
+            3,
+            -4,
+            1,
+            -3,
+            7,
+            -3,
+            5,
+            -12,
+            -1,
+            -6,
+            0,
+            -6,
+            -4,
+            -2,
+            7,
+            2,
+            -2,
+            3,
+            2,
+            2,
+            -4,
+            1,
+            -1,
+            -1,
+            2,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            -2,
+            -3,
+            0,
+            -3,
+            -1,
+            0,
+            -2,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            2,
+            1,
+            -3,
+            1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "rank_after": 28,
+        "rank_before": 26,
+        "wave": 4
+      },
+      {
+        "direction_costs": {
+          "0": {
+            "continuous_lower_bound_scaled": "0",
+            "fresh_numerator": 0
+          },
+          "1": {
+            "continuous_lower_bound_scaled": "7.45058059692e-08",
+            "fresh_numerator": 0
+          },
+          "10": {
+            "continuous_lower_bound_scaled": "4.76837158203e-07",
+            "fresh_numerator": 0
+          },
+          "11": {
+            "continuous_lower_bound_scaled": "13928415.1248",
+            "fresh_numerator": 127156412
+          },
+          "12": {
+            "continuous_lower_bound_scaled": "7621595.96193",
+            "fresh_numerator": 85766264
+          },
+          "13": {
+            "continuous_lower_bound_scaled": "7621595.96193",
+            "fresh_numerator": 85766264
+          },
+          "2": {
+            "continuous_lower_bound_scaled": "1.78813934326e-07",
+            "fresh_numerator": 0
+          },
+          "3": {
+            "continuous_lower_bound_scaled": "3.42726707458e-07",
+            "fresh_numerator": 0
+          },
+          "4": {
+            "continuous_lower_bound_scaled": "1.43051147461e-06",
+            "fresh_numerator": 0
+          },
+          "5": {
+            "continuous_lower_bound_scaled": "14632748.3078",
+            "fresh_numerator": 94858137
+          },
+          "6": {
+            "continuous_lower_bound_scaled": "4.76837158203e-07",
+            "fresh_numerator": 0
+          },
+          "7": {
+            "continuous_lower_bound_scaled": "14632748.3078",
+            "fresh_numerator": 94858137
+          },
+          "8": {
+            "continuous_lower_bound_scaled": "7621595.96193",
+            "fresh_numerator": 85766264
+          },
+          "9": {
+            "continuous_lower_bound_scaled": "14632748.3078",
+            "fresh_numerator": 94858137
+          }
+        },
+        "new_words": [],
+        "rank_after": 28,
+        "rank_before": 28,
+        "wave": 5
+      }
+    ]
+  },
+  "boundary": "A low rounded half-lattice score does not prove a low pointed-quartic coordinate or that an orbit would have been scheduled by a target-blind policy. The comparison with autonomous V1 is by exactly verified subgroup words, not a claimed direction-by-direction recovery order.",
+  "global_14_direction_optima": {
+    "minimax": {
+      "objective_numerator": 123778523,
+      "objective_scaled_height": "30.94463075",
+      "order": [
+        "recovered-local-01",
+        "recovered-local-02",
+        "recovered-local-03",
+        "recovered-local-04",
+        "recovered-strict-01",
+        "recovered-strict-03",
+        "recovered-strict-02",
+        "residual-strict-01",
+        "residual-strict-02",
+        "residual-strict-03",
+        "residual-strict-04",
+        "residual-strict-05",
+        "residual-strict-06",
+        "residual-strict-07"
+      ]
+    },
+    "minimum_total": {
+      "objective_numerator": 1375488055,
+      "objective_scaled_height": "343.87201375",
+      "order": [
+        "recovered-local-01",
+        "recovered-local-04",
+        "recovered-local-02",
+        "recovered-local-03",
+        "recovered-strict-01",
+        "residual-strict-02",
+        "residual-strict-07",
+        "recovered-strict-03",
+        "recovered-strict-02",
+        "residual-strict-03",
+        "residual-strict-06",
+        "residual-strict-04",
+        "residual-strict-01",
+        "residual-strict-05"
+      ]
+    }
+  },
+  "historical_order_provenance": {
+    "M17_to_M24": "Only a seven-dimensional recovered block is attested. No total order on its fixed diagnostic coordinate directions is present in the sealed source, so all 5040 compatible internal orders are summarized instead of inventing one.",
+    "M24_to_M31_attested_tail": [
+      "residual-strict-06",
+      "residual-strict-04",
+      "residual-strict-02",
+      "residual-strict-01",
+      "residual-strict-05",
+      "residual-strict-03",
+      "residual-strict-07"
+    ],
+    "all_5040_M17_to_M24_compatible_then_historical_tail": {
+      "best_bottleneck_compatible_prefix": [
+        "recovered-local-01",
+        "recovered-local-04",
+        "recovered-local-02",
+        "recovered-local-03",
+        "recovered-strict-01",
+        "recovered-strict-03",
+        "recovered-strict-02"
+      ],
+      "best_total_compatible_prefix": [
+        "recovered-local-01",
+        "recovered-local-04",
+        "recovered-local-02",
+        "recovered-local-03",
+        "recovered-strict-01",
+        "recovered-strict-03",
+        "recovered-strict-02"
+      ],
+      "maximum_bottleneck_numerator": 1414913198,
+      "maximum_total_numerator": 2829106357,
+      "median_bottleneck_numerator": 522504524,
+      "median_total_numerator": 1850676973,
+      "minimum_bottleneck_numerator": 135591028,
+      "minimum_total_numerator": 1419304182
+    },
+    "tail_actual": {
+      "final_mask": 16383,
+      "maximum_numerator": 135591028,
+      "scores": [
+        135591028,
+        94901115,
+        95130231,
+        86289354,
+        93353065,
+        84569501,
+        79768429
+      ],
+      "sum_numerator": 669602723
+    },
+    "tail_optimum_with_fixed_M24_start": {
+      "minimax": {
+        "maximum_numerator": 102542623,
+        "order_indices": [
+          8,
+          10,
+          13,
+          9,
+          12,
+          7,
+          11
+        ],
+        "sum_numerator": 629807815
+      },
+      "minimum_total": {
+        "maximum_numerator": 115124138,
+        "order_indices": [
+          8,
+          9,
+          13,
+          12,
+          10,
+          7,
+          11
+        ],
+        "sum_numerator": 629602582
+      }
+    }
+  },
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_exceptional_subgroup_landscape_v1.json": "1f6f67d6575bb67842f93c8de2b3d7e14671704ad1118cbc67431cbcf861f38b",
+    "elliptic-curves/cas/report_curve302_exceptional_subgroup_landscape.py": "4cfce541af12047ed7f88f2454342b4872a2720d4fb5ac565cebbdd2d98f24c5"
+  },
+  "raw_vs_cumulative_monotonicity": {
+    "largest_raw_increase": {
+      "adjoin_direction_index": 7,
+      "measured_direction_index": 2,
+      "new_numerator": 133439887,
+      "old_numerator": 57808618,
+      "ratio": "2.30830439503",
+      "state_mask": 16195
+    },
+    "raw_stage_local_edges": 745472,
+    "raw_stage_local_increases": 88832,
+    "retained_edges_checked": 745472,
+    "retained_increases": 0
+  },
+  "reproducing_command": "python3 elliptic-curves/cas/report_curve302_exceptional_subgroup_landscape.py --check",
+  "schema": "elliptic-curves.curve302-exceptional-subgroup-landscape-report.v1",
+  "scope": "Retrospective order diagnostic on all 16384 displayed M17+S subgroups. It is not a prospective selector and the CVP values remain finite nearest-plane/local-descent upper bounds.",
+  "status": "PASS_COMPLETE_FINITE_ORDER_DIAGNOSTIC"
+}

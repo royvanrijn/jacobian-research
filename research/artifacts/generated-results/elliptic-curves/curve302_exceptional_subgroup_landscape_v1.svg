@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="520" viewBox="0 0 1024 520">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:system-ui,sans-serif;fill:#1f2937} .axis{stroke:#64748b;stroke-width:1} .raw{fill:none;stroke:#d97706;stroke-width:2} .held{fill:none;stroke:#0f766e;stroke-width:2} .dotraw{fill:#d97706}.dotheld{fill:#0f766e}</style>
+<text x="74" y="20" font-size="16" font-weight="600">302 half-lattice score: stage-local versus retained finite atlas</text>
+<text x="760" y="20" font-size="12" fill="#0f766e">teal = retained C*, amber = local C</text>
+<rect x="74" y="42" width="920" height="190" fill="none" stroke="#94a3b8"/>
+<text x="74" y="32" font-size="13" font-weight="600">Historical M24→M31 tail</text>
+<text x="16" y="137.0" transform="rotate(-90 16 137.0)" font-size="11">log10(C/4·10⁶)</text>
+<polyline class="raw" points="74.00,62.76 227.33,170.98 380.67,170.45 534.00,150.33 687.33,156.37 840.67,196.09 994.00,180.14"/>
+<circle class="dotraw" cx="74.00" cy="62.76" r="3"/><text x="74.00" y="249" text-anchor="middle" font-size="9">s06</text>
+<circle class="dotraw" cx="227.33" cy="170.98" r="3"/><text x="227.33" y="249" text-anchor="middle" font-size="9">s04</text>
+<circle class="dotraw" cx="380.67" cy="170.45" r="3"/><text x="380.67" y="249" text-anchor="middle" font-size="9">s02</text>
+<circle class="dotraw" cx="534.00" cy="150.33" r="3"/><text x="534.00" y="249" text-anchor="middle" font-size="9">s01</text>
+<circle class="dotraw" cx="687.33" cy="156.37" r="3"/><text x="687.33" y="249" text-anchor="middle" font-size="9">s05</text>
+<circle class="dotraw" cx="840.67" cy="196.09" r="3"/><text x="840.67" y="249" text-anchor="middle" font-size="9">s03</text>
+<circle class="dotraw" cx="994.00" cy="180.14" r="3"/><text x="994.00" y="249" text-anchor="middle" font-size="9">s07</text>
+<polyline class="held" points="74.00,93.24 227.33,170.98 380.67,170.45 534.00,191.70 687.33,174.56 840.67,196.09 994.00,208.82"/>
+<circle class="dotheld" cx="74.00" cy="93.24" r="3"/><text x="74.00" y="249" text-anchor="middle" font-size="9">s06</text>
+<circle class="dotheld" cx="227.33" cy="170.98" r="3"/><text x="227.33" y="249" text-anchor="middle" font-size="9">s04</text>
+<circle class="dotheld" cx="380.67" cy="170.45" r="3"/><text x="380.67" y="249" text-anchor="middle" font-size="9">s02</text>
+<circle class="dotheld" cx="534.00" cy="191.70" r="3"/><text x="534.00" y="249" text-anchor="middle" font-size="9">s01</text>
+<circle class="dotheld" cx="687.33" cy="174.56" r="3"/><text x="687.33" y="249" text-anchor="middle" font-size="9">s05</text>
+<circle class="dotheld" cx="840.67" cy="196.09" r="3"/><text x="840.67" y="249" text-anchor="middle" font-size="9">s03</text>
+<circle class="dotheld" cx="994.00" cy="208.82" r="3"/><text x="994.00" y="249" text-anchor="middle" font-size="9">s07</text>
+<line class="axis" x1="74" x2="994" y1="232.00" y2="232.00" opacity=".25"/><text x="66" y="236.00" text-anchor="end" font-size="10">1.3</text>
+<line class="axis" x1="74" x2="994" y1="137.00" y2="137.00" opacity=".25"/><text x="66" y="141.00" text-anchor="end" font-size="10">1.4</text>
+<line class="axis" x1="74" x2="994" y1="42.00" y2="42.00" opacity=".25"/><text x="66" y="46.00" text-anchor="end" font-size="10">1.6</text>
+<rect x="74" y="296" width="920" height="190" fill="none" stroke="#94a3b8"/>
+<text x="74" y="286" font-size="13" font-weight="600">Global minimax diagnostic order</text>
+<text x="16" y="391.0" transform="rotate(-90 16 391.0)" font-size="11">log10(C/4·10⁶)</text>
+<polyline class="raw" points="74.00,408.60 144.77,411.42 215.54,371.98 286.31,367.10 357.08,391.27 427.85,385.47 498.62,425.07 569.38,370.97 640.15,409.89 710.92,349.92 781.69,463.05 852.46,432.30 923.23,451.60 994.00,434.14"/>
+<circle class="dotraw" cx="74.00" cy="408.60" r="3"/><text x="74.00" y="503" text-anchor="middle" font-size="9">l01</text>
+<circle class="dotraw" cx="144.77" cy="411.42" r="3"/><text x="144.77" y="503" text-anchor="middle" font-size="9">l02</text>
+<circle class="dotraw" cx="215.54" cy="371.98" r="3"/><text x="215.54" y="503" text-anchor="middle" font-size="9">l03</text>
+<circle class="dotraw" cx="286.31" cy="367.10" r="3"/><text x="286.31" y="503" text-anchor="middle" font-size="9">l04</text>
+<circle class="dotraw" cx="357.08" cy="391.27" r="3"/><text x="357.08" y="503" text-anchor="middle" font-size="9">r01</text>
+<circle class="dotraw" cx="427.85" cy="385.47" r="3"/><text x="427.85" y="503" text-anchor="middle" font-size="9">r03</text>
+<circle class="dotraw" cx="498.62" cy="425.07" r="3"/><text x="498.62" y="503" text-anchor="middle" font-size="9">r02</text>
+<circle class="dotraw" cx="569.38" cy="370.97" r="3"/><text x="569.38" y="503" text-anchor="middle" font-size="9">s01</text>
+<circle class="dotraw" cx="640.15" cy="409.89" r="3"/><text x="640.15" y="503" text-anchor="middle" font-size="9">s02</text>
+<circle class="dotraw" cx="710.92" cy="349.92" r="3"/><text x="710.92" y="503" text-anchor="middle" font-size="9">s03</text>
+<circle class="dotraw" cx="781.69" cy="463.05" r="3"/><text x="781.69" y="503" text-anchor="middle" font-size="9">s04</text>
+<circle class="dotraw" cx="852.46" cy="432.30" r="3"/><text x="852.46" y="503" text-anchor="middle" font-size="9">s05</text>
+<circle class="dotraw" cx="923.23" cy="451.60" r="3"/><text x="923.23" y="503" text-anchor="middle" font-size="9">s06</text>
+<circle class="dotraw" cx="994.00" cy="434.14" r="3"/><text x="994.00" y="503" text-anchor="middle" font-size="9">s07</text>
+<polyline class="held" points="74.00,408.60 144.77,411.42 215.54,371.98 286.31,367.10 357.08,391.27 427.85,385.47 498.62,425.07 569.38,384.72 640.15,409.89 710.92,391.79 781.69,463.05 852.46,432.30 923.23,451.60 994.00,462.82"/>
+<circle class="dotheld" cx="74.00" cy="408.60" r="3"/><text x="74.00" y="503" text-anchor="middle" font-size="9">l01</text>
+<circle class="dotheld" cx="144.77" cy="411.42" r="3"/><text x="144.77" y="503" text-anchor="middle" font-size="9">l02</text>
+<circle class="dotheld" cx="215.54" cy="371.98" r="3"/><text x="215.54" y="503" text-anchor="middle" font-size="9">l03</text>
+<circle class="dotheld" cx="286.31" cy="367.10" r="3"/><text x="286.31" y="503" text-anchor="middle" font-size="9">l04</text>
+<circle class="dotheld" cx="357.08" cy="391.27" r="3"/><text x="357.08" y="503" text-anchor="middle" font-size="9">r01</text>
+<circle class="dotheld" cx="427.85" cy="385.47" r="3"/><text x="427.85" y="503" text-anchor="middle" font-size="9">r03</text>
+<circle class="dotheld" cx="498.62" cy="425.07" r="3"/><text x="498.62" y="503" text-anchor="middle" font-size="9">r02</text>
+<circle class="dotheld" cx="569.38" cy="384.72" r="3"/><text x="569.38" y="503" text-anchor="middle" font-size="9">s01</text>
+<circle class="dotheld" cx="640.15" cy="409.89" r="3"/><text x="640.15" y="503" text-anchor="middle" font-size="9">s02</text>
+<circle class="dotheld" cx="710.92" cy="391.79" r="3"/><text x="710.92" y="503" text-anchor="middle" font-size="9">s03</text>
+<circle class="dotheld" cx="781.69" cy="463.05" r="3"/><text x="781.69" y="503" text-anchor="middle" font-size="9">s04</text>
+<circle class="dotheld" cx="852.46" cy="432.30" r="3"/><text x="852.46" y="503" text-anchor="middle" font-size="9">s05</text>
+<circle class="dotheld" cx="923.23" cy="451.60" r="3"/><text x="923.23" y="503" text-anchor="middle" font-size="9">s06</text>
+<circle class="dotheld" cx="994.00" cy="462.82" r="3"/><text x="994.00" y="503" text-anchor="middle" font-size="9">s07</text>
+<line class="axis" x1="74" x2="994" y1="486.00" y2="486.00" opacity=".25"/><text x="66" y="490.00" text-anchor="end" font-size="10">1.3</text>
+<line class="axis" x1="74" x2="994" y1="391.00" y2="391.00" opacity=".25"/><text x="66" y="395.00" text-anchor="end" font-size="10">1.4</text>
+<line class="axis" x1="74" x2="994" y1="296.00" y2="296.00" opacity=".25"/><text x="66" y="300.00" text-anchor="end" font-size="10">1.6</text>
+</svg>

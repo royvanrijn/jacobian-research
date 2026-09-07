@@ -1,11 +1,31 @@
 # Elliptic curves over `Q` — ACTIVE
 
+The [full-extension V2 calibration](notes/ADAPTIVE_HALF_LATTICE_V2_2026-09-07.md)
+autonomously reaches **17→18→…→30**, then stops after 306 no-gain charts at M30.
+Its single frozen policy scores every extension of 32 retained anchors and
+rebuilds immediately after certified gains. All 906 charts complete; rank31
+is **not** achieved. V1's frozen experiment and evidence remain unchanged.
+
+The [V2 active-subgroup beam policy](notes/CURVE302_V2_ACTIVE_SUBGROUP_BEAM_2026-09-07.md)
+is now frozen for a future multi-gain wave: it scores every intermediate
+subgroup from generic low-shell cosets, exact-CVP minima/multiplicities, and
+reduced-chart complexity, retaining at most four states. Fifteen random
+unimodular rebases agree exactly. Its separate fixed-`2^14` evaluation is
+retrospective; **no point search was run** and no rank claim changes.
+
 The [adaptive half-lattice cascade](notes/ADAPTIVE_HALF_LATTICE_VISIBILITY_2026-09-07.md)
 autonomously reaches **17→19→22→23→26→28** on302, then stops on a completed
 no-gain wave; ten matched determinant1092 controls remain17. All1,040 charts
 complete. Exact finite-atlas matrices quantify visibility drops and correct
 late-scheduling effects; the note proves the parity and monotonicity statements.
 Autonomous31 remains unachieved.
+
+The [complete 302 exceptional-subgroup order diagnostic](notes/CURVE302_EXCEPTIONAL_SUBGROUP_ORDER_2026-09-07.md)
+enumerates all `2^14` displayed `M17+S` states retrospectively. Its persistent
+finite-atlas score is monotone on all 745,472 inclusion edges; fresh CVP
+surrogates rise on 88,832 of them. The attested M24→31 tail is viable but not
+minimax-optimal in this surrogate. This is geometry evidence, not a new
+target-free recovery or rank claim.
 
 The [302 calibration](notes/CURVE302_RECOVERED_SUBGROUP_CALIBRATION_2026-09-07.md)
 recovers **7 of14 known exceptional directions from generic17 alone**. The
