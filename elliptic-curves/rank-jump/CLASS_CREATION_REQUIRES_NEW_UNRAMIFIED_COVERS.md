@@ -1,5 +1,12 @@
 # Class creation: new unramified covers beyond the global pool
 
+Follow-up: [branch fibres bound whole native class blocks](BRANCH_FIBRES_BOUND_NATIVE_CLASS_CREATION.md)
+proves generic twist rank at most three on 37 retained native quadratic
+supports, uniformly in rational scalar twists. Products of two or more
+supports have twist rank at most two; two covers add at most eight generic
+directions. The obstruction is branch-fibre divisibility, before points
+on the twists are supplied.
+
 Follow-up: [a relation root creates ramification, not the missing block](RELATION_ROOTS_CREATE_RAMIFICATION_NOT_THE_MISSING_BLOCK.md)
 tests a constructor outside the exhausted norm span. A dual certificate
 excludes every correction by the full 4134-element dictionary and generic

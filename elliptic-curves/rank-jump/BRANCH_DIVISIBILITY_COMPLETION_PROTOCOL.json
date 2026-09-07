@@ -1,0 +1,6 @@
+{
+  "schema": "rank-jump.branch-divisibility-completion-protocol.v1",
+  "reason": "The t=0 generic-basis fingerprint failed to have dimension17, so v1 remains UNKNOWN. It does not invalidate the branch calculation; no branch rank was returned as certified.",
+  "change": "Use the retained historic parameter -2/377 solely to certify the 17 generic section classes are globally independent. Same generic polynomial sections, same 37 branch supports, same primes<=2003, same 60-second cap. No exceptional point or rank is supplied. This is a basis calibration, not another candidate selection or point search.",
+  "failure": "UNKNOWN if the replacement generic-basis fingerprint or any other required check fails."
+}

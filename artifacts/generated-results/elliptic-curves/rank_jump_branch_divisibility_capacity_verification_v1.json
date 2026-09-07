@@ -1,0 +1,281 @@
+{
+  "all_scalar_twists_of_products_of_at_least_two_distinct_supports_rank_upper_bound": 2,
+  "all_single_scalar_twists_rank_upper_bound": 3,
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_branch_divisibility_capacity_inputs_v1.json": "07b0be6a843a1a21b122bd4012c8ffe27b7c828d8f566f9de3056652b5df092d",
+    "artifacts/generated-results/elliptic-curves/rank_jump_branch_divisibility_capacity_v2.json": "1d39f66b17397946055209b8193f85aca9842e00738e988e1a63aafefce374e9",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_branch_divisibility_capacity.py": "fc3b35a56f057dc6249d0884daf91452d4ac9c13d812f8197fd3342e7c3225f7"
+  },
+  "distinct_branch_kernel_lines": 37,
+  "finite_blocks_verified": 1604,
+  "generic_mod_two_dimension": 17,
+  "global_pool_upper_bound": 19,
+  "method": "Direct exhaustive finite cubic root tests and residue-square sets; Sage F2 ranks/kernels instead of bit elimination; exact rational Sturm isolation and independent graph traversal. No new sections or specializations are searched.",
+  "pairwise_disjoint_branch_supports": 666,
+  "quadratic_character_bits_verified": 81804,
+  "real_components": 10,
+  "rows": [
+    {
+      "finite_kernel_mask": 29205,
+      "irreducibility_prime": 23,
+      "label": "orbit-00ca6",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 52405,
+      "irreducibility_prime": 67,
+      "label": "orbit-00edf",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 14696,
+      "irreducibility_prime": 61,
+      "label": "orbit-01926",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 111343,
+      "irreducibility_prime": 61,
+      "label": "orbit-01e36",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 1615,
+      "irreducibility_prime": 23,
+      "label": "orbit-02d31",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 104197,
+      "irreducibility_prime": 23,
+      "label": "orbit-045c2",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 66121,
+      "irreducibility_prime": 67,
+      "label": "orbit-04d17",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 52779,
+      "irreducibility_prime": 73,
+      "label": "orbit-051a1",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 70404,
+      "irreducibility_prime": 67,
+      "label": "orbit-05443",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 52252,
+      "irreducibility_prime": 61,
+      "label": "orbit-055ad",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 22017,
+      "irreducibility_prime": 73,
+      "label": "orbit-05980",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 46878,
+      "irreducibility_prime": 23,
+      "label": "orbit-06f04",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 98060,
+      "irreducibility_prime": 113,
+      "label": "orbit-06faa",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 98512,
+      "irreducibility_prime": 67,
+      "label": "orbit-07843",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 62286,
+      "irreducibility_prime": 83,
+      "label": "orbit-0888a",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 93074,
+      "irreducibility_prime": 23,
+      "label": "orbit-08e3a",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 9496,
+      "irreducibility_prime": 23,
+      "label": "orbit-090a3",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 58396,
+      "irreducibility_prime": 73,
+      "label": "orbit-0976c",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 87682,
+      "irreducibility_prime": 61,
+      "label": "orbit-0be21",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 21524,
+      "irreducibility_prime": 67,
+      "label": "orbit-0cff7",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 61944,
+      "irreducibility_prime": 67,
+      "label": "orbit-0d4ca",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 30406,
+      "irreducibility_prime": 137,
+      "label": "orbit-0da89",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 30671,
+      "irreducibility_prime": 23,
+      "label": "orbit-0eba4",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 10639,
+      "irreducibility_prime": 97,
+      "label": "orbit-0fb68",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 33937,
+      "irreducibility_prime": 73,
+      "label": "orbit-101f2",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 73389,
+      "irreducibility_prime": 67,
+      "label": "orbit-10aaa",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 122873,
+      "irreducibility_prime": 71,
+      "label": "orbit-126e6",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 90591,
+      "irreducibility_prime": 83,
+      "label": "orbit-12c1b",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 96867,
+      "irreducibility_prime": 67,
+      "label": "orbit-15a68",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 75849,
+      "irreducibility_prime": 73,
+      "label": "orbit-18fd5",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 25491,
+      "irreducibility_prime": 71,
+      "label": "orbit-195a4",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 45212,
+      "irreducibility_prime": 83,
+      "label": "orbit-196a3",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 32867,
+      "irreducibility_prime": 83,
+      "label": "orbit-1cb25",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 92011,
+      "irreducibility_prime": 67,
+      "label": "orbit-1d5bb",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 363,
+      "irreducibility_prime": 67,
+      "label": "orbit-1ea09",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 93597,
+      "irreducibility_prime": 103,
+      "label": "orbit-1ea54",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    },
+    {
+      "finite_kernel_mask": 41624,
+      "irreducibility_prime": 67,
+      "label": "orbit-1f786",
+      "rank": 16,
+      "twist_rank_upper_bound": 3
+    }
+  ],
+  "schema": "rank-jump.branch-divisibility-capacity-verification.v1",
+  "status": "PASS"
+}

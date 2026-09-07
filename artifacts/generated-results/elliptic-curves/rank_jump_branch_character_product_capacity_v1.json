@@ -1,0 +1,350 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_branch_divisibility_capacity_verification_v1.json": "575c6047d0ebc2fb2efa9ee74c92aaedb98864969cdf63d031ffd291058cedaa",
+    "elliptic-curves/rank-jump/branch_character_product_capacity.py": "0406f7b79ba09aa95667775d84c0dcf3ff39ce41173e5fbe3634d00f9a9f6630",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "boundary": "All nonzero rational scalar twists on these 37 supports. Bounds concern complete generic Mordell-Weil groups and allow integral gluing. They do not bound specialization jumps, prove a rational base point, or exclude other curves/carriers or other native supports.",
+  "genus_necessary_for_a_gain_at_least_nine_in_this_full_native_fibre_product_construction": 5,
+  "native_supports_necessary_for_a_generic_gain_at_least_nine": 3,
+  "product_twist_upper_bound": 2,
+  "rows": [
+    {
+      "cover_degree": 2,
+      "cover_genus": 0,
+      "full_generic_rank_upper_bound": 20,
+      "generic_rank_gain_upper_bound": 3,
+      "larger_characters": 0,
+      "native_supports": 1,
+      "singleton_characters": 1
+    },
+    {
+      "cover_degree": 4,
+      "cover_genus": 1,
+      "full_generic_rank_upper_bound": 25,
+      "generic_rank_gain_upper_bound": 8,
+      "larger_characters": 1,
+      "native_supports": 2,
+      "singleton_characters": 2
+    },
+    {
+      "cover_degree": 8,
+      "cover_genus": 5,
+      "full_generic_rank_upper_bound": 34,
+      "generic_rank_gain_upper_bound": 17,
+      "larger_characters": 4,
+      "native_supports": 3,
+      "singleton_characters": 3
+    },
+    {
+      "cover_degree": 16,
+      "cover_genus": 17,
+      "full_generic_rank_upper_bound": 51,
+      "generic_rank_gain_upper_bound": 34,
+      "larger_characters": 11,
+      "native_supports": 4,
+      "singleton_characters": 4
+    },
+    {
+      "cover_degree": 32,
+      "cover_genus": 49,
+      "full_generic_rank_upper_bound": 84,
+      "generic_rank_gain_upper_bound": 67,
+      "larger_characters": 26,
+      "native_supports": 5,
+      "singleton_characters": 5
+    },
+    {
+      "cover_degree": 64,
+      "cover_genus": 129,
+      "full_generic_rank_upper_bound": 149,
+      "generic_rank_gain_upper_bound": 132,
+      "larger_characters": 57,
+      "native_supports": 6,
+      "singleton_characters": 6
+    },
+    {
+      "cover_degree": 128,
+      "cover_genus": 321,
+      "full_generic_rank_upper_bound": 278,
+      "generic_rank_gain_upper_bound": 261,
+      "larger_characters": 120,
+      "native_supports": 7,
+      "singleton_characters": 7
+    },
+    {
+      "cover_degree": 256,
+      "cover_genus": 769,
+      "full_generic_rank_upper_bound": 535,
+      "generic_rank_gain_upper_bound": 518,
+      "larger_characters": 247,
+      "native_supports": 8,
+      "singleton_characters": 8
+    },
+    {
+      "cover_degree": 512,
+      "cover_genus": 1793,
+      "full_generic_rank_upper_bound": 1048,
+      "generic_rank_gain_upper_bound": 1031,
+      "larger_characters": 502,
+      "native_supports": 9,
+      "singleton_characters": 9
+    },
+    {
+      "cover_degree": 1024,
+      "cover_genus": 4097,
+      "full_generic_rank_upper_bound": 2073,
+      "generic_rank_gain_upper_bound": 2056,
+      "larger_characters": 1013,
+      "native_supports": 10,
+      "singleton_characters": 10
+    },
+    {
+      "cover_degree": 2048,
+      "cover_genus": 9217,
+      "full_generic_rank_upper_bound": 4122,
+      "generic_rank_gain_upper_bound": 4105,
+      "larger_characters": 2036,
+      "native_supports": 11,
+      "singleton_characters": 11
+    },
+    {
+      "cover_degree": 4096,
+      "cover_genus": 20481,
+      "full_generic_rank_upper_bound": 8219,
+      "generic_rank_gain_upper_bound": 8202,
+      "larger_characters": 4083,
+      "native_supports": 12,
+      "singleton_characters": 12
+    },
+    {
+      "cover_degree": 8192,
+      "cover_genus": 45057,
+      "full_generic_rank_upper_bound": 16412,
+      "generic_rank_gain_upper_bound": 16395,
+      "larger_characters": 8178,
+      "native_supports": 13,
+      "singleton_characters": 13
+    },
+    {
+      "cover_degree": 16384,
+      "cover_genus": 98305,
+      "full_generic_rank_upper_bound": 32797,
+      "generic_rank_gain_upper_bound": 32780,
+      "larger_characters": 16369,
+      "native_supports": 14,
+      "singleton_characters": 14
+    },
+    {
+      "cover_degree": 32768,
+      "cover_genus": 212993,
+      "full_generic_rank_upper_bound": 65566,
+      "generic_rank_gain_upper_bound": 65549,
+      "larger_characters": 32752,
+      "native_supports": 15,
+      "singleton_characters": 15
+    },
+    {
+      "cover_degree": 65536,
+      "cover_genus": 458753,
+      "full_generic_rank_upper_bound": 131103,
+      "generic_rank_gain_upper_bound": 131086,
+      "larger_characters": 65519,
+      "native_supports": 16,
+      "singleton_characters": 16
+    },
+    {
+      "cover_degree": 131072,
+      "cover_genus": 983041,
+      "full_generic_rank_upper_bound": 262176,
+      "generic_rank_gain_upper_bound": 262159,
+      "larger_characters": 131054,
+      "native_supports": 17,
+      "singleton_characters": 17
+    },
+    {
+      "cover_degree": 262144,
+      "cover_genus": 2097153,
+      "full_generic_rank_upper_bound": 524321,
+      "generic_rank_gain_upper_bound": 524304,
+      "larger_characters": 262125,
+      "native_supports": 18,
+      "singleton_characters": 18
+    },
+    {
+      "cover_degree": 524288,
+      "cover_genus": 4456449,
+      "full_generic_rank_upper_bound": 1048610,
+      "generic_rank_gain_upper_bound": 1048593,
+      "larger_characters": 524268,
+      "native_supports": 19,
+      "singleton_characters": 19
+    },
+    {
+      "cover_degree": 1048576,
+      "cover_genus": 9437185,
+      "full_generic_rank_upper_bound": 2097187,
+      "generic_rank_gain_upper_bound": 2097170,
+      "larger_characters": 1048555,
+      "native_supports": 20,
+      "singleton_characters": 20
+    },
+    {
+      "cover_degree": 2097152,
+      "cover_genus": 19922945,
+      "full_generic_rank_upper_bound": 4194340,
+      "generic_rank_gain_upper_bound": 4194323,
+      "larger_characters": 2097130,
+      "native_supports": 21,
+      "singleton_characters": 21
+    },
+    {
+      "cover_degree": 4194304,
+      "cover_genus": 41943041,
+      "full_generic_rank_upper_bound": 8388645,
+      "generic_rank_gain_upper_bound": 8388628,
+      "larger_characters": 4194281,
+      "native_supports": 22,
+      "singleton_characters": 22
+    },
+    {
+      "cover_degree": 8388608,
+      "cover_genus": 88080385,
+      "full_generic_rank_upper_bound": 16777254,
+      "generic_rank_gain_upper_bound": 16777237,
+      "larger_characters": 8388584,
+      "native_supports": 23,
+      "singleton_characters": 23
+    },
+    {
+      "cover_degree": 16777216,
+      "cover_genus": 184549377,
+      "full_generic_rank_upper_bound": 33554471,
+      "generic_rank_gain_upper_bound": 33554454,
+      "larger_characters": 16777191,
+      "native_supports": 24,
+      "singleton_characters": 24
+    },
+    {
+      "cover_degree": 33554432,
+      "cover_genus": 385875969,
+      "full_generic_rank_upper_bound": 67108904,
+      "generic_rank_gain_upper_bound": 67108887,
+      "larger_characters": 33554406,
+      "native_supports": 25,
+      "singleton_characters": 25
+    },
+    {
+      "cover_degree": 67108864,
+      "cover_genus": 805306369,
+      "full_generic_rank_upper_bound": 134217769,
+      "generic_rank_gain_upper_bound": 134217752,
+      "larger_characters": 67108837,
+      "native_supports": 26,
+      "singleton_characters": 26
+    },
+    {
+      "cover_degree": 134217728,
+      "cover_genus": 1677721601,
+      "full_generic_rank_upper_bound": 268435498,
+      "generic_rank_gain_upper_bound": 268435481,
+      "larger_characters": 134217700,
+      "native_supports": 27,
+      "singleton_characters": 27
+    },
+    {
+      "cover_degree": 268435456,
+      "cover_genus": 3489660929,
+      "full_generic_rank_upper_bound": 536870955,
+      "generic_rank_gain_upper_bound": 536870938,
+      "larger_characters": 268435427,
+      "native_supports": 28,
+      "singleton_characters": 28
+    },
+    {
+      "cover_degree": 536870912,
+      "cover_genus": 7247757313,
+      "full_generic_rank_upper_bound": 1073741868,
+      "generic_rank_gain_upper_bound": 1073741851,
+      "larger_characters": 536870882,
+      "native_supports": 29,
+      "singleton_characters": 29
+    },
+    {
+      "cover_degree": 1073741824,
+      "cover_genus": 15032385537,
+      "full_generic_rank_upper_bound": 2147483693,
+      "generic_rank_gain_upper_bound": 2147483676,
+      "larger_characters": 1073741793,
+      "native_supports": 30,
+      "singleton_characters": 30
+    },
+    {
+      "cover_degree": 2147483648,
+      "cover_genus": 31138512897,
+      "full_generic_rank_upper_bound": 4294967342,
+      "generic_rank_gain_upper_bound": 4294967325,
+      "larger_characters": 2147483616,
+      "native_supports": 31,
+      "singleton_characters": 31
+    },
+    {
+      "cover_degree": 4294967296,
+      "cover_genus": 64424509441,
+      "full_generic_rank_upper_bound": 8589934639,
+      "generic_rank_gain_upper_bound": 8589934622,
+      "larger_characters": 4294967263,
+      "native_supports": 32,
+      "singleton_characters": 32
+    },
+    {
+      "cover_degree": 8589934592,
+      "cover_genus": 133143986177,
+      "full_generic_rank_upper_bound": 17179869232,
+      "generic_rank_gain_upper_bound": 17179869215,
+      "larger_characters": 8589934558,
+      "native_supports": 33,
+      "singleton_characters": 33
+    },
+    {
+      "cover_degree": 17179869184,
+      "cover_genus": 274877906945,
+      "full_generic_rank_upper_bound": 34359738417,
+      "generic_rank_gain_upper_bound": 34359738400,
+      "larger_characters": 17179869149,
+      "native_supports": 34,
+      "singleton_characters": 34
+    },
+    {
+      "cover_degree": 34359738368,
+      "cover_genus": 566935683073,
+      "full_generic_rank_upper_bound": 68719476786,
+      "generic_rank_gain_upper_bound": 68719476769,
+      "larger_characters": 34359738332,
+      "native_supports": 35,
+      "singleton_characters": 35
+    },
+    {
+      "cover_degree": 68719476736,
+      "cover_genus": 1168231104513,
+      "full_generic_rank_upper_bound": 137438953523,
+      "generic_rank_gain_upper_bound": 137438953506,
+      "larger_characters": 68719476699,
+      "native_supports": 36,
+      "singleton_characters": 36
+    },
+    {
+      "cover_degree": 137438953472,
+      "cover_genus": 2405181685761,
+      "full_generic_rank_upper_bound": 274877906996,
+      "generic_rank_gain_upper_bound": 274877906979,
+      "larger_characters": 137438953434,
+      "native_supports": 37,
+      "singleton_characters": 37
+    }
+  ],
+  "schema": "rank-jump.branch-character-product-capacity.v1",
+  "single_twist_upper_bound": 3,
+  "status": "PASS",
+  "two_cover_pairs_covered": 666
+}
