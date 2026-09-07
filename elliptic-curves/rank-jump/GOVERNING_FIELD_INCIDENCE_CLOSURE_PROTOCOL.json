@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.governing-field-incidence-closure-protocol.v1",
+  "question": "Can the retained governing fields contain any new S4 class field beyond their generic inputs, and do their two input classes contain any strict combination on the sixteen-fibre panel?",
+  "gate": "Compute H1 of the exact order192 governing group with its natural S3 module and prove invariance under central governing extensions. A degree192 field already containing two independent S4 classes cannot contain a third, whose joint splitting field would have degree384. Project one nonzero local squareclass witness for each of the three input-pair words on each frozen fibre.",
+  "inputs": "The completed masked sixteen-fibre generic panel, generic-pair octics, local-character completions and retained factor supplement. No exceptional class, point or outcome label enters the arithmetic.",
+  "limits": {"group_elements": 192, "cocycle_generator_variables": 12, "cocycle_assignments": 4096, "fibres": 16, "local_exclusion_words": 48, "worker_seconds": 30, "verifier_seconds": 30, "workers": 1, "new_number_field_computations": 0, "new_factorizations": 0, "new_points_or_parameters": 0},
+  "failure": "UNKNOWN if a local exclusion witness is unavailable. Complete strict dimension zero for the selected pair may be certified from a partial set of bad places; no full class-group bound follows. Central governing extensions are distinguished from arbitrary extensions with nontrivial S3 action on their kernels."
+}

@@ -1,0 +1,22 @@
+{
+  "S3_H1_dimension": 0,
+  "S3_one_cocycles": 4,
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_verification_v1.json": "e0923a7bb8bb74bc61b2a5dcc1474b1dfb85961ef9d41367eab6a9781f4aef52",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_verification_v1.json": "e34af3d6f141ff74276dd6af557814315c88a613155220005f5d965f0abd3edf",
+    "artifacts/generated-results/elliptic-curves/rank_jump_governing_field_incidence_closure_inputs_v1.json": "91f80b6034ec5fc3dded15113cfa8833a6032f5721671fd80e84586dcf2527b2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_governing_field_incidence_closure_v1.json": "543683ae93978e61b57ceb26b41839ca276da3aa2e4a7bb5bb00170845414b84",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_governing_field_incidence_closure.py": "73d18ef61bfbfc81ad6e306ca16f036c9dc3c7e25c3302c93a39c8f0038224cd"
+  },
+  "equivariant_homomorphisms_to_V": 4,
+  "fibres": 16,
+  "governing_H1_dimension": 2,
+  "kernel_frattini_and_commutator_order": 2,
+  "kernel_order": 32,
+  "local_exclusion_witnesses_verified": 48,
+  "method": "Independent tuple kernel, all 256 linear maps, all 4096 S3 cocycles, retained local-character provenance and XOR replay.",
+  "schema": "rank-jump.governing-field-incidence-closure-verification.v1",
+  "status": "PASS",
+  "third_class_degree_exclusion_verified": true
+}

@@ -1,0 +1,167 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_octics_v1.json": "ac239168b99362ea0d8be8eadc0c5114a774ebb5ec1dcc6c6251b0dba0e39677",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_inputs_v1.json": "187f09188e343980ef4996950112e7d5a24a1d735f17830e7c98a6a018a02da9",
+    "elliptic-curves/rank-jump/GOVERNING_THIRD_CLASS_SEPARATION_PROTOCOL.json": "23f2e197725862b2732bb6d3e5a2e96c809db72358490f05da4b1f6d6ea624ad",
+    "elliptic-curves/rank-jump/fresh_governing_panel.py": "6e60a16a4ae9e5712668b0cae5fda432ff7332555018b78d31845425b864f0c5",
+    "elliptic-curves/rank-jump/governing_third_class_separation.py": "270aa1b5edb2c5e50833327de64387dc3c9fca8fc02a815360060e319c565c14",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "rows": [
+    {
+      "admissible_primes_tested": 363,
+      "boundary": "Third inherited class only. This proves field noncontainment; it does not discover an exceptional class.",
+      "cubic_ascending": [
+        "459798035878455093232228830426767673713384291610531875475248934630879256705557172859695005696",
+        "-114876416156497841392085873824025260407305754404554357401649152",
+        "0",
+        "1"
+      ],
+      "generic_index": 2,
+      "status": "PASS",
+      "third_class_quartic_ascending": [
+        "-80726022423061914508758946603249277566573460874251571317305344",
+        "-108566892176281955340482433342436664374211051520",
+        "-36240054049990550452578103859328",
+        "0",
+        "1"
+      ],
+      "third_generic_point": [
+        "24160036033327033635052069239552",
+        "108566892176281955340482433342436664374211051520"
+      ],
+      "token": "case-02",
+      "witness": {
+        "cubic_roots": [
+          989,
+          1992,
+          2121
+        ],
+        "octic_roots": [
+          196,
+          325,
+          590,
+          731,
+          1820,
+          1961,
+          2226,
+          2355
+        ],
+        "prime": 2551,
+        "quartic_factor_degrees": [
+          2,
+          2
+        ],
+        "third_kummer_signature": [
+          1,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "admissible_primes_tested": 156,
+      "boundary": "Third inherited class only. This proves field noncontainment; it does not discover an exceptional class.",
+      "cubic_ascending": [
+        "381664885616257214546541849896510216371250870015961858542589838711805024662644",
+        "-10030705136887933496511669087385028342787853978545132",
+        "0",
+        "1"
+      ],
+      "generic_index": 2,
+      "status": "PASS",
+      "third_class_quartic_ascending": [
+        "-4461804494790583141832909378844192990374144792656199151/4",
+        "120561454736048821329833230242664690695750",
+        "-3662718334759364652446085207",
+        "0",
+        "1"
+      ],
+      "third_generic_point": [
+        "2441812223172909768297390138",
+        "-120561454736048821329833230242664690695750"
+      ],
+      "token": "case-03",
+      "witness": {
+        "cubic_roots": [
+          555,
+          562,
+          825
+        ],
+        "octic_roots": [
+          66,
+          88,
+          174,
+          398,
+          573,
+          797,
+          883,
+          905
+        ],
+        "prime": 971,
+        "quartic_factor_degrees": [
+          2,
+          2
+        ],
+        "third_kummer_signature": [
+          1,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "admissible_primes_tested": 135,
+      "boundary": "Third inherited class only. This proves field noncontainment; it does not discover an exceptional class.",
+      "cubic_ascending": [
+        "18187031186145534096114228484539631087942303961380003710420155974890138881385274949358216714",
+        "-12962843369089523065839079442238604005443120208849763792569447",
+        "0",
+        "1"
+      ],
+      "generic_index": 2,
+      "status": "PASS",
+      "third_class_quartic_ascending": [
+        "-63107355574160487661262385709433276346250543472290760676010752663/10000",
+        "2125914718948036714804378194448208016792660469566/125",
+        "-535297479903140293102256384734683/50",
+        "0",
+        "1"
+      ],
+      "third_generic_point": [
+        "178432493301046764367418794911561/25",
+        "-2125914718948036714804378194448208016792660469566/125"
+      ],
+      "token": "case-13",
+      "witness": {
+        "cubic_roots": [
+          51,
+          395,
+          407
+        ],
+        "octic_roots": [
+          7,
+          110,
+          132,
+          174,
+          679,
+          721,
+          743,
+          846
+        ],
+        "prime": 853,
+        "quartic_factor_degrees": [
+          2,
+          2
+        ],
+        "third_kummer_signature": [
+          1,
+          0,
+          1
+        ]
+      }
+    }
+  ],
+  "schema": "rank-jump.governing-third-class-separation.v1",
+  "scope": "Point-independent calibration using only previously marked generic sections on fixed retrospective fibres."
+}

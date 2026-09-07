@@ -1,0 +1,269 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_governing_field_incidence_closure_inputs_v1.json": "91f80b6034ec5fc3dded15113cfa8833a6032f5721671fd80e84586dcf2527b2",
+    "elliptic-curves/rank-jump/GOVERNING_FIELD_INCIDENCE_CLOSURE_PROTOCOL.json": "44d62a9425972050f8b57b8a466cee55f1b576dd4a4e9b3171dc4a3e1591394b",
+    "elliptic-curves/rank-jump/governing_cochain_gate.py": "e49ebb68f40f9ef8731fec8a86ab88a9f29fa3f2e88c416cbaf9fdf2a71e1913",
+    "elliptic-curves/rank-jump/governing_field_incidence_closure.py": "073f8a0aecd22ec14b194c6053b2842da857ed636d6f5e111ffcb702acfd414e",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "boundary": "S4 Kummer quotients with the specified cubic resolvent. Other subfields may exist. Strict zero concerns the pair governing fields, not the whole curve. No new class or CT value computed.",
+  "central_extension_invariance": "If C is central and acts trivially on V with V^S3=0, then H1(Gamma/C,V) -> H1(Gamma,V) is an isomorphism.",
+  "finite_group": {
+    "B1_dimension": 2,
+    "H1_dimension": 2,
+    "Z1_dimension": 4,
+    "alpha_assignment": 9,
+    "basis_description": "Exactly the two inherited coordinate cocycles; the central governing bit contributes no H1 class.",
+    "beta_assignment": 144,
+    "central_value_expressions": [
+      0,
+      0
+    ],
+    "coboundary_assignments": [
+      0,
+      3840,
+      1792,
+      2048
+    ],
+    "cochain_variable_count": 12,
+    "cocycle_assignments": [
+      0,
+      9,
+      144,
+      153,
+      1792,
+      1801,
+      1936,
+      1945,
+      2048,
+      2057,
+      2192,
+      2201,
+      3840,
+      3849,
+      3984,
+      3993
+    ],
+    "constraint_rank": 8,
+    "generator_count": 6,
+    "group_order": 192,
+    "kernel_abelianization_order": 16,
+    "kernel_commutator_order": 2,
+    "kernel_over_cubic_splitting_field_order": 32
+  },
+  "generic_compositum_conclusion": "Every S4 cubic Kummer class whose Galois closure lies in the compositum of all generic pair governing fields belongs to the generic subgroup.",
+  "retained_pair_governing_degree": 192,
+  "rows": [
+    {
+      "all_generic_pair_fields_new_class_dimension": 0,
+      "all_generic_pair_fields_strict_dimension_interval": [
+        0,
+        5
+      ],
+      "pair_governing_new_class_dimension": 0,
+      "pair_governing_strict_class_dimension": 0,
+      "pair_governing_total_class_dimension": 2,
+      "pair_nontrivial_S4_quotients": 3,
+      "pair_strict_S4_quotients": 0,
+      "token": "case-00"
+    },
+    {
+      "all_generic_pair_fields_new_class_dimension": 0,
+      "all_generic_pair_fields_strict_dimension_interval": [
+        9,
+        9
+      ],
+      "pair_governing_new_class_dimension": 0,
+      "pair_governing_strict_class_dimension": 0,
+      "pair_governing_total_class_dimension": 2,
+      "pair_nontrivial_S4_quotients": 3,
+      "pair_strict_S4_quotients": 0,
+      "token": "case-01"
+    },
+    {
+      "all_generic_pair_fields_new_class_dimension": 0,
+      "all_generic_pair_fields_strict_dimension_interval": [
+        0,
+        0
+      ],
+      "pair_governing_new_class_dimension": 0,
+      "pair_governing_strict_class_dimension": 0,
+      "pair_governing_total_class_dimension": 2,
+      "pair_nontrivial_S4_quotients": 3,
+      "pair_strict_S4_quotients": 0,
+      "token": "case-02"
+    },
+    {
+      "all_generic_pair_fields_new_class_dimension": 0,
+      "all_generic_pair_fields_strict_dimension_interval": [
+        0,
+        0
+      ],
+      "pair_governing_new_class_dimension": 0,
+      "pair_governing_strict_class_dimension": 0,
+      "pair_governing_total_class_dimension": 2,
+      "pair_nontrivial_S4_quotients": 3,
+      "pair_strict_S4_quotients": 0,
+      "token": "case-03"
+    },
+    {
+      "all_generic_pair_fields_new_class_dimension": 0,
+      "all_generic_pair_fields_strict_dimension_interval": [
+        0,
+        0
+      ],
+      "pair_governing_new_class_dimension": 0,
+      "pair_governing_strict_class_dimension": 0,
+      "pair_governing_total_class_dimension": 2,
+      "pair_nontrivial_S4_quotients": 3,
+      "pair_strict_S4_quotients": 0,
+      "token": "case-04"
+    },
+    {
+      "all_generic_pair_fields_new_class_dimension": 0,
+      "all_generic_pair_fields_strict_dimension_interval": [
+        10,
+        10
+      ],
+      "pair_governing_new_class_dimension": 0,
+      "pair_governing_strict_class_dimension": 0,
+      "pair_governing_total_class_dimension": 2,
+      "pair_nontrivial_S4_quotients": 3,
+      "pair_strict_S4_quotients": 0,
+      "token": "case-05"
+    },
+    {
+      "all_generic_pair_fields_new_class_dimension": 0,
+      "all_generic_pair_fields_strict_dimension_interval": [
+        0,
+        0
+      ],
+      "pair_governing_new_class_dimension": 0,
+      "pair_governing_strict_class_dimension": 0,
+      "pair_governing_total_class_dimension": 2,
+      "pair_nontrivial_S4_quotients": 3,
+      "pair_strict_S4_quotients": 0,
+      "token": "case-06"
+    },
+    {
+      "all_generic_pair_fields_new_class_dimension": 0,
+      "all_generic_pair_fields_strict_dimension_interval": [
+        5,
+        5
+      ],
+      "pair_governing_new_class_dimension": 0,
+      "pair_governing_strict_class_dimension": 0,
+      "pair_governing_total_class_dimension": 2,
+      "pair_nontrivial_S4_quotients": 3,
+      "pair_strict_S4_quotients": 0,
+      "token": "case-07"
+    },
+    {
+      "all_generic_pair_fields_new_class_dimension": 0,
+      "all_generic_pair_fields_strict_dimension_interval": [
+        0,
+        5
+      ],
+      "pair_governing_new_class_dimension": 0,
+      "pair_governing_strict_class_dimension": 0,
+      "pair_governing_total_class_dimension": 2,
+      "pair_nontrivial_S4_quotients": 3,
+      "pair_strict_S4_quotients": 0,
+      "token": "case-08"
+    },
+    {
+      "all_generic_pair_fields_new_class_dimension": 0,
+      "all_generic_pair_fields_strict_dimension_interval": [
+        0,
+        0
+      ],
+      "pair_governing_new_class_dimension": 0,
+      "pair_governing_strict_class_dimension": 0,
+      "pair_governing_total_class_dimension": 2,
+      "pair_nontrivial_S4_quotients": 3,
+      "pair_strict_S4_quotients": 0,
+      "token": "case-09"
+    },
+    {
+      "all_generic_pair_fields_new_class_dimension": 0,
+      "all_generic_pair_fields_strict_dimension_interval": [
+        0,
+        5
+      ],
+      "pair_governing_new_class_dimension": 0,
+      "pair_governing_strict_class_dimension": 0,
+      "pair_governing_total_class_dimension": 2,
+      "pair_nontrivial_S4_quotients": 3,
+      "pair_strict_S4_quotients": 0,
+      "token": "case-10"
+    },
+    {
+      "all_generic_pair_fields_new_class_dimension": 0,
+      "all_generic_pair_fields_strict_dimension_interval": [
+        0,
+        6
+      ],
+      "pair_governing_new_class_dimension": 0,
+      "pair_governing_strict_class_dimension": 0,
+      "pair_governing_total_class_dimension": 2,
+      "pair_nontrivial_S4_quotients": 3,
+      "pair_strict_S4_quotients": 0,
+      "token": "case-11"
+    },
+    {
+      "all_generic_pair_fields_new_class_dimension": 0,
+      "all_generic_pair_fields_strict_dimension_interval": [
+        0,
+        7
+      ],
+      "pair_governing_new_class_dimension": 0,
+      "pair_governing_strict_class_dimension": 0,
+      "pair_governing_total_class_dimension": 2,
+      "pair_nontrivial_S4_quotients": 3,
+      "pair_strict_S4_quotients": 0,
+      "token": "case-12"
+    },
+    {
+      "all_generic_pair_fields_new_class_dimension": 0,
+      "all_generic_pair_fields_strict_dimension_interval": [
+        1,
+        1
+      ],
+      "pair_governing_new_class_dimension": 0,
+      "pair_governing_strict_class_dimension": 0,
+      "pair_governing_total_class_dimension": 2,
+      "pair_nontrivial_S4_quotients": 3,
+      "pair_strict_S4_quotients": 0,
+      "token": "case-13"
+    },
+    {
+      "all_generic_pair_fields_new_class_dimension": 0,
+      "all_generic_pair_fields_strict_dimension_interval": [
+        0,
+        0
+      ],
+      "pair_governing_new_class_dimension": 0,
+      "pair_governing_strict_class_dimension": 0,
+      "pair_governing_total_class_dimension": 2,
+      "pair_nontrivial_S4_quotients": 3,
+      "pair_strict_S4_quotients": 0,
+      "token": "case-14"
+    },
+    {
+      "all_generic_pair_fields_new_class_dimension": 0,
+      "all_generic_pair_fields_strict_dimension_interval": [
+        0,
+        0
+      ],
+      "pair_governing_new_class_dimension": 0,
+      "pair_governing_strict_class_dimension": 0,
+      "pair_governing_total_class_dimension": 2,
+      "pair_nontrivial_S4_quotients": 3,
+      "pair_strict_S4_quotients": 0,
+      "token": "case-15"
+    }
+  ],
+  "schema": "rank-jump.governing-field-incidence-closure.v1",
+  "status": "PASS",
+  "third_independent_class_joint_field_degree": 384
+}

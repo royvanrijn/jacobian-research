@@ -1,0 +1,7 @@
+{
+  "schema": "rank-jump.governing-third-class-separation-protocol.v1",
+  "question": "Can a retained prime split the first-pair governing field completely while detecting the third independent generic S4 class?",
+  "selection": "Exactly case-02 and case-03 (the frozen matched 103b2 pair) and case-13 (the retained historic control). Use generic section index2. These labels determine retrospective selection only; worker arithmetic uses masked equations and generic sections.",
+  "limits": {"cases": 3, "prime_bound": 10009, "worker_seconds": 30, "workers": 1, "new_points_or_parameters": 0, "number_field_initializations": 0},
+  "endpoint": "At the first admissible witnessing prime, the governing octic has eight distinct linear factors and the third-class quartic has two irreducible quadratic factors. Independently inspect the corresponding cubic Kummer characters. An absent witness is UNKNOWN within the bound, not a field-containment result."
+}

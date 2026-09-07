@@ -1,0 +1,56 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_octics_v1.json": "ac239168b99362ea0d8be8eadc0c5114a774ebb5ec1dcc6c6251b0dba0e39677",
+    "artifacts/generated-results/elliptic-curves/rank_jump_governing_third_class_separation_v1.json": "16b3e1e85617ba629c3c0c6fd5c44787f1e0b0041a0156397de26b61ff12b312",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_explicit_governing_octic.py": "7d2567d37c720b56b21fd3f26e6fddd139fff646079d556f0d809260c04f3524",
+    "elliptic-curves/rank-jump/verify_governing_third_class_separation.py": "c9aed57b8a1ecb7826ae74ea784873eb24f89d29b4b16f170ae4f7c44be12896"
+  },
+  "method": "Eight distinct roots certify full octic splitting; no quartic root and Frobenius^2=identity certify two quadratics, without a factorization routine.",
+  "rows": [
+    {
+      "Kummer_signature": [
+        1,
+        1,
+        0
+      ],
+      "octic_splits_completely": true,
+      "prime": 2551,
+      "third_quartic_splitting": [
+        2,
+        2
+      ],
+      "token": "case-02"
+    },
+    {
+      "Kummer_signature": [
+        1,
+        1,
+        0
+      ],
+      "octic_splits_completely": true,
+      "prime": 971,
+      "third_quartic_splitting": [
+        2,
+        2
+      ],
+      "token": "case-03"
+    },
+    {
+      "Kummer_signature": [
+        1,
+        0,
+        1
+      ],
+      "octic_splits_completely": true,
+      "prime": 853,
+      "third_quartic_splitting": [
+        2,
+        2
+      ],
+      "token": "case-13"
+    }
+  ],
+  "schema": "rank-jump.governing-third-class-separation-verification.v1",
+  "status": "PASS"
+}

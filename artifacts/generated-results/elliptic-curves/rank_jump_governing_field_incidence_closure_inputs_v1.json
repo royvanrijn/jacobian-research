@@ -1,0 +1,1488 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_completion_v1.json": "7723a550f87b15cd4e5b1fcbb3e187327b8b209b9d702dee5748a20dd0d8c38e",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_octics_v1.json": "ac239168b99362ea0d8be8eadc0c5114a774ebb5ec1dcc6c6251b0dba0e39677",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_v1.json": "7281c4b5c861553bd9aa2e947ea229ec00631205f54d06f7e5e7024c653e3ad6",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_governing_panel_verification_v1.json": "e0923a7bb8bb74bc61b2a5dcc1474b1dfb85961ef9d41367eab6a9781f4aef52",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_supplement_v1.json": "db79021f3a6ba6d4a2bb4cba175b961aadbe30eaac819f7667d3b01395a25a1f",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fresh_retained_factor_verification_v1.json": "e34af3d6f141ff74276dd6af557814315c88a613155220005f5d965f0abd3edf",
+    "elliptic-curves/rank-jump/GOVERNING_FIELD_INCIDENCE_CLOSURE_PROTOCOL.json": "44d62a9425972050f8b57b8a466cee55f1b576dd4a4e9b3171dc4a3e1591394b",
+    "elliptic-curves/rank-jump/governing_field_incidence_closure.py": "073f8a0aecd22ec14b194c6053b2842da857ed636d6f5e111ffcb702acfd414e"
+  },
+  "boundary": "Only inherited generic pair independence and local signatures; no exceptional points or rank labels.",
+  "rows": [
+    {
+      "all_generic_strict_dimension_interval": [
+        0,
+        5
+      ],
+      "generic_dimension": 17,
+      "generic_pair_indices": [
+        0,
+        1
+      ],
+      "governing_field_degree": 192,
+      "joint_class_field_degree": 96,
+      "local_witnesses": [
+        {
+          "nonzero_signature": 122,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 1
+        },
+        {
+          "nonzero_signature": 30,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 2
+        },
+        {
+          "nonzero_signature": 100,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 3
+        }
+      ],
+      "pair_independence_signatures": [
+        3,
+        2
+      ],
+      "token": "case-00"
+    },
+    {
+      "all_generic_strict_dimension_interval": [
+        9,
+        9
+      ],
+      "generic_dimension": 17,
+      "generic_pair_indices": [
+        0,
+        1
+      ],
+      "governing_field_degree": 192,
+      "joint_class_field_degree": 96,
+      "local_witnesses": [
+        {
+          "nonzero_signature": 4,
+          "pair_signatures": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "place": 3,
+          "word": 1
+        },
+        {
+          "nonzero_signature": 4,
+          "pair_signatures": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "place": 3,
+          "word": 2
+        },
+        {
+          "nonzero_signature": 10,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 13,
+          "word": 3
+        }
+      ],
+      "pair_independence_signatures": [
+        5,
+        4
+      ],
+      "token": "case-01"
+    },
+    {
+      "all_generic_strict_dimension_interval": [
+        0,
+        0
+      ],
+      "generic_dimension": 17,
+      "generic_pair_indices": [
+        0,
+        1
+      ],
+      "governing_field_degree": 192,
+      "joint_class_field_degree": 96,
+      "local_witnesses": [
+        {
+          "nonzero_signature": 2,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 1
+        },
+        {
+          "nonzero_signature": 2,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 2
+        },
+        {
+          "nonzero_signature": 2,
+          "pair_signatures": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          "place": 3,
+          "word": 3
+        }
+      ],
+      "pair_independence_signatures": [
+        16,
+        11
+      ],
+      "token": "case-02"
+    },
+    {
+      "all_generic_strict_dimension_interval": [
+        0,
+        0
+      ],
+      "generic_dimension": 17,
+      "generic_pair_indices": [
+        0,
+        1
+      ],
+      "governing_field_degree": 192,
+      "joint_class_field_degree": 96,
+      "local_witnesses": [
+        {
+          "nonzero_signature": 22,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              1
+            ]
+          ],
+          "place": 2,
+          "word": 1
+        },
+        {
+          "nonzero_signature": 22,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              1
+            ]
+          ],
+          "place": 2,
+          "word": 2
+        },
+        {
+          "nonzero_signature": 59,
+          "pair_signatures": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              1,
+              1
+            ]
+          ],
+          "place": 3,
+          "word": 3
+        }
+      ],
+      "pair_independence_signatures": [
+        4,
+        7
+      ],
+      "token": "case-03"
+    },
+    {
+      "all_generic_strict_dimension_interval": [
+        0,
+        0
+      ],
+      "generic_dimension": 17,
+      "generic_pair_indices": [
+        0,
+        1
+      ],
+      "governing_field_degree": 192,
+      "joint_class_field_degree": 96,
+      "local_witnesses": [
+        {
+          "nonzero_signature": 32,
+          "pair_signatures": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 1
+        },
+        {
+          "nonzero_signature": 2,
+          "pair_signatures": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          "place": 5,
+          "word": 2
+        },
+        {
+          "nonzero_signature": 32,
+          "pair_signatures": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 3
+        }
+      ],
+      "pair_independence_signatures": [
+        13,
+        45
+      ],
+      "token": "case-04"
+    },
+    {
+      "all_generic_strict_dimension_interval": [
+        10,
+        10
+      ],
+      "generic_dimension": 17,
+      "generic_pair_indices": [
+        0,
+        1
+      ],
+      "governing_field_degree": 192,
+      "joint_class_field_degree": 96,
+      "local_witnesses": [
+        {
+          "nonzero_signature": 18,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 1
+        },
+        {
+          "nonzero_signature": 25,
+          "pair_signatures": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1,
+              1,
+              0
+            ]
+          ],
+          "place": 13,
+          "word": 2
+        },
+        {
+          "nonzero_signature": 18,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 3
+        }
+      ],
+      "pair_independence_signatures": [
+        3,
+        2
+      ],
+      "token": "case-05"
+    },
+    {
+      "all_generic_strict_dimension_interval": [
+        0,
+        0
+      ],
+      "generic_dimension": 17,
+      "generic_pair_indices": [
+        0,
+        1
+      ],
+      "governing_field_degree": 192,
+      "joint_class_field_degree": 96,
+      "local_witnesses": [
+        {
+          "nonzero_signature": 2,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 1
+        },
+        {
+          "nonzero_signature": 12,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 2
+        },
+        {
+          "nonzero_signature": 14,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 3
+        }
+      ],
+      "pair_independence_signatures": [
+        9,
+        8
+      ],
+      "token": "case-06"
+    },
+    {
+      "all_generic_strict_dimension_interval": [
+        5,
+        5
+      ],
+      "generic_dimension": 17,
+      "generic_pair_indices": [
+        0,
+        1
+      ],
+      "governing_field_degree": 192,
+      "joint_class_field_degree": 96,
+      "local_witnesses": [
+        {
+          "nonzero_signature": 10,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 3,
+          "word": 1
+        },
+        {
+          "nonzero_signature": 26,
+          "pair_signatures": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1
+            ]
+          ],
+          "place": 2,
+          "word": 2
+        },
+        {
+          "nonzero_signature": 26,
+          "pair_signatures": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1
+            ]
+          ],
+          "place": 2,
+          "word": 3
+        }
+      ],
+      "pair_independence_signatures": [
+        48,
+        61
+      ],
+      "token": "case-07"
+    },
+    {
+      "all_generic_strict_dimension_interval": [
+        0,
+        5
+      ],
+      "generic_dimension": 17,
+      "generic_pair_indices": [
+        0,
+        1
+      ],
+      "governing_field_degree": 192,
+      "joint_class_field_degree": 96,
+      "local_witnesses": [
+        {
+          "nonzero_signature": 10,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 1
+        },
+        {
+          "nonzero_signature": 6,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 2
+        },
+        {
+          "nonzero_signature": 12,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 3
+        }
+      ],
+      "pair_independence_signatures": [
+        10,
+        11
+      ],
+      "token": "case-08"
+    },
+    {
+      "all_generic_strict_dimension_interval": [
+        0,
+        0
+      ],
+      "generic_dimension": 17,
+      "generic_pair_indices": [
+        0,
+        1
+      ],
+      "governing_field_degree": 192,
+      "joint_class_field_degree": 96,
+      "local_witnesses": [
+        {
+          "nonzero_signature": 48,
+          "pair_signatures": [
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          ],
+          "place": 2,
+          "word": 1
+        },
+        {
+          "nonzero_signature": 112,
+          "pair_signatures": [
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          ],
+          "place": 2,
+          "word": 2
+        },
+        {
+          "nonzero_signature": 64,
+          "pair_signatures": [
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          ],
+          "place": 2,
+          "word": 3
+        }
+      ],
+      "pair_independence_signatures": [
+        3,
+        4
+      ],
+      "token": "case-09"
+    },
+    {
+      "all_generic_strict_dimension_interval": [
+        0,
+        5
+      ],
+      "generic_dimension": 17,
+      "generic_pair_indices": [
+        0,
+        1
+      ],
+      "governing_field_degree": 192,
+      "joint_class_field_degree": 96,
+      "local_witnesses": [
+        {
+          "nonzero_signature": 8,
+          "pair_signatures": [
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 1
+        },
+        {
+          "nonzero_signature": 12,
+          "pair_signatures": [
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 2
+        },
+        {
+          "nonzero_signature": 4,
+          "pair_signatures": [
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 3
+        }
+      ],
+      "pair_independence_signatures": [
+        2,
+        4
+      ],
+      "token": "case-10"
+    },
+    {
+      "all_generic_strict_dimension_interval": [
+        0,
+        6
+      ],
+      "generic_dimension": 16,
+      "generic_pair_indices": [
+        0,
+        1
+      ],
+      "governing_field_degree": 192,
+      "joint_class_field_degree": 96,
+      "local_witnesses": [
+        {
+          "nonzero_signature": 10,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 1
+        },
+        {
+          "nonzero_signature": 59,
+          "pair_signatures": [
+            [
+              1,
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              1,
+              1
+            ]
+          ],
+          "place": 41,
+          "word": 2
+        },
+        {
+          "nonzero_signature": 10,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 3
+        }
+      ],
+      "pair_independence_signatures": [
+        2,
+        3
+      ],
+      "token": "case-11"
+    },
+    {
+      "all_generic_strict_dimension_interval": [
+        0,
+        7
+      ],
+      "generic_dimension": 16,
+      "generic_pair_indices": [
+        0,
+        1
+      ],
+      "governing_field_degree": 192,
+      "joint_class_field_degree": 96,
+      "local_witnesses": [
+        {
+          "nonzero_signature": 506,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 1
+        },
+        {
+          "nonzero_signature": 110,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 2
+        },
+        {
+          "nonzero_signature": 404,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 3
+        }
+      ],
+      "pair_independence_signatures": [
+        6,
+        2
+      ],
+      "token": "case-12"
+    },
+    {
+      "all_generic_strict_dimension_interval": [
+        1,
+        1
+      ],
+      "generic_dimension": 17,
+      "generic_pair_indices": [
+        0,
+        1
+      ],
+      "governing_field_degree": 192,
+      "joint_class_field_degree": 96,
+      "local_witnesses": [
+        {
+          "nonzero_signature": 126,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 1
+        },
+        {
+          "nonzero_signature": 26,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 2
+        },
+        {
+          "nonzero_signature": 100,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 3
+        }
+      ],
+      "pair_independence_signatures": [
+        1,
+        2
+      ],
+      "token": "case-13"
+    },
+    {
+      "all_generic_strict_dimension_interval": [
+        0,
+        0
+      ],
+      "generic_dimension": 17,
+      "generic_pair_indices": [
+        0,
+        1
+      ],
+      "governing_field_degree": 192,
+      "joint_class_field_degree": 96,
+      "local_witnesses": [
+        {
+          "nonzero_signature": 34,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 5,
+          "word": 1
+        },
+        {
+          "nonzero_signature": 32,
+          "pair_signatures": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 2
+        },
+        {
+          "nonzero_signature": 32,
+          "pair_signatures": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 3
+        }
+      ],
+      "pair_independence_signatures": [
+        1,
+        10
+      ],
+      "token": "case-14"
+    },
+    {
+      "all_generic_strict_dimension_interval": [
+        0,
+        0
+      ],
+      "generic_dimension": 16,
+      "generic_pair_indices": [
+        0,
+        1
+      ],
+      "governing_field_degree": 192,
+      "joint_class_field_degree": 96,
+      "local_witnesses": [
+        {
+          "nonzero_signature": 10,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 1
+        },
+        {
+          "nonzero_signature": 6,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 2
+        },
+        {
+          "nonzero_signature": 12,
+          "pair_signatures": [
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "place": 2,
+          "word": 3
+        }
+      ],
+      "pair_independence_signatures": [
+        6,
+        12
+      ],
+      "token": "case-15"
+    }
+  ],
+  "schema": "rank-jump.governing-field-incidence-closure-inputs.v1"
+}
