@@ -1,0 +1,20 @@
+{
+  "CT_exclusion_words_verified": 63,
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_fixed_cubic_minus_reference_verification_v1.json": "d13847c6fdc22e825fa05c08926411b484df5a6d954228931c790c15055690f1",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fixed_resolvent_solubility_inputs_v1.json": "0b97fca21e0fdd9607dbad64c2bf5fb274e80c61a9cdd8d6ca4a7cc48f6a1514",
+    "artifacts/generated-results/elliptic-curves/rank_jump_fixed_resolvent_solubility_v1.json": "58c8656ceb90b3e151e3c1aff2cc1585abd2c4ba16a03b43c1beb880e6f72a17",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb",
+    "elliptic-curves/rank-jump/verify_fixed_resolvent_solubility.py": "c1261329da69109a9aeec372be73684548e4666925e024c4a7718259209672b4",
+    "elliptic-curves/rank-jump/verify_unpointed_governing_norm.py": "69828517faa1ebdc92218dc338cfe156fbc8a16020bf6b28d8f59a60bc4c847a"
+  },
+  "finite_field_irreducibility_witnesses": 12,
+  "four_root_product_identity": true,
+  "fresh_maximal_order_or_unramifiedness_computations": 0,
+  "polynomial_discriminant_identities": 6,
+  "rational_algebra_quartics_verified": 6,
+  "resolvent_pairing_roots_verified": 3,
+  "retained_unconditional_strict_CT_certificate_bound": true,
+  "schema": "rank-jump.fixed-resolvent-solubility-verification.v1",
+  "status": "PASS"
+}

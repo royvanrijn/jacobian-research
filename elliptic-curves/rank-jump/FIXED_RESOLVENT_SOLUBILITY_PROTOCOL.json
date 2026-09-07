@@ -1,0 +1,8 @@
+{
+  "schema": "rank-jump.fixed-resolvent-solubility-protocol.v1",
+  "question": "Does requiring the exact oriented cubic resolvent polynomial silently impose elliptic rational solubility on an otherwise valid unramified S4 class?",
+  "gate": "Derive the norm-square quartic and its trace-free resolvent. Fixing the latter to the original cubic should be equivalent to rational solubility on the minus-one twist. Test this on the six generic strict classes whose nondegenerate twist CT restriction is already certified.",
+  "inputs": "Only the reference cubic, its field discriminant, six generic strict representatives and the unconditional rank-six twist CT matrix. No exceptional point, class or rank label. Frozen existing generic control, not a sample chosen for a new correlation.",
+  "limits": {"explicit_quartics": 6, "CT_words": 63, "prime_witness_bound": 503, "worker_seconds": 30, "verifier_seconds": 30, "workers": 1, "new_points": 0, "parameter_searches": 0, "number_field_initializations": 0, "class_group_computations": 0},
+  "failure": "UNKNOWN on a failed certificate or absent prime witness. No failure to represent a class with one oriented resolvent is interpreted as absence of the underlying class field. Field discriminant equality is deduced from retained strictness, not certified by a fresh maximal-order computation."
+}
