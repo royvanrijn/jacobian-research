@@ -5,13 +5,14 @@ This wrapper preserves failed transfer attempts while keeping new work in the
 v3-transfer-11952-v3 namespace. Seed intake is certificate-driven: bind_job
 validates the frozen seed/proof files, replays the exact finite-reduction
 certificate, then binds that certified MWState to the exact (model,basis) tuple
-returned by engine.v1.seed(None). The worker's first raw_state request must be
-that exact tuple and receives the certified state directly; later enlarged
-subgroups use the normal raw_state path.
+returned by engine.v1.seed(None). The worker dispatch is patched at the actual
+run_case boundary so the already-certified seed state is used directly; only
+later enlarged subgroups use the normal raw_state path.
 """
 from importlib.machinery import SourceFileLoader
 from pathlib import Path
 from fractions import Fraction as F
+import inspect
 import os
 import sys
 
@@ -83,9 +84,6 @@ def certified_raw_state(curve, points, *, cache=None, prime_bound=1000):
         expected_curve, expected_points, state = _active_seed
         if c == expected_curve and pts == expected_points:
             return state
-        # During initial worker startup, a same-curve request with the declared
-        # seed cardinality must be the frozen marked basis. Do not silently fall
-        # back to heuristic admission if it differs.
         if c == expected_curve and len(pts) == len(expected_points):
             diff = _first_diff(pts, expected_points)
             raise ValueError('V3 initial seed identity mismatch: '+repr(diff))
@@ -101,7 +99,6 @@ def bind_job(case):
     frozen_curve = _normal_curve(seed['curve'])
     frozen_points = _normal_points(seed['points'])
 
-    # Bind to the exact tuple the worker will subsequently request.
     engine_curve, engine_points = engine.v1.seed(None)
     engine_curve = _normal_curve(engine_curve)
     engine_points = _normal_points(engine_points)
@@ -113,9 +110,6 @@ def bind_job(case):
     base.require(bool(primes) and len(set(primes)) == len(primes), 'Malformed frozen seed certificate prime list')
     torsion = int(proof['no_rational_2_torsion_prime'])
 
-    # Rebuild the exact marked basis from the already frozen finite-reduction
-    # certificate. MWState.adjoin preserves basis order; every prefix must gain
-    # exactly one certified dimension.
     from research_runtime.memory_store import MemoryFactStore
     from research_runtime.quotient_only_reduction import QuotientOnlyReductionCache as Cache
     cache = Cache(MemoryFactStore())
@@ -135,6 +129,41 @@ def bind_job(case):
     _active_seed = (engine_curve, engine_points, state)
     return engine, folder, policy
 base.bind_job = bind_job
+
+
+def _initial_worker_state(model, basis, policy):
+    if _active_seed is None:
+        raise ValueError('V3 certified seed state was not installed by bind_job')
+    expected_curve, expected_points, state = _active_seed
+    actual_curve = _normal_curve(model)
+    actual_points = _normal_points(basis)
+    if actual_curve != expected_curve:
+        raise ValueError('V3 worker seed curve differs after bind_job')
+    diff = _first_diff(actual_points, expected_points)
+    if diff is not None:
+        raise ValueError('V3 worker seed points differ after bind_job: '+repr(diff))
+    if state.rank != policy['initial_rank']:
+        raise ValueError(f'V3 certified state rank {state.rank} != declared {policy["initial_rank"]}')
+    diff = _first_diff(tuple(state.basis), actual_points)
+    if diff is not None:
+        raise ValueError('V3 certified state basis differs from worker seed: '+repr(diff))
+    return state
+
+# Patch the actual dispatch target, not merely search_state.raw_state. Keep the
+# original run_case body unchanged except for the redundant startup rebuild and
+# generic seed equality assertion. This makes the trust boundary explicit while
+# preserving every subsequent landscape/chart/replay operation verbatim.
+_run_case_source = inspect.getsource(base.run_case)
+_old_startup = "    state = raw_state(model,basis,cache=cache,prime_bound=1000)\n    require(state.rank == p['initial_rank'] and tuple(state.basis) == basis, 'Seed rank replay failed')\n"
+_new_startup = "    state = _initial_worker_state(model,basis,p)\n"
+base.require(_run_case_source.count(_old_startup) == 1,
+             'V3 run_case patch anchor changed; review upstream worker before execution')
+_run_case_source = _run_case_source.replace(_old_startup, _new_startup)
+_worker_globals = dict(base.__dict__)
+_worker_globals['bind_job'] = bind_job
+_worker_globals['_initial_worker_state'] = _initial_worker_state
+exec(compile(_run_case_source, str(SELF)+':patched-run-case', 'exec'), _worker_globals)
+base.run_case = _worker_globals['run_case']
 
 if __name__ == '__main__':
     base.main()
