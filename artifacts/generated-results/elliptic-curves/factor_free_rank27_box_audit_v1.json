@@ -1,0 +1,83 @@
+{
+  "boundary": "Exactly the existing49 own27 centres on all seven V22 rank27 equations, with no new parameter, mask, height fit or point search. Construct exact factor-free maps and compare finite coordinate boxes. A coordinate witness need not be a quartic square or new elliptic point. No automatic point campaign.",
+  "charts": 343,
+  "point_boxes_attempted": 0,
+  "rows": [
+    {
+      "counts": {
+        "PROVED_NEW_COORDINATE_EXPOSURE": 49
+      },
+      "family": "11952",
+      "folder": "artifacts/local/elliptic-curves/full11952-specialized-followup-v1/new-20260906-186",
+      "id": "new-20260906-186",
+      "parameter": "4286/1881"
+    },
+    {
+      "counts": {
+        "PROVED_NEW_COORDINATE_EXPOSURE": 49
+      },
+      "family": "074d9",
+      "folder": "artifacts/local/elliptic-curves/new27-specialized-parity-six-v1/new-20260906-40",
+      "id": "new-20260906-40",
+      "parameter": "2818/1535"
+    },
+    {
+      "counts": {
+        "PROVED_NEW_COORDINATE_EXPOSURE": 49
+      },
+      "family": "11952",
+      "folder": "artifacts/local/elliptic-curves/new27-specialized-parity-six-v1/new-20260906-41",
+      "id": "new-20260906-41",
+      "parameter": "-2448/11"
+    },
+    {
+      "counts": {
+        "PROVED_NEW_COORDINATE_EXPOSURE": 49
+      },
+      "family": "11952",
+      "folder": "artifacts/local/elliptic-curves/new27-specialized-parity-six-v1/new-20260906-48",
+      "id": "new-20260906-48",
+      "parameter": "2828/2015"
+    },
+    {
+      "counts": {
+        "PROVED_NEW_COORDINATE_EXPOSURE": 49
+      },
+      "family": "103b2",
+      "folder": "artifacts/local/elliptic-curves/new27-specialized-parity-six-v1/new-20260906-71",
+      "id": "new-20260906-71",
+      "parameter": "3726/881"
+    },
+    {
+      "counts": {
+        "PROVED_NEW_COORDINATE_EXPOSURE": 49
+      },
+      "family": "11952",
+      "folder": "artifacts/local/elliptic-curves/new27-specialized-parity-six-v1/new-20260906-72",
+      "id": "new-20260906-72",
+      "parameter": "2012/211"
+    },
+    {
+      "counts": {
+        "PROVED_NEW_COORDINATE_EXPOSURE": 49
+      },
+      "family": "a1-fibration-01",
+      "folder": "artifacts/local/elliptic-curves/new27-specialized-parity-six-v1/new-20260906-90",
+      "id": "new-20260906-90",
+      "parameter": "-1867/270"
+    }
+  ],
+  "schema": "elliptic-curves.factor-free-rank27-box-summary.v1",
+  "sources": {
+    "artifacts/local/elliptic-curves/factor-free-rank27-box-audit-v1/ledger.json": "b315044a10feae657a47112548a8949e12d3119c8972acb2bf3a5a966b50ffc8",
+    "artifacts/local/elliptic-curves/factor-free-rank27-box-audit-v1/new-20260906-186/maps.json": "47eb5e005b214dc3fd8c5c2c9bb2b57f279caada99648f7a8850e1b600243031",
+    "artifacts/local/elliptic-curves/factor-free-rank27-box-audit-v1/new-20260906-40/maps.json": "f2461b778c5bb4a7ce87f4ead36b5e6490f881f829c76855320ef8222572d176",
+    "artifacts/local/elliptic-curves/factor-free-rank27-box-audit-v1/new-20260906-41/maps.json": "7e1307a9dbbb7ae7147203103c3d034b7a31952e898dc2087ab74b278ad6b6a6",
+    "artifacts/local/elliptic-curves/factor-free-rank27-box-audit-v1/new-20260906-48/maps.json": "3ce01a3d235c2f20ddb37afaaf2e8a0516baf06f8c06737d1ffd1259f361bd79",
+    "artifacts/local/elliptic-curves/factor-free-rank27-box-audit-v1/new-20260906-71/maps.json": "36b7938ef732ffa50cf046ccb23ea3455ab536b840ac690a2573d57ec623caf7",
+    "artifacts/local/elliptic-curves/factor-free-rank27-box-audit-v1/new-20260906-72/maps.json": "367d432ed3160708750c90be4c06cb8cf76a7aba1aaedc3712a232cdac12420a",
+    "artifacts/local/elliptic-curves/factor-free-rank27-box-audit-v1/new-20260906-90/maps.json": "9569ff43b71a5745a2168e74ccbdb94b6f80af9a298f0de439d1060d14948f43",
+    "artifacts/local/elliptic-curves/factor-free-rank27-box-audit-v1/protocol.json": "89187a221a9076e1d1511ce7f2803e68cbd983e8c319fdabbf023e83558f5b29"
+  },
+  "status": "PASS"
+}
