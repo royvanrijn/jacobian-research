@@ -1,0 +1,10 @@
+{
+  "schema": "rank-jump.generic-chord-ramification-protocol.v1",
+  "question": "Do square roots of generic chord identities form new even-valuation blocks on the fresh 103b2 pair and historic +12/+14 controls?",
+  "cases": ["case-02", "case-03", "case-13", "case-15"],
+  "selection": "Every unordered pair of marked generic points with relative signs plus and minus, and each generic tangent. Normalize the resulting nonconstant linear polynomial a+b*theta to coprime integral coefficients with b positive. Deduplicate exact polynomials. No exceptional points or outcome labels are arithmetic inputs.",
+  "method": "For alpha=a+b*theta, study pi(alpha)=Norm(alpha)*alpha. Remove only the certified S support from the integer norm. Build a gcd-free norm basis, refine it by pair resultants until all active root differences are either zero or units modulo each basis atom, and compute the full outside-S prime-ideal parity matrix. Three distinct root supports may cancel together. Perfect-square atoms contribute no parity constraint; a nonsquare coprime atom supplies an exact constraint without factoring it.",
+  "bounds": {"seconds_per_case": 60, "workers": 1, "maximum_atoms": 4096, "new_parameters": 0, "elliptic_point_searches": 0, "general_integer_factorizations": 0},
+  "failure_semantics": "Unfinished gcd refinement or invalid root partitions leave the row UNKNOWN. The parity kernel is a candidate coefficient space, not a lower bound on Selmer or rational rank. Surviving products require separate global squareclass independence and local S tests.",
+  "boundary": "Equation-and-generic-only retrospective incidence constructor. No active search files, protocols, points, scores or rank claims are changed."
+}

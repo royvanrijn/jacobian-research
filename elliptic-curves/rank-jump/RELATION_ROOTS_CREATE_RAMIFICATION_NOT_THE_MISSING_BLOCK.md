@@ -1,5 +1,10 @@
 # A relation root leaves the old span, but adds no Selmer class
 
+Follow-up: [all generic chord and tangent roots on four controls](GENERIC_CHORD_BLOCKS_HAVE_PRIVATE_RAMIFICATION.md)
+have independent private good-prime obstructions. The 1123-form test includes
+the fresh 103b2 pair and historic +12/+14 fibres; every whole span adds zero
+Selmer classes despite shared three-root local cancellations.
+
 The explicit square root of the sole inherited relation in the retained
 equation-only norm dictionary creates a **new ramified squareclass**. It
 does not create an unramified class, even after multiplication by arbitrary
