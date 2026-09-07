@@ -146,6 +146,8 @@ now explains why newly certified directions can supply different degree-two
 presentations for a later fixed-subgroup follow-up. It does not change this
 frozen campaign or guarantee additional point discovery.
 
-The next focused trial uses302 as a generic17 recovery control and full31
-direct target, with the two certified19 siblings at reduced s=4/3 and7/2.
-It is a separate fixed protocol; the score comparison above remains unchanged.
+The [separate focused trial](CURVE302_FOCUSED_POINT_EXPOSURE_2026-09-07.md)
+uses302 as a generic17 recovery control and full31 direct target, with the
+two certified19 siblings at reduced s=4/3 and7/2. It completes196 boxes,
+recovering19 from17 on302 and no stronger public31 or sibling19 bound.
+The score comparison above remains unchanged.

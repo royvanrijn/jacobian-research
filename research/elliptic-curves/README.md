@@ -506,10 +506,11 @@ Use [`REPRODUCE.md`](REPRODUCE.md) and the exact checker paths recorded in `../M
 <!-- status-consumer: EC-K3-R17-NORM12-ICARM-573-REFRESH a93ce35de34fde21 -->
 <!-- status-consumer: EC-CF-NEARMISS-DESCENT-INPUTS 25c9f212e5162216 -->
 [Mixed-parent point exposure](notes/MIXED_REDUCED_PARENT_POINT_EXPOSURE_2026-09-07.md):441 boxes complete; six sibling directions certified, best bounds19; all three retained26 gaps remain26.
+[Focused302 exposure](notes/CURVE302_FOCUSED_POINT_EXPOSURE_2026-09-07.md):196 boxes complete; generic17→19 control, full31 unchanged, sibling19/19 unchanged. The302-sized arithmetic-height region remains a search gap.
 
 [Reduced determinant1092 parameter chart](notes/DET1092_REDUCED_PARAMETER_CHART_2026-09-07.md): exact90/135-bit equation and17 transported sections;98 boxes complete, no certified rank gain.
 
-<!-- status-consumer: OP-EC-NEXT 733ef56224e1a8f0 -->
+<!-- status-consumer: OP-EC-NEXT 42dbf5da50cff4f9 -->
 
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-SELMER-PANEL 539bd8ec36b36c44 -->
 

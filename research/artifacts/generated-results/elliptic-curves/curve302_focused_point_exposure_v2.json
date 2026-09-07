@@ -1,0 +1,266 @@
+{
+  "boundary": "Masked generic17 control and user-directed public31 search are distinct endpoints. Two sibling fibres were selected by certified19 bounds after the unchanged six-fibre comparison, then received new classes outside their old17 span. All maps precede point searches; no validation-prime or public-exceptional-point input enters sibling selection/geometry. Full31 union checks all302 search outputs. Matching finite bounds do not give an exact rank or prove rational-span membership of every point. V1 stopped at a string-versus-Fraction seed comparison before maps or points; V2 preserves it and charges its cost. No automatic larger scan or next wave.",
+  "certified_gain_above_public31": 0,
+  "combined_public31_cloud_lower_bound": 31,
+  "combined_public31_cloud_points": 161,
+  "completed_boxes": 196,
+  "failed_intake_seconds": 0.2811732100090012,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_focused_curve302_full31_mod2_v1.json": "d2e22c52758591ebb78b425f9c441babb634a0edf7358ae105c1c524755bc52a",
+    "artifacts/generated-results/elliptic-curves/curve302_focused_curve302_full31_modl_v1.json": "8cd072e080664ea1889885c1af313cd281395b94deb11549169836057235a14e",
+    "artifacts/generated-results/elliptic-curves/curve302_focused_curve302_generic17_mod2_v1.json": "935bb9783d96f9731738f265e52e86d5e0ad439e9f7e6bc17ee564fd716e1727",
+    "artifacts/generated-results/elliptic-curves/curve302_focused_curve302_generic17_modl_v1.json": "d262770aeaea758e234330068d7d461f2c14305030b4aee75a826fe82c3e124a",
+    "artifacts/generated-results/elliptic-curves/curve302_focused_d1092_fibre_018_mod2_v1.json": "54d8b80d107217f4b159a33836a7a2d884e3e127ea236c7832c0cea5b1e3824b",
+    "artifacts/generated-results/elliptic-curves/curve302_focused_d1092_fibre_018_modl_v1.json": "16f799893ef507e2d26aef52ba0fb97e183b7f5c7d8d6b704f4273b701f83b60",
+    "artifacts/generated-results/elliptic-curves/curve302_focused_d1092_fibre_050_mod2_v1.json": "863a916dab2dc6801d4942ac7d5f0a7ae07f674a106c78b17240523465f92590",
+    "artifacts/generated-results/elliptic-curves/curve302_focused_d1092_fibre_050_modl_v1.json": "f07982703047eb2a3a5270bcdebfa2af84f081e98f92efea7572a6a85a05f71a",
+    "artifacts/generated-results/elliptic-curves/curve302_focused_union_mod2_v1.json": "174d1dde0c8d94aa1aa5f39b0ee219edfd7266b6d0c495863670cee048b8860e",
+    "artifacts/generated-results/elliptic-curves/curve302_focused_union_modl_v1.json": "78aeaded8bda66a88c8beb3f5c7b466c3311cef9b3510c771b0ce6096a9a8581",
+    "artifacts/generated-results/elliptic-curves/curve302_focused_visibility_v1.json": "8c4ac1114e60150b01114ff55e916fc0f112a5910999898980dd067db0cc7022",
+    "artifacts/generated-results/elliptic-curves/det1092_reduced_parameter_chart_v1/chart-search.json": "8f9976ff467625f01ac78cb9d418307e5a24b3eeb034cdb1861a6e06bf5272e6",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v1/run-ledger.json": "5fe376935f24527b2ac64b0428ec8224f7b7ced9ab9c3c938477066bd68846d6",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/curve302-full31/certification-ledger.json": "0f41f9a703a5bf41ea1cd293b3e0b67bc9950dd0d9ba5f6e8d89ea626ac98bc6",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/curve302-full31/certification-protocol.json": "a01c77db945362c8584a178b9b70b982df5c6c87221ef1cddc3bc0687c69438f",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/curve302-full31/maps.json": "bc48bd5993eec0235bfe876709b37a1215bfb6d26020c187c47a8a15d56e05df",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/curve302-full31/public-visibility-after-search.json": "3fd9c8ec5a16538910cc9ad65c6ad9a125c3ffebfdc0c47533e6a1a03982f0b9",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/curve302-full31/result.json": "5e71ce4b8e15c4cde8137790b11c89a60c6e70280221159f4a7846c3c7a23d7c",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/curve302-full31/seed.json": "116735a35ef8d84708d5d45ef392f95b8083dc1edb1328a8b2abb37c6d452b79",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/curve302-generic17/certification-ledger.json": "3ab763c66bb52e301ff2a29fc74ed18a0199b2ca351a72e1bba34b1b7ed88f37",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/curve302-generic17/certification-protocol.json": "4b8e12719730824e36ee729e88188d57c288b2812fc3e2f6b313c70f77271391",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/curve302-generic17/maps.json": "08831bf89682af7bc3eafe1bb775eeef129f42d1b7c9f4db8e5b859a57f928fa",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/curve302-generic17/public-visibility-after-search.json": "d082b976dc1ba13690ee2048e6502d63271a487dc8ba99bee178b39b9e29fd16",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/curve302-generic17/result.json": "2b03e2da6a69af80fd7791c7b200e33ed61efcd3c048607fb6ebd0be556889f5",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/curve302-generic17/seed.json": "ebb6224ec62ba9338e47d27f4893646d408c6e80bde37cb1f709b358e4e6187d",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/d1092-fibre-018/certification-ledger.json": "5421b6ade19c2818c83297bde415fddb241dc2741eb331c355b1d6ff4a9eb56a",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/d1092-fibre-018/certification-protocol.json": "e013ffa1ab7c1f9193da57c8f2941b1b16552ac94ffb152737528368df8b175f",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/d1092-fibre-018/maps.json": "32a91e9e6a032e13d1bf49d817014ffaba4622441878db2aee430dbc6f515204",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/d1092-fibre-018/result.json": "4790211afe1c7309b9fc2ed1441575ca723fc1c6298a61ad3c91bdfefc01ac3a",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/d1092-fibre-018/seed.json": "5a1a21700054d665d11ed7e3ce08ebb529de5ca4871cf532bcd2b5a6929d2585",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/d1092-fibre-050/certification-ledger.json": "80fca84bf8cccb0df6164520a0418cb04a16dfd34028be3b391d956b25b631f2",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/d1092-fibre-050/certification-protocol.json": "fc5dcfc4a8ccaad9d0a3cf26a9eb39a1eece86beff668fbb2e2a3b2ef3166e9b",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/d1092-fibre-050/maps.json": "f443546293663e335ae65bc209e79b540ebb2cd9ca75ec1d48ac5fdeace2f935",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/d1092-fibre-050/result.json": "24298ba1117e2cf6c38d0f0b5bc02d6b275a362fd9e73a8ce39e7f78bebc1ce4",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/d1092-fibre-050/seed.json": "1f01986fca894e19df0054179cf2bb36b0770be5ec567360042823d495b7302d",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/intake.json": "c969180d52a014c52e931137705f2688d8a51aac1cc6c22841443f58c785b247",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/ledger.json": "1aa17028da7e9f771ae52128cac9530a71af419e7a735a221ee2cb4de654638b",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/protocol.json": "032591479e803849dc7101679bdaf5cea4bd330ba2207f79e8b6e5e4560dd1a0",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/run-ledger.json": "018973f9c00c7287578925f006e6b5f84effee6822df42480890ce2d43dec1b8",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/run-protocol.json": "265f7fea0cd73b0ed7312d31fda3fcc9d1225f573942de070927d4b7fe75cf50",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/seed-replay/protocol.json": "08273ba31293fadaa6d2de4fe510db231800b7e9b73f6265a5c79f4ecc848522",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/seed-replay/result.json": "82224f1b4232e957387f65869adf402db5c88d163d1bd39ffb1e78802f578e2d",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/union-replay/ledger.json": "c9aed5b9ccd35b1b7d686cbe915b499256fcd7e9c3e1735094af8ca702caa25a",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/union-replay/protocol.json": "a8f1a66e617837067422eb12b505d166992fc6d867caff69d1a9b413e0e155a7",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/union-replay/standalone/curve302_focused_union_mod2_v1.json": "174d1dde0c8d94aa1aa5f39b0ee219edfd7266b6d0c495863670cee048b8860e",
+    "artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/union-replay/standalone/verify_factor_free_rank.sage": "fd95c46b9b79c89deeeed14afa2e46088590459ce1a144ebb1cd61e8713309db"
+  },
+  "parent_height_diagnostic": {
+    "curve302_j_bits": [
+      667,
+      645
+    ],
+    "curve302_reduced_parameter": "-164518/143797",
+    "parameter_height": 164518,
+    "previous_sibling_selection_j_numerator_band": [
+      256,
+      319
+    ],
+    "scope": "Post-freeze diagnostic only. The earlier height8 panel and its score band do not sample302-sized arithmetic territory. No sibling parameter or centre is selected from the anchor address."
+  },
+  "rows": [
+    {
+      "completed_boxes": 49,
+      "completed_square_quartic_height_floor": 107,
+      "finite_ranks": {
+        "2": 19,
+        "3": 19,
+        "5": 19
+      },
+      "id": "curve302-generic17",
+      "initial_rank": 17,
+      "j_bits": [
+        667,
+        645
+      ],
+      "point_count": 130,
+      "point_search_cpu_ms": 39943,
+      "point_worker_seconds": 72.23875608097296,
+      "rank_lower_bound": 19,
+      "relative_seed_gain": 2,
+      "role": "masked recovery control; only parent sections",
+      "searched_quartic_coefficient_bit_range": [
+        117,
+        128
+      ],
+      "total_stage_seconds": 88.15335427899845
+    },
+    {
+      "completed_boxes": 49,
+      "completed_square_quartic_height_floor": 107,
+      "finite_ranks": {
+        "2": 31,
+        "3": 31,
+        "5": 31
+      },
+      "id": "curve302-full31",
+      "initial_rank": 31,
+      "j_bits": [
+        667,
+        645
+      ],
+      "point_count": 31,
+      "point_search_cpu_ms": 35077,
+      "point_worker_seconds": 56.64679550600704,
+      "rank_lower_bound": 31,
+      "relative_seed_gain": 0,
+      "role": "direct32 search from public31; empty generic_points marks no prefix alignment, not generic rank0",
+      "searched_quartic_coefficient_bit_range": [
+        116,
+        129
+      ],
+      "total_stage_seconds": 71.95324752107263
+    },
+    {
+      "completed_boxes": 49,
+      "completed_square_quartic_height_floor": 45,
+      "finite_ranks": {
+        "2": 19,
+        "3": 19,
+        "5": 19
+      },
+      "id": "d1092-fibre-018",
+      "initial_rank": 19,
+      "j_bits": [
+        295,
+        275
+      ],
+      "point_count": 11161,
+      "point_search_cpu_ms": 30772,
+      "point_worker_seconds": 206.25908063398674,
+      "rank_lower_bound": 19,
+      "relative_seed_gain": 0,
+      "role": "updated own19 subgroup; centre parity outside previous17",
+      "searched_quartic_coefficient_bit_range": [
+        52,
+        62
+      ],
+      "total_stage_seconds": 424.4181463801069
+    },
+    {
+      "completed_boxes": 49,
+      "completed_square_quartic_height_floor": 42,
+      "finite_ranks": {
+        "2": 19,
+        "3": 19,
+        "5": 19
+      },
+      "id": "d1092-fibre-050",
+      "initial_rank": 19,
+      "j_bits": [
+        275,
+        257
+      ],
+      "point_count": 4076,
+      "point_search_cpu_ms": 21376,
+      "point_worker_seconds": 92.73715673293918,
+      "rank_lower_bound": 19,
+      "relative_seed_gain": 0,
+      "role": "updated own19 subgroup; centre parity outside previous17",
+      "searched_quartic_coefficient_bit_range": [
+        51,
+        61
+      ],
+      "total_stage_seconds": 172.10207912733313
+    }
+  ],
+  "schema": "elliptic-curves.curve302-focused-point-exposure.v2",
+  "sibling_rank_gains": 0,
+  "source_sha256": "521c26c84c60378cc77c1cf7fab12c526e8230a4db78d1b79eaedde942036bbd",
+  "status": "PASS",
+  "total_stage_seconds": 769.827401613351,
+  "visibility": [
+    {
+      "details_sha256": "d082b976dc1ba13690ee2048e6502d63271a487dc8ba99bee178b39b9e29fd16",
+      "id": "curve302-generic17",
+      "minimum_affine_heights": [
+        3040300752570713037,
+        271350312297,
+        17476851321704019,
+        7147319782502137,
+        1542498,
+        10694798626,
+        693476544030,
+        21594146,
+        8020756948688,
+        3799245784293,
+        1255055,
+        26056436816,
+        15711388858801,
+        124957687559,
+        7504966477,
+        43693630335,
+        38292566930,
+        16499000,
+        2921783277846,
+        7189383,
+        55914472635,
+        69463825341742,
+        31377993,
+        3828695419,
+        9821848,
+        251999152406179039,
+        594263,
+        15937451287,
+        15561705385515327588,
+        346291643995251823,
+        12292694663076334255
+      ],
+      "observations": 3038,
+      "public_indices_inside_any_box": [],
+      "status_counts": {
+        "OUTSIDE_BOX": 3038
+      }
+    },
+    {
+      "details_sha256": "3fd9c8ec5a16538910cc9ad65c6ad9a125c3ffebfdc0c47533e6a1a03982f0b9",
+      "id": "curve302-full31",
+      "minimum_affine_heights": [
+        30584758501153,
+        163500360531293032269233,
+        6348461694853,
+        1438172943271751,
+        195112237776937,
+        9759283981783976481,
+        79490026122285697,
+        1723250758224512495,
+        915285825679607666485,
+        46621084715159271255,
+        3817242831,
+        70772328872269041,
+        641749210783,
+        50246625693965879,
+        832164011997088,
+        240003080363293413,
+        71466348990996630967,
+        552707228318457304,
+        3760890692135304829,
+        1771193698650809411,
+        50546949044339021469,
+        3068650833662525478,
+        284159603472550436,
+        653653257913952589645,
+        2779448167185812671,
+        894356517923966571,
+        523031710408297511,
+        520687488291468083,
+        3295604066931872004,
+        1030759220090762,
+        113806830865805053322773
+      ],
+      "observations": 3038,
+      "public_indices_inside_any_box": [],
+      "status_counts": {
+        "OUTSIDE_BOX": 3038
+      }
+    }
+  ]
+}

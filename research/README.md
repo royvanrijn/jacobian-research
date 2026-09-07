@@ -49,7 +49,7 @@ The [201-curve elliptic inventory and current exact conductors](elliptic-curves/
 - [Archive](archive/README.md) — closed experiments and historical provenance.
 
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
-<!-- status-consumer: OP-EC-NEXT 733ef56224e1a8f0 -->
+<!-- status-consumer: OP-EC-NEXT 42dbf5da50cff4f9 -->
 <!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->
 <!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->

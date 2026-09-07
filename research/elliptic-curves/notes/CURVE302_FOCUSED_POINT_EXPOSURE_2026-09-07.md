@@ -1,7 +1,23 @@
 # Focus on302 and its determinant1092 siblings
 
-The fixed196 point boxes have completed. Final independent cloud and combined
-302 certificates are pending; the worker outputs alone are not promoted here.
+The fixed196 point boxes and all independent certificates are **complete**.
+The [terminal report](../../artifacts/generated-results/elliptic-curves/curve302_focused_point_exposure_v2.json)
+records generic17→19 recovery on302, no improvement beyond its public31, and
+no further gain on either19-point sibling. No new near-record curve is found.
+
+| Row | Final certified lower bound | Retained cloud points | Completed boxes |
+|---|---:|---:|---:|
+|302 generic-only control|19|130|49|
+|302 full31 target|31|31|49|
+|Sibling s=4/3|19|11161|49|
+|Sibling s=7/2|19|4076|49|
+
+Every lower bound agrees modulo2,3,5 and has a copied-input independent
+finite-group proof. The combined302 cloud contains161 points and still
+certifies31; it produces no stronger certified bound. Total recorded stages
+are769.827401613seconds, including the failed V1 intake and the post-search
+union/visibility supplement. The direct full31 point worker returns no finite
+point; its31-point cloud consists of its supplied seed.
 
 ## Why this parent needs a different test
 
@@ -87,11 +103,25 @@ It checks exact quartic lifting and completed-box visibility. The original
 representatives are not all their translates or quotient representatives;
 their misses are not a proof that their directions were invisible.
 
+The [completed visibility audit](../../artifacts/generated-results/elliptic-curves/curve302_focused_visibility_v1.json)
+puts all3038 signed representative/chart pairs outside the box in each302
+arm. The smallest coordinate height of any original signed public point is
+594263 in the generic17 charts and3817242831 in the full31 charts, versus the
+searched125000. These values concern those fixed representatives only.
+In particular the generic17 arm already gains two certified directions
+without seeing an original public representative. They do not justify an
+oracle-tuned box or say how high an unseen32nd direction lies.
+
+Actual searched quartic coefficient ranges are117..128bits for the control
+and116..129bits for the direct target, versus52..62 and51..61bits for the
+siblings. This independently certified rank control has not demonstrated
+recovery of the parent's full fourteen-direction exceptional complement.
+
 ## Reproduction
 
 Run from `research/`. Immutable checkpoints are in
 `artifacts/local/elliptic-curves/curve302-focused-point-exposure-v2/`.
-The producer is `run_curve302_focused_point_exposure_v2.py`; the independent
+The completed producer is `run_curve302_focused_point_exposure_v2.py`; the independent
 combined-cloud supplement is `certify_curve302_focused_union.py`.
 Neither command overwrites existing evidence. The final reporter fails closed
 until all required proofs finish:
