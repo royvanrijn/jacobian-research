@@ -1,7 +1,7 @@
 """Contracts for the wide-atlas determinant-1092 V4 bootstrap experiment.
 
 V4 changes only the M17 bootstrap exposure. It searches 512 fresh parity
-classes per fibre, excluding every M17 parity already searched by the completed
+classes per fibre, excluding every M17 parity already touched by the completed
 V3 eight-fibre pilot. A certified gain is exported as a new independently
 verified seed for a later unchanged-V3 cascade; V4 itself stops there. Null
 results are bounded visibility experiments, never saturation or rank upper bounds.
@@ -26,7 +26,7 @@ SHELLS = (4, 6, 8, 10, 12)
 RESOURCE = {'prepare':3600, 'preflight':180, 'search':21600, 'replay':14400,
             'rss_bytes':3221225472}
 CLAIM = ('Wide M17 visibility follow-up on the same eight frozen determinant-1092 fibres. '
-         'Exactly 512 previously unsearched parity classes are selected per fibre from the '
+         'Exactly 512 previously untouched parity classes are selected per fibre from the '
          'complete nonzero degree-two quotient using equation/lattice metrics only. A finite '
          'no-gain result is not a rank upper bound, saturation proof, or proof that no jump exists. '
          'Any certified gain is independently replayed and exported only as an eligible seed for '
@@ -54,7 +54,7 @@ def hash_key(case, mask):
 
 
 def prior_case(case):
-    """Validate the completed 82-chart V3 null and return its frozen centres."""
+    """Validate the completed 82-chart V3 null and return its touched parities."""
     folder = V3/case
     verified = read(folder/'trial-verified.json')
     require(verified.get('status') == 'PASS_INDEPENDENT_DET1092_REPLAY',
@@ -67,9 +67,9 @@ def prior_case(case):
     selection = read(folder/'replay-M17/epoch-00/selection.json')
     require(selection['rank'] == 17 and len(selection['centres']) == 82,
             case+': unexpected V3 M17 schedule')
-    masks = [parity_mask(row['representative']) for row in selection['centres']]
-    require(len(set(masks)) == 82, case+': prior V3 schedule repeats a parity class')
-    return verified, selection, set(masks)
+    masks = {parity_mask(row['representative']) for row in selection['centres']}
+    require(0 not in masks and 0 < len(masks) <= 82, case+': invalid prior V3 parity set')
+    return verified, selection, masks
 
 
 def validate_v3_panel():
@@ -81,7 +81,7 @@ def validate_v3_panel():
         rows.append(dict(row, prior_verified_sha256=sha(V3/row['id']/'trial-verified.json'),
                          prior_terminal_sha256=sha(V3/row['id']/'replay-M17/terminal.json'),
                          prior_selection_sha256=sha(V3/row['id']/'replay-M17/epoch-00/selection.json'),
-                         prior_parity_count=len(masks)))
+                         prior_chart_count=82, prior_parity_count=len(masks)))
     return roster, rows
 
 
