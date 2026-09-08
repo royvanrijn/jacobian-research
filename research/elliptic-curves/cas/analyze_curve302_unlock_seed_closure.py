@@ -7,9 +7,10 @@ seed and for each single exceptional direction the exact minimax bottleneck of
 subgroup.  This is a retrospective oracle diagnostic, not a prospective point
 selector and not a claim about exact CVP or search runtime.
 
-Optionally pass --xi-direction ID once the arithmetic unlock class has been
-identified with one of the fourteen displayed directions; the report then
-highlights that row without changing any computation.
+The first emitted v1 artifact predates the compatibility alias
+``optimal_completion_order``.  It is preserved byte-for-byte.  ``--check``
+accepts that legacy artifact only after exact semantic normalization against a
+fresh recomputation; ``--upgrade-existing`` writes an immutable normalized v2.
 """
 from __future__ import annotations
 
@@ -21,7 +22,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 ART = ROOT / "artifacts/generated-results/elliptic-curves"
 INPUT = ART / "curve302_exceptional_subgroup_landscape_v1.json"
-OUTPUT = ART / "curve302_unlock_seed_closure_v1.json"
+OUTPUT_V1 = ART / "curve302_unlock_seed_closure_v1.json"
+OUTPUT_V2 = ART / "curve302_unlock_seed_closure_v2.json"
 DIM = 14
 GENERIC_RANK = 17
 
@@ -51,8 +53,6 @@ def minimax_from(states, start_mask: int):
     best = [inf] * (1 << DIM)
     prev: dict[int, tuple[int, int]] = {}
     best[start_mask] = 0
-    # Every edge increases popcount, so integer mask order is a valid topological
-    # order for supersets of start_mask: parent = child ^ bit < child.
     for mask in range(start_mask, full + 1):
         if (mask & start_mask) != start_mask or best[mask] == inf:
             continue
@@ -98,8 +98,6 @@ def row_for_seed(states, names, seed_index: int | None, thresholds):
         "start_rank": GENERIC_RANK + (0 if seed_index is None else 1),
         "minimax_bottleneck_numerator": bottleneck,
         "minimax_bottleneck_scaled_height": bottleneck / 4_000_000.0,
-        # Canonical field name plus a compatibility alias. Some handoff/report
-        # tooling used the older completion terminology; both must remain exact.
         "optimal_followup_order": named_order,
         "optimal_completion_order": named_order,
     }
@@ -128,8 +126,6 @@ def build(xi_direction: str | None):
     if len(states) != 1 << DIM or any(row["state_mask"] != i for i, row in enumerate(states)):
         raise ArithmeticError("subset-state ledger is incomplete or reordered")
 
-    # Two empirical diagnostic thresholds already present in the immutable
-    # source: the root global minimax and the attested M24->M31 tail bottleneck.
     global_minimax = int(source["optimization"]["minimax"]["objective_numerator"])
     actual = source["historical_comparison"].get("attested_tail_rows", [])
     if not actual:
@@ -147,7 +143,7 @@ def build(xi_direction: str | None):
     highlighted = next((r for r in singles if r["seed_direction"] == xi_direction), None)
 
     return {
-        "schema": "elliptic-curves.curve302-unlock-seed-closure.v1",
+        "schema": "elliptic-curves.curve302-unlock-seed-closure.v2",
         "status": "PASS_RETROSPECTIVE_SINGLE_SEED_CLOSURE_CENSUS",
         "input": {str(INPUT.relative_to(ROOT)): sha(INPUT)},
         "direction_ids": names,
@@ -166,31 +162,91 @@ def build(xi_direction: str | None):
     }
 
 
+def normalized_semantics(payload):
+    """Normalize v1/v2 presentation differences without weakening math checks."""
+    row = json.loads(json.dumps(payload))
+    row["schema"] = "elliptic-curves.curve302-unlock-seed-closure.semantic"
+    row["reproducing_command"] = "normalized"
+
+    def normalize_seed(seed):
+        follow = seed.get("optimal_followup_order")
+        complete = seed.get("optimal_completion_order")
+        if follow is None and complete is None:
+            raise ArithmeticError("unlock census row has no completion order")
+        if follow is None:
+            follow = complete
+        if complete is None:
+            complete = follow
+        if follow != complete:
+            raise ArithmeticError("unlock census order aliases disagree")
+        seed["optimal_followup_order"] = follow
+        seed["optimal_completion_order"] = follow
+
+    normalize_seed(row["unseeded"])
+    for seed in row["single_seed_ranking"]:
+        normalize_seed(seed)
+    if row.get("xi_result") is not None:
+        normalize_seed(row["xi_result"])
+    return row
+
+
+def validate_existing(existing, expected):
+    if existing.get("status") != "PASS_RETROSPECTIVE_SINGLE_SEED_CLOSURE_CENSUS":
+        raise ArithmeticError("existing unlock census is not a passed artifact")
+    if normalized_semantics(existing) != normalized_semantics(expected):
+        raise ArithmeticError("existing unlock census differs mathematically from fresh recomputation")
+
+
+def print_summary(result):
+    best = result["single_seed_ranking"][0]
+    print("CURVE302_UNLOCK_CENSUS|best_seed={}|bottleneck={}|scaled={:.9f}|status=PASS".format(
+        best["seed_direction"], best["minimax_bottleneck_numerator"], best["minimax_bottleneck_scaled_height"]), flush=True)
+    print("CURVE302_UNLOCK_ORDER|" + " -> ".join(best["optimal_followup_order"]), flush=True)
+    for index, row in enumerate(result["single_seed_ranking"][:5], 1):
+        print("CURVE302_UNLOCK_TOP{}|seed={}|bottleneck={}|scaled={:.9f}".format(
+            index, row["seed_direction"], row["minimax_bottleneck_numerator"], row["minimax_bottleneck_scaled_height"]), flush=True)
+    if result["xi_result"]:
+        row = result["xi_result"]
+        print("CURVE302_XI_SEED|direction={}|bottleneck={}|scaled={:.9f}".format(
+            row["seed_direction"], row["minimax_bottleneck_numerator"], row["minimax_bottleneck_scaled_height"]), flush=True)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--xi-direction")
     parser.add_argument("--write", action="store_true")
     parser.add_argument("--check", action="store_true")
+    parser.add_argument("--upgrade-existing", action="store_true")
     args = parser.parse_args()
-    if args.write == args.check:
-        parser.error("choose exactly one of --write or --check")
+    if sum(map(bool, (args.write, args.check, args.upgrade_existing))) != 1:
+        parser.error("choose exactly one of --write, --check, --upgrade-existing")
+
     result = build(args.xi_direction)
     rendered = json.dumps(result, indent=2, sort_keys=True) + "\n"
+
     if args.write:
-        if OUTPUT.exists():
-            raise FileExistsError("preserve immutable unlock-seed census")
-        OUTPUT.write_text(rendered)
+        if OUTPUT_V1.exists() or OUTPUT_V2.exists():
+            raise FileExistsError("preserve immutable unlock-seed census; use --upgrade-existing")
+        OUTPUT_V2.write_text(rendered)
+    elif args.upgrade_existing:
+        if not OUTPUT_V1.exists():
+            raise FileNotFoundError("legacy v1 unlock census not found")
+        validate_existing(read(OUTPUT_V1), result)
+        if OUTPUT_V2.exists():
+            validate_existing(read(OUTPUT_V2), result)
+        else:
+            OUTPUT_V2.write_text(rendered)
+        print("CURVE302_UNLOCK_UPGRADE|v1_sha256={}|v2_sha256={}|status=PASS".format(
+            sha(OUTPUT_V1), sha(OUTPUT_V2)), flush=True)
     else:
-        if not OUTPUT.exists() or OUTPUT.read_text() != rendered:
-            raise ArithmeticError("unlock-seed census replay differs")
-    best = result["single_seed_ranking"][0]
-    print("CURVE302_UNLOCK_CENSUS|best_seed={}|bottleneck={}|scaled={:.9f}|status=PASS".format(
-        best["seed_direction"], best["minimax_bottleneck_numerator"], best["minimax_bottleneck_scaled_height"]), flush=True)
-    print("CURVE302_UNLOCK_ORDER|" + " -> ".join(best["optimal_followup_order"]), flush=True)
-    if result["xi_result"]:
-        row = result["xi_result"]
-        print("CURVE302_XI_SEED|direction={}|bottleneck={}|scaled={:.9f}".format(
-            row["seed_direction"], row["minimax_bottleneck_numerator"], row["minimax_bottleneck_scaled_height"]), flush=True)
+        target = OUTPUT_V2 if OUTPUT_V2.exists() else OUTPUT_V1
+        if not target.exists():
+            raise FileNotFoundError("no unlock-seed census artifact exists")
+        validate_existing(read(target), result)
+        print("CURVE302_UNLOCK_CHECK|artifact={}|sha256={}|status=PASS".format(
+            target.name, sha(target)), flush=True)
+
+    print_summary(result)
 
 
 if __name__ == "__main__":
