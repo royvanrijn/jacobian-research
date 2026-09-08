@@ -1,10 +1,10 @@
-"""Sage worker for the determinant-1092 V4 wide-bootstrap experiment.
+"""Sage worker for the repaired determinant-1092 V4 wide bootstrap.
 
-V4 scores the complete 2^17 M17 parity quotient in the specialized height
-lattice, excludes every parity touched by the completed 82-chart V3 pilot,
-exact-CVP reduces 512 diversified fresh classes, and searches those pointed
-charts. It stops on a certified 18th point; that point is exported for a later
-unchanged-V3 cascade rather than embedding a second cascade implementation.
+The complete M17/2M17 quotient is generated directly from the 2^17 binary
+masks in the certified parent basis. The exported degree-two TSV is only a
+cross-check for the rational/genus-one survivor subset that it actually
+contains. We Babai-score every parity in the specialized height lattice,
+exact-CVP resolve 512 fresh diversified classes, and search those charts.
 """
 from __future__ import annotations
 
@@ -107,8 +107,25 @@ def even_positions(order,count):
     return [order[min(len(order)-1,(2*j+1)*len(order)//(2*count))] for j in range(count)]
 
 
+def exported_survivors(ctx):
+    """Cross-check only what the degree-two TSV actually exports."""
+    info={}; counts={}
+    with ctx.engine.ORBITS.open() as stream:
+        for raw in csv.DictReader(stream,delimiter='\t'):
+            word=list(map(int,raw['parent_MW17_w'].split()))
+            require(len(word)==17,'exported orbit dimension changed')
+            mask=c.parity_mask(word); shell=int(raw['minimum_norm'])
+            require(shell in c.SURVIVOR_SHELLS,'TSV unexpectedly exports a nonsurvivor shell')
+            require(mask not in info,'duplicate parent-basis parity in exported survivor TSV')
+            info[mask]={'shell':shell,'reduced_basis_orbit_mask':int(raw['orbit_mask'])}
+            counts[shell]=counts.get(shell,0)+1
+    require(counts==c.EXPORTED_SURVIVOR_COUNTS,'exported survivor shell counts changed')
+    require(len(info)==sum(c.EXPORTED_SURVIVOR_COUNTS.values()),'exported survivor total changed')
+    return info
+
+
 def bootstrap_selection(ctx,publish=False):
-    """Babai-score all 2^17 classes and exact-CVP 512 fresh classes."""
+    """Babai-score all 2^17 masks and exact-CVP 512 fresh classes."""
     import numpy as np
     from sage.all import ZZ,matrix,pari
     from visibility_lattice_v2 import ExactParity
@@ -116,6 +133,7 @@ def bootstrap_selection(ctx,publish=False):
 
     require(ctx.state.rank==17,'V4 selector is M17-only')
     prior_masks,prior_points=prior_sets(ctx)
+    survivors=exported_survivors(ctx)
     geo=ctx.engine.load('prospective_half_lattice_v3.sage')
     hg,asym=geo.canonical_height_gram(ctx.model,point_tuple(ctx.state.basis))
     g=matrix(ZZ,geo.rounded_gram(hg,1000000)); require(g.is_positive_definite(),'nonpositive V4 metric')
@@ -123,17 +141,7 @@ def bootstrap_selection(ctx,publish=False):
     inv=u.inverse(); require(inv.denominator()==1,'V4 LLL inverse not integral')
     exact=ExactParity((u*g*u.transpose()).rows())
 
-    shell_info={}; histogram={}
-    with ctx.engine.ORBITS.open() as stream:
-        for raw in csv.DictReader(stream,delimiter='\t'):
-            word=list(map(int,raw['parent_MW17_w'].split())); require(len(word)==17,'orbit dimension changed')
-            mask=c.parity_mask(word); shell=int(raw['minimum_norm'])
-            require(mask not in shell_info,'duplicate parity in complete orbit table')
-            shell_info[mask]={'shell':shell,'generic_orbit':int(raw['orbit_mask'])}
-            histogram[shell]=histogram.get(shell,0)+1
-    require(len(shell_info)==1<<17 and set(shell_info)==set(range(1<<17)),'orbit table is not the complete parity quotient')
-    require(histogram=={0:1,4:1218,6:24875,8:63922,10:40917,12:139},'generic parity-shell census changed')
-
+    # This is the complete quotient. No exported table is needed to create it.
     masks=np.arange(1<<17,dtype=np.int64)
     bits=np.arange(17,dtype=np.int64)
     residues=((masks[:,None]>>bits)&1).astype(np.int64)
@@ -141,27 +149,44 @@ def bootstrap_selection(ctx,publish=False):
     rp=(residues@inverse)%2
     babai_words,babai_norms=exact.babai(rp)
     require(len(babai_norms)==1<<17,'Babai atlas omitted parity classes')
-    ids=[m for m in range(1,1<<17) if m not in prior_masks]
+    ids=c.fresh_masks(prior_masks)
     require(len(ids)==(1<<17)-1-len(prior_masks),'fresh parity count mismatch')
+
     lanes={m:set() for m in ids}; chosen=set()
     def add(values,lane):
         for m in values: chosen.add(m); lanes[m].add(lane)
     add(sorted(ids,key=lambda m:(-int(babai_norms[m]),m))[:64],'deep64')
     add(sorted(ids,key=lambda m:(int(babai_norms[m]),m))[:64],'shallow64')
     order=sorted(ids,key=lambda m:(int(babai_norms[m]),m)); add(even_positions(order,128),'global-quantile128')
-    for shell in c.SHELLS:
-        order=sorted((m for m in ids if shell_info[m]['shell']==shell),key=lambda m:(int(babai_norms[m]),m))
-        require(order,'missing shell '+str(shell)); add(even_positions(order,min(32,len(order))),'shell-'+str(shell)+'-quantile')
+    for shell in c.SURVIVOR_SHELLS:
+        order=sorted((m for m in ids if survivors.get(m,{}).get('shell')==shell),
+                     key=lambda m:(int(babai_norms[m]),m))
+        require(order,'missing exported survivor shell '+str(shell))
+        add(even_positions(order,min(32,len(order))),'survivor-shell-'+str(shell)+'-quantile')
+    non_survivors=sorted((m for m in ids if m not in survivors),key=lambda m:(int(babai_norms[m]),m))
+    require(non_survivors,'no fresh parity outside exported survivor subset')
+    add(even_positions(non_survivors,min(32,len(non_survivors))),'non-survivor-quantile32')
     hashed=sorted(ids,key=lambda m:(c.hash_key(ctx.case,m),m)); add(hashed[:96],'sha96')
     for m in hashed:
         if len(chosen)>=c.FRESH_CHARTS: break
         add([m],'sha-fill')
-    require(len(chosen)==c.FRESH_CHARTS,'V4 selector did not end at 512')
+    require(len(chosen)==c.FRESH_CHARTS,'V4 initial selector did not end at 512')
 
+    # Exact CVP is fail-closed. A fixed-node-limit exhaustion is recorded as a
+    # preparation censor and replaced by the next SHA-ordered fresh class; no
+    # point/rank outcome can steer this replacement.
+    initial=sorted(chosen,key=lambda m:(c.hash_key(ctx.case,m),m))
+    candidate_order=initial+[m for m in hashed if m not in chosen]
     mapper=ctx.engine.load('factor_free_pari_mapping.sage'); mapper.pari.allocatemem(256000000,silent=True)
-    limit=ctx.policy['frozen_v3_policy']['exact_cvp_node_limit']; centres=[]
-    for mask in chosen:
-        proof=exact.solve(rp[mask],babai_words[mask],limit)
+    limit=ctx.policy['exact_cvp_node_limit']; centres=[]; cvp_censored=[]; examined=0
+    for mask in candidate_order:
+        if len(centres)==c.FRESH_CHARTS: break
+        examined+=1
+        try:
+            proof=exact.solve(rp[mask],babai_words[mask],limit)
+        except RuntimeError as exc:
+            if 'exact CVP node budget exhausted' not in str(exc): raise
+            cvp_censored.append(mask); continue
         possible=[]
         for minimum in proof['minima']:
             word=list(map(int,(matrix(ZZ,1,17,minimum)*u).row(0)))
@@ -171,25 +196,35 @@ def bootstrap_selection(ctx,publish=False):
         require(possible,'exact CVP returned no minima')
         key,word=min(possible)
         require(tuple(map(str,key)) not in prior_points,'V4 exact-CVP centre repeats prior V3 point')
-        row={'parity':mask,'shell':shell_info[mask]['shell'],'generic_orbit':shell_info[mask]['generic_orbit'],
-             'representative':word,'point':list(map(str,key)),'lane':'v4-wide-exact-cvp',
-             'lanes':sorted(lanes[mask]),'babai_norm':int(babai_norms[mask]),
+        survivor=survivors.get(mask)
+        lane_names=sorted(lanes.get(mask,set()) or {'cvp-reserve'})
+        row={'parity':mask,'generic_survivor_shell':survivor['shell'] if survivor else None,
+             'generic_reduced_orbit_mask':survivor['reduced_basis_orbit_mask'] if survivor else None,
+             'representative':word,'point':list(map(str,key),'utf-8') if False else list(map(str,key)),
+             'lane':'v4-wide-exact-cvp','lanes':lane_names,'babai_norm':int(babai_norms[mask]),
              'metric_norm':int(proof['norm']),'multiplicity':len(proof['minima'])//2,'cvp':proof}
         require(int((matrix(ZZ,1,17,word)*g*matrix(ZZ,1,17,word).transpose())[0,0])==int(proof['norm']),
                 'V4 transported exact-CVP norm differs')
         row.update(chart_profile(mapper.mapping(ctx.model,point_tuple(ctx.state.basis),row))); centres.append(row)
-    require(len({r['parity'] for r in centres})==len({tuple(r['point']) for r in centres})==c.FRESH_CHARTS,'duplicate V4 centres')
-    centres.sort(key=lambda r:(r['quartic_bits'],r['quartic_max_bits'],-r['metric_norm'],c.hash_key(ctx.case,r['parity']),r['parity']))
-    result={'schema':'det1092-v4-wide-bootstrap-selection.v2','rank':17,
+    require(len(centres)==c.FRESH_CHARTS,'fewer than 512 exact-CVP-resolved fresh classes')
+    require(len({r['parity'] for r in centres})==len({tuple(r['point']) for r in centres})==c.FRESH_CHARTS,
+            'duplicate V4 exact centres')
+    centres.sort(key=lambda r:(r['quartic_bits'],r['quartic_max_bits'],-r['metric_norm'],
+                               c.hash_key(ctx.case,r['parity']),r['parity']))
+    result={'schema':'det1092-v4-wide-bootstrap-selection.v3','rank':17,
             'basis':[list(map(str,p)) for p in ctx.state.basis],
             'rounded_gram':[list(map(int,row)) for row in g.rows()],'LLL':[list(map(int,row)) for row in u.rows()],
-            'height_asymmetry':str(asym),'shell_histogram':{str(k):v for k,v in sorted(histogram.items())},
-            'prior_v3_parities':sorted(prior_masks),'prior_v3_chart_count':82,
-            'eligible_parity_classes':len(ids),'babai_classes_scored':1<<17,'exact_cvp_classes':len(centres),
-            'selected_count':len(centres),'exact_cvp_node_limit':limit,
-            'selector':{'deep':64,'shallow':64,'global_quantiles':128,'shell_quantiles_each':32,'sha':96,
-            'fill':'SHA to exactly 512 after union/dedup',
-            'order':'quartic_bits, quartic_max_bits, -exact_metric_norm, SHA(domain:case:parity), parity'},
+            'height_asymmetry':str(asym),'complete_parity_classes':1<<17,
+            'exported_survivor_counts':{str(k):v for k,v in c.EXPORTED_SURVIVOR_COUNTS.items()},
+            'exported_survivor_parities':len(survivors),'prior_v3_parities':sorted(prior_masks),
+            'prior_v3_chart_count':82,'eligible_parity_classes':len(ids),'babai_classes_scored':1<<17,
+            'exact_cvp_classes':len(centres),'exact_cvp_node_limit':limit,
+            'cvp_censored_masks':cvp_censored,'cvp_candidates_examined':examined,
+            'selected_count':len(centres),
+            'selector':{'deep':64,'shallow':64,'global_quantiles':128,
+                'exported_survivor_shell_quantiles_each':32,'non_survivor_quantiles':32,'sha':96,
+                'fill':'SHA to 512 before exact CVP; SHA reserves replace only fixed-node-limit CVP censors',
+                'search_order':'quartic_bits, quartic_max_bits, -exact_metric_norm, SHA(domain:case:parity), parity'},
             'centres':centres,'claim_boundary':c.CLAIM}
     if publish: atomic(ctx.folder/'bootstrap/selection.json',result,immutable=True)
     return result
@@ -203,7 +238,8 @@ def preflight(ctx):
     mapping=mapper.mapping(ctx.model,point_tuple(ctx.state.basis),centre)
     search=PointedQuarticSearch(state=ctx.state,centre={'coefficients':centre['representative']},coordinate_policy=mapping['coordinate_policy'])
     backend.validate_map(search,mapping)
-    print('V4_PREFLIGHT_PASS',ctx.case,'babai',1<<17,'exact',selection['exact_cvp_classes'],flush=True)
+    print('V4_PREFLIGHT_PASS',ctx.case,'babai',1<<17,'exact',selection['exact_cvp_classes'],
+          'cvp_censored',len(selection['cvp_censored_masks']),flush=True)
 
 
 def snapshot(ctx,path,charts):
