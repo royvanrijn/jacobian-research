@@ -1,0 +1,24 @@
+{
+  "binary_and_launcher_sha256": {
+    "/home/royvanrijn/.local/bin/sage": "05ef0e7babd8273634a287d4817f03b3c240f12cd4ce5db713825b51f3a1a4d2",
+    "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python3.14": "cef3ee7feffdb9e7e9db61ae86a829f82aad96a57aa7055374cdd8f06489a2fc",
+    "/usr/bin/gp": "c9673623cad2eaa7cfe402e7b7d833f1f703689a09837026b6386aaafba6deec"
+  },
+  "collected_utc": "2026-09-08T17:59:25.576813+00:00",
+  "fpylll": "0.6.4",
+  "gmpy2": "2.3.1",
+  "gp_binary_version": "[2, 15, 4]",
+  "numpy": "2.5.2",
+  "observation_boundary": "Collected during execution from the same Sage launcher/runtime. Primary CAS sources and gp binary hash were frozen before the four launches.",
+  "pari_library": "[2, 17, 3]",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.14.7 | packaged by conda-forge | (main, Aug 19 2026, 15:32:49) [GCC 15.3.0]",
+  "python_executable": "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python3.14",
+  "sage": "10.9",
+  "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+  "thread_policy": {
+    "MKL_NUM_THREADS": 1,
+    "OMP_NUM_THREADS": 1,
+    "OPENBLAS_NUM_THREADS": 1
+  }
+}

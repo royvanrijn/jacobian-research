@@ -1,0 +1,6 @@
+{
+  "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+  "primary_supervisor_sha256": "2fefd8d964e80614250e7504763d86417afd82ca21584b4abfcf3ddc0c627e59",
+  "replay_watcher_sha256": "9900bf9b8e96f79ad4cb7fe89620aa6cd66b47adc56a62103396f070a15ace74",
+  "boundary": "Supervision only; primary worker bytes and all policies frozen in the protocol. No rerun, adaptive limit, point input or search selector is introduced by these launchers."
+}

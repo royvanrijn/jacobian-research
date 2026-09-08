@@ -1,0 +1,617 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/curve302_residual_visibility_geometry_v1.json": "181d4f049de005d4db325060e57efa4be58719af1a97498400f7eab029055e5a",
+    "artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/seed-input.json": "278f8006c7ee3b044dd2f24d930d2fd18cafe956c8c7766c5e976b240661f371",
+    "artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/seed-proof.json": "5cc66988880623b569cd063958a6d8c76716c33688109f624f2aeeafd1818af2",
+    "artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/seeded-verified.json": "de38de24d2add96119cfbb8feb30961d7d6649938f95e759f10ab44d60bcd7c4",
+    "artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/seed-input.json": "4da018049be413405a5957f91e51e1528b8f3fb6059fe59a89fe72116f36e080",
+    "artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/seed-proof.json": "36f026f3b3424f905e361fab42df80d9ff74e8e174339c829ee78c5716a7fb9e",
+    "artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/seeded-verified.json": "74f79e4fae788e45b05d950cda3b2e6430a8b594fe0d7b8795f9b2643f667a11",
+    "artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/summary.json": "ec0e45244b4e7edfe234d7f0cb0b958b64e5f5f4020f561b771107e491518b4a"
+  },
+  "claim_boundary": "Retrospective arithmetic comparison of two known curve-302 seeds. This is not a prospective selector, exact-rank upper bound, or new-curve claim.",
+  "conclusions": {
+    "distinct_mod2_cosets_over_generic_subgroup": true,
+    "distinct_over_generic_rational_span": true,
+    "meaning": "The two successful amplifier seeds define two independent exceptional directions modulo the generic M17 rational span, and their detected 2-Kummer classes are independent modulo the generic subgroup. Any common geometric construction must therefore produce at least two distinct classes.",
+    "single_seed_mechanism_not_forced_by_group_relation": true
+  },
+  "finite_mod2_rank_profile": {
+    "M17_plus_both": 19,
+    "M17_plus_recovered_strict_02": 18,
+    "M17_plus_recovered_strict_03": 18,
+    "generic_M17": 17
+  },
+  "generic_rank": 17,
+  "joint_rank_certificate": {
+    "argument": "The 19 displayed columns are independent in a product of exact finite E(F_p)/2E(F_p) quotients and E(Q)[2]=0; infinite descent proves their Z-linear independence.",
+    "rank_lower_bound": 19,
+    "signatures": [
+      {
+        "doubled_subgroup_order": 13,
+        "group_order": 26,
+        "prime": 17,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 28,
+        "group_order": 56,
+        "prime": 47,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 33,
+        "group_order": 66,
+        "prime": 53,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 36,
+        "group_order": 72,
+        "prime": 61,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 41,
+        "group_order": 82,
+        "prime": 67,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 43,
+        "group_order": 86,
+        "prime": 71,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 47,
+        "group_order": 94,
+        "prime": 79,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 49,
+        "group_order": 98,
+        "prime": 83,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 51,
+        "group_order": 102,
+        "prime": 89,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 60,
+        "group_order": 120,
+        "prime": 101,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 63,
+        "group_order": 126,
+        "prime": 107,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 30,
+        "group_order": 120,
+        "prime": 113,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 73,
+        "group_order": 146,
+        "prime": 127,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 75,
+        "group_order": 150,
+        "prime": 137,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 85,
+        "group_order": 170,
+        "prime": 149,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 102,
+        "group_order": 204,
+        "prime": 179,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 106,
+        "group_order": 212,
+        "prime": 191,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 62,
+        "group_order": 248,
+        "prime": 229,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  "joint_rank_lower_bound": 19,
+  "no_rational_2_torsion_prime": 31,
+  "prime_bound": 1000,
+  "schema": "curve302-seed-pair-arithmetic.v1",
+  "seeds": [
+    "recovered-strict-02",
+    "recovered-strict-03"
+  ],
+  "status": "PASS_EXACT_RETROSPECTIVE_SEED_PAIR_AUDIT",
+  "visibility_fingerprints_descriptive_only": {
+    "recovered-strict-02": {
+      "best_CVP_parity": 121666,
+      "minimum_finite_coordinate_parity_in_vetted_set": 26629,
+      "strict_mod_2": true
+    },
+    "recovered-strict-03": {
+      "best_CVP_parity": 2680,
+      "minimum_finite_coordinate_parity_in_vetted_set": 75356,
+      "strict_mod_2": true
+    }
+  }
+}

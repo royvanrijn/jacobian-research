@@ -1,0 +1,17 @@
+{
+  "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+  "attempts": [
+    {
+      "stage": "standalone universal inverse-map checker preflight",
+      "status": "FAILED_ASSERTION",
+      "reason": "Initial evaluator-only formula used line through +centre with the existing quartic convention for -centre.",
+      "correction": "Use Y=-y0+s*(X-x0) and inverse s=(Y+y0)/(X-x0). Exact polynomial identity is checked before classification.",
+      "primary_worker_or_policy_changed": false
+    },
+    {
+      "stage": "corrected standalone universal inverse-map checker preflight",
+      "status": "PASS_EXACT_POLYNOMIAL_AND_INVERSE_IDENTITIES",
+      "primary_worker_or_policy_changed": false
+    }
+  ]
+}
