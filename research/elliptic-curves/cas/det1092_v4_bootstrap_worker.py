@@ -1,9 +1,9 @@
 """Sage worker for the determinant-1092 V4 wide-bootstrap experiment.
 
-V4 searches exactly 512 fresh M17 parity classes per fibre. It excludes all 82
-classes searched by the completed V3 pilot. It stops on a certified 18th point;
-that point is exported for a later unchanged-V3 cascade rather than embedding a
-second cascade implementation here.
+V4 searches exactly 512 fresh M17 parity classes per fibre. It excludes all
+parity classes touched by the completed 82-chart V3 pilot. It stops on a
+certified 18th point; that point is exported for a later unchanged-V3 cascade
+rather than embedding a second cascade implementation here.
 """
 from __future__ import annotations
 
@@ -97,7 +97,7 @@ def prior_sets(ctx):
     selection=read(ctx.folder/'prior-v3-selection.json')
     masks={c.parity_mask(row['representative']) for row in selection['centres']}
     points={tuple(row['point']) for row in selection['centres']}
-    require(len(masks)==len(points)==82,'prior V3 exclusion set changed')
+    require(len(points)==82 and 0 not in masks and 0<len(masks)<=82,'prior V3 exclusion set changed')
     return masks,points
 
 
@@ -161,10 +161,10 @@ def bootstrap_selection(ctx,publish=False):
     result={'schema':'det1092-v4-wide-bootstrap-selection.v1','rank':17,
             'basis':[list(map(str,p)) for p in ctx.state.basis],
             'rounded_gram':[list(map(int,row)) for row in g.rows()],'height_asymmetry':str(asym),
-            'shells':list(c.SHELLS),'prior_v3_parities':sorted(prior_masks),'eligible_parity_classes':len(rows),
-            'selected_count':len(centres),'selector':{'deep':64,'shallow':64,'global_quantiles':128,
-            'shell_quantiles_each':32,'sha':96,'fill':'SHA to exactly 512 after union/dedup',
-            'order':'quartic_bits, quartic_max_bits, SHA(domain:case:parity), parity'},
+            'shells':list(c.SHELLS),'prior_v3_parities':sorted(prior_masks),'prior_v3_chart_count':82,
+            'eligible_parity_classes':len(rows),'selected_count':len(centres),
+            'selector':{'deep':64,'shallow':64,'global_quantiles':128,'shell_quantiles_each':32,'sha':96,
+            'fill':'SHA to exactly 512 after union/dedup','order':'quartic_bits, quartic_max_bits, SHA(domain:case:parity), parity'},
             'centres':centres,'claim_boundary':c.CLAIM}
     if publish: atomic(ctx.folder/'bootstrap/selection.json',result,immutable=True)
     return result
@@ -239,8 +239,7 @@ def run_search(ctx):
         reason='COMPLETE_FRESH_BOOTSTRAP_NO_GAIN'
     terminal={'status':'V4_BOOTSTRAP_TERMINAL','case':ctx.case,'initial_rank':17,'rank_lower_bound':rank,
               'charts':len(charts),'censored_charts':censored,'stop_reason':reason,
-              'selection_sha256':sha(out/'selection.json'),'final_audit':final_mod2.name,
-              'final_audit_sha256':sha(final_mod2),'scope':c.CLAIM}
+              'selection_sha256':sha(out/'selection.json'),'final_audit':final_mod2.name,'final_audit_sha256':sha(final_mod2),'scope':c.CLAIM}
     atomic(out/'terminal.json',terminal,immutable=True)
     if rank>17:
         atomic(out/'bootstrap-seed.json',{'curve':list(map(str,ctx.model)),'points':cloud['independent_points'],
