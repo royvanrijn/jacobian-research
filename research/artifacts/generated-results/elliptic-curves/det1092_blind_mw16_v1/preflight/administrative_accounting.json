@@ -1,0 +1,27 @@
+{
+  "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+  "primary_search_accounting": "Complete child CPU/wall/exit accounting plus per-stage wall/user/system/RSS samples for all17 arms; see arms/*/accounting.json, certificate.json and stage_ledger.json.",
+  "development_probes": [
+    {
+      "stage": "mount isolation",
+      "outcome": "FAIL before fixture freeze; WSL bind mount unavailable"
+    },
+    {
+      "stage": "Landlock/Sage synthetic chord",
+      "outcome": "Initial sign typo, then PASS before fixture freeze; no parent input"
+    },
+    {
+      "stage": "source copy",
+      "outcome": "Duplicate AGENTS basename failure before freeze; partial bytes retained"
+    },
+    {
+      "stage": "independent affine group formula toy test",
+      "outcome": "PASS; no parent/fixture input"
+    },
+    {
+      "stage": "lossless archive size probe on terminal arm01",
+      "outcome": "No artifact or mathematical mutation; 52797440 tar bytes compress to11183296 bytes in41.9265 wall seconds. Probe output was discarded; the final archive uses unchanged raw bytes, not this compression."
+    }
+  ],
+  "limits_of_admin_timing": "Development-only IO/probes were not all process-instrumented; unavailable timings are not counted as zero or primary-worker resource use. Actual research runs and proof replays have explicit accounting. Shared-host background load was not controlled."
+}

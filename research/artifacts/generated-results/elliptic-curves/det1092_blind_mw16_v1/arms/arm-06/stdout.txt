@@ -1,0 +1,2 @@
+Starting commit: 5257d634a390b3ce6d65790d93a7817cfea74b3b
+5257d634a390b3ce6d65790d93a7817cfea74b3b arm-06 GENERIC_QUOTIENT_RECOVERY {'wall_seconds': 12.466834518010728, 'user_seconds': 12.655154, 'system_seconds': 0.103988, 'max_rss_KiB': 248532}

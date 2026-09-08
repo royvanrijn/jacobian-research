@@ -1,0 +1,2 @@
+Starting commit: 5257d634a390b3ce6d65790d93a7817cfea74b3b
+5257d634a390b3ce6d65790d93a7817cfea74b3b arm-08 BOUNDED_NO_RECOVERY {'wall_seconds': 106.26556384097785, 'user_seconds': 105.534564, 'system_seconds': 0.223937, 'max_rss_KiB': 304604}

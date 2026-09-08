@@ -1,0 +1,77 @@
+{
+  "blinding": "Algorithm/process input blindness; designer has read canonical background. No claim of human ignorance of the known parent. Linux Landlock ABI7 allowlist with separate network/PID namespaces. Only own fixture and worker source from repository are readable.",
+  "frozen_utc": "2026-09-08T15:56:43.192004+00:00",
+  "policy": {
+    "RR": "For each selected centre T, h=height(T), use n=ceil(3h/4)+1 then n+1. Solve f0+f1*x(T)+f2*y(T)=0 in degrees(n,n-4,n-6); take each exact RREF kernel basis row in order, no fitted linear combinations. Remove T from the cubic-line intersection. Test discriminant square in Q(t) and return every distinct rational root of a split member.",
+    "allowed": [
+      "same original parent a-invariants",
+      "exact16 retained rational sections",
+      "principal16x16 height Gram independently recomputed from those sections",
+      "known full generic rank17",
+      "general RR, elliptic group law and K3 height formula",
+      "deterministic algorithm and CAS runtime"
+    ],
+    "candidate_gate": "Exact equation membership and the K3 Shioda height Gram on the original parent; rank17 and positive Schur complement required. No finite-field or specialization independence proxy.",
+    "centre_selection": "LLL_gram columns verified unimodular; 512 SHA256 parity masks in reduced coordinates, first two digest bytes of det1092-blind-mw16-v1:j, j=0..511, big endian. Deterministic greedy moves +/-2ei and +/-2(ei+/-ej), strictly reducing norm, at most128 moves. Normalize original word sign. Deduplicate original parities; select up to32 with heights8..14 ordered by decreasing height, original L1 word size, original lexicographic word. No oracle, full-lattice coset data, or coefficient-fitted constants.",
+    "classification_precedence": "All arms terminal and replay passing:17 successes BROAD_16_TO_17_RECOVERY;1..16 CORE_DEPENDENT_16_TO_17_RECOVERY;0 with complete execution BOUNDED_NO_RECOVERY;0 and any failure UNRESOLVED_DUE_TO_EXPERIMENT_FAILURE. Alternative quotient representatives are reported independently; ALTERNATIVE_QUOTIENT_RECOVERY reserved for a result whose only demonstrated successes are nonprimitive quotient multiples.",
+    "forbidden": [
+      "omitted section coordinates or other-basis words",
+      "omitted height pairings",
+      "full17 parent/basis/lattice artifacts during reconstruction",
+      "other arms or outputs",
+      "exceptional302 points, public rank31 set, exceptional14 complement, V1/V2/V3 data",
+      "historical winning centres/orbits/nets/covers or fitted selectors/coordinate transformations",
+      "specialization points or tests during reconstruction",
+      "network and repository access outside the explicit own-fixture and worker-file allowlist"
+    ],
+    "limits": {
+      "CPU_hard_seconds": 185,
+      "CPU_seconds": 180,
+      "RR_bounds_per_centre": 2,
+      "address_space_GiB": 8,
+      "greedy_steps_per_sample": 128,
+      "parity_samples": 512,
+      "per_file_MiB": 128,
+      "selected_centres": 32,
+      "wall_seconds": 240,
+      "workers_concurrent": 1
+    },
+    "objective": "Recover a rational section over Q(t) independent of this retained rank16 core; known parent rank17 is a positive control, not a new rank claim.",
+    "scope": "Only the declared fresh RR split-component mechanism is tested. A miss cannot attribute failure to every recent geometric construction or imply nonexistence.",
+    "stop": "First RR member giving exact rank17, after retaining both rational roots. Otherwise exhaust selected centres and both degree bounds. Preserve every failed stage; no refill/replacement/rerun."
+  },
+  "roster_sha256": "be849136d8e6bb844ea1ac71008691e8745bfa591fcd6c7d98a98639f60316d2",
+  "source_bindings": {
+    "AGENTS.md": "81d0f19937c2c0c931bc3e68a220f202e0f83698aaddd00007b2955697aa52e3",
+    "research/MATH_STATUS.json": "c4f225fd809b4e6ae22d57715868823420be464b864dc35f5b7433f36401e9df",
+    "research/artifacts/generated-results/elliptic-curves/curve302_parent_geometric_picard19_v1.json": "574429256daeee72ec2dcb5fe0c39df06e8fc122015da754f5db3ce4f271495c",
+    "research/artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_proof_v1.json": "e46bf0356a91c1ddca097b29009847bc2e4028bb47964ec8b196f797b6af15e2",
+    "research/artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "research/elliptic-curves/AGENTS.md": "8e509b8b31408d6141840a3682fda6a6236e6d93930c1287bb367c6a01860ad0",
+    "research/elliptic-curves/README.md": "1b5f22f096e53284fa4505ccbd7a5196147d78c64b1709ab9995d3ad2036e354",
+    "research/elliptic-curves/cas/det1092_blind_mw16/isolate.py": "c00023fcfd4c16df4f3efa38de2aa6c6dbf94e32247a43857c34d64f31b6bf4a",
+    "research/elliptic-curves/cas/det1092_blind_mw16/prepare.py": "e05f5c1507088872a2169032578f6eab77aa3d789eca4e3a160bc79adb6b6880",
+    "research/elliptic-curves/cas/det1092_blind_mw16/worker.py": "7c07adf975ec05510dcd92f411dad4d9db3d93a626c325fffe1defe11b852fc6",
+    "research/elliptic-curves/cas/load_curve302_recovered_parent.sage": "c4d57ab8ebeedfbc8b74c1838760dd4036d958985ed63ad2f52b2ce348d3173f",
+    "research/elliptic-curves/notes/CURVE302_PARENT_SEARCH_AND_GEOMETRY_2026-09-07.md": "131f895c83eede896fb453eb846da77c9465c70a19ea29cf722322fa8f3adc8c",
+    "research/elliptic-curves/notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md": "a17acc3ddae78af0edab1ce41bbaadfebb739e9e62df8da79425d7be5ec1fbe2",
+    "research/elliptic-curves/notes/DET1092_FIRST_UNLOCK_JACOBIAN_CLASS_2026-09-08.md": "5bd9f3f35000c7a3760ba390416f1d4061f23f936bdfd231f3b845c704365a7d",
+    "research/elliptic-curves/notes/DET1092_FIRST_UNLOCK_RR_NET_2026-09-08.md": "7e8cd83f62eccddc5022cd1a070e1aa8b01062f1cf30328eeec7d927b4745d9f",
+    "research/elliptic-curves/notes/DET1092_RANK18_BASE_CHANGE_AND_INITIAL_UNLOCK_2026-09-08.md": "f9748111cd780dafc33cc3e08e9f709c770d5cbbd7262fc0cba6737fc5b895a1",
+    "research/elliptic-curves/notes/DET1092_RR_GENERIC_POINT_SPECIFICITY_2026-09-08.md": "926171ff1a17a38bccf4b310e2298d0ee26aeb407cd35fe265d156169af0f2ea",
+    "research/elliptic-curves/notes/DET1092_RR_NET_REDUCIBLE_LOCUS_2026-09-08.md": "1b1ca90652c52831c6ca7a87cd06ef7f289cfc5f8b6603260ad68f67cebe77a8",
+    "research/elliptic-curves/notes/DET1092_SEED_KUMMER_COVER_2026-09-08.md": "14cb77e7545e07dc947548772be56792fa79ffaebe363a00b754ebe0f594e8aa",
+    "research/elliptic-curves/notes/DET1092_SINGLE_SEED_COVER_2026-09-08.md": "7535007d56551ff5cf05f1b4b92ef3b7db1eec0615c86cfacc24fd788b1c8ae5",
+    "research/elliptic-curves/notes/DET1092_TWO_COVER_BRANCH_GATE_2026-09-08.md": "8726820baf172e6f8c81244b8e748e56ea95415266bb50074fc08891f178fc55",
+    "research/elliptic-curves/notes/RANK_JUMP_REASSESSMENT_2026-09-05.md": "406db25932e6bb064de5afa6aeb44540f708e4842b5d6052c9fd246b48209683"
+  },
+  "stages": [
+    "fixture_preparation",
+    "isolated_reconstruction_all17",
+    "freeze_primary_outputs",
+    "post_run_full_basis_evaluation",
+    "independent_replay",
+    "secondary_specialization_diagnostic"
+  ],
+  "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b"
+}

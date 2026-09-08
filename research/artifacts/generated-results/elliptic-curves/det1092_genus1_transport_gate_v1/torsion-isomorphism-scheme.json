@@ -1,0 +1,28 @@
+{
+  "algebra_map": "original root -> u+v*theta+w*theta^2 in Q[theta]/(theta^3+a*theta^2+b*theta+c)",
+  "classification": "explicit degree-six torsion-isomorphism scheme, not a seed cover",
+  "coefficient_substitution": "(a,b,c)=carrier_abc; (A,B,C)=original_abc from each frozen equation pair",
+  "equations": [
+    "-a^2*w + a*v + 2*b*w - A - 3*u",
+    "2*a^2*u*w - a*b*v*w + b^2*w^2 - 2*a*c*w^2 - 2*a*u*v + b*v^2 - 4*b*u*w + 3*c*v*w + 3*u^2 - B",
+    "-a^2*u^2*w + a*b*u*v*w - a*c*v^2*w - b^2*u*w^2 + 2*a*c*u*w^2 + b*c*v*w^2 - c^2*w^3 + a*u^2*v - b*u*v^2 + c*v^3 + 2*b*u^2*w - 3*c*u*v*w - u^3 - C"
+  ],
+  "extension_degree_necessity": "A rank-one equivariant2-torsion map requires9 dividing[L:Q]; a rank-two map requires6 dividing[L:Q]. The six-point scheme supplies a degree-six torsion isomorphism field; geometric elliptic Hom remains zero over every extension.",
+  "map_orbit_sizes": {
+    "rank0": 1,
+    "rank1": 9,
+    "rank2": 6
+  },
+  "proof": "For distinct source roots, evaluation of u+v*theta+w*theta^2 is an invertible Vandermonde map. The characteristic-polynomial equations give exactly the six bijections to the distinct target roots. They are reduced in characteristic zero. The full S3xS3 action is transitive, so the scheme is Spec of a degree-six field overQ. It has no rational point. This is a torsion-module isomorphism only, not an elliptic isogeny or a rational seed.",
+  "variables": [
+    "a",
+    "b",
+    "c",
+    "A",
+    "B",
+    "C",
+    "u",
+    "v",
+    "w"
+  ]
+}

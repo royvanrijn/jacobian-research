@@ -1,5 +1,44 @@
 # Elliptic curves over `Q` — ACTIVE
 
+The [surface Brauer gate](notes/DET1092_BRAUER_SECTION_AND_LOCAL_GATE_2026-09-08.md)
+connects all generic sections to `O` through17 explicit rational intersections.
+Every normalized2-primary surface Brauer class is consequently zero on the
+whole local fibres at all189 checked pairs. On302 these include every bad
+prime and infinity; any nonzero Brauer detection needs at least two other,
+good primes. This does not compute the transcendental Brauer group.
+
+The [blinded MW16 reconstruction](notes/DET1092_BLIND_MW16_RECONSTRUCTION_2026-09-08.md)
+recovers the full known generic MW17 quotient from **9 of 17** frozen cores.
+Fresh core-only RR systems produce alternative representatives over `Q(t)`;
+all claims replay independently. Eight bounded misses are retained.
+This is a reconstruction result, with no new generic or curve302 rank claim.
+<!-- status-consumer: EC-DET1092-BLIND-MW16-RECONSTRUCTION-20260908 e799c490f343785a -->
+
+The [genus-one first-seed carrier](notes/DET1092_GENUS_ONE_FIRST_SEED_COVER_2026-09-08.md)
+now lowers the known302 witness's carrier genus from two to one using a
+generic norm-eight pencil. It has an explicit infinite rational-point
+source and pullback rank18; equation-only replay certifies the first seed.
+Its [full Picard comparison](notes/DET1092_GENUS_ONE_PICARD_SPECIFICITY_2026-09-08.md)
+now proves rank12 and rank13 with the first class, so inherited carrier
+points cannot generate that seed. All nine generic-point controls also give
+12 to13 while remaining generic on the original fibres: this carrier-class
+condition fails specificity. Prospective member selection remains open.
+The [genus-one transport obstruction](notes/DET1092_GENUS_ONE_TRANSPORT_OBSTRUCTION_2026-09-08.md)
+also rules out geometric isogenies and rational2-torsion-module transfers
+to the marked original fibres on all ten pairs. A minimal degree-six
+torsion-identification field is explicit, but supplies no rational seed.
+
+The [conic seed progression](notes/DET1092_CONIC_SEED_PROGRESSION_2026-09-08.md)
+now gives an equation-only producer of one independent extra point on
+infinitely many determinant1092 fibres, with rank18 certified at every
+integer in an explicit progression. The first exact seed is exported.
+This conic misses302 and all eight controls; the historical302 mechanism
+remains open. No pilot or amplification was run.
+The [trace/twist Kummer identity](notes/DET1092_TRACE_TWIST_KUMMER_OBSTRUCTION_2026-09-08.md)
+now proves that the anti-invariant twist point transfers only the inherited
+centre class. It is rational/Selmer with zero Sha image on all nine old
+fibres, so this direct transfer cannot distinguish the302 seed.
+
 The [polynomial-lift obstruction](notes/DET1092_SEED_KUMMER_COVER_2026-09-08.md#polynomial-lift-obstruction-an-entire-family-not-one-copied-abscissa)
 rules out non-generic polynomial linear-norm lifts through degree24 when
 unramified at all finite good parameter fibres. Odd degrees above four
@@ -11,7 +50,7 @@ The [equation-only local seed gate](notes/DET1092_SEED_KUMMER_COVER_2026-09-08.m
 now separates the first302 seed by a certified five-place character.
 Generic-only comparisons pass on all eight unchanged controls and prove
 both single-place blindness and one complete fixed-footprint blind spot.
-This recognizes a supplied seed; producing one prospectively remains open.
+This recognizes a supplied seed; reconstructing this302 seed prospectively remains open.
 
 The [seed-specific Kummer covering](notes/DET1092_SEED_KUMMER_COVER_2026-09-08.md)
 now isolates the first302 elliptic class: every rational cover point maps
@@ -144,7 +183,14 @@ autonomously reaches **17→19→22→23→26→28** on302, then stops on a comp
 no-gain wave; ten matched determinant1092 controls remain17. All1,040 charts
 complete. Exact finite-atlas matrices quantify visibility drops and correct
 late-scheduling effects; the note proves the parity and monotonicity statements.
-Autonomous31 remains unachieved.
+That V1 result is historical: the separately frozen
+[V3 calibration](notes/ADAPTIVE_HALF_LATTICE_V3_2026-09-07.md) subsequently
+completed **17→18→…→31 in 1169 charts**, with independent replay.
+The [two-seed amplifier](notes/CURVE302_SEEDED_V3_RESULTS_2026-09-08.md)
+also completed **18→31** from each of two retrospectively supplied seeds,
+in **855 and 637 charts**. The same note records completed no-gain transfer
+controls. These results do not establish prospective seed discovery or an
+exact rank upper bound.
 
 The [complete 302 exceptional-subgroup order diagnostic](notes/CURVE302_EXCEPTIONAL_SUBGROUP_ORDER_2026-09-07.md)
 enumerates all `2^14` displayed `M17+S` states retrospectively. Its persistent

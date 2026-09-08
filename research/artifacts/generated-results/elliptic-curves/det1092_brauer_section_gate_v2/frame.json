@@ -1,0 +1,20 @@
+{
+  "chosen": [],
+  "classification": "exact lattice and section-intersection certificate",
+  "height_formula": "For a nonzero section on the proved24I1 K3, height=4+2(S.O); norm6 therefore gives a degree-one rational intersection with O.",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv": "6eabef60743153bad58de5cdc0c49777036991282a362d26ab286722986ae40f",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_brauer_section_gate_v2/protocol.json": "defb9c2e5932c21d1fe1d41f1cb096eb5bb7c9ba56e52ee4795b80b1e57549e4"
+  },
+  "integer_determinant": null,
+  "ledger": [],
+  "rank_mod2": 0,
+  "scanned_file_rows": 104978,
+  "skipped_norm_counts": {
+    "10": 40917,
+    "12": 139,
+    "8": 63922
+  },
+  "status": "UNKNOWN_WITHIN_ROW_LIMIT"
+}

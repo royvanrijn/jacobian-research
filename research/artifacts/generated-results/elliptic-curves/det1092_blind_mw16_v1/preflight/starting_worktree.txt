@@ -1,0 +1,176 @@
+Starting commit: 5257d634a390b3ce6d65790d93a7817cfea74b3b
+ M research/MATH_STATUS.json
+ M research/elliptic-curves/README.md
+ M research/elliptic-curves/notes/DET1092_RANK18_BASE_CHANGE_AND_INITIAL_UNLOCK_2026-09-08.md
+ M research/elliptic-curves/notes/DET1092_SEED_KUMMER_COVER_2026-09-08.md
+?? research/artifacts/generated-results/elliptic-curves/det1092_blind_mw16_v1/
+?? research/artifacts/generated-results/elliptic-curves/det1092_norm8_seed_cover_v1/
+?? research/artifacts/generated-results/elliptic-curves/det1092_norm8_seed_cover_v2/
+?? research/artifacts/generated-results/elliptic-curves/det1092_trace_twist_kummer_v1/
+?? research/elliptic-curves/cas/audit_det1092_norm8_seed_cover.sage
+?? research/elliptic-curves/cas/audit_det1092_norm8_seed_cover_v2.sage
+?? research/elliptic-curves/cas/construct_det1092_norm8_elliptic_pencil_v2.sage
+?? research/elliptic-curves/cas/construct_det1092_norm8_first_unlock_cover.sage
+?? research/elliptic-curves/cas/construct_det1092_trace_twist_kummer.sage
+?? research/elliptic-curves/cas/det1092_blind_mw16/
+?? research/elliptic-curves/cas/verify_det1092_norm8_first_unlock_cover.sage
+?? research/elliptic-curves/cas/verify_det1092_trace_twist_kummer.sage
+?? research/elliptic-curves/notes/DET1092_CONIC_SEED_PROGRESSION_2026-09-08.md
+?? research/elliptic-curves/notes/DET1092_TRACE_TWIST_KUMMER_OBSTRUCTION_2026-09-08.md
+
+diff --git a/research/MATH_STATUS.json b/research/MATH_STATUS.json
+index 91071188..b943f30e 100644
+--- a/research/MATH_STATUS.json
++++ b/research/MATH_STATUS.json
+@@ -2,6 +2,84 @@
+   "schema_version": 6,
+   "authority": "MATH_STATUS.json",
+   "entries": [
++    {
++      "id": "EC-DET1092-TRACE-TWIST-KUMMER-OBSTRUCTION-20260908",
++      "kind": "theorem",
++      "state": "proved",
++      "title": "Quadratic anti-trace points transfer exactly the inherited trace2-Kummer class, with globally rational classes on all nine frozen fibres",
++      "scope": "New explicit algebraic deduction in this application and independent exact replay. For a smooth cubic E:Y^2=f(X), s^2=d and Q=(u+vs,w+zs) with v*d nonzero, write L=mX+n for the rational chord through Q and its conjugate, Z=Q+sigma(Q)=(c,e), lambda=w/v, and R=Q-sigma(Q)=(r,s*eta), where r=lambda^2/d-a-2u and eta=lambda*(u-r)/d-z. With N=lambda*(X-u)+d*z, exact polynomial identities give d*(r-X)*L(X)^2-(c-X)*N(X)^2=d*(r-c)*f(X). On the stated unit patch, d*(r-theta)=(c-theta)*(N(theta)/L(theta))^2 in the cubic etale algebra. The monic d-twist has point(dr,d^2*eta), so its Kummer class is d*(r-theta), not r-theta. Under the natural E^(d)[2]=E[2] identification this class equals delta_E(Z). Hence every such quadratic multisection with inherited trace transfers an inherited class by this route, regardless of branch-cover genus. The generic-only orbit8044 application reconstructs the exact RR point, trace word and anti-trace twist point, then checks all eight unchanged controls and302. All nine are nonsplit overQ by integer square-root bounds; all have an explicit square witness equating the transferred class to their generic rational trace. The class therefore lies in both rational Kummer images and both Selmer groups with zero Sha image; its global survival cannot distinguish the first302 unlock. This does not assert that inherited2-Kummer image implies rational-span dependence: a rational independent Q can give independent2Q-Z with inherited class. Nor does it exclude other classes, higher descent, rational points on either twist, or seeds from split branches. The independent checker imports no constructor, proves a universal polynomial factorization, reconstructs the two chord maps and generic trace word, and uses elementary cubic multiplication matrices and determinants to verify every rational square witness and unit norm. Explicit affine exclusion polynomials and all nine outcomes are retained. Construction and independent replay each finish under one second within25-second caps. No exceptional or later point, V3 artifact, new address, point search, parameter sweep, class group, number field, Selmer dimension, paid backend, pilot mutation or detached job. No nonzero Sha class, full-rank upper bound, literature novelty or prospective302 seed producer is claimed; the broader seed-construction and RR incidence goal remains open.",
++      "canonical_source": "elliptic-curves/notes/DET1092_TRACE_TWIST_KUMMER_OBSTRUCTION_2026-09-08.md",
++      "dependencies": [
++        "EC-DET1092-ORBIT8044-Q-RATIONAL-RANK18-20260908",
++        "EC-DET1092-FIRST-SEED-LOCAL-COMPATIBILITY-20260908",
++        "EC-DET1092-MARKED-KUMMER-NORM-OBSTRUCTIONS-20260908"
++      ],
++      "checker": "elliptic-curves/cas/verify_det1092_trace_twist_kummer.sage",
++      "proof_type": "hybrid",
++      "independent_replay": true,
++      "formal_verification": false,
++      "external_review": false,
++      "artifact_hash": "sha256:0ad3977c0fa1a8cac0953ded4f5d9f4881a367ef678062b6932c2191c3f2efc5",
++      "software_lock": [
++        "elliptic-curves/cas/construct_det1092_trace_twist_kummer.sage",
++        "elliptic-curves/cas/verify_det1092_trace_twist_kummer.sage",
++        "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json",
++        "artifacts/generated-results/elliptic-curves/det1092_orbit8044_rank18_base_change_v2.json",
++        "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/protocol.json",
++        "artifacts/generated-results/elliptic-curves/det1092_trace_twist_kummer_v1/protocol.json",
++        "artifacts/generated-results/elliptic-curves/det1092_trace_twist_kummer_v1/universal.json",
++        "artifacts/generated-results/elliptic-curves/det1092_trace_twist_kummer_v1/construction.json",
++        "artifacts/generated-results/elliptic-curves/det1092_trace_twist_kummer_v1/panel.json",
++        "artifacts/generated-results/elliptic-curves/det1092_trace_twist_kummer_v1/replay.json"
++      ],
++      "supersedes": [],
++      "closes_problems": [],
++      "narrows_problems": [],
++      "consumers": [],
++      "invalidates_assumptions": [],
++      "replaced_by": [],
++      "priority": "derived"
++    },
++    {
++      "id": "EC-DET1092-CONIC-UNIFORM-SEED-PROGRESSION-20260908",
++      "kind": "theorem",
++      "state": "proved",
++      "title": "An explicit infinite rational progression of determinant1092 fibres with equation-only seeds and uniform certified rank at least18",
++      "scope": "New constructive deduction and independently verified application of the existing generic-input orbit8044 rational conic. Let t(u), Q(u) be its unchanged rational parameter map and elliptic lift. For B=6437157837635645727368063702636659 and every integer n, t(B*n) is a finite smooth rational parent parameter, and the17 inherited points together with Q(B*n) are independent overQ. Thus Q(B*n) lies outside the inherited rational span, with no unresolved specialization-exception set. The degree-two map t(u) gives infinitely many distinct rational fibre parameters. One new address u=0 and all odd proof primes<=1009 were frozen before rank tests; all168 exposures are retained:156 good reductions, seven bad reductions and five coefficient-denominator skips. The independently reconstructed finite-group quotient matrix has rank18 and generic submatrix rank17. At23 the good finite group has order33, excluding rational2-torsion. B is the product of18 selected proof primes; integral polynomial coefficient pairs, point triples and the base-map pair have unit coefficient/base-map denominators and nonzero point reductions at u=0 at every selected prime. For every integer n these residues, good reductions and the full rank certificate persist at u=B*n. The independent checker reconstructs the conic/RR maps and all18 rational-function point identities, then enumerates complete finite groups and doubled subgroups by elementary integer addition without importing the constructor or its cubic Kummer character backend. The producer evaluates only the hash-bound generic parent/conic maps and either returns the equation,17 inherited points and seed for an integer n, or recognizes a supplied parent parameter by a rational root of the degree-at-most-two inverse equation with u/B integral. Outside this proved image it returns UNKNOWN. The n=0 bundle and its positive parameter roundtrip are checked. Exact nonsquare bounds prove this unchanged conic has no rational preimage above302 or any of the eight frozen controls; it therefore supplies no discriminator on that panel and does not reconstruct the historical302 seed. The seed Kummer classes are rational, non-generic and hence Selmer with zero Sha image; no Selmer dimension or RR-Jacobian transfer is computed. All construction, independent replay and interface checks finish under one second within25-second caps. All maps and points are overQ; no number-field extension, exceptional point input, later point, V3 artifact, pilot change, point search, parameter sweep, class group or detached job. No full-rank upper bound, novelty comparison, second independent quotient direction or amplification beyond18 is claimed. The broader302 seed-construction goal remains open.",
++      "canonical_source": "elliptic-curves/notes/DET1092_CONIC_SEED_PROGRESSION_2026-09-08.md",
++      "dependencies": [
++        "EC-DET1092-ORBIT8044-Q-RATIONAL-RANK18-20260908",
++        "EC-CURVE302-PARENT-GEOMETRIC-PICARD19"
++      ],
++      "checker": "elliptic-curves/cas/verify_det1092_conic_seed_progression.sage",
++      "proof_type": "hybrid",
++      "independent_replay": true,
++      "formal_verification": false,
++      "external_review": false,
++      "artifact_hash": "sha256:c422f9150e9e31a5330092bafe80bcdfa285f96cfc035f1eaad51cd7905dda99",
++      "software_lock": [
++        "elliptic-curves/cas/construct_det1092_conic_seed_progression.sage",
++        "elliptic-curves/cas/verify_det1092_conic_seed_progression.sage",
++        "elliptic-curves/cas/det1092_conic_seed_v2.sage",
++        "elliptic-curves/cas/verify_det1092_conic_seed_api.sage",
++        "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json",
++        "artifacts/generated-results/elliptic-curves/det1092_orbit8044_rank18_base_change_v2.json",
++        "artifacts/generated-results/elliptic-curves/det1092_conic_seed_progression_v1/protocol.json",
++        "artifacts/generated-results/elliptic-curves/det1092_conic_seed_progression_v1/input.json",
++        "artifacts/generated-results/elliptic-curves/det1092_conic_seed_progression_v1/finite-code.json",
++        "artifacts/generated-results/elliptic-curves/det1092_conic_seed_progression_v1/progression.json",
++        "artifacts/generated-results/elliptic-curves/det1092_conic_seed_progression_v1/replay.json",
++        "artifacts/generated-results/elliptic-curves/det1092_conic_seed_progression_v1/seed-at-n0-v2.json",
++        "artifacts/generated-results/elliptic-curves/det1092_conic_seed_progression_v1/api-replay.json"
++      ],
++      "supersedes": [],
++      "closes_problems": [],
++      "narrows_problems": [],
++      "consumers": [],
++      "invalidates_assumptions": [],
++      "replaced_by": [],
++      "priority": "derived"
++    },
+     {
+       "id": "EC-DET1092-POLYNOMIAL-SEED-LIFT-OBSTRUCTION-20260908",
+       "kind": "theorem",
+diff --git a/research/elliptic-curves/README.md b/research/elliptic-curves/README.md
+index 8199c887..3366874a 100644
+--- a/research/elliptic-curves/README.md
++++ b/research/elliptic-curves/README.md
+@@ -1,5 +1,16 @@
+ # Elliptic curves over `Q` — ACTIVE
+ 
++The [conic seed progression](notes/DET1092_CONIC_SEED_PROGRESSION_2026-09-08.md)
++now gives an equation-only producer of one independent extra point on
++infinitely many determinant1092 fibres, with rank18 certified at every
++integer in an explicit progression. The first exact seed is exported.
++This conic misses302 and all eight controls; the historical302 mechanism
++remains open. No pilot or amplification was run.
++The [trace/twist Kummer identity](notes/DET1092_TRACE_TWIST_KUMMER_OBSTRUCTION_2026-09-08.md)
++now proves that the anti-invariant twist point transfers only the inherited
++centre class. It is rational/Selmer with zero Sha image on all nine old
++fibres, so this direct transfer cannot distinguish the302 seed.
++
+ The [polynomial-lift obstruction](notes/DET1092_SEED_KUMMER_COVER_2026-09-08.md#polynomial-lift-obstruction-an-entire-family-not-one-copied-abscissa)
+ rules out non-generic polynomial linear-norm lifts through degree24 when
+ unramified at all finite good parameter fibres. Odd degrees above four
+@@ -11,7 +22,7 @@ The [equation-only local seed gate](notes/DET1092_SEED_KUMMER_COVER_2026-09-08.m
+ now separates the first302 seed by a certified five-place character.
+ Generic-only comparisons pass on all eight unchanged controls and prove
+ both single-place blindness and one complete fixed-footprint blind spot.
+-This recognizes a supplied seed; producing one prospectively remains open.
++This recognizes a supplied seed; reconstructing this302 seed prospectively remains open.
+ 
+ The [seed-specific Kummer covering](notes/DET1092_SEED_KUMMER_COVER_2026-09-08.md)
+ now isolates the first302 elliptic class: every rational cover point maps
+diff --git a/research/elliptic-curves/notes/DET1092_RANK18_BASE_CHANGE_AND_INITIAL_UNLOCK_2026-09-08.md b/research/elliptic-curves/notes/DET1092_RANK18_BASE_CHANGE_AND_INITIAL_UNLOCK_2026-09-08.md
+index f6b0af67..97f3230b 100644
+--- a/research/elliptic-curves/notes/DET1092_RANK18_BASE_CHANGE_AND_INITIAL_UNLOCK_2026-09-08.md
++++ b/research/elliptic-curves/notes/DET1092_RANK18_BASE_CHANGE_AND_INITIAL_UNLOCK_2026-09-08.md
+@@ -339,6 +339,14 @@ proof. Equivalently the explicit 18-section height Gram is
+ This proves `rank E(Q(C)) = rank E(t(u))(Q(u)) >=18`. It does not assign rank
+ 18 to every rational specialization or prove the full generic rank is 18.
+ 
++**Subsequent verified application.** The
++[conic seed progression](DET1092_CONIC_SEED_PROGRESSION_2026-09-08.md)
++now certifies the fixed `u=0` specialization and every `u=B*n`, `n in Z`,
++for an explicit squarefree integer `B`. This gives an equation-only
++infinite rank18 seed family with no unresolved exceptional set on that
++progression. It still misses302 and all eight controls and does not
++strengthen the claim to every rational `u`.
++
+ **New deduction, elementary.** Replacing this lifted section by a translate
+ `Q+P_i` does not provide another independent direction: modulo the inherited
+ subgroup it is still `Q`. Even the two sheets give only one extra direction,
+diff --git a/research/elliptic-curves/notes/DET1092_SEED_KUMMER_COVER_2026-09-08.md b/research/elliptic-curves/notes/DET1092_SEED_KUMMER_COVER_2026-09-08.md
+index 0f1a9c80..fa30435d 100644
+--- a/research/elliptic-curves/notes/DET1092_SEED_KUMMER_COVER_2026-09-08.md
++++ b/research/elliptic-curves/notes/DET1092_SEED_KUMMER_COVER_2026-09-08.md
+@@ -516,8 +516,11 @@ rational point. The copied-abscissa continuation above fails precisely at
+ good-prime ramification on every control and at12 geometric good fibres
+ generically. Multiplying by inherited classes cannot fix it.
+ 
+-**Unresolved, not a claimed theorem or prediction.** No oracle-free parameter
+-selector or rational seed producer has been obtained. The RR-Jacobian class
++**Unresolved for this historical-class route, not a prediction.** It has not
++produced an oracle-free selector or seed producer. The separate
++[conic progression](DET1092_CONIC_SEED_PROGRESSION_2026-09-08.md) now supplies
++one on a different explicit infinite subfamily, but misses302 and the
++eight controls. The RR-Jacobian class
+ `[P_unlock-P0]` is accessed here through its marked elliptic incidence point,
+ not through a nonexistent linear map from that Jacobian to the elliptic
+ curve. The seed's elliptic Kummer class is rational and has zero Sha image;

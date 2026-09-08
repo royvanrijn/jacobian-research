@@ -1,0 +1,258 @@
+{
+  "arm_id": "arm-14",
+  "events": [
+    {
+      "arm_id": "arm-14",
+      "event": "START",
+      "fixture_sha256": "6083ed9a85a87d3781a24866d36e1330e9654efb4ef87d6417f28a0d2e49d8ca",
+      "network_namespace": "isolated",
+      "repository_visible": false,
+      "resource": {
+        "max_rss_KiB": 218728,
+        "system_seconds": 0.11235099999999999,
+        "user_seconds": 0.34508,
+        "wall_seconds": 0.0003398209810256958
+      },
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "visible_inputs": [
+        "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/det1092_blind_mw16_v1/fixtures/arm-14.json",
+        "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/det1092_blind_mw16/worker.py"
+      ],
+      "worker_sha256": "7c07adf975ec05510dcd92f411dad4d9db3d93a626c325fffe1defe11b852fc6"
+    },
+    {
+      "arm_id": "arm-14",
+      "determinant": "8237",
+      "event": "INPUT_RANK16_VERIFIED",
+      "fixture_sha256": "6083ed9a85a87d3781a24866d36e1330e9654efb4ef87d6417f28a0d2e49d8ca",
+      "resource": {
+        "max_rss_KiB": 223612,
+        "system_seconds": 0.11235099999999999,
+        "user_seconds": 0.40898399999999996,
+        "wall_seconds": 0.06829038297291845
+      },
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "worker_sha256": "7c07adf975ec05510dcd92f411dad4d9db3d93a626c325fffe1defe11b852fc6"
+    },
+    {
+      "arm_id": "arm-14",
+      "count": 32,
+      "event": "CENTRES_FROZEN",
+      "fixture_sha256": "6083ed9a85a87d3781a24866d36e1330e9654efb4ef87d6417f28a0d2e49d8ca",
+      "resource": {
+        "max_rss_KiB": 237176,
+        "system_seconds": 0.119976,
+        "user_seconds": 0.487902,
+        "wall_seconds": 0.15791456098668277
+      },
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "worker_sha256": "7c07adf975ec05510dcd92f411dad4d9db3d93a626c325fffe1defe11b852fc6"
+    },
+    {
+      "arm_id": "arm-14",
+      "centre": 0,
+      "event": "CENTRE_START",
+      "fixture_sha256": "6083ed9a85a87d3781a24866d36e1330e9654efb4ef87d6417f28a0d2e49d8ca",
+      "height": 14,
+      "resource": {
+        "max_rss_KiB": 237176,
+        "system_seconds": 0.120004,
+        "user_seconds": 0.48801799999999995,
+        "wall_seconds": 0.16199973796028644
+      },
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "word": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "worker_sha256": "7c07adf975ec05510dcd92f411dad4d9db3d93a626c325fffe1defe11b852fc6"
+    },
+    {
+      "arm_id": "arm-14",
+      "centre": 0,
+      "event": "RR_START",
+      "fixture_sha256": "6083ed9a85a87d3781a24866d36e1330e9654efb4ef87d6417f28a0d2e49d8ca",
+      "n": 12,
+      "resource": {
+        "max_rss_KiB": 237176,
+        "system_seconds": 0.12002299999999999,
+        "user_seconds": 0.496098,
+        "wall_seconds": 0.1728240279480815
+      },
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "worker_sha256": "7c07adf975ec05510dcd92f411dad4d9db3d93a626c325fffe1defe11b852fc6"
+    },
+    {
+      "arm_id": "arm-14",
+      "centre": 0,
+      "event": "RR_COMPLETE",
+      "fixture_sha256": "6083ed9a85a87d3781a24866d36e1330e9654efb4ef87d6417f28a0d2e49d8ca",
+      "n": 12,
+      "recorded_members": 1,
+      "resource": {
+        "max_rss_KiB": 240544,
+        "system_seconds": 0.12002299999999999,
+        "user_seconds": 1.232786,
+        "wall_seconds": 0.913491158047691
+      },
+      "stage_status": "COMPLETE",
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "worker_sha256": "7c07adf975ec05510dcd92f411dad4d9db3d93a626c325fffe1defe11b852fc6"
+    },
+    {
+      "arm_id": "arm-14",
+      "centre": 0,
+      "event": "RR_START",
+      "fixture_sha256": "6083ed9a85a87d3781a24866d36e1330e9654efb4ef87d6417f28a0d2e49d8ca",
+      "n": 13,
+      "resource": {
+        "max_rss_KiB": 240544,
+        "system_seconds": 0.12002299999999999,
+        "user_seconds": 1.233484,
+        "wall_seconds": 0.9169673590222374
+      },
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "worker_sha256": "7c07adf975ec05510dcd92f411dad4d9db3d93a626c325fffe1defe11b852fc6"
+    },
+    {
+      "arm_id": "arm-14",
+      "centre": 0,
+      "event": "RR_COMPLETE",
+      "fixture_sha256": "6083ed9a85a87d3781a24866d36e1330e9654efb4ef87d6417f28a0d2e49d8ca",
+      "n": 13,
+      "recorded_members": 3,
+      "resource": {
+        "max_rss_KiB": 242848,
+        "system_seconds": 0.12002299999999999,
+        "user_seconds": 3.161539,
+        "wall_seconds": 2.8489811789477244
+      },
+      "stage_status": "COMPLETE",
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "worker_sha256": "7c07adf975ec05510dcd92f411dad4d9db3d93a626c325fffe1defe11b852fc6"
+    },
+    {
+      "arm_id": "arm-14",
+      "centre": 1,
+      "event": "CENTRE_START",
+      "fixture_sha256": "6083ed9a85a87d3781a24866d36e1330e9654efb4ef87d6417f28a0d2e49d8ca",
+      "height": 14,
+      "resource": {
+        "max_rss_KiB": 243360,
+        "system_seconds": 0.12002299999999999,
+        "user_seconds": 3.16363,
+        "wall_seconds": 2.860790934995748
+      },
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "word": [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "worker_sha256": "7c07adf975ec05510dcd92f411dad4d9db3d93a626c325fffe1defe11b852fc6"
+    },
+    {
+      "arm_id": "arm-14",
+      "centre": 1,
+      "event": "RR_START",
+      "fixture_sha256": "6083ed9a85a87d3781a24866d36e1330e9654efb4ef87d6417f28a0d2e49d8ca",
+      "n": 12,
+      "resource": {
+        "max_rss_KiB": 243360,
+        "system_seconds": 0.12002299999999999,
+        "user_seconds": 3.17692,
+        "wall_seconds": 2.8781300019472837
+      },
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "worker_sha256": "7c07adf975ec05510dcd92f411dad4d9db3d93a626c325fffe1defe11b852fc6"
+    },
+    {
+      "arm_id": "arm-14",
+      "candidate_id": 0,
+      "event": "CANDIDATE_CERTIFIED",
+      "fixture_sha256": "6083ed9a85a87d3781a24866d36e1330e9654efb4ef87d6417f28a0d2e49d8ca",
+      "resource": {
+        "max_rss_KiB": 243616,
+        "system_seconds": 0.12002299999999999,
+        "user_seconds": 3.92775,
+        "wall_seconds": 3.6318190100137144
+      },
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "worker_sha256": "7c07adf975ec05510dcd92f411dad4d9db3d93a626c325fffe1defe11b852fc6"
+    },
+    {
+      "arm_id": "arm-14",
+      "candidate_id": 1,
+      "event": "CANDIDATE_CERTIFIED",
+      "fixture_sha256": "6083ed9a85a87d3781a24866d36e1330e9654efb4ef87d6417f28a0d2e49d8ca",
+      "resource": {
+        "max_rss_KiB": 243616,
+        "system_seconds": 0.12002299999999999,
+        "user_seconds": 3.939368,
+        "wall_seconds": 3.651095564942807
+      },
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "worker_sha256": "7c07adf975ec05510dcd92f411dad4d9db3d93a626c325fffe1defe11b852fc6"
+    },
+    {
+      "arm_id": "arm-14",
+      "centre": 1,
+      "event": "RR_COMPLETE",
+      "fixture_sha256": "6083ed9a85a87d3781a24866d36e1330e9654efb4ef87d6417f28a0d2e49d8ca",
+      "n": 12,
+      "recorded_members": 1,
+      "resource": {
+        "max_rss_KiB": 243616,
+        "system_seconds": 0.12002299999999999,
+        "user_seconds": 3.939629,
+        "wall_seconds": 3.6556739429943264
+      },
+      "stage_status": "COMPLETE_THROUGH_FIRST_SUCCESS",
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "worker_sha256": "7c07adf975ec05510dcd92f411dad4d9db3d93a626c325fffe1defe11b852fc6"
+    },
+    {
+      "arm_id": "arm-14",
+      "event": "TERMINAL",
+      "fixture_sha256": "6083ed9a85a87d3781a24866d36e1330e9654efb4ef87d6417f28a0d2e49d8ca",
+      "resource": {
+        "max_rss_KiB": 243616,
+        "system_seconds": 0.12241099999999999,
+        "user_seconds": 3.940197,
+        "wall_seconds": 3.6614020690321922
+      },
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "status": "GENERIC_QUOTIENT_RECOVERY",
+      "worker_sha256": "7c07adf975ec05510dcd92f411dad4d9db3d93a626c325fffe1defe11b852fc6"
+    }
+  ],
+  "raw_events_sha256": "3c494b44ebce46c12a9115e5c008f99a81e43a66d7d410c11e319457bc6aed7f",
+  "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b"
+}

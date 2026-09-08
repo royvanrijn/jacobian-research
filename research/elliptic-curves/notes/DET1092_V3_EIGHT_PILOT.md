@@ -107,6 +107,12 @@ exact quartic map; it does not mistake the first table row for a usable centre.
 
 ## Results and decisions
 
+Completed on the research host: **all eight cases independently verified
+17→17**, with 82 charts each (656 total), no resource stops and no eligible
+reserve expansion. The summary is retained at
+`artifacts/local/elliptic-curves/det1092-v3-eight-pilot/summary.json`.
+See the [completed comparison](CURVE302_SEEDED_V3_RESULTS_2026-09-08.md).
+
 Every case requires independent landscape, numeric chart-order, exact historical
 state, map/witness and mod-2/3/5 replay, including no-gain epochs. Reports are
 `trial-replay.json` and `trial-verified.json`. A gain additionally produces
@@ -118,8 +124,8 @@ an unchanged forty-fibre follow-up is eligible. **This launcher never releases
 those forty automatically.** The intended follow-up requires a positive verified
 gain and completion of this initial panel; its ordering is already frozen.
 
-Eight completed 17-to-17 results would mean no recovery in these eight finite
-exposures. They would not distinguish low jump incidence from inadequate
+The eight completed 17-to-17 results mean no recovery in these eight finite
+exposures. They do not distinguish low jump incidence from inadequate
 bootstrap visibility. Extra Selmer classes, if investigated later, would not
 by themselves certify extra rational points either. Keep incidence, visibility
 and global solubility separate, as in `RANK_JUMP_REASSESSMENT_2026-09-05.md`.

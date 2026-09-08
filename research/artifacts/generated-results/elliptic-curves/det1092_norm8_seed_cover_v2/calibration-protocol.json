@@ -1,0 +1,45 @@
+{
+  "classification": "explicit retrospective first-seed calibration after generic construction",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_first_centre_rr_net_replay_v1.json": "376adbadfedeb0bc6d95363cbfdc4fa795fdfc6ed7f0ce68d91650312100cf6e",
+    "artifacts/generated-results/elliptic-curves/det1092_norm8_seed_cover_v2/generic.json": "03d3e86e70709934e219ada1d07ddcc10f2422edf4c8f09ba2cc3344f44c519f",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/protocol.json": "1044eaf4b5c22434eb6cbf2a22ebad0d0154722c929bfaf9d84b06d17ce47df3",
+    "elliptic-curves/cas/construct_det1092_norm8_first_unlock_cover.sage": "92ce61503df6c2504628d8348808a0ef4f159397158d08a451a48402c68354d9"
+  },
+  "limits": {
+    "Selmer_dimensions": 0,
+    "V3_inputs": 0,
+    "class_groups": 0,
+    "fixed_members": 2,
+    "generic_pencils": 1,
+    "historical_first_point_inputs": 1,
+    "later_point_inputs": 0,
+    "new_original_addresses": 0,
+    "old_original_addresses": 9,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "wall_seconds": 25
+  },
+  "proof_primes": [
+    17,
+    47,
+    53,
+    61,
+    67,
+    71,
+    79,
+    83,
+    89,
+    101,
+    107,
+    113,
+    127,
+    137,
+    149,
+    179,
+    191,
+    197
+  ],
+  "rule": "Keep the completed generic norm8 orbit20124 pencil. Compute the unique parameter through the historical first302 witness. Compare precisely z=0 and that calibrated member, keeping the old prime pool and nine original-fibre addresses. Do not replace a failed member or import any later point."
+}

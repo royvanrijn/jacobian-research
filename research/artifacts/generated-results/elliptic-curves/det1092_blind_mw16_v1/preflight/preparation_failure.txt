@@ -1,0 +1,2 @@
+Starting commit: 5257d634a390b3ce6d65790d93a7817cfea74b3b
+PRE-FREEZE fixture preparation stopped at duplicate AGENTS.md basename in source copy; no fixtures, roster, reconstruction or evaluation existed. Corrected to repository-relative snapshot paths. Partial copy retained.

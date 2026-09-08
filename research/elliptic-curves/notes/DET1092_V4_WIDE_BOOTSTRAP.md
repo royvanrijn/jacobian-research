@@ -127,14 +127,19 @@ checks, and only then writes `v4-verified.json`.
 
 ## Interpretation
 
+Completed result: **eight independently verified 17→17 outcomes**, 512 fresh
+charts per fibre (4096 total), and zero certified gains. No automatic V3
+cascade or new-parameter expansion was released. The retained summary is
+`artifacts/local/elliptic-curves/det1092-v4-wide-bootstrap-v2/summary.json`.
+
 A positive case means that widening exact-CVP coverage at M17 exposes a first
 independent direction that V3's 82-chart bootstrap missed. The resulting
 certified subgroup is a natural seed for the unchanged V3 cascade.
 
-Eight clean V4 nulls mean another 4,096 fresh, parity-distinct, specialized
-exact-CVP M17 charts failed to bootstrap the eight fibres. This would
-substantially weaken the explanation that V3 merely exact-CVP'd too few M17
-classes. It would still **not** prove that any fibre has rank exactly 17, that no
+These eight V4 nulls mean another 4,096 fresh, parity-distinct, specialized
+exact-CVP M17 charts failed to bootstrap the eight fibres. Widening this
+particular schedule did not repair bootstrap sensitivity. This still does
+**not** prove that any fibre has rank exactly 17, that no
 rank jump exists, or that all possible M17 pointed charts have been searched:
 512 fresh parity classes per fibre are exposed to the finite point box, not the
 entire quotient, and alternative `2M` translations remain another visibility

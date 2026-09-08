@@ -1,0 +1,4557 @@
+{
+  "LLL_columns": [
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      -1,
+      0,
+      0,
+      -1,
+      1,
+      0,
+      0,
+      -1,
+      0,
+      -1,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      -1,
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      -1,
+      0,
+      -2,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      -1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      -2,
+      -1,
+      -1,
+      1,
+      0,
+      2,
+      -1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      -1,
+      -1,
+      -1,
+      0,
+      0,
+      1,
+      -1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ]
+  ],
+  "arm_id": "arm-07",
+  "centres": [
+    {
+      "height": 14,
+      "word": [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        0,
+        0,
+        2,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        -1,
+        -1,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        -1,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        0,
+        0,
+        1,
+        1,
+        -1,
+        2,
+        -1,
+        0,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        1,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        -1,
+        -1,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        -2,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        -2,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        -1,
+        1,
+        -1,
+        0,
+        -1,
+        -1,
+        1,
+        1,
+        -1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        1,
+        -1,
+        0,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        1,
+        -1,
+        -2,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        1,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        -1,
+        2,
+        1,
+        1,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        -3,
+        -1,
+        1,
+        0
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        0,
+        -1,
+        0,
+        -2,
+        -1,
+        0,
+        -1,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        0,
+        1,
+        -1,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        1,
+        -1,
+        -1,
+        1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        1,
+        -1,
+        -1,
+        0,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        1,
+        -1,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        -2,
+        0,
+        1,
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        1,
+        -1,
+        0,
+        2,
+        -1,
+        0,
+        0,
+        -1,
+        2,
+        -1,
+        -2,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        1,
+        0,
+        -1,
+        -1,
+        0,
+        -2,
+        -1,
+        1,
+        -1,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        -2,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        1,
+        1,
+        -1,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        -1,
+        1,
+        2,
+        0,
+        -1,
+        -1,
+        1,
+        0
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        1,
+        1,
+        -1,
+        0,
+        1,
+        -1,
+        -1,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        -2,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        0,
+        0,
+        1,
+        -1,
+        1,
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        2,
+        1,
+        -1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        -1,
+        1,
+        -1,
+        -2,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        1,
+        0,
+        -3,
+        0,
+        1,
+        -1,
+        -1,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        1,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        -2,
+        -2,
+        -1,
+        1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -2,
+        -2,
+        0,
+        1
+      ]
+    },
+    {
+      "height": 14,
+      "word": [
+        0,
+        1,
+        -1,
+        -2,
+        2,
+        0,
+        1,
+        0,
+        -2,
+        1,
+        1,
+        -1,
+        1,
+        0,
+        0,
+        -1
+      ]
+    }
+  ],
+  "eligible_distinct_parities": 451,
+  "fixture_sha256": "4a6e191ac619c40fca1706a78a9209f0f3b18bd9eeee9b998e79acb7f6ab0ebe",
+  "samples": [
+    {
+      "mask_in_reduced_basis": 55479,
+      "norm": 14,
+      "sample": 0,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 27179,
+      "norm": 10,
+      "sample": 1,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 28810,
+      "norm": 12,
+      "sample": 2,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 18162,
+      "norm": 10,
+      "sample": 3,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 1781,
+      "norm": 10,
+      "sample": 4,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 63227,
+      "norm": 12,
+      "sample": 5,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 23749,
+      "norm": 16,
+      "sample": 6,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 60116,
+      "norm": 14,
+      "sample": 7,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 55417,
+      "norm": 12,
+      "sample": 8,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 3228,
+      "norm": 12,
+      "sample": 9,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 2695,
+      "norm": 10,
+      "sample": 10,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 3577,
+      "norm": 8,
+      "sample": 11,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 18120,
+      "norm": 12,
+      "sample": 12,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 38240,
+      "norm": 10,
+      "sample": 13,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 28611,
+      "norm": 12,
+      "sample": 14,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 20382,
+      "norm": 14,
+      "sample": 15,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 4118,
+      "norm": 8,
+      "sample": 16,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 46184,
+      "norm": 16,
+      "sample": 17,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 65363,
+      "norm": 16,
+      "sample": 18,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 57495,
+      "norm": 12,
+      "sample": 19,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 156,
+      "norm": 8,
+      "sample": 20,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 64489,
+      "norm": 16,
+      "sample": 21,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 39744,
+      "norm": 12,
+      "sample": 22,
+      "step_cap_reached": false,
+      "steps": 0
+    },
+    {
+      "mask_in_reduced_basis": 22003,
+      "norm": 10,
+      "sample": 23,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 37883,
+      "norm": 10,
+      "sample": 24,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 59704,
+      "norm": 12,
+      "sample": 25,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 26781,
+      "norm": 10,
+      "sample": 26,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 55634,
+      "norm": 14,
+      "sample": 27,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 49652,
+      "norm": 12,
+      "sample": 28,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 46666,
+      "norm": 12,
+      "sample": 29,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 52902,
+      "norm": 12,
+      "sample": 30,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 39570,
+      "norm": 10,
+      "sample": 31,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 43688,
+      "norm": 12,
+      "sample": 32,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 30282,
+      "norm": 12,
+      "sample": 33,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 55939,
+      "norm": 14,
+      "sample": 34,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 41644,
+      "norm": 10,
+      "sample": 35,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 56908,
+      "norm": 16,
+      "sample": 36,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 52489,
+      "norm": 10,
+      "sample": 37,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 3133,
+      "norm": 8,
+      "sample": 38,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 26069,
+      "norm": 10,
+      "sample": 39,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 4142,
+      "norm": 10,
+      "sample": 40,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 60425,
+      "norm": 10,
+      "sample": 41,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 2958,
+      "norm": 6,
+      "sample": 42,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 28505,
+      "norm": 12,
+      "sample": 43,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 20890,
+      "norm": 10,
+      "sample": 44,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 9409,
+      "norm": 10,
+      "sample": 45,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 25001,
+      "norm": 12,
+      "sample": 46,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 19283,
+      "norm": 10,
+      "sample": 47,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 36378,
+      "norm": 12,
+      "sample": 48,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 65472,
+      "norm": 8,
+      "sample": 49,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 24289,
+      "norm": 12,
+      "sample": 50,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 30294,
+      "norm": 12,
+      "sample": 51,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 1893,
+      "norm": 8,
+      "sample": 52,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 10249,
+      "norm": 10,
+      "sample": 53,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 27085,
+      "norm": 14,
+      "sample": 54,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 22962,
+      "norm": 12,
+      "sample": 55,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 8525,
+      "norm": 10,
+      "sample": 56,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 8771,
+      "norm": 8,
+      "sample": 57,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 19158,
+      "norm": 12,
+      "sample": 58,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 856,
+      "norm": 6,
+      "sample": 59,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 31488,
+      "norm": 10,
+      "sample": 60,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 50134,
+      "norm": 12,
+      "sample": 61,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 12791,
+      "norm": 14,
+      "sample": 62,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 57876,
+      "norm": 12,
+      "sample": 63,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 9061,
+      "norm": 6,
+      "sample": 64,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 30542,
+      "norm": 16,
+      "sample": 65,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 1709,
+      "norm": 6,
+      "sample": 66,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 585,
+      "norm": 8,
+      "sample": 67,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 38894,
+      "norm": 10,
+      "sample": 68,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 56246,
+      "norm": 14,
+      "sample": 69,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 46159,
+      "norm": 10,
+      "sample": 70,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 63792,
+      "norm": 10,
+      "sample": 71,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 25726,
+      "norm": 8,
+      "sample": 72,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 31631,
+      "norm": 10,
+      "sample": 73,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 35018,
+      "norm": 8,
+      "sample": 74,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 13675,
+      "norm": 6,
+      "sample": 75,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 28713,
+      "norm": 10,
+      "sample": 76,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 39837,
+      "norm": 8,
+      "sample": 77,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 31444,
+      "norm": 14,
+      "sample": 78,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 37449,
+      "norm": 12,
+      "sample": 79,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 60790,
+      "norm": 10,
+      "sample": 80,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 7592,
+      "norm": 8,
+      "sample": 81,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 65384,
+      "norm": 10,
+      "sample": 82,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 44827,
+      "norm": 8,
+      "sample": 83,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 54833,
+      "norm": 14,
+      "sample": 84,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 65484,
+      "norm": 16,
+      "sample": 85,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 51649,
+      "norm": 14,
+      "sample": 86,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 12695,
+      "norm": 10,
+      "sample": 87,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 39384,
+      "norm": 10,
+      "sample": 88,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 63000,
+      "norm": 14,
+      "sample": 89,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 17604,
+      "norm": 10,
+      "sample": 90,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 27285,
+      "norm": 10,
+      "sample": 91,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 54844,
+      "norm": 16,
+      "sample": 92,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 32577,
+      "norm": 14,
+      "sample": 93,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 31710,
+      "norm": 14,
+      "sample": 94,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 43882,
+      "norm": 8,
+      "sample": 95,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 28199,
+      "norm": 10,
+      "sample": 96,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 65339,
+      "norm": 14,
+      "sample": 97,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 56989,
+      "norm": 16,
+      "sample": 98,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 50194,
+      "norm": 12,
+      "sample": 99,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 51528,
+      "norm": 10,
+      "sample": 100,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 1015,
+      "norm": 10,
+      "sample": 101,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 19659,
+      "norm": 12,
+      "sample": 102,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 10338,
+      "norm": 8,
+      "sample": 103,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 53597,
+      "norm": 6,
+      "sample": 104,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 13237,
+      "norm": 6,
+      "sample": 105,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 61002,
+      "norm": 10,
+      "sample": 106,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 65112,
+      "norm": 12,
+      "sample": 107,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 7353,
+      "norm": 10,
+      "sample": 108,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 345,
+      "norm": 10,
+      "sample": 109,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 23366,
+      "norm": 14,
+      "sample": 110,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 20131,
+      "norm": 10,
+      "sample": 111,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 27702,
+      "norm": 12,
+      "sample": 112,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 25476,
+      "norm": 10,
+      "sample": 113,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 12588,
+      "norm": 8,
+      "sample": 114,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 60193,
+      "norm": 14,
+      "sample": 115,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 47224,
+      "norm": 8,
+      "sample": 116,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 57193,
+      "norm": 20,
+      "sample": 117,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 15907,
+      "norm": 12,
+      "sample": 118,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 37880,
+      "norm": 16,
+      "sample": 119,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 10889,
+      "norm": 8,
+      "sample": 120,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 36686,
+      "norm": 6,
+      "sample": 121,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 62000,
+      "norm": 10,
+      "sample": 122,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 29217,
+      "norm": 10,
+      "sample": 123,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 37924,
+      "norm": 12,
+      "sample": 124,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 2256,
+      "norm": 10,
+      "sample": 125,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 14839,
+      "norm": 8,
+      "sample": 126,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 55945,
+      "norm": 14,
+      "sample": 127,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 44370,
+      "norm": 14,
+      "sample": 128,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 53472,
+      "norm": 8,
+      "sample": 129,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 2140,
+      "norm": 8,
+      "sample": 130,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 8118,
+      "norm": 14,
+      "sample": 131,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 54732,
+      "norm": 12,
+      "sample": 132,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 61563,
+      "norm": 16,
+      "sample": 133,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 13495,
+      "norm": 12,
+      "sample": 134,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 24586,
+      "norm": 10,
+      "sample": 135,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 57281,
+      "norm": 8,
+      "sample": 136,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 60051,
+      "norm": 14,
+      "sample": 137,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 6722,
+      "norm": 10,
+      "sample": 138,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 242,
+      "norm": 8,
+      "sample": 139,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 1607,
+      "norm": 10,
+      "sample": 140,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 4924,
+      "norm": 12,
+      "sample": 141,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 51541,
+      "norm": 8,
+      "sample": 142,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 57558,
+      "norm": 12,
+      "sample": 143,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 52444,
+      "norm": 14,
+      "sample": 144,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 6228,
+      "norm": 8,
+      "sample": 145,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 56556,
+      "norm": 16,
+      "sample": 146,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 65163,
+      "norm": 12,
+      "sample": 147,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 19204,
+      "norm": 6,
+      "sample": 148,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 19458,
+      "norm": 6,
+      "sample": 149,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 59438,
+      "norm": 8,
+      "sample": 150,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 9860,
+      "norm": 10,
+      "sample": 151,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 11696,
+      "norm": 8,
+      "sample": 152,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 2509,
+      "norm": 6,
+      "sample": 153,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 19393,
+      "norm": 8,
+      "sample": 154,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 5363,
+      "norm": 8,
+      "sample": 155,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 27740,
+      "norm": 14,
+      "sample": 156,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 59117,
+      "norm": 10,
+      "sample": 157,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 65066,
+      "norm": 20,
+      "sample": 158,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 25403,
+      "norm": 10,
+      "sample": 159,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 15968,
+      "norm": 10,
+      "sample": 160,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 42321,
+      "norm": 10,
+      "sample": 161,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 15487,
+      "norm": 10,
+      "sample": 162,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 51611,
+      "norm": 10,
+      "sample": 163,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 1057,
+      "norm": 8,
+      "sample": 164,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 22334,
+      "norm": 10,
+      "sample": 165,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 6331,
+      "norm": 10,
+      "sample": 166,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 3169,
+      "norm": 8,
+      "sample": 167,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 51189,
+      "norm": 8,
+      "sample": 168,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 54262,
+      "norm": 8,
+      "sample": 169,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 33255,
+      "norm": 12,
+      "sample": 170,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 25541,
+      "norm": 10,
+      "sample": 171,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 15482,
+      "norm": 10,
+      "sample": 172,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 56943,
+      "norm": 14,
+      "sample": 173,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 31098,
+      "norm": 10,
+      "sample": 174,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 47447,
+      "norm": 10,
+      "sample": 175,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 12984,
+      "norm": 12,
+      "sample": 176,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 527,
+      "norm": 8,
+      "sample": 177,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 9611,
+      "norm": 8,
+      "sample": 178,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 20290,
+      "norm": 10,
+      "sample": 179,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 62112,
+      "norm": 16,
+      "sample": 180,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 21166,
+      "norm": 10,
+      "sample": 181,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 15425,
+      "norm": 12,
+      "sample": 182,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 59047,
+      "norm": 12,
+      "sample": 183,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 46566,
+      "norm": 10,
+      "sample": 184,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 60667,
+      "norm": 14,
+      "sample": 185,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 59773,
+      "norm": 12,
+      "sample": 186,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 12972,
+      "norm": 12,
+      "sample": 187,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 2845,
+      "norm": 10,
+      "sample": 188,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 22103,
+      "norm": 14,
+      "sample": 189,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 35601,
+      "norm": 12,
+      "sample": 190,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 1688,
+      "norm": 6,
+      "sample": 191,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 48802,
+      "norm": 20,
+      "sample": 192,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 12981,
+      "norm": 10,
+      "sample": 193,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 8230,
+      "norm": 8,
+      "sample": 194,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 34107,
+      "norm": 8,
+      "sample": 195,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 10076,
+      "norm": 10,
+      "sample": 196,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 61152,
+      "norm": 18,
+      "sample": 197,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 45510,
+      "norm": 14,
+      "sample": 198,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 15230,
+      "norm": 10,
+      "sample": 199,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 39014,
+      "norm": 10,
+      "sample": 200,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 57357,
+      "norm": 10,
+      "sample": 201,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 1296,
+      "norm": 10,
+      "sample": 202,
+      "step_cap_reached": false,
+      "steps": 0
+    },
+    {
+      "mask_in_reduced_basis": 32796,
+      "norm": 8,
+      "sample": 203,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 9566,
+      "norm": 6,
+      "sample": 204,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 52280,
+      "norm": 12,
+      "sample": 205,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 47260,
+      "norm": 14,
+      "sample": 206,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 33600,
+      "norm": 8,
+      "sample": 207,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 51721,
+      "norm": 10,
+      "sample": 208,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 28279,
+      "norm": 12,
+      "sample": 209,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 7737,
+      "norm": 14,
+      "sample": 210,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 31580,
+      "norm": 14,
+      "sample": 211,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 37363,
+      "norm": 14,
+      "sample": 212,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 53738,
+      "norm": 12,
+      "sample": 213,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 54775,
+      "norm": 16,
+      "sample": 214,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 30385,
+      "norm": 12,
+      "sample": 215,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 15104,
+      "norm": 10,
+      "sample": 216,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 48585,
+      "norm": 16,
+      "sample": 217,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 8755,
+      "norm": 10,
+      "sample": 218,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 23753,
+      "norm": 14,
+      "sample": 219,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 11534,
+      "norm": 8,
+      "sample": 220,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 25552,
+      "norm": 10,
+      "sample": 221,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 19437,
+      "norm": 14,
+      "sample": 222,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 54164,
+      "norm": 12,
+      "sample": 223,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 38615,
+      "norm": 10,
+      "sample": 224,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 13313,
+      "norm": 10,
+      "sample": 225,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 3743,
+      "norm": 8,
+      "sample": 226,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 20499,
+      "norm": 6,
+      "sample": 227,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 49643,
+      "norm": 16,
+      "sample": 228,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 54011,
+      "norm": 10,
+      "sample": 229,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 34456,
+      "norm": 10,
+      "sample": 230,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 39554,
+      "norm": 10,
+      "sample": 231,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 56133,
+      "norm": 12,
+      "sample": 232,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 45337,
+      "norm": 10,
+      "sample": 233,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 7727,
+      "norm": 14,
+      "sample": 234,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 55792,
+      "norm": 10,
+      "sample": 235,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 31569,
+      "norm": 12,
+      "sample": 236,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 4276,
+      "norm": 8,
+      "sample": 237,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 1903,
+      "norm": 10,
+      "sample": 238,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 13674,
+      "norm": 8,
+      "sample": 239,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 26814,
+      "norm": 12,
+      "sample": 240,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 35832,
+      "norm": 12,
+      "sample": 241,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 6355,
+      "norm": 10,
+      "sample": 242,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 19625,
+      "norm": 8,
+      "sample": 243,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 32526,
+      "norm": 14,
+      "sample": 244,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 43582,
+      "norm": 12,
+      "sample": 245,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 1000,
+      "norm": 10,
+      "sample": 246,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 1123,
+      "norm": 8,
+      "sample": 247,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 32328,
+      "norm": 8,
+      "sample": 248,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 34181,
+      "norm": 8,
+      "sample": 249,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 28428,
+      "norm": 12,
+      "sample": 250,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 26315,
+      "norm": 14,
+      "sample": 251,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 2754,
+      "norm": 8,
+      "sample": 252,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 50873,
+      "norm": 10,
+      "sample": 253,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 42662,
+      "norm": 14,
+      "sample": 254,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 5670,
+      "norm": 8,
+      "sample": 255,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 23617,
+      "norm": 10,
+      "sample": 256,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 13560,
+      "norm": 12,
+      "sample": 257,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 11644,
+      "norm": 10,
+      "sample": 258,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 30251,
+      "norm": 12,
+      "sample": 259,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 28862,
+      "norm": 10,
+      "sample": 260,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 43960,
+      "norm": 10,
+      "sample": 261,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 24741,
+      "norm": 8,
+      "sample": 262,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 10488,
+      "norm": 10,
+      "sample": 263,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 9182,
+      "norm": 8,
+      "sample": 264,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 33950,
+      "norm": 10,
+      "sample": 265,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 64136,
+      "norm": 14,
+      "sample": 266,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 32342,
+      "norm": 14,
+      "sample": 267,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 10034,
+      "norm": 12,
+      "sample": 268,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 52456,
+      "norm": 14,
+      "sample": 269,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 5901,
+      "norm": 12,
+      "sample": 270,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 5246,
+      "norm": 6,
+      "sample": 271,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 7223,
+      "norm": 10,
+      "sample": 272,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 32314,
+      "norm": 14,
+      "sample": 273,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 41629,
+      "norm": 8,
+      "sample": 274,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 29519,
+      "norm": 12,
+      "sample": 275,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 23196,
+      "norm": 10,
+      "sample": 276,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 43637,
+      "norm": 12,
+      "sample": 277,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 42046,
+      "norm": 10,
+      "sample": 278,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 15679,
+      "norm": 8,
+      "sample": 279,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 14085,
+      "norm": 14,
+      "sample": 280,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 3271,
+      "norm": 8,
+      "sample": 281,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 60659,
+      "norm": 14,
+      "sample": 282,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 52300,
+      "norm": 12,
+      "sample": 283,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 9621,
+      "norm": 12,
+      "sample": 284,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 17756,
+      "norm": 10,
+      "sample": 285,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 15971,
+      "norm": 12,
+      "sample": 286,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 8431,
+      "norm": 8,
+      "sample": 287,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 41625,
+      "norm": 10,
+      "sample": 288,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 27250,
+      "norm": 10,
+      "sample": 289,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 22537,
+      "norm": 8,
+      "sample": 290,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 41523,
+      "norm": 10,
+      "sample": 291,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 931,
+      "norm": 8,
+      "sample": 292,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 42694,
+      "norm": 10,
+      "sample": 293,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 50494,
+      "norm": 10,
+      "sample": 294,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 19285,
+      "norm": 12,
+      "sample": 295,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 8218,
+      "norm": 6,
+      "sample": 296,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 64256,
+      "norm": 14,
+      "sample": 297,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 25656,
+      "norm": 10,
+      "sample": 298,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 49525,
+      "norm": 12,
+      "sample": 299,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 31593,
+      "norm": 10,
+      "sample": 300,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 11379,
+      "norm": 8,
+      "sample": 301,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 40976,
+      "norm": 8,
+      "sample": 302,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 9867,
+      "norm": 12,
+      "sample": 303,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 26793,
+      "norm": 8,
+      "sample": 304,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 28338,
+      "norm": 14,
+      "sample": 305,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 7500,
+      "norm": 8,
+      "sample": 306,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 28951,
+      "norm": 14,
+      "sample": 307,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 56242,
+      "norm": 12,
+      "sample": 308,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 44120,
+      "norm": 16,
+      "sample": 309,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 42342,
+      "norm": 10,
+      "sample": 310,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 32176,
+      "norm": 14,
+      "sample": 311,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 51436,
+      "norm": 12,
+      "sample": 312,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 36412,
+      "norm": 6,
+      "sample": 313,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 6536,
+      "norm": 12,
+      "sample": 314,
+      "step_cap_reached": false,
+      "steps": 0
+    },
+    {
+      "mask_in_reduced_basis": 4349,
+      "norm": 8,
+      "sample": 315,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 45899,
+      "norm": 14,
+      "sample": 316,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 65435,
+      "norm": 14,
+      "sample": 317,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 26142,
+      "norm": 8,
+      "sample": 318,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 28366,
+      "norm": 14,
+      "sample": 319,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 42940,
+      "norm": 8,
+      "sample": 320,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 54489,
+      "norm": 18,
+      "sample": 321,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 55376,
+      "norm": 10,
+      "sample": 322,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 20720,
+      "norm": 8,
+      "sample": 323,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 16379,
+      "norm": 12,
+      "sample": 324,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 40040,
+      "norm": 14,
+      "sample": 325,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 48171,
+      "norm": 14,
+      "sample": 326,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 64347,
+      "norm": 12,
+      "sample": 327,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 26876,
+      "norm": 10,
+      "sample": 328,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 5491,
+      "norm": 8,
+      "sample": 329,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 20271,
+      "norm": 12,
+      "sample": 330,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 46054,
+      "norm": 12,
+      "sample": 331,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 37793,
+      "norm": 12,
+      "sample": 332,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 60068,
+      "norm": 14,
+      "sample": 333,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 14531,
+      "norm": 14,
+      "sample": 334,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 23389,
+      "norm": 14,
+      "sample": 335,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 20031,
+      "norm": 12,
+      "sample": 336,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 17804,
+      "norm": 10,
+      "sample": 337,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 46814,
+      "norm": 16,
+      "sample": 338,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 51826,
+      "norm": 12,
+      "sample": 339,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 22739,
+      "norm": 14,
+      "sample": 340,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 7312,
+      "norm": 10,
+      "sample": 341,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 36987,
+      "norm": 8,
+      "sample": 342,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 56527,
+      "norm": 12,
+      "sample": 343,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 9265,
+      "norm": 10,
+      "sample": 344,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 53743,
+      "norm": 10,
+      "sample": 345,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 16739,
+      "norm": 10,
+      "sample": 346,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 60069,
+      "norm": 12,
+      "sample": 347,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 45767,
+      "norm": 14,
+      "sample": 348,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 35918,
+      "norm": 12,
+      "sample": 349,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 21262,
+      "norm": 10,
+      "sample": 350,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 5221,
+      "norm": 8,
+      "sample": 351,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 5394,
+      "norm": 10,
+      "sample": 352,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 30878,
+      "norm": 10,
+      "sample": 353,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 1604,
+      "norm": 8,
+      "sample": 354,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 38638,
+      "norm": 10,
+      "sample": 355,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 46005,
+      "norm": 16,
+      "sample": 356,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 23047,
+      "norm": 12,
+      "sample": 357,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 20935,
+      "norm": 14,
+      "sample": 358,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 18241,
+      "norm": 10,
+      "sample": 359,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 50606,
+      "norm": 14,
+      "sample": 360,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 58903,
+      "norm": 8,
+      "sample": 361,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 42651,
+      "norm": 10,
+      "sample": 362,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 53344,
+      "norm": 10,
+      "sample": 363,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 28724,
+      "norm": 8,
+      "sample": 364,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 17267,
+      "norm": 8,
+      "sample": 365,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 8329,
+      "norm": 8,
+      "sample": 366,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 47903,
+      "norm": 10,
+      "sample": 367,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 56052,
+      "norm": 12,
+      "sample": 368,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 4534,
+      "norm": 10,
+      "sample": 369,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 62592,
+      "norm": 16,
+      "sample": 370,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 32988,
+      "norm": 10,
+      "sample": 371,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 37368,
+      "norm": 12,
+      "sample": 372,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 44993,
+      "norm": 10,
+      "sample": 373,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 64537,
+      "norm": 14,
+      "sample": 374,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 11594,
+      "norm": 10,
+      "sample": 375,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 31435,
+      "norm": 8,
+      "sample": 376,
+      "step_cap_reached": false,
+      "steps": 4
+    },
+    {
+      "mask_in_reduced_basis": 39416,
+      "norm": 12,
+      "sample": 377,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 11389,
+      "norm": 8,
+      "sample": 378,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 4150,
+      "norm": 6,
+      "sample": 379,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 13433,
+      "norm": 8,
+      "sample": 380,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 39137,
+      "norm": 8,
+      "sample": 381,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 27071,
+      "norm": 8,
+      "sample": 382,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 63918,
+      "norm": 8,
+      "sample": 383,
+      "step_cap_reached": false,
+      "steps": 4
+    },
+    {
+      "mask_in_reduced_basis": 3419,
+      "norm": 8,
+      "sample": 384,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 14435,
+      "norm": 8,
+      "sample": 385,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 49584,
+      "norm": 8,
+      "sample": 386,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 63066,
+      "norm": 12,
+      "sample": 387,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 18910,
+      "norm": 10,
+      "sample": 388,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 48869,
+      "norm": 18,
+      "sample": 389,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 29040,
+      "norm": 10,
+      "sample": 390,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 17229,
+      "norm": 10,
+      "sample": 391,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 63887,
+      "norm": 16,
+      "sample": 392,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 11221,
+      "norm": 6,
+      "sample": 393,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 50512,
+      "norm": 10,
+      "sample": 394,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 13904,
+      "norm": 10,
+      "sample": 395,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 15168,
+      "norm": 10,
+      "sample": 396,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 46298,
+      "norm": 8,
+      "sample": 397,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 39873,
+      "norm": 10,
+      "sample": 398,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 32523,
+      "norm": 16,
+      "sample": 399,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 11907,
+      "norm": 10,
+      "sample": 400,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 26463,
+      "norm": 10,
+      "sample": 401,
+      "step_cap_reached": false,
+      "steps": 4
+    },
+    {
+      "mask_in_reduced_basis": 56879,
+      "norm": 12,
+      "sample": 402,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 43930,
+      "norm": 10,
+      "sample": 403,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 38300,
+      "norm": 14,
+      "sample": 404,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 24776,
+      "norm": 12,
+      "sample": 405,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 44433,
+      "norm": 12,
+      "sample": 406,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 57693,
+      "norm": 16,
+      "sample": 407,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 8658,
+      "norm": 6,
+      "sample": 408,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 32140,
+      "norm": 12,
+      "sample": 409,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 56650,
+      "norm": 8,
+      "sample": 410,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 35542,
+      "norm": 12,
+      "sample": 411,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 19160,
+      "norm": 10,
+      "sample": 412,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 39930,
+      "norm": 16,
+      "sample": 413,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 26264,
+      "norm": 10,
+      "sample": 414,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 62222,
+      "norm": 16,
+      "sample": 415,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 7381,
+      "norm": 10,
+      "sample": 416,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 5241,
+      "norm": 8,
+      "sample": 417,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 29747,
+      "norm": 10,
+      "sample": 418,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 6402,
+      "norm": 8,
+      "sample": 419,
+      "step_cap_reached": false,
+      "steps": 0
+    },
+    {
+      "mask_in_reduced_basis": 19691,
+      "norm": 10,
+      "sample": 420,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 35397,
+      "norm": 8,
+      "sample": 421,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 60753,
+      "norm": 10,
+      "sample": 422,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 63749,
+      "norm": 10,
+      "sample": 423,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 21379,
+      "norm": 10,
+      "sample": 424,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 53136,
+      "norm": 14,
+      "sample": 425,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 30801,
+      "norm": 10,
+      "sample": 426,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 8285,
+      "norm": 6,
+      "sample": 427,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 11901,
+      "norm": 8,
+      "sample": 428,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 29334,
+      "norm": 12,
+      "sample": 429,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 61792,
+      "norm": 12,
+      "sample": 430,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 50117,
+      "norm": 8,
+      "sample": 431,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 53826,
+      "norm": 12,
+      "sample": 432,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 57398,
+      "norm": 10,
+      "sample": 433,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 31583,
+      "norm": 14,
+      "sample": 434,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 65531,
+      "norm": 18,
+      "sample": 435,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 971,
+      "norm": 10,
+      "sample": 436,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 6413,
+      "norm": 8,
+      "sample": 437,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 20928,
+      "norm": 8,
+      "sample": 438,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 53890,
+      "norm": 14,
+      "sample": 439,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 4735,
+      "norm": 8,
+      "sample": 440,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 37417,
+      "norm": 8,
+      "sample": 441,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 45761,
+      "norm": 10,
+      "sample": 442,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 15071,
+      "norm": 10,
+      "sample": 443,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 48962,
+      "norm": 12,
+      "sample": 444,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 60495,
+      "norm": 10,
+      "sample": 445,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 16663,
+      "norm": 8,
+      "sample": 446,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 22098,
+      "norm": 12,
+      "sample": 447,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 11766,
+      "norm": 12,
+      "sample": 448,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 11169,
+      "norm": 6,
+      "sample": 449,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 52676,
+      "norm": 12,
+      "sample": 450,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 55383,
+      "norm": 8,
+      "sample": 451,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 59673,
+      "norm": 10,
+      "sample": 452,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 57856,
+      "norm": 10,
+      "sample": 453,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 36993,
+      "norm": 6,
+      "sample": 454,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 11990,
+      "norm": 16,
+      "sample": 455,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 25127,
+      "norm": 14,
+      "sample": 456,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 40745,
+      "norm": 14,
+      "sample": 457,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 29041,
+      "norm": 12,
+      "sample": 458,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 13851,
+      "norm": 14,
+      "sample": 459,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 43455,
+      "norm": 10,
+      "sample": 460,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 19404,
+      "norm": 12,
+      "sample": 461,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 13332,
+      "norm": 8,
+      "sample": 462,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 32580,
+      "norm": 14,
+      "sample": 463,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 3140,
+      "norm": 6,
+      "sample": 464,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 36112,
+      "norm": 8,
+      "sample": 465,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 45665,
+      "norm": 12,
+      "sample": 466,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 12642,
+      "norm": 8,
+      "sample": 467,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 382,
+      "norm": 10,
+      "sample": 468,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 55995,
+      "norm": 10,
+      "sample": 469,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 34885,
+      "norm": 6,
+      "sample": 470,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 4646,
+      "norm": 10,
+      "sample": 471,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 65285,
+      "norm": 18,
+      "sample": 472,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 33371,
+      "norm": 10,
+      "sample": 473,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 47399,
+      "norm": 8,
+      "sample": 474,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 57366,
+      "norm": 8,
+      "sample": 475,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 9560,
+      "norm": 8,
+      "sample": 476,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 50857,
+      "norm": 12,
+      "sample": 477,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 37789,
+      "norm": 12,
+      "sample": 478,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 46985,
+      "norm": 12,
+      "sample": 479,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 12313,
+      "norm": 8,
+      "sample": 480,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 14607,
+      "norm": 10,
+      "sample": 481,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 19874,
+      "norm": 10,
+      "sample": 482,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 6069,
+      "norm": 12,
+      "sample": 483,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 10884,
+      "norm": 10,
+      "sample": 484,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 14672,
+      "norm": 10,
+      "sample": 485,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 9630,
+      "norm": 8,
+      "sample": 486,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 41986,
+      "norm": 8,
+      "sample": 487,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 13684,
+      "norm": 12,
+      "sample": 488,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 29779,
+      "norm": 10,
+      "sample": 489,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 35629,
+      "norm": 10,
+      "sample": 490,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 12401,
+      "norm": 8,
+      "sample": 491,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 14154,
+      "norm": 12,
+      "sample": 492,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 55225,
+      "norm": 12,
+      "sample": 493,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 64788,
+      "norm": 14,
+      "sample": 494,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 57644,
+      "norm": 8,
+      "sample": 495,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 47676,
+      "norm": 10,
+      "sample": 496,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 45977,
+      "norm": 12,
+      "sample": 497,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 58167,
+      "norm": 14,
+      "sample": 498,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 45710,
+      "norm": 12,
+      "sample": 499,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 23280,
+      "norm": 10,
+      "sample": 500,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 46186,
+      "norm": 14,
+      "sample": 501,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 29881,
+      "norm": 12,
+      "sample": 502,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 43275,
+      "norm": 10,
+      "sample": 503,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 32541,
+      "norm": 16,
+      "sample": 504,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 8451,
+      "norm": 6,
+      "sample": 505,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 15856,
+      "norm": 12,
+      "sample": 506,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 26819,
+      "norm": 12,
+      "sample": 507,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 55612,
+      "norm": 10,
+      "sample": 508,
+      "step_cap_reached": false,
+      "steps": 2
+    },
+    {
+      "mask_in_reduced_basis": 33430,
+      "norm": 14,
+      "sample": 509,
+      "step_cap_reached": false,
+      "steps": 1
+    },
+    {
+      "mask_in_reduced_basis": 12787,
+      "norm": 8,
+      "sample": 510,
+      "step_cap_reached": false,
+      "steps": 3
+    },
+    {
+      "mask_in_reduced_basis": 28977,
+      "norm": 10,
+      "sample": 511,
+      "step_cap_reached": false,
+      "steps": 1
+    }
+  ],
+  "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+  "worker_sha256": "7c07adf975ec05510dcd92f411dad4d9db3d93a626c325fffe1defe11b852fc6"
+}

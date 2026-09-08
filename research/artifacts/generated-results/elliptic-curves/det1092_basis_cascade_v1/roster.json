@@ -1,0 +1,34 @@
+{
+  "arms": [
+    {
+      "arm_id": "original",
+      "fixture_sha256": "d588599f3341e1736db5f58f6a6ca23d4e22d5b1b68a0f1e2a654854da85ab73",
+      "orbits_sha256": "6eabef60743153bad58de5cdc0c49777036991282a362d26ab286722986ae40f",
+      "protocol_sha256": "769f57f8809cd6e230034e99ecbda222a94f856534d253847c68668fb08b74a4",
+      "transform_determinant": 1
+    },
+    {
+      "arm_id": "recovered-P14",
+      "fixture_sha256": "a846c62d5afca32c2b9afe20267aacba39bcbc903f0ddcd764cab37cd07c439c",
+      "orbits_sha256": "29837e527bb96d6c869fda2a17e9d6020eea3b398df6aa6943144619af1a1a26",
+      "protocol_sha256": "5e1e16af3df528163f7901a62dc697083e6801d4bebaa29f19b7e6954b4f4649",
+      "transform_determinant": 1
+    },
+    {
+      "arm_id": "recovered-P11",
+      "fixture_sha256": "83ad0ec624181946b4334fcff384f5ca162aca94a3cf2da252f86fec40a6c264",
+      "orbits_sha256": "9a91f9ed702a33dcf2f8a323153361922787b3b88289b6da4cc08cce512f8d9e",
+      "protocol_sha256": "a2638ca095b4d9991fb66e2eebe21bdd6943bc8909c5fd550cd3476115178f2b",
+      "transform_determinant": 1
+    },
+    {
+      "arm_id": "random-unimodular",
+      "fixture_sha256": "9fc919e37099e98abb33abff7f85358cdc83cc4326a0b665d4382fe68e08e432",
+      "orbits_sha256": "681f416ac1fdaf8e4078fca6d6dc655b0fd76412367cd2217f1135a53ab5154f",
+      "protocol_sha256": "8124d3c938692dcf3d712f376a44019d7a4c7204c69523310c4878640ec8b00f",
+      "transform_determinant": 1
+    }
+  ],
+  "frozen_utc": "2026-09-08T17:10:06.295762+00:00",
+  "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b"
+}

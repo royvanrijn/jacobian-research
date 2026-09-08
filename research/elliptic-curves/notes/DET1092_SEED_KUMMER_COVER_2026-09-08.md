@@ -436,6 +436,13 @@ another saturation certificate. Zero
 syndrome proves neither membership in the rational span nor nonexistence
 of a seed.
 
+**Subsequent verified distinction.** The
+[surface Brauer gate](DET1092_BRAUER_SECTION_AND_LOCAL_GATE_2026-09-08.md)
+proves that every normalized2-primary class on the original K3 surface is
+zero on the entire local elliptic fibre at each of these places. The joint
+compatibility character is therefore not an unramified surface Brauer
+evaluation. Its Kummer recognition proof remains valid.
+
 ### Independent finite-ring proof
 
 **Established literature.** Odd-cubic2-descent identifies point classes
@@ -516,8 +523,11 @@ rational point. The copied-abscissa continuation above fails precisely at
 good-prime ramification on every control and at12 geometric good fibres
 generically. Multiplying by inherited classes cannot fix it.
 
-**Unresolved, not a claimed theorem or prediction.** No oracle-free parameter
-selector or rational seed producer has been obtained. The RR-Jacobian class
+**Unresolved for this historical-class route, not a prediction.** It has not
+produced an oracle-free selector or seed producer. The separate
+[conic progression](DET1092_CONIC_SEED_PROGRESSION_2026-09-08.md) now supplies
+one on a different explicit infinite subfamily, but misses302 and the
+eight controls. The RR-Jacobian class
 `[P_unlock-P0]` is accessed here through its marked elliptic incidence point,
 not through a nonexistent linear map from that Jacobian to the elliptic
 curve. The seed's elliptic Kummer class is rational and has zero Sha image;

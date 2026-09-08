@@ -1,0 +1,1059 @@
+{
+  "algebraic_Brauer_quotient": "ZERO_BY_FULL_RATIONAL_TORSION_FREE_PICARD19",
+  "all_generic_sections": "EVERY_NORMALIZED_SURFACE_BRAUER_CLASS_RESTRICTS_TO_ZERO",
+  "boundary": "This neither computes Br(X) nor excludes all transcendental Brauer detection. A nonzero evaluation on a rational302 point would require at least two primes outside the declared footprint, both good for E302, by global reciprocity. The five-place compatibility character is not such an unramified surface Brauer evaluation. No new point or Selmer class is constructed.",
+  "case_place_pairs": 189,
+  "cases": [
+    {
+      "index": 0,
+      "normalized_surface_Brauer_2primary_evaluations": "ZERO_ON_THE_WHOLE_LOCAL_ELLIPTIC_FIBRE_AT_ALL_LISTED_PLACES",
+      "parameter": "-5901745438112120947494214699000/931606906418246849332694053831643",
+      "places": [
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 2
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 3
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 5
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 7
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 11
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 13
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 19
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 23
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 29
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 37
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 41
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 73
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 131
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 167
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 7547
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 632881
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 966509
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 18145679437533309132469
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 767028866604834801397681553
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 30580600452196904409276223329355584892025407195996968868775951126238056443210297
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": "infinity"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "normalized_surface_Brauer_2primary_evaluations": "ZERO_ON_THE_WHOLE_LOCAL_ELLIPTIC_FIBRE_AT_ALL_LISTED_PLACES",
+      "parameter": "26317742566535649550305161948000/178852946241379577155380090934781",
+      "places": [
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 2
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 3
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 5
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 7
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 11
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 13
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 19
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 23
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 29
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 37
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 41
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 73
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 131
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 167
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 7547
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 632881
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 966509
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 18145679437533309132469
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 767028866604834801397681553
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 30580600452196904409276223329355584892025407195996968868775951126238056443210297
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": "infinity"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "normalized_surface_Brauer_2primary_evaluations": "ZERO_ON_THE_WHOLE_LOCAL_ELLIPTIC_FIBRE_AT_ALL_LISTED_PLACES",
+      "parameter": "5958632989539102572597501243000/253428619923509450078042313346781",
+      "places": [
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 2
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 3
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 5
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 7
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 11
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 13
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 19
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 23
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 29
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 37
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 41
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 73
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 131
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 167
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 7547
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 632881
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 966509
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 18145679437533309132469
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 767028866604834801397681553
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 30580600452196904409276223329355584892025407195996968868775951126238056443210297
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": "infinity"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "normalized_surface_Brauer_2primary_evaluations": "ZERO_ON_THE_WHOLE_LOCAL_ELLIPTIC_FIBRE_AT_ALL_LISTED_PLACES",
+      "parameter": "743007519072799890054397264000/134587824977161660368519739313081",
+      "places": [
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 2
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 3
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 5
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 7
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 11
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 13
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 19
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 23
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 29
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 37
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 41
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 73
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 131
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 167
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 7547
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 632881
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 966509
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 18145679437533309132469
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 767028866604834801397681553
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 30580600452196904409276223329355584892025407195996968868775951126238056443210297
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": "infinity"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "normalized_surface_Brauer_2primary_evaluations": "ZERO_ON_THE_WHOLE_LOCAL_ELLIPTIC_FIBRE_AT_ALL_LISTED_PLACES",
+      "parameter": "-3963398878651213340856151410000/268094686889278445242796566904059",
+      "places": [
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 2
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 3
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 5
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 7
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 11
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 13
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 19
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 23
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 29
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 37
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 41
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 73
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 131
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 167
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 7547
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 632881
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 966509
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 18145679437533309132469
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 767028866604834801397681553
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 30580600452196904409276223329355584892025407195996968868775951126238056443210297
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": "infinity"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "normalized_surface_Brauer_2primary_evaluations": "ZERO_ON_THE_WHOLE_LOCAL_ELLIPTIC_FIBRE_AT_ALL_LISTED_PLACES",
+      "parameter": "42435391124559757530009283834000/491977775870158139083888104825513",
+      "places": [
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 2
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 3
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 5
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 7
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 11
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 13
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 19
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 23
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 29
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 37
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 41
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 73
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 131
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 167
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 7547
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 632881
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 966509
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 18145679437533309132469
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 767028866604834801397681553
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 30580600452196904409276223329355584892025407195996968868775951126238056443210297
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": "infinity"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "normalized_surface_Brauer_2primary_evaluations": "ZERO_ON_THE_WHOLE_LOCAL_ELLIPTIC_FIBRE_AT_ALL_LISTED_PLACES",
+      "parameter": "-34225538950593317139889263227000/158982883803730567934503511138631",
+      "places": [
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 2
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 3
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 5
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 7
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 11
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 13
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 19
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 23
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 29
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 37
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 41
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 73
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 131
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 167
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 7547
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 632881
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 966509
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 18145679437533309132469
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 767028866604834801397681553
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 30580600452196904409276223329355584892025407195996968868775951126238056443210297
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": "infinity"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "normalized_surface_Brauer_2primary_evaluations": "ZERO_ON_THE_WHOLE_LOCAL_ELLIPTIC_FIBRE_AT_ALL_LISTED_PLACES",
+      "parameter": "-27940458691465689212892589858000/1629541600531965695875572674642247",
+      "places": [
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 2
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 3
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 5
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 7
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 11
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 13
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 19
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 23
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 29
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 37
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 41
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 73
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 131
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 167
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 7547
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 632881
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 966509
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 18145679437533309132469
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 767028866604834801397681553
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 30580600452196904409276223329355584892025407195996968868775951126238056443210297
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": "infinity"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "normalized_surface_Brauer_2primary_evaluations": "ZERO_ON_THE_WHOLE_LOCAL_ELLIPTIC_FIBRE_AT_ALL_LISTED_PLACES",
+      "parameter": "0",
+      "places": [
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 2
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 3
+        },
+        {
+          "full_point_quotient_dimension": 0,
+          "generic_rank": 0,
+          "place": 5
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 7
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 11
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 13
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 19
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 23
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 29
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 37
+        },
+        {
+          "full_point_quotient_dimension": 2,
+          "generic_rank": 2,
+          "place": 41
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 73
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 131
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 167
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 7547
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 632881
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 966509
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 18145679437533309132469
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 767028866604834801397681553
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": 30580600452196904409276223329355584892025407195996968868775951126238056443210297
+        },
+        {
+          "full_point_quotient_dimension": 1,
+          "generic_rank": 1,
+          "place": "infinity"
+        }
+      ]
+    }
+  ],
+  "classification": "new exact application of Brauer evaluation to independently verified geometry and local images",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_parent_geometric_picard19_v1.json": "574429256daeee72ec2dcb5fe0c39df06e8fc122015da754f5db3ce4f271495c",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_brauer_section_gate_v3/frame.json": "24641af4ffb6d10870f4d29438c290c7da72f819280dd999c9ba396aff45da25",
+    "artifacts/generated-results/elliptic-curves/det1092_brauer_section_gate_v3/protocol.json": "9f550eb28e60a189346a6b0bf4d05d38335a3479d01d851fc3c1a9fb54868379",
+    "artifacts/generated-results/elliptic-curves/det1092_brauer_section_gate_v3/rational-intersections.json": "f186b74dc569d8b36a6f43cc38e398e913c2c41cebd7da54117b5201fc98da83",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-00-generic.json": "eaa48712a1e065845262057f18236befc8b2250ce047b54337156b1520744747",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-00-input.json": "ffa02e968e74c2611ea1d989f02037ae971f7cb1f022dabe25d0713fb3f9ac05",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-00-replay.json": "9dce9c247eb0939c4ba7dec25e57e6dbfd191accf3d25bb4e94b7a457aa36fe1",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-01-generic.json": "5805fc933de30a97e239b0b08f2bf401396f4312208172f5dabed4f64443ef3c",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-01-input.json": "bb7c671474c33b310de1954cb1ad946a71c888f76c47793b94eb195a505f90eb",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-01-replay.json": "5113525c0547821fb9fcd5c1814ff2f2ec782872f7d61e43c80242d3b1556918",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-02-generic.json": "b5d1bae0c936621c2f44e2898bc6d9b01aaafc181f402d1b50d2e26d4d5f74d7",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-02-input.json": "37d24244702696c979dc02ed22d280a085248785de70a236e43fe2835bc46e93",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-02-replay.json": "7ec23a82b851386807de692ff643a606f51d2e353ce4aaa1434424b02b9454a8",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-03-generic.json": "795371e26bcf23269f0101bc3d9c1d008a67be95c1cebb2ecb83fd880962d7b1",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-03-input.json": "853c69531ea05211e9a8bcd7f70e9210abb0fba58cb06e04e35b5b88bb9c32e4",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-03-replay.json": "c31cf1c2469acb6b09f157e289cfdd04522576b743ff14acc723b97178ac404c",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-04-generic.json": "4cf591c250e38b23ac334f6a667341fdcdafb42ff554f93d6f906ec0db3453aa",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-04-input.json": "53400db9ca2d815b9be60a67b6889b45c5d7336a1be4d4a015bd3e331b4a4952",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-04-replay.json": "1d97b641b6ba74bb409c96a62c8bc4c155bbef113a32e1ca843b1b07d54ea6c3",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-05-generic.json": "3f843b57361836916e0c1bd54d82319288e3c75219499b9c82ddc49cc712d6af",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-05-input.json": "17839f00729597ed434f9f97673267d989cbd5e74cafa3c0f135392911f30c58",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-05-replay.json": "a631173f7c1736f7f62d8cec4a1865b05497da54e7899b092009e929d4cc0b28",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-06-generic.json": "a436c3a22e16e48f20b9a920eca322c7d0f81cd7e91d9c5db7e583396bc286fd",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-06-input.json": "b21e5d47d5c90369865f5f9affd4f7af1b77345d1f8660f13c95da78dadf4da6",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-06-replay.json": "9f7d59cc5386e2dd24fe7d1c96716c2e8c3c398c3d1baf6bb568557750a94bef",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-07-generic.json": "189ae5821d23c8dc000b8cbe3547c576d6f099eb529dd59867963515ef036cce",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-07-input.json": "04797086baa7909e01be9e8d2e14bfffeb7ecb09d1af13770bd54e7761d6bccc",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-07-replay.json": "3d7a6c96dc80e16ba0cf4ba9baa13a5237ffd901dae1d58edcc2587db605583f",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-08-generic.json": "ab45300ceaf1259bbeb5fc50b08e490b0e33127357326bdff7ec8a48f338eaeb",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-08-input.json": "fdb1018119f6c638972ede8b1e410742a84e7ddc0e039de50326fbd9819993ff",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-08-replay.json": "b32ab622422f41aba67def4d164904aec59856e3c941f71c0bba15e0158efbc3",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/protocol.json": "e94acefccffec1a9b52b6e8ed11fb2b56dd78922ca281a37af229a38d667bf00",
+    "elliptic-curves/cas/verify_det1092_brauer_section_gate.sage": "5b6a2b39735dddd7acf20de22d1fb766505b484d1c96835a0c3a909b12ddc94d",
+    "elliptic-curves/cas/verify_det1092_seed_local_code_v2.sage": "5ecf27ceb5b666adab51955322bda3591d31dfe7b89857cd55830857607c87d9"
+  },
+  "rational_tree_intersections": 17,
+  "section_pairs_checked": 153,
+  "status": "PASS_RATIONAL_SECTION_CONNECTIVITY_AND_BRAUER_2PRIMARY_LOCAL_BLINDNESS",
+  "theorem": "Normalize alpha in Br(X) by its constant restriction to O. The connected rational-intersection tree kills its restriction to every generic basis section. Brauer evaluation on the smooth generic elliptic fibre is a group homomorphism, hence kills every generic section. At the189 certified pairs, generic sections surject onto E(Q_v)/2, and therefore modulo every2^n. Any normalized2-primary Brauer evaluation is consequently zero on all local points there.",
+  "tree_word_determinant": 1
+}

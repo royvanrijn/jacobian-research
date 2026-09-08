@@ -1,0 +1,26 @@
+{
+  "classification": "new explicit algebraic deduction",
+  "coefficient_residuals_zero": true,
+  "definitions": {
+    "L": "mX+n",
+    "Nnum": "w*(X-u)+d*m*v^2",
+    "c": "m^2-a-2u",
+    "f": "L^2+(X-c)*g",
+    "g": "(X-u)^2-v^2*d",
+    "rnum": "w^2-v^2*d*(a+2u)",
+    "w": "mu+n"
+  },
+  "interpretation": "For Q=(u+v*sqrt(d),w+m*v*sqrt(d)), trace Z=Q+sigma(Q) and R=Q-sigma(Q), delta_Ed(R)=delta_E(Z) in the naturally identified cubic norm kernels.",
+  "kummer_square_identity": "d*(r-theta)=(c-theta)*(Nnum(theta)/(v*L(theta)))^2",
+  "patch": "char(K)!=2, d*v!=0, smooth f, and (c-theta),L(theta),Nnum(theta) units",
+  "polynomial_identity": "d*v^2*f-Nnum^2=g*(d*v^2*X-rnum)",
+  "r": "rnum/(d*v^2)",
+  "variables": [
+    "a",
+    "m",
+    "u",
+    "v",
+    "d",
+    "n"
+  ]
+}

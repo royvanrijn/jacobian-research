@@ -1,0 +1,71 @@
+{
+  "postrun_source_bindings": {
+    "research/artifacts/generated-results/elliptic-curves/det1092_blind_mw16_v1/postrun_sources/diagnose.py": "1ef71f7e67481421a9f1f6cbac62f06183d4442ce8f870d86de0483fc749c4f3",
+    "research/artifacts/generated-results/elliptic-curves/det1092_blind_mw16_v1/postrun_sources/evaluate.py": "7b0b907a71912d3e8fc8ad867b182116fbe9aeab458caa316af6b95c57ac3191",
+    "research/artifacts/generated-results/elliptic-curves/det1092_blind_mw16_v1/postrun_sources/package.py": "f3046f0f33a2548a16214256648029e4b675b09ab75702235ca62c0cceda8094",
+    "research/artifacts/generated-results/elliptic-curves/det1092_blind_mw16_v1/postrun_sources/replay.py": "e3463ba8fa466e831dd0d4dc5ab4324ec6df86343abd347536b7addde3e4238f",
+    "research/artifacts/generated-results/elliptic-curves/det1092_blind_mw16_v1/postrun_sources/report.py": "b946876407b30bfab0f0e966534510d5eb27cd8b469dbcf17db9b47b0332ab03",
+    "research/artifacts/generated-results/elliptic-curves/det1092_blind_mw16_v1/postrun_sources/run.py": "95bdb36b93ebe563333bbbbfe3f679d7f332171625d25d947a8d757888bf4522"
+  },
+  "software": {
+    "Python": "3.14.7 | packaged by conda-forge | (main, Aug 19 2026, 15:32:49) [GCC 15.3.0]",
+    "SageMath": "10.9",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39"
+  },
+  "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+  "verification_runs": [
+    {
+      "record": "research/artifacts/local/elliptic-curves/det1092_blind_mw16_v1/verification/compact_replay_run.json",
+      "returncode": 0,
+      "sha256": "99e9c1a5ccbd18e86157dfbbe6eced7714f5d7f850bbed2d6fd9f174ce53a4db",
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "wall_cap_seconds": 300,
+      "wall_seconds": 101.12526612204965
+    },
+    {
+      "record": "research/artifacts/local/elliptic-curves/det1092_blind_mw16_v1/verification/diagnostic_run.json",
+      "returncode": 0,
+      "sha256": "4e0e2029a5205b4c83c5b49fe04d355f07feca72bbca62260480eaa577b552c0",
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "wall_cap_seconds": 120,
+      "wall_seconds": 0.8664569220272824
+    },
+    {
+      "record": "research/artifacts/local/elliptic-curves/det1092_blind_mw16_v1/verification/evaluation_run.json",
+      "returncode": 0,
+      "sha256": "b7084e452e15e8c32b4e86bba92757a5406f2d30c95066a69535a160dea45d80",
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "wall_cap_seconds": 120,
+      "wall_seconds": 11.699504903052002
+    },
+    {
+      "record": "research/artifacts/local/elliptic-curves/det1092_blind_mw16_v1/verification/replay_run.json",
+      "returncode": -15,
+      "sha256": "5af9b0037471fe9fd3e67ed6e7785cf073ab724802e99fc6ab3343dff2d70ce2",
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "wall_cap_seconds": 300,
+      "wall_seconds": 196.6745326910168
+    },
+    {
+      "record": "research/artifacts/local/elliptic-curves/det1092_blind_mw16_v1/verification/replay_v2_run.json",
+      "returncode": 0,
+      "sha256": "3b06a14d7767627845cd94abd84d45dc96e4d32d0ede54feb3213dbb9d31243c",
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "wall_cap_seconds": 300,
+      "wall_seconds": 96.71550311194733
+    }
+  ],
+  "verification_source_and_log_bindings": {
+    "research/artifacts/local/elliptic-curves/det1092_blind_mw16_v1/verification/compact_replay.log": "f9ea42704cc4f24bcfb4bb7a230f91c43423be0f835b349562b4b2e4aa2cacfa",
+    "research/artifacts/local/elliptic-curves/det1092_blind_mw16_v1/verification/compact_replay_run.json": "99e9c1a5ccbd18e86157dfbbe6eced7714f5d7f850bbed2d6fd9f174ce53a4db",
+    "research/artifacts/local/elliptic-curves/det1092_blind_mw16_v1/verification/diagnostic.log": "1aada67765290797d6d810739ece249283b20aab4f5a8013fad888acacce3f7f",
+    "research/artifacts/local/elliptic-curves/det1092_blind_mw16_v1/verification/diagnostic_run.json": "4e0e2029a5205b4c83c5b49fe04d355f07feca72bbca62260480eaa577b552c0",
+    "research/artifacts/local/elliptic-curves/det1092_blind_mw16_v1/verification/evaluation.log": "ac277e6dde49d2fb874034253f145617b1ee83f1d441e34629d862451942cbeb",
+    "research/artifacts/local/elliptic-curves/det1092_blind_mw16_v1/verification/evaluation_run.json": "b7084e452e15e8c32b4e86bba92757a5406f2d30c95066a69535a160dea45d80",
+    "research/artifacts/local/elliptic-curves/det1092_blind_mw16_v1/verification/replay.log": "b3f11ddcef012c0bf40d1bb040414863fe6279c7b01869adadb86782114cffd7",
+    "research/artifacts/local/elliptic-curves/det1092_blind_mw16_v1/verification/replay_before_cost_fix.py": "37099a96d18341257c3f64a7cccab00871d3ee2cc3fe2ec3d3bcdabb2638640a",
+    "research/artifacts/local/elliptic-curves/det1092_blind_mw16_v1/verification/replay_run.json": "5af9b0037471fe9fd3e67ed6e7785cf073ab724802e99fc6ab3343dff2d70ce2",
+    "research/artifacts/local/elliptic-curves/det1092_blind_mw16_v1/verification/replay_v2.log": "e2a928e4bbe44a147e62c1ecfcfcc7cd7f57685c7326881fe412a25d9f23583d",
+    "research/artifacts/local/elliptic-curves/det1092_blind_mw16_v1/verification/replay_v2_run.json": "3b06a14d7767627845cd94abd84d45dc96e4d32d0ede54feb3213dbb9d31243c"
+  }
+}

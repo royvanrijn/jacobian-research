@@ -1,0 +1,215 @@
+{
+  "arms": [
+    {
+      "arm_id": "arm-01",
+      "compact_certificate": "arms/arm-01/certificate.json",
+      "compact_sha256": "db449aab7629666830ff8b0039e2212eef03bbe30df8f5fd6b2aa002165cd657",
+      "raw_files": {
+        "runs/arm-01/accounting.json": "b98dd382cb365eac3f0b4b17eab2d633440369e2034ff1f5c897e1a65ad62e4a",
+        "runs/arm-01/events.jsonl": "044d9fedc3d5644ed4d7880811304e050a903dbe826494148d8dc43a9003fb6e",
+        "runs/arm-01/result.json": "631a99c4c891a2b07f0750818e5f48e1e3f0c8cb0b700dda9fbea3def74a2d78",
+        "runs/arm-01/selection.json": "59e229f41888fe465f1fd9e3a31a4f76420c4ede0260c48389a859500cdf3220",
+        "runs/arm-01/stdout.txt": "04fd71b0652527f22112ae213aca6b4897010acbc3cc7c27ed1a554ca22b3140"
+      }
+    },
+    {
+      "arm_id": "arm-02",
+      "compact_certificate": "arms/arm-02/certificate.json",
+      "compact_sha256": "b30088aad8b36c613b98e321f5069684954d9b2d670845d6c1333c053bb2743e",
+      "raw_files": {
+        "runs/arm-02/accounting.json": "fabda7d60f657220bece99484b92dcad51d4d964285def6a054483821ead36e2",
+        "runs/arm-02/events.jsonl": "fb2048f9bb3c5c54b1c97402181746491f27459e3a7dd02682d654a9a7e804c7",
+        "runs/arm-02/result.json": "2cc1c408edcc127bb4fb51bec39056948416e078104193dd7755c2ae748e0447",
+        "runs/arm-02/selection.json": "689cb22a24f7b3050a921e89a5d86073b065181c73ebf7fb653b38459c119302",
+        "runs/arm-02/stdout.txt": "5727141bcb4c8cc5003b4f9f6d825d3ee55868d7af96ce9899f411e025d186e6"
+      }
+    },
+    {
+      "arm_id": "arm-03",
+      "compact_certificate": "arms/arm-03/certificate.json",
+      "compact_sha256": "5e3ffd1bc7878ef13666aeda7e2dbc8549edb3ab95a638a30c22e4a1f7826642",
+      "raw_files": {
+        "runs/arm-03/accounting.json": "6dab3f3690347eb886fc75e3a98ec043fca52233918a29ecb1ebb8e00c7eb0c5",
+        "runs/arm-03/events.jsonl": "b2ed1fe8805177ccff20716e093b91f254209de65ec25c61cb76436832c8a0c8",
+        "runs/arm-03/result.json": "d43b5765b4eda4713848418f2458f730ba1cb6610ab84306ffcfaee8ee78162b",
+        "runs/arm-03/selection.json": "8607645d9d4cc605920cf7946309e022b55e7f35680e45c230a008e6b6151587",
+        "runs/arm-03/stdout.txt": "32a17e79a85983adb2c4aa47f4668da34fdcbfa5db83024b14252a73a2325ca9"
+      }
+    },
+    {
+      "arm_id": "arm-04",
+      "compact_certificate": "arms/arm-04/certificate.json",
+      "compact_sha256": "649c3d276223fcd95b1b8faf64410110c958c93e9cc0960ddc7d29731c5f10a7",
+      "raw_files": {
+        "runs/arm-04/accounting.json": "8c47036c9d89a796b07ab273e59ec1807d1b43cf5b6fa3fb541a92ea445eee74",
+        "runs/arm-04/events.jsonl": "d5793bff068b8c7e08272456d96d550fb0be6d808bdb718ca1e384e11c31ea70",
+        "runs/arm-04/result.json": "666759831616c320f21f9c01131ec001073777b250924ae521407f80e6d431d1",
+        "runs/arm-04/selection.json": "5788714277bb4759396f1c8dcbc4ffe6fba7d9904dc50a5eb473fc496164b9d5",
+        "runs/arm-04/stdout.txt": "f8658202b9a33d1fb93d7a8cf398570431ea1287167a05f2718eff2d5d9b0b1c"
+      }
+    },
+    {
+      "arm_id": "arm-05",
+      "compact_certificate": "arms/arm-05/certificate.json",
+      "compact_sha256": "93429bcf77dcd61e8519f48be62c71dd09559ea89725dab73cecb14d9766dd76",
+      "raw_files": {
+        "runs/arm-05/accounting.json": "2a91f43962d6b899f988536887631634d1c1df03fde811791d7468a9eb4c5249",
+        "runs/arm-05/events.jsonl": "32dda2f88347eca769091ff6667df385171d2021326d0b37d59600af526aa25e",
+        "runs/arm-05/result.json": "afd73af867ea83c817359c0c6c437af4fedd6327d6418ace97b5bf8acec8b095",
+        "runs/arm-05/selection.json": "e3d5be9138bb04a2f37ab909c6bc7ef8239b9fb7c09087927857f40495d5aba6",
+        "runs/arm-05/stdout.txt": "e752b115f379b20cfe0af1d96e73933739f38fa7636cca87d48a44b4b4269442"
+      }
+    },
+    {
+      "arm_id": "arm-06",
+      "compact_certificate": "arms/arm-06/certificate.json",
+      "compact_sha256": "d4ce9e84b51f2a4e8c7a1af2e15fe12390a59cbe7d2be790951d2d729ca815ed",
+      "raw_files": {
+        "runs/arm-06/accounting.json": "ee7a80a2fa00799af081da8402dd07db08c16c5b7e69fa24b97e49608eae3c95",
+        "runs/arm-06/events.jsonl": "6f1a08f8c4bc3f0f9844b29f4d251e413d701ea80f6df633f1d6eca6f4271681",
+        "runs/arm-06/result.json": "ffc23236f2ca4741cd11a52bb52d2c98b8f33e67a4fe9dcf1159f3bd9129c238",
+        "runs/arm-06/selection.json": "adba1224c1385318d85e2c9b004327a86a5bc1d16c3bbd389bbd42a9caade289",
+        "runs/arm-06/stdout.txt": "5dba84527d7b17d8a934b6975be7782be60f52997501dfac97e6f039ee9c86ac"
+      }
+    },
+    {
+      "arm_id": "arm-07",
+      "compact_certificate": "arms/arm-07/certificate.json",
+      "compact_sha256": "a9d2e493bc755b0dffb6b502a960b47c5f3113989037c045778dd8426d4b6e2e",
+      "raw_files": {
+        "runs/arm-07/accounting.json": "330f94662bc76239686bea6b07ca08a6098836a74fd45c6bd5121b75481e1e5c",
+        "runs/arm-07/events.jsonl": "9217ca0d63843df8f22b6c342f1d05c6b16a943ec123a36c62c5791748b09e62",
+        "runs/arm-07/result.json": "5bc78cd4ba3427e486922f8f04ee4df1470f26fe027600bf39dadb3e753e9728",
+        "runs/arm-07/selection.json": "e08fa6cdd32effe6f3d0320f5c1b76ecf3ce458e14e3558c4d671f25c39df7b3",
+        "runs/arm-07/stdout.txt": "0d7dcfc0ffbd1f5cb5efd23b44acda6dd7e21ad578bcb6167a69215cf2c23302"
+      }
+    },
+    {
+      "arm_id": "arm-08",
+      "compact_certificate": "arms/arm-08/certificate.json",
+      "compact_sha256": "938857e510bfbdeb8ffed6264e05824fbf2ca9c36a412a7df0f3c209cc434b5b",
+      "raw_files": {
+        "runs/arm-08/accounting.json": "c8e3cf4d32ca672637c499b7c6b7c2b3fbe1ae9fb7f2ee2637f4f06510a182e0",
+        "runs/arm-08/events.jsonl": "eafa0e7bcfc7d7fbd04cd941038860962d38c51292ffd8f73e3a2e147dff2ed2",
+        "runs/arm-08/result.json": "ba00180ab78862056f921a8bddac16bd160206323e266abe83fed98b0fc75bd9",
+        "runs/arm-08/selection.json": "7f1100621cac7437f747c2fdbe2d64dc23f2daac6be38b88001046ac86ec9bed",
+        "runs/arm-08/stdout.txt": "8dcab2e549db17118cce356e51ba6ca203ec243e72a0d2b53a558453237c2a19"
+      }
+    },
+    {
+      "arm_id": "arm-09",
+      "compact_certificate": "arms/arm-09/certificate.json",
+      "compact_sha256": "d175214fb747e76f9ae243f693356cbabec610034b09abbd0e3f5871bf360524",
+      "raw_files": {
+        "runs/arm-09/accounting.json": "7c121a72bb558bf6e0aecc9ed124b47929d58f42067103bc9dd1b7a8e1fe60f1",
+        "runs/arm-09/events.jsonl": "08c46d754ac8a7352f0eb2ccdae06000d5c9baea02e5aa7cdddb7e9d104073d2",
+        "runs/arm-09/result.json": "8d5281fef95ccd9ebe63c1551e4d367765f2a30f907dc0e210a970db4c7d41f7",
+        "runs/arm-09/selection.json": "6b61d139b7dd455f15f25f5f2f6f1bd05f81a4f64dc2cdb794a646cddb123110",
+        "runs/arm-09/stdout.txt": "43fbaaeeb3d490dd9546ce8aa0a95900e65152b479e495362ee7bde59c8e6630"
+      }
+    },
+    {
+      "arm_id": "arm-10",
+      "compact_certificate": "arms/arm-10/certificate.json",
+      "compact_sha256": "3667aa47cff3e6e01352e416efacbfd42db3b6617405cf7752f5ec34ba57815f",
+      "raw_files": {
+        "runs/arm-10/accounting.json": "a2300c15832a791c250ae02f596d95c2ee44ef10479ff2872acf08c540d8b04d",
+        "runs/arm-10/events.jsonl": "27b2b82a4de2f3e9803edf5d0afc0ddb431fa0315dddc0d63592d9ffa2c4aea5",
+        "runs/arm-10/result.json": "09edf06e031017ae5ba5583fd816182a9cf5d6e9e072530a84f60ac3a88c8831",
+        "runs/arm-10/selection.json": "bf3e1b3e17a5ae3f7f578ed3fd6fa3f66f62ad32de418c8eb629f7616bf8dd19",
+        "runs/arm-10/stdout.txt": "91a7bc2571275f942dbeee60c3fcb249175a38cf0af660de91412739fe25eb36"
+      }
+    },
+    {
+      "arm_id": "arm-11",
+      "compact_certificate": "arms/arm-11/certificate.json",
+      "compact_sha256": "4ef29d0ba7bd58b9905c42c704f2f864aa2ce1fc38221deae06d8a880b337ea8",
+      "raw_files": {
+        "runs/arm-11/accounting.json": "20650c66bb4a60ddf9f76fc89a8b87c9ca576a9486ca1f48e5e43f7facbe9682",
+        "runs/arm-11/events.jsonl": "fad30194c45aa2ffcd02cfc77ba24091c30f84babdb7a77d5cae41e30d0542bc",
+        "runs/arm-11/result.json": "52518e8dec51e0728fa36426e44aaec2979eadeddc845d83b8172f80f99474ba",
+        "runs/arm-11/selection.json": "1602172165b94c09ad8ae9ee653318ec295249df67b4def1b72b18ae5e541052",
+        "runs/arm-11/stdout.txt": "95f451bea015e5a20adac1fcbea3476251a9eeee43f6486c05d47b166078ca27"
+      }
+    },
+    {
+      "arm_id": "arm-12",
+      "compact_certificate": "arms/arm-12/certificate.json",
+      "compact_sha256": "5f71b5ad0db5185878256f376755cfa3c93221dc8b449b8f8b9d9fcbfbb38bce",
+      "raw_files": {
+        "runs/arm-12/accounting.json": "f14ad4377ccf352bd4a73aa816a8dfbb1163a06161628028b6ed4024d6521bfc",
+        "runs/arm-12/events.jsonl": "e59322017af8026c4bf59aacc5ea5a4aa22e6b9d51e5f5ba595b219db64c2a99",
+        "runs/arm-12/result.json": "18c16ca802f1b0626503406614cdc90196c7370cc9071eea120e302ac64c1882",
+        "runs/arm-12/selection.json": "487261b9344825dc84fcf5ba209d1e3fbe13521480aa2c77c44546d61398864c",
+        "runs/arm-12/stdout.txt": "466e77cbdfde4411c16be32029e80812185e588641092695899574e2ce21a0f2"
+      }
+    },
+    {
+      "arm_id": "arm-13",
+      "compact_certificate": "arms/arm-13/certificate.json",
+      "compact_sha256": "5cdbe5aee088855b98a111dd4edb34cc1c4bf4555814c9ef3ecaae02979d71ae",
+      "raw_files": {
+        "runs/arm-13/accounting.json": "39ae0b020ce60a7f03cb63ed66ee5a096c29255505530d838865822228df2318",
+        "runs/arm-13/events.jsonl": "939f40ac5802a1a0bc121b1057f26df5abda07295d47f6ec0b714f6ae7171066",
+        "runs/arm-13/result.json": "2f0727e45e7e22e2bf6d9d014d0e3471365e844baa6c20fd61065617079134ec",
+        "runs/arm-13/selection.json": "aab8d59f1d54690030473a0dca3ef3edb5789086fca15e610e2f0f93e1839b72",
+        "runs/arm-13/stdout.txt": "527456d15cc9f2dd6fa627ba989d8a360d27dbbca5ea94ebbb5f198d50b956c9"
+      }
+    },
+    {
+      "arm_id": "arm-14",
+      "compact_certificate": "arms/arm-14/certificate.json",
+      "compact_sha256": "b7359b6f5d335f7641906f038541d3e117caec8209094072631de6be1c9b3f6f",
+      "raw_files": {
+        "runs/arm-14/accounting.json": "9c7063e0c3a4feab0cdb579f1fe36afdb5e239e59668ac455036109e0f76f839",
+        "runs/arm-14/events.jsonl": "3c494b44ebce46c12a9115e5c008f99a81e43a66d7d410c11e319457bc6aed7f",
+        "runs/arm-14/result.json": "95c2213f2353b68f0be3bdacad5a30f1aaa5a2fef91eecd285ddf540fafbf4a9",
+        "runs/arm-14/selection.json": "2802a837df3ccf32159fc15fc013d08d17fe735eebcda486965127bdac901a91",
+        "runs/arm-14/stdout.txt": "fc52b5630eda9fb4a1eef9e0c929a9df90205850af27bd0a467fe34cfe31004e"
+      }
+    },
+    {
+      "arm_id": "arm-15",
+      "compact_certificate": "arms/arm-15/certificate.json",
+      "compact_sha256": "f25775161349730b5f322fbcbf0811b174e3f18a100c328da9ae1e5a0de26ba9",
+      "raw_files": {
+        "runs/arm-15/accounting.json": "f36ae70f53ac06cc6cff15803d9761ab5dac7aeab8a3161b15ed7910cb9bc933",
+        "runs/arm-15/events.jsonl": "c778ad7f75c60b197491994673102a004a939ccb5b5e30bede4386b6b53277f3",
+        "runs/arm-15/result.json": "2e2bc1c7c9d83fc660b7cf5393e2d53ac4e47172114db888624f9da6da6e3d30",
+        "runs/arm-15/selection.json": "590d0ad48c7c50c847bffb135436945e0d3155900ec100d101027edab0406bdc",
+        "runs/arm-15/stdout.txt": "12876afa97b887d769eb3e375670e721b14e1c31cd0250b1befec4904b217e93"
+      }
+    },
+    {
+      "arm_id": "arm-16",
+      "compact_certificate": "arms/arm-16/certificate.json",
+      "compact_sha256": "5a36c2ac25faf3acde3ffb7549566c86a52049715a84daddcdd60dd4abdbbf36",
+      "raw_files": {
+        "runs/arm-16/accounting.json": "25dbf15b6e6572a0aa76b5fe004701ea6b4db49725093b26d6e3c00a3a743ea9",
+        "runs/arm-16/events.jsonl": "df9f9b5e2212ec03ee594000eb7254f8af55be28f7505de55a1be9f369fc23bf",
+        "runs/arm-16/result.json": "4f51af022cbd5d953f5f7e6897548ebe99bbeb2f9b46e012718b62e7b3b81e8d",
+        "runs/arm-16/selection.json": "0225f736387c25f5bdfcd4608a826ec8cdc35a09358f5b51d69a66b03db01279",
+        "runs/arm-16/stdout.txt": "e33d2798d92e5980418f26e9136e4882492fdaffc9ca5328494492f4164bb83b"
+      }
+    },
+    {
+      "arm_id": "arm-17",
+      "compact_certificate": "arms/arm-17/certificate.json",
+      "compact_sha256": "b7f4a3f47c8ff5beada792d4f9d54c2827680bf530fa43ebe82b196ca06a2aea",
+      "raw_files": {
+        "runs/arm-17/accounting.json": "523c987e0496f36b2b90d6b9c557804a2299481b6e49f6e7e26c28eae0b5f89a",
+        "runs/arm-17/events.jsonl": "7b2b4489650580e918d6ce1d3db2ce03bead787fa092323eb569ed29999c0be1",
+        "runs/arm-17/result.json": "886fbe0283549447c0d3088a635c3a25c8ad37c7253f28d4a3560d442f71652f",
+        "runs/arm-17/selection.json": "0791f9ae8239d26fa4fb694ce4cc4ffd0825bbe02212e37c6d8a91a6f6f288be",
+        "runs/arm-17/stdout.txt": "24dc512dbc0d93225fd45691f1044a045ee461f196f2292b00e9eac6908e63a5"
+      }
+    }
+  ],
+  "compact_reconstruction": "RR elimination from lines regenerates omitted expansions. Verify compact certificate digests with replay.py --compact. Full replay.py can still read the local originals.",
+  "packager_sha256": "f3046f0f33a2548a16214256648029e4b675b09ab75702235ca62c0cceda8094",
+  "primary_barrier_sha256": "2c41afcca936353f49ee4bbe285872cedd87fd4ef0d979e6bc23cb2c8f6a61cb",
+  "raw_bytes_preserved": true,
+  "raw_files_moved_without_editing": true,
+  "raw_root_relative_to_repository": "research/artifacts/local/elliptic-curves/det1092_blind_mw16_v1",
+  "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b"
+}

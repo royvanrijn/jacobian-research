@@ -1,0 +1,134 @@
+{
+  "schema": "curve302.geometric-picard19.v1",
+  "status": "PASS",
+  "sources": {
+    "elliptic-curves/cas/verify_curve302_parent_geometric_picard.sage": "7430c6782fbbb8ccff5f3f033dfc6270925cb931a74fe8871b9f01f32825a8d0",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "elliptic-curves/cas/load_curve302_recovered_parent.sage": "c4d57ab8ebeedfbc8b74c1838760dd4036d958985ed63ad2f52b2ce348d3173f"
+  },
+  "directly_verified_rational_divisor_rank": 19,
+  "reductions": [
+    {
+      "prime": 149,
+      "counts": [
+        {
+          "extension_degree": 1,
+          "surface_count": 24636,
+          "singular_fibres": 0,
+          "field_modulus": [
+            148,
+            1
+          ]
+        },
+        {
+          "extension_degree": 2,
+          "surface_count": 493345524,
+          "singular_fibres": 0,
+          "field_modulus": [
+            2,
+            145,
+            1
+          ]
+        }
+      ],
+      "residual_trace_1": -397,
+      "residual_trace_2": 39303,
+      "epsilon": -1,
+      "nonalgebraic_pair_trace": -248,
+      "full_H2_polynomial": [
+        "-645799798345023040261433389777932870788026444201",
+        "70802067887562996261264306595175379825145550434",
+        "-3579090156184181617404880889880358893125888217",
+        "109913913635029591454753960050140099006026288",
+        "-2267754372848431677798916812017371813133963",
+        "32637465109683532009123557442839601119414",
+        "-325088205790498587712054183541653638507",
+        "2060732031983382884476940697394855200",
+        "-5290134243178818478606911521835786",
+        "-33570473622839368041341691165164",
+        "330689878726822092634996091798",
+        "0",
+        "-14895269525103467980496198",
+        "68110237521676747163564",
+        "483447236916611928186",
+        "-8482646609933095200",
+        "60275181867561507",
+        "-272571974134614",
+        "853077043763",
+        "-1862397488",
+        "2731617",
+        "-2434",
+        "1"
+      ],
+      "geometric_reduction_Picard_rank": 20,
+      "Artin_Tate_discriminant_representative": -27300
+    },
+    {
+      "prime": 151,
+      "counts": [
+        {
+          "extension_degree": 1,
+          "surface_count": 25276,
+          "singular_fibres": 0,
+          "field_modulus": [
+            150,
+            1
+          ]
+        },
+        {
+          "extension_degree": 2,
+          "surface_count": 520355556,
+          "singular_fibres": 4,
+          "field_modulus": [
+            6,
+            149,
+            1
+          ]
+        }
+      ],
+      "residual_trace_1": -395,
+      "residual_trace_2": 36735,
+      "epsilon": -1,
+      "nonalgebraic_pair_trace": -244,
+      "full_H2_polynomial": [
+        "-865950047645632985309145585586733320274671450801",
+        "93959055211407219229631427513774757000111274474",
+        "-4706076659672890723138209940226673907255542561",
+        "143459533328415990806996962771073491240271728",
+        "-2947404089058943188180810777055567044439547",
+        "42497323255759075897213751162289730162542",
+        "-429880081080748653344847899410510765323",
+        "2881038191359202916969522345778806432",
+        "-9992182583070996643405942138962234",
+        "-13979016141070808084053407910684",
+        "273520785421313222595867403430",
+        "0",
+        "-11995999536042858760399430",
+        "26888638797039520400284",
+        "842943909995777516634",
+        "-10659416625461008032",
+        "69755402528743323",
+        "-302439289296942",
+        "919946178347",
+        "-1963804528",
+        "2825361",
+        "-2474",
+        "1"
+      ],
+      "geometric_reduction_Picard_rank": 20,
+      "Artin_Tate_discriminant_representative": -31668
+    }
+  ],
+  "Artin_Tate_discriminant_ratio": "29/25",
+  "ratio_is_square": false,
+  "geometric_Picard_rank": 19,
+  "arithmetic_Picard_rank": 19,
+  "geometric_generic_MW_rank": 17,
+  "arithmetic_generic_MW_rank": 17,
+  "full_geometric_basis_is_displayed_rational_basis": true,
+  "absolute_full_geometric_NS_determinant": 1092,
+  "transcendental_rank": 3,
+  "rank19_moduli_CM_point": false,
+  "external_controlled_reduction_required": false,
+  "boundary": "Exact finite fibre cardinalities use Sage/PARI. Theorems used: good-reduction divisor specialization, Weil/Poincare duality, Tate and Artin--Tate for K3 surfaces in characteristic>=5, and Shioda--Tate. No BSD/GRH, new rational-fibre rank or original-provenance claim."
+}

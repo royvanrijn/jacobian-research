@@ -1,0 +1,453 @@
+{
+  "boundary": "This is one calibrated carrier. No prospective curve selector, full Selmer dimension, Sha obstruction or matched generic-point control comparison on this new carrier family is claimed.",
+  "classification": "new exact arithmetic obstruction on the lower-genus carrier",
+  "first_augmented_rank": 13,
+  "first_class": "RATIONAL_NON_GENERIC_KUMMER_CLASS; SELMER WITH ZERO SHA IMAGE",
+  "generic_cases": [
+    {
+      "Picard_image_rank": 12,
+      "complete_local_comparisons": [
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 43
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 47
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 73
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 83
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 89
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 107
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 109
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 113
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 131
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 137
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 157
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 163
+        },
+        {
+          "full_local_dimension": 2,
+          "generic_local_rank": 2,
+          "p": 167
+        },
+        {
+          "full_local_dimension": 2,
+          "generic_local_rank": 2,
+          "p": 173
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 193
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 197
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 199
+        },
+        {
+          "full_local_dimension": 2,
+          "generic_local_rank": 2,
+          "p": 211
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 223
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 227
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 239
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 241
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 251
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 257
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 263
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 271
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 277
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 281
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 283
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 293
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 307
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 311
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 313
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 317
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 331
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 337
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 349
+        }
+      ],
+      "index": 0,
+      "integral_generators": "O,F and all17 old sections; none omitted from an accepted place",
+      "kernel_rank": 7,
+      "no_rational_2_torsion_prime": 43,
+      "odd_rational_saturation_index": true
+    },
+    {
+      "Picard_image_rank": 12,
+      "complete_local_comparisons": [
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 37
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 61
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 79
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 89
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 103
+        },
+        {
+          "full_local_dimension": 2,
+          "generic_local_rank": 2,
+          "p": 109
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 113
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 137
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 151
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 157
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 163
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 173
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 181
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 191
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 193
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 197
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 199
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 211
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 223
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 227
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 233
+        },
+        {
+          "full_local_dimension": 2,
+          "generic_local_rank": 2,
+          "p": 239
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 251
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 257
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 263
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 271
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 277
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 281
+        },
+        {
+          "full_local_dimension": 2,
+          "generic_local_rank": 2,
+          "p": 283
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 293
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 307
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 313
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 317
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 331
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 337
+        },
+        {
+          "full_local_dimension": 1,
+          "generic_local_rank": 1,
+          "p": 347
+        },
+        {
+          "full_local_dimension": 0,
+          "generic_local_rank": 0,
+          "p": 349
+        }
+      ],
+      "index": 1,
+      "integral_generators": "O,F and all17 old sections; none omitted from an accepted place",
+      "kernel_rank": 7,
+      "no_rational_2_torsion_prime": 37,
+      "odd_rational_saturation_index": true
+    }
+  ],
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/case-00-codes.json": "8a659ba0ddebca173b94214168eaf563710850a5c8c6226548b245d46cdfca42",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/case-00-generic.json": "282ff1b4c0b0b983f14e4f96d0db3bbe54ee09e4196e5b6a5c0bc38dc37429a9",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/case-01-codes.json": "a748db4e8003284933fd5193565b9ed6a58e7a4e8066de77ac7efb85d60cd1b8",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/case-01-generic.json": "4a1a8362875f416779e1d0d2109319950357b1677a93cd75a664cc9cd73c42e1",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/codes-frozen.json": "b23a35c60c74cb8c4a23bd427dd90572685cf2864bfd1b654fe8df6fe72b3708",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/first-class.json": "041839788a5cb022149c84aa54350bdde1f222a1b746f027d1b48d4e91b729de",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/frame.json": "3a2843642884cbc77bf3cc8b8a0349a873a3a890e2175edf968559605c24c959",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/generic-restrictions.json": "53c01b313a099172176e509e0eab5453fc8a96b5c901c47fb92c855b8428424c",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/protocol.json": "1f1df62f40569799aacd21c233b9e0d77c2a1d70cca37b4704af0940143f325f",
+    "elliptic-curves/cas/verify_det1092_genus1_picard_image.sage": "ea31acf2a1b926d6127658be576f66d492707a262abcfafd20e11b5ddf237bdf"
+  },
+  "limits": {
+    "CVP_node_limit": 200000,
+    "NS_generators": 19,
+    "Selmer_dimensions": 0,
+    "V3_inputs": 0,
+    "class_groups": 0,
+    "fixed_members": 2,
+    "marked_point_inputs": 0,
+    "new_addresses": 0,
+    "parity_cosets": 1,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "primes": 64,
+    "wall_seconds": 25
+  },
+  "obstruction": "Every generic section of this alternate fibration specializes inside the full Picard image. The first point and its hyperelliptic conjugate lie outside its rational span. Therefore the infinite rational-point source generated by inherited classes cannot reach either point above302.",
+  "separating_support": [
+    {
+      "p": 109,
+      "root_index": 0
+    },
+    {
+      "p": 227,
+      "root_index": 0
+    },
+    {
+      "p": 263,
+      "root_index": 0
+    },
+    {
+      "p": 271,
+      "root_index": 0
+    },
+    {
+      "p": 283,
+      "root_index": 1
+    },
+    {
+      "p": 307,
+      "root_index": 0
+    }
+  ],
+  "status": "PASS_INDEPENDENT_FULL_PICARD_RANK12_AND_FIRST_CLASS_RANK13"
+}

@@ -1,0 +1,427 @@
+{
+  "any_full_M31": true,
+  "best_rank_lower_bound": 31,
+  "results": [
+    {
+      "charts": 855,
+      "claim_boundary": "Retrospective known-seed amplifier experiment; not a prospective selector or new rank claim.",
+      "gain": 13,
+      "initial_rank": 18,
+      "protocol_sha256": "c208b1e1ff20d61522f9cbbf3776dee783ffd571cec98c3763dbf5babb91f55b",
+      "rank_lower_bound": 31,
+      "schema": "curve302-seeded-v3-amplifier-result.v1",
+      "seed_direction": "recovered-strict-02",
+      "stages": [
+        {
+          "after": 19,
+          "before": 18,
+          "charts_replayed": 7,
+          "epoch": 0,
+          "landscape": {
+            "centres": 114,
+            "cosets": 64,
+            "exact_cvps": 64
+          },
+          "modl_ranks": {
+            "3": 19,
+            "5": 19
+          }
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "charts_replayed": 17,
+          "epoch": 1,
+          "landscape": {
+            "centres": 178,
+            "cosets": 128,
+            "exact_cvps": 128
+          },
+          "modl_ranks": {
+            "3": 20,
+            "5": 20
+          }
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "charts_replayed": 27,
+          "epoch": 2,
+          "landscape": {
+            "centres": 306,
+            "cosets": 256,
+            "exact_cvps": 256
+          },
+          "modl_ranks": {
+            "3": 21,
+            "5": 21
+          }
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "charts_replayed": 1,
+          "epoch": 3,
+          "landscape": {
+            "centres": 554,
+            "cosets": 512,
+            "exact_cvps": 512
+          },
+          "modl_ranks": {
+            "3": 22,
+            "5": 22
+          }
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "charts_replayed": 27,
+          "epoch": 4,
+          "landscape": {
+            "centres": 960,
+            "cosets": 1024,
+            "exact_cvps": 971
+          },
+          "modl_ranks": {
+            "3": 23,
+            "5": 23
+          }
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "charts_replayed": 37,
+          "epoch": 5,
+          "landscape": {
+            "centres": 1239,
+            "cosets": 2048,
+            "exact_cvps": 1326
+          },
+          "modl_ranks": {
+            "3": 24,
+            "5": 24
+          }
+        },
+        {
+          "after": 25,
+          "before": 24,
+          "charts_replayed": 50,
+          "epoch": 6,
+          "landscape": {
+            "centres": 1367,
+            "cosets": 4096,
+            "exact_cvps": 1487
+          },
+          "modl_ranks": {
+            "3": 25,
+            "5": 25
+          }
+        },
+        {
+          "after": 26,
+          "before": 25,
+          "charts_replayed": 18,
+          "epoch": 7,
+          "landscape": {
+            "centres": 1459,
+            "cosets": 8192,
+            "exact_cvps": 1617
+          },
+          "modl_ranks": {
+            "3": 26,
+            "5": 26
+          }
+        },
+        {
+          "after": 27,
+          "before": 26,
+          "charts_replayed": 12,
+          "epoch": 8,
+          "landscape": {
+            "centres": 1509,
+            "cosets": 16384,
+            "exact_cvps": 1646
+          },
+          "modl_ranks": {
+            "3": 27,
+            "5": 27
+          }
+        },
+        {
+          "after": 28,
+          "before": 27,
+          "charts_replayed": 290,
+          "epoch": 9,
+          "landscape": {
+            "centres": 1526,
+            "cosets": 32768,
+            "exact_cvps": 1662
+          },
+          "modl_ranks": {
+            "3": 28,
+            "5": 28
+          }
+        },
+        {
+          "after": 29,
+          "before": 28,
+          "charts_replayed": 76,
+          "epoch": 10,
+          "landscape": {
+            "centres": 1494,
+            "cosets": 65536,
+            "exact_cvps": 1664
+          },
+          "modl_ranks": {
+            "3": 29,
+            "5": 29
+          }
+        },
+        {
+          "after": 30,
+          "before": 29,
+          "charts_replayed": 141,
+          "epoch": 11,
+          "landscape": {
+            "centres": 1472,
+            "cosets": 131072,
+            "exact_cvps": 1654
+          },
+          "modl_ranks": {
+            "3": 30,
+            "5": 30
+          }
+        },
+        {
+          "after": 31,
+          "before": 30,
+          "charts_replayed": 152,
+          "epoch": 12,
+          "landscape": {
+            "centres": 1511,
+            "cosets": 262144,
+            "exact_cvps": 1666
+          },
+          "modl_ranks": {
+            "3": 31,
+            "5": 31
+          }
+        }
+      ],
+      "status": "PASS_INDEPENDENT_SEEDED_V3_REPLAY",
+      "stop_reason": "TARGET_LOWER_BOUND_REACHED",
+      "terminal_sha256": "208953d13dd4fbaee4bf17e14afd93bc42dfe8c95c947ce3e312dcd532b44d1d"
+    },
+    {
+      "charts": 637,
+      "claim_boundary": "Retrospective known-seed amplifier experiment; not a prospective selector or new rank claim.",
+      "gain": 13,
+      "initial_rank": 18,
+      "protocol_sha256": "8b639d0e7520022d6e86d2cbc839a115e9a4e89e622b3c8d8e0013b75114a24d",
+      "rank_lower_bound": 31,
+      "schema": "curve302-seeded-v3-amplifier-result.v1",
+      "seed_direction": "recovered-strict-03",
+      "stages": [
+        {
+          "after": 19,
+          "before": 18,
+          "charts_replayed": 1,
+          "epoch": 0,
+          "landscape": {
+            "centres": 114,
+            "cosets": 64,
+            "exact_cvps": 64
+          },
+          "modl_ranks": {
+            "3": 19,
+            "5": 19
+          }
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "charts_replayed": 3,
+          "epoch": 1,
+          "landscape": {
+            "centres": 178,
+            "cosets": 128,
+            "exact_cvps": 128
+          },
+          "modl_ranks": {
+            "3": 20,
+            "5": 20
+          }
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "charts_replayed": 17,
+          "epoch": 2,
+          "landscape": {
+            "centres": 306,
+            "cosets": 256,
+            "exact_cvps": 256
+          },
+          "modl_ranks": {
+            "3": 21,
+            "5": 21
+          }
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "charts_replayed": 50,
+          "epoch": 3,
+          "landscape": {
+            "centres": 548,
+            "cosets": 512,
+            "exact_cvps": 512
+          },
+          "modl_ranks": {
+            "3": 22,
+            "5": 22
+          }
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "charts_replayed": 1,
+          "epoch": 4,
+          "landscape": {
+            "centres": 924,
+            "cosets": 1024,
+            "exact_cvps": 966
+          },
+          "modl_ranks": {
+            "3": 23,
+            "5": 23
+          }
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "charts_replayed": 120,
+          "epoch": 5,
+          "landscape": {
+            "centres": 1215,
+            "cosets": 2048,
+            "exact_cvps": 1317
+          },
+          "modl_ranks": {
+            "3": 24,
+            "5": 24
+          }
+        },
+        {
+          "after": 25,
+          "before": 24,
+          "charts_replayed": 51,
+          "epoch": 6,
+          "landscape": {
+            "centres": 1356,
+            "cosets": 4096,
+            "exact_cvps": 1485
+          },
+          "modl_ranks": {
+            "3": 25,
+            "5": 25
+          }
+        },
+        {
+          "after": 26,
+          "before": 25,
+          "charts_replayed": 43,
+          "epoch": 7,
+          "landscape": {
+            "centres": 1449,
+            "cosets": 8192,
+            "exact_cvps": 1618
+          },
+          "modl_ranks": {
+            "3": 26,
+            "5": 26
+          }
+        },
+        {
+          "after": 27,
+          "before": 26,
+          "charts_replayed": 127,
+          "epoch": 8,
+          "landscape": {
+            "centres": 1478,
+            "cosets": 16384,
+            "exact_cvps": 1623
+          },
+          "modl_ranks": {
+            "3": 27,
+            "5": 27
+          }
+        },
+        {
+          "after": 28,
+          "before": 27,
+          "charts_replayed": 5,
+          "epoch": 9,
+          "landscape": {
+            "centres": 1495,
+            "cosets": 32768,
+            "exact_cvps": 1648
+          },
+          "modl_ranks": {
+            "3": 28,
+            "5": 28
+          }
+        },
+        {
+          "after": 29,
+          "before": 28,
+          "charts_replayed": 32,
+          "epoch": 10,
+          "landscape": {
+            "centres": 1495,
+            "cosets": 65536,
+            "exact_cvps": 1649
+          },
+          "modl_ranks": {
+            "3": 29,
+            "5": 29
+          }
+        },
+        {
+          "after": 30,
+          "before": 29,
+          "charts_replayed": 95,
+          "epoch": 11,
+          "landscape": {
+            "centres": 1537,
+            "cosets": 131072,
+            "exact_cvps": 1669
+          },
+          "modl_ranks": {
+            "3": 30,
+            "5": 30
+          }
+        },
+        {
+          "after": 31,
+          "before": 30,
+          "charts_replayed": 92,
+          "epoch": 12,
+          "landscape": {
+            "centres": 1484,
+            "cosets": 262144,
+            "exact_cvps": 1650
+          },
+          "modl_ranks": {
+            "3": 31,
+            "5": 31
+          }
+        }
+      ],
+      "status": "PASS_INDEPENDENT_SEEDED_V3_REPLAY",
+      "stop_reason": "TARGET_LOWER_BOUND_REACHED",
+      "terminal_sha256": "83ea49d49833a3562dada25f4ef48d8ab87de1850c4298b85ead85cafd5cf89e"
+    }
+  ],
+  "status": "COMPLETE_TWO_SEED_AMPLIFIER"
+}

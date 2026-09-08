@@ -114,5 +114,14 @@ experiment is claimed.
 
 The independent full fixed-M30 schedule replay passed, including every exact
 minimum, tie convention, chart transcript and rank certificate. The conditional
-M17 execution is pending. Fixed-M30 success does not yet assert an autonomous
-M17→31 cascade.
+M17 execution subsequently completed: **17→18→…→31 in 1169 charts**.
+Both runs have independent replay and certificate-to-transcript bindings for
+every executed chart in the [final packaged result](../../artifacts/generated-results/elliptic-curves/adaptive_visibility_cascade_v3.json).
+Thus the frozen, retrospectively calibrated policy autonomously recovers a
+rank-31 subgroup from generic MW17, without exceptional points as execution
+inputs. This is not an unconditioned discovery, exact-rank proof, or transfer
+guarantee. V1 and V2 remain unchanged.
+
+The subsequent [two-seed amplifier and transfer outcomes](CURVE302_SEEDED_V3_RESULTS_2026-09-08.md)
+separate successful known-seed amplification from unsuccessful finite
+bootstrap/control exposures.

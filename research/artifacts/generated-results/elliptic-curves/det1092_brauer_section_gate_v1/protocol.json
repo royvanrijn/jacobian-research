@@ -1,0 +1,24 @@
+{
+  "classification": "generic-only bounded extraction of section intersection witnesses",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv": "6eabef60743153bad58de5cdc0c49777036991282a362d26ab286722986ae40f",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/protocol.json": "e94acefccffec1a9b52b6e8ed11fb2b56dd78922ca281a37af229a38d667bf00",
+    "elliptic-curves/cas/construct_det1092_brauer_section_gate.sage": "3e8fa06ecb6da45915deafe68926bc269c9e62b6af9df33b306ecba2a680ae0a"
+  },
+  "limits": {
+    "Brauer_group_computation": 0,
+    "Selmer_groups": 0,
+    "V3_inputs": 0,
+    "class_groups": 0,
+    "exceptional_coordinate_inputs": 0,
+    "new_addresses": 0,
+    "new_lattice_nodes": 0,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "retained_words": 17,
+    "saved_rows": 4096,
+    "wall_seconds": 25
+  },
+  "rule": "Read at most the first4096 rows of the unchanged old census. Keep norm6 section words when they increase binary rank, stopping at17. Account for every scanned row. Reuse only the unchanged nine-address21-place local panel; no exceptional coordinate is an input."
+}

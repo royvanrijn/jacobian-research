@@ -1,0 +1,472 @@
+{
+  "boundary": "No homomorphism of curves or coefficient2-torsion modules transports the carrier class to the fixed original elliptic fibre overQ. These statements do not exclude nonlinear incidence or give a seed-production rule. No global Selmer group, Sha class or point search is computed.",
+  "cases": [
+    {
+      "complete_good_pairs": 48,
+      "geometric_Hom": "ZERO_IN_BOTH_DIRECTIONS",
+      "joint_2_torsion_Galois_group": "S3_X_S3",
+      "label": "302-first-carrier",
+      "ordinary_pair": {
+        "Frobenius_discriminants": [
+          -28,
+          -51
+        ],
+        "abc": [
+          [
+            37,
+            24,
+            12
+          ],
+          [
+            5,
+            26,
+            38
+          ]
+        ],
+        "p": 43,
+        "point_counts": [
+          56,
+          55
+        ],
+        "traces": [
+          -12,
+          -11
+        ]
+      },
+      "rational_torsion_module_Hom": "ZERO_IN_BOTH_DIRECTIONS",
+      "witnesses": {
+        "carrier_irreducible": 61,
+        "carrier_transposition": 43,
+        "distinct_quadratic_fields": 43,
+        "geometric_nonisogeny": 43,
+        "original_irreducible": 43,
+        "original_transposition": 47
+      }
+    },
+    {
+      "complete_good_pairs": 50,
+      "geometric_Hom": "ZERO_IN_BOTH_DIRECTIONS",
+      "joint_2_torsion_Galois_group": "S3_X_S3",
+      "label": "scale-0131232",
+      "ordinary_pair": {
+        "Frobenius_discriminants": [
+          -32,
+          -4
+        ],
+        "abc": [
+          [
+            15,
+            9,
+            0
+          ],
+          [
+            5,
+            9,
+            7
+          ]
+        ],
+        "p": 17,
+        "point_counts": [
+          24,
+          26
+        ],
+        "traces": [
+          -6,
+          -8
+        ]
+      },
+      "rational_torsion_module_Hom": "ZERO_IN_BOTH_DIRECTIONS",
+      "witnesses": {
+        "carrier_irreducible": 53,
+        "carrier_transposition": 23,
+        "distinct_quadratic_fields": 17,
+        "geometric_nonisogeny": 17,
+        "original_irreducible": 23,
+        "original_transposition": 17
+      }
+    },
+    {
+      "complete_good_pairs": 47,
+      "geometric_Hom": "ZERO_IN_BOTH_DIRECTIONS",
+      "joint_2_torsion_Galois_group": "S3_X_S3",
+      "label": "scale-0257585",
+      "ordinary_pair": {
+        "Frobenius_discriminants": [
+          -72,
+          -43
+        ],
+        "abc": [
+          [
+            62,
+            39,
+            54
+          ],
+          [
+            5,
+            20,
+            49
+          ]
+        ],
+        "p": 67,
+        "point_counts": [
+          82,
+          83
+        ],
+        "traces": [
+          -14,
+          -15
+        ]
+      },
+      "rational_torsion_module_Hom": "ZERO_IN_BOTH_DIRECTIONS",
+      "witnesses": {
+        "carrier_irreducible": 23,
+        "carrier_transposition": 67,
+        "distinct_quadratic_fields": 67,
+        "geometric_nonisogeny": 67,
+        "original_irreducible": 23,
+        "original_transposition": 73
+      }
+    },
+    {
+      "complete_good_pairs": 54,
+      "geometric_Hom": "ZERO_IN_BOTH_DIRECTIONS",
+      "joint_2_torsion_Galois_group": "S3_X_S3",
+      "label": "scale-0487239",
+      "ordinary_pair": {
+        "Frobenius_discriminants": [
+          -60,
+          -12
+        ],
+        "abc": [
+          [
+            3,
+            11,
+            12
+          ],
+          [
+            5,
+            13,
+            9
+          ]
+        ],
+        "p": 19,
+        "point_counts": [
+          24,
+          28
+        ],
+        "traces": [
+          -4,
+          -8
+        ]
+      },
+      "rational_torsion_module_Hom": "ZERO_IN_BOTH_DIRECTIONS",
+      "witnesses": {
+        "carrier_irreducible": 23,
+        "carrier_transposition": 19,
+        "distinct_quadratic_fields": 43,
+        "geometric_nonisogeny": 19,
+        "original_irreducible": 23,
+        "original_transposition": 19
+      }
+    },
+    {
+      "complete_good_pairs": 52,
+      "geometric_Hom": "ZERO_IN_BOTH_DIRECTIONS",
+      "joint_2_torsion_Galois_group": "S3_X_S3",
+      "label": "scale-0177036",
+      "ordinary_pair": {
+        "Frobenius_discriminants": [
+          -43,
+          -4
+        ],
+        "abc": [
+          [
+            15,
+            2,
+            4
+          ],
+          [
+            5,
+            11,
+            16
+          ]
+        ],
+        "p": 17,
+        "point_counts": [
+          23,
+          26
+        ],
+        "traces": [
+          -5,
+          -8
+        ]
+      },
+      "rational_torsion_module_Hom": "ZERO_IN_BOTH_DIRECTIONS",
+      "witnesses": {
+        "carrier_irreducible": 17,
+        "carrier_transposition": 31,
+        "distinct_quadratic_fields": 17,
+        "geometric_nonisogeny": 17,
+        "original_irreducible": 23,
+        "original_transposition": 17
+      }
+    },
+    {
+      "complete_good_pairs": 54,
+      "geometric_Hom": "ZERO_IN_BOTH_DIRECTIONS",
+      "joint_2_torsion_Galois_group": "S3_X_S3",
+      "label": "scale-0043332",
+      "ordinary_pair": {
+        "Frobenius_discriminants": [
+          -32,
+          -4
+        ],
+        "abc": [
+          [
+            15,
+            9,
+            0
+          ],
+          [
+            5,
+            9,
+            7
+          ]
+        ],
+        "p": 17,
+        "point_counts": [
+          24,
+          26
+        ],
+        "traces": [
+          -6,
+          -8
+        ]
+      },
+      "rational_torsion_module_Hom": "ZERO_IN_BOTH_DIRECTIONS",
+      "witnesses": {
+        "carrier_irreducible": 37,
+        "carrier_transposition": 31,
+        "distinct_quadratic_fields": 17,
+        "geometric_nonisogeny": 17,
+        "original_irreducible": 37,
+        "original_transposition": 17
+      }
+    },
+    {
+      "complete_good_pairs": 50,
+      "geometric_Hom": "ZERO_IN_BOTH_DIRECTIONS",
+      "joint_2_torsion_Galois_group": "S3_X_S3",
+      "label": "scale-0590501",
+      "ordinary_pair": {
+        "Frobenius_discriminants": [
+          -51,
+          -108
+        ],
+        "abc": [
+          [
+            5,
+            10,
+            5
+          ],
+          [
+            5,
+            5,
+            29
+          ]
+        ],
+        "p": 43,
+        "point_counts": [
+          55,
+          52
+        ],
+        "traces": [
+          -11,
+          -8
+        ]
+      },
+      "rational_torsion_module_Hom": "ZERO_IN_BOTH_DIRECTIONS",
+      "witnesses": {
+        "carrier_irreducible": 23,
+        "carrier_transposition": 31,
+        "distinct_quadratic_fields": 43,
+        "geometric_nonisogeny": 43,
+        "original_irreducible": 23,
+        "original_transposition": 31
+      }
+    },
+    {
+      "complete_good_pairs": 50,
+      "geometric_Hom": "ZERO_IN_BOTH_DIRECTIONS",
+      "joint_2_torsion_Galois_group": "S3_X_S3",
+      "label": "scale-0290097",
+      "ordinary_pair": {
+        "Frobenius_discriminants": [
+          -43,
+          -4
+        ],
+        "abc": [
+          [
+            15,
+            2,
+            4
+          ],
+          [
+            5,
+            11,
+            16
+          ]
+        ],
+        "p": 17,
+        "point_counts": [
+          23,
+          26
+        ],
+        "traces": [
+          -5,
+          -8
+        ]
+      },
+      "rational_torsion_module_Hom": "ZERO_IN_BOTH_DIRECTIONS",
+      "witnesses": {
+        "carrier_irreducible": 17,
+        "carrier_transposition": 31,
+        "distinct_quadratic_fields": 17,
+        "geometric_nonisogeny": 17,
+        "original_irreducible": 43,
+        "original_transposition": 17
+      }
+    },
+    {
+      "complete_good_pairs": 49,
+      "geometric_Hom": "ZERO_IN_BOTH_DIRECTIONS",
+      "joint_2_torsion_Galois_group": "S3_X_S3",
+      "label": "scale-0748009",
+      "ordinary_pair": {
+        "Frobenius_discriminants": [
+          -32,
+          -4
+        ],
+        "abc": [
+          [
+            14,
+            4,
+            0
+          ],
+          [
+            5,
+            2,
+            1
+          ]
+        ],
+        "p": 17,
+        "point_counts": [
+          24,
+          26
+        ],
+        "traces": [
+          -6,
+          -8
+        ]
+      },
+      "rational_torsion_module_Hom": "ZERO_IN_BOTH_DIRECTIONS",
+      "witnesses": {
+        "carrier_irreducible": 83,
+        "carrier_transposition": 17,
+        "distinct_quadratic_fields": 67,
+        "geometric_nonisogeny": 17,
+        "original_irreducible": 67,
+        "original_transposition": 17
+      }
+    },
+    {
+      "complete_good_pairs": 48,
+      "geometric_Hom": "ZERO_IN_BOTH_DIRECTIONS",
+      "joint_2_torsion_Galois_group": "S3_X_S3",
+      "label": "302-generic-section-control",
+      "ordinary_pair": {
+        "Frobenius_discriminants": [
+          -32,
+          -4
+        ],
+        "abc": [
+          [
+            14,
+            4,
+            0
+          ],
+          [
+            5,
+            2,
+            1
+          ]
+        ],
+        "p": 17,
+        "point_counts": [
+          24,
+          26
+        ],
+        "traces": [
+          -6,
+          -8
+        ]
+      },
+      "rational_torsion_module_Hom": "ZERO_IN_BOTH_DIRECTIONS",
+      "witnesses": {
+        "carrier_irreducible": 67,
+        "carrier_transposition": 17,
+        "distinct_quadratic_fields": 53,
+        "geometric_nonisogeny": 17,
+        "original_irreducible": 97,
+        "original_transposition": 17
+      }
+    }
+  ],
+  "classification": "new verified application and exact auxiliary-field obstruction",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-00-generic.json": "20c34847265099d328c9d0e3c5adfd87ce791948c59f696d8af597d8f28b8f9c",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-01-generic.json": "c0b62e14b3d8759f42dfab0d440e611796a81ab8cd87a735a12fa75fafc61de4",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-02-generic.json": "fea1b9267bb1a4f3a939d6fa8c09c440dbad22fa8b90e188ef74244d2053219b",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-03-generic.json": "ff3998a643322c520a50dd050d36a2acaf2d0a2687546a7a31bd7beef80192c5",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-04-generic.json": "9119f9517b7db4614feef497f71b05b9564579bcce88c997dfd0afd19e0bd542",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-05-generic.json": "f1ea560950781e1472dabb314c6745d984a9df8f3fe40485aaee360ad3394c51",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-06-generic.json": "be74301442530b4fb8663550b5d86c04671b42b5abf5752582bf66558b34c0e9",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-07-generic.json": "bd8821aa8f648cbb1b4362c7209822949c409461b4478b8dfd9dfd4c9172611d",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-08-generic.json": "6b3a321932b0099b9cbe0d698afe6af992e105131585ca06660597444755dddc",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/protocol.json": "fdbddd6372fb062680c16d0be048fb0f7aa495cdba20cafe10fa140663e32688",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/selection.json": "9aea5e2e787b9595eb2aebf01d3106512ed6661cf356669656519fbbbdac6a6b",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/case-01-generic.json": "4a1a8362875f416779e1d0d2109319950357b1677a93cd75a664cc9cd73c42e1",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-00-equations.json": "81cb16d49b5a7179ff063b7f82fb26a145e290404fd4218d305add304a102062",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-00.json": "8211dc39b8ce1203f4ac7c19584299a2aa3052ab1fa3c8345cb8e07ff3519e3f",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-01-equations.json": "e325b156c19982770719efec9ca22f3d72719ddba08a896a34d00b029e7abe64",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-01.json": "ac4cfdd3bdd8327d6831f9524aa3fc19c89a4e0295ebc2cf1710489bd10bb95d",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-02-equations.json": "28e1ee8ca8e527064e569c895c9b57feae3f4419084aec947754cbaa46a66064",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-02.json": "215889f37d265f0899749a1fe4f26cf6d6f531c447874ba7b9ace0bf30c62e9f",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-03-equations.json": "804a32a6ec3bf1979fe3756d212b35134ff08ffc7bafa688e2407d1c71b5c1cf",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-03.json": "11538b8f02fdf2fc8a0d4a2fb4e9590ad4083ba5c87e7e07ba4c57fa7d80cea4",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-04-equations.json": "ffc0dcdb403016fc6ebff9e44655f9cfcf0878f7f6e6c5ed5b1e3d514affefb6",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-04.json": "175af0b59595eed2550baf9ea19e287287732fee7a6e460534e62a03414dca5c",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-05-equations.json": "835ba9346db96696a0fd35365baacacb90166886e4e02f58103f06768c183387",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-05.json": "2166137682879a10cbc46b3e37a005a6346236d6f9ef5141f472674ac3fb00d1",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-06-equations.json": "69abe97d2d99a8f69f3827f460ad9dd873f9e3062ef5c5baef8b5822725944f7",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-06.json": "46352b1f2a0505b97a29b64c5920aac685cf79e9bd3b55465ec23e47446fea36",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-07-equations.json": "305432b18b4383cd4b5ab58364ec77cd83ec7c303cd1834c05c63661c75747de",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-07.json": "26e77e791fbef10c6af53586507f4415bdb94d1c6717f29052776bef3994817e",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-08-equations.json": "db351be294972fa31e5c340add3abe0f2fc40d518e3ce770da6d9e75a311e027",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-08.json": "ded4e333c3a3fcf6b05c56e7d2c3c398faa8ad08a8f8ebf14ec363f837d48365",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-09-equations.json": "fa1d22e622ac94e1119a2bfcfdb6c5b9968e347c228519be6c785b843d8de14a",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-09.json": "2392de05912bac4edd06f089495feab1a85550c1987d7a8474aeeba9da32482d",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/panel.json": "f43375214fe80f6aaa205f2962ec7a11b2868aa823a08872a006cb4826761af0",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/protocol.json": "d5ff1df8d40b03fe5bb2e2071574b7d9d1917249ab80ceab382b710d636eaa8e",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/torsion-isomorphism-scheme.json": "ddac191b15f093cd913630e7830b06e2f1e6a4e4a45dab2e128e1994c8d6987c",
+    "elliptic-curves/cas/verify_det1092_genus1_transport_gate.sage": "ecfaa322ef67dbc4830138303bb2d241df27ac412f41bee9c1b4079bf0d3a66b"
+  },
+  "map_orbit_sizes": {
+    "rank0": 1,
+    "rank1": 9,
+    "rank2": 6
+  },
+  "prime_exposures": 640,
+  "status": "PASS_INDEPENDENT_TEN_GENUS1_GEOMETRIC_AND_TORSION_TRANSPORT_OBSTRUCTIONS"
+}

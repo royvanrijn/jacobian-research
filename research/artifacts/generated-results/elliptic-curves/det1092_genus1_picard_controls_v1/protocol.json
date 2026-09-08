@@ -1,0 +1,133 @@
+{
+  "cases": [
+    {
+      "label": "scale-0131232",
+      "parameter": "-5901745438112120947494214699000/931606906418246849332694053831643"
+    },
+    {
+      "label": "scale-0257585",
+      "parameter": "26317742566535649550305161948000/178852946241379577155380090934781"
+    },
+    {
+      "label": "scale-0487239",
+      "parameter": "5958632989539102572597501243000/253428619923509450078042313346781"
+    },
+    {
+      "label": "scale-0177036",
+      "parameter": "743007519072799890054397264000/134587824977161660368519739313081"
+    },
+    {
+      "label": "scale-0043332",
+      "parameter": "-3963398878651213340856151410000/268094686889278445242796566904059"
+    },
+    {
+      "label": "scale-0590501",
+      "parameter": "42435391124559757530009283834000/491977775870158139083888104825513"
+    },
+    {
+      "label": "scale-0290097",
+      "parameter": "-34225538950593317139889263227000/158982883803730567934503511138631"
+    },
+    {
+      "label": "scale-0748009",
+      "parameter": "-27940458691465689212892589858000/1629541600531965695875572674642247"
+    },
+    {
+      "label": "302-generic-section-control",
+      "parameter": "0"
+    }
+  ],
+  "classification": "frozen source-only specificity controls",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/frame.json": "3a2843642884cbc77bf3cc8b8a0349a873a3a890e2175edf968559605c24c959",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/generic-restrictions.json": "53c01b313a099172176e509e0eab5453fc8a96b5c901c47fb92c855b8428424c",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/replay.json": "3bd5f6bb512105b67cac27a6ecfb5cc4bddf256198733cc327256643903bddea",
+    "artifacts/generated-results/elliptic-curves/det1092_norm8_seed_cover_v2/generic.json": "03d3e86e70709934e219ada1d07ddcc10f2422edf4c8f09ba2cc3344f44c519f",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/protocol.json": "1044eaf4b5c22434eb6cbf2a22ebad0d0154722c929bfaf9d84b06d17ce47df3",
+    "elliptic-curves/cas/construct_det1092_genus1_picard_controls.sage": "fcf71cebc2344eb9ea7a5cdccfccb4688ad9c37758b731ec6111c16a21f89ffe"
+  },
+  "limits": {
+    "NS_generators": 19,
+    "Selmer_dimensions": 0,
+    "V3_inputs": 0,
+    "class_groups": 0,
+    "exceptional_point_inputs": 0,
+    "generic_sections_used_for_selection": [
+      0
+    ],
+    "new_addresses": 0,
+    "old_addresses": 9,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "primes": 64,
+    "wall_seconds": 25
+  },
+  "primes": [
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    41,
+    43,
+    47,
+    53,
+    59,
+    61,
+    67,
+    71,
+    73,
+    79,
+    83,
+    89,
+    97,
+    101,
+    103,
+    107,
+    109,
+    113,
+    127,
+    131,
+    137,
+    139,
+    149,
+    151,
+    157,
+    163,
+    167,
+    173,
+    179,
+    181,
+    191,
+    193,
+    197,
+    199,
+    211,
+    223,
+    227,
+    229,
+    233,
+    239,
+    241,
+    251,
+    257,
+    263,
+    269,
+    271,
+    277,
+    281,
+    283,
+    293,
+    307,
+    311,
+    313,
+    317,
+    331,
+    337,
+    347,
+    349
+  ],
+  "rule": "Use the same orbit20124 pencil. For each of the nine unchanged original addresses tau, take exactly z=z_section0(tau) from the generic restriction function already constructed, and mark that generic section0 point. Compare its Jacobian class with the full inherited Picard image using exactly the old64-prime pool. Do not replace singular, degenerate or unresolved cases."
+}

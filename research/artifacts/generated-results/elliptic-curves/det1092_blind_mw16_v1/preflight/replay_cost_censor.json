@@ -1,0 +1,10 @@
+{
+  "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+  "stage": "POST_PRIMARY_INDEPENDENT_REPLAY",
+  "status": "CENSORED_FOR_REDUNDANT_INTERMEDIATE_ARITHMETIC",
+  "reason": "Full checker reverified the cubic identity after every internal affine addition and computed unused ordinates for height pairings. Stopped after seven completed passing arm checks, before the 300s cap. Final candidate membership, affine word equality, height formula, RR identity/rank gates and every primary input/output remain unchanged. A new checker attempt is separately recorded.",
+  "primary_reconstructions_rerun": 0,
+  "old_checker_sha256": "37099a96d18341257c3f64a7cccab00871d3ee2cc3fe2ec3d3bcdabb2638640a",
+  "new_checker_sha256": "e3463ba8fa466e831dd0d4dc5ab4324ec6df86343abd347536b7addde3e4238f",
+  "old_source_and_log": "research/artifacts/local/elliptic-curves/det1092_blind_mw16_v1/verification/"
+}

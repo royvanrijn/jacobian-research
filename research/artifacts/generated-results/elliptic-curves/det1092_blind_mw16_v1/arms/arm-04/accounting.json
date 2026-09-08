@@ -1,0 +1,21 @@
+{
+  "arm_id": "arm-04",
+  "command": [
+    "unshare",
+    "-Unpf",
+    "python3",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/det1092_blind_mw16/isolate.py",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/det1092_blind_mw16/worker.py",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/det1092_blind_mw16_v1/fixtures/arm-04.json",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/det1092_blind_mw16_v1/runs/arm-04",
+    "<ephemeral-private-scratch>"
+  ],
+  "cumulative_child_max_rss_KiB": 303760,
+  "returncode": 0,
+  "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+  "system_seconds": 0.15200899999999995,
+  "terminal_status": "GENERIC_QUOTIENT_RECOVERY",
+  "user_seconds": 40.06693900000002,
+  "wall_cap_reached": false,
+  "wall_seconds": 40.67002491699532
+}

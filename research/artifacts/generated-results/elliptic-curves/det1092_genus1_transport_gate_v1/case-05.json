@@ -1,0 +1,2690 @@
+{
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-05-equations.json": "835ba9346db96696a0fd35365baacacb90166886e4e02f58103f06768c183387",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/protocol.json": "d5ff1df8d40b03fe5bb2e2071574b7d9d1917249ab80ceab382b710d636eaa8e"
+  },
+  "label": "scale-0043332",
+  "status": "CERTIFIED_TRANSPORT_OBSTRUCTION",
+  "tau": "-3963398878651213340856151410000/268094686889278445242796566904059",
+  "trials": [
+    {
+      "Frobenius_discriminants": [
+        -32,
+        -4
+      ],
+      "abc": [
+        [
+          15,
+          9,
+          0
+        ],
+        [
+          5,
+          9,
+          7
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        0
+      ],
+      "discriminants_mod_p": [
+        9,
+        7
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 17,
+      "point_counts": [
+        24,
+        26
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -6,
+        -8
+      ]
+    },
+    {
+      "abc": [
+        [
+          6,
+          18,
+          6
+        ],
+        [
+          5,
+          9,
+          15
+        ]
+      ],
+      "discriminants_mod_p": [
+        0,
+        2
+      ],
+      "p": 19,
+      "status": "SKIP_BAD_REDUCTION"
+    },
+    {
+      "abc": [
+        [
+          22,
+          22,
+          1
+        ],
+        [
+          5,
+          20,
+          1
+        ]
+      ],
+      "discriminants_mod_p": [
+        0,
+        19
+      ],
+      "p": 23,
+      "status": "SKIP_BAD_REDUCTION"
+    },
+    {
+      "p": 29,
+      "status": "SKIP_MODEL_DENOMINATOR"
+    },
+    {
+      "Frobenius_discriminants": [
+        -60,
+        -24
+      ],
+      "abc": [
+        [
+          30,
+          18,
+          5
+        ],
+        [
+          5,
+          6,
+          4
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        0
+      ],
+      "discriminants_mod_p": [
+        17,
+        12
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 31,
+      "point_counts": [
+        40,
+        42
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -8,
+        -10
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -99,
+        -27
+      ],
+      "abc": [
+        [
+          36,
+          33,
+          7
+        ],
+        [
+          5,
+          26,
+          10
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        1
+      ],
+      "discriminants_mod_p": [
+        36,
+        36
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          3
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 37,
+      "point_counts": [
+        45,
+        49
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -7,
+        -11
+      ]
+    },
+    {
+      "p": 41,
+      "status": "SKIP_MODEL_DENOMINATOR"
+    },
+    {
+      "Frobenius_discriminants": [
+        -108,
+        -28
+      ],
+      "abc": [
+        [
+          0,
+          13,
+          35
+        ],
+        [
+          5,
+          1,
+          41
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        0
+      ],
+      "discriminants_mod_p": [
+        19,
+        2
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 43,
+      "point_counts": [
+        52,
+        56
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -8,
+        -12
+      ]
+    },
+    {
+      "abc": [
+        [
+          0,
+          23,
+          36
+        ],
+        [
+          5,
+          43,
+          4
+        ]
+      ],
+      "discriminants_mod_p": [
+        0,
+        27
+      ],
+      "p": 47,
+      "status": "SKIP_BAD_REDUCTION"
+    },
+    {
+      "Frobenius_discriminants": [
+        -16,
+        -68
+      ],
+      "abc": [
+        [
+          26,
+          40,
+          44
+        ],
+        [
+          5,
+          13,
+          5
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        0
+      ],
+      "discriminants_mod_p": [
+        34,
+        20
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 53,
+      "point_counts": [
+        68,
+        66
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -14,
+        -12
+      ]
+    },
+    {
+      "p": 59,
+      "status": "SKIP_MODEL_DENOMINATOR"
+    },
+    {
+      "p": 61,
+      "status": "SKIP_MODEL_DENOMINATOR"
+    },
+    {
+      "Frobenius_discriminants": [
+        -219,
+        -72
+      ],
+      "abc": [
+        [
+          5,
+          30,
+          65
+        ],
+        [
+          5,
+          3,
+          50
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        0
+      ],
+      "discriminants_mod_p": [
+        40,
+        43
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 67,
+      "point_counts": [
+        75,
+        82
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -7,
+        -14
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -140,
+        -115
+      ],
+      "abc": [
+        [
+          8,
+          29,
+          47
+        ],
+        [
+          5,
+          33,
+          50
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        1
+      ],
+      "discriminants_mod_p": [
+        49,
+        40
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 71,
+      "point_counts": [
+        84,
+        85
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -12,
+        -13
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -148,
+        -3
+      ],
+      "abc": [
+        [
+          43,
+          31,
+          20
+        ],
+        [
+          5,
+          57,
+          45
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        1
+      ],
+      "discriminants_mod_p": [
+        26,
+        18
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 73,
+      "point_counts": [
+        86,
+        91
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -12,
+        -17
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -60,
+        -315
+      ],
+      "abc": [
+        [
+          29,
+          74,
+          5
+        ],
+        [
+          5,
+          13,
+          62
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        1
+      ],
+      "discriminants_mod_p": [
+        24,
+        23
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 79,
+      "point_counts": [
+        96,
+        81
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -16,
+        -1
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -136,
+        -188
+      ],
+      "abc": [
+        [
+          23,
+          3,
+          35
+        ],
+        [
+          5,
+          26,
+          23
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        1
+      ],
+      "discriminants_mod_p": [
+        54,
+        31
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 83,
+      "point_counts": [
+        98,
+        96
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -14,
+        -12
+      ]
+    },
+    {
+      "abc": [
+        [
+          18,
+          71,
+          52
+        ],
+        [
+          5,
+          9,
+          45
+        ]
+      ],
+      "discriminants_mod_p": [
+        0,
+        36
+      ],
+      "p": 89,
+      "status": "SKIP_BAD_REDUCTION"
+    },
+    {
+      "Frobenius_discriminants": [
+        -372,
+        -132
+      ],
+      "abc": [
+        [
+          41,
+          83,
+          19
+        ],
+        [
+          5,
+          67,
+          75
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        0
+      ],
+      "discriminants_mod_p": [
+        56,
+        40
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 97,
+      "point_counts": [
+        102,
+        114
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -4,
+        -16
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -340,
+        -260
+      ],
+      "abc": [
+        [
+          61,
+          49,
+          68
+        ],
+        [
+          5,
+          76,
+          25
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        0
+      ],
+      "discriminants_mod_p": [
+        73,
+        75
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 101,
+      "point_counts": [
+        110,
+        114
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -8,
+        -12
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -268,
+        -187
+      ],
+      "abc": [
+        [
+          89,
+          43,
+          74
+        ],
+        [
+          5,
+          72,
+          71
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        1
+      ],
+      "discriminants_mod_p": [
+        99,
+        92
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 103,
+      "point_counts": [
+        116,
+        119
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -12,
+        -15
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -203,
+        -28
+      ],
+      "abc": [
+        [
+          33,
+          64,
+          44
+        ],
+        [
+          5,
+          58,
+          17
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        0
+      ],
+      "discriminants_mod_p": [
+        48,
+        6
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 107,
+      "point_counts": [
+        123,
+        128
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -15,
+        -20
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -112,
+        -112
+      ],
+      "abc": [
+        [
+          15,
+          103,
+          104
+        ],
+        [
+          5,
+          64,
+          47
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        0
+      ],
+      "discriminants_mod_p": [
+        68,
+        41
+      ],
+      "distinct_Frobenius_fields": false,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 109,
+      "point_counts": [
+        128,
+        128
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -18,
+        -18
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -128,
+        -52
+      ],
+      "abc": [
+        [
+          7,
+          76,
+          13
+        ],
+        [
+          5,
+          48,
+          2
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        0
+      ],
+      "discriminants_mod_p": [
+        12,
+        71
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 113,
+      "point_counts": [
+        132,
+        134
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -18,
+        -20
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -504,
+        -147
+      ],
+      "abc": [
+        [
+          45,
+          105,
+          21
+        ],
+        [
+          5,
+          123,
+          43
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        1
+      ],
+      "discriminants_mod_p": [
+        85,
+        113
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 127,
+      "point_counts": [
+        130,
+        147
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -2,
+        -19
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -524,
+        -40
+      ],
+      "abc": [
+        [
+          75,
+          106,
+          41
+        ],
+        [
+          5,
+          22,
+          92
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        0
+      ],
+      "discriminants_mod_p": [
+        83,
+        18
+      ],
+      "distinct_Frobenius_fields": false,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": false,
+      "p": 131,
+      "point_counts": [
+        132,
+        154
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        0,
+        -22
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -512,
+        -224
+      ],
+      "abc": [
+        [
+          1,
+          21,
+          132
+        ],
+        [
+          5,
+          120,
+          87
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        1
+      ],
+      "discriminants_mod_p": [
+        34,
+        49
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 137,
+      "point_counts": [
+        144,
+        156
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -6,
+        -18
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -507,
+        -552
+      ],
+      "abc": [
+        [
+          66,
+          129,
+          73
+        ],
+        [
+          5,
+          25,
+          44
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        0
+      ],
+      "discriminants_mod_p": [
+        124,
+        93
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 139,
+      "point_counts": [
+        147,
+        142
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -7,
+        -2
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -371,
+        -272
+      ],
+      "abc": [
+        [
+          1,
+          30,
+          10
+        ],
+        [
+          5,
+          42,
+          132
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        0
+      ],
+      "discriminants_mod_p": [
+        9,
+        65
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 149,
+      "point_counts": [
+        165,
+        168
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -15,
+        -18
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -540,
+        -120
+      ],
+      "abc": [
+        [
+          77,
+          77,
+          27
+        ],
+        [
+          5,
+          116,
+          63
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        0
+      ],
+      "discriminants_mod_p": [
+        73,
+        6
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 151,
+      "point_counts": [
+        160,
+        174
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -8,
+        -22
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -304,
+        -372
+      ],
+      "abc": [
+        [
+          138,
+          153,
+          133
+        ],
+        [
+          5,
+          34,
+          100
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        0
+      ],
+      "discriminants_mod_p": [
+        32,
+        83
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 157,
+      "point_counts": [
+        176,
+        174
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -18,
+        -16
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -168,
+        -211
+      ],
+      "abc": [
+        [
+          5,
+          70,
+          35
+        ],
+        [
+          5,
+          110,
+          132
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        1
+      ],
+      "discriminants_mod_p": [
+        137,
+        55
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 163,
+      "point_counts": [
+        186,
+        185
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -22,
+        -21
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -139,
+        -443
+      ],
+      "abc": [
+        [
+          154,
+          0,
+          151
+        ],
+        [
+          5,
+          12,
+          84
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        1
+      ],
+      "discriminants_mod_p": [
+        108,
+        19
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          3
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 167,
+      "point_counts": [
+        191,
+        183
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -23,
+        -15
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -548,
+        -116
+      ],
+      "abc": [
+        [
+          21,
+          20,
+          77
+        ],
+        [
+          5,
+          162,
+          30
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        0
+      ],
+      "discriminants_mod_p": [
+        71,
+        72
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 173,
+      "point_counts": [
+        186,
+        198
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -12,
+        -24
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -680,
+        -572
+      ],
+      "abc": [
+        [
+          146,
+          32,
+          54
+        ],
+        [
+          5,
+          6,
+          171
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        0
+      ],
+      "discriminants_mod_p": [
+        140,
+        136
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 179,
+      "point_counts": [
+        186,
+        192
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -6,
+        -12
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -324,
+        -720
+      ],
+      "abc": [
+        [
+          168,
+          139,
+          134
+        ],
+        [
+          5,
+          116,
+          142
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        0
+      ],
+      "discriminants_mod_p": [
+        153,
+        175
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 181,
+      "point_counts": [
+        202,
+        184
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -20,
+        -2
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -739,
+        -280
+      ],
+      "abc": [
+        [
+          78,
+          136,
+          31
+        ],
+        [
+          5,
+          152,
+          128
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        0
+      ],
+      "discriminants_mod_p": [
+        150,
+        186
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 191,
+      "point_counts": [
+        187,
+        214
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        5,
+        -22
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -288,
+        -411
+      ],
+      "abc": [
+        [
+          187,
+          153,
+          113
+        ],
+        [
+          5,
+          119,
+          99
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        1
+      ],
+      "discriminants_mod_p": [
+        140,
+        170
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 193,
+      "point_counts": [
+        172,
+        213
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        22,
+        -19
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -724,
+        -464
+      ],
+      "abc": [
+        [
+          60,
+          82,
+          58
+        ],
+        [
+          5,
+          124,
+          137
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        0
+      ],
+      "discriminants_mod_p": [
+        128,
+        195
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 197,
+      "point_counts": [
+        206,
+        216
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -8,
+        -18
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -220,
+        -220
+      ],
+      "abc": [
+        [
+          133,
+          0,
+          150
+        ],
+        [
+          5,
+          155,
+          17
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        0
+      ],
+      "discriminants_mod_p": [
+        69,
+        48
+      ],
+      "distinct_Frobenius_fields": false,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 199,
+      "point_counts": [
+        224,
+        224
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -24,
+        -24
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -360,
+        -675
+      ],
+      "abc": [
+        [
+          54,
+          203,
+          179
+        ],
+        [
+          5,
+          201,
+          27
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        1
+      ],
+      "discriminants_mod_p": [
+        133,
+        79
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 211,
+      "point_counts": [
+        234,
+        225
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -22,
+        -13
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -363,
+        -531
+      ],
+      "abc": [
+        [
+          84,
+          170,
+          54
+        ],
+        [
+          5,
+          164,
+          61
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        1
+      ],
+      "discriminants_mod_p": [
+        133,
+        82
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          3
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 223,
+      "point_counts": [
+        247,
+        243
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -23,
+        -19
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -764,
+        -283
+      ],
+      "abc": [
+        [
+          212,
+          71,
+          156
+        ],
+        [
+          5,
+          187,
+          127
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        1
+      ],
+      "discriminants_mod_p": [
+        143,
+        160
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 227,
+      "point_counts": [
+        240,
+        253
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -12,
+        -25
+      ]
+    },
+    {
+      "p": 229,
+      "status": "SKIP_MODEL_DENOMINATOR"
+    },
+    {
+      "Frobenius_discriminants": [
+        -832,
+        -832
+      ],
+      "abc": [
+        [
+          15,
+          169,
+          157
+        ],
+        [
+          5,
+          0,
+          57
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        0
+      ],
+      "discriminants_mod_p": [
+        46,
+        44
+      ],
+      "distinct_Frobenius_fields": false,
+      "factor_types": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 233,
+      "point_counts": [
+        244,
+        244
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -10,
+        -10
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -875,
+        -940
+      ],
+      "abc": [
+        [
+          93,
+          202,
+          36
+        ],
+        [
+          5,
+          122,
+          175
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        0
+      ],
+      "discriminants_mod_p": [
+        5,
+        13
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 239,
+      "point_counts": [
+        249,
+        244
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -9,
+        -4
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -288,
+        -915
+      ],
+      "abc": [
+        [
+          84,
+          95,
+          122
+        ],
+        [
+          5,
+          130,
+          144
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        1
+      ],
+      "discriminants_mod_p": [
+        34,
+        91
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 241,
+      "point_counts": [
+        268,
+        235
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -26,
+        7
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -748,
+        -428
+      ],
+      "abc": [
+        [
+          199,
+          52,
+          176
+        ],
+        [
+          5,
+          103,
+          186
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        1
+      ],
+      "discriminants_mod_p": [
+        39,
+        25
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 251,
+      "point_counts": [
+        268,
+        276
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -16,
+        -24
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -884,
+        -244
+      ],
+      "abc": [
+        [
+          138,
+          21,
+          127
+        ],
+        [
+          5,
+          131,
+          155
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        0
+      ],
+      "discriminants_mod_p": [
+        76,
+        188
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 257,
+      "point_counts": [
+        270,
+        286
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -12,
+        -28
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -988,
+        -1003
+      ],
+      "abc": [
+        [
+          212,
+          68,
+          128
+        ],
+        [
+          5,
+          230,
+          255
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        1
+      ],
+      "discriminants_mod_p": [
+        93,
+        18
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 263,
+      "point_counts": [
+        272,
+        271
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -8,
+        -7
+      ]
+    },
+    {
+      "p": 269,
+      "status": "SKIP_MODEL_DENOMINATOR"
+    },
+    {
+      "Frobenius_discriminants": [
+        -459,
+        -300
+      ],
+      "abc": [
+        [
+          237,
+          195,
+          69
+        ],
+        [
+          5,
+          99,
+          95
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        1
+      ],
+      "discriminants_mod_p": [
+        80,
+        103
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          3
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 271,
+      "point_counts": [
+        297,
+        300
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -25,
+        -28
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -1008,
+        -987
+      ],
+      "abc": [
+        [
+          72,
+          166,
+          61
+        ],
+        [
+          5,
+          243,
+          185
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        1
+      ],
+      "discriminants_mod_p": [
+        123,
+        75
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 277,
+      "point_counts": [
+        288,
+        289
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -10,
+        -11
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -899,
+        -395
+      ],
+      "abc": [
+        [
+          224,
+          179,
+          195
+        ],
+        [
+          5,
+          229,
+          268
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        1
+      ],
+      "discriminants_mod_p": [
+        165,
+        144
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          3
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 281,
+      "point_counts": [
+        267,
+        309
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        15,
+        -27
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -1011,
+        -43
+      ],
+      "abc": [
+        [
+          115,
+          43,
+          210
+        ],
+        [
+          5,
+          59,
+          197
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        1
+      ],
+      "discriminants_mod_p": [
+        36,
+        86
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          3
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 283,
+      "point_counts": [
+        273,
+        317
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        11,
+        -33
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -1051,
+        -1163
+      ],
+      "abc": [
+        [
+          88,
+          183,
+          112
+        ],
+        [
+          5,
+          212,
+          11
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        1
+      ],
+      "discriminants_mod_p": [
+        228,
+        109
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          3
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 293,
+      "point_counts": [
+        305,
+        291
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -11,
+        3
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -1227,
+        -444
+      ],
+      "abc": [
+        [
+          263,
+          114,
+          112
+        ],
+        [
+          5,
+          169,
+          44
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        1
+      ],
+      "discriminants_mod_p": [
+        49,
+        246
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          3
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 307,
+      "point_counts": [
+        309,
+        336
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -1,
+        -28
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -920,
+        -1019
+      ],
+      "abc": [
+        [
+          141,
+          250,
+          299
+        ],
+        [
+          5,
+          20,
+          125
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        1
+      ],
+      "discriminants_mod_p": [
+        261,
+        80
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 311,
+      "point_counts": [
+        330,
+        327
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -18,
+        -15
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -1152,
+        -996
+      ],
+      "abc": [
+        [
+          33,
+          75,
+          288
+        ],
+        [
+          5,
+          261,
+          95
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        0
+      ],
+      "discriminants_mod_p": [
+        176,
+        51
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 313,
+      "point_counts": [
+        324,
+        330
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -10,
+        -16
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -784,
+        -1187
+      ],
+      "abc": [
+        [
+          71,
+          252,
+          58
+        ],
+        [
+          5,
+          267,
+          37
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        1
+      ],
+      "discriminants_mod_p": [
+        160,
+        79
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 317,
+      "point_counts": [
+        340,
+        327
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -22,
+        -9
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -1224,
+        -1288
+      ],
+      "abc": [
+        [
+          107,
+          39,
+          257
+        ],
+        [
+          5,
+          315,
+          144
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        0
+      ],
+      "discriminants_mod_p": [
+        133,
+        129
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 331,
+      "point_counts": [
+        342,
+        326
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -10,
+        6
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -819,
+        -259
+      ],
+      "abc": [
+        [
+          88,
+          302,
+          27
+        ],
+        [
+          5,
+          104,
+          266
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        1
+      ],
+      "discriminants_mod_p": [
+        230,
+        117
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          3
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 337,
+      "point_counts": [
+        361,
+        371
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -23,
+        -33
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -812,
+        -947
+      ],
+      "abc": [
+        [
+          217,
+          22,
+          142
+        ],
+        [
+          5,
+          44,
+          208
+        ]
+      ],
+      "discriminant_is_square": [
+        0,
+        1
+      ],
+      "discriminants_mod_p": [
+        335,
+        61
+      ],
+      "distinct_Frobenius_fields": true,
+      "factor_types": [
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 347,
+      "point_counts": [
+        372,
+        369
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -24,
+        -21
+      ]
+    },
+    {
+      "Frobenius_discriminants": [
+        -867,
+        -27
+      ],
+      "abc": [
+        [
+          149,
+          261,
+          123
+        ],
+        [
+          5,
+          241,
+          213
+        ]
+      ],
+      "discriminant_is_square": [
+        1,
+        1
+      ],
+      "discriminants_mod_p": [
+        48,
+        51
+      ],
+      "distinct_Frobenius_fields": false,
+      "factor_types": [
+        [
+          3
+        ],
+        [
+          3
+        ]
+      ],
+      "ordinary_pair": true,
+      "p": 349,
+      "point_counts": [
+        373,
+        387
+      ],
+      "status": "COMPLETE_GOOD_PAIR",
+      "traces": [
+        -23,
+        -37
+      ]
+    }
+  ],
+  "witnesses": {
+    "carrier_irreducible": 37,
+    "carrier_transposition": 31,
+    "distinct_quadratic_fields": 17,
+    "geometric_nonisogeny": 17,
+    "original_irreducible": 37,
+    "original_transposition": 17
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "boundary": "No exceptional old-elliptic point was selected. A non-generic carrier Jacobian class is not by itself a non-generic original-fibre point. No full Selmer dimension or Sha event is claimed.",
+  "cases": [
+    {
+      "augmented_rank": 13,
+      "generic_rank": 12,
+      "index": 0,
+      "label": "scale-0131232",
+      "status": "GENERIC_OLD_POINT_BUT_NON_GENERIC_CARRIER_CLASS"
+    },
+    {
+      "augmented_rank": 13,
+      "generic_rank": 12,
+      "index": 1,
+      "label": "scale-0257585",
+      "status": "GENERIC_OLD_POINT_BUT_NON_GENERIC_CARRIER_CLASS"
+    },
+    {
+      "augmented_rank": 13,
+      "generic_rank": 12,
+      "index": 2,
+      "label": "scale-0487239",
+      "status": "GENERIC_OLD_POINT_BUT_NON_GENERIC_CARRIER_CLASS"
+    },
+    {
+      "augmented_rank": 13,
+      "generic_rank": 12,
+      "index": 3,
+      "label": "scale-0177036",
+      "status": "GENERIC_OLD_POINT_BUT_NON_GENERIC_CARRIER_CLASS"
+    },
+    {
+      "augmented_rank": 13,
+      "generic_rank": 12,
+      "index": 4,
+      "label": "scale-0043332",
+      "status": "GENERIC_OLD_POINT_BUT_NON_GENERIC_CARRIER_CLASS"
+    },
+    {
+      "augmented_rank": 13,
+      "generic_rank": 12,
+      "index": 5,
+      "label": "scale-0590501",
+      "status": "GENERIC_OLD_POINT_BUT_NON_GENERIC_CARRIER_CLASS"
+    },
+    {
+      "augmented_rank": 13,
+      "generic_rank": 12,
+      "index": 6,
+      "label": "scale-0290097",
+      "status": "GENERIC_OLD_POINT_BUT_NON_GENERIC_CARRIER_CLASS"
+    },
+    {
+      "augmented_rank": 13,
+      "generic_rank": 12,
+      "index": 7,
+      "label": "scale-0748009",
+      "status": "GENERIC_OLD_POINT_BUT_NON_GENERIC_CARRIER_CLASS"
+    },
+    {
+      "augmented_rank": 13,
+      "generic_rank": 12,
+      "index": 8,
+      "label": "302-generic-section-control",
+      "status": "GENERIC_OLD_POINT_BUT_NON_GENERIC_CARRIER_CLASS"
+    }
+  ],
+  "classification": "source-only specificity comparison; independent replay required",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/protocol.json": "fdbddd6372fb062680c16d0be048fb0f7aa495cdba20cafe10fa140663e32688",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/selection.json": "9aea5e2e787b9595eb2aebf01d3106512ed6661cf356669656519fbbbdac6a6b",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/frame.json": "3a2843642884cbc77bf3cc8b8a0349a873a3a890e2175edf968559605c24c959",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/generic-restrictions.json": "53c01b313a099172176e509e0eab5453fc8a96b5c901c47fb92c855b8428424c",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/replay.json": "3bd5f6bb512105b67cac27a6ecfb5cc4bddf256198733cc327256643903bddea",
+    "artifacts/generated-results/elliptic-curves/det1092_norm8_seed_cover_v2/generic.json": "03d3e86e70709934e219ada1d07ddcc10f2422edf4c8f09ba2cc3344f44c519f",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/protocol.json": "1044eaf4b5c22434eb6cbf2a22ebad0d0154722c929bfaf9d84b06d17ce47df3",
+    "elliptic-curves/cas/construct_det1092_genus1_picard_controls.sage": "fcf71cebc2344eb9ea7a5cdccfccb4688ad9c37758b731ec6111c16a21f89ffe"
+  },
+  "limits": {
+    "NS_generators": 19,
+    "Selmer_dimensions": 0,
+    "V3_inputs": 0,
+    "class_groups": 0,
+    "exceptional_point_inputs": 0,
+    "generic_sections_used_for_selection": [
+      0
+    ],
+    "new_addresses": 0,
+    "old_addresses": 9,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "primes": 64,
+    "wall_seconds": 25
+  },
+  "selector_degree": 4,
+  "status": "COMPLETED_FROZEN_GENUS1_GENERIC_POINT_CONTROLS"
+}

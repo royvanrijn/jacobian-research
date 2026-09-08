@@ -1,0 +1,24 @@
+{
+  "classification": "new explicit obstruction and verified application",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_orbit8044_rank18_base_change_v2.json": "3e71edb8f4d2374f786960ca30fc12787274e14808e2cc54449ab34eae7ebb08",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/protocol.json": "1044eaf4b5c22434eb6cbf2a22ebad0d0154722c929bfaf9d84b06d17ce47df3",
+    "elliptic-curves/cas/construct_det1092_trace_twist_kummer.sage": "f65a70c54ee5e3dadf455597c94c11c9d9534fcaf7d2ddd2262cd006ce488cdc"
+  },
+  "limits": {
+    "Selmer_dimensions": 0,
+    "V3_inputs": 0,
+    "class_groups": 0,
+    "exceptional_point_inputs": 0,
+    "generic_symbolic_identities": 1,
+    "new_addresses": 0,
+    "number_fields": 0,
+    "old_addresses": 9,
+    "old_conics": 1,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "wall_seconds": 25
+  },
+  "rule": "Use the unchanged generic conic8044 and its inherited trace. Construct the rational anti-trace point on its quadratic twist, and compare its norm-square cubic Kummer class with the trace class by an explicit square identity. Evaluate only the nine old original-parameter addresses, with no new point or parameter selection."
+}

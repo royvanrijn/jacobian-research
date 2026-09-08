@@ -184,6 +184,14 @@ among other centres, translates or divisor systems through this witness is
 **UNKNOWN**; the independent orbit8044 conic shows genus0 is possible for
 other seeds on this parent.
 
+**Later verified construction.** A different, generic-selected norm-eight
+pencil now gives a
+[positive-rank genus-one cover through this first seed](DET1092_GENUS_ONE_FIRST_SEED_COVER_2026-09-08.md).
+Thus the verified carrier-genus upper bound for this witness is one; a
+genus-zero carrier through it remains unknown. The minimum of two in the
+fixed norm-ten RR pencil above is not changed. The new member is still
+retrospectively selected, not a prospective302 seed discriminator.
+
 ## The actual seed criterion, distinct from curve solubility
 
 **Verified application / exact sufficient criterion.** For a supplied

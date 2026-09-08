@@ -1,0 +1,23 @@
+{
+  "cases": [
+    {
+      "complete_primes": 37,
+      "index": 0,
+      "rank": 12,
+      "upper": 12
+    },
+    {
+      "complete_primes": 37,
+      "index": 1,
+      "rank": 12,
+      "upper": 12
+    }
+  ],
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/case-00-codes.json": "8a659ba0ddebca173b94214168eaf563710850a5c8c6226548b245d46cdfca42",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/case-01-codes.json": "a748db4e8003284933fd5193565b9ed6a58e7a4e8066de77ac7efb85d60cd1b8",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/protocol.json": "1f1df62f40569799aacd21c233b9e0d77c2a1d70cca37b4704af0940143f325f",
+    "elliptic-curves/cas/construct_det1092_genus1_picard_codes.sage": "572034f1114deb41faf26a7438ab7ba06ed3797ba6b53c82a381cbfd0d0a41b7"
+  },
+  "status": "GENERIC_PICARD_CODES_FROZEN_BEFORE_MARKED_POINT"
+}

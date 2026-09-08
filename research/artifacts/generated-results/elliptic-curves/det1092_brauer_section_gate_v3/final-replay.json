@@ -1,0 +1,37 @@
+{
+  "all_discriminant_primes": [
+    2,
+    3,
+    5,
+    7,
+    11,
+    13,
+    19,
+    23,
+    29,
+    37,
+    41,
+    73,
+    131,
+    167,
+    7547,
+    632881,
+    966509,
+    18145679437533309132469,
+    767028866604834801397681553,
+    30580600452196904409276223329355584892025407195996968868775951126238056443210297
+  ],
+  "classification": "new independently verified global reciprocity boundary",
+  "conclusion": "Every normalized surface2-primary Brauer class is identically zero on each of the nine local elliptic fibres at the21 declared places. On302 these include infinity,2 and every discriminant prime. A nonzero evaluation at any rational302 point therefore needs at least two finite primes outside this set, both good for E302. No such class or detection is claimed.",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_brauer_section_gate_v3/replay.json": "2cd302e7b20c8a0a76ae5530ff1786516ce647b6f6cbc80a720d1201282c18fb",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/protocol.json": "e94acefccffec1a9b52b6e8ed11fb2b56dd78922ca281a37af229a38d667bf00",
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_strict_constructor_arithmetic_inputs_v1.json": "c3b4125f6f14a944f97d405b3a2445ad61feca31b72c37bf9c0e04fd9093b607",
+    "elliptic-curves/cas/verify_det1092_brauer_gate_panel.sage": "226409464785297bef3a0a4d16f8e0a4ada2cc8be1d296d860a00a63f12a2a87",
+    "elliptic-curves/cas/verify_det1092_brauer_section_gate.sage": "5b6a2b39735dddd7acf20de22d1fb766505b484d1c96835a0c3a909b12ddc94d"
+  },
+  "limits": "153 section pairs,17 exact rational intersection locations,189 existing case/place replays; no new control or search fibre.25seconds; no point search, Brauer/Selmer group, later point, V3 input or pilot mutation.",
+  "literal302_discriminant": "56986667162894850943626331069759320443067423220527305082244725946223212417010574363800489149279120357391198820328667683955054948591887684940751932057558936585975074155693048247805850350226862080000",
+  "status": "PASS_FULL_BRAUER_SECTION_AND_LOCAL_BLINDNESS_WITH_COMPLETE_302_BAD_PRIME_SUPPORT"
+}

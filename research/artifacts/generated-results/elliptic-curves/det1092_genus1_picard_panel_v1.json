@@ -1,0 +1,27 @@
+{
+  "classification": "new exact arithmetic and specificity obstructions; independent replay",
+  "conclusion": "The first carrier point is outside the full inherited rational span, but so are all nine generic-old-point controls. Carrier-class non-genericity is not an original-fibre seed discriminator. Inherited carrier group operations cannot generate the first point.",
+  "first_augmented_rank": 13,
+  "full_Selmer_groups": "NOT_COMPUTED",
+  "generic_point_control_augmented_ranks": [
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13
+  ],
+  "inherited_rank": 12,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/replay.json": "82500c56ccd39649ed235d73a70263c07324fdde7cb307f98762793f32954b3c",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/replay.json": "3bd5f6bb512105b67cac27a6ecfb5cc4bddf256198733cc327256643903bddea",
+    "elliptic-curves/cas/verify_det1092_genus1_picard_controls.sage": "cd0b2dd1feb290d385fa12d218bbf826aee13045ec7bf466d93eadd74ebfdbe5",
+    "elliptic-curves/cas/verify_det1092_genus1_picard_image.sage": "ea31acf2a1b926d6127658be576f66d492707a262abcfafd20e11b5ddf237bdf",
+    "elliptic-curves/cas/verify_det1092_genus1_picard_panel.sage": "425b7ad095d271832a0a9d6a90784416e446777df8bcda60f0ecde26b4404fd4"
+  },
+  "nonzero_Sha_classes": "NOT_CLAIMED",
+  "status": "PASS_FULL_PICARD_FIRST_SEED_OBSTRUCTION_AND_NINE_CONTROLS"
+}

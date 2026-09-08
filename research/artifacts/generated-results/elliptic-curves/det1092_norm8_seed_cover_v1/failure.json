@@ -1,0 +1,13 @@
+{
+  "error": "y^2 = x^3 + 5*x + 1 defines a singular curve",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv": "6eabef60743153bad58de5cdc0c49777036991282a362d26ab286722986ae40f",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "elliptic-curves/cas/audit_det1092_norm8_seed_cover.sage": "08144169c68d26dfcf987fc224c28cf71345f91e56b37db6a54cb3e8213bd212",
+    "elliptic-curves/cas/construct_det1092_norm8_elliptic_pencil.sage": "832a8e06f1d9f4ff94ab8c11bfcdc80ae8b20c0f7c04b468b1883fc2e9ff4d8e",
+    "elliptic-curves/cas/load_curve302_recovered_parent.sage": "c4d57ab8ebeedfbc8b74c1838760dd4036d958985ed63ad2f52b2ce348d3173f",
+    "elliptic-curves/cas/visibility_lattice_v2.py": "b287cad1bd128ebda2e726197e781463442eb2670437f51f162475bb21fbcce1"
+  },
+  "status": "UNRESOLVED_FIXED_CONSTRUCTION",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/audit_det1092_norm8_seed_cover.sage\", line 34, in main\n    result=runpy.run_path(str(paths[0]))['build']()\n  File \"/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/construct_det1092_norm8_elliptic_pencil.sage\", line 69, in build\n    field=GF(p);ep=EllipticCurve(field,jac.a_invariants())\n                   ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"sage/structure/factory.pyx\", line 372, in sage.structure.factory.UniqueFactory.__call__\n    return self.get_object(version, key, kwds)\n  File \"sage/structure/factory.pyx\", line 415, in sage.structure.factory.UniqueFactory.get_object\n    obj = self.create_object(version, key, **extra_args)\n  File \"/home/royvanrijn/.local/share/jacobian-sage-10.9/lib/python3.14/site-packages/sage/schemes/elliptic_curves/constructor.py\", line 541, in create_object\n    return EllipticCurve_finite_field(R, x)\n  File \"/home/royvanrijn/.local/share/jacobian-sage-10.9/lib/python3.14/site-packages/sage/schemes/elliptic_curves/ell_field.py\", line 53, in __init__\n    super().__init__(R, data, category=category)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/royvanrijn/.local/share/jacobian-sage-10.9/lib/python3.14/site-packages/sage/schemes/elliptic_curves/ell_generic.py\", line 146, in __init__\n    raise ArithmeticError(self._equation_string() + \" defines a singular curve\")\nArithmeticError: y^2 = x^3 + 5*x + 1 defines a singular curve\n"
+}

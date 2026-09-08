@@ -1,0 +1,12 @@
+{
+  "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+  "stage": "PRE_FIXTURE_SYNTHETIC_ONLY",
+  "no_parent_or_arm_read": true,
+  "mount_namespace_probe": "FAILED: WSL refused bind mount; no arm launched",
+  "synthetic_initial_failure": "Wrong sign in toy chord; fixed before freeze, no arm launched",
+  "landlock_abi": 7,
+  "network_namespace": "unshare -Unpf",
+  "result": "PASS synthetic residual and isolated runtime 10.9\n",
+  "returncode": 0,
+  "stderr": ""
+}

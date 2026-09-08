@@ -7,6 +7,12 @@ by this repair, and finding a larger rank is not guaranteed.
 
 ## Run
 
+Completion update: cases **41, 72 and 186 all independently verified 27→27**,
+after 1508, 1608 and 1512 charts respectively. The roster is complete, not
+waiting on the historical startup repairs. See the
+[result summary and retained session](CURVE302_SEEDED_V3_RESULTS_2026-09-08.md).
+Commands below remain operational reference, not a request to restart it.
+
 From the repository root:
 
 ```sh

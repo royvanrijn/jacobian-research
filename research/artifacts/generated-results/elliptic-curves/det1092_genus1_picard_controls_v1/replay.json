@@ -1,0 +1,1837 @@
+{
+  "boundary": "The first seed also gives rank12->13 on its calibrated carrier, but this property holds for generic old points on all eight controls and the source-only302 member. It is not an original-fibre seed discriminator. No full Selmer dimension or nonzero Sha class is inferred.",
+  "cases": [
+    {
+      "carrier_class": "RATIONAL_OUTSIDE_FULL_PICARD_IMAGE; SELMER_WITH_ZERO_SHA_IMAGE",
+      "generic_Picard_image_rank": 12,
+      "index": 0,
+      "label": "scale-0131232",
+      "local_comparisons": [
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 53
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 67
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 73
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 83
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 131
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 137
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 139
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 151
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 157
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 167
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 173
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 191
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 193
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 197
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 199
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 211
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 227
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 233
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 239
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 241
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 251
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 263
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 271
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 283
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 293
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 307
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 311
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 313
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 331
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 337
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 347
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 349
+        }
+      ],
+      "no_rational_2_torsion_prime": 53,
+      "old_elliptic_class": "GENERIC_SECTION0; ZERO_RELATIVE_CLASS",
+      "rank_with_marked_class": 13
+    },
+    {
+      "carrier_class": "RATIONAL_OUTSIDE_FULL_PICARD_IMAGE; SELMER_WITH_ZERO_SHA_IMAGE",
+      "generic_Picard_image_rank": 12,
+      "index": 1,
+      "label": "scale-0257585",
+      "local_comparisons": [
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 23
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 73
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 79
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 89
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 101
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 109
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 113
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 131
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 139
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 149
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 151
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 167
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 173
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 181
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 193
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 197
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 199
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 211
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 223
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 227
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 233
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 239
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 251
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 257
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 263
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 277
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 283
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 293
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 307
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 311
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 313
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 317
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 331
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 337
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 347
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 349
+        }
+      ],
+      "no_rational_2_torsion_prime": 23,
+      "old_elliptic_class": "GENERIC_SECTION0; ZERO_RELATIVE_CLASS",
+      "rank_with_marked_class": 13
+    },
+    {
+      "carrier_class": "RATIONAL_OUTSIDE_FULL_PICARD_IMAGE; SELMER_WITH_ZERO_SHA_IMAGE",
+      "generic_Picard_image_rank": 12,
+      "index": 2,
+      "label": "scale-0487239",
+      "local_comparisons": [
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 23
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 43
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 53
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 79
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 89
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 103
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 107
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 109
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 113
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 127
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 131
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 137
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 139
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 149
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 163
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 167
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 173
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 181
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 191
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 193
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 197
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 211
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 223
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 227
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 233
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 239
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 241
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 251
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 257
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 271
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 277
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 281
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 293
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 307
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 313
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 317
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 331
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 337
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 347
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 349
+        }
+      ],
+      "no_rational_2_torsion_prime": 23,
+      "old_elliptic_class": "GENERIC_SECTION0; ZERO_RELATIVE_CLASS",
+      "rank_with_marked_class": 13
+    },
+    {
+      "carrier_class": "RATIONAL_OUTSIDE_FULL_PICARD_IMAGE; SELMER_WITH_ZERO_SHA_IMAGE",
+      "generic_Picard_image_rank": 12,
+      "index": 3,
+      "label": "scale-0177036",
+      "local_comparisons": [
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 17
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 23
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 67
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 79
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 101
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 109
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 127
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 149
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 151
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 157
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 163
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 167
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 173
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 179
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 181
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 191
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 193
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 199
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 211
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 223
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 227
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 233
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 239
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 241
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 251
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 257
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 263
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 271
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 277
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 281
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 283
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 293
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 307
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 311
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 313
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 337
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 347
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 349
+        }
+      ],
+      "no_rational_2_torsion_prime": 17,
+      "old_elliptic_class": "GENERIC_SECTION0; ZERO_RELATIVE_CLASS",
+      "rank_with_marked_class": 13
+    },
+    {
+      "carrier_class": "RATIONAL_OUTSIDE_FULL_PICARD_IMAGE; SELMER_WITH_ZERO_SHA_IMAGE",
+      "generic_Picard_image_rank": 12,
+      "index": 4,
+      "label": "scale-0043332",
+      "local_comparisons": [
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 37
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 53
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 67
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 79
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 107
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 113
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 131
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 137
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 139
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 149
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 151
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 157
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 163
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 167
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 173
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 181
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 191
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 193
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 197
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 223
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 227
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 233
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 239
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 241
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 251
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 263
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 271
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 277
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 281
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 283
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 293
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 307
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 311
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 313
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 317
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 331
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 337
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 347
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 349
+        }
+      ],
+      "no_rational_2_torsion_prime": 37,
+      "old_elliptic_class": "GENERIC_SECTION0; ZERO_RELATIVE_CLASS",
+      "rank_with_marked_class": 13
+    },
+    {
+      "carrier_class": "RATIONAL_OUTSIDE_FULL_PICARD_IMAGE; SELMER_WITH_ZERO_SHA_IMAGE",
+      "generic_Picard_image_rank": 12,
+      "index": 5,
+      "label": "scale-0590501",
+      "local_comparisons": [
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 23
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 43
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 67
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 73
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 79
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 83
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 89
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 109
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 127
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 131
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 139
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 149
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 151
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 157
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 163
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 167
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 173
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 181
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 191
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 193
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 197
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 199
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 211
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 223
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 227
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 233
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 239
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 241
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 251
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 257
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 271
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 277
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 281
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 293
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 307
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 311
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 313
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 331
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 337
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 347
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 349
+        }
+      ],
+      "no_rational_2_torsion_prime": 23,
+      "old_elliptic_class": "GENERIC_SECTION0; ZERO_RELATIVE_CLASS",
+      "rank_with_marked_class": 13
+    },
+    {
+      "carrier_class": "RATIONAL_OUTSIDE_FULL_PICARD_IMAGE; SELMER_WITH_ZERO_SHA_IMAGE",
+      "generic_Picard_image_rank": 12,
+      "index": 6,
+      "label": "scale-0290097",
+      "local_comparisons": [
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 17
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 43
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 53
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 73
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 79
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 131
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 137
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 139
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 149
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 151
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 157
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 163
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 167
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 173
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 181
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 193
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 197
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 211
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 223
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 227
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 233
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 251
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 257
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 263
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 271
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 277
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 281
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 293
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 307
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 311
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 317
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 331
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 337
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 347
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 349
+        }
+      ],
+      "no_rational_2_torsion_prime": 17,
+      "old_elliptic_class": "GENERIC_SECTION0; ZERO_RELATIVE_CLASS",
+      "rank_with_marked_class": 13
+    },
+    {
+      "carrier_class": "RATIONAL_OUTSIDE_FULL_PICARD_IMAGE; SELMER_WITH_ZERO_SHA_IMAGE",
+      "generic_Picard_image_rank": 12,
+      "index": 7,
+      "label": "scale-0748009",
+      "local_comparisons": [
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 79
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 83
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 89
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 113
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 131
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 137
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 139
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 149
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 151
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 157
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 163
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 167
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 173
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 179
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 181
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 193
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 197
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 199
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 211
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 223
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 227
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 233
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 239
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 241
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 251
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 257
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 271
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 277
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 281
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 283
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 293
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 307
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 311
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 313
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 317
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 331
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 337
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 347
+        }
+      ],
+      "no_rational_2_torsion_prime": 83,
+      "old_elliptic_class": "GENERIC_SECTION0; ZERO_RELATIVE_CLASS",
+      "rank_with_marked_class": 13
+    },
+    {
+      "carrier_class": "RATIONAL_OUTSIDE_FULL_PICARD_IMAGE; SELMER_WITH_ZERO_SHA_IMAGE",
+      "generic_Picard_image_rank": 12,
+      "index": 8,
+      "label": "302-generic-section-control",
+      "local_comparisons": [
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 67
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 73
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 79
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 89
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 97
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 131
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 139
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 149
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 151
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 157
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 163
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 173
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 181
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 191
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 193
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 197
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 199
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 211
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 223
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 227
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 233
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 239
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 241
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 251
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 257
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 263
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 271
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 277
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 281
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 293
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 307
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 311
+        },
+        {
+          "full_dimension": 2,
+          "generic_rank": 2,
+          "p": 313
+        },
+        {
+          "full_dimension": 0,
+          "generic_rank": 0,
+          "p": 317
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 337
+        },
+        {
+          "full_dimension": 1,
+          "generic_rank": 1,
+          "p": 349
+        }
+      ],
+      "no_rational_2_torsion_prime": 67,
+      "old_elliptic_class": "GENERIC_SECTION0; ZERO_RELATIVE_CLASS",
+      "rank_with_marked_class": 13
+    }
+  ],
+  "classification": "new exact specificity obstruction and verified application",
+  "generic_explanation": "The source-only degree4 base change z=z_section0(tau) gives a rational marked section of the carrier Jacobian. Its independence from the full inherited image at a certified specialization implies the same independence overQ(tau), while its old-elliptic image is identically the generic section0.",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-00-codes.json": "b48f73a7aea3ca6f512c9281cd786c4cc2c15496b2721f54f5e73e5cc77fdd96",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-00-generic.json": "20c34847265099d328c9d0e3c5adfd87ce791948c59f696d8af597d8f28b8f9c",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-00-marked.json": "d8f92a70f15eaef62bc0a47b1bdbc00ae1c2a09cbf637db6182e93c3bd6e0bbd",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-01-codes.json": "3ee30555bc72e44fef5272e87a1d40c59e2eeb431dd940072bf7781107bf10c0",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-01-generic.json": "c0b62e14b3d8759f42dfab0d440e611796a81ab8cd87a735a12fa75fafc61de4",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-01-marked.json": "51fb23837f142952e454097254af4a7f1d71b8b2e126c51f47b350e955964713",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-02-codes.json": "e3c2af81da19f2c87a85f5c76b4285c4de11b7b0dd5633fdc2d7d4adb897ca0a",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-02-generic.json": "fea1b9267bb1a4f3a939d6fa8c09c440dbad22fa8b90e188ef74244d2053219b",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-02-marked.json": "941b151d69927b69330837fe67ddb3e93b3f82bf962c91c035f5dc3ae5a7c7b6",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-03-codes.json": "b3035740f448d016dd6000392b1201e3d20827f38510e788668759507e4dbc39",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-03-generic.json": "ff3998a643322c520a50dd050d36a2acaf2d0a2687546a7a31bd7beef80192c5",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-03-marked.json": "de5e43f1eca951b16f09904d875f993638863fb267475f051f02317416d0afe2",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-04-codes.json": "e0235f7cfb7b21b3b76af0e7607a59b51d5be581338e1c53bef7af5050c24943",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-04-generic.json": "9119f9517b7db4614feef497f71b05b9564579bcce88c997dfd0afd19e0bd542",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-04-marked.json": "9cc9291f67d9895fa7a47481335c26cc702201d25f14c017a9b0d4c4c0f0abd9",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-05-codes.json": "0f727dec392b93825ceec0d1f59400793eefeb7e07a39b8f9218911f6596b4e1",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-05-generic.json": "f1ea560950781e1472dabb314c6745d984a9df8f3fe40485aaee360ad3394c51",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-05-marked.json": "763a2f522a6e66096c0148a43314697b5a2962bbc75f51c8f5007d5d0b7607ed",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-06-codes.json": "ae2193cb20bf70159027beaab1bdfa7ee42fbc94e33a4a68847e87c55b68bf0b",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-06-generic.json": "be74301442530b4fb8663550b5d86c04671b42b5abf5752582bf66558b34c0e9",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-06-marked.json": "152b230ad400b952e6bdb960b643414c0b823b2a9d981a7c94d28c86280db273",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-07-codes.json": "a2393033e628cac8bfd145e4a5d28a3e10a1ee12ed8a434b2617c37acf3a1e32",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-07-generic.json": "bd8821aa8f648cbb1b4362c7209822949c409461b4478b8dfd9dfd4c9172611d",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-07-marked.json": "5913863614e5c96e5af753665e31bacb9d2176b5f715605f55aaf2b958fda291",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-08-codes.json": "6827a04303d628828ee21e3b2de5ce1f9e73c0394281c753cfb9c8935d608307",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-08-generic.json": "6b3a321932b0099b9cbe0d698afe6af992e105131585ca06660597444755dddc",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/case-08-marked.json": "13500a0a27ca696dae9076767589301def36693dcf71fa4de81f07b63bfdb177",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/panel.json": "7709760fbe829198c3331fc70a30388cf4bf414305f79d5851a9cf8e2d366e7c",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/protocol.json": "fdbddd6372fb062680c16d0be048fb0f7aa495cdba20cafe10fa140663e32688",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_controls_v1/selection.json": "9aea5e2e787b9595eb2aebf01d3106512ed6661cf356669656519fbbbdac6a6b",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/frame.json": "3a2843642884cbc77bf3cc8b8a0349a873a3a890e2175edf968559605c24c959",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/generic-restrictions.json": "53c01b313a099172176e509e0eab5453fc8a96b5c901c47fb92c855b8428424c",
+    "artifacts/generated-results/elliptic-curves/det1092_norm8_seed_cover_v2/generic.json": "03d3e86e70709934e219ada1d07ddcc10f2422edf4c8f09ba2cc3344f44c519f",
+    "elliptic-curves/cas/verify_det1092_genus1_picard_controls.sage": "cd0b2dd1feb290d385fa12d218bbf826aee13045ec7bf466d93eadd74ebfdbe5",
+    "elliptic-curves/cas/verify_det1092_genus1_picard_image.sage": "ea31acf2a1b926d6127658be576f66d492707a262abcfafd20e11b5ddf237bdf"
+  },
+  "limits": {
+    "NS_generators": 19,
+    "Selmer_dimensions": 0,
+    "V3_inputs": 0,
+    "class_groups": 0,
+    "exceptional_point_inputs": 0,
+    "generic_sections_used_for_selection": [
+      0
+    ],
+    "new_addresses": 0,
+    "old_addresses": 9,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "primes": 64,
+    "wall_seconds": 25
+  },
+  "selector_degree": 4,
+  "status": "PASS_INDEPENDENT_NINE_GENUS1_PICARD_SPECIFICITY_COUNTEREXAMPLES"
+}

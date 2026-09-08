@@ -1,0 +1,26 @@
+{
+  "classification": "generic-only rational-section intersection graph",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_brauer_section_gate_v1/frame.json": "fab740edf2cf152f09bd1a6481ea2b2ef0fd3a6c9b1ddff8feeeac6efc4dd43c",
+    "artifacts/generated-results/elliptic-curves/det1092_brauer_section_gate_v2/frame.json": "a414746a833e7b5489dbfe86151431d3f6caf9fe8e4cc75f3927296030321e01",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/protocol.json": "e94acefccffec1a9b52b6e8ed11fb2b56dd78922ca281a37af229a38d667bf00",
+    "elliptic-curves/cas/construct_det1092_brauer_section_gate_v3.sage": "12ffbcb06f7190daf45d317a475e6cdc778f9ded90f2868d3e7a296bdc4ff37c"
+  },
+  "limits": {
+    "Brauer_group_computation": 0,
+    "Selmer_groups": 0,
+    "V3_inputs": 0,
+    "class_groups": 0,
+    "curves": 18,
+    "exceptional_coordinate_inputs": 0,
+    "new_addresses": 0,
+    "new_lattice_nodes": 0,
+    "pairs": 153,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "wall_seconds": 25
+  },
+  "retained_input_failures": "v1 raw4096-row prefix and v2 norm6-filtered old bisection table both expose no norm6 words; the saved table lists degree-two bisection classes, not the omitted short section classes. Neither is an arithmetic exclusion. This version uses only the original18 curves.",
+  "rule": "Use O and all17 original generic sections. Check all153 unordered distinct pairs from the exact Gram. Keep intersection degree one and use deterministic breadth-first traversal from O. No section or point is selected from a specialized outcome."
+}

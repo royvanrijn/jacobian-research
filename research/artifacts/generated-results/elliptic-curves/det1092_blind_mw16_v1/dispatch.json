@@ -1,0 +1,27 @@
+{
+  "arms": [
+    "arm-01",
+    "arm-02",
+    "arm-03",
+    "arm-04",
+    "arm-05",
+    "arm-06",
+    "arm-07",
+    "arm-08",
+    "arm-09",
+    "arm-10",
+    "arm-11",
+    "arm-12",
+    "arm-13",
+    "arm-14",
+    "arm-15",
+    "arm-16",
+    "arm-17"
+  ],
+  "launch_utc": "2026-09-08T15:57:30.911199+00:00",
+  "protocol_sha256": "e4eb7191e602077d7a8dd4a22c6087b689a0bb48072d4d941d2ab06b685c09bb",
+  "reruns": 0,
+  "runner_sha256": "95bdb36b93ebe563333bbbbfe3f679d7f332171625d25d947a8d757888bf4522",
+  "sequential": true,
+  "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b"
+}

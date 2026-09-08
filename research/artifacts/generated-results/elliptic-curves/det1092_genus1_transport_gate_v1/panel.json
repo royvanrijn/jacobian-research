@@ -1,0 +1,139 @@
+{
+  "all_certified": true,
+  "cases": [
+    {
+      "label": "302-first-carrier",
+      "status": "CERTIFIED_TRANSPORT_OBSTRUCTION",
+      "witnesses": {
+        "carrier_irreducible": 61,
+        "carrier_transposition": 43,
+        "distinct_quadratic_fields": 43,
+        "geometric_nonisogeny": 43,
+        "original_irreducible": 43,
+        "original_transposition": 47
+      }
+    },
+    {
+      "label": "scale-0131232",
+      "status": "CERTIFIED_TRANSPORT_OBSTRUCTION",
+      "witnesses": {
+        "carrier_irreducible": 53,
+        "carrier_transposition": 23,
+        "distinct_quadratic_fields": 17,
+        "geometric_nonisogeny": 17,
+        "original_irreducible": 23,
+        "original_transposition": 17
+      }
+    },
+    {
+      "label": "scale-0257585",
+      "status": "CERTIFIED_TRANSPORT_OBSTRUCTION",
+      "witnesses": {
+        "carrier_irreducible": 23,
+        "carrier_transposition": 67,
+        "distinct_quadratic_fields": 67,
+        "geometric_nonisogeny": 67,
+        "original_irreducible": 23,
+        "original_transposition": 73
+      }
+    },
+    {
+      "label": "scale-0487239",
+      "status": "CERTIFIED_TRANSPORT_OBSTRUCTION",
+      "witnesses": {
+        "carrier_irreducible": 23,
+        "carrier_transposition": 19,
+        "distinct_quadratic_fields": 43,
+        "geometric_nonisogeny": 19,
+        "original_irreducible": 23,
+        "original_transposition": 19
+      }
+    },
+    {
+      "label": "scale-0177036",
+      "status": "CERTIFIED_TRANSPORT_OBSTRUCTION",
+      "witnesses": {
+        "carrier_irreducible": 17,
+        "carrier_transposition": 31,
+        "distinct_quadratic_fields": 17,
+        "geometric_nonisogeny": 17,
+        "original_irreducible": 23,
+        "original_transposition": 17
+      }
+    },
+    {
+      "label": "scale-0043332",
+      "status": "CERTIFIED_TRANSPORT_OBSTRUCTION",
+      "witnesses": {
+        "carrier_irreducible": 37,
+        "carrier_transposition": 31,
+        "distinct_quadratic_fields": 17,
+        "geometric_nonisogeny": 17,
+        "original_irreducible": 37,
+        "original_transposition": 17
+      }
+    },
+    {
+      "label": "scale-0590501",
+      "status": "CERTIFIED_TRANSPORT_OBSTRUCTION",
+      "witnesses": {
+        "carrier_irreducible": 23,
+        "carrier_transposition": 31,
+        "distinct_quadratic_fields": 43,
+        "geometric_nonisogeny": 43,
+        "original_irreducible": 23,
+        "original_transposition": 31
+      }
+    },
+    {
+      "label": "scale-0290097",
+      "status": "CERTIFIED_TRANSPORT_OBSTRUCTION",
+      "witnesses": {
+        "carrier_irreducible": 17,
+        "carrier_transposition": 31,
+        "distinct_quadratic_fields": 17,
+        "geometric_nonisogeny": 17,
+        "original_irreducible": 43,
+        "original_transposition": 17
+      }
+    },
+    {
+      "label": "scale-0748009",
+      "status": "CERTIFIED_TRANSPORT_OBSTRUCTION",
+      "witnesses": {
+        "carrier_irreducible": 83,
+        "carrier_transposition": 17,
+        "distinct_quadratic_fields": 67,
+        "geometric_nonisogeny": 17,
+        "original_irreducible": 67,
+        "original_transposition": 17
+      }
+    },
+    {
+      "label": "302-generic-section-control",
+      "status": "CERTIFIED_TRANSPORT_OBSTRUCTION",
+      "witnesses": {
+        "carrier_irreducible": 67,
+        "carrier_transposition": 17,
+        "distinct_quadratic_fields": 53,
+        "geometric_nonisogeny": 17,
+        "original_irreducible": 97,
+        "original_transposition": 17
+      }
+    }
+  ],
+  "classification": "verified application of ordinary-reduction and joint2-torsion obstructions",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-00.json": "8211dc39b8ce1203f4ac7c19584299a2aa3052ab1fa3c8345cb8e07ff3519e3f",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-01.json": "ac4cfdd3bdd8327d6831f9524aa3fc19c89a4e0295ebc2cf1710489bd10bb95d",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-02.json": "215889f37d265f0899749a1fe4f26cf6d6f531c447874ba7b9ace0bf30c62e9f",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-03.json": "11538b8f02fdf2fc8a0d4a2fb4e9590ad4083ba5c87e7e07ba4c57fa7d80cea4",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-04.json": "175af0b59595eed2550baf9ea19e287287732fee7a6e460534e62a03414dca5c",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-05.json": "2166137682879a10cbc46b3e37a005a6346236d6f9ef5141f472674ac3fb00d1",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-06.json": "46352b1f2a0505b97a29b64c5920aac685cf79e9bd3b55465ec23e47446fea36",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-07.json": "26e77e791fbef10c6af53586507f4415bdb94d1c6717f29052776bef3994817e",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-08.json": "ded4e333c3a3fcf6b05c56e7d2c3c398faa8ad08a8f8ebf14ec363f837d48365",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/case-09.json": "2392de05912bac4edd06f089495feab1a85550c1987d7a8474aeeba9da32482d",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_transport_gate_v1/protocol.json": "d5ff1df8d40b03fe5bb2e2071574b7d9d1917249ab80ceab382b710d636eaa8e"
+  }
+}
