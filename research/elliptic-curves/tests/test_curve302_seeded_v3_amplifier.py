@@ -1,6 +1,7 @@
 import ast
 import importlib.util
 import inspect
+from fractions import Fraction
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[2]
@@ -38,7 +39,7 @@ def test_oracle_inputs_are_explicit():
     assert m.ORBITS.name=='curve302_parent_degree2_multisection_orbits_v1.tsv'
 
 
-def test_ordered_seed_state_builds_joint_reduction_matrix_directly():
+def test_ordered_seed_state_uses_existing_normalized_trust_boundary():
     tree=ast.parse(inspect.getsource(m.ordered_seed_state))
     calls=[]
     for node in ast.walk(tree):
@@ -48,16 +49,20 @@ def test_ordered_seed_state_builds_joint_reduction_matrix_directly():
             calls.append(node.func.id)
         elif isinstance(node.func,ast.Attribute):
             calls.append(node.func.attr)
-
+    assert 'certified_state' in calls
+    assert 'assert_basis' in calls
     assert 'raw_state' not in calls
-    assert 'certified_state' not in calls
-    assert 'empty' in calls          # IncrementalReductions.empty / MWState.empty
-    assert 'append' in calls         # append all frozen certificate columns
-    assert 'signature' in calls      # exact certificate-signature replay
-    assert 'verify' in calls         # MWState trust-boundary replay
-
     source=inspect.getsource(m.ordered_seed_state)
-    assert 'reductions.independent_images' in source
-    assert 'reductions.basis.rank==len(points)' in source
-    assert "actual==proof['signatures']" in source
-    assert 'tuple(state.basis)==points' in source
+    assert 'tuple(state.basis)' not in source
+    assert 'reductions.points' not in source
+
+
+def test_basis_comparison_normalizes_storage_representation():
+    # MWState/research_runtime stores exact rationals canonically as strings;
+    # callers frequently hold the same values as Fraction/Sage rationals.
+    import sys
+    sys.path.insert(0,str(ROOT/'elliptic-curves/cas'))
+    from v3_warm_support import point_tuple
+    stored=(('1/2','-7/3'),('123','5/11'))
+    caller=((Fraction(1,2),Fraction(-7,3)),(Fraction(123),Fraction(5,11)))
+    assert point_tuple(stored)==point_tuple(caller)
