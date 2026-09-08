@@ -76,11 +76,33 @@ def update(status,**extra):
     print('CURVE302_SEEDED_V3',status,json.dumps(extra,sort_keys=True),flush=True)
 
 
+def ordered_seed_state(model, points):
+    """Build a search state while preserving the exact supplied generator order.
+
+    The compact `checked_rank` certificate proves the supplied columns jointly
+    independent, but its selected signatures need not certify every prefix.
+    Feeding that compact certificate into incremental `certified_state` can
+    therefore legitimately retain a different independent prefix. V3's orbit
+    coordinates require columns 0..16 to remain the generic M17 marking and the
+    chosen exceptional seed to remain column 17. The repository's `raw_state`
+    admission path uses additional finite reductions (up to the same fixed
+    bound) specifically to preserve ordered input generators when possible.
+    """
+    from research_runtime.memory_store import MemoryFactStore
+    from research_runtime.quotient_only_reduction import QuotientOnlyReductionCache as Cache
+    from research_runtime.search_state import raw_state
+    from v3_warm_support import require
+    cache=Cache(MemoryFactStore())
+    state=raw_state(model,points,cache=cache,prime_bound=1000)
+    require(state.rank==len(points),'ordered seed state did not certify every supplied generator')
+    require(tuple(state.basis)==tuple(points),'ordered seed state changed generator order')
+    return state
+
+
 def construct_seed(seed_id):
     """Oracle stage only: reconstruct one displayed M31 direction, then seal M18."""
     from importlib.machinery import SourceFileLoader
-    from v3_warm_support import atomic as immutable_atomic, point_tuple, curve_tuple, require
-    from v3_warm_engine import certified_state
+    from v3_warm_support import atomic as immutable_atomic, require
     from memory_rank_certificate import checked_rank
 
     folder=D/seed_id; folder.mkdir(parents=True,exist_ok=True)
@@ -104,8 +126,7 @@ def construct_seed(seed_id):
     torsion=int(parent_proof['no_rational_2_torsion_prime'])
     proof=checked_rank(model,points,primes,torsion)
     require(proof['rank_lower_bound']==18,'seed did not certify rank 18')
-    state=certified_state(model,points,proof)
-    require(state.rank==18 and tuple(state.basis)==points,'certified M18 seed changed order')
+    ordered_seed_state(model,points)
 
     engine=SourceFileLoader('curve302_seed_policy_engine',str(CAS/'adaptive_visibility_cascade_v3.sage')).load_module()
     original=read(V3/'protocol.json')
@@ -133,7 +154,7 @@ def construct_seed(seed_id):
 
 def context(seed_id):
     from importlib.machinery import SourceFileLoader
-    from v3_warm_engine import Context, certified_state
+    from v3_warm_engine import Context
     from v3_warm_support import point_tuple, curve_tuple, require, sha as vsha
     folder=D/seed_id; policy=read(folder/'protocol.json')
     seed,proof=read(folder/'seed-input.json'),read(folder/'seed-proof.json')
@@ -141,20 +162,19 @@ def context(seed_id):
     require(seed['seed_direction']==seed_id and len(points)==18,'wrong sealed seed')
     require(vsha(folder/'seed-input.json')==policy['seed_inputs'][str((folder/'seed-input.json').relative_to(ROOT))],'seed input changed')
     require(vsha(folder/'seed-proof.json')==policy['seed_inputs'][str((folder/'seed-proof.json').relative_to(ROOT))],'seed proof changed')
-    state=certified_state(model,points,proof); require(state.rank==18,'M18 seed replay failed')
+    require(proof['rank_lower_bound']==18,'sealed seed proof no longer certifies M18')
+    state=ordered_seed_state(model,points)
     engine=SourceFileLoader('curve302_seeded_numeric_'+seed_id.replace('-','_'),str(CAS/'adaptive_visibility_cascade_v3.sage')).load_module()
     require(engine.sources()==read(V3/'protocol.json')['sources'],'V3 numerical engine changed')
     engine.D=folder; engine.ORBITS=ORBITS; engine.v1.D=folder; engine.v1.ORBITS=ORBITS
-    # Deliberately do not call v1.guard(): its D-specific generic-input contract belongs
-    # to the original M17 calibration. All numerical source bytes are hash-checked above.
     sources={**engine.sources(),str(SELF.relative_to(ROOT)):sha(SELF)}
     return Context(seed_id,folder,ROOT,policy,engine,model,state,sources)
 
 
 def verify_case(ctx):
     """Independent replay adapted from det1092_v3_replay, with initial rank 18."""
-    from v3_warm_support import (atomic as immutable_atomic, bindings, check_chart, curve_tuple,
-        indexed_paths, point_tuple, require, sha as vsha, terminal_structure, within)
+    from v3_warm_support import (atomic as immutable_atomic, check_chart,
+        indexed_paths, point_tuple, require, sha as vsha, terminal_structure)
     from v3_warm_engine import certified_state, restore_state
     from v3_warm_replay import verify_landscape
     from pointed_quartic_search import PointedQuarticSearch
@@ -215,7 +235,6 @@ def verify_case(ctx):
 
 
 def worker():
-    from v3_warm_support import require
     import det1092_v3_worker as searcher
     update('PREPARING')
     results=[]
@@ -260,26 +279,32 @@ def status():
     for seed in SEEDS:
         folder=D/seed
         if (folder/'seeded-verified.json').exists(): cases[seed]=read(folder/'seeded-verified.json')
-        elif (folder/'replay-M17/terminal.json').exists(): cases[seed]={'status':'SEARCH_SEALED_REPLAY_PENDING',**read(folder/'replay-M17/terminal.json')}
-        elif folder.exists(): cases[seed]={'status':'PREPARED_OR_SEARCHING'}
+        elif (folder/'replay-M17/terminal.json').exists(): cases[seed]={'status':'SEARCH_SEALED_REPLAY_PENDING'}
+        elif (folder/'protocol.json').exists(): cases[seed]={'status':'SEED_PREPARED'}
         else: cases[seed]={'status':'PENDING'}
-    row['cases']={k:{x:v.get(x) for x in ('status','initial_rank','rank_lower_bound','gain','charts','stop_reason')} for k,v in cases.items()}
+    row['cases']=cases
+    if row.get('status') in ('PREPARING','RUNNING_SEARCH','REPLAYING','LAUNCHED') and not row['process_alive']:
+        row['effective_status']='STOPPED_REVIEW_REQUIRED'
     print(json.dumps(row,indent=2,sort_keys=True))
 
-def diagnose(): status(); print('\n--- worker log tail ---\n'+tail(LOG,30000))
+def diagnose():
+    status(); print(tail(LOG,30000))
+
 def stop():
     row=read(STATE) if STATE.exists() else {}
     pid=row.get('pid')
-    if not process_alive(pid): print('No live worker'); return
-    os.kill(pid,signal.SIGTERM); print('Stop requested; checkpoints retained')
+    if not process_alive(pid): print('No live seeded worker'); return
+    os.killpg(pid,signal.SIGTERM); print('Stop requested; checkpoints retained')
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__); p.add_argument('action',choices=('launch','resume','status','diagnose','stop','worker')); a=p.parse_args()
-    if a.action=='worker': worker()
-    elif a.action=='launch': launch(False)
+    p=argparse.ArgumentParser(description=__doc__)
+    p.add_argument('action',choices=('launch','resume','status','diagnose','stop','worker'))
+    a=p.parse_args()
+    if a.action=='launch': launch(False)
     elif a.action=='resume': launch(True)
     elif a.action=='status': status()
     elif a.action=='diagnose': diagnose()
-    else: stop()
+    elif a.action=='stop': stop()
+    else: worker()
 
 if __name__=='__main__': main()
