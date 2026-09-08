@@ -19,15 +19,17 @@ forwards its targets to that directory.
 <!-- BEGIN GENERATED ELLIPTIC CURVE TABLE -->
 ## Elliptic curve inventory
 
-**201 research curves · 129 exact conductors · 72 unresolved**.
+**212 research curves · 129 exact conductors · 83 unresolved**.
 ICARM #600 and #619 were independently rediscovered; #626–#630 are submissions by Roy van Rijn. Each ICARM entry is followed by its credited submitter. Rank values are proved lower bounds.
 
-Columns and height conventions follow [ICARM’s table](https://elliptic-rank.icarm.cloud/curves). Logs are natural and shown to two decimals. A dash means the exact conductor is unknown; bounds and partial primes are available on the linked curve page. Coefficients are clipped here; each page contains the complete equation and data.
+Columns and height conventions follow [ICARM’s table](https://elliptic-rank.icarm.cloud/curves). Logs are natural and shown to two decimals. A dash means the value is uncomputed or uncertified; available conductor bounds and partial primes are on the linked curve page. Coefficients are clipped here; each page contains the complete equation and data.
+
+The original 201 curves have certified minimal models. The 11 additional [determinant1092 seed curves](research/elliptic-curves/notes/INVENTORY_SEED_SUPPLEMENT_2026-09-08.md) retain their source equations; minimal-model metrics remain uncomputed. Duplicate seed packets appear once. Infinite families are represented by their exported examples.
 
 [Download JSON](research/elliptic-curves/data/research_curves/database.json) · [Download CSV](research/elliptic-curves/data/research_curves/database.csv) · [Arithmetic and replay notes](research/elliptic-curves/notes/INVENTORY201_TABLE_AND_CONDUCTORS_2026-09-07.md)
 
 <details>
-<summary>Show all 201 curves</summary>
+<summary>Show all 212 curves</summary>
 
 | Curve | a-invariants | Rank | log N | Naive height | Faltings height | log abs(Δ) |
 |---|---|---:|---:|---:|---:|---:|
@@ -232,6 +234,17 @@ Columns and height conventions follow [ICARM’s table](https://elliptic-rank.ic
 | [new-20260906-183](research/elliptic-curves/data/research_curves/new-20260906-183.md) | `[1, 0, 0, -2410326942603…, 10732128134291…]` | ≥ 22 | — | 345.83 | 26.84 | 337.56 |
 | [new-20260906-175](research/elliptic-curves/data/research_curves/new-20260906-175.md) | `[1, -1, 1, -4178960739123…, 31658080454283…]` | ≥ 22 | — | 375.11 | 29.18 | 365.04 |
 | [new-20260906-176](research/elliptic-curves/data/research_curves/new-20260906-176.md) | `[1, 0, 1, -6924559956107…, 21911629220112…]` | ≥ 22 | — | 369.71 | 28.68 | 358.53 |
+| [det1092-funnel-002537010](research/elliptic-curves/data/research_curves/det1092-funnel-002537010.md) | `[0, 0, 0, -2530162402717…, 75057748791573…]` | ≥ 21 | — | — | — | — |
+| [det1092-funnel-019791672](research/elliptic-curves/data/research_curves/det1092-funnel-019791672.md) | `[0, 0, 0, -1562006295423…, 23882918570986…]` | ≥ 18 | — | — | — | — |
+| [det1092-funnel-020887854](research/elliptic-curves/data/research_curves/det1092-funnel-020887854.md) | `[0, 0, 0, -1768776728185…, 28489418804243…]` | ≥ 18 | — | — | — | — |
+| [det1092-orbit8044-000000](research/elliptic-curves/data/research_curves/det1092-orbit8044-000000.md) | `[0, 0, 0, -2958030484963…, 19413105371931…]` | ≥ 18 | — | — | — | — |
+| [det1092-orbit8044-000002](research/elliptic-curves/data/research_curves/det1092-orbit8044-000002.md) | `[0, 0, 0, -1269103678052…, 54554277245951…]` | ≥ 18 | — | — | — | — |
+| [det1092-orbit8044-000003](research/elliptic-curves/data/research_curves/det1092-orbit8044-000003.md) | `[0, 0, 0, -5455142682320…, 15374402316820…]` | ≥ 18 | — | — | — | — |
+| [det1092-orbit8044-000004](research/elliptic-curves/data/research_curves/det1092-orbit8044-000004.md) | `[0, 0, 0, -5452220512209…, 15361910936206…]` | ≥ 18 | — | — | — | — |
+| [det1092-orbit8044-000005](research/elliptic-curves/data/research_curves/det1092-orbit8044-000005.md) | `[0, 0, 0, -9767450059134…, 11648413835336…]` | ≥ 18 | — | — | — | — |
+| [det1092-orbit8044-000006](research/elliptic-curves/data/research_curves/det1092-orbit8044-000006.md) | `[0, 0, 0, -1931096009893…, 32380608777629…]` | ≥ 18 | — | — | — | — |
+| [det1092-progression-n0](research/elliptic-curves/data/research_curves/det1092-progression-n0.md) | `[1, 1, 1, -6442057369785…, 32564309783061…]` | ≥ 18 | — | — | — | — |
+| [det1092-small-conic](research/elliptic-curves/data/research_curves/det1092-small-conic.md) | `[0, 0, 0, -1496259048064…, 69838808593497…]` | ≥ 18 | — | — | — | — |
 
 </details>
 

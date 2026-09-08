@@ -1,0 +1,36 @@
+{
+  "description": "Descriptive scan of all frozen scalar features, any certified gain vs bounded no-gain. No fitted model, no holdout validation.",
+  "null_distinct_j": 10,
+  "null_states": 10,
+  "positive_distinct_j": 2,
+  "positive_states": 4,
+  "strict_separations": [
+    {
+      "direction": "higher",
+      "feature": "shell10_cvp_max",
+      "gap_over_observed_range": 0.0010519724919509283,
+      "null_max": 2.6965693867118015,
+      "null_min": 2.4500828878198955,
+      "positive_max": 7.834832283270607,
+      "positive_min": 2.702233994951865
+    },
+    {
+      "direction": "higher",
+      "feature": "cvp_max",
+      "gap_over_observed_range": 0.0006710632677635823,
+      "null_max": 2.698620487426466,
+      "null_min": 2.4500828878198955,
+      "positive_max": 7.834832283270607,
+      "positive_min": 2.702233994951865
+    },
+    {
+      "direction": "higher",
+      "feature": "extension1_cvp_max",
+      "gap_over_observed_range": 0.0006710632677635823,
+      "null_max": 2.698620487426466,
+      "null_min": 2.4500828878198955,
+      "positive_max": 7.834832283270607,
+      "positive_min": 2.702233994951865
+    }
+  ]
+}

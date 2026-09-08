@@ -1,0 +1,40 @@
+{
+  "boundary": "Reparametrization of the existing conic, no new generic-rank theorem. Every specialized extra direction still requires a certificate.",
+  "coordinate": "Factory u is the reduced conic parameter, distinct from the old slope coordinate; s=X(u)/Y(u)",
+  "degree_to_reduced_parameter": 2,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_orbit8044_rank18_base_change_v2.json": "3e71edb8f4d2374f786960ca30fc12787274e14808e2cc54449ab34eae7ebb08",
+    "artifacts/generated-results/elliptic-curves/det1092_reduced_parameter_chart_v1/generic-proof.json": "166dded75c99aab73e30f3528d9e89a6dccf6984f92bf850c7f668afeae7a2fd",
+    "artifacts/generated-results/elliptic-curves/det1092_small_conic_seed_v1/conic-solve.json": "0594964c56f8b0220fa9f7f2b7245c66e3fdeac047a3fc92c3b3996b4e218a4b",
+    "elliptic-curves/cas/orbit8044_seed_factory_worker.py": "07d454b4d3fa6567e229b0cfc30741a5c636dd210d6d1d9fcc2a5ab1ab9d0cb9"
+  },
+  "method": "PARI qfparam flag3 on the primitive transformed conic; polynomial identity independently checked",
+  "original_parameter_matrix": [
+    "-36201755177827284938903000",
+    "-41418390914593414769282000",
+    "-1016449687002447546724417437",
+    "1324257248229139113399816775"
+  ],
+  "primitive_conic": [
+    "4940136120823281",
+    "-21931265870123820",
+    "51437496474840100"
+  ],
+  "s_denominator": [
+    "35630",
+    "-130270680",
+    "-1324582766150"
+  ],
+  "s_numerator": [
+    "5193",
+    "-125501628",
+    "-193042839045"
+  ],
+  "square_content": "8107228103140438952539256473938970132778058330760450082491057599490600860854808685132145020731627481000000",
+  "status": "PASS_EXACT_ORBIT8044_PARAMETER_CHART",
+  "z_numerator": [
+    "1897563682200",
+    "-441949443600",
+    "70544735830522795800"
+  ]
+}

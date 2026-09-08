@@ -10,6 +10,7 @@ import math
 from pathlib import Path
 import certify_compact_r17_candidates as cert
 from local_conductor_database import load_conductor_inventory
+from research_curve_supplement import MANIFEST, load_supplement, curve_page
 
 ROOT = Path(__file__).resolve().parents[2]
 REPO = next(p for p in ROOT.parents if (p/'.git').exists()) if not (ROOT/'.git').exists() else ROOT
@@ -91,6 +92,8 @@ def run(check=False):
             'rank_certificate':r['rank_certificate'],
             'rank_certificate_model':'Frozen original inventory model; points in this export are transported to the displayed minimal model by the saved isomorphism.'}
         rows.append(row)
+    supplement = load_supplement(rows)
+    rows.extend(supplement)
     rows.sort(key=lambda r:(-r['rank_lower_bound'],r['conductor'] is None,
                             int(r['conductor'] or r['conductor_upper_bound'] or 10**1000),r['id']))
     counts = Counter(r['conductor_status'] for r in rows)
@@ -100,8 +103,10 @@ def run(check=False):
         'provenance':{'metrics':str(METRICS.relative_to(ROOT)),
             'metrics_sha256':hashlib.sha256(METRICS.read_bytes()).hexdigest(),
             'conductor_manifest':'elliptic-curves/data/conductor_screen_current.json',
-            'conductor_manifest_sha256':hashlib.sha256((ROOT/'elliptic-curves/data/conductor_screen_current.json').read_bytes()).hexdigest()},
-        'claim_boundary':'Rank lower bounds, not exact ranks. Logarithms/heights are rounded approximations. Exact conductor and complete bad_primes are null until certified; partial information is kept in separate fields. Includes already-public matches and one public-point rank28 reproduction.'}
+            'conductor_manifest_sha256':hashlib.sha256((ROOT/'elliptic-curves/data/conductor_screen_current.json').read_bytes()).hexdigest(),
+            'supplement':str(MANIFEST.relative_to(ROOT)),
+            'supplement_sha256':hashlib.sha256(MANIFEST.read_bytes()).hexdigest()},
+        'claim_boundary':'Rank lower bounds, not exact ranks. Logarithms/heights are rounded approximations. Exact conductor and complete bad_primes are null until certified; partial information is kept in separate fields. The original201 rows have certified minimal models; supplemental seed rows retain source models and null minimal-model metrics. Includes already-public matches and one public-point rank28 reproduction. Finite exported examples only; no literature-wide novelty claim.'}
     put(OUT/'database.json',encoded(data),check)
     buf = io.StringIO(newline='')
     fields = ['id','ainvs','rank_lower_bound','conductor','conductor_status','log_conductor',
@@ -112,6 +117,9 @@ def run(check=False):
     put(OUT/'database.csv',buf.getvalue(),check)
     for r in rows:
         put(OUT/(r['id']+'.json'),encoded(r),check)
+        if r.get('model_status') == 'SOURCE_MODEL_MINIMALITY_NOT_CERTIFIED':
+            put(OUT/(r['id']+'.md'),curve_page(r),check)
+            continue
         public = ', '.join(f'[ICARM#{i}](https://elliptic-rank.icarm.cloud/curve/{i})' for i in r['icarm_ids']) or 'Unmatched in the current ICARM snapshot'
         text = [f'# {r["id"]}','',f'Rank **≥ {r["rank_lower_bound"]}**. Family `{r["family"]}` at `{r["parameter"]}`. {public}.','',
             f'[Full data and transported points]({r["id"]}.json) · [Inventory](../../INVENTORY.md)',
@@ -135,9 +143,10 @@ def run(check=False):
             text += [f'· [Conductor certificate](../../../{r["conductor_certificate"]})']
         put(OUT/(r['id']+'.md'),'\n'.join(text)+'\n',check)
     table = [BEGIN,'## Elliptic curve inventory','',
-        f'**201 research curves · {counts["EXACT"]} exact conductors · {counts["UNKNOWN"]} unresolved**'+(f' · {counts["REPORTED"]} reported only' if counts['REPORTED'] else '')+'.',
+        f'**{len(rows)} research curves · {counts["EXACT"]} exact conductors · {counts["UNKNOWN"]} unresolved**'+(f' · {counts["REPORTED"]} reported only' if counts['REPORTED'] else '')+'.',
         'ICARM #600 and #619 were independently rediscovered; #626–#630 are submissions by Roy van Rijn. Each ICARM entry is followed by its credited submitter. Rank values are proved lower bounds.','',
-        'Columns and height conventions follow [ICARM’s table](https://elliptic-rank.icarm.cloud/curves). Logs are natural and shown to two decimals. A dash means the exact conductor is unknown; bounds and partial primes are available on the linked curve page. Coefficients are clipped here; each page contains the complete equation and data.',
+        'Columns and height conventions follow [ICARM’s table](https://elliptic-rank.icarm.cloud/curves). Logs are natural and shown to two decimals. A dash means the value is uncomputed or uncertified; available conductor bounds and partial primes are on the linked curve page. Coefficients are clipped here; each page contains the complete equation and data.',
+        '', f'The original 201 curves have certified minimal models. The {len(supplement)} additional [determinant1092 seed curves](elliptic-curves/notes/INVENTORY_SEED_SUPPLEMENT_2026-09-08.md) retain their source equations; minimal-model metrics remain uncomputed. Duplicate seed packets appear once. Infinite families are represented by their exported examples.',
         '', '[Download JSON](elliptic-curves/data/research_curves/database.json) · [Download CSV](elliptic-curves/data/research_curves/database.csv) · [Arithmetic and replay notes](elliptic-curves/notes/INVENTORY201_TABLE_AND_CONDUCTORS_2026-09-07.md)',
         '', '| Curve | a-invariants | Rank | log N | Naive height | Faltings height | log abs(Δ) |','|---|---|---:|---:|---:|---:|---:|']
     for r in rows:
@@ -147,7 +156,9 @@ def run(check=False):
             name = f'[{r["id"]}](elliptic-curves/data/research_curves/{r["id"]}.md)'
         ainvs = '['+', '.join(a if len(a)<=14 else a[:14]+'…' for a in r['ainvs'])+']'
         ln = f'{r["log_conductor"]:.2f}' if r['conductor'] else '—'
-        table.append(f'| {name} | `{ainvs}` | ≥ {r["rank_lower_bound"]} | {ln} | {r["naive_height"]:.2f} | {r["faltings_height"]:.2f} | {r["log_abs_discriminant"]:.2f} |')
+        values = [f'{r[k]:.2f}' if r[k] is not None else '—'
+                  for k in ('naive_height', 'faltings_height', 'log_abs_discriminant')]
+        table.append(f'| {name} | `{ainvs}` | ≥ {r["rank_lower_bound"]} | {ln} | '+ ' | '.join(values)+' |')
     table += ['',END]
     section = '\n'.join(table)
     inventory = ROOT/'elliptic-curves/INVENTORY.md'

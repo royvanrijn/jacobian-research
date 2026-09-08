@@ -1,0 +1,138 @@
+{
+  "curves": [
+    {
+      "claim": "EC-DET1092-SMALL-CONIC-SEED-20260908",
+      "id": "det1092-small-conic",
+      "kind": "seed",
+      "packet": "artifacts/generated-results/elliptic-curves/det1092_small_conic_seed_v1/seeds/conic-small-01/m18.json",
+      "proof": "artifacts/generated-results/elliptic-curves/det1092_small_conic_seed_v1/standalone-replay.json",
+      "sha256": {
+        "packet": "1ae5454dbede4ca3c8acb7922428a95645f1cc647ae03e20ce95780cae44448f",
+        "proof": "509951a7757f5de3c45e4f7ffb2f426e465a7ecaa7a15113f2f1d1580f6f6c53"
+      }
+    },
+    {
+      "claim": "EC-DET1092-FUNNEL-FIRST-SEEDS-20260908",
+      "id": "det1092-funnel-019791672",
+      "kind": "seed",
+      "packet": "artifacts/generated-results/elliptic-curves/det1092_funnel_first_seeds_v1/seeds/funnel-019791672/m18.json",
+      "proof": "artifacts/generated-results/elliptic-curves/det1092_funnel_first_seeds_v1/seeds/funnel-019791672/standalone-replay.json",
+      "sha256": {
+        "packet": "f339887a56ec1c9dd8c25d4992f3e22b1d585ba75dd8aa179104ea30cea9e4df",
+        "proof": "f7577b3aa3128a2210754d0710a8b0e143e043e7bb8f518046c3f74377be9bc3"
+      }
+    },
+    {
+      "claim": "EC-DET1092-FUNNEL-FIRST-SEEDS-20260908",
+      "id": "det1092-funnel-002537010",
+      "kind": "epoch",
+      "packet": "artifacts/generated-results/elliptic-curves/det1092_funnel_first_seeds_v1/rank21/standalone-proof.json",
+      "proof": "artifacts/generated-results/elliptic-curves/det1092_funnel_first_seeds_v1/rank21/standalone-proof.json",
+      "sha256": {
+        "packet": "bce89af4fc0e575ad3215c358f79048584a80845858b3223ecae98230a3ebd47",
+        "proof": "bce89af4fc0e575ad3215c358f79048584a80845858b3223ecae98230a3ebd47"
+      }
+    },
+    {
+      "claim": "EC-DET1092-FUNNEL-FIRST-SEEDS-20260908",
+      "id": "det1092-funnel-020887854",
+      "kind": "seed",
+      "packet": "artifacts/generated-results/elliptic-curves/det1092_funnel_first_seeds_v1/seeds/funnel-020887854/m18.json",
+      "proof": "artifacts/generated-results/elliptic-curves/det1092_funnel_first_seeds_v1/seeds/funnel-020887854/standalone-replay.json",
+      "sha256": {
+        "packet": "48c5846ebb89be46a61ecdac37b708e087c1d6a7e96c721e4df9742d839efd6e",
+        "proof": "d6da2d38b6e6f9de62dc10fa778110277d8e7281d69c90d3a1266069ced919d1"
+      }
+    },
+    {
+      "claim": "EC-ORBIT8044-PARAMETRIZED-SEED-FACTORY-20260908",
+      "id": "det1092-orbit8044-000000",
+      "kind": "seed",
+      "packet": "artifacts/generated-results/elliptic-curves/orbit8044_seed_factory_v1/seeds/orbit8044-000000/m18.json",
+      "proof": "artifacts/generated-results/elliptic-curves/orbit8044_seed_factory_v1/seeds/orbit8044-000000/standalone-replay.json",
+      "sha256": {
+        "packet": "4c3e8f172d620981b0d46baae6c30c736678c92d200e442a59a2ef24dadb04b6",
+        "proof": "791eba91abf9e7717ed655310b457d7703f1e97370d49d40aa1758b415153309"
+      }
+    },
+    {
+      "claim": "EC-ORBIT8044-PARAMETRIZED-SEED-FACTORY-20260908",
+      "id": "det1092-orbit8044-000001",
+      "kind": "seed",
+      "packet": "artifacts/generated-results/elliptic-curves/orbit8044_seed_factory_v1/seeds/orbit8044-000001/m18.json",
+      "proof": "artifacts/generated-results/elliptic-curves/orbit8044_seed_factory_v1/seeds/orbit8044-000001/standalone-replay.json",
+      "sha256": {
+        "packet": "4f71217b6b99cbcdfb5f3eaa6862507f6147cbba207d804fa7845d74fbd537ef",
+        "proof": "b810d9402774e74c7fdf34b2c34d2fd49b3c95c8df1b2b08cf6cc5e848cb08d8"
+      }
+    },
+    {
+      "claim": "EC-ORBIT8044-PARAMETRIZED-SEED-FACTORY-20260908",
+      "id": "det1092-orbit8044-000002",
+      "kind": "seed",
+      "packet": "artifacts/generated-results/elliptic-curves/orbit8044_seed_factory_v1/seeds/orbit8044-000002/m18.json",
+      "proof": "artifacts/generated-results/elliptic-curves/orbit8044_seed_factory_v1/seeds/orbit8044-000002/standalone-replay.json",
+      "sha256": {
+        "packet": "2a5e30737f29a500ebe5145d08d5c7b400b96322e0321a7b458eb12963ef4e42",
+        "proof": "427c73908c3285e256e650cf99f8717719d43de2e1c980a4c3347511c6affa9a"
+      }
+    },
+    {
+      "claim": "EC-ORBIT8044-PARAMETRIZED-SEED-FACTORY-20260908",
+      "id": "det1092-orbit8044-000003",
+      "kind": "seed",
+      "packet": "artifacts/generated-results/elliptic-curves/orbit8044_seed_factory_v1/seeds/orbit8044-000003/m18.json",
+      "proof": "artifacts/generated-results/elliptic-curves/orbit8044_seed_factory_v1/seeds/orbit8044-000003/standalone-replay.json",
+      "sha256": {
+        "packet": "3ce2cfbe28a7c212edc5692221f302d59e72d2dda7b539de84ca7122bdeb281a",
+        "proof": "be59eba8a1af42c160db39535d571c9bd51d03e01474c0b757eac6c81123bffb"
+      }
+    },
+    {
+      "claim": "EC-ORBIT8044-PARAMETRIZED-SEED-FACTORY-20260908",
+      "id": "det1092-orbit8044-000004",
+      "kind": "seed",
+      "packet": "artifacts/generated-results/elliptic-curves/orbit8044_seed_factory_v1/seeds/orbit8044-000004/m18.json",
+      "proof": "artifacts/generated-results/elliptic-curves/orbit8044_seed_factory_v1/seeds/orbit8044-000004/standalone-replay.json",
+      "sha256": {
+        "packet": "ce275e6a064fdc457a7c3ecde6c908f9ebdbb9cb72c07ffd37140ebd2d188f63",
+        "proof": "a10cd3d72eb163391501ed25e86cc4084fc809ba6e6d85d1aa8c635207c14c8e"
+      }
+    },
+    {
+      "claim": "EC-ORBIT8044-PARAMETRIZED-SEED-FACTORY-20260908",
+      "id": "det1092-orbit8044-000005",
+      "kind": "seed",
+      "packet": "artifacts/generated-results/elliptic-curves/orbit8044_seed_factory_v1/seeds/orbit8044-000005/m18.json",
+      "proof": "artifacts/generated-results/elliptic-curves/orbit8044_seed_factory_v1/seeds/orbit8044-000005/standalone-replay.json",
+      "sha256": {
+        "packet": "a1727e0a1c9120a7ab1870d9a470404b1c6fb17156539eaf38594223e8e1bd84",
+        "proof": "2209a037fbbbacaa3b3ca4975a4270e2badcc5a10f33e8f1f56cb6a6eeca8947"
+      }
+    },
+    {
+      "claim": "EC-ORBIT8044-PARAMETRIZED-SEED-FACTORY-20260908",
+      "id": "det1092-orbit8044-000006",
+      "kind": "seed",
+      "packet": "artifacts/generated-results/elliptic-curves/orbit8044_seed_factory_v1/seeds/orbit8044-000006/m18.json",
+      "proof": "artifacts/generated-results/elliptic-curves/orbit8044_seed_factory_v1/seeds/orbit8044-000006/standalone-replay.json",
+      "sha256": {
+        "packet": "17d7def47276bc0c07dd2618d86fdbd3471f3c5d2983ab2827770165e1ac27ec",
+        "proof": "954b19c92eb22903981912b70e2b86dd829f6391a0f8b2387b994ef5a9d7b925"
+      }
+    },
+    {
+      "claim": "EC-DET1092-CONIC-UNIFORM-SEED-PROGRESSION-20260908",
+      "id": "det1092-progression-n0",
+      "kind": "progression",
+      "packet": "artifacts/generated-results/elliptic-curves/det1092_conic_seed_progression_v1/seed-at-n0-v2.json",
+      "proof": "artifacts/generated-results/elliptic-curves/det1092_conic_seed_progression_v1/replay.json",
+      "sha256": {
+        "packet": "733f40ea484be628db623ed7e1f8f4ea284e16af5bab475377420ac99bccd0f4",
+        "proof": "9870e567914a041f466f833a1a66489225d0808ffd59458690ddf093b0a0cd64"
+      }
+    }
+  ],
+  "schema": "elliptic-curves.research-inventory-supplement.v1",
+  "scope": "Explicit certified determinant1092 seed packets through 2026-09-08; deduplicate with the existing discovery inventory. Infinite families are represented by their exported examples only."
+}

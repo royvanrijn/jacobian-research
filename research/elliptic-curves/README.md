@@ -1,5 +1,23 @@
 # Elliptic curves over `Q` — ACTIVE
 
+The [seed-density and limiting-lattice proof](notes/DET1092_SEED_DENSITY_AND_LIMITING_LATTICE_2026-09-08.md)
+explains why conic seeds are rare in a parent-parameter scan but plentiful
+under parametrization, and why their normalized subgroup geometry converges
+to one template with intrinsic seed Schur ratio **3/8**. It does not predict
+amplification. The next arithmetic fork is the full generic rank of the
+explicit quadratic twist: one section or a constructive second direction.
+
+The [frozen M18 landscape comparison](notes/M18_LANDSCAPE_COMPARISON_2026-09-08.md)
+replays 960 initial-state CVPs across 15 states on 12 fibres. Curve302 has a
+deep extension tail; the rank21 success overlaps bounded null controls.
+No large-margin general amplification predictor emerges.
+
+The [orbit8044 seed factory](notes/ORBIT8044_SEED_FACTORY_2026-09-08.md)
+constructs conic-seeded fibres directly in rational-parameter height order.
+Its seven-address pilot independently certifies seven M18 packets and queues
+six distinct rational-isomorphism classes for unchanged V3. All six pilot cascades
+completed at18 after114 charts each; a4,096-address producer batch is prepared.
+
 The [three-stage search funnel](notes/DET1092_SEARCH_FUNNEL_2026-09-08.md)
 now has a resumable equation-only intake, first-seed controller and unchanged
 V3 handoff from M18. All ten million equations and their replay are complete;

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Publish the canonical inventory table as an expandable main README section."""
 import argparse
+import json
 from pathlib import Path
 import re
 import subprocess
@@ -28,7 +29,8 @@ def run(check=False):
         relative = (inventory.parent/path).resolve().relative_to(REPO)
         return ']('+str(relative)+(separator+anchor if separator else '')+')'
     section = re.sub(r'\]\(([^)]+)\)',link,section)
-    section = section.replace('| Curve |','<details>\n<summary>Show all 201 curves</summary>\n\n| Curve |',1)
+    count = json.loads((inventory.parent/'data/research_curves/database.json').read_text())['count']
+    section = section.replace('| Curve |',f'<details>\n<summary>Show all {count} curves</summary>\n\n| Curve |',1)
     section = section.replace('\n'+END,'\n</details>\n\n'+END,1)
     path = REPO/'README.md'
     previous = path.read_text()
@@ -42,7 +44,7 @@ def run(check=False):
             raise ArithmeticError('main README table differs from canonical inventory')
     else:
         path.write_text(expected)
-    print('MAIN README TABLE PASS: 201 rows, synchronized with inventory')
+    print(f'MAIN README TABLE PASS: {count} rows, synchronized with inventory')
 
 
 if __name__ == '__main__':

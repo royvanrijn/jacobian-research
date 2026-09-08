@@ -1,0 +1,33 @@
+{
+  "command": [
+    "/home/royvanrijn/.local/bin/sage",
+    "-python",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/orbit8044_seed_factory_worker.py",
+    "chart",
+    "--output",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/parameter-chart.json"
+  ],
+  "failure_reason": null,
+  "limits": {
+    "address_space_bytes": null,
+    "cgroup": null,
+    "pari_stack_bytes": 256000000,
+    "poll_seconds": 0.05,
+    "rss_bytes": 1073741824,
+    "terminate_grace_seconds": 1.0,
+    "wall_seconds": 120
+  },
+  "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/logs/chart.log",
+  "log_sha256": "bfc14d5c7b1f180572959466e4d6f4ca92df6bdc94b219e008de01820b14924e",
+  "outcome": "completed",
+  "peak_observed_rss_bytes": 229404672,
+  "pid": 1488054,
+  "returncode": 0,
+  "rss_limit_bytes": 1073741824,
+  "start_token": "72683422",
+  "termination_signal": null,
+  "timeout_seconds": 120,
+  "wall_seconds": 0.7492362479679286,
+  "worker_result": null,
+  "worker_result_sha256": null
+}

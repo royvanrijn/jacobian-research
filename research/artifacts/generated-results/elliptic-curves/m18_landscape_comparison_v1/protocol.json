@@ -1,0 +1,2283 @@
+{
+  "bounds": "64 exact CVPs per case; <=2000000 nodes each; no point search",
+  "cases": [
+    {
+      "case": "curve302-seeded-v3-amplifier-v1__recovered-strict-02",
+      "folder": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02",
+      "inputs": {
+        "anchor-00-full.npz": {
+          "sha256": "b1dbc9ff41f2fe49d4e23064fd79e447ad2e9146521ea8f298631643c2a42ed8",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-00-full.npz"
+        },
+        "anchor-01-full.npz": {
+          "sha256": "6c988f279ac3f45c71eb95f9331e71034f75ac4162fad35221469a53d63b9b94",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-01-full.npz"
+        },
+        "anchor-02-full.npz": {
+          "sha256": "6f7e8265e2a530d56676421a76872acc260ba28781e3a1c69e090a219a0824dc",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-02-full.npz"
+        },
+        "anchor-03-full.npz": {
+          "sha256": "6566bc4e7f8ce61a50e6ccd24039a4c2c382b95c3a21bd08f38e1badd98f6a59",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-03-full.npz"
+        },
+        "anchor-04-full.npz": {
+          "sha256": "60e3518d52604174a459a36d204c185fd8be3c2e399c7381e7e5f26d81e7879c",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-04-full.npz"
+        },
+        "anchor-05-full.npz": {
+          "sha256": "f5efdcc8f815e2f078f768a5ba6e50497390cdb8ff2eded15afdb59328a22b0b",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-05-full.npz"
+        },
+        "anchor-06-full.npz": {
+          "sha256": "a20c620a42561619316588dee260ff3f6a47eb48a0707047468bdb608d95ca3e",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-06-full.npz"
+        },
+        "anchor-07-full.npz": {
+          "sha256": "b6721f9b536c4d95b1c402eb0cfc170e352eb92d526c1da6fceda3f1a5ca8e9d",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-07-full.npz"
+        },
+        "anchor-08-full.npz": {
+          "sha256": "b7e4b9c678e57d4e31e5bf6da84180595d8cfc6907bea4f071e62cf276e635e0",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-08-full.npz"
+        },
+        "anchor-09-full.npz": {
+          "sha256": "bf88496786afaa5cea30fe6f3b510adef9add3defce496661658f08a755495b2",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-09-full.npz"
+        },
+        "anchor-10-full.npz": {
+          "sha256": "1f313ae572cbfebe75e7a8cba68e63d0738cba375407fa503f56e595462546b8",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-10-full.npz"
+        },
+        "anchor-11-full.npz": {
+          "sha256": "eede6b84ec83b8e0b43e1fe37c61ff72818b99b4cda18c283e9fd2d0888b70d3",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-11-full.npz"
+        },
+        "anchor-12-full.npz": {
+          "sha256": "1434c54ed6de5d4769bf771a4e3254fc997d80df36095d85b5b26016fe3ddfbb",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-12-full.npz"
+        },
+        "anchor-13-full.npz": {
+          "sha256": "27a49982087c91c52904f6bfd5a197bec0258ce322cc6b0965698facd680a914",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-13-full.npz"
+        },
+        "anchor-14-full.npz": {
+          "sha256": "91b25847a09d6b07dba3c98cac4f91f83ee19e8cf752a4d486bfa48403749f05",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-14-full.npz"
+        },
+        "anchor-15-full.npz": {
+          "sha256": "1835f6194683f7ba123a0174e44aeacbad78cafd930b853435494bd24c10b9c0",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-15-full.npz"
+        },
+        "anchor-16-full.npz": {
+          "sha256": "124684c5e21c9e7baddd7ec0ce236ac5dc741b3b3de0ce6a1b2502a17b924e92",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-16-full.npz"
+        },
+        "anchor-17-full.npz": {
+          "sha256": "c68569b592364437503962710b992fc2fdfa6c1a4d30b347e9c3515691e0afdb",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-17-full.npz"
+        },
+        "anchor-18-full.npz": {
+          "sha256": "5091c88eaa15e894eb38121c90a74a648b95c353d1e44d86167765a461e73477",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-18-full.npz"
+        },
+        "anchor-19-full.npz": {
+          "sha256": "60b860523aef2478e5ee7328141d01f030c5abec502a19a76296346d802ba195",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-19-full.npz"
+        },
+        "anchor-20-full.npz": {
+          "sha256": "3050d743f5b5ffe3ae95a31a83b8e83b08e6d36b03731241e3249dc43d5981b7",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-20-full.npz"
+        },
+        "anchor-21-full.npz": {
+          "sha256": "acc698dad09d23dede6ab23d8e34a6dc7ac4fdc19c3730b1fb7870cfc566ea56",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-21-full.npz"
+        },
+        "anchor-22-full.npz": {
+          "sha256": "d2acd6c78b71890fb0a0f3e925ab5ec46ea8dd78a8777b2185faec82dcb9971f",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-22-full.npz"
+        },
+        "anchor-23-full.npz": {
+          "sha256": "c36b685c3da54238a3e7e8f77c42fe605cfc204cdb1dfd933d913c877465c36c",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-23-full.npz"
+        },
+        "anchor-24-full.npz": {
+          "sha256": "3e0fccb668a0be696b90f74a7d851b928198a2836941efb82e7d71a5f8e6ca8a",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-24-full.npz"
+        },
+        "anchor-25-full.npz": {
+          "sha256": "5182eabb279a7ede66b7a433c5e8d4ea462aa6e6bcbb855a72eaad7b01a6d955",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-25-full.npz"
+        },
+        "anchor-26-full.npz": {
+          "sha256": "06b6833cdc12f33df06e8d875d344ca61612d830de68209345820f1570668c76",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-26-full.npz"
+        },
+        "anchor-27-full.npz": {
+          "sha256": "97d2f7a597a02f12580096ef60d1e354d011f407d3194188c6dcd2d059d1750e",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-27-full.npz"
+        },
+        "anchor-28-full.npz": {
+          "sha256": "b316334e52dd298ee8123726fc26f6277f644cab799f4a63b7a921ba6a5965ca",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-28-full.npz"
+        },
+        "anchor-29-full.npz": {
+          "sha256": "33ef0564f7e7fb61fb5426f20e435d9fae8d04ce86ddb3b5ba1cedf7e96c89ca",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-29-full.npz"
+        },
+        "anchor-30-full.npz": {
+          "sha256": "5dbe58cd3597084c062d37628f6615e1978e837bd04c4e807dcbc20a19f959c9",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-30-full.npz"
+        },
+        "anchor-31-full.npz": {
+          "sha256": "1b666edb1bc868ae5605ba3cb1fcaa59f0c21dee1a5906379f9c1383cf2aaf61",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/anchor-31-full.npz"
+        },
+        "policy.json": {
+          "sha256": "3d8c0866ba791de7dae6731b85fe60ee8df6860b0fa4b0e5db456380c0f3f5e4",
+          "source": "research/artifacts/local/elliptic-curves/m18-landscape-comparison-v1/curve302-seeded-v3-amplifier-v1__recovered-strict-02/policy.json"
+        },
+        "seed-input.json": {
+          "sha256": "278f8006c7ee3b044dd2f24d930d2fd18cafe956c8c7766c5e976b240661f371",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/seed-input.json"
+        },
+        "seed-proof.json": {
+          "sha256": "5cc66988880623b569cd063958a6d8c76716c33688109f624f2aeeafd1818af2",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/seed-proof.json"
+        },
+        "selection.json": {
+          "sha256": "bcb3ad4c6045a8833f4609b240137f6ecf79920cc15c874f62771191886dcd45",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-02/replay-M17/epoch-00/selection.json"
+        }
+      }
+    },
+    {
+      "case": "curve302-seeded-v3-amplifier-v1__recovered-strict-03",
+      "folder": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03",
+      "inputs": {
+        "anchor-00-full.npz": {
+          "sha256": "8ad16e4ea74275ada4f0c116138d27f2ebb303f9a150332cd2e03e1677c442ce",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-00-full.npz"
+        },
+        "anchor-01-full.npz": {
+          "sha256": "e8f32a27ddd0ea3cd48ac7d415ecf8cb1afc6c629641ccb095403a7c11f7ea1f",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-01-full.npz"
+        },
+        "anchor-02-full.npz": {
+          "sha256": "d52ee6c2867a90cfe486bbac400b0db7af01e8555c9e1c11b32ae4e4898f453e",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-02-full.npz"
+        },
+        "anchor-03-full.npz": {
+          "sha256": "3e675bc099edd526e72a0ea7530e20cefe32ba1519fa7c69ace36542ea9c09c3",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-03-full.npz"
+        },
+        "anchor-04-full.npz": {
+          "sha256": "12c8bd15645dbb9b7a2bbb28cb6c90d5fc32bb12173be3d1c8ca5ab73b4951fa",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-04-full.npz"
+        },
+        "anchor-05-full.npz": {
+          "sha256": "2ea8e1e1e5d0ee4fac67ceac3f665e97da2a67a7e5a12311b6f5b5ffcc1f5065",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-05-full.npz"
+        },
+        "anchor-06-full.npz": {
+          "sha256": "482aaea92de0397a0e10c98fef4d3c78b9fb96c0c8c8abaf8a3abf6ad629d61f",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-06-full.npz"
+        },
+        "anchor-07-full.npz": {
+          "sha256": "e7b8be00a01b12d4d2353231758e4d0a6bf8eb48a5f2ca0a3cf4cc23a67ea685",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-07-full.npz"
+        },
+        "anchor-08-full.npz": {
+          "sha256": "a2bb6e3a823db322415f98e79ed2a4b2369795687bd4071016df1e359afdb9da",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-08-full.npz"
+        },
+        "anchor-09-full.npz": {
+          "sha256": "e1b3f2f4aa333451ca7de0341d81b0ad8a91e34c963b837162ff787d4e255e89",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-09-full.npz"
+        },
+        "anchor-10-full.npz": {
+          "sha256": "ad3867c33dcb5752579f2b01ef69c38265d464109d4d4c261fa861996d862af0",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-10-full.npz"
+        },
+        "anchor-11-full.npz": {
+          "sha256": "cef9afa60b7015513ddc022e1d95b4e3745aaa8fbac43399ef95b7c91aa313d9",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-11-full.npz"
+        },
+        "anchor-12-full.npz": {
+          "sha256": "3869e8787540da9cc766ba7f829e2497fef81f951e37543305f6f35735b90c56",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-12-full.npz"
+        },
+        "anchor-13-full.npz": {
+          "sha256": "7090df442d14a048743bbb2f325dbd64781ea9280a3a70a6b6ee831d1e19b0c1",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-13-full.npz"
+        },
+        "anchor-14-full.npz": {
+          "sha256": "a5819b6ac003f9933b55481e2181f3b3d4822b9e3953dcf7495bbe85c75b6984",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-14-full.npz"
+        },
+        "anchor-15-full.npz": {
+          "sha256": "5f337e85fc87175fffe01cea69260d47dab0ff9b7aa6f1e9fa17ff0399c7c61e",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-15-full.npz"
+        },
+        "anchor-16-full.npz": {
+          "sha256": "be4cbe8181ffe263803bcacdd8951def1220742f898c18f5cb56bece7fcd53bd",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-16-full.npz"
+        },
+        "anchor-17-full.npz": {
+          "sha256": "508a7d077384329eb8b6537420db1cb97d7383f0eecc576c21abbe3a7dee58c5",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-17-full.npz"
+        },
+        "anchor-18-full.npz": {
+          "sha256": "fb8dd06aecb132597eee1f6df0fcdc6a6361a6a8168bcb5b86aa077735893611",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-18-full.npz"
+        },
+        "anchor-19-full.npz": {
+          "sha256": "37fff9741c9dcc701292c4b6b768c58aec850d95c509f69e9f334252f3e5c4db",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-19-full.npz"
+        },
+        "anchor-20-full.npz": {
+          "sha256": "11b92d7f4b685cda63fce3fdba2e0f93fd3718545c002693664d4db4298d8a9f",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-20-full.npz"
+        },
+        "anchor-21-full.npz": {
+          "sha256": "d1f81574baa5077f78eb1ed53a234bd233ac082150b76bea825f6449dc0fec87",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-21-full.npz"
+        },
+        "anchor-22-full.npz": {
+          "sha256": "1174b8466f88ecae0b0621b1fbb7dec616fffa9ce5b2472ceca4ba01bcaa04db",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-22-full.npz"
+        },
+        "anchor-23-full.npz": {
+          "sha256": "dea7157c14fd3843779352bc83dc80f27b12e13d6afd89041aa794eaa29bd46a",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-23-full.npz"
+        },
+        "anchor-24-full.npz": {
+          "sha256": "8f2538e848738d1eb3b663494b29f4594aafa411bef4dc01bc9dbfc5d53e66b0",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-24-full.npz"
+        },
+        "anchor-25-full.npz": {
+          "sha256": "c33819e0ff37f13c1451a4d3f55955a2d1a661cfab51651c0f56a55bf5f7be43",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-25-full.npz"
+        },
+        "anchor-26-full.npz": {
+          "sha256": "6c67511e36856a1350b348ac39c247b3e7412e3c3e67f22c0134026ace62635b",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-26-full.npz"
+        },
+        "anchor-27-full.npz": {
+          "sha256": "6358450b5e6e34b2a913e0c8828dd289454093f5fe260edd1d2472d4d9ef1aa2",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-27-full.npz"
+        },
+        "anchor-28-full.npz": {
+          "sha256": "d91feab1071442e8342e6620d9f1ad08e26c53e2d102fd469c9c8b00d67190c5",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-28-full.npz"
+        },
+        "anchor-29-full.npz": {
+          "sha256": "604223d07936e1b6216aca5434dc521456d50026bbd46f3e7ddbd25d47066409",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-29-full.npz"
+        },
+        "anchor-30-full.npz": {
+          "sha256": "ea887b991c1cde21da831498d5ca67eff3a0a50d080e15b144746b826fa6b881",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-30-full.npz"
+        },
+        "anchor-31-full.npz": {
+          "sha256": "6da7bb119a811bbffc9d20f83ec069658d4a6a4e4c4d1669a4c769cc6059d6ac",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/anchor-31-full.npz"
+        },
+        "policy.json": {
+          "sha256": "3d8c0866ba791de7dae6731b85fe60ee8df6860b0fa4b0e5db456380c0f3f5e4",
+          "source": "research/artifacts/local/elliptic-curves/m18-landscape-comparison-v1/curve302-seeded-v3-amplifier-v1__recovered-strict-03/policy.json"
+        },
+        "seed-input.json": {
+          "sha256": "4da018049be413405a5957f91e51e1528b8f3fb6059fe59a89fe72116f36e080",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/seed-input.json"
+        },
+        "seed-proof.json": {
+          "sha256": "36f026f3b3424f905e361fab42df80d9ff74e8e174339c829ee78c5716a7fb9e",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/seed-proof.json"
+        },
+        "selection.json": {
+          "sha256": "dac3bc100ffb50c32cc579b1c432a97dc392faf599945a1309e89a3256753ecb",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seeded-v3-amplifier-v1/recovered-strict-03/replay-M17/epoch-00/selection.json"
+        }
+      }
+    },
+    {
+      "case": "curve302-seed-universality-panel-v1__recovered-strict-01",
+      "folder": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01",
+      "inputs": {
+        "anchor-00-full.npz": {
+          "sha256": "6c88161e7129564730dc4e1f368fee6c6a7a247f37d5bcbbe99f7b8043f0dd17",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-00-full.npz"
+        },
+        "anchor-01-full.npz": {
+          "sha256": "a89986a41fa9db79a7231fc6098be8814f23cdc0a1325da9289eec2997490890",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-01-full.npz"
+        },
+        "anchor-02-full.npz": {
+          "sha256": "5dcd72669be9f563c993597c18436a117cabe3721e80245ec9081b0d5376b356",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-02-full.npz"
+        },
+        "anchor-03-full.npz": {
+          "sha256": "c4012994f6a8df52ef04dd0934fb549c49db41e7d28698b036c451f13847f824",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-03-full.npz"
+        },
+        "anchor-04-full.npz": {
+          "sha256": "a7844bb63ec0497b94b11aaa7c8cc10227750064dd7884744fae4bb41c438f82",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-04-full.npz"
+        },
+        "anchor-05-full.npz": {
+          "sha256": "ed9be89cb0869fba66ab38cfd3814d99076da18861a5e66e5b7aa003c2eaa7c9",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-05-full.npz"
+        },
+        "anchor-06-full.npz": {
+          "sha256": "5c795de1d44bdee233ba09e3aa3760069e07d886a8db3ee11193d2305c674333",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-06-full.npz"
+        },
+        "anchor-07-full.npz": {
+          "sha256": "bdfb79ed6dafa2c95b998ac6d8b0492face5fdecce25ac9e51029786ca439560",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-07-full.npz"
+        },
+        "anchor-08-full.npz": {
+          "sha256": "c4124e97cbf081578ea6200822502a11a12400543b7530a87bdeab8fe8c2739c",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-08-full.npz"
+        },
+        "anchor-09-full.npz": {
+          "sha256": "e579b4cf397a86c39a094e7abab9589b9832c3453718d54f616d4374efc46e99",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-09-full.npz"
+        },
+        "anchor-10-full.npz": {
+          "sha256": "8846180a7c3855a90bce061484192352febf9b5a6be3d04aee5f095d1c7bdd10",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-10-full.npz"
+        },
+        "anchor-11-full.npz": {
+          "sha256": "047d6c980fd3f416e6c84effe06930c18f32b2951cfa2ebbed7985efbfecaf8b",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-11-full.npz"
+        },
+        "anchor-12-full.npz": {
+          "sha256": "ade4e6513a1f76a4bf9aa14416e7965d4fb719a6cb4b9a182489d90cf80114f3",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-12-full.npz"
+        },
+        "anchor-13-full.npz": {
+          "sha256": "edf8d3733a4b7ee6b0c7e49d4d9771d849ac53ed6042602018166e536ca69d5a",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-13-full.npz"
+        },
+        "anchor-14-full.npz": {
+          "sha256": "42512c6a4ee9197595c258de18434dee075c3abefd14af596adfb831c2819474",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-14-full.npz"
+        },
+        "anchor-15-full.npz": {
+          "sha256": "14022411360648adf1f068701ba1c3c87af1be8e33547cba07d8439489a55e46",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-15-full.npz"
+        },
+        "anchor-16-full.npz": {
+          "sha256": "bf56291ebf4c587d3077d5a876db851d34a8b98dbd7b22397018e4ce4afa33ab",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-16-full.npz"
+        },
+        "anchor-17-full.npz": {
+          "sha256": "e71eedc1878a97df141bb06836c366e4b2d83614bbabc031958e6411827d3197",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-17-full.npz"
+        },
+        "anchor-18-full.npz": {
+          "sha256": "3cd01c6d700a05f4c5303dbb97b13c561417e2d6b4e4bde02489f7cbaea1902a",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-18-full.npz"
+        },
+        "anchor-19-full.npz": {
+          "sha256": "ff9bd06ef07f9cb462cd568ca1518d0e5635a8bb8cd7b9a1d5735464e941150b",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-19-full.npz"
+        },
+        "anchor-20-full.npz": {
+          "sha256": "f9cd92999d42c2645a8de1fbc7101e4406bf8ddf06895fb238d53937f6cc1183",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-20-full.npz"
+        },
+        "anchor-21-full.npz": {
+          "sha256": "28dec83f30c3feb10b1fdbd707f24c643ebbd3672b75a6cdfcb90e4ab362c959",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-21-full.npz"
+        },
+        "anchor-22-full.npz": {
+          "sha256": "c8972e1eee01fc0c316ae398cd4ef7e2388270d3c8299472ff93cd25e4e6d02a",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-22-full.npz"
+        },
+        "anchor-23-full.npz": {
+          "sha256": "28b52de3440b3c56b37cbead5242748e8b7d15964921fd7d02f8339296afb904",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-23-full.npz"
+        },
+        "anchor-24-full.npz": {
+          "sha256": "6a1f8fed60228ccfcc360ab5c482a6baf9d966c4740a929642249f40ec1a7a36",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-24-full.npz"
+        },
+        "anchor-25-full.npz": {
+          "sha256": "c000a94dec9b018bc544f8e6417d312479f18ca39c13730de0c096f5beada922",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-25-full.npz"
+        },
+        "anchor-26-full.npz": {
+          "sha256": "409f40d0bd12eaa6224ee3c6e6e0ec447cc4f5cd5b1b69cedc6888e61f9fe02f",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-26-full.npz"
+        },
+        "anchor-27-full.npz": {
+          "sha256": "4ff9b3fbfb450a6f858b4bf1dbf9e159db11ccdaec66b51d5d8af01f4a7fac89",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-27-full.npz"
+        },
+        "anchor-28-full.npz": {
+          "sha256": "c60df03d3c1eb15c0b525a9606ceaddb978b14c2049bb26c6ff0af5e1f923ccf",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-28-full.npz"
+        },
+        "anchor-29-full.npz": {
+          "sha256": "5fe3b33277d63e44d7859ad2d4234345f157a2971db65404dc13dc0bbc72faf1",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-29-full.npz"
+        },
+        "anchor-30-full.npz": {
+          "sha256": "1fd83a30e54e17a2f4816aa1ff7013aae0d0ac3d3111c06606f2d603bfb109f1",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-30-full.npz"
+        },
+        "anchor-31-full.npz": {
+          "sha256": "71539cc822efbdd59e15cd4cb8e83f13f0a6e98699f601b137d0e10a526ad045",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/anchor-31-full.npz"
+        },
+        "policy.json": {
+          "sha256": "3d8c0866ba791de7dae6731b85fe60ee8df6860b0fa4b0e5db456380c0f3f5e4",
+          "source": "research/artifacts/local/elliptic-curves/m18-landscape-comparison-v1/curve302-seed-universality-panel-v1__recovered-strict-01/policy.json"
+        },
+        "seed-input.json": {
+          "sha256": "79c6c0f303f4167ea90ea160949e3e61cfdf3e8029fdbeaa7913da5521bf133f",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/seed-input.json"
+        },
+        "seed-proof.json": {
+          "sha256": "af37a889b5a1791d1851a1639092221c12afbfc40a05d336bb62ee258b6bae41",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/seed-proof.json"
+        },
+        "selection.json": {
+          "sha256": "575ff948991aa8b0c04ddbcf1c41f208eda10482e09b3c6bd2e9139252b2672a",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/recovered-strict-01/replay-M17/epoch-00/selection.json"
+        }
+      }
+    },
+    {
+      "case": "curve302-seed-universality-panel-v1__residual-strict-03",
+      "folder": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03",
+      "inputs": {
+        "anchor-00-full.npz": {
+          "sha256": "f4eded1bf59a545cb3afdf2d786e850c0f05ec463691b8f19cf3782cc9637efb",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-00-full.npz"
+        },
+        "anchor-01-full.npz": {
+          "sha256": "59e3587c095f7221a071f688ece61cf5249d44f595a7c703bfc11a17d652692e",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-01-full.npz"
+        },
+        "anchor-02-full.npz": {
+          "sha256": "96dbf0520adb99cf380b027bb82208116a9f2220f39cace226b0967d4f0f8791",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-02-full.npz"
+        },
+        "anchor-03-full.npz": {
+          "sha256": "19933a15e5c6cae0f1f4b6bcd93cf395ea75c773b9dd2d83f2b22d43ea5fa511",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-03-full.npz"
+        },
+        "anchor-04-full.npz": {
+          "sha256": "85ee6142eb33f9cc686781fe83b3d8f7759794417490f157550f260fe2469348",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-04-full.npz"
+        },
+        "anchor-05-full.npz": {
+          "sha256": "c6d155e30b84e82a92619fe23e7da90b50fbdda2bf5f86263e07756713e15c72",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-05-full.npz"
+        },
+        "anchor-06-full.npz": {
+          "sha256": "cf5dc31c6f56ceec4000d25835764ffe0b3506d8d7d256dbd9d76ad4cf7e39ef",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-06-full.npz"
+        },
+        "anchor-07-full.npz": {
+          "sha256": "a4e0d5875461d4d02bcb4d5835904b6129eaab4a0f3e02ce651a9c1c1ceab58f",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-07-full.npz"
+        },
+        "anchor-08-full.npz": {
+          "sha256": "cf8da3a55f0a7f0868231fd74f71bee6292d715115208221f08d471192243498",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-08-full.npz"
+        },
+        "anchor-09-full.npz": {
+          "sha256": "a6ffadc50fc32274a4eee24d0533dcc223991bc267415d6562e9a4b7876aa148",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-09-full.npz"
+        },
+        "anchor-10-full.npz": {
+          "sha256": "232b0f29ed59a3ebef989b3cdd38d216ca1275b66fc3d98f5c2abe8825a911bf",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-10-full.npz"
+        },
+        "anchor-11-full.npz": {
+          "sha256": "8c08953031a12f8b448932a4701da946d7824fdf07124a25b54c80044311a660",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-11-full.npz"
+        },
+        "anchor-12-full.npz": {
+          "sha256": "10ad9febdc4ee5ec593236be0025dd786704005e9f4074ab354a76f883887a83",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-12-full.npz"
+        },
+        "anchor-13-full.npz": {
+          "sha256": "94ca2f6e696a3fa28bc1917873168f8c4428a380cff54faf9712c0e2b2502829",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-13-full.npz"
+        },
+        "anchor-14-full.npz": {
+          "sha256": "ed2062a4a0d989c65ebcb2f597d00f06971b4769c6b87a7b2e9bd6c7e9ff771f",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-14-full.npz"
+        },
+        "anchor-15-full.npz": {
+          "sha256": "f5eacbdeeb2b94368c3285225f2c44c8883e95bae859ad70940ed1f3feffacca",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-15-full.npz"
+        },
+        "anchor-16-full.npz": {
+          "sha256": "942b6afafd1e60c77b78710f4d84f971ab7af1f57846dbe85e706656456e91db",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-16-full.npz"
+        },
+        "anchor-17-full.npz": {
+          "sha256": "3b0e42287897c354149af805e01f523981c4619d60dd38ed33160321252bdf0f",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-17-full.npz"
+        },
+        "anchor-18-full.npz": {
+          "sha256": "034315bd896044f1e237482acc5cd5172b77f416837e8180bdeae9f7b0b477b0",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-18-full.npz"
+        },
+        "anchor-19-full.npz": {
+          "sha256": "b607d1cd2f0198442e4bb46951d5e007c33a6d96e61841f6ab3acdf4fc34923e",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-19-full.npz"
+        },
+        "anchor-20-full.npz": {
+          "sha256": "27a0690b39caf4f576c8759310a32c561d0e9493b8214d4ff96ab706085000f3",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-20-full.npz"
+        },
+        "anchor-21-full.npz": {
+          "sha256": "95000cece605273e85a4c12216fb810561c769d33b62b0b56d93a0b17c15aeb0",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-21-full.npz"
+        },
+        "anchor-22-full.npz": {
+          "sha256": "4a176b1c6f1eb623d2880db417453b304390fa32877e1ef55fd344958b58a0d3",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-22-full.npz"
+        },
+        "anchor-23-full.npz": {
+          "sha256": "0683d6936b68b731f3d1a37935174900326d851e64029615b125dfee74c4932d",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-23-full.npz"
+        },
+        "anchor-24-full.npz": {
+          "sha256": "bc02aebc4d7611e111aee1c1d363112b2ead7ba84c22dbd0aa10faac216e9e55",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-24-full.npz"
+        },
+        "anchor-25-full.npz": {
+          "sha256": "a5b5ca44246f8dd70b735868b7406dec8b851a4afc3a3f6a940bdc935fd1466f",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-25-full.npz"
+        },
+        "anchor-26-full.npz": {
+          "sha256": "eaab2f06958ca9d237d7bd7a4699c9ffba545d18f28f42b8d5ccf43409ac1699",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-26-full.npz"
+        },
+        "anchor-27-full.npz": {
+          "sha256": "f735d2a24d3ff488b265f775432b1822ee97e68597ee93902c8c91486c2bb873",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-27-full.npz"
+        },
+        "anchor-28-full.npz": {
+          "sha256": "d544f1fe94b16ef327b1fe4096156b7e80caf5fca3f827b76035c177029b96b3",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-28-full.npz"
+        },
+        "anchor-29-full.npz": {
+          "sha256": "c5ffca25265b2b2b0190a428e67f4e0c3186ba7dfc59039787e89d750d7c58d2",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-29-full.npz"
+        },
+        "anchor-30-full.npz": {
+          "sha256": "32ec2b1c16a89cd69cd2b751c848d93dee22ecb96071db015c737b67abc9282e",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-30-full.npz"
+        },
+        "anchor-31-full.npz": {
+          "sha256": "b8f6f341e8609cd4bb1062cd142aa6745414b6a8c62d72bdf44fae4b2bcb1917",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/anchor-31-full.npz"
+        },
+        "policy.json": {
+          "sha256": "3d8c0866ba791de7dae6731b85fe60ee8df6860b0fa4b0e5db456380c0f3f5e4",
+          "source": "research/artifacts/local/elliptic-curves/m18-landscape-comparison-v1/curve302-seed-universality-panel-v1__residual-strict-03/policy.json"
+        },
+        "seed-input.json": {
+          "sha256": "f81da7f2e77eee47a091e4ebfb7cfa232956107e6f5da51c412cef88629837a4",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/seed-input.json"
+        },
+        "seed-proof.json": {
+          "sha256": "3fb1802735ecf770f54b384a91ec0625d572e1cfcd97593d780ccfd23822959b",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/seed-proof.json"
+        },
+        "selection.json": {
+          "sha256": "ea70d5215c38157e94b075617cfc3c8dfe2018105278f1097f42eb45caf4d9bf",
+          "source": "research/artifacts/local/elliptic-curves/curve302-seed-universality-panel-v1/residual-strict-03/replay-M17/epoch-00/selection.json"
+        }
+      }
+    },
+    {
+      "case": "det1092-funnel-conic-split-seeds-v1__funnel-002537010",
+      "folder": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010",
+      "inputs": {
+        "anchor-00-full.npz": {
+          "sha256": "98055c950510238cf029df69382066f2dcb51baebd4259c11ed6ad3ffb7ec629",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-00-full.npz"
+        },
+        "anchor-01-full.npz": {
+          "sha256": "8435c8c0ab6c78ec64ddf99c259638e55247352854efc730d7b20284f43a1573",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-01-full.npz"
+        },
+        "anchor-02-full.npz": {
+          "sha256": "e2d29711374563c2abbcae004b07faec7ceb4940ea5d59f66dd976b8cd61b453",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-02-full.npz"
+        },
+        "anchor-03-full.npz": {
+          "sha256": "794ae325f84f764a55f5c98e9241eb1d283fbf7c82198e40a9161f2fa383d082",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-03-full.npz"
+        },
+        "anchor-04-full.npz": {
+          "sha256": "1efc3dfd204f56657b83fd91ad00d90ae89ba549972cf04e8e925bab776aea32",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-04-full.npz"
+        },
+        "anchor-05-full.npz": {
+          "sha256": "d5627d2276f427edded707cf5af30b1195157a0825d6954bf8f2b6f15851fa84",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-05-full.npz"
+        },
+        "anchor-06-full.npz": {
+          "sha256": "49c154fff28e7bec48988a4a4820d20e58ea4b833bd1fbc7c00d059e3f075386",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-06-full.npz"
+        },
+        "anchor-07-full.npz": {
+          "sha256": "8f7316f526e55c10e1cd135a0c14aff57cba82963c96d573a1bf4cc2995e609a",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-07-full.npz"
+        },
+        "anchor-08-full.npz": {
+          "sha256": "f7ef52eaa1114f311126fae37931dd1b3b384cdea6c28a6a33492da480063e9f",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-08-full.npz"
+        },
+        "anchor-09-full.npz": {
+          "sha256": "1e005ddc077d22fd80178d22ed7658b0367a6d7843f5a8aaa9ddf88df2522392",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-09-full.npz"
+        },
+        "anchor-10-full.npz": {
+          "sha256": "dacb610e8cc159290a2891571e9ca9a73315c27933a909ab01ce26df727ac960",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-10-full.npz"
+        },
+        "anchor-11-full.npz": {
+          "sha256": "209d2461faba7e078f850336f0f3fae860acf20c449535878d9536ceefba8240",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-11-full.npz"
+        },
+        "anchor-12-full.npz": {
+          "sha256": "86362733db41bcc3f4645499dfb34081a0a42a5db0ca2c928870a4ce6880d0f5",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-12-full.npz"
+        },
+        "anchor-13-full.npz": {
+          "sha256": "dfe846078a9a670a22cfadced02702dd752204ca6cd314941a5e19330b71d36e",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-13-full.npz"
+        },
+        "anchor-14-full.npz": {
+          "sha256": "a4044e3693a93aea197ed3690e61d003565744d6502be928a34cab94a4b33a9c",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-14-full.npz"
+        },
+        "anchor-15-full.npz": {
+          "sha256": "abc1d0a1403e4b5399ec316213e267d95835b3be802687d00bb0cac612ab5dbc",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-15-full.npz"
+        },
+        "anchor-16-full.npz": {
+          "sha256": "de828d5c0aaeeefffe36390b4dfb39480bf83dbf75d78a5fd45f4aa271de190a",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-16-full.npz"
+        },
+        "anchor-17-full.npz": {
+          "sha256": "1953c28994ef9f6917aebaaee6d683be65d0f72fde986db2558cb8913bdeca86",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-17-full.npz"
+        },
+        "anchor-18-full.npz": {
+          "sha256": "97b088a341e7a09cc27aefc3e81b40cb33e544808aaf08357f118102b49bf265",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-18-full.npz"
+        },
+        "anchor-19-full.npz": {
+          "sha256": "37b9e8ccbb22dabd107a1ab7d7311c063289fdc6ff9b7ad58b640c21aa15b378",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-19-full.npz"
+        },
+        "anchor-20-full.npz": {
+          "sha256": "29a618ca429695aadb3b15c8765258311a3e9c51c22f5e99ba0fc0ddaf43c250",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-20-full.npz"
+        },
+        "anchor-21-full.npz": {
+          "sha256": "2bb5cfe10e84553a98fe83047ef882a4372069c5a85d249af915fa1c1dfb0581",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-21-full.npz"
+        },
+        "anchor-22-full.npz": {
+          "sha256": "370623b1c5da969de6c5de81bb0b83665c848961d23cdf78c12bd74b2cfcdb26",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-22-full.npz"
+        },
+        "anchor-23-full.npz": {
+          "sha256": "edb5500b444f8fe122fbc4ad19a8190afb1a06f492599aebc8cd2cd6e0751b95",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-23-full.npz"
+        },
+        "anchor-24-full.npz": {
+          "sha256": "0f5b127b8b927cf5e33a9db7b6cfeddd83d4caf6d15f647a7b94d5803d7a27a0",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-24-full.npz"
+        },
+        "anchor-25-full.npz": {
+          "sha256": "6e22bc36d3a48a94bc93e0b1553640520efe031616ac693e2ce84e683f583370",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-25-full.npz"
+        },
+        "anchor-26-full.npz": {
+          "sha256": "39979c449ab96999f46648d2df3d38abbceafd0d9727e72a9815d44d81f34934",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-26-full.npz"
+        },
+        "anchor-27-full.npz": {
+          "sha256": "69102e3de101c3780475fcb72b94cbf4275f7f7aa28eb4cd7f0453ff3814d126",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-27-full.npz"
+        },
+        "anchor-28-full.npz": {
+          "sha256": "bc3842e0baef2d4ee03c005d2037c5c24272d21776577455534af926f91bda64",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-28-full.npz"
+        },
+        "anchor-29-full.npz": {
+          "sha256": "20ee1f811820c946b0670d6545f48baac77f94aae0ddf4a275c04d0678b911f7",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-29-full.npz"
+        },
+        "anchor-30-full.npz": {
+          "sha256": "3fcf0c64150d61ee50dbed8676bab6b5dacb887ef8ba0897ef4b450d6b823042",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-30-full.npz"
+        },
+        "anchor-31-full.npz": {
+          "sha256": "335113bdc05514835a8b9e1e39724907f8a72f7d7ee3f9aab5fbd01d1628ae78",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/anchor-31-full.npz"
+        },
+        "policy.json": {
+          "sha256": "b58efd1d1ce3bb5c7f9b2f0c6e6ca20afaea51497a7fb3e3985b10a1e913ce05",
+          "source": "research/artifacts/local/elliptic-curves/m18-landscape-comparison-v1/det1092-funnel-conic-split-seeds-v1__funnel-002537010/policy.json"
+        },
+        "seed-input.json": {
+          "sha256": "9adad76f7afd8618a166fa46370313a74d5cb43bee5f194847c4a81070f7e3a4",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/seed-input.json"
+        },
+        "seed-proof.json": {
+          "sha256": "a4ad7525155e56a69727c75989e3d9ece4eace22fd3936ecb343305b5c9c8676",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/seed-proof.json"
+        },
+        "selection.json": {
+          "sha256": "0824b9542ca1c58f37c531117f833f60cdc0a9b95537dcbc738089fb20116a9c",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-00/selection.json"
+        }
+      }
+    },
+    {
+      "case": "det1092-funnel-conic-split-seeds-v1__funnel-020887854",
+      "folder": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854",
+      "inputs": {
+        "anchor-00-full.npz": {
+          "sha256": "6b0f9d89ca6646db56d3ecf4a54f1704b7d995be23befe92a2b5148b29f78d4f",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-00-full.npz"
+        },
+        "anchor-01-full.npz": {
+          "sha256": "bdbdb18fe5e8c4399cc36038d84a365511367fa389a6f506602db58a720ce9b6",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-01-full.npz"
+        },
+        "anchor-02-full.npz": {
+          "sha256": "db029eeaa19724d8d394fa961088301f7739ea5de7c668e156ce3c2050a59af5",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-02-full.npz"
+        },
+        "anchor-03-full.npz": {
+          "sha256": "bcdee0ce8184478ba57deea033d8a4b31ce2621d97cde97d612413ef9e15bd82",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-03-full.npz"
+        },
+        "anchor-04-full.npz": {
+          "sha256": "8071d9d6ae8bf76332cd3447962add795b589264cf446908d95c52754bbd47b0",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-04-full.npz"
+        },
+        "anchor-05-full.npz": {
+          "sha256": "f97ee691243b5d3513307556c80da665a6e45c23d1b10926bf86dd965e134bc7",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-05-full.npz"
+        },
+        "anchor-06-full.npz": {
+          "sha256": "0e5221f66c9f818bdfc0d2544f4a3f226ff427c98834e45862b4ace95d7e4a16",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-06-full.npz"
+        },
+        "anchor-07-full.npz": {
+          "sha256": "5b9baa973d14ec6b9bc5cab12f53f12937758ed4df3910becaaf1f075aa98f64",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-07-full.npz"
+        },
+        "anchor-08-full.npz": {
+          "sha256": "42d04c6db58e1a64b52631cf5a6be5f019a9c82d8abe7dbd847ed494b109c435",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-08-full.npz"
+        },
+        "anchor-09-full.npz": {
+          "sha256": "0367658a00f52e58f1b907a83b8c0468c9d0a04def8be320def0fd874335cc93",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-09-full.npz"
+        },
+        "anchor-10-full.npz": {
+          "sha256": "90f67015667d383f1aef8448d71b795f9a63f887a88724ae903338c97fca3244",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-10-full.npz"
+        },
+        "anchor-11-full.npz": {
+          "sha256": "64830fa5a063d45408c869215539e090b23189f5ade29b1267f8d05b5315ae0d",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-11-full.npz"
+        },
+        "anchor-12-full.npz": {
+          "sha256": "40ce5ea5596756726f15fe628437b4c54b1e4d061e401c8a44988a9215f0be23",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-12-full.npz"
+        },
+        "anchor-13-full.npz": {
+          "sha256": "0ce427780274e1895c0c0d0f200f5dc17509e28ea0023887e64ca5d448bf6db2",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-13-full.npz"
+        },
+        "anchor-14-full.npz": {
+          "sha256": "c2f65641e1225a69616d9f0f0b8bd7cb33dd998e10662fc0f5edd40b44cb7020",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-14-full.npz"
+        },
+        "anchor-15-full.npz": {
+          "sha256": "2ec264a2cfa4f42c7cd91198141b3aa5e22b8e6fbca9e164bf78bf4b9c967ffc",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-15-full.npz"
+        },
+        "anchor-16-full.npz": {
+          "sha256": "8c859b6ff1629944dca329c4f1a0377da0478202723ee4dd6ab59cc9cbb26c5c",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-16-full.npz"
+        },
+        "anchor-17-full.npz": {
+          "sha256": "8dbb531b1698a42237020779909d72371ce365fae8927000b074b911aa1e0350",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-17-full.npz"
+        },
+        "anchor-18-full.npz": {
+          "sha256": "16b2da48d16714775cad84a104bae8d00855ca90da1a363af2c54ce489066e94",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-18-full.npz"
+        },
+        "anchor-19-full.npz": {
+          "sha256": "c0f6014deeb2fc5903e4b2a09a8899ad17041e0bbce957d2bf93e3571f74cb45",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-19-full.npz"
+        },
+        "anchor-20-full.npz": {
+          "sha256": "6b83b972d880b13d1efcbcf17124b7cf1433ae4eed61716da0b43edd64451d4c",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-20-full.npz"
+        },
+        "anchor-21-full.npz": {
+          "sha256": "069db91336bef82f3e27a0dd166012b3c6c6c922596a42a26a30d20abd4cacf1",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-21-full.npz"
+        },
+        "anchor-22-full.npz": {
+          "sha256": "70a5e249cf1b2d29fbf9dbce65aeeab5902dde7b427f4952decf10a2ad2bf8d5",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-22-full.npz"
+        },
+        "anchor-23-full.npz": {
+          "sha256": "2b2d60a35f2ff2323c160ccfd2491f90c6a70a8c7344ba8c462be071719c7537",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-23-full.npz"
+        },
+        "anchor-24-full.npz": {
+          "sha256": "f631a2521db18db88e9e28283c7c53fc26f52a51303176ab95332d1f8627d398",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-24-full.npz"
+        },
+        "anchor-25-full.npz": {
+          "sha256": "59daf7d1ac6197a974a4d3f25ed7e09933158288a8a0b7f3d37529a68f111942",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-25-full.npz"
+        },
+        "anchor-26-full.npz": {
+          "sha256": "cbc169d22dd32da8dbfc71167b528944b4277ea97fa326e7a0e506b9720f12dd",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-26-full.npz"
+        },
+        "anchor-27-full.npz": {
+          "sha256": "eed45d34ed3ee79e1b028792520bf8d024313e7de7b3fc23052500c73225b24b",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-27-full.npz"
+        },
+        "anchor-28-full.npz": {
+          "sha256": "44458cd5ffe12d99155fcf62d15a3a0ab1ffb317406c26dd00d60cc759b19fa8",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-28-full.npz"
+        },
+        "anchor-29-full.npz": {
+          "sha256": "695d605d4d9bb2ce37ed32e6a5bf181db089b29775882f38b17b1ff1dce26fd7",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-29-full.npz"
+        },
+        "anchor-30-full.npz": {
+          "sha256": "b235f2424fabafaae31b926c45e21410241557fa0278ad59e4e7c4a789c2a92b",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-30-full.npz"
+        },
+        "anchor-31-full.npz": {
+          "sha256": "9c7c3b384fdd842e7f1cfc31b0b5bc79a917725ec5065ff2c3b09d3d06d8bb34",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/anchor-31-full.npz"
+        },
+        "policy.json": {
+          "sha256": "b58efd1d1ce3bb5c7f9b2f0c6e6ca20afaea51497a7fb3e3985b10a1e913ce05",
+          "source": "research/artifacts/local/elliptic-curves/m18-landscape-comparison-v1/det1092-funnel-conic-split-seeds-v1__funnel-020887854/policy.json"
+        },
+        "seed-input.json": {
+          "sha256": "47fdafa17aa90ee193aef39dd9c9e82f5db91314d4dcb8df99e4c585fbca6d59",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/seed-input.json"
+        },
+        "seed-proof.json": {
+          "sha256": "0bde0ff52595dad149db9a37b939af32bfa2633db0b40fe77082e64c08003936",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/seed-proof.json"
+        },
+        "selection.json": {
+          "sha256": "592a0a0b0189316a660cb323454c1df3a4ec69069cb309fd76264b0f956d12f4",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-020887854/replay-M17/epoch-00/selection.json"
+        }
+      }
+    },
+    {
+      "case": "det1092-small-conic-seed-v1__conic-small-01",
+      "folder": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01",
+      "inputs": {
+        "anchor-00-full.npz": {
+          "sha256": "e461f7b80a1dede283986d33fe9254fb9f5b0dd43e51d5470b433b601f932dc4",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-00-full.npz"
+        },
+        "anchor-01-full.npz": {
+          "sha256": "43abbd694a695d9a9e161fc56718ce6ba93d10410cfce0f05617b9321df5b271",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-01-full.npz"
+        },
+        "anchor-02-full.npz": {
+          "sha256": "a73e5b964b4573b4c7f3c492f11bfda054e7550ce0a3273bd1fe93b488fd8425",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-02-full.npz"
+        },
+        "anchor-03-full.npz": {
+          "sha256": "2590c683e2fbb716529b6fb95d825b1c207ceae345e4f9d9840187386c725ff5",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-03-full.npz"
+        },
+        "anchor-04-full.npz": {
+          "sha256": "2b094abaa5f46c92fe4c8784623628e766f97dd67fa86b810bb3e7d02d53244a",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-04-full.npz"
+        },
+        "anchor-05-full.npz": {
+          "sha256": "b8f925a5d6bf702956853d21c90261826a6dbe2e94edb2aa3106320c9bf49ca1",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-05-full.npz"
+        },
+        "anchor-06-full.npz": {
+          "sha256": "5ecf276fb84f1bfe27b942acea4babceafb16293b614bb4581297874d156b47a",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-06-full.npz"
+        },
+        "anchor-07-full.npz": {
+          "sha256": "c9bf1cad1062ebc2faac9c3e334e2d74d6135d5159fd63fe0ff1374ebe59fd10",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-07-full.npz"
+        },
+        "anchor-08-full.npz": {
+          "sha256": "af607083d988e27e9d9f5e15d1df02eaac6e07c2b3506ed74891be17a2ae1979",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-08-full.npz"
+        },
+        "anchor-09-full.npz": {
+          "sha256": "ea8f8a2f69bcb3bbdaae2ecedda937bdc5aed6ab0aa969e9df2e00be9acf25fe",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-09-full.npz"
+        },
+        "anchor-10-full.npz": {
+          "sha256": "7b9696e57133b3ade04f78cbaa8750de5bd411197d7103019933c91faf013717",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-10-full.npz"
+        },
+        "anchor-11-full.npz": {
+          "sha256": "0bad7ca3ea93802519244939f0bb2763871d68b8ccc17ce669fc5b4948ba6812",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-11-full.npz"
+        },
+        "anchor-12-full.npz": {
+          "sha256": "914a6cafdd1f55e79a3ad19b12a1f4d835770ff61dc0938187f1e7c50e6c80cb",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-12-full.npz"
+        },
+        "anchor-13-full.npz": {
+          "sha256": "5fbef4a66d437193c92b2b456cafc906c49ed0d2a1a05250e36c6815d03c806b",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-13-full.npz"
+        },
+        "anchor-14-full.npz": {
+          "sha256": "feb4834d2c1963541930802e2b2119824ee944a459a45f3bb0b7e638048c20f1",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-14-full.npz"
+        },
+        "anchor-15-full.npz": {
+          "sha256": "5f33c81d2f14b1533d44f98a84b53400efd96844d8fc772b13af00c6b9555ea7",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-15-full.npz"
+        },
+        "anchor-16-full.npz": {
+          "sha256": "c465ba6e54e331c6bc4ad6152945810707ca2ed209145bd06e6e0871bd20d597",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-16-full.npz"
+        },
+        "anchor-17-full.npz": {
+          "sha256": "18b2fa69e55b0cc4243f1bf311d51c083c25d72760a3433f19d543a291c59272",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-17-full.npz"
+        },
+        "anchor-18-full.npz": {
+          "sha256": "2344f73968eca79ad93732aa5f97bc7281ed9e0d6e1750c7f94fa8c879fe3780",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-18-full.npz"
+        },
+        "anchor-19-full.npz": {
+          "sha256": "01d6a785959960e2dd72cfef2ab0fe1d6cec7797401dcf409de4bb2502a78471",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-19-full.npz"
+        },
+        "anchor-20-full.npz": {
+          "sha256": "1c6564143ffdc95a3ecbb86bcb9b9950c7ee942158dc17926201c6b17fcbed11",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-20-full.npz"
+        },
+        "anchor-21-full.npz": {
+          "sha256": "c91a7207fb03b9f4b01b65b61a3dad5ae11ea406bc9988719dc3e851282eacaf",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-21-full.npz"
+        },
+        "anchor-22-full.npz": {
+          "sha256": "cbcfd211f7c8216cee569148a9dc45042abedc90aa30e24663013f1f4a75ebd5",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-22-full.npz"
+        },
+        "anchor-23-full.npz": {
+          "sha256": "63acec618ef77d2135b71a48d3306ce0df34416870fac9d715c5ad2c52934f1a",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-23-full.npz"
+        },
+        "anchor-24-full.npz": {
+          "sha256": "fa3d702e110f6f784acb7be82faf1d2c53a364ef7d2c26d756b9a997c86207ff",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-24-full.npz"
+        },
+        "anchor-25-full.npz": {
+          "sha256": "cac66e70e13c000b8b15999bc45dbef89dd3ae6b6065ebafea2a0901ac2862ed",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-25-full.npz"
+        },
+        "anchor-26-full.npz": {
+          "sha256": "28b099d7e236832f5db3e6e7052d341c4be3c4fadc68acaf86761c42f870b696",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-26-full.npz"
+        },
+        "anchor-27-full.npz": {
+          "sha256": "cb7beb64515289030afbcd42ddad50b780b78093bcdc283add02977d096e196c",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-27-full.npz"
+        },
+        "anchor-28-full.npz": {
+          "sha256": "97e9c90769a3edb2c3f46dd1126247f933c908f577d563cd2d3b86b781b604dd",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-28-full.npz"
+        },
+        "anchor-29-full.npz": {
+          "sha256": "7b248f99fc2e87af0205a4838cc584cdd57b1a1988ad450d453c67bc367a813d",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-29-full.npz"
+        },
+        "anchor-30-full.npz": {
+          "sha256": "1cabaf05b1d28fd9346a63c8a871529dac878e76765147a40fcb81125381ab0a",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-30-full.npz"
+        },
+        "anchor-31-full.npz": {
+          "sha256": "e12bba3282a4a832ea837be99cd9e990dfe11900ef122387683ebe77d023743f",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/anchor-31-full.npz"
+        },
+        "policy.json": {
+          "sha256": "b58efd1d1ce3bb5c7f9b2f0c6e6ca20afaea51497a7fb3e3985b10a1e913ce05",
+          "source": "research/artifacts/local/elliptic-curves/m18-landscape-comparison-v1/det1092-small-conic-seed-v1__conic-small-01/policy.json"
+        },
+        "seed-input.json": {
+          "sha256": "602936e0c496b19ef666c2d3a9514f02ae118dcc73be4a58fe3028f5dad2775d",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/seed-input.json"
+        },
+        "seed-proof.json": {
+          "sha256": "a9cab6f8afed0324394e125a928f7010333120cbf8f11b793296dad4050d7785",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/seed-proof.json"
+        },
+        "selection.json": {
+          "sha256": "9a7056d5f2e33b0068f8caae9aae73cca01d7605073d458d32b7909e811659ae",
+          "source": "research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifiers/conic-small-01/replay-M17/epoch-00/selection.json"
+        }
+      }
+    },
+    {
+      "case": "det1092-funnel-production-v1__funnel-006017106",
+      "folder": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106",
+      "inputs": {
+        "anchor-00-full.npz": {
+          "sha256": "640849084a39e127a046e3e352136d11edf63860f4ad7f34294709b21f581dc0",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-00-full.npz"
+        },
+        "anchor-01-full.npz": {
+          "sha256": "4165cc7cab56ccdca2cbbaa16101ed99e8e806e3073848d09a3b439587a4a651",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-01-full.npz"
+        },
+        "anchor-02-full.npz": {
+          "sha256": "ef8a9e9539178795e3c2da718a354b96096c9727748a6ae96f29730b70459f80",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-02-full.npz"
+        },
+        "anchor-03-full.npz": {
+          "sha256": "fb5e4d10cac52a19442a36082d33ebb06e13e651d4247301c179f4c63d590b15",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-03-full.npz"
+        },
+        "anchor-04-full.npz": {
+          "sha256": "3d2308ca969a4a73e85c1df65efccc4cef2314ac5ee89e491090f00580435d74",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-04-full.npz"
+        },
+        "anchor-05-full.npz": {
+          "sha256": "80a5975c79b728a11357447a3c187da8d18b5b5b1b65f0a9512ba0286443ca17",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-05-full.npz"
+        },
+        "anchor-06-full.npz": {
+          "sha256": "26aa794e53a8e777905fd0f9af7b5d523bc294d0f95a7205a939f1bb51b51542",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-06-full.npz"
+        },
+        "anchor-07-full.npz": {
+          "sha256": "90358f87c7a82d364b1cdaa466be64eee5f77b300c9b82a5b14da76cafe02b2a",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-07-full.npz"
+        },
+        "anchor-08-full.npz": {
+          "sha256": "b7d4689b3217733d89fd4ec2f03d9282e86bfdcfe3450b8922f7b11bfa11074f",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-08-full.npz"
+        },
+        "anchor-09-full.npz": {
+          "sha256": "fc28dbb6840784265ad98e2740f24feea421da665e0421656093b09b102fe603",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-09-full.npz"
+        },
+        "anchor-10-full.npz": {
+          "sha256": "b5f8bde8017e7b6c39c64a6fd5727549375bcfe4c0f0d564a6cdc4f62f173902",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-10-full.npz"
+        },
+        "anchor-11-full.npz": {
+          "sha256": "1a6adc6bec38e3ba7e4e724bcf417ffbbeb61fff6ec269c83fb50d13fe38c922",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-11-full.npz"
+        },
+        "anchor-12-full.npz": {
+          "sha256": "7e2710f3554b6dc9894c697a4870b51687c214363756167b845e2dc14b4df9d9",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-12-full.npz"
+        },
+        "anchor-13-full.npz": {
+          "sha256": "6e1f4dcb79016ffd20e8fbc89934bccdafea4eabfb1b52689c2c349f80575ece",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-13-full.npz"
+        },
+        "anchor-14-full.npz": {
+          "sha256": "48fe97a2fde7888eced01dd2c6872d6d695d5ea50f54a10eeebd87e484ca7ec3",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-14-full.npz"
+        },
+        "anchor-15-full.npz": {
+          "sha256": "b43840248e7db46ff4158de3fdffcc26028ba3b06137b3b2bffeb1941b19b89a",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-15-full.npz"
+        },
+        "anchor-16-full.npz": {
+          "sha256": "35c4ff74408590319ee8ec778bbf610c8fd46436820d15bb6ae00d6f451df297",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-16-full.npz"
+        },
+        "anchor-17-full.npz": {
+          "sha256": "8c2ee73de534a8423e57e57eb31e2ccb1fe6f8cad9a7d81c9cdf0ba5316594b4",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-17-full.npz"
+        },
+        "anchor-18-full.npz": {
+          "sha256": "1cdc0ceaee0ed0a042422ae04480d0ad4b6f09ef684b4f654f765ea50adb9347",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-18-full.npz"
+        },
+        "anchor-19-full.npz": {
+          "sha256": "b53c3c2f43191d5eaac1307072ae7d5c5c59573a4e7f64044a655b6f1b254cee",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-19-full.npz"
+        },
+        "anchor-20-full.npz": {
+          "sha256": "7ec22b06d32cc3607302e235c569f2a76b41fa5f1411aabd3ca7869e9e643cf8",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-20-full.npz"
+        },
+        "anchor-21-full.npz": {
+          "sha256": "3b6aee662b4d23f3a207081f3cc16e5462059bb094f99035bdc57dd96e3a3b95",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-21-full.npz"
+        },
+        "anchor-22-full.npz": {
+          "sha256": "4acdeb4b6f578c12cc249f45fb36799bc4542c61a0e39b742e5d9fcdd99a7866",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-22-full.npz"
+        },
+        "anchor-23-full.npz": {
+          "sha256": "cd88344adc992273d5977afbf8807a558e0a8a7615fb52b59d5d4edbcba7a2a5",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-23-full.npz"
+        },
+        "anchor-24-full.npz": {
+          "sha256": "c8da0c27871ffa6fb58ed5a57cbef7510e8c5de25a2d0ad151ecb25d28c2afa8",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-24-full.npz"
+        },
+        "anchor-25-full.npz": {
+          "sha256": "e9cfee633500526b5ad24df0b6bf7588be85bf1bdc0fe7d5b5ccc10db357aed9",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-25-full.npz"
+        },
+        "anchor-26-full.npz": {
+          "sha256": "dc5041760448363b35cdca89b8494356cf446e9849d7692745692f8503339ca8",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-26-full.npz"
+        },
+        "anchor-27-full.npz": {
+          "sha256": "71fa917ac5d6cffa685e0b73c536b7c6f246db47b3e024e2a7062773b6beccac",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-27-full.npz"
+        },
+        "anchor-28-full.npz": {
+          "sha256": "13d622cda769f6ea66faa99541915ff8eaca1299416c95031c1e652a7ba24cfa",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-28-full.npz"
+        },
+        "anchor-29-full.npz": {
+          "sha256": "14503860f0e0842023d503fe7d6213e72d50c0b7f5ce714014517f492267775f",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-29-full.npz"
+        },
+        "anchor-30-full.npz": {
+          "sha256": "ffc0f0dfd0899d6697a92a27f0938a5a841db4d1b1fd0fdbe596c76e3c57dc8e",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-30-full.npz"
+        },
+        "anchor-31-full.npz": {
+          "sha256": "431f84556ad4428db345bedd5b0cf0a178295821862784b05857d931bfdd7d26",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/anchor-31-full.npz"
+        },
+        "policy.json": {
+          "sha256": "b58efd1d1ce3bb5c7f9b2f0c6e6ca20afaea51497a7fb3e3985b10a1e913ce05",
+          "source": "research/artifacts/local/elliptic-curves/m18-landscape-comparison-v1/det1092-funnel-production-v1__funnel-006017106/policy.json"
+        },
+        "seed-input.json": {
+          "sha256": "cf244cf767af3161bbfe91f10bce0da3688e94e34cb7fed228e4659393ea7bea",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/seed-input.json"
+        },
+        "seed-proof.json": {
+          "sha256": "8bc493f7edd8dbc49262c65b93bbf310551b76367c2f3c15caa0f1281f1c00ca",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/seed-proof.json"
+        },
+        "selection.json": {
+          "sha256": "c816ca7e8c8d751c44e46ffb0c52fcc21d9fba6ae146f0eb1005430d477dfc49",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-006017106/replay-M17/epoch-00/selection.json"
+        }
+      }
+    },
+    {
+      "case": "det1092-funnel-production-v1__funnel-019791672",
+      "folder": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672",
+      "inputs": {
+        "anchor-00-full.npz": {
+          "sha256": "7ea66c02ef8d6283e777120dc293deca38c72e3f90fa14dada30dc6a9330871e",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-00-full.npz"
+        },
+        "anchor-01-full.npz": {
+          "sha256": "3954ebe5c8ed8ec640f2341c250c254237744df90b6a092b9e9d0207647555f0",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-01-full.npz"
+        },
+        "anchor-02-full.npz": {
+          "sha256": "7f66a8a7ea333eab929e2616ff2ed3ef65a1875317be8d9efce9908baa3bf291",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-02-full.npz"
+        },
+        "anchor-03-full.npz": {
+          "sha256": "df22ed2efc80c2ce78f699a7aba316fdedcc4b886bc3f97f48cf44a3ae589a4e",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-03-full.npz"
+        },
+        "anchor-04-full.npz": {
+          "sha256": "3342a829fe945f87dd62e037864a347aacbf8cbd020d2816c116da794660552a",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-04-full.npz"
+        },
+        "anchor-05-full.npz": {
+          "sha256": "4ef046ede885fb58cdee6482a37b3cba264e59ed0f97a49cacc2e631cd69988f",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-05-full.npz"
+        },
+        "anchor-06-full.npz": {
+          "sha256": "29a1ea8af506ab0114d930b7d1c0e1b2dc3e8fdfc8f32c5a34776ffe70a1746c",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-06-full.npz"
+        },
+        "anchor-07-full.npz": {
+          "sha256": "cfb9517fc02524c60b3fce7bd40ae30ce32ad496a05d7db46925b5ea2e334797",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-07-full.npz"
+        },
+        "anchor-08-full.npz": {
+          "sha256": "e5c4dff0807c776266438e2c45ac6376d702157d8c81fc2599763bcef0a5c979",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-08-full.npz"
+        },
+        "anchor-09-full.npz": {
+          "sha256": "ce23b5ca26a2f04b78368625c868b324519680130162a2034ca8aad1c5ef5e7c",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-09-full.npz"
+        },
+        "anchor-10-full.npz": {
+          "sha256": "d34dd205c2fd5f05aff5e8a0ce57fead3769b3667dad93242e3309b597ed0fab",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-10-full.npz"
+        },
+        "anchor-11-full.npz": {
+          "sha256": "8cc57dd8a785b4f04c3fd8d7c6396b8e0a70836185cb3111ddf1719f663e2e81",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-11-full.npz"
+        },
+        "anchor-12-full.npz": {
+          "sha256": "4b3f274384fbe50b67939a97674eba71be8465353f81e1cd838e24f50b8438e3",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-12-full.npz"
+        },
+        "anchor-13-full.npz": {
+          "sha256": "d13c0372e1aaeec53d35ac1a003f1761a2b4dbc2598ede1e6a3d664aa928dd73",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-13-full.npz"
+        },
+        "anchor-14-full.npz": {
+          "sha256": "a1ae518d3d44f2909a3578e878644241719f36678b6bf476197b61c10308270a",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-14-full.npz"
+        },
+        "anchor-15-full.npz": {
+          "sha256": "142f3ffaeb84749d882392396d4091cd1bce46d1b8b07236a91eedda5106f803",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-15-full.npz"
+        },
+        "anchor-16-full.npz": {
+          "sha256": "fb2bd7851168004d31608764ef603fe24fcb56ecdb612bef197ac3f9460c0977",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-16-full.npz"
+        },
+        "anchor-17-full.npz": {
+          "sha256": "14a4be70ecb4658981d37b6f62560b2a02556ef23e7ef696fece3d6d236e41c5",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-17-full.npz"
+        },
+        "anchor-18-full.npz": {
+          "sha256": "9edba069c66c22a4364b84c6e84a139a1d8ecf8b37770ae98d308e81852a1a6f",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-18-full.npz"
+        },
+        "anchor-19-full.npz": {
+          "sha256": "05c927b3df161223690a122257d3724a3113176d5ce9e48fdf06433de80814fc",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-19-full.npz"
+        },
+        "anchor-20-full.npz": {
+          "sha256": "539980dea18d5ab36be868ffab68eaab29f485719ded8f73aba71957971b3171",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-20-full.npz"
+        },
+        "anchor-21-full.npz": {
+          "sha256": "b6765c4685b1e07d42c5cdd32da3e387e956a1751bfe6b7f304e39f9d4327889",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-21-full.npz"
+        },
+        "anchor-22-full.npz": {
+          "sha256": "d11278a5984753fe59396bbb6084532a1aa85ec58e9472a428509bb4c40c5877",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-22-full.npz"
+        },
+        "anchor-23-full.npz": {
+          "sha256": "dc307b28a370b721323aeebfdeb977b0fac14e887a40ee5010675c165e8d857d",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-23-full.npz"
+        },
+        "anchor-24-full.npz": {
+          "sha256": "8257b0bb472f1eef541e29f62d03ab73cc3b220387e0738d163a9a56ca37377e",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-24-full.npz"
+        },
+        "anchor-25-full.npz": {
+          "sha256": "2cbeb15d8bf7fa3101569c2790ea446d22f7bf01e528065b6c56338aeb14eabc",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-25-full.npz"
+        },
+        "anchor-26-full.npz": {
+          "sha256": "1709688acb0f71cf6ad9b70eb24f0162b39c68ffc8b636b1a41817450dc6e3bd",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-26-full.npz"
+        },
+        "anchor-27-full.npz": {
+          "sha256": "760d7bc10293a5bff561a5b1c56e1701e2d9fd2cc62bd276fa2647ae1557b59d",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-27-full.npz"
+        },
+        "anchor-28-full.npz": {
+          "sha256": "38d7f2accd155ac161308653ec0da9460ad6decbbf6f6273ea9e1c2c011c5cf9",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-28-full.npz"
+        },
+        "anchor-29-full.npz": {
+          "sha256": "1845f1c98006b427ab9249f85ad3bf3457c91dd43975276067efd0aecafb87e8",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-29-full.npz"
+        },
+        "anchor-30-full.npz": {
+          "sha256": "85402d71998334f699cb464afc768e2d17283edd20069928dfba9274cf7e2634",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-30-full.npz"
+        },
+        "anchor-31-full.npz": {
+          "sha256": "bdaa50bf5d75cbba71e3b0827b598d27e30ecd17529af2d78c0bd55b088f1732",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/anchor-31-full.npz"
+        },
+        "policy.json": {
+          "sha256": "b58efd1d1ce3bb5c7f9b2f0c6e6ca20afaea51497a7fb3e3985b10a1e913ce05",
+          "source": "research/artifacts/local/elliptic-curves/m18-landscape-comparison-v1/det1092-funnel-production-v1__funnel-019791672/policy.json"
+        },
+        "seed-input.json": {
+          "sha256": "3d87f4787d58285ebbf880f9953251ff6ae591eb5d6fbf8e0bc34350039ebf52",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/seed-input.json"
+        },
+        "seed-proof.json": {
+          "sha256": "9362e621722c15bdc0ada5ca7645803f571b1aafaecd80a5cc12492a24ed0b28",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/seed-proof.json"
+        },
+        "selection.json": {
+          "sha256": "9f5de9b6e2be3cd813e6a30a342b3d3641ed4a7cbe3c89cec4a5f886a25d79e5",
+          "source": "research/artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/replay-M17/epoch-00/selection.json"
+        }
+      }
+    },
+    {
+      "case": "orbit8044-seed-factory-pilot-v1__orbit8044-000000",
+      "folder": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000",
+      "inputs": {
+        "anchor-00-full.npz": {
+          "sha256": "aaba2ae30f3b054398a1805a0d0298816beedee7da093791a9c847767d80a3cf",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-00-full.npz"
+        },
+        "anchor-01-full.npz": {
+          "sha256": "f5a32fc6b93ccd038357801af41d369d9e72db1c7b7132b0d8701b685c061f3b",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-01-full.npz"
+        },
+        "anchor-02-full.npz": {
+          "sha256": "fca131eea8d886b4132b2d3d82bd34ea7540068137aeb7bb3acf4aac69b9792e",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-02-full.npz"
+        },
+        "anchor-03-full.npz": {
+          "sha256": "b45c35723404ab61cf70c536f5e231269a8a0e3ec37123f0ec5d78fb9737b3fd",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-03-full.npz"
+        },
+        "anchor-04-full.npz": {
+          "sha256": "5d07dd5700462ef991f143ba393c52c49956c52914354f02b389280420d40934",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-04-full.npz"
+        },
+        "anchor-05-full.npz": {
+          "sha256": "d3e3889363daa8ab8b3068748706d7e26966ac722095848777dc8e031b58df8b",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-05-full.npz"
+        },
+        "anchor-06-full.npz": {
+          "sha256": "f1a18388bdafcd406b34ffbb133c1f1356b47552ea83e0888df0f48d50400570",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-06-full.npz"
+        },
+        "anchor-07-full.npz": {
+          "sha256": "a0c40a9fae05cd71eae5cb55ea0755b48d752481996894cde9a8e1e99ab4841a",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-07-full.npz"
+        },
+        "anchor-08-full.npz": {
+          "sha256": "124b929c32c8bb6737e4dfe04365258b6104263e9c3e39f0098249915422b154",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-08-full.npz"
+        },
+        "anchor-09-full.npz": {
+          "sha256": "da15cb6de247a6d2352ed9e5bc7966eda830fb4e6cd5cb3bad1a4ab45c49a562",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-09-full.npz"
+        },
+        "anchor-10-full.npz": {
+          "sha256": "89ec6aa230e842885b01d642a9164e9aff8f50af5b4a102209eb10c8632670a2",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-10-full.npz"
+        },
+        "anchor-11-full.npz": {
+          "sha256": "d421ac4f4824bd3572592b0225ab72f7302dc79709bbf18819bb2bc8e4a38d24",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-11-full.npz"
+        },
+        "anchor-12-full.npz": {
+          "sha256": "a7ad503e62168b80efa393791efc3a90168100275c9bf1f06d732103a33985cd",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-12-full.npz"
+        },
+        "anchor-13-full.npz": {
+          "sha256": "5224880a2e682e38b1f99e8b73c31aa30e530c7ee5a0dadb8c8bea0df9e91d71",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-13-full.npz"
+        },
+        "anchor-14-full.npz": {
+          "sha256": "d9773ff00f25f40f786ba1991fd8e659272c2e07021921b028257f7b444331e3",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-14-full.npz"
+        },
+        "anchor-15-full.npz": {
+          "sha256": "65ded2319004db09826ac24e5e4f7a7e9c998bb8c6e7a5e06f6f6d9d368645ba",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-15-full.npz"
+        },
+        "anchor-16-full.npz": {
+          "sha256": "391a34942cfb20a3268f957c6f5138658f64dba31c201af9bc534f92f8cb4082",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-16-full.npz"
+        },
+        "anchor-17-full.npz": {
+          "sha256": "c6e19b37d4eb35f7cff778067ce10de64af4e25f43a0b0c7b41f3ae1fa7abb82",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-17-full.npz"
+        },
+        "anchor-18-full.npz": {
+          "sha256": "eb8368dcbd321dcbe8f915f2465025be4ed18c624fef672fc4fc7acf520d4c69",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-18-full.npz"
+        },
+        "anchor-19-full.npz": {
+          "sha256": "7acadc083c675e0ff921ea38e02636c579918d44e51dba8534193b1790c48c87",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-19-full.npz"
+        },
+        "anchor-20-full.npz": {
+          "sha256": "fd23f6f9dc75952a8d6bcf779ed42ca78b383ca4d42c9e61eb8494035b1f0977",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-20-full.npz"
+        },
+        "anchor-21-full.npz": {
+          "sha256": "98300355e5b69a8f060f157b543472071892e72279a124fb441b341aa26b74fb",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-21-full.npz"
+        },
+        "anchor-22-full.npz": {
+          "sha256": "d21ae7a440af935852aadda7c5beed79f68b1720d78f5d197ed7b7347ca04d0e",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-22-full.npz"
+        },
+        "anchor-23-full.npz": {
+          "sha256": "979c1b86c7ea9a978183ef0c21c6722ad4a4e9e884ece99812259a216e6328c7",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-23-full.npz"
+        },
+        "anchor-24-full.npz": {
+          "sha256": "67f8e782801a28113d31483317adfad14c507c94d17c424cd43420d81b665eb2",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-24-full.npz"
+        },
+        "anchor-25-full.npz": {
+          "sha256": "6ef30e900a70bab961c39887496e89c87ef78c44593c72574a9c087795a2579b",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-25-full.npz"
+        },
+        "anchor-26-full.npz": {
+          "sha256": "69bf437122eba0aad19c8ea2cf8d497e9e42f0fcc2609f191d33a37a5d2e5b08",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-26-full.npz"
+        },
+        "anchor-27-full.npz": {
+          "sha256": "d2fd6890da34e87509761c4321e4cd3bb82cfe883803d5abcd0835e97b0232d7",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-27-full.npz"
+        },
+        "anchor-28-full.npz": {
+          "sha256": "2d91b3ca14c93051d89a42573b8a9320c45be8a4d66c99dd9d2da9c25daf371e",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-28-full.npz"
+        },
+        "anchor-29-full.npz": {
+          "sha256": "06203c64eb9278e48943ec0f56f93eb6687d507c2f0685bcd9abee9e214839e6",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-29-full.npz"
+        },
+        "anchor-30-full.npz": {
+          "sha256": "8125045e3f03c7977f2fb3a3aee0a49b30a8a637037b6234cbae0b90a93b15b9",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-30-full.npz"
+        },
+        "anchor-31-full.npz": {
+          "sha256": "9c4a1e64cba446bc53f49dbe0055add9697821c33e1a2b52173d0225489d61f6",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/anchor-31-full.npz"
+        },
+        "policy.json": {
+          "sha256": "b58efd1d1ce3bb5c7f9b2f0c6e6ca20afaea51497a7fb3e3985b10a1e913ce05",
+          "source": "research/artifacts/local/elliptic-curves/m18-landscape-comparison-v1/orbit8044-seed-factory-pilot-v1__orbit8044-000000/policy.json"
+        },
+        "seed-input.json": {
+          "sha256": "ab774bc4acce5d0480448452e7eae473c3d2f359c75967075606eb613cae4303",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/seed-input.json"
+        },
+        "seed-proof.json": {
+          "sha256": "6b1b0c4282a2beb873c67ae2488cf53bdb26f5a02abfd532de7f01762f219bba",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/seed-proof.json"
+        },
+        "selection.json": {
+          "sha256": "f892edc40dabd54415812d62bfa7c0e88fdc4d66165ea0fb6dfb9322ef09f535",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/replay-M17/epoch-00/selection.json"
+        }
+      }
+    },
+    {
+      "case": "orbit8044-seed-factory-pilot-v1__orbit8044-000002",
+      "folder": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002",
+      "inputs": {
+        "anchor-00-full.npz": {
+          "sha256": "4bdd52e12f64c879155d6dc92682dbd26c9615f705ecd1a989c3eac7f2e13eed",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-00-full.npz"
+        },
+        "anchor-01-full.npz": {
+          "sha256": "7264afd2ff7ecf4d0a49344913eea75a436038a07feb1ad86eb4cf795e55c01a",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-01-full.npz"
+        },
+        "anchor-02-full.npz": {
+          "sha256": "b32a3af381fb6b1053996fb9462ca7d8c2471b1bafa5acaa101727695effd94c",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-02-full.npz"
+        },
+        "anchor-03-full.npz": {
+          "sha256": "dbb59d2d1aba0ce9a0a7a9942e7ea4807e85be59ba56efeffcd52cc4e6e89368",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-03-full.npz"
+        },
+        "anchor-04-full.npz": {
+          "sha256": "3d057f3dcb27081a77231d90ab0cdea2f5e265f38fe2c1bd0beaf116b0f0a6de",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-04-full.npz"
+        },
+        "anchor-05-full.npz": {
+          "sha256": "649f49a66724024fad0d688fe3f6fcbc19319e1f06c82307d1ddd446bf02e8dc",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-05-full.npz"
+        },
+        "anchor-06-full.npz": {
+          "sha256": "8c0f3b94e8a898fdc9cd2428ca5a37d1c543267146ccb834f7d805c5585b49ac",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-06-full.npz"
+        },
+        "anchor-07-full.npz": {
+          "sha256": "f95e70ff56e0b1bce7fb3d281702d3ff567563c2644100b1f5c27d082ebeafaf",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-07-full.npz"
+        },
+        "anchor-08-full.npz": {
+          "sha256": "3e19c5147f3ddd53ff3e4105d3f5e696881bda6caf2bf7dd15b6f6a3f0961db2",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-08-full.npz"
+        },
+        "anchor-09-full.npz": {
+          "sha256": "7187e97354548473fdc4ff676788f3db306c86709966078e48b9c58e118084ef",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-09-full.npz"
+        },
+        "anchor-10-full.npz": {
+          "sha256": "f7d00df66499078ccb949a5ad1ff211b66e886e370d641349c23fbbc0995479a",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-10-full.npz"
+        },
+        "anchor-11-full.npz": {
+          "sha256": "1630b9148bf51bad6e1728ec328c2104bd9463ffbe8f24007f4b4bad9d0c966c",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-11-full.npz"
+        },
+        "anchor-12-full.npz": {
+          "sha256": "eb93854732a8bb17e20a767546e2bc3544a59b505c86a67d0b5a2a389782ca68",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-12-full.npz"
+        },
+        "anchor-13-full.npz": {
+          "sha256": "29d38f404a24ad81106a20166502c8bd6c59f77e4eca1c72abd64e7407c0cf91",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-13-full.npz"
+        },
+        "anchor-14-full.npz": {
+          "sha256": "b5cd35cf7fdc3cde3e169854c8fe89742c621fec30b0bbf72c2a709ab63629de",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-14-full.npz"
+        },
+        "anchor-15-full.npz": {
+          "sha256": "50616330512b33e121f8fa4db450460e55602740f02c547b54107d0d31caf2e5",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-15-full.npz"
+        },
+        "anchor-16-full.npz": {
+          "sha256": "f17d63c0dcd47c2d0c9e658c61ef8156eff7ef313f1dbcc31dec23368b1279c3",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-16-full.npz"
+        },
+        "anchor-17-full.npz": {
+          "sha256": "dc172bf5e65927581a9a5c330af2d789d54491e72ed83d9855e0acd100b231aa",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-17-full.npz"
+        },
+        "anchor-18-full.npz": {
+          "sha256": "026f1b494246e5e07c16e4e51d4f6be54d95442bf4b12f7e86529f97449bfb18",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-18-full.npz"
+        },
+        "anchor-19-full.npz": {
+          "sha256": "41d57b2c19aac60e0c1a2b2ebbf6e444ea9b3edcdba2c8d04848769c1e36db96",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-19-full.npz"
+        },
+        "anchor-20-full.npz": {
+          "sha256": "b7878d011f43ee72a33fe5b1b31f64c4daba18ad586265cb192edb2d7ff4819e",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-20-full.npz"
+        },
+        "anchor-21-full.npz": {
+          "sha256": "73601557c098843d8d4ae4877793c3e65923dd2f8d7541658deb274493fb29c1",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-21-full.npz"
+        },
+        "anchor-22-full.npz": {
+          "sha256": "7385c35605f4cf7e40c1758bf114e2a8e5a831fe841e47938b947cd246d6621e",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-22-full.npz"
+        },
+        "anchor-23-full.npz": {
+          "sha256": "dc5a98105741499a1ed1e6fec3b09a08a0c4a092463dfb84ffea1a4c81c55ebd",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-23-full.npz"
+        },
+        "anchor-24-full.npz": {
+          "sha256": "a5b1b8078d410e88b6ffc62e9d66ba8863882ca4f87756cf2c6b4af6f130d13a",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-24-full.npz"
+        },
+        "anchor-25-full.npz": {
+          "sha256": "93d501bbf02a602b499d5ae4cbc1d6c13fb9227764671ad6c69951b93856b7b9",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-25-full.npz"
+        },
+        "anchor-26-full.npz": {
+          "sha256": "6b159a7e3cbc46893789ce776833b739f5bfbbfe8bd168b0644299646665ff91",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-26-full.npz"
+        },
+        "anchor-27-full.npz": {
+          "sha256": "b4a6bf547a588bae02ffbe8161c10b442c45f82c0978c6f9df6c8765da8e2bbd",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-27-full.npz"
+        },
+        "anchor-28-full.npz": {
+          "sha256": "bd9aa74bfadfadf2c3cd4889f95fb76d16e8cc44d7fd2704debece8e54db9bb1",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-28-full.npz"
+        },
+        "anchor-29-full.npz": {
+          "sha256": "2cb128fd69e4742e1ce9768aadbad9f3ba35d3c5b46702f64ecf05b928925bf1",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-29-full.npz"
+        },
+        "anchor-30-full.npz": {
+          "sha256": "fdd86822cf54761a1d8e424614fc2e1d6012ead0f9282f7c0af5dc876c90f807",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-30-full.npz"
+        },
+        "anchor-31-full.npz": {
+          "sha256": "8adf16d45e51ececd7fa8df78d410090fd17a949c2261ebb3377c9b4145512dd",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/anchor-31-full.npz"
+        },
+        "policy.json": {
+          "sha256": "b58efd1d1ce3bb5c7f9b2f0c6e6ca20afaea51497a7fb3e3985b10a1e913ce05",
+          "source": "research/artifacts/local/elliptic-curves/m18-landscape-comparison-v1/orbit8044-seed-factory-pilot-v1__orbit8044-000002/policy.json"
+        },
+        "seed-input.json": {
+          "sha256": "1f95bc7e3e1ce72bf8cf49e061982cab3edb6f8abaa24ab8f50f530104874c7e",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/seed-input.json"
+        },
+        "seed-proof.json": {
+          "sha256": "ad46e0e1ff904488fe1779c11cb97ea25cbcf2a9cac920a6e2681229a5f7baeb",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/seed-proof.json"
+        },
+        "selection.json": {
+          "sha256": "ed53d478125d79c600a4f33569468e785f9abbd8455292387db1530ee898348f",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000002/replay-M17/epoch-00/selection.json"
+        }
+      }
+    },
+    {
+      "case": "orbit8044-seed-factory-pilot-v1__orbit8044-000003",
+      "folder": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003",
+      "inputs": {
+        "anchor-00-full.npz": {
+          "sha256": "aa3e9c5a9f752233a5666d34004013eecab5fc22da7e032e654932e3f90a6113",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-00-full.npz"
+        },
+        "anchor-01-full.npz": {
+          "sha256": "781cc3c5b9427f81224942ec63289b726a9f651e52e2cf5cdbffbcd40f827941",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-01-full.npz"
+        },
+        "anchor-02-full.npz": {
+          "sha256": "45e79fe6e1e5f2f2373f7d4ffe5bd4bf0da3f8d58ca4510c21e39470ab69290f",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-02-full.npz"
+        },
+        "anchor-03-full.npz": {
+          "sha256": "3d4081f76f12b2a8622c4982b68db2a5a27ef348608086d63a1be02194dd21c7",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-03-full.npz"
+        },
+        "anchor-04-full.npz": {
+          "sha256": "d02afdaaa61d935f2631d10b28932f7ffba29fdef7fb574ff31c50d1ee3b91e0",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-04-full.npz"
+        },
+        "anchor-05-full.npz": {
+          "sha256": "ac0936c6a7630f3f379df2dbe5dad9a1acfdcdaee3827ac5ae5b5240056f226e",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-05-full.npz"
+        },
+        "anchor-06-full.npz": {
+          "sha256": "7d6ff982d52c95c3971b9901e1ea7bbf2b3e86897f732e114b4651e26add6be6",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-06-full.npz"
+        },
+        "anchor-07-full.npz": {
+          "sha256": "f3e15c3658922e13b3ecb856b26ac42bb851e6da1edfe4aa1e294c0a341da0e2",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-07-full.npz"
+        },
+        "anchor-08-full.npz": {
+          "sha256": "3ed4ccadbb1882780dfd331c76a1edf81cf6de798f1e75cad35b053f98300f4b",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-08-full.npz"
+        },
+        "anchor-09-full.npz": {
+          "sha256": "f124ff8995449ff6ec636a4cc8ebf3ce3fb99f4924c486b2f2c2904cf541e12c",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-09-full.npz"
+        },
+        "anchor-10-full.npz": {
+          "sha256": "78144eab6b78444786721fbeb7d46476ae864ed363200d65cac8695ab36901e6",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-10-full.npz"
+        },
+        "anchor-11-full.npz": {
+          "sha256": "b3f27722994e0150bd1f4b9500b3de40fca1a709737306cc3148ecebd2322d41",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-11-full.npz"
+        },
+        "anchor-12-full.npz": {
+          "sha256": "a69bb5b35f9c9f46465bb4d75441ac00f875870eaa8ec0863a8190fe08848b4c",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-12-full.npz"
+        },
+        "anchor-13-full.npz": {
+          "sha256": "54fdcb3257a42d6fe9fda8aea97638cfd3b58289f1cc0ed26de2a704465d34d5",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-13-full.npz"
+        },
+        "anchor-14-full.npz": {
+          "sha256": "161bec9f1d13ae1a8726f9236f7bb97945cd720e707074e0fa19a81a5f214195",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-14-full.npz"
+        },
+        "anchor-15-full.npz": {
+          "sha256": "844897e1681c6d64a67b3a0056a13bbce39efc37aa42818c186fd0618f69b782",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-15-full.npz"
+        },
+        "anchor-16-full.npz": {
+          "sha256": "310d8bb2f829bc9f81355c7ed853df946b862e0dbff88a821ee3e46b2b331e44",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-16-full.npz"
+        },
+        "anchor-17-full.npz": {
+          "sha256": "149ba9f44e3c73ccf1c0c614ac31eeb314f4e054c5ef3ee65feb61a151bec264",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-17-full.npz"
+        },
+        "anchor-18-full.npz": {
+          "sha256": "0ce615a57b8257719bafe5a1b818ac5f7604f12c99257185e01e4a8a0ed8c73f",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-18-full.npz"
+        },
+        "anchor-19-full.npz": {
+          "sha256": "d000f1c692fa164a996adfc26175e2f9c228af5c202d101a9aabeef471c26571",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-19-full.npz"
+        },
+        "anchor-20-full.npz": {
+          "sha256": "bc17e1f15e35ce5d71f6748b8b2ee977dc5a82595a2c20f252f72851aac013bc",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-20-full.npz"
+        },
+        "anchor-21-full.npz": {
+          "sha256": "d977f7611fdecc68944c627197a8d484941f981d332d2f1627b0bb4b05753de7",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-21-full.npz"
+        },
+        "anchor-22-full.npz": {
+          "sha256": "7ffac1baf778d5293528ee71b12850e5c347a42ed40fdbba515e633f645e67a8",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-22-full.npz"
+        },
+        "anchor-23-full.npz": {
+          "sha256": "2633cda9200d681bb46eec06236b3fc27ffa0c388a0d16751ad1a6603783c44d",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-23-full.npz"
+        },
+        "anchor-24-full.npz": {
+          "sha256": "e26e6352b49987eafe98eaf7d888f0bb950954f4355d122b64c6647a992d875b",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-24-full.npz"
+        },
+        "anchor-25-full.npz": {
+          "sha256": "4ba145319693fc7e28252c4c3529975ee7718182ee1f374ab79311c37af7cfce",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-25-full.npz"
+        },
+        "anchor-26-full.npz": {
+          "sha256": "21f97acfcdcef2bf60a1957f8ce3e6772e628cd1019175e3dad6b847980bc45f",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-26-full.npz"
+        },
+        "anchor-27-full.npz": {
+          "sha256": "25c1cc83a12240d13afeece4ef838fb653fcffc56382c9b2cad87005026f93f3",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-27-full.npz"
+        },
+        "anchor-28-full.npz": {
+          "sha256": "a0f1e25aaa6d1c77ed137120f9013c56c40cf53b53a2008e2da841a458a51d53",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-28-full.npz"
+        },
+        "anchor-29-full.npz": {
+          "sha256": "890429d9c537900605866cd7b9000709f000d5a9c9a20a5988c4680dc4e5ac10",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-29-full.npz"
+        },
+        "anchor-30-full.npz": {
+          "sha256": "70aeb0bdd6a3e810828c7c45cd97b0e39b418af98c4ff3bc592f85b188152344",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-30-full.npz"
+        },
+        "anchor-31-full.npz": {
+          "sha256": "22eede08b40ace26b0f9dad0fc0facfa55e9f67c2cf5beae523cf3892c38d616",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/anchor-31-full.npz"
+        },
+        "policy.json": {
+          "sha256": "b58efd1d1ce3bb5c7f9b2f0c6e6ca20afaea51497a7fb3e3985b10a1e913ce05",
+          "source": "research/artifacts/local/elliptic-curves/m18-landscape-comparison-v1/orbit8044-seed-factory-pilot-v1__orbit8044-000003/policy.json"
+        },
+        "seed-input.json": {
+          "sha256": "a3e02db11afbd5e60b60af51cbedc697c40c9c79f2ff2516eba8fcd8a056cc86",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/seed-input.json"
+        },
+        "seed-proof.json": {
+          "sha256": "fc42c3815653a54422f9be777e69f80b1eefa01cc6415522489b237a2f5ece4d",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/seed-proof.json"
+        },
+        "selection.json": {
+          "sha256": "aa89ce66b9f9582802eb18c7f2d82160e8aba6c7cb385eb0f63d2f27ee7ba1e9",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000003/replay-M17/epoch-00/selection.json"
+        }
+      }
+    },
+    {
+      "case": "orbit8044-seed-factory-pilot-v1__orbit8044-000004",
+      "folder": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004",
+      "inputs": {
+        "anchor-00-full.npz": {
+          "sha256": "d99aec10b73768421bf652c87af05eec365b081febafe73aec7e7e8ae317818d",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-00-full.npz"
+        },
+        "anchor-01-full.npz": {
+          "sha256": "3c674c876627f32985f2609c717a33519c249283bd0024d3aae60532b17ba419",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-01-full.npz"
+        },
+        "anchor-02-full.npz": {
+          "sha256": "e7f7b10807f1403c22a6dcf9287a95f3686f2bd23eb9b272845fa80aabf3ebc6",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-02-full.npz"
+        },
+        "anchor-03-full.npz": {
+          "sha256": "9d834b35d1b557fce4c9b5da0c3e6268014c07df24e7c991f8e18ad4032dccdb",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-03-full.npz"
+        },
+        "anchor-04-full.npz": {
+          "sha256": "f6841ff85be18d8b9f54439511863c7d9060fc621e9498feccbe743f969fd872",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-04-full.npz"
+        },
+        "anchor-05-full.npz": {
+          "sha256": "563d5a0fdb7eff3d803a02bce2b3d581e9015329ced05e27fae2688356ecb89b",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-05-full.npz"
+        },
+        "anchor-06-full.npz": {
+          "sha256": "6f9353a7178452523ed5e96e7fefabf43aa239b774f855ded72488039f35a985",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-06-full.npz"
+        },
+        "anchor-07-full.npz": {
+          "sha256": "3ef258fb2b038ab13ffe561bbe85e7c070ad7f1886696e9966022ff37a7506ed",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-07-full.npz"
+        },
+        "anchor-08-full.npz": {
+          "sha256": "143b77c2d6baa1fad8594ccb4b9e3e8f4f07495119b33840c56fca3f83fde6f0",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-08-full.npz"
+        },
+        "anchor-09-full.npz": {
+          "sha256": "2ffcbe2c1d69d8daeb7621fa09405b1091c88daffbe1a705bef6bdad1afac743",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-09-full.npz"
+        },
+        "anchor-10-full.npz": {
+          "sha256": "82a06db3224d2f2080e43fac0ad64e878c17ffac1f2da3a8302ac9e805296c9f",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-10-full.npz"
+        },
+        "anchor-11-full.npz": {
+          "sha256": "636184649c9d314c71b2c13efa539d82a23c11090872e76d5e7fd2fb67bfbd37",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-11-full.npz"
+        },
+        "anchor-12-full.npz": {
+          "sha256": "24f7ea4c167c395c1750e68d9bf0fb2c50ccacc3e9b2ea10c434385c0fb4475d",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-12-full.npz"
+        },
+        "anchor-13-full.npz": {
+          "sha256": "8bb6dc7ab4cb478200658b7d933a64905092f32cf0ac2780b5c08ed56adc8d13",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-13-full.npz"
+        },
+        "anchor-14-full.npz": {
+          "sha256": "dbe2b4bc18892a7e406abc994de6a9dc1331e5f35544cbb561d9284b4ae2089f",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-14-full.npz"
+        },
+        "anchor-15-full.npz": {
+          "sha256": "2a5d877713f75bc9aae62f2e44365fd5fa9e60aa9f4463cbe16e3be7eb4e56c8",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-15-full.npz"
+        },
+        "anchor-16-full.npz": {
+          "sha256": "e2c129a56849f3424adc84768588a4d3e184ae8042ee7374b90e3c6d850290ae",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-16-full.npz"
+        },
+        "anchor-17-full.npz": {
+          "sha256": "66fdf87df0b268708dcc80ac0364e376e08db9f5873909ff937a4e7c4e24cc03",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-17-full.npz"
+        },
+        "anchor-18-full.npz": {
+          "sha256": "6d632232be8e7d9c00178978cfaee886a77c29bf8bfbb09ed93557326c5f1ddc",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-18-full.npz"
+        },
+        "anchor-19-full.npz": {
+          "sha256": "1d8c0ba1bab140a263e7b0eed809d7a9acaa1281fff7bd826d7be29270afd152",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-19-full.npz"
+        },
+        "anchor-20-full.npz": {
+          "sha256": "6e43a6dc4081c004ffb44446a78935b6ab3e92189643ef23e0e689e7620d5cbf",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-20-full.npz"
+        },
+        "anchor-21-full.npz": {
+          "sha256": "c4c8b66edbf1bf82705a2a761f3968e9d71859e0c07001266fd9f404624faa1f",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-21-full.npz"
+        },
+        "anchor-22-full.npz": {
+          "sha256": "3fa10851327e8586f9cbfc8d25f0e16d9cda6651f6dabe15bc4e21925fecaa34",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-22-full.npz"
+        },
+        "anchor-23-full.npz": {
+          "sha256": "485803daa5d7b8b21714576a66f4cac1bcaed576bd880048fc17bde9ebb97104",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-23-full.npz"
+        },
+        "anchor-24-full.npz": {
+          "sha256": "028cbc17cb2ca74f99f3462ad1b86f1771c76e181d878dd61da115a52a96c507",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-24-full.npz"
+        },
+        "anchor-25-full.npz": {
+          "sha256": "e2754523ef9a4f4226bf5b5eddd4722c71c04cf0342ab0837e6c54a0f22bf1e6",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-25-full.npz"
+        },
+        "anchor-26-full.npz": {
+          "sha256": "84ab3b23f69b1b9e9e5e2d66ac3faf397bc279fd0b8e680f6158ac898c404462",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-26-full.npz"
+        },
+        "anchor-27-full.npz": {
+          "sha256": "04291b48d839051b108b11a417cd9bf721b7549ab3ac283e4a6abdd692dea46e",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-27-full.npz"
+        },
+        "anchor-28-full.npz": {
+          "sha256": "126f0eefb7fb339de3da697ccb73a5780b1381824a478e0aa6ab2efeb8fd4848",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-28-full.npz"
+        },
+        "anchor-29-full.npz": {
+          "sha256": "e8efeb3647001a69a584cf1f54c4f512e92b29e55f9665bbd9a37d3878e048bd",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-29-full.npz"
+        },
+        "anchor-30-full.npz": {
+          "sha256": "f53e2b3bbf219b65f608f14c025373d8384c86ef01014b2b6ab3e4cba749d204",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-30-full.npz"
+        },
+        "anchor-31-full.npz": {
+          "sha256": "e26e5270d3fe8f7ae03aa896a15be39c7c90d5b8b2c379ac0de45662ee7cd269",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/anchor-31-full.npz"
+        },
+        "policy.json": {
+          "sha256": "b58efd1d1ce3bb5c7f9b2f0c6e6ca20afaea51497a7fb3e3985b10a1e913ce05",
+          "source": "research/artifacts/local/elliptic-curves/m18-landscape-comparison-v1/orbit8044-seed-factory-pilot-v1__orbit8044-000004/policy.json"
+        },
+        "seed-input.json": {
+          "sha256": "d3a4eec35d46e6a57c3504bcec1d7aaefb3dc1b3379310a67d553179b2b6e3b4",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/seed-input.json"
+        },
+        "seed-proof.json": {
+          "sha256": "e954fefb4fa73bfda22a54a5cf335e9dc5e7d6a4dbc76dc22addc3af9df67c0c",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/seed-proof.json"
+        },
+        "selection.json": {
+          "sha256": "479c94b90b903be3746a9fa9bcada064d8a614c85280161ace6f932147d9442d",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000004/replay-M17/epoch-00/selection.json"
+        }
+      }
+    },
+    {
+      "case": "orbit8044-seed-factory-pilot-v1__orbit8044-000005",
+      "folder": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005",
+      "inputs": {
+        "anchor-00-full.npz": {
+          "sha256": "45a6b0d7a25b737277263321ae9fce94f4221f3f0eaea381c41092932c26b8e9",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-00-full.npz"
+        },
+        "anchor-01-full.npz": {
+          "sha256": "c0baf4fd0c61193efdddc1f865ea9f0d26e84c76121ebfa71fb44a29aaa5ea9f",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-01-full.npz"
+        },
+        "anchor-02-full.npz": {
+          "sha256": "04e6f1c2c7782de3c4e46c6e17376d8f9ce59c0794288619372c4a57790f3c6f",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-02-full.npz"
+        },
+        "anchor-03-full.npz": {
+          "sha256": "55ea32f916b6b8f692b3a902eacb3be16b714da3b6bdc8f91fa83153b10815d0",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-03-full.npz"
+        },
+        "anchor-04-full.npz": {
+          "sha256": "5fa205bb269e5c4ab680273df4527f33b47c3323f3917a4d6f4d1317486f5b76",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-04-full.npz"
+        },
+        "anchor-05-full.npz": {
+          "sha256": "836bc8f213911c20e2f06927da24a4114c3aef67989847cfbb49ff8ac3a64d83",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-05-full.npz"
+        },
+        "anchor-06-full.npz": {
+          "sha256": "a16a1d6150f57cf49c3af609b65cbb61d54b4ea46a3060ee38b2ec0ca059142d",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-06-full.npz"
+        },
+        "anchor-07-full.npz": {
+          "sha256": "b20b09dc70c55359fa5b1e2b19eb16bdd9d6effabefde9e8690868ca9c28f24b",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-07-full.npz"
+        },
+        "anchor-08-full.npz": {
+          "sha256": "c1ac5317f3fbda2ca6bc0f0a02190891a6db9657a7c3e0f0120438b0aca868d8",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-08-full.npz"
+        },
+        "anchor-09-full.npz": {
+          "sha256": "1cd4bb589a05813559e3e4aa2bb3a51d65846369d8b163cf9ccfb31636ae0a78",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-09-full.npz"
+        },
+        "anchor-10-full.npz": {
+          "sha256": "e657e32088cd026a6ccd3e4c5e932d42e540df1533c79a5c9ba66b4278707588",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-10-full.npz"
+        },
+        "anchor-11-full.npz": {
+          "sha256": "143f05077f1493b6214132b6b6c161f96047b55e4ffb7a0b96fd9f12715ec0a2",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-11-full.npz"
+        },
+        "anchor-12-full.npz": {
+          "sha256": "b90c84dff92b64dca67da08a3f39eddc6528d7015d4c12417583072227bc852b",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-12-full.npz"
+        },
+        "anchor-13-full.npz": {
+          "sha256": "add1acc915e62c87046df91e256844b0f4115a0b302aa275759536ba764232ba",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-13-full.npz"
+        },
+        "anchor-14-full.npz": {
+          "sha256": "99f477ffd699c2d5b319994730552674c45aa6cfc8af23627eff6dd8ed57c5e6",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-14-full.npz"
+        },
+        "anchor-15-full.npz": {
+          "sha256": "39546778d6e15dceeb9b7c7fcc2615337bb22593e6e542f02d11b6f62473e1cd",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-15-full.npz"
+        },
+        "anchor-16-full.npz": {
+          "sha256": "406f00d1b08dcd6752451e65cc4acd4be274878969f3162b40f02bcf8588748e",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-16-full.npz"
+        },
+        "anchor-17-full.npz": {
+          "sha256": "f740b37e534f636713b4e02b5064d222525949e0dc2e910abc56950fa8803c80",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-17-full.npz"
+        },
+        "anchor-18-full.npz": {
+          "sha256": "d66825c3c45ea3c28b568ccf6c64cfb1126af396e75b76e73e82ad2664d14d32",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-18-full.npz"
+        },
+        "anchor-19-full.npz": {
+          "sha256": "c8cfd1dbee973478e5f220613eb533ae0b520812706ea15ac91b7f00244f839c",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-19-full.npz"
+        },
+        "anchor-20-full.npz": {
+          "sha256": "358e885437d996449138b584218a9d1c6ce6079d2f42f28fb1ee55b6f7fd631d",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-20-full.npz"
+        },
+        "anchor-21-full.npz": {
+          "sha256": "afe2e4e099aedf832368df8a1c7456b58bef0dca8df399efc47aee2e6f5ff5a1",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-21-full.npz"
+        },
+        "anchor-22-full.npz": {
+          "sha256": "21a42c626cf1a46c0239cac3d93faae17cd3ec088c397e7aa79003b8ad92fe12",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-22-full.npz"
+        },
+        "anchor-23-full.npz": {
+          "sha256": "73e26a0284754ef4a7580cbd4ece5de5a0db757a484c9a9ceabbb5b4b18236d7",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-23-full.npz"
+        },
+        "anchor-24-full.npz": {
+          "sha256": "243718b3535b4dc1636b24f061affb7f666a55ff41782ef65614bdb848ab1f38",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-24-full.npz"
+        },
+        "anchor-25-full.npz": {
+          "sha256": "db62c06d6c68d9a6bb307fda0951366c5961a4edd64a6fbd7ebb137de09c2be3",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-25-full.npz"
+        },
+        "anchor-26-full.npz": {
+          "sha256": "d3d566a48ffb2a1ccc0396f4879336ec3c70c97bb5752196ed4eb3201bcf41e6",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-26-full.npz"
+        },
+        "anchor-27-full.npz": {
+          "sha256": "8f1c16b8888c0617b364b26bf9a952408d8fc981b80bd353292bfc6b9a374c53",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-27-full.npz"
+        },
+        "anchor-28-full.npz": {
+          "sha256": "43bfa53020f45819a840c3194c13aed719958a803685d11218f4faa8b5915d26",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-28-full.npz"
+        },
+        "anchor-29-full.npz": {
+          "sha256": "6d624968b8272734b95d92c559c82f75b5438af4683d3f0db29fd25f758ddcc8",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-29-full.npz"
+        },
+        "anchor-30-full.npz": {
+          "sha256": "44b7a890528cb27984c6c4f1cc8188a79e40de40a4a15c0030c1f3ca5ab91b0f",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-30-full.npz"
+        },
+        "anchor-31-full.npz": {
+          "sha256": "118b3959e19eab807323270445aa8a150e96b374548ed4586714ad890041c499",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/anchor-31-full.npz"
+        },
+        "policy.json": {
+          "sha256": "b58efd1d1ce3bb5c7f9b2f0c6e6ca20afaea51497a7fb3e3985b10a1e913ce05",
+          "source": "research/artifacts/local/elliptic-curves/m18-landscape-comparison-v1/orbit8044-seed-factory-pilot-v1__orbit8044-000005/policy.json"
+        },
+        "seed-input.json": {
+          "sha256": "1be5db8f5570412da9dbf745226a73dd570185f514c7cfcf16f64d4751c82d79",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/seed-input.json"
+        },
+        "seed-proof.json": {
+          "sha256": "25699e25930f14e73d0b8c2c2dec840168e42f9a38c794e1d297d2345136a55a",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/seed-proof.json"
+        },
+        "selection.json": {
+          "sha256": "6d0b5424dcf4ee1914e0978d8920e046e1dd60bdb10d38c9fea207627e92af36",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000005/replay-M17/epoch-00/selection.json"
+        }
+      }
+    },
+    {
+      "case": "orbit8044-seed-factory-pilot-v1__orbit8044-000006",
+      "folder": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006",
+      "inputs": {
+        "anchor-00-full.npz": {
+          "sha256": "53c080e1a126f99de405216ee1639a76e315caa7fcc14e3b2852e13a4b319f15",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-00-full.npz"
+        },
+        "anchor-01-full.npz": {
+          "sha256": "b99d9b0a23febf43c7d727b6bdd2e08556159d4b522831ae326ebf9a07cffadf",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-01-full.npz"
+        },
+        "anchor-02-full.npz": {
+          "sha256": "9cf27ced89c0c2742e16088f652a55d8f03ac44d044106da145cf8d678c28cfd",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-02-full.npz"
+        },
+        "anchor-03-full.npz": {
+          "sha256": "8a231b4af6d0067f00c8a407fb721f37c92861f42108f7b54a60b65e7c5f39ed",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-03-full.npz"
+        },
+        "anchor-04-full.npz": {
+          "sha256": "c81dd624c253c63afddf9a7120b9c407313aee5a3ba11d5d50ea8d2b468a5528",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-04-full.npz"
+        },
+        "anchor-05-full.npz": {
+          "sha256": "91ee4bc7692b520c0b0428e9ffa82b30729878962c36a77d1ccfe267c90dfc6c",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-05-full.npz"
+        },
+        "anchor-06-full.npz": {
+          "sha256": "029be05720851829092d667eca0c1cd98d590041ac28586addf42e88c585c128",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-06-full.npz"
+        },
+        "anchor-07-full.npz": {
+          "sha256": "89e5112456049567507c237499344f79fa1bf7b578001dc248cd0550802f6e4e",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-07-full.npz"
+        },
+        "anchor-08-full.npz": {
+          "sha256": "a9ea4f65b7b6ef53b10fad8bfd6a30e94695fa7af39a343d6c91ef780fb73d9e",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-08-full.npz"
+        },
+        "anchor-09-full.npz": {
+          "sha256": "7fa50a2da8adce9009df77093c1b7a9614313139bdf2c7e733a3fad1c6717764",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-09-full.npz"
+        },
+        "anchor-10-full.npz": {
+          "sha256": "b9a220069bdb55c530ab75f5b224a564876c6ea8db3f675eda6af7c58e731257",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-10-full.npz"
+        },
+        "anchor-11-full.npz": {
+          "sha256": "025878303cbec3289ae79c24d7d048aac80e9f4b7641d0329f97f1ffa263cf5b",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-11-full.npz"
+        },
+        "anchor-12-full.npz": {
+          "sha256": "52db8e39f211213c1f84db4def6a9952dac8106ef528e9b1935b801648523f77",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-12-full.npz"
+        },
+        "anchor-13-full.npz": {
+          "sha256": "3a206a698102c435fd07b476d525392c6420b23b08b803355d4b3ba9e7da9899",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-13-full.npz"
+        },
+        "anchor-14-full.npz": {
+          "sha256": "9f714e70e552b6cab7e0f74223d79865a76c019688c148ed1b41270feea1de43",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-14-full.npz"
+        },
+        "anchor-15-full.npz": {
+          "sha256": "4c9e34d6afbf6605ae82000322b09aea4ac8821c6519df244696530b47bf04ca",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-15-full.npz"
+        },
+        "anchor-16-full.npz": {
+          "sha256": "cf3880b1df743f593b48d66a87f0d7c33762873de6448e769d36bf3e30d12015",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-16-full.npz"
+        },
+        "anchor-17-full.npz": {
+          "sha256": "8977c6395adc31ceee5aa14653bceb9684c7f73f07a97a879c7a339e0151f9de",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-17-full.npz"
+        },
+        "anchor-18-full.npz": {
+          "sha256": "0a603adc7d6e08c0baf17517917228397f48c1301fe55ebae9f8f5636c350cdc",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-18-full.npz"
+        },
+        "anchor-19-full.npz": {
+          "sha256": "b240c1142f4bd13449ade851bfe5a893a30957dcd023db76822ed7dca164ce21",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-19-full.npz"
+        },
+        "anchor-20-full.npz": {
+          "sha256": "82c068c181bed35c4d1caabea1a46aea109a313383751913ee16e7baa42a5a26",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-20-full.npz"
+        },
+        "anchor-21-full.npz": {
+          "sha256": "dcc1b2da244b7a73600a1703ff5335ebd9d1d74ed8e10ca81b72fc59dbc48e3c",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-21-full.npz"
+        },
+        "anchor-22-full.npz": {
+          "sha256": "4db6d4f102a027edac452aad87bf0250ccde2e6868098316d5a5e36a07f598a0",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-22-full.npz"
+        },
+        "anchor-23-full.npz": {
+          "sha256": "deea507d4bc34a0750e77e30a9acbf37c1f76c8ef4d1b4130e372acc3320a43a",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-23-full.npz"
+        },
+        "anchor-24-full.npz": {
+          "sha256": "4194183ce6ca423859f367d66ce9102a9b31e99cddc97cac216ae735be1ed2cf",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-24-full.npz"
+        },
+        "anchor-25-full.npz": {
+          "sha256": "58ba044fd5618c1169aab759be6ee8c41a84bbd79579dc113985c8dcc0984f2a",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-25-full.npz"
+        },
+        "anchor-26-full.npz": {
+          "sha256": "1fd43d190109b3cb82bd5fe26ce6d82bf7f09fef51f1542444391810d6ed2fb7",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-26-full.npz"
+        },
+        "anchor-27-full.npz": {
+          "sha256": "63c3995a20919ebb34dc21b3263a2e41b22d3c13ae724e9401682470147abb1b",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-27-full.npz"
+        },
+        "anchor-28-full.npz": {
+          "sha256": "5c72e8cd86bbabd74affe3b97d331c9c04659220b1a14a0e210063289b790921",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-28-full.npz"
+        },
+        "anchor-29-full.npz": {
+          "sha256": "bdbbc341c68767acb1d5a02eb12833768f44f5fb5145c489f61f04bfbda78929",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-29-full.npz"
+        },
+        "anchor-30-full.npz": {
+          "sha256": "540705e78e55c526ddf20cd237b0e9251534ec7e96109015f5af2a2dd4a556ee",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-30-full.npz"
+        },
+        "anchor-31-full.npz": {
+          "sha256": "a1d3f38988690756de7349a8d70d664b13e784b0416a43fb462c2edd58917f08",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/anchor-31-full.npz"
+        },
+        "policy.json": {
+          "sha256": "b58efd1d1ce3bb5c7f9b2f0c6e6ca20afaea51497a7fb3e3985b10a1e913ce05",
+          "source": "research/artifacts/local/elliptic-curves/m18-landscape-comparison-v1/orbit8044-seed-factory-pilot-v1__orbit8044-000006/policy.json"
+        },
+        "seed-input.json": {
+          "sha256": "5927f108d0b76113fca7724107d5cd893239af218cdad45ec5053b4dc0b8fd4b",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/seed-input.json"
+        },
+        "seed-proof.json": {
+          "sha256": "ce30e1754bac516c5bbe2efc4eb38055f780d4c98cd826e3e6b00cb309bbef8e",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/seed-proof.json"
+        },
+        "selection.json": {
+          "sha256": "32f48d18ed77cbbdadf6a818f6dd4747d5054eb2c3515e763e27aec50335bdc2",
+          "source": "research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000006/replay-M17/epoch-00/selection.json"
+        }
+      }
+    }
+  ],
+  "claims": "Exact CVP in retained rounded integer Gram only. Retrospective diagnostic, not predictive validation.",
+  "competitive_rule": "CVP norm <= 5/4 of minimum, inclusive; anchor entropy in bits",
+  "created_unix": 1788900432.059077,
+  "patterns": [
+    "curve302-seeded-v3-amplifier-v1/*/seed-input.json",
+    "curve302-seed-universality-panel-v1/*/seed-input.json",
+    "det1092-funnel-conic-split-seeds-v1/amplifiers/*/seed-input.json",
+    "det1092-small-conic-seed-v1/amplifiers/*/seed-input.json",
+    "det1092-funnel-production-v1/amplifiers/*/seed-input.json",
+    "orbit8044-seed-factory-pilot-v1/amplifiers/*/seed-input.json"
+  ],
+  "quantiles": "nearest rank, minimum for q0; 128th absent is null",
+  "quartics": "complete refined parity population only; no executed-chart sampling",
+  "roster_rule": "All sealed M18 packets with an initial epoch-00 landscape in the six listed campaigns at freeze; no outcome condition.",
+  "schema": "m18-only-landscape-v1",
+  "source_hashes": {
+    "research/elliptic-curves/cas/m18_landscape_comparison.py": "978b6d2db1a8c3854c91464083b58552a0504480d46f6978718c853d3b920154",
+    "research/elliptic-curves/cas/visibility_lattice_v2.py": "b287cad1bd128ebda2e726197e781463442eb2670437f51f162475bb21fbcce1"
+  },
+  "thresholds_median_M17_diagonal": [
+    "1/2",
+    "1",
+    "3/2",
+    "2",
+    "5/2",
+    "3",
+    "4"
+  ]
+}

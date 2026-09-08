@@ -1,0 +1,425 @@
+{
+  "boundary": "Explicit subgroup lower bounds on exact orbit8044 conic specializations. Six deduplicated classes relative to the frozen known-seed equations, not universal novelty. All7 point proofs pass; no exact rank, larger-rank amplification, conductor result or infinite success-rate claim.",
+  "checker_sources": {
+    "elliptic-curves/cas/orbit8044_seed_factory.py": "8c924f0f6b407120de8cc9c7e447d4c6838dc4923a26ec808dec83793c6cc9c3",
+    "elliptic-curves/cas/orbit8044_seed_factory_worker.py": "07d454b4d3fa6567e229b0cfc30741a5c636dd210d6d1d9fcc2a5ab1ab9d0cb9",
+    "elliptic-curves/cas/run_orbit8044_seed_factory.py": "7a9edc6133ab319e24ae38699e46a05ec59066b05a7e28307fd3bd7bb89eb57d",
+    "elliptic-curves/cas/verify_det1092_funnel_seed.sage": "fe60710791a4f0629cb70caa3b37b1cd7378ee77d07a08d122a79eced7570d80",
+    "elliptic-curves/cas/verify_det1092_funnel_small_conic_seed.sage": "4c877ec321e428ddb96fd8b1e0ff368c5fd9c0706b0980ba662400ea0fea1741"
+  },
+  "files": {
+    "admissions/orbit8044-000000.json": {
+      "sha256": "39394fcdf129e6743a59b0b6bf2dcdddb1f2d7214927bca063fb6973e52a7813",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/admissions/orbit8044-000000.json"
+    },
+    "admissions/orbit8044-000001.json": {
+      "sha256": "5440cf57e73d3ae5854f4815c5304eab01e11eeabeb31001e656d5cb1bff9ee4",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/admissions/orbit8044-000001.json"
+    },
+    "admissions/orbit8044-000002.json": {
+      "sha256": "28022e9231453680a92b2bc2c7ff2e46acfb43823fd94ec7f126eb0fad0c69f4",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/admissions/orbit8044-000002.json"
+    },
+    "admissions/orbit8044-000003.json": {
+      "sha256": "40655fcbaa6619baba5c09a9292c3260fb5cd449e86c6f38346859c053d9a003",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/admissions/orbit8044-000003.json"
+    },
+    "admissions/orbit8044-000004.json": {
+      "sha256": "f52fc5c28ac640d027f32a36e788285f2f5b0fe2e98a673a395f636dae1c74ad",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/admissions/orbit8044-000004.json"
+    },
+    "admissions/orbit8044-000005.json": {
+      "sha256": "fc6dcf0c04d9a44339a867f1543b51c392c72bbd412f1cbad056e2fab53c7c80",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/admissions/orbit8044-000005.json"
+    },
+    "admissions/orbit8044-000006.json": {
+      "sha256": "2d7c9262187ef33ee6ab4738f25f367f4f5341a41ba8b06d40a2178010ed6c4e",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/admissions/orbit8044-000006.json"
+    },
+    "factory-controller.json": {
+      "sha256": "baca3b01e0259045da4dbb2f9a1d972223b332a56ca1e6e9a6f772ce45276f0f",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/factory-controller.json"
+    },
+    "factory-summary.json": {
+      "sha256": "49a053ace6a7d1c21f30e2bde5c6d5f10d8c25dc4419757ad84ae6de17004831",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/factory-summary.json"
+    },
+    "known-equations.json": {
+      "sha256": "c5106419d621da6c586f7a0f04b3ddd4d3baaa25dc4994de42a64ef4a1ece259",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/known-equations.json"
+    },
+    "parameter-chart.json": {
+      "sha256": "324fa6de6752e0e7d2ec0aba880d417c0754d1fa3e49adb48edf2de260be955a",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/parameter-chart.json"
+    },
+    "protocol.json": {
+      "sha256": "fb69f307ac9718b65e14f13087a3ef23f73066dacec9fac1f179d3bbe13be8d1",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/protocol.json"
+    },
+    "resume-validation.json": {
+      "sha256": "df0a0d0c84473433d2b9b15c34ac943fdbeac832ff932d59753239f5809cb8ff",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/resume-validation.json"
+    },
+    "seeds/orbit8044-000000/address.json": {
+      "sha256": "9a89ec92f82aef9234f466725221827309faab162c64d878ba3cbbd541ca801f",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000000/address.json"
+    },
+    "seeds/orbit8044-000000/conic-points.json": {
+      "sha256": "4185f5e4c56c9967087b642d29dc9ce73ae6359185ea01aa63d2aa4a74006cb0",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000000/conic-points.json"
+    },
+    "seeds/orbit8044-000000/generic-dependence.json": {
+      "sha256": "310e8eb6e68600432087459b574daa71a4a98b5793dfd17ff2a2816558ff0808",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000000/generic-dependence.json"
+    },
+    "seeds/orbit8044-000000/intake.json": {
+      "sha256": "0fac0777c0aadf7b6bfc531d3db23a3da5058a27ab89053a3ad2a91b848eb3ee",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000000/intake.json"
+    },
+    "seeds/orbit8044-000000/m17.json": {
+      "sha256": "a4eec15fabc7b853f781afa02782a95681ea6b80c6b4e883cc6cab63a7ed6127",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000000/m17.json"
+    },
+    "seeds/orbit8044-000000/m18.json": {
+      "sha256": "4c3e8f172d620981b0d46baae6c30c736678c92d200e442a59a2ef24dadb04b6",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000000/m18.json"
+    },
+    "seeds/orbit8044-000000/result.json": {
+      "sha256": "6e458216956382857ad5e8bd8654630440755391c85a52a46b3cd3daa46b98a7",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000000/result.json"
+    },
+    "seeds/orbit8044-000000/standalone-replay.json": {
+      "sha256": "791eba91abf9e7717ed655310b457d7703f1e97370d49d40aa1758b415153309",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000000/standalone-replay.json"
+    },
+    "seeds/orbit8044-000001/address.json": {
+      "sha256": "e3009c6b04dc48c544c5599d0c5612157dee2676499c5c81f9d78c14eb025505",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000001/address.json"
+    },
+    "seeds/orbit8044-000001/conic-points.json": {
+      "sha256": "8b1d728a13d31d71a40112e8c97efe59729f0dbe48207d4ccfa31d22687a3739",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000001/conic-points.json"
+    },
+    "seeds/orbit8044-000001/generic-dependence.json": {
+      "sha256": "310e8eb6e68600432087459b574daa71a4a98b5793dfd17ff2a2816558ff0808",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000001/generic-dependence.json"
+    },
+    "seeds/orbit8044-000001/intake.json": {
+      "sha256": "d917cd500e4452897d7add77c5adf5eda49c7604708fc2ec489f8943e2cf4646",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000001/intake.json"
+    },
+    "seeds/orbit8044-000001/m17.json": {
+      "sha256": "fb0070968a5c981195a84095e9bb9d94102441ecc2ea19f97d71172e86fc003f",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000001/m17.json"
+    },
+    "seeds/orbit8044-000001/m18.json": {
+      "sha256": "4f71217b6b99cbcdfb5f3eaa6862507f6147cbba207d804fa7845d74fbd537ef",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000001/m18.json"
+    },
+    "seeds/orbit8044-000001/result.json": {
+      "sha256": "9a5fcadee5eb52bd3210218b738a381457b25805684c9d14dfff07600945d10c",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000001/result.json"
+    },
+    "seeds/orbit8044-000001/standalone-replay.json": {
+      "sha256": "b810d9402774e74c7fdf34b2c34d2fd49b3c95c8df1b2b08cf6cc5e848cb08d8",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000001/standalone-replay.json"
+    },
+    "seeds/orbit8044-000002/address.json": {
+      "sha256": "0caea1e56d1bdf4137d39cff7fd7db1dd557efd3c6ce0d6ba917d1f25fc9b5af",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000002/address.json"
+    },
+    "seeds/orbit8044-000002/conic-points.json": {
+      "sha256": "873de585730ee8975877de74207c218d7d62d72a92eeaadc255fd8fdaee1b656",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000002/conic-points.json"
+    },
+    "seeds/orbit8044-000002/generic-dependence.json": {
+      "sha256": "310e8eb6e68600432087459b574daa71a4a98b5793dfd17ff2a2816558ff0808",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000002/generic-dependence.json"
+    },
+    "seeds/orbit8044-000002/intake.json": {
+      "sha256": "888e7397d6719c2d68475cbb019eadb624401198c67ce00b93a97e1359e38365",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000002/intake.json"
+    },
+    "seeds/orbit8044-000002/m17.json": {
+      "sha256": "7ae32a7733634bb9b3a5375c86e6fd936c8b96758c6962d11a7800d6b523e6d4",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000002/m17.json"
+    },
+    "seeds/orbit8044-000002/m18.json": {
+      "sha256": "2a5e30737f29a500ebe5145d08d5c7b400b96322e0321a7b458eb12963ef4e42",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000002/m18.json"
+    },
+    "seeds/orbit8044-000002/result.json": {
+      "sha256": "80793276a340614689bf493ff6e728ff40995fa533b15f2e561bdc6bc7fd43cb",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000002/result.json"
+    },
+    "seeds/orbit8044-000002/standalone-replay.json": {
+      "sha256": "427c73908c3285e256e650cf99f8717719d43de2e1c980a4c3347511c6affa9a",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000002/standalone-replay.json"
+    },
+    "seeds/orbit8044-000003/address.json": {
+      "sha256": "2024e0beaeba740cf91afdf7e633c3357c48ef336ec360f8b65c4a1359e256cb",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000003/address.json"
+    },
+    "seeds/orbit8044-000003/conic-points.json": {
+      "sha256": "46d291057cd1ec91651e4ab6b7dd9146bfd064540727f208347179ce645f8c12",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000003/conic-points.json"
+    },
+    "seeds/orbit8044-000003/generic-dependence.json": {
+      "sha256": "310e8eb6e68600432087459b574daa71a4a98b5793dfd17ff2a2816558ff0808",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000003/generic-dependence.json"
+    },
+    "seeds/orbit8044-000003/intake.json": {
+      "sha256": "faac9ad2b0b83a90febf3645b0fe28682c4a60533e8af8554e9fe38ca9c880da",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000003/intake.json"
+    },
+    "seeds/orbit8044-000003/m17.json": {
+      "sha256": "1e3d2c40203c17cc38c4a18694ec42bd2115fc2d86a7880843667b50bcc204d8",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000003/m17.json"
+    },
+    "seeds/orbit8044-000003/m18.json": {
+      "sha256": "3ce2cfbe28a7c212edc5692221f302d59e72d2dda7b539de84ca7122bdeb281a",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000003/m18.json"
+    },
+    "seeds/orbit8044-000003/result.json": {
+      "sha256": "5cf3ea6ac7e62498eccabca1beea1455366360b63e9bd33c827c2cfea9295f45",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000003/result.json"
+    },
+    "seeds/orbit8044-000003/standalone-replay.json": {
+      "sha256": "be59eba8a1af42c160db39535d571c9bd51d03e01474c0b757eac6c81123bffb",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000003/standalone-replay.json"
+    },
+    "seeds/orbit8044-000004/address.json": {
+      "sha256": "76fb43208a464752990bb159973c6482814ff5e70a610a720da8eda4e5aa8a19",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000004/address.json"
+    },
+    "seeds/orbit8044-000004/conic-points.json": {
+      "sha256": "b0d4e371dc0bd0d6c76f4740de807699bc3d3bd81a5945cfe0bc1dec63859bb4",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000004/conic-points.json"
+    },
+    "seeds/orbit8044-000004/generic-dependence.json": {
+      "sha256": "310e8eb6e68600432087459b574daa71a4a98b5793dfd17ff2a2816558ff0808",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000004/generic-dependence.json"
+    },
+    "seeds/orbit8044-000004/intake.json": {
+      "sha256": "d54b2f7a142115c6defe784357e911ae34b3aa5592315a5d8eeba511efafe2a5",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000004/intake.json"
+    },
+    "seeds/orbit8044-000004/m17.json": {
+      "sha256": "7befac4c1cda063182a53f624e2e801fc136bf563835cefa0d743a6ebbcbaec6",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000004/m17.json"
+    },
+    "seeds/orbit8044-000004/m18.json": {
+      "sha256": "ce275e6a064fdc457a7c3ecde6c908f9ebdbb9cb72c07ffd37140ebd2d188f63",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000004/m18.json"
+    },
+    "seeds/orbit8044-000004/result.json": {
+      "sha256": "46921254cfc3ca42984d92d42d0f0abcdbe6a803d1a539f63a8051f20e4a30bb",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000004/result.json"
+    },
+    "seeds/orbit8044-000004/standalone-replay.json": {
+      "sha256": "a10cd3d72eb163391501ed25e86cc4084fc809ba6e6d85d1aa8c635207c14c8e",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000004/standalone-replay.json"
+    },
+    "seeds/orbit8044-000005/address.json": {
+      "sha256": "dff4b07d812df6160291fb5c5829fd920d693c9640710b04b549d15138e8433c",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000005/address.json"
+    },
+    "seeds/orbit8044-000005/conic-points.json": {
+      "sha256": "ecf705be4536b22e12b463c7942c0a519ec3d1b10811cd82bd54bf387b6886f1",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000005/conic-points.json"
+    },
+    "seeds/orbit8044-000005/generic-dependence.json": {
+      "sha256": "310e8eb6e68600432087459b574daa71a4a98b5793dfd17ff2a2816558ff0808",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000005/generic-dependence.json"
+    },
+    "seeds/orbit8044-000005/intake.json": {
+      "sha256": "68502388e90458152e12b7d1e112bb0e7be5344c7200c7825cc85ea9f0329d3f",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000005/intake.json"
+    },
+    "seeds/orbit8044-000005/m17.json": {
+      "sha256": "fd1d31104ee444ad40226011b7d05310c539ec78cc4684132ba245728337e2fa",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000005/m17.json"
+    },
+    "seeds/orbit8044-000005/m18.json": {
+      "sha256": "a1727e0a1c9120a7ab1870d9a470404b1c6fb17156539eaf38594223e8e1bd84",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000005/m18.json"
+    },
+    "seeds/orbit8044-000005/result.json": {
+      "sha256": "6acea2360cc383695467aaaf223d47ba9d8c704f8c87abbda90c14e863f44e00",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000005/result.json"
+    },
+    "seeds/orbit8044-000005/standalone-replay.json": {
+      "sha256": "2209a037fbbbacaa3b3ca4975a4270e2badcc5a10f33e8f1f56cb6a6eeca8947",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000005/standalone-replay.json"
+    },
+    "seeds/orbit8044-000006/address.json": {
+      "sha256": "3964a8dacaab9477fa66d7db96625f2073bed1657f8def65e018a4ac9ff0c6b6",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000006/address.json"
+    },
+    "seeds/orbit8044-000006/conic-points.json": {
+      "sha256": "1188594e4ac382cb54db787a060b6a2e272a7891e9d408273c9ad931f425f3d5",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000006/conic-points.json"
+    },
+    "seeds/orbit8044-000006/generic-dependence.json": {
+      "sha256": "310e8eb6e68600432087459b574daa71a4a98b5793dfd17ff2a2816558ff0808",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000006/generic-dependence.json"
+    },
+    "seeds/orbit8044-000006/intake.json": {
+      "sha256": "207d9127f830e59b397d921f49e903563e93b8a651f8e8907354fe838755de7b",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000006/intake.json"
+    },
+    "seeds/orbit8044-000006/m17.json": {
+      "sha256": "aa13e10a4473c226b0fbb4db8445a9e1975d82db5376fd296e71eb7eb04c8a2d",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000006/m17.json"
+    },
+    "seeds/orbit8044-000006/m18.json": {
+      "sha256": "17d7def47276bc0c07dd2618d86fdbd3471f3c5d2983ab2827770165e1ac27ec",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000006/m18.json"
+    },
+    "seeds/orbit8044-000006/result.json": {
+      "sha256": "af1fac0ceafef286d80904440603f1a781a3e28a04022df9b04c7bbe7ddb1574",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000006/result.json"
+    },
+    "seeds/orbit8044-000006/standalone-replay.json": {
+      "sha256": "954b19c92eb22903981912b70e2b86dd829f6391a0f8b2387b994ef5a9d7b925",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/seeds/orbit8044-000006/standalone-replay.json"
+    },
+    "supervision/chart.supervisor.json": {
+      "sha256": "d81004e3c59fbb9e45ea368ae3fb02459d9538a2198aab95dc26350a66f868d5",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/logs/chart.supervisor.json"
+    },
+    "supervision/v3-preflight.supervisor.json": {
+      "sha256": "eb99b55ecef311e0d94946ff94fc27093218b58c9b2718f1033d8b4501192a64",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/logs/v3-preflight.supervisor.json"
+    },
+    "v3-handoff/preflight.json": {
+      "sha256": "529911651f86570274d32cc010afa173e0dd4f783c5287bf3309afab3190a44c",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/amplifiers/orbit8044-000000/preflight.json"
+    },
+    "v3-queue/orbit8044-000000.json": {
+      "sha256": "e787e04346dfa0ee4c8b7b05d127ed784c19b851ff95586b42fcd7c1263cc5d7",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/v3-queue/orbit8044-000000.json"
+    },
+    "v3-queue/orbit8044-000002.json": {
+      "sha256": "3de7b2d17902bd435a46436f3c9e32f4625e6d81ca1bd27e90d801563cb6fed5",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/v3-queue/orbit8044-000002.json"
+    },
+    "v3-queue/orbit8044-000003.json": {
+      "sha256": "e9dc784873fc3d354dfb4e3b00f3db4f28fa9e74c05220b155e4b6a5c6cc8d0e",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/v3-queue/orbit8044-000003.json"
+    },
+    "v3-queue/orbit8044-000004.json": {
+      "sha256": "7856c0650f41c0b1b5fc9b57ed576c7135a4ca36e7ce7b44a2dbb4d4a9d96e5c",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/v3-queue/orbit8044-000004.json"
+    },
+    "v3-queue/orbit8044-000005.json": {
+      "sha256": "7c9dc1bcbbb503cb1ce3b23bd7e4122b3644659c04f4a73e99322c82ec3f8a2e",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/v3-queue/orbit8044-000005.json"
+    },
+    "v3-queue/orbit8044-000006.json": {
+      "sha256": "eb54e9b7974aa4021d6add8bf055b22ebc16dc1cf5752a4a6aadaece29301867",
+      "source": "artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1/v3-queue/orbit8044-000006.json"
+    }
+  },
+  "independently_certified_m18": 7,
+  "known_duplicate_parameters": [
+    "5193/35630"
+  ],
+  "maximum_u_height": 2,
+  "parameters": 7,
+  "prepared_larger_batch": {
+    "directory": "artifacts/local/elliptic-curves/orbit8044-seed-factory-production-v1",
+    "maximum_parameters": 4096,
+    "maximum_u_height": 64,
+    "status": "FROZEN_NOT_LAUNCHED"
+  },
+  "queued_rational_isomorphism_classes": 6,
+  "rows": [
+    {
+      "admission": "QUEUED_M18",
+      "case": "orbit8044-000000",
+      "certified_rank_lower_bound": 18,
+      "duplicate_of": null,
+      "j_denominator_bits": 957,
+      "j_numerator_bits": 974,
+      "s": "1004777772/6898189895",
+      "u": "-1"
+    },
+    {
+      "admission": "DUPLICATE_RATIONAL_ISOMORPHISM",
+      "case": "orbit8044-000001",
+      "certified_rank_lower_bound": 18,
+      "duplicate_of": "det1092-small-conic-seed-v1/conic-small-01",
+      "j_denominator_bits": 534,
+      "j_numerator_bits": 551,
+      "s": "5193/35630",
+      "u": "0"
+    },
+    {
+      "admission": "QUEUED_M18",
+      "case": "orbit8044-000002",
+      "certified_rank_lower_bound": 18,
+      "duplicate_of": null,
+      "j_denominator_bits": 995,
+      "j_numerator_bits": 1011,
+      "s": "1609736129/11039275010",
+      "u": "1"
+    },
+    {
+      "admission": "QUEUED_M18",
+      "case": "orbit8044-000003",
+      "certified_rank_lower_bound": 18,
+      "duplicate_of": null,
+      "j_denominator_bits": 1167,
+      "j_numerator_bits": 1183,
+      "s": "257306782577/1766023495870",
+      "u": "-2"
+    },
+    {
+      "admission": "QUEUED_M18",
+      "case": "orbit8044-000004",
+      "certified_rank_lower_bound": 18,
+      "duplicate_of": null,
+      "j_denominator_bits": 1148,
+      "j_numerator_bits": 1164,
+      "s": "257474118081/1766197190110",
+      "u": "2"
+    },
+    {
+      "admission": "QUEUED_M18",
+      "case": "orbit8044-000005",
+      "certified_rank_lower_bound": 18,
+      "duplicate_of": null,
+      "j_denominator_bits": 993,
+      "j_numerator_bits": 1010,
+      "s": "2073030269/14240022390",
+      "u": "-1/2"
+    },
+    {
+      "admission": "QUEUED_M18",
+      "case": "orbit8044-000006",
+      "certified_rank_lower_bound": 18,
+      "duplicate_of": null,
+      "j_denominator_bits": 1052,
+      "j_numerator_bits": 1069,
+      "s": "7159030427/49068265370",
+      "u": "1/2"
+    }
+  ],
+  "schema": "orbit8044-seed-factory-validation.v1",
+  "seed_and_verification_supervised_seconds": 57.99794466001913,
+  "seed_quartic_search_charts": 0,
+  "status": "PASS_SEVEN_EXACT_M18_AND_SIX_DEDUPLICATED_V3_ADMISSIONS",
+  "tests": {
+    "combined_funnel_tests_passed": 45,
+    "completed_stage_receipt_recovery": true,
+    "crash_before_admission_recovery": true,
+    "focused_tests_passed": 21,
+    "idempotent_pilot_resume": true,
+    "independent_integer_polynomial_chart_check": true,
+    "nonsplit_control": 1,
+    "real_two_branch_controls": 4,
+    "unreceipted_reservation_not_refilled": true
+  },
+  "v3_handoff": "PASS exact M18 chart preflight; actual cascades have separately retained live supervision and are not claimed complete here"
+}

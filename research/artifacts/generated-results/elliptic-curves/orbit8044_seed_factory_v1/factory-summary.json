@@ -1,0 +1,24 @@
+{
+  "admissions": {
+    "DUPLICATE_RATIONAL_ISOMORPHISM": 1,
+    "QUEUED_M18": 6
+  },
+  "boundary": "Finite certified subgroup factory; failed proofs and bounded misses are not rank upper bounds.",
+  "controllers": {
+    "factory": {
+      "active_stage": null,
+      "charged_seconds": 57.99794466001913,
+      "cursor": 7,
+      "pid": 1489686,
+      "status": "COMPLETE_FINITE_FACTORY"
+    }
+  },
+  "max_height": 2,
+  "maximum_parameters": 7,
+  "queued_without_terminal_replay": 6,
+  "seed_outcomes": {
+    "CERTIFIED_M18": 7
+  },
+  "status": "ORBIT8044_FACTORY_SNAPSHOT",
+  "v3_replayed": 0
+}
