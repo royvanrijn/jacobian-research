@@ -57,7 +57,7 @@ def prior_case(case):
     """Validate the completed 82-chart V3 null and return its frozen centres."""
     folder = V3/case
     verified = read(folder/'trial-verified.json')
-    require(verified.get('status') == 'PASS_INDEPENDENT_DET1092_V3_REPLAY',
+    require(verified.get('status') == 'PASS_INDEPENDENT_DET1092_REPLAY',
             case+': missing independent V3 verification')
     require(verified.get('initial_rank') == verified.get('rank_lower_bound') == 17 and
             verified.get('gain') == 0 and verified.get('charts') == 82 and
