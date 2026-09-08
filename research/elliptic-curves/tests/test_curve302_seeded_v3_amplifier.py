@@ -38,7 +38,7 @@ def test_oracle_inputs_are_explicit():
     assert m.ORBITS.name=='curve302_parent_degree2_multisection_orbits_v1.tsv'
 
 
-def test_ordered_seed_state_uses_raw_state_not_compact_certificate():
+def test_ordered_seed_state_builds_joint_reduction_matrix_directly():
     tree=ast.parse(inspect.getsource(m.ordered_seed_state))
     calls=[]
     for node in ast.walk(tree):
@@ -48,14 +48,16 @@ def test_ordered_seed_state_uses_raw_state_not_compact_certificate():
             calls.append(node.func.id)
         elif isinstance(node.func,ast.Attribute):
             calls.append(node.func.attr)
-    assert 'raw_state' in calls
-    assert 'certified_state' not in calls
 
-    raw_call=next(node for node in ast.walk(tree)
-                  if isinstance(node,ast.Call) and isinstance(node.func,ast.Name) and node.func.id=='raw_state')
-    kwargs={kw.arg:kw.value for kw in raw_call.keywords}
-    assert isinstance(kwargs.get('prime_bound'),ast.Constant)
-    assert kwargs['prime_bound'].value==1000
+    assert 'raw_state' not in calls
+    assert 'certified_state' not in calls
+    assert 'empty' in calls          # IncrementalReductions.empty / MWState.empty
+    assert 'append' in calls         # append all frozen certificate columns
+    assert 'signature' in calls      # exact certificate-signature replay
+    assert 'verify' in calls         # MWState trust-boundary replay
 
     source=inspect.getsource(m.ordered_seed_state)
-    assert 'tuple(state.basis)==tuple(points)' in source
+    assert 'reductions.independent_images' in source
+    assert 'reductions.basis.rank==len(points)' in source
+    assert "actual==proof['signatures']" in source
+    assert 'tuple(state.basis)==points' in source
