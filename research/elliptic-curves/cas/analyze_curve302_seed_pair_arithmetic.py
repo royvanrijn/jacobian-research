@@ -6,7 +6,7 @@ two visibility representatives of one exceptional direction, or two genuinely
 independent arithmetic directions over the generic M17 subgroup.
 
 It consumes only completed immutable amplifier evidence plus the generic/visibility
-artifacts.  It performs no point search and makes no prospective rank claim.
+artifacts. It performs no point search and makes no prospective rank claim.
 """
 from __future__ import annotations
 
@@ -55,9 +55,15 @@ def curve_tuple(row):
     return values
 
 
+def json_native(value):
+    """Canonical JSON value; prevents tuple/list replay mismatches."""
+    return json.loads(json.dumps(value, sort_keys=True))
+
+
 def atomic_immutable(path, value):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
+    value = json_native(value)
     encoded = json.dumps(value, sort_keys=True, indent=2) + '\n'
     if path.exists():
         require(read(path) == value, 'preserve immutable seed-pair arithmetic audit')
@@ -208,7 +214,7 @@ def build():
         'claim_boundary': ('Retrospective arithmetic comparison of two known curve-302 seeds. '
                            'This is not a prospective selector, exact-rank upper bound, or new-curve claim.'),
     }
-    return result
+    return json_native(result)
 
 
 def report(result):
