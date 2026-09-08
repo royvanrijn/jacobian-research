@@ -46,9 +46,10 @@ def test_worker_reuses_unchanged_base_search_and_replay():
     assert 'searcher.run_search(ctx)' in source
     assert 'base.verify_case(ctx)' in source
     assert "rank_lower_bound" in source
-    # No outcome-conditioned replacement/refill roster.
-    assert 'append(' not in source
-    assert 'panel_order()' in source
+    assert 'seeds=panel_order()' in source
+    # The case loop consumes the frozen roster directly; no result-dependent refill loop.
+    assert 'for i,seed in enumerate(seeds)' in source
+    assert 'while ' not in source
 
 
 def test_controller_import_has_no_sage_dependency():
