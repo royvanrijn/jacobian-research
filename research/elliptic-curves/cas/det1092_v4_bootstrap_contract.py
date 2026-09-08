@@ -1,10 +1,11 @@
-"""Contracts for the wide-atlas determinant-1092 V4 bootstrap experiment.
+"""Contracts for the repaired wide-atlas determinant-1092 V4 bootstrap.
 
-V4 changes only the M17 bootstrap exposure. It searches 512 fresh parity
-classes per fibre, excluding every M17 parity already touched by the completed
-V3 eight-fibre pilot. A certified gain is exported as a new independently
-verified seed for a later unchanged-V3 cascade; V4 itself stops there. Null
-results are bounded visibility experiments, never saturation or rank upper bounds.
+V4 changes only the M17 bootstrap exposure. It constructs the complete
+2^17 parity quotient directly from mask integers, rather than mistaking the
+exported rational/genus-one survivor TSV for a complete quotient table.
+Exactly 512 fresh parity classes per fibre are exact-CVP resolved and searched;
+all parities touched by the completed V3 pilot are excluded. A certified gain
+is independently replayed and exported for a later unchanged-V3 cascade.
 """
 from __future__ import annotations
 
@@ -17,27 +18,32 @@ import det1092_v3_contract as v3c
 CAS = Path(__file__).resolve().parent
 ROOT = CAS.parents[1]
 LOCAL = ROOT/'artifacts/local/elliptic-curves'
-D = LOCAL/'det1092-v4-wide-bootstrap'
-AUTO = LOCAL/'det1092-v4-wide-controller'
+# The v1 V4 namespace stopped in preflight before any chart. Preserve it.
+D = LOCAL/'det1092-v4-wide-bootstrap-v2'
+AUTO = LOCAL/'det1092-v4-wide-controller-v2'
 V3 = v3c.D
-DOMAIN = 'det1092-v4-wide-bootstrap-v1'
+DOMAIN = 'det1092-v4-wide-bootstrap-v2'
 FRESH_CHARTS = 512
-SHELLS = (4, 6, 8, 10, 12)
-RESOURCE = {'prepare':3600, 'preflight':1200, 'search':21600, 'replay':14400,
+SURVIVOR_SHELLS = (8, 10, 12)
+EXPORTED_SURVIVOR_COUNTS = {8:63922, 10:40917, 12:139}
+RESOURCE = {'prepare':3600, 'preflight':3600, 'search':21600, 'replay':14400,
             'rss_bytes':3221225472}
 CLAIM = ('Wide M17 visibility follow-up on the same eight frozen determinant-1092 fibres. '
-         'Exactly 512 previously untouched parity classes are selected per fibre from the '
-         'complete nonzero degree-two quotient using equation/lattice metrics only. A finite '
-         'no-gain result is not a rank upper bound, saturation proof, or proof that no jump exists. '
-         'Any certified gain is independently replayed and exported only as an eligible seed for '
-         'the already-frozen V3 cascade; V4 does not retune or execute that cascade.')
+         'The complete nonzero parity quotient is generated directly as mask integers; the '
+         'degree-two TSV is used only to cross-check its exported norm-8/10/12 survivor subset. '
+         'Exactly 512 previously untouched parity classes with completed exact-CVP certificates '
+         'are searched per fibre. A finite no-gain result is not a rank upper bound, saturation '
+         'proof, or proof that no jump exists. Any certified gain is independently replayed and '
+         'exported only as an eligible seed for the already-frozen V3 cascade; V4 does not retune '
+         'or execute that cascade.')
 
 
 def own_sources():
     names = ('det1092_v4_bootstrap_contract.py','det1092_v4_bootstrap_worker.py',
              'det1092_v4_bootstrap_replay.py','run_det1092_v4_bootstrap.py',
              'v3_warm_support.py','v3_warm_engine.py','det1092_v3_contract.py',
-             'visibility_selection_v3.py','research_runtime/supervisor.py')
+             'visibility_selection_v3.py','visibility_lattice_v2.py',
+             'research_runtime/supervisor.py')
     return {str((CAS/n).relative_to(ROOT)):sha(CAS/n) for n in names}
 
 
@@ -47,6 +53,12 @@ def parity_mask(word):
         if int(value) & 1:
             mask |= 1 << i
     return mask
+
+
+def fresh_masks(prior_masks):
+    prior = {int(m) for m in prior_masks}
+    require(0 not in prior and all(0 < m < (1<<17) for m in prior), 'invalid prior parity set')
+    return [m for m in range(1, 1<<17) if m not in prior]
 
 
 def hash_key(case, mask):
@@ -69,6 +81,7 @@ def prior_case(case):
             case+': unexpected V3 M17 schedule')
     masks = {parity_mask(row['representative']) for row in selection['centres']}
     require(0 not in masks and 0 < len(masks) <= 82, case+': invalid prior V3 parity set')
+    require(len(fresh_masks(masks)) == (1<<17)-1-len(masks), 'fresh quotient accounting failed')
     return verified, selection, masks
 
 
@@ -88,15 +101,17 @@ def validate_v3_panel():
 def policy_from_v3(case):
     p = dict(read(V3/case/'protocol.json'))
     require(p['initial_rank'] == 17 and p['target_rank'] == 32, 'V3 rank policy changed')
-    for key in ('height','seconds_per_chart','gp_sha256'):
+    for key in ('height','seconds_per_chart','gp_sha256','exact_cvp_node_limit'):
         require(key in p, 'missing frozen V3 policy key '+key)
     return {
-        'schema':'det1092-v4-wide-bootstrap-job.v1',
+        'schema':'det1092-v4-wide-bootstrap-job.v2',
         'initial_rank':17, 'generic_rank':17, 'bootstrap_target_rank':18,
-        'bootstrap_fresh_charts':FRESH_CHARTS, 'bootstrap_shells':list(SHELLS),
+        'bootstrap_fresh_charts':FRESH_CHARTS,
+        'exported_survivor_shells':list(SURVIVOR_SHELLS),
         'bootstrap_domain':DOMAIN,
         'height':p['height'], 'seconds_per_chart':p['seconds_per_chart'],
-        'gp_sha256':p['gp_sha256'], 'frozen_v3_policy':p,
+        'gp_sha256':p['gp_sha256'], 'exact_cvp_node_limit':p['exact_cvp_node_limit'],
+        'frozen_v3_policy':p,
         'scope':CLAIM,
     }
 
@@ -112,7 +127,8 @@ def validate_roster():
         folder = D/row['id']; p = read(folder/'protocol.json')
         require(sha(folder/'protocol.json') == r['jobs'][row['id']], row['id']+': V4 protocol changed')
         bindings(ROOT, p['inputs']); bindings(ROOT, p['sources']); bindings(ROOT, p['implementation_sources'])
-        require(p['bootstrap_fresh_charts'] == FRESH_CHARTS and tuple(p['bootstrap_shells']) == SHELLS,
+        require(p['bootstrap_fresh_charts'] == FRESH_CHARTS and
+                tuple(p['exported_survivor_shells']) == SURVIVOR_SHELLS,
                 row['id']+': V4 bootstrap policy changed')
     return r
 
