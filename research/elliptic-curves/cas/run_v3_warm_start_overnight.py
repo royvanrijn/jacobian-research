@@ -9,6 +9,8 @@ and asks whether V3 can exploit an already enlarged rank-27 subgroup.
 No positive-control claim is made. Each warm case is run and independently
 replayed under the existing supervisor. Operational failures are preserved,
 surfaced by status/diagnose, and may be explicitly resumed after review.
+A fully sealed search terminal may be recovered after a post-terminal wrapper
+exit, but only after exact structural validation and before independent replay.
 """
 from __future__ import annotations
 from importlib.machinery import SourceFileLoader
@@ -31,7 +33,19 @@ def atomic(path,obj):
     tmp.write_text(json.dumps(obj,sort_keys=True,indent=2)+'\n');tmp.replace(path)
 def sha(p):
     h=hashlib.sha256();h.update(Path(p).read_bytes());return h.hexdigest()
+def proc_state(pid):
+    try:
+        if not pid:return None
+        p=Path('/proc')/str(int(pid))/'stat'
+        if not p.exists():return None
+        text=p.read_text(errors='replace')
+        # /proc/PID/stat: field 3 follows the parenthesized comm field.
+        end=text.rfind(')')
+        return text[end+2:].split()[0] if end>=0 else None
+    except (OSError,ValueError):return None
 def alive(pid):
+    state=proc_state(pid)
+    if state is not None:return state!='Z'
     try:
         if not pid:return False
         os.kill(int(pid),0);return True
@@ -43,7 +57,6 @@ def tail(path,n=120):
     return '\n'.join(p.read_text(errors='replace').splitlines()[-n:])
 
 def resolve_sage():
-    """Resolve the same Sage launcher class used by the validated transfer run."""
     candidates=[]
     if os.environ.get('V3_SAGE'): candidates.append(Path(os.environ['V3_SAGE']).expanduser())
     found=shutil.which('sage')
@@ -88,7 +101,6 @@ def warm_bind(case):
     base.check_bindings(ROOT,policy['inputs'])
     return engine,folder,policy
 
-
 def bind_with_cert(case):
     engine,folder,policy=warm_bind(case)
     seed=read(folder/'seed-input.json'); proof=read(folder/'seed-proof.json')
@@ -124,12 +136,46 @@ def latest_failure():
             sup,log=attempt_paths(c,a)
             if sup.exists():
                 r=read(sup)
-                if r.get('outcome')!='completed':
-                    found.append((sup.stat().st_mtime,c,a,r,log))
+                if r.get('outcome')!='completed':found.append((sup.stat().st_mtime,c,a,r,log))
     if not found:return None
     _,c,a,r,log=max(found,key=lambda x:x[0])
     return {'case':c,'action':a,'supervisor':r,'log':str(log.relative_to(ROOT)),'log_tail':tail(log)}
 
+def validate_sealed_terminal(case):
+    """Validate enough immutable structure to permit replay, never a rank claim."""
+    folder=D/case; path=folder/'replay-M17/terminal.json'
+    if not path.exists():return None
+    t=read(path); p=read(folder/'protocol.json')
+    if t.get('status')!='TERMINAL_BOUNDED_TRANSFER':raise RuntimeError('unexpected warm terminal status')
+    if t.get('initial_rank')!=27 or p.get('initial_rank')!=27:raise RuntimeError('warm terminal is not rooted at rank 27')
+    if t.get('protocol_sha256')!=sha(folder/'protocol.json'):raise RuntimeError('warm terminal protocol binding changed')
+    stages=t.get('stages') or []
+    if not stages:raise RuntimeError('warm terminal has no completed stages')
+    if t.get('charts')!=sum(int(s['charts']) for s in stages):raise RuntimeError('warm terminal chart total mismatch')
+    rank=27
+    for i,s in enumerate(stages):
+        if s.get('epoch')!=i or s.get('before')!=rank:raise RuntimeError('warm terminal stage chain is broken')
+        wd=folder/f'replay-M17/epoch-{i:02d}'
+        if not (wd/'stage.json').exists() or read(wd/'stage.json')!=s:raise RuntimeError('warm terminal stage checkpoint mismatch')
+        audit=wd/s['audit']
+        if not audit.exists() or sha(audit)!=s['audit_sha256']:raise RuntimeError('warm terminal audit binding mismatch')
+        rank=int(s['after'])
+    if rank!=int(t.get('final_rank_lower_bound')):raise RuntimeError('warm terminal final rank chain mismatch')
+    if t.get('stop_reason') not in ('COMPLETE_FINITE_NO_GAIN','TARGET_LOWER_BOUND_REACHED','CHART_BUDGET_EXHAUSTED','CENSORED_SEARCH'):
+        raise RuntimeError('warm terminal has nonterminal stop reason')
+    return t
+
+def archive_post_terminal_failure(case,action):
+    sup,log=attempt_paths(case,action)
+    report=read(sup)
+    stamp=time.strftime('%Y%m%dT%H%M%SZ',time.gmtime())+'-'+sha(sup)[:12]
+    dst=D/case/'warm-post-terminal-failures'/stamp;dst.mkdir(parents=True,exist_ok=False)
+    for p in (sup,log):
+        if p.exists():shutil.move(str(p),str(dst/p.name))
+    atomic(dst/'recovery.json',{'schema':'warm-post-terminal-recovery.v1','case':case,'action':action,
+        'original_outcome':report.get('outcome'),'terminal_sha256':sha(D/case/'replay-M17/terminal.json'),
+        'claim_boundary':'Search terminal only; no rank result is accepted until independent replay succeeds.'})
+    return dst
 
 def supervise(action,case):
     from research_runtime.supervisor import Limits,run
@@ -137,14 +183,17 @@ def supervise(action,case):
     if sup.exists():
         report=read(sup)
         if report.get('outcome')=='completed': return
+        if action=='run-worker' and validate_sealed_terminal(case) is not None:
+            archive_post_terminal_failure(case,action); return
         raise RuntimeError(f'preserved failed warm attempt exists for {case}: {sup}')
     seconds=base.LIMITS['case_wall_seconds'] if action=='run-worker' else base.LIMITS['replay_wall_seconds']
-    sage=resolve_sage()
-    command=[sage,'-python',str(SELF),action,'--case',case]
+    sage=resolve_sage();command=[sage,'-python',str(SELF),action,'--case',case]
     env={**os.environ,'V3_WARM_SUPERVISED':'1','V3_SAGE':sage,'OPENBLAS_NUM_THREADS':'1','OMP_NUM_THREADS':'1','MKL_NUM_THREADS':'1'}
     report=run(command,limits=Limits(seconds,base.LIMITS['rss_bytes']),cwd=ROOT,env=env,log_path=log,checkpoint_path=sup)
-    if report['outcome']!='completed': raise RuntimeError(f'{case} {action} stopped: {report["outcome"]}')
-
+    if report['outcome']!='completed':
+        if action=='run-worker' and validate_sealed_terminal(case) is not None:
+            archive_post_terminal_failure(case,action); return
+        raise RuntimeError(f'{case} {action} stopped: {report["outcome"]}')
 
 def worker():
     try:
@@ -155,6 +204,11 @@ def worker():
             if (folder/'warm-verified.json').exists(): continue
             atomic(STATE,{'status':'RUNNING_WARM_CASE','case':case,'pid':os.getpid(),'sage':resolve_sage(),'updated_unix':time.time()})
             if not (folder/'replay-M17/terminal.json').exists(): supervise('run-worker',case)
+            else: validate_sealed_terminal(case)
+            # A stale failed run supervisor after a sealed terminal is archived here
+            # before replay, so the 1508-chart search is never repeated.
+            rsup,_=attempt_paths(case,'run-worker')
+            if rsup.exists() and read(rsup).get('outcome')!='completed': archive_post_terminal_failure(case,'run-worker')
             supervise('replay-worker',case)
             verified=read(folder/'verified.json')
             out={'schema':'v3-warm-start-transfer-result.v1','case':case,'initial_rank':27,
@@ -166,12 +220,9 @@ def worker():
         atomic(STATE,{'status':'COMPLETE_WARM_ROSTER','pid':os.getpid(),'updated_unix':time.time(),
                       'results':[read(D/c/'warm-verified.json') for c in WARM]})
     except Exception as exc:
-        f=latest_failure()
-        old=read(STATE) if STATE.exists() else {}
+        f=latest_failure();old=read(STATE) if STATE.exists() else {}
         atomic(STATE,{'status':'STOPPED_REVIEW_REQUIRED','case':old.get('case'),'pid':os.getpid(),
-                      'error':repr(exc),'failure':f,'updated_unix':time.time()})
-        raise
-
+                      'error':repr(exc),'failure':f,'updated_unix':time.time()});raise
 
 def launch():
     auth=validate_authorization();AUTO.mkdir(parents=True,exist_ok=True)
@@ -179,18 +230,18 @@ def launch():
         s=read(STATE)
         if s.get('status')=='COMPLETE_WARM_ROSTER': print('Already complete');return
         if alive(s.get('pid')): raise RuntimeError(f'warm controller pid {s.get("pid")} is still alive')
-        if s.get('status')=='STOPPED_REVIEW_REQUIRED':
-            raise RuntimeError('preserved failed attempt exists; use diagnose, then resume after the underlying issue is understood/fixed')
+        if s.get('status')=='STOPPED_REVIEW_REQUIRED':raise RuntimeError('preserved failed attempt exists; use diagnose, then resume')
     stream=LOG.open('ab',buffering=0)
-    p=subprocess.Popen([sys.executable,str(SELF),'worker'],cwd=ROOT,stdin=subprocess.DEVNULL,stdout=stream,stderr=subprocess.STDOUT,start_new_session=True,close_fds=True,
-        env={**os.environ,'V3_SAGE':resolve_sage()})
-    atomic(STATE,{'status':'LAUNCHED','pid':p.pid,'updated_unix':time.time(),'authorization':auth})
-    print('Launched detached warm-start V3 roster pid='+str(p.pid))
+    p=subprocess.Popen([sys.executable,str(SELF),'worker'],cwd=ROOT,stdin=subprocess.DEVNULL,stdout=stream,stderr=subprocess.STDOUT,start_new_session=True,close_fds=True,env={**os.environ,'V3_SAGE':resolve_sage()})
+    atomic(STATE,{'status':'LAUNCHED','pid':p.pid,'updated_unix':time.time(),'authorization':auth});print('Launched detached warm-start V3 roster pid='+str(p.pid))
 def archive_failed(case,action):
     sup,log=attempt_paths(case,action)
     if not sup.exists():raise RuntimeError('no failed supervisor to archive')
     report=read(sup)
     if report.get('outcome')=='completed':raise RuntimeError('attempt completed; refusing archive-as-failure')
+    # Never archive/move a sealed search epoch away. If a terminal exists, this
+    # is a post-terminal failure and should proceed to replay instead.
+    if action=='run-worker' and validate_sealed_terminal(case) is not None:return archive_post_terminal_failure(case,action)
     stamp=time.strftime('%Y%m%dT%H%M%SZ',time.gmtime())+'-'+sha(sup)[:12]
     dst=D/case/'warm-failed-attempts'/stamp;dst.mkdir(parents=True,exist_ok=False)
     for p in (sup,log):
@@ -198,27 +249,35 @@ def archive_failed(case,action):
     replay=D/case/'replay-M17'
     if replay.exists():
         for ep in sorted(replay.glob('epoch-*')):
-            if not (ep/'stage.json').exists() and any(ep.iterdir()):
-                shutil.move(str(ep),str(dst/ep.name))
+            if not (ep/'stage.json').exists() and any(ep.iterdir()):shutil.move(str(ep),str(dst/ep.name))
     return dst
+def spawn():
+    stream=LOG.open('ab',buffering=0)
+    p=subprocess.Popen([sys.executable,str(SELF),'worker'],cwd=ROOT,stdin=subprocess.DEVNULL,stdout=stream,stderr=subprocess.STDOUT,start_new_session=True,close_fds=True,env={**os.environ,'V3_SAGE':resolve_sage()})
+    return p
 def resume():
     if not STATE.exists():raise RuntimeError('no prior warm state')
     s=read(STATE)
     if alive(s.get('pid')):raise RuntimeError('controller still alive')
-    f=latest_failure()
-    if not f:raise RuntimeError('no preserved failed warm attempt found')
-    dst=archive_failed(f['case'],f['action'])
-    atomic(STATE,{'status':'RESUMING','archived':str(dst.relative_to(ROOT)),'updated_unix':time.time()})
-    stream=LOG.open('ab',buffering=0)
-    p=subprocess.Popen([sys.executable,str(SELF),'worker'],cwd=ROOT,stdin=subprocess.DEVNULL,stdout=stream,stderr=subprocess.STDOUT,start_new_session=True,close_fds=True,
-        env={**os.environ,'V3_SAGE':resolve_sage()})
-    atomic(STATE,{'status':'RELAUNCHED','pid':p.pid,'updated_unix':time.time(),'archived':str(dst.relative_to(ROOT))})
+    # Prefer a sealed terminal: preserve the anomalous run wrapper exit and
+    # continue directly to independent replay.
+    case=s.get('case')
+    if case in WARM and validate_sealed_terminal(case) is not None:
+        rsup,_=attempt_paths(case,'run-worker')
+        dst=None
+        if rsup.exists() and read(rsup).get('outcome')!='completed':dst=archive_post_terminal_failure(case,'run-worker')
+    else:
+        f=latest_failure()
+        if not f:raise RuntimeError('no preserved failed warm attempt found')
+        dst=archive_failed(f['case'],f['action'])
+    atomic(STATE,{'status':'RESUMING','archived':str(dst.relative_to(ROOT)) if dst else None,'updated_unix':time.time()})
+    p=spawn();atomic(STATE,{'status':'RELAUNCHED','pid':p.pid,'updated_unix':time.time(),'archived':str(dst.relative_to(ROOT)) if dst else None})
     print('Relaunched detached warm-start roster pid='+str(p.pid))
 def status():
     s=read(STATE) if STATE.exists() else None
     if s is None: print('NOT_LAUNCHED')
     else:
-        x=dict(s);x['process_alive']=alive(x.get('pid'))
+        x=dict(s);x['process_state']=proc_state(x.get('pid'));x['process_alive']=alive(x.get('pid'))
         if x.get('status') in ('RUNNING_WARM_CASE','LAUNCHED','RELAUNCHED') and not x['process_alive']:
             x['effective_status']='STOPPED_REVIEW_REQUIRED';x['failure']=latest_failure()
         print(json.dumps(x,indent=2,sort_keys=True))
@@ -226,12 +285,13 @@ def status():
         p=D/c/'warm-verified.json'
         if p.exists(): print(c,json.dumps(read(p),sort_keys=True))
         else:
-            stages=D/c/'replay-M17/stages.json'
-            if stages.exists(): print(c,'stages',json.dumps(read(stages)[-1],sort_keys=True))
+            terminal=D/c/'replay-M17/terminal.json';stages=D/c/'replay-M17/stages.json'
+            if terminal.exists():
+                t=read(terminal);print(c,'SEALED_TERMINAL',json.dumps({'rank':t.get('final_rank_lower_bound'),'charts':t.get('charts'),'stop_reason':t.get('stop_reason')},sort_keys=True))
+            elif stages.exists(): print(c,'stages',json.dumps(read(stages)[-1],sort_keys=True))
             else: print(c,'NOT_YET_COMPLETE')
 def diagnose():
     f=latest_failure();print('NO_FAILED_WARM_ATTEMPT' if f is None else json.dumps(f,indent=2,sort_keys=True))
-
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('action',choices=['launch','status','diagnose','resume','worker','run-worker','replay-worker']);ap.add_argument('--case',choices=WARM);a=ap.parse_args()
