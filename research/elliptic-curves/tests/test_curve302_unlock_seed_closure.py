@@ -36,3 +36,11 @@ def test_threshold_closure_is_fixed_point(monkeypatch):
     mask,waves=m.closure_at(toy_states(),0,7)
     assert mask==3
     assert waves==[[1],[0]]
+
+
+def test_seed_row_exposes_both_order_schema_names(monkeypatch):
+    monkeypatch.setattr(m,'DIM',2)
+    monkeypatch.setattr(m,'GENERIC_RANK',17)
+    row=m.row_for_seed(toy_states(),['a','b'],1,{'toy':7})
+    assert row['optimal_followup_order']==['a']
+    assert row['optimal_completion_order']==row['optimal_followup_order']
