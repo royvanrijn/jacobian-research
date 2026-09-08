@@ -22,7 +22,8 @@ def replay_case(ctx):
             'missing/unrecognized V4 terminal')
     require(terminal['selection_sha256']==sha(out/'selection.json'),'V4 terminal selection binding changed')
     expected_selection=bootstrap_selection(ctx,False)
-    require(read(out/'selection.json')==expected_selection,'independent V4 atlas selection differs')
+    c.require_same_selection(read(out/'selection.json'),expected_selection,
+                             'independent V4 atlas selection differs')
     selection=expected_selection
     charts=indexed_paths(out,expected=terminal['charts'])
     if terminal['stop_reason']=='COMPLETE_FRESH_BOOTSTRAP_NO_GAIN':

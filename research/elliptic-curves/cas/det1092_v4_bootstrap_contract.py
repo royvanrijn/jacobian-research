@@ -47,6 +47,52 @@ def own_sources():
     return {str((CAS/n).relative_to(ROOT)):sha(CAS/n) for n in names}
 
 
+def selection_record(value, path='$'):
+    """Exact JSON-shaped selection: only tuple/list representation is normalized.
+
+    ExactParity.solve returns lists OF TUPLES for its minimum vectors. JSON
+    writes those as arrays and reads back lists. Do not alter their order,
+    signs, integer values, centre ordering, or the shared numerical solver.
+    Other non-JSON types (including floats) are errors, not stringified away.
+    """
+    if isinstance(value, (tuple, list)):
+        return [selection_record(v, f'{path}[{i}]') for i, v in enumerate(value)]
+    if isinstance(value, dict):
+        require(all(type(k) is str for k in value), f'non-string selection key at {path}')
+        return {k: selection_record(v, f'{path}.{k}') for k, v in value.items()}
+    if value is None or type(value) in (str, int, bool):
+        return value
+    raise TypeError(f'non-exact selection value at {path}: {type(value).__name__}')
+
+
+def selection_difference(saved, expected, path='$'):
+    """First genuine discrepancy, with its precise checkpoint field/index."""
+    if type(saved) is not type(expected):
+        return f'{path}: types {type(saved).__name__}/{type(expected).__name__}'
+    if isinstance(saved, dict):
+        if saved.keys() != expected.keys():
+            return f'{path}: keys differ (saved-only={sorted(saved.keys()-expected.keys())}, expected-only={sorted(expected.keys()-saved.keys())})'
+        for key in sorted(saved):
+            diff = selection_difference(saved[key], expected[key], f'{path}.{key}')
+            if diff is not None:
+                return diff
+    elif isinstance(saved, list):
+        if len(saved) != len(expected):
+            return f'{path}: lengths {len(saved)}/{len(expected)}'
+        for i, (left, right) in enumerate(zip(saved, expected)):
+            diff = selection_difference(left, right, f'{path}[{i}]')
+            if diff is not None:
+                return diff
+    elif saved != expected:
+        return f'{path}: saved={repr(saved)[:160]}, expected={repr(expected)[:160]}'
+    return None
+
+
+def require_same_selection(saved, generated, label='saved V4 selection differs'):
+    diff = selection_difference(selection_record(saved), selection_record(generated))
+    require(diff is None, f'{label} at {diff}')
+
+
 def parity_mask(word):
     mask = 0
     for i, value in enumerate(word):

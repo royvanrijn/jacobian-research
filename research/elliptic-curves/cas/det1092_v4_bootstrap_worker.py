@@ -226,14 +226,24 @@ def bootstrap_selection(ctx,publish=False):
                 'fill':'SHA to 512 before exact CVP; SHA reserves replace only fixed-node-limit CVP censors',
                 'search_order':'quartic_bits, quartic_max_bits, -exact_metric_norm, SHA(domain:case:parity), parity'},
             'centres':centres,'claim_boundary':c.CLAIM}
-    if publish: atomic(ctx.folder/'bootstrap/selection.json',result,immutable=True)
+    return finish_selection(ctx.folder/'bootstrap/selection.json',result,publish)
+
+
+def finish_selection(path, result, publish=False):
+    """Use exactly the same representation before and after JSON publication."""
+    result = c.selection_record(result)
+    if publish:
+        if path.exists():
+            c.require_same_selection(read(path), result)
+        atomic(path, result, immutable=True)
+        c.require_same_selection(read(path), result)
     return result
 
 
 def preflight(ctx):
     from pointed_quartic_search import PointedQuarticSearch
     import pari_pointed_backend as backend
-    selection=bootstrap_selection(ctx,False); centre=selection['centres'][0]
+    selection=bootstrap_selection(ctx,publish=True); centre=selection['centres'][0]
     mapper=ctx.engine.load('factor_free_pari_mapping.sage'); mapper.pari.allocatemem(256000000,silent=True)
     mapping=mapper.mapping(ctx.model,point_tuple(ctx.state.basis),centre)
     search=PointedQuarticSearch(state=ctx.state,centre={'coefficients':centre['representative']},coordinate_policy=mapping['coordinate_policy'])
@@ -263,7 +273,7 @@ def run_search(ctx):
     out=ctx.folder/'bootstrap'; out.mkdir(exist_ok=True)
     if (out/'terminal.json').exists(): print('V4_SEALED_SEARCH_REUSED',ctx.case,flush=True); return
     selection=bootstrap_selection(ctx,publish=not (out/'selection.json').exists())
-    require(read(out/'selection.json')==selection,'saved V4 selection differs')
+    c.require_same_selection(read(out/'selection.json'),selection)
     existing=indexed_paths(out); require(len(existing)<=c.FRESH_CHARTS,'too many bootstrap charts')
     mapper=ctx.engine.load('factor_free_pari_mapping.sage'); mapper.pari.allocatemem(256000000,silent=True)
     charts=[]; seen={(x,abs(y)) for x,y in point_tuple(ctx.state.basis)}; censored=0; rank=17

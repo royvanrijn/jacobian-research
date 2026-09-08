@@ -124,17 +124,82 @@ def worker(session_path,lease_fd):
     finally:os.close(lease_fd)
 
 
-def launch(hours,resume=False):
+def ensure_no_live_workers():
+    for path in (AUTO/'sessions').glob('*/attempts/*/*/supervisor.json'):
+        row = read(path)
+        info = process_info(row.get('pid'))
+        if not info or info['state'] in ('Z', 'X'):
+            continue
+        token = row.get('start_token')
+        require(token is not None and not same_process(row.get('pid'), token),
+                f'worker may still be alive: {path}; refusing concurrent restart')
+
+
+def archive_unsearched_preparation(old):
+    """Explicit source repair, allowed ONLY before any chart/search evidence.
+
+    Caller owns the controller lock. Old protocols are archived, never silently
+    rehashed. Saved selections are carried forward byte-for-byte and must match
+    independent recomputation before they can be searched with the new source.
+    """
+    require(old.get('status') == 'STOPPED_REVIEW_REQUIRED', 'repair requires a stopped failed attempt')
+    require(not controller_alive(old), 'controller is still alive')
+    ensure_no_live_workers()
+    require(c.D.is_dir() and not c.D.is_symlink(), 'no prepared V4 directory to repair')
+    roster = read(c.D/'roster.json')
+    _, expected = c.validate_v3_panel()
+    cases = [r['id'] for r in expected]
+    require(roster.get('status') == 'READY_V4_EIGHT' and
+            [r['id'] for r in roster['cases']] == cases, 'repair roster differs from frozen eight')
+    allowed = {'roster.json'}
+    names = ('seed-input.json', 'seed-proof.json', 'orbits.tsv',
+             'prior-v3-selection.json', 'prior-v3-verified.json', 'protocol.json',
+             'bootstrap/selection.json')
+    allowed.update(case+'/'+name for case in cases for name in names)
+    files = {}
+    for path in c.D.rglob('*'):
+        require(not path.is_symlink(), 'repair refuses symlink: '+str(path))
+        if path.is_file():
+            rel = path.relative_to(c.D).as_posix()
+            require(rel in allowed, 'repair refuses search evidence or unexpected file: '+rel)
+            files[rel] = sha(path)
+    for case in cases:
+        folder = c.D/case
+        require(sha(folder/'protocol.json') == roster['jobs'][case], 'old job protocol changed')
+        policy = read(folder/'protocol.json')
+        bindings(ROOT, policy['inputs']); bindings(ROOT, policy['sources'])
+    archive = c.D.parent/(c.D.name+'-failed-preparations')/uuid.uuid4().hex
+    archive.mkdir(parents=True)
+    atomic(archive/'manifest.json', {'reason':'V4 tuple/list selection checkpoint repair; no charts existed',
+           'previous_controller_state':old, 'files':files}, immutable=True)
+    c.D.rename(archive/'campaign')
+    # Preserve the frozen selection as an INPUT to the new attempt, not a result.
+    for case in cases:
+        name = case+'/bootstrap/selection.json'
+        if name in files:
+            dest = c.D/name; dest.parent.mkdir(parents=True, exist_ok=True)
+            with (archive/'campaign'/name).open('rb') as inp, dest.open('xb') as out:
+                shutil.copyfileobj(inp, out); out.flush(); os.fsync(out.fileno())
+            require(sha(dest) == files[name], 'carried selection bytes changed')
+    print('V4_PREPARATION_ARCHIVED', str(archive.relative_to(ROOT)), flush=True)
+    return archive
+
+
+def launch(hours,resume=False,repair=False):
     require(math.isfinite(hours) and 0<hours<=72,'--hours must be in (0,72]')
     fd=take_lock()
     try:
         old=read(STATE) if STATE.exists() else {}
         require(not controller_alive(old),'V4 controller is still alive')
         if old.get('status')=='COMPLETE_V4_ROSTER':print(json.dumps(old,indent=2));return
-        require(resume or not old,'existing V4 state: use resume')
+        require(resume or repair or not old,'existing V4 state: use resume')
+        ensure_no_live_workers()
+        sage_launcher()  # Check the runtime before archiving anything.
+        if repair:
+            archive_unsearched_preparation(old)
         AUTO.mkdir(parents=True,exist_ok=True); sage=sage_launcher();session_dir=AUTO/'sessions'/str(uuid.uuid4());session_dir.mkdir(parents=True)
         session_path=session_dir/'session.json';session={'schema':'det1092-v4-controller.v1','sources':c.own_sources(),
-            'sage':sage,'hours':hours,'created_unix':time.time(),'action':'resume' if resume else 'launch','scope':c.CLAIM}
+            'sage':sage,'hours':hours,'created_unix':time.time(),'action':'repair-resume' if repair else ('resume' if resume else 'launch'),'scope':c.CLAIM}
         atomic(session_path,session,immutable=True)
         if old:atomic(session_dir/'previous-state.json',old,immutable=True)
         with LOG.open('ab',buffering=0) as log:
@@ -181,9 +246,10 @@ def stop():
 
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('action',choices=['launch','resume','status','diagnose','stop','worker']);p.add_argument('--hours',type=float,default=24);p.add_argument('--session',type=Path);p.add_argument('--lease-fd',type=int);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('action',choices=['launch','resume','repair-resume','status','diagnose','stop','worker']);p.add_argument('--hours',type=float,default=24);p.add_argument('--session',type=Path);p.add_argument('--lease-fd',type=int);a=p.parse_args()
     if a.action=='launch':launch(a.hours,False)
     elif a.action=='resume':launch(a.hours,True)
+    elif a.action=='repair-resume':launch(a.hours,True,repair=True)
     elif a.action=='status':status()
     elif a.action=='diagnose':diagnose()
     elif a.action=='stop':stop()
