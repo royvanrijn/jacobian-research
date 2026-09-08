@@ -1,308 +1,378 @@
 #!/usr/bin/env python3
-"""Detached warm-start V3 transfer over the three frozen rank-27 11952 fibres.
+"""One maintained, Sage-free controller for the three authorized warm fibres.
 
-This is a DIFFERENT hypothesis from generic-start transfer. The completed
-native11952 control stayed 17->17 and remains immutable. This runner reuses
-only the already-frozen warm seed/orbit/protocol inputs from v3-transfer-11952-v3
-and asks whether V3 can exploit an already enlarged rank-27 subgroup.
+  python3 elliptic-curves/cas/run_v3_warm_start_overnight.py resume --hours 10
+  python3 elliptic-curves/cas/run_v3_warm_start_overnight.py status
 
-No positive-control claim is made. Each warm case is run and independently
-replayed under the existing supervisor. Operational failures are preserved,
-surfaced by status/diagnose, and may be explicitly resumed after review.
-A fully sealed search terminal may be recovered after a post-terminal wrapper
-exit, but only after exact structural validation and before independent replay.
+The controller imports no Sage code. Exact search/replay services run ONLY as
+`sage -python` subprocesses, under the existing wall/RSS supervisor. An advisory
+lock prevents two controllers, PID start tokens detect stale/reused PIDs, and a
+heartbeat reports SEARCHING versus REPLAYING. A sealed search is never rerun.
+Old supervisor failures and all original checkpoints are left untouched.
+Runbook: ../notes/V3_WARM_RUNBOOK.md.
 """
 from __future__ import annotations
-from importlib.machinery import SourceFileLoader
+
+import argparse
+import fcntl
+import json
+import math
+import os
 from pathlib import Path
-import argparse, json, os, subprocess, sys, time, hashlib, shutil
+import shutil
+import signal
+import subprocess
+import sys
+import threading
+import time
+import uuid
 
-SELF=Path(__file__).resolve(); CAS=SELF.parent
-v3=SourceFileLoader('v3_warm_runtime',str(CAS/'v3_transfer_campaign_v3.sage')).load_module()
-base=v3.base
-ROOT=base.ROOT
-D=ROOT/'artifacts/local/elliptic-curves/v3-transfer-11952-v3'
-AUTO=ROOT/'artifacts/local/elliptic-curves/v3-warm-start-overnight-v1'
-STATE=AUTO/'state.json'; LOG=AUTO/'autorun.log'
-WARM=('warm-11952-41','warm-11952-72','warm-11952-186')
+from v3_warm_support import (WARM, atomic, bindings, process_info, read, require,
+                             same_process, sha, tail, terminal_structure)
+
+SELF = Path(__file__).resolve()
+CAS = SELF.parent
+ROOT = CAS.parents[1]
+D = ROOT/'artifacts/local/elliptic-curves/v3-transfer-11952-v3'
+AUTO = ROOT/'artifacts/local/elliptic-curves/v3-warm-start-overnight-v1'
+STATE, LOG, LOCK = AUTO/'state.json', AUTO/'autorun.log', AUTO/'controller.lock'
+ENGINE = CAS/'v3_warm_engine.py'
 
 
-def read(p): return json.loads(Path(p).read_text())
-def atomic(path,obj):
-    path.parent.mkdir(parents=True,exist_ok=True);tmp=path.with_suffix(path.suffix+'.tmp')
-    tmp.write_text(json.dumps(obj,sort_keys=True,indent=2)+'\n');tmp.replace(path)
-def sha(p):
-    h=hashlib.sha256();h.update(Path(p).read_bytes());return h.hexdigest()
-def proc_state(pid):
-    try:
-        if not pid:return None
-        p=Path('/proc')/str(int(pid))/'stat'
-        if not p.exists():return None
-        text=p.read_text(errors='replace')
-        # /proc/PID/stat: field 3 follows the parenthesized comm field.
-        end=text.rfind(')')
-        return text[end+2:].split()[0] if end>=0 else None
-    except (OSError,ValueError):return None
-def alive(pid):
-    state=proc_state(pid)
-    if state is not None:return state!='Z'
-    try:
-        if not pid:return False
-        os.kill(int(pid),0);return True
-    except (ProcessLookupError,PermissionError,ValueError):return False
+def sources():
+    return {str((CAS/n).relative_to(ROOT)): sha(CAS/n) for n in
+            ('run_v3_warm_start_overnight.py', 'v3_warm_engine.py', 'v3_warm_replay.py', 'v3_warm_support.py')}
 
-def tail(path,n=120):
-    p=Path(path)
-    if not p.exists():return None
-    return '\n'.join(p.read_text(errors='replace').splitlines()[-n:])
 
-def resolve_sage():
-    candidates=[]
-    if os.environ.get('V3_SAGE'): candidates.append(Path(os.environ['V3_SAGE']).expanduser())
-    found=shutil.which('sage')
-    if found:candidates.append(Path(found))
-    candidates += [Path.home()/'.local/bin/sage', Path('/usr/local/bin/sage'), Path('/usr/bin/sage')]
-    for p in candidates:
-        if p.is_file() and os.access(p,os.X_OK): return str(p.resolve())
-    raise RuntimeError('Sage launcher not found. Set V3_SAGE=/path/to/sage')
+def sage_launcher():
+    explicit = os.environ.get('V3_SAGE')
+    candidates = [explicit] if explicit else [shutil.which('sage'), str(Path.home()/'.local/bin/sage'), '/usr/bin/sage']
+    for candidate in candidates:
+        if candidate:
+            path = Path(candidate).expanduser()
+            if path.is_file() and os.access(path, os.X_OK):
+                return str(path.resolve())
+    raise RuntimeError('Sage launcher not found. Set V3_SAGE=/absolute/path/to/sage')
 
-def validate_authorization():
-    control=D/'control-native11952/verified.json'
-    if not control.exists(): raise RuntimeError('completed independently replayed native11952 control is required')
-    c=read(control)
-    if c.get('status')!='PASS_INDEPENDENT_TRANSFER_REPLAY' or c.get('initial_rank')!=17 or c.get('rank_lower_bound')!=17 or c.get('gain')!=0:
-        raise RuntimeError('expected the preserved clean 17->17 generic control')
-    for name,digest in c.get('bindings',{}).items():
-        p=ROOT/name
-        if not p.exists() or sha(p)!=digest: raise RuntimeError('control binding changed: '+name)
-    roster=read(D/'roster.json'); ids={r['id']:r for r in roster['cases']}
+
+def worker_command(sage, action, case, session):
+    require(action in ('preflight', 'search', 'replay') and case in WARM, 'invalid worker action/case')
+    return [str(sage), '-python', '-u', str(ENGINE), action, '--case', case, '--session', str(session)]
+
+
+def validate_inputs():
+    """Read-only, standard-library preflight; does not rebuild the parent bank."""
+    control = read(D/'control-native11952/verified.json')
+    require(control.get('status') == 'PASS_INDEPENDENT_TRANSFER_REPLAY' and
+            control.get('initial_rank') == control.get('rank_lower_bound') == 17 and control.get('gain') == 0,
+            'the completed generic-start no-gain control must remain intact')
+    bindings(ROOT, control['bindings'])
+    roster = read(D/'roster.json')
+    input_hashes = {str((D/'roster.json').relative_to(ROOT)): sha(D/'roster.json')}
+    for filename, key in (('parent-bank.json','parent_bank_sha256'), ('gate.json','gate_sha256'),
+                           ('preparation.json','preparation_sha256')):
+        require(sha(D/filename) == roster[key], f'changed {filename}')
+        input_hashes[str((D/filename).relative_to(ROOT))] = roster[key]
     for case in WARM:
-        if case not in ids: raise RuntimeError('missing frozen warm case '+case)
-        folder=D/case
-        if ids[case]['initial_rank']!=27: raise RuntimeError('warm seed is not frozen at rank 27: '+case)
-        if sha(folder/'protocol.json')!=ids[case]['protocol_sha256']: raise RuntimeError('warm protocol changed: '+case)
-        p=read(folder/'protocol.json')
-        for name,digest in p['inputs'].items():
-            q=ROOT/name
-            if not q.exists() or sha(q)!=digest: raise RuntimeError('warm input changed: '+name)
-    return {'schema':'v3-warm-start-transfer-authorization.v1','control':'17->17 finite no-gain',
-            'hypothesis':'Can unchanged V3 exploit already enlarged independently certified rank-27 subgroups on parent 11952?',
-            'cases':list(WARM),'runner_sha256':sha(SELF),'created_unix':time.time(),
-            'claim_boundary':'Warm-start transfer only. The generic-start positive-control gate failed and is not overridden or relabeled as a pass.'}
+        entry = next(r for r in roster['cases'] if r['id'] == case)
+        folder = D/case
+        require(sha(folder/'protocol.json') == entry['protocol_sha256'], f'changed {case} protocol')
+        policy = read(folder/'protocol.json')
+        require(entry['initial_rank'] == policy['initial_rank'] == 27, 'warm initial rank changed')
+        for key in ('inputs', 'sources', 'driver_sources'):
+            bindings(ROOT, policy[key])
+        input_hashes.update(policy['inputs'])
+        input_hashes[str((folder/'protocol.json').relative_to(ROOT))] = entry['protocol_sha256']
+    return input_hashes
 
 
-def warm_bind(case):
-    if case not in WARM: raise RuntimeError('warm runner refuses non-warm case')
-    folder=D/case; roster=read(D/'roster.json'); entry=next(r for r in roster['cases'] if r['id']==case)
-    if sha(D/'parent-bank.json')!=roster['parent_bank_sha256'] or sha(D/'gate.json')!=roster['gate_sha256'] or sha(D/'preparation.json')!=roster['preparation_sha256']:
-        raise RuntimeError('frozen transfer preparation changed')
-    if sha(folder/'protocol.json')!=entry['protocol_sha256']: raise RuntimeError('job protocol changed')
-    engine=base.engine_for(folder); policy=read(folder/'protocol.json')
-    base.check_bindings(ROOT,policy['inputs'])
-    return engine,folder,policy
-
-def bind_with_cert(case):
-    engine,folder,policy=warm_bind(case)
-    seed=read(folder/'seed-input.json'); proof=read(folder/'seed-proof.json')
-    frozen_curve=v3._normal_curve(seed['curve']); frozen_points=v3._normal_points(seed['points'])
-    ec,ep=engine.v1.seed(None); ec=v3._normal_curve(ec); ep=v3._normal_points(ep)
-    if ec!=frozen_curve or v3._first_diff(ep,frozen_points) is not None: raise RuntimeError('engine/frozen warm seed mismatch')
-    from research_runtime.memory_store import MemoryFactStore
-    from research_runtime.quotient_only_reduction import QuotientOnlyReductionCache as Cache
-    from research_runtime.arithmetic import ArithmeticContext,CurveModel
-    from research_runtime.mw_state import MWState
-    primes=tuple(int(r['prime']) for r in proof['signatures']); torsion=int(proof['no_rational_2_torsion_prime'])
-    cache=Cache(MemoryFactStore()); state=MWState.empty(ArithmeticContext.for_search(CurveModel(frozen_curve)),cache=cache,primes=primes,no_two_torsion_prime=torsion)
-    for i,p in enumerate(frozen_points):
-        before=state.rank; state=state.adjoin(p,cache=cache,extra_primes=())
-        if state.rank!=before+1: raise RuntimeError(f'warm seed certificate prefix failed at {i}')
-    if state.rank!=27 or tuple(state.basis)!=frozen_points: raise RuntimeError('warm marked rank-27 seed did not replay exactly')
-    v3._active_seed=(ec,ep,state)
-    return engine,folder,policy
-
-base.bind_job=bind_with_cert
-base.run_case.__globals__['bind_job']=bind_with_cert
-base.run_case.__globals__['_initial_worker_state']=v3._initial_worker_state
-base.replay_case.__globals__['bind_job']=bind_with_cert
-
-
-def attempt_paths(case,action):
-    stem='warm-'+action.replace('-worker','');folder=D/case
-    return folder/(stem+'.supervisor.json'),folder/(stem+'.log')
-def latest_failure():
-    found=[]
-    for c in WARM:
-        for a in ('run-worker','replay-worker'):
-            sup,log=attempt_paths(c,a)
-            if sup.exists():
-                r=read(sup)
-                if r.get('outcome')!='completed':found.append((sup.stat().st_mtime,c,a,r,log))
-    if not found:return None
-    _,c,a,r,log=max(found,key=lambda x:x[0])
-    return {'case':c,'action':a,'supervisor':r,'log':str(log.relative_to(ROOT)),'log_tail':tail(log)}
-
-def validate_sealed_terminal(case):
-    """Validate enough immutable structure to permit replay, never a rank claim."""
-    folder=D/case; path=folder/'replay-M17/terminal.json'
-    if not path.exists():return None
-    t=read(path); p=read(folder/'protocol.json')
-    if t.get('status')!='TERMINAL_BOUNDED_TRANSFER':raise RuntimeError('unexpected warm terminal status')
-    if t.get('initial_rank')!=27 or p.get('initial_rank')!=27:raise RuntimeError('warm terminal is not rooted at rank 27')
-    if t.get('protocol_sha256')!=sha(folder/'protocol.json'):raise RuntimeError('warm terminal protocol binding changed')
-    stages=t.get('stages') or []
-    if not stages:raise RuntimeError('warm terminal has no completed stages')
-    if t.get('charts')!=sum(int(s['charts']) for s in stages):raise RuntimeError('warm terminal chart total mismatch')
-    rank=27
-    for i,s in enumerate(stages):
-        if s.get('epoch')!=i or s.get('before')!=rank:raise RuntimeError('warm terminal stage chain is broken')
-        wd=folder/f'replay-M17/epoch-{i:02d}'
-        if not (wd/'stage.json').exists() or read(wd/'stage.json')!=s:raise RuntimeError('warm terminal stage checkpoint mismatch')
-        audit=wd/s['audit']
-        if not audit.exists() or sha(audit)!=s['audit_sha256']:raise RuntimeError('warm terminal audit binding mismatch')
-        rank=int(s['after'])
-    if rank!=int(t.get('final_rank_lower_bound')):raise RuntimeError('warm terminal final rank chain mismatch')
-    if t.get('stop_reason') not in ('COMPLETE_FINITE_NO_GAIN','TARGET_LOWER_BOUND_REACHED','CHART_BUDGET_EXHAUSTED','CENSORED_SEARCH'):
-        raise RuntimeError('warm terminal has nonterminal stop reason')
-    return t
-
-def archive_post_terminal_failure(case,action):
-    sup,log=attempt_paths(case,action)
-    report=read(sup)
-    stamp=time.strftime('%Y%m%dT%H%M%SZ',time.gmtime())+'-'+sha(sup)[:12]
-    dst=D/case/'warm-post-terminal-failures'/stamp;dst.mkdir(parents=True,exist_ok=False)
-    for p in (sup,log):
-        if p.exists():shutil.move(str(p),str(dst/p.name))
-    atomic(dst/'recovery.json',{'schema':'warm-post-terminal-recovery.v1','case':case,'action':action,
-        'original_outcome':report.get('outcome'),'terminal_sha256':sha(D/case/'replay-M17/terminal.json'),
-        'claim_boundary':'Search terminal only; no rank result is accepted until independent replay succeeds.'})
-    return dst
-
-def supervise(action,case):
-    from research_runtime.supervisor import Limits,run
-    sup,log=attempt_paths(case,action)
-    if sup.exists():
-        report=read(sup)
-        if report.get('outcome')=='completed': return
-        if action=='run-worker' and validate_sealed_terminal(case) is not None:
-            archive_post_terminal_failure(case,action); return
-        raise RuntimeError(f'preserved failed warm attempt exists for {case}: {sup}')
-    seconds=base.LIMITS['case_wall_seconds'] if action=='run-worker' else base.LIMITS['replay_wall_seconds']
-    sage=resolve_sage();command=[sage,'-python',str(SELF),action,'--case',case]
-    env={**os.environ,'V3_WARM_SUPERVISED':'1','V3_SAGE':sage,'OPENBLAS_NUM_THREADS':'1','OMP_NUM_THREADS':'1','MKL_NUM_THREADS':'1'}
-    report=run(command,limits=Limits(seconds,base.LIMITS['rss_bytes']),cwd=ROOT,env=env,log_path=log,checkpoint_path=sup)
-    if report['outcome']!='completed':
-        if action=='run-worker' and validate_sealed_terminal(case) is not None:
-            archive_post_terminal_failure(case,action); return
-        raise RuntimeError(f'{case} {action} stopped: {report["outcome"]}')
-
-def worker():
+def controller_alive(state):
+    if state.get('start_token'):
+        return same_process(state.get('pid'), state['start_token'])
+    # Read legacy status safely, without treating a reused arbitrary PID as ours.
+    row = process_info(state.get('pid'))
+    if not row or row['state'] in ('Z', 'X'):
+        return False
     try:
-        auth=validate_authorization();AUTO.mkdir(parents=True,exist_ok=True)
-        if not (AUTO/'authorization.json').exists(): atomic(AUTO/'authorization.json',auth)
-        for case in WARM:
-            folder=D/case
-            if (folder/'warm-verified.json').exists(): continue
-            atomic(STATE,{'status':'RUNNING_WARM_CASE','case':case,'pid':os.getpid(),'sage':resolve_sage(),'updated_unix':time.time()})
-            if not (folder/'replay-M17/terminal.json').exists(): supervise('run-worker',case)
-            else: validate_sealed_terminal(case)
-            # A stale failed run supervisor after a sealed terminal is archived here
-            # before replay, so the 1508-chart search is never repeated.
-            rsup,_=attempt_paths(case,'run-worker')
-            if rsup.exists() and read(rsup).get('outcome')!='completed': archive_post_terminal_failure(case,'run-worker')
-            supervise('replay-worker',case)
-            verified=read(folder/'verified.json')
-            out={'schema':'v3-warm-start-transfer-result.v1','case':case,'initial_rank':27,
-                 'rank_lower_bound':verified['rank_lower_bound'],'gain':verified['rank_lower_bound']-27,
-                 'stop_reason':verified['stop_reason'],'charts':verified['charts'],
-                 'source_verified_sha256':sha(folder/'verified.json'),
-                 'claim_boundary':'Warm-start transfer result; generic 17->17 control remained a clean no-gain.'}
-            atomic(folder/'warm-verified.json',out)
-        atomic(STATE,{'status':'COMPLETE_WARM_ROSTER','pid':os.getpid(),'updated_unix':time.time(),
-                      'results':[read(D/c/'warm-verified.json') for c in WARM]})
-    except Exception as exc:
-        f=latest_failure();old=read(STATE) if STATE.exists() else {}
-        atomic(STATE,{'status':'STOPPED_REVIEW_REQUIRED','case':old.get('case'),'pid':os.getpid(),
-                      'error':repr(exc),'failure':f,'updated_unix':time.time()});raise
+        argv = (Path('/proc')/str(row['pid'])/'cmdline').read_bytes().split(b'\0')
+        return str(SELF).encode() in argv and b'worker' in argv
+    except OSError:
+        return False
 
-def launch():
-    auth=validate_authorization();AUTO.mkdir(parents=True,exist_ok=True)
-    if STATE.exists():
-        s=read(STATE)
-        if s.get('status')=='COMPLETE_WARM_ROSTER': print('Already complete');return
-        if alive(s.get('pid')): raise RuntimeError(f'warm controller pid {s.get("pid")} is still alive')
-        if s.get('status')=='STOPPED_REVIEW_REQUIRED':raise RuntimeError('preserved failed attempt exists; use diagnose, then resume')
-    stream=LOG.open('ab',buffering=0)
-    p=subprocess.Popen([sys.executable,str(SELF),'worker'],cwd=ROOT,stdin=subprocess.DEVNULL,stdout=stream,stderr=subprocess.STDOUT,start_new_session=True,close_fds=True,env={**os.environ,'V3_SAGE':resolve_sage()})
-    atomic(STATE,{'status':'LAUNCHED','pid':p.pid,'updated_unix':time.time(),'authorization':auth});print('Launched detached warm-start V3 roster pid='+str(p.pid))
-def archive_failed(case,action):
-    sup,log=attempt_paths(case,action)
-    if not sup.exists():raise RuntimeError('no failed supervisor to archive')
-    report=read(sup)
-    if report.get('outcome')=='completed':raise RuntimeError('attempt completed; refusing archive-as-failure')
-    # Never archive/move a sealed search epoch away. If a terminal exists, this
-    # is a post-terminal failure and should proceed to replay instead.
-    if action=='run-worker' and validate_sealed_terminal(case) is not None:return archive_post_terminal_failure(case,action)
-    stamp=time.strftime('%Y%m%dT%H%M%SZ',time.gmtime())+'-'+sha(sup)[:12]
-    dst=D/case/'warm-failed-attempts'/stamp;dst.mkdir(parents=True,exist_ok=False)
-    for p in (sup,log):
-        if p.exists():shutil.move(str(p),str(dst/p.name))
-    replay=D/case/'replay-M17'
-    if replay.exists():
-        for ep in sorted(replay.glob('epoch-*')):
-            if not (ep/'stage.json').exists() and any(ep.iterdir()):shutil.move(str(ep),str(dst/ep.name))
-    return dst
-def spawn():
-    stream=LOG.open('ab',buffering=0)
-    p=subprocess.Popen([sys.executable,str(SELF),'worker'],cwd=ROOT,stdin=subprocess.DEVNULL,stdout=stream,stderr=subprocess.STDOUT,start_new_session=True,close_fds=True,env={**os.environ,'V3_SAGE':resolve_sage()})
-    return p
-def resume():
-    if not STATE.exists():raise RuntimeError('no prior warm state')
-    s=read(STATE)
-    if alive(s.get('pid')):raise RuntimeError('controller still alive')
-    # Prefer a sealed terminal: preserve the anomalous run wrapper exit and
-    # continue directly to independent replay.
-    case=s.get('case')
-    if case in WARM and validate_sealed_terminal(case) is not None:
-        rsup,_=attempt_paths(case,'run-worker')
-        dst=None
-        if rsup.exists() and read(rsup).get('outcome')!='completed':dst=archive_post_terminal_failure(case,'run-worker')
-    else:
-        f=latest_failure()
-        if not f:raise RuntimeError('no preserved failed warm attempt found')
-        dst=archive_failed(f['case'],f['action'])
-    atomic(STATE,{'status':'RESUMING','archived':str(dst.relative_to(ROOT)) if dst else None,'updated_unix':time.time()})
-    p=spawn();atomic(STATE,{'status':'RELAUNCHED','pid':p.pid,'updated_unix':time.time(),'archived':str(dst.relative_to(ROOT)) if dst else None})
-    print('Relaunched detached warm-start roster pid='+str(p.pid))
+
+def ensure_no_live_workers():
+    paths = [p for case in WARM for p in (D/case).glob('warm-*.supervisor.json')]
+    paths += list((AUTO/'sessions').glob('*/attempts/*/*/supervisor.json'))
+    for path in paths:
+        row = read(path)
+        if same_process(row.get('pid'), row.get('start_token')):
+            raise RuntimeError(f'supervised worker pid {row["pid"]} is still alive: {path}; do not launch concurrently')
+
+
+def take_lock():
+    AUTO.mkdir(parents=True, exist_ok=True)
+    fd = os.open(LOCK, os.O_CREAT | os.O_RDWR, 0o600)
+    try:
+        fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        return fd
+    except BaseException:
+        os.close(fd)
+        raise RuntimeError('another warm controller owns the lock; inspect status, do not start a second one')
+
+
+def launch(hours, *, resume=False):
+    require(math.isfinite(hours) and 0 < hours <= 24, '--hours must be positive and at most 24')
+    fd = take_lock()
+    try:
+        old = read(STATE) if STATE.exists() else {}
+        require(not controller_alive(old), 'legacy controller is still alive; inspect it before stopping')
+        ensure_no_live_workers()
+        if old.get('status') == 'COMPLETE_WARM_ROSTER':
+            print(json.dumps(old, indent=2))
+            return
+        require(resume or not old, 'existing attempt: use resume; nothing will be deleted')
+        inputs = validate_inputs()
+        sage = sage_launcher()
+        session_dir = AUTO/'sessions'/str(uuid.uuid4())
+        session_dir.mkdir(parents=True)
+        session_path = session_dir/'session.json'
+        session = {'schema': 'warm-controller-session.v2', 'sources': sources(), 'inputs': inputs,
+                   'cases': list(WARM), 'sage': sage, 'hours': hours, 'created_unix': time.time(),
+                   'action': 'resume' if resume else 'launch',
+                   'scope': 'Original three warm fibres and frozen search budgets; no automatic retuning or new parameters.'}
+        atomic(session_path, session, immutable=True)
+        if old:
+            atomic(session_dir/'previous-controller-state.json', old, immutable=True)
+        atomic(STATE, {'status': 'LAUNCHING', 'session': str(session_path.relative_to(ROOT)),
+                       'updated_unix': time.time()})
+        with LOG.open('ab', buffering=0) as log:
+            proc = subprocess.Popen([sys.executable, str(SELF), 'worker', '--session', str(session_path),
+                                     '--lease-fd', str(fd)], cwd=ROOT, stdin=subprocess.DEVNULL,
+                                    stdout=log, stderr=subprocess.STDOUT, start_new_session=True,
+                                    pass_fds=(fd,), env={**os.environ, 'PYTHONUNBUFFERED': '1'})
+        # The inherited descriptor keeps the SAME flock alive. Do not LOCK_UN
+        # in the parent, and do not overwrite the child's more advanced status.
+        print(f'Launched controller pid={proc.pid}; session={session_path.relative_to(ROOT)}')
+        print('Status: python3 elliptic-curves/cas/run_v3_warm_start_overnight.py status')
+    finally:
+        os.close(fd)
+
+
+class Reporter:
+    def __init__(self, session):
+        self.lock = threading.RLock()
+        info = process_info(os.getpid())
+        self.value = {'pid': os.getpid(), 'start_token': info['start_token'],
+                      'session': str(session.relative_to(ROOT))}
+        self.done = threading.Event()
+        self.thread = threading.Thread(target=self._heartbeat, daemon=True)
+
+    def update(self, status=None, **values):
+        with self.lock:
+            self.value.update(values)
+            if status is not None:
+                self.value['status'] = status
+            self.value['updated_unix'] = time.time()
+            atomic(STATE, self.value)
+            if status is not None:
+                print('WARM', status, json.dumps(values, sort_keys=True), flush=True)
+
+    def _heartbeat(self):
+        while not self.done.wait(10):
+            try:
+                self.update()
+            except Exception as exc:
+                print('HEARTBEAT_WRITE_FAILED', repr(exc), flush=True)
+
+    def __enter__(self):
+        self.update('CONTROLLER_RUNNING')
+        self.thread.start()
+        return self
+
+    def __exit__(self, *_):
+        self.done.set()
+        self.thread.join(timeout=2)
+
+
+class ResourceStop(RuntimeError):
+    pass
+
+
+def verify_result(case):
+    path = D/case/'warm-verified.json'
+    if not path.exists():
+        return None
+    row = read(path)
+    require(row.get('status') == 'PASS_INDEPENDENT_WARM_REPLAY' and row.get('case') == case,
+            'unrecognized warm result; do not silently accept a legacy/partial certificate')
+    bindings(ROOT, row['bindings'])
+    bindings(ROOT, row['sources'])
+    return row
+
+
+def run_step(action, case, session_path, session, deadline, report):
+    from research_runtime.supervisor import Limits, run
+    from v3_transfer_contract import LIMITS
+    remaining = deadline - time.monotonic()
+    if remaining <= 0:
+        raise ResourceStop('campaign wall budget exhausted')
+    maximum = 120 if action == 'preflight' else LIMITS['case_wall_seconds' if action == 'search' else 'replay_wall_seconds']
+    attempt = session_path.parent/'attempts'/case/(action+'-'+uuid.uuid4().hex[:12])
+    attempt.mkdir(parents=True)
+    command = worker_command(session['sage'], action, case, session_path)
+    report.update({'preflight': 'PREFLIGHT', 'search': 'SEARCHING', 'replay': 'REPLAYING'}[action],
+                  case=case, worker_action=action, attempt=str(attempt.relative_to(ROOT)),
+                  worker_log=str((attempt/'worker.log').relative_to(ROOT)))
+    result = run(command, limits=Limits(min(maximum, remaining), LIMITS['rss_bytes']), cwd=ROOT,
+                 env={**os.environ, 'V3_WARM_SUPERVISED': '1', 'OPENBLAS_NUM_THREADS': '1',
+                      'OMP_NUM_THREADS': '1', 'MKL_NUM_THREADS': '1'},
+                 log_path=attempt/'worker.log', checkpoint_path=attempt/'supervisor.json')
+    if result['outcome'] != 'completed':
+        # A committed terminal is usable INPUT to independent replay, not proof
+        # that an anomalous process exit succeeded or that its rank is exact.
+        if action == 'search' and terminal_structure(D/case) is not None:
+            report.update('SEALED_SEARCH_PENDING_REPLAY', case=case, original_outcome=result['outcome'])
+            return
+        if result['outcome'] in ('strict_wall_timeout', 'strict_rss_limit'):
+            raise ResourceStop(f'{case} {action}: {result["outcome"]}; checkpoints retained')
+        raise RuntimeError(f'{case} {action}: {result["outcome"]}\n' + (tail(attempt/'worker.log') or ''))
+    if action == 'search':
+        require(terminal_structure(D/case) is not None, 'worker exited without a sealed terminal')
+    if action == 'replay':
+        require(verify_result(case) is not None, 'replay exited without independent certificate')
+
+
+def worker(session_path, lease_fd):
+    require(session_path is not None and lease_fd is not None, 'worker must be launched by controller')
+    # An inherited flock is the lifetime lease, independent of mutable PID files.
+    require(os.fstat(lease_fd).st_ino == LOCK.stat().st_ino, 'wrong inherited controller lease')
+    signal.signal(signal.SIGHUP, signal.SIG_IGN)
+
+    def interrupted(signum, frame):
+        raise KeyboardInterrupt(f'controller received signal {signum}')
+    signal.signal(signal.SIGTERM, interrupted)
+    session = read(session_path)
+    deadline = time.monotonic() + session['hours']*3600
+    try:
+        with Reporter(session_path) as report:
+            try:
+                require(session['sources'] == sources(), 'controller sources changed after launch')
+                bindings(ROOT, session['sources'])
+                bindings(ROOT, session['inputs'])
+                resource_stops = []
+                results = []
+                for case in WARM:
+                    old = verify_result(case)
+                    if old is not None:
+                        results.append(old)
+                        continue
+                    try:
+                        run_step('preflight', case, session_path, session, deadline, report)
+                        if (D/case/'replay-M17/terminal.json').exists():
+                            terminal = terminal_structure(D/case)
+                            report.update('SEALED_SEARCH_REUSED', case=case, charts=terminal['charts'])
+                        else:
+                            run_step('search', case, session_path, session, deadline, report)
+                        run_step('replay', case, session_path, session, deadline, report)
+                        result = verify_result(case)
+                        results.append(result)
+                        report.update('CASE_VERIFIED', case=case, rank_lower_bound=result['rank_lower_bound'],
+                                      gain=result['gain'])
+                    except ResourceStop as exc:
+                        resource_stops.append({'case': case, 'reason': str(exc)})
+                        report.update('CASE_RESOURCE_STOP', case=case, error=str(exc))
+                        if time.monotonic() >= deadline:
+                            break
+                        # Resource failures are case-local and not negative rank
+                        # results. Proof/replay/integrity errors stop the roster.
+                complete = len(results) == len(WARM)
+                report.update('COMPLETE_WARM_ROSTER' if complete else 'STOPPED_RESOURCE_BUDGET',
+                              results=results, resource_stops=resource_stops)
+            except BaseException as exc:
+                report.update('STOPPED_REVIEW_REQUIRED', error=repr(exc))
+                raise
+    finally:
+        os.close(lease_fd)
+
+
 def status():
-    s=read(STATE) if STATE.exists() else None
-    if s is None: print('NOT_LAUNCHED')
-    else:
-        x=dict(s);x['process_state']=proc_state(x.get('pid'));x['process_alive']=alive(x.get('pid'))
-        if x.get('status') in ('RUNNING_WARM_CASE','LAUNCHED','RELAUNCHED') and not x['process_alive']:
-            x['effective_status']='STOPPED_REVIEW_REQUIRED';x['failure']=latest_failure()
-        print(json.dumps(x,indent=2,sort_keys=True))
-    for c in WARM:
-        p=D/c/'warm-verified.json'
-        if p.exists(): print(c,json.dumps(read(p),sort_keys=True))
+    row = read(STATE) if STATE.exists() else {'status': 'NOT_LAUNCHED'}
+    row = dict(row)
+    row['process_alive'] = controller_alive(row)
+    info = process_info(row.get('pid'))
+    row['process_state'] = info['state'] if info else None
+    if row['status'] in ('CONTROLLER_RUNNING','LAUNCHING','PREFLIGHT','SEARCHING','REPLAYING','RUNNING_WARM_CASE',
+                          'LAUNCHED','RELAUNCHED','SEALED_SEARCH_PENDING_REPLAY','SEALED_SEARCH_REUSED') and not row['process_alive']:
+        row['effective_status'] = 'STOPPED_REVIEW_REQUIRED'
+    if row.get('attempt'):
+        path = ROOT/row['attempt']/'supervisor.json'
+        if path.exists():
+            row['supervisor'] = read(path)
+    if 'results' in row:
+        row['results'] = [{k:r.get(k) for k in ('case','rank_lower_bound','gain','charts','stop_reason')} for r in row['results']]
+    if row.get('error'):
+        row['error'] = row['error'][-4000:]
+    if row.get('worker_log'):
+        recent = tail(ROOT/row['worker_log'], 8192)
+        row['progress_tail'] = recent.splitlines()[-5:] if recent else []
+    print(json.dumps(row, indent=2, sort_keys=True))
+    for case in WARM:
+        folder = D/case
+        if (folder/'warm-verified.json').exists():
+            result = read(folder/'warm-verified.json')
+            print(case, 'VERIFIED', json.dumps({k:result.get(k) for k in ('rank_lower_bound','gain','charts','stop_reason')}, sort_keys=True))
+        elif (folder/'replay-M17/terminal.json').exists():
+            t = read(folder/'replay-M17/terminal.json')
+            print(case, 'SEARCH_SEALED_REPLAY_PENDING', json.dumps({k:t[k] for k in ('charts','final_rank_lower_bound','stop_reason')}))
         else:
-            terminal=D/c/'replay-M17/terminal.json';stages=D/c/'replay-M17/stages.json'
-            if terminal.exists():
-                t=read(terminal);print(c,'SEALED_TERMINAL',json.dumps({'rank':t.get('final_rank_lower_bound'),'charts':t.get('charts'),'stop_reason':t.get('stop_reason')},sort_keys=True))
-            elif stages.exists(): print(c,'stages',json.dumps(read(stages)[-1],sort_keys=True))
-            else: print(c,'NOT_YET_COMPLETE')
+            stages = folder/'replay-M17/stages.json'
+            print(case, 'SEARCH_INCOMPLETE', json.dumps(read(stages)[-1]) if stages.exists() and read(stages) else '')
+
+
 def diagnose():
-    f=latest_failure();print('NO_FAILED_WARM_ATTEMPT' if f is None else json.dumps(f,indent=2,sort_keys=True))
+    status()
+    row = read(STATE) if STATE.exists() else {}
+    log = ROOT/row['worker_log'] if row.get('worker_log') else None
+    if log is None:
+        # Legacy failed replay is retained exactly where it was written.
+        files = [p for case in WARM for p in (D/case).glob('warm-*.log')]
+        log = max(files, key=lambda p:p.stat().st_mtime) if files else LOG
+    print('\nWORKER_LOG', log)
+    print(tail(log) or 'No worker log.')
+
+
+def stop():
+    row = read(STATE) if STATE.exists() else {}
+    require(controller_alive(row), 'no live matching controller; nothing was killed')
+    require(row.get('start_token') and hasattr(os, 'pidfd_open') and hasattr(signal, 'pidfd_send_signal'),
+            'safe PID-handle stop unavailable for legacy controller; inspect its identity manually')
+    fd = os.pidfd_open(int(row['pid']))
+    try:
+        require(same_process(row['pid'], row['start_token']), 'PID identity changed; nothing was killed')
+        signal.pidfd_send_signal(fd, signal.SIGTERM)
+    finally:
+        os.close(fd)
+    print('Sent SIGTERM to the verified controller; supervised child cleanup preserves checkpoints.')
+
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('action',choices=['launch','status','diagnose','resume','worker','run-worker','replay-worker']);ap.add_argument('--case',choices=WARM);a=ap.parse_args()
-    if a.action=='launch': launch()
-    elif a.action=='status': status()
-    elif a.action=='diagnose': diagnose()
-    elif a.action=='resume': resume()
-    elif a.action=='worker': worker()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('action', choices=['launch', 'resume', 'status', 'diagnose', 'stop', 'worker'])
+    parser.add_argument('--hours', type=float, default=10.0, help='total wall budget, not a completion estimate')
+    parser.add_argument('--session', type=Path)
+    parser.add_argument('--lease-fd', type=int)
+    args = parser.parse_args()
+    if args.action in ('launch','resume'):
+        launch(args.hours, resume=args.action == 'resume')
+    elif args.action == 'status':
+        status()
+    elif args.action == 'diagnose':
+        diagnose()
+    elif args.action == 'stop':
+        stop()
     else:
-        if os.environ.get('V3_WARM_SUPERVISED')!='1': raise RuntimeError('worker action must be supervised')
-        if a.action=='run-worker': base.run_case(a.case)
-        else: base.replay_case(a.case)
+        worker(args.session, args.lease_fd)
 
-if __name__=='__main__': main()
+
+if __name__ == '__main__':
+    main()
