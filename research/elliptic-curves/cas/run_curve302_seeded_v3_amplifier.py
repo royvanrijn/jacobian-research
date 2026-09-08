@@ -77,45 +77,18 @@ def update(status,**extra):
 
 
 def ordered_seed_state(model, points, proof):
-    """Instantiate the exact ordered basis certified jointly by ``proof``.
+    """Replay the certified ordered basis using the repository's canonical contract.
 
-    Point-admission APIs intentionally reject a column when the *current prefix*
-    is ambiguous.  That behaviour is correct for discovery but wrong here: the
-    frozen compact certificate proves the complete ordered 18-column matrix is
-    independent even when an earlier prefix is not certified by that same prime
-    set.  Construct the retained reduction matrix directly, verify its final
-    column rank and signatures, and then let MWState verify the exact state.
+    ``MWState`` stores rational coordinates canonically as strings, while callers
+    often supply ``Fraction``/Sage rationals.  Raw tuple equality is therefore not
+    a valid ordering check.  ``certified_state`` already validates the finite
+    certificate and ``assert_basis`` normalizes exact coordinates before comparing
+    order and sign.  Keep that single tested trust boundary here.
     """
-    from dataclasses import asdict
-    from research_runtime.arithmetic import ArithmeticContext, CurveModel
-    from research_runtime.finite_reduction import IncrementalReductions, ReductionCache
-    from research_runtime.memory_store import MemoryFactStore
-    from research_runtime.mw_state import MWState
-    from v3_warm_support import require
-
-    model=tuple(model); points=tuple(points)
-    require(proof['rank_lower_bound']==len(points),'joint certificate has wrong column count')
-    primes=tuple(int(row['prime']) for row in proof['signatures'])
-    require(primes and len(set(primes))==len(primes),'joint certificate prime set is invalid')
-    torsion=int(proof['no_rational_2_torsion_prime'])
-    cache=ReductionCache(MemoryFactStore())
-    context=ArithmeticContext.for_search(CurveModel(model))
-    reductions=IncrementalReductions.empty(model,primes,cache)
-    for point in points:
-        reductions,_=reductions.append(point,cache)
-    require(reductions.points==points,'joint reduction matrix changed supplied point order')
-    require(reductions.independent_images and reductions.basis.rank==len(points),
-            'joint reduction matrix does not certify all supplied columns')
-    actual=[asdict(cache.signature(model,points,p)) for p in primes]
-    require(actual==proof['signatures'],'joint reduction signatures differ from frozen certificate')
-
-    empty=MWState.empty(context,cache=cache,primes=primes,no_two_torsion_prime=torsion)
-    classes=tuple(empty.kummer_class(point) for point in points)
-    gram=tuple(tuple(None for _ in points) for _ in points)
-    state=MWState(context,reductions,torsion,gram,'unknown',classes)
-    state.verify(cache)
-    require(state.rank==len(points) and tuple(state.basis)==points,
-            'verified joint state changed supplied generator order')
+    from v3_warm_engine import certified_state
+    from v3_warm_support import assert_basis
+    state=certified_state(model,points,proof)
+    assert_basis(state,model,points,len(points))
     return state
 
 
