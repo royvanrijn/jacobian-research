@@ -1,6 +1,7 @@
 import ast
 import importlib.util
 import inspect
+import json
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[2]
@@ -55,3 +56,15 @@ def test_completed_amplifier_evidence_is_required():
     assert "COMPLETE_TWO_SEED_AMPLIFIER" in source
     assert "PASS_INDEPENDENT_SEEDED_V3_REPLAY" in source
     assert "row['rank_lower_bound'] == 31" in source
+
+
+def test_json_native_roundtrip_removes_tuple_list_false_mismatches():
+    value={'rows':[(1,0),(0,1)],'nested':{'x':('1','2')}}
+    native=m.json_native(value)
+    assert native==json.loads(json.dumps(native))
+    assert native=={'rows':[[1,0],[0,1]],'nested':{'x':['1','2']}}
+
+
+def test_build_returns_json_native_before_immutable_replay():
+    source=inspect.getsource(m.build)
+    assert 'return json_native(result)' in source
