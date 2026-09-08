@@ -27,9 +27,19 @@ def test_controller_import_has_no_sage_dependency():
     assert callable(m.launch)
     assert callable(m.status)
     assert callable(m.worker)
+    assert callable(m.ordered_seed_state)
 
 
 def test_oracle_inputs_are_explicit():
     assert m.VISIBILITY.name=='curve302_residual_visibility_geometry_v1.json'
     assert m.M24.name=='curve302_recovered_followup_wave_03_mod2_v1.json'
     assert m.ORBITS.name=='curve302_parent_degree2_multisection_orbits_v1.tsv'
+
+
+def test_ordered_seed_state_uses_raw_state_not_compact_certificate():
+    import inspect
+    source=inspect.getsource(m.ordered_seed_state)
+    assert 'raw_state' in source
+    assert 'prime_bound=1000' in source
+    assert 'tuple(state.basis)==tuple(points)' in source
+    assert 'certified_state' not in source
