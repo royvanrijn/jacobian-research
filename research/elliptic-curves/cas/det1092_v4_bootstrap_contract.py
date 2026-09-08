@@ -23,7 +23,7 @@ V3 = v3c.D
 DOMAIN = 'det1092-v4-wide-bootstrap-v1'
 FRESH_CHARTS = 512
 SHELLS = (4, 6, 8, 10, 12)
-RESOURCE = {'prepare':3600, 'preflight':180, 'search':21600, 'replay':14400,
+RESOURCE = {'prepare':3600, 'preflight':1200, 'search':21600, 'replay':14400,
             'rss_bytes':3221225472}
 CLAIM = ('Wide M17 visibility follow-up on the same eight frozen determinant-1092 fibres. '
          'Exactly 512 previously untouched parity classes are selected per fibre from the '
